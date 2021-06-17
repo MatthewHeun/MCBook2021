@@ -100,20 +100,18 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 								% please see the abs-pref folder for some pdf examples
 
  \mainmatter
-    % \Sexpr{knit_child("chapters/ch01/ch01.Rnw")} % \ref{chap:introduction}
-    % \Sexpr{knit_child("chapters/ch02/ch02.Rnw")} % \ref{chap:population}
-    % \Sexpr{knit_child("chapters/ch03/ch03.Rnw")} % \ref{chap:economy}
-    % \Sexpr{knit_child("chapters/ch04/ch04.Rnw")} % \ref{chap:energy}
-    % \Sexpr{knit_child("chapters/ch05/ch05.Rnw")} % \ref{chap:air_and_water}
-    % \Sexpr{knit_child("chapters/ch06/ch06.Rnw")} % \ref{chap:chap:plants_and_animals}
-    % \Sexpr{knit_child("chapters/ch07/ch07.Rnw")} % \ref{chap:food_and_agriculture}
-    % \Sexpr{knit_child("chapters/ch08/ch08.Rnw")} % \ref{chap:transportation}
-    % \Sexpr{knit_child("chapters/ch09/ch09.Rnw")} % \ref{chap:housing_and_households}
-    % \Sexpr{knit_child("chapters/ch10/ch10.Rnw")} % \ref{chap:land_use_and_urban_planning}
-    % \Sexpr{knit_child("chapters/ch11/ch11.Rnw")} % \ref{chap:government_and_regulations} % for tragedy of the commons? https://www.cfra.org/news/131022/water-overcoming-tragedy-commons
-    % \Sexpr{knit_child("chapters/ch12/ch12.Rnw")} % \ref{chap:systems_thinking}
-    % \Sexpr{knit_child("chapters/ch13/ch13.Rnw")} % \ref{chap:values_and_religion}
-    % \Sexpr{knit_child("chapters/ch14/ch14.Rnw")} % \ref{chap:personal_actions}
+    \Sexpr{knit_child("chapters/ch01-Introduction/ch01-Introduction.Rnw")}                 % \ref{chap:introduction}
+    \Sexpr{knit_child("chapters/ch02-Boundaries/ch02-Boundaries.Rnw")}                     % \ref{chap:planetary_boundaries}
+    \Sexpr{knit_child("chapters/ch03-Population/ch03-Population.Rnw")}                     % \ref{chap:population}
+    \Sexpr{knit_child("chapters/ch04-Affluence/ch04-Affluence.Rnw")}                       % \ref{chap:affluence}
+    \Sexpr{knit_child("chapters/ch05-EnergyIntensity/ch05-EnergyIntensity.Rnw")}           % \ref{chap:energy_intensity}
+    \Sexpr{knit_child("chapters/ch06-CarbonIntensity/ch06-CarbonIntensity.Rnw")}           % \ref{chap:chap:carbon_intensity}
+    \Sexpr{knit_child("chapters/ch07-Households/ch07-Households.Rnw")}                     % \ref{chap:households}
+    \Sexpr{knit_child("chapters/ch08-Transportation/ch08-Transportation.Rnw")}             % \ref{chap:transportation}
+    \Sexpr{knit_child("chapters/ch09-Agriculture/ch09-Agriculture.Rnw")}                   % \ref{chap:agriculture}
+    \Sexpr{knit_child("chapters/ch10-LandUseUrbanPlanning/ch10-LandUseUrbanPlanning.Rnw")} % \ref{chap:land_use_urban_planning}
+    \Sexpr{knit_child("chapters/ch11-Government/ch11-Government.Rnw")}                     % \ref{chap:government}
+    \Sexpr{knit_child("chapters/ch12-PersonalAction/ch12-PersonalAction.Rnw")}             % \ref{chap:personal_action}
 
  %   \input{biblio}              % bibliography
 
