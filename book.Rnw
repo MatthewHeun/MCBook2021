@@ -44,13 +44,8 @@
 <<setup, echo=FALSE, message=FALSE>>=
 # Per the hint at https://github.com/rstudio/bookdown/issues/536, 
 # use the tinytex package for error reporting.
-library(extrafont)   # Allows import of other fonts. We'll use it for getting the Libre Caslon font into R.
 library(ggplot2)     # For graphing functions
 library(magrittr)    # For pipe operator, (>%)
-
-# Set up LibreCaslon font. invisible() swallows the text output.
-ttf_import(paths = "Libre-Caslon-Text-master") %>% invisible()
-loadfonts() %>% invisible()
 @
 
 <<r_functions, echo=FALSE>>=
@@ -105,25 +100,25 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 								% please see the abs-pref folder for some pdf examples
 
  \mainmatter
-    \Sexpr{knit_child("chapters/ch01/ch01.Rnw")} % \ref{chap:introduction}
-    \Sexpr{knit_child("chapters/ch02/ch02.Rnw")} % \ref{chap:population}
-    \Sexpr{knit_child("chapters/ch03/ch03.Rnw")} % \ref{chap:economy}
-    \Sexpr{knit_child("chapters/ch04/ch04.Rnw")} % \ref{chap:energy}
-    \Sexpr{knit_child("chapters/ch05/ch05.Rnw")} % \ref{chap:air_and_water}
-    \Sexpr{knit_child("chapters/ch06/ch06.Rnw")} % \ref{chap:chap:plants_and_animals}
-    \Sexpr{knit_child("chapters/ch07/ch07.Rnw")} % \ref{chap:food_and_agriculture}
-    \Sexpr{knit_child("chapters/ch08/ch08.Rnw")} % \ref{chap:transportation}
-    \Sexpr{knit_child("chapters/ch09/ch09.Rnw")} % \ref{chap:housing_and_households}
-    \Sexpr{knit_child("chapters/ch10/ch10.Rnw")} % \ref{chap:land_use_and_urban_planning}
-    \Sexpr{knit_child("chapters/ch11/ch11.Rnw")} % \ref{chap:government_and_regulations} % for tragedy of the commons? https://www.cfra.org/news/131022/water-overcoming-tragedy-commons
-    \Sexpr{knit_child("chapters/ch12/ch12.Rnw")} % \ref{chap:systems_thinking}
-    \Sexpr{knit_child("chapters/ch13/ch13.Rnw")} % \ref{chap:values_and_religion}
-    \Sexpr{knit_child("chapters/ch14/ch14.Rnw")} % \ref{chap:personal_actions}
+    % \Sexpr{knit_child("chapters/ch01/ch01.Rnw")} % \ref{chap:introduction}
+    % \Sexpr{knit_child("chapters/ch02/ch02.Rnw")} % \ref{chap:population}
+    % \Sexpr{knit_child("chapters/ch03/ch03.Rnw")} % \ref{chap:economy}
+    % \Sexpr{knit_child("chapters/ch04/ch04.Rnw")} % \ref{chap:energy}
+    % \Sexpr{knit_child("chapters/ch05/ch05.Rnw")} % \ref{chap:air_and_water}
+    % \Sexpr{knit_child("chapters/ch06/ch06.Rnw")} % \ref{chap:chap:plants_and_animals}
+    % \Sexpr{knit_child("chapters/ch07/ch07.Rnw")} % \ref{chap:food_and_agriculture}
+    % \Sexpr{knit_child("chapters/ch08/ch08.Rnw")} % \ref{chap:transportation}
+    % \Sexpr{knit_child("chapters/ch09/ch09.Rnw")} % \ref{chap:housing_and_households}
+    % \Sexpr{knit_child("chapters/ch10/ch10.Rnw")} % \ref{chap:land_use_and_urban_planning}
+    % \Sexpr{knit_child("chapters/ch11/ch11.Rnw")} % \ref{chap:government_and_regulations} % for tragedy of the commons? https://www.cfra.org/news/131022/water-overcoming-tragedy-commons
+    % \Sexpr{knit_child("chapters/ch12/ch12.Rnw")} % \ref{chap:systems_thinking}
+    % \Sexpr{knit_child("chapters/ch13/ch13.Rnw")} % \ref{chap:values_and_religion}
+    % \Sexpr{knit_child("chapters/ch14/ch14.Rnw")} % \ref{chap:personal_actions}
 
  %   \input{biblio}              % bibliography
 
     \bibliographystyle{unsrtnat}
-    \bibliography{MCBook2019}   %chktex 11
+    \bibliography{MCBook2021}   %chktex 11
     
     
     \cleardoublepage

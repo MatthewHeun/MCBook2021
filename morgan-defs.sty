@@ -1,0 +1,214 @@
+% UF
+                                  % K&D refers to Kopka & Daly, 4th ed, 2003
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{morgan-defs}[2016/12/23 Morgan Macros]
+
+
+%definitions for page layout
+\newcommand\blankline{\vspace{.25cm}}% blank line, if not at top of page
+\newcommand\nl{\newline} %<<<< hm
+									
+\newcommand\pushproof{\linebreak\mbox{}\hfill}% push 'qed' to end of empty line	
+									% like \underline but has horiz. line const. depth
+\newcommand\itemseparator{\\[.5ex]} % item separator in private lists
+
+
+%text decoration
+									% like \underline but has horiz. line const. depth
+\newcommand{\ul}[1]{$\underline{\smash{\hbox{#1}}}$}%%<< could clash with ulem
+
+% macro  \rb  for "roman (\rm) and bold (\bf)" %UF changed
+\newcommand{\rb}[1]{\text{\normalfont\rmfamily\bfseries #1}}
+% text in light gray color w/ graythirty defined in morgan.sty
+% <<<<<< graythirty is not defined
+%\newcommand{\gray}[1]{\textcolor{graythirty}{#1}}
+
+%text symbols and glyph
+%%accents not available with Caslon fonts
+\newcommand{\accu}[1]{\u{\ }\hspace{-.05in}#1}	% \u{g} -> \accu{g}
+\newcommand{\accv}[1]{\v{\ }\hspace{-.05in}#1}	% \v{g} -> \accv{g}
+
+%%<<<<< better use \textbullet
+\newcommand\bull{$\bullet$}	
+\newcommand\bul{{$\bullet\ $}}		% a bullet in a table	
+
+\renewcommand{\dag}{\ensuremath{\dagger}}
+\renewcommand{\ddag}{\ensuremath{\ddagger}}
+%The Caslon fonts has a very well behaved raised Registered symbol
+\def\registered{\textregistered}
+
+
+%Math
+
+%% |\bb| is a shorthand for %% 2009/06/24
+%% `\mathbb' from 'amsmath' which 'ttdefs.sty' loads. %% 2009/06/18
+\newcommand\bb{\mathbb}
+
+\DeclareRobustCommand\{{\ifmmode\lbrace\else\textbraceleft\fi}
+\DeclareRobustCommand\}{\ifmmode\rbrace\else\textbraceright\fi}
+
+
+
+%%<<< conflict
+\newcommand\ds{\displaystyle}		% mostly for \fracs
+                                    % use abbreviation for \displaystyle
+\newcommand*{\D}{\displaystyle} % K&D, p143, 147
+
+% use \changematrixjust{r} or {l}, the default is c, before a \begin{bmatrix},
+% for example, to make all the elements of the matrix to appear on the l or r
+
+    \def\changematrixjust#1{%%%--->> use l or r to change
+         \def\env@matrix{%
+             \hskip -\arraycolsep
+               \let\@ifnextchar\new@ifnextchar
+               \array{%
+                 *\c@MaxMatrixCols #1%
+             }%
+         }%
+    }
+
+
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+
+\DeclareMathOperator*{\argMax}{argMax}
+\DeclareMathOperator*{\argMin}{argMin}
+
+                                    % ||| (bar bar bar) character
+\newcommand*{\bbb}{\mbox{\ensuremath{|\mspace{-2mu}|\mspace{-2mu}|}}}
+\newcommand*{\bigbbb}{\mbox{\ensuremath{\big|\mspace{-2.5mu}\big|%
+                        \mspace{-2.5mu}\big|}}}
+
+                                    % small half pi
+\newcommand*{\halfpi}{\frac{\pi}{2}}
+                                    % small 1/2
+\newcommand*{\onehalf}{{\textstyle\frac{1}{2}}}
+                                    % small 1/4
+\newcommand*{\onequarter}{{\textstyle\frac{1}{4}}}
+                                    % \rbox{.1in}{text}  to raise 'text' .1in
+                                    % \rbox{-.1in}{text} to lower 'text' .1in
+                                    % K&D, p87, 113
+\newcommand*{\rbox}[2]{\raisebox{#1}[0pt]{#2}}
+                                    % \rmoper{dist}, e.g.
+\newcommand*{\rmoper}[1]{\operatorname{#1}}
+                                    % \lim with overline
+\newcommand*{\overlim}{\operatorname{\overline{\lim}}\limits}
+                                    % \lim with underline
+\newcommand*{\underlim}{\operatorname{\underline{\lim}}\limits}
+                                    % operator with overline
+\newcommand*{\overop}[1]{\operatorname{\overline{#1}}\limits}
+                                    % operator with underline
+\newcommand*{\underop}[1]{\operatorname{\underline{#1}}\limits}
+                                    % minus (n-dash) with an \int
+\newcommand*{\mint}{\mbox{--}\hspace*{-8.8pt}\int}
+                                    % \int with a forward slash across it
+\newcommand{\sint}{\int_I\hspace{-11pt}\diagup\,}
+                                    % \atop{top stuff}{bottom stuff}
+                                    % do not use {top \atop bottom} K&D, p138
+\renewcommand*{\atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}      % K&D, p276, 500
+                                    % \choose{top stuff}{bottom stuff}
+                                    % do not use {top \choose bottom} K&D, p138
+\renewcommand*{\choose}[2]{\genfrac{(}{)}{0pt}{}{#1}{#2}}  % K&D, p276, 500
+
+\newcommand*{\stacklow}[2]%         % second parameter appears below
+        {\mathrel{\mathop{#1}\limits_{#2}}}
+
+                                    % allow for up/down vertical space
+                                    % \vs{11pt}{0pt}   height is      11pt
+                                    % \vs{0pt}{9pt}    depth is        9pt
+                                    % \vs{11pt}{9pt}   height + depth 20pt
+\newcommand*{\vs}[2]{\ensuremath{\vrule height #1 depth #2 width 0pt}}
+
+                                    % $\bmath{H}$ to make H in bold math
+                                    % $\bmath{\alpha}$ -> bold math \alpha
+%\newcommand*{\bmath}[1]{\mbox{\boldmath$#1$}}   % K&D, p144
+%with the Math times Fonts, \bmath should load italic bold symbols.
+% use instead
+%				\bm{Greek_letter}
+
+% abox  #1 - x offset, #2 - y offset, #3 - width, #4 - height
+\def\abox#1#2#3#4{\vskip#2\vbox
+to0pt{\hskip#1\fbox{\rule{0pt}{#4}\rule{#3}{0pt}}}\vskip-#2}
+
+%Lists
+%<<<<< could be done with enumitem
+% usage:
+% { \rommanenumerate \begin{enumerate} \item one \end{enumerate} }
+                                    % roman non-bold (i), (ii), etc
+\newenvironment{romanenumerate}{%   % to be used with enumerate in
+        \vspace{-.07in}             % Lemma, Theorems, etc
+        \renewcommand{\labelenumi}{\textmd{\textrm{(\roman{enumi})}}}
+        \renewcommand{\labelenumii}{\textmd{\textrm{(\alph{enumii})}}}
+        }
+
+% usage:
+% { \letterenumerate \begin{enumerate} \item one \end{enumerate} }
+                                    % roman non-bold (a), (b), etc
+\newenvironment{letterenumerate}{%  % to be used with enumerate in
+        \vspace{-.07in}             % Lemma, Theorems, etc
+        \renewcommand{\labelenumi}{\textmd{\textrm{(\alph{enumi})}}}
+        \renewcommand{\labelenumii}{\textmd{\textrm{(\roman{enumii})}}}
+        }
+
+% macros to improve M&C tables
+% usage:
+%		\vsap{\bull}{text to the right of bullet.}
+%		\vsap{1.}{First item}
+%\newcommand\ragr[1]{{\def\endrow{\@arraycr}% to replace \\
+%				     \raggedright#1}}
+%newcommand\hang{\hangindent=.3in}
+%def\textindent#1{\indent\llap{#1\enspace}\ignorespaces}
+\newcommand\vsap[2]{\ifthenelse{\equal{#1}{}}%
+						       {\ragr{\vs{13pt}{0pt}#2\nl}}%
+							   {\ragr{#1\hspace{.05in}\vs{13pt}{0pt}#2\nl}}%
+				   }
+
+
+\newcommand{\vsUP}{\vs{18pt}{0pt}}	% vertical space (UP)   in a table
+\newcommand{\vsDN}{\vs{0pt}{8pt}}	% vertical space (DOWN) in a table
+
+
+
+\newcommand\see[1]{\textit{see\ }#1}
+\newcommand\seealso[1]{\textit{see also\ }#1}
+%renewcommand\hyperindexformat[2]{#1}
+
+\newcommand{\horizontal}[1]{\protect\rule[3pt]{#1}{.8pt}}
+%newcommand{\vertical}[1]{\text{\rule{2pt}{#1}}}
+
+
+% \boxnocolor puts a box and optional title around text:
+%             #1 wdith, #2 title, #3 text
+\newcommand\boxnocolor[3]{\fbox{\parbox{#1}{%
+			\ifthenelse{\equal{#2}{}}%
+				{}%
+				{\centerline{\textbf{#2}}}%
+			#3}}}
+
+% \boxit puts a colored box around the text
+%        and two optional titles above text
+% \boxit{main title}{subtitle}{text}
+\newcommand\boxit[3]{%
+	\begin{figure}[#1]
+ 		\vspace*{.2in}%
+		\begin{center}
+		\begin{minipage}{.85\textwidth}%
+          	\begin{background}%
+				\hfil%
+				\parbox{.85\textwidth}{%
+           		\begin{background}%
+            		\ifthenelse{\equal{#2}{}}%
+                 		{}%
+                 		{\textbf{#2}\\\vspace*{.0in}\\}%
+            		#3%
+           		\end{background}%
+				}%
+        	\end{background}%
+		\end{minipage}%
+		\end{center}
+	\end{figure}%
+	}
+
+
+
+\endinput                           % end T&T TechWorks Macros

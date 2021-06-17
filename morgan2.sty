@@ -1,0 +1,3351 @@
+%%  == Package Version Declaration ==
+\def \morgandate    {2018/05/01}
+\def \morganversion {1.4.7a}           %%
+%20.02.2018: changed indexname from fix index to \morganindexname
+\ProvidesPackage{morgan2}[\morgandate\space v\morganversion\space
+                         typesetting M&C books]
+
+\RequirePackage{etex} %needed to get around the mtpro2-bug \alloc@0\count\countdef\insc@unt\pointcount@
+                      %can be removed if the line is changed to \newcount\pointcount
+%Some tools
+\RequirePackage{etoolbox}
+\RequirePackage{xparse}
+\RequirePackage{ifxetex,ifluatex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin Options %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% === \cs{newif}s for Package Options ===
+
+%% For option |caslon|---sections~\bref{sec:options} and
+%% \bref{sec:caslon}:
+\newif\ifcaslonloaded     \global\caslonloadedfalse
+%% \ULguess{Conditionally suppressing M\&C theorem-like environments
+%%   and the `proof' environment (from v1.11 on for a while).
+%%   Still in order to change earlier functionality as little
+%%   as possible, default is \emph{not} to suppress.}{2009/09/03}
+\newif\ifpredefthms       \predefthmstrue
+\newif\ifMCproof          \MCprooftrue
+%% Supporting the ``loose" specifications with option |loose| (v1.3):
+\newif\ifloose
+\newif\ifFinalPages %imported from ttdefs.sty
+%% This forces 'book.cls' options |twoside| and |onecolumn|---no
+%% choice here!
+\@twosidetrue\@mparswitchtrue\@twocolumnfalse
+
+
+\DeclareOption{final}{%
+  \setlength\overfullrule{0pt}% probably not needed, just in case
+  \FinalPagestrue
+  }
+\DeclareOption{draft}{\FinalPagesfalse}
+
+
+% This option is no longer need, left for compability
+%% |caslon| loads 'caslon' fonts; without it authors have the option
+%% to typeset \emph{drafts} without installing the 'caslon' fonts.
+\DeclareOption{caslon}{\global\caslonloadedtrue}
+
+%% Numbers of ``theorem-like environments" according to
+%% section~\bref{sec:thmlike} by default have
+%% \lq`\thechapter.'\rq\ as a ``prefix" when displayed,
+%% and they are reset to 0 at the start of each \emph{chapter}.
+\newcommand*{\theMCthmnumprefix}{\thechapter.}
+\newcommand*{\MC@thmcnt@reset}{chapter}
+
+%% Options |secnumbering| and |chsecnumbering| reset the theorem
+%% numbers at the start of each \emph{section} instead.
+%% With option |chsecnumbering|, the prefix then is
+%% `\thesection.'---which normally is
+%% `\arabic{chapter}.\arabic{section}'.
+%% With option |secnumbering|, the prefix is just
+%% `\arabic{section}.'
+%% %% \ULguess{\\(&\thesectiononly formerly,
+%% %%  reimplemented for v1.11).}{2009/10/06}
+\DeclareOption{secnumbering}{%
+  \renewcommand*{\MC@thmcnt@reset}{section}%
+  \renewcommand*{\theMCthmnumprefix}{\arabic{section}.}}
+\DeclareOption{chsecnumbering}{%
+  \renewcommand*{\MC@thmcnt@reset}{section}%
+  \renewcommand*{\theMCthmnumprefix}{\thesection.}}
+
+%% |nothms| suppresses predefinitions of predefined theorem-like
+%% environments, so author can create their own ones:
+\DeclareOption{nothms}{\predefthmsfalse}
+
+%% |noproof| suppresses 'morgan.sty''s theorem environment.
+%% This is needed for loading other packages defining a
+%% `proof' environment such as 'amsthm', 'ntheorem', and 'newproof'.
+\DeclareOption{noproof}{\MCprooffalse}
+
+
+%% |raggedsec| renders headings of `\section', `\subsection', and
+%% `\subsubsection'
+%% (see sec.~\ref{sec:sections})                    %% 2010/10/28
+%% ragged right:
+\DeclareOption{raggedsec}{%                         %% v1.22
+    \def\MC@alignsec{\raggedright \let\\\newline}}  %% UF from morplay 04.12.2016
+
+%% `\def\\{\protect\@centercr}' would break `\@hangfrom'.
+%% \ULguess{In 'MORPLAY.sty', I had &\let&\\&\newline
+%%          instead of the &\def.}{2010/10/25}
+\let\MC@alignsec\relax
+
+
+%% |sectionbib| makes |thebibliography| open a `\section*',
+%% not a `\chapter*' (the latter happens with 'book.cls').
+%% %% Adjusted 2010/02/24:
+%% With Daly\,\&\,Ogawa's 'natbib.sty', this replaces the latter's
+%% option of the same name.
+%% The reason for this way is that 'natbib''s option
+%% `sectionbib' is not compatible with 'morgan.sty''s
+%% `\MakeTextUppercase' from the 'textcase' package.{\sloppy\par}
+\DeclareOption{sectionbib}{%
+  \AtBeginDocument{%
+%% ... overrides definition of `\bibsection' from either 'natbib.sty'
+%% or from here, \bref{sec:bib}.
+    \renewcommand*{\bibsection}{%
+%% `\NoCaseChange' is a ``shield" from 'textcase' v0.04 onwards
+%% against\\ `\MakeTextUppercase' that 'morgan' titles use
+%% (this is why 'natbib.sty' needs to be overridden):
+      \section*{\refname\NoCaseChange{\sectionmark{\refname}}}}%
+%% \ULguess{... replaced &\markright for sec.~\ref{sec:marks}.
+%%          Braces around &\refname are needed ...}{2010/10/21}
+%% \ULguess{TODO: TOC entries [with stars in general] ...}{2009/09/29}
+    \providecommand{\refname}{References}%% 2009/10/01
+  }}
+
+
+%%
+%% |loose| for ``loose" specifications
+%% (section~\bref{sec:page-layout}, v1.3):
+\DeclareOption{loose}{\loosetrue}
+
+%% Default options:
+%% \ExecuteOptions{final} %UF doesn't make much sense, will confuse authors ...
+
+\ProcessOptions
+
+%%%%%%%%%%%%%%%%%%%%%%%%% End Options %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Font setup
+% Option final will force: caslon and mtpro2 (with option mtlite to get the lite version)
+% without Option final or with draft:
+% librecaslon + more or less normal math
+% fontsetup can be changed with \morgansetup
+
+\ifboolexpr{ bool {xetex} or bool{luatex}}
+ {
+  \RequirePackage[no-math]{fontspec}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \newfontfamily\morganmathsans{texgyreheros-regular.otf}[NFSSFamily=morganmathsans,Scale=0.9]
+ }
+ {
+  \RequirePackage[T1]{fontenc}
+  \RequirePackage{fix-cm}
+ }
+
+%% Math setup:
+%% there are three choices mtpro complete, mtpro lite, "nomtpro", stix
+
+\newcommand\morgan@mathsetup{\morgan@mathsetup@nomtpro}
+\newcommand\morgan@mtpro@version{complete}
+\newcommand\morgan@mtpro@mathbboption{mpthrb}%
+
+\newcommand\morgan@mathsetup@mtpro
+ {%
+  \RequirePackage
+   [
+    \morgan@mtpro@version,   %lite or complete
+    \morgan@mtpro@mathbboption, %mtphrb with complete set, not used with lite
+    subscriptcorrection,
+%   slantedGreek,			 % DRT
+    nofontinfo
+   ]{mtpro2}
+ \DeclareMathAlphabet{\mathit}{T1}{ptm}{m}{it}	% \mathit->Times Roman math txt
+ \let\oldmathbf=\mathbf
+ \def\mathbf##1{\mbf{##1}}%
+ }
+
+\newcommand\morgan@mathsetup@mtprocomplete
+ {%
+  \renewcommand\morgan@mtpro@version{complete}%
+  \renewcommand\morgan@mtpro@mathbboption{mtphrb}%
+  \morgan@mathsetup@mtpro
+ }
+
+\newcommand\morgan@mathsetup@mtprolite
+ {%
+  \renewcommand\morgan@mtpro@version{lite}%
+  \renewcommand\morgan@mtpro@mathbboption{amsbb}%
+  \RequirePackage{amssymb}%
+  \morgan@mathsetup@mtpro
+  }
+
+\newcommand\morganforcemtprolite{\let\morgan@mathsetup@mtprocomplete\morgan@mathsetup@mtprolite}
+
+\newcommand\morgan@mathsetup@nomtpro
+ {
+  \RequirePackage{amsfonts}               % AMS fonts for \mathfrak in subscripts
+  \RequirePackage{amsbsy}                 % AMS-LaTeX in K&D, p270, for \boldsymbol
+  \RequirePackage{amssymb}
+  \RequirePackage{euscript}
+ }
+
+\newcommand\morgan@mathsetup@stix{
+ \ifboolexpr{ bool {xetex} or bool{luatex}}
+  {
+   \renewcommand{\Box}{\mdwhtsquare}
+   \RequirePackage{unicode-math}
+   \setmathfont{STIX2Math.otf}
+  }
+  {
+   \RequirePackage{stix}
+  }
+ }
+
+%some fix math fonts which are perhaps (or perhaps not ...) used by documents
+\ifboolexpr{ bool {xetex} or bool{luatex}}
+{
+ \AtBeginDocument{\DeclareMathAlphabet \mathsf {\f@encoding} {morganmathsans} {m} {n}}
+}
+{}
+
+\font\TRFont    =cmr10 at 10pt          % ComputerModern font characters
+\font\BodFont   =msbm10 at 14pt        % special BMS font characters
+\font\MBBFont   =cmr10 at 10pt         % all \mathbb characters
+
+\font\MATHSfFont=cmss10             % for mathsf font at 10 pt
+\font\msbm      =msbm10             % blackboard font characters:
+\def\RR#1{\hbox{\msbm{#1}}}         % regular text
+
+\font\msbms     =msbm10 at 7.6pt
+\def\rr#1{\hbox{\msbms{#1}}}        % subscript/superscript
+
+\font\msbmrrr=msbm10 at 20pt
+\def\RRCHAP#1{\hbox{\msbmrrr{#1}}}  % chapter (article) title
+
+\font\msbmrrsec=msbm10 at 14pt
+\def\RRSEC#1{\hbox{\msbmrrsec{#1}}} % section (article) title
+
+\font\msbmrrsubsec=msbm10 at 12pt   % subsection (article) title
+\def\RRSUBSEC#1{\hbox{\msbmrrsubsec{#1}}}
+
+\newcommand\mathbbchar[1]{\mbox{\MBBFont\char`#1}}
+% e.g., \mathbbchar{1}, same as \MBBFont\char"31  (31 in hex is digit 1)
+
+%text font setup
+
+\newcommand\morgan@textsetup{\input{\morgan@textsetup@config}}
+
+\newcommand\morgan@textsetup@config{morganfont-caslonlibre.cfg}
+
+\ExplSyntaxOn
+
+\NewDocumentCommand\morgansetup { m }
+  {
+   \keys_set:nn { morgan } { #1 }
+  }
+
+\keys_define:nn  { morgan }
+  {
+   fontsetup .code:n =
+    {
+     \file_if_exist:nTF
+      {morganfont-#1.cfg}
+      {
+       \tl_set:Nn\morgan@textsetup@config{morganfont-#1.cfg}
+      }
+      {
+       \PackageError{morgan2}{Configuration~file~for~font~setup~#1~doesn't~exist}{}
+      }
+    },
+  mathsetup .choice:,
+  mathsetup / mtpro .code:n =
+     {
+       \cs_set:Npn\morgan@mathsetup{\morgan@mathsetup@mtprocomplete}
+     },
+  mathsetup / mtprolite .code:n =
+     {
+       \cs_set:Npn\morgan@mathsetup{\morgan@mathsetup@mtprolite}
+     },
+  mathsetup / stix .code:n =
+    {
+      \cs_set:Npn\morgan@mathsetup{\morgan@mathsetup@stix}
+    }
+  }
+
+\ExplSyntaxOff
+
+%final defaults:
+\ifboolexpr{bool{FinalPages}}
+   {\AtEndPreamble{\morgansetup{fontsetup=caslonpro,mathsetup=mtpro}}}
+   {}
+
+
+\AtEndPreamble{\morgan@mathsetup \morgan@textsetup}
+
+
+
+%% Various command regarding fontsizes etc
+%the class (probably ... ) sets normalsize to 10pt, but here it is redefined to 10.5/11pt
+
+\renewcommand\normalsize{%
+   \ifloose                                             %% v1.3
+%% \ULguess{The ``tight" specs required a leading of 15\,pt,
+%%          but 'morgan.sty' provided only 13.5\,pt when
+%%          I received it. The ``loose" specs even require
+%%          leading of 18\,pt. I expect that this may look
+%%          shocking and propose 15\,pt instead, provisionally.}{%%
+%%              2013/01/24}
+       \@setfontsize\normalsize{11.0pt}{15.0}%
+   \else
+       \@setfontsize\normalsize{10.5pt}{13.5}%
+   \fi
+   \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
+   \abovedisplayshortskip \z@ \@plus3\p@
+   \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
+   \belowdisplayskip \abovedisplayskip
+   \let\@listi\@listI}
+\normalsize
+
+%% `\tenpoint' is a variant of \LaTeX's `\normalsize' for
+%% \ULguess{\emph{figure} captions}{2009/06/24},
+%% see sections \bref{sec:figures} and \bref{sec:mytable}.
+
+%\newcommand\tenpoint{%
+%   \@setfontsize\normalsize{10pt}{13.5}%
+%   \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
+%   \abovedisplayshortskip \z@ \@plus3\p@
+%   \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
+%   \belowdisplayskip \abovedisplayskip
+%   \let\@listi\@listI}
+
+%% The macro \MC@selectfont defines a fixed font command.
+%% Its parameters are font <name>, <size>, <baseline skip>,<font family/shape>.
+%% <font family/shape> is a high level declaration of the font family/shape that will be used.
+%% New 29.11.2016: Inserted \normalfont. So it can't inherit font shape from the enviroment.
+%% But it can inherit color
+\newcommand\MC@selectfont[4]{%
+  \newcommand*#1{%
+    \fontsize{#2}{#3}\normalfont#4}}
+\@onlypreamble\MC@selectfont
+
+%% This section changes the font commands,
+%% The same command is used for xelatex and lualatex (29.11.2016)
+
+  \MC@selectfont{\pxfont@FTITLE     }{28}  {30}  {\bfseries}
+  \MC@selectfont{\pxfont@FSUBTITLE  }{28}  {30}  {\normalfont}
+  \MC@selectfont{\pxfont@FAUTHOR    }{12}  {13.5}{\normalfont}
+  \MC@selectfont{\pxfont@FAFF       }{9}   {10.5}{\normalfont}
+  \MC@selectfont{\pxfont@FSYN       }{12}  {14}  {\itshape}
+  \MC@selectfont{\pxfont@SYNTITLE   }{22}  {24}  {\bfseries}
+  %% Chapter headings (section~\ref{sec:chapter}):
+  \MC@selectfont{\pxfont@CNAME      }{16}  {18}  {\normalfont}
+  \MC@selectfont{\pxfont@CNUM       }{16}  {18}  {\normalfont}
+  \MC@selectfont{\pxfont@CTITLE     }{30}  {32}  {\bfseries}
+  \MC@selectfont{\pxfont@HONETITLE  }{13.5}{15.5}{\bfseries}
+  \MC@selectfont{\pxfont@HTWOTITLE  }{11}  {12.5}{\bfseries}
+  \MC@selectfont{\pxfont@HTHREETITLE}{10}  {11.5}{\bfseries}
+   %% Chapter headings (section~\ref{sec:chapter}):
+  \MC@selectfont{\pxfont@HTWOTITLENB}{11}  {12.5}{\normalfont}
+  \MC@selectfont{\pxfont@HTHREETITLENB}{10}{11.5}{\normalfont}
+  %% Heads of theorem-like environments (section~\ref{sec:thmlike}):
+  \MC@selectfont{\pxfont@thmnum}{10}{10.5}{\bfseries}
+  %% Running heads: (changed 29.11.2016)
+  \MC@selectfont\rhfont   {9.15}{9.15}{\bfseries}
+  \MC@selectfont\foliofont{9.15}{9.15}{\bfseries}
+
+%% Fonts for chapter authors and their affiliations
+  \MC@selectfont{\pxfont@CAUTHOR    }{14}{18}{\bfseries}
+  \MC@selectfont{\pxfont@CAUTHORDEGR}{12}{16}{\bfseries}
+  \MC@selectfont{\pxfont@CTOC       }{11}{15}{\bfseries}
+  \MC@selectfont{\pxfont@CAUTHORTOC }{11}{15}{\bfseries\itshape}
+
+
+%% |\vbcodefont|
+%% \ULguess{is just the same as \LaTeX's internal \cs{verbatim@font},
+%%          used in ...}{2009/04/23}
+\newcommand\vbcodefont{\normalfont\ttfamily}
+
+% In case fonts declare a sb series:
+\DeclareRobustCommand\semibfseries
+        {\fontseries{sb}\selectfont}
+
+\newcommand\semibold{\upshape\semibfseries}
+\newcommand\semibolditalic{\semibfseries\itshape}
+
+\DeclareTextFontCommand{\textbfit}{%
+    \bfseries\itshape\selectfont}
+%
+
+%
+%% === Loading other Packages ===
+\RequirePackage[table]{xcolor}
+%% Loading packages according to the package options received\ULguess{
+%% (moving this down from previous section)}{2013/01/24}:
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin Style File additions %%%%%%%%%%%%%%%%%
+%
+%% Loading some packages unconditionally:               %% 2013/01/24
+\RequirePackage{textcase}[1997/12/14]
+%% ... by David Carlisle in `macros/latex/contrib/'.
+%% `\MakeTextUppercase' is provided that 'morgan.sty' uses in
+%% all its headings. 1997/12/14 is needed for `\NoCaseChange'
+%% \ULguess{... with option `sectionbib', but once was used for
+%%          for something else as well.}{2009/08/28}
+\RequirePackage{multicol}
+%% ... from the \LaTeX\ 'tools' bundle,
+%% required in the `theindex' environment in section~\bref{sec:index}.
+%\RequirePackage{colortbl} % loaded through xcolor
+%% ... by David Carlisle in `macros/latex/contrib/',
+%% provides color for tables; loads his 'color' package as well.
+\RequirePackage{hhline}
+%% ... from the \LaTeX\ 'tools' bundle for double rules in tables.
+%% It is modified by `\def\HH@loop' in section~\bref{sec:hhline}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%% End Style File additions %%%%%%%%%%%%%%%%%%
+%
+%% === General Allocations === %%%%%%%
+%%
+%% \ULguess{``temp" registers should be gathered here so we see what
+%%   we already have. There are no allocations of this kind in
+%%   'book.cls'. In 'latex.ltx', allocations for special purposes
+%%   appear near related settings,}{2009/06/24}
+%% \ULguess{while ``temp'' registers are in 'ltalloc.dtx'.}{2009/07/02}
+\newbox\tempbox%
+%% \ULguess{... meanwhile only used with footnotes,
+%%          sec.~\bref{sec:fn}}{2010/08/24}
+%%
+
+%%  ==== Colors ====
+\definecolor {beige}        {cmyk} {0.06,0.03,0.27,0}
+\definecolor {blue}         {cmyk} {1,0.5,0,0.1}
+\definecolor {bluefifty}    {cmyk} {0.6,0,0.2,0}
+\definecolor {bluetwenty}   {cmyk} {0.2,0,0.15,0}
+\definecolor {black}        {cmyk} {0,0,0,1}
+\definecolor {grayten}      {cmyk} {0,0,0,0.1}
+\definecolor {red}          {cmyk} {0,1,1,0}
+\definecolor {redtwenty}    {cmyk} {0,0.2,0.2,0}
+\definecolor {white}        {cmyk} {0,0,0,0}
+\definecolor {yellowtwenty} {cmyk} {0.05,0.05,0.2,0}
+\definecolor {yellowzero}   {cmyk} {0,0,0,0}
+
+\color{black} %UF ??
+
+%%  === Paragraph Dimensions     ===       %%
+\setlength\parskip{\z@}%{0\p@ \@plus \p@}
+%% \ULguess{The 'book.cls' setting is replaced by prohibiting
+%%          any stretch between paragraphs.
+%%          An understandable choice.}{2009/04/17}
+%% UF: well not stretchable parskip could lead to bad page breaking
+\setlength\parindent{27pt}
+
+%%  === Placing Text on the Page ===       %%
+
+%% |\textheight|:
+\setlength\textheight{45pc}%
+\addtolength\textheight{-6.5pt}%
+
+%% |\textwidth|
+\setlength\textwidth{\ifloose 30\else 34.5\fi pc}       %% v1.3
+
+%% |\trimwidth| is used for computation of horizontal layout.
+\newlength\trimwidth
+\setlength\trimwidth{7.5in}%
+%
+\setlength\oddsidemargin{54pt}%
+\setlength\evensidemargin\trimwidth%
+\addtolength\evensidemargin{-\textwidth}%
+\addtolength\evensidemargin{-\oddsidemargin}%
+\addtolength\oddsidemargin{0pc}%
+
+%% ==== Other Vertical Dimensions   ====                 %% 2013/01/24
+\setlength\topmargin{50pt}%
+%% \ULguess{``Loose" specs demand 1p3 more from top trim
+%%          to running heads ...
+%%          (text live area handled by `&\headsep')}{2013/01/25}
+\ifloose \addtolength{\topmargin}{15pt} \fi             %% v1.3
+%
+\setlength\headheight{8.8\p@}%
+\setlength\headsep   {7.8pt}
+%% \ULguess{... should be 9\,pt
+%%   according to \dqtd{tight} and 12\,pt according to
+%%   \dqtd{loose} specs.}{%
+%%     2010/10/15}\ULguess{%
+%% ---Enlarging by \slfrac{4}{3} with option `loose':}{2013/01/25}
+\ifloose \addtolength{\headsep}{2.6pt} \fi              %% v1.3
+\setlength\topskip   {8.4\p@}
+%% \ULguess{Too large, measure heights, \qtd{(} has
+%%          7.875\,pt!? Cf.~\TeX book pp.\,113f.:
+%%          &\topskip is minimum distance of first
+%%          baseline to top of page body.}{2010/10/15}
+%
+\setlength\footskip{18pt}
+\setlength\maxdepth{4\p@}
+%%
+%% ==== Marginal Notes              ====   %% changed title 2013/01/24
+\setlength\marginparpush{5\p@}
+%% %% \ULguess{I had confused `push' and `width' from 2008 'morgan.sty'
+%% %%         here before.}{2009/07/27}
+\setlength{\marginparsep}{1pc}
+\setlength{\marginparwidth}{5pc}
+%%
+%%  === Float Placement          ===       %%    own subsec 2013/01/24
+\setcounter{topnumber}{10}
+\setcounter{bottomnumber}{10}
+\setcounter{totalnumber}{20}
+\renewcommand{\topfraction}{0.99}
+\renewcommand{\bottomfraction}{0.99}
+\renewcommand{\textfraction}{0.01}
+\renewcommand{\textfraction}{0.01}
+\renewcommand{\floatpagefraction}{0.01}
+%%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%% End Boxes & Dimensions %%%%%%%%%%%%%%%%%%%%%
+%%  === Page Styles  ===
+%% \label{sec:pagestyles}   %% 2010/10/14
+%%%%%%%%%%%%%%%%%%%%%%%%  Page styles  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% This code is essential for the typical appearance of M\&C books.
+%% ==== &\chaptermark, &\sectionmark ====
+%% \label{sec:marks}
+%% `\chaptermark' coming from 'book.cls'' \cs{ps@headings}
+%% sends \qtd{CHAPTER} and the chapter number to the page head.
+%% This is not wanted by Mike Morgan (e-mail 2009/12/12).
+%% Actually Mike Morgan reads from the design spec that
+%% the left running head is the book title
+%% and the right one is the chapter title, no numbers.
+%% We follow this when `\RHTITLE' has been specified,
+%% otherwise we follow 'book.cls'.
+%%
+%% Here we have ``private" versions of |\chaptermark| and
+%% |\sectionmark| that will be activated by `\pagestyle{headings}'
+%% \cs{MC@runninghead} will enforce `\MakeTextUppercase',
+%% so it is not needed in the `\mark'... commands.{\sloppy\par}
+\newcommand*{\MC@chaptermark}[1]{%
+  \@ifundefined{RHTITLE}%
+%% \ULguess{I'm following 'book.cls' more closely than
+%%          did 'morgan.sty' v1.17 using the `secnumdepth' test,
+%%          while omitting \cs{@chapapp} and
+%%          \cs{if@mainmatter}.\sloppy\endsloppypar}{2010/10/02}
+               {\markboth{\ifnum\c@secnumdepth>\m@ne
+                            \thechapter. \ #1%
+                          \fi}%
+                         {}}%
+               {\markboth{\RHTITLE}%
+                         {#1}}}
+\newcommand*{\MC@sectionmark}[1]{%
+  \@ifundefined{RHTITLE}%
+               {\markright{%
+                 \ifnum\c@secnumdepth>\z@
+                   \thesection. \ %
+                 \fi#1}}%
+               {}}
+%% ==== Shared Auxiliaries ====
+%% Now some shared auxiliaries, starting with the blue side rule.
+\newcommand*{\MC@siderule}{%
+    \lower\headsep \hbox{\vrule \@width \p@ \@depth\textheight}}
+%% The next ones don't save much, rather only keep design clear
+%% (the ``Don't repeat yourself" or ``Duplicating Is Evil" principle
+%% of software engineering; cf. Wikipedia).
+\newcommand*{\MC@evensiderule}{\hskip-10\p@ \MC@siderule}
+\newcommand*{\MC@oddsiderule}{\MC@siderule \hskip-10\p@ }
+%% \ULguess{`&\vskip.4pt' was in \cs{ps@headings only},
+%%          omitted here.
+%% Instead of `-10&\p@', there were `11pt' before---changed since
+%% according to specs the rule really should ``align" with
+%% page numbers. Also, amount of &\headsep is too small
+%% with respect to specs---kept now, as change may be
+%% dangerous.}{2010/10/12}
+\newcommand*{\MC@evenfolio}{\foliofont\thepage\hskip10\p@}
+\newcommand*{\MC@oddfolio} {\hskip10\p@\foliofont\thepage}
+\newcommand*{\MC@runninghead}[1]{\rhfont\MakeTextUppercase{#1}}
+\newcommand*{\MC@evenhead}[1]{%
+    \titlecolor
+    \MC@evensiderule
+%% \ULguess{Removing a skip of 0.5\,pt for specs!}{2010/10/13}
+    \MC@evenfolio \MC@runninghead{#1}\hfil}
+\newcommand*{\MC@oddhead}[1]{%
+    \titlecolor
+    \hfil
+    \MC@runninghead{#1}\MC@oddfolio
+    \MC@oddsiderule}
+%% \LaTeX's output routine automatically sets the depth of the
+%% header to zero.
+%%
+%% ==== Single Styles ====
+%% We never have footers (removing former styles that had some):
+\let\@evenfoot\@empty   \let\@oddfoot\@empty
+%% Page style |headings| has standard headings and produces vertical
+%% rules on one side of the page text:
+\renewcommand*\ps@headings{%
+%% \ULguess{\LaTeX's \cs{@mkboth} is replaced by
+%%          &\chaptermark, for ``standard chapters" like
+%%          TOC or index whose running heads may be unwanted.}{2010/10/13}
+    \def\@evenhead{\MC@evenhead\leftmark}%
+    \def\@oddhead {\MC@oddhead \rightmark}%
+    \let\chaptermark\MC@chaptermark
+    \let\sectionmark\MC@sectionmark}
+%% \ULguess{&\chaptermark/&\sectionmark might be \cs{@gobble}d
+%%          for a page style `myheadings'.}{2010/10/13}
+%%
+%% \ULguess{Removing `noruleheadings', `prtemplate'
+%%          (the latter apparently just the same as `headings',
+%%           apart from the latter's `&\vskip.4pt'),
+%%          and `blankpage' (the latter apparently a test/demo for
+%%          trimming). I have made a file 'pgstyles.pdf'
+%%          demonstrating those former styles.\sloppy\endsloppypar}{2010/10/13}
+%%
+%% |plain| changes \LaTeX's \cs{ps@plain} which typesets
+%% the folio centered at the bottom. Now it is typeset at the
+%% \emph{top} and the outer margin. There also is the typical
+%% blue M\&C side bar.
+\renewcommand*\ps@plain{%
+    \def\@evenhead{\MC@evenhead\relax}%
+    \def\@oddhead {\MC@oddhead \relax}%
+    \let\chaptermark\@gobble}
+%% \ULguess{Removing `broadsideplain', which could have
+%%          been named `noruleplain' too.}{2010/10/13}
+%% |emptyrule| is `empty', but \emph{with} side rule;
+%% used in 'fm.tex' (front matter material) and for `\part'
+%% \ULguess{(the latter may change).}{2009/12/26}.
+\newcommand*\ps@emptyrule{%
+    \def\@evenhead{\titlecolor\MC@evensiderule\hfil}
+    \def\@oddhead {\titlecolor\hfil\MC@oddsiderule}
+    \let\chaptermark\@gobble}
+%% \ULguess{Removing `stoblongfig'.}{2010/10/13}
+%%
+%% Note that |\pagestyle{empty}| from 'latex.ltx' is unchanged;
+%% it is
+%% \ULguess{currently}{2010/10/13}
+%% used in `\blankpage' below.
+%%
+%%
+%%  == Markup ==  %%%%%%%%%%%%%%%%%%%%
+%% %% \ULguess{'classes.dtx': \qtd{Document Markup}.}{2009/06/24}
+%%  === Utilities for Breaking etc. === %% removed dots 2010/02/24
+%% %% \ULguess{This has no counterpart in 'classes.dtx'.}{2009/06/25}
+%% ==== Page Tricks ====
+%% |\finishpage| and |\blankpage|
+%% \ULguess{seem to address two problems with standard \LaTeX\
+%%   (comments on the right not mine!).}{2009/04/13}
+%% Used in 'fm.tex'. %% 2009/06/17
+\newcommand\finishpage{%
+    \null\vfill\null\pagebreak}     % finish the current page
+%% \ULguess{Possibly forcing some ``flush bottom" at page breaks.}{2009/04/13}
+%%
+\newcommand\blankpage{%
+    \thispagestyle{empty}%          % nothing on a blank page
+    \null\vfill\null\pagebreak}     % leave a blank page
+%% \ULguess{Possibly makes up for the bad behavior of
+%%   &\cleardoublepage\ (which has other solutions).}{2009/04/13}
+%% \ULguess{According to Tondo 2009/06/03 a former programmer said
+%%   &\cleardoublepage would break bookmarks in PDFs.
+%%   (Do they?)\sloppy\endsloppypar}{2009/06/11}
+%%
+%% |\lpage| enlarges current page in terms of pica and then
+%% issues a page break instantly.
+\def\lpage#1{\enlargethispage{#1pc}\pagebreak}
+%%
+%% ==== Paragraph Tricks ====
+%% \ULguess{Some nice tools for the editor (formatter)---do authors
+%%          know about them?}{2009/06/02}
+%%
+%% |\breakpar| ends a paragraph ``invisibly", the last line ends
+%% at the right margin.
+\def\breakpar{{\parfillskip=0pt\par}}
+%% |\resumepar| starts a paragraph without indent.
+\def\resumepar{\noindent}
+%% `\breakpar \resumepar' works like the trick in \TeX book exercise
+%% 14.15, an invisible paragraph break.
+%% \ULguess{However, you can insert a figure or table between
+%%   &\breakpar and &\resumepar to control its placement when
+%%   you \emph{do not} want to break the paragraph at this place.}{2009/04/14}
+%%
+%% |\loosepar| may make a paragraph fill one line more than it would
+%% prefer to do, |\tightpar| one line less.
+\def\loosepar{\looseness=1}
+\def\tightpar{\looseness=-1}
+%%
+%% ==== Struts ====
+%% |\upstrut{<dimen>}| ensures distance <dimen> between current
+%% baseline and above; \ULguess{used
+%%   in 'ch01.tex' of ``main sample".}{2009/06/10}
+%% |\downstrut{<dimen>}| ensures distance <dimen> between current
+%% baseline and below:
+\newcommand{\upstrut}[1]{\rule{0cm}{#1}}
+\newcommand{\downstrut}[1]{\rule[-#1]{0cm}{0cm}}
+%% \ULguess{Cf. &\bstrut and &\tstrut for equation arrays in
+%%   section~\bref{sec:equation}.}{2009/06/24}
+%%
+%% ==== Flushing or Centered Lines ====
+%% |\plainline| is the same as `\@@line' in \LaTeX\ and
+%% `\line' in Plain \TeX.
+%%
+%% |\plainleftline|, |\plainrightline|, |\plaincenterline|
+%% are like\\ `\leftline', `\rightline', `\centerline'
+%% in \LaTeX\ and Plain \TeX\ except that you get a warning
+%% when the width exceeds the current line width.{\sloppy\par}
+%%
+\def\plainline#1{\hbox to \hsize{#1}}
+\def\plainleftline#1{\hbox to \hsize{#1\hfil}}
+\def\plainrightline#1{\hbox to \hsize{\hfil\relax #1}}
+\def\plaincenterline#1{\hbox to \hsize{\hfil\relax #1\hfil}}
+%%
+%% \RM{Actually only &\plaincenterline is used here,
+%%   \emph{one time} in the modification of &\chapter.
+%%   (Should be used by designer only.)}{2009/11/01}
+%% \ULguess{And, actually, I find \cs{plain...} \emph{better} than the
+%%          \LaTeX\ versions, would replace the latter.}{2009/06/02}
+%% \ULguess{&\plaincenterline is used for two tables in 'ch01.tex' of
+%%   the ``main sample" book (e.g., 'samp-bib.zip').}{2009/06/10}
+%%
+%%
+%% ==== Title Font and Color ====
+%% %% \ULguess{... new 2009/11/10}{2009/11/10}
+%%
+%% |\textbfit{<text>}| works about as `\textbf{\textit{<text>}}'
+%UF: move to font setup
+%% \ULguess{... new for Tondo's change of &\paragraph.
+%%              \cs{not@math@alphabet} missing.}{2009/11/10}
+%%
+%% |\titlecolor| is an internal alias for `\color{blue}':
+\newcommand*{\titlecolor}{\color{blue}}
+%% \ULguess{Add &\texttitlecolor?}{2010/10/15}
+%%
+%% %% \pagebreak %% 2009/10/10 %% away 2010/10/25
+%%  === Front Pages ===
+%% \label{sec:front}
+%% Macros beyond \LaTeX\ used in 'fm.tex' for the final production of
+%% a M\&C book.
+%%
+%% ==== Half Title Page 1--2 ====
+%% |\halftitle{<half-title>}| doesn't store, just typesets from the
+%% left.
+%% \ULguess{Tondo 2009/06/03: long titles usually broken manually,
+%%          flush-left at last.}{2009/06/10}
+\def\halftitle#1{%
+  \null\vskip13pc%
+  \noindent{\pxfont@FTITLE\titlecolor#1}}
+\def\seriestitle#1{%
+  \noindent{\pxfont@CNAME\titlecolor#1}}
+%%
+%% ==== Series Page 3 ====
+%% |\seriesTitle{<title>}| used in 'fm.tex'.
+\def\seriesTitle#1{\pxfont@HTWOTITLENB{\titlecolor\noindent#1}\\}
+%% |\seriesAuthor{<name>}| used in 'fm.tex'.
+\def\seriesAuthor#1{\pxfont@HTHREETITLENB#1\\}
+%% ... added ``\texttt{NB}'' 2010/08/24 for Tondo's 2010/06/23
+%% ('morgan.dif'), or rather 2010/08/27 on Tondo's 2010/08/26, at last.
+%%
+%% ==== Full Title 5 ====
+%% |\title{<title>}| typesets as well, same size as &\halftitle.
+%% But if it doesn't fit in one line, it is
+%% flush-left.---%% added 2009/12/26:
+%% So this is very different from \emph{\LaTeX's} &\title.
+%% \ULguess{I wondered whether there is &\raggedright in &\title
+%%   while not in &\halftitle.}{2009/06/17}
+\def\title#1{{%
+  \null\vskip51pt
+  \noindent\raggedright\pxfont@FTITLE\titlecolor#1%
+  \par\vskip4pc}}
+%%
+%% |\authorname{<name>}|
+\def\authorname#1{{\noindent\raggedright\pxfont@FAUTHOR%
+                      {\titlecolor\raggedright#1\par\vskip 3pt}}}
+%%
+%% |\authoraffiliation{<institution>}|
+\def\authoraffiliation#1{{\noindent\raggedright\pxfont@FAFF%
+                      {\titlecolor#1\par}}}
+%%
+%% |\synTITLE{#1}|
+\def\synTITLE#1{\chapter*{{\pxfont@SYNTITLE#1}}}
+%% |\synthesis{#1}| typesets uppercase ...
+\def\synthesis#1{{%
+  \noindent\raggedright\pxfont@FSYN\titlecolor\MakeTextUppercase{#1}%
+  \par}}
+%%
+%% |\morganlogo| inserts the M\&C logo from 'mclogo.eps'.
+%% 'ttdefs.sty' loads 'graphics' for this.
+%% %% \rlap UL 2010/10/13
+\def\morganlogo{%
+  \vskip60pt\noindent\rlap{\includegraphics{mclogo.eps}}}
+%%
+%% ==== Abstract and Key Terms 6 ====
+%% |\ABSTRACT| starts the abstract on title pages in 'fm.tex'.
+%% (\emph{Not} used as a \LaTeX\ environment.)
+\def\ABSTRACT{\noindent{\pxfont@HONETITLE{\titlecolor ABSTRACT}}%
+            \par\smallskip\noindent}
+%% `\keywords' is defined with `\Ahead' in
+%% section~\bref{sec:ahead} right below.
+%%
+%%  === &\Ahead\ and Keywords ===
+%% \label{sec:ahead}
+%% |\MCshadedblock{<width>}{<move>}{<text>}| is an auxiliary
+%% even shared with chapter heads: %% analyzed/optimized 2010/10/15
+\newcommand{\MCshadedblock}[3]{%
+%% \LaTeX's `\@tempboxa' stores text content:
+  \setbox\@tempboxa\vbox{%
+    \color@begingroup
+    \hsize#1\relax
+%% \ULguess{Care: &\vskip starting #3 triggers &\parskip,
+%%          &\rule likewise.}{2010/10/15}
+    #3%
+    \color@endgroup}%
+  \@@par
+%% Blue background:
+  \vbox to\z@{%
+    \rlap{\hskip#2\color{bluetwenty}%
+          \vrule height\ht\@tempboxa width 41pc \@depth\dp\@tempboxa}%
+%% \ULguess{... that depth is zero at present, due to final
+%%              &\vskip.}{2010/10/15}
+    \vss}%
+  \nointerlineskip
+%% ... otherwise `\lineskip' appears (`\showlists').%%%}{2009/10/13}
+%% ---Print text content:
+  \box\@tempboxa
+}
+%% |\Ahead[<title-color>]{<title>}{<text>}|
+\newcommand{\Ahead}[3][blue]{%
+    \MCshadedblock{30pc}%%%{\medskipamount}%
+                  {\ifodd\c@page .5pc\else -6.5pc\fi}%
+                  {%
+      \medskip
+      \noindent\textcolor{#1}{\pxfont@HONETITLE #2}%
+      \vskip\smallskipamount
+      \noindent #3%
+      \vskip\medskipamount
+                  }%
+}
+%% |\keywords{<terms>}| uses the previous for `KEYWORDS' as <title>
+%% and <terms> as <subtitle>:
+\newcommand\keywords{\Ahead{KEYWORDS}}
+%% |\morekeywords{<terms>}| omits `KEYWORDS'
+%% (removed trailing argument above and below 2010/08/24):
+\newcommand\morekeywords{\Ahead{}}
+%%
+%%
+%%  === Sectioning ===
+%% ==== Counters ====
+\setcounter{secnumdepth}{3}
+%% ... 'book.cls' has only 2. %% 2009/06/24
+%%
+%% ==== Front, Main, Back Matter ====
+%%%%%%%%%%%%%%%%%%%% Begin General Pagination Macros %%%%%%%%%%%%%%%%%
+
+\newif\if@openright
+%% \ULguess{... in 'book.cls' already; in fact
+%%   \emph{overrides} 'book.cls''s default by
+%%   \cs{@openrightfalse}, conforming to the present definition
+%%   of &\part\ (but just &\@openrightfalse!).---This
+%%   here is not only ``pagination," it also
+%%   sets the pagestyle---while you could set the pagestyle once and
+%%   for all and this section (which otherwise should be above the
+%%   definition of &\part) might be removed entirely.}{2009/04/17}
+%%   \RM{Apparently used with &\backmatter only, where it is useless.}
+%%      {2013/01/28}
+%%
+\renewcommand\frontmatter{%
+\pagestyle{headings}
+\clearpage
+\@mainmatterfalse
+\pagenumbering{roman}}
+%%
+\renewcommand\mainmatter{%
+\clearpage
+\@mainmattertrue
+\pagestyle{headings}
+\pagenumbering{arabic}}
+%%
+\renewcommand\backmatter{%
+  \if@openright
+%% \ULguess{... which is never true here ...}{2009/04/17}
+    \clearpage
+%% \ULguess{... in spring 2008, this was &\cleardoublepage.
+%%              Now the conditional is obsolete.
+%%              It should be decided what to do about all the
+%%              'book.cls' options.}{2009/11/01}
+  \else
+    \clearpage
+  \fi
+  \@mainmatterfalse}
+%%
+%%
+%% ==== Parts ====
+%%%%%%%%%%%%%%%%%%%%%%%%%% Begin Part Title %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% |\part| is the \LaTeX\ user/author command, modified for options
+%% available here.
+%% \ULguess{TODO Tondo 2009/07/20 forwards new design from Jonathan
+%%   Pennell.}{2009/10/06}
+\renewcommand\part{%
+  \clearpage
+%% This is like 'book.cls''s option `openany'.
+%% \ULguess{But it is very strange. Tondo 2009/06/03 informs me
+%%   that the former programmer told not to use &\cleardoublepage
+%%   because PDF bookmarks would break then.}{2009/06/11}
+%% \ULguess{With \textsf{morgan.\textsl{cls}}, we could simply pass
+%%   options to 'book.cls' instead of modifying 'book.cls' macros
+%%   ...!?}{2009/06/10}
+  \thispagestyle{emptyrule}%
+%% ... where \LaTeX\ 'book.cls' has `\thispagestyle{empty}'.
+%% \ULguess{... redefine page style `empty'?}{2009/06/10}
+%% \ULguess{``Manually expanding" 'book.cls''s
+%%          \cs{if@twocolumn} (for \cs{@endpart}):}{2010/08/30}
+  \@tempswafalse
+  \null\vfil
+  \secdef\@part\@spart}
+%% Tondo 2010/06/23 on Joel's request ('morgan.dif'):
+\renewcommand*{\partname}{PART}
+%% Following are changes from 'morbeta.sty' as of 2010/08/26.
+%%
+%% In order to allow line-breaking of part titles in TOC
+%% with 'hyperref' option `dvips(one)', `\@part' must issue a
+%% `\numberline' with two arguments, cf.~Sec.~\ref{sec:toc}.
+%% We change 'book.cls''s definition accordingly.
+%% Also, the long title should go to TOC, as with other sectioning
+%% commands with 'morgan.sty'. Actually, an optional argument
+%% then is irrelevant, as the part won't get a page heading.
+%% However, `\secdef' expects that the parameter text is `[#1]#2'.
+\def\@part[#1]#2{%
+    \ifnum \c@secnumdepth >-2\relax
+      \refstepcounter{part}%
+      \addcontentsline{toc}{part}{%
+        \protect\numberline{\thepart\hspace{1em}}{#2}}%     %% UL
+    \else
+      \addcontentsline{toc}{part}{\protect\numberline{}{#2}}%% UL
+    \fi
+%% For sec.~\ref{sec:marks}:
+    \@ifundefined{RHTITLE}%
+                 {\markboth{}{}}%
+                 {\markright{}}%
+    {\centering
+     \interlinepenalty \@M
+     \normalfont
+     \ifnum \c@secnumdepth >-2\relax
+       \huge\bfseries \partname\nobreakspace\thepart
+       \par
+       \vskip 20\p@
+     \fi
+     \Huge \bfseries #2\par}%
+    \@endpart
+}
+%% \ULguess{But this still is not J.~Pennell's new design!}{2010/08/30}
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% End Part Title %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%% Begin Chapter Title  %%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% ==== Starting Chapters ==== %%%%%%%%%%%%%%%%
+%% \label{sec:chapter}
+%% |\chapter| \LaTeX\ user/author command,
+%% modifications `\ifruninchapter' (stay on present page)
+%% and boiling down to `openany' option, as with `\part'.
+%% Through `\makechaptertitle' and a much modified
+%% `\@makechapterhead' there is a special appearance.
+\renewcommand\chapter{\@afterindentfalse
+                      \secdef\@chapter\@schapter}
+\newcommand*{\MC@chapterpage}{%
+  \clearpage \thispagestyle{plain}\global \@topnum\z@}
+%% For |\chapter| (without `*'):
+\def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
+                         \MC@chapterpage
+                         \refstepcounter{chapter}%
+                         \typeout{\@chapapp\space\thechapter.}%
+                         \addcontentsline{toc}{chapter}%
+                         {\protect\numberline{\thechapter}%
+%% 'morgan.sty''s use of &\numberline requires another pair of braces:
+                                             {#2}}%% 2009/10/14
+                    \else
+                      \addcontentsline{toc}{chapter}%
+                      {\protect\numberline{}{#1}}%%% 2010/08/26
+                    \fi
+                    \chaptermark{#1}%
+                    \addtocontents{lof}{\protect\addvspace{10\p@}}%
+                    \addtocontents{lot}{\protect\addvspace{10\p@}}%
+                    \if@twocolumn
+                      \@topnewpage[\@makechapterhead{#2}]%
+                    \else
+                      \@makechapterhead{#2}%
+                      \@afterheading
+                    \fi}
+%% |\appendtrue| is set by the command `\appendix', see
+%% section~\bref{sec:appendix}.
+%% \RM{Replaceable by some
+%% &\def\cstx{MC@chapAPP}{&\appendixname} etc.}{2009/10/08}
+\newif\ifappend \global\appendfalse
+\def\@makechapterhead{%
+%% Chapter author preparation:
+    \global \let \MC@chapau@skipamount \MC@chapau@corr@skipamount
+%% A centered line \lq CHAPTER <number>\rq\ or
+%% \lq APPENDIX <number>\rq:
+    \plaincenterline{\pxfont@CNAME\titlecolor
+        \ifappend %% APPENDIX
+            A\kern0.25em P\kern0.25em P\kern0.25em E\kern0.25em
+            N\kern0.25em D\kern0.25em I\kern0.25em X%
+        \else     %% CHAPTER
+            C\kern0.25em H\kern0.25em A\kern0.25em P\kern0.25em
+            T\kern0.25em E\kern0.25em R%
+%% \ULguess{... space after `R' may be wanted for letter-spacing;
+%%          ask!}{2009/10/15}
+        \fi
+%% \ULguess{Your graphical designer may tell you that the
+%%   spacing of `CHAPTER' is very bad.}{2009/06/27}
+%% \ULguess{Seems to be less bad with `caslon'.}{2009/10/08}
+        \quad \pxfont@CNUM \thechapter}%
+%% ... removed superfluous group inside 2009/10/12.
+    \nointerlineskip
+    \vskip13.5pt
+    \@makeschapterhead
+%% \ULguess{... or \@schapter}{2009/10/25}
+}
+%% For |\chapter*| (and finishing previous):
+\def\@makeschapterhead#1{%
+%% \ULguess{... or \@schapter, then &\let&\relax}{2009/10/25}
+    \MCshadedblock\textwidth\z@skip{%
+%% Partially imitating a `center' environment: %% rm guess 2010/10/15
+        \vskip\topsep
+        \centering \pxfont@CTITLE \titlecolor#1%
+        \@@par \xdef\MC@prevdepth{\the\prevdepth}%
+        \vskip\topsep}%
+    \vskip-\MC@prevdepth
+    \vskip\MC@chapter@skipamount
+}
+%% |\global\runinchaptertrue| prevents opening a new page for the
+%% \emph{next}\\ `\chapter*'.
+%% \RM{Wanted?}{2009/11/01}
+\newif\ifruninchapter \global \runinchapterfalse
+\def\@schapter{%% TODO!? 2009/10/15
+  \ifruninchapter
+    \global\runinchapterfalse
+%% \ULguess{... was missing in 'MORCHAP.sty'!}{2010/08/24}
+  \else \MC@chapterpage \fi
+  \@makeschapterhead
+}
+%%
+%% ==== Chapter Head Skips ==== %%%%%%%%%%%%%%%%
+%% \ULguess{Replace Jonathan Pennell's `in'
+%%   by 72\,pt (``small inch"). 0.325\,in\,=3/8\,in
+%%   ('one-or-more.htm')
+%%   turn into 27\,pt etc.!?}{2009/10/31}
+%%
+%% Jonathan Pennell's baseline skip specification
+%% last chapter author line to normal text following,
+%% as well as from chapter title to text without author
+%% (red answer 2009/10/09; instead of .25$^{\prime\prime}$
+%%  specified for \qtd{Spectral Analysis ...}):
+\dimen@=.625in
+%% Correct for `\baselineskip' from `\normalsize':
+\advance\dimen@-13.5pt
+\@ifdefinable\MC@chapau@text@skipamount{%
+    \edef\MC@chapau@text@skipamount{\the\dimen@}}
+%% Space surrounding chapter title (cf. `\@makechapterhead'):
+\advance\dimen@-\topsep
+%% \ULguess{Care: &\parskip will be added.}{2010/10/15}
+\@ifdefinable\MC@chapter@skipamount{%
+    \edef\MC@chapter@skipamount{\the\dimen@}}
+%% `\vskip' for difference of specifications when author command
+%% is detected:
+%% Jonathan Pennell's specification for title to author is
+%% .375$^{\prime\prime}$. Difference of both inch specifications
+%% is{\sloppy\par}
+\dimen@=.25in
+%% Baselineskip with authors is
+%% \ULguess{18\,pt (Tondo's change below)}{2010/10/15},
+%% instead of 13.5\,pt with `\normalsize':
+\advance\dimen@4.5pt          %% was 6.5pt 2010/10/15
+\@ifdefinable\MC@chapau@corr@skipamount{%
+    \edef\MC@chapau@corr@skipamount{-\the\dimen@}}
+%% \ULguess{... problem with index: Donald Arseneau 'texhax',
+%%          \dqtd{baseline-to-baseline}, latex/3126,
+%%          but we use 'multicol'.}{2010/10/15}
+%%
+%% ==== Chapter Authors ==== %%%%%%%%%%%%%%%%%%
+%% \label{sec:chapau}
+
+
+%% Append |\chapterauthor{<name>}| to `\chapter{<title>}':
+\newcommand*{\chapterauthor}{%
+         \vskip \MC@chapau@skipamount
+         \gdef  \MC@chapau@skipamount{-\MC@chapau@text@skipamount}%
+ \global \let   \par \MC@chapau@enter
+         \gdef  \MC@chapterauthor
+}
+%% Append |\chapteraffiliation{<inst>}| to `\chapterauthor{<name>}':
+\newcommand*{\chapteraffiliation}[1]{%
+    \g@addto@macro \MC@chapterauthor {%
+        \mcChapAffSep \MC@chapaff@font #1}%
+    \MC@chapau@enter
+}
+%% An empty line after `\chapterauthor' prints the author's name
+%% \emph{without} affiliation.
+%%
+%% |\mcChapAffSep| separates affiliaton from author names
+%% on the starting page of the chapter.
+\newcommand*{\mcChapAffSep}{, }
+%% You can `\renewcommand*{\mcChapAffSep}{\\}' or so.
+\newcommand*{\MC@chapaff@font}{%
+    \fontseries{m}\fontshape{it}\selectfont}
+%% \ULguess{... just &\it, but this should be tested/clarified for
+%%              Caslon.}{2009/11/15}
+\newcommand*{\MC@chapau@enter}{%
+    \global \let\par\@@par
+    \begingroup
+        \centering      %% J. Pennell 2009/10/09
+        \pxfont@CAUTHOR
+        \textcolor{blue}{\MC@chapterauthor}%
+        \par
+%         \def\mcChapAffSep{, }%
+%% Users (Tondo, ...) prefer 2010/07/08:
+        \def\mcChapAffSep{\protect\newline}%
+%% \ULguess{Removing &\mcOneSpace for &\toconly/&\hereonly.}{2010/10/15}
+        \def\MC@chapaff@font{\protect\mdseries}%
+        \addtocontents{toc}{%
+            \protect\chapauline{\MC@chapterauthor}}%
+    \endgroup
+    \nobreak
+    \vskip\MC@chapau@text@skipamount
+    \@afterheading
+}
+%% |\chapterauthordegr{<degr>}| is from Tondo 2010/07/07:
+\newcommand*{\chapterauthordegr}[1]{\pxfont@CAUTHORDEGR #1} % DRT
+%% \ULguess{Removing &\mcOneSpace for &\toconly/&\hereonly.}{2010/10/15}
+%%
+%% |\chapauline{<chapter-author-info>}| creates according chapter
+%% authors' data in the TOC:{\sloppy\par}%% internal command although ...
+\newcommand*{\chapauline}[1]{%
+%     \nobreak \vskip 6\p@ \@plus\p@ \nobreak
+%     \vskip      -\MC@chapau@toc@skipamount
+%     \global \let \MC@chapau@toc@skipamount \smallskipamount
+%% \ULguess{... precursors to v1.2---too much stretch/shrink!
+%%              Now only keeping result of normal-space glue
+%%              components.}{2010/10/15}
+%% Cf.~`\l@chapter'.
+    \nobreak \vskip\MC@chapau@toc@skipamount
+    \gdef\MC@chapau@toc@skipamount{3\p@ \@plus\p@ \@minus\p@}%
+    {\leftskip=2.5pc \noindent
+     \pxfont@CAUTHORTOC
+     \textcolor{blue}{#1}%
+%      \testblblskip{\baselineskip}%
+%% \ULguess{... found by Tondo}{2010/10/05}
+     \@@par}%
+   \addpenalty\@highpenalty
+%% \ULguess{... TODO may be bad with chapter authors}{2010/05/02}
+   \addvspace{2\p@ \@plus\p@ \@minus.5\p@}%
+}
+%% \ULguess{Checked skips again for v1.2.}{2010/10/15}
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%  End Chapter Title  %%%%%%%%%%%%%%%%%%%%%%
+%
+%% ==== Lower Level Headings ====
+%% \label{sec:sections}
+%% Modifications of the \LaTeX's commands `\section', ...,
+%% `\subparagraph':
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%  Sectioning commands  %%%%%%%%%%%%%%%%%%%%
+%
+%% As opposed to 'book.cls', the hanging indent of section titles
+%% does not depend on the length of the section number string:
+\renewcommand\@seccntformat[1]{%
+    \hbox to 3pc{\csname the#1\endcsname \hfil}} %% \hfil 2010/02/24
+%% With v1.22, `\MC@alignsec' supports option
+%% `[raggedright]'---|\section|:
+\renewcommand\section{%
+  \@startsection{section}{1}{\z@}{-15pt \@plus -2pt \@minus -.2pt}%
+                    {\medskipamount}%
+                    {\MC@alignsec\titlecolor\pxfont@HONETITLE}}
+%% `\smallskipamount' replacing `.001pt' by Tondo 2009/10/06ff.
+%% %% reworked doc 2010/10/28
+%% (Ding book), approved by Mike Morgan 2009/11/07, inserted 2009/11/10
+%% \ULguess{(but cf. 'MORPLAY.sty'):}{2010/08/24}---|\subsection|:
+\renewcommand\subsection{%
+  \@startsection{subsection}{2}{\z@}{-15pt \@plus -2pt \@minus -.2pt}%
+                    {\smallskipamount}%
+                    {\MC@alignsec\titlecolor\pxfont@HTWOTITLE}}%
+%% ... likewise for |\subsubsection| and blue (`\titlecolor'):
+\renewcommand\subsubsection{%
+  \@startsection{subsubsection}{3}{\z@}% %% `%' 2009/09/26
+                    {-15pt \@plus -2pt \@minus -.2pt}%
+%% \ULguess{... `7.5' replaced by `15'---tested?}{2009/11/10}
+                    {\smallskipamount}%
+                    {\MC@alignsec\titlecolor\pxfont@HTHREETITLE}}%
+%% |\paragraph|---new
+%% `\textbfit' replacing `\itshape', %% UL 2009/11/10
+%% newly even blue:
+\renewcommand\paragraph{%
+  \@startsection{paragraph}{4}{\z@}%
+                {-19pt \@plus -2pt \@minus -.2pt}{-1em}%
+                %{\titlecolor\textbfit}}%		% DRT
+                {\titlecolor\textbf}}%
+%% ... |\subparagraph|
+%% \ULguess{likewise by analogy, U.L. ...}{2009/11/10}
+\renewcommand\subparagraph{%
+  \@startsection{subparagraph}{5}{\parindent}%
+                {-19pt \@plus -2pt \@minus -.2pt}{-1em}%
+                {\titlecolor}}%
+%
+%% Now some \LaTeX\ internals are %% was `a' only 2010/10/25
+%% redefined in order to typeset
+%% section and subsection titles uppercase:
+\def\@sect#1#2#3#4#5#6[#7]#8{%
+  \ifnum #2>\c@secnumdepth
+    \let\@svsec\@empty
+  \else
+    \refstepcounter{#1}%
+    \protected@edef\@svsec{\@seccntformat{#1}\relax}%
+  \fi
+  \@tempskipa #5\relax
+  \ifdim \@tempskipa>\z@
+    \begingroup
+      #6{%
+        \@hangfrom{\hskip #3\relax\@svsec}%
+%           \interlinepenalty \@M #8\@@par}%
+%% \ULguess{Previous is original line,
+%%          'morgan.sty' typesets uppercase instead:}{2009/04/17}
+          \interlinepenalty \@M
+          \ifnum#2>2{#8}\else\MakeTextUppercase{#8}\fi\@@par}%
+    \endgroup
+    \csname #1mark\endcsname{#7}%
+    \addcontentsline{toc}{#1}{%
+      \ifnum #2>\c@secnumdepth
+        \protect\numberline{}%          %% 2010/08/26
+      \else
+        \protect\numberline{\csname the#1\endcsname}%
+      \fi
+%       {#7}}%
+%% ... \LaTeX\ is bad here, long title to TOC 2010/02/24:
+      {#8}}%
+  \else
+    \def\@svsechd{%
+      #6{\hskip #3\relax
+%       \@svsec #8}%
+      \@svsec \ifnum#2>2{#8}\else\MakeTextUppercase{#8}\fi}%
+      \csname #1mark\endcsname{#7}%
+      \addcontentsline{toc}{#1}{%
+        \ifnum #2>\c@secnumdepth \else
+          \protect\numberline{\csname the#1\endcsname}%
+        \fi
+%         #7}}%
+%% Like above 2010/03/06:
+        #8}}%
+  \fi
+  \@xsect{#5}}
+%
+
+%% Since `@startsection' doesn't pass its #2 to `\@ssect',
+%% `\@startsection' is redefined to store it as `\secdepth'
+%% so the above conditional uppercase functionality can be added
+%% to `\ssect' as well:
+\def\@ssect#1#2#3#4#5{%
+  \@tempskipa #3\relax
+  \ifdim \@tempskipa>\z@
+    \begingroup
+      #4{%
+        \@hangfrom{\hskip #1}%
+          \interlinepenalty \@M
+          \ifnum\secdepth>2{#5}\else\MakeTextUppercase{#5}\fi\@@par}%
+%% \ULguess{... or save a few tokens by &\expandafter, same below ...
+%%          However, this thing could have been done in
+%%          \cs{@startsection} already, in passing the title.
+%%          This would save the present modification of \cs{@ssect}.
+%%          \cs{@sect} likewise!---But for my proposal to use &\markright
+%%          and TOC for stars as well, just undefine \cs{@sect} and
+%%          \cs{@ssect} and write a new \cs{@startsection}!}{2009/10/29}
+    \endgroup
+  \else
+    \def\@svsechd{#4{\hskip #1\relax
+      \ifnum\secdepth>2{#5}\else\MakeTextUppercase{#5}\fi}}%
+  \fi
+  \@xsect{#3}}
+%
+\gdef\secdepth{0}
+\def\@startsection#1#2#3#4#5#6{%
+  \if@noskipsec \leavevmode \fi
+%% \ULguess{&\secdepth insertion (I append a \texttt{\%}):}{2009/04/17}
+  \gdef\secdepth{#2}%
+  \par
+  \@tempskipa #4\relax
+  \@afterindenttrue
+  \ifdim \@tempskipa <\z@
+    \@tempskipa -\@tempskipa \@afterindentfalse
+  \fi
+  \if@nobreak
+    \everypar{}%
+  \else
+    \addpenalty\@secpenalty\addvspace\@tempskipa
+  \fi
+  \@ifstar
+    {\@ssect{#3}{#4}{#5}{#6}}%
+    {\@dblarg{\@sect{#1}{#2}{#3}{#4}{#5}{#6}}}}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%  End Sectioning commands  %%%%%%%%%%%%%%%%
+%%
+%%  === General List Parameters ===
+%% \ULguess{This is the only part of the \qtd{Lists} subsection
+%%   of 'classes.dtx' that is changed here.}{2009/06/24}
+\setlength\partopsep{0pt}
+%% ... so lists entered in `vmode' don't differ from lists entered
+%% in `hmode'.
+%% \ULguess{This is \emph{``layout"}, not \emph{``markup"}, right?}{2009/07/23}
+%%
+%%  === Environments beyond \LaTeX\ Kernel ===
+%% \ULguess{This is \qtd{Defining New Environments} in 'classes.dtx'.}{2009/06/24}
+%%
+%% ==== Highlighting Paragraphs ====
+%% \label{sec:highpar}
+%% The |background| environment shades the background of its content
+%% with a color |shadecolor|, using Donald Arseneau's 'framed.sty'
+%% which allows the content to be broken across pages.
+%% The most recent version of 'framed' on CTAN is v0.95 as of 2007/10/04,
+%% the previous version was v0.8a as of 2003/07/21.
+%% \ULguess{The following version of the macros are from a file
+%%   'shadebox.tex' as of 2009/03/22, delivered by U.L.}{2009/10/22}
+%% They work with both versions of 'framed'.
+\newenvironment*{background}
+    {%%%\setlength{\fboxsep}{0pt}%% framed.sty v 0.8a only!
+     %%%\shaded
+     \def\FrameCommand{\fboxsep=0pt \colorbox{shadecolor}}%
+     \MakeFramed{\FrameRestore}%
+     \noindent \strut \ignorespaces}
+    {\ifhmode\unskip\strut\fi \endMakeFramed}
+%% This needs a definition of |shadecolor|. We provide two ways for this.
+%%
+%% |\boxcolorknown{<color-name>}| renders `shadecolor' equal
+%% to\\ <color-name> which has been defined before such as
+%% `redtwenty'---for other choices, see
+%% section~\bref{sec:colors}.{\sloppy\par} %% TODO always sloppy!?
+\newcommand*{\boxcolorknown}[1]{%
+  \expandafter \let
+    \csname \string\color @shadecolor\expandafter \endcsname
+      \csname \string\color @#1\endcsname}
+%% {\sloppy |\boxcolorown{<color-model>}{<weights>}| sets
+%% `shadecolor' independently of predefined colors, just like
+%% \[`\definecolor{shadecolor}{<color-model>}{<weights>}'\]
+%% according to the 'color' package (cf.\ 'grfguide.pdf').
+%% An original choice was `{0,.15,.5,0}' in the `cmyk' model.\par}
+\newcommand*{\boxcolorown}{\definecolor{shadecolor}}
+%% |\backgroundhead{<title>}| can be used for a heading <title>
+%% starting the background section. Its font resembles `\subsection*'
+%% titles (first work Tondo's).
+\newcommand\backgroundhead[1]{%
+  \noindent
+  {\titlecolor\pxfont@HTWOTITLE \MakeTextUppercase{#1}}\par
+  \nobreak \vskip 2pt\@afterheading}
+%         \vspace*{2pt}}}
+%% \ULguess{&\backgroundtitle could be replaced by an optional
+%%          argument of `background'. What about and
+%%          \cs{@afterheading}? &\backgroundcolor rather than
+%%          &\boxcolor?\sloppy\endsloppypar}{2009/08/30}
+%%
+%% ==== Code Environments ====
+%% \label{sec:codeenvs}
+%% |fcode| is a modified copy of \LaTeX's `verbatim' environment
+%% (the main part of which is defined in `\@verbatim').
+%% \ULguess{It seems to be for typesetting \emph{not necessarily \TeX}
+%%   code. It is \emph{not} (all of) a verbatim environment, just
+%%   typesets in a typewriter font, repeats spaces (not breaking lines),
+%%   and breaks lines as in the author's code. &\_ can be used to
+%%   produce the underscore \lq\_\rq, &\{ and &\} for curly braces,
+%%   &\^ for the circumflex symbol \lq\string^\rq.
+%%   &\frenchspacing is missing.}{2009/04/23}
+\newenvironment{fcode}{\par\addvspace{6.5pt plus2pt}%
+  \def\_{\char'137}%
+  \def\{{\char'173}\def\}{\char'175}\def\^{\char'136}%
+  \parindent0pt
+%% \ULguess{\LaTeX's setting paragraph indent and skip to zero
+%%   (and restoring the normal &\parfillskip) has been dropped, as well as
+%%   a setting of &\leftskip and &\rightskip\ (which is not clear to
+%%   me).---The next is original code.\sloppy\endsloppypar}{2009/04/23}
+    \@tempswafalse
+    \def\par{%
+      \if@tempswa
+        \leavevmode \null \@@par\penalty\interlinepenalty
+      \else
+        \@tempswatrue
+        \ifhmode\@@par\penalty\interlinepenalty\fi
+      \fi}%
+%% The \TeX\ ``specials" (in `\dospecials') are kept,
+%% not made ``other."
+  \@vobeyspaces\obeylines
+  \everypar \expandafter{\the\everypar \unpenalty}
+%% \ULguess{&\hyphenchar&\font`=-1' to suppress hyphenation has been
+%%   dropped. Suppression of ligatures by \cs{@noligs} is
+%%   missing as well.}{2009/04/23}
+  \noindent\vbcodefont\ignorespaces%
+%% \ULguess{This line differs from the original where vertical mode isn't
+%%   left right now. An ``own" verbatim font &\vbcodefont is
+%%   used ``in place of" the original\\\cs{verbatim@font}, but it has
+%%   been chosen to do the same.}{2009/04/23}
+}{%
+  \addvspace{6.5pt plus2pt}%
+%% There is an own choice of vertical distance to surrounding
+%% text, irrespective of the `\trivlist' parameters.
+}
+%%
+%% |code| is another modified copy of \LaTeX's `verbatim', similar to `fcode'.
+\newenvironment{code}{\par\addvspace{6.5pt plus2pt}%
+  \parfillskip\@flushglue\parskip\z@skip
+%% \ULguess{This is a line from `verbatim' that is missing in `fcode'.
+%%   But here the behavior of \cs{par} is kept.}{2009/04/23}
+  \obeylines \verbatim@font \@noligs
+  \everypar \expandafter{\the\everypar \unpenalty}%
+  \frenchspacing\@vobeyspaces
+%% \ULguess{Here we have &\frenchspacing, while the next line is
+%%   as in `fcode' above.}{2009/04/23}
+  \noindent\ignorespaces
+}{%
+\par\addvspace{6.5pt plus2pt}
+}
+%% \RM{Worth keeping!??}{2009/08/29}
+%%
+%% ==== Theorem (to be done) ====
+%% \ULguess{This title appears at the corresponding position in
+%%   'classes.dtx', this subsection will be filled with a
+%%   reimplementation of section~\bref{sec:thmlike}}{2009/06/24}
+%%
+%% ==== Appendix ====
+%% \label{sec:appendix}
+%% \ULguess{'book.cls' says that this is not an environment ...}{2009/06/24}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Appendix  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% |\appendix| from 'book.cls' is enhanced by `\appendtrue'
+%% (changing appearence of chapter titles), resetting the
+%%   `equation' counter \RM{and superfluously repeating
+%%   the earlier redefinition of the counter format that wasn't
+%%   very useful anyway (``0").}{2009/04/22}
+%% \ULguess{&\gdef is replaced by &\renewcommand.}{2009/10/08}
+\renewcommand\appendix{\par\appendtrue
+%% \ULguess{... &\global!?}{2010/08/24}
+  \setcounter{chapter}{0}%
+  \setcounter{section}{0}%
+  \setcounter{equation}{0}%
+  \renewcommand\@chapapp{\appendixname}%
+  \renewcommand\theequation{\thechapter.\arabic{equation}}%
+  \renewcommand\thechapter{\Alph{chapter}}}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End Appendix %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% ==== Glossary Entries ====
+%% |\glossentry{<term>}{<explanation>}|
+%% \RM{not used anywhere else here, seems to be author command.}{2009/04/16}
+%% \ULguess{Tondo 2009/04/17 doesn't know about this, Tondo 2009/06/03
+%%   knows of one book ...}{2009/06/02}
+%% \ULguess{TODO: finish applying
+%%          Tondo's 2009/04/17.\sloppy\endsloppypar}{2010/10/17}
+\def\glossentry#1#2{%
+  \par\noindent{\bfseries#1.\enspace}#2\par\vskip.5\baselineskip}
+%
+%%
+%%  === Setting Parameters for Existing \dots ===
+%% \ULguess{... environments---title in 'classes.dtx'.}{2009/06/24}
+%% \ULguess{Isn't this \emph{``layout"?}}{2009/07/23}
+%% ==== `array' ====
+\setlength\arraycolsep{1.5\p@}   %% book.cls: 5pt
+\setlength\arrayrulewidth{.5\p@} %% book.cls: .4pt
+%%
+%% ==== `equation' and `eqnarray' ====
+%% \label{sec:equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%  Math %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% |equation| numbers are combined with chapter numbers and are
+%% numbered chapterwise \RM{(same as 'book.cls')}{2009/06/24}.
+%% \ULguess{This might depend like numbering of theorem-like
+%%          environments (section~\bref{sec:thmlike}).}{2009/04/20}
+%% \ULguess{Modifies 'book.cls' in using even chapter no.\ 0.}{2009/06/17}
+\@addtoreset{equation}{chapter}
+\renewcommand\theequation{\thechapter.\arabic{equation}}%
+%% |\jot| \ULguess{is replaced}{2009/06/25} by a strut
+%% |\bstrut| downwards (``bottom") and
+%% |\tstrut| upwards (``top").
+%% \ULguess{Cf. &\vs in 'ttdefs.sty'.}{2009/06/16}
+\def\bstrut{\vrule width0pt depth6pt}
+\def\tstrut{\vrule width0pt height9pt}
+\jot=0pt
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End Math %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% %% \pagebreak %% 2009/10/10 %% away 2010/10/25
+%%  === Floats ===
+%%%%%%%%%%%%%%%%%%%%%%%% BEGIN FLOATS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% ==== Captions ====
+%% \ULguess{\LaTeX's \cs{@makecaption} doesn't distinguish figures
+%%   from tables, this is different here. Note especially the
+%%   difference in `above' and `below'.}{2009/04/19}
+%%
+%% The approach of 'morgan.sty' v1.0001 is changed for the
+%% `codelisting' environment with v1.1, somewhat to the opposite.
+%\def\TableName{table}
+%
+%\long\def\@makecaption#1#2{%
+%    \ifx\TableName\@captype
+%%     \@maketablecaption{#1}{#2}%
+%      \@makefigurecaption{#1}{#2}%
+%      \vspace{6pt}
+%    \else
+%      \vskip\abovecaptionskip
+%      \@makefigurecaption{#1}{#2}%
+%    \fi
+%}
+%
+%% ==== Figures ====
+%% \label{sec:figures}
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin Figures %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% \ULguess{Removed &\newincludegraphics here, maybe I shouldn't have
+%%   done so.}{2009/06/18}
+%%
+%% The ``identifier" of the figure caption is typeset \emph{blue},
+%% the description \emph{black:}
+%\def\@makefigurecaption#1#2{{%
+%  \tenpoint\noindent \textbf{\titlecolor#1:}\enspace #2\par}}%
+
+%% As compared with \LaTeX, `\fnum@figure'---the format of the
+%% ``figure identifier"---just has a simple space
+%% in place of a `\nobreakspace':
+%% \def\fnum@figure{\figurename\ \thefigure\relax}
+%% \ULguess{In the end, it is blue though; this should be done
+%%   more uniformly.}{2009/06/16}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%% End Figures %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% %% \pagebreak %% 2009/10/10 %% away 2010/10/28
+%% ==== `codelisting' Figure-like ====
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin Code Listings %%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% |codelisting| is a float environment analogous  to `figure',
+%% with its own \LaTeX\ counter `codelisting'. It was delivered
+%% by U.L. in a file 'morclist.sty' as of 2009/06/15.
+\newcounter{codelisting}[chapter]
+\renewcommand \thecodelisting
+     {\ifnum \c@chapter>\z@ \thechapter.\fi \@arabic\c@codelisting}
+\def\fps@codelisting{tbp}
+\def\ftype@codelisting{3}
+\def\ext@codelisting{lol}
+%% \ULguess{... halfway towards a ``list of listings" ...}{2009/08/27}
+\def\fnum@codelisting{\codelistingname\nobreakspace\thecodelisting}
+%% \ULguess{... where &\nobreakspace is rather 'book.cls'-like
+%%   than 'morgan.sty'-like ...}{2009/08/27}
+\newenvironment{codelisting}
+               {\@float{codelisting}}
+               {\end@float}
+\newenvironment{codelisting*}
+               {\@dblfloat{codelisting}}
+               {\end@dblfloat}
+%% \RM{... |codelisting*| is analogous to `figure*', yet we won't have
+%%   `twocolumn' code line listings ...}{2009/07/27}
+\newcommand{\codelistingname}{Code\nobreakspace Listing}
+%% \ULguess{... where &\nobreakspace is rather 'book.cls'-like
+%%   than 'morgan.sty'-like ...}{2009/08/27}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%% End Code Listings %%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% ==== Tables ====
+%%%%%%%%%%%%%%%%%%%%%%%%%% Begin Tables %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% \LaTeX\ modifications:
+\renewcommand\thetable{\thechapter.\@arabic\c@table}
+%% \ULguess{... in effect just like 'book.cls', but the latter
+%%   doesn't print chapter number zero
+%%   (e.g., in a preface).}{2009/04/??}
+%\def\fnum@table{{\color{blue} \tablename\ \thetable}}
+%% \ULguess{... so this time the color is part of the `fnum'...,
+%%   cf. \cs{@makefigurecaption} above .\,.\,. Color differs to
+%%   'book.cls', as well as (again) \lq&\ \rq\ vs.\ &\nobreakspace.}{2009/04/19}
+%% \ULguess{What does the space after &\color{blue} do?}{2009/11/10}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%% End Tables %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\g@addto@macro\@floatboxreset\centering
+%\setlength{\textfloatsep}{10.0pt plus 2.0pt minus 4.0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%% End FLOATS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ==== &\mytable ====
+%% \label{sec:mytable}
+%% \ULguess{The comments ending lines have been here before---the
+%%   best-documented part of the file!---However, it is only single
+%%   steps that is explained---not what all of this is about.}{2009/04/23}
+%%   \unskip---%%%
+%% \ULguess{After seeing the ``main sample" (e.g., 'sample-bib.zip')
+%%   and closer inspection:\quad 1.\enspace there are \LaTeX\
+%%   internals for storing and measuring behind &\makebox etc.
+%%   which could replace much of this here.\quad
+%%   2.\enspace This seems to be about nothing but a shaded
+%%   background for a box. The final command name \lq&\mytable\rq\ then is
+%%   somewhat misleading in this respect.\quad
+%%   3.\enspace The desired result probably could have been achieved
+%%   by the &\colorbox command from 'color.sty' (that is loaded
+%%   anyway), or with 'framed.sty' (that I recently introduced),
+%%   or also with 'colortbl.sty' (that is loaded anyway).---There
+%%   is more background shading in morgan.sty, and there might be
+%%   \emph{one} macro or approach to all of them!\quad
+%%   4.\enspace Some extra functionality is provided here: Choose
+%%   shaded margins at left, right, above, below independently.
+%%   Nice; but does 'morgan.sty' need it?}{2009/06/10}
+%%
+%% \ULguess{Anyway, this section currently is required to typeset any
+%%   table caption! Getting rid of it needs reimplementation as an
+%%   extra project.---Actually, the main virtue of this section seems
+%%   to be smart placement of the caption!}{2009/06/16}
+%%
+%% \ULguess{First there is much preparation for the user(?) command
+%%  &\mytable.}{2009/04/24}
+%% \begingroup \hfuzz=135pt
+% Store text
+
+\newdimen\boxleftmarg  % How much white space inside box before text?
+\newdimen\boxrightmarg % How much white space inside box after text?
+\newdimen\boxtopmarg   % How much white space inside box above text?
+\newdimen\boxbotmarg   % How much white space inside box below text?
+\newskip\beforeshowoffskip % Vertical space before \showoff box
+\newskip\aftershowoffskip  % Vertical space after  \showoff box
+\newcount\beforeshowoffpenalty % Penalty (negative) for break before box
+\newcount\aftershowoffpenalty  % break after box
+\boxleftmarg=0pt
+\boxrightmarg=0pt
+\boxtopmarg=0pt
+\boxbotmarg=0pt
+\beforeshowoffskip=\bigskipamount
+\aftershowoffskip=\bigskipamount
+\beforeshowoffpenalty=-200
+\aftershowoffpenalty=-600
+%
+\newbox\@holddisplay
+\newdimen\@tempdimen
+\newdimen\@temphdimen
+\newdimen\@tempddimen
+\newdimen\@tempwdimen
+%% \ULguess{All new ``temp" `dimen's needed?}{2009/06/28}
+%
+\def\@forcefullwidth{\hrule height 0pt width \hsize}
+
+%% `\@storetext' is called from `\mytable' below:
+\def\@storetext%    Put the text away in a box register so its size is known.
+{\setbox\@holddisplay=\hbox\bgroup\vtop\bgroup % Use \vtop to make align with marg. material
+ \@tempdimen=\baselineskip
+ \advance \@tempdimen by \boxtopmarg
+ \vbox{\hrule height \@tempdimen depth 0pt width 0pt}
+ \kern -\baselineskip % If we now go into hmode, baseline should align.
+ \leftskip=\boxleftmarg\rightskip=\boxrightmarg
+}
+\def\@endtext%  Closes the box containing the text.
+{\par%
+ \unskip\unpenalty\unskip%
+ \vglue\boxbotmarg%
+ \egroup\egroup%
+}
+
+
+\def\@adddisplaymargins%  Widens the box to leave space inside screen.
+{\setbox\@holddisplay=\hbox{\kern\boxleftmarg
+                            \box\@holddisplay\kern\boxrightmarg}}%
+%
+\newif\if@deletescreen
+\@deletescreenfalse
+\def\deletescreen{\@deletescreentrue}
+\def\@putscreen#1% Puts down a screen of height and width that of
+%                  \@holddisplay but leaves the reference point unchanged.
+%        #1 is one of the commands \tint{...} or \gray{...} to make a screen.
+{\if@deletescreen\else
+ \vbox to 0 pt{#1%
+ \hrule height \ht\@holddisplay width \wd\@holddisplay depth \dp\@holddisplay
+ \vss
+ }\fi}
+%
+\def\@myputscreen#1% Puts down a screen of height and width that of
+%                  \@holddisplay but leaves the reference point unchanged.
+%        #1 is one of the commands \tint{...} or \gray{...} to make a screen.
+{\if@deletescreen\else
+ \vbox to 0 pt{#1%
+ \hrule height \@temphdimen width \wd\@holddisplay depth \@tempddimen
+%% \ULguess{Difference to \cs{@putscreen} is \cs{@temphdimen},
+%%   while the description of \cs{@putscreen} has been copied without
+%%   change.}{2009/06/10}
+ \vss
+ }\fi}
+
+%
+\def\@putborder#1% Makes a ruled box (rule thickness #1) of size that of
+%   \@holddisplay.  Overlaps margins \boxtopmarg, \boxleftmarg, \boxrightmarg,
+%   \boxbotmarg inside \@holddisplay.  Leaves ref. pt. unchanged.
+{\vbox to 0 pt{\offinterlineskip
+ \hrule height #1
+ \kern -#1
+ \hbox to \wd\@holddisplay {%
+\vrule height \ht\@holddisplay depth \dp\@holddisplay width #1 \hfil%
+\vrule height \ht\@holddisplay depth \dp\@holddisplay width #1}%
+ \kern -#1%
+ \hrule height #1%
+ \vss%
+}}
+%
+\def\@myputborder#1% Makes a ruled box (rule thickness #1) of size that of
+%   \@holddisplay.  Overlaps margins \boxtopmarg, \boxleftmarg, \boxrightmarg,
+%   \boxbotmarg inside \@holddisplay.  Leaves ref. pt. unchanged.
+{\vbox to 0 pt{\offinterlineskip
+ \hrule height #1
+ \kern -#1
+ \hbox to \@tempwdimen {%
+\vrule height \@temphdimen depth \@tempddimen width #1 \hfil
+\vrule height \@temphdimen depth \@tempddimen width #1}
+ \kern -#1
+ \hrule height #1
+ \vss
+}}
+
+%
+\def\@twoborder#1#2% Makes a ruled box (rule thickness #1 and #2) of size that
+%   of \@holddisplay.  Overlaps margins \boxtopmarg, \boxleftmarg, \boxrightmarg,
+%   \boxbotmarg inside \@holddisplay.  Leaves ref. pt. unchanged.
+{\vbox to 0 pt{\offinterlineskip
+ \hrule height #1
+ \kern -#1
+ \hbox to \wd\@holddisplay {\vrule height \ht\@holddisplay width #2 \hfil
+                            \vrule height \ht\@holddisplay width #1}
+ \kern -#2
+ \hrule height #2
+ \vss
+}}
+%
+\def\@puttext%  Puts the text into the output and moves ref. pt.
+{\box\@holddisplay}
+%
+\def\@skiptext%  Moves down the amount taken by text; leaves it blank.
+{\vskip\ht\@holddisplay \vskip\dp\@holddisplay}
+%
+\def\@endshowoff%
+{\@condbreak\aftershowoffpenalty\aftershowoffskip \norunin
+ \endgrp{showoff section}
+ \permitbreak
+}
+%
+
+%\def\@storecaptiontitle{}
+%\def\@storecaptionnum{}
+
+%\def\@maketablecaption#1#2{{#2}}
+%def\@maketablecaption#1#2{\gdef\@storecaptiontitle{#2}}
+
+%\newbox\captionboxone
+%\newbox\savecaptionbox
+
+\def\comparecaptionsize{%
+%  \setbox\captionboxone=\hbox{%
+%    \tenpoint\textbf{\color{blue}Table \thetable:}\enspace
+%    \@storecaptiontitle}%
+%  \ifdim\wd\captionboxone>\@tempwdimen
+%    \setbox\savecaptionbox=\vbox{%
+%      \hsize=\the\@tempwdimen
+%      \leftskip=6pt\rightskip=6pt%
+%      \vskip3pt%
+%      \textbf{\color{blue}Table \thetable:}\enspace
+%      \@storecaptiontitle\vskip3pt}
+%  \else
+%    \setbox\savecaptionbox=\vbox{%
+%      \hsize=\the\@tempwdimen
+%      \leftskip=6pt plus 1fill\rightskip=6pt plus 1fill%
+%      \vskip3pt\textbf{\color{blue}Table \thetable:}\enspace
+%      \@storecaptiontitle\vskip3pt}
+%  \fi
+}
+
+\newif\ifaddtotwidth
+\newdimen\addedtwidth
+\def\setaddtotwidth{\global\addtotwidthtrue}
+\def\clearaddtotwidth{\global\addtotwidthfalse}
+    \setaddtotwidth
+\def\addtotablewidth#1{\setaddtotwidth\global\addedtwidth=#1}
+
+%% Here are |\mytable| and |\emytable| to end it:
+\def\mytable{\@storetext\hbox\bgroup}
+
+\def\emytable{%
+  \egroup\@endtext%
+  \@temphdimen=\ht\@holddisplay%
+  \@tempddimen=\dp\@holddisplay%
+  \@tempwdimen=\wd\@holddisplay%
+  \ifaddtotwidth
+    \clearaddtotwidth
+    \advance\@tempwdimen by \addedtwidth
+    \global\addedtwidth=0pt
+  \else
+%% \ULguess{The &\else part is empty!? (Happens quite often here.)}{2009/05/04}
+  \fi
+  \comparecaptionsize
+  \advance \@temphdimen by \ht\savecaptionbox
+  \vbox{%
+    \vskip0.5pt
+    \@myputscreen{\color{yellowzero}}%
+    \copy\savecaptionbox
+    \vskip-1.5pt
+    \@puttext%
+    \vskip-\@temphdimen
+    \vskip-\@tempddimen
+    \vskip-0.5pt
+    \@myputborder{0.5pt}
+    \vskip0.5pt
+    \vskip\@temphdimen
+    \vskip\@tempddimen
+}
+}
+%% \endgroup %% original \hfuzz
+%%
+%% \ULguess{TODO &\color{blue} $\mapsto$ &\titlecolor}{2009/11/10}
+%% ==== Color for Tables ====
+%% \label{sec:hhline}
+%% \ULguess{This is a modification of 'hhline.sty'
+%%   for colors in tables.}{2009/04/13}
+%% \begingroup \hfuzz=25pt
+\AtBeginDocument{%
+\def\HH@loop{%
+  \ifx\@tempb`\def\next##1{\the\toks@\cr}\else\let\next\HH@let
+  \ifx\@tempb|\if@tempswa\HH@add{\hskip\doublerulesep}\fi\@tempswatrue
+          \HH@add{\@tempc\vline\@tempc}\else
+  \ifx\@tempb:\if@tempswa\HH@add{\hskip\doublerulesep}\fi\@tempswatrue
+      \HH@add{\@tempc\HH@box\arrayrulewidth\arrayrulewidth\@tempc}\else
+  \ifx\@tempb##\if@tempswa\HH@add{\hskip\doublerulesep}\fi\@tempswatrue
+         \HH@add{\@tempc\vline\@tempc\copy\@ne\@tempc\vline\@tempc}\else
+  \ifx\@tempb~\@tempswafalse
+           \if@firstamp\@firstampfalse\else\HH@add{&\omit}\fi
+%               \HH@add{\hfil}\else
+%% Previous line replaced by:
+              \HH@add{%
+                \leaders\hbox{\hbox{%
+                  \titlecolor\vrule\@height\arrayrulewidth}}\hfil
+                \null\llap{\vrule height 0.5pt width 0.5pt}}\else
+%% \ULguess{... probably to prevent uncolored spaces.}{2009/04/14}
+  \ifx\@tempb-\@tempswafalse
+           \if@firstamp\@firstampfalse\else\HH@add{&\omit}\fi
+              \HH@add{\leaders\hrule\@height\arrayrulewidth\hfil}\else
+  \ifx\@tempb=\@tempswafalse
+       \if@firstamp\@firstampfalse\else\HH@add{&\omit}\fi
+       \HH@add
+          {\rlap{\copy\@ne}\leaders\copy\@ne\hfil\llap{\copy\@ne}}\else
+  \ifx\@tempb t\HH@add{\rlap{\HH@box\doublerulesep\z@}}\else
+  \ifx\@tempb b\HH@add{\rlap{\HH@box\z@\doublerulesep}}\else
+  \PackageWarning{hhline}%
+      {\meaning\@tempb\space ignored in \noexpand\hhline argument%
+       \MessageBreak}%
+  \fi\fi\fi\fi\fi\fi\fi\fi\fi
+  \next}
+}
+%% \endgroup %% original \hfuzz
+%%
+% color for tables
+%% |\cy| renders cell background light yellow.
+\newcommand{\cy}{\cellcolor{yellowtwenty}}
+%% |\cw| renders cell background white. %% Tondo 2009/09/30
+\newcommand{\cw}{\cellcolor{white}}
+%% |\cb|
+%% renders cell background blue and typesets in light yellow:
+\newcommand{\cb}{\normalfont\bfseries\cellcolor{blue}\color{yellowtwenty}}
+%%
+%%
+%%
+%% %% \enlargethispage{1\baselineskip} %% away 2010/10/25
+%%  === Font Changing: Bold Math ===
+%% %% \ULguess{'classes.dtx' has a subsection \qtd{Font Changing}.}{2009/06/24}
+%% %% Bold Math
+%% %% \ULguess{$\gets$ not mine.}{2009/04/14}
+%%
+%%
+%%
+%% %% \chaptermark before page break TODO 2010/08/30
+%% %% \pagebreak removed 2010/10/28
+%%  == Cross Referencing ==  %%%%%%%%%
+%% %% \ULguess{Like 'classes.dtx', a little strange again. These things
+%% %%   share use of auxiliary files ... apart from footnotes ...}{2009/06/24}
+%% \ULguess{Some things here should better be in the ``layout" section!}{2009/07/22}
+%%  === Table of Contents, etc. ===
+%% \label{sec:toc}
+%% Subsections go to TOC, deeper levels do not:
+\setcounter{tocdepth}{2}
+%% ==== Manual Line Breaks (or \dots) ====
+%% A request from Tondo (2010) was to (re-)enable `\newline' and `\\' in
+%% tables of contents---with 'hyperref' option `dvipsone'.
+%% This requires the following:                 %% indeed 2010/10/17
+\AtBeginDocument{%
+  \@ifpackageloaded{hyperref}%
+                   {\pdfstringdefDisableCommands{%
+                      \let\\\space \let\newline\space}}%
+                   {}%
+}
+%% Additional requirements are discussed and dealt with below.
+%%
+%% %% TOC only:
+%% %% [probably 2010/06/19, patch 10-6]
+%% %% Tip from Tondo!? promotion?
+%% |\toconlytoken<one-token>| or |\toconlytoken{<one-token>}|
+%% moves the token (single control sequence or character)
+%% <one-token> to auxiliary files only and saves it from expansion
+%% there. The <one-token> will be executed only when read by
+%% `\tableofcontents', `\listoffigures', or `\listoftables'.
+%% In the first instance, this has been made for `\newline' and `\\'.
+\newcommand*{\MC@toconlytoken}[1]{%
+    \ifx\protect\@typeset@protect\else
+        \noexpand\toconlytoken\noexpand#1\fi}
+%% (Continued below.)
+%%
+%% |\toconly{<balanced>}| moves the token list <balanced>
+%% to auxiliary files only. <balanced> will be executed only
+%% when read by `\tableofcontents' etc.
+%% %% <- unfrenchspacing! 2010/08/30
+%% You must use `\protect' preceding each token in the argument of
+%% `\toconly' that you do not want to be expanded in auxiliary files.
+\newcommand*{\MC@toconly}[1]{%
+    \ifx\protect\@typeset@protect\else
+        \noexpand\toconly{#1}\fi}
+%% To achieve the above, we change `\tableofcontents' etc. using
+%% the following activating/hiding commands
+%% (rather relevant for understanding the code only).
+\newcommand*{\MC@run@toconly}{%
+    \let \toconlytoken \@firstofone
+    \let \toconly      \@firstofone}
+\newcommand*{\MC@hide@toconly}{%
+    \let \toconlytoken \MC@toconlytoken
+    \let \toconly      \MC@toconly}
+%% Initializing:
+\newcommand*{\toconly}{}    \newcommand*{\toconlytoken}{}
+\MC@hide@toconly
+%% The ``opposite" |\hereonly{<balanced>}| or |\hereonly<one-token>|
+%% \emph{prevents} \\
+%% <balanced> or <token> from moving to the table
+%% of contents:         %% compat with 'textcase' 2010/10/16
+\newcommand*{\hereonly}{\NoCaseChange\MC@hereonly}
+\newcommand*{\MC@hereonly}{%
+    \ifx\protect\@typeset@protect \expandafter\@firstofone
+    \else                         \expandafter\@gobble
+    \fi}
+%% The user may need to care that a space appears in the table of
+%% contents with `\hereonly\\' and the like, e.g., typing
+%% \lq`\hereonly\\ '\rq.
+%%
+%% ==== Table of Contents ====
+%%%%%%%%%%%%%%%%%%%%%%%% BEGIN CONTENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% |\tableofcontents| just boils the options of 'book.cls' down
+%% to what is actually needed here.
+\renewcommand\tableofcontents{%
+  \chapter*{Contents}%
+  \chaptermark{CONTENTS}%
+%% \ULguess{... remnant of \LaTeX's \cs{@mkboth},
+%%          allows suppressing running heads by some
+%%          &\pagestyle{<style>}.}{2010/10/13}
+  \thispagestyle{plain}%
+%% \ULguess{... inserted newly, may now be dropped in
+%%          'fm.tex'---should come from &\chapter* already!(?)}{2010/08/30}
+%% \ULguess{\unskip\unskip---New for ``TOC only:"}{2010/08/30}
+  \MC@run@toconly
+  \@starttoc{toc}%
+  \MC@hide@toconly
+}
+%% `\tableofcontents' is the only author command in this section,
+%% the remaining definitions modify the TOC line formats from
+%% 'book.cls'. (The syntax always is `\l@<level>{<title>}{<page>}'.)
+%%
+%% \ULguess{For 'morgan.sty' v1.2, I re-implemented these.}{2010/08/30}
+%% At first I tried to to use \LaTeX's `\@dottedtocline' or a variant
+%% thereof, and tried some choices of `\@dotsep' that it uses:
+\renewcommand*{\@dotsep}{2.25} % {3} % {1.5}
+%% It was requested that \emph{titles are ragged right};
+%% with `\@dottedtocline', this can be achieved by `\@tocmarg':
+\skip@\@tocrmarg
+\advance\skip@\@flushglue
+\edef\@tocrmarg{\the\skip@}
+%% \ULguess{However, late I learnt from Tondo that the peculiar former use
+%%          of &\numberline---with \emph{two} arguments---is
+%%          necessary for options `dvips' and `dvipsone' of
+%%          'hyperref'. It seems that the page number of any entry
+%%          must be ``pulled" into the 3rd arg of \cs{hyper@linkstart}
+%%          together with the title. (Actually, this way all links
+%%          contain the entire line, looks better than 'book.cls'!)}{2010/08/30}
+%% %% <- my analyze.tex
+%% Also, my idea that `\@dottedtocline' could be used with
+%% `\l@chapter' was bad regarding vertical spacing. Therefore,
+%% in the 2010/08/26 version of 'morbeta.sty' (v10-12)
+%% I introduced the following auxiliary macros. Essentially,
+%% the `tocdepth' conditional is in a different macro than horizontal
+%% alignment, and the latter can be surrounded by varying commands
+%% for vertical spacing. What I am quite proud of is using \LaTeX's
+%% `\@hangfrom' for flexible choice of indentation, especially nice
+%% with \emph{breaking part entry lines}, which was another new
+%% request.
+\newcommand*{\MC@on@tocdepth}[2]{%
+    \ifnum\c@tocdepth<#1\else{#2}\fi}
+%% `\MC@set@tocseccntfmt' chooses a format for numbering,
+%% using `\SecCnt' as a placeholder for the number in question.
+\newcommand*{\MC@set@tocseccntfmt}{\def\MC@toc@seccntfmt}
+\newcommand*{\MC@make@tocline@from}[2]{%
+    \def\numberline##1##2{%
+        \def\SecCnt{##1}%
+        \vtop{%
+%% ... `\vtop' was used formerly, this disables breaking a TOC entry
+%% across pages (which is possible with `\@dottedtocline').
+%% This is necessary for `dvips(one)' at least;
+%% \ULguess{otherwise, I just could not place the page number
+%%          properly (in a few minutes).}{2010/08/30}
+%% Much of what is inside is borrowed from `\@dottedtocline'.
+            \rightskip    \@tocrmarg
+            \parfillskip -\rightskip
+            \@hangfrom\MC@toc@seccntfmt
+%             {##2}%                      %% title
+            {\MCborderstrut ##2\MCborderstrut}%
+%% \ULguess{... very new private idea to keep link borders away,
+%%          hopefully without changing spacing.}{2010/08/30}
+%% \unskip---%%%
+%% Dots of same size even with `\bf'
+%% \ULguess{(wanted?)}{2010/08/26}:
+            {\mdseries
+             \leaders\hbox{$\m@th
+                \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+                mu$}\hfill}%
+            \nobreak
+%% \ULguess{... kept from \cs{@dottedtocline}
+%%          while not understanding it.---The style with
+%%          'morgan.sty' has been \emph{not} to keep \LaTeX's
+%%          white space before the page number:}{2010/05/02}
+%           \hb@xt@\@pnumwidth{\hfil\normalfont \normalcolor #5}%
+            #2\@@par                    %% page number
+%% \ULguess{In my view, ``exporting" &\prevdepth is much better
+%%          than a &\strut:}{2010/08/30}
+            \xdef\MC@prevdepth{\the\prevdepth}%
+        }%                              %% ends \vtop
+    }%                                  %% ends \def\numberline
+    \noindent #1\@@par                  %% runs \numberline
+    \prevdepth\MC@prevdepth             %% global, TeXbook p.271/277
+}
+\newcommand*{\MCborderstrut}{}  \let\MCborderstrut\relax
+%% \ULguess{... while the idea is
+%%          &\let&\MCborderstrut&\mathstrut\
+%%          (not sure enough to do this here).}{2010/08/30}
+%%
+%% \emph{Applying} the former auxiliaries:
+\renewcommand*{\l@part}[2]{\MC@on@tocdepth\m@ne{%
+    \Large \bfseries
+    \addpenalty{-\@highpenalty}%
+    \addvspace{2.25em \@plus\p@}%
+%% ---dropping 'book.cls''s group as in a group already---
+    \MC@set@tocseccntfmt{%
+        \hskip  2.5pc                 %% 0.25pc!?
+%% \ULguess{... my own choice after my choices below.}{2010/08/30}
+        \ifx\SecCnt\@empty \else PART \SecCnt \fi
+    }%
+    \MC@make@tocline@from{#1}{#2}%
+}}
+%% Former `\maxchapterwidth' etc. (that rather had
+%%  ``trial-and-error" values making up for erroneous
+%%  blank spaces in the definitions of the entry formats)
+%% are replaced by column widths of\\
+%% \null\qquad 2.5\,pc\quad for \emph{chapter} numbers\\
+%% \null\qquad 2.5\,pc\quad for \emph{section} numbers\\
+%% \null\qquad 2.5\,pc\quad for \emph{subsection} numbers\\
+%% (2.5\,pc~=~30\,pt).
+\newcommand*{\chapnumsize}{\Large} % {\LARGE}
+\renewcommand*{\l@chapter}[2]{\MC@on@tocdepth\z@{%
+    \if@nobreak \else
+      \addpenalty{-\@highpenalty}%
+      \addvspace {9\p@\@plus2\p@\@minus\p@}%
+%% \ULguess{... where from? Maybe experimental, as the former
+%%          'morgan.sty' settings are difficult to understand
+%%          and (as I suspect) were neither understood by the
+%%          programmer, experimental as well. The problem essentially
+%%          was due to placing the large chapter number.}{2010/08/27}
+    \fi
+%% ---dropping 'book.cls''s group as in a group already---
+    \titlecolor\pxfont@CTOC
+    \MC@set@tocseccntfmt{%
+        \hb@xt@ 2.5pc{%
+            \settoheight{\dimen0}{ACPT}%% title sample
+            \settoheight{\dimen2}{\chapnumsize\SecCnt}%
+            \advance\dimen2-\dimen0%
+            \smash{\lower\dimen2\hbox{\chapnumsize\SecCnt}}%
+            \hfil}}%
+    \MC@make@tocline@from{#1}{#2}%
+    \penalty\@highpenalty
+%% \ULguess{... from 'book.cls', may be bad with chapter authors
+%%          ...}{2010/05/02}
+    \vskip 2\p@ \@plus\p@ \@minus.5\p@
+    \gdef\MC@chapau@toc@skipamount{%
+%          6\p@\@plus\p@\@minus\p@}%
+%% \ULguess{... cf. &\chapauline ...}{2010/10/15}
+           \z@\@plus\p@\@minus.5\p@}%
+}}
+
+\renewcommand*{\l@section}[2]{\MC@on@tocdepth\@ne{%
+    \vskip 2\p@ \@plus\p@ \@minus.5\p@
+    \MC@set@tocseccntfmt{%
+        \hskip  2.5pc%
+        \hb@xt@ 2.5pc{\SecCnt\hfil}}%
+    \MC@make@tocline@from{#1}{#2}%
+}}
+\renewcommand*{\l@subsection}[2]{\MC@on@tocdepth\tw@{%
+    \vskip  \p@ \@plus\p@ \@minus.5\p@
+    \MC@set@tocseccntfmt{%
+        \hskip  5.0pc%
+        \hb@xt@ 2.5pc{\SecCnt\hfil}}%
+    \MC@make@tocline@from{#1}{#2}%
+}}
+\renewcommand*{\l@figure}[2]{{%
+    \vskip 4pt\@plus 2pt\@minus1pt
+    \MC@set@tocseccntfmt{%
+        \hskip  2.5pc%
+        \hb@xt@ 2.5pc{\SecCnt\hfil}}%% 2pc!?
+    \MC@make@tocline@from{#1}{#2}%
+}}
+%% \ULguess{... My choice of choosing an indent of 2.5\,pc
+%%          may be questioned, what about 0\,pc?}{2010/08/30}
+\let\l@table\l@figure
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% END CONTENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% ==== List of Figures/Tables ====
+%% Tondo 2010/06/23 ('morgan.dif'), replaced
+%% \cs{l@schapter} by \cs{l@chapter}, actually I had recommended
+%% this here and used it in 'morbeta.sty'.
+%% As opposed to the latter, I introduce a shared auxiliary 2010/08/25:
+\newcommand*{\MC@listof}[3]{%
+%% dropping 'book.cls'' `restonecol'
+    \chapter*{#1}%
+%% For sec.~\ref{sec:marks}:
+    \chaptermark{#1}%
+    \addcontentsline{toc}{chapter}%% dropping `schapter'
+                    {\protect\numberline{}{List of #2}}%
+    \MC@run@toconly             %% 2010/08/30
+%% \ULguess{... useless without automatic `lof' entries,
+%%          end even then ... TODO.}{2010/10/14}
+    \@starttoc{#3}%
+    \MC@hide@toconly            %% 2010/08/30
+}
+%% |\listoffigures|:
+\renewcommand*{\listoffigures}{%
+    \MC@listof\listfigurename{Figures}{lof}}
+%% |\listoftables|:
+\renewcommand*{\listoftables}{%
+    \MC@listof\listtablename{Tables}{lot}}
+%% \ULguess{We could add a List of Codelistings this way.}{2010/08/25}
+%%
+%%  === Bibliography ===
+%% \label{sec:bib}
+%% |\begin{thebibliography}{<sample-number>}| %% more explicit 2009/07/23
+%% forms an own bibliography\\ chapter of the book, as with
+%% 'book.cls', unless option `[sectionbib]' is called.
+%% %% (Extended this feature to the case without 'natbib.sty' 2010/02/24.)
+\def\bibname{Bibliography}
+\providecommand*{\bibsection}{%% 2010/02/24
+%%   This is the 'natbib' idea.
+%%   We are copying here an initial part of 'morgan.sty''s
+%%   original redefinition (w.r.t. 'book.cls') of `thebibligraphy',
+%%   including earlier remarks.
+  \clearpage
+%% \ULguess{&\clearpage is added to 'book.cls''s `thebibliography'
+%%   to rule out
+%%   option\newline %% 2010/02/24
+%%   `runinchapter' from section~\bref{sec:chapter}.}{2009/04/24}
+  \chapter*{\bibname}%
+  \chaptermark{\bibname}}
+%% \ULguess{... replaces
+%%   \cstx{@mkboth}{&\MakeUppercase&\bibname}
+%% %  \cs{@mkboth}{&\MakeUppercase&\bibname} %% TODO WRONG 2009/09/30
+%% %                                         %%      enhance niceverb!
+%%   for sec.~\ref{sec:marks}. There
+%%   are no other changes of the 'book.cls' version.}{2010/10/21}
+\renewenvironment{thebibliography}[1]
+     {\bibsection                                %% 2010/02/24
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m
+      }
+      {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+       \endlist%
+      }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  === Index ===
+%% \label{sec:index}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Index  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% |\alphabet{<letter>}|
+%% \ULguess{inserts a bold <letter> in the index.}{2009/04/14}
+\def\alphabet#1{%
+  \par\vskip.5\baselineskip{\bf#1}\par\vskip.5\baselineskip}
+%
+\newcommand\morganindexname{Index}
+\newcommand\morganchaptermarkindexname{\morganindexname}
+%% |theindex| from 'book.cls' is changed according to the class
+%% options chosen here, spaces a little differently, and calls
+%% `multicols' for typesetting in two columns, with `\raggedright':
+\renewenvironment{theindex}{%
+  \clearpage
+%% \RM{... again `runinchapter' is ruled out, so what occasions
+%%         remain for using it?}{2009/11/11}
+  \chapter*{\morganindexname}%
+%% For sec.~\ref{sec:marks}:
+  \chaptermark{\morganchaptermarkindexname}%
+  \vspace*{24\p@}%
+  \setlength\columnsep{18\p@}%
+  \begin{multicols}{2}%
+    \normalsize
+    \parindent\z@
+    \parskip 0.4pt plus 1pt minus 0.3pt
+    \raggedright
+    \let\item\@idxitem
+}{\end{multicols}}%
+
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  END Index  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% %% \pagebreak
+%%  === Footnotes ===
+%% \label{sec:fn}
+%% There is no footnote rule:
+%% \ULguess{... a matter of \emph{layout}, not \emph{markup}, right?}{2009/07/23}
+\renewcommand\footnoterule{%
+  \kern-3\p@
+  \hrule width 0pt%.4\columnwidth
+  \kern 2.6\p@}
+%% \ULguess{But you can simply &\relax or so, cf. 'manyfoot'.}{2009/06/24}
+%
+%% \LaTeX\ allows only ``double" use of footnote symbols,
+%% a ``thrice" one is added for each:
+\def\@fnsymbol#1{\ifcase#1\or *\or \dagger\or \ddagger\or
+   \SS\or \|\or \#\or **\or \dagger\dagger\or \ddagger\ddagger
+   \or \SS\SS \or \|\hskip-1pt\|\or \#\#\or ***\or
+   \dagger\dagger\dagger\or \ddagger\ddagger\ddagger
+   \else\@ctrerr\fi\relax}
+%
+\newdimen\@footmax
+%% Footnotes are typeset with an indent amounting to `\@footmax',
+%% which is set by |\footmax{<sample>}| similarly as with
+%% the standard `thebibliography' environment.
+%% <sample> should be of width that will maximally occur.
+%% Footnote numbers appear in the blank column between page margin
+%% and the indented footnote text.
+\def\footmax#1{%
+  \setbox\tempbox\hbox{#1}%\footnotesize$^{\smash{#1}}$}%
+  \global\@footmax\wd\tempbox}
+%% \ULguess{The footnote number is typeset
+%%   as a superscript (by \LaTeX), while &\footmax uses
+%%   the width of the number according the governing font
+%%   (probably &\normalsize).}{2009/04/20}
+\footmax{1}
+%
+\long\def\@makefntext#1{%
+  \let\alphalist\fnalphalist%
+%% \ULguess{What is &\fnalphalist?---Math display distances are the
+%%   same irrespective of surrounding line lengths:}{2009/04/20}
+  \abovedisplayskip 5\p@ \@plus2\p@ \@minus.5\p@%
+  \abovedisplayshortskip \abovedisplayskip%
+  \belowdisplayshortskip \abovedisplayskip%
+  \belowdisplayskip \abovedisplayskip%
+  \noindent
+%% \ULguess{\cs{@hangfrom} issues &\noindent anyway}{2009/04/20}
+  \@hangfrom{\hbox to \@footmax{\hfill\llap{\smash{\@makefnmark}}}}%
+%% \ULguess{In place of &\hfill&\llap{<content>},
+%%   &\hss<content> would have been more elegant and efficient.}{2009/04/20}
+            {#1}}%
+%% \ULguess{Putting the footnote text into a group isn't necessary,
+%%   it is typeset in a group anyway.}{2009/04/20}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  End Footnote %%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%  === Hyperlinks ===
+%% \ULguess{(No clear counterpart in 'classes.dtx' ...)}{2009/06/24}
+%%
+%% |\DOI{<URL>}{<text>}| prints <text>; if 'hyperref.sty' is loaded,
+%% <text> is a clickable link to <URL>, so `\DOI' then works exactly like
+%% `\href'.
+\AtBeginDocument{%
+  \@ifpackageloaded{hyperref}%
+              {\let\DOI\href}{\let\DOI\@secondoftwo}}
+%%
+%%
+%% \pagebreak
+%%  == Theorem-like Environments ==  %
+%% \label{sec:thmlike}
+%%  === Proofs ===
+%% ==== End marks for proof environments etc. ====
+%% \label{sec:endmarks}
+%% The `endmark' macros are used for the \emph{proof} environments in
+%% section~\bref{sec:proof}.
+%% \ULguess{They seem to have been implemented for other `problem'
+%%   or theorem-like environments too, but later on disabled.
+%%   (`endmark' is prepared, but not used.)}{2009/06/25}
+\newif\if@alreadyinsertedendmark
+\def\clearendmark{\global\@alreadyinsertedendmarktrue}
+\def\putendmark{\global\@alreadyinsertedendmarkfalse}
+\putendmark
+%% |\currentmark| is defined in the starting part of an environment
+%% and executed in the ending part unless it has been executed
+%% manually by |\putcurrentmark| or |\putparcurrentmark| before. %% 2009/06/26
+\def\putcurrentmark   {\clearendmark\currentmark}
+%% |\putparcurrentmark| ensures a distance of 1\,em between final text
+%% and the endmark which will be at the end of the same line if there
+%% is enough space left on the line.
+%% \ULguess{Instead, &\currentmark currently just places a box
+%%   at line end without caring for a minimum distance.}{2009/06/26}
+\def\putparcurrentmark{\clearendmark
+  {\parfillskip=0pt \hglue 1 em plus 1 fill\currentmark\par}}
+%% \ULguess{Might be suppressed together with `proof'.}{2009/09/03}
+%%
+%% \ULguess{Tondo 2009/06/03 ('ANSWER') asks about an option for
+%%   ``end marks" with other environments indeed.}{2009/06/27}
+%%
+%% ==== Proof Environment ====
+%% \label{sec:proof}
+%% |\begin{proof}[<proof-name>]|
+%% opens a proof environment with bold \emph{and italic}
+%% %% italic added 2009/06/26
+%% prefix <proof-name> %% which by default is \lq Proof\rq.
+%% \ULguess{Its ``end mark" is &\Box which either comes
+%%   from 'latexsym.sty' or from 'amssymb.sty'.
+%%   Both are loaded by Tondo's 'ttdefs.sty'
+%%   (order?).}{2009/04/26}
+%%
+%% \ULguess{With v1.11, the declaration may be suppressed by
+%%   package option `noproof'.}{2009/09/03}
+\ifMCproof
+  \newenvironment{proof}[1][Proof]{%
+    \par
+    \bgroup
+      \def\currentmark{\null\hfill\quad\hbox{$\Box$}}%
+      \normalfont
+      \topsep6\p@\@plus6\p@
+      \trivlist
+      \item[\hskip\labelsep{\bfseries\itshape #1.}]%
+      \ignorespaces
+  }{%
+      \if@alreadyinsertedendmark \else \currentmark \fi
+      \putendmark
+      \endtrivlist
+    \egroup%
+  }
+\fi
+%% |\putproofblock| is an author macro to insert an ``end of proof"
+%% mark ``manually," to override automatic placement.
+\def\putproofblock{\putcurrentmark}
+%% \ULguess{Why not &\putcurrentmark instead? Perhaps because it
+%%   \emph{should} be a block here and authors might be puzzled
+%%   with a different name. But note &\putparcurrent of
+%% section~\bref{sec:endmarks}.}{2009/06/26}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  === Counter ===
+%% Previously independent counters for different kinds of environments
+%% (`theorem', `definition', ...) later on were disabled:
+%  Due to the author wanting to use a universal counter
+%  I will be making a universal counter affect all below.
+%% \ULguess{This should rather be done by a package option
+%%   in about a way as `secnumbering' and `chsecnumbering'.}{2009/04/24}
+%%
+%% The counter format has a prefix `\theMCthmnumprefix' and is reset
+%% by\\ `\chapter' or `\section' according to options |chsecnumbering|
+%% or\\ |secnumbering|, cf. section~\bref{sec:options}.
+\newcounter{ucount}[\MC@thmcnt@reset]
+\renewcommand{\theucount}{\theMCthmnumprefix\arabic{ucount}}%
+%% \ULguess{\cs{@onlypreamble}\cs{MC@thmcnt@reset}?}{2009/10/06}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  === `subelements' ===
+%% Inside a |subelements| environment, theorems and the like are numbered
+%% as <arabic><alph>. They share a constant <arabic> theorem counter value
+%% typeset by digits and are identified by an incrementing <alph>,
+%% the latter represents a counter |subelement| as lowercase letters.
+%% \RM{(This answers Tondo' 2009/06/03 question what this is good for.)}{2009/06/17}
+\newif\ifinsubelements
+\newcounter{subelement}
+\renewcommand{\thesubelement}{}
+%% This setting is for environments outside a `subelements' environment.
+%% \ULguess{Replaced &\subelementnum by &\thesubelement.}{2009/06/27}
+%%
+%% |\begin{subelements}| initializes the counter to zero,
+%% just as a `list' resets its counter.
+%% \ULguess{&\begin{subelements}[<initial>] was intended to initialize
+%%   the counter to <initial>, i.e., the first item in the list should
+%%   be <initial>+1 ...}{2009/06/27}
+%% \pagebreak[3] %% 2009/06/28
+\def\subelements{\insubelementstrue
+%% \ULguess{... replaced different macro executing the former
+%%          &\global`'ly. As &\end... may &\relax,
+%%          replaced &\newenvironment.}{2009/06/27}
+                 \refstepcounter{ucount}%
+%% \ULguess{Moved this here from theorem-like environments.}{2009/06/27}
+                 \setcounter{subelement}{0}%
+                 \def\thesubelement{\alph{subelement}}%
+                 \@ifnextchar[{\setcounter{subelement}}{}}
+%% \ULguess{However, this ``optional" initializing counters doesn't
+%%     work, since the programmer wanted to read the initial value
+%%     from an argument in \emph{square brackets}, while &\setcounter
+%%     needs \emph{curly braces}.}{2009/06/25}
+%% \RM{This feature seems not to have been tried (successfully)
+%%     by anybody!}{2009/06/25}
+%%
+%%  === The Generic Theorem-like Environment ===
+%% \label{sec:genthm}
+%% Here is what 'morgan.sty''s theorem-like environments share.
+%%
+\def\MC@add@thmtitle[#1]{%
+  {\enspace\bfseries{#1\MC@thmaddheadpunct}}%
+   \quad \MC@thmbodyfont \ignorespaces}
+%% \ULguess{... made this from former &\doproblemtitle,
+%%   may still be improvable.\\\cs{MC@thmaddheadpunct} (cf. 'amsthm')
+%%   and \cs{MC@thmbodyfont} are new.
+%%   I wonder to which fonts &\enspace and &\quad should refer.}{2009/06/27}
+%%
+%% \ULguess{The ``add head dot" is \emph{boldface}. With `definition',
+%%   it was \emph{not}. I consider this a \emph{mistake} and
+%%   \emph{correct} it here.}{2009/06/28}
+%% \ULguess{When generalizing to ``without extra-title",
+%%   the problem is that the normal head font \emph{is not bold!}}{2009/07/27}
+%%
+%%   Defaults for `\MC@thmaddheadpunct' and `\MC@thmbodyfont'
+%%   (in case\\`\MCtheoremlike' below is used instead of a newly
+%%   defined environment):
+%%
+\let\MC@thmaddheadpunct\@empty
+\let\MC@thmbodyfont\it
+%%
+%% |\begin{MCtheoremlike}{<name>}| opens a theorem-like environment
+%% labelled <name>. Adding |[<title>]| adds a boldface description.
+%%
+\newenvironment{MCtheoremlike}[1]{%
+%% \ULguess{Later on, a second argument may choose the counter.}{2009/06/27}
+  \ifinsubelements \stepcounter{subelement}%
+%% \ULguess{Here was &\addtocounter instead. &\refstepcounter
+%%   may be bad with referring to the theorem counter
+%%   (but the &\label for this could come right after
+%%    &\begin{subelements}.)}{2009/06/28}
+  \else            \refstepcounter{ucount}\fi
+  \par\vspace{12pt plus18pt minus6pt}%
+%% \ULguess{Should better be &\addvspace directly after
+%%          another theorem.}{2009/07/29}
+  \noindent{\pxfont@thmnum #1 \theucount\thesubelement}
+  \@ifnextchar[{\MC@add@thmtitle}%
+               {\quad \MC@thmbodyfont \ignorespaces}%
+%% The previous line corresponds to `\MC@add@thmtitle'
+%% (should be the same commands as there).---The next line defines
+%% the shared `\endMCtheoremlike':
+  }{\vspace{10pt plus4pt minus1pt}}
+%%
+%% \ULguess{You get a strange outcome when &\end{<thm>} is not
+%%          followed by a \cs{par}.}{2009/06/27}
+%%
+%% Actually, `\MCtheoremlike' is not really a user command,
+%% it is rather called by environments that have been set up by
+%% `\newMCtheorem'.
+%% \ULguess{It is an analogue to \cs{@thm} with the 'theorem'
+%%   package, will be preceded by style settings.}{2009/06/27}
+%%
+%%  === Setup for Specific Theorem-like Environments ===
+%% \label{sec:setupthm}
+%% \ULguess{So far, 'morgan.sty' varied the ``theorem body font"
+%%   (&\it vs.\ ``normal") and printing a dot or not after the
+%%   ``extra title"---nothing else.}{2009/06/27}
+%%
+%% Similarly to `\newtheorem' with packages 'theorem' and 'amsthm',
+%% the effect of `\newMCtheorem' depends on recent choice of a
+%% ``theorem style."
+%%
+%% |\MCtheorembodyfont{<font>}| essentially
+%% decides between <font>=`\it' and\\ <font>=`\rm'.
+%% `\it' is default.
+%% `\it' (or `\sl'!) is usually chosen for ``claims"
+%% (maybe only ``remarkable" ones like ``theorems"
+%%  as opposed to ``lemmas"), while a ``definition" may be
+%% typeset ``&\upshape" usually.
+\newtoks\MCtheorembodyfont
+\MCtheorembodyfont{\it}
+%% \ULguess{The reason for using token registers here is that
+%%   in an &\edef with &\the, contained control sequences are
+%%   not expanded (\TeX book p.~216). (May be a little over
+%%   the top for the ``addheadpunct.")}{2009/06/27}
+%%
+%% |\MCtheoremaddheadpunct{<punct>}| essentially
+%% decides between <punct>=`.' (``dot") and <punct>=``nothing."
+%% The latter is default.
+%% \ULguess{<punct>=`.' (dot) appeared with `theorem' and
+%%   `definition' only previously. (Not clear if proper.)}{2009/06/27}
+%% {\sloppy\par}
+\newtoks\MCtheoremaddheadpunct
+\MCtheoremaddheadpunct{}
+%% |\newMCtheorem{<thm-id>}{<thm-type>}| creates an environment
+%% <thm-id> (to be called by |\begin{<thm-id>}|) that prints <thm-type>
+%% as its ``type."
+\newcommand*{\newMCtheorem}[2]{%
+  \edef\@tempa{%                             %% expand style settings
+    \noexpand\newcommand \expandafter\noexpand\csname#1\endcsname{%
+%% Style settings:
+        \def\noexpand\MC@thmaddheadpunct{\the\MCtheoremaddheadpunct}%
+        \def\noexpand\MC@thmbodyfont    {\the\MCtheorembodyfont    }%
+%% Calling `\MCtheoremlike':
+        \noexpand\MCtheoremlike{#2}%
+    }}%
+  \@tempa
+  \expandafter \let \csname end#1\endcsname \endMCtheoremlike}
+%% In applying, be sure to type `MC', as `\newtheorem'
+%% (so far) does something different.
+%%
+%%  === The Set of Predefined Theorem-like Environments ===
+%% Apart from style settings, section~\bref{sec:genthm} describes
+%% the environments that are set up below, if you replace
+%% |MCtheoremlike| by |theorem| etc.
+%% I.e., e.g., the syntax is |\begin{theorem}[<title>]| etc
+%%
+%% \ULguess{A future version of 'morgan.sty' may predefine less or
+%%          or no theorem-like environments, leaving the job,
+%%          but style choices as well, to authors, or allowing
+%%          different choices for different books.}{2009/06/28}
+%%
+%% \ULguess{With v1.11, option `nothms' may suppress all
+%%          predefinitions except that of `generic':}{2009/09/03}
+\ifpredefthms
+%%
+%% ==== ``Claims" ====
+%% The body of these environments is typeset in \emph{italics.}
+%% This is the current ``theorem style."
+%% We use it for |lemma|, |proposition|, and |corollary|:
+  \newMCtheorem{lemma}{Lemma}
+  \newMCtheorem{proposition}{Proposition}
+  \newMCtheorem{corollary}{Corollary}
+%% \ULguess{The ``extra title" for |theorem|s has got an
+%%   ``extra dot" by 'morgan.sty' so far.
+%%   (In the information-theoretic 'sample.pdf', this lead
+%%   to a ``double extra dot.")}{2009/06/28}
+  \MCtheoremaddheadpunct{.}
+  \newMCtheorem{theorem}{Theorem}
+%% \ULguess{We might have a 1-parameter &\newMCtheorem*
+%%   that makes the first letter uppercase automatically.
+%%                                       %% <- grammar fix 2009/07/21
+%%   However, usual variants of &\newtheorem allow \emph{shorthand}
+%%   environment names like &\newtheorem{thm}{Theorem},
+%%                                       %% <- `thm' lowercase 2009/07/21
+%%   &\newMCtheorem allows the same.}{2009/06/28}
+%%
+%% Other theorem-like environments have \emph{not} been typeset in
+%% \emph{italics}:
+  \MCtheorembodyfont{}
+%% \ULguess{&\newMCtheorem might log the style settings used.}{2009/06/30}
+%%
+%% ==== Fixing Terms ====
+%% The current ``theorem style" has an ``add head extra dot."
+%% We are using it for |definition|:
+  \newMCtheorem{definition}{Definition}
+%% \ULguess{It will be \emph{boldface} unlike so far.}{2009/06/28}
+%%
+%% The remaining environments |convention|, |conventions|,
+%% |dictionary|, |notation|, and |rules| don't have this dot:
+%% {\sloppy\par}
+  \MCtheoremaddheadpunct{}
+  \newMCtheorem{convention}{Convention}
+  \newMCtheorem{conventions}{Conventions}
+  \newMCtheorem{dictionary}{Dictionary}
+  \newMCtheorem{notation}{Notation}
+  \newMCtheorem{rules}{Rules}
+%%
+%% ==== Remarks ====
+%% Environments |note|, |observation|, |remark|:
+  \newMCtheorem{note}{Note}
+  \newMCtheorem{observation}{Observation}
+  \newMCtheorem{remark}{Remark}
+%%
+%% ==== What Category? ====
+%% Environments |constraint|, |construction|, |property|,
+%% |properties|:
+  \newMCtheorem{constraint}{Constraint}
+  \newMCtheorem{construction}{Construction}
+  \newMCtheorem{property}{Property}
+  \newMCtheorem{properties}{Properties}
+%%
+%% ==== Examples, ``Problem", ``Solution" ====
+%% \label{sec:examples}
+%% Here we create environments |example|, |examples|, and |problem|:
+  \newMCtheorem{example} {Example}
+  \newMCtheorem{examples}{Examples}
+  \newMCtheorem{problem} {Problem}
+%% \ULguess{Cf. the `problems' environment in
+%%          section~\bref{sec:astlists}.}{2009/06/28}
+\fi %% ends `\ifpredefthms'
+%% |\solution| just prints \lq Solution:\rq\ in grey boldface:
+\newcommand{\solution}{%
+  \medskip\noindent\textcolor{grey}{\bfseries Solution:\quad}}
+%% \ULguess{This is from the former |problem| section. A
+%%   &\renewcommand version of the same macro was in
+%%   `example', `examples', and `generic'.}{2009/06/27}
+%%
+%% \ULguess{However, color `grey' has not been defined ...}{2009/08/28}
+%%
+%% ==== A No-Name Environment ====
+%% The |generic| environment just prints the number, no ``type."
+%% You can add a <title> after the number by
+%% |\begin{generic}[<title>]|.
+\newMCtheorem{generic}{}
+%% \ULguess{... one might want to have a version with different body
+%%          font.}{2009/09/03}
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  == Lists of `exercises' or `problems' ==
+%% \label{sec:astlists}
+%% \ULguess{To be sorted into ``Markup" after discussion.}{2009/06/26}
+%%
+%% \ULguess{Only now I discover that this is entirely independent from
+%%   the ``theorem" stuff. Especially, `problem' of
+%%   section~\bref{sec:examples} has nothing to do with `problems'
+%%   here.}{2009/06/26}
+%%
+%% === Optional Asterisk Preceding Number ===
+%% |\setputasterix| can be used to precede the \emph{next} number of
+%% an \emph{exercise} or something similar with an
+%% \emph{asterisk}\ULguess{---e.g., to mark ``difficult"
+%%   or ``skippable" ones. This has been implemented for environments
+%%   `exercises', `problems', `sublist', `subsublist', `caselist'
+%%   (the latter now removed, see
+%% 'MORGANRM.TEX'.)}{2009/06/25}{\sloppy\par}
+\newif\if@putasterix
+\def\setputasterix{\global\@putasterixtrue}
+\def\clearputasterix{\global\@putasterixfalse}
+%% `\clearputasterix' is executed automatically whenever an asterisk
+%% actually has been placed. %% 2009/04/26
+\clearputasterix
+%%
+%% %% \pagebreak
+%% === `exercises' ===
+% BEGIN EXERCISES MACROS
+
+\newcounter{exercise}
+%%
+%% |\directions<text>\edirections|
+%% \ULguess{can be used in a list environment in place of
+%%   &\item\,.\,.\,.
+%%   However, there is no item label, just a kind of paragraph
+%%   with certain distance to surroundings is created.
+%%   <text> is typeset in italics.---Used? Not here.}{2009/04/26}
+\def\directions{\item[\hspace{-\labelsep}]\textit\bgroup}
+\def\edirections{\egroup}
+%%
+%% |\probhead<title>\eprobhead|
+%% \ULguess{similar to the previous, but <title> is typeset
+%%   starting at left margin and in boldface, with less distance
+%%   below than above---``problem head."}{2009/04/26}
+\def\probhead{\medskip\item[]\hspace{-\leftmargin}\textbf\bgroup}
+\def\eprobhead{\egroup\smallskip}
+%%
+%% |\exercisesmax{<sample>}|
+%% \ULguess{probably once was made to work like the <sample> argument
+%%   of &\begin{thebibliography}{<sample>}.
+%%   However, at present it only executes some
+%%   trivial settings of left margin and &\labelwidth
+%%   independent of <sample>.}{2009/04/26}
+\def\exercisesmax#1{%
+  \csname leftmargin\romannumeral\the\@enumdepth\endcsname0pt%
+  \labelwidth=-\labelsep
+  }
+%%
+%% |\<type>exercises|
+%% \ULguess{resets the top level counter and fixes a ``problem
+%%   type" <type> of which there are five: `A', `U', `P', `C', `M'.
+%%   <type> appears as a prefix to the exercise number.
+%%   (What do the letters mean?)}{2009/04/26}
+%% May be used between `\item's of a list of exercises to switch
+%% to another ``problem type" that gets its own numbering.
+\def\problemtype{}
+\def\Aexercises{\setcounter{enumi}{0}\def\problemtype{A}}
+\def\Uexercises{\setcounter{enumi}{0}\def\problemtype{U}}
+\def\Pexercises{\setcounter{enumi}{0}\def\problemtype{P}}
+\def\Cexercises{\setcounter{enumi}{0}\def\problemtype{C}}
+\def\Mexercises{\setcounter{enumi}{0}\def\problemtype{M}}
+%% |\clearproblemtype|
+%% \ULguess{seems to be a 'morgan.sty' internal---that at present
+%%   is used in an entirely useless way!
+%%   (See below: &\endexercises. This would be different if it
+%%    did &\gdef&\problemtype{}, or &\let&\problemtype\cs{@empty}.)}{2009/04/26}
+\def\clearproblemtype{\def\problemtype{}}
+%%
+%% |\begin{exercises}[<sample>]|
+%% \ULguess{starts an ``exercises" section and list.
+%%   Due to the current definition of &\exercisesmax{<sample>},
+%%   the optional <sample> doesn't have any effect.}{2009/04/26}
+\def\exercises{%
+  \bgroup\@ifnextchar[{\@exercises}%
+                      {\@exercises[\csname label\@enumctr\endcsname]}}
+%% \RM{Strange to enter a &\bgroup when we are in a \LaTeX\
+%%     environment anyway.}{2009/06/26}
+%%
+\def\@exercises[#1]{%
+%% An `exercises' environment forms an own `\section',
+%% \ULguess{good to end a chapter:}{2009/04/26}
+  \section{Exercises}%
+  \bgroup
+%% \ULguess{Another strange &\bgroup.}{2009/06/26}
+    \nobreak \vskip-4pt
+%% Two nesting levels are provided:
+    \renewcommand\theenumi{\problemtype\thechapter.\arabic{enumi}}%
+    \renewcommand\theenumii{\alph{enumii}}%
+    \renewcommand\labelenumi{\bf\theenumi.}%
+    \renewcommand\labelenumii{\bf(\theenumii)}%
+    \ifnum \@enumdepth >3
+%% \RM{This is from the definition of \LaTeX's `enumerate'.
+%%   But it is nonsense here, since (i)~only 2 nesting levels are
+%%   provided here and (ii)~unlike `enumerate', the present
+%%   environment cannot be an item of another list, since it
+%%   opens a section! So \cs{@enumdepth} actually is \emph{zero} here
+%%   (confirmed by test run).}{2009/06/26}
+      \@toodeep
+    \else
+      \advance\@enumdepth \@ne
+      \edef\@enumctr{enum\romannumeral\the\@enumdepth}%
+      \setcounter{\@enumctr}{1}%
+%% \RM{... useless, overridden by `list'! (tested)}{2009/06/26}
+      \exercisesmax{#1}%
+%% \LaTeX's `list' environment has two arguments, the first defines
+%% the label format ...
+      \list{\if@putasterix
+              \llap{$^{*}$}\clearputasterix
+            \else
+            \fi
+%% \ULguess{We have this \cs{if@putasterix}...\cs{fi} several times.
+%%          There might be a macro for it (\cs{maybe@putasterix}).}{2009/04/26}
+%% \ULguess{And/or ``unify" `exercises' and `problems'!}{2009/06/26}
+            \csname label\@enumctr\endcsname}%
+%% ... the second takes additional formatting settings:
+           {\addtolength{\leftmargin}{3pc}%
+            \setlength{\itemindent}{0pc}%
+            \setlength{\labelwidth}{2pc}%
+            \usecounter{\@enumctr}%
+            \def\makelabel##1{{##1}}%
+            \setlength\itemsep{3pt plus 2pt minus 1pt}}%
+    \fi}
+%%
+\def\endexercises{\endlist          \egroup
+                  \clearproblemtype \egroup}
+%% This completes the ``low level" setup of the `exercises'
+%% environment.
+%% \par \ULguess{Since &\egroup follows and &\clearproblemtype only
+%%   acts locally, executing &\clearproblemtype here is entirely
+%%   useless!---Anyway, I don't believe that all these &\bgroup s
+%%   and &\egroup s are useful, &\end{exercises} should suffice
+%%   to keep settings local. Finally, I doubt that &\problemtype
+%%   needs to be cleared.\sloppy\endsloppypar}{2009/04/26}
+%%
+%% \ULguess{How is a \emph{single exercise} started?
+%%   By &\probhead? And how can we get into the second
+%%   nesting level? `enumerate'?}{2009/04/26}
+%% \ULguess{`sublist/subsublist'?}{2009/06/25}
+
+% END EXERCISES MACROS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% === `problems' ===
+% BEGIN PROBLEMS MACROS
+
+%% \ULguess{Remarks to the previous section apply also to the present
+%%          one.}{2009/04/26}
+%%
+%% |\problemmax{<sample>}|
+%% \ULguess{does the same as &\exercisemax{<sample>} (which isn't
+%%   much).---If there should \emph{really} be separate `problems'
+%%   commands as aliases for respective `exercises' commands, one
+%%   should use &\let instead of copying definitions!}{2009/04/26}
+\def\problemsmax#1{%
+  \csname leftmargin\romannumeral\the\@enumdepth\endcsname0pt%
+  \labelwidth=-\labelsep
+  }
+%%
+%% |\<type>problems| just does the same as `\<type>exercises'
+%% (previous section): %% 2009/04/26
+\def\problemtype{}
+\def\Aproblems{\setcounter{enumi}{0}\def\problemtype{A}}
+\def\Uproblems{\setcounter{enumi}{0}\def\problemtype{U}}
+\def\Pproblems{\setcounter{enumi}{0}\def\problemtype{P}}
+\def\Cproblems{\setcounter{enumi}{0}\def\problemtype{C}}
+\def\Mproblems{\setcounter{enumi}{0}\def\problemtype{M}}
+\def\clearproblemtype{\def\problemtype{}}
+%%
+%% |\begin{problems}[<sample>]|
+%% \ULguess{starts a ``problems" list---not a section.
+%%   Due to the current definition of &\problemsmax{<sample>},
+%%   the optional <sample> doesn't have any effect.}{2009/06/25}
+\def\problems{%
+  \bgroup\@ifnextchar[{\@problems}%
+                      {\@problems[\csname label\@enumctr\endcsname]}}
+\def\@problems[#1]{%
+%% \ULguess{The major difference to the ``Exercises" is that no
+%%   &\section{Problems} is opened.}{2009/04/26}
+  \bgroup
+    \nobreak \vskip-4pt
+    \renewcommand\theenumi{\problemtype\thechapter.\arabic{enumi}}%
+    \renewcommand\theenumii{\alph{enumii}}%
+    \renewcommand\labelenumi{\bf\theenumi.}%
+    \renewcommand\labelenumii{\bf(\theenumii)}%
+    \ifnum \@enumdepth >3
+      \@toodeep
+    \else
+      \advance\@enumdepth \@ne
+      \edef\@enumctr{enum\romannumeral\the\@enumdepth}%
+      \setcounter{\@enumctr}{1}%
+      \problemsmax{#1}%
+%% \ULguess{So &\problemsmax replaces &\exercisesmax from the previous
+%%          section. Otherwise the `problems' environment
+%%          does the same as the `exercises' environment.
+%%          But this could be achieved without copying so much code.}{2009/04/26}
+      \list{\if@putasterix
+              \llap{$^{*}$}\clearputasterix
+            \else
+            \fi
+            \csname label\@enumctr\endcsname}%
+           {\addtolength{\leftmargin}{3pc}%
+            \setlength{\itemindent}{0pc}%
+            \setlength{\labelwidth}{2pc}%
+            \usecounter{\@enumctr}%
+            \def\makelabel##1{{##1}}%
+            \setlength\itemsep{3pt plus 2pt minus 1pt}}%
+    \fi}
+%%
+\def\endproblems{\endlist          \egroup
+                 \clearproblemtype \egroup}
+
+% END PROBLEMS MACROS
+%% %% \pagebreak
+%% === `sublist' ===
+%% \label{sec:sublist}
+% BEGIN SUBLIST
+
+\newcounter{sublistcounter}
+%% \ULguess{It is quite unusual to use `counter' in the name
+%%   of a counter. One would rather use &\newcounter{sublist}
+%%   here.}{2009/04/26}
+%%
+%% |sublist|---\ULguess{an author environment for entering nested
+%%   lists? For use with `exercises' and `problems'?}{2009/06/17}
+%% \ULguess{An author command |&\itemfirst| seems to be provided for
+%%   use inside the environment.}{2009/04/27}
+%% \RM{``Have not used" according to Tondo 2009/06/03.}{2009/06/11}
+\newenvironment{sublist}
+  {\begin{list}{%
+%% \ULguess{... or &\list and &\endlist.}{2009/04/26}
+     \if@putasterix$^{*}$\clearputasterix\else\fi
+     (\hbox to 0.5em{\hfil{\bfseries\alph{sublistcounter}}\hfil})}%
+%% \ULguess{... nicely exemplifies using a special counter (<counter>)
+%%   format \emph{ignoring} \cs{the<counter>}.---Here starts the
+%%   second argument of `list'.\sloppy\endsloppypar}{2009/04/26}
+    {\usecounter{sublistcounter}%
+     \def\itemfirst{%
+       \refstepcounter{sublistcounter}%
+       \item[]%
+       \hskip-1.65em\hskip-\labelwidth
+       {(\hbox to 0.5em{\hfil{\bfseries\alph{sublistcounter}}\hfil})%
+        \hskip\labelsep}%
+%% \ULguess{The outer braces of the previous two lines seem
+%%   superfluous to me. Moreover (in general) when there are many
+%%   \emph{macro argument} braces, &\begingroup and &\endgroup
+%%   are more perspicuous than braces for grouping.}{2009/04/26}
+     }%
+%% \ULguess{... seems to end &\def&\itemfirst. (TODO confirm by
+%%   &\show!).}{2009/04/26}
+   \addtolength{\leftmargin}{2pc}%
+   \setlength{\itemindent}{0pc}%
+   \setlength{\labelwidth}{2pc}}%
+  }{\end{list}}
+
+% END SUBLIST
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% %% \pagebreak
+%% === `subsublist' ===
+% BEGIN SUBSUBLIST
+
+\newcounter{subsublistcounter}
+%% |subsublist| is like `sublist',
+%% \ULguess{list parameters somewhat different ... (TODO)}{2009/04/27}
+\newenvironment{subsublist}
+  {\begin{list}
+         {\if@putasterix$^{*}$\clearputasterix\else\fi%
+          \bfseries(\roman{subsublistcounter})}%
+         {\usecounter{subsublistcounter}%
+          \setlength{\labelwidth}{3pc}%
+          \setlength{\itemindent}{12pt}}%
+  }{\end{list}}
+
+% END SUBSUBLIST
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \ULguess{A `caselist' was here as well.}{2009/06/25}
+%%
+%%  == ``Initialization" ==  %%%%%
+%% \ULguess{Indeed a few simple style settings are following as,
+%%   in rather simple documents, they appear after &\RequirePackage...
+%%   before &\begin{document}, so they are ``initial" settings
+%%   working when typesetting starts. So this probably once was
+%%   the \emph{very end} of 'morgan.sty'. (This may be bad for
+%%     my idea to turn 'morgan.sty' into 'morgan.cls'; however,
+%%     it then could issue
+%%     &\AtBeginDocument{<initial settings>}.)}{2009/04/14}
+%% \ULguess{... and indeed the final section of 'classes.dtx' has
+%%   the same heading \qtd{Initialization}}{2009/06/24}
+%%%%%%%%%%%%%%%%%%%%%%%% Initialization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\medmuskip  =4mu %%% plus 2mu minus 4mu
+\thickmuskip=5mu %%% plus 5mu
+%% \ULguess{... added 'fontmath.ltx'' \qtd{plus} and \qtd{minus}
+%%          as comments.}{2009/06/24}
+%% These `muskip' changes are 'morgan.sty' only, 'classes.dtx' doesn't
+%% mention them.
+\pagestyle{headings}
+\pagenumbering{arabic}      % Arabic page numbers
+\clubpenalty10000\widowpenalty10000\hyphenpenalty=50
+\sloppy
+\frenchspacing
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% End Initialization %%%%%%%%%%%%%%%%%%%%%%%
+% UF 04.12.2016
+% copied from morplay to get rid of this sty
+
+\newcommand*{\MC@addsecspace}[1]{%
+  \if@nobreak
+    \@tempdima\lastskip
+    \vskip-\@tempdima
+    \advance\@tempdima#1\relax
+    \vskip\@tempdima
+  \fi}
+
+%% Section Heading Changes:
+
+% \MC@choosefont{\pxfont@HONETITLE  }{13.5}{15.5}{b}{n}
+% \MC@choosefont{\pxfont@HTWOTITLE  }{11}  {12.5}{b}{n}
+% \MC@choosefont{\pxfont@HTHREETITLE}{10}  {11.5}{b}{n}
+
+\renewcommand\section{%
+  \@startsection{section}{1}{\z@}%
+                {-15pt \@plus -2pt \@minus -.2pt}%
+                {\medskipamount}%
+                {\MC@alignsec\titlecolor\pxfont@HONETITLE}}
+  %% <- \MC@alignsec 2010/01/17 ->
+\renewcommand\subsection{%
+%   \MC@addsecspace{1.5pt}%% UL 2009/11/17
+  \MC@addsecspace{1pt}%% UL 2009/11/17, baseline skip only
+  \@startsection{subsection}{2}{\z@}%
+                {-15pt \@plus -2pt \@minus -.2pt}%% v1.12
+%                 {\smallskipamount}%% v1.12
+%                 {.6667\medskipamount}%% UL 2009/11/17
+                {.55\medskipamount}%% UL 2009/11/17
+                {\MC@alignsec\titlecolor\pxfont@HTWOTITLE}}%
+\renewcommand\subsubsection{%
+%   \MC@addsecspace{1.5pt}%% UL 2009/11/17
+  \MC@addsecspace{2pt}%% UL 2009/11/17, baseline skip only
+  \@startsection{subsubsection}{3}{\z@}% %% `%' 2009/09/26
+                {-15pt \@plus -2pt \@minus -.2pt}%% v1.12
+%                 {\smallskipamount}%% v1.12
+%                 {.3333\medskipamount}%% UL 2009/11/17
+                {.1\medskipamount}%% UL 2009/11/17
+                {\MC@alignsec\titlecolor\pxfont@HTHREETITLE}}%
+\renewcommand\paragraph{%
+  \@startsection{paragraph}{4}{\z@}%
+%                 {-19pt \@plus -2pt \@minus -.2pt}{-1em}%% v1.12
+                {-8pt \@plus -2pt \@minus -.2pt}{-1em}%% UL 2009/11/17
+%                 {-\medskipamount}{-1em}%% UL 2009/11/17
+%                 {\titlecolor\textbfit}}%% v1.12
+                {\titlecolor\textbf}}%% v1.12			% DRT
+%                 {\itshape}}%% morgan.sty v1.11 and earlier
+\renewcommand\subparagraph{%
+  \@startsection{subparagraph}{5}%
+                {\parindent}%% v1.12
+%                 {3pc}%% UL 2009/11/17, section title indent
+%                 {-19pt \@plus -2pt \@minus -.2pt}{-1em}%% v1.12
+                {-8pt \@plus -2pt \@minus -.2pt}{-1em}%% UL 2009/11/17
+%                 {-\medskipamount}{-1em}%% UL 2009/11/17
+%                 {\titlecolor}}%% v1.12 (UL, not DRT)
+                {\titlecolor\textit}}%% UL 2009/11/17
+%                 {}}%% v1.11 and earlier
+
+
+% clone mcframe from mcframed
+
+\RequirePackage[many]{tcolorbox}
+\RequirePackage{xparse}
+\ExplSyntaxOn
+\NewDocumentEnvironment{mcframe}{ O{\textwidth} D(){\dimexpr\textwidth-20pt\relax}D<>{bluetwenty} }
+ {
+  \begin{tcolorbox}
+   [enhanced,
+    breakable,
+    center,
+    parbox=false,
+    width=#1,
+    colback=#3,
+    frame~hidden,
+    boxsep=0pt,
+    text~width=#2,
+    left=\dim_eval:n {(#1-#2)/2},
+    right=\dim_eval:n {(#1-#2)/2},
+    sharp~corners,
+   ]
+ }
+ {
+  \end{tcolorbox}
+ }
+
+\ExplSyntaxOff
+
+
+%%%<<<<<<<<<<< imported from ttdefs2.sty
+
+\RequirePackage{amsmath}                % AMS-LaTeX in K&D, p269-270
+  % keep tags at normal size
+  \def\my@tag@font{\normalsize}
+  \def\maketag@@@#1{\hbox{\m@th\normalfont\my@tag@font#1}}
+  \let\amsmath@eqref\eqref
+  \renewcommand\eqref[1]{{\let\my@tag@font\relax\amsmath@eqref{#1}}}
+
+
+\RequirePackage{amscd}                  % AMS-LaTeX in K&D, p293
+\AtEndPreamble{\RequirePackage{bm}}     % provide access to bold math symbols, should be loaded after mtpro
+\RequirePackage{longtable}              % long tables as in Abrahams's book
+\RequirePackage{cases}                  % handle numcases (see jfaa v11i4/4082.tex)
+\RequirePackage[hyphens]{url}           % url macros
+\RequirePackage{comment}                % allow for \begin{comment}...\end{comment}
+\RequirePackage{multirow}               % see v13i5/6903.tex
+\RequirePackage[figuresright]{rotating}	% rotating package in K&D, p159
+% use figuresright so the figure on the left page "appears above" the figure
+% on the right page when both figures/tables appear sideways
+\RequirePackage{graphicx}               % for .eps figures
+
+\usepackage{caption}	 				% for figures
+
+\usepackage{subcaption} 				% for subfigures (figs within figs)
+
+\captionsetup{labelfont={color=blue},singlelinecheck=false}
+\captionsetup[table]{position=above}
+\captionsetup[figure]{position=below}
+
+\RequirePackage{floatflt}               % floating figure for bio
+
+\RequirePackage{algorithm}
+\RequirePackage{algorithmic}          %
+%RequirePackage[noend]{algpseudocode} % \While, \For, etc.
+
+\RequirePackage[utf8]{inputenc}		% accents like \v and \u
+									% 2.1, 2.2, 2.3, etc.
+\renewcommand{\thealgorithm}{\arabic{chapter}.\arabic{algorithm}}
+									% \hrulefill in algorithms; added neg \vspace
+\RequirePackage{xspace}
+%settings
+
+% change values for floating figures space
+\setcounter{topnumber}{3}           % instead of 2
+\renewcommand*{\topfraction}{.9}    % instead of .9
+\setcounter{totalnumber}{4}         % instead of 3
+\renewcommand*{\textfraction}{.1}   % instead of .1
+
+\setlength{\arraycolsep}{.07in}     % change col space in array environ.
+                                    % see Hahn p226 and p237
+
+
+
+% pdf file colors for xrefs
+\definecolor{MyLightBlue}{rgb}{0.6,0.8,1}
+\definecolor{MyDarkBlue}{cmyk}{1,0.50,0,0.10}
+\definecolor{MyDarkGrey}{rgb}{0.33,0.33,0.33}
+\definecolor{MyDarkGreen}{rgb}{0.0,0.67,0.40}
+
+
+%<<<<<<<<< Why does the \if start here???
+\ifFinalPages                       % finals (final pages - use figures)
+
+% add text before the pagenumbers in the bibliography following the DOI
+% in hyperref (help from heiko.oberdiek@googlemail.com):
+\newcommand*{\backref}{Cited on page(s) }
+
+
+                                    % draw a box for \figeps [draft] mode
+\newcommand*{\figeps}[3]{\centerline{\hbox{\framebox[#1][c]{\rule{0pc}{#2}%
+						 #3}\hfill}}}
+									% pdf file colors for xrefs
+%definecolor{MyLightBlue}{rgb}{0.6,0.8,1}
+%definecolor{MyDarkBlue}{cmyk}{1,0.50,0,0.10}
+%definecolor{MyDarkGrey}{rgb}{0.33,0.33,0.33}
+%definecolor{MyDarkGreen}{rgb}{0.0,0.67,0.40}
+
+\else                               % DRAFT (boxes instead of figures)
+
+
+
+                                    % superscript circled registered mark
+\def\registered{$\protect^{\mbox{\TRFont\char"AE}}$}
+
+                                    % draw a box for \figtif [draft] mode
+\newcommand*{\figtif}[3]{\centerline{\hbox{\framebox[#2][c]{\rule{0pc}{#3}%
+						 #1}\hfill}}}
+                                    % draw a box for \figeps [draft] mode
+\newcommand*{\figeps}[3]{\centerline{\hbox{\framebox[#1][c]{\rule{0pc}{#2}%
+						 #3}\hfill}}}
+\fi									% end of \ifFinalPages / \else
+
+
+                                    % draw a box when fig is not available
+\newcommand*{\figboxes}{\centerline{\hbox{\fbox{\rule{0pc}{7pc}\hspace*{19pc}}%
+                        \hfill}}}
+\newcommand*{\figboxesname}[1]{\centerline{\hbox{\fbox{\rule{0pc}{7pc}%
+						\hspace*{19pc}#1}\hfill}}}
+\newcommand*{\smfigboxes}{\centerline{\hbox{\fbox{\rule{0pc}{4pc}%
+                        \hspace*{8pc}}\hfill}}}
+
+
+\endinput                           % end T&T TechWorks Macros
+
+
+
+\endinput
+%% \ULguess{... really added, so we can do what we want below.}{2009/04/14+}
+
+%%  == VERSION HISTORY ==
+%% \ULguess{... started by Uwe L\"uck 2009/04/14}{2009/04/14+}
+v1.0001 12/18/08     received from Tondo with exactly this version id
+v1.001a 2009/04/14   TOC and comments with makedoc.sty etc.,
+                     sent to Tondo + M&C
+v1.001b 2009/04/14+  started VERSION HISTORY
+        2009/04/15   added \ULguess to \chapterinitial
+        2009/04/16   mostly ``trimmarks''
+        2009/04/17   at least first 19 pages ready (TOC may change);
+                     sent to Tondo + M&C
+v1.001c 2009/04/17+  \itline... corr.
+        2009/04/18   few changes on Tondo's mail 2009/04/17;
+                     remark on \plogo
+        2009/04/19   deeper analyisis of sectioning, example box,
+                     floats: figures
+        2009/04/20   reworked some previous details;
+                     floats: tables, ..., page styles
+        2009/04/21   corrected on \tableleftskip/...rightskip;
+                     title page; sent to Tondo
+v1.001d 2009/04/22   more specific on \affiliation; TOC; back matter;
+                     sent to Tondo
+v1.001e 2009/04/23   \bref; character count + \gray;
+                     added some of Tondo's 2009/04/17 to comments;
+                     code environments;
+                     float tricks and output routine
+        2009/04/24   LOF/LOT deeper, front pages and title page more
+                     carefully, caslon test cross-references
+                     -- sent to Tondo
+v1.001f 2009/04/24+  theorem-like environments;
+                     \ifbibchapter cleared up
+        2009/04/25f. theorem-like: newcounter macro suggestion, single
+                     environments, problem-lists, proofs
+        2009/04/27   sublists, cases, extract
+        2009/04/27+  slightly different formatting from 'morcode.tex'
+v1.001g 2009/05/03   proposal option for \ifruninchapter
+        2009/05/04   `7 seven', bluetwenty
+        2009/05/05   trim marks
+        2009/05/07   SENT to M&C and Tondo,
+                     with wrong `v.001f' in \ProvicesPackage...!
+                     (date `2009/05/05' was correct!)
+v1.001h 2009/05/08   corrected (updated) \ProvidesPackage...
+v1.001i 2009/06/02   marked items to be discarded by \RM
+v1.001j 2009/06/09   found \MakeTextUppercase in textcase.sty
+        2009/06/10   considering Tondo 2009/06/03
+        2009/06/11   continued, hyperpdf
+        2009/06/15   hyperpdf repairs
+        2009/06/16   cf. \vs; additional removal candidates until
+                     title pages
+        2009/06/17   continued there; discovered sense of
+                     `subelements'; reworking other thm-likes;
+                     finished reworking removal candidates
+
+                     FINAL VERSION BEFORE CUTTING DOWN
+
+v1.001k              reserved for corrections of that final version
+
+v1.01l  2009/06/18   cutting down
+v1.01m  2009/06/24   rearranging; a few more removal candidates
+        2009/06/25   removed placement remarks; rearranged
+                     theorem-like environments, including additional
+                     analysis; more `\RM's; rearrangement corrections
+v1.01n  2009/06/26   executed some removal announcements;
+                     corrections of some remarks; \putparcurrentmark;
+                     more analysis of `subelements' with additional
+                     removal candidates (rather for reimplementation
+                     or discussion with M&C); separated sec:astlists!
+        2009/06/27   remark on removable `\theconjecture';
+                     more analysis of `subelements'
+                     SENT TO M&C + TONDO -- WHO COMMENTED
+v1.01o  2009/06/27   reimplementation of theorem-like environments
+        2009/06/28   ... continued
+        2009/06/29   ... debugged
+        2009/06/30   ... continued; SENT TO M&C + TONDO
+v1.01p  2009/06/30   inserted missing `\MCtheorembodyfont{}';
+                     changed version Error to Warning
+                     ("work in progress")
+                     SENT AS WELL
+v1.01q  2009/06/30   remark to yellowzero
+        2009/07/02   note on 'ltalloc.dtx'
+        2009/07/18   added backslash to `ABSTRACT'
+        2009/07/21   fixes at \newMCtheorem
+        2009/07/22   small change of initial warning;
+                     \morgandate, \morganversion, typo, ...
+        2009/07/23   remark: \rlap for \morganlogo
+        2009/07/24   typo `fcode'; more on `yellowzero';
+                     warning on TOC
+        2009/07/25   remark on `\thesectiononly'; `caslon' \sf
+        2009/07/26   sec:colors; made table color guesses true
+        2009/07/27   corrected marginpar settings;
+                     remark on theorem dot
+        2009/07/29   more `\RM's for `stoblongfig' things;
+                     remark on theorem skip; `\RM' for
+                     `\AdjustCounter'; shortened some lines
+        2009/07/30   \newMCtheorem reimplemented
+                     [NOT SENT]
+v1.02   2009/08/27   towards v1.1, incorporating 2009 functions:
+                     incorporated `codelisting' environment
+        2009/08/28   made option hypref obsolete
+                     SENT TO TONDO
+v1.03   2009/08/29   \DOI more clearly,
+                     \label and \RM for code environments,
+                     commented out bad \ifnum in \@makechapterhead
+                     (sick of transcript reports)
+        2009/08/30   framed.sty + par highlighting
+        2009/08/31   |background|;
+                     option [sectionbib] must have been somewhere here
+                     SENT TO TONDO
+
+v1.10   2009/08/31   `\texttt' in titles for hyperref
+        2009/09/01   corrected date of last \RM; removed warning etc.;
+                     preparing for hyperref again, page breaks
+                     SENT TODO TONDO + M&C
+v1.10a  2009/09/03   options `nothms' and `noproof'; some \RM;
+                     moved \plogo to MORGANRM.TEX; removed "Worrying
+                     ... (being discussed soon); reworked page breaks;
+                     removed \AdjustCounter idea
+        2009/09/19   `cmss10' wrong
+        2009/09/20   px.fd from PreTeX
+        2009/09/21   \RM for `Contents' in TOC
+        2009/09/24   v1.11 -> v1.0a for a copy with \RM for removals
+        2009/09/25f. remarks on caslon conditional
+        2009/09/28   \RM for `\rhfont', suggestion on `{caslon}'
+        2009/09/29   TODOs on option [sectionbib]
+        2009/09/30   updated \morgandate
+                     SENT TO TONDO
+v1.11   2009/10/06   reimplemented `[(ch)secnumbering]';
+                     replaced 'cmupdate.fd' by 'ot1cmpca.fd',
+                     \MC@choosefont; TOC not in TOC,
+                     `\subsubsection' blue; \cw;
+                     shortened some `overfull' lines
+                     SENT TODO TONDO + M&C
+
+v1.12   2009/10/08   +`%'; `\chapter': removed unmatched `\ifnum',
+                     `\RM's, remarks on `\appendix';
+                     \definecolor columns
+        2009/10/09   found \tempbox in \Ahead/\Bhead,
+                     \MC@choosefont makes short
+        2009/10/10   explained its parameters;
+                     reworked comments on `\chapter' macros
+        2009/10/11   folding in sectioning section,
+                     better columns with `\MC@choosefont'
+        2009/10/12   changed comments on `\Ahead', `\Bhead',
+                     `\@makechapterhead'
+        2009/10/13   changed remark to `\Ahead'
+        2009/10/14   changed remark to `\l@chapter'
+        2009/10/15   another remark on letter-spacing
+        2009/10/22   comparison of \l@schapter with \l@chapter,
+                     more notes
+        2009/10/23   ... continued
+        2009/10/24   ... continued
+        2009/10/25   reason for wrong centering with `\chapter*'
+        2009/10/26   correction of "LaTeX" \@chapter code
+        2009/10/29   remark on change of `\[sub[sub]]section'
+        2009/10/30   remarks on page layout
+        2009/11/01   notes: `\plainleftline' etc. not used anymore,
+                     TOC, `\backmatter'
+        2009/11/10   Tondo's changes of `\subsubsection',
+                     `\pxfont@HTHREETITLE' etc.,
+                     \titlecolor, \textbfit
+        2009/11/11   remarks on `runinchapter'
+        2009/11/12   corrected remark to `\textbfit',
+                     typographical text changes on changes
+v1.13   2009/12/25   corrected description of \ps@plain
+        2009/12/26   added remark on LaTeX's `\title',
+                     note to \ps@emptyrule
+        2010/02/24   corrected \@seccntformat; long title to TOC
+                     with \@sect; [sectionbib] extended;
+                     changes for 'hyperref'
+v1.14   2010/03/06   long paragraph title to TOC as well
+        2010/03/17   minor doc changes/tests about `MCtheoremlike'
+                     and `sublist'; `...' -> \dots in title;
+                     \sloppy; use quote marks in titles
+        2010/03/19   '' -> "
+v1.15   2010/04/24   remark on \tableofcontents updated
+        2010/08/24   \MCshadedblock and new chapter implementation
+                     accounting for chapterwise authors, from
+                     MORCHAP.sty; \color{blue} -> \titlecolor;
+                     found \tempbox with footnotes -- only!
+                     -- changes according to Tondo 2010/06/23
+                     (morgan.dif)
+        2010/08/25   \listof... from morbeta.sty, removing
+                     \l@schapter; modified \chapauline from
+                     morbeta.sty; \MC@listof
+                     SENT TO TONDO WITH morbeta.sty v10-11
+v1.16   2010/08/26   use \numberline with unnumbered TOC entries, too
+                     SENT TO TONDO etc. WITH morbeta.sty v10-12
+v1.17   2010/08/27   doc adjustments; TITLEB -> TITLENB
+        2010/08/30   \RM's pagestyles; announced changes of \part;
+                     changes for sec:marks (search);
+                     moving TOC formatting from morbeta.sty v10-12
+                     (vertical spacing as of 2010/08/26);
+                     \MCborderstrut; various minor doc corrections
+                     SENT TO TONDO + M&C 2010/08/31
+v1.17a  2010/10/04   Remark on \topskip
+                     SENT TO TONDO 2010/10/04
+v1.18   2010/10/05   \testblblskip commented out
+                     SENT TO TONDO 2010/10/05
+v1.18a  2010/10/10   corrected dates
+                     SENT TO TONDO
+
+v1.2    2010/10/12   dropping morgxml.tex and px.fd after discussion
+                     with Tondo; (some) comments on structuring of
+                     classes.dtx made invisible
+        2010/10/13   \hereonly, re-implementation of pagestyles,
+                     reworking sec:marks, \morganlogo abbrev.,
+                     minor corrections
+        2010/10/14   \label{sec:pagestyles}; removed mordemo TODOs;
+                     changes in ``chapter authors" documentation
+        2010/10/15   changed remarks on \headsep and \topskip;
+                     analyzed and minimized \MCshadedblock;
+                     solved chapter authors TODOs, changed
+                     \MC@chapau@toc@skipamount construction
+        2010/10/16   debugging \hereonly
+        2010/10/17   removed \dropfoliofont & \typewidth;
+                     TODOs on Tondo; tested requirement of
+                     \pdfstringdefDisableCommands
+                     SENT TO TONDO + M&C 2010/10/17
+v1.21   2010/10/21   refolding history; \sectionmark in sectionbib;
+                     changing documentation of thebibliography
+                     SENT TO M&C + TONDO same day
+v1.22   2010/10/25   [raggedsec]; many manual page breaks removed
+        2010/10/27   added `SENT ...' above
+        2010/10/28   addition + version-ids correced for [raggedsec];
+                     changed manual page breaks; more doc structure
+                     with \section etc. + doc correction
+                     SENT TO M&C + TONDO same day
+v1.22a  2010/11/09   doc on \@startsection nicer
+        2011/08/25   v1.23 -> v1.22a
+v1.3    2013/01/24   package option [loose];
+                     minor doc. clarifications
+        2013/01/25   \topmargin/\headsep for "loose"
+        2013/01/28   remarks on "openright" and \trimwidth
+v1.4	2013/04/15   Start of the implementation of the Opentype Adobe
+		     Caslon Pro fonts with xelatex
+	2013/04/20   Implementation of Adobe Caslon Pro opentype family
+ 		     via fontspec command, which changes main body fonts.
+	2013/05/01   New command \MC@selectfont which works with fontspec
+	2013/05/11   Implementation of conditional branching, so there is
+ 		     compatibility with previous distributions and modes
+  		     of compilation.
+	2013/05/18   Added no-math option, so fontspec and math times fonts
+		     are load the correct symbols
+ 	2013/05/21 	Added support for \textsuperscript and \textsubscript in OTF fonts.
+	2013/05/28	Changed the way captions are drawn, the border was dropped (Tondo)
+	2013/06/07	Changed the body text/leading back to 10.5/13.5.
+	2013/06/15	Incorporated changes made by Tondo on the table macros (lines 1749,1750,1752)

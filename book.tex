@@ -1,0 +1,169 @@
+
+% please use TexLive 2014 or later with the M&C macros freely
+% available from tug.org or use any other recent version of LaTeX
+
+\documentclass{book}\usepackage[]{graphicx}\usepackage[]{color}
+% maxwidth is the original width if it is less than linewidth
+% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+%the main style; default LibreCaslon font
+\usepackage[raggedsec]{morgan2}
+\usepackage{morgan-defs}
+
+%to use Times New Roman, instead of LibreCaslon, please uncomment the next line
+%\morgansetup{fontsetup=times}
+
+% bibliography
+% \usepackage[comma,sort,authoryear]{natbib}         % author-year
+\usepackage[comma,sort,numbers]{natbib}            % numbered
+
+% Attempting per-chapter bibliographies. Not working yet.
+% \usepackage[sectionbib,compress]{natbib}% provides a bibliography for each chapter
+% \usepackage{chapterbib}
+
+
+% 
+% Begin LaTeX packages imported by the authors.
+% 
+
+\usepackage{booktabs}    % For awesome table formatting
+\usepackage[inline]{enumitem}  % For inline enumerate* lists
+\usepackage{gensymb}     % For the \degree command
+\usepackage{microtype}   % For (more) beautiful typesetting.
+\usepackage{rotating}    % For rotating figures.
+\usepackage{wrapfig}     % To wrap text around figures.
+
+% 
+% Begin LaTeX macros created by the authors.
+% 
+
+\newcommand{\degC}{\degree C}
+
+% 
+% Begin R and knitr setup
+% 
+
+
+
+
+
+
+%
+% End author additions
+% 
+
+
+\setcounter{secnumdepth}{2}
+
+\graphicspath{{./figures/}}     % folder for the figures in your book
+
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[colorlinks=true,linkcolor=MyDarkBlue,
+citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
+
+\renewcommand{\UrlBreaks}{\do\.\do\@\do\\\do\/\do\!\do\_\do\|\do\;\do\>\do\]%
+\do\)\do\,\do\?\do\&\do\'\do+\do\=\do\#%
+\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
+\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t%
+\do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D%
+\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N%
+\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X%
+\do\Y\do\Z}
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\renewcommand{\ALG@name}{\color{black}Algorithm}
+\makeatother
+
+
+
+\makeindex{}                     % if you are creating an index for your book
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+% \SweaveOpts{concordance=TRUE}  % Commented on 17 Oct 2019 to eliminate some errors.
+
+ \frontmatter                   % we'll produce the fm for you; 
+    \input{fm}                  % we'll need an Abstract and Keywords
+								% please see the abs-pref folder for some pdf examples
+
+ \mainmatter
+    % knit_child("chapters/ch01/ch01.Rnw") % \ref{chap:introduction}
+    % knit_child("chapters/ch02/ch02.Rnw") % \ref{chap:population}
+    % knit_child("chapters/ch03/ch03.Rnw") % \ref{chap:economy}
+    % knit_child("chapters/ch04/ch04.Rnw") % \ref{chap:energy}
+    % knit_child("chapters/ch05/ch05.Rnw") % \ref{chap:air_and_water}
+    % knit_child("chapters/ch06/ch06.Rnw") % \ref{chap:chap:plants_and_animals}
+    % knit_child("chapters/ch07/ch07.Rnw") % \ref{chap:food_and_agriculture}
+    % knit_child("chapters/ch08/ch08.Rnw") % \ref{chap:transportation}
+    % knit_child("chapters/ch09/ch09.Rnw") % \ref{chap:housing_and_households}
+    % knit_child("chapters/ch10/ch10.Rnw") % \ref{chap:land_use_and_urban_planning}
+    % knit_child("chapters/ch11/ch11.Rnw") % \ref{chap:government_and_regulations} % for tragedy of the commons? https://www.cfra.org/news/131022/water-overcoming-tragedy-commons
+    % knit_child("chapters/ch12/ch12.Rnw") % \ref{chap:systems_thinking}
+    % knit_child("chapters/ch13/ch13.Rnw") % \ref{chap:values_and_religion}
+    % knit_child("chapters/ch14/ch14.Rnw") % \ref{chap:personal_actions}
+
+ %   \input{biblio}              % bibliography
+
+    \bibliographystyle{unsrtnat}
+    \bibliography{MCBook2021}   %chktex 11
+    
+    
+    \cleardoublepage
+
+ \backmatter                    % back matter
+    \input{bio}                 % author(s)'s short bio(s)
+								% please see the bios folder for some pdf examples
+    
+    \cleardoublepage
+
+    \input{book.ind}            % if you have an Index
+
+\end{document}
+
