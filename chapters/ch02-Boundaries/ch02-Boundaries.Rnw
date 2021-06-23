@@ -13,8 +13,66 @@ The reason is that we live on a finite planet with finite resources and finite b
 This chapter explores those boundaries -- the "budget" if you will for human civilization.
 Exceeding humanity's budget will degrade the ability of the Earth to support life.
 
-\section{Ecosystem services}
+
+\section{Ecosystem services} 
+%add citations to Millenium Ecosystem Assessment and The Common International Classification of Ecosystem Services
 The Earth's ecosystems support life on Earth. Collectively, these supports are called `ecosystem services.'
+The first group of services are {\b provisioning services}, which are material and energy resources.
+For example, humans plant crops (food, textile, and timber) that "grow," they're not manufactured. 
+The ecosystem ``provides" the crops. 
+Likewise, the ecosystem provides water, petroleum, and other mineral resources.
+
+The second set of services is {\b regulating and supporting services}, which sustain, and stabilize the ecosystem, including 
+processes for breaking down and recycling dead organisms; the carbon cycle,  nitrogen, oxygen, and water cycles; and the
+fact that plant roots stabilize soil and prevent erosion.
+
+The third set of services is {\b cultural services}, which include recreation and literary and cultural inspiration.
+
+Various analogies have been used to describe the benefits that ecosystem services provide, particularly in terms of the loss of
+a piece of the ecosystem. For example, the ecyosystem is like an airplane. When one rivet is lost, the result is not immediately 
+catastrophic but accumulated losses can result in catastrophic failure. Alternatively, speicies are like individual stocks in a 
+portfolio: wide diversity of species minimizes risk or volatility of return.
+
+The previous chapter also discussed "impacts," that is, negative effects on the environment that are (perhaps) the result of human activity. Broadly, there are two approaches for dealing with impacts. {\i Planetary boundaries} describe the maximum (desirable) 
+{\i level} of effects. The second method uses a weighted average of impacts, called an {\i index}, and the idea is to minimize the 
+level of the index.
+
+%sources, sinks, and levels
+%land, air, water
+
+\section{Planetary boundaries}
+Climate scienctists have proposed %\cite here Rockstrom 2009 = one of the first 4 in the wikipedia article.
+eight indicators, which, if exceeded, could render Earth unihabitable by humans, perhaps catastrophically so in that the resulting
+changes may be nonlinear and abrupt. The boundaries are intended to define a "safe operating space for humanity."
+\begin{enumerate} %present as a table instead?!
+\item Climate change
+\item Biodiversity loss
+\item Biogeochemical (nitrogen and phosphorus)
+\item Ocean acidification
+\item Land use
+\item Fresh water
+\item Ozone depletion
+\item Atmospheric aerosols
+\item Chemical pollution
+\end{enumerate}
+Newer (and improved?) lists have been proposed.
+
+% how do we know what the levels are?
+% precision and safety factors in the levels
+
+%Logistic curve(s)
+
+\section{Indices for sustainability}
+There are many, many indices used to express or measure sustainability. They are (weighted) averages of quantities related to 
+one or more of the three pillars. 
+\subsection{Indices for environmental impact}
+\subsection{Indices for the economy}
+\subsection{Indices for social change}
+
+
+
+
+
 
 
 \cleardoublepage
