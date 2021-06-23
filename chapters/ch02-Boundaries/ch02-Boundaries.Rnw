@@ -37,6 +37,7 @@ The previous chapter also discussed "impacts," that is, negative effects on the 
 {\i level} of effects. The second method uses a weighted average of impacts, called an {\i index}, and the idea is to minimize the 
 level of the index.
 
+
 %sources, sinks, and levels
 %land, air, water
 
@@ -57,10 +58,12 @@ changes may be nonlinear and abrupt. The boundaries are intended to define a "sa
 \end{enumerate}
 Newer (and improved?) lists have been proposed.
 
+
 % how do we know what the levels are?
 % precision and safety factors in the levels
 
 %Logistic curve(s)
+
 
 \section{Indices for sustainability}
 There are many, many indices used to express or measure sustainability. They are (weighted) averages of quantities related to 
