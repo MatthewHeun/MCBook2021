@@ -76,6 +76,7 @@ one or more of the three pillars.
 
 <<CO2Graph>>=
 # Gather data for CO2 vs. time graph
+print(getwd())
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "Atmospheric_CO2_concentration_ppm")) +
   ggplot2::geom_line()

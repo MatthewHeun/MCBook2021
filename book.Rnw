@@ -42,8 +42,10 @@
 % 
 
 <<setup, echo=FALSE, message=FALSE>>=
-# Per the hint at https://github.com/rstudio/bookdown/issues/536, 
-# use the tinytex package for error reporting.
+# Set the working directory for knitr
+# to be the top level directory for the repository.
+knitr::opts_knit$set(root.dir = getwd())
+
 library(ggplot2)     # For graphing functions
 library(magrittr)    # For pipe operator, (>%)
 @
