@@ -10,3 +10,6 @@ book.synctex.gz
 book.tex
 book.toc
 figure
+book.aux
+book.blg
+book.out
