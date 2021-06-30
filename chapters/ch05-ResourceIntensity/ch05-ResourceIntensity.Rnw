@@ -1,0 +1,31 @@
+% The next command tells RStudio to do "Compile PDF" on book.Rnw,
+% instead of this chapter, thereby eliminating the need to switch back to book.Rnw 
+% before making the book.
+%!TEX root = ../../book.Rnw
+
+\chapter{Resource intensity of the economy}
+\label{chap:resource_intensity}
+
+
+
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch05-ResourceIntensity/figures/MaterialUseTotalKrausmann2009}
+\caption{Total world material use~\cite[Figure~1a]{Krausmann:2009wc}.}
+\label{fig:total_material_use}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch05-ResourceIntensity/figures/MaterialUsePerCapitaKrausmann2009}
+\caption{World per capita material use~\cite[Figure~1c]{Krausmann:2009wc}.}
+\label{fig:per_capita_material_use}
+\end{figure}
+
+
+\cleardoublepage
+
