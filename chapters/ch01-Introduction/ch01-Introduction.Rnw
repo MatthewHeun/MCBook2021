@@ -11,46 +11,59 @@ poor farmer. If he lost, the king would have to pay the farmer a chessboard’s 
 grain, defined as one kernel of grain on the first square, two grains on the second
 square, four grains on the fourth square, and so on, with each subsequent square receiving
 double what was on the previous square. The king accepted the wager but, because this is
-fable, lost the game. A chessboard has eight rows and eight columns, so the king had to
-pay 264 (less one) grains of rice. Since it takes seven thousand grains of rice to make a
-pound (~65 mg each), the king owed her 1.195 exograms (one exogram is 1015 kg), which is
+fable, lost the game. % according to chess.com a match is a series of games.
+A chessboard has eight rows and eight columns, so the king had to
+pay $2^64$ (less one) grains of rice. Since a pound is seven thousand grains of rice 
+(~65 mg each), the king owed her $1.195 \times 10^15$ kg of rice, which is
 about 12\% of the weight of everything ever produced by the human species [1]. At
 US\$6.85/bushel, the grain would be worth about 300 trillion dollars, which is (roughly)
 ten times more money than exists in the world.
 %Clean up. Maybe kg/person in the world and $/person. 
 
 This story, which goes back at least until the 1200s, illustrates several aspects of the
-sustainability problem that have been evident for centuries. Exponential growth is not
-sustainable. Big numbers are hard to grok. % Cognitive biases Decartes’ chiliagon
-Numerical cognition Subitizing Dunbar number 50-year time frame.
-It’s not OK to take giant risks.
+sustainability problem that have been evident for centuries: Exponential growth is 
+% a) hard to understand and b) is 
+not sustainable; big numbers are hard to grok; % Cognitive biases Decartes’ chiliagon
+% Numerical cognition Subitizing Dunbar number 50-year time frame.
+and making large wagers on limited understanding is unwise.
+A central thesis of this book is that sustainability is a challenging problem
+because of complexity and we'll spend a lot of time looking at the interconnections
+between different aspects of sustainability challenges.
 
-The purpose of this book is to summarize the evidence that humans are not living
-sustainably and to show the characteristics of sustainable societies. The choices and
-paths to sustainability are bristling with value judgements and moral choices. This book
-attempts to provide a coherent framework for discussing sustainability that is grounded in
-a sense of scale. Each chapter is short, with focused discussion questions at the end of
-each chapter. The questions, which mostly focus on tradeoffs, do not have “right answers,”
-instead, different answers are indicative of different preferences. Basic data and key
-concepts start each chapter. This book is not comprehensive; the intent is to equip
+\section{Purpose, focus, and organization}
+This book will summarize ways that humans are not living sustainably and will suggest % outline?
+characteristics of sustainable societies. 
+Basic data and key concepts start each chapter.
+The text is deliberately short because the book is not intended to be comprehensive.
+The focus is on equipping students to discuss moral and ethical issues around sustainability.
+Because the choices and paths to sustainability are bristling with value judgements and moral choices,
+the end-of-chapter discussion questions mostly point to tradeoffs and do not have “right answers.”
+Instead, different answers are indicative of different preferences. 
+This book attempts to provide a coherent framework for discussing sustainability 
+that is grounded in a sense of scale. Therefore, we prioritize presenting 
+information graphically. The intent is to equip
 readers with basic knowledge (informed by scale) so we can grapple with tough moral
-questions. We intend the book to be easy to read but hard to digest.
+questions. {\i This book should be easy to read but hard to digest.}
 
-The remainder of this chapter will summarize key themes of the book. Sustainability is
-existentially important but very difficult for humans to achieve, for several reasons. The
-numbers and timescales involved are difficult for humans to grasp for a variety of
-reasons. Sustainability challenges are complex because they involved a variety of
+
+
+The remainder of this chapter summarizes key themes of the book. Sustainability is
+existentially important but very difficult to achieve, for several reasons. The
+numbers and timescales involved are difficult for humans to grasp. 
+Sustainability challenges are complex because they involved a variety of
 interrelated problems from different domain areas. The challenges associated with
-transitioning to a sustainable existence are complex and interconnected. It is the
-intention of this book to explore the challenges of sustainability. While we may, at
-times, point to directions for improved sustainability, it is beyond our scope (and indeed
-our ability) to provide solutions for all sustainability problems.
+transitioning to a sustainable existence are complex and interconnected. The focus
+of this book is on the challenges of sustainability. While we may, at
+times, point to directions for improved sustainability, it is beyond our scope 
+(and indeed our ability) to provide solutions for all sustainability problems.
 
 \section{What is sustainability?}
-Are humans living "sustainably?" If not, we will -- at some point -- either cease to exist
-as a species or (at least) experience drastic reductions in our standard of living. Thus,
-the question of sustainability is of utmost importance. There are many answers to this
-question. To the novice, many answers may seem to indicate lack of agreement. However,
+"Sustainably" is a critical concept. If humanity is not living sustainably we will 
+either cease to exist as a species or (at least) experience drastic reductions 
+in our standard of living.
+So how do we tell if we're living sustainably? What is sustainability?
+There are many definitions of sustainability. 
+To the novice, many answers may seem to indicate lack of agreement. However,
 sustainability is almost a self-defining concept. Different answers indicate different
 assumptions, different priorities, and different boundaries (that is, what is the system
 under consideration).
@@ -58,7 +71,7 @@ under consideration).
 When considering the meaning of sustainability, the two most important questions are
 "sustaining what?" and "for how long?" The second of these questions is perhaps easier to
 answer. While humans seem to have difficulty planning for time scales significantly longer
-than the human lifespan, true sustainability is achieved only if the answer is
+than the human lifespan, deep sustainability is achieved only if the answer is
 "indefinitely" or "forever."
 
 The narrowest answer for what needs sustaining is human life and society, which perforce
@@ -70,17 +83,20 @@ ecosystem are, in the long run, necessary for survival and which aren’t. For i
 would we be able to survive in a world without dandelions? Maybe. On the other hand,
 dandelions might be necessary for other organisms we depend on. Environmental science
 views the ecosystem in its entirety as a web, with all parts depending on all other parts.
-The ecosystem is viewed then, not as individual components with binary "needed" "not
-needed" classifications but as a whole that exists on a continuum from "fully functional"
+The ecosystem is viewed then, not as individual components with binary "needed"/"not
+needed" classifications, but as a whole that exists on a continuum from "fully functional"
 to "nonfunctional." The choices and paths to sustainability are bristling with value
-judgements and moral choices. How much risk do you think is appropriate? What do you value
-preserving? Different answers to these questions come from different a priori assumptions
+judgements and moral choices about what to value and how much. 
+Concomitant with such choices is a weighting of appropriate risks to the ecosystem and 
+human society. Different answers to these questions come from different {\i a priori} assumptions
 and values.
 
 The broadest definitions of sustainability include human-created devices and systems.
-Humanity could survive without the great pyramids of Giza, although we would have lost
-great cultural and historical artifacts. On the other hand, we may not survive if we don’t
-give up coal-fired power plants. Thus, the Three Pillars of sustainability are its
+Although they are great cultural and historical artifacts, humanity could survive without 
+the great pyramids of Giza. On the other hand, we may not survive if we don’t
+give up coal-fired power plants. 
+% Lead with this. Work it in earlier. Insert diagram.
+Thus, the Three Pillars of sustainability are its
 environmental, economic, and social aspects.
 
 Environmental sustainability considers biophysical and thermodynamic constraints and
@@ -88,9 +104,11 @@ includes issues such as pollution, resource depletion, habitat loss, and biodive
 Economic sustainability involves questions of profit and loss, wealth management, and
 macroeconomic policy. Social sustainability comprises human and civil rights, suffering,
 and personal freedom. This book will discuss issues associated with each of these three
-areas of sustainability but with a focus on energy and carbon emissions because it is not
-the only sustainability problem, just the one that needs to be solved most urgently.
+areas of sustainability but with a focus on energy and carbon emissions {\i not} because it is
+the only sustainability problem, but because climate change is currently the one most {\i urgent}
+sustainability problem.
 
+\subsection(Definitions of sustainability)
 The most oft-quoted definition of sustainability comes from the Brundtland report
 "Sustainable development is development that meets the needs of the present without
 compromising the ability of future generations to meet their own needs." Note that
@@ -110,7 +128,7 @@ recycle them, or render them harmless.
 
 The core idea is that [the rate of] human impact on the ecosystem can be no greater than
 the ecosystem can absorb, which introduces the idea of the capacity of the ecosystem to
-provide resources and “take care of” wastes. We will examine the idea of capacity in
+provide resources and “take care of” wastes. We will examine the concept of ecosystem capacities in
 greater detail in the next chapter.
 
 We need the three pillars and idea of metrics for all three...
