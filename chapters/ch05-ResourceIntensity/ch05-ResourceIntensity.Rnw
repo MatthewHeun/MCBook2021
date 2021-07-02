@@ -60,7 +60,7 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
   ) %>% 
   # Make the graph
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_TWh", fill = "primary_energy_type")) +
-  ggplot2::geom_area() + 
+  ggplot2::geom_area(colour = "black", size = 0.2) + 
   scale_fill_viridis(discrete = TRUE, direction = -1) +
 
   ggplot2::labs(x = NULL,
