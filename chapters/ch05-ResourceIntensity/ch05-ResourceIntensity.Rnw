@@ -28,17 +28,44 @@
 
 
 
-Figure~\ref{fig:CO2Graph} shows atmospheric CO$_2$ concentration over time.
+Figure~\ref{fig:PrimaryEnergyGraph} shows global primary energy consumption through time.
 
-<<PrimaryEnergyGraph, echo=FALSE, fig.cap="Global primary energy consumption.">>=
+<<PrimaryEnergyGraph, fig.cap="World annual primary energy consumption~\\cite{Roser:2021vi}. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels.">>=
 # Gather data for primary energy vs. time graph
 readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "global-primary-energy.xlsx"), sheet = "data to plot") %>% 
+  dplyr::rename(
+    `Other ren.` = Other_renewables_TWh, 
+    Biofuels = Biofuels_TWh,
+    Wind = Wind_TWh,
+    Solar = Solar_TWh, 
+    Nuclear = Nuclear_TWh,
+    Hydro = Hydropower_TWh,
+    `Nat. gas` = Gas_TWh, 
+    Oil = Oil_TWh, 
+    Coal = Coal_TWh, 
+    `Trad. bio.` = Traditional_biomass_TWh
+  ) %>% 
   tidyr::pivot_longer(cols = -Year, names_to = "primary_energy_type", values_to = "energy_TWh") %>% 
+  dplyr::mutate(
+    primary_energy_type = factor(primary_energy_type, levels = c("Other ren.", 
+                                                                 "Biofuels", 
+                                                                 "Wind", 
+                                                                 "Solar", 
+                                                                 "Nuclear",
+                                                                 "Hydro",
+                                                                 "Nat. gas", 
+                                                                 "Oil", 
+                                                                 "Coal", 
+                                                                 "Trad. bio."))
+  ) %>% 
   # Make the graph
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_TWh", fill = "primary_energy_type")) +
   ggplot2::geom_area() + 
-  # ggplot2::labs(x = "Year [thousand years BCE]", 
-  #               y = expression("Atmospheric "*CO[2]*" concentration [ppm]")) + 
+  scale_fill_viridis(discrete = TRUE, direction = -1) +
+
+  ggplot2::labs(x = NULL,
+                y = "World energy consumption [TW-hr/year]", 
+                fill = NULL) +
   MKHthemes::xy_theme()
 @
 
