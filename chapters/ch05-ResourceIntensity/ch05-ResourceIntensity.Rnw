@@ -37,18 +37,12 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Resource", y = "Multiple_of_sustainable", fill = "Resource")) +
   ggplot2::geom_bar(stat = "identity") +
   ggplot2::guides(fill = "none") +
-  # ggplot2::scale_y_continuous(limits = c(-1,NA)) +
+  ggplot2::scale_x_discrete(labels = c(Zinc = "Zinc", Germanium = "Germanium", CO2 = expression(CO[2]))) +
   viridis::scale_fill_viridis(discrete = TRUE) + 
-  
   ggplot2::labs(x = NULL,
                 y = "Proportion of sust. cons. or emission [%]") +
   
-  
   MKHthemes::xy_theme()
-
-
-
-
 @
 
 
