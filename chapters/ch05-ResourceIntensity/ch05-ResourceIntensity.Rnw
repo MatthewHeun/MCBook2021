@@ -27,7 +27,7 @@
 \end{figure}
 
 
-<<RatioOfSustainable, fig.cap="Multiples of sustainable extraction/emission rates for the U.S.">>=
+<<RatioOfSustainable, fig.cap="Proportion of sustainable extraction/emission rates for the U.S.~\\cite[Tables~2.1--2.3]{Graedel:2010ab}.">>=
 readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"), 
                    sheet = "data to plot") %>% 
   dplyr::mutate(
@@ -41,7 +41,7 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
   viridis::scale_fill_viridis(discrete = TRUE) + 
   
   ggplot2::labs(x = NULL,
-                y = "Multiple of sust. cons. or emission [%]") +
+                y = "Proportion of sust. cons. or emission [%]") +
   
   
   MKHthemes::xy_theme()
