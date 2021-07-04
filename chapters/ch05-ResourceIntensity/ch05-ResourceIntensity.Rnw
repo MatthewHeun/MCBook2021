@@ -27,7 +27,7 @@
 \end{figure}
 
 
-<<RatioOfSustainable, fig.cap="Proportion of sustainable extraction/emission rates for the U.S.~\\cite[Tables~2.1--2.3]{Graedel:2010ab}.">>=
+<<RatioOfSustainable, fig.cap="Proportion of sustainable extraction (Zinc, Germanium) or emission (CO$_2$) rates for the U.S.~\\cite[Tables~2.1--2.3]{Graedel:2010ab}.">>=
 readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"), 
                    sheet = "data to plot") %>% 
   dplyr::mutate(
