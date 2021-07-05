@@ -36,7 +36,7 @@ world_gdp %>%
 
 
 
-<<GDPPerCapitaGraph, fig.cap = "World GDP per capita.">>=
+<<GDPPerCapitaGraph, fig.cap = "World GDP per capita, affluence ($A$) in the Kaya identity.">>=
 
 gdp_pc <- dplyr::inner_join(
   # Get world GDP data

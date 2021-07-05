@@ -8,7 +8,7 @@
 
 
 
-<<PopulationGraph, fig.cap="World population~\\cite{Roser:2021uu}.">>=
+<<PopulationGraph, fig.cap="World population, $P$ in the Kaya identity~\\cite{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
@@ -19,16 +19,17 @@ region_pop <- population %>%
     Country %in% c("Asia", "Europe", "Latin America", "North America", "Australia", "Africa", "World")
   ) %>% 
   dplyr::mutate(
-    total_population_billions = total_population / 1e9
+    total_population_billions = total_population / 1e9, 
+    Country = dplyr::recode(Country, `Latin America` = "Latin Am.", `North America` = "North Am."), 
   )
 
 region_pop %>% 
   dplyr::filter(Country != "World", Year >= 1700) %>% 
   dplyr::mutate(
-    Country = factor(Country, levels = c("Australia", "North America", "Latin America", "Europe", "Africa", "Asia"))
+    Country = factor(Country, levels = c("Australia", "North Am.", "Latin Am.", "Europe", "Africa", "Asia"))
   ) %>% 
-  ggplot2::ggplot() + 
-  ggplot2::geom_area(mapping = ggplot2::aes_string(x = "Year", y = "total_population_billions", fill = "Country")) + 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "total_population_billions", fill = "Country")) + 
+  ggplot2::geom_area() + 
   ggplot2::scale_x_continuous(limits = c(1700, NA)) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) + 
   ggplot2::labs(x = NULL, 
