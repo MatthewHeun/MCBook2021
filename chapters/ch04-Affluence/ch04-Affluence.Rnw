@@ -21,13 +21,51 @@ world_gdp <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "dataset
   dplyr::mutate(
     GDP_trillion_2010_usd = GDP_2010_usd / 1e12
   )
+
 world_gdp %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "GDP_trillion_2010_usd", group = "Country")) +
   ggplot2::geom_line() +
   
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = NULL, 
-                y = "GDP [trillion 2010 USD]") +
+                y = "World GDP [2010 T$]") +
+  
+  MKHthemes::xy_theme()
+@
+
+
+
+
+<<GDPPerCapitaGraph, fig.cap = "World GDP per capita.">>=
+
+gdp_pc <- dplyr::inner_join(
+  # Get world GDP data
+  world_gdp %>% 
+    dplyr::mutate(
+      Country = dplyr::case_when(
+        Country == "World_GDP_2010_usd" ~ "World", 
+        TRUE ~ NA_character_
+      )
+    ),  
+  # Get world population data
+  region_pop %>% 
+    dplyr::filter(Country == "World") %>% 
+    dplyr::select(Country, Year, total_population), 
+  , 
+  # Tell which columns by which to inner-join to avoid a warning.
+  by = c("Country", "Year")
+) %>% 
+  # Finally, calculate GDP per capita
+  dplyr::mutate(
+    GDP_pc_thousand_usd = GDP_2010_usd / total_population / 1000
+  )
+
+gdp_pc %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "GDP_pc_thousand_usd")) + 
+  ggplot2::geom_line() + 
+  ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 10, by = 2))) +
+  ggplot2::labs(x = NULL, 
+                y = "World GDP [2010 k$/person]") +
   
   MKHthemes::xy_theme()
 @
