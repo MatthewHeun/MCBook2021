@@ -10,7 +10,8 @@
 
 
 <<GDPGraph, fig.cap="World GDP~\\cite{World-Bank:2021ww}.">>=
-# Gather data for primary energy vs. time graph
+# Gather data for GDP vs. time graph.
+# But store in a data frame that we can use later.
 world_gdp <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "API_NY.GDP.MKTP.KD_DS2_en_excel_v2_2593265.xls"),
                                 sheet = "data to plot") %>% 
   dplyr::mutate(

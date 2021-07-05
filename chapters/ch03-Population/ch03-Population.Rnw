@@ -8,6 +8,36 @@
 
 
 
+<<PopulationGraph, fig.cap="World population~\\cite{Roser:2021uu}.">>=
+# Gather data for Population vs. time graph.
+# But store in a data frame that we can use later.
+world_population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
+                                sheet = "data to plot")
+
+region_pop <- world_population %>% 
+  dplyr::filter(
+    Country %in% c("Asia", "Europe", "Latin America", "North America", "Australia", "Africa", "World"), 
+    Year >= 0
+  ) %>% 
+  dplyr::mutate(
+    total_population_billions = total_population / 1e9
+  )
+
+ggplot2::ggplot() + 
+  ggplot2::geom_area(data = region_pop %>% dplyr::filter(Country != "World"), 
+                     mapping = ggplot2::aes_string(x = "Year", y = "total_population_billions", fill = "Country")) + 
+  ggplot2::scale_x_continuous(limits = c(0, NA)) +
+  viridis::scale_fill_viridis(discrete = TRUE, direction = -1) + 
+  ggplot2::labs(x = NULL, 
+                y = "World population [billions]") +
+  
+  ggplot2::geom_line(data = region_pop %>% dplyr::filter(Country == "World"), 
+                     mapping = ggplot2::aes_string(x = "Year", y = "total_population_billions")) + 
+  
+  MKHthemes::xy_theme()
+@
+
+
 
 
 \cleardoublepage
