@@ -65,7 +65,7 @@ gdp_pc %>%
   ggplot2::geom_line() + 
   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 10, by = 2))) +
   ggplot2::labs(x = NULL, 
-                y = "World GDP [2010 k$/person]") +
+                y = "Affluence (A) [2010 k$/person-year]") +
   
   MKHthemes::xy_theme()
 @

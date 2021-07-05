@@ -33,7 +33,7 @@ region_pop %>%
   ggplot2::scale_x_continuous(limits = c(1700, NA)) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) + 
   ggplot2::labs(x = NULL, 
-                y = "World population [billions]", 
+                y = "World population (P) [billions]", 
                 fill = NULL) +
 
   MKHthemes::xy_theme()

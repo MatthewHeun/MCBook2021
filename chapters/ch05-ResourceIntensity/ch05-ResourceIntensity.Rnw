@@ -34,7 +34,7 @@ Figure~\ref{fig:PercentageOfSustainable} shows the percentage of sustainable lev
 for two chemical elements (Zinc and Germanium).
 
 
-<<PercentageOfSustainable, fig.width=3, fig.cap="Proportion of sustainable extraction (Zinc, Germanium) or emission (CO$_2$) rates for the U.S.~\\cite[Tables~2.1--2.3]{Graedel:2010ab}.">>=
+<<PercentageOfSustainable, fig.width=3.25, fig.cap="Proportion of sustainable extraction (Zinc, Germanium) or emission (CO$_2$) rates for the U.S.~\\cite[Tables~2.1--2.3]{Graedel:2010ab}.">>=
 readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"), 
                    sheet = "data to plot") %>% 
   dplyr::mutate(
@@ -47,7 +47,7 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
   ggplot2::scale_x_discrete(labels = c(Zinc = "Zn", Germanium = "Ge", CO2 = expression(CO[2]))) +
   viridis::scale_fill_viridis(discrete = TRUE) + 
   ggplot2::labs(x = NULL,
-                y = "Proportion of sust. cons. or emission [%]") +
+                y = "Proportion of sust. cons.\nor emission [%]") +
   
   MKHthemes::xy_theme()
 @
@@ -91,7 +91,6 @@ primary_energy %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_TWh", fill = "primary_energy_type")) +
   ggplot2::geom_area() + 
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
-
   ggplot2::labs(x = NULL,
                 y = "World energy consumption [TW-hr/year]", 
                 fill = NULL) +
@@ -102,7 +101,7 @@ primary_energy %>%
 
 Graph of energy intensity of the economy.
 
-<<EnergyIntensityGraph>>=
+<<EnergyIntensityGraph, fig.cap="Primary energy intensity of economic activity, $I_p$ in the Kaya identity.">>=
 # Create data for the energy intensity of the economy.
 dplyr::inner_join(
   # Get the primary energy data
@@ -119,11 +118,10 @@ dplyr::inner_join(
   ) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_GDP_MJ_per_dollar")) + 
   ggplot2::geom_line() + 
-  
+  ggplot2::scale_y_continuous(limits = c(0, 14), breaks = seq(0, 14, by = 2)) +
+  ggplot2::labs(x = NULL,
+                y = expression(atop("Primary energy intensity ("*I[p]*") [MJ/2010$]"))) +
   MKHthemes::xy_theme()
-
-
-
 @
 
 
