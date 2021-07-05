@@ -8,7 +8,8 @@
 
 
 
-
+Consider adding a table of the list of critical raw materials
+\url{https://ec.europa.eu/growth/sectors/raw-materials/specific-interest/critical_en}.
 
 
 \begin{figure}
@@ -96,6 +97,9 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
   MKHthemes::xy_theme()
 @
 
+
+
+Graph of energy intensity of the economy.
 
 
 
