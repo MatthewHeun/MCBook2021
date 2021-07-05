@@ -9,6 +9,28 @@
 
 
 
+<<GDPGraph, fig.cap="World GDP~\\cite{World-Bank:2021ww}.">>=
+# Gather data for primary energy vs. time graph
+world_gdp <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "API_NY.GDP.MKTP.KD_DS2_en_excel_v2_2593265.xls"),
+                                sheet = "data to plot") %>% 
+  dplyr::mutate(
+    Year = as.numeric(Year)
+  ) %>% 
+  tidyr::pivot_longer(cols = -Year, names_to = "Country", values_to = "GDP_2010_usd") %>% 
+  dplyr::mutate(
+    GDP_trillion_2010_usd = GDP_2010_usd / 1e12
+  )
+world_gdp %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "GDP_trillion_2010_usd", group = "Country")) +
+  ggplot2::geom_line() +
+  
+  ggplot2::scale_y_continuous(limits = c(0, NA)) +
+  ggplot2::labs(x = NULL, 
+                y = "GDP [trillion 2010 USD]") +
+  
+  MKHthemes::xy_theme()
+@
+
 
 \cleardoublepage
 
