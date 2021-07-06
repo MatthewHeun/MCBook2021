@@ -28,7 +28,7 @@ world_gdp %>%
   
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = NULL, 
-                y = "World GDP [2010 T$]") +
+                y = "World GDP [2010 T$/year]") +
   
   MKHthemes::xy_theme()
 @
@@ -36,8 +36,7 @@ world_gdp %>%
 
 
 
-<<GDPPerCapitaGraph, fig.cap = "World GDP per capita, affluence ($A$) in the Kaya identity.">>=
-
+<<AffluenceGraph, fig.cap = "World GDP per capita, affluence ($A$) in the Kaya identity.">>=
 gdp_pc <- dplyr::inner_join(
   # Get world GDP data
   world_gdp %>% 
