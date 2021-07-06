@@ -160,33 +160,33 @@ ggplot() %>%
 
 \section{Impacts and their sources}
 Two mathematical expressions, IPAT and Kaya have been used express human impact on the
-environment and its sources. IPAT expresses “impact” on the environment as the product of
-human population, affluence, and technology. The Kaya identity is a form of the IPAT
-equation but limits impact to CO$_2$ emissions. On the other hand, the Kaya identity
-expands the expression for generic “technology” to be the product of 
+environment and its sources. IPAT expresses “impact” (I) on the environment as the product of
+human population (P), affluence (A), and technology (T). The Kaya identity is a form of the IPAT
+equation but limits impact to CO$_2$ emissions. On the other hand, Kaya
+expands the generic expression for “technology” to be the product of 
 energy intensity of the economy and the carbon intensity of energy, that is the 
 amount of energy per unit GDP times CO$_2$ per unit energy.
 
-The first section of this book is organized around a combination of the IPAT and Kaya
-approach. We keep the more general “impact” of IPAT but also generalize the more insightful 
+Chapters 2-6 of this book are organized around a hybrid of the IPAT and Kaya
+approaches. We keep the more general “impact” of IPAT but also generalize the more insightful 
 ``technology'' expression from Kaya as the product of resource intensity of the economy 
 and a resource impact intensity.
 \begin{equation}\label{eq:IPARC}
 \textrm{Impact} = \textrm{Population} \times \textrm{Affluence} \times 
 \textrm{Resource intensity} \times \textrm{Contamination intensity}
 \end{equation}
-Impact is a vector quantity (that is, a list) including such things as global warming
+In the IPARC formulation, impact is a vector quantity (that is, a list) that includes such things as global warming
 potential, aquifer depletion, and eutrophication potential. Population is the (scalar)
-number of people in the world. Affluence is the world per capita GDP. Resource intensity
+number of people in the world. Affluence is GDP per capita. Resource intensity
 is the vector or list of resources necessary to produce one unit of world GDP. Lastly,
 impact intensity or contamination intensity is a matrix that lists the impacts of each
 type of resource.
 
-IPARC is true because it is an identity, and it will provide a useful organizing framework
+IPARC is true because it is an identity, and it provides a useful organizing framework
 for the following chapters. The terms are equilibrium values, that is they represent
-static, or steady-state levels, but do not give completely useful information about how
+static, or steady-state levels, but do show how
 changes in any one variable will affect the others. For instance, using resources more
-efficiently (improving resource intensity), does not lower impact. Instead, it leads to
+efficiently (improving resource intensity), does not, in general, lower impact. Instead, it leads to
 more affluence (see chapter 5). Likewise, it may not be possible to drive the impact(s)
 per unit of resource to zero because of diminishing returns on efficiency and tradeoffs
 that exist between different types of impacts.
@@ -198,29 +198,29 @@ numbers in the series is always one less than the next number in the series. $1+
 15$, which is one less than $16$. $1+2+4+8+16 = 31$, which is one less than $32$.
 
 Extending the doubling on discrete squares or in discrete time to continuous time is
-exponential growth. Things that grow exponentially double in a fixed amount of time. An
-example with a negative growth rate is radioactive decay, where the corresponding time is
-called the half-life because the amount of time for half of the radioactivity to decay
-away is constant. When growth rate is constant, the amount of time to double is
-approximately 70 divided by the growth rate. With a fixed 3\% growth rate, GDP doubles
-every 23 years. If your investment portfolio has a 7\% return, your assets will double
+exponential growth. Things that grow exponentially double in a fixed amount of time. 
+When growth rate is constant, the amount of time to double is
+approximately 70 divided by the growth rate. With a fixed 3\%/yr growth rate, GDP doubles
+every 23 years. If your investment portfolio has a 7\%/yr return, your assets will double
 every 10 years.
 
-In the discrete case, like the wheat and chessboard, the next square is always one more
-than the sum of all the previous squares. In the continuous case, the amount in the next
-period (B) is always 1.71 times the sum of all previous amounts (A). The result for
-sustainability is that the resources needed by the economy in the next 23 years – for
-instance, energy – will be more than the total resources (energy) used in all of history.
-Populations are modeled as having constant growth rates. We actively manage the economy
-have a constant growth rate (say a target of 3\% GDP growth per year). Because of
-(exponential) growth in population and affluence, humanity is not on a sustainable path.
+In the discrete case, like the wheat and chessboard, the number of grains on the 
+next square is always one more than the sum of all the previous squares. 
+In the continuous case, the amount in the next
+period (B) is always 1.71 times the sum of all previous amounts (A). 
+The result for sustainability is that the resources needed by the economy 
+in the next 23 years – for instance, energy – will be more than the total 
+resources (energy) used in all of history. World economies are actively managed to
+have a constant growth rates (say a target of 3\% GDP growth per year). Because of this
+exponential growth, resource use goes to infinity on a finite planet. 
+Humanity is not on a sustainable path.
 
 \section{CO2 and Energy}
 The approach above (IPARC) is general in that all kinds of impacts can be considered. In
 this book we will consider many types of impacts and many kinds of sustainability
 (environmental, economic, and social). However, our focus – in the chapters – is mostly on
 energy use and CO2 emissions. Reasons for an energy/CO2 focus include the availability of
-data and that we feel it is (currently) the most urgent sustainability problem.
+data and the fact that we believe climate change is (currently) the most urgent sustainability problem.
 End-of-chapter discussion questions tend to focus more on social aspects of sustainability
 and worldview issues.
 

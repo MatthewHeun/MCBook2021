@@ -10,7 +10,7 @@
 The previous chapter pointed out the problems with exponential growth.
 But why? Why is continued exponential growth impossible?
 The reason is that we live on a finite planet with finite resources and finite boundaries.
-This chapter explores those boundaries -- the "budget" if you will for human civilization.
+This chapter explores those boundaries -- the "budget," if you will, for human civilization.
 Exceeding humanity's budget will degrade the ability of the Earth to support life.
 
 
@@ -22,20 +22,26 @@ For example, humans plant crops (food, textile, and timber) that "grow," they're
 The ecosystem ``provides" the crops. 
 Likewise, the ecosystem provides water, petroleum, and other mineral resources.
 
-The second set of services is {\b regulating and supporting services}, which sustain, and stabilize the ecosystem, including 
-processes for breaking down and recycling dead organisms; the carbon cycle,  nitrogen, oxygen, and water cycles; and the
+The second set of services is {\b regulating and supporting services}, 
+which sustain and stabilize the ecosystem, including 
+processes for breaking down and recycling dead organisms; 
+the carbon cycle,  nitrogen, oxygen, and water cycles; and the
 fact that plant roots stabilize soil and prevent erosion.
 
 The third set of services is {\b cultural services}, which include recreation and literary and cultural inspiration.
+% these are real even if we don't know their values
 
-Various analogies have been used to describe the benefits that ecosystem services provide, particularly in terms of the loss of
-a piece of the ecosystem. For example, the ecyosystem is like an airplane. When one rivet is lost, the result is not immediately 
-catastrophic but accumulated losses can result in catastrophic failure. Alternatively, speicies are like individual stocks in a 
-portfolio: wide diversity of species minimizes risk or volatility of return.
+Various analogies have been used to describe the benefits that ecosystem services provide, 
+particularly in terms of the loss of a piece of the ecosystem. For example, the ecyosystem 
+is like an airplane. When one rivet is lost, the result is not immediately catastrophic
+but accumulated losses can result in catastrophic failure. Alternatively, speicies are 
+like individual stocks in a portfolio: wide diversity of species minimizes risk or volatility of return.
 
-The previous chapter also discussed "impacts," that is, negative effects on the environment that are (perhaps) the result of human activity. Broadly, there are two approaches for dealing with impacts. {\i Planetary boundaries} describe the maximum (desirable) 
-{\i level} of effects. The second method uses a weighted average of impacts, called an {\i index}, and the idea is to minimize the 
-level of the index.
+The previous chapter also discussed "impacts," that is, negative effects on the 
+environment that are (perhaps) the result of human activity. Broadly, there are 
+two approaches for dealing with impacts. {\i Planetary boundaries} describe the 
+maximum (desirable) {\i level} of effects. The second method uses a weighted 
+average of impacts, called an {\i index}, and the idea is to minimize the level of the index.
 
 
 %sources, sinks, and levels
@@ -63,7 +69,10 @@ Newer (and improved?) lists have been proposed.
 % precision and safety factors in the levels
 
 %Logistic curve(s)
-
+\begin{tabular}{@{}llccc@{}}\toprule
+Earth system & Variable & Preindustrial level & Current value & Boundary value & Exceeded \\ \midrule
+Climate change & Amospheric CO$_2$ concentration [ppm] & 280 & 412 $ 350 & yes \\ \bottomrule
+\end{tabular}
 
 \section{Indices for sustainability}
 There are many, many indices used to express or measure sustainability. They are (weighted) averages of quantities related to 
