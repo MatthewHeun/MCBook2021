@@ -133,6 +133,34 @@ greater detail in the next chapter.
 
 We need the three pillars and idea of metrics for all three...
 
+<<venn_diagram, fig.height=3, fig.width=4.5, fig.align='center', echo=FALSE, fig.cap="Three overlapping aspects of sustainability.", fig.scap="Aspects of sustainability.">>=
+# The draw.triple.venn function returns a gList object,
+# whose text we do not want to see in the output.
+# Thus, we assign the return value to a variable,
+# which has the effect of suppressing the text output from the function.
+# Note that cex = 0 sets the size of the area labels to 0, thereby suppressing the numbers.
+# draw.triple.venn(area1 = 20, area2 = 20, area3 = 13, n12 = 11, n23 = 4, n13 = 5,
+#                                     n123 = 1, category = c("Social", "Economic", "Environmental"), lty = "blank",
+#                                     fill = c("skyblue", "pink1", "mediumorchid"), cex = 0, cat.fontface = "Arial") %>%
+#   invisible()
+
+# Adds a circle to .plot at the specified location
+
+
+ggplot() %>%
+  # Add circles
+  add_circ(r = 1, xc = 0.66667, yc = 0) %>%  # Environmental
+  add_circ(r = 1, xc = -0.66667, yc = 0) %>% # Social
+  add_circ(r = 1, xc = 0, yc = 1.2) +        # Economic
+  # Add labels to the circles. Note that the Libre Caslon font is specified, thereby matching the book's font.
+  annotate(geom = "text", x = 1, y = -0.2, label = "Environmental", family = "Libre Caslon Text", size = 3.5) +
+  annotate(geom = "text", x = -1, y = -0.2, label = "Social", family = "Libre Caslon Text", size = 3.5) +
+  annotate(geom = "text", x = 0, y = 1.4, label = "Economic", family = "Libre Caslon Text", size = 3.5) +
+  # Eliminate all axes and labels besides the ones we added ourselves.
+  theme_void()
+@
+
+
 \section{Impacts and their sources}
 Two mathematical expressions, IPAT and Kaya have been used express human impact on the
 environment and its sources. IPAT expresses “impact” on the environment as the product of
