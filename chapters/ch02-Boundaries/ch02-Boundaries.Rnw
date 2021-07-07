@@ -68,22 +68,22 @@ Newer (and improved?) lists have been proposed.
 % how do we know what the levels are?
 % precision and safety factors in the levels
 
-%Logistic curve(s)
-\begin{tabular}{@{}llcccc@{}}\toprule
-Earth system & Variable & Preindustrial level & Current value & Boundary value & Exceeded \\ \midrule
-Climate change & Amospheric CO$_2$ concentration [ppm] & 280 & 412 & 350 & yes \\ \midrule
-Biodiversity loss & Extinction rate [\%] & 0.1 to 1 & \>100 & 10 & yes \\ \midrule
-Biogeochemical & anthropogenic nitrogen removed from the atmosphere & 0 & 121 & 35 & yes\\ \midrule
-Biogeochemical & anthropogenic phosphorous added to the ocean & -1 & 9 & 11 & no \\ \midrule
-Ocean acidification & Calcium carbonate in ocean surface seawater & 3.44 & 2.9 & 2.75 & no \\ \midrule
-Land use & Land surface converted to crop land [\%] & low & 11.7 & 15 & no \\ \midrule 
-Freshwater & Global consumption of water [km$^4$/yr] & 415 & 2600 & 4000 & no \\ \midrule
-Ozone depletion & Statospheric ozone completion [Dobson] & 290 & 283 & 276 & no 
-\bottomrule \end{tabular}
+% %Logistic curve(s)
+% \begin{tabular}{@{}llcccc@{}}\toprule
+% Earth system & Variable & Preindustrial level & Current value & Boundary value & Exceeded \\ \midrule
+% Climate change & Amospheric CO$_2$ concentration [ppm] & 280 & 412 & 350 & yes \\ \midrule
+% Biodiversity loss & Extinction rate [\%] & 0.1 to 1 & \>100 & 10 & yes \\ \midrule
+% Biogeochemical & anthropogenic nitrogen removed from the atmosphere & 0 & 121 & 35 & yes\\ \midrule
+% Biogeochemical & anthropogenic phosphorous added to the ocean & -1 & 9 & 11 & no \\ \midrule
+% Ocean acidification & Calcium carbonate in ocean surface seawater & 3.44 & 2.9 & 2.75 & no \\ \midrule
+% Land use & Land surface converted to crop land [\%] & low & 11.7 & 15 & no \\ \midrule 
+% Freshwater & Global consumption of water [km$^4$/yr] & 415 & 2600 & 4000 & no \\ \midrule
+% Ozone depletion & Statospheric ozone completion [Dobson] & 290 & 283 & 276 & no 
+% \bottomrule \end{tabular}
 
 \section{Indices for sustainability}
-There are many, many indices used to express or measure sustainability. They are (weighted) averages of quantities related to 
-one or more of the three pillars. 
+There are many, many indices used to express or measure sustainability. They are (weighted) averages of quantities related to
+one or more of the three pillars.
 \subsection{Indices for environmental impact}
 \subsection{Indices for the economy}
 \subsection{Indices for social change}
@@ -92,18 +92,18 @@ Figure~\ref{fig:CO2Graph} shows atmospheric CO$_2$ concentration over time.
 
 <<CO2Graph, fig.cap="Atmospheric CO$_2$ concentration over time. Vertical line shows the year 2020.">>=
 # Gather data for CO2 vs. time graph
-readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>% 
+readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>%
   dplyr::mutate(
     Year = - Year / 1000
-  ) %>% 
+  ) %>%
   # Make the graph
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "Atmospheric_CO2_concentration_ppm")) +
   ggplot2::geom_vline(xintercept = -2020/1000, size = 0.2) +
-  ggplot2::geom_line(size = 1) + 
+  ggplot2::geom_line(size = 1) +
   # Because we're plotting years BCE
   ggplot2::scale_x_reverse() +
-  ggplot2::labs(x = "Year [thousand years BCE]", 
-                y = expression("Atmospheric "*CO[2]*" concentration [ppm]")) + 
+  ggplot2::labs(x = "Year [thousand years BCE]",
+                y = expression("Atmospheric "*CO[2]*" concentration [ppm]")) +
   MKHthemes::xy_theme()
 @
 
