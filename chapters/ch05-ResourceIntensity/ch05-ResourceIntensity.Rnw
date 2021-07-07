@@ -84,15 +84,16 @@ primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensi
                                                                  "Nat. gas", 
                                                                  "Oil", 
                                                                  "Coal", 
-                                                                 "Trad. bio."))
+                                                                 "Trad. bio.")), 
+    energy_EJ = energy_TWh * 0.0036
   )
   # Make the graph
 primary_energy %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_TWh", fill = "primary_energy_type")) +
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_EJ", fill = "primary_energy_type")) +
   ggplot2::geom_area() + 
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::labs(x = NULL,
-                y = "World energy consumption [TW-hr/year]", 
+                y = "World energy consumption [EJ/year]", 
                 fill = NULL) +
   MKHthemes::xy_theme()
 @
