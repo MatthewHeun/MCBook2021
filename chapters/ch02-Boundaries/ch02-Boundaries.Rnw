@@ -38,23 +38,53 @@ but accumulated losses can result in catastrophic failure. Alternatively, specie
 like individual stocks in a portfolio: wide diversity of species minimizes risk or volatility of return.
 
 % sources and sinks!!!!!!!!!!!!
+%sources, sinks, and levels
+%land, air, water
 
-\section{A tipping point}
+\section{Tipping points}
 Early versions of this text included a chapter on systems theory because the Earth's processes 
 are complex. While systems theory is interesting and useful, few insights from 
 systems theory are {\i required} to understand sustainability issues. One insight 
 that {\i is} required is the concept of a tipping point. The name comes from a boat's 
-stability, see Figure~\ref{fig:buoyancy}. 
+stability, see Figure~\ref{fig:buoyancy}. If the boat is tipped a small amount,
+the weight of the boat and the effect of buoyancy act to right the boat. However,
+there is an angle where, if the boat is tipped past that angle, the forces will 
+act in the opposite way -- to suddenly and catastrophically flip the boat.
+A tipping point is where the behavior of a system changes.
 
-The previous chapter also discussed "impacts," that is, negative effects on the 
-environment that are (perhaps) the result of human activity. Broadly, there are 
-two approaches for dealing with impacts. {\i Planetary boundaries} describe the 
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/buoyancy}
+\caption{Boat stability. The static forces acting on a boat are the weight
+of the boat (G) and the buoyancy force (B). When the boat is heeled over a small
+amount (left), the moment created by these two forces acts to right the boat. 
+Adding weight to the top of the boat raises its center of mass, making it more unstable.
+There is an angle beyond which the moments created by the two forces no longer 
+act to right the boat but to flip it (right) suddenly and catastrophically. 
+The angle beyond which the boat flips is called the tipping point.}
+\label{fig:buoyancy}
+\end{figure}
+
+There are two types of ecological concern with respect to ecosystem services.
+The first is with respect to provisioning services. Humans may ``use up'' a finite
+resource such as helium, petroleum, or neodymium. Or, perhaps, the demand for food
+will exceed the rate at which the ecosystem can supply food. 
+
+The second type of concern is that human actions will cause a change or breakdown
+in the regulating and support ecosystem services, which will lead to a tipping
+point, that is, a change in the way the ecosystem works. An example that is of
+particular concern right now is global climate change (principally) caused by
+human \CO2 emissions. Extinction rate is another (see the point above about rivets
+in the airplane).
+
+The previous chapter framed sustainability in terms of "impacts," that is, 
+negative effects on the environment that are (perhaps) the result of human activity. 
+Broadly, there are two approaches for dealing with impacts. {\i Planetary boundaries} describe the 
 maximum (desirable) {\i level} of effects. The second method uses a weighted 
 average of impacts, called an {\i index}, and the idea is to minimize the level of the index.
 
 
-%sources, sinks, and levels
-%land, air, water
+
 
 \section{Planetary boundaries}
 Climate scienctists have proposed %\cite here Rockstrom 2009 = one of the first 4 in the wikipedia article.
