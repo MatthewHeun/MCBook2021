@@ -69,7 +69,7 @@ Newer (and improved?) lists have been proposed.
 % precision and safety factors in the levels
 
 %Logistic curve(s)
-\begin{tabular}{@{}llccc@{}}\toprule
+\begin{tabular}{@{}llcccc@{}}\toprule
 Earth system & Variable & Preindustrial level & Current value & Boundary value & Exceeded \\ \midrule
 Climate change & Amospheric CO$_2$ concentration [ppm] & 280 & 412 & 350 & yes \\ \midrule
 Biodiversity loss & Extinction rate [\%] & 0.1 to 1 & \>100 & 10 & yes \\ \midrule
