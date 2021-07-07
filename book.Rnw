@@ -100,6 +100,7 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 \makeatletter
 \g@addto@macro{\UrlBreaks}{\UrlOrds}
 \renewcommand{\ALG@name}{\color{black}Algorithm}
+%\newcommand{\CO2}{CO$_2$}
 \makeatother
 
 
