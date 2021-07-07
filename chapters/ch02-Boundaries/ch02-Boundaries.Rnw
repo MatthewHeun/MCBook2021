@@ -32,10 +32,19 @@ The third set of services is {\b cultural services}, which include recreation an
 % these are real even if we don't know their values
 
 Various analogies have been used to describe the benefits that ecosystem services provide, 
-particularly in terms of the loss of a piece of the ecosystem. For example, the ecyosystem 
+particularly in terms of the loss of a piece of the ecosystem. For example, the ecosystem 
 is like an airplane. When one rivet is lost, the result is not immediately catastrophic
-but accumulated losses can result in catastrophic failure. Alternatively, speicies are 
+but accumulated losses can result in catastrophic failure. Alternatively, species are 
 like individual stocks in a portfolio: wide diversity of species minimizes risk or volatility of return.
+
+% sources and sinks!!!!!!!!!!!!
+
+\section{A tipping point}
+Early versions of this text included a chapter on systems theory because the Earth's processes 
+are complex. While systems theory is interesting and useful, few insights from 
+systems theory are {\i required} to understand sustainability issues. One insight 
+that {\i is} required is the concept of a tipping point. The name comes from a boat's 
+stability, see Figure~\ref{fig:buoyancy}. 
 
 The previous chapter also discussed "impacts," that is, negative effects on the 
 environment that are (perhaps) the result of human activity. Broadly, there are 
