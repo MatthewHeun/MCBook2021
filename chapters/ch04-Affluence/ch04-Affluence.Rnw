@@ -24,7 +24,7 @@ world_gdp <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "dataset
 
 world_gdp %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "GDP_trillion_2010_usd", group = "Country")) +
-  ggplot2::geom_line() +
+  ggplot2::geom_line(size = 1) +
   
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = NULL, 
@@ -61,7 +61,7 @@ gdp_pc <- dplyr::inner_join(
 
 gdp_pc %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "GDP_pc_thousand_usd")) + 
-  ggplot2::geom_line() + 
+  ggplot2::geom_line(size = 1) + 
   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 10, by = 2))) +
   ggplot2::labs(x = NULL, 
                 y = "Affluence (A) [2010 k$/person-year]") +

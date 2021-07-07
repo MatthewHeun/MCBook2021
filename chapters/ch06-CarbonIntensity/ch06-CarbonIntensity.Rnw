@@ -16,7 +16,7 @@ CO2_emissions %>%
     CO2_emissions_Gt = CO2_emissions_tonnes / 1e9
   ) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_emissions_Gt")) + 
-  ggplot2::geom_line() + 
+  ggplot2::geom_line(size = 1) + 
   ggplot2::labs(x = NULL,
                 y = expression("World "*CO[2]*" emissions [Gt/year]")) +
   
@@ -38,7 +38,7 @@ dplyr::inner_join(
     CO2_intensity_Mt_per_EJ = CO2_emissions_tonnes / 1e6 / energy_EJ, 
   ) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_intensity_Mt_per_EJ")) + 
-  ggplot2::geom_line() +
+  ggplot2::geom_line(size = 1) +
   ggplot2::labs(x = NULL,
                 y = expression("Carbon intensity of energy (c) [Mt/EJ]")) +
   
