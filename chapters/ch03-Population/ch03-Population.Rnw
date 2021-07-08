@@ -24,13 +24,12 @@ region_pop <- population %>%
   )
 
 region_pop %>% 
-  dplyr::filter(Country != "World", Year >= 1700) %>% 
+  dplyr::filter(Country != "World", Year >= 1800) %>% 
   dplyr::mutate(
     Country = factor(Country, levels = c("Australia", "North Am.", "Latin Am.", "Europe", "Africa", "Asia"))
   ) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "total_population_billions", fill = "Country")) + 
   ggplot2::geom_area() + 
-  ggplot2::scale_x_continuous(limits = c(1700, NA)) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) + 
   ggplot2::labs(x = NULL, 
                 y = "World population (P) [billions]", 

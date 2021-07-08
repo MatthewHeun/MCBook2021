@@ -111,17 +111,17 @@ dplyr::inner_join(
     dplyr::summarise(energy_TWh = sum(energy_TWh)), 
   # Get the GDP data
   world_gdp %>% 
-    dplyr::select(Year, GDP_2010_usd), 
+    dplyr::select(Year, world_gdp_2017_intl_dollars), 
   by = "Year"
 ) %>% 
   dplyr::mutate(
-    energy_per_GDP_MJ_per_dollar = energy_TWh * 3600000000 / GDP_2010_usd
+    energy_per_GDP_MJ_per_dollar = energy_TWh * 3600000000 / world_gdp_2017_intl_dollars  # 3600000000 MJ / TWh
   ) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_GDP_MJ_per_dollar")) + 
   ggplot2::geom_line(size = 1) + 
-  ggplot2::scale_y_continuous(limits = c(0, 14), breaks = seq(0, 14, by = 2)) +
+  ggplot2::scale_y_continuous(limits = c(0, 8), breaks = seq(0, 14, by = 2)) +
   ggplot2::labs(x = NULL,
-                y = expression(atop("Primary energy intensity ("*I[p]*") [MJ/2010$]"))) +
+                y = expression(atop("Primary energy intensity ("*I[p]*") [MJ/2017 Intl. $]"))) +
   MKHthemes::xy_theme()
 @
 
