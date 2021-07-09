@@ -220,30 +220,20 @@ dplyr::inner_join(
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Questions}\index{questions}
+\section*{Questions and Projects}\index{questions,projects}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{problems}
 
 \item Is the Graedel and Allenby sustainability criterion a good criterion?
-      
-\end{problems}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Projects}\index{projects}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{problems}
 
 \item Choose a material from the European Commission list of critial raw materials.
-      Evaluate whether current consumption rates meet the ``weak sustainablity'' criterion of Graedel and Allenby.
-      Evaluate whether current consumption rates meet a ``strong sustainablity'' criterion.
+      Evaluate whether current consumption rates meet the sustainablity criterion of Graedel and Allenby.
+      Evaluate whether current consumption rates meet the strong sustainablity criterion.
       Provide suggestions for ways to bring consumption rates closer to strong sustainability.
-      
-\end{problems}
 
+\end{problems}
 
 
 \cleardoublepage
