@@ -12,6 +12,7 @@ CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity"
                    sheet = "data to plot")
 
 CO2_emissions %>% 
+  dplyr::filter(Year >= 1800) %>% 
   dplyr::mutate(
     CO2_emissions_Gt = CO2_emissions_tonnes / 1e9
   ) %>% 
