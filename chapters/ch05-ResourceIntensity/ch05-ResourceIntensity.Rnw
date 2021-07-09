@@ -287,10 +287,10 @@ dplyr::inner_join(
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Questions and Projects}\index{questions,projects}
+\section*{Questions and Projects}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Questions:
+Questions:\index{questions}
 
 \begin{problems}
 
@@ -300,7 +300,7 @@ Questions:
 \end{problems}
 
 
-\noindent Projects:
+\noindent Projects:\index{projects}
 
 \begin{problems}
 
