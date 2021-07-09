@@ -10,7 +10,7 @@
 
 
 Whether we are aware of it or not, 
-all life on Earth depends on natural resources for survival.
+all plant, animal, and human life on Earth depends on natural resources for survival.
 Where would you be without air and water to breathe and drink?
 Without minerals to make cars?
 Without timber to build homes?
@@ -18,10 +18,19 @@ Without healthy soil to grow food?
 Without oceans and atmosphere to accept wastes?
 Without coal, oil, and methane to make electricity, gasoline, and natural gas?
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Strong sustainability}
+\label{sec:resources_strong_sustainability}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 A significant sustainability challenge 
 is extracting and consuming natural resources 
+at a sustainable rate.
+A criterion for ``strong sustainability'' is 
+extracting and consuming resources 
 at a rate less than their natural regeneration rates.
-**** Strong sustainability ****
+
 Resources can be classified as ``renewable'' or ``non-renewable,''
 based on their regeneration rates.
 Resources, such as the Sun,
@@ -87,13 +96,28 @@ shows the same data on a per-capita basis.
 Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use} 
 show that resource consumption is growing at an ever-increasing rate.
 But is that rate sustainable?
-Graedel and Allenby~\cite[p.~17]{Graedel:2010ab} develop a criterion for determining 
-sustainable resource extraction or waste emission rates.
-Their approach could be classified as ``weak sustainability'' and assumes that human ingenuity 
-can overcome resource supply limitations, given enough time to react (say, 50 years).
+By any ``strong sustainability'' criterion, extraction of
+Construction minerals, Ores and industrial minerals, and Fossil energy carriers
+is unsustainable. 
+Extraction of Biomass can be sustainable if 
+the extraction rate is less than the regeneration rate.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Weak sustainability}
+\label{sec:resources_weak_sustainability}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Graedel and Allenby~\cite[p.~17]{Graedel:2010ab} develop a
+weak sustainability criterion for 
+resource extraction or waste emission rates.
+Their approach assumes that human ingenuity 
+(either by switching to other materials or by substituting human capital for natural resources)
+can overcome resource supply limitations, 
+given enough time to react (say, 50 years).
 So any rate of consumption of raw materials that preserves supply for 50 years
 is deemed ``sustainable.''
-Their method involves the following four steps:
+The Graedel and Allenby method involves four steps:
 %
 \begin{enumerate}
 
@@ -117,14 +141,11 @@ Figure~\ref{fig:PercentageOfSustainable} shows the result of applying
 the Graedel and Allenby method 
 to two chemical elements (Zinc and Germanium) and
 to worldwide emission of CO$_2$.
-This method shows that that the world today is far 
-from sustainable levels of consumption.
+This method shows that that the world today is far above 
+(weak) sustainable levels of consumption and waste emission.
 To further underscore the importance of consumption of natural resources to sustainability,
-Germanium (now being consumed at twice its sustainable rate).
-
-
-
-
+Germanium (now being consumed at twice its sustainable rate)
+is one of the critical raw materiasl in Table~\ref{tab:CRMs}.
 
 <<PercentageOfSustainable, fig.width=3.25, fig.cap="Proportion of sustainable extraction (Zinc, Germanium) or emission (CO$_2$) rates for the U.S.~\\cite[Tables~2.1--2.3]{Graedel:2010ab}.">>=
 readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"), 
@@ -145,7 +166,33 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
 @
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Energy as the prime example}
+\label{sec:energy_as_prime_example}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+It has been argued that energy is the ultimate resource~\cite{library1971energy}
+for two important reasons.
+First, energy is required 
+for extraction of natural resources (including energy itself!),
+for any material transformation, 
+for consuming goods and services, and 
+for disposing of goods.
+Second, energy is fungible.
+Within the limits of the second law of thermodyanmics, 
+energy in one form can be converted to energy in another form
+using machines.
+An automobile converts chemical potential energy (gasoline)
+to kinetic energy (car motion).
+A hairdryer converts electricity (from the grid)
+to heat (applied to hair).
+A solar panel converts solar energy (from the sun)
+to electricity (for use in many devices, including, possibly hair dryers).
+
+Because energy is the ultimate resource, 
+we use energy as the prime example in the modified Kaya identity.
+The question at hand is:
+are we using energy at a sustainable rate?
 
 Figure~\ref{fig:PrimaryEnergyGraph} shows global primary energy consumption through time.
 
@@ -190,6 +237,25 @@ primary_energy %>%
   MKHthemes::xy_theme()
 @
 
+By the strong sustainability criterion of consuming resources at a rate 
+beneath their regeneration rate, 
+none of the fossil fuels shown in Figure~\ref{fig:PrimaryEnergyGraph}
+are being consumed at a sustainable rate.
+Table~\ref{tab:} shows that 
+even byy the weak sustainability criterion of Graedel and Allenby,
+none of the fossil fuels are being consumed at a sustainable rate.
+
+****
+Gather estimates of coal, oil, natural gas reserves. 
+Make weak sustainability calculations.
+****
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Energy intensity of the economy}
+\label{sec:energy_intensity_of_the_economy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 Graph of energy intensity of the economy.
@@ -224,10 +290,19 @@ dplyr::inner_join(
 \section*{Questions and Projects}\index{questions,projects}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Questions:
 
 \begin{problems}
 
 \item Is the Graedel and Allenby sustainability criterion a good criterion?
+
+
+\end{problems}
+
+
+\noindent Projects:
+
+\begin{problems}[label=\textbf{REG/\arabic*},leftmargin=*]
 
 \item Choose a material from the European Commission list of critial raw materials.
       Evaluate whether current consumption rates meet the sustainablity criterion of Graedel and Allenby.
