@@ -45,6 +45,19 @@ food and the refrigerators that maintain freshness,
 toilets and the sewer systems that remove wastes.
 Furthermore, the operation of all these systems requires energy.
 
+Although any raw material can be essential for a given product,
+the European Commission maintains a list Critical Raw Materials (CRMs)
+with special importance across a wide range of industries.
+See Table~\ref{tab:CRMs} for critical materials and industries.
+
+\begin{table}
+\centering
+\caption{Critical materials and the economic sectors in which 
+         they are used~\cite[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.}
+\includegraphics[width=\figwidth]{chapters/ch05-ResourceIntensity/figures/CRMs.png}
+\label{tab:CRMs}
+\end{table}
+
 The rate at which the world's economy has been extracting resources
 to create products, create infrastructure, and deal with wastes
 has been accelerating in recent decades.
@@ -55,34 +68,61 @@ Figure~\ref{fig:total_material_use} shows the accelerating
 rate of extraction of materials from the Earth.
 Figure~\ref{fig:per_capita_material_use}
 shows the same data on a per-capita basis.
-These figures show that resource consumption is growing at an ever-increasing rate.
-But is that rate sustainable?
 
 \begin{figure}
 \centering
-\includegraphics[width=\figwidth]{chapters/ch05-ResourceIntensity/figures/MaterialUseTotalKrausmann2009}
+\includegraphics[width=0.7\linewidth]{chapters/ch05-ResourceIntensity/figures/MaterialUseTotalKrausmann2009}
 \caption{Total world material use~\cite[Figure~1a]{Krausmann:2009wc}.}
 \label{fig:total_material_use}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=\figwidth]{chapters/ch05-ResourceIntensity/figures/MaterialUsePerCapitaKrausmann2009}
+\includegraphics[width=0.7\linewidth]{chapters/ch05-ResourceIntensity/figures/MaterialUsePerCapitaKrausmann2009}
 \caption{World per capita material use~\cite[Figure~1c]{Krausmann:2009wc}.}
 \label{fig:per_capita_material_use}
 \end{figure}
 
+Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use} 
+show that resource consumption is growing at an ever-increasing rate.
+But is that rate sustainable?
+Graedel and Allenby~\cite[p.~17]{Graedel:2010ab} develop a criterion for determining 
+sustainable resource extraction or waste emission rates.
+Their approach could be classified as ``weak sustainability'' and assumes that human ingenuity 
+can overcome resource supply limitations, given enough time to react (say, 50 years).
+So any rate of consumption of raw materials that preserves supply for 50 years
+is deemed ``sustainable.''
+Their method involves the following four steps:
+%
+\begin{enumerate}
+
+  \item Establish the virgin material supply limit, assumed to be
+        the amount of resource that can be used per year if the resource is to last 50 years.
+
+  \item Allocate the virgin material supply, 
+        often assuming equal per-capita consumption over 50 years.
+        
+  \item Establish the ``re-capturable'' resource base, often via recycling or mining
+        stockpiles and landfills, and allocate to per-capita consumptino over 50 years. 
+        The sum of the per-capita virgin material supply rate and the 
+        allocated re-capturable resource rate gives the sustainable consumption rate.
+        
+  \item Compare the current consumption rate and the sustainable consumption rate to assess sustainability
+        of current patterns of resource consumption.
+
+\end{enumerate}
+
+Figure~\ref{fig:PercentageOfSustainable} shows the result of applying 
+the Graedel and Allenby method 
+to two chemical elements (Zinc and Germanium) and
+to worldwide emission of CO$_2$.
+This method shows that that the world today is far 
+from sustainable levels of consumption.
+To further underscore the importance of consumption of natural resources to sustainability,
+Germanium (now being consumed at twice its sustainable rate).
 
 
 
-
-Consider adding a table of the list of critical raw materials
-\url{https://ec.europa.eu/growth/sectors/raw-materials/specific-interest/critical_en}.
-
-
-
-Figure~\ref{fig:PercentageOfSustainable} shows the percentage of sustainable levels of consumption
-for two chemical elements (Zinc and Germanium).
 
 
 <<PercentageOfSustainable, fig.width=3.25, fig.cap="Proportion of sustainable extraction (Zinc, Germanium) or emission (CO$_2$) rates for the U.S.~\\cite[Tables~2.1--2.3]{Graedel:2010ab}.">>=
