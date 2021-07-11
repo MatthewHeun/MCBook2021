@@ -196,7 +196,7 @@ are we using energy at a sustainable rate?
 
 Figure~\ref{fig:PrimaryEnergyGraph} shows global primary energy consumption through time.
 
-<<PrimaryEnergyGraph, fig.cap="World annual primary energy consumption~\\cite{Roser:2021vi}. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels.">>=
+<<PrimaryEnergyGraph, fig.cap="World annual primary energy consumption~\\cite{Roser:2021vi}. ``Other ren.'' is other renewables, ``Nat. gas'' is natural gas, and ``Trad. bio.'' is traditional biofuels.">>=
 # Gather data for primary energy vs. time graph
 primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "global-primary-energy.xlsx"),
                                      sheet = "data to plot") %>% 
