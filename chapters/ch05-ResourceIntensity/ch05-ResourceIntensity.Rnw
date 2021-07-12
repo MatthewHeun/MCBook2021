@@ -196,7 +196,7 @@ are we using energy at a sustainable rate?
 
 Figure~\ref{fig:PrimaryEnergyGraph} shows global primary energy consumption through time.
 
-<<PrimaryEnergyGraph, fig.cap="World annual primary energy consumption~\\cite{Roser:2021vi}. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels.">>=
+<<PrimaryEnergyGraph, fig.cap="World annual primary energy consumption~\\cite{Roser:2021vi}. ``Other ren.'' is other renewables, ``Nat. gas'' is natural gas, and ``Trad. bio.'' is traditional biofuels.">>=
 # Gather data for primary energy vs. time graph
 primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "global-primary-energy.xlsx"),
                                      sheet = "data to plot") %>% 
@@ -242,7 +242,7 @@ beneath their regeneration rate,
 none of the fossil fuels shown in Figure~\ref{fig:PrimaryEnergyGraph}
 are being consumed at a sustainable rate.
 Table~\ref{tab:} shows that 
-even byy the weak sustainability criterion of Graedel and Allenby,
+even by the weak sustainability criterion of Graedel and Allenby,
 none of the fossil fuels are being consumed at a sustainable rate.
 
 ****
@@ -256,9 +256,14 @@ Make weak sustainability calculations.
 \label{sec:energy_intensity_of_the_economy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
-Graph of energy intensity of the economy.
+Continuing the explication of the Kaya identity, 
+we form a term for the primary energy intensity of the world economy ($I_p$).
+The energy intensity of the economy is formed
+by dividing primary energy consumption ($E_p$) 
+by world GDP,
+i.e.\ dividing Figure~\ref{fig:PrimaryEnergyGraph} 
+by Figure~\ref{fig:GDPGraph}.
+The result is Figure~\ref{fig:EnergyIntensityGraph}.
 
 <<EnergyIntensityGraph, fig.cap="Primary energy intensity of economic activity, $I_p$ in the Kaya identity.">>=
 # Create data for the energy intensity of the economy.
@@ -279,11 +284,21 @@ dplyr::inner_join(
   ggplot2::geom_line(size = 1) + 
   ggplot2::scale_y_continuous(limits = c(0, 8), breaks = seq(0, 14, by = 2)) +
   ggplot2::labs(x = NULL,
-                y = expression(atop("Primary energy intensity ("*I[p]*") [MJ/2017 Intl. $]"))) +
+                y = expression(atop("Prim. energy intensity ("*I[p]*") [MJ/2017 Intl. $]"))) +
   MKHthemes::xy_theme()
 @
 
-
+According to Equation~\ref{eq:IPARC}, 
+as the energy intensity of the economy falls, 
+CO$_2$ emissions will fall.
+Figure~\ref{fig:EnergyIntensityGraph} shows that
+the primary energy intensity of the world economy has varied 
+between 4 and 8 MJ/2017 international dollar across the last two centuries. 
+Since 1970, energy intensity has been falling 
+as the world economy modernizes, 
+meaning that the world economy's GDP (Figure~\ref{fig:GDPGraph}) 
+has been growing faster than primary energy consumption 
+(Figure~\ref{fig:PrimaryEnergyGraph}).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
