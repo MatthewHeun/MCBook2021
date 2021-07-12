@@ -5,7 +5,40 @@
 
 \chapter{Population}
 \label{chap:population}
+Equation \ref{eq:IPARC} expresses human impact on the Earth as the product
+of population, affluence, resource intensity of the economy, and the impact intensity 
+of resources. Chapter~\ref{chap:planetary_boundaries} discussed how the Earth's 
+ecosystems provision human needs and how the impact of human activities can degrade,
+even catastrophically destroy, the ability of the Earth to provide. This chapter 
+will examine human population dynamics and the impact of human activities on animal populations.
 
+%some stories about animal populations: passenger pigeons, bison, whales, aurochs, locusts,
+% North American megafauna, North Atlantic cod shoals....
+Currently, humans (36\%) and domestic livestock (60\%) constitute 96\% of the mass of
+mammals on the planet \cite{ref:Baillie2018} -- only 4\% are wild animals 
+such as whales, bison, deer, and bears. 
+% MacKinnon cites the National Academy of Sciences 2018.
+Wild vertebrate populations are less than half what they were in 1970. %MacKinnon says 60% average loss.
+Populations of insects are down 80\% in the last 30-40 years.
+%citation(s) needed?
+Habitat destruction plays an important role in the decline of animal populations, 
+such as in the case of the Rocky Mountain locust, which in 1875 had a swarm of 
+12.5 trillion individuals, weighing 27.5 millions tons, and covering an area larger
+the state of California, but was extinct by 1902. 
+Chapter~\{chap:land_use_urban_planning} will discuss the extent of human alteration of land.
+Over consumption by humans is another cause of population decline; 
+examples here include most ocean fish, 
+% cite United Nations Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services
+%summary report says 1 million animal and plant species are threatened with extinction.
+%"In 2015, 33\% of marine fish stocks were being harvested at unsustainable levels; 60\% were maximally sustainably 
+%fished, with just 7\% harvested at levels lower than what can be sustainably fished."
+whales, bison, aurochs, and most North American megafauna.
+A third cause of the decline in animal populations is human-induced climate change,
+for example as with many Artic species such as polar bear and walrus.
+Lastly, human contamination of the environment, either unintentionally or intentionally,
+is a cause for the decline of many species, for example widespread use of insecticides
+in agriculture is thought to be a strong factor for the decline in many insect populations,
+with bees being a particularly alarming example. 
 
 
 <<PopulationGraph, fig.cap="World population, $P$ in the Kaya identity~\\cite{Roser:2021uu}.">>=
