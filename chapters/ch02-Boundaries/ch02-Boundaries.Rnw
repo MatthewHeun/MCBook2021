@@ -111,27 +111,28 @@ both due to high population and our level of technology.
 For example, nuclear and industrial "accidents," such as the Thule air base crash,
 the Palomares crash, the Seveso dioxin release, and, more recently, the Chernobyl
 and Fukishima diasters, have each contaminated many square kilometers.
-While the risk is, perhaps, less acute than it once was, a 
+Finally, while the risk is, perhaps, less acute than it once was, a 
 global thermonuclear war would be a humanitarian and environmental disaster on a 
 truly global scale.
 
 The previous chapter framed sustainability in terms of "impacts," that is, 
-negative effects on the environment that are (perhaps) the result of human activity. 
-
+negative effects on the environment resulting from human activity. 
 Broadly, there are two approaches for managing or responding to impacts. 
 {\i Planetary boundaries} describe the maximum (desirable) {\i level} of effects. 
-The second method uses a weighted average of impacts, called an {\i index}, 
-and the idea is to minimize the level of the index.
+The second method uses a weighted average, called an {\i index}, of impacts, perhaps
+with some other factors. The idea use the index as a proxy management tool, that is, 
+to describe desirable behavior.
 
 % comparison with radiation. humans need some (for vitamin D). more is long-term bad. 
 % Even more is short-term bad. What should the limit be?
 
 
 \section{Planetary boundaries}
-Climate scientists have proposed %\cite here Rockstrom 2009 = one of the first 4 in the wikipedia article.
+Climate scientists have proposed (e.g., \cite{Rocstrom2009})
 eight indicators, which, if exceeded, could render Earth uninhabitable by humans, 
 perhaps catastrophically so in that the resulting changes may be nonlinear and abrupt. 
-The boundaries are intended to define a "safe operating space for humanity."
+The boundary values set for these indicators are intended to define a 
+"safe operating space for humanity."
 % \begin{enumerate} %present as a table instead?!
 % \item Climate change
 % \item Biodiversity loss
@@ -195,16 +196,32 @@ Instead, national governments set limits on a chemical-by-chemical basis.
 Agencies such as the US Environmental Protection Agency and the European Commission
 (or member states) handle enforcement of the regulations.
 
+Using planetary boundaries for decision making is like having rules for when to change
+the engine oil in an automobile (at least in those automobiles that use engine oil).
+Companies that provide oil-change service recommend frequent oil changes, perhaps as 
+often as every 3000 miles. Automobile manufactures have increased this limit over
+decades with better engine and component technology; every 5000-7000 miles might be the 
+recommendation. Newer cars might calculate their own replacement based on environmental
+conditions and driving history (essentially using an index, see below). However, {\i no 
+one} would recommend not replacing the oil for 100,000 miles. If the oil is not replaced
+significant damage will be done to the engine, likely disabling the car's ability to drive.
+In this analogy, the car's engine represents planet Earth. The number of miles before
+an oil change is the the planetary boundary. Maybe the boundary has a little bit of slack.
+Replacing the oil at 5000 miles or 5007 miles won't make a functional difference. However,
+drastically exceeding the limit will result in significant, costly, and potentially 
+irreparable damage to the engine.
+
+
 \section{Indices for sustainability}
 There are many, many indices used to express or measure sustainability. 
-They are (weighted) averages of quantities related to
+They are all, essentially, (weighted) averages of quantities related to
 one or more of the three pillars.
 % \subsection{Indices for environmental impact}
 % \subsection{Indices for the economy}
 % \subsection{Indices for social change}
 Example indices include carbon footprint, ecological footprint (in global hectares
 per person), and the human development index (HDI). Figure~\ref{fig:ecofootprintHDI}
-plots ecological footprint and HDI for many different countries.
+plots ecological footprint and HDI for many different countries. 
 
 \begin{figure}
 \centering
@@ -213,7 +230,23 @@ plots ecological footprint and HDI for many different countries.
 \label{fig:ecofootprintHDI}
 \end{figure}
 
+In contrast to planetary boundaries, which are a hard biophysical limit, indices 
+typically represent aggregated behavior. Aggregation allows grouping together of 
+things that are different, for example in the HDI, life expectancy at birth, 
+expected years of schooling, and gross national income, or, in the case of 
+CO$_2$ equivalents, the global warming potential of carbon dioxide, methane, nitrous
+oxide, and various fluorinated gases.
 
+Indices and biophysical limits, such as planetary boundaries, exist to guide 
+decision making. 
+% HDI: would you rather spend money on education or healthcare? education spending
+% will get you *some* life expectancy... 
+The weightings inherent in indices express preferences for (perhaps) inherent 
+tradeoffs among the different variables. Furthermore, having expressed an intent
+or preference for a certain limit, index, or behavior, these variables do not
+inherently generate strategies for achieving the goals or enforcement mechanisms 
+for maintaining behavior. It remains for scientists, policy makers, and government
+officials to conduct research, make recommendations, regulate, and enforce laws.
 
 \cleardoublepage
 
