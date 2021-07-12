@@ -265,7 +265,7 @@ i.e.\ dividing Figure~\ref{fig:PrimaryEnergyGraph}
 by Figure~\ref{fig:GDPGraph}.
 The result is Figure~\ref{fig:EnergyIntensityGraph}.
 
-<<EnergyIntensityGraph, fig.cap="Primary energy intensity of economic activity, $I_p$ in the Kaya identity.">>=
+<<EnergyIntensityGraph, fig.cap="Primary energy intensity of economic activity, $I_p$ in the Kaya identity. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:GDPGraph}.">>=
 # Create data for the energy intensity of the economy.
 dplyr::inner_join(
   # Get the primary energy data
