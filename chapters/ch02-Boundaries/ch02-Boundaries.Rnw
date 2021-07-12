@@ -179,6 +179,7 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
   # Make the graph
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "Atmospheric_CO2_concentration_ppm")) +
   ggplot2::geom_vline(xintercept = -2020/1000, size = 0.2) +
+  ggplot2::geom_hline(xintercept = 350, size = 0.2) +
   ggplot2::geom_line(size = 1) +
   # Because we're plotting years BCE
   ggplot2::scale_x_reverse() +
