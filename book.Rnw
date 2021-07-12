@@ -36,6 +36,7 @@
 % 
 
 \newcommand{\degC}{\degree C}
+\newcommand{\figwidth}{0.95\linewidth}
 
 % 
 % Begin R and knitr setup
@@ -46,8 +47,19 @@
 # to be the top level directory for the repository.
 knitr::opts_knit$set(root.dir = getwd())
 
+# Set default sizes for figures throughout the book.
+# We can always override with options on each individual chunk.
+knitr::opts_chunk$set(echo=FALSE, 
+                      fig.width = 6,    # inches
+                      fig.height = 3.5, # inches
+                      fig.align = "center", 
+                      fig.pos = "t")
+
 library(ggplot2)     # For graphing functions
-library(magrittr)    # For pipe operator, (>%)
+library(magrittr)    # For pipe operator, (%>%)
+library(readxl)      # To read Excel files
+library(MKHthemes)   # For default ggplot2 theme
+library(viridis)     # For a great color palette for graphs
 @
 
 <<r_functions, echo=FALSE>>=
@@ -88,6 +100,7 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 \makeatletter
 \g@addto@macro{\UrlBreaks}{\UrlOrds}
 \renewcommand{\ALG@name}{\color{black}Algorithm}
+%\newcommand{\CO2}{CO$_2$}
 \makeatother
 
 
@@ -106,7 +119,7 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
     \Sexpr{knit_child("chapters/ch02-Boundaries/ch02-Boundaries.Rnw")}                     % \ref{chap:planetary_boundaries}
     \Sexpr{knit_child("chapters/ch03-Population/ch03-Population.Rnw")}                     % \ref{chap:population}
     \Sexpr{knit_child("chapters/ch04-Affluence/ch04-Affluence.Rnw")}                       % \ref{chap:affluence}
-    \Sexpr{knit_child("chapters/ch05-EnergyIntensity/ch05-EnergyIntensity.Rnw")}           % \ref{chap:energy_intensity}
+    \Sexpr{knit_child("chapters/ch05-ResourceIntensity/ch05-ResourceIntensity.Rnw")}       % \ref{chap:resource_intensity}
     \Sexpr{knit_child("chapters/ch06-CarbonIntensity/ch06-CarbonIntensity.Rnw")}           % \ref{chap:chap:carbon_intensity}
     \Sexpr{knit_child("chapters/ch07-Households/ch07-Households.Rnw")}                     % \ref{chap:households}
     \Sexpr{knit_child("chapters/ch08-Transportation/ch08-Transportation.Rnw")}             % \ref{chap:transportation}

@@ -3,6 +3,7 @@
 .RData
 .Ruserdata
 book-concordance.tex
+book.bbl
 book.ilg
 book.log
 book.pdf
@@ -10,3 +11,8 @@ book.synctex.gz
 book.tex
 book.toc
 figure
+book.aux
+book.blg
+book.out
+.DS_Store
+~$*.xlsx

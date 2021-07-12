@@ -1,0 +1,331 @@
+% The next command tells RStudio to do "Compile PDF" on book.Rnw,
+% instead of this chapter, thereby eliminating the need to switch back to book.Rnw 
+% before making the book.
+%!TEX root = ../../book.Rnw
+
+%#############################################################
+\chapter{Resource intensity of the economy}
+\label{chap:resource_intensity}
+%#############################################################
+
+
+Whether we are aware of it or not, 
+all plant, animal, and human life on Earth depends on natural resources for survival.
+Where would you be without air and water to breathe and drink?
+Without minerals to make cars?
+Without timber to build homes?
+Without healthy soil to grow food?
+Without oceans and atmosphere to accept wastes?
+Without coal, oil, and methane to make electricity, gasoline, and natural gas?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Strong sustainability}
+\label{sec:resources_strong_sustainability}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+A significant sustainability challenge 
+is extracting and consuming natural resources 
+at a sustainable rate.
+A criterion for ``strong sustainability'' is 
+extracting and consuming resources 
+at a rate less than their natural regeneration rates.
+
+Resources can be classified as ``renewable'' or ``non-renewable,''
+based on their regeneration rates.
+Resources, such as the Sun,
+that are expected to exist for millennia 
+are classified as renewable.
+Other resources, such as forests and other biomass,
+that regenerate quickly (on the order of decades)
+are also classified as renewable.
+Resources, such as fossil fuels,
+that regenerate slowly or not at all (such as fossil fuels)
+are classified as non-renewable.
+
+The economy, being society's metabolism,
+is one aspect of life that also depends on natural resources
+for its survival.
+Indeed, we can say that the economy \emph{runs} on natural resources.
+All goods and the infrastructure for all services depend
+on manufactured objects of all types:
+cars and the roads on which they travel, 
+homes and the utilities that sustain life,
+food and the refrigerators that maintain freshness,
+toilets and the sewer systems that remove wastes.
+Furthermore, the operation of all these systems requires energy.
+
+Although any raw material can be essential for a given product,
+the European Commission maintains a list Critical Raw Materials (CRMs)
+with special importance across a wide range of industries.
+See Table~\ref{tab:CRMs} for critical materials and industries.
+
+\begin{table}
+\centering
+\caption{Critical materials and the economic sectors in which 
+         they are used~\cite[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.}
+\includegraphics[width=\figwidth]{chapters/ch05-ResourceIntensity/figures/CRMs.png}
+\label{tab:CRMs}
+\end{table}
+
+The rate at which the world's economy has been extracting resources
+to create products, create infrastructure, and deal with wastes
+has been accelerating in recent decades.
+In fact, when the economy grows, the demand for goods and services grows.
+When the demand for goods and services grows, 
+the demand for natural resources grows, too.
+Figure~\ref{fig:total_material_use} shows the accelerating
+rate of extraction of materials from the Earth.
+Figure~\ref{fig:per_capita_material_use}
+shows the same data on a per-capita basis.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{chapters/ch05-ResourceIntensity/figures/MaterialUseTotalKrausmann2009}
+\caption{Total world material use~\cite[Figure~1a]{Krausmann:2009wc}.}
+\label{fig:total_material_use}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{chapters/ch05-ResourceIntensity/figures/MaterialUsePerCapitaKrausmann2009}
+\caption{World per capita material use~\cite[Figure~1c]{Krausmann:2009wc}.}
+\label{fig:per_capita_material_use}
+\end{figure}
+
+Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use} 
+show that resource consumption is growing at an ever-increasing rate.
+But is that rate sustainable?
+By any ``strong sustainability'' criterion, extraction of
+Construction minerals, Ores and industrial minerals, and Fossil energy carriers
+is unsustainable. 
+Extraction of Biomass can be sustainable if 
+the extraction rate is less than the regeneration rate.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Weak sustainability}
+\label{sec:resources_weak_sustainability}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Graedel and Allenby~\cite[p.~17]{Graedel:2010ab} develop a
+weak sustainability criterion for 
+resource extraction or waste emission rates.
+Their approach assumes that human ingenuity 
+(either by switching to other materials or by substituting human capital for natural resources)
+can overcome resource supply limitations, 
+given enough time to react (say, 50 years).
+So any rate of consumption of raw materials that preserves supply for 50 years
+is deemed ``sustainable.''
+The Graedel and Allenby method involves four steps:
+%
+\begin{enumerate}
+
+  \item Establish the virgin material supply limit, assumed to be
+        the amount of resource that can be used per year if the resource is to last 50 years.
+
+  \item Allocate the virgin material supply, 
+        often assuming equal per-capita consumption over 50 years.
+        
+  \item Establish the ``re-capturable'' resource base, often via recycling or mining
+        stockpiles and landfills, and allocate to per-capita consumptino over 50 years. 
+        The sum of the per-capita virgin material supply rate and the 
+        allocated re-capturable resource rate gives the sustainable consumption rate.
+        
+  \item Compare the current consumption rate and the sustainable consumption rate to assess sustainability
+        of current patterns of resource consumption.
+
+\end{enumerate}
+
+Figure~\ref{fig:PercentageOfSustainable} shows the result of applying 
+the Graedel and Allenby method 
+to two chemical elements (Zinc and Germanium) and
+to worldwide emission of CO$_2$.
+This method shows that that the world today is far above 
+(weak) sustainable levels of consumption and waste emission.
+To further underscore the importance of consumption of natural resources to sustainability,
+Germanium (now being consumed at twice its sustainable rate)
+is one of the critical raw materiasl in Table~\ref{tab:CRMs}.
+
+<<PercentageOfSustainable, fig.width=3.25, fig.cap="Proportion of sustainable extraction (Zinc, Germanium) or emission (CO$_2$) rates for the U.S.~\\cite[Tables~2.1--2.3]{Graedel:2010ab}.">>=
+readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"), 
+                   sheet = "data to plot") %>% 
+  dplyr::mutate(
+    Resource = factor(Resource, levels = c("Zinc", "Germanium", "CO2")), 
+    Multiple_of_sustainable = Multiple_of_sustainable * 100
+  ) %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Resource", y = "Multiple_of_sustainable", fill = "Resource")) +
+  ggplot2::geom_bar(stat = "identity") +
+  ggplot2::guides(fill = "none") +
+  ggplot2::scale_x_discrete(labels = c(Zinc = "Zn", Germanium = "Ge", CO2 = expression(CO[2]))) +
+  viridis::scale_fill_viridis(discrete = TRUE) + 
+  ggplot2::labs(x = NULL,
+                y = "Proportion of sust. cons.\nor emission [%]") +
+  
+  MKHthemes::xy_theme()
+@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Energy as the prime example}
+\label{sec:energy_as_prime_example}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+It has been argued that energy is the ultimate resource~\cite{library1971energy}
+for two important reasons.
+First, energy is required 
+for extraction of natural resources (including energy itself!),
+for any material transformation, 
+for consuming goods and services, and 
+for disposing of goods.
+Second, energy is fungible.
+Within the limits of the second law of thermodyanmics, 
+energy in one form can be converted to energy in another form
+using machines.
+An automobile converts chemical potential energy (gasoline)
+to kinetic energy (car motion).
+A hairdryer converts electricity (from the grid)
+to heat (applied to hair).
+A solar panel converts solar energy (from the sun)
+to electricity (for use in many devices, including, possibly hair dryers).
+
+Because energy is the ultimate resource, 
+we use energy as the prime example in the modified Kaya identity.
+The question at hand is:
+are we using energy at a sustainable rate?
+
+Figure~\ref{fig:PrimaryEnergyGraph} shows global primary energy consumption through time.
+
+<<PrimaryEnergyGraph, fig.cap="World annual primary energy consumption~\\cite{Roser:2021vi}. ``Other ren.'' is other renewables, ``Nat. gas'' is natural gas, and ``Trad. bio.'' is traditional biofuels.">>=
+# Gather data for primary energy vs. time graph
+primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "global-primary-energy.xlsx"),
+                                     sheet = "data to plot") %>% 
+  dplyr::rename(
+    `Other ren.` = Other_renewables_TWh, 
+    Biofuels = Biofuels_TWh,
+    Wind = Wind_TWh,
+    Solar = Solar_TWh, 
+    Nuclear = Nuclear_TWh,
+    Hydro = Hydropower_TWh,
+    `Nat. gas` = Gas_TWh, 
+    Oil = Oil_TWh, 
+    Coal = Coal_TWh, 
+    `Trad. bio.` = Traditional_biomass_TWh
+  ) %>% 
+  tidyr::pivot_longer(cols = -Year, names_to = "primary_energy_type", values_to = "energy_TWh") %>% 
+  dplyr::mutate(
+    primary_energy_type = factor(primary_energy_type, levels = c("Other ren.", 
+                                                                 "Biofuels", 
+                                                                 "Wind", 
+                                                                 "Solar", 
+                                                                 "Nuclear",
+                                                                 "Hydro",
+                                                                 "Nat. gas", 
+                                                                 "Oil", 
+                                                                 "Coal", 
+                                                                 "Trad. bio.")), 
+    energy_EJ = energy_TWh * 0.0036
+  )
+  # Make the graph
+primary_energy %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_EJ", fill = "primary_energy_type")) +
+  ggplot2::geom_area() + 
+  viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
+  ggplot2::labs(x = NULL,
+                y = "World energy consumption [EJ/year]", 
+                fill = NULL) +
+  MKHthemes::xy_theme()
+@
+
+By the strong sustainability criterion of consuming resources at a rate 
+beneath their regeneration rate, 
+none of the fossil fuels shown in Figure~\ref{fig:PrimaryEnergyGraph}
+are being consumed at a sustainable rate.
+Table~\ref{tab:} shows that 
+even by the weak sustainability criterion of Graedel and Allenby,
+none of the fossil fuels are being consumed at a sustainable rate.
+
+****
+Gather estimates of coal, oil, natural gas reserves. 
+Make weak sustainability calculations.
+****
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Energy intensity of the economy}
+\label{sec:energy_intensity_of_the_economy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Continuing the explication of the Kaya identity, 
+we form a term for the primary energy intensity of the world economy ($I_p$).
+The energy intensity of the economy is formed
+by dividing primary energy consumption ($E_p$) 
+by world GDP,
+i.e.\ dividing Figure~\ref{fig:PrimaryEnergyGraph} 
+by Figure~\ref{fig:GDPGraph}.
+The result is Figure~\ref{fig:EnergyIntensityGraph}.
+
+<<EnergyIntensityGraph, fig.cap="Primary energy intensity of economic activity, $I_p$ in the Kaya identity.">>=
+# Create data for the energy intensity of the economy.
+dplyr::inner_join(
+  # Get the primary energy data
+  primary_energy %>% 
+    dplyr::group_by(Year) %>% 
+    dplyr::summarise(energy_TWh = sum(energy_TWh)), 
+  # Get the GDP data
+  world_gdp %>% 
+    dplyr::select(Year, world_gdp_2017_intl_dollars), 
+  by = "Year"
+) %>% 
+  dplyr::mutate(
+    energy_per_GDP_MJ_per_dollar = energy_TWh * 3600000000 / world_gdp_2017_intl_dollars  # 3600000000 MJ / TWh
+  ) %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_GDP_MJ_per_dollar")) + 
+  ggplot2::geom_line(size = 1) + 
+  ggplot2::scale_y_continuous(limits = c(0, 8), breaks = seq(0, 14, by = 2)) +
+  ggplot2::labs(x = NULL,
+                y = expression(atop("Prim. energy intensity ("*I[p]*") [MJ/2017 Intl. $]"))) +
+  MKHthemes::xy_theme()
+@
+
+According to Equation~\ref{eq:IPARC}, 
+as the energy intensity of the economy falls, 
+CO$_2$ emissions will fall.
+Figure~\ref{fig:EnergyIntensityGraph} shows that
+the primary energy intensity of the world economy has varied 
+between 4 and 8 MJ/2017 international dollar across the last two centuries. 
+Since 1970, energy intensity has been falling 
+as the world economy modernizes, 
+meaning that the world economy's GDP (Figure~\ref{fig:GDPGraph}) 
+has been growing faster than primary energy consumption 
+(Figure~\ref{fig:PrimaryEnergyGraph}).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Questions and Projects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Questions:\index{questions}
+
+\begin{problems}
+
+\item Is the Graedel and Allenby sustainability criterion a good criterion?
+
+
+\end{problems}
+
+
+\noindent Projects:\index{projects}
+
+\begin{problems}
+
+\item Choose a material from the European Commission list of critial raw materials.
+      Evaluate whether current consumption rates meet the sustainablity criterion of Graedel and Allenby.
+      Evaluate whether current consumption rates meet the strong sustainablity criterion.
+      Provide suggestions for ways to bring consumption rates closer to strong sustainability.
+
+\end{problems}
+
+
+\cleardoublepage
+

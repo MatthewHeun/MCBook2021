@@ -11,46 +11,60 @@ poor farmer. If he lost, the king would have to pay the farmer a chessboard’s 
 grain, defined as one kernel of grain on the first square, two grains on the second
 square, four grains on the fourth square, and so on, with each subsequent square receiving
 double what was on the previous square. The king accepted the wager but, because this is
-fable, lost the game. A chessboard has eight rows and eight columns, so the king had to
-pay 264 (less one) grains of rice. Since it takes seven thousand grains of rice to make a
-pound (~65 mg each), the king owed her 1.195 exograms (one exogram is 1015 kg), which is
+fable, lost the game. % according to chess.com a match is a series of games.
+A chessboard has eight rows and eight columns, so the king had to
+pay $2^64$ (less one) grains of rice. Since a pound is seven thousand grains of rice 
+(~65 mg each), the king owed her $1.195 \times 10^15$ kg of rice, which is
 about 12\% of the weight of everything ever produced by the human species [1]. At
 US\$6.85/bushel, the grain would be worth about 300 trillion dollars, which is (roughly)
 ten times more money than exists in the world.
 %Clean up. Maybe kg/person in the world and $/person. 
 
 This story, which goes back at least until the 1200s, illustrates several aspects of the
-sustainability problem that have been evident for centuries. Exponential growth is not
-sustainable. Big numbers are hard to grok. % Cognitive biases Decartes’ chiliagon
-Numerical cognition Subitizing Dunbar number 50-year time frame.
-It’s not OK to take giant risks.
+sustainability problem that have been evident for centuries: Exponential growth is 
+% a) hard to understand and b) is 
+not sustainable; big numbers are hard to grok; % Cognitive biases Decartes’ chiliagon
+% Numerical cognition Subitizing Dunbar number 50-year time frame.
+and making large wagers on limited understanding is unwise.
+A central thesis of this book is that sustainability is a challenging problem
+because of complexity and we'll spend a lot of time looking at the interconnections
+between different aspects of sustainability challenges.
 
-The purpose of this book is to summarize the evidence that humans are not living
-sustainably and to show the characteristics of sustainable societies. The choices and
-paths to sustainability are bristling with value judgements and moral choices. This book
-attempts to provide a coherent framework for discussing sustainability that is grounded in
-a sense of scale. Each chapter is short, with focused discussion questions at the end of
-each chapter. The questions, which mostly focus on tradeoffs, do not have “right answers,”
-instead, different answers are indicative of different preferences. Basic data and key
-concepts start each chapter. This book is not comprehensive; the intent is to equip
+\section{Purpose, focus, and organization}
+This book will summarize ways that humans are not living sustainably and will suggest % outline?
+characteristics of sustainable societies. 
+Basic data and key concepts start each chapter.
+The text is deliberately short because the book is not intended to be comprehensive.
+The focus is on equipping students to discuss moral and ethical issues around sustainability.
+Because the choices and paths to sustainability are bristling with value judgements and moral choices,
+the end-of-chapter discussion questions mostly point to tradeoffs and do not have “right answers.”
+Instead, different answers are indicative of different preferences. 
+This book attempts to provide a coherent framework for discussing sustainability 
+that is grounded in a sense of scale. Therefore, we prioritize presenting 
+information graphically. The intent is to equip
 readers with basic knowledge (informed by scale) so we can grapple with tough moral
-questions. We intend the book to be easy to read but hard to digest.
+questions. 
+\emph{This book should be easy to read but hard to digest.}
 
-The remainder of this chapter will summarize key themes of the book. Sustainability is
-existentially important but very difficult for humans to achieve, for several reasons. The
-numbers and timescales involved are difficult for humans to grasp for a variety of
-reasons. Sustainability challenges are complex because they involved a variety of
+
+
+The remainder of this chapter summarizes key themes of the book. Sustainability is
+existentially important but very difficult to achieve, for several reasons. The
+numbers and timescales involved are difficult for humans to grasp. 
+Sustainability challenges are complex because they involved a variety of
 interrelated problems from different domain areas. The challenges associated with
-transitioning to a sustainable existence are complex and interconnected. It is the
-intention of this book to explore the challenges of sustainability. While we may, at
-times, point to directions for improved sustainability, it is beyond our scope (and indeed
-our ability) to provide solutions for all sustainability problems.
+transitioning to a sustainable existence are complex and interconnected. The focus
+of this book is on the challenges of sustainability. While we may, at
+times, point to directions for improved sustainability, it is beyond our scope 
+(and indeed our ability) to provide solutions for all sustainability problems.
 
 \section{What is sustainability?}
-Are humans living "sustainably?" If not, we will -- at some point -- either cease to exist
-as a species or (at least) experience drastic reductions in our standard of living. Thus,
-the question of sustainability is of utmost importance. There are many answers to this
-question. To the novice, many answers may seem to indicate lack of agreement. However,
+"Sustainably" is a critical concept. If humanity is not living sustainably we will 
+either cease to exist as a species or (at least) experience drastic reductions 
+in our standard of living.
+So how do we tell if we're living sustainably? What is sustainability?
+There are many definitions of sustainability. 
+To the novice, many answers may seem to indicate lack of agreement. However,
 sustainability is almost a self-defining concept. Different answers indicate different
 assumptions, different priorities, and different boundaries (that is, what is the system
 under consideration).
@@ -58,7 +72,7 @@ under consideration).
 When considering the meaning of sustainability, the two most important questions are
 "sustaining what?" and "for how long?" The second of these questions is perhaps easier to
 answer. While humans seem to have difficulty planning for time scales significantly longer
-than the human lifespan, true sustainability is achieved only if the answer is
+than the human lifespan, deep sustainability is achieved only if the answer is
 "indefinitely" or "forever."
 
 The narrowest answer for what needs sustaining is human life and society, which perforce
@@ -70,17 +84,20 @@ ecosystem are, in the long run, necessary for survival and which aren’t. For i
 would we be able to survive in a world without dandelions? Maybe. On the other hand,
 dandelions might be necessary for other organisms we depend on. Environmental science
 views the ecosystem in its entirety as a web, with all parts depending on all other parts.
-The ecosystem is viewed then, not as individual components with binary "needed" "not
-needed" classifications but as a whole that exists on a continuum from "fully functional"
+The ecosystem is viewed then, not as individual components with binary "needed"/"not
+needed" classifications, but as a whole that exists on a continuum from "fully functional"
 to "nonfunctional." The choices and paths to sustainability are bristling with value
-judgements and moral choices. How much risk do you think is appropriate? What do you value
-preserving? Different answers to these questions come from different a priori assumptions
+judgements and moral choices about what to value and how much. 
+Concomitant with such choices is a weighting of appropriate risks to the ecosystem and 
+human society. Different answers to these questions come from different {\i a priori} assumptions
 and values.
 
 The broadest definitions of sustainability include human-created devices and systems.
-Humanity could survive without the great pyramids of Giza, although we would have lost
-great cultural and historical artifacts. On the other hand, we may not survive if we don’t
-give up coal-fired power plants. Thus, the Three Pillars of sustainability are its
+Although they are great cultural and historical artifacts, humanity could survive without 
+the great pyramids of Giza. On the other hand, we may not survive if we don’t
+give up coal-fired power plants. 
+% Lead with this. Work it in earlier. Insert diagram.
+Thus, the Three Pillars of sustainability are its
 environmental, economic, and social aspects.
 
 Environmental sustainability considers biophysical and thermodynamic constraints and
@@ -88,9 +105,11 @@ includes issues such as pollution, resource depletion, habitat loss, and biodive
 Economic sustainability involves questions of profit and loss, wealth management, and
 macroeconomic policy. Social sustainability comprises human and civil rights, suffering,
 and personal freedom. This book will discuss issues associated with each of these three
-areas of sustainability but with a focus on energy and carbon emissions because it is not
-the only sustainability problem, just the one that needs to be solved most urgently.
+areas of sustainability but with a focus on energy and carbon emissions {\i not} because it is
+the only sustainability problem, but because climate change is currently the one most {\i urgent}
+sustainability problem.
 
+\subsection(Definitions of sustainability)
 The most oft-quoted definition of sustainability comes from the Brundtland report
 "Sustainable development is development that meets the needs of the present without
 compromising the ability of future generations to meet their own needs." Note that
@@ -110,37 +129,65 @@ recycle them, or render them harmless.
 
 The core idea is that [the rate of] human impact on the ecosystem can be no greater than
 the ecosystem can absorb, which introduces the idea of the capacity of the ecosystem to
-provide resources and “take care of” wastes. We will examine the idea of capacity in
+provide resources and “take care of” wastes. We will examine the concept of ecosystem capacities in
 greater detail in the next chapter.
 
 We need the three pillars and idea of metrics for all three...
 
+<<venn_diagram, fig.height=3, fig.width=4.5, fig.align='center', echo=FALSE, fig.cap="Three overlapping aspects of sustainability.", fig.scap="Aspects of sustainability.">>=
+# The draw.triple.venn function returns a gList object,
+# whose text we do not want to see in the output.
+# Thus, we assign the return value to a variable,
+# which has the effect of suppressing the text output from the function.
+# Note that cex = 0 sets the size of the area labels to 0, thereby suppressing the numbers.
+# draw.triple.venn(area1 = 20, area2 = 20, area3 = 13, n12 = 11, n23 = 4, n13 = 5,
+#                                     n123 = 1, category = c("Social", "Economic", "Environmental"), lty = "blank",
+#                                 fill = c("skyblue", "pink1", "mediumorchid"), cex = 0, cat.fontface = "Arial") %>%
+#   invisible()
+# Adds a circle to .plot at the specified location
+ggplot() %>%
+  # Add circles
+  add_circ(r = 1, xc = 0.66667, yc = 0) %>%  # Environmental
+  add_circ(r = 1, xc = -0.66667, yc = 0) %>% # Social
+  add_circ(r = 1, xc = 0, yc = 1.2) +        # Economic
+  # Add labels to the circles. Note that the Libre Caslon font is specified, thereby matching the book's font.
+  annotate(geom = "text", x = 1, y = -0.2, label = "Environmental",  size = 3.5) + # family = "Libre Caslon Text",
+  annotate(geom = "text", x = -1, y = -0.2, label = "Social", size = 3.5) + # family = "Libre Caslon Text",
+  annotate(geom = "text", x = 0, y = 1.4, label = "Economic", size = 3.5) + # family = "Libre Caslon Text",
+  # Eliminate all axes and labels besides the ones we added ourselves.
+  theme_void()
+@
+
+
 \section{Impacts and their sources}
 Two mathematical expressions, IPAT and Kaya have been used express human impact on the
-environment and its sources. IPAT expresses “impact” on the environment as the product of
-human population, affluence, and technology. The Kaya identity is a form of the IPAT
-equation but limits impact to CO2 emissions. Kaya also helpfully expresses the generic
-“technology” as the product of energy intensity of the economy and the carbon intensity of
-energy.
+environment and its sources. IPAT expresses “impact” (I) on the environment as the product of
+human population (P), affluence (A), and technology (T). The Kaya identity is a form of the IPAT
+equation but limits impact to CO$_2$ emissions. On the other hand, Kaya
+expands the generic expression for “technology” to be the product of 
+energy intensity of the economy and the carbon intensity of energy, that is the 
+amount of energy per unit GDP times CO$_2$ per unit energy.
 
-The first section of this book is organized around a combination of the IPAT and Kaya
-approach. We keep the general “impact” of IPAT but use the more helpful expression of
-technology from Kaya.
+Chapters 2-6 of this book are organized around a hybrid of the IPAT and Kaya
+approaches. We keep the more general “impact” of IPAT but also generalize the more insightful 
+``technology'' expression from Kaya as the product of resource intensity of the economy 
+and a resource impact intensity.
 \begin{equation}\label{eq:IPARC}
-Impact = Population \times Affluence \times Resource intensity \times Contamination intensity
+\textrm{Impact} = \textrm{Population} \times \textrm{Affluence} \times 
+\textrm{Resource intensity} \times \textrm{Contamination intensity}
 \end{equation}
-Impact is a vector quantity (that is, a list) including such things as global warming
+In the IPARC formulation, impact is a vector quantity (that is, a list) that includes such things as global warming
 potential, aquifer depletion, and eutrophication potential. Population is the (scalar)
-number of people in the world. Affluence is the world per capita GDP. Resource intensity
+number of people in the world. Affluence is GDP per capita. Resource intensity
 is the vector or list of resources necessary to produce one unit of world GDP. Lastly,
 impact intensity or contamination intensity is a matrix that lists the impacts of each
 type of resource.
 
-IPARC is true because it is an identity, and it will provide a useful organizing framework
+IPARC is true because it is an identity, and it provides a useful organizing framework
 for the following chapters. The terms are equilibrium values, that is they represent
-static, or steady-state levels, but do not give completely useful information about how
+static, or steady-state levels, but do show how
 changes in any one variable will affect the others. For instance, using resources more
-efficiently (improving resource intensity), does not lower impact. Instead, it leads to
+efficiently (improving resource intensity), does not, in general, lower impact. Instead, it leads to
 more affluence (see chapter 5). Likewise, it may not be possible to drive the impact(s)
 per unit of resource to zero because of diminishing returns on efficiency and tradeoffs
 that exist between different types of impacts.
@@ -152,29 +199,29 @@ numbers in the series is always one less than the next number in the series. $1+
 15$, which is one less than $16$. $1+2+4+8+16 = 31$, which is one less than $32$.
 
 Extending the doubling on discrete squares or in discrete time to continuous time is
-exponential growth. Things that grow exponentially double in a fixed amount of time. An
-example with a negative growth rate is radioactive decay, where the corresponding time is
-called the half-life because the amount of time for half of the radioactivity to decay
-away is constant. When growth rate is constant, the amount of time to double is
-approximately 70 divided by the growth rate. With a fixed 3\% growth rate, GDP doubles
-every 23 years. If your investment portfolio has a 7\% return, your assets will double
+exponential growth. Things that grow exponentially double in a fixed amount of time. 
+When growth rate is constant, the amount of time to double is
+approximately 70 divided by the growth rate. With a fixed 3\%/yr growth rate, GDP doubles
+every 23 years. If your investment portfolio has a 7\%/yr return, your assets will double
 every 10 years.
 
-In the discrete case, like the wheat and chessboard, the next square is always one more
-than the sum of all the previous squares. In the continuous case, the amount in the next
-period (B) is always 1.71 times the sum of all previous amounts (A). The result for
-sustainability is that the resources needed by the economy in the next 23 years – for
-instance, energy – will be more than the total resources (energy) used in all of history.
-Populations are modeled as having constant growth rates. We actively manage the economy
-have a constant growth rate (say a target of 3\% GDP growth per year). Because of
-(exponential) growth in population and affluence, humanity is not on a sustainable path.
+In the discrete case, like the wheat and chessboard, the number of grains on the 
+next square is always one more than the sum of all the previous squares. 
+In the continuous case, the amount in the next
+period (B) is always 1.71 times the sum of all previous amounts (A). 
+The result for sustainability is that the resources needed by the economy 
+in the next 23 years – for instance, energy – will be more than the total 
+resources (energy) used in all of history. World economies are actively managed to
+have a constant growth rates (say a target of 3\% GDP growth per year). Because of this
+exponential growth, resource use goes to infinity on a finite planet. 
+Humanity is not on a sustainable path.
 
 \section{CO2 and Energy}
 The approach above (IPARC) is general in that all kinds of impacts can be considered. In
 this book we will consider many types of impacts and many kinds of sustainability
 (environmental, economic, and social). However, our focus – in the chapters – is mostly on
 energy use and CO2 emissions. Reasons for an energy/CO2 focus include the availability of
-data and that we feel it is (currently) the most urgent sustainability problem.
+data and the fact that we believe climate change is (currently) the most urgent sustainability problem.
 End-of-chapter discussion questions tend to focus more on social aspects of sustainability
 and worldview issues.
 

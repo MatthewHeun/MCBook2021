@@ -7,11 +7,11 @@
 \label{chap:planetary_boundaries}
 
 
-The previous chapter pointed out the problems with exponential growth.
+The previous chapter pointed out the problems of exponential growth.
 But why? Why is continued exponential growth impossible?
 The reason is that we live on a finite planet with finite resources and finite boundaries.
-This chapter explores those boundaries -- the "budget" if you will for human civilization.
-Exceeding humanity's budget will degrade the ability of the Earth to support life.
+This chapter explores those boundaries -- the "budget," or carrying capacity, of the planet.
+Exceeding Earth's carrying capacity degrades its ability to support life.
 
 
 \section{Ecosystem services} 
@@ -22,67 +22,196 @@ For example, humans plant crops (food, textile, and timber) that "grow," they're
 The ecosystem ``provides" the crops. 
 Likewise, the ecosystem provides water, petroleum, and other mineral resources.
 
-The second set of services is {\b regulating and supporting services}, which sustain, and stabilize the ecosystem, including 
-processes for breaking down and recycling dead organisms; the carbon cycle,  nitrogen, oxygen, and water cycles; and the
+The second set of services is {\b regulating and supporting services}, 
+which sustain and stabilize the ecosystem, including 
+processes for breaking down and recycling dead organisms; 
+the carbon cycle (see Figure~\ref{fig:CCycle}),  nitrogen, oxygen, and water cycles; and the
 fact that plant roots stabilize soil and prevent erosion.
 
 The third set of services is {\b cultural services}, which include recreation and literary and cultural inspiration.
+% these are real even if we don't know their values
 
-Various analogies have been used to describe the benefits that ecosystem services provide, particularly in terms of the loss of
-a piece of the ecosystem. For example, the ecyosystem is like an airplane. When one rivet is lost, the result is not immediately 
-catastrophic but accumulated losses can result in catastrophic failure. Alternatively, speicies are like individual stocks in a 
-portfolio: wide diversity of species minimizes risk or volatility of return.
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/CarbonCycle.png}
+\caption{The natural carbon cycle. Human activity, chiefly combustion of fossil fuels
+and deforestation, means that CO$_2$ is being added to the atmosphere faster than
+nature can remove it.}
+\label{fig:CCycle}
+\end{figure}
 
-The previous chapter also discussed "impacts," that is, negative effects on the environment that are (perhaps) the result of human activity. Broadly, there are two approaches for dealing with impacts. {\i Planetary boundaries} describe the maximum (desirable) 
-{\i level} of effects. The second method uses a weighted average of impacts, called an {\i index}, and the idea is to minimize the 
-level of the index.
+Various analogies have been used to describe the benefits that ecosystem services provide, 
+particularly in terms of the loss of a piece of the ecosystem. For example, the ecosystem 
+is like an airplane. When one rivet is lost, the result is not immediately catastrophic
+but accumulated losses can result in catastrophic failure. Alternatively, species are 
+like individual stocks in a portfolio: wide diversity of species minimizes risk or volatility of return.
 
-
+% sources and sinks!!!!!!!!!!!!
 %sources, sinks, and levels
 %land, air, water
 
+\section{Tipping points}
+Early versions of this text included a chapter on systems theory because the Earth's processes 
+are complex systems (and systems theory is cool). 
+While systems theory is interesting and useful, few insights from 
+systems theory are {\i required} to understand sustainability issues. One insight 
+that {\i is} required is the concept of a tipping point. The name comes from a boat's 
+stability, see Figure~\ref{fig:buoyancy}. If the boat is tipped a small amount,
+the weight of the boat and the effect of buoyancy act to right the boat. However,
+there is an angle where, if the boat is tipped past that angle, the forces will 
+act in the opposite way -- to suddenly and catastrophically flip the boat.
+A tipping point is where the behavior of a system changes.
+
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/buoyancy}
+\caption{Boat stability. The static forces acting on a boat are the weight
+of the boat (G) and the buoyancy force (B). When the boat is heeled over a small
+amount (left), the moment created by these two forces acts to right the boat. 
+Adding weight to the top of the boat raises its center of mass, making it more unstable.
+There is an angle beyond which the moments created by the two forces no longer 
+act to right the boat but to flip it (right) suddenly and catastrophically. 
+The angle beyond which the boat flips is called the tipping point.}
+\label{fig:buoyancy}
+\end{figure}
+
+There are two types of ecological concern with respect to ecosystem services.
+The first is with respect to provisioning services. Humans may ``use up'' a finite
+resource such as helium, petroleum, or neodymium. Or, perhaps, the demand for food
+will exceed the rate at which the ecosystem can supply food. In both of these cases,
+the ecosystem does not supply needed resources. The deficit can be addressed in 
+two ways: either by reducing the demand or by modifying the ecosystem to increase 
+supply. For example, reducing the human population reduces the demand for food or
+converting land to cropland increases the supply. Biofuels reduce the demand for 
+fossil fuels (but require additional crop land). On the other hand, technologies 
+such as directional drilling, hydraulic fracking, and enhanced oil recovery increase
+the (functional) supply of fossil fuels.
+
+The second type of concern relates to human modifications of the ecosystem.
+Human actions can cause a change or breakdown
+in the Earth's regulating and support ecosystem services, which will lead to a tipping
+point, that is, a fundamental change in the way the ecosystem works. An example that is of
+particular concern right now is global climate change (principally) caused by
+human CO$_2$ emissions. Extinction rate is another (see the point above about rivets
+in the airplane).Because ecosystems dynamics are nonlinear and interrelated, 
+tipping points exist, where human actions can cause a series of cascading failures
+that will ultimately degrade the Earth's ability to support (human) life. 
+Exponential growth, for instance in human population and consumption, is analogous
+to heeling over a boat. Growth cause greater and great demands on the ecosystem. 
+Eventually the boat heels over so far that it capsizes.
+
+% wikipedia article on "tipping points in the climate system."
+Drastic or catastrophic changes to ecosystems are not new or solely a modern problem.
+Easter Island, the Levant, and the Sahara Desert have all undergone dramatic ecological 
+shifts, although the degree to which this is attributable to human actions is not
+agreed upon or well understood. 
+% if we don't understand it, should we mess with it?
+What {\i is} new is scope or magnitude of humanity's ability to affect the environment,
+both due to high population and our level of technology.
+For example, nuclear and industrial "accidents," such as the Thule air base crash,
+the Palomares crash, the Seveso dioxin release, and, more recently, the Chernobyl
+and Fukishima diasters, have each contaminated many square kilometers.
+While the risk is, perhaps, less acute than it once was, a 
+global thermonuclear war would be a humanitarian and environmental disaster on a 
+truly global scale.
+
+The previous chapter framed sustainability in terms of "impacts," that is, 
+negative effects on the environment that are (perhaps) the result of human activity. 
+
+Broadly, there are two approaches for managing or responding to impacts. 
+{\i Planetary boundaries} describe the maximum (desirable) {\i level} of effects. 
+The second method uses a weighted average of impacts, called an {\i index}, 
+and the idea is to minimize the level of the index.
+
+% comparison with radiation. humans need some (for vitamin D). more is long-term bad. 
+% Even more is short-term bad. What should the limit be?
+
+
 \section{Planetary boundaries}
-Climate scienctists have proposed %\cite here Rockstrom 2009 = one of the first 4 in the wikipedia article.
-eight indicators, which, if exceeded, could render Earth unihabitable by humans, perhaps catastrophically so in that the resulting
-changes may be nonlinear and abrupt. The boundaries are intended to define a "safe operating space for humanity."
-\begin{enumerate} %present as a table instead?!
-\item Climate change
-\item Biodiversity loss
-\item Biogeochemical (nitrogen and phosphorus)
-\item Ocean acidification
-\item Land use
-\item Fresh water
-\item Ozone depletion
-\item Atmospheric aerosols
-\item Chemical pollution
-\end{enumerate}
-Newer (and improved?) lists have been proposed.
+Climate scientists have proposed %\cite here Rockstrom 2009 = one of the first 4 in the wikipedia article.
+eight indicators, which, if exceeded, could render Earth uninhabitable by humans, 
+perhaps catastrophically so in that the resulting changes may be nonlinear and abrupt. 
+The boundaries are intended to define a "safe operating space for humanity."
+% \begin{enumerate} %present as a table instead?!
+% \item Climate change
+% \item Biodiversity loss
+% \item Biogeochemical (nitrogen and phosphorus)
+% \item Ocean acidification
+% \item Land use
+% \item Fresh water
+% \item Ozone depletion
+% \item Atmospheric aerosols
+% \item Chemical pollution
+% \end{enumerate}
+% Newer (and improved?) lists have been proposed.
+% 
+% 
+% % how do we know what the levels are?
+% % precision and safety factors in the levels
+% 
+% % %Logistic curve(s)
+% \begin{tabular}{@{}llcccc@{}}\toprule
+% Earth system & Variable & Preindustrial level & Current value & Boundary value & Exceeded \\ \midrule
+% Climate change & Amospheric CO$_2$ concentration [ppm] & 280 & 412 & 350 & yes \\ \midrule
+% Biodiversity loss & Extinction rate [\%] & 0.1 to 1 & $>$100 & 10 & yes \\ \midrule
+% Biogeochemical & anthropogenic nitrogen removed from the atmosphere & 0 & 121 & 35 & yes\\ \midrule
+% Biogeochemical & anthropogenic phosphorous added to the ocean & -1 & 9 & 11 & no \\ \midrule
+% Ocean acidification & Calcium carbonate in ocean surface seawater & 3.44 & 2.9 & 2.75 & no \\ \midrule
+% Land use & Land surface converted to crop land [\%] & low & 11.7 & 15 & no \\ \midrule
+% Freshwater & Global consumption of water [km$^4$/yr] & 415 & 2600 & 4000 & no \\ \midrule
+% Ozone depletion & Statospheric ozone completion [Dobson] & 290 & 283 & 276 & no \\
+% \bottomrule \end{tabular}
+Examples from the proposed list include an atmospheric carbon dioxide concentration
+of no more than 350 ppm (current value is 412 ppm, see Figure~\ref{fig:CO2Graph}),
+less than 15\% of Earth's land area converted to cropland (currently 11.7\% is cropland),
+and an extinction rate of less than 10 species per million species going extinct
+per year (currently the rate is more than 100 per million, out of a total of 10 to 14 million
+species, see Chapter 3).
 
+%Figure~\ref{fig:CO2Graph} shows atmospheric CO$_2$ concentration over time.
 
-% how do we know what the levels are?
-% precision and safety factors in the levels
-
-%Logistic curve(s)
-
-
-\section{Indices for sustainability}
-There are many, many indices used to express or measure sustainability. They are (weighted) averages of quantities related to 
-one or more of the three pillars. 
-\subsection{Indices for environmental impact}
-\subsection{Indices for the economy}
-\subsection{Indices for social change}
-
-
-
-<<CO2Graph>>=
+<<CO2Graph, fig.cap="Atmospheric CO$_2$ concentration over time. Vertical line shows the year 2020.">>=
 # Gather data for CO2 vs. time graph
-print(getwd())
-readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>% 
+readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>%
+  dplyr::mutate(
+    Year = - Year / 1000
+  ) %>%
+  # Make the graph
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "Atmospheric_CO2_concentration_ppm")) +
-  ggplot2::geom_line()
+  ggplot2::geom_vline(xintercept = -2020/1000, size = 0.2) +
+  ggplot2::geom_line(size = 1) +
+  # Because we're plotting years BCE
+  ggplot2::scale_x_reverse() +
+  ggplot2::labs(x = "Year [thousand years BCE]",
+                y = expression("Atmospheric "*CO[2]*" concentration [ppm]")) +
+  MKHthemes::xy_theme()
 @
 
+Two of the indicators, particulate particle concentration in the atmosphere and
+chemical pollution, did not have proposed limits.In the case of chemical pollution, 
+at least, the vast number of such (possible) pollutants have different levels of 
+acute and chronic effects, which would make a single "threshold" value undesirable. 
+Instead, national governments set limits on a chemical-by-chemical basis.
+Agencies such as the US Environmental Protection Agency and the European Commission
+(or member states) handle enforcement of the regulations.
 
+\section{Indices for sustainability}
+There are many, many indices used to express or measure sustainability. 
+They are (weighted) averages of quantities related to
+one or more of the three pillars.
+% \subsection{Indices for environmental impact}
+% \subsection{Indices for the economy}
+% \subsection{Indices for social change}
+Example indices include carbon footprint, ecological footprint (in global hectares
+per person), and the human development index (HDI). Figure~\ref{fig:ecofootprintHDI}
+plots ecological footprint and HDI for many different countries.
+
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/EcoHDI.jpg}
+\caption{The ecological footprint per person and human development index for many nations.}
+\label{fig:ecofootprintHDI}
+\end{figure}
 
 \cleardoublepage
 

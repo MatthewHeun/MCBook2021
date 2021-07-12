@@ -7,7 +7,44 @@
 \label{chap:carbon_intensity}
 
 
+<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions.~\\cite{Ritchie:2021vw}.">>=
+CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"), 
+                   sheet = "data to plot")
 
+CO2_emissions %>% 
+  dplyr::filter(Year >= 1800) %>% 
+  dplyr::mutate(
+    CO2_emissions_Gt = CO2_emissions_tonnes / 1e9
+  ) %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_emissions_Gt")) + 
+  ggplot2::geom_line(size = 1) + 
+  ggplot2::labs(x = NULL,
+                y = expression("World "*CO[2]*" emissions [Gt/year]")) +
+  
+  MKHthemes::xy_theme()
+@
+
+
+
+
+<<CarbonIntensityGraph, fig.cap="Carbon intensity of energy, $c$ in the Kaya identity.">>=
+dplyr::inner_join(
+  CO2_emissions, 
+  primary_energy %>% 
+    dplyr::group_by(Year) %>% 
+    dplyr::summarise(energy_EJ = sum(energy_EJ)), 
+  by = "Year"
+) %>% 
+  dplyr::mutate(
+    CO2_intensity_Mt_per_EJ = CO2_emissions_tonnes / 1e6 / energy_EJ, 
+  ) %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_intensity_Mt_per_EJ")) + 
+  ggplot2::geom_line(size = 1) +
+  ggplot2::labs(x = NULL,
+                y = expression("Carbon intensity of energy (c) [Mt "*CO[2]/EJ*"]")) +
+  
+  MKHthemes::xy_theme()
+@
 
 
 \cleardoublepage
