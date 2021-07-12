@@ -249,23 +249,33 @@ inherently generate strategies for achieving the goals or enforcement mechanisms
 for maintaining behavior. It remains for scientists, policy makers, and government
 officials to conduct research, make recommendations, regulate, and enforce laws.
 
-<<FootprintHDIGraph>>=
+<<FootprintHDIGraph, fig.cap="Ecological footprint vs. HDI.">>=
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI.xlsx"),
                                   sheet = "data to plot") %>%
-  # dplyr::mutate(
-  #   Continent = factor(Continent, levels = c(""))
-  # ) %>% 
-  # ggplot2::ggplot(mapping = ggplot2::aes_string(x = "HDI", y = "Ecological_Footprint_gha_per_person", 
-  #                                               colour = "Continent", size = "Population")) + 
+  dplyr::filter(`Country Name` != "World") %>% 
+  dplyr::mutate(
+    Population = Population / 1e6 # Population now in mullions
+  ) %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "HDI", y = "Ecological_Footprint_gha_per_person", 
-                                                colour = "Continent", size = "Population")) + 
+                                                colour = "Continent", alpha = "Continent", shape = "Continent", size = "Population")) + 
+  ggplot2::geom_vline(xintercept = c(0.7, 0.8), size = 0.2) +
   ggplot2::geom_point() + 
   
-  ggplot2::scale_size_continuous(breaks = c(1e5, 1e6, 1e7, 1e8, 1e9, 1e10)) +
+  ggplot2::scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, by = 0.2)) + 
+  ggplot2::scale_y_continuous(limits = c(0, 16), breaks = seq(0, 16, by = 2)) + 
+  ggplot2::scale_size_continuous(breaks = c(10, 100, 1000)) +
+  ggplot2::scale_shape_manual(values = c(Africa = 16, Asia = 1, Europe = 16, 
+                                         `North America` = 16, Oceania = 16, `South America` = 16)) +
+  ggplot2::scale_alpha_manual(values = c(Africa = 0.5, Asia = 1, Europe = 0.5,
+                                         `North America` = 0.5, Oceania = 0.5, `South America` = 0.5)) +
+  ggplot2::labs(x = "Human development index [-]", 
+                y = "Ecological footprint [gha/person]", 
+                size = NULL, 
+                shape = NULL, 
+                colour = NULL, 
+                alpha = NULL) +
   
   MKHthemes::xy_theme()
-
-  
 @
 
 
