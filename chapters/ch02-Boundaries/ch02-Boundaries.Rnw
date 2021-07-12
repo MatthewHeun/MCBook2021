@@ -216,5 +216,26 @@ plots ecological footprint and HDI for many different countries.
 
 
 
+<<FootprintHDIGraph>>=
+readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI.xlsx"),
+                                  sheet = "data to plot") %>%
+  # dplyr::mutate(
+  #   Continent = factor(Continent, levels = c(""))
+  # ) %>% 
+  # ggplot2::ggplot(mapping = ggplot2::aes_string(x = "HDI", y = "Ecological_Footprint_gha_per_person", 
+  #                                               colour = "Continent", size = "Population")) + 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "HDI", y = "Ecological_Footprint_gha_per_person", 
+                                                colour = "Continent", size = "Population")) + 
+  ggplot2::geom_point() + 
+  
+  ggplot2::scale_size_continuous(breaks = c(1e5, 1e6, 1e7, 1e8, 1e9, 1e10)) +
+  
+  MKHthemes::xy_theme()
+
+  
+@
+
+
+
 \cleardoublepage
 
