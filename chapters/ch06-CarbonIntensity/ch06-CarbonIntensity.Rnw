@@ -7,11 +7,30 @@
 \label{chap:carbon_intensity}
 
 The final term in Equation~\ref{eq:IPARC} is 
-contamination intensity of of resource consumption ($c$).
+contamination intensity of of resource production and consumption ($c$).
 The value of $c$ represents the amount of environmental contamination
 per unit of resource consumption.
 
-Examples of $c$ includes the amount of PFAS emitted 
+With reference to Table~\ref{tab:CRMs}, examples of $c$ include:
+%
+\begin{itemize}
+
+  \item air, water, and soil pollution~\cite{Lee:2017ui} (contamination) in the form of
+        bauxite dust,
+        sulfur dioxide (SO$_2$), and 
+        nitrous oxides (NO$_\mathrm{x}$) emissions
+        from bauxite mining (resource production),
+
+  \item Toxic tailings (contamination)
+        from Tungsten (resource production) 
+        mining operations~\cite{Lee:2021tz}, and
+        
+  \item Deforestation and reduced forest quality~\cite{Kissinger:2020ut} (contamination)
+        to make way for rubber plantations (resource production)
+        in southeast Asia.
+
+\end{itemize}
+%
 
 
 
