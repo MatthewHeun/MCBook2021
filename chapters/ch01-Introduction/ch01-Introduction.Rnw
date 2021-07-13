@@ -13,8 +13,8 @@ square, four grains on the fourth square, and so on, with each subsequent square
 double what was on the previous square. The king accepted the wager but, because this is
 fable, lost the game. % according to chess.com a match is a series of games.
 A chessboard has eight rows and eight columns, so the king had to
-pay $2^64$ (less one) grains of rice. Since a pound is seven thousand grains of rice 
-(~65 mg each), the king owed her $1.195 \times 10^15$ kg of rice, which is
+pay $2^{64}$ (less one) grains of rice. Since a pound is seven thousand grains of rice 
+(\~65 mg each), the king owed her $1.195 \times 10^{15}$ kg of rice, which is
 about 12\% of the weight of everything ever produced by the human species [1]. At
 US\$6.85/bushel, the grain would be worth about 300 trillion dollars, which is (roughly)
 ten times more money than exists in the world.
@@ -109,7 +109,7 @@ areas of sustainability but with a focus on energy and carbon emissions {\i not}
 the only sustainability problem, but because climate change is currently the one most {\i urgent}
 sustainability problem.
 
-\subsection(Definitions of sustainability)
+\subsection{Definitions of sustainability}
 The most oft-quoted definition of sustainability comes from the Brundtland report
 "Sustainable development is development that meets the needs of the present without
 compromising the ability of future generations to meet their own needs." Note that
@@ -216,7 +216,7 @@ have a constant growth rates (say a target of 3\% GDP growth per year). Because 
 exponential growth, resource use goes to infinity on a finite planet. 
 Humanity is not on a sustainable path.
 
-\section{CO2 and Energy}
+\section{CO$_2$ and Energy}
 The approach above (IPARC) is general in that all kinds of impacts can be considered. In
 this book we will consider many types of impacts and many kinds of sustainability
 (environmental, economic, and social). However, our focus – in the chapters – is mostly on

@@ -173,7 +173,7 @@ species, see Chapter 3).
 
 %Figure~\ref{fig:CO2Graph} shows atmospheric CO$_2$ concentration over time.
 
-<<CO2Graph, fig.cap="Atmospheric CO$_2$ concentration over time. Vertical line shows the year 2020.">>=
+<<CO2Graph, fig.cap="Atmospheric CO$_2$ concentration over time. Vertical line shows the year 2020. Include indicators for previous mass extinctions.">>=
 # Gather data for CO2 vs. time graph
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>%
   dplyr::mutate(
@@ -226,12 +226,12 @@ Example indices include carbon footprint, ecological footprint (in global hectar
 per person), and the human development index (HDI). Figure~\ref{fig:ecofootprintHDI}
 plots ecological footprint and HDI for many different countries. 
 
-\begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/EcoHDI.jpg}
-\caption{The ecological footprint per person and human development index for many nations.}
-\label{fig:ecofootprintHDI}
-\end{figure}
+% \begin{figure}
+% \centering
+% \includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/EcoHDI.jpg}
+% \caption{The ecological footprint per person and human development index for many nations.}
+% \label{fig:ecofootprintHDI}
+% \end{figure}
 
 In contrast to planetary boundaries, which are a hard biophysical limit, indices 
 typically represent aggregated behavior. Aggregation allows grouping together of 

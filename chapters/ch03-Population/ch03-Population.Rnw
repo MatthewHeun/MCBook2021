@@ -48,7 +48,7 @@ examples here include most ocean fish,
 %summary report says 1 million animal and plant species are threatened with extinction.
 %"In 2015, 33\% of marine fish stocks were being harvested at unsustainable levels; 60\% were maximally sustainably 
 %fished, with just 7\% harvested at levels lower than what can be sustainably fished."
-whales, bison, aurochs, and most North American megafauna.
+whales, bison, aurochs, and most megafauna.
 A third cause of the decline in animal populations is human-induced climate change,
 for example as with many Arctic species such as polar bear and walrus.
 Lastly, human contamination of the environment, either unintentionally or intentionally,
@@ -58,7 +58,11 @@ with bees being a particularly alarming example because of the extremely valuabl
 role they play in pollinating many agricultural crops.
 
 \section{Human population}
-Figure \ref{fig:PopulationGraph} shows the Earth's human population from X to present.
+As shown in \ref{eq:IPARC}, human population has a major impact on the planet.
+Figure \ref{fig:PopulationGraph} shows the Earth's human population from 1800 AD to present.
+In July 2021, the world's human population is estimated to be 7.7-7.9 billion with a 
+current growth rate of 1.05\%. On average, over the last hundred year, the growth rate 
+was 1.55\% with a peak growth rate of 2.1\% between 1965 and 1970.
 
 <<PopulationGraph, fig.cap="World population, $P$ in the Kaya identity~\\cite{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
@@ -87,11 +91,131 @@ region_pop %>%
                 y = "World population (P) [billions]", 
                 fill = NULL) +
 
-  MKHthemes::xy_theme()
+MKHthemes::xy_theme()
 @
 
+\subsection{Historical human population}
+It has been said, "It is difficult to make predictions, especially about the future." 
+Predictions about future human populations vary considerably.
+As it turns out, it is also difficult to make predictions about the past. 
+Although scientists have estimated historical population levels, reliable data are limited.
+\textit{Homo sapiens} probably emerged as a species 100,000 to 200,00 years ago.
+In prehistoric times, the human population grew slowly. By 9000 BC there were 5 to 10 million humans. 
+Around the year 1 AD there were around 300 million people, representing an average growth rate of about 0.1\%.
+By 1650 AD, the world population was around 500 million. Average growth was slowed 
+by trade and urbanization enabling infectious diseases to kill large numbers.
+For instance, the Black Death killed 75 to 200 million people in the 1300s.
+World population reached 1 billion (that is, 1,000 million) around 1800 AD. 
+% Table 1. World population milestones. Source: United Nations Secretariat, Department of Economic and Social Affairs, % The World At Six Billion (1999), p. 8.
+% https://www.learner.org/courses/envsci/unit/text.php?unit=5&secNum=4
+Population changes come from the birth rate and the death rate.
+Estimating the populations of antiquity is difficult because these rates are somewhat conjectural.
+However, estimates of the total number of humans to have lived are 100-110 billion.
 
 
+\subsection{Population modeling}
+Figure \ref{fig:UN_population_prospect} shows projections made by the United Nations 
+in 2010 about future human population.
+Future population depends on current population (known more-or-less accurately)
+and the birth rate and death rate. 
+The wide range of uncertainty in the predicted population is indicative of the 
+uncertainty surrounding future birth and death rates.
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{chapters/ch03-Population/figures/population_propesct.pdf}
+\caption[UN World Population Prospects 2010: Population Development Scenarios: 1950-2100.]{UN World Population Prospects 2010: Population Development Scenarios: 1950-2100.}
+\label{fig:UN_population_prospect}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{chapters/ch03-Population/figures/LimitsToGrowth_ModelFigure1-3_Large.png}
+\caption[Causal loop diagram of several important feedback loops in the World3 population model.]
+{Causal loop diagram of several important feedback loops in the World3 population model.}
+\label{fig:World3loops}
+\end{figure}
+Birth and death rates are dependent on many other variables. 
+Figure \ref{fig:World3loops} shows a schematic of the causal loops
+used in the World3 population model. Notice the number of variables (24!) 
+and the many ways those variables (are thought to) interact. 
+No model is perfect and, indeed, the World3 model is controversial (all predictions are).
+The point isn't to say that one model is right and another is wrong, 
+but instead to point out the many variables that effect population. 
+In fact, another population model produced around the same time used 200,000 equations.
+
+\subsection{Demographic transition theory}
+%% https://pages.uwc.edu/keith.montgomery/Demotrans/demtran.htm -- on the Wayback Machine!
+In an undeveloped society, both birth rates and death rates are high, resulting in a low population growth rate.
+Demographic transition theory says that development leads to a decrease in mortality 
+followed some time later by a falling birth rate. 
+Thus, the population will grow rapidly and then stabilize. 
+\textbf{This gives us some hope for sustainability, namely that population won't grow exponentially.}
+Figure \ref{fig:dtt} illustrates schematically demographic transition theory.
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{chapters/ch03-Population/figures/DTTstages.pdf}
+\caption[Annual number of births by world region.]{Schematic of demographic transition theory. Crude birth rate (CBR) and crude death rate (CDR) are defined as births or deaths per year per 1000 people in the total population (uncorrected for sex or age cohorts).}
+\label{fig:dtt}
+\end{figure}
+
+As countries move through the demographic transition, the age structure of the population,
+shown by the \textbf{population pyramid}, changes. Because death rate (primarily childhood mortality)
+falls before birth rate, there is a population surge, which yields a demographic 
+dividend in the form of a more productive economy. \textbf{Link to economy chapter!}
+
+\subsection{Distribution of population}
+Where do people live? Given our goal of a sustainable society, where do we \textit{want} people to live?
+In 2015, about half of the world's people live in an area, shown in Figure \ref{fig:half_population}, known as the Valeriepieris circle.
+This circle has a radius of about 4,000km. Other researchers have since defined a more compact region (radius 3300km) with the same fraction of Earth's population.
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{chapters/ch03-Population/figures/half_world_population.pdf}
+\caption[Population living in the Valeriepieris  circle.]{As of 2015, more than half the world's population lives in the Valeriepieris circle, a circular region centered in the South China Sea.}
+\label{fig:half_population}
+\end{figure}
+
+Since the industrial revolution, humans have been increasingly living in urban environments.
+In 1973 there were only 3 cities (Mexico City, Tokyo, and New York City) with populations of more than 10 million people (megacities).
+Since 2005-2006 more than half of the world's population live in urban areas. 
+Now there are 21 cities with populations of 10 million or more (see Figure \ref{fig:cities_population} for more detail).
+The percent living in urban areas is projected to grow to 68\% by 2050. %%https://ourworldindata.org/urbanization
+Urban living is correlated with wealth and higher GDP. High population density 
+means mass transit is practical and, in fact, widely used. 
+David Owens argues that Manhattan, being very dense, is the most ecological place to live. 
+%% https://www.newyorker.com/magazine/2004/10/18/green-manhattan
+However, higher wealth partially offsets this.
+
+\textbf{Link to land use and urban planning chapter.}
+\begin{quote}
+Cities are one of the big issues facing the planet. Hundreds of new cities are 
+expected to be created across Africa and Asia in the course of the next century. 
+Researchers believe that, if current population trends continue, Lagos, the largest 
+city in Nigeria, could develop into a vast, sprawling metropolis of over 
+eighty-five million people. Niger has the highest birth rate in Africa; Niamey, 
+its capital, is expected to explode in size, from less than one million people 
+to forty-six million by 2100. Unfortunately, the urban expansion that has already 
+taken place across the developing world has been ramshackle. Much of it has taken 
+the form of shanty towns, where groups of shacks are crowded together with little 
+sanitation or governance. This is brewing an obvious problem. The example of the 
+West is, alas, little more encouraging. Much new development takes the form of 
+suburban sprawl, which is wasteful of precious land, and has little character of 
+its own. Young people are frustrated because they cannot break out of parental 
+nests; the elderly feel isolated. And yet the pressure to build more housing—for 
+reasons of immigration, increased life expectancy, and the creation of more 
+households due to divorce—will increase, not abate. The need for master-planning 
+has never been greater.
+\end{quote} %%https://www.newcriterion.com/issues/2018/6/the-future-of-classicism-9861
+
+\section{Discussion Questions}
+\begin{enumerate}
+\item How does wealth influence birth and death rates? Do different forms of wealth have different effects?
+\item Why are birth rates falling? Falling birthrates are correlated with economic development. Attempt to explain the mechanism.
+\item what things have a \textit{higher} environmental impact as populations urbanize?
+\item What do you like about living in "the city" or "the country?"
+\item How do we manage Earth's total population? Is it feasible to do so? Ethical?
+\item Migration of people from rural to urban environments and especially across national borders is an emotionally charged political issue. How does it look in terms of long-term sustainability?
+\item What is a socially equitable way to allocate access to wilderness areas and experiences?
+\end{enumerate}
 
 \cleardoublepage
 

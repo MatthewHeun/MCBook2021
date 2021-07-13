@@ -59,6 +59,7 @@ library(ggplot2)     # For graphing functions
 library(magrittr)    # For pipe operator, (%>%)
 library(readxl)      # To read Excel files
 library(MKHthemes)   # For default ggplot2 theme
+library(tidyr)
 library(viridis)     # For a great color palette for graphs
 @
 
