@@ -12,15 +12,31 @@ ecosystems provision human needs and how the impact of human activities can degr
 even catastrophically destroy, the ability of the Earth to provide. This chapter 
 will examine human population dynamics and the impact of human activities on animal populations.
 
+\section{Animal populations}
 %some stories about animal populations: passenger pigeons, bison, whales, aurochs, locusts,
 % North American megafauna, North Atlantic cod shoals....
 Currently, humans (36\%) and domestic livestock (60\%) constitute 96\% of the mass of
-mammals on the planet \cite{ref:Baillie2018} -- only 4\% are wild animals 
+mammals on the planet \cite{ref:BarOn2018} -- only 4\% are wild animals 
 such as whales, bison, deer, and bears. 
-% MacKinnon cites the National Academy of Sciences 2018.
-Wild vertebrate populations are less than half what they were in 1970. %MacKinnon says 60% average loss.
-Populations of insects are down 80\% in the last 30-40 years.
-%citation(s) needed?
+Wild vertebrate populations have declined by 68\% since 1970 \cite{WWFLPI2020}. 
+Populations of insects are down ~80\% in the last 30 years \cite{Hallmann2017}.
+These numbers are alarming because they could indicate a drastic decline in the 
+quality and/or quantity of ecosystem services. One of the planetary boundaries
+identified in Chapter~\ref{chap:planetary_boundaries} is an extinction rate
+of less than 0.001\% of species going extinct per year. Estimates vary but all
+agree that current extinction rates are more than ten times above the limit (0.01\% or greater).
+It fact, the current crisis has been labeled a "sixth mass extinction event"
+called the Holocene (or Anthropocene) extinction, because it begins with the 
+megafauna extinctions thought to be the result of contact with early modern humans.
+Thus, human-caused extinctions are a feature not unique to the current century.
+(Although there is some debate about the role of climate change in prehistoric 
+mass extinctions just like climate change plays a role in the present crisis.)
+
+We should distinguish between the {\i reason(s)} and the {\i mechanism(s)} for 
+the decline in animal populations. Population decline is an {\i impact} from the left-hand
+side of \ref{eq:IPARC}. The {\i reason(s)} (that is, the "why") are given on the right-hand side of \ref{eq:IPARC}.
+In contrast, some of the {\i mechanisms} (that is, the "how") behind the decline 
+in animal populations are summarized below.
 Habitat destruction plays an important role in the decline of animal populations, 
 such as in the case of the Rocky Mountain locust, which in 1875 had a swarm of 
 12.5 trillion individuals, weighing 27.5 millions tons, and covering an area larger
@@ -34,12 +50,15 @@ examples here include most ocean fish,
 %fished, with just 7\% harvested at levels lower than what can be sustainably fished."
 whales, bison, aurochs, and most North American megafauna.
 A third cause of the decline in animal populations is human-induced climate change,
-for example as with many Artic species such as polar bear and walrus.
+for example as with many Arctic species such as polar bear and walrus.
 Lastly, human contamination of the environment, either unintentionally or intentionally,
 is a cause for the decline of many species, for example widespread use of insecticides
 in agriculture is thought to be a strong factor for the decline in many insect populations,
-with bees being a particularly alarming example. 
+with bees being a particularly alarming example because of the extremely valuable 
+role they play in pollinating many agricultural crops.
 
+\section{Human population}
+Figure \ref{fig:PopulationGraph} shows the Earth's human population from X to present.
 
 <<PopulationGraph, fig.cap="World population, $P$ in the Kaya identity~\\cite{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
