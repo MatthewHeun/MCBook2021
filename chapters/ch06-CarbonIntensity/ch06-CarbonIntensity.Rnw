@@ -6,8 +6,50 @@
 \chapter{Carbon intensity of energy}
 \label{chap:carbon_intensity}
 
+The final term in Equation~\ref{eq:IPARC} is 
+contamination intensity of of resource extraction and consumption ($c$).
+The value of $c$ represents the amount of environmental contamination
+per unit of resource produced.
+Resource extraction was covered in Chapter~\ref{chap:resource_intensity}.
+Environmental contamination is discussed in this chapter.
 
-<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions.~\\cite{Ritchie:2021vw}.">>=
+Examples of environmental contamination include
+water eutrophication (from fertilizer runoff), 
+SO$_2$ emissions (from burning sulfurous coal), 
+CO$_2$ emissions (from burning fossil fuels), 
+desertification (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and 
+species losses (due to habitat loss, environmental toxins, and over-exploitation).
+With reference to Table~\ref{tab:CRMs}, specific examples of $c$ include:
+%
+\begin{itemize}
+
+  \item air, water, and soil pollution~\cite{Lee:2017ui} (contamination) in the form of
+        bauxite dust,
+        sulfur dioxide (SO$_2$), and 
+        nitrous oxides (NO$_\mathrm{x}$) emissions
+        from bauxite mining (resource production),
+
+  \item Toxic tailings (contamination)
+        from Tungsten (resource production) 
+        mining operations~\cite{Lee:2021tz}, and
+        
+  \item Deforestation and reduced forest quality~\cite{Kissinger:2020ut} (contamination)
+        to make way for rubber plantations (resource production)
+        in southeast Asia.
+
+\end{itemize}
+
+In this book, 
+the prime example of pollution is carbon dioxide emissions, and 
+the prime example of resource production and consumption is energy
+in all its forms.
+Thus, the prime example for $c$ is the CO$_2$ intensity of energy expressed, 
+e.g., in tonnes of CO$_2$ emitted per MJ of energy consumed.
+
+The amount of CO$_2$ emitted each year since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
+The clear trend is upward, with small drops corresponding to years of economic recession.
+
+<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"), 
                    sheet = "data to plot")
 
@@ -18,6 +60,7 @@ CO2_emissions %>%
   ) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_emissions_Gt")) + 
   ggplot2::geom_line(size = 1) + 
+  ggplot2::geom_vline(xintercept = c(1932, 1945, 1974, 1982, 1992, 2009), size = 0.2) +
   ggplot2::labs(x = NULL,
                 y = expression("World "*CO[2]*" emissions [Gt/year]")) +
   
