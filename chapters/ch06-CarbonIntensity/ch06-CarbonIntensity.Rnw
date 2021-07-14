@@ -130,6 +130,65 @@ dplyr::inner_join(
 \label{sec:reducing_c}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Equation~\ref{eq:IPARC} shows that reducing any of the right-hand side terms to 0
+will eliminate CO$_2$ emissions.
+I.e., if population ($P$), affluence ($A$), energy intensity of the economy ($I_p$)
+or carbon intensity of energy ($c$) go to 0, 
+CO$_2$ emissions will be eliminated.
+Few people want to reduce population ($P$) or affluence ($A$).
+The primary energy intensity of the economy ($I_p$) has been declining
+since 1960 (Figure~\ref{fig:EnergyIntensityGraph}), 
+but not as fast as population (Figure~\ref{fig:}) and affluence (Figure~\ref{fig:AffluenceGraph}) are growing.
+
+Figure~\ref{fig:CarbonIntensityGraph} shows that the carbon intensity of energy 
+has hovered around 63 Mt CO$_2$/EJ from 1960 to today.
+Thus, for the last 60 years, the carbon intensity of energy has been stubbornly constant.
+It appears that eliminating CO$_2$ emissions by significantly reducing 
+the carbon intensity of energy ($c$) will be require unprecedented changes
+to the world's primary energy sources.
+
+If we want to reduce CO$_2$ emissions by reducing 
+the carbon intensity of energy ($c$), 
+we could transition back to the energy mix of the first half of the 18$^\mathrm{th}$ century, 
+exclusive use of traditional biofuels, namely wood and wood products.
+(See Figure~\ref{fig:PrimaryEnergyGraph}.)
+However, supplying the energy needs of today's economy would be impossible:
+we don't have enough available land area to grow the required amount of crops.
+**** Josh should make a calculation to verify this claim. ****
+
+Alternatively, we could transition the world energy system
+to renewable energy sources: water (hydro), wind, and solar (WWS).
+**** Add reference to Dellucci here. ****
+However, in addition to changing the world's energy sources,
+reducing the carbon intensity of energy 
+will require 
+significant changes to the world's energy infrastructure.
+Indeed, a transition to WWS will bring several new challenges.
+First, WWS energy resources produce electricity, not liquid fuels.
+Thus, any economic sector that currently relies upon liquid fuels must be electrified.
+An important example of the need to electrify is the transportation sector.
+Today, transport is almost exclusively powered by liquid fossil fuels (gasoline and diesel).
+Electrifying the world's transportation fleet is a prerequisite to a transition to WWS
+and a zero-carbon economy.
+Electrification of the world's transportation fleet will be very expensive.
+**** Josh to find a cost estimate. ****
+
+Second, wind and solar (the \emph{WS} in W\emph{WS}) are intermittent sources of electricity, 
+while coal, natural gas, nuclear, and water (hydro) sources are not.
+At present, electric grids accommodate only a fraction of intermittent electricity, much less than 100\%.
+So a transition to wind and solar primary energy sources will require
+redesign and re-implementation of electricity grids worldwide.
+
+Third, WWS primary energy sources are energy intensive to manufacture.
+So the transition to a WWS future will require significant energy investment
+in addition to significant financial investment.
+If the energy to make WWS systems comes from fossil fuels, 
+significant CO$_2$ will be emitted during the transition
+from today's energy regime to a WWS regime.
+
+
+
+
 
 \cleardoublepage
 
