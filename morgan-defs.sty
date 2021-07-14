@@ -1,12 +1,13 @@
 % UF
                                   % K&D refers to Kopka & Daly, 4th ed, 2003
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{morgan-defs}[2016/12/23 Morgan Macros]
+\ProvidesPackage{morgan-defs}[2020/06/01 Morgan Macros]
 
 
 %definitions for page layout
 \newcommand\blankline{\vspace{.25cm}}% blank line, if not at top of page
-\newcommand\nl{\newline} %<<<< hm
+
+%newcommand\nl{\newline} % removed by UF suggestion
 									
 \newcommand\pushproof{\linebreak\mbox{}\hfill}% push 'qed' to end of empty line	
 									% like \underline but has horiz. line const. depth
@@ -15,7 +16,8 @@
 
 %text decoration
 									% like \underline but has horiz. line const. depth
-\newcommand{\ul}[1]{$\underline{\smash{\hbox{#1}}}$}%%<< could clash with ulem
+\newcommand{\uls}[1]{$\underline{\smash{\hbox{#1}}}$}	% undeline "smashed"
+%newcommand{\ul}[1]{$\underline{\smash{\hbox{#1}}}$}%%<< could clash with ulem
 
 % macro  \rb  for "roman (\rm) and bold (\bf)" %UF changed
 \newcommand{\rb}[1]{\text{\normalfont\rmfamily\bfseries #1}}
@@ -159,8 +161,8 @@ to0pt{\hskip#1\fbox{\rule{0pt}{#4}\rule{#3}{0pt}}}\vskip-#2}
 %newcommand\hang{\hangindent=.3in}
 %def\textindent#1{\indent\llap{#1\enspace}\ignorespaces}
 \newcommand\vsap[2]{\ifthenelse{\equal{#1}{}}%
-						       {\ragr{\vs{13pt}{0pt}#2\nl}}%
-							   {\ragr{#1\hspace{.05in}\vs{13pt}{0pt}#2\nl}}%
+						       {\ragr{\vs{13pt}{0pt}#2\newline}}%
+							   {\ragr{#1\hspace{.05in}\vs{13pt}{0pt}#2\newline}}%
 				   }
 
 
@@ -210,5 +212,43 @@ to0pt{\hskip#1\fbox{\rule{0pt}{#4}\rule{#3}{0pt}}}\vskip-#2}
 	}
 
 
+% added in 2018
 
-\endinput                           % end T&T TechWorks Macros
+% predefined for italic bold + bold greek letters:  % bm:  bold math italic
+\newcommand\bt[1]{\ensuremath\mathbf{#1}}           % bt:  bold text with \mathbf
+\newcommand\mc[1]{\ensuremath\mathcal{#1}}          % mc:  math caligraphic for uppercase
+\newcommand\bmc[1]{\ensuremath\bm{\mathcal{#1}}}    % bmc: bold math caligraphic
+
+% use ' for feet and '' for inches outside of a math environment
+\newcommand\feet{$'$}
+\newcommand\inches{$''$}
+
+\AtBeginDocument{%
+\DeclareRobustCommand{\{}{\ifmmode\lbrace\else\textbraceleft\fi}
+\DeclareRobustCommand{\}}{\ifmmode\rbrace\else\textbraceright\fi}}
+
+% use \cleardoublepage when you need to have a guaranteed start on an odd page
+
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+    \hbox{}\thispagestyle{empty}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+
+% make $ signs the same in math and in plain text
+\DeclareRobustCommand{\$}{\ifmmode\text{\textdollar}\else\textdollar\fi}
+
+% added in 2019
+                                    % invisible ref to add a page number in bibliography
+\newcommand\invisref[1]{\Hy@backout{#1}}
+\newcommand\Part[1]{\cleardoublepage\part{#1}}
+
+% added in 2020
+                                    % \uacc is equivalent to \u (undefined in Caslon)
+\newcommand\uacc[1]{$\breve{\text{#1}}$}
+                                    % itemized list indented same as \parindent
+\usepackage{enumitem}
+\newlength\bulletwidth
+\settowidth\bulletwidth{\labelitemi}
+\setlist[1,itemize]%
+{labelindent=\parindent,labelwidth=\bulletwidth,align=left,leftmargin=!}
+
+\endinput                           % end morgan-defs.sty
+

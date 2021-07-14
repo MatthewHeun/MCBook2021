@@ -1,6 +1,10 @@
 %%  == Package Version Declaration ==
-\def \morgandate    {2018/05/01}
-\def \morganversion {1.4.7a}           %%
+\def \morgandate    {2019/04/30}
+\def \morganversion {1.4.11}           %%
+% changed handling of loose/\normalsize
+% 15.04.2019: added redefinition of \listofalgorithms
+%01.10.2018: redefined \MC@chaptermark
+%15.05.2018: added option for cambria math
 %20.02.2018: changed indexname from fix index to \morganindexname
 \ProvidesPackage{morgan2}[\morgandate\space v\morganversion\space
                          typesetting M&C books]
@@ -106,7 +110,9 @@
 %% `\NoCaseChange' is a ``shield" from 'textcase' v0.04 onwards
 %% against\\ `\MakeTextUppercase' that 'morgan' titles use
 %% (this is why 'natbib.sty' needs to be overridden):
-      \section*{\refname\NoCaseChange{\sectionmark{\refname}}}}%
+%     \section*{\refname\NoCaseChange{\sectionmark{\refname}}}}%
+      \section{\refname}}%			DRT: make \refname in sectionbib numbered
+      %section*{\refname}}%			DRT: make \refname in sectionbib unnumbered
 %% \ULguess{... replaced &\markright for sec.~\ref{sec:marks}.
 %%          Braces around &\refname are needed ...}{2010/10/21}
 %% \ULguess{TODO: TOC entries [with stars in general] ...}{2009/09/29}
@@ -202,6 +208,19 @@
   }
  }
 
+\newcommand\morgan@mathsetup@cambria{
+ \ifboolexpr{ bool {xetex} or bool{luatex}}
+  {
+   \renewcommand{\Box}{\mdwhtsquare}
+   \RequirePackage{unicode-math}
+   \setmathfont{Cambria Math}
+  }
+  {
+   \RequirePackage{stix}
+  }
+ }
+
+
 %some fix math fonts which are perhaps (or perhaps not ...) used by documents
 \ifboolexpr{ bool {xetex} or bool{luatex}}
 {
@@ -270,6 +289,10 @@
   mathsetup / stix .code:n =
     {
       \cs_set:Npn\morgan@mathsetup{\morgan@mathsetup@stix}
+    },
+   mathsetup / cambria .code:n =
+    {
+      \cs_set:Npn\morgan@mathsetup{\morgan@mathsetup@cambria}
     }
   }
 
@@ -287,9 +310,9 @@
 
 %% Various command regarding fontsizes etc
 %the class (probably ... ) sets normalsize to 10pt, but here it is redefined to 10.5/11pt
-
+\ifloose
 \renewcommand\normalsize{%
-   \ifloose                                             %% v1.3
+                                              %% v1.3
 %% \ULguess{The ``tight" specs required a leading of 15\,pt,
 %%          but 'morgan.sty' provided only 13.5\,pt when
 %%          I received it. The ``loose" specs even require
@@ -297,14 +320,27 @@
 %%          shocking and propose 15\,pt instead, provisionally.}{%%
 %%              2013/01/24}
        \@setfontsize\normalsize{11.0pt}{15.0}%
-   \else
-       \@setfontsize\normalsize{10.5pt}{13.5}%
-   \fi
    \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
    \abovedisplayshortskip \z@ \@plus3\p@
    \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
    \belowdisplayskip \abovedisplayskip
    \let\@listi\@listI}
+\else
+\renewcommand\normalsize{%
+                                              %% v1.3
+%% \ULguess{The ``tight" specs required a leading of 15\,pt,
+%%          but 'morgan.sty' provided only 13.5\,pt when
+%%          I received it. The ``loose" specs even require
+%%          leading of 18\,pt. I expect that this may look
+%%          shocking and propose 15\,pt instead, provisionally.}{%%
+%%              2013/01/24}
+       \@setfontsize\normalsize{10.5pt}{13.5}%
+   \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
+   \abovedisplayshortskip \z@ \@plus3\p@
+   \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
+   \belowdisplayskip \abovedisplayskip
+   \let\@listi\@listI}
+\fi   
 \normalsize
 
 %% `\tenpoint' is a variant of \LaTeX's `\normalsize' for
@@ -522,18 +558,26 @@
 %% |\sectionmark| that will be activated by `\pagestyle{headings}'
 %% \cs{MC@runninghead} will enforce `\MakeTextUppercase',
 %% so it is not needed in the `\mark'... commands.{\sloppy\par}
+%\newcommand*{\MC@chaptermark}[1]{%
+%  \@ifundefined{RHTITLE}%
+%               {\markboth{\ifnum\c@secnumdepth>\m@ne
+%                            \thechapter. \ #1%
+%                          \fi}%
+%                         {}}%
+%               {\markboth{\RHTITLE}%
+%                         {#1}}}
+%new 01.10.2018
 \newcommand*{\MC@chaptermark}[1]{%
   \@ifundefined{RHTITLE}%
-%% \ULguess{I'm following 'book.cls' more closely than
-%%          did 'morgan.sty' v1.17 using the `secnumdepth' test,
-%%          while omitting \cs{@chapapp} and
-%%          \cs{if@mainmatter}.\sloppy\endsloppypar}{2010/10/02}
-               {\markboth{\ifnum\c@secnumdepth>\m@ne
-                            \thechapter. \ #1%
+    {\markboth{\ifnum\c@secnumdepth>\m@ne
+               \thechapter. \ #1%
                           \fi}%
-                         {}}%
+              {\ifnum\c@secnumdepth>\m@ne
+               \thechapter. \ #1%
+                          \fi}}%
                {\markboth{\RHTITLE}%
                          {#1}}}
+
 \newcommand*{\MC@sectionmark}[1]{%
   \@ifundefined{RHTITLE}%
                {\markright{%
@@ -1148,7 +1192,8 @@
 %% As opposed to 'book.cls', the hanging indent of section titles
 %% does not depend on the length of the section number string:
 \renewcommand\@seccntformat[1]{%
-    \hbox to 3pc{\csname the#1\endcsname \hfil}} %% \hfil 2010/02/24
+%   \hbox to 3pc{\csname the#1\endcsname \hfil}}   %% \hfil 2010/02/24
+    \hbox to 3.5pc{\csname the#1\endcsname \hfil}} %% DRT add space before subsec title
 %% With v1.22, `\MC@alignsec' supports option
 %% `[raggedright]'---|\section|:
 \renewcommand\section{%
@@ -1644,7 +1689,7 @@
 \def\deletescreen{\@deletescreentrue}
 \def\@putscreen#1% Puts down a screen of height and width that of
 %                  \@holddisplay but leaves the reference point unchanged.
-%        #1 is one of the commands \tint{...} or \gray{...} to make a screen.
+%        #1 is one of the commands \tint{...} or \grayten{...} to make a screen.
 {\if@deletescreen\else
  \vbox to 0 pt{#1%
  \hrule height \ht\@holddisplay width \wd\@holddisplay depth \dp\@holddisplay
@@ -1653,7 +1698,7 @@
 %
 \def\@myputscreen#1% Puts down a screen of height and width that of
 %                  \@holddisplay but leaves the reference point unchanged.
-%        #1 is one of the commands \tint{...} or \gray{...} to make a screen.
+%        #1 is one of the commands \tint{...} or \grayten{...} to make a screen.
 {\if@deletescreen\else
  \vbox to 0 pt{#1%
  \hrule height \@temphdimen width \wd\@holddisplay depth \@tempddimen
@@ -2081,7 +2126,8 @@
     \vskip  \p@ \@plus\p@ \@minus.5\p@
     \MC@set@tocseccntfmt{%
         \hskip  5.0pc%
-        \hb@xt@ 2.5pc{\SecCnt\hfil}}%
+        %hb@xt@ 2.5pc{\SecCnt\hfil}}%
+        \hb@xt@ 3.0pc{\SecCnt\hfil}}%	% DRT
     \MC@make@tocline@from{#1}{#2}%
 }}
 \renewcommand*{\l@figure}[2]{{%
@@ -2121,6 +2167,7 @@
 %% |\listoftables|:
 \renewcommand*{\listoftables}{%
     \MC@listof\listtablename{Tables}{lot}}
+%%
 %% \ULguess{We could add a List of Codelistings this way.}{2010/08/25}
 %%
 %%  === Bibliography ===
@@ -2426,7 +2473,8 @@
 %%   (but the &\label for this could come right after
 %%    &\begin{subelements}.)}{2009/06/28}
   \else            \refstepcounter{ucount}\fi
-  \par\vspace{12pt plus18pt minus6pt}%
+  \par\vspace{9pt plus3pt minus3pt}%		% DRT - Ulrike's sugg. to reduce space
+% \par\vspace{12pt plus18pt minus6pt}%      %       between definitions, theorems, etc.
 %% \ULguess{Should better be &\addvspace directly after
 %%          another theorem.}{2009/07/29}
   \noindent{\pxfont@thmnum #1 \theucount\thesubelement}
@@ -2577,7 +2625,8 @@
 \fi %% ends `\ifpredefthms'
 %% |\solution| just prints \lq Solution:\rq\ in grey boldface:
 \newcommand{\solution}{%
-  \medskip\noindent\textcolor{grey}{\bfseries Solution:\quad}}
+  \medskip\noindent\textcolor{black}{\bfseries Solution:\quad}}
+% \medskip\noindent\textcolor{gray}{\bfseries Solution:\quad}}
 %% \ULguess{This is from the former |problem| section. A
 %%   &\renewcommand version of the same macro was in
 %%   `example', `examples', and `generic'.}{2009/06/27}
@@ -3027,6 +3076,11 @@
 
 \RequirePackage{algorithm}
 \RequirePackage{algorithmic}          %
+% |\listofalgorithms|:
+\renewcommand*{\listofalgorithms}{%
+    \MC@listof\listalgorithmname{Algorithms}{loa}}
+\let\l@algorithm\l@figure
+
 %RequirePackage[noend]{algpseudocode} % \While, \For, etc.
 
 \RequirePackage[utf8]{inputenc}		% accents like \v and \u
@@ -3124,7 +3178,7 @@ v1.001c 2009/04/17+  \itline... corr.
                      title page; sent to Tondo
 v1.001d 2009/04/22   more specific on \affiliation; TOC; back matter;
                      sent to Tondo
-v1.001e 2009/04/23   \bref; character count + \gray;
+v1.001e 2009/04/23   \bref; character count + \grayten;
                      added some of Tondo's 2009/04/17 to comments;
                      code environments;
                      float tricks and output routine
