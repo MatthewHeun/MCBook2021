@@ -13,11 +13,11 @@
 
 % bibliography
 % \usepackage[comma,sort,authoryear]{natbib}         % author-year
-% \usepackage[comma,sort,numbers]{natbib}            % numbered
+\usepackage[comma,sort,numbers]{natbib}            % numbered
 
 % Attempting per-chapter bibliographies. Not working yet.
-\usepackage[compress,sort,numbers,sectionbib]{natbib}% provides a bibliography for each chapter
-\usepackage{chapterbib}
+% \usepackage[compress,sort,numbers,sectionbib]{natbib}% provides a bibliography for each chapter
+% \usepackage{chapterbib}
 
 
 % 
@@ -25,11 +25,16 @@
 % 
 
 \usepackage{booktabs}    % For awesome table formatting
-\usepackage[inline]{enumitem}  % For inline enumerate* lists
+% \usepackage[inline]{enumitem}  % For inline enumerate* lists
 \usepackage{gensymb}     % For the \degree command
 \usepackage{microtype}   % For (more) beautiful typesetting.
 \usepackage{rotating}    % For rotating figures.
 \usepackage{wrapfig}     % To wrap text around figures.
+
+% The morgan-defs.sty file already loads the enumitem package.
+% Add the inline option here
+% for inline enumerate* lists.
+\PassOptionsToPackage{inline}{enumitem}
 
 % 
 % Begin LaTeX macros created by the authors.
