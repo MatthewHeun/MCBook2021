@@ -13,7 +13,7 @@
 
 % bibliography
 % \usepackage[comma,sort,authoryear]{natbib}         % author-year
-\usepackage[comma,sort,numbers]{natbib}            % numbered
+\usepackage[square,comma,sort&compress,numbers]{natbib} % numbered
 
 % 
 % Begin LaTeX packages imported by the authors.
