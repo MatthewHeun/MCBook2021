@@ -302,10 +302,8 @@ has been growing faster than primary energy consumption
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Questions and Projects}
+\section*{Questions}\index{questions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Questions:\index{questions}
 
 \begin{questions}
 
@@ -314,7 +312,9 @@ Questions:\index{questions}
 \end{questions}
 
 
-\noindent Projects:\index{projects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Projects}\index{projects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{projects}
 
@@ -322,7 +322,7 @@ Questions:\index{questions}
       Evaluate whether current consumption rates meet the sustainability criterion of Graedel and Allenby.
       Evaluate whether current consumption rates meet the strong sustainability criterion.
       Provide suggestions for ways to bring consumption rates closer to strong sustainability.
-
+      
 \end{projects}
 
 
