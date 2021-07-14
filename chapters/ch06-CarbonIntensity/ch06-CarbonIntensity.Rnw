@@ -3,51 +3,76 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+
+%#############################################################
 \chapter{Carbon intensity of energy}
 \label{chap:carbon_intensity}
+%#############################################################
 
-The final term in Equation~\ref{eq:IPARC} is 
-contamination intensity of of resource extraction and consumption ($c$).
-The value of $c$ represents the amount of environmental contamination
-per unit of resource produced.
+As noted in Chapter~\ref{chap:},
+**** Be sure to make this point earlier in the book ****
+the economy is society's metabolism.
+As such, the economy exhibits characteristics of a metabolism:
+it ingests material and emits waste.
+These characteristics of the economic metabolism are captured by the 
+final term in Equation~\ref{eq:IPARC}, 
+the contamination intensity of resource extraction and consumption ($c$).
 Resource extraction was covered in Chapter~\ref{chap:resource_intensity}.
 Environmental contamination is discussed in this chapter.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Contamination intensity of resource extraction}
+\label{sec:contamination_intensity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The contamination intensity of resource extraction ($c$)
+represents the amount of environmental contamination (emitted waste)
+per unit of resource extracted and consumed (ingested material).
 Examples of environmental contamination include
 water eutrophication (from fertilizer runoff), 
 SO$_2$ emissions (from burning sulfurous coal), 
 CO$_2$ emissions (from burning fossil fuels), 
 desertification (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and 
 species losses (due to habitat loss, environmental toxins, and over-exploitation).
-With reference to Table~\ref{tab:CRMs}, specific examples of $c$ include:
+With reference to a few of the critical materials in Table~\ref{tab:CRMs}, 
+specific examples of the environmental contamination caused by material extraction include:
 %
 \begin{itemize}
 
-  \item air, water, and soil pollution~\cite{Lee:2017ui} (contamination) in the form of
+  \item air, water, and soil pollution~\cite{Lee:2017ui} (environmental contamination) in the form of
         bauxite dust,
         sulfur dioxide (SO$_2$), and 
         nitrous oxides (NO$_\mathrm{x}$) emissions
-        from bauxite mining (resource production),
+        from bauxite mining (material extraction),
 
-  \item Toxic tailings (contamination)
-        from Tungsten (resource production) 
+  \item Toxic tailings (environmental contamination)
+        from Tungsten (material extraction) 
         mining operations~\cite{Lee:2021tz}, and
         
-  \item Deforestation and reduced forest quality~\cite{Kissinger:2020ut} (contamination)
-        to make way for rubber plantations (resource production)
+  \item Deforestation and reduced forest quality~\cite{Kissinger:2020ut} (environmental contamination)
+        to make way for rubber plantations (material extraction)
         in southeast Asia.
 
 \end{itemize}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Prime example: carbon intensity of energy}
+\label{sec:carbon_intensity_of_energy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 In this book, 
-the prime example of pollution is carbon dioxide emissions, and 
-the prime example of resource production and consumption is energy
-in all its forms.
-Thus, the prime example for $c$ is the CO$_2$ intensity of energy expressed, 
+the prime example of environmental contamination is carbon dioxide emissions, and 
+the prime example of material extraction and consumption is energy
+of all forms.
+Thus, the prime example for $c$ is the CO$_2$ intensity of energy.
+The units for the CO$_2$ intensity of energy are,
 e.g., in tonnes of CO$_2$ emitted per MJ of energy consumed.
 
-The amount of CO$_2$ emitted each year since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
+The yearly rate of CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
 The clear trend is upward, with small drops corresponding to years of economic recession.
+
 
 <<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"), 
@@ -68,9 +93,19 @@ CO2_emissions %>%
 @
 
 
+The carbon intensity of energy (the prime example for $c$)
+is shown in Figure~\ref{fig:CarbonIntensityGraph}.
+The line in Figure~\ref{fig:CarbonIntensityGraph}
+demonstrates the effect of the long energy transition 
+from traditional biofuels to fossil fuels from 1800 to today.
+Traditional biofuels are carbon neutral, 
+because any CO$_2$ released by combustion was
+already sequestered into the biomass as it grew to maturity.
+Fossil fuels are not carbon neutral; 
+their combustion releases CO$_2$ that was sequestered millions of years ago.
 
 
-<<CarbonIntensityGraph, fig.cap="Carbon intensity of energy, $c$ in the Kaya identity.">>=
+<<CarbonIntensityGraph, fig.cap="Carbon intensity of energy, $c$ in the Kaya identity. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 dplyr::inner_join(
   CO2_emissions, 
   primary_energy %>% 
@@ -88,6 +123,12 @@ dplyr::inner_join(
   
   MKHthemes::xy_theme()
 @
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reducing the carbon intensity of energy}
+\label{sec:reducing_c}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \cleardoublepage
