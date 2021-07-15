@@ -251,13 +251,13 @@ inherently generate strategies for achieving the goals or enforcement mechanisms
 for maintaining behavior. It remains for scientists, policy makers, and government
 officials to conduct research, make recommendations, regulate, and enforce laws.
 
-<<FootprintHDIGraph, fig.cap="Ecological footprint vs. HDI.">>=
+<<FootprintHDIGraph, fig.cap="Ecological footprint vs. HDI. Population is in millions.">>=
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI.xlsx"),
                                   sheet = "data to plot") %>%
   dplyr::filter(`Country Name` != "World") %>% 
   dplyr::mutate(
-    Population = Population / 1e6 # Population now in mullions
-  ) %>%
+    Population = Population / 1e6 # Population now in millions
+  ) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "HDI", y = "Ecological_Footprint_gha_per_person", 
                                                 colour = "Continent", alpha = "Continent", shape = "Continent", size = "Population")) + 
   ggplot2::geom_vline(xintercept = c(0.7, 0.8), size = 0.2) +
@@ -267,12 +267,12 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
   ggplot2::scale_y_continuous(limits = c(0, 16), breaks = seq(0, 16, by = 2)) + 
   ggplot2::scale_size_continuous(breaks = c(10, 100, 1000)) +
   ggplot2::scale_shape_manual(values = c(Africa = 16, Asia = 1, Europe = 16, 
-                                         `North America` = 16, Oceania = 16, `South America` = 16)) +
+                                         `North Am.` = 16, Oceania = 16, `South Am.` = 16)) +
   ggplot2::scale_alpha_manual(values = c(Africa = 0.5, Asia = 1, Europe = 0.5,
-                                         `North America` = 0.5, Oceania = 0.5, `South America` = 0.5)) +
+                                         `North Am.` = 0.5, Oceania = 0.5, `South Am.` = 0.5)) +
   ggplot2::labs(x = "Human development index [-]", 
                 y = "Ecological footprint [gha/person]", 
-                size = NULL, 
+                size = "Pop. [millions]",
                 shape = NULL, 
                 colour = NULL, 
                 alpha = NULL) +
