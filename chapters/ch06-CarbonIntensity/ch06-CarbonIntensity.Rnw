@@ -3,51 +3,76 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+
+%#############################################################
 \chapter{Carbon intensity of energy}
 \label{chap:carbon_intensity}
+%#############################################################
 
-The final term in Equation~\ref{eq:IPARC} is 
-contamination intensity of of resource extraction and consumption ($c$).
-The value of $c$ represents the amount of environmental contamination
-per unit of resource produced.
+As noted in Chapter~\ref{chap:},
+**** Be sure to make this point earlier in the book ****
+the economy is society's metabolism.
+As such, the economy exhibits characteristics of a metabolism:
+it ingests material and emits waste.
+These characteristics of the economic metabolism are captured by the 
+final term in Equation~\ref{eq:IPARC}, 
+the contamination intensity of resource extraction and consumption ($c$).
 Resource extraction was covered in Chapter~\ref{chap:resource_intensity}.
 Environmental contamination is discussed in this chapter.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Contamination intensity of resource extraction}
+\label{sec:contamination_intensity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The contamination intensity of resource extraction ($c$)
+represents the amount of environmental contamination (emitted waste)
+per unit of resource extracted and consumed (ingested material).
 Examples of environmental contamination include
 water eutrophication (from fertilizer runoff), 
 SO$_2$ emissions (from burning sulfurous coal), 
 CO$_2$ emissions (from burning fossil fuels), 
 desertification (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and 
-species losses (due to habitat loss, environmental toxins, and over-exploitation).
-With reference to Table~\ref{tab:CRMs}, specific examples of $c$ include:
+species loss (due to habitat loss, environmental toxins, and over-exploitation).
+With reference to a few of the critical materials in Table~\ref{tab:CRMs}, 
+specific examples of the environmental contamination caused by material extraction include:
 %
 \begin{itemize}
 
-  \item air, water, and soil pollution~\cite{Lee:2017ui} (contamination) in the form of
+  \item air, water, and soil pollution~\cite{Lee:2017ui} (environmental contamination) in the form of
         bauxite dust,
         sulfur dioxide (SO$_2$), and 
         nitrous oxides (NO$_\mathrm{x}$) emissions
-        from bauxite mining (resource production),
+        from bauxite mining (material extraction),
 
-  \item Toxic tailings (contamination)
-        from Tungsten (resource production) 
+  \item Toxic tailings (environmental contamination)
+        from Tungsten (material extraction) 
         mining operations~\cite{Lee:2021tz}, and
         
-  \item Deforestation and reduced forest quality~\cite{Kissinger:2020ut} (contamination)
-        to make way for rubber plantations (resource production)
+  \item Deforestation and reduced forest quality~\cite{Kissinger:2020ut} (environmental contamination)
+        to make way for rubber plantations (material extraction)
         in southeast Asia.
 
 \end{itemize}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Prime example: carbon intensity of energy}
+\label{sec:carbon_intensity_of_energy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 In this book, 
-the prime example of pollution is carbon dioxide emissions, and 
-the prime example of resource production and consumption is energy
-in all its forms.
-Thus, the prime example for $c$ is the CO$_2$ intensity of energy expressed, 
+the prime example of environmental contamination is carbon dioxide emissions, and 
+the prime example of material extraction and consumption is energy
+of all forms.
+Thus, the prime example for $c$ is the CO$_2$ intensity of energy.
+The units for the CO$_2$ intensity of energy are,
 e.g., in tonnes of CO$_2$ emitted per MJ of energy consumed.
 
-The amount of CO$_2$ emitted each year since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
+The yearly rate of CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
 The clear trend is upward, with small drops corresponding to years of economic recession.
+
 
 <<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"), 
@@ -68,9 +93,19 @@ CO2_emissions %>%
 @
 
 
+The carbon intensity of energy (the prime example for $c$)
+is shown in Figure~\ref{fig:CarbonIntensityGraph}.
+The line in Figure~\ref{fig:CarbonIntensityGraph}
+demonstrates the effect of the long energy transition 
+from traditional biofuels to fossil fuels from 1800 to today.
+Traditional biofuels are carbon neutral, 
+because any CO$_2$ released by combustion was
+already sequestered into the biomass as it grew to maturity.
+Fossil fuels are not carbon neutral; 
+their combustion releases CO$_2$ that was sequestered millions of years ago.
 
 
-<<CarbonIntensityGraph, fig.cap="Carbon intensity of energy, $c$ in the Kaya identity.">>=
+<<CarbonIntensityGraph, fig.cap="Carbon intensity of energy, $c$ in the Kaya identity. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 dplyr::inner_join(
   CO2_emissions, 
   primary_energy %>% 
@@ -88,6 +123,71 @@ dplyr::inner_join(
   
   MKHthemes::xy_theme()
 @
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reducing the carbon intensity of energy}
+\label{sec:reducing_c}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Equation~\ref{eq:IPARC} shows that reducing any of the right-hand side terms to 0
+will eliminate CO$_2$ emissions.
+I.e., if population ($P$), affluence ($A$), energy intensity of the economy ($I_p$)
+or carbon intensity of energy ($c$) go to 0, 
+CO$_2$ emissions will be eliminated.
+Few people want to reduce population ($P$) or affluence ($A$).
+The primary energy intensity of the economy ($I_p$) has been declining
+since 1960 (Figure~\ref{fig:EnergyIntensityGraph}), 
+but not as fast as population (Figure~\ref{fig:}) and affluence (Figure~\ref{fig:AffluenceGraph}) are growing.
+
+Figure~\ref{fig:CarbonIntensityGraph} shows that the carbon intensity of energy 
+has hovered around 63 Mt CO$_2$/EJ from 1960 to today.
+Thus, for the last 60 years, the carbon intensity of energy has been stubbornly constant.
+It appears that eliminating CO$_2$ emissions by significantly reducing 
+the carbon intensity of energy ($c$) will be require unprecedented changes
+to the world's primary energy sources.
+
+If we want to reduce CO$_2$ emissions by reducing 
+the carbon intensity of energy ($c$), 
+we could transition back to the energy mix of the first half of the 18$^\mathrm{th}$ century, 
+exclusive use of traditional biofuels, namely wood and wood products.
+(See Figure~\ref{fig:PrimaryEnergyGraph}.)
+However, supplying the energy needs of today's economy would be impossible:
+we don't have enough available land area to grow the required amount of crops.
+**** Josh should make a calculation to verify this claim. ****
+
+Alternatively, we could transition the world energy system
+to renewable energy sources: water (hydro), wind, and solar (WWS).
+**** Add reference to Dellucci here. ****
+However, in addition to changing the world's energy sources,
+reducing the carbon intensity of energy 
+will require 
+significant changes to the world's energy infrastructure.
+Indeed, a transition to WWS will bring several new challenges.
+First, WWS energy resources produce electricity, not liquid fuels.
+Thus, any economic sector that currently relies upon liquid fuels must be electrified.
+An important example of the need to electrify is the transportation sector.
+Today, transport is almost exclusively powered by liquid fossil fuels (gasoline and diesel).
+Electrifying the world's transportation fleet is a prerequisite to a transition to WWS
+and a zero-carbon economy.
+Electrification of the world's transportation fleet will be very expensive.
+**** Josh to find a cost estimate. ****
+
+Second, wind and solar (the \emph{WS} in W\emph{WS}) are intermittent sources of electricity, 
+while coal, natural gas, nuclear, and water (hydro) sources are not.
+At present, electric grids accommodate only a fraction of intermittent electricity, much less than 100\%.
+So a transition to wind and solar primary energy sources will require
+redesign and re-implementation of electricity grids worldwide.
+
+Third, WWS primary energy sources are energy intensive to manufacture.
+So the transition to a WWS future will require significant energy investment
+in addition to significant financial investment.
+If the energy to make WWS systems comes from fossil fuels, 
+significant CO$_2$ will be emitted during the transition
+from today's energy regime to a WWS regime.
+
+
+
 
 
 \cleardoublepage

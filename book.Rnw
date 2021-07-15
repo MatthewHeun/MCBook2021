@@ -13,23 +13,22 @@
 
 % bibliography
 % \usepackage[comma,sort,authoryear]{natbib}         % author-year
-\usepackage[comma,sort,numbers]{natbib}            % numbered
-
-% Attempting per-chapter bibliographies. Not working yet.
-% \usepackage[sectionbib,compress]{natbib}% provides a bibliography for each chapter
-% \usepackage{chapterbib}
-
+\usepackage[square,comma,sort&compress,numbers]{natbib} % numbered
 
 % 
 % Begin LaTeX packages imported by the authors.
 % 
 
 \usepackage{booktabs}    % For awesome table formatting
-\usepackage[inline]{enumitem}  % For inline enumerate* lists
 \usepackage{gensymb}     % For the \degree command
 \usepackage{microtype}   % For (more) beautiful typesetting.
 \usepackage{rotating}    % For rotating figures.
 \usepackage{wrapfig}     % To wrap text around figures.
+
+% The morgan-defs.sty file already loads the enumitem package.
+% Add the inline option here
+% for inline enumerate* lists.
+\PassOptionsToPackage{inline}{enumitem}
 
 % 
 % Begin LaTeX macros created by the authors.
@@ -78,6 +77,22 @@ add_circ <- function(.plot, r, xc, yc, fill = NA, n_segs = 100){
 
 
 %
+% Create environments for questions and projects, 
+% as suggested by Tondo on 14 July 2021.
+%
+
+\newenvironment{questions}%
+{\begin{enumerate}
+\renewcommand{\labelenumi}{Q\thechapter.\arabic{enumi}}}
+{\end{enumerate}}
+
+\newenvironment{projects}%
+{\begin{enumerate}
+\renewcommand{\labelenumi}{P\thechapter.\arabic{enumi}}}
+{\end{enumerate}}
+
+
+%
 % End author additions
 % 
 
@@ -101,7 +116,6 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 \makeatletter
 \g@addto@macro{\UrlBreaks}{\UrlOrds}
 \renewcommand{\ALG@name}{\color{black}Algorithm}
-%\newcommand{\CO2}{CO$_2$}
 \makeatother
 
 
@@ -109,7 +123,6 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 \makeindex{}                     % if you are creating an index for your book
 
 \begin{document}
-% \SweaveOpts{concordance=TRUE}  % Commented on 17 Oct 2019 to eliminate some errors.
 
  \frontmatter                   % we'll produce the fm for you; 
     \input{fm}                  % we'll need an Abstract and Keywords
