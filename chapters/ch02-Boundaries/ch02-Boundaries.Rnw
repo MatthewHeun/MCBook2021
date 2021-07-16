@@ -56,8 +56,8 @@ like individual stocks in a portfolio: wide diversity of species minimizes risk 
 Early versions of this text included a chapter on systems theory because the Earth's processes 
 are complex systems (and systems theory is cool). 
 While systems theory is interesting and useful, few insights from 
-systems theory are {\i required} to understand sustainability issues. One insight 
-that {\i is} required is the concept of a tipping point. The name comes from a boat's 
+systems theory are \emph{required} to understand sustainability issues. One insight 
+that \emph{is} required is the concept of a tipping point. The name comes from a boat's 
 stability, see Figure~\ref{fig:buoyancy}. If the boat is tipped a small amount,
 the weight of the boat and the effect of buoyancy act to right the boat. However,
 there is an angle where, if the boat is tipped past that angle, the forces will 
@@ -102,13 +102,16 @@ Exponential growth, for instance in human population and consumption, is analogo
 to heeling over a boat. Growth cause greater and great demands on the ecosystem. 
 Eventually the boat heels over so far that it capsizes.
 
+% "Climate genocide"
+% https://nymag.com/intelligencer/amp/2018/10/un-says-climate-genocide-coming-but-its-worse-than-that.html
+
 % wikipedia article on "tipping points in the climate system."
 Drastic or catastrophic changes to ecosystems are not new or solely a modern problem.
 Easter Island, the Levant, and the Sahara Desert have all undergone dramatic ecological 
 shifts, although the degree to which this is attributable to human actions is not
 agreed upon or well understood. 
 % if we don't understand it, should we mess with it?
-What {\i is} new is scope or magnitude of humanity's ability to affect the environment,
+What \emph{is} new is scope or magnitude of humanity's ability to affect the environment,
 both due to high population and our level of technology.
 For example, nuclear and industrial "accidents," such as the Thule air base crash,
 the Palomares crash, the Seveso dioxin release, and, more recently, the Chernobyl
@@ -120,8 +123,8 @@ truly global scale.
 The previous chapter framed sustainability in terms of "impacts," that is, 
 negative effects on the environment resulting from human activity. 
 Broadly, there are two approaches for managing or responding to impacts. 
-{\i Planetary boundaries} describe the maximum (desirable) {\i level} of effects. 
-The second method uses a weighted average, called an {\i index}, of impacts, perhaps
+\emph{Planetary boundaries} describe the maximum (desirable) \emph{level} of effects. 
+The second method uses a weighted average, called an \emph{index}, of impacts, perhaps
 with some other factors. The idea use the index as a proxy management tool, that is, 
 to describe desirable behavior.
 
@@ -205,7 +208,7 @@ Companies that provide oil-change service recommend frequent oil changes, perhap
 often as every 3000 miles. Automobile manufactures have increased this limit over
 decades with better engine and component technology; every 5000-7000 miles might be the 
 recommendation. Newer cars might calculate their own replacement based on environmental
-conditions and driving history (essentially using an index, see below). However, {\i no 
+conditions and driving history (essentially using an index, see below). However, \emph{no 
 one} would recommend not replacing the oil for 100,000 miles. If the oil is not replaced
 significant damage will be done to the engine, likely disabling the car's ability to drive.
 In this analogy, the car's engine represents planet Earth. The number of miles before

@@ -18,7 +18,7 @@ will examine human population dynamics and the impact of human activities on ani
 Currently, humans (36\%) and domestic livestock (60\%) constitute 96\% of the mass of
 mammals on the planet \cite{ref:BarOn2018} -- only 4\% are wild animals 
 such as whales, bison, deer, and bears. 
-Wild vertebrate populations have declined by 68\% since 1970 \cite{WWFLPI2020}. 
+Wild vertebrate populations have declined by 68\% since 1970 \cite{WWFLPR2020}. 
 Populations of insects are down ~80\% in the last 30 years \cite{Hallmann2017}.
 These numbers are alarming because they could indicate a drastic decline in the 
 quality and/or quantity of ecosystem services. One of the planetary boundaries
@@ -31,11 +31,16 @@ megafauna extinctions thought to be the result of contact with early modern huma
 Thus, human-caused extinctions are a feature not unique to the current century.
 (Although there is some debate about the role of climate change in prehistoric 
 mass extinctions just like climate change plays a role in the present crisis.)
+% https://www.theguardian.com/environment/2019/apr/01/butterfly-numbers-fall-by-84-in-netherlands-over-130-years-study
+% https://www.vox.com/science-and-health/2018/10/30/18042150/wwf-living-planet-report-vertebrate-loss
+% https://www.pnas.org/content/115/44/11262 -- it will take millions of years to recover the species we've already lost.
 
-We should distinguish between the {\i reason(s)} and the {\i mechanism(s)} for 
-the decline in animal populations. Population decline is an {\i impact} from the left-hand
-side of \ref{eq:IPARC}. The {\i reason(s)} (that is, the "why") are given on the right-hand side of \ref{eq:IPARC}.
-In contrast, some of the {\i mechanisms} (that is, the "how") behind the decline 
+
+We should distinguish between the \emph{reason(s)} and the \emph{mechanism(s)} for 
+the decline in animal populations. Population decline is an \emph{impact} from the left-hand
+side of \ref{eq:IPARC}. The \emph{reason(s)} (that is, the "why") 
+are given on the right-hand side of \ref{eq:IPARC}.
+In contrast, some of the \emph{mechanisms} (that is, the "how") behind the decline 
 in animal populations are summarized below.
 Habitat destruction plays an important role in the decline of animal populations, 
 such as in the case of the Rocky Mountain locust, which in 1875 had a swarm of 
@@ -205,6 +210,13 @@ reasons of immigration, increased life expectancy, and the creation of more
 households due to divorce—will increase, not abate. The need for master-planning 
 has never been greater.
 \end{quote} %%https://www.newcriterion.com/issues/2018/6/the-future-of-classicism-9861
+
+\section{Resources}
+The Once and Future World: Nature As It Was, As It Is, As It Could Be, by J.B. MacKinnon
+
+%% https://www.theguardian.com/books/2015/jul/16/rainbow-dust-the-moth-snowstorm-in-pursuit-of-butterflies-review
+%% Science may clarify priorities “but the whole show is essentially about Love”.
+%% JVA: Technology says, 'can we," economics tells us the tradeoffs, love lets us decide whether we want to.
 
 \section{Discussion Questions}
 \begin{questions}

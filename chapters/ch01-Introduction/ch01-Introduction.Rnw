@@ -10,11 +10,11 @@ Let’s begin with a story. Once upon a time, a king was challenged to a game of
 poor farmer. If he lost, the king would have to pay the farmer a chessboard’s worth of
 grain, defined as one kernel of grain on the first square, two grains on the second
 square, four grains on the fourth square, and so on, with each subsequent square receiving
-double what was on the previous square. The king accepted the wager but, because this is
-fable, lost the game. % according to chess.com a match is a series of games.
+double what was on the previous square. The king accepted the wager but lost the game. 
+% according to chess.com a match is a series of games.
 A chessboard has eight rows and eight columns, so the king had to
 pay $2^{64}$ (less one) grains of rice. Since a pound is seven thousand grains of rice 
-(\~65 mg each), the king owed her $1.195 \times 10^{15}$ kg of rice, which is
+(\char`~ 65 mg each), the king owed her $1.195 \times 10^{15}$ kg of rice, which is
 about 12\% of the weight of everything ever produced by the human species [1]. At
 US\$6.85/bushel, the grain would be worth about 300 trillion dollars, which is (roughly)
 ten times more money than exists in the world.
@@ -36,9 +36,9 @@ characteristics of sustainable societies.
 Basic data and key concepts start each chapter.
 The text is deliberately short because the book is not intended to be comprehensive.
 The focus is on equipping students to discuss moral and ethical issues around sustainability.
-Because the choices and paths to sustainability are bristling with value judgements and moral choices,
+Because the choices and paths to sustainability are filled with value judgements and moral choices,
 the end-of-chapter discussion questions mostly point to tradeoffs and do not have “right answers.”
-Instead, different answers are indicative of different preferences. 
+Instead, different answers indicate different preferences. 
 This book attempts to provide a coherent framework for discussing sustainability 
 that is grounded in a sense of scale. Therefore, we prioritize presenting 
 information graphically. The intent is to equip
@@ -46,17 +46,15 @@ readers with basic knowledge (informed by scale) so we can grapple with tough mo
 questions. 
 \emph{This book should be easy to read but hard to digest.}
 
-
-
-The remainder of this chapter summarizes key themes of the book. Sustainability is
-existentially important but very difficult to achieve, for several reasons. The
-numbers and timescales involved are difficult for humans to grasp. 
+Sustainability is existentially important but very difficult to achieve, for several reasons. 
+The numbers and timescales involved are difficult for humans to grasp. 
 Sustainability challenges are complex because they involved a variety of
 interrelated problems from different domain areas. The challenges associated with
 transitioning to a sustainable existence are complex and interconnected. The focus
-of this book is on the challenges of sustainability. While we may, at
+of this book is on the many challenges of sustainability. While we may, at
 times, point to directions for improved sustainability, it is beyond our scope 
 (and indeed our ability) to provide solutions for all sustainability problems.
+The remainder of this chapter summarizes key themes of the book. 
 
 \section{What is sustainability?}
 "Sustainably" is a critical concept. If humanity is not living sustainably we will 
@@ -89,8 +87,8 @@ needed" classifications, but as a whole that exists on a continuum from "fully f
 to "nonfunctional." The choices and paths to sustainability are bristling with value
 judgements and moral choices about what to value and how much. 
 Concomitant with such choices is a weighting of appropriate risks to the ecosystem and 
-human society. Different answers to these questions come from different {\i a priori} assumptions
-and values.
+human society. Different answers to these questions come from different \emph{a priori} 
+assumptions and values.
 
 The broadest definitions of sustainability include human-created devices and systems.
 Although they are great cultural and historical artifacts, humanity could survive without 
@@ -105,19 +103,20 @@ includes issues such as pollution, resource depletion, habitat loss, and biodive
 Economic sustainability involves questions of profit and loss, wealth management, and
 macroeconomic policy. Social sustainability comprises human and civil rights, suffering,
 and personal freedom. This book will discuss issues associated with each of these three
-areas of sustainability but with a focus on energy and carbon emissions {\i not} because it is
-the only sustainability problem, but because climate change is currently the one most {\i urgent}
-sustainability problem.
+areas of sustainability but with a focus on energy and carbon emissions \emph{not} because it is
+the only sustainability problem, but because climate change is currently one of the
+most \emph{urgent} sustainability problems.
 
 \subsection{Definitions of sustainability}
 The most oft-quoted definition of sustainability comes from the Brundtland report
 "Sustainable development is development that meets the needs of the present without
-compromising the ability of future generations to meet their own needs." Note that
-sustainable development (an oxymoron?!) is not the same as sustainability and “needs” are
-subjective.
+compromising the ability of future generations to meet their own needs" \cite{Brundtland}.
+Note that sustainable development (an oxymoron?!) is not the same as sustainability, and 
+“needs” are subjective. 
+%could add two paragraphs of explanation here. Or, maybe make them e-o-c questions.
 
 Herman Daly proposed the following three rules for achieving ecological 
-(or environmental) sustainability:
+(or environmental) sustainability \cite{Daly1996}:
 \begin{enumerate}
 \item Renewable resources such as fish, soil, and groundwater must be used no faster 
 than the rate at which they regenerate.
@@ -133,6 +132,30 @@ provide resources and “take care of” wastes. We will examine the concept of 
 greater detail in the next chapter.
 
 We need the three pillars and idea of metrics for all three...
+\begin{quote}
+Previous research by the authors focused on the identification of the main underlying 
+principles that structure the concept of sustainable development \cite{Quental2011}. 
+These principles could be traced back to different scientific approaches that, 
+the authors argued, eventually led to the modern understanding of the concept. 
+Four main sustainability principles were identified:
+
+the limits principle: the human economy is embedded within the ecosphere and, as such, 
+sustainability depends on ensuring that the scale of the human economy is low enough 
+to allow the maintenance of healthy life support systems;
+
+the means and ends principle: natural resources and economy have an instrumental 
+value in fulfilling the ultimate ends of society. Economic growth should not be 
+understood as an end in itself but as an instrument that can help achieving 
+higher-order ends such as human well-being and freedom;
+
+the needs principle: each system, and every human being, has its own minimum 
+needs in order to be viable. These irreducible needs must be satisfied independently
+and cannot be aggregated;
+
+the complexity principle: systems exhibit complex behavior, namely through multiple 
+stable equilibria and non-linear behavior, and may even collapse when thresholds are reached.
+\end{quote}
+
 
 <<venn_diagram, fig.height=3, fig.width=4.5, fig.align='center', echo=FALSE, fig.cap="Three overlapping aspects of sustainability.", fig.scap="Aspects of sustainability.">>=
 # The draw.triple.venn function returns a gList object,
@@ -168,7 +191,8 @@ expands the generic expression for “technology” to be the product of
 energy intensity of the economy and the carbon intensity of energy, that is the 
 amount of energy per unit GDP times CO$_2$ per unit energy.
 
-Chapters 2-6 of this book are organized around a hybrid of the IPAT and Kaya
+Chapters \ref{chap:planetary_boundaries}-\ref{chap:carbon_intensity}
+of this book are organized around a hybrid of the IPAT and Kaya
 approaches. We keep the more general “impact” of IPAT but also generalize the more insightful 
 ``technology'' expression from Kaya as the product of resource intensity of the economy 
 and a resource impact intensity.
