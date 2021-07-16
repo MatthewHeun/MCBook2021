@@ -27,8 +27,8 @@ Environmental contamination is discussed in this chapter.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The contamination intensity of resource extraction ($c$)
-represents the amount of environmental contamination (emitted waste)
-per unit of resource extracted and consumed (ingested material).
+represents the amount of environmental contamination (emitted wastes)
+per unit of extracted and consumed resources (ingested materials).
 Examples of environmental contamination include
 water eutrophication (from fertilizer runoff), 
 SO$_2$ emissions (from burning sulfurous coal), 
@@ -36,7 +36,7 @@ CO$_2$ emissions (from burning fossil fuels),
 desertification (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and 
 species loss (due to habitat loss, environmental toxins, and over-exploitation).
 With reference to a few of the critical materials in Table~\ref{tab:CRMs}, 
-specific examples of the environmental contamination caused by material extraction include:
+specific examples of the environmental contamination caused by resource extraction and consumption include:
 %
 \begin{itemize}
 
@@ -63,12 +63,12 @@ specific examples of the environmental contamination caused by material extracti
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 In this book, 
-the prime example of environmental contamination is carbon dioxide emissions, and 
-the prime example of material extraction and consumption is energy
-of all forms.
+the prime example of environmental contamination is carbon dioxide emissions. 
+Energy is the prime example of material extraction and consumption.
+(See Chapter~\ref{chap:resource_intensity}.)
 Thus, the prime example for $c$ is the CO$_2$ intensity of energy.
 The units for the CO$_2$ intensity of energy are,
-e.g., in tonnes of CO$_2$ emitted per MJ of energy consumed.
+e.g., tonnes of CO$_2$ emitted per MJ of energy consumed.
 
 The yearly rate of CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
 The clear trend is upward, with small drops corresponding to years of economic recession.
@@ -96,13 +96,15 @@ CO2_emissions %>%
 The carbon intensity of energy (the prime example for $c$)
 is shown in Figure~\ref{fig:CarbonIntensityGraph}.
 The line in Figure~\ref{fig:CarbonIntensityGraph}
-demonstrates the effect of the long energy transition 
-from traditional biofuels to fossil fuels from 1800 to today.
+demonstrates the long transition 
+from traditional biofuels to fossil fuels.
 Traditional biofuels are carbon neutral, 
 because any CO$_2$ released by combustion was
 already sequestered into the biomass as it grew to maturity.
 Fossil fuels are not carbon neutral; 
 their combustion releases CO$_2$ that was sequestered millions of years ago.
+When the world transitioned away from traditional biofuels toward fossil fuels,
+the carbon intensity of energy rose.
 
 
 <<CarbonIntensityGraph, fig.cap="Carbon intensity of energy, $c$ in the Kaya identity. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
