@@ -11,10 +11,10 @@
 
 
 <<AffluenceGraph, fig.cap = "Annual world GDP per capita, affluence ($A$) in the Kaya identity. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
-world_gdppc <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
-                                  sheet = "GDPpc") %>% 
+world_gdppc_Maddison <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
+                                           sheet = "GDPpc-Maddison-WB") %>% 
   dplyr::select(-Country, -Source)
-world_gdppc %>% 
+world_gdppc_Maddison %>% 
   dplyr::mutate(
     gdppc_2017_thousand_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000
   ) %>% 
@@ -27,6 +27,24 @@ world_gdppc %>%
   MKHthemes::xy_theme()
 @
 
+
+
+<<AffluenceGraph, fig.cap = "Annual world GDP per capita, affluence ($A$) in the Kaya identity. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from De Long.">>=
+world_gdppc_DeLong <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
+                                           sheet = "GDPpc-DeLong-WB") %>% 
+  dplyr::select(-Country, -Source)
+world_gdppc_DeLong %>% 
+  dplyr::mutate(
+    gdppc_2017_thousand_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000
+  ) %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "gdppc_2017_thousand_intl_dollars_per_capita")) + 
+  ggplot2::geom_line(size = 1) + 
+  ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 20, by = 2))) +
+  ggplot2::labs(x = NULL, 
+                y = "Affluence (A) [2017 Intl. k$/person-year]") +
+  
+  MKHthemes::xy_theme()
+@
 
 
 
