@@ -10,7 +10,7 @@
 
 
 
-<<AffluenceGraph, fig.cap = "Annual world GDP per capita, affluence ($A$) in the Kaya identity. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
+<<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence ($A$) in the Kaya identity. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
 world_gdppc_Maddison <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
                                            sheet = "GDPpc-Maddison-WB") %>% 
   dplyr::select(-Country, -Source)
@@ -29,7 +29,7 @@ world_gdppc_Maddison %>%
 
 
 
-<<AffluenceGraph, fig.cap = "Annual world GDP per capita, affluence ($A$) in the Kaya identity. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from De Long.">>=
+<<AffluenceGraph-DeLong, fig.cap = "Annual world GDP per capita, affluence ($A$) in the Kaya identity. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from De Long.">>=
 world_gdppc_DeLong <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
                                            sheet = "GDPpc-DeLong-WB") %>% 
   dplyr::select(-Country, -Source)
@@ -48,14 +48,14 @@ world_gdppc_DeLong %>%
 
 
 
-<<GDPGraph, fig.cap="World annual GDP calculated by multiplying world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph}.">>=
+<<GDPGraph-Maddison, fig.cap="World annual GDP calculated by multiplying world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph-Maddison}.">>=
 # Gather world population data
 world_pop <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "WorldPopulation.xlsx"),
                                   sheet = "world_pop") %>% 
   dplyr::select(-Source)
-world_gdp <- dplyr::inner_join(
+world_gdp_Maddison <- dplyr::inner_join(
   # Gather GDP per capita data
-  world_gdppc,
+  world_gdppc_Maddison,
   world_pop, 
   by = "Year"
 ) %>% 
@@ -65,7 +65,38 @@ world_gdp <- dplyr::inner_join(
   )
 
 # Graph but in trillion dollars.
-world_gdp %>%
+world_gdp_Maddison %>%
+  dplyr::mutate(
+    GDP_trillion_2017_intl_dollars = world_gdp_2017_intl_dollars / 1e12
+  ) %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "GDP_trillion_2017_intl_dollars")) +
+  ggplot2::geom_line(size = 1) +
+
+  ggplot2::scale_y_continuous(limits = c(0, NA)) +
+  ggplot2::labs(x = NULL,
+                y = "World GDP [2017 Intl. T$/year]") +
+
+  MKHthemes::xy_theme()
+@
+
+
+
+
+<<GDPGraph-DeLong, fig.cap="World annual GDP calculated by multiplying world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph-DeLong}.">>=
+# Gather world population data
+world_gdp_DeLong <- dplyr::inner_join(
+  # Gather GDP per capita data
+  world_gdppc_DeLong,
+  world_pop, 
+  by = "Year"
+) %>% 
+  dplyr::mutate(
+    # Multiply GDP per capita and population
+    world_gdp_2017_intl_dollars = gdppc_2017_intl_dollars_per_capita * population
+  )
+
+# Graph but in trillion dollars.
+world_gdp_DeLong %>%
   dplyr::mutate(
     GDP_trillion_2017_intl_dollars = world_gdp_2017_intl_dollars / 1e12
   ) %>% 

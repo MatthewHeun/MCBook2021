@@ -265,7 +265,7 @@ i.e.\ dividing Figure~\ref{fig:PrimaryEnergyGraph}
 by Figure~\ref{fig:GDPGraph}.
 The result is Figure~\ref{fig:EnergyIntensityGraph}.
 
-<<EnergyIntensityGraph, fig.cap="Primary energy intensity of economic activity, $I_p$ in the Kaya identity. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:GDPGraph}.">>=
+<<EnergyIntensityGraph-Maddison, fig.cap="Primary energy intensity of economic activity, $I_p$ in the Kaya identity. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:GDPGraph}. Uses Maddison data.">>=
 # Create data for the energy intensity of the economy.
 dplyr::inner_join(
   # Get the primary energy data
@@ -273,7 +273,7 @@ dplyr::inner_join(
     dplyr::group_by(Year) %>% 
     dplyr::summarise(energy_TWh = sum(energy_TWh)), 
   # Get the GDP data
-  world_gdp %>% 
+  world_gdp_Maddison %>% 
     dplyr::select(Year, world_gdp_2017_intl_dollars), 
   by = "Year"
 ) %>% 
@@ -287,6 +287,29 @@ dplyr::inner_join(
                 y = expression(atop("Prim. energy intensity ("*I[p]*") [MJ/2017 Intl. $]"))) +
   MKHthemes::xy_theme()
 @
+
+<<EnergyIntensityGraph-DeLong, fig.cap="Primary energy intensity of economic activity, $I_p$ in the Kaya identity. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:GDPGraph}. Uses DeLong data.">>=
+# Create data for the energy intensity of the economy.
+dplyr::inner_join(
+  # Get the primary energy data
+  primary_energy %>% 
+    dplyr::group_by(Year) %>% 
+    dplyr::summarise(energy_TWh = sum(energy_TWh)), 
+  # Get the GDP data
+  world_gdp_DeLong %>% 
+    dplyr::select(Year, world_gdp_2017_intl_dollars), 
+  by = "Year"
+) %>% 
+  dplyr::mutate(
+    energy_per_GDP_MJ_per_dollar = energy_TWh * 3600000000 / world_gdp_2017_intl_dollars  # 3600000000 MJ / TWh
+  ) %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_GDP_MJ_per_dollar")) + 
+  ggplot2::geom_line(size = 1) + 
+  ggplot2::labs(x = NULL,
+                y = expression(atop("Prim. energy intensity ("*I[p]*") [MJ/2017 Intl. $]"))) +
+  MKHthemes::xy_theme()
+@
+
 
 According to Equation~\ref{eq:IPARC}, 
 as the energy intensity of the economy falls, 
