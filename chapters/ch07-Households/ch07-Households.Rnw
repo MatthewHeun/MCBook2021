@@ -13,25 +13,37 @@
 
 %#############################################################
 \chapter{Households}
-\label{chap:households}
+\label{chap:households} \index{households}
 %#############################################################
 
+This is the first of six chapters to discuss
+economic sectors and areas of life 
+where sustainability challenges are relevant:
+households (this chapter),
+transportation (Chapter~\ref{chap:transportation}), 
+agriculture (Chapter~\ref{chap:agriculture}), 
+land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}), and
+government (Chapter~\ref{chap:government}).
+A summary of sustainability-friendly personal actions 
+is provided in Chapter~\ref{chap:personal_action}.
+This chapter focuses on households.
 
-Households are sites of energy and material consumption.
+Households are important for sustainability, 
+because they are sites of energy and material consumption.
 For example, Figure~\ref{fig:LLNL_sankey} shows that 
 11.5~quads of energy are consumed in U.S.\ residences%
 \footnote{
 A quad is 1 short quadrillion BTUs, or $10^{15}$~BTU.
 },
 %
-predominantly electricity, natural gas, and petroleum.
+predominantly electricity and natural gas.\index{electricity!consumption!households}
 This 11.5~quads represents 16\% of final energy consumption.
 Energy consumption is the source of sustainability impacts
-(CO$_2$ emissions and resource depletion, for example)
-far beyond the site (e.g., households)
-where useable energy is converted to heat.
+(CO$_2$ emissions\index{carbon dioxide!emissions of} and 
+natural resource extraction\index{natural resources!extraction of})
+far beyond the site of the demand (households).
 In addition to energy, sustainability impacts arise 
-from household decisions about food and material consumption, too.
+from household decisions about food\index{food!consumption of} and material consumption, too.
 Thus, decisions made in households have sustainability implications
 far beyond the walls of each abode.
 
@@ -42,47 +54,43 @@ far beyond the walls of each abode.
 \label{fig:LLNL_sankey}
 \end{figure}
 
-Some people (physical plant employees, custodial staff, or supervisors)
-control buildings and appliances
-that consume energy, material, and other resources.
-Such leaders make decisions every day that have sustainability implications.
-``Regular'' people often have little power to make decisions
-with sustainability implications
-in many areas of life 
-(work, school, or church).
-However, many everyday people made decisions with sustainability implications
-in their own household.
-
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Households are a (the) site where sustainability meets everyday life.
+Households are the site where sustainability meets everyday life.
 \end{mcframe}
 
+Some people (physical plant employees, custodial staff, or supervisors)
+operate buildings and machines
+that consume energy, raw materials, and other resources.
+Such leaders make decisions every day that have sustainability implications.
+In contrast, ordinary people often have little power to make decisions
+with sustainability implications
+in many areas of life 
+(work, school, or church).
+However, every ordinary person makes decisions with sustainability implications
+in their own household.
+
 Figure~\ref{fig:average_residential_energy} shows how the average U.S.\ resident
-%%exercises their agency in the realm of
-allocates their energy consumption, by
-showing the percentages of energy consumption
+allocates their energy consumption\index{energy consumption!residential}
 for several end uses~\citep[Fig.~3]{EIA_2018}.
 The end use categories in Figure~\ref{fig:average_residential_energy} illustrate
 how choices made in households
 intersect with sustainability topics covered in other chapters, including
-energy (Chapter~\ref{chap:energy}),
-water (Chapter~\ref{chap:air_and_water}), and
-food (Chapter~\ref{chap:food_and_agriculture}).
+energy and water (Chapter~\ref{chap:resource_intensity}) and 
+food (Chapter~\ref{chap:agriculture}).
 Clearly,
 population (Chapter~\ref{chap:population}),
-the economy (Chapter~\ref{chap:economy}),
-land use and urban planning (Chapter~\ref{chap:land_use_and_urban_planning}),
-government and regulations (Chapter~\ref{chap:government_and_regulations}),
-values (Chapter~\ref{chap:values_and_religion}), and
-personal action (Chapter~\ref{chap:personal_actions})
+the economy (Chapter~\ref{chap:affluence}),
+land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}),
+government (Chapter~\ref{chap:government}), and
+personal actions (Chapter~\ref{chap:personal_action})
 also affect household sustainability.
 
 \begin{figure}
 \centering
 \includegraphics[width=\figwidth]{chapters/ch07-Households/figures/Average_US_Residential_Energy_Consumption.pdf}
-\caption[Average residential energy consumption.]{Average U.S.\ residential energy consumption by end use~\citep[Fig.~3]{EIA_2018}.}
+\caption{Average U.S.\ residential energy consumption by end use~\citep[Fig.~3]{EIA_2018}.}
 \label{fig:average_residential_energy}
 \end{figure}
 
@@ -103,13 +111,11 @@ purchasing or renting a home or apartment,
 heating and cooling,
 hygeine, and
 lighting.
-This focus narrows the scope of this chapter and
-avoids repeating material from others.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Purchasing and renting}
-\label{sec:purchasing_and_renting}
+\label{sec:purchasing_and_renting} \index{households!purchasing and renting}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Many aspects of purchasing or renting a residence
@@ -118,12 +124,13 @@ have sustainability implications, size and location chief among them.
 
 %++++++++++++++++++++++++++++++
 \subsection{Size}
-\label{sec:dwelling_size}
+\label{sec:dwelling_size} \index{households!size}
 %++++++++++++++++++++++++++++++
 
 Figure~\ref{fig:residential_elect_vs_home_size} shows the trend of
 electricity consumption with respect to home size and
-confirms intuition that dwelling size is positively correlated with energy consumption.
+confirms intuition that dwelling size is positively correlated 
+with energy consumption.\index{households!energy consumption}
 However, significant variation in annual electricity consumption
 is observed between the $20^{\mathrm{th}}$ and $80^{\mathrm{th}}$ percentiles at any home size.
 These variations indicate that decisions about \emph{how} a dwelling is used
@@ -145,8 +152,8 @@ See the EIA's Residential Energy Consumption Survey (RECS),
 which may have the required information.
 May need to look at the ``microdata'' available from RECS. ****
 
-Figure~\ref{fig:average_square_footage} shows the average floor space
-of new single family homes in the United States between 1970-2015~\citep[Fig.~1]{HUD_housing}.
+Figure~\ref{fig:average_square_footage} shows the average floor space \index{households!floor space}
+of new single family homes in the United States between 1970 and 2015~\citep[Fig.~1]{HUD_housing}.
 Taken together, Figures~\ref{fig:residential_elect_vs_home_size} and~\ref{fig:average_square_footage}
 would suggest that residential energy consumption per dwellling is rising through time.
 However, per-dwelling energy consumption seems to be falling slowly in the U.S.,
@@ -193,14 +200,14 @@ the percentage of single-person households is increasing through time~\citep[Fig
 From a sustainability point of view,
 smaller, more-efficient homes with larger numbers of occupants
 are preferred.
-However, trends suggest that homes are becoming more efficient,
-but they are becoming larger and have fewer occupants
-through time.
+However, trends suggest that although homes are becoming more efficient,
+they are becoming larger and have fewer occupants
+over time.
 
 
 %++++++++++++++++++++++++++++++
 \subsection{Location}
-\label{sec:dwelling_location}
+\label{sec:dwelling_location} \index{households!location}
 %++++++++++++++++++++++++++++++
 
 Location of a dwelling is also an important determiner of energy consumption,
@@ -213,7 +220,7 @@ related to transportation.)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Heating and cooling}
-\label{sec:heating_and_cooling}
+\label{sec:heating_and_cooling} \index{households!heating and cooling}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 In most locations,
@@ -221,31 +228,33 @@ daily and seasonal temperature variations are wide
 relative to the range of temperatures required for human comfort
 (approximately 20--23~\degC, depending on humidity and clothing).
 Residential heating and cooling reduces the temperature variation
-inside the dwelling compared to the outside,
+inside the dwelling compared to the outdoors,
 providing thermal comfort to the occupants and
 enabling work, play, and entertainment.
 As shown in Figure~\ref{fig:average_residential_energy},
 on average across the U.S.,
-thermal comfort is provided
+thermal comfort\index{thermal comfort}
+is provided
 by 36.6\% of all residential energy consumption.
 Like all energy consumption,
 energy consumption for heating and cooling has sustainability implications.
-(See Chapter~\ref{chap:energy}.)
+(See Chapter~\ref{chap:resource_intensity}.)
 Greater efficiency can provide the same thermal comfort
 with less energy consumption.
-Increased residential heating and cooling efficiency can be obtained
+Increased residential heating and cooling efficiency\index{efficiency!heating and cooling!residential}
+can be obtained
 by improving the building envelope or
 by improving the efficiency of furnaces and air conditioners.
 
 
 %++++++++++++++++++++++++++++++
 \subsection{Building envelope}
-\label{sec:building_envelope}
+\label{sec:building_envelope} \index{building envelope}
 %++++++++++++++++++++++++++++++
 
 The building envelope consists of the roof, walls, windows, and base
 of a dwelling.
-The purpose of the envelope is to shield occupants from outisde weather and
+The purpose of the envelope is to shield occupants from outside weather and
 to maintain dry and comfortable conditions inside the dwelling.
 The ideal building envelope would
 eliminate both heat loss in the winter and heat gain in the summer via
@@ -255,30 +264,31 @@ But perfect insulation is not possible, and all windows conduct heat and are tra
 So furnaces and air conditioners are used to replace the heat lost in winter and
 remove heat gained in the summer.
 
-The effectiveness of roof and wall insulation is quantified by its R-value,
-a measure of the resistance to heat transfer through the insulation material,
-quantified by the R-value in units of hr-ft$^2$-\degree{}F/BTU.
+The effectiveness of roof and wall insulation\index{insulation}
+is quantified by its R-value\index{R-value},
+a measure of the resistance to heat transfer through the insulation material
+quantified in units of hr-ft$^2$-\degree{}F/BTU.
 Higher R-values are better.
 Large R-values are achieved with
-thicker insulation constructed from low-thermal-condictivity materials.
+thicker insulation constructed from low-thermal-conductivity materials.
 The Energy Star program recommends levels of roof, wall, and floor insulation at
 \url{https://www.energystar.gov/index.cfm?c=home_sealing.hm_improvement_insulation_table}.
 In Northern US climates, R-values of 49--60 hr-ft$^2$-\degree{}F/BTU are recommended.
 
-Windows are an important part of any building's envelope.
+Windows\index{windows} are an important part of any building's envelope.
 They provide natural illumination while shielding occupants from weather.
-Like walls and roofs, it is desireable that windows eliminate
+Like walls and roofs, it is desirable that windows eliminate
 heat loss in the winter and heat gain the summer.
 However, windows are typically worse insulators than walls and roofs,
 owing to thin glazing.
 
-The insulative properties of windows are quantified by the U-Factor.
+The insulative properties of windows are quantified by the U-Factor\index{U-factor}.
 The U-Factor is the inverse of an R-value.
 Typical U-Factors for windows are 0.2--1.2 BTU/hr-ft$^2$-\degree{}F.
 (Corresponding window R-values are 5--0.83 hr-ft$^2$-\degree{}F/BTU.)
 Lower U values are more insulative.
 Heat gain from solar radiation is quantified by the
-solar heat gain coefficient (SHGC),
+solar heat gain coefficient (SHGC)\index{solar heat gain coefficient},
 the ratio of solar energy that enters the room to
 solar energy incident upon the window.
 SHGC values range from 0 to 1,
@@ -287,17 +297,17 @@ and lower SHGC values indicate better insulative properties.
 
 %++++++++++++++++++++++++++++++
 \subsection{Furnaces}
-\label{sec:furnaces}
+\label{sec:furnaces}\index{furnaces}
 %++++++++++++++++++++++++++++++
 
 Furnaces provide space heating,
 often from an out-of-the-way location in the dwelling (e.g., basement).
-Furnaces convert a fuel (typically natural gas or heating oil)
+Furnaces convert a fuel (typically natural gas\index{natural gas} or heating oil\index{heating oil})
 into heat by combustion.
 The heat is delivered to the dwelling via circulating water or air.
 
-Furnace efficiency is quantified as
-Annual Fuel Utilization Efficiency~(AFUE),
+Furnace efficiency\index{efficiency!furnaces} is quantified as
+Annual Fuel Utilization Efficiency~(AFUE)\index{Annual Fuel Utilization Efficiency (AFUE)},
 the percentage of useful heat output
 to fuel energy input,
 accounting for transient effects during operation
@@ -305,13 +315,15 @@ across the year.
 The maximum AFUE rating is 100\%.
 Heat that leaves with the exhaust products serves to reduce AFUE.
 AFUE is different from and lower than steady-state thermal efficiency.
-The American Society for Heating, Refrigerating, and Air conditioning Engineers
+The American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)
+\index{American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)}
 publishes Standard 103,
 which specifies how AFUE is to be measured.
 
 All furnaces sold in the U.S.\ have an AFUE rating, and
 a minimum AFUE rating of 80\% is required
-for gas-fired furnaces. (\url{https://www.eia.gov/analysis/studies/buildings/equipcosts/pdf/appendix-a.pdf})
+for gas-fired furnaces.\index{furnaces!gas-fired}
+(\url{https://www.eia.gov/analysis/studies/buildings/equipcosts/pdf/appendix-a.pdf})
 High-efficiency furnaces recover heat from exhaust gases,
 and some reach AFUE values of 98\% or higher.
 A tradeoff exists between efficiency and initial cost.
@@ -321,14 +333,17 @@ but save money on fuel costs over time.
 
 %++++++++++++++++++++++++++++++
 \subsection{Air conditioners}
-\label{sec:air_conditioners}
+\label{sec:air_conditioners}\index{air conditioners}
 %++++++++++++++++++++++++++++++
 
 Air conditioners cool and dehumidify indoor air
-to provide thermal comfort to building occupants.
+to provide thermal comfort\index{thermal comfort}
+to building occupants.
 Air conditioners use electricity to achieve their objectives.
-The energy efficiency of air conditioners is quantified by the
-Seasonal Energy Efficiency Ratio (SEER), which is
+The energy efficiency of air conditioners\index{efficiency!air conditioners}
+is quantified by the
+Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio (SEER)}
+which is
 the ratio of cooling provided (in BTU)
 to electricity consumed (in W-hr) throughout the season.
 Larger SEER values indicate higher efficiency.
@@ -340,14 +355,14 @@ In other parts of the U.S., a minimum SEER value of 13 BTU/W-hr is mandated.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hygiene}
-\label{sec:hygiene}
+\label{sec:hygiene}\index{hygiene}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Hygiene is a significant consumer of household energy and water
 for showers, dish washers, toilets, and clothes washers and dryers.
 
 To minimize environmental impacts of showering and dish washing,
-low-flow showerheads can be installed.
+low-flow showerheads\index{showerheads!low-flow} can be installed.
 Low-flow showerheads provide the obvious cost benefit of
 reducing water bills.
 But if less water is consumed,
@@ -355,22 +370,24 @@ low-flow showerheads also reduce energy consumption for water heating.
 Furthermore, sewerage costs are reduced, because low-flow showerheads
 decrease the amount of gray water released into the sewer system.
 
-Saving water and energy in dish washing can be accomplished by purchasing an automatic dishwasher.
+Saving water and energy in dish washing can be accomplished by purchasing a
+high-efficiency automatic dishwasher.\index{efficiency!dish washers}
 At
 \url{https://www.energystar.gov/products/appliances/dishwashers},
-the Energy Star program shows that
+the Energy Star\index{Energy Star} program shows that
 automatic dishwashers save water and energy costs
 relative to hand washing dishes.
 
-To save water consumed by toilets,
+To save water consumed by toilets\index{toilets},
 displacement and dual-flush systems are recommended.
 A displacement system occupies volume in the tank,
 reducing the amount of water used for each flush.
 Dual-flush systems provide half- and full-flush
 for disposal of liquids and solids, respectively.
 
-Clothes washers and dryers consume both water and energy.
-Purchasing washers and dryers with Energy Star ratings can reduce
+Clothes washers and dryers\index{clothes washer}\index{clothes dryer}
+consume both water and energy.
+Purchasing washers and dryers with Energy Star\index{Energy Star} ratings can reduce
 energy and water consumption by 25\% and 33\%, respectively
 (\url{https://www.energystar.gov/products/appliances/clothes_dryers}).
 The most energy can be saved by washing clothes less frequently,
@@ -384,23 +401,44 @@ using a cold-water cycle, and line drying clothes.
 
 Indoor lighting provides illumination for rooms,
 typically by consuming electricity.
-Since Edison's invention of the electric light,
-filament-based incandescent lighting technology
+After Edison's invention of the electric light,
+filament-based incandescent lighting technology\index{lamps!electric!incandescent}
 dominated household lighting.
 However, in recent years,
-Compact Fluorescent Lights (CFLs) and
-Light Emitting Diode (LED) lights have revolutioninzed
+Compact Fluorescent Lights (CFLs)\index{lamps!electric!compact fluorescent (CFL)} and
+Light Emitting Diode (LED)\index{lamps!electric!light emitting diode (LED)}
+lights have revolutionized
 the lighting industry and improved lighting efficiency significantly.
-LED bulbs are 6--10 times more efficient than incandescent lighting.
-In addition, LED bulbs promise much longer lifetimes,
+LED lamps are 6--10 times more efficient than incandescent lighting.
+In addition, LED lamps promise much longer lifetimes,
 with more than 10 times longer service per bulb than incandescents.
 Both higher efficiency and longer life reduce total cost of ownership
 of LED bulbs compared to incandescent bulbs by nearly two orders of magnitude.
 
 Of course, the least expensive light is the one you don't have to use at all.
-Building design techniques such as light harvesting
+Building design techniques such as light harvesting\index{light harvesting}
 utilize natural light to the greatest extent possible,
 eliminating the need to consume electricity for artificial indoor lighting.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Summary}
+\label{sec:household_summary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This chapter identified many sustainability challenges that pertain to households
+and decisions made by ordinary people in their homes and apartments.
+Energy and material consumption decision by household residents
+drives sustainability in the home. 
+Key areas of decision-making include
+purchasing and renting,
+heating and cooling,
+hygiene, and
+lighting, 
+because these areas of everyday life drive energy consumption
+in homes and apartments.
+Chapter~\ref{chap:personal_action} makes concrete suggestions
+for making homes and apartments more sustainable.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
