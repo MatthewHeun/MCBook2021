@@ -47,7 +47,7 @@
 % @
 
 
-<<AffluenceGraph-Noordhaus, fig.cap = "Annual world GDP per capita, affluence ($A$) in the Kaya identity. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from Nordhaus.">>=
+<<AffluenceGraph-Nordhaus, fig.cap = "Annual world GDP per capita, affluence ($A$) in the Kaya identity. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from Nordhaus.">>=
 world_gdppc_Nordhaus <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
                                            sheet = "GDPpc-Nordhaus-WB") %>% 
   dplyr::select(-Country, -Source)
@@ -132,6 +132,9 @@ world_gdppc_Nordhaus %>%
 
 <<GDPGraph-Nordhaus, fig.cap="World annual GDP calculated by multiplying world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph-Nordhaus}.">>=
 # Gather world population data
+world_pop <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "WorldPopulation.xlsx"),
+                                sheet = "world_pop") %>%
+  dplyr::select(-Source)
 world_gdp_Nordhaus <- dplyr::inner_join(
   # Gather GDP per capita data
   world_gdppc_Nordhaus,
