@@ -3,8 +3,19 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+
+%#############################################################
+\part{IPARC Identity}
+\label{part:part_1}
+%#############################################################
+
+\cleardoublepage
+
+
+%#############################################################
 \chapter{Planetary Boundaries}
 \label{chap:planetary_boundaries}
+%#############################################################
 
 % Graedel and Allenby diagrams of limits ....
 
