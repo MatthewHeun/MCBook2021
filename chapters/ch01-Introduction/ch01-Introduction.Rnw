@@ -217,6 +217,7 @@ per unit of resource to zero because of diminishing returns on efficiency and tr
 that exist between different types of impacts.
 
 \section{The mathematics of sustainability}
+\label{sec:exp}
 Returning to the wheat and chessboard problem, for a series of doubling numbers, like the
 number of grains on a chessboard square: $1, 2, 4, 8, 16, 32, …$, the sum of all the
 numbers in the series is always one less than the next number in the series. $1+2+4+8 =

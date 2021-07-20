@@ -7,27 +7,80 @@
 \label{chap:affluence}
 
 Equation \ref{eq:IPARC} is our framework for considering sustainability.
-Chapter \ref{chap:planetary_boundaries} considered planetary boundaries and the impact
+Chapter \ref{chap:planetary_boundaries} discussed planetary boundaries and the impact
 of human activities on those boundaries, that is, the left-hand side of Equation \ref{eq:IPARC}.
-Chapter \ref{chap:population} considered the first term on the right-hand side of 
+Chapter \ref{chap:population} is about the first term on the right-hand side of 
 Equation \ref{eq:IPARC}, world population and its dynamics.
-This chapter considers the second term on the right-hand side of Equation \ref{eq:IPARC}.
+This chapter examines the second term on the right-hand side of Equation \ref{eq:IPARC}.
 Subsequent chapters, namely Chapters \ref{chap:resource_intensity}-\ref{chap:carbon_intensity}, 
 finish the development of our framework for stability.
 
 The job of this chapter is to explore the meaning of, and issues with, the term \emph{affluence}.
-The common meaning of affluence is wealth or riches but here we use it with reference to
-specific countries or globally to be \emph{per person}.
+The common meaning of affluence is "wealth" or "riches" but here we use it with 
+reference to specific countries or globally to be \emph{per person}.
 
-\section{Wealth}
-The word wealth means happiness, propserity, well being, welfare, but mostly it 
-means the \emph{amount} of goods, possessions, money, property, or \emph{stuff} a person has.
-That is, wealth refers to the \emph{level} of material a person has.
-In contrast, the term affluence refers to the \emph{rate} a person consumes.
-It is this rate 
+\section{Microeconomics}
+The word wealth can include happiness, propserity, well being, welfare, but mostly it 
+means the \emph{amount} of goods, possessions, money, property, or stuff a person has.
+That is, wealth refers to a \emph{level} of material possessions.
+In contrast, we will define %, partly because it makes Equation \ref{eq:IPARC} a "pronounceable" acronym,
+the term "affluence" to mean the \emph{rate} a person 
+consumes goods and services, that is, the "stuff" bought \emph{per year}.
 
+“Consumption” may mean literal consumption, as in the case with food, or it could 
+be consuming a service, such as education or getting a haircut. In many cases, 
+% say more in a discussion question how taking up a seat in a classroom, 
+% having the prof grade your papers, etc. is "consumption"
+what is “consumed” is ancillary to what the consumer actually desires. For example, 
+when the consumer drives from point A to point B, whether the car the burns gasoline 
+or is electric doesn’t matter to the consumer. The point is that, in economic terms, 
+travel uses an energy service. The energy consumed is just a means to the and end. 
+(In this case, that end is travel.)
 
+Microeconomic theory (and, indeed, our own experience) tells us that human wants are
+limitless. However much we have, we always want more. Consumption has diminishing
+returns of marginal utility; the fourth, fifth, and sixth donuts increase our happiness
+less than the first, second, and third donuts. After a donut, we may want a cup of 
+coffee instead of a second donut, then a slice of bacon, and then to read the news, 
+and then ... The point is there is always a next "thing," which need not necessarily 
+be a physical object. 
 
+Having choice enhances consumer well being. Having a choice between a muffin and 
+a donut is better than if only donuts are on the menu. (Again, there is diminishing
+marginal utility for choice as well; partly this is because of human cognitive limits.)
+
+The value functions of different individuals may be different and so free trade 
+allows each party to maximize their own value function. the opportunity cost is 
+the value (to them) of what they give up, be it money or a good or service. 
+If I’m a barber and I would prefer to have \$15 rather than 20 minutes of free time 
+and you would rather have a haircut than \$15, then we can arrange a trade. 
+I’ll trade you \$15 for a haircut. You’re happier with the \$15 and I’m happier 
+with the haircut. Your opportunity cost (time) was worth less than \$15, so you 
+end up better off. My opportunity cost was \$15 but the haircut is worth more than
+that to me, so I'm better off as well.
+
+\section{Macroeconomics}
+Affluence is \emph{measured} by gross domestic product (GDP) per capita.
+There are many critiques as to why per capita GDP is not the \emph{best possible}
+measure of affluence, and those critiques are valid. 
+For instance, GDP doesn't count (or under counts) the value
+of innovation in improving standards of living. Many new metrics (see Section \ref{sec:indices}
+have been proposed as replacements or improvements for GDP. Some examples are green GDP, the index
+of sustainable economic welfare, and the genuine progress indicator. However, each
+of these suffers from its own limitations.%, philosophical, methodological, and practical.
+The biggest limitation is standardization and availability of data. Frankly, GDP
+is what we have and what "everyone" uses. It's the standard. So, for now, we'll use it.
+% put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
+Consistent and easily-accessible GDP data can allow us to make observations
+about trends, which are \emph{qualitatively} consistent with trends we'd observe
+using other indices, bearing in mind the limitations of what GDP measures and what it doesn't.
+
+Figures \ref{fig:AffluenceGraph-Nordhaus} and \ref{fig:GDPGraph-Nordhaus} show 
+world annual GDP per capita and total GDP, respectively. Note that most national
+and international economic policy is explicitly and purposely devoted to increasing 
+affluence and maintaining a constant rate of growth for GDP -- even though a 
+constant growth rate means exponential growth (see Section \ref{sec:exp}), 
+which is inherently unsustainable.
 
 % <<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence ($A$) in the Kaya identity. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
 % world_gdppc_Maddison <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
@@ -180,9 +233,63 @@ world_gdp_Nordhaus %>%
   MKHthemes::xy_theme()
 @
 
+There are various ways to measure or estimate GDP, which is usually denominated 
+in units of money (see, for example, bea.gov). 
+\begin{equation} 
+\label{eq:GDP}
+GDP = C+G+I+NX
+\end{equation}
+$C$ is consumption and represents purchases made by individuals. 
+Consumption makes up about two thirds of GDP for developed economies and is
+generally divided into three categories: durable goods, nondurable goods, and services. 
+Services represent nontangible things. Examples include the aforementioned haircut, 
+legal advice, education, and concert tickets. Durable goods are defined as things 
+that last longer than 3 years. Examples include appliances, automobiles, but don’t 
+include fabrics (like clothes or carpet) even if those things happen to last more 
+than three years. Nondurable goods are things that are consumed immediately, 
+like food, paper, or fuel. Durable goods spending is more sensitive to economic 
+conditions than nondurable good spending because consumers can choose to postpone 
+spending on durable goods until their circumstances are better. 
+
+$G$ is government spending, which is divided between government consumption 
+(e.g., wages to government workers and equipment) and net investment (e.g., infrastructure improvements).
+
+The symbol $I$ stands for investment. It is \emph{not} money put into a bank account. 
+Investment is goods that are purchased for use in the future. There are three 
+subcategories: nonresidential fixed investment, residential fixed investment, 
+and inventory investment. 
+Nonresidential fixed investment is equipment and plants (factories) purchased by firms. 
+In contrast, residential fixed investment is the purchase of housing stock by 
+households and landlords. Inventory investment is the purchase, by firms, of goods for later 
+sale and could be negative (inventory is falling) or positive (inventory is increasing).
+
+$NX$ is net exports; here “net” is the difference between the value of exports 
+and imports. Thus, NX could be a negative number.
+
+GDP, because it represents consumption, is only a partial indication of wealth. 
+For instance, owning an asset, like land or a valuable painting, doesn’t factor 
+into GDP calculations. Thus, GDP may be less useful than other measures of wealth 
+for discussions of social sustainability. However, GDP does more accurately capture 
+the impact on the environment because it directly correlated  with resources that 
+are used up (sources) and emissions (sinks). 
+
+\section{Economic metabolism}
 
 
+% Can we do an epigraph? Flag Day lyrics by The Housemartins.
 
+% https://en.wikipedia.org/wiki/Thermoeconomics
+% https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Domestic_material_consumption_%28DMC%29
+
+% 
+% ****
+% In the Personal Actions chapter, I had included this question:
+% ``Is there such a thing as a steady-state economy?''
+% I don't think it belongs in teh Personal Actions chapter.
+% It may fit better in the economics chapter. ---MKH
+% ****
+% Wealth inequality
+%% NIMBY and demind-side load shedding = how much do we have to pay you to take away your choice.
 
 \cleardoublepage
 
