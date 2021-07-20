@@ -3,10 +3,800 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+%#############################################################
 \chapter{Transportation}
 \label{chap:transportation}
+%#############################################################
 
 
+
+****
+
+Make sure we discuss the last mile problem.
+
+Electric truck calculation? 
+
+$W = Fd$ Rolling friction resistance to get force. Multiply by distance. LCA for Diesel truck vs.\ electric truck. 
+
+Find a paper that has already done this?
+
+Maybe discuss LCA for trucking (don't get bogged down in details.)
+
+****
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Demand for transportation services}
+\label{sec:transportation_demand}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Modern life requires transportation services\index{services!transportation}:
+people need to move long and short distances for work and pleasure, and
+goods must be shipped from far and near to satisfy human wants and needs.
+Transport service levels are usually quantified in units of
+passenger-km and tonne-km for personal and freight transport, respectively.
+Provision of U.S.\ transportation service by various modes of travel
+is shown in Figures~\ref{fig:passengerkm_by_mode}
+and~\ref{fig:km_freight}.
+
+% 
+% % https://www.caranddriver.com/news/a28806069/worlds-largest-electric-vehicle-dump-truck
+% World's largest electric vehicle is a dump truck that never needs recharging.
+% 
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch08-Transportation/figures/passengerkm_by_mode.pdf}
+\caption{Passenger-km of personal transport by mode.}
+\label{fig:passengerkm_by_mode}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch08-Transportation/figures/Total_US_tonne-kilometers_of_freight.pdf}
+\caption{Tonne-kilometers of freight by transport mode.}
+\label{fig:tonnekm_by_mode}
+\end{figure}
+
+
+
+
+<<Tonne_km, fig.cap = "U.S \\ tonne_km", fig.cap = "U.S.\ freight by transportation mode.", fig.width = 5, fig.height = 3, echo = FALSE>>=
+
+data_string <-
+  "Year	TOTAL U.S. tonne-kilometers of freight 	Air 	Truck	Railroad	Domestic water transportation	Coastwise	Lakewise	Internal	Intraport	Pipeline\n
+1980	6092446.968	6611.214567	1849245.788	1360693.904	1345853.289	921459.8678	90148.89108	331914.4144	2330.115312	1530042.773\n
+1981	6033165.997	6800.549576	1852842.315	1349014.128	1356916.956	926739.1266	90734.33986	337522.1668	1921.323152	1467592.048\n
+1982	5855352.156	6534.214184	1899224.429	1182577.32	1294219.919	923734.5042	52008.58256	316853.3432	1623.488864	1472796.275\n
+1983	6004016.604	7380.15846	1979484.242	1227836.452	1342540.612	948616.807	62907.27354	329410.5624	1605.9692	1446775.139\n
+1984	6172202.603	8019.271423	2076030.335	1314107.611	1296044.884	867110.9502	72683.24605	354561.5001	1689.187604	1478000.502\n
+1985	6163214.533	7526.999524	2105141.946	1279240.883	1303712.657	892009.3126	70347.29085	339747.1642	1608.889144	1467592.048\n
+1986	6248812.572	9279.16594	2159193.302	1301177.462	1275141.005	848081.6751	63067.87046	362243.8727	1747.586484	1504021.638\n
+1987	6511421.047	11080.20638	2275813.392	1389805.961	1307280.828	856737.8491	73111.01784	375703.3546	1728.606848	1527440.66\n
+1988	6724664.437	11927.19307	2351980.609	1497468.967	1299417.419	819912.9753	84911.97152	392785.027	1807.445336	1563870.249\n
+1989	6683159.436	13072.58929	2433184.427	1526587.936	1190680.165	706464.3911	85128.04738	397341.5996	1746.126512	1519634.319\n
+1990	6796801.087	13232.98765	2492717.391	1554005.277	1216950.901	699522.2242	88956.09396	426885.593	1586.989564	1519894.53\n
+1991	6827066.892	12934.92853	2548983.444	1521186.894	1238638.931	733100.1203	80793.53651	423332.0211	1413.252896	1505322.694\n
+1992	7015253.61	14336.48851	2614453.88	1603603.249	1250735.529	733359.9953	81443.95403	434544.1681	1387.411392	1532124.464\n
+1993	7093664.608	15585.35586	2725315.561	1657092.284	1152878.278	654657.5767	82398.04573	414476.707	1345.948187	1542793.13\n
+1994	7429970.882	17231.7254	2901357.91	1782732.073	1189759.214	668084.2092	85062.93262	434724.7667	1887.305804	1538889.959\n
+1995	7721264.853	18278.93266	3036798.703	1922797.078	1179259.68	642891.5163	87165.87629	447231.9088	1970.378211	1564130.461\n
+1996	7875714.93	18776.4736	3118768.848	2010520.014	1116420.879	595794.2796	85167.90461	433305.9659	2152.728714	1611228.716\n
+1997	7949315.144	19857.07917	3261504.966	2030951.296	1032798.793	510760.9844	90760.47335	429265.3474	2011.987413	1604203.01\n
+1998	7976861.661	20206.01248	3319374.557	2114554.041	982262.2997	459692.4778	90013.55168	430540.4869	2015.78334	1540464.751\n
+1999	8004408.179	20734.42453	3354099.046	2195308.789	957539.4259	427377.6036	83284.39473	444888.6537	1988.773858	1476726.493\n
+2000	8031954.697	21874.76048	3396660.381	2257582.426	942848.8956	414444.5876	84501.86539	441726.7924	2175.650274	1412988.235\n
+2001	8059501.215	19081.04712	3448546.073	2334979.674	907644.4448	400848.1604	74244.6861	430488.6579	2062.940436	1349249.976\n
+2002	8087047.587	19519.64606	3544364.124	2344031.853	893620.2457	384977.3887	78331.73172	428370.8225	1940.302788	1285511.718\n
+2003	8145550.004	22237.18831	3618890.471	2341158.54	884956.6259	407213.4923	69406.1929	406386.5641	1950.376595	1278307.179\n
+2004	8204052.275	24018.64176	3543600.49	2458439.551	906890.9532	408583.53	81368.61948	414772.2053	2166.598448	1271102.639\n
+2005	8207599.034	21902.75669	3581817.459	2476733	863247.7182	384650.209	75808.02412	400568.4297	2221.055404	1263898.1\n
+2006	8197455.98	21463.93848	3512416.005	2586920.007	819962.4684	331640.3777	77531.95906	408467.6082	2322.523458	1256693.561\n
+2007	8307130.375	21333.56144	3643776.987	2584946.125	807584.6798	332949.5345	75761.59701	396553.5067	2320.041505	1249489.021\n
+2008	8825341.748	19173.84791	4018803.884	2594714.797	759945.3554	303495.1834	73382.57264	380993.7091	2073.890226	1432703.864\n
+2009	7909543.543	16794.75002	3576213.938	2236989.538	696584.0306	286578.3419	48922.78574	357685.2562	3397.646838	1382961.287\n
+2010	8283379.343	17556.96495	3668076.007	2468818.492	733215.0201	280822.1103	66203.16033	384325.9492	1863.800255	1395712.859\n
+2011	8617109.204	16920.54224	3859534.485	2524665.341	729617.3571	263104.4741	71653.5278	393013.2206	1846.134594	1486371.479\n
+2012	7222233.646	17280.2498	2760510.035	2500299.868	693133.0948	229349.0454	70029.16295	391897.51	1857.376378	1251010.398\n
+2013	7301440.048	17349.17634	2833847.641	2541354.281	679020.4214	239158.3053	71060.92516	367191.5718	1609.61913	1229868.529\n
+2014	7633946.472	17918.17722	2910389.505	2702742.506	736546.8222	251800.7869	72324.96892	410652.3103	1768.756078	1266349.462\n
+2015	7475682.6	18277.19635	2923658.68	2537844.508	716301.2445	256376.1931	67795.84378	390465.7155	1663.492097	1279600.971\n
+2016	7293520.043	19209.01319	2953347.342	2314698.008	697663.6799	250689.8942	63376.50854	381903.2717	1694.005512	1308602.001\n"
+
+utils::read.table(text = data_string, sep="\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
+  dplyr::mutate(
+    # We don't want to have an area for the total
+    `TOTAL U.S. tonne-kilometers of freight` = NULL,
+    # We will have an area for domestic water, but not for the subcategories.
+    Coastwise = NULL,
+    Lakewise = NULL,
+    Internal = NULL,
+    Intraport = NULL
+  ) %>%
+  dplyr::rename(
+    Water = `Domestic water transportation`
+  ) %>%
+
+  tidyr::gather(key = "type", value = "value",
+                "Air", "Truck", "Railroad", "Water", "Pipeline") %>%
+
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = value, fill = type)) +
+  ggplot2::geom_area() +
+  ggplot2::labs(x=ggplot2::element_blank(), y = expression("Freight transport [tonne-km]")) +
+  ggplot2::scale_x_continuous(breaks = c(1980, 1990, 2000, 2010, 2016)) +
+  ggplot2::labs(fill = element_blank()) +
+  MKHthemes::xy_theme()
+@
+
+
+% 
+% 
+% % % ******* Hi Professor Heun, Can you please check this one out? The graph is not very helpful, it only shows the  highway line and the rest are too low.*********
+
+<<Passenger_km, fig.cap="U.S passenger km", fig.width = 5, fig.height = 3, echo = FALSE>>=
+data_string <- "Year	Air	Highway	Transit	 Intercity 	Commuter rail	Light rail	Heavy rail\n
+1960	50049	2047212	0	 27461.85 	6754	0	0\n
+1965	85659	2502912	0	 21339.90 	6643	0	0\n
+1970	174520	3286284	0	 9944.14 	7390	0	0\n
+1975	192464	3870399	0	 6326.33 	7263	0	0\n
+1980	307008	4270411	64139	 7246.88 	10486	613	16991.45395\n
+1985	443959	4848878	63699	 7765.08 	10515	563	16780.62989\n
+1990	556629	5731210	66213	 9747.80 	11397	919	18467.2224\n
+1991	544096	5794157	65505	 10095.41 	11819	1065	16943.17363\n
+1992	570938	5950903	64762	 9802.51 	11780	1128	17279.52653\n
+1993	582948	6064114	63382	 9976.32 	11169	1135	16465.19846\n
+1994	625086	6175877	63706	 9528.93 	12868	1341	17168.48179\n
+1995	650033	6225055	64065	 8923.81 	13267	1384	16993.0633\n
+1996	699504	6386498	62739	 8127.19 	13439	1537	18556.09086\n
+1997	725288	6581197	64664	 8313.87 	12935	1647	19402.36006\n
+1998	744730	6760265	66957	 8535.96 	14005	1795	19769.79698\n
+1999	785263	6927051	69651	 8577.80 	14104	1915	20763.84735\n
+2000	829775	7323440	72582	 8970.47 	15128	2156	22278.9731\n
+2001	782956	7385358	74847	 8964.96 	15359	2297	22817.4266\n
+2002	778157	7547724	74184	 8551.78 	15288	2304	21988.82809\n
+2003	813687	7629479	73510	 9140.97 	15378	2375	21897.04924\n
+2004	898327	7833881	74908	 8868.90 	15635	2537	23100.97614\n
+2005	939489	7887734	75840	 8660.48 	15241	2735	23203.03699\n
+2006	947052	7974402	79669	 8706.24 	16671	3003	23691.9022\n
+2007	977779	8016285	83482	 9306.54 	17923	3107	25971.51655\n
+2008	938717	7886060	86441	 9943.34 	17754	3349	27117.31733\n
+2009	887941	8083318	86741	 9517.71 	17911	3534	27045.2029\n
+2010	908788	8097214	84695	 10331.62 	17339	3497	26404.40832\n
+2011	926359	8076677	87433	 10569.91 	18208	3804	27868.38764\n
+2012	934226	8156940	88786	 10949.77 	17897	4005	28189.9661\n
+2013	949018	8216327	90875	 10958.95 	18887	4127	28975.63849\n
+2014	978114	8337386	91752	 10741.84 	18668	4304	29513.83799\n
+2015	1033047	8535672	90298	 10518.53 	18924	4256	29612.62821\n
+2016	1078964	8743981	91204	 10492.28 	19054	4465	29730.533\n
+2017	1116592	8855282	88772	 10504.83 	19829	4498	28488.49067\n"
+
+utils::read.table(text = data_string, sep ="\t", header = TRUE, stringsAsFactors =  FALSE, check.names = FALSE) %>%
+
+    tidyr::gather(key="type", value = "value",
+                  "Air", "Highway", "Transit", "Intercity", "Commuter rail", "Light rail", "Heavy rail")%>%
+
+
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = value, linetype = type)) +
+  ggplot2::geom_line() +
+  ggplot2::labs(x=ggplot2::element_blank(), y = expression("Passenger kilometers in the U.S.")) +
+  ggplot2::scale_x_continuous(breaks = c(1960, 1970, 1980, 1990, 2000, 2010, 2017)) +
+  ggplot2::labs(fill = element_blank()) +
+  MKHthemes::xy_theme()
+@
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Transportation sustainability challenges}
+\label{sec:transportation_challenges}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Today, transportation services are provided by cars, trucks, trains, boats, and planes,
+powered almost exclusively by fossil fuels\index{fossil fuels}.
+Figure~\ref{fig:LLNL_sankey} shows that energy for transportation is supplied almost exclusively
+by fossil liquid petroleum fuels,
+because of their high energy densities\index{energy density!liquid fuels}
+as measured by both energy-to-mass and energy-to-volume ratios.
+Burning liquid fossil fuels to provide transportation services has global warming\index{global warming}
+implications, and
+greenhouse gas~(GHG) emissions\index{emissions!greenhouse gases}
+from transportation are a significant sustainability concern.
+Indeed, Figure~\ref{fig:ghg_sankey} shows that greenhouse gas emissions from transportation
+comprise 14.5~\% of all greenhouse gas emissions worldwide.
+Figure~\ref{fig:transport_GHG_emissions} shows trends of CO$_2$ transportation emissions by mode
+over time.
+Passenger cars are the greatest single cause of CO$_2$ emissions from transportation.
+
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch08-Transportation/figures/co2_emissions_by_transportation_mode.pdf}
+\caption{CO$_2$ emissions by transportation mode.}
+\label{fig:transport_GHG_emissions}
+\end{figure}
+
+<<echo = FALSE>>=
+
+data_string <- "Year	Passenger cars 	Light-duty trucks 	Medium- and Heavy- trucks	Buses	Aircraft	Ships and boats	Rail	Other\n
+1990	629	321	230	8	187	44	39	48\n
+1991	588	348	225	8	172	40	36	44\n
+1992	595	372	235	8	170	49	37	43\n
+1993	602	385	248	9	171	47	38	45\n
+1994	607	393	264	9	178	48	41	49\n
+1995	607	407	275	9	175	58	43	50\n
+1996	615	421	287	10	187	54	43	50\n
+1997	614	436	301	10	187	39	44	53\n
+1998	634	447	314	10	191	33	44	47\n
+1999	648	467	332	11	195	29	46	48\n
+2000	645	467	346	11	198	60	46	47\n
+2001	651	473	344	10	192	42	46	46\n
+2002	664	485	358	10	188	47	45	47\n
+2003	643	520	354	11	181	37	47	43\n
+2004	640	541	366	15	189	40	50	41\n
+2005	660	504	396	12	192	45	50	42\n
+2006	636	517	406	12	185	48	52	42\n
+2007	794	326	431	17	182	54	52	44\n
+2008	755	307	414	17	175	45	48	45\n
+2009	748	310	375	16	156	38	41	45\n
+2010	742	309	386	15	153	44	43	47\n
+2011	737	295	384	16	149	46	46	47\n
+2012	736	292	384	17	145	39	43	49\n
+2013	736	293	390	18	149	39	44	55\n
+2014	738	309	402	19	150	28	46	56\n
+"
+utils::read.table(text = data_string, sep="\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
+  tidyr::gather(key = "type", value = "value",
+                "Passenger cars", "Light-duty trucks", "Medium- and Heavy- trucks", "Buses", "Aircraft", "Ships and boats", "Rail", "Other")%>%
+
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = value, linetype = type, colour=type)) +
+  ggplot2::geom_line() +
+  ggplot2::labs(x = ggplot2::element_blank(), y = expression("CO2 by transportation mode")) +
+  ggplot2::scale_x_continuous(breaks = c(1990, 2000, 2010, 2014)) +
+  ggplot2::labs(fill = element_blank()) +
+  MKHthemes::xy_theme()
+
+@
+
+<<Transportation_Percentages_Mode, echo = FALSE, fig.cap = "Share of commuting distance by mode.", fig.width = 5, fig.height = 2.5>>=
+transportation_mode <- NULL
+percentages <- NULL
+label_ypos <- NULL
+ang <- NULL
+# Define this vector of category names (in the order that we want), thereby avoiding retyping later.
+transp_mode <- c("Drive alone", "Carpool", "Public transit", "Work from home", "Walk", "Motorcycle/bike/other")
+
+# Create a data frame that contains the information for the graph.
+Transp_Pct <- data.frame(transportation_mode = transp_mode,
+                         percentages = c(76.4, 9.3, 5.2, 4.6, 2.8, 1.7),
+                         ang = c(0, 0, 0, -35, -50, -65)) %>%
+  dplyr::mutate(
+    transportation_mode = factor(transportation_mode, levels = transp_mode),
+    label_ypos = 100 - (cumsum(percentages) - percentages/2))
+
+# Make the graph
+Transp_Pct %>%
+  ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = percentages, fill = transportation_mode)) +
+  ggplot2::geom_bar(width = 1, stat = "identity") +
+  ggplot2::coord_polar("y", start = 0, direction = -1) +
+  ggplot2::geom_text(mapping = ggplot2::aes(y = label_ypos, label = paste(percentages, "%"), angle = ang),
+                     color = "white", size = 3) +
+  ggplot2::labs(x = "", y = "", fill = "") +
+  MKHthemes::xy_theme() +
+  ggplot2::theme(axis.text.x = element_blank()) +
+  ggplot2::theme(axis.text.y = element_blank()) +
+  ggplot2::theme(axis.ticks = element_blank()) +
+  ggplot2::theme(panel.border = element_blank()) +
+  ggplot2::theme(legend.text = element_text(size = 9)) +
+  ggplot2::theme(legend.key.size = unit(0.3, "cm")) +
+  ggplot2::theme(plot.margin = unit(c(0,0,0,0),"mm"))
+@
+
+
+<<echo= FALSE>>=
+
+data_string<-
+  "Percentage	Modes\n
+76.4	Drive alone\n
+9.3	Carpool\n
+5.2	Public transport\n
+4.6	Work from home\n
+2.8	Walk\n
+1.7	Motorcycle/bike/other"
+utils::read.table(text = data_string, sep="\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
+  dplyr::mutate(
+    Modes = factor(Modes, levels = c("Drive alone", "Carpool", "Public transportation", "Work from home", "Walk", "Motorcycle/bike/other"))
+  ) %>%
+  ggplot2::ggplot()+
+  ggplot2::geom_bar(ggplot2::aes(y=Percentage, x=Modes, fill = Modes),
+           stat="identity")+
+  ggplot2::geom_text(ggplot2::aes(y=Percentage, x=Modes, label=Percentage, group=Modes), color="black")
+@
+
+Particulate matter\index{particulate matter}
+emissions from combustion of transportation fuels
+raise significant health concerns as well.
+Furthermore, consumption of nonrenewable fossil fuels for transportation
+has implications for energy resource depletion.
+(See Chapter~\ref{chap:resource_intensity}.)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Drivers of transportation demand}
+\label{sec:drivers_of_transportation_demand}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Activities that cause demand for transportation services include
+daily commuting to work and school,
+travel for business and pleasure,
+supply chain distribution, and
+delivery of goods and services.
+Figure~\ref{fig:commuting_by_mode} shows the share of commuting distance by mode of transport.
+
+
+Interestingly,
+Figures~\ref{fig:passengerkm_by_mode} and~\ref{fig:tonnekm_by_mode}
+both show distinctive declines in the demand for transport services from 2009 to 2010,
+an effect of the Great Recession\index{Great Recession}.
+A reasonable conclusion is that demand for transportation services is caused, in large part,
+by economic activity.
+
+Furthermore, Figures~\ref{fig:passengerkm_by_mode} and~\ref{fig:tonnekm_by_mode}
+show that the oil price spike in the runup to the Great Recession (2006--2008)
+caused drivers to move away from light-duty trucks toward
+passenger cars.
+Notably, drivers seek low-cost alternatives
+in the face of transportation fuel prices spikes.
+
+<<US_mpg, fig.cap = "U.S.\\ car and truck fuel efficiency">>=
+data_string <-
+"Year	Type	MPG\n
+1975	Cars	13.5\n
+1976	Cars	14.9\n
+1977	Cars	15.6\n
+1978	Cars	16.9\n
+1979	Cars	17.2\n
+1980	Cars	20\n
+1981	Cars	21.4\n
+1982	Cars	22.2\n
+1983	Cars	22.1\n
+1984	Cars	22.4\n
+1985	Cars	23\n
+1986	Cars	23.7\n
+1987	Cars	23.8\n
+1988	Cars	24.1\n
+1989	Cars	23.7\n
+1990	Cars	23.3\n
+1991	Cars	23.4\n
+1992	Cars	23.1\n
+1993	Cars	23.5\n
+1994	Cars	23.3\n
+1995	Cars	23.4\n
+1996	Cars	23.3\n
+1997	Cars	23.4\n
+1998	Cars	23.4\n
+1999	Cars	23\n
+2000	Cars	22.9\n
+2001	Cars	23\n
+2002	Cars	23.1\n
+2003	Cars	23.2\n
+2004	Cars	23.1\n
+2005	Cars	23.5\n
+2006	Cars	23.3\n
+2007	Cars	24.1\n
+2008	Cars	24.3\n
+2009	Cars	25.4\n
+2010	Cars	25.8\n
+2011	Cars	25.6\n
+2012	Cars	27.1\n
+2013	Cars	27.9\n
+2014	Cars	27.9\n
+2015	Cars	28.6\n
+2016	Cars	29\n
+1975	Trucks	11.6\n
+1976	Trucks	12.2\n
+1977	Trucks	13.3\n
+1978	Trucks	12.9\n
+1979	Trucks	12.5\n
+1980	Trucks	15.8\n
+1981	Trucks	17.1\n
+1982	Trucks	17.4\n
+1983	Trucks	17.8\n
+1984	Trucks	17.4\n
+1985	Trucks	17.5\n
+1986	Trucks	18.2\n
+1987	Trucks	18.3\n
+1988	Trucks	17.9\n
+1989	Trucks	17.6\n
+1990	Trucks	17.4\n
+1991	Trucks	17.8\n
+1992	Trucks	17.4\n
+1993	Trucks	17.5\n
+1994	Trucks	17.2\n
+1995	Trucks	17\n
+1996	Trucks	17.2\n
+1997	Trucks	17\n
+1998	Trucks	17.1\n
+1999	Trucks	16.7\n
+2000	Trucks	16.9\n
+2001	Trucks	16.7\n
+2002	Trucks	16.7\n
+2003	Trucks	16.9\n
+2004	Trucks	16.7\n
+2005	Trucks	17.2\n
+2006	Trucks	17.5\n
+2007	Trucks	17.7\n
+2008	Trucks	18.2\n
+2009	Trucks	19\n
+2010	Trucks	19.1\n
+2011	Trucks	19.1\n
+2012	Trucks	19.3\n
+2013	Trucks	19.8\n
+2014	Trucks	20.4\n
+2015	Trucks	21.2\n
+2016	Trucks	21.4\n
+1975	Both	13.1\n
+1976	Both	14.2\n
+1977	Both	15.1\n
+1978	Both	15.8\n
+1979	Both	15.9\n
+1980	Both	19.2\n
+1981	Both	20.5\n
+1982	Both	21.1\n
+1983	Both	21\n
+1984	Both	21\n
+1985	Both	21.3\n
+1986	Both	21.8\n
+1987	Both	22\n
+1988	Both	21.9\n
+1989	Both	21.4\n
+1990	Both	21.2\n
+1991	Both	21.3\n
+1992	Both	20.8\n
+1993	Both	20.9\n
+1994	Both	20.4\n
+1995	Both	20.5\n
+1996	Both	20.4\n
+1997	Both	20.1\n
+1998	Both	20.1\n
+1999	Both	19.7\n
+2000	Both	19.8\n
+2001	Both	19.6\n
+2002	Both	19.5\n
+2003	Both	19.6\n
+2004	Both	19.3\n
+2005	Both	19.9\n
+2006	Both	20.1\n
+2007	Both	20.6\n
+2008	Both	21\n
+2009	Both	22.4\n
+2010	Both	22.6\n
+2011	Both	22.4\n
+2012	Both	23.7\n
+2013	Both	24.3\n
+2014	Both	24.3\n
+2015	Both	24.8\n
+2016	Both	25.6\n"
+
+utils::read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
+
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = MPG, linetype = Type)) +
+  ggplot2::geom_line() +
+  ggplot2::labs(x = element_blank(), y = expression("Miles per gallon")) +
+  ggplot2::scale_x_continuous(breaks = c(1975, 1980, 1990, 2000, 2010, 2016)) +
+  MKHthemes::xy_theme()
+
+@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Transportation transitions}
+\label{sec:transport_transitions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To improve the sustainability of the modern transportation system,
+two broad options exist: 
+improving efficiency and 
+transitioning to sustainable fuels.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Efficiency}
+\label{sec:transportation_efficiency}
+%++++++++++++++++++++++++++++++
+
+Vehicle efficiency is usually quantified in distance traveled per volume
+of fuel consumed.\index{efficiency!fuel}\index{efficiency!vehicle}
+Figure~\ref{fig:US_mpg} shows U.S.\ fleet average fuel economy
+over time for cars, trucks, and the overall vehicle fleet.
+Truck efficiency has lagged car efficiency by 20--30\% for decades.
+In the 1970s, overall vehicle fleet efficiency was nearly the same as car efficiency,
+because most vehicles on the road were cars.
+However, the increasing popularity of light-duty trucks and sport utility vehicles in the U.S.\
+means that the overall fleet efficiency
+is now about midway between car and truck efficiency.
+If the proportion of cars and trucks were the same today as it was in the early 1970s,
+overall vehicle fleet efficiency in the U.S.\ would be about 28~miles/gallon,
+or 16~\% higher than the current value of 24~miles/gallon.
+
+
+
+The most effective way for manufacturers
+to increase vehicle fuel efficiency is to reduce vehicle mass.
+Lighter vehicles can be achieved by
+replacing steel components with aluminum or carbon fiber alternatives.
+Other design considerations that affect fuel efficiency include aerodynamics and fuel type (diesel or regular).
+
+In addition to vehicle design, driving habits influence fuel efficiency.
+Gentler driving (less acceleration, minimal dramatic braking) and
+constant speeds (using cruise control\index{cruise control}
+where appropriate)
+lead to improved vehicle efficiency as measured in distance per volume of fuel consumed..
+
+Vehicle efficiency, by definition,
+focuses on the efficiency of the vehicle itself.
+But drivers don't buy fuel to move vehicles.
+They pay for fuel to move people and freight!
+So another way to measure vehicle efficiency is the ratio of transport service to fuel volume consumed.
+Transport service efficiency\index{efficiency!transport service}
+is quantified in units of passenger-km/liter or tonne-km/liter
+for passenger transport and freight transport, respectively.
+This simple shift from vehicle efficiency to transport service efficiency
+exposes the opportunity presented by Figure~\ref{fig:commuting_by_mode}.
+When 76.4~\% of all commuting kilometers are taken in single-occupant vehicles,
+a simple way to improve transport service efficiency is to increase
+the occupancy rate of vehicles.
+Similarly for freight transport,
+the simplest way to increase transportation efficiency is to ensure that trucks and trains
+are filled to capacity when delivering freight.
+
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The viability of a ``sustainability through services'' strategy
+for the world economy is the subject of some debate.
+See \citet{Henriques_2010} and \citet{Fix:2019aa} and the references therein
+for a fuller discussion of the issues surrounding these concepts.
+\end{mcframe}
+
+A significant challenge to higher occupancy cars and higher capacity trucks
+is known as the \emph{last mile problem}\index{last mile problem},
+which refers to the difficulty of distributing goods and services
+the last mile to end users.
+Figure~\ref{fig:last_mile} shows percentages of total delivery cost for several parts of a delivery journey, and
+the largest portion is the last mile.
+
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch08-Transportation/figures/Last-mile_Delivery.pdf}
+\caption{Percentage of delivery cost by part of journey.}
+\label{fig:last_mile}
+\end{figure}
+
+
+<<Last_mile, echo = FALSE, fig.cap = "Last mile costs.">>=
+last_mile <- NULL
+percentages <- NULL
+label_ypos <- NULL
+ang <- NULL
+
+last_mile_delivery <- c("Last-mile delivery", "Line haul", "Sorting", "Collection")
+
+Delivery_Cost <- data.frame(last_mile = last_mile_delivery,
+                             percentages = c(53, 37, 6, 4),
+                             ang = c(0, 0, 0, 0))%>%
+  dplyr::mutate(
+    last_mile = factor(last_mile, levels= last_mile_delivery),
+    label_ypos = 100 - (cumsum(percentages) - percentages/2))
+
+Delivery_Cost %>%
+  ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = percentages, fill =last_mile)) +
+  ggplot2::geom_bar(width = 1, stat = "identity") +
+  ggplot2::coord_polar("y", start = 0, direction = -1) +
+  ggplot2::geom_text(mapping = ggplot2::aes(y = label_ypos, label = paste(percentages, "%"), angle = ang), color = "white", size = 3) +
+  ggplot2::labs(x = "", y = "", fill = "") +
+  MKHthemes::xy_theme() +
+  ggplot2::theme(axis.text.x = element_blank()) +
+  ggplot2::theme(axis.text.y = element_blank()) +
+  ggplot2::theme(axis.ticks = element_blank()) +
+  ggplot2::theme(panel.border = element_blank()) +
+  ggplot2::theme(legend.text = element_text(size = 9)) +
+  ggplot2::theme(legend.key.size = unit(0.3, "cm")) +
+  ggplot2::theme(plot.margin = unit(c(0,0,0,0),"mm"))
+@
+
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Transition to sustainable fuels}
+\label{sec:fuel_transition}
+%++++++++++++++++++++++++++++++
+
+Another way to improve the sustainability of modern transportation is to
+transition away from fossil fuels\index{fossil fuels}
+toward sustainable fuels,
+thereby eliminating the negative environmental effects of fossil fuel combustion.
+Two solutions are often discussed:
+widespread use of biofuels\index{biofuels}
+in internal combustion engine (ICE) vehicles and
+widespread adoption of electric vehicle\index{vehicle!electric} technology.
+
+
+%..............................
+\paragraph{Biofuels}
+\label{sec:biofuels}
+%..............................
+
+Biofuels are liquid or gaseous hydrocarbon fuels produced from biomass material
+and used for transportation.
+Taking carbon neutrality\index{carbon neutrality} as the indicator of sustainability,
+biofuels can be sustainable if they sequester more carbon than
+they emit across the full life cycle\index{life cycle!biofuel}
+of a project, including
+land preparation, planting, harvesting, refining and processing, and
+direct combustion of the fuel itself.
+Perennial crops planted in low-carbon soils\index{soil!low-carbon}
+can be carbon negative, because
+GHG emissions\index{emissions!greenhouse gases}
+from energy consumed for land preparation and planting can be allocated
+across several harvest years of the biofuel crop~\citep{Whitaker_2017}.
+Biofuel consumption in the U.S.\ is shown in Figure~\ref{fig:Biofuel_cons}.
+
+<<Biofuel_cons, fig.cap = "Biofuel consumption in the U.S., 1985--2017.">>=
+# Data from Table 10.1 in DOE/EIA‐0035(2018/11).
+# See https://www.eia.gov/totalenergy/data/monthly/archive/00351811.pdf
+data_string <-
+  "Year	Biofuels [Trillion BTU]\n
+1985	93\n
+1990	111\n
+1995	200\n
+2000	236\n
+2001	253\n
+2002	303\n
+2003	403\n
+2004	498\n2005	574\n2006	766\n2007	983\n2008	1357\n2009	1553\n2010	1821\n2011	1933\n2012	1892\n2013	2007\n2014	2067\n2015	2145\n2016	2279\n2017	2302\n"
+utils::read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = `Biofuels [Trillion BTU]`)) +
+  ggplot2::geom_line() +
+  ggplot2::labs(x = ggplot2::element_blank(), y = expression("U.S. biofuel consumption [" * 10^12 * " BTU]")) +
+  ggplot2::scale_x_continuous(breaks = c(1985, 1990, 2000, 2010, 2017)) +
+  MKHthemes::xy_theme()
+@
+
+
+%..............................
+\paragraph{Electric vehicles}
+\label{sec:electric_vehicles}
+%..............................
+
+Figure~\ref{fig:auto_gwp} shows two types of environmental impact
+(global warming potenatial\index{global warming potential}
+and mineral resource depletion\index{mineral resource deplation})
+across the full life cycle\index{life cycle!automobiles}
+of automobile use,
+from base vehicle manufacturing to end of life disposal,
+assuming 150,000~km service.
+Regular gasoline (gas) is consumed
+by internal combustion engine (ICE) vehicles\index{vehicle!internal combustion engine}.
+Electric vehicles (EVs)\index{vehicle!electric} consume electricity with different primary fuel mixes:
+the European mix (Euro)\index{electricity!European mix}
+or pure coal\index{coal}\index{electricity!from coal}.
+
+Figure~\ref{fig:auto_gwp} shows that EVs are clearly worse than ICE vehicles
+in terms of mineral resource depletion~(MRD)\index{resources!mineral!depletion of}.
+The material demands for engine and battery fabrication are much higher for EVs than ICE vehicles.
+However, EVs provide benefits in terms of global warming potential~(GWP)
+relative to ICE vehicles
+if the electricity source is the European mix of primary fuels and renewables, because
+of lower lifetime fuel/electricity emissions.
+In the case of the European electricity mix,
+the global warming benefits of EVs are achieved
+despite much larger emissions from battery manufacturing.
+The global warming benefits of ICE vehicles evaporate
+when coal electricity is consumed,
+because of higher electricity-related emissions.
+\citet[p.~61]{Hawkins_2012} point out that
+``[e]nvironmental evaluations relying solely on fuel and powertrain efficiencies\index{efficiency!powertrain}
+miss key differences associated with the production of different vehicle types and
+could lead to misguided comparisons across technologies.''
+
+
+<<auto_gwp, fig.cap = "Environmental impacts of three different automobiles. Data from~\\citet[Fig.~1]{Hawkins_2012}. GWP is global warming potential; MRD is mineral resource depletion; ICE is internal combustion engine; EV is electric vehicle; Euro indicates the European electricity mix; use phase excludes fuels.">>=
+
+# Add the data from file jiec532-sup-0001-S1.pdf, supplemental information for the Hawkins paper.
+data_string <- "Impact	Life cycle component	Li-NCM Euro	Li-NCM Coal	ICEV Gasoline\nGWP	Base vehicle	0.11	0.11	0.11\nGWP	Engine	0.02	0.02	0.01\nGWP	Other powertrain	0.05	0.05	0.02\nGWP	Battery	0.1	0.1	0\nGWP	Use phase	0.02	0.02	0.03\nGWP	Fuel/electricity	0.31	0.68	0.65\nGWP	End of life	0.01	0.01	0.01\nMRD	Base vehicle	0.22	0.22	0.22\nMRD	Engine	0.16	0.16	0.02\nMRD	Other powertrain	0.27	0.27	0.05\nMRD	Battery	0.26	0.26	0\nMRD	Use phase	0.05	0.05	0.03\nMRD	Fuel/electricity	0.05	0.05	0.01\nMRD	End of life	0	0	0"
+
+# Assign some variables to avoid warnings.
+utils::read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactors = FALSE) %>%
+  tidyr::gather(key = "car_type", value = "normalized_impact", "Li.NCM.Euro", "Li.NCM.Coal", "ICEV.Gasoline") %>%
+  dplyr::mutate(
+    Life.cycle.component = factor(Life.cycle.component,
+                                  rev(c("Base vehicle", "Engine", "Other powertrain",
+                                        "Battery", "Use phase", "Fuel/electricity", "End of life"))),
+    car_type = dplyr::recode(car_type, Li.NCM.Euro = "EV-Euro", Li.NCM.Coal = "EV-Coal", ICEV.Gasoline = "ICE-Gas"),
+    car_type = factor(car_type, levels = c("ICE-Gas", "EV-Euro", "EV-Coal"))
+  ) %>%
+  ggplot2::ggplot(mapping = ggplot2::aes(x = car_type)) +
+  ggplot2::geom_bar(mapping = ggplot2::aes(y = normalized_impact, fill = Life.cycle.component), width = 0.6, stat = "identity") +
+  MKHthemes::xy_theme() +
+  ggplot2::facet_wrap(~ Impact) +
+  ggplot2::labs(x = ggplot2::element_blank(), y = "Normalized impact") +
+  ggplot2::scale_y_continuous(breaks = c(0, 0.5, 1)) +
+  ggplot2::scale_fill_discrete(name = element_blank()) +
+  ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
+  ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
+@
+
+
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Tradeoffs and problem shifting}
+\label{sec:tradeoffs_and_problem_shifting}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Automobile technology is one of many arenas in which sustainability tradeoffs are observed.
+Under the right conditions,
+EVs can reduce global warming impact relative to ICE vehicles
+at the expense of depleting the stock of mineral resources,
+a phenomenon known as \emph{problem shifting}\index{problem shifting}.
+
+The sustainability challenges of transportation transitions
+don't end with the GHG emissions/mineral resource depletion tradeoff
+discussed above.
+In fact, there is a temporal component that must be examined
+when comparing EVs against ICE vehicles.
+Whether or not GHG emissions are lower for an EV relative to an ICE vehicle depends upon
+the service lifetime of the vehicle.
+The benefits of EVs relative to ICE vehicles appear only after tens of thousands of kilometers of service,
+because manufacturing causes a larger fraction of lifetime GHG emissions for EVs than for ICE vehicles.
+Put another way, an EV that is totalled shortly after manufacture
+will never achieve its potential emissions reductions.
+
+\end{mcframe}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Questions}\index{questions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+
+\item In Section~\ref{sec:transportation_efficiency},
+      the move from machine efficiency (measured in miles/gallon) to
+      service efficiency (measured in passenger-km/gallon)
+      revealed insights about the transportation sustainability challenge,
+      namely that filling empty seats in cars is a simple and effective form of increasing efficiency.
+      Consider a different sustainability challenge besides transportation.
+      Develop or find a machine efficiency for your challenge
+      that is analogous to vehicle efficiency in miles/gallon.
+      Develop or find a service efficiency for your challenge
+      that is analogous to passenger-km/gallon.
+      What changes when you move from machine efficiency to service effiency?
+      How does the move from machine efficiency to service effiency
+      affect the way you think about the sustainability challenge?
+      Does the move from from machine efficiency to service effiency
+      suggest new solutions to the sustainability challenge?
+
+\item Research the term \emph{problem shifting}.
+      Identify at least three examples of problem shifting in which
+      a ``solution'' to one sustainability challenge
+      causes problems of a different sort.
+
+\item Under the right conditions (European electricity mix, 150,000~km service life),
+      \citet{Hawkins_2012} show that
+      electric vehicles provide GHG emissions reductions relative to internal combustion engine vehicles
+      at the expense of increased mineral resource depletion.
+      The GHG emissions/mineral resource depletion tradeoff is an example of a tradeoff that is
+      nearly impossible to decide on a quantitative or objective basis.
+      Indeed, deciding this and similar tradeoffs cannot be divorced
+      from human values and value judgments.
+      Is it wise to trade reduced GHG emissions
+      for increased mineral resource depletion?
+      Why or why not?
+      What values are guiding your decision?
+
+\end{questions}
 
 
 
