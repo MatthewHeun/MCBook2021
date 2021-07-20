@@ -6,6 +6,25 @@
 \chapter{Affluence}
 \label{chap:affluence}
 
+Equation \ref{eq:IPARC} is our framework for considering sustainability.
+Chapter \ref{chap:planetary_boundaries} considered planetary boundaries and the impact
+of human activities on those boundaries, that is, the left-hand side of Equation \ref{eq:IPARC}.
+Chapter \ref{chap:population} considered the first term on the right-hand side of 
+Equation \ref{eq:IPARC}, world population and its dynamics.
+This chapter considers the second term on the right-hand side of Equation \ref{eq:IPARC}.
+Subsequent chapters, namely Chapters \ref{chap:resource_intensity}-\ref{chap:carbon_intensity}, 
+finish the development of our framework for stability.
+
+The job of this chapter is to explore the meaning of, and issues with, the term \emph{affluence}.
+The common meaning of affluence is wealth or riches but here we use it with reference to
+specific countries or globally to be \emph{per person}.
+
+\section{Wealth}
+The word wealth means happiness, propserity, well being, welfare, but mostly it 
+means the \emph{amount} of goods, possessions, money, property, or \emph{stuff} a person has.
+That is, wealth refers to the \emph{level} of material a person has.
+In contrast, the term affluence refers to the \emph{rate} a person consumes.
+It is this rate 
 
 
 
