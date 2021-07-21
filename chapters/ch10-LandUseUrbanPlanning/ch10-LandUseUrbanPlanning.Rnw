@@ -11,19 +11,21 @@
 % Why is there a "housing shortage"? This points to alternative LAWS to circumvent(?) economic and demographic trends.
 % 
 % 
-% Figure~\ref{fig:urban_density} shows the relation between urban denisty and transport-related energy consumption~\citep[Fig~2]{US_cities}.
-% 
-% \begin{figure}
-% \centering
-% \includegraphics[width=0.75\linewidth]{chapters/ch10/Urban_Density_and_Transportation-Related_Energy_Consumption.pdf}
-% \caption[Relation between urban denisty and transport-related energy consumption.]{Relation between urban denisty and transport-related energy consumption~\citep[Fig.~2]{US_cities}.}
-% \label{fig:urban_density}
-% \end{figure}
+Figure~\ref{fig:urban_density} shows the relationship between urban density and 
+transport-related energy consumption. %~\citep[Fig~2]{US_cities}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.75\linewidth]{chapters/ch10/Bloomberg2018landuse.jpg}
-\caption[USA land use.]{Major cateogries of how US land is used.~\citep[Fig.~1]{USlanduse}.}
+\includegraphics[width=0.75\linewidth]{chapters/ch10-LandUseUrbanPlanning/figures/Urban_Density_and_Transportation-Related_Energy_Consumption.pdf}
+\caption{Relation between urban density and transport-related energy consumption.} 
+% [Relation between urban density and transport-related energy consumption.] ~\citep[Fig.~2]{US_cities}.
+\label{fig:urban_density}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.75\linewidth]{chapters/ch10-LandUseUrbanPlanning/figures/Bloomberg2018landuse.jpg}
+\caption[USA land use.]{Major categories of how US land is used.}% ~\citep[Fig.~1]{USlanduse}.
 \label{fig:USAlanduse}
 \end{figure}
 
@@ -33,28 +35,38 @@
 \label{sec:land_and_how_it_is_used}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Of the three means of production (land, labor, capital), economists generally consider only land to be a fixed quantity.
+Of the three means of production (land, labor, capital), economists generally 
+consider only land to be a fixed quantity.
 This is approximately true. There are ways of creating more land. 
-The Dutch system of building dykes to reclaim land from the ocean is one example. Planetary colonization could be another. 
-Structures such as multi-story parking garages, high-rise apartment buildings, and off-shore oil platforms are also ways to 
+The Dutch system of building dykes to reclaim land from the ocean is one example. 
+Planetary colonization could be another. 
+Structures such as multi-story parking garages, high-rise apartment buildings, 
+and off-shore oil platforms are also ways to 
 multiply the {\i effective use} of the land. 
 % Change in efficiency. but land is constant. 
-Techniques that increase agricultural productivity {\i per acre} are effectively equivalent to creating more farm land. 
-But, all these aside, it remains true that the surface area of planet Earth is a fixed quantity and that the various methods 
-described above have very little {\i relative effect} on the total land available for human use.
+Techniques that increase agricultural productivity \emph{per acre} 
+are effectively equivalent to creating more farm land. 
+But, all these aside, it remains true that the surface area of planet Earth is a 
+fixed quantity and that the various methods described above have very little 
+\emph{relative effect} on the total land available for human use.
 
-Figure \ref{fig:USlanduse} how land is used in the United States. Although proportions may be different in other economies,
-the categories are the same. Land is a place to live. It is a primary input in agriculture, and so is basically the source of
-most of humanity's food supply. Land is the primary source of energy, be it fossil fuel, biomass, or renewable. Land can also be a
-major carbon sink. Land use affects and is affected by climate change. This chapter gives an overview of how land use 
+Figure \ref{fig:USlanduse} how land is used in the United States. Although 
+proportions may be different in other economies, the categories are the same. 
+Land is a place to live. It is a primary input in agriculture, and so is 
+basically the source of most of humanity's food supply. Land is the primary 
+source of energy, be it fossil fuel, biomass, or renewable. Land can also be a
+major carbon sink. Land use affects and is affected by climate change. 
+This chapter gives an overview of how land use 
 % need better language.
-intersects sustainability challenges discussed in other chapters. % What's the "sustainability tool" in this chapter? = MAJOR on SOURCE.
+intersects sustainability challenges discussed in other chapters. 
+% What's the "sustainability tool" in this chapter? = MAJOR on SOURCE.
 % Minor on Sink. Efficiency metrics for land use -> major idea of highest ROI. 
 
 
 
 
-Related to sustainability, three questions related to land use are "Is this the right use?" "How efficient is this?" 
+Related to sustainability, three questions related to land use are 
+"Is this the right use?" "How efficient is this?" 
 "How do we transition?"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,14 +84,17 @@ Refer to chapter on Food and Agriculture for the outputs from this sector % Inse
 and measures of agricultural productivity and efficiency.
 
 Since land limited resource, it makes sense to maximize the productivity of that resource. 
-Various metrics could be used to gauge the productivity of the land, for example, calories per acre, pounds of food per acre,
-number of people fed per acre, or Joules per food calorie. 
+Various metrics could be used to gauge the productivity of the land, for example, 
+calories per acre, pounds of food per acre, number of people fed per acre, or 
+Joules per food calorie. 
 (The differences between what these metrics tell us are in themselves interesting.)
 What about crop diversity (consumer choice)?
 % Josh: do we have any of these numbers (graph with time?)
-We care about multifactor indices: biodiverstiy, wilderness, ecosystem services, air and water quality, etc.
+We care about multifactor indices: biodiverstiy, wilderness, ecosystem services, 
+air and water quality, etc.
 
-Urban land is much more economically productive than rural land (citation needed), so metrics like population per square kilometer
+Urban land is much more economically productive than rural land (citation needed), 
+so metrics like population per square kilometer
 (population density) or GDP per acre are also important.
 
 Envriornmental impact per GDP or per area.
@@ -97,11 +112,13 @@ Challenges of dealing with the built environment, mismatch of information and ti
 
 \begin{figure}
 \centering
-\includegraphics[width=0.75\linewidth]{chapters/ch10/LandCarbonStorage.jpg}
+\includegraphics[width=0.75\linewidth]{chapters/ch10-LandUseUrbanPlanning/figures/LandCarbonStorage.jpg}
 \caption[Biome specific carbon storage capacity.]
-{Specific carbon storage capacity of different biomes.~\citep[Fig.~1]{LandCStorage}.}
+{Specific carbon storage capacity of different biomes.}%~\citep[Fig.~1]{LandCStorage}.
 \label{fig:LandCStorage}
 \end{figure}
+
+
 % Need a source for this figure.
 % https://link.springer.com/chapter/10.1007/978-94-017-3089-1_2 ??
 % https://www.researchgate.net/publication/255994189_Terrestrial_ecosystem_responses_to_global_change_a_research_strategy
@@ -115,7 +132,8 @@ Need to modify this figure to reconcile with Duke report (see also other publica
 % https://www.google.com/search?q=Murray+Linwood+Pendleton+Jenkins+Sifleet+2011&rlz=1C1GCEA_enUS774US774&oq=Murray+Linwood+Pendleton+Jenkins+Sifleet+2011&aqs=chrome..69i57.34130j0j7&sourceid=chrome&ie=UTF-8
 %
 include oceans.
-Note that this data is a specific intensity. That is, it shows how much carbon is stored per meter squared but we need to know how many square meters of each terrain is available.
+Note that this data is a specific intensity. That is, it shows how much carbon is 
+stored per meter squared but we need to know how many square meters of each terrain is available.
 
  
 % Get the content from the Powerpoint on Moodle.

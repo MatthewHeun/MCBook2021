@@ -53,7 +53,7 @@ This chapter presents key information about the food system and explores its sus
 
 \begin{figure}
 \centering
-\includegraphics[width=0.75\linewidth]{chapters/ch07/Material_Flow_in_the_US_Food_System(1995_Flows_in_Million_Pounds).pdf}
+\includegraphics[width=0.75\linewidth]{chapters/ch09-Agriculture/figures/Material_Flow_in_the_US_Food_System(1995_Flows_in_Million_Pounds).pdf}
 \caption[Material flow in the U.S.\ food system (1995, flows in million pounds.)]{Material flow in the U.S.\ food system (1995, flows in million pounds)~\citep[Fig.~1]{Heller_2000}.}
 \label{fig:food_and_ag_material_flow}
 \end{figure}
@@ -132,7 +132,7 @@ energy return ratios, CO$_2$ emissions, and justice issues.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.75\linewidth]{chapters/ch07/Energy_flow_food_systems.pdf}
+\includegraphics[width=0.75\linewidth]{chapters/ch09-Agriculture/figures/Energy_flow_food_systems.pdf}
 \caption[Energy Flow in the US.]{Percentages of energy consumed in different aspects of food delivery~\citep[Fig.~2]{Heller_2000}. 
 **** Larisa: what year is this for? what country is this for? Can we make a ggplot version of this graph?}
 \label{fig:energy_flow_in_food_system}
@@ -206,29 +206,30 @@ read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactors = FAL
 @
 
 
-A second sustainabiilty challenge that arises in food and agriculture
+A second sustainabilty challenge that arises in food and agriculture
 is the greenhouse gas\index{greenhouse gases}
 emissions whose origin is the food delivery system.
 Figure~\ref{fig:pounds_serving} shows the amount of CO$_2$ released 
 from the production and distribution of one serving 
 of several types of food~\citep[Fig.~2]{Heller_2014}.
 Figure~\ref{fig:pounds_serving} leads to two important observations:
-%
-\begin{enumerate*}[label={(\alph*)}]
-	
-  \item animal-based foods have much more environmental impact than plant-based foods and
-  
-  \item consuming food that is closer to the base of the food chain has environmental benefits.
-    
-\end{enumerate*}
 
-% \begin{figure}
-% \centering
-% \includegraphics[width=0.75\linewidth]{chapters/ch07/GHGfromFoodConsumption.pdf}
-% \caption[GHG emissions from food.]{Percentages of greenhouse gas emissions from food~\citep[Fig.~2]{Heller_2014}.}
-% \label{fig:GHG_food}
-% \end{figure}
-% 
+%
+% \begin{enumerate*}[label={(\alph*)}]
+% 	
+%   \item animal-based foods have much more environmental impact than plant-based foods and
+%   
+%   \item consuming food that is closer to the base of the food chain has environmental benefits.
+%     
+% \end{enumerate*}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.75\linewidth]{chapters/ch09-Agriculture/figures/GHGfromFoodConsumption.pdf}
+\caption[GHG emissions from food.]{Percentages of greenhouse gas emissions from food~\citep[Fig.~2]{Heller_2014}.}
+\label{fig:GHG_food}
+\end{figure}
+
 % <<GHG_from_food, echo = FALSE, fig.cap = "Percentages of greenhouse gas emissions from food consumption.", fig.scap = "Food greenhouse gas percentages.", fig.width = 5, fig.height = 2.5>>=
 % # This is an R chunk embedded in the LaTeX code.
 % # Assign some variables to NULL, thereby avoiding some warnings.
@@ -302,7 +303,7 @@ the proportion of people who lack access to fresh food.
 
 \begin{figure}
 \centering
-\includegraphics[width=1\linewidth]{chapters/ch07/Food_Desert.pdf}
+\includegraphics[width=1\linewidth]{chapters/ch09-Agriculture/figures/Food_Desert.pdf}
 \caption[Food deserts.]{Food deserts in the U.S.\index{food deserts!United States} **** Larisa: include reference here. ****}
 \label{fig:food_deserts}
 \end{figure}
@@ -387,8 +388,8 @@ strain on the biosphere.
 \section*{Questions}\index{questions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{problems}
-
+%\begin{problems}
+\begin{itemize}
 \item Verify the efficiency values in Section~\ref{sec:food_ag_features}.
       Use Figure~\ref{fig:food_and_ag_material_flow} as the basis for your calculations.
       
@@ -409,8 +410,8 @@ strain on the biosphere.
       Where are they most prevalent?
       What are their causes?
       What can be done to alleviate them?
-
-\end{problems}
+\end{itemize}
+%\end{problems}
 
 
 \cleardoublepage 
