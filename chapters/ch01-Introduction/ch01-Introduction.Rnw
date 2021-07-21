@@ -231,14 +231,15 @@ and a resource impact intensity.
 
 
 ********************
+
 Jeremy: 
 
 Here are some options for the equation.  
-I suspect that none are what you want..
+I suspect that none are what you want.
 
 The first version uses a table with centered columns to show all the terms.
 
-Note that I need to use \verb|\tiny| to fit the equation number on the same line as the table.
+Note that I need to use \verb|\small| to fit the equation number on the same line as the table.
 The whole table is numbered as one equation.
 
 
