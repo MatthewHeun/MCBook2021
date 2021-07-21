@@ -240,7 +240,7 @@ I suspect that none are what you want.
 The first version uses a table with centered columns to show all the terms.
 
 Note that I need to use \verb|\small| to fit the equation number on the same line as the table.
-The whole table is numbered as one equation.
+The whole table is numbered as one equation, and I don't think we can number only the first line.
 
 
 \begin{equation}
@@ -259,7 +259,7 @@ $\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}
 The second version uses a standard equation with explanatory text in the paragraph below.
 
 \begin{equation} \label{eq:IPARC}
-  I = P A R C \; ,
+  I = P \! A R C \; ,
 \end{equation}
 %
 where $I$ is environmental impact rate in units of impact/year, 
@@ -267,6 +267,8 @@ $P$ is population in persons,
 $A$ is affluence in \$ GDP/year-capita, 
 $R$ is the resource intensity of the economy in resource consumption/\$ GDP, and
 $C$ is the contamination intensity of resource consumption in environmental impact/resource consumption.
+
+I think I prefer the standard equatino with explanatary text below. 
 
 Choose wisely! 
 
