@@ -3,29 +3,18 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
-%#############################################################
-\part{Applications}
-\label{part:part_2}
-%#############################################################
-
-\cleardoublepage
-
 
 %#############################################################
 \chapter{Households}
 \label{chap:households} \index{households}
 %#############################################################
 
-This is the first of six chapters to discuss
-economic sectors and areas of life 
-where sustainability challenges are relevant:
+This is the first of five chapters to discuss
+economic sectors where sustainability challenges are relevant:
 households (this chapter),
 transportation (Chapter~\ref{chap:transportation}), 
-agriculture (Chapter~\ref{chap:agriculture}), 
-land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}), and
-government (Chapter~\ref{chap:government}).
-A summary of sustainability-friendly personal actions 
-is provided in Chapter~\ref{chap:personal_action}.
+agriculture (Chapter~\ref{chap:agriculture}), and
+land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}).
 This chapter focuses on households.
 
 Households are important for sustainability, 
