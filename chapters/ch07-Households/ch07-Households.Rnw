@@ -9,13 +9,17 @@
 \label{chap:households} \index{households}
 %#############################################################
 
-This is the first of five chapters to discuss
-economic sectors where sustainability challenges are relevant:
+This is the first of four chapters to discuss
+areas of life where sustainability challenges are relevant:
 households (this chapter),
 transportation (Chapter~\ref{chap:transportation}), 
 agriculture (Chapter~\ref{chap:agriculture}), and
 land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}).
-This chapter focuses on households.
+The structure of each chapter is similar:
+First, the importance of that area of life to sustainability is demonstrated.
+Next, technical details about sustainability in that area of life are presented.
+Finally, a summary provides pointers to other chapters 
+where personal or collective actions relevant to that area of life are discussed.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -42,12 +46,6 @@ from household decisions about food\index{food!consumption of} and material cons
 Thus, decisions made in households have sustainability implications
 far beyond the walls of each abode.
 
-\begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch07-Households/figures/Energy_US_2020.png}
-\caption{U.S.\ energy consumption 2020.}
-\label{fig:LLNL_sankey}
-\end{figure}
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)

@@ -14,9 +14,9 @@ As noted in Chapter~\ref{chap:},
 the economy is society's metabolism.
 As such, the economy exhibits characteristics of a metabolism:
 it ingests material and emits waste.
-These characteristics of the economic metabolism are captured by the 
-final term in Equation~\ref{eq:IPARC}, 
-the contamination intensity of resource extraction and consumption ($c$).
+These characteristics of the economic metabolism are captured by the
+final term in Equation~\ref{eq:IPARC},
+the contamination intensity of resource extraction and consumption ($C$).
 Resource extraction was covered in Chapter~\ref{chap:resource_intensity}.
 Environmental contamination is discussed in this chapter.
 
@@ -26,30 +26,30 @@ Environmental contamination is discussed in this chapter.
 \label{sec:contamination_intensity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The contamination intensity of resource extraction ($c$)
+The contamination intensity of resource extraction ($C$)
 represents the amount of environmental contamination (emitted wastes)
 per unit of extracted and consumed resources (ingested materials).
 Examples of environmental contamination include
-water eutrophication (from fertilizer runoff), 
-SO$_2$ emissions (from burning sulfurous coal), 
-CO$_2$ emissions (from burning fossil fuels), 
-desertification (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and 
+water eutrophication (from fertilizer runoff),
+SO$_2$ emissions (from burning sulfurous coal),
+CO$_2$ emissions (from burning fossil fuels),
+desertification (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and
 species loss (due to habitat loss, environmental toxins, and over-exploitation).
-With reference to a few of the critical materials in Table~\ref{tab:CRMs}, 
+With reference to a few of the critical materials in Table~\ref{tab:CRMs},
 specific examples of the environmental contamination caused by resource extraction and consumption include:
 %
 \begin{itemize}
 
   \item air, water, and soil pollution~\cite{Lee:2017ui} (environmental contamination) in the form of
         bauxite dust,
-        sulfur dioxide (SO$_2$), and 
+        sulfur dioxide (SO$_2$), and
         nitrous oxides (NO$_\mathrm{x}$) emissions
         from bauxite mining (material extraction),
 
   \item Toxic tailings (environmental contamination)
-        from Tungsten (material extraction) 
+        from Tungsten (material extraction)
         mining operations~\cite{Lee:2021tz}, and
-        
+
   \item Deforestation and reduced forest quality~\cite{Kissinger:2020ut} (environmental contamination)
         to make way for rubber plantations (material extraction)
         in southeast Asia.
@@ -62,67 +62,112 @@ specific examples of the environmental contamination caused by resource extracti
 \label{sec:carbon_intensity_of_energy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In this book, 
-the prime example of environmental contamination is carbon dioxide emissions. 
-Energy is the prime example of material extraction and consumption.
-(See Chapter~\ref{chap:resource_intensity}.)
-Thus, the prime example for $c$ is the CO$_2$ intensity of energy.
+In this book,
+energy is the prime example of material extraction and consumption,
+as discussed in Chapter~\ref{chap:resource_intensity}.
+Because CO$_2$ emissions are a significant source of environmental contamination
+coming from energy consumption,
+it follows that the prime example of environmental contamination
+is CO$_2$ emissions.
+Thus, the prime example for contamination intensity ($C$) is the CO$_2$ intensity of energy.
 The units for the CO$_2$ intensity of energy are,
 e.g., tonnes of CO$_2$ emitted per MJ of energy consumed.
 
-The yearly rate of CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
+Figure~\ref{fig:LLNL_CO2_sankey} shows sources of CO$_2$ emissions from the U.S.\ economy in 2018.
+However, CO$_2$ emissions from electricity generatation are not attributed to end uses for electricity
+in Figure~\ref{fig:LLNL_CO2_sankey}.
+Table~\ref{tab:corrected_co2_emissions} shows the result of attributing CO$_2$ emissions to end uses,
+thereby completing the picture of U.S.\ carbon emissions.
+Attributing CO$_2$ emissions from electricity generation significantly increases the share of CO$_2$
+emissions from the Residential and Commercial sectors.
+
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch06-CarbonIntensity/figures/Carbon_2018_United-States.png}
+\caption{U.S.\ CO$_2$ emissions 2018. **** Need attribution here. ****}
+\label{fig:LLNL_CO2_sankey}
+\end{figure}
+
+
+
+<<US-Carbon-Table, results="asis">>=
+US_CO2_by_sector <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "US-Carbon-Emissions.xlsx"),
+                                       sheet = "data to plot") %>%
+  dplyr::select(-`CO2 share`) %>%
+  dplyr::rename(
+    `CO$_2$ emissions [Mtonnes]` = `CO2 emissions allocated [tonnes]`
+  )
+
+print(xtable::xtable(US_CO2_by_sector, digits = 0,
+                     caption = "U.S.\ CO$_2$ emissions by sector with
+                     CO$_2$ emissions from electricity generation attributed to
+                     end uses by
+                     fraction of electricity demanded.",
+                     label = "tab:corrected_co2_emissions"),
+      include.rownames = FALSE,
+      include.colnames = TRUE,
+      caption.placement = "top",
+      type = "latex",
+      sanitize.text.function = function(x) {x},
+      booktabs = TRUE,
+      table.placement = "")
+@
+
+
+The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
 The clear trend is upward, with small drops corresponding to years of economic recession.
 
 
 <<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions.">>=
-CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"), 
+CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"),
                    sheet = "data to plot")
 
-CO2_emissions %>% 
-  dplyr::filter(Year >= 1800) %>% 
+CO2_emissions %>%
+  dplyr::filter(Year >= 1800) %>%
   dplyr::mutate(
     CO2_emissions_Gt = CO2_emissions_tonnes / 1e9
-  ) %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_emissions_Gt")) + 
-  ggplot2::geom_line(size = 1) + 
+  ) %>%
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_emissions_Gt")) +
+  ggplot2::geom_line(size = 1) +
   ggplot2::geom_vline(xintercept = c(1932, 1945, 1974, 1982, 1992, 2009), size = 0.2) +
   ggplot2::labs(x = NULL,
                 y = expression("World "*CO[2]*" emissions [Gt/year]")) +
-  
+
   MKHthemes::xy_theme()
 @
 
 
-The carbon intensity of energy (the prime example for $c$)
+
+The carbon intensity of energy (the prime example for $C$)
 is shown in Figure~\ref{fig:CarbonIntensityGraph}.
 The line in Figure~\ref{fig:CarbonIntensityGraph}
-demonstrates the long transition 
+demonstrates the long transition
 from traditional biofuels to fossil fuels.
-Traditional biofuels are carbon neutral, 
+Traditional biofuels are carbon neutral,
 because any CO$_2$ released by combustion was
 already sequestered into the biomass as it grew to maturity.
-Fossil fuels are not carbon neutral; 
+Fossil fuels are not carbon neutral;
 their combustion releases CO$_2$ that was sequestered millions of years ago.
 When the world transitioned away from traditional biofuels toward fossil fuels,
 the carbon intensity of energy rose.
 
 
-<<CarbonIntensityGraph, fig.cap="Carbon intensity of energy, $c$ in the Kaya identity. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
+<<CarbonIntensityGraph, fig.cap="Carbon intensity of energy, $C$ in the IPARC identity. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 dplyr::inner_join(
-  CO2_emissions, 
-  primary_energy %>% 
-    dplyr::group_by(Year) %>% 
-    dplyr::summarise(energy_EJ = sum(energy_EJ)), 
+  CO2_emissions,
+  primary_energy %>%
+    dplyr::group_by(Year) %>%
+    dplyr::summarise(energy_EJ = sum(energy_EJ)),
   by = "Year"
-) %>% 
+) %>%
   dplyr::mutate(
-    CO2_intensity_Mt_per_EJ = CO2_emissions_tonnes / 1e6 / energy_EJ, 
-  ) %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_intensity_Mt_per_EJ")) + 
+    CO2_intensity_Mt_per_EJ = CO2_emissions_tonnes / 1e6 / energy_EJ,
+  ) %>%
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_intensity_Mt_per_EJ")) +
   ggplot2::geom_line(size = 1) +
   ggplot2::labs(x = NULL,
                 y = expression("Carbon intensity of energy (c) [Mt "*CO[2]/EJ*"]")) +
-  
+
   MKHthemes::xy_theme()
 @
 
@@ -135,23 +180,24 @@ dplyr::inner_join(
 Equation~\ref{eq:IPARC} shows that reducing any of the right-hand side terms to 0
 will eliminate CO$_2$ emissions.
 I.e., if population ($P$), affluence ($A$), energy intensity of the economy ($I_p$)
-or carbon intensity of energy ($c$) go to 0, 
+or carbon intensity of energy ($C$) go to 0,
 CO$_2$ emissions will be eliminated.
 Few people want to reduce population ($P$) or affluence ($A$).
 The primary energy intensity of the economy ($I_p$) has been declining
-since 1960 (Figure~\ref{fig:EnergyIntensityGraph}), 
-but not as fast as population (Figure~\ref{fig:}) and affluence (Figure~\ref{fig:AffluenceGraph}) are growing.
+since 1960 (Figure~\ref{fig:EnergyIntensityGraph}),
+but not as fast as population (Figure~\ref{fig:PopulationGraph})
+and affluence (Figure~\ref{fig:AffluenceGraph}) are growing.
 
-Figure~\ref{fig:CarbonIntensityGraph} shows that the carbon intensity of energy 
+Figure~\ref{fig:CarbonIntensityGraph} shows that the carbon intensity of energy
 has hovered around 63 Mt CO$_2$/EJ from 1960 to today.
 Thus, for the last 60 years, the carbon intensity of energy has been stubbornly constant.
-It appears that eliminating CO$_2$ emissions by significantly reducing 
-the carbon intensity of energy ($c$) will be require unprecedented changes
+It appears that eliminating CO$_2$ emissions by significantly reducing
+the carbon intensity of energy ($C$) will be require unprecedented changes
 to the world's primary energy sources.
 
-If we want to reduce CO$_2$ emissions by reducing 
-the carbon intensity of energy ($c$), 
-we could transition back to the energy mix of the first half of the 18$^\mathrm{th}$ century, 
+If we want to reduce CO$_2$ emissions by reducing
+the carbon intensity of energy ($C$),
+we could transition back to the energy mix of the first half of the 18$^\mathrm{th}$ century,
 exclusive use of traditional biofuels, namely wood and wood products.
 (See Figure~\ref{fig:PrimaryEnergyGraph}.)
 However, supplying the energy needs of today's economy would be impossible:
@@ -162,8 +208,8 @@ Alternatively, we could transition the world energy system
 to renewable energy sources: water (hydro), wind, and solar (WWS).
 **** Add reference to Dellucci here. ****
 However, in addition to changing the world's energy sources,
-reducing the carbon intensity of energy 
-will require 
+reducing the carbon intensity of energy
+will require
 significant changes to the world's energy infrastructure.
 Indeed, a transition to WWS will bring several new challenges.
 First, WWS energy resources produce electricity, not liquid fuels.
@@ -175,7 +221,7 @@ and a zero-carbon economy.
 Electrification of the world's transportation fleet will be very expensive.
 **** Josh to find a cost estimate. ****
 
-Second, wind and solar (the \emph{WS} in W\emph{WS}) are intermittent sources of electricity, 
+Second, wind and solar (the \emph{WS} in W\emph{WS}) are intermittent sources of electricity,
 while coal, natural gas, nuclear, and water (hydro) sources are not.
 At present, electric grids accommodate only a fraction of intermittent electricity, much less than 100\%.
 So a transition to wind and solar primary energy sources will require
@@ -184,7 +230,7 @@ redesign and re-implementation of electricity grids worldwide.
 Third, WWS primary energy sources are energy intensive to manufacture.
 So the transition to a WWS future will require significant energy investment
 in addition to significant financial investment.
-If the energy to make WWS systems comes from fossil fuels, 
+If the energy to make WWS systems comes from fossil fuels,
 significant CO$_2$ will be emitted during the transition
 from today's energy regime to a WWS regime.
 
