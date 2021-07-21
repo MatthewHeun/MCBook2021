@@ -228,6 +228,52 @@ and a resource impact intensity.
 %\end{tabular}
 \end{align}
 %\end{eqnarray}
+
+
+********************
+Jeremy: 
+
+Here are some options for the equation.  
+I suspect that none are what you want..
+
+The first version uses a table with centered columns to show all the terms.
+
+Note that I need to use \verb|\tiny| to fit the equation number on the same line as the table.
+The whole table is numbered as one equation.
+
+
+\begin{equation}
+\small
+\begin{tabular}{ccccccccc}
+$I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $C$ \\
+\multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource &  & Contamination \\
+ &  &  &  &  &  & intensity &  & intensity \\
+$\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}\right]$ &  & $\left[\frac{\textrm{\$ GDP}}{\textrm{capita-year}}\right]$ &  & $\left[\frac{\textrm{resource}}{\textrm{\$ GDP}}\right]$ &  & $\left[\frac{\textrm{impact}}{\textrm{resource}}\right]$ 
+\end{tabular}
+\normalsize
+\end{equation}
+
+
+
+The second version uses a standard equation with explanatory text in the paragraph below.
+
+\begin{equation} \label{eq:IPARC}
+  I = P A R C \; ,
+\end{equation}
+%
+where $I$ is environmental impact rate in units of impact/year, 
+$P$ is population in persons, 
+$A$ is affluence in \$ GDP/year-capita, 
+$R$ is the resource intensity of the economy in resource consumption/\$ GDP, and
+$C$ is the contamination intensity of resource consumption in environmental impact/resource consumption.
+
+Choose wisely! 
+
+---MKH
+
+**********************
+
+
 In the IPARC formulation, impact is a vector quantity (that is, a list) 
 that includes such things as global warming potential, aquifer depletion, and 
 eutrophication potential. Population is the (scalar) number of people in the world.
