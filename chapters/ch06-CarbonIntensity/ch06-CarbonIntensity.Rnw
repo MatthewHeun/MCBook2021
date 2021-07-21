@@ -110,7 +110,7 @@ print(xtable::xtable(US_CO2_by_sector, digits = 0,
       type = "latex",
       sanitize.text.function = function(x) {x},
       booktabs = TRUE,
-      table.placement = "")
+      table.placement = NULL)
 @
 
 
