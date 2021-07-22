@@ -61,6 +61,7 @@ library(readxl)      # To read Excel files
 library(rworldmap)   # For world maps
 library(tidyr)
 library(viridis)     # For a great color palette for graphs
+library(xtable)      # For awesome tables.
 @
 
 <<r_functions, echo=FALSE>>=
