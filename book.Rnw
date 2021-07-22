@@ -20,6 +20,7 @@
 % 
 
 \usepackage{booktabs}    % For awesome table formatting
+\usepackage{epigraph}    % For epigraphs below chapter titles.
 \usepackage{gensymb}     % For the \degree command
 \usepackage{microtype}   % For (more) beautiful typesetting.
 \usepackage{rotating}    % For rotating figures.
@@ -146,7 +147,7 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
     \Sexpr{knit_child("chapters/ch04-Affluence/ch04-Affluence.Rnw")}                       % \ref{chap:affluence}
     \Sexpr{knit_child("chapters/ch05-ResourceIntensity/ch05-ResourceIntensity.Rnw")}       % \ref{chap:resource_intensity}
     \Sexpr{knit_child("chapters/ch06-CarbonIntensity/ch06-CarbonIntensity.Rnw")}           % \ref{chap:chap:carbon_intensity}
-    
+
     
 %#############################################################
 \part{Sustainability Challenges}
