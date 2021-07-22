@@ -56,8 +56,9 @@ knitr::opts_chunk$set(echo=FALSE,
 
 library(ggplot2)     # For graphing functions
 library(magrittr)    # For pipe operator, (%>%)
-library(readxl)      # To read Excel files
 library(MKHthemes)   # For default ggplot2 theme
+library(readxl)      # To read Excel files
+library(rworldmap)   # For world maps
 library(tidyr)
 library(viridis)     # For a great color palette for graphs
 @

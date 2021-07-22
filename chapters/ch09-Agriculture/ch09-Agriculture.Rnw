@@ -23,7 +23,413 @@
 %% Buy the PDF, get a free hat, a $5 value for $55
 % https://www.nap.edu/catalog/25059/science-breakthroughs-to-advance-food-and-agricultural-research-by-2030
 
+% Quote by Vladimir Lenin: “Every society is three meals away from chaos”
+%
 
+Food provides energy for humans to pursue lives of work, service, and play
+with family, friends, and co-workers.
+Food consumption is rather predictable, because food energy intake (measured in food calories) 
+scales linearly with population. 
+Each healthy individual consumes about 2000 food calories per day, 
+more for teens and active people, slightly less for women than men.
+
+But food doesn't appear on plates magically, out of nowhere.
+Food arrives on plates through a network of 
+natural and human-created transformation processes\index{transformation processes!food}
+that convert solar energy\index{energy!solar}
+into available, ingestible energy\index{energy!ingestible}.
+This network is often called ``agriculture.''\index{agriculture}
+The economic value added of the agriculture, forestry, and fishing industry is only 1~\% of GDP for the U.S.\ 
+and about 3.5~\% of GDP worldwide~\cite{World-Bank-agriculture:aa}.
+But its importance goes far beyond its economic value.
+Without agriculture, none of us would be here today!
+This chapter presents key information about the food system and explores its sustainability challenges.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Features of the food and agriculture system}
+\label{sec:food_ag_features}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}
+\centering
+\includegraphics[width=0.75\linewidth]{chapters/ch09-Agriculture/figures/Material_Flow_in_the_US_Food_System(1995_Flows_in_Million_Pounds).pdf}
+\caption[Material flow in the U.S.\ food system (1995, flows in million pounds.)]{Material flow in the U.S.\ food system (1995, flows in million pounds)~\citep[Fig.~1]{Heller_2000}.}
+\label{fig:food_and_ag_material_flow}
+\end{figure}
+
+<<ag_sys_calcs, echo = FALSE>>=
+# All numbers from Heller figure above in million pounds.
+consumed_food <- 259610 # million pounds
+total_input <- 153000 + 921590 + 13870 + 19900 + 158000 + 370000 # million pounds
+aggregate_food_efficiency <- consumed_food / total_input
+
+end_use_food_efficiency <- 259610 / (259610 + 90820 + 5450)
+
+animal_inputs <- 964000 # million pounds
+animal_products <- 51470 + 76280 + 7920 # million pounds
+animal_efficiency <- animal_products / animal_inputs * end_use_food_efficiency
+@
+
+Figure~\ref{fig:food_and_ag_material_flow} shows a Sankey diagram\index{Sankey diagram}
+of material flows
+in the U.S.\ agriculture system~\citep[Fig.~1]{Heller_2000}.
+Several observations can be made.
+
+First, the mass efficiency\index{efficiency!mass-based}
+of the agriculture system\index{efficiency!agriculture system}
+is low.
+Consumed food\index{food!consumed} 
+(\Sexpr{format(consumed_food, big.mark = ",")} million pounds)
+is a very small fraction of the
+total input to the system
+(\Sexpr{format(total_input, nsmall = 0, big.mark = ",")} million pounds),
+yielding a mass-based efficiency\index{efficiency!mass-based}
+of \Sexpr{format(aggregate_food_efficiency * 100, digits = 3)}~\%.
+
+Second, animal-based food production\index{food!animal-based}
+comprises a large and important
+intermediate processing stage.
+Animal-based food production
+is less efficient than the overall food system with
+\Sexpr{animal_inputs} million pounds as input and only
+\Sexpr{format(animal_efficiency * 100, digits = 3)}~\% efficiency on a mass basis\index{efficiency!mass-based}.
+
+Third, losses (wastage) at the final stages reduce the efficiency of the entire food system.\index{waste!food}
+In fact, final stage mass-based efficiency\index{efficiency!mass-based}
+is only \Sexpr{format(end_use_food_efficiency * 100, digits = 3)}~\%.
+
+Fourth, imports\index{food!imports}
+are relatively small compared to domestic production and consumption.
+Thus, the U.S.\ is reasonably self-sufficient regarding food supply.
+However, exports\index{food!exports}
+of crops (\Sexpr{format(355560, big.mark = ",")} million pounds)
+are a significant source of demand for the U.S.\ agriculture system.
+
+Finally, relative to annual worldwide consumption, 
+there is little storage of food beyond what is needed to compensate 
+for expected seasonal weather variations. 
+In other words, the agriculture system produces what is needed now (or at least this year).  
+Given that food demand scales with population, 
+weather- and climate-related supply-side disruptions are
+more significant than demand-side disruptions
+for determining food prices. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Food and agriculture sustainability challenges}
+\label{sec:food_sustainability_challenges}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The food system faces many sustainability challenges, including 
+energy return ratios, CO$_2$ emissions, and justice issues. 
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Energy return ratios}
+\label{sec:food_energy_return_ratios}
+%++++++++++++++++++++++++++++++
+
+\begin{figure}
+\centering
+\includegraphics[width=0.75\linewidth]{chapters/ch09-Agriculture/figures/Energy_flow_food_systems.pdf}
+\caption[Energy Flow in the US.]{Percentages of energy consumed in different aspects of food delivery~\citep[Fig.~2]{Heller_2000}. 
+**** Larisa: what year is this for? what country is this for? Can we make a ggplot version of this graph?}
+\label{fig:energy_flow_in_food_system}
+\end{figure}
+
+Because food is energy, the overall energy efficiency of the food delivery system can be calculated.
+Figure~\ref{fig:energy_flow_in_food_system} shows the energy consumed and supplied
+by various aspects of the food delivery system~\citep[Fig.~2]{Heller_2000}.
+The energy efficiency of the food delivery system is \Sexpr{format(1.4/10.2 * 100, digits = 3)}~\%.
+A good rule of thumb is that 
+it takes roughly 7 calories of energy to provide 1 calorie of food energy.
+Thus, the energy return on investment (EROI)\index{EROI}
+for the food system is only 1/7.
+The fact that the energy efficiency of the food delivery system is less than 1
+means that the food delivery system is not a \emph{source} of energy for society. 
+Rather it is a \emph{sink} of energy for society.
+Thus, today's food system is unsustainable from an energy point of view.
+
+To put it another way, society spends more energy to \emph{get} food than it \emph{obtains} from food.  
+Animals that spend more energy to obtain food than they gain from eating food ultimately die from lack of energy.
+Agrarian societies that spend more energy to obtain food than they gain from eating food ultimately cease to exist.
+But modern society remains viable
+because its food delivery system is supported by energy inputs from an external source:
+fossil fuels\index{fossil fuels}.
+Fossil fuels supply the energy for 
+machines in agriculture, food transportation, food processing, food packaging, 
+retail, food storage, and food preparation.
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+A pithy way to summarize the sustainability challenge posed 
+by today's food energy return ratios is:
+``We don't eat food; we eat oil.''
+\end{mcframe}
+
+
+%++++++++++++++++++++++++++++++
+\subsection{CO$_2$ emissions}
+\label{sec:food_CO2_emissions}
+%++++++++++++++++++++++++++++++
+
+<<pounds_serving, echo = FALSE, fig.align = "center", fig.width = 5, fig.height = 3.5, fig.scap = "Pounds of CO$_2$ per serving.", fig.cap = "Carbon dioxide (CO$_2$) equivalent emissions per serving of various foods~\\citep[Fig.~2]{Heller_2014}.">>=
+data_string <- 
+"Pounds CO2 per Serving	Product\n
+6.61	Beef\n
+2.45	Cheese\n
+1.72	Pork\n
+1.26	Poultry\n
+0.89	Eggs\n
+0.72	Milk\n
+0.16	Rice\n
+0.11	Legumes\n
+0.07	Carrots\n
+0.03	Potatoes"
+
+read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  dplyr::mutate(
+    Product = factor(Product, levels = c("Beef", "Cheese", "Pork", "Poultry", "Eggs", "Milk", "Rice", "Legumes", "Carrots", "Potatoes")),
+    `kg CO2 per serving` = `Pounds CO2 per Serving` / 2.204623, # Convert lbm to kg.
+    `Pounds CO2 per Serving` = NULL
+  ) %>% 
+  ggplot() + 
+  geom_bar(aes(y = `kg CO2 per serving`, x = Product, fill = Product), stat = "identity") +
+  # geom_text(aes(y = `kg CO2 per serving` + 0.15, x = Product, label = round(`kg CO2 per serving`, 1), group = Product), 
+  #           color = "gray50") +
+  labs(x = element_blank(), y = expression("Emissions [kg " * CO[2] * "/serving]"), fill = element_blank()) +
+  guides(fill = FALSE) +
+  MKHthemes::xy_theme() + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+@
+
+
+A second sustainabilty challenge that arises in food and agriculture
+is the greenhouse gas\index{greenhouse gases}
+emissions whose origin is the food delivery system.
+Figure~\ref{fig:pounds_serving} shows the amount of CO$_2$ released 
+from the production and distribution of one serving 
+of several types of food~\citep[Fig.~2]{Heller_2014}.
+Figure~\ref{fig:pounds_serving} leads to two important observations:
+
+%
+% \begin{enumerate*}[label={(\alph*)}]
+% 	
+%   \item animal-based foods have much more environmental impact than plant-based foods and
+%   
+%   \item consuming food that is closer to the base of the food chain has environmental benefits.
+%     
+% \end{enumerate*}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.75\linewidth]{chapters/ch09-Agriculture/figures/GHGfromFoodConsumption.pdf}
+\caption[GHG emissions from food.]{Percentages of greenhouse gas emissions from food~\citep[Fig.~2]{Heller_2014}.}
+\label{fig:GHG_food}
+\end{figure}
+
+% <<GHG_from_food, echo = FALSE, fig.cap = "Percentages of greenhouse gas emissions from food consumption.", fig.scap = "Food greenhouse gas percentages.", fig.width = 5, fig.height = 2.5>>=
+% # This is an R chunk embedded in the LaTeX code.
+% # Assign some variables to NULL, thereby avoiding some warnings.
+% food_categories <- NULL
+% percentages <- NULL
+% label_ypos <- NULL
+% ang <- NULL
+% # Define this vector of category names (in the order that we want), thereby avoiding retyping later.
+% food_cats <- c("Meat", "Dairy products", "Poultry, fish, seafood, and eggs", 
+%                                "Vegetables", "Fruit", "Grain products", 
+%                                "Sugars, sweeteners, fats, and oils", "Other")
+% # Create a data frame that contains the information for the graph.
+% # These data could also be read in from an external .csv file.
+% Food_GHG <- data.frame(food_categories = food_cats, 
+%                        percentages = c(47.6, 18.9, 13.9, 4.9, 3.6, 3.0, 7.5, 0.5), 
+%                        ang = c(0, 0, 0, -35, -50, -65, -80, -90)) %>% 
+%   dplyr::mutate(
+%     # Sets the order of the categories in the pie chart
+%     food_categories = factor(food_categories, levels = food_cats), 
+%     # Calculates the location for the percentage labels
+%     label_ypos = 100 - (cumsum(percentages) - percentages/2)
+%   )  
+% # Make the graph
+% ggplot(data = Food_GHG, mapping = aes(x = "", y = percentages, fill = food_categories)) + 
+%   # The next two lines give a pie chart
+%   geom_bar(width = 1, stat = "identity") + 
+%   coord_polar("y", start = 0, direction = -1) +
+%   # Add percentage labels
+%   geom_text(mapping = aes(y = label_ypos, label = paste(percentages, "%"), angle = ang), color = "white", size = 3, family = "Libre Caslon Text") +
+%   # Eliminate all of the labels on the axes.
+%   labs(x = "", y = "", fill = "") +
+%   # Apply a consistent theme for text and label colors.
+%   MKHthemes::xy_theme() + 
+%   # Eliminate percentages around the outside of the pie
+%   theme(axis.text.x = element_blank()) +
+%   theme(axis.text.y = element_blank()) +
+%   # Eliminate y axis ticks
+%   theme(axis.ticks = element_blank()) +
+%   # Eliminate the frame around the whole plot
+%   theme(panel.border = element_blank()) + 
+%   # Change size of legend text
+%   theme(legend.text = element_text(size = 9, family = "Libre Caslon Text")) + 
+%   # Change size of legend squares
+%   theme(legend.key.size = unit(0.3, "cm")) +
+%   theme(plot.margin = unit(c(0,0,0,0),"mm"))
+% @
+
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Convenient calculators for greenhouse emissions from food production
+can be found online \cite{CleanMetrics:aa}.
+Factors such as transport distance and wastage percentages are important
+for determining GHG emissions from food.
+\end{mcframe}
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Justice}
+\label{sec:food_justice}
+%++++++++++++++++++++++++++++++
+
+Many justice\index{justice!food}
+issues arise when considering the sustainability of the food and agriculture system.
+One issue is the spatial distribution of food availability.
+``Food deserts''\index{food deserts}
+are places where fresh food is unavailable to people without access to transportation. 
+Figure~\ref{fig:food_deserts} shows, on a county-by-country basis in the U.S., 
+the proportion of people who lack access to fresh food.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{chapters/ch09-Agriculture/figures/Food_Desert.pdf}
+\caption[Food deserts.]{Food deserts in the U.S.\index{food deserts!United States} **** Larisa: include reference here. ****}
+\label{fig:food_deserts}
+\end{figure}
+
+Lack of access to food tends to correlate with lack of access to money,
+so malnourishment tends to mirror poverty.
+Figure~\ref{fig:malnourished_map} shows the percentage of people in each country 
+who are undernourished\index{undernourishment}.
+
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.75\linewidth]{chapters/ch07/Fraction_of_population_undernourished_2015.pdf}
+% \caption[Fraction of population undernourished 2015.]{Percentages of population undernourished in all countries 2015. **** Larisa: add source of data here. ****}
+% \label{fig:Frac_population_malnourished}
+% \end{figure}
+
+% <<malnourished_map, fig.scap = "Fraction of population undernourished (2015).", fig.cap = "Percentages of population undernourished in all countries 2015. **** Larisa: add citation here. ****", fig.width = 5, fig.height = 3, echo = FALSE, warn = FALSE, message = FALSE>>= 
+% 
+% # Reduce white space around world plot
+% # (from https://stackoverflow.com/questions/29119074/how-to-reduce-the-gap-between-the-map-and-title-using-rworldmap).
+% par(mar = c(0, 0, 0, 0)) # (bottom, left, top, right)
+% 
+% ## Create multiple color codes, with Burkina Faso in its own group
+% malDF <- data.frame(country = c("AND", "ARE", "AFG", "ATG", "AIA", "ALB", "ARM", "AGO", "ATA", "ARG", "ASM", "AUT", "AUS", "ABW", "ALA", "AZE", "BIH", "BRB", "BGD", "BEL", "BFA", "BGR", "BHR", "BDI", "BEN", "BLM", "BMU", "BRN", "BOL", "BRA", "BHS", "BTN", "BWA", "BLR", "BLZ", "CAN", "COD", "CAF", "COG", "CHE", "CIV", "COK", "CHL", "CMR", "CHN", "COL", "CRI", "CUB", "CPV", "CUW", "CYP", "CZE", "DEU", "DJI", "DNK", "DMA", "DOM", "DZA", "ECU", "EST", "EGY", "ESH", "ERI", "ESP", "ETH", "FIN", "FJI", "FLK", "FSM", "FRO", "FRA", "GAB", "GBR", "GRD", "GEO", "GUF", "GGY", "GHA", "GIB", "GRL", "GMB", "GIN", "GLP", "GNQ", "GRC", "GTM", "GUM", "GNB", "GUY", "HKG", "HND", "HRV", "HTI", "HUN", "IDN", "IRL", "ISR", "IMN", "IND", "IOT", "IRQ", "IRN", "ISL", "ITA", "JEY", "JAM", "JOR", "JPN", "KEN", "KGZ", "KHM", "KIR", "COM", "KNA", "PRK", "KOR", "KWT", "CYM", "KAZ", "LAO", "LBN", "LCA", "LIE", "LKA", "LBR", "LSO", "LTU", "LUX", "LVA", "LBY", "MAR", "MCO", "MDA", "MNE", "MAF", "MDG", "MHL", "MKD", "MLI", "MMR", "MNG", "MAC", "MNP", "MTQ", "MRT", "MSR", "MLT", "MUS", "MDV", "MWI", "MEX", "MYS", "MOZ", "NAM", "NCL", "NER", "NFK", "NGA", "NIC", "NLD", "NOR", "NPL", "NRU", "NIU", "NZL", "OMN", "PAN", "PER", "PYF", "PNG", "PHL", "PAK", "POL", "SPM", "PCN", "PRI", "PSE", "PRT", "PLW", "PRY", "QAT", "REU", "ROU", "SRB", "RUS", "RWA", "SAU", "SLB", "SYC", "SDN", "SWE", "SGP", "SHN", "SVN", "SJM", "SVK", "SLE", "SMR", "SEN", "SOM", "SUR", "SSD", "STP", "SLV", "SXM", "SYR", "SWZ", "TCA", "TCD", "ATF", "TOG", "THA", "TJK", "TKL", "TLS", "TKM", "TUN", "TON", "TUR", "TTO", "TUV", "TWN", "TZA", "UKR", "UGA", "UMI", "USA", "URY", "UZB", "VAT", "VCT", "VEN", "VGB", "VIR", "VNM", "VUT", "WLF", "WSM", "YEM", "MYT", "ZAF", "ZMB", "ZWE"),
+%   `Fraction of population undernourished` = c(1, 1, 4, 6, 6, 1, 1, 2, 6, 1, 6, 1, 1, 6, 6, 1, 1, 6, 3, 1, 3, 1, 1, 5, 2, 6, 6, 2, 3, 1, 6, 6, 3, 1, 2, 1, 6, 5, 4, 1, 2, 6, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 4, 1, 6, 2, 1, 2, 1, 1, 6, 1, 1, 4, 1, 1, 6, 6, 1, 1, 1, 1, 6, 1, 6, 1, 1, 1, 1, 2, 3, 6, 2, 1, 3, 6, 3, 2, 2, 2, 1, 5, 1, 2, 1, 1, 1, 3, 6, 3, 1, 1, 1, 1, 2, 1, 1, 3, 2, 2, 6, 6, 6, 5, 1, 6, 6, 1, 3, 1, 6, 1, 3, 4, 3, 1, 1, 1, 6, 1, 1, 1, 1, 6, 4, 6, 1, 1, 2, 3, 2, 6, 6, 2, 6, 1, 6, 6, 3, 1, 1, 4, 5, 6, 2, 6, 2, 3, 1, 1, 2, 6, 6, 1, 1, 2, 2, 6, 6, 2, 3, 1, 6, 6, 4, 6, 1, 6, 2, 1, 6, 1, 1, 1, 5, 1, 6, 6, 6, 1, 1, 6, 1, 6, 1, 3, 6, 3, 6, 2, 6, 6, 2, 6, 6, 4, 6, 4, 6, 2, 2, 4, 6, 6, 1, 1, 6, 1, 6, 6, 2, 4, 1, 4, 6, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6, 6, 6, 4, 6, 1, 5, 4), check.names = FALSE)
+% 
+% ## Re-merge
+% malMap <- rworldmap::joinCountryData2Map(malDF, nameJoinColumn = "country")
+% 
+% ## Specify the colourPalette argument
+% rworldmap::mapCountryData(malMap, nameColumnToPlot = "Fraction of population undernourished", catMethod = "categorical",
+%   missingCountryCol = gray(.8), colourPalette = c("darkseagreen1", "mistyrose", "rosybrown2", "indianred3", "indianred4", "gray80"), 
+%   oceanCol = "lightblue", mapTitle = "")
+% @
+
+<<malnourished_map, fig.scap = "Fraction of population undernourished (2015).", fig.cap = "Percentages of population undernourished in all countries 2015. **** Larisa: add citation here. ****", fig.width = 5, fig.height = 3, echo = FALSE, warn = FALSE, message = FALSE>>= 
+par(mar = c(0, 0, 0, 0))
+malDF <- data.frame(country = c("USA", "CAN", "MEX",  "BLZ", "GTM", "HND", "SLV", "NIC", "CRI", "PAN", "CUB", "JAM", "HTI", "DOM", "COL", "ECU", "VEN", "GUY", "SUR", "GUF", "PER", "BRA", "BOL", "CHI", "PRY", "URY", "ARG", "NOR", "SWE", "FIN", "RUS", "EST", "LVA", "LTU", "BLR", "POL", "UKR", "DNK", "CZE", "SVK", "HUN", "ROU", "DEU", "NLD", "BEL", "GBR", "IRL", "ISL", "AUT", "FRA", "ESP", "PRT", "CHE", "ITA", "HRV", "BIH", "SRB", "MNE", "ALB", "BGR", "MKD", "GRC", "CYP", "MAR", "DZA", "TUN", "MRT", "MLI", "SEN", "GMB", "GNB", "GIN", "SIE", "LBR", "CIV", "BFA", "NER", "GHA", "TGO", "BEN", "NGA", "CMR", "TCD", "EGY", "SDN", "CAF", "GAB", "ETH", "DJI", "UGA", "KEN", "RWA", "TZA", "AGO", "ZMB", "MWI", "MOZ", "ZWE", "NAM", "BWA", "ZAF", "LSO", "MDG", "ISR", "LBN", "TUR", "IRQ", "KWT", "SAU", "ARE", "OMN", "YEM", "IRN", "ARM", "AZE", "GEO", "RUS", "KAZ", "UZB", "TKM", "KGZ", "AFG", "PAK", "IND", "LKA", "BGD", "NPL", "CHN", "MNG", "MMR", "JPN", "PRK", "KOR", "VNM", "LAO", "THA", "MYS", "BRN", "IDN", "PHL", "TLS", "AUS", "NZL", "VUT", "FJI", "SLB"),
+  'Fraction of population undernourished' = c(2.5, 2.5,  2.5, 6.5, 15.8, 15.3, 10.3, 16.2, 4.4, 9.2, 2.5, 8.9, 45.8, 10.4, 6.5, 7.8, 11.7, 7.5, 7.6, 2.5, 8.8, 2.5, 19.8, 3.3, 11.2, 2.5, 3.8, 2.5, 2.5, 2.5, 2.5, 2.8, 2.5, 2.5, 2.5, 2.5, 3.3, 2.5, 2.5, 2.7, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 5.6, 2.5, 5.5, 3, 4.1, 2.5, 4.6, 3.9, 4.7, 4.9, 11.3, 6, 11.3, 9.6, 26, 19.7, 25.5, 38.8, 20.7, 21.3, 14.4, 6.1, 16.2, 10.4, 11.5, 7.3, 39.7, 4.8, 25.2, 61.8, 9.4, 21.4, 19.7, 41.4, 24.2, 36.1, 32, 23.9, 44.5, 26.3, 30.5, 46.4, 25.4, 28.5, 6.1, 12.8, 43.1, 2.5, 10.9, 2.5, 27.7, 2.5, 5.5, 2.5, 5.4, 34.4, 4.9, 4.3, 2.5, 7.4, 2.5, 2.5, 7.4, 5.5, 6.5, 30.3, 20.5, 14.8, 10.9, 15.2, 9.5, 8.7, 18.7, 10.5, 2.5, 43.4, 2.5, 10.8, 16.6, 9, 2.9, 2.6, 7.7, 13.7, 27.2, 2.5, 2.5, 7.1, 4.4, 12.3), check.names = FALSE)
+
+## Re-merge
+malMap <- rworldmap::joinCountryData2Map(malDF, nameJoinColumn = "country")
+
+## Specify the colourPalette argument
+rworldmap::mapCountryData(malMap, nameColumnToPlot = "Fraction of population undernourished", catMethod = "percentage",
+  missingCountryCol = gray(.8), colourPalette = c("darkseagreen1", "mistyrose", "rosybrown2", "indianred3", "indianred4", "gray80"), 
+  oceanCol = "lightblue", mapTitle = "")
+@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Food and agriculture transitions}
+\label{sec:food_transitions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To achieve a more-sustainable food system,
+changes on many levels will be needed, 
+from the personal to the global.
+
+On the personal level, 
+eating closer to the base of the food chain and
+pursuing vegetarian or vegan diets are among the most effective
+ways to reduce negative environmental impacts of the food supply system.
+Participating in the slow food movement can promote sustainability, 
+as it seeks to promote traditional, regional cuisine, 
+thereby reducing the distance from farm to plate.
+
+At the global level,
+organic farming seeks to limit the use of synthetic fertilizers and pesticides
+by promoting the use of compost, manure, and natural practices.
+Practices such as crop rotation and biological (as opposed to chemical) past control 
+are encouraged.
+
+The growing problem of food waste spans the personal and global levels.
+%**** Larisa: research food waste numbers over time. ****
+Actions and policies to minimize food waste provide benefits such as 
+reducing inputs to the food system and
+strain on the biosphere. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Further Reading}\index{further reading}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{See Also}\index{see also}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Questions}\index{questions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+\item Verify the efficiency values in Section~\ref{sec:food_ag_features}.
+      Use Figure~\ref{fig:food_and_ag_material_flow} as the basis for your calculations.
+      
+\item Verify the efficiency values in Section~\ref{sec:food_energy_return_ratios}.
+      Then perform your own research to find the proportions of coal, oil, and natural gas consumed
+      by the food and agriculture system.
+      Are we eating coal? Are we eating oil? Or are we eating natural gas?
+      
+\item Use a food emissions calculator (such as the one suggested in this chapter~\cite{CleanMetrics:aa})
+      to estimate the greenhouse emissions from your food choices over the course of a week.
+      Compare to your peers.
+      How do your food-related emissions compare to your emissions from transportation-related activities?
+      Guided by the figures and advice in this chapter, 
+      develop an alternative diet and estimate its greenhouse gas emissions.
+      What amount of GHG emissions reductions can you obtain by changing your diet?
+      
+\item Dig deeper into the problem of food deserts. 
+      Where are they most prevalent?
+      What are their causes?
+      What can be done to alleviate them?
+\end{questions}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Projects}\index{projects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{projects}
+
+\item Choose a material from the European Commission list of critical raw materials.
+      Evaluate whether current consumption rates meet the sustainability criterion of Graedel and Allenby.
+      Evaluate whether current consumption rates meet the strong sustainability criterion.
+      Provide suggestions for ways to bring consumption rates closer to strong sustainability.
+      
+\end{projects}
 
 \cleardoublepage 
 
