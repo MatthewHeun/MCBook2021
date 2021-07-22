@@ -20,15 +20,18 @@ pay $2^{64}-1$ grains of rice. Since a pound is seven thousand grains of rice
 % US\$6.85/bushel, the grain would be worth about 300 trillion dollars, which is (roughly)
 % ten times more money than exists in the world.
 over 150 tons per person for every person planet Earth (worth about \$40,000 per person).
-For reference, people each about 35 tons of food in a lifetime, so this is 4.4 lifetimes'
+For reference, people eat about 35 tons of food in a lifetime, so this is 4.4 lifetimes'
 supply of food for every person on the planet.
 
-This story, which goes back at least until the 1200s, illustrates several aspects of the
+This story, which goes back at least to the 1200s AD, illustrates several aspects of the
 sustainability problem that have been evident for centuries: Exponential growth is 
 % a) hard to understand and b) is 
 inherently not sustainable; big numbers are hard to grok; 
 % Cognitive biases, Decartes’ chiliagon, Numerical cognition, Subitizing, Dunbar number, 50-year time frame.
 and making large wagers on limited understanding is unwise.
+
+You are reading this book because you think sustainability is important. And it is.
+In the long run, sustainability is one of the few things that matter at all.
 Sustainability is a challenging problem, in part due to exponential growth, in part
 due to limited understanding, but also because sustainability problems are complex
 and interconnected. Each of the subproblems or subdomains of sustainability may
@@ -67,6 +70,14 @@ ggplot() %>%
   # Eliminate all axes and labels besides the ones we added ourselves.
   theme_void()
 @
+
+Sustainability is difficult for two more reasons: first, it may seem that the changes
+required to achieve sustainability are so massively overwhelming that they shouldn't 
+even be attempted. Or that the consequences of not becoming sustainable are so far 
+in the future that there is neither urgency nor immediate payback. Neither of these
+views is true. The deep changes needed for sustainability are urgently needed precisely
+because they are long-term investments. The sooner we begin making those investments,
+the sooner we'll begin reaping the rewards and the greater those rewards will be.
 
 \section{Purpose, focus, and organization}
 This book will summarize ways that humans are not living sustainably and will suggest % outline?
@@ -342,6 +353,14 @@ data and the fact that we believe climate change is (currently) the most urgent 
 End-of-chapter discussion questions tend to focus more on social aspects of sustainability
 and worldview issues.
 
+\textbf{Energy is the master resource.}
+\textbf{CO$_2$ is the most urgent sustainability issue, in part because it has a 100-year effect.}
+We're feeling now CO$_2$ emitted in the 1990s?
+CO$_2$ is a mechanism that ties many other sustainability problems together, such as
+extinction rate, and land use change.
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -349,7 +368,8 @@ and worldview issues.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+Albert Bartlett, \emph{Arithmetic, Population, and Energy: Sustainability 101},
+\url{albartlett.org} \> Presentations
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
