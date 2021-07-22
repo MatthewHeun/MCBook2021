@@ -20,6 +20,7 @@
 % 
 
 \usepackage{booktabs}    % For awesome table formatting
+\usepackage{epigraph}    % For epigraphs below chapter titles.
 \usepackage{gensymb}     % For the \degree command
 \usepackage{microtype}   % For (more) beautiful typesetting.
 \usepackage{rotating}    % For rotating figures.
