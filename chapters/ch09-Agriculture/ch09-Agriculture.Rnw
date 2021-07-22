@@ -382,14 +382,19 @@ The growing problem of food waste spans the personal and global levels.
 Actions and policies to minimize food waste provide benefits such as 
 reducing inputs to the food system and
 strain on the biosphere. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Further Reading}\index{further reading}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{See Also}\index{see also}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\begin{problems}
-\begin{itemize}
+\begin{questions}
 \item Verify the efficiency values in Section~\ref{sec:food_ag_features}.
       Use Figure~\ref{fig:food_and_ag_material_flow} as the basis for your calculations.
       
@@ -410,9 +415,21 @@ strain on the biosphere.
       Where are they most prevalent?
       What are their causes?
       What can be done to alleviate them?
-\end{itemize}
-%\end{problems}
+\end{questions}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Projects}\index{projects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{projects}
+
+\item Choose a material from the European Commission list of critical raw materials.
+      Evaluate whether current consumption rates meet the sustainability criterion of Graedel and Allenby.
+      Evaluate whether current consumption rates meet the strong sustainability criterion.
+      Provide suggestions for ways to bring consumption rates closer to strong sustainability.
+      
+\end{projects}
 
 \cleardoublepage 
 
