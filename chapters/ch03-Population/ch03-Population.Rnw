@@ -65,8 +65,8 @@ role they play in pollinating many agricultural crops.
 \section{Human population}
 As shown in \ref{eq:IPARC}, human population has a major impact on the planet.
 Figure \ref{fig:PopulationGraph} shows the Earth's human population from 1800 AD to present.
-In July 2021, the world's human population is estimated to be 7.7-7.9 billion with a 
-current growth rate of 1.05\%. On average, over the last hundred year, the growth rate 
+In July 2021, the world's human population is estimated to be 7.7-7.9 billion with a
+current growth rate of 1.05\%. On average, over the last hundred year, the growth rate
 was 1.55\% with a peak growth rate of 2.1\% between 1965 and 1970.
 
 <<PopulationGraph, fig.cap="World population, $P$ in the Kaya identity~\\cite{Roser:2021uu}.">>=
@@ -75,42 +75,42 @@ was 1.55\% with a peak growth rate of 2.1\% between 1965 and 1970.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
                                 sheet = "data to plot")
 
-region_pop <- population %>% 
+region_pop <- population %>%
   dplyr::filter(
     Country %in% c("Asia", "Europe", "Latin America", "North America", "Australia", "Africa", "World")
-  ) %>% 
+  ) %>%
   dplyr::mutate(
-    total_population_billions = total_population / 1e9, 
-    Country = dplyr::recode(Country, `Latin America` = "Latin Am.", `North America` = "North Am."), 
+    total_population_billions = total_population / 1e9,
+    Country = dplyr::recode(Country, `Latin America` = "Latin Am.", `North America` = "North Am."),
   )
 
-region_pop %>% 
-  dplyr::filter(Country != "World", Year >= 1800) %>% 
+region_pop %>%
+  dplyr::filter(Country != "World", Year >= 1800) %>%
   dplyr::mutate(
     Country = factor(Country, levels = c("Australia", "North Am.", "Latin Am.", "Europe", "Africa", "Asia"))
-  ) %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "total_population_billions", fill = "Country")) + 
-  ggplot2::geom_area() + 
-  viridis::scale_fill_viridis(discrete = TRUE, direction = -1) + 
-  ggplot2::labs(x = NULL, 
-                y = "World population (P) [billions]", 
+  ) %>%
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "total_population_billions", fill = "Country")) +
+  ggplot2::geom_area() +
+  viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
+  ggplot2::labs(x = NULL,
+                y = "World population (P) [billions]",
                 fill = NULL) +
 
 MKHthemes::xy_theme()
 @
 
 \subsection{Historical human population}
-It has been said, "It is difficult to make predictions, especially about the future." 
+It has been said, "It is difficult to make predictions, especially about the future."
 Predictions about future human populations vary considerably.
-As it turns out, it is also difficult to make predictions about the past. 
+As it turns out, it is also difficult to make predictions about the past.
 Although scientists have estimated historical population levels, reliable data are limited.
 \textit{Homo sapiens} probably emerged as a species 100,000 to 200,00 years ago.
-In prehistoric times, the human population grew slowly. By 9000 BC there were 5 to 10 million humans. 
+In prehistoric times, the human population grew slowly. By 9000 BC there were 5 to 10 million humans.
 Around the year 1 AD there were around 300 million people, representing an average growth rate of about 0.1\%.
-By 1650 AD, the world population was around 500 million. Average growth was slowed 
+By 1650 AD, the world population was around 500 million. Average growth was slowed
 by trade and urbanization enabling infectious diseases to kill large numbers.
 For instance, the Black Death killed 75 to 200 million people in the 1300s.
-World population reached 1 billion (that is, 1,000 million) around 1800 AD. 
+World population reached 1 billion (that is, 1,000 million) around 1800 AD.
 % Table 1. World population milestones. Source: United Nations Secretariat, Department of Economic and Social Affairs, % The World At Six Billion (1999), p. 8.
 % https://www.learner.org/courses/envsci/unit/text.php?unit=5&secNum=4
 Population changes come from the birth rate and the death rate.
@@ -119,11 +119,11 @@ However, estimates of the total number of humans to have lived are 100-110 billi
 
 
 \subsection{Population modeling}
-Figure \ref{fig:UN_population_prospect} shows projections made by the United Nations 
+Figure \ref{fig:UN_population_prospect} shows projections made by the United Nations
 in 2010 about future human population.
 Future population depends on current population (known more-or-less accurately)
-and the birth rate and death rate. 
-The wide range of uncertainty in the predicted population is indicative of the 
+and the birth rate and death rate.
+The wide range of uncertainty in the predicted population is indicative of the
 uncertainty surrounding future birth and death rates.
 \begin{figure}
 \centering
@@ -139,21 +139,21 @@ uncertainty surrounding future birth and death rates.
 {Causal loop diagram of several important feedback loops in the World3 population model.}
 \label{fig:World3loops}
 \end{figure}
-Birth and death rates are dependent on many other variables. 
+Birth and death rates are dependent on many other variables.
 Figure \ref{fig:World3loops} shows a schematic of the causal loops
-used in the World3 population model. Notice the number of variables (24!) 
-and the many ways those variables (are thought to) interact. 
+used in the World3 population model. Notice the number of variables (24!)
+and the many ways those variables (are thought to) interact.
 No model is perfect and, indeed, the World3 model is controversial (all predictions are).
-The point isn't to say that one model is right and another is wrong, 
-but instead to point out the many variables that effect population. 
+The point isn't to say that one model is right and another is wrong,
+but instead to point out the many variables that effect population.
 In fact, another population model produced around the same time used 200,000 equations.
 
 \subsection{Demographic transition theory}
 %% https://pages.uwc.edu/keith.montgomery/Demotrans/demtran.htm -- on the Wayback Machine!
 In an undeveloped society, both birth rates and death rates are high, resulting in a low population growth rate.
-Demographic transition theory says that development leads to a decrease in mortality 
-followed some time later by a falling birth rate. 
-Thus, the population will grow rapidly and then stabilize. 
+Demographic transition theory says that development leads to a decrease in mortality
+followed some time later by a falling birth rate.
+Thus, the population will grow rapidly and then stabilize.
 \textbf{This gives us some hope for sustainability, namely that population won't grow exponentially.}
 Figure \ref{fig:dtt} illustrates schematically demographic transition theory.
 \begin{figure}
@@ -165,7 +165,7 @@ Figure \ref{fig:dtt} illustrates schematically demographic transition theory.
 
 As countries move through the demographic transition, the age structure of the population,
 shown by the \textbf{population pyramid}, changes. Because death rate (primarily childhood mortality)
-falls before birth rate, there is a population surge, which yields a demographic 
+falls before birth rate, there is a population surge, which yields a demographic
 dividend in the form of a more productive economy. \textbf{Link to economy chapter!}
 
 \subsection{Distribution of population}
@@ -181,33 +181,33 @@ This circle has a radius of about 4,000km. Other researchers have since defined 
 
 Since the industrial revolution, humans have been increasingly living in urban environments.
 In 1973 there were only 3 cities (Mexico City, Tokyo, and New York City) with populations of more than 10 million people (megacities).
-Since 2005-2006 more than half of the world's population live in urban areas. 
+Since 2005-2006 more than half of the world's population live in urban areas.
 Now there are 21 cities with populations of 10 million or more (see Figure \ref{fig:cities_population} for more detail).
 The percent living in urban areas is projected to grow to 68\% by 2050. %%https://ourworldindata.org/urbanization
-Urban living is correlated with wealth and higher GDP. High population density 
-means mass transit is practical and, in fact, widely used. 
-David Owens argues that Manhattan, being very dense, is the most ecological place to live. 
+Urban living is correlated with wealth and higher GDP. High population density
+means mass transit is practical and, in fact, widely used.
+David Owens argues that Manhattan, being very dense, is the most ecological place to live.
 %% https://www.newyorker.com/magazine/2004/10/18/green-manhattan
 However, higher wealth partially offsets this.
 
 \textbf{Link to land use and urban planning chapter.}
 \begin{quote}
-Cities are one of the big issues facing the planet. Hundreds of new cities are 
-expected to be created across Africa and Asia in the course of the next century. 
-Researchers believe that, if current population trends continue, Lagos, the largest 
-city in Nigeria, could develop into a vast, sprawling metropolis of over 
-eighty-five million people. Niger has the highest birth rate in Africa; Niamey, 
-its capital, is expected to explode in size, from less than one million people 
-to forty-six million by 2100. Unfortunately, the urban expansion that has already 
-taken place across the developing world has been ramshackle. Much of it has taken 
-the form of shanty towns, where groups of shacks are crowded together with little 
-sanitation or governance. This is brewing an obvious problem. The example of the 
-West is, alas, little more encouraging. Much new development takes the form of 
-suburban sprawl, which is wasteful of precious land, and has little character of 
-its own. Young people are frustrated because they cannot break out of parental 
-nests; the elderly feel isolated. And yet the pressure to build more housing—for 
-reasons of immigration, increased life expectancy, and the creation of more 
-households due to divorce—will increase, not abate. The need for master-planning 
+Cities are one of the big issues facing the planet. Hundreds of new cities are
+expected to be created across Africa and Asia in the course of the next century.
+Researchers believe that, if current population trends continue, Lagos, the largest
+city in Nigeria, could develop into a vast, sprawling metropolis of over
+eighty-five million people. Niger has the highest birth rate in Africa; Niamey,
+its capital, is expected to explode in size, from less than one million people
+to forty-six million by 2100. Unfortunately, the urban expansion that has already
+taken place across the developing world has been ramshackle. Much of it has taken
+the form of shanty towns, where groups of shacks are crowded together with little
+sanitation or governance. This is brewing an obvious problem. The example of the
+West is, alas, little more encouraging. Much new development takes the form of
+suburban sprawl, which is wasteful of precious land, and has little character of
+its own. Young people are frustrated because they cannot break out of parental
+nests; the elderly feel isolated. And yet the pressure to build more housing—for
+reasons of immigration, increased life expectancy, and the creation of more
+households due to divorce—will increase, not abate. The need for master-planning
 has never been greater.
 \end{quote} %%https://www.newcriterion.com/issues/2018/6/the-future-of-classicism-9861
 
@@ -230,15 +230,19 @@ The Once and Future World: Nature As It Was, As It Is, As It Could Be, by J.B. M
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{questions}
+<<<<<<< HEAD
 \item How does wealth influence birth and death rates? Do different forms of 
+=======
+\item How does wealth influence birth and death rates? Do different forms of
+>>>>>>> 9667df0183ea3e8fc8a69600966f4784e31c0b3d
 wealth have different effects?
-\item Why are birth rates falling? Falling birthrates are correlated with 
+\item Why are birth rates falling? Falling birthrates are correlated with
 economic development. Attempt to explain the mechanism.
 \item what things have a \textit{higher} environmental impact as populations urbanize?
 \item What do you like about living in "the city" or "the country?"
 \item How do we manage Earth's total population? Is it feasible to do so? Ethical?
-\item Migration of people from rural to urban environments and especially across 
-national borders is an emotionally charged political issue. How does it look in 
+\item Migration of people from rural to urban environments and especially across
+national borders is an emotionally charged political issue. How does it look in
 terms of long-term sustainability?
 \item What is a socially equitable way to allocate access to wilderness areas and experiences?
 
@@ -255,7 +259,7 @@ terms of long-term sustainability?
       Evaluate whether current consumption rates meet the sustainability criterion of Graedel and Allenby.
       Evaluate whether current consumption rates meet the strong sustainability criterion.
       Provide suggestions for ways to bring consumption rates closer to strong sustainability.
-      
+
 \end{projects}
 
 
