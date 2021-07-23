@@ -23,14 +23,39 @@
 %% Buy the PDF, get a free hat, a $5 value for $55
 % https://www.nap.edu/catalog/25059/science-breakthroughs-to-advance-food-and-agricultural-research-by-2030
 
+Figures \ref{fig:LLNL_energy_sankey} and \ref{fig:LLNL_CO2_sankey} and Table~\ref{tab:US-Carbon-Table}
+show that residences use 15.7\% of US energy and are responsible for 19.3\% 
+of US CO$_2$ emissions. Chapter~\ref{chap:households} considers the sustainability 
+challenges of households. Likewise, transportation (Chapter \ref{chap:transportation})
+uses 37.3\% of US energy and is responsible for 36.3\% of US CO$_2$ emissions.
+Together, commercial and industrial sources are responsible for 47\% of 
+the energy used in the United States and 44\% of US CO$_2$ emissions. However, this 
+book does not dedicate individual chapters to commerce and industry. 
+Whereas for households and transportation, technical details about sustainability
+\emph{could} be provided about the entire category, each industry and business 
+has its own particular set of technical details and sustainability concerns; there 
+is little commonality. Moreover, even if we were to present details for, say,
+automobile manufacturing or the film industry, those details would be somewhat 
+boring to read and would not contribute (as much) to an overall framework for sustainability.
 
+Instead, this chapter covers agriculture as an \emph{example} industrial/commercial
+area. Agriculture is a setting most readers will have (at least) an intuitive understanding of.
+Furthermore, agriculture has strong links to the next chapter, land use.
 
+Agriculture provides non-food products such as cotton, flax (for linen), flowers,
+and leather, as well as food but this chapter will mostly focus on food products.
 Food provides energy for humans to pursue lives of work, service, and play
 with family, friends, and co-workers.
 Food consumption is rather predictable, because food energy intake (measured in food calories) 
 scales linearly with population. 
 Each healthy individual consumes about 2000 food calories per day, 
 more for teens and active people, slightly less for women than men.
+
+\subsection{cool food facts}
+It takes 10 units of energy (mostly fossil fuel) to produce one unit of food energy.
+Caloric intake has increased 20\% since the 1970s but generally food per person is
+constant. We don't store food (or really anything else in the global supply chain).
+Efficiency metrics (cal/acre, EROI, \$/acre). Land allocation to different crop types (see land use figure)
 
 But food doesn't appear on plates magically, out of nowhere.
 Food arrives on plates through a network of 
@@ -114,6 +139,7 @@ weather- and climate-related supply-side disruptions are
 more significant than demand-side disruptions
 for determining food prices. 
 
+\section{Food energy}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Food and agriculture sustainability challenges}
