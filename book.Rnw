@@ -21,6 +21,7 @@
 
 \usepackage{booktabs}    % For awesome table formatting
 \usepackage{epigraph}    % For epigraphs below chapter titles.
+\usepackage{eurosym}     % For the EU currency symbol.
 \usepackage{gensymb}     % For the \degree command
 \usepackage{microtype}   % For (more) beautiful typesetting.
 \usepackage{rotating}    % For rotating figures.
