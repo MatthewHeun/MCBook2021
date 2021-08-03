@@ -9,7 +9,7 @@
 
 %Let’s begin with a story. 
 Once upon a time, a king was challenged to a game of chess by a
-poor farmer. If he lost, the king would have to pay the farmer a chessboard’s worth of
+poor scholar. If he lost, the king would have to pay the scholar a chessboard’s worth of
 grain, defined as one kernel of grain on the first square, two grains on the second
 square, four grains on the fourth square, and so on, with each subsequent square receiving
 double what was on the previous square. The king accepted the wager but lost the game. 
@@ -22,7 +22,8 @@ pay $2^{64}-1$ grains of rice. Since a pound is seven thousand grains of rice
 % ten times more money than exists in the world.
 over 150 tons per person for every person planet Earth (worth about \$40,000 per person).
 For reference, people eat about 35 tons of food in a lifetime, so this is 4.4 lifetimes'
-supply of food for every person on the planet.
+supply of food for every person on the planet. Clearly, this won't all fit on one
+chessboard!
 
 This story, which goes back at least to the 1200s AD, illustrates several aspects of the
 sustainability problem that have been evident for centuries: Exponential growth is 
@@ -87,7 +88,7 @@ This book will summarize ways that humans are not living sustainably and will su
 characteristics of sustainable societies. 
 Basic data and key concepts start each chapter.
 The text is deliberately short because the book is not intended to be comprehensive.
-The focus is on equipping students to discuss moral and ethical issues around sustainability.
+The focus is on equipping the reader to discuss moral and ethical issues around sustainability.
 Because the choices and paths to sustainability are filled with value judgements and moral choices,
 the end-of-chapter discussion questions mostly point to tradeoffs and do not have “right answers.”
 Instead, different answers indicate different preferences. 
@@ -213,13 +214,13 @@ stable equilibria and non-linear behavior, and may even collapse when thresholds
 \end{quote}
 
 % Need transition.
-\section{Impacts and their sources}
+\section{A framework for sustainaiblity}%Impacts and their sources}
 Two mathematical identities, IPAT and Kaya, have been used express human impact on the
 environment and its sources. IPAT expresses “impact” (I) on the environment as the product of
 human population (P), affluence (A), and technology (T). The Kaya identity is a form of the IPAT
-equation but defines impact as CO$_2$ emissions. On the other hand, Kaya
+equation but restricts impact to CO$_2$ emissions. On the other hand, Kaya
 expands the generic expression for “technology” to be the product of 
-energy intensity of the economy and the carbon intensity of energy, that is the 
+energy intensity of the economy and the carbon intensity of energy, that is, the 
 product of energy per unit GDP and CO$_2$ per unit energy.
 
 Chapters \ref{chap:planetary_boundaries}-\ref{chap:carbon_intensity}
@@ -227,35 +228,35 @@ of this book are organized around a hybrid of the IPAT and Kaya
 approaches. We keep the more general “impact” of IPAT but also generalize the more insightful 
 ``technology'' expression from Kaya as the product of resource intensity of the economy 
 and a resource impact intensity.
-%\begin{eqnarray}
-%\begin{tabular}{cccccccc}
-\begin{align}
-\label{eq:IPARC}
-&I &=& P &\times &A &\times &R &\times &C \\
-%
-&\textrm{Impact} &=& \textrm{Population} &\times &\textrm{Affluence} &\times 
-&\textrm{Resource intensity} &\times &\textrm{Contamination intensity} \nonumber \\
-%
-&\left[\frac{\textrm{impact}}{\textrm{year}}\right] &=  &\left[\textrm{people}\right] &\times 
-&\left[\frac{\textrm{GDP}}{\textrm{yr-capita}}\right] &\times 
-&\left[\frac{\textrm{resources}}{\textrm{GDP}}\right] &\times 
-&\left[\frac{\textrm{impact}}{\textrm{resource}}\right] \nonumber 
-%\end{tabular}
-\end{align}
-%\end{eqnarray}
+% %\begin{eqnarray}
+% %\begin{tabular}{cccccccc}
+% \begin{align}
+% \label{eq:IPARC}
+% &I &=& P &\times &A &\times &R &\times &C \\
+% %
+% &\textrm{Impact} &=& \textrm{Population} &\times &\textrm{Affluence} &\times 
+% &\textrm{Resource intensity} &\times &\textrm{Contamination intensity} \nonumber \\
+% %
+% &\left[\frac{\textrm{impact}}{\textrm{year}}\right] &=  &\left[\textrm{people}\right] &\times 
+% &\left[\frac{\textrm{GDP}}{\textrm{yr-capita}}\right] &\times 
+% &\left[\frac{\textrm{resources}}{\textrm{GDP}}\right] &\times 
+% &\left[\frac{\textrm{impact}}{\textrm{resource}}\right] \nonumber 
+% %\end{tabular}
+% \end{align}
+% %\end{eqnarray}
 
 
-********************
-
-Jeremy: 
-
-Here are some options for the equation.  
-I suspect that none are what you want.
-
-The first version uses a table with centered columns to show all the terms.
-
-Note that I need to use \verb|\small| to fit the equation number on the same line as the table.
-The whole table is numbered as one equation, and I don't think we can number only the first line.
+% ********************
+% 
+% Jeremy: 
+% 
+% Here are some options for the equation.  
+% I suspect that none are what you want.
+% 
+% The first version uses a table with centered columns to show all the terms.
+% 
+% Note that I need to use \verb|\small| to fit the equation number on the same line as the table.
+% The whole table is numbered as one equation, and I don't think we can number only the first line.
 
 
 \begin{equation}
@@ -269,27 +270,27 @@ $\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}
 \normalsize
 \end{equation}
 
-
-
-The second version uses a standard equation with explanatory text in the paragraph below.
-
-\begin{equation} \label{eq:IPARC}
-  I = P \! A R C \; ,
-\end{equation}
-%
-where $I$ is environmental impact rate in units of impact/year, 
-$P$ is population in persons, 
-$A$ is affluence in \$ GDP/year-capita, 
-$R$ is the resource intensity of the economy in resource consumption/\$ GDP, and
-$C$ is the contamination intensity of resource consumption in environmental impact/resource consumption.
-
-I think I prefer the standard equatino with explanatary text below. 
-
-Choose wisely! 
-
----MKH
-
-**********************
+% 
+% 
+% The second version uses a standard equation with explanatory text in the paragraph below.
+% 
+% \begin{equation} \label{eq:IPARC}
+%   I = P \! A R C \; ,
+% \end{equation}
+% %
+% where $I$ is environmental impact rate in units of impact/year, 
+% $P$ is population in persons, 
+% $A$ is affluence in \$ GDP/year-capita, 
+% $R$ is the resource intensity of the economy in resource consumption/\$ GDP, and
+% $C$ is the contamination intensity of resource consumption in environmental impact/resource consumption.
+% 
+% I think I prefer the standard equatino with explanatary text below. 
+% 
+% Choose wisely! 
+% 
+% ---MKH
+% 
+% **********************
 
 
 In the IPARC formulation, impact is a vector quantity (that is, a list) 
@@ -316,10 +317,12 @@ the two are closely linked.
 
 \section{The mathematics of sustainability}
 \label{sec:exp}
-Returning to the wheat and chessboard problem, for a series of doubling numbers, like the
+Returning to the grain and chessboard problem, for a series of doubling numbers, like the
 number of grains on a chessboard's squares: $1, 2, 4, 8, 16, 32, …$, the sum of all the
 numbers in the series is always one less than the next number in the series. For example,
 $1+2+4+8 = 15$, which is one less than $16$ and $1+2+4+8+16 = 31$, which is one less than $32$.
+Thus, the amount of grain in the next square is always greater than the sum total
+of all the grain on all previous squares.
 
 Extending the doubling on discrete squares or in discrete time to continuous time is
 exponential growth. Things that grow exponentially double in a fixed amount of time. 
@@ -328,7 +331,7 @@ approximately 70 divided by the growth rate. With a fixed 3\%/yr growth rate, GD
 every 23 years. If your investment portfolio has a 7\%/yr return, your assets will double
 every 10 years.
 
-In the discrete case, like the wheat and chessboard, the number of grains on the 
+In the discrete case, like grain on a chessboard, the number of grains on the 
 next square is always one more than the sum of all the previous squares. 
 In the continuous case, the amount in the next
 period (B) is always 1.71 times the sum of all previous amounts (A). 
