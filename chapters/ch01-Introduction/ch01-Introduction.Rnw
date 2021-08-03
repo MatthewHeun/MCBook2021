@@ -359,7 +359,13 @@ data and the fact that we believe climate change is (currently) the most urgent 
 End-of-chapter discussion questions tend to focus more on social aspects of sustainability
 and worldview issues.
 
-\textbf{Energy is the master resource.}
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Energy is the master resource.
+\end{mcframe}
+
+\textbf{}
 \textbf{CO$_2$ is the most urgent sustainability issue, in part because it has a 100-year effect.}
 We're feeling now CO$_2$ emitted in the 1990s?
 CO$_2$ is a mechanism that ties many other sustainability problems together, such as
@@ -370,7 +376,7 @@ extinction rate, and land use change.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+Jeremy L. Caradonna, \emph{Sustainability: A history}, OUP, 2016.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -383,7 +389,55 @@ Albert Bartlett, \emph{Arithmetic, Population, and Energy: Sustainability 101},
 
 \begin{questions}
 
-\item Is the Graedel and Allenby sustainability criterion a good criterion?
+In April 2019, a fire did significant damage to Notre-Dame de Paris
+cathedral. Immediately, the French government vowed to rebuild.
+Cleanup from the fire has already cost \euro{}165 million;
+the full restoration is likely to cost more than \euro{}8 billion,
+although there has been no official budget or timeline released
+yet for the project, in part, because is there is not a final
+design (see questions 4 and 5 below).
+
+\item Should Notre-Dame de Paris be restored? Why or why not? What are
+      alternative uses for the money being raised? The real estate on
+      which the cathedral sits?
+      
+\item The fire at Notre-Dame de Paris is an example of French economist
+      Frederic Bastiat's Broken Window Fallacy writ large. In a modern/ancient
+      twist to Bastiat's parable, more than 400 workers will have to be trained
+      in 12th century building techniques, a process that could take more than
+      a decade. What value will those workers have to the economy once the 
+      restoration of Notre-Dame is complete?
+      
+\item More than 1000 old-growth oaks have been cut for timbers to rebuild. 
+      Do you think this is a good thing because it means there is a demand
+      for these timbers (and thus the forests they come from are a valuable 
+      resource worth preserving) or a bad thing because forests in general, and 
+      mature trees in particular, are valuable as carbon sinks?
+      
+\item When Notre-Dame de Paris burned, its lead roof released toxic particles 
+      and contaminated the surrounding neighborhood, requiring a lengthy and 
+      costly clean-up effort. Should the rebuilding plan include original materials
+      (for the sake of historical authenticity) or intrinsically safer materials
+      that aren't authentic? Is it prudent or pessimistic to anticipate a possible
+      future fire? What could be done to alleviate safety concerns? What level of
+      risk or safety is appropriate/acceptable? At what cost?
+      
+\item Immediately after the fire, a competition was announced for the design
+      of the replacement spire and roof. "Proposals included a 100-meter spire 
+      made of carbon fiber, covered with gold leaf; a roof built of stained glass; 
+      a greenhouse; a garden with trees, open to the sky; and a column of light pointed upwards."
+      Subsequently, the French National Assembly passed a law requiring restoration
+      to "preserve the historic, artistic and architectural interest of the monument."
+      What are artistic, cultural, and aesthetic pros and cons of each approach?
+      Does your answer change if you know that the modern facade is the result
+      of 19th century restoration and isn't itself "original?"
+      
+\item Reflect on economic (e.g., tourism) and social (e.g., national prestige) reasons
+      \emph{for} carrying out a restoration of Notre-Dame (in contrast? to the 
+      broken-window fallacy mentioned above). Compare/contrast rebuilding Notre-Dame
+      with the rebuilding of the World Trade Center site in New York City. How are the
+      reasons similar? How are they different?
+      
 
 \end{questions}
 
