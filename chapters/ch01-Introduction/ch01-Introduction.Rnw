@@ -7,7 +7,8 @@
 \label{chap:introduction}
 \epigraph{To infinity, and beyond!}{Buzz Lightyear}
 
-Let’s begin with a story. Once upon a time, a king was challenged to a game of chess by a
+%Let’s begin with a story. 
+Once upon a time, a king was challenged to a game of chess by a
 poor farmer. If he lost, the king would have to pay the farmer a chessboard’s worth of
 grain, defined as one kernel of grain on the first square, two grains on the second
 square, four grains on the fourth square, and so on, with each subsequent square receiving
@@ -70,6 +71,8 @@ ggplot() %>%
   # Eliminate all axes and labels besides the ones we added ourselves.
   theme_void()
 @
+
+% Let's say more here about the organization of the book in terms of social, economic, and ES?
 
 Sustainability is difficult for two more reasons: first, it may seem that the changes
 required to achieve sustainability are so massively overwhelming that they shouldn't 

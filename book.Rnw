@@ -24,6 +24,7 @@
 \usepackage{gensymb}     % For the \degree command
 \usepackage{microtype}   % For (more) beautiful typesetting.
 \usepackage{rotating}    % For rotating figures.
+\usepackage[normalem]{ulem} % For strikethrough text.
 \usepackage{wrapfig}     % To wrap text around figures.
 
 % The morgan-defs.sty file already loads the enumitem package.
