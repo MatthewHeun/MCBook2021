@@ -23,20 +23,21 @@ Exceeding Earth's carrying capacity degrades its ability to support life.
 
 
 \section{Ecosystem services} 
-%add citations to Millenium Ecosystem Assessment and The Common International Classification of Ecosystem Services
+%add citations to Millennium Ecosystem Assessment and The Common International Classification of Ecosystem Services
 The Earth's ecosystems support life on Earth. Collectively, these supports are called `ecosystem services.'
-The first group of services are {\b provisioning services}, which are material and energy resources.
+The first group of services are \textbf{provisioning services}, which are material and energy resources.
 For example, humans plant crops (food, textile, and timber) that "grow," they're not manufactured. 
 The ecosystem ``provides" the crops. 
 Likewise, the ecosystem provides water, petroleum, and other mineral resources.
 
-The second set of services is {\b regulating and supporting services}, 
+The second set of services is \textbf{regulating and supporting services}, 
 which sustain and stabilize the ecosystem, including 
 processes for breaking down and recycling dead organisms; 
 the carbon cycle (see Figure~\ref{fig:CCycle}),  nitrogen, oxygen, and water cycles; and the
 fact that plant roots stabilize soil and prevent erosion.
 
-The third set of services is {\b cultural services}, which include recreation and literary and cultural inspiration.
+The third set of services is \textbf{cultural services}, 
+which include recreation and literary and cultural inspiration.
 % these are real even if we don't know their values
 
 \begin{figure}
