@@ -1052,4 +1052,16 @@
   volume  = {5},
 }
 
+@Article{Oestlund2015,
+  author    = {Östlund, L and Hörnberg, G and Deluca, T and Liedgren, L and Wikström, P and Zackrisson, O and Josefsson, T},
+  journal   = {Ambio},
+  title     = {Intensive land use in the Swedish mountains between AD 800 and 1200 led to deforestation and ecosystem transformation with long-lasting effects},
+  year      = {2015 Oct. 2015 Feb 13},
+  number    = {6},
+  pages     = {4552718},
+  volume    = {44},
+  doi       = {10.1007/s13280-015-0634-z.Epub},
+  publisher = {PMCID},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

@@ -148,8 +148,9 @@ to describe desirable behavior.
 
 
 \section{Planetary boundaries}
-Climate scientists have proposed (e.g., \cite{Rocstrom2009})
-eight indicators, which, if exceeded, could render Earth uninhabitable by humans, 
+Climate scientists have proposed (e.g., \cite{Rockstrom2009})
+%eight 
+indicators, which, if exceeded, could render Earth uninhabitable by humans, 
 perhaps catastrophically so in that the resulting changes may be nonlinear and abrupt. 
 The boundary values set for these indicators are intended to define a 
 "safe operating space for humanity."
@@ -187,7 +188,7 @@ of no more than 350 ppm (current value is 412 ppm, see Figure~\ref{fig:CO2Graph}
 less than 15\% of Earth's land area converted to cropland (currently 11.7\% is cropland),
 and an extinction rate of less than 10 species per million species going extinct
 per year (currently the rate is more than 100 per million, out of a total of 10 to 14 million
-species, see Chapter 3).
+species, see Chapter \ref{chap:population}).
 
 %Figure~\ref{fig:CO2Graph} shows atmospheric CO$_2$ concentration over time.
 
@@ -210,7 +211,7 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
 @
 
 Two of the indicators, particulate particle concentration in the atmosphere and
-chemical pollution, did not have proposed limits.In the case of chemical pollution, 
+chemical pollution, did not have proposed limits. In the case of chemical pollution, 
 at least, the vast number of such (possible) pollutants have different levels of 
 acute and chronic effects, which would make a single "threshold" value undesirable. 
 Instead, national governments set limits on a chemical-by-chemical basis.
@@ -219,7 +220,7 @@ Agencies such as the US Environmental Protection Agency and the European Commiss
 
 Using planetary boundaries for decision making is like having rules for when to change
 the engine oil in an automobile (at least in those automobiles that use engine oil).
-Companies that provide oil-change service recommend frequent oil changes, perhaps as 
+Companies that provide oil-change services recommend frequent oil changes, perhaps as 
 often as every 3000 miles. Automobile manufactures have increased this limit over
 decades with better engine and component technology; every 5000-7000 miles might be the 
 recommendation. Newer cars might calculate their own replacement based on environmental
@@ -254,10 +255,12 @@ plots ecological footprint and HDI for many different countries.
 
 In contrast to planetary boundaries, which are a hard biophysical limit, indices 
 typically represent aggregated behavior. Aggregation allows grouping together of 
-things that are different, for example in the HDI, life expectancy at birth, 
-expected years of schooling, and gross national income, or, in the case of 
-CO$_2$ equivalents, the global warming potential of carbon dioxide, methane, nitrous
-oxide, and various fluorinated gases.
+things that are different, for example, in the HDI, life expectancy at birth, 
+expected years of schooling, and gross national income. 
+Another example is the CO$_2$ equivalents, which expresses the global warming 
+potential of various gases such as methane, nitrous oxide, and fluorinated gases
+in terms of the amount of carbon dioxide that would give the same amount of warming,
+disregarding any other environmental effects.
 
 Indices and biophysical limits, such as planetary boundaries, exist to guide 
 decision making. 

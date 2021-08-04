@@ -1064,4 +1064,14 @@
   publisher = {PMCID},
 }
 
+@Article{Rockstrom2009,
+  author  = {Rockström, J and Steffen, W and Noone, K and Persson, Å and Chapin, F and Iii, E and Lambin, T and Lenton, M and Scheffer, C and Folke, H and Schellnhuber, B and Nykvist, C and De Wit, T and Hughes, S and Van Der Leeuw, H and Rodhe, S and Sörlin, P and Snyder, R and Costanza, U and Svedin, M and Falkenmark, L and Karlberg, R and Corell, V and Fabry, J and Hansen, B and Walker, D and Liverman, K and Richardson, P and Crutzen, J and Foley},
+  journal = {Ecology and Society},
+  title   = {Planetary boundaries: Exploring the safe operating space for humanity},
+  year    = {2009},
+  number  = {2},
+  pages   = {32},
+  volume  = {14},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
