@@ -13,7 +13,8 @@
 % The biggest drivers of current biodiversity loss are overexploitation and agriculture, 
 % both linked to continually increasing human consumption. -- Source of quote??
 
-
+%\epigraph{Mother Nature doesn't care if you're having fun.}{Larry Niven}
+\epigraph{Fortune is of sluggish growth, but ruin is rapid}{Lucius Annaeus Seneca}
 
 The previous chapter pointed out the problems of exponential growth.
 But why? Why is continued exponential growth impossible?
@@ -233,6 +234,21 @@ Replacing the oil at 5000 miles or 5007 miles won't make a functional difference
 drastically exceeding the limit will result in significant, costly, and potentially 
 irreparable damage to the engine.
 
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/Limits.jpg}
+\caption{Various relationships between biophysical bounds and human development.
+The boundary or carrying capacity of the ecosystem is shown in red. A variable 
+related to human development, such as population or food production is shown in
+blue. In A, human development is far from the boundary, or the boundary is increasing
+due to human activity and growth is unimpeded. In B, the boundary is constant
+and growth is retarded as the boundary is approached. In C, there is a 2-way interaction 
+between growth and the boundary but the boundary is robust. In D, exceding the 
+boundary is possible and results in serious, dramatic, and long-lasting reduction
+of the system's ability to provide ecosystem services.
+Adapted from \cite{Graedel:2010ab}.}
+\label{fig:GAfig21}
+\end{figure}
 
 \section{Indices for sustainability}
 \label{sec:indices}
@@ -243,7 +259,7 @@ one or more of the three pillars.
 % \subsection{Indices for the economy}
 % \subsection{Indices for social change}
 Example indices include carbon footprint, ecological footprint (in global hectares
-per person), and the human development index (HDI). Figure~\ref{fig:ecofootprintHDI}
+per person), and the human development index (HDI). Figure~\ref{fig:FootprintHDIGraph}
 plots ecological footprint and HDI for many different countries. 
 
 % \begin{figure}
@@ -284,7 +300,6 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
                                                 colour = "Continent", alpha = "Continent", shape = "Continent", size = "Population")) + 
   ggplot2::geom_vline(xintercept = c(0.7, 0.8), size = 0.2) +
   ggplot2::geom_point() + 
-  
   ggplot2::scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, by = 0.2)) + 
   ggplot2::scale_y_continuous(limits = c(0, 16), breaks = seq(0, 16, by = 2)) + 
   ggplot2::scale_size_continuous(breaks = c(10, 100, 1000)) +
