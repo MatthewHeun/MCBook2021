@@ -101,8 +101,8 @@ in the Earth's regulating and support ecosystem services, which will lead to a t
 point, that is, a fundamental change in the way the ecosystem works. An example that is of
 particular concern right now is global climate change (principally) caused by
 human CO$_2$ emissions. Extinction rate is another (see the point above about rivets
-in the airplane).Because ecosystems dynamics are nonlinear and interrelated, 
-tipping points exist, where human actions can cause a series of cascading failures
+in the airplane). Because ecosystems dynamics are nonlinear and interrelated, 
+tipping points exist, and human actions can cause a series of cascading failures
 that will ultimately degrade the Earth's ability to support (human) life. 
 Exponential growth, for instance in human population and consumption, is analogous
 to heeling over a boat. Growth cause greater and great demands on the ecosystem. 
@@ -110,12 +110,20 @@ Eventually the boat heels over so far that it capsizes.
 
 % "Climate genocide"
 % https://nymag.com/intelligencer/amp/2018/10/un-says-climate-genocide-coming-but-its-worse-than-that.html
+% is there a question here?
 
 % wikipedia article on "tipping points in the climate system."
 Drastic or catastrophic changes to ecosystems are not new or solely a modern problem.
 Easter Island, the Levant, and the Sahara Desert have all undergone dramatic ecological 
 shifts, although the degree to which this is attributable to human actions is not
-agreed upon or well understood. 
+agreed upon or well understood \cite{Malhi2018}. Population-driven deforestation was a problem in
+ancient times and it remains so today. In places as far flung as Scandinavia \cite{Oestlund2015}
+the Mayan empire \cite{Douglas2018}, southern Iran \cite{NFMiller1985}, but 
+especially well documented in Mediterranean in the Greek- and Roman-era \cite{Hughes2011} 
+is the overconsumption of wood for fuel and building and the clearing of forests 
+to feed a growing population. The result was a permanent
+loss of soil fertility, erosion, and economic decline.
+
 % if we don't understand it, should we mess with it?
 What \emph{is} new is scope or magnitude of humanity's ability to affect the environment,
 both due to high population and our level of technology.
@@ -131,7 +139,7 @@ negative effects on the environment resulting from human activity.
 Broadly, there are two approaches for managing or responding to impacts. 
 \emph{Planetary boundaries} describe the maximum (desirable) \emph{level} of effects. 
 The second method uses a weighted average, called an \emph{index}, of impacts, perhaps
-with some other factors. The idea use the index as a proxy management tool, that is, 
+with some other factors. The idea is to use the index as a proxy management tool, that is, 
 to describe desirable behavior.
 
 % comparison with radiation. humans need some (for vitamin D). more is long-term bad. 
