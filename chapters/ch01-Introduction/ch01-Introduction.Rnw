@@ -160,9 +160,10 @@ pollution, resource depletion, habitat loss, and biodiversity.
 Economic sustainability involves questions of profit and loss, wealth management, and
 macroeconomic policy. Social sustainability comprises human and civil rights, suffering,
 and personal freedom. This book will discuss issues associated with each of these three
-areas of sustainability but with a focus on energy and carbon emissions \emph{not} 
-because they are the only sustainability problem, but because energy is the master 
-resource and climate change is currently one of the most \emph{urgent} sustainability problems.
+areas of sustainability but with a focus on energy and carbon emissions. 
+% \emph{not} 
+% because they are the only sustainability problem, but because energy is the master 
+% resource and climate change is currently one of the most \emph{urgent} sustainability problems.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -175,6 +176,7 @@ because they are the \emph{only} sustainability problem, but because energy is t
 
 
 \subsection{Definitions of sustainability}
+\label{sec:Sdefns}
 The most oft-quoted \cite{Quental2011} definition of sustainability is that
 "Sustainable development is development that meets the needs of the present without
 compromising the ability of future generations to meet their own needs" \cite{Brundtland}.
@@ -270,6 +272,7 @@ and a resource impact intensity.
 
 
 \begin{equation}
+\label{eq:IPARC}
 \small
 \begin{tabular}{ccccccccc}
 $I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $C$ \\
@@ -332,7 +335,9 @@ number of grains on a chessboard's squares: $1, 2, 4, 8, 16, 32, …$, the sum o
 numbers in the series is always one less than the next number in the series. For example,
 $1+2+4+8 = 15$, which is one less than $16$ and $1+2+4+8+16 = 31$, which is one less than $32$.
 Thus, the amount of grain in the next square is always greater than the sum total
-of all the grain on all previous squares.
+of all the grain on all previous squares. The formula for the total grain on $N$ 
+squares is $2^N-1$.The amount of grain on the $N^\text{th}$ square is $2^{N-1}$, which
+is, of course, half of $2^N$, and so is one more than the sum of all previous $N-1$ squares.
 
 Extending the doubling on discrete squares or in discrete time to continuous time is
 exponential growth. Things that grow exponentially double in a fixed amount of time. 
@@ -361,6 +366,7 @@ is less than the growth that happens between time $N$ and $N+1$ (B), for any $N$
 \end{figure}
 
 \section{Energy and CO$_2$}
+\textbf{Need to explain energy as the master resource and why CO$_2$ is the prime example.}
 The approach above (IPARC) is general in that all kinds of impacts can be considered. In
 this book we will consider many types of impacts and many kinds of sustainability
 (environmental, economic, and social). However, our focus – in the chapters – is mostly on
@@ -386,8 +392,8 @@ Jeremy L. Caradonna, \emph{Sustainability: A history}, Oxford Universtiy Press, 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Albert Bartlett, \emph{Arithmetic, Population, and Energy: Sustainability 101},
-\url{albartlett.org} $>$ Presentations
+Albert A. Bartlett, \emph{Arithmetic, Population, and Energy: Sustainability 101},
+\url{https://www.albartlett.org/presentations/bartlett_presentations.html}%{albartlett.org $>$ Presentations}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
@@ -452,6 +458,25 @@ design (see questions 2 and 5 below).
       JP Morgan Chase. Were any of these decisions sustainable? For how long?
       Is there social value in old companies (as say, compared to old buildings)?
 
+\item The human development index ("HDI," see section \ref{sec:indices}) is a measure of
+      life expectancy, expected years of schooling, and gross national income per capita.
+      As such it is a measure of \emph{development}. With reference to Equation 
+      \ref{eq:IPARC}, can HDI continually increase sustainably? Is there a \emph{level}
+      of HDI that is "enough?"
+      
+\item In Section \ref{sec:Sdefns} it was noted that "needs are subjective." Would you
+      like to "live like a king" if that meant actually living like kings lived in 1500 AD,
+      500 AD, or 1500 BC? What would be your life expectancy, expected level of education,
+      and income (and what could you spend that income on)? Now, with respect to this
+      historical precedent, do modern humans have a right to a certain level of HDI?
+      What about future humans? Does their level change? 
+      
+\item What are our (current) responsibilities with respect to the rights of future 
+      humans? How far into the future? Are there, for instance, geographical boundaries
+      to our future responsibilities (for example, are we responsible to a world-wide
+      population or only people that will live in our country)? What should be the mechanism
+      of enforcement? To take one example, local building codes dictate my responsibilities 
+      to future owners of my house.
 
 \end{questions}
 
