@@ -13,8 +13,8 @@
 % The biggest drivers of current biodiversity loss are overexploitation and agriculture, 
 % both linked to continually increasing human consumption. -- Source of quote??
 
-%\epigraph{Mother Nature doesn't care if you're having fun.}{Larry Niven}
-\epigraph{Fortune is of sluggish growth, but ruin is rapid}{Lucius Annaeus Seneca}
+\epigraph{Mother Nature doesn't care if you're having fun.}{Larry Niven}
+%\epigraph{Fortune is of sluggish growth, but ruin is rapid.}{Lucius Annaeus Seneca}
 
 The previous chapter pointed out the problems of exponential growth.
 But why? Why is continued exponential growth impossible?
@@ -24,7 +24,6 @@ Exceeding Earth's carrying capacity degrades its ability to support life.
 
 
 \section{Ecosystem services} 
-%add citations to Millennium Ecosystem Assessment and The Common International Classification of Ecosystem Services
 The Earth's ecosystems support life on Earth. Collectively, these supports are called `ecosystem services.'
 The first group of services are \textbf{provisioning services}, which are material and energy resources.
 For example, humans plant crops (food, textile, and timber) that "grow," they're not manufactured. 
@@ -39,7 +38,35 @@ fact that plant roots stabilize soil and prevent erosion.
 
 The third set of services is \textbf{cultural services}, 
 which include recreation and literary and cultural inspiration.
-% these are real even if we don't know their values
+
+Many international groups have examined the state of Earth's ecosystem services. 
+The Millennium Ecosystem Assessment (MA) is a UN-affiliated group that studied ecosystem
+services between 2001 and 2005. 1300 authors from 95 countries were involved in authoring
+their findings. The MA found that (even back then) 15 out of the 24 ecosystem services 
+they examined were being degraded or used unsustainably \cite{MA2005}.
+%Most heavily affected are inland waters by decline in water quality and fragmentation of wetlands.
+
+One way to think about ecosystem services is as \emph{natural capital}. "Capital" 
+is used here in an economic sense, see Chapter \ref{chap:affluence}, and refers
+to an improvement or building that is economically productive or valuable. 
+Just as concepts of value and ownership motivate individuals and organizations
+to care for and manage their capital stocks, there have been many attempts to classify
+and value natural capital. Examples include:
+\begin{itemize}
+\item The European Environmental Agency's Common International Classification of
+Ecosystem Services \cite{CICES2018} (which, incidentally, recognizes many more categories of
+ecosystem services than does the MA). 
+\item The US Environmental Protection Agency's Final Ecosystem Goods and Services scoping tool.
+\item The United Nations Statistical Division System of Environmental and Economic Accounting.
+\item The Economics of Ecosystems and Biodiversity.
+\end{itemize}
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Accounting systems change behavior.
+\end{mcframe}
+
 
 \begin{figure}
 \centering
@@ -61,16 +88,20 @@ like individual stocks in a portfolio: wide diversity of species minimizes risk 
 %land, air, water
 
 \section{Tipping points}
-Early versions of this text included a chapter on systems theory because the Earth's processes 
-are complex systems (and systems theory is cool). 
-While systems theory is interesting and useful, few insights from 
-systems theory are \emph{required} to understand sustainability issues. One insight 
-that \emph{is} required is the concept of a tipping point. The name comes from a boat's 
-stability, see Figure~\ref{fig:buoyancy}. If the boat is tipped a small amount,
-the weight of the boat and the effect of buoyancy act to right the boat. However,
+% Early versions of this text included a chapter on systems theory because the Earth's processes 
+% are complex systems (and systems theory is cool). 
+% While systems theory is interesting and useful, few insights from 
+% systems theory are \emph{required} to understand sustainability issues. One insight 
+% that \emph{is} required is the concept of a tipping point. The name comes from a boat's 
+%stability, see Figure~\ref{fig:buoyancy}. If the boat is tipped a small amount,
+If the boat is tipped a small amount, the weight of the boat and the effect of 
+buoyancy act to right the boat, see Figure~\ref{fig:buoyancy}. However,
 there is an angle where, if the boat is tipped past that angle, the forces will 
 act in the opposite way -- to suddenly and catastrophically flip the boat.
-A tipping point is where the behavior of a system changes.
+A \emph{tipping point} is where the behavior of a system changes. There is 
+concern that Earth's ecosystem services may have reached or are near a tipping
+point, that is, they have been disturbed to the point of being on the edge of 
+catastrophic collapse.
 
 \begin{figure}
 \centering
@@ -89,7 +120,11 @@ There are two types of ecological concern with respect to ecosystem services.
 The first is with respect to provisioning services. Humans may ``use up'' a finite
 resource such as helium, petroleum, or neodymium. Or, perhaps, the demand for food
 will exceed the rate at which the ecosystem can supply food. In both of these cases,
-the ecosystem does not supply needed resources. The deficit can be addressed in 
+the ecosystem does not supply needed resources. 
+% Add that the time this happens may be very short. If we look with a weak sustainability
+% criterion but have exponential growth, we may have used less than half the supply
+% but be less than one doubling period from using the rest of the supply.
+The deficit can be addressed in 
 two ways: either by reducing the demand or by modifying the ecosystem to increase 
 supply. For example, reducing the human population reduces the demand for food or
 converting land to cropland increases the supply. Biofuels reduce the demand for 
@@ -126,6 +161,13 @@ is the overconsumption of wood for fuel and building and the clearing of forests
 to feed a growing population. The result was a permanent
 loss of soil fertility, erosion, and economic decline.
 
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"Overgrazing, particularly by goats, was a primary cause of deforestation in
+ancient Greece and Rome" \cite{Hughes1982}.
+\end{mcframe}
+
 % if we don't understand it, should we mess with it?
 What \emph{is} new is scope or magnitude of humanity's ability to affect the environment,
 both due to high population and our level of technology.
@@ -136,7 +178,7 @@ Finally, while the risk is, perhaps, less acute than it once was, a
 global thermonuclear war would be a humanitarian and environmental disaster on a 
 truly global scale.
 
-The previous chapter framed sustainability in terms of "impacts," that is, 
+Equation \ref{eq:IPARC} frames sustainability in terms of "impacts," that is, 
 negative effects on the environment resulting from human activity. 
 Broadly, there are two approaches for managing or responding to impacts. 
 \emph{Planetary boundaries} describe the maximum (desirable) \emph{level} of effects. 
@@ -149,10 +191,12 @@ to describe desirable behavior.
 
 
 \section{Planetary boundaries}
-Climate scientists have proposed (e.g., \cite{Rockstrom2009})
-%eight 
-indicators, which, if exceeded, could render Earth uninhabitable by humans, 
-perhaps catastrophically so in that the resulting changes may be nonlinear and abrupt. 
+Climate scientists have proposed indicators, which, if exceeded, 
+could render Earth uninhabitable by humans, perhaps catastrophically so 
+in that the resulting changes may be nonlinear and abrupt. 
+Table \ref{tab:planetBoundaries} lists these indicators and states 
+whether they've already been exceeded -- note that exceeding these indicators
+means that humanity is not living sustainably.
 The boundary values set for these indicators are intended to define a 
 "safe operating space for humanity."
 % \begin{enumerate} %present as a table instead?!
@@ -184,12 +228,33 @@ The boundary values set for these indicators are intended to define a
 % Freshwater & Global consumption of water [km$^4$/yr] & 415 & 2600 & 4000 & no \\ \midrule
 % Ozone depletion & Statospheric ozone completion [Dobson] & 290 & 283 & 276 & no \\
 % \bottomrule \end{tabular}
-Examples from the proposed list include an atmospheric carbon dioxide concentration
-of no more than 350 ppm (current value is 412 ppm, see Figure~\ref{fig:CO2Graph}),
-less than 15\% of Earth's land area converted to cropland (currently 11.7\% is cropland),
-and an extinction rate of less than 10 species per million species going extinct
-per year (currently the rate is more than 100 per million, out of a total of 10 to 14 million
-species, see Chapter \ref{chap:population}).
+
+\begin{table}
+\label{tab:planetBoundaries}
+\caption{List of the planetary boundaries proposed by \cite{Rockstrom2009}.}
+\begin{tabular}{ll}\toprule
+Planetary Boundary & Exceeded? \\ \midrule
+Amospheric CO$_2$ concentration & yes \\ \midrule
+Extinction rate & yes \\ \midrule
+Anthropogenic nitrogen removed from the atmosphere & yes\\ \midrule
+Anthropogenic phosphorous added to the ocean & not yet \\ \midrule
+Calcium carbonate in ocean surface seawater & not yet \\ \midrule
+Land surface converted to crop land [\%] & not yet \\ \midrule
+Global consumption rate of fresh water & not yet \\ \midrule
+Statospheric ozone completion & not yet \\ \midrule
+Atmospheric particulates & unknown \\ \midrule
+Chemical pollution & unknown \\
+\bottomrule \end{tabular}
+\end{table}
+
+The boundary value set for atmospheric carbon dioxide concentration
+is no more than 350 ppm (current value is 412 ppm, see Figure~\ref{fig:CO2Graph}).
+Less than 15\% of Earth's land area should be converted to cropland (currently 11.7\% is cropland).
+The extinction rate should be less than 10 species per million species becoming extinct
+per year. Currently, this rate is more than 100 per million, out of a total of 10 to 14 million
+species, see Chapter \ref{chap:population}, and is accelerating. Estimates are that 
+generating new species by natural evolution to replace the ones that have been 
+lost will take several million years.
 
 %Figure~\ref{fig:CO2Graph} shows atmospheric CO$_2$ concentration over time.
 
@@ -211,28 +276,37 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
   MKHthemes::xy_theme()
 @
 
-Two of the indicators, particulate particle concentration in the atmosphere and
-chemical pollution, did not have proposed limits. In the case of chemical pollution, 
-at least, the vast number of such (possible) pollutants have different levels of 
-acute and chronic effects, which would make a single "threshold" value undesirable. 
+Two of the indicators in Table \ref{tab:planetBoundaries}, 
+particulate particle concentration in the atmosphere and chemical pollution, 
+did not have proposed limits. In the case of chemical pollution, 
+the vast number of such (possible) pollutants, each of which with different  
+acute and chronic effects, would make a single "threshold" value meaningless. 
 Instead, national governments set limits on a chemical-by-chemical basis.
 Agencies such as the US Environmental Protection Agency and the European Commission
 (or member states) handle enforcement of the regulations.
 
-Using planetary boundaries for decision making is like having rules for when to change
+Using planetary boundaries for decision making is similar to rules for when to change
 the engine oil in an automobile (at least in those automobiles that use engine oil).
 Companies that provide oil-change services recommend frequent oil changes, perhaps as 
 often as every 3000 miles. Automobile manufactures have increased this limit over
-decades with better engine and component technology; every 5000-7000 miles might be the 
-recommendation. Newer cars might calculate their own replacement based on environmental
+decades with better engine and component technology; every 5000-7000 miles might be their 
+recommendation. Newer cars might calculate their own replacement timing based on environmental
 conditions and driving history (essentially using an index, see below). However, \emph{no 
-one} would recommend not replacing the oil for 100,000 miles. If the oil is not replaced
+one} would recommend a 100,000 mile replacement schedule. If the oil is not replaced
 significant damage will be done to the engine, likely disabling the car's ability to drive.
 In this analogy, the car's engine represents planet Earth. The number of miles before
 an oil change is the the planetary boundary. Maybe the boundary has a little bit of slack.
 Replacing the oil at 5000 miles or 5007 miles won't make a functional difference. However,
 drastically exceeding the limit will result in significant, costly, and potentially 
-irreparable damage to the engine.
+irreparable damage to the engine. 
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Differences of opinion about what the exact limit or planetary boundary is
+doesn't mean there isn't a firm limit.
+\end{mcframe}
+
 
 \begin{figure}
 \centering
@@ -249,6 +323,25 @@ of the system's ability to provide ecosystem services.
 Adapted from \cite{Graedel:2010ab}.}
 \label{fig:GAfig21}
 \end{figure}
+
+Figure \ref{fig:GAfig21} is a conceptual representation of the relationship between
+limits or boundaries and human effects on the environment. In part A, there is no 
+effective limit; human growth can continue unimpeded. However, we know from Section
+\ref{sec:exp} that growth can't continue forever on a finite planet; there is always
+eventually a limit. In part B, the boundary is hard and can never be crossed. For
+instance, the extractable fraction of a mineral in the Earth's 
+crust can't, by definition, exceed 100\%. In part C, exceeding the boundary is 
+possible, for short times, but the boundary is robust, that is, it recovers. 
+Renewable resources like grazing land, fisheries, timber, and aquifers \emph{may}
+have behavior like this. Lastly, in part D, exceeding the boundary causes long-term
+reduction in the capacity of the ecosystem to provide ecosystem services. 
+As above, renewable resources like grazing land, fisheries, timber, and aquifers
+\emph{can} have this behavior if their capacity is exceeded to much or for too long.
+Alternatively, complex systems, like temperature regulation of the planet, may exhibit
+tipping points that can radically change limits to an ecosystem service when the 
+limit is exceeded. Carbon dioxide in the atmosphere is thought/feared to be an example
+of this sort of behavior; when CO$_2$ increases too much, Earth will get \emph{dramatically}
+hotter, fundamentally altering many of its basic systems.
 
 \section{Indices for sustainability}
 \label{sec:indices}
@@ -332,7 +425,19 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
 
 \begin{questions}
 
-\item Is the Graedel and Allenby sustainability criterion a good criterion?
+\item Assessments play a useful role in clarifying where scientific uncertainties remain. While uncertainties can be used to argue for a ‘wait and see’ approach, they can equally well be used to argue for a precautionary approach. Among the MA findings, the certainty of the global findings is generally relatively high. Perhaps the greatest uncertainty associated with a critically important feature of ecosystem change at a global scale surrounds the knowledge of the extent of land degradation in drylands. Even so, using relatively conservative estimates of land degradation (10-20\% degraded) the area and the number of people involved is still large. 
+
+\item Biological invasions are a global phenomenon, affecting ecosystems in most biomes. Human-driven movement of organisms,
+deliberate or accidental, has caused a massive alteration of species
+ranges, overwhelming the changes that occurred after the retreat
+of the last Ice Age. In some ecosystems, invasions by alien organisms and diseases have resulted in extinction of native species or a
+huge loss in ecosystem services. In the United States, for example,
+invasions of non-native plants, animals, and microbes are thought
+to be responsible for 42\% of the decline of native species now
+listed as endangered or threatened. 
+
+\item recreation and literary and cultural inspiration are real even if we don't know their values. Actually, we can
+know their value. How much would you pay for ...?
 
 \end{questions}
 
