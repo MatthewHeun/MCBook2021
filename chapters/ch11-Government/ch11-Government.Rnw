@@ -61,43 +61,57 @@ In still other cases, governments pass laws and regulations to define \emph{how}
 For example, carbon markets and carbon pricing could be mandated for the energy sector
 to control how energy and emissions are exchanged. 
 
-In addition to establishing and defining relationships, 
-laws and regulations often establish incentives for actions.
+Fourth, in addition to establishing and defining relationships, 
+laws and regulations often establish incentives for collective actions.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Charlie Munger, vice chairman of Berkshire Hathaway, 
+Charlie Munger\index{Munger, Charlie}, vice chairman of Berkshire Hathaway\index{Berkshire Hathaway}, 
 once quipped ``show me the incentives, and I'll show you the outcome.''
 \end{mcframe}
 
-Munger was speaking of financial incentives.
-But because financial incentives affect the economy and 
-the economy is society's metabolism,
+Munger was speaking of financial incentives\index{incentives!financial} and financial outcomes\index{outcomes!financial}.
+But because financial incentives affect financial outcomes, 
+financial incentives affect the economy.
+Because the economy is society's metabolism\index{economy!as society's metabolism},
 all financial incentives set by laws and regulations
 both affect the environment and have sustainability implications.
-So, to the extent that laws and regulations establish incentives,
+So, to the extent that laws and regulations establish financial incentives,
 they have sustainability implications.
 
+Fifth, unintended environmental consequences often accompany 
+incentives that come with laws and regulations.
+A classic example of unintended consequences is the 
+tragedy of the commons\index{tragedy of the commons}\index{commons!tragedy of}.
+The tragedy of the commons describes situations where
+self-interested individuals consume more than their fair share of shared resources, 
+leading to reduced welfare for the group and 
+(if the resource is ``natural'')
+environmental collapse.
+When social constraints are missing and economic regulations eliminated 
+(perhaps in pursuit of ``free market'' principles to stimulate economic growth), 
+overexploitation of natural resources is the result.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Implications of policies and regulations}
-\label{sec:implications_of_policies_and_regulations}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Elinor Ostrum\index{Owtrum, Elinor} won the 2009 Nobel prize in economics 
+for showing that tragedies of the commons 
+can be avoided without top-down regulation or privatization of the resource
+by prudent collaboration within strong societal structures. 
+\end{mcframe}
 
-In addition to defining Laws and regulations 
-
-
-
-Setting laws and establishing regulations 
-
-
-Incentives lead to results (Charlie Munger)
-
-
-Tragedy of the commons (Ostrum, solvable problem)
-
-
+Sixth, tragedies of the commons illustrate the concept of externalities\index{externality}.
+Tragedies of the commons occur when 
+self-interested individuals are not held to account 
+for the environmental degradation they cause.
+I.e., the environmental degradation is ``external'' to the individual actors. 
+Thus, the presence of externalities is an enabling condition for a tragedy of the commons.
+Laws and regulations can be designed to internalize the externalities, 
+thereby forcing the individuals to account (financially) 
+for their effects on shared resources
+before acting in ways that deplete those shared resources.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -105,12 +119,25 @@ Tragedy of the commons (Ostrum, solvable problem)
 \label{sec:example_policies_and_regulations}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Examples:
+
+Cap and trade
+
+Sustainability liens (stay with homes or buildings)
+
+Choosing legislators and lawmakers is done by voting.
+
+Individual action: 
+vote for legislators and lawmakers who understand the dynamics of 
+incentives, outcomes, 
+
+
+
 
 Ideas:
 
 Regulations may include purchasing mandates (buy American, buy green, etc.). 
 
-Collective action
 
 
 
@@ -122,17 +149,6 @@ Property rights
 Dynamics of first past the post (CGP Grey)
 
 
-Examples:
-
-Cap and trade
-
-Sustainability liens (stay with homes or buildings)
-
-
-
-
-
-Government sets the laws
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -216,10 +232,13 @@ Role of government and regulations in assisting transitions
 
 \begin{projects}
 
-\item Choose a material from the European Commission list of critical raw materials.
-      Evaluate whether current consumption rates meet the sustainability criterion of Graedel and Allenby.
-      Evaluate whether current consumption rates meet the strong sustainability criterion.
-      Provide suggestions for ways to bring consumption rates closer to strong sustainability.
+\item Find examples of the tragedy of the commons. 
+      Then, research Elinor Ostrum\index{Ostrum, Elinor} and her eight design principles
+      for avoiding such tragedies.
+      Apply the design principles to your tragedies of the commons
+      to design a society that avoids environmental collapse.
+      Highlight how Charlie Munger's\index{Munger, Charlie} quip about incentives 
+      applies to your tragedies and solutions.
       
 \end{projects}
 
