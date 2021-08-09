@@ -21,10 +21,10 @@ federal, state, county, and local levels simultaneously.
 Decisions at each of these levels have sustainability implications, because
 governments set the ``rules of the game'' in society.
 Humans cannot change biophysical constraints, but
-we can change how societies and their metabolisms
+our laws and regulations change how societies and their metabolisms
 (their economies) operate.
 
-There are several ways in which laws and regulations have sustainability implications.
+There are several reasons why laws and regulations have sustainability implications.
 First, the laws and regulations promulgated by governments are not neutral; 
 they affect relationships among 
 individuals, 
@@ -32,8 +32,8 @@ collectives (such as unions and religious organizations),
 corporations, 
 markets, and 
 the natural world (plants, animals, inanimate things, energy resources, etc.).
-When governments affect these relationships, 
-there are sustainability implications.
+When governments affect these relationships by passing laws and making regulations, 
+sustainability implications emerge.
 For example, if a government sets up a carbon market, 
 it establishes relationships among
 among carbon emitters (corporations, car owners, etc.),
@@ -42,12 +42,12 @@ carbon avoiders (solar panel and wind turbine owners),
 as emitters trade emissions for sequestration or avoidance.
 
 Second, governments themselves are often one of the largest spenders in national economies.
-(Show data on government spending as a fraction of GDP.
+(Figure here with data on government spending as a fraction of GDP.
 See \url{https://tradingeconomics.com/united-states/government-spending-to-gdp}.)
 As demonstrated by the IPARC identity and discussed in Chapter~\ref{chap:affluence}, 
 all spending in the economy has energy and sustainability implications, 
-because the economy is society's metabolism, 
-consuming resources, using energy, and emitting wastes.
+because the economy is society's metabolism and
+consumes resources, uses energy, and emits wastes.
 
 Third, because laws and regulations are not neutral,
 they can be considered to be interventions in societal systems.
@@ -57,12 +57,13 @@ e.g., pollute, extract scarce resources, or emit CO$_2$.
 In other cases, laws and regulations define what \emph{must} be done.
 For example, an green energy mandate could require
 30 \% of electricity generated from renewable sources by 2030.
-In still other cases, governments pass laws and regulations to define \emph{how} things must be done.
+In still other cases, governments pass laws and set regulations 
+to define \emph{how} things must be done.
 For example, carbon markets and carbon pricing could be mandated for the energy sector
 to control how energy and emissions are exchanged. 
 
 Fourth, in addition to establishing and defining relationships, 
-laws and regulations often establish incentives for individual actions
+laws and regulations often establish incentives\index{incentives} for individual actions
 that aggregate to collective, societal action.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -72,11 +73,12 @@ Charlie Munger\index{Munger, Charlie}, vice chairman of Berkshire Hathaway\index
 once quipped ``show me the incentives, and I'll show you the outcome.''
 \end{mcframe}
 
-Munger was speaking of financial incentives\index{incentives!financial} and financial outcomes\index{outcomes!financial}.
+Munger was speaking of financial incentives\index{incentives!financial} and 
+financial outcomes\index{outcomes!financial}.
 But because financial incentives affect financial outcomes, 
 financial incentives affect the economy.
 Because the economy is society's metabolism\index{economy!as society's metabolism},
-all financial incentives set by laws and regulations
+all financial incentives created by laws and regulations
 both affect the environment and have sustainability implications.
 So, to the extent that laws and regulations establish financial incentives,
 they have sustainability implications.
@@ -103,7 +105,10 @@ can be avoided without top-down regulation or privatization of the resource
 by prudent collaboration within strong societal structures. 
 \end{mcframe}
 
-Sixth, tragedies of the commons illustrate the concept of externalities\index{externality}.
+Sixth, laws and regulations have sustainability implications because
+economies have ``externalities.''
+Tragedies of the commons are 
+one example of the concept of externalities\index{externality}.
 Tragedies of the commons occur when 
 self-interested individuals are not held to account 
 for the environmental degradation they cause.
@@ -113,6 +118,8 @@ Laws and regulations can be designed to internalize the externalities,
 thereby forcing the individuals to account (financially) 
 for their effects on shared resources
 before acting in ways that deplete those shared resources.
+Example of regulations that internalize an externality are 
+pollution tariffs and pollution trading schemes.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -120,7 +127,22 @@ before acting in ways that deplete those shared resources.
 \label{sec:example_policies_and_regulations}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+In this section, descriptions are provided for common sustainability policies and regulations.
+
+First, green energy mandates require a certain percentage of energy
+(often electricity only)
+to be produced from renewable sources such as wind, solar, and hydro. 
+
+
+
+
 Examples:
+
+Green energy mandate
+
+Pollution tariffs
+
+Pollution trading
 
 Cap and trade
 
@@ -137,7 +159,7 @@ incentives, outcomes,
 
 Ideas:
 
-Regulations may include purchasing mandates (buy American, buy green, etc.). 
+Regulations may include governmental purchasing mandates (buy American, buy green, etc.). 
 
 
 
