@@ -417,7 +417,8 @@ fully completed.
       stakeholders? **** Besides whom? ---MKH ****)
       How was the decision made? 
       **** Which decision? 
-      The decision to rebuild? Or another decision? ---MKH ****?
+      The decision to rebuild? Or another decision? 
+      Could be an unfair question to ask? ---MKH ****?
       How should decisions be made? **** Maybe be more specific about ``decisions'' here.
       There are lots of kinds of decisions.
       Menu decisions? 
@@ -427,13 +428,21 @@ fully completed.
       
 
 \item The fire at Notre-Dame de Paris is an example of French economist
-      Frederic Bastiat's Broken Window Fallacy writ large. In a modern/ancient
+      Frederic Bastiat's Broken Window Fallacy writ large.
+      **** Seems like you don't describe the Broken Window Fallacy in the chapter.
+      Is if ``fair'' to raise it here? Should the Broken Window Fallacy be the subject
+      of a project rather than a question? 
+      Further, I'll need some explaining how the BWF applies to sustainability. 
+      Is the BWF rather a cautionary tale for how GDP is calculated. 
+      Replacing the broken window would count positively toward GDP, but
+      it is actually a drain on the economy. ---MKH ****
+      In a modern/ancient
       twist to Bastiat's parable, more than 400 workers will have to be trained
-      in 12th century building techniques, a process that could take more than
+      in 12$^{\mathrm{th}}$ century building techniques, a process that could take more than
       a decade. What value will those workers have to the economy once the
       restoration of Notre-Dame is complete?
 
-\item More than 1000 old-growth oaks have been cut for timbers to rebuild.
+\item More than 1000 old-growth oaks have been cut for timbers to rebuild Notre Dame.
       Do you think this is a good thing because it means there is a demand
       for these timbers (and thus the forests they come from are a valuable
       resource worth preserving) or a bad thing because forests in general, and
@@ -446,15 +455,32 @@ fully completed.
       that aren't authentic? Is it prudent or pessimistic to anticipate a possible
       future fire? What could be done to alleviate safety concerns? What level of
       risk or safety is appropriate/acceptable? At what cost?
+      **** At this point, I'm struggling to see how the previous few questions 
+      relate to environmental sustainabilty.  
+      Maybe the connection needs to be made more explicit?  
+      How about a final sentence after each of these questions
+      that goes something like this:
+      ``Your answers to these questions expose your values on the 
+      societal (historical preservation) vs.\ economic (expensive fire suppression systems)
+      axis of the sustainability triangle. 
+      It would be interesting to see if there is one axis 
+      that is predominant in your draft questions. 
+      If there isn't an axis of the sustainability triangle addressed by a question,
+      that might be a sign that the questions, while interesting, 
+      might not be relevant to the introductory chapter.
+      It seems to me that it would be good to focus 2 questions on each axis of the sustainability
+      triangle for Chapter 1. ---MKH ****
 
 \item Immediately after the fire, a competition was announced for the design
-      of the replacement spire and roof. "Proposals included a 100-meter spire
+      of the replacement spire and roof. ``Proposals included a 100-meter spire
       made of carbon fiber, covered with gold leaf; a roof built of stained glass;
-      a greenhouse; a garden with trees, open to the sky; and a column of light pointed upwards."
+      a greenhouse; a garden with trees, open to the sky; and a column of light pointed upwards.''
       Subsequently, the French National Assembly passed a law requiring restoration
-      to "preserve the historic, artistic and architectural interest of the monument."
+      to ``preserve the historic, artistic, and architectural interest of the monument.''
       What are artistic, cultural, and aesthetic pros and cons of each approach?
-      Does your answer change if you know that the modern facade is the result
+      **** What is meant by ``approach''? A design for the restoration?  Or 
+      an RFP vs.\ legislation? ---MKH ****
+      Does your answer change if you learn that the modern facade is the result
       of 19th century restoration and isn't itself "original?"
 
 \item Should Notre-Dame be made as energy efficient as modern buildings?
@@ -474,7 +500,9 @@ fully completed.
       life expectancy, expected years of schooling, and gross national income per capita.
       As such it is a measure of \emph{development}. With reference to Equation 
       \ref{eq:IPARC}, can HDI continually increase sustainably? Is there a \emph{level}
-      of HDI that is "enough?"
+      of HDI that is ``enough?''
+      **** You could ask the same question about GDP. 
+      Should this question (or a version of it) be moved to the affluence chapter? ---MKH ****
       
 \item In Section \ref{sec:Sdefns} it was noted that "needs are subjective." Would you
       like to "live like a king" if that meant actually living like kings lived in 1500 AD,
@@ -487,8 +515,11 @@ fully completed.
       humans? How far into the future? Are there, for instance, geographical boundaries
       to our future responsibilities (for example, are we responsible to a world-wide
       population or only people that will live in our country)? What should be the mechanism
-      of enforcement? To take one example, local building codes dictate my responsibilities 
-      to future owners of my house.
+      of enforcement **** enforcement of what? ---MKH ****?
+      To take one example, local building codes dictate my responsibilities 
+      to future owners of my house. **** I like this question a LOT, because 
+      it gets at the inter-generational aspects of sustainability. More like this? 
+      More examples? ---MKH ****
 
 \end{questions}
 
