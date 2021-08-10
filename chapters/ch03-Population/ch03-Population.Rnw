@@ -5,6 +5,12 @@
 
 \chapter{Population}
 \label{chap:population}
+% ** \epigraph{The raging monster upon the land is population growth. 
+% ** In its presence, sustainability is but a fragile theoretical concept.}{E.O. Wilson}
+% \epigraph{The strongest witness is the vast population of the Earth to which we are 
+% a burden and she scarcely can provide for our needs.}{Tertullian, (160-220AD)}
+\epigraph{Human beings are a disease, a cancer of this planet.}{Agent Smith, The Matrix}
+
 Equation \ref{eq:IPARC} expresses human impact on the Earth as the product
 of population, affluence, resource intensity of the economy, and the impact intensity 
 of resources. Chapter~\ref{chap:planetary_boundaries} discussed how the Earth's 
@@ -16,7 +22,7 @@ will examine human population dynamics and the impact of human activities on ani
 %some stories about animal populations: passenger pigeons, bison, whales, aurochs, locusts,
 % North American megafauna, North Atlantic cod shoals....
 Currently, humans (36\%) and domestic livestock (60\%) constitute 96\% of the mass of
-mammals on the planet \cite{ref:BarOn2018} -- only 4\% are wild animals 
+mammals on the planet \cite{BarOn2018} -- only 4\% are wild animals 
 such as whales, bison, deer, and bears. 
 Wild vertebrate populations have declined by 68\% since 1970 \cite{WWFLPR2020}. 
 Populations of insects are down ~80\% in the last 30 years \cite{Hallmann2017}.
@@ -38,8 +44,8 @@ mass extinctions just like climate change plays a role in the present crisis.)
 
 We should distinguish between the \emph{reason(s)} and the \emph{mechanism(s)} for 
 the decline in animal populations. Population decline is an \emph{impact} from the left-hand
-side of \ref{eq:IPARC}. The \emph{reason(s)} (that is, the "why") 
-are given on the right-hand side of \ref{eq:IPARC}.
+side of Equation \ref{eq:IPARC}. The \emph{reason(s)} (that is, the "why") 
+are given on the right-hand side of Equation \ref{eq:IPARC}.
 In contrast, some of the \emph{mechanisms} (that is, the "how") behind the decline 
 in animal populations are summarized below.
 Habitat destruction plays an important role in the decline of animal populations, 
@@ -63,7 +69,7 @@ with bees being a particularly alarming example because of the extremely valuabl
 role they play in pollinating many agricultural crops.
 
 \section{Human population}
-As shown in \ref{eq:IPARC}, human population has a major impact on the planet.
+As shown in Equation \ref{eq:IPARC}, human population has a major impact on the planet.
 Figure \ref{fig:PopulationGraph} shows the Earth's human population from 1800 AD to present.
 In July 2021, the world's human population is estimated to be 7.7-7.9 billion with a
 current growth rate of 1.05\%. On average, over the last hundred year, the growth rate
@@ -223,7 +229,8 @@ The Once and Future World: Nature As It Was, As It Is, As It Could Be, by J.B. M
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+The History Guy (YouTube) "The Great Kansas Grasshopper Plague of 1874," 
+published August 17, 2020.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
@@ -251,10 +258,14 @@ terms of long-term sustainability?
 
 \begin{projects}
 
-\item Choose a material from the European Commission list of critical raw materials.
-      Evaluate whether current consumption rates meet the sustainability criterion of Graedel and Allenby.
-      Evaluate whether current consumption rates meet the strong sustainability criterion.
-      Provide suggestions for ways to bring consumption rates closer to strong sustainability.
+\item Run several population simulations using different models. 
+      Do the UN projections shown in Figure \ref{fig:UN_population_prospect}
+      align with your projections? What assumptions or starting 
+      conditions are necessary to get alignment? Do you think this
+      is reasonable?
+      
+\item Make a population pyramid for city, state, county, or school.
+      Notice anything interesting?
 
 \end{projects}
 
