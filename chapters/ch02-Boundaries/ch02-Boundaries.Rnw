@@ -88,6 +88,7 @@ like individual stocks in a portfolio: wide diversity of species minimizes risk 
 %land, air, water
 
 \section{Tipping points}
+\label{sec:tipping}
 % Early versions of this text included a chapter on systems theory because the Earth's processes 
 % are complex systems (and systems theory is cool). 
 % While systems theory is interesting and useful, few insights from 
@@ -151,7 +152,7 @@ Eventually the boat heels over so far that it capsizes.
 
 % wikipedia article on "tipping points in the climate system."
 Drastic or catastrophic changes to ecosystems are not new or solely a modern problem.
-Easter Island, the Levant, and the Sahara Desert have all undergone dramatic ecological 
+Rapa Nui (Easter Island), the Levant, and the Sahara Desert have all undergone dramatic ecological 
 shifts, although the degree to which this is attributable to human actions is not
 agreed upon or well understood \cite{Malhi2018}. Population-driven deforestation was a problem in
 ancient times and it remains so today. In places as far flung as Scandinavia \cite{Oestlund2015}
@@ -183,8 +184,8 @@ negative effects on the environment resulting from human activity.
 Broadly, there are two approaches for managing or responding to impacts. 
 \emph{Planetary boundaries} describe the maximum (desirable) \emph{level} of effects. 
 The second method uses a weighted average, called an \emph{index}, of impacts, perhaps
-with some other factors. The idea is to use the index as a proxy management tool, that is, 
-to describe desirable behavior.
+with some other factors. The idea is to use the index as a proxy management tool, 
+that is, to describe desirable behavior.
 
 % comparison with radiation. humans need some (for vitamin D). more is long-term bad. 
 % Even more is short-term bad. What should the limit be?
@@ -230,10 +231,10 @@ The boundary values set for these indicators are intended to define a
 % \bottomrule \end{tabular}
 
 \begin{table}
-\label{tab:planetBoundaries}
-\caption{List of the planetary boundaries proposed by \cite{Rockstrom2009}.}
+\caption{List of the planetary boundaries proposed by \cite{Rockstrom2009}.
+\label{tab:planetBoundaries}}
 \begin{tabular}{ll}\toprule
-Planetary Boundary & Exceeded? \\ \midrule
+\textbf{Planetary Boundary} & \textbf{Exceeded?} \\ \midrule
 Amospheric CO$_2$ concentration & yes \\ \midrule
 Extinction rate & yes \\ \midrule
 Anthropogenic nitrogen removed from the atmosphere & yes\\ \midrule
@@ -254,11 +255,11 @@ The extinction rate should be less than 10 species per million species becoming 
 per year. Currently, this rate is more than 100 per million, out of a total of 10 to 14 million
 species, see Chapter \ref{chap:population}, and is accelerating. Estimates are that 
 generating new species by natural evolution to replace the ones that have been 
-lost will take several million years.
+lost will take several million years \cite{Davis11262}.
 
 %Figure~\ref{fig:CO2Graph} shows atmospheric CO$_2$ concentration over time.
 
-<<CO2Graph, fig.cap="Atmospheric CO$_2$ concentration over time. Vertical line shows the year 2020. Include indicators for previous mass extinctions.">>=
+<<CO2Graph, fig.cap="Atmospheric CO$_2$ concentration over time. Vertical line shows the year 2020.">>=
 # Gather data for CO2 vs. time graph
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>%
   dplyr::mutate(
@@ -275,6 +276,7 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
                 y = expression("Atmospheric "*CO[2]*" concentration [ppm]")) +
   MKHthemes::xy_theme()
 @
+% Include indicators for previous mass extinctions.
 
 Two of the indicators in Table \ref{tab:planetBoundaries}, 
 particulate particle concentration in the atmosphere and chemical pollution, 
@@ -340,14 +342,39 @@ As above, renewable resources like grazing land, fisheries, timber, and aquifers
 Alternatively, complex systems, like temperature regulation of the planet, may exhibit
 tipping points that can radically change limits to an ecosystem service when the 
 limit is exceeded. Carbon dioxide in the atmosphere is thought/feared to be an example
-of this sort of behavior; when CO$_2$ increases too much, Earth will get \emph{dramatically}
-hotter, fundamentally altering many of its basic systems.
+of this sort of behavior; when CO$_2$ increases too much, Earth will get 
+\emph{dramatically} hotter, fundamentally altering many of its basic systems.
+
+\subsection{Example: Climate change}
+\label{sec:GCC}
+Figure \ref{fig:CO2Graph} shows average atmospheric CO$_2$ concentrations over the last 
+800 thousand years. (Is 0.8 million years better?) 
+The climate science is clear (ref IPCC6?) that greenhouse
+gas emissions (primarily CO$_2$ released from burning fossil fuels) are causing
+the average global temperature to increase. 
+(Do we need a temperature graph as well or as a second line?)
+The current average atmospheric CO$_2$ concentration is an example of humanity
+exceeding a planetary boundary. Because the carbon cycle is one of Earth's 
+regulating and support ecosystem services, and because the atmosphere is comprehensively
+global, the \emph{impacts} of climate on the environment are many. Climate change
+is the term used to describe the results of the greenhouse effect.
+Climate change is interacting with many other planetary systems and so contributes
+to, for example, the extinction rate. Climate change is causing ocean acidification,
+sea level rise, and the increased frequency of extreme natural disasters,
+such as wild fires, and destructive tropical storms. 
+
+CO$_2$ is an especially important sustainability issue because of its widespread 
+effects. It is also especially important for at least two other reasons. First,
+it may trigger a tipping point or points in the Earth's ecosystems, for instance,
+related to deforestation, wild fires, ocean acidification, and species loss. 
+Second, CO$_2$ is a variable humans can control. Anthropogenic CO$_2$ emissions 
+are primarily related to human energy use.
 
 \section{Indices for sustainability}
 \label{sec:indices}
 There are many, many indices used to express or measure sustainability. 
-They are all, essentially, (weighted) averages of quantities related to
-one or more of the three pillars.
+All indices are, essentially, (weighted) averages of quantities related to
+one or more of the three pillars shown in Figure \ref{fig:venn_diagram}.
 % \subsection{Indices for environmental impact}
 % \subsection{Indices for the economy}
 % \subsection{Indices for social change}
@@ -425,19 +452,73 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
 
 \begin{questions}
 
-\item Assessments play a useful role in clarifying where scientific uncertainties remain. While uncertainties can be used to argue for a ‘wait and see’ approach, they can equally well be used to argue for a precautionary approach. Among the MA findings, the certainty of the global findings is generally relatively high. Perhaps the greatest uncertainty associated with a critically important feature of ecosystem change at a global scale surrounds the knowledge of the extent of land degradation in drylands. Even so, using relatively conservative estimates of land degradation (10-20\% degraded) the area and the number of people involved is still large. 
+\item Assessments play a useful role in clarifying where scientific uncertainties remain. 
+      While uncertainties can be used to argue for a ‘wait and see’ approach, they 
+      can equally well be used to argue for a precautionary approach. What are 
+      pros and cons of a `wait and see' versus `let's be careful?'
+      
+% NOt a question.
+% \item Among the MA findings, the certainty of the global findings is generally relatively high. 
+%       Perhaps the greatest uncertainty associated with a critically important 
+%       feature of ecosystem change at a global scale surrounds the knowledge of 
+%       the extent of land degradation in drylands. Even so, using relatively 
+%       conservative estimates of land degradation (10-20\% degraded), the area 
+%       and the number of people involved is still large. 
 
-\item Biological invasions are a global phenomenon, affecting ecosystems in most biomes. Human-driven movement of organisms,
-deliberate or accidental, has caused a massive alteration of species
-ranges, overwhelming the changes that occurred after the retreat
-of the last Ice Age. In some ecosystems, invasions by alien organisms and diseases have resulted in extinction of native species or a
-huge loss in ecosystem services. In the United States, for example,
-invasions of non-native plants, animals, and microbes are thought
-to be responsible for 42\% of the decline of native species now
-listed as endangered or threatened. 
+\item Biological invasions are a global phenomenon, affecting ecosystems in most 
+      biomes. Human-driven movement of organisms, deliberate or accidental, has 
+      caused a massive alteration of species ranges, overwhelming the changes 
+      that occurred after the retreat of the last Ice Age. In some ecosystems, 
+      invasions by alien organisms and diseases have resulted in extinction of 
+      native species or a huge loss in ecosystem services. In the United States, 
+      for example, invasions of non-native plants, animals, and microbes are thought
+      to be responsible for 42\% of the decline of native species now listed as 
+      endangered or threatened. Should more be done to prevent the movement of
+      organisms or do you view some amount of invasiveness as inevitable, and
+      therefore, not worth spending resources to combat? Once a invasive specie
+      is established, how much resources be used to either contain or eradicate it?
+      Name a dozen invasive species local to your area.
 
-\item recreation and literary and cultural inspiration are real even if we don't know their values. Actually, we can
-know their value. How much would you pay for ...?
+\item Recreation and literary and cultural inspiration are real ecosystem services
+      even if we don't know their values. Actually, their value is absolutely knowable. 
+      How much would you pay for ...?
+      
+\item Small island nations such as the Republic of the Marshall Islands (RMI) have 
+      contributed relatively little to global CO$_2$ emissions (because their 
+      economy is small) and will be the most drastically affected by rising ocean
+      levels (because they're an island nation with an average elevation of 2m).
+      What rights and redress should nations like RMI have with respect to being
+      impacted by a problem they didn't "cause?" The Marshallese have the right
+      to emigrate to the United States. Their average GDP is \$3800. The US average
+      GDP is \$68,300. Should each Marshallese receive \$64,500 when they emigrate
+      to the US? Who pays this amount?
+
+\item Seven Dutch environmental groups won a ruling in May, 2021 against Royal
+      Dutch Shell. The court held Shell responsible for the carbon emissions
+      of it suppliers and customers (scope 3 emissions) and ordered Shell to 
+      reduce its carbon emissions 45\% by 2030 relative to Shell's 2019 emissions.
+%      Shell planned to be carbon neutral by 2050.
+      What, if any, are the advantages and disadvantages of "activist lawyering?"
+      What would be alternative methods of accomplishing the same result?
+      
+\item What is a cultural ecosystem service that you value that is threatened by 
+      global climate change? What are you doing to replace or substitute for that service?
+      
+\item Section \ref{sec:tipping} claimed that human degradation of the environment
+      has always been part of human history. Why do you think this is?
+      
+\item Rapa Nui, also called Easter Island, had 21 species of native trees and at
+      at least 6 species of native birds, all of which were extinct before European 
+      contact. Clearing the land, via slash-and-burn agriculture, allowed a larger
+      human population to exist on cultivated sweet potatoes. Thus, the ecological
+      devastation to the native environment is a kind of terraforming that allowed
+      human civilization to flourish \cite{Hunt2009}. How do we judge, from a modern
+      perspective, the success or failure, pros or cons of an ancient ecological
+      catastrophe (but colonization success). How could Rapa Nui be a model for 
+      a Lunar or Martian colony?
+      
+\item What things are important to you that aren't, for instance, in 
+      the HDI? Personal freedom and/or economic mobility? 
 
 \end{questions}
 
@@ -448,10 +529,13 @@ know their value. How much would you pay for ...?
 
 \begin{projects}
 
-\item Choose a material from the European Commission list of critical raw materials.
-      Evaluate whether current consumption rates meet the sustainability criterion of Graedel and Allenby.
-      Evaluate whether current consumption rates meet the strong sustainability criterion.
-      Provide suggestions for ways to bring consumption rates closer to strong sustainability.
+\item Calculate your own (or your family's) ecological footrpint.
+
+\item Calculate your carbon footprint. Compare and constrast the results
+      of several online calculators.
+      
+\item Research several measures of human wellbeing. Which is best and why? 
+
       
 \end{projects}
 

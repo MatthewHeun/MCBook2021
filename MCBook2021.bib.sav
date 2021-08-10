@@ -1104,4 +1104,14 @@
   pages   = {60-75},
 }
 
+@Article{Hunt2009,
+  author  = {T. L. Hunt and C. P. Lipo},
+  journal = {Pacific Science},
+  title   = {Revisiting Rapa Nui (Easter Island) ‘‘Ecocide’’},
+  year    = {2009},
+  number  = {4},
+  pages   = {601-616},
+  volume  = {63},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
