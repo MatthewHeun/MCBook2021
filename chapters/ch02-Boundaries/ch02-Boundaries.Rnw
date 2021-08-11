@@ -475,34 +475,40 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
       to be responsible for 42\% of the decline of native species now listed as 
       endangered or threatened. Should more be done to prevent the movement of
       organisms or do you view some amount of invasiveness as inevitable and,
-      therefore, not worth spending resources to combat? Once a invasive specie
-      is established, how much resources should be used to either contain or eradicate it?
+      therefore, not worth combating? Once a invasive specie is established,
+      how much effort should be put into either containing or eradicating it?
       Name a dozen invasive species local to your area.
 
 \item Recreation and literary and cultural inspiration are real ecosystem services
-      even if we don't know their values. Actually, their value is absolutely knowable. 
-      How much would you pay for ...?
+      even if we don't know their financial values. Actually, their financial value 
+      is absolutely knowable. How much would you pay for ...?
       
 \item Small island nations such as the Republic of the Marshall Islands (RMI) have 
       contributed relatively little to global CO$_2$ emissions (because their 
       economy is small) and will be the most drastically affected by rising ocean
       levels (because they're an island nation with an average elevation of 2~m).
       What rights and redress should nations like RMI have with respect to being
-      impacted by a problem they didn't ``cause?'' The Marshallese have the right
-      to emigrate to the United States. Their average GDP is \$3800. The US average
-      GDP is \$68,300. Should each Marshallese receive \$64,500 when they emigrate
-      to the US? Who pays this amount?
+      impacted by a problem they didn't ``cause?'' The Marshallese, specifically,
+      have the right to emigrate to the United States. Their average GDP per capita
+      is \$3800 per year. The US average GDP per capita is \$68,300 per year. 
+      Should each Marshallese receive \$64,500 when they emigrate to the US? 
+      If so, who pays this amount? If not, why not?
 
 \item Seven Dutch environmental groups won a ruling in May, 2021 against Royal
-      Dutch Shell. The court held Shell responsible for the carbon emissions
-      of its suppliers and customers (scope 3 emissions) and ordered Shell to 
+      Dutch Shell (subject to appeal). Approximately 17,000 Dutch citizens were
+      co-plaintiffs in the case on the basis of Shell's carbon emissions being a
+      threat to the plaintiff's human rights, namely the ‘right to life’ and an
+      ‘undisturbed family life’ per the European Convention on Human Rights.
+      The court held Shell responsible for the carbon emissions
+      of its suppliers and customers (known as \emph{scope 3 emissions}) and ordered Shell to 
       reduce its carbon emissions 45\% by 2030 relative to Shell's 2019 emissions.
 %      Shell planned to be carbon neutral by 2050.
-      What, if any, are the advantages and disadvantages of ``activist lawyering?''
+      What, if any, are the advantages and disadvantages of \emph{regulation through litigation}?
       What would be alternative methods of accomplishing the same result?
       
 \item What is a cultural ecosystem service that you value that is threatened by 
       global climate change? What are you doing to replace or substitute for that service?
+      What could be done to mitigate the impact(s)?
       
 \item Section \ref{sec:tipping} claimed that human degradation of the environment
       has always been part of human history. Why do you think this is?
@@ -529,12 +535,19 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
 
 \begin{projects}
 
-\item Calculate your own (or your family's) ecological footrpint.
+\item Calculate your own (or your family's) ecological footprint
+      by comparing and contrasting the results of several online calculators.
 
-\item Calculate your carbon footprint. Compare and constrast the results
-      of several online calculators.
+\item Calculate your carbon footprint by comparing and contrasting the results
+      of several online calculators. Are there other measures of impact that 
+      you should consider as well? Are there easily accessible tools 
+      (e.g., online) for those?
       
 \item Research several measures of human wellbeing. Which is best and why? 
+
+\item Prepare an essay on how the narrative(s) surrounding human colonization
+      of Rapa Nui affect, are effected by, and relate to modern debates on 
+      sustainability.
 
       
 \end{projects}
