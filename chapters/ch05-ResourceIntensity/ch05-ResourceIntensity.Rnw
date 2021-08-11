@@ -169,11 +169,14 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
   ggplot2::geom_bar(stat = "identity") +
   ggplot2::guides(fill = "none") +
   ggplot2::scale_x_discrete(labels = c(Zinc = "Zn", Germanium = "Ge", CO2 = expression(CO[2]))) +
+  ggplot2::coord_cartesian(ylim = c(100, NA)) +
+  ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.05))) +
   viridis::scale_fill_viridis(discrete = TRUE) + 
   ggplot2::labs(x = NULL,
-                y = "Proportion of sust. cons.\nor emission [%]") +
+                y = "Proportion of sustainable conssumption\nor emission [%]") +
   
-  MKHthemes::xy_theme()
+  MKHthemes::xy_theme() + 
+  ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
 
 
@@ -378,8 +381,8 @@ dplyr::inner_join(
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that
 the primary energy intensity of the world economy has fallen from 
 15 to 4 MJ/2017 international dollar across the last two centuries. 
-The decline is caused by the fact that the world economy's GDP (Figure~\ref{fig:GDPGraph}) 
-has been growing faster than primary energy consumption 
+The decline is caused by the fact that the world economy's GDP (Figure~\ref{fig:GDPGraph-Nordhaus}) 
+has been growing at a faster rate (in \%/year terms) than primary energy consumption 
 (Figure~\ref{fig:PrimaryEnergyGraph}).
 
 According to Equation~\ref{eq:IPARC}, 
@@ -413,6 +416,10 @@ are growing faster than energy intensity of the economy is declining.
 
 \begin{questions}
 
+  \item Is the strong sustainability criterion appropriate?
+        Or is it too severe for modern life today?
+        Justify your answer.
+  
   \item Is the Graedel and Allenby sustainability criterion a good criterion?
         What is the basis for your judgement?
       
