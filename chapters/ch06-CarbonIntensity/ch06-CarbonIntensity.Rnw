@@ -24,8 +24,8 @@ As such, the economy exhibits characteristics of a metabolism:
 it ingests materials and emits wastes.
 These characteristics of the economic metabolism are captured by the
 final term in Equation~\ref{eq:IPARC},
-the contamination intensity of resource extraction and consumption ($C$).
-Resource extraction was covered in Chapter~\ref{chap:resource_intensity}.
+the environmental contamination intensity of resource extraction and consumption ($C$).
+Resource extraction and consumption were discussed in Chapter~\ref{chap:resource_intensity}.
 Environmental contamination is discussed in this chapter.
 
 
@@ -45,7 +45,7 @@ desertification\index{desertification}
 (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and
 species loss\index{species loss} (due to habitat loss, environmental toxins, and over-exploitation).
 With reference to a few of the critical materials in Table~\ref{tab:CRMs},
-specific examples of the environmental contamination caused by resource extraction and consumption include:
+specific examples of environmental contamination caused by resource extraction and consumption include:
 %
 \begin{itemize}
 
@@ -72,8 +72,8 @@ specific examples of the environmental contamination caused by resource extracti
 \label{sec:carbon_intensity_of_energy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Energy is the prime example of material extraction and consumption,
-as discussed in Chapter~\ref{chap:resource_intensity}.
+As discussed in Chapter~\ref{chap:resource_intensity},
+energy is the prime example of material extraction and consumption.
 Because CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of}
 are a significant source of environmental contamination
 coming from energy consumption,
@@ -86,11 +86,12 @@ e.g., tonnes of CO$_2$ emitted per MJ of energy consumed.
 
 Figure~\ref{fig:LLNL_CO2_sankey} is a Sankey\index{Sankey diagram!CO$_2$ emissions} diagram of
 sources of CO$_2$ emissions from the U.S.\ economy in 2018.
-However, CO$_2$ emissions from electricity generation are not attributed to end uses for electricity
-in Figure~\ref{fig:LLNL_CO2_sankey}.
+However, in Figure~\ref{fig:LLNL_CO2_sankey} CO$_2$ emissions
+from electricity generation are not attributed to end uses for electricity.
 Table~\ref{tab:corrected_co2_emissions} shows the result of attributing CO$_2$ emissions to end uses,
 thereby completing the picture of U.S.\ carbon emissions.\index{carbon dioxide (CO$_2$)!emissions of}
-Attributing CO$_2$ emissions from electricity generation significantly increases the share of CO$_2$
+Attributing CO$_2$ emissions from electricity generation
+to end uses significantly increases the share of CO$_2$
 emissions from the Residential and Commercial sectors.
 
 \begin{figure}
