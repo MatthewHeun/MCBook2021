@@ -152,7 +152,6 @@ CO2_emissions %>%
 @
 
 
-
 The carbon intensity of energy (the prime example for $C$)
 is shown in Figure~\ref{fig:CarbonIntensityGraph}.
 The line in Figure~\ref{fig:CarbonIntensityGraph}
@@ -160,7 +159,7 @@ demonstrates the long transition
 from traditional biofuels to fossil fuels.
 Traditional biofuels are carbon neutral,
 because any CO$_2$ released by combustion was
-already sequestered into the biomass as it grew to maturity.
+already sequestered into the biomass as the plants grew to maturity.
 Fossil fuels are not carbon neutral;
 their combustion releases CO$_2$ that was sequestered millions of years ago.
 When the world transitioned away from traditional biofuels toward fossil fuels,
@@ -209,22 +208,28 @@ Thus, for the last 60 years, the carbon intensity of energy has been stubbornly 
 It appears that eliminating CO$_2$ emissions by significantly reducing
 the carbon intensity of energy ($C$) will be require unprecedented changes
 to the world's primary energy sources.
+That said, there are at least two often-discussed options for
+transitioning to a low carbon intensity energy supply.
 
-If we want to reduce CO$_2$ emissions by reducing
-the carbon intensity of energy ($C$),
+First, 
 we could transition back to the energy mix of the first half of the 18$^\mathrm{th}$ century,
-exclusive use of traditional biofuels, namely wood and wood products.
+namely exclusive use of traditional biofuels (wood and wood products).
 (See Figure~\ref{fig:PrimaryEnergyGraph}.)
 However, supplying the energy needs of today's economy would be impossible:
-we don't have enough available land area to grow the required amount of crops.
-**** Josh should make a calculation to verify this claim. ****
+we don't have enough available land area to grow the required amount of crops for biomass purposes.
+Further, biomass by itself does not provide electricity.
+A conversion to biomass for the world's primary energy supply would also require 
+worldwide replacement of today's fossil-fuel-dominated electricity infrastructure
+with a fleet of biomass power plants.
+Nor does biomass provide liquid fuels for transportation.
+The world's liquid fuel production infrastructure would require a complete overhaul.
 
-Alternatively, we could transition the world energy system
-to renewable energy sources: water (hydro), wind, and solar (WWS).
-**** Add reference to Dellucci here. ****
-However, in addition to changing the world's energy sources,
-reducing the carbon intensity of energy
-will require
+Alternatively, we could transition the world's energy system
+to water (hydro), wind, and solar 
+(WWS)~\cite{Jacobson:2011gc,Delucchi:2011gb}\index{water, wind, and solar (WWS)}
+energy sources.
+However, in addition to transitioning to WWS,
+reducing the carbon intensity of energy will require
 significant changes to the world's energy infrastructure.
 Indeed, a transition to WWS will bring several new challenges.
 First, WWS energy resources produce electricity, not liquid fuels.
@@ -234,7 +239,6 @@ Today, transport is almost exclusively powered by liquid fossil fuels (gasoline 
 Electrifying the world's transportation fleet is a prerequisite to a transition to WWS
 and a zero-carbon economy.
 Electrification of the world's transportation fleet will be very expensive.
-**** Josh to find a cost estimate. ****
 
 Second, wind and solar (the \emph{WS} in W\emph{WS}) are intermittent sources of electricity,
 while coal, natural gas, nuclear, and water (hydro) sources are not.
@@ -242,12 +246,13 @@ At present, electric grids accommodate only a fraction of intermittent electrici
 So a transition to wind and solar primary energy sources will require
 redesign and re-implementation of electricity grids worldwide.
 
-Third, WWS primary energy sources are energy intensive to manufacture.
+Third, WWS systems are energy intensive to manufacture.
 So the transition to a WWS future will require significant energy investment
 in addition to significant financial investment.
-If the energy to make WWS systems comes from fossil fuels,
+If the energy investment to make WWS systems comes from fossil fuels,
 significant CO$_2$ will be emitted during the transition
 from today's energy regime to a WWS regime.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
@@ -264,7 +269,7 @@ from today's energy regime to a WWS regime.
 
 \begin{questions}
 
-\item Is the Graedel and Allenby sustainability criterion a good criterion?
+\item Which would you prefer, a biomass energy system or a WWS energy system? Why?
 
 \end{questions}
 
@@ -275,11 +280,19 @@ from today's energy regime to a WWS regime.
 
 \begin{projects}
 
-\item Choose a material from the European Commission list of critical raw materials.
-      Evaluate whether current consumption rates meet the sustainability criterion of Graedel and Allenby.
-      Evaluate whether current consumption rates meet the strong sustainability criterion.
-      Provide suggestions for ways to bring consumption rates closer to strong sustainability.
-      
+\item Investigate the energy available in a hectare of biomass production.
+      How many hectares of biomass would need to be harvested annually
+      to supply today's energy needs?
+      How much available arable land exists in the world?
+      What fraction of available arable land would be required to transition
+      to a biomass-based energy system?
+
+\item Electrification of the world's transportation system is likely to be a costly endeavor.
+      Find the number of petroleum-powered cars in service today. 
+      Find a typical cost of an electric car today. 
+      What is an estimated cost of electrifying the vehicle fleet?
+      What fraction of world GDP does this cost represent?
+
 \end{projects}
 
 
