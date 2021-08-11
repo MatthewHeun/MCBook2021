@@ -150,7 +150,7 @@ The Graedel and Allenby method involves four steps:
 
 Figure~\ref{fig:PercentageOfSustainable} shows the result of applying 
 the Graedel and Allenby method 
-to two chemical elements (zinc\index{zinc} and germanium\index{germanium}) and
+to two chemical elements (zinc\index{zinc (Zn)} and germanium\index{germanium (Ge)}) and
 to worldwide emission of CO$_2$.
 This method shows that the world today is far above 
 (weak) sustainable levels of consumption and waste emission.
@@ -220,7 +220,7 @@ which shows global primary energy consumption through time.
 \begin{figure}
 \centering
 \includegraphics[width=\figwidth]{chapters/ch05-ResourceIntensity/figures/Energy_US_2018.png}
-\caption{U.S.\ energy consumption 2018~\cite{Lawrence-Livermore-National-Laboratory:ua}.}\index{sankey diagram}
+\caption{U.S.\ energy consumption 2018~\cite{Lawrence-Livermore-National-Laboratory:ua}.}\index{Sankey diagram!energy}
 \label{fig:LLNL_energy_sankey}
 \end{figure}
 
