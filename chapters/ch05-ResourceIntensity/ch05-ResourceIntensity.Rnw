@@ -265,14 +265,27 @@ By the strong sustainability criterion of consuming resources at a rate
 beneath their regeneration rate, 
 none of the fossil fuels shown in Figure~\ref{fig:PrimaryEnergyGraph}
 are being consumed at a sustainable rate.
-Table~\ref{tab:} shows that 
-even by the weak sustainability criterion of Graedel and Allenby,
-none of the fossil fuels are being consumed at a sustainable rate.
+Table~\ref{tab:weak_sustainability_calcs} shows that 
+by the weak sustainability criterion of Graedel and Allenby,
+coal and natural gas (barely) are being consumed at a sustainable rate.
+Oil is not being consumed at a sustainable rate. 
 
-****
-Gather estimates of coal, oil, natural gas reserves. 
-Make weak sustainability calculations.
-****
+<<Weak-Sust-Energy, results="asis">>=
+weak_sust_energy_data <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
+                                            sheet = "data for table", 
+                                            .name_repair = "minimal")
+print(xtable::xtable(weak_sust_energy_data, 
+                     digits = 0, 
+                     align = c("c", "r", "r", "l", "r", "l", "r", "l"),
+                     caption = "Weak sustainability calculations for world consumption of non-renewable fossil fuels. ``mst'' is million short tons, ``bb'' is billion barrels, and ``tcf'' is trillion cubic feet. Data sourced from the U.S.\ Energy Information Agency (EIA) \\cite{U.S.-Energy-Information-Agency:tr}. Calculations are based on 2018 reserves estimates and consumption rates and do not account for accelerating consumption or future conversion of resources to reserves.",
+                     label = "tab:weak_sustainability_calcs"),
+      include.rownames = FALSE, 
+      include.colnames = TRUE, 
+      caption.placement = "top",
+      type = "latex", 
+      booktabs = TRUE,
+      table.placement = NULL, )
+@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
