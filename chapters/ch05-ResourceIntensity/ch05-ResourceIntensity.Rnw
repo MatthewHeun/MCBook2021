@@ -50,7 +50,7 @@ Other resources, such as forests and other biomass,
 that regenerate quickly (on the order of decades)
 are also classified as renewable.
 Resources, such as fossil fuels,
-that regenerate slowly or not at all (such as fossil fuels)
+that regenerate slowly or not at all
 are classified as non-renewable.
 
 The economy, being society's metabolism,
@@ -151,7 +151,7 @@ Figure~\ref{fig:PercentageOfSustainable} shows the result of applying
 the Graedel and Allenby method 
 to two chemical elements (Zinc and Germanium) and
 to worldwide emission of CO$_2$.
-This method shows that that the world today is far above 
+This method shows that the world today is far above 
 (weak) sustainable levels of consumption and waste emission.
 To further underscore the importance of consumption of natural resources to sustainability,
 Germanium (now being consumed at twice its sustainable rate)
@@ -204,11 +204,13 @@ we use energy as the prime example in the modified Kaya identity.
 There are two important questions: 
 where are we using energy, and 
 are we using energy sustainably?
-
 Figure~\ref{fig:LLNL_energy_sankey} answers the first question: where are we using energy?
 Energy is used in four broad sectors of the economy: 
 residences, commerce, industry, and transportation.
 Industry and transportation use slightly more energy than residences and commerce.
+To assess the second question (are we using energy at a sustainable rate?), 
+see Figure~\ref{fig:PrimaryEnergyGraph}, 
+which shows global primary energy consumption through time.
 
 \begin{figure}
 \centering
@@ -217,10 +219,6 @@ Industry and transportation use slightly more energy than residences and commerc
 \label{fig:LLNL_energy_sankey}
 \end{figure}
 
-
-To assess the second question (are we using energy at a sustainable rate?), 
-see Figure~\ref{fig:PrimaryEnergyGraph}, 
-which shows global primary energy consumption through time.
 
 <<PrimaryEnergyGraph, fig.cap="World annual primary energy consumption~\\cite{Roser:2021vi}. ``Other ren.'' is other renewables, ``Nat. gas'' is natural gas, and ``Trad. bio.'' is traditional biofuels.">>=
 # Gather data for primary energy vs. time graph
@@ -389,6 +387,9 @@ has been growing faster than primary energy consumption
 \begin{questions}
 
 \item Is the Graedel and Allenby sustainability criterion a good criterion?
+      What is the basis for your judgement?
+      
+
 
 \end{questions}
 
@@ -400,8 +401,7 @@ has been growing faster than primary energy consumption
 \begin{projects}
 
 \item Choose a material from the European Commission list of critical raw materials.
-      Evaluate whether current consumption rates meet the sustainability criterion of Graedel and Allenby.
-      Evaluate whether current consumption rates meet the strong sustainability criterion.
+      Do today's consumption rates meet weak or strong sustainability criteria?
       Provide suggestions for ways to bring consumption rates closer to strong sustainability.
       
 \end{projects}
