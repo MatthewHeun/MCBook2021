@@ -96,7 +96,7 @@ animal_products <- 51470 + 76280 + 7920 # million pounds
 animal_efficiency <- animal_products / animal_inputs * end_use_food_efficiency
 @
 
-Figure~\ref{fig:food_and_ag_material_flow} shows a Sankey diagram\index{Sankey diagram}
+Figure~\ref{fig:food_and_ag_material_flow} shows a Sankey diagram\index{Sankey diagram!agriculture}
 of material flows
 in the U.S.\ agriculture system~\citep[Fig.~1]{Heller_2000}.
 Several observations can be made.

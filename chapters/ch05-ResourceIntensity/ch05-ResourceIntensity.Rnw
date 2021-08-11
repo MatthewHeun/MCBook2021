@@ -30,19 +30,20 @@ Without coal, oil, and methane to make electricity, gasoline, and natural gas?
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Strong sustainability}
+\section{Strong sustainability}\index{sustainability!strong}
 \label{sec:resources_strong_sustainability}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 A significant sustainability challenge 
-is extracting and consuming natural resources 
+is extracting and consuming natural resources\index{resources!natural}
 at a sustainable rate.
 A criterion for ``strong sustainability'' is 
 extracting and consuming resources 
 at a rate less than their natural regeneration rates.
 
-Resources can be classified as ``renewable'' or ``non-renewable,''
-based on their regeneration rates.
+Resources can be classified as ``renewable''\index{resources!renewable} or
+``non-renewable,''\index{resources!non-renewable}
+based on their regeneration rates.\index{regeneration rate!of resources}
 Resources, such as the Sun,
 that are expected to exist for millennia 
 are classified as renewable.
@@ -53,10 +54,10 @@ Resources, such as fossil fuels,
 that regenerate slowly or not at all
 are classified as non-renewable.
 
-The economy, being society's metabolism,
+The economy, being society's metabolism,\index{economy!as society's metabolism}
 is one aspect of life that also depends on natural resources
 for its survival.
-Indeed, we can say that the economy \emph{runs} on natural resources.
+Indeed, we can say that the economy \emph{runs} on natural resources.\index{resources!natural}
 All goods and the infrastructure for all services depend
 on manufactured objects of all types:
 cars and the roads on which they travel, 
@@ -66,7 +67,7 @@ toilets and the sewer systems that remove wastes.
 Furthermore, the operation of all these systems requires energy.
 
 Although any raw material can be essential for a given product,
-the European Commission maintains a list Critical Raw Materials (CRMs)
+the European Commission maintains a list Critical Raw Materials (CRMs)\index{materials!critical!raw}
 with special importance across a wide range of industries.
 See Table~\ref{tab:CRMs} for critical materials and industries.
 
@@ -114,7 +115,7 @@ the extraction rate is less than the regeneration rate.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Weak sustainability}
+\section{Weak sustainability}\index{sustainability!weak}
 \label{sec:resources_weak_sustainability}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -149,12 +150,12 @@ The Graedel and Allenby method involves four steps:
 
 Figure~\ref{fig:PercentageOfSustainable} shows the result of applying 
 the Graedel and Allenby method 
-to two chemical elements (Zinc and Germanium) and
+to two chemical elements (zinc\index{zinc (Zn)} and germanium\index{germanium (Ge)}) and
 to worldwide emission of CO$_2$.
 This method shows that the world today is far above 
 (weak) sustainable levels of consumption and waste emission.
 To further underscore the importance of consumption of natural resources to sustainability,
-Germanium (now being consumed at twice its sustainable rate)
+germanium (now being consumed at twice its sustainable rate)
 is one of the critical raw materials in Table~\ref{tab:CRMs}.
 
 <<PercentageOfSustainable, fig.width=3.25, fig.cap="Proportion of sustainable extraction (Zinc, Germanium) or emission (CO$_2$) rates for the U.S.~\\cite[Tables~2.1--2.3]{Graedel:2010ab}.">>=
@@ -168,11 +169,14 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
   ggplot2::geom_bar(stat = "identity") +
   ggplot2::guides(fill = "none") +
   ggplot2::scale_x_discrete(labels = c(Zinc = "Zn", Germanium = "Ge", CO2 = expression(CO[2]))) +
+  ggplot2::coord_cartesian(ylim = c(100, NA)) +
+  ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.05))) +
   viridis::scale_fill_viridis(discrete = TRUE) + 
   ggplot2::labs(x = NULL,
-                y = "Proportion of sust. cons.\nor emission [%]") +
+                y = "Proportion of sustainable conssumption\nor emission [%]") +
   
-  MKHthemes::xy_theme()
+  MKHthemes::xy_theme() + 
+  ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
 
 
@@ -181,7 +185,8 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
 \label{sec:energy_as_prime_example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-It has been argued that energy is the ultimate resource~\cite{library1971energy}
+It has been argued that energy is
+the ultimate resource~\cite{library1971energy}\index{energy!as ultimate resource}
 for two important reasons.
 First, energy is required 
 for extraction of natural resources (including energy itself!),
@@ -199,7 +204,7 @@ to heat (applied to hair).
 A solar panel converts solar energy (from the sun)
 to electricity (for use in many devices, including, possibly hair dryers).
 
-Because energy is the ultimate resource, 
+Because energy is the ultimate resource,\index{energy!as ultimate resource} 
 we use energy as the prime example in the modified Kaya identity.
 There are two important questions: 
 where are we using energy, and 
@@ -215,7 +220,7 @@ which shows global primary energy consumption through time.
 \begin{figure}
 \centering
 \includegraphics[width=\figwidth]{chapters/ch05-ResourceIntensity/figures/Energy_US_2018.png}
-\caption{U.S.\ energy consumption 2018. **** Need attribution here. ****}
+\caption{U.S.\ energy consumption 2018~\cite{Lawrence-Livermore-National-Laboratory:ua}.}\index{Sankey diagram!energy}
 \label{fig:LLNL_energy_sankey}
 \end{figure}
 
@@ -277,7 +282,7 @@ weak_sust_energy_data <- readxl::read_excel(file.path("chapters", "ch05-Resource
 print(xtable::xtable(weak_sust_energy_data, 
                      digits = 0, 
                      align = c("c", "r", "r", "l", "r", "l", "r", "l"),
-                     caption = "Weak sustainability calculations for world consumption of non-renewable fossil fuels. ``mst'' is million short tons, ``bb'' is billion barrels, and ``tcf'' is trillion cubic feet. Data sourced from the U.S.\ Energy Information Agency (EIA) \\cite{U.S.-Energy-Information-Agency:tr}. Calculations are based on 2018 reserves estimates and consumption rates and do not account for accelerating consumption or future conversion of resources to reserves.",
+                     caption = "Weak sustainability calculations for world consumption of non-renewable fossil fuels. ``mst'' is million short tons, ``bb'' is billion barrels, and ``tcf'' is trillion cubic feet. Data sourced from the U.S.\ Energy Information Agency (EIA) \\cite{U.S.-Energy-Information-Agency:tr}. Calculations are based on 2018 reserve estimates and consumption rates and do not account for accelerating consumption or future conversion of resources to reserves.",
                      label = "tab:weak_sustainability_calcs"),
       include.rownames = FALSE, 
       include.colnames = TRUE, 
@@ -293,14 +298,15 @@ print(xtable::xtable(weak_sust_energy_data,
 \label{sec:energy_intensity_of_the_economy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Continuing the explication of the Kaya identity, 
-we form a term for the primary energy intensity of the world economy ($I_p$).
+Continuing the explication of the IPARC identity, 
+we form a term for the primary energy intensity of the world economy
+as the example for resource intensity of the economy ($R$).
 The energy intensity of the economy is formed
 by dividing primary energy consumption ($E_p$) 
 by world GDP,
 i.e.\ dividing Figure~\ref{fig:PrimaryEnergyGraph} 
-by Figure~\ref{fig:GDPGraph}.
-The result is Figure~\ref{fig:EnergyIntensityGraph}.
+by Figure~\ref{fig:GDPGraph-Nordhaus}.
+The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 
 % <<EnergyIntensityGraph-Maddison, fig.cap="Primary energy intensity of economic activity, $I_p$ in the Kaya identity. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:GDPGraph}. Uses Maddison data.">>=
 % # Create data for the energy intensity of the economy.
@@ -348,7 +354,7 @@ The result is Figure~\ref{fig:EnergyIntensityGraph}.
 % @
 
 
-<<EnergyIntensityGraph-Nordhaus, fig.cap="Primary energy intensity of economic activity, $I_p$ in the Kaya identity. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:GDPGraph-Nordhaus}. Uses Nordhaus data.">>=
+<<EnergyIntensityGraph-Nordhaus, fig.cap="Primary energy intensity of economic activity, $R$ in the IPARC identity. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 # Create data for the energy intensity of the economy.
 dplyr::inner_join(
   # Get the primary energy data
@@ -365,32 +371,43 @@ dplyr::inner_join(
   ) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_GDP_MJ_per_dollar")) + 
   ggplot2::geom_line(size = 1) + 
+  ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = NULL,
                 y = expression(atop("Prim. energy intensity ("*I[p]*") [MJ/2017 Intl. $]"))) +
   MKHthemes::xy_theme()
 @
 
 
+Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that
+the primary energy intensity of the world economy has fallen from 
+15 to 4 MJ/2017 international dollar across the last two centuries. 
+The decline is caused by the fact that the world economy's GDP (Figure~\ref{fig:GDPGraph-Nordhaus}) 
+has been growing at a faster rate (in \%/year terms) than primary energy consumption 
+(Figure~\ref{fig:PrimaryEnergyGraph}).
+
 According to Equation~\ref{eq:IPARC}, 
 as the energy intensity of the economy falls, 
-CO$_2$ emissions will fall.
-Figure~\ref{fig:EnergyIntensityGraph} shows that
-the primary energy intensity of the world economy has varied 
-between 4 and 8 MJ/2017 international dollar across the last two centuries. 
-Since 1970, energy intensity has been falling 
-as the world economy modernizes, 
-meaning that the world economy's GDP (Figure~\ref{fig:GDPGraph}) 
-has been growing faster than primary energy consumption 
-(Figure~\ref{fig:PrimaryEnergyGraph}).
+downward pressure is placed on CO$_2$ emissions.
+Whether CO$_2$ emissions \emph{actually} decrease
+depends on the rates of increase or decline of the other terms 
+on the right side of Equation~\ref{eq:IPARC}.
+Figure~\ref{fig:} shows that CO$_2$ emissions have been growing over time.
+**** Need a graph in Chapter 2 that shows CO$_2$ emission rate over time. ---MKH ****
+So, other terms on the right side of the IPARC identity 
+are growing faster than energy intensity of the economy is declining.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -399,10 +416,16 @@ has been growing faster than primary energy consumption
 
 \begin{questions}
 
-\item Is the Graedel and Allenby sustainability criterion a good criterion?
-      What is the basis for your judgement?
+  \item Is the strong sustainability criterion appropriate?
+        Or is it too severe for modern life today?
+        Justify your answer.
+  
+  \item Is the Graedel and Allenby sustainability criterion a good criterion?
+        What is the basis for your judgement?
       
-
+  \item Update the weak sustainability calculations of Table~\ref{tab:weak_sustainability_calcs}
+        using the latest data from 
+        the U.S.\ Energy Information Agency (EIA)~\cite{U.S.-Energy-Information-Agency:tr}.
 
 \end{questions}
 
@@ -413,10 +436,23 @@ has been growing faster than primary energy consumption
 
 \begin{projects}
 
-\item Choose a material from the European Commission list of critical raw materials.
-      Do today's consumption rates meet weak or strong sustainability criteria?
-      Provide suggestions for ways to bring consumption rates closer to strong sustainability.
+  \item Choose a material from the European Commission list of critical raw materials.
+        Do today's consumption rates of that material meet weak or strong sustainability criteria?
+        Provide suggestions for ways to bring consumption rates closer to strong sustainability.
+
+  \item Re-estimate the time remaining for fossil fuel reserves
+        (Table~\ref{tab:weak_sustainability_calcs})
+        by projecting both demand for fossil fuels
+        and additions to reserves into the future.
+        Do the weak sustainability estimates 
+        of Table~\ref{tab:weak_sustainability_calcs} change? 
+
+  \item Compare the weak sustainability approach advocated by Graedel and Allenby
+        to the methods of David Rutledge~\cite{Rutledge:tv}\index{Rutledge, David}.
+        Which produces better estimates of the time to exhaust non-renewable resources?
+        Why?
       
 \end{projects}
+
 \cleardoublepage
 

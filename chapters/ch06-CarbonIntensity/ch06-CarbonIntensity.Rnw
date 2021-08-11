@@ -19,9 +19,9 @@ nuclear accident in history.}{Martin Cruz Smith}
 
 As noted in Chapter~\ref{chap:},
 **** Be sure to make this point earlier in the book ****
-the economy is society's metabolism.
+the economy is society's metabolism.\index{economy!as society's metabolism}
 As such, the economy exhibits characteristics of a metabolism:
-it ingests material and emits waste.
+it ingests materials and emits wastes.
 These characteristics of the economic metabolism are captured by the
 final term in Equation~\ref{eq:IPARC},
 the contamination intensity of resource extraction and consumption ($C$).
@@ -38,28 +38,30 @@ The contamination intensity of resource extraction ($C$)
 represents the amount of environmental contamination (emitted wastes)
 per unit of extracted and consumed resources (ingested materials).
 Examples of environmental contamination include
-water eutrophication (from fertilizer runoff),
-SO$_2$ emissions (from burning sulfurous coal),
-CO$_2$ emissions (from burning fossil fuels),
-desertification (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and
-species loss (due to habitat loss, environmental toxins, and over-exploitation).
+water eutrophication\index{eutrophication} (from fertilizer runoff),
+SO$_2$\index{sulfur dioxide (SO$_2$)!emissions of} emissions (from burning sulfurous coal),
+CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of} (from burning fossil fuels),
+desertification\index{desertification}
+(due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and
+species loss\index{species loss} (due to habitat loss, environmental toxins, and over-exploitation).
 With reference to a few of the critical materials in Table~\ref{tab:CRMs},
 specific examples of the environmental contamination caused by resource extraction and consumption include:
 %
 \begin{itemize}
 
   \item air, water, and soil pollution~\cite{Lee:2017ui} (environmental contamination) in the form of
-        bauxite dust,
+        bauxite dust,\index{bauxite!dust}
         sulfur dioxide (SO$_2$), and
-        nitrous oxides (NO$_\mathrm{x}$) emissions
+        nitrous oxides (NO$_\mathrm{x}$) emissions\index{nitrous oxides (NO$_\mathrm{x}$)!emissions of}
         from bauxite mining (material extraction),
 
   \item Toxic tailings (environmental contamination)
-        from Tungsten (material extraction)
+        from tungsten\index{tungsten (W)} (material extraction)
         mining operations~\cite{Lee:2021tz}, and
 
-  \item Deforestation and reduced forest quality~\cite{Kissinger:2020ut} (environmental contamination)
-        to make way for rubber plantations (material extraction)
+  \item Deforestation\index{deforestation} and
+        reduced forest quality~\cite{Kissinger:2020ut} (environmental contamination)
+        to make way for rubber plantations\index{rubber plantations} (material extraction)
         in southeast Asia.
 
 \end{itemize}
@@ -70,29 +72,33 @@ specific examples of the environmental contamination caused by resource extracti
 \label{sec:carbon_intensity_of_energy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In this book,
-energy is the prime example of material extraction and consumption,
+Energy is the prime example of material extraction and consumption,
 as discussed in Chapter~\ref{chap:resource_intensity}.
-Because CO$_2$ emissions are a significant source of environmental contamination
+Because CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of}
+are a significant source of environmental contamination
 coming from energy consumption,
 it follows that the prime example of environmental contamination
 is CO$_2$ emissions.
-Thus, the prime example for contamination intensity ($C$) is the CO$_2$ intensity of energy.
+Thus, the prime example for contamination intensity ($C$ in Equation~\ref{eq:IPARC})
+is the CO$_2$ intensity of energy.
 The units for the CO$_2$ intensity of energy are,
 e.g., tonnes of CO$_2$ emitted per MJ of energy consumed.
 
-Figure~\ref{fig:LLNL_CO2_sankey} shows sources of CO$_2$ emissions from the U.S.\ economy in 2018.
-However, CO$_2$ emissions from electricity generatation are not attributed to end uses for electricity
+Figure~\ref{fig:LLNL_CO2_sankey} is a Sankey\index{Sankey diagram!CO$_2$ emissions} diagram of
+sources of CO$_2$ emissions from the U.S.\ economy in 2018.
+However, CO$_2$ emissions from electricity generation are not attributed to end uses for electricity
 in Figure~\ref{fig:LLNL_CO2_sankey}.
 Table~\ref{tab:corrected_co2_emissions} shows the result of attributing CO$_2$ emissions to end uses,
-thereby completing the picture of U.S.\ carbon emissions.
+thereby completing the picture of U.S.\ carbon emissions.\index{carbon dioxide (CO$_2$)!emissions of}
 Attributing CO$_2$ emissions from electricity generation significantly increases the share of CO$_2$
 emissions from the Residential and Commercial sectors.
 
 \begin{figure}
 \centering
 \includegraphics[width=\figwidth]{chapters/ch06-CarbonIntensity/figures/Carbon_2018_United-States.png}
-\caption{U.S.\ CO$_2$ emissions 2018. **** Need attribution here. ****}
+\caption{U.S.\ CO$_2$ emissions 2018~\cite{Lawrence-Livermore-National-Laboratory:wp}. 
+         CO$_2$ emissions from electricity production are not attributed to end uses.
+         See Table~\ref{tab:corrected_co2_emissions}.}
 \label{fig:LLNL_CO2_sankey}
 \end{figure}
 
