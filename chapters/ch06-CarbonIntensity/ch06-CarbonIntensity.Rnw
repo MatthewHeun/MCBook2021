@@ -133,7 +133,7 @@ The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:C
 The clear trend is upward, with small drops corresponding to years of economic recession.
 
 
-<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. **** Should this graph move to Chapter 2? ---MKH ****">>=
+<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw}, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. **** Should this graph move to Chapter 2? ---MKH ****">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"),
                    sheet = "data to plot")
 
@@ -289,9 +289,11 @@ from today's energy regime to a WWS regime.
 
 \begin{questions}
 
-  \item Find the proportion of 
-
   \item Which would you prefer, a biomass energy system or a WWS energy system? Why?  
+
+  \item Find the proportion of renewable energy in the world's energy mix today.
+        Does this proportion indicate that we are far into the transition to a 
+        low-carbon energy regime?
 
 \end{questions}
 
