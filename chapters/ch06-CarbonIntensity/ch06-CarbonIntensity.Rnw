@@ -8,14 +8,14 @@
 \chapter{Carbon intensity of energy}
 \label{chap:carbon_intensity}
 %#############################################################
-\epigraph{Normal human activity is worse for nature than the biggest 
-nuclear accident in history.}{Martin Cruz Smith}
+% \epigraph{Normal human activity is worse for nature than the biggest 
+% nuclear accident in history.}{Martin Cruz Smith}
 %\epigraph{Environmental pollution is an incurable disease. It can only
 %be prevented.}{Barry Commoner}
 %% \epigraph{We have forgotten how to be good guests, how to walk lightly on the
 %% Earth as its other creatures do}{Barbara Ward}
 %%% \epigraph{Nuclear power is one hell of way to boil water}{Albert Einstein}
-%v \epigraph{It is the worst of times but it is the best of times because we still have a chance}{Sylvia Earle}
+\epigraph{It is the worst of times but it is the best of times because we still have a chance}{Sylvia Earle}
 
 As noted in Chapter~\ref{chap:},
 **** Be sure to make this point earlier in the book ****
@@ -49,7 +49,7 @@ specific examples of environmental contamination caused by resource extraction a
 %
 \begin{itemize}
 
-  \item air, water, and soil pollution~\cite{Lee:2017ui} (environmental contamination) in the form of
+  \item Air, water, and soil pollution~\cite{Lee:2017ui} (environmental contamination) in the form of
         bauxite dust,\index{bauxite!dust}
         sulfur dioxide (SO$_2$), and
         nitrous oxides (NO$_\mathrm{x}$) emissions\index{nitrous oxides (NO$_\mathrm{x}$)!emissions of}
@@ -133,7 +133,7 @@ The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:C
 The clear trend is upward, with small drops corresponding to years of economic recession.
 
 
-<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw}, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. **** Should this graph move to Chapter 2? ---MKH ****">>=
+<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw} from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. **** Should this graph move to Chapter 2? ---MKH ****">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"),
                    sheet = "data to plot")
 
@@ -206,6 +206,7 @@ but not as fast as population (Figure~\ref{fig:PopulationGraph})
 and affluence (Figure~\ref{fig:AffluenceGraph-Nordhaus}) are growing.
 So it is reasonable to consider reducing the carbon intensity of energy ($C$)
 to become more sustainable.
+**** By the process of elimination, only way to solve problem for energy/co2. ****
 
 Figure~\ref{fig:CarbonIntensityGraph} shows that the carbon intensity of energy
 rose dramatically from 1800--1960, 
@@ -243,6 +244,9 @@ with a fleet of biomass power plants.
 And it would require build-out of a biomass-to-liquid-fuels conversion 
 infrastructure that does not yet exist.
 
+**** Point about requiring energy to get energy. EROI. 
+EROI is very low for bio-based solution. ****
+
 Alternatively, we could transition the world's energy system
 to water (hydro), wind, and solar 
 (WWS)~\cite{Jacobson:2011gc,Delucchi:2011gb}\index{water, wind, and solar (WWS)}
@@ -258,6 +262,13 @@ Electrifying the world's transportation fleet is a prerequisite to a transition 
 and a zero-carbon economy.
 Electrification of the world's transportation fleet will be very expensive.
 
+**** How electrify mass transport?
+Mass transport. EVs. Use electricity to make hydrogen. 
+****
+
+**** Do we have any more hydro capacity? No. What about the rest of the world. 
+Project: hydro potential on each continent. ****
+
 Second, wind and solar (the \emph{WS} in W\emph{WS}) are intermittent sources of electricity,
 while today's electricity sources 
 (coal, natural gas, nuclear, and hydro)
@@ -266,6 +277,8 @@ At present, electric grids accommodate only a fraction of intermittent electrici
 So a transition to wind and solar primary energy sources will require
 redesign and re-implementation of electricity grids worldwide.
 
+**** Need storage. Discuss storage here. ****
+
 Third, WWS systems are energy intensive to manufacture.
 So the transition to a WWS future will require significant energy investment
 in addition to significant financial investment.
@@ -273,10 +286,31 @@ If the energy investment to make WWS systems comes from fossil fuels,
 significant CO$_2$ will be emitted during the transition
 from today's energy regime to a WWS regime.
 
+**** EROI and LCA ****
+
+**** Discuss nuclear somewhere. ****
+
+Nuclear: 2, 3, 4 gen reactors. 1970s technology. Investment for the future. 
+
+**** Add subsections for biomass and WWS? ****
+
+
+**** Third idea:  Carbon sequestration and storage? Project: research the pilot plant that fell apart.
+
+**** Carbon negative? Are there ways to go carbon negative? Grow biomass. 
+Lock the carbon in a stable form (Graphene) Project? ****
+
+Tie to back IPARC equation here.
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
@@ -331,6 +365,14 @@ from today's energy regime to a WWS regime.
         Find several updated estimates of the costs for these and other large 
         government programs.
         Compare to estimates to effect a transition to a low-carbon energy regime.
+        
+  \item **** Calculate land required to solarify all electricity production in the U.S. 
+        What effect would that have on natural landscape?
+        Where would you locate the solar panels?
+        What transmission issues would emerge? 
+  
+  \item **** What are the other resource implications of a WWS transition? Do we have enough Nyobium 
+        for wind turbines? 
 
 \end{projects}
 

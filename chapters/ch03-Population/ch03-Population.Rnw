@@ -229,6 +229,7 @@ Where do people live? Given our goal of a sustainable society, where do we
 an area, shown in Figure \ref{fig:half_population}, known as the Valeriepieris circle.
 This circle has a radius of about 4,000km. Other researchers have since defined 
 a more compact region (radius 3300km) with the same fraction of Earth's population.
+**** Discuss population density. ****
 \begin{figure}
 \centering
 \includegraphics[width=1\linewidth]{chapters/ch03-Population/figures/half_world_population.pdf}
@@ -271,6 +272,10 @@ households due to divorce—will increase, not abate. The need for master-planni
 has never been greater.
 \end{quote} %%https://www.newcriterion.com/issues/2018/6/the-future-of-classicism-9861
 
+***** Stick to summarizing what is.  Describe tradeoffs. Put interesting questions in the questions. 
+In particular, pull interesting questions from the block quote. ****
+
+
 %% https://www.theguardian.com/books/2015/jul/16/rainbow-dust-the-moth-snowstorm-in-pursuit-of-butterflies-review
 %% Science may clarify priorities “but the whole show is essentially about Love”.
 %% JVA: Technology says, 'can we," economics tells us the tradeoffs, love lets us decide whether we want to.
@@ -282,6 +287,7 @@ connection(s) to sustainability.
 \item population has grown (exponentially).
 \item land and habitat impacts from housing, agriculture (to feed more people), (finite) water resources. 
 \item population fuels the economy (production and consumption)
+\item Tie back to the IPARC equation.
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -294,7 +300,7 @@ The Once and Future World: Nature As It Was, As It Is, As It Could Be, by J.B. M
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The History Guy (YouTube) "The Great Kansas Grasshopper Plague of 1874," 
 published August 17, 2020. \\
-Our World in Data.
+Our World in Data. **** Eliminate OWID, because is sources for Figure. ****
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
@@ -305,15 +311,18 @@ Our World in Data.
 \item The fear that population will outstrip resources is called \emph{Malthusian
       economics} after Thomas Malthus (1766-1834). Modern thinkers concerned 
       with the (postulated) humanitarian crisis care called ``neo-Malthusians.''
-      Nevertheless, this concern is \emph{not} modern. A variety to writers and
+      Nevertheless, this concern is \emph{not} modern. A variety of writers and
       scholars through the ages back to antiquity and throughout the world have
-      voiced the same fear. But (their opponents will argue) the predicted
+      voiced the same fear, but (their opponents will argue) the predicted
       calamity \emph{has never come to pass}. Expectation (or not) of calamity
       is a reflection of the way we think about the natural world, the economy,
       human ingenuity, and ``progress.'' Explain some counter-Malthusian viewpoints
       and critique them versus Malthusian expectations.
+      **** Split between a question and a project. ****
+      **** Reference the Erlich bet? ****
 
 \item What are ways population could be controlled?
+      **** Reference World3 model figure? Give some examples? China, USAID contraception? ****
 
 \item Some electric train systems are supplied with power by energizing
       a third rail (the first two being the tracks) with high voltage DC 
@@ -322,7 +331,7 @@ Our World in Data.
       risk of lethality. In politics, a ``third rail'' is an issue, so
       contentious, that touching it will be political suicide. Population
       control has been called the third rail of politics. Reflect on why
-      this is. What groups or individuals would be sensitive to attempts
+      this is so. What groups or individuals would be sensitive to attempts
       to control population? Explain moral or ethical concerns with population control.
 
 \item Notice the population structure shown in Figures \ref{fig:PopulationGraph} 
@@ -338,20 +347,22 @@ Our World in Data.
       contraception. (Note that birth rates fell in western Europe in the late 1800s before 
       widespread use of contraception.) What are some \emph{morally acceptable}
       ways to \emph{cause} birth rates to decline?
+      **** XKCD URL? ****
 
-\item what things have a \textit{higher} environmental impact as populations urbanize?
-      What things have  lower impact?
+\item What things have a \textit{higher} environmental impact as populations urbanize?
+      What things have lower impact?
 
 \item Describe where you live. Is it urban, suburban, rural, or would you describe it 
-      in some other way. What do you like about the environment of where you live? How would you 
+      in some other way? What do you like about the environment in which you live? How would you 
       make it different if you could?
       
 \item Migration of people from rural to urban environments and especially across
-      national borders is an emotionally charged political issue. How does it look 
-      in terms of long-term sustainability?
+      national borders is an emotionally charged political issue. 
+      How does the movement of people
+      affect sustainability?
       
 \item What is a socially equitable way to allocate access to wilderness areas and experiences?
-      Is access to ``nature'' a right? what are ways to allow urbanites to access
+      Is access to ``nature'' a right? What are ways to allow urbanites access to
       the natural world?
 
 \end{questions}
@@ -370,7 +381,7 @@ Our World in Data.
       is reasonable?
       
 \item Make a population pyramid for city, state, county, or school.
-      Notice anything interesting?
+      Do you notice anything interesting?
 
 \end{projects}
 

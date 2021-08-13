@@ -17,7 +17,9 @@ transport us. \ldots
 Without abundant resources, prosperity is out of reach.}
 {Gifford Pinchot}
 
+**** Look at Chapter 2 introduction. Add here. ****
 
+**** Remind that energy is the prime resource. ****
 
 Whether we are aware of it or not, 
 all plant, animal, and human life on Earth depends on natural resources for survival.
@@ -27,6 +29,8 @@ Without timber to build homes?
 Without healthy soil to grow food?
 Without oceans and atmosphere to accept wastes?
 Without coal, oil, and methane to make electricity, gasoline, and natural gas?
+
+**** Example:  getting a haircut? ****
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -79,6 +83,12 @@ See Table~\ref{tab:CRMs} for critical materials and industries.
 \label{tab:CRMs}
 \end{table}
 
+
+**** Add editorial comments about Table 5.1. 
+How do they relate to the narrative on sustainability? 
+Table 5.1: there are many critical resources. 
+They are used all throughout the economy. ****
+
 The rate at which the world's economy has been extracting resources
 to create products, create infrastructure, and deal with wastes
 has been accelerating in recent decades.
@@ -112,6 +122,9 @@ Construction minerals, Ores and industrial minerals, and Fossil energy carriers
 is unsustainable. 
 Extraction of Biomass can be sustainable if 
 the extraction rate is less than the regeneration rate.
+
+
+**** Say that we can't keep increasing our rate of use and our rate of per capita use. That's not sustsinabilty. ****
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -395,11 +408,19 @@ Figure~\ref{fig:CarbonEmissionsGraph} shows that CO$_2$ emissions have been grow
 So, other terms on the right side of the IPARC identity 
 are growing faster than energy intensity of the economy is declining.
 
+**** One way to decrease resource intensity is transition to service economy.
+But that is an example of problem shifting. ****
+
+**** Make a graph of MJ/person vs.\ time ****
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+**** energy efficiency? ****
+**** Robert Gordon's book: Rise and Fall of American Growth ****
+**** Manufacturing to service economy. ****
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -422,9 +443,7 @@ are growing faster than energy intensity of the economy is declining.
   \item Is the Graedel and Allenby sustainability criterion a good criterion?
         What is the basis for your judgement?
       
-  \item Update the weak sustainability calculations of Table~\ref{tab:weak_sustainability_calcs}
-        using the latest data from 
-        the U.S.\ Energy Information Agency (EIA)~\cite{U.S.-Energy-Information-Agency:tr}.
+  \item **** Finite vs.\ increasing resources. Mineral vs.\ labor. ****
 
 \end{questions}
 
@@ -435,6 +454,10 @@ are growing faster than energy intensity of the economy is declining.
 
 \begin{projects}
 
+  \item Update the weak sustainability calculations of Table~\ref{tab:weak_sustainability_calcs}
+        using the latest data from 
+        the U.S.\ Energy Information Agency (EIA)~\cite{U.S.-Energy-Information-Agency:tr}.
+        
   \item Choose a material from the European Commission list of critical raw materials.
         Do today's consumption rates of that material meet weak or strong sustainability criteria?
         Provide suggestions for ways to bring consumption rates closer to strong sustainability.

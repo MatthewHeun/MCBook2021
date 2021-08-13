@@ -199,7 +199,7 @@ Table \ref{tab:planetBoundaries} lists these indicators and states
 whether they've already been exceeded -- note that exceeding these indicators
 means that humanity is not living sustainably.
 The boundary values set for these indicators are intended to define a 
-"safe operating space for humanity."
+``safe operating space for humanity.''
 % \begin{enumerate} %present as a table instead?!
 % \item Climate change
 % \item Biodiversity loss
@@ -441,9 +441,14 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+**** IPCC scientific basis for 6th assessment report? ****
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -455,7 +460,7 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
 \item Assessments play a useful role in clarifying where scientific uncertainties remain. 
       While uncertainties can be used to argue for a ‘wait and see’ approach, they 
       can equally well be used to argue for a precautionary approach. What are 
-      pros and cons of a `wait and see' versus `let's be careful?'
+      pros and cons of a ``wait and see'' versus ``let's be careful?''
       
 % NOt a question.
 % \item Among the MA findings, the certainty of the global findings is generally relatively high. 
@@ -475,13 +480,13 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
       to be responsible for 42\% of the decline of native species now listed as 
       endangered or threatened. Should more be done to prevent the movement of
       organisms or do you view some amount of invasiveness as inevitable and,
-      therefore, not worth combating? Once a invasive specie is established,
+      therefore, not worth combating? Once a invasive species is established,
       how much effort should be put into either containing or eradicating it?
       Name a dozen invasive species local to your area.
 
 \item Recreation and literary and cultural inspiration are real ecosystem services
       even if we don't know their financial values. Actually, their financial value 
-      is absolutely knowable. How much would you pay for ...?
+      is absolutely knowable. How much would you pay for \ldots?
       
 \item Small island nations such as the Republic of the Marshall Islands (RMI) have 
       contributed relatively little to global CO$_2$ emissions (because their 
@@ -503,7 +508,6 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
       of its suppliers and customers (known as \emph{scope 3 emissions}) and ordered Shell to 
       reduce its carbon emissions 45\% by 2030 relative to Shell's 2019 emissions.
 %      Shell planned to be carbon neutral by 2050.
-      What, if any, are the advantages and disadvantages of \emph{regulation through litigation}?
       What would be alternative methods of accomplishing the same result?
       
 \item What is a cultural ecosystem service that you value that is threatened by 
@@ -511,7 +515,11 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
       What could be done to mitigate the impact(s)?
       
 \item Section \ref{sec:tipping} claimed that human degradation of the environment
-      has always been part of human history. Why do you think this is?
+      has always been part of human history. Why do you think this is true?
+      How does the fact that humans have always been environmentally 
+      destructive fit into your worldview?
+      How does the fact that humans have always been environmentally 
+      destructive apply to the modern context?
       
 \item Rapa Nui, also called Easter Island, had 21 species of native trees and 
       at least 6 species of native birds, all of which were extinct before European 
@@ -520,8 +528,14 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
       devastation to the native environment is a kind of terraforming that allowed
       human civilization to flourish \cite{Hunt2009}. How do we judge, from a modern
       perspective, the success or failure, pros or cons of an ancient ecological
-      catastrophe (but colonization success). How could Rapa Nui be a model for 
+      catastrophe (but colonization success)? How could Rapa Nui be a model for 
       a Lunar or Martian colony?
+      
+\item Figure~\ref{fig:FootprintHDIGraph} indicates a tradeoff between human well-being (HDI) 
+      and ecological impact of human life. 
+      There are no countries that have high human well-being and low ecological impact.
+      Why do you think this is?
+      What can be done to push all countries to the lower-right corner of this graph?
       
 \item What things are important to you that aren't, for instance, in 
       the HDI? Personal freedom and/or economic mobility? 
@@ -548,6 +562,12 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
 \item Prepare an essay on how the narrative(s) surrounding human colonization
       of Rapa Nui affect, are effected by, and relate to modern debates on 
       sustainability.
+
+\item Cuba is a country in the lower-right corner of Figure~\ref{fig:FootprintHDIGraph}. 
+      Research life in Cuba. Would you like to live there? 
+      Why or why not?
+      
+\item What, if any, are the advantages and disadvantages of \emph{regulation through litigation}?
 
       
 \end{projects}
