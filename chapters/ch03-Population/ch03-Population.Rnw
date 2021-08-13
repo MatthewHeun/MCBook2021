@@ -73,7 +73,7 @@ role they play in pollinating many agricultural crops.
 As shown in Equation \ref{eq:IPARC}, human population has a major impact on the planet.
 Figure \ref{fig:PopulationGraph} shows the Earth's human population from 1800 AD to present.
 In July 2021, the world's human population is estimated to be 7.7-7.9 billion with a
-current growth rate of 1.05\%. On average, over the last hundred year, the growth rate
+current growth rate of 1.05\%. On average, over the last hundred years, the growth rate
 was 1.55\% with a peak growth rate of 2.1\% between 1965 and 1970.
 
 <<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation~\\cite{Roser:2021uu}. Update reference?">>=
@@ -178,8 +178,8 @@ in the total population (uncorrected for sex or age cohorts).}
 \label{fig:dtt}
 \end{figure}
 
-The first stage of the demographic transition is characterized by high birth and
-death rates, with a consequently low rate of population growth. The first stage
+The first phase of the demographic transition is characterized by high birth and
+death rates, with a consequently low rate of population growth. The first phase
 is typically resource constrained. Until about 1800 AD the world was in phase 1.
 Economic development initiates phase 2 via public health measures, improved sanitation,
 medical developments, and increasing agricultural productivity. Phase 2 retains
@@ -189,8 +189,8 @@ young people (see the population pyramid in Figure \ref{fig:dtt}). In phase 3,
 changing economic conditions, such as increase urbanization, a transition away from
 an economy dependent on agriculture, and availability of contraception lead to a
 declining birth rate. In phase 3, the birth rate is still greater than the death
-rates so the population is still growing but the falling birth rate means a slower
-growth and a age structure that begins to be more uniform. In phase 4, the birth rate
+rates so the population is still growing but the falling birth rate means slower
+growth and an age structure that begins to be more uniform. In phase 4, the birth rate
 and death rate equalize and the population stabilizes. In phase 5, the birth
 rate can begin to increase again (as shown in Figure \ref{fig:dtt}) \emph{or}
 drop \emph{below} the death rate, which lead a decrease in total population.
@@ -201,9 +201,10 @@ Currently, most developed countries have a birth rate that is below the
 As countries move through the demographic transition, the age structure of the population,
 shown by the \emph{population pyramid} (lower part of Figure \ref{fig:dtt}), changes.
 The population pyramid shows the percentage of the population in each age cohort, of
-each sex. The age structure of a population provides a lot of information about the
-population's future and its economic outlook. In particular, at the beginning of
-phase 2 of the demographic transition, more young people are being born and more
+each sex. (Important note: the population pyramid is always \emph{relative} to the 
+size of the total population.) The age structure of a population provides a lot of 
+information about the population's future and its economic outlook. In particular, 
+at the beginning of phase 2 of the demographic transition, more young people are being born and more
 people are living longer. Both of these groups are not of working age and so tend
 to contribute little to GDP. (In fact, they are dependents who \emph{consume} rather
 than generate wealth.) Later, in phase 3, as these young people mature and join the labor
@@ -218,12 +219,16 @@ growth faces a demographic ``headwind.'')
 The age structure of the population also shows \emph{demographic momentum}. It takes
 a lifetime to age a cohort out of the population pyramid. All the next generation
 of parents have already been born. A falling birth rate doesn't immediately lower
-the population; it takes time for the population to stabilize.
+the population; it takes time for the population to stabilize. Likewise, a small 
+cohort of parents, even if they have a high birth rate, cannot increase total 
+population size if the oldest generations are a large proportion of the total population.
 
 \subsection{Distribution of population}
-Where do people live? Given our goal of a sustainable society, where do we \textit{want} people to live?
-In 2015, about half of the world's people live in an area, shown in Figure \ref{fig:half_population}, known as the Valeriepieris circle.
-This circle has a radius of about 4,000km. Other researchers have since defined a more compact region (radius 3300km) with the same fraction of Earth's population.
+Where do people live? Given our goal of a sustainable society, where do we 
+\textit{want} people to live? In 2015, about half of the world's people live in 
+an area, shown in Figure \ref{fig:half_population}, known as the Valeriepieris circle.
+This circle has a radius of about 4,000km. Other researchers have since defined 
+a more compact region (radius 3300km) with the same fraction of Earth's population.
 \begin{figure}
 \centering
 \includegraphics[width=1\linewidth]{chapters/ch03-Population/figures/half_world_population.pdf}
@@ -243,7 +248,7 @@ Urban living is correlated with wealth and higher GDP. High population density
 means mass transit is practical and, in fact, widely used.
 David Owens argues that Manhattan, being very dense, is the most ecological place to live.
 %% https://www.newyorker.com/magazine/2004/10/18/green-manhattan
-However, higher wealth partially offsets this.
+However, higher affluence (A) partially offsets this.
 
 \textbf{Link to land use and urban planning chapter.}
 \begin{quote}
