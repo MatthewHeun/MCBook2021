@@ -387,8 +387,8 @@ every 10 years.
 \includegraphics[width=\figwidth]{chapters/ch01-Introduction/figures/exponential.pdf}
 \caption{Exponential growth. When $y$ grows exponentially with time $t$ at
 rate $r$, that is, $y=e^{rt}$, value of $y$ at time $N$ is exactly half the value
-of $y$ at time $N+0.693$. The area under the curve before time $N$ (A)
-is exactly equal to the area between $N$ and $N+0.693$ (B), for any $N$.}
+of $y$ at time $N+0.693/r$. The area under the curve before time $N$ (A)
+is exactly equal to the area between $N$ and $N+0.693/r$ (B), for any $N$.}
 \label{fig:exp}
 \end{figure}
 
@@ -396,29 +396,61 @@ In the discrete case, like grain on a chessboard, the number of grains on the
 next square is always one more than the sum of all the previous squares.
 In the continuous case, the amount in until the next doubling (B) is always 
 equal to the sum of all previous amounts (A).
-The implication for sustainability is that the resources – for instance, energy –
+
+Population (P) and affluence (A) in Equation \ref{eq:IPARC} have been growing
+exponentially. Chapter \ref{ch:population} gives us some hope that population
+won't keep growing exponentially. However, world economies are \emph{actively managed} 
+to have a constant growth rates (say a target of 3\% GDP growth per year).
+The implication for sustainability is that the resources – for instance, the energy –
 needed by the economy in the next 23 years will be more than the total
 resources (energy) used in all of history to date. 
-World economies are actively managed to have a constant growth rates 
-(say a target of 3\% GDP growth per year). 
 Because of this exponential growth, resource use goes to infinity on a finite planet.
 Humanity is not on a sustainable path.
 
-
 \section{Energy is the master resource}
-\textbf{Need to explain energy as the master resource and why CO$_2$ is the prime example.}
+Energy is the ultimate or master resource. 
+Obtaining and using any other resource requires energy. 
+Collecting firewood to heat houses requires energy. 
+Extracting crude oil requires energy. 
+Harvesting food requires energy. 
+Making solar panels ... you guessed it, requires energy.
+
+Energy is also the master resource because resources can be converted into other
+types of resources with energy. 
+Crude oil can be refined to gasoline.
+Corn can be converted to ethanol.
+Salt water can be converted to fresh water. 
+Petroleum or natural gas can be converted to pharmaceuticals or plastics.
+
+Finally, energy is needed to break down or dispose of wastes. 
+Building a landfill takes energy.
+Hauling garbage to the landfill takes energy.
+Even the decomposition of compost takes sunlight, air, and rain.
+
+The amount of energy delivered as a fraction of the energy is took to get that energy 
+is called the energy return on investment (ERIO).
+\begin{equation}\label{erio}
+\textrm{ERIO} = \frac{\textrm{Useful energy delivered}}{\textrm{Energy required to get that energy}}
+\end{equation}
+
+An ERIO that is less than one indicates the activity is an energy \emph{sink}
+rather than an energy \emph{source}. 
+For instance, modern agriculture has an ERIO of around 0.15 to 0.1; 
+it takes 7-10 calories of energy to deliver 1 calorie of food energy.
+On the other hand, an ERIO greater than one indicates a source of useful energy.
+Table \ref{tab:erio} lists energy returns for various sources of energy.
+Some authors have suggested a minimum ERIO of 5 for sustainability \cite{Ferruccio2016}
+with 12 to 13 necessary for a technological society.
+
+This book uses the IPARC equation as a framework for thinking about sustainability.
+We will consider many different resources and many different types of impact. 
+However, this book has a special focus on energy and CO$_2$ emissions.
+Climate change is one of the most urgent sustainability challenges and it is 
+linked to two of the others (extinction rate and land use changes) by CO$_2$ 
+and energy. 
+Thus, carbon emissions and energy lie at the nexus of our sustainability challenges.
 
 
-
-The approach above (IPARC) is general in that all kinds of impacts can be considered. In
-this book we will consider many types of impacts and many kinds of sustainability
-(environmental, economic, and social). However, our focus – in the chapters – is mostly on
-energy use and CO$_2$ emissions. Reasons for an energy/CO$_2$ focus include the availability of
-data and the fact that we believe climate change is (currently) the most urgent sustainability problem.
-\textbf{CO$_2$ is the most urgent sustainability issue, in part because it has a 100-year effect.}
-We're feeling now CO$_2$ emitted in the 1990s?
-CO$_2$ is a mechanism that ties many other sustainability problems together, such as
-extinction rate, and land use change.
 
 % End-of-chapter discussion questions tend to focus more on social aspects of sustainability
 % and worldview issues.
@@ -613,7 +645,7 @@ the full restoration is likely to cost more than \euro{8} billion.
       many sources of data use different definitions or metrics.
       
 \item An alternative way to describe constant growth is to use a form such as 
-      $y_N = y_0 (1+r)^N$, where$y_0$ is the initial amount, 
+      $y_N = y_0 (1+r)^N$, where $y_0$ is the initial amount, 
       $r$ is the constant growth rate (per compounding period), 
       $N$ is the number of compounding periods, and $y_N$ is the final amount.
       Obtain (or generate) some data and compare the rates obtained using this
