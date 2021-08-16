@@ -28,7 +28,7 @@ The Earth's ecosystems support life on Earth. Collectively, these supports are
 called \emph{ecosystem services}.
 The first group of services are \emph{provisioning services}, which are material 
 and energy resources.
-For example, humans plant crops (food, textile, and timber) that "grow," 
+For example, humans plant crops (food, textile, and timber) that ``grow,''
 they're not manufactured. 
 The ecosystem ``provides'' the crops. 
 Likewise, the ecosystem provides water, petroleum, and other mineral resources.
@@ -51,8 +51,8 @@ they examined were being degraded or used unsustainably \cite{MA2005}.
 %Most heavily affected are inland waters by decline in water quality and fragmentation of wetlands.
 
 One way to think about ecosystem services is as \emph{natural capital}. 
-``Capital'' is used here in an economic sense, see Chapter \ref{chap:affluence}, 
-and refers to an improvement or building that is economically productive or valuable. 
+``Capital'' refers to an improvement or building that is economically productive 
+or valuable (see Chapter \ref{chap:affluence}).
 The ecosystem produces value for human society by producing many things we use 
 and disposing of many of our wastes.
 Just as concepts of value and ownership motivate individuals and organizations
@@ -79,7 +79,7 @@ particularly in terms of the loss of a piece of the ecosystem.
 For example, the ecosystem is like an airplane.
 When one rivet is lost, the result is not immediately catastrophic but accumulated 
 losses can result in catastrophic failure. 
-Alternatively, species are like individual stocks in a portfolio: wide diversity 
+Alternatively, species are like individual stocks in a portfolio, where a wide diversity 
 of species minimizes risk or volatility of return.
 
 \section{Tipping points}
@@ -167,14 +167,15 @@ ancient Greece and Rome" \cite{Hughes1982}.
 % if we don't understand it, should we mess with it?
 What \emph{is} new is scope or magnitude of humanity's ability to affect the environment,
 both due to high population and our level of technology.
-For example, nuclear and industrial "accidents," such as the Thule air base crash,
+Fossil-fuel derived carbon emissions are of particular concern.
+Further examples include nuclear and industrial ``accidents,'' such as the Thule air base crash,
 the Palomares crash, the Seveso dioxin release, and, more recently, the Chernobyl
-and Fukishima diasters, have each contaminated many square kilometers.
+and Fukishima diasters, which have each contaminated many square kilometers.
 Finally, while the risk is, perhaps, less acute than it once was, a 
 global thermonuclear war would be a humanitarian and environmental disaster on a 
 truly global scale.
 
-Equation \ref{eq:IPARC} frames sustainability in terms of "impacts," that is, 
+Equation \ref{eq:IPARC} frames sustainability in terms of ``impacts,'' that is, 
 negative effects on the environment resulting from human activity. 
 Broadly, there are two approaches for managing or responding to impacts. 
 \emph{Planetary boundaries} describe the maximum (desirable) \emph{level} of effects. 
@@ -340,7 +341,7 @@ limit is exceeded. Carbon dioxide in the atmosphere is thought/feared to be an e
 of this sort of behavior; when CO$_2$ increases too much, Earth will get 
 \emph{dramatically} hotter, fundamentally altering many of its basic systems.
 
-\section{Greenhouse gases}
+\section{Climate change}
 \label{sec:GHGCC}
 
 \begin{figure}
@@ -354,7 +355,7 @@ nature can remove it.}
 
 
 Figure \ref{fig:CO2Graph} shows average atmospheric CO$_2$ concentrations over the last 
-800 thousand years. (Is 0.8 million years better?) 
+800 thousand years (0.8 million years). 
 The climate science is clear (ref IPCC6?) that greenhouse
 gas emissions (primarily CO$_2$ released from burning fossil fuels) are causing
 the average global temperature to increase. 
@@ -385,8 +386,9 @@ one or more of the three pillars shown in Figure \ref{fig:venn_diagram}.
 % \subsection{Indices for the economy}
 % \subsection{Indices for social change}
 Example indices include carbon footprint, ecological footprint (in global hectares
-per person), and the human development index (HDI). Figure~\ref{fig:FootprintHDIGraph}
-plots ecological footprint and HDI for many different countries. 
+per person), and the human development index (HDI). 
+Figure~\ref{fig:FootprintHDIGraph} plots ecological footprint and HDI for many 
+different countries. 
 
 % \begin{figure}
 % \centering
@@ -395,10 +397,10 @@ plots ecological footprint and HDI for many different countries.
 % \label{fig:ecofootprintHDI}
 % \end{figure}
 
-In contrast to planetary boundaries, which are a hard biophysical limit, indices 
-typically represent aggregated behavior. Aggregation allows grouping together of 
-things that are different, for example, in the HDI, life expectancy at birth, 
-expected years of schooling, and gross national income. 
+In contrast to planetary boundaries, which are hard biophysical limits, indices 
+typically represent aggregated behavior. 
+Aggregation allows grouping together of things that are different, for example, 
+in the HDI, life expectancy at birth, expected years of schooling, and gross national income. 
 Another example is the CO$_2$ equivalents, which expresses the global warming 
 potential of various gases such as methane, nitrous oxide, and fluorinated gases
 in terms of the amount of carbon dioxide that would give the same amount of warming,
@@ -406,14 +408,13 @@ disregarding any other environmental effects.
 
 Indices and biophysical limits, such as planetary boundaries, exist to guide 
 decision making. 
-% HDI: would you rather spend money on education or healthcare? education spending
-% will get you *some* life expectancy... 
 The weightings inherent in indices express preferences for (perhaps) inherent 
-tradeoffs among the different variables. Furthermore, having expressed an intent
-or preference for a certain limit, index, or behavior, these variables do not
-inherently generate strategies for achieving the goals or enforcement mechanisms 
-for maintaining behavior. It remains for scientists, policy makers, and government
-officials to conduct research, make recommendations, regulate, and enforce laws.
+tradeoffs among the different variables. 
+Furthermore, having expressed an intent or preference for a certain limit, index, 
+or behavior, these variables do not inherently generate strategies for achieving 
+the goals or enforcement mechanisms for maintaining behavior. 
+It remains for scientists, policy makers, and government officials to conduct 
+research, make recommendations, regulate, and enforce laws.
 
 <<FootprintHDIGraph, fig.cap="Ecological footprint vs. HDI. Population is in millions.">>=
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI.xlsx"),
@@ -479,7 +480,7 @@ The Power of Community: How Cuba Survived Peak Oil.
 \begin{questions}
 
 \item Assessments play a useful role in clarifying where scientific uncertainties remain. 
-      While uncertainties can be used to argue for a ‘wait and see’ approach, they 
+      While uncertainties can be used to argue for a ``wait and see'' approach, they 
       can equally well be used to argue for a precautionary approach. What are 
       pros and cons of a ``wait and see'' versus ``let's be careful?''
       
@@ -560,6 +561,12 @@ The Power of Community: How Cuba Survived Peak Oil.
       
 \item What things are important to you that aren't, for instance, in 
       the HDI? Personal freedom and/or economic mobility? 
+      
+\item The calculation of HDI weights life expectancy, education, and national
+      income equally. Consider ways these outcomes may be correlated. Would you
+      weight one of them higher than the others?
+% HDI: would you rather spend money on education or healthcare? education spending
+% will get you *some* life expectancy... 
 
 \end{questions}
 
