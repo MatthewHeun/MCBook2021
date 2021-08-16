@@ -443,11 +443,20 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
   MKHthemes::xy_theme()
 @
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-**** IPCC scientific basis for 6th assessment report? ****
+\indent 
+
+IPCC. \emph{Climate Change 2021: The Physical Science Basis. 
+Contribution of Working Group I to the Sixth Assessment Report
+of the Intergovernmental Panel on Climate Change.} 
+Cambridge University Press, Cambridge, UK. 2021.
+
+Kolbert, Elizabeth. \emph{Field Notes from a Catastrophe: Man, Nature, and Climate Change}.
+Bloomsbury, New York. 2015.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
