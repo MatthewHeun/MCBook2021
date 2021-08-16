@@ -124,7 +124,12 @@ While we may, at times, point to directions for improved sustainability, it is b
 (and indeed our ability) to provide \emph{solutions} for all sustainability problems.
 The remainder of this chapter summarizes key themes of the book.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{What is sustainability?}
+\label{sec:what_is_sustainability}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 ``Sustainably'' is a critical concept.
 If humanity is not living sustainably we will either cease to exist as a species
 or (at least) experience drastic reductions in our standard of living.
@@ -195,8 +200,11 @@ one of the most \emph{urgent} sustainability problems.
 \end{mcframe}
 
 
+%++++++++++++++++++++++++++++++
 \subsection{Definitions of sustainability}
 \label{sec:Sdefns}
+%++++++++++++++++++++++++++++++
+
 The most oft-quoted \cite{Quental2011} definition of sustainability is that
 ``Sustainable development is development that meets the needs of the present without
 compromising the ability of future generations to meet their own needs'' \cite{Brundtland}.
