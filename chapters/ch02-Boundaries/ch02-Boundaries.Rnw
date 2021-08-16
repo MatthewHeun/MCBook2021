@@ -225,7 +225,7 @@ The boundary values set for these indicators are intended to define a
 % Ozone depletion & Statospheric ozone completion [Dobson] & 290 & 283 & 276 & no \\
 % \bottomrule \end{tabular}
 
-\begin{table}
+\begin{table}\centering
 \caption{List of the planetary boundaries proposed by \cite{Rockstrom2009}.
 \label{tab:planetBoundaries}}
 \begin{tabular}{ll}\toprule
