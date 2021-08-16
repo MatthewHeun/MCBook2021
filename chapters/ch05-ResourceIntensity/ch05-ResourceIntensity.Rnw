@@ -34,16 +34,22 @@ Without coal, oil, and methane to make electricity, gasoline, and natural gas?
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Strong sustainability}\index{sustainability!strong}
-\label{sec:resources_strong_sustainability}
+\section{Strong and weak sustaiinability}
+\label{sec:strong_weak_sust}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 A significant sustainability challenge 
 is extracting and consuming natural resources\index{resources!natural}
 at a sustainable rate.
-A criterion for ``strong sustainability'' is 
-extracting and consuming resources 
-at a rate less than their natural regeneration rates.
+When considering the sustainability of resource extraction and consumption, 
+it is helpful to consider the strong and weak sustainability categories 
+introduced in Section~\ref{sec:what_is_sustainability}.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Strong sustainability}\index{sustainability!strong}
+\label{sec:resources_strong_sustainability}
+%++++++++++++++++++++++++++++++
 
 Resources can be classified as ``renewable''\index{resources!renewable} or
 ``non-renewable,''\index{resources!non-renewable}
@@ -57,6 +63,27 @@ are also classified as renewable.
 Resources, such as fossil fuels,
 that regenerate slowly or not at all
 are classified as non-renewable.
+
+Whether or not a resource is renewable affects the sustainability of its extraction and consumption,
+per definitions of strong and weak sustainability.
+A criterion for ``strong sustainability'' is 
+extracting and consuming resources 
+at a rate less than their natural regeneration rates.
+Strong sustainability was operationalized, in part, by Herman Daly~\cite{Daly1996} as
+%
+\begin{enumerate}
+
+  \item Renewable resources, such as fish, soil, and groundwater, 
+        must be used no faster
+        than the rate at which they regenerate.
+
+  \item Nonrenewable resources, such as minerals and fossil fuels,
+        must be used no faster
+        than renewable substitutes for them can be put into place.
+        
+\end{enumerate}
+%
+(See Section~\ref{sec:Sdefns}.)
 
 The economy, being society's metabolism,\index{economy!as society's metabolism}
 is one aspect of life that also depends on natural resources
@@ -127,10 +154,10 @@ the extraction rate is less than the regeneration rate.
 **** Say that we can't keep increasing our rate of use and our rate of per capita use. That's not sustsinabilty. ****
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Weak sustainability}\index{sustainability!weak}
+%++++++++++++++++++++++++++++++
+\subsection{Weak sustainability}\index{sustainability!weak}
 \label{sec:resources_weak_sustainability}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%++++++++++++++++++++++++++++++
 
 Graedel and Allenby~\cite[p.~17]{Graedel:2010ab} develop a
 weak sustainability criterion for 
