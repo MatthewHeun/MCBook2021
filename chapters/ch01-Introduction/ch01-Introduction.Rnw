@@ -16,16 +16,16 @@ double what was on the previous square.
 The king accepted the wager but lost the game.
 % according to chess.com a match is a series of games.
 A chessboard has eight rows and eight columns, so the king had to pay $2^{64}-1$
-grains of rice (see Section \ref{sec:exp}).
-Since a pound is seven thousand grains of rice (\char`~ 65 mg each),
-the king owed her $1.195 \times 10^{15}$ kg of rice, which is
+grains (see Section \ref{sec:exp}).
+Rice is seven thousand grains per pound (\char`~ 65 mg each),
+which means the king owed her $1.195 \times 10^{15}$ kg of rice, 
 % about 12\% of the weight of everything ever produced by the human species [1]. At
 % US\$6.85/bushel, the grain would be worth about 300 trillion dollars, which is (roughly)
 % ten times more money than exists in the world.
-over 150 tons per person for every person planet Earth (worth about \$40,000 per person).
+which is over 150 tons of rice for every person planet Earth (worth about \$40,000 per person).
 For reference, people eat about 35 tons of food in a lifetime, so this is 4.4 lifetimes'
 supply of food for every person on the planet.
-Clearly, this won't all fit on one chessboard!
+Clearly, this won't all fit on an ordinary chessboard!
 
 This story, which goes back at least to the 1200s AD, illustrates several aspects of the
 sustainability problem that have been evident for centuries:
@@ -74,7 +74,7 @@ listed below them.}
 \label{fig:venn_diagram}
 \end{figure}
 
-% <<venn_diagram, fig.height=3, fig.width=4.5, fig.align='center', echo=FALSE, fig.cap="Three overlapping domains or aspects of sustainability.", fig.scap="Aspects of sustainability.">>=
+% # <<venn_diagram, fig.height=3, fig.width=4.5, fig.align='center', echo=FALSE, fig.cap="Three overlapping domains or aspects of sustainability.", fig.scap="Aspects of sustainability.">>=
 % # The draw.triple.venn function returns a gList object,
 % # whose text we do not want to see in the output.
 % # Thus, we assign the return value to a variable,
@@ -96,7 +96,7 @@ listed below them.}
 %   annotate(geom = "text", x = 0, y = 1.4, label = "Economic", size = 3.5) + # family = "Libre Caslon Text",
 %   # Eliminate all axes and labels besides the ones we added ourselves.
 %   theme_void()
-% @
+ @
 
 % Let's say more here about the organization of the book in terms of social, economic, and ES?
 
@@ -178,7 +178,7 @@ On the other hand, dandelions might be necessary for other organisms we depend o
 Environmental science views the ecosystem in its entirety as a web, with all parts
 depending on all other parts.
 The ecosystem is not a collection of individual components with binary ``needed''/``not
-needed'' classifications, but as a whole that exists on a continuum from `"``fully functional''
+needed'' classifications, but as a whole that exists on a continuum from ``fully functional''
 to ``nonfunctional.''
 The choices and paths to sustainability are bristling with value judgements and
 moral choices about what to value and how much.
@@ -275,7 +275,7 @@ greater detail.
 \section{A framework for sustainaiblity thinking}%Impacts and their sources}
 Two mathematical identities, IPAT and Kaya, have been used express sources and impact
 of human activities on the environment.
-IPAT expresses “impact” (I) on the environment as the product of human
+IPAT expresses ``impact'' (I) on the environment as the product of human
 population (P), affluence (A), and technology (T).
 The Kaya identity is a form of the IPAT equation but restricts impact to CO$_2$
 emissions.
