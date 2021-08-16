@@ -3,13 +3,16 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
-\chapter{Affluence}
+%#############################################################
+\chapter{Affluence ($A$)}
 \label{chap:affluence}
+%#############################################################
+
 \epigraph{Modern society will find no solution to the ecological problem unless 
 it takes a serious look at its lifestyle.}{Pope John Paul II}
 %\epigraph{To be without some of the things you want is an indispensable part of happiness.}{Betrand Russell}
 
-economy as metabolism.
+**** Add or refer to the economy as a metabolism. ****
 
 Equation \ref{eq:IPARC} is our framework for considering sustainability.
 Chapter \ref{chap:planetary_boundaries} discussed planetary boundaries and the impact

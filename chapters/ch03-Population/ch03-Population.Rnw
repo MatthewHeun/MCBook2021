@@ -3,8 +3,12 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
-\chapter{Population}
+
+%#############################################################
+\chapter{Population ($P$)}
 \label{chap:population}
+%#############################################################
+
 % ** \epigraph{The raging monster upon the land is population growth. 
 % ** In its presence, sustainability is but a fragile theoretical concept.}{E.O. Wilson}
 % \epigraph{The strongest witness is the vast population of the Earth to which we are 
