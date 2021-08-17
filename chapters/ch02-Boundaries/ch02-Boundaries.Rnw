@@ -309,14 +309,14 @@ doesn't mean there isn't a firm limit.
 \begin{figure}
 \centering
 %\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/Limits.jpg}
-% \begin{tabular}{cc}
-\includegraphics[width=0.48\figwidth]{chapters/ch02-Boundaries/figures/GA1.pdf} & 
-% \includegraphics[width=0.48\figwidth]{chapters/ch02-Boundaries/figures/GA2.pdf}\\ 
-% (a) & (b) \\
-% \includegraphics[width=0.48\figwidth]{chapters/ch02-Boundaries/figures/GA3.pdf} & 
-% \includegraphics[width=0.48\figwidth]{chapters/ch02-Boundaries/figures/GA4.pdf} \\ 
-% (c) & (d)
-% \end{tabular}
+\begin{tabular}{cc}
+\includegraphics{chapters/ch02-Boundaries/figures/GA1.pdf} &
+\includegraphics{chapters/ch02-Boundaries/figures/GA2.pdf}\\
+(a) & (b) \\
+\includegraphics{chapters/ch02-Boundaries/figures/GA3.pdf} &
+\includegraphics{chapters/ch02-Boundaries/figures/GA4.pdf} \\
+(c) & (d)
+\end{tabular}
 \caption{Various relationships between biophysical bounds and human development.
 The boundary or carrying capacity of the ecosystem is shown as a dash-dot red line. 
 A variable related to human development, such as population or food production is
