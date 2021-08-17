@@ -530,25 +530,31 @@ the goals or enforcement mechanisms for maintaining behavior.
 It remains for scientists, policy makers, and government officials to conduct 
 research, make recommendations, regulate, and enforce laws.
 
-<<FootprintHDIGraph, fig.cap="Ecological footprint vs. HDI. Population is in millions.">>=
+<<FootprintHDIGraph, fig.cap="Ecological footprint vs. HDI. Population is in millions. HDI between 0.7 and 0.8 is considered ``high'' human development. HDI greater than 0.8 is considered ``very high'' human development. Ecological footprint below 1.9 global hectares per person is considered sustainable. The only countries ``inside the box'' at the lower right of the graph (high human development and sustainable ecological footprint) are the Philippines and Sri Lanka. No country exhibits ``very high'' human development and a sustainable ecological footprint. Data from 2017 ****.">>=
+clrs <- viridis::viridis(6, begin = 0, end = 0.99)
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI.xlsx"),
-                                  sheet = "data to plot") %>%
+                                  sheet = "data to plot") %>% 
   dplyr::filter(`Country Name` != "World") %>% 
   dplyr::mutate(
-    Population = Population / 1e6 # Population now in millions
+    Population = Population / 1e6, # Population now in millions
+    Continent = factor(Continent, levels = c("North Am.", "Europe", "Asia", "Oceania", "Latin Am.", "Africa"))
   ) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "HDI", y = "Ecological_Footprint_gha_per_person", 
-                                                colour = "Continent", alpha = "Continent", shape = "Continent", size = "Population")) + 
+                                                colour = "Continent", alpha = "Continent", shape = "Continent",
+                                                size = "Population")) + 
   ggplot2::geom_vline(xintercept = c(0.7, 0.8), size = 0.2) +
+  ggplot2::geom_hline(yintercept = 1.6, size = 0.2) +
   ggplot2::geom_point() + 
   ggplot2::scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, by = 0.2)) + 
   ggplot2::scale_y_continuous(limits = c(0, 16), breaks = seq(0, 16, by = 2)) + 
   ggplot2::scale_size_continuous(breaks = c(10, 100, 1000)) +
-  ggplot2::scale_shape_manual(values = c(Africa = 16, Asia = 1, Europe = 16, 
-                                         `North Am.` = 16, Oceania = 16, `South Am.` = 16)) +
-  ggplot2::scale_alpha_manual(values = c(Africa = 0.5, Asia = 1, Europe = 0.5,
-                                         `North Am.` = 0.5, Oceania = 0.5, `South Am.` = 0.5)) +
-  ggplot2::labs(x = "Human development index [-]", 
+  ggplot2::scale_shape_manual(values = c(`North Am.` = 16, Europe = 16, Asia = 1, 
+                                         Oceania = 16, `Latin Am.` = 16, Africa = 16)) +
+  ggplot2::scale_alpha_manual(values = c(`North Am.` = 0.6, Europe = 0.75, Asia = 1, 
+                                         Oceania = 0.75, `Latin Am.` = 0.75, Africa = 0.75)) +
+  ggplot2::scale_colour_manual(values = c(`North Am.` = clrs[[6]], Europe = clrs[[5]], Asia = clrs[[4]],
+                                          Oceania = clrs[[3]],  `Latin Am.` = clrs[[2]], Africa = clrs[[1]])) +
+  ggplot2::labs(x = "Human development index (HDI) [-]", 
                 y = "Ecological footprint [gha/person]", 
                 size = "Pop. [millions]",
                 shape = NULL, 
