@@ -136,7 +136,7 @@ world_gdppc_Nordhaus %>%
     gdppc_2017_thousand_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000
   ) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "gdppc_2017_thousand_intl_dollars_per_capita")) + 
-  ggplot2::geom_line(size = 1) + 
+  ggplot2::geom_line(size = 1, colour = mc_title_blue) + 
   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 20, by = 2))) +
   ggplot2::labs(x = NULL, 
                 y = "Affluence (A) [2017 Intl. k$/person-year]") +
@@ -232,7 +232,7 @@ world_gdp_Nordhaus %>%
     GDP_trillion_2017_intl_dollars = world_gdp_2017_intl_dollars / 1e12
   ) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "GDP_trillion_2017_intl_dollars")) +
-  ggplot2::geom_line(size = 1) +
+  ggplot2::geom_line(size = 1, colour = mc_title_blue) +
 
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = NULL,
