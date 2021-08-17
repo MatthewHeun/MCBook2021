@@ -1,9 +1,11 @@
-t=0:.01:1;
 figure(1)
 subplot(221)
 % Limits are distant or growing
+t=0:.01:2;
 y=exp(t);
-plot(t,[y; y+ones(1,length(y))],'LineWidth',3)
+plot(t,y,'LineWidth',3)
+hold on
+plot(t,y+4*ones(1,length(y)),'-.','LineWidth',3)
 set(gca,'xtick',[])
 set(gca,'ytick',[])
 xlabel('Time')
@@ -14,7 +16,7 @@ subplot(221)
 sys1=tf(3,[0.1 1 1]);
 sys2=tf(1,[1 1]);
 [x2, t2]=step(sys1*sys2,6);
-plot(t2, x2,[0 6],[3.25 3.25],'LineWidth',3)
+plot(t2, x2,[0 6],[3.25 3.25],'-.','LineWidth',3)
 set(gca,'xtick',[])
 set(gca,'ytick',[])
 xlabel('Time')
@@ -26,7 +28,9 @@ sys3=tf(1,[.81 .15 1]);
 sys3lim=-0.5*sys3*sys2;
 [x3, t3]=step(sys3,15);
 [x3a, t3a]=step(sys3lim,15);
-plot(t3, x3,t3a, x3a+1.75,'LineWidth',3)
+plot(t3, x3,'LineWidth',3)
+hold on
+plot(t3a, x3a+1.75,'-.','LineWidth',3)
 set(gca,'xtick',[])
 set(gca,'ytick',[])
 xlabel('Time')
@@ -45,7 +49,9 @@ x6=1./(1+exp(0.1*t6.^1.6-3.5));
 t5=0:1:15;
 x5=[.37 .39 .45 .55 .71 .93 1.21 1.44 1.37 1.15 .85 .45 .3 .15 .15 .15];
 %plot(t6, x6)
-plot(t5, x5, t6, x6+.3,'LineWidth',3)
+plot(t5, x5,'LineWidth',3)
+hold on
+plot(t6, x6+.3,'-.','LineWidth',3)
 xlabel('Time')
 set(gca,'xtick',[])
 set(gca,'ytick',[])
