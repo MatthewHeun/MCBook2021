@@ -542,6 +542,8 @@ It remains for scientists, policy makers, and government officials to conduct
 research, make recommendations, regulate, and enforce laws.
 
 <<FootprintHDIGraph, fig.cap="Ecological footprint vs. HDI. Population is in millions.">>=
+# Figure out the viridis colours.
+clrs <- viridis::viridis(6)
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI.xlsx"),
                                   sheet = "data to plot") %>%
   dplyr::filter(`Country Name` != "World") %>% 
@@ -551,6 +553,7 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "HDI", y = "Ecological_Footprint_gha_per_person", 
                                                 colour = "Continent", alpha = "Continent", shape = "Continent", size = "Population")) + 
   ggplot2::geom_vline(xintercept = c(0.7, 0.8), size = 0.2) +
+  ggplot2::geom_hline(yintercept = 1.6, size = 0.2) +
   ggplot2::geom_point() + 
   ggplot2::scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, by = 0.2)) + 
   ggplot2::scale_y_continuous(limits = c(0, 16), breaks = seq(0, 16, by = 2)) + 
@@ -559,6 +562,10 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
                                          `North Am.` = 16, Oceania = 16, `South Am.` = 16)) +
   ggplot2::scale_alpha_manual(values = c(Africa = 0.5, Asia = 1, Europe = 0.5,
                                          `North Am.` = 0.5, Oceania = 0.5, `South Am.` = 0.5)) +
+  # ggplot2::scale_color_viridis_d() +
+  ggplot2::scale_colour_manual(values = c(Africa = clrs[[1]], Asia = clrs[[2]], Europe = clrs[[3]],
+                                         `North Am.` = clrs[[4]], Oceania = clrs[[5]],
+                                         `South Am.` = clrs[[5]])) +
   ggplot2::labs(x = "Human development index [-]", 
                 y = "Ecological footprint [gha/person]", 
                 size = "Pop. [millions]",
