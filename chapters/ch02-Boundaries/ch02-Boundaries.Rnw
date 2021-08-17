@@ -389,6 +389,24 @@ Adapted from \cite{Graedel:2010ab}.}
 % Here is another attempt at the figure, this time using ggplot. ---MKH
 %%%%%%%%%%%
 
+
+<<BroundaryGraphFunction>>=
+boundary_graph <- function(df) {
+  df %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "t")) +
+  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "development"), colour = mc_title_blue, size = 4) + 
+  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "bound"), colour = "red", size = 4, linetype = 6) + 
+  ggplot2::labs(x = "Time") +
+  MKHthemes::xy_theme() +
+  ggplot2::theme(axis.text.x = ggplot2::element_blank(),
+                 axis.ticks.x = ggplot2::element_blank(),
+                 axis.title.y = ggplot2::element_blank(),
+                 axis.text.y = ggplot2::element_blank(),
+                 axis.ticks.y = ggplot2::element_blank())
+}
+@
+
+
 \begin{figure}
      \centering
      \begin{subfigure}[b]{0.48\textwidth}
@@ -396,19 +414,10 @@ Adapted from \cite{Graedel:2010ab}.}
 <<DistantGrowingLimits>>=
 data.frame(t = seq(0, 2, by = 0.1)) %>% 
   dplyr::mutate(
-    y1 = exp(t), 
-    y2 = y1 + 4
+    development = exp(t), 
+    bound = development + 4
   ) %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "t")) +
-  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "y1"), colour = mc_title_blue, size = 2) + 
-  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "y2"), colour = "red", size = 2, linetype = 6) + 
-  MKHthemes::xy_theme() +
-  ggplot2::theme(axis.title.x = ggplot2::element_blank(),
-                 axis.text.x = ggplot2::element_blank(),
-                 axis.ticks.x = ggplot2::element_blank(),
-                 axis.title.y = ggplot2::element_blank(),
-                 axis.text.y = ggplot2::element_blank(),
-                 axis.ticks.y = ggplot2::element_blank())
+  boundary_graph()
 @
          \caption{$y=x$}
          \label{fig:y equals x}
@@ -416,7 +425,16 @@ data.frame(t = seq(0, 2, by = 0.1)) %>%
      \hfill
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{chapters/ch02-Boundaries/figures/GA2.pdf}
+<<ApproachStaticLimits>>=
+data.frame(t = seq(-3, 6, by = 0.1)) %>% 
+  dplyr::mutate(
+    # Logistic curve
+    development = 1 / (1 + exp(-t)), 
+    bound = 1.2
+  ) %>% 
+  boundary_graph() + 
+  ggplot2::ylim(NA, 1.5)
+@
          \caption{$y=3sinx$}
          \label{fig:three sin x}
      \end{subfigure}
