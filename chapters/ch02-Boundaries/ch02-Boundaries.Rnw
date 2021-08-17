@@ -394,8 +394,8 @@ Adapted from \cite{Graedel:2010ab}.}
 boundary_graph <- function(df) {
   df %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "t")) +
-  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "development"), colour = mc_title_blue, size = 4) + 
-  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "bound"), colour = "red", size = 4, linetype = 6) + 
+  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "development"), colour = mc_title_blue, size = 1.5) + 
+  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "bound"), colour = "red", size = 1.5, linetype = 6) + 
   ggplot2::labs(x = "Time") +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_blank(),
@@ -411,7 +411,7 @@ boundary_graph <- function(df) {
      \centering
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-<<DistantGrowingLimits>>=
+<<DistantGrowingLimits, fig.width=2.5, fig.height=2, fig.align="center">>=
 data.frame(t = seq(0, 2, by = 0.1)) %>% 
   dplyr::mutate(
     development = exp(t), 
@@ -425,7 +425,7 @@ data.frame(t = seq(0, 2, by = 0.1)) %>%
      \hfill
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-<<ApproachStaticLimits>>=
+<<ApproachStaticLimit, fig.width=2.5, fig.height=2, fig.align="center">>=
 data.frame(t = seq(-3, 6, by = 0.1)) %>% 
   dplyr::mutate(
     # Logistic curve
@@ -441,13 +441,33 @@ data.frame(t = seq(-3, 6, by = 0.1)) %>%
      \hfill
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{chapters/ch02-Boundaries/figures/GA3.pdf}
+<<Sinusoids, fig.width=2.5, fig.height=2, fig.align="center", warning=FALSE>>=
+data.frame(t = seq(0, 1.1*pi, by = 0.005*pi)) %>% 
+  dplyr::mutate(
+    # Sinusoids
+    development = exp(-t/2) * sin(2*pi*t), 
+    bound = 0.75 * exp(-t/2) * cos(2*pi*(t+0.2)) + 0.3
+  ) %>% 
+  boundary_graph() + 
+  ggplot2::xlim(0.75, NA)
+@
          \caption{$y=5/x$}
          \label{fig:five over x}
      \end{subfigure}
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{chapters/ch02-Boundaries/figures/GA4.pdf}
+<<ErodableBounds, fig.width=2.5, fig.height=2, fig.align="center", warning=FALSE>>=
+str <- 200
+data.frame(t = seq(-3, 4, by = 0.01)) %>% 
+  dplyr::mutate(
+    # Logistic curve
+    growth = exp(t), 
+    decay = exp(-t) - 0.5,
+    development = exp(t),
+    bound = 1 / (1 + exp(t)), 
+  ) %>% 
+  boundary_graph() 
+@
          \caption{$y=5/x$}
          \label{fig:five over x}
      \end{subfigure}
