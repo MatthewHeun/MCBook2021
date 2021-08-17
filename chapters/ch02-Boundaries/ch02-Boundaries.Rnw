@@ -354,6 +354,8 @@ doesn't mean there isn't a firm limit.
 % Adapted from \cite{Graedel:2010ab}.}
 % \label{fig:GAfig21}
 % \end{figure}
+
+%% This version has the advantage of having the labels (a, b, c, and d) centered beneath the subfigures.
 \begin{figure}
 \centering
 %\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/Limits.jpg}
