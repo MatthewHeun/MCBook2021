@@ -320,9 +320,7 @@ doesn't mean there isn't a firm limit.
   \caption{b}
   \label{fig:GA2}
 \end{subfigure}
-
-\newline
-
+\\
 \begin{subfigure}{.5\textwidth}
   \centering
   % include third image
