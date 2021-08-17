@@ -410,7 +410,7 @@ dplyr::inner_join(
     energy_per_GDP_MJ_per_dollar = energy_TWh * 3600000000 / world_gdp_2017_intl_dollars  # 3600000000 MJ / TWh
   ) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_GDP_MJ_per_dollar")) + 
-  ggplot2::geom_line(size = 1) + 
+  ggplot2::geom_line(size = 1, colour = mc_title_blue) + 
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = NULL,
                 y = expression(atop("Prim. energy intensity ("*I[p]*") [MJ/2017 Intl. $]"))) +

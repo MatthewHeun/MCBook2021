@@ -81,6 +81,11 @@ add_circ <- function(.plot, r, xc, yc, fill = NA, n_segs = 100){
 }
 @
 
+<<r_colours, echo = FALSE>>=
+# These color definitions come from the file morgan2.sty.
+mc_title_blue <- "#0d5e92"
+@
+
 
 %
 % Create environments for questions and projects, 
