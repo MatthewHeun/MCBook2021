@@ -305,36 +305,66 @@ Differences of opinion about what the exact limit or planetary boundary is
 doesn't mean there isn't a firm limit.
 \end{mcframe}
 
+% \begin{figure}
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   % include first image
+%   \includegraphics[width=.8\linewidth]{chapters/ch02-Boundaries/figures/GA1.pdf}  
+%   \caption{The boundary is increasing due to human activity and growth remains unimpeded.}
+%   \label{fig:GA1}
+% \end{subfigure}
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   % include second image
+%   \includegraphics[width=.8\linewidth]{chapters/ch02-Boundaries/figures/GA2.pdf}  
+%   \caption{The boundary is constant and growth is retarded as the boundary is approached.}
+%   \label{fig:GA2}
+% \end{subfigure}
+% \\
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   % include third image
+%   \includegraphics[width=.8\linewidth]{chapters/ch02-Boundaries/figures/GA3.pdf}  
+%   \caption{There is a 2-way interaction between growth and the boundary but the
+% boundary is robust.}
+%   \label{fig:GA3}
+% \end{subfigure}
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   % include fourth image
+%   \includegraphics[width=.8\linewidth]{chapters/ch02-Boundaries/figures/GA4.pdf}  
+%   \caption{Exceeding the boundary is possible and results in serious, dramatic, and
+% long-lasting reduction of the system's ability to provide ecosystem services.}
+%   \label{fig:GA4}
+% \end{subfigure}
+% \caption{Various relationships between biophysical bounds and human development.
+% The boundary or carrying capacity of the ecosystem is shown as a dash-dot red line.
+% A variable related to human development, such as population or food production is
+% shown in blue.
+% There are five possible patterns for human development relative to the ecosystem
+% boundaries. Human activities might be of a scale so small that the boundaries are
+% ``far away'' and exponential growth can proceed unimpeded, at least for a time.
+% Alternatively, as in (a), the boundary is increasing due to human activity and
+% growth remains unimpeded, as in Figure \ref{fig:exp}.
+% In (b), the boundary is constant and growth is retarded as the boundary is approached.
+% In (c), there is a 2-way interaction between growth and the boundary but the
+% boundary is robust.
+% In (d), exceeding the boundary is possible and results in serious, dramatic, and
+% long-lasting reduction of the system's ability to provide ecosystem services.
+% Adapted from \cite{Graedel:2010ab}.}
+% \label{fig:GAfig21}
+% \end{figure}
 \begin{figure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  % include first image
-  \includegraphics[width=.8\linewidth]{chapters/ch02-Boundaries/figures/GA1.pdf}  
-  \caption{a}
-  \label{fig:GA1}
-\end{subfigure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  % include second image
-  \includegraphics[width=.8\linewidth]{chapters/ch02-Boundaries/figures/GA2.pdf}  
-  \caption{b}
-  \label{fig:GA2}
-\end{subfigure}
-\\
-\begin{subfigure}{.5\textwidth}
-  \centering
-  % include third image
-  \includegraphics[width=.8\linewidth]{chapters/ch02-Boundaries/figures/GA3.pdf}  
-  \caption{c}
-  \label{fig:GA3}
-\end{subfigure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  % include fourth image
-  \includegraphics[width=.8\linewidth]{chapters/ch02-Boundaries/figures/GA4.pdf}  
-  \caption{d}
-  \label{fig:GA4}
-\end{subfigure}
+\centering
+%\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/Limits.jpg}
+\begin{tabular}{cc}
+\includegraphics{chapters/ch02-Boundaries/figures/GA1.pdf} & %[0.4\linewidth]
+\includegraphics{chapters/ch02-Boundaries/figures/GA2.pdf}\\
+(a) & (b) \\
+\includegraphics{chapters/ch02-Boundaries/figures/GA3.pdf} &
+\includegraphics{chapters/ch02-Boundaries/figures/GA4.pdf} \\
+(c) & (d)
+\end{tabular}
 \caption{Various relationships between biophysical bounds and human development.
 The boundary or carrying capacity of the ecosystem is shown as a dash-dot red line.
 A variable related to human development, such as population or food production is
@@ -352,100 +382,57 @@ long-lasting reduction of the system's ability to provide ecosystem services.
 Adapted from \cite{Graedel:2010ab}.}
 \label{fig:GAfig21}
 \end{figure}
+
+% %%%%%%%%%%%
+% % Here is another attempt at the figure. ---MKH
+% %%%%%%%%%%%
+% 
 % \begin{figure}
-% \centering
-% %\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/Limits.jpg}
-% \begin{tabular}{cc}
-% \includegraphics{chapters/ch02-Boundaries/figures/GA1.pdf} & %[0.4\linewidth]
-% \includegraphics{chapters/ch02-Boundaries/figures/GA2.pdf}\\
-% (a) & (b) \\
-% \includegraphics{chapters/ch02-Boundaries/figures/GA3.pdf} &
-% \includegraphics{chapters/ch02-Boundaries/figures/GA4.pdf} \\
-% (c) & (d)
-% \end{tabular}
-% \caption{Various relationships between biophysical bounds and human development.
-% The boundary or carrying capacity of the ecosystem is shown as a dash-dot red line. 
-% A variable related to human development, such as population or food production is
-% shown in blue. 
-% There are five possible patterns for human development relative to the ecosystem
-% boundaries. Human activities might be of a scale so small that the boundaries are
-% ``far away'' and exponential growth can proceed unimpeded, at least for a time.
-% Alternatively, as in (a), the boundary is increasing due to human activity and 
-% growth remains unimpeded, as in Figure \ref{fig:exp}. 
-% In (b), the boundary is constant and growth is retarded as the boundary is approached. 
-% In (c), there is a 2-way interaction between growth and the boundary but the 
-% boundary is robust. 
-% In (d), exceeding the boundary is possible and results in serious, dramatic, and
-% long-lasting reduction of the system's ability to provide ecosystem services.
-% Adapted from \cite{Graedel:2010ab}.}
-% \label{fig:GAfig21}
+%      \centering
+%      \begin{subfigure}[b]{0.48\textwidth}
+%          \centering
+%          \includegraphics[width=\textwidth]{chapters/ch02-Boundaries/figures/GA1.pdf}
+%          \caption{$y=x$}
+%          \label{fig:y equals x}
+%      \end{subfigure}
+%      \hfill
+%      \begin{subfigure}[b]{0.48\textwidth}
+%          \centering
+%          \includegraphics[width=\textwidth]{chapters/ch02-Boundaries/figures/GA2.pdf}
+%          \caption{$y=3sinx$}
+%          \label{fig:three sin x}
+%      \end{subfigure}
+%      \hfill
+%      \begin{subfigure}[b]{0.48\textwidth}
+%          \centering
+%          \includegraphics[width=\textwidth]{chapters/ch02-Boundaries/figures/GA3.pdf}
+%          \caption{$y=5/x$}
+%          \label{fig:five over x}
+%      \end{subfigure}
+%      \begin{subfigure}[b]{0.48\textwidth}
+%          \centering
+%          \includegraphics[width=\textwidth]{chapters/ch02-Boundaries/figures/GA4.pdf}
+%          \caption{$y=5/x$}
+%          \label{fig:five over x}
+%      \end{subfigure}
+%         \caption{Various relationships between biophysical bounds and human development.
+%                  The boundary or carrying capacity of the ecosystem is shown as a dash-dot red line. 
+%                  A variable related to human development, such as population or food production is
+%                  shown in blue. 
+%                  There are five possible patterns for human development relative to the ecosystem
+%                  boundaries. 
+%                  Human activities might be of a scale so small that the boundaries are
+%                  ``far away'' and exponential growth can proceed unimpeded, at least for a time.
+%                  Alternatively, as in (a), the boundary is increasing due to human activity and 
+%                  growth remains unimpeded, as in Figure \ref{fig:exp}. 
+%                  In (b), the boundary is constant and growth is retarded as the boundary is approached. 
+%                  In (c), there is a 2-way interaction between growth and the boundary but the 
+%                  boundary is robust. 
+%                  In (d), exceeding the boundary is possible and results in serious, dramatic, and
+%                  long-lasting reduction of the system's ability to provide ecosystem services.
+%                  Adapted from \cite{Graedel:2010ab}.}
+%         \label{fig:GAfig21}
 % \end{figure}
-
-
-
-
-
-
-
-
-%%%%%%%%%%%
-% Here is another attempt at the figure. ---MKH
-%%%%%%%%%%%
-
-\begin{figure}
-     \centering
-     \begin{subfigure}[b]{0.48\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{chapters/ch02-Boundaries/figures/GA1.pdf}
-         \caption{$y=x$}
-         \label{fig:y equals x}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.48\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{chapters/ch02-Boundaries/figures/GA2.pdf}
-         \caption{$y=3sinx$}
-         \label{fig:three sin x}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.48\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{chapters/ch02-Boundaries/figures/GA3.pdf}
-         \caption{$y=5/x$}
-         \label{fig:five over x}
-     \end{subfigure}
-     \begin{subfigure}[b]{0.48\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]{chapters/ch02-Boundaries/figures/GA4.pdf}
-         \caption{$y=5/x$}
-         \label{fig:five over x}
-     \end{subfigure}
-        \caption{Various relationships between biophysical bounds and human development.
-                 The boundary or carrying capacity of the ecosystem is shown as a dash-dot red line. 
-                 A variable related to human development, such as population or food production is
-                 shown in blue. 
-                 There are five possible patterns for human development relative to the ecosystem
-                 boundaries. 
-                 Human activities might be of a scale so small that the boundaries are
-                 ``far away'' and exponential growth can proceed unimpeded, at least for a time.
-                 Alternatively, as in (a), the boundary is increasing due to human activity and 
-                 growth remains unimpeded, as in Figure \ref{fig:exp}. 
-                 In (b), the boundary is constant and growth is retarded as the boundary is approached. 
-                 In (c), there is a 2-way interaction between growth and the boundary but the 
-                 boundary is robust. 
-                 In (d), exceeding the boundary is possible and results in serious, dramatic, and
-                 long-lasting reduction of the system's ability to provide ecosystem services.
-                 Adapted from \cite{Graedel:2010ab}.}
-        \label{fig:GAfig21}
-\end{figure}
-
-
-
-
-
-
-
-
 
 Figure \ref{fig:GAfig21} is a conceptual representation of the relationship between
 limits or boundaries and human effects on the environment. In part A, there is no 
