@@ -20,12 +20,14 @@
 % 
 
 \usepackage{booktabs}    % For awesome table formatting
+\usepackage{caption}     % Necessary for the subcaption package?
 \usepackage{epigraph}    % For epigraphs below chapter titles.
 \usepackage{eurosym}     % For the EU currency symbol.
 \usepackage{gensymb}     % For the \degree command
 \usepackage{microtype}   % For (more) beautiful typesetting.
 \usepackage{rotating}    % For rotating figures.
 \usepackage[normalem]{ulem} % For strikethrough text.
+\usepackage{subcaption}  % For labeling subfigures.
 \usepackage{wrapfig}     % To wrap text around figures.
 \usepackage{xcolor}      % makes colored text.
 

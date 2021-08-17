@@ -420,7 +420,7 @@ In the continuous case, the amount in until the next doubling (B) is always
 equal to the sum of all previous amounts (A).
 
 Population (P) and affluence (A) in Equation \ref{eq:IPARC} have been growing
-exponentially. Chapter \ref{ch:population} gives us some hope that population
+exponentially. Chapter \ref{chap:population} gives us some hope that population
 won't keep growing exponentially. However, world economies are \emph{actively managed} 
 to have a constant growth rates (say a target of 3\% GDP growth per year).
 The implication for sustainability is that the resources – for instance, the energy –
@@ -430,6 +430,7 @@ Because of this exponential growth, resource use goes to infinity on a finite pl
 Humanity is not on a sustainable path.
 
 \section{Energy is the master resource}
+\label{sec:masterE}
 Energy is the ultimate or master resource. 
 Obtaining and using any other resource requires energy. 
 Collecting firewood to heat houses requires energy. 
