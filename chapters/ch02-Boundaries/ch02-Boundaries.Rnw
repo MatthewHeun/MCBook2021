@@ -457,15 +457,15 @@ data.frame(t = seq(0, 1.1*pi, by = 0.005*pi)) %>%
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
 <<ErodableBounds, fig.width=2.5, fig.height=2, fig.align="center", warning=FALSE>>=
-str <- 200
 data.frame(t = seq(-3, 4, by = 0.01)) %>% 
   dplyr::mutate(
     # Logistic curve
-    growth = exp(t), 
-    decay = exp(-t) - 0.5,
-    development = exp(t),
-    bound = 1 / (1 + exp(t)), 
-  ) %>% 
+    development = dplyr::case_when(
+      t < 0 ~ exp(t), 
+      TRUE ~ -0.2
+    ),
+    bound = 1 / (1 + exp(t))
+    ) %>% 
   boundary_graph() 
 @
          \caption{$y=5/x$}
