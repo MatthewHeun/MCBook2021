@@ -308,7 +308,8 @@ is an important aspect of sustainability.
 
 That said, it is important to note limits to substitutability.
 At a manufacturing plant, the type of electricity 
-(coal electricity or solar electricity) is immaterial, 
+(coal electricity\index{electricity!coal} or solar electricity\index{electricity!solar}) 
+is immaterial, 
 so long as both options are (for the U.S.) 120 V at 60 Hz.
 However, at the power station, 
 the different sources of electricity are \emph{not} substitute.
@@ -343,7 +344,7 @@ A solar panel converts solar energy (from the sun)
 to electricity (for use in many devices, including, possibly hair dryers).
 
 Because energy is the ultimate resource,\index{energy!as ultimate resource} 
-we use energy as the prime example in the modified Kaya identity.
+we use energy as the prime example in the IPARC equation (Equation~\ref{eq:IPARC}).
 There are two important questions: 
 where are we using energy, and 
 are we using energy sustainably?
@@ -403,6 +404,64 @@ primary_energy %>%
                 fill = NULL) +
   MKHthemes::xy_theme()
 @
+
+The increasing consumption of primary energy supports, in part, greater population,
+as shown in Figure~\ref{fig:PopulationGraph}.
+However, on a per-capita basis,
+energy consumption has grown substantially over the last two centuries
+(Figure~\ref{fig:EnergyPerPersonGraph}).
+
+<<EnergyPerPersonGraph, fig.cap="World primary energy consumption per person, $A \\times C$ in the IPARC equation (Equation \\ref{eq:IPARC}) for the prime example of energy. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times C$ in the IPARC equation.">>=
+
+# Find which years have data from the Europe data set
+which_years <- region_pop %>%
+dplyr::filter(Country == "Europe") %>%
+ magrittr::extract2("Year") %>%
+   unique()
+ region_pop %>%
+   dplyr::filter(Country != "World", Year >= 1800, Year %in% which_years) %>%
+   dplyr::mutate(
+     Code = NULL,
+     total_population = NULL
+   ) %>%
+   dplyr::group_by(Year) %>%
+   dplyr::summarise(
+     total_population_billions = sum(total_population_billions)
+   ) %>%
+   dplyr::full_join(primary_energy %>%
+                      dplyr::mutate(energy_TWh = NULL) %>%
+                      dplyr::group_by(Year) %>%
+                      dplyr::summarize(
+                        energy_EJ = sum(energy_EJ),
+                        ), by = "Year") %>%
+   dplyr::filter(complete.cases(.)) %>%
+   dplyr::mutate(
+     energy_per_person_GJpercap = energy_EJ / total_population_billions
+   ) %>%
+   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_person_GJpercap")) +
+   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+
+   ggplot2::scale_y_continuous(limits = c(0, 80)) +
+   ggplot2::labs(x = NULL, y = "Primary energy per capita [GJ/person-year]") +
+
+   MKHthemes::xy_theme()
+ @
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The effect of the 1970s oil crises can be seen in Figure~\ref{fig:EnergyPerPersonGraph}.
+Per-capita primary energy consumption rose substantially from 1800 to 1970
+with the adoption of fossil fuels worldwide.
+Since the oil crises, efficiency and substitution 
+slowed the growth of per-capita energy consumption. 
+China's entrance into the World Trade Organization in late 2001 led
+to a noticeable rise in per-capita energy consumption.
+
+\end{mcframe}
+
+
 
 By the strong sustainability criterion of consuming resources at a rate 
 beneath their regeneration rate, 
@@ -519,7 +578,8 @@ dplyr::inner_join(
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that
 the primary energy intensity of the world economy has fallen from 
 15 to 4 MJ/2017 international dollar across the last two centuries. 
-The decline is caused by the fact that the world economy's GDP (Figure~\ref{fig:GDPGraph-Nordhaus}) 
+The decline is caused by the fact that the world economy's GDP 
+(Figure~\ref{fig:GDPGraph-Nordhaus}) 
 has been growing at a faster rate (in \%/year terms) than primary energy consumption 
 (Figure~\ref{fig:PrimaryEnergyGraph}).
 
@@ -536,42 +596,6 @@ are growing faster than energy intensity of the economy is declining.
 **** One way to decrease resource intensity is transition to service economy.
 But that is an example of problem shifting. ****
 
-
-<<EnergyPerPersonGraph, fig.cap="Primary energy consumption per person, $A \\times C$ in the IPARC equation (Equation \\ref{eq:IPARC}) for the prime example of energy. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}.">>=
-
-# Find which years have data from the Europe data set
-which_years <- region_pop %>%
-dplyr::filter(Country == "Europe") %>%
- magrittr::extract2("Year") %>%
-   unique()
- region_pop %>%
-   dplyr::filter(Country != "World", Year >= 1800, Year %in% which_years) %>%
-   dplyr::mutate(
-     Code = NULL,
-     total_population = NULL
-   ) %>%
-   dplyr::group_by(Year) %>%
-   dplyr::summarise(
-     total_population_billions = sum(total_population_billions)
-   ) %>%
-   dplyr::full_join(primary_energy %>%
-                      dplyr::mutate(energy_TWh = NULL) %>%
-                      dplyr::group_by(Year) %>%
-                      dplyr::summarize(
-                        energy_EJ = sum(energy_EJ),
-                        ), by = "Year") %>%
-   dplyr::filter(complete.cases(.)) %>%
-   dplyr::mutate(
-     energy_per_person_GJpercap = energy_EJ / total_population_billions
-   ) %>%
-   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_person_GJpercap")) +
-   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
-
-   ggplot2::scale_y_continuous(limits = c(0, 80)) +
-   ggplot2::labs(x = NULL, y = expression("Primary energy per capita (" * A %*% C * ") [GJ/person-year]")) +
-
-   MKHthemes::xy_theme()
- @
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
