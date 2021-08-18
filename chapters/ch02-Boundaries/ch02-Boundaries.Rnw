@@ -396,7 +396,7 @@ boundary_graph <- function(df) {
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "t")) +
   ggplot2::geom_line(mapping = ggplot2::aes_string(y = "development"), colour = mc_title_blue, size = 1.5) + 
   ggplot2::geom_line(mapping = ggplot2::aes_string(y = "bound"), colour = "red", size = 1.5, linetype = 6) + 
-  ggplot2::labs(x = "Time") +
+  ggplot2::labs(x = "time") +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_blank(),
                  axis.ticks.x = ggplot2::element_blank(),
@@ -461,8 +461,9 @@ data.frame(t = seq(-3, 4, by = 0.01)) %>%
   dplyr::mutate(
     # Logistic curve
     development = dplyr::case_when(
-      t < 0 ~ exp(t), 
-      TRUE ~ -0.2
+      t < -0.2 ~ exp(t), 
+      t >= -0.2 & t < 0.5 ~ 0.82,
+      TRUE ~ -0.05
     ),
     bound = 1 / (1 + exp(t))
     ) %>% 
