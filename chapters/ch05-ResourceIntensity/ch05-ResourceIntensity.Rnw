@@ -460,26 +460,38 @@ are growing faster than energy intensity of the economy is declining.
 **** One way to decrease resource intensity is transition to service economy.
 But that is an example of problem shifting. ****
 
-**** Make a graph of MJ/person vs.\ time ****
 
 <<EnergyPerPerson>>=
-population %>%
-  dplyr::filter(Country == "World") %>% 
+# Find which years have data from the Europe data set
+which_years <- region_pop %>% 
+  dplyr::filter(Country == "Europe") %>% 
+  magrittr::extract2("Year") %>% 
+  unique()
+region_pop %>% 
+  dplyr::filter(Country != "World", Year >= 1800, Year %in% which_years) %>% 
+  dplyr::mutate(
+    Code = NULL, 
+    total_population = NULL
+  ) %>% 
+  dplyr::group_by(Year) %>% 
+  dplyr::summarise(
+    total_population_billions = sum(total_population_billions)
+  ) %>% 
   dplyr::full_join(primary_energy %>% 
+                     dplyr::mutate(energy_TWh = NULL) %>% 
                      dplyr::group_by(Year) %>% 
                      dplyr::summarize(
-                       energy_TWh = sum(energy_TWh),
                        energy_EJ = sum(energy_EJ),
                        ), by = "Year") %>% 
+  dplyr::filter(complete.cases(.)) %>% 
   dplyr::mutate(
-    energy_per_person = energy_EJ / total_population
+    energy_per_person_GJpercap = energy_EJ / total_population_billions
   ) %>% 
-  dplyr::filter(stats::complete.cases(.)) %>%
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_person")) +
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_person_GJpercap")) +
   ggplot2::geom_line(size = 1, colour = mc_title_blue) + 
   
-  # ggplot2::labs(x = NULL, y = expression("Primary energy per capita (A"* %*% *"C) [EJ/person-year]") +
-  ggplot2::labs(x = NULL, y = expression(A %*% C)) +
+  ggplot2::scale_y_continuous(limits = c(0, 80)) +
+  ggplot2::labs(x = NULL, y = expression("Primary energy per capita (" * A %*% C * ") [GJ/person-year]")) +
   
   MKHthemes::xy_theme()
   
