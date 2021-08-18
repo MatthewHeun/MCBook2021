@@ -17,9 +17,13 @@ transport us. \ldots
 Without abundant resources, prosperity is out of reach.}
 {Gifford Pinchot}
 
-**** Look at Chapter 2 introduction. Add here. ****
-
-**** Remind that energy is the prime resource. ****
+Previous chapters addressed the sustainability implications of 
+economic affluence, the $A$ term in the IPARC equation (Equation~\ref{eq:IPARC}). 
+Because the economy is society's metabolism, economic growth and increasing affluence
+mean that more resources are required to fuel that growth. 
+This chapter explores the sustainability implications of resource extraction and consumption, 
+the $R$ term in the IPARC equation. 
+This chapter discusses several resources, focusing on energy as the prime example. 
 
 Whether we are aware of it or not, 
 all plant, animal, and human life on Earth depends on natural resources for survival.
@@ -29,8 +33,25 @@ Without timber to build homes?
 Without healthy soil to grow food?
 Without oceans and atmosphere to accept wastes?
 Without coal, oil, and methane to make electricity, gasoline, and natural gas?
+Nowhere.
 
-**** Example:  getting a haircut? ****
+Clearly, the manufacturing sector of the economy requires resources to function.
+Raw materials (such as copper and minerals) are required to make
+finished goods (such as sewing machines and radios).
+But even the service sector needs resources.
+Consider the simple example of a haircut.
+The stylist arrives at the salon in an automobile
+(which requires iron ore, copper, and other natural resources to manufacture; 
+refined liquid fuel to operate; and 
+an atmosphere to absorb CO$_2$ and water, the products of combustion)
+and uses an electric clippers and hairdryer during each appointment
+(which require both natural resources to manufacture and electricity to operate).
+You sit in a fancy chair 
+(which contains metals and plastics) and
+drive to and from the appointment
+(on roads made of tar or cement).
+There is no escaping the dependence on resources to run an economy, 
+even the service sector. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -144,14 +165,15 @@ shows the same data on a per-capita basis.
 Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use} 
 show that resource consumption is growing at an ever-increasing rate.
 But is that rate sustainable?
-By any ``strong sustainability'' criterion, extraction of
+By the ``strong sustainability'' criterion, 
+\emph{any} extraction of
 Construction minerals, Ores and industrial minerals, and Fossil energy carriers
-is unsustainable. 
-Extraction of Biomass can be sustainable if 
-the extraction rate is less than the regeneration rate.
-
-
-**** Say that we can't keep increasing our rate of use and our rate of per capita use. That's not sustsinabilty. ****
+is unsustainable, because these materials do not regenerate on human timescales.
+The fact that we are \emph{increasing} our rate of material extraction 
+means that we are running well afoul of strong sustainability.
+On the other hand, 
+extraction of Biomass \emph{can} be sustainable if 
+the extraction rate is less than the growth rate.
 
 
 %++++++++++++++++++++++++++++++
@@ -439,6 +461,31 @@ are growing faster than energy intensity of the economy is declining.
 But that is an example of problem shifting. ****
 
 **** Make a graph of MJ/person vs.\ time ****
+
+<<EnergyPerPerson>>=
+population %>%
+  dplyr::filter(Country == "World") %>% 
+  dplyr::full_join(primary_energy %>% 
+                     dplyr::group_by(Year) %>% 
+                     dplyr::summarize(
+                       energy_TWh = sum(energy_TWh),
+                       energy_EJ = sum(energy_EJ),
+                       ), by = "Year") %>% 
+  dplyr::mutate(
+    energy_per_person = energy_EJ / total_population
+  ) %>% 
+  dplyr::filter(stats::complete.cases(.)) %>%
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_person")) +
+  ggplot2::geom_line(size = 1, colour = mc_title_blue) + 
+  
+  # ggplot2::labs(x = NULL, y = expression("Primary energy per capita (A"* %*% *"C) [EJ/person-year]") +
+  ggplot2::labs(x = NULL, y = expression(A %*% C)) +
+  
+  MKHthemes::xy_theme()
+  
+  
+
+@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
