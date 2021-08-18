@@ -245,10 +245,11 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Recycling}
+\section{Recycling and substitution}
 \label{sec:recycling}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Two ways to become more sustaianble are recycling and substitution.
 Recycling\index{recycling} is a way to extend the usable life
 of natural resources and 
 reduce rates of resource extraction.
@@ -287,6 +288,34 @@ of a debate about the viability of recycling!
 
 \end{mcframe}
 
+Substitution is the process of replacing 
+consumption of non-renewable resources 
+by consumption of renewable resources. 
+Substitution is possible when the two resources in question
+are identical or nearly identical.
+Examples of substitution in manufacturing processes include:
+use of injection-molded plastics instead of coated steel for automobile interior parts
+and
+use of renewable electricity instead of coal electricity.
+
+Recalling one aspect of Herman Daly's definition of sustainability
+(``Nonrenewable resources, such as minerals and fossil fuels, must be used no faster
+than renewable substitutes for them can be put into place.''), 
+we see that switching
+from consuming non-renewable resources 
+to consuming renewable resources
+is an important aspect of sustainability.
+
+That said, it is important to note limits to substitutability.
+At a manufacturing plant, the type of electricity 
+(coal electricity or solar electricity) is immaterial, 
+so long as both options are (for the U.S.) 120 V at 60 Hz.
+However, at the power station, 
+the different sources of electricity are \emph{not} substitute.
+Coal-fired Rankine cycle\index{Rankine cycle} power plants
+cannot use the sun's energy to make electricity. 
+Similarly, a pile of coal is useless 
+to a solar photovoltaic\index{solar photovoltaic electricity} farm.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
