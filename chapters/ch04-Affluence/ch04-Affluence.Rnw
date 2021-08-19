@@ -32,18 +32,19 @@ it takes a serious look at its lifestyle.}{Pope John Paul II}
 %16 Subjective theory of value.
 %17 every chapter should ask 'where are opportunities for reduced impact?"
 
-Equation \ref{eq:IPARC} is our framework for considering sustainability.
+Equation \ref{eq:IPARC} is our conceptual framework for considering sustainability.
 Chapter \ref{chap:planetary_boundaries} discussed planetary boundaries and the impact
 of human activities on those boundaries, that is, the left-hand side of Equation \ref{eq:IPARC}.
 Chapter \ref{chap:population} is about the first term on the right-hand side of 
 Equation \ref{eq:IPARC}, world population and its dynamics.
-This chapter examines the second term on the right-hand side of Equation \ref{eq:IPARC}.
-Subsequent chapters, namely Chapters \ref{chap:resource_intensity}-\ref{chap:carbon_intensity}, 
+This chapter examines the second term on the right-hand side of Equation \ref{eq:IPARC},
+affluence, which is wealth or consumption per capita.
+Chapters \ref{chap:resource_intensity}-\ref{chap:carbon_intensity}, 
 finish the development of our framework for stability.
 
-The job of this chapter is to explore the meaning of, and issues with, the term \emph{affluence}.
-The common meaning of affluence is "wealth" or "riches" but here we use it with 
-reference to specific countries or globally to be \emph{per person}.
+% This chapter explores the meaning of, and issues with, the term \emph{affluence}.
+% The common meaning of affluence is "wealth" or "riches" but here we use it with 
+% reference to specific countries or globally to be \emph{per person}.
 
 \section{Microeconomics}
 The word wealth can include happiness, propserity, well being, welfare, but mostly it 
@@ -90,7 +91,7 @@ Affluence is \emph{measured} by gross domestic product (GDP) per capita.
 There are many critiques as to why per capita GDP is not the \emph{best possible}
 measure of affluence, and those critiques are valid. 
 For instance, GDP doesn't count (or under counts) the value
-of innovation in improving standards of living. Many new metrics (see Section \ref{sec:indices}
+of innovation in improving standards of living. Many new metrics (see Section \ref{sec:indices})
 have been proposed as replacements or improvements for GDP. Some examples are green GDP, the index
 of sustainable economic welfare, and the genuine progress indicator. However, each
 of these suffers from its own limitations.%, philosophical, methodological, and practical.
@@ -98,7 +99,7 @@ The biggest limitation is standardization and availability of data. Frankly, GDP
 is what we have and what "everyone" uses. It's the standard. So, for now, we'll use it.
 % put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
 Consistent and easily-accessible GDP data can allow us to make observations
-about trends, which are \emph{qualitatively} consistent with trends we'd observe
+about trends, which are \emph{qualitatively} consistent with trends we would observe
 using other indices, bearing in mind the limitations of what GDP measures and what it doesn't.
 
 Figures \ref{fig:AffluenceGraph-Nordhaus} and \ref{fig:GDPGraph-Nordhaus} show 
@@ -320,6 +321,8 @@ are used up (sources) and emissions (sinks).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Robert J. Gordon, \emph{The rise and fall of American growth:The US standard of
+living since the Civil War}, Princeton University Press, 2016.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
@@ -343,10 +346,8 @@ are used up (sources) and emissions (sinks).
 
 \begin{projects}
 
-\item Choose a material from the European Commission list of critical raw materials.
-      Evaluate whether current consumption rates meet the sustainability criterion of Graedel and Allenby.
-      Evaluate whether current consumption rates meet the strong sustainability criterion.
-      Provide suggestions for ways to bring consumption rates closer to strong sustainability.
+\item Prepare a report that compares and contrasts several measures of affluence,
+      economic progress, standard of living and/or economic development.
       
 \end{projects}
 
