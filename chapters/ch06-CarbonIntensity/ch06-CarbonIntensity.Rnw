@@ -108,12 +108,15 @@ emissions from the Residential and Commercial sectors.
 <<US-Carbon-Table, results="asis">>=
 US_CO2_by_sector <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "US-Carbon-Emissions.xlsx"),
                                        sheet = "data to plot") %>%
-  dplyr::select(-`CO2 share`) %>%
+  dplyr::mutate(
+    `CO2 share` = `CO2 share` * 100 # To put in % terms.
+  ) %>% 
   dplyr::rename(
-    `CO$_2$ emissions [Mt]` = `CO2 emissions allocated [tonnes]`
+    `CO$_2$ emissions [Mt]` = `CO2 emissions allocated [tonnes]`,
+    `Proportion [\\%]` = `CO2 share`
   )
 
-print(xtable::xtable(US_CO2_by_sector, digits = 0,
+print(xtable::xtable(US_CO2_by_sector, digits = c(0, 0, 0, 1),
                      caption = "U.S.\ CO$_2$ emissions 2018 by sector with
                      CO$_2$ emissions from electricity generation attributed to
                      end uses by
