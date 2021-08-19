@@ -3,6 +3,38 @@
 
 
 
+@article{Georgescu-Roegen:1986aa,
+	author = {Nicholas Georgescu-Roegen},
+	date-added = {2021-08-18 15:42:04 -0400},
+	date-modified = {2021-08-18 15:43:27 -0400},
+	journal = {Eastern Economic Journal},
+	number = {1},
+	pages = {3-25},
+	rating = {0},
+	read = {Yes},
+	title = {The entropy law and the economic process in retrospect},
+	url = {https://www.jstor.org/stable/40357380},
+	volume = {12},
+	year = {1986},
+	Bdsk-Url-1 = {http://www.jstor.org/stable/10.2307/40357380}}
+
+@article{Ayres:1999,
+	author = {Robert U. Ayres},
+	date-added = {2021-08-18 15:27:58 -0400},
+	date-modified = {2021-08-18 15:27:58 -0400},
+	journal = {Ecological Economics},
+	pages = {473--483},
+	title = {The second law, the fourth law, recycling, and limits to growth},
+	volume = {29},
+	year = {1999}}
+
+@misc{Global-Footprint-Network:ut,
+	author = {{Global Footprint Network}},
+	date-added = {2021-08-17 17:04:15 -0400},
+	date-modified = {2021-08-17 17:12:04 -0400},
+	howpublished = {\url{https://data.footprintnetwork.org}. Accessed 17 August 2021},
+	title = {Sustainable Development}}
+
 @inproceedings{Heun:2008vu,
 	address = {Pittsburgh, Pennsylvania},
 	author = {Heun, Matthew Kuperus and VanderLeest, Steven},
@@ -1151,18 +1183,34 @@
 	volume = {63},
 	year = {2009}}
 
-@Article{Ferruccio2016,
-  author   = {Ferruccio Ferroni and Robert J. Hopkirk},
-  journal  = {Energy Policy},
-  title    = {Energy Return on Energy Invested (ERoEI) for photovoltaic solar systems in regions of moderate insolation},
-  year     = {2016},
-  issn     = {0301-4215},
-  pages    = {336-344},
-  volume   = {94},
-  abstract = {Many people believe renewable energy sources to be capable of substituting fossil or nuclear energy. However there exist very few scientifically sound studies, which apply due diligence to substantiating this impression. In the present paper, the case of photovoltaic power sources in regions of moderate insolation is analysed critically by using the concept of Energy Return on Energy Invested (ERoEI, also called EROI). But the methodology for calculating the ERoEI differs greatly from author-to-author. The main differences between solar PV Systems are between the current ERoEI and what is called the extended ERoEI (ERoEI EXT). The current methodology recommended by the International Energy Agency is not strictly applicable for comparing photovoltaic (PV) power generation with other systems. The main reasons are due to the fact that on one hand, solar electricity is very material-intensive, labour-intensive and capital-intensive and on the other hand the solar radiation exhibits a rather low power density.},
-  doi      = {https://doi.org/10.1016/j.enpol.2016.03.034},
-  keywords = {EROI, ERoEI, Photovoltaic energy, Insolation levels, Switzerland, Germany},
-  url      = {https://www.sciencedirect.com/science/article/pii/S0301421516301379},
+@article{Ferruccio2016,
+	abstract = {Many people believe renewable energy sources to be capable of substituting fossil or nuclear energy. However there exist very few scientifically sound studies, which apply due diligence to substantiating this impression. In the present paper, the case of photovoltaic power sources in regions of moderate insolation is analysed critically by using the concept of Energy Return on Energy Invested (ERoEI, also called EROI). But the methodology for calculating the ERoEI differs greatly from author-to-author. The main differences between solar PV Systems are between the current ERoEI and what is called the extended ERoEI (ERoEI EXT). The current methodology recommended by the International Energy Agency is not strictly applicable for comparing photovoltaic (PV) power generation with other systems. The main reasons are due to the fact that on one hand, solar electricity is very material-intensive, labour-intensive and capital-intensive and on the other hand the solar radiation exhibits a rather low power density.},
+	author = {Ferruccio Ferroni and Robert J. Hopkirk},
+	doi = {https://doi.org/10.1016/j.enpol.2016.03.034},
+	issn = {0301-4215},
+	journal = {Energy Policy},
+	keywords = {EROI, ERoEI, Photovoltaic energy, Insolation levels, Switzerland, Germany},
+	pages = {336-344},
+	title = {Energy Return on Energy Invested (ERoEI) for photovoltaic solar systems in regions of moderate insolation},
+	url = {https://www.sciencedirect.com/science/article/pii/S0301421516301379},
+	volume = {94},
+	year = {2016},
+	Bdsk-Url-1 = {https://www.sciencedirect.com/science/article/pii/S0301421516301379},
+	Bdsk-Url-2 = {https://doi.org/10.1016/j.enpol.2016.03.034}}
+
+@Article{Donlan2005,
+  author   = {Donlan, Josh},
+  journal  = {Nature},
+  title    = {Re-wilding North America},
+  year     = {2005},
+  issn     = {1476-4687},
+  number   = {7053},
+  pages    = {913--914},
+  volume   = {436},
+  abstract = {A plan to restore animals that disappeared 13,000 years ago from Pleistocene North America offers an alternative conservation strategy for the twenty-first century, argue Josh Donlan and colleagues.},
+  doi      = {10.1038/436913a},
+  refid    = {Donlan2005},
+  url      = {https://doi.org/10.1038/436913a},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
