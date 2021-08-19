@@ -170,7 +170,7 @@ the carbon intensity of energy rose.
 
 
 <<CarbonIntensityGraph, fig.cap="Carbon intensity of energy, $C$ in the IPARC identity. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
-dplyr::inner_join(
+carbon_intensity <- dplyr::inner_join(
   CO2_emissions,
   primary_energy %>%
     dplyr::group_by(Year) %>%
@@ -179,7 +179,8 @@ dplyr::inner_join(
 ) %>%
   dplyr::mutate(
     CO2_intensity_Mt_per_EJ = CO2_emissions_tonnes / 1e6 / energy_EJ,
-  ) %>%
+  ) 
+carbon_intensity %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_intensity_Mt_per_EJ")) +
   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
   ggplot2::labs(x = NULL,
@@ -304,6 +305,94 @@ Nuclear: 2, 3, 4 gen reactors. 1970s technology. Investment for the future.
 Lock the carbon in a stable form (Graphene) Project? ****
 
 Tie to back IPARC equation here.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Revisiting the IPARC identity}
+\label{sec:revisit_IPARC}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Chapters~\ref{chap:planetary_boundaries}--\ref{chap:carbon_intensity}
+show the evolution of all terms in the IPARC identity (Equation~\ref{eq:IPARC})
+over the period 1800--today
+for the prime example of energy and CO$_2$ emissions.
+It is instructive to see how the righ-side terms ($P$, $A$, $R$, and $C$) 
+compare to each other.
+To do so, we introduce a rate version of the IPARC equation.
+
+In the rate version of the IPARC equation, each term is represented 
+by a rate of change ($r$), measured in \%/year.
+The rate version of the IPARC equation indicates 
+which terms are headed in a sustainable direction ($r < 0$) and
+which terms are headed in an unsustainable direction ($r > 0$).
+
+\begin{equation} \label{eq:IPARC_rate}
+  r_I = r_P + r_A + r_R + r_C
+\end{equation}
+
+The data in Figures~\ref{fig:PopulationGraph}, 
+\ref{fig:AffluenceGraph-Nordhaus}, 
+\ref{fig:EnergyIntensityGraph-Nordhaus}, 
+and~\ref{fig:CarbonIntensityGraph} can be evaluated
+to answer the question, 
+``what equivalent annual rate of change ($r$) 
+would give the same starting and end points
+in 1800 and 2018?''
+The answer is shown in Equation~\ref{eq:IPARC_rate_with_numbers}
+
+
+<<RatesOfChange>>=
+rate_func <- function(df) {
+  # Each df has structure
+  # t1   y1
+  # t2   y2
+  yrs <- df[[2,1]] - df[[1,1]]
+  # r = (y2/y1)^(1/t2-t1) - 1
+  (df[[2,2]]/df[[1,2]])^(1/yrs) - 1
+}
+impact <- CO2_emissions %>%
+  dplyr::filter(Year %in% c(1800, 2019)) %>%
+  dplyr::select(-Country)
+population <- region_pop %>%
+  dplyr::filter(Year %in% c(1800, 2019) & Country == "World") %>%
+  dplyr::select(Year, total_population)
+affluence <- world_gdppc_Nordhaus %>%
+  dplyr::filter(Year %in% c(1800, 2019))
+resource_intensity <- energy_intensity %>%
+  dplyr::filter(Year %in% c(1800, 2019)) %>%
+  dplyr::select(Year, energy_per_GDP_MJ_per_dollar)
+carbon_intensity_of_resources <- carbon_intensity %>%
+  dplyr::filter(Year %in% c(1800, 2019)) %>%
+  dplyr::select(Year, CO2_intensity_Mt_per_EJ)
+
+r_I <- rate_func(impact)
+r_P <- rate_func(population)
+r_A <- rate_func(affluence)
+r_R <- rate_func(resource_intensity)
+r_C <- rate_func(carbon_intensity_of_resources)
+
+# r_I_check should be same as r_I
+r_I_check <- r_P + r_A + r_R + r_C
+
+stopifnot(abs(r_I_check - r_I) < 0.001)
+@
+
+
+\begin{equation}
+\label{eq:IPARC}
+\small
+\begin{tabular}{ccccccccc}
+$r_I$    & = & $r_P$        & $+$ & $r_A$       & $+$ & $r_R$      & $+$ & $r_C$ \\
+\Sexpr{r_I} & &             &     &             &     &            &     &       \\
+\end{tabular}
+\normalsize
+\end{equation}
+
+
+% $r_I$       & $=$ & $r_P$       & $+$ & $r_A$       & $+$ & $r_R$       & $+$ & $r_C$ 
+% \Sexpr{r_I} & = & \Sexpr{r_P} & + & \Sexpr{r_A} & + & \Sexpr{r_R} & + & \Sexpr{R_C} \\
+
 
 
 

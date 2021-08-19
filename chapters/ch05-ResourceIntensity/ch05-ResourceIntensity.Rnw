@@ -551,7 +551,7 @@ The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 
 <<EnergyIntensityGraph-Nordhaus, fig.cap="Primary energy intensity of economic activity, the prime example for $R$ in the IPARC identity, Equation~\\ref{eq:IPARC}. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 # Create data for the energy intensity of the economy.
-dplyr::inner_join(
+energy_intensity <- dplyr::inner_join(
   # Get the primary energy data
   primary_energy %>% 
     dplyr::group_by(Year) %>% 
@@ -563,7 +563,8 @@ dplyr::inner_join(
 ) %>% 
   dplyr::mutate(
     energy_per_GDP_MJ_per_dollar = energy_TWh * 3600000000 / world_gdp_2017_intl_dollars  # 3600000000 MJ / TWh
-  ) %>% 
+  ) 
+energy_intensity %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_GDP_MJ_per_dollar")) + 
   ggplot2::geom_line(size = 1, colour = mc_title_blue) + 
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
