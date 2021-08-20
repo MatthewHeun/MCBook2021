@@ -38,7 +38,7 @@ of human activities on those boundaries, that is, the left-hand side of Equation
 Chapter \ref{chap:population} is about the first term on the right-hand side of 
 Equation \ref{eq:IPARC}, world population and its dynamics.
 This chapter examines the second term on the right-hand side of Equation \ref{eq:IPARC},
-affluence, which is wealth or consumption per capita.
+affluence, and the role of human economic activity in sustainability challenges.
 Chapters \ref{chap:resource_intensity}-\ref{chap:carbon_intensity}, 
 finish the development of our framework for stability.
 
@@ -49,42 +49,50 @@ finish the development of our framework for stability.
 \section{Microeconomics}
 The word wealth can include happiness, propserity, well being, welfare, but mostly it 
 means the \emph{amount} of goods, possessions, money, property, or stuff a person has.
-That is, wealth refers to a \emph{level} of material possessions.
+That is, wealth refers to a \emph{level} of material possessions or resources.
 In contrast, we will define %, partly because it makes Equation \ref{eq:IPARC} a "pronounceable" acronym,
-the term "affluence" to mean the \emph{rate} a person 
+the term ``affluence'' to mean the \emph{rate} a person 
 consumes goods and services, that is, the "stuff" bought \emph{per year}.
 
-“Consumption” may mean literal consumption, as in the case with food, or it could 
-be consuming a service, such as education or getting a haircut. In many cases, 
+``Consumption'' may mean literal consumption, as in the case with food, or it could 
+be consuming a service, such as education or getting a haircut. 
+In many cases, 
 % say more in a discussion question how taking up a seat in a classroom, 
 % having the prof grade your papers, etc. is "consumption"
-what is “consumed” is ancillary to what the consumer actually desires. For example, 
-when the consumer drives from point A to point B, whether the car the burns gasoline 
-or is electric doesn’t matter to the consumer. The point is that, in economic terms, 
-travel uses an energy service. The energy consumed is just a means to the and end. 
+what is ``consumed'' is ancillary to what the consumer actually desires. 
+For example, when the consumer drives from point A to point B, whether the car 
+the burns gasoline or is electric doesn’t matter to the consumer. 
+The point is that, in economic terms, travel uses an energy service. 
+The energy consumed is just a means to the and end. 
 (In this case, that end is travel.)
 
 Microeconomic theory (and, indeed, our own experience) tells us that human wants are
-limitless. However much we have, we always want more. Consumption has diminishing
-returns of marginal utility; the fourth, fifth, and sixth donuts increase our happiness
-less than the first, second, and third donuts. After a donut, we may want a cup of 
-coffee instead of a second donut, then a slice of bacon, and then to read the news, 
-and then ... The point is there is always a next "thing," which need not necessarily 
+limitless. 
+However much we have, we always want more. 
+Consumption has diminishing returns of marginal utility; the fourth, fifth, and 
+sixth donuts increase happiness less than the first, second, and third donuts. 
+After a donut, we may want a cup of coffee instead of a second donut, then a 
+slice of bacon, and then to read the news, and then ... 
+The point is there is always a next ``thing,'' which need not necessarily 
 be a physical object. 
 
-Having choice enhances consumer well being. Having a choice between a muffin and 
-a donut is better than if only donuts are on the menu. (Again, there is diminishing
-marginal utility for choice as well; partly this is because of human cognitive limits.)
+Having choice enhances consumer well being. 
+Having a choice between a muffin and a donut is better than if only donuts are 
+on the menu. 
+(Again, there is diminishing marginal utility for choice as well; 
+partly this is because of human cognitive limits.)
 
 The value functions of different individuals may be different and so free trade 
-allows each party to maximize their own value function. the opportunity cost is 
-the value (to them) of what they give up, be it money or a good or service. 
+allows each party to maximize their own value function. 
+The opportunity cost is the value (to them) of what they give up, be it money or 
+a good or service. 
 If I’m a barber and I would prefer to have \$15 rather than 20 minutes of free time 
 and you would rather have a haircut than \$15, then we can arrange a trade. 
-I’ll trade you \$15 for a haircut. You’re happier with the \$15 and I’m happier 
-with the haircut. Your opportunity cost (time) was worth less than \$15, so you 
-end up better off. My opportunity cost was \$15 but the haircut is worth more than
-that to me, so I'm better off as well.
+I’ll trade you \$15 for a haircut. 
+You’re happier with the \$15 and I’m happier with the haircut. 
+Your opportunity cost (time) was worth less than \$15, so you end up better off. 
+My opportunity cost was \$15 but the haircut is worth more than that to me, 
+so I'm better off as well.
 
 \section{Macroeconomics}
 Affluence is \emph{measured} by gross domestic product (GDP) per capita.
