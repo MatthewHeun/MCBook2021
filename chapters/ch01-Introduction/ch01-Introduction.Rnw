@@ -54,7 +54,13 @@ to continue to do things ``the way they've always been done.''
 Figure \ref{fig:venn_diagram} shows the ``three pillars'' of sustainability, which are the
 the interrelated and overlapping domains of environmental sustainability,
 economic sustainability, and social sustainability.
-% We need the three pillars and idea of metrics for all three...
+% We need the three pillars and idea of metrics for all three.
+Sustainability is like a three-legged stool or a table on three legs.
+If one of the supports is removed, the whole thing falls flat.
+The complexity and interconnectivity of sustainability problems is not limited to
+one domain. 
+Pollution is an environmental problem, and a social problem, and an economic problem.
+Likewise renewable energy. And land use. And ... 
 
 \begin{figure}
 \centering
@@ -96,7 +102,7 @@ listed below them.}
 %   annotate(geom = "text", x = 0, y = 1.4, label = "Economic", size = 3.5) + # family = "Libre Caslon Text",
 %   # Eliminate all axes and labels besides the ones we added ourselves.
 %   theme_void()
- @
+%@
 
 % Let's say more here about the organization of the book in terms of social, economic, and ES?
 
@@ -111,7 +117,7 @@ they are long-term investments.
 The sooner we begin making those investments, the sooner we'll begin reaping the
 rewards and the greater those rewards will be.
 
-\section{Purpose, focus, and organization}
+\section{Purpose and focus}%, and organization}
 This book will summarize ways that humans are not living sustainably and will suggest % outline?
 characteristics of sustainable societies.
 Basic data and key concepts start each chapter.
@@ -127,12 +133,12 @@ The intent is to equip readers with basic knowledge (informed by scale) so we ca
 grapple with tough moral questions.
 \emph{This book should be easy to read but hard to digest.}
 
-Sustainability is existentially important but very difficult to achieve, for several reasons.
-The numbers and timescales involved are difficult for humans to grasp.
-Sustainability challenges are complex because they involve a variety of
-interrelated problems from different domain areas.
-The challenges associated with transitioning to a sustainable existence are complex
-and interconnected.
+% Sustainability is existentially important but very difficult to achieve, for several reasons.
+% The numbers and timescales involved are difficult for humans to grasp.
+% Sustainability challenges are complex because they involve a variety of
+% interrelated problems from different domain areas.
+% The challenges associated with transitioning to a sustainable existence are complex
+% and interconnected.
 The focus of this book is on the many \emph{challenges} of sustainability.
 While we may, at times, point to directions for improved sustainability, it is beyond our scope
 (and indeed our ability) to provide \emph{solutions} for all sustainability problems.
@@ -186,7 +192,7 @@ Concomitant with such choices is a weighting of appropriate risks to the ecosyst
 human society.
 Different answers to these questions come from different \emph{a priori} assumptions and values.
 
-The broadest definitions of sustainability include human-created devices and systems.
+The broadest definitions of sustainability include the products of human civilization.
 Although they are great cultural and historical artifacts, humanity could survive without
 the great pyramids of Giza.
 On the other hand, we may not survive if we don’t give up coal-fired power plants.
@@ -222,8 +228,8 @@ one of the most \emph{urgent} sustainability problems.
 The most oft-quoted \cite{Quental2011} definition of sustainability is that
 ``Sustainable development is development that meets the needs of the present without
 compromising the ability of future generations to meet their own needs'' \cite{Brundtland}.
-Note that ``sustainable development,'' an oxymoron, is not the same as sustainability, and
-``needs'' are subjective.
+Note that ``sustainable development,'' is an oxymoron and is not the same as sustainability.
+Furthermore, ``needs'' are subjective.
 This definition emphasizes the social and economic aspects of sustainability over,
 or instead of, environmental sustainability. % "Now" before "later."
 %could add two paragraphs of explanation here. Or, maybe make them e-o-c questions.
@@ -273,7 +279,7 @@ greater detail.
 
 
 \section{A framework for sustainaiblity thinking}%Impacts and their sources}
-Two mathematical identities, IPAT and Kaya, have been used express sources and impact
+Two mathematical identities, IPAT and Kaya, have been used to express sources and impact
 of human activities on the environment.
 IPAT expresses ``impact'' (I) on the environment as the product of human
 population (P), affluence (A), and technology (T).
@@ -416,7 +422,7 @@ is exactly equal to the area between $N$ and $N+0.693/r$ (B), for any $N$.}
 
 In the discrete case, like grain on a chessboard, the number of grains on the
 next square is always one more than the sum of all the previous squares.
-In the continuous case, the amount in until the next doubling (B) is always 
+In the continuous case, the amount up until the next doubling (B) is always 
 equal to the sum of all previous amounts (A).
 
 Population (P) and affluence (A) in Equation \ref{eq:IPARC} have been growing
@@ -450,7 +456,7 @@ Building a landfill takes energy.
 Hauling garbage to the landfill takes energy.
 Even the decomposition of compost takes sunlight, air, and rain.
 
-The amount of energy delivered as a fraction of the energy is took to get that energy 
+The amount of energy delivered as a fraction of the energy it took to get that energy 
 is called the energy return on investment (ERIO).
 \begin{equation}\label{erio}
 \textrm{ERIO} = \frac{\textrm{Useful energy delivered}}{\textrm{Energy required to get that energy}}
@@ -604,9 +610,10 @@ the full restoration is likely to cost more than \euro{8} billion.
 
 \item Critique generally but also with reference to Equation \ref{eq:IPARC} the statement 
       ``poverty is the worst form of pollution'' made by former Indian Prime 
-      Minister Indira Ghandi. In what ways is this statement true? In what ways
-      is it untrue? How does this statement address the debate for strong environmental
-      sustainability versus ``sustainable'' development?
+      Minister Indira Ghandi. What does this statement mean?
+      In what ways is this statement true? In what ways is it untrue? 
+      How does this statement address the debate for strong environmental
+      sustainability versus ``sustainable development?''
 
 \item The human development index\index{Human Development Index}
       (HDI, see section \ref{sec:indices}) is a measure of
