@@ -15,7 +15,7 @@ square, four grains on the fourth square, and so on, with each subsequent square
 double what was on the previous square.
 The king accepted the wager but lost the game.
 % according to chess.com a match is a series of games.
-A chessboard has eight rows and eight columns, so the king had to pay $2^{64}-1$
+A chessboard has eight rows and eight columns, so the king had to pay $\; 2^{64}-1 \;$
 grains (see Section \ref{sec:exp}).
 Rice is seven thousand grains per pound (\char`~ 65 mg each),
 which means the king owed her $1.195 \times 10^{15}$ kg of rice, 
