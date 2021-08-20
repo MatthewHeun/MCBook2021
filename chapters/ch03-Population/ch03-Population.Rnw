@@ -19,10 +19,12 @@ Life is the other way round.}{David Lodge}
 
 Equation \ref{eq:IPARC} expresses human impact on the Earth as the product
 of population, affluence, resource intensity of the economy, and the impact intensity 
-of resources. Chapter~\ref{chap:planetary_boundaries} discussed how the Earth's 
-ecosystems provision human needs and how the impact of human activities can degrade,
-even catastrophically destroy, the ability of the Earth to provide. This chapter 
-will examine human population dynamics and the impact of human activities on animal populations.
+of resources. 
+Chapter~\ref{chap:planetary_boundaries} discussed how the Earth's ecosystems 
+provision human needs and how the impact of human activities can degrade,
+even catastrophically destroy, the ability of the Earth to support life. 
+This chapter will examine human population dynamics and the impact of human 
+activities on animal populations.
 
 \section{Animal populations}
 %some stories about animal populations: passenger pigeons, bison, whales, aurochs, locusts,
@@ -49,9 +51,10 @@ mass extinctions just like climate change plays a role in the present crisis.)
 
 
 We should distinguish between the \emph{reason(s)} and the \emph{mechanism(s)} for 
-the decline in animal populations. Population decline is an \emph{impact} from the left-hand
-side of Equation \ref{eq:IPARC}. The \emph{reason(s)} (that is, the ``why'') 
-are given on the right-hand side of Equation \ref{eq:IPARC}.
+the decline in animal populations. Population decline is an \emph{impact} ($I$) 
+from the left-hand side of Equation \ref{eq:IPARC}. 
+The \emph{reason(s)} (that is, the ``why'') are given on the right-hand side of
+Equation \ref{eq:IPARC} ($PARC$).
 In contrast, the \emph{mechanisms} (that is, the ``how'') behind the decline 
 in animal populations are not provided by Equation \ref{eq:IPARC}.
 Several important mechanisms are summarized below.
@@ -112,7 +115,7 @@ region_pop %>%
 MKHthemes::xy_theme()
 @
 
-\subsection{Historical human population}
+\subsection{Past human populations}
 It has been said, ``It is difficult to make predictions, especially about the future.''
 Predictions about future human populations vary considerably.
 As it turns out, it is also difficult to make predictions about the past.
@@ -202,12 +205,12 @@ population pyramid in Figure \ref{fig:dtt}).
 In phase 3, changing economic conditions, such as increase urbanization, a 
 transition away from an economy dependent on agriculture, and availability of 
 contraception lead to a declining birth rate. 
-In phase 3, the birth rate is still greater than the death rates so the population 
-is still growing but the falling birth rate means slower growth and an age structure 
+In phase 3, the birth rate is still greater than the death rate, so the population 
+is still growing, but the falling birth rate means slower growth and an age structure 
 that begins to be more uniform. 
 In phase 4, the birth rate and death rate equalize and the population stabilizes. 
-In phase 5, the birth rate can begin to increase again (as shown in Figure \ref{fig:dtt}) \emph{or}
-drop \emph{below} the death rate, which lead a decrease in total population.
+In phase 5, the birth rate can either begin to rise again (as shown in Figure \ref{fig:dtt}) 
+\emph{or} drop \emph{below} the death rate, which leads to a decrease in total population.
 Currently, most developed countries have a birth rate that is below the
 \emph{replacement rate}.
 
@@ -246,6 +249,12 @@ of the total population.
 \subsection{Distribution of population}
 Where do people live? 
 Given our goal of a sustainable society, where do we \textit{want} people to live? 
+\emph{Population density}, which is the number of people per area, is a key 
+metric for sustainability.
+High population density, characteristic of urban areas, enables, for example,
+cost-effective mass transit, which reduces carbon emissions from transportation.
+On the other hand, high human population densities will exclude many animal species.
+
 In 2015, about half of the world's people live in an area, shown in 
 Figure~\ref{fig:half_population}, known as the Valeriepieris circle.
 This circle has a radius of about 4,000km. 
@@ -347,6 +356,7 @@ published August 17, 2020. \\
       and critique them versus Malthusian expectations.
       **** Split between a question and a project. ****
       **** Reference the Erlich bet? ****
+      **** per James: consider normalacy bias. ****
 
 \item What are ways population could be controlled?
       **** Reference World3 model figure? Give some examples? China, USAID contraception? ****
@@ -397,6 +407,7 @@ published August 17, 2020. \\
       affect sustainability?
       
 \item What is a socially equitable way to allocate access to wilderness areas and experiences?
+      Does access to wilderness make it non-wilderness?
       Is access to ``nature'' a right? What are ways to allow urbanites access to
       the natural world?
 
