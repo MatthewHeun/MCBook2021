@@ -511,7 +511,7 @@ collectively and personally.
         for wind turbines? 
         
   \item Derive Equation~\ref{eq:IPARC_rate} from Equation~\ref{eq:IPARC}.
-        You will use $(1 + r_1)(1 + r_2) \approx r_1 + r_2$ for small $r_1$ and $r_2$
+        You will use $(1 + r_1)(1 + r_2) \approx r_1 + r_2 + 1$ for small $r_1$ and $r_2$
         in the derivation.
   
   \item Verify the calculations in Equation~\ref{eq:IPARC_rate_with_numbers}.
