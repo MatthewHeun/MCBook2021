@@ -15,7 +15,7 @@ square, four grains on the fourth square, and so on, with each subsequent square
 double what was on the previous square.
 The king accepted the wager but lost the game.
 % according to chess.com a match is a series of games.
-A chessboard has eight rows and eight columns, so the king had to pay $\; 2^{64}-1 \;$
+A chessboard has eight rows and eight columns, so the king had to pay $2^{64}-1 \;$
 grains (see Section \ref{sec:exp}).
 Rice is seven thousand grains per pound (\char`~ 65 mg each),
 which means the king owed her $1.195 \times 10^{15}$ kg of rice, 
@@ -32,7 +32,7 @@ sustainability problem that have been evident for centuries:
 Exponential growth is
 % a) hard to understand and b) is
 inherently not sustainable;
-big numbers are hard to grok;
+big numbers are hard to \href{https://en.wiktionary.org/wiki/grok}{grok};
 % Cognitive biases, Decartes’ chiliagon, Numerical cognition, Subitizing, Dunbar number, 50-year time frame.
 and making large wagers on limited understanding is unwise.
 
@@ -47,7 +47,7 @@ of exponential growth and limited knowledge.
 %Sustainability complexity and we'll spend a lot of time looking at the interconnections
 %between different aspects of sustainability challenges.
 Furthermore, this story hints at a social element of the sustainability problem.
-In the story, the king doesn't want to appear "weak" before his subject and so
+In the story, the king doesn't want to appear ``weak'' before his subject and so
 (rashly) accepts the wager.
 In sustainability, there is tremendous social (and sometimes economic) pressure
 to continue to do things ``the way they've always been done.''
@@ -188,8 +188,8 @@ needed'' classifications, but as a whole that exists on a continuum from ``fully
 to ``nonfunctional.''
 The choices and paths to sustainability are bristling with value judgements and
 moral choices about what to value and how much.
-Concomitant with such choices is a weighting of appropriate risks to the ecosystem and
-human society.
+\href{https://en.wiktionary.org/wiki/concomitant}{Concomitant} with such choices 
+is a weighting of appropriate risks to the ecosystem and human society.
 Different answers to these questions come from different \emph{a priori} assumptions and values.
 
 The broadest definitions of sustainability include the products of human civilization.
@@ -201,11 +201,29 @@ On the other hand, we may not survive if we don’t give up coal-fired power pla
 With respect to Figure \ref{fig:venn_diagram}, environmental sustainability
 considers biophysical and thermodynamic constraints and includes issues such as
 pollution, resource depletion, habitat loss, and biodiversity.
+Harvesting timber faster than it can grow is unsustainable. 
+Eventually, deforestation means that timber harvesting must stop because there 
+will be no more forest to harvest. 
+Depleting mineral resources is unsustainable.
+Eventually, the minerals will be used up.
+Pumping aquifers faster than they can regenerate is unsustainable. 
+Eventually, the aquifers will run dry.
+
 Economic sustainability involves questions of profit and loss, wealth management, and
 macroeconomic policy.
+A business that continually loses money is not sustainable.
+Eventually it will go out of business.
 Social sustainability comprises human and civil rights, suffering, and personal freedom.
+A social group that continually loses members, for example the Whig party, will 
+cease to be a group.
+Typically, social sustainability includes things that \emph{should not} be 
+sustainable but that have persisted a very long time, like poverty, class inequality,
+sexism, slavery, and other civil injustices.
+
 This book will discuss issues associated with each of these three
 areas of sustainability but with a focus on energy and carbon emissions.
+The end-of-chapter questions typically focus on interactions between the three
+pillars, like a social versus economic tradeoff.
 % \emph{not}
 % because they are the only sustainability problem, but because energy is the master
 % resource and climate change is currently one of the most \emph{urgent} sustainability problems.
