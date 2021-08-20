@@ -79,7 +79,7 @@ His first words were
 Despite his annoyance at being forced to attend the seminar
 and its seeming lack of relevance to the exciting task of exploring the universe, 
 those words have remained with MKH like no others.
-The truth of the accountant's statement have been proved through time.
+The truth of the accountant's statement has been proved through time.
 Indeed, a very effective way to change behavior is to change the way things 
 are counted (money, inputs, outputs, etc.).
 The accountant was right, because
@@ -149,7 +149,7 @@ particular concern right now is global climate change (principally) caused by
 human CO$_2$ emissions. Extinction rate is another (see the point above about rivets
 in the airplane). Because ecosystems dynamics are nonlinear and interrelated, 
 tipping points exist, and human actions can cause a series of cascading failures
-that will ultimately degrade the Earth's ability to support (human) life. 
+that will ultimately degrade the Earth's ability to support life. 
 Exponential growth, for instance in human population and consumption, is analogous
 to heeling over a boat. Growth cause greater and great demands on the ecosystem. 
 Eventually the boat heels over so far that it capsizes.
@@ -191,10 +191,16 @@ truly global scale.
 Equation \ref{eq:IPARC} frames sustainability in terms of ``impacts,'' that is, 
 negative effects on the environment resulting from human activity. 
 Broadly, there are two approaches for managing or responding to impacts. 
-\emph{Planetary boundaries} describe the maximum (desirable) \emph{level} of effects. 
-The second method uses a weighted average, called an \emph{index}, of impacts, perhaps
-with some other factors. The idea is to use the index as a proxy management tool, 
-that is, to describe desirable behavior.
+\emph{Planetary boundaries} describe the maximum (desirable) \emph{level} of effects,
+that is, they establish a limit on the left-hand side of Equation \ref{eq:IPARC}.
+The second method uses a weighted average, called an \emph{index}, of factors as 
+a proxy management tool. 
+The index describes a desirable collection of behaviors. 
+Whereas the planetary boundaries are limits for single variables, indices are a mix
+of variables from both sides of Equation \ref{eq:IPARC}.
+Neither method describes \emph{how} changes should be made but within each index
+is an implicit description of the tradeoffs between the different variables. 
+%The boundary method establishes what we don't want to happen. 
 
 % comparison with radiation. humans need some (for vitamin D). more is long-term bad. 
 % Even more is short-term bad. What should the limit be?
@@ -240,7 +246,7 @@ The boundary values set for these indicators are intended to define a
 % \bottomrule \end{tabular}
 
 \begin{table}\centering
-\caption{List of the planetary boundaries proposed by \cite{Rockstrom2009}.
+\caption{Some planetary boundaries \cite{Rockstrom2009}.
 \label{tab:planetBoundaries}}
 \begin{tabular}{ll}\toprule
 \textbf{Planetary Boundary} & \textbf{Exceeded?} \\ \midrule
@@ -258,7 +264,7 @@ Chemical pollution & unknown \\
 \end{table}
 
 The boundary value set for atmospheric carbon dioxide concentration
-is no more than 350 ppm (current value is 412 ppm, see Figure~\ref{fig:CO2Graph}).
+is no more than 350 ppm (current value is more than 412 ppm, see Figure~\ref{fig:CO2Graph}).
 Less than 15\% of Earth's land area should be converted to cropland (currently 11.7\% is cropland).
 The extinction rate should be less than 10 species per million species becoming extinct
 per year. Currently, this rate is more than 100 per million, out of a total of 10 to 14 million
@@ -285,7 +291,6 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
                 y = expression("Atmospheric "*CO[2]*" concentration [ppm]")) +
   MKHthemes::xy_theme()
 @
-% Include indicators for previous mass extinctions.
 
 Two of the indicators in Table \ref{tab:planetBoundaries}, 
 particulate particle concentration in the atmosphere and chemical pollution, 
@@ -369,40 +374,38 @@ doesn't mean there isn't a firm limit.
 % \end{figure}
 
 %% This version has the advantage of having the labels (a, b, c, and d) centered beneath the subfigures.
-\begin{figure}
-\centering
-%\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/Limits.jpg}
-\begin{tabular}{cc}
-\includegraphics{chapters/ch02-Boundaries/figures/GA1.pdf} & %[0.4\linewidth]
-\includegraphics{chapters/ch02-Boundaries/figures/GA2.pdf}\\
-(a) & (b) \\
-\includegraphics{chapters/ch02-Boundaries/figures/GA3.pdf} &
-\includegraphics{chapters/ch02-Boundaries/figures/GA4.pdf} \\
-(c) & (d)
-\end{tabular}
-\caption{Various relationships between biophysical bounds and human development.
-The boundary or carrying capacity of the ecosystem is shown as a dash-dot red line.
-A variable related to human development, such as population or food production is
-shown in blue.
-There are five possible patterns for human development relative to the ecosystem
-boundaries. Human activities might be of a scale so small that the boundaries are
-``far away'' and exponential growth can proceed unimpeded, at least for a time.
-Alternatively, as in (a), the boundary is increasing due to human activity and
-growth remains unimpeded, as in Figure \ref{fig:exp}.
-In (b), the boundary is constant and growth is retarded as the boundary is approached.
-In (c), there is a 2-way interaction between growth and the boundary but the
-boundary is robust.
-In (d), exceeding the boundary is possible and results in serious, dramatic, and
-long-lasting reduction of the system's ability to provide ecosystem services.
-Adapted from \cite{Graedel:2010ab}.}
-\label{fig:GAfig21}
-\end{figure}
+% \begin{figure}
+% \centering
+% %\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/Limits.jpg}
+% \begin{tabular}{cc}
+% \includegraphics{chapters/ch02-Boundaries/figures/GA1.pdf} & %[0.4\linewidth]
+% \includegraphics{chapters/ch02-Boundaries/figures/GA2.pdf}\\
+% (a) & (b) \\
+% \includegraphics{chapters/ch02-Boundaries/figures/GA3.pdf} &
+% \includegraphics{chapters/ch02-Boundaries/figures/GA4.pdf} \\
+% (c) & (d)
+% \end{tabular}
+% \caption{Various relationships between biophysical bounds and human development.
+% The boundary or carrying capacity of the ecosystem is shown as a dash-dot red line.
+% A variable related to human development, such as population or food production is
+% shown in blue.
+% There are five possible patterns for human development relative to the ecosystem
+% boundaries. Human activities might be of a scale so small that the boundaries are
+% ``far away'' and exponential growth can proceed unimpeded, at least for a time.
+% Alternatively, as in (a), the boundary is increasing due to human activity and
+% growth remains unimpeded, as in Figure \ref{fig:exp}.
+% In (b), the boundary is constant and growth is retarded as the boundary is approached.
+% In (c), there is a 2-way interaction between growth and the boundary but the
+% boundary is robust.
+% In (d), exceeding the boundary is possible and results in serious, dramatic, and
+% long-lasting reduction of the system's ability to provide ecosystem services.
+% Adapted from \cite{Graedel:2010ab}.}
+% \label{fig:GAfig21}
+% \end{figure}
 
 %%%%%%%%%%%
 % Here is another attempt at the figure, this time using ggplot. ---MKH
 %%%%%%%%%%%
-
-
 <<BroundaryGraphFunction>>=
 boundary_graph <- function(df) {
   df %>% 
@@ -432,8 +435,8 @@ data.frame(t = seq(0, 2, by = 0.1)) %>%
   ) %>% 
   boundary_graph()
 @
-         \caption{$y=x$}
-         \label{fig:y equals x}
+         \caption{Growing limits.}
+         \label{fig:GA1}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.48\textwidth}
@@ -448,8 +451,8 @@ data.frame(t = seq(-3, 6, by = 0.1)) %>%
   boundary_graph() + 
   ggplot2::ylim(NA, 1.5)
 @
-         \caption{$y=3sinx$}
-         \label{fig:three sin x}
+         \caption{Constant limits.}
+         \label{fig:GA2}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.48\textwidth}
@@ -464,8 +467,8 @@ data.frame(t = seq(0, 1.1*pi, by = 0.005*pi)) %>%
   boundary_graph() + 
   ggplot2::xlim(0.75, NA)
 @
-         \caption{$y=5/x$}
-         \label{fig:five over x}
+         \caption{Robust limits.}
+         \label{fig:GA3}
      \end{subfigure}
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
@@ -482,8 +485,8 @@ data.frame(t = seq(-3, 4, by = 0.01)) %>%
     ) %>% 
   boundary_graph() 
 @
-         \caption{$y=5/x$}
-         \label{fig:five over x}
+         \caption{Erodible limits.}
+         \label{fig:GA4}
      \end{subfigure}
         \caption{Various relationships between biophysical bounds and human development.
                  The boundary or carrying capacity of the ecosystem is shown as a dash-dot red line.
@@ -491,14 +494,15 @@ data.frame(t = seq(-3, 4, by = 0.01)) %>%
                  shown in blue.
                  There are five possible patterns for human development relative to the ecosystem
                  boundaries.
-                 Human activities might be of a scale so small that the boundaries are
-                 ``far away'' and exponential growth can proceed unimpeded, at least for a time.
-                 Alternatively, as in (a), the boundary is increasing due to human activity and
-                 growth remains unimpeded, as in Figure \ref{fig:exp}.
-                 In (b), the boundary is constant and growth is retarded as the boundary is approached.
-                 In (c), there is a 2-way interaction between growth and the boundary but the
+                 First, human activities might be of a scale so small that the boundaries are
+                 ``far away'' and exponential growth can proceed unimpeded, as in Figure \ref{fig:exp}, 
+                 at least for a time.
+                 Second, as in (a), the boundary is increasing due to human activity and
+                 growth remains unimpeded.
+                 Third, as in (b), the boundary is constant and growth is retarded as the boundary is approached.
+                 Fourth, as in (c), there is a 2-way interaction between growth and the boundary but the
                  boundary is robust.
-                 In (d), exceeding the boundary is possible and results in serious, dramatic, and
+                 Fifth, shown in (d), exceeding the boundary is possible and results in serious, dramatic, and
                  long-lasting reduction of the system's ability to provide ecosystem services.
                  Adapted from \cite{Graedel:2010ab}.}
         \label{fig:GAfig21}
@@ -578,10 +582,10 @@ The lower atmosphere is opaque to thermal radiation from the Earth's surface.
 All radiation leaving the Earth's surface is absorbed by CO$_2$ and reradiated
 to upper levels of the atmosphere. 
 Eventually, in the upper atmosphere, the atmosphere gets thin enough that 
-CO$_2$ can be radiated to space. 
+CO$_2$ can radiate energy directly into space. 
 When CO$_2$ is added to the atmosphere, it traps radiation leaving the Earth
 at higher and higher levels of the atmosphere.
-Since the atmosphere grows colder at higher elevations, CO$_2$ radiating into
+However, since the atmosphere grows colder at higher elevations, the radiation into
 space is less effective than at lower elevations. 
 We are essentially adding radiation shields to the upper atmosphere. 
 Less radiation leaving the upper atmosphere means that more heat is trapped
@@ -620,8 +624,8 @@ disregarding any other environmental effects.
 
 Indices and biophysical limits, such as planetary boundaries, exist to guide 
 decision making. 
-The weightings inherent in indices express preferences for (perhaps) inherent 
-tradeoffs among the different variables. 
+The weightings inherent in indices express preferences for tradeoffs among the 
+different variables. 
 Furthermore, having expressed an intent or preference for a certain limit, index, 
 or behavior, these variables do not inherently generate strategies for achieving 
 the goals or enforcement mechanisms for maintaining behavior. 
@@ -741,7 +745,7 @@ The Power of Community: How Cuba Survived Peak Oil.
 
 \item Recreation and literary and cultural inspiration are real ecosystem services
       even if we don't know their financial values. Actually, their financial value 
-      is absolutely knowable. How much would you pay for \ldots?
+      is absolutely quantifiable. How much would you pay for \ldots?
       
 \item Access to cultural ecosystem services, for instance, wilderness experiences,
       are often gated by economic privilege. Do people have a right to such experiences
