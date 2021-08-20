@@ -457,26 +457,26 @@ Hauling garbage to the landfill takes energy.
 Even the decomposition of compost takes sunlight, air, and rain.
 
 The amount of energy delivered as a fraction of the energy it took to get that energy 
-is called the energy return on investment (ERIO).
-\begin{equation}\label{erio}
-\textrm{ERIO} = \frac{\textrm{Useful energy delivered}}{\textrm{Energy required to get that energy}}
+is called the energy return on investment (EROI).
+\begin{equation}\label{eroi}
+\textrm{EROI} = \frac{\textrm{Useful energy delivered}}{\textrm{Energy required to get that energy}}
 \end{equation}
 
-An ERIO that is less than one indicates the activity is an energy \emph{sink}
+An EROI that is less than one indicates the activity is an energy \emph{sink}
 rather than an energy \emph{source}. 
-For instance, modern agriculture has an ERIO of around 0.15 to 0.1; 
+For instance, modern agriculture has an EROI of around 0.15 to 0.1; 
 it takes 7-10 calories of energy to deliver 1 calorie of food energy.
-On the other hand, an ERIO greater than one indicates a source of useful energy.
-Table \ref{tab:erio} lists energy returns for various sources of energy.
-Some authors have suggested a minimum ERIO of 5 for sustainability \cite{Ferruccio2016}
+On the other hand, an EROI greater than one indicates a source of useful energy.
+Table \ref{tab:eroi} lists energy returns for various sources of energy.
+Some authors have suggested a minimum EROI of 5 for sustainability \cite{Ferruccio2016}
 with 12 to 13 necessary for a technological society.
 
 This book uses the IPARC equation as a framework for thinking about sustainability.
 We will consider many different resources and many different types of impact. 
 However, this book has a special focus on energy and CO$_2$ emissions.
 Climate change (see Section \ref{sec:GHGCC}) is one of the most urgent sustainability 
-challenges and it is linked to two of the others (extinction rate and land use changes) by CO$_2$ 
-and energy. 
+challenges and it is linked to two of the others (extinction rate and land use changes) 
+by CO$_2$ and energy. 
 Thus, carbon emissions and energy lie at the nexus of our sustainability challenges.
 
 
