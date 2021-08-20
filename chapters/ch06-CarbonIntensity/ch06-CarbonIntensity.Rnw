@@ -315,32 +315,43 @@ Tie to back IPARC equation here.
 
 Chapters~\ref{chap:planetary_boundaries}--\ref{chap:carbon_intensity}
 show the evolution of all terms in the IPARC identity (Equation~\ref{eq:IPARC})
-over the period 1800--today
-for the prime example of energy and CO$_2$ emissions.
-It is instructive to see how the righ-side terms ($P$, $A$, $R$, and $C$) 
-compare to each other.
+over the period 1800--2019
+for the prime example of energy consumption and CO$_2$ emissions.
+It is instructive to see the direction and magnitude of changes 
+in the right-side terms ($P$, $A$, $R$, and $C$) 
+of the IPARC identity. 
 To do so, we introduce a rate version of the IPARC equation.
 
 In the rate version of the IPARC equation, each term is represented 
 by a rate of change ($r$), measured in \%/year.
 The rate version of the IPARC equation indicates 
-which terms are headed in a sustainable direction ($r < 0$) and
-which terms are headed in an unsustainable direction ($r > 0$).
+which terms are moving in a sustainable direction ($r < 0$) and
+which terms are moving in an unsustainable direction ($r > 0$).
 
 \begin{equation} \label{eq:IPARC_rate}
-  r_I = r_P + r_A + r_R + r_C
+  r_I \approx r_P + r_A + r_R + r_C
 \end{equation}
+%
+Each rate ($r$) is calculated by
+
+\begin{equation} \label{eq:rate_calcs}
+  r_y = \left[ \left( \frac{y_{2019}}{y_{1800}} \right) ^ \frac{1}{2019 - 1800} - 1 \right] \times 100 \; ,
+\end{equation}
+%
+where
+$r$ is the rate of change in \%/year and 
+$y$ is one of $P$, $A$, $R$, or $C$.
 
 The data in Figures~\ref{fig:PopulationGraph}, 
 \ref{fig:AffluenceGraph-Nordhaus}, 
 \ref{fig:EnergyIntensityGraph-Nordhaus}, 
-and~\ref{fig:CarbonIntensityGraph} can be evaluated
+and~\ref{fig:CarbonIntensityGraph} 
+can be used with Equation~\ref{eq:rate_calcs}
 to answer the question, 
 ``what equivalent annual rate of change ($r$) 
-would give the same starting and end points
-in 1800 and 2018?''
-The answer is shown in Equation~\ref{eq:IPARC_rate_with_numbers}
-
+would give the same start and end points
+in 1800 and 2019?''
+The answers are shown in Equation~\ref{eq:IPARC_rate_with_numbers}.
 
 <<RatesOfChange>>=
 rate_func <- function(df) {
@@ -351,6 +362,11 @@ rate_func <- function(df) {
   # r = (y2/y1)^(1/t2-t1) - 1
   (df[[2,2]]/df[[1,2]])^(1/yrs) - 1
 }
+
+rate_to_string <- function(rate) {
+  paste(round(rate*100, 1), "\\%/yr")
+}
+
 impact <- CO2_emissions %>%
   dplyr::filter(Year %in% c(1800, 2019)) %>%
   dplyr::select(-Country)
@@ -378,23 +394,45 @@ r_I_check <- r_P + r_A + r_R + r_C
 stopifnot(abs(r_I_check - r_I) < 0.001)
 @
 
-
 \begin{equation}
-\label{eq:IPARC}
+\label{eq:IPARC_rate_with_numbers}
 \small
 \begin{tabular}{ccccccccc}
-$r_I$    & = & $r_P$        & $+$ & $r_A$       & $+$ & $r_R$      & $+$ & $r_C$ \\
-\Sexpr{r_I} & &             &     &             &     &            &     &       \\
+$r_I$                       & $\approx$ & $r_P$                       & $+$ & $r_A$                       & 
+                                    $+$ & $r_R$                       & $+$ & $r_C$                         \\
+\Sexpr{rate_to_string(r_I)} & $\approx$ & \Sexpr{rate_to_string(r_P)} & $+$ & \Sexpr{rate_to_string(r_A)} &
+                                    $-$ & \Sexpr{rate_to_string(abs(r_R))} & $+$ & \Sexpr{rate_to_string(r_C)}   \\
 \end{tabular}
 \normalsize
 \end{equation}
 
+Equation~\ref{eq:IPARC_rate_with_numbers} shows that carbon emissions are increasing 
+at a rate of $r_I$ = \Sexpr{rate_to_string(r_I)}, on average, from 1800--2019. 
+The declining energy intensity of the economy 
+is the only term in the IPARC identity
+putting downward pressure on CO$_2$ emissions ($r_R < 0$).
+All other terms are greater than zero and driving CO$_2$ emissions upward.
+These positive terms represent the sources of our sustainability challenges
+for the prime example:
+rising population ($r_P > 0$), 
+rising affluence ($r_A > 0$), and 
+expanded use of fossil fuels ($r_C > 0$).
 
-% $r_I$       & $=$ & $r_P$       & $+$ & $r_A$       & $+$ & $r_R$       & $+$ & $r_C$ 
-% \Sexpr{r_I} & = & \Sexpr{r_P} & + & \Sexpr{r_A} & + & \Sexpr{r_R} & + & \Sexpr{R_C} \\
-
-
-
+The IPARC identity and 
+the prime example (energy consumption and CO$_2$ emissions)
+show that we are headed in an unsustainable direction,
+as CO$_2$ emissions are accelerating over time.
+In other words,
+Part~\ref{part:IPARC} (Chapters~\ref{chap:planetary_boundaries}--\ref{chap:carbon_intensity})
+has described the \emph{what} of our sustainability challenges.
+Part~\ref{part:sustainability_challenges}
+(Chapters~\ref{chap:households}--\ref{chap:land_use_urban_planning})
+explores reasons \emph{why} we face these challenges
+in several sectors of the economy.
+The final part of this book (Part~\ref{part:actions},
+Chapters~\ref{chap:government} and~\ref{chap:personal_action})
+provides suggestions for \emph{how} to respond, 
+collectively and personally.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -415,8 +453,8 @@ $r_I$    & = & $r_P$        & $+$ & $r_A$       & $+$ & $r_R$      & $+$ & $r_C$
 
 \begin{questions}
 
-  \item Should we manage our energy transition (to renewables) or should we let economics do it f
-        or us? Do we have time to wait? 
+  \item Should we manage our energy transition (to renewables) or should we let economics do it 
+        for us? Do we have time to wait? 
         
   \item Do renewable energy sources have ``emissions?'' Make reference to Equation \ref{eq:IPARC}.
         
@@ -475,6 +513,21 @@ $r_I$    & = & $r_P$        & $+$ & $r_A$       & $+$ & $r_R$      & $+$ & $r_C$
   
   \item **** What are the other resource implications of a WWS transition? Do we have enough Niobium 
         for wind turbines? 
+        
+  \item Derive Equation~\ref{eq:IPARC_rate} from Equation~\ref{eq:IPARC}.
+        You will use $(1 + r_1)(1 + r_2) \approx r_1 + r_2$ for small $r_1$ and $r_2$
+        in the derivation.
+  
+  \item Verify the calculations in Equation~\ref{eq:IPARC_rate_with_numbers}.
+        Then recalculate the terms in Equation~\ref{eq:IPARC_rate_with_numbers} 
+        using estimated numbers from 
+        Figures~\ref{fig:PopulationGraph}, 
+        \ref{fig:AffluenceGraph-Nordhaus}, 
+        \ref{fig:EnergyIntensityGraph-Nordhaus}, 
+        and~\ref{fig:CarbonIntensityGraph}
+        for the last 50 years only and for the last 10 years only.
+        How are the results similar to or different from the results 
+        of Equation~\ref{eq:IPARC_rate_with_numbers}?
 
 \end{projects}
 
