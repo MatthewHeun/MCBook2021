@@ -36,9 +36,12 @@ Equation \ref{eq:IPARC} is our conceptual framework for considering sustainabili
 Chapter \ref{chap:planetary_boundaries} discussed planetary boundaries and the impact
 of human activities on those boundaries, that is, the left-hand side of Equation \ref{eq:IPARC}.
 Chapter \ref{chap:population} is about the first term on the right-hand side of 
-Equation \ref{eq:IPARC}, world population and its dynamics.
+Equation \ref{eq:IPARC}, world population and its dynamics. 
+Discussion questions from Chapter \ref{chap:population} reveal a variety of ways 
+in which it is practically and morally difficult to reduce impacts ($I$) by reducing 
+population ($P$).
 This chapter examines the second term on the right-hand side of Equation \ref{eq:IPARC},
-affluence, and the role of human economic activity in sustainability challenges.
+affluence ($A$), and the role of human economic activity in sustainability challenges.
 Chapters \ref{chap:resource_intensity}-\ref{chap:carbon_intensity}, 
 finish the development of our framework for stability.
 
@@ -46,7 +49,7 @@ finish the development of our framework for stability.
 % The common meaning of affluence is "wealth" or "riches" but here we use it with 
 % reference to specific countries or globally to be \emph{per person}.
 
-\section{Microeconomics}
+\section{Individual affluence}
 The word wealth can include happiness, prosperity, well being, welfare, but mostly it 
 means the \emph{amount} of goods, possessions, money, property, or stuff a person has.
 That is, wealth refers to a \emph{level} of material possessions or resources.
@@ -56,10 +59,9 @@ consumes goods and services, that is, the ``stuff'' bought \emph{per year}.
 
 ``Consumption'' may mean literal consumption, as in the case with food, or it could 
 be consuming a service, such as education or getting a haircut. 
-In many cases, 
 % say more in a discussion question how taking up a seat in a classroom, 
 % having the prof grade your papers, etc. is "consumption"
-what is ``consumed'' is ancillary to what the consumer actually desires. 
+Sometimes, what is ``consumed'' is ancillary to what the consumer actually desires. 
 For example, when the consumer drives from point A to point B, whether the car 
 the burns gasoline or is electric doesn’t matter to the consumer. 
 The point is that, in economic terms, travel uses an energy service. 
@@ -94,25 +96,37 @@ Your opportunity cost (time) was worth less than \$15, so you end up better off.
 My opportunity cost was \$15 but the haircut is worth more than that to me, 
 so I'm better off as well.
 
-\section{Macroeconomics}
+Immediately, we can see a challenge with attempting to reduce impacts ($I$) by
+reducing affluence ($A$) -- it will make people less well off. 
+Poverty is a hard sell on an individual level; no one wants it for themselves.
+(Note that wishing to have lower impacts is not the same as wanting to be poor.)
+Lower levels of affluence are associated with lower HDI, as Figure 
+\ref{fig:FootprintHDIGraph} shows. End-of-chapter questions will explore more
+of the thorny issues with attempting to lower impacts by lowering affluence.
+
+\section{Global affluence}
 Affluence is \emph{measured} by gross domestic product (GDP) per capita.
 There are many critiques as to why per capita GDP is not the \emph{best possible}
 measure of affluence, and those critiques are valid. 
 For instance, GDP doesn't count (or under counts) the value
-of innovation in improving standards of living. Many new metrics (see Section \ref{sec:indices})
-have been proposed as replacements or improvements for GDP. Some examples are green GDP, the index
-of sustainable economic welfare, and the genuine progress indicator. However, each
-of these suffers from its own limitations.%, philosophical, methodological, and practical.
-The biggest limitation is standardization and availability of data. Frankly, GDP
-is what we have and what "everyone" uses. It's the standard. So, for now, we'll use it.
+of innovation in improving standards of living. 
+Many new metrics (see Section \ref{sec:indices}) have been proposed as replacements 
+or improvements for GDP. 
+Some examples are green GDP, the index of sustainable economic welfare, and the 
+genuine progress indicator. 
+However, each of these suffers from its own limitations.%, philosophical, methodological, and practical.
+The biggest limitation is standardization and availability of data. 
+Frankly, GDP is what we have and what ``everyone'' uses. 
+GDP is the standard. 
+So, for now, we'll use it.
 % put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
 Consistent and easily-accessible GDP data can allow us to make observations
 about trends, which are \emph{qualitatively} consistent with trends we would observe
 using other indices, bearing in mind the limitations of what GDP measures and what it doesn't.
 
 Figures \ref{fig:AffluenceGraph-Nordhaus} and \ref{fig:GDPGraph-Nordhaus} show 
-world annual GDP per capita and total GDP, respectively. Note that most national
-and international economic policy is explicitly and purposely devoted to increasing 
+world annual GDP per capita and total GDP, respectively. 
+Note that most national and international economic policy is explicitly and purposely devoted to increasing 
 affluence and maintaining a constant rate of growth for GDP -- even though a 
 constant growth rate means exponential growth (see Section \ref{sec:exp}), 
 which is inherently unsustainable.
@@ -268,45 +282,55 @@ world_gdp_Nordhaus %>%
   MKHthemes::xy_theme()
 @
 
-There are various ways to measure or estimate GDP, which is usually denominated 
-in units of money (see, for example, bea.gov). 
+GDP data are collected nationally and aggregated internationally, so there is the
+usual skepticism when dealing with data provided by corrupt and/or authoritarian
+regimes.
+GDP is denominated in units of money and is the sum of four terms,
 \begin{equation} 
 \label{eq:GDP}
-GDP = C+G+I+NX
+GDP = C+G+I+NX.
 \end{equation}
 $C$ is consumption and represents purchases made by individuals. 
 Consumption makes up about two thirds of GDP for developed economies and is
 generally divided into three categories: durable goods, nondurable goods, and services. 
-Services represent nontangible things. Examples include the aforementioned haircut, 
-legal advice, education, and concert tickets. Durable goods are defined as things 
-that last longer than 3 years. Examples include appliances, automobiles, but don’t 
-include fabrics (like clothes or carpet) even if those things happen to last more 
-than three years. Nondurable goods are things that are consumed immediately, 
-like food, paper, or fuel. Durable goods spending is more sensitive to economic 
-conditions than nondurable good spending because consumers can choose to postpone 
-spending on durable goods until their circumstances are better. 
+Services represent nontangible things. 
+Examples include the aforementioned haircut, legal advice, education, and concert 
+tickets. 
+Durable goods are defined as things that last longer than 3 years. 
+Examples include appliances, automobiles, but don’t include fabrics (like clothes 
+or carpet) even if those things happen to last more than three years. 
+Nondurable goods are things that are consumed immediately, like food, paper, or fuel. 
+Durable goods spending is more sensitive to economic conditions than nondurable 
+goods spending because consumers can choose to postpone spending on durable goods 
+until their circumstances are better. 
 
 $G$ is government spending, which is divided between government consumption 
-(e.g., wages to government workers and equipment) and net investment (e.g., infrastructure improvements).
+(e.g., wages to government workers and equipment) and net investment (e.g., 
+infrastructure improvements).
 
-The symbol $I$ stands for investment. It is \emph{not} money put into a bank account. 
-Investment is goods that are purchased for use in the future. There are three 
-subcategories: nonresidential fixed investment, residential fixed investment, 
-and inventory investment. 
+The symbol $I$ stands for investment, which is \emph{not} money put into a bank account. 
+Investment is goods that are purchased for use in the future. 
+There are three subcategories of investment: nonresidential fixed investment, 
+residential fixed investment, and inventory investment. 
 Nonresidential fixed investment is equipment and plants (factories) purchased by firms. 
 In contrast, residential fixed investment is the purchase of housing stock by 
-households and landlords. Inventory investment is the purchase, by firms, of goods for later 
-sale and could be negative (inventory is falling) or positive (inventory is increasing).
+households and landlords. 
+Inventory investment is the purchase, by firms, of goods for later sale and could 
+be negative (inventory is falling) or positive (inventory is increasing).
 
 $NX$ is net exports; here “net” is the difference between the value of exports 
-and imports. Thus, NX could be a negative number.
+and imports. 
+Thus, NX could be a negative number.
+
+
 
 GDP, because it represents consumption, is only a partial indication of wealth. 
 For instance, owning an asset, like land or a valuable painting, doesn’t factor 
-into GDP calculations. Thus, GDP may be less useful than other measures of wealth 
-for discussions of social sustainability. However, GDP does more accurately capture 
-the impact on the environment because it directly correlated  with resources that 
-are used up (sources) and emissions (sinks). 
+into GDP calculations. 
+Thus, GDP may be less useful than other measures of wealth for discussions of 
+social sustainability. 
+However, GDP does more accurately capture the impact on the environment because 
+it directly correlated  with resources that are used (sources) and emissions (sinks). 
 
 \section{Economic metabolism}
 
@@ -335,7 +359,10 @@ living since the Civil War}, Princeton University Press, 2016.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+United States Department of Commerce, Bureau of Economic Analysis \url{bea.gov}.
 
+United Nations Department of Economic and Social Affairs, Statistics Division 
+\url{https://unstats.un.org/home/}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
@@ -343,6 +370,10 @@ living since the Civil War}, Princeton University Press, 2016.
 
 \begin{questions}
 
+\item Extensions have been proposed for GDP that add environmental variables, 
+      such as natural capital, to GDP. Consider extensions to GDP that would
+      add \emph{social capital} to GDP. What such variables would you consider?
+      
 \item why do we have (global/local) poverty beside (global/local) plenty?
 
 \end{questions}
@@ -353,6 +384,7 @@ living since the Civil War}, Princeton University Press, 2016.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{projects}
+
 
 \item Prepare a report that compares and contrasts several measures of affluence,
       economic progress, standard of living and/or economic development.
