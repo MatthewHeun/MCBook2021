@@ -455,7 +455,7 @@ rate_func <- function(df) {
 }
 
 rate_to_string <- function(rate) {
-  paste(round(rate*100, 1), "\\%/yr")
+  paste(round(rate*100, 1), " \\%/yr")
 }
 
 impact <- CO2_emissions %>%
@@ -497,8 +497,10 @@ $r_I$                       & $\approx$ & $r_P$                       & $+$ & $r
 \normalsize
 \end{equation}
 
-Equation~\ref{eq:IPARC_rate_with_numbers} shows that carbon emissions are increasing 
-at a rate of $r_I$ = \Sexpr{rate_to_string(r_I)}, on average, from 1800--2019. 
+Equation~\ref{eq:IPARC_rate_with_numbers} shows that carbon emissions 
+(Figure~\ref{fig:CarbonEmissionsGraph})
+are increasing 
+at an average rate of $r_I =$ \Sexpr{rate_to_string(r_I)} from 1800--2019. 
 The declining energy intensity of the economy 
 is the only term in the IPARC identity
 putting downward pressure on CO$_2$ emissions ($r_R < 0$).
@@ -533,7 +535,17 @@ collectively and personally.
 
 The IPARC identity
 (especially applied to the prime example of energy and CO$_2$ emissions)
-enables discussion of interactions among its terms.
+raises questions of interactions among its terms.
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Former U.S.\ representative Vernon Ehlers'
+many years in education and government led him to often quip
+``you can never do only one thing.''
+
+\end{mcframe}
 
 
 %++++++++++++++++++++++++++++++
@@ -558,16 +570,6 @@ Policies directed at one term of the IPARC identity
 will have effects on other terms of the IPARC identity
 (in this example, affluence, $A$).
 
-
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-\begin{mcframe}[0.90\textwidth](0.85\textwidth)
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Former U.S.\ representative Vernon Ehlers'
-many years in education and government led him to often say
-``you can never do only one thing.''
-
-\end{mcframe}
 
 
 
