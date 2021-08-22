@@ -30,6 +30,11 @@ Chapter \ref{chap:introduction} pointed out the problems of exponential growth.
 But why? Why is continued exponential growth impossible?
 The reason is that we live on a finite planet with finite resources and finite boundaries.
 Continued and greater impacts eventually run up against the Earth's finite boundaries.
+Section \ref{sec:exp} shows that, for exponential growth, the ``eventually'' is
+one doubling time.
+In $ln(2)/r$ time units, the system will go from half its ``budget'' to being
+at the limit, despite many, many previous doublings.
+Part of the curse of exponential growth is that the end seems sudden.
 This chapter explores those boundaries -- the ``budget,'' or carrying capacity, 
 of the planet.
 Exceeding Earth's carrying capacity degrades its ability to support life.
@@ -624,21 +629,21 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
 \section{Climate change}
 \label{sec:GHGCC}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.65\linewidth]{chapters/ch02-Boundaries/figures/CarbonCycle.png}
-\caption{The natural carbon cycle. Human activity, chiefly combustion of fossil fuels
-and deforestation, means that CO$_2$ is being added to the atmosphere faster than
-nature can remove it. \textbf{This figure will be rebuilt and updated to be legible.}}
-\label{fig:CCycle}
-\end{figure}
-
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.65\linewidth]{chapters/ch02-Boundaries/figures/CarbonCycle.png}
+% \caption{The natural carbon cycle. Human activity, chiefly combustion of fossil fuels
+% and deforestation, means that CO$_2$ is being added to the atmosphere faster than
+% nature can remove it. \textbf{This figure will be rebuilt and updated to be legible.}}
+% \label{fig:CCycle}
+% \end{figure}
 
 Figure \ref{fig:CO2Graph} shows average atmospheric CO$_2$ concentrations over the last 
 800 thousand years (0.8 million years). 
-The climate science is clear (ref IPCC6?) that greenhouse
-gas emissions (primarily CO$_2$ released from burning fossil fuels) are causing
-the average global temperature to increase. 
+Figure~\ref{fig:CarbonEmissionsGraph} shows the yearly rate of world CO$_2$ emitted since 1800.
+The clear trend is upward, with small drops corresponding to years of economic recession.
+Greenhouse gas emissions (primarily CO$_2$ released from burning fossil fuels) 
+are causing the average global temperature to increase. 
 The current average atmospheric CO$_2$ concentration is an example of humanity
 exceeding a planetary boundary. Because the carbon cycle is one of Earth's 
 regulating and support ecosystem services, and because the atmosphere is comprehensively
@@ -649,13 +654,37 @@ to, for example, the extinction rate. Climate change is causing ocean acidificat
 sea level rise, and the increased frequency of extreme natural disasters,
 such as wild fires, and destructive tropical storms. 
 
+<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw} from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions.">>=
+CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"),
+                   sheet = "data to plot")
+
+CO2_emissions %>%
+  dplyr::filter(Year >= 1800) %>%
+  dplyr::mutate(
+    CO2_emissions_Gt = CO2_emissions_tonnes / 1e9
+  ) %>%
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_emissions_Gt")) +
+  ggplot2::geom_vline(xintercept = c(1932, 1945, 1974, 1982, 1992, 2009), size = 0.2) +
+  ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+  ggplot2::labs(x = NULL,
+                y = expression("World "*CO[2]*" emissions [Gt/year]")) +
+
+  MKHthemes::xy_theme()
+@
+
 CO$_2$ is an especially important sustainability issue because of its widespread 
 effects. 
 It is also especially important for at least two other reasons. 
 First, it may trigger a tipping point or points in the Earth's ecosystems, for instance,
 related to deforestation, wild fires, ocean acidification, and species loss. 
-Second, CO$_2$ is a variable humans can control. Anthropogenic CO$_2$ emissions 
-are primarily related to human energy use.
+Second, CO$_2$ is a variable humans can control. 
+Anthropogenic CO$_2$ emissions are primarily related to human energy use.
+
+% %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% \begin{mcframe}[0.90\textwidth](0.85\textwidth)
+% %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% CO$_2$ is the prime example % this really just repeats the box from chapter 1.
+% \end{mcframe}
 
 % see http://clivebest.com/blog/?p=1169 and references therein.
 Here's a brief description of how climate change is happening. 
@@ -686,35 +715,6 @@ Less radiation leaving the upper atmosphere means that more heat is trapped
 closer to the Earth's surface. 
 Eventually the upper atmosphere will warm enough to radiate as much heat as 
 is incoming from the Sun but that warming process takes a very long time.
-
-
-
-The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
-The clear trend is upward, with small drops corresponding to years of economic recession.
-
-
-<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw} from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions.">>=
-CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"),
-                   sheet = "data to plot")
-
-CO2_emissions %>%
-  dplyr::filter(Year >= 1800) %>%
-  dplyr::mutate(
-    CO2_emissions_Gt = CO2_emissions_tonnes / 1e9
-  ) %>%
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_emissions_Gt")) +
-  ggplot2::geom_vline(xintercept = c(1932, 1945, 1974, 1982, 1992, 2009), size = 0.2) +
-  ggplot2::geom_line(size = 1, colour = mc_title_blue) +
-  ggplot2::labs(x = NULL,
-                y = expression("World "*CO[2]*" emissions [Gt/year]")) +
-
-  MKHthemes::xy_theme()
-@
-
-
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
