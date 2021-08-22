@@ -17,7 +17,7 @@ transport us. \ldots
 Without abundant resources, prosperity is out of reach.}
 {Gifford Pinchot}
 
-Previous chapters addressed the sustainability implications of 
+The previous chapter addressed the sustainability implications of 
 economic affluence, the $A$ term in the IPARC equation (Equation~\ref{eq:IPARC}). 
 Because the economy is society's metabolism, economic growth and increasing affluence
 mean that more resources are required to fuel that growth. 
@@ -271,7 +271,7 @@ Economist Nicholas Georgescu-Roegen proposed a fourth law of thermodynamics,
 stating that complete recycling of matter is impossible~\cite{Georgescu-Roegen:1986aa}.
 I.e., material resources are subject to irreversible degradation.
 (Georgescu-Roegen was arguing by analogy from the second law of thermodynamics,
-which states that energy is subject to irreversible degradation.)
+which states that all forms of energy are subject to irreversible degradation.)
 Later, physicist and economist Robert Ayres correctly
 argued that the second law of thermodynamics applies to energy only 
 (not to material) and that 
@@ -449,17 +449,16 @@ dplyr::filter(Country == "Europe") %>%
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+History can be seen in time series energy graphs.
 The effect of the 1970s oil crises can be seen in Figure~\ref{fig:EnergyPerPersonGraph}.
 Per-capita primary energy consumption rose substantially from 1800 to 1970
 with the adoption of fossil fuels worldwide.
 Since the oil crises, efficiency and substitution 
-slowed the growth of per-capita energy consumption. 
+have slowed the growth of per-capita energy primary consumption. 
 China's entrance into the World Trade Organization in late 2001 led
 to a noticeable rise in per-capita energy consumption.
 
 \end{mcframe}
-
-
 
 By the strong sustainability criterion of consuming resources at a rate 
 beneath their regeneration rate, 
