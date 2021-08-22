@@ -133,26 +133,25 @@ print(xtable::xtable(US_CO2_by_sector, digits = c(0, 0, 0, 1),
 
 
 The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
-The clear trend is upward, with small drops corresponding to years of economic recession.
 
-
-<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw} from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. **** Should this graph move to Chapter 2? ---MKH ****">>=
-CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"),
-                   sheet = "data to plot")
-
-CO2_emissions %>%
-  dplyr::filter(Year >= 1800) %>%
-  dplyr::mutate(
-    CO2_emissions_Gt = CO2_emissions_tonnes / 1e9
-  ) %>%
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_emissions_Gt")) +
-  ggplot2::geom_vline(xintercept = c(1932, 1945, 1974, 1982, 1992, 2009), size = 0.2) +
-  ggplot2::geom_line(size = 1, colour = mc_title_blue) +
-  ggplot2::labs(x = NULL,
-                y = expression("World "*CO[2]*" emissions [Gt/year]")) +
-
-  MKHthemes::xy_theme()
-@
+% 
+% <<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw} from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. **** Should this graph move to Chapter 2? ---MKH ****">>=
+% CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"),
+%                    sheet = "data to plot")
+% 
+% CO2_emissions %>%
+%   dplyr::filter(Year >= 1800) %>%
+%   dplyr::mutate(
+%     CO2_emissions_Gt = CO2_emissions_tonnes / 1e9
+%   ) %>%
+%   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_emissions_Gt")) +
+%   ggplot2::geom_vline(xintercept = c(1932, 1945, 1974, 1982, 1992, 2009), size = 0.2) +
+%   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+%   ggplot2::labs(x = NULL,
+%                 y = expression("World "*CO[2]*" emissions [Gt/year]")) +
+% 
+%   MKHthemes::xy_theme()
+% @
 
 
 The carbon intensity of energy (the prime example for $C$)
