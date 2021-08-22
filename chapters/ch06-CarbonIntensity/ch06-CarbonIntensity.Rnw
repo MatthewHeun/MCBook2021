@@ -527,6 +527,52 @@ collectively and personally.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{IPARC identity interactions}
+\label{sec:iparc_interactions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The IPARC identity
+(especially applied to the prime example of energy and CO$_2$ emissions)
+enables discussion of interactions among its terms.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{The rebound effect}
+\label{sec:rebound_effect}
+%++++++++++++++++++++++++++++++
+
+When energy efficiency is deployed as a means of reducing CO$_2$ emissions,
+the carbon intensity of energy ($C$ in the IPARC identity) will go down.
+That said, energy efficiency is known to stimulate economic activity 
+by a mechanism called the ``rebound effect,''
+wherein monetary savings (from reduced energy needs)
+are reinvested, causing economic growth.
+The economic growth raises the GDP of an economy,
+so $A$ will increase.
+Whether energy efficiency actually saves energy and actually saves CO$_2$ emissions
+depends on the strength of the rebound effect.
+
+The rebound effect is one example of interactions among the terms of the IPARC identity.
+Policies directed at one term of the IPARC identity
+(in this example the carbon intensity of energy, $C$)
+will have effects on other terms of the IPARC identity
+(in this example affluence, $A$).
+
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Former U.S.\ representative Vernon Ehlers'
+many years in education and government led him to often say
+``you can never do only one thing.''
+
+\end{mcframe}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
