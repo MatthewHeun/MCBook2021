@@ -453,8 +453,12 @@ resources (energy) used in all of history to date.
 Because of this exponential growth, resource use goes to infinity on a finite planet.
 Humanity is not on a sustainable path.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Energy is the master resource}
 \label{sec:masterE}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Energy is the ultimate or master resource. 
 Obtaining and using any other resource requires energy. 
 Collecting firewood to heat houses requires energy. 
@@ -474,14 +478,16 @@ Building a landfill takes energy.
 Hauling garbage to the landfill takes energy.
 Even the decomposition of compost takes sunlight, air, and rain.
 
-The amount of energy delivered as a fraction of the energy it took to get that energy 
+The amount of energy delivered to the economy as a fraction of the energy it took to deliver that energy 
 is called the energy return on investment (EROI).
+
 \begin{equation}\label{eroi}
-\textrm{EROI} = \frac{\textrm{Useful energy delivered}}{\textrm{Energy required to get that energy}}
+   EROI = \frac{\mathrm{Useful \; energy \; delivered \; to \; society}}
+               {\mathrm{Energy \; required \; to \; obtain \; delivered \; energy}}
 \end{equation}
 
-An EROI that is less than one indicates the activity is an energy \emph{sink}
-rather than an energy \emph{source}. 
+An EROI that is less than one indicates the energy production activity is an energy \emph{sink}
+rather than an energy \emph{source}.
 For instance, modern agriculture has an EROI of around 0.15 to 0.1; 
 it takes 7-10 calories of energy to deliver 1 calorie of food energy.
 On the other hand, an EROI greater than one indicates a source of useful energy.
