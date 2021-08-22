@@ -325,16 +325,35 @@ be negative (inventory is falling) or positive (inventory is increasing).
 $NX$ is net exports; here ``net'' is the difference between the value of exports 
 and imports. 
 Thus, NX could be a negative number.
+World GDP is the sum of all national GDPs.
+Therefore, for world GDP, $NX=0$. We don't import from or export to space, yet.
 
 \subsection{Production/Consumption balance}
-
 While individuals and corporations may save money for purchases in the future, the
 economy as a whole balances production and consumption as closely as possible.
 Money that is invested in a bank is lent out to borrowers so that they can make
 purchases.
 Money invested in the stock market is used by companies to purchase equipment, 
 do research, or grow the business in some other way.
+Goods and services must be produced before they can be consumed.
+There is no incentive to produce goods that aren't consumed; why would you pay the 
+costs of production if there were no prospects of a sale?
+Storage and maintenance costs further discourage excess production.
+Note that temporary ``buffering'' is categorically different from a long-term 
+imbalance of excess production. 
+Many agricultural products are harvested in a short period of time and then stored 
+and sold at uniform rate.
+Selling apples throughout the year out of cold storage facilities is not the same
+as growing apples that no one will ever eat.
+Likewise, inventory investment (mentioned above) is a relatively short-term expense
+to have goods available when customers want them, not a long-term difference in
+supply and demand.
 
+\subsection{Economic metabolism}
+Having established
+\[ \label{eq:PCbalance}
+\textrm{Production}=\textrm{Consumption},
+\]
 
 
 GDP, because it represents consumption, is only a partial indication of wealth. 
