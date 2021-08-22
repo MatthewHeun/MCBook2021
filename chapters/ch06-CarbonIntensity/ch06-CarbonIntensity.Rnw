@@ -266,12 +266,12 @@ to collect CO$_2$ emissions for later injection underground.
 Carbon sequestration seeks to extract CO$_2$ from the atmosphere,
 storing it in, presumably, inert form in perpetuity.
 One form of carbon sequestration is simply planting billions of trees.
-A massive, worldwide tree planting effort would be required to extract
+A massive, worldwide afforestation effort would be required to extract
 the additional carbon that has been added to the atmosphere since the industrial revolution.
 In such a scheme, trees consume CO$_2$, and store it in their biomass.
 Unfortunately, if the trees are burned or die and decompose, the CO$_2$ is returned to the atmosphere.
 Alternatively, CO$_2$ can be extracted from the atmosphere and stored in a stable structure,
-such as graphene, 
+such as graphene.
 
 
 %++++++++++++++++++++++++++++++
@@ -279,7 +279,10 @@ such as graphene,
 \label{sec:biomass}
 %++++++++++++++++++++++++++++++
 
-We could transition back to the energy mix of the first half of the 18$^\mathrm{th}$ century,
+In lieu of extracting CO$_2$ from the atmosphere,
+we could stop emitting CO$_2$ from fossil fuel combustion in the first place!
+One way is to transition away from fossil fuels 
+to the energy mix of the first half of the 18$^\mathrm{th}$ century,
 namely exclusive use of traditional biofuels (wood and wood products).\index{biofuels}
 (See Figure~\ref{fig:PrimaryEnergyGraph}.)
 However, supplying the energy needs of today's economy would be impossible:
@@ -377,6 +380,28 @@ One additional consideration is the availability of unranium resources,
 the topic of an end-of-chapter project.
 
 \end{mcframe}
+
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+What about offsets?
+
+Carbon offsets are a way to enable carbon emitters to reduce net carbon emissions
+by paying for someone else, possibly in another part of the world,
+to reduce carbon emissions.
+As such, carbon offsets enable carbon emitters to shift the responsibility for implementing
+emissions reductions.
+
+
+
+
+
+Carbon offsets can be used to make the respon
+
+\end{mcframe}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
