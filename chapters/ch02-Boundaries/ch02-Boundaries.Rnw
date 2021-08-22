@@ -694,7 +694,7 @@ The clear trend is upward, with small drops corresponding to years of economic r
 
 
 <<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw} from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions.">>=
-CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"),
+CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                    sheet = "data to plot")
 
 CO2_emissions %>%
