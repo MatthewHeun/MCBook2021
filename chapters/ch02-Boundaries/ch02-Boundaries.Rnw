@@ -655,7 +655,7 @@ sea level rise, and the increased frequency of extreme natural disasters,
 such as wild fires, and destructive tropical storms. 
 
 <<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw} from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions.">>=
-CO2_emissions <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "annual-co2-emissions-per-country.xlsx"),
+CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                    sheet = "data to plot")
 
 CO2_emissions %>%
@@ -715,6 +715,12 @@ Less radiation leaving the upper atmosphere means that more heat is trapped
 closer to the Earth's surface. 
 Eventually the upper atmosphere will warm enough to radiate as much heat as 
 is incoming from the Sun but that warming process takes a very long time.
+
+
+The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
+The clear trend is upward, with small drops corresponding to years of economic recession.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
