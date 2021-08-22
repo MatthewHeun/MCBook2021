@@ -214,11 +214,73 @@ But how?
 \label{sec:low_carbon_transition}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-There are at least two often-discussed options for
-transitioning to a low carbon intensity energy supply.
+There are at least four often-discussed options for
+transitioning to a low carbon intensity energy supply:
+(a) carbon capture and storage,
+(b) carbon sequestration,
+(c) biomass, and
+(d) wind, water, and solar (WWS).
+Each option has its own challenges to implementation, and 
+none has yet been implemented on large enough scale to reduce CO$_2$ emissions.
+(See Figure~\ref{fig:CarbonEmissionsGraph}.)
+The subsections below discuss these options and their implementation challenges.
 
-First, 
-we could transition back to the energy mix of the first half of the 18$^\mathrm{th}$ century,
+
+%++++++++++++++++++++++++++++++
+\subsection{Carbon capture and storage}
+\label{sec:ccs}
+%++++++++++++++++++++++++++++++
+
+Carbon capture and storage (CCS)\index{carbon capture and storage (CCS)}
+is a way to continue using fossil fuels
+during a transition to a low-carbon energy regime. 
+In a CCS electricity plant, 
+CO$_2$ emissions are captured at the smokestack of a fossil-fuel electricity generation plant
+and routed underground.
+The CO$_2$ is stored, presumably, in perpetuity in caverns or other underground formations.
+CCS is not a low-carbon form of energy.
+Rather, CCS is a way to avoid carbon emissions from carbon-based energy production.
+
+There are several challenges associated with carbon sequestration.
+First, existing sequestration technology has not proved cost-effective.  
+Petra Nova, the only CCS plant in the U.S.\, injected CO$_2$ for enhanced oil recovery.
+In 2020, the plant was shut down due to low oil prices, 
+demonstrating the interrelation of the economics among primary energy sources.
+
+Second, a fossil fuel power plant fitted with carbon sequestration technology 
+must ensure that the CO$_2$ emissions remains buried. 
+If the CO$_2$ escapes to the atmosphere, the sequestration effort is ineffective.
+
+Third, there are limited locations with the required underground geological formations 
+for CCS.
+
+Finally, CCS is not applicable to CO$_2$ emissions from transportation. 
+It would be impractical to fit every car with a ``CO$_2$ diaper''
+to collect CO$_2$ emissions for later injection underground.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Carbon sequestration}
+\label{sec:carbon_sequestration}
+%++++++++++++++++++++++++++++++
+
+Carbon sequestration seeks to extract CO$_2$ from the atmosphere,
+storing it in, presumably, inert form in perpetuity.
+One form of carbon sequestration is simply planting billions of trees.
+A massive, worldwide tree planting effort would be required to extract
+the additional carbon that has been added to the atmosphere since the industrial revolution.
+In such a scheme, trees consume CO$_2$, and store it in their biomass.
+Unfortunately, if the trees are burned or die and decompose, the CO$_2$ is returned to the atmosphere.
+Alternatively, CO$_2$ can be extracted from the atmosphere and stored in a stable structure,
+such as graphene, 
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Biomass}
+\label{sec:biomass}
+%++++++++++++++++++++++++++++++
+
+We could transition back to the energy mix of the first half of the 18$^\mathrm{th}$ century,
 namely exclusive use of traditional biofuels (wood and wood products).\index{biofuels}
 (See Figure~\ref{fig:PrimaryEnergyGraph}.)
 However, supplying the energy needs of today's economy would be impossible:
@@ -231,11 +293,18 @@ worldwide replacement of today's fossil-fuel-dominated electricity infrastructur
 with a fleet of biomass power plants.
 And conversion to biomass would require build-out of a biomass-to-liquid-fuels conversion 
 infrastructure that does not yet exist.
-Finally, conversion to biomass will be accompanied by a drop in $EROI$.
+Finally, conversion to biomass will be accompanied by a reduction in $EROI$.
 (See Section~\ref{sec:masterE}.)
-The $EROI$ for corn ethanol is typically less than 2~\cite{Hammerschlag:2006uf}.
+The $EROI$ for fossil fuels is mostly greater than 20, while
+the $EROI$ for corn ethanol is typically less than 2~\cite{Hammerschlag:2006uf}.
 
-Alternatively, we could transition the world's energy system
+
+%++++++++++++++++++++++++++++++
+\subsection{Wind, water, and solar}
+\label{sec:wws}
+%++++++++++++++++++++++++++++++
+
+We could transition the world's energy system
 to water (hydro), wind, and solar 
 (WWS)~\cite{Jacobson:2011gc,Delucchi:2011gb}\index{water, wind, and solar (WWS)}
 energy sources.
@@ -258,39 +327,57 @@ with expensive offerings from companies such as Telsa.
 Electrification is not penetrating meaningfully into the freight system,
 including trucks, ships, and planes.
 
-**** Do we have any more hydro capacity? No. What about the rest of the world. 
-Project: hydro potential on each continent. ****
-
 Second, wind and solar (the \emph{WS} in W\emph{WS}) are intermittent sources of electricity,
 while today's electricity sources 
 (coal, natural gas, nuclear, and hydro)
 are not.
 At present, electric grids accommodate only a fraction of intermittent electricity, much less than 100\%.
 So a transition to wind and solar primary energy sources will require
-redesign and re-implementation of electricity grids worldwide.
+redesign and re-implementation of electricity grids worldwide
+to include electricity storage.
+Battery storage on the required scale will require great quantities of rare earth metals 
+and other exotic materials. 
+Gravitational potential energy could supply storage with <100\% 
+round-trip efficiency.
+Options for potential energy storage materials include 
+water (with a pumped hydro plant)
+or concrete with a system such as Energy Vault~\cite{Energy-Vault:uz}.
 
-**** Need storage. Discuss storage here. ****
+Third, in most areas of the world, 
+the potential for expanding the production of hydro electricity is limited.
+Most of the Americas, Europe, and Asia are already ``tapped out'' regarding hydropower.
+Today, the potential for hydro is greatest in central Africa.
+The proposed Grand Inga dam in the Democratic Republic of the Congo
+would be the largest dam in the world and could house a 40--70 GW hydropowerstation.
 
-Third, WWS systems are energy intensive to manufacture.
+Fourth, WWS systems are energy intensive to manufacture.
 So the transition to a WWS future will require significant energy investment
 in addition to significant financial investment.
 If the energy investment to make WWS systems comes from fossil fuels,
 significant CO$_2$ will be emitted during the transition
 from today's energy regime to a WWS regime.
 
-**** EROI and LCA ****
 
-**** Discuss nuclear somewhere. ****
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Nuclear: 2, 3, 4 gen reactors. 1970s technology. Investment for the future. 
+What about nuclear power?
 
-**** Add subsections for biomass and WWS? ****
+Nuclear power (again, an electricity source only) may provide a bridge to a sustainable future.
+Nuclear power emits little CO$_2$ during plant operation. 
+However, the energy cost to construct a nuclear power plant is higher than other types of
+electricity production plants.
+In addition, 
+it is energy-intensive to mine and refine uranium prior to its use in a nuclear power plant. 
+Again, similar to the buildout of renewables, if the energy required to construct nuclear energy plants
+and refine uranium comes from fossil fuels, 
+significant CO$_2$ emissions will result from the conversion to nuclear electricity.
 
+One additional consideration is the availability of unranium resources,
+the topic of an end-of-chapter project.
 
-**** Third idea:  Carbon sequestration and storage? Project: research the pilot plant that fell apart.
-
-**** Carbon negative? Are there ways to go carbon negative? Grow biomass. 
-Lock the carbon in a stable form (Graphene) Project? ****
+\end{mcframe}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -430,6 +517,8 @@ collectively and personally.
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Energy Vault simulation: \url{https://vimeo.com/335818817}.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
@@ -443,6 +532,9 @@ collectively and personally.
   \item Do renewable energy sources have ``emissions?'' Make reference to Equation \ref{eq:IPARC}.
         
   \item Which would you prefer, a biomass energy system or a WWS energy system? Why?  
+  
+  \item What would be the consequences of a reduction in $EROI$ that would accompany a conversion to 
+        a biofuel-based energy system?
 
   \item Find the proportion of renewable energy in the world's energy mix today.
         Does this proportion indicate that we are far into the transition to a 
@@ -457,15 +549,25 @@ collectively and personally.
 
 \begin{projects}
 
-  \item Investigate the ERIO of biofuels. Critique how your sources drew the boundaries
-        around which they're calculating that ERIO.
-
   \item Investigate the energy available in a hectare of biomass production.
         How many hectares of biomass would need to be harvested annually
         to supply today's energy needs?
         How much available arable land exists in the world?
         What fraction of available arable land would be required to transition
         to a biomass-based energy system? \label{item:biofuel_proof}
+        
+  \item Research the potential for CO$_2$ storage in graphene. 
+        What are the energy requirements for such a scheme?
+        How many additional solar panels 
+        
+  \item Research the Petra Nova carbon capture and storage (CCS) plant.
+        What is the feasibility of replicating the Petra Nova scheme
+        to all fossil fuel electricity power plants in the U.S.?
+        In the World?
+        What has been the cost to implement the Petra Nova plant?
+        Who paid that cost?
+        If the Petra Nova plant can't be replicated to all power plants, 
+        are there other feasible options for CCS?
 
   \item Electrification of the world's transportation system is likely to be a costly endeavor.
         Find the number of petroleum-powered cars in service today. 
@@ -480,7 +582,13 @@ collectively and personally.
         What would happen to the electricity grid in those countries 
         if the fraction of intermittent generation went to 100\%?
         
-  \item What would have to be true for the world to use 100\% WWS?
+  \item Research and rank the EROI of many primary energy sources, 
+        including fossil fuels and renewables such as biofuels.
+        What does your ranking imply for transitions to a low-carbon energy regime?
+        Critique how your sources drew the boundaries
+        around which they're calculating that EROI.
+        
+  \item What would have to be true for the world to be able to implement a 100\% WWS energy system?
         
   \item It has been argued that the transition to a low-carbon energy regime
         is a ``grand challenge'' that will require funding levels 
@@ -490,13 +598,15 @@ collectively and personally.
         government programs.
         Compare to estimates to effect a transition to a low-carbon energy regime.
         
-  \item **** Calculate land required to solarify all electricity production in the U.S. 
-        What effect would that have on natural landscape?
+  \item Calculate land required to convert all energy production to solar sources
+        in the U.S. 
+        What effect would a fully-solar energy infrastructure have on natural landscape?
         Where would you locate the solar panels?
-        What transmission issues would emerge? 
+        What transmission issues would emerge?
   
-  \item **** What are the other resource implications of a WWS transition? Do we have enough Niobium 
-        for wind turbines? 
+  \item What are the other resource implications of a WWS transition? 
+        E.g., do we have enough niobium (Nb)\index{niobium (NB)} for the wind turbines
+        required to implement a WWS energy supply? 
         
   \item Derive Equation~\ref{eq:IPARC_rate} from Equation~\ref{eq:IPARC}.
         You will use $(1 + r_1)(1 + r_2) \approx r_1 + r_2 + 1$ for small $r_1$ and $r_2$
