@@ -352,6 +352,10 @@ Likewise, inventory investment (mentioned above) is a relatively short-term expe
 to have goods available when customers want them, not a long-term difference in
 supply and demand.
 
+Therefore, we will use the terms ``consumption'' and ``production'' interchangeably.
+
+
+
 \subsection{Economic metabolism}
 \label{sec:econ_metab}
 Having established that the economy only consumes what the economy produces and,
@@ -367,20 +371,17 @@ any $R \times C$.
 To put it a third way, resources $R$ feed the economy and the resulting impacts
 $C$ are the wastes that the economy excretes.
 
+\section{Economic growth}
+\label{sec:EconGrowth}
 
 
-GDP, because it represents consumption, is only a partial indication of wealth. 
-For instance, owning an asset, like land or a valuable painting, doesn’t factor 
-into GDP calculations. 
-Thus, GDP may be less useful than other measures of wealth for discussions of 
-social sustainability. 
-However, GDP does more accurately capture the impact on the environment because 
-it directly correlated  with resources that are used (sources) and emissions (sinks). 
 
+
+% However, GDP does more accurately capture the impact on the environment because 
+% it directly correlated  with resources that are used (sources) and emissions (sinks). 
 % Can we do an epigraph? Flag Day lyrics by The Housemartins.
 % https://en.wikipedia.org/wiki/Thermoeconomics
 % https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Domestic_material_consumption_%28DMC%29
-% 
 % ****
 % In the Personal Actions chapter, I had included this question:
 % ``Is there such a thing as a steady-state economy?''
@@ -415,6 +416,21 @@ United Nations Department of Economic and Social Affairs, Statistics Division
       add \emph{social capital} to GDP. What such variables would you consider?
       
 \item why do we have (global/local) poverty beside (global/local) plenty?
+
+\item GDP, because it represents consumption, is only a partial indication of wealth. 
+      For instance, owning an asset, like land or a valuable painting, doesn’t factor 
+      into GDP. Thus, GDP may be less useful than other measures of wealth for 
+      discussions of social sustainability. How are wealth inequality and income
+      inequality different? Which do you think it worse from a social perspective
+      and why? Consider those who might be asset rich and income poor, like farmers,
+      small business owners, or someone without a job but who has inherited a 
+      large amount of wealth. Also consider those who might be asset poor and 
+      income rich, like a doctor or lawyer paying off medical- or law-school loans.
+      How might their patterns of affluence (consumption) be similar or different?
+      How do they each affect environmental, economic, and social sustainability?
+      
+
+
 
 \end{questions}
 
