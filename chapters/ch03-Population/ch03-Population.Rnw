@@ -177,12 +177,18 @@ variables, is expected to give more realistic estimates of future population.
 %% https://pages.uwc.edu/keith.montgomery/Demotrans/demtran.htm -- on the Wayback Machine!
 In an undeveloped society, both birth rates and death rates are high, resulting 
 in a low population growth rate.
-Demographic transition theory is that development leads to a decrease in mortality
-followed some time later by a falling birth rate.
+Demographic transition theory, illustrates schematically in Figure  \ref{fig:dtt},
+is that economic development leads to a decrease in mortality followed some time 
+later by a falling birth rate.
 Thus, the population will grow rapidly and then stabilize.
-\textbf{This gives us some hope for sustainability, namely that population won't
-\textit{continue} to grow exponentially.}
-Figure \ref{fig:dtt} illustrates schematically demographic transition theory.
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+This gives us some hope for sustainability, namely that population won't
+\textit{continue} to grow exponentially.
+\end{mcframe}
+
 \begin{figure}
 \centering
 \includegraphics[width=0.9\linewidth]{chapters/ch03-Population/figures/Demographic-TransitionOWID.png}
@@ -278,9 +284,19 @@ The percent living in urban areas is projected to grow to 68\% by 2050.
 Urban living is correlated with wealth and higher GDP. 
 High population density (number of people per area) means mass transit is practical 
 and, in fact, widely used.
-David Owens argues that Manhattan, being very dense, is the most ecological place to live.
+Some thinkers have suggested that the densest urban environments are the most
+ecological places to live.
 %% https://www.newyorker.com/magazine/2004/10/18/green-manhattan
-However, higher affluence (A) partially offsets this.
+However, urban areas are supported by vast networks, including transportation, 
+that supply resources, such as food.
+Equation \ref{eq:IPARC} indicates that higher affluence (A), not location, is a 
+main source of ecological impact.
+While high population density can provide transportation efficiency, economies of 
+scale for dealing with wastes, and minimize habitat destruction in the creation
+of human dwellings, it is unwise to consider urban areas divorced from the rural
+areas that allow them to thrive.
+True sustainability thinking must consider all of human society.
+
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{chapters/ch03-Population/figures/population_of_cities.pdf}
