@@ -102,7 +102,7 @@ Any reduction in affluence decreases well being.
 Immediately, we can see a challenge with attempting to reduce impacts ($I$) by
 reducing affluence ($A$) -- it will make people less well off. 
 Poverty is a hard sell on an individual level; no one wants it for themselves.
-(Note that wishing to have lower impacts is not the same as wanting to be poor.)
+(Note that an abstract desire to have lower impacts is not the same as wanting to be poor.)
 Lower levels of affluence are associated with lower HDI, as Figure 
 \ref{fig:FootprintHDIGraph} shows. 
 This chapter's end-of-chapter questions will further explore of the thorny issues 
@@ -288,7 +288,7 @@ world_gdp_Nordhaus %>%
 
 GDP data are collected nationally and aggregated internationally, so there is the
 usual skepticism when dealing with data provided by corrupt and/or authoritarian
-regimes.
+regimes, in addition to the caveats about what GDP measures and what it doesn't.
 GDP is denominated in units of money and is the sum of four terms,
 \begin{equation} 
 \label{eq:GDP}
@@ -309,8 +309,8 @@ goods spending because consumers can choose to postpone spending on durable good
 until their circumstances are better. 
 
 $G$ is government spending, which is divided between government consumption 
-(e.g., wages to government workers and equipment) and net investment (e.g., 
-infrastructure improvements).
+(such as, equipment and wages paid to government workers) and net investment, for 
+example, infrastructure improvements.
 
 The symbol $I$ stands for investment, which is \emph{not} money put into a bank account. 
 Investment is goods that are purchased for use in the future. 
@@ -360,7 +360,7 @@ Having established that the economy only consumes what the economy produces and,
 likewise, only things that will be consumed are produced, we are ready to introduce
 the metaphor of economic metabolism.
 The economy takes in resources and produces wastes.
-Thus, the metabolism of human society is the economy.
+Thus, the economy is the metabolism of human society.
 Another way of looking at Equation \ref{eq:IPARC} is that the impacts produced
 are really a result of consumption, that is the affluence term.
 The $R \times C$ terms are just a mechanism or feed for the economy.
@@ -376,7 +376,7 @@ indeed it is desirable that they do so.
 Economic growth is how standards of living improve. 
 A business that produces the same number of products per year isn't growing.
 It's stagnant.
-Likewise a mine that produces 150,000 tons of ore per year is not growing.
+Likewise, a mine that produces 150,000 tons of ore per year is not growing.
 Instead, \emph{growth} looks like Figure \ref{fig:exp}. 
 Each year the mine must produce more than it did the previous year.
 
@@ -414,9 +414,9 @@ World economies are managed to exhibit a constant growth rate, that is, exponent
 growth.
 As has been mentioned a few times already, exponential growth is inherently
 unsustainable. 
-When the economy grows, at some point either demands more resources than the 
+When the economy grows, at some point, it either demands more resources than the 
 environment can provide, that is, it exceeds the ecosystem's ability to provision,
-and/or the wastes generated exceed the ecosystem's ability to absorb, that is
+and/or the wastes generated exceed the ecosystem's ability to absorb, that is,
 the ecosystem's regulating and support services pass a tipping point.
 
 In light of these facts, there are have been calls for a \emph{zero-growth}, or 
@@ -425,8 +425,7 @@ Some have gone further and called for a \emph{de-growth} movement.
 There are substantial social and political pressures against making these changes.
 (And for good reasons!)
 A steady-state economy would imply no change in the standard of living from 
-generation to generation, which is a situation that was a feature of the ancient
-and medieval world. 
+generation to generation, as was the case for the ancient and medieval world. 
 Degrowth would imply a worsening in the standard of living.
 Although Figure \ref{fig:FootprintHDIGraph} implies a lower standard of living
 is necessary for sustainability, accepting a drastically lower standard of 
@@ -526,7 +525,7 @@ United Nations Department of Economic and Social Affairs, Statistics Division
       How might their patterns of affluence (consumption) be similar or different?
       How do they each affect environmental, economic, and social sustainability?
       
-
+\item 
 
 
 \end{questions}
