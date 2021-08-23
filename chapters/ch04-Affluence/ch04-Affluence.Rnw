@@ -371,8 +371,47 @@ $C$ are the wastes that the economy excretes.
 
 \section{Economic growth}
 \label{sec:EconGrowth}
+Although production and consumption are in balance, both may grow together and,
+indeed it is desirable that they do so.
+Economic growth is how standards of living improve. 
+A business that produces the same number of products per year isn't growing.
+It's stagnant.
+Likewise a mine that produces 150,000 tons of ore per year is not growing.
+Instead, \emph{growth} looks like Figure \ref{fig:exp}. 
+Each year the mine must produce more than it did the previous year.
 
+The economy can grow by consuming more resources, such as energy, (and, therefore, 
+creating more wastes) which is called \emph{extensive} growth, or by using inputs 
+(resources) more efficiently, which is called \emph{intensive} growth.
+The factors that determine how much goods and services an economy can produce
+include labor, capital, energy, and materials.
+The productivity of workers (labor productivity) is influenced by human capital,
+which accounts for the education and skill of workers, the number of workers
+in the population, the hours they work, and the faction of the population that is
+working (see Section \ref{sec:dtt}). 
+A major source of economic growth is innovation.
+The majority of the goods and services we consume today did not exist in 1870.
 
+Lastly, the productivity of an economy is influenced by its \emph{level} of 
+capital investment.
+Capital is both buildings and equipment, machines, and tools.
+Because capital depreciates, continual investment (part of $I$ in Equation \ref{eq:GDP})
+is needed to maintain a certain level of capital stock. 
+The greater the level of capital, the larger the yearly investment is needed to
+maintain it.
+At some point there is a maximum level of effective capital.
+Beyond that point, the capital is more expensive to maintain than it contributes 
+to the economy.
+Where the point is depends on the level of technology and the price of borrowing
+money (that is, interest) for making capital investments.
+
+Conceptually, at the effective maximum level of capital, labor will have a maximum
+level of output. At this point, an economy can grow only through access to new 
+resources (such as energy) or innovation (a change in the level of technology).
+
+\section{Opportunities for reduced impact}
+World economies are managed to exhibit a constant growth rate, that is, exponential
+growth.
 
 
 % However, GDP does more accurately capture the impact on the environment because 
