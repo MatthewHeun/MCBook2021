@@ -172,7 +172,7 @@ which is inherently unsustainable.
 % @
 
 
-<<AffluenceGraph-Nordhaus, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation \ref{eq:IPARC}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from Nordhaus.">>=
+<<AffluenceGraph-Nordhaus, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation~\\ref{eq:IPARC}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from Nordhaus.">>=
 world_gdppc_Nordhaus <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
                                            sheet = "GDPpc-Nordhaus-WB") %>% 
   dplyr::select(-Country, -Source)
@@ -292,7 +292,7 @@ regimes, in addition to the caveats about what GDP measures and what it doesn't.
 GDP is denominated in units of money and is the sum of four terms,
 \begin{equation} 
 \label{eq:GDP}
-GDP = C+G+I+NX.
+  GDP = C+G+I+NX \; .
 \end{equation}
 $C$ is consumption and represents purchases made by individuals. 
 Consumption makes up about two thirds of GDP for developed economies and is
