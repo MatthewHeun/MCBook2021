@@ -292,7 +292,7 @@ regimes, in addition to the caveats about what GDP measures and what it doesn't.
 GDP is denominated in units of money and is the sum of four terms,
 \begin{equation} 
 \label{eq:GDP}
-GDP = C+G+I+NX.
+  GDP = C+G+I+NX \; .
 \end{equation}
 $C$ is consumption and represents purchases made by individuals. 
 Consumption makes up about two thirds of GDP for developed economies and is
