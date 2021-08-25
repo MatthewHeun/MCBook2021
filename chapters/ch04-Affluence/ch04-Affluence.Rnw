@@ -120,7 +120,8 @@ Some examples are green GDP, the index of sustainable economic welfare, and the
 genuine progress indicator. 
 However, each of these suffers from its own limitations.%, philosophical, methodological, and practical.
 The biggest limitation is standardization and availability of data. 
-Frankly, GDP is what we have and what ``everyone'' uses. 
+Frankly, GDP is what we have the most data for and, consequently, it is what 
+``everyone'' uses. 
 GDP is the standard. 
 So, for now, we'll use it.
 % put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
@@ -300,10 +301,11 @@ generally divided into three categories: durable goods, nondurable goods, and se
 Services represent nontangible things. 
 Examples include the aforementioned haircut, legal advice, education, and concert 
 tickets. 
-Durable goods are defined as things that last longer than 3 years. 
-Examples include appliances, automobiles, but don’t include fabrics (like clothes 
-or carpet) even if those things happen to last more than three years. 
+Durable goods are defined as things that last longer than 3 years, 
+such as appliances and automobiles.
 Nondurable goods are things that are consumed immediately, like food, paper, or fuel. 
+Fabrics, like clothes or carpet, are counted as nondurable goods, even if they 
+happen to last more than three years.
 Durable goods spending is more sensitive to economic conditions than nondurable 
 goods spending because consumers can choose to postpone spending on durable goods 
 until their circumstances are better. 
@@ -378,7 +380,8 @@ A business that produces the same number of products per year isn't growing.
 It's stagnant.
 Likewise, a mine that produces 150,000 tons of ore per year is not growing.
 Instead, \emph{growth} looks like Figure \ref{fig:exp}. 
-Each year the mine must produce more than it did the previous year.
+Output (or productivity) growth means that each year the mine must produce more 
+than it did the previous year.
 
 The economy can grow by consuming more resources, such as energy, (and, therefore, 
 creating more wastes) which is called \emph{extensive} growth, or by using inputs 
@@ -392,14 +395,15 @@ working (see Section \ref{sec:dtt}).
 A major source of economic growth is innovation.
 The majority of the goods and services we consume today did not exist in 1870.
 
-Lastly, the productivity of an economy is influenced by its \emph{level} of 
-capital investment.
-Capital is both buildings and equipment, machines, and tools.
+Lastly, the productivity of an economy is influenced by the amount of capital 
+investment.
+Capital is both buildings and equipment, machines, and tools -- all the \emph{things}
+that can enhance a worker's productivity.
 Because capital depreciates, continual investment (part of $I$ in Equation \ref{eq:GDP})
 is needed to maintain a certain level of capital stock. 
 The greater the level of capital, the larger the yearly investment is needed to
 maintain it.
-At some point there is a maximum level of effective capital.
+At some point, there is a maximum level of effective capital.
 Beyond that point, the capital is more expensive to maintain than it contributes 
 to the economy.
 Where the point is depends on the level of technology and the price of borrowing
@@ -445,9 +449,10 @@ The biggest flaw in a circular economy is that it requires constant energy input
 in part because recycling of materials requires energy.
 Lastly, it is not clear that such a system can be \emph{economically} sustainable.
 
-The above proposals address \emph{rates} but they don't address \emph{levels} 
-and it is the level of economic activity that matters for sustainability -- as 
-exemplified in Figure \ref{fig:FootprintHDIGraph}.
+The above proposals address economic growth, that is changing the size of the 
+economy, but they don't address what that size is.
+It is the magnitude of economic activity (that is, the amount of consumption) 
+that matters for sustainability -- as exemplified in Figure \ref{fig:FootprintHDIGraph}.
 When we look at things through the economic lens, Figure \ref{fig:FootprintHDIGraph}
 suggests the only way to live sustainably is poverty. 
 The next two chapters will examine this dilemma in more detail.
