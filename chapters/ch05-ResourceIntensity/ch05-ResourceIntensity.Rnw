@@ -37,7 +37,7 @@ Nowhere.
 
 Clearly, the manufacturing sector of the economy requires resources to function.
 Raw materials (such as copper and minerals) are required to make
-finished goods (such as sewing machines and radios).
+finished goods (such as sewing machines and mobile phones).
 But even the service sector needs resources.
 Consider the simple example of a haircut.
 The stylist arrives at the salon in an automobile
@@ -125,9 +125,8 @@ the European Commission maintains a list Critical Raw Materials (CRMs)\index{mat
 with special importance across a wide range of industries.
 See Table~\ref{tab:CRMs} for critical materials and industries.
 One interesting feature of Table~\ref{tab:CRMs} is the large number of critical raw materials.
-Another interesting feature of Table~\ref{tab:CRMs} is the breadth of application 
-for most of the critical materials. 
-I.e., most of these materials are used extensively throughout the economy.
+Another interesting feature of Table~\ref{tab:CRMs} is the breadth of application; 
+most of the critical materials are used throughout the economy.
 
 \begin{table}
 \centering
@@ -140,9 +139,11 @@ I.e., most of these materials are used extensively throughout the economy.
 The rate at which the world's economy has been extracting resources
 to create products, create infrastructure, and deal with wastes
 has been accelerating in recent decades.
-In fact, when the economy grows, the demand for goods and services grows.
-When the demand for goods and services grows, 
-the demand for natural resources grows, too.
+% In fact, when the economy grows, the demand for goods and services grows.
+% When the demand for goods and services grows, 
+% the demand for natural resources grows, too.
+Economic growth, by definition, means an increasing demand for goods and services,
+which, in turn, means an increasing demand for natural resources.
 Figure~\ref{fig:total_material_use} shows the accelerating
 rate of extraction of materials from the Earth.
 Figure~\ref{fig:per_capita_material_use}
@@ -164,15 +165,15 @@ shows the same data on a per-capita basis.
 
 Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use} 
 show that resource consumption is growing at an ever-increasing rate.
-But is that rate sustainable?
+%But is that rate sustainable?
 By the ``strong sustainability'' criterion, 
 \emph{any} extraction of
-Construction minerals, Ores and industrial minerals, and Fossil energy carriers
+construction minerals, ores and industrial minerals, and fossil energy carriers
 is unsustainable, because these materials do not regenerate on human timescales.
 The fact that we are \emph{increasing} our rate of material extraction 
 means that we are running well afoul of strong sustainability.
 On the other hand, 
-extraction of Biomass \emph{can} be sustainable if 
+extraction of biomass \emph{can} be sustainable if 
 the extraction rate is less than the growth rate.
 
 
@@ -235,7 +236,7 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
   ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.05))) +
   viridis::scale_fill_viridis(discrete = TRUE) + 
   ggplot2::labs(x = NULL,
-                y = "Proportion of sustainable conssumption\nor emission [%]") +
+                y = "Proportion of sustainable \n consumption or emission [%]") +
   
   MKHthemes::xy_theme() + 
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
