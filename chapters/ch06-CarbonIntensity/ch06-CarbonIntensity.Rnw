@@ -460,32 +460,70 @@ rate_to_string <- function(rate) {
   paste(round(rate*100, 1), " \\%/yr")
 }
 
+trim_for_chapter <- function(.df, var, years = c(1800, 2019)) {
+  .df %>%
+    dplyr::filter(Year %in% years) %>% 
+    dplyr::select(Year, .data[[var]])
+}
+
+years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
+
 impact <- CO2_emissions %>%
-  dplyr::filter(Year %in% c(1800, 2019)) %>%
+  dplyr::filter(Year %in% years_for_rate_table) %>%
   dplyr::select(-Country)
 population <- region_pop %>%
-  dplyr::filter(Year %in% c(1800, 2019) & Country == "World") %>%
+  dplyr::filter(Year %in% years_for_rate_table & Country == "World") %>%
   dplyr::select(Year, total_population)
 affluence <- world_gdppc_Nordhaus %>%
-  dplyr::filter(Year %in% c(1800, 2019))
+  dplyr::filter(Year %in% years_for_rate_table)
 resource_intensity <- energy_intensity %>%
-  dplyr::filter(Year %in% c(1800, 2019)) %>%
+  dplyr::filter(Year %in% years_for_rate_table) %>%
   dplyr::select(Year, energy_per_GDP_MJ_per_dollar)
 carbon_intensity_of_resources <- carbon_intensity %>%
-  dplyr::filter(Year %in% c(1800, 2019)) %>%
+  dplyr::filter(Year %in% years_for_rate_table) %>%
   dplyr::select(Year, CO2_intensity_Mt_per_EJ)
 
-r_I <- rate_func(impact)
-r_P <- rate_func(population)
-r_A <- rate_func(affluence)
-r_R <- rate_func(resource_intensity)
-r_C <- rate_func(carbon_intensity_of_resources)
+iparc_df <- impact %>% 
+  dplyr::full_join(population, by = "Year") %>% 
+  dplyr::full_join(affluence, by = "Year") %>% 
+  dplyr::full_join(resource_intensity, by = "Year") %>% 
+  dplyr::full_join(carbon_intensity_of_resources, by = "Year") %>%
+  dplyr::mutate(
+    CO2_emissions_tonnes = CO2_emissions_tonnes / 1e9, # convert tonnes to giga-tonnes
+    total_population = total_population / 1e9, # convert total population to billions
+    gdppc_2017_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000 # convert $/person to k$/person
+  ) %>% 
+  magrittr::set_names(c("Year", "$I$ [Gt/yr]", "$P$ [billions]", "$A$ [k\\$/person]", "$R$", "$C$"))
+
+# Extract the data to be used in the calculations
+r_I <- iparc_df %>% trim_for_chapter(var = "$I$ [Gt/yr]") %>% rate_func()
+r_P <- iparc_df %>% trim_for_chapter(var = "$P$ [billions]") %>% rate_func()
+r_A <- iparc_df %>% trim_for_chapter(var = "$A$ [k\\$/person]") %>% rate_func()
+r_R <- iparc_df %>% trim_for_chapter(var = "$R$") %>% rate_func()
+r_C <- iparc_df %>% trim_for_chapter(var = "$C$") %>% rate_func()
 
 # r_I_check should be same as r_I
 r_I_check <- r_P + r_A + r_R + r_C
 
-stopifnot(abs(r_I_check - r_I) < 0.001)
+stopifnot(abs(r_I_check - r_I) < 0.0005)
 @
+
+
+<<IPARC_Table, results="asis">>=
+print(xtable::xtable(iparc_df, digits = c(0, 0, 3, 2, 2, 0, 0),
+                     caption = "IPARC terms in selected years.",
+                     label = "tab:iparc_select_years"),
+      include.rownames = FALSE,
+      include.colnames = TRUE,
+      caption.placement = "top",
+      type = "latex",
+      sanitize.text.function = function(x) {x},
+      booktabs = TRUE,
+      table.placement = NULL)
+@
+
+
+
 
 \begin{equation}
 \label{eq:IPARC_rate_with_numbers}
