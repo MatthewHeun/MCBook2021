@@ -273,16 +273,16 @@ I.e., material resources are subject to irreversible degradation.
 (Georgescu-Roegen was arguing by analogy from the second law of thermodynamics,
 which states that all forms of energy are subject to irreversible degradation.)
 Later, physicist and economist Robert Ayres correctly
-argued that the second law of thermodynamics applies to energy only 
+argued that the second law of thermodynamics applies only to energy 
 (not to material) and that 
 a stable, steady-state recycling system could exist
 provided that two conditions are met:
 (a) a large stockpile of waste material exists and 
-(b) exogenous source (the sun) supplies energy freely and
+(b) an exogenous source (the sun) supplies energy freely and
 at sufficient rate for reprocessing of discarded material~\cite{Ayres:1999}.
 
-The centrality of energy to recycling is evident, even at the most fundamental level
-of a debate about the viability of recycling!
+The importance of energy to recycling is evident, 
+even in a debate about its viability!
 
 \end{mcframe}
 
@@ -409,7 +409,7 @@ However, on a per-capita basis,
 energy consumption has grown substantially over the last two centuries
 (Figure~\ref{fig:EnergyPerPersonGraph}).
 
-<<EnergyPerPersonGraph, fig.cap="World primary energy consumption per person, $A \\times C$ in the IPARC equation (Equation \\ref{eq:IPARC}) for the prime example of energy. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times C$ in the IPARC equation.">>=
+<<EnergyPerPersonGraph, fig.cap="World primary energy consumption per person. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times C$ in the IPARC equation (Equation \\ref{eq:IPARC}) for the prime example of energy.">>=
 
 # Find which years have data from the Europe data set
 which_years <- region_pop %>%
