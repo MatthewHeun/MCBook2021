@@ -455,21 +455,15 @@ trim_for_chapter <- function(.df, var, years = c(1800, 2019)) {
     dplyr::select(Year, .data[[var]])
 }
 
-years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
-
 impact <- CO2_emissions %>%
-  dplyr::filter(Year %in% years_for_rate_table) %>%
   dplyr::select(-Country)
 population <- region_pop %>%
-  dplyr::filter(Year %in% years_for_rate_table & Country == "World") %>%
+  dplyr::filter(Country == "World") %>%
   dplyr::select(Year, total_population)
-affluence <- world_gdppc_Nordhaus %>%
-  dplyr::filter(Year %in% years_for_rate_table)
+affluence <- world_gdppc_Nordhaus 
 resource_intensity <- energy_intensity %>%
-  dplyr::filter(Year %in% years_for_rate_table) %>%
   dplyr::select(Year, energy_per_GDP_MJ_per_dollar)
 carbon_intensity_of_resources <- carbon_intensity %>%
-  dplyr::filter(Year %in% years_for_rate_table) %>%
   dplyr::select(Year, CO2_intensity_Mt_per_EJ)
 
 iparc_df <- impact %>% 
@@ -485,7 +479,7 @@ iparc_df <- impact %>%
   magrittr::set_names(c("Year", "$I$ [Gt/yr]", "$P$ [billions]", "$A$ [k\\$/person]", 
                         "$R$ [MJ/\\$]", "$C$ [Mt/EJ]"))
 
-# Extract the data to be used in the calculations
+# Extract the data to be used in the equation
 r_I <- iparc_df %>% trim_for_chapter(var = "$I$ [Gt/yr]") %>% rate_func()
 r_P <- iparc_df %>% trim_for_chapter(var = "$P$ [billions]") %>% rate_func()
 r_A <- iparc_df %>% trim_for_chapter(var = "$A$ [k\\$/person]") %>% rate_func()
@@ -514,7 +508,10 @@ The answers are shown in Equation~\ref{eq:IPARC_rate_with_numbers}.
 
 
 <<IPARC_Table, results="asis">>=
-print(xtable::xtable(iparc_df, digits = c(0, 0, 3, 2, 2, 2, 2),
+years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
+
+print(xtable::xtable(iparc_df %>% 
+                       dplyr::filter(Year %in% years_for_rate_table), digits = c(0, 0, 3, 2, 2, 2, 2),
                      caption = "IPARC terms in selected years.",
                      label = "tab:iparc_select_years"),
       include.rownames = FALSE,
