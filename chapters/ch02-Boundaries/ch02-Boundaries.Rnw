@@ -675,6 +675,7 @@ CO2_emissions %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_emissions_Gt")) +
   ggplot2::geom_vline(xintercept = c(1932, 1945, 1974, 1982, 1992, 2009), size = 0.2) +
   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+  ggplot2::scale_y_continuous(limits = c(0, 40)) +
   ggplot2::labs(x = NULL,
                 y = expression("World "*CO[2]*" emissions [Gt/year]")) +
 
