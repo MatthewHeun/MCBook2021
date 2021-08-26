@@ -430,12 +430,14 @@ which terms are moving in an unsustainable direction ($r > 0$).
 Each rate ($r$) is calculated by
 
 \begin{equation} \label{eq:rate_calcs}
-  r_y = \left[ \left( \frac{y_{2019}}{y_{1800}} \right) ^ \frac{1}{2019 - 1800} - 1 \right] \times 100 \; ,
+  r_y = \left[ \left( \frac{y_2}{y_1} \right) ^ \frac{1}{t_2 - t_1} - 1 \right] \times 100 \; ,
 \end{equation}
 %
 where
-$r$ is the rate of change in \%/year and 
-$y$ is one of $I$, $P$, $A$, $R$, or $C$.
+$r$ is the rate of change in \%/year, 
+$y$ is one of $I$, $P$, $A$, $R$, or $C$, 
+subscript ``2'' indicates a later year, and 
+subscript ``1'' indicates an earlier year.
 
 <<RatesOfChange>>=
 rate_func <- function(df) {
@@ -515,7 +517,7 @@ years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
 
 print(xtable::xtable(iparc_df %>% 
                        dplyr::filter(Year %in% years_for_rate_table), digits = c(0, 0, 3, 2, 2, 2, 2),
-                     caption = "IPARC terms in selected years from Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:CarbonIntensityGraph}.",
+                     caption = "IPARC terms from selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:CarbonIntensityGraph}.",
                      label = "tab:iparc_select_years"),
       include.rownames = FALSE,
       include.colnames = TRUE,
@@ -546,8 +548,9 @@ at an average rate of $r_I =$ \Sexpr{rate_to_string(r_I)} from 1800--2019.
 The declining energy intensity of the economy 
 is the only term in the IPARC identity
 putting downward pressure on CO$_2$ emissions ($r_R < 0$).
-All other terms are greater than zero and driving CO$_2$ emissions upward.
-These positive terms represent the sources of our sustainability challenges
+All other terms on the right side of Equation~\ref{eq:IPARC_rate_with_numbers}
+are greater than zero and driving CO$_2$ emissions upward.
+The positive terms represent the sources of our sustainability challenges
 for the prime example:
 rising population ($r_P > 0$), 
 rising affluence ($r_A > 0$), and 
@@ -558,7 +561,7 @@ trends over shorter periods of time.
 
 The IPARC identity and 
 the prime example (energy consumption and CO$_2$ emissions)
-show that we are headed in an unsustainable direction,
+show that we are heading in an unsustainable direction,
 as CO$_2$ emissions are accelerating over time.
 In other words,
 Part~\ref{part:IPARC} (Chapters~\ref{chap:planetary_boundaries}--\ref{chap:carbon_intensity})
