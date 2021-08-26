@@ -433,7 +433,7 @@ Each rate ($r$) is calculated by
 %
 where
 $r$ is the rate of change in \%/year and 
-$y$ is one of $P$, $A$, $R$, or $C$.
+$y$ is one of $I$, $P$, $A$, $R$, or $C$.
 
 The data in Figures~\ref{fig:PopulationGraph}, 
 \ref{fig:AffluenceGraph-Nordhaus}, 
@@ -493,14 +493,15 @@ iparc_df <- impact %>%
     total_population = total_population / 1e9, # convert total population to billions
     gdppc_2017_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000 # convert $/person to k$/person
   ) %>% 
-  magrittr::set_names(c("Year", "$I$ [Gt/yr]", "$P$ [billions]", "$A$ [k\\$/person]", "$R$", "$C$"))
+  magrittr::set_names(c("Year", "$I$ [Gt/yr]", "$P$ [billions]", "$A$ [k\\$/person]", 
+                        "$R$ [MJ/\\$]", "$C$ [Mt/EJ]"))
 
 # Extract the data to be used in the calculations
 r_I <- iparc_df %>% trim_for_chapter(var = "$I$ [Gt/yr]") %>% rate_func()
 r_P <- iparc_df %>% trim_for_chapter(var = "$P$ [billions]") %>% rate_func()
 r_A <- iparc_df %>% trim_for_chapter(var = "$A$ [k\\$/person]") %>% rate_func()
-r_R <- iparc_df %>% trim_for_chapter(var = "$R$") %>% rate_func()
-r_C <- iparc_df %>% trim_for_chapter(var = "$C$") %>% rate_func()
+r_R <- iparc_df %>% trim_for_chapter(var = "$R$ [MJ/\\$]") %>% rate_func()
+r_C <- iparc_df %>% trim_for_chapter(var = "$C$ [Mt/EJ]") %>% rate_func()
 
 # r_I_check should be same as r_I
 r_I_check <- r_P + r_A + r_R + r_C
@@ -510,7 +511,7 @@ stopifnot(abs(r_I_check - r_I) < 0.0005)
 
 
 <<IPARC_Table, results="asis">>=
-print(xtable::xtable(iparc_df, digits = c(0, 0, 3, 2, 2, 0, 0),
+print(xtable::xtable(iparc_df, digits = c(0, 0, 3, 2, 2, 1, 1),
                      caption = "IPARC terms in selected years.",
                      label = "tab:iparc_select_years"),
       include.rownames = FALSE,
