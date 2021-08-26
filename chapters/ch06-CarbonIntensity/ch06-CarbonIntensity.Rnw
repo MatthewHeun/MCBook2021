@@ -723,14 +723,12 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
         You will use $(1 + r_1)(1 + r_2) \approx r_1 + r_2 + 1$ for $r_1, r_2 <\!\!\!< 1$
         in the derivation.
   
-  \item Verify the calculations in Equation~\ref{eq:IPARC_rate_with_numbers}.
+  \item Verify the calculations in Equation~\ref{eq:IPARC_rate_with_numbers}
+        using data from Table~\ref{tab:iparc_select_years}.
         Then recalculate the terms in Equation~\ref{eq:IPARC_rate_with_numbers} 
-        using estimated numbers from 
-        Figures~\ref{fig:PopulationGraph}, 
-        \ref{fig:AffluenceGraph-Nordhaus}, 
-        \ref{fig:EnergyIntensityGraph-Nordhaus}, 
-        and~\ref{fig:CarbonIntensityGraph}
-        for the last 50 years only and for the last 10 years only.
+        for the last 69 years only (1950--2019), 
+        for the last 49 years only (1970--2019), and
+        for the last 9 years only (2010--2019).
         How are the results similar to or different from the results 
         of Equation~\ref{eq:IPARC_rate_with_numbers}?
 
