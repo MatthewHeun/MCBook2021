@@ -493,7 +493,8 @@ stopifnot(abs(r_I_check - r_I) < 0.0005)
 @
 
 
-Select data from Figures~\ref{fig:PopulationGraph}, 
+Select data from Figures~\ref{fig:CarbonEmissionsGraph},
+\ref{fig:PopulationGraph}, 
 \ref{fig:AffluenceGraph-Nordhaus}, 
 \ref{fig:EnergyIntensityGraph-Nordhaus}, 
 and~\ref{fig:CarbonIntensityGraph} 
@@ -512,7 +513,7 @@ years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
 
 print(xtable::xtable(iparc_df %>% 
                        dplyr::filter(Year %in% years_for_rate_table), digits = c(0, 0, 3, 2, 2, 2, 2),
-                     caption = "IPARC terms in selected years.",
+                     caption = "IPARC terms in selected years from Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:CarbonIntensityGraph}.",
                      label = "tab:iparc_select_years"),
       include.rownames = FALSE,
       include.colnames = TRUE,
