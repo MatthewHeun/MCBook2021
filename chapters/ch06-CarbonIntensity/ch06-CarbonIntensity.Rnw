@@ -416,7 +416,7 @@ in the right-side terms ($P$, $A$, $R$, and $C$).
 To do so, we introduce a rate version of the IPARC equation.
 
 In the rate version of the IPARC equation, each term is represented 
-by a rate of change ($r$), measured in \%/year.
+by an exponential rate of change ($r$), measured in \%/year.
 The rate version of the IPARC equation indicates 
 which terms are moving in a sustainable direction ($r < 0$) and
 which terms are moving in an unsustainable direction ($r > 0$).
@@ -434,17 +434,6 @@ Each rate ($r$) is calculated by
 where
 $r$ is the rate of change in \%/year and 
 $y$ is one of $I$, $P$, $A$, $R$, or $C$.
-
-The data in Figures~\ref{fig:PopulationGraph}, 
-\ref{fig:AffluenceGraph-Nordhaus}, 
-\ref{fig:EnergyIntensityGraph-Nordhaus}, 
-and~\ref{fig:CarbonIntensityGraph} 
-can be used with Equation~\ref{eq:rate_calcs}
-to answer the question, 
-``what equivalent annual rate of change ($r$) 
-would give the same start and end points
-in 1800 and 2019?''
-The answers are shown in Equation~\ref{eq:IPARC_rate_with_numbers}.
 
 <<RatesOfChange>>=
 rate_func <- function(df) {
@@ -510,8 +499,22 @@ stopifnot(abs(r_I_check - r_I) < 0.0005)
 @
 
 
+Select data from Figures~\ref{fig:PopulationGraph}, 
+\ref{fig:AffluenceGraph-Nordhaus}, 
+\ref{fig:EnergyIntensityGraph-Nordhaus}, 
+and~\ref{fig:CarbonIntensityGraph} 
+are shown in Table~\ref{tab:iparc_select_years}.
+Data from Table~\ref{tab:iparc_select_years}
+can be used with Equation~\ref{eq:rate_calcs}
+to answer the question, 
+``what equivalent annual rate of change ($r$) 
+would give the same start and end points
+in 1800 and 2019?''
+The answers are shown in Equation~\ref{eq:IPARC_rate_with_numbers}.
+
+
 <<IPARC_Table, results="asis">>=
-print(xtable::xtable(iparc_df, digits = c(0, 0, 3, 2, 2, 1, 1),
+print(xtable::xtable(iparc_df, digits = c(0, 0, 3, 2, 2, 2, 2),
                      caption = "IPARC terms in selected years.",
                      label = "tab:iparc_select_years"),
       include.rownames = FALSE,
@@ -522,8 +525,6 @@ print(xtable::xtable(iparc_df, digits = c(0, 0, 3, 2, 2, 1, 1),
       booktabs = TRUE,
       table.placement = NULL)
 @
-
-
 
 
 \begin{equation}
@@ -551,6 +552,9 @@ for the prime example:
 rising population ($r_P > 0$), 
 rising affluence ($r_A > 0$), and 
 expanded use of fossil fuels ($r_C > 0$).
+Together with Equation~\ref{eq:IPARC_rate_with_numbers},
+the data in Table~\ref{tab:iparc_select_years} can be used to discern
+trends over shorter periods of time. 
 
 The IPARC identity and 
 the prime example (energy consumption and CO$_2$ emissions)
