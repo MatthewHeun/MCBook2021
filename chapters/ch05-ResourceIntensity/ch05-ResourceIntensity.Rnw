@@ -569,7 +569,7 @@ energy_intensity %>%
   ggplot2::geom_line(size = 1, colour = mc_title_blue) + 
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = NULL,
-                y = expression(atop("Prim. energy intensity ("*I[p]*") [MJ/2017 Intl. $]"))) +
+                y = expression(atop("Prim. energy intensity (R) [MJ/2017 Intl. $]"))) +
   MKHthemes::xy_theme()
 @
 
