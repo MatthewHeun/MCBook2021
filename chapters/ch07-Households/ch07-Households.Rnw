@@ -16,7 +16,7 @@ households (this chapter),
 transportation (Chapter~\ref{chap:transportation}), 
 agriculture (Chapter~\ref{chap:agriculture}), and
 land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}).
-The structure of each chapter is similar:
+The structure of each chapter in Part \ref{part:sustainability_challenges} is similar:
 First, the importance of that area of life to sustainability is demonstrated.
 Next, technical details about sustainability in that area of life are presented.
 Finally, a summary provides pointers to other chapters 
@@ -30,14 +30,13 @@ where personal or collective actions relevant to that area of life are discussed
 
 Households are important for sustainability, 
 because they are sites of energy and material consumption.
-For example, Figure~\ref{fig:LLNL_sankey} shows that 
-11.5~quads of energy are consumed in U.S.\ residences%
-\footnote{
-A quad is 1 short quadrillion BTUs, or $10^{15}$~BTU.
-},
-%
-predominantly electricity and natural gas.\index{electricity!consumption!households}
-This 11.5~quads represents 16\% of final energy consumption.
+For example, Figure~\ref{fig:LLNL_energy_sankey} shows that 
+11.9~quads of energy are consumed in U.S.\ residences annually,
+and Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
+from the residential sector come to 
+\Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Gt/year,
+predominantly from electricity and natural gas.\index{electricity!consumption!households}
+This 11.9~quads represents 12\% of final energy consumption.
 Energy consumption is the source of sustainability impacts
 (CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of} and 
 natural resource extraction\index{natural resources!extraction of})
@@ -54,27 +53,25 @@ far beyond the walls of each abode.
 Households are the site where sustainability meets everyday life.
 \end{mcframe}
 
-Some people (physical plant employees, custodial staff, or supervisors)
+In the formal employment sector, 
+physical plant employees, building managers, and custodial staff
 operate buildings and machines
 that consume energy, raw materials, and other resources.
-Such leaders make decisions every day that have sustainability implications.
 In contrast, ordinary people often have little power to make decisions
 with sustainability implications
-in many areas of life 
-(work, school, or church).
-However, every ordinary person makes decisions with sustainability implications
-in their own household.
+at work, at school, or at church.
+However, everyone with a house makes decisions with sustainability implications
+in their own home.
 
 Figure~\ref{fig:average_residential_energy} shows how the average U.S.\ resident
-allocates their energy consumption\index{energy consumption!residential}
+allocates energy consumption\index{energy consumption!residential}
 for several end uses~\citep[Fig.~3]{EIA_2018}.
 The end use categories in Figure~\ref{fig:average_residential_energy} illustrate
 how choices made in households
 intersect with sustainability topics covered in other chapters, including
-energy and water (Chapter~\ref{chap:resource_intensity}) and 
+energy (Chapter~\ref{chap:resource_intensity}) and 
 food (Chapter~\ref{chap:agriculture}).
-Clearly,
-population (Chapter~\ref{chap:population}),
+Population (Chapter~\ref{chap:population}),
 the economy (Chapter~\ref{chap:affluence}),
 land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}),
 government (Chapter~\ref{chap:government}), and
