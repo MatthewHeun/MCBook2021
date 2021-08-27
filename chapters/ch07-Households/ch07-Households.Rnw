@@ -85,6 +85,35 @@ also affect household sustainability.
 \label{fig:average_residential_energy}
 \end{figure}
 
+
+<<Household-energy-by-end-use, fig.cap = "U.S. final energy consumption by end use 2015.>>=
+household_energy_by_end_use <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "end-use-consumption-by-housing-type.xlsx"),
+                                                  sheet = "data to plot")
+
+#create pie chart
+household_energy_by_end_use %>% 
+   ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = Percentage, fill = End_use)) +
+   ggplot2::geom_bar(stat = "identity", width = 1) +
+   ggplot2::coord_polar("y", start = 0) +
+   ggplot2::geom_text(ggplot2::aes(label = paste0(Percentage, "%")), position = ggplot2::position_stack(vjust = 0.5)) +
+   
+   MKHthemes::xy_theme() +
+   ggplot2::labs(x = NULL, y = NULL, fill = NULL) + 
+   ggplot2::theme(axis.line = ggplot2::element_blank(),
+                  axis.text = ggplot2::element_blank(),
+                  axis.ticks = ggplot2::element_blank())
+
+
+# household_energy_by_end_use <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "end-use-consumption-by-housing-type.xlsx"),
+#                                                   sheet = "data to plot")
+# 
+# household_energy_by_end_use %>% 
+#   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "", y = "Percentage", fill = "End_use")) + 
+#   ggplot2::geom_bar(stat = "identity", width = 1) +
+#   ggplot2::coord_polar("y", start = 0) 
+
+@
+
 The end uses in Figure~\ref{fig:average_residential_energy}
 can be aggregated to form fewer major categories
 of residential energy consumption.
