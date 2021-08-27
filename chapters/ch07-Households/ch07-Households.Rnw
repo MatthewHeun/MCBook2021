@@ -86,7 +86,7 @@ also affect household sustainability.
 \end{figure}
 
 
-<<Household-energy-by-end-use, fig.cap = "U.S. final energy consumption by end use 2015.>>=
+<<Household-energy-by-end-use, fig.cap = "U.S. final energy consumption by end use 2015.">>=
 household_energy_by_end_use <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "end-use-consumption-by-housing-type.xlsx"),
                                                   sheet = "data to plot")
 
