@@ -53,7 +53,8 @@ Simply having oceans and an atmosphere \emph{provides} a place for pollution to 
 The second set of services is \emph{regulating and supporting services}, 
 which sustain and stabilize the ecosystem, including 
 processes for breaking down and recycling dead organisms; 
-the carbon cycle (see Figure~\ref{fig:CCycle}),  nitrogen, oxygen, and water cycles; 
+the carbon cycle, %(see Figure~\ref{fig:CCycle}),  
+nitrogen, oxygen, and water cycles; 
 and the fact that plant roots stabilize soil and prevent erosion.
 
 The third set of services is \emph{cultural services}, 
@@ -128,7 +129,7 @@ If a boat is tipped a small amount, the weight of the boat and the effect of
 buoyancy act to right the boat, see Figure~\ref{fig:buoyancy}. 
 However, there is an angle where, if the boat is tipped past that angle, the forces 
 will act in the opposite way -- to suddenly and catastrophically flip the boat.
-A \emph{tipping point} is where the behavior of a system changes. 
+A \emph{tipping point} is where the behavior of a system fundamentally changes. 
 There is concern that Earth's ecosystem services may have reached or are near a tipping
 point, that is, they have been disturbed to the point of being on the edge of 
 catastrophic collapse.
@@ -184,7 +185,7 @@ in the airplane). Because ecosystems dynamics are nonlinear and interrelated,
 tipping points exist, and human actions can cause a series of cascading failures
 that will ultimately degrade the Earth's ability to support life. 
 Exponential growth, for instance in human population and consumption, is analogous
-to heeling over a boat. Growth cause greater and great demands on the ecosystem. 
+to heeling over a boat. Growth causes greater and great demands on the ecosystem. 
 Eventually the boat heels over so far that it capsizes.
 
 % "Climate genocide"
@@ -656,12 +657,12 @@ are causing the average global temperature to increase.
 The current average atmospheric CO$_2$ concentration is an example of humanity
 exceeding a planetary boundary. Because the carbon cycle is one of Earth's 
 regulating and support ecosystem services, and because the atmosphere is comprehensively
-global, the \emph{impacts} of climate on the environment are many. Climate change
-is the term used to describe the results of the greenhouse effect.
+global, the \emph{impacts} of climate on the environment are many. 
+Climate change is the term used to describe the results of the greenhouse effect.
 Climate change is interacting with many other planetary systems and so contributes
-to, for example, the extinction rate. Climate change is causing ocean acidification,
-sea level rise, and the increased frequency of extreme natural disasters,
-such as wild fires, and destructive tropical storms. 
+to, for example, the extinction rate. 
+Climate change is causing ocean acidification, sea level rise, and the increased 
+frequency of extreme natural disasters, such as wild fires, and destructive tropical storms. 
 
 <<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw} from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
@@ -726,11 +727,8 @@ closer to the Earth's surface.
 Eventually the upper atmosphere will warm enough to radiate as much heat as 
 is incoming from the Sun but that warming process takes a very long time.
 
-
-The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
-The clear trend is upward, with small drops corresponding to years of economic recession.
-
-
+% The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
+% The clear trend is upward, with small drops corresponding to years of economic recession.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
