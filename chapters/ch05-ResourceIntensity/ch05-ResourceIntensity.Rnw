@@ -202,7 +202,7 @@ The Graedel and Allenby method involves four steps:
         often assuming equal per-capita consumption over 50 years.
         
   \item Establish the ``re-capturable'' resource base, often via recycling or mining
-        stockpiles and landfills, and allocate to per-capita consumptino over 50 years. 
+        stockpiles and landfills, and allocate to per-capita consumption over 50 years. 
         The sum of the per-capita virgin material supply rate and the 
         allocated re-capturable resource rate gives the sustainable consumption rate.
         
@@ -493,7 +493,8 @@ print(xtable::xtable(weak_sust_energy_data,
 \label{sec:energy_intensity_of_the_economy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Continuing the explication of the IPARC identity, 
+Continuing the \href{https://en.wiktionary.org/wiki/explication}{explication}
+of the IPARC identity, 
 we form a term for the primary energy intensity of the world economy
 as the example for resource intensity of the economy ($R$).
 The energy intensity of the economy is formed
@@ -611,6 +612,9 @@ as finished goods are imported and manufacturing heads off shore~\cite{Hardt:201
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Peter M. Schwarz, \emph{Energy Economics}, Routledge 2018 \\
+% https://www.routledge.com/Energy-Economics/Schwarz/p/book/9780415676786
+
 Kostas Bithas and Panos Kalimeris, 
 \emph{Unmasking decoupling: Redefining the Resource Intensity of the Economy.} 
 Science of the Total Environment, 2018 \cite{Bithas2018} \\
@@ -633,15 +637,66 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
 
 \begin{questions}
 
+  \item What is the purpose of mineral resources in the environment? 
+        Should they be left in place or used?
+        Humans are the only creatures on Earth that make use of most minerals.
+        What are some positive impacts on animal populations that arise from 
+        humans' use of materials that are not available to any other animal?
+  
   \item Is the strong sustainability criterion appropriate?
         Or is it too severe for modern life today?
         Justify your answer.
+        Can it be applied selectively to some materials but not others or should 
+        all materials be judged equally?
   
-  \item Is the Graedel and Allenby sustainability criterion a good criterion?
+  \item Why is the Graedel and Allenby (weak) sustainability criterion a good criterion?
         What is the basis for your judgement?
+        
+  \item Time is the ultimate resource. The human lifespan is about 4000 weeks.
+        How do you use your time? What fraction of your total time is devoted to
+        economically productive activities? Why? What are the sustainability 
+        impacts of how you spend your time? Can you quantify this in terms of the
+        IPARC equation?
+
+  \item You can survive approximately 3 minutes without air, 3 days without water,
+        and 3 weeks without food. Water is a critical resource. 70-80\% of the 
+        water we use is in agriculture for food production, so ``water'' is 
+        something we eat \emph{and} drink (and use for industrial processes).
+        It takes energy to obtain, purify, and distribute clean water. 
+        Think about sources for water and the energy implications of each source.
+        Desalination of seawater is becoming a more prominent source of water for
+        many populations. Carbon emissions from desalination are expected to go
+        from 76 million tons of CO$_2$ per year in 2020 to 218 million tons per
+        year by 2040. Discuss where this energy goes. Where does the water go? 
+        Water isn't ``used up.'' Fossil fuels are chemically changed into other
+        chemical entities. Water stays water.
+        
+  \item Consider the effects of a carbon tax on transportation. Supply chain 
+        issues related to Covid-19 and a container ship stuck in the Suez canal
+        created a ``shipping apocalypse.'' Raising the \emph{cost} of shipping 
+        would disproportionately affect low profit-margin goods and very heavy
+        goods. How would you approach weighing the pros and cons of such a tax?
+        
+  \item The weak sustainability criterion in Section 
+        \ref{sec:resources_weak_sustainability} is predicated (per Daly) on
+        renewable substitutes being found for nonrenewable resources. 
+        Discuss the rates of adoption of renewable replacements for the items
+        in Table \ref{tab:Weak-Sust-Energy}. How does this compare to 
+        replacements for materials in Figures \ref{fig:total_material_use}-
+        \ref{fig:PercentageOfSustainable}.
+
+  \item A recent report described a canvas tote bag needing to replace 50,000
+        plastic shopping bags to break even. John Green described his emotional
+        reaction to this. How should we communicate these things better?
+        
+  \item Ehrlich's wager/predictions have repeated failed to come to pass. 
+        Similarly, concerns about resource scarcity are also likely overblown.
+        What then should we expect from the future? (Julian Simon quote.)
+        How should we plan for the future?
       
-  \item **** Finite vs.\ increasing resources. Mineral vs.\ labor. ****
-  
+%  \item **** Finite vs.\ increasing resources. Mineral vs.\ labor. ****
+% Not a question here, I think.
+
   \item Maximum sustainable yield. If we harvest less than this we're ``leaving
         money on the table'' and our efficiency metrics are less good. How
         do we decide how much to take? Fish, e.g.
@@ -698,6 +753,16 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         Which approach works best? 
         Which approaches are ineffective?  
         Why?
+        
+  \item Evaluate the ecological and economic impacts substitution of an 
+        injection-molded plastic part for a stamped steel part on an automobile.
+        What are the raw material and extraction implications?
+        How much energy is used to create the part?
+        Does using a lighter part have energy implications over the life of the 
+        vehicle?
+        Are there issues with corrosion or UV exposure?
+        Are there disposal or recycling issues?
+        In your view, which material is more environmentally friendly?
       
 \end{projects}
 

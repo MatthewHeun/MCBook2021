@@ -1268,4 +1268,19 @@
   url      = {https://www.sciencedirect.com/science/article/pii/S0048969717331194},
 }
 
+@Article{Brown2014,
+  author   = {James H. Brown and Joseph R. Burger and William R. Burnside and Michael Chang and Ana D. Davidson and Trevor S. Fristoe and Marcus J. Hamilton and Sean T. Hammond and Astrid Kodric-Brown and Norman Mercado-Silva and Jeffrey C. Nekola and Jordan G. Okie},
+  journal  = {Ecological Engineering},
+  title    = {Macroecology meets macroeconomics: Resource scarcity and global sustainability},
+  year     = {2014},
+  issn     = {0925-8574},
+  note     = {Sustainable Restoration},
+  pages    = {24-32},
+  volume   = {65},
+  abstract = {The current economic paradigm, which is based on increasing human population, economic development, and standard of living, is no longer compatible with the biophysical limits of the finite Earth. Failure to recover from the economic crash of 2008 is not due just to inadequate fiscal and monetary policies. The continuing global crisis is also due to scarcity of critical resources. Our macroecological studies highlight the role in the economy of energy and natural resources: oil, gas, water, arable land, metals, rare earths, fertilizers, fisheries, and wood. As the modern industrial-technological-informational economy expanded in recent decades, it grew by consuming the Earth's natural resources at unsustainable rates. Correlations between per capita GDP and per capita consumption of energy and other resources across nations and over time demonstrate how economic growth and development depend on “nature's capital”. Decades-long trends of decreasing per capita consumption of multiple important commodities indicate that overexploitation has created an unsustainable bubble of population and economy.},
+  doi      = {https://doi.org/10.1016/j.ecoleng.2013.07.071},
+  keywords = {Ecological economics, Economic growth, Human ecology, Macroecology, Resource scarcity, Global sustainability},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0925857413003236},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
