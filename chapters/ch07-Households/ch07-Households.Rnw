@@ -17,7 +17,7 @@ transportation (Chapter~\ref{chap:transportation}),
 agriculture (Chapter~\ref{chap:agriculture}), and
 land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}).
 The structure of each chapter in Part \ref{part:sustainability_challenges} is similar:
-First, the importance of that area of life to sustainability is demonstrated.
+First, the importance of that area of life to sustainability is discussed.
 Next, technical details about sustainability in that area of life are presented.
 Finally, a summary provides pointers to other chapters 
 where personal or collective actions relevant to that area of life are discussed.
@@ -55,13 +55,14 @@ Households are the site where sustainability meets everyday life.
 
 In the formal employment sector, 
 physical plant employees, building managers, and custodial staff
-operate buildings and machines
+make decisions about buildings and machines
 that consume energy, raw materials, and other resources.
 In contrast, ordinary people often have little power to make decisions
 with sustainability implications
 at work, at school, or at church.
-However, everyone with a house makes decisions with sustainability implications
-in their own home.
+However, everyone who lives in a house or apartment 
+makes decisions with sustainability implications
+in their home.
 
 Figure~\ref{fig:average_residential_energy} shows how the average U.S.\ resident
 allocates energy consumption\index{energy consumption!residential}
@@ -94,14 +95,17 @@ household_energy_by_end_use <- readxl::read_excel(file.path("chapters", "ch07-Ho
 household_energy_by_end_use %>% 
    ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = Percentage, fill = End_use)) +
    ggplot2::geom_bar(stat = "identity", width = 1) +
-   ggplot2::coord_polar("y", start = 0) +
-   ggplot2::geom_text(ggplot2::aes(label = paste0(Percentage, "%")), position = ggplot2::position_stack(vjust = 0.5)) +
-   
-   MKHthemes::xy_theme() +
+   ggplot2::coord_polar(theta = "y", start = 0, direction = -1) +
+   ggplot2::geom_text(ggplot2::aes(label = paste0(Percentage, "%")), 
+                      position = ggplot2::position_stack(vjust = 0.5)) +
    ggplot2::labs(x = NULL, y = NULL, fill = NULL) + 
+
+   MKHthemes::xy_theme() +
    ggplot2::theme(axis.line = ggplot2::element_blank(),
-                  axis.text = ggplot2::element_blank(),
+                  axis.text.x = ggplot2::element_blank(),
                   axis.ticks = ggplot2::element_blank())
+
+
 
 
 # household_energy_by_end_use <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "end-use-consumption-by-housing-type.xlsx"),
@@ -448,15 +452,14 @@ eliminating the need to consume electricity for artificial indoor lighting.
 
 This chapter identified many sustainability challenges that pertain to households
 and decisions made by ordinary people in their homes and apartments.
-Energy and material consumption decision by household residents
+Energy and material consumption decisions by household residents
 drives sustainability in the home. 
 Key areas of decision-making include
 purchasing and renting,
 heating and cooling,
 hygiene, and
 lighting, 
-because these areas of everyday life drive energy consumption
-in homes and apartments.
+because these are areas of everyday life in which many homeowners have agency.
 Chapter~\ref{chap:personal_action} provides concrete suggestions
 for making homes and apartments more sustainable.
 
