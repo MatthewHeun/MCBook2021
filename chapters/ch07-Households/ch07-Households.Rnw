@@ -96,10 +96,10 @@ household_energy_by_end_use %>%
    ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = Percentage, fill = End_use)) +
    ggplot2::geom_bar(stat = "identity", width = 1) +
    ggplot2::coord_polar(theta = "y", start = 0, direction = -1) +
-   ggplot2::geom_text(ggplot2::aes(label = paste0(Percentage, "%")), 
+   ggplot2::geom_text(ggplot2::aes(x = 1.65, label = paste0(Percentage, "%")), 
                       position = ggplot2::position_stack(vjust = 0.5), 
-                      colour = "white") +
-   viridis::scale_fill_viridis(discrete = TRUE, begin = 0.1, end = 0.9) + 
+                      colour = "gray50") +
+   viridis::scale_fill_viridis(discrete = TRUE) + 
    ggplot2::labs(x = NULL, y = NULL, fill = NULL) + 
 
    MKHthemes::xy_theme() +
