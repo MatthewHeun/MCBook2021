@@ -495,6 +495,20 @@ Table \ref{tab:eroi} lists energy returns for various sources of energy.
 Some authors have suggested a minimum EROI of 5 for sustainability \cite{Ferruccio2016}
 with 12 to 13 necessary for a technological society.
 
+\begin{table}\centering
+\caption{Energy return on investment (EROI) for several energy sources. % Source: wikipedia entry for EROI
+\label{tab:eroi}}
+\begin{tabular}{ll}\toprule
+\textbf{Energy source} & \textbf{EROI} \\ \midrule
+Nuclear power & 75-100 \\ \midrule
+Coal and natural gas & 28-31 \\ \midrule
+Hydroelectric & 50 \\ \midrule
+Concentrated solar thermal & 21 \\ \midrule
+Wind energy & 16-21 \\ \midrule
+Solar photovoltaic & 4-7 \\
+\bottomrule \end{tabular}
+\end{table}
+
 This book uses the IPARC equation as a framework for thinking about sustainability.
 We will consider many different resources and many different types of impact. 
 However, this book has a special focus on energy and CO$_2$ emissions.
