@@ -612,7 +612,7 @@ as finished goods are imported and manufacturing heads off shore~\cite{Hardt:201
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Peter M. Schwarz, \emph{Energy Economics}, Routledge 2018 \\
+Peter M. Schwarz, \emph{Energy Economics}, Routledge 2018. \\
 % https://www.routledge.com/Energy-Economics/Schwarz/p/book/9780415676786
 
 Kostas Bithas and Panos Kalimeris, 
@@ -637,15 +637,18 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
 
 \begin{questions}
 
-  \item Some aquifers are ``fossil water.'' Research this statement. 
-        Is using any such resource sustainable? What are the moral and
-        ethical implications of leaving a valuable and usable resource \emph{unused}?
+  \item Some aquifers, such as the Ogallala aquifer, are called ``fossil water'' 
+        because they were filled with glacial melt from the last ice age. 
+        Is using any such resource sustainable? 
+        What are the moral and ethical implications of leaving a valuable and 
+        usable resource \emph{unused}?
 
   \item What is the purpose of mineral resources in the environment? 
         Should they be left in place or used?
         Humans are the only creatures on Earth that make use of most minerals.
         What are some positive impacts on animal populations that arise from 
         humans' use of materials that are not available to any other animal?
+        Are there any?
   
   \item What are the positive features of the strong sustainability criterion?
         What are the weaknesses of the strong sustainability criterion?
@@ -653,8 +656,8 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         Justify your answer.
         Can it be applied selectively to some resources but not others or should 
         all resources be judged equally?
-        What are the implications of not applying the strong sustainability criterion universally
-        to all resources?
+        What are the implications of not applying the strong sustainability 
+        criterion universally to all resources?
   
   \item Why is the Graedel and Allenby (weak) sustainability criterion a good criterion?
         What are the drawbacks to weak sustainability criteria?
@@ -669,49 +672,55 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         What fraction of your total time is devoted to
         economically productive activities? Why? 
         What are the sustainability impacts of how you spend your time? 
-        Can you quantify the sustainability impacts of how you spend your time in terms of the
-        IPARC equation?
+        Can you quantify the sustainability impacts of how you spend your time 
+        in terms of the IPARC equation?
         
   \item Where does your water come from?
-        And how does it get to you?
-        How is energy, the ultimate resource, involved in providing water to you?
+        How does it get to you? Where is your waste water treated?
+        How is energy, the ultimate resource, involved in each of these steps?
         How has water provision changed over time where you live?
         
-  \item Evaluate the notion of a closed-loop water system (toilet-to-tap).
+  \item Evaluate the notion of a closed-loop water system (so called ``toilet-to-tap'').
         Would you drink water from a toilet-to-tap system?
-        Does your answer change if you learn that, already, 
-        we get PFAS, Tylenol, and psychoactive substances in our drinking water?
+        Does your answer change if you learn that, already, there are low levels 
+        of many pharmaceutical substances and organic pollutants in drinking water?
+        A closed-loop water system would probably lower exposure to some pollutants
+        and increase concentrations of pharmaceutical substances (or else require 
+        more advanced waste-water treatment technology). 
+        How does a closed-loop system affect sustainability for communities that 
+        use it? Other communities?
 
-  \item **** There is no question here. Maybe delete. ****
-        You can survive approximately 3 minutes without air, 3 days without water,
-        and 3 weeks without food. 
-        Water is a critical resource. 
-        70-80\% of the water we use is in agriculture for food production, so ``water'' is 
-        something we eat \emph{and} drink (and use for industrial processes).
-        It takes energy to obtain, purify, and distribute clean water. 
-        Think about sources for water and the energy implications of each source.
-        Desalination of seawater is becoming a more prominent source of water for
+  \item Carbon-driven global climate change and population growth are making 
+        desalination of seawater a more prominent source of water for
         many populations. 
-        Carbon emissions from desalination are expected to go
-        from 76 million tons of CO$_2$ per year in 2020 to 218 million tons per
-        year by 2040.
-        Discuss where this energy goes. 
-        Where does the water go? 
-        Water isn't ``used up.'' 
-        Fossil fuels are chemically changed into other chemical entities. 
-        Water stays water.
+        Carbon emissions from desalination may increase from 76 million 
+        tons of CO$_2$ per year in 2015 to 200-500 million tons per year by 2040
+        \cite{GCWDA2015}. 
+        % see also Rothausen, S., Conway, D. Greenhouse-gas emissions from energy use in the water sector. 
+        % Nature Clim Change 1, 210–219 (2011). https://doi.org/10.1038/nclimate1147
+        Is there an individual right to water?
+        Do nation states have a right to water?
+        Does it matter if you're oil-rich Saudi Arabia or the (relatively) poor 
+        and low-lying Republic of the Marshall Islands?
+        Discuss how these rights impact global efforts to limit climate change.
         
-  \item Is a carbon tax a reduction in affluence (Chapter~\ref{chap:affluence})
-        or is it a way to incentivize a shift to carbon-free forms of energy?
+  \item Consider a carbon tax on commercial transportation.
+        Is such a tax a reduction in affluence (Chapter~\ref{chap:affluence}) 
+        because the same goods you used to purchase now cost more?
+        Or would you view the tax as a enriching your natural capital by 
+        incentivizing a shift to carbon-free forms of energy (thereby providing 
+        you with all the benefits of a stronger ecosystem)?
         What beliefs or values inform your answer?
+        How might such an evaluation be extended from the personal to a national 
+        or global scale?
   
-  \item **** Maybe not a good question. Consider deleting. ****
-        Consider the effects of a carbon tax on transportation. Supply chain 
-        issues related to Covid-19 and a container ship stuck in the Suez canal
-        created a ``shipping apocalypse.'' Raising the \emph{cost} of shipping 
-        would disproportionately affect low profit-margin goods and very heavy
-        goods. How would you approach weighing the pros and cons of such a tax?
-        
+  % \item **** Maybe not a good question. Consider deleting. ****
+  %       Consider the effects of a carbon tax on transportation. Supply chain 
+  %       issues related to Covid-19 and a container ship stuck in the Suez canal
+  %       created a ``shipping apocalypse.'' Raising the \emph{cost} of shipping 
+  %       would disproportionately affect low profit-margin goods and very heavy
+  %       goods. How would you approach weighing the pros and cons of such a tax?
+       
   \item The weak sustainability criterion in Section 
         \ref{sec:resources_weak_sustainability} is predicated (per Daly) on
         renewable substitutes being found for nonrenewable resources. 
@@ -720,19 +729,20 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         % How does the rate of adoption of renewable substitutes for the CRMs in Table~\ref{tab:CRMs}
         % compare to the rate of replacements for materials in 
         % Figures~\ref{fig:total_material_use}--\ref{fig:PercentageOfSustainable}?
-        The CRMs (Figure~\ref{fig:CRMs}) are mostly low volume, high value materials. 
-        The items in Figures~\ref{fig:total_material_use}--\ref{fig:PercentageOfSustainable}
-        are high volume, low value materials. 
-        Which has better prospects for finding renewable replacements?
-        Low volume, high value materials (CRMs) or 
-        high volume, low value materials (construction minerals and industrial materials)?
+        The CRMs (Figure~\ref{fig:CRMs}) are mostly low-volume, high-value materials. 
+        The items in Figures~\ref{fig:total_material_use}--\ref{fig:per_capita_material_use}
+        are high-volume, low-value materials. 
+        Which do you think has better prospects for finding renewable replacements
+        low-volume, high-value materials (CRMs) or 
+        high-volume, low-value materials (such as construction minerals and industrial materials)?
         Why?
         What would an economist say?
         What would an engineer say?
 
-  \item **** Need references. **** 
-        A recent report described a canvas tote bag needing to replace 50,000
-        plastic shopping bags to break even. 
+  \item A recent report \cite{Miljostyrelsen2018} found that an organic cotton
+        canvas tote bag would need to be used 20,000 times (or every day for 
+        about 54 years) to have an environmental footprint equivalent to LDPE 
+        shopping bags. 
         John Green described his emotional reaction to this. 
         John Green's emotional reaction was the result of the cognitive dissonance
         between life cycle analysis results and his intuition that 
