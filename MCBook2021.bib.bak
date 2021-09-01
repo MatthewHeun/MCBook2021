@@ -1283,4 +1283,10 @@
   url      = {https://www.sciencedirect.com/science/article/pii/S0925857413003236},
 }
 
+@TechReport{GCWDA2015,
+  author = {Global clean water desalination alliance},
+  title  = {H20 minus CO2 concept paper},
+  year   = {2015},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
