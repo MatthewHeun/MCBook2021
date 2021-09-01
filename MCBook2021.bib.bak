@@ -1,13 +1,5 @@
-%% This BibTeX bibliography file was created using BibDesk.
-%% https://bibdesk.sourceforge.io/
+% Encoding: UTF-8
 
-%% Created for Matt at 2021-08-22 15:09:51 -0400 
-
-
-%% Saved with string encoding Unicode (UTF-8) 
-
-
-@comment{jabref-meta: databaseType:bibtex;}
 
 
 
@@ -1254,3 +1246,26 @@
 	volume = {436},
 	year = {2005},
 	Bdsk-Url-1 = {https://doi.org/10.1038/436913a}}
+
+@Book{FeaVB2000,
+  author    = {A. P. Featherstone and J. G. VanAntwerp and R. D. Braatz},
+  publisher = {Springer-Verlag},
+  title     = {Identification and control of sheet and film processes},
+  year      = {2000},
+}
+
+@Article{Bithas2018,
+  author   = {Kostas Bithas and Panos Kalimeris},
+  journal  = {Science of The Total Environment},
+  title    = {Unmasking decoupling: Redefining the Resource Intensity of the Economy},
+  year     = {2018},
+  issn     = {0048-9697},
+  pages    = {338-351},
+  volume   = {619-620},
+  abstract = {Interest in investigating the complex link between resources and developments has revived recently following studies which support striking “dematerialized” growth over the last hundred years or so. This so-called decoupling effect is defined as the declining quantity of resources required for producing one unit of GDP. Decoupling studies adopt aggregate GDP as the measure of the outcome of the economy. However, this outcome is contributed by the total population which differs over time and between countries. A valid comparison should use a comparable, standardized indicator that adjusts for population size. GDP per capita, the income index, defines in monetary terms the ultimate outcome of the economy and is adopted by international organizations as the standard index for comparing economies. The income index approximates, in monetary terms, the welfare produced by the economic system and enjoyed by individuals. Recently developed alternative indexes of welfare lack broad data coverage and have limited empirical application as yet. For this reason and for ensuring direct comparison with the standard decoupling estimates, our study remains within the monetary context. The present paper re-evaluates the resources-economy link from the perspective of “the resources required for the production of one unit of GDP per capita (Income)” and hence evaluates the efficiency of turning resources into the actual outcome of the economic system. Our estimates suggest that the dependence of global economic growth on natural resources has increased by over 60% in the last 110years (1900–2009), contrasting with the prevailing decoupling estimates which suggest a reduction by 63%. We find that the actual decoupling, which began in the mid-1970s in post-industrial economies, is counterbalanced by the intensified resource intensity of several developing economies. Accordingly, in the pursuit of sustainability, the dematerialization target needs to be more clearly incorporated into environmental policies and pervade contemporary economic thinking.},
+  doi      = {https://doi.org/10.1016/j.scitotenv.2017.11.061},
+  keywords = {Decoupling, Dematerialization, Material intensity (MI), Natural resource scarcity, Sustainable development, Economic welfare},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0048969717331194},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

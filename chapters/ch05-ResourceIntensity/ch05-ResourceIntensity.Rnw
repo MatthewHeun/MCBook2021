@@ -269,8 +269,8 @@ depends on the strong or weak sustainability of the recycling processes.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Economist Nicholas Georgescu-Roegen proposed a fourth law of thermodynamics, 
-stating that complete recycling of matter is impossible~\cite{Georgescu-Roegen:1986aa}.
-I.e., material resources are subject to irreversible degradation.
+stating that complete recycling of matter is impossible~\cite{Georgescu-Roegen:1986aa}
+because material resources are subject to irreversible degradation.
 (Georgescu-Roegen was arguing by analogy from the second law of thermodynamics,
 which states that all forms of energy are subject to irreversible degradation.)
 Later, physicist and economist Robert Ayres correctly
@@ -499,7 +499,7 @@ as the example for resource intensity of the economy ($R$).
 The energy intensity of the economy is formed
 by dividing primary energy consumption ($E_p$) 
 by world GDP,
-i.e.\ dividing Figure~\ref{fig:PrimaryEnergyGraph} 
+that is, \ dividing Figure~\ref{fig:PrimaryEnergyGraph} 
 by Figure~\ref{fig:GDPGraph-Nordhaus}.
 The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 
@@ -590,7 +590,8 @@ depends on the rates of increase or decline of the other terms
 on the right side of Equation~\ref{eq:IPARC}.
 Figure~\ref{fig:CarbonEmissionsGraph} shows that CO$_2$ emissions have been growing over time.
 So, other terms on the right side of the IPARC identity 
-are growing faster than energy intensity of the economy is declining.
+are growing faster than energy intensity of the economy is declining
+(see Section \ref{sec:revisit_IPARC}).
 
 There are many suggested ways to reduce the resource intensity of the economy ($R$)
 or the prime example the energy intensity of economic activity.
@@ -610,16 +611,20 @@ as finished goods are imported and manufacturing heads off shore~\cite{Hardt:201
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-**** energy efficiency? ****
-**** Robert Gordon's book: Rise and Fall of American Growth ****
-**** Manufacturing to service economy. ****
+Kostas Bithas and Panos Kalimeris, 
+\emph{Unmasking decoupling: Redefining the Resource Intensity of the Economy.} 
+Science of the Total Environment, 2018 \cite{Bithas2018} \\
+
+J. H. Brown \emph{et al},
+\emph{Macroecology meets macroeconomics: Resource scarcity and global sustainability.}
+Ecological Engineering, 2014 \cite{Brown2014}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+US Geological Survey, National Minerals Information Center \url{www.usgs.gov/centers/nmic}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
