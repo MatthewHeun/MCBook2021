@@ -697,7 +697,12 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         Fossil fuels are chemically changed into other chemical entities. 
         Water stays water.
         
-  \item Consider the effects of a carbon tax on transportation. Supply chain 
+  \item Is a carbon tax a reduction in affluence (Chapter~\ref{chap:affluence})
+        or is it a way to incentivize a shift to carbon-free forms of energy?
+        What beliefs or values inform your answer?
+  
+  \item **** Maybe not a good question. Consider deleting. ****
+        Consider the effects of a carbon tax on transportation. Supply chain 
         issues related to Covid-19 and a container ship stuck in the Suez canal
         created a ``shipping apocalypse.'' Raising the \emph{cost} of shipping 
         would disproportionately affect low profit-margin goods and very heavy
@@ -706,15 +711,30 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
   \item The weak sustainability criterion in Section 
         \ref{sec:resources_weak_sustainability} is predicated (per Daly) on
         renewable substitutes being found for nonrenewable resources. 
-        Discuss the rates of adoption of renewable replacements for the items
-        in Table \ref{tab:Weak-Sust-Energy}. How does this compare to 
-        replacements for materials in Figures \ref{fig:total_material_use}-
-        \ref{fig:PercentageOfSustainable}.
+        % Discuss the rates of adoption of renewable replacements for the materials
+        % in Table~\ref{tab:CRMs}. 
+        % How does the rate of adoption of renewable substitutes for the CRMs in Table~\ref{tab:CRMs}
+        % compare to the rate of replacements for materials in 
+        % Figures~\ref{fig:total_material_use}--\ref{fig:PercentageOfSustainable}?
+        The CRMs (Figure~\ref{fig:CRMs}) are mostly low volume, high value materials. 
+        The items in Figures~\ref{fig:total_material_use}--\ref{fig:PercentageOfSustainable}
+        are high volume, low value materials. 
+        Which has better prospects for finding renewable replacements?
+        Low volume, high value materials (CRMs) or 
+        high volume, low value materials (construction minerals and industrial materials)?
+        Why?
+        What would an economist say?
+        What would an engineer say?
 
-  \item A recent report described a canvas tote bag needing to replace 50,000
-        plastic shopping bags to break even. John Green described his emotional
-        reaction to this. How should we communicate these things better?
-        
+  \item **** Need references. **** 
+        A recent report described a canvas tote bag needing to replace 50,000
+        plastic shopping bags to break even. 
+        John Green described his emotional reaction to this. 
+        John Green's emotional reaction was the result of the cognitive dissonance
+        between life cycle analysis results and his intuition that 
+        canvas bags \emph{should} be better for the environment.
+        How should humans respond when analytical results go against intuition?
+
   \item Ehrlich's wager/predictions have repeated failed to come to pass. 
         Similarly, concerns about resource scarcity are also likely overblown.
         What then should we expect from the future? (Julian Simon quote.)
