@@ -729,7 +729,7 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         % How does the rate of adoption of renewable substitutes for the CRMs in Table~\ref{tab:CRMs}
         % compare to the rate of replacements for materials in 
         % Figures~\ref{fig:total_material_use}--\ref{fig:PercentageOfSustainable}?
-        The CRMs (Figure~\ref{fig:CRMs}) are mostly low-volume, high-value materials. 
+        The CRMs (Table~\ref{tab:CRMs}) are mostly low-volume, high-value materials. 
         The items in Figures~\ref{fig:total_material_use}--\ref{fig:per_capita_material_use}
         are high-volume, low-value materials. 
         Which do you think has better prospects for finding renewable replacements
@@ -740,14 +740,46 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         What would an engineer say?
 
   \item A recent report \cite{Miljostyrelsen2018} found that an organic cotton
-        canvas tote bag would need to be used 20,000 times (or every day for 
+        canvas tote bag would need to be used 20,000 times (every day for 
         about 54 years) to have an environmental footprint equivalent to LDPE 
         shopping bags. 
-        John Green described his emotional reaction to this. 
-        John Green's emotional reaction was the result of the cognitive dissonance
-        between life cycle analysis results and his intuition that 
-        canvas bags \emph{should} be better for the environment.
+        John Green \href{https://www.youtube.com/watch?v=2PF5AAEAWTs}{attributed his emotional reaction}
+        % "it's resource intensive to grow crops!"
+        % "if we start thinking cotton is always good ... we start using cotton like it's disposable"
+        % "where do I draw the line between the stuff that I care about and the stuff that I don't."
+        % "we should change our mind when presented with evidence to the contrary."
+        % "if we're going to care we have to orient our caring based on reality."
+        % "are we being sold an idea because someone is trying to sell us something or is this actually 
+        %   gonna have a positive impact?"
+        % "is this a little complicated? Yeah. But simplicity is almost always a lie."
+        to cognitive dissonance between life cycle analysis results and his 
+        intuition that cotton bags \emph{should} be better for the environment.
         How should humans respond when analytical results go against intuition?
+        John says ``Simplicity is almost always a lie.'' 
+        ``We have to ask, are we being sold an idea because someone is trying to 
+        sell us something or is this actually gonna have a positive impact?'' 
+        ``We have to orient our caring based on reality.''
+        What cognitive dissonances have you found in the text so far?
+        What changes might you make based new information?
+        
+  \item In discussing the study mentioned in the previous question, GreenBooks.org
+        \href{https://www.green-books.org/shoppingbagsstudy/}{says} 
+        ``17 million barrels of oil are used every year for the US water bottle 
+        market – polluting the earth with greenhouse gases and contributing to 
+        global warming through climate change.''
+        What do you think of their statement?
+        Remember ``are we being sold an idea because someone is trying to 
+        sell us something?''
+        What is GreenBooks selling?
+        It should be obvious that if oil is made into a water bottle, it can't be
+        going into the atmosphere as a greenhouse gas. 
+        Perhaps they meant that making the plastic from oil or the bottle from the 
+        plastic used energy, which creates greenhouse gases.
+        But then all economic activity generates greenhouse gases.
+        And, similar to the cotton totes, a lightweight plastic water bottle is 
+        better than glass -- if we're going to have water bottles at all.
+        Write a nuanced response to the ``soundbite'' quoted above.
+  
 
   \item Ehrlich's wager/predictions have repeated failed to come to pass. 
         Similarly, concerns about resource scarcity are also likely overblown.
@@ -760,12 +792,14 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
   \item Maximum sustainable yield. If we harvest less than this we're ``leaving
         money on the table'' and our efficiency metrics are less good. How
         do we decide how much to take? Fish, e.g.
-        Add an issue on GitHub to include the Gradel and alllenby figure.
+        Add an issue on GitHub to include the Gradel and Alllenby figure.
         The figure will allow us to discuss differences among
         weak, strong, and economic levels of extraction.
   
   \item Critique/reflect on the statement ``money is a lien on energy and resources.''
-        **** Reflect on the differences between affluence and wealth. ****
+        What does this statement indicate in terms of the IPARC equation?
+        What differences are there, for sustainability, between affluence and wealth?
+        
   
 \end{questions}
 
