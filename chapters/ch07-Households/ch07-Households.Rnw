@@ -203,6 +203,7 @@ show these trends.
 One might think that increasing dwelling sizes are driven by more occupants per dwelling.
 However, Figure~\ref{fig:person_household} shows that
 the percentage of single-person households is increasing through time~\citep[Fig.~2]{US_census}.
+**** Find occupants per single-family home data. ****
 
 \begin{figure}
 \centering
@@ -231,6 +232,8 @@ makes a significant difference to transportation energy demand.
 (See Chapter~\ref{chap:transportation} for more information on sustainability issues
 related to transportation.)
 
+**** Find data on energy consumption for commuting over time. ****
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Heating and cooling}
@@ -239,23 +242,34 @@ related to transportation.)
 
 In most locations,
 daily and seasonal temperature variations are wide
-relative to the range of temperatures required for human comfort
-(approximately 20--23~\degC, depending on humidity and clothing).
+compared to the range of temperatures required for human comfort.
+Average daily temperature variations can be in the range of 13~\degC,
+and seasonal variations can be on the order of 30~\degC.%
+\footnote{
+   Example temperature variations are for Grand Rapids, Michigan, USA
+   from \url{http://www.experiencegr.com}~\cite{Experience-Grand-Rapids:vs}.
+}
+In contrast, the range of human comfort is between 20 and 23~\degC, 
+depending on humidity and clothing, 
+or only 3~\degC.
+
 Residential heating and cooling reduces the temperature variation
-inside the dwelling compared to the outdoors,
-providing thermal comfort to the occupants and
-enabling work, play, and entertainment.
+inside a dwelling compared to the outdoors,
+providing thermal comfort to the occupants, 
+thereby enabling work, play, and entertainment.
 As shown in Figure~\ref{fig:average_residential_energy},
 on average across the U.S.,
 thermal comfort\index{thermal comfort}
 is provided
-by 36.6\% of all residential energy consumption.
+by **** 36.6\% **** of all residential energy consumption.
 Like all energy consumption,
 energy consumption for heating and cooling has sustainability implications.
 (See Chapter~\ref{chap:resource_intensity}.)
 Greater efficiency can provide the same thermal comfort
 with less energy consumption.
-Increased residential heating and cooling efficiency\index{efficiency!heating and cooling!residential}
+Increased residential heating and cooling 
+efficiency\index{efficiency!heating and cooling!residential}
+(i.e, providing the same comfort with less energy) 
 can be obtained
 by improving the building envelope or
 by improving the efficiency of furnaces and air conditioners.
@@ -273,21 +287,22 @@ to maintain dry and comfortable conditions inside the dwelling.
 The ideal building envelope would
 eliminate both heat loss in the winter and heat gain in the summer via
 perfect roof and wall insulation and
-windows that neither conduct heat nor allow radiation to pass through.
-But perfect insulation is not possible, and all windows conduct heat and are transparent to thermal radiation.
-So furnaces and air conditioners are used to replace the heat lost in winter and
-remove heat gained in the summer.
+windows that neither conduct heat nor pass radiation.
+But perfect insulation is not possible, and all windows conduct heat and
+pass thermal radiation.
+So furnaces\index{furnaces} and air conditioners\index{air conditioners}
+replace the heat lost in winter and remove heat gained in the summer.
 
 The effectiveness of roof and wall insulation\index{insulation}
 is quantified by its R-value\index{R-value},
 a measure of the resistance to heat transfer through the insulation material
-quantified in units of hr-ft$^2$-\degree{}F/BTU.
+quantified in units of hr-ft$^2$-\degF/BTU.
 Higher R-values are better.
 Large R-values are achieved with
 thicker insulation constructed from low-thermal-conductivity materials.
-The Energy Star program recommends levels of roof, wall, and floor insulation at
-\url{https://www.energystar.gov/index.cfm?c=home_sealing.hm_improvement_insulation_table}.
-In Northern US climates, R-values of 49--60 hr-ft$^2$-\degree{}F/BTU are recommended.
+The Energy Star program recommends levels of roof, wall, and
+floor insulation~\cite{U.S.-Department-of-Energy:aa}.
+In Northern US climates, R-values of 49--60 hr-ft$^2$-\degF/BTU are recommended.
 
 Windows\index{windows} are an important part of any building's envelope.
 They provide natural illumination while shielding occupants from weather.
@@ -298,8 +313,8 @@ owing to thin glazing.
 
 The insulative properties of windows are quantified by the U-Factor\index{U-factor}.
 The U-Factor is the inverse of an R-value.
-Typical U-Factors for windows are 0.2--1.2 BTU/hr-ft$^2$-\degree{}F.
-(Corresponding window R-values are 5--0.83 hr-ft$^2$-\degree{}F/BTU.)
+Typical U-Factors for windows are 0.2--1.2 BTU/hr-ft$^2$-\degF.
+(Corresponding window R-values are 5--0.83 hr-ft$^2$-\degF/BTU.)
 Lower U values are more insulative.
 Heat gain from solar radiation is quantified by the
 solar heat gain coefficient (SHGC)\index{solar heat gain coefficient},
@@ -316,7 +331,8 @@ and lower SHGC values indicate better insulative properties.
 
 Furnaces provide space heating,
 often from an out-of-the-way location in the dwelling (e.g., basement).
-Furnaces convert a fuel (typically natural gas\index{natural gas} or heating oil\index{heating oil})
+Furnaces convert a fuel 
+(typically natural gas\index{natural gas} or heating oil\index{heating oil})
 into heat by combustion.
 The heat is delivered to the dwelling via circulating water or air.
 
@@ -327,18 +343,18 @@ to fuel energy input,
 accounting for transient effects during operation
 across the year.
 The maximum AFUE rating is 100\%.
-Heat that leaves with the exhaust products serves to reduce AFUE.
+Heat that leaves the home with the exhaust products serves to reduce AFUE.
 AFUE is different from and lower than steady-state thermal efficiency.
 The American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)
 \index{American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)}
 publishes Standard 103,
-which specifies how AFUE is to be measured.
+which specifies how AFUE is to be measured~\cite{ASHRAE:vk}.
 
 All furnaces sold in the U.S.\ have an AFUE rating, and
 a minimum AFUE rating of 80\% is required
 for gas-fired furnaces.\index{furnaces!gas-fired}
-(\url{https://www.eia.gov/analysis/studies/buildings/equipcosts/pdf/appendix-a.pdf})
-High-efficiency furnaces recover heat from exhaust gases,
+**** Find a good-quality reference for minimum AFUE of 80\% in the U.S. ****
+High-efficiency furnaces recover more heat from exhaust gases,
 and some reach AFUE values of 98\% or higher.
 A tradeoff exists between efficiency and initial cost.
 Models with high AFUE are more expensive, initially,
@@ -353,7 +369,7 @@ but save money on fuel costs over time.
 Air conditioners cool and dehumidify indoor air
 to provide thermal comfort\index{thermal comfort}
 to building occupants.
-Air conditioners use electricity to achieve their objectives.
+Most air conditioners consume electricity to perform their cooling function. 
 The energy efficiency of air conditioners\index{efficiency!air conditioners}
 is quantified by the
 Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio (SEER)}
@@ -365,6 +381,7 @@ Larger SEER values indicate higher efficiency.
 As of 2015, U.S.\ air conditioners must adhere to regionally dependent efficiency standards.
 In the southwest, a minimum SEER value of 14 BTU/W-hr is required.
 In other parts of the U.S., a minimum SEER value of 13 BTU/W-hr is mandated.
+**** Find a reference for these SEER numbers. ****
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -376,25 +393,23 @@ Hygiene is a significant consumer of household energy and water
 for showers, dish washers, toilets, and clothes washers and dryers.
 
 To minimize environmental impacts of showering and dish washing,
-low-flow showerheads\index{showerheads!low-flow} can be installed.
+low-flow showerheads\index{showerheads!low-flow} and faucets\index{faucets}
+can be installed.
 Low-flow showerheads provide the obvious cost benefit of
 reducing water bills.
 But if less water is consumed,
 low-flow showerheads also reduce energy consumption for water heating.
 Furthermore, sewerage costs are reduced, because low-flow showerheads
-decrease the amount of gray water released into the sewer system.
+decrease the amount of gray water entering the sewer system.
 
 Saving water and energy in dish washing can be accomplished by purchasing a
 high-efficiency automatic dishwasher.\index{efficiency!dish washers}
-At
-\url{https://www.energystar.gov/products/appliances/dishwashers},
-the Energy Star\index{Energy Star} program shows that
-automatic dishwashers save water and energy costs
-relative to hand washing dishes.
+The Energy Star program provides 
+information about energy-saving dishwashers.
 
 To save water consumed by toilets\index{toilets},
 displacement and dual-flush systems are recommended.
-A displacement system occupies volume in the tank,
+A displacement system occupies water volume in the tank,
 reducing the amount of water used for each flush.
 Dual-flush systems provide half- and full-flush
 for disposal of liquids and solids, respectively.
@@ -402,9 +417,9 @@ for disposal of liquids and solids, respectively.
 Clothes washers and dryers\index{clothes washer}\index{clothes dryer}
 consume both water and energy.
 Purchasing washers and dryers with Energy Star\index{Energy Star} ratings can reduce
-energy and water consumption by 25\% and 33\%, respectively
-(\url{https://www.energystar.gov/products/appliances/clothes_dryers}).
-The most energy can be saved by washing clothes less frequently,
+energy and water consumption by 25\% and 33\%,
+respectively~\cite{U.S.-Department-of-Energy:tc, U.S.-Department-of-Energy:vd}.
+Energy can be saved by washing clothes less frequently,
 using a cold-water cycle, and line drying clothes.
 
 
