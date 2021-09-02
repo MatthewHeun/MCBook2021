@@ -682,7 +682,7 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
         Make reference to Equation \ref{eq:IPARC}.
 
 \item Fossil fuels have impacts other than CO$_2$. One example is oil spills,
-      such as the Exxon Valdez and the Deep Water Horizon disaster. (The 
+      such as the Exxon Valdez and the Deep Water Horizon disasters. (The 
        International Tanker Owners Pollution Federation reports ``only'' 18 oil
        spills larger than 700 tonnes for the period 2010-2019 versus 245 in the 
        1970s.) Other examples include release or contamination hydraulic fracking
@@ -703,12 +703,13 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
       Coal power plants in the Midwest region have emitted 
       enough mercury that fish in the Great Lakes are not safe for consumption
       by children or women of child-bearing age. 
-      How do you make decisions about trading off the different types of 
+      How do you make decisions about trading off different types of 
       environmental impacts?
+      Which impacts are more acceptable? Which are less acceptable?
       
 \item The naive tendency is to read the previous two questions and just say that
-      all impacts are bad, and that is true by definition of the word ``impact.''
-      But it is not helpful. The more interesting and helpful question is the 
+      all impacts are bad, which is true by definition of the word ``impact''
+      but it is not helpful. The more interesting and helpful question is the 
       debate between a cost/benefit analysis (do the benefits provided by this
       form of energy outweigh the costs?) and the question ``is this form of 
       energy sustainable and, if so, for how long?'' Do you lean more to the 
@@ -730,7 +731,9 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
 \item What would be the consequences of a reduction in $EROI$ that would accompany a conversion to 
         a biofuel-based energy system?
         
-\item we have to have storage TO we'd like to have storage. Is it really required?
+\item One issue with a fully WWS electricity grid is the need for significant
+      energy storage. Is grid-scale storage really required or is it just 
+      something we would like to have? How can you tell?
 
 \item Consider the energy transition shown in Figure \ref{fig:CarbonIntensityGraph}.
       What does Figure \ref{fig:CarbonIntensityGraph} indicate about the length
