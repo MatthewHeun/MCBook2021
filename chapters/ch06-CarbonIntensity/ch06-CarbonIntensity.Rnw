@@ -33,7 +33,7 @@ Environmental contamination is discussed in this chapter.
 \label{sec:contamination_intensity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The contamination intensity of resource extraction ($C$)
+The contamination intensity of resource extraction and consumption ($C$)
 represents the amount of environmental contamination (emitted wastes)
 per unit of extracted and consumed resources (ingested materials).
 Examples of environmental contamination include
@@ -81,7 +81,7 @@ is CO$_2$ emissions.
 Thus, the prime example for contamination intensity ($C$ in Equation~\ref{eq:IPARC})
 is the CO$_2$ intensity of energy.
 The units for the CO$_2$ intensity of energy are,
-e.g., tonnes of CO$_2$ emitted per MJ of energy consumed.
+for example, tonnes of CO$_2$ emitted per MJ of energy consumed.
 
 Figure~\ref{fig:LLNL_CO2_sankey} is a Sankey\index{Sankey diagram!CO$_2$ emissions} diagram of
 sources of CO$_2$ emissions from the U.S.\ economy in 2018.
@@ -91,7 +91,7 @@ Table~\ref{tab:corrected_co2_emissions} shows the result of attributing CO$_2$ e
 thereby completing the picture of U.S.\ carbon emissions.\index{carbon dioxide (CO$_2$)!emissions of}
 Attributing CO$_2$ emissions from electricity generation
 to end uses significantly increases the share of CO$_2$
-emissions from the Residential and Commercial sectors.
+emissions from the residential and commercial sectors.
 
 \begin{figure}
 \centering
@@ -180,10 +180,10 @@ carbon_intensity %>%
 
 Equation~\ref{eq:IPARC} shows that reducing any of the right-hand side terms to 0
 will eliminate CO$_2$ emissions.
-I.e., if population ($P$), 
+That is, if population ($P$), 
 affluence ($A$),
 energy intensity of the economy ($I_p$, the prime example for $R$)
-or carbon intensity of energy (the prime example for $C$)
+\textbf{or} carbon intensity of energy (the prime example for $C$)
 go to 0,
 CO$_2$ emissions will be eliminated.
 Few people want to reduce population ($P$) or affluence ($A$).
@@ -193,9 +193,9 @@ but not as fast as population (Figure~\ref{fig:PopulationGraph})
 and affluence (Figure~\ref{fig:AffluenceGraph-Nordhaus}) are growing.
 By the process of elimination, 
 reducing the carbon intensity of energy is often considered to be the 
-only politically- and socially-viable way to move in a sustainable direction
+only politically and socially viable way to move in a sustainable direction
 regarding the prime example, energy and CO$_2$ emissions.
-(Note that other sustainability issues are likely to remain.)
+(Note that other sustainability issues are likely to remain!)
 
 Figure~\ref{fig:CarbonIntensityGraph} shows that the carbon intensity of energy
 rose dramatically from 1800--1960, 
@@ -217,13 +217,13 @@ But how?
 
 There are at least four often-discussed options for
 transitioning to a low carbon intensity energy supply:
-(a) carbon capture and storage,
-(b) carbon sequestration,
-(c) biomass, and
+(a) carbon capture and storage;
+(b) carbon sequestration;
+(c) biomass; and
 (d) wind, water, and solar (WWS).
-Each option has its own challenges to implementation, and 
-none has yet been implemented on large enough scale to reduce CO$_2$ emissions.
-(See Figure~\ref{fig:CarbonEmissionsGraph}.)
+Each option has its own challenges to implementation and 
+none has yet been implemented on large enough scale to reduce CO$_2$ emissions;
+(see Figure~\ref{fig:CarbonEmissionsGraph}).
 The subsections below discuss these options and their implementation challenges.
 
 
@@ -248,14 +248,16 @@ Petra Nova, the only CCS plant in the U.S.\, injected CO$_2$ for enhanced oil re
 In 2020, the plant was shut down due to low oil prices, 
 demonstrating the interrelation of the economics among primary energy sources.
 
-Second, a fossil fuel power plant fitted with carbon sequestration technology 
+Second, a fossil-fuel power plant fitted with carbon sequestration technology 
 must ensure that the CO$_2$ emissions remains buried. 
 If the CO$_2$ escapes to the atmosphere, the sequestration effort is ineffective.
 
 Third, there are limited locations with the required underground geological formations 
 for CCS.
 
-Finally, CCS is not applicable to CO$_2$ emissions from transportation. 
+Finally, CCS is not applicable to CO$_2$ emissions from transportation,
+which is the plurality of CO$_2$ emissions; 
+see Table \ref{tab:corrected_co2_emissions}.
 It would be impractical to fit every car with a ``CO$_2$ diaper''
 to collect CO$_2$ emissions for later injection underground.
 
@@ -271,7 +273,8 @@ One form of carbon sequestration is simply planting billions of trees.
 A massive, worldwide afforestation effort would be required to extract
 the additional carbon that has been added to the atmosphere since the industrial revolution.
 In such a scheme, trees consume CO$_2$, and store it in their biomass.
-Unfortunately, if the trees are burned or die and decompose, the CO$_2$ is returned to the atmosphere.
+Unfortunately, if the trees are burned or when they die and decompose, 
+the CO$_2$ is returned to the atmosphere.
 Alternatively, CO$_2$ can be extracted from the atmosphere and stored in a stable structure,
 such as graphene.
 
@@ -301,7 +304,7 @@ And conversion to biomass would require build-out of a biomass-to-liquid-fuels c
 infrastructure that does not yet exist.
 Finally, conversion to biomass will be accompanied by a reduction in $EROI$.
 (See Section~\ref{sec:masterE}.)
-The $EROI$ for fossil fuels is mostly greater than 20, while
+The $EROI$ for fossil fuels is mostly greater than 20 (see Table \ref{tab:eroi}), while
 the $EROI$ for corn ethanol is typically less than 2~\cite{Hammerschlag:2006uf}.
 
 
@@ -326,12 +329,20 @@ and a zero-carbon economy.
 
 There are two options for electrification of the world's transportation fleet: 
 replacing all liquid fuel vehicles with electric vehicles or 
-using electricity to make hydrogen and replacing all liquid fuel vehicles with hydrogen vehicles. 
+using electricity to make renewable fuels, such as hydrogen or biofuels, and 
+then replacing all fossil-fuel vehicles with renewable-fuel vehicles. 
 Replacing all liquid fuel vehicles with electric vehicles is slowly occurring today. 
 Electrification of personal vehicles is happening from the top end of markets, 
 with expensive offerings from companies such as Telsa.
-Electrification is not penetrating meaningfully into the freight system,
+Electrification has not yet penetrated meaningfully into the freight system,
 including trucks, ships, and planes.
+% This is discussed at length in research circles. Electric planes, biofuel planes,
+% biodiesel or electric trucks. Maersk has committed to carbon-neutrality by 2050
+% and is launching a bio-methanol ship in 2023.
+% Hydrogen is not energy dense enough to be a transportation fuel but could 
+% serve as efficient grid-scale energy storage (electrolysis by WWS, base-generation
+% fuel cell generators for efficient discharge). However, we don't really have 
+% materials yet to do this ``at scale.''
 
 Second, wind and solar (the \emph{WS} in W\emph{WS}) are intermittent sources of electricity,
 while today's electricity sources 
@@ -354,7 +365,7 @@ the potential for expanding the production of hydro electricity is limited.
 Most of the Americas, Europe, and Asia are already ``tapped out'' regarding hydropower.
 Today, the potential for hydro is greatest in central Africa.
 The proposed Grand Inga dam in the Democratic Republic of the Congo
-would be the largest dam in the world and could house a 40--70 GW hydropowerstation.
+would be the largest dam in the world and could house a 40--70 GW hydro power station.
 
 Fourth, WWS systems are energy intensive to manufacture.
 So the transition to a WWS future will require significant energy investment
@@ -386,6 +397,7 @@ the topic of an end-of-chapter project.
 \end{mcframe}
 
 
+
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -402,7 +414,13 @@ emissions reductions via any of the techniques discussed above.
 
 \end{mcframe}
 
-
+%++++++++++++++++++++++++++++++
+\subsection{Energy transitions}
+\label{sec:Etransitions}
+%++++++++++++++++++++++++++++++
+Figure \ref{fig:CarbonIntensityGraph} shows that a transition to a new form(s)
+of energy takes quite a long time to complete. It is costly both in terms of
+money and resources, in particular, in terms of energy itself.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Revisiting the IPARC identity}
@@ -641,6 +659,10 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{questions}
+
+\item oil spills. Deep Water Horizon.
+\item Nuclear accidents. Fukishima.
+\item Bird kills by wind turbines.
 
   \item Should we manage our energy transition (to renewables) or should we let economics do it 
         for us? Do we have time to wait? 
