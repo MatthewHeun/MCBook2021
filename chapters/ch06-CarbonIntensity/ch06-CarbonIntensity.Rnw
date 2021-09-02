@@ -275,8 +275,25 @@ the additional carbon that has been added to the atmosphere since the industrial
 In such a scheme, trees consume CO$_2$, and store it in their biomass.
 Unfortunately, if the trees are burned or when they die and decompose, 
 the CO$_2$ is returned to the atmosphere.
-Alternatively, CO$_2$ can be extracted from the atmosphere and stored in a stable structure,
-such as graphene.
+
+Alternatively, \emph{direct air capture} extracts CO$_2$ from the atmosphere 
+directly, typically using huge banks of fans and a absorbent.
+Direct air capture is extremely energy intensive because of the heat needed
+to regenerate the adsorbents. 
+Additionally, because atmospheric CO$_2$ concentrations are low, massive amounts
+of air need to be moved, which makes operating the fans expensive. 
+Thirdly, some carbon sequestration technologies require expensive and/or rare
+materials.
+Various schemes have been proposed for how to alleviate some or all of these 
+problems but none have been proven to work at scale.
+
+One additional problem with carbon sequestration is what form should be used
+ultimately to store the carbon. 
+Geologic storage converts CO$_2$ to liquid form at high pressure and pumps it
+into underground storage.
+Biologic storage is when carbon is trapped in plant matter, soil, or aquatic
+environments.
+Perhaps, CO$_2$ could be converted to a stable chemical structure such as graphene.
 
 
 %++++++++++++++++++++++++++++++
@@ -644,7 +661,8 @@ will have effects on other terms of the IPARC identity
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+Daniel Yergin, \emph{The New Map: Energy, Climate, and the Clash of Nations},
+Penguin Press, 2020.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -660,24 +678,94 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
 
 \begin{questions}
 
-\item oil spills. Deep Water Horizon.
-\item Nuclear accidents. Fukishima.
-\item Bird kills by wind turbines.
+\item Do renewable energy sources have ``emissions?'' If so, what are they?
+        Make reference to Equation \ref{eq:IPARC}.
+
+\item Fossil fuels have impacts other than CO$_2$. One example is oil spills,
+      such as the Exxon Valdez and the Deep Water Horizon disaster. (The 
+       International Tanker Owners Pollution Federation reports ``only'' 18 oil
+       spills larger than 700 tonnes for the period 2010-2019 versus 245 in the 
+       1970s.) Other examples include release or contamination hydraulic fracking
+       fluid; air quality issues associated with burning fossil fuels such as
+       soot, smog, and ozone; and soil contamination from leaking underground 
+       fuel storage tanks. The tendency in a technocratic society is to approach
+       these problems as ``separate'' problems and to propose technological fixes
+       specific to each problem. Indeed, the rate of oil spills has gone down due
+       to better technology. How do we manage tradeoffs among different types of
+       \emph{solutions}? Technological solutions come with their own costs, risks, 
+       and inherent tradeoffs. Give some examples of the tradeoffs inherent in 
+       pollution prevention technologies.
+       
+\item Expanding on the issues raised in the previous question, 
+      nuclear power has had its own environmental issues. 
+      Disasters such Fukushima Daiichi, Three-Mile Island, and Chernobyl come to mind. 
+      High-level waste is another. 
+      Coal power plants in the Midwest region have emitted 
+      enough mercury that fish in the Great Lakes are not safe for consumption
+      by children or women of child-bearing age. 
+      How do you make decisions about trading off the different types of 
+      environmental impacts?
+      
+\item The naive tendency is to read the previous two questions and just say that
+      all impacts are bad, and that is true by definition of the word ``impact.''
+      But it is not helpful. The more interesting and helpful question is the 
+      debate between a cost/benefit analysis (do the benefits provided by this
+      form of energy outweigh the costs?) and the question ``is this form of 
+      energy sustainable and, if so, for how long?'' Do you lean more to the 
+      cost/benefit side or the sustainability side and why? Are you using a weak
+      or strong sustainability criterion?
+      
+\item Some people object to wind turbine because they kill birds. 
+      All human structures kill birds. 
+      What are the alternatives (to having wind turbines at all)?
+      What is the cost/benefit analysis of having wind turbines?
+      Who does the analysis and makes the decisions about whether to have wind
+      turbines and where to site them?
+      Whether there will be a cap on the total number of wind turbines is probably
+      the same as whether there will be a cap on the extent of human civilization.
+      Does the whole Earth belong to humans or do animals get a place ``of their own?''
+
+\item Which would you prefer, a biomass energy system or a WWS energy system? Why?
+
+\item What would be the consequences of a reduction in $EROI$ that would accompany a conversion to 
+        a biofuel-based energy system?
+        
 \item we have to have storage TO we'd like to have storage. Is it really required?
 
-  \item Should we manage our energy transition (to renewables) or should we let economics do it 
-        for us? Do we have time to wait? 
-        
-  \item Do renewable energy sources have ``emissions?'' Make reference to Equation \ref{eq:IPARC}.
-        
-  \item Which would you prefer, a biomass energy system or a WWS energy system? Why?  
-  
-  \item What would be the consequences of a reduction in $EROI$ that would accompany a conversion to 
-        a biofuel-based energy system?
+\item Consider the energy transition shown in Figure \ref{fig:CarbonIntensityGraph}.
+      What does Figure \ref{fig:CarbonIntensityGraph} indicate about the length
+      of time needed to transition to global carbon-free energy?
+      Why did we go from a low-carbon economy (such as in 1800) to the high-carbon
+      economy we have today? 
 
-  \item Find the proportion of renewable energy in the world's energy mix today.
+\item Should the transition to renewable energy sources be actively managed or should 
+      we let economics do it for us? 
+      Do we have time to wait? 
+      Who makes these decisions?
+
+\item Find the proportion of renewable energy in the world's energy mix today.
         Does this proportion indicate that we are far into the transition to a 
         low-carbon energy regime?
+
+\item Argue for and against making Table \ref{tab:corrected_co2_emissions}.
+      What does Table \ref{tab:corrected_co2_emissions} show that Figure
+      \ref{fig:LLNL_CO2_sankey} doesn't (and vice versa)?
+      Which do you find more helpful? Why?
+      What sorts of decisions is each most helpful with?
+      
+\item Do you agree with the process of elimination in Section \ref{sec:reducing_c}?
+
+\item Should carbon capture and storage/sequestration be pursued as a stop-gap
+      measure (until we get fully renewable energy)?
+      What is your criteria for making that decision?
+      Under what circumstances would your answer change?
+      
+\item The big issue for carbon capture and storage/sequestration is who are the 
+      stakeholders -- who pays and who benefits?
+      ``It's too expensive'' is just another way of saying ``we don't value that
+      very much.'' Are there legal or financial arrangements that could be made 
+      that would sufficiently incentivize CCS such that it would be profitable?
+      If so, why hasn't this been done already?
 
 \end{questions}
 
