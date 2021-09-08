@@ -679,24 +679,26 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
 \begin{questions}
 
 \item Do renewable energy sources have ``emissions?'' If so, what are they?
-        Make reference to Equation \ref{eq:IPARC}.
+        Make reference to Equation \ref{eq:IPARC}. At a minimum, discuss
+        solar photovoltaic, wind turbines, hydro power, and renewable biofuels.
 
 \item Fossil fuels have impacts other than CO$_2$. One example is oil spills,
       such as the Exxon Valdez and the Deep Water Horizon disasters. (The 
        International Tanker Owners Pollution Federation reports ``only'' 18 oil
        spills larger than 700 tonnes for the period 2010-2019 versus 245 in the 
-       1970s.) Other examples include release or contamination hydraulic fracking
-       fluid; air quality issues associated with burning fossil fuels such as
+       1970s.) Other examples include contamination by hydraulic fracking
+       fluids; air quality issues associated with burning fossil fuels such as
        soot, smog, and ozone; and soil contamination from leaking underground 
-       fuel storage tanks. The tendency in a technocratic society is to approach
-       these problems as ``separate'' problems and to propose technological fixes
-       specific to each problem. Indeed, the rate of oil spills has gone down due
-       to better technology. How do we manage tradeoffs among different types of
-       \emph{solutions}? Technological solutions come with their own costs, risks, 
-       and inherent tradeoffs. Give some examples of the tradeoffs inherent in 
-       pollution prevention technologies.
+       fuel storage tanks. There is a tendency to approach each of these impacts
+       as a separate problem and to invent technological fixes specific to each 
+       problem, which is often a successful approach. 
+       Indeed, the rate of oil spills has gone down due to better technology. 
+       However, these technological solutions come with their own costs, risks, 
+       and inherent tradeoffs.
+       Give some examples of the tradeoffs inherent in pollution prevention technologies.
+       How do we manage tradeoffs among different types of solutions?
        
-\item Expanding on the issues raised in the previous question, 
+\item Expanding on the issues raised in the previous questions, 
       nuclear power has had its own environmental issues. 
       Disasters such Fukushima Daiichi, Three-Mile Island, and Chernobyl come to mind. 
       High-level waste is another. 
@@ -707,33 +709,39 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
       environmental impacts?
       Which impacts are more acceptable? Which are less acceptable?
       
-\item The naive tendency is to read the previous two questions and just say that
+\item The naive tendency is to read the previous three questions and just say that
       all impacts are bad, which is true by definition of the word ``impact''
       but it is not helpful. The more interesting and helpful question is the 
-      debate between a cost/benefit analysis (do the benefits provided by this
-      form of energy outweigh the costs?) and the question ``is this form of 
-      energy sustainable and, if so, for how long?'' Do you lean more to the 
-      cost/benefit side or the sustainability side and why? Are you using a weak
-      or strong sustainability criterion?
+      debate between a cost/benefit perspective (do the benefits provided by this
+      form of energy outweigh the costs?) and a sustainability perspective
+      (``is this form of energy sustainable and, if so, for how long?'').
+      Do you lean more to the  cost/benefit perspective or the sustainability 
+      perspective and why? 
+      Are you using a weak or strong sustainability criterion?
       
 \item Some people object to wind turbine because they kill birds. 
-      All human structures kill birds. 
+      The truth is, all human structures kill birds. 
       What are the alternatives (to having wind turbines at all)?
       What is the cost/benefit analysis of having wind turbines?
       Who does the analysis and makes the decisions about whether to have wind
       turbines and where to site them?
-      Whether there will be a cap on the total number of wind turbines is probably
-      the same as whether there will be a cap on the extent of human civilization.
-      Does the whole Earth belong to humans or do animals get a place ``of their own?''
+      Do birds get a voice in the decision? Should they?
+      If so, who speaks for the birds?
+      What about other animals, say clams or ants? 
+      What about trees or the wind itself?
+      What would your assumptions have to be to answer yes to any of these questions?
 
-\item Which would you prefer, a biomass energy system or a WWS energy system? Why?
+\item Which would you prefer, a biomass energy system or a water-wind-solar (WWS)
+      energy system? Why?
 
-\item What would be the consequences of a reduction in $EROI$ that would accompany a conversion to 
-        a biofuel-based energy system?
+\item What would be the consequences of a reduction in $EROI$ that would accompany 
+      a conversion to a biofuel-based energy system?
         
-\item One issue with a fully WWS electricity grid is the need for significant
-      energy storage. Is grid-scale storage really required or is it just 
-      something we would like to have? How can you tell?
+\item One issue with a fully WWS electricity grid is the supposed need for significant
+      energy storage. 
+      Is grid-scale storage really required or is it just something we would like 
+      to have? 
+      How can you tell?
 
 \item Consider the energy transition shown in Figure \ref{fig:CarbonIntensityGraph}.
       What does Figure \ref{fig:CarbonIntensityGraph} indicate about the length
@@ -741,10 +749,15 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
       Why did we go from a low-carbon economy (such as in 1800) to the high-carbon
       economy we have today? 
 
-\item Should the transition to renewable energy sources be actively managed or should 
-      we let economics do it for us? 
-      Do we have time to wait? 
-      Who makes these decisions?
+\item Should the transition to renewable energy sources be actively managed 
+      (for example by government policy) or should we let the ``invisible hand
+      of the market'' manage the transition for us? Why?
+      Are your reasons strictly because of the outcome(s) you imagine? 
+      What assumptions are you making that lead to those outcomes?
+      Or do you have philosophical reasons to prefer active versus passive 
+      management?
+      Who is actually making the decisions about transitions to renewable energy
+      (or not)?
 
 \item Find the proportion of renewable energy in the world's energy mix today.
         Does this proportion indicate that we are far into the transition to a 
@@ -757,13 +770,15 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
       What sorts of decisions is each most helpful with?
       
 \item Do you agree with the process of elimination in Section \ref{sec:reducing_c}?
+      Are there other approach(es)? If so, what are they?
+      What assumptions lead you to prefer one approach over another? % degrowth vs. techno optimists.
 
 \item Should carbon capture and storage/sequestration be pursued as a stop-gap
       measure (until we get fully renewable energy)?
       What is your criteria for making that decision?
       Under what circumstances would your answer change?
       
-\item The big issue for carbon capture and storage/sequestration is who are the 
+\item The big issue for carbon capture and storage/sequestration (CCS) is who are the 
       stakeholders -- who pays and who benefits?
       ``It's too expensive'' is just another way of saying ``we don't value that
       very much.'' Are there legal or financial arrangements that could be made 
