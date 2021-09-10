@@ -10,12 +10,21 @@
 %#############################################################
 \epigraph{There is nothing like staying at home for real comfort.}{Jane Austen}
 
-This is the first of four chapters to discuss
-areas of life where sustainability challenges are relevant and important:
-households (this chapter),
-transportation (Chapter~\ref{chap:transportation}), 
+Having developed a framework for sustainability thinking in Equation \ref{eq:IPRAC}
+and Chapters~\ref{chap:introduction}-\ref{chap:carbon_intensity},
+this chapter is the first of four chapters to discuss
+areas of life where sustainability challenges are relevant and important.
+The four ``application areas'' are selected based, in part, on where energy
+is used (Figure \ref{fig:LLNL_energy_sankey}), that is, where carbon emissions
+originate (Table \ref{tab:corrected_co2_emissions}).
+This chapter explores in implications and applications of sustainability thinking
+to households.
+Where and how you live\emph{might} be the area of your life that you have the most
+control over.
+Transportation (Chapter~\ref{chap:transportation}), 
 agriculture (Chapter~\ref{chap:agriculture}), and
-land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}).
+land use and urban planning (Chapter~\ref{chap:land_use_urban_planning})
+are the subject of the next three chapters.
 The structure of each chapter in Part \ref{part:sustainability_challenges} is similar:
 First, the importance of that area of life to sustainability is discussed.
 Next, technical details about sustainability in that area of life are presented.
