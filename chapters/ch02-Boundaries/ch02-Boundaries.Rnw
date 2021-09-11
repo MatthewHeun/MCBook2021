@@ -53,7 +53,7 @@ Simply having oceans and an atmosphere \emph{provides} a place for pollution to 
 The second set of services is \emph{regulating and supporting services}, 
 which sustain and stabilize the ecosystem, including 
 processes for breaking down and recycling dead organisms; 
-the carbon cycle, %(see Figure~\ref{fig:CCycle}),  
+the carbon cycle; %(see Figure~\ref{fig:CCycle}),  
 nitrogen, oxygen, and water cycles; 
 and the fact that plant roots stabilize soil and prevent erosion.
 
@@ -150,7 +150,7 @@ The angle beyond which the boat flips is called the tipping point.}
 \label{fig:buoyancy}
 \end{figure}
 
-There is a psychological element to the tipping point analogy too. 
+There is also a cognitive element to the tipping-point analogy. 
 All our experience conditions us to expect the boat to right itself when heeled
 over -- because it has always done so in the past.
 Having the system behave in a completely different manner is outside our direct
@@ -169,23 +169,27 @@ the ecosystem does not supply needed resources.
 % but be less than one doubling period from using the rest of the supply.
 The deficit can be addressed in 
 two ways: either by reducing the demand or by modifying the ecosystem to increase 
-supply. For example, reducing the human population reduces the demand for food or
-converting land to cropland increases the supply. Biofuels reduce the demand for 
-fossil fuels (but require additional crop land). On the other hand, technologies 
+supply. 
+For example, reducing the human population reduces the demand for food or
+converting land to cropland increases the supply. 
+Biofuels reduce the demand for fossil fuels (but require additional crop land). 
+On the other hand, technologies 
 such as directional drilling, hydraulic fracking, and enhanced oil recovery increase
 the (functional) supply of fossil fuels.
 
 The second type of concern relates to human modifications of the ecosystem.
-Human actions can cause a change or breakdown
-in the Earth's regulating and support ecosystem services, which will lead to a tipping
-point, that is, a fundamental change in the way the ecosystem works. An example that is of
-particular concern right now is global climate change (principally) caused by
-human CO$_2$ emissions. Extinction rate is another (see the point above about rivets
-in the airplane). Because ecosystems dynamics are nonlinear and interrelated, 
+Human actions can cause a change or breakdown in the Earth's regulating and 
+support ecosystem services, which will lead to a tipping point, that is, 
+a fundamental change in the way the ecosystem works. 
+An example that is of particular concern right now is global climate change 
+(principally) caused by human CO$_2$ emissions. 
+Extinction rate is another (see the point above about rivets in the airplane).
+Because the ecosystem's dynamics are nonlinear and interrelated, 
 tipping points exist, and human actions can cause a series of cascading failures
 that will ultimately degrade the Earth's ability to support life. 
 Exponential growth, for instance in human population and consumption, is analogous
-to heeling over a boat. Growth causes greater and great demands on the ecosystem. 
+to heeling over a boat. 
+Growth causes greater and great demands on the ecosystem. 
 Eventually the boat heels over so far that it capsizes.
 
 % "Climate genocide"
@@ -199,7 +203,7 @@ dramatic ecological shifts, although the degree to which this is attributable to
 human actions is not agreed upon or well understood \cite{Malhi2018}. 
 Population-driven deforestation was a problem in ancient times and it remains so 
 today. 
-In places as far flung as Scandinavia \cite{Oestlund2015}
+In places as far flung as Scandinavia \cite{Oestlund2015},
 the Mayan empire \cite{Douglas2018}, southern Iran \cite{NFMiller1985}, but 
 especially well documented in Mediterranean in the Greek- and Roman-era \cite{Hughes2011} 
 is the overconsumption of wood for fuel and building and the clearing of forests 
@@ -217,7 +221,7 @@ ancient Greece and Rome" \cite{Hughes1982}.
 What \emph{is} new is scope or magnitude of humanity's ability to affect the environment,
 both due to high population and our level of technology.
 Fossil-fuel derived carbon emissions are of particular concern.
-Further examples include nuclear and industrial ``accidents,'' such as the Thule air base crash,
+Further examples include nuclear and industrial ``accidents,'' such as the Thule air-base crash,
 the Palomares crash, the Seveso dioxin release, and, more recently, the Chernobyl
 and Fukishima diasters, which have each contaminated many square kilometers.
 Finally, %while the risk is, perhaps, less acute than it once was, 
@@ -231,7 +235,7 @@ Broadly, there are two approaches for managing or responding to impacts.
 that is, they establish a limit on the left-hand side of Equation \ref{eq:IPARC}.
 The second method uses a weighted average, called an \emph{index}, of factors as 
 a proxy management tool. 
-The index describes a desirable collection of behaviors. 
+The index describes a collection of behaviors. 
 Whereas the planetary boundaries are limits for single variables, indices are a mix
 of variables from both sides of Equation \ref{eq:IPARC}.
 Neither method describes \emph{how} changes should be made but within each index
@@ -299,13 +303,14 @@ Chemical pollution & unknown \\
 \bottomrule \end{tabular}
 \end{table}
 
-The boundary value set for atmospheric carbon dioxide concentration
+The limit for atmospheric carbon dioxide concentration
 is no more than 350 ppm (current value is more than 412 ppm, see Figure~\ref{fig:CO2Graph}).
 Less than 15\% of Earth's land area should be converted to cropland (currently 11.7\% is cropland).
 The extinction rate should be less than 10 species per million species becoming extinct
-per year. Currently, this rate is more than 100 per million, out of a total of 10 to 14 million
-species, see Chapter \ref{chap:population}, and is accelerating. Estimates are that 
-generating new species by natural evolution to replace the ones that have been 
+per year. 
+Currently, the rate is more than 100 per million, out of a total of 10 to 14 million
+species, see Chapter \ref{chap:population}, and is accelerating. 
+Generating new species by natural evolution to replace the ones that have been 
 lost will take several million years \cite{Davis11262}.
 
 %Figure~\ref{fig:CO2Graph} shows atmospheric CO$_2$ concentration over time.
@@ -331,8 +336,8 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
 Two of the indicators in Table \ref{tab:planetBoundaries}, 
 particulate particle concentration in the atmosphere and chemical pollution, 
 did not have proposed limits. In the case of chemical pollution, 
-the vast number of such (possible) pollutants, each of which with different  
-acute and chronic effects, would make a single "threshold" value meaningless. 
+the vast number of such (possible) pollutants, each of which causes different  
+acute and chronic effects, would make a single ``threshold'' value meaningless. 
 Instead, national governments set limits on a chemical-by-chemical basis.
 Agencies such as the US Environmental Protection Agency and the European Commission
 (or member states) handle enforcement of the regulations.
@@ -545,21 +550,25 @@ data.frame(t = seq(-3, 4, by = 0.01)) %>%
 \end{figure}
 
 Figure \ref{fig:GAfig21} is a conceptual representation of the relationship between
-limits or boundaries and human effects on the environment. In part A, there is no 
-effective limit; human growth can continue unimpeded. However, we know from Section
-\ref{sec:exp} that growth can't continue forever on a finite planet; there is always
-eventually a limit. In part B, the boundary is hard and can never be crossed. For
-instance, the extractable fraction of a mineral in the Earth's 
-crust can't, by definition, exceed 100\%. In part C, exceeding the boundary is 
-possible, for short times, but the boundary is robust, that is, it recovers. 
+limits or boundaries and human effects on the environment. 
+In part (a), there is no effective limit; human growth can continue unimpeded. 
+However, Section \ref{sec:exp} shows that growth can't continue forever on a finite 
+planet; there is always an eventual limit. 
+In part (b), the boundary is hard and can never be crossed. 
+For instance, the extractable fraction of a mineral in the Earth's crust can't, 
+by definition, exceed 100\%. 
+In part (c), exceeding the boundary is possible, for short times, but the boundary 
+is robust. That is, it recovers. 
 Renewable resources like grazing land, fisheries, timber, and aquifers \emph{may}
-have behavior like this. Lastly, in part D, exceeding the boundary causes long-term
-reduction in the capacity of the ecosystem to provide ecosystem services. 
+have behavior like this. 
+Lastly, in part (d), exceeding the boundary causes long-term reduction in the 
+capacity of the ecosystem to provide ecosystem services. 
 As above, renewable resources like grazing land, fisheries, timber, and aquifers
 \emph{can} have this behavior if their capacity is exceeded to much or for too long.
 Alternatively, complex systems, like temperature regulation of the planet, may exhibit
 tipping points that can radically change limits to an ecosystem service when the 
-limit is exceeded. Carbon dioxide in the atmosphere is thought/feared to be an example
+limit is exceeded. 
+Carbon dioxide in the atmosphere is thought/feared to be an example
 of this sort of behavior; when CO$_2$ increases too much, Earth will get 
 \emph{dramatically} hotter, fundamentally altering many of its basic systems.
 
@@ -662,7 +671,7 @@ Climate change is the term used to describe the results of the greenhouse effect
 Climate change is interacting with many other planetary systems and so contributes
 to, for example, the extinction rate. 
 Climate change is causing ocean acidification, sea level rise, and the increased 
-frequency of extreme natural disasters, such as wild fires, and destructive tropical storms. 
+frequency of extreme natural disasters, such as wild fires and destructive tropical storms. 
 
 <<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions~\\cite{Ritchie:2021vw} from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are highlighted with vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
@@ -767,7 +776,7 @@ The Power of Community: How Cuba Survived Peak Oil.
 \item Assessments play a useful role in clarifying where scientific uncertainties remain. 
       While uncertainties can be used to argue for a ``wait and see'' approach, they 
       can equally well be used to argue for a precautionary approach. What are 
-      pros and cons of a ``wait and see'' versus ``let's be careful?''
+      pros and cons of ``wait and see'' versus ``let's be careful?''
       
 \item One extreme form of habitat restoration is known as ``Pleistoscene rewilding''
       \cite{Donlan2005}. %%https://www.nature.com/articles/436913a
@@ -852,13 +861,13 @@ The Power of Community: How Cuba Survived Peak Oil.
       human population to exist on cultivated sweet potatoes. Thus, the ecological
       devastation to the native environment is a kind of terraforming that allowed
       human civilization to flourish \cite{Hunt2009}. How do we judge, from a modern
-      perspective, the success or failure, pros or cons of an ancient ecological
+      perspective, the success or failure (or pros and cons) of an ancient ecological
       catastrophe (but colonization success)? How could Rapa Nui be a model for 
       a Lunar or Martian colony?
       
 \item Figure~\ref{fig:FootprintHDIGraph} indicates a tradeoff between human well-being (HDI) 
-      and ecological impact of human life. 
-      There are no countries that have high human well-being and low ecological impact.
+      and the ecological impacts of humans. 
+      There are no countries that have high human well being and low ecological impact.
       Why do you think this is?
       What can be done to push all countries to the lower-right corner of this graph?
       
@@ -888,7 +897,7 @@ The Power of Community: How Cuba Survived Peak Oil.
       you should consider as well? Are there easily accessible tools 
       (e.g., online) for those?
       
-\item Research several measures of human wellbeing. Which is best and why? 
+\item Research several measures of human well being. Which is best and why? 
 
 \item Prepare an essay on how the narrative(s) surrounding human colonization
       of Rapa Nui affect, are effected by, and relate to modern debates on 
