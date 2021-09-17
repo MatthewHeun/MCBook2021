@@ -71,24 +71,24 @@ examples here include most ocean fish,
 %summary report says 1 million animal and plant species are threatened with extinction.
 %"In 2015, 33\% of marine fish stocks were being harvested at unsustainable levels; 60\% were maximally sustainably 
 %fished, with just 7\% harvested at levels lower than what can be sustainably fished."
-whales, bison, aurochs, and most megafauna.
+whales, bison, and megafauna such as the aurochs and giant ground sloth.
 A third cause of the decline in animal populations is human-induced climate change,
 for example as with many Arctic species such as polar bear and walrus.
 Lastly, human contamination of the environment, either unintentionally or intentionally,
 is a cause for the decline of many species.
-For example widespread use of insecticides in agriculture is thought to be a strong 
+For example, widespread use of insecticides in agriculture is thought to be a strong 
 factor for the decline in many insect populations, with bees being a particularly 
-alarming example because of the extremely valuable role they play in pollinating 
-many agricultural crops.
+alarming example because of the extremely valuable role they play in pollination.
 
 \section{Human population}
 As shown in Equation \ref{eq:IPARC}, human population has a major impact on the planet.
-Figure \ref{fig:PopulationGraph} shows the Earth's human population from 1800 AD to present.
+Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800 AD to present.
 In July 2021, the world's human population is estimated to be 7.7--7.9 billion with a
-current growth rate of 1.05\%. On average, over the last hundred years, the growth rate
-was 1.55\% with a peak growth rate of 2.1\% between 1965 and 1970.
+growth rate of 1.05\%. 
+The average growth rate over the last hundred years
+was 1.55\%, with a peak growth rate of 2.1\% between 1965 and 1970.
 
-<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation~\\cite{Roser:2021uu}. Update reference?">>=
+<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation~\\cite{Roser:2021uu}. Source: Ou World in Data/United Nations Population Division">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
@@ -117,14 +117,15 @@ MKHthemes::xy_theme()
 
 \subsection{Past human populations}
 It has been said, ``It is difficult to make predictions, especially about the future.''
-Predictions about future human populations vary considerably.
-As it turns out, it is also difficult to make predictions about the past.
+Indeed, predictions about future human populations vary considerably.
+But also, it is difficult to make predictions about the past.
 Although scientists have estimated historical population levels, reliable data are limited.
-\textit{Homo sapiens} probably emerged as a species 100,000 to 200,00 years ago.
+%\textit{Homo sapiens} probably emerged as a species 100,000 to 200,00 years ago.
 In prehistoric times, the human population grew slowly. By 9000 BC there were 5 to 10 million humans.
 Around the year 1 AD there were around 300 million people, representing an average growth rate of about 0.1\%.
-By 1650 AD, the world population was around 500 million. Average growth was slowed
-because trade and urbanization enabled infectious diseases to kill large numbers.
+By 1650 AD, the world population was around 500 million. 
+Average growth was slowed because trade and urbanization enabled infectious 
+diseases to kill large numbers.
 For instance, the Black Death killed 75 to 200 million people in the 1300s.
 World population reached 1 billion (that is, 1,000 million) around 1800 AD.
 % Table 1. World population milestones. Source: United Nations Secretariat, Department of Economic and Social Affairs, % The World At Six Billion (1999), p. 8.
@@ -136,8 +137,9 @@ However, estimates of the total number of humans to have lived are 100-110 billi
 
 \subsection{Population modeling}
 Figure \ref{fig:UN_population_prospect} shows projections made by the United Nations
-about future human population. Population depends only on current population
-(known more-or-less accurately), birth rate, and death rate.
+about future human population. 
+Population depends only on current population (known more-or-less accurately), 
+birth rate, and death rate.
 The wide range of uncertainty in the predicted population is indicative of the
 uncertainty surrounding future birth and death rates.
 \begin{figure}
@@ -159,7 +161,7 @@ from a Bayesian hierarchical model. }
 \end{figure}
 Birth and death rates are dependent on many other variables.
 Figure \ref{fig:World3loops} shows a schematic of the causal loops
-used in the World3 population model. 
+used in the World3 population model, and early world population model. 
 Notice the number of variables (24!) and the many ways those variables (are 
 thought to) interact.
 No model is perfect and, indeed, the World3 model is controversial (all predictions are).
@@ -186,8 +188,8 @@ Thus, the population will grow rapidly and then stabilize.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-This gives us some hope for sustainability, namely that population won't
-\textit{continue} to grow exponentially.
+Demographic transition theory gives us some hope for sustainability, namely that 
+population won't \textit{continue} to grow exponentially.
 \end{mcframe}
 
 \begin{figure}
@@ -209,7 +211,7 @@ Phase 2 retains the high birth rate from phase 1 but the death rate falls sharpl
 (particularly for childhood mortality). 
 The result is a rapid increase in population, with many young people (see the 
 population pyramid in Figure \ref{fig:dtt}). 
-In phase 3, changing economic conditions, such as increase urbanization, a 
+In phase 3, changing economic conditions, such as increasing urbanization, a 
 transition away from an economy dependent on agriculture, and availability of 
 contraception lead to a declining birth rate. 
 In phase 3, the birth rate is still greater than the death rate, so the population 
@@ -238,7 +240,7 @@ birth rate falls, the fraction of the population that is working is much higher
 and generates a \emph{demographic dividend}; 
 the GDP \emph{per capita} is higher because the fraction of the population that 
 is working is higher. 
-Finally, if the population pyramid becomes top heavy, then there are a higher proportion
+Finally, if the population pyramid becomes ``top heavy,'' then there are a higher proportion
 of retirees to workers and GDP per capita is lower than it would be with a different
 age structure. 
 (There can still be growth in GDP per capita; it's just that the growth faces a 
@@ -246,10 +248,11 @@ demographic ``headwind.'')
 
 The age structure of the population also shows \emph{demographic momentum}. 
 It takes a lifetime to age a cohort out of the population pyramid. 
-All the next generation of parents have already been born. 
+The next generation of parents have already been born; today's children are 
+going to become parents. 
 A falling birth rate doesn't immediately lower the population; it takes time for 
 the population to stabilize. 
-Likewise, a small cohort of parents, even if they have a high birth rate, cannot 
+Conversely, a small cohort of parents, even if they have a high birth rate, cannot 
 increase total population size if the oldest generations are a large proportion 
 of the total population.
 
@@ -333,56 +336,97 @@ True sustainability thinking must consider all of human society.
 %% Science may clarify priorities “but the whole show is essentially about Love”.
 %% JVA: Technology says, 'can we," economics tells us the tradeoffs, love lets us decide whether we want to.
 
-\section{Implications for sustainability}
-Wrap this chapter up with some concluding thoughts or summary that shows the 
-connection(s) to sustainability.
-\begin{itemize}
-\item population has grown (exponentially).
-\item land and habitat impacts from housing, agriculture (to feed more people), (finite) water resources. 
-\item population fuels the economy (production and consumption)
-\item Tie back to the IPARC equation.
-\end{itemize}
+% \section{Implications for sustainability}
+% Wrap this chapter up with some concluding thoughts or summary that shows the 
+% connection(s) to sustainability.
+% \begin{itemize}
+% \item population has grown (exponentially).
+% \item land and habitat impacts from housing, agriculture (to feed more people), (finite) water resources. 
+% \item population fuels the economy (production and consumption)
+% \item Tie back to the IPARC equation.
+% \end{itemize}
+
+\section{Malthus, Ehrlich, and Simon}
+
+Various writers, thinkers, and scholars throughout the world, from antiquity to 
+the present time, have predicted that population growth 
+would \emph{cause} catastrophe, usually envisioned as starvation. 
+This viewpoint is called \emph{Malthusian} after Thomas Malthus (1766-1834), whose
+1798 book suggested that any increase is affluence (what today we would call GDP
+per capita) was temporary. 
+Increasing affluence, Malthus thought, would lead to population growth, which 
+would thereby decrease GDP \ephm{per capita}. 
+The (hypothetical) inability to achieve long-term increases in affluence is 
+called the Malthusian trap.
+Subsequently, the Industrial Revolution happened and GDP per capita \emph{did}
+increase \emph{in spite of}, or alongside of, increasing population -- see 
+Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:PopulationGraph}.
+
+Nevertheless, fears of Mathusian catastrophe have not gone away.
+Two influential modern neo-Malthusian works are \emph{The Population Bomb} (1968),
+by Paul Ehrlich, and \emph{Limits to Growth} (1972), commissioned by the Club of 
+Rome.
+\emph{Limits to Growth} warned of ``a rather sudden and uncontrollable decline 
+in both population and industrial capacity'' due to exponential growth in the 
+rate of use of nonrenewable resources.
+Likewise, \emph{The Population Bomb} predicted that in ``the 1970s hundreds of 
+millions of people will starve to death.''
+Both books have received multiple updates, including in this millenia.
+
+The opposite point of view is that there are no limits to growth.
+Matter and energy are abundant in the universe and (it is thought)
+human ingenuity can invent technology to substitute for or replace nonrenewable 
+resources.
+Resource scarcity will cause prices to rise, thereby incentivizing use of 
+alternative resources.
+Whereas \emph{Limits to Growth} assumed pollution would grow exponentially but
+pollution-control technology would not, it may be technologically possible to produce, for 
+example, abundant energy with little to no pollution, such as with wind or solar.
+
+Which of these views is correct? 
+Is population growth the source of natural catastrophe or is it a wellspring of labor and 
+technology that will give us abundant resources?
+In 1980, business professor Julian Simon challenged Ehrlich to a US\$10,000 wager.
+Ehrlich could choose any raw material he wanted and a date more than a year away.
+If the inflation-adjusted prices had decreased by that date, Simon would win. 
+Ehrlich chose copper, chromium, nickel, tin, and tungsten over the time period 
+1980 to 1990.
+In that decade, world population increased from about 4.46 billion to around
+5.33 billion.
+Despite experiencing the largest single-decade increase in population in history, 
+prices for all five materials decreased and Ehrlich lost the bet.
+If you think that settled the argument, you lose too.
+Over the years, both sides have countered with a variety of ``what-if'' scenarios.
+
+So, which is correct? 
+The path of wisdom avoids false dichotomies. 
+Likely, there are true elements to both sides of this debate. 
+Which components and which areas are correct and helpful for guiding future policy
+and which are not remains to be seen. 
+It is certainly true that a finite planet does not contain infinite resources.
+Exponential growth can't continue forever with finite resources.
+On the other hand, we've done pretty well so far and, by most measures, human 
+life is better now than it has ever been.
+Whether that can, and will, continue and, if so, for how long seems to depend 
+largely on what your viewpoint is. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The Once and Future World: Nature As It Was, As It Is, As It Could Be, by J.B. MacKinnon (2013)
+J.B. MacKinnon, \emph{The Once and Future World: Nature As It Was, As It Is, As It Could Be},
+Random House, Canada (2013).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The History Guy (YouTube) ``The Great Kansas Grasshopper Plague of 1874,'' 
 published August 17, 2020. \\
-%Our World in Data. **** Eliminate OWID, because is sources for Figure. ****
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{questions}
-
-\item The fear that population will outstrip resources is called \emph{Malthusian
-      economics} after Thomas Malthus (1766-1834). Modern thinkers concerned 
-      with the (postulated) humanitarian crisis care called ``neo-Malthusians.''
-      Nevertheless, this concern is \emph{not} modern. A variety of writers and
-      scholars through the ages back to antiquity and throughout the world have
-      voiced the same fear, but (their opponents will argue) the predicted
-      calamity \emph{has never come to pass}. Expectation (or not) of calamity
-      is a reflection of the way we think about the natural world, the economy,
-      human ingenuity, and ``progress.'' Explain some counter-Malthusian viewpoints
-      and critique them versus Malthusian expectations.
-      **** Split between a question and a project. ****
-      **** Reference the Erlich bet? ****
-      **** per James: consider normalacy bias. ****
-
-\item What are ways population could be controlled?
-      **** Reference World3 model figure? Give some examples? China, USAID contraception? ****
-      % something about replacement birth rate?
-      
-      % question about far-flung families and social connectedness. 
-      % how do we find spouses and create families. 
-      % What are families for?
-      % Adoption.
 
 \item Some electric train systems are supplied with power by energizing
       a third rail (the first two being the tracks) with high voltage DC 
@@ -394,39 +438,87 @@ published August 17, 2020. \\
       this is so. What groups or individuals would be sensitive to attempts
       to control population? Explain moral or ethical concerns with population control.
 
+\item What are some ways population \emph{could} be controlled?
+      For instance, Figure~\ref{fig:World3loops} might suggest some ideas.
+      Or, perhaps what Malthus called ``miseries:'' war, famine, and/or epidemics will
+      control population.
+      Lastly, consider contraception or, as Malthus suggested, late marriage.
+      
+\item Riffing on Malthus's suggestion of late marriage, what are families for? 
+      What role, if any, does family formation play in population growth?
+      Is it easier to find a spouse (or not) in a higher population density area?
+      What effects does a widely distributed population have on family life and 
+      social connectedness?
+      What degree, do you think, should the topic of adoption play in population
+      growth, if any? What are its pros and cons in forming a family?
+
 \item Notice the population structure shown in Figures \ref{fig:PopulationGraph} 
-      and \ref{fig:half_population}. Does this complicate the issues raised in
-      Question 3, and if so, how? What options does the rest of the world have 
-      for decreasing population growth in Asia (where most of the world's people
-      are) and Africa (where the most growth is anticipated)? What means are morally
-      acceptable? Which do you think are most likely to be effective?
+      and \ref{fig:half_population}. 
+      Does this complicate the issues raised in Questions Q3.1 and Q3.2, and if so, how? 
+      What options does the rest of the world have for decreasing population 
+      growth in Asia (where most of the world's people are) and Africa (where 
+      the most growth is anticipated)?
+      What means are morally acceptable? 
+      Which do you think are most likely to be effective?
       
 \item The best XKCD comic is \href{https://xkcd.com/552/}{\#552}, which considers correlation and causation.
       Falling birth rates are correlated with economic development, urbanization,
       increased education, decline in the value of child labor, and access to 
-      contraception. (Note that birth rates fell in western Europe in the late 1800s before 
-      widespread use of contraception.) What are some \emph{morally acceptable}
-      ways to \emph{cause} birth rates to decline?
+      contraception. 
+      (Note that birth rates fell in western Europe in the late 1800s \emph{before} 
+      widespread use of contraception.) 
+      What are some \emph{morally acceptable} ways to \emph{cause} birth rates to decline?
 
 \item What things have a \textit{higher} environmental impact as populations urbanize?
       What things have lower impact?
 
-\item Describe where you live. Is it urban, suburban, rural, or would you describe it 
-      in some other way? What do you like about the environment in which you live? How would you 
-      make it different if you could?
+\item Describe where you live. 
+      Is it urban, suburban, rural, or would you describe it in some other way? 
+      What do you like about the environment in which you live? 
+      How would you make it different if you could?
       
 \item Reflect on the statement ``our investments reflect our values'' as applied to
       urban, suburban, and rural living.
       
 \item Migration of people from rural to urban environments and especially across
       national borders is an emotionally charged political issue. 
-      How does the movement of people
-      affect sustainability?
+      How does the movement of people affect sustainability?
       
 \item What is a socially equitable way to allocate access to wilderness areas and experiences?
       Does access to wilderness make it non-wilderness?
       Is access to ``nature'' a right? What are ways to allow urbanites access to
       the natural world?
+
+\item It is interesting to note that Malthus's book was published just before before 
+      Figure~\ref{fig:PopulationGraph} begins. On the one hand, exponential growth
+      always looks dramatic; Figure~\ref{fig:exp} shows exponential growth for
+      any time $t$. On the other hand, Malthus had not yet experienced the very 
+      dramatic rise in world population that occurred post-1800. How would 
+      Malthus's viewpoint have been different if he were writing in the twentieth
+      or twenty-first century?
+
+\item Is your personal outlook on the future Malthusian or not? Why, and to
+      what degree? Are there qualifying statements for you?
+      With respect to the Simon-Ehrlich bet, what bets would you take?
+      What bets would you propose?
+
+\item Is a wager a good way verify truth? Why or why not? How? 
+      Did the Simon-Ehrlich bet ``prove'' anything? 
+      Is it evidence that should be given weight? 
+      If so, what is it evidence of and how much weight?
+      If no, why not?
+      
+\item Normalcy bias is a cognitive bias that minimizes or ignores threats or
+      warnings of impending disaster. 
+      It effects about 70\% of people. 
+      The brain processes new information through the filter
+      of what the brain \emph{expects} to happen, which is that things will 
+      continue as they currently are.
+      The opposite of normalcy bias is overreaction bias, which causes slight 
+      deviations from normal or expected behavior to be seen as signs of 
+      extreme danger.
+      What role do you think cognitive biases play in our current response
+      to climate change?
 
 \end{questions}
 
@@ -445,6 +537,13 @@ published August 17, 2020. \\
       
 \item Make a population pyramid for city, state, county, or school.
       Do you notice anything interesting?
+      
+\item Research the idea of ``progress,'' technical and otherwise.
+      From whence comes the idea that civilization is ``progressing?''
+      How old is this idea? How widely is the idea shared across the globe?
+      What is the end towards which we progress? Is there an end? 
+      What is the driving force for progress?
+      
 
 \end{projects}
 
