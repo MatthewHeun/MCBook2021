@@ -63,7 +63,7 @@ be consuming a service, such as education or getting a haircut.
 % having the prof grade your papers, etc. is "consumption"
 Sometimes, what is ``consumed'' is ancillary to what the consumer actually desires. 
 For example, when the consumer drives from point A to point B, whether the car 
-the burns gasoline or is electric doesn’t matter to the consumer. 
+is electric or burns gasoline doesn’t matter to the consumer. 
 The point is that, in economic terms, travel uses an energy service. 
 The energy consumed is just a means to an end. 
 (In this case, that end is travel.)
@@ -72,25 +72,29 @@ Microeconomic theory (and, indeed, our own experience) tells us that human wants
 limitless. 
 However much we have, we always want more. 
 Consumption has diminishing returns of marginal utility; the fourth, fifth, and 
-sixth donuts increase happiness less than the first, second, and third donuts. 
-After a donut, we may want a cup of coffee instead of a second donut, then a 
+sixth doughnut increase happiness less than the first, second, and third doughnuts. 
+After a doughnut, we may want a cup of coffee instead of a second doughnut, then a 
 slice of bacon, and then to read the news, and then \ldots . 
 The point is there is always a next ``thing,'' which need not necessarily 
 be a physical object. 
 
 Having choice enhances consumer well being. 
-A choice between a muffin and a donut is better than if only donuts are 
+A choice between a muffin and a doughnut is better than if only doughnuts are 
 on the menu. 
-(Again, there is diminishing marginal utility for choice as well; 
-partly this is because of human cognitive limits.)
+(Choice itself is subject to diminishing marginal utility; 
+partly because of human cognitive limits.)
 
-The value functions of different individuals may be different and so free trade 
-allows each party to maximize their own value function. 
+Each individual has a different set of preferences about what will make them
+happy.
+The existence of differences is exactly what allows free trade. 
+Both parties can increase their own happiness by trading for something that will
+make them more happy than the thing they have. 
+Trade makes people better off.
 The opportunity cost is the value (to them) of what they give up, be it money or 
 a good or service. 
 A barber might prefer to have \$15 rather than 20 minutes of free time.
 You might rather have a haircut than \$15.
-In this situation you can give the barber \$15 and get a haircut. 
+In this situation, you can give the barber \$15 and get a haircut. 
 You’re happier with the haircut. 
 The barber is happier with the \$15.
 Your opportunity cost (\$15) was worth less to you than the haircut, so you end 
@@ -293,11 +297,11 @@ regimes, in addition to the caveats about what GDP measures and what it doesn't.
 GDP is denominated in units of money and is the sum of four terms,
 \begin{equation} 
 \label{eq:GDP}
-  GDP = C+G+I+NX \; .
+  GDP = c+g+i+nx \; .
 \end{equation}
-$C$ is consumption and represents purchases made by individuals. 
-Consumption makes up about two thirds of GDP for developed economies and is
-generally divided into three categories: durable goods, nondurable goods, and services. 
+Consumption ($c$) is purchases made by individuals. 
+Consumption typically is about two thirds of GDP for developed economies and is
+usually divided into three subcategories: durable goods, nondurable goods, and services. 
 Services represent nontangible things. 
 Examples include the aforementioned haircut, legal advice, education, and concert 
 tickets. 
@@ -307,15 +311,15 @@ Nondurable goods are things that are consumed immediately, like food, paper, or 
 Fabrics, like clothes or carpet, are counted as nondurable goods, even if they 
 happen to last more than three years.
 Durable goods spending is more sensitive to economic conditions than nondurable 
-goods spending because consumers can choose to postpone spending on durable goods 
+goods spending because consumers can usually choose to postpone spending on durable goods 
 until their circumstances are better. 
 
-$G$ is government spending, which is divided between government consumption 
-(such as, equipment and wages paid to government workers) and net investment, for 
+Government spending ($g$) is divided between government consumption 
+(such as equipment and wages paid to government workers) and net investment, for 
 example, infrastructure improvements.
 
-The symbol $I$ stands for investment, which is \emph{not} money put into a bank account. 
-Investment is goods that are purchased for use in the future. 
+Investment ($i$) is \emph{not} money put into a bank account. 
+Investment is goods that are purchased now for use in the future. 
 There are three subcategories of investment: nonresidential fixed investment, 
 residential fixed investment, and inventory investment. 
 Nonresidential fixed investment is equipment and plants (factories) purchased by firms. 
@@ -324,11 +328,12 @@ households and landlords.
 Inventory investment is the purchase, by firms, of goods for later sale and could 
 be negative (inventory is falling) or positive (inventory is increasing).
 
-$NX$ is net exports; here ``net'' is the difference between the value of exports 
+$nx$ is net exports; here ``net'' is the difference between the value of exports 
 and imports. 
-Thus, NX could be a negative number.
+Thus, $nx$ could be a negative number.
 World GDP is the sum of all national GDPs.
-Therefore, for world GDP, $NX=0$. We don't import from or export to space, yet.
+Therefore, for world GDP, $nx=0$. 
+We don't import from or export to space, yet.
 
 \subsection{Production/Consumption balance}
 While individuals and corporations may save money for purchases in the future, the
@@ -363,12 +368,10 @@ likewise, only things that will be consumed are produced, we are ready to introd
 the metaphor of economic metabolism.
 The economy takes in resources and produces wastes.
 Thus, the economy is the metabolism of human society.
-Another way of looking at Equation \ref{eq:IPARC} is that the impacts produced
-are really a result of consumption, that is the affluence term.
-The $R \times C$ terms are just a mechanism or feed for the economy.
-To put it another way, if there weren't consumption occurring, there wouldn't be
-any $R \times C$.
-To put it a third way, resources $R$ feed the economy and the resulting impacts
+One way of looking at Equation~\ref{eq:IPARC} is that the impacts produced $I$
+are the result of economic activity.
+Total consumption is $P \times A$.
+Resources $R$ are the feed the economy needs to live and grow.
 $C$ are the wastes that the economy excretes.
 
 \section{Economic growth}
@@ -383,35 +386,38 @@ Instead, \emph{growth} looks like Figure \ref{fig:exp}.
 Output (or productivity) growth means that each year the mine must produce more 
 than it did the previous year.
 
-The economy can grow by consuming more resources, such as energy, (and, therefore, 
-creating more wastes) which is called \emph{extensive} growth, or by using inputs 
-(resources) more efficiently, which is called \emph{intensive} growth.
-The factors that determine how much goods and services an economy can produce
-include labor, capital, energy, and materials.
-The productivity of workers (labor productivity) is influenced by human capital,
-which accounts for the education and skill of workers, the number of workers
-in the population, the hours they work, and the faction of the population that is
-working (see Section \ref{sec:dtt}). 
-A major source of economic growth is innovation.
-The majority of the goods and services we consume today did not exist in 1870.
+There are two ways economic output can increase.
+Either the economy gets more inputs, which is called \emph{extensive} growth, or
+it uses inputs more efficiently, which is called \emph{intensive} growth.
+Extensive growth uses more resources, such as energy, and, therefore, 
+produces more wastes. 
 
-Lastly, the productivity of an economy is influenced by the amount of capital 
-investment.
-Capital is both buildings and equipment, machines, and tools -- all the \emph{things}
-that can enhance a worker's productivity.
-Because capital depreciates, continual investment (part of $I$ in Equation \ref{eq:GDP})
+Economic inputs include labor, capital, energy, and materials.
+The productivity of labor depends on the education and skill 
+of workers, the number of workers in the population, the number of hours they 
+work, and the faction of the population that is working (see Section \ref{sec:dtt}). 
+
+Capital is buildings and equipment, machines, and tools -- all the \emph{things}
+that can make workers more productive.
+For instance, a builder with a backhoe can excavate a foundation faster than a
+builder with just a shovel.
+Because capital depreciates over time, continual investment 
+(part of $i$ in Equation \ref{eq:GDP})
 is needed to maintain a certain level of capital stock. 
 The greater the level of capital, the larger the yearly investment is needed to
 maintain it.
 At some point, there is a maximum level of effective capital.
 Beyond that point, the capital is more expensive to maintain than it contributes 
 to the economy.
-Where the point is depends on the level of technology and the price of borrowing
+Where this point is depends on the level of technology and the price of borrowing
 money (that is, interest) for making capital investments.
-
 Conceptually, at the effective maximum level of capital, labor will have a maximum
 level of output. At this point, an economy can grow only through access to new 
 resources (such as energy) or innovation (a change in the level of technology).
+
+A major source of economic growth is innovation, which is one kind of intensive growth.
+% Question: is all intensive growth innovation?
+The majority of the goods and services we consume today did not exist in 1870.
 
 \section{Opportunities for reduced impact}
 World economies are managed to exhibit a constant growth rate, that is, exponential
@@ -436,7 +442,7 @@ is necessary for sustainability, accepting a drastically lower standard of
 living is extremely unpalatable for most people.
 Furthermore, there are costs and difficulties associated with \emph{transitioning}
 from one type of economy to another. 
-The costs are real and there has been no real political will or action to make 
+The costs are real and there has been no political will or action to make 
 such a transition feasible in the amount of time it would take to avoid a climate
 crisis.
 Another alternative is a \emph{circular} economy, which is one that exists only
@@ -522,7 +528,10 @@ United Nations Department of Economic and Social Affairs, Statistics Division
       such as natural capital, to GDP. Consider extensions to GDP that would
       add \emph{social capital} to GDP. What such variables would you consider?
       
-\item Why do we have (global/local) poverty beside (global/local) plenty?
+\item Why do we have (global/local) poverty beside (global/local) affluence?
+      Do you interpret this question to be about the sources of poverty or to be
+      about the sources of affluence? 
+      Does one interpretation or another make a difference in how you answer?
 
 \item GDP, because it represents consumption, is only a partial indication of wealth. 
       For instance, owning an asset, like land or a valuable painting, doesn’t factor 
@@ -581,7 +590,8 @@ United Nations Department of Economic and Social Affairs, Statistics Division
       this true? In what ways? Are there limits and what are they? (Other approaches
       to this question are presented in Chapter \ref{chap:government}.)
       
-\item IPCC6's \emph{most optimistic} scenario is a 0.5m sea-level rise by 2100.
+\item IPCC6's \emph{most optimistic} scenario (see Chapter~\ref{chap:introduction}
+      Further Reading) is a 0.5m sea-level rise by 2100.
       Coastal cities and beach-front properties will be most affected and, in 
       many cases, most able to pay for mitigation. Given the expected future
       costs of fighting sea-level rise, why don't coastal dwellers pay now to 
