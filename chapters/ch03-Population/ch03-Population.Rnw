@@ -80,15 +80,20 @@ For example, widespread use of insecticides in agriculture is thought to be a st
 factor for the decline in many insect populations, with bees being a particularly 
 alarming example because of the extremely valuable role they play in pollination.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Human population}
+\label{sec:human_population}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 As shown in Equation \ref{eq:IPARC}, human population has a major impact on the planet.
 Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800 AD to present.
 In July 2021, the world's human population is estimated to be 7.7--7.9 billion with a
-growth rate of 1.05\%. 
+growth rate of 1.05\%/year. 
 The average growth rate over the last hundred years
-was 1.55\%, with a peak growth rate of 2.1\% between 1965 and 1970.
+was 1.55\%/year, with a peak growth rate of 2.1\%/year between 1965 and 1970.
 
-<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation~\\cite{Roser:2021uu}. Source: Ou World in Data/United Nations Population Division">>=
+<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation~\\cite{Roser:2021uu}. Source: Our World in Data/United Nations Population Division">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
@@ -122,7 +127,7 @@ But also, it is difficult to make predictions about the past.
 Although scientists have estimated historical population levels, reliable data are limited.
 %\textit{Homo sapiens} probably emerged as a species 100,000 to 200,00 years ago.
 In prehistoric times, the human population grew slowly. By 9000 BC there were 5 to 10 million humans.
-Around the year 1 AD there were around 300 million people, representing an average growth rate of about 0.1\%.
+Around the year 1 AD there were around 300 million people, representing an average growth rate of about 0.1\%/year.
 By 1650 AD, the world population was around 500 million. 
 Average growth was slowed because trade and urbanization enabled infectious 
 diseases to kill large numbers.
@@ -132,7 +137,7 @@ World population reached 1 billion (that is, 1,000 million) around 1800 AD.
 % https://www.learner.org/courses/envsci/unit/text.php?unit=5&secNum=4
 Population changes come from the birth rate and the death rate.
 Estimating the populations of antiquity is difficult because these rates are somewhat conjectural.
-However, estimates of the total number of humans to have lived are 100-110 billion.
+However, estimates of the total number of humans to have lived are 100--110 billion.
 
 
 \subsection{Population modeling}
@@ -280,7 +285,7 @@ the same fraction of Earth's population.
 Since the industrial revolution, humans have been increasingly living in urban environments.
 In 1973 there were only 3 cities (Mexico City, Tokyo, and New York City) with populations 
 of more than 10 million people (called ``megacities'').
-Since 2005-2006 more than half of the world's population live in urban areas.
+Since 2005--2006 more than half of the world's population live in urban areas.
 Now there are 21 cities with populations of 10 million or more 
 (see Figure \ref{fig:cities_population} for more detail).
 The percent living in urban areas is projected to grow to 68\% by 2050. 
@@ -394,7 +399,7 @@ Ehrlich chose copper, chromium, nickel, tin, and tungsten over the time period
 In that decade, world population increased from about 4.46 billion to around
 5.33 billion.
 Despite experiencing the largest single-decade increase in population in history, 
-prices for all five materials decreased and Ehrlich lost the bet.
+prices for all five materials decreased, and Ehrlich lost the bet.
 If you think that settled the argument, you lose too.
 Over the years, both sides have countered with a variety of ``what-if'' scenarios.
 
