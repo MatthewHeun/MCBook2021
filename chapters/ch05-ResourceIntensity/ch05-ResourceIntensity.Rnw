@@ -393,7 +393,8 @@ primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensi
                                                                  "Trad. bio.")), 
     energy_EJ = energy_TWh * 0.0036
   )
-  # Make the graph
+
+# Make the graph
 primary_energy %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_EJ", fill = "primary_energy_type")) +
   ggplot2::geom_area() + 

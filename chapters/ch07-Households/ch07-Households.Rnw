@@ -211,12 +211,59 @@ show these trends.
 \label{fig:average_household_consumption}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch07-Households/figures/total_us_household_energy_consumption_trend.pdf}
-\caption[Total household energy consumption]{Total U.S.\ household energy consumption trend 1980--2009~\citep[Fig.~2]{EIA:2012aa}.}
-\label{fig:total_household_consumption}
-\end{figure}
+% \begin{figure}
+% \centering
+% \includegraphics[width=\figwidth]{chapters/ch07-Households/figures/total_us_household_energy_consumption_trend.pdf}
+% \caption[Total household energy consumption]{Total U.S.\ household energy consumption trend 1980--2009~\citep[Fig.~2]{EIA:2012aa}.}
+% \label{fig:total_household_consumption}
+% \end{figure}
+
+<<TotalHouseholdEnergyConsumption, fig.cap="U.S.\\ household energy consumption by energy type~\\cite{U.S.-Energy-Information-Agency:th}.">>=
+total_household_energy_consumption <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "Table_2.2_Residential_Sector_Energy_Consumption.xlsx"),
+                                                  sheet = "data to plot")
+
+# Create graph
+total_household_energy_consumption %>% 
+   dplyr::rename(
+      Biomass = Biomass_trillion_BTU,
+      Coal = Coal_trillion_BTU, 
+      Petroleum = Petroleum_trillion_BTU,
+      `Natural gas` = Natural_gas_trillion_BTU,
+      Electricity = Electricity_trillion_BTU,
+      Geothermal = Geothermal_trillion_BTU,
+      `Solar thermal` = Solar_trillion_BTU
+   ) %>% 
+   tidyr::pivot_longer(cols = !Year, names_to = "energy.type", values_to = "total.energy_trillion_BTU") %>% 
+   dplyr::mutate(
+      # Define the order of energy types
+      energy.type = factor(energy.type, levels = c("Electricity", "Geothermal", "Solar thermal", "Natural gas", "Petroleum", "Coal", "Biomass")),
+      # energy.type = factor(energy.type, levels = c("Biomass", "Coal", "Petroleum", "Natural gas", "Solar", "Geothermal", "Electricity")),
+      # Clean up the data: replace NA by 0
+      total.energy_trillion_BTU = dplyr::case_when(
+         is.na(total.energy_trillion_BTU) ~ 0,
+         TRUE ~ total.energy_trillion_BTU
+      ), 
+      total.energy_quads = total.energy_trillion_BTU / 1000, # Convert from trillions to quadrillion
+      total.energy_EJ = total.energy_quads * 1.0550559
+   ) %>% 
+   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", 
+                                                 y = "total.energy_EJ", 
+                                                 fill = "energy.type")) + 
+   ggplot2::geom_area() +
+   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
+   ggplot2::labs(x = NULL,
+                 y = "U.S. household energy cons. [EJ/year]", 
+                 fill = NULL) +
+   MKHthemes::xy_theme()
+
+   
+
+
+@
+
+
+
+
 
 One might think that increasing dwelling sizes are driven by more occupants per dwelling.
 However, Figure~\ref{fig:person_household} shows that
