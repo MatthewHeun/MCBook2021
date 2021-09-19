@@ -86,21 +86,16 @@ alarming example because of the extremely valuable role they play in pollination
 \label{sec:human_population}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-As shown in Equation \ref{eq:IPARC}, human population 
-has a major impact on 
-
-% Population is only "major" if its rate is large. 
-% So suggest downplaying this a bit:
-% is a factor that impacts 
-
-the planet.
+As shown in Equation \ref{eq:IPARC}, the number of individual humans is one source 
+of impacts on the planet.
 Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800 AD to present.
 In July 2021, the world's human population is estimated to be 7.7--7.9 billion with a
 growth rate of 1.05\%/year. 
 The average growth rate over the last hundred years
 was 1.55\%/year, with a peak growth rate of 2.1\%/year between 1965 and 1970.
 
-<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation~\\cite{Roser:2021uu}. Source: Our World in Data/United Nations Population Division">>=
+%% Source: Our World in Data/United Nations Population Division.
+<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation~\\cite{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
@@ -153,7 +148,7 @@ Population is affected by the birth rate and the death rate.
 Estimating the populations of antiquity is difficult because 
 the birth and death rates are uncertain.
 However, estimates of the total number of humans to have ever lived are 100--110 billion.
-Today's population of about 8 billion people represents 8--9 \% 
+Today's population of about 8 billion people represents 8--9\% 
 of all the people who have ever lived.
 
 
@@ -185,11 +180,11 @@ used in the World3, an early world population model.
 Figure \ref{fig:World3loops} shows the large number of variables (24!) that affect population and
 the many ways those variables (are thought to) interact.
 No model is perfect and, indeed, the World3 model is controversial, as all predictions are.
-The point of Figure~\ref{fig:World3loops} isn't whether one model is right or wrong,
-but rather that many variables that effect population.
-Indeed, another population model produced around the same time used 200,000 equations.
-
-% ******* Need a source for the previous claim.
+The point of isn't whether a model is right or wrong,
+but rather that many variables that effect population and that those variables 
+interact in complex ways.
+%Indeed, another population model produced around the same time used 200,000 equations.
+% ******* Need a source for the previous claim. 
 
 \begin{figure}
 \centering
@@ -206,7 +201,8 @@ Accounting for the interactions between social, demographic, and economic
 variables is expected to give more realistic estimates of future population.
 
 % **** Is the previous paragraph necessary?
-
+% The difference between a projection and a prediction. 
+% reinforces the interactions.
 
 %++++++++++++++++++++++++++++++
 \subsection{Demographic transition theory}
@@ -218,7 +214,8 @@ In an undeveloped society, both birth rates and death rates are high, resulting
 in a low population growth rate.
 % ****** The fact that birth and death rates are both high does not automatically 
 % mean a low population growth rate.  
-% Two identical large numbers could difference to zero giving zero growth rate. 
+% Two identical large numbers could difference to zero giving zero growth rate.
+% JVA: zero is low growth.
 Demographic transition theory, illustrated schematically in Figure~\ref{fig:dtt},
 indicates that economic development leads to a decrease in mortality followed some time 
 later by a falling birth rate.
@@ -411,7 +408,7 @@ the Industrial Revolution occurred, and GDP per capita rose
 \emph{in spite of}, or alongside of, increasing population.
 (See Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:PopulationGraph}.)
 
-Nevertheless, fears of Mathusian catastrophe have not gone away.
+Nevertheless, fears of Malthusian catastrophe have not gone away.
 Two influential modern neo-Malthusian works are \emph{The Population Bomb} (1968),
 by Paul Ehrlich, and \emph{Limits to Growth} (1972), commissioned by the Club of 
 Rome.
@@ -427,7 +424,7 @@ Both books have received multiple updates, including in this millenia.
 % If we want to keep it, perhaps we should say more?
 
 The opposite point of view is often called \emph{techno-optimism}.
-Techno-optimism holds that there are no limits to growth, because.
+Techno-optimism holds that there are no limits to growth, because
 (a) matter and energy are abundant in the universe and
 (b) human ingenuity can invent technology to substitute for all depleting nonrenewable 
 resources.
@@ -522,9 +519,10 @@ published August 17, 2020. \\
       What degree, do you think, should the topic of adoption play in population
       growth, if any? What are its pros and cons in forming a family?
 
-\item Notice the population structure shown in Figures \ref{fig:PopulationGraph} 
+\item Notice the population distribution indicated by Figures \ref{fig:PopulationGraph} 
       and \ref{fig:half_population}. 
-      Does this complicate the issues raised in Questions Q3.1 and Q3.2, and if so, how? 
+      Does distribution of population complicate the issues raised in Questions 
+      Q3.1 and Q3.2, and if so, how? 
       What options does the rest of the world have for decreasing population 
       growth in Asia (where most of the world's people are) and Africa (where 
       the most growth is anticipated)?
@@ -556,8 +554,8 @@ published August 17, 2020. \\
       
 \item What is a socially equitable way to allocate access to wilderness areas and experiences?
       Does access to wilderness make it non-wilderness?
-      Is access to ``nature'' a right? What are ways to allow urbanites access to
-      the natural world?
+      Is access to ``nature'' a right? 
+      What are ways to allow urbanites access to the natural world?
 
 \item It is interesting to note that Malthus's book was published just before before 
       Figure~\ref{fig:PopulationGraph} begins. On the one hand, exponential growth
@@ -567,12 +565,14 @@ published August 17, 2020. \\
       Malthus's viewpoint have been different if he were writing in the twentieth
       or twenty-first century?
 
-\item Is your personal outlook on the future Malthusian or not? Why, and to
-      what degree? Are there qualifying statements for you?
+\item Is your personal outlook on the future Malthusian or not? 
+      Why, and to what degree? 
+      Are there qualifying statements for you?
       With respect to the Simon-Ehrlich bet, what bets would you take?
       What bets would you propose?
 
-\item Is a wager a good way verify truth? Why or why not? How? 
+\item Is a wager a good way verify truth? Why or why not? 
+      Explain how a wager produces truth (or fails to do so).
       Did the Simon-Ehrlich bet ``prove'' anything? 
       Is it evidence that should be given weight? 
       If so, what is it evidence of and how much weight?
