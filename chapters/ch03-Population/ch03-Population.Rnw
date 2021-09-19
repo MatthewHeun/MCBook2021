@@ -86,7 +86,14 @@ alarming example because of the extremely valuable role they play in pollination
 \label{sec:human_population}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-As shown in Equation \ref{eq:IPARC}, human population has a major impact on the planet.
+As shown in Equation \ref{eq:IPARC}, human population 
+has a major impact on 
+
+% Population is only "major" if its rate is large. 
+% So suggest downplaying this a bit:
+% is a factor that impacts 
+
+the planet.
 Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800 AD to present.
 In July 2021, the world's human population is estimated to be 7.7--7.9 billion with a
 growth rate of 1.05\%/year. 
@@ -120,33 +127,48 @@ region_pop %>%
 MKHthemes::xy_theme()
 @
 
+
+%++++++++++++++++++++++++++++++
 \subsection{Past human populations}
+\label{sec:past_human_populations}
+%++++++++++++++++++++++++++++++
+
 It has been said, ``It is difficult to make predictions, especially about the future.''
 Indeed, predictions about future human populations vary considerably.
-But also, it is difficult to make predictions about the past.
-Although scientists have estimated historical population levels, reliable data are limited.
+But it is also difficult to make predictions about the past.
+Although scientists have estimated past population levels, reliable data are limited.
 %\textit{Homo sapiens} probably emerged as a species 100,000 to 200,00 years ago.
-In prehistoric times, the human population grew slowly. By 9000 BC there were 5 to 10 million humans.
-Around the year 1 AD there were around 300 million people, representing an average growth rate of about 0.1\%/year.
+In prehistoric times, the human population grew slowly.
+By 9000 BC there were 5 to 10 million humans.
+Around the year 1 AD there were around 300 million people, 
+representing an average growth rate of about 0.1\%/year.
 By 1650 AD, the world population was around 500 million. 
-Average growth was slowed because trade and urbanization enabled infectious 
-diseases to kill large numbers.
+Population growth was slowed, because trade and urbanization spread infectious 
+diseases that killed large numbers of people.
 For instance, the Black Death killed 75 to 200 million people in the 1300s.
-World population reached 1 billion (that is, 1,000 million) around 1800 AD.
+World population reached 1 billion (i.e., 1,000 million) around 1800 AD.
 % Table 1. World population milestones. Source: United Nations Secretariat, Department of Economic and Social Affairs, % The World At Six Billion (1999), p. 8.
 % https://www.learner.org/courses/envsci/unit/text.php?unit=5&secNum=4
-Population changes come from the birth rate and the death rate.
-Estimating the populations of antiquity is difficult because these rates are somewhat conjectural.
-However, estimates of the total number of humans to have lived are 100--110 billion.
+Population is affected by the birth rate and the death rate.
+Estimating the populations of antiquity is difficult because 
+the birth and death rates are uncertain.
+However, estimates of the total number of humans to have ever lived are 100--110 billion.
+Today's population of about 8 billion people represents 8--9 \% 
+of all the people who have ever lived.
 
 
+%++++++++++++++++++++++++++++++
 \subsection{Population modeling}
+\label{sec:population_modeling}
+%++++++++++++++++++++++++++++++
+
 Figure \ref{fig:UN_population_prospect} shows projections made by the United Nations
 about future human population. 
 Population depends only on current population (known more-or-less accurately), 
 birth rate, and death rate.
-The wide range of uncertainty in the predicted population is indicative of the
-uncertainty surrounding future birth and death rates.
+The wide range of uncertainty in the predicted population is caused by
+uncertainty in future birth and death rates.
+
 \begin{figure}
 \centering
 \includegraphics[width=1\linewidth]{chapters/ch03-Population/figures/UNPop_proj.jpg}
@@ -157,6 +179,18 @@ from a Bayesian hierarchical model. }
 \label{fig:UN_population_prospect}
 \end{figure}
 
+Birth and death rates depend on many other variables.
+Figure \ref{fig:World3loops} shows a schematic of the causal loops
+used in the World3, an early world population model. 
+Figure \ref{fig:World3loops} shows the large number of variables (24!) that affect population and
+the many ways those variables (are thought to) interact.
+No model is perfect and, indeed, the World3 model is controversial, as all predictions are.
+The point of Figure~\ref{fig:World3loops} isn't whether one model is right or wrong,
+but rather that many variables that effect population.
+Indeed, another population model produced around the same time used 200,000 equations.
+
+% ******* Need a source for the previous claim.
+
 \begin{figure}
 \centering
 \includegraphics[width=0.65\linewidth]{chapters/ch03-Population/figures/LimitsToGrowth_ModelFigure1-3_Large.png}
@@ -164,31 +198,32 @@ from a Bayesian hierarchical model. }
 {Causal loop diagram of several important feedback loops in the World3 population model.}
 \label{fig:World3loops}
 \end{figure}
-Birth and death rates are dependent on many other variables.
-Figure \ref{fig:World3loops} shows a schematic of the causal loops
-used in the World3 population model, and early world population model. 
-Notice the number of variables (24!) and the many ways those variables (are 
-thought to) interact.
-No model is perfect and, indeed, the World3 model is controversial (all predictions are).
-The point isn't to say that one model is right and another is wrong,
-but instead to point out the many variables that effect population.
-In fact, another population model produced around the same time used 200,000 equations.
 
-The UN projections in Figure \ref{fig:UN_population_prospect} are based on likely
+The UN projections in Figure~\ref{fig:UN_population_prospect} are based on likely
 interactions among the many variables thought to affect birth and death rates, accounting
 for different levels of development in different segments of the Earth's human population.
 Accounting for the interactions between social, demographic, and economic
-variables, is expected to give more realistic estimates of future population.
+variables is expected to give more realistic estimates of future population.
 
+% **** Is the previous paragraph necessary?
+
+
+%++++++++++++++++++++++++++++++
 \subsection{Demographic transition theory}
 \label{sec:dtt}
+%++++++++++++++++++++++++++++++
+
 %% https://pages.uwc.edu/keith.montgomery/Demotrans/demtran.htm -- on the Wayback Machine!
 In an undeveloped society, both birth rates and death rates are high, resulting 
 in a low population growth rate.
-Demographic transition theory, illustrates schematically in Figure  \ref{fig:dtt},
-is that economic development leads to a decrease in mortality followed some time 
+% ****** The fact that birth and death rates are both high does not automatically 
+% mean a low population growth rate.  
+% Two identical large numbers could difference to zero giving zero growth rate. 
+Demographic transition theory, illustrated schematically in Figure~\ref{fig:dtt},
+indicates that economic development leads to a decrease in mortality followed some time 
 later by a falling birth rate.
 Thus, the population will grow rapidly and then stabilize.
+% ******* Automatically?  As a society "develops"?  Always?  Probably need more here.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -351,81 +386,111 @@ True sustainability thinking must consider all of human society.
 % \item Tie back to the IPARC equation.
 % \end{itemize}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Malthus, Ehrlich, and Simon}
+\label{sec:malthus_erlich_simon}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Various writers, thinkers, and scholars throughout the world, from antiquity to 
 the present time, have predicted that population growth 
-would \emph{cause} catastrophe, usually envisioned as starvation. 
-This viewpoint is called \emph{Malthusian} after Thomas Malthus (1766-1834), whose
-1798 book suggested that any increase in affluence (what today we would call GDP
-per capita) was temporary. 
+would \emph{cause} human catastrophe via starvation.
+The assumption population grown leads to starvation
+is called \emph{Malthusian} after Thomas Malthus (1766-1834), whose
+1798 book suggested that any increase in affluence
+was temporary. 
+(In Chapters~\ref{chap:planetary_boundaries} and \ref{chap:affluence}, 
+affluence is measured by GDP per capita, $A$.)
 Increasing affluence, Malthus thought, would lead to population growth, which 
 would thereby decrease GDP \emph{per capita}. 
+(Implicitly, Malthus assumed that affluence would grow less rapidly than population.)
 The (hypothetical) inability to achieve long-term increases in affluence is 
-called the Malthusian trap.
-Subsequently, the Industrial Revolution happened and GDP per capita \emph{did}
-increase \emph{in spite of}, or alongside of, increasing population -- see 
-Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:PopulationGraph}.
+now called the \emph{Malthusian trap}.
+Subsequent to Malthus' work,
+the Industrial Revolution occurred, and GDP per capita rose
+\emph{in spite of}, or alongside of, increasing population.
+(See Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:PopulationGraph}.)
 
 Nevertheless, fears of Mathusian catastrophe have not gone away.
 Two influential modern neo-Malthusian works are \emph{The Population Bomb} (1968),
 by Paul Ehrlich, and \emph{Limits to Growth} (1972), commissioned by the Club of 
 Rome.
+% ***** Need proper references for these books.
 \emph{Limits to Growth} warned of ``a rather sudden and uncontrollable decline 
 in both population and industrial capacity'' due to exponential growth in the 
 rate of use of nonrenewable resources.
 Likewise, \emph{The Population Bomb} predicted that in ``the 1970s hundreds of 
 millions of people will starve to death.''
+Obviously, neither prediction has come to pass to date. 
 Both books have received multiple updates, including in this millenia.
+% ********* Is the preceding sentence necessary? Helpful? 
+% If we want to keep it, perhaps we should say more?
 
-The opposite point of view is that there are no limits to growth.
-Matter and energy are abundant in the universe and (it is thought)
-human ingenuity can invent technology to substitute for or replace nonrenewable 
+The opposite point of view is often called \emph{techno-optimism}.
+Techno-optimism holds that there are no limits to growth, because.
+(a) matter and energy are abundant in the universe and
+(b) human ingenuity can invent technology to substitute for all depleting nonrenewable 
 resources.
-Resource scarcity will cause prices to rise, thereby incentivizing use of 
+The economy is the mechanism by which techno-optimists expect human ingenuity 
+to overcome all resource scarcities.
+The price of any scarce resource will rise, thereby incentivizing use of 
 alternative resources.
-Whereas \emph{Limits to Growth} assumed pollution would grow exponentially but
-pollution-control technology would not, it may be technologically possible to produce, for 
-example, abundant energy with little to no pollution, such as with wind or solar.
+\emph{Limits to Growth} assumed pollution would grow exponentially but
+pollution-control technology would not.
+Techno-optimists, on the other had, claim that it is technologically possible to produce, 
+for example, abundant energy with little to no pollution. 
+They point to the growth of wind and solar electricity generation as examples. 
 
-Which of these views is correct? 
-Is population growth the source of natural catastrophe or is it a wellspring of labor and 
-technology that will give us abundant resources?
-In 1980, business professor Julian Simon challenged Ehrlich to a US\$10,000 wager.
-Ehrlich could choose any raw material he wanted and a date more than a year away.
-If the inflation-adjusted prices had decreased by that date, Simon would win. 
+Who is correct, the neo-Malthusians or the tecno-optimists?
+Will population growth lead to catastrophe or is it a source of labor and 
+technology that will yield abundant resources?
+In 1980, business professor Julian Simon challenged biologist Paul Ehrlich to a US\$10,000 wager.
+Simon challenged Ehrlich to select a suite of raw materials and a date more than a year away.
+If inflation-adjusted prices of those raw materials decreased by Erlich's date, Simon would win the bet. 
 Ehrlich chose copper, chromium, nickel, tin, and tungsten over the time period 
 1980 to 1990.
-In that decade, world population increased from about 4.46 billion to around
+In the 1980s, world population increased from about 4.46 billion to around
 5.33 billion.
-Despite experiencing the largest single-decade increase in population in history, 
-prices for all five materials decreased, and Ehrlich lost the bet.
-If you think that settled the argument, you lose too.
-Over the years, both sides have countered with a variety of ``what-if'' scenarios.
+Despite the largest single-decade population increase in history, 
+prices for all five materials decreased, and Simon won the bet.
+If you think the price decreases settled the argument, you lose too.
+Over the years, both sides have countered with a variety of ``what-if'' scenarios, and 
+scholars have examined other timespans and other raw materials. 
+One study concluded that Simon would win about 54 \% of the time
+if war years were included and
+about 70\% of the time if war years were excluded~\cite{Pooley:2020vx}.
 
-So, which is correct? 
 The path of wisdom avoids false dichotomies. 
 Likely, there are true elements to both sides of this debate. 
-Which components and which areas are correct and helpful for guiding future policy
-and which are not remains to be seen. 
+% Which components and which areas are correct and helpful for guiding future policy
+% and which are not remains to be seen. 
 It is certainly true that a finite planet does not contain infinite resources.
-Exponential growth can't continue forever with finite resources.
-On the other hand, we've done pretty well so far and, by most measures, human 
+Exponential economic growth can't continue forever with finite resources.
+On the other hand, we've done pretty well so far and, by most measures, human
 life is better now than it has ever been.
-Whether that can, and will, continue and, if so, for how long seems to depend 
-largely on what your viewpoint is. 
+% Whether you believe that will continue and, if so, for how long seems to depend 
+% largely on what your viewpoint is. 
+Whether you believe that human life can, or will, continue to improve and, if so, for how long,
+likely depends on your prior beliefs about human ingenuity, 
+the role of the economy, and 
+the substitutability of critical resources. 
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 J.B. MacKinnon, \emph{The Once and Future World: Nature As It Was, As It Is, As It Could Be},
 Random House, Canada (2013).
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 The History Guy (YouTube) ``The Great Kansas Grasshopper Plague of 1874,'' 
 published August 17, 2020. \\
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
