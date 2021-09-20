@@ -184,54 +184,64 @@ See the EIA's Residential Energy Consumption Survey (RECS),
 which may have the required information.
 May need to look at the ``microdata'' available from RECS. ****
 
-Figure~\ref{fig:average_square_footage} shows the average floor space \index{households!floor space}
-of new single family homes in the United States between 1970 and 2015~\citep[Fig.~1]{HUD_housing}.
-Taken together, Figures~\ref{fig:residential_elect_vs_home_size} and~\ref{fig:average_square_footage}
-would suggest that residential energy consumption per dwellling is rising through time.
+Figure~\ref{fig:NewHousingSize} shows the average floor space \index{households!floor space}
+of new single family homes in the United States between 1971 and 2020.
+Taken together, Figures~\ref{fig:residential_elect_vs_home_size} and~\ref{fig:NewHousingSize}
+would suggest that residential energy consumption per dwelling is rising through time.
 However, per-dwelling energy consumption seems to be falling slowly in the U.S.,
 with increased energy efficiency of appliances and building envelope improvements
 offsetting rising home sizes.
-However, total residential energy consumption is increasing,
-driven by increasing numbers of dwellings.
-Figures~\ref{fig:average_household_consumption} and~\ref{fig:total_household_consumption}
+That said, total residential energy consumption is rising,
+due to increasing numbers of dwellings.
+Figures~\ref{fig:AverageHouseholdEnergyConsumption}
+and~\ref{fig:total_household_consumption}
 show these trends.
 
-\begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch07-Households/figures/Average_Square_Footage_of_New_Single_Family_Homes_in_the_US.pdf}
-\caption[Average square footage of new single family homes.]{Average square footage of new single family homes~\citep[Fig.~1]{HUD_housing}.}
-\label{fig:average_square_footage}
-\end{figure}
 
-
-\begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch07-Households/figures/average_household_energy_consumption.pdf}
-\caption{Average household energy consumption trend 1980--2015~\citep[Fig.~1]{EIA:2012aa}.}
-\label{fig:average_household_consumption}
-\end{figure}
-
-<<AverageHouseholdEnergyConsumption, fig.cap="Average U.S.\\ household energy consumption. Data from the U.S.\\ Energy Information Agency.">>=
-average_household_energy_consumption <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "Household_energy_use_data.xlsx"),
+<<NewHousingSize, fig.cap="Average size of newly-constructed U.S.\\ homes. Source: U.S.\\ Census Bureau~\\cite{United-States-Census-Bureau:2021tq}.">>=
+average_housing_sizes <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "housing_sizes.xlsx"),
                                                            sheet = "data to plot")
 
-# Create graph
-average_household_energy_consumption %>% 
-   dplyr::mutate(
-      `Number Housing Units` = NULL,
-      energy.cons_GJ_per_year = `Average Consumption (million btu per household)` * 1.05506 # Convert million BTU/household to GJ/household
-   ) %>% 
-   dplyr::filter(complete.cases(.)) %>% 
-   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy.cons_GJ_per_year")) + 
+average_housing_sizes %>% 
+   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "average_home_size_ft2")) +
    ggplot2::geom_line(size = 1, colour = mc_title_blue) +
-   ggplot2::scale_x_continuous(limits = c(1980, 2020), breaks = seq(1980, 2020, by = 10)) +
-   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 120, by = 20)) +
+   ggplot2::scale_y_continuous(limits = c(0, 3000)) +
    ggplot2::labs(x = NULL,
-                 y = "Avg. U.S. home energy cons. [GJ/year]") +
+                 y = expression("Size of new U.S. homes ["*ft^2*"]")) +
+
    MKHthemes::xy_theme()
 @
 
-% Graph here of number of households.
+
+
+<<AverageHouseholdEnergyConsumption, fig.cap="Average U.S.\\ household energy consumption and number of housing units. Households include all primary occupied housing units in the 50 states and the District of Columbia. Vacant housing units, seasonal units, second homes, military houses, and group quarters are excluded. ``hu'' means housing unit. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS)~\\cite{U.S.-Energy-Information-Agency:vd}.">>=
+average_household_energy_consumption <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "Household_energy_use_data.xlsx"),
+                                                           sheet = "data to plot") %>% 
+   dplyr::mutate(
+      `Energy cons. [GJ/hu]` = `Energy [10^6 BTU/household]` * 1.05506, # Convert million BTU to GJ
+      `Energy [10^6 BTU/household]` = NULL
+   ) %>% 
+   dplyr::rename(
+       `Housing units [millions]` = "Housing units [10^6]"
+   ) %>% 
+   tidyr::pivot_longer(-Year, names_to = "var", values_to = "val") %>% 
+   dplyr::filter(complete.cases(.))
+
+# Create graph
+average_household_energy_consumption %>% 
+   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "val")) + 
+   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+   ggplot2::facet_grid(rows = "var") +
+   ggplot2::scale_x_continuous(limits = c(1980, 2020), breaks = seq(1980, 2020, by = 10)) +
+   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 120, by = 20)) +
+   ggplot2::labs(x = NULL,
+                 y = "U.S. household energy consumption") +
+   MKHthemes::xy_theme() + 
+   # Move the facet labels out of the graphs slightly.
+   ggplot2::theme(strip.text.y = ggplot2::element_text(margin = ggplot2::margin(l = 2.0)))
+
+@
+
 
 <<TotalHouseholdEnergyConsumption, fig.cap="U.S.\\ household energy consumption by energy type. Annual data from the U.S.\\ Energy Information Agency~\\cite{U.S.-Energy-Information-Agency:th}.">>=
 total_household_energy_consumption <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "Table_2.2_Residential_Sector_Energy_Consumption.xlsx"),
@@ -277,9 +287,6 @@ total_household_energy_consumption %>%
 
 
 @
-
-
-
 
 
 One might think that increasing dwelling sizes are driven by more occupants per dwelling.
@@ -348,7 +355,7 @@ Like all energy consumption,
 energy consumption for heating and cooling has sustainability implications.
 (See Chapter~\ref{chap:resource_intensity}.)
 Greater efficiency can provide the same thermal comfort
-with less energy consumption.
+with less energy consumed
 Increased residential heating and cooling 
 efficiency\index{efficiency!heating and cooling!residential}
 (i.e, providing the same comfort with less energy) 
