@@ -207,16 +207,80 @@ show these trends.
 \begin{figure}
 \centering
 \includegraphics[width=\figwidth]{chapters/ch07-Households/figures/average_household_energy_consumption.pdf}
-\caption[Average household energy consumption]{Average household energy consumption trend 1980--2009~\citep[Fig.~1]{EIA:2012aa}.}
+\caption{Average household energy consumption trend 1980--2015~\citep[Fig.~1]{EIA:2012aa}.}
 \label{fig:average_household_consumption}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch07-Households/figures/total_us_household_energy_consumption_trend.pdf}
-\caption[Total household energy consumption]{Total U.S.\ household energy consumption trend 1980--2009~\citep[Fig.~2]{EIA:2012aa}.}
-\label{fig:total_household_consumption}
-\end{figure}
+<<AverageHouseholdEnergyConsumption, fig.cap="Average U.S.\\ household energy consumption. Data from the U.S.\\ Energy Information Agency.">>=
+average_household_energy_consumption <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "Household_energy_use_data.xlsx"),
+                                                           sheet = "data to plot")
+
+# Create graph
+average_household_energy_consumption %>% 
+   dplyr::mutate(
+      `Number Housing Units` = NULL,
+      energy.cons_GJ_per_year = `Average Consumption (million btu per household)` * 1.05506 # Convert million BTU/household to GJ/household
+   ) %>% 
+   dplyr::filter(complete.cases(.)) %>% 
+   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy.cons_GJ_per_year")) + 
+   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+   ggplot2::scale_x_continuous(limits = c(1980, 2020), breaks = seq(1980, 2020, by = 10)) +
+   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 120, by = 20)) +
+   ggplot2::labs(x = NULL,
+                 y = "Avg. U.S. home energy cons. [GJ/year]") +
+   MKHthemes::xy_theme()
+@
+
+% Graph here of number of households.
+
+<<TotalHouseholdEnergyConsumption, fig.cap="U.S.\\ household energy consumption by energy type. Annual data from the U.S.\\ Energy Information Agency~\\cite{U.S.-Energy-Information-Agency:th}.">>=
+total_household_energy_consumption <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "Table_2.2_Residential_Sector_Energy_Consumption.xlsx"),
+                                                  sheet = "data to plot")
+
+# Create graph
+total_household_energy_consumption %>% 
+   dplyr::rename(
+      Biomass = Biomass_trillion_BTU,
+      Coal = Coal_trillion_BTU, 
+      Petroleum = Petroleum_trillion_BTU,
+      `Natural gas` = Natural_gas_trillion_BTU,
+      Electricity = Electricity_trillion_BTU,
+      Geothermal = Geothermal_trillion_BTU,
+      `Solar thermal` = Solar_trillion_BTU
+   ) %>% 
+   tidyr::pivot_longer(cols = !Year, names_to = "energy.type", values_to = "total.energy_trillion_BTU") %>% 
+   dplyr::mutate(
+      # Define the order of energy types
+      energy.type = factor(energy.type, levels = c("Electricity", "Geothermal", "Solar thermal", "Natural gas", "Petroleum", "Coal", "Biomass")),
+      # energy.type = factor(energy.type, levels = c("Biomass", "Coal", "Petroleum", "Natural gas", "Solar", "Geothermal", "Electricity")),
+      # Clean up the data: replace NA by 0
+      total.energy_trillion_BTU = dplyr::case_when(
+         is.na(total.energy_trillion_BTU) ~ 0,
+         TRUE ~ total.energy_trillion_BTU
+      ), 
+      total.energy_quads = total.energy_trillion_BTU / 1000, # Convert from trillions to quadrillion
+      total.energy_EJ = total.energy_quads * 1.0550559
+   ) %>% 
+   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", 
+                                                 y = "total.energy_EJ", 
+                                                 fill = "energy.type")) + 
+   ggplot2::geom_area() +
+   ggplot2::scale_x_continuous(breaks = seq(1950, 2020, by = 10)) +
+   ggplot2::scale_y_continuous(breaks = seq(0, 12, by = 2)) +
+   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
+   ggplot2::labs(x = NULL,
+                 y = "U.S. household energy cons. [EJ/year]", 
+                 fill = NULL) +
+   MKHthemes::xy_theme()
+
+   
+
+
+@
+
+
+
+
 
 One might think that increasing dwelling sizes are driven by more occupants per dwelling.
 However, Figure~\ref{fig:person_household} shows that
