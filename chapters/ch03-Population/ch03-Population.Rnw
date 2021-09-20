@@ -37,14 +37,16 @@ Populations of insects are down ~80\% in the last 30 years \cite{Hallmann2017}.
 These numbers are alarming because they could indicate a drastic decline in the 
 quality and/or quantity of ecosystem services. One of the planetary boundaries
 identified in Chapter~\ref{chap:planetary_boundaries} is an extinction rate
-of less than 0.001\% of species going extinct per year. Estimates vary but all
-agree that current extinction rates are more than ten times above that limit (0.01\% or greater).
+of less than 0.001\% of species going extinct per year. 
+Estimates vary, but all agree that current extinction rates are more than ten 
+times above that limit (0.01\% or greater).
 It fact, the current crisis has been labeled a ``sixth mass extinction event''
 called the Holocene (or Anthropocene) extinction, because it begins with the 
-megafauna extinctions thought to be the result of contact with early modern humans.
+megafauna extinctions thought to be the result of contact with early modern 
+humans.
 Thus, human-caused extinctions are a feature not unique to the current century.
-(Although there is some debate about the role of climate change in prehistoric 
-mass extinctions just like climate change plays a role in the present crisis.)
+(Climate change likely played some role in prehistoric mass extinctions just as 
+its is in the present crisis.)
 % https://www.theguardian.com/environment/2019/apr/01/butterfly-numbers-fall-by-84-in-netherlands-over-130-years-study
 % https://www.vox.com/science-and-health/2018/10/30/18042150/wwf-living-planet-report-vertebrate-loss
 % https://www.pnas.org/content/115/44/11262 -- it will take millions of years to recover the species we've already lost.
@@ -65,15 +67,15 @@ the state of California.
 By 1902 the species was extinct, mainly because of farming practices that destroyed their 
 breeding grounds. 
 Chapter~\ref{chap:land_use_urban_planning} will discuss human alteration of the land.
-Over consumption by humans is another cause of population decline; 
+Overconsumption by humans is another cause of population decline; 
 examples here include most ocean fish, 
 % cite United Nations Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services
 %summary report says 1 million animal and plant species are threatened with extinction.
 %"In 2015, 33\% of marine fish stocks were being harvested at unsustainable levels; 60\% were maximally sustainably 
 %fished, with just 7\% harvested at levels lower than what can be sustainably fished."
-whales, bison, and megafauna such as the aurochs and giant ground sloth.
+passenger pidgeons, whales, bison, and megafauna such as the aurochs and giant ground sloth.
 A third cause of the decline in animal populations is human-induced climate change,
-for example as with many Arctic species such as polar bear and walrus.
+for example, as with many Arctic species such as polar bear and walrus.
 Lastly, human contamination of the environment, either unintentionally or intentionally,
 is a cause for the decline of many species.
 For example, widespread use of insecticides in agriculture is thought to be a strong 
@@ -141,7 +143,7 @@ By 1650 AD, the world population was around 500 million.
 Population growth was slowed, because trade and urbanization spread infectious 
 diseases that killed large numbers of people.
 For instance, the Black Death killed 75 to 200 million people in the 1300s.
-World population reached 1 billion (i.e., 1,000 million) around 1800 AD.
+World population reached 1 billion (that is, 1,000 million) around 1800 AD.
 % Table 1. World population milestones. Source: United Nations Secretariat, Department of Economic and Social Affairs, % The World At Six Billion (1999), p. 8.
 % https://www.learner.org/courses/envsci/unit/text.php?unit=5&secNum=4
 Population is affected by the birth rate and the death rate.
@@ -180,11 +182,12 @@ used in the World3, an early world population model.
 Figure \ref{fig:World3loops} shows the large number of variables (24!) that affect population and
 the many ways those variables (are thought to) interact.
 No model is perfect and, indeed, the World3 model is controversial, as all predictions are.
-The point of isn't whether a model is right or wrong,
-but rather that many variables that effect population and that those variables 
-interact in complex ways.
+The point of Figure \ref{fig:World3loops} is to show that many variables affect 
+population and those variables interact in complex ways.
 %Indeed, another population model produced around the same time used 200,000 equations.
 % ******* Need a source for the previous claim. 
+%% Good link: https://www.americanscientist.org/article/computation-and-the-human-predicament
+%% Comments on the similarities (and differences!) in population modeling and climate modeling.
 
 \begin{figure}
 \centering
@@ -216,6 +219,7 @@ in a low population growth rate.
 % mean a low population growth rate.  
 % Two identical large numbers could difference to zero giving zero growth rate.
 % JVA: zero is low growth.
+%% MKH: 104 - 100 = 4. 4-3=1. Higher growth rate with bigger numbers.
 Demographic transition theory, illustrated schematically in Figure~\ref{fig:dtt},
 indicates that economic development leads to a decrease in mortality followed some time 
 later by a falling birth rate.
@@ -488,6 +492,7 @@ Random House, Canada (2013).
 The History Guy (YouTube) ``The Great Kansas Grasshopper Plague of 1874,'' 
 published August 17, 2020. \\
 
+Wold3 model online: \url{http://bit-player.org/wp-content/extras/limits/}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
@@ -619,9 +624,9 @@ published August 17, 2020. \\
       would Erlich have won?
       Would Simon have won?
       For what time periods would Erlich or Simon have won?
-      How did each man handle his victory or defeat?
-      With grace or bitterness?
-      How did each man's supporters handle the outcome?
+      How did each man react to his victory or defeat?
+      Was there grace or bitterness? Why?
+      How did each man's supporters react to the outcome?
 
 \end{projects}
 
