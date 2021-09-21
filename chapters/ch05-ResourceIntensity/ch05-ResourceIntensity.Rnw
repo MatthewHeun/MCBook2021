@@ -73,7 +73,7 @@ introduced in Section~\ref{sec:what_is_sustainability}.
 %++++++++++++++++++++++++++++++
 
 Resources can be classified as ``renewable''\index{resources!renewable} or
-``non-renewable,''\index{resources!non-renewable}
+``nonrenewable,''\index{resources!nonrenewable}
 based on their regeneration rates.\index{regeneration rate!of resources}
 Resources, such as the Sun,
 that are expected to exist for millennia 
@@ -83,7 +83,7 @@ that regenerate quickly (on the order of decades)
 are also classified as renewable.
 Resources, such as fossil fuels,
 that regenerate slowly or not at all
-are classified as non-renewable.
+are classified as nonrenewable.
 
 Whether or not a resource is renewable affects the sustainability of its 
 extraction and consumption,
@@ -201,10 +201,10 @@ The Graedel and Allenby method involves four steps:
   \item Allocate the virgin material supply, 
         often assuming equal per-capita consumption over 50 years.
         
-  \item Establish the ``re-capturable'' resource base, often via recycling or mining
+  \item Establish the ``recapturable'' resource base, often via recycling or mining
         stockpiles and landfills, and allocate to per-capita consumption over 50 years. 
         The sum of the per-capita virgin material supply rate and the 
-        allocated re-capturable resource rate gives the sustainable consumption rate.
+        allocated recapturable resource rate gives the sustainable consumption rate.
         
   \item Compare the current consumption rate and the sustainable consumption rate to assess sustainability
         of current patterns of resource consumption.
@@ -253,9 +253,9 @@ Recycling\index{recycling} is a way to extend the usable life
 of natural resources and 
 reduce rates of resource extraction.
 Recycling processes use discarded products as feedstock 
-for processes that re-generate usable products. 
+for processes that regenerate usable products. 
 Examples include paper recycling to pulp and glass recycling to new containers.
-That said, recycling uses energy and other natural resources
+However, recycling requires energy and other natural resources
 for transporting used material to recycling centers, 
 processing used material into recycled products, and 
 transporting goods to future users. 
@@ -279,7 +279,7 @@ argued that the second law of thermodynamics applies only to energy
 a stable, steady-state recycling system could exist
 provided that two conditions are met:
 (a) a large stockpile of waste material exists and 
-(b) an exogenous source (the sun) supplies energy freely and
+(b) an exogenous source, such as the sun, supplies energy freely and
 at sufficient rate for reprocessing of discarded material~\cite{Ayres:1999}.
 
 The importance of energy to recycling is evident, 
@@ -288,7 +288,7 @@ even in a debate about its viability!
 \end{mcframe}
 
 Substitution is the process of replacing 
-consumption of non-renewable resources 
+consumption of nonrenewable resources 
 by consumption of renewable resources. 
 Substitution is possible when the two resources in question
 are identical or nearly identical.
@@ -301,7 +301,7 @@ Recalling one aspect of Herman Daly's definition of sustainability
 (``Nonrenewable resources, such as minerals and fossil fuels, must be used no faster
 than renewable substitutes for them can be put into place''), 
 we see that switching
-from consuming non-renewable resources 
+from consuming nonrenewable resources 
 to consuming renewable resources
 is an important aspect of sustainability.
 
@@ -347,13 +347,14 @@ we use energy as the prime example in the IPARC equation (Equation~\ref{eq:IPARC
 There are two important questions: 
 where are we using energy, and 
 are we using energy sustainably?
-Figure~\ref{fig:LLNL_energy_sankey} answers the first question: where are we using energy?
+Figure~\ref{fig:LLNL_energy_sankey} answers the first question. %: where are we using energy?
 Energy is used in four broad sectors of the economy: 
 residences, commerce, industry, and transportation.
 Industry and transportation use slightly more energy than residences and commerce.
 To assess the second question (are we using energy at a sustainable rate?), 
 see Figure~\ref{fig:PrimaryEnergyGraph}, 
 which shows global primary energy consumption through time.
+*** is this a strong or weak sustainability statement/question? ****
 
 \begin{figure}
 \centering
@@ -478,7 +479,7 @@ weak_sust_energy_data <- readxl::read_excel(file.path("chapters", "ch05-Resource
 print(xtable::xtable(weak_sust_energy_data, 
                      digits = 0, 
                      align = c("c", "r", "r", "l", "r", "l", "r", "l"),
-                     caption = "Weak sustainability calculations for world consumption of non-renewable fossil fuels. ``mst'' is million short tons, ``bb'' is billion barrels, and ``tcf'' is trillion cubic feet. Data sourced from the U.S.\ Energy Information Agency (EIA) \\cite{U.S.-Energy-Information-Agency:tr}. Calculations are based on 2018 reserve estimates and consumption rates and do not account for accelerating consumption or future conversion of resources to reserves.",
+                     caption = "Weak sustainability calculations for world consumption of nonrenewable fossil fuels. ``mst'' is million short tons, ``bb'' is billion barrels, and ``tcf'' is trillion cubic feet. Data sourced from the U.S.\ Energy Information Agency (EIA) \\cite{U.S.-Energy-Information-Agency:tr}. Calculations are based on 2018 reserve estimates and consumption rates and do not account for accelerating consumption or future conversion of resources to reserves.",
                      label = "tab:weak_sustainability_calcs"),
       include.rownames = FALSE, 
       include.colnames = TRUE, 
@@ -583,6 +584,8 @@ The decline is caused by the fact that the world economy's GDP
 (Figure~\ref{fig:GDPGraph-Nordhaus}) 
 has been growing at a faster rate (in \%/year terms) than primary energy consumption 
 (Figure~\ref{fig:PrimaryEnergyGraph}).
+*** Arguably, this is intensive growth, that is, innovation in energy efficiency 
+leading to greater economic productivity. ****
 
 According to Equation~\ref{eq:IPARC}, 
 as the energy intensity of the economy falls, 
@@ -644,7 +647,7 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         What are the moral and ethical implications of leaving a valuable and 
         usable resource \emph{unused}?
 
-  \item What is the purpose of mineral resources in the environment? 
+  \item What is the purpose (\emph{telos}) of mineral resources in the environment? 
         Should they be left in place or used?
         Humans are the only creatures on Earth that make use of most minerals.
         What are some positive impacts on animal populations that arise from 
@@ -710,7 +713,7 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         because the same goods you used to purchase now cost more?
         Or would you view the tax as a enriching your natural capital by 
         incentivizing a shift to carbon-free forms of energy (thereby providing 
-        you with all the benefits of a stronger ecosystem)?
+        you with all the benefits of a stronger ecosystem; see Question Q2.7)?
         What beliefs or values inform your answer?
         How might such an evaluation be extended from the personal to a national 
         or global scale?
@@ -760,7 +763,7 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         ``We have to ask, are we being sold an idea because someone is trying to 
         sell us something or is this actually gonna have a positive impact?'' 
         ``We have to orient our caring based on reality.''
-        What cognitive dissonances have you found in the text so far?
+        What cognitive dissonances have you found in this book so far?
         What changes might you make based new information?
         
   \item In discussing the study mentioned in the previous question, GreenBooks.org
@@ -834,7 +837,7 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
 
   \item Compare the weak sustainability approach advocated by Graedel and Allenby
         to the methods of David Rutledge~\cite{Rutledge:tv}\index{Rutledge, David}.
-        Which produces better estimates of the time to exhaust non-renewable resources?
+        Which produces better estimates of the time to exhaust nonrenewable resources?
         Why?
         
   \item Visit a recycling center and assess its sustainability. 
