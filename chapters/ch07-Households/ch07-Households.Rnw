@@ -169,7 +169,7 @@ These variations indicate that decisions about \emph{how} a dwelling is used
 are nearly important as the \emph{size} of a dwelling
 for predicting residential electricity consumption.
 
-<<EnergyConsAndHomeSize, fig.cap="Average U.S.\\ household energy consumption. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey, 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
+<<EnergyConsAndHomeSize, fig.cap="Average U.S.\\ household energy consumption. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_size <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "ce2.1.xlsx"),
                                                sheet = "data to plot") %>% 
    dplyr::rename(
