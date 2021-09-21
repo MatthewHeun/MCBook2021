@@ -88,10 +88,11 @@ Each individual has a different set of preferences about what will make them
 happy.
 The existence of differences is exactly what allows free trade. 
 Both parties can increase their own happiness by trading for something that will
-make them more happy than the thing they have. 
+make them more happy than the thing they already have. 
 Trade makes people better off.
-The opportunity cost is the value (to them) of what they give up, be it money or 
-a good or service. 
+
+The \emph{opportunity cost) is the value (to them) of what they give up, be it 
+money or a good or service. 
 A barber might prefer to have \$15 rather than 20 minutes of free time.
 You might rather have a haircut than \$15.
 In this situation, you can give the barber \$15 and get a haircut. 
@@ -105,8 +106,15 @@ so she is also better off.
 Any reduction in affluence decreases well being.
 Immediately, we can see a challenge with attempting to reduce impacts ($I$) by
 reducing affluence ($A$) -- it will make people less well off. 
+Many proposals for becoming more sustainable are effectively reductions to
+affluence. To the degree that the proposal involves something costing more,
+it is a reduction in affluence.
+Examples include taxing carbon, labor-intensive farming, using energy sources
+with a lower EROI, and requiring recycling.
+
 Poverty is a hard sell on an individual level; no one wants it for themselves.
-(Note that an abstract desire to have lower impacts is not the same as wanting to be poor.)
+(Note that an abstract desire to have lower impacts is not the same as wanting 
+to be poor.)
 Lower levels of affluence are associated with lower HDI, as Figure 
 \ref{fig:FootprintHDIGraph} shows. 
 This chapter's end-of-chapter questions will further explore of the thorny issues 
@@ -368,16 +376,16 @@ likewise, only things that will be consumed are produced, we are ready to introd
 the metaphor of economic metabolism.
 The economy takes in resources and produces wastes.
 Thus, the economy is the metabolism of human society.
-One way of looking at Equation~\ref{eq:IPARC} is that the impacts produced $I$
-are the result of economic activity.
+One way of looking at Equation~\ref{eq:IPARC} is that impacts ($I$)
+are the \emph{result} of economic activity.
 Total consumption is $P \times A$.
-Resources $R$ are the feed the economy needs to live and grow.
-$C$ are the wastes that the economy excretes.
+Resources ($R$) are the feed the economy needs to live and grow.
+$C$ represents the wastes that the economy excretes.
 
 \section{Economic growth}
 \label{sec:EconGrowth}
-Although production and consumption are in balance, both may grow together and,
-indeed it is desirable that they do so.
+Although production and consumption are in balance, both may grow together.
+Indeed, it is desirable they do so.
 Economic growth is how standards of living improve. 
 A business that produces the same number of products per year isn't growing.
 It's stagnant.
@@ -391,6 +399,8 @@ Either the economy gets more inputs, which is called \emph{extensive} growth, or
 it uses inputs more efficiently, which is called \emph{intensive} growth.
 Extensive growth uses more resources, such as energy, and, therefore, 
 produces more wastes. 
+In the long run, extensive growth does not increase affluence because more 
+workers are needed to gather, process, and use the additional resources.
 
 Economic inputs include labor, capital, energy, and materials.
 The productivity of labor depends on the education and skill 
@@ -412,22 +422,25 @@ to the economy.
 Where this point is depends on the level of technology and the price of borrowing
 money (that is, interest) for making capital investments.
 Conceptually, at the effective maximum level of capital, labor will have a maximum
-level of output. At this point, an economy can grow only through access to new 
+level of output. 
+(You could say that workers are fully ``tooled up.'')
+At this point, an economy can grow only through access to new 
 resources (such as energy) or innovation (a change in the level of technology).
 
 A major source of economic growth is innovation, which is one kind of intensive growth.
 % Question: is all intensive growth innovation?
 The majority of the goods and services we consume today did not exist in 1870.
 
-\section{Opportunities for reduced impact}
+\section{Steady-state economy}
 World economies are managed to exhibit a constant growth rate, that is, exponential
 growth.
 As has been mentioned a few times already, exponential growth is inherently
 unsustainable. 
 When the economy grows, at some point, it either demands more resources than the 
-environment can provide, that is, it exceeds the ecosystem's ability to provision,
-and/or the wastes generated exceed the ecosystem's ability to absorb, that is,
-the ecosystem's regulating and support services pass a tipping point.
+environment can provide and/or the wastes generated exceed the ecosystem's 
+ability to absorb.
+That is, eventually economic growth either exceeds the ecosystem's ability to provision
+or the ecosystem's regulating and support services pass a tipping point.
 
 In light of these facts, there are have been calls for a \emph{zero-growth}, or 
 \emph{steady-state}, economy.
@@ -445,6 +458,7 @@ from one type of economy to another.
 The costs are real and there has been no political will or action to make 
 such a transition feasible in the amount of time it would take to avoid a climate
 crisis.
+
 Another alternative is a \emph{circular} economy, which is one that exists only
 on recycled (and, perhaps, renewable) materials and which emits no wastes. 
 Such an economy is impossible to fully achieve but may be a good model to strive
@@ -552,7 +566,7 @@ United Nations Department of Economic and Social Affairs, Statistics Division
       A typical example is where, in exchange for a lower electric rate, your 
       power provider can switch off some of your larger loads, typically your 
       air-conditioning unit. How much of a discount would it take for \emph{you}
-      to give up (some) control (choice) of your electricity consumption?
+      to give up (some) control (that is, choice) of your electricity consumption?
       What does this tell you about your consumer preferences?
       
 \item Some (high-end!) apparel has been made a circular economy. The manufacturer
@@ -566,19 +580,21 @@ United Nations Department of Economic and Social Affairs, Statistics Division
       transportation, retail, washing, disposal)?
       
 \item Stopping economic growth is one way to limit environmental impacts. 
-      Developed economies do not wish to lower their standard of living and 
-      developing economies want their opportunity to enjoy higher standards of 
-      living. Hence the idea of ``sustainable development.'' Explain how developed
-      economies telling less-developed economies not to impact the environment
-      feels like neo-imperialism. On the other hand, developed countries have
-      lots of experience with what not to do. What are some communication strategies
-      that are helpful for cross-cultural projects?
+      Developed economies do not wish to lower their standards of living. 
+      Developing economies want their opportunity to enjoy higher standards of 
+      living, hence the idea of ``sustainable development.'' 
+      Explain how developed economies telling less-developed economies not to 
+      impact the environment feels like neo-imperialism. 
+      On the other hand, developed countries have lots of experience with what 
+      not to do. 
+      What are some communication strategies that are helpful for cross-cultural projects?
       
 \item It has been observed that goods can move relatively freely across international
-      borders but labor can't. What are the consequences of leaving behind the 
-      environmental and social impacts of manufacturing when goods travel globally?
-      (Divorcing the product from its manufacturing impacts.) What are the economic
-      effects?
+      borders but labor can't. 
+      What are the consequences of leaving behind the environmental and social 
+      impacts of manufacturing when goods travel globally?
+      (That is, divorcing the product from its manufacturing impacts.) 
+      What are the purely economic effects?
 
 \item ``It's hard to fight economics.'' What does this statement imply for
       environmental sustainability and social sustainability?      
@@ -586,17 +602,19 @@ United Nations Department of Economic and Social Affairs, Statistics Division
 \item Sometimes you'll hear (well meaning) people blame corporations for wanting
       to ``maximize profit.'' One way of evaluating this view is to realize that 
       \emph{not} maximizing profit when you have the opportunity to do so is 
-      wasteful. All of us should be as efficient as possible. To what extent is 
-      this true? In what ways? Are there limits and what are they? (Other approaches
-      to this question are presented in Chapter \ref{chap:government}.)
+      wasteful. All of us should be as efficient as possible. 
+      To what extent is this true? In what ways? 
+      Are there limits and what are they? 
+      (Other approaches to this question are presented in Chapter \ref{chap:government}.)
       
 \item IPCC6's \emph{most optimistic} scenario (see Chapter~\ref{chap:introduction}
       Further Reading) is a 0.5m sea-level rise by 2100.
       Coastal cities and beach-front properties will be most affected and, in 
-      many cases, most able to pay for mitigation. Given the expected future
-      costs of fighting sea-level rise, why don't coastal dwellers pay now to 
-      prevent future warming? They could pay carbon emitters far from the coasts
-      not to emit. What would it take for such a market to develop?
+      many cases, most able to pay for mitigation. 
+      Given the expected future costs of fighting sea-level rise, why don't 
+      coastal dwellers pay now to prevent future warming? 
+      They could pay carbon emitters far from the coasts not to emit. 
+      What would it take for such a market to develop?
 
 \end{questions}
 
@@ -621,18 +639,18 @@ United Nations Department of Economic and Social Affairs, Statistics Division
 
 \item Efforts to develop in ways that are more environmentally friendly are often
       hampered by lack of resources or infrastructure. International aid attempts
-      to provide assistance to developing economies do development ``right.''
-      Many times projects are unsuccessful. Local corruption might waste funds
-      \emph{or} international aid agencies might attempt to maintain control to 
-      prevent corruption but they don't know the local context and so ultimately
-      end up being ineffective. Research examples of successful development projects.
+      to provide assistance to developing economies to do development ``right.''
+      Many times projects are unsuccessful. Local corruption might waste funds.
+      \emph{Or} international aid agencies might attempt to maintain control but,
+      because they knowledge of the local context, they end up being ineffective. 
+      Research examples of successful development projects.
       What are some management strategies that work for international and cross-cultural
       projects?
 
 \item Develop metrics for evaluating when and to what extent a circular economy 
       makes environmental and economic sense for some product.
       
-\item What are ways the governments try to control the rate of economic growth?
+\item What are ways that governments try to control the rate of economic growth?
 
 \item Research the standards, processes, and methods for collecting and disseminating 
       global economic statistics.
