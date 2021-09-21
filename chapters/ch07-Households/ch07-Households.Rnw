@@ -177,6 +177,23 @@ for predicting residential electricity consumption.
 \label{fig:residential_elect_vs_home_size}
 \end{figure}
 
+
+<<EnergyConsAndHomeSize>>=
+household_energy_by_size <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "ce2.1.xlsx"),
+                                               sheet = "data to plot") %>% 
+   tidyr::pivot_longer(-Size_ft2, names_to = "vars", values_to = "vals") %>% 
+   dplyr::mutate(
+      Size_ft2 = factor(Size_ft2, levels = c("< 1000", "1000–1499", "1500–1999", "2000–2499", "2500-2999", "> 3000"))
+   )
+
+household_energy_by_size %>% 
+   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Size_ft2", y = "vals", fill = "vars")) +
+   ggplot2::geom_bar(stat = "identity")
+
+@
+
+
+
 **** Find data on natural gas consumption vs. size of home.
 80--20 variations on that graph are likely due to
 climate and insulation differences.
