@@ -159,8 +159,8 @@ have sustainability implications, size and location chief among them.
 \label{sec:dwelling_size} \index{households!size}
 %++++++++++++++++++++++++++++++
 
-Figure~\ref{fig:residential_elect_vs_home_size} shows the trend of
-electricity consumption with respect to home size and
+Figure~\ref{fig:EnergyConsAndHomeSize} shows the trend of
+energy consumption with respect to home size and
 confirms intuition that dwelling size is positively correlated 
 with energy consumption.\index{households!energy consumption}
 However, significant variation in annual electricity consumption
@@ -169,41 +169,41 @@ These variations indicate that decisions about \emph{how} a dwelling is used
 are nearly important as the \emph{size} of a dwelling
 for predicting residential electricity consumption.
 
-\begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch07-Households/figures/Electricity_vs_Home_size.png}
-\caption[Electricity consumption vs.\ home size.]{Annual electricity consumption vs.\ U.S.\ home size.
-**** Need to find reference. Found at \url{http://www.doomsteaddiner.net/forum/index.php?topic=9830.0}. ****}
-\label{fig:residential_elect_vs_home_size}
-\end{figure}
-
-
-<<EnergyConsAndHomeSize>>=
+<<EnergyConsAndHomeSize, fig.cap="Average U.S.\\ household energy consumption. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey, 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_size <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "ce2.1.xlsx"),
                                                sheet = "data to plot") %>% 
-   tidyr::pivot_longer(-Size_ft2, names_to = "vars", values_to = "vals") %>% 
+   dplyr::rename(
+      Electricity = "Electricity_million_BTU",
+      `Fuel oil` = "Fuel_oil/kerosene_million_BTU",
+      `Nat. gas` = "Natural_gas_million_BTU",
+      Propane = "Propane_million_BTU"
+   ) %>% 
+   tidyr::pivot_longer(-Size_ft2, names_to = "energy.type", values_to = "vals") %>% 
    dplyr::mutate(
-      Size_ft2 = factor(Size_ft2, levels = c("< 1000", "1000–1499", "1500–1999", "2000–2499", "2500-2999", "> 3000"))
+      Size_ft2 = factor(Size_ft2, levels = c("< 1000", "1000-1499", "1500-1999", "2000-2499", "2500-2999", "> 3000")), 
+      energy.type = factor(energy.type, levels = c("Electricity", "Nat. gas", "Propane", "Fuel oil")),
+      vals = vals * 1.05506 # convert million BTU to GJ
    )
 
 household_energy_by_size %>% 
-   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Size_ft2", y = "vals", fill = "vars")) +
-   ggplot2::geom_bar(stat = "identity")
-
+   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Size_ft2", y = "vals", fill = "energy.type")) +
+   ggplot2::geom_bar(stat = "identity") +
+   
+   ggplot2::labs(x = expression("Home size ["*ft^2*"]"),
+                 y = "Avg. energy consumption [GJ]", 
+                 fill = ggplot2::element_blank()) +
+   ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.03))) +
+   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
+   
+   MKHthemes::xy_theme() +
+   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90), 
+                  axis.ticks.x = ggplot2::element_blank())
 @
 
 
-
-**** Find data on natural gas consumption vs. size of home.
-80--20 variations on that graph are likely due to
-climate and insulation differences.
-See the EIA's Residential Energy Consumption Survey (RECS),
-which may have the required information.
-May need to look at the ``microdata'' available from RECS. ****
-
 Figure~\ref{fig:NewHousingSize} shows the average floor space \index{households!floor space}
 of new single family homes in the United States between 1971 and 2020.
-Taken together, Figures~\ref{fig:residential_elect_vs_home_size} and~\ref{fig:NewHousingSize}
+Taken together, Figures~\ref{fig:EnergyConsAndHomeSize} and~\ref{fig:NewHousingSize}
 would suggest that residential energy consumption per dwelling is rising through time.
 However, per-dwelling energy consumption seems to be falling slowly in the U.S.,
 with increased energy efficiency of appliances and building envelope improvements
@@ -223,7 +223,7 @@ average_housing_sizes %>%
    ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "average_home_size_ft2")) +
    ggplot2::geom_line(size = 1, colour = mc_title_blue) +
    ggplot2::scale_y_continuous(limits = c(0, 3000)) +
-   ggplot2::labs(x = NULL,
+   ggplot2::labs(x = ggplot2::element_blank(),
                  y = expression("Size of new U.S. homes ["*ft^2*"]")) +
 
    MKHthemes::xy_theme()
@@ -251,7 +251,7 @@ average_household_energy_consumption %>%
    ggplot2::facet_grid(rows = "var") +
    ggplot2::scale_x_continuous(limits = c(1980, 2020), breaks = seq(1980, 2020, by = 10)) +
    ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 120, by = 20)) +
-   ggplot2::labs(x = NULL,
+   ggplot2::labs(x = ggplot2::element_blank(),
                  y = "U.S. household energy consumption") +
    MKHthemes::xy_theme() + 
    # Move the facet labels out of the graphs slightly.
@@ -295,14 +295,10 @@ total_household_energy_consumption %>%
    ggplot2::scale_x_continuous(breaks = seq(1950, 2020, by = 10)) +
    ggplot2::scale_y_continuous(breaks = seq(0, 12, by = 2)) +
    viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
-   ggplot2::labs(x = NULL,
+   ggplot2::labs(x = ggplot2::element_blank(),
                  y = "U.S. household energy cons. [EJ/year]", 
-                 fill = NULL) +
+                 fill = ggplot2::element_blank()) +
    MKHthemes::xy_theme()
-
-   
-
-
 @
 
 
