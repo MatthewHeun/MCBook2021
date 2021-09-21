@@ -305,14 +305,24 @@ total_household_energy_consumption %>%
 One might think that increasing dwelling sizes are driven by more occupants per dwelling.
 However, Figure~\ref{fig:person_household} shows that
 the percentage of single-person households is increasing through time~\citep[Fig.~2]{US_census}.
-**** Find occupants per single-family home data. ****
 
-\begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch07-Households/figures/US_single-person_household.pdf}
-\caption[Percentage of single-person households 1940-2017.]{Percentage of single-person households 1940-2017~\citep[Fig.~2]{US_census}.}
-\label{fig:person_household}
-\end{figure}
+
+<<PersonsPerHousehold, fig.cap="Average number of persons per U.S.\\ household. Source: U.S.\\ Census Bureau~\\cite{United-States-Census-Bureau:2020vd}.">>=
+persons_per_household <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "hh4.xls"),
+                                                  sheet = "data to plot")
+
+persons_per_household %>% 
+   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "PeoplePerHousehold")) + 
+   ggplot2::geom_line() +
+   ggplot2::scale_x_continuous(breaks = seq(1960, 2020, by = 10)) +
+   ggplot2::scale_y_continuous(limits = c(0, 4), breaks = seq(0, 4, by = 1)) +
+   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+   ggplot2::labs(x = ggplot2::element_blank(),
+                 y = "Persons Per Household") +
+
+   MKHthemes::xy_theme()
+
+@
 
 From a sustainability point of view,
 smaller, more-efficient homes with larger numbers of occupants
