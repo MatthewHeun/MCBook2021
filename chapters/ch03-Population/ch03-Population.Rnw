@@ -21,9 +21,9 @@ Equation \ref{eq:IPARC} expresses human impact on the Earth as the product
 of population, affluence, resource intensity of the economy, and the impact intensity 
 of resources. 
 Chapter~\ref{chap:planetary_boundaries} discussed how the Earth's ecosystems 
-provision human needs and how the impact of human activities can degrade,
+provide for human needs and how human activities can degrade,
 even catastrophically destroy, the ability of the Earth to support life. 
-This chapter will examine human population dynamics and the impact of human 
+This chapter examines human population dynamics and the impact of human 
 activities on animal populations.
 
 \section{Animal populations}
@@ -39,12 +39,12 @@ quality and/or quantity of ecosystem services. One of the planetary boundaries
 identified in Chapter~\ref{chap:planetary_boundaries} is an extinction rate
 of less than 0.001\% of species going extinct per year. 
 Estimates vary, but all agree that current extinction rates are more than ten 
-times above that limit (0.01\% or greater).
-It fact, the current crisis has been labeled a ``sixth mass extinction event''
-called the Holocene (or Anthropocene) extinction, because it begins with the 
+times above this limit (0.01\% or greater).
+It fact, the current crisis has been labeled a ``sixth mass extinction event.''
+It is called the Holocene (or Anthropocene) extinction, because it began with 
 megafauna extinctions thought to be the result of contact with early modern 
 humans.
-Thus, human-caused extinctions are a feature not unique to the current century.
+Thus, human-caused extinctions are not unique to the current century.
 (Climate change likely played a role in prehistoric mass extinctions just as 
 it does in the present crisis.)
 % https://www.theguardian.com/environment/2019/apr/01/butterfly-numbers-fall-by-84-in-netherlands-over-130-years-study
@@ -53,8 +53,9 @@ it does in the present crisis.)
 
 
 We should distinguish between the \emph{reason(s)} and the \emph{mechanism(s)} for 
-the decline in animal populations. Population decline is an \emph{impact} ($I$) 
-from the left-hand side of Equation \ref{eq:IPARC}. 
+the decline in animal populations. 
+Population decline is an \emph{impact} ($I$) from the left-hand side of 
+Equation \ref{eq:IPARC}. 
 The \emph{reason(s)} (that is, the ``why'') are given on the right-hand side of
 Equation \ref{eq:IPARC} ($PARC$).
 In contrast, the \emph{mechanisms} (that is, the ``how'') behind the decline 
@@ -64,23 +65,26 @@ Habitat destruction plays an important role in the decline of animal populations
 For example, in 1875 there was a swarm of Rocky Mountain locusts consisting of 
 12.5 trillion individuals, weighing 27.5 million tons, and covering an area larger
 the state of California. 
-By 1902 the species was extinct, mainly because of farming practices that destroyed their 
+By 1902 the species was extinct, mainly because farming destroyed their 
 breeding grounds. 
 Chapter~\ref{chap:land_use_urban_planning} will discuss human alteration of the land.
-Overconsumption by humans is another cause of population decline; 
-examples here include most ocean fish, 
+Overconsumption by humans is another cause of population decline. 
+Ocean fish stocks are the prime example.
+Other examples include
 % cite United Nations Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services
 %summary report says 1 million animal and plant species are threatened with extinction.
 %"In 2015, 33\% of marine fish stocks were being harvested at unsustainable levels; 60\% were maximally sustainably 
 %fished, with just 7\% harvested at levels lower than what can be sustainably fished."
-passenger pidgeons, whales, bison, and megafauna such as the aurochs and giant ground sloth.
-A third cause of the decline in animal populations is human-induced climate change,
-for example, as with many Arctic species such as polar bear and walrus.
+passenger pigeons, whales, bison, and megafauna such as the aurochs and giant ground sloth.
+A third cause of the decline in animal populations is human-induced climate change.
+For example, many Arctic species, such as polar bear and walrus, are struggling
+to adapt to a warming planet.
 Lastly, human contamination of the environment, either unintentionally or intentionally,
 is a cause for the decline of many species.
 For example, widespread use of insecticides in agriculture is thought to be a strong 
-factor for the decline in many insect populations, with bees being a particularly 
-alarming example because of the extremely valuable role they play in pollination.
+factor for the decline in many insect populations. 
+Bees are a particularly alarming example because of the valuable role they play 
+in pollination.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -91,7 +95,7 @@ alarming example because of the extremely valuable role they play in pollination
 As shown in Equation \ref{eq:IPARC}, the number of individual humans is one source 
 of impacts on the planet.
 Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800 AD to present.
-In July 2021, the world's human population is estimated to be 7.7--7.9 billion with a
+In July 2021, the world's human population is 7.7--7.9 billion with a
 growth rate of 1.05\%/year. 
 The average growth rate over the last hundred years
 was 1.55\%/year, with a peak growth rate of 2.1\%/year between 1965 and 1970.
@@ -140,7 +144,7 @@ By 9000 BC there were 5 to 10 million humans.
 Around the year 1 AD there were around 300 million people, 
 representing an average growth rate of about 0.1\%/year.
 By 1650 AD, the world population was around 500 million. 
-Population growth was slowed, because trade and urbanization spread infectious 
+Population growth slowed because trade and urbanization spread infectious 
 diseases that killed large numbers of people.
 For instance, the Black Death killed 75 to 200 million people in the 1300s.
 World population reached 1 billion (that is, 1,000 million) around 1800 AD.
@@ -160,11 +164,11 @@ of all the people who have ever lived.
 %++++++++++++++++++++++++++++++
 
 Figure \ref{fig:UN_population_prospect} shows projections made by the United Nations
-about future human population. 
+about the future human population. 
 Population depends only on current population (known more-or-less accurately), 
 birth rate, and death rate.
-The wide range of uncertainty in the predicted population is caused by
-uncertainty in future birth and death rates.
+The wide range of uncertainty in the population projections is caused by
+uncertainty about future birth and death rates.
 
 \begin{figure}
 \centering
@@ -176,7 +180,7 @@ from a Bayesian hierarchical model. }
 \label{fig:UN_population_prospect}
 \end{figure}
 
-Birth and death rates depend on many other variables.
+Birth and death rates depend on many variables.
 Figure \ref{fig:World3loops} shows a schematic of the causal loops
 used in World3, an early (and simple) world population model. 
 Figure \ref{fig:World3loops} shows the large number of variables (24!) that affect population and
@@ -201,9 +205,9 @@ The UN projections in Figure~\ref{fig:UN_population_prospect} are not based on
 the World3 model. 
 Instead, the UN used a Bayesian model based on likely interactions among the 
 many variables thought to affect birth and death rates.
-Furthermore, the UN model accounts for different levels of development in 
+The UN model also accounts for different levels of development in 
 different segments of the Earth's human population.
-Accounting for the interactions between social, demographic, and economic
+Accounting for interactions between social, demographic, and economic
 variables is expected to give more realistic estimates of future population.
 
 % **** Is the previous paragraph necessary?
@@ -217,14 +221,14 @@ variables is expected to give more realistic estimates of future population.
 
 %% https://pages.uwc.edu/keith.montgomery/Demotrans/demtran.htm -- on the Wayback Machine!
 In an undeveloped society, birth rates and death rates are high but balanced, 
-resulting in a low population growth rate.
+resulting in low population growth.
 % ****** The fact that birth and death rates are both high does not automatically 
 % mean a low population growth rate.  
 % Two identical large numbers could difference to zero giving zero growth rate.
 % JVA: zero is low growth.
 %% MKH: 104 - 100 = 4. 4-3=1. Higher growth rate with bigger numbers.
 Demographic transition theory, illustrated schematically in Figure~\ref{fig:dtt},
-is an observed pattern that economic development leads to a decrease in mortality 
+is the observed pattern that economic development leads to decreased mortality 
 followed some time later by a falling birth rate.
 Thus, the population will grow rapidly and then stabilize.
 % ******* Automatically?  As a society "develops"?  Always?  Probably need more here.
@@ -233,9 +237,9 @@ Thus, the population will grow rapidly and then stabilize.
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Demographic transition theory gives us some hope for sustainability, namely, that 
-the total human population won't \textit{continue} to grow exponentially. 
-On the other hand, slowing of growth is predicated on increasing GDP per capita,
-the $A$ term in Equation~\ref{eq:IPARC}.
+the total human population ($P$) won't \textit{continue} to grow exponentially. 
+On the other hand, slowing of growth is predicated on increasing GDP per capita
+(the $A$ term in Equation~\ref{eq:IPARC}).
 \end{mcframe}
 
 \begin{figure}
