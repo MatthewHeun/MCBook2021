@@ -281,25 +281,25 @@ each sex.
 the total population.) 
 The age structure of a population provides a lot of information about the population's 
 future and its economic outlook. 
-In particular, at the beginning of phase 2 of the demographic transition, more 
+At the beginning of phase 2, more 
 young people are being born and more people are living longer. 
 Both of these groups are not of working age and so tend to contribute little to GDP. 
 (In fact, they are dependents who \emph{consume} rather than generate wealth.) 
 Later, in phase 3, as these young people mature and join the labor market and the 
-birth rate falls, the fraction of the population that is working is much higher 
-and generates a \emph{demographic dividend}; 
-the GDP \emph{per capita} is higher because the fraction of the population that 
+birth rate falls, the fraction of the population that is working is much higher, 
+which generates a \emph{demographic dividend}.
+GDP \emph{per capita} is higher because the fraction of the population that 
 is working is higher. 
 Finally, if the population pyramid becomes ``top heavy,'' then there are a higher proportion
 of retirees to workers and GDP per capita is lower than it would be with a different
 age structure. 
-(There can still be growth in GDP per capita; it's just that the growth faces a 
+(There can still be growth in GDP per capita; it's just that growth faces a 
 demographic ``headwind.'')
 
 The age structure of the population also shows \emph{demographic momentum}. 
 It takes a lifetime to age a cohort out of the population pyramid. 
 The next generation of parents have already been born; today's children are 
-going to become parents in the future. 
+going to become the parents of tomorrow (that is, of the next generation). 
 A falling birth rate doesn't immediately lower the population; it takes time for 
 the population to stabilize. 
 Conversely, a small cohort of parents, even if they have a high birth rate, cannot 
@@ -317,15 +317,13 @@ High population density, characteristic of urban areas, enables, for example,
 cost-effective mass transit, which reduces carbon emissions from transportation.
 On the other hand, high human population densities will exclude many animal species.
 
-In 2015, about half of the world's people live in an area, shown in 
-Figure~\ref{fig:half_population}, known as the Valeriepieris circle.
-This circle has a radius of about 4,000km. 
-Other researchers have since defined a more compact region (radius 3300km) with 
-the same fraction of Earth's population.
+In 2015, half of the world's people lived inside a circle, shown in 
+Figure~\ref{fig:half_population}, with a radius of about 3,300km. 
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{chapters/ch03-Population/figures/half_world_population.pdf}
-\caption[Population living in the Valeriepieris  circle.]{As of 2015, more than half the world's population lives in the Valeriepieris circle, a circular region centered in the South China Sea.}
+\caption[Half the world's population lives in this circle.]{As of 2015, more than 
+half the world's population lives in a circle with a radius of 3,300km \cite{Quah2015}.}
 \label{fig:half_population}
 \end{figure}
 
