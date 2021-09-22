@@ -62,7 +62,7 @@ in animal populations are not provided by Equation \ref{eq:IPARC}.
 Several important mechanisms are summarized below.
 Habitat destruction plays an important role in the decline of animal populations. 
 For example, in 1875 there was a swarm of Rocky Mountain locusts consisting of 
-12.5 trillion individuals, weighing 27.5 millions tons, and covering an area larger
+12.5 trillion individuals, weighing 27.5 million tons, and covering an area larger
 the state of California. 
 By 1902 the species was extinct, mainly because of farming practices that destroyed their 
 breeding grounds. 
@@ -178,7 +178,7 @@ from a Bayesian hierarchical model. }
 
 Birth and death rates depend on many other variables.
 Figure \ref{fig:World3loops} shows a schematic of the causal loops
-used in the World3, an early (and simple) world population model. 
+used in World3, an early (and simple) world population model. 
 Figure \ref{fig:World3loops} shows the large number of variables (24!) that affect population and
 the many ways those variables (are thought to) interact.
 No model is perfect and, indeed, the World3 model is controversial, as all predictions are.
@@ -197,9 +197,11 @@ population and those variables interact in complex ways.
 \label{fig:World3loops}
 \end{figure}
 
-The UN projections in Figure~\ref{fig:UN_population_prospect} (not based on the World3 model)
-are based on likely interactions among the many variables thought to affect 
-birth and death rates, accounting for different levels of development in 
+The UN projections in Figure~\ref{fig:UN_population_prospect} are not based on 
+the World3 model. 
+Instead, the UN used a Bayesian model based on likely interactions among the 
+many variables thought to affect birth and death rates.
+Furthermore, the UN model accounts for different levels of development in 
 different segments of the Earth's human population.
 Accounting for the interactions between social, demographic, and economic
 variables is expected to give more realistic estimates of future population.
@@ -230,10 +232,10 @@ Thus, the population will grow rapidly and then stabilize.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Demographic transition theory gives us some hope for sustainability, namely that 
+Demographic transition theory gives us some hope for sustainability, namely, that 
 the total human population won't \textit{continue} to grow exponentially. 
-On the other hand, slowing of growth is predicated on increasing the $A$ term in 
-Equation~\ref{eq:IPARC}.
+On the other hand, slowing of growth is predicated on increasing GDP per capita,
+the $A$ term in Equation~\ref{eq:IPARC}.
 \end{mcframe}
 
 \begin{figure}
@@ -298,7 +300,9 @@ A falling birth rate doesn't immediately lower the population; it takes time for
 the population to stabilize. 
 Conversely, a small cohort of parents, even if they have a high birth rate, cannot 
 increase total population size if the oldest generations are a large proportion 
-of the total population.
+of the total population. 
+The overall death rate will still be greater than than the overall birth rate because of
+the sizes of the relevant age cohorts.
 
 \subsection{Distribution of population}
 Where do people live? 
@@ -339,9 +343,9 @@ However, urban areas are supported by vast networks, including transportation,
 that supply resources, such as food.
 Equation \ref{eq:IPARC} indicates that higher affluence (A), not location, is a 
 main source of ecological impact.
-While high population density can provide transportation efficiency, economies of 
-scale for dealing with wastes, and minimize habitat destruction in the creation
-of human dwellings, it is unwise to consider urban areas divorced from the rural
+High population density \emph{can} provide efficient transportation, minimize habitat 
+destruction, and allow economies of scale for dealing with waste materials.
+Nevertheless, it is unwise to consider urban areas divorced from the rural
 areas that allow them to thrive.
 True sustainability thinking must consider all of human society.
 
@@ -439,15 +443,15 @@ Techno-optimism holds that there are no limits to growth, because
 resources.
 The economy is the mechanism by which techno-optimists expect human ingenuity 
 to overcome all resource scarcities.
-The
-\emph{Limits to Growth} assumed pollution wo price of any scarce resource will rise, thereby incentivizing use of 
-alternative resources.uld grow exponentially but
+The price of any scarce resource will rise, thereby incentivizing use of 
+alternative resources
+\emph{Limits to Growth} assumed pollution would grow exponentially but
 pollution-control technology would not.
 Techno-optimists, on the other had, claim that it is technologically possible to produce, 
 for example, abundant energy with little to no pollution. 
 They point to the growth of wind and solar electricity generation as examples. 
 
-Who is correct, the neo-Malthusians or the tecno-optimists?
+Who is correct, the neo-Malthusians or the techno-optimists?
 Will population growth lead to catastrophe or is growth a source of labor and 
 technology that will yield abundant resources?
 In 1980, business professor Julian Simon challenged biologist Paul Ehrlich to a 
@@ -466,6 +470,17 @@ Scholars have examined other timespans and other raw materials.
 One study concluded that Simon would win about 54 \% of the time
 if war years were included and
 about 70\% of the time if war years were excluded~\cite{Pooley:2020vx}.
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Malthusians think that population growth will lead to scarcity of finite resources.
+Therefore, they expect prices of scarce resources to \emph{increase}.
+Techno-optimists, on the other hand, expect that human-created technology will
+create new sources of resources. 
+Rather than scarcity causing prices to rise, resources should be abundant and
+prices should \emph{fall} with a growing population.
+\end{mcframe}
 
 The path of wisdom avoids false dichotomies. 
 Likely, there are true elements to both sides of this debate. 
@@ -507,7 +522,7 @@ published August 17, 2020. \\
 
 \begin{questions}
 
-\item Some electric train systems are supplied with power by energizing
+\item Some electric train systems supply power to the train by energizing
       a third rail (the first two being the tracks) with high voltage DC 
       current, typically 600-1500 V. Because of the high voltages and because
       the rails are very near to the ground, touching the third rail carries a high
@@ -528,7 +543,8 @@ published August 17, 2020. \\
       Is it easier to find a spouse (or not) in a higher population density area?
       What effects does a widely distributed population have on family life and 
       social connectedness?
-      What degree, do you think, should the topic of adoption play in population
+      
+\item What degree, do you think, should the topic of adoption play in population
       growth, if any? What are its pros and cons in forming a family?
 
 \item Notice the population distribution indicated by Figures \ref{fig:PopulationGraph} 
@@ -590,18 +606,6 @@ published August 17, 2020. \\
       If so, what is it evidence of and how much weight?
       If no, why not?
       
-\item Normalcy bias is a cognitive bias that minimizes or ignores threats or
-      warnings of impending disaster. 
-      It effects about 70\% of people. 
-      The brain processes new information through the filter
-      of what the brain \emph{expects} to happen, which is that things will 
-      continue as they currently are.
-      The opposite of normalcy bias is overreaction bias, which causes slight 
-      deviations from normal or expected behavior to be seen as signs of 
-      extreme danger.
-      What role do you think cognitive biases play in our current response
-      to climate change?
-
 \end{questions}
 
 
