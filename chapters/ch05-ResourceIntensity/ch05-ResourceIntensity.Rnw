@@ -350,11 +350,7 @@ are we using energy sustainably?
 Figure~\ref{fig:LLNL_energy_sankey} answers the first question. %: where are we using energy?
 Energy is used in four broad sectors of the economy: 
 residences, commerce, industry, and transportation.
-Industry and transportation use slightly more energy than residences and commerce.
-To assess the second question (are we using energy at a sustainable rate?), 
-see Figure~\ref{fig:PrimaryEnergyGraph}, 
-which shows global primary energy consumption through time.
-*** is this a strong or weak sustainability statement/question? ****
+Industry and transportation use more energy than residences and commerce.
 
 \begin{figure}
 \centering
@@ -406,11 +402,24 @@ primary_energy %>%
   MKHthemes::xy_theme()
 @
 
+To assess the second question (are we using energy at a sustainable rate?), 
+see Figure~\ref{fig:PrimaryEnergyGraph}, 
+which shows global primary energy consumption through time.
+*** is this a strong or weak sustainability statement/question? ****
 The increasing consumption of primary energy supports, in part, greater population,
 as shown in Figure~\ref{fig:PopulationGraph}.
 However, on a per-capita basis,
 energy consumption has grown substantially over the last two centuries
 (Figure~\ref{fig:EnergyPerPersonGraph}).
+By the strong sustainability criterion of consuming resources at a rate 
+beneath their regeneration rate, 
+none of the fossil fuels shown in Figure~\ref{fig:PrimaryEnergyGraph}
+are being consumed at a sustainable rate.
+Table~\ref{tab:weak_sustainability_calcs} shows that 
+by the weak sustainability criterion of Graedel and Allenby,
+coal and natural gas (barely) are being consumed at a sustainable rate.
+Oil is not being consumed at a sustainable rate. 
+
 
 <<EnergyPerPersonGraph, fig.cap="World primary energy consumption per person. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times C$ in the IPARC equation (Equation \\ref{eq:IPARC}) for the prime example of energy.">>=
 
@@ -463,15 +472,6 @@ to a noticeable rise in per-capita energy consumption.
 
 \end{mcframe}
 
-By the strong sustainability criterion of consuming resources at a rate 
-beneath their regeneration rate, 
-none of the fossil fuels shown in Figure~\ref{fig:PrimaryEnergyGraph}
-are being consumed at a sustainable rate.
-Table~\ref{tab:weak_sustainability_calcs} shows that 
-by the weak sustainability criterion of Graedel and Allenby,
-coal and natural gas (barely) are being consumed at a sustainable rate.
-Oil is not being consumed at a sustainable rate. 
-
 <<Weak-Sust-Energy, results="asis">>=
 weak_sust_energy_data <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
                                             sheet = "data for table", 
@@ -498,7 +498,11 @@ print(xtable::xtable(weak_sust_energy_data,
 Continuing the \href{https://en.wiktionary.org/wiki/explication}{explication}
 of the IPARC identity, 
 we form a term for the primary energy intensity of the world economy
-as the example for resource intensity of the economy ($R$).
+as an example for resource intensity of the economy ($R$).
+This term tells us how much primary energy is required to create one unit of
+world GDP. 
+Of course, many other resources are \emph{also} required to create a unit of GDP
+but we use energy as the prime example.
 The energy intensity of the economy is formed
 by dividing primary energy consumption ($E_p$) 
 by world GDP,
@@ -580,6 +584,7 @@ energy_intensity %>%
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that
 the primary energy intensity of the world economy has fallen from 
 15 to 4 MJ/2017 international dollar across the last two centuries. 
+*** thousand? ***
 The decline is caused by the fact that the world economy's GDP 
 (Figure~\ref{fig:GDPGraph-Nordhaus}) 
 has been growing at a faster rate (in \%/year terms) than primary energy consumption 
@@ -602,7 +607,8 @@ There are many suggested ways to reduce the resource intensity of the economy ($
 or the prime example the energy intensity of economic activity.
 First, increasing energy efficiency (through efficiency standards or mandates)
 can decrease the energy consumption for end uses. 
-Examples include CAFE standards for automobiles in the U.S.\
+Examples include corporate average fuel economy (CAFE) standards for vehicles 
+in the U.S.\
 and mandates for LED lighting in many countries.
 Another way to reduce the energy intensity of an economy is to move 
 away from a manufacturing economy toward a service economy.
