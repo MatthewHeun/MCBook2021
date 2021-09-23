@@ -23,8 +23,23 @@ of resources.
 Chapter~\ref{chap:planetary_boundaries} discussed how the Earth's ecosystems 
 provide for human needs and how human activities can degrade,
 even catastrophically destroy, the ability of the Earth to support life. 
+
 This chapter examines human population dynamics and the impact of human 
 activities on animal populations.
+The decline of many animal populations is concerning (in part) because it likely 
+indicates a reduction in ecosystem services.
+Through the twentieth century, the global human population grew exponentially,
+which was unsustainable.
+Currently, population growth has slowed (but not ceased).
+Prospects for future human populations are discussed with an eye toward whether
+humanity will live sustainably in the future. 
+A key interaction is between the number of people and economic output per person.
+Malthusians think that population growth will mean that we will ``run out'' of 
+scarce resources.
+Techo-optimists think that more people means more labor, which will lead to 
+better ideas, more specialization of labor, and, ultimately, to better, not worse,
+standards of living.
+
 
 \section{Animal populations}
 %some stories about animal populations: passenger pigeons, bison, whales, aurochs, locusts,
@@ -162,7 +177,8 @@ of all the people who have ever lived.
 \subsection{Population modeling}
 \label{sec:population_modeling}
 %++++++++++++++++++++++++++++++
-
+Whether the human population will continue to grow rapidly seems like a key 
+sustainability question.
 Figure \ref{fig:UN_population_prospect} shows projections made by the United Nations
 about the future human population. 
 Population depends only on current population (known more-or-less accurately), 
@@ -318,11 +334,12 @@ cost-effective mass transit, which reduces carbon emissions from transportation.
 On the other hand, high human population densities will exclude many animal species.
 
 In 2015, half of the world's people lived inside a circle, shown in 
-Figure~\ref{fig:half_population}, with a radius of about 3,300km. 
+Figure~\ref{fig:half_population}, with a radius of about 3,300km~\cite{Quah2015}.
+This area of Southeast Asia has a very high population density.
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{chapters/ch03-Population/figures/half_world_population.pdf}
-\caption[Half the world's population lives in this circle.]{As of 2015, more than 
+\caption[Half the world's population lives in this circle.]{As of 2015,
 half the world's population lives in a circle with a radius of 3,300km \cite{Quah2015}.}
 \label{fig:half_population}
 \end{figure}
@@ -331,8 +348,8 @@ Since the industrial revolution, humans have been increasingly living in urban e
 In 1973 there were only 3 cities (Mexico City, Tokyo, and New York City) with populations 
 of more than 10 million people (called ``megacities'').
 Since 2005--2006 more than half of the world's population live in urban areas.
-Now there are 21 cities with populations of 10 million or more 
-(see Figure \ref{fig:cities_population} for more detail).
+Now there are 21 cities with populations of 10 million or more.
+%(see Figure \ref{fig:cities_population} for more detail).
 The percent living in urban areas is projected to grow to 68\% by 2050. 
 %%https://ourworldindata.org/urbanization
 Urban living is correlated with wealth and higher GDP. 
@@ -351,12 +368,12 @@ Nevertheless, it is unwise to consider urban areas divorced from the rural
 areas that allow them to thrive.
 True sustainability thinking must consider all of human society.
 
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth]{chapters/ch03-Population/figures/population_of_cities.pdf}
-\caption{Geographic distribution of large cities.}
-\label{fig:cities_population}
-\end{figure}
+% \begin{figure}
+% \centering
+% \includegraphics[width=\linewidth]{chapters/ch03-Population/figures/population_of_cities.pdf}
+% \caption{Geographic distribution of large cities.}
+% \label{fig:cities_population}
+% \end{figure}
 
 % \textbf{Link to land use and urban planning chapter.}
 % \begin{quote}
@@ -526,13 +543,16 @@ published August 17, 2020. \\
 
 \item Some electric train systems supply power to the train by energizing
       a third rail (the first two being the tracks) with high voltage DC 
-      current, typically 600-1500 V. Because of the high voltages and because
-      the rails are very near to the ground, touching the third rail carries a high
-      risk of lethality. In politics, a ``third rail'' is an issue, so
-      contentious, that touching it will be political suicide. Population
-      control has been called the third rail of politics. Reflect on why
-      this is so. What groups or individuals would be sensitive to attempts
-      to control population? Explain moral or ethical concerns with population control.
+      current, typically 600-1500 V. 
+      Because of the high voltages and because the rails are very near to the ground, 
+      touching the third rail carries a high risk of lethality. 
+      In politics, a ``third rail'' is an issue, so contentious, that touching it 
+      will be political suicide. 
+      Population control has been called the third rail of politics. 
+      Reflect on why this is so. 
+      What groups or individuals would be especially sensitive to attempts to control population? 
+      Explain moral or ethical concerns with population control, either the 
+      ``supply side'' (births) or the ``demand side'' (deaths).
 
 \item What are some ways population \emph{could} be controlled?
       For instance, Figure~\ref{fig:World3loops} might suggest some ideas.
@@ -543,11 +563,12 @@ published August 17, 2020. \\
 \item Riffing on Malthus's suggestion of late marriage, what are families for? 
       What role, if any, does family formation play in population growth?
       Is it easier to find a spouse (or not) in a higher population density area?
-      What effects does a widely distributed population have on family life and 
+      What are the effects of a widely distributed population on family life and 
       social connectedness?
       
 \item What degree, do you think, should the topic of adoption play in population
-      growth, if any? What are its pros and cons in forming a family?
+      growth, if any? 
+      What are its pros and cons in forming a family?
 
 \item Notice the population distribution indicated by Figures \ref{fig:PopulationGraph} 
       and \ref{fig:half_population}. 
@@ -559,7 +580,8 @@ published August 17, 2020. \\
       What means are morally acceptable? 
       Which do you think are most likely to be effective?
       
-\item The best XKCD comic is \href{https://xkcd.com/552/}{\#552}, which considers correlation and causation.
+\item The best XKCD comic is \href{https://xkcd.com/552/}{\#552}, which considers 
+      correlation and causation.
       Falling birth rates are correlated with economic development, urbanization,
       increased education, decline in the value of child labor, and access to 
       contraception. 
@@ -567,6 +589,19 @@ published August 17, 2020. \\
       widespread use of contraception.) 
       What are some \emph{morally acceptable} ways to \emph{cause} birth rates to decline?
 
+\item \emph{The Fable of the Dragon-Tyrant} is about the idea that medical research can,
+      and should, be used to greatly extend human life (``health-span'')~\cite{Bostrom2005}.
+      (See also the \href{https://www.youtube.com/watch?v=cZYNADOHhVY}{video} 
+      form of the fable.)
+      What are the sustainability implications of extending human life?
+      What about the medical research necessary to do so?
+      (Note that paper's first suggestion is essentially a life-long hunger diet,
+      although it is hoped that technology can be invented to keep humans from
+      \emph{feeling} hungry on such a diet.)
+      In the fable, a ``king'' ultimately makes the decision about whether a 
+      concerted effort will be made (or not) to end the dragon (that is, old age). 
+      Who, in the real world, plays the role of the king?
+      
 \item What things have a \textit{higher} environmental impact as populations urbanize?
       What things have lower impact?
 
@@ -588,12 +623,16 @@ published August 17, 2020. \\
       What are ways to allow urbanites access to the natural world?
 
 \item It is interesting to note that Malthus's book was published (1798) just before before 
-      Figure~\ref{fig:PopulationGraph} begins (1800). On the one hand, exponential growth
-      always looks dramatic; Figure~\ref{fig:exp} shows exponential growth for
-      any time $t$. On the other hand, Malthus had not yet experienced the very 
-      dramatic rise in world population that occurred post-1800. How would 
-      Malthus's viewpoint have been different if he were writing in the twentieth
-      or twenty-first century?
+      Figure~\ref{fig:PopulationGraph} begins (that is, 1800AD). 
+      On the one hand, exponential growth always looks dramatic; 
+      Figure~\ref{fig:exp} shows exponential growth for any time $t$. 
+      On the other hand, Malthus had not yet experienced the very dramatic rise 
+      in world population that occurred post-1800. 
+      How would Malthus's viewpoint have been different if he were writing in the 
+      twentieth or twenty-first century?
+      Given that the tail end of an exponential curve always appears most dramatic,
+      do you think that future thinkers and scholars will agree with Malthus?
+      Or will conditions in the future lead them to make very different predictions?
 
 \item Is your personal outlook on the future Malthusian or not? 
       Why, and to what degree? 
