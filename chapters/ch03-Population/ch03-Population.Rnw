@@ -34,11 +34,11 @@ Currently, population growth has slowed (but not ceased).
 Prospects for future human populations are discussed with an eye toward whether
 humanity will live sustainably in the future. 
 A key interaction is between the number of people and economic output per person.
-Malthusians think that population growth will mean that we will ``run out'' of 
+Malthusians think that population growth will cause us to ``run out'' of 
 scarce resources.
-Techo-optimists think that more people means more labor, which will lead to 
-better ideas, more specialization of labor, and, ultimately, to better, not worse,
-standards of living.
+Techo-optimists think that more people will lead to 
+better technology, more specialization of labor, and, ultimately, to a higher, not lower,
+standard of living.
 
 
 \section{Animal populations}
@@ -549,10 +549,12 @@ published August 17, 2020. \\
       In politics, a ``third rail'' is an issue, so contentious, that touching it 
       will be political suicide. 
       Population control has been called the third rail of politics. 
-      Reflect on why this is so. 
-      What groups or individuals would be especially sensitive to attempts to control population? 
-      Explain moral or ethical concerns with population control, either the 
+      \begin{enumerate}
+      \item Reflect on why this is so. 
+      \item What groups or individuals would be especially sensitive to attempts to control population? 
+      \item Explain moral or ethical concerns with population control, either the 
       ``supply side'' (births) or the ``demand side'' (deaths).
+      \end{enumerate}
 
 \item What are some ways population \emph{could} be controlled?
       For instance, Figure~\ref{fig:World3loops} might suggest some ideas.
