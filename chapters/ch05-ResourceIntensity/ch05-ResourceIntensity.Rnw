@@ -21,8 +21,23 @@ The previous chapter addressed the sustainability implications of
 economic affluence, the $A$ term in the IPARC equation (Equation~\ref{eq:IPARC}). 
 Because the economy is society's metabolism, economic growth and increasing affluence
 mean that more resources are required to fuel that growth. 
-This chapter explores the sustainability implications of resource extraction and consumption, 
-the $R$ term in the IPARC equation. 
+This chapter explores the sustainability implications of resource acquisition and consumption. 
+The $R$ term in the IPARC equation, 
+\begin{equation}\label{eq:R}
+R = \frac{\textrm{resources}}{\textrm{\$ GDP}},
+\end{equation}
+is called the resource intensity of the economy.
+It measures how much of each resource the economy uses is required to create
+a single dollar of GDP.
+For instance, Figure~\ref{fig:total_material_use} lists several important materials
+used in the economy.
+In 2005, the world economy used about 19 Gt of biomass, 6.7 Gt of ores and 
+industrial minerals, and about 22 Gt of construction materials (estimated from the Figure),
+to produce about \$81.5 trillion dollars of GDP. 
+One Gt is $10^9$ tons (or $10^{12}$kg) and a trillion dollars is $10^{12}$.
+Thus, each dollar of GDP produced in 2005 used about 0.25 kg of biomass, 
+0.086 kg of ores and minerals, and 0.27 kg of construction materials. 
+The resource intensity of the economy ($R$) is a (very) long list of such numbers.
 This chapter discusses several resources, focusing on energy as the prime example. 
 
 Whether we are aware of it or not, 
