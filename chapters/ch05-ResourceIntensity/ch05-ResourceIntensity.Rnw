@@ -20,25 +20,8 @@ Without abundant resources, prosperity is out of reach.}
 The previous chapter addressed the sustainability implications of 
 economic affluence, the $A$ term in the IPARC equation (Equation~\ref{eq:IPARC}). 
 Because the economy is society's metabolism, economic growth and increasing affluence
-mean that more resources are required to fuel that growth. 
-This chapter explores the sustainability implications of resource acquisition and consumption. 
-The $R$ term in the IPARC equation, 
-\begin{equation}\label{eq:R}
-R = \frac{\textrm{resources}}{\textrm{\$ GDP}},
-\end{equation}
-is called the resource intensity of the economy.
-It measures how much of each resource the economy uses is required to create
-a single dollar of GDP.
-For instance, Figure~\ref{fig:total_material_use} lists several important materials
-used in the economy.
-In 2005, the world economy used about 19 Gt of biomass, 6.7 Gt of ores and 
-industrial minerals, and about 22 Gt of construction materials (estimated from the Figure),
-to produce about \$81.5 trillion dollars of GDP. 
-One Gt is $10^9$ tons (or $10^{12}$kg) and a trillion dollars is $10^{12}$.
-Thus, each dollar of GDP produced in 2005 used about 0.25 kg of biomass, 
-0.086 kg of ores and minerals, and 0.27 kg of construction materials. 
-The resource intensity of the economy ($R$) is a (very) long list of such numbers.
-This chapter discusses several resources, focusing on energy as the prime example. 
+mean more natural resources must be consumed. 
+This chapter explores the sustainability implications of resource extraction and consumption.
 
 Whether we are aware of it or not, 
 all plant, animal, and human life on Earth depends on natural resources for survival.
@@ -50,10 +33,37 @@ Without oceans and atmosphere to accept wastes?
 Without coal, oil, and methane to make electricity, gasoline, and natural gas?
 Nowhere.
 
+The $R$ term in the IPARC equation is the resource intensity of the economy.
+$R$ is defined as
+%
+\begin{equation}\label{eq:R}
+  R = \frac{\textrm{resources extracted}}{\textrm{\$ GDP}} \; .
+\end{equation}
+%
+$R$ measures how much of each resource is used by the economy to create
+a single dollar of GDP.
+Figure~\ref{fig:total_material_use} shows rates of consumption of natural resources
+aggregated into important categories of biomass, ores and industrial minerals, and 
+construction minerals.
+In 2005, the world economy used about 19 Gt of biomass, 6.7 Gt of ores and 
+industrial minerals, and about 22 Gt of construction materials
+to produce about \$81.5 trillion dollars of GDP. 
+One Gt is $10^9$~tons (or $10^{12}$~kg) and a trillion dollars is \${}$10^{12}$.
+Thus, each dollar of GDP produced used about 0.25 kg of biomass, 
+0.086 kg of ores and minerals, and 0.27 kg of construction materials. 
+A full accounting of the resource intensity of the economy ($R$)
+yields a long list of numbers, 
+each giving the amount of a single resource needed to make \$1 of GDP. 
+This chapter discusses sustainability implications for a few resources,
+with energy providing the prime example at the end. 
+
+Resource intensity can be measured and quantified at the whole-economy level,
+as we do here.
+But resource intensity can also be quantified per economic sector.
 Clearly, the manufacturing sector of the economy requires resources to function.
 Raw materials (such as copper and minerals) are required to make
 finished goods (such as sewing machines and mobile phones).
-But even the service sector needs resources.
+But all sectors, even the service sector, need resources.
 Consider the simple example of a haircut.
 The stylist arrives at the salon in an automobile
 (which requires iron ore, copper, and other natural resources to manufacture; 
@@ -66,7 +76,7 @@ You sit in a fancy chair
 drive to and from the appointment
 (on roads made of tar or cement).
 There is no escaping the dependence on resources to run an economy, 
-even the service sector. 
+even in the service sector. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
