@@ -75,8 +75,7 @@ Consumption has diminishing returns of marginal utility; the fourth, fifth, and
 sixth doughnut increase happiness less than the first, second, and third doughnuts. 
 After a doughnut, we may want a cup of coffee instead of a second doughnut, then a 
 slice of bacon, and then to read the news, and then \ldots . 
-The point is there is always a next ``thing,'' which need not necessarily 
-be a physical object. 
+There is always a next ``thing'' we want, which is not necessarily a physical object. 
 
 Having choice enhances consumer well being. 
 A choice between a muffin and a doughnut is better than if only doughnuts are 
@@ -110,7 +109,7 @@ Many proposals for becoming more sustainable are effectively reductions to
 affluence. To the degree that the proposal involves something costing more,
 it is a reduction in affluence.
 Examples include taxing carbon, labor-intensive farming, using energy sources
-with a lower EROI, and requiring recycling.
+with a lower EROI, and banning ``cheap'' products in favor of more expensive ones.
 
 Poverty is a hard sell on an individual level; no one wants it for themselves.
 (Note that an abstract desire to have lower impacts is not the same as wanting 
@@ -125,7 +124,7 @@ Affluence is \emph{measured} by gross domestic product (GDP) per capita.
 There are many critiques as to why per capita GDP is not the \emph{best possible}
 measure of affluence, and those critiques are valid. 
 For instance, GDP doesn't count (or under counts) the value
-of innovation in improving standards of living. 
+of innovation in improving standards of living \cite{Gordon2016}. 
 Many new metrics (see Section \ref{sec:indices}) have been proposed as replacements 
 or improvements for GDP. 
 Some examples are green GDP, the index of sustainable economic welfare, and the 
@@ -137,7 +136,7 @@ Frankly, GDP is what we have the most data for and, consequently, it is what
 GDP is the standard. 
 So, for now, we'll use it.
 % put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
-Consistent and easily-accessible GDP data can allow us to make observations
+Consistent and easily accessible GDP data can allow us to make observations
 about trends, which are \emph{qualitatively} consistent with trends we would observe
 using other indices, bearing in mind the limitations of what GDP measures and what it doesn't.
 
@@ -393,6 +392,7 @@ Likewise, a mine that produces 150,000 tons of ore per year is not growing.
 Instead, \emph{growth} looks like Figure \ref{fig:exp}. 
 Output (or productivity) growth means that each year the mine must produce more 
 than it did the previous year.
+A standard of living increase means consuming \emph{more} this year than last year.
 
 There are two ways economic output can increase.
 Either the economy gets more inputs, which is called \emph{extensive} growth, or
@@ -406,17 +406,20 @@ Economic inputs include labor, capital, energy, and materials.
 The productivity of labor depends on the education and skill 
 of workers, the number of workers in the population, the number of hours they 
 work, and the faction of the population that is working (see Section \ref{sec:dtt}). 
+More workers, such as the demographic dividend, or workers working longer hours
+will increase economic output.
 
 Capital is buildings and equipment, machines, and tools -- all the \emph{things}
 that can make workers more productive.
 For instance, a builder with a backhoe can excavate a foundation faster than a
 builder with just a shovel.
+More capital investment \emph{sometimes} means greater economic output.
 Because capital depreciates over time, continual investment 
 (part of $i$ in Equation \ref{eq:GDP})
 is needed to maintain a certain level of capital stock. 
 The greater the level of capital, the larger the yearly investment is needed to
 maintain it.
-At some point, there is a maximum level of effective capital.
+At some point, there is a \emph{maximum} level of effective capital.
 Beyond that point, the capital is more expensive to maintain than it contributes 
 to the economy.
 Where this point is depends on the level of technology and the price of borrowing
@@ -429,7 +432,12 @@ resources (such as energy) or innovation (a change in the level of technology).
 
 A major source of economic growth is innovation, which is one kind of intensive growth.
 % Question: is all intensive growth innovation?
-The majority of the goods and services we consume today did not exist in 1870.
+Techno-optimists would say that population growth leads to more innovation,
+which will boost affluence.
+There are two types of innovation: the invention of new \emph{kinds} of goods and
+services \emph{or} improvements to efficiency.
+The majority of the goods and services we consume today did not exist in 
+1870~\cite{Gordon2016}.
 
 \section{Steady-state economy}
 World economies are managed to exhibit a constant growth rate, that is, exponential
