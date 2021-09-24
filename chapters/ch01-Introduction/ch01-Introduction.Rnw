@@ -353,7 +353,7 @@ and a resource impact intensity (C).
 $I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $C$ \\
 \multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource &  & Contamination \\
  &  &  &  &  &  & intensity &  & intensity \\
-$\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}\right]$ &  & $\left[\frac{\textrm{\$ GDP}}{\textrm{capita-year}}\right]$ &  & $\left[\frac{\textrm{resource}}{\textrm{\$ GDP}}\right]$ &  & $\left[\frac{\textrm{impact}}{\textrm{resource}}\right]$
+$\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}\right]$ &  & $\left[\frac{\textrm{\$ GDP}}{\textrm{capita-year}}\right]$ &  & $\left[\frac{\textrm{resources}}{\textrm{\$ GDP}}\right]$ &  & $\left[\frac{\textrm{impact}}{\textrm{resources}}\right]$
 \end{tabular}
 \normalsize
 \end{equation}
