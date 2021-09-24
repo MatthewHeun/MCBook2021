@@ -21,7 +21,7 @@ The previous chapter addressed the sustainability implications of
 economic affluence, the $A$ term in the IPARC equation (Equation~\ref{eq:IPARC}). 
 Because the economy is society's metabolism, economic growth and increasing affluence
 mean more natural resources must be consumed. 
-This chapter explores the sustainability implications of resource extraction and consumption.
+This chapter explores the sustainability implications of resource acquisition and consumption.
 
 Whether we are aware of it or not, 
 all plant, animal, and human life on Earth depends on natural resources for survival.
@@ -58,18 +58,18 @@ This chapter discusses sustainability implications for a few resources,
 with energy providing the prime example at the end. 
 
 Resource intensity can be measured and quantified at the whole-economy level,
-as we do here.
+as in the examples above.
 But resource intensity can also be quantified per economic sector.
 Clearly, the manufacturing sector of the economy requires resources to function.
 Raw materials (such as copper and minerals) are required to make
 finished goods (such as sewing machines and mobile phones).
 But all sectors, even the service sector, need resources.
 Consider the simple example of a haircut.
-The stylist arrives at the salon in an automobile
+The stylist arrives at the salon in a vehicle
 (which requires iron ore, copper, and other natural resources to manufacture; 
-refined liquid fuel to operate; and 
-an atmosphere to absorb CO$_2$ and water, the products of combustion)
-and uses electric clippers and a hairdryer during each appointment
+perhaps refined liquid fuel to operate; and 
+an atmosphere that is a source of oxygen and which absorbs CO$_2$ and water, the products of combustion).
+The stylist uses electric clippers and a hairdryer during each appointment
 (which require both natural resources to manufacture and electricity to operate).
 You sit in a fancy chair 
 (which contains metals and plastics) and
@@ -103,11 +103,10 @@ based on their regeneration rates.\index{regeneration rate!of resources}
 Resources, such as the Sun,
 that are expected to exist for millennia 
 are classified as renewable.
-Other resources, such as forests and other biomass,
-that regenerate quickly (on the order of decades)
+Resources that regenerate quickly (on the order of decades), 
+such as forests and other biomass,
 are also classified as renewable.
-Resources, such as fossil fuels,
-that regenerate slowly or not at all
+Resources that regenerate slowly or not at all, such as fossil fuels,
 are classified as nonrenewable.
 
 Whether or not a resource is renewable affects the sustainability of its 
@@ -117,6 +116,7 @@ A criterion for ``strong sustainability'' is
 extracting and consuming resources 
 at a rate less than their natural regeneration rates.
 We can interpret two of Herman Daly's~\cite{Daly1996} criteria
+(see Section~\ref{sec:Sdefns})
 as a definition of strong sustainability:
 %
 \begin{enumerate}
@@ -131,7 +131,7 @@ as a definition of strong sustainability:
         
 \end{enumerate}
 %
-(See Section~\ref{sec:Sdefns}.)
+
 
 The economy, being society's metabolism,\index{economy!as society's metabolism}
 is one aspect of life that also depends on natural resources
@@ -313,14 +313,23 @@ even in a debate about its viability!
 \end{mcframe}
 
 Substitution is the process of replacing 
-consumption of nonrenewable resources 
-by consumption of renewable resources. 
+consumption of a valuable, scarce, or nonrenewable resource
+with a less valuable, less scarce, or renewable resource.
+Scarce/less scarce and valuable/less valuable tend to be highly correlated.
+From a weak sustainability perspective, 
+this replacing scarce or expensive resources typically extends the 
+time horizon to a weakly ``sustainable'' limit.
+% consumption of nonrenewable resources 
+% by consumption of renewable resources. 
 Substitution is possible when the two resources in question
 are identical or nearly identical.
-Examples of substitution in manufacturing processes include:
-use of injection-molded plastics instead of coated steel for automobile interior parts
+Examples of substitution include:
+replacing coated steel (expensive) automobile interior parts with
+injection-molded plastics (inexpensive),
+replacing styrofoam hamburger containers (nonrenewable)
+with paper or cardboard wrappings (renewable),
 and
-use of renewable electricity instead of coal electricity.
+use of renewable electricity instead of coal electricity (nonrenewable).
 
 Recalling one aspect of Herman Daly's definition of sustainability
 (``Nonrenewable resources, such as minerals and fossil fuels, must be used no faster
@@ -341,6 +350,22 @@ Coal-fired Rankine cycle\index{Rankine cycle} power plants
 cannot use the sun's energy to make electricity. 
 Similarly, a pile of coal is useless 
 to a solar photovoltaic\index{solar photovoltaic electricity} farm.
+
+Sometimes a scarce (and expensive), renewable resource is replaced by an
+inexpensive but nonrenewable alternative. 
+In the age of sail, ships were made of timber, with teak and mahogany being 
+favored ship-building species.
+Today, cargo ships are built of steel and pleasure craft are almost exclusively
+made of glass-fiber reinforced polymer composites.
+Today, teak and mahogany are too expensive to build ships from, both in their
+cost as materials, but also in the labor needed to construct the vessels.
+As often happens, making vessels less expensive means that many more are 
+purchased and used. 
+Another example of nonrenewable resources being substituted for a renewable 
+resources is the switch from wax candles and whale oil lanterns to ``town gas,''  
+kerosene, and finally, electric lights.
+In both cases, none of the options is (strongly) sustainable.
+However, post-substitution, the nonrenewable option is weakly sustainable.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -522,9 +547,9 @@ print(xtable::xtable(weak_sust_energy_data,
 
 Continuing the \href{https://en.wiktionary.org/wiki/explication}{explication}
 of the IPARC identity, 
-we form a term for the primary energy intensity of the world economy
+we form a term for the primary energy intensity ($I_{ep}$) of the world economy
 as an example for resource intensity of the economy ($R$).
-This term tells us how much primary energy is required to create one unit of
+$I_{ep}$ is the amount of primary energy required to create one unit (dollar) of
 world GDP. 
 Of course, many other resources are \emph{also} required to create a unit of GDP
 but we use energy as the prime example.
@@ -607,19 +632,22 @@ energy_intensity %>%
 
 
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that
-the primary energy intensity of the world economy has fallen from 
+the primary energy intensity of the world economy ($I_{ep}$) has fallen from 
 15 to 4 MJ/2017 international dollar across the last two centuries. 
-*** thousand? ***
+*** trillion? ***
 The decline is caused by the fact that the world economy's GDP 
 (Figure~\ref{fig:GDPGraph-Nordhaus}) 
 has been growing at a faster rate (in \%/year terms) than primary energy consumption 
 (Figure~\ref{fig:PrimaryEnergyGraph}).
-*** Arguably, this is intensive growth, that is, innovation in energy efficiency 
-leading to greater economic productivity. ****
+**** Innovation, in the form of energy efficiency,
+has lead to greater economic productivity, that is economic growth. ****
 
-According to Equation~\ref{eq:IPARC}, 
-as the energy intensity of the economy falls, 
-downward pressure is placed on CO$_2$ emissions.
+One reason that we are interested in the energy intensity of the economy is that 
+energy use is a source of CO$_2$ emissions.
+We can look at a restricted interpretation of Equation~\ref{eq:IPARC}, 
+which considers only CO$_2$ emissions on the left-hand side of the equation
+and the energy intensity of the economy ($I_{ep}$) instead of $R$ on the right-hand side.
+When $I_{ep}$ falls, downward pressure is placed on CO$_2$ emissions.
 Whether CO$_2$ emissions \emph{actually} decrease
 depends on the rates of increase or decline of the other terms 
 on the right side of Equation~\ref{eq:IPARC}.
@@ -629,7 +657,7 @@ are growing faster than energy intensity of the economy is declining
 (see Section \ref{sec:revisit_IPARC}).
 
 There are many suggested ways to reduce the resource intensity of the economy ($R$)
-or the prime example the energy intensity of economic activity.
+or the prime example the energy intensity of economic activity ($I_{ep}$).
 First, increasing energy efficiency (through efficiency standards or mandates)
 can decrease the energy consumption for end uses. 
 Examples include corporate average fuel economy (CAFE) standards for vehicles 
@@ -695,8 +723,8 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         What are the weaknesses of the strong sustainability criterion?
         Is the strong sustainability criterion too severe for modern life today?
         Justify your answer.
-        Can it be applied selectively to some resources but not others or should 
-        all resources be judged equally?
+        Can strong sustainability be applied selectively to some resources but 
+        not others or should all resources be judged equally?
         What are the implications of not applying the strong sustainability 
         criterion universally to all resources?
   
@@ -739,11 +767,13 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         \cite{GCWDA2015}. 
         % see also Rothausen, S., Conway, D. Greenhouse-gas emissions from energy use in the water sector. 
         % Nature Clim Change 1, 210–219 (2011). https://doi.org/10.1038/nclimate1147
-        Is there an individual right to water?
-        Do nation states have a right to water?
-        Does it matter if you're oil-rich Saudi Arabia or the (relatively) poor 
+        \begin{enumerate}
+        \item Is there an individual right to water?
+        \item Do nation states have a right to water?
+        \item Does it matter if you're oil-rich Saudi Arabia or the (relatively) poor 
         and low-lying Republic of the Marshall Islands?
-        Discuss how these rights impact global efforts to limit climate change.
+        \item Discuss how these rights impact global efforts to limit climate change.
+        \end{enumerate}
         
   \item Consider a carbon tax on commercial transportation.
         Is such a tax a reduction in affluence (Chapter~\ref{chap:affluence}) 
@@ -821,21 +851,22 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         better than glass -- if we're going to have water bottles at all.
         Write a nuanced response to the ``soundbite'' quoted above.
   
+  \item Consider the lighting and ship-building examples mentioned in Section
+        Techno-optimists (see Section \ref{sec:malthus_erlich_simon}) 
+        would view both of these examples as demonstration of the principle
+        that price is mechanism that spurs innovation and that weak sustainability
+        is ``good enough.'' Do you find techno-optimism convincing \emph{in these
+        two cases}? Does your answer for these two examples generalize to other
+        products or resources?
+        What do you make of the idea that price reductions spur increased consumption?
+        Relate your answer to the IPARC equation (Equation \ref{eq:IPARC}).
 
-  \item Ehrlich's wager/predictions have repeated failed to come to pass. 
-        Similarly, concerns about resource scarcity are also likely overblown.
-        What then should we expect from the future? (Julian Simon quote.)
-        How should we plan for the future?
-      
-%  \item **** Finite vs.\ increasing resources. Mineral vs.\ labor. ****
-% Not a question here, I think.
-
-  \item Maximum sustainable yield. If we harvest less than this we're ``leaving
-        money on the table'' and our efficiency metrics are less good. How
-        do we decide how much to take? Fish, e.g.
-        Add an issue on GitHub to include the Gradel and Alllenby figure.
-        The figure will allow us to discuss differences among
-        weak, strong, and economic levels of extraction.
+  % \item Maximum sustainable yield. If we harvest less than this we're ``leaving
+  %       money on the table'' and our efficiency metrics are less good. How
+  %       do we decide how much to take? Fish, e.g.
+  %       Add an issue on GitHub to include the Gradel and Alllenby figure.
+  %       The figure will allow us to discuss differences among
+  %       weak, strong, and economic levels of extraction.
   
   \item Critique/reflect on the statement ``money is a lien on energy and resources.''
         What does this statement indicate in terms of the IPARC equation?
