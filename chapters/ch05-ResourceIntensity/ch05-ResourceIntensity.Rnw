@@ -33,6 +33,47 @@ Without oceans and atmosphere to accept wastes?
 Without coal, oil, and methane to make electricity, gasoline, and natural gas?
 Nowhere.
 
+\subsection*{Definitions}
+An intensity is like an efficiency, except the numerator and denominator have 
+different units.
+A furnace that burns a quantity of natural gas that releases 100 btus of heat might
+only deliver 96 of those btus to your house.
+Such a furnace has an \emph{efficiency} of 96\% (btus delivered per btus input).
+A natural gas power plant might burn gas at a rate that releases 300 MW of heat to generate
+100 MW of electricity. 
+Such a power plant has an efficiency of 33.3\%.
+In both cases, the input and output have the same units of energy, btus in one case
+and MW in the other.
+On the other hand, an \emph{intensity} has \emph{different} units.
+A vehicle's miles per gallon is an intensity.
+Carbon emissions per ton of freight per mile moved is an intensity.
+It is \emph{intensive} because total carbon emissions depend on the number of tons
+moved and the total km they travel.
+
+Imagine a coal-fired power plant that generates electricity, which charges
+an electric car. 
+The coal is the \emph{primary} energy source. 
+The electricity is \emph{secondary}.
+Hydro, solar, and wind are all primary energy sources. 
+So are coal, crude oil, and natural gas.
+In contrast, gasoline is a refined fuel. As such, it is the \emph{product} of 
+an industrial process that uses energy.
+We can judge that process on its efficiency and energy return on investment (EROI) --
+see Section \ref{sec:eroi}.
+
+We define a \emph{resource} as a primary input to the economy. 
+As such, a resource is something \emph{extracted} from the natural world.
+It is something provisioned by the ecosystem (to use the language of Section 
+\ref{sec:ecosystem_services}).
+Timber is a resource. Iron ore is a resource. Water is a resource.
+Each resource can be transformed multiple times \emph{within} the economy.
+Timber might become 2$\times$4s, plywood, toothpicks, and mulch.
+Iron ore might become steel, then sheet metal, and then a toaster.
+Water might be ice, a sports drink, and Play-Doh.
+*** clarify definition of agriculture.***
+Resources must be extracted before they can be consumed and, following Equation
+\ref{eq:PCbalance}, everything that is extracted is consumed.
+
 The $R$ term in the IPARC equation is the resource intensity of the economy.
 $R$ is defined as
 %
@@ -52,7 +93,7 @@ One Gt is $10^9$~tons (or $10^{12}$~kg) and a trillion dollars is \${}$10^{12}$.
 Thus, each dollar of GDP produced used about 0.25 kg of biomass, 
 0.086 kg of ores and minerals, and 0.27 kg of construction materials. 
 A full accounting of the resource intensity of the economy ($R$)
-yields a long list of numbers, 
+yields a long list of numbers, like a huge grocery list,
 each giving the amount of a single resource needed to make \$1 of GDP. 
 This chapter discusses sustainability implications for a few resources,
 with energy providing the prime example at the end. 
