@@ -24,9 +24,25 @@ it ingests materials and emits wastes.
 These characteristics of the economic metabolism are captured by the
 final term in Equation~\ref{eq:IPARC},
 the environmental contamination intensity of resource extraction and consumption ($C$).
-Resource extraction and consumption were discussed in Chapter~\ref{chap:resource_intensity}.
-Environmental contamination is discussed in this chapter.
-
+$C$ is a function of resource extraction and consumption ($R$) discussed in 
+Chapter~\ref{chap:resource_intensity} in that the 
+type and intensity of contamination is directly related to the types, quantities, 
+and processing of resources. 
+%Environmental contamination is discussed in this chapter.
+In some sense, $R$ represents the inputs to the economy (``food'' in the metabolic
+analogy) and $C$ represents the economy's excreted wastes.
+We say ``represents'' and not ``is'' because both terms are \emph{normalized} to
+a single dollar of GDP.
+$C$ is defined as
+%
+\begin{equation}\label{eq:R}
+  C = \frac{\textrm{impacts produced}}{\textrm{resources extracted to make \$1 GDP}} \; .
+\end{equation}
+Note that ``impacts'' are plural.
+Extracting and consuming all the resources to make a dollar of GDP will have effects
+on air, water, species diversity, land, and human communities.
+(If you are comfortable with matrix notation, $C$ can be though of as a matrix with
+impacts in columns and resources in rows.)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Contamination intensity of resource extraction}
