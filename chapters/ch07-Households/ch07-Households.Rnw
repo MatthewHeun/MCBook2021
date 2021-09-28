@@ -11,29 +11,29 @@
 \epigraph{There is nothing like staying at home for real comfort.}{Jane Austen}
 
 Having developed a framework for sustainability thinking in Equation \ref{eq:IPARC}
-and Chapters~\ref{chap:introduction}-\ref{chap:carbon_intensity},
+and Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity},
 this chapter is the first of four chapters to discuss
 areas of life where sustainability challenges are relevant and important.
 The four ``application areas'' are selected based, in part, on where energy
 is used (Figure \ref{fig:LLNL_energy_sankey}), that is, where carbon emissions
 originate (Table \ref{tab:corrected_co2_emissions}).
-This chapter explores in implications and applications of sustainability thinking
+This chapter (Chapter~\ref{chap:households}) explores implications and applications of sustainability thinking
 to households.
-Where and how you live \emph{might} be the area of your life over which you have 
-the most control.
 Transportation (Chapter~\ref{chap:transportation}), 
 agriculture (Chapter~\ref{chap:agriculture}), and
 land use and urban planning (Chapter~\ref{chap:land_use_urban_planning})
 are the subjects of the next three chapters.
 The structure of each chapter in Part \ref{part:sustainability_challenges} is similar:
 First, the importance of that area of life to sustainability is discussed.
-Next, technical details about sustainability in that area of life are presented.
+Next, technical details about sustainability in that area of life are explored.
 Finally, a summary provides pointers to other chapters 
-where personal or collective actions relevant to that area of life are discussed.
+where personal or collective actions relevant to that area of life are presented
 
 In this chapter, we begin by discussing
 the importance of households for sustainability.
-Thereafter, four areas of household sustainability are covered:
+It is noted that where and how you live \emph{might} be
+the area of your life over which you have the most control.
+Thereafter, technical details in four areas of household sustainability are covered:
 purchasing and renting, 
 heating and cooling, 
 hygiene, and 
@@ -50,17 +50,17 @@ Households are important for sustainability,
 because they are sites of energy and material consumption.
 For example, Figure~\ref{fig:LLNL_energy_sankey} shows that 
 11.9~quads of energy are consumed in U.S.\ residences annually,
-and Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
+representing 12\% of final energy consumption.
+Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
 from the residential sector come to 
 \Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Gt/year,
 predominantly from electricity and natural gas.\index{electricity!consumption!households}
-This 11.9~quads represents 12\% of final energy consumption.
 Energy consumption is the source of sustainability impacts
 (CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of} and 
 natural resource extraction\index{natural resources!extraction of})
 far beyond the site of the demand (households).
 In addition to energy, sustainability impacts arise 
-from household decisions about food\index{food!consumption of} and material consumption, too.
+from household decisions about food\index{food!consumption of} and material consumption.
 Thus, decisions made in households have sustainability implications
 far beyond the walls of each abode.
 
@@ -80,22 +80,31 @@ with sustainability implications
 at work, at school, or at church.
 However, everyone who lives in a house or apartment 
 makes decisions with sustainability implications
-in their home.
+in their own home.
 
 Figure~\ref{fig:average_residential_energy} shows how the average U.S.\ resident
 allocates energy consumption\index{energy consumption!residential}
 for several end uses~\citep[Fig.~3]{EIA_2018}.
-The end use categories in Figure~\ref{fig:average_residential_energy} illustrate
-how choices made in households
-intersect with sustainability topics covered in other chapters, including
-energy (Chapter~\ref{chap:resource_intensity}) and 
-food (Chapter~\ref{chap:agriculture}).
-Population (Chapter~\ref{chap:population}),
-the economy (Chapter~\ref{chap:affluence}),
-land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}),
-government (Chapter~\ref{chap:government}), and
-personal actions (Chapter~\ref{chap:personal_action})
-also affect household sustainability.
+% The end use categories in Figure~\ref{fig:average_residential_energy} illustrate
+% how choices made in households
+% intersect with sustainability topics covered in other chapters, including
+% energy (Chapter~\ref{chap:resource_intensity}) and
+% food (Chapter~\ref{chap:agriculture}).
+% Population (Chapter~\ref{chap:population}),
+% the economy (Chapter~\ref{chap:affluence}),
+% land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}),
+% government (Chapter~\ref{chap:government}), and
+% personal actions (Chapter~\ref{chap:personal_action})
+% also affect household sustainability.
+The end uses in Figure~\ref{fig:average_residential_energy}
+can be aggregated to form fewer major categories
+of residential energy consumption.
+Space heating and cooling
+comprise 36.6\% of all energy household energy consumption
+(including furnace fans).
+Hygeine (including water heaters, clothes dryers, dishwashers, and clothes washers)
+consumes 18.5\% of household energy.
+Lighting consumes 6.6\% of total household energy use.
 
 \begin{figure}
 \centering
@@ -126,15 +135,6 @@ household_energy_by_end_use %>%
                   axis.ticks = ggplot2::element_blank())
 @
 
-The end uses in Figure~\ref{fig:average_residential_energy}
-can be aggregated to form fewer major categories
-of residential energy consumption.
-Space heating and cooling
-comprise 36.6\% of all energy household energy consumption
-(including furnace fans).
-Hygeine (including water heaters, clothes dryers, dishwashers, and clothes washers)
-consumes 18.5\% of household energy.
-Lighting consumes 6.6\% of total household energy use.
 
 Guided by the aggregation above,
 this chapter focuses attention on four important sustainability topics
