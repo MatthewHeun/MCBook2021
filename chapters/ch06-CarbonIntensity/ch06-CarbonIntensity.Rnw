@@ -23,23 +23,25 @@ As such, the economy exhibits characteristics of a metabolism:
 it ingests materials and emits wastes.
 These characteristics of the economic metabolism are captured by the
 final term in Equation~\ref{eq:IPARC},
-the environmental contamination intensity of resource extraction and consumption ($C$).
-$C$ is a function of resource extraction and consumption ($R$) discussed in 
+the \emph{environmental \textbf{contamination intensity} of resource extraction and consumption} ($C$).
+$C$ is a function of $R$ (resource extraction and consumption) discussed in 
 Chapter~\ref{chap:resource_intensity} in that the 
 type and intensity of contamination is directly related to the types, quantities, 
 and processing of resources. 
 %Environmental contamination is discussed in this chapter.
-In some sense, $R$ represents the inputs to the economy (``food'' in the metabolic
-analogy) and $C$ represents the economy's excreted wastes.
+In some sense, $R$ represents the inputs to the economy 
+(``food'' in the metabolic analogy) and 
+$C$ represents the economy's excreted wastes.
 We say ``represents'' and not ``is'' because both terms are \emph{normalized} to
 a single dollar of GDP.
+
 $C$ is defined as
 %
 \begin{equation}\label{eq:R}
   C = \frac{\textrm{impacts produced}}{\textrm{resources extracted to make \$1 GDP}} \; .
 \end{equation}
 Note that ``impacts'' are plural.
-Extracting and consuming all the resources to make a dollar of GDP will have effects
+Extracting and consuming all the resources necessary to make a dollar of GDP will have effects
 on air, water, species diversity, land, and human communities.
 (If you are comfortable with matrix notation, $C$ can be though of as a matrix with
 impacts in columns and resources in rows.)
@@ -92,9 +94,9 @@ energy is the prime example of material extraction and consumption.
 Because CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of}
 are a significant source of environmental contamination
 coming from energy consumption,
-it follows that the prime example of environmental contamination
-is CO$_2$ emissions.
-Thus, the prime example for contamination intensity ($C$ in Equation~\ref{eq:IPARC})
+it follows that CO$_2$ emissions are the prime example of 
+environmental contamination intensity of resource extraction and consumption.
+Specifically, the prime example for contamination intensity ($C$ in Equation~\ref{eq:IPARC})
 is the CO$_2$ intensity of energy.
 The units for the CO$_2$ intensity of energy are,
 for example, tonnes of CO$_2$ emitted per MJ of energy consumed.
