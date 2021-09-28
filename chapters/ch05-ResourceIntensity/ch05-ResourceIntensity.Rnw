@@ -302,7 +302,7 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
   ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.05))) +
   viridis::scale_fill_viridis(discrete = TRUE) + 
   ggplot2::labs(x = NULL,
-                y = "Proportion of sustainable \n consumption or emission [%]") +
+                y = "Proportion of sustainable\nconsumption or emission [%]") +
   
   MKHthemes::xy_theme() + 
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())

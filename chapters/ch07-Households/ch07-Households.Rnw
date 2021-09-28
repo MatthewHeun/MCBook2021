@@ -100,7 +100,7 @@ for several end uses~\citep[Fig.~3]{EIA_2018}.
 % personal actions (Chapter~\ref{chap:personal_action})
 % also affect household sustainability.
 The end uses in Figure~\ref{fig:average_residential_energy}
-can be aggregated to form fewer major categories
+can be aggregated to form fewer categories
 of residential energy consumption.
 Space heating and cooling
 comprise 36.6\% of all energy household energy consumption
@@ -141,7 +141,7 @@ household_energy_by_end_use %>%
 
 Guided by the aggregation above,
 this chapter focuses attention on four important sustainability topics
-that intersect with household life, namely
+that intersect with household life:
 purchasing or renting a home or apartment,
 heating and cooling,
 hygeine, and
@@ -165,12 +165,15 @@ have sustainability implications, size and location chief among them.
 Figure~\ref{fig:EnergyConsAndHomeSize} shows the trend of
 energy consumption with respect to home size and
 confirms intuition that dwelling size is positively correlated 
-with energy consumption.\index{households!energy consumption}
-However, significant variation in annual electricity consumption
-is observed between the $20^{\mathrm{th}}$ and $80^{\mathrm{th}}$ percentiles at any home size.
-These variations indicate that decisions about \emph{how} a dwelling is used
-are nearly important as the \emph{size} of a dwelling
-for predicting residential electricity consumption.
+with energy consumption.\index{households!energy consumption}%
+\footnote{
+   Note that the U.S.\ Energy Information Agency's (EIA's)
+   Residential Energy Consumption Survey (RECS)
+   provides much of the data for this chapter. 
+   The most-recent RECS was released in 2015. 
+   The next RECS reports are expected in 2022 and 2023.
+}
+
 
 <<EnergyConsAndHomeSize, fig.cap="Average U.S.\\ household energy consumption. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_size <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "ce2.1.xlsx"),
@@ -205,16 +208,17 @@ household_energy_by_size %>%
 
 
 Figure~\ref{fig:NewHousingSize} shows the average floor space \index{households!floor space}
-of new single family homes in the United States between 1971 and 2020.
+of new single family homes in the United States between 1971 and 2019.
+The general trend is toward larger homes over time, with recent declines .
 Taken together, Figures~\ref{fig:EnergyConsAndHomeSize} and~\ref{fig:NewHousingSize}
 would suggest that residential energy consumption per dwelling is rising through time.
-However, per-dwelling energy consumption seems to be falling slowly in the U.S.,
+However, per-dwelling energy consumption is rather flat from the 1970 onward,
 with increased energy efficiency of appliances and building envelope improvements
 offsetting rising home sizes.
 That said, total residential energy consumption is rising,
 due to increasing numbers of dwellings.
 Figures~\ref{fig:AverageHouseholdEnergyConsumption}
-and~\ref{fig:total_household_consumption}
+and~\ref{fig:TotalHouseholdEnergyConsumption}
 show these trends.
 
 
@@ -255,7 +259,7 @@ average_household_energy_consumption %>%
    ggplot2::scale_x_continuous(limits = c(1980, 2020), breaks = seq(1980, 2020, by = 10)) +
    ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 120, by = 20)) +
    ggplot2::labs(x = ggplot2::element_blank(),
-                 y = "U.S. household energy consumption") +
+                 y = "U.S. household energy consumption\nand number of housing units") +
    MKHthemes::xy_theme() + 
    # Move the facet labels out of the graphs slightly.
    ggplot2::theme(strip.text.y = ggplot2::element_text(margin = ggplot2::margin(l = 2.0)))
@@ -306,8 +310,9 @@ total_household_energy_consumption %>%
 
 
 One might think that increasing dwelling sizes are driven by more occupants per dwelling.
-However, Figure~\ref{fig:person_household} shows that
-the percentage of single-person households is increasing through time~\citep[Fig.~2]{US_census}.
+However, Figure~\ref{fig:PersonsPerHousehold} 
+shows that the number of occupants per dwelling
+is falling over time.
 
 
 <<PersonsPerHousehold, fig.cap="Average number of persons per U.S.\\ household. Source: U.S.\\ Census Bureau~\\cite{United-States-Census-Bureau:2020vd}.">>=
@@ -331,7 +336,9 @@ From a sustainability point of view,
 smaller, more-efficient homes with larger numbers of occupants
 are preferred.
 However, trends suggest that although homes are becoming more efficient,
-they are becoming larger and have fewer occupants
+there are more homes, 
+they are becoming larger, and
+they have fewer occupants
 over time.
 
 
@@ -347,8 +354,6 @@ makes a significant difference to transportation energy demand.
 (See Chapter~\ref{chap:transportation} for more information on sustainability issues
 related to transportation.)
 
-**** Find data on energy consumption for commuting over time. ****
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Heating and cooling}
@@ -359,10 +364,10 @@ In most locations,
 daily and seasonal temperature variations are wide
 compared to the range of temperatures required for human comfort.
 Average daily temperature variations can be in the range of 13~\degC,
-and seasonal variations can be on the order of 30~\degC.%
+and seasonal variations can be 
+on the order of 30~\degC~\cite{Experience-Grand-Rapids:vs}.%
 \footnote{
-   Example temperature variations are for Grand Rapids, Michigan, USA
-   from \url{http://www.experiencegr.com}~\cite{Experience-Grand-Rapids:vs}.
+   Example temperature variations are for Grand Rapids, Michigan, USA.
 }
 In contrast, the range of human comfort is between 20 and 23~\degC, 
 depending on humidity and clothing, 
@@ -370,10 +375,10 @@ or only 3~\degC.
 
 Residential heating and cooling reduces the temperature variation
 inside a dwelling compared to the outdoors,
-providing thermal comfort to the occupants, 
-thereby enabling work, play, and entertainment.
-As shown in Figure~\ref{fig:average_residential_energy},
-on average across the U.S.,
+providing thermal comfort to the occupants 
+to enable work, play, and entertainment.
+Figure~\ref{fig:Household-energy-by-end-use} shows that
+on average across the U.S.
 thermal comfort\index{thermal comfort}
 is provided
 by **** 36.6\% **** of all residential energy consumption.
