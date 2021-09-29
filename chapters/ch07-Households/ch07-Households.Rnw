@@ -117,26 +117,26 @@ Lighting consumes 6.6\% of total household energy use.
 \end{figure}
 
 
-<<Household-energy-by-end-use, fig.cap = "U.S. final energy consumption by end use 2015.">>=
-household_energy_by_end_use <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "end-use-consumption-by-housing-type.xlsx"),
-                                                  sheet = "data to plot")
-
-#create pie chart
-household_energy_by_end_use %>% 
-   ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = Percentage, fill = End_use)) +
-   ggplot2::geom_bar(stat = "identity", width = 1) +
-   ggplot2::coord_polar(theta = "y", start = 0, direction = -1) +
-   ggplot2::geom_text(ggplot2::aes(x = 1.65, label = paste0(Percentage, "%")), 
-                      position = ggplot2::position_stack(vjust = 0.5), 
-                      colour = "gray50") +
-   viridis::scale_fill_viridis(discrete = TRUE) + 
-   ggplot2::labs(x = NULL, y = NULL, fill = NULL) + 
-
-   MKHthemes::xy_theme() +
-   ggplot2::theme(axis.line = ggplot2::element_blank(),
-                  axis.text.x = ggplot2::element_blank(),
-                  axis.ticks = ggplot2::element_blank())
-@
+% <<Household-energy-by-end-use, fig.cap = "U.S. final energy consumption by end use 2015.">>=
+% household_energy_by_end_use <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "end-use-consumption-by-housing-type.xlsx"),
+%                                                   sheet = "data to plot")
+% 
+% #create pie chart
+% household_energy_by_end_use %>% 
+%    ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = Percentage, fill = End_use)) +
+%    ggplot2::geom_bar(stat = "identity", width = 1) +
+%    ggplot2::coord_polar(theta = "y", start = 0, direction = -1) +
+%    ggplot2::geom_text(ggplot2::aes(x = 1.65, label = paste0(Percentage, "%")), 
+%                       position = ggplot2::position_stack(vjust = 0.5), 
+%                       colour = "gray50") +
+%    viridis::scale_fill_viridis(discrete = TRUE) + 
+%    ggplot2::labs(x = NULL, y = NULL, fill = NULL) + 
+% 
+%    MKHthemes::xy_theme() +
+%    ggplot2::theme(axis.line = ggplot2::element_blank(),
+%                   axis.text.x = ggplot2::element_blank(),
+%                   axis.ticks = ggplot2::element_blank())
+% @
 
 
 Guided by the aggregation above,
@@ -361,8 +361,8 @@ related to transportation.)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 In most locations,
-daily and seasonal temperature variations are wide
-compared to the range of temperatures required for human comfort.
+daily and seasonal temperature variations are larger
+than the narrow range of temperatures that provides human comfort.
 Average daily temperature variations can be in the range of 13~\degC,
 and seasonal variations can be 
 on the order of 30~\degC~\cite{Experience-Grand-Rapids:vs}.%
@@ -377,7 +377,7 @@ Residential heating and cooling reduces the temperature variation
 inside a dwelling compared to the outdoors,
 providing thermal comfort to the occupants 
 to enable work, play, and entertainment.
-Figure~\ref{fig:Household-energy-by-end-use} shows that
+Figure~\ref{fig:average_residential_energy} shows that
 on average across the U.S.
 thermal comfort\index{thermal comfort}
 is provided
@@ -386,7 +386,7 @@ Like all energy consumption,
 energy consumption for heating and cooling has sustainability implications.
 (See Chapter~\ref{chap:resource_intensity}.)
 Greater efficiency can provide the same thermal comfort
-with less energy consumed
+with less energy consumed.
 Increased residential heating and cooling 
 efficiency\index{efficiency!heating and cooling!residential}
 (i.e, providing the same comfort with less energy) 
@@ -406,12 +406,12 @@ The purpose of the envelope is to shield occupants from outside weather and
 to maintain dry and comfortable conditions inside the dwelling.
 The ideal building envelope would
 eliminate both heat loss in the winter and heat gain in the summer via
-perfect roof and wall insulation and
+perfect insulation and
 windows that neither conduct heat nor pass radiation.
 But perfect insulation is not possible, and all windows conduct heat and
 pass thermal radiation.
 So furnaces\index{furnaces} and air conditioners\index{air conditioners}
-replace the heat lost in winter and remove heat gained in the summer.
+replace heat lost in winter and remove heat gained in the summer, respectively.
 
 The effectiveness of roof and wall insulation\index{insulation}
 is quantified by its R-value\index{R-value},
@@ -453,8 +453,10 @@ Furnaces provide space heating,
 often from an out-of-the-way location in the dwelling (e.g., basement).
 Furnaces convert a fuel 
 (typically natural gas\index{natural gas} or heating oil\index{heating oil})
-into heat by combustion.
-The heat is delivered to the dwelling via circulating water or air.
+into heat by combustion, 
+thereby emitting CO$_2$ into the atmosphere.
+The heat is delivered to the dwelling via water or air
+circulated by a pump or fan.
 
 Furnace efficiency\index{efficiency!furnaces} is quantified as
 Annual Fuel Utilization Efficiency~(AFUE)\index{Annual Fuel Utilization Efficiency (AFUE)},
@@ -462,8 +464,8 @@ the percentage of useful heat output
 to fuel energy input,
 accounting for transient effects during operation
 across the year.
-The maximum AFUE rating is 100\%.
 Heat that leaves the home with the exhaust products serves to reduce AFUE.
+The maximum AFUE rating is 100\%.
 AFUE is different from and lower than steady-state thermal efficiency.
 The American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)
 \index{American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)}
@@ -488,8 +490,9 @@ but save money on fuel costs over time.
 
 Air conditioners cool and dehumidify indoor air
 to provide thermal comfort\index{thermal comfort}
-to building occupants.
-Most air conditioners consume electricity to perform their cooling function. 
+to building occupants in summer.
+Most air conditioners consume electricity to perform their cooling function, 
+causing CO$_2$ to emitted from grid-connected fossil fuel power plants. 
 The energy efficiency of air conditioners\index{efficiency!air conditioners}
 is quantified by the
 Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio (SEER)}
@@ -518,24 +521,27 @@ can be installed.
 Low-flow showerheads provide the obvious cost benefit of
 reducing water bills.
 But if less water is consumed,
-low-flow showerheads also reduce energy consumption for water heating.
+low-flow showerheads also reduce energy consumption and CO$_2$ emissions for water heating.
 Furthermore, sewerage costs are reduced, because low-flow showerheads
 decrease the amount of gray water entering the sewer system.
 
 Saving water and energy in dish washing can be accomplished by purchasing a
 high-efficiency automatic dishwasher.\index{efficiency!dish washers}
 The Energy Star program provides 
-information about energy-saving dishwashers.
+information about energy-saving dishwashers~\cite{U.S.-Department-of-Energy:vn}.
 
 To save water consumed by toilets\index{toilets},
 displacement and dual-flush systems are recommended.
 A displacement system occupies water volume in the tank,
 reducing the amount of water used for each flush.
-Dual-flush systems provide half- and full-flush
+Dual-flush systems provide half- and full-flushes
 for disposal of liquids and solids, respectively.
 
 Clothes washers and dryers\index{clothes washer}\index{clothes dryer}
-consume both water and energy.
+consume both water and energy, typically electricity and natural gas.
+Burning natural gas emits CO$_2$.
+When the electricity for washers and dryers comes from fossil fuel sources, 
+further CO$_2$ emissions occur.
 Purchasing washers and dryers with Energy Star\index{Energy Star} ratings can reduce
 energy and water consumption by 25\% and 33\%,
 respectively~\cite{U.S.-Department-of-Energy:tc, U.S.-Department-of-Energy:vd}.
@@ -549,14 +555,14 @@ using a cold-water cycle, and line drying clothes.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Indoor lighting provides illumination for rooms,
-typically by consuming electricity.
+typically by consuming electricity and emitting CO$_2$ if fossil sources are used.
 After Edison's invention of the electric light,
 filament-based incandescent lighting technology\index{lamps!electric!incandescent}
 dominated household lighting.
 However, in recent years,
 Compact Fluorescent Lights (CFLs)\index{lamps!electric!compact fluorescent (CFL)} and
 Light Emitting Diode (LED)\index{lamps!electric!light emitting diode (LED)}
-lights have revolutionized
+lamps have revolutionized
 the lighting industry and improved lighting efficiency significantly.
 LED lamps are 6--10 times more efficient than incandescent lighting.
 In addition, LED lamps promise much longer lifetimes,
@@ -584,7 +590,7 @@ purchasing and renting,
 heating and cooling,
 hygiene, and
 lighting, 
-because these are areas of everyday life in which many homeowners have agency.
+because many homeowners have agency in these areas of everyday life.
 Chapter~\ref{chap:personal_action} provides concrete suggestions
 for making homes and apartments more sustainable.
 
