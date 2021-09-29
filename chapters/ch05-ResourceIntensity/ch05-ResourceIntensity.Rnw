@@ -275,40 +275,41 @@ A weak sustainability criterion is that resources are extracted
 at rates that leave enough time to invent and develop substitutes
 at scale before the resource is depleted. 
 A similar weak sustainability criterion can be established for waste:
-wastes should be emitted slowly enough for their accumulation to pose no problems
-before we invent and develop remediation technologies at scale. 
-A time horizon is needed for evaluating the weak sustainability criterion.
-Typically, 50 years is used.
+wastes should be emitted slowly enough for their accumulation in the environment 
+to pose no problems before we invent and develop remediation technologies at scale. 
+A time horizon is needed for evaluating the weak sustainability criterion, 
+typically 50 years.
 Thus, extraction of a resource is weakly sustainability so long as 
 the remaining stock is sufficient to last 50 years at today's extraction rate
 (and, possibly expected future extraction rates).
 
 To evaluate whether a resource meets the weak sustainability criterion, 
-the following steps must be performed.
+the following steps can be performed.
 %
 \begin{enumerate}[label={(\alph*)}]
 	
   \item Establish the virgin material stock as of today.
   
-  \item Find the current rate of extraction and any future increases or decreases
+  \item Divide the virgin stock by 50 years to obtain a maximum weakly-sustainable extraction rate.
+  
+  \item Find the current rate of extraction and estimate any future increases or decreases
         in the rate of extraction.
-        
-  \item Estimate cumulative extraction of the resource per year for 50 years.
+
+  \item Compare the weakly-sustainable extraction rate with the maximum weakly sustainable extraction rate.  
   
-  \item Subtract extracted resources from the stock in each year.
-  
-  \item Assess the remaining stock at the end of 50 years. 
-        If any stock remains, the extraction rate is weakly sustainable.
-        If the stock is eliminated, the expected extraction rates are unsustainable.
-    
+  \item If the actual extraction rate is greater than the maximum weakly sustainable extraction rate,
+        consumption or the resource does not meet the weak sustainability criterion. 
+
 \end{enumerate}
+%
+A similar approach can be used for wastes.
 
 Figure~\ref{fig:PercentageOfSustainable} shows the result of applying 
-the Graedel and Allenby method 
+the weak sustainability analysis approach
 to two chemical elements (zinc\index{zinc (Zn)} and germanium\index{germanium (Ge)}) and
 to worldwide emission of CO$_2$.
 This method shows that the world today is far above 
-(weak) sustainable levels of consumption and waste emission.
+weak sustainability levels of consumption and waste emission.
 To further underscore the importance of consumption of natural resources to sustainability,
 germanium (now being consumed at twice its sustainable rate)
 is one of the critical raw materials in Table~\ref{tab:CRMs}.
