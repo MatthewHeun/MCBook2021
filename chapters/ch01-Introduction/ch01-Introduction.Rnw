@@ -301,8 +301,8 @@ greater detail.
 \section{A framework for sustainaiblity thinking}%Impacts and their sources}
 Two mathematical identities, IPAT and Kaya, have been used to express sources and impact
 of human activities on the environment.
-IPAT expresses ``impact'' (I) on the environment as the product of human
-population (P), affluence (A), and technology (T).
+IPAT expresses ``impact'' ($I$) on the environment as the product of human
+population ($P$), affluence ($A$), and technology ($T$).
 The Kaya identity is a form of the IPAT equation but restricts impact to CO$_2$
 emissions.
 On the other hand, Kaya expands the generic expression for ``technology'' to be
@@ -313,38 +313,8 @@ Chapters \ref{chap:planetary_boundaries}-\ref{chap:carbon_intensity}
 of this book are organized around a hybrid of the IPAT and Kaya
 approaches.
 We keep the more general ``impact'' of IPAT but also generalize the more insightful
-``technology'' expression from Kaya as the product of resource intensity of the economy (R)
-and a resource impact intensity (C).
-% %\begin{eqnarray}
-% %\begin{tabular}{cccccccc}
-% \begin{align}
-% \label{eq:IPARC}
-% &I &=& P &\times &A &\times &R &\times &C \\
-% %
-% &\textrm{Impact} &=& \textrm{Population} &\times &\textrm{Affluence} &\times
-% &\textrm{Resource intensity} &\times &\textrm{Contamination intensity} \nonumber \\
-% %
-% &\left[\frac{\textrm{impact}}{\textrm{year}}\right] &=  &\left[\textrm{people}\right] &\times
-% &\left[\frac{\textrm{GDP}}{\textrm{yr-capita}}\right] &\times
-% &\left[\frac{\textrm{resources}}{\textrm{GDP}}\right] &\times
-% &\left[\frac{\textrm{impact}}{\textrm{resource}}\right] \nonumber
-% %\end{tabular}
-% \end{align}
-% %\end{eqnarray}
-
-
-% ********************
-%
-% Jeremy:
-%
-% Here are some options for the equation.
-% I suspect that none are what you want.
-%
-% The first version uses a table with centered columns to show all the terms.
-%
-% Note that I need to use \verb|\small| to fit the equation number on the same line as the table.
-% The whole table is numbered as one equation, and I don't think we can number only the first line.
-
+``technology'' expression from Kaya as the product of resource intensity of the economy ($R$)
+and a resource impact intensity ($C$).
 
 \begin{equation}
 \label{eq:IPARC}
@@ -353,42 +323,20 @@ and a resource impact intensity (C).
 $I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $C$ \\
 \multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource &  & Contamination \\
  &  &  &  &  &  & intensity &  & intensity \\
-$\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}\right]$ &  & $\left[\frac{\textrm{\$ GDP}}{\textrm{capita-year}}\right]$ &  & $\left[\frac{\textrm{resources}}{\textrm{\$ GDP}}\right]$ &  & $\left[\frac{\textrm{impact}}{\textrm{resources}}\right]$
+$\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}\right]$ &  & $\left[\frac{\textrm{GDP}}{\textrm{capita-year}}\right]$ &  & $\left[\frac{\textrm{resources}}{\textrm{GDP}}\right]$ &  & $\left[\frac{\textrm{impact}}{\textrm{resources}}\right]$
 \end{tabular}
 \normalsize
 \end{equation}
 
-%
-%
-% The second version uses a standard equation with explanatory text in the paragraph below.
-%
-% \begin{equation} \label{eq:IPARC}
-%   I = P \! A R C \; ,
-% \end{equation}
-% %
-% where $I$ is environmental impact rate in units of impact/year,
-% $P$ is population in persons,
-% $A$ is affluence in \$ GDP/year-capita,
-% $R$ is the resource intensity of the economy in resource consumption/\$ GDP, and
-% $C$ is the contamination intensity of resource consumption in environmental impact/resource consumption.
-%
-% I think I prefer the standard equation with explanatary text below.
-%
-% Choose wisely!
-%
-% ---MKH
-%
-% **********************
 
-
-In the IPARC formulation, impact (I) is a vector quantity (that is, a list)
+In the IPARC formulation, impact ($I$) is a vector quantity (that is, a list)
 that includes such things as global warming potential, aquifer depletion, and
 eutrophication potential.
-Population (P) is the (scalar) number of people in the world.
-Affluence (A) is GDP per capita per year.
-Resource intensity (R) is the vector or list of all the resources necessary to
+Population ($P$) is the (scalar) number of people in the world.
+Affluence ($A$) is GDP per capita per year.
+Resource intensity ($R$) is the vector or list of all the resources necessary to
 produce one unit of world GDP.
-Lastly, impact intensity of resources (C) is a matrix that lists the impacts of
+Lastly, impact intensity of resources ($C$) is a matrix that lists the impacts of
 each type of resource.
 
 IPARC is true because it is an identity, and it provides a useful organizing framework
