@@ -173,22 +173,25 @@ extraction and consumption,
 per definitions of strong and weak sustainability.
 A criterion for ``strong sustainability'' is 
 extracting and consuming resources 
-at a rate less than their natural regeneration rates.
-We can interpret two of Herman Daly's~\cite{Daly1996} criteria
-(see Section~\ref{sec:Sdefns})
-as a definition of strong sustainability:
-%
-\begin{enumerate}
+at rates slower than their natural regeneration rates.
 
-  \item Renewable resources, such as fish, soil, and groundwater, 
-        must be used no faster
-        than the rate at which they regenerate.
 
-  \item Nonrenewable resources, such as minerals and fossil fuels,
-        must be used no faster
-        than renewable substitutes for them can be put into place.
-        
-\end{enumerate}
+
+% We can interpret two of Herman Daly's~\cite{Daly1996} criteria
+% (see Section~\ref{sec:Sdefns})
+% as a definition of strong sustainability:
+% %
+% \begin{enumerate}
+% 
+%   \item Renewable resources, such as fish, soil, and groundwater, 
+%         must be used no faster
+%         than the rate at which they regenerate.
+% 
+%   \item Nonrenewable resources, such as minerals and fossil fuels,
+%         must be used no faster
+%         than renewable substitutes for them can be put into place.
+%         
+% \end{enumerate}
 %
 
 
@@ -253,9 +256,11 @@ show that resource consumption is growing at an ever-increasing rate.
 By the ``strong sustainability'' criterion, 
 \emph{any} extraction of
 construction minerals, ores and industrial minerals, and fossil energy carriers
-is unsustainable, because these materials do not regenerate on human timescales.
+is unsustainable, because
+we are extracting these materials at rates which are faster than their regeneration rates.
 The fact that we are \emph{increasing} our rate of material extraction 
-means that we are running well afoul of strong sustainability.
+means that we are running well afoul of the strong sustainability criterion
+for these materials.
 On the other hand, 
 extraction of biomass \emph{can} be sustainable if 
 the extraction rate is less than the growth rate.
@@ -266,33 +271,36 @@ the extraction rate is less than the growth rate.
 \label{sec:resources_weak_sustainability}
 %++++++++++++++++++++++++++++++
 
-Graedel and Allenby~\cite[p.~17]{Graedel:2010ab} develop a
-weak sustainability criterion for 
-resource extraction or waste emission rates.
-Their approach assumes that human ingenuity 
-(either by switching to other materials or by substituting human capital for natural resources)
-can overcome resource supply limitations, 
-given enough time to react (say, 50 years).
-So any rate of consumption of raw materials that preserves supply for 50 years
-is deemed ``sustainable.''
-The Graedel and Allenby method involves four steps:
+A weak sustainability criterion is that resources are extracted 
+at rates that leave enough time to invent and develop substitutes
+at scale before the resource is depleted. 
+A similar weak sustainability criterion can be established for waste:
+wastes should be emitted slowly enough for their accumulation to pose no problems
+before we invent and develop remediation technologies at scale. 
+A time horizon is needed for evaluating the weak sustainability criterion.
+Typically, 50 years is used.
+Thus, extraction of a resource is weakly sustainability so long as 
+the remaining stock is sufficient to last 50 years at today's extraction rate
+(and, possibly expected future extraction rates).
+
+To evaluate whether a resource meets the weak sustainability criterion, 
+the following steps must be performed.
 %
-\begin{enumerate}
-
-  \item Establish the virgin material supply limit, assumed to be
-        the amount of resource that can be used per year if the resource is to last 50 years.
-
-  \item Allocate the virgin material supply, 
-        often assuming equal per-capita consumption over 50 years.
+\begin{enumerate}[label={(\alph*)}]
+	
+  \item Establish the virgin material stock as of today.
+  
+  \item Find the current rate of extraction and any future increases or decreases
+        in the rate of extraction.
         
-  \item Establish the ``recapturable'' resource base, often via recycling or mining
-        stockpiles and landfills, and allocate to per-capita consumption over 50 years. 
-        The sum of the per-capita virgin material supply rate and the 
-        allocated recapturable resource rate gives the sustainable consumption rate.
-        
-  \item Compare the current consumption rate and the sustainable consumption rate to assess sustainability
-        of current patterns of resource consumption.
-
+  \item Estimate cumulative extraction of the resource per year for 50 years.
+  
+  \item Subtract extracted resources from the stock in each year.
+  
+  \item Assess the remaining stock at the end of 50 years. 
+        If any stock remains, the extraction rate is weakly sustainable.
+        If the stock is eliminated, the expected extraction rates are unsustainable.
+    
 \end{enumerate}
 
 Figure~\ref{fig:PercentageOfSustainable} shows the result of applying 
