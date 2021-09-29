@@ -10,30 +10,33 @@
 %#############################################################
 \epigraph{There is nothing like staying at home for real comfort.}{Jane Austen}
 
+*** Mention latest RECS in 2015. ****
+
+
 Having developed a framework for sustainability thinking in Equation \ref{eq:IPARC}
-and Chapters~\ref{chap:introduction}-\ref{chap:carbon_intensity},
+and Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity},
 this chapter is the first of four chapters to discuss
 areas of life where sustainability challenges are relevant and important.
 The four ``application areas'' are selected based, in part, on where energy
 is used (Figure \ref{fig:LLNL_energy_sankey}), that is, where carbon emissions
 originate (Table \ref{tab:corrected_co2_emissions}).
-This chapter explores in implications and applications of sustainability thinking
+This chapter (Chapter~\ref{chap:households}) explores implications and applications of sustainability thinking
 to households.
-Where and how you live \emph{might} be the area of your life over which you have 
-the most control.
 Transportation (Chapter~\ref{chap:transportation}), 
 agriculture (Chapter~\ref{chap:agriculture}), and
 land use and urban planning (Chapter~\ref{chap:land_use_urban_planning})
 are the subjects of the next three chapters.
 The structure of each chapter in Part \ref{part:sustainability_challenges} is similar:
 First, the importance of that area of life to sustainability is discussed.
-Next, technical details about sustainability in that area of life are presented.
+Next, technical details about sustainability in that area of life are explored.
 Finally, a summary provides pointers to other chapters 
-where personal or collective actions relevant to that area of life are discussed.
+where personal or collective actions relevant to that area of life are presented
 
 In this chapter, we begin by discussing
 the importance of households for sustainability.
-Thereafter, four areas of household sustainability are covered:
+It is noted that where and how you live \emph{might} be
+the area of your life over which you have the most control.
+Thereafter, technical details in four areas of household sustainability are covered:
 purchasing and renting, 
 heating and cooling, 
 hygiene, and 
@@ -50,17 +53,17 @@ Households are important for sustainability,
 because they are sites of energy and material consumption.
 For example, Figure~\ref{fig:LLNL_energy_sankey} shows that 
 11.9~quads of energy are consumed in U.S.\ residences annually,
-and Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
+representing 12\% of final energy consumption.
+Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
 from the residential sector come to 
 \Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Gt/year,
 predominantly from electricity and natural gas.\index{electricity!consumption!households}
-This 11.9~quads represents 12\% of final energy consumption.
 Energy consumption is the source of sustainability impacts
 (CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of} and 
 natural resource extraction\index{natural resources!extraction of})
 far beyond the site of the demand (households).
 In addition to energy, sustainability impacts arise 
-from household decisions about food\index{food!consumption of} and material consumption, too.
+from household decisions about food\index{food!consumption of} and material consumption.
 Thus, decisions made in households have sustainability implications
 far beyond the walls of each abode.
 
@@ -80,22 +83,31 @@ with sustainability implications
 at work, at school, or at church.
 However, everyone who lives in a house or apartment 
 makes decisions with sustainability implications
-in their home.
+in their own home.
 
 Figure~\ref{fig:average_residential_energy} shows how the average U.S.\ resident
 allocates energy consumption\index{energy consumption!residential}
 for several end uses~\citep[Fig.~3]{EIA_2018}.
-The end use categories in Figure~\ref{fig:average_residential_energy} illustrate
-how choices made in households
-intersect with sustainability topics covered in other chapters, including
-energy (Chapter~\ref{chap:resource_intensity}) and 
-food (Chapter~\ref{chap:agriculture}).
-Population (Chapter~\ref{chap:population}),
-the economy (Chapter~\ref{chap:affluence}),
-land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}),
-government (Chapter~\ref{chap:government}), and
-personal actions (Chapter~\ref{chap:personal_action})
-also affect household sustainability.
+% The end use categories in Figure~\ref{fig:average_residential_energy} illustrate
+% how choices made in households
+% intersect with sustainability topics covered in other chapters, including
+% energy (Chapter~\ref{chap:resource_intensity}) and
+% food (Chapter~\ref{chap:agriculture}).
+% Population (Chapter~\ref{chap:population}),
+% the economy (Chapter~\ref{chap:affluence}),
+% land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}),
+% government (Chapter~\ref{chap:government}), and
+% personal actions (Chapter~\ref{chap:personal_action})
+% also affect household sustainability.
+The end uses in Figure~\ref{fig:average_residential_energy}
+can be aggregated to form fewer categories
+of residential energy consumption.
+Space heating and cooling
+comprise 36.6\% of all energy household energy consumption
+(including furnace fans).
+Hygeine (including water heaters, clothes dryers, dishwashers, and clothes washers)
+consumes 18.5\% of household energy.
+Lighting consumes 6.6\% of total household energy use.
 
 \begin{figure}
 \centering
@@ -105,40 +117,31 @@ also affect household sustainability.
 \end{figure}
 
 
-<<Household-energy-by-end-use, fig.cap = "U.S. final energy consumption by end use 2015.">>=
-household_energy_by_end_use <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "end-use-consumption-by-housing-type.xlsx"),
-                                                  sheet = "data to plot")
+% <<Household-energy-by-end-use, fig.cap = "U.S. final energy consumption by end use 2015.">>=
+% household_energy_by_end_use <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "end-use-consumption-by-housing-type.xlsx"),
+%                                                   sheet = "data to plot")
+% 
+% #create pie chart
+% household_energy_by_end_use %>% 
+%    ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = Percentage, fill = End_use)) +
+%    ggplot2::geom_bar(stat = "identity", width = 1) +
+%    ggplot2::coord_polar(theta = "y", start = 0, direction = -1) +
+%    ggplot2::geom_text(ggplot2::aes(x = 1.65, label = paste0(Percentage, "%")), 
+%                       position = ggplot2::position_stack(vjust = 0.5), 
+%                       colour = "gray50") +
+%    viridis::scale_fill_viridis(discrete = TRUE) + 
+%    ggplot2::labs(x = NULL, y = NULL, fill = NULL) + 
+% 
+%    MKHthemes::xy_theme() +
+%    ggplot2::theme(axis.line = ggplot2::element_blank(),
+%                   axis.text.x = ggplot2::element_blank(),
+%                   axis.ticks = ggplot2::element_blank())
+% @
 
-#create pie chart
-household_energy_by_end_use %>% 
-   ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = Percentage, fill = End_use)) +
-   ggplot2::geom_bar(stat = "identity", width = 1) +
-   ggplot2::coord_polar(theta = "y", start = 0, direction = -1) +
-   ggplot2::geom_text(ggplot2::aes(x = 1.65, label = paste0(Percentage, "%")), 
-                      position = ggplot2::position_stack(vjust = 0.5), 
-                      colour = "gray50") +
-   viridis::scale_fill_viridis(discrete = TRUE) + 
-   ggplot2::labs(x = NULL, y = NULL, fill = NULL) + 
-
-   MKHthemes::xy_theme() +
-   ggplot2::theme(axis.line = ggplot2::element_blank(),
-                  axis.text.x = ggplot2::element_blank(),
-                  axis.ticks = ggplot2::element_blank())
-@
-
-The end uses in Figure~\ref{fig:average_residential_energy}
-can be aggregated to form fewer major categories
-of residential energy consumption.
-Space heating and cooling
-comprise 36.6\% of all energy household energy consumption
-(including furnace fans).
-Hygeine (including water heaters, clothes dryers, dishwashers, and clothes washers)
-consumes 18.5\% of household energy.
-Lighting consumes 6.6\% of total household energy use.
 
 Guided by the aggregation above,
 this chapter focuses attention on four important sustainability topics
-that intersect with household life, namely
+that intersect with household life:
 purchasing or renting a home or apartment,
 heating and cooling,
 hygeine, and
@@ -162,12 +165,15 @@ have sustainability implications, size and location chief among them.
 Figure~\ref{fig:EnergyConsAndHomeSize} shows the trend of
 energy consumption with respect to home size and
 confirms intuition that dwelling size is positively correlated 
-with energy consumption.\index{households!energy consumption}
-However, significant variation in annual electricity consumption
-is observed between the $20^{\mathrm{th}}$ and $80^{\mathrm{th}}$ percentiles at any home size.
-These variations indicate that decisions about \emph{how} a dwelling is used
-are nearly important as the \emph{size} of a dwelling
-for predicting residential electricity consumption.
+with energy consumption.\index{households!energy consumption}%
+\footnote{
+   Note that the U.S.\ Energy Information Agency's (EIA's)
+   Residential Energy Consumption Survey (RECS)
+   provides much of the data for this chapter. 
+   The most-recent RECS was released in 2015. 
+   The next RECS reports are expected in 2022 and 2023.
+}
+
 
 <<EnergyConsAndHomeSize, fig.cap="Average U.S.\\ household energy consumption. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_size <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "ce2.1.xlsx"),
@@ -202,16 +208,17 @@ household_energy_by_size %>%
 
 
 Figure~\ref{fig:NewHousingSize} shows the average floor space \index{households!floor space}
-of new single family homes in the United States between 1971 and 2020.
+of new single family homes in the United States between 1971 and 2019.
+The general trend is toward larger homes over time, with recent declines .
 Taken together, Figures~\ref{fig:EnergyConsAndHomeSize} and~\ref{fig:NewHousingSize}
 would suggest that residential energy consumption per dwelling is rising through time.
-However, per-dwelling energy consumption seems to be falling slowly in the U.S.,
+However, per-dwelling energy consumption is rather flat from the 1970 onward,
 with increased energy efficiency of appliances and building envelope improvements
 offsetting rising home sizes.
 That said, total residential energy consumption is rising,
 due to increasing numbers of dwellings.
 Figures~\ref{fig:AverageHouseholdEnergyConsumption}
-and~\ref{fig:total_household_consumption}
+and~\ref{fig:TotalHouseholdEnergyConsumption}
 show these trends.
 
 
@@ -252,7 +259,7 @@ average_household_energy_consumption %>%
    ggplot2::scale_x_continuous(limits = c(1980, 2020), breaks = seq(1980, 2020, by = 10)) +
    ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 120, by = 20)) +
    ggplot2::labs(x = ggplot2::element_blank(),
-                 y = "U.S. household energy consumption") +
+                 y = "U.S. household energy consumption\nand number of housing units") +
    MKHthemes::xy_theme() + 
    # Move the facet labels out of the graphs slightly.
    ggplot2::theme(strip.text.y = ggplot2::element_text(margin = ggplot2::margin(l = 2.0)))
@@ -303,8 +310,9 @@ total_household_energy_consumption %>%
 
 
 One might think that increasing dwelling sizes are driven by more occupants per dwelling.
-However, Figure~\ref{fig:person_household} shows that
-the percentage of single-person households is increasing through time~\citep[Fig.~2]{US_census}.
+However, Figure~\ref{fig:PersonsPerHousehold} 
+shows that the number of occupants per dwelling
+is falling over time.
 
 
 <<PersonsPerHousehold, fig.cap="Average number of persons per U.S.\\ household. Source: U.S.\\ Census Bureau~\\cite{United-States-Census-Bureau:2020vd}.">>=
@@ -328,7 +336,9 @@ From a sustainability point of view,
 smaller, more-efficient homes with larger numbers of occupants
 are preferred.
 However, trends suggest that although homes are becoming more efficient,
-they are becoming larger and have fewer occupants
+there are more homes, 
+they are becoming larger, and
+they have fewer occupants
 over time.
 
 
@@ -344,8 +354,6 @@ makes a significant difference to transportation energy demand.
 (See Chapter~\ref{chap:transportation} for more information on sustainability issues
 related to transportation.)
 
-**** Find data on energy consumption for commuting over time. ****
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Heating and cooling}
@@ -353,13 +361,13 @@ related to transportation.)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 In most locations,
-daily and seasonal temperature variations are wide
-compared to the range of temperatures required for human comfort.
+daily and seasonal temperature variations are larger
+than the narrow range of temperatures that provides human comfort.
 Average daily temperature variations can be in the range of 13~\degC,
-and seasonal variations can be on the order of 30~\degC.%
+and seasonal variations can be 
+on the order of 30~\degC~\cite{Experience-Grand-Rapids:vs}.%
 \footnote{
-   Example temperature variations are for Grand Rapids, Michigan, USA
-   from \url{http://www.experiencegr.com}~\cite{Experience-Grand-Rapids:vs}.
+   Example temperature variations are for Grand Rapids, Michigan, USA.
 }
 In contrast, the range of human comfort is between 20 and 23~\degC, 
 depending on humidity and clothing, 
@@ -367,10 +375,10 @@ or only 3~\degC.
 
 Residential heating and cooling reduces the temperature variation
 inside a dwelling compared to the outdoors,
-providing thermal comfort to the occupants, 
-thereby enabling work, play, and entertainment.
-As shown in Figure~\ref{fig:average_residential_energy},
-on average across the U.S.,
+providing thermal comfort to the occupants 
+to enable work, play, and entertainment.
+Figure~\ref{fig:average_residential_energy} shows that
+on average across the U.S.
 thermal comfort\index{thermal comfort}
 is provided
 by **** 36.6\% **** of all residential energy consumption.
@@ -378,7 +386,7 @@ Like all energy consumption,
 energy consumption for heating and cooling has sustainability implications.
 (See Chapter~\ref{chap:resource_intensity}.)
 Greater efficiency can provide the same thermal comfort
-with less energy consumed
+with less energy consumed.
 Increased residential heating and cooling 
 efficiency\index{efficiency!heating and cooling!residential}
 (i.e, providing the same comfort with less energy) 
@@ -398,12 +406,12 @@ The purpose of the envelope is to shield occupants from outside weather and
 to maintain dry and comfortable conditions inside the dwelling.
 The ideal building envelope would
 eliminate both heat loss in the winter and heat gain in the summer via
-perfect roof and wall insulation and
+perfect insulation and
 windows that neither conduct heat nor pass radiation.
 But perfect insulation is not possible, and all windows conduct heat and
 pass thermal radiation.
 So furnaces\index{furnaces} and air conditioners\index{air conditioners}
-replace the heat lost in winter and remove heat gained in the summer.
+replace heat lost in winter and remove heat gained in the summer, respectively.
 
 The effectiveness of roof and wall insulation\index{insulation}
 is quantified by its R-value\index{R-value},
@@ -445,8 +453,10 @@ Furnaces provide space heating,
 often from an out-of-the-way location in the dwelling (e.g., basement).
 Furnaces convert a fuel 
 (typically natural gas\index{natural gas} or heating oil\index{heating oil})
-into heat by combustion.
-The heat is delivered to the dwelling via circulating water or air.
+into heat by combustion, 
+thereby emitting CO$_2$ into the atmosphere.
+The heat is delivered to the dwelling via water or air
+circulated by a pump or fan.
 
 Furnace efficiency\index{efficiency!furnaces} is quantified as
 Annual Fuel Utilization Efficiency~(AFUE)\index{Annual Fuel Utilization Efficiency (AFUE)},
@@ -454,8 +464,8 @@ the percentage of useful heat output
 to fuel energy input,
 accounting for transient effects during operation
 across the year.
-The maximum AFUE rating is 100\%.
 Heat that leaves the home with the exhaust products serves to reduce AFUE.
+The maximum AFUE rating is 100\%.
 AFUE is different from and lower than steady-state thermal efficiency.
 The American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)
 \index{American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)}
@@ -480,8 +490,9 @@ but save money on fuel costs over time.
 
 Air conditioners cool and dehumidify indoor air
 to provide thermal comfort\index{thermal comfort}
-to building occupants.
-Most air conditioners consume electricity to perform their cooling function. 
+to building occupants in summer.
+Most air conditioners consume electricity to perform their cooling function, 
+causing CO$_2$ to emitted from grid-connected fossil fuel power plants. 
 The energy efficiency of air conditioners\index{efficiency!air conditioners}
 is quantified by the
 Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio (SEER)}
@@ -510,24 +521,27 @@ can be installed.
 Low-flow showerheads provide the obvious cost benefit of
 reducing water bills.
 But if less water is consumed,
-low-flow showerheads also reduce energy consumption for water heating.
+low-flow showerheads also reduce energy consumption and CO$_2$ emissions for water heating.
 Furthermore, sewerage costs are reduced, because low-flow showerheads
 decrease the amount of gray water entering the sewer system.
 
 Saving water and energy in dish washing can be accomplished by purchasing a
 high-efficiency automatic dishwasher.\index{efficiency!dish washers}
 The Energy Star program provides 
-information about energy-saving dishwashers.
+information about energy-saving dishwashers~\cite{U.S.-Department-of-Energy:vn}.
 
 To save water consumed by toilets\index{toilets},
 displacement and dual-flush systems are recommended.
 A displacement system occupies water volume in the tank,
 reducing the amount of water used for each flush.
-Dual-flush systems provide half- and full-flush
+Dual-flush systems provide half- and full-flushes
 for disposal of liquids and solids, respectively.
 
 Clothes washers and dryers\index{clothes washer}\index{clothes dryer}
-consume both water and energy.
+consume both water and energy, typically electricity and natural gas.
+Burning natural gas emits CO$_2$.
+When the electricity for washers and dryers comes from fossil fuel sources, 
+further CO$_2$ emissions occur.
 Purchasing washers and dryers with Energy Star\index{Energy Star} ratings can reduce
 energy and water consumption by 25\% and 33\%,
 respectively~\cite{U.S.-Department-of-Energy:tc, U.S.-Department-of-Energy:vd}.
@@ -541,14 +555,14 @@ using a cold-water cycle, and line drying clothes.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Indoor lighting provides illumination for rooms,
-typically by consuming electricity.
+typically by consuming electricity and emitting CO$_2$ if fossil sources are used.
 After Edison's invention of the electric light,
 filament-based incandescent lighting technology\index{lamps!electric!incandescent}
 dominated household lighting.
 However, in recent years,
 Compact Fluorescent Lights (CFLs)\index{lamps!electric!compact fluorescent (CFL)} and
 Light Emitting Diode (LED)\index{lamps!electric!light emitting diode (LED)}
-lights have revolutionized
+lamps have revolutionized
 the lighting industry and improved lighting efficiency significantly.
 LED lamps are 6--10 times more efficient than incandescent lighting.
 In addition, LED lamps promise much longer lifetimes,
@@ -576,7 +590,7 @@ purchasing and renting,
 heating and cooling,
 hygiene, and
 lighting, 
-because these are areas of everyday life in which many homeowners have agency.
+because many homeowners have agency in these areas of everyday life.
 Chapter~\ref{chap:personal_action} provides concrete suggestions
 for making homes and apartments more sustainable.
 

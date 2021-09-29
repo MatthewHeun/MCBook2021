@@ -33,46 +33,61 @@ Without oceans and atmosphere to accept wastes?
 Without coal, oil, and methane to make electricity, gasoline, and natural gas?
 Nowhere.
 
-\subsection*{Definitions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Definitions}
+\label{sec:resource_intensity_definitions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 An intensity is like an efficiency, except the numerator and denominator have 
 different units.
-A furnace that burns a quantity of natural gas that releases 100 btus of heat might
-only deliver 96 of those btus to your house.
-Such a furnace has an \emph{efficiency} of 96\% (btus delivered per btus input).
+A furnace that burns a quantity of natural gas that releases 100 BTUs of heat might
+only deliver 96 of those BTUs to your house.
+Such a furnace has an \emph{efficiency} of 96\% (BTUs delivered per BTUs input).
+(See Section~\ref{sec:furnaces} for more on furnace efficiency and a related metric,
+Annual Fuel Utilization Efficiency (AFUE).)
 A natural gas power plant might burn gas at a rate that releases 300 MW of heat to generate
 100 MW of electricity. 
 Such a power plant has an efficiency of 33.3\%.
-In both cases, the input and output have the same units of energy, btus in one case
-and MW in the other.
-On the other hand, an \emph{intensity} has \emph{different} units.
-A vehicle's miles per gallon is an intensity.
+In both cases, the input and output have the same units of energy, BTUs for the furnace
+and MW for the power plant.
+In contrast, an \emph{intensity} has \emph{different} units
+for input and output.
+A vehicle's fuel economy, measured in miles per gallon, is an intensity.
 Carbon emissions per ton of freight per mile moved is an intensity.
-It is \emph{intensive} because total carbon emissions depend on the number of tons
-moved and the total km they travel.
+It is \emph{intensive} because total carbon emissions depend on the tons
+moved and the total km travelled.
 
-Imagine a coal-fired power plant that generates electricity, which charges
+Imagine a coal-fired power plant that generates electricity to charge
 an electric car. 
-The coal is the \emph{primary} energy source. 
-The electricity is \emph{secondary}.
-Hydro, solar, and wind are all primary energy sources. 
+Coal is the \emph{primary} energy source. 
+The electricity sold to consumers is considered to be a \emph{final} energy carrier.%
+\footnote{
+  Note that the term ``final'' comes from economics,
+  where electricity purchased by consumers is 
+  counted in ``final demand.''
+}
+%
+Hydro, solar, and wind are primary energy sources. 
 So are coal, crude oil, and natural gas.
-In contrast, gasoline is a refined fuel. As such, it is the \emph{product} of 
-an industrial process that uses energy.
-We can judge that process on its efficiency and energy return on investment (EROI) --
-see Section \ref{sec:eroi}.
+In contrast, gasoline is a refined fuel. 
+As such, it is the \emph{product} of 
+a refinery that converts crude oil to refined fuels. 
+We can judge the process in a refinery by its efficiency and energy return on investment (EROI).
+(See Section~\ref{sec:eroi}.)
 
 We define a \emph{resource} as a primary input to the economy. 
 As such, a resource is something \emph{extracted} from the natural world.
-It is something provisioned by the ecosystem (to use the language of Section 
-\ref{sec:ecosystem_services}).
+It is something provisioned by the ecosystem, using the language 
+of Section~\ref{sec:ecosystem_services}.
 Timber is a resource. Iron ore is a resource. Water is a resource.
-Each resource can be transformed multiple times \emph{within} the economy.
+Each resource can be transformed many times \emph{within} the economy.
 Timber might become 2$\times$4s, plywood, toothpicks, and mulch.
+**** Maybe need different examples here. Most 2x4s don't end up as toothpicks or mulch. ****
 Iron ore might become steel, then sheet metal, and then a toaster.
 Water might be ice, a sports drink, and Play-Doh.
 *** clarify definition of agriculture.***
-Resources must be extracted before they can be consumed and, following Equation
-\ref{eq:PCbalance}, everything that is extracted is consumed.
+The process of pulling a resource into the economy is called ``extraction.''
+Equation~\ref{eq:PCbalance} indicates that everything that is extracted is consumed.
 
 The $R$ term in the IPARC equation is the resource intensity of the economy.
 $R$ is defined as
@@ -82,7 +97,10 @@ $R$ is defined as
 \end{equation}
 %
 $R$ measures how much of each resource is used by the economy to create
-a single dollar of GDP.
+a single dollar of value, measured by GDP.
+Because the numerator and denominator of $R$ have different units,
+$R$ is an \emph{intensity}.
+
 Figure~\ref{fig:total_material_use} shows rates of consumption of natural resources
 aggregated into important categories of biomass, ores and industrial minerals, and 
 construction minerals.
@@ -302,7 +320,7 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
   ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.05))) +
   viridis::scale_fill_viridis(discrete = TRUE) + 
   ggplot2::labs(x = NULL,
-                y = "Proportion of sustainable \n consumption or emission [%]") +
+                y = "Proportion of sustainable\nconsumption or emission [%]") +
   
   MKHthemes::xy_theme() + 
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
