@@ -31,26 +31,26 @@ As such, the economy exhibits characteristics of a metabolism:
 it ingests materials and emits wastes.
 These characteristics of the economic metabolism are captured by the
 final term in Equation~\ref{eq:IPARC},
-the \emph{environmental \textbf{contamination intensity} of resource extraction and consumption} ($C$).
+the environmental \emph{contamination intensity} of resource extraction and consumption ($C$).
 $C$ is a function of $R$ (resource extraction and consumption) discussed in 
 Chapter~\ref{chap:resource_intensity} in that the 
-type and intensity of contamination is directly related to the types, quantities, 
-and processing of resources. 
+type and intensity of contamination is directly related to 
+the types, quantities, and processing of resources. 
 %Environmental contamination is discussed in this chapter.
-In some sense, $R$ represents the inputs to the economy 
+$R$ represents the inputs to the economy 
 (``food'' in the metabolic analogy) and 
 $C$ represents the economy's excreted wastes.
-We say ``represents'' and not ``is'' because both terms are \emph{normalized} to
-a single dollar of GDP.
+% We say ``represents'' and not ``is'' because both terms are \emph{normalized} to
+% a single dollar of GDP.
 
 $C$ is defined as
 %
 \begin{equation}\label{eq:R}
-  C = \frac{\textrm{impacts produced}}{\textrm{resources extracted to make \$1 GDP}} \; .
+  C = \frac{\textrm{total impacts produced}}{\textrm{total resources extracted}} \; .
 \end{equation}
 Note that ``impacts'' are plural.
-Extracting and consuming all the resources necessary to make a dollar of GDP will have effects
-on air, water, species diversity, land, and human communities.
+Extracting and consuming all the resources necessary to make the economy run 
+will have effects on air, water, species diversity, land, and human communities.
 (If you are comfortable with matrix notation, $C$ can be though of as a matrix with
 impacts in columns and resources in rows.)
 
@@ -98,26 +98,30 @@ specific examples of environmental contamination caused by resource extraction a
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 As discussed in Chapter~\ref{chap:resource_intensity},
-energy is the prime example of material extraction and consumption.
+the prime example of resource extraction and consumption is energy.
 Because CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of}
 are a significant source of environmental contamination
 coming from energy consumption,
-it follows that CO$_2$ emissions are the prime example of 
-environmental contamination intensity of resource extraction and consumption.
-Specifically, the prime example for contamination intensity ($C$ in Equation~\ref{eq:IPARC})
-is the CO$_2$ intensity of energy.
-The units for the CO$_2$ intensity of energy are,
+it follows that the prime example of 
+environmental contamination intensity of resource extraction and consumption
+($C$ in Equation~\ref{eq:IPARC}) is CO$_2$ emissions.
+Specifically, the prime example for contamination intensity ($C$)
+is the CO$_2$ intensity of energy, $I_{CO_2}$.
+The units for $I_{CO_2}$ are,
 for example, tonnes of CO$_2$ emitted per MJ of energy consumed.
 
-Figure~\ref{fig:LLNL_CO2_sankey} is a Sankey\index{Sankey diagram!CO$_2$ emissions} diagram of
-sources of CO$_2$ emissions from the U.S.\ economy in 2018.
+Figure~\ref{fig:LLNL_CO2_sankey} is a Sankey\index{Sankey diagram!CO$_2$ emissions} 
+diagram of sources of CO$_2$ emissions from the U.S.\ economy in 2018.
 However, in Figure~\ref{fig:LLNL_CO2_sankey} CO$_2$ emissions
-from electricity generation are not attributed to end uses for electricity.
-Table~\ref{tab:corrected_co2_emissions} shows the result of attributing CO$_2$ emissions to end uses,
+from electricity generation stop at generation and are not attributed to those
+who use the electricity, such as residential and commercial.
+Table~\ref{tab:corrected_co2_emissions} shows the result of attributing 
+CO$_2$ emissions to end uses,
 thereby completing the picture of U.S.\ carbon emissions.\index{carbon dioxide (CO$_2$)!emissions of}
-Attributing CO$_2$ emissions from electricity generation
-to end uses significantly increases the share of CO$_2$
-emissions from the residential and commercial sectors.
+Attributing CO$_2$ emissions in this way 
+makes it clear that the residential and commercial sectors
+are actually responsible for a larger share of CO$_2$ emissions than 
+Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
 
 \begin{figure}
 \centering
@@ -178,7 +182,7 @@ When the world transitioned away from traditional biofuels toward fossil fuels,
 the carbon intensity of energy rose.
 
 
-<<CarbonIntensityGraph, fig.cap="Carbon intensity of energy, $C$ in the IPARC identity. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
+<<CarbonIntensityGraph, fig.cap="Carbon intensity of energy, $I_{CO_2}$. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 carbon_intensity <- dplyr::inner_join(
   CO2_emissions,
   primary_energy %>%
@@ -193,7 +197,7 @@ carbon_intensity %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_intensity_Mt_per_EJ")) +
   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
   ggplot2::labs(x = NULL,
-                y = expression("Carbon intensity of energy (C) [Mt "*CO[2]/EJ*"]")) +
+                y = expression("Carbon intensity of energy [Mt "*CO[2]/EJ*"]")) +
 
   MKHthemes::xy_theme()
 @
@@ -208,19 +212,19 @@ Equation~\ref{eq:IPARC} shows that reducing any of the right-hand side terms to 
 will eliminate CO$_2$ emissions.
 That is, if population ($P$), 
 affluence ($A$),
-energy intensity of the economy ($I_p$, the prime example for $R$)
-\textbf{or} carbon intensity of energy (the prime example for $C$)
-go to 0,
+energy intensity of the economy ($I_{ep}$, the prime example for $R$)
+\emph{or} carbon intensity of energy $I_{CO_2}$ (the prime example for $C$)
+go to zero,
 CO$_2$ emissions will be eliminated.
 Few people want to reduce population ($P$) or affluence ($A$).
-The primary energy intensity of the economy ($R$) is declining
+The primary energy intensity of the economy, $I_{ep}$, is declining
 (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}),
 but not as fast as population (Figure~\ref{fig:PopulationGraph})
 and affluence (Figure~\ref{fig:AffluenceGraph-Nordhaus}) are growing.
 By the process of elimination, 
 reducing the carbon intensity of energy is often considered to be the 
 only politically and socially viable way to move in a sustainable direction
-regarding the prime example, energy and CO$_2$ emissions.
+with respect to our prime examples, energy and CO$_2$ emissions.
 (Note that other sustainability issues are likely to remain!)
 
 Figure~\ref{fig:CarbonIntensityGraph} shows that the carbon intensity of energy
@@ -231,7 +235,7 @@ Since 1960, the carbon intensity of energy
 has hovered around 63 Mt CO$_2$/EJ.
 Thus, for the last 60 years, the carbon intensity of energy has been stubbornly constant.
 It appears that eliminating CO$_2$ emissions by significantly reducing
-the carbon intensity of energy ($C$) will be require unprecedented changes
+the carbon intensity of energy ($I_{CO_2}$) will be require unprecedented changes
 to the world's primary supply.
 But how?
 
@@ -247,8 +251,8 @@ transitioning to a low carbon intensity energy supply:
 (b) carbon sequestration;
 (c) biomass; and
 (d) wind, water, and solar (WWS).
-Each option has its own challenges to implementation and 
-none has yet been implemented on large enough scale to reduce CO$_2$ emissions;
+Each option has its own challenges and 
+none has yet been implemented on a large enough scale to reduce CO$_2$ emissions;
 (see Figure~\ref{fig:CarbonEmissionsGraph}).
 The subsections below discuss these options and their implementation challenges.
 
@@ -268,15 +272,16 @@ The CO$_2$ is stored, presumably, in perpetuity in caverns or other underground 
 CCS is not a low-carbon form of energy.
 Rather, CCS is a way to avoid carbon emissions from carbon-based energy production.
 
-There are several challenges associated with carbon sequestration.
-First, existing sequestration technology has not proved cost-effective.  
-Petra Nova, the only CCS plant in the U.S.\, injected CO$_2$ for enhanced oil recovery.
-In 2020, the plant was shut down due to low oil prices, 
-demonstrating the interrelation of the economics among primary energy sources.
+There are several challenges associated with CCS.
+First, it has not been cost-effective.  
+Petra Nova, the only CCS plant in the U.S.\, disposed of the CO$_2$ it captured
+by injecting it into oil fields for enhanced oil recovery.
+In 2020, low oil prices made this disposal infeasible, forcing Petra Nova to shut down.
+This story illustrates the economic interrelation(s) among primary energy sources.
 
-Second, a fossil-fuel power plant fitted with carbon sequestration technology 
-must ensure that the CO$_2$ emissions remains buried. 
-If the CO$_2$ escapes to the atmosphere, the sequestration effort is ineffective.
+Second, a fossil-fuel power plant fitted with CCS technology 
+must ensure that CO$_2$ emissions remain buried. 
+If the CO$_2$ escapes to the atmosphere, the effort is ineffective.
 
 Third, there are limited locations with the required underground geological formations 
 for CCS.
@@ -303,7 +308,7 @@ Unfortunately, if the trees are burned or when they die and decompose,
 the CO$_2$ is returned to the atmosphere.
 
 Alternatively, \emph{direct air capture} extracts CO$_2$ from the atmosphere 
-directly, typically using huge banks of fans and a absorbent.
+directly, typically using huge banks of fans and a adsorbent.
 Direct air capture is extremely energy intensive because of the heat needed
 to regenerate the adsorbents. 
 Additionally, because atmospheric CO$_2$ concentrations are low, massive amounts
@@ -330,23 +335,23 @@ Perhaps, CO$_2$ could be converted to a stable chemical structure such as graphe
 In lieu of extracting CO$_2$ from the atmosphere,
 we could stop emitting CO$_2$ from fossil fuel combustion in the first place!
 One way is to transition away from fossil fuels 
-to the energy mix of the first half of the 18$^\mathrm{th}$ century,
+to the energy mix used in the first half of the 19$^\mathrm{th}$ century,
 namely exclusive use of traditional biofuels (wood and wood products).\index{biofuels}
 (See Figure~\ref{fig:PrimaryEnergyGraph}.)
 However, supplying the energy needs of today's economy would be impossible:
 we don't have enough available arable land
-to grow the required amount of crops for biomass purposes.
+to grow the required amount biomass.
 (Proof of this statement is left for Project P6.\ref{item:biofuel_proof}.)
 Even if there were enough land, growing crops requires unsustainable energy inputs 
-(see Chapter \ref{chap::agriculture}), as well as water and chemical inputs.
+(see Chapter \ref{chap:agriculture}), as well as water and chemical inputs.
 Further, biomass by itself is not electricity or liquid fuel.
 A conversion to biomass for the world's primary energy supply would also require 
 worldwide replacement of today's fossil-fuel-dominated electricity infrastructure
 with a fleet of biomass power plants.
 And conversion to biomass would require build-out of a biomass-to-liquid-fuels conversion 
 infrastructure that does not yet exist.
-Finally, conversion to biomass will be accompanied by a reduction in $EROI$.
-(See Section~\ref{sec:masterE}.)
+Finally, conversion to biomass will be accompanied by a reduction in $EROI$
+(see Section~\ref{sec:masterE}).
 The $EROI$ for fossil fuels is mostly greater than 20 (see Table \ref{tab:eroi}), while
 the $EROI$ for corn ethanol is typically less than 2~\cite{Hammerschlag:2006uf}.
 
@@ -409,6 +414,9 @@ Most of the Americas, Europe, and Asia are already ``tapped out'' regarding hydr
 Today, the potential for hydro is greatest in central Africa.
 The proposed Grand Inga dam in the Democratic Republic of the Congo
 would be the largest dam in the world and could house a 40--70 GW hydro power station.
+Moreover, there are considerable negative environmental and social impacts from 
+hydro projects, such as changes to soil salinity, silting, and the destruction
+of communities located in the proposed reservoir.
 
 Fourth, WWS systems are energy intensive to manufacture.
 So the transition to a WWS future will require significant energy investment
@@ -422,7 +430,7 @@ from today's energy regime to a WWS regime.
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-What about nuclear power?
+\noindent \textbf{What about nuclear power?}
 
 Nuclear power (again, an electricity source only) may provide a bridge to a sustainable future.
 Nuclear power emits little CO$_2$ during plant operation. 
@@ -445,7 +453,7 @@ the topic of an end-of-chapter project.
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-What about offsets?
+\noindent \textbf{What about offsets?}
 
 Carbon offsets are a way to enable carbon emitters to
 pay someone else to sequester or reduce their own carbon emissions.
@@ -606,13 +614,13 @@ Equation~\ref{eq:IPARC_rate_with_numbers} shows that carbon emissions
 (Figure~\ref{fig:CarbonEmissionsGraph})
 are increasing 
 at an average rate of $r_I =$ \Sexpr{rate_to_string(r_I)} from 1800--2019. 
-The declining energy intensity of the economy 
+The declining energy intensity of the economy
 is the only term in the IPARC identity
 putting downward pressure on CO$_2$ emissions ($r_R < 0$).
 All other terms on the right side of Equation~\ref{eq:IPARC_rate_with_numbers}
-are greater than zero and driving CO$_2$ emissions upward.
+are greater than zero and are driving CO$_2$ emissions upward.
 The positive terms represent the sources of our sustainability challenges
-for the prime example:
+for CO$_2$ emissions:
 rising population ($r_P > 0$), 
 rising affluence ($r_A > 0$), and 
 expanded use of fossil fuels ($r_C > 0$).
@@ -623,7 +631,7 @@ trends over shorter periods of time.
 The IPARC identity and 
 the prime example (energy consumption and CO$_2$ emissions)
 show that we are heading in an unsustainable direction,
-as CO$_2$ emissions are accelerating over time.
+because CO$_2$ emissions are accelerating over time.
 In other words,
 Part~\ref{part:IPARC} (Chapters~\ref{chap:planetary_boundaries}--\ref{chap:carbon_intensity})
 has described the \emph{what} of our sustainability challenges.
@@ -662,20 +670,24 @@ many years in education and government led him to quip frequently
 \label{sec:rebound_effect}
 %++++++++++++++++++++++++++++++
 
-When energy efficiency is deployed as a means of reducing CO$_2$ emissions,
-the carbon intensity of energy ($C$ in the IPARC identity) will go down.
-That said, energy efficiency is known to stimulate economic activity 
+% When energy efficiency is deployed as a means of reducing CO$_2$ emissions,
+% the carbon intensity of energy ($C$ in the IPARC identity) will go down.
+Energy efficiency is widely seen as a means of reducing CO$_2$ emissions.
+The thinking goes that either the resource intensity ($R$ in the IPARC identity) 
+or contamination intensity ($C$ in the IPARC identity), or both,
+will go down.
+However, energy efficiency is known to stimulate economic activity 
 by a mechanism called the ``rebound effect,''
 wherein monetary savings (from reduced energy needs)
 are reinvested, causing economic growth.
-The economic growth raises the GDP of an economy,
+Economic growth raises the GDP of an economy,
 so $A$ will increase.
 Whether energy efficiency actually saves energy and actually saves CO$_2$ emissions
 depends on the strength of the rebound effect.
 
 The rebound effect is one example of interactions among the terms of the IPARC identity.
 Policies directed at one term of the IPARC identity
-(in this example, the carbon intensity of energy, $C$)
+(in this example, $R$ and $C$)
 will have effects on other terms of the IPARC identity
 (in this example, affluence, $A$).
 
