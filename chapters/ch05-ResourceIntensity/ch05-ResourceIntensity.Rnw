@@ -73,31 +73,30 @@ In contrast, gasoline is a refined fuel.
 As such, it is the \emph{product} of 
 a refinery that converts crude oil to refined fuels. 
 We can judge the process in a refinery by its efficiency and energy return on investment (EROI).
-(See Section~\ref{sec:eroi}.)
+(See Section~\ref{sec:masterE}.)
 
 We define a \emph{resource} as a primary input to the economy. 
 As such, a resource is something \emph{extracted} from the natural world.
-It is something provisioned by the ecosystem, using the language 
+It is something provisioned by the ecosystem, to use the language 
 of Section~\ref{sec:ecosystem_services}.
 Timber is a resource. Iron ore is a resource. Water is a resource.
 Each resource can be transformed many times \emph{within} the economy.
-Timber might become 2$\times$4s, plywood, toothpicks, and mulch.
-**** Maybe need different examples here. Most 2x4s don't end up as toothpicks or mulch. ****
+Timber might become 2$\times$4s, or plywood, or toothpicks, or mulch.
 Iron ore might become steel, then sheet metal, and then a toaster.
-Water might be ice, a sports drink, and Play-Doh.
-*** clarify definition of agriculture.***
+Water might be ice, a sports drink, or Play-Doh.
+%%%*** clarify definition of agriculture.***
 The process of pulling a resource into the economy is called ``extraction.''
 Equation~\ref{eq:PCbalance} indicates that everything that is extracted is consumed.
 
-The $R$ term in the IPARC equation is the resource intensity of the economy.
+The $R$ term in Equation \ref{eq:IPARC} is the resource intensity of the economy.
 $R$ is defined as
 %
 \begin{equation}\label{eq:R}
-  R = \frac{\textrm{resources extracted}}{\textrm{\$ GDP}} \; .
+  R = \frac{\textrm{total resources extracted}}{\textrm{GDP}} \; .
 \end{equation}
 %
-$R$ measures how much of each resource is used by the economy to create
-a single dollar of value, measured by GDP.
+$R$ measures the total resources used by the economy to create a
+total amount of economic output (measured by GDP).
 Because the numerator and denominator of $R$ have different units,
 $R$ is an \emph{intensity}.
 
@@ -114,11 +113,11 @@ A full accounting of the resource intensity of the economy ($R$)
 yields a long list of numbers, like a huge grocery list,
 each giving the amount of a single resource needed to make \$1 of GDP. 
 This chapter discusses sustainability implications for a few resources,
-with energy providing the prime example at the end. 
+with energy providing the prime example of resource intensity. 
 
 Resource intensity can be measured and quantified at the whole-economy level,
 as in the examples above.
-But resource intensity can also be quantified per economic sector.
+Alternatively, resource intensity can be quantified per economic sector.
 Clearly, the manufacturing sector of the economy requires resources to function.
 Raw materials (such as copper and minerals) are required to make
 finished goods (such as sewing machines and mobile phones).
@@ -174,7 +173,7 @@ per definitions of strong and weak sustainability.
 A criterion for ``strong sustainability'' is 
 extracting and consuming resources 
 at rates slower than their natural regeneration rates.
-
+Thus, \emph{any} consumption of a nonrewable resource is not strongly sustainable.
 
 
 % We can interpret two of Herman Daly's~\cite{Daly1996} criteria
@@ -196,16 +195,17 @@ at rates slower than their natural regeneration rates.
 
 
 The economy, being society's metabolism,\index{economy!as society's metabolism}
-is one aspect of life that also depends on natural resources
+%is one aspect of life that also
+depends on natural resources
 for its survival.
 Indeed, we can say that the economy \emph{runs} on natural resources.\index{resources!natural}
-All goods and the infrastructure for all services depend
-on manufactured objects of all types:
+All goods and the infrastructure for all services depend on
+manufactured objects of all types:
 cars and the roads on which they travel, 
 homes and the utilities that sustain life,
 food and the refrigerators that maintain freshness,
 toilets and the sewer systems that remove wastes.
-Furthermore, the operation of all these systems requires energy.
+Furthermore, the operation of all these systems requires energy, the master resource.
 
 Although any raw material can be essential for a given product,
 the European Commission maintains a list Critical Raw Materials (CRMs)\index{materials!critical!raw}
@@ -257,7 +257,7 @@ By the ``strong sustainability'' criterion,
 \emph{any} extraction of
 construction minerals, ores and industrial minerals, and fossil energy carriers
 is unsustainable, because
-we are extracting these materials at rates which are faster than their regeneration rates.
+we are extracting these materials at rates that are faster than their regeneration rates.
 The fact that we are \emph{increasing} our rate of material extraction 
 means that we are running well afoul of the strong sustainability criterion
 for these materials.
@@ -271,12 +271,12 @@ the extraction rate is less than the growth rate.
 \label{sec:resources_weak_sustainability}
 %++++++++++++++++++++++++++++++
 
-A weak sustainability criterion is that resources are extracted 
-at rates that leave enough time to invent and develop substitutes
-at scale before the resource is depleted. 
+A weak sustainability criterion is that resources are extracted slowly enough
+to invent and deploy substitute(s) at scale before the resource is depleted. 
 A similar weak sustainability criterion can be established for waste:
 wastes should be emitted slowly enough for their accumulation in the environment 
-to pose no problems before we invent and develop remediation technologies at scale. 
+to pose no problems before remediation technologies can be invented and deployed 
+at scale. 
 A time horizon is needed for evaluating the weak sustainability criterion, 
 typically 50 years.
 Thus, extraction of a resource is weakly sustainability so long as 
@@ -290,7 +290,8 @@ the following steps can be performed.
 	
   \item Establish the virgin material stock as of today.
   
-  \item Divide the virgin stock by 50 years to obtain a maximum weakly-sustainable extraction rate.
+  \item Divide the virgin stock by 50 years to obtain a maximum weakly
+  sustainable extraction rate.
   
   \item Find the current rate of extraction and estimate any future increases or decreases
         in the rate of extraction.
@@ -308,8 +309,9 @@ Figure~\ref{fig:PercentageOfSustainable} shows the result of applying
 the weak sustainability analysis approach
 to two chemical elements (zinc\index{zinc (Zn)} and germanium\index{germanium (Ge)}) and
 to worldwide emission of CO$_2$.
-This method shows that the world today is far above 
-weak sustainability levels of consumption and waste emission.
+%This method shows that the world today is far above 
+The world is far above 
+weak sustainability levels of consumption for these two materials and CO$_2$ emission.
 To further underscore the importance of consumption of natural resources to sustainability,
 germanium (now being consumed at twice its sustainable rate)
 is one of the critical raw materials in Table~\ref{tab:CRMs}.
@@ -348,7 +350,8 @@ reduce rates of resource extraction.
 Recycling processes use discarded products as feedstock 
 for processes that regenerate usable products. 
 Examples include paper recycling to pulp and glass recycling to new containers.
-However, recycling requires energy and other natural resources
+However, recycling requires energy 
+and other natural resources
 for transporting used material to recycling centers, 
 processing used material into recycled products, and 
 transporting goods to future users. 
@@ -398,14 +401,14 @@ injection-molded plastics (inexpensive),
 replacing styrofoam hamburger containers (nonrenewable)
 with paper or cardboard wrappings (renewable), and
 use of solar electricity (renewable) instead of coal electricity (nonrenewable).
-
-Recalling one aspect of Herman Daly's definition of sustainability
-(``Nonrenewable resources, such as minerals and fossil fuels, must be used no faster
-than renewable substitutes for them can be put into place''), 
-we see that switching
-from consuming nonrenewable resources 
+% 
+% Recalling one aspect of Herman Daly's definition of sustainability
+% (``Nonrenewable resources, such as minerals and fossil fuels, must be used no faster
+% than renewable substitutes for them can be put into place''), 
+% we see that switching
+Switching from consuming nonrenewable resources 
 to consuming renewable resources
-is an important aspect of sustainability.
+is an important aspect of sustainability -- either the weak \emph{or} the strong version.
 
 That said, it is important to note limits to substitutability.
 At a manufacturing plant, the type of electricity 
@@ -427,11 +430,12 @@ In the age of sail, ships were made of timber, with teak and mahogany being
 favored ship-building woods.
 Today, cargo ships are built of steel and pleasure craft are made almost exclusively
 of glass-fiber reinforced polymer composites.
-Today, teak and mahogany are too expensive for shipbuilding,
+Teak and mahogany are now too rare and too expensive for shipbuilding,
 both in terms of material cost and 
 labor cost.
-As often happens, flooding the market with less-expensive vessels 
+As often happens, the ready availability of less-expensive vessels 
 means that many more boats are purchased and used. 
+
 The second example involves lighting. 
 Societies have moved from wax candles and whale oil lanterns to ``town gas,''  
 kerosene, and finally, electric lights.
@@ -442,7 +446,7 @@ meets the strong sustainability criterion.
 However, all wood ships, wax candles, whale oil lanterns, town gas lamps, and 
 kerosene lamps have all proved to be weakly sustainable.  
 We found substitutes for the natural resources 
-in a reasonable timeframe and 
+in a reasonable time frame and 
 before the natural resources were depleted.
 
 
@@ -460,7 +464,7 @@ for any material transformation,
 for consuming goods and services, and 
 for disposing of goods.
 Second, energy is fungible.
-Within the limits of the second law of thermodyanmics, 
+Within the limits of the second law of thermodynamics, 
 energy in one form can be converted to energy in another form
 using machines.
 An automobile converts chemical potential energy (gasoline)
@@ -468,7 +472,7 @@ to kinetic energy (car motion).
 A hairdryer converts electricity (from the grid)
 to heat (applied to hair).
 A solar panel converts solar energy (from the sun)
-to electricity (for use in many devices, including, possibly hair dryers).
+to electricity (for use in many devices, including, possibly, hair dryers).
 
 Because energy is the ultimate resource,\index{energy!as ultimate resource} 
 we use energy as the prime example in the IPARC equation (Equation~\ref{eq:IPARC}).
@@ -533,7 +537,7 @@ primary_energy %>%
 To assess the second question (are we using energy at a sustainable rate?), 
 see Figure~\ref{fig:PrimaryEnergyGraph}, 
 which shows global primary energy consumption through time.
-*** is this a strong or weak sustainability statement/question? ****
+%*** is this a strong or weak sustainability statement/question? ****
 The increasing consumption of primary energy supports, in part, greater population,
 as shown in Figure~\ref{fig:PopulationGraph}.
 However, on a per-capita basis,
@@ -544,9 +548,9 @@ beneath their regeneration rate,
 none of the fossil fuels shown in Figure~\ref{fig:PrimaryEnergyGraph}
 are being consumed at a sustainable rate.
 Table~\ref{tab:weak_sustainability_calcs} shows that 
-by the weak sustainability criterion of Graedel and Allenby,
+by the weak sustainability criterion, % of Graedel and Allenby,
 coal and natural gas (barely) are being consumed at a sustainable rate.
-Oil is not being consumed at a sustainable rate. 
+Oil is not being consumed at an (even weakly) sustainable rate. 
 
 
 <<EnergyPerPersonGraph, fig.cap="World primary energy consumption per person. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times C$ in the IPARC equation (Equation \\ref{eq:IPARC}) for the prime example of energy.">>=
@@ -625,12 +629,12 @@ print(xtable::xtable(weak_sust_energy_data,
 
 Continuing the \href{https://en.wiktionary.org/wiki/explication}{explication}
 of the IPARC identity, 
-we form a term for the primary energy intensity ($I_{ep}$) of the world economy
-as an example for resource intensity of the economy ($R$).
+one piece or facet of resource intensity of the economy ($R$)
+is the primary energy intensity ($I_{ep}$) of the world economy.
 $I_{ep}$ is the amount of primary energy required to create one unit (dollar) of
 world GDP. 
 Of course, many other resources are \emph{also} required to create a unit of GDP
-but we use energy as the prime example.
+but we use energy as the prime example of an important resource in the economy.
 The energy intensity of the economy is formed
 by dividing primary energy consumption ($E_p$) 
 by world GDP,
@@ -712,13 +716,12 @@ energy_intensity %>%
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that
 the primary energy intensity of the world economy ($I_{ep}$) has fallen from 
 15 to 4 MJ/2017 international dollar across the last two centuries. 
-*** trillion? ***
 The decline is caused by the fact that the world economy's GDP 
 (Figure~\ref{fig:GDPGraph-Nordhaus}) 
 has been growing at a faster rate (in \%/year terms) than primary energy consumption 
 (Figure~\ref{fig:PrimaryEnergyGraph}).
-**** Innovation, in the form of energy efficiency,
-has lead to greater economic productivity, that is economic growth. ****
+Innovation, in the form of energy efficiency,
+has lead to greater economic productivity, that is economic growth.
 
 One reason that we are interested in the energy intensity of the economy is that 
 energy use is a source of CO$_2$ emissions.
@@ -777,6 +780,11 @@ Ecological Engineering, 2014 \cite{Brown2014}
 
 US Geological Survey, National Minerals Information Center \url{www.usgs.gov/centers/nmic}.
 
+The Technology Connections YouTube channel has three videos on the history of 
+combustion-based lighting technology, dated 
+\href{https://www.youtube.com/watch?v=tURHTuKHBZs}{June 16, 2021},
+\href{https://www.youtube.com/watch?v=F3rncxf4Or8}{July 1, 2021}, and
+\href{https://www.youtube.com/watch?v=D_qFWoa_HR4}{August 2, 2021}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
@@ -806,7 +814,7 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         What are the implications of not applying the strong sustainability 
         criterion universally to all resources?
   
-  \item Why is the Graedel and Allenby (weak) sustainability criterion a good criterion?
+  \item Why is the weak sustainability criterion a good criterion?
         What are the drawbacks to weak sustainability criteria?
         What is the basis for your judgement?
         
@@ -871,7 +879,7 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
   %       goods. How would you approach weighing the pros and cons of such a tax?
        
   \item The weak sustainability criterion in Section 
-        \ref{sec:resources_weak_sustainability} is predicated (per Daly) on
+        \ref{sec:resources_weak_sustainability} is predicated on
         renewable substitutes being found for nonrenewable resources. 
         % Discuss the rates of adoption of renewable replacements for the materials
         % in Table~\ref{tab:CRMs}. 
@@ -981,7 +989,7 @@ US Geological Survey, National Minerals Information Center \url{www.usgs.gov/cen
         Do the weak sustainability estimates 
         of Table~\ref{tab:weak_sustainability_calcs} change? 
 
-  \item Compare the weak sustainability approach advocated by Graedel and Allenby
+  \item Compare the weak sustainability approach %advocated by Graedel and Allenby
         to the methods of David Rutledge~\cite{Rutledge:tv}\index{Rutledge, David}.
         Which produces better estimates of the time to exhaust nonrenewable resources?
         Why?
