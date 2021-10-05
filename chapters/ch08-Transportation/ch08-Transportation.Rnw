@@ -150,7 +150,7 @@ at the macro level~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportat
 The tight links between transportation and economic growth
 are one reason that economic growth and energy consumption are correlated.
 
-<<TSI, fig.cap="Seasonally-adjusted transportation index data for freight, passenger, and overall services. Source: Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.">>=
+<<TSI, fig.cap="Seasonally-adjusted transportation index data for freight, passenger, and overall services. January 2005--December 2007 are highlighted with vertical lines. Source: Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.">>=
 TSI <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Transportation_Services_Index_and_Seasonally-Adjusted_Transportation_Data.xlsx"),
                                        sheet = "data to plot") %>% 
   dplyr::rename(
@@ -158,16 +158,24 @@ TSI <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets
     Passenger = Passenger_TSI, 
     Overall = TSI
   ) %>% 
-  tidyr::pivot_longer(cols = c(Passenger, Freight, Overall), names_to = "indicator", values_to = "value")
+  dplyr::mutate(
+    Date = NULL, 
+    Months = NULL,
+    # Overall = NULL
+  ) %>% 
+  tidyr::pivot_longer(cols = -Year, names_to = "indicator", values_to = "value")
 
 TSI %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Date", y = "value", colour = "indicator")) + 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "value", linetype = "indicator")) + 
+  ggplot2::geom_vline(xintercept = 2005, colour = "gray", size = 0.2) +
+  ggplot2::geom_vline(xintercept = 2008, colour = "gray", size = 0.2) +
+  ggplot2::geom_hline(yintercept = 100, colour = "gray", size = 0.2) +
   ggplot2::geom_line() +
   ggplot2::scale_y_continuous(limits = c(0, 150)) +
-  ggplot2::scale_colour_viridis_d(end = 0.85, direction = -1) +
+  ggplot2::scale_linetype_manual(values = c(3, 1, 2)) +
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = "Transportation Services Index", 
-                colour = ggplot2::element_blank()) +
+                y = "Transportation Services Index [2000 = 100]", 
+                linetype = ggplot2::element_blank()) +
   
   MKHthemes::xy_theme()
 @
@@ -216,7 +224,6 @@ The result is rising energy consumption and
 CO$_2$ emissions from commercial last-mile deliveries.
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Transportation sustainability challenges}
 \label{sec:transportation_challenges}
@@ -234,7 +241,14 @@ raise significant health concerns.
 Figure~\ref{fig:transport_GHG_emissions} shows trends of CO$_2$ transportation emissions by mode
 over time.
 Passenger cars are the greatest single cause of CO$_2$ emissions from transportation.
-**** Say more here? ****
+One interesting feature of Figure~\ref{fig:transport_GHG_emissions}
+is the CO$_2$ emissions peaked in 2005, two years before the beginning of the Great Recession (2007--2009).
+The CO$_2$ emissions peak was caused by a combination of factors:
+record-high prices for liquid transportation fuels in the runup to the Great Recession,
+which led drivers to prefer higher-efficiency vehicles, 
+which led to flattening of total CO$_2$ emissions, 
+even as passenger transportation services rose through the 2005--2007 timeframe (Figure~\ref{fig:TSI}.
+
 
 \begin{figure}
 \centering
@@ -504,9 +518,12 @@ data_string <-
 utils::read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = MPG, linetype = Type)) +
+  ggplot2::geom_vline(xintercept = 2005, colour = "gray", size = 0.2) +
+  ggplot2::geom_vline(xintercept = 2008, colour = "gray", size = 0.2) +
   ggplot2::geom_line() +
-  ggplot2::labs(x = element_blank(), y = expression("Miles per gallon")) +
+  ggplot2::labs(x = ggplot2::element_blank(), y = expression("Miles per gallon")) +
   ggplot2::scale_x_continuous(breaks = c(1975, 1980, 1990, 2000, 2010, 2016)) +
+  ggplot2::scale_y_continuous(limits = c(0, NA)) +
   MKHthemes::xy_theme()
 
 @
