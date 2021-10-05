@@ -38,15 +38,15 @@ The U.S.\ transportation sector emits more carbon than any other.
 In addition, transportation CO$_2$ emissions are linked to other sectors.
 For example, household location (Chapter~\ref{chap:households}) 
 determines commuting distances and therefore CO$_2$ emissions for
-trip to work, school, church, and shops.
+trips to work, school, church, and shops.
 
-This chapter, and the two following chapters, will consider the many ways that
+This chapter, and the two following chapters, will consider the many ways in which
 physical location, economic activity, energy, and resources are interrelated.
 This chapter begins by discussing
 demand for transportation services and
 drivers for that demand.
 Thereafter, sustainability challenges for transportation are explained.
-Options for a sustainability transition are explored.
+Next, options for a sustainability transition are explored.
 A summary concludes.
 
 
@@ -210,17 +210,76 @@ and~\ref{fig:tonnekm_by_mode}.
 \label{sec:drivers_of_transportation_demand}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Personal activities that cause demand for transportation services include
+At the macro scale, 
+economic growth is a large driver of demand for transport.
+The U.S.\ Bureau of Transportation Statistics (BTS)
+calculates a monthly ``Transportation Services Index'' (TSI),
+a weighted and indexed measure of
+freight traffic and passenger travel
+that measures transportation services output~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.
+Figure~\ref{fig:TSI} shows the variation of the TSI over time.
+Two patterns emerge:
+(a) the general growth of the economy over time drives ever-growing demand for transportation services and
+(b) a recession (see 2009) and a pandemic (see 2020) are good ways
+to reduce demand for transportation services.
+In fact, the correlation between economic growth and freight transportation growth
+is so tight that the BTS claims that transport is a good indicator for economic activity
+at the macro level~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021tn}.
+
+<<TSI, fig.cap="Transportation services index. Source: Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}">>=
+TSI <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Transportation_Services_Index_and_Seasonally-Adjusted_Transportation_Data.xlsx"),
+                                       sheet = "data to plot") %>% 
+  dplyr::rename(
+    Freight = Freight_TSI, 
+    Passenger = Passenger_TSI, 
+    Overall = TSI
+  ) %>% 
+  tidyr::pivot_longer(cols = c(Passenger, Freight, Overall), names_to = "indicator", values_to = "value")
+
+TSI %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Date", y = "value", colour = "indicator")) + 
+  ggplot2::geom_line() +
+  ggplot2::scale_y_continuous(limits = c(0, 150)) +
+  ggplot2::scale_colour_viridis_d(end = 0.85, direction = -1) +
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = "Transportation Services Index", 
+                colour = ggplot2::element_blank()) +
+  
+  MKHthemes::xy_theme()
+@
+
+
+On the micro scale, 
+personal activities that cause demand for transportation services include
 daily commuting to work and school and
 travel for business and pleasure.
-Figure~\ref{fig:commuting_by_mode} shows the share of commuting distance by mode of transport.
+For daily work commutes, Figure~\ref{fig:commuter_percentage_by_mode}
+shows the percentage of workers that use each mode of transportation.
+The small share of daily commuters who use multi-passenger transportation modes 
+(carpool and mass transit) indicates that large
+energy consumption and CO$_2$ emission savings could be obtained 
+from a commuting mode away from driving alone.
 
-Figures~\ref{fig:passengerkm_by_mode} and~\ref{fig:tonnekm_by_mode}
-show that the oil price spike in the runup to the Great Recession (2006--2008)
-caused drivers to move away from light-duty trucks toward
-passenger cars.
-Notably, drivers seek low-cost alternatives
-in the face of transportation fuel prices spikes.
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{chapters/ch08-Transportation/figures/Figure 2-6 Commute Mode Share 2015.JPG}
+\caption{Percentage of workers using various modes of transportation for commutes to work. Source: Bureau of Transportation Statistics \url{https://www.bts.gov/content/commute-mode-share-2015}.}
+\label{fig:commuter_percentage_by_mode}
+\end{figure}
+
+
+
+
+% An important factor for transportation demand is fuel price. 
+% Figures~\ref{fig:passengerkm_by_mode} and~\ref{fig:tonnekm_by_mode}
+% show that the oil price spike in the runup to the Great Recession (2006--2008)
+% caused drivers to move away from light-duty trucks toward
+% passenger cars.
+% Notably, drivers seek low-cost alternatives
+% in the face of transportation fuel prices spikes.
+
+
+
 
 Commercial and industrial demand for transportation services arises from
 delivery of goods (freight) via supply chains. 
