@@ -226,7 +226,7 @@ In fact, the correlation between economic growth and freight transportation grow
 is so tight that the BTS claims that transport is a good indicator for economic activity
 at the macro level~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021tn}.
 
-<<TSI, fig.cap="Transportation services index. Source: Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}">>=
+<<TSI, fig.cap="Seasonally-adjusted transportation index data for freight, passenger, and overall services. Source: Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}">>=
 TSI <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Transportation_Services_Index_and_Seasonally-Adjusted_Transportation_Data.xlsx"),
                                        sheet = "data to plot") %>% 
   dplyr::rename(
