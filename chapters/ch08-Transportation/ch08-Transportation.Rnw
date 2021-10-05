@@ -33,7 +33,19 @@ This is the second of four chapters in Part~\ref{part:sustainability_challenges}
 to discuss
 areas of life where sustainability challenges are relevant and important.
 This chapter covers transportation.
-The U.S.\ transportation sector emits more carbon than any other.
+
+Today, transportation services are provided by cars, trucks, trains, boats, and planes,
+powered almost exclusively by fossil fuels\index{fossil fuels}.
+Figure~\ref{fig:LLNL_sankey} shows that energy for transportation is 
+supplied almost exclusively by fossil liquid petroleum fuels,
+because of the high energy densities\index{energy density!liquid fuels} of those fuels
+as measured by both energy-to-mass and energy-to-volume ratios.
+The U.S.\ transportation sector emits more carbon than any other, 
+\Sexpr{US_CO2_by_sector %>% 
+dplyr::filter(Sector == "Transportation") %>% 
+magrittr::extract2("Proportion [\\%]") %>% 
+round(1)}~\% 
+of all U.S.\ CO$_2$ emissions.
 (See Table~\ref{tab:corrected_co2_emissions}.)
 In addition, transportation CO$_2$ emissions are linked to other sectors.
 For example, household location (Chapter~\ref{chap:households}) 
@@ -216,17 +228,20 @@ The U.S.\ Bureau of Transportation Statistics (BTS)
 calculates a monthly ``Transportation Services Index'' (TSI),
 a weighted and indexed measure of
 freight traffic and passenger travel
-that measures transportation services output~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.
+that measures transportation services 
+output~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.
 Figure~\ref{fig:TSI} shows the variation of the TSI over time.
 Two patterns emerge:
 (a) the general growth of the economy over time drives ever-growing demand for transportation services and
-(b) a recession (see 2009) and a pandemic (see 2020) are good ways
+(b) a recession (2009) and a pandemic (2020) are good ways
 to reduce demand for transportation services.
 In fact, the correlation between economic growth and freight transportation growth
 is so tight that the BTS claims that transport is a good indicator for economic activity
 at the macro level~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021tn}.
+The tight links between transportation and economic growth
+are one reason that economic growth and energy consumption are correlated.
 
-<<TSI, fig.cap="Seasonally-adjusted transportation index data for freight, passenger, and overall services. Source: Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}">>=
+<<TSI, fig.cap="Seasonally-adjusted transportation index data for freight, passenger, and overall services. Source: Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.">>=
 TSI <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Transportation_Services_Index_and_Seasonally-Adjusted_Transportation_Data.xlsx"),
                                        sheet = "data to plot") %>% 
   dplyr::rename(
@@ -255,10 +270,9 @@ daily commuting to work and school and
 travel for business and pleasure.
 For daily work commutes, Figure~\ref{fig:commuter_percentage_by_mode}
 shows the percentage of workers that use each mode of transportation.
-The small share of daily commuters who use multi-passenger transportation modes 
-(carpool and mass transit) indicates that large
-energy consumption and CO$_2$ emission savings could be obtained 
-from a commuting mode away from driving alone.
+The low share of multi-passenger transportation modes (carpool and mass transit)
+indicates that large energy consumption and CO$_2$ emission savings could be obtained 
+from a society-wide transition to commuting modes different from driving alone.
 
 \begin{figure}
 \centering
@@ -266,9 +280,6 @@ from a commuting mode away from driving alone.
 \caption{Percentage of workers using various modes of transportation for commutes to work. Source: Bureau of Transportation Statistics \url{https://www.bts.gov/content/commute-mode-share-2015}.}
 \label{fig:commuter_percentage_by_mode}
 \end{figure}
-
-
-
 
 % An important factor for transportation demand is fuel price. 
 % Figures~\ref{fig:passengerkm_by_mode} and~\ref{fig:tonnekm_by_mode}
@@ -278,28 +289,178 @@ from a commuting mode away from driving alone.
 % Notably, drivers seek low-cost alternatives
 % in the face of transportation fuel prices spikes.
 
-
-
-
 Commercial and industrial demand for transportation services arises from
-delivery of goods (freight) via supply chains. 
-**** Figure of freight transport demand vs. time. ****
-
+delivery of goods (freight) via supply chains
+as shown in Figure~\ref{fig:tonnekm_by_mode}.
+Consumer demand for freight transport services arises from increased online shopping
+in recent years.
 One of the most important aspects of freight transportation is the 
-``last mile problem''~\cite{World-Economic-Forum:2020wf}.
+``last mile problem''~\cite{World-Economic-Forum:2020wf}, 
+the expensive and time-intensive transport of goods
+on the last leg of their journey to 
+consumers and businesses.
+Typically, the last leg involves moving goods from a distribution center
+to the purchaser.
 The rise of e-commerce has caused unparalleled growth in last-mile transport
 in recent years. 
-The result is rising energy consumption for commercial last-mile deliveries
-and increased urban congestion.  
+The result is rising energy consumption and
+CO$_2$ emissions from commercial last-mile deliveries.
 
-Interestingly,
-Figures~\ref{fig:passengerkm_by_mode} and~\ref{fig:tonnekm_by_mode}
-both show distinctive declines in the demand for transport services from 2009 to 2010,
-an effect of the Great Recession\index{Great Recession}.
-Demand for transportation services correlates with
-economic activity, 
-one reason that economic growth and energy consumption are tightly linked.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Transportation sustainability challenges}
+\label{sec:transportation_challenges}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Sustainability challenges arising from transportation include
+particulate matter (PM) and CO$_2$ emissions, 
+both from burning liquid fossil fuels.
+
+Particulate matter\index{particulate matter}
+emissions from combustion of transportation fuels
+raise significant health concerns.
+**** More here about PM problems. ****
+
+Figure~\ref{fig:transport_GHG_emissions} shows trends of CO$_2$ transportation emissions by mode
+over time.
+Passenger cars are the greatest single cause of CO$_2$ emissions from transportation.
+**** Say more here? ****
+
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch08-Transportation/figures/co2_emissions_by_transportation_mode.pdf}
+\caption{CO$_2$ emissions by transportation mode.}
+\label{fig:transport_GHG_emissions}
+\end{figure}
+
+% <<echo = FALSE>>=
+% 
+% data_string <- "Year	Passenger cars 	Light-duty trucks 	Medium- and Heavy- trucks	Buses	Aircraft	Ships and boats	Rail	Other\n
+% 1990	629	321	230	8	187	44	39	48\n
+% 1991	588	348	225	8	172	40	36	44\n
+% 1992	595	372	235	8	170	49	37	43\n
+% 1993	602	385	248	9	171	47	38	45\n
+% 1994	607	393	264	9	178	48	41	49\n
+% 1995	607	407	275	9	175	58	43	50\n
+% 1996	615	421	287	10	187	54	43	50\n
+% 1997	614	436	301	10	187	39	44	53\n
+% 1998	634	447	314	10	191	33	44	47\n
+% 1999	648	467	332	11	195	29	46	48\n
+% 2000	645	467	346	11	198	60	46	47\n
+% 2001	651	473	344	10	192	42	46	46\n
+% 2002	664	485	358	10	188	47	45	47\n
+% 2003	643	520	354	11	181	37	47	43\n
+% 2004	640	541	366	15	189	40	50	41\n
+% 2005	660	504	396	12	192	45	50	42\n
+% 2006	636	517	406	12	185	48	52	42\n
+% 2007	794	326	431	17	182	54	52	44\n
+% 2008	755	307	414	17	175	45	48	45\n
+% 2009	748	310	375	16	156	38	41	45\n
+% 2010	742	309	386	15	153	44	43	47\n
+% 2011	737	295	384	16	149	46	46	47\n
+% 2012	736	292	384	17	145	39	43	49\n
+% 2013	736	293	390	18	149	39	44	55\n
+% 2014	738	309	402	19	150	28	46	56\n
+% "
+% utils::read.table(text = data_string, sep="\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
+%   tidyr::gather(key = "type", value = "value",
+%                 "Passenger cars", "Light-duty trucks", "Medium- and Heavy- trucks", "Buses", "Aircraft", "Ships and boats", "Rail", "Other")%>%
+% 
+%   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = value, linetype = type, colour=type)) +
+%   ggplot2::geom_line() +
+%   ggplot2::labs(x = ggplot2::element_blank(), y = expression("CO2 by transportation mode")) +
+%   ggplot2::scale_x_continuous(breaks = c(1990, 2000, 2010, 2014)) +
+%   ggplot2::labs(fill = element_blank()) +
+%   MKHthemes::xy_theme()
+% 
+% @
+
+% <<Transportation_Percentages_Mode, echo = FALSE, fig.cap = "Share of commuting distance by mode.", fig.width = 5, fig.height = 2.5>>=
+% transportation_mode <- NULL
+% percentages <- NULL
+% label_ypos <- NULL
+% ang <- NULL
+% # Define this vector of category names (in the order that we want), thereby avoiding retyping later.
+% transp_mode <- c("Drive alone", "Carpool", "Public transit", "Work from home", "Walk", "Motorcycle/bike/other")
+% 
+% # Create a data frame that contains the information for the graph.
+% Transp_Pct <- data.frame(transportation_mode = transp_mode,
+%                          percentages = c(76.4, 9.3, 5.2, 4.6, 2.8, 1.7),
+%                          ang = c(0, 0, 0, -35, -50, -65)) %>%
+%   dplyr::mutate(
+%     transportation_mode = factor(transportation_mode, levels = transp_mode),
+%     label_ypos = 100 - (cumsum(percentages) - percentages/2))
+% 
+% # Make the graph
+% Transp_Pct %>%
+%   ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = percentages, fill = transportation_mode)) +
+%   ggplot2::geom_bar(width = 1, stat = "identity") +
+%   ggplot2::coord_polar("y", start = 0, direction = -1) +
+%   ggplot2::geom_text(mapping = ggplot2::aes(y = label_ypos, label = paste(percentages, "%"), angle = ang),
+%                      color = "white", size = 3) +
+%   ggplot2::labs(x = "", y = "", fill = "") +
+%   MKHthemes::xy_theme() +
+%   ggplot2::theme(axis.text.x = element_blank()) +
+%   ggplot2::theme(axis.text.y = element_blank()) +
+%   ggplot2::theme(axis.ticks = element_blank()) +
+%   ggplot2::theme(panel.border = element_blank()) +
+%   ggplot2::theme(legend.text = element_text(size = 9)) +
+%   ggplot2::theme(legend.key.size = unit(0.3, "cm")) +
+%   ggplot2::theme(plot.margin = unit(c(0,0,0,0),"mm"))
+% @
+
+
+% <<echo= FALSE>>=
+% 
+% data_string<-
+%   "Percentage	Modes\n
+% 76.4	Drive alone\n
+% 9.3	Carpool\n
+% 5.2	Public transport\n
+% 4.6	Work from home\n
+% 2.8	Walk\n
+% 1.7	Motorcycle/bike/other"
+% utils::read.table(text = data_string, sep="\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
+%   dplyr::mutate(
+%     Modes = factor(Modes, levels = c("Drive alone", "Carpool", "Public transportation", "Work from home", "Walk", "Motorcycle/bike/other"))
+%   ) %>%
+%   ggplot2::ggplot()+
+%   ggplot2::geom_bar(ggplot2::aes(y=Percentage, x=Modes, fill = Modes),
+%            stat="identity")+
+%   ggplot2::geom_text(ggplot2::aes(y=Percentage, x=Modes, label=Percentage, group=Modes), color="black")
+% @
+% 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Transportation transitions}
+\label{sec:transport_transitions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To improve the sustainability of the modern transportation system,
+two broad options exist: 
+improving efficiency and 
+transitioning to sustainable fuels.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Efficiency}
+\label{sec:transportation_efficiency}
+%++++++++++++++++++++++++++++++
+
+Vehicle efficiency is usually quantified in distance traveled per volume
+of fuel consumed.\index{efficiency!fuel}\index{efficiency!vehicle}
+Figure~\ref{fig:US_mpg} shows U.S.\ fleet average fuel economy
+over time for cars, trucks, and the overall vehicle fleet.
+
+**** Move elsewhere? ****
+The U.S.\ fleet-average fuel efficiency of cars and trucks has varied 
+significantly over the past few decades.
+(See Figure~\ref{fig:US_mpg}. 
+******** Update and get source. Put in Excel format. ********)
 
 <<US_mpg, fig.cap = "U.S.\\ car and truck fuel efficiency">>=
 data_string <-
@@ -441,170 +602,6 @@ utils::read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactor
 
 @
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Transportation sustainability challenges}
-\label{sec:transportation_challenges}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Today, transportation services are provided by cars, trucks, trains, boats, and planes,
-powered almost exclusively by fossil fuels\index{fossil fuels}.
-Figure~\ref{fig:LLNL_sankey} shows that energy for transportation is 
-supplied almost exclusively by fossil liquid petroleum fuels,
-because of the high energy densities\index{energy density!liquid fuels} of those fuels
-as measured by both energy-to-mass and energy-to-volume ratios.
-Burning liquid fossil fuels for transportation services
-has global warming\index{global warming}
-implications, and
-greenhouse gas~(GHG) emissions\index{emissions!greenhouse gases}
-from transportation are a significant sustainability concern.
-Indeed, Table~\ref{tab:corrected_co2_emissions} shows that U.S.\
-greenhouse gas emissions from transportation comprise
-\Sexpr{US_CO2_by_sector %>% 
-dplyr::filter(Sector == "Transportation") %>% 
-magrittr::extract2("Proportion [\\%]") %>% 
-round(1)}~\% 
-of all U.S.\ CO$_2$ emissions, 
-making transportation the largest emitting sector.
-
-Figure~\ref{fig:transport_GHG_emissions} shows trends of CO$_2$ transportation emissions by mode
-over time.
-Passenger cars are the greatest single cause of CO$_2$ emissions from transportation.
-
-\begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch08-Transportation/figures/co2_emissions_by_transportation_mode.pdf}
-\caption{CO$_2$ emissions by transportation mode.}
-\label{fig:transport_GHG_emissions}
-\end{figure}
-
-% <<echo = FALSE>>=
-% 
-% data_string <- "Year	Passenger cars 	Light-duty trucks 	Medium- and Heavy- trucks	Buses	Aircraft	Ships and boats	Rail	Other\n
-% 1990	629	321	230	8	187	44	39	48\n
-% 1991	588	348	225	8	172	40	36	44\n
-% 1992	595	372	235	8	170	49	37	43\n
-% 1993	602	385	248	9	171	47	38	45\n
-% 1994	607	393	264	9	178	48	41	49\n
-% 1995	607	407	275	9	175	58	43	50\n
-% 1996	615	421	287	10	187	54	43	50\n
-% 1997	614	436	301	10	187	39	44	53\n
-% 1998	634	447	314	10	191	33	44	47\n
-% 1999	648	467	332	11	195	29	46	48\n
-% 2000	645	467	346	11	198	60	46	47\n
-% 2001	651	473	344	10	192	42	46	46\n
-% 2002	664	485	358	10	188	47	45	47\n
-% 2003	643	520	354	11	181	37	47	43\n
-% 2004	640	541	366	15	189	40	50	41\n
-% 2005	660	504	396	12	192	45	50	42\n
-% 2006	636	517	406	12	185	48	52	42\n
-% 2007	794	326	431	17	182	54	52	44\n
-% 2008	755	307	414	17	175	45	48	45\n
-% 2009	748	310	375	16	156	38	41	45\n
-% 2010	742	309	386	15	153	44	43	47\n
-% 2011	737	295	384	16	149	46	46	47\n
-% 2012	736	292	384	17	145	39	43	49\n
-% 2013	736	293	390	18	149	39	44	55\n
-% 2014	738	309	402	19	150	28	46	56\n
-% "
-% utils::read.table(text = data_string, sep="\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
-%   tidyr::gather(key = "type", value = "value",
-%                 "Passenger cars", "Light-duty trucks", "Medium- and Heavy- trucks", "Buses", "Aircraft", "Ships and boats", "Rail", "Other")%>%
-% 
-%   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = value, linetype = type, colour=type)) +
-%   ggplot2::geom_line() +
-%   ggplot2::labs(x = ggplot2::element_blank(), y = expression("CO2 by transportation mode")) +
-%   ggplot2::scale_x_continuous(breaks = c(1990, 2000, 2010, 2014)) +
-%   ggplot2::labs(fill = element_blank()) +
-%   MKHthemes::xy_theme()
-% 
-% @
-
-% <<Transportation_Percentages_Mode, echo = FALSE, fig.cap = "Share of commuting distance by mode.", fig.width = 5, fig.height = 2.5>>=
-% transportation_mode <- NULL
-% percentages <- NULL
-% label_ypos <- NULL
-% ang <- NULL
-% # Define this vector of category names (in the order that we want), thereby avoiding retyping later.
-% transp_mode <- c("Drive alone", "Carpool", "Public transit", "Work from home", "Walk", "Motorcycle/bike/other")
-% 
-% # Create a data frame that contains the information for the graph.
-% Transp_Pct <- data.frame(transportation_mode = transp_mode,
-%                          percentages = c(76.4, 9.3, 5.2, 4.6, 2.8, 1.7),
-%                          ang = c(0, 0, 0, -35, -50, -65)) %>%
-%   dplyr::mutate(
-%     transportation_mode = factor(transportation_mode, levels = transp_mode),
-%     label_ypos = 100 - (cumsum(percentages) - percentages/2))
-% 
-% # Make the graph
-% Transp_Pct %>%
-%   ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = percentages, fill = transportation_mode)) +
-%   ggplot2::geom_bar(width = 1, stat = "identity") +
-%   ggplot2::coord_polar("y", start = 0, direction = -1) +
-%   ggplot2::geom_text(mapping = ggplot2::aes(y = label_ypos, label = paste(percentages, "%"), angle = ang),
-%                      color = "white", size = 3) +
-%   ggplot2::labs(x = "", y = "", fill = "") +
-%   MKHthemes::xy_theme() +
-%   ggplot2::theme(axis.text.x = element_blank()) +
-%   ggplot2::theme(axis.text.y = element_blank()) +
-%   ggplot2::theme(axis.ticks = element_blank()) +
-%   ggplot2::theme(panel.border = element_blank()) +
-%   ggplot2::theme(legend.text = element_text(size = 9)) +
-%   ggplot2::theme(legend.key.size = unit(0.3, "cm")) +
-%   ggplot2::theme(plot.margin = unit(c(0,0,0,0),"mm"))
-% @
-
-
-% <<echo= FALSE>>=
-% 
-% data_string<-
-%   "Percentage	Modes\n
-% 76.4	Drive alone\n
-% 9.3	Carpool\n
-% 5.2	Public transport\n
-% 4.6	Work from home\n
-% 2.8	Walk\n
-% 1.7	Motorcycle/bike/other"
-% utils::read.table(text = data_string, sep="\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
-%   dplyr::mutate(
-%     Modes = factor(Modes, levels = c("Drive alone", "Carpool", "Public transportation", "Work from home", "Walk", "Motorcycle/bike/other"))
-%   ) %>%
-%   ggplot2::ggplot()+
-%   ggplot2::geom_bar(ggplot2::aes(y=Percentage, x=Modes, fill = Modes),
-%            stat="identity")+
-%   ggplot2::geom_text(ggplot2::aes(y=Percentage, x=Modes, label=Percentage, group=Modes), color="black")
-% @
-% 
-
-
-Particulate matter\index{particulate matter}
-emissions from combustion of transportation fuels
-raise significant health concerns as well.
-Furthermore, consumption of nonrenewable fossil fuels for transportation
-has implications for energy resource depletion.
-(See Chapter~\ref{chap:resource_intensity}.)
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Transportation transitions}
-\label{sec:transport_transitions}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-To improve the sustainability of the modern transportation system,
-two broad options exist: 
-improving efficiency and 
-transitioning to sustainable fuels.
-
-
-%++++++++++++++++++++++++++++++
-\subsection{Efficiency}
-\label{sec:transportation_efficiency}
-%++++++++++++++++++++++++++++++
-
-Vehicle efficiency is usually quantified in distance traveled per volume
-of fuel consumed.\index{efficiency!fuel}\index{efficiency!vehicle}
-Figure~\ref{fig:US_mpg} shows U.S.\ fleet average fuel economy
-over time for cars, trucks, and the overall vehicle fleet.
 Truck efficiency has lagged car efficiency by 20--30\% for decades.
 In the 1970s, overall vehicle fleet efficiency was nearly the same as car efficiency,
 because most vehicles on the road were cars.
@@ -614,8 +611,6 @@ is now about midway between car and truck efficiency.
 If the proportion of cars and trucks were the same today as it was in the early 1970s,
 overall vehicle fleet efficiency in the U.S.\ would be about 28~miles/gallon,
 or 16~\% higher than the current value of 24~miles/gallon.
-
-
 
 The most effective way for manufacturers
 to increase vehicle fuel efficiency is to reduce vehicle mass.
