@@ -13,8 +13,8 @@
 Having developed a framework for sustainability thinking in Equation \ref{eq:IPARC}
 and Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity},
 this chapter is the first of four chapters to discuss
-areas of life where sustainability challenges are relevant and important.
-The four ``application areas'' are selected based, in part, on where energy
+``application areas'' where sustainability challenges are relevant and important. 
+The areas are selected based, in part, on where energy
 is used (Figure \ref{fig:LLNL_energy_sankey}), that is, where carbon emissions
 originate (Table \ref{tab:corrected_co2_emissions}).
 This chapter (Chapter~\ref{chap:households}) explores 
@@ -210,7 +210,7 @@ household_energy_by_size %>%
 
 Figure~\ref{fig:NewHousingSize} shows the average floor space \index{households!floor space}
 of new single family homes in the United States between 1971 and 2019.
-The general trend is toward larger homes over time, with recent declines .
+The general trend is toward larger homes over time, with recent declines.
 Taken together, Figures~\ref{fig:EnergyConsAndHomeSize} and~\ref{fig:NewHousingSize}
 would suggest that residential energy consumption per dwelling is rising through time.
 However, per-dwelling energy consumption is rather flat from the 1970 onward,
