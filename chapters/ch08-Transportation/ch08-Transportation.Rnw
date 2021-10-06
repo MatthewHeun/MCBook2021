@@ -95,14 +95,6 @@ passenger_km_by_mode <- readxl::read_excel(file.path("chapters", "ch08-Transport
 
 
 
-% \begin{figure}
-% \centering
-% \includegraphics[width=\figwidth]{chapters/ch08-Transportation/figures/Total_US_tonne-kilometers_of_freight.pdf}
-% \caption{Tonne-kilometers of freight by transport mode.}
-% \label{fig:tonnekm_by_mode}
-% \end{figure}
-
-
 
 <<tonnekm_by_mode, fig.cap="Ton-miles of freight transport by mode, 1980--2018. Source: U.S.\\ Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021vu}.">>=
 tonne_km_by_mode <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Freight_ton_miles.xlsx"), 
@@ -247,7 +239,7 @@ The CO$_2$ emissions peak was caused by a combination of factors:
 record-high prices for liquid transportation fuels in the runup to the Great Recession,
 which led drivers to prefer higher-efficiency vehicles, 
 which led to flattening of total CO$_2$ emissions, 
-even as passenger transportation services rose through the 2005--2007 timeframe (Figure~\ref{fig:TSI}.
+even as passenger transportation services rose through the 2005--2007 timeframe (Figure~\ref{fig:TSI}).
 
 
 \begin{figure}
@@ -257,105 +249,10 @@ even as passenger transportation services rose through the 2005--2007 timeframe 
 \label{fig:transport_GHG_emissions}
 \end{figure}
 
-% <<echo = FALSE>>=
-% 
-% data_string <- "Year	Passenger cars 	Light-duty trucks 	Medium- and Heavy- trucks	Buses	Aircraft	Ships and boats	Rail	Other\n
-% 1990	629	321	230	8	187	44	39	48\n
-% 1991	588	348	225	8	172	40	36	44\n
-% 1992	595	372	235	8	170	49	37	43\n
-% 1993	602	385	248	9	171	47	38	45\n
-% 1994	607	393	264	9	178	48	41	49\n
-% 1995	607	407	275	9	175	58	43	50\n
-% 1996	615	421	287	10	187	54	43	50\n
-% 1997	614	436	301	10	187	39	44	53\n
-% 1998	634	447	314	10	191	33	44	47\n
-% 1999	648	467	332	11	195	29	46	48\n
-% 2000	645	467	346	11	198	60	46	47\n
-% 2001	651	473	344	10	192	42	46	46\n
-% 2002	664	485	358	10	188	47	45	47\n
-% 2003	643	520	354	11	181	37	47	43\n
-% 2004	640	541	366	15	189	40	50	41\n
-% 2005	660	504	396	12	192	45	50	42\n
-% 2006	636	517	406	12	185	48	52	42\n
-% 2007	794	326	431	17	182	54	52	44\n
-% 2008	755	307	414	17	175	45	48	45\n
-% 2009	748	310	375	16	156	38	41	45\n
-% 2010	742	309	386	15	153	44	43	47\n
-% 2011	737	295	384	16	149	46	46	47\n
-% 2012	736	292	384	17	145	39	43	49\n
-% 2013	736	293	390	18	149	39	44	55\n
-% 2014	738	309	402	19	150	28	46	56\n
-% "
-% utils::read.table(text = data_string, sep="\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
-%   tidyr::gather(key = "type", value = "value",
-%                 "Passenger cars", "Light-duty trucks", "Medium- and Heavy- trucks", "Buses", "Aircraft", "Ships and boats", "Rail", "Other")%>%
-% 
-%   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = value, linetype = type, colour=type)) +
-%   ggplot2::geom_line() +
-%   ggplot2::labs(x = ggplot2::element_blank(), y = expression("CO2 by transportation mode")) +
-%   ggplot2::scale_x_continuous(breaks = c(1990, 2000, 2010, 2014)) +
-%   ggplot2::labs(fill = element_blank()) +
-%   MKHthemes::xy_theme()
-% 
-% @
-
-% <<Transportation_Percentages_Mode, echo = FALSE, fig.cap = "Share of commuting distance by mode.", fig.width = 5, fig.height = 2.5>>=
-% transportation_mode <- NULL
-% percentages <- NULL
-% label_ypos <- NULL
-% ang <- NULL
-% # Define this vector of category names (in the order that we want), thereby avoiding retyping later.
-% transp_mode <- c("Drive alone", "Carpool", "Public transit", "Work from home", "Walk", "Motorcycle/bike/other")
-% 
-% # Create a data frame that contains the information for the graph.
-% Transp_Pct <- data.frame(transportation_mode = transp_mode,
-%                          percentages = c(76.4, 9.3, 5.2, 4.6, 2.8, 1.7),
-%                          ang = c(0, 0, 0, -35, -50, -65)) %>%
-%   dplyr::mutate(
-%     transportation_mode = factor(transportation_mode, levels = transp_mode),
-%     label_ypos = 100 - (cumsum(percentages) - percentages/2))
-% 
-% # Make the graph
-% Transp_Pct %>%
-%   ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = percentages, fill = transportation_mode)) +
-%   ggplot2::geom_bar(width = 1, stat = "identity") +
-%   ggplot2::coord_polar("y", start = 0, direction = -1) +
-%   ggplot2::geom_text(mapping = ggplot2::aes(y = label_ypos, label = paste(percentages, "%"), angle = ang),
-%                      color = "white", size = 3) +
-%   ggplot2::labs(x = "", y = "", fill = "") +
-%   MKHthemes::xy_theme() +
-%   ggplot2::theme(axis.text.x = element_blank()) +
-%   ggplot2::theme(axis.text.y = element_blank()) +
-%   ggplot2::theme(axis.ticks = element_blank()) +
-%   ggplot2::theme(panel.border = element_blank()) +
-%   ggplot2::theme(legend.text = element_text(size = 9)) +
-%   ggplot2::theme(legend.key.size = unit(0.3, "cm")) +
-%   ggplot2::theme(plot.margin = unit(c(0,0,0,0),"mm"))
-% @
-
-
-% <<echo= FALSE>>=
-% 
-% data_string<-
-%   "Percentage	Modes\n
-% 76.4	Drive alone\n
-% 9.3	Carpool\n
-% 5.2	Public transport\n
-% 4.6	Work from home\n
-% 2.8	Walk\n
-% 1.7	Motorcycle/bike/other"
-% utils::read.table(text = data_string, sep="\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
-%   dplyr::mutate(
-%     Modes = factor(Modes, levels = c("Drive alone", "Carpool", "Public transportation", "Work from home", "Walk", "Motorcycle/bike/other"))
-%   ) %>%
-%   ggplot2::ggplot()+
-%   ggplot2::geom_bar(ggplot2::aes(y=Percentage, x=Modes, fill = Modes),
-%            stat="identity")+
-%   ggplot2::geom_text(ggplot2::aes(y=Percentage, x=Modes, label=Percentage, group=Modes), color="black")
-% @
-% 
-
-
+It is clear that the transport sector needs to chage
+if we are to become more sustainable. 
+The next section discusses possible transitions
+to achieve more sustainable passenger and freight transport.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -374,15 +271,11 @@ transitioning to sustainable fuels.
 \label{sec:transportation_efficiency}
 %++++++++++++++++++++++++++++++
 
-Vehicle efficiency is usually quantified in distance traveled per volume
-of fuel consumed.\index{efficiency!fuel}\index{efficiency!vehicle}
-Figure~\ref{fig:US_mpg} shows U.S.\ fleet average fuel economy
-over time for cars, trucks, and the overall vehicle fleet.
-
-**** Move elsewhere? ****
+Vehicle efficiency (actually, an ``efficacy'') is usually quantified in distance traveled per volume
+of fuel consumed.\index{efficiency!fuel}\index{efficiency!vehicle}.
 The U.S.\ fleet-average fuel efficiency of cars and trucks has varied 
 significantly over the past few decades.
-(See Figure~\ref{fig:US_mpg}. 
+(See Figure~\ref{fig:US_mpg}.)
 ******** Update and get source. Put in Excel format. ********)
 
 <<US_mpg, fig.cap = "U.S.\\ car and truck fuel efficiency">>=
@@ -548,7 +441,7 @@ In addition to vehicle design, driving habits influence fuel efficiency.
 Gentler driving (less acceleration, minimal dramatic braking) and
 constant speeds (using cruise control\index{cruise control}
 where appropriate)
-lead to improved vehicle efficiency as measured in distance per volume of fuel consumed..
+lead to improved vehicle efficiency as measured in distance per volume of fuel consumed.
 
 Vehicle efficiency, by definition,
 focuses on the efficiency of the vehicle itself.
@@ -560,7 +453,7 @@ is quantified in units of passenger-km/liter or tonne-km/liter
 for passenger transport and freight transport, respectively.
 This simple shift from vehicle efficiency to transport service efficiency
 exposes the opportunity presented by Figure~\ref{fig:commuting_by_mode}.
-When 76.4~\% of all commuting kilometers are taken in single-occupant vehicles,
+When 76.4~\% of all commutes are taken in single-occupant vehicles,
 a simple way to improve transport service efficiency is to increase
 the occupancy rate of vehicles.
 Similarly for freight transport,
@@ -578,7 +471,7 @@ for a fuller discussion of the issues surrounding these concepts.
 \end{mcframe}
 
 A significant challenge to higher occupancy cars and higher capacity trucks
-is known as the \emph{last mile problem}\index{last mile problem},
+is the \emph{last mile problem}\index{last mile problem},
 which refers to the difficulty of distributing goods and services
 the last mile to end users.
 Figure~\ref{fig:last_mile} shows percentages of total delivery cost for several parts of a delivery journey, and
@@ -688,7 +581,7 @@ utils::read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactor
 %..............................
 
 Figure~\ref{fig:auto_gwp} shows two types of environmental impact
-(global warming potenatial\index{global warming potential}
+(global warming potential\index{global warming potential}
 and mineral resource depletion\index{mineral resource deplation})
 across the full life cycle\index{life cycle!automobiles}
 of automobile use,
@@ -772,10 +665,19 @@ will never achieve its potential emissions reductions.
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \url{https://www.transportation-planning.com/quotes.html}
+
+\url{https://ig.ft.com/electric-car/}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
