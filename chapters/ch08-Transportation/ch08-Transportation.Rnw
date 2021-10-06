@@ -225,6 +225,9 @@ Sustainability challenges arising from transportation include
 particulate matter (PM) and CO$_2$ emissions, 
 both from burning liquid fossil fuels.
 
+
+**** History of urban air quality? ****
+
 Particulate matter\index{particulate matter}
 emissions from combustion of transportation fuels
 raise significant health concerns.
@@ -249,10 +252,13 @@ even as passenger transportation services rose through the 2005--2007 timeframe 
 \label{fig:transport_GHG_emissions}
 \end{figure}
 
-It is clear that the transport sector needs to chage
+It is clear that the transport sector needs to change
 if we are to become more sustainable. 
 The next section discusses possible transitions
 to achieve more sustainable passenger and freight transport.
+
+
+**** Embodied energy of roads vs.\ rail. ****
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -612,6 +618,10 @@ miss key differences associated with the production of different vehicle types a
 could lead to misguided comparisons across technologies.''
 
 
+
+**** Resource depletion for batteries. Cobalt, Lithium, etc. ****
+
+
 <<auto_gwp, fig.cap = "Environmental impacts of three different automobiles. Data from~\\citet[Fig.~1]{Hawkins_2012}. GWP is global warming potential; MRD is mineral resource depletion; ICE is internal combustion engine; EV is electric vehicle; Euro indicates the European electricity mix; use phase excludes fuels.">>=
 
 # Add the data from file jiec532-sup-0001-S1.pdf, supplemental information for the Hawkins paper.
@@ -661,6 +671,16 @@ Put another way, an EV that is totaled shortly after manufacture
 will never achieve its potential emissions reductions.
 
 \end{mcframe}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+\label{sec:Ch8_summary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
