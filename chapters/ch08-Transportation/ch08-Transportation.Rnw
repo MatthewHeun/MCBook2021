@@ -619,7 +619,6 @@ could lead to misguided comparisons across technologies.''
 
 
 
-**** Resource depletion for batteries. Cobalt, Lithium, etc. ****
 
 
 <<auto_gwp, fig.cap = "Environmental impacts of three different automobiles. Data from~\\citet[Fig.~1]{Hawkins_2012}. GWP is global warming potential; MRD is mineral resource depletion; ICE is internal combustion engine; EV is electric vehicle; Euro indicates the European electricity mix; use phase excludes fuels.">>=
@@ -736,6 +735,7 @@ will never achieve its potential emissions reductions.
 
 \end{questions}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Projects}\index{projects}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -756,14 +756,27 @@ will never achieve its potential emissions reductions.
       What would be the sustainability and CO$_2$ emissions
       implications of the alternative?
       Compare and contrast.
+      
+\item Research the key natural resources required to make batteries for EVs. 
+      What are the sources for those resources?
+      Under what social and political conditions are the key resources extracted from the environment and
+      processed for inclusion in batteries?
+      What would be the sustainability implications of transitioning all road transport to EVs?
+      
+\item On a mode-by-mode basis, assess the opportunities and barriers for making each 
+      transport mode more sustainable.  
+      Also estimate the costs of transitioning each mode.
+      Compare the costs to the U.S. GDP.
 
 \item Research the term \emph{problem shifting}.
       Identify at least three examples of problem shifting in which
       a ``solution'' to one sustainability challenge
       causes problems of a different sort.
 
-
-
+\item Research a variety of virtual reality systems for their sustainability implications.
+      How do they increase or decrease resource consumption?
+      How do they increase or decrease energy consumption and CO$_2$ emissions?
+      What is the potential for virtual reality to reduce future needs for transportation services?
       
 \end{projects}
 
