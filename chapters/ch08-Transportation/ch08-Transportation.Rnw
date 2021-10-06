@@ -648,14 +648,15 @@ at the expense of depleting the stock of mineral resources,
 a phenomenon known as \emph{problem shifting}\index{problem shifting}.
 
 The sustainability challenges of transportation transitions
-don't end with the GHG emissions/mineral resource depletion tradeoff
+don't end with the tradeoff between GHG emissions and mineral resource depletion 
 discussed above.
 In fact, there is a temporal component that must be examined
 when comparing EVs against ICE vehicles.
-Whether or not GHG emissions are lower for an EV relative to an ICE vehicle depends upon
+Whether or not GHG emissions are lower for an EV compared to an ICE vehicle depends upon
 the service lifetime of the vehicle.
 The benefits of EVs relative to ICE vehicles appear only after tens of thousands of kilometers of service,
-because manufacturing causes a larger fraction of lifetime GHG emissions for EVs than for ICE vehicles.
+because EVs have much greater GHG emissions during manufacturing
+than ICE vehicles.
 Put another way, an EV that is totaled shortly after manufacture
 will never achieve its potential emissions reductions.
 
@@ -686,7 +687,7 @@ will never achieve its potential emissions reductions.
 
 \item In Section~\ref{sec:transportation_efficiency},
       the move from machine efficiency (measured in miles/gallon) to
-      service efficiency (measured in passenger-km/gallon)
+      service efficiency (actually efficacy, measured in passenger-km/gallon)
       revealed insights about the transportation sustainability challenge,
       namely that filling empty seats in cars is a simple and effective form of increasing efficiency.
       Consider a different sustainability challenge besides transportation.
@@ -700,33 +701,18 @@ will never achieve its potential emissions reductions.
       Does the move from from machine efficiency to service efficiency
       suggest new solutions to the sustainability challenge?
 
-\item Energy consumption for last-mile deliveries has been increasing exponentially
-      in recent years. 
-      Research the rates of growth for e-commerce deliveries and the energy/CO$_2$
-      implications of that growth.
-      Now compare to alternatives. 
-      What if every e-commerce delivery recipient drive to a store to buy the same goods.
-      What would be the sustainability and CO$_2$ emissions
-      implications of the alternative?
-      Compare and contrast.
-
-\item Research the term \emph{problem shifting}.
-      Identify at least three examples of problem shifting in which
-      a ``solution'' to one sustainability challenge
-      causes problems of a different sort.
-
 \item Under the right conditions (European electricity mix, 150,000~km service life),
       \citet{Hawkins_2012} show that
       electric vehicles provide GHG emissions reductions relative to internal combustion engine vehicles
       at the expense of increased mineral resource depletion.
-      The GHG emissions/mineral resource depletion tradeoff is an example of a tradeoff that is
+      The tradeoff between GHG emissions and mineral resource depletion is
       nearly impossible to decide on a quantitative or objective basis.
       Indeed, deciding this and similar tradeoffs cannot be divorced
       from human values and value judgments.
       Is it wise to trade reduced GHG emissions
       for increased mineral resource depletion?
       Why or why not?
-      What values are guiding your decision?
+      What values are guiding your answer?
 
 \end{questions}
 
@@ -740,6 +726,24 @@ will never achieve its potential emissions reductions.
       Evaluate whether current consumption rates meet the sustainability criterion of Graedel and Allenby.
       Evaluate whether current consumption rates meet the strong sustainability criterion.
       Provide suggestions for ways to bring consumption rates closer to strong sustainability.
+      
+\item Energy consumption for last-mile deliveries has been increasing exponentially
+      in recent years. 
+      Research the rates of growth for e-commerce deliveries and the energy and CO$_2$
+      implications of that growth.
+      Now compare to alternatives. 
+      What if every e-commerce delivery recipient drive to a store to buy the same goods.
+      What would be the sustainability and CO$_2$ emissions
+      implications of the alternative?
+      Compare and contrast.
+
+\item Research the term \emph{problem shifting}.
+      Identify at least three examples of problem shifting in which
+      a ``solution'' to one sustainability challenge
+      causes problems of a different sort.
+
+
+
       
 \end{projects}
 
