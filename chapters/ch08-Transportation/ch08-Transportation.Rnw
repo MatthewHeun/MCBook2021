@@ -161,7 +161,7 @@ at the macro level~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportat
 The tight links between transportation and economic growth
 are one reason that economic growth and energy consumption are correlated.
 
-<<TSI, fig.cap="Seasonally-adjusted transportation index data for freight, passenger, and overall services. January 2005--December 2007 are highlighted with vertical lines. Source: Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.">>=
+<<TSI, fig.cap="Seasonally-adjusted transportation index data for freight, passenger, and overall services. (2000 = 100) Source: Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.">>=
 TSI <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Transportation_Services_Index_and_Seasonally-Adjusted_Transportation_Data.xlsx"),
                                        sheet = "data to plot") %>% 
   dplyr::rename(
@@ -184,7 +184,7 @@ TSI %>%
   ggplot2::scale_linetype_manual(values = c(Freight = 3, Passenger = 2, Overall = 1)) +
   ggplot2::scale_size_manual(values = c(Freight = 0.5, Passenger = 0.5, Overall = 1)) +
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = "Transportation Services Index [2000 = 100]", 
+                y = "Transportation Services Index [-]", 
                 linetype = ggplot2::element_blank(), 
                 size = ggplot2::element_blank()) +
   
