@@ -10,9 +10,6 @@
 %#############################################################
 \epigraph{There is nothing like staying at home for real comfort.}{Jane Austen}
 
-*** Mention latest RECS in 2015. ****
-
-
 Having developed a framework for sustainability thinking in Equation \ref{eq:IPARC}
 and Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity},
 this chapter is the first of four chapters to discuss
@@ -20,7 +17,8 @@ areas of life where sustainability challenges are relevant and important.
 The four ``application areas'' are selected based, in part, on where energy
 is used (Figure \ref{fig:LLNL_energy_sankey}), that is, where carbon emissions
 originate (Table \ref{tab:corrected_co2_emissions}).
-This chapter (Chapter~\ref{chap:households}) explores implications and applications of sustainability thinking
+This chapter (Chapter~\ref{chap:households}) explores 
+implications and applications of sustainability thinking
 to households.
 Transportation (Chapter~\ref{chap:transportation}), 
 agriculture (Chapter~\ref{chap:agriculture}), and
@@ -88,17 +86,6 @@ in their own home.
 Figure~\ref{fig:average_residential_energy} shows how the average U.S.\ resident
 allocates energy consumption\index{energy consumption!residential}
 for several end uses~\citep[Fig.~3]{EIA_2018}.
-% The end use categories in Figure~\ref{fig:average_residential_energy} illustrate
-% how choices made in households
-% intersect with sustainability topics covered in other chapters, including
-% energy (Chapter~\ref{chap:resource_intensity}) and
-% food (Chapter~\ref{chap:agriculture}).
-% Population (Chapter~\ref{chap:population}),
-% the economy (Chapter~\ref{chap:affluence}),
-% land use and urban planning (Chapter~\ref{chap:land_use_urban_planning}),
-% government (Chapter~\ref{chap:government}), and
-% personal actions (Chapter~\ref{chap:personal_action})
-% also affect household sustainability.
 The end uses in Figure~\ref{fig:average_residential_energy}
 can be aggregated to form fewer categories
 of residential energy consumption.
@@ -115,6 +102,20 @@ Lighting consumes 6.6\% of total household energy use.
 \caption{Average U.S.\ residential energy consumption by end use~\citep[Fig.~3]{EIA_2018}.}
 \label{fig:average_residential_energy}
 \end{figure}
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Much of what we know about residential energy consumption in the U.S.\
+comes from the U.S.\ Energy Information Agency's occasional
+Residential Energy Consumption Surveys (RECS)~\cite{U.S.-Energy-Information-Agency:vd}.
+RECS provides snapshots of residential energy consumption for survey years
+1979, 1980, 1981, 1982, 1984, 1987, 1990, 1993, 1997, 2001, 2005, 2009, and 2015.
+The next results are expected in 2022 for survey year 2020.
+
+\end{mcframe}
+
 
 
 % <<Household-energy-by-end-use, fig.cap = "U.S. final energy consumption by end use 2015.">>=
@@ -351,15 +352,38 @@ Location of a dwelling is also an important determiner of energy consumption,
 not for the dwelling itself, but for energy consumed by the residents for transportation.
 Proximity to work, school, shops, church, and entertainment
 makes a significant difference to transportation energy demand.
+When buying a home, some purchasers can choose among 
+urban, suburban, and rural locations, 
+with important sustainability implications.
+Living in an urban center reduces transport distances and enhances
+quality of life. 
+However, life in the suburbs or in rural areas can be more serene but
+increase fuel use and CO$_2$ emissions for transport. 
 (See Chapter~\ref{chap:transportation} for more information on sustainability issues
 related to transportation.)
 
-**** Urban vs. suburban vs. rural.  ****
+Zooming out, the latitude of the home may make a 
+larger impact on household sustainability
+than the urban/suburban/rural decision.
+Homes at high latitude require heating. 
+Homes at low latitude are often fitted with air conditioning.
+Both heating and air conditioning require energy and, 
+in today's fossil-fuel-powered world,
+cause CO$_2$ to be emitted.
+(See Section~\ref{sec:heating_and_cooling} below.)
+The climate of mid-latitude locations
+can mean \emph{both} heating and air-conditioning are necessary,
+potentially increasing the energy required to operate a home in those locations.
 
-**** Latitude and embodied energy ****
-
-**** Energy retrofit and recommissioning ****
-
+An interesting tradeoff exists between energy (and CO$_2$) embodied in structures
+and energy consumed in daily life.
+A home builder \emph{could} install extra insulation,
+more than local building codes require.
+Doing so \emph{de}creases energy consumption and CO$_2$ emissions 
+while the home is in use.
+However, the home will embody more energy and carbon,
+because many insulation types
+are energy-intensive to manufacture (especially foam). 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -622,6 +646,9 @@ for making homes and apartments more sustainable.
       (purchasing, heating and cooling, hygeine, and lighting).
       What additional areas of household living are important
       from a sustainability point of view?
+      
+\item What ways can you imagine to re-use or recycle water in a home
+      to get closer to a circular economy?
 
 \item What tradeoffs do you observe in daily household living?
       That is, in what areas of household living does sustainability become worse
@@ -648,16 +675,19 @@ for making homes and apartments more sustainable.
       how much energy would you save annually?
       What is the price of that saved energy?
       What is the annual cost savings from this energy efficiency intervention?
-      Assuming that the 98\% AFUE furnace lasts 20 years and that you want to break even financially,
+      Assuming that the 98\% AFUE furnace lasts 20 years and 
+      that you want to break even financially,
       what is the maximum price you should pay for a 98\% AFUE furnace?
 
 \item Locate the air conditioner in you dwelling, and find its SEER.
-      If you were to replace your existing air conditioner with an air conditioner with a SEER of 40
+      If you were to replace your existing air conditioner 
+      with an air conditioner with a SEER of 40
       (near the maximum SEER rating as of this writing),
       how much energy would you save annually?
       What is the price of that saved energy?
       What is the annual cost savings from this energy efficiency intervention?
-      Assuming that the 40 SEER air conditioner lasts 15 years and that you want to break even financially,
+      Assuming that the 40 SEER air conditioner lasts 15 years and 
+      that you want to break even financially,
       what is the maximum price you should pay for a 40 SEER air conditioner?
 
 \item Rank the U-Factor and solar heat gain coefficient (SHGC)
@@ -670,6 +700,13 @@ for making homes and apartments more sustainable.
       the future household in which you want to live.
       What is the size of the dwelling?
       What are its sustainability features?
+
+\item Investigate energy retrofitting and recomissioning for buildings.
+      What is the purpose of these activities?
+      How do they contribute to sustainability?
+      What would be the effect on household emissions if every home in the U.S.\
+      were retrofitted with higher-efficiency appliances and more insulation?
+
 
 \end{projects}
 
