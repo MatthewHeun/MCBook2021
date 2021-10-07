@@ -512,7 +512,7 @@ which specifies how AFUE is to be measured~\cite{ASHRAE:vk}.
 All furnaces sold in the U.S.\ have an AFUE rating, and
 a minimum AFUE rating of 80\% is required
 for gas-fired furnaces.\index{furnaces!gas-fired}
-**** Find a good-quality reference for minimum AFUE of 80\% in the U.S. ****
+%**** Find a good-quality reference for minimum AFUE of 80\% in the U.S. ****
 High-efficiency furnaces recover more heat from exhaust gases,
 and some reach AFUE values of 98\% or higher.
 A tradeoff exists between efficiency and initial cost.
@@ -643,7 +643,8 @@ for making homes and apartments more sustainable.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Living Building Challenge \url{https://living-future.org/lbc/}
+Living Building Challenge \url{https://living-future.org/lbc/} \\
+One Watt Initiative
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
@@ -669,6 +670,31 @@ Living Building Challenge \url{https://living-future.org/lbc/}
       also a Kentucky bluegrass farmer?
       What are the benefits and drawbacks of this arrangement? 
       What are the sustainability implications of this arrangement?
+      
+\item What are the pros and cons of gardening? Of lawn care? Think, at least,
+      in terms of species diversity, emissions/pollution, resource use, affluence,
+      and social implications.
+      
+\item What are ways to increase people per acre and/or people per dwelling?
+      In what ways are these the same and how are they different?
+      
+\item Externalities are costs born by those who do not receive the benefits of
+      an activity. For example, burning natural gas to heat a home releases CO$_2$
+      (which harms everyone) and reduces the store of natural resources for future
+      generations. Improving a home's energy efficiency, by reducing these externalized
+      costs, improves the well being of everyone. Thus, ``all'' of us stand to 
+      benefit from energy efficiency. What are some ways to provide resources 
+      for deep energy retrofits for those that otherwise couldn't afford to do so?
+      What might be the (perhaps unforeseen) consequences or ramifications of 
+      such a plan? How could those ``side effects'' be mitigated?
+      
+\item Examine your use of in-home appliances and resources. Do you leave lights on?
+      Leave the water running when you brush your teeth? Wash dishes by hand? 
+      Leave computers or entertainment systems in ``standby'' mode when not in 
+      use (see ``phantom'' or standby load). 
+      Does your home have a second (or third) refrigerator or freezer?
+      Why do you do these things?
+      What would it take for you to change your behavior?
 
 \end{questions}
 
