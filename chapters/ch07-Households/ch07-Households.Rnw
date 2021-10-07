@@ -10,32 +10,32 @@
 %#############################################################
 \epigraph{There is nothing like staying at home for real comfort.}{Jane Austen}
 
-Having developed a framework for sustainability thinking in Equation \ref{eq:IPARC}
-and Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity},
-this chapter is the first of four chapters to discuss
-``application areas'' where sustainability challenges are relevant and important. 
+Equation \ref{eq:IPARC} and Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity}
+developed a framework for sustainability thinking. 
+This chapter is the first of four chapters to apply that framework to some
+areas of life where sustainability challenges are relevant and important. 
 The areas are selected based, in part, on where energy
 is used (Figure \ref{fig:LLNL_energy_sankey}), that is, where carbon emissions
 originate (Table \ref{tab:corrected_co2_emissions}).
 This chapter (Chapter~\ref{chap:households}) explores 
 implications and applications of sustainability thinking
-to households.
+to dwellings.
 Transportation (Chapter~\ref{chap:transportation}), 
 agriculture (Chapter~\ref{chap:agriculture}), and
 land use and urban planning (Chapter~\ref{chap:land_use_urban_planning})
 are the subjects of the next three chapters.
-The structure of each chapter in Part \ref{part:sustainability_challenges} is similar:
+The structure of each of the chapters in Part \ref{part:sustainability_challenges} is similar:
 First, the importance of that area of life to sustainability is discussed.
 Next, technical details about sustainability in that area of life are explored.
 Finally, a summary provides pointers to other chapters 
-where personal or collective actions relevant to that area of life are presented
+where personal or collective actions relevant to that area of life are presented.
 
 In this chapter, we begin by discussing
 the importance of households for sustainability.
 It is noted that where and how you live \emph{might} be
 the area of your life over which you have the most control.
 Thereafter, technical details in four areas of household sustainability are covered:
-purchasing and renting, 
+single or multiunit dwellings, %purchasing and renting, 
 heating and cooling, 
 hygiene, and 
 lighting.
@@ -53,7 +53,7 @@ For example, Figure~\ref{fig:LLNL_energy_sankey} shows that
 11.9~quads of energy are consumed in U.S.\ residences annually,
 representing 12\% of final energy consumption.
 Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
-from the residential sector come to 
+from the residential sector total 
 \Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Gt/year,
 predominantly from electricity and natural gas.\index{electricity!consumption!households}
 Energy consumption is the source of sustainability impacts
@@ -154,8 +154,8 @@ lighting.
 \label{sec:purchasing_and_renting} \index{households!purchasing and renting}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Many aspects of purchasing or renting a residence
-have sustainability implications, size and location chief among them.
+Many aspects of purchasing or renting a residence have sustainability implications.
+The most important are size and location.
 
 
 %++++++++++++++++++++++++++++++
@@ -213,11 +213,11 @@ of new single family homes in the United States between 1971 and 2019.
 The general trend is toward larger homes over time, with recent declines.
 Taken together, Figures~\ref{fig:EnergyConsAndHomeSize} and~\ref{fig:NewHousingSize}
 would suggest that residential energy consumption per dwelling is rising through time.
-However, per-dwelling energy consumption is rather flat from the 1970 onward,
-with increased energy efficiency of appliances and building envelope improvements
-offsetting rising home sizes.
-That said, total residential energy consumption is rising,
-due to increasing numbers of dwellings.
+However, per-dwelling energy consumption has been rather flat from the 1970 onward.
+The increased energy efficiency of appliances and improvements to building envelopes 
+have offset rising home sizes.
+That said, \emph{total} residential energy consumption has increased,
+due to an increase in the total number of dwellings.
 Figures~\ref{fig:AverageHouseholdEnergyConsumption}
 and~\ref{fig:TotalHouseholdEnergyConsumption}
 show these trends.
@@ -260,7 +260,7 @@ average_household_energy_consumption %>%
    ggplot2::scale_x_continuous(limits = c(1980, 2020), breaks = seq(1980, 2020, by = 10)) +
    ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 120, by = 20)) +
    ggplot2::labs(x = ggplot2::element_blank(),
-                 y = "U.S. household energy consumption\nand number of housing units") +
+                 y = "Average household energy consumption\nand number of housing units in the U.S.") +
    MKHthemes::xy_theme() + 
    # Move the facet labels out of the graphs slightly.
    ggplot2::theme(strip.text.y = ggplot2::element_text(margin = ggplot2::margin(l = 2.0)))
@@ -337,10 +337,9 @@ From a sustainability point of view,
 smaller, more-efficient homes with larger numbers of occupants
 are preferred.
 However, trends suggest that although homes are becoming more efficient,
-there are more homes, 
+there are more of them, 
 they are becoming larger, and
-they have fewer occupants
-over time.
+they have fewer occupants on average.
 
 
 %++++++++++++++++++++++++++++++
@@ -349,16 +348,17 @@ over time.
 %++++++++++++++++++++++++++++++
 
 Location of a dwelling is also an important determiner of energy consumption,
-not for the dwelling itself, but for energy consumed by the residents for transportation.
+not just for the dwelling itself, but also for energy consumed by the residents
+for transportation.
 Proximity to work, school, shops, church, and entertainment
 makes a significant difference to transportation energy demand.
 When buying a home, some purchasers can choose among 
 urban, suburban, and rural locations, 
 with important sustainability implications.
-Living in an urban center reduces transport distances and enhances
-quality of life. 
-However, life in the suburbs or in rural areas can be more serene but
-increase fuel use and CO$_2$ emissions for transport. 
+Living in an urban center can reduce average transport distances. 
+% and enhances quality of life. 
+Conversely, living in the suburbs or in rural areas can mean
+increased fuel use and CO$_2$ emissions for transport. 
 (See Chapter~\ref{chap:transportation} for more information on sustainability issues
 related to transportation.)
 
@@ -412,10 +412,10 @@ Figure~\ref{fig:average_residential_energy} shows that
 on average across the U.S.
 thermal comfort\index{thermal comfort}
 is provided
-by **** 36.6\% **** of all residential energy consumption.
+by 36.6\% of all residential energy consumption. %**** 36.6\% **** why all the extra asterisks?
 Like all energy consumption,
-energy consumption for heating and cooling has sustainability implications.
-(See Chapter~\ref{chap:resource_intensity}.)
+energy consumption for heating and cooling has sustainability implications
+(see Chapter~\ref{chap:resource_intensity}).
 Greater efficiency can provide the same thermal comfort
 with less energy consumed.
 Increased residential heating and cooling 
@@ -424,7 +424,7 @@ efficiency\index{efficiency!heating and cooling!residential}
 can be obtained
 by improving the building envelope or
 by improving the efficiency of furnaces and air conditioners.
-
+% ****** not all home heating systems are furnaces.
 
 %++++++++++++++++++++++++++++++
 \subsection{Building envelope}
@@ -448,9 +448,15 @@ The effectiveness of roof and wall insulation\index{insulation}
 is quantified by its R-value\index{R-value},
 a measure of the resistance to heat transfer through the insulation material
 quantified in units of hr-ft$^2$-\degF/BTU.
-Higher R-values are better.
+Higher R-values mean less heat is transferred.
 Large R-values are achieved with
 thicker insulation constructed from low-thermal-conductivity materials.
+Halving the amount of heat that passes means doubling the thickness of the 
+insulation.
+Thicker and thicker layers of insulation are needed to obtain ever-smaller 
+fractions of heat transfer reduction. 
+Thus, we see that insulation is subject to diminishing returns in its effectiveness
+and there is a practical and economic optimum level of insulation.
 The Energy Star program recommends levels of roof, wall, and
 floor insulation~\cite{U.S.-Department-of-Energy:aa}.
 In Northern US climates, R-values of 49--60 hr-ft$^2$-\degF/BTU are recommended.
@@ -523,7 +529,7 @@ Air conditioners cool and dehumidify indoor air
 to provide thermal comfort\index{thermal comfort}
 to building occupants in summer.
 Most air conditioners consume electricity to perform their cooling function, 
-causing CO$_2$ to emitted from grid-connected fossil fuel power plants. 
+causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants. 
 The energy efficiency of air conditioners\index{efficiency!air conditioners}
 is quantified by the
 Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio (SEER)}
@@ -535,16 +541,19 @@ Larger SEER values indicate higher efficiency.
 As of 2015, U.S.\ air conditioners must adhere to regionally dependent efficiency standards.
 In the southwest, a minimum SEER value of 14 BTU/W-hr is required.
 In other parts of the U.S., a minimum SEER value of 13 BTU/W-hr is mandated.
-**** Find a reference for these SEER numbers. ****
-
+%**** Find a reference for these SEER numbers. ****
+% See email.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hygiene}
 \label{sec:hygiene}\index{hygiene}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Hygiene is a significant consumer of household energy and water
+Households consume significant energy and water
 for showers, dish washers, toilets, and clothes washers and dryers.
+Collectively, these activities may be categorized as ``hygiene.''
+%Hygiene is a significant consumer of household energy and water
+
 
 To minimize environmental impacts of showering and dish washing,
 low-flow showerheads\index{showerheads!low-flow} and faucets\index{faucets}
@@ -586,16 +595,16 @@ using a cold-water cycle, and line drying clothes.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Indoor lighting provides illumination for rooms,
-typically by consuming electricity and emitting CO$_2$ if fossil sources are used.
+typically by consuming electricity and emitting CO$_2$ if fossil-fuel sources are used.
 After Edison's invention of the electric light,
 filament-based incandescent lighting technology\index{lamps!electric!incandescent}
 dominated household lighting.
 However, in recent years,
 Compact Fluorescent Lights (CFLs)\index{lamps!electric!compact fluorescent (CFL)} and
-Light Emitting Diode (LED)\index{lamps!electric!light emitting diode (LED)}
+Light-Emitting Diode (LED)\index{lamps!electric!light emitting diode (LED)}
 lamps have revolutionized
 the lighting industry and improved lighting efficiency significantly.
-LED lamps are 6--10 times more efficient than incandescent lighting.
+LED lamps are 6--10 times more efficient than incandescent lighting. % **** citation needed.
 In addition, LED lamps promise much longer lifetimes,
 with more than 10 times longer service per bulb than incandescents.
 Both higher efficiency and longer life reduce total cost of ownership
@@ -604,7 +613,7 @@ of LED bulbs compared to incandescent bulbs by nearly two orders of magnitude.
 Of course, the least expensive light is the one you don't have to use at all.
 Building design techniques such as light harvesting\index{light harvesting}
 utilize natural light to the greatest extent possible,
-eliminating the need to consume electricity for artificial indoor lighting.
+reducing the need to consume electricity for artificial indoor lighting.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -634,7 +643,7 @@ for making homes and apartments more sustainable.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+Living Building Challenge \url{https://living-future.org/lbc/}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
@@ -642,8 +651,8 @@ for making homes and apartments more sustainable.
 
 \begin{questions}
 
-\item This chapter covered four important aspects of household sustainability
-      (purchasing, heating and cooling, hygeine, and lighting).
+\item This chapter covered five important aspects of household sustainability
+      (size, location, heating and cooling, hygiene, and lighting).
       What additional areas of household living are important
       from a sustainability point of view?
       
