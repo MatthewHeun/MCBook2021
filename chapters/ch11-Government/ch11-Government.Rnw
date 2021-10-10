@@ -129,7 +129,7 @@ It's found in its budget.}{Brent Toderian}
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/fill_photo_portrait.jpeg}
-         \caption{Suburban grocery store}
+         \caption{Suburban grocery store.}
          \label{fig:suburban_grocery_store}
      \end{subfigure}
         \caption{Comparison of land use densities.}
