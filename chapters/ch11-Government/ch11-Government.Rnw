@@ -5,7 +5,7 @@
 
 
 %#############################################################
-\chapter{Government}
+\chapter{Collective Action}
 \label{chap:government}
 %#############################################################
 \epigraph{The truth about a city's aspirations isn't found in its vision. 
@@ -13,207 +13,36 @@ It's found in its budget.}{Brent Toderian}
 %\epigraph{Show me the incentive and I will show you the outcome}{Charlie Munger}
 
 
-one edit
-
-This is the first of two chapters on actions to address sustainability challenges.
-This chapter discusses actions that may be taken by governments,
-often in the form of regulations or market interventions.
-The next chapter (Chapter~\ref{chap:personal_action}) discusses 
-personal actions to address sustainability challenges. 
-
-Regulatory and law-making bodies exist at all levels of government.
-In the US, laws and regulations are made at
-federal, state, county, and local levels simultaneously.
-Decisions at each of these levels have sustainability implications, because
-governments set the ``rules of the game'' in society.
-Humans cannot change biophysical constraints, but
-our laws and regulations change how societies and their metabolisms
-(their economies) operate.
-
-There are several reasons why laws and regulations have sustainability implications.
-First, the laws and regulations promulgated by governments are not neutral; 
-they affect relationships among 
-individuals, 
-collectives (such as unions and religious organizations), 
-corporations, 
-markets, and 
-the natural world (plants, animals, inanimate things, energy resources, etc.).
-When governments affect these relationships by passing laws and making regulations, 
-sustainability implications emerge.
-For example, if a government sets up a carbon market, 
-it establishes relationships among
-among carbon emitters (corporations, car owners, etc.),
-carbon sequesterers (forest owners), and
-carbon avoiders (solar panel and wind turbine owners), 
-as emitters trade emissions for sequestration or avoidance.
-
-Second, governments themselves are often one of the largest spenders in national economies.
-(Figure here with data on government spending as a fraction of GDP.
-See \url{https://tradingeconomics.com/united-states/government-spending-to-gdp}.)
-As demonstrated by the IPARC identity and discussed in Chapter~\ref{chap:affluence}, 
-all spending in the economy has energy and sustainability implications, 
-because the economy is society's metabolism and
-consumes resources, uses energy, and emits wastes.
-
-Third, because laws and regulations are not neutral,
-they can be considered to be interventions in societal systems.
-In some cases, environmental laws and regulations define 
-or limit what citizens and corporations \emph{cannot} do, 
-e.g., pollute, extract scarce resources, or emit CO$_2$.
-In other cases, laws and regulations define what \emph{must} be done.
-For example, an green energy mandate could require
-30 \% of electricity generated from renewable sources by 2030.
-In still other cases, governments pass laws and set regulations 
-to define \emph{how} things must be done.
-For example, carbon markets and carbon pricing could be mandated for the energy sector
-to control how energy and emissions are exchanged. 
-
-Fourth, in addition to establishing and defining relationships, 
-laws and regulations often establish incentives\index{incentives} for individual actions
-that aggregate to collective, societal action.
-
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-\begin{mcframe}[0.90\textwidth](0.85\textwidth)
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Charlie Munger\index{Munger, Charlie}, vice chairman of Berkshire Hathaway\index{Berkshire Hathaway}, 
-once quipped ``show me the incentives, and I'll show you the outcome.''
-\end{mcframe}
-
-Munger was speaking of financial incentives\index{incentives!financial} and 
-financial outcomes\index{outcomes!financial}.
-But because financial incentives affect financial outcomes, 
-financial incentives affect the economy.
-Because the economy is society's metabolism\index{economy!as society's metabolism},
-all financial incentives created by laws and regulations
-both affect the environment and have sustainability implications.
-So, to the extent that laws and regulations establish financial incentives,
-they have sustainability implications.
-
-Fifth, unintended environmental consequences often emerge
-financial incentives that accompany laws and regulations.
-A classic example of unintended consequences is the 
-tragedy of the commons\index{tragedy of the commons}\index{commons!tragedy of the}.
-The tragedy of the commons describes situations where
-self-interested individuals consume more than their fair share of shared resources, 
-leading to reduced welfare for the group and 
-(if the resource is ``natural'')
-environmental collapse.
-When social constraints are missing and economic regulations eliminated 
-(perhaps in pursuit of ``free market'' principles to stimulate economic growth), 
-overexploitation of natural resources is the result.
-
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-\begin{mcframe}[0.90\textwidth](0.85\textwidth)
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Elinor Ostrum\index{Ostrum, Elinor} won the 2009 Nobel prize in economics 
-for showing that tragedies of the commons 
-can be avoided without top-down regulation or privatization of the resource
-by prudent collaboration within strong societal structures. 
-\end{mcframe}
-
-Sixth, laws and regulations have sustainability implications because
-economies have ``externalities.''
-Tragedies of the commons are 
-one example of the concept of externalities\index{externality}.
-Tragedies of the commons occur when 
-self-interested individuals are not held to account 
-for the environmental degradation they cause.
-I.e., the environmental degradation is ``external'' to the individual actors. 
-Thus, the presence of externalities is an enabling condition for a tragedy of the commons.
-Laws and regulations can be designed to internalize the externalities, 
-thereby forcing the individuals to account (financially) 
-for their effects on shared resources
-before acting in ways that deplete those shared resources.
-Example of regulations that internalize an externality are 
-pollution tariffs and pollution trading schemes.
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Example policies and regulations}
-\label{sec:example_policies_and_regulations}
+\section{PARC terms}
+\label{sec:collective_parc_terms}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In this section, descriptions are provided for common sustainability policies and regulations.
-
-First, green energy mandates require a certain percentage of energy
-(often electricity only)
-to be produced from renewable sources such as wind, solar, and hydro. 
-
+%++++++++++++++++++++++++++++++
+\subsection{Population}
+\label{sec:collective_population}
+%++++++++++++++++++++++++++++++
 
 
 
-Examples:
-
-Green energy mandate
-
-Pollution tariffs
-
-Pollution trading
-
-Cap and trade
-
-Sustainability liens (stay with homes or buildings)
-
-Choosing legislators and lawmakers is done by voting.
-
-Individual action: 
-vote for legislators and lawmakers who understand the dynamics of 
-incentives, outcomes, 
+%++++++++++++++++++++++++++++++
+\subsection{Affluence}
+\label{sec:collective_affluence}
+%++++++++++++++++++++++++++++++
 
 
 
-
-Ideas:
-
-Regulations may include governmental purchasing mandates (buy American, buy green, etc.). 
-
-
+%++++++++++++++++++++++++++++++
+\subsection{Resource intensity of the economy}
+\label{sec:collective_resources}
+%++++++++++++++++++++++++++++++
 
 
 
-Externalities
-
-Property rights
-
-Dynamics of first past the post (CGP Grey)
-
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-\begin{mcframe}[0.90\textwidth](0.85\textwidth)
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-There is a spectrum between government incentives and coercion.
-The area in the middle is interesting. 
-After some time, taking away incentives looks like coercion.
-What is an example policy that is something between incentive and coercion?
-Maybe restricting housing to small apartments, which makes large families less
-feasible/desirable.
-\end{mcframe}
-
-Economic, affluence, and demographic effects of a 40-hour work week.
-Why haven't ``we'' gotten a 30-hour work week (as was at one time predicted)?
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sustainability challenges associated with laws and regulations}
-\label{sec:challenges_government}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Challenges associated with making laws and regulations:
-
-Complexity theory tells us that it is impossible to know all outcomes of system interventions.
-Thus, it is impossible to know the outcomes of laws and regulations.
-
-Complexity theory tells us that all interventions select winners and losers.
-Which aspects of society do we want to win? 
-Which do we want to lose?
-
-Complexity theory tells us that the outcomes of interventions are difficult to predict up front.
-That means sometimes winners and losers will be not who or what we expect at the outset.
-
-Different levels of law- and regulation-making mean that conflicts may arise. 
-But this can also be seen 
-
-In short, governmental laws and regulations obey the law of unintended consequences.
-
-
+%++++++++++++++++++++++++++++++
+\subsection{Carbon intensity of energy}
+\label{sec:collective_carbon_intensity}
+%++++++++++++++++++++++++++++++
 
 
 
@@ -221,30 +50,98 @@ In short, governmental laws and regulations obey the law of unintended consequen
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Bonepile}
+\section{Sustainability challenge areas}
+\label{sec:collective_sustainability_challenge_areas}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Before discussing the role of governments in addressing sustainability challenges,
-we note that sustainability challenges are characterized 
-by sometimes-mysterious interactions among seemingly-unrelated entities,
-such as air, water, plants, animals, food, agriculture, 
-transportation, cities, energy, economy, and government.
-Many of those interactions are highlighted in previous chapters.
+% Single photos should be 16:9.
+% Comparison photos should be square.
+
+%++++++++++++++++++++++++++++++
+\subsection{Housing}
+\label{sec:collective_housing}
+%++++++++++++++++++++++++++++++
+
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch11-Government/photos/Energy_Star.jpeg}
+\caption{Energy star label on a furnace.}
+\label{fig:energy_star}
+\end{figure}
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Transportation}
+\label{sec:collective_transport}
+%++++++++++++++++++++++++++++++
+
+\begin{figure}
+     \centering
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/I-196.jpeg}
+         \caption{Highway interchange.}
+         \label{fig:highway_interchange}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/fill_photo_portrait.jpeg}
+         \caption{Bus depot.}
+         \label{fig:bus_depot}
+     \end{subfigure}
+        \caption{Differences in roadway densities.}
+        \label{fig:collective_transport_photos}
+\end{figure}
+
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Agriculture}
+\label{sec:collective_agriculture}
+%++++++++++++++++++++++++++++++
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\figwidth]{chapters/ch11-Government/photos/E85.jpeg}
+\caption{Ethanol-blended fuel available at the filling station.}
+\label{fig:E85}
+\end{figure}
+
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Land use}
+\label{sec:collective_land_use}
+%++++++++++++++++++++++++++++++
+
+\begin{figure}
+     \centering
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/fill_photo_portrait.jpeg}
+         \caption{Urban shopping district.}
+         \label{fig:urban_shopping}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/fill_photo_portrait.jpeg}
+         \caption{Suburban grocery store}
+         \label{fig:suburban_grocery_store}
+     \end{subfigure}
+        \caption{Comparison of land use densities.}
+        \label{fig:urban_suburban_densities}
+\end{figure}
 
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{The role of government in sustainability transitions}
-\label{sec:government_transitions}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-How can government assist transition to a more sustainable future?
 
-Energy: renewable energy mandates, establish CO2 trading markets, subsidies for building renewable electricity production capacity, rebates for electric vehicles.
 
-Role of government and regulations in assisting transitions
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
@@ -261,15 +158,16 @@ Role of government and regulations in assisting transitions
 
 \begin{questions}
 
-\item Who, in your view, is the government? There can be a spectrum from ``we are
-      all the government. The government is a mechanism for collective action''
+\item Who, in your view, is the government? 
+      There can be a spectrum from ``we are all the government. 
+      The government is a mechanism for collective action''
       to ``the government is an `other' entity with self-interested goals and 
       policies.''
       
 \item Do there exist rights to food? Clean air? Transportation? How far does the 
       right to travel extend? Is there a right to reproduce?
 
-\item US president is proposing a Civilian Climate Corps modeled after the 
+\item The U.S.\ president is proposing a Civilian Climate Corps modeled after the 
       1930s Civilian Conservation Corps. Given what you've learned in this 
       book about the nature, causes, and scope of current environmental 
       problems, what can low-skilled manual labor accomplish?
