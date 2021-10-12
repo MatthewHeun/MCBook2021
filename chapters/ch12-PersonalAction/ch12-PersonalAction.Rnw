@@ -60,7 +60,7 @@ they spring into action because they see others rushing in with water.}
 
 \begin{figure}
 \centering
-\includegraphics[width=\figwidth]{chapters/ch12-PersonalAction/photos/fill_photo_landscape.jpeg}
+\includegraphics[width=\figwidth]{chapters/ch12-PersonalAction/photos/energy_efficient_home.jpeg}
 \caption{Energy-efficient home.}
 \label{fig:energy_efficient_home}
 \end{figure}
@@ -134,7 +134,7 @@ they spring into action because they see others rushing in with water.}
      \hfill
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/fill_photo_portrait.jpeg}
+           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/kentucky_bluegrass.jpeg}
          \caption{Kentucky bluegrass farming.}
          \label{fig:kentucky_bluegrass}
      \end{subfigure}
