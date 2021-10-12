@@ -42,7 +42,7 @@
 
 \newcommand{\degC}{\degree C}
 \newcommand{\degF}{\degree F}
-\newcommand{\figwidth}{0.95\linewidth}
+\newcommand{\figwidth}{0.85\linewidth}
 
 % 
 % Begin R and knitr setup

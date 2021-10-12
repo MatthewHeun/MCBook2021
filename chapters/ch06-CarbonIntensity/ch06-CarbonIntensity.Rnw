@@ -45,9 +45,10 @@ $C$ represents the economy's excreted wastes.
 
 $C$ is defined as
 %
-\begin{equation}\label{eq:R}
+\begin{equation}\label{eq:C}
   C = \frac{\textrm{total impacts produced}}{\textrm{total resources extracted}} \; .
 \end{equation}
+%
 Note that ``impacts'' are plural.
 Extracting and consuming all the resources necessary to make the economy run 
 will have effects on air, water, species diversity, land, and human communities.
