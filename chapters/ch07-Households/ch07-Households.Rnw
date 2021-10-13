@@ -664,7 +664,7 @@ One Watt Initiative
 \item What ways can you imagine to re-use or recycle water in a home
       to get closer to a circular economy?
 
-\item Here are several household-related sustainability policies:
+\item \label{question:household_policies} Here are several household-related sustainability policies:
       (a) require everyone to live in cities like Manhattan (to reduce commuting distances), 
       (b) outlaw clothes washers that use hot water (to save CO$_2$ emissions from water heating),
       (c) outlaw automatic dishwashers (to reduce energy consumption for water heating),
@@ -755,7 +755,7 @@ One Watt Initiative
       What would be the effect on household emissions if every home in the U.S.\
       were retrofitted with higher-efficiency appliances and more insulation?
       
-\item With reference to question ****, 
+\item With reference to question Q\ref{chap:households}.\ref{question:household_policies},
       make a sustainability-related benefits/drawbacks ledger for each policy, 
       being sure to identify areas where sustainability would be enhanced and 
       places where sustainability would be diminished.
