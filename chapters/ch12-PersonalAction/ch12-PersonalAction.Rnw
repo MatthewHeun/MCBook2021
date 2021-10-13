@@ -58,12 +58,26 @@ they spring into action because they see others rushing in with water.}
 \label{sec:personal_housing}
 %++++++++++++++++++++++++++++++
 
+
 \begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch12-PersonalAction/photos/energy_efficient_home.jpeg}
-\caption{Energy-efficient home with insulated basement.}
-\label{fig:energy_efficient_home}
+     \centering
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/energy_efficient_home_interior.jpeg}
+         \caption{Basement interior.}
+         \label{fig:energy_efficient_home_exterior}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/energy_efficient_home_exterior.jpeg}
+         \caption{Basement exterior.}
+         \label{fig:energy_efficient_home_exterior}
+     \end{subfigure}
+      \caption{Energy-efficient home with insulated basement.}
+      \label{fig:energy_efficient_home}
 \end{figure}
+
 
 
 %++++++++++++++++++++++++++++++
