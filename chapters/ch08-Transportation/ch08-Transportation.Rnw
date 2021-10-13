@@ -575,7 +575,7 @@ from energy consumed for land preparation and planting can be allocated
 across several harvest years of the biofuel crop~\citep{Whitaker_2017}.
 Biofuel consumption in the U.S.\ is shown in Figure~\ref{fig:Biofuel_cons}.
 
-<<Biofuel_cons, fig.cap = "Biofuel consumption in the U.S., 1985--2017.">>=
+<<Biofuel_cons, fig.cap = "Biofuel consumption in the U.S., 1985--2017. **** Use new data from Anjana in file Biofuels.xlsx. ****">>=
 # Data from Table 10.1 in DOE/EIA‐0035(2018/11).
 # See https://www.eia.gov/totalenergy/data/monthly/archive/00351811.pdf
 data_string <-
