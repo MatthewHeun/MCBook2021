@@ -99,7 +99,7 @@ Lighting consumes 6.6\% of total household energy use.
 \begin{figure}
 \centering
 \includegraphics[width=\figwidth]{chapters/ch07-Households/figures/Average_US_Residential_Energy_Consumption.pdf}
-\caption{Average U.S.\ residential energy consumption by end use~\citep[Fig.~3]{EIA_2018}.}
+\caption{Average U.S.\ residential energy consumption by end use~\citep[Fig.~3]{EIA_2018}. **** Use new data from Anjana in file 7.1 data.xlsx. ****}
 \label{fig:average_residential_energy}
 \end{figure}
 
