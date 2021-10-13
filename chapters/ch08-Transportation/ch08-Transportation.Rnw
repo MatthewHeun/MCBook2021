@@ -566,7 +566,8 @@ Taking carbon neutrality\index{carbon neutrality} as the indicator of sustainabi
 biofuels can be sustainable if they sequester more carbon than
 they emit across the full life cycle\index{life cycle!biofuel}
 of a project, including
-land preparation, planting, harvesting, refining and processing, and
+land preparation, planting, harvesting, refining and processing, 
+conveyance of the fuel to points of end use, and
 direct combustion of the fuel itself.
 Perennial crops planted in low-carbon soils\index{soil!low-carbon}
 can be carbon negative, because
@@ -575,24 +576,27 @@ from energy consumed for land preparation and planting can be allocated
 across several harvest years of the biofuel crop~\citep{Whitaker_2017}.
 Biofuel consumption in the U.S.\ is shown in Figure~\ref{fig:Biofuel_cons}.
 
-<<Biofuel_cons, fig.cap = "Biofuel consumption in the U.S., 1985--2017. **** Use new data from Anjana in file Biofuels.xlsx. ****">>=
-# Data from Table 10.1 in DOE/EIA‐0035(2018/11).
-# See https://www.eia.gov/totalenergy/data/monthly/archive/00351811.pdf
-data_string <-
-  "Year	Biofuels [Trillion BTU]\n
-1985	93\n
-1990	111\n
-1995	200\n
-2000	236\n
-2001	253\n
-2002	303\n
-2003	403\n
-2004	498\n2005	574\n2006	766\n2007	983\n2008	1357\n2009	1553\n2010	1821\n2011	1933\n2012	1892\n2013	2007\n2014	2067\n2015	2145\n2016	2279\n2017	2302\n"
-utils::read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
-  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = `Biofuels [Trillion BTU]`)) +
-  ggplot2::geom_line() +
-  ggplot2::labs(x = ggplot2::element_blank(), y = expression("U.S. biofuel consumption [" * 10^12 * " BTU]")) +
-  ggplot2::scale_x_continuous(breaks = c(1985, 1990, 2000, 2010, 2017)) +
+<<Biofuel_cons, fig.cap = "U.S.\ biofuel consumption, 1981--2020. Source: U.S.\\ Energy Information Agency~\\cite{U.S.-Energy-Information-Agency:2021to}.">>=
+biofuels <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Biofuels.xlsx"),
+                                               sheet = "data to plot") %>% 
+  dplyr::rename(
+    Biodiesel = "Biodiesel Consumption (Million Gallons)", 
+    Ethanol = "Fuel Ethanol Consumption (Million Gallons)"
+  ) %>% 
+  tidyr::pivot_longer(cols = -Year, names_to = "Fuel", values_to = "million_gallons") %>% 
+  dplyr::mutate(
+    trillion_gallons = million_gallons / 1000
+  )
+
+biofuels %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "trillion_gallons", fill = "Fuel")) +
+  ggplot2::geom_area() +
+  
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = expression("U.S. biofuel consumption [" * 10^9 * " gallons]"), 
+                fill = ggplot2::element_blank()) +
+  viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
+
   MKHthemes::xy_theme()
 @
 
