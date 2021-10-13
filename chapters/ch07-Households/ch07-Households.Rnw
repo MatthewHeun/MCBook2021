@@ -166,14 +166,14 @@ The most important are size and location.
 Figure~\ref{fig:EnergyConsAndHomeSize} shows the trend of
 energy consumption with respect to home size and
 confirms intuition that dwelling size is positively correlated 
-with energy consumption.\index{households!energy consumption}%
-\footnote{
-   Note that the U.S.\ Energy Information Agency's (EIA's)
-   Residential Energy Consumption Survey (RECS)
-   provides much of the data for this chapter. 
-   The most-recent RECS was released in 2015. 
-   The next RECS reports are expected in 2022 and 2023.
-}
+with energy consumption.\index{households!energy consumption}
+% \footnote{
+%    Note that the U.S.\ Energy Information Agency's (EIA's)
+%    Residential Energy Consumption Survey (RECS)
+%    provides much of the data for this chapter. 
+%    The most-recent RECS was released in 2015. 
+%    The next RECS reports are expected in 2022 and 2023.
+% }
 
 
 <<EnergyConsAndHomeSize, fig.cap="Average U.S.\\ household energy consumption. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
