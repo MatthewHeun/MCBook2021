@@ -166,14 +166,14 @@ The most important are size and location.
 Figure~\ref{fig:EnergyConsAndHomeSize} shows the trend of
 energy consumption with respect to home size and
 confirms intuition that dwelling size is positively correlated 
-with energy consumption.\index{households!energy consumption}%
-\footnote{
-   Note that the U.S.\ Energy Information Agency's (EIA's)
-   Residential Energy Consumption Survey (RECS)
-   provides much of the data for this chapter. 
-   The most-recent RECS was released in 2015. 
-   The next RECS reports are expected in 2022 and 2023.
-}
+with energy consumption.\index{households!energy consumption}
+% \footnote{
+%    Note that the U.S.\ Energy Information Agency's (EIA's)
+%    Residential Energy Consumption Survey (RECS)
+%    provides much of the data for this chapter. 
+%    The most-recent RECS was released in 2015. 
+%    The next RECS reports are expected in 2022 and 2023.
+% }
 
 
 <<EnergyConsAndHomeSize, fig.cap="Average U.S.\\ household energy consumption. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
@@ -215,6 +215,7 @@ Taken together, Figures~\ref{fig:EnergyConsAndHomeSize} and~\ref{fig:NewHousingS
 would suggest that residential energy consumption per dwelling is rising through time.
 However, per-dwelling energy consumption has been rather flat from the 1970 onward.
 The increased energy efficiency of appliances and improvements to building envelopes 
+(roof, walls, windows, and base of a dwelling)
 have offset rising home sizes.
 That said, \emph{total} residential energy consumption has increased,
 due to an increase in the total number of dwellings.
@@ -393,16 +394,19 @@ are energy-intensive to manufacture (especially foam).
 
 In most locations,
 daily and seasonal temperature variations are larger
-than the narrow range of temperatures that provides human comfort.
-Average daily temperature variations can be in the range of 13~\degC,
+than the narrow range of temperatures that provide human comfort.
+Average daily temperature variations can be in the range of 12~\degC,
 and seasonal variations can be 
 on the order of 30~\degC~\cite{Experience-Grand-Rapids:vs}.%
 \footnote{
-   Example temperature variations are for Grand Rapids, Michigan, USA.
+   Example temperature variations are for Grand Rapids, Michigan, USA, where
+   the month average daily high and low temperatures throughout the year are
+   14~\degC and 2~\degC, respectively.
+   The average daily high temperature in July is 28~\degC in July, while
+   the average daily low temperature if January is $-$10~\degC in January.
 }
-In contrast, the range of human comfort is between 20 and 23~\degC, 
-depending on humidity and clothing, 
-or only 3~\degC.
+In contrast, the range of human comfort is between 20 and 23~\degC (only 3~\degC), 
+depending on humidity and clothing.
 
 Residential heating and cooling reduces the temperature variation
 inside a dwelling compared to the outdoors,
@@ -431,10 +435,10 @@ by improving the efficiency of furnaces and air conditioners.
 \label{sec:building_envelope} \index{building envelope}
 %++++++++++++++++++++++++++++++
 
-The building envelope consists of the roof, walls, windows, and base
-of a dwelling.
-The purpose of the envelope is to shield occupants from outside weather and
-to maintain dry and comfortable conditions inside the dwelling.
+The purpose of a building envelope
+(roof, walls, windows, and base of a dwelling)
+is to shield occupants from outside weather and
+to maintain dry and comfortable conditions indoors.
 The ideal building envelope would
 eliminate both heat loss in the winter and heat gain in the summer via
 perfect insulation and
@@ -660,9 +664,18 @@ One Watt Initiative
 \item What ways can you imagine to re-use or recycle water in a home
       to get closer to a circular economy?
 
-\item What tradeoffs do you observe in daily household living?
-      That is, in what areas of household living does sustainability become worse
-      as a result of improved sustainability elsewhere?
+\item \label{question:household_policies} Here are several household-related sustainability policies:
+      (a) require everyone to live in cities like Manhattan (to reduce commuting distances), 
+      (b) outlaw clothes washers that use hot water (to save CO$_2$ emissions from water heating),
+      (c) outlaw automatic dishwashers (to reduce energy consumption for water heating),
+      (d) require all clothes washing to be done at laundromats (to reduce embodied energy of clothes washers in every home),
+      (e) require all homes to undergo an energy efficiency retrofit before going on the market to be sold
+          (to improve energy efficiency of the housing stock),
+      (f) require all homes to generate solar electricity onsite (to move quickly to a renewable future), and
+      (g) prohibit clothing made from synthetic fibers (to minimize microplastic pollution).
+      Which of these policies would you welcome? 
+      Which would you reject?
+      Why?
       
 \item Where should you invest in energy efficiency in your home or apartment?
 
@@ -741,8 +754,36 @@ One Watt Initiative
       How do they contribute to sustainability?
       What would be the effect on household emissions if every home in the U.S.\
       were retrofitted with higher-efficiency appliances and more insulation?
-
-
+      
+\item With reference to question Q\ref{chap:households}.\ref{question:household_policies},
+      make a sustainability-related benefits/drawbacks ledger for each policy, 
+      being sure to identify areas where sustainability would be enhanced and 
+      places where sustainability would be diminished.
+      Be sure to address all three corners of the sustainability triangle, 
+      social, environmental, and monetary.
+      After creating the ledger, 
+      rethink your initial reactions to the policies.
+      Now which policies would you welcome?
+      Which would you resist?
+      Why?
+      
+      For example, if all clothes washing were to be done a laundromats, 
+      there could be social benefits where laundromats would become a sort of ``town square''
+      where neighbors meet to discuss municipal affairs as they do their laundry.
+      On the other hand, time lost to commuting to the laundromat might mean that other relationships suffer.
+      If all clothes were laundered at laundromats, 
+      fewer washers and dryers would be needed, resulting in less energy and CO$_2$ embodied 
+      in the stock of laundry equipment.
+      But laundromats will likely have larger commercial washers and dryers. 
+      Would they be less energy efficient than smaller domestic washers and dryers?
+      Many people will need to drive to laundromats to do laundry, increasing transport-related
+      CO$_2$ emissions.
+      Finally, households would no longer purchase washers and dryers, thereby saving money. 
+      But the marginal cost of a load of laundry may be higher at a laundromat compared 
+      to home-based laundry. 
+      Is it a long-term financial benefit to do all your laundry at a laundromat? 
+      How does the financial calculus change when the financial value of time is considered?
+      
 \end{projects}
 
 

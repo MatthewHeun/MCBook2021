@@ -15,13 +15,13 @@
 %% \epigraph{We have forgotten how to be good guests, how to walk lightly on the
 %% Earth as its other creatures do}{Barbara Ward}
 %%% \epigraph{Nuclear power is one hell of way to boil water}{Albert Einstein}
-%%%% \epigraph{It is the worst of times but it is the best of times because we still have a chance}{Sylvia Earle}
-\epigraph{Generations have trod, have trod, have trod; \\
-    And all is seared with trade; bleared, smeared with toil; \\
-    And wears man's smudge and shares man's smell: the soil \\
-Is bare now, nor can foot feel, being shod. \\
-
-And for all this, nature is never spent;}{Gerard Manley Hopkins}
+\epigraph{It is the worst of times but it is the best of times because we still have a chance}{Sylvia Earle}
+% \epigraph{Generations have trod, have trod, have trod; \\
+%     And all is seared with trade; bleared, smeared with toil; \\
+%     And wears man's smudge and shares man's smell: the soil \\
+% Is bare now, nor can foot feel, being shod. \\
+% 
+% And for all this, nature is never spent;}{Gerard Manley Hopkins}
 %from https://www.poetryfoundation.org/poems/44395/gods-grandeur
 
 
@@ -236,7 +236,7 @@ Since 1960, the carbon intensity of energy
 has hovered around 63 Mt CO$_2$/EJ.
 Thus, for the last 60 years, the carbon intensity of energy has been stubbornly constant.
 It appears that eliminating CO$_2$ emissions by significantly reducing
-the carbon intensity of energy ($I_{CO_2}$) will be require unprecedented changes
+the carbon intensity of energy ($I_{CO_2}$) will require unprecedented changes
 to the world's primary supply.
 But how?
 
