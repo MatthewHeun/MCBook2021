@@ -33,11 +33,9 @@ This is the second of four chapters in Part~\ref{part:sustainability_challenges}
 to discuss
 areas of life where sustainability challenges are relevant and important.
 This chapter covers transportation.
-
-Today, transportation services are provided by cars, trucks, trains, boats, and planes,
-powered almost exclusively by fossil fuels\index{fossil fuels}.
-Figure~\ref{fig:LLNL_sankey} shows that energy for transportation is 
-supplied almost exclusively by fossil liquid petroleum fuels,
+Today, transportation services are provided by cars, trucks, trains, boats, and planes.
+Figure~\ref{fig:LLNL_energy_sankey} shows that energy for transportation is 
+supplied almost exclusively by liquid petroleum fuels,
 because of the high energy densities\index{energy density!liquid fuels} of those fuels
 as measured by both energy-to-mass and energy-to-volume ratios.
 The U.S.\ transportation sector emits more carbon than any other, 
@@ -52,7 +50,7 @@ For example, household location (Chapter~\ref{chap:households})
 determines commuting distances and therefore CO$_2$ emissions for
 trips to work, school, church, and shops.
 
-This chapter, and the two following chapters, will consider the many ways in which
+This chapter, and the two following chapters, consider the many ways in which
 physical location, economic activity, energy, and resources are interrelated.
 This chapter begins by discussing
 demand for transportation services and
@@ -70,18 +68,16 @@ A summary concludes.
 Modern life requires transportation services\index{services!transportation}:
 people need to move long and short distances for work and pleasure, and
 goods must be shipped from far and near to satisfy human wants and needs.
-Transport service levels are usually quantified in
+Transport service demand levels are usually quantified in
 passenger-km and tonne-km for personal and freight transport, respectively.
 Provision of U.S.\ transportation services by various modes of travel
 is shown in Figures~\ref{fig:passengerkm_by_mode}
 and~\ref{fig:tonnekm_by_mode}.
-
-% \begin{figure}
-% \centering
-% \includegraphics[width=\figwidth]{chapters/ch08-Transportation/figures/passengerkm_by_mode.pdf}
-% \caption{Passenger-km of personal transport by mode.}
-% \label{fig:passengerkm_by_mode}
-% \end{figure}
+Figure~\ref{fig:passengerkm_by_mode} shows that 
+passenger transport demand is fulfilled almost exclusively by ``Highway,''
+meaning automobiles travelling on roads.
+In contrast, Figure~\ref{fig:tonnekm_by_mode} shows that 
+freight transport demand is satisfied by a variety of modes.
 
 
 <<passengerkm_by_mode, fig.cap="U.S.\\ passenger-km of personal transport by mode. Intercity is rail travel via Amtrak. Transit is public transit of all types (ferry, subway, bus, etc.). Air is U.S.\\ domestic air carriers. Highway is automobile traffic. Source: U.S. Bureau of Transportation Statistics~\\cite{passenger_km}.">>=
@@ -109,13 +105,12 @@ passenger_km_by_mode %>%
 @
 
 
-
-
-<<tonnekm_by_mode, fig.cap="Ton-miles of freight transport by mode, 1980--2018. Source: U.S.\\ Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021vu}.">>=
+<<tonnekm_by_mode, fig.cap="Ton-miles of freight transport by mode, 1980--2018. Pipeline is transportation of liquids (such as fuels) through pipelines. Source: U.S.\\ Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021vu}.">>=
 tonne_km_by_mode <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Freight_ton_miles.xlsx"), 
                    sheet = "data to plot") %>% 
   tidyr::pivot_longer(cols = -Year, names_to = "type", values_to = "tonmiles") %>% 
   dplyr::mutate(
+    type = factor(type, levels = c("Air", "Water", "Pipeline", "Railroad", "Truck")),
     tonnekm = tonmiles * 2000/2200 * 1.609344 / 1e6 # convert (short)ton-miles to Mtonne-km
   )
   
@@ -151,7 +146,7 @@ freight traffic and passenger travel
 that measures transportation services 
 output~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.
 Figure~\ref{fig:TSI} shows the variation of the TSI over time.
-Two patterns emerge:
+Two patterns evident:
 (a) the general growth of the economy over time drives ever-growing demand for transportation services and
 (b) a recession (2009) and a pandemic (2020) are good ways
 to reduce demand for transportation services.
