@@ -265,6 +265,15 @@ even as passenger transportation services rose through the 2005--2007 timeframe 
 \label{fig:transport_GHG_emissions}
 \end{figure}
 
+
+<<transport_GHG_emissions>>=
+transport_GHG <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "CO2_emissions_transport.xlsx"),
+                                     sheet = "data to plot")
+
+@
+
+
+
 It is clear that the transport sector needs to change
 if we are to become more sustainable. 
 The next section discusses possible transitions
