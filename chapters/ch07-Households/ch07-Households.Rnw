@@ -400,10 +400,9 @@ and seasonal variations can be
 on the order of 30~\degC~\cite{Experience-Grand-Rapids:vs}.%
 \footnote{
    Example temperature variations are for Grand Rapids, Michigan, USA, where
-   the month average daily high and low temperatures throughout the year are
-   14~\degC and 2~\degC, respectively.
-   The average daily high temperature in July is 28~\degC in July, while
-   the average daily low temperature if January is $-$10~\degC in January.
+   the month average daily high temperatures are
+   28~\degC{} and $-$2~\degC{} in July and January, respectively. 
+   The average daily low temperature in January is $-$10~\degC.
 }
 In contrast, the range of human comfort is between 20 and 23~\degC (only 3~\degC), 
 depending on humidity and clothing.
