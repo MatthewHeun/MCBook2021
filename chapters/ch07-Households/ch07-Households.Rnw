@@ -24,7 +24,7 @@ Transportation (Chapter~\ref{chap:transportation}),
 agriculture (Chapter~\ref{chap:agriculture}), and
 land use and urban planning (Chapter~\ref{chap:land_use_urban_planning})
 are the subjects of the next three chapters.
-The structure of each of the chapters in Part \ref{part:sustainability_challenges} is similar:
+The structure of each chapter in Part \ref{part:sustainability_challenges} is similar:
 First, the importance of that area of life to sustainability is discussed.
 Next, technical details about sustainability in that area of life are explored.
 Finally, a summary provides pointers to other chapters 
@@ -56,7 +56,7 @@ Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
 from the residential sector total 
 \Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Gt/year,
 predominantly from electricity and natural gas.\index{electricity!consumption!households}
-Energy consumption is the source of sustainability impacts
+Energy consumption is a source of sustainability impacts
 (CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of} and 
 natural resource extraction\index{natural resources!extraction of})
 far beyond the site of the demand (households).
@@ -83,18 +83,19 @@ However, everyone who lives in a house or apartment
 makes decisions with sustainability implications
 in their own home.
 
-Figure~\ref{fig:average_residential_energy} shows how the average U.S.\ resident
-allocates energy consumption\index{energy consumption!residential}
-for several end uses~\citep[Fig.~3]{EIA_2018}.
+Figure~\ref{fig:average_residential_energy} shows 
+end-use~\citep[Fig.~3]{EIA_2018}
+energy consumption\index{energy consumption!residential}
+for the average  U.S.\ residence.
 The end uses in Figure~\ref{fig:average_residential_energy}
-can be aggregated to form fewer categories
-of residential energy consumption.
+can be aggregated into form fewer categories.
+%of residential energy consumption.
 Space heating and cooling
-comprise 36.6\% of all energy household energy consumption
+are 36.6\% of all household energy consumption
 (including furnace fans).
-Hygeine (including water heaters, clothes dryers, dishwashers, and clothes washers)
+Hygiene (including water heaters, clothes dryers, dishwashers, and clothes washers)
 consumes 18.5\% of household energy.
-Lighting consumes 6.6\% of total household energy use.
+Lighting is 6.6\% of total household energy use.
 
 \begin{figure}
 \centering
@@ -209,7 +210,7 @@ household_energy_by_size %>%
 
 
 Figure~\ref{fig:NewHousingSize} shows the average floor space \index{households!floor space}
-of new single family homes in the United States between 1971 and 2019.
+of new single-family homes in the United States between 1971 and 2019.
 The general trend is toward larger homes over time, with recent declines.
 Taken together, Figures~\ref{fig:EnergyConsAndHomeSize} and~\ref{fig:NewHousingSize}
 would suggest that residential energy consumption per dwelling is rising through time.
@@ -366,8 +367,8 @@ related to transportation.)
 Zooming out, the latitude of the home may make a 
 larger impact on household sustainability
 than the urban/suburban/rural decision.
-Homes at high latitude require heating. 
-Homes at low latitude are often fitted with air conditioning.
+Homes at high latitudes require heating. 
+Homes at low latitudes are often fitted with air conditioning.
 Both heating and air conditioning require energy and, 
 in today's fossil-fuel-powered world,
 cause CO$_2$ to be emitted.
@@ -400,10 +401,10 @@ and seasonal variations can be
 on the order of 30~\degC~\cite{Experience-Grand-Rapids:vs}.%
 \footnote{
    Example temperature variations are for Grand Rapids, Michigan, USA, where
-   the month average daily high and low temperatures throughout the year are
-   14~\degC and 2~\degC, respectively.
-   The average daily high temperature in July is 28~\degC in July, while
-   the average daily low temperature if January is $-$10~\degC in January.
+   the average daily high and low temperatures throughout the year are
+   14~\degC \ and 2\degC, respectively.
+   The average daily high temperature in July is 28~\degC, while
+   the average daily low temperature in January is $-$10~\degC.
 }
 In contrast, the range of human comfort is between 20 and 23~\degC (only 3~\degC), 
 depending on humidity and clothing.
@@ -472,9 +473,9 @@ heat loss in the winter and heat gain the summer.
 However, windows are typically worse insulators than walls and roofs,
 owing to thin glazing.
 
-The insulative properties of windows are quantified by the U-Factor\index{U-factor}.
-The U-Factor is the inverse of an R-value.
-Typical U-Factors for windows are 0.2--1.2 BTU/hr-ft$^2$-\degF.
+The insulative properties of windows are quantified by the U-factor\index{U-factor},
+which is the inverse of an R-value.
+Typical U-factors for windows are 0.2--1.2 BTU/hr-ft$^2$-\degF.
 (Corresponding window R-values are 5--0.83 hr-ft$^2$-\degF/BTU.)
 Lower U values are more insulative.
 Heat gain from solar radiation is quantified by the
@@ -491,7 +492,7 @@ and lower SHGC values indicate better insulative properties.
 %++++++++++++++++++++++++++++++
 
 Furnaces provide space heating,
-often from an out-of-the-way location in the dwelling (e.g., basement).
+often from an out-of-the-way location in the dwelling, such as the basement.
 Furnaces convert a fuel 
 (typically natural gas\index{natural gas} or heating oil\index{heating oil})
 into heat by combustion, 
@@ -505,9 +506,9 @@ the percentage of useful heat output
 to fuel energy input,
 accounting for transient effects during operation
 across the year.
-Heat that leaves the home with the exhaust products serves to reduce AFUE.
-The maximum AFUE rating is 100\%.
-AFUE is different from and lower than steady-state thermal efficiency.
+Any heat that leaves the home with the exhaust products reduces AFUE.
+The maximum possible AFUE rating is 100\%.
+AFUE is different from (and lower than) steady-state thermal efficiency.
 The American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)
 \index{American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)}
 publishes Standard 103,
@@ -564,15 +565,25 @@ low-flow showerheads\index{showerheads!low-flow} and faucets\index{faucets}
 can be installed.
 Low-flow showerheads provide the obvious cost benefit of
 reducing water bills.
-But if less water is consumed,
-low-flow showerheads also reduce energy consumption and CO$_2$ emissions for water heating.
+Also, if less water is consumed,
+low-flow showerheads reduce energy consumption and CO$_2$ emissions for water heating.
 Furthermore, sewerage costs are reduced, because low-flow showerheads
-decrease the amount of gray water entering the sewer system.
+decrease the amount of gray water entering the sewer system (with ``downstream''
+energy and cost savings).
 
 Saving water and energy in dish washing can be accomplished by purchasing a
 high-efficiency automatic dishwasher.\index{efficiency!dish washers}
 The Energy Star program provides 
 information about energy-saving dishwashers~\cite{U.S.-Department-of-Energy:vn}.
+% "According to a recent study by detergent brand Cascade, it takes the average 
+% person about 15 seconds to hand-wash a dish. During that time, the sink uses 
+% half a gallon of water (a typical faucet spouts four gallons of water every two 
+% minutes). By comparison, an Energy Star-certified dishwasher uses less than four
+% gallons per cycle, which means running a load with as few as eight dishes can 
+% actually save water."
+% https://www.bhg.com/kitchen/appliances/dishwasher-save-water/
+% Cascade press release: https://news.pg.com/news-releases/news-details/2020/Cascade-Comes-Clean-About-Dishwashing-Habit/default.aspx
+%% Perhaps a project to verify their "15 seconds per dish" finding.
 
 To save water consumed by toilets\index{toilets},
 displacement and dual-flush systems are recommended.
@@ -608,7 +619,7 @@ Compact Fluorescent Lights (CFLs)\index{lamps!electric!compact fluorescent (CFL)
 Light-Emitting Diode (LED)\index{lamps!electric!light emitting diode (LED)}
 lamps have revolutionized
 the lighting industry and improved lighting efficiency significantly.
-LED lamps are 8 times more efficacious than incandescent lighting.%
+LED lamps use one eighth the energy of an equivalent incandescent light.%
 \footnote{
   A 100-W incandescent lamp gives about 1230~lumens or 12.3~lumens/W.
   A 100-W equivalent LED lamp gives 1200~lumens and consumes only 12~W of electricity,
@@ -616,15 +627,13 @@ LED lamps are 8 times more efficacious than incandescent lighting.%
   The efficacy increase from incandescent to LED lamps is a factor of 8.
 }
 %
-In addition, LED lamps promise much longer lifetimes,
-with more than 10 times longer service per bulb than incandescents.
-Both higher efficiency and longer life reduce total cost of ownership
+In addition, LED lamps can last up to 10 times longer than incandescent lights.
+Higher efficiency and longer life reduce total cost of ownership
 of LED bulbs compared to incandescent bulbs by nearly two orders of magnitude.
 
 Of course, the least expensive light is the one you don't have to use at all.
 Building design techniques such as light harvesting\index{light harvesting}
-utilize natural light to the greatest extent possible,
-reducing the need to consume electricity for artificial indoor lighting.
+use natural light to reduce the need for artificial indoor lighting.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -636,8 +645,9 @@ This chapter identified many sustainability challenges that pertain to household
 and decisions made by ordinary people in their homes and apartments.
 Energy and material consumption decisions by household residents
 drives sustainability in the home. 
-Key areas of decision-making include
-purchasing and renting,
+Key areas of decision making include
+%purchasing and renting,
+size and location, 
 heating and cooling,
 hygiene, and
 lighting, 
@@ -649,7 +659,8 @@ for making homes and apartments more sustainable.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+Sarah Susanka and Kira Obolensky, 
+\emph{The Not So Big House: A Blueprint for the Way We Really Live}, Taunton Press, 1998.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
@@ -665,6 +676,7 @@ One Watt Initiative
 
 \item This chapter covered five important aspects of household sustainability
       (size, location, heating and cooling, hygiene, and lighting).
+      Which is \emph{most} important and why?
       What additional areas of household living are important
       from a sustainability point of view?
       
@@ -790,6 +802,18 @@ One Watt Initiative
       to home-based laundry. 
       Is it a long-term financial benefit to do all your laundry at a laundromat? 
       How does the financial calculus change when the financial value of time is considered?
+      
+\item Cascade (a Proctor \& Gamble brand and a manufacturer of automatic dishwasher
+      detergent) did a study that shows it takes an average
+      person 15 seconds to wash a dish ``by hand.'' Assuming an average water flow
+      from the faucet of two gallons per minute and an Energy Star automatic dishwasher
+      using 4 gallons of water per cycle, Cascade concluded that it is more
+      efficient to run the dishwasher with only eight dishes than to wash them by hand.
+      (Note they were not advocating running near-empty loads, only that the break-even
+      point was a very low number of dishes.)
+      Measure your sink's flow rate and time yourself washing a variety of types of dishes.
+      what is your break-even point?
+      What is your break-even point for buying a new dishwasher?
       
 \end{projects}
 
