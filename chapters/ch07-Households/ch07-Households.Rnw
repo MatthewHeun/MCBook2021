@@ -151,7 +151,7 @@ lighting.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Purchasing and renting}
+\section{Size and location} % Purchasing and renting
 \label{sec:purchasing_and_renting} \index{households!purchasing and renting}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -177,7 +177,7 @@ with energy consumption.\index{households!energy consumption}
 % }
 
 
-<<EnergyConsAndHomeSize, fig.cap="Average annual U.S.\\ household energy consumption by home size. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
+<<EnergyConsAndHomeSize, fig.cap="Average annual U.S.\\ household energy consumption by home size. (Biomass (wood), coal, district steam, and solar thermal are excluded.) Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_size <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "ce2.1.xlsx"),
                                                sheet = "data to plot") %>% 
    dplyr::rename(
@@ -651,7 +651,22 @@ heating and cooling,
 hygiene, and
 lighting, 
 because many homeowners have agency in these areas of everyday life.
-Chapter~\ref{chap:personal_action} provides concrete suggestions
+
+This chapter illustrates two fundamental tradeoffs for stustainability.
+The first tradeoff is initial cost (also called capital expense) versus operating cost.
+Models or options that are more energy efficient also tend to cost more. 
+A larger initial investment pays back by reducing ongoing expenses.
+Often the higher initial cost is the result of higher energy and/or material inputs
+required to make the more-efficient option.
+The second kind of tradeoff is between well-being or affluence and cost. 
+Turning the thermostat down means your home is less comfortable, which
+means that you are not as well off (not as happy). 
+On the other hand, turning the thermostat down saves money, energy, and CO$_2$ emissions.
+For both of these kinds of tradeoffs, price is the determiner as to how the tradeoff
+plays out. 
+Changing society-wide behavior means manipulating prices -- of goods, or energy, or both.
+
+Chapter~\ref{chap:personal_action} provides additional concrete suggestions
 for making homes and apartments more sustainable.
 
 
@@ -708,6 +723,8 @@ One Watt Initiative
       
 \item What are ways to increase people per acre and/or people per dwelling?
       In what ways are these the same and how are they different?
+      Do you think that dwellings that increase either of these metrics should 
+      be incentivized? Why or why not? What are your reasons?
       
 \item Externalities are costs born by those who do not receive the benefits of
       an activity. For example, burning natural gas to heat a home releases CO$_2$
@@ -726,6 +743,49 @@ One Watt Initiative
       Does your home have a second (or third) refrigerator or freezer?
       Why do you do these things?
       What would it take for you to change your behavior?
+      
+\item Notice that biomass heating (that is, wood) does not appear in 
+      Figure~\ref{fig:AverageHouseholdEnergyConsumption}. However, 
+      RECS Table CE 7.2 reports that wood heated 12.5 million housing units in
+      2015 (10.6\% of all housing units) and was 5.6\% of all BTUs used for
+      household heating. 
+      For around 60\% of housing units wood is the main source of heat. 
+      For about 40\% it's secondary.
+      % Pre-1950s houses are most likely to use wood heat.
+      Wood heating in the U.S. is carbon neutral. 
+      However, wood heating isn't exactly sustainable. 
+      It is sustainable \emph{only} if not everyone does it. 
+      If everyone heated with wood, one result would be massive deforestation.
+      Another might be greatly increased air pollution (in the form of soot).
+      Should the use of wood heat be expanded or contracted? 
+      Who gets to (or has to) heat with wood and what emissions should be permitted?
+      How should such questions be decided?
+      What other considerations go into wood heating? 
+      For example, who has access to forest lands? How much does wood cost?
+      What labor is required to obtain and use wood for heat?
+      
+\item Figure~\ref{fig:AverageHouseholdEnergyConsumption} also excludes ``district
+      steam'' and solar thermal heat sources. Should such sources be promoted
+      for sustainability? What considerations affect their more widespread adoption?
+      
+\item This chapter discussed energy efficiency measures for many of the categories
+      featured in Figure \ref{fig:average_residential_energy}, such as AFUE, SEER
+      rating, and Energy Star labels. 
+      However, some categories of household appliances do not have an efficiency rating. 
+      What are some appliances that \emph{could} be rated that are not?
+      (See, for instance, \url{https://www.energystar.gov/productfinder/}.)
+      Household vacuum cleaners, for example, are difficult to rate, in part, because defining 
+      how \emph{well} they do their job (that is, the ``numerator'' of an efficiency
+      metric) is difficult (see the Energy Star Market and Industry Scoping Report
+      on Vacuum Cleaners, November 2011).
+      
+\item Should product longevity be factored into consumer-oriented energy efficiency
+      ratings? If so, how? Obviously, a vacuum cleaner that lasts 10 years is better
+      than a vacuum cleaner that lasts only 5 years.
+      
+\item Should consumer appliances and household goods be required to have a circular
+      economy? If so, under what conditions or which appliances? 
+      Should electronics recycling be mandatory?
 
 \end{questions}
 
