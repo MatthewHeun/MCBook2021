@@ -176,7 +176,7 @@ with energy consumption.\index{households!energy consumption}
 % }
 
 
-<<EnergyConsAndHomeSize, fig.cap="Average U.S.\\ household energy consumption. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
+<<EnergyConsAndHomeSize, fig.cap="Average annual U.S.\\ household energy consumption by home size. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_size <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "ce2.1.xlsx"),
                                                sheet = "data to plot") %>% 
    dplyr::rename(
@@ -197,7 +197,7 @@ household_energy_by_size %>%
    ggplot2::geom_bar(stat = "identity") +
    
    ggplot2::labs(x = expression("Home size ["*ft^2*"]"),
-                 y = "Avg. energy consumption [GJ]", 
+                 y = "Avg. energy consumption [GJ/yr]", 
                  fill = ggplot2::element_blank()) +
    ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.03))) +
    viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
