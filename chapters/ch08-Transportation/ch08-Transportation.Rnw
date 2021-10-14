@@ -268,7 +268,14 @@ even as passenger transportation services rose through the 2005--2007 timeframe 
 
 <<transport_GHG_emissions>>=
 transport_GHG <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "CO2_emissions_transport.xlsx"),
-                                     sheet = "data to plot")
+                                     sheet = "data to plot") %>% 
+  tidyr::pivot_longer(cols = -Year, names_to = "mode", values_to = "M_tonnes_CO2_eq")
+
+transport_GHG %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "M_tonnes_CO2_eq", fill = "mode")) +
+  ggplot2::geom_area()
+  
+  
 
 @
 
