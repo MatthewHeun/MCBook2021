@@ -148,8 +148,8 @@ output~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statisti
 Figure~\ref{fig:TSI} shows the variation of the TSI over time.
 Two patterns evident:
 (a) the general growth of the economy over time drives ever-growing demand for transportation services and
-(b) a recession (2009) and a pandemic (2020) are good ways
-to reduce demand for transportation services.
+(b) recessions (2009) and pandemics (2020) are ways to
+reduce demand for transportation services.
 In fact, the correlation between economic growth and freight transportation growth
 is so tight that the BTS claims that transport is a good indicator for economic activity
 at the macro level~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021tn}.
@@ -166,8 +166,7 @@ TSI <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets
   ) %>% 
   dplyr::mutate(
     Date = NULL, 
-    Months = NULL,
-    # Overall = NULL
+    Months = NULL
   ) %>% 
   tidyr::pivot_longer(cols = -Year, names_to = "indicator", values_to = "value")
 
@@ -176,8 +175,8 @@ TSI %>%
   ggplot2::geom_hline(yintercept = 100, colour = "gray", size = 0.2) +
   ggplot2::geom_line(colour = mc_title_blue) +
   ggplot2::scale_y_continuous(limits = c(0, 150)) +
-  ggplot2::scale_linetype_manual(values = c(Freight = 3, Passenger = 2, Overall = 1)) +
-  ggplot2::scale_size_manual(values = c(Freight = 0.5, Passenger = 0.5, Overall = 1)) +
+  ggplot2::scale_linetype_manual(values = c(Freight = 3, Overall = 1, Passenger = 2)) +
+  ggplot2::scale_size_manual(values = c(Freight = 0.5, Overall = 1, Passenger = 0.5)) +
   ggplot2::labs(x = ggplot2::element_blank(), 
                 y = "Transportation Services Index [-]", 
                 linetype = ggplot2::element_blank(), 
