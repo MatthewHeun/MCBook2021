@@ -608,7 +608,14 @@ Compact Fluorescent Lights (CFLs)\index{lamps!electric!compact fluorescent (CFL)
 Light-Emitting Diode (LED)\index{lamps!electric!light emitting diode (LED)}
 lamps have revolutionized
 the lighting industry and improved lighting efficiency significantly.
-LED lamps are 6--10 times more efficient than incandescent lighting. % **** citation needed.
+LED lamps are 8 times more efficacious than incandescent lighting.%
+\footnote{
+  A 100-W incandescent lamp gives about 1230~lumens or 12.3~lumens/W.
+  A 100-W equivalent LED lamp gives 1200~lumens and consumes only 12~W of electricity,
+  for an efficacy of 100~lumens/W.
+  The efficacy increase from incandescent to LED lamps is a factor of 8.
+}
+%
 In addition, LED lamps promise much longer lifetimes,
 with more than 10 times longer service per bulb than incandescents.
 Both higher efficiency and longer life reduce total cost of ownership
