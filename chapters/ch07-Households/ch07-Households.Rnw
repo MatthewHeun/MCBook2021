@@ -698,14 +698,16 @@ One Watt Initiative
       to get closer to a circular economy?
 
 \item \label{question:household_policies} Here are several household-related sustainability policies:
-      (a) require everyone to live in cities like Manhattan (to reduce commuting distances), 
-      (b) outlaw clothes washers that use hot water (to save CO$_2$ emissions from water heating),
-      (c) outlaw automatic dishwashers (to reduce energy consumption for water heating),
-      (d) require all clothes washing to be done at laundromats (to reduce embodied energy of clothes washers in every home),
-      (e) require all homes to undergo an energy efficiency retrofit before going on the market to be sold
+   \begin{enumerate}
+      \item require everyone to live in cities like Manhattan (to reduce commuting distances), 
+      \item outlaw clothes washers that use hot water (to save CO$_2$ emissions from water heating),
+      \item outlaw automatic dishwashers (to reduce energy consumption for water heating),
+      \item require all clothes washing to be done at laundromats (to reduce embodied energy of clothes washers in every home),
+      \item require all homes to undergo an energy efficiency retrofit before going on the market to be sold
           (to improve energy efficiency of the housing stock),
-      (f) require all homes to generate solar electricity onsite (to move quickly to a renewable future), and
-      (g) prohibit clothing made from synthetic fibers (to minimize microplastic pollution).
+      \item require all homes to generate solar electricity onsite (to move quickly to a renewable future), and
+      \item prohibit clothing made from synthetic fibers (to minimize microplastic pollution).
+   \end{enumerate}
       Which of these policies would you welcome? 
       Which would you reject?
       Why?
@@ -749,8 +751,8 @@ One Watt Initiative
       RECS Table CE 7.2 reports that wood heated 12.5 million housing units in
       2015 (10.6\% of all housing units) and was 5.6\% of all BTUs used for
       household heating. 
-      For around 60\% of housing units wood is the main source of heat. 
-      For about 40\% it's secondary.
+      (For around 60\% of housing units wood is the main source of heat;
+      for the other 40\% it's secondary.)
       % Pre-1950s houses are most likely to use wood heat.
       Wood heating in the U.S. is carbon neutral. 
       However, wood heating isn't exactly sustainable. 
