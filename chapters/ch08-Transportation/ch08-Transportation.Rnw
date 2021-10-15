@@ -258,27 +258,34 @@ which led to flattening of total CO$_2$ emissions,
 even as passenger transportation services rose through the 2005--2007 timeframe (Figure~\ref{fig:TSI}).
 
 
-\begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch08-Transportation/figures/co2_emissions_by_transportation_mode.pdf}
-\caption{CO$_2$ emissions by transportation mode.}
-\label{fig:transport_GHG_emissions}
-\end{figure}
-
-
-<<transport_GHG_emissions>>=
+<<transport_GHG_emissions, fig.cap="CO$_2$ emissions from U.S.\\ transportation. Source: **** Get source from Anjana. ****">>=
 transport_GHG <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "CO2_emissions_transport.xlsx"),
                                      sheet = "data to plot") %>% 
-  tidyr::pivot_longer(cols = -Year, names_to = "mode", values_to = "M_tonnes_CO2_eq")
+  dplyr::rename(
+    `Small trucks` = "Light-Duty Trucks", 
+    `Large trucks` = "Medium- and Heavy-Duty Trucks",
+    Other = "Other Transportation",
+    Cars = "Passenger Cars", 
+    Maritime = "Ships and Boats"
+  ) %>% 
+  tidyr::pivot_longer(cols = -Year, names_to = "mode", values_to = "M_tonnes_CO2_eq") %>% 
+  dplyr::mutate(
+    mode = factor(mode, levels = c("Other", "Buses", "Maritime", "Motorcycles", "Pipelines", "Rail",
+                                   "Aircraft", "Small trucks", "Large trucks", "Cars"))
+  )
 
 transport_GHG %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "M_tonnes_CO2_eq", fill = "mode")) +
-  ggplot2::geom_area()
+  ggplot2::geom_area() + 
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = expression("U.S. transport emissions [Mtonnes " * CO[2] * "e]"),
+                # y = expression("Transport emissions"), 
+                fill = ggplot2::element_blank()) +
   
+  ggplot2::scale_fill_viridis_d(direction = -1) +
   
-
+  MKHthemes::xy_theme()
 @
-
 
 
 It is clear that the transport sector needs to change
