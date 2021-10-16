@@ -97,12 +97,33 @@ Hygiene (including water heaters, clothes dryers, dishwashers, and clothes washe
 consumes 18.5\% of household energy.
 Lighting is 6.6\% of total household energy use.
 
-\begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch07-Households/figures/Average_US_Residential_Energy_Consumption.pdf}
-\caption{Average U.S.\ residential energy consumption by end use~\citep[Fig.~3]{EIA_2018}. **** Use new data from Anjana in file 7.1 data.xlsx. ****}
-\label{fig:average_residential_energy}
-\end{figure}
+
+<<average_residential_energy, fig.cap="Final energy consumption in U.S.\\ households by end use. Space heating includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. Space cooling includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. Refrigerators includes electricity for refrigerators and standalone freezers. Laundry includes electricity, natural gas, and propane for clothes washers and dryers. Cooking includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers. Entertainment includes electricity and natural gas for TVs, pool pumps, and hot tubs. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
+household_energy_by_category <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "End_use_by_demand_category.xlsx"),
+                                               sheet = "data to plot") %>% 
+  dplyr::select("Category", "Percentage") %>% 
+  dplyr::mutate(
+    Category = factor(Category, levels = c("Space heating", "Water heating", 
+                                           "Space cooling", "Lighting", "Entertainment", "Refrigerators", "Cooking", 
+                                           "Laundry", "Other"))
+  )
+
+household_energy_by_category %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = Percentage, fill = Category)) + 
+  ggplot2::geom_bar(stat = "identity", width = 1) +
+  ggplot2::coord_polar(theta = "y", start = 0, direction = -1) +
+  ggplot2::geom_text(ggplot2::aes(x = 1.7, label = paste0(Percentage, "%")),
+                     position = ggplot2::position_stack(vjust = 0.5),
+                     colour = "gray50") +
+  viridis::scale_fill_viridis(discrete = TRUE) +
+  ggplot2::labs(x = NULL, y = NULL, fill = NULL) +
+  
+  MKHthemes::xy_theme() +
+  ggplot2::theme(axis.line = ggplot2::element_blank(),
+                 axis.text.x = ggplot2::element_blank(),
+                 axis.ticks = ggplot2::element_blank())
+@
+
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
