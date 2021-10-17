@@ -675,39 +675,32 @@ miss key differences associated with the production of different vehicle types a
 could lead to misguided comparisons across technologies.''
 
 
-
-
-
-<<auto_gwp, fig.cap = "Environmental impacts of three different automobiles. Data from~\\citet[Fig.~1]{Hawkins_2012}. GWP is global warming potential; MRD is mineral resource depletion; ICE is internal combustion engine; EV is electric vehicle; Euro indicates the European electricity mix; use phase excludes fuels.">>=
-
-# hawkins <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "EV data from Hawkins.xlsx"), 
-#                               sheet = "data to plot") %>% 
-#   tidyr::pivot_longer(cols = c("Base v"))
-
-
-# Add the data from file jiec532-sup-0001-S1.pdf, supplemental information for the Hawkins paper.
-data_string <- "Impact	Life cycle component	Li-NCM Euro	Li-NCM Coal	ICEV Gasoline\nGWP	Base vehicle	0.11	0.11	0.11\nGWP	Engine	0.02	0.02	0.01\nGWP	Other powertrain	0.05	0.05	0.02\nGWP	Battery	0.1	0.1	0\nGWP	Use phase	0.02	0.02	0.03\nGWP	Fuel/electricity	0.31	0.68	0.65\nGWP	End of life	0.01	0.01	0.01\nMRD	Base vehicle	0.22	0.22	0.22\nMRD	Engine	0.16	0.16	0.02\nMRD	Other powertrain	0.27	0.27	0.05\nMRD	Battery	0.26	0.26	0\nMRD	Use phase	0.05	0.05	0.03\nMRD	Fuel/electricity	0.05	0.05	0.01\nMRD	End of life	0	0	0"
-
-# Assign some variables to avoid warnings.
-utils::read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactors = FALSE) %>%
-  tidyr::gather(key = "car_type", value = "normalized_impact", "Li.NCM.Euro", "Li.NCM.Coal", "ICEV.Gasoline") %>%
+<<auto_gwp, fig.cap = "Normalized environmental impacts of three different automobiles. ``GWP'' is global warming potential. ``MRD'' is mineral resource depletion. ``ICE'' means internal combustion engine vehicles. ``EV'' means electric vehicle. ``Gas'' indicates a gasoline-powered vehicle. ``Euro'' indicates the European electricity mix. ``Coal'' indicates electricity exclusively from coal. ``Use phase'' excludes fuels. Source: \\citet[Fig.~1]{Hawkins_2012}.">>=
+Hawkins_life_cycle <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "EV data from Hawkins.xlsx"),
+                                         sheet = "data to plot") %>% 
+  tidyr::pivot_longer(c("Base vehicle", "Engine", "Other powertrain", "Battery", "Use phase", "Fuel/electricity", "End of life"), names_to = "Life.cycle.component", values_to = "normalized_impact") %>% 
+  dplyr::rename(
+    car_type = "Vehicle types"
+  ) %>% 
   dplyr::mutate(
     Life.cycle.component = factor(Life.cycle.component,
                                   rev(c("Base vehicle", "Engine", "Other powertrain",
                                         "Battery", "Use phase", "Fuel/electricity", "End of life"))),
-    car_type = dplyr::recode(car_type, Li.NCM.Euro = "EV-Euro", Li.NCM.Coal = "EV-Coal", ICEV.Gasoline = "ICE-Gas"),
     car_type = factor(car_type, levels = c("ICE-Gas", "EV-Euro", "EV-Coal"))
-  ) %>%
+  )
+
+Hawkins_life_cycle %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = car_type)) +
   ggplot2::geom_bar(mapping = ggplot2::aes(y = normalized_impact, fill = Life.cycle.component), width = 0.6, stat = "identity") +
   MKHthemes::xy_theme() +
   ggplot2::facet_wrap(~ Impact) +
   ggplot2::labs(x = ggplot2::element_blank(), y = "Normalized impact") +
+  viridis::scale_fill_viridis(discrete = TRUE, direction = -1, name = ggplot2::element_blank()) +
   ggplot2::scale_y_continuous(breaks = c(0, 0.5, 1)) +
-  ggplot2::scale_fill_discrete(name = element_blank()) +
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
+
 
 
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
