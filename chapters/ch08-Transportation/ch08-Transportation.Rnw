@@ -279,7 +279,6 @@ transport_GHG %>%
   ggplot2::geom_area() + 
   ggplot2::labs(x = ggplot2::element_blank(), 
                 y = expression("U.S. transport emissions [Mtonnes " * CO[2] * "e]"),
-                # y = expression("Transport emissions"), 
                 fill = ggplot2::element_blank()) +
   
   ggplot2::scale_fill_viridis_d(direction = -1) +
