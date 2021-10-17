@@ -675,7 +675,7 @@ miss key differences associated with the production of different vehicle types a
 could lead to misguided comparisons across technologies.''
 
 
-<<auto_gwp, fig.cap = "Normalized environmental impacts of three different automobiles for 150,000~km service life. ``GWP'' is global warming potential. ``MRD'' is mineral resource depletion. ``ICE'' means internal combustion engine vehicles. ``EV'' means electric vehicle. ``Gas'' indicates a gasoline-powered vehicle. ``Euro'' indicates the European electricity mix. ``Coal'' indicates electricity exclusively from coal. ``Use phase'' excludes fuels. Source: \\citet[Fig.~1]{Hawkins_2012}.">>=
+<<auto_gwp, fig.cap = "Normalized environmental impacts of three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential. ``MRD'' is mineral resource depletion. ``ICE'' means internal combustion engine vehicles. ``EV'' means electric vehicle. ``Gas'' indicates a gasoline-powered vehicle. ``Euro'' indicates the European electricity mix. ``Coal'' indicates electricity exclusively from coal. ``Use phase'' excludes fuels. Source: \\citet[Fig.~1]{Hawkins_2012}.">>=
 Hawkins_life_cycle <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "EV data from Hawkins.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(c("Base vehicle", "Engine", "Other powertrain", "Battery", "Use phase", "Fuel/electricity", "End of life"), names_to = "Life.cycle.component", values_to = "normalized_impact") %>% 
