@@ -105,7 +105,7 @@ passenger_km_by_mode %>%
 @
 
 
-<<tonnekm_by_mode, fig.cap="Ton-miles of freight transport by mode, 1980--2018. Pipeline is transportation of liquids (such as fuels) through pipelines. Source: U.S.\\ Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021vu}.">>=
+<<tonnekm_by_mode, fig.cap="Freight transport by mode, 1980--2018. ``Pipeline'' is transportation of liquids (such as fuels) through pipelines. Source: U.S.\\ Bureau of Transportation Statistics~\\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021vu}.">>=
 tonne_km_by_mode <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Freight_ton_miles.xlsx"), 
                    sheet = "data to plot") %>% 
   tidyr::pivot_longer(cols = -Year, names_to = "type", values_to = "tonmiles") %>% 
@@ -196,12 +196,33 @@ The low share of multi-passenger transportation modes (carpool and mass transit)
 indicates that large energy consumption and CO$_2$ emission savings could be obtained 
 from a society-wide transition to commuting modes different from driving alone.
 
-\begin{figure}
-\centering
-\includegraphics[width=1\linewidth]{chapters/ch08-Transportation/figures/Figure 2-6 Commute Mode Share 2015.JPG}
-\caption{Percentage of workers using various modes of transportation for commutes to work. Source: Bureau of Transportation Statistics \url{https://www.bts.gov/content/commute-mode-share-2015}.}
-\label{fig:commuter_percentage_by_mode}
-\end{figure}
+
+<<commuter_percentage_by_mode, fig.cap="Percentage of U.S.\\ commutes by mode. Note: ``Taxi'' includes motorcycles and other commuting modes. Source: U.S. Bureau of Transportation Statistics \\cite{U.S.-DOT-BTS:2019ww}.">>=
+commuter_mode_percentage <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Commuting modes.xlsx"),
+                                       sheet = "data to plot") %>% 
+  tidyr::pivot_longer(-Year, names_to = "mode", values_to = "percentages") %>% 
+  dplyr::mutate(
+    mode = factor(mode, levels = c("Bicycle", "Taxi", "Walked", "Worked at home", "Carpool", "Public transport", "Drove alone")), 
+    percentages = percentages * 100
+  )
+
+
+commuter_mode_percentage %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "percentages", fill = "mode")) +
+  ggplot2::geom_area() + 
+  
+  ggplot2::scale_x_continuous(limits = c(2000, 2020)) +
+  
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = expression("Commuting modes [%]"),
+                fill = ggplot2::element_blank()) +
+
+  ggplot2::scale_fill_viridis_d(direction = -1) +
+  
+  MKHthemes::xy_theme()
+
+@
+
 
 % An important factor for transportation demand is fuel price. 
 % Figures~\ref{fig:passengerkm_by_mode} and~\ref{fig:tonnekm_by_mode}
