@@ -96,13 +96,13 @@ consumes 21.9\% of household energy.
 Lighting constitutes 4.9\% of total household energy use.
 
 
-<<average_residential_energy, fig.cap="Final energy consumption in U.S.\\ households by end use. Space heating includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. Space cooling includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. Refrigerators includes electricity for refrigerators and standalone freezers. Laundry includes electricity, natural gas, and propane for clothes washers and dryers. Cooking includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers. Entertainment includes electricity and natural gas for TVs, pool pumps, and hot tubs. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
+<<average_residential_energy, fig.cap="Proportions of final energy consumption in U.S.\\ households by end use. Space heating includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. Space cooling includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. Refrigeration includes electricity for refrigerators and standalone freezers. Laundry includes electricity, natural gas, and propane for clothes washers and dryers. Cooking includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers. Entertainment includes electricity and natural gas for TVs, pool pumps, and hot tubs. Other includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_category <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "End_use_by_demand_category.xlsx"),
                                                sheet = "data to plot") %>% 
   dplyr::select("Category", "Percentage") %>% 
   dplyr::mutate(
     Category = factor(Category, levels = c("Space heating", "Water heating", 
-                                           "Space cooling", "Lighting", "Entertainment", "Refrigerators", "Cooking", 
+                                           "Space cooling", "Lighting", "Entertainment", "Refrigeration", "Cooking", 
                                            "Laundry", "Other"))
   )
 
@@ -140,7 +140,7 @@ The next results are expected in 2022 for survey year 2020.
 Guided by the aggregation above,
 this chapter focuses attention on four important sustainability topics
 that intersect with household life:
-purchasing or renting a home or apartment,
+size and location,
 heating and cooling,
 hygiene, and
 lighting.
