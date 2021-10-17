@@ -84,18 +84,16 @@ makes decisions with sustainability implications
 in their own home.
 
 Figure~\ref{fig:average_residential_energy} shows 
-end-use~\citep[Fig.~3]{EIA_2018}
-energy consumption\index{energy consumption!residential}
-for the average  U.S.\ residence.
+proportions of end-use energy consumption\index{energy consumption!residential}
+for the average U.S.\ residence.
 The end uses in Figure~\ref{fig:average_residential_energy}
 can be aggregated into form fewer categories.
 %of residential energy consumption.
 Space heating and cooling
-are 36.6\% of all household energy consumption
-(including furnace fans).
-Hygiene (including water heaters, clothes dryers, dishwashers, and clothes washers)
-consumes 18.5\% of household energy.
-Lighting is 6.6\% of total household energy use.
+comprise 54.4\% of all household energy consumption.
+Hygiene (including water heating and laundry)
+consumes 21.9\% of household energy.
+Lighting constitutes 4.9\% of total household energy use.
 
 
 <<average_residential_energy, fig.cap="Final energy consumption in U.S.\\ households by end use. Space heating includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. Space cooling includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. Refrigerators includes electricity for refrigerators and standalone freezers. Laundry includes electricity, natural gas, and propane for clothes washers and dryers. Cooking includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers. Entertainment includes electricity and natural gas for TVs, pool pumps, and hot tubs. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
@@ -139,35 +137,12 @@ The next results are expected in 2022 for survey year 2020.
 \end{mcframe}
 
 
-
-% <<Household-energy-by-end-use, fig.cap = "U.S. final energy consumption by end use 2015.">>=
-% household_energy_by_end_use <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "end-use-consumption-by-housing-type.xlsx"),
-%                                                   sheet = "data to plot")
-% 
-% #create pie chart
-% household_energy_by_end_use %>% 
-%    ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = Percentage, fill = End_use)) +
-%    ggplot2::geom_bar(stat = "identity", width = 1) +
-%    ggplot2::coord_polar(theta = "y", start = 0, direction = -1) +
-%    ggplot2::geom_text(ggplot2::aes(x = 1.65, label = paste0(Percentage, "%")), 
-%                       position = ggplot2::position_stack(vjust = 0.5), 
-%                       colour = "gray50") +
-%    viridis::scale_fill_viridis(discrete = TRUE) + 
-%    ggplot2::labs(x = NULL, y = NULL, fill = NULL) + 
-% 
-%    MKHthemes::xy_theme() +
-%    ggplot2::theme(axis.line = ggplot2::element_blank(),
-%                   axis.text.x = ggplot2::element_blank(),
-%                   axis.ticks = ggplot2::element_blank())
-% @
-
-
 Guided by the aggregation above,
 this chapter focuses attention on four important sustainability topics
 that intersect with household life:
 purchasing or renting a home or apartment,
 heating and cooling,
-hygeine, and
+hygiene, and
 lighting.
 
 
@@ -189,13 +164,6 @@ Figure~\ref{fig:EnergyConsAndHomeSize} shows the trend of
 energy consumption with respect to home size and
 confirms intuition that dwelling size is positively correlated 
 with energy consumption.\index{households!energy consumption}
-% \footnote{
-%    Note that the U.S.\ Energy Information Agency's (EIA's)
-%    Residential Energy Consumption Survey (RECS)
-%    provides much of the data for this chapter. 
-%    The most-recent RECS was released in 2015. 
-%    The next RECS reports are expected in 2022 and 2023.
-% }
 
 
 <<EnergyConsAndHomeSize, fig.cap="Average annual U.S.\\ household energy consumption by home size. (Biomass (wood), coal, district steam, and solar thermal are excluded.) Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
