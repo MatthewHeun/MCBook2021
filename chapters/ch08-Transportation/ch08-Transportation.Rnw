@@ -28,30 +28,33 @@
 % 
 % ****
 
-
-This is the second of four chapters in Part~\ref{part:sustainability_challenges}
-to discuss
-areas of life where sustainability challenges are relevant and important.
-This chapter covers transportation.
+This chapter covers transportation and
+is the second of four chapters in Part~\ref{part:sustainability_challenges}
+to discuss areas of life where sustainability challenges are relevant and important.
 Today, transportation services are provided by cars, trucks, trains, boats, and planes. 
 Energy for transportation is 
-supplied almost exclusively by liquid petroleum fuels,
-because of the high energy densities\index{energy density!liquid fuels} of those fuels
+supplied almost exclusively by petroleum-derived liquid fuels,
+because those fuels have high energy densities,\index{energy density!liquid fuels}
 as measured by both energy-to-mass and energy-to-volume ratios.
-The U.S.\ transportation sector emits more carbon than any other, 
+In the U.S.,\ transportation emits more carbon than any other sector ---
 \Sexpr{US_CO2_by_sector %>% 
 dplyr::filter(Sector == "Transportation") %>% 
 magrittr::extract2("Proportion [\\%]") %>% 
 round(1)}~\% 
-of all U.S.\ CO$_2$ emissions.
-(See Table~\ref{tab:corrected_co2_emissions}.)
-In addition, transportation CO$_2$ emissions are linked to other sectors.
+of all U.S.\ CO$_2$ emissions
+(see Table~\ref{tab:corrected_co2_emissions}).
+Moreover, CO$_2$ emissions from transportation are linked to other sectors.
 For example, household location (Chapter~\ref{chap:households}) 
-determines commuting distances and therefore CO$_2$ emissions for
+determines commuting distances, and therefore CO$_2$ emissions, for
 trips to work, school, church, and shops.
 
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This chapter, and the two following chapters, consider the many ways in which
 physical location, economic activity, energy, and resources are interrelated.
+\end{mcframe}
+
 This chapter begins by discussing
 demand for transportation services and
 drivers for that demand.
@@ -68,13 +71,13 @@ A summary concludes.
 Modern life requires transportation services\index{services!transportation}:
 people need to move long and short distances for work and pleasure, and
 goods must be shipped from far and near to satisfy human wants and needs.
-Transport service demand levels are usually quantified in
+Demand for transport services is usually quantified in
 passenger-km and tonne-km for personal and freight transport, respectively.
 Provision of U.S.\ transportation services by various modes of travel
 is shown in Figures~\ref{fig:passengerkm_by_mode}
 and~\ref{fig:tonnekm_by_mode}.
 Figure~\ref{fig:passengerkm_by_mode} shows that 
-passenger transport demand is fulfilled almost exclusively by ``Highway,''
+passenger transport demand is fulfilled almost exclusively by ``highway,''
 meaning automobiles travelling on roads.
 In contrast, Figure~\ref{fig:tonnekm_by_mode} shows that 
 freight transport demand is satisfied by a variety of modes.
@@ -138,15 +141,17 @@ tonne_km_by_mode %>%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 At the macro scale, 
-economic activity is a large driver of demand for transport.
+economic activity is a large driver of demand for transport
+(for example, see Figure~\ref{fig:CarbonEmissionsGraph}, which shows
+decreased CO$_2$ emissions during recessions).
 The U.S.\ Bureau of Transportation Statistics (BTS)
-calculates a monthly ``Transportation Services Index'' (TSI),
-a weighted and indexed measure of
-freight traffic and passenger travel
-that measures transportation services 
-output~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.
+calculates a monthly measure of transportation services 
+output~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}
+called the ``Transportation Services Index'' (TSI),
+which is a weighted and indexed measure of
+freight traffic and passenger travel.
 Figure~\ref{fig:TSI} shows the variation of the TSI over time.
-Two patterns evident:
+Two patterns are evident:
 (a) the general growth of the economy over time drives ever-growing demand for transportation services and
 (b) recessions (2009) and pandemics (2020) are ways to
 reduce demand for transportation services.
@@ -192,9 +197,9 @@ daily commuting to work and school and
 travel for business and pleasure.
 For daily work commutes, Figure~\ref{fig:commuter_percentage_by_mode}
 shows the percentage of workers that use each mode of transportation.
-But the low share of multi-passenger transportation modes (carpool and mass transit)
-indicates that large energy consumption and CO$_2$ emission savings could be obtained 
-from a society-wide transition to toher commuting modes besides driving alone.
+The low share of multi-passenger transportation modes (carpool and mass transit)
+indicates that large reductions to energy consumption and CO$_2$ emission could be obtained 
+with a society-wide transition to other commuting modes besides driving alone.
 That said, the fact that commuting behavior has changed little in the years covered by
 Figure~\ref{fig:commuter_percentage_by_mode} indicates that 
 a transition to multi-passenger transportation modes may be difficult to effect.
@@ -241,14 +246,24 @@ in recent years.
 Sustainability challenges arising from transportation include
 particulate matter (PM) and CO$_2$ emissions, 
 both from burning liquid fossil fuels.
+Concerns about the effects of PM\index{particulate matter}
+on human health go back millennia, and with good cause.
+PM emissions are ``the main contributor to human health effects 
+[by air pollution] by some margin''~\cite{Fowler2020}.
+PM ``is also the form in which most of the long-range transport 
+of sulfur and nitrogen-containing pollutants occurs''~\cite{Fowler2020}.
+Hippocrates (circa 400 BC) writes about the effects of wood smoke.
+Later, coal soot was an additional concern. 
+Problems in urban centers intensified with the introduction of early (dirty) internal 
+combustion engines.
+Since the mid-twentieth century, air quality in North America, Europe and Japan
+has improved.
+However, emissions in South and East Asia rose in the late twentieth and early 
+twenty-first centuries. 
+Global $SO_2$ emissions peaked about 1990 and global $NO_x$ emissions peaked around
+2018. 
+Global ammonia emissions, a key contributor to PM, continues to grow, however.
 
-
-**** History of urban air quality? ****
-
-Particulate matter\index{particulate matter}
-emissions from combustion of transportation fuels
-raise significant health concerns.
-**** More here about PM problems. ****
 
 Figure~\ref{fig:transport_GHG_emissions} shows trends of CO$_2$ transportation emissions by mode
 over time.
@@ -305,7 +320,7 @@ to achieve more sustainable passenger and freight transport.
 To improve the sustainability of the modern transportation system,
 two broad options exist: 
 improving efficiency and 
-transitioning to sustainable fuels.
+transitioning to sustainable energy sources.
 
 
 %++++++++++++++++++++++++++++++
@@ -313,8 +328,9 @@ transitioning to sustainable fuels.
 \label{sec:transportation_efficiency}
 %++++++++++++++++++++++++++++++
 
-Vehicle efficiency (actually, an ``efficacy'') is usually quantified in distance traveled per volume
-of fuel consumed.\index{efficiency!fuel}\index{efficiency!vehicle}.
+Vehicle efficiency %(actually, an ``efficacy'') 
+is usually quantified in distance traveled per volume
+of fuel consumed\index{efficiency!fuel}\index{efficiency!vehicle}.
 The U.S.\ fleet-average fuel efficiency of cars and trucks has varied 
 significantly over the past few decades.
 (See Figure~\ref{fig:US_mpg}.)
@@ -476,25 +492,27 @@ or 16~\% higher than the current value of 24~miles/gallon.
 The most effective way for manufacturers
 to increase vehicle fuel efficiency is to reduce vehicle mass.
 Lighter vehicles can be achieved by
-replacing steel components with aluminum or carbon fiber alternatives.
-Other design considerations that affect fuel efficiency include aerodynamics and fuel type (diesel or regular).
+replacing steel components with aluminum or carbon-fiber alternatives.
+Other design considerations that affect fuel efficiency include aerodynamics 
+and fuel type (diesel or regular).
 
 In addition to vehicle design, driving habits also influence fuel efficiency.
 Gentler driving (less acceleration, minimal dramatic braking) and
 constant speeds (using cruise control\index{cruise control}
 where appropriate)
-lead to improved vehicle efficiency (efficacy).
+lead to improved vehicle fuel economy. %efficiency (efficacy).
 
 Vehicle efficiency, by definition,
 focuses on the efficiency of the vehicle itself.
-But drivers don't buy fuel to move vehicles.
+However, drivers don't buy fuel to move vehicles.
 They pay for fuel to move people and freight!
-So another way to measure vehicle efficiency is the ratio of transport service to fuel volume consumed.
+So another way to measure vehicle efficiency is the ratio of transport service 
+to fuel volume consumed.
 Transport service efficiency\index{efficiency!transport service}
 is quantified in units of passenger-km/liter or tonne-km/liter
 for passenger transport and freight transport, respectively.
 This simple shift from vehicle efficiency to transport service efficiency
-exposes the opportunity presented by Figure~\ref{fig:commuting_by_mode}.
+exposes the opportunity presented by Figure~\ref{fig:commuter_percentage_by_mode}.
 When more that three-quarters of all commutes are taken in single-occupant vehicles,
 a simple way to improve transport service efficiency is to increase
 the occupancy rate of vehicles.
@@ -543,7 +561,7 @@ the largest portion is the last mile.
 
 Another way to improve the sustainability of modern transportation is to
 transition away from fossil fuels\index{fossil fuels}
-toward sustainable fuels,
+toward sustainable energy,
 thereby reducing the harmful environmental effects of fossil fuel combustion.
 Two solutions are often discussed:
 widespread use of biofuels\index{biofuels}
@@ -575,10 +593,10 @@ Biofuel consumption in the U.S.\ is shown in Figure~\ref{fig:Biofuel_cons}.
 Although biofuel consumption has risen dramatically since 2000, 
 the rise is mostly due to ethanol blending in gasoline.
 Unfortunately, the energy return on investment for ethanol production and is
-very poor, barely above 1.
+very poor, barely above 1 --- see Table~\ref{tab:eroi}.
 ``The entire state of Iowa, if planted in corn, 
 would yield approximately five days of gasoline alternative''~\cite{Cleveland:2006ux}.
-Thus, biofuels are unlikely to provide a long-term solution
+Thus, corn-derived ethanol, at least, is unlikely to provide a long-term solution
 for sustainable transport.
 
 <<Biofuel_cons, fig.cap = "U.S.\ biofuel consumption, 1981--2020. Source: U.S.\\ Energy Information Agency~\\cite{U.S.-Energy-Information-Agency:2021to}.">>=
@@ -618,24 +636,26 @@ across the full life cycle\index{life cycle!automobiles}
 of automobile use,
 from base vehicle manufacturing to end of life disposal,
 assuming 150,000~km service.
-Regular gasoline (gas) is consumed
-by internal combustion engine (ICE) vehicles\index{vehicle!internal combustion engine}.
-Electric vehicles (EVs)\index{vehicle!electric} consume electricity with different primary fuel mixes:
-the European mix (Euro)\index{electricity!European mix}
+Internal combustion engine (ICE) vehicles\index{vehicle!internal combustion engine}
+are considered to consume regular gasoline (gas).
+Electric vehicles (EVs)\index{vehicle!electric} are modeled as using electricity 
+generated by two different primary fuel mixes:
+the ``European mix'' (Euro)\index{electricity!European mix}
 or pure coal\index{coal}\index{electricity!from coal}.
 
 Figure~\ref{fig:auto_gwp} shows that EVs are clearly worse than ICE vehicles
 in terms of mineral resource depletion~(MRD)\index{resources!mineral!depletion of}.
-The material demands for engine and battery fabrication are much higher for EVs than for ICE vehicles.
-However, EVs provide benefits in terms of global warming potential~(GWP)
+The material demands for engine and battery fabrication are much higher for EVs 
+than for ICE vehicles.
+However, EVs \emph{can} provide benefits in terms of global warming potential~(GWP)
 relative to ICE vehicles
-if the electricity source is the European mix of primary fuels and renewables, because
-of lower lifetime fuel/electricity emissions.
+\emph{if}| the electricity source includes renewables (as in the ``Euro'' mix), 
+because of lower lifetime fuel/electricity emissions.
 In the case of the European electricity mix,
 the global warming benefits of EVs are achieved
 despite much larger emissions from battery manufacturing.
-The global warming benefits of ICE vehicles evaporate
-when coal electricity is consumed,
+However, the global-warming benefits of EVs evaporate
+when the electricity is generated from coal,
 because of higher electricity-related emissions.
 \citet[p.~61]{Hawkins_2012} point out that
 ``[e]nvironmental evaluations relying solely on fuel and powertrain efficiencies\index{efficiency!powertrain}
@@ -703,7 +723,7 @@ will never achieve its potential emissions reductions.
 This chapter introduced the demand passenger and freight transport
 and drivers of that demand.
 Sustainability aspects of transport,
-especially energy consumption, energy efficiency (really, efficacy),
+especially energy consumption, energy efficiency, % (really, efficacy),
 and climate change (the prime example of Part~\ref{part:IPARC})
 were discussed.
 Finally, transitions to a sustainable transport system were discussed
@@ -734,22 +754,15 @@ including transport efficacy, biofuels, and electric vehicles.
 
 \begin{questions}
 
-\item In Section~\ref{sec:transportation_efficiency},
-      the move from machine efficiency (measured in miles/gallon) to
-      service efficiency (actually efficacy, measured in passenger-km/gallon)
-      revealed insights about the transportation sustainability challenge,
-      namely that filling empty seats in cars is a simple and effective form of increasing efficiency.
-      Consider a different sustainability challenge besides transportation.
-      Develop or find a machine efficiency for your challenge
-      that is analogous to vehicle efficiency in miles/gallon.
-      Develop or find a service efficiency for your challenge
-      that is analogous to passenger-km/gallon.
-      What changes when you move from machine efficiency to service efficiency?
-      How does the move from machine efficiency to service efficiency
-      affect the way you think about the sustainability challenge?
-      Does the move from from machine efficiency to service efficiency
-      suggest new solutions to the sustainability challenge?
 
+\item E-commerce deliveries have been increasing prominent recently. 
+      How does this compare to consumers traveling to stores to make purchases?
+      What if e-commerce delivery meant that purchases were delivered to a 
+      neighborhood location from which customers had to pick packages?
+      Consider the implications of these alternatives.
+      What would be the effects on energy consumption, the built environment,
+      time, convenience (that is, affluence), and accessibility?
+      
 \item Under the right conditions (European electricity mix, 150,000~km service life),
       \citet{Hawkins_2012} show that
       electric vehicles provide GHG emissions reductions relative to internal combustion engine vehicles
@@ -782,6 +795,22 @@ including transport efficacy, biofuels, and electric vehicles.
       implications of the alternative?
       Compare and contrast.
       
+\item In Section~\ref{sec:transportation_efficiency},
+      the move from machine efficiency (measured in miles/gallon) to
+      service efficiency (actually efficacy, measured in passenger-km/gallon)
+      revealed insights about the transportation sustainability challenge,
+      namely that filling empty seats in cars is a simple and effective form of increasing efficiency.
+      Consider a different sustainability challenge besides transportation.
+      Develop or find a machine efficiency for your challenge
+      that is analogous to vehicle efficiency in miles/gallon.
+      Develop or find a service efficiency for your challenge
+      that is analogous to passenger-km/gallon.
+      What changes when you move from machine efficiency to service efficiency?
+      How does the move from machine efficiency to service efficiency
+      affect the way you think about the sustainability challenge?
+      Does the move from from machine efficiency to service efficiency
+      suggest new solutions to the sustainability challenge?
+
 \item The embodied energy (and embodied CO$_2$) of transportation systems 
       is an important aspect of their implementation and use.
       Find or estimate the embodied energy and embodied CO$_2$

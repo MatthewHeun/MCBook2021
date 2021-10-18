@@ -456,7 +456,8 @@ Hydroelectric & 50 \\ \midrule
 Concentrated solar thermal & 21 \\ \midrule
 Wind energy & 16-21 \\ \midrule
 Solar photovoltaic & 4-7 \\ \midrule
-Biofuels & 0.8-1.6 \\ %%  from T. Gomiero 2015
+Biofuels (incl. U.S. corn ethanol) & 0.8-1.6 \\ \midrule %%  from T. Gomiero 2015
+Brazilian sugar-cane ethanol & 8.6-10.2\\ % https://en.wikipedia.org/wiki/Ethanol_fuel_in_Brazil
 \bottomrule \end{tabular}
 \end{table}
 
