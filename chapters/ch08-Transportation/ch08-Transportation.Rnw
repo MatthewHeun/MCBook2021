@@ -836,16 +836,47 @@ The high cost of free parking.
       economic inequality (who can afford to pay and who can't), civil liberties
       (from the automated systems that collect the tolls), who decides and who 
       benefits (residents vs. visitors), and what the extra tax money will be spent on.
-      Fundamentally, does it make sense --- if roads are a \emph{public} good ---
+      \begin{enumerate}
+      \item Fundamentally, does it make sense --- if roads are a \emph{public} good ---
       to intentionally restrict their use? Why or why not? 
-      Who gets to decide, for example residents or visitors? Who should get to decide?
-      Should your (nearest) local city implement congestion pricing? Why or why not?
-      Which congestion pricing objective(s) are most important?
+      \item Who gets to decide, for example residents or visitors? Who should get to decide?
+      \item Should your (nearest) local city implement congestion pricing? Why or why not?
+      \item Which congestion pricing objective(s) are most important?
       Which objection(s) are most important?
+      \end{enumerate}
 
-\item Stroads and unsafe by design. Many ways to (implicitly) calculate the value 
-      of a human life. Commute time again.
-
+\item Strong Towns defines a road as a high-speed connection between two places,
+      a street as a human-centric place where people interact with homes and businesses,
+      and stroads as dangerous and expensive hybrids that are ultimately ineffective
+      at doing the job of either a street or a road. 
+      Pedestrian fatalities increased from 4,302 in 2010 to 6,374 in 2019,
+      an increase of 46\% over the decade and representing 17\% of all traffic fatalities.
+% https://arstechnica.com/cars/2021/03/us-pedestrian-deaths-rose-sharply-in-the-first-half-of-2020
+      Preliminary data for 2020 from the \href{https://www.ghsa.org/resources/Pedestrians21}
+      {Govenor's Highway Safety Association} reports a further 4.8\% increase in pedestrian 
+      deaths over 2019.
+      \href{https://smartgrowthamerica.org/dangerous-by-design/}{Dangerous by Design 2021}
+      makes three important points. 
+      First, the risk of being struck and killed by a vehicle falls disproportionately
+      on the poor and elderly. % I suspect this is largely correlation.
+      Second, traffic flow design faces a fundamental tradeoff between traffic volume (speed)
+      and pedestrian safety.
+      Third, the physical design of the road, street, or stroad makes concrete 
+      (if you'll pardon the pun) the extent to which we value transportation versus
+      human life. (``Failing to act is consenting to more preventable deaths.'')
+      However, we have \emph{de facto} estimates on the worth of a human life;
+      for simplicity, let's use the \$10 million estimate~\cite{NPR_4_23_2020}.
+      \emph{Finally} some questions: 
+      \begin{enumerate}
+      \item Using the cost of a commute at \$80 per hour from 
+      question Q8.4 above, what are 2019 pedestrian deaths worth in terms of hours of 
+      additional commute? 
+      \item Is this how we should do street, road, and stroad design?
+      \item Speculate on reasons why pedestrian deaths have increased in recent years.
+      \item Where do you feel safe walking? Where do you not feel safe walking? Why?
+      \item Are there things you would like your local traffic planners to change?
+      \end{enumerate}
+      
 \item Houston bus route redesign. Iterative design.
 
 \item the hassle of air travel. The \emph{only} important thing is cheap fare.
