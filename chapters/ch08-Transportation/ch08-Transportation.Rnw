@@ -735,23 +735,22 @@ The high cost of free parking.
       a street as a human-centric place where people interact with homes and businesses,
       and stroads as dangerous and expensive hybrids that are ultimately ineffective
       at doing the job of either a street or a road. 
-      Pedestrian fatalities increased from 4,302 in 2010 to 6,374 in 2019,
+      Pedestrian fatalities increased from 4,302 in 2010 to 6,301 in 2019,
       an increase of 46\% over the decade and representing 17\% of all traffic fatalities.
 % https://arstechnica.com/cars/2021/03/us-pedestrian-deaths-rose-sharply-in-the-first-half-of-2020
-      Preliminary data for 2020 from the \href{https://www.ghsa.org/resources/Pedestrians21}
-      {Govenor's Highway Safety Association} reports a further 4.8\% increase in pedestrian 
+      Preliminary data for 2020~\cite{ghsa2021} reports a further 4.8\% increase in pedestrian 
       deaths over 2019.
-      \href{https://smartgrowthamerica.org/dangerous-by-design/}{Dangerous by Design 2021}
-      makes three important points. 
-      First, the risk of being struck and killed by a vehicle falls disproportionately
+      Notice three important points~\cite{DbyD2021}: 
+      first, the risk of being struck and killed by a vehicle falls disproportionately
       on the poor and elderly. % I suspect this is largely correlation.
-      Second, traffic flow design faces a fundamental tradeoff between traffic volume (speed)
+      Second, there is a fundamental tradeoff between traffic volume (speed)
       and pedestrian safety.
       Third, the physical design of the road, street, or stroad makes concrete 
       (if you'll pardon the pun) the extent to which we value transportation versus
       human life. (``Failing to act is consenting to more preventable deaths.'')
-      However, we have \emph{de facto} estimates on the worth of a human life;
-      for simplicity, let's use the \$10 million estimate~\cite{NPR_4_23_2020}.
+      Let's examine the tradeoff between traffic flow and safety.
+      There are many \emph{de facto} estimates on the worth of a human life;
+      for simplicity, let's use \$10 million~\cite{NPR_4_23_2020} per human life.
       \emph{Finally} some questions: 
       \begin{enumerate}
       \item Using the cost of a commute at \$80 per hour from 
