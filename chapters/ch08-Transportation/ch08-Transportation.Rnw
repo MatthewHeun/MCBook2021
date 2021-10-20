@@ -352,13 +352,15 @@ mpg_data <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "dat
   dplyr::filter(complete.cases(.))
 
 mpg_data %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "mpg", linetype = "type")) +
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "mpg", linetype = "type", size = "type")) +
   ggplot2::scale_linetype_manual(values = c(Car = 2, Fleet = 1, Truck = 3)) +
+  ggplot2::scale_size_manual(values = c(Car = 0.5, Fleet = 1, Truck = 0.5)) +
   ggplot2::scale_x_continuous(limits = c(1978, 2020)) +
   ggplot2::geom_line(colour = mc_title_blue) +
   ggplot2::labs(x = ggplot2::element_blank(), 
                 y = "Fuel economy [mpg]", 
-                linetype = ggplot2::element_blank()) +
+                linetype = ggplot2::element_blank(), 
+                size = ggplot2::element_blank()) +
 
   MKHthemes::xy_theme()
 @
