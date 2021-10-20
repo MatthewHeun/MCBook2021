@@ -780,21 +780,79 @@ and technology.
       \item Are there things you would like your local traffic planners to change?
       \end{enumerate}
       
-\item Houston bus route redesign. Iterative design.
+\item In 2015-2016, Houston Metro boosted bus ridership as the result of a two-year long 
+      process of community consultation that reallocated resources towards 
+      maximizing ridership.
+      The tradeoff was a shift away from maintaining access.
+      To put it another way, they went from many infrequent buses on low-ridership routes
+      to frequent buses on a few routes with high ridership.  
+      What is the purpose of public transit? 
+      Was Houston Metro's change appropriate or was it an example of rent seeking
+      by the ``tyranny of the majority?''
 
-\item the hassle of air travel. The \emph{only} important thing is cheap fare.
+\item In the early days of air travel, it was luxurious, in all senses of the word,
+      somewhat akin to the modern cruise industry. 
+      Over time, the cost of air travel has fallen significantly but so have the 
+      amenities. Meanwhile, the indignities have greatly increased (take off your 
+      shoes at security checkpoints, no water bottles, charging for carry-on bags).
+      \begin{enumerate}
+      \item Do you view these changes as a good or bad thing? Why?
+      \item What role does air travel play in your life? 
+      \item Do you expect that to change in the future? Why?
+      \item How would you change modern air travel if you could?
+      \end{enumerate}
 
-\item various ways to solve last-mile personal commute. False reasons why we don't
-      bike to work: sweaty. change clothes. (get a Dutch bike).
-      Carpooling (in part a last mile problem).
+\item Bicycling is one way to solve the last-mile problem for personal travel.
+      Typically, this means that you bike to and/or from another form of transit.
+      For example, you might bike to the train station, airport, or bus stop, ride or fly 
+      (with your bike onboard), and then bike to your final destination. 
+      Maybe you bike to and from a carpool lot.
+      There are a lot of reasons people give as to why this won't work out:
+      they'll get sweaty. They would need a change of clothes, etc.
+      Make a list of situations where bicycling could feasibly combined with
+      another form of travel. Include plain-vanilla bicycle commuting.
+      Next, brainstorm reasons people might give for why they wouldn't do each 
+      of those. 
+      Then, brainstorm solutions to each objection.
       
-\item Affluence of travel. What's your perception of the value of travel to you?
-      Figure 8.3.
+\item Recreational travel is a strong form of affluence. This association is both
+      anecdotal (``what would you do if you won the lottery?'') and in 
+      macroeconomic data, such as Figure~\ref{fig:TSI}.
+      What is the value of travel to you?
+      Where and how do you wish to travel?
+      Will you try to offset your carbon emissions (if any) and how?
       
-\item Ferry vs. bridge. What's the objective function? Minimum cost per year (given
-      what set of assumptions? If you build it, they will come!)? Fastest service?
+\item Consider the infrastructure choice of a vehicle ferry versus a bridge. 
+      What is the objective function? Is it minimum cost per year to deliver a 
+      set amount of service? (Given what set of assumptions? If you build it, 
+      they will come!) 
+      Is it fastest service? For a ferry service you are acquainted with (you 
+      might have to do a little research) how would you make the decision?
+      What stakeholders are you considering? Do sustainability considerations,
+      such as the IPARC equation, factor into your decision-making process?
       
-\item Hypermiling and autonomous vehicles. right to drive.
+\item Driving has long been a competitive sport. One lesser-known form of 
+      competition is ``hypermiling,'' which attempts to maximize fuel efficiency
+      of a stock vehicle, that is, not a purpose-built vehicle.
+      Hypermiling results in driving behaviors that are ... unorthodox, such as
+      long coasting decelerations to red lights and high-speed turns, both to 
+      avoid using the brakes.
+      The results can lead to fuel efficiencies two to four times greater than
+      the EPA ratings! (But, of course, somewhat dangerous behavior on the road.)
+      (See \cite{Gaffney2007} for an early and fascinating account.)
+      Future technology, such as vehicle-to-vehicle and vehicle-to-infrastructure
+      communication and greater computer control of driving functions, could both
+      boost fuel efficiency \emph{and} make hypermiling techniques safer to deploy
+      more broadly. 
+      (For instance, it might be possible to completely eliminate traffic lights.)
+      However, enhanced automation to achieve more fuel efficient and, perhaps,
+      greater traffic throughput, means a reduction in the amount of direct control
+      humans have over their vehicles. 
+      Do you welcome such automation? Why?
+      How would you respond to people who are preemptively petitioning for a 
+      ``right to drive?''
+      Are there circumstances where humans \emph{must} have control?
+      
 
 
 \end{questions}
