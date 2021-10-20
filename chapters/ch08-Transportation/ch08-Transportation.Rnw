@@ -793,13 +793,13 @@ The high cost of free parking.
       primarily from animal sources, particularly beef, that driving \emph{could}
       have less climate-change impact than walking but that, for the average 
       American diet, walking had less impact.
-      The analysis was for a relatively short trip --- 2.5 km (1.5 miles) ---
-      round trip, like walking to a store and back. The analysis included the 
-      difference between the metabolic rate for driving and walking. 
-      The analysis explicitly excluded the effects of embodied emissions in the 
+      The analysis was for a relatively short round trip, 2.5 km (1.5 miles),
+      like walking to a store and back. The analysis included the 
+      difference between the metabolic rate for driving and walking but 
+      explicitly excluded the effects of embodied emissions in the 
       vehicle and the road.
       What the analysis didn't include was the effect of time. 
-      Consider --- as completely as possible --- all the different ways it would 
+      Consider, as completely as possible, all the different ways it would 
       be possible to travel from Chicago to Seattle, a distance of just over 2000
       miles (3200 km). 
       Which transport mode will have the least emissions?
@@ -808,14 +808,14 @@ The high cost of free parking.
       
 \item As a preview of chapter \ref{chap:land_use_urban_planning}, there are strong
       connections between housing costs and the demand for transportation. 
-      Housing markets are regional \emph{because}, and to the extent that it is 
-      possible, to commute between home and work, school, shopping, etc.
+      Housing markets are regional precisely \emph{because} it is 
+      possible to commute between home and work, school, shopping, etc.
       ``Affordable'' housing is affordable only as long as the cost of commuting 
       is not too high.
       Happiness depends strongly on having a short commute \cite{Hilbrecht2014},
-      in part because of reduced physical activity and reduced time for other 
-      activities, which lead to stress. 
-      One author reports eliminating two hours of commuting per day as equivalent
+      in part because commuting reduces physical activity and reduces time for other 
+      activities, which leads to stress. 
+      One author reports eliminating two hours of commuting per day is equivalent
       (from a happiness perspective) to an additional \$40,000 of income \cite{Buettner2011}.
       Reflect on your current and future commuting plans, income, and domicile location.
       How do you balance these tradeoffs in your own life?
@@ -823,7 +823,7 @@ The high cost of free parking.
       a week for 50 weeks per year, is 500 hours of commuting. 
       Equating 500 hours of travel to \$40,000 is a wage of \$80/hour.
       
-\item Congestion pricing attempts to attenuate demand for a public good by manipulating price.
+\item Congestion pricing attempts to attenuate demand for a public good by manipulating its price.
       Application of congestion pricing to vehicular traffic in urban areas is becoming 
       increasingly common. The city of London has had such a scheme since 2003 and
       congestion pricing is currently being considered for New York City.
@@ -831,8 +831,8 @@ The high cost of free parking.
       urban air quality (electric vehicles can be exempted from the surcharge),
       fuller utilization of existing mass transit, reduced noise, better pedestrian
       safety, preservation of ``historic character,'' and improved transit times 
-      for all vehicle traffic (for example, including bus traffic).
-      Some common objections relate to (hypothetical) displaced traffic to suburbs,
+      for the remaining vehicle traffic (for example, bus traffic).
+      Some common \emph{objections} to congestion pricing relate to (hypothetical) displaced traffic to suburbs,
       economic inequality (who can afford to pay and who can't), civil liberties
       (from the automated systems that collect the tolls), who decides and who 
       benefits (residents vs. visitors), and what the extra tax money will be spent on.
@@ -840,8 +840,8 @@ The high cost of free parking.
       to intentionally restrict their use? Why or why not? 
       Who gets to decide, for example residents or visitors? Who should get to decide?
       Should your (nearest) local city implement congestion pricing? Why or why not?
-      What are the most important objective(s)?
-      Which reason or reasons are most important?
+      Which congestion pricing objective(s) are most important?
+      Which objection(s) are most important?
 
 \item Stroads and unsafe by design. Many ways to (implicitly) calculate the value 
       of a human life. Commute time again.
