@@ -336,7 +336,7 @@ significantly over the past few decades.
 (See Figure~\ref{fig:US_mpg}.)
 
 
-<<US_mpg, fig.cap = "U.S.\\ car and truck fuel efficiency">>=
+<<US_mpg, fig.cap = "U.S.\\ car, truck, and fleet fuel efficiency. Source: U.S.\\ National Highway Traffic Safety Administration \\cite{Hicks:2014tn, NHTSA2019tc}.">>=
 mpg_data <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Fleet FE Performance.xlsx"),
                                sheet = "data to plot") %>% 
   dplyr::rename(
