@@ -202,7 +202,7 @@ indicates that large reductions to energy consumption and CO$_2$ emission could 
 with a society-wide transition to other commuting modes besides driving alone.
 That said, the fact that commuting behavior has changed little in the years covered by
 Figure~\ref{fig:commuter_percentage_by_mode} indicates that 
-a transition to multi-passenger transportation modes may be difficult to effect.
+a transition to multi-passenger transportation modes may be difficult to affect.
 
 
 <<commuter_percentage_by_mode, fig.cap="Percentage of U.S.\\ commutes by mode. Note: ``Taxi'' includes motorcycles and other commuting modes. Source: U.S. Bureau of Transportation Statistics \\cite{U.S.-DOT-BTS:2019ww}.">>=
@@ -757,7 +757,7 @@ and technology.
       Preliminary data for 2020~\cite{ghsa2021} projects a further 4.8\% increase in pedestrian 
       deaths over 2019.
       
-      Notice three important points~\cite{DbyD2021}: 
+      An analysis of the data linked above makes three important points~\cite{DbyD2021}: 
       first, the risk of being struck and killed by a vehicle falls disproportionately
       on the poor and elderly. % I suspect this is largely correlation.
       Second, there is a fundamental tradeoff between traffic volume (speed)
