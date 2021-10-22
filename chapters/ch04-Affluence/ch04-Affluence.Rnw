@@ -343,6 +343,7 @@ Therefore, for world GDP, $nx=0$.
 We don't import from or export to space, yet.
 
 \subsection{Production/Consumption balance}
+\label{sec:PCbalance}
 While individuals and corporations may save money for purchases in the future, the
 economy as a whole balances production and consumption as closely as possible.
 \[ \label{eq:PCbalance}

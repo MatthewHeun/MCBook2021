@@ -59,23 +59,64 @@ that land use has strong sustainability implications.
 Those hints will become much more concrete and explicit in this chapter and 
 Chapter~\ref{chap:land_use_urban_planning}. 
 Agriculture is \emph{the} major use to which humans put the land,
-with an estimated 12\% of global ice-free land being used for crops, 37\% for pasture,
-and 22\% as forests for timber production~\cite{SRCCL2019}.
+with an estimated 12\% of global ice-free land being used for crops, 37\% for 
+pasture, and 22\% as forests for timber production~\cite{SRCCL2019}.
 
-Agriculture provides non-food products such as cotton, flax (for linen), flowers,
-and leather as well as food.
-However, this chapter will mostly focus on food products because humans cannot 
-live without it.
-Food provides energy for humans to pursue lives of work, service, and play
+In addition to land use and greenhouse gas (GHG) emissions, agriculture has one 
+more major implication for sustainability: humans cannot live without food.
+Agriculture does provide some nonfood products such as cotton, flax (for linen),
+flowers, and leather.
+However, this chapter will mostly focus on food products, in part because the 
+sustainability characteristics that apply to food agriculture also apply to 
+nonfood agriculture.
+
+Food is a source energy for humans to pursue lives of work, service, and play
 with family, friends, and co-workers.
+In contrast to some of the examples mentioned in Section~\ref{sec:recycling},
+food is \emph{not} a substitutable resource.
+Although humans can exist on a wide variety of diets, we can't directly metabolize 
+wood, cellulose, sunlight, or petroleum.
+
+\section{Food demand}
 Food consumption is rather predictable, because food energy intake (measured in 
 food calories) scales linearly with population. 
-Over a long period of time, 1870 to today, the amount people eat, in pounds of 
-food per day, has been relatively constant.
-In calories per day, there has been about a 22\% increase in the U.S. since 
-1967~\cite{Gordon2016}.
+Over a long period of time, at least since 1870 when such thing began to be 
+measured to today, the amount people eat, in pounds of food per day, 
+has been relatively constant.
+There is a fundamental, biological limit to the amount our bellies can hold.
+In the U.S., there has been about a modest (22\%) increase in calories consumed 
+per person per day since 1967~\cite{Gordon2016}.
+The trend has also been toward a more varied diet that includes more fresh foods.
 This trend towards a richer, more varied diet is repeated across the world as
 national economies grow.
+Thus, the global demand for food has two main drivers: population (P) is the primary
+driver of demand and affluence (A) is the secondary driver.
+
+As mentioned in Section~\ref{sec:PCbalance}, consumption and production are balanced,
+particularly for food, in part because humans prefer fresh food.
+Sometimes future food supply is cited as being a sustainability concern, usually on
+the basis of past and current food production. 
+However, because of the consumption/production balance, past and current production
+is a poor indicator of future food production capacity.
+Food is one of the few things humans \emph{can't} do without.
+Rising affluence (Figure~\ref{fig:AffluenceGraph-Maddison}) means there are lots
+of things we could (and would) do without before we would give up food.
+(The share of wealth spent on food goes down as affluence rises; food becomes
+relatively cheaper as economies develop.)
+Lastly, Section~\ref{sec:malthus_erlich_simon} suggests humanity will continue to
+have resources for food production.
+(Despite the fact that hunger continues to be an issue in the world today, food
+production is generally acknowledged to be adequate.
+Instead, there are distribution problems due to such factors as poverty and government
+corruption and/or oppression.)
+
+Equation~\ref{eq:IPARC} indicates reductions in agricultural impacts on the 
+environment, in the absence of a falling population or affluence (see 
+Section~\ref{sec:reducing_c}), can only come from reducing one of the two intensities
+of agriculture, the resource intensity (R) or the contamination intensity (C).
+The efficiency of agriculture, what inputs it requires and what impacts it produces
+are explored more in the following sections.
+
 
 \subsection{cool food facts}
 It takes 10 units of energy (mostly fossil fuel) to produce one unit of food energy.
