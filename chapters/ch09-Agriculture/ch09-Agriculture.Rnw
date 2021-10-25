@@ -36,7 +36,7 @@ Likewise, the energy use (37.3\%) and CO$_2$ emissions (36.3\%) of transportatio
 motivated Chapter~\ref{chap:transportation}.
 Aggregating the other two categories in Table~\ref{tab:corrected_co2_emissions},
 commercial and industrial sources are responsible for 47\% of 
-the energy used in the United States and 44\% of US CO$_2$ emissions. 
+U.S. energy use and 44\% of U.S. CO$_2$ emissions. 
 However, this book does not dedicate individual chapters to commerce and industry. 
 For households and transportation, it is possible to provide technical details 
 about sustainability that apply to the entire category.
@@ -45,15 +45,15 @@ details and sustainability concerns; there is little commonality within the
 categories. 
 Moreover, even if we were to present details for, say, automobile manufacturing 
 or the film industry, those details would be somewhat boring to read and would 
-not contribute (as much) to an overall framework for sustainability.
+not contribute (as much) to an overall framework for sustainability thinking.
 
 Instead, this chapter covers agriculture as an \emph{example} industrial/commercial
 area. 
 Agriculture is a setting most readers will have (at least) an intuitive understanding of.
 Agriculture, forestry, and other land use together account for an estimated 23\% 
 of anthropogenic greenhouse gas emissions~\cite{SRCCL2019}. 
-Furthermore, agriculture has strong links to Chapter \ref{chap:land_use_urban_planning},
-land use.
+Furthermore, agriculture has strong links to land use, which is the focus of 
+Chapter \ref{chap:land_use_urban_planning}.
 It began to be evident in Chapters~\ref{chap:households} and~\ref{chap:transportation}
 that land use has strong sustainability implications. 
 Those hints will become much more concrete and explicit in this chapter and 
@@ -70,20 +70,20 @@ However, this chapter will mostly focus on food products, in part because the
 sustainability characteristics that apply to food agriculture also apply to 
 nonfood agriculture.
 
-Food is a source energy for humans to pursue lives of work, service, and play
-with family, friends, and co-workers.
+Food is the only source of energy humans can use to pursue lives of work, service, 
+and play.
 In contrast to some of the examples mentioned in Section~\ref{sec:recycling},
 food is \emph{not} a substitutable resource.
 Although humans can exist on a wide variety of diets, we can't directly metabolize 
-wood, cellulose, sunlight, or petroleum.
+wood, cellulose, sunlight, or petroleum, for example.
 
 \section{Food demand}
 Food consumption is rather predictable, because food energy intake (measured in 
 food calories) scales linearly with population. 
-Over a long period of time, at least since 1870 when such thing began to be 
-measured to today, the amount people eat, in pounds of food per day, 
-has been relatively constant.
-There is a fundamental, biological limit to the amount our bellies can hold.
+Over a long period of time, at least since 1870, when such things began to be 
+measured, until today, the amount people eat, in pounds of food per day, 
+has been relatively constant~\cite{Gordon2016}, which is unsurprising, since
+there is a fundamental, biological limit to the amount our bellies can hold.
 In the U.S., there has been about a modest (22\%) increase in calories consumed 
 per person per day since 1967~\cite{Gordon2016}.
 The trend has also been toward a more varied diet that includes more fresh foods.
@@ -101,11 +101,13 @@ is a poor indicator of future food production capacity.
 Food is one of the few things humans \emph{can't} do without.
 Rising affluence (Figure~\ref{fig:AffluenceGraph-Maddison}) means there are lots
 of things we could (and would) do without before we would give up food.
-(The share of wealth spent on food goes down as affluence rises; food becomes
+(The share of wealth spent on food goes down as affluence rises, meaning food becomes
 relatively cheaper as economies develop.)
-Lastly, Section~\ref{sec:malthus_erlich_simon} suggests humanity will continue to
-have resources for food production.
-(Despite the fact that hunger continues to be an issue in the world today, food
+Furthermore, Section~\ref{sec:malthus_erlich_simon} indirectly suggests humanity 
+will continue to have resources for food production.
+Therefore, total global food production should not be expected to be a major sustainability
+challenge.
+(Despite the fact that hunger continues to be an issue in the world today, current food
 production is generally acknowledged to be adequate.
 Instead, there are distribution problems due to such factors as poverty and government
 corruption and/or oppression.)
@@ -114,8 +116,8 @@ Equation~\ref{eq:IPARC} indicates reductions in agricultural impacts on the
 environment, in the absence of a falling population or affluence (see 
 Section~\ref{sec:reducing_c}), can only come from reducing one of the two intensities
 of agriculture, the resource intensity (R) or the contamination intensity (C).
-The efficiency of agriculture, what inputs it requires and what impacts it produces
-are explored more in the following sections.
+The efficiency of agriculture, in terms of what inputs it requires and what 
+impacts it produces are explored more in the following sections.
 
 
 \subsection{cool food facts}
