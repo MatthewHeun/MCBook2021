@@ -292,6 +292,27 @@ read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactors = FAL
 @
 
 
+<<FoodEmissionsPerKg, fig.height=4, fig.cap="Food CO$_2$ emissions per kg. Source: Our World in Data~\\cite{Ritchie:2021tl}.">>=
+food_emissions_per_kg <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "food-carbonfootprints.xlsx"), 
+                                             sheet = "data to plot") %>% 
+  dplyr::arrange(dplyr::desc(GHG_emissions_per_kilogram))
+order <- food_emissions_per_kg$Food
+food_emissions_per_kg <- food_emissions_per_kg %>% 
+  dplyr::mutate(
+    Food = factor(Food, levels = order)
+  )
+
+food_emissions_per_kg %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Food", y = "GHG_emissions_per_kilogram")) +
+  ggplot2::geom_bar(stat = "identity", fill = mc_title_blue) +
+  labs(x = ggplot2::element_blank(),
+       y = expression("Emissions [kg " * CO[2] * "equiv/kg food]"),
+       fill = ggplot2::element_blank()) +
+  MKHthemes::xy_theme() +
+  ggplot2::theme(axis.text.x = element_text(angle = 90, hjust = 1))
+@
+
+
 A second sustainabilty challenge that arises in food and agriculture
 is the greenhouse gas\index{greenhouse gases}
 emissions whose origin is the food delivery system.
