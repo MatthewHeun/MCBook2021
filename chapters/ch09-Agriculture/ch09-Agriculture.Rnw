@@ -259,37 +259,7 @@ sometimes across the Pacific Ocean to the U.S.
 Odor from concentrated animal operations can cause objectionable odors for nearby
 neighbors.
 However, the most globally important form of air emissions is of greenhouse gases,
-see Figures~\ref{fig:pounds_serving}, \ref{fig:GHG_food}, and~\ref{fig:GHG_from_food}.
-
-<<pounds_serving, fig.cap="Carbon dioxide equivalent emissions per serving of various foods~\\cite{Heller_2014}.">>=
-data_string <-
-"Pounds CO2 per Serving	Product\n
-6.61	Beef\n
-2.45	Cheese\n
-1.72	Pork\n
-1.26	Poultry\n
-0.89	Eggs\n
-0.72	Milk\n
-0.16	Rice\n
-0.11	Legumes\n
-0.07	Carrots\n
-0.03	Potatoes"
-
-read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
-  dplyr::mutate(
-    Product = factor(Product, levels = c("Beef", "Cheese", "Pork", "Poultry", "Eggs", "Milk", "Rice", "Legumes", "Carrots", "Potatoes")),
-    `kg CO2 per serving` = `Pounds CO2 per Serving` / 2.204623, # Convert lbm to kg.
-    `Pounds CO2 per Serving` = NULL
-  ) %>%
-  ggplot2::ggplot() +
-  ggplot2::geom_bar(ggplot2::aes(y = `kg CO2 per serving`, x = Product), stat = "identity", fill = mc_title_blue) +
-  labs(x = ggplot2::element_blank(),
-       y = expression("Emissions [kg " * CO[2] * "/serving]"),
-       fill = ggplot2::element_blank()) +
-  guides(fill = "none") +
-  MKHthemes::xy_theme() +
-  ggplot2::theme(axis.text.x = element_text(angle = 90, hjust = 1))
-@
+see Figures~\ref{fig:FoodEmissionsPerKg}, \ref{fig:GHG_food}, and~\ref{fig:GHG_from_food}.
 
 
 <<FoodEmissionsPerKg, fig.height=4, fig.cap="Food CO$_2$ emissions per kg. Source: Our World in Data~\\cite{Ritchie:2021tl}.">>=
