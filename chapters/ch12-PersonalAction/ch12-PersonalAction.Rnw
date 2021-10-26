@@ -72,7 +72,7 @@ they spring into action because they see others rushing in with water.}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/energy_efficient_home_exterior.jpeg}
          \caption{Basement exterior.}
-         \label{fig:energy_efficient_home_exterior}
+         \label{fig:basement_exterior}
      \end{subfigure}
       \caption{Energy-efficient home with insulated basement.}
       \label{fig:energy_efficient_home}
@@ -98,7 +98,7 @@ they spring into action because they see others rushing in with water.}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/Roger10-4.jpeg}
          \caption{Commuting bicycle.}
-         \label{fig:suburban_grocery_store}
+         \label{fig:commuting_bicycle}
      \end{subfigure}
         \caption{Two efficient commuting options.}
         \label{fig:commuting_options}

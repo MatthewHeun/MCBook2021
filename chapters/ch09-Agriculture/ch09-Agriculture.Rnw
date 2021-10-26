@@ -261,8 +261,8 @@ neighbors.
 However, the most globally important form of air emissions is of greenhouse gases,
 see Figures~\ref{fig:pounds_serving}, \ref{fig:GHG_food}, and~\ref{fig:GHG_from_food}.
 
-<<pounds_serving, echo = "none", fig.align = "center", fig.width = 5, fig.height = 3.5, fig.scap = "Pounds of CO$_2$ per serving.", fig.cap = "Carbon dioxide (CO$_2$) equivalent emissions per serving of various foods~\\citep[Fig.~2]{Heller_2014}.">>=
-data_string <- 
+<<pounds_serving, fig.cap="Carbon dioxide equivalent emissions per serving of various foods~\\cite{Heller_2014}.">>=
+data_string <-
 "Pounds CO2 per Serving	Product\n
 6.61	Beef\n
 2.45	Cheese\n
@@ -275,20 +275,20 @@ data_string <-
 0.07	Carrots\n
 0.03	Potatoes"
 
-read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>% 
+read.table(text = data_string, sep = "\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE) %>%
   dplyr::mutate(
     Product = factor(Product, levels = c("Beef", "Cheese", "Pork", "Poultry", "Eggs", "Milk", "Rice", "Legumes", "Carrots", "Potatoes")),
     `kg CO2 per serving` = `Pounds CO2 per Serving` / 2.204623, # Convert lbm to kg.
     `Pounds CO2 per Serving` = NULL
-  ) %>% 
-  ggplot() + 
-  geom_bar(aes(y = `kg CO2 per serving`, x = Product, fill = Product), stat = "identity") +
-  # geom_text(aes(y = `kg CO2 per serving` + 0.15, x = Product, label = round(`kg CO2 per serving`, 1), group = Product), 
-  #           color = "gray50") +
-  labs(x = element_blank(), y = expression("Emissions [kg " * CO[2] * "/serving]"), fill = element_blank()) +
-  guides(fill = FALSE) +
-  MKHthemes::xy_theme() + 
-  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+  ) %>%
+  ggplot2::ggplot() +
+  ggplot2::geom_bar(ggplot2::aes(y = `kg CO2 per serving`, x = Product), stat = "identity", fill = mc_title_blue) +
+  labs(x = ggplot2::element_blank(),
+       y = expression("Emissions [kg " * CO[2] * "/serving]"),
+       fill = ggplot2::element_blank()) +
+  guides(fill = "none") +
+  MKHthemes::xy_theme() +
+  ggplot2::theme(axis.text.x = element_text(angle = 90, hjust = 1))
 @
 
 
