@@ -85,9 +85,9 @@ that convert solar energy\index{energy!solar}
 into available, ingestible energy\index{energy!ingestible}.
 This network is often called ``agriculture.''\index{agriculture}
 The economic value added of the agriculture, forestry, and fishing industry is 
-about1~\% of GDP for the U.S.\ 
-and about 3.5~\% of GDP worldwide~\cite{World-Bank-agriculture:aa}.
-But its importance goes far beyond its economic value.
+about 1\% of GDP for the U.S.\ 
+and about 3.5\% of GDP worldwide~\cite{World-Bank-agriculture:aa}.
+The importance of agriculture goes far beyond its economic value.
 Without agriculture, none of us would be here today!
 This chapter presents key information about the food system and explores its 
 sustainability challenges.
@@ -95,7 +95,7 @@ sustainability challenges.
 
 \section{Food demand}
 Food consumption is rather predictable, because food requirements (measured in 
-food calories, for example) scales linearly with population. 
+food calories, for example) scale linearly with population. 
 Over a long period of time, at least since 1870, when such things began to be 
 measured, until today, the amount people eat, in pounds of food per day, 
 has been relatively constant~\cite{Gordon2016}, which is unsurprising, since
@@ -133,7 +133,7 @@ environment, in the absence of a falling population or affluence (see
 Section~\ref{sec:reducing_c}), can only come from reducing one of the two intensities
 of agriculture, the resource intensity (R) or the contamination intensity (C).
 The efficiency of agriculture, in terms of what inputs it requires and what 
-impacts it produces are explored more in the following sections.
+impacts it produces are explored more in the following section.
 
 \section{Input/output analysis}
 When considering whether an activity is sustainable, input-output analysis is an 
@@ -186,9 +186,10 @@ be renewable, depending on the local and regional geology.
 If water is extracted from an aquifer faster than the aquifer regenerates, that is
 not sustainable.
 \paragraph{Fertilizers and agrichemicals} The most common fertilizers are contain
-nitrogen (N), potassium (K), and phosphorous (P). Agrichemicals include herbicides,
-pesticides, and fungicides. To the extent that any of these are derived from 
-nonrenewable feedstocks, such as fossil fuels, they are not strongly sustainable.
+nitrogen (N), phosphorous (P), and potassium (K). 
+Agrichemicals include herbicides, pesticides, and fungicides. 
+To the extent that any of these are derived from nonrenewable feedstocks, such as 
+fossil fuels, they are not strongly sustainable.
 On the other hand, about half of the fertilizer used globally is animal manure, 
 which is a renewable resource. 
 Animal manure could be a sustainable fertilizer, if the animals are raised sustainably,
@@ -198,12 +199,13 @@ labor to electricity and hydrocarbon fuels, either fossil fuels or biofuels.
 Energy is used at all stages of agriculture, from preparing the ground to sow crops,
 to harvesting, storage, transportation, cooking, and disposal of food.
 Because food is \emph{humanity's} energy source, we should consider the energy
-return on investment of food (see Section~\ref{sec:masterE}).
-EROI greater than one indicates that food is an energy source for humans, that is,
+return on investment (ERIO)\index{EROI} of food (see Section~\ref{sec:masterE}).
+An EROI greater than one indicates that food is an energy source for humans, that is,
 we obtain more energy from the food that it took to get the food.
-EROI less than on indicates we \emph{lose} energy getting the food. 
+An EROI less than on indicates we spend more energy getting the food than we get 
+\emph{from} the food. 
 However, since we have to have food, food is worth spending energy on.
-Whether getting food in this way is sustainable or not depend on where our energy
+Whether getting food in this way is sustainable or not depends on where our energy
 comes from. 
 
 \begin{figure}
@@ -219,10 +221,9 @@ Because food is energy, the overall energy efficiency of the food delivery syste
 Figure~\ref{fig:energy_flow_in_food_system} shows the energy consumed and supplied
 by various aspects of the food delivery system~\citep[Fig.~2]{Heller_2000}.
 The energy efficiency of the food delivery system is \Sexpr{format(1.4/10.2 * 100, digits = 3)}~\%.
-A good rule of thumb is that 
-it takes roughly 7 calories of energy to provide 1 calorie of food energy.
-Thus, the energy return on investment (EROI)\index{EROI}
-for the food system is only 1/7.
+%A good rule of thumb is that 
+With modern agriculture, it takes roughly 7 calories of energy to provide 1 calorie of food energy.
+Thus, the EROI for the food system is only 1/7.
 The fact that the energy efficiency of the food delivery system is less than 1
 means that the food delivery system is not a \emph{source} of energy for society. 
 Rather it is a \emph{sink} of energy for society.
@@ -248,7 +249,7 @@ by today's food energy return ratios is:
 
 
 \subsection{Agricultural outputs}
-Here we list some (not all) of the outputs, or by products, from agriculture and 
+Here we list some (not all) of the outputs, or byproducts, from agriculture and 
 consider their sustainability implications.
 \paragraph{Air} Sometimes farming practices can lead to air-quality problems 
 in the form of particulate matter.
@@ -258,8 +259,17 @@ soil particles are carried from China, Mongolia, and Kazakhstan to East Asia and
 sometimes across the Pacific Ocean to the U.S.
 Odor from concentrated animal operations can cause objectionable odors for nearby
 neighbors.
-However, the most globally important form of air emissions is of greenhouse gases,
-see Figures~\ref{fig:FoodEmissionsPerKg}, \ref{fig:GHG_food}, and~\ref{fig:GHG_from_food}.
+However, the most globally important form of air emissions is of greenhouse gases\index{greenhouse gases}.
+
+A second sustainability challenge that arises in food and agriculture
+is the greenhouse gas
+emissions whose origin is the food delivery system.
+Figure~\ref{fig:FoodEmissionsPerKg} shows the amount of CO$_2$ released 
+from the production and distribution of one kilogram 
+of several types of food~\cite{Ritchie:2021tl}.
+
+
+see Figures~\ref{fig:FoodEmissionsPerKg} and~\ref{fig:GHG_food}.
 
 
 <<FoodEmissionsPerKg, fig.height=4, fig.cap="Food CO$_2$ emissions per kg of food. Source: Our World in Data~\\cite{Ritchie:2021tl}.">>=
@@ -282,28 +292,10 @@ food_emissions_per_kg %>%
   ggplot2::theme(axis.text.x = element_text(angle = 90, hjust = 1))
 @
 
-
-A second sustainabilty challenge that arises in food and agriculture
-is the greenhouse gas\index{greenhouse gases}
-emissions whose origin is the food delivery system.
-Figure~\ref{fig:pounds_serving} shows the amount of CO$_2$ released 
-from the production and distribution of one serving 
-of several types of food~\citep[Fig.~2]{Heller_2014}.
-Figure~\ref{fig:pounds_serving} leads to two important observations:
-
-%
-% \begin{enumerate*}[label={(\alph*)}]
-% 	
-%   \item animal-based foods have much more environmental impact than plant-based foods and
-%   
-%   \item consuming food that is closer to the base of the food chain has environmental benefits.
-%     
-% \end{enumerate*}
-
 \begin{figure}
 \centering
 \includegraphics[width=0.75\linewidth]{chapters/ch09-Agriculture/figures/GHGfromFoodConsumption.pdf}
-\caption[GHG emissions from food.]{Percentages of greenhouse gas emissions from food~\citep[Fig.~2]{Heller_2014}.}
+\caption[GHG emissions from food.]{Food greenhouse gas emissions~\citep[Fig.~2]{Heller_2014}.}
 \label{fig:GHG_food}
 \end{figure}
 
