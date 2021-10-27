@@ -259,18 +259,23 @@ soil particles are carried from China, Mongolia, and Kazakhstan to East Asia and
 sometimes across the Pacific Ocean to the U.S.
 Odor from concentrated animal operations can cause objectionable odors for nearby
 neighbors.
-However, the most globally important form of air emissions is of greenhouse gases\index{greenhouse gases}.
+However, the most globally important form of air emissions is of greenhouse 
+gases\index{greenhouse gases}.
 
-A second sustainability challenge that arises in food and agriculture
-is the greenhouse gas
-emissions whose origin is the food delivery system.
-Figure~\ref{fig:FoodEmissionsPerKg} shows the amount of CO$_2$ released 
-from the production and distribution of one kilogram 
-of several types of food~\cite{Ritchie:2021tl}.
-
-
-see Figures~\ref{fig:FoodEmissionsPerKg} and~\ref{fig:GHG_food}.
-
+One source of greenhouse gas emissions in food and agriculture 
+is the food delivery system.
+Figure~\ref{fig:energy_flow_in_food_system} energy use in various stages of food
+distribution and preparation. The amount of CO$_2$ released is proportional to the
+amount of energy used.
+Figure~\ref{fig:FoodEmissionsPerKg} shows equivalent CO$_2$ emissions per kg of food.
+However, by itself Figure~\ref{fig:FoodEmissionsPerKg} is not terribly informative.
+We don't eat by the kg; we need a balanced diet that provides all of our essential
+nutrients.
+Figure~\ref{fig:GHG_food} shows what individual foods contribute to overall food
+emissions (but not what quantity of each are consumed).
+Taken together, Figures~\ref{fig:energy_flow_in_food_system}, \ref{fig:FoodEmissionsPerKg},
+and~\ref{fig:GHG_food} paint a suggestive (but incomplete!) narrative of agricultural
+CO$_2$ emissions.
 
 <<FoodEmissionsPerKg, fig.height=4, fig.cap="Food CO$_2$ emissions per kg of food. Source: Our World in Data~\\cite{Ritchie:2021tl}.">>=
 food_emissions_per_kg <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "food-carbonfootprints.xlsx"), 
@@ -346,6 +351,12 @@ food_emissions_per_kg %>%
 %   theme(plot.margin = unit(c(0,0,0,0),"mm"))
 %  @
 
+Another source of greenhouse gas emissions in agriculture is land use. 
+Tropical rainforest deforestation, particularly in Brazil and Indonesia, 
+contributes significantly to global GHG emissions.
+Over application of synthetic nitrogen-based fertilizers releases significant 
+amounts of N$_2$O, a very potent GHG.
+Globally, food and land use account for 24\% of GHG emissions.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -356,7 +367,29 @@ Factors such as transport distance and wastage percentages are important
 for determining GHG emissions from food.
 \end{mcframe}
 
+\paragraph{Water} Agriculture can have significant impacts on water quality and quantity.
+Agriculture accounts for 70\%-80\% of water use.
+If aquifers are exhausted, then future humans won't have water to drink or bath in.
+Agrichemicals can pollute surface water as well as ground water.
+For example, the city of Toledo, Ohio draws its drinking water from Lake Erie.
+Since the 1990s Lake Erie has been subject to ``blooms'' of toxic cyanobacteria
+fueled by fertilizer run off. 
+Six people got sick in 2013.
+In 2014, it was 110 people and the municipal water supply to 400,000 people was shut down.
+Moreover, Lake Erie and the Maumee River that feeds it were unsafe for human skin contact.
+Blooms occurred again in 2017 and 2019.
+Animal manure can also contaminate waterways. Ick.
 
+\paragraph{Soil} The main impact of agriculture on soil is erosion.
+Most erosion results from wind or water action on tilled soils, that is,
+where the land has been plowed to expose bare soil.
+In the Great Plains, these practices have lead to the loss of several feet of 
+topsoil.
+For example, a survey in Minot, North Dakota taken in 1900 found 40 cm of of black 
+topsoil. 
+In 2017, the area had no black topsoil; its soil was light gray.
+
+Farming can (and has had) impacts on biodiversity and habitat loss.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Agricultural efficiency}
