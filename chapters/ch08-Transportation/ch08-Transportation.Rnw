@@ -738,8 +738,11 @@ and technology.
       
 \item Congestion pricing attempts to attenuate demand for a public good by manipulating its price.
       Application of congestion pricing to vehicular traffic in urban areas is becoming 
-      increasingly common. The city of London has had such a scheme since 2003 and
-      congestion pricing is currently being considered for New York City.
+      increasingly common. 
+      One way to implement congestion pricing is to automatically charge a toll 
+      on every (nonexempt) vehicle entering the city center.
+      The London has had such a scheme since 2003 and congestion pricing 
+      is currently being considered for New York City.
       The \emph{objectives} of congestion pricing are many and various: improved
       urban air quality (electric vehicles can be exempted from the surcharge),
       fuller utilization of existing mass transit, reduced noise, better pedestrian
@@ -758,10 +761,15 @@ and technology.
       Which objection(s) are most important?
       \end{enumerate}
 
-\item Strong Towns defines a road as a high-speed connection between two places,
-      a street as a human-centric place where people interact with homes and businesses,
-      and stroads as dangerous and expensive hybrids that are ultimately ineffective
+\item \href{www.strongtowns.org}{Strong Towns.org} defines a \emph{road} as a high-speed 
+      connection (like an expressway) between two places,
+      a \emph{street} as a human-centric place where people interact with homes and businesses,
+      and \emph{stroads} as dangerous and expensive hybrids that are ultimately ineffective
       at doing the job of either a street or a road. 
+      (Stroads are often found near shopping malls and big-box stores. They have 
+      multiple lanes, high traffic volumes, but also many lights and connections to
+      business parking lots. 
+      Despite connecting to many businesses, stroads often have no sidewalks.)
       In the U.S., pedestrian fatalities increased from 4,302 in 2010 to 6,301 in 2019,
       an increase of 46\% over the decade and representing 17\% of all traffic fatalities.
 % https://arstechnica.com/cars/2021/03/us-pedestrian-deaths-rose-sharply-in-the-first-half-of-2020
