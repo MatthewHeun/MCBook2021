@@ -220,7 +220,6 @@ population and those variables interact in complex ways.
 
 \begin{figure}
 \centering
-
     \begin{tikzpicture}[%
         >=latex',
         circ/.style={draw, shape=circle, node distance=1cm, line width=1pt}]%Define the arrow type and style for circled nodes
