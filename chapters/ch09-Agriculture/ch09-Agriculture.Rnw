@@ -511,30 +511,23 @@ the American Supermarket}, Avery, 2020. \\
 Adam Ragusea has one of the best food-related channels on YouTube.
 His video \href{https://www.youtube.com/watch?v=GgHy8KQ4Ifg}
 {Problems with the Green Revolution} (September 20, 2021) provides
-a succinct yet complete introduction to some of the issues covered
-in this chapter.
+a succinct introduction to some of the issues covered
+in this chapter. His recipes are great too.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{questions}
-\item Verify the efficiency values in Section~\ref{sec:food_ag_features}.
-      Use Figure~\ref{fig:food_and_ag_material_flow} as the basis for your calculations.
+\item The traditional Inuit diet consisted of mostly hunted meat, such as seal,
+      walrus, and whale. 
+      Is it permissible/desirable to retain these traditional diets, given
+      the threatened status of many of the target species? 
+      What other options do such communities have?
+      What would be the effects of changing to other food sources?
       
-\item Verify the efficiency values in Section~\ref{sec:food_energy_return_ratios}.
-      Then perform your own research to find the proportions of coal, oil, and natural gas consumed
-      by the food and agriculture system.
-      Are we eating coal? Are we eating oil? Or are we eating natural gas?
       
-\item Use a food emissions calculator (such as the one suggested in this chapter~\cite{CleanMetrics:aa})
-      to estimate the greenhouse emissions from your food choices over the course of a week.
-      Compare to your peers.
-      How do your food-related emissions compare to your emissions from transportation-related activities?
-      Guided by the figures and advice in this chapter, 
-      develop an alternative diet and estimate its greenhouse gas emissions.
-      What amount of GHG emissions reductions can you obtain by changing your diet?
-      
+
 \item Dig deeper into the problem of food deserts. 
       Where are they most prevalent?
       What are their causes?
@@ -563,6 +556,22 @@ in this chapter.
       it get there? How did the almonds get to you? Are the environmental impacts
       of almond growing allocated to where the almonds are grown or where they are 
       consumed? How does this affect, for instance, urban and rural carbon footprints?
+
+\item Verify the efficiency values in Section~\ref{sec:food_ag_features}.
+      Use Figure~\ref{fig:food_and_ag_material_flow} as the basis for your calculations.
+      
+\item Verify the efficiency values in Section~\ref{sec:food_energy_return_ratios}.
+      Then perform your own research to find the proportions of coal, oil, and natural gas consumed
+      by the food and agriculture system.
+      Are we eating coal? Are we eating oil? Or are we eating natural gas?
+      
+\item Use a food emissions calculator (such as the one suggested in this chapter~\cite{CleanMetrics:aa})
+      to estimate the greenhouse emissions from your food choices over the course of a week.
+      Compare to your peers.
+      How do your food-related emissions compare to your emissions from transportation-related activities?
+      Guided by the figures and advice in this chapter, 
+      develop an alternative diet and estimate its greenhouse gas emissions.
+      What amount of GHG emissions reductions can you obtain by changing your diet?
       
 \end{projects}
 
