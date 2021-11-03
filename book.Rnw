@@ -28,6 +28,8 @@
 \usepackage{rotating}    % For rotating figures.
 \usepackage[normalem]{ulem} % For strikethrough text.
 \usepackage{subcaption}  % For labeling subfigures.
+\usepackage{tikz}
+\usetikzlibrary{arrows}
 \usepackage{wrapfig}     % To wrap text around figures.
 \usepackage{xcolor}      % makes colored text.
 
