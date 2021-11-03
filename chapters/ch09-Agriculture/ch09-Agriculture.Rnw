@@ -507,28 +507,61 @@ Indeed, the price of food has fallen, adjusted for inflation in the last 100 yea
 \label{sec:food_transitions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-To achieve a more-sustainable food system,
-changes on many levels will be needed, 
-from the personal to the global.
+% To achieve a more-sustainable food system,
+% changes on many levels will be needed, 
+% from the personal to the global.
+% 
+% On the personal level, 
+% eating closer to the base of the food chain and
+% pursuing vegetarian or vegan diets are among the most effective
+% ways to reduce negative environmental impacts of the food supply system.
+% Participating in the slow food movement can promote sustainability, 
+% as it seeks to promote traditional, regional cuisine, 
+% thereby reducing the distance from farm to plate.
+% 
+% At the global level,
+% organic farming seeks to limit the use of synthetic fertilizers and pesticides
+% by promoting the use of compost, manure, and natural practices.
+% Practices such as crop rotation and biological (as opposed to chemical) past control 
+% are encouraged.
+% 
+% The growing problem of food waste spans the personal and global levels.
+% Actions and policies to minimize food waste provide benefits such as 
+% reducing inputs to the food system and
+% strain on the biosphere. 
 
-On the personal level, 
-eating closer to the base of the food chain and
-pursuing vegetarian or vegan diets are among the most effective
-ways to reduce negative environmental impacts of the food supply system.
-Participating in the slow food movement can promote sustainability, 
-as it seeks to promote traditional, regional cuisine, 
-thereby reducing the distance from farm to plate.
+This section will attempt to describe a food \emph{system} that balances
+the desires to minimize the inputs and outputs of agriculture as described 
+above.
+Figures~\ref{fig:energy_flow_in_food_system} and~\ref{fig:GHG_food} might 
+seem to indicate that ideal agriculture does not involve any animals.
+However, agriculture is a generative (in the sense that it produces food) ecosystem.
+No ecosystem can function properly without animals. 
+Animal manure is critical to building soil productivity, which is critical to
+farming without agrichemicals.
+Moreover, for millennial, humans have raised animals on semi-arid, rocky, or other
+land that is not suitable for planting crops, which generates food for human
+use that would not otherwise be available. 
+About two thirds of our ``farmland'' is grazing land or pastures that would not 
+otherwise be farmable.
 
-At the global level,
-organic farming seeks to limit the use of synthetic fertilizers and pesticides
-by promoting the use of compost, manure, and natural practices.
-Practices such as crop rotation and biological (as opposed to chemical) past control 
-are encouraged.
+Concepts from permaculture, arcology, dry land farming, and no-till agriculture
+are necessary to farm without chemical inputs and irrigation that depletes 
+aquifers. 
+The specifics of such practices vary by region, climate, and crop species.
+These farms tend to produce a large variety of products, in contrast to ``row cropping''
+monocultures, which are more amenable to mechanized farming.
+The resulting farm system that tends to be management and labor intensive but 
+is more environmentally friendly. 
+However, the relatively higher amounts of human inputs make the food produced
+more expensive.
+Ultimately, reducing environmental impacts requires additional investment, which
+makes food more expensive, which is consistent with Equation~\ref{eq:IPARC}
+(reduced impact (I) comes from reduced affluence (A)).
 
-The growing problem of food waste spans the personal and global levels.
-Actions and policies to minimize food waste provide benefits such as 
-reducing inputs to the food system and
-strain on the biosphere. 
+A ``recipe'' for sustainable agriculture is given by food writer Michael Pollan,
+in seven words: ``Eat food. Not too much. Mostly plants.''
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
