@@ -185,6 +185,7 @@ On the other hand, groundwater used for irrigation is a resource that may or may
 be renewable, depending on the local and regional geology.
 If water is extracted from an aquifer faster than the aquifer regenerates, that is
 not sustainable.
+Currently, agriculture accounts for approximately 70\% of human fresh water use.
 \paragraph{Fertilizers and agrichemicals} The most common fertilizers are contain
 nitrogen (N), phosphorous (P), and potassium (K). 
 Agrichemicals include herbicides, pesticides, and fungicides. 
@@ -396,8 +397,7 @@ Farming can (and has had) impacts on biodiversity and habitat loss.
 \section{Agricultural efficiency}
 \label{sec:food_ag_efficiency}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Efficiency metrics (cal/acre, EROI, \$/acre). Land allocation to different crop types (see land use figure)
-Agriculture uses 70\% of water. About 2\% of US emissions are food that is discarded.
+
 \begin{figure}
 \centering
 \includegraphics[width=0.75\linewidth]{chapters/ch09-Agriculture/figures/Material_Flow_in_the_US_Food_System(1995_Flows_in_Million_Pounds).pdf}
@@ -462,8 +462,45 @@ weather- and climate-related supply-side disruptions are
 more significant than demand-side disruptions
 for determining food prices. 
 
+\subsection{Metrics}
+\label{sec:ag_metrics} 
+Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based efficiency for U.S.
+agriculture, which may, or may not, be relevant to sustainability.
+Other metrics by which the agriculture system could be judged are presented below.
 
+We could judge agriculture on the basis of how effectively each input is used.
+For example, land is a major factor in agriculture. 
+Relevant metrics for land use include the number of calories produced
+per acre or the (average) number of acres needed to provide complete 
+human nutritional requirements.
+One difference between these two metrics is that humans require more than just
+calories.
+In addition, neither of these measures provides guidance for improving efficiency
+while simultaneously preserving the human preference for variety in our diets;
+nobody wants to eat the ``optimal'' diet \emph{exclusively}.
+Another land-based metric is profitability per area, that is, money.
+One of the challenges for sustainability is to align motivation (such as prices
+or pricing structure) with desirable sustainability outcomes.
+Currently, the climate change impacts of food production do not directly impact
+the price of food.
 
+Various energy-based metric could be applied to agriculture.
+We could attempt to maximize the amount of food produced per energy consumed.
+Or we could attempt to maximize EROI.
+Another alternative is to minimize the amount of CO$_2$ produced in agriculture.
+Agriculture currently accounts for approximately 70\% of fresh water use.
+Minimizing the amount of water used in agriculture is important for several 
+aspects of sustainability, including the fact that pumping water requires energy.
+
+One drawback to each of the metrics mentioned above is that agriculture operates 
+under many constraints (such as the amount of available land, 
+satisfying human nutritional requirements and preferences, and being cost effective).
+Each metric is desirable but tradeoffs exist among them and the constraints 
+have to be satisfied.
+Price is generally the mechanism humans use to accommodate such tradeoffs, so
+minimizing the price of food could be an indicator of the effectiveness of the
+agricultural system. 
+Indeed, the price of food has fallen, adjusted for inflation in the last 100 years. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{A portrait of sustainable agriculture}
@@ -519,29 +556,115 @@ in this chapter. His recipes are great too.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{questions}
+\item One common metric for agricultural productivity is yield, the amount of a 
+      crop produced per area.
+      Such a metric does not account for efficiency, intensity, or EROI.
+      Of course, the most basic sustainability metric for agriculture is economic
+      profitability, (net) profit per acre.
+      How are these metrics different from one another?
+      How are they similar or inter-convertible?
+      Is there a disconnect between the economic aspects of agriculture and the
+      social and environmental aspects (see Figure~\ref{fig:venn_diagram})?
+      
+\item Yield (amount of food per area) versus the amount of landed needed to feed people
+      is a clear example of a tradeoff. 
+      Higher yields means less land is needed but is generally achieved by application
+      of agrichemicals and fossil-fueled mechanization of labor. 
+      Lower yields means more land is needed (thereby increasing land-based emissions 
+      and impacts).
+      Since land use is a significant contributor to global greenhouse gas emissions,
+      how should we think about minimizing total impact? That is, how should we
+      ``price'' different kinds of emissions/impacts?
+      What does use of the word ``price'' suggest about our approach to solving the
+      problem?
+      
 \item The traditional Inuit diet consisted of mostly hunted meat, such as seal,
       walrus, and whale. 
-      Is it permissible/desirable to retain these traditional diets, given
+      Is it permissible (or desirable) to retain these traditional diets, given
       the threatened status of many of the target species? 
       What other options do such communities have?
       What would be the effects of changing to other food sources?
       
-      
+\item Consider the tension between feeding hungry people and environmental 
+      impact. Supposed that you could save 100 lives by emitting an additional
+      100 tons of CO$_2$ equivalent per year. 
+      Would you do it or not? 
+      How many more lives or how much less carbon does it take to change
+      your answer? Why?
 
-\item Dig deeper into the problem of food deserts. 
-      Where are they most prevalent?
+\item Retail is an important part of the food supply chain.
+      Where are food deserts most prevalent? % Could be a project.
       What are their causes?
       What can be done to alleviate them?
       
 \item Food exports (or imports) are energy (or water) exports (or imports).
-      How does this look from an energy (or water) efficiency standpoint?
-      Money is the mechanism that we use to value economic transactions. What
-      might be an analogous denomination for environmental or social value?
+      How does food exporting/importing look from an energy (or water) efficiency 
+      standpoint?
+      What is the economic motive or return for food exporting/importing?
+      
+\item Money is the mechanism that we use to value economic transactions. 
+      What might be an analogous denomination for environmental or social value?
+      Can all environmental and social values be converted to monetary equivalents?
+      What effect or implication does your answer have on/for agriculture?
       
 \item Where should the environmental impact(s) from almond growing be placed, 
       where the almonds were grown or where they were consumed? How would this 
       affect, for instance, urban and rural carbon footprints?
-
+      
+\item Figure~\ref{fig:food_and_ag_material_flow} indicates that animals are an
+      inefficiency in agriculture. However, animals may be necessary or desirable
+      components of agriculture for reasons that might not be reflected in
+      Figure~\ref{fig:food_and_ag_material_flow}.
+      What might some of those reasons be? 
+      What does Figure~\ref{fig:food_and_ag_material_flow} \emph{not} show?
+      
+\item Would requiring an ``environmental scorecard'' label on each individual
+      food item change consumer behavior? Why or why not? What would the cost be?
+      
+\item A vegan diet is only possible with supplementation of key critical nutrients,
+      especially and most particularly vitamin B$_{12}$. 
+      (B$_{12}$ deficiency can cause permanent neurological damage even death.)
+      %Although a vegan diet is \emph{possible} for everyone it is not recommended for 
+      %infants, adolescents, and breastfeeding mothers.
+      B$_{12}$ supplements are produced through industrial fermentation.
+      What roll should such \emph{industrial} food play in our food system, as opposed
+      to ``natural'' food, such as what is farmed or harvested wild? 
+      What are your reasons for answering as you did?
+      
+\item Compare and contrast the environmental impacts of farmed meat, such as beef,
+      with hunted meat, such as elk, venison, or bison. % This could also be a project rather than speculation.
+      How do these animals differ in their CO$_2$ production? 
+      Are differences the result of the animal, the ``system,'' or our choice of
+      accounting methodologies?
+      
+\item The UN Food and Agriculture Organization reports that out of 50,000 edible
+      \emph{plant} species, 15 crops provide 90\% of human calories, two thirds
+      of which is provided by just three crops: rice, wheat, and maize. %https://www.fao.org/3/u8480e/u8480e07.htm
+      These facts have been called the ``long tail'' of food.
+      What role does variety play in your diet? 
+      How much do you value having a diversity of foods to eat?
+      (One way to estimate this numerically would be to find out how much money
+      you would save if you eliminated the highest-priced food item from your 
+      shopping cart. What is that item?)
+      
+\item A significant theme of Lorr's book \emph{The secret life of groceries} 
+      (see above) is the role that retailers have in determining what is even 
+      \emph{available} for consumers to purchase.
+      In some sense, consumers have an \emph{illusion} of choice because they
+      are selecting from a predetermined list.
+      On the other hand, curated experiences are often preferable (that is, result
+      in greater consumer affluence) to complete, \emph{de novo}, ``do it yourself''
+      experiences. 
+      Would you want to contact each farm, farmer, or producer for every item you
+      purchase?
+      How about growing every item of food you consume yourself? 
+      Being ``self-sufficient'' comes at a very steep price: there is no benefit
+      from the specialization of labor.
+      Are there alternatives in the middle? Where do you fall?
+      What are the sustainability implications of, for instance, canning your own
+      applesauce? Why do you do it and what are the tradeoffs?
+      
+      
 \end{questions}
 
 
@@ -560,7 +683,7 @@ in this chapter. His recipes are great too.
 \item Verify the efficiency values in Section~\ref{sec:food_ag_features}.
       Use Figure~\ref{fig:food_and_ag_material_flow} as the basis for your calculations.
       
-\item Verify the efficiency values in Section~\ref{sec:food_energy_return_ratios}.
+\item Verify the efficiency values in Section~\ref{sec:food_energy_return_ratios}. % {sec:food_ag_efficiency}?
       Then perform your own research to find the proportions of coal, oil, and natural gas consumed
       by the food and agriculture system.
       Are we eating coal? Are we eating oil? Or are we eating natural gas?
