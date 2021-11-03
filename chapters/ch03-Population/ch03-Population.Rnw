@@ -214,8 +214,30 @@ population and those variables interact in complex ways.
 \includegraphics[width=0.65\linewidth]{chapters/ch03-Population/figures/LimitsToGrowth_ModelFigure1-3_Large.png}
 \caption[Causal loop diagram of several important feedback loops in the World3 population model.]
 {Causal loop diagram of several important feedback loops in the World3 population model.}
+\label{fig:World3loops_old}
+\end{figure}
+
+
+\begin{figure}
+\centering
+
+    \begin{tikzpicture}[%
+        >=latex',
+        circ/.style={draw, shape=circle, node distance=1cm, line width=1pt}]%Define the arrow type and style for circled nodes
+        \draw[->] (0,0) node[left] (X) {X} -- (2,0) node[right] (Y) {Y}; %Line between X and Y
+        \path (X) -- coordinate (middle) (Y);%Defining the middle between X and Y
+        \node[above of=middle,circ] (Z) {Z};%Draw Z, a circled node
+        \draw[->] (Z) -- (middle);%Line between Z and X-Y
+    \end{tikzpicture}
+\caption[Causal loop diagram of several important feedback loops in the World3 population model.]
+{Causal loop diagram of several important feedback loops in the World3 population model.}
 \label{fig:World3loops}
 \end{figure}
+
+
+
+
+
 
 The UN projections in Figure~\ref{fig:UN_population_prospect} are not based on 
 the World3 model. 
