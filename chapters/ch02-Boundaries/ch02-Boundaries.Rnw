@@ -136,19 +136,29 @@ point, that is, they have been disturbed to the point of being on the edge of
 catastrophic collapse.
 
 \begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/buoyancy2.pdf}
-\begin{tabular}{cc}
-(a)&(b)
-\end{tabular}
-\caption{Boat stability. The static forces acting on a boat are the weight
-of the boat (W) and the buoyancy force (B). When the boat is heeled over a small
-amount (a), the moment created by these two forces acts to right the boat. 
-%Adding weight to the top of the boat raises its center of mass, making it more unstable.
-However, there is an angle beyond which the moments created by the two forces no longer 
-act to right the boat but to flip it (b) suddenly and catastrophically. 
-The angle beyond which the boat flips is called the tipping point.}
-\label{fig:buoyancy}
+     \centering
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+            \includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/buoyancy2a.pdf}
+         \caption{Small heel.}
+         \label{fig:buoyancy_a}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.498\textwidth}
+         \centering
+            \includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/buoyancy2b.pdf}
+         \caption{Catastrophic heel.}
+         \label{fig:buoyancy_b}
+     \end{subfigure}
+
+        \caption{Boat stability. The static forces acting on a boat are the weight
+                of the boat (W) and the buoyancy force (B). When the boat is heeled over a small
+                amount (a), the moment created by these two forces acts to right the boat. 
+                %Adding weight to the top of the boat raises its center of mass, making it more unstable.
+                However, there is an angle beyond which the moments created by the two forces no longer 
+                act to right the boat but to flip it (b) suddenly and catastrophically. 
+                The angle beyond which the boat flips is called the tipping point.}
+        \label{fig:buoyancy}
 \end{figure}
 
 There is also a cognitive element to the tipping-point analogy. 
