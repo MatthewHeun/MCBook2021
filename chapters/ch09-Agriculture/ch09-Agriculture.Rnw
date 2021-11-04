@@ -34,25 +34,25 @@ Therefore, Chapter~\ref{chap:households} considers the sustainability
 challenges of households. 
 Likewise, the energy use (37.3\%) and CO$_2$ emissions (36.3\%) of transportation 
 motivated Chapter~\ref{chap:transportation}.
-Aggregating the other two categories in Table~\ref{tab:corrected_co2_emissions},
-commercial and industrial sources are responsible for 47\% of 
-U.S. energy use and 44\% of U.S. CO$_2$ emissions. 
-However, this book does not dedicate individual chapters to commerce and industry. 
-For households and transportation, it is possible to provide technical details 
-about sustainability that apply to the entire category.
-However, each industry and business has its own particular set of technical 
-details and sustainability concerns; there is little commonality within the 
-categories. 
-Moreover, even if we were to present details for, say, automobile manufacturing 
-or the film industry, those details would be somewhat boring to read and would 
-not contribute (as much) to an overall framework for sustainability thinking.
+This chapter covers agriculture as an \emph{example} industrial/commercial
+area (the other two categories in Table~\ref{tab:corrected_co2_emissions}).
+% Aggregating the other two categories in Table~\ref{tab:corrected_co2_emissions},
+% commercial and industrial sources are responsible for 47\% of 
+% U.S. energy use and 44\% of U.S. CO$_2$ emissions. 
+% However, this book does not dedicate individual chapters to commerce and industry. 
+% For households and transportation, it is possible to provide technical details 
+% about sustainability that apply to the entire category.
+% However, each industry and business has its own particular set of technical 
+% details and sustainability concerns; there is little commonality within the 
+% categories. 
+% Moreover, even if we were to present details for, say, automobile manufacturing 
+% or the film industry, those details would be somewhat boring to read and would 
+% not contribute (as much) to an overall framework for sustainability thinking.
 
-Instead, this chapter covers agriculture as an \emph{example} industrial/commercial
-area. 
-Agriculture is a setting most readers will have (at least) an intuitive understanding of.
-Agriculture, forestry, and other land use together account for an estimated 23\% 
+%Agriculture is a setting most readers will have (at least) an intuitive understanding of.
+Agriculture, forestry, and other land use account for an estimated 23\% 
 of anthropogenic greenhouse gas emissions~\cite{SRCCL2019}. 
-Furthermore, agriculture has strong links to land use, which is the focus of 
+Agriculture has strong links to land use, which is the focus of 
 Chapter \ref{chap:land_use_urban_planning}.
 It began to be evident in Chapters~\ref{chap:households} and~\ref{chap:transportation}
 that land use has strong sustainability implications. 
@@ -78,8 +78,8 @@ by definition, ``food'' is \emph{not} a substitutable resource.
 Although humans can exist on a wide variety of diets, we can't directly metabolize 
 wood, cellulose, sunlight, or petroleum, for example.
 
-But food doesn't appear on plates magically, out of nowhere.
-Food arrives on plates through a network of 
+Food doesn't appear on plates magically, out of nowhere.
+It arrives on our plates through a network of 
 natural and human-created transformation processes\index{transformation processes!food}
 that convert solar energy\index{energy!solar}
 into available, ingestible energy\index{energy!ingestible}.
@@ -92,8 +92,7 @@ Without agriculture, none of us would be here today!
 This chapter presents key information about the food system and explores its 
 sustainability challenges.
 
-
-\section{Food demand}
+\section{Drivers of food demand}
 Food consumption is rather predictable, because food requirements (measured in 
 food calories, for example) scale linearly with population. 
 Over a long period of time, at least since 1870, when such things began to be 
@@ -105,8 +104,8 @@ per person per day since 1967~\cite{Gordon2016}.
 The trend has also been toward a more varied diet that includes more fresh foods.
 This trend towards a richer, more varied diet is repeated across the world as
 national economies grow.
-Thus, the global demand for food has two main drivers: population (P) is the primary
-driver of demand and affluence (A) is the secondary driver.
+Thus, the global demand for food has two main drivers: population ($P$) is the primary
+driver of demand and affluence ($A$) is the secondary driver.
 
 As mentioned in Section~\ref{sec:PCbalance}, consumption and production are balanced,
 particularly for food, in part because humans prefer fresh food.
@@ -131,16 +130,16 @@ corruption and/or oppression.)
 Equation~\ref{eq:IPARC} indicates reductions in agricultural impacts on the 
 environment, in the absence of a falling population or affluence (see 
 Section~\ref{sec:reducing_c}), can only come from reducing one of the two intensities
-of agriculture, the resource intensity (R) or the contamination intensity (C).
+of agriculture, the resource intensity ($R$) or the contamination intensity ($C$).
 The efficiency of agriculture, in terms of what inputs it requires and what 
 impacts it produces are explored more in the following section.
 
-\section{Input/output analysis}
-When considering whether an activity is sustainable, input-output analysis is an 
-essential tool.
+\section{Agriculture sustainability considerations}
+When considering whether an activity is sustainable, resource depletion and impacts
+produced are key questions.
 For example, Section~\ref{sec:electric_vehicles} considered internal combustion
 engine (ICE) vehicles and electric vehicles (EVs).
-However, accurate and reliable results depend on an accurate accounting of inputs and outputs.
+An accurate and reliable comparison depends on an accurate accounting of inputs and outputs.
 In Section~\ref{sec:electric_vehicles} we considered just the vehicle's emissions
 while in use, the energy and mineral resources used to create each vehicle, and,
 finally, we also considered the power generation used to power each vehicle 
@@ -151,8 +150,7 @@ and the materials used to make the vehicle; or vehicle emissions, minerals in th
 sustainability.
 
 Likewise, defining appropriate inputs and outputs for agriculture is a key 
-consideration and is, perhaps, more difficult than for other areas of sustainability 
-(at least judging by the many conflicting analyses in the literature).
+consideration.
 Recall the definitions for weak and strong sustainability from 
 Section~\ref{sec:strong_weak_sust} and the concept of ecosystem provisioning
 services from Section~\ref{sec:ecosystem_services}.
@@ -163,7 +161,7 @@ If agriculture decreases the stock, or amount, of natural capital, it is not sus
 If agriculture depends on a nonrenewable resource, it is not strongly sustainable.
 If agriculture is rapidly depleting a resource, it is not even weakly sustainable.
 
-\subsection{Agricultural inputs}
+\subsection{Agricultural resource requirements}
 Here we list some (not all) of the inputs required for agriculture and consider their
 sustainability implications.
 \paragraph{Soil} As mentioned earlier, humans devote a considerable portion of 
@@ -195,7 +193,8 @@ On the other hand, about half of the fertilizer used globally is animal manure,
 which is a renewable resource. 
 Animal manure could be a sustainable fertilizer, if the animals are raised sustainably,
 for instance, if their feed is sustainably raised.
-\paragraph{Energy} The energy input to agriculture ranges from human and animal 
+\paragraph{Energy} \label{sec:food_energy_return_ratios}
+The energy input to agriculture ranges from human and animal 
 labor to electricity and hydrocarbon fuels, either fossil fuels or biofuels.
 Energy is used at all stages of agriculture, from preparing the ground to sow crops,
 to harvesting, storage, transportation, cooking, and disposal of food.
@@ -249,8 +248,8 @@ by today's food energy return ratios is:
 \end{mcframe}
 
 
-\subsection{Agricultural outputs}
-Here we list some (not all) of the outputs, or byproducts, from agriculture and 
+\subsection{Agricultural impacts}
+Here we list some (not all) of the emissions, or byproducts, from agriculture and 
 consider their sustainability implications.
 \paragraph{Air} Sometimes farming practices can lead to air-quality problems 
 in the form of particulate matter.
@@ -394,7 +393,7 @@ In 2017, the area had no black topsoil; its soil was light gray.
 Farming can (and has had) impacts on biodiversity and habitat loss.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Agricultural efficiency}
+\section{Agricultural sustainability challenges}
 \label{sec:food_ag_efficiency}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -465,7 +464,7 @@ for determining food prices.
 \subsection{Metrics}
 \label{sec:ag_metrics} 
 Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based efficiency for U.S.
-agriculture, which may, or may not, be relevant to sustainability.
+agriculture, which is one aspect of the resource intensity ($R$) of agriculture.
 Other metrics by which the agriculture system could be judged are presented below.
 
 We could judge agriculture on the basis of how effectively each input is used.
@@ -504,7 +503,7 @@ agricultural system.
 Indeed, the price of food has fallen, adjusted for inflation in the last 100 years. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{A portrait of sustainable agriculture}
+\section{Agriculture transitions}
 \label{sec:food_transitions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -562,7 +561,7 @@ However, the relatively higher amounts of human inputs make the food produced
 more expensive.
 Ultimately, reducing environmental impacts requires additional investment, which
 makes food more expensive, which is consistent with Equation~\ref{eq:IPARC}
-(reduced impact (I) comes from reduced affluence (A)).
+(reduced impact ($I$) comes from reduced affluence ($A$)).
 
 One strategy that might be highly successful for some climate zones and for some 
 crops is to use solar panels to provide partial shade for crops prefer lower-light
@@ -603,9 +602,9 @@ in this chapter. His recipes are great too.
 \begin{questions}
 \item One common metric for agricultural productivity is yield, the amount of a 
       crop produced per area.
-      Such a metric does not account for efficiency, intensity, or EROI.
-      Of course, the most basic sustainability metric for agriculture is economic
-      profitability, (net) profit per acre.
+      Such a metric does not account for energy efficiency, input intensity, or EROI.
+      Of course, the most basic economic metric for agriculture is 
+      profitability, that is, (net) profit per acre.
       How are these metrics different from one another?
       How are they similar or inter-convertible?
       Is there a disconnect between the economic aspects of agriculture and the
@@ -627,13 +626,15 @@ in this chapter. His recipes are great too.
       walrus, and whale. 
       Is it permissible (or desirable) to retain these traditional diets, given
       the threatened status of many of the target species? 
+      Is your answer different if the hunted species were abundant?
       What other options do such communities have?
       What would be the effects of changing to other food sources?
       
 \item Consider the tension between feeding hungry people and environmental 
-      impact. Supposed that you could save 100 lives by emitting an additional
-      100 tons of CO$_2$ equivalent per year. 
+      impact. Suppose that you could save 100 lives by emitting an additional
+      100,000 tons of CO$_2$ equivalent per year. 
       Would you do it or not? 
+      (For reference, U.S. annual emissions are about 20 tons per capita.)
       How many more lives or how much less carbon does it take to change
       your answer? Why?
 
@@ -647,12 +648,7 @@ in this chapter. His recipes are great too.
       standpoint?
       What is the economic motive or return for food exporting/importing?
       
-\item Money is the mechanism that we use to value economic transactions. 
-      What might be an analogous denomination for environmental or social value?
-      Can all environmental and social values be converted to monetary equivalents?
-      What effect or implication does your answer have on/for agriculture?
-      
-\item Where should the environmental impact(s) from almond growing be placed, 
+\item Where should the environmental impact(s) from almond growing be counted, 
       where the almonds were grown or where they were consumed? How would this 
       affect, for instance, urban and rural carbon footprints?
       
@@ -663,17 +659,19 @@ in this chapter. His recipes are great too.
       What might some of those reasons be? 
       What does Figure~\ref{fig:food_and_ag_material_flow} \emph{not} show?
       
-\item Would requiring an ``environmental scorecard'' label on each individual
-      food item change consumer behavior? Why or why not? What would the cost be?
+\item Would requiring an ``environmental scorecard'' label (similar to an Energy 
+      Star label) on each individual food item change consumer behavior? 
+      Why or why not? What would the cost be?
       
 \item A vegan diet is only possible with supplementation of key critical nutrients,
       especially and most particularly vitamin B$_{12}$. 
-      (B$_{12}$ deficiency can cause permanent neurological damage even death.)
+      (B$_{12}$ deficiency can cause permanent neurological damage, even death.)
       %Although a vegan diet is \emph{possible} for everyone it is not recommended for 
       %infants, adolescents, and breastfeeding mothers.
       B$_{12}$ supplements are produced through industrial fermentation.
-      What roll should such \emph{industrial} food play in our food system, as opposed
-      to ``natural'' food, such as what is farmed or harvested wild? 
+      What role should such \emph{industrial} food play in our food system?
+      Is there a meaningful difference between industrial food products and
+      ``natural'' food, such as what is farmed or harvested wild? 
       What are your reasons for answering as you did?
       
 \item Compare and contrast the environmental impacts of farmed meat, such as beef,
@@ -692,7 +690,7 @@ in this chapter. His recipes are great too.
       you would save if you eliminated the highest-priced food item from your 
       shopping cart. What is that item?)
       
-\item A significant theme of Lorr's book \emph{The secret life of groceries} 
+\item A significant theme of Benjamin Lorr's book \emph{The secret life of groceries} 
       (see above) is the role that retailers have in determining what is even 
       \emph{available} for consumers to purchase.
       In some sense, consumers have an \emph{illusion} of choice because they
@@ -725,13 +723,16 @@ in this chapter. His recipes are great too.
       of almond growing allocated to where the almonds are grown or where they are 
       consumed? How does this affect, for instance, urban and rural carbon footprints?
 
-\item Verify the efficiency values in Section~\ref{sec:food_ag_features}.
+\item Verify the efficiency values in Section~\ref{sec:food_ag_efficiency}.
       Use Figure~\ref{fig:food_and_ag_material_flow} as the basis for your calculations.
       
-\item Verify the efficiency values in Section~\ref{sec:food_energy_return_ratios}. % {sec:food_ag_efficiency}?
-      Then perform your own research to find the proportions of coal, oil, and natural gas consumed
+\item Verify the agricultural EROI values in Section~\ref{sec:food_energy_return_ratios}. 
+      You could, for instance, start by considering Figure~\ref{fig:energy_flow_in_food_system}.
+      Perform your own research to find the proportions of coal, oil, and natural gas consumed
       by the food and agriculture system.
-      Are we eating coal? Are we eating oil? Or are we eating natural gas?
+      Are we eating coal? Are we eating oil? 
+      Are we eating electricity (and whence comes the electricity)? 
+      Or are we eating natural gas?
       
 \item Use a food emissions calculator (such as the one suggested in this chapter~\cite{CleanMetrics:aa})
       to estimate the greenhouse emissions from your food choices over the course of a week.
