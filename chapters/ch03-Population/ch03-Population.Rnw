@@ -229,12 +229,12 @@ population and those variables interact in complex ways.
     % Industrial investment
     \node[above right = 5.5mm and -13mm of investment_rate] (industrial_investment) {\begin{tabular}{l} Industrial \\ investment \end{tabular}};
     % Investment rate --> Industrial investment
-    \draw [-stealth] (investment_rate) -- (industrial_investment); 
+    \draw [-stealth] (investment_rate) to (industrial_investment); 
     \node[above right = 3mm and -6mm of investment_rate] {+};
     % Industrial capital
     \node[above right = 5.5mm and -13mm of industrial_investment] (industrial_capital) {\begin{tabular}{l} Industrial \\ capital \end{tabular}};
     % Industrial investment --> Industrial capital
-    \draw [-stealth] (industrial_investment) -- (industrial_capital); 
+    \draw [-stealth] (industrial_investment) to (industrial_capital); 
     \node[above right = 3mm and -10mm of industrial_investment] {+};
     % Industrial output
     \node[above right = 5.5mm and -18mm of industrial_capital] (industrial_output) {\begin{tabular}{l} Industrial \\ output \end{tabular}};
