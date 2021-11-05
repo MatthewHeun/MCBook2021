@@ -30,6 +30,7 @@
 \usepackage{subcaption}  % For labeling subfigures.
 \usepackage{tikz}
 \usetikzlibrary{arrows}
+\usetikzlibrary{positioning}
 \usepackage{wrapfig}     % To wrap text around figures.
 \usepackage{xcolor}      % makes colored text.
 

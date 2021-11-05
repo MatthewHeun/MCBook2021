@@ -220,15 +220,29 @@ population and those variables interact in complex ways.
 
 \begin{figure}
 \centering
+
   \begin{tikzpicture}
     [arrow_style/.style={blah}]
     \footnotesize
+    % Investment rate
     \node at (0,0) (investment_rate) {\begin{tabular}{l} Investment \\ rate \end{tabular}};
-    \node at (0.75,1.5) (industrial_investment) {\begin{tabular}{l} Industrial \\ investment \end{tabular}};
-    \draw [-stealth] (investment_rate) -- (industrial_investment); \node at (0.7,0.9) {+};
-    \node at (1.5,3) (industrial_capital) {\begin{tabular}{l} Industrial \\ capital \end{tabular}};
-    \draw [-stealth] (industrial_investment) -- (industrial_capital); \node at (1,2.45) {+};
+    % Industrial investment
+    \node[above right = 5.5mm and -13mm of investment_rate] (industrial_investment) {\begin{tabular}{l} Industrial \\ investment \end{tabular}};
+    % Investment rate --> Industrial investment
+    \draw [-stealth] (investment_rate) -- (industrial_investment); 
+    \node[above right = 3mm and -6mm of investment_rate] {+};
+    % Industrial capital
+    \node[above right = 5.5mm and -13mm of industrial_investment] (industrial_capital) {\begin{tabular}{l} Industrial \\ capital \end{tabular}};
+    % Industrial investment --> Industrial capital
+    \draw [-stealth] (industrial_investment) -- (industrial_capital); 
+    \node[above right = 3mm and -10mm of industrial_investment] {+};
+    % Industrial output
+    \node[above right = 5.5mm and -18mm of industrial_capital] (industrial_output) {\begin{tabular}{l} Industrial \\ output \end{tabular}};
+    % Industrial capital --> Industrial output
+    \draw[-stealth, bend right=10]  (industrial_capital) to (industrial_output);
+    \node[above right = 3mm and -12mm of industrial_capital] {+};
   \end{tikzpicture}
+  
 \caption[Causal loop diagram of several important feedback loops in the World3 population model.]
 {Causal loop diagram of several important feedback loops in the World3 population model.}
 \label{fig:World3loops}
