@@ -142,12 +142,22 @@ materials, place, water, energy, health and happiness, equity, and beauty.
          \caption{Bus depot.}
          \label{fig:bus_depot}
      \end{subfigure}
-        \caption{Differences in roadway densities.}
+        \caption{Differences in roadway densities. 
+                 The highway interchange has few passengers in low-occupancy vehicles, 
+                 all with high CO$_2$ emissions. 
+                 In contrast, the bus depot has more passengers 
+                 in high-occupancy vehicles, 
+                 an efficiency gain, even if the buses in the photo
+                 emit CO$_2$.}
         \label{fig:collective_transport_photos}
 \end{figure}
 
+To make transport more sustainable, 
+the transportation system must move
+more passengers in fewer, high-occupancy vehicles that emit less CO$_2$.
+(See Figure~\ref{fig:collective_transport_photos}.)
 There are many potential collective actions that would move 
-transportation in a more sustainable direction.
+transportation in that direction.
 Programs to fund and incentivize public transport seek to reduce CO$_2$ emissions
 without wholesale changes to transportation infrastructure.
 Both carrots (make public transport less expensive) and
@@ -162,7 +172,7 @@ is implementation of vehicle efficiency standards
 such as the Corporate Average Fuel Economy standard in the U.S.
 
 To obtain larger and more substantial changes toward sustainable transport, 
-radical changes to the fabric of the transportation system will be required, 
+radical changes to the structure of the transportation system will be required, 
 including vehicle fleet electrification,
 electric grid expansion, and
 electricity supply decarbonization, 
