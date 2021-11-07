@@ -134,12 +134,25 @@ homeowners to balance energy consumption with onsite or offsite renewable energy
         \label{fig:commuting_options}
 \end{figure}
 
-Drive used cars (don't buy a new car)
-Drive efficient cars
-Buy local goods
-Live close to work, school, grocery stores, and church
-Choose mass transit, bike, walk
-Possibly electrify your automobiles
+There are many things that individuals can do to make their lives more sustainable 
+in transport,
+both in deciding which vehicles to buy or rent
+and how they are operated.
+Choosing a \emph{used} vehicle
+will prevent additional carbon being embodied in the vehicle itself.
+Choosing a \emph{smaller} car will reduce carbon emissions 
+associated with commuting.
+Choosing an electric vehicle will reduce CO$_2$ emissions
+in those places where grid electricity contains a large proportion of renewables.
+(See Section~\ref{sec:electric_vehicles} and Figure~\ref{fig:tesla}.)
+
+However, the most sustainable transportation is often public transportation
+where vehicle occupancy is high and everyone shares the carbon embodied in the 
+buses, trains, trolleys, or subways. 
+Choosing to walk or bike (Figure~\ref{fig:commuting_bicycle})
+further reduces CO$_2$ emissions. 
+To reduce transportation emissions from goods and service consumption, 
+local purchasing can be pursued.
 
 
 %++++++++++++++++++++++++++++++
