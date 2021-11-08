@@ -241,6 +241,31 @@ population and those variables interact in complex ways.
     % Industrial capital --> Industrial output
     \draw[-stealth, bend right=10]  (industrial_capital) to (industrial_output);
     \node[above right = 3mm and -12mm of industrial_capital] {+};
+    % Service capital
+    \node[above left = 4mm and -14mm of industrial_output] (service_capital) {\begin{tabular}{l} Service \\ capital \end{tabular}};
+    % Industrial output --> Service capital
+    \draw[-stealth, bend right=10]  ([xshift=-3mm]industrial_output.north) to (service_capital);
+    \node[above left = 2mm and -11mm of industrial_output] {+};
+    % Services per capita
+    \node[above right = 5mm and -17.5mm of service_capital] (services_per_capita) {\begin{tabular}{l} Services \\ per capita \end{tabular}};
+    % Service capital --> Service per capita
+    \draw [-stealth] (service_capital) to (services_per_capita); 
+    \node[above right = 2mm and -7.8mm of service_capital] {+};
+    % Education, family planning
+    \node[above left = 4mm and -22mm of services_per_capita] (education_family_planning) {\begin{tabular}{l} Education, \\ family planning \end{tabular}};
+    % Service per capita --> Education, family planning
+    \draw [-stealth, bend right=10] (services_per_capita) to ([xshift=-1mm, yshift=-4mm]education_family_planning); 
+    \node[above right = 2mm and -11.5mm of services_per_capita] {+};
+    % Fertility
+    \node[above left = 4mm and 0mm of education_family_planning] (fertility) {Fertility};
+    % Education, family planning --> Fertility
+    \draw [-stealth, bend right=10] (education_family_planning) to (fertility); 
+    \node[above left = 1.9mm and -0.3mm of education_family_planning] {$-$};
+    % Births per year
+    \node[above right = 4mm and -10mm of fertility] (births_per_year) {\begin{tabular}{l} Births \\ per year \end{tabular}};
+    % Fertility --> Births per year
+    \draw [-stealth, bend right=10] (fertility) to (births_per_year); 
+    \node[above right = 1.5mm and -3mm of fertility] {+};
   \end{tikzpicture}
   
 \caption[Causal loop diagram of several important feedback loops in the World3 population model.]
