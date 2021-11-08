@@ -258,6 +258,9 @@ population and those variables interact in complex ways.
     \node[above right = 2mm and -11.5mm of services_per_capita] {+};
     % Fertility
     \node[above left = 4mm and 0mm of education_family_planning] (fertility) {Fertility};
+    % Education, family planning --> Fertility
+    \draw [-stealth, bend right=10] (education_family_planning) to (fertility); 
+    \node[above left = 1.9mm and -0.3mm of education_family_planning] {$-$};
   \end{tikzpicture}
   
 \caption[Causal loop diagram of several important feedback loops in the World3 population model.]
