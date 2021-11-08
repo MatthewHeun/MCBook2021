@@ -261,6 +261,11 @@ population and those variables interact in complex ways.
     % Education, family planning --> Fertility
     \draw [-stealth, bend right=10] (education_family_planning) to (fertility); 
     \node[above left = 1.9mm and -0.3mm of education_family_planning] {$-$};
+    % Births per year
+    \node[above right = 4mm and -10mm of fertility] (births_per_year) {\begin{tabular}{l} Births \\ per year \end{tabular}};
+    % Fertility --> Births per year
+    \draw [-stealth, bend right=10] (fertility) to (births_per_year); 
+    \node[above right = 1.5mm and -3mm of fertility] {+};
   \end{tikzpicture}
   
 \caption[Causal loop diagram of several important feedback loops in the World3 population model.]
