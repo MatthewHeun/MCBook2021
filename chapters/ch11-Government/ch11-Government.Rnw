@@ -15,8 +15,8 @@
 
 This is the first of two chapters to discuss actions to encourage
 society and individuals to live more sustainably.
-This chapter (\ref{chap:government}) explores collective actions and 
-the next (\ref{chap:personal_action}) explores personal actions.
+This chapter (Chapter \ref{chap:government}) explores collective actions and 
+the next (Chapter \ref{chap:personal_action}) explores personal actions.
 Collective actions usually involve changing the rules of the game 
 or providing widespread incentives
 to encourage self-interested individuals
@@ -88,14 +88,17 @@ areas of life in which sustainability issues and choices emerge:
 households, transportation, agriculture, and land use/urban planning 
 (Chapters~\ref{chap:households}--\ref{chap:agriculture}).
 
+This chapter answers the question,
+``how could we reconfigure the systems and structures in our societies
+to encourage and promote a more sustainable world?''
 Each section below provides lists of possible collective actions, 
 mostly without comment.  
 The goal of this this chapter is to provide references to 
 ways to actively promote sustainability via collective action.
 Readers are encouraged to explore the suggested actions that fit their
 local situation, 
-always keeping the global perspective provided 
-by Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity} in mind.
+always keeping in mind the global perspective provided 
+by Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity}.
 Questions and problems at the end of the chapter assist the exploration process.
 
 
@@ -109,7 +112,8 @@ Questions and problems at the end of the chapter assist the exploration process.
 \label{sec:collective_population}
 %++++++++++++++++++++++++++++++
 
-As shown in Equation~\ref{eq:IPARC}, 
+As shown in Equation~\ref{eq:IPARC}
+and in Figure~\ref{fig:PopulationGraph}, 
 rising population ($P$) is a driver for environmental impacts ($I$). 
 Slowing or reversing population growth would reduce environmental impacts,
 all other things being equal.
@@ -136,10 +140,11 @@ can affect birth rates, too.
 \label{sec:collective_affluence}
 %++++++++++++++++++++++++++++++
 
-Equation~\ref{eq:IPARC} shows that rising affluence ($A$)
-drives environmental impacts ($I$). 
+Equation~\ref{eq:IPARC} and Figure~\ref{fig:AffluenceGraph-Nordhaus}
+shows that rising affluence ($A$)
+drives larger environmental impacts ($I$). 
 Ironically, the purpose of many government actions 
-is to produce affluence, 
+is to produce ever-rising levels of affluence, 
 because citizens who are becoming more affluent 
 are likely to retain their current political system and their current political leaders.
 To become more sustainable, we need to encourage lower economic growth rates and less consumption,
@@ -171,6 +176,11 @@ minimize the economic impact on non-polluting, often poorer, citizens, and
 encourage carbon-free energy.
 Proceeds from carbon and other pollution taxes can be invested in environmental remediation
 and clean energy. 
+A mandatory carbon labeling scheme
+(like nutrition labels)
+can be implemented
+to provide point of purchase information to consumers
+about the relative carbon intensity of goods~\citep{Zhao_2012}.
 
 
 %++++++++++++++++++++++++++++++
@@ -178,15 +188,17 @@ and clean energy.
 \label{sec:collective_resources}
 %++++++++++++++++++++++++++++++
 
-Equation~\ref{eq:IPARC} shows that rising resource intensity of the economy ($R$)
-drives environmental impacts ($I$).
-To reduce environmental impacts, 
-economies need to use fewer resources and emit less pollution per dollar of GDP.
-Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that the 
+Equation~\ref{eq:IPARC} shows that
+rising resource intensity of the economy ($R$)
+would drive environmental impacts ($I$).
+However, Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that the 
 world's economy has been reducing its resource (energy) intensity over time.
 Of the four $PARC$ terms, resource intensity of the economy ($R$) 
 is the only term moving in a sustainable direction over the long-term
 (see Equation \ref{eq:IPARC_rate_with_numbers}).
+To reduce environmental impacts, 
+economies need to use even fewer resources 
+and emit less pollution per dollar of GDP.
 
 Policies that encourage industrial energy efficiency 
 will reduce energy required to generate a dollar of GDP
