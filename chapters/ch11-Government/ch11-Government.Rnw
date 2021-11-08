@@ -8,9 +8,9 @@
 \chapter{Collective Action}
 \label{chap:government}
 %#############################################################
-\epigraph{The truth about a city's aspirations isn't found in its vision. 
-It's found in its budget.}{Brent Toderian}
-%\epigraph{Show me the incentive and I will show you the outcome}{Charlie Munger}
+% \epigraph{The truth about a city's aspirations isn't found in its vision. 
+% It's found in its budget.}{Brent Toderian}
+\epigraph{Show me the incentive and I will show you the outcome}{Charlie Munger}
 
 
 This is the first of two chapters to discuss actions to encourage
@@ -185,7 +185,8 @@ economies need to use fewer resources and emit less pollution per dollar of GDP.
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that the 
 world's economy has been reducing its resource (energy) intensity over time.
 Of the four $PARC$ terms, resource intensity of the economy ($R$) 
-is the only term moving in a sustainable direction over the long-term.
+is the only term moving in a sustainable direction over the long-term
+(see Equation \ref{eq:IPARC_rate_with_numbers}).
 
 Policies that encourage industrial energy efficiency 
 will reduce energy required to generate a dollar of GDP
@@ -197,7 +198,7 @@ If the cost savings associated with a specific energy efficiency intervention
 are reinvested for growth (as most businesses do), 
 the resulting increase in energy consumption from the expanded business
 can reduce (or in the case of backfire) eliminate the local energy consumption 
-cause by the energy efficiency measure. 
+caused by the energy efficiency measure. 
 To reduce rebound or backfire, 
 businesses can develop green revolving funds,
 wherein cost savings from energy efficiency are used exclusively 
