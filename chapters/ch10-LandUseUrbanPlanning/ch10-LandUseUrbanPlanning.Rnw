@@ -9,26 +9,6 @@
 It's found in its budget.}{Brent Toderian}
 %\epigraph{Show me the incentive and I will show you the outcome.}{Charlie Munger}
 
-% 
-% https://www.strongtowns.org/journal/2018/3/1/whats-a-stroad-and-why-does-it-matter
-% 
-% OUtline:
-% 1. What do we use land for USDA/IPCC/ESA-CSI classifications and data.
-% How has this changed over time?
-% 2. Metrics for success: population density, cal/acre, etc. What would these be for 
-% urban, (suburban?), rural?
-% How can we align policies/incentives with optimal outcomes?
-% 3. Sustainability implications: unlimited city growth, ag output, CO2.
-%
-% Intro.
-% IPCC6 contribution of land use to climate change.
-% Land use and extinction rate (habitat loss).
-% Agriculture and run-off (nitrogen cycle).
-% food, food energy, EROI, and sustainability.
-% We need a place to live, get resources, recreate (cultural ecosystem services).
-% Layout matters for transportation.
-
-
 The previous three chapters described sustainability challenges related to our 
 dwellings, food, and transportation. 
 A common element in all these sustainability challenges is how we use land.
@@ -73,9 +53,9 @@ The next sections deal with three major sustainability questions related to land
 \label{fig:USlanduse}
 \end{figure}
 
-Of the three (land, labor, capital) means of production, 
-only land is generally considered to be a fixed quantity.
-This is approximately true. 
+% Of the three (land, labor, capital) means of production, 
+% only land is generally considered to be a fixed quantity.
+% This is approximately true. 
 % There are ways of creating more land. 
 % The Dutch system of building dykes to reclaim land from the ocean is one example. 
 % Planetary colonization could be another. 
@@ -85,36 +65,64 @@ This is approximately true.
 % % Change in efficiency. but land is constant. 
 % Techniques that increase agricultural productivity \emph{per acre} 
 % are effectively equivalent to creating more farm land. 
-The using dykes to reclaim land from the sea, like in the Netherlands,
-or using fill to create land, like the Palm islands in Dubai,
-results in \emph{relatively} little additional land.
-For simplicity, this chapter will treat total land area as a fixed quanity.
+% The using dykes to reclaim land from the sea, like in the Netherlands,
+% or using fill to create land, like the Palm islands in Dubai,
+% results in \emph{relatively} little additional land.
+% For simplicity, this chapter will treat total land area as a fixed quantity.
 
-Figure \ref{fig:USlanduse} shows how land is used in the United States. 
+Figure~\ref{fig:USlanduse} shows how land is used in the United States. 
 %Although proportions may be different in other economies, the categories are the same. 
 There are 1.9 billion acres in the contiguous 48 states.
-Of this total, forestry (28\%), grazing (34\%), and crop production (20.6\%) 
-are the three largest uses. 
+Of this total, agriculture takes the largest share, with grazing (34\%), 
+forestry (28\%), and crop production (20.6\%) being the three largest uses. 
 The four largest crops in the U.S. are wheat (32\% of total crops), corn (30\%),
 soybeans (20\%), and cotton (10\%). That leaves just 8\% for everything else and,
 indeed, ``food we eat'' is a small area in Figure \ref{fig:USlanduse}.
 In contrast, the area where we live and work (red/pink areas) is a relatively small
 69.4 million acres (3.65\%).
+One key result from Figure~\ref{fig:USlanduse} is that the U.S. is relatively 
+sparsely populated.
 
-You may be wondering how maps like Figure \ref{fig:USlanduse} are produced. 
-Is there a survey done by the U.S. government?
-Are the numbers based on property records? Those may have been the answers long ago.
-Modern land use surveys are constructed from satellite imagery.
-Surveys can be conducted at relatively small length scales
+The data for surveys such as Figure~\ref{fig:USlanduse} are produced from satellite imagery.
+The European Space Agency recently released a dataset for \emph{global} land use over
+a 24-year period (1992-2015) as part of a climate change initiative (CCI).
+The Inter-governmental Panel on Climate Change (IPCC) uses 9 categories for land-use
+classification: 
+agriculture, forest, grass, wetland, settlement, shrubland, sparse, bare, and water.
+Analysis~\cit{Nowosad2019} of the CCI data reveals some trends related to land use change over time.
+First, urban areas are continually growing and, basically, never shrink.
+From 1992--2015, settlements gained 337,000 square kilometers, which is 0.23\%
+of the Earth's land area, or about 0.01\% per year.
+
+The source of land for urban growth is principally agricultural land.
+However, to feed a growing population, \emph{net} agricultural land has had to 
+increase. 
+The increase comes, primarily, from forests being converted to agriculture.
+Simultaneously, there there is also some (formerly) agricultural land being
+reforested.
+The net gain for agricultural land means that \emph{more} more forests are cleared
+than the amount a agricultural land that is being reforested.
+Altogether, humans altered almost 1\% of total land area per year (22\% in 24 years)
+across all land-use categories.
 
 Land is the primary source of energy, be it fossil fuel, biomass, or renewable. 
 Wells or mines for fossil fuels are located in a \emph{place}.
-Land can also be a major carbon sink. 
+Biomass has to be grown or harvested from a place as well.
+Renewables, such as hydro, solar photovoltaic, and wind power, are also located in
+a \emph{places}.
+In particular, for hydro, solar, and wind, correct siting is a key consideration
+for how productive each power type will be.
+Not all locations are suitable for hydro power. Or wind. Or solar.
+
+Land is also a major carbon sink. 
+Forests store a lot of carbon and reforestation is likely necessary for meeting
+climate change limits, which makes continued \emph{deforestation} particularly 
+alarming.
 Land use affects and is affected by climate change. 
-In other words, land in the US is largely used for agriculture in one form or another. 
-Refer to chapter on Food and Agriculture for the outputs from this sector % Insert Reference.
-%note splitting up the picture this way give a fractured presentation.
-and measures of agricultural productivity and efficiency.
+
+
+
+
 What are the drivers of demand?
 cheap food (row farming)
 low population density.
