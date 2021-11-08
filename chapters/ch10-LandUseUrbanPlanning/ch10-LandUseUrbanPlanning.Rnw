@@ -89,7 +89,7 @@ a 24-year period (1992-2015) as part of a climate change initiative (CCI).
 The Inter-governmental Panel on Climate Change (IPCC) uses 9 categories for land-use
 classification: 
 agriculture, forest, grass, wetland, settlement, shrubland, sparse, bare, and water.
-Analysis~\cit{Nowosad2019} of the CCI data reveals some trends related to land use change over time.
+Analysis~\cite{Nowosad2019} of the CCI data reveals some trends related to land use change over time.
 First, urban areas are continually growing and, basically, never shrink.
 From 1992--2015, settlements gained 337,000 square kilometers, which is 0.23\%
 of the Earth's land area, or about 0.01\% per year.
@@ -119,15 +119,37 @@ Forests store a lot of carbon and reforestation is likely necessary for meeting
 climate change limits, which makes continued \emph{deforestation} particularly 
 alarming.
 Land use affects and is affected by climate change. 
+For instance, hotter, drier weather results in more frequent and severe wildfires.
+Those fires destroy forests, release stored carbon, and contribute to further warming.
 
+\subsection{Demand for land}
+Demand for land is driven by increasing human population ($P$).
+As mentioned in Chapter~\ref{chap:agriculture}, higher population drives agriculture,
+which is consistent with the land-use statistics shown above.
 
+Population growth leads directly to a need for more housing,
+but not just any housing.
+Another trend shown by land-use statistics is greater urbanization.
+The demand is disproportionately for urban housing
+because of a long-term trend of migration to urban areas. 
+Urban areas have much higher GDP per area.
+Thus pursuit of wealth, that is, a desire for greater affluence ($A$) drives 
+migration from rural areas to urban ones.
 
+One of the major causes of deforestation in the Amazon basin is (mostly illegal)
+attempts to extract mineral wealth.
+There is a strong demand for resources ($R$) to feed an ever-growing global 
+economy.
+Those on the lowest rungs of the socio-economic ladder have few options to 
+improve their lives. 
+They need places to live, food to eat, and income to purchases these and other goods.
+They can move to urban areas to try to get work or they can try to extract (pun intended)
+a living by farming or mining.
+The best lands have already been taken; what is available to the \emph{next} farmer
+or miner is typically of marginally \emph{lower} quality.
 
-What are the drivers of demand?
-cheap food (row farming)
-low population density.
-displacement of native peoples/first nations lead to a "need" to occupy and "settle" all the land.
-it's a resource: use it.
+Thus, we see that the drivers for land use are the terms of the IPARC equation,
+($P$), ($A$), and ($R$).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Land use efficiency}
