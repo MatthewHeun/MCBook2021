@@ -125,20 +125,32 @@ Those fires destroy forests, release stored carbon, and contribute to further wa
 \subsection{Demand for land}
 Demand for land is driven by increasing human population ($P$).
 As mentioned in Chapter~\ref{chap:agriculture}, higher population drives agriculture,
-which is consistent with the land-use statistics shown above.
+and agriculture is \emph{the} most prevalent way we use land.
+The land-use statistics presented in the section above show humans taking more
+land for agriculture and for cities.
+As farm land is degraded, humans move on and create more farm land, primarily 
+from forests, but also from grass lands, shrub land, and sparsely vegetated land.
+Some of the abandoned farm land regrows to forest.
 
 Population growth leads directly to a need for more housing,
 but not just any housing.
 Another trend shown by land-use statistics is greater urbanization.
-The demand is disproportionately for urban housing
+The demand for housing is disproportionately for urban housing
 because of a long-term trend of migration to urban areas. 
 Urban areas have much higher GDP per area.
 Thus pursuit of wealth, that is, a desire for greater affluence ($A$) drives 
 migration from rural areas to urban ones.
 
-One of the major causes of deforestation in the Amazon basin is (mostly illegal)
-attempts to extract mineral wealth.
-There is a strong demand for resources ($R$) to feed an ever-growing global 
+The other major factor of land use demand is for resources.
+The resources could be energy. 
+For example, about 30\% of the U.S. corn (maize) crop is converted into ethanol
+to be blended with gasoline as a transportation fuel.
+Or, the resources could be material.
+A major example is timber, which is a key ingredient in construction and many
+consumer goods.
+One of the major causes of deforestation in the Amazon basin, for instance, is 
+(mostly illegal) attempts to extract mineral wealth.
+Thus, there is a strong demand for resources ($R$) to feed an ever-growing global 
 economy.
 Those on the lowest rungs of the socio-economic ladder have few options to 
 improve their lives. 
@@ -148,32 +160,84 @@ a living by farming or mining.
 The best lands have already been taken; what is available to the \emph{next} farmer
 or miner is typically of marginally \emph{lower} quality.
 
-Thus, we see that the drivers for land use are the terms of the IPARC equation,
-($P$), ($A$), and ($R$).
+Therefore, consistent with earlier chapters, the drivers for land use are the 
+terms of the IPARC equation, ($P$), ($A$), and ($R$).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Land use efficiency}
 \label{sec:land_efficiency}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 Since land limited resource, it makes sense to maximize the productivity of that resource. 
-Various metrics could be used to gauge the productivity of the land, for example, 
-calories per acre, pounds of food per acre, number of people fed per acre, or 
-Joules per food calorie. 
-(The differences between what these metrics tell us are in themselves interesting.)
-What about crop diversity (consumer choice)?
-% Josh: do we have any of these numbers (graph with time?)
+Various metrics could be used to gauge the productivity of the land.
+For example, with respect to agriculture, we could attempt to maximize
+calories per acre, pounds of food per acre, number of people fed per acre, \emph{or} 
+Joules per food calorie (that is, EROI). 
+
+For cities, we could attempt to maximize population density, or we could minimize
+metrics related to impact, or we could try to make cities as self-sufficient as 
+possible, for example with respect to food or energy.
+We might try to minimize the amount of transportation emissions within cities.
+Or we might try to maximize urban GDP.
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Remember former U.S.\ representative Vernon Ehlers:
+``you can never do only one thing.''
+
+\end{mcframe}
+
+However, we also care about ecosystem service and the health of the environment 
+that provides those ecosystem services.
 We care about multifactor indices: biodiverstiy, wilderness, ecosystem services, 
 air and water quality, etc.
 
-Urban land is much more economically productive than rural land (citation needed), 
-so metrics like population per square kilometer
-(population density) or GDP per acre are also important.
+One way to describe the tension between land use for human needs and devoting land
+to preserving ecosystem services is sparing versus sharing~\cite{Fraanje2018}.
+Land ``sparing'' seeks to minimize the amount of agricultural land needed for humans
+but maximizing the productivity of that land, even if it means input-intensive farming
+that results in less biodiversity \emph{on the farm}. 
+Other land is ``spared'' and set aside for conservation.
+Land ``sharing'' uses agricultural practices that are more eco-friendly to wildlife
+species on the farm, but, because yields aren't as high, requires more total farm land.
 
-Envriornmental impact per GDP or per area.
 
-Link emissions to urban planning, efficiency, and minimizing transportation and maximizing productivity (GDP).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Land as a carbon sink}
+\label{sec:carbon_storage_capacity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}
+\centering
+\includegraphics[width=0.75\linewidth]{chapters/ch10-LandUseUrbanPlanning/figures/LandCarbonStorage.jpg}
+\caption[Biome specific carbon storage capacity.]
+{Specific carbon storage capacity of different biomes.}%~\citep[Fig.~1]{LandCStorage}.
+\label{fig:LandCStorage}
+\end{figure}
+
+% Need a source for this figure.
+% https://link.springer.com/chapter/10.1007/978-94-017-3089-1_2 ??
+% https://www.researchgate.net/publication/255994189_Terrestrial_ecosystem_responses_to_global_change_a_research_strategy
+% https://carbon2018.globalchange.gov/chapter/13/
+% https://www.google.com/search?q=willraap.org%3A+carbon+storage&rlz=1C1GCEA_enUS774US774&oq=willraap.org%3A+carbon+storage&aqs=chrome..69i57.5629j0j4&sourceid=chrome&ie=UTF-8
+% THE SOURCE OF THE IMAGE IS THE PDF IN THIS FOLDER. BUT THE LINK TO WILLRAAP.ORG IS NOTHING.
+
+%Need to modify this figure to reconcile with Duke report (see also other publications by the same authors)
+% https://nicholasinstitute.duke.edu/sites/default/files/publications/blue-carbon-report-paper.pdf
+%
+% https://www.google.com/search?q=Murray+Linwood+Pendleton+Jenkins+Sifleet+2011&rlz=1C1GCEA_enUS774US774&oq=Murray+Linwood+Pendleton+Jenkins+Sifleet+2011&aqs=chrome..69i57.34130j0j7&sourceid=chrome&ie=UTF-8
+%
+% include oceans.
+% Note that this data is a specific intensity. That is, it shows how much carbon is 
+% stored per meter squared but we need to know how many square meters of each terrain is available.
+
+
+
+
+
+
 
 Challenges of dealing with the built environment, mismatch of information and timescales.
 
@@ -196,35 +260,7 @@ transport-related energy consumption. %~\citep[Fig~2]{US_cities}
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{The carbon storage capacity of land}
-\label{sec:carbon_storage_capacity}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{figure}
-\centering
-\includegraphics[width=0.75\linewidth]{chapters/ch10-LandUseUrbanPlanning/figures/LandCarbonStorage.jpg}
-\caption[Biome specific carbon storage capacity.]
-{Specific carbon storage capacity of different biomes.}%~\citep[Fig.~1]{LandCStorage}.
-\label{fig:LandCStorage}
-\end{figure}
-
-
-% Need a source for this figure.
-% https://link.springer.com/chapter/10.1007/978-94-017-3089-1_2 ??
-% https://www.researchgate.net/publication/255994189_Terrestrial_ecosystem_responses_to_global_change_a_research_strategy
-% https://carbon2018.globalchange.gov/chapter/13/
-% https://www.google.com/search?q=willraap.org%3A+carbon+storage&rlz=1C1GCEA_enUS774US774&oq=willraap.org%3A+carbon+storage&aqs=chrome..69i57.5629j0j4&sourceid=chrome&ie=UTF-8
-% THE SOURCE OF THE IMAGE IS THE PDF IN THIS FOLDER. BUT THE LINK TO WILLRAAP.ORG IS NOTHING.
-
-Need to modify this figure to reconcile with Duke report (see also other publications by the same authors)
-% https://nicholasinstitute.duke.edu/sites/default/files/publications/blue-carbon-report-paper.pdf
-%
-% https://www.google.com/search?q=Murray+Linwood+Pendleton+Jenkins+Sifleet+2011&rlz=1C1GCEA_enUS774US774&oq=Murray+Linwood+Pendleton+Jenkins+Sifleet+2011&aqs=chrome..69i57.34130j0j7&sourceid=chrome&ie=UTF-8
-%
-include oceans.
-Note that this data is a specific intensity. That is, it shows how much carbon is 
-stored per meter squared but we need to know how many square meters of each terrain is available.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % bonepile
