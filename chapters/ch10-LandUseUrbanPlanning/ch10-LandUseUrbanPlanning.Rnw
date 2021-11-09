@@ -180,19 +180,17 @@ possible, for example with respect to food or energy.
 We might try to minimize the amount of transportation emissions within cities.
 Or we might try to maximize urban GDP.
 
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-\begin{mcframe}[0.90\textwidth](0.85\textwidth)
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Remember former U.S.\ representative Vernon Ehlers:
-``you can never do only one thing.''
-
-\end{mcframe}
-
 However, we also care about ecosystem service and the health of the environment 
 that provides those ecosystem services.
 We care about multifactor indices: biodiverstiy, wilderness, ecosystem services, 
 air and water quality, etc.
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Remember former U.S.\ representative Vernon Ehlers:
+``you can never do only one thing.''
+\end{mcframe}
 
 One way to describe the tension between land use for human needs and devoting land
 to preserving ecosystem services is sparing versus sharing~\cite{Fraanje2018}.
@@ -203,9 +201,8 @@ Other land is ``spared'' and set aside for conservation.
 Land ``sharing'' uses agricultural practices that are more eco-friendly to wildlife
 species on the farm, but, because yields aren't as high, requires more total farm land.
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Land as a carbon sink}
+\subsection{Land as a carbon sink}
 \label{sec:carbon_storage_capacity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -233,18 +230,20 @@ species on the farm, but, because yields aren't as high, requires more total far
 % Note that this data is a specific intensity. That is, it shows how much carbon is 
 % stored per meter squared but we need to know how many square meters of each terrain is available.
 
+Figure~\ref{fig:LandCStorage} shows how much carbon each type of land can store.
+The green bars indicate carbon stored as plant life above ground. 
+The brown bars indicate carbon stored in the soil below the surface.
+(You can see why peat is used as a fuel in same parts of the world.)
+Tropical and boreal forests, wetlands, temperate grasslands, and Northern peat lands 
+are all promising candidates for carbon sequestration.
+Unfortunately, the \emph{amount} of land suitable for peat is small. 
+In contrast, the opportunities for forest and grasslands are quite extensive.
+Projects 10.X and 10.Y explore technical aspects of forest and grassland 
+restoration/carbon sequestration.
 
-
-
-
-
-
-Challenges of dealing with the built environment, mismatch of information and timescales.
-
-
-
-
-
+\section{Urban sustainability}
+This section examines the sustainability challenges of cities, including mismatch 
+between information and timescales 
 
 Figure~\ref{fig:urban_density} shows the relationship between urban density and 
 transport-related energy consumption. %~\citep[Fig~2]{US_cities}
@@ -256,8 +255,6 @@ transport-related energy consumption. %~\citep[Fig~2]{US_cities}
 % [Relation between urban density and transport-related energy consumption.] ~\citep[Fig.~2]{US_cities}.
 \label{fig:urban_density}
 \end{figure}
-
-
 
 
 
@@ -296,6 +293,7 @@ Donald Shoup, \emph{The high cost of free parking}, Routledge, 2011.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 YouTube channels Not Just Bikes and City Beautiful \\
 StrongTowns.org
+tabledebates.org
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
