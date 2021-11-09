@@ -288,6 +288,7 @@ Higher population densities means transportation is less important.
 Lower population densities means transportation is needed even more.
 Figure~\ref{fig:urban_density} illustrates the point by showing the relationship 
 between urban density and transport-related energy consumption. %~\citep[Fig~2]{US_cities}
+Clearly, there is a bilinear tradeoff between urban density and cost of transportation.
 
 \begin{figure}
 \centering
@@ -320,8 +321,16 @@ Some of the end-of-chapter discussion questions consider ways to generate
 (A prison might have a high population density, that doesn't mean people will
 want to live there.)
 
-building infrastructure life, changing technology, designs that outlast their 
-circumstances, and fractured ownership.
+Cities face additional sustainability challenges related to infrastructure lifespan, 
+economic and population growth, changing technology, and fractured ownership.
+The design lifetime of infrastructure may not match its economic lifetime.
+Growth might make a bridge designed to last 100 year inadequate after only 60 years.
+Wireless communication technologies have rendered wire-based communication much
+less relevant. 
+However, when changes are necessary, often the multiple constraints of urban environments
+make upgrading infrastructure costly and difficult.
+We hope you agree that the field of urban planning is full of important and exciting
+challenges.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
