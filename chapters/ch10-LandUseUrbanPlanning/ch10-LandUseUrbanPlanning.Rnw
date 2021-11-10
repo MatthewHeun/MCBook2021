@@ -465,9 +465,9 @@ Donald Shoup, \emph{The high cost of free parking}, Routledge, 2011.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} and 
 \href{https://www.youtube.com/c/CityBeautiful}{City Beautiful} \\
-StrongTowns.org \\
-tabledebates.org \\
-Walk Score
+\href{https://www.strongtowns.org/}{StrongTowns.org} \\
+\href{https://www.tabledebates.org/}{tabledebates.org} \\
+\href{https://www.walkscore.com/}{Walk Score}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
@@ -485,7 +485,15 @@ Walk Score
       Do you think future generations will be happy to have the land or shaking
       their heads at what we did to our (their) coastline?
       
-\item Land/poverty cycle
+\item Research indicates that if a farmer's land amount is below a certain threshold
+      it can create a ``poverty trap''~\cite{Coomes2011}.
+      There is just enough land for subsistence farming but not farming doesn't
+      generate enough income to escape poverty.
+      What does the existence of these kind of poverty traps indicate for a
+      sparing/sharing dichotomy? 
+      What could be done to eliminate the poverty 
+      trap(s)? What would be the (unintended) consequences of these solutions?
+      % is this a project instead?
       
 \item Section \ref{sec:land_and_how_it_is_used} lists the need for resources as
       one of the drivers for land use. 
