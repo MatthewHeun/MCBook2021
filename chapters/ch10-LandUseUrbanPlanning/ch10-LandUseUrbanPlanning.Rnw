@@ -157,7 +157,7 @@ Or, the resources could be material
 A major example is timber, which is a key ingredient in construction and many
 consumer goods.
 One of the major causes of deforestation in the Amazon basin, for instance, is 
-(mostly illegal) attempts to extract mineral wealth.
+extraction of mineral wealth.
 Thus, there is a strong demand for resources ($R$) to feed an ever-growing global 
 economy.
 Those on the lowest rungs of the socio-economic ladder have few options to 
@@ -362,7 +362,8 @@ want to live there.)
 Cities face additional sustainability challenges related to infrastructure lifespan, 
 economic and population growth, changing technology, and fractured ownership.
 The design lifetime of infrastructure may not match its economic lifetime.
-Growth might make a bridge designed to last 100 year inadequate after only 60 years.
+Population growth might make a bridge designed to last 100 years inadequate to 
+satisfy transportation demand after only 30 years.
 Wireless communication technologies have rendered wire-based communication much
 less relevant. 
 However, when changes are necessary, often the multiple constraints of urban environments
@@ -417,15 +418,33 @@ Walk Score
 
 \begin{questions}
 
-\item Urbanization provides another illustration of interactions.
-Though only about 2\% of Earth’s land surface is covered by builtup area, the effect of urban systems on ecosystems extends well
-beyond urban boundaries. Three processes of urban change appear to be of relevance for ecosystem change: the growth of urban
-population (urbanization), the growth of built-up area (urban
-growth), and the spreading of urban functions into the urban hinterland connected with a decrease in the urban-rural gradient in
-population density, land prices, and so on (urban sprawl).
+\item Consider the process of creating more land. 
+      Typically a coastal area is ``filled in,'' turning ocean or wetland into 
+      dry ground. 
+      A common reason to do so is airport expansion. 
+      More runways are needed to handle great traffic or larger runways are needed
+      to handle larger aircraft. 
+      What are the environmental, social, and economic tradeoffs?
+      Do you think future generations will be happy to have the land or shaking
+      their heads at what we did to our (their) coastline?
+      
+\item Land/poverty cycle
+      
+\item Section \ref{sec:land_and_how_it_is_used} lists the need for resources as
+      one of the drivers for land use. 
+      Of course, many of the minerals that we ``need'' are available from extra-planetary 
+      sources.
+      Are there social consequences associated with moving wealth away from owning 
+      land to owning space rocks, intellectual property, or just plain old money?
+      
 
 \item What is more sustainable urban or rural? How can we make both 
-more sustainable?
+        more sustainable?
+
+\item No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
+      afternoon.'' 
+      What are some elements of urban infrastructure that \emph{are} inherently interesting? 
+      Are there any? What makes them special?
 
 \end{questions}
 
