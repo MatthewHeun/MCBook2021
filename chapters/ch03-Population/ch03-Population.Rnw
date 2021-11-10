@@ -129,6 +129,7 @@ region_pop <- population %>%
     total_population_billions = total_population / 1e9,
     Country = dplyr::recode(Country, `Latin America` = "Latin Am.", `North America` = "North Am."),
   )
+
 region_pop %>%
   dplyr::filter(Country != "World", Year >= 1800) %>%
   dplyr::mutate(
@@ -260,12 +261,17 @@ population and those variables interact in complex ways.
     \node[above left = 4mm and 0mm of education_family_planning] (fertility) {Fertility};
     % Education, family planning --> Fertility
     \draw [-stealth, bend right=10] (education_family_planning) to (fertility); 
-    \node[above left = 1.9mm and -0.3mm of education_family_planning] {$-$};
+    \node[above left = 1.9mm and -0.4mm of education_family_planning] {$-$};
     % Births per year
     \node[above right = 4mm and -10mm of fertility] (births_per_year) {\begin{tabular}{l} Births \\ per year \end{tabular}};
     % Fertility --> Births per year
     \draw [-stealth, bend right=10] (fertility) to (births_per_year); 
     \node[above right = 1.5mm and -3mm of fertility] {+};
+    % Population
+    \node[above right = 4mm and 2mm of births_per_year] (population) {\textbf{Population}};
+    % Births per year --> Population
+    \draw [-stealth] ([xshift=-5mm]births_per_year.north) to[out=90, in=180] (population.west); 
+    \node[above right = 0.5mm and -3mm of births_per_year] {(+)};
   \end{tikzpicture}
   
 \caption[Causal loop diagram of several important feedback loops in the World3 population model.]
