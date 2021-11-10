@@ -129,6 +129,7 @@ region_pop <- population %>%
     total_population_billions = total_population / 1e9,
     Country = dplyr::recode(Country, `Latin America` = "Latin Am.", `North America` = "North Am."),
   )
+
 region_pop %>%
   dplyr::filter(Country != "World", Year >= 1800) %>%
   dplyr::mutate(

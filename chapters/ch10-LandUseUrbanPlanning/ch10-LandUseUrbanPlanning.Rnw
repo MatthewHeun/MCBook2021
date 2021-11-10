@@ -287,16 +287,36 @@ of the same coin.
 Higher population densities means transportation is less important. 
 Lower population densities means transportation is needed even more.
 Figure~\ref{fig:urban_density} illustrates the point by showing the relationship 
-between urban density and transport-related energy consumption. %~\citep[Fig~2]{US_cities}
+between urban density and transport-related energy consumption.
 Clearly, there is a bilinear tradeoff between urban density and cost of transportation.
 
-\begin{figure}
-\centering
-\includegraphics[width=0.75\linewidth]{chapters/ch10-LandUseUrbanPlanning/figures/Urban_Density_and_Transportation-Related_Energy_Consumption.pdf}
-\caption{Relation between urban density and transport-related energy consumption.} 
-% [Relation between urban density and transport-related energy consumption.] ~\citep[Fig.~2]{US_cities}.
-\label{fig:urban_density}
-\end{figure}
+
+<<urban_density, fig.cap="Relation between urban density and transport-related energy consumption. Source: University of Michigan~\\cite{US_cities}.">>=
+urban_density_data <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Urban_Density.xlsx"),
+                                         sheet = "data to plot") %>% 
+  dplyr::mutate(
+    Continent = factor(Continent, levels = c("N. Am.", "Australia", "Europe", "Asia"))
+  )
+
+urban_density_data %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = `Urban Density (Inhabitants per hectare)`,
+                                         y = `Transport related energy consumption (Gigajoules per capita per year)`,
+                                         colour = `Continent`)) +
+  ggplot2::geom_point() + 
+  ggplot2::geom_text(mapping = ggplot2::aes(label = City),
+                     nudge_x = urban_density_data$nudge_x,
+                     nudge_y = urban_density_data$nudge_y,
+                     check_overlap = FALSE) +
+  
+  viridis::scale_colour_viridis(discrete = TRUE, direction = -1, begin = 0, end = 0.9) +
+  ggplot2::labs(x = "Urban density [people/ha]", 
+                y = "Transport energy [GJ/person-year]", 
+                colour = ggplot2::element_blank()) +
+  
+  MKHthemes::xy_theme()
+
+@
+
 
 Another way of thinking about the role of transportation in urban environments is
 that transportation creates places worth going to.
