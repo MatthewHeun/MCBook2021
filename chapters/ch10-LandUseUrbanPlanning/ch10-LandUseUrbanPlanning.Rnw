@@ -214,6 +214,9 @@ species on the farm, but, because yields aren't as high, requires more total far
 \subsection{Land as a carbon sink}
 \label{sec:carbon_storage_capacity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Because energy use and carbon emissions are the prime example in this book,
+and because land plays a crucial role in regulating carbon in the environment,
+this section examines the capacity of the land to absorb and store carbon.
 
 \begin{figure}
 \centering
@@ -264,7 +267,8 @@ To remain a city, enough taxes have to be collected over the infrastructure's li
 to repair or replace it when it wears out.
 To be sustainable, an urban area has to be valuable enough to generate the additional
 revenue to pay for its additional infrastructure.
-StrongTowns.org discusses sustainable infrastructure financing in more detail.
+\href{https://www.strongtowns.org/}{StrongTowns.org} discusses sustainable 
+infrastructure financing in more detail.
 We will discuss next some of the makes cities valuable.
 
 In 2018, just 31 counties produced 32\% of U.S. GDP. % https://www.visualcapitalist.com/america-land-use/
@@ -286,7 +290,7 @@ As ``rings'' are added to the city and the diameter of the city grows, the time
 it takes to travel across the city grows as well. 
 At some point, the city diameter becomes so big that it becomes infeasible to 
 travel from some parts of the city to other parts.
-At that point, the economic benefits of growing become moot; the markets can't
+At that point, the economic benefits of growing are lost: the markets can't
 reach each other.
 The city has reached its effective limit.
 Therefore, the role and value of transportation is key to the economic success
@@ -340,8 +344,9 @@ to visit.
 No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
 afternoon.''
 Rail yards, bus stations, and airports are loud, and often uncomfortable, places to be.
-A desirable, and therefore valuable, which enables sustainability, city center 
-is walkable, human scale, and space efficient.
+A desirable, city center is walkable, human scale, and space efficient.
+Being desirable makes urban areas valuable, which, in turn, creates the tax base 
+to sustain infrastructure. 
 
 Population density is the other key determiner of urban wealth. 
 It requires both housing and transportation. 
@@ -396,7 +401,8 @@ Donald Shoup, \emph{The high cost of free parking}, Routledge, 2011.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-YouTube channels Not Just Bikes and City Beautiful \\
+YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} and 
+\href{https://www.youtube.com/c/CityBeautiful}{City Beautiful} \\
 StrongTowns.org \\
 tabledebates.org \\
 Walk Score
