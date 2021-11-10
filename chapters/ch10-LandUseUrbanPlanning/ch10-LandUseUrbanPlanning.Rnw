@@ -242,6 +242,63 @@ this section examines the capacity of the land to absorb and store carbon.
 % Note that this data is a specific intensity. That is, it shows how much carbon is 
 % stored per meter squared but we need to know how many square meters of each terrain is available.
 
+
+
+<<CarbonStorage, fig.height=5.5, fig.cap="World carbon storage in various biomes. Source: IPCC~\\cite{IPCC:2000wv}.">>=
+carbon_storage_world <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Carbon_Storage_World.xlsx"),
+                                         sheet = "data to plot") %>% 
+  tidyr::pivot_longer(cols = c("Carbon stored in Vegetation (Gt/million km2)", 
+                               "Total Carbon stored in Vegetation (Gt)", 
+                               "Carbon stored in Soils (Gt/million km2)", 
+                               "Total Carbon stored in Soils (Gt)", 
+                               "Area (million km2)"), 
+                      names_to = "metric", 
+                      values_to = "vals") %>% 
+  dplyr::mutate(
+    Biome = factor(Biome, levels = c("Boreal forest", "Rainforest", "Grassland",
+                                     "Chaparral", "Wetlands", "Desert", 
+                                     "Temperate forest", "Croplands", "Tundra")),
+    storage_location = dplyr::case_when(
+      metric == "Carbon stored in Vegetation (Gt/million km2)" | 
+        metric == "Total Carbon stored in Vegetation (Gt)" ~ "vegetation", 
+      metric == "Carbon stored in Soils (Gt/million km2)" | 
+        metric == "Total Carbon stored in Soils (Gt)" ~ "soil", 
+      metric == "Area (million km2)" ~ "area",
+      TRUE ~ NA_character_
+    ), 
+    storage_location = factor(storage_location, levels = c("area", "vegetation", "soil")),
+    panel = dplyr::case_when(
+      metric == "Area (million km2)" ~ "area", 
+      metric == "Carbon stored in Vegetation (Gt/million km2)" | 
+        metric == "Carbon stored in Soils (Gt/million km2)" ~ "carbon_density", 
+      metric == "Total Carbon stored in Vegetation (Gt)" | 
+        metric == "Total Carbon stored in Soils (Gt)" ~ "carbon_storage", 
+      TRUE ~ NA_character_
+    )
+  )
+
+facet_labeller <- ggplot2::as_labeller(
+     c(area = paste("Area (", "Mkm^2", ")"),
+       carbon_density = paste("Density (", "GtC/Mkm^2", ")"), 
+       carbon_storage = paste("Storage (", "GtC", ")")),
+     default = ggplot2::label_parsed)
+
+
+carbon_storage_world %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Biome", y = "vals", fill = "storage_location")) + 
+  ggplot2::geom_bar(stat = "identity") + 
+  ggplot2::facet_grid(rows = "panel", scales = "free_y", labeller = facet_labeller) + 
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = "Area and carbon characteristics of various biomes", 
+                fill = ggplot2::element_blank()) +
+  viridis::scale_fill_viridis(discrete = TRUE, direction = -1, begin = 0, end = 0.9) + 
+  
+  MKHthemes::xy_theme() + 
+  ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1), 
+                 axis.ticks.x = ggplot2::element_blank())
+@
+
+
 Figure~\ref{fig:LandCStorage} shows how much carbon each type of land can store.
 The green bars indicate carbon stored as plant life above ground. 
 The brown bars indicate carbon stored in the soil below the surface.
