@@ -36,8 +36,8 @@ Land can be used for agriculture, recreation, urban or suburban dwellings, or
 not allocated for direct human use, that is, left as wilderness.
 Land is the source, directly or indirectly, for all our resources, the sink for
 much of our waste, and where we ourselves live.
-We need to simultaneously satisfy many different constraints: provide enough resources,
-dispose of wastes, and maintain ecosystem services.
+We need land to simultaneously satisfy many different functions, including provide 
+enough resources, accept wastes, and provide ecosystem services.
 
 The next sections deal with three major sustainability questions related to land use. 
 ``How do we use land?''
@@ -84,9 +84,11 @@ soybeans (20\%), and cotton (10\%). That leaves just 8\% for everything else and
 indeed, ``food we eat'' is a small area in Figure \ref{fig:USlanduse}.
 In contrast, the area where we live and work (red/pink areas) is a relatively small
 69.4 million acres (3.65\%).
-One key result from Figure~\ref{fig:USlanduse} is that the U.S. is relatively 
+One key observation from Figure~\ref{fig:USlanduse} is that the U.S. is relatively 
 sparsely populated.
 
+Land use changes over time and tracking those changes is important for understanding
+relationships between land use and climate change.
 The data for surveys such as Figure~\ref{fig:USlanduse} are produced from satellite imagery.
 The European Space Agency recently released a dataset for \emph{global} land use over
 a 24-year period (1992-2015) as part of a climate change initiative (CCI).
@@ -111,7 +113,7 @@ across all land-use categories.
 
 Land is the primary source of energy, be it fossil fuel, biomass, or renewable. 
 Wells or mines for fossil fuels are located in a \emph{place}.
-Biomass has to be grown or harvested from a place as well.
+Biomass has to be grown or harvested from a \emph{place} as well.
 Renewables, such as hydro, solar photovoltaic, and wind power, are also located in
 a \emph{places}.
 In particular, for hydro, solar, and wind, correct siting is a key consideration
@@ -127,11 +129,12 @@ For instance, hotter, drier weather results in more frequent and severe wildfire
 Those fires destroy forests, release stored carbon, and contribute to further warming.
 
 \subsection{Demand for land}
-Demand for land is driven by increasing human population ($P$).
+Demand for land is driven by increasing human population ($P$). 
+(See Equation~\ref{eq:IPARC}.)
 As mentioned in Chapter~\ref{chap:agriculture}, higher population drives agriculture,
 and agriculture is \emph{the} most prevalent way we use land.
 The land-use statistics presented in the section above show humans taking more
-land for agriculture and for cities.
+land for agriculture and for cities over time.
 As farm land is degraded, humans move on and create more farm land, primarily 
 from forests, but also from grass lands, shrub land, and sparsely vegetated land.
 Some of the abandoned farm land regrows to forest.
@@ -149,7 +152,8 @@ The other major factor of land use demand is for resources.
 The resources could be energy. 
 For example, about 30\% of the U.S. corn (maize) crop is converted into ethanol
 to be blended with gasoline as a transportation fuel.
-Or, the resources could be material.
+Or, the resources could be material
+(see Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use}).
 A major example is timber, which is a key ingredient in construction and many
 consumer goods.
 One of the major causes of deforestation in the Amazon basin, for instance, is 
@@ -161,8 +165,8 @@ improve their lives.
 They need places to live, food to eat, and income to purchases these and other goods.
 They can move to urban areas to try to get work or they can try to extract (pun intended)
 a living by farming or mining.
-The best lands have already been taken; what is available to the \emph{next} farmer
-or miner is typically of marginally \emph{lower} quality.
+Unfortunately, the best lands have already been taken; what is available to the 
+\emph{next} farmer or miner is typically of marginally \emph{lower} productivity.
 
 Therefore, consistent with earlier chapters, the drivers for land use are the 
 terms of the IPARC equation, ($P$), ($A$), and ($R$).
@@ -172,8 +176,9 @@ terms of the IPARC equation, ($P$), ($A$), and ($R$).
 \label{sec:land_efficiency}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Since land limited resource, it makes sense to maximize the productivity of that resource. 
-Various metrics could be used to gauge the productivity of the land.
+Since land is a limited resource, it makes sense to maximize the effective use 
+of that resource, whether that's for food, housing, and/or ecosystem services.
+Various metrics could be used to gauge the effectiveness of land use.
 For example, with respect to agriculture, we could attempt to maximize
 calories per acre, pounds of food per acre, number of people fed per acre, \emph{or} 
 Joules per food calorie (that is, EROI). 
