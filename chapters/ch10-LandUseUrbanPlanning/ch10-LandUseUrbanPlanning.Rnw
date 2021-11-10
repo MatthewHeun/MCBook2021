@@ -306,14 +306,18 @@ urban_density_data %>%
   ggplot2::geom_text(mapping = ggplot2::aes(label = City),
                      nudge_x = urban_density_data$nudge_x,
                      nudge_y = urban_density_data$nudge_y,
-                     check_overlap = FALSE) +
+                     size = urban_density_data$size,
+                     check_overlap = FALSE, 
+                     show.legend = FALSE) +
   
   viridis::scale_colour_viridis(discrete = TRUE, direction = -1, begin = 0, end = 0.9) +
   ggplot2::labs(x = "Urban density [people/ha]", 
                 y = "Transport energy [GJ/person-year]", 
                 colour = ggplot2::element_blank()) +
   
-  MKHthemes::xy_theme()
+  MKHthemes::xy_theme() + 
+  ggplot2::theme(legend.position = c(0.8, 0.8))
+
 
 @
 
