@@ -223,7 +223,6 @@ population and those variables interact in complex ways.
 \centering
 
   \begin{tikzpicture}
-    [arrow_style/.style={blah}]
     \footnotesize
     % Investment rate
     \node at (0,0) (investment_rate) {\begin{tabular}{l} Investment \\ rate \end{tabular}};
