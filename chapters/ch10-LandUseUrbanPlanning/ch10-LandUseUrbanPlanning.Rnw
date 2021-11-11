@@ -244,7 +244,7 @@ this section examines the capacity of the land to absorb and store carbon.
 
 
 
-<<CarbonStorage, fig.height=5.5, fig.cap="World carbon storage in various biomes. ``Vegetation'' indicates carbon storage in plant matter. ``Soil'' indicates carbon storage in the soil. Source: IPCC~\\cite{IPCC:2000wv}.">>=
+<<CarbonStorage, fig.height=5.5, fig.cap="World carbon storage in various biomes. Top figure is amount (area) of each biome in the world. Middle figure is carbon density for each biome. Bottom figure is the product of the top and the middle and is the total storage capacity of each biome world wide. ``Vegetation'' indicates carbon storage in plant matter. ``Soil'' indicates carbon storage in the soil. Source: IPCC~\\cite{IPCC:2000wv}.">>=
 carbon_storage_world <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Carbon_Storage_World.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(cols = c("Carbon stored in Vegetation (Gt/million km2)", 
@@ -299,15 +299,15 @@ carbon_storage_world %>%
 @
 
 
-Figure~\ref{fig:LandCStorage} shows how much carbon each type of land can store.
-The green bars indicate carbon stored as plant life above ground. 
-The brown bars indicate carbon stored in the soil below the surface.
-(You can see why peat is used as a fuel in same parts of the world.)
-Tropical and boreal forests, wetlands, temperate grasslands, and Northern peat lands 
+Figure~\ref{fig:CarbonStorage} shows how much carbon each type of land (biome) can store.
+The teal bars indicate carbon stored as plant life above ground. 
+The purple bars indicate carbon stored in the soil below the surface.
+%(You can see why peat is used as a fuel in same parts of the world.)
+Tropical and boreal forests, and grasslands 
 are all promising candidates for carbon sequestration.
-Unfortunately, the \emph{amount} of land suitable for peat is small. 
+Unfortunately, the \emph{amount} of wetlands is small. 
 In contrast, the opportunities for forest and grasslands are quite extensive.
-Projects 10.X and 10.Y explore technical aspects of forest and grassland 
+Projects 10.1 and 10.2 explore technical aspects of forest and grassland 
 restoration/carbon sequestration.
 
 \section{Urban sustainability}
@@ -487,8 +487,8 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       
 \item Research indicates that if a farmer's land amount is below a certain threshold
       it can create a ``poverty trap''~\cite{Coomes2011}.
-      There is just enough land for subsistence farming but not farming doesn't
-      generate enough income to escape poverty.
+      There is just enough land for subsistence farming but alternatives to 
+      farming can't generate enough income to escape poverty.
       What does the existence of these kind of poverty traps indicate for a
       sparing/sharing dichotomy? 
       What could be done to eliminate the poverty 
@@ -499,14 +499,26 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       one of the drivers for land use. 
       Of course, many of the minerals that we ``need'' are available from extra-planetary 
       sources.
+      What would be the sustainability implications of a move to extra-planetary 
+      resources?
       Are there social consequences associated with moving wealth away from owning 
       land to owning space rocks, intellectual property, or just plain old money?
-      
+      Are there externalities (negative consequences to other people) from owning
+      land? Are there benefits that accrue to others for free (the reverse of 
+      externalities)?
 
-\item What do you think of as overall more sustainable urban or rural?
-      What is the most important thing to do to make each more energy efficient?
-      What is the most important way to make each use land more effectively?
-      (What does ``effectively'' or ``efficient'' mean to you in the context of
+\item The Great Green Wall is a desert-fighting project in Africa. The aim is to
+      stop the south-ward advance of the Sahara desert. 
+      Initially, the plan was to plant a swath of trees ten miles wide across 
+      the whole continent.
+      What has proven more effective is a change in land management techniques.
+      With reference to Figure~\ref{fig:CarbonStorage}, discuss the importance of
+      this project.
+
+\item What do you think of as a more sustainable pattern of land use, urban or rural?
+      What is the most impactful thing that could be done to make each more energy efficient?
+      What is the most impactful way to enable each pattern of land use to be more effective?
+      (What does ``effective'' or ``efficient'' mean to you in the context of
       this question?)
       
 \item In a land sparing-versus-sharing dichotomy, what are some things a city 
@@ -516,7 +528,7 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
 \item Some species (generalists) do well with land sharing. Generalists include
       red-tailed hawks, pigeon, deer, raccoons, and squirrels.
       Other species do not coexist as well with humans. 
-      Examples of these include wolves, wolverine, and grizzly bear.
+      Examples of these include wolves, wolverine, and grizzly bears.
       How do we decide and who makes the decisions about how much land we share and
       how much land we spare?
       What does land sharing versus land sparing say about our conservation priorities?
@@ -529,7 +541,7 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       How much time do you spend in urban versus rural areas? Why?
       
 \item Think of some ways to increase population density. 
-      What is a population density that is too high?
+      What population density would you consider to be too high?  Why?
 
 \item No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
       afternoon.'' 
@@ -552,7 +564,23 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
 \item Research restoring/regrowing/sustainable yield tropical, temperate, or boreal forests/woodlands.
 
 \item Research restoring/regrowing temperate grasslands. Be sure to pay attention
-to the role of grazing herds.
+      to the role of grazing herds.
+
+\item Research the field of urban planning.  How has it changed over time?  
+      What are its current goals?  
+      In what ways sustainability more prominent today than 50 years ago?
+
+\item Urban planning can look very different in a growing economy (e.g., China) 
+      compared to an established economy (e.g., United Kingdom).  
+      Compare and contrast the questions urban planners face and the goals for urban 
+      planning in each type of economy.
+
+\item There is a well-known field called ``urban planning.''  
+      But there is much less attention paid to "rural planning."  
+      Compare and contrast urban and rural planning.  
+      (Hint: Other terms to be aware of a ``landscape architecture,'' 
+      ``ecological science,'' and ``geographical information systems (GIS).''
+
       
 \end{projects}
 
