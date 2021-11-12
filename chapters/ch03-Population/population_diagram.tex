@@ -6,16 +6,19 @@
     \footnotesize
     % Investment rate
     \node at (0,0) (investment_rate) {\begin{tabular}{l} Investment \\ rate \end{tabular}};
+    %
     % Industrial investment
     \node[above right = 5.5mm and -13mm of investment_rate] (industrial_investment) {\begin{tabular}{l} Industrial \\ investment \end{tabular}};
     % Investment rate --> Industrial investment
     \draw [-stealth] (investment_rate) to (industrial_investment); 
     \node[above right = 3mm and -6mm of investment_rate] {+};
+    %
     % Industrial capital
     \node[above right = 5.5mm and -13mm of industrial_investment] (industrial_capital) {\begin{tabular}{l} Industrial \\ capital \end{tabular}};
     % Industrial investment --> Industrial capital
     \draw [-stealth] (industrial_investment) to (industrial_capital); 
     \node[above right = 3mm and -10mm of industrial_investment] {+};
+    %
     % Industrial output
     \node[above right = 5.5mm and -18mm of industrial_capital] (industrial_output) {\begin{tabular}{l} Industrial \\ output \end{tabular}};
     % Industrial capital --> Industrial output
@@ -26,9 +29,14 @@
     % Industrial output --> Service capital
     \draw[-stealth, bend right=10]  ([xshift=-3mm]industrial_output.north) to (service_capital);
     \node[above left = 2mm and -11mm of industrial_output] {+};
+    %
     % Industrial output --> Industrial investment
     \draw[-stealth]  ([xshift=-5mm]industrial_output.south) to[out=250, in=180] (industrial_investment);
     \node[below left = -4mm and -1mm of industrial_investment] {+};
+    %
+    % (+) in Industrial investment loop
+    \node[above left = 0mm and -9.5mm of industrial_investment] {(+)};
+    %
     % Services per capita
     \node[above right = 5mm and -17.5mm of service_capital] (services_per_capita) {\begin{tabular}{l} Services \\ per capita \end{tabular}};
     % Service capital --> Service per capita
@@ -48,12 +56,22 @@
     \node[above right = 4mm and -10mm of fertility] (births_per_year) {\begin{tabular}{l} Births \\ per year \end{tabular}};
     % Fertility --> Births per year
     \draw [-stealth, bend right=10] (fertility) to (births_per_year); 
-    \node[above right = 1.5mm and -3mm of fertility] {+};
+    \node[above right = 1.5mm and -7mm of fertility] {+};
+    %
     % Population
     \node[above right = 4mm and 2mm of births_per_year] (population) {\textbf{Population}};
+    %
     % Births per year --> Population
     \draw [-stealth] ([xshift=-5mm]births_per_year.north) to[out=90, in=180] (population.west); 
-    \node[above right = 0.5mm and -3mm of births_per_year] {(+)};
+    \node[above left = -2mm and -1mm of population] {+};
+    %
+    % Population --> Births per year
+    \draw [-stealth] ([xshift=-5mm]population.south) to[out=300, in=330] ([xshift=5mm]births_per_year.south); 
+    \node[below right = 0mm and -5mm of births_per_year] {+};
+    %
+    % Cycle (+) at population
+    \node[above right = -2mm and -4mm of births_per_year] {(+)};
+    %
     % Depreciation
     \node[right = 5mm of industrial_investment] (depreciation) {Depreciation};
     % Industrial capital --> Depreciation
@@ -67,4 +85,22 @@
     % Average lifetime of capital --> Depreciation
     \draw[-stealth, bend right=10]  ([xshift=-2mm]average_lifetime_capital) to ([xshift=-2mm, yshift=-3mm]depreciation);
     \node[below left = -1mm and -8mm of depreciation] {$-$};
+    %
+    % Nonrenewable resources
+    \node[above left = -2mm and 7mm of industrial_output] (nonrenewable_resources) {\begin{tabular}{l} Nonrenewable \\ resources \end{tabular}};    
+    %
+    % Industrial output --> Nonrenewable resources
+    \draw[-stealth, bend right=10]  (industrial_output) to ([xshift=8mm,yshift=-0.5mm]nonrenewable_resources);
+    \node[below right = -5mm and -7.5mm of nonrenewable_resources] {$-$};
+    %
+    % Efficiency of capital
+    \node[below left = -3mm and 12.2mm of industrial_output] (efficiency_capital) {\begin{tabular}{l} Efficiency \\ of capital \end{tabular}};    
+    %
+    % Nonrenewable resources --> Efficiency of capital
+    \draw[-stealth]  (nonrenewable_resources.west) to[out=180, in=180] (efficiency_capital.west);
+    \node[below left = -4mm and -3mm of efficiency_capital] {+};
+    %
+    % Efficiency of capital --> Industrial output
+    \draw[-stealth, bend right=10]  (efficiency_capital) to (industrial_output);
+    \node[below left = -4mm and 1mm of industrial_output] {+};
   \end{tikzpicture}
