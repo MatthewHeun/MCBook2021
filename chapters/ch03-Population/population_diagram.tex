@@ -5,7 +5,7 @@
 \begin{tikzpicture}
     \footnotesize
     % Investment rate
-    \node at (0,0) (investment_rate) {\begin{tabular}{l} Investment \\ rate \end{tabular}};
+    \node at (0,0) (investment_rate) {\begin{tabular}{l} \emph{Investment} \\ \emph{rate} \end{tabular}};
     %
     % Industrial investment
     \node[above right = 5.5mm and -13mm of investment_rate] (industrial_investment) {\begin{tabular}{l} Industrial \\ investment \end{tabular}};
@@ -97,7 +97,7 @@
     \node[below right = -1.5mm and -7mm of industrial_capital] {$-$};
     %
     % Average lifetime of capital
-    \node[right = 18mm of investment_rate] (average_lifetime_capital) {\begin{tabular}{l} Average lifetime \\ of capital \end{tabular}};
+    \node[right = 18mm of investment_rate] (average_lifetime_capital) {\begin{tabular}{l} \emph{Average lifetime} \\ \emph{of capital} \end{tabular}};
     %
     % Average lifetime of capital --> Depreciation
     \draw[-stealth, bend right=10]  ([xshift=-2mm]average_lifetime_capital) to ([xshift=-2mm, yshift=-3mm]depreciation);
@@ -160,4 +160,29 @@
     % Health services --> Mortality
     \draw [-stealth, bend right=10] ([xshift=1mm]health_services.north) to ([xshift=-1mm]mortality.south); 
     \node[below right = -1.5mm and -8mm of mortality] {$-$};
+    %
+    % Services per capita --> Health services
+    \draw [-stealth, bend right = 30] ([xshift=-2mm, yshift=-1mm]services_per_capita.east) to ([xshift=-2mm]health_services.south); 
+    \node[below right = -1mm and -11mm of health_services] {+};
+    %
+    % Desired food per capita
+    \node[below right = -3mm and 3mm of services_per_capita] (desired_food_per_capita) {\begin{tabular}{l} \emph{Desired food} \\ \emph{per capita} \end{tabular}};
+    %
+    % Agricultural capital
+    \node[right = 25mm of service_capital] (agricultural_capital) {\begin{tabular}{l} Agricultural \\ capital \end{tabular}};
+    %
+    % Desired food per capita --> Agricultural capital
+    \draw [-stealth, bend right = 20] ([xshift=-3mm]desired_food_per_capita.south) to[out=290] ([xshift=2mm]agricultural_capital.west); 
+    \node[above left = -4.5mm and -3mm of agricultural_capital] {+};
+    %
+    % Industrial output --> Agricultural capital
+    \draw [-stealth, bend right = 15] ([xshift=-2mm, yshift=0mm]industrial_output.east) to ([xshift=-3mm, yshift=1mm]agricultural_capital.south); 
+    \node[below right = -2mm and -15mm of agricultural_capital] {+};
+    %
+    % Pollution
+    \node[above right = -5mm and 38mm of industrial_output] (pollution) {Pollution};
+    %
+    % Agricultural capital --> Pollution
+    \draw [-stealth, bend right = 5] ([xshift=3mm, yshift=2mm]agricultural_capital.south) to ([xshift=-4mm, yshift=0mm]pollution.north); 
+    \node[above left = -2mm and -2.5mm of pollution] {+};
   \end{tikzpicture}
