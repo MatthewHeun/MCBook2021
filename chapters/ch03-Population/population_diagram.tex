@@ -141,9 +141,23 @@
     \node[above right = -2mm and -5mm of services_per_capita] {$-$};
     %
     % Deaths per year
-    \node[right = 25mm of births_per_year] (deaths_per_year) {\begin{tabular}{l} Deaths \\ per year \end{tabular}};        
+    \node[right = 25mm of births_per_year] (deaths_per_year) {\begin{tabular}{l} Deaths \\ per year \end{tabular}};
     %
     % Deaths per year --> Population
     \draw [-stealth] ([xshift=1mm]deaths_per_year.north) to[out=110, in=0] (population.east); 
     \node[above right = -2mm and -1mm of population] {$-$};
+    %
+    % Mortality
+    \node[right = 38mm of fertility] (mortality) {Mortality};
+    %
+    % Mortality --> Deaths per year
+    \draw [-stealth, bend right=10] ([xshift=-1mm]mortality.north) to ([xshift=2mm]deaths_per_year.south); 
+    \node[below right = -1.5mm and -10mm of deaths_per_year] {+};
+    %
+    % Health services
+    \node[below left = 2mm and -13mm of mortality] (health_services) {\begin{tabular}{l} Health \\ services \end{tabular}};
+    %
+    % Health services --> Mortality
+    \draw [-stealth, bend right=10] ([xshift=1mm]health_services.north) to ([xshift=-1mm]mortality.south); 
+    \node[below right = -1.5mm and -8mm of mortality] {$-$};
   \end{tikzpicture}
