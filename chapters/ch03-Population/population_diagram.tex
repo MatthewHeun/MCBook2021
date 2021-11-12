@@ -239,6 +239,7 @@
     \node[above right = -2mm and -9.5mm of food_per_capita] {$-$};
     %
     % Pollution --> Mortality
-    \draw [-stealth, bend right = 80] ([xshift=6mm, yshift=0mm]pollution.north) to ([xshift=0.5mm, yshift=2mm]mortality.east); 
+    % \draw [-stealth, bend right = 80] ([xshift=6mm, yshift=0mm]pollution.north) to ([xshift=0.5mm, yshift=2mm]mortality.east); 
+    \draw [-stealth] ([xshift=6mm, yshift=0mm]pollution.north) to[out=10, in=10, looseness=2] ([xshift=0.5mm, yshift=2mm]mortality.east); 
     \node[above right = -2mm and -3mm of mortality] {+};
   \end{tikzpicture}

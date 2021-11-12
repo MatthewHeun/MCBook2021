@@ -224,8 +224,8 @@ population and those variables interact in complex ways.
 
   \input{chapters/ch03-Population/population_diagram.tex}
 
-\caption[Causal loop diagram of several important feedback loops in the World3 population model.]
-{Causal loop diagram of several important feedback loops in the World3 population model.}
+\caption{Causal loop diagram of several important feedback loops 
+         in the World3 population model. Source: **** Need source. ****}
 \label{fig:World3loops}
 \end{figure}
 
