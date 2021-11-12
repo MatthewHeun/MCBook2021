@@ -147,6 +147,10 @@
     \draw [-stealth] ([xshift=1mm]deaths_per_year.north) to[out=110, in=0] (population.east); 
     \node[above right = -2mm and -1mm of population] {$-$};
     %
+    % Population --> Deaths per year
+    \draw[-stealth]  ([xshift=3mm]population.south) to[in=220, out=260] ([xshift=2mm,yshift=-2mm]deaths_per_year.west);
+    \node[left = -3mm of deaths_per_year] {+};
+    %
     % Mortality
     \node[right = 38mm of fertility] (mortality) {Mortality};
     %
@@ -214,4 +218,15 @@
     % Food --> Food per capita
     \draw [-stealth, bend right = 10] ([xshift=-1mm, yshift=0mm]food.north) to ([xshift=-1mm, yshift=0mm]food_per_capita.south); 
     \node[below right = -1mm and -10mm of food_per_capita] {+};
+    %
+    % Food per capita --> Mortality
+    \draw [-stealth, bend right = 10] ([xshift=-8mm, yshift=0mm]food_per_capita.north) to ([xshift=0mm, yshift=-1mm]mortality.east); 
+    \node[below right = -2mm and -3mm of mortality] {$-$};
+    %
+    % Agricultural investment
+    \node[below left = 3mm and -5mm of food_per_capita] (agricultural_investment) {\begin{tabular}{l} Agricultural \\ investment \end{tabular}};
+    %
+    % Food per capita --> Agricultural investment
+    \draw [-stealth, bend right = 20] ([xshift=2mm, yshift=0mm]food_per_capita.west) to ([xshift=2mm, yshift=-1mm]agricultural_investment.north); 
+    \node[above left = -2mm and -13mm of agricultural_investment] {$-$};
   \end{tikzpicture}
