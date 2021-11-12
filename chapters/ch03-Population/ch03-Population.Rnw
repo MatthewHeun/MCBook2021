@@ -222,68 +222,8 @@ population and those variables interact in complex ways.
 \begin{figure}
 \centering
 
-  \begin{tikzpicture}
-    \footnotesize
-    % Investment rate
-    \node at (0,0) (investment_rate) {\begin{tabular}{l} Investment \\ rate \end{tabular}};
-    % Industrial investment
-    \node[above right = 5.5mm and -13mm of investment_rate] (industrial_investment) {\begin{tabular}{l} Industrial \\ investment \end{tabular}};
-    % Investment rate --> Industrial investment
-    \draw [-stealth] (investment_rate) to (industrial_investment); 
-    \node[above right = 3mm and -6mm of investment_rate] {+};
-    % Industrial capital
-    \node[above right = 5.5mm and -13mm of industrial_investment] (industrial_capital) {\begin{tabular}{l} Industrial \\ capital \end{tabular}};
-    % Industrial investment --> Industrial capital
-    \draw [-stealth] (industrial_investment) to (industrial_capital); 
-    \node[above right = 3mm and -10mm of industrial_investment] {+};
-    % Industrial output
-    \node[above right = 5.5mm and -18mm of industrial_capital] (industrial_output) {\begin{tabular}{l} Industrial \\ output \end{tabular}};
-    % Industrial capital --> Industrial output
-    \draw[-stealth, bend right=10]  (industrial_capital) to (industrial_output);
-    \node[above right = 3mm and -12mm of industrial_capital] {+};
-    % Service capital
-    \node[above left = 4mm and -14mm of industrial_output] (service_capital) {\begin{tabular}{l} Service \\ capital \end{tabular}};
-    % Industrial output --> Service capital
-    \draw[-stealth, bend right=10]  ([xshift=-3mm]industrial_output.north) to (service_capital);
-    \node[above left = 2mm and -11mm of industrial_output] {+};
-    % Industrial output --> Industrial investment
-    \draw[-stealth]  ([xshift=-5mm]industrial_output.south) to[out=250, in=180] (industrial_investment);
-    \node[below left = -4mm and -1mm of industrial_investment] {+};
-    % Services per capita
-    \node[above right = 5mm and -17.5mm of service_capital] (services_per_capita) {\begin{tabular}{l} Services \\ per capita \end{tabular}};
-    % Service capital --> Service per capita
-    \draw [-stealth] (service_capital) to (services_per_capita); 
-    \node[above right = 2mm and -7.8mm of service_capital] {+};
-    % Education, family planning
-    \node[above left = 4mm and -22mm of services_per_capita] (education_family_planning) {\begin{tabular}{l} Education, \\ family planning \end{tabular}};
-    % Service per capita --> Education, family planning
-    \draw [-stealth, bend right=10] (services_per_capita) to ([xshift=-1mm, yshift=-4mm]education_family_planning); 
-    \node[above right = 2mm and -11.5mm of services_per_capita] {+};
-    % Fertility
-    \node[above left = 4mm and 0mm of education_family_planning] (fertility) {Fertility};
-    % Education, family planning --> Fertility
-    \draw [-stealth, bend right=10] (education_family_planning) to (fertility); 
-    \node[above left = 1.9mm and -0.4mm of education_family_planning] {$-$};
-    % Births per year
-    \node[above right = 4mm and -10mm of fertility] (births_per_year) {\begin{tabular}{l} Births \\ per year \end{tabular}};
-    % Fertility --> Births per year
-    \draw [-stealth, bend right=10] (fertility) to (births_per_year); 
-    \node[above right = 1.5mm and -3mm of fertility] {+};
-    % Population
-    \node[above right = 4mm and 2mm of births_per_year] (population) {\textbf{Population}};
-    % Births per year --> Population
-    \draw [-stealth] ([xshift=-5mm]births_per_year.north) to[out=90, in=180] (population.west); 
-    \node[above right = 0.5mm and -3mm of births_per_year] {(+)};
-    % Depreciation
-    \node[right = 5mm of industrial_investment] (depreciation) {Depreciation};
-    % Industrial capital --> Depreciation
-    \draw[-stealth]  ([yshift=2mm]industrial_capital.east) to[out=0, in=60] ([xshift=5mm, yshift=2mm]depreciation);
-    \node[above right = -1mm and -4mm of depreciation] {+};
-    % Depreciation --> Industrial capital
-    \draw[-stealth]  ([yshift=1mm]depreciation.west) to[out=160, in=270] ([xshift=2mm, yshift=-4mm]industrial_capital);
-    \node[below right = -1.5mm and -7mm of industrial_capital] {$-$};
-  \end{tikzpicture}
-  
+  \input{chapters/ch03-Population/population_diagram.tex}
+
 \caption[Causal loop diagram of several important feedback loops in the World3 population model.]
 {Causal loop diagram of several important feedback loops in the World3 population model.}
 \label{fig:World3loops}
