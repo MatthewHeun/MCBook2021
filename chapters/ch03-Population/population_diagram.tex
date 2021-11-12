@@ -229,4 +229,8 @@
     % Food per capita --> Agricultural investment
     \draw [-stealth, bend right = 20] ([xshift=2mm, yshift=0mm]food_per_capita.west) to ([xshift=2mm, yshift=-1mm]agricultural_investment.north); 
     \node[above left = -2mm and -13mm of agricultural_investment] {$-$};
+    %
+    % Agricultural investment --> Agricultural capita.
+    \draw [-stealth, bend right = 10] ([xshift=1mm, yshift=1mm]agricultural_investment.south) to ([xshift=-4mm, yshift=-1mm]agricultural_capital.north); 
+    \node[above left = -2mm and -11mm of agricultural_capital] {+};
   \end{tikzpicture}
