@@ -182,7 +182,36 @@
     % Pollution
     \node[above right = -5mm and 38mm of industrial_output] (pollution) {Pollution};
     %
+    % Industrial output --> Pollution
+    \draw [-stealth, bend right = 20] ([xshift=4mm, yshift=2mm]industrial_output.south) to ([xshift=-3mm, yshift=0mm]pollution.south); 
+    \node[below left = -1mm and -8mm of pollution] {+};
+    %
     % Agricultural capital --> Pollution
-    \draw [-stealth, bend right = 5] ([xshift=3mm, yshift=2mm]agricultural_capital.south) to ([xshift=-4mm, yshift=0mm]pollution.north); 
-    \node[above left = -2mm and -2.5mm of pollution] {+};
+    \draw [-stealth, bend right = 10] ([xshift=1mm, yshift=1mm]agricultural_capital.south) to ([xshift=-3mm, yshift=0mm]pollution.north); 
+    \node[above left = -2mm and -2mm of pollution] {+};
+    %
+    % Food
+    \node[right = 41mm of services_per_capita] (food) {Food};
+    %
+    % Agricultural capital --> Food
+    \draw [-stealth, bend right = 10] ([xshift=4mm, yshift=-1mm]agricultural_capital.north) to ([xshift=-1.5mm, yshift=0mm]food.south); 
+    \node[below left = -1.5mm and -3mm of food] {+};
+    %
+    % Pollution --> Food
+    \draw [-stealth, bend right = 20] ([xshift=0mm, yshift=-1mm]pollution.north) to ([xshift=1mm, yshift=0mm]food.south); 
+    \node[below right = 0mm and -6.1mm of food] {$-$};
+    %
+    % Cultivated land
+    \node[above right = -3mm and 4mm of food] (cultivated_land) {\begin{tabular}{l} \emph{Cultivated} \\ \emph{land} \end{tabular}};
+    %
+    % Cultivated land --> Food
+    \draw [-stealth, bend left = 30] ([xshift=-4mm, yshift=1mm]cultivated_land.south) to ([xshift=4mm, yshift=0mm]food.south); 
+    \node[below right = -3.5mm and -1.3mm of food] {+};
+    %
+    % Food per capita
+    \node[right = 6mm of health_services] (food_per_capita) {\begin{tabular}{l} Food \\ per capita \end{tabular}};
+    %
+    % Food --> Food per capita
+    \draw [-stealth, bend right = 10] ([xshift=-1mm, yshift=0mm]food.north) to ([xshift=-1mm, yshift=0mm]food_per_capita.south); 
+    \node[below right = -1mm and -10mm of food_per_capita] {+};
   \end{tikzpicture}
