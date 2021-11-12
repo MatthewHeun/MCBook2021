@@ -103,4 +103,19 @@
     % Efficiency of capital --> Industrial output
     \draw[-stealth, bend right=10]  (efficiency_capital) to (industrial_output);
     \node[below left = -4mm and 1mm of industrial_output] {+};
+    %
+    % Industrial output per capita
+    \node[left = 5mm of education_family_planning] (industrial_output_per_capita) {\begin{tabular}{l} Industrial output \\ per capita \end{tabular}};        
+    %
+    % Industrial output --> Industrial output per capita
+    \draw[-stealth]  ([xshift=-6mm]industrial_output.north) to[out=110, in=270] ([xshift=-5mm, yshift=0mm]industrial_output_per_capita.south);
+    \node[below left = -1mm and -14mm of industrial_output_per_capita] {+};
+    %
+    % Industrial output per capita --> Fertility
+    \draw[-stealth]  ([xshift=-5mm]industrial_output_per_capita.north) to[out=60, in=190] (fertility.west);
+    \node[above left = -3mm and 1mm of fertility] {$-$};
+    %
+    % Population --> Industrial output per capita
+    \draw[-stealth]  ([xshift=-5mm]population.north) to[out=110, in=120] ([xshift=-9mm]industrial_output_per_capita.north);
+    \node[above left = -2mm and -5mm of industrial_output_per_capita] {$-$};
   \end{tikzpicture}
