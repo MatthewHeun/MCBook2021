@@ -74,7 +74,7 @@
     \node[above right = 4mm and 2mm of births_per_year] (population) {\textbf{Population}};
     %
     % Births per year --> Population
-    \draw [-stealth] ([xshift=-5mm]births_per_year.north) to[out=90, in=180] (population.west); 
+    \draw [-stealth] ([xshift=-5mm]births_per_year.north) to[out=80, in=180] (population.west); 
     \node[above left = -2mm and -1mm of population] {+};
     %
     % Population --> Births per year
@@ -142,4 +142,8 @@
     %
     % Deaths per year
     \node[right = 25mm of births_per_year] (deaths_per_year) {\begin{tabular}{l} Deaths \\ per year \end{tabular}};        
+    %
+    % Deaths per year --> Population
+    \draw [-stealth] ([xshift=1mm]deaths_per_year.north) to[out=110, in=0] (population.east); 
+    \node[above right = -2mm and -1mm of population] {$-$};
   \end{tikzpicture}
