@@ -188,7 +188,7 @@ The wide range of uncertainty in the population projections is caused by
 uncertainty about future birth and death rates.
 
 
-<<UN_population_prospect, fig.cap="Projections of world population. Projections are based on probabilistic models of total fertility and life expectancy at birth from a Bayesian hierarchical model. The light gray region shows the 95~\\% prediction interval. The dark gray region shows the 80~\\% prediction interval. Sources: Historical data from Our World in Data~\\cite{Roser:2021uu}; future projections from United Nations, Department of Economic and Social Affairs, Population Division~\\cite{UNEcSoAf:2021vj}.">>=
+<<UN_population_prospect, fig.cap="Projections of world population. Projections are based on probabilistic models of total fertility and life expectancy at birth from a Bayesian hierarchical model. The light gray region shows a 95~\\% prediction interval. The dark gray region shows a 80~\\% prediction interval. Sources: Historical data from Our World in Data~\\cite{Roser:2021uu}; future projections from United Nations, Department of Economic and Social Affairs, Population Division~\\cite{UNEcSoAf:2021vj}.">>=
 future_pop <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "UN_PPP2019_Output_PopTot.xlsx"),
                                              sheet = "data to plot") %>% 
   tidyr::pivot_longer(-Year, names_to = "band", values_to = "pop_thousands") %>% 
