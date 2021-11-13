@@ -226,7 +226,14 @@ historical_pop <- region_pop %>%
 
 dplyr::bind_rows(historical_pop, future_pop) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "total_population_billions", linetype = "band")) +
-  ggplot2::geom_line() + 
+  ggplot2::geom_line(colour = mc_title_blue, size = 1) + 
+  ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 12, by = 2)) +
+  ggplot2::scale_linetype_manual(values = c(median = "solid",
+                                            lower80 = "dashed", upper80 = "dashed", 
+                                            lower95 = "dotted", upper95 = "dotted")) +
+  
+  ggplot2::labs(x = ggplot2::element_blank(),
+       y = "World population (P) [billions]") +
   
   
   MKHthemes::xy_theme()
