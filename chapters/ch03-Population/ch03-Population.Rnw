@@ -120,7 +120,7 @@ was 1.55\%/year, with a peak growth rate of 2.1\%/year between 1965 and 1970.
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
-                                sheet = "data to plot")
+                                 sheet = "data to plot")
 region_pop <- population %>%
   dplyr::filter(
     Country %in% c("Asia", "Europe", "Latin America", "North America", "Australia", "Africa", "World")
@@ -194,8 +194,46 @@ uncertainty about future birth and death rates.
 \caption{Probabilistic projections of world population. The projections are based
 on the probabilistic projections of total fertility and life expectancy at birth
 from a Bayesian hierarchical model. }
-\label{fig:UN_population_prospect}
+\label{fig:UN_population_prospect_old}
 \end{figure}
+
+
+<<UN_population_prospect>>=
+future_pop <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "UN_PPP2019_Output_PopTot.xlsx"),
+                                             sheet = "data to plot") %>% 
+  tidyr::pivot_longer(-Year, names_to = "band", values_to = "pop_thousands") %>% 
+  dplyr::mutate(
+    total_population_billions = pop_thousands / 1e6, 
+    pop_thousands = NULL, 
+    band = dplyr::case_when(
+      startsWith(band, "lower95") ~ "lower95",
+      startsWith(band, "lower80") ~ "lower80",
+      startsWith(band, "median") ~ "median",
+      startsWith(band, "upper80") ~ "upper80",
+      startsWith(band, "upper95") ~ "upper95",
+    )
+  )
+
+# Make a historical world population data frame from region_pop
+historical_pop <- region_pop %>% 
+  dplyr::filter(Year >= 1800, Country == "World") %>% 
+  dplyr::mutate(
+    Country = NULL, 
+    Code = NULL, 
+    total_population = NULL, 
+    band = "median"
+  )
+
+dplyr::bind_rows(historical_pop, future_pop) %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "total_population_billions", linetype = "band")) +
+  ggplot2::geom_line() + 
+  
+  
+  MKHthemes::xy_theme()
+@
+
+
+
 
 Birth and death rates depend on many variables.
 Figure \ref{fig:World3loops} shows a schematic of the causal loops

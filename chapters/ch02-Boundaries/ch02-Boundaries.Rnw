@@ -623,7 +623,7 @@ the goals or enforcement mechanisms for maintaining behavior.
 It remains for scientists, policy makers, and government officials to conduct 
 research, make recommendations, regulate, and enforce laws.
 
-<<FootprintHDIGraph, fig.cap="Ecological footprint vs. HDI. Population is in millions. HDI between 0.7 and 0.8 is considered ``high'' human development. HDI greater than 0.8 is considered ``very high'' human development. Ecological footprint below 1.9 global hectares per person is considered sustainable. The only countries ``inside the box'' at the lower right of the graph (high human development and sustainable ecological footprint) are the Philippines and Sri Lanka. No country exhibits ``very high'' human development and a sustainable ecological footprint. Data for 2017 from the Global Footprint Network \\cite{Global-Footprint-Network:ut}.">>=
+<<FootprintHDIGraph, fig.cap="Ecological footprint vs. HDI for 2017. Population is in millions. HDI between 0.7 and 0.8 is considered ``high'' human development. HDI greater than 0.8 is considered ``very high'' human development. Ecological footprint below 1.9 global hectares per person is considered sustainable. The only countries ``inside the box'' at the lower right of the graph (high human development and sustainable ecological footprint) are the Philippines and Sri Lanka. No country exhibits ``very high'' human development and a sustainable ecological footprint. Source: Global Footprint Network \\cite{Global-Footprint-Network:ut}.">>=
 clrs <- viridis::viridis(6, begin = 0, end = 0.99)
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI.xlsx"),
                                   sheet = "data to plot") %>% 
