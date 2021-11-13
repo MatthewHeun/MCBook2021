@@ -210,22 +210,23 @@ population and those variables interact in complex ways.
 %% Good link: https://www.americanscientist.org/article/computation-and-the-human-predicament
 %% Comments on the similarities (and differences!) in population modeling and climate modeling.
 
-\begin{figure}
-\centering
-\includegraphics[width=0.65\linewidth]{chapters/ch03-Population/figures/LimitsToGrowth_ModelFigure1-3_Large.png}
-\caption[Causal loop diagram of several important feedback loops in the World3 population model.]
-{Causal loop diagram of several important feedback loops in the World3 population model.}
-\label{fig:World3loops_old}
-\end{figure}
-
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.65\linewidth]{chapters/ch03-Population/figures/LimitsToGrowth_ModelFigure1-3_Large.png}
+% \caption[Causal loop diagram of several important feedback loops in the World3 population model.]
+% {Causal loop diagram of several important feedback loops in the World3 population model.}
+% \label{fig:World3loops_old}
+% \end{figure}
+% 
 
 \begin{figure}
 \centering
 
   \input{chapters/ch03-Population/population_diagram.tex}
 
-\caption{Causal loop diagram of several important feedback loops 
-         in the World3 population model. Source: **** Need source. ****}
+\caption{Causal loop diagram of several important feedback loops.
+         Exogenous inputs are shown in \emph{italics}. 
+         Source: World3 population model~\cite[p.~14]{Meadows:1974ut}.}
 \label{fig:World3loops}
 \end{figure}
 
