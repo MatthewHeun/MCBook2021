@@ -116,7 +116,7 @@ The average growth rate over the last hundred years
 was 1.55\%/year, with a peak growth rate of 2.1\%/year between 1965 and 1970.
 
 %% Source: Our World in Data/United Nations Population Division.
-<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation~\\cite{Roser:2021uu}.">>=
+<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation. Source: Our World in Data~\\cite{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
@@ -187,18 +187,8 @@ birth rate, and death rate.
 The wide range of uncertainty in the population projections is caused by
 uncertainty about future birth and death rates.
 
-\begin{figure}
-\centering
-\includegraphics[width=1\linewidth]{chapters/ch03-Population/figures/UNPop_proj.jpg}
-%\caption[UN World Population Prospects 2010: Population Development Scenarios: 1950-2100.]{UN World Population Prospects 2010: Population Development Scenarios: 1950-2100.}
-\caption{Probabilistic projections of world population. The projections are based
-on the probabilistic projections of total fertility and life expectancy at birth
-from a Bayesian hierarchical model. }
-\label{fig:UN_population_prospect_old}
-\end{figure}
 
-
-<<UN_population_prospect>>=
+<<UN_population_prospect, fig.cap="Projections of world population. Projections are based on probabilistic models of total fertility and life expectancy at birth from a Bayesian hierarchical model. The light gray region shows the 95~\\% prediction interval. The dark gray region shows the 80~\\% prediction interval. Sources: Historical data from Our World in Data~\\cite{Roser:2021uu}; future projections from United Nations, Department of Economic and Social Affairs, Population Division~\\cite{UNEcSoAf:2021vj}.">>=
 future_pop <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "UN_PPP2019_Output_PopTot.xlsx"),
                                              sheet = "data to plot") %>% 
   tidyr::pivot_longer(-Year, names_to = "band", values_to = "pop_thousands") %>% 
@@ -212,7 +202,8 @@ future_pop <- readxl::read_excel(file.path("chapters", "ch03-Population", "datas
       startsWith(band, "upper80") ~ "upper80",
       startsWith(band, "upper95") ~ "upper95",
     )
-  )
+  ) %>% 
+  tidyr::pivot_wider(names_from = band, values_from = total_population_billions)
 
 # Make a historical world population data frame from region_pop
 historical_pop <- region_pop %>% 
@@ -220,25 +211,29 @@ historical_pop <- region_pop %>%
   dplyr::mutate(
     Country = NULL, 
     Code = NULL, 
-    total_population = NULL, 
-    band = "median"
+    total_population = NULL
+  ) %>% 
+  dplyr::rename(
+    median = total_population_billions
   )
 
 dplyr::bind_rows(historical_pop, future_pop) %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "total_population_billions", linetype = "band")) +
-  ggplot2::geom_line(colour = mc_title_blue, size = 1) + 
-  ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 12, by = 2)) +
-  ggplot2::scale_linetype_manual(values = c(median = "solid",
-                                            lower80 = "dashed", upper80 = "dashed", 
-                                            lower95 = "dotted", upper95 = "dotted")) +
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year")) +
+  ggplot2::geom_ribbon(mapping = ggplot2::aes_string(ymin = "lower95", ymax = "upper95"), fill = "grey80") +
+  ggplot2::geom_ribbon(mapping = ggplot2::aes_string(ymin = "lower80", ymax = "upper80"), fill = "grey60") +
+  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "median"), 
+                     colour = mc_title_blue, 
+                     size = 1) + 
   
+  ggplot2::scale_x_continuous(breaks = seq(1800, 2100, by = 50)) +
+  ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 12, by = 2)) +
+
   ggplot2::labs(x = ggplot2::element_blank(),
        y = "World population (P) [billions]") +
   
   
   MKHthemes::xy_theme()
 @
-
 
 
 
