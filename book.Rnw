@@ -65,13 +65,16 @@ knitr::opts_chunk$set(echo=FALSE,
                       fig.pos = "t")
 
 library(ggplot2)     # For graphing functions
+library(geosphere)   # For map circles
 library(magrittr)    # For pipe operator, (%>%)
 library(MKHthemes)   # For default ggplot2 theme
 library(readxl)      # To read Excel files
 library(rworldmap)   # For world maps
-library(tidyr)
+library(rnaturalearth) # For maps
+library(rnaturalearthdata) # For maps
+library(tidyr)       # For manipulating data
 library(viridis)     # For a great color palette for graphs
-library(xtable)      # For awesome tables.
+library(xtable)      # For awesome tables
 @
 
 <<r_functions, echo=FALSE>>=

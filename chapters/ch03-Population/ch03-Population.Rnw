@@ -393,14 +393,47 @@ On the other hand, high human population densities will exclude many animal spec
 
 In 2015, half of the world's people lived inside a circle, shown in 
 Figure~\ref{fig:half_population}, with a radius of about 3,300km~\cite{Quah2015}.
-This area of Southeast Asia has a very high population density.
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth]{chapters/ch03-Population/figures/half_world_population.pdf}
-\caption[Half the world's population lives in this circle.]{As of 2015,
-half the world's population lives in a circle with a radius of 3,300km \cite{Quah2015}.}
-\label{fig:half_population}
-\end{figure}
+This area of Southeast Asia has very high population density.
+
+<<half_population, fig.cap="As of 2015, half of the world's population lives in a circle with a radius of 3,300~km centered on Mong Khet, Myanmar \\cite{Quah2015}.">>=
+  # See https://r-spatial.org/r/2018/10/25/ggplot2-sf.html for lots of good ggplot map stuff
+  # See https://en.wikipedia.org/wiki/Valeriepieris_circle for information about the Valeriepieris Circle
+  # See https://en.wikipedia.org/wiki/Mong_Khet_Township for Mong Khet township in Myanmar (21°42′00″N 99°23′00″E)
+
+# Function to draw a projected circle
+geo_circle <- function(lon_deg, lat_deg, radius_meters) { 
+   data.frame(degree = seq(0, 360, by = 0.5)) %>%
+      dplyr::rowwise() %>%
+      dplyr::mutate(lon = geosphere::destPoint(p = c(lon_deg, lat_deg), b = degree, d = radius_meters)[1]) %>%
+      dplyr::mutate(lat = geosphere::destPoint(p = c(lon_deg, lat_deg), b = degree, d = radius_meters)[2]) 
+}
+
+#Mong Khet, Myanmar (21 deg 42' 00" N 99 deg 23' 00" E)
+mong_khet <- tibble::tribble(
+  ~city,    ~lat,    ~lon, 
+  "Mong Khet", 21.7, 99.383333
+)
+
+# Make a data frame of lat/lon points centered on 
+v_circle <- geo_circle(lon = mong_khet$lon[[1]], lat = mong_khet$lat[[1]], radius_meters = 3300000)
+# Get the world data.
+world <- rnaturalearth::ne_countries(scale = "small", returnclass = "sf")
+# Now make the map
+ggplot2::ggplot(data = world) +
+  ggplot2::geom_sf(color = "black", fill = "white", size = 0.1) + 
+  ggplot2::geom_point(data = mong_khet, ggplot2::aes_string(x = "lon", y = "lat"),
+                      size = 2, shape = 21, color = mc_title_blue, fill = mc_title_blue) +
+  # Non-sf objects (like the circle) are assumed to be in lat/lon data.
+  ggplot2::coord_sf(default_crs = sf::st_crs(4326), expand = FALSE) +
+  # Add a circle for the boundary
+  ggplot2::geom_path(data = v_circle, mapping = aes_string(x = "lon", y = "lat"), colour = mc_title_blue, size = 1) +   
+  ggplot2::labs(x = ggplot2::element_blank(), y = ggplot2::element_blank()) + 
+  MKHthemes::xy_theme() + 
+  ggplot2::theme(axis.text.x = element_blank(), 
+                 axis.text.y = element_blank(), 
+                 axis.ticks.x = element_blank(),
+                 axis.ticks.y = element_blank())
+@
 
 Since the industrial revolution, humans have been increasingly living in urban environments.
 In 1973 there were only 3 cities (Mexico City, Tokyo, and New York City) with populations 
