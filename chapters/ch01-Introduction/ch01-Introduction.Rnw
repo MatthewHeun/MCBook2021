@@ -388,7 +388,7 @@ is exactly equal to the area between $N$ and $N+0.693/r$ (B), for any $N$.}
 \label{fig:exp_old}
 \end{figure}
 
-<<exp, fig.cap="Exponential growth. When $y$ grows exponentially with time $t$ at rate $r$ (i.e., $y=e^{rt}$), the value of $y$ doubles every $0.693/r$ years. In this example, $r = 0.1$/year (10~\\%/year), and $y$ doubles every 6.93 years.">>=
+<<exp, fig.cap="Exponential growth. When $y$ grows exponentially with time $(t$) at rate $r$ (i.e., $y=e^{rt}$), the value of $y$ doubles every $0.693/r$ years. In this example, $r = 0.1$/year (10~\\%/year), and $y$ doubles every 6.93 years.">>=
 r <- 0.1 # 1/year
 exp_df <- data.frame(t = seq(0, 22, by = 0.01)) %>%
   dplyr::mutate(
