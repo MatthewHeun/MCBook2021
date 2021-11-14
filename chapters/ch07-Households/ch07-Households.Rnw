@@ -101,9 +101,8 @@ household_energy_by_category <- readxl::read_excel(file.path("chapters", "ch07-H
                                                sheet = "data to plot") %>% 
   dplyr::select("Category", "Percentage") %>% 
   dplyr::mutate(
-    Category = factor(Category, levels = c("Space heating", "Water heating", 
-                                           "Space cooling", "Lighting", "Entertainment", "Refrigeration", "Cooking", 
-                                           "Laundry", "Other"))
+    Category = factor(Category, levels = c("Other", "Laundry", "Cooking", "Refrigeration", "Entertainment", "Lighting", "Space cooling", 
+                                           "Water heating", "Space heating"))
   )
 
 household_energy_by_category %>% 
@@ -113,7 +112,7 @@ household_energy_by_category %>%
   ggplot2::geom_text(ggplot2::aes(x = 1.7, label = paste0(Percentage, "%")),
                      position = ggplot2::position_stack(vjust = 0.5),
                      colour = "gray50") +
-  viridis::scale_fill_viridis(discrete = TRUE) +
+  viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::labs(x = NULL, y = NULL, fill = NULL) +
   
   MKHthemes::xy_theme() +
