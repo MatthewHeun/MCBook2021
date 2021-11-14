@@ -68,6 +68,7 @@ library(ggplot2)     # For graphing functions
 library(magrittr)    # For pipe operator, (%>%)
 library(MKHthemes)   # For default ggplot2 theme
 library(readxl)      # To read Excel files
+library(rgeos)       # For map stuff
 library(rworldmap)   # For world maps
 library(rnaturalearth) # For maps
 library(rnaturalearthdata) # For maps
