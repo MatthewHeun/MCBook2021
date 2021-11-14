@@ -388,6 +388,40 @@ is exactly equal to the area between $N$ and $N+0.693/r$ (B), for any $N$.}
 \label{fig:exp}
 \end{figure}
 
+
+
+<<exp, fig.cap="Exponential growth.">>=
+r = 0.1 # 1/year
+exp_df <- data.frame(t = seq(0, 21, by = 0.01)) %>%
+  dplyr::mutate(
+    y = exp(r * t),
+    fill = dplyr::case_when(
+      t < 7 ~ "first",
+      t >= 7 & t < 14 ~ "second",
+      t >= 14 & t <= 21 ~ "third",
+      TRUE ~ NA_character_
+    )
+  )
+
+ggplot2::ggplot(mapping = ggplot2::aes_string(x = "t", y = "y")) +
+  ggplot2::geom_ribbon(data = exp_df,
+                       mapping = ggplot2::aes_string(x = "t",
+                                                     ymin = 1,
+                                                     ymax = "y",
+                                                     fill = "fill")) +
+
+  ggplot2::scale_x_continuous(breaks = c(0, 5, 7, 10, 14, 20, 21, 28, 30), expand = c(0, 0)) +
+  ggplot2::scale_y_continuous(limits = c(1, NA), breaks = c(1, 2, 3, 4, 6, 8), expand = c(0, 0)) +
+  ggplot2::scale_fill_viridis_d(direction = -1, guide = "none", begin = 0, end = 1) +
+
+  ggplot2::geom_line(data = exp_df, colour = mc_title_blue, size = 1) +
+
+  ggplot2::labs(x = "t [years]", y = ggplot2::element_blank()) +
+  
+  MKHthemes::xy_theme()
+@
+
+
 In the discrete case, like grain on a chessboard, the number of grains on the
 next square is always one more than the sum of all the previous squares.
 In the continuous case, the amount up until the next doubling (B) is always 
