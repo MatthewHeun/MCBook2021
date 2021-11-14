@@ -396,11 +396,8 @@ Figure~\ref{fig:half_population}, with a radius of about 3,300km~\cite{Quah2015}
 This area of Southeast Asia has very high population density.
 
 <<half_population, fig.cap="As of 2015, half of the world's population lives in a circle with a radius of 3,300~km centered on Mong Khet, Myanmar \\cite{Quah2015}.">>=
-  # See https://r-spatial.org/r/2018/10/25/ggplot2-sf.html for lots of good ggplot map stuff
-  # See https://en.wikipedia.org/wiki/Valeriepieris_circle for information about the Valeriepieris Circle
-  # See https://en.wikipedia.org/wiki/Mong_Khet_Township for Mong Khet township in Myanmar (21°42′00″N 99°23′00″E)
 
-# Function to draw a projected circle
+# Function to determine a projected circle
 geo_circle <- function(lon_deg, lat_deg, radius_meters) { 
    data.frame(degree = seq(0, 360, by = 0.5)) %>%
       dplyr::rowwise() %>%
@@ -408,13 +405,13 @@ geo_circle <- function(lon_deg, lat_deg, radius_meters) {
       dplyr::mutate(lat = geosphere::destPoint(p = c(lon_deg, lat_deg), b = degree, d = radius_meters)[2]) 
 }
 
-#Mong Khet, Myanmar (21 deg 42' 00" N 99 deg 23' 00" E)
+# Mong Khet, Myanmar (21 deg 42' 00" N 99 deg 23' 00" E)
 mong_khet <- tibble::tribble(
   ~city,    ~lat,    ~lon, 
   "Mong Khet", 21.7, 99.383333
 )
 
-# Make a data frame of lat/lon points centered on 
+# Make a data frame of lat/lon points centered on Mong Khet, Myanmar
 v_circle <- geo_circle(lon = mong_khet$lon[[1]], lat = mong_khet$lat[[1]], radius_meters = 3300000)
 # Get the world data.
 world <- rnaturalearth::ne_countries(scale = "small", returnclass = "sf")
