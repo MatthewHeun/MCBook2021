@@ -130,6 +130,21 @@ region_pop <- population %>%
     Country = dplyr::recode(Country, `Latin America` = "Latin Am.", `North America` = "North Am."),
   )
 
+# region_pop_to_fit <- region_pop %>% 
+#   dplyr::filter(Year >= 1800, Country == "World")
+# world_pop_log_fit <- lm(data = region_pop_to_fit, 
+#                         formula = log(total_population) ~ Year)
+# 
+# world_pop_exp_fit <- nls(data = region_pop_to_fit, 
+#                          formula = total_population ~ exp(r * Year), start = list(r = 0.01))
+# predicted_df <- tibble::tibble(Year = region_pop_to_fit$Year, 
+#                                pop_predict = predict(world_pop_exp_fit, newdata = world_pop_exp_fit$Year)) %>% 
+#   dplyr::mutate(
+#     total_population_billions_fitted = pop_predict / 1e9, 
+#     Country = "World"
+#   )
+
+
 region_pop %>%
   dplyr::filter(Country != "World", Year >= 1800) %>%
   dplyr::mutate(
@@ -137,10 +152,11 @@ region_pop %>%
   ) %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "total_population_billions", fill = "Country")) +
   ggplot2::geom_area() +
+  # ggplot2::geom_line(data = predicted_df, mapping = ggplot2::aes_string(x = "Year", y = "total_population_billions_fitted")) + 
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
-  ggplot2::labs(x = NULL,
+  ggplot2::labs(x = ggplot2::element_blank(),
                 y = "World population (P) [billions]",
-                fill = NULL) +
+                fill = ggplot2::element_blank()) +
 MKHthemes::xy_theme()
 @
 
