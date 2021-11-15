@@ -83,7 +83,7 @@ In contrast, Figure~\ref{fig:tonnekm_by_mode} shows that
 freight transport demand is satisfied by a variety of modes.
 
 
-<<passengerkm_by_mode, fig.cap="U.S.\\ passenger-km of personal transport by mode. Intercity is rail travel via Amtrak. Transit is public transit of all types (ferry, subway, bus, etc.). Air is U.S.\\ domestic air carriers. Highway is automobile traffic. Source: U.S. Bureau of Transportation Statistics~\\cite{passenger_km}.">>=
+<<passengerkm_by_mode, fig.cap="U.S.\\ passenger-km of personal transport by mode. ``Intercity'' is rail travel via Amtrak. ``Transit'' is public transit of all types (ferry, subway, bus, etc.). ``Air'' is U.S.\\ domestic air carriers. ``Highway'' is automobile traffic. Source: U.S. Bureau of Transportation Statistics~\\cite{passenger_km}.">>=
 passenger_km_by_mode <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Passenger_kms.xlsx"), 
                    sheet = "data to plot") %>% 
   tidyr::pivot_longer(cols = -Year, names_to = "mode", values_to = "passkm_millions") %>% 
