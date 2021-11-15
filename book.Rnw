@@ -64,17 +64,18 @@ knitr::opts_chunk$set(echo=FALSE,
                       fig.align = "center", 
                       fig.pos = "t")
 
-library(ggplot2)     # For graphing functions
-library(magrittr)    # For pipe operator, (%>%)
-library(MKHthemes)   # For default ggplot2 theme
-library(readxl)      # To read Excel files
-library(rgeos)       # For map stuff
-library(rworldmap)   # For world maps
-library(rnaturalearth) # For maps
+library(dplyr)             # For manipulating data
+library(ggplot2)           # For graphing functions
+library(magrittr)          # For pipe operator, (%>%)
+library(MKHthemes)         # For default ggplot2 theme
+library(readxl)            # To read Excel files
+library(rgeos)             # For map stuff
+library(rnaturalearth)     # For maps
 library(rnaturalearthdata) # For maps
-library(tidyr)       # For manipulating data
-library(viridis)     # For a great color palette for graphs
-library(xtable)      # For awesome tables
+library(sf)                # Shape files for maps
+library(tidyr)             # For manipulating data
+library(viridis)           # For a great color palette for graphs
+library(xtable)            # For awesome tables
 @
 
 <<r_functions, echo=FALSE>>=
