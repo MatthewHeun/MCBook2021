@@ -115,8 +115,8 @@ growth rate of 1.05\%/year.
 The average growth rate over the last hundred years
 was 1.55\%/year, with a peak growth rate of 2.1\%/year between 1965 and 1970.
 
-%% Source: Our World in Data/United Nations Population Division.
-<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation. Source: Our World in Data~\\cite{Roser:2021uu}.">>=
+
+<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation. Source: \\citeauthor{Roser:2021uu}~\\cite{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
@@ -205,7 +205,7 @@ The wide range of uncertainty in the population projections is caused by
 uncertainty about future birth and death rates.
 
 
-<<UN_population_prospect, fig.cap="Projections of world population. Projections are based on probabilistic models of total fertility and life expectancy at birth from a Bayesian hierarchical model. The light gray region shows a 95~\\% prediction interval. The dark gray region shows a 80~\\% prediction interval. Sources: Historical data from Our World in Data~\\cite{Roser:2021uu}; future projections from United Nations, Department of Economic and Social Affairs, Population Division~\\cite{UNEcSoAf:2021vj}.">>=
+<<UN_population_prospect, fig.cap="Projections of world population. Projections are based on probabilistic models of total fertility and life expectancy at birth from a Bayesian hierarchical model. The light gray region shows a 95~\\% prediction interval. The dark gray region shows a 80~\\% prediction interval. Sources: Historical data from \\citeauthor{Roser:2021uu}~\\cite{Roser:2021uu}; future projections from \\citeauthor{UNEcSoAf:2021vj}~\\cite{UNEcSoAf:2021vj}.">>=
 future_pop <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "UN_PPP2019_Output_PopTot.xlsx"),
                                              sheet = "data to plot") %>% 
   tidyr::pivot_longer(-Year, names_to = "band", values_to = "pop_thousands") %>% 
@@ -267,15 +267,6 @@ population and those variables interact in complex ways.
 %% Good link: https://www.americanscientist.org/article/computation-and-the-human-predicament
 %% Comments on the similarities (and differences!) in population modeling and climate modeling.
 
-% \begin{figure}
-% \centering
-% \includegraphics[width=0.65\linewidth]{chapters/ch03-Population/figures/LimitsToGrowth_ModelFigure1-3_Large.png}
-% \caption[Causal loop diagram of several important feedback loops in the World3 population model.]
-% {Causal loop diagram of several important feedback loops in the World3 population model.}
-% \label{fig:World3loops_old}
-% \end{figure}
-% 
-
 \begin{figure}
 \centering
 
@@ -283,13 +274,9 @@ population and those variables interact in complex ways.
 
 \caption{Causal loop diagram of several important feedback loops.
          Exogenous inputs are shown in \emph{italics}. 
-         Source: World3 population model~\cite[p.~14]{Meadows:1974ut}.}
+         Source: \citeauthor{Meadows:1974ut}~\cite[p.~14]{Meadows:1974ut}.}
 \label{fig:World3loops}
 \end{figure}
-
-
-
-
 
 
 The UN projections in Figure~\ref{fig:UN_population_prospect} are not based on 
@@ -412,7 +399,7 @@ In 2015, half of the world's people lived inside a circle, shown in
 Figure~\ref{fig:half_population}, with a radius of about 3,300km~\cite{Quah2015}.
 This area of Southeast Asia has very high population density.
 
-<<half_population, fig.cap="As of 2015, half of the world's population lives in a circle with a radius of 3,300~km centered on Mong Khet, Myanmar \\cite{Quah2015}.">>=
+<<half_population, fig.cap="As of 2015, half of the world's population lives in a circle with a radius of 3,300~km centered on Mong Khet, Myanmar~\\cite{Quah2015}.">>=
 
 # Function to determine a projected circle
 geo_circle <- function(lon_deg, lat_deg, radius_meters) { 
