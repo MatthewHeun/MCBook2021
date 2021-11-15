@@ -236,19 +236,60 @@ rate of extraction of materials from the Earth.
 Figure~\ref{fig:per_capita_material_use}
 shows the same data on a per-capita basis.
 
-\begin{figure}
-\centering
-\includegraphics[width=0.7\linewidth]{chapters/ch05-ResourceIntensity/figures/MaterialUseTotalKrausmann2009}
-\caption{Total world material use~\cite[Figure~1a]{Krausmann:2009wc}.}
-\label{fig:total_material_use}
-\end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.7\linewidth]{chapters/ch05-ResourceIntensity/figures/MaterialUsePerCapitaKrausmann2009}
-\caption{World per capita material use~\cite[Figure~1c]{Krausmann:2009wc}.}
-\label{fig:per_capita_material_use}
-\end{figure}
+<<total_material_use, fig.cap='Total world material use. "Construction" indicates all construction minerals. "Ores" includes industrial minerals. "Fossil" includes all fossil energy carriers. Source: Krausmann, et al.~\\cite[Figure~1a]{Krausmann:2009wc}.'>>=
+krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
+                                sheet = "data to plot") %>% 
+  dplyr::rename(
+    Biomass = `Biomass [Gt]`, 
+    Fossil = `Fossil [Gt]`,
+    Construction = `Construction [Gt]`, 
+    Ores = `Ores [Gt]`
+  ) %>% 
+  tidyr::pivot_longer(-Year, names_to = "type", values_to = "Extracted material [Gt]") %>% 
+  dplyr::mutate(
+    type = factor(type, levels = c("Construction", "Ores", "Fossil", "Biomass"))
+  )
+
+krausmann %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = `Extracted material [Gt]`, fill = type)) +
+  ggplot2::geom_area() + 
+  ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
+  ggplot2::scale_fill_viridis_d(direction = -1) +
+  
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                fill = ggplot2::element_blank()) +
+  
+  MKHthemes::xy_theme()
+@
+
+
+<<per_capita_material_use, fig.cap='Per-capita material extraction. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. Source: Krausmann, et al.~\\cite[Figure~1c]{Krausmann:2009wc}.'>>=
+material_per_capita <- krausmann %>% 
+  dplyr::left_join(historical_pop, by = "Year") %>% 
+  dplyr::mutate(
+    # extracted material is in Gt, population (median) is in billions.
+    # So per capita amount is in tonnes/person
+    mat_per_capita_t_person = `Extracted material [Gt]` / median
+  )
+
+material_per_capita %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "mat_per_capita_t_person", fill = "type")) + 
+  ggplot2::geom_area() +
+  ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
+  ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 10, by = 2)) +
+  ggplot2::scale_fill_viridis_d(direction = -1) +
+  
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = "Material extraction [t/person]",
+                fill = ggplot2::element_blank()) +
+  
+  MKHthemes::xy_theme()
+
+
+@
+
+
 
 Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use} 
 show that resource consumption is growing at an ever-increasing rate.
