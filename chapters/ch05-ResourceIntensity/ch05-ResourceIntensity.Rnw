@@ -237,7 +237,7 @@ Figure~\ref{fig:per_capita_material_use}
 shows the same data on a per-capita basis.
 
 
-<<total_material_use, fig.cap='Total world material use. "Construction" indicates all construction minerals. "Ores" includes industrial minerals. "Fossil" includes all fossil energy carriers. Source: Krausmann, et al.~\\cite[Figure~1a]{Krausmann:2009wc}.'>>=
+<<total_material_use, fig.cap="Total world material use. ``Construction'' includes all construction minerals. ``Ores'' includes industrial minerals. ``Fossil'' includes all fossil energy carriers. Source: Krausmann, et al.~\\cite[Figure~1a]{Krausmann:2009wc}.">>=
 krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
                                 sheet = "data to plot") %>% 
   dplyr::rename(
