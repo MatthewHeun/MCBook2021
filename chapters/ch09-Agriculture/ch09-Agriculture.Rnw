@@ -297,16 +297,8 @@ food_emissions_per_kg %>%
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1))
 @
 
-\begin{figure}
-\centering
-\includegraphics[width=0.75\linewidth]{chapters/ch09-Agriculture/figures/GHGfromFoodConsumption.pdf}
-\caption[GHG emissions from food.]{Food greenhouse gas emissions~\citep[Fig.~2]{Heller_2014}.}
-\label{fig:GHG_food_old}
-\end{figure}
 
-
-
-<<GHG_food, fig.height=5, fig.cap="Food greenhouse gas emissions. Source: Heller and Keoleian~\\citep[Figure~3]{Heller_2014}.">>=
+<<GHG_food, fig.height=5, fig.cap="U.S.\\ food greenhouse gas emissions. Source: Heller and Keoleian~\\citep[Figure~3]{Heller_2014}.">>=
 food_emissions_total <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Food CO2.xlsx"), 
                                            sheet = "data to plot") %>% 
   dplyr::arrange(dplyr::desc(`kg CO2 eq/capita/year`))
@@ -324,58 +316,7 @@ food_emissions_total %>%
        fill = ggplot2::element_blank()) +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1))
-
 @
-
-
-
-
-% <<GHG_from_food, echo = 'none', fig.cap = "Percentages of greenhouse gas emissions from food consumption.", fig.scap = "Food greenhouse gas percentages.", fig.width = 5, fig.height = 2.5>>=
-% # This is an R chunk embedded in the LaTeX code.
-% # Assign some variables to NULL, thereby avoiding some warnings.
-% food_categories <- NULL
-% percentages <- NULL
-% label_ypos <- NULL
-% ang <- NULL
-% # Define this vector of category names (in the order that we want), thereby avoiding retyping later.
-% food_cats <- c("Meat", "Dairy products", "Poultry, fish, seafood, and eggs",
-%                                "Vegetables", "Fruit", "Grain products",
-%                                "Sugars, sweeteners, fats, and oils", "Other")
-% # Create a data frame that contains the information for the graph.
-% # These data could also be read in from an external .csv file.
-% Food_GHG <- data.frame(food_categories = food_cats,
-%                        percentages = c(47.6, 18.9, 13.9, 4.9, 3.6, 3.0, 7.5, 0.5),
-%                        ang = c(0, 0, 0, -35, -50, -65, -80, -90)) %>%
-%   dplyr::mutate(
-%     # Sets the order of the categories in the pie chart
-%     food_categories = factor(food_categories, levels = food_cats),
-%     # Calculates the location for the percentage labels
-%     label_ypos = 100 - (cumsum(percentages) - percentages/2)
-%   )
-% # Make the graph
-% ggplot(data = Food_GHG, mapping = aes(x = "", y = percentages, fill = food_categories)) +
-%   # The next two lines give a pie chart
-%   geom_bar(width = 1, stat = "identity") +
-%   coord_polar("y", start = 0, direction = -1) +
-%   # Add percentage labels
-%   geom_text(mapping = aes(y = label_ypos, label = paste(percentages, "%"), angle = ang), color = "white", size = 3, family = "Libre Caslon Text") +
-%   # Eliminate all of the labels on the axes.
-%   labs(x = "", y = "", fill = "") +
-%   # Apply a consistent theme for text and label colors.
-%   MKHthemes::xy_theme() +
-%   # Eliminate percentages around the outside of the pie
-%   theme(axis.text.x = element_blank()) +
-%   theme(axis.text.y = element_blank()) +
-%   # Eliminate y axis ticks
-%   theme(axis.ticks = element_blank()) +
-%   # Eliminate the frame around the whole plot
-%   theme(panel.border = element_blank()) +
-%   # Change size of legend text
-%   theme(legend.text = element_text(size = 9, family = "Libre Caslon Text")) +
-%   # Change size of legend squares
-%   theme(legend.key.size = unit(0.3, "cm")) +
-%   theme(plot.margin = unit(c(0,0,0,0),"mm"))
-%  @
 
 Another source of greenhouse gas emissions in agriculture is land use. 
 Tropical rainforest deforestation, particularly in Brazil and Indonesia, 
