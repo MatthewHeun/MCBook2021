@@ -136,6 +136,7 @@ point, that is, they have been disturbed to the point of being on the edge of
 catastrophic collapse.
 
 \begin{figure}
+\captionsetup[subfigure]{justification=centering}
      \centering
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
@@ -477,6 +478,7 @@ boundary_graph <- function(df) {
 
 
 \begin{figure}
+\captionsetup[subfigure]{justification=centering}
      \centering
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
