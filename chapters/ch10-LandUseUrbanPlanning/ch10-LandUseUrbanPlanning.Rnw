@@ -244,7 +244,7 @@ this section examines the capacity of the land to absorb and store carbon.
 
 
 
-<<CarbonStorage, fig.height=5.5, fig.cap="World carbon storage in various biomes. Top figure is amount (area) of each biome in the world. Middle figure is carbon density for each biome. Bottom figure is the product of the top and the middle and is the total storage capacity of each biome world wide. ``Vegetation'' indicates carbon storage in plant matter. ``Soil'' indicates carbon storage in the soil. Source: IPCC~\\cite{IPCC:2000wv}.">>=
+<<CarbonStorage, fig.height=5.5, fig.cap="World carbon storage in various biomes. The top graph shows amount (area) of each biome in the world. The middle graph is carbon density for each biome. The bottom figure is the product of the top and the middle and is the total storage capacity of each biome world wide. ``Temp. forest'' is temperate forests. ``Vegetation'' indicates carbon storage in plant matter. ``Soil'' indicates carbon storage in the soil. Source: IPCC~\\cite{IPCC:2000wv}.">>=
 carbon_storage_world <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Carbon_Storage_World.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(cols = c("Carbon stored in Vegetation (Gt/million km2)", 
@@ -257,7 +257,7 @@ carbon_storage_world <- readxl::read_excel(file.path("chapters", "ch10-LandUseUr
   dplyr::mutate(
     Biome = factor(Biome, levels = c("Boreal forest", "Rainforest", "Grassland",
                                      "Chaparral", "Wetlands", "Desert", 
-                                     "Temperate forest", "Croplands", "Tundra")),
+                                     "Temp. forest", "Croplands", "Tundra")),
     storage_location = dplyr::case_when(
       metric == "Carbon stored in Vegetation (Gt/million km2)" | 
         metric == "Total Carbon stored in Vegetation (Gt)" ~ "vegetation", 
