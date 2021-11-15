@@ -317,7 +317,7 @@ persons_per_household %>%
    ggplot2::scale_y_continuous(limits = c(0, 4), breaks = seq(0, 4, by = 1)) +
    ggplot2::geom_line(size = 1, colour = mc_title_blue) +
    ggplot2::labs(x = ggplot2::element_blank(),
-                 y = "Persons Per Household") +
+                 y = "Persons per household") +
 
    MKHthemes::xy_theme()
 
