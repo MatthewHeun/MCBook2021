@@ -357,17 +357,17 @@ To further underscore the importance of consumption of natural resources to sust
 germanium (now being consumed at twice its sustainable rate)
 is one of the critical raw materials in Table~\ref{tab:CRMs}.
 
-<<PercentageOfSustainable, fig.width=3.25, fig.cap="Proportion of weak sustainable extraction (Zinc, Germanium) or emission (CO$_2$) rates for the U.S.~\\cite[Tables~2.1--2.3]{Graedel:2010ab}.">>=
+<<PercentageOfSustainable, fig.width=3.25, fig.cap="Proportion of weak sustainable extraction (zinc, germanium) or emission (CO$_2$) rates for the U.S.~\\cite[Tables~2.1--2.3]{Graedel:2010ab}.">>=
 readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"), 
                    sheet = "data to plot") %>% 
   dplyr::mutate(
-    Resource = factor(Resource, levels = c("Zinc", "Germanium", "CO2")), 
+    Resource = factor(Resource, levels = c("zinc", "germanium", "CO2")), 
     Multiple_of_sustainable = Multiple_of_sustainable * 100
   ) %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Resource", y = "Multiple_of_sustainable", fill = "Resource")) +
   ggplot2::geom_bar(stat = "identity") +
   ggplot2::guides(fill = "none") +
-  ggplot2::scale_x_discrete(labels = c(Zinc = "Zn", Germanium = "Ge", CO2 = expression(CO[2]))) +
+  ggplot2::scale_x_discrete(labels = c(zinc = "Zn", germanium = "Ge", CO2 = expression(CO[2]))) +
   ggplot2::coord_cartesian(ylim = c(100, NA)) +
   ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.05))) +
   viridis::scale_fill_viridis(discrete = TRUE) + 
