@@ -184,7 +184,7 @@ which is inherently unsustainable.
 % @
 
 
-<<AffluenceGraph-Nordhaus, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation~\\ref{eq:IPARC}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from Nordhaus.">>=
+<<AffluenceGraph-Nordhaus, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation~\\ref{eq:IPARC}. Sources: data for 1990--2020 from the \\citeauthor{World-Bank:2021un}~\\cite{World-Bank:2021un}; data for 1800--1989 inferred from GDP per capita growth rates from \\citeauthor{Nordhaus:1997vi}~\\cite{Nordhaus:1997vi} via \\citeauthor{DeLong:1997ui}~\\cite{DeLong:1997ui}.">>=
 world_gdppc_Nordhaus <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
                                            sheet = "GDPpc-Nordhaus-WB") %>% 
   dplyr::select(-Country, -Source)
