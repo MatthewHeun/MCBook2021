@@ -129,9 +129,10 @@ Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{chapters/ch06-CarbonIntensity/figures/Carbon_2018_United-States.png}
-\caption{U.S.\ CO$_2$ emissions 2018~\cite{Lawrence-Livermore-National-Laboratory:wp}. 
+\caption{U.S.\ CO$_2$ emissions in 2018.
          CO$_2$ emissions from electricity production are not attributed to end uses.
-         See Table~\ref{tab:corrected_co2_emissions}.}
+         See Table~\ref{tab:corrected_co2_emissions}.
+         Source: Lawrence Livermore National Laboratory~\cite{Lawrence-Livermore-National-Laboratory:wp}.}
 \label{fig:LLNL_CO2_sankey}
 \end{figure}
 
