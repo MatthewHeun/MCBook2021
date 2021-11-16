@@ -83,7 +83,7 @@ In contrast, Figure~\ref{fig:tonnekm_by_mode} shows that
 freight transport demand is satisfied by a variety of modes.
 
 
-<<passengerkm_by_mode, fig.cap="U.S.\\ passenger-km of personal transport by mode. ``Intercity'' is rail travel via Amtrak. ``Transit'' is public transit of all types (ferry, subway, bus, etc.). ``Air'' is U.S.\\ domestic air carriers. ``Highway'' is automobile traffic. Source: \\citet{passenger_km}.">>=
+<<passengerkm_by_mode, fig.cap="U.S.\\ passenger-km of personal transport by mode. ``Intercity'' is rail travel via Amtrak. ``Transit'' is public transit of all types (ferry, subway, bus, etc.). ``Air'' is U.S.\\ domestic air carriers. ``Highway'' is automobile traffic. \\emph{Source}: \\citet{passenger_km}.">>=
 passenger_km_by_mode <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Passenger_kms.xlsx"), 
                    sheet = "data to plot") %>% 
   tidyr::pivot_longer(cols = -Year, names_to = "mode", values_to = "passkm_millions") %>% 
@@ -108,7 +108,7 @@ passenger_km_by_mode %>%
 @
 
 
-<<tonnekm_by_mode, fig.cap="Freight transport by mode, 1980--2018. ``Pipeline'' is transportation of liquids (such as fuels) through pipelines. Source: \\citet{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021vu}.">>=
+<<tonnekm_by_mode, fig.cap="Freight transport by mode, 1980--2018. ``Pipeline'' is transportation of liquids (such as fuels) through pipelines. \\emph{Source}: \\citet{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021vu}.">>=
 tonne_km_by_mode <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Freight_ton_miles.xlsx"), 
                    sheet = "data to plot") %>% 
   tidyr::pivot_longer(cols = -Year, names_to = "type", values_to = "tonmiles") %>% 
@@ -161,7 +161,7 @@ at the macro level~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportat
 The tight links between transportation and economic growth
 are one reason that economic growth and energy consumption are correlated.
 
-<<TSI, fig.cap="Seasonally-adjusted transportation index data for freight, passenger, and overall transportation services. (2000 = 100) Source: \\citet{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.">>=
+<<TSI, fig.cap="Seasonally-adjusted transportation index data for freight, passenger, and overall transportation services (2000 = 100). \\emph{Source}: \\citet{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.">>=
 TSI <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Transportation_Services_Index_and_Seasonally-Adjusted_Transportation_Data.xlsx"),
                                        sheet = "data to plot") %>% 
   dplyr::rename(
@@ -205,7 +205,7 @@ Figure~\ref{fig:commuter_percentage_by_mode} indicates that
 a transition to multi-passenger transportation modes may be difficult to effect.
 
 
-<<commuter_percentage_by_mode, fig.cap="Percentage of U.S.\\ commutes by mode. Note: ``Taxi'' includes motorcycles and other commuting modes. Source: \\citet{U.S.-DOT-BTS:2019ww}.">>=
+<<commuter_percentage_by_mode, fig.cap="Percentage of U.S.\\ commutes by mode. Note: ``Taxi'' includes motorcycles and other commuting modes. \\emph{Source}: \\citet{U.S.-DOT-BTS:2019ww}.">>=
 commuter_mode_percentage <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Commuting modes.xlsx"),
                                        sheet = "data to plot") %>% 
   tidyr::pivot_longer(-Year, names_to = "mode", values_to = "percentages") %>% 
@@ -277,7 +277,7 @@ which led to a decline total CO$_2$ emissions,
 even as delivery of transportation services rose through the 2000s (Figure~\ref{fig:TSI}).
 
 
-<<transport_GHG_emissions, fig.cap="CO$_2$ emissions from U.S.\\ transportation. ``Maritime'' is ships and boats. ``Small trucks'' are light-duty trucks. ``Large trucks'' are medium- and heavy-duty trucks. Source: **** Get source from Anjana. ****">>=
+<<transport_GHG_emissions, fig.cap="CO$_2$ emissions from U.S.\\ transportation. ``Maritime'' is ships and boats. ``Small trucks'' are light-duty trucks. ``Large trucks'' are medium- and heavy-duty trucks. \\emph{Source}: **** Get source from Anjana. ****">>=
 transport_GHG <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "CO2_emissions_transport.xlsx"),
                                     sheet = "data to plot") %>% 
   dplyr::rename(
@@ -336,7 +336,7 @@ significantly over the past few decades.
 (See Figure~\ref{fig:US_mpg}.)
 
 
-<<US_mpg, fig.cap="U.S.\\ car, truck, and fleet fuel efficiency. Sources: \\citet{Hicks:2014tn} and \\citet{NHTSA2019tc}.">>=
+<<US_mpg, fig.cap="U.S.\\ car, truck, and fleet fuel efficiency. \\emph{Sources}: \\citet{Hicks:2014tn} and \\citet{NHTSA2019tc}.">>=
 mpg_data <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Fleet FE Performance.xlsx"),
                                sheet = "data to plot") %>% 
   dplyr::rename(
@@ -488,7 +488,7 @@ would yield approximately five days of gasoline alternative''~\cite{Cleveland:20
 Thus, corn-derived ethanol, at least, is unlikely to provide a long-term solution
 for sustainable transport.
 
-<<Biofuel_cons, fig.cap = "U.S.\ biofuel consumption, 1981--2020. Source: \\citet{U.S.-Energy-Information-Agency:2021to}.">>=
+<<Biofuel_cons, fig.cap = "U.S.\ biofuel consumption, 1981--2020. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:2021to}.">>=
 biofuels <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Biofuels.xlsx"),
                                                sheet = "data to plot") %>% 
   dplyr::rename(
@@ -563,7 +563,7 @@ miss key differences associated with the production of different vehicle types a
 could lead to misguided comparisons across technologies.''
 
 
-<<auto_gwp, fig.cap = "Normalized environmental impacts of three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential. ``MRD'' is mineral resource depletion. ``ICE'' means internal combustion engine vehicles. ``EV'' means electric vehicles. ``Gas'' indicates a gasoline-powered vehicles. ``Ren20'' indicates an electricity mix with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union electricity mix in 2010. ``Coal'' indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. Source: \\citet[Fig.~1]{Hawkins_2012}.">>=
+<<auto_gwp, fig.cap = "Normalized environmental impacts of three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential. ``MRD'' is mineral resource depletion. ``ICE'' means internal combustion engine vehicles. ``EV'' means electric vehicles. ``Gas'' indicates a gasoline-powered vehicles. ``Ren20'' indicates an electricity mix with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union electricity mix in 2010. ``Coal'' indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
 Hawkins_life_cycle <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "EV data from Hawkins.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(c("Base vehicle", "Engine", "Other powertrain", "Battery", "Use phase", "Fuel/electricity", "End of life"), names_to = "Life.cycle.component", values_to = "normalized_impact") %>% 

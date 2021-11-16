@@ -478,8 +478,8 @@ Some authors have suggested a minimum EROI of 5 for sustainability \cite{Ferrucc
 with 12 to 13 necessary for a technological society.
 
 \begin{table}\centering
-\caption{Energy return on investment (EROI) for several energy sources. % Source: wikipedia entry for EROI
-\label{tab:eroi}}
+\caption{Energy return on investment (EROI) for several energy sources.} % Source: wikipedia entry for EROI
+\label{tab:eroi}
 \begin{tabular}{ll}\toprule
 \textbf{Energy source} & \textbf{EROI} \\ \midrule
 Nuclear power & 75-100 \\ \midrule

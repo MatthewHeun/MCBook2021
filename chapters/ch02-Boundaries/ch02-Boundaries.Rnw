@@ -240,18 +240,18 @@ Finally, %while the risk is, perhaps, less acute than it once was,
 a global thermonuclear war would be a humanitarian and environmental disaster on a 
 truly global scale.
 
-Equation \ref{eq:IPARC} frames sustainability in terms of ``impacts,'' that is, 
+Equation~\ref{eq:IPARC} frames sustainability in terms of ``impacts,'' that is, 
 negative effects on the environment resulting from human activity. 
 Broadly, there are two approaches for managing or responding to impacts. 
 \emph{Planetary boundaries} describe the maximum (desirable) \emph{level} of effects,
-that is, they establish a limit on the left-hand side of Equation \ref{eq:IPARC}.
+that is, they establish a limit on the left-hand side of Equation~\ref{eq:IPARC}.
 The second method uses a weighted average, called an \emph{index}, of factors as 
 a proxy management tool. 
 The index describes a collection of behaviors. 
 Whereas the planetary boundaries are limits for single variables, indices are a mix
-of variables from both sides of Equation \ref{eq:IPARC}.
-Neither method describes \emph{how} changes should be made but within each index
-is an implicit description of the tradeoffs between the different variables. 
+of variables from both sides of Equation~\ref{eq:IPARC}.
+Neither method describes \emph{how} changes should be made, but each index implicitly
+contains a description of the tradeoffs among the different variables. 
 %The boundary method establishes what we don't want to happen. 
 
 % comparison with radiation. humans need some (for vitamin D). more is long-term bad. 
@@ -262,7 +262,7 @@ is an implicit description of the tradeoffs between the different variables.
 Climate scientists have proposed indicators, which, if exceeded, 
 could render Earth uninhabitable by humans, perhaps catastrophically so 
 in that the resulting changes may be nonlinear and abrupt. 
-Table \ref{tab:planetBoundaries} lists these indicators and states 
+Table~\ref{tab:planetBoundaries} lists these indicators and states 
 whether they've already been exceeded -- note that exceeding these indicators
 means that humanity is not living sustainably.
 The boundary values set for these indicators are intended to define a 
@@ -298,21 +298,24 @@ The boundary values set for these indicators are intended to define a
 % \bottomrule \end{tabular}
 
 \begin{table}\centering
-\caption{Some planetary boundaries \cite{Rockstrom2009}.
-\label{tab:planetBoundaries}}
-\begin{tabular}{ll}\toprule
-\textbf{Planetary Boundary} & \textbf{Exceeded?} \\ \midrule
-Amospheric CO$_2$ concentration & yes \\ \midrule
-Extinction rate & yes \\ \midrule
-Anthropogenic nitrogen removed from the atmosphere & yes\\ \midrule
-Anthropogenic phosphorous added to the ocean & not yet \\ \midrule
-Calcium carbonate in ocean surface seawater & not yet \\ \midrule
-Land surface converted to crop land [\%] & not yet \\ \midrule
-Global consumption rate of fresh water & not yet \\ \midrule
-Statospheric ozone completion & not yet \\ \midrule
-Atmospheric particulates & unknown \\ \midrule
-Chemical pollution & unknown \\
-\bottomrule \end{tabular}
+\caption{Some planetary boundaries. \emph{Source}: \citet{Rockstrom2009}.}
+\label{tab:planetBoundaries}
+\begin{tabular}{l l}
+\toprule
+\textbf{Planetary Boundary} & \textbf{Exceeded?} \\ 
+\midrule
+Atmospheric CO$_2$ concentration                   & yes \\
+Extinction rate                                    & yes \\ 
+Anthropogenic nitrogen removed from the atmosphere & yes\\
+Anthropogenic phosphorous added to the ocean       & not yet \\ 
+Calcium carbonate in ocean surface seawater        & not yet \\ 
+Land surface converted to crop land [\%]           & not yet \\ 
+Global consumption rate of fresh water             & not yet \\ 
+Stratospheric ozone completion                     & not yet \\
+Atmospheric particulates                           & unknown \\ 
+Chemical pollution                                 & unknown \\
+\bottomrule 
+\end{tabular}
 \end{table}
 
 The limit for atmospheric carbon dioxide concentration
@@ -327,7 +330,7 @@ lost will take several million years \cite{Davis11262}.
 
 %Figure~\ref{fig:CO2Graph} shows atmospheric CO$_2$ concentration over time.
 
-<<CO2Graph, fig.cap="Atmospheric CO$_2$ concentration over time. Vertical line shows the year 2020. Sources: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Dlugokencky:2021vw}.">>=
+<<CO2Graph, fig.cap="Atmospheric CO$_2$ concentration over time. Vertical line shows the year 2020. \\emph{Sources}: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Dlugokencky:2021vw}.">>=
 # Gather data for CO2 vs. time graph
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>%
   dplyr::mutate(
@@ -559,7 +562,7 @@ data.frame(t = seq(-3, 4, by = 0.01)) %>%
                  boundary is robust.
                  Fifth, shown in (d), exceeding the boundary is possible and results in serious, dramatic, and
                  long-lasting reduction of the system's ability to provide ecosystem services.
-                 Source: \citet{Graedel:2010ab}.}
+                 \emph{Source}: \citet{Graedel:2010ab}.}
         \label{fig:GAfig21}
 \end{figure}
 
@@ -625,7 +628,7 @@ the goals or enforcement mechanisms for maintaining behavior.
 It remains for scientists, policy makers, and government officials to conduct 
 research, make recommendations, regulate, and enforce laws.
 
-<<FootprintHDIGraph, fig.cap="Ecological footprint vs. HDI for 2017. Population is in millions. HDI between 0.7 and 0.8 is considered ``high'' human development. HDI greater than 0.8 is considered ``very high'' human development. Ecological footprint below 1.9 global hectares per person is considered sustainable. The only countries ``inside the box'' at the lower right of the graph (high human development and sustainable ecological footprint) are the Philippines and Sri Lanka. No country exhibits ``very high'' human development and a sustainable ecological footprint. Source: \\citet{Global-Footprint-Network:ut}.">>=
+<<FootprintHDIGraph, fig.cap="Ecological footprint vs. HDI for 2017. Population is in millions. HDI between 0.7 and 0.8 is considered ``high'' human development. HDI greater than 0.8 is considered ``very high'' human development. Ecological footprint below 1.9 global hectares per person is considered sustainable. The only countries ``inside the box'' at the lower right of the graph (high human development and sustainable ecological footprint) are the Philippines and Sri Lanka. No country exhibits ``very high'' human development and a sustainable ecological footprint. \\emph{Source}: \\citet{Global-Footprint-Network:ut}.">>=
 clrs <- viridis::viridis(6, begin = 0, end = 0.99)
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI.xlsx"),
                                   sheet = "data to plot") %>% 
@@ -678,7 +681,7 @@ to, for example, the extinction rate.
 Climate change is causing ocean acidification, sea level rise, and the increased 
 frequency of extreme natural disasters, such as wild fires and destructive tropical storms. 
 
-<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. Source: \\citet{Ritchie:2021vw}.">>=
+<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                    sheet = "data to plot")
 

@@ -222,7 +222,7 @@ crm_df <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "da
   tibble::column_to_rownames(var = "Materials")
 
 crm_xtab <- xtable::xtable(crm_df, 
-                           caption = "Critical raw materials and the economic sectors in which they are used. ``Aero'' is aerospace and defense. ``Tex'' is textiles. ``Elect'' is electronics. ``Auto'' includes mobility and automotive. ``Energy'' includes all energy-intensive industries. ``Rens'' is the renewable energy sector. ``Agri'' is agriculture and food. ``Const'' is construction. Source: \\citet[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.", 
+                           caption = "Critical raw materials and the economic sectors in which they are used. ``Aero'' is aerospace and defense. ``Tex'' is textiles. ``Elect'' is electronics. ``Auto'' includes mobility and automotive. ``Energy'' includes all energy-intensive industries. ``Rens'' is the renewable energy sector. ``Agri'' is agriculture and food. ``Const'' is construction. \\emph{Source}: \\citet[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.", 
                            align = c("r", rep("c", 11)),
                            label = "tab:CRMs")
 
@@ -251,7 +251,7 @@ Figure~\ref{fig:per_capita_material_use}
 shows the same data on a per-capita basis.
 
 
-<<total_material_use, fig.cap="Total world material use. ``Construction'' includes all construction minerals. ``Ores'' includes industrial minerals. ``Fossil'' includes all fossil energy carriers. Source: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
+<<total_material_use, fig.cap="Total world material use. ``Construction'' includes all construction minerals. ``Ores'' includes industrial minerals. ``Fossil'' includes all fossil energy carriers. \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
 krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
                                 sheet = "data to plot") %>% 
   dplyr::rename(
@@ -278,7 +278,7 @@ krausmann %>%
 @
 
 
-<<per_capita_material_use, fig.cap='Per-capita material extraction. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. Source: \\citet[Figure~1c]{Krausmann:2009wc}.'>>=
+<<per_capita_material_use, fig.cap='Per-capita material extraction. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: \\citet[Figure~1c]{Krausmann:2009wc}.'>>=
 material_per_capita <- krausmann %>% 
   dplyr::left_join(historical_pop, by = "Year") %>% 
   dplyr::mutate(
@@ -370,7 +370,7 @@ To further underscore the importance of consumption of natural resources to sust
 germanium (now being consumed at twice its sustainable rate)
 is one of the critical raw materials in Table~\ref{tab:CRMs}.
 
-<<PercentageOfSustainable, fig.width=3.25, fig.cap="Proportion of weak sustainable extraction (zinc, germanium) or emission (CO$_2$) rates for the U.S. Source: \\citet[Tables~2.1--2.3]{Graedel:2010ab}.">>=
+<<PercentageOfSustainable, fig.width=3.25, fig.cap="Proportion of weak sustainable extraction (zinc, germanium) or emission (CO$_2$) rates for the U.S. \\emph{Source}: \\citet[Tables~2.1--2.3]{Graedel:2010ab}.">>=
 readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"), 
                    sheet = "data to plot") %>% 
   dplyr::mutate(
@@ -542,12 +542,12 @@ Industry and transportation use more energy than residences and commerce.
 \centering
 \includegraphics[width=\linewidth]{chapters/ch05-ResourceIntensity/figures/Energy_US_2018.png}
 \caption{U.S.\ energy consumption in 2018. 
-Source: \citet{Lawrence-Livermore-National-Laboratory:ua}.}\index{Sankey diagram!energy}
+\emph{Source}: \citet{Lawrence-Livermore-National-Laboratory:ua}.}\index{Sankey diagram!energy}
 \label{fig:LLNL_energy_sankey}
 \end{figure}
 
 
-<<PrimaryEnergyGraph, fig.cap="World annual primary energy consumption. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels. Source: \\citet{Roser:2021vi}.">>=
+<<PrimaryEnergyGraph, fig.cap="World annual primary energy consumption. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels. \\emph{Source}: \\citet{Roser:2021vi}.">>=
 # Gather data for primary energy vs. time graph
 primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "global-primary-energy.xlsx"),
                                      sheet = "data to plot") %>% 
@@ -666,7 +666,7 @@ weak_sust_energy_data <- readxl::read_excel(file.path("chapters", "ch05-Resource
 print(xtable::xtable(weak_sust_energy_data, 
                      digits = 0, 
                      align = c("c", "r", "r", "l", "r", "l", "r", "l"),
-                     caption = "Weak sustainability calculations for world consumption of nonrenewable fossil fuels. Calculations are based on 2018 reserve estimates and consumption rates and do not account for accelerating consumption or future conversion of resources to reserves. ``mst'' is million short tons. ``bb'' is billion barrels. ``tcf'' is trillion cubic feet. Source: \\citet{U.S.-Energy-Information-Agency:tr}.",
+                     caption = "Weak sustainability calculations for world consumption of nonrenewable fossil fuels. Calculations are based on 2018 reserve estimates and consumption rates and do not account for accelerating consumption or future conversion of resources to reserves. ``mst'' is million short tons. ``bb'' is billion barrels. ``tcf'' is trillion cubic feet. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:tr}.",
                      label = "tab:weak_sustainability_calcs"),
       include.rownames = FALSE, 
       include.colnames = TRUE, 
