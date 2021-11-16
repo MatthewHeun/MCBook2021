@@ -116,7 +116,7 @@ The average growth rate over the last hundred years
 was 1.55\%/year, with a peak growth rate of 2.1\%/year between 1965 and 1970.
 
 
-<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation. Source: \\citeauthor{Roser:2021uu}~\\cite{Roser:2021uu}.">>=
+<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation. Source: \\citet{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
@@ -205,7 +205,7 @@ The wide range of uncertainty in the population projections is caused by
 uncertainty about future birth and death rates.
 
 
-<<UN_population_prospect, fig.cap="Projections of world population. Projections are based on probabilistic models of total fertility and life expectancy at birth from a Bayesian hierarchical model. The light gray region shows a 95~\\% prediction interval. The dark gray region shows a 80~\\% prediction interval. Sources: Historical data from \\citeauthor{Roser:2021uu}~\\cite{Roser:2021uu}; future projections from \\citeauthor{UNEcSoAf:2021vj}~\\cite{UNEcSoAf:2021vj}.">>=
+<<UN_population_prospect, fig.cap="Projections of world population. Projections are based on probabilistic models of total fertility and life expectancy at birth from a Bayesian hierarchical model. The light gray region shows a 95~\\% prediction interval. The dark gray region shows a 80~\\% prediction interval. Sources: Historical data from \\citet{Roser:2021uu}; future projections from \\citet{UNEcSoAf:2021vj}.">>=
 future_pop <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "UN_PPP2019_Output_PopTot.xlsx"),
                                              sheet = "data to plot") %>% 
   tidyr::pivot_longer(-Year, names_to = "band", values_to = "pop_thousands") %>% 
@@ -274,7 +274,7 @@ population and those variables interact in complex ways.
 
 \caption{Causal loop diagram of several important feedback loops.
          Exogenous inputs are shown in \emph{italics}. 
-         Source: \citeauthor{Meadows:1974ut}~\cite[p.~14]{Meadows:1974ut}.}
+         Source: \citet[p.~14]{Meadows:1974ut}.}
 \label{fig:World3loops}
 \end{figure}
 
