@@ -96,7 +96,7 @@ consumes 21.9\% of household energy.
 Lighting constitutes 4.9\% of total household energy use.
 
 
-<<average_residential_energy, fig.cap="Proportions of final energy consumption in U.S.\\ households by end use. Space heating includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. Space cooling includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. Refrigeration includes electricity for refrigerators and standalone freezers. Laundry includes electricity, natural gas, and propane for clothes washers and dryers. Cooking includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers. Entertainment includes electricity and natural gas for TVs, pool pumps, and hot tubs. Other includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
+<<average_residential_energy, fig.cap="Proportions of final energy consumption in U.S.\\ households by end use in 2015. ``Space heating'' includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. ``Space cooling'' includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. ``Refrigeration'' includes electricity for refrigerators and standalone freezers. Laundry includes electricity, natural gas, and propane for clothes washers and dryers. Cooking includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers. Entertainment includes electricity and natural gas for TVs, pool pumps, and hot tubs. Other includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. Source: \\citeauthor{U.S.-Department-of-Energy:2018uz} Residential Energy Consumption Survey (RECS) 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_category <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "End_use_by_demand_category.xlsx"),
                                                sheet = "data to plot") %>% 
   dplyr::select("Category", "Percentage") %>% 
@@ -165,7 +165,7 @@ confirms intuition that dwelling size is positively correlated
 with energy consumption.\index{households!energy consumption}
 
 
-<<EnergyConsAndHomeSize, fig.cap="Average annual U.S.\\ household energy consumption by home size. (Biomass (wood), coal, district steam, and solar thermal are excluded.) Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS), 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
+<<EnergyConsAndHomeSize, fig.cap="Average annual U.S.\\ household energy consumption by home size in 2015. (Biomass (wood), coal, district steam, and solar thermal are excluded.) Source: \\citeauthor{U.S.-Department-of-Energy:2018uz} Residential Energy Consumption Survey (RECS) 2015~\\cite{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_size <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "ce2.1.xlsx"),
                                                sheet = "data to plot") %>% 
    dplyr::rename(
@@ -213,7 +213,7 @@ and~\ref{fig:TotalHouseholdEnergyConsumption}
 show these trends.
 
 
-<<NewHousingSize, fig.cap="Average size of newly-constructed U.S.\\ homes. Source: U.S.\\ Census Bureau~\\cite{United-States-Census-Bureau:2021tq}.">>=
+<<NewHousingSize, fig.cap="Average size of newly-constructed U.S.\\ homes. Source: \\citeauthor{United-States-Census-Bureau:2021tq}~\\cite{United-States-Census-Bureau:2021tq}.">>=
 average_housing_sizes <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "housing_sizes.xlsx"),
                                                            sheet = "data to plot")
 
@@ -229,7 +229,7 @@ average_housing_sizes %>%
 
 
 
-<<AverageHouseholdEnergyConsumption, fig.cap="Average U.S.\\ household energy consumption and number of housing units. Households include all primary occupied housing units in the 50 states and the District of Columbia. Vacant housing units, seasonal units, second homes, military houses, and group quarters are excluded. ``hu'' means housing unit. Source: U.S.\\ Energy Information Agency Residential Energy Consumption Survey (RECS)~\\cite{U.S.-Energy-Information-Agency:vd}.">>=
+<<AverageHouseholdEnergyConsumption, fig.cap="Average U.S.\\ household energy consumption and number of housing units. Households include all primary occupied housing units in the 50 states and the District of Columbia. Vacant housing units, seasonal units, second homes, military houses, and group quarters are excluded. ``hu'' means housing unit. Source: \\citeauthor{U.S.-Energy-Information-Agency:vd} Residential Energy Consumption Survey (RECS) 2015~\\cite{U.S.-Energy-Information-Agency:vd}.">>=
 average_household_energy_consumption <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "Household_energy_use_data.xlsx"),
                                                            sheet = "data to plot") %>% 
    dplyr::mutate(
@@ -258,7 +258,7 @@ average_household_energy_consumption %>%
 @
 
 
-<<TotalHouseholdEnergyConsumption, fig.cap="Total U.S.\\ household final energy consumption by energy type. Note: Fuel oil and Propane are aggregated into Petroleum. Source: U.S.\\ Energy Information Agency~\\cite{U.S.-Energy-Information-Agency:th}.">>=
+<<TotalHouseholdEnergyConsumption, fig.cap="Total U.S.\\ household final energy consumption by energy type. Note: Fuel oil and Propane are aggregated into Petroleum. Source: \\citeauthor{U.S.-Energy-Information-Agency:th}~\\cite{U.S.-Energy-Information-Agency:th}.">>=
 total_household_energy_consumption <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "Table_2.2_Residential_Sector_Energy_Consumption.xlsx"),
                                                   sheet = "data to plot")
 
@@ -306,7 +306,7 @@ shows that the number of occupants per dwelling
 is falling over time.
 
 
-<<PersonsPerHousehold, fig.cap="Average number of persons per U.S.\\ household. Source: U.S.\\ Census Bureau~\\cite{United-States-Census-Bureau:2020vd}.">>=
+<<PersonsPerHousehold, fig.cap="Average number of persons per U.S.\\ household. Source: \\citeauthor{United-States-Census-Bureau:2020vd}~\\cite{United-States-Census-Bureau:2020vd}.">>=
 persons_per_household <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "hh4.xls"),
                                                   sheet = "data to plot")
 
