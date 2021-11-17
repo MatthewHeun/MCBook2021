@@ -217,6 +217,35 @@ food delivery in the U.S.~\citep[Fig.~2]{Heller_2000}.
 \label{fig:energy_flow_in_food_system}}
 \end{figure}
 
+<<food_ghg, fig.cap="U.S.\\ food-related greenhouse has emissions by life cycle stage. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
+food_emissions_US <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Crippa et al 2021.xlsx"), 
+                                            sheet = "data to plot") %>% 
+  tidyr::pivot_longer(-`System Stage`, names_to = "Year", values_to = "co2_emissions") %>% 
+  dplyr::mutate(
+    Year = as.numeric(Year), 
+    co2_emissions = co2_emissions / 1e6, # Convert kt/year to Gt/year
+    `System Stage` = factor(`System Stage`, levels = c("Production", "Transport", "Retail", 
+                                                       "LULUC (Production)", "Processing", 
+                                                       "Packaging", "End_of_Life", 
+                                                       "Consumption"))
+  )
+
+food_emissions_US %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, 
+                                         y = co2_emissions,
+                                         fill = `System Stage`)) + 
+  ggplot2::geom_area() + 
+  
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = "U.S. food-related GHG emissions [Gtonnes/year]") +
+  
+  ggplot2::scale_fill_viridis_d(direction = -1) +
+  
+  MKHthemes::xy_theme()
+
+
+@
+
 Because food is energy, the overall energy efficiency of the food delivery system can be calculated.
 Figure~\ref{fig:energy_flow_in_food_system} shows the energy consumed and supplied
 by various aspects of the food delivery system~\citep[Fig.~2]{Heller_2000}.
