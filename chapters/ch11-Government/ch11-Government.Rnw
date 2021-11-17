@@ -324,7 +324,7 @@ to efficiently reduce emissions and encourage renewable energy adoption.
      \begin{subfigure}[b]{0.31\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/EnerGuide.jpeg}
-         \caption{Energuide.}
+         \caption{Energy star.}
          \label{fig:energuide}
      \end{subfigure}
         \caption{Consumer-oriented labels for home appliances. 
@@ -370,13 +370,25 @@ encourages sustainable design for buildings.
 The AASHE (Association for the Advancement of Sustainability in Higher Education)
 STARS (Sustainability Tracking, Assessment, and Reporting System)
 program incentivizes colleges and universities to educate around sustainability
-and to operate more sustainably.  
-The Energy Star program encourages manufacturers to design and manufacture
-higher-efficiency appliances for homes and offices.
-(Figure~\ref{fig:energy_star} shows an Energy Guide label on a furnace.)
+and to operate more sustainably. 
 The living building challenge motivates builders and designers to use buildings 
 to make positive contributions to the environment, focusing on several key areas:
 materials, place, water, energy, health and happiness, equity, and beauty.
+The Energy Star program encourages manufacturers to design and manufacture
+higher-efficiency appliances for homes and offices.
+
+(Figure~\ref{fig:energy_star} shows three different energy labels for two home 
+appliances, a furnace and a chest freezer.
+Each label reports energy use in a different way: in (a) it is \emph{efficiency},
+in (b) it's \emph{cost}, and in (c) it's the \emph{amount} of energy used.
+In (a) to the left is bad (inefficient).
+In (b) and (c) to the left is good (efficient).
+(b) and (c) are for the same freezer but, most likely because Canada and the U.S.
+define different categories, in (b) the freezer is best-in-class and in (c) it is
+middle-of-the-road.
+Clearly, if the point of the labels is to be clear and easy to understand, there
+is room for improvement.
+
 
 
 %++++++++++++++++++++++++++++++
