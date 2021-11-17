@@ -217,17 +217,16 @@ food delivery in the U.S.~\citep[Fig.~2]{Heller_2000}.
 \label{fig:energy_flow_in_food_system}}
 \end{figure}
 
-<<food_ghg, fig.cap="U.S.\\ food-related greenhouse has emissions by life cycle stage. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
+<<food_ghg, fig.cap="U.S.\\ food-related greenhouse gas emissions by life cycle stage. ``LULUC'' is land use and land use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
 food_emissions_US <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Crippa et al 2021.xlsx"), 
                                             sheet = "data to plot") %>% 
   tidyr::pivot_longer(-`System Stage`, names_to = "Year", values_to = "co2_emissions") %>% 
   dplyr::mutate(
     Year = as.numeric(Year), 
     co2_emissions = co2_emissions / 1e6, # Convert kt/year to Gt/year
-    `System Stage` = factor(`System Stage`, levels = c("Production", "Transport", "Retail", 
-                                                       "LULUC (Production)", "Processing", 
-                                                       "Packaging", "End_of_Life", 
-                                                       "Consumption"))
+    `System Stage` = factor(`System Stage`, levels = c("End of life", "Consumption",  
+                                                       "Retail", "Transport", 
+                                                       "Packaging", "Processing", "Production", "LULUC"))
   )
 
 food_emissions_US %>% 
@@ -237,13 +236,12 @@ food_emissions_US %>%
   ggplot2::geom_area() + 
   
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = "U.S. food-related GHG emissions [Gtonnes/year]") +
+                y = expression("Food GHG emissions [Gt "*CO[2]*"eq/year]"), 
+                fill = ggplot2::element_blank()) +
   
   ggplot2::scale_fill_viridis_d(direction = -1) +
   
   MKHthemes::xy_theme()
-
-
 @
 
 Because food is energy, the overall energy efficiency of the food delivery system can be calculated.
