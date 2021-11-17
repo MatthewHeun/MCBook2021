@@ -13,10 +13,15 @@
 \epigraph{Show me the incentive and I will show you the outcome}{Charlie Munger}
 
 
-This is the first of two chapters to discuss actions
+The final two chapters of this book discuss actions
 society and individuals can take to live more sustainably.
-This chapter (Chapter \ref{chap:government}) explores collective actions and 
-the next (Chapter \ref{chap:personal_action}) explores personal actions.
+Chapter \ref{chap:government} explores collective actions and 
+Chapter \ref{chap:personal_action} explores personal or individual actions.
+% Collective actions are taken because they're "too big" for an individual.
+% Actions (3) = Education/dissemination/"change hearts and minds", Research/Tech, Laws/rules/standards/"rules of the game."
+% Actors ($) = Individuals, Voluntary groups (prof. societies, NGOs, civic groups), Corporations, Governments.
+% z-axis?
+% Collective action success stories = Montreal protocol banning CFCs. Clean Water Act.
 Collective actions may involve changing the rules of the game 
 or providing widespread incentives
 to encourage self-interested individuals
@@ -89,15 +94,16 @@ areas of life in which sustainability issues and choices emerge:
 households, transportation, agriculture, and land use/urban planning 
 (Chapters~\ref{chap:households}--\ref{chap:agriculture}).
 
-This chapter answers the question,
+This chapter begins to answer the question,
 ``how could we reconfigure the systems and structures in our societies
 to encourage and promote a more sustainable world?''
 Each section below provides lists of possible collective actions, 
-mostly without comment.  
-The goal of this this chapter is to provide references to 
-ways to actively promote sustainability via collective action.
-Readers are encouraged to explore the suggested actions that fit their
-local situation, 
+mostly without comment. 
+The lists are self-consciously incomplete. 
+(How could the be otherwise?)
+The goal is to suggest collective actions that will be generative; these examples
+should help readers think of many other ideas.
+You should explore options that fit your local situation, 
 always keeping in mind the global perspective provided 
 by Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity}.
 Questions and problems at the end of the chapter assist the exploration process.
@@ -201,17 +207,20 @@ To reduce environmental impacts,
 economies need to use even fewer resources 
 and emit less pollution per dollar of GDP.
 
+% Matt, check the following two paragraphs.
 Policies that encourage industrial energy efficiency 
-will reduce energy required to generate a dollar of GDP
+will reduce the energy required to generate a dollar of GDP
 at the location of the energy use.
-However, the rebound effect and energy efficiency backfire can reduce the effectiveness
-of energy efficiency measures
-to reduce total energy consumption across the economy. 
+However, the rebound effect and energy-efficiency backfire can 
+counteract energy efficiency measures.
 If the cost savings associated with a specific energy efficiency intervention
 are reinvested for growth (as most businesses do), 
 the resulting increase in energy consumption from the expanded business
 can reduce (or in the case of backfire) eliminate the local energy consumption 
 caused by the energy efficiency measure. 
+The net result reduces total energy savings across the economy and, in some cases,
+actually \emph{increases} total energy consumption.
+
 To reduce rebound or backfire, 
 businesses can develop green revolving funds,
 wherein cost savings from energy efficiency are used exclusively 
@@ -227,7 +236,7 @@ Introducing policies to make resources more expensive will
 increase incentives to use resources more efficiently.
 If higher resource prices mean that more resources are left in the ground, 
 future generations will have more resources to consume (or not),
-thereby extending the life of reserves and increasing the liklihood that a 
+thereby extending the life of reserves and increasing the likelihood that a 
 weak sustainability criterion is achieved.
 (See Section~\ref{sec:strong_weak_sust}.)
 Interestingly, more-expensive resources (especially oil)
@@ -244,11 +253,10 @@ A structural approach to reducing the resource intensity of the economy is to
 transition away from a production-based economy toward a service-based economy.
 Providing services is less energy- and resource-insensitive than 
 manufacturing.
-That said, even a service economy needs goods, 
-so the move to a service-based economy will entail some production.
-And the move to a service-based economy carries risks that production is simply off-shored,
+That said, every economy, even a service economy needs goods. 
+Moving to a service-based economy carries risks that production is simply off-shored,
 not eliminated altogether,
-thereby increasing the resource intensity of the producing economy.
+thereby increasing the resource intensity of another economy.
 
 
 %++++++++++++++++++++++++++++++
@@ -319,19 +327,27 @@ to efficiently reduce emissions and encourage renewable energy adoption.
          \caption{Energy star.}
          \label{fig:energuide}
      \end{subfigure}
-        \caption{An Energy Guide label showing the AFUE on a domestic furnace. 
-                 This furnace has the lowest legally allowed AFUE for its climate zone.
-                 The U.S. Federal Trade Commission (FTC) requires a standardized label on                  some categories
-                 of consumer products.
-                 Manufactures are required to test their products in accordance
-                 with U.S. Department of Energy standards and 
-                 report their results to the FTC.
-                 The U.S. Environmental Protection Agency runs the Energy Star program.
-                 If a product qualifies for Energy Star, that is shown on its Energy Guide
-                 label as well. 
-                 In contrast to the Energy Guide labels, 
-                 which are self-reported, since 2011, 
-                 Energy Star testing is performed by qualified, third-party laboratories.}
+        \caption{Consumer-oriented labels for home appliances. 
+        In the U.S., Federal Trade Commission (FTC) requires an Energy Guide label on
+        some categories of consumer products.
+        Manufactures are required to test their products in accordance with 
+        U.S. Department of Energy standards and report their results to the FTC.
+        (a) An Energy Guide label showing the AFUE on a domestic furnace. 
+        This furnace has the lowest legally allowed AFUE for its climate zone.
+        (b) An Energy Guide label for a chest freezer. The label shows a range of
+        expected \emph{cost} of yearly operation and estimated yearly electricity 
+        use. The range (\$35 to \$39) is small because there aren't many ``similar
+        models'' to compare to, that is around 12.9 cubic feet is an uncommon size.
+        Because this model is efficient \emph{for its category}, it qualifies for 
+        Energy Star certification (indicated at the lower right).
+        The U.S. Environmental Protection Agency runs the Energy Star program.
+        In contrast to the Energy Guide labels, which are self-reported, since 2011, 
+        Energy Star testing is performed by qualified, third-party laboratories.
+        (c) An EnerGuide label for the same chest freezer as in (b), in fact, it 
+        is the reverse of the same piece of paper.
+        The EnerGuide label is mandatory for appliance sold in Canada, which also
+        uses the U.S. EPA's Energy Star certification (yay, international cooperation!).
+        The EnerGuide label shows a range of estimated yearly energy \emph{consumption}.}
         \label{fig:energy_star}
 \end{figure}
 
