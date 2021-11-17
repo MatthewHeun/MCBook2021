@@ -213,6 +213,7 @@ with onsite or offsite renewable energy production.
 
 
 \begin{figure}
+\captionsetup[subfigure]{justification=centering}
      \centering
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
@@ -262,6 +263,7 @@ can reduce energy and resource requirements per person.
 %++++++++++++++++++++++++++++++
 
 \begin{figure}
+\captionsetup[subfigure]{justification=centering}
      \centering
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
@@ -317,6 +319,7 @@ local purchasing can be pursued.
 %++++++++++++++++++++++++++++++
 
 \begin{figure}
+\captionsetup[subfigure]{justification=centering}
      \centering
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
@@ -344,19 +347,20 @@ local purchasing can be pursued.
 %++++++++++++++++++++++++++++++
 
 \begin{figure}
+\captionsetup[subfigure]{justification=centering}
      \centering
-     \begin{subfigure}[b]{0.48\textwidth}
-         \centering
-           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/fill_photo_portrait.jpeg}
-         \caption{Gutter diversion.}
-         \label{fig:gutter_diversion}
-     \end{subfigure}
-     \hfill
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/kentucky_bluegrass.jpeg}
          \caption{Kentucky bluegrass farming.}
          \label{fig:kentucky_bluegrass}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/GutterDiversion.jpeg}
+         \caption{Gutter diversion.}
+         \label{fig:gutter_diversion}
      \end{subfigure}
         \caption{Two ways to adorn lawns.}
         \label{fig:adorning_lawns}

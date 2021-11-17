@@ -297,22 +297,42 @@ to efficiently reduce emissions and encourage renewable energy adoption.
 %++++++++++++++++++++++++++++++
 
 \begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch11-Government/photos/Energy_Star.jpeg}
-\caption{An Energy Guide label showing the AFUE on a domestic furnace. 
-This furnace has the lowest legally allowed AFUE for its climate zone.
-The U.S. Federal Trade Commission (FTC) requires a standardized label on some categories
-of consumer products.
-Manufactures are required to test their products in accordance with U.S. Department
-of Energy standards and report their results to the FTC.
-The U.S. Environmental Protection Agency runs the Energy Star program.
-If a product qualifies for Energy Star, that is shown on its Energy Guide
-label as well. 
-In contrast to the Energy Guide labels, which are self-reported, since 2011, 
-Energy Star testing is performed by qualified, third-party laboratories.}
-% https://www.ftc.gov/tips-advice/business-center/guidance/energyguide-labeling-faqs-appliance-manufacturers
-% https://en.wikipedia.org/wiki/Energy_Star
-\label{fig:energy_star}
+\captionsetup[subfigure]{justification=centering}
+     \centering
+     \begin{subfigure}[b]{0.31\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/EnergyGuide.jpeg}
+         \caption{Energy guide.}
+         \label{fig:energy_guide}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.31\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/EnergyStar.jpeg}
+         \caption{Energy star.}
+         \label{fig:energy_star}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.31\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/EnerGuide.jpeg}
+         \caption{Energy star.}
+         \label{fig:energuide}
+     \end{subfigure}
+        \caption{An Energy Guide label showing the AFUE on a domestic furnace. 
+                 This furnace has the lowest legally allowed AFUE for its climate zone.
+                 The U.S. Federal Trade Commission (FTC) requires a standardized label on                  some categories
+                 of consumer products.
+                 Manufactures are required to test their products in accordance
+                 with U.S. Department of Energy standards and 
+                 report their results to the FTC.
+                 The U.S. Environmental Protection Agency runs the Energy Star program.
+                 If a product qualifies for Energy Star, that is shown on its Energy Guide
+                 label as well. 
+                 In contrast to the Energy Guide labels, 
+                 which are self-reported, since 2011, 
+                 Energy Star testing is performed by qualified, third-party laboratories.}
+        \label{fig:energy_star}
 \end{figure}
 
 There are many potential collective actions to move
@@ -349,6 +369,7 @@ materials, place, water, energy, health and happiness, equity, and beauty.
 %++++++++++++++++++++++++++++++
 
 \begin{figure}
+\captionsetup[subfigure]{justification=centering}
      \centering
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
@@ -359,7 +380,7 @@ materials, place, water, energy, health and happiness, equity, and beauty.
      \hfill
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/fill_photo_portrait.jpeg}
+           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/BusTerminal.jpeg}
          \caption{Bus depot.}
          \label{fig:bus_depot}
      \end{subfigure}
@@ -458,6 +479,7 @@ Figure~\ref{fig:E85} shows a commercially available biofuel blend with low EROI.
 %++++++++++++++++++++++++++++++
 
 \begin{figure}
+\captionsetup[subfigure]{justification=centering}
      \centering
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
