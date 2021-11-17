@@ -299,7 +299,19 @@ to efficiently reduce emissions and encourage renewable energy adoption.
 \begin{figure}
 \centering
 \includegraphics[width=\figwidth]{chapters/ch11-Government/photos/Energy_Star.jpeg}
-\caption{Energy star label on a furnace.}
+\caption{An Energy Guide label showing the AFUE on a domestic furnace. 
+This furnace has the lowest legally allowed AFUE for its climate zone.
+The U.S. Federal Trade Commission (FTC) requires a standardized label on some categories
+of consumer products.
+Manufactures are required to test their products in accordance with U.S. Department
+of Energy standards and report their results to the FTC.
+The U.S. Environmental Protection Agency runs the Energy Star program.
+If a product qualifies for Energy Star, that is shown on its Energy Guide
+label as well. 
+In contrast to the Energy Guide labels, which are self-reported, since 2011, 
+Energy Star testing is performed by qualified, third-party laboratories.}
+% https://www.ftc.gov/tips-advice/business-center/guidance/energyguide-labeling-faqs-appliance-manufacturers
+% https://en.wikipedia.org/wiki/Energy_Star
 \label{fig:energy_star}
 \end{figure}
 
@@ -323,9 +335,9 @@ The AASHE (Association for the Advancement of Sustainability in Higher Education
 STARS (Sustainability Tracking, Assessment, and Reporting System)
 program incentivizes colleges and universities to educate around sustainability
 and to operate more sustainably.  
-The energy star program encourages manufacturers to design and manufacture
+The Energy Star program encourages manufacturers to design and manufacture
 higher-efficiency appliances for homes and offices.
-(Figure~\ref{fig:energy_star} shows an energy star label on a furnace.)
+(Figure~\ref{fig:energy_star} shows an Energy Guide label on a furnace.)
 The living building challenge motivates builders and designers to use buildings 
 to make positive contributions to the environment, focusing on several key areas:
 materials, place, water, energy, health and happiness, equity, and beauty.
@@ -357,7 +369,8 @@ materials, place, water, energy, health and happiness, equity, and beauty.
                  In contrast, the bus depot has more passengers 
                  in high-occupancy vehicles, 
                  an efficiency gain, even if the buses in the photo
-                 emit CO$_2$.}
+                 emit CO$_2$. 
+                 Note that efficiency for all vehicles increases with more passengers.}
         \label{fig:collective_transport_photos}
 \end{figure}
 
@@ -418,12 +431,12 @@ for sustainable outcomes.
 \label{fig:E85}
 \end{figure}
 
-This Section (?) discusses collective actions that can be taken at the systematic
-level to improve the sustainability of food and agriculture.
+This Section discusses collective actions that can be taken 
+to improve the sustainability of food and agriculture.
 Measures taken grid-wide to provide carbon-free energy will benefit agriculture
 along with all other sectors of the economy.
 Education, for example through organizations like the 4H and local conservation districts,
-can be used to disseminate to farmers knowledge about best practices in farming ecologically.
+can be used to disseminate knowledge to farmers about best practices in farming ecologically.
 Strengthening environmental regulations will help prevent run off and a host of 
 other environmental problems that may only be adjacently related to agriculture.
 For instance, banning synthetic fibers in clothes to prevent microplastic pollution
@@ -431,11 +444,12 @@ would greatly spur farming of natural fibers.
 Multinational and multilateral trade agreements can help ensure environmental
 problems aren't ``off shored'' and that local farmers aren't put at a competitive
 disadvantage because of cheap imports that don't face the same restrictions at home.
-Labeling agreements should be reached to standardize terminology and reporting on
-food labels: terms like ``organic,'' ``natural,'' ``free range,'' and ``grass fed.''
+Food labels should have standardized and defined terminology.
+For example, terms like ``organic,'' ``natural,'' ``free range,'' and ``grass fed''
+are not currently well defined or standardized in the U.S.
 Lastly, farm subsidies should be eliminated or reformed to stop wasting energy on
-biofuels with a very low EROI (see Table~\ref{tab:eroi}). Figure~\ref{fig:E85} shows
-a commercially available biofuel blend with low EROI.
+biofuels with a very low EROI (see Table~\ref{tab:eroi}). 
+Figure~\ref{fig:E85} shows a commercially available biofuel blend with low EROI.
 
 
 %++++++++++++++++++++++++++++++
@@ -462,12 +476,41 @@ a commercially available biofuel blend with low EROI.
         \label{fig:urban_suburban_densities}
 \end{figure}
 
+% How can education/training help? 
+% How can legal structures help? 
+% How can standards/information help?
+Governments setting aside land as parks and nature preserves helps to maintain
+ecosystem services.
+Private organizations, like the Audubon Society, Trout Unlimited, and the Land 
+Conservancy, also contribute to conservation.
+Zoning laws and environmental impact assessments before construction can help 
+preserve valuable biomes.
+For instance, Figure~\ref{fig:CarbonStorage} shows that wetlands are very efficient
+at storing carbon but that we have relatively little of them left.
+Government and private organizations should conduct more research to guide
+landowners and policy makers through the sparing/sharing dichotomy with respect
+to many different types of wildlife.
+Landowners can be paid to use land in a way that stores carbon, such as afforestation.
+Perhaps that is through a carbon-trading market, or perhaps it is through direct
+subsidies.
 
+Urban planning combines elements of housing and transportation. 
+For an efficient city, high population density is desirable. 
+The first impediment to high population density in most North American cities
+is extensive single-family zoning. 
+Accessory Dwelling Units (ADUs) are typically one first step toward relaxed zoning
+standards.
+How the rent from such structures is taxed and what construction standards are 
+enforced does a lot to influence ADU feasibility. 
 
+Creating a walkable, bike-friendly city like Amsterdam is a decades long project.
+Governments and nonprofits have to sustain priorities for transportation change for a long time.
+More regional planning is needed to integrate infrastructure plans among local 
+municipalities.
 
-
-
-
+Lastly, developments have to pay enough in taxes to maintain their own infrastructure.
+Figure~\ref{fig:urban_suburban_densities} shows two example urban retail spaces.
+The one on the left pays more taxes per acre than the one on the right.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
