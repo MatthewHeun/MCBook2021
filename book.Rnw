@@ -54,6 +54,7 @@
 % for more details.
 % ---MKH, 16 Nov 2021. 
 \definecolor{fgcolor}{rgb}{255,0,0}
+\definecolor{errorcolor}{rgb}{255,0,0}
 
 % 
 % Begin R and knitr setup

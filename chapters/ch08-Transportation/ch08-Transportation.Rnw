@@ -277,7 +277,7 @@ which led to a decline total CO$_2$ emissions,
 even as delivery of transportation services rose through the 2000s (Figure~\ref{fig:TSI}).
 
 
-<<transport_GHG_emissions, fig.cap="CO$_2$ emissions from U.S.\\ transportation. ``Maritime'' is ships and boats. ``Small trucks'' are light-duty trucks. ``Large trucks'' are medium- and heavy-duty trucks. \\emph{Source}: **** Get source from Anjana. ****">>=
+<<transport_GHG_emissions, fig.cap="CO$_2$ emissions from U.S.\\ transportation. ``Maritime'' is ships and boats. ``Small trucks'' are light-duty trucks. ``Large trucks'' are medium- and heavy-duty trucks. \\emph{Source}: \\citet{USEPA:2021uj}.">>=
 transport_GHG <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "CO2_emissions_transport.xlsx"),
                                     sheet = "data to plot") %>% 
   dplyr::rename(
