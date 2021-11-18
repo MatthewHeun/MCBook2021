@@ -309,21 +309,21 @@ to efficiently reduce emissions and encourage renewable energy adoption.
      \begin{subfigure}[b]{0.31\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/EnergyGuide.jpeg}
-         \caption{Energy guide.}
+         \caption{furnace Energy Guide.}
          \label{fig:energy_guide}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.31\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/EnergyStar.jpeg}
-         \caption{Energy star.}
+         \caption{Energy Star freezer Energy Guide.}
          \label{fig:energy_star}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.31\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/EnerGuide.jpeg}
-         \caption{Energy star.}
+         \caption{EnerGuide for freezer.}
          \label{fig:energuide}
      \end{subfigure}
         \caption{Consumer-oriented labels for home appliances. 
