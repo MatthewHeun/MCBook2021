@@ -316,14 +316,14 @@ to efficiently reduce emissions and encourage renewable energy adoption.
      \begin{subfigure}[b]{0.31\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/EnergyStar.jpeg}
-         \caption{Energy Star freezer Energy Guide.}
+         \caption{freezer Energy Guide.}
          \label{fig:energy_star}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.31\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/EnerGuide.jpeg}
-         \caption{EnerGuide for freezer.}
+         \caption{freezer EnerGuide.}
          \label{fig:energuide}
      \end{subfigure}
         \caption{Consumer-oriented labels for home appliances. 
@@ -348,7 +348,7 @@ to efficiently reduce emissions and encourage renewable energy adoption.
         The EnerGuide label is mandatory for appliances sold in Canada, which also
         uses the U.S. EPA's Energy Star certification (yay, international cooperation!).
         The EnerGuide label shows a range of estimated yearly energy \emph{consumption}.}
-        \label{fig:energy_star}
+        \label{fig:energy_star_total}
 \end{figure}
 
 There are many potential collective actions to move
@@ -418,7 +418,7 @@ materials, place, water, energy, health and happiness, equity, and beauty.
 The Energy Star program encourages manufacturers to design and manufacture
 higher-efficiency appliances for homes and offices.
 
-Figure~\ref{fig:energy_star} shows three different energy labels for two home 
+Figure~\ref{fig:energy_star_total} shows three different energy labels for two home 
 appliances, a furnace and a chest freezer.
 Each label reports energy use in a different way: in (a) it is \emph{efficiency},
 in (b) it's \emph{cost}, and in (c) it's the \emph{amount} of energy used.
@@ -726,7 +726,7 @@ The one on the left pays more taxes per acre than the one on the right.
       OK, (finally) here's the question: what will it take, in terms of education, advertising,
       and/or propaganda, for carbon offset donations to be as 
       commonplace and widely expected/accepted 
-      (\href{https://en.wiktionary.org/wiki/de_rigueur}{\emph{de rigueur}) 
+      (\href{https://en.wiktionary.org/wiki/de_rigueur}{\emph{de rigueur}}) 
       as tipping in a restaurant?
       Do you currently feel any \href{https://en.wiktionary.org/wiki/compunction}
       {compunction} to offset your carbon emissions when you fly? 
@@ -739,16 +739,54 @@ The one on the left pays more taxes per acre than the one on the right.
       less than one gallon in volume.
       (Of U.S. states with container deposit laws, only Oregon matches Michigan's
       10-cent deposit; their rate increased to 10 cents from 5 cents in 2017.)
-      In part because of the high deposit, Michigan's bottles are cans have a very
+      In part because of the high deposit, Michigan's bottles and cans have a very
       high redemption rate (about 90\%, % https://www.bottlebill.org/index.php/current-and-proposed-laws/usa/michigan
       which is well in excess of many other states). 
       Adjusting for inflation, the 1976 10-cent deposit would be about 50 cents
       in current dollars. 
       Should the deposit be increased to 50 cents? Why or why not? 
-      Should the program be expanded to other beverage containers (say bottled water, for instance)?
+      Should the program be expanded to other beverage containers (for instance, bottled water)?
       Should other states (or municipalities!) adopt ``bottle bills?''
       
+\item The expansion of PACE financing into the residential market has created
+      opportunities for abuse and misuse. 
+      One category of abuse is predatory lending-like practices such as signing up old or infirm 
+      people for loans they don't need and/or can't understand.
+      Another kind of misuse is not getting a ``before'' energy audit or performing work under 
+      PACE financing that won't provide an energy payback, like a kitchen renovation.
+      Should there be attempts to fix these problems?
+      If so, who leads the charge and what is the remedy?
       
+\item Businesses are an important part of an alternative transportation infrastructure.
+      It's difficult to commute by bicycle, for instance, if you can't buy a bike
+      or biking accessories or get your bike repaired anywhere.
+      Laws are also part of infrastructure.
+      Discuss some of the nonphysical infrastructure missing from today's transportation
+      landscape. 
+      Consider at least laws governing autonomous vehicles, whether stiffer penalties
+      to drivers would make cyclists safer on roads, and the rise of e-bikes.
+      What else is there?
+      
+\item Some states adopt ``right to farm'' laws in response to urban development 
+      encroaching on existing farmland. 
+      The idea is that you can't build a house next to my farm and then sue me
+      when you don't like the smell of goats.
+      At the other end of the spectrum are horror stories of over-zealous homeowners
+      associations police (and prosecute) real or perceived violations of suburban
+      lawn-care norms.
+      Should there be a right to ... garden? 
+      Can I have chickens and goats in my yard? Under what circumstances?
+      Or, do zoning laws have their place? 
+      At what point should a garden be considered a farm?
+
+\item Consider the case of a guy who was operating a commercial bakery in his 
+      suburban garage. 
+      He didn't have a business permit and his neighborhood wasn't zoned for 
+      business.  
+      His neighbor(s) complained to city officials about all the delivery traffic
+      on the street.
+      Consequently the bakery was shut down.
+      What are the pros and cons in this case?
             
 \end{questions}
 
