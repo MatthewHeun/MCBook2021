@@ -367,15 +367,15 @@ in homes, offices, and industrial settings.
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Imagine a commercial real-estate developer buys a 100-year old factory building 
-with the intention of turning it into offices or condominiums. 
+with the intention of converting it to offices or condominiums. 
 The building's energy efficiency is very poor and a significant investment is 
 needed to make the building energy efficient and comfortable. 
 The developer could take out a large loan to pay for lots of insulation and
 a high-efficiency boiler.
 Over the long term, insulation and an efficient boiler make clear economic sense.
 The energy savings will pay for the insulation and the boiler in only a few years.
-However, the developer doesn't have a few years. 
-They want to sell in a few months.
+However, the developer doesn't have a few years;
+they want to sell in a few months.
 The new owners may not be able to buy the property \emph{and} pay the additional 
 cost of the insulation and boiler upgrade.
 In addition, the developer has little incentive to pay top dollar for a deep energy 
@@ -386,7 +386,7 @@ The future owners would like to have the best insulation and the most efficient
 boiler.
 The developer wants as little investment as possible to be able to resell the property.
 
-\textbf{PACE financing} is designed to allow energy-efficiency improvements to be paid for
+\textbf{PACE financing} allows energy-efficiency improvements to be paid for
 by the energy savings themselves. 
 The loan for the deep energy retrofit becomes a lien on the
 property itself and is repaid in the form of additional property taxes.
@@ -449,7 +449,7 @@ for improvement.
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/BusTerminal.jpeg}
-         \caption{Bus depot.}
+         \caption{Bus depot. **** Need own photo. ****}
          \label{fig:bus_depot}
      \end{subfigure}
         \caption{Differences in roadway densities. 
@@ -559,8 +559,8 @@ Figure~\ref{fig:E85} shows a commercially available biofuel blend with low EROI.
      \hfill
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/fill_photo_portrait.jpeg}
-         \caption{Suburban grocery store.}
+           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/SuburbanGroceryStore.jpeg}
+         \caption{Suburban grocery store. **** Need photo.}
          \label{fig:suburban_grocery_store}
      \end{subfigure}
         \caption{Comparison of land use densities.}
