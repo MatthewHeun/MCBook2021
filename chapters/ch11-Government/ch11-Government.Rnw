@@ -337,7 +337,8 @@ to efficiently reduce emissions and encourage renewable energy adoption.
         (b) An Energy Guide label for a chest freezer. The label shows a range of
         expected \emph{cost} of yearly operation and estimated yearly electricity 
         use. The range (\$35 to \$39) is small because there aren't many ``similar
-        models'' to compare to, that is around 12.9 cubic feet is an uncommon size.
+        models'' to compare to, that is, 12.9 cubic feet is an uncommon size for 
+        a chest freezer.
         Because this model is efficient \emph{for its category}, it qualifies for 
         Energy Star certification (indicated at the lower right).
         The U.S. Environmental Protection Agency runs the Energy Star program.
@@ -345,7 +346,7 @@ to efficiently reduce emissions and encourage renewable energy adoption.
         Energy Star testing is performed by qualified, third-party laboratories.
         (c) An EnerGuide label for the same chest freezer as in (b), in fact, it 
         is the reverse of the same piece of paper.
-        The EnerGuide label is mandatory for appliance sold in Canada, which also
+        The EnerGuide label is mandatory for appliances sold in Canada, which also
         uses the U.S. EPA's Energy Star certification (yay, international cooperation!).
         The EnerGuide label shows a range of estimated yearly energy \emph{consumption}.}
         \label{fig:energy_star}
@@ -363,6 +364,47 @@ PACE (property-assessed clean energy) financing can be utilized
 to encourage investment in renewable energy or energy efficiency 
 in homes, offices, and industrial settings.
 
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Imagine a commercial real-estate developer buys a 100-year old factory building 
+with the intention of turning it into offices or condominiums. 
+The building's energy efficiency is very poor and a significant investment is 
+needed to make the building energy efficient and comfortable. 
+The developer could take out a large loan to pay for lots of insulation and
+a high-efficiency boiler.
+Over the long term, insulation and an efficient boiler make clear economic sense.
+The energy savings will pay for the insulation and the boiler in only a few years.
+However, the developer doesn't have a few years. 
+They want to sell in a few months.
+The new owners may not be able to buy the property \emph{and} pay the additional 
+cost of the insulation and boiler upgrade.
+In addition, the developer has little incentive to pay top dollar for a deep energy 
+retrofit. 
+After all, it's the future owners, not the developer, that will reap the ongoing 
+benefits of energy efficiency.
+The future owners would like to have the best insulation and the most efficient 
+boiler.
+The developer wants as little investment as possible to be able to resell the property.
+
+\textbf{PACE financing} is designed to allow energy-efficiency improvements to be paid for
+by the energy savings themselves. 
+The loan for the deep energy retrofit becomes a lien on the
+property itself and is repaid in the form of additional property taxes.
+For future owners, higher property taxes or higher energy bills are equivalent.
+Might as well have the higher taxes and enjoy a less drafty, more energy efficient
+building.
+
+Be warned: lots of shady things have happened with PACE financing in residential
+settings. 
+Know and understand the terms. 
+Do your title searches carefully. 
+Know what you're signing up for. 
+Even if the energy savings the salesperson promised you never materialize,
+you still could lose your house. 
+\href{https://en.wiktionary.org/wiki/caveat_emptor}{\emph{Caveat emptor}}.
+\end{mcframe}
+
 Collective actions can be encouraged by certifications bestowed by
 organizations and rating agencies.
 LEED (Leadership in Energy and Environmental Design) certification
@@ -377,7 +419,7 @@ materials, place, water, energy, health and happiness, equity, and beauty.
 The Energy Star program encourages manufacturers to design and manufacture
 higher-efficiency appliances for homes and offices.
 
-(Figure~\ref{fig:energy_star} shows three different energy labels for two home 
+Figure~\ref{fig:energy_star} shows three different energy labels for two home 
 appliances, a furnace and a chest freezer.
 Each label reports energy use in a different way: in (a) it is \emph{efficiency},
 in (b) it's \emph{cost}, and in (c) it's the \emph{amount} of energy used.
@@ -386,10 +428,9 @@ In (b) and (c) to the left is good (efficient).
 (b) and (c) are for the same freezer but, most likely because Canada and the U.S.
 define different categories, in (b) the freezer is best-in-class and in (c) it is
 middle-of-the-road.
-Clearly, if the point of the labels is to be clear and easy to understand, there
-is room for improvement.
-
-
+If the point of the labels is to be clear and easy to understand so that 
+consumers can make wise choices about energy efficiency, clearly, there is room 
+for improvement.
 
 %++++++++++++++++++++++++++++++
 \subsection{Transportation}
@@ -419,7 +460,8 @@ is room for improvement.
                  in high-occupancy vehicles, 
                  an efficiency gain, even if the buses in the photo
                  emit CO$_2$. 
-                 Note that efficiency for all vehicles increases with more passengers.}
+                 Note that efficiency (in passenger-km) 
+                 for all vehicles increases with more passengers.}
         \label{fig:collective_transport_photos}
 \end{figure}
 
@@ -565,6 +607,7 @@ The one on the left pays more taxes per acre than the one on the right.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
