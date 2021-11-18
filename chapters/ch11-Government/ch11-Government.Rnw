@@ -197,17 +197,16 @@ about the relative carbon intensity of goods~\citep{Zhao_2012}.
 
 Equation~\ref{eq:IPARC} shows that
 rising resource intensity of the economy ($R$)
-would drive environmental impacts ($I$).
+would drive environmental impacts ($I$) upward.
 However, Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that the 
 world's economy has been reducing its resource (energy) intensity over time.
 Of the four $PARC$ terms, resource intensity of the economy ($R$) 
-is the only term moving in a sustainable direction over the long-term
-(see Equation \ref{eq:IPARC_rate_with_numbers}).
+is the only term moving in a sustainable direction over the long-term.
+(See Equation \ref{eq:IPARC_rate_with_numbers}.)
 To reduce environmental impacts, 
 economies need to use even fewer resources 
 and emit less pollution per dollar of GDP.
 
-% Matt, check the following two paragraphs.
 Policies that encourage industrial energy efficiency 
 will reduce the energy required to generate a dollar of GDP
 at the location of the energy use.
@@ -216,20 +215,20 @@ counteract energy efficiency measures.
 If the cost savings associated with a specific energy efficiency intervention
 are reinvested for growth (as most businesses do), 
 the resulting increase in energy consumption from the expanded business
-can reduce (or in the case of backfire) eliminate the local energy consumption 
+can reduce (or in the case of backfire) eliminate the local energy savings
 caused by the energy efficiency measure. 
-The net result reduces total energy savings across the economy and, in some cases,
-actually \emph{increases} total energy consumption.
+The net result is reduced total energy savings across the economy and, in the case of backfire,
+\emph{increased} total energy consumption.
 
 To reduce rebound or backfire, 
-businesses can develop green revolving funds,
+schools and businesses can implement green revolving funds,
 wherein cost savings from energy efficiency are used exclusively 
 for additional energy efficiency.
 By cutting off rebound, 
 green revolving funds can render energy efficiency \emph{more} effective
 rather than ineffective.
 At a larger scale, governments can develop green revolving funds
-from which businesses and individuals perform energy efficiency upgrades
+to provide resources for businesses and individuals to perform energy efficiency upgrades
 and to which proceeds of those upgrades are paid.  
 
 Introducing policies to make resources more expensive will 
