@@ -1,0 +1,410 @@
+% The next command tells RStudio to do "Compile PDF" on book.Rnw,
+% instead of this chapter, thereby eliminating the need to switch back to book.Rnw 
+% before making the book.
+%!TEX root = ../../book.Rnw
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Personal action}
+\label{chap:personal_action}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\epigraph{People don’t spring into action just because they see smoke; 
+they spring into action because they see others rushing in with water.}
+{Leor Hackel and Gregg Sparkman} % on Slate.com Oct. 26, 2018.
+
+This is the second of two chapters on actions to encourage sustainable 
+living for individuals and society.
+This chapter is a companion to 
+Chapter~\ref{chap:government},
+which focused on ways government and large organizations can 
+change the ``rules of the game.''
+In contrast, 
+this chapter (\ref{chap:personal_action}) focuses on individual actions
+that can be taken 
+within existing systems, structures, and political environments.
+
+This chapter answers the question 
+``what can I do today to live a more sustainable life?''
+Again, like Chapter~\ref{chap:government}, 
+there are many ways that individuals can take action
+to become more sustainable. 
+This chapter opens with stories of individuals strving to live
+more sustainbale lives. 
+Thereafter, the chapter is structured similarly 
+to Chapter~\ref{chap:government}
+with lists actions, organized first by
+the $PARC$ terms (Chapters~\ref{chap:population}--\ref{chap:carbon_intensity})
+of the IPARC equation (Equation~\ref{eq:IPARC})
+and second by 
+areas of life in which sustainability issues and choices emerge:
+households, transportation, agriculture, and land use/urban planning 
+(Chapters~\ref{chap:households}--\ref{chap:agriculture}).
+The lists of possible personal actions are provided
+mostly without comment.  
+Readers are encouraged to explore the suggested actions that fit their
+local situation, 
+always keeping in mind the global perspective provided 
+by Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity}.
+Questions and problems at the end of the chapter assist 
+the exploration process.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Stories of individual actions}
+\label{sec:stories_individual_actions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+**** Need to fill this section. ****
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{PARC terms}
+\label{sec:personal_parc_terms}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%++++++++++++++++++++++++++++++
+\subsection{Population}
+\label{sec:personal_population}
+%++++++++++++++++++++++++++++++
+
+As discussed in Section~\ref{sec:collective_population},
+rising population ($P$) is a driver for environmental impacts ($I$). 
+To live a more sustainable life, individuals can consider actions
+to reduce or limit population growth. 
+Young adults can carefully consider family size
+in the context of planetary limits and boundaries.
+Young families can consider adoption as 
+an alternative way to grow a family, and
+adoption can be encouraged by making it less expensive.
+Not everyone can or will choose these routes for their families, but
+if many do, population growth may be slowed.
+
+A deeper commitment to population reduction can be explored
+through monastic life or Christian celibacy, 
+satisfying the desire for family life in an alternative way.
+Individuals can sponsor the education of another child to, perhaps,
+lead to smaller family sizes in the next generation.
+Individuals can support governmental and non-governmental organizations
+advocating for family planning.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Affluence}
+\label{sec:personal_affluence}
+%++++++++++++++++++++++++++++++
+
+Section~\ref{sec:collective_affluence} notes that
+rising affluence ($A$)
+drives larger environmental impacts ($I$).
+It is important to note that every
+dollar spent in an economy implies energy and material consumption.
+Every dollar spent requires energy to make, use, and dispose of devices, 
+machines, and goods.
+Every dollar spent requires raw materials to be extracted from nature
+and, eventually, returned to nature as waste.
+A growing economy serves to increase the energy and material
+implications of our economic lives.
+Awareness of the linkages among economic spending, energy consumption, and 
+material extraction
+leads to several recommended personal actions.
+
+Individuals can either produce less or consume less.
+Producing less means having less of an income. 
+To live intentionally off a lower income,
+high-earning individuals can pursue a 
+``financial independence, retire early'' (FIRE) strategy
+across their life. 
+FIRE-y individuals earn ``enough'' in their early career
+(say, age 20--35) to ``retire'' at 35.
+Individuals spend little productive time in their career
+during which they strive for a a high savings rate.
+Thereafter, they live frugally.
+
+To consume in a non-resource-intensive manner, 
+individuals can spend money on low-carbon-intensity goods and services.
+Tracking personal carbon emissions is easy
+via any number of online carbon calculators~\cite{Padgett:2008ws}.
+Resources such as \emph{How bad are bananas?} \cite{Berners-Lee:2011}
+provide helpful guides for purchasing decisions.
+Additionally,
+individuals can purchase things that take money out of the economy
+to slow down economic growth.
+For example, one could buy forest land and choose to
+spend no additional money for its development.
+Doing so will preserve the land and slow economic growth
+buy taking money out of the economy.
+Individuals can (usually easily) choose 
+not to be billionaires~\citep{Wilk:2021vg}!
+On a per-person basis,
+yachts, mansions, and private jets contribute significant CO$_2$ emissions
+both when in use and when on standby.
+Finally, individuals can adopt a de-growth mindset.
+In short, we can all strive to live
+simpler lives
+in smaller spaces
+with less stuff.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Resource intensity of the economy}
+\label{sec:personal_resources}
+%++++++++++++++++++++++++++++++
+
+Section~\ref{sec:collective_resources} notes that
+declining resource intensity ($R$)
+reduces environmental impacts ($I$).
+There are many ways individuals can reduce their personal resource intensity.
+Few appliances are cost-effective to fix, but 
+individuals can repair them anyway to
+reduce the resource consumption.
+(It usually takes fewer resources to repair an appliance than 
+to make a new appliance.)  
+Individuals can aggressively recycle all manner of goods, 
+going so far as to disassemble items and recycle
+all possible components.
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Being frugal is often the most environmentally friendly thing you can do.
+\end{mcframe}
+
+Individuals can advocate for personal or institutional energy audits
+to find energy efficiency and energy savings
+opportunities at home, work, school, or church.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Contamination intensity of resources}
+\label{sec:personal_contamination_intensity}
+%++++++++++++++++++++++++++++++
+
+Section~\ref{sec:collective_resources} notes that
+rising contamination intensity of resources ($C$)
+leads to increased environmental impacts ($I$).
+Thankfully, there are many ways individuals can reduce contamination
+intensity of resources, particularly for the prime example of this book
+(energy and CO$_2$ emissions).
+Individuals can install \emph{renewable} energy generation systems
+(typically, solar PV, solar heating, or wind) 
+to reduce fossil energy consumption
+and limit CO$_2$ emissions. 
+Alternatively, individuals can choose to pay a premium for guaranteed 
+renewable electricity from the grid.  
+Finally, pursuit of \emph{net zero} energy status can encourage
+homeowners to balance energy consumption 
+with onsite or offsite renewable energy production.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Sustainability challenge areas}
+\label{sec:personal_sustainability_challenge_areas}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Single photos should be 16:9.
+% Comparison photos should be square.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Housing}
+\label{sec:personal_housing}
+%++++++++++++++++++++++++++++++
+
+
+\begin{figure}
+\captionsetup[subfigure]{justification=centering}
+     \centering
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/energy_efficient_home_interior.jpeg}
+         \caption{Basement interior.}
+         \label{fig:energy_efficient_home_exterior}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/energy_efficient_home_exterior.jpeg}
+         \caption{Basement exterior.}
+         \label{fig:basement_exterior}
+     \end{subfigure}
+      \caption{Energy-efficient home with insulated basement.}
+      \label{fig:energy_efficient_home}
+\end{figure}
+
+There are many things that individuals can do to make their lives more sustainable 
+in homes and apartments, 
+both in deciding which homes or apartments to buy or rent
+and how they are operated.
+Choosing a \emph{used} home or apartment
+will prevent additional carbon being embodied in the housing stock.
+Choosing a \emph{smaller} home will reduce carbon emissions 
+associated with heating and cooling.
+Choosing a home or apartment \emph{closer} to work, school, grocery stores, and church
+will reduce carbon emissions associated with daily and weekly commuting.
+
+In terms of home operation, 
+installing additional insulation can reduce energy for heating and cooling.
+(See Figure~\ref{fig:energy_efficient_home}.)
+Choosing \emph{efficient} (e.g., Energy Star)
+appliances and lights will improve energy efficiency, 
+reduce energy consumption, and 
+reduce CO$_2$ emissions so long as appliance and lighting usage is unchanged.
+Even better, choose \emph{not} to use some appliances, e.g., 
+line drying clothes.
+Choosing to live in \emph{high-occupancy} housing 
+(with extended family or in co-housing arrangements)
+can reduce energy and resource requirements per person.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Transportation}
+\label{sec:personal_transport}
+%++++++++++++++++++++++++++++++
+
+\begin{figure}
+\captionsetup[subfigure]{justification=centering}
+     \centering
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/Tesla.jpeg}
+         \caption{Telsa.}
+         \label{fig:tesla}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/Roger10-4.jpeg}
+         \caption{Commuting bicycle.}
+         \label{fig:commuting_bicycle}
+     \end{subfigure}
+        \caption{Two efficient commuting options.}
+        \label{fig:commuting_options}
+\end{figure}
+
+There are many things that individuals can do to make their lives more sustainable 
+in transport,
+both in deciding which vehicles to buy or rent
+and how they are operated.
+Choosing a \emph{used} vehicle
+will prevent additional carbon being embodied in the vehicle itself.
+Choosing a \emph{smaller} car will reduce carbon emissions 
+associated with commuting.
+Individuals should not ``over buy'' cars.
+(If a truck is needed once per year to pull a trailer, rent.)
+Choosing an electric vehicle will reduce CO$_2$ emissions
+in those places where grid electricity contains a large proportion of renewables.
+(See Section~\ref{sec:electric_vehicles} and Figure~\ref{fig:tesla}.)
+Don’t fly.
+
+Individuals can choose to live in a cities, which, on a per-person basis
+emit less CO$_2$ than suburban areas~\cite{Jones:2014tf}.
+Indeed, the most sustainable transportation is often public transportation
+where vehicle occupancy is high and everyone shares the carbon embodied in the
+buses, trains, trolleys, or subways. 
+Choosing to walk or bike (Figure~\ref{fig:commuting_bicycle}), 
+usually only possible in cities,
+further reduces CO$_2$ emissions. 
+City dwellers can choose to not buy a car at all, preferring
+on-demand rental vehicles from companies
+such as Uber, Lyft, or Zip Car
+when public transport will not meet their needs.
+To reduce transportation emissions from goods and service consumption, 
+local purchasing can be pursued.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Agriculture}
+\label{sec:personal_agriculture}
+%++++++++++++++++++++++++++++++
+
+\begin{figure}
+\captionsetup[subfigure]{justification=centering}
+     \centering
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/urban_farmers_market.jpeg}
+         \caption{Urban farmers market.}
+         \label{fig:urban_farmers_market}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/Meijer.jpeg}
+         \caption{Suburban produce aisle.}
+         \label{fig:suburban_produce_aisle}
+     \end{subfigure}
+        \caption{Two ways to buy groceries.}
+        \label{fig:food_purchasing_options}
+\end{figure}
+
+
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Land use}
+\label{sec:personal_land_use}
+%++++++++++++++++++++++++++++++
+
+\begin{figure}
+\captionsetup[subfigure]{justification=centering}
+     \centering
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/kentucky_bluegrass.jpeg}
+         \caption{Kentucky bluegrass farming.}
+         \label{fig:kentucky_bluegrass}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/GutterDiversion.jpeg}
+         \caption{Gutter diversion.}
+         \label{fig:gutter_diversion}
+     \end{subfigure}
+        \caption{Two ways to adorn lawns.}
+        \label{fig:adorning_lawns}
+\end{figure}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Further Reading}\index{further reading}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{See Also}\index{see also}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Questions}\index{questions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+
+\item Is the Graedel and Allenby sustainability criterion a good criterion?
+
+\end{questions}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Projects}\index{projects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{projects}
+
+\item Choose a material from the European Commission list of critical raw materials.
+      Evaluate whether current consumption rates meet the sustainability criterion of Graedel and Allenby.
+      Evaluate whether current consumption rates meet the strong sustainability criterion.
+      Provide suggestions for ways to bring consumption rates closer to strong sustainability.
+
+\end{projects}
+
+
+
+\cleardoublepage
+
