@@ -17,11 +17,13 @@ society and individuals can take to live more sustainably.
 Chapter \ref{chap:government} explores collective actions and 
 Chapter \ref{chap:personal_action} explores personal or individual actions.
 
-\paragraph{Collective} Actions for sustainability can be taken by individuals
+\section{Collectives}
+\label{sec:collectives}
+Actions for sustainability can be taken by individuals
 or by groups. 
 This chapter will consider several types of groups that might take actions for 
 sustainability.
-The first type of collective group has the power to make laws, rules, and policies.
+\paragraph{Governments} The first type of collective group has the power to make laws, rules, and policies.
 We call this type \emph{governments}.
 Governments are local, regional, national, and international.
 They can be focused on a specific area of responsibility, like a local zoning board
@@ -31,7 +33,7 @@ Cooperative agreements between governments also fall into this category.
 Examples include international treaties, the International Monetary Fund, and 
 cost-sharing agreements between state and federal agencies for road construction.
 
-The second type of collective is a \emph{business corporation}. 
+\paragraph{Corporations} The second type of collective is a \emph{business corporation}. 
 Examples of corporations include Volkswagen, Siemens Gamesa Renewable Energy,
 Saudi Arabian Oil Company, Maersk, and Best Buy.
 Characteristically, businesses are engaged in commercial activity, either making 
@@ -43,6 +45,7 @@ Often, charitable foundations are structured as business corporations.
 For example, the Bill and Melinda Gates Foundation is a charitable foundation
 with a corporate structure.
 
+\paragraph{Organizations} 
 The third type of collective we will consider in this chapter is what we will call
 an \emph{organization}.
 Example organizations include the American Society of Heating, Refrigerating and 
@@ -72,7 +75,8 @@ of collectives.
 Not all collectives are equally suited for or adept at the same tasks.
 \end{mcframe}
 
-\paragraph{Actions} 
+\section{Actions}
+\label{sec:sust_actions}
 Collective actions are taken because they are ``too big'' for an individual.
 Many times they require the cooperation of other people to be successful.
 This book will consider three types of collective actions:
@@ -85,6 +89,7 @@ The \emph{actions} listed above are not an exhaustive list of actions that indiv
 and collectives can take for sustainability but the list serves as a framework
 to guide our thinking about possible actions.
 
+\paragraph{Laws}
 Laws and regulations \href{https://en.wiktionary.org/wiki/affect}{affect}
 (and sometimes define and sometimes \href{https://en.wiktionary.org/wiki/effect#Verb}{effect})
 relationships among individuals, 
@@ -128,7 +133,8 @@ can be avoided without top-down regulation or privatization of the resource
 by prudent collaboration within strong societal structures. 
 \end{mcframe}
 
-\emph{Research} means both the creation of new knowledge and the invention or 
+\paragraph{Research} 
+Research means both the creation of new knowledge and the invention or 
 development of new technology.
 For instance, forest and wildlife managers may wish to know how climate change is
 changing the range of the mountain pine beetle, which affects whitebark pine and 
@@ -136,7 +142,8 @@ grizzly bear populations.
 Or, a company may develop better designs for electric motors, batteries, or 
 wind-turbine blades.
 
-\emph{Education} has the power to ``change hearts and minds.'' 
+\paragraph{Education}
+Education has the power to ``change hearts and minds.'' 
 Disseminating information about sustainability is a crucial step in achieving a
 sustainable society.
 
@@ -157,14 +164,18 @@ $\textrm{SUBJECT}$    & + & $\textrm{ACTION}$        & + & $\textrm{OBJECT,}$ %\
 % https://tex.stackexchange.com/questions/128050/add-equation-name-underneath-equation-number
 \end{equation}
 where the \emph{subject} of the sentence is who is doing the action. 
-In this chapter, the subject is one of the kinds of collectives. 
+In this chapter, the subject is one of the kinds of collectives defined in 
+Section~\ref{sec:collectives}. 
 In the next chapter, the subject is an individual.
-The \emph{action} is either a law, research, or education in the examples we present
-but there could be other actions.
+In the examples presented below,
+the \emph{action} is either a law, research, or education 
+(following Section~\ref{sec:sust_actions})
+but there are other possible actions.
 Lastly, the \emph{object} is what the actions are applied to.
-We use as example objects Chapters \ref{chap:population}-\ref{chap:land_use_urban_planning},
-although, like actions, there could be many others areas where actions for sustainability 
-could be taken as well.
+We use Chapters~\ref{chap:population}-\ref{chap:land_use_urban_planning} as examples
+of objects of sustainability actions.
+However, as with actions, there could be many others areas where actions for
+sustainability could be taken as well.
 
 This chapter begins to answer the question,
 ``how could we reconfigure the systems and structures in our societies
@@ -179,11 +190,6 @@ always keeping in mind the global perspective provided
 by Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity}.
 Questions and problems at the end of the chapter assist the exploration process.
 This chapter concludes with some collective action success stories 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{$PARC$ terms}
-\label{sec:collective_parc_terms}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %++++++++++++++++++++++++++++++
 \subsection{Population}
@@ -358,13 +364,6 @@ standards for ease of disassembly could be implemented.
 In terms of the prime example (energy and CO$_2$ emissions),
 government can establish greenhouse gas trading markets
 to efficiently reduce emissions and encourage renewable energy adoption.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sustainability challenge areas}
-\label{sec:collective_sustainability_challenge_areas}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 % Single photos should be 16:9.
 % Comparison photos should be square.
