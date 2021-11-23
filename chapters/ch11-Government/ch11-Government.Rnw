@@ -12,61 +12,106 @@
 % It's found in its budget.}{Brent Toderian}
 \epigraph{Show me the incentive and I will show you the outcome}{Charlie Munger}
 
-
 The final two chapters of this book discuss actions
 society and individuals can take to live more sustainably.
 Chapter \ref{chap:government} explores collective actions and 
 Chapter \ref{chap:personal_action} explores personal or individual actions.
-% Collective actions are taken because they're "too big" for an individual.
-% Actions (3) = Education/dissemination/"change hearts and minds", Research/Tech, Laws/rules/standards/"rules of the game."
-% Actors ($) = Individuals, Voluntary groups (prof. societies, NGOs, civic groups), Corporations, Governments.
-% z-axis?
-% Collective action success stories = Montreal protocol banning CFCs. Clean Water Act.
-Collective actions may involve changing the rules of the game 
-or providing widespread incentives
-to encourage self-interested individuals
-to become more sustainable.
-Or, collective actions can be a voluntary pooling of skills or resources.
-Collective actions can be taken by
-national governments, 
-international organizations (United Nations, World Bank, \ldots), and
-non-governmental organizations (Red Cross, Oxfam, \ldots).
-Individual actions are steps that can be taken by individuals and families
-to become more sustainable \emph{in spite of}
-trends or incentives in broader society
-that foster unsustainable practices or consumption.
 
-Of the three entities mentioned above 
-(governments, international organizations, and non-governmental organizations)
-governments set the laws and regulations that organize societies.
-They create the ``rules of the game.''
+\paragraph{Collective} Actions for sustainability can be taken by individuals
+or by groups. 
+This chapter will consider several types of groups that might take actions for 
+sustainability.
+The first type of collective group has the power to make laws, rules, and policies.
+We call this type \emph{governments}.
+Governments are local, regional, national, and international.
+They can be focused on a specific area of responsibility, like a local zoning board
+of the U.S. Environmental Protection Agency, or they can be general like a state or
+national legislature.
+Cooperative agreements between governments also fall into this category.
+Examples include international treaties, the International Monetary Fund, and 
+cost-sharing agreements between state and federal agencies for road construction.
+
+The second type of collective is a \emph{business corporation}. 
+Examples of corporations include Volkswagen, Siemens Gamesa Renewable Energy,
+Saudi Arabian Oil Company, Maersk, and Best Buy.
+Characteristically, businesses are engaged in commercial activity, either making 
+or selling a product or service.
+A business can be ``for profit,'' like Apple, Amazon, or Johnson and Johnson, or
+``not for profit,'' like the Educational Testing Service, Mayo Clinic, World 
+Vision International, or colleges and universities.
+Often, charitable foundations are structured as business corporations. 
+For example, the Bill and Melinda Gates Foundation is a charitable foundation
+with a corporate structure.
+
+The third type of collective we will consider in this chapter is what we will call
+an \emph{organization}.
+Example organizations include the American Society of Heating, Refrigerating and 
+Air-Conditioning Engineers (ASHRAE),  local churches, the Internet Society, political
+parties, environmental organizations, and community and civic groups.
+A distinguishing characteristic of organizations is \emph{voluntary association}.
+
+Collectives can sometimes straddle the boundaries between the above categories.
+For instance, the Federal National Mortgage Association (``Fannie Mae'') is part
+U.S. government, part business corporation.
+Many nonprofits consist of both business corporate structure and voluntary organization(s).
+For example, the Roman Catholic Church is an association of corporate entities, 
+including Catholic Relief Services, and organizations, including local churches.
+Another example is the National Audubon Society, is a company that is affiliated with
+nearly five hundred local, independent chapters.
+Lastly, the Internet Society mentioned above, is an organization that sets policy
+for high-level internet activities; thus it is an organization that is also
+quasi-governmental in nature.
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Despite some ``fuzziness'' in the definitions of the different types of collectives
+the categories are useful as a framework to help us think about the capabilities
+of collectives. Not all collectives are equally suited for or adept at the same tasks.
+\end{mcframe}
+
+\paragraph{Actions} 
+Collective actions are taken because they are ``too big'' for an individual.
+Many times they require the cooperation of other people to be successful.
+This book will consider three types of collective actions:
+\begin{itemize}
+\item Laws
+\item Research
+\item Education
+\end{itemize}
+The \emph{actions} listed above are not an exhaustive list of actions that individuals
+and collectives can take for sustainability but the above list serves as a framework
+to guide our thinking about possible actions.
+
 Laws and regulations \href{https://en.wiktionary.org/wiki/affect}{affect}
 (and sometimes define and sometimes \href{https://en.wiktionary.org/wiki/effect#Verb}{effect})
 relationships among individuals, 
 collectives (such as unions and religious organizations), corporations, 
 markets, and the natural world (plants, animals, inanimate things, energy resources, etc.).
+In some cases, laws and regulations define what cannot be done.  
+For example, some types of pollution, such as dumping oil in waterways, are prohibited.
+In other cases, laws and regulations define what must be done.
+For example, renewable energy portfolio standards mandate that a certain percentage 
+of electricity must come from renewables.
+In still other cases, governments pass laws and regulations to define how things must be done.
+For example, regulations can establish markets for carbon trading.
 Laws and regulations are not neutral; 
-they affect those relationships on many levels.
+they affect relationships on many levels.
 As such, laws and regulations can be seen as interventions in societal systems.
 Changes in those relationships have sustainability implications.
-In some cases, laws and regulations define what citizens and corporations cannot do.  
-(E.g., some types of pollution are regulated.)
-In other cases, laws and regulations define what must be done.
-(E.g., renewable energy portfolio standards mandate that a certain percentage 
-of electricity must come from renewables.)
-In still other cases, governments pass laws and regulations to define how things must be done.
-(E.g., regulations can establish markets for carbon trading.)
 
-The rules of the game are exceedingly important for the environment, because
-unintended environmental consequences often emerge from
+Changing the ``rules of the game'' can provide widespread incentives
+to encourage self-interested individuals to become more sustainable.
+Often the purpose of these regulations is to internalize externalities.
+The rules of the game are exceedingly important for the environment, 
+because unintended environmental consequences often emerge from
 financial incentives that accompany laws and regulations.
 In other words, the rules of the game change behavior.
 A classic example of unintended consequences is the 
 tragedy of the commons\index{tragedy of the commons}\index{commons!tragedy of the}.
 The tragedy of the commons describes situations where
 self-interested individuals consume more than their fair share of resources, 
-leading to reduced welfare for the group and,
-when the resource is ``natural,''
+leading to reduced welfare for the group and, when the resource is ``natural,''
 environmental collapse.
 When social constraints are missing and economic regulations are eliminated 
 (perhaps in pursuit of ``free market'' principles to stimulate economic growth), 
@@ -81,9 +126,19 @@ can be avoided without top-down regulation or privatization of the resource
 by prudent collaboration within strong societal structures. 
 \end{mcframe}
 
-The good news is that there are many 
-ways to shape the rules of the game to make 
-society as a whole more sustainable.  
+\emph{Research} means both the creation of new knowledge and the invention or 
+development of new technology.
+For instance, forest and wildlife managers may wish to know how climate change is
+changing the range of the mountain pine beetle, which affects whitebark pine and 
+grizzly bear populations.
+Or, a company may develop better designs for electric motors, batteries, or 
+wind-turbine blades.
+
+\emph{Education} has the power to ``change hearts and minds.'' 
+Disseminating information about sustainability is a crucial step in achieving a
+sustainable society.
+
+
 In the remainder of this chapter, we provide lists 
 of collective actions to make societies more sustainable,
 organized first by
@@ -107,6 +162,9 @@ You should explore options that fit your local situation,
 always keeping in mind the global perspective provided 
 by Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity}.
 Questions and problems at the end of the chapter assist the exploration process.
+
+% Actions (3) = Education/dissemination/"change hearts and minds", Research/Tech, Laws/rules/standards/"rules of the game."
+% Collective action success stories = Montreal protocol banning CFCs. Clean Water Act.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
