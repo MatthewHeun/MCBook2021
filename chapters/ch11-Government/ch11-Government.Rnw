@@ -48,15 +48,16 @@ an \emph{organization}.
 Example organizations include the American Society of Heating, Refrigerating and 
 Air-Conditioning Engineers (ASHRAE),  local churches, the Internet Society, political
 parties, environmental organizations, and community and civic groups.
-A distinguishing characteristic of organizations is \emph{voluntary association}.
+A distinguishing characteristic of organizations is \emph{voluntary association},
+which means that individual choose to join the organization.
 
-Collectives can sometimes straddle the boundaries between the above categories.
-For instance, the Federal National Mortgage Association (``Fannie Mae'') is part
-U.S. government, part business corporation.
+Collectives can sometimes straddle the boundaries between categories.
+For instance, the Federal National Mortgage Association (``Fannie Mae'') is a
+U.S. government sponsored business corporation.
 Many nonprofits consist of both business corporate structure and voluntary organization(s).
 For example, the Roman Catholic Church is an association of corporate entities, 
-including Catholic Relief Services, and organizations, including local churches.
-Another example is the National Audubon Society, is a company that is affiliated with
+such as Catholic Relief Services, and organizations, including local churches.
+Another example is the National Audubon Society, which is a company affiliated with
 nearly five hundred local, independent chapters.
 Lastly, the Internet Society mentioned above, is an organization that sets policy
 for high-level internet activities; thus it is an organization that is also
@@ -65,9 +66,10 @@ quasi-governmental in nature.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Despite some ``fuzziness'' in the definitions of the different types of collectives
+Despite some ``fuzziness'' in the different types of collectives,
 the categories are useful as a framework to help us think about the capabilities
-of collectives. Not all collectives are equally suited for or adept at the same tasks.
+of collectives. 
+Not all collectives are equally suited for or adept at the same tasks.
 \end{mcframe}
 
 \paragraph{Actions} 
@@ -80,7 +82,7 @@ This book will consider three types of collective actions:
 \item Education
 \end{itemize}
 The \emph{actions} listed above are not an exhaustive list of actions that individuals
-and collectives can take for sustainability but the above list serves as a framework
+and collectives can take for sustainability but the list serves as a framework
 to guide our thinking about possible actions.
 
 Laws and regulations \href{https://en.wiktionary.org/wiki/affect}{affect}
@@ -138,34 +140,45 @@ wind-turbine blades.
 Disseminating information about sustainability is a crucial step in achieving a
 sustainable society.
 
-
-In the remainder of this chapter, we provide lists 
-of collective actions to make societies more sustainable,
-organized first by
-the $PARC$ terms (Chapters~\ref{chap:population}--\ref{chap:carbon_intensity})
-of the IPARC equation (Equation~\ref{eq:IPARC})
-and second by 
-areas of life in which sustainability issues and choices emerge:
-households, transportation, agriculture, and land use/urban planning 
-(Chapters~\ref{chap:households}--\ref{chap:agriculture}).
+\section{Sentences for sustainability}
+In the remainder of this chapter, we provide examples of collective actions to 
+make societies more sustainable, organized around the idea of 
+``sentences for sustainability.''
+Each ``sentence'' has the form
+\begin{equation}
+\label{eq:Sent4Sust}
+\small
+\begin{tabular}{ccccc}
+$\textrm{SUBJECT}$    & + & $\textrm{ACTION}$        & + & $\textrm{OBJECT,}$ %\\
+\end{tabular}
+\normalsize
+% It would be nice to have a label for this equation.
+% And maybe IPARC too.
+% https://tex.stackexchange.com/questions/128050/add-equation-name-underneath-equation-number
+\end{equation}
+where the \emph{subject} of the sentence is who is doing the action. 
+In this chapter, the subject is one of the kinds of collectives. 
+In the next chapter, the subject is an individual.
+The \emph{action} is either a law, research, or education in the examples we present
+but there could be other actions.
+Lastly, the \emph{object} is what the actions are applied to.
+We use as example objects Chapters \ref{chap:population}-\ref{chap:land_use_urban_planning},
+although, like actions, there could be many others areas where actions for sustainability 
+could be taken as well.
 
 This chapter begins to answer the question,
 ``how could we reconfigure the systems and structures in our societies
 to encourage and promote a more sustainable world?''
-Each section below provides lists of possible collective actions, 
-mostly without comment. 
-The lists are self-consciously incomplete. 
+Each section below provides several possible sustainability sentences. 
+These examples are self-consciously non-exhaustive. 
 (How could the be otherwise?)
-The goal is to suggest collective actions that will be generative; these examples
-should help readers think of many other ideas.
+The goal is to be generative; 
+these examples should help readers think of many other ideas.
 You should explore options that fit your local situation, 
 always keeping in mind the global perspective provided 
 by Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity}.
 Questions and problems at the end of the chapter assist the exploration process.
-
-% Actions (3) = Education/dissemination/"change hearts and minds", Research/Tech, Laws/rules/standards/"rules of the game."
-% Collective action success stories = Montreal protocol banning CFCs. Clean Water Act.
-
+This chapter concludes with some collective action success stories 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{$PARC$ terms}
