@@ -390,13 +390,14 @@ is exactly equal to the area between $N$ and $N+0.693/r$ (B), for any $N$.}
 
 <<exp, fig.cap="Exponential growth. When $y$ grows exponentially with time $(t$) at rate $r$ (i.e., $y=e^{rt}$), the value of $y$ doubles every $0.693/r$ years. In this example, $r = 0.1$/year (10~\\%/year), and $y$ doubles every 6.93 years.">>=
 r <- 0.1 # 1/year
-exp_df <- data.frame(t = seq(0, 22, by = 0.01)) %>%
+exp_df <- data.frame(t = seq(0, 30, by = 0.01)) %>%
   dplyr::mutate(
     y = exp(r * t),
     fill = dplyr::case_when(
       t < 6.93 ~ "first",
       t >= 6.93 & t < 13.86 ~ "second",
-      t >= 13.86 & t <= 20.79 ~ "third",
+      t >= 13.86 & t < 20.79 ~ "third",
+      t >= 20.79 & t < 27.72 ~ "fourth",
       TRUE ~ NA_character_
     )
   )
@@ -408,7 +409,7 @@ ggplot2::ggplot(mapping = ggplot2::aes_string(x = "t", y = "y")) +
                                                      ymax = "y",
                                                      fill = "fill")) +
 
-  ggplot2::scale_x_continuous(breaks = c(0, 6.93, 13.86, 20.79)) +
+  ggplot2::scale_x_continuous(breaks = c(0, 6.93, 13.86, 20.79, 27.72)) +
   ggplot2::scale_y_continuous(limits = c(1, NA), breaks = c(1, 2, 4, 8)) +
   ggplot2::scale_fill_viridis_d(direction = -1, guide = "none", begin = 0, end = 1) +
 
