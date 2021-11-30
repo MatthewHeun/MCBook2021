@@ -395,7 +395,7 @@ Farming can (and has had) impacts on biodiversity and habitat loss.
 \centering
 \includegraphics[width=0.75\linewidth]{chapters/ch09-Agriculture/figures/Material_Flow_in_the_US_Food_System(1995_Flows_in_Million_Pounds).pdf}
 \caption[Material flow in the U.S.\ food system (1995, flows in million pounds.)]{Material flow in the U.S.\ food system (1995, flows in million pounds). \emph{Source}: \citet[Fig.~1]{Heller_2000}.}
-\label{fig:food_and_ag_material_flow}
+\label{fig:food_and_ag_material_flow_old}
 \end{figure}
 
 <<ag_sys_calcs, echo = FALSE>>=
@@ -410,6 +410,14 @@ animal_inputs <- 964000 # million pounds
 animal_products <- 51470 + 76280 + 7920 # million pounds
 animal_efficiency <- animal_products / animal_inputs * end_use_food_efficiency
 @
+
+
+<<fig:food_and_ag_material_flow>>=
+food_energy <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Energy Flow in the US Food System.xlsx"), 
+                                   sheet = "data to plot")
+  
+@
+
 
 Figure~\ref{fig:food_and_ag_material_flow} shows a Sankey diagram\index{Sankey diagram!agriculture}
 of material flows
