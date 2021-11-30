@@ -223,32 +223,52 @@ and in Figure~\ref{fig:PopulationGraph},
 rising population ($P$) is a driver for environmental impacts ($I$). 
 Slowing or reversing population growth would reduce environmental impacts,
 all other things being equal.
-State and local governments are the entity (SUBJECT) in the U.S.\
-and around the world with the responsibility for providing education (ACTION). 
-Providing general education to citizens (OBJECT), especially girls and women, 
+
+\begin{table}
+\footnotesize
+\centering
+\caption[toc caption]{Sustainability sentences for population.}
+\label{tab:sust_sent_pop}
+\begin{tabular}{r l l}
+\toprule
+Subject & Action & Object \\ 
+\midrule
+Governments & provide general education & to girls and women. \\
+Governments & provide family planning education & to girls and women. \\
+Governments & supply birth control technology & to citizens. \\
+Legislatures & pass laws & on various family planning matters. \\
+Lawmakers & write family friendly policies & such as maternity leave, etc. \\
+\bottomrule 
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:sust_sent_pop} shows example sustainability sentences
+for population.
+State and local governments are the entity in the U.S.\
+and around the world with the responsibility for providing education. 
+As such, education for family planning can be done by governments.
+Providing general education to citizens, especially girls and women, 
 is a seemingly effective way to reduce birthrates, slow population growth, and
 reduce family size.
-Governments (SUBJECT) can provide 
-specific education around family planning and birth control (ACTION) 
-to citizens (OBJECT), especially girls and women, 
+Governments can provide 
+specific education around family planning and birth control
+to citizens, especially girls and women, 
 to reduce population growth. 
-Governments (SUBJECT) can supply birth control technology (ACTION)
+Governments can supply birth control technology
 (oral contraceptives, symptom-thermal training, condoms, etc.)
-to citizens (OBJECT)
+to citizens
 to reduce population expansion.
-Legislatures (SUBJECT) can
-pass laws (ACTION)
+Legislatures can
+pass laws
 on number of children, incentives for having children, 
-tax breaks for raising children, or direct payments to children (OBJECTS) 
+tax breaks for raising children, or direct payments to children
 to affect the number of children per person,
 often with unintended consequences. 
-Lawmakers (SUBJECT) can also 
-write family friendly policies and programs (ACTION) such as 
+Lawmakers can also 
+write family friendly policies and programs such as 
 generous maternity leave, early childhood education and daycare, 
-health insurance, and subsidized college tuition (OBJECTS)
+health insurance, and subsidized college tuition
 to affect birth rates. 
-
-
 
 
 %++++++++++++++++++++++++++++++
