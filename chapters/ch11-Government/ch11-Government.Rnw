@@ -787,16 +787,39 @@ Figure~\ref{fig:E85} shows a commercially available biofuel blend with low EROI.
 \end{figure}
 
 
+%..............................
+\paragraph{Government/Organizations+Choice+Land use} 
+\label{sec:government_organizations+choice+land_use}
+%..............................
+
 Governments setting aside land as parks and nature preserves helps to maintain
-ecosystem services (Government + Choice + Land use).
+ecosystem services.
 Private organizations, like the Audubon Society, Trout Unlimited, and the Land 
 Conservancy, also contribute to conservation.
+
+
+%..............................
+\paragraph{Government+Law+Land use} 
+\label{sec:government+law+land_use}
+%..............................
+
 Zoning laws and environmental impact assessments before construction can help 
-preserve valuable biomes (Government + Law + Land use).
+preserve valuable biomes.
 For instance, Figure~\ref{fig:CarbonStorage} shows that wetlands are very efficient
 at storing carbon but that we have relatively little of them left.
 
-\paragraph{Government/Organization+Research+Land use}
+
+%..............................
+\paragraph{Government+Law+Land use} 
+\label{sec:government+law+land_use}
+%..............................
+
+
+%..............................
+\paragraph{Government/Organizations+Research+Land use} 
+\label{sec:government_organizations+research+land_use}
+%..............................
+
 Government and private organizations should conduct more research to guide
 landowners and policy makers through the sparing/sharing dichotomy with respect
 to many different types of wildlife.
@@ -804,7 +827,12 @@ Landowners can be paid to use land in a way that stores carbon, such as afforest
 Perhaps that is through a carbon-trading market, or perhaps it is through direct
 subsidies.
 
-\paragraph{Government+Law+Urban planning}
+
+%..............................
+\paragraph{Governemnt+Law+Urban planning} 
+\label{sec:government+law+urban_planning}
+%..............................
+
 Urban planning combines elements of housing and transportation. 
 For an efficient city, high population density is desirable. 
 The first impediment to high population density in most North American cities
@@ -822,6 +850,7 @@ municipalities.
 Lastly, developments have to pay enough in taxes to maintain their own infrastructure.
 Figure~\ref{fig:urban_suburban_densities} shows two example urban retail spaces.
 The one on the left pays more taxes per acre than the one on the right.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
