@@ -414,8 +414,36 @@ animal_efficiency <- animal_products / animal_inputs * end_use_food_efficiency
 
 <<fig:food_and_ag_material_flow>>=
 food_energy <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Energy Flow in the US Food System.xlsx"), 
-                                   sheet = "data to plot")
+                                   sheet = "data to plot") |> 
+  tidyr::pivot_longer(-Category, names_to = "type", values_to = "value") %>%
+  dplyr::filter(complete.cases(.)) %>%
+  dplyr::mutate(
+    Category = factor(Category, 
+                      levels = c("Agricultural production",
+                                 "Processing industry", 
+                                 "Packaging material", 
+                                 "Wholesale & retail",
+                                 "Transportation", 
+                                 "Food services",
+                                 "Household storage & prep", 
+                                 "Waste", "Consumed")), 
+    type = factor(type, levels = c("Input energy [quads]", 
+                                   "Consumed energy [quads]")), 
+    type = dplyr::recode(type, 
+                         `Input energy [quads]` = "Input energy", 
+                         `Consumed energy [quads]` = "Food energy available")
+  )
   
+food_energy %>%
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "type", 
+                                                y = "value", 
+                                                fill = "Category")) +
+  ggplot2::geom_bar(stat = "identity") +
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = "Energy [quads]", 
+                fill = ggplot2::element_blank()) +
+  
+  MKHthemes::xy_theme()
 @
 
 
