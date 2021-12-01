@@ -14,17 +14,30 @@
 
 The final two chapters of this book discuss actions
 society and individuals can take to live more sustainably.
+Actions for sustainability are framed as \emph{sentences} with a subject,
+action, and object.
+The subject can be an individual doing the action or a collective.
 Chapter \ref{chap:government} explores collective actions and 
 Chapter \ref{chap:personal_action} explores personal or individual actions.
+There are many possible actions but this book considers four archetypal examples.
+Lastly, while actions could be applied in many areas, we consider eight areas
+that could be the objects of actions for sustainability, corresponding to 
+Chapters~\ref{chap:population}-\ref{chap:land_use_urban_planning}. 
 
 \section{Collectives}
 \label{sec:collectives}
 Actions for sustainability can be taken by individuals
 or by groups. 
+Collective actions are taken because they are ``too big'' for an individual.
+Many times they require the cooperation of other people to be successful.
 This chapter will consider several types of groups that might take actions for 
 sustainability.
-\paragraph{Governments} The first type of collective group has the power to make laws, rules, and policies.
-We call this type \emph{governments}.
+
+\subsection{Governments} 
+\label{sec:collective_govt}
+The first type of collective group 
+\emph{has the power to make laws, rules, and policies}.
+We call this type governments.
 Governments are local, regional, national, and international.
 They can be focused on a specific area of responsibility, like a local zoning board
 of the U.S. Environmental Protection Agency, or they can be general like a state or
@@ -33,11 +46,13 @@ Cooperative agreements between governments also fall into this category.
 Examples include international treaties, the International Monetary Fund, and 
 cost-sharing agreements between state and federal agencies for road construction.
 
-\paragraph{Corporations} The second type of collective is a \emph{business corporation}. 
+\subsection{Corporations}
+\label{sec:collective_corp}
+The second type of collective is a business corporation. 
 Examples of corporations include Volkswagen, Siemens Gamesa Renewable Energy,
 Saudi Arabian Oil Company, Maersk, and Best Buy.
-Characteristically, businesses are engaged in commercial activity, either making 
-or selling a product or service.
+Characteristically, businesses are \emph{engaged in commercial activity}, 
+that is, making or selling a product or service.
 A business can be ``for profit,'' like Apple, Amazon, or Johnson and Johnson, or
 ``not for profit,'' like the Educational Testing Service, Mayo Clinic, World 
 Vision International, or colleges and universities.
@@ -45,11 +60,13 @@ Often, charitable foundations are structured as business corporations.
 For example, the Bill and Melinda Gates Foundation is a charitable foundation
 with a corporate structure.
 
-\paragraph{Organizations} 
+\subsection{Organizations} 
+\label{sec:collective_org}
 The third type of collective we will consider in this chapter is what we will call
-an \emph{organization}.
+an organization.
 Example organizations include the American Society of Heating, Refrigerating and 
-Air-Conditioning Engineers (ASHRAE),  local churches, the Internet Society, political
+Air-Conditioning Engineers (ASHRAE),  the 3rd Generation Partnership Project (3GPP),
+local churches, the Internet Society, political
 parties, environmental organizations, and community and civic groups.
 A distinguishing characteristic of organizations is \emph{voluntary association},
 which means that individual choose to join the organization.
@@ -77,19 +94,39 @@ Not all collectives are equally suited for or adept at the same tasks.
 
 \section{Actions}
 \label{sec:sust_actions}
-Collective actions are taken because they are ``too big'' for an individual.
-Many times they require the cooperation of other people to be successful.
-This book will consider three types of collective actions:
+This book will consider four archetypal actions for sustainability:
 \begin{itemize}
+\item Choices
 \item Laws
 \item Research
 \item Education
 \end{itemize}
 The \emph{actions} listed above are not an exhaustive list of actions that individuals
-and collectives can take for sustainability but the list serves as a framework
-to guide our thinking about possible actions.
+and collectives can take for sustainability but the list serves as a \emph{framework}
+to guide our thinking about possible actions. 
+A second important caveat is that we are considering only actions 
+\emph{for sustainability}.
+The ``sentence'' framework is most helpful if you don't try to make it fit actions
+that are not sustainability related.
 
-\paragraph{Laws}
+%..............................
+\subsection{Choices} 
+\label{sec:actions_choices}
+%..............................
+Individually and collectively, we have many opportunities to live more sustainably.
+Sometimes we just need to pick the most sustainable option within a given
+situation or context. 
+The decisions might be large (where to live, family planning) 
+or small (paper vs. plastic bags).
+It might be a single choice or more lifestyle related (driving vs. walking).
+
+Characteristic of the ``choice'' action is that it has a \emph{direct impact} on
+sustainability and that involves choosing a sustainable option from a menu of existing
+activities or products.
+Nothing new needs to be invented.
+
+\subsection{Laws}
+\label{sec:actions_law}
 Laws and regulations \href{https://en.wiktionary.org/wiki/affect}{affect}
 (and sometimes define and sometimes \href{https://en.wiktionary.org/wiki/effect#Verb}{effect})
 relationships among individuals, 
@@ -133,32 +170,44 @@ can be avoided without top-down regulation or privatization of the resource
 by prudent collaboration within strong societal structures. 
 \end{mcframe}
 
-\paragraph{Research} 
-Research means both the creation of new knowledge and the invention or 
+\subsection{Research} 
+\label{sec:actions_research}
+The ``research'' action means both the creation of new knowledge and the invention or 
 development of new technology.
 For instance, forest and wildlife managers may wish to know how climate change is
 changing the range of the mountain pine beetle, which affects whitebark pine and 
 grizzly bear populations.
 Or, a company may develop better designs for electric motors, batteries, or 
 wind-turbine blades.
+New knowledge created by the research action includes (for example) the ongoing 
+scientific investigation of the mechanisms of climate change, 
+life-cycle analysis to determine the sustainability implications of paper versus
+plastic shopping bags,
+and the gathering of demographic and macroeconomic data.
+Not all R\&D activities meet the definition of the research action; for the purposes
+of this book it has to be sustainability related. 
+Cosmological investigations, literary scholarship, and cognitive psychology may
+create or discover new information, but if they don't enhance sustainability in
+some way then we don't consider them to be part of the research action.
 
-\paragraph{Education}
-Education has the power to ``change hearts and minds.'' 
+
+\subsection{Education}
+\label{sec:actions_education}
+Education has the power to change hearts and minds, and thus, the way people behave.
 Disseminating information about sustainability is a crucial step in achieving a
 sustainable society.
-***** Say education encompasses advertising, reading books for a term paper,
-etc. ****
+Education includes advertising, public service announcements, reading books for a term paper,
+creating a website, and watching or making a documentary film.
+Characteristics of the education action include the acquisition or dissemination
+of \emph{existing knowledge} about sustainability.
+Simply going to school or getting a degree does not count as the education action
+in the context of this book.
 
-%..............................
-\paragraph{Choices} 
-\label{sec:choices}
-%..............................
-
-**** Say more about individual choices. 
-Characteristic: choosing a sustainable option from a menu of existing
-activities.
-****
-
+A typical sequence of actions might look something like this: a scientist discovers
+climate change is happening (research), the news media reports the problem (education),
+government creates incentives to change behavior (law), companies respond by 
+developing alternative products and services (research again), and consumers
+respond by buying the new, more sustainable option (choice).
 
 \section{Sentences for sustainability}
 In the remainder of this chapter, we provide examples of collective actions to 
@@ -181,7 +230,7 @@ In this chapter, the subject is one of the kinds of collectives defined in
 Section~\ref{sec:collectives}. 
 In the next chapter, the subject is an individual.
 In the examples presented below,
-the \emph{action} is either a law, research, or education 
+the \emph{action} is either choice, law, research, or education 
 (following Section~\ref{sec:sust_actions})
 but there are other possible actions.
 Lastly, the \emph{object} is what the actions are applied to.
@@ -236,53 +285,63 @@ and in Figure~\ref{fig:PopulationGraph},
 rising population ($P$) is a driver for environmental impacts ($I$). 
 Slowing or reversing population growth would reduce environmental impacts,
 all other things being equal.
-Table~\ref{tab:sust_sent_pop} shows example sustainability sentences
-to limit population growth.
+% Table~\ref{tab:sust_sent_pop} shows example sustainability sentences
+% to limit population growth.
+% 
+% \begin{table}
+% \footnotesize
+% \centering
+% \caption[toc caption]{Sustainability sentences for population.}
+% \label{tab:sust_sent_pop}
+% \begin{tabular}{r l l}
+% \toprule
+% Subject & Action & Object \\ 
+% \midrule
+% Governments & provide general education & to girls and women. \\
+% Governments & provide family planning education & to girls and women. \\
+% Governments & supply birth control technology & to citizens. \\
+% Legislatures & pass laws & on various family planning matters. \\
+% Lawmakers & write family friendly policies & such as maternity leave, etc. \\
+% \bottomrule 
+% \end{tabular}
+% \end{table}
 
-\begin{table}
-\footnotesize
-\centering
-\caption[toc caption]{Sustainability sentences for population.}
-\label{tab:sust_sent_pop}
-\begin{tabular}{r l l}
-\toprule
-Subject & Action & Object \\ 
-\midrule
-Governments & provide general education & to girls and women. \\
-Governments & provide family planning education & to girls and women. \\
-Governments & supply birth control technology & to citizens. \\
-Legislatures & pass laws & on various family planning matters. \\
-Lawmakers & write family friendly policies & such as maternity leave, etc. \\
-\bottomrule 
-\end{tabular}
-\end{table}
-
-State and local governments are the entity in the U.S.\
-and around the world with the responsibility for providing education. 
-As such, education for family planning can be done by governments.
+\paragraph{Government+Choice+Population}
+State and local governments are the entities in the U.S.\
+and around the world that provide much or most of the education offered to citizens.
 Providing general education to citizens, especially girls and women, 
 is a seemingly effective way to reduce birthrates, slow population growth, and
 reduce family size.
-Governments can provide 
-specific education around family planning and birth control
-to citizens, especially girls and women, 
-to reduce population growth. 
-Governments can supply birth control technology
+(Education is a ``choice'' for government because it is in the menu of things that 
+they already do.
+Governments can \emph{choose} to expand access to education or enhance educational
+opportunities, for instance, by building new schools, providing more scholarships,
+or expanding to a year-round academic calendar.)
+Another choice governments can make is to supply birth control technology
 (oral contraceptives, symptom-thermal training, condoms, etc.)
-to citizens
-to reduce population expansion.
-Legislatures can
-pass laws
+to citizens to reduce population expansion.
+
+\paragraph{Government+Education+Population}
+In addition, education for family planning can be done by governments.
+Governments can disseminate information around family planning and birth control
+to citizens, especially girls and women, to reduce population growth. 
+(In contrast to the general education mentioned in the previous paragraph,
+here specific training on birth control is counted as the education action 
+because it has a direct sustainability effect on the target of the action, in this
+case, on population.)
+
+\paragraph{Government+Law+Population}
+Government policies can have an effect on population.
+For example, legislatures can pass laws
 on number of children, incentives for having children, 
 tax breaks for raising children, or direct payments to children
-to affect the number of children per person,
-often with unintended consequences. 
+to affect the number of children per person
+(often with unintended consequences). 
 Lawmakers can also 
 write family friendly policies and programs such as 
 generous maternity leave, early childhood education and daycare, 
 health insurance, and subsidized college tuition
 to affect birth rates. 
-
 
 %++++++++++++++++++++++++++++++
 \subsection{Affluence}
@@ -300,6 +359,8 @@ To become more sustainable, we need to encourage lower economic growth rates and
 especially among already-wealthy citizens.
 Taken further, the \emph{degrowth} movement seeks to find a way to 
 wind down the economic system while retaining high standards of human well-being among citizens.
+
+\paragraph{Government+Law+Affluence}
 At a minimum, 
 national governments, 
 international organizations, and
@@ -323,12 +384,16 @@ For the prime example of this book (energy and climate change),
 stiff carbon taxes are a good way to penalize polluters,
 minimize the economic impact on non-polluting, often poorer, citizens, and
 encourage carbon-free energy.
-Proceeds from carbon and other pollution taxes can be invested in environmental remediation
-and clean energy. 
+
+% \paragraph{Government+Research+Affluence}
+% Proceeds from carbon and other pollution taxes can be invested in environmental remediation
+% and clean energy. 
+
+\paragraph{Government+Education+Affluence}
 A mandatory carbon labeling scheme
 (like nutrition labels)
-can be implemented
-to provide point of purchase information to consumers
+could be implemented
+to provide point-of-purchase information to consumers
 about the relative carbon intensity of goods~\citep{Zhao_2012}.
 
 
@@ -343,12 +408,13 @@ would drive environmental impacts ($I$) upward.
 However, Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that the 
 world's economy has been reducing its resource (energy) intensity over time.
 Of the four $PARC$ terms, resource intensity of the economy ($R$) 
-is the only term moving in a sustainable direction over the long-term.
+is the only term moving in a sustainable direction over the long term.
 (See Equation \ref{eq:IPARC_rate_with_numbers}.)
 To reduce environmental impacts, 
 economies need to use even fewer resources 
 and emit less pollution per dollar of GDP.
 
+\paragraph{Government+Law+Resources}
 Policies that encourage industrial energy efficiency 
 will reduce the energy required to generate a dollar of GDP
 at the location of the energy use.
@@ -408,6 +474,8 @@ thereby increasing the resource intensity of another economy.
 Equation~\ref{eq:IPARC} shows that reducing 
 the contamination intensity of resources ($C$)
 will cause environmental impacts ($I$) to decline.
+
+\paragraph{Government+Law+Contamination}
 One way to reduce the contamination intensity of resources ($C$)
 is to strengthen environmental regulations 
 at both extraction and disposal lifecycle stages.
@@ -419,16 +487,19 @@ At the disposal stage,
 aggressive takeback policies can compel manufacturers 
 to take responsibility (either financially or in practice)
 for safe disposal of their products at end of life.
-When manufacturers are also responsible for disposal, 
-disposal costs become an integral aspect of product design.
-Manufacturers become incentivized to 
-(a)~use fewer harmful substances in their products and
-(b)~to make their products easier to recycle or remanufacture.
+
 In lieu of mandating that manufacturers take back products, 
 standards for ease of disassembly could be implemented.
 In terms of the prime example (energy and CO$_2$ emissions),
 government can establish greenhouse gas trading markets
 to efficiently reduce emissions and encourage renewable energy adoption.
+
+\paragraph{Corporations+Research+Contamination}
+When manufacturers are also responsible for disposal, 
+disposal costs become an integral aspect of product design.
+Manufacturers become incentivized to 
+(a)~use fewer harmful substances in their products and
+(b)~to make their products easier to recycle or remanufacture.
 
 % Single photos should be 16:9.
 % Comparison photos should be square.
@@ -491,6 +562,8 @@ in a more-sustainable direction regarding households and housing.
 Building codes can be leveraged to mandate better insulation,
 more efficient systems (water heaters, appliances, furnaces), and
 improved windows.
+
+\paragraph{Government+Law+Housing}
 Municipalities can require installation of solar systems 
 on all new construction for homes and businesses or
 participation in solar collectives if installation is unfeasible.
@@ -539,6 +612,7 @@ you still could lose your house.
 \href{https://en.wiktionary.org/wiki/caveat_emptor}{\emph{Caveat emptor}}.
 \end{mcframe}
 
+\paragraph{Organizations+Education+Housing}
 Collective actions can be encouraged by certifications bestowed by
 organizations and rating agencies.
 LEED (Leadership in Energy and Environmental Design) certification
@@ -552,6 +626,8 @@ to make positive contributions to the environment, focusing on several key areas
 materials, place, water, energy, health and happiness, equity, and beauty.
 The Energy Star program encourages manufacturers to design and manufacture
 higher-efficiency appliances for homes and offices.
+(The above examples are characterized as the education action because they 
+communicate sustainability information to consumers.)
 
 Figure~\ref{fig:energy_star_total} shows three different energy labels for two home 
 appliances, a furnace and a chest freezer.
@@ -603,8 +679,10 @@ To make transport more sustainable,
 the transportation system must move
 more passengers in fewer, high-occupancy vehicles that emit less CO$_2$.
 (See Figure~\ref{fig:collective_transport_photos}.)
-There are many potential collective actions that would move 
+There are many potential collective actions that would (ahem) move 
 transportation in that direction.
+
+\paragraph{Government+Law+Transportation}
 Programs to fund and incentivize public transport seek to reduce CO$_2$ emissions
 without wholesale changes to transportation infrastructure.
 Both carrots (make public transport less expensive) and
@@ -658,10 +736,16 @@ for sustainable outcomes.
 
 This Section discusses collective actions that can be taken 
 to improve the sustainability of food and agriculture.
+
+\paragraph{Government+Research+Agriculture}
 Measures taken grid-wide to provide carbon-free energy will benefit agriculture
 along with all other sectors of the economy.
+
+\paragraph{Organizations+Education+Agriculture}
 Education, for example through organizations like the 4H and local conservation districts,
 can be used to disseminate knowledge to farmers about best practices in farming ecologically.
+
+\paragraph{Government+Law+Agriculture}
 Strengthening environmental regulations will help prevent run off and a host of 
 other environmental problems that may only be adjacently related to agriculture.
 For instance, banning synthetic fibers in clothes to prevent microplastic pollution
@@ -695,24 +779,24 @@ Figure~\ref{fig:E85} shows a commercially available biofuel blend with low EROI.
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/SuburbanGroceryStore.jpeg}
-         \caption{Suburban grocery store. **** Need photo.}
+         \caption{Suburban grocery store. **** Update photo.}
          \label{fig:suburban_grocery_store}
      \end{subfigure}
         \caption{Comparison of land use densities.}
         \label{fig:urban_suburban_densities}
 \end{figure}
 
-% How can education/training help? 
-% How can legal structures help? 
-% How can standards/information help?
+
 Governments setting aside land as parks and nature preserves helps to maintain
-ecosystem services.
+ecosystem services (Government + Choice + Land use).
 Private organizations, like the Audubon Society, Trout Unlimited, and the Land 
 Conservancy, also contribute to conservation.
 Zoning laws and environmental impact assessments before construction can help 
-preserve valuable biomes.
+preserve valuable biomes (Government + Law + Land use).
 For instance, Figure~\ref{fig:CarbonStorage} shows that wetlands are very efficient
 at storing carbon but that we have relatively little of them left.
+
+\paragraph{Government/Organization+Research+Land use}
 Government and private organizations should conduct more research to guide
 landowners and policy makers through the sparing/sharing dichotomy with respect
 to many different types of wildlife.
@@ -720,6 +804,7 @@ Landowners can be paid to use land in a way that stores carbon, such as afforest
 Perhaps that is through a carbon-trading market, or perhaps it is through direct
 subsidies.
 
+\paragraph{Government+Law+Urban planning}
 Urban planning combines elements of housing and transportation. 
 For an efficient city, high population density is desirable. 
 The first impediment to high population density in most North American cities
