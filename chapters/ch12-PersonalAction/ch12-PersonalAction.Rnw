@@ -249,13 +249,14 @@ There are many things that individuals can do to make their lives more sustainab
 in homes and apartments, 
 both in deciding which homes or apartments to buy or rent
 and how they are operated.
+
+\paragraph{Individual+Choices+Housing}
 Choosing a \emph{used} home or apartment
 will prevent additional carbon being embodied in the housing stock.
 Choosing a \emph{smaller} home will reduce carbon emissions 
 associated with heating and cooling.
 Choosing a home or apartment \emph{closer} to work, school, grocery stores, and church
 will reduce carbon emissions associated with daily and weekly commuting.
-
 In terms of home operation, 
 installing additional insulation can reduce energy for heating and cooling.
 (See Figure~\ref{fig:energy_efficient_home}.)
@@ -269,6 +270,10 @@ Choosing to live in \emph{high-occupancy} housing
 (with extended family or in co-housing arrangements)
 can reduce energy and resource requirements per person.
 
+\paragraph{Individual+Education+Housing}
+Of course, knowing which of the choices above to make requires educating yourself
+about the options and being aware of the inherent tradeoffs.
+All consumer purchase decisions have 
 
 %++++++++++++++++++++++++++++++
 \subsection{Transportation}
@@ -296,9 +301,10 @@ can reduce energy and resource requirements per person.
 \end{figure}
 
 There are many things that individuals can do to make their lives more sustainable 
-in transport,
-both in deciding which vehicles to buy or rent
-and how they are operated.
+in transport.
+
+\paragraph{Individual+Choices+Transportation}
+Individuals can decide which vehicles to buy or rent.
 Choosing a \emph{used} vehicle
 will prevent additional carbon being embodied in the vehicle itself.
 Choosing a \emph{smaller} car will reduce carbon emissions 
@@ -309,6 +315,9 @@ Choosing an electric vehicle will reduce CO$_2$ emissions
 in those places where grid electricity contains a large proportion of renewables.
 (See Section~\ref{sec:electric_vehicles} and Figure~\ref{fig:tesla}.)
 Don’t fly.
+% Individuals can choose how to operate their vehicles (or not).
+% Walking or using mass transit instead driving a personal vehicle is high-impact 
+% practice for sustainability (see Table~\ref{tab:US-Carbon-Table}).
 
 Individuals can choose to live in a cities, which, on a per-person basis
 emit less CO$_2$ than suburban areas~\cite{Jones:2014tf}.
@@ -356,7 +365,7 @@ how to prepare food.
 This section presents two example ``sentences for sustainability'' related to 
 food production and consumption.
 
-\paragraph{Individual+Action+Agriculture}
+\paragraph{Individual+Choices+Agriculture}
 Probably the most important and high-impact activity an individual can take around
 food is to reduce as much as possible the amount of food waste they generate.
 Any wasted food embodies resources (such as energy) and emissions.
