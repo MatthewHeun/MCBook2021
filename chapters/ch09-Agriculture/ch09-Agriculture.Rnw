@@ -438,6 +438,7 @@ food_energy %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "type", 
                                                 y = "value", 
                                                 fill = "Category")) +
+  # viridis::scale_fill_viridis() +
   ggplot2::geom_bar(stat = "identity") +
   ggplot2::labs(x = ggplot2::element_blank(), 
                 y = "Energy [quads]", 
