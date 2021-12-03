@@ -345,10 +345,13 @@ food_emissions_total %>%
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1))
 @
 
-Another source of greenhouse gas emissions in agriculture is land use. 
-Tropical rainforest deforestation, particularly in Brazil and Indonesia, 
+
+
+
+Another source of greenhouse gas emissions in agriculture is land use.
+Tropical rainforest deforestation, particularly in Brazil and Indonesia,
 contributes significantly to global GHG emissions.
-Over application of synthetic nitrogen-based fertilizers releases significant 
+Over application of synthetic nitrogen-based fertilizers releases significant
 amounts of N$_2$O, a very potent GHG.
 Globally, food and land use account for 24\% of GHG emissions.
 
@@ -361,30 +364,41 @@ Factors such as transport distance and wastage percentages are important
 for determining GHG emissions from food.
 \end{mcframe}
 
-\paragraph{Water} Agriculture can have significant impacts on water quality and quantity.
+
+%..............................
+\paragraph{Water}
+%..............................
+
+Agriculture can have significant impacts on water quality and quantity.
 Agriculture accounts for 70\%-80\% of water use.
 If aquifers are exhausted, then future humans won't have water to drink or bath in.
 Agrichemicals can pollute surface water as well as ground water.
 For example, the city of Toledo, Ohio draws its drinking water from Lake Erie.
 Since the 1990s Lake Erie has been subject to ``blooms'' of toxic cyanobacteria
-fueled by fertilizer run off. 
+fueled by fertilizer run off.
 Six people got sick in 2013.
 In 2014, it was 110 people and the municipal water supply to 400,000 people was shut down.
 Moreover, Lake Erie and the Maumee River that feeds it were unsafe for human skin contact.
 Blooms occurred again in 2017 and 2019.
 Animal manure can also contaminate waterways. Ick.
 
-\paragraph{Land} The main impact of agriculture on soil is erosion.
+
+%..............................
+\paragraph{Land}
+%..............................
+
+The main impact of agriculture on soil is erosion.
 Most erosion results from wind or water action on tilled soils, that is,
 where the land has been plowed to expose bare soil.
-In the Great Plains, these practices have lead to the loss of several feet of 
+In the Great Plains, these practices have lead to the loss of several feet of
 topsoil.
-For example, a survey in Minot, North Dakota taken in 1900 found 40 cm of of black 
-topsoil. 
+For example, a survey in Minot, North Dakota taken in 1900 found 40 cm of of black
+topsoil.
 In 2017, the area had no black topsoil; its soil was light gray.
 % https://www.producer.com/news/survey-reveals-amazing-soil-loss-in-great-plains-region/
 
 Farming can (and has had) impacts on biodiversity and habitat loss.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Agricultural sustainability challenges}
@@ -394,56 +408,44 @@ Farming can (and has had) impacts on biodiversity and habitat loss.
 \begin{figure}
 \centering
 \includegraphics[width=0.75\linewidth]{chapters/ch09-Agriculture/figures/Material_Flow_in_the_US_Food_System(1995_Flows_in_Million_Pounds).pdf}
-\caption[Material flow in the U.S.\ food system (1995, flows in million pounds.)]{Material flow in the U.S.\ food system (1995, flows in million pounds). \emph{Source}: \citet[Fig.~1]{Heller_2000}.}
-\label{fig:food_and_ag_material_flow_old}
+\caption[Material flow in the U.S.\ food system (1995, flows in million pounds.)]{Material flow in the U.S.\ food system (1995). Flows in million pounds. \emph{Source}: \citet[Fig.~1]{Heller_2000}.}
+\label{fig:food_and_ag_material_flow}
 \end{figure}
 
-<<ag_sys_calcs, echo = FALSE>>=
-# All numbers from Heller figure above in million pounds.
-consumed_food <- 259610 # million pounds
-total_input <- 153000 + 921590 + 13870 + 19900 + 158000 + 370000 # million pounds
-aggregate_food_efficiency <- consumed_food / total_input
 
-end_use_food_efficiency <- 259610 / (259610 + 90820 + 5450)
-
-animal_inputs <- 964000 # million pounds
-animal_products <- 51470 + 76280 + 7920 # million pounds
-animal_efficiency <- animal_products / animal_inputs * end_use_food_efficiency
-@
-
-
-<<fig:food_and_ag_material_flow>>=
-food_energy <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Energy Flow in the US Food System.xlsx"), 
-                                   sheet = "data to plot") |> 
+<<fig:food_and_ag_energy_flow, fig.cap="Energy flow in the U.S.\\ food system (2021). \\emph{Source}: \\citet{US_food}.">>=
+food_energy <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Energy Flow in the US Food System.xlsx"),
+                                   sheet = "data to plot") |>
   tidyr::pivot_longer(-Category, names_to = "type", values_to = "value") %>%
   dplyr::filter(complete.cases(.)) %>%
   dplyr::mutate(
-    Category = factor(Category, 
-                      levels = c("Agricultural production",
-                                 "Processing industry", 
-                                 "Packaging material", 
-                                 "Wholesale & retail",
-                                 "Transportation", 
+    Category = factor(Category,
+                      levels = c("Household storage & prep",
                                  "Food services",
-                                 "Household storage & prep", 
-                                 "Waste", "Consumed")), 
-    type = factor(type, levels = c("Input energy [quads]", 
-                                   "Consumed energy [quads]")), 
-    type = dplyr::recode(type, 
-                         `Input energy [quads]` = "Input energy", 
+                                 "Transportation",
+                                 "Wholesale & retail",
+                                 "Packaging material",
+                                 "Processing industry",
+                                 "Agricultural production",
+                                 "Waste", "Consumed")),
+    type = factor(type, levels = c("Input energy [quads]",
+                                   "Consumed energy [quads]")),
+    type = dplyr::recode(type,
+                         `Input energy [quads]` = "Input energy",
                          `Consumed energy [quads]` = "Food energy available")
   )
-  
+
 food_energy %>%
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "type", 
-                                                y = "value", 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "type",
+                                                y = "value",
                                                 fill = "Category")) +
-  # viridis::scale_fill_viridis() +
+  ggplot2::scale_y_continuous(limits = c(0, 15)) +
+  viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::geom_bar(stat = "identity") +
-  ggplot2::labs(x = ggplot2::element_blank(), 
-                y = "Energy [quads]", 
+  ggplot2::labs(x = ggplot2::element_blank(),
+                y = "Energy [quads]",
                 fill = ggplot2::element_blank()) +
-  
+
   MKHthemes::xy_theme()
 @
 
@@ -453,10 +455,21 @@ of material flows
 in the U.S.\ agriculture system~\citep[Fig.~1]{Heller_2000}.
 Several observations can be made.
 
+<<ag_sys_calcs, echo = FALSE>>= 
+# All numbers from Heller figure above in million pounds.
+consumed_food <- 259610 # million pounds
+total_input <- 153000 + 921590 + 13870 + 19900 + 158000 + 370000 # million pounds
+aggregate_food_efficiency <- consumed_food / total_input
+end_use_food_efficiency <- 259610 / (259610 + 90820 + 5450)
+animal_inputs <- 964000 # million pounds
+animal_products <- 51470 + 76280 + 7920 # million pounds
+animal_efficiency <- animal_products / animal_inputs * end_use_food_efficiency
+@
+
 First, the mass efficiency\index{efficiency!mass-based}
 of the agriculture system\index{efficiency!agriculture system}
 is low.
-Consumed food\index{food!consumed} 
+Consumed food\index{food!consumed}
 (\Sexpr{format(consumed_food, big.mark = ",")} million pounds)
 is a very small fraction of the
 total input to the system
@@ -483,25 +496,25 @@ However, exports\index{food!exports}
 of crops (\Sexpr{format(355560, big.mark = ",")} million pounds)
 are a significant source of demand for the U.S.\ agriculture system.
 
-Finally, relative to annual worldwide consumption, 
-there is little storage of food beyond what is needed to compensate 
-for expected seasonal weather variations. 
-In other words, the agriculture system produces what is needed now (or at least this year).  
-Given that food demand scales with population, 
+Finally, relative to annual worldwide consumption,
+there is little storage of food beyond what is needed to compensate
+for expected seasonal weather variations.
+In other words, the agriculture system produces what is needed now (or at least this year).
+Given that food demand scales with population,
 weather- and climate-related supply-side disruptions are
 more significant than demand-side disruptions
-for determining food prices. 
+for determining food prices.
 
 \subsection{Metrics}
-\label{sec:ag_metrics} 
+\label{sec:ag_metrics}
 Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based efficiency for U.S.
 agriculture, which is one aspect of the resource intensity ($R$) of agriculture.
 Other metrics by which the agriculture system could be judged are presented below.
 
 We could judge agriculture on the basis of how effectively each input is used.
-For example, land is a major factor in agriculture. 
+For example, land is a major factor in agriculture.
 Relevant metrics for land use include the number of calories produced
-per acre or the (average) number of acres needed to provide complete 
+per acre or the (average) number of acres needed to provide complete
 human nutritional requirements.
 One difference between these two metrics is that humans require more than just
 calories.
@@ -520,18 +533,18 @@ unit energy consumed.
 Or we could attempt to maximize EROI.
 Another alternative is to minimize the amount of CO$_2$ produced in agriculture.
 Agriculture currently accounts for approximately 70\% of fresh water use.
-Minimizing the amount of water used in agriculture is important for several 
+Minimizing the amount of water used in agriculture is important for several
 aspects of sustainability, including the fact that pumping water requires energy.
 
-One drawback to each of the metrics mentioned above is that agriculture operates 
-under many constraints (such as the amount of available land, 
+One drawback to each of the metrics mentioned above is that agriculture operates
+under many constraints (such as the amount of available land,
 satisfying human nutritional requirements and preferences, and being cost effective).
-Each metric is desirable but tradeoffs exist among them and the constraints 
+Each metric is desirable but tradeoffs exist among them and the constraints
 have to be satisfied.
 Price is generally the mechanism humans use to accommodate such tradeoffs, so
 minimizing the price of food could be an indicator of the effectiveness of the
-agricultural system. 
-Indeed, the price of food has fallen, adjusted for inflation in the last 100 years. 
+agricultural system.
+Indeed, the price of food has fallen, adjusted for inflation in the last 100 years.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Agriculture transitions}
@@ -539,71 +552,72 @@ Indeed, the price of food has fallen, adjusted for inflation in the last 100 yea
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % To achieve a more-sustainable food system,
-% changes on many levels will be needed, 
+% changes on many levels will be needed,
 % from the personal to the global.
-% 
-% On the personal level, 
+%
+% On the personal level,
 % eating closer to the base of the food chain and
 % pursuing vegetarian or vegan diets are among the most effective
 % ways to reduce negative environmental impacts of the food supply system.
-% Participating in the slow food movement can promote sustainability, 
-% as it seeks to promote traditional, regional cuisine, 
+% Participating in the slow food movement can promote sustainability,
+% as it seeks to promote traditional, regional cuisine,
 % thereby reducing the distance from farm to plate.
-% 
+%
 % At the global level,
 % organic farming seeks to limit the use of synthetic fertilizers and pesticides
 % by promoting the use of compost, manure, and natural practices.
-% Practices such as crop rotation and biological (as opposed to chemical) past control 
+% Practices such as crop rotation and biological (as opposed to chemical) past control
 % are encouraged.
-% 
+%
 % The growing problem of food waste spans the personal and global levels.
-% Actions and policies to minimize food waste provide benefits such as 
+% Actions and policies to minimize food waste provide benefits such as
 % reducing inputs to the food system and
-% strain on the biosphere. 
+% strain on the biosphere.
 
 %% Farm subsidies (from the 1930s onwards) distort market prices.
-%% Redirect subsidies to remove marginal land from raising livestock to 
+%% Redirect subsidies to remove marginal land from raising livestock to
 %% reforestation and carbon sequestration.
 
 This section will attempt to describe a food \emph{system} that balances
-the desires to minimize the inputs and outputs of agriculture as described 
+the desires to minimize the inputs and outputs of agriculture as described
 above.
-Figures~\ref{fig:energy_flow_in_food_system} and~\ref{fig:GHG_food} might 
+Figures~\ref{fig:energy_flow_in_food_system} and~\ref{fig:GHG_food} might
 seem to indicate that ideal agriculture does not involve any animals.
 However, agriculture is a generative (in the sense that it produces food) ecosystem.
-No ecosystem can function properly without animals. 
+No ecosystem can function properly without animals.
 Animal manure is critical to building soil productivity, which is critical to
 farming without agrichemicals.
 Moreover, for millennial, humans have raised animals on semi-arid, rocky, or other
 land that is not suitable for planting crops, which generates food for human
-use that would not otherwise be available. 
-About two thirds of our ``farmland'' is grazing land or pastures that would not 
+use that would not otherwise be available.
+About two thirds of our ``farmland'' is grazing land or pastures that would not
 otherwise be farmable.
 
 Concepts from permaculture, arcology, dry land farming, and no-till agriculture
-are necessary to farm without chemical inputs and irrigation that depletes 
-aquifers. 
+are necessary to farm without chemical inputs and irrigation that depletes
+aquifers.
 The specifics of such practices vary by region, climate, and crop species.
 These farms tend to produce a large variety of products, in contrast to ``row cropping''
 monocultures, which are more amenable to mechanized farming.
-The resulting farm system that tends to be management and labor intensive but 
-is more environmentally friendly. 
+The resulting farm system that tends to be management and labor intensive but
+is more environmentally friendly.
 However, the relatively higher amounts of human inputs make the food produced
 more expensive.
 Ultimately, reducing environmental impacts requires additional investment, which
 makes food more expensive, which is consistent with Equation~\ref{eq:IPARC}
 (reduced impact ($I$) comes from reduced affluence ($A$)).
 
-One strategy that might be highly successful for some climate zones and for some 
+One strategy that might be highly successful for some climate zones and for some
 crops is to use solar panels to provide partial shade for crops prefer lower-light
-conditions. Plants will provide some evaporative cooling for the solar panels, 
+conditions. Plants will provide some evaporative cooling for the solar panels,
 which boosts their efficiency. The panels provide shade for crops, which lessens
-the amount of water needed for irrigation. 
+the amount of water needed for irrigation.
 Panel spacing is typically less dense than is typical for industrial PV installation,
 so the crops have to make up the difference in profitability per acre.
 
 A ``recipe'' for sustainable agriculture is given by food writer Michael Pollan,
 in seven words: ``Eat food. Not too much. Mostly plants.''
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
