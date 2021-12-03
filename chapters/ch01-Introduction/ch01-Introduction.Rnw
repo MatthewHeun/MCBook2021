@@ -438,12 +438,16 @@ Purple is more than blue plus yellow and green is more than purple plus blue plu
 
 If the line in Figure~\ref{fig:exp} represents population or GDP, then the area
 under the line represents the resources needed to support that activity.
-For instance, the amount of food necessary to feed the population (because people
-eat an approximately constant amount of food per time, see Chapter~\ref{chap:agriculture}).
+For instance, the area could represent the amount of food necessary to feed the 
+population.
+(People eat an approximately constant amount of food per time, see Chapter~\ref{chap:agriculture}).
+
 Population (P) and affluence (A) in Equation \ref{eq:IPARC} \emph{have} been growing
-exponentially. Chapter \ref{chap:population} gives us some hope that population
-won't keep growing exponentially. However, world economies are \emph{actively managed} 
-to have a constant growth rates (say a target of 3\% GDP growth per year).
+exponentially. 
+Chapter \ref{chap:population} gives us some hope that population won't keep growing 
+exponentially. 
+However, world economies are \emph{actively managed} to have a constant growth 
+rates (say a target of 3\% GDP growth per year).
 The implication for sustainability is that the resources – for instance, the energy –
 needed by the economy in the next 23 years will be more than the total
 resources (energy) used in all of history to date. 
