@@ -349,7 +349,7 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
 @
 
 Two of the indicators in Table \ref{tab:planetBoundaries}, 
-particulate particle concentration in the atmosphere and chemical pollution, 
+particulate concentration in the atmosphere and chemical pollution, 
 did not have proposed limits. In the case of chemical pollution, 
 the vast number of such (possible) pollutants, each of which causes different  
 acute and chronic effects, would make a single ``threshold'' value meaningless. 
@@ -722,7 +722,7 @@ the Earth's temperature will increase.
 Increasing temperatures increases the amount of radiation given off by the Earth.
 Eventually, a new equilibrium will be achieved. 
 Radiation received from the sun is relatively constant; there are a variety of 
-satellited-based and Earth-bound measurement systems to confirm this. 
+satellite-based and Earth-bound measurement systems to confirm this. 
 Because the sun is very hot, the radiation it emits is high energy (short wave length).
 Greenhouse gases, of which CO$_2$ is of chief concern, do not absorb these
 short wave lengths. 
