@@ -41,7 +41,7 @@ In the U.S.,\ transportation emits more carbon than any other sector ---
 dplyr::filter(Sector == "Transportation") %>% 
 magrittr::extract2("Proportion [\\%]") %>% 
 round(1)}~\% 
-of all U.S.\ CO$_2$ emissions
+of all U.S.\ CO$_2$ emissions in 2018
 (see Table~\ref{tab:corrected_co2_emissions}).
 Moreover, CO$_2$ emissions from transportation are linked to other sectors.
 For example, household location (Chapter~\ref{chap:households}) 
@@ -76,6 +76,9 @@ passenger-km and tonne-km for personal and freight transport, respectively.
 Provision of U.S.\ transportation services by various modes of travel
 is shown in Figures~\ref{fig:passengerkm_by_mode}
 and~\ref{fig:tonnekm_by_mode}.
+(Note that passenger transport is quantified in passenger-km
+and freight transport is quantified in tonne-km---different units 
+for different services.)
 Figure~\ref{fig:passengerkm_by_mode} shows that 
 passenger transport demand is fulfilled almost exclusively by ``highway,''
 meaning automobiles travelling on roads.
