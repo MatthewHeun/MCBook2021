@@ -495,7 +495,8 @@ to fuel energy input,
 accounting for transient effects during operation
 across the year.
 Any heat that leaves the home with the exhaust products reduces AFUE.
-The maximum possible AFUE rating is 100\%.
+In the absence of heat lost via exhaust, 
+the AFUE rating of a furnace is 100\%.
 AFUE is different from (and lower than) steady-state thermal efficiency.
 The American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)
 \index{American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)}
@@ -529,7 +530,8 @@ Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio 
 which is
 the ratio of cooling provided (in BTU)
 to electricity consumed (in W-hr) throughout the season.
-Larger SEER values indicate higher efficiency.
+Larger SEER values indicate higher efficiency
+and lower operating costs compared to lower-SEER air conditioners.
 
 As of 2015, U.S.\ air conditioners must adhere to regionally dependent efficiency standards.
 In the southwest, a minimum SEER value of 14 BTU/W-hr is required.
@@ -607,7 +609,10 @@ Compact Fluorescent Lights (CFLs)\index{lamps!electric!compact fluorescent (CFL)
 Light-Emitting Diode (LED)\index{lamps!electric!light emitting diode (LED)}
 lamps have revolutionized
 the lighting industry and improved lighting efficiency significantly.
-LED lamps use one eighth the energy of an equivalent incandescent light.%
+
+In the U.S.\ a transition to LED lamps is well underway,
+with incandescent and CFL lamps usually not available in stores.
+LED lamps use one-eighth the energy of an equivalent incandescent lamp.%
 \footnote{
   A 100-W incandescent lamp gives about 1230~lumens or 12.3~lumens/W.
   A 100-W equivalent LED lamp gives 1200~lumens and consumes only 12~W of electricity,
@@ -619,7 +624,7 @@ In addition, LED lamps can last up to 10 times longer than incandescent lights.
 Higher efficiency and longer life reduce total cost of ownership
 of LED bulbs compared to incandescent bulbs by nearly two orders of magnitude.
 
-Of course, the least expensive light is the one you don't have to use at all.
+Of course, the least expensive lamp is the one you don't have to use at all.
 Building design techniques such as light harvesting\index{light harvesting}
 use natural light to reduce the need for artificial indoor lighting.
 
@@ -670,6 +675,9 @@ Sarah Susanka and Kira Obolensky,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Living Building Challenge \url{https://living-future.org/lbc/} \\
 One Watt Initiative
+
+Passive House Institute \url{https://passivehouse.com}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
