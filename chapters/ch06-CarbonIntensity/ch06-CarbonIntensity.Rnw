@@ -145,7 +145,7 @@ US_CO2_by_sector <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensi
     `CO2 share` = `CO2 share` * 100 # To put in % terms.
   ) %>% 
   dplyr::rename(
-    `CO$_2$ emissions [Mt]` = `CO2 emissions allocated [tonnes]`,
+    `CO$_2$ emissions [Mt]` = `CO2 emissions allocated [million tonnes]`,
     `Proportion [\\%]` = `CO2 share`
   )
 
