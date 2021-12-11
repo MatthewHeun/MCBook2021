@@ -238,15 +238,6 @@ However, since we have to have food, it is worth spending energy on.
 Whether spending more energy on food than we get from it is sustainable or not
 depends on where our energy comes from. 
 
-% \begin{figure}
-% \centering
-% \includegraphics[width=0.75\linewidth]{chapters/ch09-Agriculture/figures/Energy_flow_food_systems.pdf}
-% \caption[Energy Flow in the US.]{Amount of energy consumed in different aspects of 
-% food delivery in the U.S.~\citep[Fig.~2]{Heller_2000}. 
-% %%**** Larisa: what year is this for? what country is this for? Can we make a ggplot version of this graph?}
-% \label{fig:energy_flow_in_food_system}}
-% \end{figure}
-
 
 <<food_and_ag_energy_flow, fig.cap="Amount of energy consumed in different aspects of the food delivery system in the U.S.\\ (2021). \\emph{Source}: \\citet{US_food}.">>=
 food_energy <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Energy Flow in the US Food System.xlsx"),
