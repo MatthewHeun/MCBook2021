@@ -3,8 +3,11 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+%#############################################################
 \chapter{Agriculture}
 \label{chap:agriculture}
+%#############################################################
+
 \epigraph{There are only nine meals between mankind and anarchy.}{Alfred Henry Lewis (1906)}
 % https://www.barrypopik.com/index.php/new_york_city/entry/every_nation_is_about_nine_meals_away_from_a_revolution
 
@@ -29,7 +32,7 @@
 Figures \ref{fig:LLNL_energy_sankey} and \ref{fig:LLNL_CO2_sankey} and 
 Table~\ref{tab:corrected_co2_emissions}
 show that residences use 15.7\% of US energy and are responsible for 19.3\% 
-of US CO$_2$ emissions. 
+of US CO$_2$ emissions in 2018. 
 Therefore, Chapter~\ref{chap:households} considers the sustainability 
 challenges of households. 
 Likewise, the energy use (37.3\%) and CO$_2$ emissions (36.3\%) of transportation 
@@ -58,9 +61,11 @@ It began to be evident in Chapters~\ref{chap:households} and~\ref{chap:transport
 that land use has strong sustainability implications. 
 Those hints will become much more concrete and explicit in this chapter and 
 Chapter~\ref{chap:land_use_urban_planning}. 
-Agriculture is \emph{the} major use to which humans put the land,
-with an estimated 12\% of global ice-free land being used for crops, 37\% for 
-pasture, and 22\% as forests for timber production~\cite{SRCCL2019}.
+Agriculture is \emph{the} major use to which humans put the land.
+It is estimated that 71\% of ice-free land is used for agricultural purposes:
+12\% for crops, 
+37\% for pasture, and 
+22\% for timber production in forests~\cite{SRCCL2019}.
 
 In addition to land use and greenhouse gas (GHG) emissions, agriculture has one 
 more major implication for sustainability: humans cannot live without food.
@@ -92,7 +97,11 @@ Without agriculture, none of us would be here today!
 This chapter presents key information about the food system and explores its 
 sustainability challenges.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Drivers of food demand}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Food consumption is rather predictable, because food requirements (measured in 
 food calories, for example) scale linearly with population. 
 Over a long period of time, at least since 1870, when such things began to be 
@@ -134,7 +143,11 @@ of agriculture, the resource intensity ($R$) or the contamination intensity ($C$
 The efficiency of agriculture, in terms of what inputs it requires and what 
 impacts it produces are explored more in the following section.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Agriculture sustainability considerations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 When considering whether an activity is sustainable, resource depletion and impacts
 produced are key questions.
 For example, Section~\ref{sec:electric_vehicles} considered internal combustion
@@ -151,7 +164,7 @@ sustainability.
 
 Likewise, defining appropriate inputs and outputs for agriculture is a key 
 consideration.
-Recall the definitions for weak and strong sustainability from 
+Recall the definitions for \emph{weak} and \emph{strong} sustainability from 
 Section~\ref{sec:strong_weak_sust} and the concept of ecosystem provisioning
 services from Section~\ref{sec:ecosystem_services}.
 Section~\ref{sec:Sdefns} says sustainability requires not using renewable resources
@@ -161,7 +174,11 @@ If agriculture decreases the stock, or amount, of natural capital, it is not sus
 If agriculture depends on a nonrenewable resource, it is not strongly sustainable.
 If agriculture is rapidly depleting a resource, it is not even weakly sustainable.
 
+
+%++++++++++++++++++++++++++++++
 \subsection{Agricultural resource requirements}
+%++++++++++++++++++++++++++++++
+
 Here we list some (not all) of the inputs required for agriculture and consider their
 sustainability implications.
 
@@ -315,21 +332,33 @@ means that the food delivery system is not a \emph{source} of energy for society
 Rather it is a \emph{sink} of energy for society.
 Thus, today's food system is unsustainable from an energy point of view.
 
-To put it another way, society spends more energy to \emph{get} food than it \emph{obtains} from food.  
-Animals that spend more energy to obtain food than they gain from eating food ultimately die from lack of energy.
-Agrarian societies that spend more energy to obtain food than they gain from eating food ultimately cease to exist.
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Animals that spend more energy to obtain food than they gain from eating food 
+ultimately die from lack of energy.
+Agrarian societies that spend more energy to obtain food 
+than they gain from eating food ultimately cease to exist.
+Without the fossil fuels, the modern food system would collapse
+and modern society with it.
+\end{mcframe}
+
+To put it another way, human society today spends more energy
+to \emph{get} food than it \emph{obtains} from food.  
 But modern society remains viable
 because its food delivery system is supported by energy inputs from an external source:
-fossil fuels\index{fossil fuels}.
-Fossil fuels supply the energy for 
+fossil fuels\index{fossil fuels}. 
+Fossil fuels
+supply the energy for 
 machines in agriculture, food transportation, food processing, food packaging, 
 retail, food storage, and food preparation.
+
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 A pithy way to summarize the sustainability challenge posed 
-by today's food energy return ratios is:
+by energy return ratios of today's food system is:
 ``We don't eat food; we eat oil.''
 \end{mcframe}
 
@@ -471,9 +500,6 @@ Farming can (and has had) impacts on biodiversity and habitat loss.
 \label{fig:food_and_ag_material_flow}
 \end{figure}
 
-
-
-
 Figure~\ref{fig:food_and_ag_material_flow} shows a Sankey diagram\index{Sankey diagram!agriculture}
 of material flows
 in the U.S.\ agriculture system~\citep[Fig.~1]{Heller_2000}.
@@ -529,8 +555,12 @@ weather- and climate-related supply-side disruptions are
 more significant than demand-side disruptions
 for determining food prices.
 
+
+%++++++++++++++++++++++++++++++
 \subsection{Metrics}
 \label{sec:ag_metrics}
+%++++++++++++++++++++++++++++++
+
 Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based efficiency for U.S.
 agriculture, which is one aspect of the resource intensity ($R$) of agriculture.
 Other metrics by which the agriculture system could be judged are presented below.
@@ -551,7 +581,8 @@ or pricing structure) with desirable sustainability outcomes.
 Currently, the climate change impacts of food production do not directly impact
 the price of food.
 
-Various energy-based metrics could be applied to agriculture.
+Various energy-based metrics could be applied to agriculture
+for the purpose of assessing sustainability of agriculture.
 For instance, one objective could be to maximize the amount of food produced per
 unit energy consumed.
 Or we could attempt to maximize EROI.
