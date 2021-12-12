@@ -40,7 +40,7 @@ In the U.S.,\ transportation emits more carbon than any other sector ---
 \Sexpr{US_CO2_by_sector %>% 
 dplyr::filter(Sector == "Transportation") %>% 
 magrittr::extract2("Proportion [\\%]") %>% 
-round(1)}~\% 
+round(1)}\% 
 of all U.S.\ CO$_2$ emissions in 2018
 (see Table~\ref{tab:corrected_co2_emissions}).
 Moreover, CO$_2$ emissions from transportation are linked to other sectors.
@@ -383,7 +383,7 @@ means that the overall fleet fuel economy
 is now about midway between the average car and average truck fuel economies
 If the proportion of cars and trucks were the same today as it was in the early 1970s,
 overall vehicle fleet fuel economy in the U.S.\ would be about 28~miles/gallon,
-or 16~\% higher than the current value of 24~miles/gallon.
+or 16\% higher than the current value of 24~miles/gallon.
 
 The most effective way for manufacturers
 to increase vehicle fuel economy is to reduce vehicle mass.

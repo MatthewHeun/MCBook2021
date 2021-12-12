@@ -324,7 +324,7 @@ food_emissions_US %>%
 Because food is energy, the overall energy efficiency of the food delivery system can be calculated.
 Figure~\ref{fig:food_and_ag_energy_flow} shows the energy consumed and supplied
 by various aspects of the food delivery system.
-The energy efficiency of the food delivery system is \Sexpr{format(1.4/10.2 * 100, digits = 3)}~\%.
+The energy efficiency of the food delivery system is \Sexpr{format(1.4/10.2 * 100, digits = 3)}\%.
 With modern agriculture, it takes roughly 7 calories of energy to provide 1 calorie of food energy.
 Thus, the EROI for the food system is only 1/7.
 The fact that the energy efficiency of the food delivery system is less than 1
@@ -525,7 +525,7 @@ is a very small fraction of the
 total input to the system
 (\Sexpr{format(total_input, nsmall = 0, big.mark = ",")} million pounds),
 yielding a mass-based efficiency\index{efficiency!mass-based}
-of \Sexpr{format(aggregate_food_efficiency * 100, digits = 3)}~\%.
+of \Sexpr{format(aggregate_food_efficiency * 100, digits = 3)}\%.
 
 Second, animal-based food production\index{food!animal-based}
 comprises a large and important
@@ -533,11 +533,11 @@ intermediate processing stage.
 Animal-based food production
 is less efficient than the overall food system with
 \Sexpr{animal_inputs} million pounds as input and only
-\Sexpr{format(animal_efficiency * 100, digits = 3)}~\% efficiency on a mass basis\index{efficiency!mass-based}.
+\Sexpr{format(animal_efficiency * 100, digits = 3)}\% efficiency on a mass basis\index{efficiency!mass-based}.
 
 Third, losses (wastage) at the final stages reduce the efficiency of the entire food system.\index{waste!food}
 In fact, final stage mass-based efficiency\index{efficiency!mass-based}
-is only \Sexpr{format(end_use_food_efficiency * 100, digits = 3)}~\%.
+is only \Sexpr{format(end_use_food_efficiency * 100, digits = 3)}\%.
 
 Fourth, imports\index{food!imports}
 are relatively small compared to domestic production and consumption.
