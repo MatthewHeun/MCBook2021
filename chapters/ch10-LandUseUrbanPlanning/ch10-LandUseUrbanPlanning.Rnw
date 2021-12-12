@@ -252,7 +252,7 @@ this section examines the capacity of the land to absorb and store carbon.
 
 
 
-<<CarbonStorage, fig.height=5.5, fig.cap="World carbon storage in various biomes. The top graph shows amount (area) of each biome in the world. The middle graph is carbon density for each biome. The bottom figure is the product of the top and the middle and is the total storage capacity of each biome world wide. ``Temp. forest'' is temperate forests. ``Vegetation'' indicates carbon storage in plant matter. ``Soil'' indicates carbon storage in the soil. \\emph{Source}: \\citet{IPCC:2000wv}.">>=
+<<CarbonStorage, fig.height=5.5, fig.cap="World carbon storage in various biomes. The top graph shows amount (area) of each biome in the world. The middle graph is carbon density for each biome. The bottom figure is the product of the top and the middle and is the total storage capacity of each biome world wide. ``Temp. forest'' is temperate forests. ``Vegetation'' indicates carbon storage in plant matter. ``Soil'' indicates carbon storage in the soil. For context, Figure~\\ref{fig:CarbonEmissionsGraph} shows annual carbon emissions are 36.4 GtCO$_2$/year (2019), a small fraction of total carbon stored in the biosphere. \\emph{Source}: \\citet{IPCC:2000wv}.">>=
 carbon_storage_world <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Carbon_Storage_World.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(cols = c("Carbon stored in Vegetation (Gt/million km2)", 
@@ -286,9 +286,9 @@ carbon_storage_world <- readxl::read_excel(file.path("chapters", "ch10-LandUseUr
   )
 
 facet_labeller <- ggplot2::as_labeller(
-     c(area = paste("Area (", "Mkm^2", ")"),
-       carbon_density = paste("Density (", "GtC/Mkm^2", ")"), 
-       carbon_storage = paste("Storage (", "GtC", ")")),
+     c(area = paste("Area~(", "Mkm^2", ")"),
+       carbon_density = paste("Density~(", "GtC/Mkm^2", ")"), 
+       carbon_storage = paste("Storage~(", "GtC", ")")),
      default = ggplot2::label_parsed)
 
 
