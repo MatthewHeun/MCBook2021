@@ -53,8 +53,8 @@ For example, Figure~\ref{fig:LLNL_energy_sankey} shows that
 11.9~quads of energy are consumed in U.S.\ residences annually,
 representing 12\% of final energy consumption.
 Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
-from the residential sector total 
-\Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Gt/year,
+from the U.S.\ residential sector total 
+\Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Mt/year,
 predominantly from electricity and natural gas.\index{electricity!consumption!households}
 Energy consumption is a source of sustainability impacts
 (CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of} and 
@@ -79,7 +79,8 @@ that consume energy, raw materials, and other resources.
 In contrast, ordinary people often have little power to make decisions
 with sustainability implications
 at work, at school, or at church.
-However, everyone who lives in a house or apartment 
+However, everyone who lives in (or works at home from) 
+a house or apartment 
 makes decisions with sustainability implications
 in their own home.
 
@@ -389,8 +390,8 @@ and seasonal variations can be
 on the order of 30~\degC~\cite{Experience-Grand-Rapids:vs}.%
 \footnote{
    Example temperature variations are for Grand Rapids, Michigan, USA, where
-   the average daily high temperature in July is 28~\degC{} and  is 
-   $-$2~\degC{} January. 
+   the average daily high temperature in July is 28~\degC{} and is 
+   $-$2~\degC{} in January. 
    Incidentally, the average daily low temperature in January is $-$10~\degC.
 }
 In contrast, the range of human comfort is between 20 and 23~\degC (only 3~\degC), 
@@ -494,7 +495,8 @@ to fuel energy input,
 accounting for transient effects during operation
 across the year.
 Any heat that leaves the home with the exhaust products reduces AFUE.
-The maximum possible AFUE rating is 100\%.
+In the absence of heat lost via exhaust, 
+the AFUE rating of a furnace is 100\%.
 AFUE is different from (and lower than) steady-state thermal efficiency.
 The American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)
 \index{American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)}
@@ -528,7 +530,8 @@ Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio 
 which is
 the ratio of cooling provided (in BTU)
 to electricity consumed (in W-hr) throughout the season.
-Larger SEER values indicate higher efficiency.
+Larger SEER values indicate higher efficiency
+and lower operating costs compared to lower-SEER air conditioners.
 
 As of 2015, U.S.\ air conditioners must adhere to regionally dependent efficiency standards.
 In the southwest, a minimum SEER value of 14 BTU/W-hr is required.
@@ -606,7 +609,10 @@ Compact Fluorescent Lights (CFLs)\index{lamps!electric!compact fluorescent (CFL)
 Light-Emitting Diode (LED)\index{lamps!electric!light emitting diode (LED)}
 lamps have revolutionized
 the lighting industry and improved lighting efficiency significantly.
-LED lamps use one eighth the energy of an equivalent incandescent light.%
+
+In the U.S.\ a transition to LED lamps is well underway,
+with incandescent and CFL lamps usually not available in stores.
+LED lamps use one-eighth the energy of an equivalent incandescent lamp.%
 \footnote{
   A 100-W incandescent lamp gives about 1230~lumens or 12.3~lumens/W.
   A 100-W equivalent LED lamp gives 1200~lumens and consumes only 12~W of electricity,
@@ -618,7 +624,7 @@ In addition, LED lamps can last up to 10 times longer than incandescent lights.
 Higher efficiency and longer life reduce total cost of ownership
 of LED bulbs compared to incandescent bulbs by nearly two orders of magnitude.
 
-Of course, the least expensive light is the one you don't have to use at all.
+Of course, the least expensive lamp is the one you don't have to use at all.
 Building design techniques such as light harvesting\index{light harvesting}
 use natural light to reduce the need for artificial indoor lighting.
 
@@ -669,6 +675,9 @@ Sarah Susanka and Kira Obolensky,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Living Building Challenge \url{https://living-future.org/lbc/} \\
 One Watt Initiative
+
+Passive House Institute \url{https://passivehouse.com}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}

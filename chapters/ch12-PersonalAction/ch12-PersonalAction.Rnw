@@ -60,7 +60,10 @@ the exploration process.
 \label{sec:stories_individual_actions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Edgar McGregor picked up litter in a popular Los Angeles county park at least one
+From 2019--2021, 
+Edgar McGregor picked up litter in the Angeles National Forest
+in Southern California
+for at least one
 hour per day for 589 consecutive days~\cite{npr030821}. 
 He earned more than \$400 (donated to charity) from recyclable materials he 
 collected and, on at least one day, he filled a dumpster with a thousand pounds 
@@ -326,6 +329,7 @@ Choosing a \emph{smaller} home will reduce carbon emissions
 associated with heating and cooling.
 Choosing a home or apartment \emph{closer} to work, school, grocery stores, and church
 will reduce carbon emissions associated with daily and weekly commuting.
+Choosing to work from home will eliminate commuting emissions altogether!
 In terms of home operation, 
 installing additional insulation can reduce energy for heating and cooling.
 (See Figure~\ref{fig:energy_efficient_home}.)
@@ -376,7 +380,7 @@ living due to the economies of scale.
          \caption{Commuting bicycle.}
          \label{fig:commuting_bicycle}
      \end{subfigure}
-        \caption{Two efficient commuting options.}
+        \caption{Two low-carbon commuting options.}
         \label{fig:commuting_options}
 \end{figure}
 
@@ -513,14 +517,52 @@ How will you use the space around your dwelling?
 Will you have a lawn (with or without lawn chemicals) like Figure~\ref{fig:kentucky_bluegrass}?
 Will you have a vegetable garden?
 Will you grow native plants?
-Figure~\ref{fig:gutter_diversion} shows one way of reducing the amount of surface
-runoff that flows directly into local waterways.
+Figure~\ref{fig:gutter_diversion} shows a curb-cutout that 
+diverts surface rainwater
+from a roadside drain to a small roadside garden.
+Such gutter diversions reduce the amount of surface runoff 
+that flows directly into roadside drains and local waterways.
 
 \paragraph{Individual+Law+Urban Planning}
 Get involved in your local zoning board, drain commission, or other local government entity. 
 Advocate for local \emph{and} regional solutions. 
 Being involved in local politics is one of the best ways to make a difference for 
 sustainability.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+\label{sec:summary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+College and university students are at a very important time in their lives.
+Decisions made in the next few years will set the course of
+interactions with the environment for decades to come. 
+As you embark on that process, 
+ask yourself the questions shown in Table~\ref{tab:personal_energy_actions}.
+The questions crystallize many possible individual actions discussed throughout this book.
+Table~\ref{tab:personal_energy_actions} provides answers 
+that move in the direction of a more-sustainable world 
+and make a difference to the planet
+(without requiring an agrarian, pre-1900s lifestyle).  
+
+\begin{table}
+\caption[Personal Q\&A]{Individual actions Q\&A}
+\centering
+\begin{tabular}{@{}ll@{}}
+\toprule
+Question                                                                                              & Sustainability-beneficial answer       \\ 
+\midrule
+What kind of house will I buy                                                                         & Small and used                         \\
+What kind of car will I drive?                                                                        & Small and used                         \\
+\begin{tabular}[c]{@{}l@{}}How close will I live to work, \\ school, church, and stores?\end{tabular} & Close enough to allow walking and cycling \\
+How will I eat?                                                                                       & Close to the bottom of the food chain \\   
+How much will I fly?                                                                                  & Little or not at all                   \\
+\bottomrule
+\end{tabular}
+\label{tab:personal_energy_actions}
+\end{table}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}

@@ -41,7 +41,7 @@ In the U.S.,\ transportation emits more carbon than any other sector ---
 dplyr::filter(Sector == "Transportation") %>% 
 magrittr::extract2("Proportion [\\%]") %>% 
 round(1)}~\% 
-of all U.S.\ CO$_2$ emissions
+of all U.S.\ CO$_2$ emissions in 2018
 (see Table~\ref{tab:corrected_co2_emissions}).
 Moreover, CO$_2$ emissions from transportation are linked to other sectors.
 For example, household location (Chapter~\ref{chap:households}) 
@@ -76,6 +76,9 @@ passenger-km and tonne-km for personal and freight transport, respectively.
 Provision of U.S.\ transportation services by various modes of travel
 is shown in Figures~\ref{fig:passengerkm_by_mode}
 and~\ref{fig:tonnekm_by_mode}.
+(Note that passenger transport is quantified in passenger-km
+and freight transport is quantified in tonne-km---different units 
+for different services.)
 Figure~\ref{fig:passengerkm_by_mode} shows that 
 passenger transport demand is fulfilled almost exclusively by ``highway,''
 meaning automobiles travelling on roads.
@@ -149,8 +152,11 @@ calculates a monthly measure of transportation services
 output~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}
 called the ``Transportation Services Index'' (TSI),
 which is a weighted and indexed measure of
-freight traffic and passenger travel.
+freight traffic and passenger transport 
+in the for-hire transportation industries.
 Figure~\ref{fig:TSI} shows the variation of the TSI over time.
+(See \citet{Young:2014uh} for information about the index
+and how it is calculated.)
 Two patterns are evident:
 (a) the general growth of the economy over time drives ever-growing demand for transportation services and
 (b) recessions (2009) and pandemics (2020) are ways to
@@ -324,19 +330,19 @@ transitioning to sustainable energy sources.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Efficiency}
-\label{sec:transportation_efficiency}
+\subsection{Fuel economy}
+\label{sec:transportation_fuel_economy}
 %++++++++++++++++++++++++++++++
 
-Vehicle efficiency %(actually, an ``efficacy'') 
+Vehicle fuel economy (an example of an efficacy, not an efficiency)
 is usually quantified in distance traveled per volume
 of fuel consumed\index{efficiency!fuel}\index{efficiency!vehicle}.
-The U.S.\ fleet-average fuel efficiency of cars and trucks has varied 
+The U.S.\ fleet-average fuel economy of cars and trucks has varied 
 significantly over the past few decades.
 (See Figure~\ref{fig:US_mpg}.)
 
 
-<<US_mpg, fig.cap="U.S.\\ car, truck, and fleet fuel efficiency. \\emph{Sources}: \\citet{Hicks:2014tn} and \\citet{NHTSA2019tc}.">>=
+<<US_mpg, fig.cap="U.S.\\ car, truck, and fleet fuel economy. \\emph{Sources}: \\citet{Hicks:2014tn} and \\citet{NHTSA2019tc}.">>=
 mpg_data <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Fleet FE Performance.xlsx"),
                                sheet = "data to plot") %>% 
   dplyr::rename(
@@ -368,31 +374,32 @@ mpg_data %>%
 
 
 
-Truck efficiency has lagged car efficiency by 20--30\% for decades.
-In the 1970s, overall vehicle fleet efficiency was nearly the same as car efficiency,
+Truck fuel economy has lagged car fuel economy by 20--30\% for decades.
+In the 1970s, overall vehicle fleet fuel economy was nearly the same 
+as car fuel economy,
 because most vehicles on the road were cars.
 However, the increasing popularity of light-duty trucks and sport utility vehicles in the U.S.\
-means that the overall fleet efficiency
-is now about midway between the average car and average truck efficiencies.
+means that the overall fleet fuel economy
+is now about midway between the average car and average truck fuel economies
 If the proportion of cars and trucks were the same today as it was in the early 1970s,
-overall vehicle fleet efficiency in the U.S.\ would be about 28~miles/gallon,
+overall vehicle fleet fuel economy in the U.S.\ would be about 28~miles/gallon,
 or 16~\% higher than the current value of 24~miles/gallon.
 
 The most effective way for manufacturers
-to increase vehicle fuel efficiency is to reduce vehicle mass.
+to increase vehicle fuel economy is to reduce vehicle mass.
 Lighter vehicles can be achieved by
 replacing steel components with aluminum or carbon-fiber alternatives.
 Other design considerations that affect fuel efficiency include aerodynamics 
 and fuel type (diesel or regular).
 
-In addition to vehicle design, driving habits also influence fuel efficiency.
+In addition to vehicle design, driving habits also influence fuel economy.
 Gentler driving (less acceleration, minimal dramatic braking) and
 constant speeds (using cruise control\index{cruise control}
 where appropriate)
 lead to improved vehicle fuel economy. %efficiency (efficacy).
 
-Vehicle efficiency, by definition,
-focuses on the efficiency of the vehicle itself.
+Fuel economy, by definition,
+focuses on the efficacy of the vehicle itself.
 However, drivers don't buy fuel to move vehicles.
 They pay for fuel to move people and freight!
 So another way to measure vehicle efficiency is the ratio of transport service 
@@ -478,6 +485,8 @@ GHG emissions\index{emissions!greenhouse gases}
 from energy consumed for land preparation and planting can be allocated
 across several harvest years of the biofuel crop~\citep{Whitaker_2017}.
 Biofuel consumption in the U.S.\ is shown in Figure~\ref{fig:Biofuel_cons}.
+Brazil is another global leader 
+in biofuel production~\cite{International-Energy-Agency:2019wj}.
 
 Although biofuel consumption has risen dramatically since 2000, 
 the rise is mostly due to ethanol blending in gasoline.
@@ -538,6 +547,7 @@ a high proportion%
   The U.S.\ average electricity mix today (2020) 
   is also about 20\% renewable~\cite{U.S.-Energy-Information-Agency:2021tp}, 
   while the European mix is closer to 30\% renewable.
+  The UK electricity mix is pushing toward 40\% renewable (37.1\%)~\cite{Evans:2020vj}.
 }
 %
 of renewables (20\%)
@@ -623,7 +633,7 @@ will never achieve its potential emissions reductions.
 This chapter introduced the demand passenger and freight transport
 and drivers of that demand.
 Sustainability aspects of transport,
-especially energy consumption, energy efficiency, % (really, efficacy),
+especially energy consumption, fuel economy,
 and climate change (the prime example of Part~\ref{part:IPARC})
 were discussed.
 Finally, transitions to a sustainable transport system were discussed
@@ -897,7 +907,7 @@ and technology.
       implications of the alternative?
       Compare and contrast.
       
-\item In Section~\ref{sec:transportation_efficiency},
+\item In Section~\ref{sec:transportation_fuel_economy},
       the move from machine efficiency (measured in miles/gallon) to
       service efficiency (actually efficacy, measured in passenger-km/gallon)
       revealed insights about the transportation sustainability challenge,
