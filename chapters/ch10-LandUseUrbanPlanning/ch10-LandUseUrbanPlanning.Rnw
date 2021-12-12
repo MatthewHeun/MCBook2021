@@ -287,10 +287,9 @@ carbon_storage_world <- readxl::read_excel(file.path("chapters", "ch10-LandUseUr
 
 facet_labeller <- ggplot2::as_labeller(
      c(area = paste("Area~(", "Mkm^2", ")"),
-       carbon_density = paste("Density~(", "GtC/Mkm^2", ")"), 
+       carbon_density = paste("Density~(", "GtC/Mkm^2", ")"),
        carbon_storage = paste("Storage~(", "GtC", ")")),
      default = ggplot2::label_parsed)
-
 
 carbon_storage_world %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Biome", y = "vals", fill = "storage_location")) + 
