@@ -25,21 +25,78 @@ agriculture (Chapter~\ref{chap:agriculture}), and
 land use and urban planning (Chapter~\ref{chap:land_use_urban_planning})
 are the subjects of the next three chapters.
 The structure of each chapter in Part \ref{part:sustainability_challenges} is similar:
-First, the importance of that area of life to sustainability is discussed.
-Next, technical details about sustainability in that area of life are explored.
-Finally, a summary provides pointers to other chapters 
-where personal or collective actions relevant to that area of life are presented.
+First, the demand for energy services is discussed. 
+Next, the drivers for that demand are covered.
+Sustainability challenges in that area are examined.
+Finally, routes for a transition to a more-sustainable world are considered.
 
-In this chapter, we begin by discussing
-the importance of households for sustainability.
-It is noted that where and how you live \emph{might} be
-the area of your life over which you have the most control.
-Thereafter, technical details in four areas of household sustainability are covered:
-single or multiunit dwellings, %purchasing and renting, 
-heating and cooling, 
+In this chapter, we begin by discussing the demand for housing. 
+Noting the prime example of the book, 
+the next section describes drivers 
+of energy consumption and CO$_2$ emissions associated with housing.
+Next, sustainability challenges associated with CO$_2$ emissions 
+from household activities are described.
+Sustainability transitions related to households round out the chapter.
+
+In the formal employment sector, 
+physical plant employees, building managers, and custodial staff
+make decisions about buildings and machines
+that consume energy, raw materials, and other resources.
+In contrast, ordinary people often have little power to make decisions
+with sustainability implications
+at work, at school, or at church.
+However, everyone who lives in (or works at home from) 
+a house or apartment 
+makes decisions with sustainability implications
+in their own home or apartment.
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Households are the site where sustainability meets everyday life.
+\end{mcframe}
+
+Several aspects of housing are covered in the sections below:
+size and location, 
+heating and cooling,
 hygiene, and 
 lighting.
-A summary concludes.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Demand for energy in households}
+\label{sec:energy_demand_households}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Drivers of household energy consumption}
+\label{sec:household_energy_drivers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Sustainability challenges in households}
+\label{sec:sustainability_challenges_households}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Sustainability transitions in households}
+\label{sec:sustainability_transitions_households}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -64,25 +121,6 @@ In addition to energy, sustainability impacts arise
 from household decisions about food\index{food!consumption of} and material consumption.
 Thus, decisions made in households have sustainability implications
 far beyond the walls of each abode.
-
-
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-\begin{mcframe}[0.90\textwidth](0.85\textwidth)
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Households are the site where sustainability meets everyday life.
-\end{mcframe}
-
-In the formal employment sector, 
-physical plant employees, building managers, and custodial staff
-make decisions about buildings and machines
-that consume energy, raw materials, and other resources.
-In contrast, ordinary people often have little power to make decisions
-with sustainability implications
-at work, at school, or at church.
-However, everyone who lives in (or works at home from) 
-a house or apartment 
-makes decisions with sustainability implications
-in their own home.
 
 Figure~\ref{fig:average_residential_energy} shows 
 proportions of end-use energy consumption\index{energy consumption!residential}
