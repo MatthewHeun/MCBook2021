@@ -202,13 +202,6 @@ household_energy_by_category %>%
                  axis.ticks = ggplot2::element_blank())
 @
 
-Guided by the aggregation above,
-this chapter focuses attention on four important sustainability topics
-that intersect with household life:
-size and location,
-heating and cooling,
-hygiene, and
-lighting.
 
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -230,18 +223,25 @@ The next results are expected in 2022 for survey year 2020.
 \label{sec:household_energy_drivers}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-There are many drivers for household energy consumption, including
-size and location, 
+Guided by the aggregation above,
+this chapter focuses attention on four important drivers for 
+household energy consumption and CO$_2$ emissions:
+size and location,
 heating and cooling,
-hygiene, and 
+hygiene, and
 lighting.
-
 
 
 %++++++++++++++++++++++++++++++
 \subsection{Size and location}
 \label{sec:size_and_location}
 %++++++++++++++++++++++++++++++
+
+
+%------------------------------
+\subsubsection{Size}
+\label{sec:dwelling_size} \index{households!size}
+%------------------------------
 
 Figure~\ref{fig:NewHousingSize} shows the average floor space \index{households!floor space}
 of new single-family homes in the United States between 1971 and 2019.
@@ -263,9 +263,6 @@ average_housing_sizes %>%
 
    MKHthemes::xy_theme()
 @
-
-
-
 
 
 Figure~\ref{fig:EnergyConsAndHomeSize} shows the trend of
@@ -309,45 +306,6 @@ household_energy_by_size %>%
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sustainability challenges in households}
-\label{sec:sustainability_challenges_households}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sustainability transitions in households}
-\label{sec:sustainability_transitions_households}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Size and location}
-\label{sec:purchasing_and_renting} \index{households!purchasing and renting}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%++++++++++++++++++++++++++++++
-\subsection{Size}
-\label{sec:dwelling_size} \index{households!size}
-%++++++++++++++++++++++++++++++
-
-
-
 One might think that increasing dwelling sizes are driven by more occupants per dwelling.
 However, Figure~\ref{fig:PersonsPerHousehold} 
 shows that the number of occupants per dwelling
@@ -380,10 +338,10 @@ they are becoming larger, and
 they have fewer occupants on average.
 
 
-%++++++++++++++++++++++++++++++
-\subsection{Location}
+%------------------------------
+\subsubsection{Location}
 \label{sec:dwelling_location} \index{households!location}
-%++++++++++++++++++++++++++++++
+%------------------------------
 
 Location of a dwelling is also an important determiner of energy consumption,
 not just for the dwelling itself, but also for energy consumed by the residents
@@ -394,7 +352,6 @@ When buying a home, some purchasers can choose among
 urban, suburban, and rural locations, 
 with important sustainability implications.
 Living in an urban center can reduce average transport distances. 
-% and enhances quality of life. 
 Conversely, living in the suburbs or in rural areas can mean
 increased fuel use and CO$_2$ emissions for transport. 
 (See Chapter~\ref{chap:transportation} for more information on sustainability issues
@@ -413,21 +370,11 @@ The climate of mid-latitude locations
 can mean \emph{both} heating and air-conditioning are necessary,
 potentially increasing the energy required to operate a home in those locations.
 
-An interesting tradeoff exists between energy (and CO$_2$) embodied in structures
-and energy consumed in daily life.
-A home builder \emph{could} install extra insulation,
-more than local building codes require.
-Doing so \emph{de}creases energy consumption and CO$_2$ emissions 
-while the home is in use.
-However, the home will embody more energy and carbon,
-because many insulation types
-are energy-intensive to manufacture (especially foam). 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Heating and cooling}
+%++++++++++++++++++++++++++++++
+\subsection{Heating and cooling}
 \label{sec:heating_and_cooling} \index{households!heating and cooling}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%++++++++++++++++++++++++++++++
 
 In most locations,
 daily and seasonal temperature variations are larger
@@ -466,10 +413,11 @@ by improving the building envelope or
 by improving the efficiency of furnaces and air conditioners.
 % ****** not all home heating systems are furnaces.
 
-%++++++++++++++++++++++++++++++
-\subsection{Building envelope}
+
+%------------------------------
+\subsubsection{Building envelope}
 \label{sec:building_envelope} \index{building envelope}
-%++++++++++++++++++++++++++++++
+%------------------------------
 
 The purpose of a building envelope
 (roof, walls, windows, and base of a dwelling)
@@ -483,6 +431,88 @@ But perfect insulation is not possible, and all windows conduct heat and
 pass thermal radiation.
 So furnaces\index{furnaces} and air conditioners\index{air conditioners}
 replace heat lost in winter and remove heat gained in the summer, respectively.
+
+Windows\index{windows} are an important part of any building's envelope.
+They provide natural illumination while shielding occupants from weather.
+Like walls and roofs, it is desirable that windows eliminate
+heat loss in the winter and heat gain the summer.
+However, windows are typically worse insulators than walls and roofs,
+owing to thin glazing.
+
+
+
+%------------------------------
+\subsubsection{Furnaces}
+\label{sec:furnaces}\index{furnaces}
+%------------------------------
+
+Furnaces provide space heating,
+often from an out-of-the-way location in the dwelling, such as the basement.
+Furnaces convert a fuel 
+(typically natural gas\index{natural gas} or heating oil\index{heating oil})
+into heat by combustion, 
+thereby emitting CO$_2$ into the atmosphere.
+The heat is delivered to the dwelling via water or air
+circulated by a pump or fan.
+
+
+
+%------------------------------
+\subsubsection{Air conditioners}
+\label{sec:air_conditioners}\index{air conditioners}
+%------------------------------
+
+Air conditioners cool and dehumidify indoor air
+to provide thermal comfort\index{thermal comfort}
+to building occupants in summer.
+Most air conditioners consume electricity to perform their cooling function, 
+causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants. 
+The energy efficiency of air conditioners\index{efficiency!air conditioners}
+is quantified by the
+Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio (SEER)}
+which is
+the ratio of cooling provided (in BTU)
+to electricity consumed (in W-hr) throughout the season.
+Larger SEER values indicate higher efficiency
+and lower operating costs compared to lower-SEER air conditioners.
+
+As of 2015, U.S.\ air conditioners must adhere to regionally dependent efficiency standards.
+In the southwest, a minimum SEER value of 14 BTU/W-hr is required.
+In other parts of the U.S., a minimum SEER value of 13 BTU/W-hr is mandated.
+%**** Find a reference for these SEER numbers. ****
+% See email.
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Sustainability challenges in households}
+\label{sec:sustainability_challenges_households}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+An interesting tradeoff exists between energy (and CO$_2$) embodied in structures
+and energy consumed in daily life.
+A home builder \emph{could} install extra insulation,
+more than local building codes require.
+Doing so \emph{de}creases energy consumption and CO$_2$ emissions 
+while the home is in use.
+However, the home will embody more energy and carbon,
+because many insulation types
+are energy-intensive to manufacture (especially foam). 
+
+
+
+
+
+
 
 The effectiveness of roof and wall insulation\index{insulation}
 is quantified by its R-value\index{R-value},
@@ -501,12 +531,6 @@ The Energy Star program recommends levels of roof, wall, and
 floor insulation~\cite{U.S.-Department-of-Energy:aa}.
 In Northern US climates, R-values of 49--60 hr-ft$^2$-\degF/BTU are recommended.
 
-Windows\index{windows} are an important part of any building's envelope.
-They provide natural illumination while shielding occupants from weather.
-Like walls and roofs, it is desirable that windows eliminate
-heat loss in the winter and heat gain the summer.
-However, windows are typically worse insulators than walls and roofs,
-owing to thin glazing.
 
 The insulative properties of windows are quantified by the U-factor\index{U-factor},
 which is the inverse of an R-value.
@@ -521,19 +545,6 @@ SHGC values range from 0 to 1,
 and lower SHGC values indicate better insulative properties.
 
 
-%++++++++++++++++++++++++++++++
-\subsection{Furnaces}
-\label{sec:furnaces}\index{furnaces}
-%++++++++++++++++++++++++++++++
-
-Furnaces provide space heating,
-often from an out-of-the-way location in the dwelling, such as the basement.
-Furnaces convert a fuel 
-(typically natural gas\index{natural gas} or heating oil\index{heating oil})
-into heat by combustion, 
-thereby emitting CO$_2$ into the atmosphere.
-The heat is delivered to the dwelling via water or air
-circulated by a pump or fan.
 
 Furnace efficiency\index{efficiency!furnaces} is quantified as
 Annual Fuel Utilization Efficiency~(AFUE)\index{Annual Fuel Utilization Efficiency (AFUE)},
@@ -561,30 +572,33 @@ Models with high AFUE are more expensive, initially,
 but save money on fuel costs over time.
 
 
-%++++++++++++++++++++++++++++++
-\subsection{Air conditioners}
-\label{sec:air_conditioners}\index{air conditioners}
-%++++++++++++++++++++++++++++++
 
-Air conditioners cool and dehumidify indoor air
-to provide thermal comfort\index{thermal comfort}
-to building occupants in summer.
-Most air conditioners consume electricity to perform their cooling function, 
-causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants. 
-The energy efficiency of air conditioners\index{efficiency!air conditioners}
-is quantified by the
-Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio (SEER)}
-which is
-the ratio of cooling provided (in BTU)
-to electricity consumed (in W-hr) throughout the season.
-Larger SEER values indicate higher efficiency
-and lower operating costs compared to lower-SEER air conditioners.
+Challenges for A/C systems?
 
-As of 2015, U.S.\ air conditioners must adhere to regionally dependent efficiency standards.
-In the southwest, a minimum SEER value of 14 BTU/W-hr is required.
-In other parts of the U.S., a minimum SEER value of 13 BTU/W-hr is mandated.
-%**** Find a reference for these SEER numbers. ****
-% See email.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Sustainability transitions in households}
+\label{sec:sustainability_transitions_households}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hygiene}
