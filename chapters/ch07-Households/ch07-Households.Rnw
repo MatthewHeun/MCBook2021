@@ -522,26 +522,32 @@ of U.S.\ final energy consumption in 2015.
 \label{sec:sustainability_challenges_households}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Household energy consumption faces significant sustainability challenges.
+If the goal is to provide the same energy services in households
+(space heating and cooling, hygiene, and lighting) 
+with less energy consumption, 
+efficiency plays a big role.
+This section discusses sustainability challenges in each 
+energy service discussed above.
 
 
+%++++++++++++++++++++++++++++++
+\subsection{Size and location challenges}
+\label{sec:size_and_location_challenges}
+%++++++++++++++++++++++++++++++
+
+How do we get more people into cities?
+Will cities get too big?
 
 
+%++++++++++++++++++++++++++++++
+\subsection{Heating and cooling challenges}
+\label{sec:heating_cooling_challenges}
+%++++++++++++++++++++++++++++++
 
-An interesting tradeoff exists between energy (and CO$_2$) embodied in structures
-and energy consumed in daily life.
-A home builder \emph{could} install extra insulation,
-more than local building codes require.
-Doing so \emph{de}creases energy consumption and CO$_2$ emissions 
-while the home is in use.
-However, the home will embody more energy and carbon,
-because many insulation types
-are energy-intensive to manufacture (especially foam). 
-
-
-
-
-
-
+%..............................
+\paragraph{Building envelope} 
+%..............................
 
 The effectiveness of roof and wall insulation\index{insulation}
 is quantified by its R-value\index{R-value},
@@ -573,6 +579,20 @@ solar energy incident upon the window.
 SHGC values range from 0 to 1,
 and lower SHGC values indicate better insulative properties.
 
+An interesting tradeoff exists between energy (and CO$_2$) embodied in structures
+and energy consumed in daily life.
+A home builder \emph{could} install extra insulation,
+more than local building codes require.
+Doing so \emph{de}creases energy consumption and CO$_2$ emissions 
+while the home is in use.
+However, the home will embody more energy and carbon,
+because many insulation types
+are energy-intensive to manufacture (especially foam). 
+
+
+%..............................
+\paragraph{Furnaces} 
+%..............................
 
 Like all energy consumption,
 energy consumption for heating and cooling has sustainability implications.
@@ -603,8 +623,30 @@ Models with high AFUE are more expensive, initially,
 but save money on fuel costs over time.
 
 
+%..............................
+\paragraph{Air conditioners} 
+%..............................
 
 Challenges for A/C systems?
+
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Hygiene challenges}
+\label{sec:hygiene_challenges}
+%++++++++++++++++++++++++++++++
+
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Lighting challenges}
+\label{sec:lighting_challenges}
+%++++++++++++++++++++++++++++++
+
+
+
+
+
 
 
 
@@ -613,6 +655,14 @@ Challenges for A/C systems?
 \section{Sustainability transitions in households}
 \label{sec:sustainability_transitions_households}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Size and location transitions}
+\label{sec:size_location_transitions}
+%++++++++++++++++++++++++++++++
+
+Size and location transitions.
 
 
 
@@ -709,13 +759,6 @@ Building design techniques such as light harvesting\index{light harvesting}
 use natural light to reduce the need for artificial indoor lighting.
 
 
-
-
-
-
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Summary}
 \label{sec:household_summary}
@@ -726,16 +769,15 @@ and decisions made by ordinary people in their homes and apartments.
 Energy and material consumption decisions by household residents
 drives sustainability in the home. 
 Key areas of decision making include
-%purchasing and renting,
 size and location, 
 heating and cooling,
 hygiene, and
 lighting, 
 because many homeowners have agency in these areas of everyday life.
 
-This chapter illustrates two fundamental tradeoffs for stustainability.
+This chapter illustrates two fundamental tradeoffs for sustainability.
 The first tradeoff is initial cost (also called capital expense) versus operating cost.
-Models or options that are more energy efficient also tend to cost more. 
+Models or options that are more energy efficient also tend to cost more for the initial purchase. 
 A larger initial investment pays back by reducing ongoing expenses.
 Often the higher initial cost is the result of higher energy and/or material inputs
 required to make the more-efficient option.
@@ -745,7 +787,7 @@ means that you are not as well off (not as happy).
 On the other hand, turning the thermostat down saves money, energy, and CO$_2$ emissions.
 For both of these kinds of tradeoffs, price is the determiner as to how the tradeoff
 plays out. 
-Changing society-wide behavior means manipulating prices -- of goods, or energy, or both.
+Changing society-wide behavior means manipulating prices---of goods, or energy, or both.
 
 Chapter~\ref{chap:personal_action} provides additional concrete suggestions
 for making homes and apartments more sustainable.
@@ -757,10 +799,13 @@ for making homes and apartments more sustainable.
 Sarah Susanka and Kira Obolensky, 
 \emph{The Not So Big House: A Blueprint for the Way We Really Live}, Taunton Press, 1998.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Living Building Challenge \url{https://living-future.org/lbc/} \\
+
+Living Building Challenge \url{https://living-future.org/lbc/}
+
 One Watt Initiative
 
 Passive House Institute \url{https://passivehouse.com}
