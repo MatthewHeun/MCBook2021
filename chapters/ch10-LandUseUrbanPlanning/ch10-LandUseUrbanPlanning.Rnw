@@ -171,28 +171,33 @@ Unfortunately, the best lands have already been taken; what is available to the
 Therefore, consistent with earlier chapters, the drivers for land use are the 
 terms of the IPARC equation, ($P$), ($A$), and ($R$).
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Land use efficiency}
 \label{sec:land_efficiency}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Since land is a limited resource, it makes sense to maximize the effective use 
+Because land is a limited resource, 
+it makes sense to maximize the effective use 
 of that resource, whether that's for food, housing, and/or ecosystem services.
-Various metrics could be used to gauge the effectiveness of land use.
-For example, with respect to agriculture, we could attempt to maximize
+Various metrics (only some related to sustainability)
+could be used to gauge the effectiveness of land use
+in agricultural settings or in cities.
+For agricultural land uses, we could attempt to maximize
 calories per acre, pounds of food per acre, number of people fed per acre, 
 \emph{or} the EROI of agriculture. 
-
-For cities, we could attempt to maximize population density, or we could minimize
-metrics related to impact, or we could try to make cities as self-sufficient as 
+For urban land uses, we could attempt to
+maximize population density,
+we could minimize metrics related to environmental impact, or 
+we could try to make cities as self-sufficient as 
 possible, for example with respect to food or energy.
 We might try to minimize the amount of transportation emissions within cities.
 Or we might try to maximize urban GDP.
-
-However, we also care about ecosystem service and the health of the environment 
-that provides those ecosystem services.
-We care about multifactor indices: biodiversity, wilderness, ecosystem services, 
-air and water quality, etc.
+From a sustainability point of view, 
+we could try to maximize 
+biodiversity, wilderness area, air and water quality, or 
+ecosystem services and
+the health of the environment that provides those ecosystem services.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -201,8 +206,11 @@ Remember former U.S.\ representative Vernon Ehlers:
 ``you can never do only one thing.''
 \end{mcframe}
 
-One way to describe the tension between land use for human needs and devoting land
-to preserving ecosystem services is sparing versus sharing~\cite{Fraanje2018}.
+Many of the ``good'' uses for land are in tension with each other, 
+and the tension between land use for human needs and
+preservation of ecosystem services is particularly acute. 
+One way to describe the tension between human use and preservation
+is sparing versus sharing~\cite{Fraanje2018}.
 Land ``sparing'' seeks to minimize the amount of agricultural land needed for humans
 but maximizing the productivity of that land, even if it means input-intensive farming
 that results in less biodiversity \emph{on the farm}. 
