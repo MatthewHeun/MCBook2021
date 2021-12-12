@@ -15,8 +15,8 @@ developed a framework for sustainability thinking.
 This chapter is the first of four chapters to apply that framework to some
 areas of life where sustainability challenges are relevant and important. 
 The areas are selected based, in part, on where energy
-is used (Figure \ref{fig:LLNL_energy_sankey}), that is, where carbon emissions
-originate (Table \ref{tab:corrected_co2_emissions}).
+is consumed (Figure \ref{fig:LLNL_energy_sankey}), that is, 
+the drivers of carbon emissions (Table \ref{tab:corrected_co2_emissions}).
 This chapter (Chapter~\ref{chap:households}) explores 
 implications and applications of sustainability thinking
 to dwellings.
@@ -25,36 +25,45 @@ agriculture (Chapter~\ref{chap:agriculture}), and
 land use and urban planning (Chapter~\ref{chap:land_use_urban_planning})
 are the subjects of the next three chapters.
 The structure of each chapter in Part \ref{part:sustainability_challenges} is similar:
-First, the demand for energy services is discussed. 
+First, the demand for energy services in a particular area is discussed. 
 Next, the drivers for that demand are covered.
 Sustainability challenges in that area are examined.
 Finally, routes for a transition to a more-sustainable world are considered.
 
-In this chapter, we begin by discussing the demand for housing. 
-Noting the prime example of the book, 
-drivers of energy consumption and CO$_2$ emissions associated with housing
-are discussed thereafter.
-Next, sustainability challenges associated with CO$_2$ emissions 
-from household activities are described.
-Sustainability transitions related to households round out the chapter.
-
-In the formal employment sector, 
-physical plant employees, building managers, and custodial staff
+The topic of this chapter, households,
+is important for sustainability and stands in contrast to 
+the formal employment sector.
+With the exception of 
+physical plant employees, building managers, and custodial staff, 
+few workers 
 make decisions about buildings and machines
-that consume energy, raw materials, and other resources.
-In contrast, ordinary people often have little power to make decisions
+that affect energy and material resource consumption in offices and factories.
+
+Although ordinary people often have little power to make decisions
 with sustainability implications
-at work, at school, or at church.
-However, everyone who lives in (or works at home from) 
+at work, at school, or at church,
+everyone who lives in (or works from) 
 a house or apartment 
 makes decisions with sustainability implications
-in their own home or apartment.
+in their own household.
+Indeed, households are the site for food, water, material, and energy demands.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Households are the site where sustainability meets everyday life.
+
 \end{mcframe}
+
+This chapter focuses on demand for energy in households, 
+in keeping with the prime example of the book,
+energy consumption and carbon emissions. 
+Thus, the first subsection below covers energy demand in households.
+Drivers of household energy demand are discussed thereafter.
+Next, sustainability challenges associated with CO$_2$ emissions 
+from household activities are described.
+Sustainability transitions related to households round out the chapter.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -63,20 +72,18 @@ Households are the site where sustainability meets everyday life.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Households are important for sustainability, 
-because they are sites of energy and material consumption.
+in part because they are sites of energy consumption.
 For example, Figure~\ref{fig:LLNL_energy_sankey} shows that 
 11.9~quads of energy were consumed in U.S.\ residences in 2018,
 representing 12\% of final energy consumption.
 Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
-from the U.S.\ residential sector total 
+from the U.S.\ residential sector in 2018 total 
 \Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Mt/year,
 predominantly from electricity and natural gas.\index{electricity!consumption!households}
-Energy consumption is a source of sustainability impacts
+Energy consumption in households is a source of sustainability impacts
 (CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of} and 
 natural resource extraction\index{natural resources!extraction of})
-far beyond the site of the demand (households).
-In addition to energy, sustainability impacts arise 
-from household decisions about food\index{food!consumption of} and material consumption.
+far beyond the site of the demand.
 Thus, decisions made in households have sustainability implications
 far beyond the walls of each abode.
 
@@ -91,6 +98,18 @@ and~\ref{fig:AverageHouseholdEnergyConsumption}
 show these trends.
 
 
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Much of what we know about residential energy consumption in the U.S.\
+comes from the U.S.\ Energy Information Agency's occasional
+Residential Energy Consumption Surveys (RECS)~\cite{U.S.-Energy-Information-Agency:vd}.
+RECS provides snapshots of residential energy consumption for survey years
+1979, 1980, 1981, 1982, 1984, 1987, 1990, 1993, 1997, 2001, 2005, 2009, and 2015.
+The next results are expected in 2022 for survey year 2020.
+
+\end{mcframe}
 
 
 <<TotalHouseholdEnergyConsumption, fig.cap="Total U.S.\\ household final energy consumption by energy type. Note: Fuel oil and Propane are aggregated into Petroleum. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:th}.">>=
@@ -164,17 +183,22 @@ average_household_energy_consumption %>%
 @
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Drivers of household energy consumption}
+\label{sec:household_energy_drivers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Figure~\ref{fig:average_residential_energy} shows 
 proportions of end-use energy consumption\index{energy consumption!residential}
 for the average U.S.\ residence.
 The end uses in Figure~\ref{fig:average_residential_energy}
-can be aggregated into form fewer categories.
-%of residential energy consumption.
+can be aggregated to three factors that affect energy demand in households.
 Space heating and cooling
 comprise 54.4\% of all household energy consumption.
 Hygiene (including water heating and laundry)
 consumes 21.9\% of household energy.
 Lighting constitutes 4.9\% of total household energy use.
+A fourth factor, size and location, is also important.
 
 
 <<average_residential_energy, fig.cap="Proportions of final energy consumption in U.S.\\ households by end use in 2015. ``Space heating'' includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. ``Space cooling'' includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. ``Refrigeration'' includes electricity for refrigerators and standalone freezers. Laundry includes electricity, natural gas, and propane for clothes washers and dryers. Cooking includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers. Entertainment includes electricity and natural gas for TVs, pool pumps, and hot tubs. Other includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
@@ -203,28 +227,8 @@ household_energy_by_category %>%
 @
 
 
-
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-\begin{mcframe}[0.90\textwidth](0.85\textwidth)
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Much of what we know about residential energy consumption in the U.S.\
-comes from the U.S.\ Energy Information Agency's occasional
-Residential Energy Consumption Surveys (RECS)~\cite{U.S.-Energy-Information-Agency:vd}.
-RECS provides snapshots of residential energy consumption for survey years
-1979, 1980, 1981, 1982, 1984, 1987, 1990, 1993, 1997, 2001, 2005, 2009, and 2015.
-The next results are expected in 2022 for survey year 2020.
-
-\end{mcframe}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Drivers of household energy consumption}
-\label{sec:household_energy_drivers}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 Guided by the aggregation above,
-this chapter focuses attention on four important drivers for 
+this section focuses attention on four important drivers for 
 household energy consumption and CO$_2$ emissions:
 size and location,
 heating and cooling,
@@ -238,10 +242,10 @@ lighting.
 %++++++++++++++++++++++++++++++
 
 
-%------------------------------
-\subsubsection{Size}
+%..............................
+\paragraph{Size} 
 \label{sec:dwelling_size} \index{households!size}
-%------------------------------
+%..............................
 
 Figure~\ref{fig:NewHousingSize} shows the average floor space \index{households!floor space}
 of new single-family homes in the United States between 1971 and 2019.
@@ -338,14 +342,16 @@ they are becoming larger, and
 they have fewer occupants on average.
 
 
-%------------------------------
-\subsubsection{Location}
+%..............................
+\paragraph{Location} 
 \label{sec:dwelling_location} \index{households!location}
-%------------------------------
+%..............................
 
 Location of a dwelling is also an important determiner of energy consumption,
 not just for the dwelling itself, but also for energy consumed by the residents
 for transportation.
+(See Chapter~\ref{chap:transportation} for more information on sustainability issues
+related to transportation.)
 Proximity to work, school, shops, church, and entertainment
 makes a significant difference to transportation energy demand.
 When buying a home, some purchasers can choose among 
@@ -354,8 +360,6 @@ with important sustainability implications.
 Living in an urban center can reduce average transport distances. 
 Conversely, living in the suburbs or in rural areas can mean
 increased fuel use and CO$_2$ emissions for transport. 
-(See Chapter~\ref{chap:transportation} for more information on sustainability issues
-related to transportation.)
 
 Zooming out, the latitude of the home may make a 
 larger impact on household sustainability
@@ -388,7 +392,7 @@ on the order of 30~\degC~\cite{Experience-Grand-Rapids:vs}.%
    $-$2~\degC{} in January. 
    Incidentally, the average daily low temperature in January is $-$10~\degC.
 }
-In contrast, the range of human comfort is between 20 and 23~\degC (only 3~\degC), 
+In contrast, the range of human comfort is between 20 and 23~\degC{} (only 3~\degC), 
 depending on humidity and clothing.
 
 Residential heating and cooling reduces the temperature variation
@@ -398,26 +402,15 @@ to enable work, play, and entertainment.
 Figure~\ref{fig:average_residential_energy} shows that
 on average across the U.S.
 thermal comfort\index{thermal comfort}
-is provided
-by 36.6\% of all residential energy consumption. %**** 36.6\% **** why all the extra asterisks?
-Like all energy consumption,
-energy consumption for heating and cooling has sustainability implications
-(see Chapter~\ref{chap:resource_intensity}).
-Greater efficiency can provide the same thermal comfort
-with less energy consumed.
-Increased residential heating and cooling 
-efficiency\index{efficiency!heating and cooling!residential}
-(i.e, providing the same comfort with less energy) 
-can be obtained
-by improving the building envelope or
-by improving the efficiency of furnaces and air conditioners.
-% ****** not all home heating systems are furnaces.
+is the purpose of 
+by 54.4\% of all residential energy consumption
+(Space heating and space cooling).
 
 
-%------------------------------
-\subsubsection{Building envelope}
+%..............................
+\paragraph{Building envelope}
 \label{sec:building_envelope} \index{building envelope}
-%------------------------------
+%..............................
 
 The purpose of a building envelope
 (roof, walls, windows, and base of a dwelling)
@@ -440,11 +433,10 @@ However, windows are typically worse insulators than walls and roofs,
 owing to thin glazing.
 
 
-
-%------------------------------
-\subsubsection{Furnaces}
+%..............................
+\paragraph{Furnaces}
 \label{sec:furnaces}\index{furnaces}
-%------------------------------
+%..............................
 
 Furnaces provide space heating,
 often from an out-of-the-way location in the dwelling, such as the basement.
@@ -456,11 +448,10 @@ The heat is delivered to the dwelling via water or air
 circulated by a pump or fan.
 
 
-
-%------------------------------
-\subsubsection{Air conditioners}
+%..............................
+\paragraph{Air conditioners}
 \label{sec:air_conditioners}\index{air conditioners}
-%------------------------------
+%..............................
 
 Air conditioners cool and dehumidify indoor air
 to provide thermal comfort\index{thermal comfort}
@@ -483,9 +474,47 @@ In other parts of the U.S., a minimum SEER value of 13 BTU/W-hr is mandated.
 % See email.
 
 
+%++++++++++++++++++++++++++++++
+\subsection{Hygiene}
+\label{sec:hygiene}\index{hygiene}
+%++++++++++++++++++++++++++++++
+
+Households consume significant energy and water
+for showers, dish washers, toilets, and clothes washers and dryers.
+Collectively, these activities may be categorized as ``hygiene.''
+
+Clothes washers and dryers\index{clothes washer}\index{clothes dryer}
+consume both water and energy, typically electricity and natural gas.
+Burning natural gas emits CO$_2$.
+When the electricity for washers and dryers comes from fossil fuel sources, 
+further CO$_2$ emissions occur.
+Figure~\ref{fig:average_residential_energy} shows that lighting comprised 4.9\%
+of U.S.\ final energy consumption in 2015.
+
+Hygiene is a significant 
+cause of energy consumption in the U.S. 
+Figure~\ref{fig:average_residential_energy} shows that hygiene
+(Water heating and Laundry) comprised 21.9\%
+of U.S.\ final energy consumption in 2015.
 
 
+%++++++++++++++++++++++++++++++
+\subsection{Lighting}
+\label{sec:lighting}
+%++++++++++++++++++++++++++++++
 
+Indoor lighting provides illumination for rooms,
+typically by consuming electricity and emitting CO$_2$ if fossil-fuel sources are used.
+Indoor lighting enables work, play, and entertainment
+before sunrise and after sunset. 
+In many areas of the world, artificial indoor lighting 
+extends the economically active portion of the day
+several hours beyond daylight hours. 
+
+Artificial interior lighting is a significant 
+cause of electricity consumption in most parts of the world. 
+Figure~\ref{fig:average_residential_energy} shows that lighting comprised 4.9\%
+of U.S.\ final energy consumption in 2015.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -545,7 +574,9 @@ SHGC values range from 0 to 1,
 and lower SHGC values indicate better insulative properties.
 
 
-
+Like all energy consumption,
+energy consumption for heating and cooling has sustainability implications.
+(See Chapter~\ref{chap:resource_intensity}.)
 Furnace efficiency\index{efficiency!furnaces} is quantified as
 Annual Fuel Utilization Efficiency~(AFUE)\index{Annual Fuel Utilization Efficiency (AFUE)},
 the percentage of useful heat output
@@ -585,31 +616,26 @@ Challenges for A/C systems?
 
 
 
+%++++++++++++++++++++++++++++++
+\subsection{Heating and cooling transition}
+\label{sec:heating_cooling_transition}
+%++++++++++++++++++++++++++++++
+
+Greater efficiency can provide the same thermal comfort
+with less energy consumed.
+Increased residential heating and cooling 
+efficiency\index{efficiency!heating and cooling!residential}
+(i.e, providing the same comfort with less energy) 
+can be obtained
+by improving the building envelope or
+by improving the efficiency of heating and air conditioning.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Hygiene}
-\label{sec:hygiene}\index{hygiene}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Households consume significant energy and water
-for showers, dish washers, toilets, and clothes washers and dryers.
-Collectively, these activities may be categorized as ``hygiene.''
-%Hygiene is a significant consumer of household energy and water
-
+%++++++++++++++++++++++++++++++
+\subsection{Hygiene transition}
+\label{sec:hygiene_transition}
+%++++++++++++++++++++++++++++++
 
 To minimize environmental impacts of showering and dish washing,
 low-flow showerheads\index{showerheads!low-flow} and faucets\index{faucets}
@@ -643,11 +669,6 @@ reducing the amount of water used for each flush.
 Dual-flush systems provide half- and full-flushes
 for disposal of liquids and solids, respectively.
 
-Clothes washers and dryers\index{clothes washer}\index{clothes dryer}
-consume both water and energy, typically electricity and natural gas.
-Burning natural gas emits CO$_2$.
-When the electricity for washers and dryers comes from fossil fuel sources, 
-further CO$_2$ emissions occur.
 Purchasing washers and dryers with Energy Star\index{Energy Star} ratings can reduce
 energy and water consumption by 25\% and 33\%,
 respectively~\cite{U.S.-Department-of-Energy:tc, U.S.-Department-of-Energy:vd}.
@@ -655,13 +676,11 @@ Energy can be saved by washing clothes less frequently,
 using a cold-water cycle, and line drying clothes.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Lighting}
-\label{sec:lighting}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%++++++++++++++++++++++++++++++
+\subsection{Ligthing transition}
+\label{sec:lighting_transition}
+%++++++++++++++++++++++++++++++
 
-Indoor lighting provides illumination for rooms,
-typically by consuming electricity and emitting CO$_2$ if fossil-fuel sources are used.
 After Edison's invention of the electric light,
 filament-based incandescent lighting technology\index{lamps!electric!incandescent}
 dominated household lighting.
@@ -688,6 +707,13 @@ of LED bulbs compared to incandescent bulbs by nearly two orders of magnitude.
 Of course, the least expensive lamp is the one you don't have to use at all.
 Building design techniques such as light harvesting\index{light harvesting}
 use natural light to reduce the need for artificial indoor lighting.
+
+
+
+
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
