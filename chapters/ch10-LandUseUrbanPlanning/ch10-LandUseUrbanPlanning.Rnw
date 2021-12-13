@@ -276,20 +276,28 @@ carbon_storage_world <- readxl::read_excel(file.path("chapters", "ch10-LandUseUr
     ), 
     storage_location = factor(storage_location, levels = c("Area", "Vegetation", "Soil")),
     panel = dplyr::case_when(
-      metric == "Area (million km2)" ~ "Area~(Mkm^2)", 
-      metric == "Carbon stored in Vegetation (Gt/million km2)" | 
-        metric == "Carbon stored in Soils (Gt/million km2)" ~ "Density~(GtC/Mkm^2)", 
-      metric == "Total Carbon stored in Vegetation (Gt)" | 
-        metric == "Total Carbon stored in Soils (Gt)" ~ "Storage~(GtC)", 
+      metric == "Area (million km2)" ~ "Area~(Mkm^2)",
+      metric == "Carbon stored in Vegetation (Gt/million km2)" |
+        metric == "Carbon stored in Soils (Gt/million km2)" ~ "Density~(GtC/Mkm^2)",
+      metric == "Total Carbon stored in Vegetation (Gt)" |
+        metric == "Total Carbon stored in Soils (Gt)" ~ "Storage~(GtC)",
+      # metric == "Area (million km2)" ~ "Area",
+      # metric == "Carbon stored in Vegetation (Gt/million km2)" |
+      #   metric == "Carbon stored in Soils (Gt/million km2)" ~ "Density",
+      # metric == "Total Carbon stored in Vegetation (Gt)" |
+      #   metric == "Total Carbon stored in Soils (Gt)" ~ "Storage",
       TRUE ~ NA_character_
     )
   )
 
+facet_labeller <- c(Area = "Area~(Mkm^2)",
+                    Density = "Density~(GtC/Mkm^2)",
+                    Storage = "Storage~(GtC)")
+
 carbon_storage_world %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Biome", y = "vals", fill = "storage_location")) + 
   ggplot2::geom_bar(stat = "identity") + 
-  # ggplot2::facet_grid(rows = "panel", scales = "free_y", labeller = facet_labeller) + 
-  ggplot2::facet_grid(rows = "panel", scales = "free_y", labeller = ggplot2::label_parsed) + 
+  ggplot2::facet_grid(rows = "panel", scales = "free_y", labeller = ggplot2::label_parsed) +
   ggplot2::labs(x = ggplot2::element_blank(), 
                 y = "Area and carbon characteristics of various biomes", 
                 fill = ggplot2::element_blank()) +
@@ -299,6 +307,18 @@ carbon_storage_world %>%
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1), 
                  axis.ticks.x = ggplot2::element_blank())
 @
+
+
+
+<<simple_example, eval=FALSE>>=
+df <- data.frame(x = c(1, 2), y = c(11, 12), facet = c("a~(m^2)", "b~(km^2)"))
+
+df |> 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "x", y = "y")) +
+  ggplot2::geom_point() + 
+  ggplot2::facet_grid(rows = "facet", labeller = ggplot2::label_parsed)
+@
+
 
 
 Figure~\ref{fig:CarbonStorage} shows how much carbon each type of land (biome) can store.
