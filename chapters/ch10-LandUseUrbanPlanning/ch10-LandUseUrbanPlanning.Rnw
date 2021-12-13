@@ -268,33 +268,28 @@ carbon_storage_world <- readxl::read_excel(file.path("chapters", "ch10-LandUseUr
                                      "Temp. forest", "Croplands", "Tundra")),
     storage_location = dplyr::case_when(
       metric == "Carbon stored in Vegetation (Gt/million km2)" | 
-        metric == "Total Carbon stored in Vegetation (Gt)" ~ "vegetation", 
+        metric == "Total Carbon stored in Vegetation (Gt)" ~ "Vegetation", 
       metric == "Carbon stored in Soils (Gt/million km2)" | 
-        metric == "Total Carbon stored in Soils (Gt)" ~ "soil", 
-      metric == "Area (million km2)" ~ "area",
+        metric == "Total Carbon stored in Soils (Gt)" ~ "Soil", 
+      metric == "Area (million km2)" ~ "Area",
       TRUE ~ NA_character_
     ), 
-    storage_location = factor(storage_location, levels = c("area", "vegetation", "soil")),
+    storage_location = factor(storage_location, levels = c("Area", "Vegetation", "Soil")),
     panel = dplyr::case_when(
-      metric == "Area (million km2)" ~ "area", 
+      metric == "Area (million km2)" ~ "Area~(Mkm^2)", 
       metric == "Carbon stored in Vegetation (Gt/million km2)" | 
-        metric == "Carbon stored in Soils (Gt/million km2)" ~ "carbon_density", 
+        metric == "Carbon stored in Soils (Gt/million km2)" ~ "Density~(GtC/Mkm^2)", 
       metric == "Total Carbon stored in Vegetation (Gt)" | 
-        metric == "Total Carbon stored in Soils (Gt)" ~ "carbon_storage", 
+        metric == "Total Carbon stored in Soils (Gt)" ~ "Storage~(GtC)", 
       TRUE ~ NA_character_
     )
   )
 
-facet_labeller <- ggplot2::as_labeller(
-     c(area = paste("Area~(", "Mkm^2", ")"),
-       carbon_density = paste("Density~(", "GtC/Mkm^2", ")"),
-       carbon_storage = paste("Storage~(", "GtC", ")")),
-     default = ggplot2::label_parsed)
-
 carbon_storage_world %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Biome", y = "vals", fill = "storage_location")) + 
   ggplot2::geom_bar(stat = "identity") + 
-  ggplot2::facet_grid(rows = "panel", scales = "free_y", labeller = facet_labeller) + 
+  # ggplot2::facet_grid(rows = "panel", scales = "free_y", labeller = facet_labeller) + 
+  ggplot2::facet_grid(rows = "panel", scales = "free_y", labeller = ggplot2::label_parsed) + 
   ggplot2::labs(x = ggplot2::element_blank(), 
                 y = "Area and carbon characteristics of various biomes", 
                 fill = ggplot2::element_blank()) +
