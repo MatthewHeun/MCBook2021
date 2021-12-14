@@ -18,19 +18,19 @@ The king accepted the wager but lost the game.
 A chessboard has eight rows and eight columns, so the king had to pay $2^{64}-1 \;$
 grains (see Section \ref{sec:exp}).
 Rice is seven thousand grains per pound (\char`~ 65 mg each),
-which means the king owed her $1.195 \times 10^{15}$ kg of rice, 
+which means the king owed the scholar $1.195 \times 10^{15}$ kg of rice, 
 % about 12\% of the weight of everything ever produced by the human species [1]. At
 % US\$6.85/bushel, the grain would be worth about 300 trillion dollars, which is (roughly)
 % ten times more money than exists in the world.
-which is over 150 tons of rice for every person on planet Earth
+which is more than 150 tons of rice for every person on planet Earth
 (worth about \$40,000 per person).
-For reference, people eat about 35 tons of food in a lifetime, so this is 4.4 lifetimes'
-supply of food for every person on the planet.
+For reference, people eat about 35 tons of food in a lifetime, 
+so this is 4.4 lifetimes' supply of food for every person on the planet.
 Clearly, this won't all fit on an ordinary chessboard!
 
 This story, which goes back at least to the 1200s AD, illustrates several aspects of the
 sustainability problem that have been evident for centuries:
-Exponential growth is
+Exponential, or constant, growth (see Section \ref{sec:exp}) is
 % a) hard to understand and b) is
 inherently not sustainable;
 big numbers are hard to \href{https://en.wiktionary.org/wiki/grok}{grok};
@@ -40,19 +40,22 @@ and making large wagers on limited understanding is unwise.
 You are reading this book because you think sustainability is important.
 And it is.
 In the long run, sustainability is one of the few things that matter at all.
-Sustainability is a challenging problem, in part due to exponential growth, in part
-due to limited understanding, but also because sustainability problems are complex
-and interconnected.
+Sustainability is a challenging problem, in part due to exponential growth, 
+in part due to limited understanding, 
+but also because sustainability problems are complex and interconnected.
 Each of the subproblems or subdomains of sustainability may have its own problems
 of exponential growth and limited knowledge.
 %Sustainability complexity and we'll spend a lot of time looking at the interconnections
 %between different aspects of sustainability challenges.
+
 Furthermore, this story hints at a social element of the sustainability problem.
 In the story, the king doesn't want to appear ``weak'' before his subject and so
 (rashly) accepts the wager.
 In sustainability, there is tremendous social (and sometimes economic) pressure
 to continue to do things ``the way they've always been done.''
-Figure \ref{fig:venn_diagram} shows the ``three pillars'' of sustainability, which are the
+
+Figure \ref{fig:venn_diagram} shows the ``three pillars'' of sustainability
+(also called the sustainability triangle), which are the
 the interrelated and overlapping domains of environmental sustainability,
 economic sustainability, and social sustainability.
 % We need the three pillars and idea of metrics for all three.
@@ -61,49 +64,49 @@ If one of the supports is removed, the whole thing falls flat.
 The complexity and interconnectivity of sustainability problems is not limited to
 one domain. 
 Pollution is an environmental problem, and a social problem, and an economic problem.
-Likewise renewable energy. And land use. And ... 
+Likewise renewable energy. And land use. And ... all the other problems humanity faces.
 
-\begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch01-Introduction/figures/Three_pillars.pdf}
-\caption{The three pillars of sustainability. 
-Sustainability is built on three supporting pillars: 
-environmental sustainability, economic sustainability, and social sustainability. 
-If any of these three pillars are missing, human society collapses. 
-Environmental sustainability refers to the ecosystem and its supporting services; 
-see Chapter \ref{chap:planetary_boundaries}. 
-Economic sustainability refers to human systems for creating and accounting for wealth; 
-see Chapter \ref{chap:affluence}. 
-Social sustainability refers to traditions and systems of human society. 
-It is the ``hidden'' pillar of sustainability.
-The academic subjects or domains of knowledge that study each of these pillars are
-listed below them.}
-\label{fig:venn_diagram}
-\end{figure}
+% \begin{figure}
+% \centering
+% \includegraphics[width=\figwidth]{chapters/ch01-Introduction/figures/Three_pillars.pdf}
+% \caption{The three pillars of sustainability. 
+% Sustainability is built on three supporting pillars: 
+% environmental sustainability, economic sustainability, and social sustainability. 
+% If any of these three pillars are missing, human society collapses. 
+% Environmental sustainability refers to the ecosystem and its supporting services; 
+% see Chapter \ref{chap:planetary_boundaries}. 
+% Economic sustainability refers to human systems for creating and accounting for wealth; 
+% see Chapter \ref{chap:affluence}. 
+% Social sustainability refers to traditions and systems of human society. 
+% It is the ``hidden'' pillar of sustainability.
+% The academic subjects or domains of knowledge that study each of these pillars are
+% listed below them.}
+% \label{fig:venn_diagram}
+% \end{figure}
 
-% # <<venn_diagram, fig.height=3, fig.width=4.5, fig.align='center', echo=FALSE, fig.cap="Three overlapping domains or aspects of sustainability.", fig.scap="Aspects of sustainability.">>=
-% # The draw.triple.venn function returns a gList object,
-% # whose text we do not want to see in the output.
-% # Thus, we assign the return value to a variable,
-% # which has the effect of suppressing the text output from the function.
-% # Note that cex = 0 sets the size of the area labels to 0, thereby suppressing the numbers.
-% # draw.triple.venn(area1 = 20, area2 = 20, area3 = 13, n12 = 11, n23 = 4, n13 = 5,
-% #                                     n123 = 1, category = c("Social", "Economic", "Environmental"), lty = "blank",
-% #                                 fill = c("skyblue", "pink1", "mediumorchid"), cex = 0, cat.fontface = "Arial") %>%
-% #   invisible()
-% # Adds a circle to .plot at the specified location
-% ggplot() %>%
-%   # Add circles
-%   add_circ(r = 1, xc = 0.66667, yc = 0) %>%  # Environmental
-%   add_circ(r = 1, xc = -0.66667, yc = 0) %>% # Social
-%   add_circ(r = 1, xc = 0, yc = 1.2) +        # Economic
-%   # Add labels to the circles. Note that the Libre Caslon font is specified, thereby matching the book's font.
-%   annotate(geom = "text", x = 1, y = -0.2, label = "Environmental",  size = 3.5) + # family = "Libre Caslon Text",
-%   annotate(geom = "text", x = -1, y = -0.2, label = "Social", size = 3.5) + # family = "Libre Caslon Text",
-%   annotate(geom = "text", x = 0, y = 1.4, label = "Economic", size = 3.5) + # family = "Libre Caslon Text",
-%   # Eliminate all axes and labels besides the ones we added ourselves.
-%   theme_void()
-%@
+<<venn_diagram, fig.height=3, fig.width=4.5, fig.align='center', echo=FALSE, fig.cap="The three pillars of sustainability. Sustainability is built on three supporting pillars: environmental sustainability, economic sustainability, and social sustainability. If any of these three pillars are missing, human society collapses. Environmental sustainability refers to the ecosystem and its supporting services; see Chapter~\\ref{chap:planetary_boundaries}. Economic sustainability refers to human systems for creating and accounting for wealth; see Chapter~\\ref{chap:affluence}. Social sustainability refers to traditions and systems of human society. It is the hidden pillar of sustainability.", fig.scap="Aspects of sustainability.">>=
+# The draw.triple.venn function returns a gList object,
+# whose text we do not want to see in the output.
+# Thus, we assign the return value to a variable,
+# which has the effect of suppressing the text output from the function.
+# Note that cex = 0 sets the size of the area labels to 0, thereby suppressing the numbers.
+# draw.triple.venn(area1 = 20, area2 = 20, area3 = 13, n12 = 11, n23 = 4, n13 = 5,
+#                                     n123 = 1, category = c("Social", "Economic", "Environmental"), lty = "blank",
+#                                 fill = c("skyblue", "pink1", "mediumorchid"), cex = 0, cat.fontface = "Arial") %>%
+#   invisible()
+# Adds a circle to .plot at the specified location
+ggplot() %>%
+  # Add circles
+  add_circ(r = 1, xc = 0.66667, yc = 0) %>%  # Environmental
+  add_circ(r = 1, xc = -0.66667, yc = 0) %>% # Social
+  add_circ(r = 1, xc = 0, yc = 1.2) +        # Economic
+  # Add labels to the circles. Note that the Libre Caslon font is specified, thereby matching the book's font.
+  annotate(geom = "text", x = 1, y = -0.2, label = "Environmental",  size = 3.5) + # family = "Libre Caslon Text",
+  annotate(geom = "text", x = -1, y = -0.2, label = "Social", size = 3.5) + # family = "Libre Caslon Text",
+  annotate(geom = "text", x = 0, y = 1.4, label = "Economic", size = 3.5) + # family = "Libre Caslon Text",
+  # Eliminate all axes and labels besides the ones we added ourselves.
+  theme_void()
+@
 
 % Let's say more here about the organization of the book in terms of social, economic, and ES?
 
@@ -240,37 +243,45 @@ one of the most \emph{urgent} sustainability problems.
 Energy and carbon emissions link together many of our sustainability challenges.
 \end{mcframe}
 
-
-%++++++++++++++++++++++++++++++
-\subsection{Definitions of sustainability}
-\label{sec:Sdefns}
-%++++++++++++++++++++++++++++++
-
 The most oft-quoted \cite{Quental2011} definition of sustainability is that
 ``Sustainable development is development that meets the needs of the present without
 compromising the ability of future generations to meet their own needs'' \cite{Brundtland}.
 Note that ``sustainable development,'' is an oxymoron and is not the same as sustainability.
 Furthermore, ``needs'' are subjective.
 This definition emphasizes the social and economic aspects of sustainability over,
-or instead of, environmental sustainability. % "Now" before "later."
-%could add two paragraphs of explanation here. Or, maybe make them e-o-c questions.
+or instead of, environmental sustainability. 
 In the end, without environmental sustainability, there is no sustainability at all.
 
-Herman Daly proposed three prerequisites or criteria for true environmental
-sustainability \cite{Daly1996}:
-\begin{enumerate}
-\item Renewable resources, such as fish, soil, and groundwater, must be used no faster
-than the rate at which they regenerate.
-\item Nonrenewable resources, such as minerals and fossil fuels, must be used no faster
-than renewable substitutes for them can be put into place.
-\item Pollution and wastes must be emitted no faster than natural systems can absorb them,
-recycle them, or render them harmless.
-\end{enumerate}
-The core idea is that [the rate of] human impact on the ecosystem can be no greater than
-the ecosystem can absorb, which introduces the idea of the capacity of the ecosystem to
-provide resources and ``take care of'' wastes.
-Chapter \ref{chap:planetary_boundaries} examines the concept of ecosystem capacities in
-greater detail.
+% %++++++++++++++++++++++++++++++
+% \subsection{Definitions of sustainability}
+\label{sec:Sdefns}
+% %++++++++++++++++++++++++++++++
+
+% The most oft-quoted \cite{Quental2011} definition of sustainability is that
+% ``Sustainable development is development that meets the needs of the present without
+% compromising the ability of future generations to meet their own needs'' \cite{Brundtland}.
+% Note that ``sustainable development,'' is an oxymoron and is not the same as sustainability.
+% Furthermore, ``needs'' are subjective.
+% This definition emphasizes the social and economic aspects of sustainability over,
+% or instead of, environmental sustainability. % "Now" before "later."
+% %could add two paragraphs of explanation here. Or, maybe make them e-o-c questions.
+% In the end, without environmental sustainability, there is no sustainability at all.
+
+% Herman Daly proposed three prerequisites or criteria for true environmental
+% sustainability \cite{Daly1996}:
+% \begin{enumerate}
+% \item Renewable resources, such as fish, soil, and groundwater, must be used no faster
+% than the rate at which they regenerate.
+% \item Nonrenewable resources, such as minerals and fossil fuels, must be used no faster
+% than renewable substitutes for them can be put into place.
+% \item Pollution and wastes must be emitted no faster than natural systems can absorb them,
+% recycle them, or render them harmless.
+% \end{enumerate}
+% The core idea is that [the rate of] human impact on the ecosystem can be no greater than
+% the ecosystem can absorb, which introduces the idea of the capacity of the ecosystem to
+% provide resources and ``take care of'' wastes.
+% Chapter \ref{chap:planetary_boundaries} examines the concept of ecosystem capacities in
+% greater detail.
 
 % Eliminate the section below. It's on sustainable development, not sustainability
 % per se (at least points 2-4), it's unnecessarily wordy, and it doesn't really contribute.
@@ -330,27 +341,33 @@ $\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}
 \end{equation}
 
 
-In the IPARC formulation, impact ($I$) is a vector quantity (that is, a list)
+In the IPARC formulation, impact ($I$) is a list of impacts (that is, a vector quantity)
 that includes such things as global warming potential, aquifer depletion, and
 eutrophication potential.
-Population ($P$) is the (scalar) number of people in the world.
+Population ($P$) is the number of people in the world.
 Affluence ($A$) is GDP per capita per year.
 Resource intensity ($R$) is the vector or list of all the resources necessary to
 produce one unit of world GDP.
 Lastly, impact intensity of resources ($C$) is a matrix that lists the impacts of
 each type of resource.
 
-IPARC is true because it is an identity, and it provides a useful organizing framework
-for the following chapters.
-Its terms are equilibrium values, that is, they represent static, or steady-state levels,
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The IPARC identity is a static relationship.
+Its terms represent steady-state levels,
 but do not necessarily show how changes in any one variable will affect the others.
 For instance, using resources more efficiently (improving resource intensity),
 does not, in general, lower impact.
 Instead, it leads to more affluence (see chapter \ref{chap:resource_intensity}).
 Likewise, it may not be possible to drive the impact(s) per unit of resource to
-zero because of diminishing returns on efficiency and tradeoffs
-that exist between different types of impacts.
-To illustrate the IPARC framework, we use energy and CO$_2$ as prime examples
+zero because of diminishing returns on efficiency 
+and tradeoffs that exist between different types of impacts.
+\end{mcframe}
+
+IPARC is true because it is an identity, and it provides a useful organizing framework
+for the following chapters.
+To illustrate the IPARC framework, energy and CO$_2$ are prime examples
 in the rest of the text because energy is the master resource
 % Need "energy is the master resource section??!
 and climate change is our most urgent sustainability challenge, and, of course,
@@ -501,13 +518,13 @@ with 12 to 13 necessary for a technological society.
 \begin{tabular}{ll}\toprule
 \textbf{Energy source} & \textbf{EROI} \\ \midrule
 Nuclear power & 75-100 \\ \midrule
-Coal and natural gas & 28-31 \\ \midrule
 Hydroelectric & 50 \\ \midrule
+Coal and natural gas & 28-31 \\ \midrule
 Concentrated solar thermal & 21 \\ \midrule
 Wind energy & 16-21 \\ \midrule
+Brazilian sugar-cane ethanol & 8.6-10.2\\ \midrule % https://en.wikipedia.org/wiki/Ethanol_fuel_in_Brazil
 Solar photovoltaic & 4-7 \\ \midrule
-Biofuels (incl. U.S. corn ethanol) & 0.8-1.6 \\ \midrule %%  from T. Gomiero 2015
-Brazilian sugar-cane ethanol & 8.6-10.2\\ % https://en.wikipedia.org/wiki/Ethanol_fuel_in_Brazil
+Biofuels (incl. U.S. corn ethanol) & 0.8-1.6 \\ %%  from T. Gomiero 2015
 \bottomrule \end{tabular}
 \end{table}
 
@@ -597,7 +614,8 @@ the full restoration is likely to cost more than \euro{8} billion.
       Do you think this is a good thing because it means there is a demand
       for these timbers (and thus the forests they come from are a valuable
       resource worth preserving) or a bad thing because forests are valuable 
-      carbon sinks (see also Project P1.2 below)?
+      carbon sinks (see also Project P1.\ref{project:old-growth-forest} below)?
+      \label{question:old-growth-forest}
 
 \item When Notre-Dame de Paris burned, its lead roof released toxic particles
       and contaminated the surrounding neighborhood, requiring a lengthy and
@@ -613,12 +631,11 @@ the full restoration is likely to cost more than \euro{8} billion.
       replacement of the central spire and the roof. Proposals included a carbon-fiber spire
       covered in gold leaf, a stained-glass roof, a greenhouse, an open-air garden of 
       trees, and a column of light. 
+      (Subsequently, the French National Assembly passed a law requiring any restoration
+      to preserve Notre Dame's ``historic, artistic, and architectural interest.'')
       What are the artistic, cultural, and aesthetic pros and cons of each proposed designs?
       Does your answer change if you learn that the modern facade is the result
       of a 19$^\mathrm{th}$ century restoration and isn't itself strictly ``original?''
-      (Subsequently, the French National Assembly passed a law requiring any restoration
-      to preserve Notre Dame's ``historic, artistic, and architectural interest.'')
-      
 
       % **** At this point, I'm struggling to see how the previous few questions 
       % relate to environmental sustainabilty.  
@@ -628,8 +645,9 @@ the full restoration is likely to cost more than \euro{8} billion.
 \item Your answers to the preceding questions expose your values on the 
       societal (historical preservation) vs.\ economic (expensive fire suppression systems)
       vs.\ environmental (energy and resources) edges of the sustainability triangle 
-      (Figure \ref{fig:venn_diagram}). Is one vertex dominant for you and what 
-      does that tell you about how you approach the topic of sustainability?
+      (Figure \ref{fig:venn_diagram}). 
+      Is one vertex dominant for you and what does that tell you about how you 
+      approach the topic of sustainability?
       % It would be interesting to see if there is one axis 
       % that is predominant in your draft questions. 
       % If there isn't an axis of the sustainability triangle addressed by a question,
@@ -639,13 +657,17 @@ the full restoration is likely to cost more than \euro{8} billion.
       % triangle for Chapter 1. ---MKH ****
 
 \item Some companies have become bankrupt and gone out of business, like K-mart and
-      Woolworth's. Others have been bailed out by governments, like General Motors and
-      JP Morgan Chase. Were any of these decisions sustainable? For how long?
+      Woolworth's. 
+      Others have been bailed out by governments, like General Motors and 
+      JP Morgan Chase. 
+      Were any of these decisions sustainable?
+      For how long?
       Is there social value in old companies (as, say, compared to old buildings)?
 
 \item Critique generally but also with reference to Equation \ref{eq:IPARC} the statement 
       ``poverty is the worst form of pollution'' made by former Indian Prime 
-      Minister Indira Ghandi. What does this statement mean?
+      Minister Indira Ghandi. 
+      What does this statement mean?
       In what ways is this statement true? In what ways is it untrue? 
       How does this statement address the debate for strong environmental
       sustainability versus ``sustainable development?''
@@ -708,6 +730,7 @@ the full restoration is likely to cost more than \euro{8} billion.
       This project should illustrate one of the difficulties with discussing
       sustainability, namely, that it is hard to make fair comparisons because
       many sources of data use different definitions or metrics.
+      \label{project:old-growth-forest}
       
 \item An alternative way to describe constant growth is to use a form such as 
       $y_N = y_0 (1+r)^N$, where $y_0$ is the initial amount, 
