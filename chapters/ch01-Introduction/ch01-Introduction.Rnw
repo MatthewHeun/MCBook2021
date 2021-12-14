@@ -386,10 +386,10 @@ The formula for the total grain on $N$ squares is $2^N-1$.
 The amount of grain on the $N^\text{th}$ square is $2^{N-1}$, which is half of $2^N$,
 and so is one more than the sum of all previous $N-1$ squares.
 
-Extending the doubling on discrete squares or in discrete time units to 
-continuous time is exponential growth.
-Things that grow exponentially grow at a \emph{constant rate}, which means they
-double in a fixed amount of time.
+Doubling on discrete squares (or in discrete time units) can be extended to 
+continuous time. 
+Exponential growth is growth at a \emph{constant rate} (in percent per year), 
+which means doubling in a fixed amount of time.
 That is, the time it takes to double does not depend on the amount there is at
 the current moment. 
 If the (constant) rate of growth is $r$, then amount of time to double is $ln(2)/r$, 
@@ -462,9 +462,11 @@ population.
 Population (P) and affluence (A) in Equation \ref{eq:IPARC} \emph{have} been growing
 exponentially. 
 Chapter \ref{chap:population} gives us some hope that population won't keep growing 
-exponentially. 
-However, world economies are \emph{actively managed} to have a constant growth 
-rates (say a target of 3\% GDP growth per year).
+exponentially.
+(In fact, there are some indications world population may \emph{fall} after a peak
+in the mid-twenty-first century.)
+However, world economies are \emph{actively managed} to have a continual growth 
+(say a target of 3\% GDP growth per year).
 The implication for sustainability is that the resources – for instance, the energy –
 needed by the economy in the next 23 years will be more than the total
 resources (energy) used in all of history to date. 
