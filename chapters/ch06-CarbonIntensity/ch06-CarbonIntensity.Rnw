@@ -522,8 +522,11 @@ rate_func <- function(df) {
   (df[[2,2]]/df[[1,2]])^(1/yrs) - 1
 }
 
-rate_to_string <- function(rate) {
-  paste(round(rate*100, 1), " \\%/yr")
+rate_to_string <- function(rate, include_units = TRUE) {
+  if (include_units) {
+    return(paste(format(round(rate*100, 1), nsmall = 1), "\\%/yr"))
+  }
+  format(round(rate*100, 1), nsmall = 1)
 }
 
 trim_for_chapter <- function(.df, var, years = c(1800, 2019)) {
@@ -616,7 +619,7 @@ print(xtable::xtable(iparc_df %>%
 \label{eq:IPARC_rate_with_numbers}
 \footnotesize
 \begin{tabular}{rccccccccc}
-Time & $r_I$                       & $\approx$ & $r_P$                       & $+$ & $r_A$                       & 
+     & $r_I$                       & $\approx$ & $r_P$                       & $+$ & $r_A$                       & 
                                     $+$ & $r_R$                       & $+$ & $r_X$                         \\
 1800--2019 & \Sexpr{rate_to_string(r_I_220)} & $\approx$ & \Sexpr{rate_to_string(r_P_220)} & $+$ & \Sexpr{rate_to_string(r_A_220)} &
                                     $-$ & \Sexpr{rate_to_string(abs(r_R_220))} & $+$ & \Sexpr{rate_to_string(r_C_220)}   \\
@@ -629,54 +632,77 @@ Time & $r_I$                       & $\approx$ & $r_P$                       & $
 Equation~\ref{eq:IPARC_rate_with_numbers} shows that carbon emissions 
 (Figure~\ref{fig:CarbonEmissionsGraph})
 are increasing 
-at an average rate of $r_I =$ \Sexpr{rate_to_string(r_I_220)} from 1800--2019. 
-The declining energy intensity of the economy
-is the only term in the IPARC identity
-putting downward pressure on CO$_2$ emissions ($r_R < 0$).
+at an average rate of $r_I =$ \Sexpr{rate_to_string(r_I_220)}
+since pre-industrial times (1800--2019)
+and $r_I =$ \Sexpr{rate_to_string(r_I_20)}
+over the last two decades (2000--2019). 
+(The data in Table~\ref{tab:iparc_select_years} and 
+Equation~\ref{eq:IPARC_rate_with_numbers}
+can be used to discern
+trends over other periods of time. 
+See Project~P6.\ref{item:iparx_calcs}.)
+The declining energy intensity of the economy term ($r_R$ < 0)
+is the only term in the IPARX identity
+putting downward pressure on the CO$_2$ emissions growth rate ($r_I$).
 All other terms on the right side of Equation~\ref{eq:IPARC_rate_with_numbers}
 are greater than zero and are driving CO$_2$ emissions upward.
-The positive terms represent the sources of our sustainability challenges
-for CO$_2$ emissions:
-rising population ($r_P > 0$), 
-rising affluence ($r_A > 0$), and 
-expanded use of fossil fuels ($r_C > 0$).
-Together with Equation~\ref{eq:IPARC_rate_with_numbers},
-the data in Table~\ref{tab:iparc_select_years} can be used to discern
-trends over shorter periods of time. 
+Interestingly, the impact intensity of energy ($r_X$)
+is smaller (\Sexpr{rate_to_string(r_C_20)})
+in the past two decades than over the past two centuries
+(\Sexpr{rate_to_string(r_C_220)}), because 
+the world's transition to a fully carbonized energy system
+was largely complete by 1970.
+(See Figure~\ref{fig:CarbonIntensityGraph}.)
+The effect of the declining resource intensity of the economy ($r_R < 0$)
+is growing over time 
+($r_R = -$\Sexpr{rate_to_string(abs(r_R_220))} for 1800--2019 and
+$r_R = -$\Sexpr{rate_to_string(abs(r_R_20))} for 2000--2019).
 
-The IPARC identity and 
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The positive terms in Equation~\ref{eq:IPARC_rate_with_numbers}
+represent sources of our sustainability challenges:
+rising population ($r_P$ > 0), 
+rising affluence ($r_A$ > 0), and 
+expanded use of fossil fuels ($r_X$ > 0).
+
+\end{mcframe}
+
+The IPARX identity and 
 the prime example (energy consumption and CO$_2$ emissions)
 show that we are heading in an unsustainable direction,
-because CO$_2$ emissions are accelerating over time.
+because CO$_2$ emissions are growing over time.
 In other words,
 Part~\ref{part:IPARC} (Chapters~\ref{chap:planetary_boundaries}--\ref{chap:carbon_intensity})
 has described the \emph{what} of our sustainability challenges.
-Part~\ref{part:sustainability_challenges}
+Next, Part~\ref{part:sustainability_challenges}
 (Chapters~\ref{chap:households}--\ref{chap:land_use_urban_planning})
 explores reasons \emph{why} we face these challenges
 in several sectors of the economy.
-The final part of this book (Part~\ref{part:actions},
-Chapters~\ref{chap:government} and~\ref{chap:personal_action})
+Finally, Part~\ref{part:actions}
+(Chapters~\ref{chap:government} and~\ref{chap:personal_action})
 provides suggestions for \emph{how} to respond, 
 collectively and personally.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{IPARC interactions}
-\label{sec:iparc_interactions}
+\section{IPARX interactions}
+\label{sec:iparx_interactions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The IPARC identity
+The IPARX identity
 appears to be a straight multiplication of independent terms
-($P$, $A$, $R$, and $C$).
+($P$, $A$, $R$, and $X$).
 But it is not.
 There are interactions among the terms that deserve mention.
 In this section, we note four such interactions
 for the prime example of energy and CO$_2$ emissions.
-The interactions among IPARC equation terms
+The interactions among IPARX equation terms
 are an example of the interconnected character of human society as we know it.
-Indeed, policies directed at improving one term of the IPARC identity
-will have effects on other terms of the IPARC identity.
+Indeed, policies directed at improving one term of the IPARX identity
+will have effects on other terms of the IPARX identity.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -714,7 +740,7 @@ When rebound effect is so large as to wipe out the initial energy savings,
 ``backfire'' is said to occur~\cite{Sorrell:2010ul}~\cite{Sorrell:2009cg}.
 Backfire is a threat to a low-carbon future~\cite{Brockway:2017a}.
 Thus, we must be careful about crafting policies to address 
-the $R$ or $C$ terms in the IPARC identity.
+the $R$ or $X$ terms in the IPARX identity.
 We may inadvertently affect $A$ to the effect of undoing 
 the good we intended.
 
@@ -794,7 +820,7 @@ is less than the CO$_2$ embodied
 in the renewable device. 
 That said, many advocates of Green Growth, a Green New Deal, and similar public policies 
 promote the idea that a transition to green infrastructure, including renewable energy,
-will stimulate enconomic growth and increase affluence.
+will stimulate economic growth and increase affluence.
 If they are right, 
 a renewables-driven decrease in $X$ would lead to an increase in $A$
 in the IPARX equation (Equation~\ref{eq:IPARC}).
@@ -1015,7 +1041,7 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
         for the last 49 years only (1970--2019), and
         for the last 9 years only (2010--2019).
         How are the results similar to or different from the results 
-        of Equation~\ref{eq:IPARC_rate_with_numbers}?
+        of Equation~\ref{eq:IPARC_rate_with_numbers}? \label{item:iparx_calcs}
 
 \end{projects}
 
