@@ -563,10 +563,20 @@ r_A_220 <- iparc_df %>% trim_for_chapter(var = "$A$ [k\\$/person]") %>% rate_fun
 r_R_220 <- iparc_df %>% trim_for_chapter(var = "$R$ [MJ/\\$]") %>% rate_func()
 r_C_220 <- iparc_df %>% trim_for_chapter(var = "$C$ [Mt/EJ]") %>% rate_func()
 
-# r_I_check should be same as r_I
-r_I_check <- r_P_220 + r_A_220 + r_R_220 + r_C_220
+r_I_20 <- iparc_df %>% trim_for_chapter(var = "$I$ [Gt/yr]", years = c(2000, 2019)) %>% rate_func()
+r_P_20 <- iparc_df %>% trim_for_chapter(var = "$P$ [billions]", years = c(2000, 2019)) %>% rate_func()
+r_A_20 <- iparc_df %>% trim_for_chapter(var = "$A$ [k\\$/person]", years = c(2000, 2019)) %>% rate_func()
+r_R_20 <- iparc_df %>% trim_for_chapter(var = "$R$ [MJ/\\$]", years = c(2000, 2019)) %>% rate_func()
+r_C_20 <- iparc_df %>% trim_for_chapter(var = "$C$ [Mt/EJ]", years = c(2000, 2019)) %>% rate_func()
 
-stopifnot(abs(r_I_check - r_I_220) < 0.0005)
+
+
+# r_I_check should be same as r_I
+r_I_check_220 <- r_P_220 + r_A_220 + r_R_220 + r_C_220
+r_I_check_20 <- r_P_20 + r_A_20 + r_R_20 + r_C_20
+
+stopifnot(abs(r_I_check_220 - r_I_220) < 0.0005)
+stopifnot(abs(r_I_check_20 - r_I_20) < 0.0005)
 @
 
 
@@ -604,12 +614,14 @@ print(xtable::xtable(iparc_df %>%
 
 \begin{equation}
 \label{eq:IPARC_rate_with_numbers}
-\small
-\begin{tabular}{ccccccccc}
-$r_I$                       & $\approx$ & $r_P$                       & $+$ & $r_A$                       & 
+\footnotesize
+\begin{tabular}{rccccccccc}
+Time & $r_I$                       & $\approx$ & $r_P$                       & $+$ & $r_A$                       & 
                                     $+$ & $r_R$                       & $+$ & $r_X$                         \\
-\Sexpr{rate_to_string(r_I_220)} & $\approx$ & \Sexpr{rate_to_string(r_P_220)} & $+$ & \Sexpr{rate_to_string(r_A_220)} &
+1800--2019 & \Sexpr{rate_to_string(r_I_220)} & $\approx$ & \Sexpr{rate_to_string(r_P_220)} & $+$ & \Sexpr{rate_to_string(r_A_220)} &
                                     $-$ & \Sexpr{rate_to_string(abs(r_R_220))} & $+$ & \Sexpr{rate_to_string(r_C_220)}   \\
+2000--2019 & \Sexpr{rate_to_string(r_I_20)} & $\approx$ & \Sexpr{rate_to_string(r_P_20)} & $+$ & \Sexpr{rate_to_string(r_A_20)} &
+                                    $-$ & \Sexpr{rate_to_string(abs(r_R_20))} & $+$ & \Sexpr{rate_to_string(r_C_20)}   \\
 \end{tabular}
 \normalsize
 \end{equation}
