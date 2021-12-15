@@ -753,6 +753,7 @@ the full restoration is likely to cost more than \euro{8} billion.
       $N$ is the number of compounding periods, and $y_N$ is the final amount.
       Obtain (or generate) some data and compare the rates obtained using this
       form of the equation with the rates obtained from $y=y_0 e^{rt}$.
+      \label{project:alt_exp}
 
 \end{projects}
 
