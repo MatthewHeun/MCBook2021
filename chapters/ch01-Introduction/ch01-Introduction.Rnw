@@ -460,7 +460,11 @@ If the line in Figure~\ref{fig:exp} represents population or GDP, then the area
 under the line represents the resources needed to support that activity.
 For instance, the area could represent the amount of food necessary to feed the 
 population.
-(People eat an approximately constant amount of food per time, see Chapter~\ref{chap:agriculture}).
+(People eat an approximately constant amount of food per time, 
+see Chapter~\ref{chap:agriculture}.
+The various resources needed by the economy to produce a unit of GDP may be assumed
+to be constant over a short period of time but are not constant long term, 
+see Chapter~\ref{chap:resource_intensity}.)
 
 Population (P) and affluence (A) in Equation \ref{eq:IPARC} \emph{have} been growing
 exponentially. 
@@ -472,7 +476,11 @@ However, world economies are \emph{actively managed} to have a continual growth
 (say a target of 3\% GDP growth per year).
 The implication for sustainability is that the resources – for instance, the energy –
 needed by the economy in the next 23 years will be more than the total
-resources (energy) used in all of history to date. 
+resources (energy) used in all of history to date.
+(Improvements in energy efficiency over time will tend to spur further economic growth 
+rather than provide economic growth with zero resource cost;
+efficiency improvements are subject to diminishing returns, 
+see Figure~\ref{fig:E_vs_GDP_graph}.)
 Because of this exponential growth, resource use goes to infinity on a finite planet.
 Humanity is not on a sustainable path.
 
