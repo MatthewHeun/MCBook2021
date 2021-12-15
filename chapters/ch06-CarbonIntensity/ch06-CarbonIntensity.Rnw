@@ -557,16 +557,16 @@ iparc_df <- impact %>%
                         "$R$ [MJ/\\$]", "$C$ [Mt/EJ]"))
 
 # Extract the data to be used in the equation
-r_I <- iparc_df %>% trim_for_chapter(var = "$I$ [Gt/yr]") %>% rate_func()
-r_P <- iparc_df %>% trim_for_chapter(var = "$P$ [billions]") %>% rate_func()
-r_A <- iparc_df %>% trim_for_chapter(var = "$A$ [k\\$/person]") %>% rate_func()
-r_R <- iparc_df %>% trim_for_chapter(var = "$R$ [MJ/\\$]") %>% rate_func()
-r_C <- iparc_df %>% trim_for_chapter(var = "$C$ [Mt/EJ]") %>% rate_func()
+r_I_220 <- iparc_df %>% trim_for_chapter(var = "$I$ [Gt/yr]") %>% rate_func()
+r_P_220 <- iparc_df %>% trim_for_chapter(var = "$P$ [billions]") %>% rate_func()
+r_A_220 <- iparc_df %>% trim_for_chapter(var = "$A$ [k\\$/person]") %>% rate_func()
+r_R_220 <- iparc_df %>% trim_for_chapter(var = "$R$ [MJ/\\$]") %>% rate_func()
+r_C_220 <- iparc_df %>% trim_for_chapter(var = "$C$ [Mt/EJ]") %>% rate_func()
 
 # r_I_check should be same as r_I
-r_I_check <- r_P + r_A + r_R + r_C
+r_I_check <- r_P_220 + r_A_220 + r_R_220 + r_C_220
 
-stopifnot(abs(r_I_check - r_I) < 0.0005)
+stopifnot(abs(r_I_check - r_I_220) < 0.0005)
 @
 
 
@@ -607,9 +607,9 @@ print(xtable::xtable(iparc_df %>%
 \small
 \begin{tabular}{ccccccccc}
 $r_I$                       & $\approx$ & $r_P$                       & $+$ & $r_A$                       & 
-                                    $+$ & $r_R$                       & $+$ & $r_C$                         \\
-\Sexpr{rate_to_string(r_I)} & $\approx$ & \Sexpr{rate_to_string(r_P)} & $+$ & \Sexpr{rate_to_string(r_A)} &
-                                    $-$ & \Sexpr{rate_to_string(abs(r_R))} & $+$ & \Sexpr{rate_to_string(r_C)}   \\
+                                    $+$ & $r_R$                       & $+$ & $r_X$                         \\
+\Sexpr{rate_to_string(r_I_220)} & $\approx$ & \Sexpr{rate_to_string(r_P_220)} & $+$ & \Sexpr{rate_to_string(r_A_220)} &
+                                    $-$ & \Sexpr{rate_to_string(abs(r_R_220))} & $+$ & \Sexpr{rate_to_string(r_C_220)}   \\
 \end{tabular}
 \normalsize
 \end{equation}
@@ -617,7 +617,7 @@ $r_I$                       & $\approx$ & $r_P$                       & $+$ & $r
 Equation~\ref{eq:IPARC_rate_with_numbers} shows that carbon emissions 
 (Figure~\ref{fig:CarbonEmissionsGraph})
 are increasing 
-at an average rate of $r_I =$ \Sexpr{rate_to_string(r_I)} from 1800--2019. 
+at an average rate of $r_I =$ \Sexpr{rate_to_string(r_I_220)} from 1800--2019. 
 The declining energy intensity of the economy
 is the only term in the IPARC identity
 putting downward pressure on CO$_2$ emissions ($r_R < 0$).
