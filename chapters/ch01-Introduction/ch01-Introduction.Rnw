@@ -329,12 +329,12 @@ We keep the more general ``impact'' of IPAT but also generalize the more insight
 and the contamination intensity of resources ($C$).
 
 \begin{equation}
-\label{eq:IPARC}
+\label{eq:IPARC}\label{eq:IPARX}
 \small
 \begin{tabular}{ccccccccc}
-$I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $C$ \\
-\multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource &  & Contamination \\
- &  &  &  &  &  & intensity &  & intensity \\
+$I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $X$ \\
+\multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource &  & Impact intensity \\
+ &  &  &  &  &  & intensity &  & of resources \\
 $\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}\right]$ &  & $\left[\frac{\textrm{GDP}}{\textrm{capita-year}}\right]$ &  & $\left[\frac{\textrm{resources}}{\textrm{GDP}}\right]$ &  & $\left[\frac{\textrm{impact}}{\textrm{resources}}\right]$
 \end{tabular}
 \normalsize
@@ -346,10 +346,10 @@ that includes such things as global warming potential, aquifer depletion, and
 eutrophication potential.
 Population ($P$) is the number of people in the world.
 Affluence ($A$) is GDP per capita per year.
-Resource intensity ($R$) is the vector or list of all the resources necessary to
+Resource intensity ($R$) is the list (vector) of all the resources necessary to
 produce one unit of world GDP.
-Lastly, impact intensity of resources ($C$) is a matrix that lists the impacts of
-each type of resource.
+Lastly, impact intensity of resources ($X$) is a list of the impacts of
+each type of resource. (That is, $X$ is a matrix quantity.)
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -363,6 +363,9 @@ Instead, it leads to more affluence (see chapter \ref{chap:resource_intensity}).
 Likewise, it may not be possible to drive the impact(s) per unit of resource to
 zero because of diminishing returns on efficiency 
 and tradeoffs that exist between different types of impacts.
+Thus, while Equation~\ref{eq:IPARX} is useful as a conceptual framework for 
+thinking about sustainability challenges, it does \emph{not} provide a roadmap for
+sustainability solutions.
 \end{mcframe}
 
 IPARC is true because it is an identity, and it provides a useful organizing framework
