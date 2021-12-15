@@ -524,7 +524,7 @@ rate_func <- function(df) {
 
 rate_to_string <- function(rate, include_units = TRUE) {
   if (include_units) {
-    return(paste(format(round(rate*100, 1), nsmall = 1), "\\%/yr"))
+    return(paste0(format(round(rate*100, 1), nsmall = 1), "\\%/yr"))
   }
   format(round(rate*100, 1), nsmall = 1)
 }
@@ -594,7 +594,9 @@ can be used with Equation~\ref{eq:rate_calcs}
 to answer the question, 
 ``what equivalent annual rate of change ($r$) 
 would give the same start and end points
-in 1800 and 2019?''
+in 1800 and 2019 
+or
+2000 and 2019?''
 The answers are shown in Equation~\ref{eq:IPARC_rate_with_numbers}.
 
 
@@ -653,7 +655,7 @@ in the past two decades than over the past two centuries
 the world's transition to a fully carbonized energy system
 was largely complete by 1970.
 (See Figure~\ref{fig:CarbonIntensityGraph}.)
-The effect of the declining resource intensity of the economy ($r_R < 0$)
+The beneficial effect of the declining resource intensity of the economy ($r_R < 0$)
 is growing over time 
 ($r_R = -$\Sexpr{rate_to_string(abs(r_R_220))} for 1800--2019 and
 $r_R = -$\Sexpr{rate_to_string(abs(r_R_20))} for 2000--2019).
@@ -696,13 +698,14 @@ The IPARX identity
 appears to be a straight multiplication of independent terms
 ($P$, $A$, $R$, and $X$).
 But it is not.
-There are interactions among the terms that deserve mention.
+There are interactions among the terms that deserve attention.
 In this section, we note four such interactions
 for the prime example of energy and CO$_2$ emissions.
 The interactions among IPARX equation terms
 are an example of the interconnected character of human society as we know it.
 Indeed, policies directed at improving one term of the IPARX identity
-will have effects on other terms of the IPARX identity.
+will always have effects (intentional and unintentional)
+on other terms of the IPARX identity.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -724,7 +727,7 @@ many years in education and government led him to quip frequently
 % the carbon intensity of energy ($C$ in the IPARC identity) will go down.
 Energy efficiency is widely seen as a means of reducing CO$_2$ emissions.
 The thinking goes that either the resource intensity ($R$ in the IPARX identity, 
-Equation~\ref{eq:iparc}) 
+Equation~\ref{eq:IPARC}) 
 or impact intensity ($X$), or both,
 will go down as efficiency rises.
 However, energy efficiency is known to stimulate economic activity 
@@ -737,11 +740,11 @@ As $A$ increases, energy consumption will increase.
 Whether energy efficiency actually saves energy and actually saves CO$_2$ emissions
 depends on the strength of the rebound effect.
 When rebound effect is so large as to wipe out the initial energy savings,
-``backfire'' is said to occur~\cite{Sorrell:2010ul}~\cite{Sorrell:2009cg}.
+``backfire'' is said to occur~\cite{Sorrell:2009cg,Sorrell:2010ul}.
 Backfire is a threat to a low-carbon future~\cite{Brockway:2017a}.
 Thus, we must be careful about crafting policies to address 
 the $R$ or $X$ terms in the IPARX identity.
-We may inadvertently affect $A$ to the effect of undoing 
+We may inadvertently affect $A$ with the consequence of undoing 
 the good we intended.
 
 
