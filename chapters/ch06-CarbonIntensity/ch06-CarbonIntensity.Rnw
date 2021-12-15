@@ -655,8 +655,16 @@ collectively and personally.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The IPARC identity
-(especially applied to the prime example of energy and CO$_2$ emissions)
-raises questions of interactions among its terms.
+appears to be a straight multiplication of independent terms
+($P$, $A$, $R$, and $C$).
+But it is not.
+There are interactions among the terms that deserve mention.
+In this section, we note four such interactions
+for the prime example of energy and CO$_2$ emissions.
+The interactions among IPARC equation terms
+are an example of the interconnected character of human society as we know it.
+Indeed, policies directed at improving one term of the IPARC identity
+will have effects on other terms of the IPARC identity.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -677,26 +685,110 @@ many years in education and government led him to quip frequently
 % When energy efficiency is deployed as a means of reducing CO$_2$ emissions,
 % the carbon intensity of energy ($C$ in the IPARC identity) will go down.
 Energy efficiency is widely seen as a means of reducing CO$_2$ emissions.
-The thinking goes that either the resource intensity ($R$ in the IPARC identity) 
-or contamination intensity ($C$ in the IPARC identity), or both,
-will go down.
+The thinking goes that either the resource intensity ($R$ in the IPARX identity, 
+Equation~\ref{eq:iparc}) 
+or impact intensity ($X$), or both,
+will go down as efficiency rises.
 However, energy efficiency is known to stimulate economic activity 
-by a mechanism called the ``rebound effect,''
-wherein monetary savings (from reduced energy needs)
-are reinvested, causing economic growth.
+by a mechanism called the ``rebound effect''~\cite{Brockway:2021ww},
+wherein monetary savings (from reduced energy consumption at a newly-efficient device)
+are reinvested, leading to economic growth.
 Economic growth raises the GDP of an economy,
-so $A$ will increase.
+so affluence ($A$) will increase.
+As $A$ increases, energy consumption will increase.
 Whether energy efficiency actually saves energy and actually saves CO$_2$ emissions
 depends on the strength of the rebound effect.
+When rebound effect is so large as to wipe out the initial energy savings,
+``backfire'' is said to occur~\cite{Sorrell:2010ul}~\cite{Sorrell:2009cg}.
+Backfire is a threat to a low-carbon future~\cite{Brockway:2017a}.
+Thus, we must be careful about crafting policies to address 
+the $R$ or $C$ terms in the IPARC identity.
+We may inadvertently affect $A$ to the effect of undoing 
+the good we intended.
 
-The rebound effect is one example of interactions among the terms of the IPARC identity.
-Policies directed at one term of the IPARC identity
-(in this example, $R$ and $C$)
-will have effects on other terms of the IPARC identity
-(in this example, affluence, $A$).
+
+%++++++++++++++++++++++++++++++
+\subsection{Affluence and population}
+\label{sec:affluence_and_population_interaction}
+%++++++++++++++++++++++++++++++
+
+As discussed in Chapter~\ref{chap:population}, 
+population depends on many factors. 
+(For one example of the dependencies of population, 
+see the causal loop diagram from the World3 model
+shown in Figure~\ref{fig:World3loops}.)
+One clear trend from history is that increasing affluence
+leads to reduced population growth rate.
+I.e., an increase in $A$ leads to a decrease in the rate of growth of $P$.
+Thus, the affluence and population terms of the IPARX equation
+are not independent.
 
 
+%++++++++++++++++++++++++++++++
+\subsection{GDP and energy}
+\label{sec:gdp_and_energy_interaction}
+%++++++++++++++++++++++++++++++
 
+The relationship between energy consumption and GDP
+exposes another interaction among the IPARX terms
+for the primary example of energy consumption and CO$_2$ emissions.
+Historically, as GDP (equal to $P \times A$) increases, primary energy also rises,
+as shown in Figure~\ref{fig:E_vs_GDP_graph}.
+
+<<E_vs_GDP_graph, fig.cap = "World primary energy consumption and world GDP.">>=
+egdp_df <- primary_energy %>% 
+  dplyr::group_by(Year) %>%
+  dplyr::summarise(energy_EJ = sum(energy_EJ)) %>%
+  dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>%
+  dplyr::mutate(
+    gdp_trillions = world_gdp_2017_intl_dollars / 1e12
+  )
+
+egdp_df %>%
+  ggplot2::ggplot(mapping = ggplot2::aes(x = gdp_trillions, y = energy_EJ)) +
+  ggplot2::geom_line(colour = mc_title_blue, size = 1) + 
+  ggplot2::labs(x = "GDP [trillion 2017 international dollars]", 
+                y = "Primary energy consumption [EJ]") +
+  
+  MKHthemes::xy_theme()
+@
+
+
+Figure~\ref{fig:E_vs_GDP_graph} shows that
+each additional unit of GDP requires incrementally less energy than the one before.
+The line in Figure~\ref{fig:E_vs_GDP_graph} is concave downward because
+the primary energy intensity of the economy ($I_{ep}$)
+has been decreasing over time,
+as shown in Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
+Thus, as GPD ($P \times A$) rises, 
+the primary energy intensity of the economy
+($R$ in the IPARX equation for the prime example) 
+is expected to fall, 
+as it has been for 220 years.
+(See Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.)
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Renewables}
+\label{sec:renewables_interaction}
+%++++++++++++++++++++++++++++++
+
+The transition to renewable energy sources 
+is expected to reduce the CO$_2$ intensity of energy consumption
+(in the prime example), 
+if the CO$_2$ avoided by renewable generation over the lifetime of a renewable device
+(say a photovoltaic solar panel)
+is less than the CO$_2$ embodied
+in the renewable device. 
+That said, many advocates of Green Growth, a Green New Deal, and similar public policies 
+promote the idea that a transition to green infrastructure, including renewable energy,
+will stimulate enconomic growth and increase affluence.
+If they are right, 
+a renewables-driven decrease in $X$ would lead to an increase in $A$
+in the IPARX equation (Equation~\ref{eq:iparc}).
+The strength of each effect ($X$ down, $A$ up) 
+will determine whether Green Growth or a Green New Deal will actually decrease 
+environmental impacts ($I$) or CO$_2$ emissions (in the prime example).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
