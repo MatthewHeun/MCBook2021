@@ -326,13 +326,13 @@ of this book are organized around a hybrid of the IPAT and Kaya
 approaches.
 We keep the more general ``impact'' of IPAT but also generalize the more insightful
 ``technology'' expression from Kaya as the product of resource intensity of the economy ($R$)
-and the contamination intensity of resources ($C$).
+and the impact intensity of resources ($C$).
 
 \begin{equation}
 \label{eq:IPARC}
 \small
 \begin{tabular}{ccccccccc}
-$I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $X$ \\
+$I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $C$ \\
 \multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource &  & Impact intensity \\
  &  &  &  &  &  & intensity &  & of resources \\
 $\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}\right]$ &  & $\left[\frac{\textrm{GDP}}{\textrm{capita-year}}\right]$ &  & $\left[\frac{\textrm{resources}}{\textrm{GDP}}\right]$ &  & $\left[\frac{\textrm{impact}}{\textrm{resources}}\right]$
@@ -348,8 +348,8 @@ Population ($P$) is the number of people in the world.
 Affluence ($A$) is GDP per capita per year.
 Resource intensity ($R$) is the list (vector) of all the resources necessary to
 produce one unit of world GDP.
-Lastly, impact intensity of resources ($X$) is a list of the impacts of
-each type of resource. (That is, $X$ is a matrix quantity.)
+Lastly, impact intensity of resources ($C$) is a list of the impacts of
+each type of resource. (That is, $C$ is a matrix quantity.)
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
