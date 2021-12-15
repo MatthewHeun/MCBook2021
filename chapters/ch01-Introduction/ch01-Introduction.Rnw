@@ -329,7 +329,7 @@ We keep the more general ``impact'' of IPAT but also generalize the more insight
 and the contamination intensity of resources ($C$).
 
 \begin{equation}
-\label{eq:IPARC}\label{eq:IPARX}
+\label{eq:IPARC}
 \small
 \begin{tabular}{ccccccccc}
 $I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $X$ \\
