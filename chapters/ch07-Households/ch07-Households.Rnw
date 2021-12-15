@@ -307,9 +307,6 @@ household_energy_by_size %>%
 @
 
 
-
-
-
 One might think that increasing dwelling sizes are driven by more occupants per dwelling.
 However, Figure~\ref{fig:PersonsPerHousehold} 
 shows that the number of occupants per dwelling
@@ -398,7 +395,7 @@ depending on humidity and clothing.
 Residential heating and cooling reduces the temperature variation
 inside a dwelling compared to the outdoors,
 providing thermal comfort to the occupants 
-to enable work, play, and entertainment.
+to enable work, play, dining, and entertainment.
 Figure~\ref{fig:average_residential_energy} shows that
 on average across the U.S.
 thermal comfort\index{thermal comfort}
@@ -416,21 +413,12 @@ The purpose of a building envelope
 (roof, walls, windows, and base of a dwelling)
 is to shield occupants from outside weather and
 to maintain dry and comfortable conditions indoors.
+Windows\index{windows} are an important part of any building's envelope.
+They provide natural illumination while shielding occupants from weather.
 The ideal building envelope would
 eliminate both heat loss in the winter and heat gain in the summer via
 perfect insulation and
 windows that neither conduct heat nor pass radiation.
-But perfect insulation is not possible, and all windows conduct heat and
-pass thermal radiation.
-So furnaces\index{furnaces} and air conditioners\index{air conditioners}
-replace heat lost in winter and remove heat gained in the summer, respectively.
-
-Windows\index{windows} are an important part of any building's envelope.
-They provide natural illumination while shielding occupants from weather.
-Like walls and roofs, it is desirable that windows eliminate
-heat loss in the winter and heat gain the summer.
-However, windows are typically worse insulators than walls and roofs,
-owing to thin glazing.
 
 
 %..............................
@@ -458,20 +446,6 @@ to provide thermal comfort\index{thermal comfort}
 to building occupants in summer.
 Most air conditioners consume electricity to perform their cooling function, 
 causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants. 
-The energy efficiency of air conditioners\index{efficiency!air conditioners}
-is quantified by the
-Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio (SEER)}
-which is
-the ratio of cooling provided (in BTU)
-to electricity consumed (in W-hr) throughout the season.
-Larger SEER values indicate higher efficiency
-and lower operating costs compared to lower-SEER air conditioners.
-
-As of 2015, U.S.\ air conditioners must adhere to regionally dependent efficiency standards.
-In the southwest, a minimum SEER value of 14 BTU/W-hr is required.
-In other parts of the U.S., a minimum SEER value of 13 BTU/W-hr is mandated.
-%**** Find a reference for these SEER numbers. ****
-% See email.
 
 
 %++++++++++++++++++++++++++++++
@@ -488,8 +462,6 @@ consume both water and energy, typically electricity and natural gas.
 Burning natural gas emits CO$_2$.
 When the electricity for washers and dryers comes from fossil fuel sources, 
 further CO$_2$ emissions occur.
-Figure~\ref{fig:average_residential_energy} shows that lighting comprised 4.9\%
-of U.S.\ final energy consumption in 2015.
 
 Hygiene is a significant 
 cause of energy consumption in the U.S. 
@@ -522,7 +494,7 @@ of U.S.\ final energy consumption in 2015.
 \label{sec:sustainability_challenges_households}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Household energy consumption faces significant sustainability challenges.
+Energy consumption in households is a significant sustainability challenge.
 If the goal is to provide the same energy services in households
 (space heating and cooling, hygiene, and lighting) 
 with less energy consumption, 
@@ -536,8 +508,30 @@ energy service discussed above.
 \label{sec:size_and_location_challenges}
 %++++++++++++++++++++++++++++++
 
-How do we get more people into cities?
-Will cities get too big?
+A sustainability challenge emerges
+from home size size.
+Families enjoy the comfort and social status of spacious homes, 
+but large homes consume more energy.
+(See Figure~\ref{fig:EnergyConsAndHomeSize}.)
+A sustainability challenge associated with home sizes is
+``how can we build small homes that are both comfortable and
+confer social status?''
+
+Regarding location, cities are sites of large amounts of energy consumption.
+But on a per-person basis, cities are energy-efficient
+and bring sustainability advantages.
+Those advantages accrue from efficiencies that 
+accompany high population density.
+On the other hand, residents of large cities 
+can have long commutes in slow traffic,
+thereby eroding the energy benefits of high population density.
+Furthermore, high population density is often accompanied by 
+negative social dynamics.
+(See Chapters~\ref{chap:transportation} and \ref{chap:land_use_urban_planning}
+for more discussion of these tradeoffs.)
+A sustainability challenges associated with home location is 
+``how can we design cities that retain the advantages of urban living
+without the drawbacks?''
 
 
 %++++++++++++++++++++++++++++++
@@ -548,6 +542,20 @@ Will cities get too big?
 %..............................
 \paragraph{Building envelope} 
 %..............................
+
+The ideal building envelope would
+eliminate both heat loss in the winter and heat gain in the summer via
+perfect insulation.
+Like walls and roofs, it would be desirable for windows to eliminate
+heat loss in the winter and heat gain the summer.
+The perfect window would provide illumination and
+neither conduct heat nor pass thermal radiation.
+But perfect insulation is not possible, and all windows conduct heat and
+pass thermal radiation.
+In fact, windows are typically worse insulators than walls and roofs,
+owing to thin glazing.
+Therefore, furnaces\index{furnaces} and air conditioners\index{air conditioners}
+are needed to replace heat lost in winter and remove heat gained in the summer.
 
 The effectiveness of roof and wall insulation\index{insulation}
 is quantified by its R-value\index{R-value},
@@ -566,7 +574,6 @@ The Energy Star program recommends levels of roof, wall, and
 floor insulation~\cite{U.S.-Department-of-Energy:aa}.
 In Northern US climates, R-values of 49--60 hr-ft$^2$-\degF/BTU are recommended.
 
-
 The insulative properties of windows are quantified by the U-factor\index{U-factor},
 which is the inverse of an R-value.
 Typical U-factors for windows are 0.2--1.2 BTU/hr-ft$^2$-\degF.
@@ -578,6 +585,8 @@ the ratio of solar energy that enters the room to
 solar energy incident upon the window.
 SHGC values range from 0 to 1,
 and lower SHGC values indicate better insulative properties.
+A sustainability challenge associated with the building envelope
+is ``how do we design livable and enjoyable spaces that are energy efficient?''
 
 An interesting tradeoff exists between energy (and CO$_2$) embodied in structures
 and energy consumed in daily life.
@@ -588,6 +597,9 @@ while the home is in use.
 However, the home will embody more energy and carbon,
 because many insulation types
 are energy-intensive to manufacture (especially foam). 
+A sustainability challenges associated with embodied energy is
+``how do we ensure highly-insulative building envelopes
+with minimal embodied energy?''
 
 
 %..............................
@@ -621,14 +633,33 @@ and some reach AFUE values of 98\% or higher.
 A tradeoff exists between efficiency and initial cost.
 Models with high AFUE are more expensive, initially,
 but save money on fuel costs over time.
+A sustainability challenges associated with furnaces is
+``how can we encourage home builders and home owners to install 
+high-efficiency units, despite high initial cost?''
 
 
 %..............................
 \paragraph{Air conditioners} 
 %..............................
 
-Challenges for A/C systems?
+The energy efficiency of air conditioners\index{efficiency!air conditioners}
+is quantified by the
+Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio (SEER)}
+which is
+the ratio of cooling provided (in BTU)
+to electricity consumed (in W-hr) throughout the season.
+Larger SEER values indicate higher efficiency
+and lower operating costs compared to lower-SEER air conditioners.
 
+As of 2015, U.S.\ air conditioners must adhere to regionally dependent efficiency standards.
+In the southwest, a minimum SEER value of 14 BTU/W-hr is required.
+In other parts of the U.S., a minimum SEER value of 13 BTU/W-hr is mandated.
+%**** Find a reference for these SEER numbers. ****
+% See email.
+Higher efficiency is normally associated with higher purchase price.
+A sustainability challenge associated with air conditioners is
+``how can we encourage home builders and home owners to install 
+high-efficiency units, despite high initial cost?''
 
 
 %++++++++++++++++++++++++++++++
@@ -636,6 +667,16 @@ Challenges for A/C systems?
 \label{sec:hygiene_challenges}
 %++++++++++++++++++++++++++++++
 
+Water heating is the primary source of energy demand for hygiene in households.
+The efficiency of water heaters is quantified by a Uniform Energy Factor, 
+a measure of energy required to deliver warm water 
+(in the first hour for tank-style water heaters and as a rate for tankless water heaters).
+Water heaters are binned by size (very small, low, medium, and high) and
+rated within each bin.
+High-efficiency water heaters are more expensive. 
+So a sustainability challenge that emerges from water heating is
+``how can we encourage hoe builders and home owners to install 
+high-efficiency units, despite high initial cost?''
 
 
 %++++++++++++++++++++++++++++++
@@ -643,12 +684,26 @@ Challenges for A/C systems?
 \label{sec:lighting_challenges}
 %++++++++++++++++++++++++++++++
 
+Artificial lighting can be provided by any number of technologies.
+Today, LED lamps use one-eighth the energy of equivalent incandescent lamps.%
+\footnote{
+  A 100-W incandescent lamp gives about 1230~lumens or 12.3~lumens/W.
+  A 100-W equivalent LED lamp gives 1200~lumens and consumes only 12~W of electricity,
+  for an efficacy of 100~lumens/W.
+  The efficacy increase from incandescent to LED lamps is a factor of 8.
+}
+%
+In addition, LED lamps can last up to 10 times longer than incandescent lights.
+So operating costs of LED lamps are significantly less than incandescent lamps.
+Indeed, higher efficiency and longer life reduce total cost of ownership
+of LED bulbs by nearly two orders of magnitude
+compared to incandescent bulbs.
 
-
-
-
-
-
+That said, the purchase price of 
+a high-efficiency lamp is higher than the purchase price of an incandescent lamp. 
+A sustainability challenge associated with lighting is
+``how can we encourage home owners to replace incandescent lamps with LED lamps,
+despite higher initial cost?''
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -662,8 +717,27 @@ Challenges for A/C systems?
 \label{sec:size_location_transitions}
 %++++++++++++++++++++++++++++++
 
-Size and location transitions.
+The transition to urban living is proceeding quickly.
+Industrialization has meant that many people are moving to cities in search of employment.
+Figure~\ref{fig:urbanization} shows the percentage of world population
+living in urban areas.
+The household location transition is happening.
+The only question is whether that transition 
+will be managed in a sustainable direction.
 
+<<urbanization, fig.cap="Percentage of people worldwide living in urban areas (through 2015) and projections to 2050. \\emph{Source}: \\citet{UNPop:2018vr}.">>=
+percent_urban <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "WUP2018-F02-Proportion_Urban.xlsx"),
+                                    sheet = "data to plot")
+
+percent_urban %>%
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = `percent urban`)) +
+  ggplot2::geom_line(colour = mc_title_blue, size = 1) +
+  ggplot2::scale_x_continuous(breaks = seq(1950, 2050, by = 20)) +
+  ggplot2::scale_y_continuous(limits = c(0, 100)) +
+  ggplot2::labs(x = ggplot2::element_blank(),
+                y = "Urban population [%]") +
+  MKHthemes::xy_theme()
+@
 
 
 %++++++++++++++++++++++++++++++
@@ -679,7 +753,9 @@ efficiency\index{efficiency!heating and cooling!residential}
 can be obtained
 by improving the building envelope or
 by improving the efficiency of heating and air conditioning.
-
+Standards that mandate high efficiency
+are one way to ensure that efficiency of heating and cooling systems
+improves in the stock of housing. 
 
 
 %++++++++++++++++++++++++++++++
@@ -740,21 +816,13 @@ Light-Emitting Diode (LED)\index{lamps!electric!light emitting diode (LED)}
 lamps have revolutionized
 the lighting industry and improved lighting efficiency significantly.
 
-In the U.S.\ a transition to LED lamps is well underway,
+In the U.S., a transition to LED lamps is well underway,
 with incandescent and CFL lamps usually not available in stores.
-LED lamps use one-eighth the energy of an equivalent incandescent lamp.%
-\footnote{
-  A 100-W incandescent lamp gives about 1230~lumens or 12.3~lumens/W.
-  A 100-W equivalent LED lamp gives 1200~lumens and consumes only 12~W of electricity,
-  for an efficacy of 100~lumens/W.
-  The efficacy increase from incandescent to LED lamps is a factor of 8.
-}
-%
-In addition, LED lamps can last up to 10 times longer than incandescent lights.
-Higher efficiency and longer life reduce total cost of ownership
-of LED bulbs compared to incandescent bulbs by nearly two orders of magnitude.
+The lighting transition in the U.S.\ has been hastened
+by point-of-purchase subsidies for LED lamps
+and by in-home energy-efficiency audits offered by utilities.
 
-Of course, the least expensive lamp is the one you don't have to use at all.
+Of course, the least expensive lamp is the one you don't need to use.
 Building design techniques such as light harvesting\index{light harvesting}
 use natural light to reduce the need for artificial indoor lighting.
 
