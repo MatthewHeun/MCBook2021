@@ -717,10 +717,34 @@ despite higher initial cost?''
 \label{sec:size_location_transitions}
 %++++++++++++++++++++++++++++++
 
-The transition to urban living is proceeding quickly.
-Industrialization has meant that many people are moving to cities in search of employment.
+%..............................
+\paragraph{Size} 
+%..............................
+
+Figure~\ref{fig:NewHousingSize} shows that the average size of new housing starts
+rose from 1970 to 2014
+but has been falling since. 
+At the level of the average single home, 
+the recent trend is in the direction of sustainable housing, 
+as Figure~\ref{fig:EnergyConsAndHomeSize} shows that 
+energy consumption per home would be expected to fall as floor size decreases.
+However, at the level of the entire country (U.S.), 
+the increase in number of new homes
+indicates that energy consumption in the housing stock of the U.S.\ is unlikely 
+to fall in the near future. 
+Every new home adds to the energy consumed by homes in the U.S.
+I.e., efficiency gains on a per-household basis
+will be overtaken by the sheer number of new homes.
+
+
+%..............................
+\paragraph{Location} 
+%..............................
+
 Figure~\ref{fig:urbanization} shows the percentage of world population
 living in urban areas.
+The transition to urban living is proceeding quickly.
+Industrialization brings people to cities in search of employment.
 The household location transition is happening.
 The only question is whether that transition 
 will be managed in a sustainable direction.
@@ -735,7 +759,7 @@ percent_urban %>%
   ggplot2::scale_x_continuous(breaks = seq(1950, 2050, by = 20)) +
   ggplot2::scale_y_continuous(limits = c(0, 100)) +
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = "Urban population [%]") +
+                y = "Urban population worldwide [%]") +
   MKHthemes::xy_theme()
 @
 
