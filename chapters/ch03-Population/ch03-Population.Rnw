@@ -47,7 +47,7 @@ standard of living.
 Currently, humans (36\%) and domestic livestock (60\%) constitute 96\% of the mass of
 mammals on the planet \cite{BarOn2018} -- only 4\% are wild animals 
 such as whales, bison, deer, and bears. 
-Wild vertebrate populations have declined by 68\% since 1970 \cite{WWFLPR2020}. 
+The number of wild vertebrates has declined by 68\% since 1970 \cite{WWFLPR2020}. 
 Populations of insects are down ~80\% in the last 30 years \cite{Hallmann2017}.
 These numbers are alarming because they could indicate a drastic decline in the 
 quality and/or quantity of ecosystem services. One of the planetary boundaries
@@ -195,12 +195,15 @@ of all the people who have ever lived.
 %++++++++++++++++++++++++++++++
 Whether the human population will continue to grow rapidly seems like a key 
 sustainability question.
-Figure \ref{fig:UN_population_prospect} shows projections made by the United Nations
+Figure~\ref{fig:UN_population_prospect} shows projections made by the United Nations
 about the future human population. 
 Population depends only on current population (known more-or-less accurately), 
 birth rate, and death rate.
 The wide range of uncertainty in the population projections is caused by
 uncertainty about future birth and death rates.
+(Indeed, Figure~\ref{fig:UN_population_prospect} contains both the possiblity
+that world population will peak around 2050 and then fall \emph{and} the possibility
+that population will keep rising to the end of the century.)
 
 
 <<UN_population_prospect, fig.cap="Projections of world population. Projections are based on probabilistic models of total fertility and life expectancy at birth from a Bayesian hierarchical model. The light gray region shows a 95~\\% prediction interval. The dark gray region shows a 80~\\% prediction interval. \\emph{Sources}: Historical data from \\citet{Roser:2021uu}; future projections from \\citet{UNEcSoAf:2021vj}.">>=
@@ -345,8 +348,8 @@ is still growing, but the falling birth rate means slower growth and an age stru
 that begins to be more uniform. 
 In phase 4, the birth rate and death rate equalize and the population stabilizes. 
 In phase 5, the birth rate can either begin to rise again (as shown in Figure \ref{fig:dtt}) 
-\emph{or} drop \emph{below} the death rate, which leads to a decrease in total population.
-Currently, most developed countries have a birth rate that is below the
+\emph{or} drop \emph{below} the death rate, which leads to a \emph{decrease} in total population.
+Currently, most developed countries have a birth rate that is \emph{below} the
 \emph{replacement rate}.
 
 As countries move through the demographic transition, the age structure of the population,
@@ -512,18 +515,16 @@ True sustainability thinking must consider all of human society.
 
 Various writers, thinkers, and scholars throughout the world, from antiquity to 
 the present time, have predicted that population growth 
-would \emph{cause} human catastrophe via starvation.
-The assumption that population growth leads to starvation
-is called \emph{Malthusian} after Thomas Malthus (1766-1834), whose
-1798 book suggested that any increase in affluence
-was temporary. 
-(In Chapters~\ref{chap:planetary_boundaries} and~\ref{chap:affluence}, 
-affluence is measured by GDP per capita, $A$.)
+would \emph{cause} resource scarcity.
+Thomas Malthus (1766-1834), wrote a book in 1798 suggesting that any increase in
+affluence was only temporary. 
+He thought that any abundance of resources (such as food) would cause population 
+growth, which would immediately consume the abundance.
 Increasing affluence, Malthus thought, would lead to population growth, which 
 would thereby decrease GDP \emph{per capita}. 
+(In Chapters~\ref{chap:planetary_boundaries} and~\ref{chap:affluence}, 
+affluence is measured by GDP per capita, $A$.)
 Implicitly, Malthus assumed that population would grow more rapidly than affluence.
-Because population would outgrow the food supply (part of affluence), starvation 
-would result.
 The (hypothetical) inability to achieve long-term increases in affluence is 
 now called the \emph{Malthusian trap}.
 Subsequent to Malthus' work,
@@ -541,8 +542,8 @@ in both population and industrial capacity'' due to exponential growth in the
 rate of use of nonrenewable resources.
 Likewise, \emph{The Population Bomb} predicted that in ``the 1970s hundreds of 
 millions of people will starve to death.''
-Neither prediction has come to pass (to date). 
-Both books have received multiple updates, including in this millenia.
+Neither prediction has come to pass. 
+Nevertheless, both books have received multiple updates, repeating the same basic claims.
 % ********* Is the preceding sentence necessary? Helpful? 
 % If we want to keep it, perhaps we should say more?
 
