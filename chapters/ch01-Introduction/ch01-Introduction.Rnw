@@ -326,13 +326,13 @@ of this book are organized around a hybrid of the IPAT and Kaya
 approaches.
 We keep the more general ``impact'' of IPAT but also generalize the more insightful
 ``technology'' expression from Kaya as the product of resource intensity of the economy ($R$)
-and the impact intensity of resources ($C$).
+and the impact intensity of resources ($X$).
 
 \begin{equation}
-\label{eq:IPARC}
+\label{eq:IPARX}
 \small
 \begin{tabular}{ccccccccc}
-$I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $C$ \\
+$I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $X$ \\
 \multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource &  & Impact intensity \\
  &  &  &  &  &  & intensity &  & of resources \\
 $\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}\right]$ &  & $\left[\frac{\textrm{GDP}}{\textrm{capita-year}}\right]$ &  & $\left[\frac{\textrm{resources}}{\textrm{GDP}}\right]$ &  & $\left[\frac{\textrm{impact}}{\textrm{resources}}\right]$
@@ -341,20 +341,20 @@ $\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}
 \end{equation}
 
 
-In the IPARC formulation, impact ($I$) is a list of impacts (that is, a vector quantity)
+In the IPARX formulation, impact ($I$) is a list of impacts (that is, a vector quantity)
 that includes such things as global warming potential, aquifer depletion, and
 eutrophication potential.
 Population ($P$) is the number of people in the world.
 Affluence ($A$) is GDP per capita per year.
 Resource intensity ($R$) is the list (vector) of all the resources necessary to
 produce one unit of world GDP.
-Lastly, impact intensity of resources ($C$) is a list of the impacts of
-each type of resource. (That is, $C$ is a matrix quantity.)
+Lastly, impact intensity of resources ($X$) is a list of the impacts of
+each type of resource. (That is, $X$ is a matrix quantity.)
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The IPARC identity is a static relationship.
+The IPARX identity is a static relationship.
 Its terms represent steady-state levels,
 but do not necessarily show how changes in any one variable will affect the others.
 For instance, using resources more efficiently (improving resource intensity),
@@ -363,14 +363,14 @@ Instead, it leads to more affluence (see chapter \ref{chap:resource_intensity}).
 Likewise, it may not be possible to drive the impact(s) per unit of resource to
 zero because of diminishing returns on efficiency 
 and tradeoffs that exist between different types of impacts.
-Thus, while Equation~\ref{eq:IPARC} is useful as a conceptual framework for 
+Thus, while Equation~\ref{eq:IPARX} is useful as a conceptual framework for 
 thinking about sustainability challenges, it does \emph{not} provide a roadmap for
 sustainability solutions.
 \end{mcframe}
 
-IPARC is true because it is an identity, and it provides a useful organizing framework
+IPARX is true because it is an identity, and it provides a useful organizing framework
 for the following chapters.
-To illustrate the IPARC framework, energy and CO$_2$ are prime examples
+To illustrate the IPARX framework, energy and CO$_2$ are prime examples
 in the rest of the text because energy is the master resource
 % Need "energy is the master resource section??!
 and climate change is our most urgent sustainability challenge, and, of course,
@@ -466,7 +466,7 @@ The various resources needed by the economy to produce a unit of GDP may be assu
 to be constant over a short period of time but are not constant long term, 
 see Chapter~\ref{chap:resource_intensity}.)
 
-Population (P) and affluence (A) in Equation \ref{eq:IPARC} \emph{have} been growing
+Population (P) and affluence (A) in Equation \ref{eq:IPARX} \emph{have} been growing
 exponentially. 
 Chapter \ref{chap:population} gives us some hope that population won't keep growing 
 exponentially.
@@ -544,7 +544,7 @@ Biofuels (incl. U.S. corn ethanol) & 0.8-1.6 \\ %%  from T. Gomiero 2015
 \bottomrule \end{tabular}
 \end{table}
 
-This book uses the IPARC equation as a framework for thinking about sustainability.
+This book uses the IPARX equation as a framework for thinking about sustainability.
 We will consider many different resources and many different types of impact. 
 However, this book has a special focus on energy and CO$_2$ emissions.
 Climate change (see Section \ref{sec:GHGCC}) is one of the most urgent sustainability 
@@ -610,7 +610,7 @@ the full restoration is likely to cost more than \euro{8} billion.
 \item With reference to the three pillars of sustainability shown in Figure \ref{fig:venn_diagram},
       what are the environmental, social, and economic reasons \emph{for} rebuilding
       Notre-Dame de Paris and \emph{against} rebuilding? Also, consider the decision
-      to rebuild (or not) in terms of Equation \ref{eq:IPARC}, that is, what effect
+      to rebuild (or not) in terms of Equation \ref{eq:IPARX}, that is, what effect
       will rebuilding (or not) have on Impacts, Population, Affluence, Resources, and 
       the contamination impact of resource use?
       % Reflect on economic (e.g., tourism) and social (e.g., national prestige) reasons
@@ -680,7 +680,7 @@ the full restoration is likely to cost more than \euro{8} billion.
       For how long?
       Is there social value in old companies (as, say, compared to old buildings)?
 
-\item Critique generally but also with reference to Equation \ref{eq:IPARC} the statement 
+\item Critique generally but also with reference to Equation \ref{eq:IPARX} the statement 
       ``poverty is the worst form of pollution'' made by former Indian Prime 
       Minister Indira Ghandi. 
       What does this statement mean?
@@ -692,7 +692,7 @@ the full restoration is likely to cost more than \euro{8} billion.
       (HDI, see section \ref{sec:indices}) is a measure of
       life expectancy, expected years of schooling, and gross national income per capita.
       As such it is a measure of \emph{development}. With reference to Equation 
-      \ref{eq:IPARC}, can HDI continually increase sustainably? Is there a \emph{level}
+      \ref{eq:IPARX}, can HDI continually increase sustainably? Is there a \emph{level}
       of HDI that is ``enough?''
       % **** You could ask the same question about GDP. 
       % Should this question (or a version of it) be moved to the affluence chapter? ---MKH ****
@@ -757,7 +757,7 @@ the full restoration is likely to cost more than \euro{8} billion.
       form of the equation with the rates obtained from $y=y_0 e^{rt}$.
       \label{project:alt_exp}
       
-\item Create a personalized version of Equation~\ref{eq:IPARC} for yourself.
+\item Create a personalized version of Equation~\ref{eq:IPARX} for yourself.
       It can be for your current circumstances or for your anticipated future 
       circumstances.
       Compute a few of your personal impacts as the product of:

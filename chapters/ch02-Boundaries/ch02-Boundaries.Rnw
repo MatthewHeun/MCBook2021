@@ -16,7 +16,7 @@
 \epigraph{Mother Nature doesn't care if you're having fun.}{Larry Niven}
 %\epigraph{Fortune is of sluggish growth, but ruin is rapid.}{Lucius Annaeus Seneca}
 
-The left-hand side of Equation \ref{eq:IPARC} is impact $I$ on the environment.
+The left-hand side of Equation \ref{eq:IPARX} is impact $I$ on the environment.
 While there are natural processes that have (some) negative impacts on the environment,
 such as volcanic eruptions and wild fires, this book is primarily concerned with
 human impacts to the environment.
@@ -240,16 +240,16 @@ Finally, %while the risk is, perhaps, less acute than it once was,
 a global thermonuclear war would be a humanitarian and environmental disaster on a 
 truly global scale.
 
-Equation~\ref{eq:IPARC} frames sustainability in terms of ``impacts,'' that is, 
+Equation~\ref{eq:IPARX} frames sustainability in terms of ``impacts,'' that is, 
 negative effects on the environment resulting from human activity. 
 Broadly, there are two approaches for managing or responding to impacts. 
 \emph{Planetary boundaries} describe the maximum (desirable) \emph{level} of effects,
-that is, they establish a limit on the left-hand side of Equation~\ref{eq:IPARC}.
+that is, they establish a limit on the left-hand side of Equation~\ref{eq:IPARX}.
 The second method uses a weighted average, called an \emph{index}, of factors as 
 a proxy management tool. 
 The index describes a collection of behaviors. 
 Whereas the planetary boundaries are limits for single variables, indices are a mix
-of variables from both sides of Equation~\ref{eq:IPARC}.
+of variables from both sides of Equation~\ref{eq:IPARX}.
 Neither method describes \emph{how} changes should be made, but each index implicitly
 contains a description of the tradeoffs among the different variables. 
 %The boundary method establishes what we don't want to happen. 
@@ -681,7 +681,7 @@ to, for example, the extinction rate.
 Climate change is causing ocean acidification, sea level rise, and the increased 
 frequency of extreme natural disasters, such as wild fires and destructive tropical storms. 
 
-<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARC}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
+<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                    sheet = "data to plot")
 

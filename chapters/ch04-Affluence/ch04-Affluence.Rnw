@@ -32,15 +32,15 @@ it takes a serious look at its lifestyle.}{Pope John Paul II}
 %16 Subjective theory of value.
 %17 every chapter should ask 'where are opportunities for reduced impact?"
 
-Equation \ref{eq:IPARC} is our conceptual framework for considering sustainability.
+Equation \ref{eq:IPARX} is our conceptual framework for considering sustainability.
 Chapter \ref{chap:planetary_boundaries} discussed planetary boundaries and the impact
-of human activities on those boundaries, that is, the left-hand side of Equation \ref{eq:IPARC}.
+of human activities on those boundaries, that is, the left-hand side of Equation \ref{eq:IPARX}.
 Chapter \ref{chap:population} is about the first term on the right-hand side of 
-Equation \ref{eq:IPARC}, world population and its dynamics. 
+Equation \ref{eq:IPARX}, world population and its dynamics. 
 Discussion questions from Chapter \ref{chap:population} reveal a variety of ways 
 in which it is practically and morally difficult to reduce impacts ($I$) by reducing 
 population ($P$).
-This chapter examines the second term on the right-hand side of Equation \ref{eq:IPARC},
+This chapter examines the second term on the right-hand side of Equation \ref{eq:IPARX},
 affluence ($A$), and the role of human economic activity in sustainability challenges.
 Chapters \ref{chap:resource_intensity}-\ref{chap:carbon_intensity}, 
 finish the development of our framework for stability.
@@ -53,7 +53,7 @@ finish the development of our framework for stability.
 The word wealth can include happiness, prosperity, well being, welfare, but mostly it 
 means the \emph{amount} of goods, possessions, money, property, or stuff a person has.
 That is, wealth refers to a \emph{level} of material possessions or resources.
-In contrast, we will define %, partly because it makes Equation \ref{eq:IPARC} a "pronounceable" acronym,
+In contrast, we will define %, partly because it makes Equation \ref{eq:IPARX} a "pronounceable" acronym,
 the term ``affluence'' to mean the \emph{rate} a person 
 uses up goods and services, that is, the ``stuff'' bought \emph{per year}.
 
@@ -162,7 +162,7 @@ affluence and maintaining continual growth for GDP -- even though
 perpetual growth on finite resources is ultimately unsustainable
 (see Section \ref{sec:exp}).
 
-% <<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation \ref{eq:IPARC}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
+% <<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
 % world_gdppc_Maddison <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
 %                                            sheet = "GDPpc-Maddison-WB") %>% 
 %   dplyr::select(-Country, -Source)
@@ -181,7 +181,7 @@ perpetual growth on finite resources is ultimately unsustainable
 
 
 
-% <<AffluenceGraph-DeLong, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation \ref{eq:IPARC}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from De Long.">>=
+% <<AffluenceGraph-DeLong, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from De Long.">>=
 % world_gdppc_DeLong <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
 %                                            sheet = "GDPpc-DeLong-WB") %>% 
 %   dplyr::select(-Country, -Source)
@@ -199,7 +199,7 @@ perpetual growth on finite resources is ultimately unsustainable
 % @
 
 
-<<AffluenceGraph-Nordhaus, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation~\\ref{eq:IPARC}. \\emph{Sources}: data for 1990--2020 from the \\citet{World-Bank:2021un}; data for 1800--1989 inferred from GDP per capita growth rates from \\citet{Nordhaus:1997vi} via \\citet{DeLong:1997ui}.">>=
+<<AffluenceGraph-Nordhaus, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation~\\ref{eq:IPARX}. \\emph{Sources}: data for 1990--2020 from the \\citet{World-Bank:2021un}; data for 1800--1989 inferred from GDP per capita growth rates from \\citet{Nordhaus:1997vi} via \\citet{DeLong:1997ui}.">>=
 world_gdppc_Nordhaus <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
                                            sheet = "GDPpc-Nordhaus-WB") %>% 
   dplyr::select(-Country, -Source)
@@ -396,11 +396,11 @@ likewise, only things that will be consumed are produced, we are ready to introd
 the metaphor of economic metabolism.
 The economy takes in resources and produces wastes.
 Thus, the economy is the metabolism of human society.
-One way of looking at Equation~\ref{eq:IPARC} is that impacts ($I$)
+One way of looking at Equation~\ref{eq:IPARX} is that impacts ($I$)
 are the \emph{result} of economic activity.
 Total consumption is $P \times A$.
 Resources ($R$) are the feed the economy needs to live and grow.
-The impact intensity of resources, $C$, represents the wastes that the economy excretes.
+The impact intensity of resources, $X$, represents the wastes that the economy excretes.
 
 \section{Economic growth}
 \label{sec:EconGrowth}
@@ -628,7 +628,7 @@ United Nations Department of Economic and Social Affairs, Statistics Division
       \item Discuss the energy impacts of such a scheme, particularly with 
       respect to transportation. 
       \item Consider the price of such garments. What is the net effect of buying 
-      such garments as opposed to more bargain clothing (make reference to Equation \ref{eq:IPARC}
+      such garments as opposed to more bargain clothing (make reference to Equation \ref{eq:IPARX}
       in your answer). 
       \item Is clothing a good candidate for a circular economy?
       What more would you wish to know to answer with confidence? 

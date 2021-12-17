@@ -17,7 +17,7 @@
 \epigraph{Literature is mostly about having sex and not much about having children. 
 Life is the other way round.}{David Lodge}
 
-Equation \ref{eq:IPARC} expresses human impact on the Earth as the product
+Equation \ref{eq:IPARX} expresses human impact on the Earth as the product
 of population, affluence, resource intensity of the economy, and the impact intensity 
 of resources. 
 Chapter~\ref{chap:planetary_boundaries} discussed how the Earth's ecosystems 
@@ -70,11 +70,11 @@ it does in the present crisis.)
 We should distinguish between the \emph{reason(s)} and the \emph{mechanism(s)} for 
 the decline in animal populations. 
 Population decline is an \emph{impact} ($I$) from the left-hand side of 
-Equation \ref{eq:IPARC}. 
+Equation \ref{eq:IPARX}. 
 The \emph{reason(s)} (that is, the ``why'') are given on the right-hand side of
-Equation \ref{eq:IPARC} ($PARC$).
+Equation \ref{eq:IPARX} ($PARC$).
 In contrast, the \emph{mechanisms} (that is, the ``how'') behind the decline 
-in animal populations are not provided by Equation \ref{eq:IPARC}.
+in animal populations are not provided by Equation \ref{eq:IPARX}.
 Several important mechanisms are summarized below.
 Habitat destruction plays an important role in the decline of animal populations. 
 For example, in 1875 there was a swarm of Rocky Mountain locusts consisting of 
@@ -107,7 +107,7 @@ in pollination.
 \label{sec:human_population}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-As shown in Equation \ref{eq:IPARC}, the number of individual humans is one source 
+As shown in Equation \ref{eq:IPARX}, the number of individual humans is one source 
 of impacts on the planet.
 Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800 AD to present.
 In July 2021, the world's human population is 7.7--7.9 billion with a
@@ -116,7 +116,7 @@ The average growth rate over the last hundred years
 was 1.55\%/year, with a peak growth rate of 2.1\%/year between 1965 and 1970.
 
 
-<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation. \\emph{Source}: \\citet{Roser:2021uu}.">>=
+<<PopulationGraph, fig.cap="World population, $P$ in the IPARX equation. \\emph{Source}: \\citet{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
@@ -318,7 +318,7 @@ Thus, the population will grow rapidly and then stabilize.
 Demographic transition theory gives us some hope for sustainability, namely, that 
 the total human population ($P$) won't \textit{continue} to grow exponentially. 
 On the other hand, slowing of growth is predicated on increasing GDP per capita
-(the $A$ term in Equation~\ref{eq:IPARC}).
+(the $A$ term in Equation~\ref{eq:IPARX}).
 \end{mcframe}
 
 \begin{figure}
@@ -453,7 +453,7 @@ ecological places to live.
 %% https://www.newyorker.com/magazine/2004/10/18/green-manhattan
 However, urban areas are supported by vast networks, including transportation, 
 that supply resources, such as food.
-Equation \ref{eq:IPARC} indicates that higher affluence (A), not location, is a 
+Equation \ref{eq:IPARX} indicates that higher affluence (A), not location, is a 
 main source of ecological impact.
 High population density \emph{can} provide efficient transportation, minimize habitat 
 destruction, and allow economies of scale for dealing with waste materials.
@@ -503,7 +503,7 @@ True sustainability thinking must consider all of human society.
 % \item population has grown (exponentially).
 % \item land and habitat impacts from housing, agriculture (to feed more people), (finite) water resources. 
 % \item population fuels the economy (production and consumption)
-% \item Tie back to the IPARC equation.
+% \item Tie back to the IPARX equation.
 % \end{itemize}
 
 
