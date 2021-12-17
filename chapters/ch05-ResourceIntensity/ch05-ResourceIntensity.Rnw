@@ -18,7 +18,7 @@ Without abundant resources, prosperity is out of reach.}
 {Gifford Pinchot}
 
 The previous chapter addressed the sustainability implications of 
-economic affluence, the $A$ term in the IPARC equation (Equation~\ref{eq:IPARC}). 
+economic affluence, the $A$ term in the IPARX equation (Equation~\ref{eq:IPARX}). 
 Because the economy is society's metabolism, economic growth and increasing affluence
 mean more natural resources must be consumed. 
 This chapter explores the sustainability implications of resource acquisition and consumption.
@@ -88,7 +88,7 @@ Water might be ice, a sports drink, or Play-Doh.
 The process of pulling a resource into the economy is called ``extraction.''
 Equation~\ref{eq:PCbalance} indicates that everything that is extracted is consumed.
 
-The $R$ term in Equation \ref{eq:IPARC} is the resource intensity of the economy.
+The $R$ term in Equation \ref{eq:IPARX} is the resource intensity of the economy.
 $R$ is defined as
 %
 \begin{equation}\label{eq:R}
@@ -529,7 +529,7 @@ A solar panel converts solar energy (from the sun)
 to electricity (for use in many devices, including, possibly, hair dryers).
 
 Because energy is the ultimate resource,\index{energy!as ultimate resource} 
-we use energy as the prime example in the IPARC equation (Equation~\ref{eq:IPARC}).
+we use energy as the prime example in the IPARX equation (Equation~\ref{eq:IPARX}).
 There are two important questions: 
 where are we using energy, and 
 are we using energy sustainably?
@@ -608,7 +608,7 @@ coal and natural gas (barely) are being consumed at a sustainable rate.
 Oil is not being consumed at an (even weakly) sustainable rate. 
 
 
-<<EnergyPerPersonGraph, fig.cap="World primary energy consumption per person. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times C$ in the IPARC equation (Equation \\ref{eq:IPARC}) for the prime example of energy.">>=
+<<EnergyPerPersonGraph, fig.cap="World primary energy consumption per person. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times C$ in the IPARX equation (Equation \\ref{eq:IPARX}) for the prime example of energy.">>=
 
 # Find which years have data from the Europe data set
 which_years <- region_pop %>%
@@ -683,7 +683,7 @@ print(xtable::xtable(weak_sust_energy_data,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Continuing the \href{https://en.wiktionary.org/wiki/explication}{explication}
-of the IPARC identity, 
+of the IPARX identity, 
 one piece or facet of resource intensity of the economy ($R$)
 is the primary energy intensity ($I_{ep}$) of the world economy.
 $I_{ep}$ is the amount of primary energy required to create one unit (dollar) of
@@ -743,7 +743,7 @@ The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 % @
 
 
-<<EnergyIntensityGraph-Nordhaus, fig.cap="Primary energy intensity of economic activity $I_{ep}$, the prime example for $R$ in the IPARC identity, Equation~\\ref{eq:IPARC}. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<EnergyIntensityGraph-Nordhaus, fig.cap="Primary energy intensity of economic activity $I_{ep}$, the prime example for $R$ in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 # Create data for the energy intensity of the economy.
 energy_intensity <- dplyr::inner_join(
   # Get the primary energy data
@@ -780,17 +780,17 @@ has lead to greater economic productivity, that is economic growth.
 
 One reason that we are interested in the energy intensity of the economy is that 
 energy use is a source of CO$_2$ emissions.
-We can look at a restricted interpretation of Equation~\ref{eq:IPARC}, 
+We can look at a restricted interpretation of Equation~\ref{eq:IPARX}, 
 which considers only CO$_2$ emissions on the left-hand side of the equation
 and the energy intensity of the economy ($I_{ep}$) instead of $R$ on the right-hand side.
 When $I_{ep}$ falls, downward pressure is placed on CO$_2$ emissions.
 Whether CO$_2$ emissions \emph{actually} decrease
 depends on the rates of increase or decline of the other terms 
-on the right side of Equation~\ref{eq:IPARC}.
+on the right side of Equation~\ref{eq:IPARX}.
 Figure~\ref{fig:CarbonEmissionsGraph} shows that CO$_2$ emissions have been growing over time.
-So, other terms on the right side of the IPARC identity 
+So, other terms on the right side of the IPARX identity 
 are growing faster than energy intensity of the economy is declining
-(see Section \ref{sec:revisit_IPARC}).
+(see Section \ref{sec:revisit_IPARX}).
 
 There are many suggested ways to reduce the resource intensity of the economy ($R$)
 or the prime example the energy intensity of economic activity ($I_{ep}$).
@@ -883,7 +883,7 @@ combustion-based lighting technology, dated
         economically productive activities? Why? 
         What are the sustainability impacts of how you spend your time? 
         Can you quantify the sustainability impacts of how you spend your time 
-        in terms of the IPARC equation?
+        in terms of the IPARX equation?
         
   \item Where does your water come from?
         How does it get to you? Where is your waste water treated?
@@ -1000,7 +1000,7 @@ combustion-based lighting technology, dated
         Do you find techno-optimism convincing \emph{in these two cases}? 
         Does your answer for these two examples generalize to other products or resources?
         What do you make of the idea that price reductions spur increased consumption?
-        Relate your answer to the IPARC equation (Equation \ref{eq:IPARC}).
+        Relate your answer to the IPARX equation (Equation \ref{eq:IPARX}).
 
   % \item Maximum sustainable yield. If we harvest less than this we're ``leaving
   %       money on the table'' and our efficiency metrics are less good. How
@@ -1010,7 +1010,7 @@ combustion-based lighting technology, dated
   %       weak, strong, and economic levels of extraction.
   
   \item Critique/reflect on the statement ``money is a lien on energy and resources.''
-        What does this statement indicate in terms of the IPARC equation?
+        What does this statement indicate in terms of the IPARX equation?
         What differences are there, for sustainability, between affluence and wealth?
         
   
