@@ -442,12 +442,29 @@ CO$_2$ emissions from commercial last-mile deliveries.
 Figure~\ref{fig:last_mile} shows percentages of total delivery cost for several parts of a delivery journey, and
 the largest portion is the last mile.
 
-\begin{figure}
-\centering
-\includegraphics[width=\figwidth]{chapters/ch08-Transportation/figures/Last-mile_Delivery.pdf}
-\caption{Percentage of delivery cost by part of journey. Source: Honeywell.}
-\label{fig:last_mile}
-\end{figure}
+
+<<last_mile, fig.cap="Percentage of delivery cost by part of journey. \\emph{Source}: Honeywell via \\emph{Business Insider} \\cite{Dolan:2018wj}.">>=
+last_mile <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "LastMile.xlsx"), 
+                   sheet = "data to plot") %>%
+  dplyr::mutate(
+    `Part of journey` = factor(`Part of journey`, levels = c("Last mile delivery", "Line haul", "Sorting", "Collection"))
+  )
+
+last_mile %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = Percentage, fill = `Part of journey`)) + 
+  ggplot2::geom_bar(stat = "identity", width = 1) +
+  ggplot2::coord_polar(theta = "y", start = 0, direction = -1) +
+  ggplot2::geom_text(ggplot2::aes(x = 1.7, label = paste0(Percentage, "%")),
+                     position = ggplot2::position_stack(vjust = 0.5),
+                     colour = "gray50") +
+  viridis::scale_fill_viridis(discrete = TRUE) +
+  ggplot2::labs(x = NULL, y = NULL, fill = NULL) +
+  
+  MKHthemes::xy_theme() +
+  ggplot2::theme(axis.line = ggplot2::element_blank(),
+                 axis.text.x = ggplot2::element_blank(),
+                 axis.ticks = ggplot2::element_blank())
+@
 
 
 %++++++++++++++++++++++++++++++
