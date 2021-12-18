@@ -174,7 +174,7 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
     \Sexpr{knit_child("chapters/ch03-Population/ch03-Population.Rnw")}                     % \ref{chap:population}
     \Sexpr{knit_child("chapters/ch04-Affluence/ch04-Affluence.Rnw")}                       % \ref{chap:affluence}
     \Sexpr{knit_child("chapters/ch05-ResourceIntensity/ch05-ResourceIntensity.Rnw")}  % \ref{chap:resource_intensity}
-    \Sexpr{knit_child("chapters/ch06-CarbonIntensity/ch06-CarbonIntensity.Rnw")}    % \ref{chap:carbon_intensity}
+    \Sexpr{knit_child("chapters/ch06-CarbonIntensity/ch06-CarbonIntensity.Rnw")}    % \ref{chap:impact_intensity}
 
     
 %#############################################################

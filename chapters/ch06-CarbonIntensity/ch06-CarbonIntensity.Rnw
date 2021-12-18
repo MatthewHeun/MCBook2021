@@ -6,7 +6,7 @@
 
 %#############################################################
 \chapter{Impact intensity of resources ($X$)}
-\label{chap:carbon_intensity}
+\label{chap:impact_intensity}
 %#############################################################
 % \epigraph{Normal human activity is worse for nature than the biggest 
 % nuclear accident in history.}{Martin Cruz Smith}
@@ -482,7 +482,7 @@ money and resources, in particular, in terms of energy itself.
 \label{sec:revisit_IPARX}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Chapters~\ref{chap:planetary_boundaries}--\ref{chap:carbon_intensity}
+Chapters~\ref{chap:planetary_boundaries}--\ref{chap:impact_intensity}
 show the evolution of all terms in the IPARX identity (Equation~\ref{eq:IPARX})
 over the period 1800--2019
 for the prime example of energy consumption and CO$_2$ emissions.
@@ -677,7 +677,7 @@ the prime example (energy consumption and CO$_2$ emissions)
 show that we are heading in an unsustainable direction,
 because CO$_2$ emissions are growing over time.
 In other words,
-Part~\ref{part:IPARX} (Chapters~\ref{chap:planetary_boundaries}--\ref{chap:carbon_intensity})
+Part~\ref{part:IPARX} (Chapters~\ref{chap:planetary_boundaries}--\ref{chap:impact_intensity})
 has described the \emph{what} of our sustainability challenges.
 Next, Part~\ref{part:sustainability_challenges}
 (Chapters~\ref{chap:households}--\ref{chap:land_use_urban_planning})
