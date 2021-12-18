@@ -47,8 +47,8 @@ $X$ represents the economy's excreted wastes.
 
 $X$ is defined as
 %
-\begin{equation}\label{eq:C}
-  C = \frac{\textrm{total impacts produced}}{\textrm{total resources extracted}} \; .
+\begin{equation}\label{eq:X}
+  X = \frac{\textrm{total impacts produced}}{\textrm{total resources extracted}} \; .
 \end{equation}
 %
 Note that ``impacts'' are plural.
@@ -128,7 +128,7 @@ Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
 
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{chapters/ch06-CarbonIntensity/figures/Carbon_2018_United-States.png}
+\includegraphics[width=\linewidth]{chapters/ch06-ImpactIntensity/figures/Carbon_2018_United-States.png}
 \caption{U.S.\ CO$_2$ emissions in 2018.
          CO$_2$ emissions from electricity production are not attributed to end uses.
          See Table~\ref{tab:corrected_co2_emissions}.
@@ -139,7 +139,7 @@ Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
 
 
 <<US-Carbon-Table, results="asis">>=
-US_CO2_by_sector <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "US-Carbon-Emissions.xlsx"),
+US_CO2_by_sector <- readxl::read_excel(file.path("chapters", "ch06-ImpactIntensity", "datasets", "US-Carbon-Emissions.xlsx"),
                                        sheet = "data to plot") %>%
   dplyr::mutate(
     `CO2 share` = `CO2 share` * 100 # To put in % terms.
@@ -170,8 +170,8 @@ is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
 Annual primary energy consumption is shown in Figure~\ref{fig:PrimaryEnergyGraph}.
 The ratio of the lines in Figures~\ref{fig:CarbonEmissionsGraph} and
 \ref{fig:PrimaryEnergyGraph} is the carbon intensity of primary energy,
-as shown in Figure~\ref{fig:CarbonIntensityGraph}.
-The line in Figure~\ref{fig:CarbonIntensityGraph}
+as shown in Figure~\ref{fig:ImpactIntensityGraph}.
+The line in Figure~\ref{fig:ImpactIntensityGraph}
 demonstrates the long transition
 from traditional biofuels to fossil fuels.
 
@@ -186,7 +186,7 @@ When the world transitioned away from traditional biofuels toward fossil fuels,
 the carbon intensity of energy rose.
 
 
-<<CarbonIntensityGraph, fig.cap="Carbon intensity of energy, $I_{CO_2}$. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
+<<ImpactIntensityGraph, fig.cap="Carbon intensity of energy, $I_{CO_2}$. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 carbon_intensity <- dplyr::inner_join(
   CO2_emissions,
   primary_energy %>%
@@ -231,7 +231,7 @@ only politically and socially viable way to move in a sustainable direction
 with respect to our prime examples, energy and CO$_2$ emissions.
 (Note that other sustainability issues are likely to remain!)
 
-Figure~\ref{fig:CarbonIntensityGraph} shows that the carbon intensity of energy
+Figure~\ref{fig:ImpactIntensityGraph} shows that the carbon intensity of energy
 rose dramatically from 1800--1960, 
 as use of fossil fuels came to dominate the world energy story.
 (See Figure~\ref{fig:PrimaryEnergyGraph}.)
@@ -473,7 +473,7 @@ emissions reductions via any of the techniques discussed above.
 \subsection{Energy transitions}
 \label{sec:Etransitions}
 %++++++++++++++++++++++++++++++
-Figure \ref{fig:CarbonIntensityGraph} shows that a transition to a new form(s)
+Figure \ref{fig:ImpactIntensityGraph} shows that a transition to a new form(s)
 of energy takes quite a long time to complete. It is costly both in terms of
 money and resources, in particular, in terms of energy itself.
 
@@ -587,7 +587,7 @@ Select data from Figures~\ref{fig:CarbonEmissionsGraph},
 \ref{fig:PopulationGraph}, 
 \ref{fig:AffluenceGraph-Nordhaus}, 
 \ref{fig:EnergyIntensityGraph-Nordhaus}, 
-and~\ref{fig:CarbonIntensityGraph} 
+and~\ref{fig:ImpactIntensityGraph} 
 are shown in Table~\ref{tab:iparx_select_years}.
 Data from Table~\ref{tab:iparx_select_years}
 can be used with Equation~\ref{eq:rate_calcs}
@@ -605,7 +605,7 @@ years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
 
 print(xtable::xtable(iparx_df %>% 
                        dplyr::filter(Year %in% years_for_rate_table), digits = c(0, 0, 3, 2, 2, 2, 2),
-                     caption = "IPARX terms from selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:CarbonIntensityGraph}.",
+                     caption = "IPARX terms from selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}.",
                      label = "tab:iparx_select_years"),
       include.rownames = FALSE,
       include.colnames = TRUE,
@@ -654,7 +654,7 @@ in the past two decades than over the past two centuries
 (\Sexpr{rate_to_string(r_X_220)}), because 
 the world's transition to a fully carbonized energy system
 was largely complete by 1970.
-(See Figure~\ref{fig:CarbonIntensityGraph}.)
+(See Figure~\ref{fig:ImpactIntensityGraph}.)
 The beneficial effect of the declining resource intensity of the economy ($r_R < 0$)
 is growing over time 
 ($r_R = -$\Sexpr{rate_to_string(abs(r_R_220))} for 1800--2019 and
@@ -922,8 +922,8 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
       to have? 
       How can you tell?
 
-\item Consider the energy transition shown in Figure \ref{fig:CarbonIntensityGraph}.
-      What does Figure \ref{fig:CarbonIntensityGraph} indicate about the length
+\item Consider the energy transition shown in Figure \ref{fig:ImpactIntensityGraph}.
+      What does Figure \ref{fig:ImpactIntensityGraph} indicate about the length
       of time needed to transition to global carbon-free energy?
       Why did we go from a low-carbon economy (such as in 1800) to the high-carbon
       economy we have today? 
