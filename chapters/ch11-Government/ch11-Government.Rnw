@@ -666,7 +666,7 @@ for improvement.
      \centering
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/I-196.jpeg}
+           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/Interchange.jpeg}
          \caption{Highway interchange.}
          \label{fig:highway_interchange}
      \end{subfigure}
@@ -685,7 +685,11 @@ for improvement.
                  an efficiency gain, even if the buses in the photo
                  emit CO$_2$. 
                  Note that efficiency (in passenger-km) 
-                 for all vehicles increases with more passengers.}
+                 for all vehicles increases with more passengers.
+                 Highway interchange imagery
+                 \textcopyright 2021 Kent County, 
+                 Maxar Technologies, USAD Farm Service Agency, 
+                 Map data \textcopyright 2021.}
         \label{fig:collective_transport_photos}
 \end{figure}
 
@@ -793,10 +797,12 @@ Figure~\ref{fig:E85} shows a commercially available biofuel blend with low EROI.
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/SuburbanGroceryStore.jpeg}
-         \caption{Suburban grocery store. **** Update photo.}
+         \caption{Suburban grocery store and parking.}
          \label{fig:suburban_grocery_store}
      \end{subfigure}
-        \caption{Comparison of land use densities.}
+        \caption{Comparison of land use densities. 
+                 Suburban grocery store imagery \textcopyright 2021
+                 Kent County, Maxar Technologies, Map data \textcopyright 2021.}
         \label{fig:urban_suburban_densities}
 \end{figure}
 
