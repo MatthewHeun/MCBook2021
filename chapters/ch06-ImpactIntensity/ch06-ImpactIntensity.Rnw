@@ -57,9 +57,10 @@ will have effects on air, water, species diversity, land, and human communities.
 (If you are comfortable with matrix notation, $X$ can be though of as a matrix with
 impacts in columns and resources in rows.)
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Contamination intensity of resource extraction}
-\label{sec:contamination_intensity}
+\section{Impact intensity of resource extraction}
+\label{sec:impact_intensity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The impact intensity of resource extraction and consumption ($X$)
