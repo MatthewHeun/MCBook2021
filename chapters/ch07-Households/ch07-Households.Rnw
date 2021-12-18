@@ -275,7 +275,7 @@ confirms intuition that dwelling size is positively correlated
 with energy consumption.\index{households!energy consumption}
 
 
-<<EnergyConsAndHomeSize, fig.cap="Average annual U.S.\\ household energy consumption by home size in 2015. (Biomass (wood), coal, district steam, and solar thermal are excluded.) \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
+<<EnergyConsAndHomeSize, fig.cap="Average annual U.S.\\ household energy consumption by home size in 2015. Biomass (wood), coal, district steam, and solar thermal are excluded. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_size <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "ce2.1.xlsx"),
                                                sheet = "data to plot") %>% 
    dplyr::rename(
