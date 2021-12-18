@@ -2,6 +2,7 @@
 % instead of this chapter, thereby eliminating the need to switch back to book.Rnw 
 % before making the book.
 %!TEX root = ../../book.Rnw
+
 \begin{tikzpicture}
     \footnotesize
     % Investment rate
@@ -40,7 +41,7 @@
     \node[below left = -4mm and -1mm of industrial_investment] {+};
     %
     % (+) in Industrial investment loop
-    \node[above left = 0mm and -9.5mm of industrial_investment] {(+)};
+    % \node[above left = 0mm and -9.5mm of industrial_investment] {(+)};
     %
     % Services per capita
     \node[above right = 5mm and -17.5mm of service_capital] (services_per_capita) {\begin{tabular}{l} Services \\ per capita \end{tabular}};
@@ -82,7 +83,7 @@
     \node[below right = 0mm and -5mm of births_per_year] {+};
     %
     % Cycle (+) at population
-    \node[above right = -2mm and -4mm of births_per_year] {(+)};
+    % \node[above right = -2mm and -4mm of births_per_year] {(+)};
     %
     % Depreciation
     \node[right = 5mm of industrial_investment] (depreciation) {Depreciation};

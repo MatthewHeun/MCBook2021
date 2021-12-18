@@ -17,7 +17,7 @@
 \epigraph{Literature is mostly about having sex and not much about having children. 
 Life is the other way round.}{David Lodge}
 
-Equation \ref{eq:IPARC} expresses human impact on the Earth as the product
+Equation \ref{eq:IPARX} expresses human impact on the Earth as the product
 of population, affluence, resource intensity of the economy, and the impact intensity 
 of resources. 
 Chapter~\ref{chap:planetary_boundaries} discussed how the Earth's ecosystems 
@@ -47,7 +47,7 @@ standard of living.
 Currently, humans (36\%) and domestic livestock (60\%) constitute 96\% of the mass of
 mammals on the planet \cite{BarOn2018} -- only 4\% are wild animals 
 such as whales, bison, deer, and bears. 
-Wild vertebrate populations have declined by 68\% since 1970 \cite{WWFLPR2020}. 
+The number of wild vertebrates has declined by 68\% since 1970 \cite{WWFLPR2020}. 
 Populations of insects are down ~80\% in the last 30 years \cite{Hallmann2017}.
 These numbers are alarming because they could indicate a drastic decline in the 
 quality and/or quantity of ecosystem services. One of the planetary boundaries
@@ -70,11 +70,11 @@ it does in the present crisis.)
 We should distinguish between the \emph{reason(s)} and the \emph{mechanism(s)} for 
 the decline in animal populations. 
 Population decline is an \emph{impact} ($I$) from the left-hand side of 
-Equation \ref{eq:IPARC}. 
+Equation \ref{eq:IPARX}. 
 The \emph{reason(s)} (that is, the ``why'') are given on the right-hand side of
-Equation \ref{eq:IPARC} ($PARC$).
+Equation \ref{eq:IPARX} ($PARC$).
 In contrast, the \emph{mechanisms} (that is, the ``how'') behind the decline 
-in animal populations are not provided by Equation \ref{eq:IPARC}.
+in animal populations are not provided by Equation \ref{eq:IPARX}.
 Several important mechanisms are summarized below.
 Habitat destruction plays an important role in the decline of animal populations. 
 For example, in 1875 there was a swarm of Rocky Mountain locusts consisting of 
@@ -107,7 +107,7 @@ in pollination.
 \label{sec:human_population}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-As shown in Equation \ref{eq:IPARC}, the number of individual humans is one source 
+As shown in Equation \ref{eq:IPARX}, the number of individual humans is one source 
 of impacts on the planet.
 Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800 AD to present.
 In July 2021, the world's human population is 7.7--7.9 billion with a
@@ -116,7 +116,7 @@ The average growth rate over the last hundred years
 was 1.55\%/year, with a peak growth rate of 2.1\%/year between 1965 and 1970.
 
 
-<<PopulationGraph, fig.cap="World population, $P$ in the IPARC equation. \\emph{Source}: \\citet{Roser:2021uu}.">>=
+<<PopulationGraph, fig.cap="World population, $P$ in the IPARX equation. \\emph{Source}: \\citet{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
@@ -195,12 +195,15 @@ of all the people who have ever lived.
 %++++++++++++++++++++++++++++++
 Whether the human population will continue to grow rapidly seems like a key 
 sustainability question.
-Figure \ref{fig:UN_population_prospect} shows projections made by the United Nations
+Figure~\ref{fig:UN_population_prospect} shows projections made by the United Nations
 about the future human population. 
 Population depends only on current population (known more-or-less accurately), 
 birth rate, and death rate.
 The wide range of uncertainty in the population projections is caused by
 uncertainty about future birth and death rates.
+(Indeed, Figure~\ref{fig:UN_population_prospect} contains both the possiblity
+that world population will peak around 2050 and then fall \emph{and} the possibility
+that population will keep rising to the end of the century.)
 
 
 <<UN_population_prospect, fig.cap="Projections of world population. Projections are based on probabilistic models of total fertility and life expectancy at birth from a Bayesian hierarchical model. The light gray region shows a 95~\\% prediction interval. The dark gray region shows a 80~\\% prediction interval. \\emph{Sources}: Historical data from \\citet{Roser:2021uu}; future projections from \\citet{UNEcSoAf:2021vj}.">>=
@@ -272,6 +275,10 @@ population and those variables interact in complex ways.
 
 \caption{Causal loop diagram of several important feedback loops.
          Exogenous inputs are shown in \emph{italics}. 
+         ``$+$'' indicates a parameter at the start of an arrow whose increase will 
+         cause the parameter at the end of an arrow to rise.
+         ``$-$'' indicates that an increase in the parameter at the start of an arrow will 
+         cause a decrease in the parameter at the end of an arrow.
          \emph{Source}: \citet[p.~14]{Meadows:1974ut}.}
 \label{fig:World3loops}
 \end{figure}
@@ -315,7 +322,7 @@ Thus, the population will grow rapidly and then stabilize.
 Demographic transition theory gives us some hope for sustainability, namely, that 
 the total human population ($P$) won't \textit{continue} to grow exponentially. 
 On the other hand, slowing of growth is predicated on increasing GDP per capita
-(the $A$ term in Equation~\ref{eq:IPARC}).
+(the $A$ term in Equation~\ref{eq:IPARX}).
 \end{mcframe}
 
 \begin{figure}
@@ -345,8 +352,8 @@ is still growing, but the falling birth rate means slower growth and an age stru
 that begins to be more uniform. 
 In phase 4, the birth rate and death rate equalize and the population stabilizes. 
 In phase 5, the birth rate can either begin to rise again (as shown in Figure \ref{fig:dtt}) 
-\emph{or} drop \emph{below} the death rate, which leads to a decrease in total population.
-Currently, most developed countries have a birth rate that is below the
+\emph{or} drop \emph{below} the death rate, which leads to a \emph{decrease} in total population.
+Currently, most developed countries have a birth rate that is \emph{below} the
 \emph{replacement rate}.
 
 As countries move through the demographic transition, the age structure of the population,
@@ -450,7 +457,7 @@ ecological places to live.
 %% https://www.newyorker.com/magazine/2004/10/18/green-manhattan
 However, urban areas are supported by vast networks, including transportation, 
 that supply resources, such as food.
-Equation \ref{eq:IPARC} indicates that higher affluence (A), not location, is a 
+Equation \ref{eq:IPARX} indicates that higher affluence (A), not location, is a 
 main source of ecological impact.
 High population density \emph{can} provide efficient transportation, minimize habitat 
 destruction, and allow economies of scale for dealing with waste materials.
@@ -500,7 +507,7 @@ True sustainability thinking must consider all of human society.
 % \item population has grown (exponentially).
 % \item land and habitat impacts from housing, agriculture (to feed more people), (finite) water resources. 
 % \item population fuels the economy (production and consumption)
-% \item Tie back to the IPARC equation.
+% \item Tie back to the IPARX equation.
 % \end{itemize}
 
 
@@ -512,18 +519,16 @@ True sustainability thinking must consider all of human society.
 
 Various writers, thinkers, and scholars throughout the world, from antiquity to 
 the present time, have predicted that population growth 
-would \emph{cause} human catastrophe via starvation.
-The assumption that population growth leads to starvation
-is called \emph{Malthusian} after Thomas Malthus (1766-1834), whose
-1798 book suggested that any increase in affluence
-was temporary. 
-(In Chapters~\ref{chap:planetary_boundaries} and~\ref{chap:affluence}, 
-affluence is measured by GDP per capita, $A$.)
+would \emph{cause} resource scarcity.
+Thomas Malthus (1766-1834), wrote a book in 1798 suggesting that any increase in
+affluence was only temporary. 
+He thought that any abundance of resources (such as food) would cause population 
+growth, which would immediately consume the abundance.
 Increasing affluence, Malthus thought, would lead to population growth, which 
 would thereby decrease GDP \emph{per capita}. 
+(In Chapters~\ref{chap:planetary_boundaries} and~\ref{chap:affluence}, 
+affluence is measured by GDP per capita, $A$.)
 Implicitly, Malthus assumed that population would grow more rapidly than affluence.
-Because population would outgrow the food supply (part of affluence), starvation 
-would result.
 The (hypothetical) inability to achieve long-term increases in affluence is 
 now called the \emph{Malthusian trap}.
 Subsequent to Malthus' work,
@@ -541,8 +546,8 @@ in both population and industrial capacity'' due to exponential growth in the
 rate of use of nonrenewable resources.
 Likewise, \emph{The Population Bomb} predicted that in ``the 1970s hundreds of 
 millions of people will starve to death.''
-Neither prediction has come to pass (to date). 
-Both books have received multiple updates, including in this millenia.
+Neither prediction has come to pass. 
+Nevertheless, both books have received multiple updates, repeating the same basic claims.
 % ********* Is the preceding sentence necessary? Helpful? 
 % If we want to keep it, perhaps we should say more?
 

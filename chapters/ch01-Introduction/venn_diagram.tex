@@ -1,0 +1,16 @@
+% The next command tells RStudio to do "Compile PDF" on book.Rnw,
+% instead of this chapter, thereby eliminating the need to switch back to book.Rnw 
+% before making the book.
+%!TEX root = ../../book.Rnw
+
+\begin{tikzpicture}
+    \definecolor{my_purple}{HTML}{440154}
+    \definecolor{my_yellow}{HTML}{FDE725}
+    \definecolor{my_green}{HTML}{21908C}
+    \tikzstyle{every node}=[ultra thick, ellipse, 
+                            minimum width = 150pt,
+                            minimum height = 130pt]
+    \node[ellipse, draw, fill = my_yellow, opacity = 0.8, align = left] (social) at (-2,0) {Social};
+    \node[ellipse, draw, fill = my_green, opacity = 0.8, align = center] (economic) at (0,3) {Economic};
+    \node[ellipse, draw, fill = my_purple, opacity = 0.8, align = right, text=white] (environmental) at (2,0) {Environmental};
+\end{tikzpicture}

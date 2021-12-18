@@ -46,12 +46,17 @@ subplot(221)
 % plot(t4, [x4+1 -x4])
 t6=0:0.01:15;
 x6=1./(1+exp(0.1*t6.^1.6-3.5));
-t5=0:1:15;
-x5=[.37 .39 .45 .55 .71 .93 1.21 1.44 1.37 1.15 .85 .45 .3 .15 .15 .15];
-%plot(t6, x6)
-plot(t5, x5,'LineWidth',3)
+
+t5=[0    5  7    8     11  12  15];
+x5=[.37 .71 1.21 1.44 .85 .45 .10];
+
+t8=0:.01:15;
+x8=spline(t5,[0 x5 0],t8);
+
+plot(t8, x8,'LineWidth',3)
 hold on
 plot(t6, x6+.3,'-.','LineWidth',3)
 xlabel('Time')
+%xlswrite('F2point3D.xlsx', [t8; x8; t6; x6]')
 set(gca,'xtick',[])
 set(gca,'ytick',[])

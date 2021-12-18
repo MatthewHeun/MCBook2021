@@ -130,7 +130,7 @@ Those fires destroy forests, release stored carbon, and contribute to further wa
 
 \subsection{Demand for land}
 Demand for land is driven by increasing human population ($P$). 
-(See Equation~\ref{eq:IPARC}.)
+(See Equation~\ref{eq:IPARX}.)
 As mentioned in Chapter~\ref{chap:agriculture}, higher population drives agriculture,
 and agriculture is \emph{the} most prevalent way we use land.
 The land-use statistics presented in the section above show humans taking more
@@ -169,7 +169,7 @@ Unfortunately, the best lands have already been taken; what is available to the
 \emph{next} farmer or miner is typically of marginally \emph{lower} productivity.
 
 Therefore, consistent with earlier chapters, the drivers for land use are the 
-terms of the IPARC equation, ($P$), ($A$), and ($R$).
+terms of the IPARX equation, ($P$), ($A$), and ($R$).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -268,33 +268,27 @@ carbon_storage_world <- readxl::read_excel(file.path("chapters", "ch10-LandUseUr
                                      "Temp. forest", "Croplands", "Tundra")),
     storage_location = dplyr::case_when(
       metric == "Carbon stored in Vegetation (Gt/million km2)" | 
-        metric == "Total Carbon stored in Vegetation (Gt)" ~ "vegetation", 
+        metric == "Total Carbon stored in Vegetation (Gt)" ~ "Vegetation", 
       metric == "Carbon stored in Soils (Gt/million km2)" | 
-        metric == "Total Carbon stored in Soils (Gt)" ~ "soil", 
-      metric == "Area (million km2)" ~ "area",
+        metric == "Total Carbon stored in Soils (Gt)" ~ "Soil", 
+      metric == "Area (million km2)" ~ "Area",
       TRUE ~ NA_character_
     ), 
-    storage_location = factor(storage_location, levels = c("area", "vegetation", "soil")),
+    storage_location = factor(storage_location, levels = c("Area", "Vegetation", "Soil")),
     panel = dplyr::case_when(
-      metric == "Area (million km2)" ~ "area", 
-      metric == "Carbon stored in Vegetation (Gt/million km2)" | 
-        metric == "Carbon stored in Soils (Gt/million km2)" ~ "carbon_density", 
-      metric == "Total Carbon stored in Vegetation (Gt)" | 
-        metric == "Total Carbon stored in Soils (Gt)" ~ "carbon_storage", 
+      metric == "Area (million km2)" ~ 'Area~group("[", Mkm^2, "]")',
+      metric == "Carbon stored in Vegetation (Gt/million km2)" |
+        metric == "Carbon stored in Soils (Gt/million km2)" ~ 'Density~group("[", GtC/Mkm^2, "]")',
+      metric == "Total Carbon stored in Vegetation (Gt)" |
+        metric == "Total Carbon stored in Soils (Gt)" ~ 'Storage~group("[", GtC, "]")',
       TRUE ~ NA_character_
     )
   )
 
-facet_labeller <- ggplot2::as_labeller(
-     c(area = paste("Area~(", "Mkm^2", ")"),
-       carbon_density = paste("Density~(", "GtC/Mkm^2", ")"),
-       carbon_storage = paste("Storage~(", "GtC", ")")),
-     default = ggplot2::label_parsed)
-
 carbon_storage_world %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Biome", y = "vals", fill = "storage_location")) + 
   ggplot2::geom_bar(stat = "identity") + 
-  ggplot2::facet_grid(rows = "panel", scales = "free_y", labeller = facet_labeller) + 
+  ggplot2::facet_grid(rows = "panel", scales = "free_y", labeller = ggplot2::label_parsed) +
   ggplot2::labs(x = ggplot2::element_blank(), 
                 y = "Area and carbon characteristics of various biomes", 
                 fill = ggplot2::element_blank()) +
@@ -391,6 +385,7 @@ urban_density_data %>%
   ggplot2::labs(x = "Urban density [people/ha]", 
                 y = "Transport energy [GJ/person-year]", 
                 colour = ggplot2::element_blank()) +
+  ggplot2::guides(colour = "none") + 
   
   MKHthemes::xy_theme() + 
   ggplot2::theme(legend.position = c(0.8, 0.8))

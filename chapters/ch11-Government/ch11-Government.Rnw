@@ -95,12 +95,14 @@ Not all collectives are equally suited for or adept at the same tasks.
 \section{Actions}
 \label{sec:sust_actions}
 This book will consider four archetypal actions for sustainability:
+
 \begin{itemize}
-\item Choices
-\item Laws
-\item Research
-\item Education
+  \item Choices
+  \item Laws
+  \item Research
+  \item Education
 \end{itemize}
+
 The four items above are not an exhaustive list of actions that individuals
 and collectives can take for sustainability, but they are a \emph{framework}
 to guide our thinking about possible actions. 
@@ -235,7 +237,7 @@ $\textrm{SUBJECT}$    & + & $\textrm{ACTION}$        & + & $\textrm{OBJECT,}$ %\
 \end{tabular}
 \normalsize
 % It would be nice to have a label for this equation.
-% And maybe IPARC too.
+% And maybe IPARX too.
 % https://tex.stackexchange.com/questions/128050/add-equation-name-underneath-equation-number
 \end{equation}
 where the \emph{subject} of the sentence is who is doing the action. 
@@ -262,7 +264,7 @@ The goal is to be generative;
 these examples should help readers think of many other ideas.
 You should explore options that fit your local situation, 
 always keeping in mind the global perspective provided 
-by Chapters~\ref{chap:introduction}--\ref{chap:carbon_intensity}.
+by Chapters~\ref{chap:introduction}--\ref{chap:impact_intensity}.
 Questions and problems at the end of the chapter assist the exploration process.
 This chapter concludes with some collective action success stories 
 
@@ -271,7 +273,7 @@ This chapter concludes with some collective action success stories
 \label{sec:collective_population}
 %++++++++++++++++++++++++++++++
 
-% As shown in Equation~\ref{eq:IPARC}
+% As shown in Equation~\ref{eq:IPARX}
 % and in Figure~\ref{fig:PopulationGraph}, 
 % rising population ($P$) is a driver for environmental impacts ($I$). 
 % Slowing or reversing population growth would reduce environmental impacts,
@@ -293,7 +295,7 @@ This chapter concludes with some collective action success stories
 % health insurance, and subsidized college tuition
 % can affect birth rates, too. 
 
-As shown in Equation~\ref{eq:IPARC}
+As shown in Equation~\ref{eq:IPARX}
 and in Figure~\ref{fig:PopulationGraph}, 
 rising population ($P$) is a driver for environmental impacts ($I$). 
 Slowing or reversing population growth would reduce environmental impacts,
@@ -361,7 +363,7 @@ to affect birth rates.
 \label{sec:collective_affluence}
 %++++++++++++++++++++++++++++++
 
-Equation~\ref{eq:IPARC} and Figure~\ref{fig:AffluenceGraph-Nordhaus}
+Equation~\ref{eq:IPARX} and Figure~\ref{fig:AffluenceGraph-Nordhaus}
 shows that rising affluence ($A$)
 drives larger environmental impacts ($I$). 
 Ironically, the purpose of many government actions 
@@ -415,14 +417,14 @@ about the relative carbon intensity of goods~\citep{Zhao_2012}.
 \label{sec:collective_resources}
 %++++++++++++++++++++++++++++++
 
-Equation~\ref{eq:IPARC} shows that
+Equation~\ref{eq:IPARX} shows that
 rising resource intensity of the economy ($R$)
 would drive environmental impacts ($I$) upward.
 However, Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that the 
 world's economy has been reducing its resource (energy) intensity over time.
 Of the four $PARC$ terms, resource intensity of the economy ($R$) 
 is the only term moving in a sustainable direction over the long term.
-(See Equation \ref{eq:IPARC_rate_with_numbers}.)
+(See Equation \ref{eq:IPARX_rate_with_numbers}.)
 To reduce environmental impacts, 
 economies need to use even fewer resources 
 and emit less pollution per dollar of GDP.
@@ -485,12 +487,12 @@ thereby increasing the resource intensity of another economy.
 \label{sec:collective_contamination_intensity}
 %++++++++++++++++++++++++++++++
 
-Equation~\ref{eq:IPARC} shows that reducing 
-the contamination intensity of resources ($C$)
+Equation~\ref{eq:IPARX} shows that reducing 
+the impact intensity of resources ($X$)
 will cause environmental impacts ($I$) to decline.
 
 \paragraph{Government+Law+Contamination}
-One way to reduce the contamination intensity of resources ($C$)
+One way to reduce the impact intensity of resources ($X$)
 is to strengthen environmental regulations 
 at both extraction and disposal lifecycle stages.
 At the extraction stage,
@@ -944,7 +946,7 @@ Rachel Carson, \emph{Silent Spring} \cite{Carson:2002ty}.
 \item Few would claim that today's birth-control technologies are the best
       of all possible birth-control technologies.
       A better birth control would be cheaper, more effective, and easier to use.
-      Arguably, Equation~\ref{eq:IPARC} indicates that reducing future human population
+      Arguably, Equation~\ref{eq:IPARX} indicates that reducing future human population
       is the most effective thing we can do for sustainability.
       Who should have responsibility for developing next generation birth-control technology:
       government(s), corporations, nonprofits, or individuals?

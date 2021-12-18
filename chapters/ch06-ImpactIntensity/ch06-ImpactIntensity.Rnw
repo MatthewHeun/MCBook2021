@@ -5,8 +5,8 @@
 
 
 %#############################################################
-\chapter{Contamination intensity of resources ($C$)}
-\label{chap:carbon_intensity}
+\chapter{Impact intensity of resources ($X$)}
+\label{chap:impact_intensity}
 %#############################################################
 % \epigraph{Normal human activity is worse for nature than the biggest 
 % nuclear accident in history.}{Martin Cruz Smith}
@@ -32,37 +32,38 @@ the economy is society's metabolism.\index{economy!as society's metabolism}
 As such, the economy exhibits characteristics of a metabolism:
 it ingests materials and emits wastes.
 These characteristics of the economic metabolism are captured by the
-final term in Equation~\ref{eq:IPARC},
-the environmental \emph{contamination intensity} of resource extraction and consumption ($C$).
-$C$ is a function of $R$ (resource extraction and consumption) discussed in 
+final term in Equation~\ref{eq:IPARX},
+the environmental \emph{impact intensity} of resource extraction and consumption ($X$).
+$X$ is a function of $R$ (resource extraction and consumption) discussed in 
 Chapter~\ref{chap:resource_intensity} in that the 
 type and intensity of contamination is directly related to 
 the types, quantities, and processing of resources. 
 %Environmental contamination is discussed in this chapter.
 $R$ represents the inputs to the economy 
 (``food'' in the metabolic analogy) and 
-$C$ represents the economy's excreted wastes.
+$X$ represents the economy's excreted wastes.
 % We say ``represents'' and not ``is'' because both terms are \emph{normalized} to
 % a single dollar of GDP.
 
-$C$ is defined as
+$X$ is defined as
 %
-\begin{equation}\label{eq:C}
-  C = \frac{\textrm{total impacts produced}}{\textrm{total resources extracted}} \; .
+\begin{equation}\label{eq:X}
+  X = \frac{\textrm{total impacts produced}}{\textrm{total resources extracted}} \; .
 \end{equation}
 %
 Note that ``impacts'' are plural.
 Extracting and consuming all the resources necessary to make the economy run 
 will have effects on air, water, species diversity, land, and human communities.
-(If you are comfortable with matrix notation, $C$ can be though of as a matrix with
+(If you are comfortable with matrix notation, $X$ can be though of as a matrix with
 impacts in columns and resources in rows.)
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Contamination intensity of resource extraction}
-\label{sec:contamination_intensity}
+\section{Impact intensity of resource extraction}
+\label{sec:impact_intensity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The contamination intensity of resource extraction and consumption ($C$)
+The impact intensity of resource extraction and consumption ($X$)
 represents the amount of environmental contamination (emitted wastes)
 per unit of extracted and consumed resources (ingested materials).
 Examples of environmental contamination include
@@ -106,9 +107,9 @@ Because CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of}
 are a significant source of environmental contamination
 coming from energy consumption,
 it follows that the prime example of 
-environmental contamination intensity of resource extraction and consumption
-($C$ in Equation~\ref{eq:IPARC}) is CO$_2$ emissions.
-Specifically, the prime example for contamination intensity ($C$)
+environmental impact intensity of resource extraction and consumption
+($X$ in Equation~\ref{eq:IPARX}) is CO$_2$ emissions.
+Specifically, the prime example for impact intensity ($X$)
 is the CO$_2$ intensity of energy, $I_{CO_2}$.
 The units for $I_{CO_2}$ are,
 for example, tonnes of CO$_2$ emitted per MJ of energy consumed.
@@ -128,7 +129,7 @@ Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
 
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{chapters/ch06-CarbonIntensity/figures/Carbon_2018_United-States.png}
+\includegraphics[width=\linewidth]{chapters/ch06-ImpactIntensity/figures/Carbon_2018_United-States.png}
 \caption{U.S.\ CO$_2$ emissions in 2018.
          CO$_2$ emissions from electricity production are not attributed to end uses.
          See Table~\ref{tab:corrected_co2_emissions}.
@@ -139,7 +140,7 @@ Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
 
 
 <<US-Carbon-Table, results="asis">>=
-US_CO2_by_sector <- readxl::read_excel(file.path("chapters", "ch06-CarbonIntensity", "datasets", "US-Carbon-Emissions.xlsx"),
+US_CO2_by_sector <- readxl::read_excel(file.path("chapters", "ch06-ImpactIntensity", "datasets", "US-Carbon-Emissions.xlsx"),
                                        sheet = "data to plot") %>%
   dplyr::mutate(
     `CO2 share` = `CO2 share` * 100 # To put in % terms.
@@ -170,8 +171,8 @@ is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
 Annual primary energy consumption is shown in Figure~\ref{fig:PrimaryEnergyGraph}.
 The ratio of the lines in Figures~\ref{fig:CarbonEmissionsGraph} and
 \ref{fig:PrimaryEnergyGraph} is the carbon intensity of primary energy,
-as shown in Figure~\ref{fig:CarbonIntensityGraph}.
-The line in Figure~\ref{fig:CarbonIntensityGraph}
+as shown in Figure~\ref{fig:ImpactIntensityGraph}.
+The line in Figure~\ref{fig:ImpactIntensityGraph}
 demonstrates the long transition
 from traditional biofuels to fossil fuels.
 
@@ -186,7 +187,7 @@ When the world transitioned away from traditional biofuels toward fossil fuels,
 the carbon intensity of energy rose.
 
 
-<<CarbonIntensityGraph, fig.cap="Carbon intensity of energy, $I_{CO_2}$. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
+<<ImpactIntensityGraph, fig.cap="Carbon intensity of energy, $I_{CO_2}$. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 carbon_intensity <- dplyr::inner_join(
   CO2_emissions,
   primary_energy %>%
@@ -212,12 +213,12 @@ carbon_intensity %>%
 \label{sec:reducing_c}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Equation~\ref{eq:IPARC} shows that reducing any of the right-hand side terms to 0
+Equation~\ref{eq:IPARX} shows that reducing any of the right-hand side terms to 0
 will eliminate CO$_2$ emissions.
 That is, if population ($P$), 
 affluence ($A$),
 energy intensity of the economy ($I_{ep}$, the prime example for $R$)
-\emph{or} carbon intensity of energy $I_{CO_2}$ (the prime example for $C$)
+\emph{or} carbon intensity of energy $I_{CO_2}$ (the prime example for $X$)
 go to zero,
 CO$_2$ emissions will be eliminated.
 Few people want to reduce population ($P$) or affluence ($A$).
@@ -231,7 +232,7 @@ only politically and socially viable way to move in a sustainable direction
 with respect to our prime examples, energy and CO$_2$ emissions.
 (Note that other sustainability issues are likely to remain!)
 
-Figure~\ref{fig:CarbonIntensityGraph} shows that the carbon intensity of energy
+Figure~\ref{fig:ImpactIntensityGraph} shows that the carbon intensity of energy
 rose dramatically from 1800--1960, 
 as use of fossil fuels came to dominate the world energy story.
 (See Figure~\ref{fig:PrimaryEnergyGraph}.)
@@ -473,31 +474,31 @@ emissions reductions via any of the techniques discussed above.
 \subsection{Energy transitions}
 \label{sec:Etransitions}
 %++++++++++++++++++++++++++++++
-Figure \ref{fig:CarbonIntensityGraph} shows that a transition to a new form(s)
+Figure \ref{fig:ImpactIntensityGraph} shows that a transition to a new form(s)
 of energy takes quite a long time to complete. It is costly both in terms of
 money and resources, in particular, in terms of energy itself.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Revisiting the IPARC identity}
-\label{sec:revisit_IPARC}
+\section{Revisiting the IPARX identity}
+\label{sec:revisit_IPARX}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Chapters~\ref{chap:planetary_boundaries}--\ref{chap:carbon_intensity}
-show the evolution of all terms in the IPARC identity (Equation~\ref{eq:IPARC})
+Chapters~\ref{chap:planetary_boundaries}--\ref{chap:impact_intensity}
+show the evolution of all terms in the IPARX identity (Equation~\ref{eq:IPARX})
 over the period 1800--2019
 for the prime example of energy consumption and CO$_2$ emissions.
 It is instructive to quantify the direction and magnitude of changes 
-in the right-side terms ($P$, $A$, $R$, and $C$). 
-To do so, we introduce a rate version of the IPARC equation.
+in the right-side terms ($P$, $A$, $R$, and $X$). 
+To do so, we introduce a rate version of the IPARX equation.
 
-In the rate version of the IPARC equation, each term is represented 
+In the rate version of the IPARX equation, each term is represented 
 by an exponential rate of change ($r$), measured in \%/year.
-The rate version of the IPARC equation indicates 
+The rate version of the IPARX equation indicates 
 which terms are moving in a sustainable direction ($r < 0$) and
 which terms are moving in an unsustainable direction ($r > 0$).
 
-\begin{equation} \label{eq:IPARC_rate}
-  r_I \approx r_P + r_A + r_R + r_C
+\begin{equation} \label{eq:IPARX_rate}
+  r_I \approx r_P + r_A + r_R + r_X
 \end{equation}
 %
 Each rate ($r$) is calculated by
@@ -508,7 +509,7 @@ Each rate ($r$) is calculated by
 %
 where
 $r$ is the rate of change in \%/year, 
-$y$ is one of $I$, $P$, $A$, $R$, or $C$, 
+$y$ is one of $I$, $P$, $A$, $R$, or $X$, 
 subscript ``2'' indicates a later year, and 
 subscript ``1'' indicates an earlier year.
 
@@ -522,8 +523,11 @@ rate_func <- function(df) {
   (df[[2,2]]/df[[1,2]])^(1/yrs) - 1
 }
 
-rate_to_string <- function(rate) {
-  paste(round(rate*100, 1), " \\%/yr")
+rate_to_string <- function(rate, include_units = TRUE) {
+  if (include_units) {
+    return(paste0(format(round(rate*100, 1), nsmall = 1), "\\%/yr"))
+  }
+  format(round(rate*100, 1), nsmall = 1)
 }
 
 trim_for_chapter <- function(.df, var, years = c(1800, 2019)) {
@@ -543,7 +547,7 @@ resource_intensity <- energy_intensity %>%
 carbon_intensity_of_resources <- carbon_intensity %>%
   dplyr::select(Year, CO2_intensity_Mt_per_EJ)
 
-iparc_df <- impact %>% 
+iparx_df <- impact %>% 
   dplyr::full_join(population, by = "Year") %>% 
   dplyr::full_join(affluence, by = "Year") %>% 
   dplyr::full_join(resource_intensity, by = "Year") %>% 
@@ -554,19 +558,29 @@ iparc_df <- impact %>%
     gdppc_2017_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000 # convert $/person to k$/person
   ) %>% 
   magrittr::set_names(c("Year", "$I$ [Gt/yr]", "$P$ [billions]", "$A$ [k\\$/person]", 
-                        "$R$ [MJ/\\$]", "$C$ [Mt/EJ]"))
+                        "$R$ [MJ/\\$]", "$X$ [Mt/EJ]"))
 
 # Extract the data to be used in the equation
-r_I <- iparc_df %>% trim_for_chapter(var = "$I$ [Gt/yr]") %>% rate_func()
-r_P <- iparc_df %>% trim_for_chapter(var = "$P$ [billions]") %>% rate_func()
-r_A <- iparc_df %>% trim_for_chapter(var = "$A$ [k\\$/person]") %>% rate_func()
-r_R <- iparc_df %>% trim_for_chapter(var = "$R$ [MJ/\\$]") %>% rate_func()
-r_C <- iparc_df %>% trim_for_chapter(var = "$C$ [Mt/EJ]") %>% rate_func()
+r_I_220 <- iparx_df %>% trim_for_chapter(var = "$I$ [Gt/yr]") %>% rate_func()
+r_P_220 <- iparx_df %>% trim_for_chapter(var = "$P$ [billions]") %>% rate_func()
+r_A_220 <- iparx_df %>% trim_for_chapter(var = "$A$ [k\\$/person]") %>% rate_func()
+r_R_220 <- iparx_df %>% trim_for_chapter(var = "$R$ [MJ/\\$]") %>% rate_func()
+r_X_220 <- iparx_df %>% trim_for_chapter(var = "$X$ [Mt/EJ]") %>% rate_func()
+
+r_I_20 <- iparx_df %>% trim_for_chapter(var = "$I$ [Gt/yr]", years = c(2000, 2019)) %>% rate_func()
+r_P_20 <- iparx_df %>% trim_for_chapter(var = "$P$ [billions]", years = c(2000, 2019)) %>% rate_func()
+r_A_20 <- iparx_df %>% trim_for_chapter(var = "$A$ [k\\$/person]", years = c(2000, 2019)) %>% rate_func()
+r_R_20 <- iparx_df %>% trim_for_chapter(var = "$R$ [MJ/\\$]", years = c(2000, 2019)) %>% rate_func()
+r_X_20 <- iparx_df %>% trim_for_chapter(var = "$X$ [Mt/EJ]", years = c(2000, 2019)) %>% rate_func()
+
+
 
 # r_I_check should be same as r_I
-r_I_check <- r_P + r_A + r_R + r_C
+r_I_check_220 <- r_P_220 + r_A_220 + r_R_220 + r_X_220
+r_I_check_20 <- r_P_20 + r_A_20 + r_R_20 + r_X_20
 
-stopifnot(abs(r_I_check - r_I) < 0.0005)
+stopifnot(abs(r_I_check_220 - r_I_220) < 0.0005)
+stopifnot(abs(r_I_check_20 - r_I_20) < 0.0005)
 @
 
 
@@ -574,24 +588,26 @@ Select data from Figures~\ref{fig:CarbonEmissionsGraph},
 \ref{fig:PopulationGraph}, 
 \ref{fig:AffluenceGraph-Nordhaus}, 
 \ref{fig:EnergyIntensityGraph-Nordhaus}, 
-and~\ref{fig:CarbonIntensityGraph} 
-are shown in Table~\ref{tab:iparc_select_years}.
-Data from Table~\ref{tab:iparc_select_years}
+and~\ref{fig:ImpactIntensityGraph} 
+are shown in Table~\ref{tab:iparx_select_years}.
+Data from Table~\ref{tab:iparx_select_years}
 can be used with Equation~\ref{eq:rate_calcs}
 to answer the question, 
 ``what equivalent annual rate of change ($r$) 
 would give the same start and end points
-in 1800 and 2019?''
-The answers are shown in Equation~\ref{eq:IPARC_rate_with_numbers}.
+in 1800 and 2019 
+or
+2000 and 2019?''
+The answers are shown in Equation~\ref{eq:IPARX_rate_with_numbers}.
 
 
-<<IPARC_Table, results="asis">>=
+<<IPARX_Table, results="asis">>=
 years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
 
-print(xtable::xtable(iparc_df %>% 
+print(xtable::xtable(iparx_df %>% 
                        dplyr::filter(Year %in% years_for_rate_table), digits = c(0, 0, 3, 2, 2, 2, 2),
-                     caption = "IPARC terms from selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:CarbonIntensityGraph}.",
-                     label = "tab:iparc_select_years"),
+                     caption = "IPARX terms from selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}.",
+                     label = "tab:iparx_select_years"),
       include.rownames = FALSE,
       include.colnames = TRUE,
       caption.placement = "top",
@@ -603,60 +619,94 @@ print(xtable::xtable(iparc_df %>%
 
 
 \begin{equation}
-\label{eq:IPARC_rate_with_numbers}
-\small
-\begin{tabular}{ccccccccc}
-$r_I$                       & $\approx$ & $r_P$                       & $+$ & $r_A$                       & 
-                                    $+$ & $r_R$                       & $+$ & $r_C$                         \\
-\Sexpr{rate_to_string(r_I)} & $\approx$ & \Sexpr{rate_to_string(r_P)} & $+$ & \Sexpr{rate_to_string(r_A)} &
-                                    $-$ & \Sexpr{rate_to_string(abs(r_R))} & $+$ & \Sexpr{rate_to_string(r_C)}   \\
+\label{eq:IPARX_rate_with_numbers}
+\footnotesize
+\begin{tabular}{rccccccccc}
+     & $r_I$                       & $\approx$ & $r_P$                       & $+$ & $r_A$                       & 
+                                    $+$ & $r_R$                       & $+$ & $r_X$                         \\
+1800--2019 & \Sexpr{rate_to_string(r_I_220)} & $\approx$ & \Sexpr{rate_to_string(r_P_220)} & $+$ & \Sexpr{rate_to_string(r_A_220)} &
+                                    $-$ & \Sexpr{rate_to_string(abs(r_R_220))} & $+$ & \Sexpr{rate_to_string(r_X_220)}   \\
+2000--2019 & \Sexpr{rate_to_string(r_I_20)} & $\approx$ & \Sexpr{rate_to_string(r_P_20)} & $+$ & \Sexpr{rate_to_string(r_A_20)} &
+                                    $-$ & \Sexpr{rate_to_string(abs(r_R_20))} & $+$ & \Sexpr{rate_to_string(r_X_20)}   \\
 \end{tabular}
 \normalsize
 \end{equation}
 
-Equation~\ref{eq:IPARC_rate_with_numbers} shows that carbon emissions 
+Equation~\ref{eq:IPARX_rate_with_numbers} shows that carbon emissions 
 (Figure~\ref{fig:CarbonEmissionsGraph})
 are increasing 
-at an average rate of $r_I =$ \Sexpr{rate_to_string(r_I)} from 1800--2019. 
-The declining energy intensity of the economy
-is the only term in the IPARC identity
-putting downward pressure on CO$_2$ emissions ($r_R < 0$).
-All other terms on the right side of Equation~\ref{eq:IPARC_rate_with_numbers}
+at an average rate of $r_I =$ \Sexpr{rate_to_string(r_I_220)}
+since pre-industrial times (1800--2019)
+and $r_I =$ \Sexpr{rate_to_string(r_I_20)}
+over the last two decades (2000--2019). 
+(The data in Table~\ref{tab:iparx_select_years} and 
+Equation~\ref{eq:IPARX_rate_with_numbers}
+can be used to discern
+trends over other periods of time. 
+See Project~P6.\ref{item:iparx_calcs}.)
+The declining energy intensity of the economy term ($r_R$ < 0)
+is the only term in the IPARX identity
+putting downward pressure on the CO$_2$ emissions growth rate ($r_I$).
+All other terms on the right side of Equation~\ref{eq:IPARX_rate_with_numbers}
 are greater than zero and are driving CO$_2$ emissions upward.
-The positive terms represent the sources of our sustainability challenges
-for CO$_2$ emissions:
-rising population ($r_P > 0$), 
-rising affluence ($r_A > 0$), and 
-expanded use of fossil fuels ($r_C > 0$).
-Together with Equation~\ref{eq:IPARC_rate_with_numbers},
-the data in Table~\ref{tab:iparc_select_years} can be used to discern
-trends over shorter periods of time. 
+Interestingly, the impact intensity of energy ($r_X$)
+is smaller (\Sexpr{rate_to_string(r_X_20)})
+in the past two decades than over the past two centuries
+(\Sexpr{rate_to_string(r_X_220)}), because 
+the world's transition to a fully carbonized energy system
+was largely complete by 1970.
+(See Figure~\ref{fig:ImpactIntensityGraph}.)
+The beneficial effect of the declining resource intensity of the economy ($r_R < 0$)
+is growing over time 
+($r_R = -$\Sexpr{rate_to_string(abs(r_R_220))} for 1800--2019 and
+$r_R = -$\Sexpr{rate_to_string(abs(r_R_20))} for 2000--2019).
 
-The IPARC identity and 
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The positive terms in Equation~\ref{eq:IPARX_rate_with_numbers}
+represent sources of our sustainability challenges:
+rising population ($r_P$ > 0), 
+rising affluence ($r_A$ > 0), and 
+expanded use of fossil fuels ($r_X$ > 0).
+
+\end{mcframe}
+
+The IPARX identity and 
 the prime example (energy consumption and CO$_2$ emissions)
 show that we are heading in an unsustainable direction,
-because CO$_2$ emissions are accelerating over time.
+because CO$_2$ emissions are growing over time.
 In other words,
-Part~\ref{part:IPARC} (Chapters~\ref{chap:planetary_boundaries}--\ref{chap:carbon_intensity})
+Part~\ref{part:IPARX} (Chapters~\ref{chap:planetary_boundaries}--\ref{chap:impact_intensity})
 has described the \emph{what} of our sustainability challenges.
-Part~\ref{part:sustainability_challenges}
+Next, Part~\ref{part:sustainability_challenges}
 (Chapters~\ref{chap:households}--\ref{chap:land_use_urban_planning})
 explores reasons \emph{why} we face these challenges
 in several sectors of the economy.
-The final part of this book (Part~\ref{part:actions},
-Chapters~\ref{chap:government} and~\ref{chap:personal_action})
+Finally, Part~\ref{part:actions}
+(Chapters~\ref{chap:government} and~\ref{chap:personal_action})
 provides suggestions for \emph{how} to respond, 
 collectively and personally.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{IPARC interactions}
-\label{sec:iparc_interactions}
+\section{IPARX interactions}
+\label{sec:iparx_interactions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The IPARC identity
-(especially applied to the prime example of energy and CO$_2$ emissions)
-raises questions of interactions among its terms.
+The IPARX identity
+appears to be a straight multiplication of independent terms
+($P$, $A$, $R$, and $X$).
+But it is not.
+There are interactions among the terms that deserve attention.
+In this section, we note four such interactions
+for the prime example of energy and CO$_2$ emissions.
+The interactions among IPARX equation terms
+are an example of the interconnected character of human society as we know it.
+Indeed, policies directed at improving one term of the IPARX identity
+will always have effects (intentional and unintentional)
+on other terms of the IPARX identity.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -675,28 +725,112 @@ many years in education and government led him to quip frequently
 %++++++++++++++++++++++++++++++
 
 % When energy efficiency is deployed as a means of reducing CO$_2$ emissions,
-% the carbon intensity of energy ($C$ in the IPARC identity) will go down.
+% the carbon intensity of energy ($X$ in the IPARX identity) will go down.
 Energy efficiency is widely seen as a means of reducing CO$_2$ emissions.
-The thinking goes that either the resource intensity ($R$ in the IPARC identity) 
-or contamination intensity ($C$ in the IPARC identity), or both,
-will go down.
+The thinking goes that either the resource intensity ($R$ in the IPARX identity, 
+Equation~\ref{eq:IPARX}) 
+or impact intensity ($X$), or both,
+will go down as efficiency rises.
 However, energy efficiency is known to stimulate economic activity 
-by a mechanism called the ``rebound effect,''
-wherein monetary savings (from reduced energy needs)
-are reinvested, causing economic growth.
+by a mechanism called the ``rebound effect''~\cite{Brockway:2021ww},
+wherein monetary savings (from reduced energy consumption at a newly-efficient device)
+are reinvested, leading to economic growth.
 Economic growth raises the GDP of an economy,
-so $A$ will increase.
+so affluence ($A$) will increase.
+As $A$ increases, energy consumption will increase.
 Whether energy efficiency actually saves energy and actually saves CO$_2$ emissions
 depends on the strength of the rebound effect.
+When rebound effect is so large as to wipe out the initial energy savings,
+``backfire'' is said to occur~\cite{Sorrell:2009cg,Sorrell:2010ul}.
+Backfire is a threat to a low-carbon future~\cite{Brockway:2017a}.
+Thus, we must be careful about crafting policies to address 
+the $R$ or $X$ terms in the IPARX identity.
+We may inadvertently affect $A$ with the consequence of undoing 
+the good we intended.
 
-The rebound effect is one example of interactions among the terms of the IPARC identity.
-Policies directed at one term of the IPARC identity
-(in this example, $R$ and $C$)
-will have effects on other terms of the IPARC identity
-(in this example, affluence, $A$).
+
+%++++++++++++++++++++++++++++++
+\subsection{Affluence and population}
+\label{sec:affluence_and_population_interaction}
+%++++++++++++++++++++++++++++++
+
+As discussed in Chapter~\ref{chap:population}, 
+population depends on many factors. 
+(For one example of the dependencies of population, 
+see the causal loop diagram from the World3 model
+shown in Figure~\ref{fig:World3loops}.)
+One clear trend from history is that increasing affluence
+leads to reduced population growth rate.
+I.e., an increase in $A$ leads to a decrease in the rate of growth of $P$.
+Thus, the affluence and population terms of the IPARX equation
+are not independent.
 
 
+%++++++++++++++++++++++++++++++
+\subsection{GDP and energy}
+\label{sec:gdp_and_energy_interaction}
+%++++++++++++++++++++++++++++++
 
+The relationship between energy consumption and GDP
+exposes another interaction among the IPARX terms
+for the primary example of energy consumption and CO$_2$ emissions.
+Historically, as GDP (equal to $P \times A$) increases, primary energy also rises,
+as shown in Figure~\ref{fig:E_vs_GDP_graph}.
+
+<<E_vs_GDP_graph, fig.cap = "World primary energy consumption and world GDP.">>=
+egdp_df <- primary_energy %>% 
+  dplyr::group_by(Year) %>%
+  dplyr::summarise(energy_EJ = sum(energy_EJ)) %>%
+  dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>%
+  dplyr::mutate(
+    gdp_trillions = world_gdp_2017_intl_dollars / 1e12
+  )
+
+egdp_df %>%
+  ggplot2::ggplot(mapping = ggplot2::aes(x = gdp_trillions, y = energy_EJ)) +
+  ggplot2::geom_line(colour = mc_title_blue, size = 1) + 
+  ggplot2::labs(x = "GDP [trillion 2017 international dollars]", 
+                y = "Primary energy consumption [EJ]") +
+  
+  MKHthemes::xy_theme()
+@
+
+
+Figure~\ref{fig:E_vs_GDP_graph} shows that
+each additional unit of GDP requires incrementally less energy than the one before.
+The line in Figure~\ref{fig:E_vs_GDP_graph} is concave downward because
+the primary energy intensity of the economy ($I_{ep}$)
+has been decreasing over time,
+as shown in Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
+Thus, as GPD ($P \times A$) rises, 
+the primary energy intensity of the economy
+($R$ in the IPARX equation for the prime example) 
+is expected to fall, 
+as it has been for 220 years.
+(See Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.)
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Renewables}
+\label{sec:renewables_interaction}
+%++++++++++++++++++++++++++++++
+
+The transition to renewable energy sources 
+is expected to reduce the CO$_2$ intensity of energy consumption
+(in the prime example), 
+if the CO$_2$ avoided by renewable generation over the lifetime of a renewable device
+(say a photovoltaic solar panel)
+is less than the CO$_2$ embodied
+in the renewable device. 
+That said, many advocates of Green Growth, a Green New Deal, and similar public policies 
+promote the idea that a transition to green infrastructure, including renewable energy,
+will stimulate economic growth and increase affluence.
+If they are right, 
+a renewables-driven decrease in $X$ would lead to an increase in $A$
+in the IPARX equation (Equation~\ref{eq:IPARX}).
+The strength of each effect ($X \downarrow$, $A \uparrow$) 
+will determine whether Green Growth or a Green New Deal will actually decrease 
+environmental impacts ($I$) or CO$_2$ emissions (in the prime example).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -707,6 +841,7 @@ Daniel Yergin, \emph{The New Map: Energy, Climate, and the Clash of Nations},
 Penguin Press, 2020.
 
 Edward Humes, \emph{Garbology: Our Dirty Love Affair with Trash}, Avery, 2012.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
@@ -722,7 +857,7 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
 \begin{questions}
 
 \item Do renewable energy sources have ``emissions?'' If so, what are they?
-        Make reference to Equation \ref{eq:IPARC}. At a minimum, discuss
+        Make reference to Equation \ref{eq:IPARX}. At a minimum, discuss
         solar photovoltaic, wind turbines, hydro power, and renewable biofuels.
 
 \item Fossil fuels have environmental impacts other than CO$_2$. 
@@ -788,8 +923,8 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
       to have? 
       How can you tell?
 
-\item Consider the energy transition shown in Figure \ref{fig:CarbonIntensityGraph}.
-      What does Figure \ref{fig:CarbonIntensityGraph} indicate about the length
+\item Consider the energy transition shown in Figure \ref{fig:ImpactIntensityGraph}.
+      What does Figure \ref{fig:ImpactIntensityGraph} indicate about the length
       of time needed to transition to global carbon-free energy?
       Why did we go from a low-carbon economy (such as in 1800) to the high-carbon
       economy we have today? 
@@ -899,18 +1034,18 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
         E.g., do we have enough niobium (Nb)\index{niobium (NB)} for the wind turbines
         required to implement a WWS energy supply? 
         
-  \item Derive Equation~\ref{eq:IPARC_rate} from Equation~\ref{eq:IPARC}.
+  \item Derive Equation~\ref{eq:IPARX_rate} from Equation~\ref{eq:IPARX}.
         You will use $(1 + r_1)(1 + r_2) \approx r_1 + r_2 + 1$ for $r_1, r_2 <\!\!\!< 1$
         in the derivation.
   
-  \item Verify the calculations in Equation~\ref{eq:IPARC_rate_with_numbers}
-        using data from Table~\ref{tab:iparc_select_years}.
-        Then recalculate the terms in Equation~\ref{eq:IPARC_rate_with_numbers} 
+  \item Verify the calculations in Equation~\ref{eq:IPARX_rate_with_numbers}
+        using data from Table~\ref{tab:iparx_select_years}.
+        Then recalculate the terms in Equation~\ref{eq:IPARX_rate_with_numbers} 
         for the last 69 years only (1950--2019), 
         for the last 49 years only (1970--2019), and
         for the last 9 years only (2010--2019).
         How are the results similar to or different from the results 
-        of Equation~\ref{eq:IPARC_rate_with_numbers}?
+        of Equation~\ref{eq:IPARX_rate_with_numbers}? \label{item:iparx_calcs}
 
 \end{projects}
 

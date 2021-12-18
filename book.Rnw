@@ -31,6 +31,7 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 \usetikzlibrary{positioning}
+\usetikzlibrary{shapes.geometric}
 \usepackage{wrapfig}     % To wrap text around figures.
 \usepackage{xcolor}      % makes colored text.
 
@@ -163,17 +164,17 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
     
     
 %#############################################################
-\part{IPARC Identity}
-\label{part:IPARC}
+\part{IPARX Identity}
+\label{part:IPARX}
 %#############################################################
 
 \cleardoublepage
 
-    \Sexpr{knit_child("chapters/ch02-Boundaries/ch02-Boundaries.Rnw")}              % \ref{chap:planetary_boundaries}
-    \Sexpr{knit_child("chapters/ch03-Population/ch03-Population.Rnw")}                     % \ref{chap:population}
-    \Sexpr{knit_child("chapters/ch04-Affluence/ch04-Affluence.Rnw")}                       % \ref{chap:affluence}
+    \Sexpr{knit_child("chapters/ch02-Boundaries/ch02-Boundaries.Rnw")}                % \ref{chap:planetary_boundaries}
+    \Sexpr{knit_child("chapters/ch03-Population/ch03-Population.Rnw")}                % \ref{chap:population}
+    \Sexpr{knit_child("chapters/ch04-Affluence/ch04-Affluence.Rnw")}                  % \ref{chap:affluence}
     \Sexpr{knit_child("chapters/ch05-ResourceIntensity/ch05-ResourceIntensity.Rnw")}  % \ref{chap:resource_intensity}
-    \Sexpr{knit_child("chapters/ch06-CarbonIntensity/ch06-CarbonIntensity.Rnw")}    % \ref{chap:carbon_intensity}
+    \Sexpr{knit_child("chapters/ch06-ImpactIntensity/ch06-ImpactIntensity.Rnw")}      % \ref{chap:impact_intensity}
 
     
 %#############################################################
