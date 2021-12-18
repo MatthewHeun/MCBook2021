@@ -31,6 +31,7 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 \usetikzlibrary{positioning}
+\usetikzlibrary{shapes.geometric}
 \usepackage{wrapfig}     % To wrap text around figures.
 \usepackage{xcolor}      % makes colored text.
 
