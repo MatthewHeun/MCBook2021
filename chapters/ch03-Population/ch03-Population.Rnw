@@ -275,6 +275,10 @@ population and those variables interact in complex ways.
 
 \caption{Causal loop diagram of several important feedback loops.
          Exogenous inputs are shown in \emph{italics}. 
+         ``$+$'' indicates a parameter at the start of an arrow whose increase will 
+         cause the parameter at the end of an arrow to rise.
+         ``$-$'' indicates that an increase in the parameter at the start of an arrow will 
+         cause a decrease in the parameter at the end of an arrow.
          \emph{Source}: \citet[p.~14]{Meadows:1974ut}.}
 \label{fig:World3loops}
 \end{figure}
