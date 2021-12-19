@@ -483,7 +483,7 @@ thereby increasing the resource intensity of another economy.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Contamination intensity of resources}
+\subsection{Impact intensity of resources}
 \label{sec:collective_contamination_intensity}
 %++++++++++++++++++++++++++++++
 
@@ -491,7 +491,7 @@ Equation~\ref{eq:IPARX} shows that reducing
 the impact intensity of resources ($X$)
 will cause environmental impacts ($I$) to decline.
 
-\paragraph{Government+Law+Contamination}
+\paragraph{Government+Law+Impact intensity}
 One way to reduce the impact intensity of resources ($X$)
 is to strengthen environmental regulations 
 at both extraction and disposal lifecycle stages.
@@ -510,7 +510,7 @@ In terms of the prime example (energy and CO$_2$ emissions),
 government can establish greenhouse gas trading markets
 to efficiently reduce emissions and encourage renewable energy adoption.
 
-\paragraph{Corporations+Research+Contamination}
+\paragraph{Corporations+Research+Impact intensity}
 When manufacturers are also responsible for disposal, 
 disposal costs become an integral aspect of product design.
 Manufacturers become incentivized to 
@@ -668,7 +668,7 @@ for improvement.
      \centering
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/I-196.jpeg}
+           \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/Interchange.jpeg}
          \caption{Highway interchange.}
          \label{fig:highway_interchange}
      \end{subfigure}
@@ -687,7 +687,11 @@ for improvement.
                  an efficiency gain, even if the buses in the photo
                  emit CO$_2$. 
                  Note that efficiency (in passenger-km) 
-                 for all vehicles increases with more passengers.}
+                 for all vehicles increases with more passengers.
+                 Highway interchange imagery
+                 \textcopyright 2021 Kent County, 
+                 Maxar Technologies, USAD Farm Service Agency, 
+                 Map data \textcopyright 2021.}
         \label{fig:collective_transport_photos}
 \end{figure}
 
@@ -795,10 +799,12 @@ Figure~\ref{fig:E85} shows a commercially available biofuel blend with low EROI.
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch11-Government/photos/SuburbanGroceryStore.jpeg}
-         \caption{Suburban grocery store. **** Update photo.}
+         \caption{Suburban grocery store and parking.}
          \label{fig:suburban_grocery_store}
      \end{subfigure}
-        \caption{Comparison of land use densities.}
+        \caption{Comparison of land use densities. 
+                 Suburban grocery store imagery \textcopyright 2021
+                 Kent County, Maxar Technologies, Map data \textcopyright 2021.}
         \label{fig:urban_suburban_densities}
 \end{figure}
 
