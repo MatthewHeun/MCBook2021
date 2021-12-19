@@ -54,8 +54,7 @@ In the story, the king doesn't want to appear ``weak'' before his subject and so
 In sustainability, there is tremendous social (and sometimes economic) pressure
 to continue to do things ``the way they've always been done.''
 
-Figure \ref{fig:venn_diagram} shows the three areas or ``pillars'' of sustainability
-(also called the sustainability triangle), which are the
+Figure \ref{fig:venn_diagram} shows the three areas of sustainability, which are the
 the interrelated and overlapping domains of environmental sustainability,
 economic sustainability, and social sustainability.
 % We need the three pillars and idea of metrics for all three.
@@ -65,49 +64,6 @@ The complexity and interconnectivity of sustainability problems is not limited t
 one domain. 
 Pollution is an environmental problem, and a social problem, and an economic problem.
 Likewise renewable energy. And land use. And ... all the other problems humanity faces.
-
-% \begin{figure}
-% \centering
-% \includegraphics[width=\figwidth]{chapters/ch01-Introduction/figures/Three_pillars.pdf}
-% \caption{The three pillars of sustainability. 
-% Sustainability is built on three supporting pillars: 
-% environmental sustainability, economic sustainability, and social sustainability. 
-% If any of these three pillars are missing, human society collapses. 
-% Environmental sustainability refers to the ecosystem and its supporting services; 
-% see Chapter \ref{chap:planetary_boundaries}. 
-% Economic sustainability refers to human systems for creating and accounting for wealth; 
-% see Chapter \ref{chap:affluence}. 
-% Social sustainability refers to traditions and systems of human society. 
-% It is the ``hidden'' pillar of sustainability.
-% The academic subjects or domains of knowledge that study each of these pillars are
-% listed below them.}
-% \label{fig:venn_diagram}
-% \end{figure}
-% 
-% <<venn_diagram, fig.height=3, fig.width=4.5, fig.align='center', echo=FALSE, fig.cap="The three pillars of sustainability. Sustainability is built on three supporting pillars: environmental sustainability, economic sustainability, and social sustainability. If any of these three pillars are missing, human society collapses. Environmental sustainability refers to the ecosystem and its supporting services; see Chapter~\\ref{chap:planetary_boundaries}. Economic sustainability refers to human systems for creating and accounting for wealth; see Chapter~\\ref{chap:affluence}. Social sustainability refers to traditions and systems of human society. It is the hidden pillar of sustainability.", fig.scap="Aspects of sustainability.">>=
-% # The draw.triple.venn function returns a gList object,
-% # whose text we do not want to see in the output.
-% # Thus, we assign the return value to a variable,
-% # which has the effect of suppressing the text output from the function.
-% # Note that cex = 0 sets the size of the area labels to 0, thereby suppressing the numbers.
-% # draw.triple.venn(area1 = 20, area2 = 20, area3 = 13, n12 = 11, n23 = 4, n13 = 5,
-% #                                     n123 = 1, category = c("Social", "Economic", "Environmental"), lty = "blank",
-% #                                 fill = c("skyblue", "pink1", "mediumorchid"), cex = 0, cat.fontface = "Arial") %>%
-% #   invisible()
-% # Adds a circle to .plot at the specified location
-% ggplot() %>%
-%   # Add circles
-%   add_circ(r = 1, xc = 0.66667, yc = 0, fill = "green") %>%  # Environmental
-%   add_circ(r = 1, xc = -0.66667, yc = 0) %>% # Social
-%   add_circ(r = 1, xc = 0, yc = 1.2) +        # Economic
-%   # Add labels to the circles. Note that the Libre Caslon font is specified, thereby matching the book's font.
-%   annotate(geom = "text", x = 1, y = -0.2, label = "Environmental",  size = 3.5) + # family = "Libre Caslon Text",
-%   annotate(geom = "text", x = -1, y = -0.2, label = "Social", size = 3.5) + # family = "Libre Caslon Text",
-%   annotate(geom = "text", x = 0, y = 1.4, label = "Economic", size = 3.5) + # family = "Libre Caslon Text",
-%   # Eliminate all axes and labels besides the ones we added ourselves.
-%   theme_void()
-% @
-
 
 \begin{figure}
 \centering
