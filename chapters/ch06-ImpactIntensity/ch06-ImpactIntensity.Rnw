@@ -36,9 +36,9 @@ final term in Equation~\ref{eq:IPARX},
 the environmental \emph{impact intensity} of resource extraction and consumption ($X$).
 $X$ is a function of $R$ (resource extraction and consumption) discussed in 
 Chapter~\ref{chap:resource_intensity} in that the 
-type and intensity of contamination is directly related to 
+type and intensity of environmental impacts is directly related to 
 the types, quantities, and processing of resources. 
-%Environmental contamination is discussed in this chapter.
+%Environmental impact intensity is discussed in this chapter.
 $R$ represents the inputs to the economy 
 (``food'' in the metabolic analogy) and 
 $X$ represents the economy's excreted wastes.
@@ -48,7 +48,7 @@ $X$ represents the economy's excreted wastes.
 $X$ is defined as
 %
 \begin{equation}\label{eq:X}
-  X = \frac{\textrm{total impacts produced}}{\textrm{total resources extracted}} \; .
+  X = \frac{\textrm{total environmental impacts produced}}{\textrm{total resources extracted}} \; .
 \end{equation}
 %
 Note that ``impacts'' are plural.
@@ -64,9 +64,9 @@ impacts in columns and resources in rows.)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The impact intensity of resource extraction and consumption ($X$)
-represents the amount of environmental contamination (emitted wastes)
+represents the amount of environmental impact (emitted wastes)
 per unit of extracted and consumed resources (ingested materials).
-Examples of environmental contamination include
+Examples of environmental impacts include
 water eutrophication\index{eutrophication} (from fertilizer runoff),
 SO$_2$\index{sulfur dioxide (SO$_2$)!emissions of} emissions (from burning sulfurous coal),
 CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of} (from burning fossil fuels),
@@ -74,22 +74,22 @@ desertification\index{desertification}
 (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and
 species loss\index{species loss} (due to habitat loss, environmental toxins, and over-exploitation).
 With reference to a few of the critical materials in Table~\ref{tab:CRMs},
-specific examples of environmental contamination caused by resource extraction and consumption include:
+specific examples of environmental impacts caused by resource extraction and consumption include:
 %
 \begin{itemize}
 
-  \item Air, water, and soil pollution~\cite{Lee:2017ui} (environmental contamination) in the form of
+  \item Air, water, and soil pollution~\cite{Lee:2017ui} (environmental impact) in the form of
         bauxite dust,\index{bauxite!dust}
         sulfur dioxide (SO$_2$), and
         nitrous oxides (NO$_\mathrm{x}$) emissions\index{nitrous oxides (NO$_\mathrm{x}$)!emissions of}
         from bauxite mining (material extraction),
 
-  \item Toxic tailings (environmental contamination)
+  \item Toxic tailings (environmental impact)
         from tungsten\index{tungsten (W)} (material extraction)
         mining operations~\cite{Lee:2021tz}, and
 
   \item Deforestation\index{deforestation} and
-        reduced forest quality~\cite{Kissinger:2020ut} (environmental contamination)
+        reduced forest quality~\cite{Kissinger:2020ut} (environmental impact)
         to make way for rubber plantations\index{rubber plantations} (material extraction)
         in southeast Asia.
 
@@ -104,7 +104,7 @@ specific examples of environmental contamination caused by resource extraction a
 As discussed in Chapter~\ref{chap:resource_intensity},
 the prime example of resource extraction and consumption is energy.
 Because CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of}
-are a significant source of environmental contamination
+are a significant source of environmental impact
 coming from energy consumption,
 it follows that the prime example of 
 environmental impact intensity of resource extraction and consumption
@@ -865,7 +865,7 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
       such as the Exxon Valdez and the Deep Water Horizon disasters.
       (The International Tanker Owners Pollution Federation reports ``only'' 18 oil
       spills larger than 700 tonnes for the period 2010-2019 versus 245 in the 1970s.) 
-      Other examples include contamination by hydraulic fracking
+      Other examples include environmental impacts from hydraulic fracking
       fluids; air quality issues associated with burning fossil fuels such as
       soot, smog, and ozone; and soil contamination from leaking underground 
       fuel storage tanks.
