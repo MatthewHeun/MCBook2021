@@ -665,11 +665,13 @@ The clear trend is upward, with small drops corresponding to years of economic r
 Greenhouse gas emissions (primarily CO$_2$ released from burning fossil fuels) 
 are causing the average global temperature to increase. 
 The current average atmospheric CO$_2$ concentration is an example of humanity
-exceeding a planetary boundary. Because the carbon cycle is one of Earth's 
-regulating and support ecosystem services, and because the atmosphere is comprehensively
-global, the \emph{impacts} of climate on the environment are many. 
+exceeding a planetary boundary. 
+Because the carbon cycle is one of Earth's 
+regulating and support ecosystem services and
+because the atmosphere is comprehensively global, 
+the \emph{impacts} of climate on the environment are many. 
 Climate change is the term used to describe the results of the greenhouse effect.
-Climate change is interacting with many other planetary systems and so contributes
+Climate change is interacting with many other planetary systems and thus contributes
 to, for example, the extinction rate. 
 Climate change is causing ocean acidification, sea level rise, and the increased 
 frequency of extreme natural disasters, such as wild fires and destructive tropical storms. 
@@ -693,19 +695,13 @@ CO2_emissions %>%
   MKHthemes::xy_theme()
 @
 
-CO$_2$ is an especially important sustainability issue because of its widespread 
-effects. 
-It is also especially important for at least two other reasons. 
-First, it may trigger a tipping point or points in the Earth's ecosystems, for instance,
+CO$_2$ emissions are an especially important sustainability issue 
+because of widespread effects. 
+CO$_2$ emissions are also especially important for at least two other reasons. 
+First, CO$_2$ emissions may trigger a tipping point or tipping points in the Earth's ecosystems,
 related to deforestation, wild fires, ocean acidification, and species loss. 
-Second, CO$_2$ is a variable humans can control. 
-Anthropogenic CO$_2$ emissions are primarily related to human energy use.
-
-% %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-% \begin{mcframe}[0.90\textwidth](0.85\textwidth)
-% %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-% CO$_2$ is the prime example % this really just repeats the box from chapter 1.
-% \end{mcframe}
+Second, most greenhouse gas emissions are within human control, 
+especially regarding fossil fuels and agriculture. 
 
 % see http://clivebest.com/blog/?p=1169 and references therein.
 Here's a brief description of how climate change is happening. 
