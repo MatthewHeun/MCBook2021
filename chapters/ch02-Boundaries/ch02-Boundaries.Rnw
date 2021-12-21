@@ -515,22 +515,22 @@ data.frame(t = seq(-3, 6, by = 0.1)) %>%
      \hfill
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-<<Sinusoids, fig.width=2.5, fig.height=2, fig.align="center", warning=FALSE>>=
-data.frame(t = seq(0, 1.1*pi, by = 0.005*pi)) %>% 
+<<Sinusoids, fig.width=2.5, fig.height=2, fig.align="center">>=
+data.frame(t = seq(0.8, 1.1*pi, by = 0.005*pi)) %>% 
   dplyr::mutate(
     # Sinusoids
     development = exp(-t/2) * sin(2*pi*t), 
     bound = 0.75 * exp(-t/2) * cos(2*pi*(t+0.2)) + 0.3
   ) %>% 
-  boundary_graph() + 
-  ggplot2::xlim(0.75, NA)
+  boundary_graph() # + 
+  # ggplot2::xlim(0.75, NA)
 @
          \caption{Robust limits.}
          \label{fig:GA3}
      \end{subfigure}
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-<<ErodableBounds, fig.width=2.5, fig.height=2, fig.align="center", warning=FALSE>>=
+<<ErodableBounds, fig.width=2.5, fig.height=2, fig.align="center">>=
 erodable_limit_data <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "F2point3D.xlsx"),
                                           sheet = "data to plot")
 erodable_limit_data %>% 
