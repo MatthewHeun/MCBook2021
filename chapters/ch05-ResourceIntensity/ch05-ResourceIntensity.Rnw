@@ -208,12 +208,18 @@ toilets and the sewer systems that remove wastes.
 Furthermore, the operation of all these systems requires energy, the master resource.
 
 Although any raw material can be essential for a given product,
-the European Commission maintains a list Critical Raw Materials (CRMs)\index{materials!critical!raw}
-with special importance across a wide range of industries.
-See Table~\ref{tab:CRMs} for critical materials and industries.
+the European Commission maintains a list of Critical Raw Materials (CRMs)\index{materials!critical!raw}
+with special importance 
+across a wide range of industries.
+See Table~\ref{tab:CRMs} for critical materials and industries for the European Union.
 One interesting feature of Table~\ref{tab:CRMs} is the large number of critical raw materials.
 Another interesting feature of Table~\ref{tab:CRMs} is the breadth of applications; 
 most of the critical materials are used throughout the economy.
+A material may be critical to a region for any number of reasons:
+breadth of application, 
+lack of internal production capability, 
+etc.
+Each region will have its own list of CRMs.
 
 
 <<CRMs, results="asis">>=
@@ -794,13 +800,73 @@ are growing faster than energy intensity of the economy is declining
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Energy transitions}
-\label{sec:energy_transitions}
+\section{Patterns of resource extraction and resource transitions}
+\label{sec:resource_transitions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-One way to become more sustainable is to transition the
-economy to use fewer resources per unit of GDP produced, 
+Extraction of finite resources
+(such as coal, oil, natural gas, lithium, neodymium, phosphorous, or helium)
+follows a pattern through time.
+In the beginning, extraction of a useful but finite resource accelerates
+as demand climbs and technologies are developed to reduce the cost of extraction.
+Through time, the acceleration of the resource extraction rate declines, 
+eventually peaking and declining.
+A clear example of a production curve for a finite resource is 
+extraction of coal in the UK, shown in Figure~\ref{fig:UK_coal_extraction}.
+
+<<UK_coal_extraction, fig.cap="UK coal production. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv} for 1830--2009; \\citet{UK_dept_BEIS:2021} for 2010--2020.">>=
+uk_coal_extraction <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "CoalGraph.xlsx"), 
+                                         sheet = "data to plot") %>% 
+  dplyr::mutate(
+    Year = as.numeric(Year)
+  ) %>% 
+  dplyr::filter(
+    complete.cases(.)
+  )
+
+uk_coal_extraction %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = UK_coal_production_Mt)) + 
+  ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+  
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = "UK coal production [Mt/year]") +
+  
+  MKHthemes::xy_theme()
+@
+
+The cumulative production of a limited resource follows a logistic curve, 
+with an inflection point (from concave upward to concave downward) 
+at the production peak 
+and leveling toward the end. 
+
+<<UK_coal_logistic, fig.cap="UK coal logistic curve. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv}, 1829--2009; own calculations, 2010--2020.">>=
+uk_coal_extraction %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = q_Gt)) + 
+  ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+  
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = "UK coal cumulatie production [Gt]") +
+  
+  MKHthemes::xy_theme()
+@
+
+If production of finite resources shifts to other countries
+(coal production is now dominated by China, India, the U.S., and Australia)
+and international trade is possible, 
+the world will not face shortages 
+until all regions are exhausted of the resource. 
+Each region is at different places on its logistic curve
+for resource production. 
+
+One way to slow down the inevitable march of time 
+along logistic curves for finite resources is to transition 
+economies to use fewer resources per unit of GDP produced, 
 i.e., to reduce the resource intensity of the economy ($R$).
+Reduction of resource intensity of the economy is sometimes called \emph{dematerialization}. 
+Reducing $R$ will reduce resource consumption but only if 
+GDP stays constant or grows more slowly than the 
+rate at which $R$ decreases.
+
 For the prime example of energy and CO$_2$ emissions, 
 reducing $R$ means reducing the energy intensity of economic activity
 ($I_{ep}$), 
