@@ -779,7 +779,7 @@ Innovation, in the form of energy efficiency,
 has lead to greater economic productivity, that is economic growth.
 
 One reason that we are interested in the energy intensity of the economy is that 
-energy use is a source of CO$_2$ emissions.
+energy consumption is a source of CO$_2$ emissions.
 We can look at a restricted interpretation of Equation~\ref{eq:IPARX}, 
 which considers only CO$_2$ emissions on the left-hand side of the equation
 and the energy intensity of the economy ($I_{ep}$) instead of $R$ on the right-hand side.
@@ -792,25 +792,37 @@ So, other terms on the right side of the IPARX identity
 are growing faster than energy intensity of the economy is declining
 (see Section \ref{sec:revisit_IPARX}).
 
-There are many suggested ways to reduce the resource intensity of the economy ($R$)
-or the prime example the energy intensity of economic activity ($I_{ep}$).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Energy transitions}
+\label{sec:energy_transitions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+One way to become more sustainable is to transition the
+economy to use fewer resources per unit of GDP produced, 
+i.e., to reduce the resource intensity of the economy ($R$).
+For the prime example of energy and CO$_2$ emissions, 
+reducing $R$ means reducing the energy intensity of economic activity
+($I_{ep}$), 
+i.e., reducing the amount of energy required to produce 
+each unit of GDP. 
+(Section~\ref{sec:low_carbon_transition} discusses a distinct but related issue, 
+transitioning the energy system to reduce CO$_2$ emissions 
+from each unit of energy consumed.)
+
+There are many ways often suggested to reduce the energy intensity of economic activity ($I_{ep}$).
 First, increasing energy efficiency (through efficiency standards or mandates)
 can decrease the energy consumption for end uses. 
 Examples include corporate average fuel economy (CAFE) standards for vehicles 
 in the U.S.\
-%% a citation for CAFE  is complicated. We could cite the law (CFR) but that's 
-%% not very helpful because the law just delegates rule-making responsibility to 
-%% US DoT, who then delegates to NHTSA. NHTSA has a web page but experience is that
-%% government web pages change at least every 4 years. 
-%% The wikipedia article is good, but I feel like with CAFE define, people can 
-%% A) understand from context and B) google if they want more.
 and mandates for LED lighting in many countries.
 Another way to reduce the energy intensity of an economy is to move 
 away from a manufacturing economy toward a service economy.
 However, as shown in the haircut example at the beginning of this chapter,
 the need for resources never goes away, even in a service economy. 
-In fact, shifting to a service economy often introduces problem-shifting, 
-as finished goods are imported and manufacturing heads off shore~\cite{Hardt:2018aa}.
+In fact, moving to a service economy often introduces problem-shifting
+(see Section~\ref{sec:electric_vehicles}), 
+as finished goods are imported and manufacturing moves off shore~\cite{Hardt:2018aa}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
