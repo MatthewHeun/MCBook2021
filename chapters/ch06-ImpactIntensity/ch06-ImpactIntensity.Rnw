@@ -478,6 +478,18 @@ emissions reductions via any of the techniques discussed above.
 Figure \ref{fig:ImpactIntensityGraph} shows that a transition to a new form(s)
 of energy takes quite a long time to complete. It is costly both in terms of
 money and resources, in particular, in terms of energy itself.
+It takes energy to make energy-making machines!
+
+Energy historians find that energy transitions often take decades to complete.
+Roger Fouquet, has studied energy transitions of the UK in many economic sectors and 
+across many energy technologies.
+In a paper titled 
+\emph{The slow search for solutions: Lessons from historical energy transitions by sector and service}, 
+he finds that
+``since the Industrial Revolution, it took, on average, 
+nearly 50 years for energy transitions 
+(i.e., the diffusion of energy sources and technologies) 
+to unfold''~\cite[p.~6595]{Fouquet:2010tq}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -879,6 +891,16 @@ Energy Vault simulation: \url{https://vimeo.com/335818817}.
       and inherent tradeoffs.
       Give some examples of the tradeoffs inherent in pollution prevention technologies.
       How do we manage tradeoffs among different types of solutions?
+      
+\item Roger Fouquet found that it has taken, historically, on average, 50 years
+      to transition from one energy source to another.
+      At this moment in time, it is unlikely that humanity has 50 years
+      to effect a transition to renewable sources of energy
+      to avoid irreversible effects of climate change.
+      What should we do?
+      Give up on mitigation and focus on adaptation?
+      Find a way to do better than the 50-year average duration for an energy transition?
+      If so, what are those ways? 
        
 \item Expanding on the issues raised in the previous questions, 
       nuclear power has had its own environmental issues. 
