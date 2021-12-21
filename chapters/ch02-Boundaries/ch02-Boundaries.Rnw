@@ -531,17 +531,10 @@ data.frame(t = seq(0, 1.1*pi, by = 0.005*pi)) %>%
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
 <<ErodableBounds, fig.width=2.5, fig.height=2, fig.align="center", warning=FALSE>>=
-data.frame(t = seq(-3, 4, by = 0.01)) %>% 
-  dplyr::mutate(
-    # Logistic curve
-    development = dplyr::case_when(
-      t < -0.2 ~ exp(t), 
-      t >= -0.2 & t < 0.5 ~ 0.82,
-      TRUE ~ -0.05
-    ), 
-    bound = 1 / (1 + exp(t))
-) %>% 
-  boundary_graph() 
+erodable_limit_data <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "F2point3D.xlsx"),
+                                          sheet = "data to plot")
+erodable_limit_data %>% 
+  boundary_graph()
 @
          \caption{Erodible limits.}
          \label{fig:GA4}
