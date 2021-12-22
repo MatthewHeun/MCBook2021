@@ -370,7 +370,7 @@ demo_transition %>%
   dplyr::filter(which_graph == "Pop") %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) + 
   ggplot2::geom_line(colour = mc_title_blue, size = 1) + 
-  ggplot2::scale_y_continuous(limits = c(0, 120), breaks = seq(0, 80, by = 20)) +
+  ggplot2::scale_y_continuous(limits = c(0, 120), breaks = seq(0, 120, by = 20)) +
   ggplot2::labs(x = "Year",
                 y = "Population [millions]", 
                 linetype = ggplot2::element_blank()) +
