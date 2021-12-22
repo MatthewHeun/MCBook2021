@@ -515,33 +515,26 @@ data.frame(t = seq(-3, 6, by = 0.1)) %>%
      \hfill
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-<<Sinusoids, fig.width=2.5, fig.height=2, fig.align="center", warning=FALSE>>=
-data.frame(t = seq(0, 1.1*pi, by = 0.005*pi)) %>% 
+<<Sinusoids, fig.width=2.5, fig.height=2, fig.align="center">>=
+data.frame(t = seq(0.8, 1.1*pi, by = 0.005*pi)) %>% 
   dplyr::mutate(
     # Sinusoids
     development = exp(-t/2) * sin(2*pi*t), 
     bound = 0.75 * exp(-t/2) * cos(2*pi*(t+0.2)) + 0.3
   ) %>% 
-  boundary_graph() + 
-  ggplot2::xlim(0.75, NA)
+  boundary_graph() # + 
+  # ggplot2::xlim(0.75, NA)
 @
          \caption{Robust limits.}
          \label{fig:GA3}
      \end{subfigure}
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-<<ErodableBounds, fig.width=2.5, fig.height=2, fig.align="center", warning=FALSE>>=
-data.frame(t = seq(-3, 4, by = 0.01)) %>% 
-  dplyr::mutate(
-    # Logistic curve
-    development = dplyr::case_when(
-      t < -0.2 ~ exp(t), 
-      t >= -0.2 & t < 0.5 ~ 0.82,
-      TRUE ~ -0.05
-    ), 
-    bound = 1 / (1 + exp(t))
-) %>% 
-  boundary_graph() 
+<<ErodableBounds, fig.width=2.5, fig.height=2, fig.align="center">>=
+erodable_limit_data <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "F2point3D.xlsx"),
+                                          sheet = "data to plot")
+erodable_limit_data %>% 
+  boundary_graph()
 @
          \caption{Erodible limits.}
          \label{fig:GA4}
@@ -593,7 +586,7 @@ of this sort of behavior; when CO$_2$ increases too much, Earth will get
 \label{sec:indices}
 There are many, many indices used to express or measure sustainability. 
 All indices are, essentially, (weighted) averages of quantities related to
-one or more of the three pillars shown in Figure \ref{fig:venn_diagram}.
+one or more of the three areas of sustainability shown in Figure \ref{fig:venn_diagram}.
 % \subsection{Indices for environmental impact}
 % \subsection{Indices for the economy}
 % \subsection{Indices for social change}
@@ -672,11 +665,13 @@ The clear trend is upward, with small drops corresponding to years of economic r
 Greenhouse gas emissions (primarily CO$_2$ released from burning fossil fuels) 
 are causing the average global temperature to increase. 
 The current average atmospheric CO$_2$ concentration is an example of humanity
-exceeding a planetary boundary. Because the carbon cycle is one of Earth's 
-regulating and support ecosystem services, and because the atmosphere is comprehensively
-global, the \emph{impacts} of climate on the environment are many. 
+exceeding a planetary boundary. 
+Because the carbon cycle is one of Earth's 
+regulating and support ecosystem services and
+because the atmosphere is comprehensively global, 
+the \emph{impacts} of climate on the environment are many. 
 Climate change is the term used to describe the results of the greenhouse effect.
-Climate change is interacting with many other planetary systems and so contributes
+Climate change is interacting with many other planetary systems and thus contributes
 to, for example, the extinction rate. 
 Climate change is causing ocean acidification, sea level rise, and the increased 
 frequency of extreme natural disasters, such as wild fires and destructive tropical storms. 
@@ -700,19 +695,13 @@ CO2_emissions %>%
   MKHthemes::xy_theme()
 @
 
-CO$_2$ is an especially important sustainability issue because of its widespread 
-effects. 
-It is also especially important for at least two other reasons. 
-First, it may trigger a tipping point or points in the Earth's ecosystems, for instance,
+CO$_2$ emissions are an especially important sustainability issue 
+because of widespread effects. 
+CO$_2$ emissions are also especially important for at least two other reasons. 
+First, CO$_2$ emissions may trigger a tipping point or tipping points in the Earth's ecosystems,
 related to deforestation, wild fires, ocean acidification, and species loss. 
-Second, CO$_2$ is a variable humans can control. 
-Anthropogenic CO$_2$ emissions are primarily related to human energy use.
-
-% %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-% \begin{mcframe}[0.90\textwidth](0.85\textwidth)
-% %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-% CO$_2$ is the prime example % this really just repeats the box from chapter 1.
-% \end{mcframe}
+Second, most greenhouse gas emissions are within human control, 
+especially regarding fossil fuels and agriculture. 
 
 % see http://clivebest.com/blog/?p=1169 and references therein.
 Here's a brief description of how climate change is happening. 
@@ -751,28 +740,37 @@ is incoming from the Sun but that warming process takes a very long time.
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\indent 
+\noindent 
+Bill Gates, 
+\emph{How to avoid a climate disaster: The solutions we have and the breakthroughs we need},
+New York: Random House, 
+2021. \\
 
-IPCC. \emph{Climate Change 2021: The Physical Science Basis. 
-Contribution of Working Group I to the Sixth Assessment Report
-of the Intergovernmental Panel on Climate Change.} 
-Cambridge University Press, Cambridge, UK. 2021.
+\noindent 
+IPCC,
+\emph{Climate change 2021: The physical science basis. 
+Contribution of working group I to the sixth assessment report
+of the Intergovernmental Panel on Climate Change},
+Cambridge, UK: Cambridge University Press, 
+2021. \\
 
-Elizabeth Kolbert, \emph{Field Notes from a Catastrophe: 
-Man, Nature, and Climate Change}.
-Bloomsbury, New York. 2015.
+\noindent 
+Elizabeth Kolbert, 
+\emph{Field notes from a catastrophe: 
+Man, nature, and climate change},
+New York: Bloomsbury, 
+2015.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\indent
+A convenient truth: Urban solutions from Curitiba, Brazil: \\
+\url{https://www.filmsforaction.org/watch/a-convenient-truth/} \\
 
-A Convenient Truth: Urban Solutions from Curitiba, Brazil. 
-\url{https://www.filmsforaction.org/watch/a-convenient-truth/}
-
-The Power of Community: How Cuba Survived Peak Oil.
+\noindent 
+The power of community: How Cuba survived peak oil: \\
 \url{https://www.filmsforaction.org/watch/the-power-of-community-how-cuba-survived-peak-oil-2006/}
 
 
@@ -845,13 +843,26 @@ The Power of Community: How Cuba Survived Peak Oil.
       (because they're an island nation with an average elevation of 2~m).
       What rights and redress should nations like RMI have with respect to being
       impacted by a problem they didn't ``cause?'' 
-      The Marshallese, specifically, have the right to emigrate to the 
+      Is this question about international geopolitics or individual rights?
+      
+\item Following up on the previous question, 
+      the Marshallese, specifically, have the right to emigrate to the 
       United States. 
-      RMI is a relatively poor country (average GDP per capita is \$3800 per year). 
-      The US is a wealthy country (average GDP per capita is \$68,300 per year). 
+      RMI is a relatively low-income country (average GDP per capita is \$3800 per year). 
+      The US is a high-income country (average GDP per capita is \$68,300 per year). 
       (Dollar amounts are 2020 dollars adjusted for purchasing power parity.)
-      Should each Marshallese receive compensation if they emigrate to the US? 
+      Should the Marshallese consider emigration to the U.S. to be an economic
+      boon (because their incomes are likely to be higher)?
+      The Marshallese right to emigrate has been long standing. 
+      Any Marshallese who has not already emigrated has chosen not to do so because
+      it wasn't ``worth it'' to them in some way. 
+      If they are forced to relocate by climate change, should they receive 
+      some form of compensation? 
       If so, who pays and what amount? If not, why not?
+      With respect to Figure~\ref{fig:venn_diagram}, this question is in the 
+      social/economic overlap zone. 
+      Discuss the approach of using monetary payments as a remedy or redress for
+      injustice.
 
 \item Seven Dutch environmental groups won a ruling in May, 2021 against Royal
       Dutch Shell (subject to appeal). 

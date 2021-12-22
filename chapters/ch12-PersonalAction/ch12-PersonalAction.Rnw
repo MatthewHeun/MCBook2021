@@ -72,8 +72,8 @@ McGregor's actions illustrate that large, seemingly impossible tasks, like clean
 a large (198 acres) public space from decades of litter, can be accomplished with dedication
 and perseverance.
 His documentation of progress on Twitter could be an example of the sustainability 
-sentence: Individual + Education + Contamination. 
-(See discussion question Q11.\ref{question:mcgregror} for further discussion.)
+sentence: Individual + Education + Impact intensity. 
+(See discussion question Q12.\ref{question:mcgregror} for further discussion.)
 
 Wangari Maathai was a veterinary professor, author, 
 member of the Kenyan parliament, founder of the Green Belt movement 
@@ -255,7 +255,7 @@ opportunities at home, work, school, or church.
 
 %++++++++++++++++++++++++++++++
 \subsection{Impact intensity of resources ($X$)}
-\label{sec:personal_contamination_intensity}
+\label{sec:personal_impact_intensity}
 %++++++++++++++++++++++++++++++
 
 Section~\ref{sec:collective_resources} notes that
@@ -264,11 +264,11 @@ leads to increased environmental impacts ($I$).
 
 
 %..............................
-\paragraph{Individuals+Choices+Contamination intensity} 
+\paragraph{Individuals+Choices+Impact intensity} 
 \label{sec:individuals+choices+comtemination_intensity}
 %..............................
 
-Thankfully, there are many ways individuals can reduce contamination
+Thankfully, there are many ways individuals can reduce the impact
 intensity of resources, particularly for the prime example of this book
 (energy and CO$_2$ emissions).
 Individuals can install \emph{renewable} energy generation systems
@@ -553,7 +553,7 @@ and make a difference to the planet
 \toprule
 Question                                                                                              & Sustainability-beneficial answer       \\ 
 \midrule
-What kind of house will I buy                                                                         & Small and used                         \\
+What kind of house will I buy?                                                                         & Small and used                         \\
 What kind of car will I drive?                                                                        & Small and used                         \\
 \begin{tabular}[c]{@{}l@{}}How close will I live to work, \\ school, church, and stores?\end{tabular} & Close enough to allow walking and cycling \\
 How will I eat?                                                                                       & Close to the bottom of the food chain \\   
@@ -565,11 +565,11 @@ How much will I fly?                                                            
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Further Reading}\index{further reading}
+%\section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{See Also}\index{see also}
+%\section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -718,7 +718,7 @@ Wangari Maathai, and Joseph Lstiburek.
 \item Looking back over the last ten years of your life, create a 
       \emph{sustainability scorecard} for your life. 
       Is your scorecard multifaceted?
-      Does it involve the three pillars (Figure~\ref{fig:venn_diagram}), 
+      Does it involve the three aspects of sustainability (Figure~\ref{fig:venn_diagram}), 
       the IPARX equation (\ref{eq:IPARX}), and the sustainability challenge
       areas of Chapters~\ref{chap:households}-\ref{chap:land_use_urban_planning}?
       Given what you have learned from this book so far, how would you rate

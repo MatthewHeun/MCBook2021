@@ -325,14 +325,65 @@ On the other hand, slowing of growth is predicated on increasing GDP per capita
 (the $A$ term in Equation~\ref{eq:IPARX}).
 \end{mcframe}
 
+
+<<ddt_data>>=
+demo_transition <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "Demographic Transition.xlsx"),
+                                      sheet = "data to plot") %>% 
+  dplyr::rename(
+    CBR = "Birth (per 1000 people per year)", 
+    CDR = "Death (per 1000 people per year)", 
+    Pop = "Total population (millions)"
+  ) %>% 
+  tidyr::pivot_longer(cols = c("CBR", "CDR", "Pop"), names_to = "which_line", values_to = "vals") %>% 
+  dplyr::mutate(
+    which_graph = dplyr::case_when(
+      which_line %in% c("CBR", "CDR") ~ "rate", 
+      which_line == "Pop" ~ "Pop", 
+      TRUE ~ "Unknown graph"
+    ), 
+    which_graph = factor(which_graph, levels = c("rate", "Pop"))
+  )
+@
+
 \begin{figure}
-\centering
-\includegraphics[width=0.9\linewidth]{chapters/ch03-Population/figures/Demographic-TransitionOWID.png}
-\caption[]{Schematic of demographic transition theory. Crude birth rate (CBR) and
-crude death rate (CDR) are defined as births or deaths per year per 1000 people
-in the total population (uncorrected for sex or age cohorts).}
-\label{fig:dtt}
+\captionsetup[subfigure]{justification=centering}
+     \centering
+     \begin{subfigure}[b]{6.5in}
+         \centering
+<<fig.width=5.5, fig.height=2>>=
+demo_transition %>% 
+  dplyr::filter(which_graph == "rate") %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) + 
+  ggplot2::geom_line(colour = mc_title_blue, size = 1) + 
+  ggplot2::scale_y_continuous(limits = c(0, NA)) +
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = "Births and deaths", 
+                linetype = ggplot2::element_blank()) +
+  MKHthemes::xy_theme()
+@
+     \end{subfigure}
+     
+     \begin{subfigure}[b]{6.5in}
+         \centering
+<<fig.width=5.5, fig.height=2>>=
+demo_transition %>% 
+  dplyr::filter(which_graph == "Pop") %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) + 
+  ggplot2::geom_line(colour = mc_title_blue, size = 1) + 
+  ggplot2::scale_y_continuous(limits = c(0, 120), breaks = seq(0, 120, by = 20)) +
+  ggplot2::labs(x = "Year",
+                y = "Population [millions]", 
+                linetype = ggplot2::element_blank()) +
+  MKHthemes::xy_theme()
+@
+     \end{subfigure}
+        \caption{Schematic of demographic transition theory. Crude birth rate (CBR) and
+                 crude death rate (CDR) are defined as births or deaths per year per 1000 people
+                 in the total population (uncorrected for sex or age cohorts).}
+        \label{fig:ddt}
 \end{figure}
+
+
 
 The first phase of the demographic transition is characterized by high birth and
 death rates, with a consequently low rate of population growth. 
@@ -617,8 +668,8 @@ the substitutability of critical resources.
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-J.B. MacKinnon, \emph{The Once and Future World: Nature As It Was, As It Is, As It Could Be},
-Random House, Canada (2013).
+J.B. MacKinnon, \emph{The once and future world: Nature as it was, as it is, as it could be},
+Toronto: Random House, Canada, 2013.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -626,10 +677,10 @@ Random House, Canada (2013).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The History Guy (YouTube) ``\href{https://www.youtube.com/watch?v=FxqgBWxLZa0}
-{The Great Kansas Grasshopper Plague of 1874},'' 
+{The great Kansas grasshopper plague of 1874},'' 
 published August 17, 2020. \\
 
-\noindent World3 model online: \url{http://bit-player.org/wp-content/extras/limits/}
+\noindent World3 model online: \\ \url{http://bit-player.org/wp-content/extras/limits/}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}

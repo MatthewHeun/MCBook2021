@@ -483,15 +483,15 @@ thereby increasing the resource intensity of another economy.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Contamination intensity of resources}
-\label{sec:collective_contamination_intensity}
+\subsection{Impact intensity of resources}
+\label{sec:collective_impact_intensity}
 %++++++++++++++++++++++++++++++
 
 Equation~\ref{eq:IPARX} shows that reducing 
 the impact intensity of resources ($X$)
 will cause environmental impacts ($I$) to decline.
 
-\paragraph{Government+Law+Contamination}
+\paragraph{Government+Law+Impact intensity}
 One way to reduce the impact intensity of resources ($X$)
 is to strengthen environmental regulations 
 at both extraction and disposal lifecycle stages.
@@ -510,7 +510,7 @@ In terms of the prime example (energy and CO$_2$ emissions),
 government can establish greenhouse gas trading markets
 to efficiently reduce emissions and encourage renewable energy adoption.
 
-\paragraph{Corporations+Research+Contamination}
+\paragraph{Corporations+Research+Impact intensity}
 When manufacturers are also responsible for disposal, 
 disposal costs become an integral aspect of product design.
 Manufacturers become incentivized to 
@@ -869,15 +869,14 @@ The one on the left pays more taxes per acre than the one on the right.
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Rachel Carson, \emph{Silent Spring} \cite{Carson:2002ty}.
-
+Rachel Carson, \emph{Silent Spring}, Boston: Houghton Mifflin, 1962.
+%\cite{Carson:2002ty}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\noindent Vlog Brothers \href{https://www.youtube.com/watch?v=wcMLFMsIVis}{``How we fix the climate''}
+Vlog Brothers \href{https://www.youtube.com/watch?v=wcMLFMsIVis}{``How we fix the climate''}
 
 \noindent \emph{Households} 
 
