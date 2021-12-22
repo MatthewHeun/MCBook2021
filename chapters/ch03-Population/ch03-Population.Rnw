@@ -325,17 +325,8 @@ On the other hand, slowing of growth is predicated on increasing GDP per capita
 (the $A$ term in Equation~\ref{eq:IPARX}).
 \end{mcframe}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.9\linewidth]{chapters/ch03-Population/figures/Demographic-TransitionOWID.png}
-\caption[]{Schematic of demographic transition theory. Crude birth rate (CBR) and
-crude death rate (CDR) are defined as births or deaths per year per 1000 people
-in the total population (uncorrected for sex or age cohorts).}
-\label{fig:dtt_old}
-\end{figure}
 
-
-<<ddt, fig.cap="Schematic of demographic transition theory. Crude birth rate (CBR) and crude death rate (CDR) are defined as births or deaths per year per 1000 people in the total population (uncorrected for sex or age cohorts).">>=
+<<ddt_data>>=
 demo_transition <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "Demographic Transition.xlsx"),
                                       sheet = "data to plot") %>% 
   dplyr::rename(
@@ -352,28 +343,45 @@ demo_transition <- readxl::read_excel(file.path("chapters", "ch03-Population", "
     ), 
     which_graph = factor(which_graph, levels = c("rate", "Pop"))
   )
+@
 
-
+\begin{figure}
+\captionsetup[subfigure]{justification=centering}
+     \centering
+     \begin{subfigure}[b]{6.5in}
+         \centering
+<<fig.width=5, fig.height=2.5>>=
 demo_transition %>% 
   dplyr::filter(which_graph == "rate") %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) + 
   ggplot2::geom_line(colour = mc_title_blue, size = 1) + 
+  ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = "Birth and death rates [per 1000]", 
+                y = "Births and deaths", 
                 linetype = ggplot2::element_blank()) +
   MKHthemes::xy_theme()
-
+@
+     \end{subfigure}
+     
+     \begin{subfigure}[b]{6.5in}
+         \centering
+<<fig.width=5, fig.height=2.6>>=
 demo_transition %>% 
   dplyr::filter(which_graph == "Pop") %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) + 
   ggplot2::geom_line(colour = mc_title_blue, size = 1) + 
-  ggplot2::labs(y = "Population [millions]", 
+  ggplot2::scale_y_continuous(limits = c(0, NA)) +
+  ggplot2::labs(x = "Year",
+                y = "Population [millions]", 
                 linetype = ggplot2::element_blank()) +
   MKHthemes::xy_theme()
-
 @
-
-
+     \end{subfigure}
+        \caption{Schematic of demographic transition theory. Crude birth rate (CBR) and
+                 crude death rate (CDR) are defined as births or deaths per year per 1000 people
+                 in the total population (uncorrected for sex or age cohorts).}
+        \label{fig:ddt}
+\end{figure}
 
 
 
