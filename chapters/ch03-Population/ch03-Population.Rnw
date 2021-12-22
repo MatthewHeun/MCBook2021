@@ -331,8 +331,51 @@ On the other hand, slowing of growth is predicated on increasing GDP per capita
 \caption[]{Schematic of demographic transition theory. Crude birth rate (CBR) and
 crude death rate (CDR) are defined as births or deaths per year per 1000 people
 in the total population (uncorrected for sex or age cohorts).}
-\label{fig:dtt}
+\label{fig:dtt_old}
 \end{figure}
+
+
+<<ddt, fig.cap="Schematic of demographic transition theory. Crude birth rate (CBR) and crude death rate (CDR) are defined as births or deaths per year per 1000 people in the total population (uncorrected for sex or age cohorts).">>=
+demo_transition <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "Demographic Transition.xlsx"),
+                                      sheet = "data to plot") %>% 
+  dplyr::rename(
+    CBR = "Birth (per 1000 people per year)", 
+    CDR = "Death (per 1000 people per year)", 
+    Pop = "Total population (millions)"
+  ) %>% 
+  tidyr::pivot_longer(cols = c("CBR", "CDR", "Pop"), names_to = "which_line", values_to = "vals") %>% 
+  dplyr::mutate(
+    which_graph = dplyr::case_when(
+      which_line %in% c("CBR", "CDR") ~ "rate", 
+      which_line == "Pop" ~ "Pop", 
+      TRUE ~ "Unknown graph"
+    ), 
+    which_graph = factor(which_graph, levels = c("rate", "Pop"))
+  )
+
+
+demo_transition %>% 
+  dplyr::filter(which_graph == "rate") %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) + 
+  ggplot2::geom_line() + 
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = "Birth and death rates [per 1000]", 
+                linetype = ggplot2::element_blank()) +
+  MKHthemes::xy_theme()
+
+demo_transition %>% 
+  dplyr::filter(which_graph == "Pop") %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) + 
+  ggplot2::geom_line() + 
+  ggplot2::labs(y = "Population [millions]", 
+                linetype = ggplot2::element_blank()) +
+  MKHthemes::xy_theme()
+
+@
+
+
+
+
 
 The first phase of the demographic transition is characterized by high birth and
 death rates, with a consequently low rate of population growth. 
