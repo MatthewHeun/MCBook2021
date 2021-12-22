@@ -350,7 +350,7 @@ demo_transition <- readxl::read_excel(file.path("chapters", "ch03-Population", "
      \centering
      \begin{subfigure}[b]{6.5in}
          \centering
-<<fig.width=5, fig.height=2.5>>=
+<<fig.width=5.5, fig.height=2>>=
 demo_transition %>% 
   dplyr::filter(which_graph == "rate") %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) + 
@@ -365,12 +365,12 @@ demo_transition %>%
      
      \begin{subfigure}[b]{6.5in}
          \centering
-<<fig.width=5, fig.height=2.6>>=
+<<fig.width=5.5, fig.height=2>>=
 demo_transition %>% 
   dplyr::filter(which_graph == "Pop") %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) + 
   ggplot2::geom_line(colour = mc_title_blue, size = 1) + 
-  ggplot2::scale_y_continuous(limits = c(0, NA)) +
+  ggplot2::scale_y_continuous(limits = c(0, 120), breaks = seq(0, 80, by = 20)) +
   ggplot2::labs(x = "Year",
                 y = "Population [millions]", 
                 linetype = ggplot2::element_blank()) +
