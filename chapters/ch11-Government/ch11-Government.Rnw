@@ -122,14 +122,7 @@ Not all collectives are equally suited for or adept at the same tasks.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 In the sections that follow, we consider four archetypal actions for sustainability:
-
-\begin{itemize}
-  \item Choices
-  \item Laws
-  \item Research
-  \item Education
-\end{itemize}
-
+(a)~choices, (b)~laws, (c)~research, and (d)~education.
 The four items above are not an exhaustive list of actions that individuals
 and collectives can take for sustainability, but they are a \emph{framework}
 to guide our thinking about possible actions. 
@@ -138,10 +131,12 @@ A second important caveat is that we are considering only actions
 The ``sentence'' framework is most helpful if you don't try to make it fit actions
 that are not sustainability related.
 
-%..............................
+
+%++++++++++++++++++++++++++++++
 \subsection{Choices} 
 \label{sec:actions_choices}
-%..............................
+%++++++++++++++++++++++++++++++
+
 Individually and collectively, we have many opportunities to live more sustainably.
 Sometimes we just need to pick the most sustainable option within a given
 situation or context. 
@@ -154,8 +149,12 @@ sustainability and it involves choosing a sustainable option from a menu of exis
 activities or products.
 Nothing new needs to be invented.
 
+
+%++++++++++++++++++++++++++++++
 \subsection{Laws}
 \label{sec:actions_law}
+%++++++++++++++++++++++++++++++
+
 Laws and regulations \href{https://en.wiktionary.org/wiki/affect}{affect}
 (and sometimes define and sometimes \href{https://en.wiktionary.org/wiki/effect#Verb}{effect})
 relationships among individuals, 
@@ -202,8 +201,12 @@ can be avoided without top-down regulation or privatization of the resource
 by prudent collaboration within strong societal structures. 
 \end{mcframe}
 
+
+%++++++++++++++++++++++++++++++
 \subsection{Research} 
 \label{sec:actions_research}
+%++++++++++++++++++++++++++++++
+
 The ``research'' action means both the creation of new knowledge and the invention or 
 development of new technology.
 For instance, forest and wildlife managers may wish to know how climate change is
@@ -230,8 +233,11 @@ create or discover new information, but if they don't enhance sustainability in
 some way then we don't consider them to be part of the research action.
 
 
+%++++++++++++++++++++++++++++++
 \subsection{Education}
 \label{sec:actions_education}
+%++++++++++++++++++++++++++++++
+
 Education has the power to change hearts and minds, and thus, the way people behave.
 Disseminating information about sustainability is a crucial step in achieving a
 sustainable society.
@@ -251,7 +257,12 @@ government creates incentives to change behavior (law), companies respond by
 developing alternative products and services (research again), and consumers
 respond by buying the new, more sustainable option (choice).
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sentences for sustainability}
+\label{sec:sentences_for_sustainability}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 In the remainder of this chapter, we provide examples of collective actions to 
 make societies more sustainable, organized around the idea of 
 ``sentences for sustainability.''
@@ -327,28 +338,11 @@ and in Figure~\ref{fig:PopulationGraph},
 rising population ($P$) is a driver for environmental impacts ($I$). 
 Slowing or reversing population growth would reduce environmental impacts,
 all other things being equal.
-% Table~\ref{tab:sust_sent_pop} shows example sustainability sentences
-% to limit population growth.
-% 
-% \begin{table}
-% \footnotesize
-% \centering
-% \caption[toc caption]{Sustainability sentences for population.}
-% \label{tab:sust_sent_pop}
-% \begin{tabular}{r l l}
-% \toprule
-% Subject & Action & Object \\ 
-% \midrule
-% Governments & provide general education & to girls and women. \\
-% Governments & provide family planning education & to girls and women. \\
-% Governments & supply birth control technology & to citizens. \\
-% Legislatures & pass laws & on various family planning matters. \\
-% Lawmakers & write family friendly policies & such as maternity leave, etc. \\
-% \bottomrule 
-% \end{tabular}
-% \end{table}
 
+%..............................
 \paragraph{Government+Choice+Population}
+%..............................
+
 State and local governments are the entities in the U.S.\
 and around the world that provide much or most of the education offered to citizens.
 Providing general education to citizens, especially girls and women, 
@@ -363,7 +357,10 @@ Another choice governments can make is to supply birth control technology
 (oral contraceptives, symptom-thermal training, condoms, etc.)
 to citizens to reduce population expansion.
 
+%..............................
 \paragraph{Government+Education+Population}
+%..............................
+
 In addition, education for family planning can be done by governments.
 Governments can disseminate information around family planning and birth control
 to citizens, especially girls and women, to reduce population growth. 
@@ -372,7 +369,10 @@ here specific training on birth control is counted as the education action
 because it has a direct sustainability effect on the target of the action, in this
 case, on population.)
 
+%..............................
 \paragraph{Government+Law+Population}
+%..............................
+
 Government policies can have an effect on population.
 For example, legislatures can pass laws
 on number of children, incentives for having children, 
@@ -402,7 +402,10 @@ especially among already-wealthy citizens.
 Taken further, the \emph{degrowth} movement seeks to find a way to 
 wind down the economic system while retaining high standards of human well-being among citizens.
 
+%..............................
 \paragraph{Government+Law+Affluence}
+%..............................
+
 At a minimum, 
 national governments, 
 international organizations, and
@@ -431,7 +434,10 @@ encourage carbon-free energy.
 % Proceeds from carbon and other pollution taxes can be invested in environmental remediation
 % and clean energy. 
 
+%..............................
 \paragraph{Government+Education+Affluence}
+%..............................
+
 A mandatory carbon labeling scheme
 (like nutrition labels)
 could be implemented
@@ -456,7 +462,10 @@ To reduce environmental impacts,
 economies need to use even fewer resources 
 and emit less pollution per dollar of GDP.
 
+%..............................
 \paragraph{Government+Law+Resources}
+%..............................
+
 Policies that encourage industrial energy efficiency 
 will reduce the energy required to generate a dollar of GDP
 at the location of the energy use.
@@ -518,7 +527,10 @@ Equation~\ref{eq:IPARX} shows that reducing
 the impact intensity of resources ($X$)
 will cause environmental impacts ($I$) to decline.
 
+%..............................
 \paragraph{Government+Law+Impact intensity}
+%..............................
+
 One way to reduce the impact intensity of resources ($X$)
 is to strengthen environmental regulations 
 at both extraction and disposal lifecycle stages.
@@ -537,7 +549,20 @@ In terms of the prime example (energy and CO$_2$ emissions),
 government can establish greenhouse gas trading markets
 to efficiently reduce emissions and encourage renewable energy adoption.
 
+To reduce CO$_2$ emissions, 
+governments can implement mandates for renewable energy generation~\cite{USEIA:2021tt}, 
+usually expressed as a percentage of total energy generated, and 
+usually for electricity, not liquid fuels.
+Renewable mandates are often implemented as Renewable Portfolio Standards, 
+mandating that electricity producers have a certain fraction of 
+electricity sales from renewable sources.
+
+
+
+%..............................
 \paragraph{Corporations+Research+Impact intensity}
+%..............................
+
 When manufacturers are also responsible for disposal, 
 disposal costs become an integral aspect of product design.
 Manufacturers become incentivized to 
@@ -606,7 +631,10 @@ Building codes can be leveraged to mandate better insulation,
 more efficient systems (water heaters, appliances, furnaces), and
 improved windows.
 
+%..............................
 \paragraph{Government+Law+Housing}
+%..............................
+
 Municipalities can require installation of solar systems 
 on all new construction for homes and businesses or
 participation in solar collectives if installation is unfeasible.
@@ -655,7 +683,10 @@ you still could lose your house.
 \href{https://en.wiktionary.org/wiki/caveat_emptor}{\emph{Caveat emptor}}.
 \end{mcframe}
 
+%..............................
 \paragraph{Organizations+Education+Housing}
+%..............................
+
 Collective actions can be encouraged by certifications bestowed by
 organizations and rating agencies.
 LEED (Leadership in Energy and Environmental Design) certification
@@ -730,7 +761,10 @@ more passengers in fewer, high-occupancy vehicles that emit less CO$_2$.
 There are many potential collective actions that would (ahem) move 
 transportation in that direction.
 
+%..............................
 \paragraph{Government+Law+Transportation}
+%..............................
+
 Programs to fund and incentivize public transport seek to reduce CO$_2$ emissions
 without wholesale changes to transportation infrastructure.
 Both carrots (make public transport less expensive) and
@@ -785,15 +819,24 @@ for sustainable outcomes.
 This Section discusses collective actions that can be taken 
 to improve the sustainability of food and agriculture.
 
+%..............................
 \paragraph{Government+Research+Agriculture}
+%..............................
+
 Measures taken grid-wide to provide carbon-free energy will benefit agriculture
 along with all other sectors of the economy.
 
+%..............................
 \paragraph{Organizations+Education+Agriculture}
+%..............................
+
 Education, for example through organizations like the 4H and local conservation districts,
 can be used to disseminate knowledge to farmers about best practices in farming ecologically.
 
+%..............................
 \paragraph{Government+Law+Agriculture}
+%..............................
+
 Strengthening environmental regulations will help prevent run off and a host of 
 other environmental problems that may only be adjacently related to agriculture.
 For instance, banning synthetic fibers in clothes to prevent microplastic pollution
