@@ -20,7 +20,7 @@ Without abundant resources, prosperity is out of reach.}
 The previous chapter addressed the sustainability implications of 
 economic affluence, the $A$ term in the IPARX equation (Equation~\ref{eq:IPARX}). 
 Because the economy is society's metabolism, economic growth and increasing affluence
-mean more natural resources must be consumed. 
+mean more use of natural resources. 
 This chapter explores the sustainability implications of resource acquisition and consumption.
 
 Whether we are aware of it or not, 
@@ -214,15 +214,17 @@ the European Commission maintains a list of Critical Raw Materials (CRMs)\index{
 with special importance 
 across a wide range of industries.
 See Table~\ref{tab:CRMs} for critical materials and industries for the European Union.
-One interesting feature of Table~\ref{tab:CRMs} is the large number of critical raw materials.
-Another interesting feature of Table~\ref{tab:CRMs} is the breadth of applications; 
+Notice the \emph{large number} of resources considered ``critical.''
+Energy is important for making an economy run but so are material resources.
+Another interesting feature of Table~\ref{tab:CRMs} is the \emph{breadth of applications}; 
 most of the critical materials are used throughout the economy.
-A material may be critical to a region for any number of reasons:
+A material may be critical to a region or economy for any number of reasons:
 breadth of application, 
 lack of internal production capability, 
 etc.
-Each region will have its own list of CRMs.
-
+Each region or economy will have its own list of CRMs.
+The point isn't which materials are critical, it's that economies depend deeply on
+a large number of raw materials.
 
 <<CRMs, results="asis">>=
 crm_df <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Critical Raw Materials.xlsx"), 
