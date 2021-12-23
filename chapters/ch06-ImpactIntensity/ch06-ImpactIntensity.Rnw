@@ -588,7 +588,7 @@ rate_func <- function(df) {
 
 rate_to_string <- function(rate, include_units = TRUE) {
   if (include_units) {
-    return(paste0(format(round(rate*100, 1), nsmall = 1), "\\%/yr"))
+    return(paste0(format(round(rate*100, 1), nsmall = 1), "~\\%/yr"))
   }
   format(round(rate*100, 1), nsmall = 1)
 }
@@ -635,8 +635,6 @@ r_P_20 <- iparx_df %>% trim_for_chapter(var = "$P$ [billions]", years = c(2000, 
 r_A_20 <- iparx_df %>% trim_for_chapter(var = "$A$ [k\\$/person]", years = c(2000, 2019)) %>% rate_func()
 r_R_20 <- iparx_df %>% trim_for_chapter(var = "$R$ [MJ/\\$]", years = c(2000, 2019)) %>% rate_func()
 r_X_20 <- iparx_df %>% trim_for_chapter(var = "$X$ [Mt/EJ]", years = c(2000, 2019)) %>% rate_func()
-
-
 
 # r_I_check should be same as r_I
 r_I_check_220 <- r_P_220 + r_A_220 + r_R_220 + r_X_220

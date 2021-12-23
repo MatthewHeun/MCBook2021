@@ -478,18 +478,18 @@ world <- rnaturalearth::ne_countries(scale = "small", returnclass = "sf")
 # Now make the map
 ggplot2::ggplot(data = world) +
   ggplot2::geom_sf(color = "black", fill = "white", size = 0.1) + 
-  ggplot2::geom_point(data = mong_khet, ggplot2::aes_string(x = "lon", y = "lat"),
+  ggplot2::geom_point(data = mong_khet, mapping = ggplot2::aes_string(x = "lon", y = "lat"),
                       size = 2, shape = 21, color = mc_title_blue, fill = mc_title_blue) +
   # Non-sf objects (like the circle) are assumed to be in lat/lon data.
   ggplot2::coord_sf(default_crs = sf::st_crs(4326), expand = FALSE) +
   # Add a circle for the boundary
-  ggplot2::geom_path(data = v_circle, mapping = aes_string(x = "lon", y = "lat"), colour = mc_title_blue, size = 1) +   
+  ggplot2::geom_path(data = v_circle, mapping = ggplot2::aes_string(x = "lon", y = "lat"), colour = mc_title_blue, size = 1) +   
   ggplot2::labs(x = ggplot2::element_blank(), y = ggplot2::element_blank()) + 
   MKHthemes::xy_theme() + 
-  ggplot2::theme(axis.text.x = element_blank(), 
-                 axis.text.y = element_blank(), 
-                 axis.ticks.x = element_blank(),
-                 axis.ticks.y = element_blank())
+  ggplot2::theme(axis.text.x = ggplot2::element_blank(), 
+                 axis.text.y = ggplot2::element_blank(), 
+                 axis.ticks.x = ggplot2::element_blank(),
+                 axis.ticks.y = ggplot2::element_blank())
 @
 
 Since the industrial revolution, humans have been increasingly living in urban environments.
