@@ -72,8 +72,10 @@ So are coal, crude oil, and natural gas.
 In contrast, gasoline is a refined fuel. 
 As such, it is the \emph{product} of 
 a refinery that converts crude oil to refined fuels. 
-We can judge the process in a refinery by its efficiency and energy return on investment (EROI).
-(See Section~\ref{sec:masterE}.)
+Likewise, natural uranium is a primary energy source that must be converted into 
+a uranium fuel before it can be used to generate electricity in a nuclear power plant.
+The refinery or nuclear-fuel enrichment process can be evaluated by their
+energy return on investment (EROI). (See Section~\ref{sec:masterE}.)
 
 We define a \emph{resource} as a primary input to the economy. 
 As such, a resource is something \emph{extracted} from the natural world.
@@ -86,7 +88,7 @@ Iron ore might become steel, then sheet metal, and then a toaster.
 Water might be ice, a sports drink, or Play-Doh.
 %%%*** clarify definition of agriculture.***
 The process of pulling a resource into the economy is called ``extraction.''
-Equation~\ref{eq:PCbalance} indicates that everything that is extracted is consumed.
+Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used.
 
 The $R$ term in Equation \ref{eq:IPARX} is the resource intensity of the economy.
 $R$ is defined as
@@ -100,7 +102,7 @@ total amount of economic output (measured by GDP).
 Because the numerator and denominator of $R$ have different units,
 $R$ is an \emph{intensity}.
 
-Figure~\ref{fig:total_material_use} shows rates of consumption of natural resources
+Figure~\ref{fig:total_material_use} shows use rates natural resources
 aggregated into important categories of biomass, ores and industrial minerals, and 
 construction minerals.
 In 2005, the world economy used about 19 Gt of biomass, 6.7 Gt of ores and 
