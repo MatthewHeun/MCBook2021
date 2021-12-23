@@ -250,12 +250,13 @@ But how?
 \label{sec:low_carbon_transition}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-There are at least four often-discussed options for
+There are at least five often-discussed options for
 transitioning to a low carbon intensity energy supply:
 (a) carbon capture and storage;
 (b) carbon sequestration;
-(c) biomass; and
-(d) wind, water, and solar (WWS).
+(c) carbon takeback obligation;
+(d) biomass; and
+(e) wind, water, and solar (WWS).
 Each option has its own challenges and 
 none has yet been implemented on a large enough scale to reduce CO$_2$ emissions;
 (see Figure~\ref{fig:CarbonEmissionsGraph}).
@@ -330,6 +331,54 @@ into underground storage.
 Biologic storage is when carbon is trapped in plant matter, soil, or aquatic
 environments.
 Perhaps, CO$_2$ could be converted to a stable chemical structure such as graphene.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Carbon takeback obligation}
+\label{sec:ctbo}
+%++++++++++++++++++++++++++++++
+
+Another way to reduce CO$_2$ emissions over time is the 
+carbon takeback obligation (CTBO)~\cite{Jenkins:2021tg}.
+The CTBO is similar to product takeback policies
+which require manufacturers to accept end-of-life product returns from consumers,
+thereby keeping wastes (refrigerators, washers, dryers, computers, electronics, etc.)
+out of landfills and 
+contaminates out of the environment.
+
+The climate change equivalent of a product takeback is the carbon takeback. 
+Under a CTBO, fossil fuel producers and importers would be required 
+to permanently sequester the carbon emitted from the fossil fuels they sell or import.
+Industries that emit greenhouse gasses (cement making, etc.)
+would also be required to sequester their emissions.
+A CTBO does not specify \emph{how} the sequestration must occur,
+but it specifies who is obliged to do the sequestration. 
+Under a CTBO, fossil fuel producers and other emitting industries
+would be free to pass the cost of carbon sequestration
+to fossil fuel users and other product consumers (cement, e.g.),
+thereby internalizing the cost of CO$_2$ emissions in the economy.
+Consumers would still be free to purchase and use fossil fuels, 
+but under a CTBO the true societal cost of fossil fuel consumption would be evident.
+
+A progressive CTBO could be phased over several years.
+In the first years, only, say, 10~\% of emitted CO$_2$ would need to be sequestered.
+A few years later, 20~\%.
+Then 30~\%.
+Eventually, fossil fuel producers and other emitting industries
+would need to be sequester 100~\% of the
+greenhouse gasses emitted from the use of their product.
+
+There are several implementation challenges for CTBOs.
+First, we will need to develop the expertise to 
+sequester carbon on a scale never seen before.
+At present, only 0.1~\% of emitted carbon in sequestered~\cite[p.~2777]{Jenkins:2021tg}.
+Second, policymakers will need to develop rules and laws for CTBOs, 
+and enforcement mechanisms will need to be implemented.
+Finally, lower-carbon alternatives will need to be developed for many 
+commonplace technologies, including
+transport (ground and air), 
+building materials (especially cement), and 
+building heating and cooling.
 
 
 %++++++++++++++++++++++++++++++
