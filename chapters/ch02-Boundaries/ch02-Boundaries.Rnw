@@ -655,8 +655,11 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
   MKHthemes::xy_theme()
 @
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Climate change}
 \label{sec:GHGCC}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Figure \ref{fig:CO2Graph} shows average atmospheric CO$_2$ concentrations over the last 
 800 thousand years (0.8 million years). 
@@ -705,7 +708,7 @@ especially regarding fossil fuels and agriculture.
 
 % see http://clivebest.com/blog/?p=1169 and references therein.
 Here's a brief description of how climate change is happening. 
-In the $\beta$ version of the text, this description will be made more complete.
+**** In the $\beta$ version of the text, this description will be made more complete. ****
 If the radiation received from the sun exceeds the radiation given off by the Earth,
 the Earth's temperature will increase. 
 Increasing temperatures increases the amount of radiation given off by the Earth.
@@ -735,6 +738,40 @@ is incoming from the Sun but that warming process takes a very long time.
 
 % The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
 % The clear trend is upward, with small drops corresponding to years of economic recession.
+
+Most scientists agree that avoiding irreversible effects of climate change
+requires limiting global average temperature rise to 1.5~\degC{} or less,
+relative to the global average temperature at the dawn of the industrial revolution.
+Our ``carbon budget'' is the amount of future CO$_2$ emissions
+that will bring us to 1.5~\degC{} total warming.
+As of 2021, the remaining carbon budget is 500~GtCO$_2$ 
+for a 50\% likelihood of remaining below 1.5~\degC{}~\cite[Table~SPM.2]{IPCC:2021tk}.%
+\footnote{
+ For context, the carbon budget was 1500~GtCO$_2$ in 1990.
+ If we want better odds of remaining below 1.5~\degC, 
+ the carbon budget is smaller. 
+ For 83\% odds, the carbon budget is 300~GtCO$_2$.
+ If we want to live dangerously, the carbon budget for 17\% odds is 900~GtCO$_2$. 
+}
+%
+Assuming no change in the CO$_2$ emissions rate and
+given that we are emitting about 35~GtCO$_2$/year
+(Figure~\ref{fig:CarbonEmissionsGraph}), 
+we have less than 15 years before 1.5~\degC{} is reached.
+Given that CO$_2$ emissions not staying constant but are, in fact, rising,
+we have about a decade before we reach 1.5~\degC of warming
+and irreversible effects of climate change.
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The urgency of the climate challenge is the reason that 
+energy and CO$_2$ emissions are the prime example of this book. 
+
+\end{mcframe}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
