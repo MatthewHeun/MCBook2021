@@ -261,10 +261,13 @@ Figure~\ref{fig:total_material_use} shows the accelerating
 rate of extraction of materials from the Earth.
 Figure~\ref{fig:per_capita_material_use}
 shows the same data on a per-capita basis.
-Although a falling global population might \emph{help} humanity to become 
-sustainable, Figure~\ref{fig:per_capita_material_use} indicates that won't be
+Although a (hypothetically) falling global population might \emph{help} humanity to become 
+sustainable by reducing the number of people who need resources,
+Figure~\ref{fig:per_capita_material_use} indicates that won't be
 enough. 
-Affluence would still be a driver of unsustainability.
+Rising affluence is pushing per-capita material consumption upward over time.
+Thus, a declining population would help humanity to be more sustainable
+only if population declines faster than affluence grows.
 
 
 <<total_material_use, fig.cap="Total world material use. ``Construction'' includes all construction minerals. ``Ores'' includes industrial minerals. ``Fossil'' includes all fossil energy carriers. \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
