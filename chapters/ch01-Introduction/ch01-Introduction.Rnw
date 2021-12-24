@@ -338,6 +338,13 @@ produce one unit of world GDP.
 Lastly, impact intensity of resources ($X$) is a list of the impacts of
 each type of resource. (That is, $X$ is a matrix quantity.)
 
+In broad strokes, sustainability can be seen in the $I$ term (environmental impacts) and 
+in resource extraction (the numerator of $R$ and the denominator of  $X$).
+If we emit wastes at a rate greater than can be assimilated by the environment
+($I$ too large), we are unsustainable.
+If we withdraw resources from the environment at a rate greater than their regeneration rate, 
+we are unsustainable.
+
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -363,8 +370,12 @@ in the rest of the text because energy is the master resource
 and climate change is our most urgent sustainability challenge, and, of course,
 the two are closely linked.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The mathematics of sustainability}
 \label{sec:exp}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Returning to the grain and chessboard problem, for a series of doubling numbers, like the
 number of grains on a chessboard's squares: $1, 2, 4, 8, 16, 32, …$, the sum of all the
 numbers in the series is always one less than the next number in the series.
