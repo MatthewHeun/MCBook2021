@@ -711,11 +711,11 @@ $I_{ep}$ is the amount of primary energy required to create one unit (dollar) of
 world GDP. 
 Of course, many other resources are \emph{also} required to create a unit of GDP
 but we use energy as the prime example of an important resource in the economy.
-The energy intensity of the economy is formed
+The primary energy intensity of the economy is formed
 by dividing primary energy consumption ($E_p$) 
 by world GDP,
-that is, \ dividing Figure~\ref{fig:PrimaryEnergyGraph} 
-by Figure~\ref{fig:GDPGraph-Nordhaus}.
+that is, dividing the line in Figure~\ref{fig:PrimaryEnergyGraph} 
+by the line in Figure~\ref{fig:GDPGraph-Nordhaus}.
 The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 
 % <<EnergyIntensityGraph-Maddison, fig.cap="Primary energy intensity of economic activity, $I_p$ in the Kaya identity. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:GDPGraph}. Uses Maddison data.">>=
@@ -791,13 +791,15 @@ energy_intensity %>%
 
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that
 the primary energy intensity of the world economy ($I_{ep}$) has fallen from 
-15 to 4 MJ/2017 international dollar across the last two centuries. 
+15 to 4~MJ/2017 international dollar across the last two centuries. 
 The decline is caused by the fact that the world economy's GDP 
 (Figure~\ref{fig:GDPGraph-Nordhaus}) 
 has been growing at a faster rate (in \%/year terms) than primary energy consumption 
 (Figure~\ref{fig:PrimaryEnergyGraph}).
+The decline indicates that each additional dollar of GDP
+is created with incrementally less energy.
 Innovation, in the form of energy efficiency,
-has lead to greater economic productivity, that is economic growth.
+has lead to greater energy productivity for economic activity.
 
 One reason that we are interested in the energy intensity of the economy is that 
 energy consumption is a source of CO$_2$ emissions.
