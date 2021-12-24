@@ -106,7 +106,11 @@ they are long-term investments.
 The sooner we begin making those investments, the sooner we'll begin reaping the
 rewards and the greater those rewards will be.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Purpose and focus}%, and organization}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 This book will summarize ways that humans are not living sustainably and will suggest % outline?
 characteristics of sustainable societies.
 Basic data and key concepts start each chapter.
@@ -130,9 +134,29 @@ As you read this book, it should raise many questions for you.
 % The challenges associated with transitioning to a sustainable existence are complex
 % and interconnected.
 The focus of this book is on the many \emph{challenges} of sustainability.
-While we may, at times, point to directions for improved sustainability, it is beyond our scope
+While we may, at times, point to directions for improved sustainability
+(see Chapters~\ref{chap:government} and \ref{chap:personal_action}),
+it is beyond our scope
 (and indeed our ability) to provide \emph{solutions} for all sustainability problems.
-Some (or many) of the questions that are raised may remain unanswered.
+Some (or many) of the questions that are raised about sustainability 
+will remain unanswered.
+
+Our approach to describing sustainability challenges is driven by facts and data.
+Thus, readers can expect graphs, tables, and other numerical representations
+of the state of our world as it relates to sustainability.
+Part~\ref{part:IPARX} (Chapters~\ref{chap:introduction}--\ref{chap:impact_intensity})
+shows mostly data from the world in aggregate.
+Part~\ref{part:sustainability_challenges} shows data mostly from the U.S.\footnote{
+  Readers are encouraged to remember that the U.S.\ is atypical.
+  Its characteristics include 
+  wealthy, western, low-population density, lots of resources, democratic, 
+  industrialized, etc.
+  Few of these characteristics apply to the rest of the world.
+}, 
+because it is the home country of the authors and 
+because it has better data coverage than most countries 
+regarding energy and carbon emissions.
+
 The remainder of this chapter summarizes key themes of the book.
 
 
@@ -295,7 +319,10 @@ In the end, without environmental sustainability, there is no sustainability at 
 % \end{quote}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{A framework for sustainaiblity thinking}%Impacts and their sources}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Two mathematical identities, IPAT and Kaya, have been used to express sources and impact
 of human activities on the environment.
 IPAT expresses ``impact'' ($I$) on the environment as the product of human
@@ -573,10 +600,10 @@ Biofuels (incl. U.S. corn ethanol) & 0.8--1.6 \\ %%  from T. Gomiero 2015
 \end{table}
 
 This book uses the IPARX equation as a framework for thinking about sustainability.
-We will consider many different resources and many different types of impact. 
+We will consider many different resources and many different types of impacts. 
 However, this book has a special focus on energy and CO$_2$ emissions.
 Climate change (see Section \ref{sec:GHGCC}) is one of the most urgent sustainability 
-challenges and it is linked to two of the others (extinction rate and land use changes) 
+challenges and it is linked to two others (extinction rate and land use changes) 
 by CO$_2$ and energy. 
 Thus, carbon emissions and energy lie at the nexus of our sustainability challenges.
 
