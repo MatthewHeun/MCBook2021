@@ -214,9 +214,10 @@ Although any raw material can be essential for a given product,
 the European Commission maintains a list of Critical Raw Materials (CRMs)\index{materials!critical!raw}
 with special importance 
 across a wide range of industries.
-See Table~\ref{tab:CRMs} for critical materials and industries for the European Union.
+(See Table~\ref{tab:CRMs}.)
 Notice the \emph{large number} of resources considered ``critical.''
 Energy is important for making an economy run but so are material resources.
+
 Another interesting feature of Table~\ref{tab:CRMs} is the \emph{breadth of applications}; 
 most of the critical materials are used throughout the economy.
 A material may be critical to a region or economy for any number of reasons:
@@ -224,8 +225,8 @@ breadth of application,
 lack of internal production capability, 
 etc.
 Each region or economy will have its own list of CRMs.
-The point isn't which materials are critical, it's that economies depend deeply on
-a large number of raw materials.
+The point isn't which materials are critical for any given economy;
+it's that all economies depend on a large number of raw materials.
 
 <<CRMs, results="asis">>=
 crm_df <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Critical Raw Materials.xlsx"), 
