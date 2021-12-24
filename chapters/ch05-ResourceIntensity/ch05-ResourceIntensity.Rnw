@@ -72,10 +72,11 @@ So are coal, crude oil, and natural gas.
 In contrast, gasoline is a refined fuel. 
 As such, it is the \emph{product} of 
 a refinery that converts crude oil to refined fuels. 
-Likewise, natural uranium is a primary energy source that must be converted into 
-a uranium fuel before it can be used to generate electricity in a nuclear power plant.
-The refinery or nuclear-fuel enrichment process can be evaluated by their
-energy return on investment (EROI). (See Section~\ref{sec:masterE}.)
+Likewise, natural uranium is a primary energy carrier that must be converted into 
+fissionable uranium fuel before it can be used in a nuclear power plant to generate electricity.
+The refinery or nuclear-fuel enrichment process can be evaluated for their
+energy return on investment (EROI). 
+(See Section~\ref{sec:masterE}.)
 
 We define a \emph{resource} as a primary input to the economy. 
 As such, a resource is something \emph{extracted} from the natural world.
