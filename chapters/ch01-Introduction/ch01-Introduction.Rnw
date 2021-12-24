@@ -3,8 +3,12 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+
+%#############################################################
 \chapter{Introduction}
 \label{chap:introduction}
+%#############################################################
+
 \epigraph{To infinity, and beyond!}{Buzz Lightyear}
 
 Let’s begin with a story.
@@ -311,11 +315,13 @@ and the impact intensity of resources ($X$).
 
 \begin{equation}
 \label{eq:IPARX}
-\small
+\footnotesize
 \begin{tabular}{ccccccccc}
 $I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $X$ \\
-\multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource &  & Impact intensity \\
- &  &  &  &  &  & intensity &  & of resources \\
+% \multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource &  & Impact intensity \\
+%  &  &  &  &  &  & intensity &  & of resources \\
+\multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource intensity &  & Impact intensity \\
+ &  &  &  &  &  & of the economy &  & of resources \\
 $\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}\right]$ &  & $\left[\frac{\textrm{GDP}}{\textrm{capita-year}}\right]$ &  & $\left[\frac{\textrm{resources}}{\textrm{GDP}}\right]$ &  & $\left[\frac{\textrm{impact}}{\textrm{resources}}\right]$
 \end{tabular}
 \normalsize
