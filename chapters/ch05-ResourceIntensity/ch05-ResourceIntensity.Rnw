@@ -629,7 +629,7 @@ coal and natural gas (barely) are being consumed at a sustainable rate.
 Oil is not being consumed at an (even weakly) sustainable rate. 
 
 
-<<EnergyPerPersonGraph, fig.cap="World primary energy consumption per person. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times C$ in the IPARX equation (Equation \\ref{eq:IPARX}) for the prime example of energy.">>=
+<<EnergyPerPersonGraph, fig.cap="World primary energy consumption per person. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times R$ in the IPARX equation (Equation \\ref{eq:IPARX}) for the prime example of energy. Note that per-capita primary energy consumption is flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth. (See Figure~\\ref{fig:PopulationGraph}.) In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth \\emph{and} increasing affluence.">>=
 
 # Find which years have data from the Europe data set
 which_years <- region_pop %>%
