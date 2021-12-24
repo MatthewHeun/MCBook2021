@@ -3,14 +3,17 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+%#############################################################
 \chapter{Land use and urban planning}
 \label{chap:land_use_urban_planning}
+%#############################################################
+
 \epigraph{The truth about a city's aspirations isn't found in its vision. 
 It's found in its budget.}{Brent Toderian}
 %\epigraph{Show me the incentive and I will show you the outcome.}{Charlie Munger}
 
 The previous three chapters described sustainability challenges related to our 
-dwellings, food, and transportation. 
+dwellings, transportation. and food.
 A common element in all these sustainability challenges is how we use land.
 We need \emph{places} for homes and to grow food and
 we also allocate land for transportation systems. 
