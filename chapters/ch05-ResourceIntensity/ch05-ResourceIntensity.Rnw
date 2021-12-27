@@ -325,19 +325,19 @@ material_per_capita %>%
 
 
 
-Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use} 
+Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use}
 show that resource consumption is growing at an ever-increasing rate.
 %But is that rate sustainable?
-By the ``strong sustainability'' criterion, 
+By the ``strong sustainability'' criterion,
 \emph{any} extraction of
 construction minerals, ores and industrial minerals, and fossil energy carriers
 is unsustainable, because
 we are extracting these materials at rates that are faster than their regeneration rates.
-The fact that we are \emph{increasing} our rate of material extraction 
+The fact that we are \emph{increasing} our rate of material extraction
 means that we are running well afoul of the strong sustainability criterion
 for these materials.
-On the other hand, 
-extraction of biomass \emph{can} be sustainable if 
+On the other hand,
+extraction of biomass \emph{can} be sustainable if
 the extraction rate is less than the growth rate.
 
 
@@ -347,67 +347,67 @@ the extraction rate is less than the growth rate.
 %++++++++++++++++++++++++++++++
 
 A weak sustainability criterion is that resources are extracted slowly enough
-to invent and deploy substitute(s) at scale before the resource is depleted. 
+to invent and deploy substitute(s) at scale before the resource is depleted.
 A similar weak sustainability criterion can be established for waste:
-wastes should be emitted slowly enough for their accumulation in the environment 
-to pose no problems before remediation technologies can be invented and deployed 
-at scale. 
-A time horizon is needed for evaluating the weak sustainability criterion, 
+wastes should be emitted slowly enough for their accumulation in the environment
+to pose no problems before remediation technologies can be invented and deployed
+at scale.
+A time horizon is needed for evaluating the weak sustainability criterion,
 typically 50 years.
-Thus, extraction of a resource is weakly sustainability so long as 
+Thus, extraction of a resource is weakly sustainability so long as
 the remaining stock is sufficient to last 50 years at today's extraction rate
 (and, possibly expected future extraction rates).
 
-To evaluate whether a resource meets the weak sustainability criterion, 
+To evaluate whether a resource meets the weak sustainability criterion,
 the following steps can be performed.
 %
 \begin{enumerate}[label={(\alph*)}]
-	
+
   \item Establish the virgin material stock as of today.
-  
+
   \item Divide the virgin stock by 50 years to obtain a maximum weakly
   sustainable extraction rate.
-  
+
   \item Find the current rate of extraction and estimate any future increases or decreases
         in the rate of extraction.
 
-  \item Compare current and expected future extraction rates with the maximum weakly sustainable extraction rate.  
-  
+  \item Compare current and expected future extraction rates with the maximum weakly sustainable extraction rate.
+
   \item If the actual extraction rate is greater than the maximum weakly sustainable extraction rate,
-        consumption of the resource does not meet the weak sustainability criterion. 
+        consumption of the resource does not meet the weak sustainability criterion.
 
 \end{enumerate}
 %
 A similar approach can be used for wastes.
 
-Figure~\ref{fig:PercentageOfSustainable} shows the result of applying 
+Figure~\ref{fig:PercentageOfSustainable} shows the result of applying
 the weak sustainability analysis approach
 to two chemical elements (zinc\index{zinc (Zn)} and germanium\index{germanium (Ge)}) and
 to worldwide emission of CO$_2$.
-The world is far above 
+The world is far above
 weak sustainability levels of consumption for these two materials and CO$_2$ emission.
 To further underscore the importance of consumption of natural resources to sustainability,
 germanium (now being consumed at twice its sustainable rate)
 is one of the critical raw materials in Table~\ref{tab:CRMs}.
 
 <<PercentageOfSustainable, fig.width=3.25, fig.cap="Proportion of weak sustainable extraction (zinc, germanium) or emission (CO$_2$) rates for the U.S. \\emph{Source}: \\citet[Tables~2.1--2.3]{Graedel:2010ab}.">>=
-readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"), 
-                   sheet = "data to plot") %>% 
+readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"),
+                   sheet = "data to plot") %>%
   dplyr::mutate(
-    Resource = factor(Resource, levels = c("zinc", "germanium", "CO2")), 
+    Resource = factor(Resource, levels = c("zinc", "germanium", "CO2")),
     Multiple_of_sustainable = Multiple_of_sustainable * 100
-  ) %>% 
+  ) %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Resource", y = "Multiple_of_sustainable", fill = "Resource")) +
   ggplot2::geom_bar(stat = "identity") +
   ggplot2::guides(fill = "none") +
   ggplot2::scale_x_discrete(labels = c(zinc = "Zn", germanium = "Ge", CO2 = expression(CO[2]))) +
   ggplot2::coord_cartesian(ylim = c(100, NA)) +
   ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.05))) +
-  viridis::scale_fill_viridis(discrete = TRUE) + 
+  viridis::scale_fill_viridis(discrete = TRUE) +
   ggplot2::labs(x = NULL,
                 y = "Proportion of sustainable\nconsumption or emission [%]") +
-  
-  MKHthemes::xy_theme() + 
+
+  MKHthemes::xy_theme() +
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
 
@@ -419,16 +419,16 @@ readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "
 
 Two ways to become more sustainable are recycling and substitution.
 Recycling\index{recycling} is a way to extend the usable life
-of natural resources and 
+of natural resources and
 reduce rates of resource extraction.
-Recycling processes use discarded products as feedstock 
-for processes that regenerate usable products. 
+Recycling processes use discarded products as feedstock
+for processes that regenerate usable products.
 Examples include paper recycling to pulp and glass recycling to new containers.
-However, recycling requires energy 
+However, recycling requires energy
 and other natural resources
-for transporting used material to recycling centers, 
-processing used material into recycled products, and 
-transporting goods to future users. 
+for transporting used material to recycling centers,
+processing used material into recycled products, and
+transporting goods to future users.
 For example, paper recycling uses water for cleaning and de-inking processes.
 Glass recycling requires high-temperature heat for melting processes.
 Whether recycling is, itself, a sustainable means of producing usable products
@@ -438,40 +438,40 @@ depends on the strong or weak sustainability of the recycling processes.
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Economist Nicholas Georgescu-Roegen proposed a fourth law of thermodynamics, 
+Economist Nicholas Georgescu-Roegen proposed a fourth law of thermodynamics,
 stating that complete recycling of matter is impossible~\cite{Georgescu-Roegen:1986aa}
 because material resources are subject to irreversible degradation.
 (Georgescu-Roegen was arguing by analogy from the second law of thermodynamics,
 which states that all forms of energy are subject to irreversible degradation.)
 Later, physicist and economist Robert Ayres correctly
-argued that the second law of thermodynamics applies only to energy 
-(not to material) and that 
+argued that the second law of thermodynamics applies only to energy
+(not to material) and that
 a stable, steady-state recycling system could exist
 provided that two conditions are met:
-(a) a large stockpile of waste material exists and 
+(a) a large stockpile of waste material exists and
 (b) an exogenous source, such as the sun, supplies energy freely and
 at sufficient rate for reprocessing of discarded material~\cite{Ayres:1999}.
 
-The importance of energy to recycling is evident, 
+The importance of energy to recycling is evident,
 even in a debate about its viability!
 
 \end{mcframe}
 
-Substitution is the process of replacing 
+Substitution is the process of replacing
 consumption of a valuable, scarce, or nonrenewable resource
 with a less valuable, less scarce, or renewable resource.
-From a weak sustainability perspective, 
+From a weak sustainability perspective,
 replacing use of a scarce resource with use of an abundant resource
 typically extends the time horizon for depleting the resource and
 brings us closer to weak sustainability.
 (This section focuses on substitutability of resources in manufacturing or production.
-For a related discussion of substitution in consumption, 
-see Question~Q\ref{chap:resource_intensity}.{question:consumption_substitution}.)
+For a related discussion of substitution in consumption,
+see Question~Q\ref{chap:resource_intensity}.\ref{question:consumption_substitution}.)
 
 Scarce resources tend to be valuable.
-Abundant resources tend to be less valuable. 
+Abundant resources tend to be less valuable.
 Using an abundant resource instead of a scarce resource therefore typically
-makes sense from a cost perspective. 
+makes sense from a cost perspective.
 However, substitution is only possible when the two resources in question
 are identical or nearly identical.
 Examples of substitution include:
@@ -480,52 +480,52 @@ injection-molded plastics (inexpensive),
 replacing styrofoam hamburger containers (nonrenewable)
 with paper or cardboard wrappings (renewable), and
 use of solar electricity (renewable) instead of coal electricity (nonrenewable).
-% 
+%
 % Recalling one aspect of Herman Daly's definition of sustainability
 % (``Nonrenewable resources, such as minerals and fossil fuels, must be used no faster
-% than renewable substitutes for them can be put into place''), 
+% than renewable substitutes for them can be put into place''),
 % we see that switching
-Switching from consuming nonrenewable resources 
+Switching from consuming nonrenewable resources
 to consuming renewable resources
 is an important aspect of sustainability -- either the weak \emph{or} the strong version.
 
 That said, it is important to note limits to substitutability.
-At a manufacturing plant, the type of electricity 
-(coal electricity\index{electricity!coal} or solar electricity\index{electricity!solar}) 
-is immaterial, 
+At a manufacturing plant, the type of electricity
+(coal electricity\index{electricity!coal} or solar electricity\index{electricity!solar})
+is immaterial,
 so long as both options are (for the U.S.) 120 V at 60 Hz.
-However, at the power station, 
+However, at the power station,
 the different sources of electricity are \emph{not} substitutes.
 Coal-fired Rankine cycle\index{Rankine cycle} power plants
-cannot use the sun's energy to make electricity. 
-Similarly, a pile of coal is useless 
+cannot use the sun's energy to make electricity.
+Similarly, a pile of coal is useless
 to a solar photovoltaic\index{solar photovoltaic electricity} farm.
 
 Sometimes a scarce (and expensive), renewable resource is replaced by a
-less-expensive, nonrenewable alternative. 
+less-expensive, nonrenewable alternative.
 Two examples illustrate.
 The first example involves ocean-going vessels.
-In the age of sail, ships were made of timber, with teak and mahogany being 
+In the age of sail, ships were made of timber, with teak and mahogany being
 favored ship-building woods.
 Today, cargo ships are built of steel and pleasure craft are made almost exclusively
 of glass-fiber reinforced polymer composites.
 Teak and mahogany are now too rare and too expensive for shipbuilding,
-both in terms of material cost and 
+both in terms of material cost and
 labor cost.
-As often happens, the ready availability of less-expensive vessels 
-means that many more boats are purchased and used. 
+As often happens, the ready availability of less-expensive vessels
+means that many more boats are purchased and used.
 
-The second example involves lighting. 
-Societies have moved from wax candles and whale oil lanterns to ``town gas,''  
+The second example involves lighting.
+Societies have moved from wax candles and whale oil lanterns to ``town gas,''
 kerosene, and finally, electric lights.
-In both cases (ships and lights), none of the options 
-(wood ships, steel ships, 
+In both cases (ships and lights), none of the options
+(wood ships, steel ships,
 wax candles, whale oil lanterns, kerosene lanterns, or electric lights)
 meets the strong sustainability criterion.
-However, all wood ships, wax candles, whale oil lanterns, town gas lamps, and 
-kerosene lamps have all proved to be weakly sustainable.  
-We found substitutes for the natural resources 
-in a reasonable time frame and 
+However, all wood ships, wax candles, whale oil lanterns, town gas lamps, and
+kerosene lamps have all proved to be weakly sustainable.
+We found substitutes for the natural resources
+in a reasonable time frame and
 before the natural resources were depleted.
 
 
@@ -537,13 +537,13 @@ before the natural resources were depleted.
 It has been argued that energy is
 the ultimate resource~\cite{library1971energy}\index{energy!as ultimate resource}
 for two important reasons.
-First, energy is required 
+First, energy is required
 for extraction of natural resources (including energy itself!),
-for any material transformation, 
-for consuming goods and services, and 
+for any material transformation,
+for consuming goods and services, and
 for disposing of goods.
 Second, energy is fungible.
-Within the limits of the second law of thermodynamics, 
+Within the limits of the second law of thermodynamics,
 energy in one form can be converted to energy in another form
 using machines.
 An automobile converts chemical potential energy (gasoline)
@@ -553,20 +553,20 @@ to heat (applied to hair).
 A solar panel converts solar energy (from the sun)
 to electricity (for use in many devices, including, possibly, hair dryers).
 
-Because energy is the ultimate resource,\index{energy!as ultimate resource} 
+Because energy is the ultimate resource,\index{energy!as ultimate resource}
 we use energy as the prime example in the IPARX equation (Equation~\ref{eq:IPARX}).
-There are two important questions: 
-where are we using energy, and 
+There are two important questions:
+where are we using energy, and
 are we using energy sustainably?
 Figure~\ref{fig:LLNL_energy_sankey} answers the first question. %: where are we using energy?
-Energy is used in four broad sectors of the economy: 
+Energy is used in four broad sectors of the economy:
 residences, commerce, industry, and transportation.
 Industry and transportation use more energy than residences and commerce.
 
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{chapters/ch05-ResourceIntensity/figures/Energy_US_2018.png}
-\caption{U.S.\ energy consumption in 2018. 
+\caption{U.S.\ energy consumption in 2018.
 \emph{Source}: \citet{Lawrence-Livermore-National-Laboratory:ua}.}\index{Sankey diagram!energy}
 \label{fig:LLNL_energy_sankey}
 \end{figure}
@@ -575,47 +575,47 @@ Industry and transportation use more energy than residences and commerce.
 <<PrimaryEnergyGraph, fig.cap="World annual primary energy consumption. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels. \\emph{Source}: \\citet{Roser:2021vi}.">>=
 # Gather data for primary energy vs. time graph
 primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "global-primary-energy.xlsx"),
-                                     sheet = "data to plot") %>% 
+                                     sheet = "data to plot") %>%
   dplyr::rename(
-    `Other ren.` = Other_renewables_TWh, 
+    `Other ren.` = Other_renewables_TWh,
     Biofuels = Biofuels_TWh,
     Wind = Wind_TWh,
-    Solar = Solar_TWh, 
+    Solar = Solar_TWh,
     Nuclear = Nuclear_TWh,
     Hydro = Hydropower_TWh,
-    `Nat. gas` = Gas_TWh, 
-    Oil = Oil_TWh, 
-    Coal = Coal_TWh, 
+    `Nat. gas` = Gas_TWh,
+    Oil = Oil_TWh,
+    Coal = Coal_TWh,
     `Trad. bio.` = Traditional_biomass_TWh
-  ) %>% 
-  tidyr::pivot_longer(cols = -Year, names_to = "primary_energy_type", values_to = "energy_TWh") %>% 
+  ) %>%
+  tidyr::pivot_longer(cols = -Year, names_to = "primary_energy_type", values_to = "energy_TWh") %>%
   dplyr::mutate(
-    primary_energy_type = factor(primary_energy_type, levels = c("Other ren.", 
-                                                                 "Biofuels", 
-                                                                 "Wind", 
-                                                                 "Solar", 
+    primary_energy_type = factor(primary_energy_type, levels = c("Other ren.",
+                                                                 "Biofuels",
+                                                                 "Wind",
+                                                                 "Solar",
                                                                  "Nuclear",
                                                                  "Hydro",
-                                                                 "Nat. gas", 
-                                                                 "Oil", 
-                                                                 "Coal", 
-                                                                 "Trad. bio.")), 
+                                                                 "Nat. gas",
+                                                                 "Oil",
+                                                                 "Coal",
+                                                                 "Trad. bio.")),
     energy_EJ = energy_TWh * 0.0036
   )
 
 # Make the graph
-primary_energy %>% 
+primary_energy %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_EJ", fill = "primary_energy_type")) +
-  ggplot2::geom_area() + 
+  ggplot2::geom_area() +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::labs(x = NULL,
-                y = "World energy consumption [EJ/year]", 
+                y = "World energy consumption [EJ/year]",
                 fill = NULL) +
   MKHthemes::xy_theme()
 @
 
-To assess the second question (are we using energy at a sustainable rate?), 
-see Figure~\ref{fig:PrimaryEnergyGraph}, 
+To assess the second question (are we using energy at a sustainable rate?),
+see Figure~\ref{fig:PrimaryEnergyGraph},
 which shows global primary energy consumption through time.
 %*** is this a strong or weak sustainability statement/question? ****
 The increasing consumption of primary energy supports, in part, greater population,
@@ -623,14 +623,14 @@ as shown in Figure~\ref{fig:PopulationGraph}.
 However, on a per-capita basis,
 energy consumption has grown substantially over the last two centuries
 (Figure~\ref{fig:EnergyPerPersonGraph}).
-By the strong sustainability criterion of consuming resources at a rate 
-beneath their regeneration rate, 
+By the strong sustainability criterion of consuming resources at a rate
+beneath their regeneration rate,
 none of the fossil fuels shown in Figure~\ref{fig:PrimaryEnergyGraph}
 are being consumed at a sustainable rate.
-Table~\ref{tab:weak_sustainability_calcs} shows that 
+Table~\ref{tab:weak_sustainability_calcs} shows that
 by the weak sustainability criterion, % of Graedel and Allenby,
 coal and natural gas (barely) are being consumed at a sustainable rate.
-Oil is not being consumed at an (even weakly) sustainable rate. 
+Oil is not being consumed at an (even weakly) sustainable rate.
 
 
 <<EnergyPerPersonGraph, fig.cap="World primary energy consumption per person. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times R$ in the IPARX equation (Equation \\ref{eq:IPARX}) for the prime example of energy. Note that per-capita primary energy consumption is flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth. (See Figure~\\ref{fig:PopulationGraph}.) In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth \\emph{and} increasing affluence.">>=
@@ -677,50 +677,50 @@ History can be seen in time series energy graphs.
 The effect of the 1970s oil crises can be seen in Figure~\ref{fig:EnergyPerPersonGraph}.
 Per-capita primary energy consumption rose substantially from 1800 to 1970
 with the adoption of fossil fuels worldwide.
-Since the oil crises, efficiency and substitution 
-have slowed the growth of per-capita energy primary consumption. 
+Since the oil crises, efficiency and substitution
+have slowed the growth of per-capita energy primary consumption.
 % China's entrance into the World Trade Organization in late 2001 led
 % to a noticeable rise in per-capita energy consumption.
-Economic growth in the developing world, particularly in China, led to a 
+Economic growth in the developing world, particularly in China, led to a
 noticeable rise in per-capita energy consumption starting in 2001.
 
 \end{mcframe}
 
 <<Weak-Sust-Energy, results="asis">>=
 weak_sust_energy_data <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
-                                            sheet = "data for table", 
+                                            sheet = "data for table",
                                             .name_repair = "minimal")
-print(xtable::xtable(weak_sust_energy_data, 
-                     digits = 0, 
+print(xtable::xtable(weak_sust_energy_data,
+                     digits = 0,
                      align = c("c", "r", "r", "l", "r", "l", "r", "l"),
                      caption = "Weak sustainability calculations for world consumption of nonrenewable fossil fuels. Calculations are based on 2018 reserve estimates and consumption rates and do not account for accelerating consumption or future conversion of resources to reserves. ``mst'' is million short tons. ``bb'' is billion barrels. ``tcf'' is trillion cubic feet. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:tr}.",
                      label = "tab:weak_sustainability_calcs"),
-      include.rownames = FALSE, 
-      include.colnames = TRUE, 
+      include.rownames = FALSE,
+      include.colnames = TRUE,
       caption.placement = "top",
-      type = "latex", 
+      type = "latex",
       booktabs = TRUE,
       table.placement = NULL)
 @
 
-
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Energy intensity of the economy}
 \label{sec:energy_intensity_of_the_economy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Continuing the \href{https://en.wiktionary.org/wiki/explication}{explication}
-of the IPARX identity, 
+of the IPARX identity,
 one piece or facet of resource intensity of the economy ($R$)
 is the primary energy intensity ($I_{ep}$) of the world economy.
 $I_{ep}$ is the amount of primary energy required to create one unit (dollar) of
-world GDP. 
+world GDP.
 Of course, many other resources are \emph{also} required to create a unit of GDP
 but we use energy as the prime example of an important resource in the economy.
 The primary energy intensity of the economy is formed
-by dividing primary energy consumption ($E_p$) 
+by dividing primary energy consumption ($E_p$)
 by world GDP,
-that is, dividing the line in Figure~\ref{fig:PrimaryEnergyGraph} 
+that is, dividing the line in Figure~\ref{fig:PrimaryEnergyGraph}
 by the line in Figure~\ref{fig:GDPGraph-Nordhaus}.
 The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 
@@ -728,19 +728,19 @@ The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 % # Create data for the energy intensity of the economy.
 % dplyr::inner_join(
 %   # Get the primary energy data
-%   primary_energy %>% 
-%     dplyr::group_by(Year) %>% 
-%     dplyr::summarise(energy_TWh = sum(energy_TWh)), 
+%   primary_energy %>%
+%     dplyr::group_by(Year) %>%
+%     dplyr::summarise(energy_TWh = sum(energy_TWh)),
 %   # Get the GDP data
-%   world_gdp_Maddison %>% 
-%     dplyr::select(Year, world_gdp_2017_intl_dollars), 
+%   world_gdp_Maddison %>%
+%     dplyr::select(Year, world_gdp_2017_intl_dollars),
 %   by = "Year"
-% ) %>% 
+% ) %>%
 %   dplyr::mutate(
 %     energy_per_GDP_MJ_per_dollar = energy_TWh * 3600000000 / world_gdp_2017_intl_dollars  # 3600000000 MJ / TWh
-%   ) %>% 
-%   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_GDP_MJ_per_dollar")) + 
-%   ggplot2::geom_line(size = 1) + 
+%   ) %>%
+%   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_GDP_MJ_per_dollar")) +
+%   ggplot2::geom_line(size = 1) +
 %   ggplot2::scale_y_continuous(limits = c(0, 8), breaks = seq(0, 14, by = 2)) +
 %   ggplot2::labs(x = NULL,
 %                 y = expression(atop("Prim. energy intensity ("*I[p]*") [MJ/2017 Intl. $]"))) +
@@ -751,19 +751,19 @@ The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 % # Create data for the energy intensity of the economy.
 % dplyr::inner_join(
 %   # Get the primary energy data
-%   primary_energy %>% 
-%     dplyr::group_by(Year) %>% 
-%     dplyr::summarise(energy_TWh = sum(energy_TWh)), 
+%   primary_energy %>%
+%     dplyr::group_by(Year) %>%
+%     dplyr::summarise(energy_TWh = sum(energy_TWh)),
 %   # Get the GDP data
-%   world_gdp_DeLong %>% 
-%     dplyr::select(Year, world_gdp_2017_intl_dollars), 
+%   world_gdp_DeLong %>%
+%     dplyr::select(Year, world_gdp_2017_intl_dollars),
 %   by = "Year"
-% ) %>% 
+% ) %>%
 %   dplyr::mutate(
 %     energy_per_GDP_MJ_per_dollar = energy_TWh * 3600000000 / world_gdp_2017_intl_dollars  # 3600000000 MJ / TWh
-%   ) %>% 
-%   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_GDP_MJ_per_dollar")) + 
-%   ggplot2::geom_line(size = 1) + 
+%   ) %>%
+%   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_GDP_MJ_per_dollar")) +
+%   ggplot2::geom_line(size = 1) +
 %   ggplot2::labs(x = NULL,
 %                 y = expression(atop("Prim. energy intensity ("*I[p]*") [MJ/2017 Intl. $]"))) +
 %   MKHthemes::xy_theme()
@@ -774,50 +774,50 @@ The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 # Create data for the energy intensity of the economy.
 energy_intensity <- dplyr::inner_join(
   # Get the primary energy data
-  primary_energy %>% 
-    dplyr::group_by(Year) %>% 
-    dplyr::summarise(energy_TWh = sum(energy_TWh)), 
+  primary_energy %>%
+    dplyr::group_by(Year) %>%
+    dplyr::summarise(energy_TWh = sum(energy_TWh)),
   # Get the GDP data
-  world_gdp_Nordhaus %>% 
-    dplyr::select(Year, world_gdp_2017_intl_dollars), 
+  world_gdp_Nordhaus %>%
+    dplyr::select(Year, world_gdp_2017_intl_dollars),
   by = "Year"
-) %>% 
+) %>%
   dplyr::mutate(
     energy_per_GDP_MJ_per_dollar = energy_TWh * 3600000000 / world_gdp_2017_intl_dollars  # 3600000000 MJ / TWh
-  ) 
-energy_intensity %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_GDP_MJ_per_dollar")) + 
-  ggplot2::geom_line(size = 1, colour = mc_title_blue) + 
+  )
+energy_intensity %>%
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_GDP_MJ_per_dollar")) +
+  ggplot2::geom_line(size = 1, colour = mc_title_blue) +
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = NULL,
                 y = expression(atop("Primary energy intensity [MJ/2017 Intl. $]"))) +
   MKHthemes::xy_theme()
 @
 
-
+ 
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that
-the primary energy intensity of the world economy ($I_{ep}$) has fallen from 
-15 to 4~MJ/2017 international dollar across the last two centuries. 
-The decline is caused by the fact that the world economy's GDP 
-(Figure~\ref{fig:GDPGraph-Nordhaus}) 
-has been growing at a faster rate (in \%/year terms) than primary energy consumption 
+the primary energy intensity of the world economy ($I_{ep}$) has fallen from
+15 to 4~MJ/2017 international dollar across the last two centuries.
+The decline is caused by the fact that the world economy's GDP
+(Figure~\ref{fig:GDPGraph-Nordhaus})
+has been growing at a faster rate (in \%/year terms) than primary energy consumption
 (Figure~\ref{fig:PrimaryEnergyGraph}).
 The decline indicates that each additional dollar of GDP
 is created with incrementally less energy.
 Innovation, in the form of energy efficiency,
 has lead to greater energy productivity for economic activity.
 
-One reason that we are interested in the energy intensity of the economy is that 
+One reason that we are interested in the energy intensity of the economy is that
 energy consumption is a source of CO$_2$ emissions.
-We can look at a restricted interpretation of Equation~\ref{eq:IPARX}, 
+We can look at a restricted interpretation of Equation~\ref{eq:IPARX},
 which considers only CO$_2$ emissions on the left-hand side of the equation
 and the energy intensity of the economy ($I_{ep}$) instead of $R$ on the right-hand side.
 When $I_{ep}$ falls, downward pressure is placed on CO$_2$ emissions.
 Whether CO$_2$ emissions \emph{actually} decrease
-depends on the rates of increase or decline of the other terms 
+depends on the rates of increase or decline of the other terms
 on the right side of Equation~\ref{eq:IPARX}.
 Figure~\ref{fig:CarbonEmissionsGraph} shows that CO$_2$ emissions have been growing over time.
-So, other terms on the right side of the IPARX identity 
+So, other terms on the right side of the IPARX identity
 are growing faster than energy intensity of the economy is declining
 (see Section \ref{sec:revisit_IPARX}).
 
@@ -832,88 +832,88 @@ Extraction of finite resources
 follows a pattern through time.
 In the beginning, extraction of a useful but finite resource accelerates
 as demand climbs and technologies are developed to reduce the cost of extraction.
-Through time, the acceleration of the resource extraction rate declines, 
+Through time, the acceleration of the resource extraction rate declines,
 eventually peaking and declining.
-A clear example of a production curve for a finite resource is 
+A clear example of a production curve for a finite resource is
 extraction of coal in the UK, shown in Figure~\ref{fig:UK_coal_extraction}.
 
 <<UK_coal_extraction, fig.cap="UK coal production. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv} for 1830--2009; \\citet{UK_dept_BEIS:2021} for 2010--2020.">>=
-uk_coal_extraction <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "CoalGraph.xlsx"), 
-                                         sheet = "data to plot") %>% 
+uk_coal_extraction <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "CoalGraph.xlsx"),
+                                         sheet = "data to plot") %>%
   dplyr::mutate(
     Year = as.numeric(Year)
-  ) %>% 
+  ) %>%
   dplyr::filter(
     complete.cases(.)
   )
 
-uk_coal_extraction %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = UK_coal_production_Mt)) + 
+uk_coal_extraction %>%
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = UK_coal_production_Mt)) +
   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
-  
-  ggplot2::labs(x = ggplot2::element_blank(), 
+
+  ggplot2::labs(x = ggplot2::element_blank(),
                 y = "UK coal production [Mt/year]") +
-  
+
   MKHthemes::xy_theme()
 @
 
-The cumulative production of a limited resource follows a logistic curve, 
-with an inflection point (from concave upward to concave downward) 
-at the production peak 
-and leveling toward the end. 
+The cumulative production of a limited resource follows a logistic curve,
+with an inflection point (from concave upward to concave downward)
+at the production peak
+and leveling toward the end.
 
 <<UK_coal_logistic, fig.cap="UK coal logistic curve. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv}, 1829--2009; own calculations, 2010--2020.">>=
-uk_coal_extraction %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = q_Gt)) + 
+uk_coal_extraction %>%
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = q_Gt)) +
   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
-  
-  ggplot2::labs(x = ggplot2::element_blank(), 
+
+  ggplot2::labs(x = ggplot2::element_blank(),
                 y = "UK coal cumulatie production [Gt]") +
-  
+
   MKHthemes::xy_theme()
 @
 
 If production of finite resources shifts to other countries
 (coal production is now dominated by China, India, the U.S., and Australia)
-and international trade is possible, 
-the world will not face shortages 
-until all regions are exhausted of the resource. 
+and international trade is possible,
+the world will not face shortages
+until all regions are exhausted of the resource.
 Each region is at different places on its logistic curve
-for resource production. 
+for resource production.
 
-One way to slow down the inevitable march of time 
-along logistic curves for finite resources is to transition 
-economies to use fewer resources per unit of GDP produced, 
+One way to slow down the inevitable march of time
+along logistic curves for finite resources is to transition
+economies to use fewer resources per unit of GDP produced,
 i.e., to reduce the resource intensity of the economy ($R$).
-Reduction of resource intensity of the economy is sometimes called \emph{dematerialization}. 
-Reducing $R$ will reduce resource consumption but only if 
-GDP stays constant or grows more slowly than the 
+Reduction of resource intensity of the economy is sometimes called \emph{dematerialization}.
+Reducing $R$ will reduce resource consumption but only if
+GDP stays constant or grows more slowly than the
 rate at which $R$ decreases.
 
-For the prime example of energy and CO$_2$ emissions, 
+For the prime example of energy and CO$_2$ emissions,
 reducing $R$ means reducing the energy intensity of economic activity
-($I_{ep}$), 
-i.e., reducing the amount of energy required to produce 
-each unit of GDP. 
-(Section~\ref{sec:low_carbon_transition} discusses a distinct but related issue, 
-transitioning the energy system to reduce CO$_2$ emissions 
+($I_{ep}$),
+i.e., reducing the amount of energy required to produce
+each unit of GDP.
+(Section~\ref{sec:low_carbon_transition} discusses a distinct but related issue,
+transitioning the energy system to reduce CO$_2$ emissions
 from each unit of energy consumed.)
 
 There are many ways often suggested to reduce the energy intensity of economic activity ($I_{ep}$).
 First, increasing energy efficiency (through efficiency standards or mandates)
-can decrease the energy consumption for end uses. 
-Examples include corporate average fuel economy (CAFE) standards for vehicles 
+can decrease the energy consumption for end uses.
+Examples include corporate average fuel economy (CAFE) standards for vehicles
 in the U.S.\
 and mandates for LED lighting in many countries.
-Another way to reduce the energy intensity of an economy is to move 
+Another way to reduce the energy intensity of an economy is to move
 away from a manufacturing economy toward a service economy.
 However, as shown in the haircut example at the beginning of this chapter,
-the need for resources never goes away, even in a service economy. 
+the need for resources never goes away, even in a service economy.
 In fact, moving to a service economy often introduces problem-shifting
-(see Section~\ref{sec:electric_vehicles}), 
+(see Section~\ref{sec:electric_vehicles}),
 as finished goods are imported and manufacturing moves off shore~\cite{Hardt:2018aa}.
 
-
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -921,8 +921,8 @@ as finished goods are imported and manufacturing moves off shore~\cite{Hardt:201
 Peter M. Schwarz, \emph{Energy economics}, Oxfordshire, UK: Routledge, 2018. \\
 % https://www.routledge.com/Energy-Economics/Schwarz/p/book/9780415676786
 
-% Kostas Bithas and Panos Kalimeris, 
-% \emph{Unmasking decoupling: Redefining the Resource Intensity of the Economy.} 
+% Kostas Bithas and Panos Kalimeris,
+% \emph{Unmasking decoupling: Redefining the Resource Intensity of the Economy.}
 % Science of the Total Environment, 2018 \cite{Bithas2018} \\
 
 % J. H. Brown \emph{et al},
@@ -936,8 +936,8 @@ Peter M. Schwarz, \emph{Energy economics}, Oxfordshire, UK: Routledge, 2018. \\
 
 US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov/centers/nmic} \\
 
-\noindent The Technology Connections YouTube channel has three videos on the history of 
-combustion-based lighting technology, dated 
+\noindent The Technology Connections YouTube channel has three videos on the history of
+combustion-based lighting technology, dated
 \href{https://www.youtube.com/watch?v=tURHTuKHBZs}{June 16, 2021},
 \href{https://www.youtube.com/watch?v=F3rncxf4Or8}{July 1, 2021}, and
 \href{https://www.youtube.com/watch?v=D_qFWoa_HR4}{August 2, 2021}.
@@ -948,105 +948,105 @@ combustion-based lighting technology, dated
 
 \begin{questions}
 
-  \item Some aquifers, such as the Ogallala aquifer, are called ``fossil water'' 
-        because they were filled with glacial melt from the last ice age. 
-        Is using any such resource sustainable? 
-        What are the moral and ethical implications of leaving a valuable and 
+  \item Some aquifers, such as the Ogallala aquifer, are called ``fossil water''
+        because they were filled with glacial melt from the last ice age.
+        Is using any such resource sustainable?
+        What are the moral and ethical implications of leaving a valuable and
         usable resource \emph{unused}?
 
-  \item What is the purpose (\emph{telos}) of mineral resources in the environment? 
+  \item What is the purpose (\emph{telos}) of mineral resources in the environment?
         Should they be left in place or used?
         Humans are the only creatures on Earth that make use of most minerals.
-        What are some positive impacts on animal populations that arise from 
+        What are some positive impacts on animal populations that arise from
         humans' use of materials that are not available to any other animal?
         Are there any?
-  
+
   \item What are the positive features of the strong sustainability criterion?
         What are the weaknesses of the strong sustainability criterion?
         Is the strong sustainability criterion too severe for modern life today?
         Justify your answer.
-        Can strong sustainability be applied selectively to some resources but 
+        Can strong sustainability be applied selectively to some resources but
         not others or should all resources be judged equally?
-        What are the implications of not applying the strong sustainability 
+        What are the implications of not applying the strong sustainability
         criterion universally to all resources?
-  
+
   \item Why is the weak sustainability criterion a good criterion?
         What are the drawbacks to weak sustainability criteria?
         What is the basis for your judgement?
-        
+
   \item In which circumstances is a weak sustainability criterion appropriate?
         In which circumstances is the strong sustainability criterion appropriate?
         Give examples.
-        
+
   \item Time is our most constrained resource. The human lifespan is about 4000 weeks.
-        How do you use your time? 
+        How do you use your time?
         What fraction of your total time is devoted to
-        economically productive activities? Why? 
-        What are the sustainability impacts of how you spend your time? 
-        Can you quantify the sustainability impacts of how you spend your time 
+        economically productive activities? Why?
+        What are the sustainability impacts of how you spend your time?
+        Can you quantify the sustainability impacts of how you spend your time
         in terms of the IPARX equation?
-        
+
   \item Where does your water come from?
         How does it get to you? Where is your waste water treated?
         How is energy, the ultimate resource, involved in each of these steps?
         How has water provision changed over time where you live?
-        
+
   \item Evaluate the notion of a closed-loop water system (so called ``toilet-to-tap'').
         Would you drink water from a toilet-to-tap system?
-        Does your answer change if you learn that, already, there are low levels 
+        Does your answer change if you learn that, already, there are low levels
         of many pharmaceutical substances and organic pollutants in drinking water?
         A closed-loop water system would probably lower exposure to some pollutants
-        and increase concentrations of pharmaceutical substances (or else require 
-        more advanced waste-water treatment technology). 
-        How does a closed-loop system affect sustainability for communities that 
+        and increase concentrations of pharmaceutical substances (or else require
+        more advanced waste-water treatment technology).
+        How does a closed-loop system affect sustainability for communities that
         use it? Other communities?
 
-  \item Carbon-driven global climate change and population growth are making 
+  \item Carbon-driven global climate change and population growth are making
         desalination of seawater a more prominent source of water for
-        many populations. 
-        Carbon emissions from desalination may increase from 76 million 
+        many populations.
+        Carbon emissions from desalination may increase from 76 million
         tons of CO$_2$ per year in 2015 to 200-500 million tons per year by 2040
-        \cite{GCWDA2015}. 
-        % see also Rothausen, S., Conway, D. Greenhouse-gas emissions from energy use in the water sector. 
+        \cite{GCWDA2015}.
+        % see also Rothausen, S., Conway, D. Greenhouse-gas emissions from energy use in the water sector.
         % Nature Clim Change 1, 210–219 (2011). https://doi.org/10.1038/nclimate1147
         \begin{enumerate}
         \item Is there an individual right to water?
         \item Do nation states have a right to water?
-        \item Does it matter if you're oil-rich Saudi Arabia or the (relatively) poor 
+        \item Does it matter if you're oil-rich Saudi Arabia or the (relatively) poor
         and low-lying Republic of the Marshall Islands?
         \item Discuss how these rights impact global efforts to limit climate change.
         \end{enumerate}
-        
+
   \item Consider a carbon tax on commercial transportation.
-        Is such a tax a reduction in affluence (Chapter~\ref{chap:affluence}) 
+        Is such a tax a reduction in affluence (Chapter~\ref{chap:affluence})
         because the same goods you used to purchase now cost more?
-        Or would you view the tax as a enriching your natural capital by 
-        incentivizing a shift to carbon-free forms of energy (thereby providing 
+        Or would you view the tax as a enriching your natural capital by
+        incentivizing a shift to carbon-free forms of energy (thereby providing
         you with all the benefits of a stronger ecosystem; see Question Q2.7)?
         What beliefs or values inform your answer?
-        How might such an evaluation be extended from the personal to a national 
+        How might such an evaluation be extended from the personal to a national
         or global scale?
-  
+
   % \item **** Maybe not a good question. Consider deleting. ****
-  %       Consider the effects of a carbon tax on transportation. Supply chain 
+  %       Consider the effects of a carbon tax on transportation. Supply chain
   %       issues related to Covid-19 and a container ship stuck in the Suez canal
-  %       created a ``shipping apocalypse.'' Raising the \emph{cost} of shipping 
+  %       created a ``shipping apocalypse.'' Raising the \emph{cost} of shipping
   %       would disproportionately affect low profit-margin goods and very heavy
   %       goods. How would you approach weighing the pros and cons of such a tax?
-       
-  \item The weak sustainability criterion in Section 
+
+  \item The weak sustainability criterion in Section
         \ref{sec:resources_weak_sustainability} is predicated on
-        renewable substitutes being found for nonrenewable resources. 
+        renewable substitutes being found for nonrenewable resources.
         % Discuss the rates of adoption of renewable replacements for the materials
-        % in Table~\ref{tab:CRMs}. 
+        % in Table~\ref{tab:CRMs}.
         % How does the rate of adoption of renewable substitutes for the CRMs in Table~\ref{tab:CRMs}
-        % compare to the rate of replacements for materials in 
+        % compare to the rate of replacements for materials in
         % Figures~\ref{fig:total_material_use}--\ref{fig:PercentageOfSustainable}?
-        The CRMs (Table~\ref{tab:CRMs}) are mostly low-volume, high-value materials. 
+        The CRMs (Table~\ref{tab:CRMs}) are mostly low-volume, high-value materials.
         The items in Figures~\ref{fig:total_material_use}--\ref{fig:per_capita_material_use}
-        are high-volume, low-value materials. 
+        are high-volume, low-value materials.
         Which do you think has better prospects for finding renewable replacements
-        low-volume, high-value materials (CRMs) or 
+        low-volume, high-value materials (CRMs) or
         high-volume, low-value materials (such as construction minerals and industrial materials)?
         Why?
         What would an economist say?
@@ -1054,8 +1054,8 @@ combustion-based lighting technology, dated
 
   \item A recent report \cite{Miljostyrelsen2018} found that an organic cotton
         canvas tote bag has an environmental footprint equivalent to 20,000
-        plastic shopping bags. 
-        In other words, \emph{to break even} you would use the organic cotton bag 
+        plastic shopping bags.
+        In other words, \emph{to break even} you would use the organic cotton bag
         every day for about 54 years.
         Hank Green \href{https://www.youtube.com/watch?v=2PF5AAEAWTs}{attributed his emotional reaction}
         % "it's resource intensive to grow crops!"
@@ -1063,43 +1063,43 @@ combustion-based lighting technology, dated
         % "where do I draw the line between the stuff that I care about and the stuff that I don't."
         % "we should change our mind when presented with evidence to the contrary."
         % "if we're going to care we have to orient our caring based on reality."
-        % "are we being sold an idea because someone is trying to sell us something or is this actually 
+        % "are we being sold an idea because someone is trying to sell us something or is this actually
         %   gonna have a positive impact?"
         % "is this a little complicated? Yeah. But simplicity is almost always a lie."
-        to cognitive dissonance between life cycle analysis results and his 
+        to cognitive dissonance between life cycle analysis results and his
         intuition that cotton bags \emph{should} be better for the environment.
         How should humans respond when analytical results go against intuition?
-        Hank says ``Simplicity is almost always a lie.'' 
-        ``We have to ask, are we being sold an idea because someone is trying to 
-        sell us something or is this actually gonna have a positive impact?'' 
+        Hank says ``Simplicity is almost always a lie.''
+        ``We have to ask, are we being sold an idea because someone is trying to
+        sell us something or is this actually gonna have a positive impact?''
         ``We have to orient our caring based on reality.''
         What cognitive dissonances have you found in this book so far?
         What changes might you make based new information?
-        
+
   \item In discussing the study mentioned in the previous question, GreenBooks.org
-        \href{https://www.green-books.org/shoppingbagsstudy/}{says} 
-        ``17 million barrels of oil are used every year for the US water bottle 
-        market – polluting the earth with greenhouse gases and contributing to 
+        \href{https://www.green-books.org/shoppingbagsstudy/}{says}
+        ``17 million barrels of oil are used every year for the US water bottle
+        market – polluting the earth with greenhouse gases and contributing to
         global warming through climate change.''
         What do you think of their statement?
-        Remember ``are we being sold an idea because someone is trying to 
+        Remember ``are we being sold an idea because someone is trying to
         sell us something?''
         What is GreenBooks selling?
         It should be obvious that if oil is made into a water bottle, it can't be
-        going into the atmosphere as a greenhouse gas. 
-        Perhaps they meant that making the plastic from oil or the bottle from the 
+        going into the atmosphere as a greenhouse gas.
+        Perhaps they meant that making the plastic from oil or the bottle from the
         plastic used energy, which creates greenhouse gases.
         But then all economic activity generates greenhouse gases.
-        And, similar to the cotton totes, a lightweight plastic water bottle is 
+        And, similar to the cotton totes, a lightweight plastic water bottle is
         better than glass -- if we're going to have water bottles at all.
         Write a nuanced response to the ``soundbite'' quoted above.
-  
+
   \item Consider the lighting and ship-building examples mentioned in Section \ref{sec:recycling}.
-        Techno-optimists (see Section \ref{sec:malthus_ehrlich_simon}) 
+        Techno-optimists (see Section \ref{sec:malthus_ehrlich_simon})
         would view both of these examples as demonstration of the principle
         that price is the mechanism that spurs innovation and that weak sustainability
-        is ``good enough.'' 
-        Do you find techno-optimism convincing \emph{in these two cases}? 
+        is ``good enough.''
+        Do you find techno-optimism convincing \emph{in these two cases}?
         Does your answer for these two examples generalize to other products or resources?
         What do you make of the idea that price reductions spur increased consumption?
         Relate your answer to the IPARX equation (Equation \ref{eq:IPARX}).
@@ -1110,33 +1110,33 @@ combustion-based lighting technology, dated
   %       Add an issue on GitHub to include the Gradel and Alllenby figure.
   %       The figure will allow us to discuss differences among
   %       weak, strong, and economic levels of extraction.
-  
+
   \item Critique/reflect on the statement ``money is a lien on energy and resources.''
         What does this statement indicate in terms of the IPARX equation?
         What differences are there, for sustainability, between affluence and wealth?
-        
-\item   Section \ref{sec:recycling} introduced the idea that sufficiently similar 
+
+\item   Section \ref{sec:recycling} introduced the idea that sufficiently similar
         materials could substitute for one another in a manufacturing process.
         % For example, wood, steel, and ferro-cement (cement with metallic reinforcement)
         % can all be used to build a boat.
-        % Wood is a renewable (but perhaps more expensive choice, depending on the 
-        % size of the boat) resource. 
+        % Wood is a renewable (but perhaps more expensive choice, depending on the
+        % size of the boat) resource.
         % Steel is recyclable but cement is more abundant than steel.
         % (Therefore it's debatable whether steel or ferro-cement is more weakly sustainable.)
-        There can also be substitutability in consumption. 
+        There can also be substitutability in consumption.
         Butter or margarine as alternatives to spread on your toast is a classic example.
-        Peanut butter could also be an alternative. 
-        Or, you could have oatmeal for breakfast. 
+        Peanut butter could also be an alternative.
+        Or, you could have oatmeal for breakfast.
         Oatmeal and butter aren't very similar to one another but they serve the same
         function or purpose --- to provide for your caloric needs.
         Likewise, going to a concert or going for a walk on the beach aren't similar
         activities but they serve the same function (recreation activity).
         In each of the following categories, what is an unsustainable:
         recreational activity, household utility, food, land use that \emph{you do}?
-        Think of a more sustainable alternative that you could substitute. 
+        Think of a more sustainable alternative that you could substitute.
         How are your sustainable and unsustainable choices similar?
         How are they different? \label{question:consumption_substitution}
-  
+
 \end{questions}
 
 
@@ -1147,53 +1147,53 @@ combustion-based lighting technology, dated
 \begin{projects}
 
   \item Update the weak sustainability calculations of Table~\ref{tab:weak_sustainability_calcs}
-        using the latest data from 
+        using the latest data from
         the U.S.\ Energy Information Agency (EIA)~\cite{U.S.-Energy-Information-Agency:tr}.
-        
+
   \item Choose a material from the European Commission list of critical raw materials in Table~\ref{tab:CRMs}.
         Do today's consumption rates of that material meet weak or strong sustainability criteria?
         Provide suggestions for ways to bring consumption rates closer to strong sustainability.
-        
+
   \item Research the source locations for the materials in Table~\ref{tab:CRMs}.
         How would you characterize the geographic distribution of critical raw material sourcing?
         Localized? Global? Other?
-        What are the sustainability (environmental, economic, and social) implications 
+        What are the sustainability (environmental, economic, and social) implications
         of the geographical distribution of critical raw material sources?
 
   \item Re-estimate the time remaining for fossil fuel reserves
         (Table~\ref{tab:weak_sustainability_calcs})
         by projecting both demand for fossil fuels
         and additions to reserves into the future.
-        Do the weak sustainability estimates 
-        of Table~\ref{tab:weak_sustainability_calcs} change? 
+        Do the weak sustainability estimates
+        of Table~\ref{tab:weak_sustainability_calcs} change?
 
   \item Compare the weak sustainability approach %advocated by Graedel and Allenby
         to the methods of David Rutledge~\cite{Rutledge:tv}\index{Rutledge, David}.
         Which produces better estimates of the time to exhaust nonrenewable resources?
         Why?
-        
-  \item Visit a recycling center and assess its sustainability. 
+
+  \item Visit a recycling center and assess its sustainability.
         Is the center an example of strong sustainability, weak sustainability, or neither?
         Where is are the recycling processes consuming energy or other materials?
         Is the energy fossil-based or renewable?
-        
+
   \item Research the CAFE automobile efficiency standards in the U.S.\ and
-        other automobile efficiency standards worldwide. 
+        other automobile efficiency standards worldwide.
         Evaluate the strategies, tactics, and approaches to improving fuel economy in automobiles and trucks.
-        Which approach works best? 
-        Which approaches are ineffective?  
+        Which approach works best?
+        Which approaches are ineffective?
         Why?
-        
-  \item Evaluate the ecological and economic impacts substitution of an 
+
+  \item Evaluate the ecological and economic impacts substitution of an
         injection-molded plastic part for a stamped steel part on an automobile.
         What are the raw material and extraction implications?
         How much energy is used to create the part?
-        Does using a lighter part have energy implications over the life of the 
+        Does using a lighter part have energy implications over the life of the
         vehicle?
         Are there issues with corrosion or UV exposure?
         Are there disposal or recycling issues?
         In your view, which material is more environmentally friendly?
-      
+
 \end{projects}
 
 \cleardoublepage
