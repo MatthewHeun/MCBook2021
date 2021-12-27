@@ -270,6 +270,16 @@ Rising affluence is pushing per-capita material consumption upward over time.
 Thus, a declining population would help humanity to be more sustainable
 only if population declines faster than affluence grows.
 
+Furthermore, Figure~\ref{fig:per_gdp_material_use} shows that on a per-GDP basis, 
+extraction of construction minerals, ores, and fossil fuels scales 
+quite well with GDP:
+those bands are not appreciably growing or shrinking over time.
+On the other hand, the per-GDP extraction of biomass extraction is declining rapidly.
+The world's economies are dematerializing, but 
+only because we're using less biomass per unit of GDP than ever before.
+We're using the same amount of construction minerals, ores, and fossil fuels
+per GDP as we ever have.
+
 
 <<total_material_use, fig.cap="Total world material use. ``Construction'' includes all construction minerals. ``Ores'' includes industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is metric tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
 krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
@@ -290,6 +300,7 @@ krausmann %>%
   ggplot2::geom_area() + 
   ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
   ggplot2::scale_fill_viridis_d(direction = -1) +
+  ggplot2::labs(y = "Extracted material [Gt/year]") +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
                 fill = ggplot2::element_blank()) +
@@ -315,19 +326,40 @@ material_per_capita %>%
   ggplot2::scale_fill_viridis_d(direction = -1) +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = "Material extraction [t/person]",
+                y = "Material extraction [t/person-year]",
                 fill = ggplot2::element_blank()) +
   
   MKHthemes::xy_theme()
-
-
 @
 
 
 
-Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use}
-show that resource consumption is growing at an ever-increasing rate.
-%But is that rate sustainable?
+<<per_gdp_material_use, fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of construction materials, ores, and fossil fuels scales quite well with GDP and shows no growth on this graph. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: The regions in this figure are calculated by dividing the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+material_per_gdp <- krausmann %>% 
+  dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>% 
+  dplyr::mutate(
+    # extracted material is in Gt, multiplying by 10^12 gives kg.
+    # So per gdp amount is in kg/$
+    mat_per_gdp = `Extracted material [Gt]` * 10^12 / world_gdp_2017_intl_dollars
+  )
+
+material_per_gdp %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "mat_per_gdp", fill = "type")) + 
+  ggplot2::geom_area() +
+  ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
+  # ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 10, by = 2)) +
+  ggplot2::scale_fill_viridis_d(direction = -1) +
+  
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = "Material extraction [kg/2017 intnl $-year]",
+                fill = ggplot2::element_blank()) +
+  
+  MKHthemes::xy_theme()
+@
+
+
+Figure~\ref{fig:total_material_use} 
+shows that resource consumption is growing at an ever-increasing rate.
 By the ``strong sustainability'' criterion,
 \emph{any} extraction of
 construction minerals, ores and industrial minerals, and fossil energy carriers
@@ -339,6 +371,9 @@ for these materials.
 On the other hand,
 extraction of biomass \emph{can} be sustainable if
 the extraction rate is less than the growth rate.
+Unfortunately, Figure~\ref{fig:per_gdp_material_use} shows that biomass extraction
+is not scaling with GDP.
+In fact, GDP growth is supported exclusively by unsustainable material extraction.
 
 
 %++++++++++++++++++++++++++++++
