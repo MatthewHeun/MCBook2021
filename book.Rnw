@@ -76,6 +76,7 @@ knitr::opts_chunk$set(echo=FALSE,
 
 library(dplyr)             # For manipulating data
 library(ggplot2)           # For graphing functions
+library(ggsankey)          # For ggplot-style Sankey diagrams. Install with devtools::install_github("davidsjoberg/ggsankey")
 library(magrittr)          # For pipe operator, (%>%)
 library(MKHthemes)         # For default ggplot2 theme
 library(readxl)            # To read Excel files
