@@ -711,6 +711,16 @@ despite higher initial cost?''
 \label{sec:sustainability_transitions_households}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+In the areas discussed above
+(size and location, heating and cooling, 
+hygiene, and lighting), 
+sustainability transitions take the form of 
+obtaining the same energy services
+with less resources consumption, especially energy. 
+As such, the household sustainability transitions discussed below
+will have the effect of reducing the resource intensity of the economy
+($R$ in Equation~\ref{eq:IPARX}).
+
 
 %++++++++++++++++++++++++++++++
 \subsection{Size and location transitions}
@@ -836,7 +846,7 @@ using a cold-water cycle, and line drying clothes.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Ligthing transition}
+\subsection{Lighting transition}
 \label{sec:lighting_transition}
 %++++++++++++++++++++++++++++++
 
