@@ -17,15 +17,21 @@
 \epigraph{Literature is mostly about having sex and not much about having children. 
 Life is the other way round.}{David Lodge}
 
-Equation \ref{eq:IPARX} expresses human impact on the Earth as the product
-of population, affluence, resource intensity of the economy, and the impact intensity 
-of resources. 
+Equation \ref{eq:IPARX} (repeated below for convenience) 
+expresses human impact on the Earth as the product
+of population ($P$), 
+affluence ($A$), resource intensity of the economy ($R$), and
+the impact intensity of resources ($X$). 
 Chapter~\ref{chap:planetary_boundaries} discussed how the Earth's ecosystems 
 provide for human needs and how human activities can degrade,
 even catastrophically destroy, the ability of the Earth to support life. 
 
+\begin{equation} 
+  \iparx            \tag{\ref{eq:IPARX}}
+\end{equation}
+
 This chapter examines human population dynamics and the impact of human 
-activities on animal populations.
+activities on animal populations, i.e., this chapter covers $P$ in the IPARX equation.
 The decline of many animal populations is concerning (in part) because it likely 
 indicates a reduction in ecosystem services.
 Through the twentieth century, the global human population grew exponentially,

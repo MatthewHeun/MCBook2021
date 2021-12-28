@@ -32,15 +32,22 @@ the economy is society's metabolism.\index{economy!as society's metabolism}
 As such, the economy exhibits characteristics of a metabolism:
 it ingests materials and emits wastes.
 These characteristics of the economic metabolism are captured by the
-final term in Equation~\ref{eq:IPARX},
-the environmental \emph{impact intensity} of resource extraction and consumption ($X$).
-$X$ is a function of $R$ (resource extraction and consumption) discussed in 
+final term in Equation~\ref{eq:IPARX} (repeated below for convenience),
+the environmental \emph{impact intensity} of resource extraction and consumption ($X$), 
+the topic of this chapter.
+
+\begin{equation} 
+  \iparx            \tag{\ref{eq:IPARX}}
+\end{equation}
+
+The impact intensity of resources ($X$)
+is a function of $R$ (resource extraction and consumption) discussed in 
 Chapter~\ref{chap:resource_intensity} in that the 
 type and intensity of environmental impacts is directly related to 
-the types, quantities, and processing of resources. 
+the types, quantities, and ways of processing of resources. 
 %Environmental impact intensity is discussed in this chapter.
 $R$ represents the inputs to the economy 
-(``food'' in the metabolic analogy) and 
+(``food'' in the metabolic analogy), and 
 $X$ represents the economy's excreted wastes.
 % We say ``represents'' and not ``is'' because both terms are \emph{normalized} to
 % a single dollar of GDP.

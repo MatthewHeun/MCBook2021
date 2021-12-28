@@ -47,6 +47,18 @@
 \newcommand{\degC}{\degree C}
 \newcommand{\degF}{\degree F}
 \newcommand{\figwidth}{0.85\linewidth}
+\newcommand{\iparx}{
+\footnotesize
+\begin{tabular}{ccccccccc}
+$I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $X$ \\
+% \multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource &  & Impact intensity \\
+%  &  &  &  &  &  & intensity &  & of resources \\
+\multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource intensity &  & Impact intensity \\
+ &  &  &  &  &  & of the economy &  & of resources \\
+$\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}\right]$ &  & $\left[\frac{\textrm{GDP}}{\textrm{capita-year}}\right]$ &  & $\left[\frac{\textrm{resources}}{\textrm{GDP}}\right]$ &  & $\left[\frac{\textrm{impact}}{\textrm{resources}}\right]$
+\end{tabular}
+\normalsize
+}
 
 % A bug was introduced in LaTeX packages around 13 Nov 2021.
 % That bug results in many errors of the form fgcolor not defined.

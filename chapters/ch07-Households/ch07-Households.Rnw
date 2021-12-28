@@ -422,15 +422,18 @@ windows that neither conduct heat nor pass radiation.
 
 
 %..............................
-\paragraph{Furnaces}
-\label{sec:furnaces}\index{furnaces}
+\paragraph{Heating systems}
+\label{sec:heating_systems}
 %..............................
 
-Furnaces provide space heating,
+Heating systems
+(often furnaces\index{furnace}, but also boilers\index{boiler} and heat pumps\index{heat pump})
+provide space heating,
 often from an out-of-the-way location in the dwelling, such as the basement.
-Furnaces convert a fuel 
-(typically natural gas\index{natural gas} or heating oil\index{heating oil})
-into heat by combustion, 
+Heating systems convert a fuel 
+(typically natural gas\index{natural gas} or heating oil\index{heating oil} for furnaces and boilers, and
+electricity for heat pumps)
+into heat, 
 thereby emitting CO$_2$ into the atmosphere.
 The heat is delivered to the dwelling via water or air
 circulated by a pump or fan.
@@ -554,7 +557,7 @@ But perfect insulation is not possible, and all windows conduct heat and
 pass thermal radiation.
 In fact, windows are typically worse insulators than walls and roofs,
 owing to thin glazing.
-Therefore, furnaces\index{furnaces} and air conditioners\index{air conditioners}
+Therefore, heating systems and air conditioners\index{air conditioners}
 are needed to replace heat lost in winter and remove heat gained in the summer.
 
 The effectiveness of roof and wall insulation\index{insulation}
@@ -603,7 +606,7 @@ with minimal embodied energy?''
 
 
 %..............................
-\paragraph{Furnaces} 
+\paragraph{Heating systems} 
 %..............................
 
 Like all energy consumption,
@@ -636,6 +639,14 @@ but save money on fuel costs over time.
 A sustainability challenges associated with furnaces is
 ``how can we encourage home builders and home owners to install 
 high-efficiency units, despite high initial cost?''
+
+Heat pumps move heat from the cold outdoors to the inside of a home.
+Heat pump efficiency is quantified by a coefficient of performance (COP), 
+the ratio of heat delivered to electric energy consumed.
+The COP of a heat pump varies with outdoor temperature, 
+but typical values is 2--3.
+Heat pumps with higher COP will be more efficient and cost less to operate, 
+even if they have higher purchase price.
 
 
 %..............................
@@ -710,6 +721,16 @@ despite higher initial cost?''
 \section{Sustainability transitions in households}
 \label{sec:sustainability_transitions_households}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In the areas discussed above
+(size and location, heating and cooling, 
+hygiene, and lighting), 
+sustainability transitions take the form of 
+obtaining the same energy services
+with less resources consumption, especially energy. 
+As such, the household sustainability transitions discussed below
+will have the effect of reducing the resource intensity of the economy
+($R$ in Equation~\ref{eq:IPARX}).
 
 
 %++++++++++++++++++++++++++++++
@@ -836,7 +857,7 @@ using a cold-water cycle, and line drying clothes.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Ligthing transition}
+\subsection{Lighting transition}
 \label{sec:lighting_transition}
 %++++++++++++++++++++++++++++++
 
@@ -1050,14 +1071,17 @@ United States, 1999: \\
 
 \begin{projects}
 
-\item Locate the furnace in your dwelling, and find its AFUE rating.
-      If you were to replace your existing furnace with a furnace with a 98\% AFUE rating,
+\item Locate the heating system in your dwelling, and find its AFUE rating (furnace)
+      or COP (heat pump).
+      If you were to replace your existing furnace with a furnace with a 98\% AFUE rating
+      or heat pump with a COP of 3.5,
       how much energy would you save annually?
       What is the price of that saved energy?
       What is the annual cost savings from this energy efficiency intervention?
-      Assuming that the 98\% AFUE furnace lasts 20 years and 
+      Assuming that the 98\% AFUE furnace or COP = 3 heat pump lasts 20 years and 
       that you want to break even financially,
-      what is the maximum price you should pay for a 98\% AFUE furnace?
+      what is the maximum price you should pay for 
+      the upgraded furnace or heat pump?
 
 \item Locate the air conditioner in you dwelling, and find its SEER.
       If you were to replace your existing air conditioner 

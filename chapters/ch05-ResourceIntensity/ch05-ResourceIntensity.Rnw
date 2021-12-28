@@ -18,10 +18,16 @@ Without abundant resources, prosperity is out of reach.}
 {Gifford Pinchot}
 
 The previous chapter addressed the sustainability implications of 
-economic affluence, the $A$ term in the IPARX equation (Equation~\ref{eq:IPARX}). 
+economic affluence, the $A$ term in the IPARX equation (Equation~\ref{eq:IPARX}, 
+repeated below for convenience). 
 Because the economy is society's metabolism, economic growth and increasing affluence
 mean more use of natural resources. 
-This chapter explores the sustainability implications of resource acquisition and consumption.
+This chapter explores the sustainability implications of resource acquisition and consumption, 
+i.e., this chapter covers $R$.
+
+\begin{equation} 
+  \iparx            \tag{\ref{eq:IPARX}}
+\end{equation}
 
 Whether we are aware of it or not, 
 all plant, animal, and human life on Earth depends on natural resources for survival.

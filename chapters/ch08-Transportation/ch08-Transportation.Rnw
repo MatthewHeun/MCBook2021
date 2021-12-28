@@ -325,8 +325,21 @@ to achieve more sustainable passenger and freight transport.
 
 To improve the sustainability of the modern transportation system,
 two broad options exist: 
-improving efficiency and 
+improving fuel economy and 
 transitioning to sustainable energy sources.
+Improving fuel economy will reduce the 
+energy intensity of economic activity 
+($R$ in Equation~\ref{eq:IPARX}), 
+because the same economic activity 
+could be accomplished with less fuel consumption
+for transportation.
+Transitioning to a sustainable energy system
+built upon renewable energy generation will reduce
+the impact intensity of resources ($X$ in Equation~\ref{eq:IPARX}), 
+because consumption of renewable energy
+(e.g., electric vehicles run by solar electricity)
+has less environmental impact than consumption of 
+non-renewable energy (e.g., gasoline).
 
 
 %++++++++++++++++++++++++++++++
