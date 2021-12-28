@@ -521,7 +521,6 @@ ag_sankey %>%
 
   MKHthemes::xy_theme() + 
   ggplot2::theme(legend.position = "none")
-
 @
 
 
