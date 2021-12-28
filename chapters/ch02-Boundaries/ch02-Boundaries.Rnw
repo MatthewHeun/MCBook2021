@@ -16,7 +16,8 @@
 \epigraph{Mother Nature doesn't care if you're having fun.}{Larry Niven}
 %\epigraph{Fortune is of sluggish growth, but ruin is rapid.}{Lucius Annaeus Seneca}
 
-The left-hand side of Equation \ref{eq:IPARX} is impact $I$ on the environment.
+The left-hand side of Equation \ref{eq:IPARX} (repeated below for convenience) 
+is impact $I$ on the environment.
 While there are natural processes that have (some) negative impacts on the environment,
 such as volcanic eruptions and wild fires, this book is primarily concerned with
 human impacts to the environment.
@@ -25,6 +26,10 @@ Other examples of human impact include deforestation, desertification,
 aquifer depletion, plant and animal extinctions, ground water and soil 
 contamination, ozone depletion, smog creation, habitat destruction, and many other 
 ``tions.''
+
+\begin{equation} 
+  \iparx            \tag{\ref{eq:IPARX}}
+\end{equation}
 
 Chapter \ref{chap:introduction} pointed out the problems of exponential growth.
 But why? Why is continued exponential growth impossible?

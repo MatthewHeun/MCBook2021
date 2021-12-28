@@ -347,20 +347,9 @@ We keep the more general ``impact'' of IPAT but also generalize the more insight
 ``technology'' expression from Kaya as the product of resource intensity of the economy ($R$)
 and the impact intensity of resources ($X$).
 
-\begin{equation}
-\label{eq:IPARX}
-\footnotesize
-\begin{tabular}{ccccccccc}
-$I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $X$ \\
-% \multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource &  & Impact intensity \\
-%  &  &  &  &  &  & intensity &  & of resources \\
-\multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource intensity &  & Impact intensity \\
- &  &  &  &  &  & of the economy &  & of resources \\
-$\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}\right]$ &  & $\left[\frac{\textrm{GDP}}{\textrm{capita-year}}\right]$ &  & $\left[\frac{\textrm{resources}}{\textrm{GDP}}\right]$ &  & $\left[\frac{\textrm{impact}}{\textrm{resources}}\right]$
-\end{tabular}
-\normalsize
+\begin{equation} \label{eq:IPARX}
+  \iparx
 \end{equation}
-
 
 In the IPARX formulation, impact ($I$) is a list of impacts (that is, a vector quantity)
 that includes such things as global warming potential, aquifer depletion, and

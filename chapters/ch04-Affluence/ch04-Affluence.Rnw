@@ -32,7 +32,8 @@ it takes a serious look at its lifestyle.}{Pope John Paul II}
 %16 Subjective theory of value.
 %17 every chapter should ask 'where are opportunities for reduced impact?"
 
-Equation \ref{eq:IPARX} is our conceptual framework for considering sustainability.
+Equation \ref{eq:IPARX} (repeated below for convenience)
+is our conceptual framework for considering sustainability.
 Chapter \ref{chap:planetary_boundaries} discussed planetary boundaries and the impact
 of human activities on those boundaries, that is, the left-hand side of Equation \ref{eq:IPARX}.
 Chapter \ref{chap:population} is about the first term on the right-hand side of 
@@ -45,11 +46,20 @@ affluence ($A$), and the role of human economic activity in sustainability chall
 Chapters \ref{chap:resource_intensity}-\ref{chap:impact_intensity}, 
 finish the development of our framework for stability.
 
+\begin{equation} 
+  \iparx            \tag{\ref{eq:IPARX}}
+\end{equation}
+
+
 % This chapter explores the meaning of, and issues with, the term \emph{affluence}.
 % The common meaning of affluence is "wealth" or "riches" but here we use it with 
 % reference to specific countries or globally to be \emph{per person}.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Individual affluence}
+\label{sec:individual_affluence}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 The word wealth can include happiness, prosperity, well being, welfare, but mostly it 
 means the \emph{amount} of goods, possessions, money, property, or stuff a person has.
 That is, wealth refers to a \emph{level} of material possessions or resources.
