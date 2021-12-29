@@ -512,11 +512,11 @@ ag_sankey_data %>%
   ggsankey::geom_sankey(flow.alpha = 0.6, node.color = "gray30") + 
   ggsankey::geom_sankey_label(size = 2, color = "white", fill = "gray40", show.legend = FALSE) +
   
-  labs(x = ggplot2::element_blank(), 
-       y = ggplot2::element_blank(), 
-       fill = ggplot2::element_blank()) +
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = ggplot2::element_blank(), 
+                fill = ggplot2::element_blank()) +
   
-  scale_fill_viridis_d(direction = -1) +
+  ggplot2::scale_fill_viridis_d(direction = -1) +
 
   MKHthemes::xy_theme() + 
   ggplot2::theme(legend.position = "none", 
