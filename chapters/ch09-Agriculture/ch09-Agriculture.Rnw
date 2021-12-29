@@ -502,14 +502,21 @@ Farming can (and has had) impacts on biodiversity and habitat loss.
 \end{figure}
 
 
-<<food_and_ag_material_flow>>=
+<<food_and_ag_material_flow, fig.cap = "U.S.\\ agriculture Sankey diagram.">>=
 ag_sankey_data <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Ag Sankey.xlsx"),
-                                sheet = "data to plot")
+                                     sheet = "data to plot") %>% 
+  dplyr::mutate(
+    node = factor(node, levels = c("Cultivated fields", 
+                                   "Grains", "Soybeans", "Fruits", "Sugarbeets", "Vegetables", "Other oilseeds",
+                                   "Available crops",
+                                   "Stored grains & soybeans",
+                                   "Storage"))
+  )
 
 ag_sankey_data %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = x, next_x = next_x, node = node, next_node = next_node, value = value, 
-                                         fill = factor(node), label = node)) +
-  ggsankey::geom_sankey(flow.alpha = 0.6, node.color = "gray30") + 
+                                         fill = node, label = node)) +
+  ggsankey::geom_sankey(flow.alpha = 1, node.color = "gray30") + 
   ggsankey::geom_sankey_label(size = 2, color = "white", fill = "gray40", show.legend = FALSE) +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
