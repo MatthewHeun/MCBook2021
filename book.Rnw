@@ -95,9 +95,11 @@ library(readxl)            # To read Excel files
 library(rgeos)             # For map stuff
 library(rnaturalearth)     # For maps
 library(rnaturalearthdata) # For maps
+library(networkD3)         # For Sankey diagram
 library(sf)                # Shape files for maps
 library(tidyr)             # For manipulating data
 library(viridis)           # For a great color palette for graphs
+library(webshot)           # Required by networkD3
 library(xtable)            # For awesome tables
 @
 
