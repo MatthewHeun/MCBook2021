@@ -61,7 +61,7 @@ The next sections deal with three major sustainability questions related to land
 \end{figure}
 
 
-<<USlanduse, fig.cap="Land use in the U.S.\\ The biggest changes over time are decreasing Grazed forest area and increasing Rural parks and wildlife areas. \\emph{Source}: Something ****.">>=
+<<USlanduse, fig.cap="Land use in the U.S.\\ The biggest changes over time are decreasing Grazed forest area and increasing Rwural parks and wildlife areas. (``Grassland'' is not forest and not used for crops.) \\emph{Source}: Something ****.">>=
 us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Land_Uses.xlsx"),
                                   sheet = "data to plot") %>% 
   dplyr::rename(
