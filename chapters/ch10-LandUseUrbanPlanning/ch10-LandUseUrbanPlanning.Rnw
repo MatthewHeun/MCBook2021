@@ -57,8 +57,57 @@ The next sections deal with three major sustainability questions related to land
 \centering
 \includegraphics[width=0.75\linewidth]{chapters/ch10-LandUseUrbanPlanning/figures/Bloomberg2018landuse.jpg}
 \caption[USA land use.]{Major categories of how US land is used.}% ~\citep[Fig.~1]{USlanduse}.
-\label{fig:USlanduse}
+\label{fig:USlanduse_old}
 \end{figure}
+
+
+<<USlanduse, fig.cap="Land use in the U.S.\\ The biggest changes over time are decreasing Grazed forest area and increasing Rural parks and wildlife areas. \\emph{Source}: Something ****.">>=
+us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Land_Uses.xlsx"),
+                                  sheet = "data to plot") %>% 
+  dplyr::rename(
+    `Cropland (idle)` = "Cropland idled",
+    `Cropland (crops)` = "Cropland used for crops",
+    `Cropland (pasture)` = "Cropland used for pasture", 
+    Urban = "Land in urban areas",
+    `Rural transport` = "Land in rural transportation facilities", 
+    `Forest (grazed)` = "Forest-use land grazed", 
+    `Forest (not grazed)` = "Forest-use land not grazed", 
+    `Defense and industrial` = "Land in defense and industrial areas",
+    `Grassland` = "Grassland pasture and range (noncropland and nonforest)", 
+    `Farms and roads` = "Farmsteads, roads, and miscellaneous farmland", 
+    `Rural parks/wildlife` = "Land in rural parks and wildlife areas"
+  ) %>% 
+  tidyr::pivot_longer(cols = -Year, names_to = "use_type", values_to = "land_area") %>% 
+  dplyr::mutate(
+    use_type = factor(use_type, levels = c("Other land",
+                                           "Rural transport",
+                                           "Defense and industrial",
+                                           "Urban",
+                                           "Farms and roads",
+                                           "Rural parks/wildlife",
+                                           "Forest (grazed)",
+                                           "Forest (not grazed)",
+                                           "Cropland (idle)",
+                                           "Cropland (pasture)",
+                                           "Cropland (crops)",
+                                           "Grassland",
+                                           "Pasture"))
+  )
+
+us_land_use %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = land_area, fill = use_type)) + 
+  ggplot2::geom_area() + 
+  
+  ggplot2::scale_fill_viridis_d(direction = -1) +
+  
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = "Land area [units?]", 
+                fill = ggplot2::element_blank()) +
+  
+  MKHthemes::xy_theme()
+
+@
+
 
 % Of the three (land, labor, capital) means of production, 
 % only land is generally considered to be a fixed quantity.
