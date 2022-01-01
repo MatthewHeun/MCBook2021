@@ -61,7 +61,7 @@ The next sections deal with three major sustainability questions related to land
 % \end{figure}
 
 
-<<USlanduse, fig.cap="Land use in the U.S.\\ The biggest changes over time are decreasing Grazed forest area and increasing Rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. (``Grassland'' is not used for crops.) \\emph{Source}: \\citet{USDA:2021uq}.">>=
+<<USlanduse, fig.cap="Land use in the U.S. The biggest changes over time are decreasing Grazed forest area and increasing Rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. (``Grassland'' is not used for crops.) \\emph{Source}: \\citet{USDA:2021uq}.">>=
 us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Land_Uses.xlsx"),
                                   sheet = "data to plot") %>% 
   dplyr::rename(
@@ -106,7 +106,6 @@ us_land_use %>%
                 fill = ggplot2::element_blank()) +
   
   MKHthemes::xy_theme()
-
 @
 
 
