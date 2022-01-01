@@ -184,7 +184,12 @@ Land use affects and is affected by climate change.
 For instance, hotter, drier weather results in more frequent and severe wildfires.
 Those fires destroy forests, release stored carbon, and contribute to further warming.
 
+
+%++++++++++++++++++++++++++++++
 \subsection{Demand for land}
+\label{sec:demand_for_land}
+%++++++++++++++++++++++++++++++
+
 Demand for land is driven by increasing human population ($P$). 
 (See Equation~\ref{eq:IPARX}.)
 As mentioned in Chapter~\ref{chap:agriculture}, higher population drives agriculture,
@@ -274,10 +279,12 @@ Other land is ``spared'' and set aside for conservation.
 Land ``sharing'' uses agricultural practices that are more eco-friendly to wildlife
 species on the farm, but, because yields aren't as high, requires more total farm land.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Land as a carbon sink}
 \label{sec:carbon_storage_capacity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Because energy use and carbon emissions are the prime example in this book,
 and because land plays a crucial role in regulating carbon in the environment,
 this section examines the capacity of the land to absorb and store carbon.
@@ -507,6 +514,7 @@ challenges.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Charles L. Maron, Jr., 
 \emph{Confessions of a recovering engineer: Transportation for a strong town},
 Hoboken, NJ: Wiley, 2021. \\
@@ -522,9 +530,11 @@ New York: North Point Press, 2013. \\
 \noindent
 Donald Shoup, \emph{The high cost of free parking}, Oxfordshire, UK: Routledge, 2011.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} and 
 \href{https://www.youtube.com/c/CityBeautiful}{City Beautiful} \\
 
@@ -536,6 +546,7 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
 
 \noindent Walk Score: \\
 \url{https://www.walkscore.com/}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
