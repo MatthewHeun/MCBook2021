@@ -53,15 +53,15 @@ The next sections deal with three major sustainability questions related to land
 \label{sec:land_and_how_it_is_used}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{figure}
-\centering
-\includegraphics[width=0.75\linewidth]{chapters/ch10-LandUseUrbanPlanning/figures/Bloomberg2018landuse.jpg}
-\caption[USA land use.]{Major categories of how US land is used.}% ~\citep[Fig.~1]{USlanduse}.
-\label{fig:USlanduse_old}
-\end{figure}
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.75\linewidth]{chapters/ch10-LandUseUrbanPlanning/figures/Bloomberg2018landuse.jpg}
+% \caption[USA land use.]{Major categories of how US land is used.}% ~\citep[Fig.~1]{USlanduse}.
+% \label{fig:USlanduse_old}
+% \end{figure}
 
 
-<<USlanduse, fig.cap="Land use in the U.S.\\ The biggest changes over time are decreasing Grazed forest area and increasing Rwural parks and wildlife areas. (``Grassland'' is not forest and not used for crops.) \\emph{Source}: Something ****.">>=
+<<USlanduse, fig.cap="Land use in the U.S.\\ The biggest changes over time are decreasing Grazed forest area and increasing Rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. (``Grassland'' is not used for crops.) \\emph{Source}: \\citet{USDA:2021uq}.">>=
 us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Land_Uses.xlsx"),
                                   sheet = "data to plot") %>% 
   dplyr::rename(
@@ -72,36 +72,37 @@ us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanni
     `Rural transport` = "Land in rural transportation facilities", 
     `Forest (grazed)` = "Forest-use land grazed", 
     `Forest (not grazed)` = "Forest-use land not grazed", 
-    `Defense and industrial` = "Land in defense and industrial areas",
+    `Defense & industrial` = "Land in defense and industrial areas",
     `Grassland` = "Grassland pasture and range (noncropland and nonforest)", 
     `Farms and roads` = "Farmsteads, roads, and miscellaneous farmland", 
-    `Rural parks/wildlife` = "Land in rural parks and wildlife areas"
+    `Rural parks & wildlife` = "Land in rural parks and wildlife areas"
   ) %>% 
-  tidyr::pivot_longer(cols = -Year, names_to = "use_type", values_to = "land_area") %>% 
+  tidyr::pivot_longer(cols = -Year, names_to = "use_type", values_to = "land_area_kacres") %>% 
   dplyr::mutate(
     use_type = factor(use_type, levels = c("Other land",
                                            "Rural transport",
-                                           "Defense and industrial",
+                                           "Defense & industrial",
                                            "Urban",
                                            "Farms and roads",
-                                           "Rural parks/wildlife",
+                                           "Rural parks & wildlife",
                                            "Forest (grazed)",
                                            "Forest (not grazed)",
                                            "Cropland (idle)",
                                            "Cropland (pasture)",
                                            "Cropland (crops)",
                                            "Grassland",
-                                           "Pasture"))
+                                           "Pasture")), 
+    land_area_Gacres = land_area_kacres / 1e6
   )
 
 us_land_use %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = land_area, fill = use_type)) + 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = land_area_Gacres, fill = use_type)) + 
   ggplot2::geom_area() + 
   
   ggplot2::scale_fill_viridis_d(direction = -1) +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = "Land area [units?]", 
+                y = "Land area [billion acres]", 
                 fill = ggplot2::element_blank()) +
   
   MKHthemes::xy_theme()
@@ -128,16 +129,19 @@ us_land_use %>%
 
 Figure~\ref{fig:USlanduse} shows how land is used in the United States. 
 %Although proportions may be different in other economies, the categories are the same. 
-There are 1.9 billion acres in the contiguous 48 states.
+There are 1.9 billion acres in the contiguous 48 states and
+2.3 billion acres in all 50 states.
 Of this total, agriculture takes the largest share, with grazing (34\%), 
 forestry (28\%), and crop production (20.6\%) being the three largest uses. 
 The four largest crops in the U.S. are wheat (32\% of total crops), corn (30\%),
-soybeans (20\%), and cotton (10\%). That leaves just 8\% for everything else and,
-indeed, ``food we eat'' is a small area in Figure \ref{fig:USlanduse}.
-In contrast, the area where we live and work (red/pink areas) is a relatively small
+soybeans (20\%), and cotton (10\%). That leaves just 8\% for everything else. % and,
+%indeed, ``food we eat'' is a small area in Figure \ref{fig:USlanduse}.
+In contrast, the area where we live and work % (red/pink areas)
+is a relatively small
 69.4 million acres (3.65\%).
-One key observation from Figure~\ref{fig:USlanduse} is that the U.S. is relatively 
-sparsely populated.
+% One key observation from Figure~\ref{fig:USlanduse} is that the U.S. is relatively 
+% sparsely populated.
+The U.S. is relatively sparsely populated.
 
 Land use changes over time and tracking those changes is important for understanding
 relationships between land use and climate change.
