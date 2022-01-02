@@ -61,13 +61,14 @@ $\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}
 }
 
 % A bug was introduced in LaTeX packages around 13 Nov 2021.
-% That bug results in many errors of the form fgcolor not defined.
+% That bug results in many errors of the form "fgcolor not defined".
 % The next line works around the bug.
 % See https://stackoverflow.com/questions/69967014/possible-knitr-bug-interaction-with-mc-style
 % for more details.
 % ---MKH, 16 Nov 2021. 
-\definecolor{fgcolor}{rgb}{255,0,0}
-\definecolor{errorcolor}{rgb}{255,0,0}
+% This bug appears to have been fixed by 2 Jan 2022.
+% \definecolor{fgcolor}{rgb}{255,0,0}
+% \definecolor{errorcolor}{rgb}{255,0,0}
 
 % 
 % Begin R and knitr setup
