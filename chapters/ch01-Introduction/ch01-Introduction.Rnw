@@ -189,11 +189,14 @@ boundaries (that is, what is the system under consideration).
 When considering the meaning of sustainability, the two most important questions are
 ``sustaining what?'' and ``for how long?''
 The second of these questions is perhaps easier to answer.
-While humans seem to have difficulty planning for time scales significantly longer
-than the human lifespan, \emph{strong} sustainability is achieved only if the answer is
+Although humans seem to have an inherent cognitive difficulty in planning for 
+time scales significantly longer than the human lifespan, 
+\emph{strong} sustainability is achieved only if the answer is
 ``indefinitely'' or ``forever.'' % more on weak vs. strong here?
-A \emph{weak} sustainability criteria is sustainability over a long (by human standards)
+A \emph{weak} sustainability criterion is sustainability over a long (by human standards)
 time frame, perhaps 50 years, which is on the order of one human adulthood.
+(Note that corporate time scales (see Chapter~\ref{chap:government}) for decision 
+making are even shorter, often in the 5-20 year range.)
 
 The narrowest answer for what needs sustaining is human life and society, which perforce
 entails those ecosystem services necessary for human health and wellbeing
@@ -217,7 +220,7 @@ moral choices about what to value and how much.
 is a weighting of appropriate risks to the ecosystem and human society.
 Different answers to these questions come from different \emph{a priori} assumptions and values.
 
-The broadest definitions of sustainability include the products of human civilization.
+The broadest definitions of sustainability also include the products of human civilization.
 Although they are great cultural and historical artifacts, humanity could survive without
 the great pyramids of Giza.
 On the other hand, we may not survive if we don’t give up coal-fired power plants.
@@ -242,7 +245,7 @@ Social sustainability comprises human and civil rights, suffering, and personal 
 A social group that continually loses members, for example the Whig party, will 
 cease to be a group.
 Typically, social sustainability includes things that \emph{should not} be 
-sustainable but that have persisted a very long time, like poverty, class inequality,
+sustained but that have persisted a very long time, like poverty, class inequality,
 sexism, slavery, and other civil injustices.
 
 This book will discuss issues associated with each of these three
@@ -265,7 +268,9 @@ Energy and carbon emissions link together many of our sustainability challenges.
 The most oft-quoted \cite{Quental2011} definition of sustainability is that
 ``Sustainable development is development that meets the needs of the present without
 compromising the ability of future generations to meet their own needs'' \cite{Brundtland}.
-Note that ``sustainable development,'' is an oxymoron and is not the same as sustainability.
+Note that ``sustainable development'' is an oxymoron %and is not the same as sustainability.
+because ``development'' implies constant improvement, which cannot be sustained 
+forever on a planet with finite resources.
 Furthermore, ``needs'' are subjective.
 This definition emphasizes the social and economic aspects of sustainability over,
 or instead of, environmental sustainability. 
@@ -496,7 +501,7 @@ Chapter \ref{chap:population} gives us some hope that population won't keep grow
 exponentially.
 (In fact, there are some indications world population may \emph{fall} after a peak
 in the mid-twenty-first century.)
-However, world economies are \emph{actively managed} to have a continual growth 
+However, world economies are \emph{actively managed} to have continual growth 
 (say a target of 3\% GDP growth per year).
 The implication for sustainability is that the resources – for instance, the energy –
 needed by the economy in the next 23 years will be more than the total
