@@ -736,7 +736,7 @@ weak_sust_energy_data <- readxl::read_excel(file.path("chapters", "ch05-Resource
 print(xtable::xtable(weak_sust_energy_data,
                      digits = 0,
                      align = c("c", "r", "r", "l", "r", "l", "r", "l"),
-                     caption = "Weak sustainability calculations for world consumption of nonrenewable fossil fuels. Calculations are based on 2018 reserve estimates and consumption rates and do not account for accelerating consumption or future conversion of resources to reserves. ``mst'' is million short tons. ``bb'' is billion barrels. ``tcf'' is trillion cubic feet. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:tr}.",
+                     caption = "Weak sustainability calculations for world consumption of nonrenewable fossil fuels. Calculations are based on 2018 reserve estimates and consumption rates and do not account for accelerating consumption or future conversion of resources to reserves. ``mst'' is million short tons. ``bb'' is billion barrels. ``tcf'' is trillion cubic feet. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.",
                      label = "tab:weak_sustainability_calcs"),
       include.rownames = FALSE,
       include.colnames = TRUE,
