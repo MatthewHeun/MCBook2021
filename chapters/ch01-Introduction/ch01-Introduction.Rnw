@@ -194,9 +194,20 @@ time scales significantly longer than the human lifespan,
 \emph{strong} sustainability is achieved only if the answer is
 ``indefinitely'' or ``forever.'' % more on weak vs. strong here?
 A \emph{weak} sustainability criterion is sustainability over a long (by human standards)
-time frame, perhaps 50 years, which is on the order of one human adulthood.
+time frame, perhaps 50 years, which is on the order of one human adulthood%
+\footnote{
+  Our criteria for strong and weak sustainability are physical and 
+  follow \citet{Graedel:2010ab}. 
+  Other definitions for weak and strong sustainability exist.
+  One is economic, defining strong sustainability as protecting natural capital
+  for a certain period of time 
+  (equivalent to our weak sustainability definition if the time horizon is 50 years) and
+  weak sustainability as allowing produced capital to substitute for natural capital
+  across a period of time.
+  See \citet{Dietz:2007tu} for details.
+}.
 (Note that corporate time scales (see Chapter~\ref{chap:government}) for decision 
-making are even shorter, often in the 5-20 year range.)
+making are even shorter, often in the 5--20 year range.)
 
 The narrowest answer for what needs sustaining is human life and society, which perforce
 entails those ecosystem services necessary for human health and wellbeing
