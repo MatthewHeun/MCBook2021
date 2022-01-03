@@ -451,7 +451,8 @@ to worldwide emission of CO$_2$.
 The world is far above
 weak sustainability levels of consumption for these two materials and CO$_2$ emissions.
 To underscore the importance of sustainably consuming natural resources,
-germanium (now being consumed at twice its sustainable rate, $\rho$~=~100\% in Figure~\ref{fig:PercentageOfSustainable})
+germanium (now being consumed at twice its sustainable rate, 
+$\rho$~=~100\% in Figure~\ref{fig:PercentageOfSustainable})
 is one of the critical raw materials in Table~\ref{tab:CRMs}.
 
 <<PercentageOfSustainable, fig.width=3.25, fig.cap="Percentage above maximum weakly sustainable rates~($\\rho$). For zinc and germanium, the percentage above the average maximum weakly sustainable extraction rates. For CO$_2$, the percentage above maximum weakly sustainable emission rate. \\emph{Source}: \\citet[Tables~2.1--2.3]{Graedel:2010ab}.">>=
@@ -485,8 +486,8 @@ Two ways to become more sustainable are recycling and substitution.
 Recycling\index{recycling} is a way to extend the usable life
 of natural resources and
 reduce rates of resource extraction.
-Recycling processes use discarded products as feedstock
-for processes that regenerate usable products.
+Recycling uses discarded products as feedstock
+to regenerate usable products.
 Examples include paper recycling to pulp and glass recycling to new containers.
 However, recycling requires energy
 and other natural resources
@@ -496,7 +497,7 @@ transporting goods to future users.
 For example, paper recycling uses water for cleaning and de-inking processes.
 Glass recycling requires high-temperature heat for melting processes.
 Whether recycling is, itself, a sustainable means of producing usable products
-depends on the strong or weak sustainability of the recycling processes.
+depends on the strong or weak sustainability of the recycling process.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -530,7 +531,7 @@ with a less valuable, less scarce, or renewable resource%
 }.
 From a weak sustainability perspective,
 replacing use of a scarce resource with use of an abundant resource
-typically extends the time horizon for depleting the manufacturing input and
+typically extends the time horizon for depleting manufacturing feedstocks and
 brings us closer to weak sustainability.
 
 Scarce resources tend to be valuable.
@@ -539,21 +540,16 @@ Using an abundant resource instead of a scarce resource therefore typically
 makes sense from a cost perspective.
 However, substitution is only possible when the two resources in question
 are identical or nearly identical
-and serve the same purpose in the manufacturing or production environment.
+such that they can serve the same purpose in a manufacturing or production environment.
 Examples of substitution include:
 replacing coated steel (expensive) automobile interior parts with
 injection-molded plastics (inexpensive),
 replacing Styrofoam hamburger containers (nonrenewable)
 with paper or cardboard wrappings (renewable), and
 use of solar electricity (renewable) instead of coal electricity (nonrenewable).
-%
-% Recalling one aspect of Herman Daly's definition of sustainability
-% (``Nonrenewable resources, such as minerals and fossil fuels, must be used no faster
-% than renewable substitutes for them can be put into place''),
-% we see that switching
 Switching from consuming nonrenewable resources
 to consuming renewable resources
-is an important aspect of sustainability -- either the weak \emph{or} the strong version.
+is an important aspect of sustainability, either the weak \emph{or} the strong version.
 
 That said, it is important to note limits to substitutability.
 At a manufacturing plant, the type of electricity
@@ -561,9 +557,9 @@ At a manufacturing plant, the type of electricity
 is immaterial,
 so long as both options are (for the U.S.) 120 V at 60 Hz.
 However, at the power station,
-the different sources of electricity are \emph{not} substitutes.
+the different feedstocks for electricity production are \emph{not} substitutes.
 Coal-fired Rankine cycle\index{Rankine cycle} power plants
-cannot use the sun's energy to make electricity.
+cannot use the Sun's energy to make electricity.
 Similarly, a pile of coal is useless
 to a solar photovoltaic\index{solar photovoltaic electricity} farm.
 
@@ -571,25 +567,26 @@ Sometimes a scarce (and expensive), renewable resource is replaced by a
 less-expensive, nonrenewable alternative.
 Two examples illustrate.
 The first example involves ocean-going vessels.
-In the age of sail, ships were made of timber, with teak and mahogany being
+In the sailing age, ships were made of timber, with teak and mahogany being
 favored ship-building woods.
-Today, cargo ships are built of steel and pleasure craft are made almost exclusively
-of glass-fiber reinforced polymer composites.
-Teak and mahogany are now too rare and too expensive for shipbuilding,
+Today, cargo ships are made of steel, and pleasure craft are made almost exclusively
+of glass-fiber reinforced polymer composites, both non-renewable materials.
+Teak and mahogany, despite being renewable,
+are now too rare and too expensive for shipbuilding,
 both in terms of material cost and
 labor cost.
 As often happens, the ready availability of less-expensive vessels
 means that many more boats are purchased and used.
 
 The second example involves lighting.
-Societies have moved from wax candles and whale oil lanterns to ``town gas,''
-kerosene, and finally, electric lights.
+Societies moved away from wax candles and whale oil lanterns to
+``town gas,'' kerosene, and finally, electric lights.
 In both cases (ships and lights), none of the options
 (wood ships, steel ships,
 wax candles, whale oil lanterns, kerosene lanterns, or electric lights)
 meets the strong sustainability criterion.
-However, all wood ships, wax candles, whale oil lanterns, town gas lamps, and
-kerosene lamps have all proved to be weakly sustainable.
+However, all of wood ships, wax candles, whale oil lanterns, town gas lamps, and
+kerosene lamps have proved to be weakly sustainable.
 We found substitutes for the natural resources
 in a reasonable time frame and
 before the natural resources were depleted.
