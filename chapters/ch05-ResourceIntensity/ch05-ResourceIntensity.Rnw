@@ -332,7 +332,7 @@ material_per_capita %>%
   ggplot2::scale_fill_viridis_d(direction = -1) +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = "Material extraction [t/person-year]",
+                y = expression("Material extraction [t/" * person%.%year * "]"),
                 fill = ggplot2::element_blank()) +
   
   MKHthemes::xy_theme()
@@ -357,7 +357,7 @@ material_per_gdp %>%
   ggplot2::scale_fill_viridis_d(direction = -1) +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = "Material extraction [kg/2017 intnl $-year]",
+                y = expression("Material extraction [kg/" * {"2017 Intl. $"} %.% year * "]"),
                 fill = ggplot2::element_blank()) +
   
   MKHthemes::xy_theme()
@@ -707,7 +707,8 @@ dplyr::filter(Country == "Europe") %>%
    ggplot2::geom_line(size = 1, colour = mc_title_blue) +
 
    ggplot2::scale_y_continuous(limits = c(0, 80)) +
-   ggplot2::labs(x = NULL, y = "Primary energy per capita [GJ/person-year]") +
+   ggplot2::labs(x = NULL,
+                 y = expression("Primary energy per capita [GJ/" * person%.%year * "]")) +
 
    MKHthemes::xy_theme()
  @

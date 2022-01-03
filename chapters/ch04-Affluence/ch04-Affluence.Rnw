@@ -184,7 +184,7 @@ perpetual growth on finite resources is ultimately unsustainable
 %   ggplot2::geom_line(size = 1) + 
 %   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 20, by = 2))) +
 %   ggplot2::labs(x = NULL, 
-%                 y = "Affluence (A) [2017 Intl. k$/person-year]") +
+%                 y = expression("Affluence (A) [2017 Intl. k$/" * person%.%year * "]")) +
 %   
 %   MKHthemes::xy_theme()
 % @
@@ -203,7 +203,7 @@ perpetual growth on finite resources is ultimately unsustainable
 %   ggplot2::geom_line(size = 1) + 
 %   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 20, by = 2))) +
 %   ggplot2::labs(x = NULL, 
-%                 y = "Affluence (A) [2017 Intl. k$/person-year]") +
+%                 y = expression("Affluence (A) [2017 Intl. k$/" * person%.%year * "]")) +
 %   
 %   MKHthemes::xy_theme()
 % @
@@ -221,7 +221,7 @@ world_gdppc_Nordhaus %>%
   ggplot2::geom_line(size = 1, colour = mc_title_blue) + 
   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 20, by = 2))) +
   ggplot2::labs(x = NULL, 
-                y = "Affluence (A) [2017 Intl. k$/person-year]") +
+                y = expression("Affluence (A) [2017 Intl. k$/" * person%.%year * "]")) +
   
   MKHthemes::xy_theme()
 @
