@@ -685,7 +685,7 @@ to, for example, the extinction rate.
 Climate change is causing ocean acidification, sea level rise, and the increased 
 frequency of extreme natural disasters, such as wild fires and destructive tropical storms. 
 
-<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, and 2009 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
+<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                    sheet = "data to plot")
 
@@ -695,7 +695,7 @@ CO2_emissions %>%
     CO2_emissions_Gt = CO2_emissions_tonnes / 1e9
   ) %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_emissions_Gt")) +
-  ggplot2::geom_vline(xintercept = c(1932, 1945, 1974, 1982, 1992, 2009), size = 0.2) +
+  ggplot2::geom_vline(xintercept = c(1932, 1945, 1974, 1982, 1992, 2009, 2020), colour = "gray50", size = 0.2) +
   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
   ggplot2::scale_y_continuous(limits = c(0, 40)) +
   ggplot2::labs(x = NULL,
