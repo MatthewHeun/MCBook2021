@@ -303,7 +303,7 @@ The boundary values set for these indicators are intended to define a
 % \bottomrule \end{tabular}
 
 \begin{table}\centering
-\caption{Some planetary boundaries. \emph{Source}: \citet{Rockstrom2009,SteffanRR2015}.}
+\caption{Some planetary boundaries. \emph{Source}: \citet{Rockstrom2009,SteffenRR2015}.}
 \label{tab:planetBoundaries}
 \begin{tabular}{l l}
 \toprule
