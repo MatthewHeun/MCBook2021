@@ -464,10 +464,12 @@ weak_sust_data <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensi
 
 weak_sust_data %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = Resource, y = rho, fill = Resource)) +
+  ggplot2::geom_hline(yintercept = 0, colour = "gray50", size = 0.2) +
   ggplot2::geom_bar(stat = "identity") +
   ggplot2::guides(fill = "none") +
   ggplot2::scale_x_discrete(labels = c(zinc = "Zn", germanium = "Ge", CO2 = expression(CO[2]))) +
-  ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.05))) +
+  # ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.05))) +
+  ggplot2::scale_y_continuous(lim = c(-100, 600), breaks = c(-100, 0, 200, 400, 600)) +
   viridis::scale_fill_viridis(discrete = TRUE) +
   ggplot2::labs(x = NULL,
                 y = expression(rho * " [%]")) +
@@ -601,7 +603,7 @@ It has been argued that energy is
 the ultimate resource~\cite{library1971energy}\index{energy!as ultimate resource}
 for two important reasons.
 First, energy is required
-for extraction of natural resources (including energy itself!),
+for extraction of all natural resources (including energy itself!),
 for any material transformation,
 for consuming goods and services, and
 for disposing of goods.
@@ -765,6 +767,35 @@ print(xtable::xtable(weak_sust_energy_data,
       booktabs = TRUE,
       table.placement = NULL)
 @
+
+
+<<WeakSustEnergyData>>=
+# Pulling the data OUT of the chunk that makes the graph so the data are available
+# to the caption of the graph.
+weak_sust_energy_rho <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
+                                            sheet = "data to plot") %>% 
+  dplyr::mutate(
+    `Fossil fuel` = factor(`Fossil fuel`, levels = c("Coal", "Oil", "Natural gas"))
+  )
+@
+
+<<WeakSustEnergyGraph, fig.width=3.25, fig.cap=paste0("Percentage above maximum weakly sustainable extraction rates~($\\rho$) for world fossil fuel consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for Oil (less than 50 years, so above the weakly sustainable extraction rate), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for Natural gas. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
+
+weak_sust_energy_rho %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = `Fossil fuel`, y = `rho [%]`, fill = `Fossil fuel`)) +
+  ggplot2::geom_hline(yintercept = 0, colour = "gray50", size = 0.2) +
+  ggplot2::geom_bar(stat = "identity") +
+  ggplot2::guides(fill = "none") +
+  ggplot2::scale_y_continuous(breaks = c(seq(-60, 60, by = 20)), 
+                              lim = c(-70, 70)) +
+  viridis::scale_fill_viridis(discrete = TRUE) +
+  ggplot2::labs(x = NULL,
+                y = expression(rho * " [%]")) +
+
+  MKHthemes::xy_theme() +
+  ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
+@
+
 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
