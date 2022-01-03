@@ -115,9 +115,9 @@ rewards and the greater those rewards will be.
 \section{Purpose and focus}%, and organization}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This book will summarize ways that humans are not living sustainably and will suggest % outline?
+This book summarizes ways that humans are not living sustainably and suggests % outline?
 characteristics of sustainable societies.
-Basic data and key concepts start each chapter.
+Each chapter starts with basic data and key concepts.
 The text is deliberately short because the book is not intended to be comprehensive.
 The focus is on equipping the reader to discuss moral and ethical issues around sustainability.
 Because the choices and paths to sustainability are filled with value judgements and moral choices,
@@ -137,7 +137,7 @@ As you read this book, it should raise many questions for you.
 % interrelated problems from different domain areas.
 % The challenges associated with transitioning to a sustainable existence are complex
 % and interconnected.
-The focus of this book is on the many \emph{challenges} of sustainability.
+The focus of this book is the many \emph{challenges} of sustainability.
 While we may, at times, point to directions for improved sustainability
 (see Chapters~\ref{chap:government} and \ref{chap:personal_action}),
 it is beyond our scope
@@ -157,16 +157,19 @@ Part~\ref{part:sustainability_challenges} shows data mostly from the U.S.\footno
   While our framework for sustainability thinking is universal, the data used for 
   illustration may not always apply to the rest of the world.
 }, 
-because it is the home country of the authors and 
+because it is our home country and 
 because it has better data coverage than most countries 
 regarding energy and carbon emissions.
-Behind the facts and data are important concepts related to human choices. %consumer choices in human economies.
+Behind the facts and data are important concepts related to human choices, 
+which we explore throughout the book and in questions and projects that follow each chapter. 
+%consumer choices in human economies.
 % Readers can watch for these important categories 
 % throughout the book:
 % discretionary vs.\ non-discretionary choices, 
 % essential vs.\ non-essential economic activities,
 % goods vs.\ services, and
 % sufficiency vs.\ extravagance.
+
 The remainder of this chapter summarizes key themes of the book.
 
 
@@ -194,9 +197,20 @@ time scales significantly longer than the human lifespan,
 \emph{strong} sustainability is achieved only if the answer is
 ``indefinitely'' or ``forever.'' % more on weak vs. strong here?
 A \emph{weak} sustainability criterion is sustainability over a long (by human standards)
-time frame, perhaps 50 years, which is on the order of one human adulthood.
+time frame, perhaps 50 years, which is on the order of one human adulthood%
+\footnote{
+  Our criteria for strong and weak sustainability are physical and 
+  follow \citet{Graedel:2010ab}. 
+  Other definitions for weak and strong sustainability exist.
+  One is economic, defining strong sustainability as protecting natural capital
+  for a certain period of time 
+  (equivalent to our weak sustainability definition if the time horizon is 50 years) and
+  weak sustainability as allowing produced capital to substitute for natural capital
+  across a period of time.
+  See \citet{Dietz:2007tu} for details.
+}.
 (Note that corporate time scales (see Chapter~\ref{chap:government}) for decision 
-making are even shorter, often in the 5-20 year range.)
+making are even shorter, often in the 5--20 year range.)
 
 The narrowest answer for what needs sustaining is human life and society, which perforce
 entails those ecosystem services necessary for human health and wellbeing
