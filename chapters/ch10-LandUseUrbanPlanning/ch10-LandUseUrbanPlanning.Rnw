@@ -445,7 +445,7 @@ urban_density_data %>%
   
   viridis::scale_colour_viridis(discrete = TRUE, direction = -1, begin = 0, end = 0.9) +
   ggplot2::labs(x = "Urban density [people/ha]", 
-                y = "Transport energy [GJ/person-year]", 
+                y = expression("Transport energy [GJ/" * person%.%year * "]"), 
                 colour = ggplot2::element_blank()) +
   ggplot2::guides(colour = "none") + 
   
