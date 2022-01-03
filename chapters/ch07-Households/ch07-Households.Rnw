@@ -74,7 +74,7 @@ Sustainability transitions related to households round out the chapter.
 Households are important for sustainability, 
 in part because they are sites of energy consumption.
 For example, Figure~\ref{fig:LLNL_energy_sankey} shows that 
-11.9~quads of energy were consumed in U.S.\ residences in 2018,
+11.9~quad of energy were consumed in U.S.\ residences in 2018,
 representing 12\% of final energy consumption.
 Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
 from the U.S.\ residential sector in 2018 total 
@@ -324,7 +324,7 @@ persons_per_household %>%
    ggplot2::scale_y_continuous(limits = c(0, 4), breaks = seq(0, 4, by = 1)) +
    ggplot2::geom_line(size = 1, colour = mc_title_blue) +
    ggplot2::labs(x = ggplot2::element_blank(),
-                 y = "Persons per household") +
+                 y = "Occupancy [persons/dwelling]") +
 
    MKHthemes::xy_theme()
 

@@ -286,7 +286,7 @@ food_energy %>%
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::geom_bar(stat = "identity") +
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = "Energy [quads]",
+                y = "Energy [quad]",
                 fill = ggplot2::element_blank()) +
 
   MKHthemes::xy_theme() + 
@@ -428,7 +428,7 @@ food_emissions_total %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = `Food type`, y = `kg CO2 eq/capita/year`)) +
   ggplot2::geom_bar(stat = "identity", fill = mc_title_blue) +
   ggplot2::labs(x = ggplot2::element_blank(),
-       y = expression("Emissions [kg " * CO[2] * "equiv/person-yr]"),
+       y = expression("Emissions [kg " * CO[2] * "equiv/" * person%.%year * "]"),
        fill = ggplot2::element_blank()) +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1))

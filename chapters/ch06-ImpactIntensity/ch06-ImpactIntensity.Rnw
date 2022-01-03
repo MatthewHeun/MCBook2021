@@ -857,7 +857,7 @@ egdp_df <- primary_energy %>%
 egdp_df %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = gdp_trillions, y = energy_EJ)) +
   ggplot2::geom_line(colour = mc_title_blue, size = 1) + 
-  ggplot2::labs(x = "GDP [trillion 2017 international dollars]", 
+  ggplot2::labs(x = "GDP [trillion 2017 Intl. $]", 
                 y = "Primary energy consumption [EJ]") +
   
   MKHthemes::xy_theme()

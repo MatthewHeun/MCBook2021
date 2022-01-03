@@ -102,7 +102,7 @@ passenger_km_by_mode %>%
   ggplot2::geom_area() +
   ggplot2::scale_fill_viridis_d(direction = -1) +
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = "U.S. passenger transport [Tpass-km]",
+                y = expression("U.S. passenger transport [" * Tpass%.%km * "]"),
                 fill = ggplot2::element_blank()) +
   ggplot2::scale_y_continuous(breaks = c(0, 2,4, 6, 8, 10)) +
   
@@ -130,7 +130,7 @@ tonne_km_by_mode %>%
                               breaks = c(1980, 1990, 2000, 2010, 2020)) +
   ggplot2::scale_fill_viridis_d(direction = -1) +
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = "U.S. freight transport [Mtonne-km]",
+                y = expression("U.S. freight transport [" * Mt%.%km * "]"),
                 fill = ggplot2::element_blank()) +
   
   MKHthemes::xy_theme()
@@ -304,7 +304,7 @@ transport_GHG %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "M_tonnes_CO2_eq", fill = "mode")) +
   ggplot2::geom_area() + 
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("U.S. transport emissions [Mtonnes " * CO[2] * "e]"),
+                y = expression("U.S. transport emissions [Mt " * CO[2] * "e]"),
                 fill = ggplot2::element_blank()) +
   
   ggplot2::scale_fill_viridis_d(direction = -1) +
@@ -545,7 +545,7 @@ biofuels %>%
   ggplot2::geom_area() +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("U.S. biofuel consumption [" * 10^9 * " gallons]"), 
+                y = expression("U.S. biofuel consumption [" * 10^9 * " gal]"), 
                 fill = ggplot2::element_blank()) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
 
