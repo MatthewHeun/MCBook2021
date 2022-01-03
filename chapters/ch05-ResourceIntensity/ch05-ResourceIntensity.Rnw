@@ -156,8 +156,9 @@ A significant sustainability challenge
 is extracting and consuming natural resources\index{resources!natural}
 at a sustainable rate.
 When considering the sustainability of resource extraction and consumption, 
-it is helpful to consider the strong and weak sustainability categories 
-introduced in Section~\ref{sec:what_is_sustainability}.
+the categories ``strong'' and ``weak'' sustainability
+(introduced in Section~\ref{sec:what_is_sustainability})
+can be helpful.
 
 
 %++++++++++++++++++++++++++++++
@@ -283,7 +284,7 @@ those bands are not appreciably growing or shrinking over time.
 On the other hand, the per-GDP extraction of biomass extraction is declining rapidly.
 The world's economies are dematerializing, but 
 only because we're using less biomass per unit of GDP than ever before.
-We're using the same amount of construction minerals, ores, and fossil fuels
+We're using nearly the same amount (mass) of construction minerals, ores, and fossil fuels
 per GDP as we ever have.
 
 
@@ -375,11 +376,14 @@ The fact that we are \emph{increasing} our rate of material extraction
 means that we are running well afoul of the strong sustainability criterion
 for these materials.
 On the other hand,
-extraction of biomass \emph{can} be sustainable if
-the extraction rate is less than the growth rate.
+extraction of biomass \emph{could} be sustainable if
+the extraction rate is less than the regrowth rate.
 Unfortunately, Figure~\ref{fig:per_gdp_material_use} shows that biomass extraction
 is not scaling with GDP.
 In fact, GDP growth is supported exclusively by unsustainable material extraction.
+
+By the strong sustainability criterion, 
+we live in an unsustainable world.
 
 
 %++++++++++++++++++++++++++++++
@@ -392,61 +396,80 @@ to invent and deploy substitute(s) at scale before the resource is depleted.
 A similar weak sustainability criterion can be established for waste:
 wastes should be emitted slowly enough for their accumulation in the environment
 to pose no problems before remediation technologies can be invented and deployed
-at scale.
+at scale to dispose of the wastes.
 A time horizon is needed for evaluating the weak sustainability criterion,
 typically 50 years.
 Thus, extraction of a resource is weakly sustainability so long as
 the remaining stock is sufficient to last 50 years at today's extraction rate
 (and, possibly expected future extraction rates).
+And emission of wastes is weakly sustainable so long as 
+remediation technologies will be deployed 
+to ameliorate the wastes within 50 years.
 
-To evaluate whether a resource meets the weak sustainability criterion,
+To evaluate whether extraction of a resource meets the weak sustainability criterion,
 the following steps can be performed.
 %
-\begin{enumerate}[label={(\alph*)}]
+\begin{enumerate}
 
-  \item Establish the virgin material stock as of today.
+  \item Establish the virgin material stock as of today, 
+        often called the ``reserves'' of the resource.
 
-  \item Divide the virgin stock by 50 years to obtain a maximum weakly
-  sustainable extraction rate.
+  \item Divide the virgin stock by 50 years to obtain the average maximum weakly
+        sustainable extraction rate~($r_{ws}$).
 
-  \item Find the current rate of extraction and estimate any future increases or decreases
-        in the rate of extraction.
+  \item Find the current rate of extraction and suitable adjust 
+        for any future increases or decreases~($r_{cf}$).
 
-  \item Compare current and expected future extraction rates with the maximum weakly sustainable extraction rate.
-
-  \item If the actual extraction rate is greater than the maximum weakly sustainable extraction rate,
+  \item Compare the weakly sustainable extraction rate~($r_{ws}$)
+        and the current or future extraction rates~($r_{cf}$).
+        If the current or future extraction rate~($r_{cf}$) is greater than
+        the average maximum weakly sustainable extraction rate~($r_{ws}$),
         consumption of the resource does not meet the weak sustainability criterion.
 
 \end{enumerate}
 %
 A similar approach can be used for wastes.
 
+The parameter $\rho$ quantifies the current extraction rate~($r_{cf}$) as a percentage above (or below) the 
+average maximum weakly sustainable extraction rate~($r_{ws}$).
+
+\begin{equation} \label{eq:perc_above_ws}
+  \rho \equiv \frac{r_{cf} - r_{ws}}{r_{ws}} \times 100
+\end{equation}
+%
+A positive value for $\rho$ indicates the percentage by which the extraction rate~($r_{cf}$)
+is \emph{above} the average maximum weakly sustainable extraction rate~($r_{ws}$). 
+A negative value for $\rho$ indicates the percentage by which the extraction rate~($r_{cf}$)
+is \emph{below} the average maximum weakly sustainable extraction rate~($r_{ws}$). 
+A value for $\rho$ of 100\% means that the resource is being extracted at \emph{twice} 
+its average maximum weakly sustainable extraction rate.
+
 Figure~\ref{fig:PercentageOfSustainable} shows the result of applying
 the weak sustainability analysis approach
 to two chemical elements (zinc\index{zinc (Zn)} and germanium\index{germanium (Ge)}) and
 to worldwide emission of CO$_2$.
 The world is far above
-weak sustainability levels of consumption for these two materials and CO$_2$ emission.
-To further underscore the importance of consumption of natural resources to sustainability,
-germanium (now being consumed at twice its sustainable rate)
+weak sustainability levels of consumption for these two materials and CO$_2$ emissions.
+To underscore the importance of sustainably consuming natural resources,
+germanium (now being consumed at twice its sustainable rate, $\rho$~=~100\% in Figure~\ref{fig:PercentageOfSustainable})
 is one of the critical raw materials in Table~\ref{tab:CRMs}.
 
-<<PercentageOfSustainable, fig.width=3.25, fig.cap="Proportion of weak sustainable extraction (zinc, germanium) or emission (CO$_2$) rates for the U.S. \\emph{Source}: \\citet[Tables~2.1--2.3]{Graedel:2010ab}.">>=
-readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"),
+<<PercentageOfSustainable, fig.width=3.25, fig.cap="Percentage above maximum weakly sustainable rates~($\\rho$). For zinc and germanium, the percentage above the average maximum weakly sustainable extraction rates. For CO$_2$, the percentage above maximum weakly sustainable emission rate. \\emph{Source}: \\citet[Tables~2.1--2.3]{Graedel:2010ab}.">>=
+weak_sust_data <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"),
                    sheet = "data to plot") %>%
   dplyr::mutate(
-    Resource = factor(Resource, levels = c("zinc", "germanium", "CO2")),
-    Multiple_of_sustainable = Multiple_of_sustainable * 100
-  ) %>%
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Resource", y = "Multiple_of_sustainable", fill = "Resource")) +
+    Resource = factor(Resource, levels = c("zinc", "germanium", "CO2"))
+  )
+
+weak_sust_data %>%
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Resource, y = rho, fill = Resource)) +
   ggplot2::geom_bar(stat = "identity") +
   ggplot2::guides(fill = "none") +
   ggplot2::scale_x_discrete(labels = c(zinc = "Zn", germanium = "Ge", CO2 = expression(CO[2]))) +
-  ggplot2::coord_cartesian(ylim = c(100, NA)) +
   ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.05))) +
   viridis::scale_fill_viridis(discrete = TRUE) +
   ggplot2::labs(x = NULL,
-                y = "Proportion of sustainable\nconsumption or emission [%]") +
+                y = expression(rho * " [%]")) +
 
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
@@ -503,7 +526,7 @@ consumption of a valuable, scarce, or nonrenewable resource
 with a less valuable, less scarce, or renewable resource%
 \footnote{
   For a related discussion of substitution in consumption,
-  see Question~Q\ref{chap:resource_intensity}.\ref{question:consumption_substitution}.
+  see Q\ref{chap:resource_intensity}.\ref{question:consumption_substitution}.
 }.
 From a weak sustainability perspective,
 replacing use of a scarce resource with use of an abundant resource
