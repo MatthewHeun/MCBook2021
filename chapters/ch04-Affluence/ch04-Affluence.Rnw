@@ -14,23 +14,7 @@ it takes a serious look at its lifestyle.}{Pope John Paul II}
 %% \epigraph{Ninety-nice percent of the troubles that threaten our civilization 
 %% come from too optimistic accounting.}{Charlie Munger}
 
-%1 Add or refer to the economy as a metabolism. ****
-%2 What is affluence, micro and macro; notions of wealth and value
-%3 no storage of wealth.
-%4 Units of measure. other things vs. GDP.
-%5 GDP distribution (equity)
-%6 Growth. measure (eg GINI) and SOURCES of growth.
-%7 Rebound
-%8 scarcity vs. abundance (Malthus)
-%9 Externalities vs. property rights.
-%10 broken window fallacy.
-%11 public debt!!
-%12 circular economy. Steady-state economy (to go in the last section, Implications for Sustainability)
-%13 it's hard to fight economics.
-%14 'We all want to maximize profit.'
-%15 G&A Figure 1.1.
-%16 Subjective theory of value.
-%17 every chapter should ask 'where are opportunities for reduced impact?"
+% *** every chapter should ask 'where are opportunities for reduced impact?" ***
 
 Equation \ref{eq:IPARX} (repeated below for convenience)
 is our conceptual framework for considering sustainability.
@@ -50,98 +34,28 @@ finish the development of our framework for stability.
   \iparx            \tag{\ref{eq:IPARX}}
 \end{equation}
 
-
-% This chapter explores the meaning of, and issues with, the term \emph{affluence}.
-% The common meaning of affluence is "wealth" or "riches" but here we use it with 
-% reference to specific countries or globally to be \emph{per person}.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Individual affluence}
-\label{sec:individual_affluence}
+\section{Global affluence}
+\label{sec:Global_affluence}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The word wealth can include happiness, prosperity, well being, welfare, but mostly it 
-means the \emph{amount} of goods, possessions, money, property, or stuff a person has.
-That is, wealth refers to a \emph{level} of material possessions or resources.
-In contrast, we will define %, partly because it makes Equation \ref{eq:IPARX} a "pronounceable" acronym,
-the term ``affluence'' to mean the \emph{rate} a person 
-uses up goods and services, that is, the ``stuff'' bought \emph{per year}.
+The word wealth can include notions of happiness, prosperity, well being, and welfare, 
+but mostly wealth refers to the \emph{amount} of goods, possessions, money, 
+property, or ``stuff'' a person has.
+In other words, wealth refers to a \emph{level} of material possessions or resources.
+In contrast, affluence ($A$) is the \emph{rate} that the economy 
+uses up goods and services, that is, the amount of ``stuff'' bought \emph{per year}.
 
-Our economic activity may mean literal consumption, as in the case with food, 
-or it could be consuming a service, such as education or getting a haircut. 
-% say more in a discussion question how taking up a seat in a classroom, 
-% having the prof grade your papers, etc. is "consumption"
+This economic activity may mean literal consumption, as in the case with food, 
+or it could be using a service, such as education or getting a haircut. 
 Sometimes, what is ``consumed'' is ancillary to what the consumer actually desires. 
-For example, when the consumer drives from point A to point B, whether the car 
-is electric or burns gasoline doesn’t matter to the consumer. 
-The point is that, in economic terms, travel uses an energy service. 
+For example, when a person travels from point A to point B, 
+whether the car is electric or burns gasoline doesn’t matter (to the traveler). 
 The energy consumed is just a means to an end. 
 (In this case, that end is travel.)
 
-Microeconomic theory (and, indeed, our own experience) tells us that human wants are
-limitless. 
-However much we have, we always want more. 
-% Consumption has diminishing returns of marginal utility; the fourth, fifth, and 
-% sixth doughnut increase happiness less than the first, second, and third doughnuts. 
-% After a doughnut, we may want a cup of coffee instead of a second doughnut, then a 
-% slice of bacon, and then to read the news, and then \ldots . 
-% There is always a next ``thing'' we want, which is not necessarily a physical object. 
-% 
-% Having choice enhances consumer well being. 
-% A choice between a muffin and a doughnut is better than if only doughnuts are 
-% on the menu. 
-% (Choice itself is subject to diminishing marginal utility; 
-% partly because of human cognitive limits.)
-%
-% However, each individual has a different set of preferences about what will make them
-% happy.
-% The existence of differences is exactly what allows free trade. 
-% Both parties can increase their own happiness by trading for something that will
-% make them more happy than the thing they already have. 
-% Trade makes people better off.
-% from Grawe:
-Moreover, each individual has a different preferences about what will make them 
-happy and different abilities (to produce goods and services). 
-The existence of these differences guarantees potential gains from trade. 
-Both parties in a voluntary exchange increase their own happiness by trading. 
-In other words, trade makes people better off.
-
-The \emph{opportunity cost} is the value (to them) of what they give up, be it 
-money or a good or service. 
-A barber might prefer to have \$15 rather than 20 minutes of free time.
-You might rather have a haircut than \$15.
-In this situation, you can give the barber \$15 and get a haircut. 
-You’re happier with the haircut. 
-The barber is happier with the \$15.
-Your opportunity cost (\$15) was worth less to you than the haircut, so you end 
-up better off. 
-The barber's opportunity cost (20 minutes) was worth less (to her) than \$15,
-so she is also better off.
-
-Any reduction in affluence decreases well being.
-Immediately, we can see a challenge with attempting to reduce impacts ($I$) by
-reducing affluence ($A$) -- it will make people less well off. 
-Many proposals for becoming more sustainable are effectively reductions to
-affluence. 
-% To the degree that the proposal involves something costing more,
-% it is a reduction in affluence.
-% Examples include taxing carbon, labor-intensive farming, using energy sources
-% with a lower EROI, and banning ``cheap'' products in favor of more expensive ones.
-% from Grawe:
-(When we speak of affluence we mean real affluence adjusted for changes in the 
-price level over time.) %boy, this doesn't read well.
-
-Poverty is a hard sell on an individual level; no one wants it for themselves.
-(Note that an abstract desire to have lower impacts is not the same as wanting 
-to be poor.)
-Lower levels of affluence are associated with lower HDI, as Figure 
-\ref{fig:FootprintHDIGraph} shows. 
-This chapter's end-of-chapter questions will further explore of the thorny issues 
-of attempting to lower impacts by lowering affluence.
-
-\section{Global affluence}
-Affluence is \emph{measured} by gross domestic product (GDP) per capita.
-There are many critiques as to why per capita GDP is not the \emph{best possible}
+Affluence ($A$) is \emph{measured} by gross domestic product (GDP) per capita.
+There are critiques as to why per capita GDP is not the \emph{best possible}
 measure of affluence, and those critiques are valid. 
 For instance, GDP doesn't count (or under counts) the value
 of innovation in improving standards of living \cite{Gordon2016}. 
@@ -151,26 +65,24 @@ Some examples are green GDP, the index of sustainable economic welfare, and the
 genuine progress indicator. 
 However, each of these suffers from its own limitations.%, philosophical, methodological, and practical.
 The biggest limitation is standardization and availability of data. 
-Frankly, GDP is what we have the most data for and, consequently, it is what 
-``everyone'' uses. 
-GDP is the standard. 
-So, for now, we'll use it.
+GDP is what we have the most data for and, consequently, it is what ``everyone'' uses. 
+GDP is the \emph{de facto} standard. 
 % put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
 Consistent and easily accessible GDP data can allow us to make observations
 about trends, which are \emph{qualitatively} consistent with trends we would observe
 using other indices, bearing in mind the limitations of what GDP measures and what it doesn't.
 In any case, a different measure of affluence $A$, would require a corresponding 
 adjustment to (the measure of) resource intensity $R$. 
-The end result leaves us in the same difficult spot: Consuming more per person 
-creates greater impact if the resource intensity of affluence 
+The end result leaves us in the same difficult spot: greater affluence 
+creates greater impact if the resource intensity of the economy ($R$)
 (discussed in the next chapter) is unchanged.
 
 Figures \ref{fig:AffluenceGraph-Nordhaus} and \ref{fig:GDPGraph-Nordhaus} show 
 world annual GDP per capita and total GDP, respectively. 
-Note that most national and international economic policy is explicitly and purposely devoted to increasing 
-affluence and maintaining continual growth for GDP -- even though 
-perpetual growth on finite resources is ultimately unsustainable
-(see Section \ref{sec:exp}).
+Note that most national and international economic policy is explicitly and 
+purposely devoted to increasing affluence and maintaining continual growth for 
+GDP -- as shown in these Figures -- even though perpetual growth on finite 
+resources is ultimately unsustainable (see Section \ref{sec:exp}).
 
 % <<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
 % world_gdppc_Maddison <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
@@ -331,12 +243,11 @@ GDP is denominated in units of money and is the sum of four terms,
 \label{eq:GDP}
   GDP = c+g+i+nx \; .
 \end{equation}
-Consumption ($c$) is purchases made by individuals. 
+\paragraph{Consumption} $c$ is purchases made by individuals. 
 Consumption typically is about two thirds of GDP for developed economies and is
 usually divided into three subcategories: durable goods, nondurable goods, and services. 
-Services represent nontangible things. 
-Examples include the aforementioned haircut, legal advice, education, and concert 
-tickets. 
+Services represent nontangible things, such as a haircut, legal advice, education, 
+and concert tickets. 
 Durable goods are defined as things that last longer than 3 years, 
 such as appliances and automobiles.
 Nondurable goods are things that are consumed immediately, like food, paper, or fuel. 
@@ -346,11 +257,11 @@ Durable goods spending is more sensitive to economic conditions than nondurable
 goods spending because consumers can usually choose to postpone spending on durable goods 
 until their circumstances are better. 
 
-Government spending ($g$) is divided between government consumption 
+\paragraph{Government spending} $g$ is divided between government consumption 
 (such as equipment and wages paid to government workers) and net investment, for 
 example, infrastructure improvements.
 
-Investment ($i$) is \emph{not} money put into a bank account. 
+\paragraph{Investment} $i$ is \emph{not} money put into a bank account. 
 Investment is goods that are purchased now for use in the future. 
 There are three subcategories of investment: nonresidential fixed investment, 
 residential fixed investment, and inventory investment. 
@@ -360,9 +271,9 @@ households and landlords.
 Inventory investment is the purchase, by firms, of goods for later sale and could 
 be negative (inventory is falling) or positive (inventory is increasing).
 
-$nx$ is net exports; here ``net'' is the difference between the value of exports 
+\paragraph{Net exports} $nx$ is the \emph{net} difference between the value of exports 
 and imports. 
-Thus, $nx$ could be a negative number.
+Thus, $nx$ could be a negative number for a country that imports more than it exports.
 World GDP is the sum of all national GDPs.
 Therefore, for world GDP, $nx=0$. 
 We don't import from or export to space, yet.
@@ -370,11 +281,12 @@ We don't import from or export to space, yet.
 \subsection{Production/Affluence balance}
 \label{sec:PCbalance}
 Although economists use consumption narrowly as described in Equation~\ref{eq:GDP},
-for the remainder of the chapter we will use the term more colloquially to include 
-everything we use in personal consumption, government spending, and investment,
-that is, global GDP.
-Individuals and corporations may save money for purchases in the future, but the
-economy as a whole balances production and (a more generic) consumption as 
+we use the term more colloquially as the sum of personal consumption, 
+government spending, and investment.
+That is, we use the term ``consumption'' to mean global GDP, in part to remind ourselves
+that economic activity is based on the use of resources.
+Individuals and corporations may ``save'' money for purchases in the future, but the
+economy as a whole balances production and (this more generic form of) consumption as 
 closely as possible.
 \[ \label{eq:PCbalance}
 \textrm{Production}=\textrm{Consumption}.
@@ -397,7 +309,7 @@ why would you pay the costs of production if there were no prospects of a sale?
 % to have goods available when customers want them, not a long-term difference in
 % supply and demand.
 %
-Therefore, we will use the terms ``consumption'' and ``production'' interchangeably.
+Therefore, we will also use the terms ``consumption'' and ``production'' interchangeably.
 
 \subsection{Economic metabolism}
 \label{sec:econ_metab}
@@ -408,25 +320,18 @@ The economy takes in resources and produces wastes.
 Thus, the economy is the metabolism of human society.
 One way of looking at Equation~\ref{eq:IPARX} is that impacts ($I$)
 are the \emph{result} of economic activity.
-Total consumption is $P \times A$.
+Total consumption, that is, world GDP, is $P \times A$.
 Resources ($R$) are the feed the economy needs to live and grow.
-The impact intensity of resources, $X$, represents the wastes that the economy excretes.
+The impact intensity of resources, $X$, is tied to the wastes that the economy excretes.
 
-\section{Economic growth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Economic change}
 \label{sec:EconGrowth}
-Although production and consumption are in balance, both may grow together.
-Indeed, growth in GDP per capita ($A$) is the explicit goal of many economic policies.
-Growing affluence is, by definition, an increase in standard of living. 
-A business that produces the same number of products per year isn't growing.
-It's stagnant.
-Likewise, a mine that produces 150,000 tons of ore per year is not growing.
-Instead, \emph{growth} looks like Figure \ref{fig:exp}. 
-Output growth means that each year the mine must produce more 
-than it did the previous year.
-A standard of living increase means consuming \emph{more} this year than last year.
-To provide for increased consumption, there must be increased production.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-There are two ways economic output can increase.
+Although production and consumption are in balance, both may change together.
+In fact, growth in GDP per capita ($A$) is the explicit goal of many economic policies.
+There are two ways the economy can increase GDP.
 Either the economy uses \emph{more} inputs or it uses existing inputs more 
 \emph{efficiently}.
 Economic inputs include labor, capital, energy, and materials.
@@ -434,12 +339,16 @@ In the long run, growing output by scaling up the inputs does not increase
 affluence because more workers are needed to gather, process, and use the 
 additional resources.
 That leaves only efficiency as a means of boosting affluence.
+From a sustainability point of view, we should want to everything to be used
+as efficiently as possible; inefficiency of any kind is not desirable.
 
 The productivity of labor depends on the education and skill 
 of workers, technology, the number of workers in the population, the number of hours they 
 work, and the faction of the population that is working (see Section \ref{sec:dtt}). 
-More workers, such as the demographic dividend, or workers working longer hours
-will increase economic output.
+More workers will increase economic output but will not increase GDP \emph{per person}.
+A greater fraction of the population working, such as with the demographic dividend, 
+or workers working longer hours will tend to increase $A$ (at least until the 
+population pyramid stabilizes, in the case of the demographic dividend).
 
 Capital is buildings and equipment, machines, and tools -- \emph{things}
 that can make workers more productive.
@@ -459,10 +368,7 @@ money (that is, interest) for making capital investments.
 Conceptually, at the effective maximum level of capital, labor will have a maximum
 level of output. 
 (You could say that workers are fully ``tooled up.'')
-% At this point, an economy can grow only through access to new 
-% resources (such as energy) or innovation (a change in the level of technology).
 
-% Question: is all intensive growth innovation?
 Innovation is the major source of economic growth.
 There are two types of innovation: the invention of new \emph{kinds} of goods and
 services \emph{or} improvements to efficiency.
@@ -470,33 +376,48 @@ The majority of the goods and services we consume today did not exist in
 1870~\cite{Gordon2016}.
 Today, we consume entirely new categories of goods and services that did not
 exist for most of human history.
-However, if you look close enough, almost all of these ``new goods'' stories end
-up being about some form of efficiency.
+Much of the improvement in our standard of living comes from these innovations.
+
+However, if you look close enough, almost all of these ``new goods'' stories 
+\emph{also} end up being about some form of efficiency.
 The endless quest to meet our needs more efficiently allows us to instead spend
 our budget on \emph{additional} consumption.
+Efficiency improvements allow us to get more GDP for the same resource cost.
 As we will see in Chapter~\ref{chap:resource_intensity}, particularly in 
-Figures~\ref{fig:per_capita_material_use} and~\ref{EnergyPerPersonGraph},
+Figures~\ref{fig:per_capita_material_use} and~\ref{fig:EnergyPerPersonGraph},
 economic growth, measured by GDP per capita -- primarily driven by improvements
 in material and energy efficiency (that is, ``innovation'') -- results not in 
 less consumption but more.
 Managing the ``rebound effect,'' which is when improvements in efficiency result in
 greater total consumption, is a major sustainability challenge.
 
-\section{Steady-state economy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Economic level}
 \label{sec:circular_economy}
-World economies are managed to exhibit continual growth (that is, exponential
-growth; see Project~P1.\ref{project:alt_exp}).
-As has been mentioned a few times already, exponential growth is inherently
-unsustainable. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+World economies are managed to exhibit continual growth 
+(see Project~P1.\ref{project:alt_exp} for the relationship between continual growth
+and exponential growth).
+As has been mentioned a few times already, continual growth is inherently
+unsustainable on a finite planet.
 When the economy grows, at some point, it either demands more resources than the 
 environment can provide and/or the wastes generated exceed the ecosystem's 
 ability to absorb.
 That is, eventually economic growth either exceeds the ecosystem's ability to provision
-or the ecosystem's regulating and support services pass a tipping point.
+or the ecosystem's regulating and support services pass a tipping point, as 
+discussed in Chapter~\ref{chap:planetary_boundaries}.
 
 In light of these facts, there are have been calls for a \emph{zero-growth}, or 
 \emph{steady-state}, economy.
-Some have gone further and called for a \emph{de-growth} movement.
+These proposals address economic growth, that is the changing size of the 
+economy, but they don't address what that size is.
+It is the magnitude of economic activity (that is, the total amount of consumption) 
+that matters for sustainability -- as exemplified in Figure \ref{fig:FootprintHDIGraph},
+which suggests that our current level of economic activity is \emph{already} too large.
+
+Therefore, some proposals go further and call for \emph{de-growth}, that is, 
+reducing the size of the economy.
 There are substantial social and political pressures against making these changes.
 (And for good reasons!)
 A steady-state economy would imply no change in the standard of living from 
@@ -511,8 +432,9 @@ The costs are real and there has been no political will or action to make
 such a transition feasible in the amount of time it would take to avoid a climate
 crisis.
 
-Another alternative is a \emph{circular} economy\index{economy, circular}, which is one that exists only
-on recycled (and, perhaps, renewable) materials and which emits no wastes. 
+Another alternative is a \emph{circular} economy\index{economy, circular}, 
+which is one that exists only on recycled (and, perhaps, renewable) materials 
+and which emits no wastes. 
 Such an economy is impossible to fully achieve but may be a good model to strive
 for in some ways.
 Materials cannot be 100\% recycled and, for many materials, the recycling process
@@ -521,30 +443,49 @@ The biggest flaw in a circular economy is that it requires continual energy inpu
 in part because recycling of materials requires energy.
 Lastly, it is not clear that such a system can be \emph{economically} sustainable.
 
-The above proposals address economic growth, that is changing the size of the 
-economy, but they don't address what that size is.
-It is the magnitude of economic activity (that is, the amount of consumption) 
-that matters for sustainability -- as exemplified in Figure \ref{fig:FootprintHDIGraph}.
 When we look at things through the economic lens, Figure \ref{fig:FootprintHDIGraph}
 suggests the only way to live sustainably is poverty. 
 The next two chapters will examine this dilemma in more detail.
 Perhaps, as we hope, there is a way to enjoy a high standard of living \emph{and}
 be sustainable.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Individual affluence}
+\label{sec:individual_affluence}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% However, GDP does more accurately capture the impact on the environment because 
-% it directly correlated  with resources that are used (sources) and emissions (sinks). 
-% Can we do an epigraph? Flag Day lyrics by The Housemartins.
-% https://en.wikipedia.org/wiki/Thermoeconomics
-% https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Domestic_material_consumption_%28DMC%29
-% ****
-% In the Personal Actions chapter, I had included this question:
-% ``Is there such a thing as a steady-state economy?''
-% I don't think it belongs in the Personal Actions chapter.
-% It may fit better in the economics chapter. ---MKH
-% ****
-% Wealth inequality
-%% NIMBY and demand-side load shedding = how much do we have to pay you to take away your choice.
+Human wants are limitless. 
+However much we have, we always want more. 
+Note the fact that we have \emph{desires} for more don't necessarily make us happier
+when those desires are fulfilled.
+Conversely, even though people \emph{can} find happiness in the midst of hardship,
+want, or poverty, doesn't mean they desire those things.
+Human want extends to choice as well. 
+We would like to be able to choose what (and how much) we consume and to control
+our world, but choice and control don't necessarily make us happier, per se.
+
+Therefore, any reduction in affluence or choice runs counter to what people want.
+Immediately, we can see a challenge with attempting to reduce impacts ($I$) by
+reducing affluence ($A$) -- it will make people less well off. 
+Many proposals for becoming more sustainable are effectively reductions to
+affluence. 
+Poverty is a hard sell on an individual level; no one wants it for themselves.
+(Note that an abstract desire to have lower impacts is not the same as wanting 
+to be poor.)
+Lower levels of affluence are associated with lower HDI, as Figure 
+\ref{fig:FootprintHDIGraph} shows. 
+
+
+Some people \emph{have} chosen (relative) poverty by trying to escape the economic
+system; see P4.\ref{project:off-grid} below for examples.
+Often, for these people, independence or being ``off grid'' is the main attraction.
+However, even for these people, there is no escaping the relationship to rest of
+humanity.
+There is always some participation in the broader economy, as the project shows,
+so there is no escaping the sustainability implications of economic activity.
+
+This chapter's end-of-chapter questions will further explore of the thorny issues 
+of attempting to lower impacts by lowering affluence.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
@@ -552,14 +493,23 @@ be sustainable.
 Robert J. Gordon, \emph{The rise and fall of American growth: The U.S. standard of
 living since the Civil War}, Princeton, NJ: Princeton University Press, 2016.
 
+\noindent
+Tim Jackson, \emph{Prosperity Without Growth: Foundations for the Economy of Tomorrow},
+Oxfordshire, UK: Routledge, 2017.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-United States Department of Commerce, Bureau of Economic Analysis: \\ \url{bea.gov}
-
-\noindent
+United States Department of Commerce, Bureau of Economic Analysis: \\ \url{bea.gov} \\
 United Nations Department of Economic and Social Affairs, Statistics Division: \\ 
 \url{https://unstats.un.org/home/}
+
+\noindent
+N. Gregory Mankiw's \href{http://gregmankiw.blogspot.com/}{blog}.
+
+\noindent
+Youtube channels \href{https://www.youtube.com/c/HowMoneyWorks}{How money works}
+and \href{https://www.youtube.com/c/EconomicsExplained}{Economics explained}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
@@ -569,6 +519,8 @@ United Nations Department of Economic and Social Affairs, Statistics Division: \
 
 \item What is your ideal income? Why? How do you plan to pursue this?
       What are the implications for your lifestyle/level of consumption?
+      How do you plan to allocate your income between consumption and residential 
+      fixed investment?
 
 \item Discuss how our perception of our needs is shaped by what is technologically 
       possible. Are mobile devices necessary? (Many 19th and 20th century CEOs
@@ -604,7 +556,7 @@ United Nations Department of Economic and Social Affairs, Statistics Division: \
       about the sources of affluence? 
       Does one interpretation or another make a difference in how you answer?
 
-\item GDP is designed to measure income, that is, what we produce in a year.  
+\item GDP measures income, that is, what we produce in a year.  
       But social standing doesn’t just depend on our income this year; wealth also matters.
       % GDP, because it represents consumption, is only a partial indication of wealth. 
       % For instance, owning an asset, like land or a valuable painting, doesn’t factor into GDP. 
@@ -623,8 +575,9 @@ United Nations Department of Economic and Social Affairs, Statistics Division: \
       macroeconomic level?
       \end{enumerate}
 
-\item Is there such a thing as a steady-state economy? What would have to be true
-      for a steady-state economy to exist?
+\item Is there such a thing as a steady-state economy? 
+      What would have to be true for a steady-state economy to exist?
+      Under what conditions is a steady-state economy sustainable?
       
 \item One strategy to make electricity grids more efficient is to employ load shedding.
       A typical example is where, in exchange for a lower electric rate, your 
@@ -633,7 +586,7 @@ United Nations Department of Economic and Social Affairs, Statistics Division: \
       to give up (some) control (that is, choice) of your electricity consumption?
       What does this tell you about your consumer preferences?
       
-\item Some (high-end!) apparel has been made a circular economy. The manufacturer
+\item Some (high-end!) apparel has been made a circular economy in that the manufacturer(s)
       will accept the worn-out garment back for recycling. 
       \begin{enumerate}
       \item Discuss the energy impacts of such a scheme, particularly with 
@@ -646,9 +599,10 @@ United Nations Department of Economic and Social Affairs, Statistics Division: \
       \item What is the 
       energy content of clothing in its various life stages (materials, manufacture
       transportation, retail, washing, disposal)?
+      How would you find out?
       \end{enumerate}
       
-\item Stopping economic growth is one way to limit environmental impacts. 
+\item Degrowth is one way to limit environmental impacts. 
       Developed economies do not wish to lower their standards of living. 
       Developing economies want their opportunity to enjoy higher standards of 
       living, hence the idea of ``sustainable development.'' 
@@ -726,7 +680,18 @@ United Nations Department of Economic and Social Affairs, Statistics Division: \
 \item Research the standards, processes, and methods for collecting and disseminating 
       global economic statistics.
 
-      
+\item Research an individual or group who has chosen an off-grid or otherwise
+      unconventional lifestyle.
+      Suggested subjects include the Amish, the Lykov family, and Richard Proenneke.
+      To what extent are they able to avoid interacting with the broader economic system?
+      Pay particular attention to medical care, food, clothing, education,
+      literature, and tools/machines, all of which are difficult to be completely 
+      self-sufficient with respect to.
+      Furthermore, what starting ``wealth'' (in whatever form) did these people 
+      have, versus what ``income'' did they/do they generate to add to or subtract
+      from that initial amount?
+      \label{project:off-grid}
+
 \end{projects}
 
 \cleardoublepage
