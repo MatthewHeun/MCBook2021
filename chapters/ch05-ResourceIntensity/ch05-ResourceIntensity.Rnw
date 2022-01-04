@@ -44,7 +44,12 @@ Nowhere.
 \label{sec:resource_intensity_definitions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\paragraph{Intensity} An intensity is like an efficiency, except the numerator and denominator have 
+
+%..............................
+\paragraph{Intensity}
+%..............................
+
+An intensity is like an efficiency, except the numerator and denominator have 
 different units.
 A furnace that burns a quantity of natural gas that releases 100 BTUs of heat might
 only deliver 96 of those BTUs to your house.
@@ -63,7 +68,12 @@ Carbon emissions per ton of freight per mile moved is an intensity.
 It is \emph{intensive} because total carbon emissions depend on the tons
 moved and the total km travelled.
 
-\paragraph{Primary vs. Final} Imagine a coal-fired power plant that generates electricity to charge
+
+%..............................
+\paragraph{Primary vs. Final}
+%..............................
+
+Imagine a coal-fired power plant that generates electricity to charge
 an electric car. 
 Coal is the \emph{primary} energy source. 
 The electricity sold to consumers is considered to be a \emph{final} energy carrier.%
@@ -84,7 +94,12 @@ The refinery or nuclear-fuel enrichment process can be evaluated for their
 energy return on investment (EROI). 
 (See Section~\ref{sec:masterE}.)
 
-\paragraph{Resources} We define a \emph{resource} as a primary input to the economy. 
+
+%..............................
+\paragraph{Resources}
+%..............................
+
+We define a \emph{resource} as a primary input to the economy. 
 As such, a resource is something \emph{extracted} from the natural world.
 It is something provisioned by the ecosystem, to use the language 
 of Section~\ref{sec:ecosystem_services}.
@@ -97,7 +112,11 @@ Water might be ice, a sports drink, or Play-Doh.
 The process of pulling a resource into the economy is called ``extraction.''
 Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used.
 
-\paragraph{Resource intensity of the economy} 
+
+%..............................
+\paragraph{Resource intensity of the economy}
+%..............................
+
 The $R$ term in Equation \ref{eq:IPARX} is the resource intensity of the economy.
 $R$ is defined as
 %
@@ -228,13 +247,18 @@ Energy is important for making an economy run but so are material resources.
 
 Another interesting feature of Table~\ref{tab:CRMs} is the \emph{breadth of applications}; 
 most of the critical materials are used throughout the economy.
-A material may be critical to a region or economy for any number of reasons:
+A material may be critical to a region, to an economic sector, or to an economy as a whole for any number of reasons:
 breadth of application, 
 lack of internal production capability, 
 etc.
-Each region or economy will have its own list of CRMs.
-The point isn't which materials are critical for any given economy;
-it's that all economies depend on a large number of raw materials.
+
+Each region or sector will have its own list of CRMs.
+For example, the transition to renewable energy future 
+(Section~\ref{sec:low_carbon_transition})
+depends on a large number of critical materials, 
+outlined in a recent International Energy Agency report~\cite{IEA:2021wt}.
+The point isn't which materials are critical for any given economy or sector;
+it's that all sectors of all economies depend upon a large number of raw materials.
 
 <<CRMs, results="asis">>=
 crm_df <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Critical Raw Materials.xlsx"), 
