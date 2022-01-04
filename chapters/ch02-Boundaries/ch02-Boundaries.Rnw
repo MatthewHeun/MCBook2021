@@ -990,37 +990,39 @@ The power of community: How Cuba survived peak oil: \\
 
 \item In 1990, the most recent year for which the United Nations 
       Framework Convention on Climate Change had data, the carbon budget was 1500~GtCO$_2$,
-      meaning that if this much carbon were emitted, the Earth's temperature would 
-      eventually rise by 1.5~\degC.
+      meaning that if 1500~GtCO$_2$ were emitted, the Earth's temperature would 
+      eventually rise by 1.5~\degC{} relative to pre-industrial conditions.
       With a then-current global emissions rate of 22.7~GtCO$_2$/year, the carbon
-      budget would be ``spent'' by 2056.
-      Since 1990, the global emission rate for carbon has increased. 
+      budget would be ``spent'' by 2056, assuming no increase in emissions rate.
+      Since 1990, the global emission rate for carbon has increased, 
+      as shown in Figure~\ref{fig:CarbonEmissionsGraph}. 
       In 2021, the remaining carbon budget is 500~GtCO$_2$ with an emissions 
       rate of 35~GtCO$_2$/year.
-      In other words, the budget will be used up in 2035. \label{question:carbon_budget}
+      In other words, the budget will be used up in 2035, 
+      again assuming no increase in emissions rate. \label{question:carbon_budget}
       \begin{enumerate}
       \item In the 1990s, who wanted to cut emissions and who wanted to accelerate emissions?
       \item Who stands to benefit from reductions to emissions now? Who currently would be harmed by a
-      reduction in global carbon emissions?
+            reduction in global carbon emissions?
       \end{enumerate}
       
 \item Climate models are somewhat uncertain. 
-      The numbers in Question Q2.\ref{question:carbon_budget} are expressed as 50\% probabilities.
+      The numbers in Q\ref{chap:planetary_boundaries}.\ref{question:carbon_budget} are expressed as 50\% probabilities.
       As the footnote on page~\pageref{page:carbon_budget} indicates, using our 
       carbon budget might produce an average temperature increase of more or less than 1.5~\degC. 
-      Using less carbon gives us a higher probability of staying below 1.5~\degC{}
-      average global temperature increase.
-      Using more carbon gives a lower probability of of staying below 1.5~\degC{}
+      Emitting less carbon gives us a higher probability of staying below 1.5~\degC{}
+      average global temperature increase relative to the pre-industrial climate.
+      Emitting more carbon gives a lower probability of of staying below 1.5~\degC{}
       average global temperature increase.
       \begin{enumerate}
       \item What are the pros and cons of having a higher (or lower) probability of staying 
-      below 1.5~\degC{} average global temperature increase?
+            below 1.5~\degC{} average global temperature increase?
       \item Who ``makes the decision(s)'' to use more or less of our carbon budget?
-      \item The precautionary principle is to exercise caution or restraint in
-      situations where there is uncertainty or limited information and the possibility
-      for harm exists, for instance, with a new medicine that hasn't been thoroughly tested.
-      How does the precautionary principle factor into use of the carbon budget?
-      (See also Project~P2.\ref{project:percautionary_principle}.)
+      \item The precautionary principle says we should exercise caution or restraint in
+            situations where there is uncertainty or limited information and the possibility
+            for harm exists, for instance, with a new medicine that hasn't been thoroughly tested.
+            How does the precautionary principle apply to management of the carbon budget?
+            (See also P\ref{chap:planetary_boundaries}.\ref{project:percautionary_principle}.)
       \end{enumerate}
       
 
@@ -1056,7 +1058,7 @@ The power of community: How Cuba survived peak oil: \\
       
 \item Prepare a brief report on the difference(s) between the \emph{precautionary principle}
       and the \emph{precautionary approach}, particularly as the terms were used 
-      in the 1992 Rio Declaration. \label{project:percautionary_principle}
+      in the UN's 1992 Rio Declaration on Environment and Development. \label{project:percautionary_principle}
       
 \end{projects}
 
