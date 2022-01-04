@@ -654,7 +654,6 @@ the full restoration is likely to cost more than \euro{8} billion.
      \centering
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
-          % \includegraphics[width=\linewidth]{chapters/ch01-Introduction/photos/BEFORE_Cité_vue_de_la_Tournelle,_Paris_2014.jpeg}
           \includegraphics[width=\linewidth]{chapters/ch01-Introduction/photos/before.jpeg}
          \caption{Before (April 2014).}
          \label{fig:ND_before}
