@@ -644,9 +644,39 @@ Albert A. Bartlett, \emph{Arithmetic, population, and energy: Sustainability 101
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 In April 2019, a fire did significant damage to Notre-Dame de Paris
-cathedral. Immediately, the French government vowed to rebuild.
+cathedral. (See Figure~\ref{fig:notre_dame}.)
+Immediately, the French government vowed to rebuild.
 Cleanup from the fire has already cost \euro{165} million;
 the full restoration is likely to cost more than \euro{8} billion.
+
+\begin{figure}
+\captionsetup[subfigure]{justification=centering}
+     \centering
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch01-Introduction/photos/BEFORE_Cité_vue_de_la_Tournelle,_Paris_2014.jpeg}
+         \caption{Before.}
+         \label{fig:ND_before}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch01-Introduction/photos/AFTER_Notre-Dame_en_feu,_20h06.jpeg}
+         \caption{During.}
+         \label{fig:ND_during}
+     \end{subfigure}
+        \caption{Notre Dame de Paris cathedral, before (2014) and 
+                 during the fire of April 2019.
+                 \emph{Sources}: 
+      (a) \href{https://commons.wikimedia.org/wiki/File:Cité_vue_de_la_Tournelle,_Paris_2014.jpg}{Saturne},
+      available under 
+      \href{https://creativecommons.org/licenses/by-sa/2.0/deed.en}{CC BY-SA 2.0}. }
+       % (b) \href{https://commons.wikimedia.org/wiki/Category:Cathédrale_Notre-Dame_de_Paris#/media/File:Notre-Dame_en_feu,_20h06.jpg}{Godefroy Troude} available under }
+      % \href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0}.}
+        \label{fig:notre_dame}
+\end{figure}
+
+
 
 % Notre Dame before (2014) and after figure (2019, on fire)
 % images from Wikimedia: https://commons.wikimedia.org/wiki/Category:Cath%C3%A9drale_Notre-Dame_de_Paris
