@@ -341,7 +341,7 @@ material_per_capita %>%
 
 
 
-<<per_gdp_material_use, fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of construction materials, ores, and fossil fuels scales quite well with GDP and shows no growth on this graph, as the thickness of those bands varies little over time. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: The regions in this figure are calculated by dividing the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<per_gdp_material_use, fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of construction materials, ores, and fossil fuels scales quite well with GDP and shows no growth on this graph, as the thickness of those bands varies little over time. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 material_per_gdp <- krausmann %>% 
   dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>% 
   dplyr::mutate(
@@ -430,8 +430,10 @@ the following steps can be performed.
 %
 A similar approach can be used for wastes.
 
-The parameter $\rho$ quantifies the current extraction rate~($r_{cf}$) as a percentage above (or below) the 
-average maximum weakly sustainable extraction rate~($r_{ws}$).
+The parameter $\rho$ quantifies the current extraction rate~($r_{cf}$)
+as a percentage above (positive)
+or below (negative)
+the average maximum weakly sustainable extraction rate~($r_{ws}$).
 
 \begin{equation} \label{eq:perc_above_ws}
   \rho \equiv \frac{r_{cf} - r_{ws}}{r_{ws}} \times 100
@@ -555,7 +557,7 @@ is an important aspect of sustainability, either the weak \emph{or} the strong v
 
 That said, it is important to note limits to substitutability.
 At a manufacturing plant, the type of electricity
-(coal electricity\index{electricity!coal} or solar electricity\index{electricity!solar})
+(e.g., coal electricity\index{electricity!coal} or solar electricity\index{electricity!solar})
 is immaterial,
 so long as both options are (for the U.S.) 120 V at 60 Hz.
 However, at the power station,
@@ -682,7 +684,6 @@ primary_energy %>%
 To assess the second question (are we using energy at a sustainable rate?),
 see Figure~\ref{fig:PrimaryEnergyGraph},
 which shows global primary energy consumption through time.
-%*** is this a strong or weak sustainability statement/question? ****
 The increasing consumption of primary energy supports
 population growth (Figure~\ref{fig:PopulationGraph}) and
 economic growth (Figure~\ref{fig:GDPGraph-Nordhaus}).
@@ -695,7 +696,8 @@ none of the fossil fuels shown in Figure~\ref{fig:PrimaryEnergyGraph}
 are being consumed at a sustainable rate.
 By the weak sustainability criterion, Figure~\ref{fig:WeakSustEnergyGraph} shows that
 coal consumption is weakly sustainable from a resource extraction point of view.
-(Not from a CO$_2$ emission point of view, as shown in Figure~\ref{fig:PercentageOfSustainable}.)
+(However, coal is not weakly sustainable from a CO$_2$ emission point of view, 
+as shown in Figure~\ref{fig:PercentageOfSustainable}.)
 Neither oil nor natural gas are being consumed at a weakly sustainable rate.
 
 
@@ -904,13 +906,14 @@ has been growing at a faster rate (in \%/year terms) than primary energy consump
 The decline indicates that each additional dollar of GDP
 is created with incrementally less energy consumption.
 
-While that appears to be good news for sustainability
+While the decrease in $I_{Ep}$ (the prime example for $R$ in Equation~\ref{eq:IPARX})
+appears to be good news for sustainability
 (declining $R$ puts downward pressure on $I$ in Equation~\ref{eq:IPARX}), 
 Figure~\ref{fig:per_gdp_material_use} shows that (on a per-mass basis)
 the largest decreases in primary energy per GDP are coming from declining consumption
 of biomass.
-Ironically, the decreases in $R$ are coming from reduction in per-GDP consumption of the 
-only type of energy that is in fact sustainable, biomass!
+Ironically, the decreases in $R$ are coming from reduction in per-GDP consumption 
+of a type of energy that is in fact sustainable, biomass!
 
 One reason that we are interested in the energy intensity of the economy is that
 energy consumption is a source of CO$_2$ emissions.
@@ -923,8 +926,8 @@ depends on the rates of increase or decline of the other terms
 on the right side of Equation~\ref{eq:IPARX}.
 Figure~\ref{fig:CarbonEmissionsGraph} shows that CO$_2$ emissions have been growing over time.
 So, other terms on the right side of the IPARX identity
-are growing faster than energy intensity of the economy is declining
-(see Section \ref{sec:revisit_IPARX}).
+are growing faster than energy intensity of the economy is declining.
+(See Section \ref{sec:revisit_IPARX}.)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

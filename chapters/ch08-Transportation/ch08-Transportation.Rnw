@@ -410,21 +410,22 @@ In addition to vehicle design, driving habits also influence fuel economy.
 Gentler driving (less acceleration, minimal dramatic braking) and
 constant speeds (using cruise control\index{cruise control}
 where appropriate)
-lead to improved vehicle fuel economy. %efficiency (efficacy).
+lead to improved vehicle fuel economy.
 
 Fuel economy, by definition,
-focuses on the efficacy of the vehicle itself.
+focuses on the efficacy of the machine itself (the car).
 However, drivers don't buy fuel to move vehicles.
 They pay for fuel to move people and freight!
-So another way to measure vehicle efficiency is the ratio of transport service 
+So another way to measure vehicle effectiveness is the ratio of transport service 
 to fuel volume consumed.
-Transport service efficiency\index{efficiency!transport service}
+Transport service efficacy\index{efficacy!transport service}
 is quantified in units of passenger-km/liter or tonne-km/liter
 for passenger transport and freight transport, respectively.
-This simple shift from vehicle efficiency to transport service efficiency
+This simple shift from machine efficacy (miles/gallon) 
+to transport service efficacy (passenger-km/liter)
 exposes the opportunity presented by Figure~\ref{fig:commuter_percentage_by_mode}.
-When more that three-quarters of all commutes are taken in single-occupant vehicles,
-a simple way to improve transport service efficiency is to increase
+When more than three-quarters of all commutes are taken in single-occupant vehicles,
+a simple way to improve the effectiveness of passenger transport is to increase
 the occupancy rate of vehicles.
 Similarly for freight transport,
 the simplest way to increase transportation efficiency is to ensure that trucks and trains
@@ -434,6 +435,7 @@ are filled to capacity when delivering freight.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 The viability of a ``sustainability through services'' strategy
 for the world economy is the subject of some debate.
 See \citet{Henriques_2010} and \citet{Fix:2019aa} and the references therein
@@ -943,21 +945,24 @@ and technology.
       implications of the alternative?
       Compare and contrast.
       
-\item In Section~\ref{sec:transportation_fuel_economy},
-      the move from machine efficiency (measured in miles/gallon) to
-      service efficiency (actually efficacy, measured in passenger-km/gallon)
+\item The box on page~\pageref{page:efficiency_efficacy} highlights 
+      the sustainability benefits of 
+      moving from energy efficiency to service efficacy. 
+      In Section~\ref{sec:transportation_fuel_economy},
+      the move from fuel economy 
+      (actually, a machine efficacy measured in miles/gallon) to
+      service efficacy (measured in passenger-km/gallon)
       revealed insights about the transportation sustainability challenge,
-      namely that filling empty seats in cars is a simple and effective form of increasing efficiency.
+      namely that filling empty seats in cars is a simple and effective form 
+      of increasing effectiveness.
       Consider a different sustainability challenge besides transportation.
-      Develop or find a machine efficiency for your challenge
-      that is analogous to vehicle efficiency in miles/gallon.
-      Develop or find a service efficiency for your challenge
+      Develop or find an energy efficiency or a machine efficacy for your challenge
+      that is analogous to fuel economy in miles/gallon.
+      Develop or find a service efficacy for your challenge
       that is analogous to passenger-km/gallon.
-      What changes when you move from machine efficiency to service efficiency?
-      How does the move from machine efficiency to service efficiency
-      affect the way you think about the sustainability challenge?
-      Does the move from from machine efficiency to service efficiency
-      suggest new solutions to the sustainability challenge?
+      What changes when you move from energy efficiency or machine efficacy to service efficacy?
+      How does the move affect the way you think about the sustainability challenge?
+      Does the move suggest new solutions to the sustainability challenge?
 
 \item The embodied energy (and embodied CO$_2$) of transportation systems 
       is an important aspect of their implementation and use.

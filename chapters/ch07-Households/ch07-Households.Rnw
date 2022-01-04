@@ -46,7 +46,8 @@ everyone who lives in (or works from)
 a house or apartment 
 makes decisions with sustainability implications
 in their own household.
-Indeed, households are the site for food, water, material, and energy demands.
+Indeed, households are the site for decisions about consumption of 
+food, water, material, and energy.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -67,11 +68,11 @@ Sustainability transitions related to households round out the chapter.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Demand for energy in households}
+\section{Demand for energy in dwellings}
 \label{sec:energy_demand_households}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Households are important for sustainability, 
+Dwellings are important for sustainability, 
 in part because they are sites of energy consumption.
 For example, Figure~\ref{fig:LLNL_energy_sankey} shows that 
 11.9~quad of energy were consumed in U.S.\ residences in 2018,
@@ -80,11 +81,11 @@ Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
 from the U.S.\ residential sector in 2018 total 
 \Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Mt/year,
 predominantly from electricity and natural gas.\index{electricity!consumption!households}
-Energy consumption in households is a source of sustainability impacts
+Energy consumption in dwellings is a source of sustainability impacts
 (CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of} and 
 natural resource extraction\index{natural resources!extraction of})
 far beyond the site of the demand.
-Thus, decisions made in households have sustainability implications
+Thus, decisions made by households have sustainability implications
 far beyond the walls of each abode.
 
 However, per-dwelling energy consumption has been rather flat from the 1970 onward.
@@ -192,12 +193,12 @@ Figure~\ref{fig:average_residential_energy} shows
 proportions of end-use energy consumption\index{energy consumption!residential}
 for the average U.S.\ residence.
 The end uses in Figure~\ref{fig:average_residential_energy}
-can be aggregated to three factors that affect energy demand in households.
+can be aggregated to three factors that affect energy demand by households.
 Space heating and cooling
-comprise 54.4\% of all household energy consumption.
+comprise 54.4\% of all energy consumption in dwellings.
 Hygiene (including water heating and laundry)
-consumes 21.9\% of household energy.
-Lighting constitutes 4.9\% of total household energy use.
+consumes 21.9\% of energy consumption in dwellings.
+Lighting constitutes 4.9\% of total energy use in dwellings.
 A fourth factor, size and location, is also important.
 
 
@@ -456,7 +457,7 @@ causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants.
 \label{sec:hygiene}\index{hygiene}
 %++++++++++++++++++++++++++++++
 
-Households consume significant energy and water
+Dwellings consume significant energy and water
 for showers, dish washers, toilets, and clothes washers and dryers.
 Collectively, these activities may be categorized as ``hygiene.''
 
@@ -497,7 +498,7 @@ of U.S.\ final energy consumption in 2015.
 \label{sec:sustainability_challenges_households}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Energy consumption in households is a significant sustainability challenge.
+Energy consumption by households is a significant sustainability challenge.
 If the goal is to provide the same energy services in households
 (space heating and cooling, hygiene, and lighting) 
 with less energy consumption, 
@@ -512,12 +513,12 @@ energy service discussed above.
 %++++++++++++++++++++++++++++++
 
 A sustainability challenge emerges
-from home size size.
-Families enjoy the comfort and social status of spacious homes, 
-but large homes consume more energy.
+from dwelling size.
+Families enjoy the comfort and social status of spacious dwellings, 
+but large dwellings consume more energy.
 (See Figure~\ref{fig:EnergyConsAndHomeSize}.)
-A sustainability challenge associated with home sizes is
-``how can we build small homes that are both comfortable and
+A sustainability challenge associated with dwelling size is
+``how can we build small dwellings that are both comfortable and
 confer social status?''
 
 Regarding location, cities are sites of large amounts of energy consumption.
@@ -563,7 +564,7 @@ are needed to replace heat lost in winter and remove heat gained in the summer.
 The effectiveness of roof and wall insulation\index{insulation}
 is quantified by its R-value\index{R-value},
 a measure of the resistance to heat transfer through the insulation material
-quantified in units of hr-ft$^2$-\degF/BTU.
+quantified in units of hr$\cdot$ft$^2\cdot$\degF/BTU.
 Higher R-values mean less heat is transferred.
 Large R-values are achieved with
 thicker insulation constructed from low-thermal-conductivity materials.
@@ -575,12 +576,12 @@ Thus, we see that insulation is subject to diminishing returns in its effectiven
 and there is a practical and economic optimum level of insulation.
 The Energy Star program recommends levels of roof, wall, and
 floor insulation~\cite{U.S.-Department-of-Energy:aa}.
-In Northern US climates, R-values of 49--60 hr-ft$^2$-\degF/BTU are recommended.
+In Northern US climates, R-values of 49--60 hr$\cdot$ft$^2\cdot$\degF/BTU are recommended.
 
 The insulative properties of windows are quantified by the U-factor\index{U-factor},
 which is the inverse of an R-value.
-Typical U-factors for windows are 0.2--1.2 BTU/hr-ft$^2$-\degF.
-(Corresponding window R-values are 5--0.83 hr-ft$^2$-\degF/BTU.)
+Typical U-factors for windows are 0.2--1.2 BTU/hr$\cdot$ft$^2\cdot$\degF.
+(Corresponding window R-values are 5--0.83 hr$\cdot$ft$^2\cdot$\degF/BTU.)
 Lower U values are more insulative.
 Heat gain from solar radiation is quantified by the
 solar heat gain coefficient (SHGC)\index{solar heat gain coefficient},
@@ -658,13 +659,13 @@ is quantified by the
 Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio (SEER)}
 which is
 the ratio of cooling provided (in BTU)
-to electricity consumed (in W-hr) throughout the season.
+to electricity consumed (in W$\cdot$hr) throughout the season.
 Larger SEER values indicate higher efficiency
 and lower operating costs compared to lower-SEER air conditioners.
 
 As of 2015, U.S.\ air conditioners must adhere to regionally dependent efficiency standards.
-In the southwest, a minimum SEER value of 14 BTU/W-hr is required.
-In other parts of the U.S., a minimum SEER value of 13 BTU/W-hr is mandated.
+In the southwest, a minimum SEER value of 14 BTU/W$\cdot$hr is required.
+In other parts of the U.S., a minimum SEER value of 13 BTU/W$\cdot$hr is mandated.
 %**** Find a reference for these SEER numbers. ****
 % See email.
 Higher efficiency is normally associated with higher purchase price.
@@ -686,7 +687,7 @@ Water heaters are binned by size (very small, low, medium, and high) and
 rated within each bin.
 High-efficiency water heaters are more expensive. 
 So a sustainability challenge that emerges from water heating is
-``how can we encourage hoe builders and home owners to install 
+``how can we encourage home builders and home owners to install 
 high-efficiency units, despite high initial cost?''
 
 
@@ -696,18 +697,11 @@ high-efficiency units, despite high initial cost?''
 %++++++++++++++++++++++++++++++
 
 Artificial lighting can be provided by any number of technologies.
-Today, LED lamps use one-eighth the energy of equivalent incandescent lamps.%
-\footnote{
-  A 100-W incandescent lamp gives about 1230~lumens or 12.3~lumens/W.
-  A 100-W equivalent LED lamp gives 1200~lumens and consumes only 12~W of electricity,
-  for an efficacy of 100~lumens/W.
-  The efficacy increase from incandescent to LED lamps is a factor of 8.
-}
-%
+Today, LED lamps use one-eighth the energy of equivalent incandescent lamps.
 In addition, LED lamps can last up to 10 times longer than incandescent lights.
 So operating costs of LED lamps are significantly less than incandescent lamps.
 Indeed, higher efficiency and longer life reduce total cost of ownership
-of LED bulbs by nearly two orders of magnitude
+of LED lamps by nearly two orders of magnitude
 compared to incandescent bulbs.
 
 That said, the purchase price of 
@@ -715,6 +709,47 @@ a high-efficiency lamp is higher than the purchase price of an incandescent lamp
 A sustainability challenge associated with lighting is
 ``how can we encourage home owners to replace incandescent lamps with LED lamps,
 despite higher initial cost?''
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth) \label{page:efficiency_efficacy}
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Lighting is one of many areas where 
+the effectiveness of a device is better described by a service efficacy than an energy efficiency.
+Efficiencies are ratios of energies, typically energy output divided by energy input.
+In contrast, efficacies are ratios of energy service output (not quantified in energy units) to energy input.
+
+Lamps can emit both visible and non-visible radiation.
+But (most) people don't buy lamps for their ability to emit non-visible radiation.
+They buy lamps for the energy service they provide: light!
+Lighting efficacy is the ratio of visible light output 
+(the energy service, measured in lumens) 
+to energy input (measured in W).
+A 100-W incandescent lamp supplies about 1230~lumens of light 
+for a service efficacy of 12.3~lumens/W.
+A 100-W equivalent LED lamp gives 1200~lumens but consumes only 12~W of electricity,
+for a service efficacy of 100~lumens/W.
+LED lamps are 8 times better than incandescent lamps at providing 
+their energy service, lighting.
+
+The move from energy efficiency to service efficacy can often reveal sustainability opportunities.
+Incandescent and LED lamps have similar energy efficiency, because they  
+emit nearly as much radiative energy as they consume.
+However, most of the radiative energy emitted by an incandescent lamp is in non-visible wavelengths.
+In contrast, most of the radiative energy emitted by an LED lamp is in visible wavelengths.
+The lumen counts only visible light output, so 
+the service efficacy (measured in lumens/W) penalizes 
+incandescent lamps for emitting most of their energy in non-visible wavelengths.
+(See \citet{Heun:2020aa} for details.)
+The service efficacy favors LED lamps, because they emit most of their energy in visible wavelengths.
+While an energy efficiency metric would say that incandescent and LED lamps are similarly efficient, 
+the lumen/W service efficacy metric correctly suggests 
+that LED lamps are far superior to incandescent lamps
+for the task of providing light.
+When available, service efficacies are preferred over energy efficiencies, 
+because they can point toward sustainability benefits.
+
+\end{mcframe}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -754,8 +789,7 @@ the increase in number of new homes
 indicates that energy consumption in the housing stock of the U.S.\ is unlikely 
 to fall in the near future. 
 Every new home adds to the energy consumed by homes in the U.S.
-I.e., efficiency gains on a per-household basis
-will be overtaken by the sheer number of new homes.
+I.e., efficiency gains will be overtaken by the sheer number of new homes.
 
 
 %..............................
@@ -766,7 +800,7 @@ Figure~\ref{fig:urbanization} shows the percentage of world population
 living in urban areas.
 The transition to urban living is proceeding quickly.
 Industrialization brings people to cities in search of employment.
-The household location transition is happening.
+The location transition is happening.
 The only question is whether that transition 
 will be managed in a sustainable direction.
 
@@ -888,7 +922,7 @@ use natural light to reduce the need for artificial indoor lighting.
 
 This chapter identified many sustainability challenges that pertain to households
 and decisions made by ordinary people in their homes and apartments.
-Energy and material consumption decisions by household residents
+Energy and material consumption decisions by household members
 drives sustainability in the home. 
 Key areas of decision making include
 size and location, 
@@ -985,7 +1019,7 @@ United States, 1999: \\
       Do you think that dwellings that increase either of these metrics should 
       be incentivized? Why or why not? What are your reasons?
       
-\item Externalities are costs born by those who do not receive the benefits of
+\item Externalities are costs borne by those who do not receive the benefits of
       an activity. For example, burning natural gas to heat a home releases CO$_2$
       (which harms everyone) and reduces the store of natural resources for future
       generations. Improving a home's energy efficiency, by reducing these externalized
@@ -1006,11 +1040,11 @@ United States, 1999: \\
       Why?
       What would it take for you to change your behavior?
       
-\item Notice that biomass heating (that is, wood) does not appear in 
+\item Notice that biomass heating (i.e., wood) does not appear in 
       Figure~\ref{fig:AverageHouseholdEnergyConsumption}. However, 
       RECS Table CE 7.2 reports that wood heated 12.5 million housing units in
       2015 (10.6\% of all housing units) and was 5.6\% of all BTUs used for
-      household heating. 
+      heating. 
       (For around 60\% of housing units wood is the main source of heat;
       for the other 40\% it's secondary.)
       % Pre-1950s houses are most likely to use wood heat.
@@ -1033,10 +1067,10 @@ United States, 1999: \\
 \item This chapter discussed energy efficiency measures for many of the categories
       featured in Figure \ref{fig:average_residential_energy}, such as AFUE, SEER
       rating, and Energy Star labels. 
-      However, some categories of household appliances do not have an efficiency rating. 
+      However, some categories of appliances do not have an efficiency rating. 
       What are some appliances that \emph{could} be rated that are not?
       (See, for instance, \url{https://www.energystar.gov/productfinder/}.)
-      Household vacuum cleaners, for example, are difficult to rate, in part, because defining 
+      Vacuum cleaners, for example, are difficult to rate, in part, because defining 
       how \emph{well} they do their job (that is, the ``numerator'' of an efficacy
       metric) is difficult.
       (See the Energy Star \emph{Market and Industry Scoping Report
@@ -1056,11 +1090,11 @@ United States, 1999: \\
       is to eat every meal at a restaurant. Think of all energy you will save!
       No need for freezers, refrigeration, cooking, or dish washing. 
       Figure~\ref{fig:average_residential_energy} shows these categories
-      are 10.4\% of the energy use of an average household.
+      are 10.4\% of the energy use by an average household.
       What is wrong with this analysis?
       Under what circumstances could it be correct?
       Are there opportunities to improve sustainability by outsourcing other 
-      household tasks like laundry, or house cleaning? If so, what are they?
+      common tasks like laundry, or house cleaning? If so, what are they?
 
 \end{questions}
 
@@ -1103,6 +1137,7 @@ United States, 1999: \\
       write a letter to yourself that describes
       the future household in which you want to live.
       What is the size of the dwelling?
+      How many people will live in it?
       What are its sustainability features?
 
 \item Investigate energy retrofitting and recomissioning for buildings.
@@ -1111,7 +1146,7 @@ United States, 1999: \\
       What would be the effect on household emissions if every home in the U.S.\
       were retrofitted with higher-efficiency appliances and more insulation?
       
-\item With reference to question Q\ref{chap:households}.\ref{question:household_policies},
+\item With reference to Q7.\ref{question:household_policies},
       make a sustainability-related benefits/drawbacks ledger for each policy, 
       being sure to identify areas where sustainability would be enhanced and 
       places where sustainability would be diminished.
@@ -1134,7 +1169,7 @@ United States, 1999: \\
       Would they be less energy efficient than smaller domestic washers and dryers?
       Many people will need to drive to laundromats to do laundry, increasing transport-related
       CO$_2$ emissions.
-      Finally, households would no longer purchase washers and dryers, thereby saving money. 
+      Finally, washers and dryers would no longer be purchased, thereby saving money. 
       But the marginal cost of a load of laundry may be higher at a laundromat compared 
       to home-based laundry. 
       Is it a long-term financial benefit to do all your laundry at a laundromat? 
@@ -1151,6 +1186,18 @@ United States, 1999: \\
       Measure your sink's flow rate and time yourself washing a variety of types of dishes.
       What is your break-even point?
       What is your break-even point for buying a new dishwasher?
+      
+\item Find all the incandescent and compact fluorescent lamps in your dwelling, and 
+      consider changing to LEDs.
+      Be sure to choose LEDs with similar lumen output so there will be minimal change
+      in lighting service provided.
+      What is the cost to purchase and install the new lamps.
+      How much energy will be saved annually?
+      How much CO$_2$ emissions will be saved annually?
+      How much energy cost will be saved annually?
+      What is the expected economic payback time?
+      Should you replace your lamps?
+      Why or why not?
       
 \end{projects}
 
