@@ -869,7 +869,7 @@ The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 % @
 
 
-<<EnergyIntensityGraph-Nordhaus, fig.cap="Primary energy intensity of economic activity $I_{Ep}$, the prime example for $R$ in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<EnergyIntensityGraph-Nordhaus, fig.cap="Primary energy intensity of economic activity $I_{Ep}$, the prime example for $R$ in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
 # Create data for the energy intensity of the economy.
 energy_intensity <- dplyr::inner_join(
   # Get the primary energy data
@@ -966,6 +966,7 @@ The cumulative production of a limited resource follows a logistic curve,
 with an inflection point (from concave upward to concave downward)
 at the production peak
 and leveling toward the end.
+(See Figure~\ref{fig:UK_coal_logistic}.)
 
 <<UK_coal_logistic, fig.cap="UK coal logistic curve. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv}, 1829--2009; own calculations, 2010--2020.">>=
 uk_coal_extraction %>%
