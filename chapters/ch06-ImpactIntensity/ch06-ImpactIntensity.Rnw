@@ -842,7 +842,8 @@ are not independent.
 The relationship between energy consumption and GDP
 exposes another interaction among the IPARX terms
 for the primary example of energy consumption and CO$_2$ emissions.
-Historically, as GDP (equal to $P \times A$) increases, primary energy also rises,
+Historically, as GDP (equal to $P \times A$ in Equation~\ref{eq:IPARX}) increases, 
+primary energy consumption also rises,
 as shown in Figure~\ref{fig:E_vs_GDP_graph}.
 
 <<E_vs_GDP_graph, fig.cap = "World primary energy consumption and world GDP.">>=
@@ -864,10 +865,11 @@ egdp_df %>%
 @
 
 
-Figure~\ref{fig:E_vs_GDP_graph} shows that
-each additional unit of GDP requires incrementally less energy than the one before.
+However, the concave downward nature of Figure~\ref{fig:E_vs_GDP_graph} indicates that
+each additional dollar of GDP requires incrementally less energy consumption
+than the dollar before.
 The line in Figure~\ref{fig:E_vs_GDP_graph} is concave downward because
-the primary energy intensity of the economy ($I_{ep}$)
+the primary energy intensity of the economy ($I_{Ep}$)
 has been decreasing over time,
 as shown in Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 Thus, as GPD ($P \times A$) rises, 
@@ -875,7 +877,70 @@ the primary energy intensity of the economy
 ($R$ in the IPARX equation for the prime example) 
 is expected to fall, 
 as it has been for 220 years.
-(See Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.)
+(Recall from Section~\ref{sec:energy_intensity_of_the_economy}, 
+however, that $R$ is falling over time primarily because
+per-dollar consumption of sustainable biomass is falling over time.
+Ironically, unsustainable per-dollar fossil fuel consumption is more constant 
+than sustainable per-dollar biomass consumption over time.
+See Figure~\ref{fig:per_gdp_material_use}.)
+
+$R$ is a type of economic intensity
+that represents the effectiveness of using energy to make GDP.
+This fact raises an interesting question:
+can we use improved economic effectiveness 
+(decreasing $R$, brought about by rising energy efficiency)
+to reduce environmental impacts ($I$ in Equation~\ref{eq:IPARX}, 
+CO$_2$ emissions being the prime example)?
+It certainly helps, as decreasing $R$ puts downward pressure on $I$ in Equation~\ref{eq:IPARX}.
+However, recent research indicates that growing energy efficiency
+(and declining $R$) has never reduced energy consumption or environmental impacts, 
+at least at the worldwide level~\cite{Brockway:2021ww}.
+The rebound effect (Section~\ref{sec:rebound_effect}) is thought to be a strong candidate
+for the reason why efficiency has not led to decreases
+in energy consumption and CO$_2$ emissions over time.
+Indeed, a circular trap exists.
+Energy efficiency is known to stimulate economic growth, and 
+increased economic activity leads to more energy consumption.
+Because of interactions between energy and the economy, 
+it is hard to see how energy efficiency alone 
+leads to reduced energy consumption and CO$_2$ emissions.
+In other words, it is hard to see how efficiency 
+can decouple energy consumption from economic activity.
+So long as energy consumption generates CO$_2$ emissions, 
+it is hard to see how efficiency can decouple environmental impacts
+from economic activity.
+
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+After many years of studying energy-economy interactions and the rebound effect, 
+\citet{Sorrell:2010ul} advanced five controversial propositions:
+%
+\begin{enumerate}
+
+  \item the rebound effects from energy efficiency improvements are significant 
+        and limit the potential for decoupling energy consumption from economic growth; 
+
+  \item the contribution of energy to productivity improvements and economic growth 
+        has been greatly underestimated;
+        
+  \item the pursuit of improved efficiency needs to be complemented by an ethic of sufficiency;
+  
+  \item sustainability is incompatible with continued economic growth in rich countries; and 
+  
+  \item a zero-growth economy is incompatible with a fractional reserve banking system.
+
+\end{enumerate}
+
+\end{mcframe}
+
+As Sorrell's propositions suggest, 
+interactions between energy and the economy are so pervasive that
+a deep rethinking of the structure of society is warranted
+if we are to address, in a meaningful way, 
+the sustainability challenges that we face.
 
 
 %++++++++++++++++++++++++++++++
