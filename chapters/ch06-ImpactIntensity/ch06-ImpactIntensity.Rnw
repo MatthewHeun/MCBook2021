@@ -910,37 +910,15 @@ So long as energy consumption generates CO$_2$ emissions,
 it is hard to see how efficiency can decouple environmental impacts
 from economic activity.
 
-
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-\begin{mcframe}[0.90\textwidth](0.85\textwidth)
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-After many years of studying energy-economy interactions and the rebound effect, 
-\citet{Sorrell:2010ul} advanced five controversial propositions:
-%
-\begin{enumerate}
-
-  \item the rebound effects from energy efficiency improvements are significant 
-        and limit the potential for decoupling energy consumption from economic growth; 
-
-  \item the contribution of energy to productivity improvements and economic growth 
-        has been greatly underestimated;
-        
-  \item the pursuit of improved efficiency needs to be complemented by an ethic of sufficiency;
-  
-  \item sustainability is incompatible with continued economic growth in rich countries; and 
-  
-  \item a zero-growth economy is incompatible with a fractional reserve banking system.
-
-\end{enumerate}
-
-\end{mcframe}
-
-As Sorrell's propositions suggest, 
-interactions between energy and the economy are so pervasive that
-a deep rethinking of the structure of society is warranted
-if we are to address, in a meaningful way, 
-the sustainability challenges that we face.
+Economic growth, per-se, is not problematic.
+However, when economic activity requires energy and energy consumption 
+causes CO$_2$ to be emitted,
+economic growth leads to sustainability challenges.
+Reducing the carbon intensity of energy 
+(the prime example for $X$ in Equation~\ref{eq:IPARX})
+is one way to limit the environmental impacts of economic activity.
+Interactions associated with a transition to low-carbon energy supplies
+are the topic of the next section.
 
 
 %++++++++++++++++++++++++++++++
@@ -1190,7 +1168,37 @@ Energy Vault simulation:  \\ \url{https://vimeo.com/335818817}
         for the last 9 years only (2010--2019).
         How are the results similar to or different from the results 
         of Equation~\ref{eq:IPARX_rate_with_numbers}? \label{item:iparx_calcs}
+        
+  \item After many years of studying energy-economy interactions and the rebound effect, 
+        \citet{Sorrell:2010ul} advanced five controversial propositions:
+        % 
+        \begin{enumerate}
 
+          \item the rebound effects from energy efficiency improvements are significant 
+                and limit the potential for decoupling energy consumption from economic growth; 
+
+          \item the contribution of energy to productivity improvements and economic growth 
+                has been greatly underestimated;
+        
+          \item the pursuit of improved efficiency needs to be complemented by an ethic of sufficiency;
+  
+          \item sustainability is incompatible with continued economic growth in rich countries; and 
+  
+          \item a zero-growth economy is incompatible with a fractional reserve banking system.
+
+        \end{enumerate}
+
+        Sorrell's propositions suggest that 
+        interactions between energy and the economy are so pervasive that
+        a deep rethinking of the structure of society is warranted
+        if we are to address, in a meaningful way, 
+        the sustainability challenges that we face.
+        Read Sorrell's paper and write a report that evaluates 
+        the five propositions.
+        Compare and contrast the five propositions with prevailing cultural norms in your society.
+        Assess the necessity, desirability, and feasibility of reconfiguring society 
+        as suggested in the article.
+        
 \end{projects}
 
 
