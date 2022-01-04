@@ -513,12 +513,12 @@ energy service discussed above.
 %++++++++++++++++++++++++++++++
 
 A sustainability challenge emerges
-from home size size.
-Families enjoy the comfort and social status of spacious homes, 
-but large homes consume more energy.
+from dwelling size.
+Families enjoy the comfort and social status of spacious dwellings, 
+but large dwellings consume more energy.
 (See Figure~\ref{fig:EnergyConsAndHomeSize}.)
-A sustainability challenge associated with home sizes is
-``how can we build small homes that are both comfortable and
+A sustainability challenge associated with dwelling size is
+``how can we build small dwellings that are both comfortable and
 confer social status?''
 
 Regarding location, cities are sites of large amounts of energy consumption.
@@ -564,7 +564,7 @@ are needed to replace heat lost in winter and remove heat gained in the summer.
 The effectiveness of roof and wall insulation\index{insulation}
 is quantified by its R-value\index{R-value},
 a measure of the resistance to heat transfer through the insulation material
-quantified in units of hr-ft$^2$-\degF/BTU.
+quantified in units of hr$\cdot$ft$^2\cdot$\degF/BTU.
 Higher R-values mean less heat is transferred.
 Large R-values are achieved with
 thicker insulation constructed from low-thermal-conductivity materials.
@@ -576,12 +576,12 @@ Thus, we see that insulation is subject to diminishing returns in its effectiven
 and there is a practical and economic optimum level of insulation.
 The Energy Star program recommends levels of roof, wall, and
 floor insulation~\cite{U.S.-Department-of-Energy:aa}.
-In Northern US climates, R-values of 49--60 hr-ft$^2$-\degF/BTU are recommended.
+In Northern US climates, R-values of 49--60 hr$\cdot$ft$^2\cdot$\degF/BTU are recommended.
 
 The insulative properties of windows are quantified by the U-factor\index{U-factor},
 which is the inverse of an R-value.
-Typical U-factors for windows are 0.2--1.2 BTU/hr-ft$^2$-\degF.
-(Corresponding window R-values are 5--0.83 hr-ft$^2$-\degF/BTU.)
+Typical U-factors for windows are 0.2--1.2 BTU/hr$\cdot$ft$^2\cdot$\degF.
+(Corresponding window R-values are 5--0.83 hr$\cdot$ft$^2\cdot$\degF/BTU.)
 Lower U values are more insulative.
 Heat gain from solar radiation is quantified by the
 solar heat gain coefficient (SHGC)\index{solar heat gain coefficient},
@@ -659,13 +659,13 @@ is quantified by the
 Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio (SEER)}
 which is
 the ratio of cooling provided (in BTU)
-to electricity consumed (in W-hr) throughout the season.
+to electricity consumed (in W$\cdot$hr) throughout the season.
 Larger SEER values indicate higher efficiency
 and lower operating costs compared to lower-SEER air conditioners.
 
 As of 2015, U.S.\ air conditioners must adhere to regionally dependent efficiency standards.
-In the southwest, a minimum SEER value of 14 BTU/W-hr is required.
-In other parts of the U.S., a minimum SEER value of 13 BTU/W-hr is mandated.
+In the southwest, a minimum SEER value of 14 BTU/W$\cdot$hr is required.
+In other parts of the U.S., a minimum SEER value of 13 BTU/W$\cdot$hr is mandated.
 %**** Find a reference for these SEER numbers. ****
 % See email.
 Higher efficiency is normally associated with higher purchase price.
@@ -687,7 +687,7 @@ Water heaters are binned by size (very small, low, medium, and high) and
 rated within each bin.
 High-efficiency water heaters are more expensive. 
 So a sustainability challenge that emerges from water heating is
-``how can we encourage hoe builders and home owners to install 
+``how can we encourage home builders and home owners to install 
 high-efficiency units, despite high initial cost?''
 
 
@@ -697,18 +697,11 @@ high-efficiency units, despite high initial cost?''
 %++++++++++++++++++++++++++++++
 
 Artificial lighting can be provided by any number of technologies.
-Today, LED lamps use one-eighth the energy of equivalent incandescent lamps.%
-\footnote{
-  A 100-W incandescent lamp gives about 1230~lumens or 12.3~lumens/W.
-  A 100-W equivalent LED lamp gives 1200~lumens and consumes only 12~W of electricity,
-  for an efficacy of 100~lumens/W.
-  The efficacy increase from incandescent to LED lamps is a factor of 8.
-}
-%
+Today, LED lamps use one-eighth the energy of equivalent incandescent lamps.
 In addition, LED lamps can last up to 10 times longer than incandescent lights.
 So operating costs of LED lamps are significantly less than incandescent lamps.
 Indeed, higher efficiency and longer life reduce total cost of ownership
-of LED bulbs by nearly two orders of magnitude
+of LED lamps by nearly two orders of magnitude
 compared to incandescent bulbs.
 
 That said, the purchase price of 
@@ -716,6 +709,47 @@ a high-efficiency lamp is higher than the purchase price of an incandescent lamp
 A sustainability challenge associated with lighting is
 ``how can we encourage home owners to replace incandescent lamps with LED lamps,
 despite higher initial cost?''
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth) \label{page:efficiency_efficacy}
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Lighting is one of many areas where 
+the effectiveness of a device is better described by a service efficacy than an energy efficiency.
+Efficiencies are ratios of energies, typically energy output divided by energy input.
+In contrast, efficacies are ratios of energy service output (not quantified in energy units) to energy input.
+
+Lamps can emit both visible and non-visible radiation.
+But (most) people don't buy lamps for their ability to emit non-visible radiation.
+They buy lamps for the energy service they provide: light!
+Lighting efficacy is the ratio of visible light output 
+(the energy service, measured in lumens) 
+to energy input (measured in W).
+A 100-W incandescent lamp supplies about 1230~lumens of light 
+for a service efficacy of 12.3~lumens/W.
+A 100-W equivalent LED lamp gives 1200~lumens but consumes only 12~W of electricity,
+for a service efficacy of 100~lumens/W.
+LED lamps are 8 times better than incandescent lamps at providing 
+their energy service, lighting.
+
+The move from energy efficiency to service efficacy can often reveal sustainability opportunities.
+Incandescent and LED lamps have similar energy efficiency, because they  
+emit nearly as much radiative energy as they consume.
+However, most of the radiative energy emitted by an incandescent lamp is in non-visible wavelengths.
+In contrast, most of the radiative energy emitted by an LED lamp is in visible wavelengths.
+The lumen counts only visible light output, so 
+the service efficacy (measured in lumens/W) penalizes 
+incandescent lamps for emitting most of their energy in non-visible wavelengths.
+(See \citet{Heun:2020aa} for details.)
+The service efficacy favors LED lamps, because they emit most of their energy in visible wavelengths.
+While an energy efficiency metric would say that incandescent and LED lamps are similarly efficient, 
+the lumen/W service efficacy metric correctly suggests 
+that LED lamps are far superior to incandescent lamps
+for the task of providing light.
+When available, service efficacies are preferred over energy efficiencies, 
+because they can point toward sustainability benefits.
+
+\end{mcframe}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -985,7 +1019,7 @@ United States, 1999: \\
       Do you think that dwellings that increase either of these metrics should 
       be incentivized? Why or why not? What are your reasons?
       
-\item Externalities are costs born by those who do not receive the benefits of
+\item Externalities are costs borne by those who do not receive the benefits of
       an activity. For example, burning natural gas to heat a home releases CO$_2$
       (which harms everyone) and reduces the store of natural resources for future
       generations. Improving a home's energy efficiency, by reducing these externalized
@@ -1006,7 +1040,7 @@ United States, 1999: \\
       Why?
       What would it take for you to change your behavior?
       
-\item Notice that biomass heating (that is, wood) does not appear in 
+\item Notice that biomass heating (i.e., wood) does not appear in 
       Figure~\ref{fig:AverageHouseholdEnergyConsumption}. However, 
       RECS Table CE 7.2 reports that wood heated 12.5 million housing units in
       2015 (10.6\% of all housing units) and was 5.6\% of all BTUs used for
@@ -1112,7 +1146,7 @@ United States, 1999: \\
       What would be the effect on household emissions if every home in the U.S.\
       were retrofitted with higher-efficiency appliances and more insulation?
       
-\item With reference to Q\ref{chap:households}.\ref{question:household_policies},
+\item With reference to Q7.\ref{question:household_policies},
       make a sustainability-related benefits/drawbacks ledger for each policy, 
       being sure to identify areas where sustainability would be enhanced and 
       places where sustainability would be diminished.
@@ -1152,6 +1186,18 @@ United States, 1999: \\
       Measure your sink's flow rate and time yourself washing a variety of types of dishes.
       What is your break-even point?
       What is your break-even point for buying a new dishwasher?
+      
+\item Find all the incandescent and compact fluorescent lamps in your dwelling, and 
+      consider changing to LEDs.
+      Be sure to choose LEDs with similar lumen output so there will be minimal change
+      in lighting service provided.
+      What is the cost to purchase and install the new lamps.
+      How much energy will be saved annually?
+      How much CO$_2$ emissions will be saved annually?
+      How much energy cost will be saved annually?
+      What is the expected economic payback time?
+      Should you replace your lamps?
+      Why or why not?
       
 \end{projects}
 
