@@ -577,7 +577,7 @@ Farming can (and has had) impacts on biodiversity and habitat loss.
 
 Figure~\ref{fig:food_and_ag_material_flow} shows a Sankey diagram\index{Sankey diagram!agriculture}
 of material flows
-in the U.S.\ agriculture system~\citep[Fig.~1]{Heller_2000}.
+in the U.S.\ agriculture system~\citep[Fig.~1]{Heller:2000wg}.
 Several observations can be made.
 
 <<ag_sys_calcs, echo = FALSE>>= 
