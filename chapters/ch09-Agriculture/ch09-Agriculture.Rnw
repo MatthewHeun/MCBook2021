@@ -496,86 +496,82 @@ Farming can (and has had) impacts on biodiversity and habitat loss.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.75\linewidth]{chapters/ch09-Agriculture/figures/Material_Flow_in_the_US_Food_System(1995_Flows_in_Million_Pounds).pdf}
-\caption[Material flow in the U.S.\ food system (1995, flows in million pounds.)]{Material flow in the U.S.\ food system (1995). Flows in million pounds. \emph{Source}: \citet[Fig.~1]{Heller_2000}.}
-\label{fig:food_and_ag_material_flow_old}
+\includegraphics[width=\linewidth]{chapters/ch09-Agriculture/figures/Material_Flow_in_the_US_Food_System(1995_Flows_in_Million_Pounds).pdf}
+\caption[Material flow in the U.S.\ food system (1995, flows in million pounds.)]{Material flow in the U.S.\ food system (1995). Flows in million pounds. \emph{Source}: \citet[Figure~3]{Heller:2000wg}.}
+\label{fig:food_and_ag_material_flow}
 \end{figure}
+
+% Here is an attempt using ggsankey
 
 % 
 % <<food_and_ag_material_flow, fig.cap = "U.S.\\ agriculture Sankey diagram.">>=
 % ag_sankey_data <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Ag Sankey.xlsx"),
-%                                      sheet = "data to plot") %>% 
-%   dplyr::mutate(
-%     node = factor(node, levels = c("Cultivated fields", 
-%                                    "Grains", "Soybeans", "Fruits", "Sugarbeets", "Vegetables", "Other oilseeds",
-%                                    "Available crops",
-%                                    "Stored grains & soybeans",
-%                                    "Storage"))
-%   )
+%                                      sheet = "data to plot")
 % 
-% ag_sankey_data %>% 
-%   ggplot2::ggplot(mapping = ggplot2::aes(x = x, next_x = next_x, node = node, next_node = next_node, value = value, 
-%                                          fill = node, label = node)) +
-%   ggsankey::geom_sankey(flow.alpha = 0.5, node.color = "gray30") + 
+% ag_sankey_data %>%
+%   ggplot2::ggplot(mapping = ggplot2::aes(x = x, next_x = next_x, node = node, next_node = next_node, value = value,
+%                                          fill = factor(node), label = node)) +
+%   ggsankey::geom_sankey(flow.alpha = 0.5, node.color = "gray30") +
 %   ggsankey::geom_sankey_label(size = 2, color = "white", fill = "gray40", show.legend = FALSE) +
-%   
-%   ggplot2::labs(x = ggplot2::element_blank(), 
-%                 y = ggplot2::element_blank(), 
+% 
+%   ggplot2::labs(x = ggplot2::element_blank(),
+%                 y = ggplot2::element_blank(),
 %                 fill = ggplot2::element_blank()) +
-%   
+% 
 %   ggplot2::scale_fill_viridis_d(direction = -1) +
 % 
-%   MKHthemes::xy_theme() + 
-%   ggplot2::theme(legend.position = "none", 
-%                  axis.text.x = ggplot2::element_blank(), 
-%                  axis.text.y = ggplot2::element_blank(), 
+%   MKHthemes::xy_theme() +
+%   ggplot2::theme(legend.position = "none",
+%                  axis.text.x = ggplot2::element_blank(),
+%                  axis.text.y = ggplot2::element_blank(),
 %                  axis.ticks = ggplot2::element_blank())
 % @
+% 
+% 
 
+% This was another attempt, using newtorkD3
 
-<<food_and_ag_material_flow_d3, fig.cap="Material flow in the U.S.\\ food system (1995). Flows in million pounds. \\emph{Source}: \\citet[Figure~3]{Heller:2000wg}.">>=
-ag_sankey_nodes <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Ag Sankey.xlsx"),
-                                      sheet = "data to plot d3 nodes") %>%
-  as.data.frame()
-ag_sankey_links <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Ag Sankey.xlsx"),
-                                      sheet = "data to plot d3 links") %>%
-  dplyr::left_join(ag_sankey_nodes, by = c("source_char" = "name")) %>%
-  dplyr::rename(
-    source_id = node_id,
-    source_group = node_group
-  ) %>%
-  dplyr::left_join(ag_sankey_nodes, by = c("target_char" = "name")) %>%
-  dplyr::rename(
-    target_id = node_id,
-    target_group = node_group
-  ) %>%
-  dplyr::mutate(
-    source_char = NULL,
-    source_group = NULL,
-    target_char = NULL,
-    target_group = NULL
-  ) %>%
-  as.data.frame()
-
-cols <- viridis::viridis(n = ag_sankey_links$link_group %>% unique() %>% length(), direction = -1)
-
-my_color <- 'd3.scaleOrdinal() 
-             .domain(["Storage", "cultivated_fields", "Exports", "Imports", "uncultivated_fields"]) 
-             .range( ["FDE725",  "5DC863",            "21908C",  "3B528B", "440154"])'
-
-networkD3::sankeyNetwork(Links = ag_sankey_links, Nodes = ag_sankey_nodes,
-                         Source = "source_id", Target = "target_id",
-                         Value = "value", NodeID = "name",
-                         NodeGroup = NULL, LinkGroup = "link_group", 
-                         fontFamily = "sans-serif", fontSize = 5,
-                         iterations = 0, nodeWidth = 3, nodePadding = 0, 
-                         units = "million pounds", 
-                         colourScale = my_color, sinksRight = FALSE)
-@
-
-
-
-
+% 
+% <<food_and_ag_material_flow_d3, fig.cap="Material flow in the U.S.\\ food system (1995). Flows in million pounds. \\emph{Source}: \\citet[Figure~3]{Heller:2000wg}.">>=
+% ag_sankey_nodes <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Ag Sankey.xlsx"),
+%                                       sheet = "data to plot d3 nodes") %>%
+%   as.data.frame()
+% ag_sankey_links <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Ag Sankey.xlsx"),
+%                                       sheet = "data to plot d3 links") %>%
+%   dplyr::left_join(ag_sankey_nodes, by = c("source_char" = "name")) %>%
+%   dplyr::rename(
+%     source_id = node_id,
+%     source_group = node_group
+%   ) %>%
+%   dplyr::left_join(ag_sankey_nodes, by = c("target_char" = "name")) %>%
+%   dplyr::rename(
+%     target_id = node_id,
+%     target_group = node_group
+%   ) %>%
+%   dplyr::mutate(
+%     source_char = NULL,
+%     source_group = NULL,
+%     target_char = NULL,
+%     target_group = NULL
+%   ) %>%
+%   as.data.frame()
+% 
+% cols <- viridis::viridis(n = ag_sankey_links$link_group %>% unique() %>% length(), direction = -1)
+% 
+% my_color <- 'd3.scaleOrdinal() 
+%              .domain(["Storage", "cultivated_fields", "Exports", "Imports", "uncultivated_fields"]) 
+%              .range( ["FDE725",  "5DC863",            "21908C",  "3B528B", "440154"])'
+% 
+% networkD3::sankeyNetwork(Links = ag_sankey_links, Nodes = ag_sankey_nodes,
+%                          Source = "source_id", Target = "target_id",
+%                          Value = "value", NodeID = "name",
+%                          NodeGroup = NULL, LinkGroup = "link_group", 
+%                          fontFamily = "sans-serif", fontSize = 5,
+%                          iterations = 0, nodeWidth = 3, nodePadding = 0, 
+%                          units = "million pounds", 
+%                          colourScale = my_color, sinksRight = FALSE)
+% @
+% 
 
 
 
