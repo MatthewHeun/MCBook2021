@@ -46,7 +46,8 @@ everyone who lives in (or works from)
 a house or apartment 
 makes decisions with sustainability implications
 in their own household.
-Indeed, households are the site for food, water, material, and energy demands.
+Indeed, households are the site for decisions about consumption of 
+food, water, material, and energy.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -67,11 +68,11 @@ Sustainability transitions related to households round out the chapter.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Demand for energy in households}
+\section{Demand for energy in dwellings}
 \label{sec:energy_demand_households}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Households are important for sustainability, 
+Dwellings are important for sustainability, 
 in part because they are sites of energy consumption.
 For example, Figure~\ref{fig:LLNL_energy_sankey} shows that 
 11.9~quad of energy were consumed in U.S.\ residences in 2018,
@@ -80,11 +81,11 @@ Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
 from the U.S.\ residential sector in 2018 total 
 \Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Mt/year,
 predominantly from electricity and natural gas.\index{electricity!consumption!households}
-Energy consumption in households is a source of sustainability impacts
+Energy consumption in dwellings is a source of sustainability impacts
 (CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of} and 
 natural resource extraction\index{natural resources!extraction of})
 far beyond the site of the demand.
-Thus, decisions made in households have sustainability implications
+Thus, decisions made by households have sustainability implications
 far beyond the walls of each abode.
 
 However, per-dwelling energy consumption has been rather flat from the 1970 onward.
@@ -192,12 +193,12 @@ Figure~\ref{fig:average_residential_energy} shows
 proportions of end-use energy consumption\index{energy consumption!residential}
 for the average U.S.\ residence.
 The end uses in Figure~\ref{fig:average_residential_energy}
-can be aggregated to three factors that affect energy demand in households.
+can be aggregated to three factors that affect energy demand by households.
 Space heating and cooling
-comprise 54.4\% of all household energy consumption.
+comprise 54.4\% of all energy consumption in dwellings.
 Hygiene (including water heating and laundry)
-consumes 21.9\% of household energy.
-Lighting constitutes 4.9\% of total household energy use.
+consumes 21.9\% of energy consumption in dwellings.
+Lighting constitutes 4.9\% of total energy use in dwellings.
 A fourth factor, size and location, is also important.
 
 
@@ -456,7 +457,7 @@ causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants.
 \label{sec:hygiene}\index{hygiene}
 %++++++++++++++++++++++++++++++
 
-Households consume significant energy and water
+Dwellings consume significant energy and water
 for showers, dish washers, toilets, and clothes washers and dryers.
 Collectively, these activities may be categorized as ``hygiene.''
 
@@ -497,7 +498,7 @@ of U.S.\ final energy consumption in 2015.
 \label{sec:sustainability_challenges_households}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Energy consumption in households is a significant sustainability challenge.
+Energy consumption by households is a significant sustainability challenge.
 If the goal is to provide the same energy services in households
 (space heating and cooling, hygiene, and lighting) 
 with less energy consumption, 
@@ -754,8 +755,7 @@ the increase in number of new homes
 indicates that energy consumption in the housing stock of the U.S.\ is unlikely 
 to fall in the near future. 
 Every new home adds to the energy consumed by homes in the U.S.
-I.e., efficiency gains on a per-household basis
-will be overtaken by the sheer number of new homes.
+I.e., efficiency gains will be overtaken by the sheer number of new homes.
 
 
 %..............................
@@ -766,7 +766,7 @@ Figure~\ref{fig:urbanization} shows the percentage of world population
 living in urban areas.
 The transition to urban living is proceeding quickly.
 Industrialization brings people to cities in search of employment.
-The household location transition is happening.
+The location transition is happening.
 The only question is whether that transition 
 will be managed in a sustainable direction.
 
@@ -888,7 +888,7 @@ use natural light to reduce the need for artificial indoor lighting.
 
 This chapter identified many sustainability challenges that pertain to households
 and decisions made by ordinary people in their homes and apartments.
-Energy and material consumption decisions by household residents
+Energy and material consumption decisions by household members
 drives sustainability in the home. 
 Key areas of decision making include
 size and location, 
@@ -1010,7 +1010,7 @@ United States, 1999: \\
       Figure~\ref{fig:AverageHouseholdEnergyConsumption}. However, 
       RECS Table CE 7.2 reports that wood heated 12.5 million housing units in
       2015 (10.6\% of all housing units) and was 5.6\% of all BTUs used for
-      household heating. 
+      heating. 
       (For around 60\% of housing units wood is the main source of heat;
       for the other 40\% it's secondary.)
       % Pre-1950s houses are most likely to use wood heat.
@@ -1033,10 +1033,10 @@ United States, 1999: \\
 \item This chapter discussed energy efficiency measures for many of the categories
       featured in Figure \ref{fig:average_residential_energy}, such as AFUE, SEER
       rating, and Energy Star labels. 
-      However, some categories of household appliances do not have an efficiency rating. 
+      However, some categories of appliances do not have an efficiency rating. 
       What are some appliances that \emph{could} be rated that are not?
       (See, for instance, \url{https://www.energystar.gov/productfinder/}.)
-      Household vacuum cleaners, for example, are difficult to rate, in part, because defining 
+      Vacuum cleaners, for example, are difficult to rate, in part, because defining 
       how \emph{well} they do their job (that is, the ``numerator'' of an efficacy
       metric) is difficult.
       (See the Energy Star \emph{Market and Industry Scoping Report
@@ -1056,11 +1056,11 @@ United States, 1999: \\
       is to eat every meal at a restaurant. Think of all energy you will save!
       No need for freezers, refrigeration, cooking, or dish washing. 
       Figure~\ref{fig:average_residential_energy} shows these categories
-      are 10.4\% of the energy use of an average household.
+      are 10.4\% of the energy use by an average household.
       What is wrong with this analysis?
       Under what circumstances could it be correct?
       Are there opportunities to improve sustainability by outsourcing other 
-      household tasks like laundry, or house cleaning? If so, what are they?
+      common tasks like laundry, or house cleaning? If so, what are they?
 
 \end{questions}
 
@@ -1103,6 +1103,7 @@ United States, 1999: \\
       write a letter to yourself that describes
       the future household in which you want to live.
       What is the size of the dwelling?
+      How many people will live in it?
       What are its sustainability features?
 
 \item Investigate energy retrofitting and recomissioning for buildings.
@@ -1111,7 +1112,7 @@ United States, 1999: \\
       What would be the effect on household emissions if every home in the U.S.\
       were retrofitted with higher-efficiency appliances and more insulation?
       
-\item With reference to question Q\ref{chap:households}.\ref{question:household_policies},
+\item With reference to Q\ref{chap:households}.\ref{question:household_policies},
       make a sustainability-related benefits/drawbacks ledger for each policy, 
       being sure to identify areas where sustainability would be enhanced and 
       places where sustainability would be diminished.
@@ -1134,7 +1135,7 @@ United States, 1999: \\
       Would they be less energy efficient than smaller domestic washers and dryers?
       Many people will need to drive to laundromats to do laundry, increasing transport-related
       CO$_2$ emissions.
-      Finally, households would no longer purchase washers and dryers, thereby saving money. 
+      Finally, washers and dryers would no longer be purchased, thereby saving money. 
       But the marginal cost of a load of laundry may be higher at a laundromat compared 
       to home-based laundry. 
       Is it a long-term financial benefit to do all your laundry at a laundromat? 
