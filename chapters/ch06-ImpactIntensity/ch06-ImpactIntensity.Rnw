@@ -117,8 +117,8 @@ it follows that the prime example of
 environmental impact intensity of resource extraction and consumption
 ($X$ in Equation~\ref{eq:IPARX}) is CO$_2$ emissions.
 Specifically, the prime example for impact intensity ($X$)
-is the CO$_2$ intensity of energy, $I_{CO_2}$.
-The units for $I_{CO_2}$ are,
+is the CO$_2$ intensity of energy, $X_{CO_2}$.
+The units for $X_{CO_2}$ are,
 for example, tonnes of CO$_2$ emitted per MJ of energy consumed.
 
 Figure~\ref{fig:LLNL_CO2_sankey} is a Sankey\index{Sankey diagram!CO$_2$ emissions} 
@@ -194,7 +194,7 @@ When the world transitioned away from traditional biofuels toward fossil fuels,
 the carbon intensity of energy rose.
 
 
-<<ImpactIntensityGraph, fig.cap="Carbon intensity of energy, $I_{CO_2}$. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
+<<ImpactIntensityGraph, fig.cap="Carbon intensity of energy, $X_{CO_2}$. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 carbon_intensity <- dplyr::inner_join(
   CO2_emissions,
   primary_energy %>%
@@ -224,12 +224,12 @@ Equation~\ref{eq:IPARX} shows that reducing any of the right-hand side terms to 
 will eliminate CO$_2$ emissions.
 That is, if population ($P$), 
 affluence ($A$),
-energy intensity of the economy ($I_{ep}$, the prime example for $R$)
-\emph{or} carbon intensity of energy $I_{CO_2}$ (the prime example for $X$)
+energy intensity of the economy ($R_{Ep}$, the prime example for $R$)
+\emph{or} carbon intensity of energy $X_{CO_2}$ (the prime example for $X$)
 go to zero,
 CO$_2$ emissions will be eliminated.
 Few people want to reduce population ($P$) or affluence ($A$).
-The primary energy intensity of the economy, $I_{ep}$, is declining
+The primary energy intensity of the economy, $R_{Ep}$, is declining
 (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}),
 but not as fast as population (Figure~\ref{fig:PopulationGraph})
 and affluence (Figure~\ref{fig:AffluenceGraph-Nordhaus}) are growing.
@@ -247,7 +247,7 @@ Since 1960, the carbon intensity of energy
 has hovered around 63 Mt CO$_2$/EJ.
 Thus, for the last 60 years, the carbon intensity of energy has been stubbornly constant.
 It appears that eliminating CO$_2$ emissions by significantly reducing
-the carbon intensity of energy ($I_{CO_2}$) will require unprecedented changes
+the carbon intensity of energy ($X_{CO_2}$) will require unprecedented changes
 to the world's primary supply.
 But how?
 
