@@ -69,8 +69,9 @@ However, each of these suffers from its own limitations.%, philosophical, method
 The biggest limitation is standardization and availability of data.
 GDP is what we have the most data for and, consequently,
 it is the affluence indicator ``everyone'' uses.
-I.e., GDP is the \emph{de facto} standard.
+Effectively, GDP is the standard.
 % put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
+
 Consistent and easily accessible GDP data can allow us to make observations
 about trends, which are \emph{qualitatively} consistent with trends we would observe
 using other indices, bearing in mind the limitations of what GDP measures and what it doesn't.
@@ -437,24 +438,24 @@ The greater use of resources is caused by affluence growth,
 driven, in part, by improvements in material (Figure~\ref{fig:per_gdp_material_use})
 and energy (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) efficiency 
 (that is, ``innovation,'' as defined above).
-****
-MKH to check, especially for efficiency vs. efficacy (see also the paragraphs above) -- JVA
-****
+% ****
+% MKH to check, especially for efficiency vs. efficacy (see also the paragraphs above) -- JVA
+% ****
 Managing the ``rebound effect,'' which occurs when improvements in efficiency result in
 greater total consumption, is a major sustainability challenge;
 see Section~\ref{sec:rebound_effect}.
-
-*****
-Would it be possible to also talk about economic contraction here? 
-Would be nice to discuss HOW economies contract and the pain it brings.
-But can also reference Figure~\ref{fig:CarbonEmissionsGraph}
-to reinforce the point that recessions reduce environmental impact.
-Talking about contraction then opens the door to discuss economic level.
-We have a choice about the economic level at which we operate.
----MKH 
-
-Check the new paragraph below --- JVA
-*****
+% 
+% *****
+% Would it be possible to also talk about economic contraction here? 
+% Would be nice to discuss HOW economies contract and the pain it brings.
+% But can also reference Figure~\ref{fig:CarbonEmissionsGraph}
+% to reinforce the point that recessions reduce environmental impact.
+% Talking about contraction then opens the door to discuss economic level.
+% We have a choice about the economic level at which we operate.
+% ---MKH 
+% 
+% Check the new paragraph below --- JVA
+% *****
 
 Economies can grow (particularly when we try to make them grow) but they can also
 shrink.
@@ -465,12 +466,16 @@ If affluence $A$ is a cause of impacts $I$, then reducing $A$ is one way to redu
 $I$, as Figure~\ref{fig:CarbonEmissionsGraph} shows for CO$_2$ emissions.
 However, recessions are unwelcome for many very good reasons. 
 No country has yet intentionally tried to shrink its economy.
+
 Moreover, the environmental effects of recessions are not always positive,
-that is, sometimes reducing $A$ \emph{increases} (parts of) $I$.
-For instance, a company that goes out of business \emph{might} leave behind a source
-of environmental contamination with no one left responsible for managing it.
+that is, sometimes reducing $A$ \emph{increases} (at least some parts of) $I$.
+For instance, a company going out of business might cause 
+environmental contamination because there no longer exists a responsible steward for 
+potentially hazardous materials or equipment.
 The U.S.\ has hundreds of thousands of leaking underground gasoline storage tanks
 from gas stations that have gone out of business~\cite{brownfields}.
+Similar stories can be told for former industrial sites, mines, and oil and gas wells.
+
 What if there were a way or way(s) to reduce the size of the economy that did not
 generate the negative effects of a recession?
 The next section examines some ideas that have been proposed as alternatives
@@ -493,11 +498,6 @@ exceed exceed the ecosystem's ability to absorb wastes.
 Eventually, economic growth will exceed a tipping point where the
 ecosystem is no longer able to provide its services to the economy, as 
 discussed in Chapter~\ref{chap:planetary_boundaries}.
-****
-I edited the above sentence, but may be it is too strong?
-Maybe ``no longer able to provide'' needs to be softened?
----MKH
-****
 
 In response, there are calls for transitioning world economies 
 to new operating regimes, different from growth. 
@@ -513,24 +513,18 @@ economies.
 \paragraph{Steady state} 
 %..............................
 
-****
-Should we mention Herman Daly here? 
-See \url{https://en.wikipedia.org/wiki/Steady-state_economy} 
----MKH
-****
-
-A steady state economy\index{economy!steady-state} is one that neither grows nor shrinks.
+A steady-state economy\index{economy!steady-state} is one that neither grows nor shrinks.
 Its size (measured in \$/year) stays the same through time.
 A steady-state economy would experience no change in the standard of living from 
 one generation to the next,
-as was the case in the ancient and medieval worlds.
+as was (nearly) the case in the ancient and medieval worlds.
 
-A steady state economy is not inherently sustainable.
+A steady-state economy is not inherently sustainable.
 In fact, the sustainability of an economy is not determined by its growth rate
 (usually measured in \%/year). 
 Rather, the sustainability of an economy is determined by its \emph{level} or \emph{size}
 (usually measured in \$/year). 
-If the steady state level of the economy 
+If the steady-state level of the economy 
 is above a sustainable threshold
 (if planetary limits have been exceeded), 
 the economy is unsustainable, regardless of whether it is growing (positive \%/year), 
@@ -546,12 +540,6 @@ toward becoming sustainable.
 A transition to steady state means that 
 those economies will not grow to be \emph{more} unsustainable each year. 
 
-****
-There are plenty of references we can add to steady state economy thinking here or in further reading.
----MKH
-****
-
-
 %..............................
 \paragraph{Degrowth} \index{degrowth}
 %..............................
@@ -559,7 +547,7 @@ There are plenty of references we can add to steady state economy thinking here 
 In contrast to the steady-state economy, 
 degrowth advocates embrace the fact that many economies need to become smaller
 to becoming sustainable.
-There are substantial social and political pressures against de-growth.
+There are substantial social and political pressures against degrowth.
 And for good reason!
 Degrowth implies a reduction in the standard of living.
 Although Figure~\ref{fig:FootprintHDIGraph} implies a lower standard of living
@@ -572,44 +560,57 @@ there has been no political will or action to make
 such a transition in the amount of time it would take to avoid a climate
 crisis.
 
-****
-There are plenty of references we can add to degrowth thinking here or in further reading.
----MKH
-****
-
-
-
 %..............................
 \paragraph{Circular economy} \index{economy!circular}
 %..............................
 
 Another alternative to today's growth economies
 is a \emph{circular} economy\index{economy!circular}, 
-which (a)~consumes only on recycled (and, perhaps, renewable) materials and energy
+which (a)~consumes only recycled (and, perhaps, renewable) materials and energy
 and (b)~emits no waste. 
 A circular economy is impossible to achieve completely.
 Materials cannot be 100\% recycled and, for many materials, the recycling process
 degrades material properties. 
 The biggest flaw in a circular economy is that it requires continual energy input,
-in part because recycling of materials requires energy;
-see Section~\ref{sec:recycling}.
+in part because recycling of materials requires energy
+(see Section~\ref{sec:recycling}).
 Lastly, it is not clear that a circular economy can be \emph{economically} sustainable.
 
 That said, the circular economy provides a helpful model to strive toward.
 Achieving circular economies will bring us much closer to sustainability.
 
-****
-There are plenty of references we can add to circular economy thinking here or in further reading.
----MKH
-****
-
-
 %..............................
 \paragraph{Doughnut economy} \index{economy!doughnut}
 %..............................
 
-**** JVA to add material here. ****
+A doughnut economy is a name for attempting to keep the size of economic activity
+within planetary boundaries (represented by an outer circle) while simultaneously
+attempting to lift people out of poverty (represented by an inner circle).
+The space between the two circles is the doughnut and is the ``safe operating 
+space'' for humanity. 
+The outer circle is a form of steady-state economy (perhaps changing as technology
+changes).
+However, one criticism of a steady-state economy is that (some) people could be left
+poor and destitute. 
+The doughnut economy thus attempts to impose both a ``floor'' and a ``ceiling'' 
+on economic activity and tries respect planetary boundaries by equalizing income 
+disparity between rich and poor.
 
+While a doughnut economy might sound good in theory, there would be many conceptual and
+operational difficulties in implementation. 
+To one degree or another these are difficulties shared with the steady-state,
+degrowth, and circular economy models.
+First, tying economic level(s) to particular planetary boundaries might not be
+straightforward, particularly since we don't know with certainty exactly what those 
+boundaries are in some cases.
+Probably, a better approach is to address, for example, CO$_2$ emissions directly.
+Second, there are not successful templates for degrowth to the outside of the doughnut
+(if necessary) and then managing distribution of affluence within the doughnut.
+Relatedly, who sets the ``floor'' and the time period for transition?
+Third, the doughnut model implicitly sets up a ``people-versus-planet'' dichotomy
+and then attempts to maximize the ``people'' part of the equation 
+(to the extent permitted by the ``planet'' part of the equation).
+Might it be possible to have flourishing for people \emph{and} planet?
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -624,33 +625,18 @@ Or do we desire
 (3)~Love and belonging?
 (4)~The esteem or family, friends, and others?
 (5)~Some form of self-actualization?
-Maslow (ref here) put forward the above hierarchy of needs, 
-which can frame the question of ``what do we really want?''
+The above hierarchy of needs~\cite{Maslow1954}, 
+can frame the question of ``what do we really want?''
 
 The recent work of Lina Brand-Correa, Julia Steinberger, and others
 frame the question of ``what do we want from life'' in energy terms~\cite{Brand-Correa:2017aa}.
-They search for ways to decouple satisfaction of human needs from energy services, energy consumption, and 
-CO$_2$ emissions.
+They search for ways to decouple satisfaction of human needs from 
+energy services, energy consumption, and CO$_2$ emissions.
 
 \end{mcframe}
 
-
-When we look at things through the economic lens, Figure \ref{fig:FootprintHDIGraph}
-suggests the only way to live sustainably is poverty. 
-The next two chapters will examine this dilemma in more detail.
-**** 
-Do we really fulfill this promise?
----MKH 
-****
-Perhaps, as we hope, there is a way to enjoy a high standard of living \emph{and}
-be sustainable.
-****
-Not sure where this depressing paragraph belongs.
-Is it meant to be a transition from macro and average affluence ($A$)?
-If so, that transition could be signaled better.
----MKH
-****
-
+Despite the limitations mentioned above, alternative economic models suggest 
+helpful ways of thinking about affluence from a sustainability perspective.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Individual affluence}
@@ -658,20 +644,20 @@ If so, that transition could be signaled better.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Human wants are limitless. 
-****
-Is this true for everyone? 
-for Western society?
-What about monks?
-What about pastoral societies?
-Maybe qualify with ``For most people?''
----MKH
-****
+% ****
+% Is this true for everyone? 
+% for Western society?
+% What about monks?
+% What about pastoral societies?
+% Maybe qualify with ``For most people?''
+% ---MKH
+% ****
 However much we have, we always want more. 
 Note that we aren't necessarily happier when the desire for more is fulfilled. 
 Conversely, although happiness \emph{can} be found in the midst of financial hardship or poverty, 
 most people don't wish to go through financial trouble to achieve happiness.
 Any reduction in affluence % or choice 
-runs counter to what people want.
+runs counter to what people want (or say they want).
 
 % Human wants extend to choices and control, too. 
 % We want to be able to choose what (and how much) we consume and to control
@@ -683,42 +669,49 @@ runs counter to what people want.
 % ---MKH
 % ****
 
-Immediately, we can see a challenge with attempting to reduce impacts ($I$) by
-reducing affluence ($A$)---doing so will make people less well off. 
-****
-``less well-off'' is carrying a lot of weight here.
-If you mean ``have less income,'' you introduced a tautology.
-If you mean ``have less wealth,'' you may be confusing income and wealth.
-Do you mean ``less happy''? ``be able to satisfy fewer human needs''?
-``provide less human well-being?''
-Probably better to be more specific here. 
----MKH
-****
+% Immediately, we can see a challenge with attempting to reduce impacts ($I$) by
+% reducing affluence ($A$)---doing so will make people less well off. 
+% ****
+% ``less well-off'' is carrying a lot of weight here.
+% If you mean ``have less income,'' you introduced a tautology.
+% If you mean ``have less wealth,'' you may be confusing income and wealth.
+% Do you mean ``less happy''? ``be able to satisfy fewer human needs''?
+% ``provide less human well-being?''
+% Probably better to be more specific here. 
+% ---MKH
+% ****
 Many proposals for becoming more sustainable are effectively reductions of
 affluence. 
 Poverty is a hard sell on an individual level; no one wants it for themselves.
-(Note that an abstract desire to have lower impacts is not the same as wanting 
-to be poor.)
-Lower levels of affluence are associated with lower HDI, as Figure 
-\ref{fig:FootprintHDIGraph} shows. 
-(Income is a factor in HDI.)
+(An abstract desire to have lower impacts is not the same as wanting to be poor.)
+Lower levels of affluence are associated with lower HDI, as 
+Figure~\ref{fig:FootprintHDIGraph} shows (because income is a factor in HDI).
 
 Some people \emph{have} chosen (relative) poverty by trying to escape the economic
-system; see P4.\ref{project:off-grid} for examples.
+system; see P4.\ref{project:off-grid} for a few examples.
 Often, for these people, independence or being ``off grid'' is the main attraction.
 However, even for these people, there is no escaping a relationship to the rest of
 humanity.
 There is always some participation in the broader economy,
 so there is no escaping the sustainability implications of economic activity.
 
+% ****
+% I think this chapter needs a sumamry.
+% ---MKH
+% ****
+When we look at sustainability through the economic lens, Figure \ref{fig:FootprintHDIGraph}
+suggests the only way to live sustainably is poverty. 
 This chapter's end-of-chapter questions further explore of the thorny issues 
 of attempting to lower impacts by lowering affluence.
-
-
-****
-I think this chapter needs a sumamry.
----MKH
-****
+The next two chapters will examine poverty/sustainability dilemma in more detail.
+Perhaps, as we hope, there is a way to enjoy a high standard of living \emph{and}
+be sustainable.
+% ****
+% Not sure where this depressing paragraph belongs.
+% Is it meant to be a transition from macro and average affluence ($A$)?
+% If so, that transition could be signaled better.
+% ---MKH
+% ****
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
