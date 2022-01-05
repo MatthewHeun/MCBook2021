@@ -85,7 +85,8 @@ knitr::opts_chunk$set(echo=FALSE,
                       fig.width = 6,    # inches
                       fig.height = 3.5, # inches
                       fig.align = "center", 
-                      fig.pos = "t")
+                      fig.pos = "t", 
+                      eval.after = "fig.cap")
 
 library(dplyr)             # For manipulating data
 library(ggplot2)           # For graphing functions
@@ -120,6 +121,7 @@ add_circ <- function(.plot, r, xc, yc, fill = NA, n_segs = 100){
 <<r_colours, echo = FALSE>>=
 # These color definitions come from the file morgan2.sty.
 mc_title_blue <- "#0d5e92"
+curve_fit_colour <- "red"
 @
 
 
