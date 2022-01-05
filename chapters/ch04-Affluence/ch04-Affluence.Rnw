@@ -435,73 +435,199 @@ Figures~\ref{fig:per_capita_material_use} and~\ref{fig:EnergyPerPersonGraph},
 economic growth, measured by GDP per capita---primarily driven by improvements
 in material and energy efficiency (that is, ``innovation'')---results not in 
 less consumption but more.
-**** The preceding sentence could use a rework. 
+****
+The preceding sentence could use a rework. 
 It is rather complicated. ---MKH
 ****
-Managing the ``rebound effect,'' which is when improvements in efficiency result in
+Managing the ``rebound effect,'' which occurs when improvements in efficiency result in
 greater total consumption, is a major sustainability challenge.
+(See Section~\ref{sec:rebound_effect}.)
 
-***** Would it be possible to also talk about economic contraction here? ---MKH *****
-
+*****
+Would it be possible to also talk about economic contraction here? 
+Would be nice to discuss HOW economies contract and the pain it brings.
+But can also reference Figure~\ref{fig:CarbonEmissionsGraph}
+to reinforce the point that recessions reduce environmental impact.
+Talking about contraction then opens the door to discuss economic level.
+We have a choice about the economic level at which we operate.
+---MKH 
+*****
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Economic level}
+\section{Economic level and alternative economic models}
 \label{sec:circular_economy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-World economies are managed to exhibit continual growth 
-(see Project~P1.\ref{project:alt_exp} for the relationship between continual growth
-and exponential growth).
-As has been mentioned a few times already, continual growth is inherently
+World economies are managed to exhibit continual growth. 
+(See P1.\ref{project:alt_exp} for the relationship between continual growth
+and exponential growth.)
+As mentioned previously, continual growth is inherently
 unsustainable on a finite planet.
-When the economy grows, at some point, it either demands more resources than the 
-environment can provide and/or the wastes generated exceed the ecosystem's 
-ability to absorb.
-That is, eventually economic growth either exceeds the ecosystem's ability to provision
-or the ecosystem's regulating and support services pass a tipping point, as 
+When the economy grows continually it will, at some point,
+either demand more resources than the environment can provide or
+exceed exceed the ecosystem's ability to absorb wastes.
+Eventually, economic growth will exceed a tipping point where the
+ecosystem is no longer able to provide its services to the economy, as 
 discussed in Chapter~\ref{chap:planetary_boundaries}.
+****
+I edited the above sentence, but may be it is too strong?
+Maybe ``no longer able to provide'' needs to be softened?
+---MKH
+****
 
-In light of these facts, there are have been calls for a \emph{zero-growth}, or 
-\emph{steady-state}, economy.
-These proposals address economic growth, that is the changing size of the 
-economy, but they don't address what that size is.
-It is the magnitude of economic activity (that is, the total amount of consumption) 
-that matters for sustainability -- as exemplified in Figure \ref{fig:FootprintHDIGraph},
-which suggests that our current level of economic activity is \emph{already} too large.
+In response, there are calls for transitioning world economies 
+to new operating regimes, different from growth. 
+There are proposals for 
+zero-growth (or steady-state), 
+degrowth (or shrinking),  
+circular, and 
+doughnut
+economies. 
 
-Therefore, some proposals go further and call for \emph{de-growth}, that is, 
-reducing the size of the economy.
-There are substantial social and political pressures against making these changes.
-(And for good reasons!)
-A steady-state economy would imply no change in the standard of living from 
-generation to generation, as was the case for the ancient and medieval world. 
-Degrowth would imply a worsening in the standard of living.
-Although Figure \ref{fig:FootprintHDIGraph} implies a lower standard of living
+
+%..............................
+\paragraph{Steady state} 
+%..............................
+
+****
+Should we mention Herman Daly here? 
+See \url{https://en.wikipedia.org/wiki/Steady-state_economy} 
+---MKH
+****
+
+A steady state economy\index{economy!steady-state} is one that neither grows nor shrinks.
+Its size (measured in \$/year) stays the same through time.
+A steady-state economy would experience no change in the standard of living from 
+one generation to the next,
+as was the case in the ancient and medieval worlds.
+
+A steady state economy is not inherently sustainable.
+In fact, the sustainability of an economy is not determined by its growth rate
+(usually measured in \%/year). 
+Rather, the sustainability of an economy is determined by its \emph{level} or \emph{size}
+(usually measured in \$/year). 
+If the steady state level of the economy 
+is above a sustainable threshold
+(if planetary limits have been exceeded), 
+the economy is unsustainable, regardless of whether it is growing (positive \%/year), 
+shrinking (negative \%/year)  or 
+steady state (0 \%/year). 
+Indeed, Figure~\ref{fig:FootprintHDIGraph} suggests that
+many economies are \emph{already} too large to be considered sustainable.
+
+Figure~\ref{fig:FootprintHDIGraph} further highlights the fact that 
+many economies are \emph{both} already too large and still growing.
+For those economies, a transition to steady state can be a first step 
+toward becoming sustainable. 
+A transition to steady state means that 
+those economies will not grow to be \emph{more} unsustainable each year. 
+
+****
+There are plenty of references we can add to steady state economy thinking here or in further reading.
+---MKH
+****
+
+
+%..............................
+\paragraph{Degrowth} \index{degrowth}
+%..............................
+
+In contrast to the steady-state economy, 
+degrowth advocates embrace the fact that many economies need to become smaller
+to becoming sustainable.
+There are substantial social and political pressures against de-growth.
+And for good reason!
+Degrowth implies a reduction in the standard of living.
+Although Figure~\ref{fig:FootprintHDIGraph} implies a lower standard of living
 is necessary for sustainability, accepting a drastically lower standard of 
 living is extremely unpalatable for most people.
-Furthermore, there are costs and difficulties associated with \emph{transitioning}
+Furthermore, there are costs and difficulties associated with \emph{transitioning}\index{transition!economic}
 from one type of economy to another. 
-The costs are real and there has been no political will or action to make 
-such a transition feasible in the amount of time it would take to avoid a climate
+The costs are real and, to date,
+there has been no political will or action to make 
+such a transition in the amount of time it would take to avoid a climate
 crisis.
 
-Another alternative is a \emph{circular} economy\index{economy, circular}, 
-which is one that exists only on recycled (and, perhaps, renewable) materials 
-and which emits no wastes. 
-Such an economy is impossible to fully achieve but may be a good model to strive
-for in some ways.
+****
+There are plenty of references we can add to degrowth thinking here or in further reading.
+---MKH
+****
+
+
+
+%..............................
+\paragraph{Circular economy} \index{economy!circular}
+%..............................
+
+Another alternative to today's growth economies
+is a \emph{circular} economy\index{economy!circular}, 
+which (a)~consumes only on recycled (and, perhaps, renewable) materials and energy
+and (b)~emits no waste. 
+A circular economy is impossible to achieve completely.
 Materials cannot be 100\% recycled and, for many materials, the recycling process
 degrades material properties. 
 The biggest flaw in a circular economy is that it requires continual energy input,
 in part because recycling of materials requires energy.
-Lastly, it is not clear that such a system can be \emph{economically} sustainable.
+(See Section~\ref{sec:recycling}.)
+Lastly, it is not clear that a circular economy can be \emph{economically} sustainable.
+
+That said, the circular economy provides a helpful model to strive toward.
+Achieving circular economies will bring us much closer to sustainability.
+
+****
+There are plenty of references we can add to circular economy thinking here or in further reading.
+---MKH
+****
+
+
+%..............................
+\paragraph{Doughnut economy} \index{economy!doughnut}
+%..............................
+
+**** JVA to add material here. ****
+
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+These alternative economic models raise the question:
+what do we really want from life?
+Is it really economic growth that we desire?
+Or do we desire 
+(1)~enough food shelter to survive?
+(2)~Safety?
+(3)~Love and belonging?
+(4)~The esteem or family, friends, and others?
+(5)~Some form of self-actualization?
+Maslow (ref here) put forward the above hierarchy of needs, 
+which can frame the question of ``what do we really want?''
+
+The recent work of Lina Brand-Correa, Julia Steinberger, and others
+frame the question of ``what do we want from life'' in energy terms~\cite{Brand-Correa:2017aa}.
+They search for ways to decouple satisfaction of human needs from energy services, energy consumption, and 
+CO$_2$ emissions.
+
+\end{mcframe}
+
 
 When we look at things through the economic lens, Figure \ref{fig:FootprintHDIGraph}
 suggests the only way to live sustainably is poverty. 
 The next two chapters will examine this dilemma in more detail.
+**** 
+Do we really fulfill this promise?
+---MKH 
+****
 Perhaps, as we hope, there is a way to enjoy a high standard of living \emph{and}
 be sustainable.
+****
+Not sure where this depressing paragraph belongs.
+Is it meant to be a transition from macro and average affluence ($A$)?
+If so, that transition could be signaled better.
+---MKH
+****
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Individual affluence}
@@ -509,41 +635,73 @@ be sustainable.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Human wants are limitless. 
+****
+Is this true for everyone? 
+for Western society?
+What about monks?
+What about pastoral societies?
+Maybe qualify with ``For most people?''
+---MKH
+****
 However much we have, we always want more. 
-Note the fact that we have \emph{desires} for more don't necessarily make us happier
-when those desires are fulfilled.
-Conversely, even though people \emph{can} find happiness in the midst of hardship,
-want, or poverty, doesn't mean they desire those things.
-Human want extends to choice as well. 
-We would like to be able to choose what (and how much) we consume and to control
-our world, but choice and control don't necessarily make us happier, per se.
+Note that we aren't necessarily happier when the desire for more is fulfilled. 
+Conversely, although happiness \emph{can} be found in the midst of financial hardship or poverty, 
+most people don't wish to go through financial trouble to achieve happiness.
+Any reduction in affluence % or choice 
+runs counter to what people want.
 
-Therefore, any reduction in affluence or choice runs counter to what people want.
+% Human wants extend to choices and control, too. 
+% We want to be able to choose what (and how much) we consume and to control
+% our world. 
+% But choice and control don't necessarily make us happier, per se.
+% **** 
+% I don't think the extension to choices and control helps here.
+% The chapter is focused on affluence.
+% ---MKH
+% ****
+
 Immediately, we can see a challenge with attempting to reduce impacts ($I$) by
-reducing affluence ($A$) -- it will make people less well off. 
-Many proposals for becoming more sustainable are effectively reductions to
+reducing affluence ($A$)---doing so will make people less well off. 
+****
+``less well-off'' is carrying a lot of weight here.
+If you mean ``have less income,'' you introduced a tautology.
+If you mean ``have less wealth,'' you may be confusing income and wealth.
+Do you mean ``less happy''? ``be able to satisfy fewer human needs''?
+``provide less human well-being?''
+Probably better to be more specific here. 
+---MKH
+****
+Many proposals for becoming more sustainable are effectively reductions of
 affluence. 
 Poverty is a hard sell on an individual level; no one wants it for themselves.
 (Note that an abstract desire to have lower impacts is not the same as wanting 
 to be poor.)
 Lower levels of affluence are associated with lower HDI, as Figure 
 \ref{fig:FootprintHDIGraph} shows. 
-
+(Income is a factor in HDI.)
 
 Some people \emph{have} chosen (relative) poverty by trying to escape the economic
-system; see P4.\ref{project:off-grid} below for examples.
+system; see P4.\ref{project:off-grid} for examples.
 Often, for these people, independence or being ``off grid'' is the main attraction.
-However, even for these people, there is no escaping the relationship to rest of
+However, even for these people, there is no escaping a relationship to the rest of
 humanity.
-There is always some participation in the broader economy, as the project shows,
+There is always some participation in the broader economy,
 so there is no escaping the sustainability implications of economic activity.
 
-This chapter's end-of-chapter questions will further explore of the thorny issues 
+This chapter's end-of-chapter questions further explore of the thorny issues 
 of attempting to lower impacts by lowering affluence.
+
+
+****
+I think this chapter needs a sumamry.
+---MKH
+****
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Robert J. Gordon, \emph{The rise and fall of American growth: The U.S. standard of
 living since the Civil War}, Princeton, NJ: Princeton University Press, 2016.
 
@@ -551,9 +709,11 @@ living since the Civil War}, Princeton, NJ: Princeton University Press, 2016.
 Tim Jackson, \emph{Prosperity Without Growth: Foundations for the Economy of Tomorrow},
 Oxfordshire, UK: Routledge, 2017.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 United States Department of Commerce, Bureau of Economic Analysis: \\ \url{bea.gov} \\
 United Nations Department of Economic and Social Affairs, Statistics Division: \\ 
 \url{https://unstats.un.org/home/}
