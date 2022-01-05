@@ -1171,7 +1171,7 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
   \item After many years of studying energy-economy interactions and the rebound effect, 
         \citet{Sorrell:2010ul} advanced five controversial propositions:
         % 
-        \begin{enumerate}
+        \begin{enumerate} [label=(\arabic*)]
 
           \item the rebound effects from energy efficiency improvements are significant 
                 and limit the potential for decoupling energy consumption from economic growth; 
@@ -1198,6 +1198,19 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
         Assess the necessity, desirability, and feasibility of reconfiguring society 
         as suggested in the article.
         
+  \item At the end of Chapter~\ref{chap:impact_intensity}, you have learned about all four 
+        right-side terms of the IPARX equation (Equation~\ref{eq:IPARX}).
+        Write a paper that discusses each term and suggests your favored policy 
+        to reduce the magnitude of each term. 
+        Next look into the
+        \href{EnROADS climate simulator}{https://www.climateinteractive.org/tools/en-roads/}
+        and find its policy options for addressing climate change. 
+        Which of your favored policies appears in the EnROADS options?
+        Now choose a suite of policies in EnROADS that includes as many of your favored policies as possible.
+        Can you achieve less than 1.5~\degC{} of warming?
+        In the paper, describe the suite of policies you chose
+        and consider their technical and political feasibilities.
+
 \end{projects}
 
 
