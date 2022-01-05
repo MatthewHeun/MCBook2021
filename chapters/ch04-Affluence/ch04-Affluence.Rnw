@@ -83,12 +83,12 @@ if the resource intensity of the economy~($R$) and the impact intensity of resou
 
 Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
 world annual GDP per capita and total GDP, respectively.
-Note that most national and international economic policy is explicitly and
-purposely devoted to increasing affluence and maintaining continual growth for GDP
-(as shown in Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus}),
-even though perpetual growth of consumption of finite
-resources is ultimately unsustainable. 
-(See Section~\ref{sec:exp}.)
+Note that many national and international economic policies are intended to
+continually increase affluence and/or maintain growth in GDP.
+Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
+that these choices have been effective.
+(Recall that Section~\ref{sec:exp} reminds us that perpetual growth in the 
+consumption of finite resources is ultimately unsustainable.)
 
 % <<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
 % world_gdppc_Maddison <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
@@ -363,26 +363,27 @@ Thus, the economy is society's metabolism.
 
 One way of looking at Equation~\ref{eq:IPARX} is that impacts ($I$)
 are the \emph{result} of economic activity.
-I.e., environmental impacts are the result of society's metabolism.
-Total consumption, that is, world GDP, is $P \times A$ in Equation~\ref{eq:IPARX}.
+That is, environmental impacts are the result of society's metabolism.
+Total consumption (that is, world GDP) is $P \times A$ in Equation~\ref{eq:IPARX}.
 Resources ($R$) are the feed the economy needs to live and grow.
 The impact intensity of resources~($X$) 
 represents the wastes that the economy excretes.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Economic change}
+\section{Economic growth and contraction}
 \label{sec:EconGrowth}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Although production and consumption are in balance, both may change together.
-In fact, growth in GDP per capita~($A$) is the explicit goal of many economic policies.
+Indeed, growth in GDP per capita~($A$) is the explicit goal of many economic policies.
 There are two ways the economy can increase GDP.
 Either (a)~the economy consumes \emph{more} inputs or
 (b)~it uses existing inputs more \emph{efficiently}.
+
 Economic inputs include labor, capital, energy, and materials.
 In the long run, growing output by scaling up the inputs does not increase 
-affluence because more workers are needed to gather, process, and use the 
+affluence~($A$) because more workers are needed to gather, process, and use the 
 additional resources.
 That leaves only efficiency as a means of boosting affluence.
 From a sustainability point of view, we should want to everything to be used
@@ -390,8 +391,8 @@ as efficiently as possible; inefficiency of any kind is not desirable.
 
 The productivity of labor depends on the education and skill 
 of workers, technology, the number of workers in the population, the number of hours they 
-work, and the faction of the population that is working.
-(See Section \ref{sec:dtt}.)
+work, and the faction of the population that is working;
+see Section~\ref{sec:dtt}.
 More workers will increase economic output but will not increase GDP \emph{per person}.
 A greater fraction of the population working, such as with the demographic dividend, 
 or workers working longer hours will tend to increase $A$ (at least until the 
@@ -405,16 +406,15 @@ More capital investment \emph{sometimes} means greater economic output.
 Because capital depreciates over time, continual investment 
 (part of $i$ in Equation~\ref{eq:GDP})
 is needed to maintain a certain level of capital stock. 
-The greater the level of capital, the larger the yearly investment is needed to
-maintain it.
+Higher levels of capital require larger yearly investments to maintain.
 At some point, there is a \emph{maximum} level of effective capital.
-Beyond that point, the capital is more expensive to maintain than it contributes 
+Beyond that maximum, additional capital is more expensive to maintain than it contributes 
 to the economy.
-Where this point is depends on the level of technology and the price of borrowing
-money (that is, interest) for making capital investments.
-Conceptually, at the effective maximum level of capital, labor will have a maximum
-level of output. 
-(At that point, workers are fully ``tooled up.'')
+% The maximum effective level depends on technology and the price of borrowing
+% money (that is, interest) for making capital investments.
+% Conceptually, 
+At the effective maximum level of effective capital, labor will have a maximum
+level of output because workers are fully ``tooled up.''
 
 Innovation is the major source of economic growth.
 There are two types of innovation: the invention of new \emph{kinds} of goods and
@@ -425,23 +425,24 @@ Today, we consume entirely new categories of goods and services that did not
 exist for most of human history.
 Much of the improvement in our standard of living comes from these innovations.
 
-However, if you look close enough, almost all of these ``new goods'' stories 
+However, examined closely, almost all of these ``new goods'' stories 
 \emph{also} end up being about some form of efficiency.
 The endless quest to meet our needs more efficiently allows us to instead spend
 our budget on \emph{additional} consumption.
 Efficiency improvements allow us to get more GDP for the same level of resource consumption.
-As we will see in Chapter~\ref{chap:resource_intensity}, particularly in 
+However, as we will see in Chapter~\ref{chap:resource_intensity}, particularly in 
 Figures~\ref{fig:per_capita_material_use} and~\ref{fig:EnergyPerPersonGraph},
-economic growth, measured by GDP per capita---primarily driven by improvements
-in material and energy efficiency (that is, ``innovation'')---results not in 
-less consumption but more.
+economic growth results in \emph{more} consumption of resources.
+The greater use of resources is caused by affluence growth, 
+driven, in part, by improvements in material (Figure~\ref{fig:per_gdp_material_use})
+and energy (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) efficiency 
+(that is, ``innovation,'' as defined above).
 ****
-The preceding sentence could use a rework. 
-It is rather complicated. ---MKH
+MKH to check, especially for efficiency vs. efficacy (see also the paragraphs above) -- JVA
 ****
 Managing the ``rebound effect,'' which occurs when improvements in efficiency result in
-greater total consumption, is a major sustainability challenge.
-(See Section~\ref{sec:rebound_effect}.)
+greater total consumption, is a major sustainability challenge;
+see Section~\ref{sec:rebound_effect}.
 
 *****
 Would it be possible to also talk about economic contraction here? 
@@ -451,15 +452,37 @@ to reinforce the point that recessions reduce environmental impact.
 Talking about contraction then opens the door to discuss economic level.
 We have a choice about the economic level at which we operate.
 ---MKH 
+
+Check the new paragraph below --- JVA
 *****
 
+Economies can grow (particularly when we try to make them grow) but they can also
+shrink.
+A shrinking economy is said to be in recession.
+A full discussion of the mechanisms of recession is beyond the scope of this book
+but the effect of recessions can be seen in Figure~\ref{fig:CarbonEmissionsGraph}.
+If affluence $A$ is a cause of impacts $I$, then reducing $A$ is one way to reduce
+$I$, as Figure~\ref{fig:CarbonEmissionsGraph} shows for CO$_2$ emissions.
+However, recessions are unwelcome for many very good reasons. 
+No country has yet intentionally tried to shrink its economy.
+Moreover, the environmental effects of recessions are not always positive,
+that is, sometimes reducing $A$ \emph{increases} (parts of) $I$.
+For instance, a company that goes out of business \emph{might} leave behind a source
+of environmental contamination with no one left responsible for managing it.
+The U.S.\ has hundreds of thousands of leaking underground gasoline storage tanks
+from gas stations that have gone out of business~\cite{brownfields}.
+What if there were a way or way(s) to reduce the size of the economy that did not
+generate the negative effects of a recession?
+The next section examines some ideas that have been proposed as alternatives
+to continued economic growth.
+(Note that we \emph{examine} these ideas without necessarily \emph{endorsing} them.)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Economic level and alternative economic models}
+\section{Zero growth, degrowth, and alternative economic models}
 \label{sec:circular_economy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-World economies are managed to exhibit continual growth. 
+World economies are managed for continued growth. 
 (See P1.\ref{project:alt_exp} for the relationship between continual growth
 and exponential growth.)
 As mentioned previously, continual growth is inherently
@@ -568,8 +591,8 @@ A circular economy is impossible to achieve completely.
 Materials cannot be 100\% recycled and, for many materials, the recycling process
 degrades material properties. 
 The biggest flaw in a circular economy is that it requires continual energy input,
-in part because recycling of materials requires energy.
-(See Section~\ref{sec:recycling}.)
+in part because recycling of materials requires energy;
+see Section~\ref{sec:recycling}.
 Lastly, it is not clear that a circular economy can be \emph{economically} sustainable.
 
 That said, the circular economy provides a helpful model to strive toward.
