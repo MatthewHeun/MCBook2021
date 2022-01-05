@@ -16,73 +16,79 @@ it takes a serious look at its lifestyle.}{Pope John Paul II}
 
 % *** every chapter should ask 'where are opportunities for reduced impact?" ***
 
-Equation \ref{eq:IPARX} (repeated below for convenience)
+Equation~\ref{eq:IPARX} (repeated below for convenience)
 is our conceptual framework for considering sustainability.
-Chapter \ref{chap:planetary_boundaries} discussed planetary boundaries and the impact
-of human activities on those boundaries, that is, the left-hand side of Equation \ref{eq:IPARX}.
-Chapter \ref{chap:population} is about the first term on the right-hand side of 
-Equation \ref{eq:IPARX}, world population and its dynamics. 
-Discussion questions from Chapter \ref{chap:population} reveal a variety of ways 
-in which it is practically and morally difficult to reduce impacts ($I$) by reducing 
-population ($P$).
-This chapter examines the second term on the right-hand side of Equation \ref{eq:IPARX},
-affluence ($A$), and the role of human economic activity in sustainability challenges.
-Chapters \ref{chap:resource_intensity}-\ref{chap:impact_intensity}, 
-finish the development of our framework for stability.
+Chapter~\ref{chap:planetary_boundaries} discussed planetary boundaries and the impact
+of human activities on those boundaries, that is, the left-hand side of Equation~\ref{eq:IPARX}.
+Chapter~\ref{chap:population} is about the first term on the right-hand side of 
+Equation~\ref{eq:IPARX}, world population and its dynamics. 
+Discussion questions from Chapter~\ref{chap:population} reveal a variety of ways 
+in which it is practically and morally difficult to reduce impacts~($I$) by reducing 
+population~($P$).
+This chapter examines the second term on the right-hand side of Equation~\ref{eq:IPARX},
+affluence~($A$), and the role of human economic activity in sustainability challenges.
+Chapters~\ref{chap:resource_intensity}--\ref{chap:impact_intensity}, 
+finish the development of our framework for sustainability.
 
 \begin{equation} 
   \iparx            \tag{\ref{eq:IPARX}}
 \end{equation}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Global affluence}
 \label{sec:Global_affluence}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The word wealth can include notions of happiness, prosperity, well being, and welfare, 
-but mostly wealth refers to the \emph{amount} of goods, possessions, money, 
-property, or ``stuff'' a person has.
+The word wealth can include notions of happiness, prosperity, well being, and welfare,
+but mostly wealth refers to the \emph{amount} of goods, possessions, money,
+property, or ``stuff'' owned by a person.
 In other words, wealth refers to a \emph{level} of material possessions or resources.
-In contrast, affluence ($A$) is the \emph{rate} that the economy 
+In contrast, affluence ($A$) is the \emph{rate} that the economy
 uses up goods and services, that is, the amount of ``stuff'' bought \emph{per year}.
 
-This economic activity may mean literal consumption, as in the case with food, 
-or it could be using a service, such as education or getting a haircut. 
-Sometimes, what is ``consumed'' is ancillary to what the consumer actually desires. 
-For example, when a person travels from point A to point B, 
-whether the car is electric or burns gasoline doesn’t matter (to the traveler). 
-The energy consumed is just a means to an end. 
-(In this case, that end is travel.)
+Economic activity may mean literally consumption, as in the case with food,
+or it could mean using a service, such as education or getting a haircut.
+Sometimes, what is ``consumed'' is ancillary to what the consumer actually desires.
+For example, when a person travels from point A to point B,
+whether the car is electric or burns gasoline doesn’t matter (to the traveler).
+The energy consumed is just a means to an end, often called the ``service.''
+(In this example, the energy service is travel.)
 
-Affluence ($A$) is \emph{measured} by gross domestic product (GDP) per capita.
-There are critiques as to why per capita GDP is not the \emph{best possible}
-measure of affluence, and those critiques are valid. 
+Average affluence ($A$) for a country or the world
+is \emph{measured} by gross domestic product (GDP) per capita.
+There are valid critiques as to why per capita GDP is not the \emph{best possible}
+measure of affluence.
 For instance, GDP doesn't count (or under counts) the value
-of innovation in improving standards of living \cite{Gordon2016}. 
-Many new metrics (see Section \ref{sec:indices}) have been proposed as replacements 
-or improvements for GDP. 
-Some examples are green GDP, the index of sustainable economic welfare, and the 
-genuine progress indicator. 
+of innovation in improving standards of living~\cite{Gordon2016}.
+Many new metrics (see Section~\ref{sec:indices}) have been proposed as replacements
+or improvements for GDP.
+Some examples are green GDP, the index of sustainable economic welfare, and the
+genuine progress indicator.
 However, each of these suffers from its own limitations.%, philosophical, methodological, and practical.
-The biggest limitation is standardization and availability of data. 
-GDP is what we have the most data for and, consequently, it is what ``everyone'' uses. 
-GDP is the \emph{de facto} standard. 
+The biggest limitation is standardization and availability of data.
+GDP is what we have the most data for and, consequently,
+it is the affluence indicator ``everyone'' uses.
+I.e., GDP is the \emph{de facto} standard.
 % put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
 Consistent and easily accessible GDP data can allow us to make observations
 about trends, which are \emph{qualitatively} consistent with trends we would observe
 using other indices, bearing in mind the limitations of what GDP measures and what it doesn't.
-In any case, a different measure of affluence $A$, would require a corresponding 
-adjustment to (the measure of) resource intensity $R$. 
-The end result leaves us in the same difficult spot: greater affluence 
-creates greater impact if the resource intensity of the economy ($R$)
+In any case, a different measure of affluence~($A$), would require a corresponding
+adjustment to (the measure of) resource intensity of economic activity~($R$).
+Regardless of the measure of affluence, we land in the same difficult spot:
+greater affluence~($A$) creates greater environmental impact~($I$)
+if the resource intensity of the economy~($R$) and the impact intensity of resources~($X$)
 (discussed in the next chapter) is unchanged.
 
-Figures \ref{fig:AffluenceGraph-Nordhaus} and \ref{fig:GDPGraph-Nordhaus} show 
-world annual GDP per capita and total GDP, respectively. 
-Note that most national and international economic policy is explicitly and 
-purposely devoted to increasing affluence and maintaining continual growth for 
-GDP -- as shown in these Figures -- even though perpetual growth on finite 
-resources is ultimately unsustainable (see Section \ref{sec:exp}).
+Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
+world annual GDP per capita and total GDP, respectively.
+Note that most national and international economic policy is explicitly and
+purposely devoted to increasing affluence and maintaining continual growth for GDP
+(as shown in Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus}),
+even though perpetual growth of consumption of finite
+resources is ultimately unsustainable. 
+(See Section~\ref{sec:exp}.)
 
 % <<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
 % world_gdppc_Maddison <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
@@ -171,8 +177,6 @@ world_gdppc_Nordhaus %>%
 % @
 
 
-
-
 % <<GDPGraph-DeLong, fig.cap="World annual GDP calculated by multiplying world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph-DeLong}.">>=
 % # Gather world population data
 % world_gdp_DeLong <- dplyr::inner_join(
@@ -200,9 +204,6 @@ world_gdppc_Nordhaus %>%
 % 
 %   MKHthemes::xy_theme()
 % @
-
-
-
 
 <<GDPGraph-Nordhaus, fig.cap="World annual GDP calculated by multiplying world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph-Nordhaus}.">>=
 # Gather world population data
@@ -235,62 +236,89 @@ world_gdp_Nordhaus %>%
   MKHthemes::xy_theme()
 @
 
-GDP data are collected nationally and aggregated internationally, so there is the
-usual skepticism when dealing with data provided by corrupt and/or authoritarian
+GDP data are collected nationally and aggregated internationally, 
+so there is often skepticism of data provided by corrupt and/or authoritarian
 regimes, in addition to the caveats about what GDP measures and what it doesn't.
-GDP is denominated in units of money and is the sum of four terms,
-\begin{equation} 
-\label{eq:GDP}
-  GDP = c+g+i+nx \; .
-\end{equation}
-\paragraph{Consumption} $c$ is purchases made by individuals. 
-Consumption typically is about two thirds of GDP for developed economies and is
-usually divided into three subcategories: durable goods, nondurable goods, and services. 
-Services represent nontangible things, such as a haircut, legal advice, education, 
-and concert tickets. 
-Durable goods are defined as things that last longer than 3 years, 
-such as appliances and automobiles.
-Nondurable goods are things that are consumed immediately, like food, paper, or fuel. 
-Fabrics, like clothes or carpet, are counted as nondurable goods, even if they 
-happen to last more than three years.
-Durable goods spending is more sensitive to economic conditions than nondurable 
-goods spending because consumers can usually choose to postpone spending on durable goods 
-until their circumstances are better. 
+GDP is denominated in units of money and is the sum of four terms:
 
-\paragraph{Government spending} $g$ is divided between government consumption 
-(such as equipment and wages paid to government workers) and net investment, for 
+\begin{equation}
+\label{eq:GDP}
+  GDP = c + g + i + nx \; .
+\end{equation}
+
+%..............................
+\paragraph{Consumption}
+%..............................
+
+Consumption~($c$) is purchases made by individuals.
+Typically, consumption is about two thirds of GDP for developed economies and is
+usually divided into three subcategories: durable goods, nondurable goods, and services.
+Services represent nontangible things, such as haircuts, legal advice, education,
+and concert tickets.
+Durable goods are defined as things that last longer than 3 years,
+such as appliances and automobiles.
+Nondurable goods are things that are consumed immediately, like food, paper, or fuel.
+Fabrics, like clothes or carpet, are counted as nondurable goods, even if they
+happen to last more than three years.
+Durable goods spending is more sensitive to economic conditions than nondurable
+goods spending,
+because consumers can usually choose to postpone spending on durable goods
+until circumstances improve.
+
+
+%..............................
+\paragraph{Government spending}
+%..............................
+
+Government spending~($g$) is comprised of government consumption
+(such as equipment and wages paid to government workers) and net investment, for
 example, infrastructure improvements.
 
-\paragraph{Investment} $i$ is \emph{not} money put into a bank account. 
-Investment is goods that are purchased now for use in the future. 
-There are three subcategories of investment: nonresidential fixed investment, 
-residential fixed investment, and inventory investment. 
-Nonresidential fixed investment is equipment and plants (factories) purchased by firms. 
-In contrast, residential fixed investment is the purchase of housing stock by 
-households and landlords. 
-Inventory investment is the purchase, by firms, of goods for later sale and could 
+
+%..............................
+\paragraph{Investment}
+%..............................
+
+Investment~($i$) is \emph{not} money put into a bank account.
+Investment is goods that are purchased now for use in the future.
+There are three subcategories of investment: nonresidential fixed investment,
+residential fixed investment, and inventory investment.
+Nonresidential fixed investment is equipment and plants (factories) purchased by firms.
+In contrast, residential fixed investment is the purchase of housing stock by
+households and landlords.
+Inventory investment is the purchase, by firms, of goods for later sale and could
 be negative (inventory is falling) or positive (inventory is increasing).
 
-\paragraph{Net exports} $nx$ is the \emph{net} difference between the value of exports 
-and imports. 
+
+%..............................
+\paragraph{Net exports}
+%..............................
+
+Net exports~($nx$) are the \emph{net} difference between the value of exports and the value of imports.
 Thus, $nx$ could be a negative number for a country that imports more than it exports.
 World GDP is the sum of all national GDPs.
-Therefore, for world GDP, $nx=0$. 
-We don't import from or export to space, yet.
+Therefore, for world GDP, $nx = 0$.
+We don't import from or export to space, \ldots yet.
 
+
+%++++++++++++++++++++++++++++++
 \subsection{Production/Affluence balance}
 \label{sec:PCbalance}
+%++++++++++++++++++++++++++++++
+
 Although economists use consumption narrowly as described in Equation~\ref{eq:GDP},
-we use the term more colloquially as the sum of personal consumption, 
+we use the term colloquially to mean the sum of personal consumption, 
 government spending, and investment.
 That is, we use the term ``consumption'' to mean global GDP, in part to remind ourselves
 that economic activity is based on the use of resources.
 Individuals and corporations may ``save'' money for purchases in the future, but the
 economy as a whole balances production and (this more generic form of) consumption as 
-closely as possible.
-\[ \label{eq:PCbalance}
-\textrm{Production}=\textrm{Consumption}.
-\]
+closely as possible, such that
+
+\begin{equation} \label{eq:PCbalance}
+  \mathrm{Production} = \mathrm{Consumption} \; .
+\end{equation}
+%
 Money that is invested in a bank is lent out to borrowers so that they can make
 purchases.
 Money invested in the stock market is used by companies to purchase equipment, 
@@ -309,20 +337,38 @@ why would you pay the costs of production if there were no prospects of a sale?
 % to have goods available when customers want them, not a long-term difference in
 % supply and demand.
 %
-Therefore, we will also use the terms ``consumption'' and ``production'' interchangeably.
+Therefore, we use the terms ``production'' and ``consumption'' interchangeably.
 
+
+%++++++++++++++++++++++++++++++
 \subsection{Economic metabolism}
 \label{sec:econ_metab}
+%++++++++++++++++++++++++++++++
+
 Having established that the economy only consumes what the economy produces and,
 likewise, only things that will be consumed are produced, we are ready to introduce
-the metaphor of economic metabolism.
-The economy takes in resources and produces wastes.
-Thus, the economy is the metabolism of human society.
+the metaphor of the economic metabolism.
+All plant and animal metabolisms consume resources
+(energy and materials) 
+and produce wastes in the process of doing useful things.
+Similarly, economies take in resources and produce wastes.
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Thus, the economy is society's metabolism.
+
+\end{mcframe}
+
 One way of looking at Equation~\ref{eq:IPARX} is that impacts ($I$)
 are the \emph{result} of economic activity.
-Total consumption, that is, world GDP, is $P \times A$.
+I.e., environmental impacts are the result of society's metabolism.
+Total consumption, that is, world GDP, is $P \times A$ in Equation~\ref{eq:IPARX}.
 Resources ($R$) are the feed the economy needs to live and grow.
-The impact intensity of resources, $X$, is tied to the wastes that the economy excretes.
+The impact intensity of resources~($X$) 
+represents the wastes that the economy excretes.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Economic change}
@@ -330,10 +376,10 @@ The impact intensity of resources, $X$, is tied to the wastes that the economy e
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Although production and consumption are in balance, both may change together.
-In fact, growth in GDP per capita ($A$) is the explicit goal of many economic policies.
+In fact, growth in GDP per capita~($A$) is the explicit goal of many economic policies.
 There are two ways the economy can increase GDP.
-Either the economy uses \emph{more} inputs or it uses existing inputs more 
-\emph{efficiently}.
+Either (a)~the economy consumes \emph{more} inputs or
+(b)~it uses existing inputs more \emph{efficiently}.
 Economic inputs include labor, capital, energy, and materials.
 In the long run, growing output by scaling up the inputs does not increase 
 affluence because more workers are needed to gather, process, and use the 
@@ -344,19 +390,20 @@ as efficiently as possible; inefficiency of any kind is not desirable.
 
 The productivity of labor depends on the education and skill 
 of workers, technology, the number of workers in the population, the number of hours they 
-work, and the faction of the population that is working (see Section \ref{sec:dtt}). 
+work, and the faction of the population that is working.
+(See Section \ref{sec:dtt}.)
 More workers will increase economic output but will not increase GDP \emph{per person}.
 A greater fraction of the population working, such as with the demographic dividend, 
 or workers working longer hours will tend to increase $A$ (at least until the 
 population pyramid stabilizes, in the case of the demographic dividend).
 
-Capital is buildings and equipment, machines, and tools -- \emph{things}
-that can make workers more productive.
+Capital is buildings, equipment, machines, and tools---\emph{things}
+that make workers more productive.
 For instance, a builder with a backhoe can excavate a foundation faster than a
-builder with just a shovel.
+builder with only a shovel.
 More capital investment \emph{sometimes} means greater economic output.
 Because capital depreciates over time, continual investment 
-(part of $i$ in Equation \ref{eq:GDP})
+(part of $i$ in Equation~\ref{eq:GDP})
 is needed to maintain a certain level of capital stock. 
 The greater the level of capital, the larger the yearly investment is needed to
 maintain it.
@@ -367,7 +414,7 @@ Where this point is depends on the level of technology and the price of borrowin
 money (that is, interest) for making capital investments.
 Conceptually, at the effective maximum level of capital, labor will have a maximum
 level of output. 
-(You could say that workers are fully ``tooled up.'')
+(At that point, workers are fully ``tooled up.'')
 
 Innovation is the major source of economic growth.
 There are two types of innovation: the invention of new \emph{kinds} of goods and
@@ -382,14 +429,21 @@ However, if you look close enough, almost all of these ``new goods'' stories
 \emph{also} end up being about some form of efficiency.
 The endless quest to meet our needs more efficiently allows us to instead spend
 our budget on \emph{additional} consumption.
-Efficiency improvements allow us to get more GDP for the same resource cost.
+Efficiency improvements allow us to get more GDP for the same level of resource consumption.
 As we will see in Chapter~\ref{chap:resource_intensity}, particularly in 
 Figures~\ref{fig:per_capita_material_use} and~\ref{fig:EnergyPerPersonGraph},
-economic growth, measured by GDP per capita -- primarily driven by improvements
-in material and energy efficiency (that is, ``innovation'') -- results not in 
+economic growth, measured by GDP per capita---primarily driven by improvements
+in material and energy efficiency (that is, ``innovation'')---results not in 
 less consumption but more.
+**** The preceding sentence could use a rework. 
+It is rather complicated. ---MKH
+****
 Managing the ``rebound effect,'' which is when improvements in efficiency result in
 greater total consumption, is a major sustainability challenge.
+
+***** Would it be possible to also talk about economic contraction here? ---MKH *****
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Economic level}
