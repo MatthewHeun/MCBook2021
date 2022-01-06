@@ -119,14 +119,14 @@ add_circ <- function(.plot, r, xc, yc, fill = NA, n_segs = 100){
 @
 
 <<r_colours, echo = FALSE>>=
-# These color definitions come from the file morgan2.sty.
+# This color definition comes from the file morgan2.sty.
 mc_title_blue <- "#0d5e92"
 data_line_size <- 1
 data_line_colour <- mc_title_blue
 data_linetype <- "solid"
 curve_fit_size <- 0.5
-curve_fit_colour <- "red"
-curve_fit_linetype <- "dashed"
+curve_fit_colour <- "#B44B09"
+curve_fit_linetype <- "solid"
 guide_line_size <- 0.2
 guide_line_colour <- "gray50"
 guide_linetype <- "solid"
