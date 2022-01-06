@@ -116,15 +116,6 @@ because of the valuable role bees play in pollinating human crops.
 \label{sec:human_population}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-As shown in Equation \ref{eq:IPARX}, the number of individual humans is one source 
-of environmental impacts on the planet.
-Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800~AD to present.
-In July 2021, the world's human population is 7.7--7.9 billion with a current
-growth rate of 1.05~\%/year. 
-The average growth rate since 1950
-was *** MKH insert number here *** %1.55~\%/year, 
-with a peak growth rate of 2.1~\%/year between 1965 and 1970.
-
 
 <<PopulationGraph, fig.cap=paste0("World population, $P$ in the IPARX equation. ", fit_sentence(population_fit), " \\emph{Source}: \\citet{Roser:2021uu}.")>>=
 # Gather data for Population vs. time graph.
@@ -143,7 +134,14 @@ region_pop <- population %>%
 population_fit <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "PopulationCurveFit.xlsx"),
                           sheet = "PopulationCurveFit - 1950")
 
-  ggplot2::ggplot() +
+# Need this later
+pop_growth_rate <- population_fit %>%
+  dplyr::filter(coeffs == "b") %>%
+  magrittr::extract2("values") %>%
+  magrittr::multiply_by(100) %>% # To convert from decimal to percent/year.
+  sprintf(fmt = "%#.2f")
+
+ggplot2::ggplot() +
   ggplot2::geom_area(data = region_pop %>%
                        dplyr::filter(Country != "World", Year >= 1800) %>%
                        dplyr::mutate(
@@ -168,6 +166,16 @@ population_fit <- readxl::read_excel(file.path("chapters", "ch03-Population", "d
                 fill = ggplot2::element_blank()) +
 MKHthemes::xy_theme()
 @
+
+
+As shown in Equation \ref{eq:IPARX}, the number of individual humans is one source 
+of environmental impacts on the planet.
+Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800~AD to present.
+In July 2021, the world's human population is 7.7--7.9 billion with a current
+growth rate of 1.05~\%/year. 
+The average growth rate since 1950
+was \Sexpr{pop_growth_rate}~\%/year, 
+with a peak growth rate of 2.1~\%/year between 1965 and 1970.
 
 
 %++++++++++++++++++++++++++++++
