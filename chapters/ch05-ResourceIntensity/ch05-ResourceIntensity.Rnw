@@ -312,7 +312,7 @@ We're using nearly the same amount (mass) of construction minerals, ores, and fo
 per GDP as we ever have.
 
 
-<<total_material_use, fig.cap=paste0("Total world material use. ``Construction'' includes all construction minerals. ``Ores'' includes industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is metric tonnes (1000 kg). ", fit_sentence(extracted_material_fit), " \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.")>>=
+<<total_material_use, fig.cap=paste0("World material use. ``Construction'' includes all construction minerals. ``Ores'' includes industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is metric tonnes (1000 kg). ", fit_sentence(extracted_material_fit), " \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.")>>=
 krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
                                 sheet = "data to plot") %>% 
   dplyr::rename(
@@ -349,7 +349,7 @@ ggplot2::ggplot() +
 @
 
 
-<<per_capita_material_use, fig.cap='Per-capita material extraction. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: \\citet[Figure~1c]{Krausmann:2009wc}.'>>=
+<<per_capita_material_use, fig.cap='World per-capita material use. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: \\citet[Figure~1c]{Krausmann:2009wc}.'>>=
 material_per_capita <- krausmann %>% 
   dplyr::left_join(historical_pop, by = "Year") %>% 
   dplyr::mutate(
@@ -374,7 +374,7 @@ material_per_capita %>%
 
 
 
-<<per_gdp_material_use, fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of construction materials, ores, and fossil fuels scales quite well with GDP and shows no growth on this graph, as the thickness of those bands varies little over time. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<per_gdp_material_use, fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of construction materials, ores, and fossil fuels scales quite well with GDP and shows no growth on this graph, as the thickness of those bands varies little over time. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 material_per_gdp <- krausmann %>% 
   dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>% 
   dplyr::mutate(
