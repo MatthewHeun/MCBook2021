@@ -30,35 +30,40 @@ even catastrophically destroy, the ability of the Earth to support life.
   \iparx            \tag{\ref{eq:IPARX}}
 \end{equation}
 
-This chapter examines human population dynamics and the impact of human 
-activities on animal populations, i.e., this chapter covers $P$ in the IPARX equation.
+This chapter examines human population dynamics, that is, \mft{P} in the IPARX equation,
+and the impact \mft{I} of human activities on animal populations.
+(``Human activities'' are a direct result of the size of \mft{P}.)
 The decline of many animal populations is concerning (in part) because it likely 
 indicates a reduction in ecosystem services.
-Through the twentieth century, the global human population grew exponentially,
-which was unsustainable.
+Throughout history, the global human population \mft{P} has grown continually,
+which is unsustainable.
 Currently, population growth has slowed (but not ceased).
-Prospects for future human populations are discussed with an eye toward whether
-humanity will live sustainably in the future. 
+Prospects for future human populations are discussed in Section~\ref{sec:population_modeling}
+with an eye toward whether humanity will live sustainably in the future. 
 A key interaction is between the number of people and economic output per person.
+
+There are two schools of thought on population with relevance for economics and sustainability.
 Malthusians think that population growth will cause us to ``run out'' of 
 scarce resources.
 Techo-optimists think that more people will lead to 
 better technology, more specialization of labor, and, ultimately, to a higher, not lower,
 standard of living.
-
+This interaction between population \mft{P}, affluence \mft{A}, and resource \mft{R} scarcity
+is discussed in Section~\ref{sec:malthus_ehrlich_simon}.
 
 \section{Animal populations}
 %some stories about animal populations: passenger pigeons, bison, whales, aurochs, locusts,
 % North American megafauna, North Atlantic cod shoals....
 Currently, humans (36\%) and domestic livestock (60\%) constitute 96\% of the mass of
-mammals on the planet \cite{BarOn2018} -- only 4\% are wild animals 
+mammals on the planet \cite{BarOn2018}---only 4\% are \emph{wild} animals 
 such as whales, bison, deer, and bears. 
 The number of wild vertebrates has declined by 68\% since 1970 \cite{WWFLPR2020}. 
-Populations of insects are down ~80\% in the last 30 years \cite{Hallmann2017}.
+Populations of insects are down about 80\% in the last 30 years \cite{Hallmann2017}.
 These numbers are alarming because they could indicate a drastic decline in the 
-quality and/or quantity of ecosystem services. One of the planetary boundaries
-identified in Chapter~\ref{chap:planetary_boundaries} is an extinction rate
-of less than 0.001\% of species going extinct per year. 
+quality and/or quantity of ecosystem services available to animals 
+(and potentially) humans.
+One of the planetary boundaries identified in Chapter~\ref{chap:planetary_boundaries} 
+is an extinction rate of less than 0.001\% of species going extinct per year. 
 Estimates vary, but all agree that current extinction rates are more than ten 
 times above this limit (0.01\% or greater).
 It fact, the current crisis has been labeled a ``sixth mass extinction event.''
@@ -72,25 +77,24 @@ it does in the present crisis.)
 % https://www.vox.com/science-and-health/2018/10/30/18042150/wwf-living-planet-report-vertebrate-loss
 % https://www.pnas.org/content/115/44/11262 -- it will take millions of years to recover the species we've already lost.
 
-
 We should distinguish between the \emph{reason(s)} and the \emph{mechanism(s)} for 
 the decline in animal populations. 
-Population decline is an \emph{impact} ($I$) from the left-hand side of 
+Population decline is an \emph{impact} (\mft{I}) from the left-hand side of 
 Equation \ref{eq:IPARX}. 
 The \emph{reason(s)} (that is, the ``why'') are given on the right-hand side of
-Equation \ref{eq:IPARX} ($PARC$).
+Equation \ref{eq:IPARX}~(\mft{PARCX}).
 In contrast, the \emph{mechanisms} (that is, the ``how'') behind the decline 
 in animal populations are not provided by Equation \ref{eq:IPARX}.
-Several important mechanisms are summarized below.
-Habitat destruction plays an important role in the decline of animal populations. 
+Four, important mechanisms are summarized below.
+First, habitat destruction plays an important role in the decline of animal populations. 
 For example, in 1875 there was a swarm of Rocky Mountain locusts consisting of 
 12.5 trillion individuals, weighing 27.5 million tons, and covering an area larger
 the state of California. 
 By 1902 the species was extinct, mainly because farming destroyed their 
 breeding grounds. 
 Chapter~\ref{chap:land_use_urban_planning} will discuss human alteration of the land.
-Overconsumption by humans is another cause of population decline. 
-Ocean fish stocks are the prime example.
+Second, overconsumption by humans is another cause of population decline. 
+Ocean fish stocks are a notable example, part because of the role they play in human diets.
 Other examples include
 % cite United Nations Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services
 %summary report says 1 million animal and plant species are threatened with extinction.
@@ -104,9 +108,8 @@ Lastly, human contamination of the environment, either unintentionally or intent
 is a cause for the decline of many species.
 For example, widespread use of insecticides in agriculture is thought to be a strong 
 factor for the decline in many insect populations. 
-Bees are a particularly alarming example because of the valuable role they play 
-in pollination.
-
+Bees are a particularly alarming example of insecticide-driven species decline  
+because of the valuable role bees play in pollinating human crops.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Human population}
@@ -114,12 +117,13 @@ in pollination.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 As shown in Equation \ref{eq:IPARX}, the number of individual humans is one source 
-of impacts on the planet.
-Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800 AD to present.
-In July 2021, the world's human population is 7.7--7.9 billion with a
-growth rate of 1.05\%/year. 
-The average growth rate over the last hundred years
-was 1.55\%/year, with a peak growth rate of 2.1\%/year between 1965 and 1970.
+of environmental impacts on the planet.
+Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800~AD to present.
+In July 2021, the world's human population is 7.7--7.9 billion with a current
+growth rate of 1.05~\%/year. 
+The average growth rate since 1950
+was *** MKH insert number here *** %1.55~\%/year, 
+with a peak growth rate of 2.1~\%/year between 1965 and 1970.
 
 
 <<PopulationGraph, fig.cap=paste0("World population, $P$ in the IPARX equation. ", fit_sentence(population_fit), " \\emph{Source}: \\citet{Roser:2021uu}.")>>=
@@ -699,7 +703,7 @@ published August 17, 2020. \\
 
 \item Some electric train systems supply power to the train by energizing
       a third rail (the first two being the tracks) with high voltage DC 
-      current, typically 600-1500 V. 
+      current, typically 600--1500~V. 
       Because of the high voltages and because the rails are very near to the ground, 
       touching the third rail carries a high risk of lethality. 
       In politics, a ``third rail'' is an issue, so contentious, that touching it 
@@ -730,7 +734,7 @@ published August 17, 2020. \\
 
 \item Notice the population distribution indicated by Figures \ref{fig:PopulationGraph} 
       and \ref{fig:half_population}. 
-      Does distribution of population complicate the issues raised in Questions 
+      Does distribution of population complicate the issues raised in 
       Q3.1 and Q3.2, and if so, how? 
       What options does the rest of the world have for decreasing population 
       growth in Asia (where most of the world's people are) and Africa (where 
@@ -781,7 +785,7 @@ published August 17, 2020. \\
       What are ways to allow urbanites access to the natural world?
 
 \item It is interesting to note that Malthus's book was published (1798) just before before 
-      Figure~\ref{fig:PopulationGraph} begins (that is, 1800AD). 
+      Figure~\ref{fig:PopulationGraph} begins (that is, 1800 AD). 
       On the one hand, exponential growth always looks dramatic; 
       Figure~\ref{fig:exp} shows exponential growth for any time $t$. 
       On the other hand, Malthus had not yet experienced the very dramatic rise 

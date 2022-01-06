@@ -734,7 +734,7 @@ fit_sentence <- function(.df) {
   r2 <- .df %>%
     dplyr::filter(coeffs == "r2") %>%
     magrittr::extract2("values")
-  paste0("The dashed, red line shows an exponential curve fit to data after 1950 ", 
+  paste0("The red line shows an exponential curve fit to data after 1950 ", 
          "with exponential growth rate of ", 
          b %>% sprintf(fmt = "%#.2f"), 
          "~\\%/year and $R^2$~=~", 
