@@ -415,7 +415,7 @@ as efficiently as possible; inefficiency of any kind is not desirable.
 
 The productivity of labor depends on the education and skill 
 of workers, technology, the number of workers in the population, the number of hours they 
-work, and the faction of the population that is working;
+work, and the fraction of the population that is working;
 see Section~\ref{sec:dtt}.
 More workers will increase economic output but will not increase GDP \emph{per person}.
 A greater fraction of the population working, such as with the demographic dividend, 
@@ -499,7 +499,7 @@ The U.S.\ has hundreds of thousands of leaking underground gasoline storage tank
 from gas stations that have gone out of business~\cite{brownfields}.
 Similar stories can be told for former industrial sites, mines, and oil and gas wells.
 
-What if there were a way or way(s) to reduce the size of the economy that did not
+What if there were ways to reduce the size of the economy that did not
 generate the negative effects of a recession?
 The next section examines some ideas that have been proposed as alternatives
 to continued economic growth.
@@ -511,15 +511,15 @@ to continued economic growth.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 World economies are managed for continued growth. 
-(See P1.\ref{project:alt_exp} for the relationship between continual growth
-and exponential growth.)
+% (See P1.\ref{project:alt_exp} for the relationship between continual growth
+% and exponential growth.)
 As mentioned previously, continual growth is inherently
 unsustainable on a finite planet.
 When the economy grows continually it will, at some point,
 either demand more resources than the environment can provide or
-exceed exceed the ecosystem's ability to absorb wastes.
-Eventually, economic growth will exceed a tipping point where the
-ecosystem is no longer able to provide its services to the economy, as 
+exceed the ecosystem's ability to absorb wastes.
+Eventually, economic growth will push the ecosystem past a tipping point where the
+ecosystem is no longer able to provide ecosystem services, as 
 discussed in Chapter~\ref{chap:planetary_boundaries}.
 
 In response, there are calls for transitioning world economies 
@@ -569,7 +569,7 @@ those economies will not grow to be \emph{more} unsustainable each year.
 
 In contrast to the steady-state economy, 
 degrowth advocates embrace the fact that many economies need to become smaller
-to becoming sustainable.
+to be sustainable.
 There are substantial social and political pressures against degrowth.
 And for good reason!
 Degrowth implies a reduction in the standard of living.
@@ -616,7 +616,7 @@ changes).
 However, one criticism of a steady-state economy is that (some) people could be left
 poor and destitute. 
 The doughnut economy thus attempts to impose both a ``floor'' and a ``ceiling'' 
-on economic activity and tries respect planetary boundaries by equalizing income 
+on economic activity and tries to respect planetary boundaries by equalizing income 
 disparity between rich and poor.
 
 While a doughnut economy might sound good in theory, there would be many conceptual and
@@ -627,7 +627,7 @@ First, tying economic level(s) to particular planetary boundaries might not be
 straightforward, particularly since we don't know with certainty exactly what those 
 boundaries are in some cases.
 Probably, a better approach is to address, for example, CO$_2$ emissions directly.
-Second, there are not successful templates for degrowth to the outside of the doughnut
+Second, there are no successful templates for degrowth to the outside of the doughnut
 (if necessary) and then managing distribution of affluence within the doughnut.
 Relatedly, who sets the ``floor'' and the time period for transition?
 Third, the doughnut model implicitly sets up a ``people-versus-planet'' dichotomy
@@ -646,7 +646,7 @@ Or do we desire
 (1)~enough food shelter to survive?
 (2)~Safety?
 (3)~Love and belonging?
-(4)~The esteem or family, friends, and others?
+(4)~The esteem of family, friends, and others?
 (5)~Some form of self-actualization?
 The above hierarchy of needs~\cite{Maslow1954}, 
 can frame the question of ``what do we really want?''
@@ -724,7 +724,7 @@ so there is no escaping the sustainability implications of economic activity.
 % ****
 When we look at sustainability through the economic lens, Figure \ref{fig:FootprintHDIGraph}
 suggests the only way to live sustainably is poverty. 
-This chapter's end-of-chapter questions further explore of the thorny issues 
+This chapter's end-of-chapter questions further explore the thorny issues 
 of attempting to lower impacts by lowering affluence.
 The next two chapters will examine poverty/sustainability dilemma in more detail.
 Perhaps, as we hope, there is a way to enjoy a high standard of living \emph{and}
