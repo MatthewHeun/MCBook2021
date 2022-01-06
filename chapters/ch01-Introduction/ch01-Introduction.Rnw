@@ -354,8 +354,8 @@ In the end, without environmental sustainability, there is no sustainability at 
 
 Two mathematical identities, IPAT and Kaya, have been used to express sources and impact
 of human activities on the environment.
-IPAT expresses ``impact'' ($I$) on the environment as the product of human
-population ($P$), affluence ($A$), and technology ($T$).
+IPAT expresses ``impact'' (\mft{I}) on the environment as the product of human
+population (\mft{P}), affluence (\mft{A}), and technology (\mft{T}\,).
 The Kaya identity is a form of the IPAT equation but restricts impact to CO$_2$
 emissions.
 On the other hand, Kaya expands the generic expression for ``technology'' to be
@@ -366,22 +366,22 @@ Chapters \ref{chap:planetary_boundaries}-\ref{chap:impact_intensity}
 of this book are organized around a hybrid of the IPAT and Kaya
 approaches.
 We keep the more general ``impact'' of IPAT but also generalize the more insightful
-``technology'' expression from Kaya as the product of resource intensity of the economy ($R$)
-and the impact intensity of resources ($X$).
+``technology'' expression from Kaya as the product of resource intensity of the economy (\mft{R})
+and the impact intensity of resources (\mft{X}\,).
 
 \begin{equation} \label{eq:IPARX}
   \iparx
 \end{equation}
 
-In the IPARX formulation, impact ($I$) is a list of impacts (that is, a vector quantity)
+In the IPARX formulation, impact (\mft{I}) is a list of impacts (that is, a vector quantity)
 that includes such things as global warming potential, aquifer depletion, and
 eutrophication potential.
-Population ($P$) is the number of people in the world.
-Affluence ($A$) is GDP per capita per year.
-Resource intensity ($R$) is the list (vector) of all the resources necessary to
+Population (\mft{P}) is the number of people in the world.
+Affluence (\mft{A}) is GDP per capita per year.
+Resource intensity (\mft{R}) is the list (vector) of all the resources necessary to
 produce one unit of world GDP.
-Lastly, impact intensity of resources ($X$) is a list of the impacts of
-each type of resource. (That is, $X$ is a matrix quantity.)
+Lastly, impact intensity of resources (\mft{X}\,) is a list of the impacts of
+each type of resource. (That is, \mft{X} is a matrix quantity.)
 
 In broad strokes, sustainability can be seen in the $I$ term (environmental impacts) and 
 in resource extraction (the numerator of $R$ and the denominator of  $X$).

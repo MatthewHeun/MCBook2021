@@ -44,18 +44,23 @@
 % Begin LaTeX macros created by the authors.
 % 
 
+% Temperatures
 \newcommand{\degC}{\degree C}
 \newcommand{\degF}{\degree F}
+% Figure widths
 \newcommand{\figwidth}{0.85\linewidth}
+% The "math font trick" to get Libre Caslon font in italics inside equations.
+\newcommand{\mft}[1]{\text{\emph{#1}}}
+% IPARX equation
 \newcommand{\iparx}{
 \footnotesize
 \begin{tabular}{ccccccccc}
-$I$    & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $X$ \\
+\mft{I}  & = & \mft{P}        & $\times$ & \mft{A}       & $\times$ & \mft{R}      & $\times$ & \mft{X} \\
 % \multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource &  & Impact intensity \\
 %  &  &  &  &  &  & intensity &  & of resources \\
 \multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource intensity &  & Impact intensity \\
  &  &  &  &  &  & of the economy &  & of resources \\
-$\left[\frac{\textrm{impact}}{\textrm{year}}\right]$ & & $\left[\mathrm{persons}\right]$ &  & $\left[\frac{\textrm{GDP}}{\textrm{person$\cdot$year}}\right]$ &  & $\left[\frac{\textrm{resources}}{\textrm{GDP}}\right]$ &  & $\left[\frac{\textrm{impact}}{\textrm{resources}}\right]$
+$\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right]$ &  & $\left[\frac{\text{GDP}}{\text{person$\cdot$year}}\right]$ &  & $\left[\frac{\text{resources}}{\text{GDP}}\right]$ &  & $\left[\frac{\text{impact}}{\text{resources}}\right]$
 \end{tabular}
 \normalsize
 }
