@@ -208,7 +208,7 @@ of all the people who have ever lived.
 \subsection{Population modeling}
 \label{sec:population_modeling}
 %++++++++++++++++++++++++++++++
-Whether the human population will continue to grow rapidly seems like a key 
+Whether the human population will continue to grow rapidly is a key 
 sustainability question.
 Figure~\ref{fig:UN_population_prospect} shows projections made by the United Nations
 about the future human population. 
@@ -220,8 +220,9 @@ uncertainty about future birth and death rates.
 that world population will peak around 2050 and then fall \emph{and} the possibility
 that population will keep rising to the end of the century.)
 
-
-<<UN_population_prospect, fig.cap="Projections of world population. Projections are based on probabilistic models of total fertility and life expectancy at birth from a Bayesian hierarchical model. The light gray region shows a 95~\\% prediction interval. The dark gray region shows a 80~\\% prediction interval. \\emph{Sources}: Historical data from \\citet{Roser:2021uu}; future projections from \\citet{UNEcSoAf:2021vj}.">>=
+% Projections are based on probabilistic models of total fertility and 
+% life expectancy at birth from a Bayesian hierarchical model.
+<<UN_population_prospect, fig.cap="Projections of world population. The light gray region shows a 95\\% prediction interval. The dark gray region shows a 80\\% prediction interval. \\emph{Sources}: Historical data from \\citet{Roser:2021uu}; future projections from \\citet{UNEcSoAf:2021vj}.">>=
 future_pop <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "UN_PPP2019_Output_PopTot.xlsx"),
                                              sheet = "data to plot") %>% 
   tidyr::pivot_longer(-Year, names_to = "band", values_to = "pop_thousands") %>% 
@@ -268,15 +269,14 @@ dplyr::bind_rows(historical_pop, future_pop) %>%
   MKHthemes::xy_theme()
 @
 
-
-
 Birth and death rates depend on many variables.
-Figure \ref{fig:World3loops} shows a schematic of the causal loops
+Figure~\ref{fig:World3loops} shows a schematic of the causal loops
 used in World3, an early (and simple) world population model. 
-Figure \ref{fig:World3loops} shows the large number of variables (24!) that affect population and
-the many ways those variables (are thought to) interact.
+Figure~\ref{fig:World3loops} shows the large number (24) of variables in the 
+model that affect population and the many ways those variables (are programmed to) interact.
 No model is perfect and, indeed, the World3 model is controversial, as all predictions are.
-The point of Figure \ref{fig:World3loops} is to show that many variables affect 
+The point of Figure \ref{fig:World3loops} is to show that many variables 
+(are thought to) affect 
 population and those variables interact in complex ways.
 %Indeed, another population model produced around the same time used 200,000 equations.
 % ******* Need a source for the previous claim. 
@@ -297,7 +297,6 @@ population and those variables interact in complex ways.
          \emph{Source}: \citet[p.~14]{Meadows:1974ut}.}
 \label{fig:World3loops}
 \end{figure}
-
 
 The UN projections in Figure~\ref{fig:UN_population_prospect} are not based on 
 the World3 model. 
@@ -328,20 +327,20 @@ resulting in low population growth.
 Demographic transition theory, illustrated schematically in Figure~\ref{fig:dtt},
 is the observed pattern that economic development leads to decreased mortality 
 followed some time later by a falling birth rate.
-Thus, the population will grow rapidly and then stabilize.
+Thus, population is predicted to grow rapidly and then stabilize.
 % ******* Automatically?  As a society "develops"?  Always?  Probably need more here.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Demographic transition theory gives us some hope for sustainability, namely, that 
-the total human population ($P$) won't \textit{continue} to grow exponentially. 
+the total human population \Iparen{} won't \textit{continue} to grow exponentially. 
 On the other hand, slowing of growth is predicated on increasing GDP per capita
-(the $A$ term in Equation~\ref{eq:IPARX}).
+(the \Aparen{} term in Equation~\ref{eq:IPARX}).
 \end{mcframe}
 
 
-<<ddt_data>>=
+<<dtt_data>>=
 demo_transition <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "Demographic Transition.xlsx"),
                                       sheet = "data to plot") %>% 
   dplyr::rename(
@@ -397,7 +396,7 @@ demo_transition %>%
         \caption{Schematic of demographic transition theory. Crude birth rate (CBR) and
                  crude death rate (CDR) are defined as births or deaths per year per 1000 people
                  in the total population (uncorrected for sex or age cohorts).}
-        \label{fig:ddt}
+        \label{fig:dtt}
 \end{figure}
 
 
@@ -418,23 +417,24 @@ In phase 3, the birth rate is still greater than the death rate, so the populati
 is still growing, but the falling birth rate means slower growth and an age structure 
 that begins to be more uniform. 
 In phase 4, the birth rate and death rate equalize and the population stabilizes. 
-In phase 5, the birth rate can either begin to rise again (as shown in Figure \ref{fig:dtt}) 
+\emph{After} the demographic transition, 
+the birth rate might rise again (causing further population growth)
 \emph{or} drop \emph{below} the death rate, which leads to a \emph{decrease} in total population.
 Currently, most developed countries have a birth rate that is \emph{below} the
 \emph{replacement rate}.
 
-As countries move through the demographic transition, the age structure of the population,
-shown by the \emph{population pyramid} (lower part of Figure \ref{fig:dtt}), changes.
-The population pyramid shows the percentage of the population in each age cohort, of
+As countries move through the demographic transition, the age structure of the 
+population changes.
+A \emph{population pyramid} shows the percentage of the population in each age cohort, of
 each sex. 
-(Important note: the population pyramid is always \emph{relative} to the size of 
+(Important note: a population pyramid is always \emph{relative} to the size of 
 the total population.) 
 The age structure of a population provides a lot of information about the population's 
 future and its economic outlook. 
 At the beginning of phase 2, more 
 young people are being born and more people are living longer. 
 Both of these groups are not of working age and so tend to contribute little to GDP. 
-(In fact, they are dependents who \emph{consume} rather than generate wealth.) 
+(In fact, they are dependents who \emph{consume} rather than generate income.) 
 Later, in phase 3, as these young people mature and join the labor market and the 
 birth rate falls, the fraction of the population that is working is much higher, 
 which generates a \emph{demographic dividend}.
@@ -450,8 +450,8 @@ The age structure of the population also shows \emph{demographic momentum}.
 It takes a lifetime to age a cohort out of the population pyramid. 
 The next generation of parents have already been born; today's children are 
 going to become the parents of tomorrow (that is, of the next generation). 
-A falling birth rate doesn't immediately lower the population; it takes time for 
-the population to stabilize. 
+A falling birth rate doesn't immediately lower the total population; 
+it takes time for the population to stabilize. 
 Conversely, a small cohort of parents, even if they have a high birth rate, cannot 
 increase total population size if the oldest generations are a large proportion 
 of the total population. 
@@ -467,9 +467,13 @@ High population density, characteristic of urban areas, enables, for example,
 cost-effective mass transit, which reduces carbon emissions from transportation.
 On the other hand, high human population densities will exclude many animal species.
 
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In 2015, half of the world's people lived inside a circle, shown in 
 Figure~\ref{fig:half_population}, with a radius of about 3,300km~\cite{Quah2015}.
 This area of Southeast Asia has very high population density.
+\end{mcframe}
 
 <<half_population, fig.cap="As of 2015, half of the world's population lives in a circle with a radius of 3,300~km centered on Mong Khet, Myanmar~\\cite{Quah2015}.">>=
 
@@ -518,7 +522,7 @@ of more than 10 million people (called ``megacities'').
 Since 2005--2006 more than half of the world's population live in urban areas.
 Now there are 21 cities with populations of 10 million or more.
 %(see Figure \ref{fig:cities_population} for more detail).
-The percent living in urban areas is projected to grow to 68\% by 2050. 
+The percentage of people living in urban areas is projected to grow to 68\% by 2050. 
 %%https://ourworldindata.org/urbanization
 Urban living is correlated with wealth and higher GDP. 
 High population density (number of people per area) means mass transit is practical 
@@ -532,9 +536,9 @@ Equation \ref{eq:IPARX} indicates that higher affluence (A), not location, is a
 main source of ecological impact.
 High population density \emph{can} provide efficient transportation, minimize habitat 
 destruction, and allow economies of scale for dealing with waste materials.
-Nevertheless, it is unwise to consider urban areas divorced from the rural
+Nevertheless, it is unwise to consider urban areas apart from the rural
 areas that allow them to thrive.
-True sustainability thinking must consider all of human society.
+True sustainability thinking must consider all of human society and its spatial distribution.
 
 % \begin{figure}
 % \centering
@@ -597,15 +601,15 @@ He thought that any abundance of resources (such as food) would cause population
 growth, which would immediately consume the abundance.
 Increasing affluence, Malthus thought, would lead to population growth, which 
 would thereby decrease GDP \emph{per capita}. 
-(In Chapters~\ref{chap:planetary_boundaries} and~\ref{chap:affluence}, 
-affluence is measured by GDP per capita, $A$.)
+(In Equation~\ref{eq:IPARX},
+affluence is measured by GDP per capita, \Aparen.)
 Implicitly, Malthus assumed that population would grow more rapidly than affluence.
 The (hypothetical) inability to achieve long-term increases in affluence is 
 now called the \emph{Malthusian trap}.
 Subsequent to Malthus' work,
 the Industrial Revolution occurred, and GDP per capita rose
 \emph{in spite of}, or alongside of, increasing population.
-(See Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:PopulationGraph}.)
+(See Figures~\ref{fig:PopulationGraph} and~\ref{fig:AffluenceGraph-Nordhaus}.)
 
 Nevertheless, fears of Malthusian catastrophe have not gone away.
 Two influential modern neo-Malthusian works are \emph{The Population Bomb} (1968),
@@ -625,12 +629,12 @@ Nevertheless, both books have received multiple updates, repeating the same basi
 The opposite point of view has been called \emph{techno-optimism}.
 Techno-optimism holds that there are no limits to growth, because
 (a) matter and energy are abundant in the universe and
-(b) human ingenuity can invent technology to substitute for all depleting nonrenewable 
+(b) human ingenuity can invent technology to enable substitution for all depleting nonrenewable 
 resources.
 The economy is the mechanism by which techno-optimists expect human ingenuity 
 to overcome all resource scarcities.
-The price of any scarce resource will rise, thereby incentivizing use of 
-alternative resources
+The price of any scarce resource will rise, thereby incentivizing development and use of 
+alternative resources.
 \emph{Limits to Growth} assumed pollution would grow exponentially but
 pollution-control technology would not.
 Techno-optimists, on the other had, claim that it is technologically possible to produce, 
@@ -641,7 +645,7 @@ Who is correct, the neo-Malthusians or the techno-optimists?
 Will population growth lead to catastrophe or is growth a source of labor and 
 technology that will yield abundant resources?
 In 1980, business professor Julian Simon challenged biologist Paul Ehrlich to a 
-US\$10,000 wager.
+\$10,000 wager.
 Ehrlich was to select a suite of raw materials and a date more than a year away.
 If inflation-adjusted prices of those raw materials increased, Ehrlich would win. 
 Ehrlich chose copper, chromium, nickel, tin, and tungsten over the time period 
@@ -650,7 +654,7 @@ In the 1980s, world population increased from about 4.46 billion to around
 5.33 billion.
 Despite the largest single-decade population increase in history, 
 prices for all five materials decreased, and Simon won the bet.
-If you think the price decreases settled the argument, you lose too.
+If you think the price decreases settled the argument, like Ehrlich you lose too.
 Over the years, both sides have countered with a variety of ``what-if'' scenarios. 
 Scholars have examined other timespans and other raw materials. 
 One study concluded that Simon would win about 54\% of the time
