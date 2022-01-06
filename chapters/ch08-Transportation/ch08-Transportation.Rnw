@@ -527,8 +527,9 @@ Unfortunately, the energy return on investment for ethanol production and is
 very poor, barely above 1 --- see Table~\ref{tab:eroi}.
 ``The entire state of Iowa, if planted in corn, 
 would yield approximately five days of gasoline alternative''~\cite{Cleveland:2006ux}.
+In addition, planting additional acres of corn, increases impacts of erosion and chemical runoff.
 Thus, corn-derived ethanol, at least, is unlikely to provide a long-term solution
-for sustainable transport.
+for sustainable transport, and may not be sustainable in a number of other dimensions.
 
 <<Biofuel_cons, fig.cap = "U.S.\ biofuel consumption, 1981--2020. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:2021to}.">>=
 biofuels <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Biofuels.xlsx"),
