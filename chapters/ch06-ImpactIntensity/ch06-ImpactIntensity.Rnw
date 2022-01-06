@@ -205,9 +205,12 @@ carbon_intensity <- dplyr::inner_join(
   dplyr::mutate(
     CO2_intensity_Mt_per_EJ = CO2_emissions_tonnes / 1e6 / energy_EJ,
   ) 
+
 carbon_intensity %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_intensity_Mt_per_EJ")) +
-  ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+  ggplot2::geom_line(size = data_line_size,
+                     colour = data_line_colour, 
+                     linetype = data_linetype) +
   ggplot2::labs(x = NULL,
                 y = expression("Carbon intensity of energy [Mt "*CO[2]/EJ*"]")) +
 
@@ -857,7 +860,9 @@ egdp_df <- primary_energy %>%
 
 egdp_df %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = gdp_trillions, y = energy_EJ)) +
-  ggplot2::geom_line(colour = mc_title_blue, size = 1) + 
+  ggplot2::geom_line(size = data_line_size, 
+                     colour = data_line_colour,
+                     linetype = data_linetype) + 
   ggplot2::labs(x = "GDP [trillion 2017 Intl. $]", 
                 y = "Primary energy consumption [EJ]") +
   
