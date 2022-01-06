@@ -290,7 +290,7 @@ food_energy %>%
                 fill = ggplot2::element_blank()) +
 
   MKHthemes::xy_theme() + 
-  ggplot2::theme(axis.ticks.x=element_blank())
+  ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
 
 
@@ -405,7 +405,7 @@ food_emissions_per_kg <- food_emissions_per_kg %>%
 
 food_emissions_per_kg %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Food", y = "GHG_emissions_per_kilogram")) +
-  ggplot2::geom_bar(stat = "identity", fill = mc_title_blue) +
+  ggplot2::geom_bar(stat = "identity", fill = data_line_colour) +
   ggplot2::labs(x = ggplot2::element_blank(),
        y = expression("Emissions [kg " * CO[2] * "equiv/kg food]"),
        fill = ggplot2::element_blank()) +
@@ -426,7 +426,7 @@ food_emissions_total <- food_emissions_total %>%
 
 food_emissions_total %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = `Food type`, y = `kg CO2 eq/capita/year`)) +
-  ggplot2::geom_bar(stat = "identity", fill = mc_title_blue) +
+  ggplot2::geom_bar(stat = "identity", fill = data_line_colour) +
   ggplot2::labs(x = ggplot2::element_blank(),
        y = expression("Emissions [kg " * CO[2] * "equiv/" * person%.%year * "]"),
        fill = ggplot2::element_blank()) +
