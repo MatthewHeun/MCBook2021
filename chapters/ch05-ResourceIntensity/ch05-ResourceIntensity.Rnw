@@ -819,18 +819,24 @@ noticeable rise in per-capita energy consumption starting in 2001.
 % 
 
 
+% 
+% <<WeakSustEnergyData>>=
+% # Pulling the data OUT of the chunk that makes the graph so the data are available
+% # to the caption of the graph.
+% weak_sust_energy_rho <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
+%                                             sheet = "data to plot") %>%
+%   dplyr::mutate(
+%     `Fossil fuel` = factor(`Fossil fuel`, levels = c("Coal", "Oil", "Natural gas"))
+%   )
+% @
 
-<<WeakSustEnergyData>>=
-# Pulling the data OUT of the chunk that makes the graph so the data are available
-# to the caption of the graph.
+<<WeakSustEnergyGraph, fig.width=3.25, fig.cap=paste0("Percentage above maximum weakly sustainable extraction rates~($\\rho$) for world fossil fuel consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate and a negative value of $\\rho$), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for Oil (less than 50 years, so above the weakly sustainable extraction rate and a positive value of $\\rho$), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for Natural gas (so positive $\\rho$). \\emph{Sources}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
+
 weak_sust_energy_rho <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
                                             sheet = "data to plot") %>% 
   dplyr::mutate(
     `Fossil fuel` = factor(`Fossil fuel`, levels = c("Coal", "Oil", "Natural gas"))
   )
-@
-
-<<WeakSustEnergyGraph, fig.width=3.25, fig.cap=paste0("Percentage above maximum weakly sustainable extraction rates~($\\rho$) for world fossil fuel consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate and a negative value of $\\rho$), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for Oil (less than 50 years, so above the weakly sustainable extraction rate and a positive value of $\\rho$), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for Natural gas (so positive $\\rho$). \\emph{Sources}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
 
 weak_sust_energy_rho %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = `Fossil fuel`, y = `rho [%]`, fill = `Fossil fuel`)) +
@@ -1307,9 +1313,14 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
 
 \begin{projects}
 
-  \item Update the weak sustainability calculations of Table~\ref{tab:weak_sustainability_calcs}
+  \item Update the weak sustainability calculations of Figure~\ref{fig:WeakSustEnergyGraph}
         using the latest data from
         the U.S.\ Energy Information Agency (EIA)~\cite{U.S.-Energy-Information-Agency:tr}.
+
+  \item Update the weak sustainability calculations of Figure~\ref{fig:WeakSustEnergyGraph}, 
+        taking into account projected additions to reserves into the future.
+        Do the weak sustainability estimates
+        of Figure~\ref{fig:WeakSustEnergyGraph} change?
 
   \item Choose a material from the European Commission list of critical raw materials in Table~\ref{tab:CRMs}.
         Do today's consumption rates of that material meet weak or strong sustainability criteria?
@@ -1320,13 +1331,6 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Localized? Global? Other?
         What are the sustainability (environmental, economic, and social) implications
         of the geographical distribution of critical raw material sources?
-
-  \item Re-estimate the time remaining for fossil fuel reserves
-        (Table~\ref{tab:weak_sustainability_calcs})
-        by projecting both demand for fossil fuels
-        and additions to reserves into the future.
-        Do the weak sustainability estimates
-        of Table~\ref{tab:weak_sustainability_calcs} change?
 
   \item Compare the weak sustainability approach %advocated by Graedel and Allenby
         to the methods of David Rutledge~\cite{Rutledge:tv}\index{Rutledge, David}.
