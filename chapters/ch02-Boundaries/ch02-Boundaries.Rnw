@@ -20,7 +20,7 @@ The left-hand side of Equation \ref{eq:IPARX} (repeated below for convenience)
 is impact $I$ on the environment.
 While there are natural processes that have (some) negative impacts on the environment,
 such as volcanic eruptions and wild fires, this book is primarily concerned with
-human impacts to the environment.
+human impacts on the environment.
 Greenhouse gas emissions, such as CO$_2$, are our prime example.
 Other examples of human impact include deforestation, desertification, 
 aquifer depletion, plant and animal extinctions, ground water and soil 
@@ -32,14 +32,15 @@ contamination, ozone depletion, smog creation, habitat destruction, and many oth
 \end{equation}
 
 Chapter \ref{chap:introduction} pointed out the problems of exponential growth.
-But why? Why is continued exponential growth impossible?
-The reason is that we live on a finite planet with finite resources and finite boundaries.
-Continued and greater impacts eventually run up against the Earth's finite boundaries.
-Section \ref{sec:exp} shows that, for exponential growth, the ``eventually'' is
-one doubling time.
-In $ln(2)/r$ time units, the system will go from half its ``budget'' to being
-at the limit, despite many, many previous doublings.
-Part of the curse of exponential growth is that the end seems sudden.
+Continued exponential growth is impossible on a finite planet with finite 
+resources and finite boundaries.
+Continued and greater environmental impacts eventually run up against the Earth's 
+finite boundaries.
+% Section \ref{sec:exp} shows that, for exponential growth, the ``eventually'' is
+% one doubling time.
+% In $ln(2)/r$ time units, the system will go from half its ``budget'' to being
+% at the limit, despite many, many previous doublings.
+% Part of the curse of exponential growth is that the end seems sudden.
 This chapter explores those boundaries -- the ``budget,'' or carrying capacity, 
 of the planet.
 Exceeding Earth's carrying capacity degrades its ability to support life.
@@ -57,8 +58,9 @@ Likewise, the ecosystem provides water, petroleum, and other mineral resources.
 Simply having oceans and an atmosphere \emph{provides} a place for pollution to go.
 
 The second set of services is \emph{regulating and supporting services}, 
-which sustain and stabilize the ecosystem, including 
-processes for breaking down and recycling dead organisms; 
+which sustain and stabilize the ecosystem.
+Regulating and supporting services include processes for breaking down and 
+recycling dead organisms; 
 the carbon cycle; %(see Figure~\ref{fig:CCycle}),  
 nitrogen, oxygen, and water cycles; 
 and the fact that plant roots stabilize soil and prevent erosion.
@@ -73,9 +75,9 @@ Rivers and lakes enable boating and (recreational) fishing opportunities.
 Many international groups have examined the state of Earth's ecosystem services. 
 The Millennium Ecosystem Assessment (MA) is a UN-affiliated group that studied ecosystem
 services between 2001 and 2005. 
-1300 authors from 95 countries were involved in authoring their findings. 
+1300 authors from 95 countries participated. 
 The MA found that (even back then) 15 out of the 24 ecosystem services 
-they examined were being degraded or used unsustainably \cite{MA2005}.
+they examined were being degraded or used unsustainably~\cite{MA2005}.
 %Most heavily affected are inland waters by decline in water quality and fragmentation of wetlands.
 
 One way to think about ecosystem services is as \emph{natural capital}. 
@@ -136,9 +138,9 @@ of species minimizes risk or volatility of return.
 % that \emph{is} required is the concept of a tipping point. The name comes from a boat's 
 %stability, see Figure~\ref{fig:buoyancy}. If the boat is tipped a small amount,
 If a boat is tipped a small amount, the weight of the boat and the effect of 
-buoyancy act to right the boat, see Figure~\ref{fig:buoyancy}. 
+buoyancy act to right the boat; see Figure~\ref{fig:buoyancy}. 
 However, there is an angle where, if the boat is tipped past that angle, the forces 
-will act in the opposite way -- to suddenly and catastrophically flip the boat.
+will act in the opposite way---to suddenly and catastrophically flip the boat.
 A \emph{tipping point} is where the behavior of a system fundamentally changes. 
 There is concern that Earth's ecosystem services may have reached or are near a tipping
 point, that is, they have been disturbed to the point of being on the edge of 
@@ -172,13 +174,13 @@ catastrophic collapse.
 \end{figure}
 
 There is also a cognitive element to the tipping-point analogy. 
-All our experience conditions us to expect the boat to right itself when heeled
-over -- because it has always done so in the past.
+Experience conditions us to expect the boat to right itself when heeled
+over---because it has always done so in the past.
 Having the system behave in a completely different manner is outside our direct
-experience, so we have trouble believing that it can and will really happen, 
+experience, so we have trouble believing that it can or will really happen, 
 despite what math and physics may tell us.
 It is hard for humanity to come to grips with the idea that something really bad
-could happen.
+could happen because we are living unsustainably. 
 
 There are two types of ecological concern with respect to ecosystem services.
 The first is with respect to provisioning services. Humans may ``use up'' a finite
@@ -204,14 +206,14 @@ support ecosystem services, which will lead to a tipping point, that is,
 a fundamental change in the way the ecosystem works. 
 An example that is of particular concern right now is global climate change 
 (principally) caused by human CO$_2$ emissions. 
-Extinction rate is another (see the point above about rivets in the airplane).
+Extinction rate is another, which is analogous to the rivets in the airplane.
 Because the ecosystem's dynamics are nonlinear and interrelated, 
 tipping points exist, and human actions can cause a series of cascading failures
 that will ultimately degrade the Earth's ability to support life. 
-Exponential growth, for instance in human population and consumption, is analogous
+Exponential growth, for instance in human population and the economy, is analogous
 to heeling over a boat. 
 Growth causes greater and great demands on the ecosystem. 
-Eventually the boat heels over so far that it capsizes.
+Eventually the boat (that is, the ecosystem) heels over so far that it capsizes.
 
 % "Climate genocide"
 % https://nymag.com/intelligencer/amp/2018/10/un-says-climate-genocide-coming-but-its-worse-than-that.html
@@ -234,8 +236,8 @@ The result was a permanent loss of soil fertility, erosion, and economic decline
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-"Overgrazing, particularly by goats, was a primary cause of deforestation in
-ancient Greece and Rome" \cite{Hughes1982}.
+``Overgrazing, particularly by goats, was a primary cause of deforestation in
+ancient Greece and Rome''~\cite{Hughes1982}.
 \end{mcframe}
 
 % if we don't understand it, should we mess with it?
@@ -249,8 +251,8 @@ Finally, %while the risk is, perhaps, less acute than it once was,
 a global thermonuclear war would be a humanitarian and environmental disaster on a 
 truly global scale.
 
-Equation~\ref{eq:IPARX} frames sustainability in terms of ``impacts,'' that is, 
-negative effects on the environment resulting from human activity. 
+Equation~\ref{eq:IPARX} frames sustainability in terms of environmental ``impacts,''
+that is, negative effects resulting from human activity. 
 Broadly, there are two approaches for managing or responding to impacts. 
 \emph{Planetary boundaries} describe the maximum (desirable) \emph{level} of effects,
 that is, they establish a limit on the left-hand side of Equation~\ref{eq:IPARX}.
@@ -259,20 +261,19 @@ a proxy management tool.
 The index describes a collection of behaviors. 
 Whereas the planetary boundaries are limits for single variables, indices are a mix
 of variables from both sides of Equation~\ref{eq:IPARX}.
-Neither method describes \emph{how} changes should be made, but each index implicitly
-contains a description of the tradeoffs among the different variables. 
+Neither method describes \emph{how} changes to become more sustainable should be made, 
+but each index implicitly contains a description of the tradeoffs among the different variables. 
 %The boundary method establishes what we don't want to happen. 
 
 % comparison with radiation. humans need some (for vitamin D). more is long-term bad. 
 % Even more is short-term bad. What should the limit be?
 
-
 \section{Planetary boundaries}
 Climate scientists have proposed indicators, which, if exceeded, 
-could render Earth uninhabitable by humans, perhaps catastrophically so 
-in that the resulting changes may be nonlinear and abrupt. 
+could render Earth uninhabitable by humans, perhaps catastrophically 
+because the resulting changes may be nonlinear and abrupt. 
 Table~\ref{tab:planetBoundaries} lists these indicators and states 
-whether they've already been exceeded -- note that exceeding these indicators
+whether they've already been exceeded---note that exceeding these indicators
 means that humanity is not living sustainably.
 The boundary values set for these indicators are intended to define a 
 ``safe operating space for humanity.''
@@ -328,12 +329,14 @@ Chemical pollution                                 & unknown \\
 \end{table}
 
 The limit for atmospheric carbon dioxide concentration
-is no more than 350 ppm (current value is more than 412 ppm, see Figure~\ref{fig:CO2Graph}).
-Less than 15\% of Earth's land area should be converted to cropland (currently 11.7\% is cropland).
+is no more than $350~\mathrm{ppm}$. 
+(The current value is more than $412~\mathrm{ppm}$, 
+as shown in Figure~\ref{fig:CO2Graph}).
+Less than 15\% of Earth's land area should be converted to cropland. (Currently, 11.7\% is cropland).
 The extinction rate should be less than 10 species per million species becoming extinct
 per year. 
 Currently, the rate is more than 100 per million, out of a total of 10 to 14 million
-species, see Chapter \ref{chap:population}, and is accelerating. 
+species (see Chapter \ref{chap:population}) and is accelerating. 
 Generating new species by natural evolution to replace the ones that have been 
 lost will take several million years \cite{Davis11262}.
 
@@ -367,27 +370,32 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
 
 Two of the indicators in Table \ref{tab:planetBoundaries}, 
 particulate concentration in the atmosphere and chemical pollution, 
-did not have proposed limits. In the case of chemical pollution, 
-the vast number of such (possible) pollutants, each of which causes different  
-acute and chronic effects, would make a single ``threshold'' value meaningless. 
+do not have proposed limits. 
+In the case of chemical pollution, the vast number of such (possible) pollutants, 
+each of which causes different acute and chronic effects, would make a single 
+``threshold'' meaningless. 
 Instead, national governments set limits on a chemical-by-chemical basis.
 Agencies such as the US Environmental Protection Agency and the European Commission
-(or member states) handle enforcement of the regulations.
+(or member states) enforce the regulations.
 
 Using planetary boundaries for decision making is similar to rules for when to change
 the engine oil in an automobile (at least in those automobiles that use engine oil).
 Companies that provide oil-change services recommend frequent oil changes, perhaps as 
-often as every 3000 miles. Automobile manufactures have increased this limit over
-decades with better engine and component technology; every 5000-7000 miles might be their 
-recommendation. Newer cars might calculate their own replacement timing based on environmental
-conditions and driving history (essentially using an index, see below). However, \emph{no 
-one} would recommend a 100,000 mile replacement schedule. If the oil is not replaced
-significant damage will be done to the engine, likely disabling the car's ability to drive.
-In this analogy, the car's engine represents planet Earth. The number of miles before
-an oil change is the the planetary boundary. Maybe the boundary has a little bit of slack.
-Replacing the oil at 5000 miles or 5007 miles won't make a functional difference. However,
-drastically exceeding the limit will result in significant, costly, and potentially 
-irreparable damage to the engine. 
+often as every 3000 miles. 
+Automobile manufactures have increased this limit over decades with better 
+engine and component technology; 
+every 5000--7000 miles might be their recommendation. 
+Newer cars might calculate their own replacement timing based on environmental
+conditions and driving history (essentially using an index, see below). 
+However, \emph{no one} would recommend a 100,000 mile replacement schedule. 
+If the oil is not replaced, significant damage will be done to the engine, 
+likely disabling the car's ability to drive.
+In this analogy, the car's engine represents planet Earth. 
+The number of miles before an oil change is the the planetary boundary. 
+Maybe the boundary has a little bit of slack.
+Replacing the oil at 5000 miles or 5007 miles won't make a functional difference. 
+However, drastically exceeding the limit will result in significant, costly, 
+and potentially irreparable damage to the engine. 
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -583,7 +591,7 @@ erodable_limit_data %>%
         \label{fig:GAfig21}
 \end{figure}
 
-Figure \ref{fig:GAfig21} is a conceptual representation of the relationship between
+Figure \ref{fig:GAfig21} is a conceptual representation of four relationships between
 limits or boundaries and human effects on the environment. 
 In part (a), there is no effective limit; human growth can continue unimpeded. 
 However, Section \ref{sec:exp} shows that growth can't continue forever on a finite 
@@ -598,7 +606,7 @@ have behavior like this.
 Lastly, in part (d), exceeding the boundary causes long-term reduction in the 
 capacity of the ecosystem to provide ecosystem services. 
 As above, renewable resources like grazing land, fisheries, timber, and aquifers
-\emph{can} have this behavior if their capacity is exceeded to much or for too long.
+\emph{can} have this behavior if their capacity is exceeded too much or for too long.
 Alternatively, complex systems, like temperature regulation of the planet, may exhibit
 tipping points that can radically change limits to an ecosystem service when the 
 limit is exceeded. 
@@ -632,9 +640,10 @@ different countries.
 
 In contrast to planetary boundaries, which are hard biophysical limits, indices 
 typically represent aggregated behavior. 
-Aggregation allows grouping together of things that are different, for example, 
-in the HDI, life expectancy at birth, expected years of schooling, and gross national income. 
-Another example is the CO$_2$ equivalents, which expresses the global warming 
+Aggregation allows grouping together of things that are different.
+For example, in the HDI, life expectancy at birth, expected years of schooling, 
+and gross national income. 
+Another example is CO$_2$ equivalents, which expresses the global warming 
 potential of various gases such as methane, nitrous oxide, and fluorinated gases
 in terms of the amount of carbon dioxide that would give the same amount of warming,
 disregarding any other environmental effects.
@@ -642,10 +651,10 @@ disregarding any other environmental effects.
 Indices and biophysical limits, such as planetary boundaries, exist to guide 
 decision making. 
 The weightings inherent in indices express preferences for tradeoffs among the 
-different variables. 
+different variables in the index. 
 Furthermore, having expressed an intent or preference for a certain limit, index, 
-or behavior, these variables do not inherently generate strategies for achieving 
-the goals or enforcement mechanisms for maintaining behavior. 
+or behavior, these indices do not inherently generate strategies for achieving 
+goals or enforcement mechanisms for maintaining desired behavior. 
 It remains for scientists, policy makers, and government officials to conduct 
 research, make recommendations, regulate, and enforce laws.
 
@@ -710,7 +719,7 @@ the \emph{impacts} of climate on the environment are many.
 Climate change is the term used to describe the results of the greenhouse effect.
 Climate change is interacting with many other planetary systems and thus contributes
 to, for example, the extinction rate. 
-Climate change is causing ocean acidification, sea level rise, and the increased 
+Climate change is causing ocean acidification, sea level rise, and increased 
 frequency of extreme natural disasters, such as wild fires and destructive tropical storms. 
 
 <<extract_fit_coeffs>>=
@@ -769,27 +778,29 @@ ggplot2::ggplot() +
 CO$_2$ emissions are an especially important sustainability issue 
 because of widespread effects. 
 CO$_2$ emissions are also especially important for at least two other reasons. 
-First, CO$_2$ emissions may trigger a tipping point or tipping points in the Earth's ecosystems,
-related to deforestation, wild fires, ocean acidification, and species loss. 
+First, CO$_2$ emissions may trigger a tipping point or tipping points in the 
+Earth's ecosystems, related to deforestation, wild fires, ocean acidification, 
+methane release from permafrost, and species loss. 
 Second, most greenhouse gas emissions are within human control, 
 especially regarding fossil fuels and agriculture. 
 
 % see http://clivebest.com/blog/?p=1169 and references therein.
 Here's a brief description of how climate change is happening. 
-**** In the $\beta$ version of the text, this description will be made more complete. ****
-If the radiation received from the sun exceeds the radiation given off by the Earth,
+%**** In the $\beta$ version of the text, this description will be made more complete. ****
+If the radiation received from the sun exceeds the heat radiated from the Earth,
 the Earth's temperature will increase. 
-Increasing temperatures increases the amount of radiation given off by the Earth.
+As the Earth's temperature increases, the amount of heat radiated from the Earth
+increases as well.
 Eventually, a new equilibrium will be achieved. 
 Radiation received from the sun is relatively constant; there are a variety of 
 satellite-based and Earth-bound measurement systems to confirm this. 
-Because the sun is very hot, the radiation it emits is high energy (short wave length).
+Because the sun is very hot, the radiation it emits is high energy (short wavelength).
 Greenhouse gases, of which CO$_2$ is of chief concern, do not absorb these
-short wave lengths. 
-Radiation from the Earth is low energy (long wave length) because the Earth's
+short wavelengths. 
+Radiation from the Earth is low energy (long wavelength) because the Earth's
 surface temperature is much lower than the Sun's.
-CO$_2$ \emph{does} absorb energy at these wavelengths.
-The lower atmosphere is opaque to thermal radiation from the Earth's surface.
+CO$_2$ \emph{does} absorb energy at these shorter wavelengths.
+The lower atmosphere is thus opaque to thermal radiation from the Earth's surface.
 All radiation leaving the Earth's surface is absorbed by CO$_2$ and reradiated
 to upper levels of the atmosphere. 
 Eventually, in the upper atmosphere, the atmosphere gets thin enough that 
@@ -798,7 +809,8 @@ When CO$_2$ is added to the atmosphere, it traps radiation leaving the Earth
 at higher and higher levels of the atmosphere.
 However, since the atmosphere grows colder at higher elevations, the radiation into
 space is less effective than at lower elevations. 
-We are essentially adding radiation shields to the upper atmosphere. 
+By increasing atmospheric CO$_2$ concentration, we are essentially adding radiation 
+shields to the upper atmosphere. 
 Less radiation leaving the upper atmosphere means that more heat is trapped
 closer to the Earth's surface. 
 Eventually the upper atmosphere will warm enough to radiate as much heat as 
@@ -826,9 +838,11 @@ for a 50\% likelihood of remaining below 1.5~\degC{}~\cite[Table~SPM.2]{IPCC:202
 Assuming no change in the CO$_2$ emissions rate and
 given that we are emitting about 35~GtCO$_2$/year
 (Figure~\ref{fig:CarbonEmissionsGraph}), 
-we have less than 15 years before 1.5~\degC{} is reached.
+we have less than 15 years before we have committed to a long-term  1.5~\degC{}
+temperature increase (assuming we don't find a way to remove CO$_2$ from at 
+atmosphere).
 Given that CO$_2$ emissions are not staying constant but are, in fact, rising,
-we have about a decade before we reach 1.5~\degC{} of warming
+we have about a decade before we reach 1.5~\degC{} of eventual warming
 and irreversible effects of climate change.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -880,11 +894,11 @@ London: Fouth Estate,
 The age of stupid, a 2009 documentary film. \\
 
 \noindent 
-A convenient truth: Urban solutions from Curitiba, Brazil: \\
+A convenient truth: Urban solutions from Curitiba, Brazil \\
 \url{www.filmsforaction.org/watch/a-convenient-truth} \\
 
 \noindent 
-The power of community: How Cuba survived peak oil: \\
+The power of community: How Cuba survived peak oil \\
 \url{www.filmsforaction.org/watch/the-power-of-community-how-cuba-survived-peak-oil-2006}
 
 
@@ -900,8 +914,8 @@ The power of community: How Cuba survived peak oil: \\
       can equally well be used to argue for a precautionary approach. What are 
       pros and cons of ``wait and see'' versus ``let's be careful?''
       
-\item One extreme form of habitat restoration is known as ``Pleistoscene rewilding''
-      \cite{Donlan2005}. %%https://www.nature.com/articles/436913a
+\item One extreme form of habitat restoration is known as 
+      ``Pleistoscene rewilding''~\cite{Donlan2005}. %%https://www.nature.com/articles/436913a
       Extinct species are either re-created through gene editing or are replaced
       by a closest living analog in an attempt to re-create an ecosystem that is 
       as similar as possible to that which existed 1.8 million to 11,700 years ago. 
@@ -1026,7 +1040,7 @@ The power of community: How Cuba survived peak oil: \\
       There are no countries that have high human well being and low ecological impact.
       Why do you think this is?
       Is it more important to raise HDI or to lower ecological impact? Why?
-      Who has responsibility for making your desired change?
+      Who has responsibility for bringing about your desired change?
       %What can be done to push all countries to the lower-right corner of this graph?
       
 \item The calculation of HDI weights life expectancy, education, and national
@@ -1101,9 +1115,10 @@ The power of community: How Cuba survived peak oil: \\
       by comparing and contrasting the results of several online calculators.
 
 \item Calculate your carbon footprint by comparing and contrasting the results
-      of several online calculators. Are there other measures of impact that 
-      you should consider as well? Are there easily accessible tools 
-      (e.g., online) for those?
+      of several online calculators. 
+      Are there other measures of impact that you should consider as well? 
+      Are there easily accessible (for example, online) tools for those other measures?
+      What results do you get?
       
 \item Research several measures of human well being. Which is best and why? 
 
