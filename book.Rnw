@@ -51,7 +51,12 @@
 \newcommand{\figwidth}{0.85\linewidth}
 % The "math font trick" to get Libre Caslon font in italics inside equations.
 \newcommand{\mft}[1]{\text{\emph{#1}}}
-\newcommand{\Xparen}{(\mft{X}\,)}
+\newcommand{\Iparen}{(\:\!\mft{I}\:\!)}
+\newcommand{\Pparen}{(\:\!\mft{P}\;\!)}
+\newcommand{\Aparen}{(\;\!\mft{A}\:\!)}
+\newcommand{\Rparen}{(\:\!\mft{R}\;\!)}
+\newcommand{\Xparen}{(\;\!\mft{X}\:)}
+\newcommand{\Tparen}{(\mft{T}\:)}
 % IPARX equation
 \newcommand{\iparx}{
 \footnotesize
