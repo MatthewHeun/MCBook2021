@@ -79,18 +79,18 @@ Coal is the \emph{primary} energy source.
 The electricity sold to consumers is considered to be a \emph{final} energy carrier.%
 \footnote{
   Note that the term ``final'' comes from economics,
-  where electricity purchased by consumers is 
+  where electricity purchases by consumers are 
   counted in ``final demand.''
 }
 %
 Hydro, solar, and wind are primary energy sources. 
-So are coal, crude oil, and natural gas.
+So are coal, crude oil, and methane.
 In contrast, gasoline is a refined fuel. 
 As such, it is the \emph{product} of 
 a refinery that converts crude oil to refined fuels. 
 Likewise, natural uranium is a primary energy carrier that must be converted into 
 fissionable uranium fuel before it can be used in a nuclear power plant to generate electricity.
-The refinery or nuclear-fuel enrichment process can be evaluated for their
+The oil refinery or nuclear-fuel enrichment process can be evaluated for their
 energy return on investment (EROI). 
 (See Section~\ref{sec:masterE}.)
 
@@ -566,8 +566,7 @@ with a less valuable, less scarce, or renewable resource%
   For a related discussion of substitution in consumption,
   see Q\ref{chap:resource_intensity}.\ref{question:consumption_substitution}.
 }.
-From a weak sustainability perspective,
-replacing use of a scarce resource with use of an abundant resource
+Replacing use of a scarce resource with use of an abundant resource
 typically extends the time horizon for depleting manufacturing feedstocks and
 brings us closer to weak sustainability.
 
@@ -586,19 +585,22 @@ with paper or cardboard wrappings (renewable), and
 use of solar electricity (renewable) instead of coal electricity (nonrenewable).
 Switching from consuming nonrenewable resources
 to consuming renewable resources
-is an important aspect of sustainability, either the weak \emph{or} the strong version.
+is an important aspect of sustainability, 
+for both the weak \emph{and} the strong versions.
 
-That said, it is important to note limits to substitutability.
+That said, there are important limits to substitutability.
 At a manufacturing plant, the type of electricity
 (e.g., coal electricity\index{electricity!coal} or solar electricity\index{electricity!solar})
 is immaterial,
 so long as both options are (for the U.S.) 120 V at 60 Hz.
-However, at the power station,
-the different feedstocks for electricity production are \emph{not} substitutes.
+From the point of view of the manufacturing plant, coal electricity and solar electricity are 
+perfect substitutes.
+However, at the point of electricity generation, 
+the feedstocks for electricity production are \emph{not} substitutes.
 Coal-fired Rankine cycle\index{Rankine cycle} power plants
 cannot use the Sun's energy to make electricity.
 Similarly, a pile of coal is useless
-to a solar photovoltaic\index{solar photovoltaic electricity} farm.
+to solar photovoltaic\index{solar photovoltaic electricity} farms.
 
 Sometimes a scarce (and expensive), renewable resource is replaced by a
 less-expensive, nonrenewable alternative.
