@@ -183,8 +183,8 @@ TSI <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets
 
 TSI %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "value", linetype = "indicator", size = "indicator")) + 
-  ggplot2::geom_hline(yintercept = 100, colour = "gray", size = 0.2) +
-  ggplot2::geom_line(colour = mc_title_blue) +
+  ggplot2::geom_hline(yintercept = 100, size = guide_line_size, colour = guide_line_colour) +
+  ggplot2::geom_line(colour = data_line_colour) +
   ggplot2::scale_y_continuous(limits = c(0, 150)) +
   ggplot2::scale_linetype_manual(values = c(Freight = 3, Overall = 1, Passenger = 2)) +
   ggplot2::scale_size_manual(values = c(Freight = 0.5, Overall = 1, Passenger = 0.5)) +
@@ -373,7 +373,7 @@ mpg_data <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "dat
 
 mpg_data %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "mpg", linetype = "type", size = "type")) +
-  ggplot2::geom_line(colour = mc_title_blue) +
+  ggplot2::geom_line(colour = data_line_colour) +
   ggplot2::scale_linetype_manual(values = c(Car = 2, Fleet = 1, Truck = 3)) +
   ggplot2::scale_size_manual(values = c(Car = 0.5, Fleet = 1, Truck = 0.5)) +
   ggplot2::scale_x_continuous(limits = c(1978, 2020)) +
