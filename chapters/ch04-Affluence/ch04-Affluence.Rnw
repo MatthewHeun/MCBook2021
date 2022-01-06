@@ -128,16 +128,28 @@ consumption of finite resources is ultimately unsustainable.)
 % @
 
 
-<<AffluenceGraph-Nordhaus, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation~\\ref{eq:IPARX}. \\emph{Sources}: data for 1990--2020 from the \\citet{World-Bank:2021un}; data for 1800--1989 inferred from GDP per capita growth rates from \\citet{Nordhaus:1997vi} via \\citet{DeLong:1997ui}.">>=
+<<AffluenceGraph-Nordhaus, fig.cap = paste0("Annual world GDP per capita, affluence ($A$) in Equation~\\ref{eq:IPARX}. ",  fit_sentence(gdppc_fit), " \\emph{Sources}: data for 1800--1989 inferred from GDP per capita growth rates from \\citet{Nordhaus:1997vi} via \\citet{DeLong:1997ui}; data for 1990--2020 from the \\citet{World-Bank:2021un}.")>>=
 world_gdppc_Nordhaus <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
                                            sheet = "GDPpc-Nordhaus-WB") %>% 
   dplyr::select(-Country, -Source)
-world_gdppc_Nordhaus %>% 
-  dplyr::mutate(
-    gdppc_2017_thousand_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000
-  ) %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "gdppc_2017_thousand_intl_dollars_per_capita")) + 
-  ggplot2::geom_line(size = 1, colour = mc_title_blue) + 
+
+gdppc_fit <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "Ch4ExpCurveFits.xlsx"),
+                                           sheet = "GDPpc fit 1950 onward")
+
+  ggplot2::ggplot() + 
+    ggplot2::geom_line(data = world_gdppc_Nordhaus %>% 
+                         dplyr::mutate(
+                           gdppc_2017_thousand_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000
+                         ), 
+                       mapping = ggplot2::aes_string(x = "Year", y = "gdppc_2017_thousand_intl_dollars_per_capita"), 
+                       size = data_line_size, 
+                       colour = data_line_colour, 
+                       linetype = data_linetype) + 
+    ggplot2::geom_line(data = gdppc_fit, 
+                       mapping = ggplot2::aes(x = Year, y = gdppc_2017_thousand_intl_dollars_per_capita_fit), 
+                       size = curve_fit_size, 
+                       colour = curve_fit_colour, 
+                       linetype = curve_fit_linetype) +
   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 20, by = 2))) +
   ggplot2::labs(x = NULL, 
                 y = expression("Affluence (A) [2017 Intl. k$/" * person%.%year * "]")) +
@@ -206,7 +218,7 @@ world_gdppc_Nordhaus %>%
 %   MKHthemes::xy_theme()
 % @
 
-<<GDPGraph-Nordhaus, fig.cap="World annual GDP calculated by multiplying world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph-Nordhaus}.">>=
+<<GDPGraph-Nordhaus, fig.cap=paste0("World annual GDP calculated by multiplying world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph-Nordhaus}.", fit_sentence(gdp_fit))>>=
 # Gather world population data
 world_pop <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "WorldPopulation.xlsx"),
                                 sheet = "world_pop") %>%
@@ -222,18 +234,29 @@ world_gdp_Nordhaus <- dplyr::inner_join(
     world_gdp_2017_intl_dollars = gdppc_2017_intl_dollars_per_capita * population
   )
 
+gdp_fit <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "Ch4ExpCurveFits.xlsx"),
+                                           sheet = "GDP fit 1950 onward")
+  
 # Graph but in trillion dollars.
-world_gdp_Nordhaus %>%
-  dplyr::mutate(
-    GDP_trillion_2017_intl_dollars = world_gdp_2017_intl_dollars / 1e12
-  ) %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "GDP_trillion_2017_intl_dollars")) +
-  ggplot2::geom_line(size = 1, colour = mc_title_blue) +
-
+ggplot2::ggplot() +
+  ggplot2::geom_line(data = world_gdp_Nordhaus %>%
+                       dplyr::mutate(
+                         GDP_trillion_2017_intl_dollars = world_gdp_2017_intl_dollars / 1e12
+                       ), 
+                     mapping = ggplot2::aes(x = Year, y = GDP_trillion_2017_intl_dollars), 
+                     size = data_line_size, 
+                     colour = data_line_colour, 
+                     linetype = data_linetype) +
+  ggplot2::geom_line(data = gdp_fit, 
+                     mapping = ggplot2::aes(x = Year, y = world_gdp_trillion_2017_intl_dollars_fit), 
+                     size = curve_fit_size, 
+                     colour = curve_fit_colour, 
+                     linetype = curve_fit_linetype) +
+  
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = NULL,
                 y = "World GDP [2017 Intl. T$/year]") +
-
+  
   MKHthemes::xy_theme()
 @
 

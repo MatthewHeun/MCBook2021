@@ -312,7 +312,7 @@ We're using nearly the same amount (mass) of construction minerals, ores, and fo
 per GDP as we ever have.
 
 
-<<total_material_use, fig.cap="Total world material use. ``Construction'' includes all construction minerals. ``Ores'' includes industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is metric tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
+<<total_material_use, fig.cap=paste0("World material use. ``Construction'' includes all construction minerals. ``Ores'' includes industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is metric tonnes (1000 kg). ", fit_sentence(extracted_material_fit), " \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.")>>=
 krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
                                 sheet = "data to plot") %>% 
   dplyr::rename(
@@ -326,11 +326,20 @@ krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", 
     type = factor(type, levels = c("Construction", "Ores", "Fossil fuels", "Biomass"))
   )
 
-krausmann %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = `Extracted material [Gt]`, fill = type)) +
-  ggplot2::geom_area() + 
-  ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
+extracted_material_fit <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "ExtractedMaterialCurveFit.xlsx"), 
+                                             sheet = "ExtractedMaterialCurveFt - 1950")
+
+ggplot2::ggplot() +
+  ggplot2::geom_area(data = krausmann, 
+                     mapping = ggplot2::aes(x = Year, y = `Extracted material [Gt]`, fill = type)) + 
   ggplot2::scale_fill_viridis_d(direction = -1) +
+  ggplot2::geom_line(data = extracted_material_fit, 
+                     mapping = ggplot2::aes(x = Year, y = Fit), 
+                     size = curve_fit_size, 
+                     colour = curve_fit_colour, 
+                     linetype = curve_fit_linetype) +
+  
+  ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
   ggplot2::labs(y = "Extracted material [Gt/year]") +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
@@ -340,7 +349,7 @@ krausmann %>%
 @
 
 
-<<per_capita_material_use, fig.cap='Per-capita material extraction. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: \\citet[Figure~1c]{Krausmann:2009wc}.'>>=
+<<per_capita_material_use, fig.cap='World per-capita material use. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: \\citet[Figure~1c]{Krausmann:2009wc}.'>>=
 material_per_capita <- krausmann %>% 
   dplyr::left_join(historical_pop, by = "Year") %>% 
   dplyr::mutate(
@@ -365,7 +374,7 @@ material_per_capita %>%
 
 
 
-<<per_gdp_material_use, fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of construction materials, ores, and fossil fuels scales quite well with GDP and shows no growth on this graph, as the thickness of those bands varies little over time. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<per_gdp_material_use, fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of construction materials, ores, and fossil fuels scales quite well with GDP and shows no growth on this graph, as the thickness of those bands varies little over time. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 material_per_gdp <- krausmann %>% 
   dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>% 
   dplyr::mutate(
@@ -663,7 +672,7 @@ Industry and transportation use more energy than residences and commerce.
 \end{figure}
 
 
-<<PrimaryEnergyGraph, fig.cap="World annual primary energy consumption. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels. \\emph{Source}: \\citet{Roser:2021vi}.">>=
+<<PrimaryEnergyGraph, fig.cap=paste0("World annual primary energy consumption. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels. ", fit_sentence(primary_energy_fit), " \\emph{Source}: \\citet{Roser:2021vi}.")>>=
 # Gather data for primary energy vs. time graph
 primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "global-primary-energy.xlsx"),
                                      sheet = "data to plot") %>%
@@ -694,11 +703,20 @@ primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensi
     energy_EJ = energy_TWh * 0.0036
   )
 
+primary_energy_fit <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "PrimaryEnergyCurveFit.xlsx"),
+                                     sheet = "PrimaryEnergyCurveFit - 1950")
+
 # Make the graph
-primary_energy %>%
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_EJ", fill = "primary_energy_type")) +
-  ggplot2::geom_area() +
+ggplot2::ggplot() +
+  ggplot2::geom_area(data = primary_energy, 
+                     mapping = ggplot2::aes_string(x = "Year", y = "energy_EJ", fill = "primary_energy_type")) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
+  ggplot2::geom_line(data = primary_energy_fit, 
+                     mapping = ggplot2::aes(x = Year, y = Fit), 
+                     size = curve_fit_size, 
+                     colour = curve_fit_colour, 
+                     linetype = curve_fit_linetype) +
+  
   ggplot2::labs(x = NULL,
                 y = "World energy consumption [EJ/year]",
                 fill = NULL) +
@@ -753,7 +771,9 @@ dplyr::filter(Country == "Europe") %>%
      energy_per_person_GJpercap = energy_EJ / total_population_billions
    ) %>%
    ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_person_GJpercap")) +
-   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+   ggplot2::geom_line(size = data_line_size,
+                      colour = data_line_colour, 
+                      linetype = data_linetype) +
 
    ggplot2::scale_y_continuous(limits = c(0, 80)) +
    ggplot2::labs(x = NULL,
@@ -799,18 +819,24 @@ noticeable rise in per-capita energy consumption starting in 2001.
 % 
 
 
+% 
+% <<WeakSustEnergyData>>=
+% # Pulling the data OUT of the chunk that makes the graph so the data are available
+% # to the caption of the graph.
+% weak_sust_energy_rho <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
+%                                             sheet = "data to plot") %>%
+%   dplyr::mutate(
+%     `Fossil fuel` = factor(`Fossil fuel`, levels = c("Coal", "Oil", "Natural gas"))
+%   )
+% @
 
-<<WeakSustEnergyData>>=
-# Pulling the data OUT of the chunk that makes the graph so the data are available
-# to the caption of the graph.
+<<WeakSustEnergyGraph, fig.width=3.25, fig.cap=paste0("Percentage above maximum weakly sustainable extraction rates~($\\rho$) for world fossil fuel consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate and a negative value of $\\rho$), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for Oil (less than 50 years, so above the weakly sustainable extraction rate and a positive value of $\\rho$), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for Natural gas (so positive $\\rho$). \\emph{Sources}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
+
 weak_sust_energy_rho <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
                                             sheet = "data to plot") %>% 
   dplyr::mutate(
     `Fossil fuel` = factor(`Fossil fuel`, levels = c("Coal", "Oil", "Natural gas"))
   )
-@
-
-<<WeakSustEnergyGraph, fig.width=3.25, fig.cap=paste0("Percentage above maximum weakly sustainable extraction rates~($\\rho$) for world fossil fuel consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate and a negative value of $\\rho$), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for Oil (less than 50 years, so above the weakly sustainable extraction rate and a positive value of $\\rho$), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for Natural gas (so positive $\\rho$). \\emph{Sources}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
 
 weak_sust_energy_rho %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = `Fossil fuel`, y = `rho [%]`, fill = `Fossil fuel`)) +
@@ -1287,9 +1313,14 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
 
 \begin{projects}
 
-  \item Update the weak sustainability calculations of Table~\ref{tab:weak_sustainability_calcs}
+  \item Update the weak sustainability calculations of Figure~\ref{fig:WeakSustEnergyGraph}
         using the latest data from
         the U.S.\ Energy Information Agency (EIA)~\cite{U.S.-Energy-Information-Agency:tr}.
+
+  \item Update the weak sustainability calculations of Figure~\ref{fig:WeakSustEnergyGraph}, 
+        taking into account projected additions to reserves into the future.
+        Do the weak sustainability estimates
+        of Figure~\ref{fig:WeakSustEnergyGraph} change?
 
   \item Choose a material from the European Commission list of critical raw materials in Table~\ref{tab:CRMs}.
         Do today's consumption rates of that material meet weak or strong sustainability criteria?
@@ -1300,13 +1331,6 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Localized? Global? Other?
         What are the sustainability (environmental, economic, and social) implications
         of the geographical distribution of critical raw material sources?
-
-  \item Re-estimate the time remaining for fossil fuel reserves
-        (Table~\ref{tab:weak_sustainability_calcs})
-        by projecting both demand for fossil fuels
-        and additions to reserves into the future.
-        Do the weak sustainability estimates
-        of Table~\ref{tab:weak_sustainability_calcs} change?
 
   \item Compare the weak sustainability approach %advocated by Graedel and Allenby
         to the methods of David Rutledge~\cite{Rutledge:tv}\index{Rutledge, David}.

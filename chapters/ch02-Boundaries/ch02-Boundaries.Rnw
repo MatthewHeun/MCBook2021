@@ -347,9 +347,17 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
   ) %>%
   # Make the graph
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "Atmospheric_CO2_concentration_ppm")) +
-  ggplot2::geom_vline(xintercept = -2020/1000, size = 0.2) +
-  ggplot2::geom_hline(yintercept = 350, size = 0.2, colour = "red") +
-  ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+  ggplot2::geom_vline(xintercept = -2020/1000,
+                      size = guide_line_size, 
+                      colour = guide_line_colour, 
+                      linetype = guide_linetype) +
+  ggplot2::geom_hline(yintercept = 350,
+                      size = guide_line_size, 
+                      colour = "red",
+                      linetype = guide_linetype) +
+  ggplot2::geom_line(size = data_line_size, 
+                     colour = data_line_colour, 
+                     linetype = data_linetype) +
   # Because we're plotting years BCE
   ggplot2::scale_x_reverse() +
   ggplot2::labs(x = "Year [thousand years BCE]",
@@ -477,8 +485,14 @@ greatly exceeded.
 boundary_graph <- function(df) {
   df %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "t")) +
-  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "development"), colour = mc_title_blue, size = 1.5) + 
-  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "bound"), colour = "red", size = 1.5, linetype = 6) + 
+  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "development"), 
+                     size = data_line_size, 
+                     colour = data_line_colour, 
+                     linetype = data_linetype) + 
+  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "bound"), 
+                     colour = curve_fit_colour,
+                     size = data_line_size, 
+                     linetype = 6) + 
   ggplot2::labs(x = "time") +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_blank(),
@@ -592,8 +606,12 @@ Carbon dioxide in the atmosphere is thought/feared to be an example
 of this sort of behavior; when CO$_2$ increases too much, Earth will get 
 \emph{dramatically} hotter, fundamentally altering many of its basic systems.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Indices for sustainability}
 \label{sec:indices}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 There are many, many indices used to express or measure sustainability. 
 All indices are, essentially, (weighted) averages of quantities related to
 one or more of the three areas of sustainability shown in Figure \ref{fig:venn_diagram}.
@@ -643,8 +661,14 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "HDI", y = "Ecological_Footprint_gha_per_person", 
                                                 colour = "Continent", alpha = "Continent", shape = "Continent",
                                                 size = "Population")) + 
-  ggplot2::geom_vline(xintercept = c(0.7, 0.8), size = 0.2) +
-  ggplot2::geom_hline(yintercept = 1.6, size = 0.2) +
+  ggplot2::geom_vline(xintercept = c(0.7, 0.8),
+                      size = guide_line_size, 
+                      colour = guide_line_colour, 
+                      linetype = guide_linetype) +
+  ggplot2::geom_hline(yintercept = 1.6,  
+                      size = guide_line_size, 
+                      colour = guide_line_colour, 
+                      linetype = guide_linetype) +
   ggplot2::geom_point() + 
   ggplot2::scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, by = 0.2)) + 
   ggplot2::scale_y_continuous(limits = c(0, 16), breaks = seq(0, 16, by = 2)) + 
@@ -690,16 +714,31 @@ Climate change is causing ocean acidification, sea level rise, and the increased
 frequency of extreme natural disasters, such as wild fires and destructive tropical storms. 
 
 <<extract_fit_coeffs>>=
-extract_fit_coeffs <- function(df) {
-  
+fit_sentence <- function(.df) {
+  a <- .df %>% 
+    dplyr::filter(coeffs == "a") %>%
+    magrittr::extract2("values")
+  b <- .df %>%
+    dplyr::filter(coeffs == "b") %>%
+    magrittr::extract2("values") %>%
+    magrittr::multiply_by(100) # To convert from decimal to percent/year.
+  r2 <- .df %>%
+    dplyr::filter(coeffs == "r2") %>%
+    magrittr::extract2("values")
+  paste0("The dashed, red line shows an exponential curve fit to data after 1950 ", 
+         "with exponential growth rate of ", 
+         b %>% sprintf(fmt = "%#.2f"), 
+         "~\\%/year and $R^2$~=~", 
+         r2 %>% sprintf(fmt = "%#.3f"), 
+         ".")
 }
 @
 
-<<CarbonEmissionsGraph, fig.cap=paste0("World CO$_2$ emissions from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. The red line shows an exponential curve fit to the data since 1950. The curve fit has an exponential growth rate of ", fit %>% dplyr::filter(coeffs == "b") %>% magrittr::extract2("values") %>% magrittr::multiply_by(100) %>% round(2), "\\%/year and $R^2$ = ", " \\emph{Source}: \\citet{Ritchie:2021vw}.")>>=
+<<CarbonEmissionsGraph, fig.cap=paste0("World CO$_2$ emissions from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. ", fit_sentence(CO2_fit), " \\emph{Source}: \\citet{Ritchie:2021vw}.")>>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                                     sheet = "data to plot")
 
-fit <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "CO2EmissionsCurveFit.xlsx"), 
+CO2_fit <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "CO2EmissionsCurveFit.xlsx"), 
                           sheet = "CO2EmissionsCurveFit from 1950")
 
 max_y <- 40 # Gt/year
@@ -710,13 +749,15 @@ ggplot2::ggplot() +
                        dplyr::filter(Year >= 1800) %>%
                        dplyr::mutate(CO2_emissions_Gt = CO2_emissions_tonnes / 1e9),
                      mapping = ggplot2::aes(x = Year, y = CO2_emissions_Gt),
-                     size = 1,
-                     colour = mc_title_blue) +
-  ggplot2::geom_line(data = fit %>% 
+                     size = data_line_size,
+                     colour = data_line_colour, 
+                     linetype = data_linetype) +
+  ggplot2::geom_line(data = CO2_fit %>% 
                        dplyr::filter(Fit <= max_y),
                      mapping = ggplot2::aes(x = Year, y = Fit),
-                     size = 0.5,
-                     colour = curve_fit_colour) +
+                     size = curve_fit_size,
+                     colour = curve_fit_colour, 
+                     linetype = curve_fit_linetype) +
 
   ggplot2::scale_y_continuous(limits = c(0, max_y)) +
   ggplot2::labs(x = NULL,
