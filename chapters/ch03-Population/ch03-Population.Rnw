@@ -51,7 +51,11 @@ standard of living.
 This interaction between population \mft{P}, affluence \mft{A}, and resource \mft{R} scarcity
 is discussed in Section~\ref{sec:malthus_ehrlich_simon}.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Animal populations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %some stories about animal populations: passenger pigeons, bison, whales, aurochs, locusts,
 % North American megafauna, North Atlantic cod shoals....
 Currently, humans (36\%) and domestic livestock (60\%) constitute 96\% of the mass of
@@ -111,13 +115,13 @@ factor for the decline in many insect populations.
 Bees are a particularly alarming example of insecticide-driven species decline  
 because of the valuable role bees play in pollinating human crops.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Human population}
 \label{sec:human_population}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-<<PopulationGraph, fig.cap=paste0("World population, $P$ in the IPARX equation. ", fit_sentence(population_fit), " \\emph{Source}: \\citet{Roser:2021uu}.")>>=
+<<PopulationGraph, fig.cap="World population, $P$ in the IPARX equation. \\emph{Source}: \\citet{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
@@ -156,11 +160,11 @@ ggplot2::ggplot() +
                                             y = total_population_billions, 
                                             fill = Country)) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
-  ggplot2::geom_line(data = population_fit,
-                     mapping = ggplot2::aes(x = Year, y = Fit),
-                     size = curve_fit_size, 
-                     colour = curve_fit_colour, 
-                     linetype = curve_fit_linetype) +
+  # ggplot2::geom_line(data = population_fit,
+  #                    mapping = ggplot2::aes(x = Year, y = Fit),
+  #                    size = curve_fit_size, 
+  #                    colour = curve_fit_colour, 
+  #                    linetype = curve_fit_linetype) +
   ggplot2::labs(x = ggplot2::element_blank(),
                 y = "World population (P) [billions]",
                 fill = ggplot2::element_blank()) +
@@ -176,6 +180,7 @@ growth rate of 1.05~\%/year.
 The average growth rate since 1950
 was \Sexpr{pop_growth_rate}~\%/year, 
 with a peak growth rate of 2.1~\%/year between 1965 and 1970.
+
 
 %++++++++++++++++++++++++++++++
 \subsection{Past human populations}
