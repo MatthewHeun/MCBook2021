@@ -556,9 +556,11 @@ economies.
 
 A steady-state economy\index{economy!steady-state} is one that neither grows nor shrinks.
 Its size (measured in \$/year) stays the same through time.
-A steady-state economy would experience no change in the standard of living from 
-one generation to the next,
-as was (nearly) the case in the ancient and medieval worlds.
+A with a stable population, a steady-state economy would experience no change 
+in the standard of living \Aparen{} from one generation to the next.
+If population changes (up or down), then affluence changes too, even if the size
+of the economy is fixed.
+
 
 A steady-state economy is not inherently sustainable.
 In fact, the sustainability of an economy is not determined by its growth rate
@@ -590,7 +592,8 @@ degrowth advocates embrace the fact that many economies need to become smaller
 to be sustainable.
 There are substantial social and political pressures against degrowth.
 And for good reason!
-Degrowth implies a reduction in the standard of living.
+Degrowth implies a reduction in the standard of living
+(at least for a constant or growing population).
 Although Figure~\ref{fig:FootprintHDIGraph} implies a lower standard of living
 is necessary for sustainability, accepting a drastically lower standard of 
 living is extremely unpalatable for most people.
@@ -600,6 +603,9 @@ The costs are real and, to date,
 there has been no political will or action to make 
 such a transition in the amount of time it would take to avoid a climate
 crisis.
+On the other hand, perhaps if population were to fall faster than the rate of 
+economic degrowth, it would be possible to have rising affluence along with
+lower environmental impacts.
 
 %..............................
 \paragraph{Circular economy} \index{economy!circular}
