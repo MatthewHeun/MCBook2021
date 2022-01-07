@@ -800,7 +800,7 @@ many years in education and government led him to quip frequently
 % When energy efficiency is deployed as a means of reducing CO$_2$ emissions,
 % the carbon intensity of energy ($X$ in the IPARX identity) will go down.
 Energy efficiency is widely seen as a means of reducing CO$_2$ emissions.
-The thinking goes that either the resource intensity ($R$ in the IPARX identity, 
+The thinking goes that either the resource intensity (\:\!\mft{R} in the IPARX identity, 
 Equation~\ref{eq:IPARX}) 
 or impact intensity~\Xparen{}, or both,
 will go down as efficiency rises.
@@ -881,7 +881,7 @@ has been decreasing over time,
 as shown in Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 Thus, as GPD ($\mft{P} \times \mft{A}$\:\!) rises, 
 the primary energy intensity of the economy
-($R$ in the IPARX equation for the prime example) 
+(\:\!\mft{R} in the IPARX equation for the prime example) 
 is expected to fall, 
 as it has been for 220 years.
 (Recall from Section~\ref{sec:energy_intensity_of_the_economy}, 
