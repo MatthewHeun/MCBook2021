@@ -226,12 +226,12 @@ carbon_intensity %>%
 Equation~\ref{eq:IPARX} shows that reducing any of the right-hand side terms to 0
 will eliminate CO$_2$ emissions.
 That is, if population ($P$), 
-affluence ($A$),
+affluence~\Aparen{},
 energy intensity of the economy ($R_{Ep}$, the prime example for $R$)
 \emph{or} carbon intensity of energy $X_{CO_2}$ (the prime example for $X$)
 go to zero,
 CO$_2$ emissions will be eliminated.
-Few people want to reduce population ($P$) or affluence ($A$).
+Few people want to reduce population ($P$) or affluence~\Aparen{}.
 The primary energy intensity of the economy, $R_{Ep}$, is declining
 (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}),
 but not as fast as population (Figure~\ref{fig:PopulationGraph})
@@ -807,7 +807,7 @@ by a mechanism called the ``rebound effect''~\cite{Brockway:2021ww},
 wherein monetary savings (from reduced energy consumption at a newly-efficient device)
 are reinvested, leading to economic growth.
 Economic growth raises the GDP of an economy,
-so affluence ($A$) will increase.
+so affluence~\Aparen{} will increase.
 As $A$ increases, energy consumption will increase.
 Whether energy efficiency actually saves energy and actually saves CO$_2$ emissions
 depends on the strength of the rebound effect.

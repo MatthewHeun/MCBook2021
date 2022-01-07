@@ -114,7 +114,7 @@ The trend has also been toward a more varied diet that includes more fresh foods
 This trend towards a richer, more varied diet is repeated across the world as
 national economies grow.
 Thus, the global demand for food has two main drivers: population ($P$) is the primary
-driver of demand and affluence ($A$) is the secondary driver.
+driver of demand and affluence~\Aparen{} is the secondary driver.
 
 As mentioned in Section~\ref{sec:PCbalance}, consumption and production are balanced,
 particularly for food, in part because humans prefer fresh food.
@@ -735,7 +735,7 @@ However, the relatively higher amounts of human inputs make the food produced
 more expensive.
 Ultimately, reducing environmental impacts requires additional investment, which
 makes food more expensive, which is consistent with Equation~\ref{eq:IPARX}
-(reduced impact~\Iparen{} comes from reduced affluence ($A$)).
+(reduced impact~\Iparen{} comes from reduced affluence~\Aparen{}).
 
 One strategy that might be highly successful for some climate zones and for some
 crops is to use solar panels to provide partial shade for crops prefer lower-light

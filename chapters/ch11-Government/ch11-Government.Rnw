@@ -395,7 +395,7 @@ to affect birth rates.
 %++++++++++++++++++++++++++++++
 
 Equation~\ref{eq:IPARX} and Figure~\ref{fig:AffluenceGraph-Nordhaus}
-shows that rising affluence ($A$)
+shows that rising affluence~\Aparen{}
 drives larger environmental impacts~\Iparen{}. 
 Ironically, the purpose of many government actions 
 is to produce ever-rising levels of affluence, 
@@ -502,7 +502,7 @@ thereby extending the life of reserves and increasing the likelihood that a
 weak sustainability criterion is achieved.
 (See Section~\ref{sec:strong_weak_sust}.)
 Interestingly, more-expensive resources (especially oil)
-tend to also reduce affluence ($A$)~\cite{Hamilton:2009ui}
+tend to also reduce affluence~\Aparen{}~\cite{Hamilton:2009ui}
 (Section~\ref{sec:collective_affluence}), 
 thereby further helping toward environmental sustainability.
 

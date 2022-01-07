@@ -20,7 +20,7 @@ Life is the other way round.}{David Lodge}
 Equation \ref{eq:IPARX} (repeated below for convenience) 
 expresses human impact on the Earth as the product
 of population ($P$), 
-affluence ($A$), resource intensity of the economy ($R$), and
+affluence~\Aparen{}, resource intensity of the economy ($R$), and
 the impact intensity of resources ($X$). 
 Chapter~\ref{chap:planetary_boundaries} discussed how the Earth's ecosystems 
 provide for human needs and how human activities can degrade,

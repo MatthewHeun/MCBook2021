@@ -205,7 +205,7 @@ Another trend shown by land-use statistics is greater urbanization.
 The demand for housing is disproportionately for urban housing
 because of a long-term trend of migration to urban areas. 
 Urban areas have much higher GDP per area.
-Thus pursuit of wealth, that is, a desire for greater affluence ($A$) drives 
+Thus pursuit of wealth, that is, a desire for greater affluence~\Aparen{} drives 
 migration from rural areas to urban ones.
 
 The other major factor of land use demand is for resources.
@@ -229,7 +229,7 @@ Unfortunately, the best lands have already been taken; what is available to the
 \emph{next} farmer or miner is typically of marginally \emph{lower} productivity.
 
 Therefore, consistent with earlier chapters, the drivers for land use are the 
-terms of the IPARX equation, ($P$), ($A$), and ($R$).
+terms of the IPARX equation, ($P$),~\Aparen{}, and ($R$).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

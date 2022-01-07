@@ -26,7 +26,7 @@ Discussion questions from Chapter~\ref{chap:population} reveal a variety of ways
 in which it is practically and morally difficult to reduce impacts~\Iparen{} by reducing 
 population~($P$).
 This chapter examines the second term on the right-hand side of Equation~\ref{eq:IPARX},
-affluence~($A$), and the role of human economic activity in sustainability challenges.
+affluence~\Aparen{}, and the role of human economic activity in sustainability challenges.
 Chapters~\ref{chap:resource_intensity}--\ref{chap:impact_intensity}, 
 finish the development of our framework for sustainability.
 
@@ -44,7 +44,7 @@ The word wealth can include notions of happiness, prosperity, well being, and we
 but mostly wealth refers to the \emph{amount} of goods, possessions, money,
 property, or ``stuff'' owned by a person.
 In other words, wealth refers to a \emph{level} of material possessions or resources.
-In contrast, affluence ($A$) is the \emph{rate} that the economy
+In contrast, affluence~\Aparen{} is the \emph{rate} that the economy
 uses goods and services, that is, the amount of ``stuff'' bought \emph{per year}.
 
 Economic activity may mean literally consumption, as in the case with food,
@@ -75,10 +75,10 @@ Effectively, GDP is the standard.
 Consistent and easily accessible GDP data can allow us to make observations
 about trends, which are \emph{qualitatively} consistent with trends we would observe
 using other indices, bearing in mind the limitations of what GDP measures and what it doesn't.
-In any case, a different measure of affluence~($A$), would require a corresponding
+In any case, a different measure of affluence~\Aparen{}, would require a corresponding
 adjustment to (the measure of) resource intensity of economic activity~($R$).
 Regardless of the measure of affluence, we land in the same difficult spot:
-greater affluence~($A$) creates greater environmental impact~\Iparen{}
+greater affluence~\Aparen{} creates greater environmental impact~\Iparen{}
 if the resource intensity of the economy~($R$) and the impact intensity of resources~($X$)
 (discussed in the next chapter) is unchanged.
 
@@ -91,7 +91,7 @@ that these choices have been effective.
 (Recall that Section~\ref{sec:exp} reminds us that perpetual growth in the 
 consumption of finite resources is ultimately unsustainable.)
 
-% <<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
+% <<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence~\Aparen{} in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
 % world_gdppc_Maddison <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
 %                                            sheet = "GDPpc-Maddison-WB") %>% 
 %   dplyr::select(-Country, -Source)
@@ -110,7 +110,7 @@ consumption of finite resources is ultimately unsustainable.)
 
 
 
-% <<AffluenceGraph-DeLong, fig.cap = "Annual world GDP per capita, affluence ($A$) in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from De Long.">>=
+% <<AffluenceGraph-DeLong, fig.cap = "Annual world GDP per capita, affluence~\Aparen{} in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from De Long.">>=
 % world_gdppc_DeLong <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
 %                                            sheet = "GDPpc-DeLong-WB") %>% 
 %   dplyr::select(-Country, -Source)
@@ -128,7 +128,7 @@ consumption of finite resources is ultimately unsustainable.)
 % @
 
 
-<<AffluenceGraph-Nordhaus, fig.cap = paste0("Annual world GDP per capita, affluence ($A$) in Equation~\\ref{eq:IPARX}. ",  fit_sentence(gdppc_fit), " \\emph{Sources}: data for 1800--1989 inferred from GDP per capita growth rates from \\citet{Nordhaus:1997vi} via \\citet{DeLong:1997ui}; data for 1990--2020 from the \\citet{World-Bank:2021un}.")>>=
+<<AffluenceGraph-Nordhaus, fig.cap = paste0("Annual world GDP per capita, affluence~\Aparen{} in Equation~\\ref{eq:IPARX}. ",  fit_sentence(gdppc_fit), " \\emph{Sources}: data for 1800--1989 inferred from GDP per capita growth rates from \\citet{Nordhaus:1997vi} via \\citet{DeLong:1997ui}; data for 1990--2020 from the \\citet{World-Bank:2021un}.")>>=
 world_gdppc_Nordhaus <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
                                            sheet = "GDPpc-Nordhaus-WB") %>% 
   dplyr::select(-Country, -Source)
@@ -400,14 +400,14 @@ represents the wastes that the economy excretes.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Although production and consumption are in balance, both may change together.
-Indeed, growth in GDP per capita~($A$) is the explicit goal of many economic policies.
+Indeed, growth in GDP per capita~\Aparen{} is the explicit goal of many economic policies.
 There are two ways the economy can increase GDP.
 Either (a)~the economy consumes \emph{more} inputs or
 (b)~it uses existing inputs more \emph{efficiently}.
 
 Economic inputs include labor, capital, energy, and materials.
 In the long run, growing output by scaling up the inputs does not increase 
-affluence~($A$) because more workers are needed to gather, process, and use the 
+affluence~\Aparen{} because more workers are needed to gather, process, and use the 
 additional resources.
 That leaves only efficiency as a means of boosting affluence.
 From a sustainability point of view, we should want to everything to be used
@@ -693,7 +693,7 @@ runs counter to what people want (or say they want).
 % ****
 
 % Immediately, we can see a challenge with attempting to reduce impacts~\Iparen{} by
-% reducing affluence ($A$)---doing so will make people less well off. 
+% reducing affluence~\Aparen{}---doing so will make people less well off. 
 % ****
 % ``less well-off'' is carrying a lot of weight here.
 % If you mean ``have less income,'' you introduced a tautology.
@@ -731,7 +731,7 @@ Perhaps, as we hope, there is a way to enjoy a high standard of living \emph{and
 be sustainable.
 % ****
 % Not sure where this depressing paragraph belongs.
-% Is it meant to be a transition from macro and average affluence ($A$)?
+% Is it meant to be a transition from macro and average affluence~\Aparen{}?
 % If so, that transition could be signaled better.
 % ---MKH
 % ****
