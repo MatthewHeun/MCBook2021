@@ -160,7 +160,7 @@ Consistent and easily accessible GDP data can allow us to make observations
 about trends, which are \emph{qualitatively} consistent with trends we would observe
 using other indices, bearing in mind the limitations of what GDP measures and what it doesn't.
 In any case, a different measure of affluence \mft{A}, would require a corresponding 
-adjustment to (the measure of) resource intensity $R$. 
+adjustment to (the measure of) resource intensity \mft{R}. 
 The end result leaves us in the same difficult spot: Consuming more per person 
 creates greater impact if the resource intensity of affluence 
 (discussed in the next chapter) is unchanged.
@@ -410,7 +410,7 @@ One way of looking at Equation~\ref{eq:IPARX} is that impacts ($I$)
 are the \emph{result} of economic activity.
 Total consumption is $P \times A$.
 Resources ($R$) are the feed the economy needs to live and grow.
-The impact intensity of resources, $X$, represents the wastes that the economy excretes.
+The impact intensity of resources, \mft{X}, represents the wastes that the economy excretes.
 
 \section{Economic growth}
 \label{sec:EconGrowth}
