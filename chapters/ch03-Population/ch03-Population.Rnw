@@ -121,7 +121,7 @@ because of the valuable role bees play in pollinating human crops.
 \label{sec:human_population}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-<<PopulationGraph, fig.cap="World population, $P$ in the IPARX equation. \\emph{Source}: \\citet{Roser:2021uu}.">>=
+<<PopulationGraph, fig.cap="World population, \\mft{P} in the IPARX equation. \\emph{Source}: \\citet{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),

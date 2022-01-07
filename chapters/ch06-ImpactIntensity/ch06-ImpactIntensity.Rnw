@@ -582,7 +582,7 @@ Each rate ($r$) is calculated by
 %
 where
 $r$ is the rate of change in \%/year, 
-$y$ is one of \mft{I}, $P$, $A$, $R$, or $X$, 
+$y$ is one of \mft{I}, \mft{P}, $A$, $R$, or $X$, 
 subscript ``2'' indicates a later year, and 
 subscript ``1'' indicates an earlier year.
 
@@ -834,7 +834,7 @@ see the causal loop diagram from the World3 model
 shown in Figure~\ref{fig:World3loops}.)
 One clear trend from history is that increasing affluence
 leads to reduced population growth rate.
-I.e., an increase in $A$ leads to a decrease in the rate of growth of $P$.
+I.e., an increase in $A$ leads to a decrease in the rate of growth of \mft{P}.
 Thus, the affluence and population terms of the IPARX equation
 are not independent.
 
