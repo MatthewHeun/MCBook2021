@@ -225,13 +225,13 @@ carbon_intensity %>%
 
 Equation~\ref{eq:IPARX} shows that reducing any of the right-hand side terms to 0
 will eliminate CO$_2$ emissions.
-That is, if population ($P$), 
+That is, if population~\Pparen{}, 
 affluence~\Aparen{},
 energy intensity of the economy ($R_{Ep}$, the prime example for $R$)
 \emph{or} carbon intensity of energy $X_{CO_2}$ (the prime example for $X$)
 go to zero,
 CO$_2$ emissions will be eliminated.
-Few people want to reduce population ($P$) or affluence~\Aparen{}.
+Few people want to reduce population~\Pparen{} or affluence~\Aparen{}.
 The primary energy intensity of the economy, $R_{Ep}$, is declining
 (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}),
 but not as fast as population (Figure~\ref{fig:PopulationGraph})
