@@ -276,9 +276,9 @@ GDP is denominated in units of money and is the sum of four terms:
 \paragraph{Consumption}
 %..............................
 
-Consumption~($c$) is purchases made by individuals.
+Consumption~(\mft{c}) is purchases made by individuals.
 Typically, consumption is about two thirds of GDP for developed economies and is
-usually divided into three subcategories: durable goods, nondurable goods, and services.
+usually divided into three subcategories: services, durable goods, and nondurable goods.
 Services represent nontangible things, such as haircuts, legal advice, education,
 and concert tickets.
 Durable goods are defined as things that last longer than 3 years,
@@ -296,16 +296,15 @@ until circumstances improve.
 \paragraph{Government spending}
 %..............................
 
-Government spending~($g$) is comprised of government consumption
+Government spending~(\mft{g}) is comprised of government consumption
 (such as equipment and wages paid to government workers) and net investment, for
 example, infrastructure improvements.
-
 
 %..............................
 \paragraph{Investment}
 %..............................
 
-Investment~($i$) is \emph{not} money put into a bank account.
+Investment~(\mft{i}) is \emph{not} money put into a bank account.
 Investment is goods that are purchased now for use in the future.
 There are three subcategories of investment: nonresidential fixed investment,
 residential fixed investment, and inventory investment.
@@ -315,12 +314,11 @@ households and landlords.
 Inventory investment is the purchase, by firms, of goods for later sale and could
 be negative (inventory is falling) or positive (inventory is increasing).
 
-
 %..............................
 \paragraph{Net exports}
 %..............................
 
-Net exports~($nx$) are the \emph{net} difference between the value of exports and the value of imports.
+Net exports~(\mft{nx}) are the \emph{net} difference between the value of exports and the value of imports.
 Thus, $nx$ could be a negative number for a country that imports more than it exports.
 World GDP is the sum of all national GDPs.
 Therefore, for world GDP, $nx = 0$.
