@@ -159,7 +159,7 @@ So, for now, we'll use it.
 Consistent and easily accessible GDP data can allow us to make observations
 about trends, which are \emph{qualitatively} consistent with trends we would observe
 using other indices, bearing in mind the limitations of what GDP measures and what it doesn't.
-In any case, a different measure of affluence $A$, would require a corresponding 
+In any case, a different measure of affluence \mft{A}, would require a corresponding 
 adjustment to (the measure of) resource intensity $R$. 
 The end result leaves us in the same difficult spot: Consuming more per person 
 creates greater impact if the resource intensity of affluence 

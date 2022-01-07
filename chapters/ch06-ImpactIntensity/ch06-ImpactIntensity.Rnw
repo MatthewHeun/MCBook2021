@@ -561,7 +561,7 @@ show the evolution of all terms in the IPARX identity (Equation~\ref{eq:IPARX})
 over the period 1800--2019
 for the prime example of energy consumption and CO$_2$ emissions.
 It is instructive to quantify the direction and magnitude of changes 
-in the right-side terms ($P$, $A$, $R$, and $X$). 
+in the right-side terms ($P$, \mft{A}, $R$, and $X$). 
 To do so, we introduce a rate version of the IPARX equation.
 
 In the rate version of the IPARX equation, each term is represented 
@@ -582,7 +582,7 @@ Each rate ($r$) is calculated by
 %
 where
 $r$ is the rate of change in \%/year, 
-$y$ is one of \mft{I}, \mft{P}, $A$, $R$, or $X$, 
+$y$ is one of \mft{I}, \mft{P}, \mft{A}, $R$, or $X$, 
 subscript ``2'' indicates a later year, and 
 subscript ``1'' indicates an earlier year.
 
@@ -770,7 +770,7 @@ collectively and personally.
 
 The IPARX identity
 appears to be a straight multiplication of independent terms
-($P$, $A$, $R$, and $X$).
+($P$, \mft{A}, $R$, and $X$).
 But it is not.
 There are interactions among the terms that deserve attention.
 In this section, we note four such interactions
@@ -810,7 +810,7 @@ wherein monetary savings (from reduced energy consumption at a newly-efficient d
 are reinvested, leading to economic growth.
 Economic growth raises the GDP of an economy,
 so affluence~\Aparen{} will increase.
-As $A$ increases, energy consumption will increase.
+As \mft{A} increases, energy consumption will increase.
 Whether energy efficiency actually saves energy and actually saves CO$_2$ emissions
 depends on the strength of the rebound effect.
 When rebound effect is so large as to wipe out the initial energy savings,
@@ -818,7 +818,7 @@ When rebound effect is so large as to wipe out the initial energy savings,
 Backfire is a threat to a low-carbon future~\cite{Brockway:2017a}.
 Thus, we must be careful about crafting policies to address 
 the $R$ or $X$ terms in the IPARX identity.
-We may inadvertently affect $A$ with the consequence of undoing 
+We may inadvertently affect \mft{A} with the consequence of undoing 
 the good we intended.
 
 
@@ -834,7 +834,7 @@ see the causal loop diagram from the World3 model
 shown in Figure~\ref{fig:World3loops}.)
 One clear trend from history is that increasing affluence
 leads to reduced population growth rate.
-I.e., an increase in $A$ leads to a decrease in the rate of growth of \mft{P}.
+I.e., an increase in \mft{A} leads to a decrease in the rate of growth of \mft{P}.
 Thus, the affluence and population terms of the IPARX equation
 are not independent.
 
@@ -944,7 +944,7 @@ That said, many advocates of Green Growth, a Green New Deal, and similar public 
 promote the idea that a transition to green infrastructure, including renewable energy,
 will stimulate economic growth and increase affluence.
 If they are right, 
-a renewables-driven decrease in $X$ would lead to an increase in $A$
+a renewables-driven decrease in $X$ would lead to an increase in \mft{A}
 in the IPARX equation (Equation~\ref{eq:IPARX}).
 The strength of each effect ($X \downarrow$, $A \uparrow$) 
 will determine whether Green Growth or a Green New Deal will actually decrease 
