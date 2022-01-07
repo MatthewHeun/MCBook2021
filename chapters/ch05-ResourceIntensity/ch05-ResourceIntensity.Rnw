@@ -316,9 +316,10 @@ The world's economies are dematerializing, but
 only because we're using less biomass per unit of GDP than ever before.
 We're using nearly the same amount (mass) of construction minerals, ores, and fossil fuels
 per GDP as we ever have.
+And because GDP is growing, total material use grows, too.
 
 
-<<total_material_use, fig.cap="World material use. ``Construction'' includes all construction minerals. ``Ores'' includes industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is metric tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
+<<total_material_use, fig.cap="World material use. ``Construction'' includes all construction minerals. ``Ores'' includes all industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
 krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
                                 sheet = "data to plot") %>% 
   dplyr::rename(
@@ -400,7 +401,7 @@ material_per_gdp %>%
 
 
 Figure~\ref{fig:total_material_use} 
-shows that resource consumption is growing at an ever-increasing rate.
+shows that resource consumption is growing through time.
 By the ``strong sustainability'' criterion,
 \emph{any} extraction of
 construction minerals, ores and industrial minerals, and fossil energy carriers
@@ -449,36 +450,62 @@ the following steps can be performed.
         often called the ``reserves'' of the resource.
 
   \item Divide the virgin stock by 50 years to obtain the average maximum weakly
-        sustainable extraction rate~($r_{ws}$).
+        sustainable extraction rate~($\mft{r}_{\mft{ws}}$).
 
-  \item Find the current rate of extraction and suitable adjust 
-        for any future increases or decreases~($r_{cf}$).
+  \item Find the current rate of extraction and suitably adjust 
+        for any future increases or decreases~($\mft{r}_{\mft{cf}}$\;\!).
 
-  \item Compare the weakly sustainable extraction rate~($r_{ws}$)
-        and the current or future extraction rates~($r_{cf}$).
-        If the current or future extraction rate~($r_{cf}$) is greater than
-        the average maximum weakly sustainable extraction rate~($r_{ws}$),
+  \item Compare the weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$)
+        and the current or future extraction rate~($\mft{r}_{\mft{cf}}$\;\!).
+        If the current or future extraction rate~($\mft{r}_{\mft{cf}}$\;\!) is greater than
+        the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$),
         consumption of the resource does not meet the weak sustainability criterion.
 
 \end{enumerate}
 %
-A similar approach can be used for wastes.
+A similar approach can be used for wastes, like CO$_2$.
+%
+\begin{enumerate}
 
-The parameter $\rho$ quantifies the current extraction rate~($r_{cf}$)
+  \item Establish the amount of waste in the environment, the maximum allowable
+        amount of waste in the environment as of today, and the 
+        rate at which the ecosystem renders the waste inert.
+  
+  \item Establish the ``budget'' for waste emission by subtracting the 
+        amount of waste in the environment from the maximum allowable waste in the environment. 
+        
+  \item Divide the budget by 50 years and subtract the rate at which the ecosystem renders the waste inert.
+        The result is the maximum allowable waste emission rate
+        for weak sustainability~($\mft{r}_{\mft{ws}}$).
+
+  \item Find the current rate of waste emission and suitably adjust 
+        for any future increases or decreases~($\mft{r}_{\mft{cf}}$\;\!).
+
+  \item Compare the weakly sustainable emission rate~($\mft{r}_{\mft{ws}}$)
+        and the current or future emission rate~($\mft{r}_{\mft{cf}}$\;\!).
+        If the current or future emission rate~($\mft{r}_{\mft{cf}}$\;\!) is greater than
+        the average maximum weakly sustainable emission rate~($\mft{r}_{\mft{ws}}$),
+        emissions of the waste do not meet the weak sustainability criterion.
+
+\end{enumerate}
+
+The parameter $\rho$ quantifies the current extraction rate~($\mft{r}_{\mft{cf}}$\;\!)
 as a percentage above (positive)
 or below (negative)
-the average maximum weakly sustainable extraction rate~($r_{ws}$).
+the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$).
 
 \begin{equation} \label{eq:perc_above_ws}
-  \rho \equiv \frac{r_{cf} - r_{ws}}{r_{ws}} \times 100
+  \rho \equiv \frac{\mft{r}_{\mft{cf}} - \mft{r}_{\mft{ws}}}{\mft{r}_{\mft{ws}}} \times \text{100}
 \end{equation}
 %
-A positive value for $\rho$ indicates the percentage by which the extraction rate~($r_{cf}$)
-is \emph{above} the average maximum weakly sustainable extraction rate~($r_{ws}$). 
-A negative value for $\rho$ indicates the percentage by which the extraction rate~($r_{cf}$)
-is \emph{below} the average maximum weakly sustainable extraction rate~($r_{ws}$). 
+A positive value for $\rho$ indicates the percentage by which the extraction rate~($\mft{r}_{\mft{cf}}$\;\!)
+is \emph{above} the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$). 
+A negative value for $\rho$ indicates the percentage by which the extraction rate~($\mft{r}_{\mft{cf}}$\;\!)
+is \emph{below} the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$). 
 A value for $\rho$ of 100\% means that the resource is being extracted at \emph{twice} 
 its average maximum weakly sustainable extraction rate.
+(Alternatively, $\rho$ = 100\% means that the resource would be exhausted in 25~years, 
+not 50~years.)
 
 Figure~\ref{fig:PercentageOfSustainable} shows the result of applying
 the weak sustainability analysis approach
@@ -529,9 +556,8 @@ to regenerate usable products.
 Examples include paper recycling to pulp and glass recycling to new containers.
 However, recycling requires energy
 and other natural resources
-for transporting used material to recycling centers,
-processing used material into recycled products, and
-transporting goods to future users.
+for transporting used material to recycling centers and 
+processing used material into recycled products.
 For example, paper recycling uses water for cleaning and de-inking processes.
 Glass recycling requires high-temperature heat for melting processes.
 Whether recycling is, itself, a sustainable means of producing usable products
@@ -548,23 +574,24 @@ because material resources are subject to irreversible degradation.
 which states that all forms of energy are subject to irreversible degradation.)
 Later, physicist and economist Robert Ayres correctly
 argued that the second law of thermodynamics applies only to energy
-(not to material) and that
+(not to materials) and that
 a stable, steady-state recycling system could exist
 provided that two conditions are met:
-(a) a large stockpile of waste material exists and
-(b) an exogenous source, such as the sun, supplies energy freely and
-at sufficient rate for reprocessing of discarded material~\cite{Ayres:1999}.
+(a)~a large stockpile of waste material exists 
+    (so energy to obtain the waste material is small) and
+(b)~an exogenous source, such as the sun, supplies energy freely and
+    at sufficient rate for reprocessing of discarded material~\cite{Ayres:1999}.
 
 The importance of energy to recycling is evident,
-even in a debate about its viability!
+even in a debate about the viability of recycling!
 
 \end{mcframe}
 
 Substitution in manufacturing or production is the process of replacing
-consumption of a valuable, scarce, or nonrenewable resource
+use of a valuable, scarce, or nonrenewable resource
 with a less valuable, less scarce, or renewable resource%
 \footnote{
-  For a related discussion of substitution in consumption,
+  For a related discussion of substitution,
   see Q\ref{chap:resource_intensity}.\ref{question:consumption_substitution}.
 }.
 Replacing use of a scarce resource with use of an abundant resource
@@ -575,7 +602,7 @@ Scarce resources tend to be valuable.
 Abundant resources tend to be less valuable.
 Using an abundant resource instead of a scarce resource therefore typically
 makes sense from a cost perspective.
-However, substitution is only possible when the two resources in question
+However, substitution is possible only when the two resources in question
 are identical or nearly identical
 such that they can serve the same purpose in a manufacturing or production environment.
 Examples of substitution include:
@@ -587,11 +614,16 @@ use of solar electricity (renewable) instead of coal electricity (nonrenewable).
 Switching from consuming nonrenewable resources
 to consuming renewable resources
 is an important aspect of sustainability, 
-for both the weak \emph{and} the strong versions.
+for both the weak \emph{and} the strong versions%
+\footnote{
+  In some cases, renewable resources still have environmental impacts.
+  For example, biomass is a renewable energy source, 
+  but burning wood can lead to reduced air quality.
+}.
 
 That said, there are important limits to substitutability.
 At a manufacturing plant, the type of electricity
-(e.g., coal electricity\index{electricity!coal} or solar electricity\index{electricity!solar})
+(for example, coal electricity\index{electricity!coal} or solar electricity\index{electricity!solar})
 is immaterial,
 so long as both options are (for the U.S.) 120 V at 60 Hz.
 From the point of view of the manufacturing plant, coal electricity and solar electricity are 
@@ -610,26 +642,28 @@ The first example involves ocean-going vessels.
 In the sailing age, ships were made of timber, with teak and mahogany being
 favored ship-building woods.
 Today, cargo ships are made of steel, and pleasure craft are made almost exclusively
-of glass-fiber reinforced polymer composites, both non-renewable materials.
+of glass-fiber reinforced polymer composites, both of which are non-renewable materials.
 Teak and mahogany, despite being renewable,
 are now too rare and too expensive for shipbuilding,
 both in terms of material cost and
 labor cost.
 As often happens, the ready availability of less-expensive vessels
 means that many more boats are purchased and used.
-
 The second example involves lighting.
 Societies moved away from wax candles and whale oil lanterns to
 ``town gas,'' kerosene, and finally, electric lights.
+
 In both cases (ships and lights), none of the options
 (wood ships, steel ships,
 wax candles, whale oil lanterns, kerosene lanterns, or electric lights)
 meets the strong sustainability criterion.
 However, all of wood ships, wax candles, whale oil lanterns, town gas lamps, and
-kerosene lamps have proved to be weakly sustainable.
+kerosene lamps proved to be weakly sustainable.
 We found substitutes for the natural resources
 in a reasonable time frame and
 before the natural resources were depleted.
+(See Q5.\ref{question:weak_sust_good_enough}
+for discussion of whether weak sustainability is ``good enough.'')
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -637,11 +671,13 @@ before the natural resources were depleted.
 \label{sec:energy_as_prime_example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-It has been argued that energy is
-the ultimate resource~\cite{library1971energy}\index{energy!as ultimate resource}
+It has been argued
+(as we do in Section~\ref{sec:masterE})
+that energy is
+the master resource~\cite{library1971energy}\index{energy!as master resource}
 for two important reasons.
 First, energy is required
-for extraction of all natural resources (including energy itself!),
+for extraction of all natural resources (including energy itself),
 for any material transformation,
 for consuming goods and services, and
 for disposing of goods.
@@ -656,12 +692,13 @@ to heat (applied to hair).
 A solar panel converts solar energy (from the sun)
 to electricity (for use in many devices, including, possibly, hair dryers).
 
-Because energy is the ultimate resource,\index{energy!as ultimate resource}
+Because energy is the master resource,\index{energy!as master resource}
 we use energy as the prime example in the IPARX equation (Equation~\ref{eq:IPARX}).
 There are two important questions:
 where are we using energy, and
 are we using energy sustainably?
-Figure~\ref{fig:LLNL_energy_sankey} answers the first question. %: where are we using energy?
+Figure~\ref{fig:LLNL_energy_sankey} answers the first question
+for the U.S.
 Energy is used in four broad sectors of the economy:
 residences, commerce, industry, and transportation.
 Industry and transportation use more energy than residences and commerce.
@@ -746,7 +783,7 @@ as shown in Figure~\ref{fig:PercentageOfSustainable}.)
 Neither oil nor natural gas are being consumed at a weakly sustainable rate.
 
 
-<<EnergyPerPersonGraph, fig.cap="World primary energy consumption per person. Note that per-capita primary energy consumption is approximately flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth. (See Figure~\\ref{fig:PopulationGraph}.) In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth \\emph{and} increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times R$ in the IPARX equation (Equation \\ref{eq:IPARX}) for the prime example of energy.">>=
+<<EnergyPerPersonGraph, fig.cap="World primary energy consumption per person. Note that per-person primary energy consumption is approximately flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth. (See Figure~\\ref{fig:PopulationGraph}.) In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth \\emph{and} increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times R$ in the IPARX equation (Equation \\ref{eq:IPARX}) for the prime example of energy.">>=
 
 # Find which years have data from the Europe data set
 which_years <- region_pop %>%
@@ -995,12 +1032,12 @@ Figure~\ref{fig:per_gdp_material_use} shows that (on a per-mass basis)
 the largest decreases in primary energy per GDP are coming from declining consumption
 of biomass.
 Ironically, the decreases in \mft{R} are coming from reduction in per-GDP consumption 
-of a type of energy that is in fact sustainable, biomass!
+of a type of energy that is possibly sustainable, biomass!
 
-One reason that we are interested in the energy intensity of the economy is that
-energy consumption is a source of CO$_2$ emissions.
-We can look at a restricted interpretation of Equation~\ref{eq:IPARX},
-which considers only CO$_2$ emissions on the left-hand side of the equation
+We can use these data to learn something about the IPARX terms
+(Equation~\ref{eq:IPARX}) and CO$_2$ emissions.
+A narrowed version of Equation~\ref{eq:IPARX},
+considers only CO$_2$ emissions on the left-hand side of the equation
 and the energy intensity of the economy ($R_{Ep}$) instead of \mft{R} on the right-hand side.
 When $R_{Ep}$ falls, downward pressure is placed on CO$_2$ emissions.
 Whether CO$_2$ emissions \emph{actually} decrease
@@ -1008,8 +1045,8 @@ depends on the rates of increase or decline of the other terms
 on the right side of Equation~\ref{eq:IPARX}.
 Figure~\ref{fig:CarbonEmissionsGraph} shows that CO$_2$ emissions have been growing over time.
 So, other terms on the right side of the IPARX identity
-are growing faster than energy intensity of the economy is declining.
-(See Section \ref{sec:revisit_IPARX}.)
+are growing faster than energy intensity of the economy is declining;
+see Section~\ref{sec:revisit_IPARX}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1022,8 +1059,7 @@ Extraction of finite resources
 follows a pattern through time.
 In the beginning, extraction of a useful but finite resource accelerates
 as demand climbs and technologies are developed to reduce the cost of extraction.
-Through time, the acceleration of the resource extraction rate declines,
-eventually peaking and declining.
+Through time, the resource extraction rate peaks then and declines.
 A clear example of a production curve for a finite resource is
 extraction of coal in the UK, shown in Figure~\ref{fig:UK_coal_extraction}.
 
@@ -1064,18 +1100,22 @@ uk_coal_extraction %>%
   MKHthemes::xy_theme()
 @
 
-If production of finite resources shifts to other countries
-(coal production is now dominated by China, India, the U.S., and Australia)
-and international trade is possible,
-the world will not face shortages
+In the case of the UK, substitution away from coal for electricity generation 
+is occurring. 
+Coal production is now dominated by China, India, the U.S., and Australia
+and international trade is possible.
+So the world will not face coal shortages
 until all regions are exhausted of the resource.
 Each region is at different places on its logistic curve
 for resource production.
+Other ways to substitute away from coal for electricity 
+include deploying natural gas, wind, and solar electricity generation, 
+as the UK is doing now.
 
 One way to slow down the inevitable march of time
 along logistic curves for finite resources is to transition
 economies to use fewer resources per unit of GDP produced,
-i.e., to reduce the resource intensity of the economy~\Rparen{}.
+that is to reduce the resource intensity of the economy~\Rparen{}.
 Reduction of resource intensity of the economy is sometimes called \emph{dematerialization}.
 Reducing \mft{R} will reduce resource consumption but only if
 GDP stays constant or grows more slowly than the
@@ -1084,7 +1124,7 @@ rate at which \mft{R} decreases.
 For the prime example of energy and CO$_2$ emissions,
 reducing \mft{R} means reducing the energy intensity of economic activity
 ($R_{Ep}$),
-i.e., reducing the amount of energy required to produce
+that is, reducing the amount of energy required to produce
 each unit of GDP.
 (Section~\ref{sec:low_carbon_transition} discusses a distinct but related issue,
 transitioning the energy system to reduce CO$_2$ emissions
@@ -1101,7 +1141,7 @@ away from a manufacturing economy toward a service economy.
 However, as shown in the haircut example at the beginning of this chapter,
 the need for resources never goes away, even in a service economy.
 In fact, moving to a service economy often introduces problem-shifting
-(see Section~\ref{sec:electric_vehicles}),
+(Section~\ref{sec:electric_vehicles}),
 as finished goods are imported and manufacturing moves off shore~\cite{Hardt:2018aa}.
 
  
@@ -1168,7 +1208,8 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
 
   \item In which circumstances is a weak sustainability criterion appropriate?
         In which circumstances is the strong sustainability criterion appropriate?
-        Give examples.
+        Is weak sustainability good enough?
+        Give examples.\label{question:weak_sust_good_enough}
 
   \item Time is our most constrained resource. The human lifespan is about 4000 weeks.
         How do you use your time?
@@ -1180,7 +1221,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
 
   \item Where does your water come from?
         How does it get to you? Where is your waste water treated?
-        How is energy, the ultimate resource, involved in each of these steps?
+        How is energy, the master resource, involved in each of these steps?
         How has water provision changed over time where you live?
 
   \item Evaluate the notion of a closed-loop water system (so called ``toilet-to-tap'').
@@ -1247,7 +1288,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
   \item A recent report \cite{Miljostyrelsen2018} found that an organic cotton
         canvas tote bag has an environmental footprint equivalent to 20,000
         plastic shopping bags.
-        In other words, \emph{to break even} you would use the organic cotton bag
+        In other words, to \emph{break even} you would have to use the organic cotton bag
         every day for about 54 years.
         Hank Green \href{https://www.youtube.com/watch?v=2PF5AAEAWTs}{attributed his emotional reaction}
         % "it's resource intensive to grow crops!"
@@ -1258,7 +1299,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         % "are we being sold an idea because someone is trying to sell us something or is this actually
         %   gonna have a positive impact?"
         % "is this a little complicated? Yeah. But simplicity is almost always a lie."
-        to cognitive dissonance between life cycle analysis results and his
+        to cognitive dissonance between the life cycle analysis results and his
         intuition that cotton bags \emph{should} be better for the environment.
         How should humans respond when analytical results go against intuition?
         Hank says ``Simplicity is almost always a lie.''
@@ -1284,7 +1325,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         But then all economic activity generates greenhouse gases.
         And, similar to the cotton totes, a lightweight plastic water bottle is
         better than glass -- if we're going to have water bottles at all.
-        Write a nuanced response to the ``soundbite'' quoted above.
+        Write a nuanced response to the GreenBooks.org ``soundbite'' quoted above.
 
   \item Consider the lighting and ship-building examples mentioned in Section \ref{sec:recycling}.
         Techno-optimists (see Section \ref{sec:malthus_ehrlich_simon})
@@ -1326,11 +1367,11 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         % Think of a more sustainable alternative that you could substitute.
         % How are your sustainable and unsustainable choices similar?
         % How are they different? \label{question:consumption_substitution}
-        Looking ahead to Chapters~\ref{chap:households}--\ref{chap:land_use_urban_planning}, 
+        Looking ahead to Chapters~\ref{chap:households}--\ref{chap:land_use_urban_planning},
         think of one unsustainable item in each of the following categories:
-        a mode of travel that you regularly use for transport, 
-        a form of energy that you consume in your dwelling, 
-        a type of food that you eat, and 
+        a mode of travel that you regularly use for transport,
+        a form of energy that you consume in your dwelling,
+        a type of food that you eat, and
         a way that you use or occupy land.
         Now think of sustainable substitutes for the four items above.
         How are your sustainable and unsustainable alternatives similar?
@@ -1349,12 +1390,13 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         using the latest data from
         the U.S.\ Energy Information Agency (EIA)~\cite{U.S.-Energy-Information-Agency:tr}.
 
-  \item Update the weak sustainability calculations of Figure~\ref{fig:WeakSustEnergyGraph}, 
+  \item Update the weak sustainability calculations of Figure~\ref{fig:WeakSustEnergyGraph},
         taking into account projected additions to reserves into the future.
         Do the weak sustainability estimates
         of Figure~\ref{fig:WeakSustEnergyGraph} change?
 
-  \item Choose a material from the European Commission list of critical raw materials in Table~\ref{tab:CRMs}.
+  \item Choose a material (not germanium or zinc)
+        from the European Commission list of critical raw materials in Table~\ref{tab:CRMs}.
         Do today's consumption rates of that material meet weak or strong sustainability criteria?
         Provide suggestions for ways to bring consumption rates closer to strong sustainability.
 
@@ -1364,7 +1406,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         What are the sustainability (environmental, economic, and social) implications
         of the geographical distribution of critical raw material sources?
 
-  \item Compare the weak sustainability approach %advocated by Graedel and Allenby
+  \item Compare the weak sustainability approach
         to the methods of David Rutledge~\cite{Rutledge:tv}\index{Rutledge, David}.
         Which produces better estimates of the time to exhaust nonrenewable resources?
         Why?
@@ -1390,6 +1432,9 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Are there issues with corrosion or UV exposure?
         Are there disposal or recycling issues?
         In your view, which material is more environmentally friendly?
+        Where do you get data to answer these questions?
+        Where do you draw boundaries?
+        How do you evaluate tradeoffs?
 
 \end{projects}
 
