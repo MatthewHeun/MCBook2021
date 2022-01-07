@@ -616,7 +616,9 @@ population <- region_pop %>%
   dplyr::select(Year, total_population)
 affluence <- world_gdppc_Nordhaus 
 resource_intensity <- energy_intensity %>%
-  dplyr::select(Year, energy_per_GDP_MJ_per_dollar)
+  dplyr::select(Year, primary_energy_type, energy_per_GDP_MJ_per_dollar) %>% 
+  dplyr::group_by(Year) %>% 
+  dplyr::summarise(energy_per_GDP_MJ_per_dollar = sum(energy_per_GDP_MJ_per_dollar))
 carbon_intensity_of_resources <- carbon_intensity %>%
   dplyr::select(Year, CO2_intensity_Mt_per_EJ)
 
