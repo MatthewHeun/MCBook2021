@@ -365,16 +365,23 @@ demo_transition <- readxl::read_excel(file.path("chapters", "ch03-Population", "
      \begin{subfigure}[b]{6.5in}
          \centering
 <<fig.width=5.5, fig.height=2>>=
+phase_delimiters <- c(45, 110, 190)
 demo_transition %>% 
   dplyr::filter(which_graph == "rate") %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) + 
+  ggplot2::geom_vline(xintercept = phase_delimiters,
+                      size = guide_line_size, 
+                      colour = guide_line_colour, 
+                      linetype = guide_linetype) +
   ggplot2::geom_line(colour = data_line_colour, 
                      size = data_line_size) + 
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = "Births and deaths", 
+                y = "Birth and death rates", 
                 linetype = ggplot2::element_blank()) +
-  MKHthemes::xy_theme()
+  MKHthemes::xy_theme() + 
+  ggplot2::theme(axis.text.x = ggplot2::element_blank(),
+                 axis.ticks.x = ggplot2::element_blank())
 @
      \end{subfigure}
      
@@ -384,13 +391,23 @@ demo_transition %>%
 demo_transition %>% 
   dplyr::filter(which_graph == "Pop") %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) + 
+  ggplot2::geom_vline(xintercept = phase_delimiters,
+                      size = guide_line_size, 
+                      colour = guide_line_colour, 
+                      linetype = guide_linetype) +
   ggplot2::geom_line(colour = data_line_colour, 
                      size = data_line_size) + 
+  ggplot2::geom_text(x = 18, y = 5, label = "Phase 1", colour = guide_line_colour) +
+  ggplot2::geom_text(x = 78, y = 5, label = "Phase 2", colour = guide_line_colour) +
+  ggplot2::geom_text(x = 150, y = 5, label = "Phase 3", colour = guide_line_colour) +
+  ggplot2::geom_text(x = 227, y = 5, label = "Phase 4", colour = guide_line_colour) +
   ggplot2::scale_y_continuous(limits = c(0, 120), breaks = seq(0, 120, by = 20)) +
-  ggplot2::labs(x = "Year",
+  ggplot2::labs(x = "Time [years]",
                 y = "Population [millions]", 
                 linetype = ggplot2::element_blank()) +
-  MKHthemes::xy_theme()
+  MKHthemes::xy_theme() + 
+  ggplot2::theme(axis.text.x = ggplot2::element_blank(),
+                 axis.ticks.x = ggplot2::element_blank())
 @
      \end{subfigure}
         \caption{Schematic of demographic transition theory. Crude birth rate (CBR) and

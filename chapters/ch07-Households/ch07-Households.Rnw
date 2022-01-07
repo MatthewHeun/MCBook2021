@@ -327,7 +327,7 @@ persons_per_household %>%
    ggplot2::scale_y_continuous(limits = c(0, 4), breaks = seq(0, 4, by = 1)) +
    ggplot2::geom_line(size = data_line_size, 
                       colour = data_line_colour, 
-                      linetyep = data_linetype) +
+                      linetype = data_linetype) +
    ggplot2::labs(x = ggplot2::element_blank(),
                  y = "Occupancy [persons/dwelling]") +
 
