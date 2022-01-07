@@ -503,13 +503,13 @@ shrink.
 A shrinking economy is said to be in recession.
 A full discussion of the mechanisms of recession is beyond the scope of this book
 but the effect of recessions can be seen in Figure~\ref{fig:CarbonEmissionsGraph}.
-If affluence $A$ is a cause of impacts $I$, then reducing $A$ is one way to reduce
+If affluence $A$ is a cause of impacts \mft{I}, then reducing $A$ is one way to reduce
 $I$, as Figure~\ref{fig:CarbonEmissionsGraph} shows for CO$_2$ emissions.
 However, recessions are unwelcome for many very good reasons. 
 No country has yet intentionally tried to shrink its economy.
 
 Moreover, the environmental effects of recessions are not always positive,
-that is, sometimes reducing $A$ \emph{increases} (at least some parts of) $I$.
+that is, sometimes reducing $A$ \emph{increases} (at least some parts of) \mft{I}.
 For instance, a company going out of business might cause 
 environmental contamination because there no longer exists a responsible steward for 
 potentially hazardous materials or equipment.

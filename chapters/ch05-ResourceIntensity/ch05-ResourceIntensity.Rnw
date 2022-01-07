@@ -987,7 +987,7 @@ is created with incrementally less energy consumption.
 
 While the decrease in $R_{Ep}$ (the prime example for $R$ in Equation~\ref{eq:IPARX})
 appears to be good news for sustainability
-(declining $R$ puts downward pressure on $I$ in Equation~\ref{eq:IPARX}), 
+(declining $R$ puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}), 
 Figure~\ref{fig:per_gdp_material_use} shows that (on a per-mass basis)
 the largest decreases in primary energy per GDP are coming from declining consumption
 of biomass.
