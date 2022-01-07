@@ -130,7 +130,7 @@ $R$ is defined as
 %
 \mft{R} measures the total resources used by the economy to create a
 total amount of economic output (measured by GDP).
-Because the numerator and denominator of $R$ have different units,
+Because the numerator and denominator of \mft{R} have different units,
 \mft{R} is an \emph{intensity}.
 
 Figure~\ref{fig:total_material_use} shows use rates of some natural resources,
@@ -924,7 +924,7 @@ The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 % @
 
 % 
-% <<EnergyIntensityGraph-Nordhaus-old, fig.cap="Primary energy intensity of economic activity $R_{Ep}$, the prime example for $R$ in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
+% <<EnergyIntensityGraph-Nordhaus-old, fig.cap="Primary energy intensity of economic activity $R_{Ep}$, the prime example for \\mft{R} in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
 % # Create data for the energy intensity of the economy.
 % energy_intensity <- dplyr::inner_join(
 %   # Get the primary energy data
@@ -949,7 +949,7 @@ The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 % @
 
 
-<<EnergyIntensityGraph-Nordhaus, fig.cap="Primary energy intensity of economic activity $R_{Ep}$, the prime example for $R$ in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<EnergyIntensityGraph-Nordhaus, fig.cap="Primary energy intensity of economic activity $R_{Ep}$, the prime example for \\mft{R} in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
 # Create data for the energy intensity of the economy.
 energy_intensity <- dplyr::inner_join(
   # Get the primary energy data
@@ -985,20 +985,20 @@ has been growing at a faster rate (in \%/year terms) than primary energy consump
 The decline indicates that each additional dollar of GDP
 is created with incrementally less energy consumption.
 
-While the decrease in $R_{Ep}$ (the prime example for $R$ in Equation~\ref{eq:IPARX})
+While the decrease in $R_{Ep}$ (the prime example for \mft{R} in Equation~\ref{eq:IPARX})
 appears to be good news for sustainability
-(declining $R$ puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}), 
+(declining \mft{R} puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}), 
 Figure~\ref{fig:per_gdp_material_use} shows that (on a per-mass basis)
 the largest decreases in primary energy per GDP are coming from declining consumption
 of biomass.
-Ironically, the decreases in $R$ are coming from reduction in per-GDP consumption 
+Ironically, the decreases in \mft{R} are coming from reduction in per-GDP consumption 
 of a type of energy that is in fact sustainable, biomass!
 
 One reason that we are interested in the energy intensity of the economy is that
 energy consumption is a source of CO$_2$ emissions.
 We can look at a restricted interpretation of Equation~\ref{eq:IPARX},
 which considers only CO$_2$ emissions on the left-hand side of the equation
-and the energy intensity of the economy ($R_{Ep}$) instead of $R$ on the right-hand side.
+and the energy intensity of the economy ($R_{Ep}$) instead of \mft{R} on the right-hand side.
 When $R_{Ep}$ falls, downward pressure is placed on CO$_2$ emissions.
 Whether CO$_2$ emissions \emph{actually} decrease
 depends on the rates of increase or decline of the other terms
@@ -1074,12 +1074,12 @@ along logistic curves for finite resources is to transition
 economies to use fewer resources per unit of GDP produced,
 i.e., to reduce the resource intensity of the economy~\Rparen{}.
 Reduction of resource intensity of the economy is sometimes called \emph{dematerialization}.
-Reducing $R$ will reduce resource consumption but only if
+Reducing \mft{R} will reduce resource consumption but only if
 GDP stays constant or grows more slowly than the
-rate at which $R$ decreases.
+rate at which \mft{R} decreases.
 
 For the prime example of energy and CO$_2$ emissions,
-reducing $R$ means reducing the energy intensity of economic activity
+reducing \mft{R} means reducing the energy intensity of economic activity
 ($R_{Ep}$),
 i.e., reducing the amount of energy required to produce
 each unit of GDP.

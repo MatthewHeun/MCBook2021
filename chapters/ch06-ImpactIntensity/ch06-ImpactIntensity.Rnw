@@ -41,7 +41,7 @@ the topic of this chapter.
 \end{equation}
 
 The impact intensity of resources~\Xparen{}
-is a function of $R$ (resource extraction and consumption) discussed in 
+is a function of \mft{R} (resource extraction and consumption) discussed in 
 Chapter~\ref{chap:resource_intensity} in that the 
 type and intensity of environmental impacts is directly related to 
 the types, quantities, and ways of processing of resources. 
@@ -61,7 +61,7 @@ $X$ is defined as
 Note that ``impacts'' are plural.
 Extracting and consuming all the resources necessary to make the economy run 
 will have effects on air, water, species diversity, land, and human communities.
-(If you are comfortable with matrix notation, $X$ can be though of as a matrix with
+(If you are comfortable with matrix notation, \mft{X} can be though of as a matrix with
 impacts in columns and resources in rows.)
 
 
@@ -227,8 +227,8 @@ Equation~\ref{eq:IPARX} shows that reducing any of the right-hand side terms to 
 will eliminate CO$_2$ emissions.
 That is, if population~\Pparen{}, 
 affluence~\Aparen{},
-energy intensity of the economy ($R_{Ep}$, the prime example for $R$)
-\emph{or} carbon intensity of energy $X_{CO_2}$ (the prime example for $X$)
+energy intensity of the economy ($R_{Ep}$, the prime example for \mft{R})
+\emph{or} carbon intensity of energy $X_{CO_2}$ (the prime example for \mft{X})
 go to zero,
 CO$_2$ emissions will be eliminated.
 Few people want to reduce population~\Pparen{} or affluence~\Aparen{}.
@@ -561,7 +561,7 @@ show the evolution of all terms in the IPARX identity (Equation~\ref{eq:IPARX})
 over the period 1800--2019
 for the prime example of energy consumption and CO$_2$ emissions.
 It is instructive to quantify the direction and magnitude of changes 
-in the right-side terms ($P$, \mft{A}, $R$, and $X$). 
+in the right-side terms ($P$, \mft{A}, \mft{R}, and \mft{X}). 
 To do so, we introduce a rate version of the IPARX equation.
 
 In the rate version of the IPARX equation, each term is represented 
@@ -582,7 +582,7 @@ Each rate ($r$) is calculated by
 %
 where
 $r$ is the rate of change in \%/year, 
-$y$ is one of \mft{I}, \mft{P}, \mft{A}, $R$, or $X$, 
+$y$ is one of \mft{I}, \mft{P}, \mft{A}, \mft{R}, or \mft{X}, 
 subscript ``2'' indicates a later year, and 
 subscript ``1'' indicates an earlier year.
 
@@ -770,7 +770,7 @@ collectively and personally.
 
 The IPARX identity
 appears to be a straight multiplication of independent terms
-($P$, \mft{A}, $R$, and $X$).
+($P$, \mft{A}, \mft{R}, and \mft{X}).
 But it is not.
 There are interactions among the terms that deserve attention.
 In this section, we note four such interactions
@@ -817,7 +817,7 @@ When rebound effect is so large as to wipe out the initial energy savings,
 ``backfire'' is said to occur~\cite{Sorrell:2009cg,Sorrell:2010ul}.
 Backfire is a threat to a low-carbon future~\cite{Brockway:2017a}.
 Thus, we must be careful about crafting policies to address 
-the $R$ or $X$ terms in the IPARX identity.
+the \mft{R} or \mft{X} terms in the IPARX identity.
 We may inadvertently affect \mft{A} with the consequence of undoing 
 the good we intended.
 
@@ -885,7 +885,7 @@ the primary energy intensity of the economy
 is expected to fall, 
 as it has been for 220 years.
 (Recall from Section~\ref{sec:energy_intensity_of_the_economy}, 
-however, that $R$ is falling over time primarily because
+however, that \mft{R} is falling over time primarily because
 per-dollar consumption of sustainable biomass is falling over time.
 Ironically, unsustainable per-dollar fossil fuel consumption is more constant 
 than sustainable per-dollar biomass consumption over time.
@@ -895,12 +895,12 @@ $R$ is a type of economic intensity
 that represents the effectiveness of using energy to make GDP.
 This fact raises an interesting question:
 can we use improved economic effectiveness 
-(decreasing $R$, brought about by rising energy efficiency)
+(decreasing \mft{R}, brought about by rising energy efficiency)
 to reduce environmental impacts ($I$ in Equation~\ref{eq:IPARX}, 
 CO$_2$ emissions being the prime example)?
-It certainly helps, as decreasing $R$ puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}.
+It certainly helps, as decreasing \mft{R} puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}.
 However, recent research indicates that growing energy efficiency
-(and declining $R$) has never reduced energy consumption or environmental impacts, 
+(and declining \mft{R}) has never reduced energy consumption or environmental impacts, 
 at least at the worldwide level~\cite{Brockway:2021ww}.
 The rebound effect (Section~\ref{sec:rebound_effect}) is thought to be a strong candidate
 for the reason why efficiency has not led to decreases
@@ -922,7 +922,7 @@ However, when economic activity requires energy and energy consumption
 causes CO$_2$ to be emitted,
 economic growth leads to sustainability challenges.
 Reducing the carbon intensity of energy 
-(the prime example for $X$ in Equation~\ref{eq:IPARX})
+(the prime example for \mft{X} in Equation~\ref{eq:IPARX})
 is one way to limit the environmental impacts of economic activity.
 Interactions associated with a transition to low-carbon energy supplies
 are the topic of the next section.
@@ -944,7 +944,7 @@ That said, many advocates of Green Growth, a Green New Deal, and similar public 
 promote the idea that a transition to green infrastructure, including renewable energy,
 will stimulate economic growth and increase affluence.
 If they are right, 
-a renewables-driven decrease in $X$ would lead to an increase in \mft{A}
+a renewables-driven decrease in \mft{X} would lead to an increase in \mft{A}
 in the IPARX equation (Equation~\ref{eq:IPARX}).
 The strength of each effect ($X \downarrow$, $A \uparrow$) 
 will determine whether Green Growth or a Green New Deal will actually decrease 
