@@ -294,11 +294,11 @@ Carbon capture and storage (CCS)\index{carbon capture and storage (CCS)}
 is a way to continue using fossil fuels
 during a transition to a low-carbon energy regime. 
 In a CCS electricity plant, 
-CO$_2$ emissions are captured at the smokestack of a fossil-fuel electricity generation plant
+CO$_2$ emissions are captured at the smokestack
 and routed underground.
-The CO$_2$ is stored, presumably, in perpetuity in caverns or other underground formations.
+The CO$_2$ is stored, presumably in perpetuity, in caverns or other underground formations.
 CCS is not a low-carbon form of energy.
-Rather, CCS is a way to avoid carbon emissions from carbon-based energy production.
+Rather, CCS is a way to avoid carbon \emph{emissions} from carbon-based energy production.
 
 There are several challenges associated with CCS.
 First, it has not been cost-effective.  
@@ -327,7 +327,7 @@ to collect CO$_2$ emissions for later injection underground.
 %++++++++++++++++++++++++++++++
 
 Carbon sequestration seeks to extract CO$_2$ from the atmosphere,
-storing it in, presumably, inert form in perpetuity.
+storing it in inert form.
 One form of carbon sequestration is simply planting billions of trees.
 A massive, worldwide afforestation effort would be required to extract
 the additional carbon that has been added to the atmosphere since the industrial revolution.
@@ -336,7 +336,7 @@ Unfortunately, if the trees are burned or when they die and decompose,
 the CO$_2$ is returned to the atmosphere.
 
 Alternatively, \emph{direct air capture} extracts CO$_2$ from the atmosphere 
-directly, typically using huge banks of fans and a adsorbent.
+directly, typically using huge banks of fans and an adsorbent.
 Direct air capture is extremely energy intensive because of the heat needed
 to regenerate the adsorbents. 
 Additionally, because atmospheric CO$_2$ concentrations are low, massive amounts
@@ -404,11 +404,30 @@ building heating and cooling.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Carbon tax and carbon trading}
-\label{sec:carbon_tax_trading}
+\subsection{Carbon taxes and offsets}
+\label{sec:carbon_tax_offsets}
 %++++++++++++++++++++++++++++++
 
-**** MKH to complete. ****
+Carbon taxes impose financial penalties on emitters of greenhouse gasses.
+Emitters pass costs to consumers who face higher prices for goods and services
+created with carbon-intensive energy.
+Consumers will, over time, prefer lower-cost goods, 
+thereby incentivizing manufacturers and service providers
+to use low-carbon energy.
+
+Carbon offsets enable carbon emitters to
+pay someone else to sequester or reduce carbon emissions.
+Carbon emissions are traded as a financial instrument.
+A market develops in which emissions and reductions are traded, 
+with competition leading to low prices for net emission reductions.
+As such, carbon offsets 
+enable carbon emitters to shift the responsibility for implementing
+emissions reductions.
+
+Both carbon taxes and carbon offsets are 
+financial approaches to encourage transitions to a low-carbon energy supply.
+Both taxes and offsets nudge consumer and producer behaviors
+in the direction of low-carbon energy supply.
 
 
 %++++++++++++++++++++++++++++++
@@ -416,7 +435,21 @@ building heating and cooling.
 \label{sec:nuclear_electricity}
 %++++++++++++++++++++++++++++++
 
-**** MKH to complete. ****
+Nuclear power (an electricity source only)
+may provide a bridge to a sustainable future.
+Nuclear power emits little CO$_2$ during plant operation. 
+However, the energy cost to construct a nuclear power plant 
+is higher than other types of
+electricity production plants.
+In addition, 
+it is energy-intensive to mine and refine uranium prior to its use
+in a nuclear power plant. 
+If the energy required to construct nuclear energy plants
+and refine uranium comes from fossil fuels, 
+significant CO$_2$ emissions will result from the transitions to nuclear electricity.
+
+An additional consideration is the availability of unranium resources,
+the topic of P6.\ref{question:nuclear_resources}.
 
 
 %++++++++++++++++++++++++++++++
@@ -516,57 +549,6 @@ in addition to significant financial investment.
 If the energy investment to make WWS systems comes from fossil fuels,
 significant CO$_2$ will be emitted during the transition
 from today's energy regime to a WWS regime.
-
-
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-\begin{mcframe}[0.90\textwidth](0.85\textwidth)
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-\noindent \textbf{What about nuclear power?}
-
-Nuclear power (again, an electricity source only) may provide a bridge to a sustainable future.
-Nuclear power emits little CO$_2$ during plant operation. 
-However, the energy cost to construct a nuclear power plant is higher than other types of
-electricity production plants.
-In addition, 
-it is energy-intensive to mine and refine uranium prior to its use in a nuclear power plant. 
-Again, similar to the buildout of renewables, if the energy required to construct nuclear energy plants
-and refine uranium comes from fossil fuels, 
-significant CO$_2$ emissions will result from the conversion to nuclear electricity.
-
-One additional consideration is the availability of unranium resources,
-the topic of an end-of-chapter project.
-
-\end{mcframe}
-
-
-
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-\begin{mcframe}[0.90\textwidth](0.85\textwidth)
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-\noindent \textbf{What about offsets?}
-
-Carbon offsets are a way to enable carbon emitters to %% Like a tax here??
-%% Like a tax, carbon offsets change net emissions by ...? His comment doesn't seem to fit to me.
-% If you can make sense of it, great otherwise, skip.
-% Or maybe connect to your new carbon tax section.
-pay someone else to sequester or reduce their own carbon emissions.
-Carbon emissions are traded as a financial instrument.
-A market develops in which emissions and reductions are traded, 
-thereby finding a low price for net emission reductions.
-As such, carbon offsets 
-enable carbon emitters to shift the responsibility for implementing
-emissions reductions via any of the techniques discussed above.
-
-% 1) It would be easy to revise this sentence to note that 
-% “like a tax, offsets” will nudge behaviors.  
-% The two systems are identical in their effect on behavior of consumers.  
-% 2) Some researchers question whether offsets actually lead to offsetting carbon reductions. 
-% That is, the data suggest that in the counterfactual world you’d have largely the same carbon capture. 
-% (Eg, the amount of forests doesn’t rise; I just get paid for a forest that would have been there either way.) 
-
-\end{mcframe}
 
 
 %++++++++++++++++++++++++++++++
@@ -1256,6 +1238,10 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
         Can you achieve less than 1.5~\degC{} of warming?
         In the paper, describe the suite of policies you chose
         and consider their technical and political feasibilities.
+        
+  \item Research the availability of uranium resources. 
+        What are the reserves?
+        Is our current consumption rate weakly sustainable? \label{question:nuclear_resources}
 
 \end{projects}
 
