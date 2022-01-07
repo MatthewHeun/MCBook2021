@@ -313,18 +313,20 @@ until circumstances improve.
 \paragraph{Government spending}
 %..............................
 
-Government spending~(\mft{g}) is comprised of government consumption
-(such as equipment and wages paid to government workers) and net investment, for
-example, infrastructure improvements.
+Government spending~(\mft{g}) is government consumption
+(such as equipment and wages paid to government workers) plus 
+government investment spending, for
+example, spending on infrastructure improvements such as roads or dams.
 
 %..............................
 \paragraph{Investment}
 %..............................
 
 Investment~(\mft{i}) is \emph{not} money put into a bank account.
-Investment is goods that are purchased now for use in the future.
-There are three subcategories of investment: nonresidential fixed investment,
-residential fixed investment, and inventory investment.
+Investment is goods that are purchased now for use in the future
+by individuals or firms (not governments).
+There are three subcategories of investment: 
+nonresidential fixed investment, residential fixed investment, and inventory investment.
 Nonresidential fixed investment is equipment and plants (factories) purchased by firms.
 In contrast, residential fixed investment is the purchase of housing stock by
 households and landlords.
@@ -336,10 +338,10 @@ be negative (inventory is falling) or positive (inventory is increasing).
 %..............................
 
 Net exports~(\mft{nx}) are the \emph{net} difference between the value of exports and the value of imports.
-Thus, $nx$ could be a negative number for a country that imports more than it exports.
+Thus~(\mft{nx}) could be a negative number for a country that imports more than it exports.
 World GDP is the sum of all national GDPs.
 Therefore, for world GDP, $nx = 0$.
-We don't import from or export to space, \ldots yet.
+We don't import from or export to space (yet).
 
 
 %++++++++++++++++++++++++++++++
@@ -347,10 +349,10 @@ We don't import from or export to space, \ldots yet.
 \label{sec:PCbalance}
 %++++++++++++++++++++++++++++++
 
-Although economists use consumption narrowly as described in Equation~\ref{eq:GDP},
-we use the term colloquially to mean the sum of personal consumption, 
+Although economists use consumption~(\mft{c}) narrowly as described above,
+we use the word ``consumption'' colloquially to mean the sum of personal consumption, 
 government spending, and investment.
-That is, we use the term ``consumption'' to mean global GDP, in part to remind ourselves
+That is, we use ``consumption'' to mean GDP, in part to remind ourselves
 that economic activity is based on the use of resources.
 Individuals and corporations may ``save'' money for purchases in the future, but the
 economy as a whole balances production and (this more generic form of) consumption as 
@@ -380,13 +382,12 @@ why would you pay the costs of production if there were no prospects of a sale?
 %
 Therefore, we use the terms ``production'' and ``consumption'' interchangeably.
 
-
 %++++++++++++++++++++++++++++++
 \subsection{Economic metabolism}
 \label{sec:econ_metab}
 %++++++++++++++++++++++++++++++
 
-Having established that the economy only consumes what the economy produces and,
+Since the economy only consumes what the economy produces and,
 likewise, only things that will be consumed are produced, we are ready to introduce
 the metaphor of the economic metabolism.
 All plant and animal metabolisms consume resources
@@ -398,15 +399,15 @@ Similarly, economies take in resources and produce wastes.
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Thus, the economy is society's metabolism.
+Thus, we say the economy is society's metabolism.
 
 \end{mcframe}
 
 One way of looking at Equation~\ref{eq:IPARX} is that impacts~\Iparen{}
 are the \emph{result} of economic activity.
 That is, environmental impacts are the result of society's metabolism.
-Total consumption (that is, world GDP) is $P \times A$ in Equation~\ref{eq:IPARX}.
-Resources~\Rparen{} are the feed the economy needs to live and grow.
+Total consumption (that is, world GDP) is $\mft{P}\times\mft{A}$ in Equation~\ref{eq:IPARX}.
+Resources~\Rparen{} are the food the economy needs to live and grow.
 The impact intensity of resources~\Xparen{} 
 represents the wastes that the economy excretes.
 
@@ -420,21 +421,21 @@ Although production and consumption are in balance, both may change together.
 Indeed, growth in GDP per capita~\Aparen{} is the explicit goal of many economic policies.
 There are two ways the economy can increase GDP.
 Either (a)~the economy consumes \emph{more} inputs or
-(b)~it uses existing inputs more \emph{efficiently}.
+(b)~it uses existing inputs more \emph{efficiently} (meaning that \mft{R} goes down).
 
 Economic inputs include labor, capital, energy, and materials.
 In the long run, growing output by scaling up the inputs does not increase 
 affluence~\Aparen{} because more workers are needed to gather, process, and use the 
 additional resources.
 That leaves only efficiency as a means of boosting affluence.
-From a sustainability point of view, we should want to everything to be used
+From a sustainability point of view, we should want everything to be used
 as efficiently as possible; inefficiency of any kind is not desirable.
 
 The productivity of labor depends on the education and skill 
 of workers, technology, the number of workers in the population, the number of hours they 
 work, and the fraction of the population that is working;
 see Section~\ref{sec:dtt}.
-More workers will increase economic output but will not increase GDP \emph{per person}.
+More workers will increase economic output (GDP) but will not increase GDP \emph{per person}.
 A greater fraction of the population working, such as with the demographic dividend, 
 or workers working longer hours will tend to increase $A$ (at least until the 
 population pyramid stabilizes, in the case of the demographic dividend).
@@ -445,7 +446,7 @@ For instance, a builder with a backhoe can excavate a foundation faster than a
 builder with only a shovel.
 More capital investment \emph{sometimes} means greater economic output.
 Because capital depreciates over time, continual investment 
-(part of $i$ in Equation~\ref{eq:GDP})
+(part of \mft{i} in Equation~\ref{eq:GDP})
 is needed to maintain a certain level of capital stock. 
 Higher levels of capital require larger yearly investments to maintain.
 At some point, there is a \emph{maximum} level of effective capital.
@@ -464,7 +465,8 @@ The majority of the goods and services we consume today did not exist in
 1870~\cite{Gordon2016}.
 Today, we consume entirely new categories of goods and services that did not
 exist for most of human history.
-Much of the improvement in our standard of living comes from these innovations.
+Much of the improvement in our standard of living comes from these new types of 
+goods and services.
 
 However, examined closely, almost all of these ``new goods'' stories 
 \emph{also} end up being about some form of efficiency.
@@ -481,9 +483,8 @@ and energy (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) efficiency
 % ****
 % MKH to check, especially for efficiency vs. efficacy (see also the paragraphs above) -- JVA
 % ****
-Managing the ``rebound effect,'' which occurs when improvements in efficiency result in
-greater total consumption, is a major sustainability challenge;
-see Section~\ref{sec:rebound_effect}.
+Managing the ``rebound effect,'' which is a result of efficiency improvements,
+is a major sustainability challenge; see Section~\ref{sec:rebound_effect}.
 % 
 % *****
 % Would it be possible to also talk about economic contraction here? 
