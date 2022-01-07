@@ -41,6 +41,7 @@ Without oceans and atmosphere to accept wastes?
 Without coal, oil, and methane to make electricity, gasoline, and natural gas?
 Nowhere.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Definitions}
 \label{sec:resource_intensity_definitions}
@@ -314,7 +315,7 @@ We're using nearly the same amount (mass) of construction minerals, ores, and fo
 per GDP as we ever have.
 
 
-<<total_material_use, fig.cap=paste0("World material use. ``Construction'' includes all construction minerals. ``Ores'' includes industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is metric tonnes (1000 kg). ", fit_sentence(extracted_material_fit), " \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.")>>=
+<<total_material_use, fig.cap="World material use. ``Construction'' includes all construction minerals. ``Ores'' includes industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is metric tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
 krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
                                 sheet = "data to plot") %>% 
   dplyr::rename(
@@ -335,12 +336,7 @@ ggplot2::ggplot() +
   ggplot2::geom_area(data = krausmann, 
                      mapping = ggplot2::aes(x = Year, y = `Extracted material [Gt]`, fill = type)) + 
   ggplot2::scale_fill_viridis_d(direction = -1) +
-  ggplot2::geom_line(data = extracted_material_fit, 
-                     mapping = ggplot2::aes(x = Year, y = Fit), 
-                     size = curve_fit_size, 
-                     colour = curve_fit_colour, 
-                     linetype = curve_fit_linetype) +
-  
+
   ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
   ggplot2::labs(y = "Extracted material [Gt/year]") +
   
