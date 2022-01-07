@@ -21,16 +21,18 @@ The previous chapter addressed the sustainability implications of
 economic affluence, the $A$ term in the IPARX equation (Equation~\ref{eq:IPARX}, 
 repeated below for convenience). 
 Because the economy is society's metabolism, economic growth and increasing affluence
-mean more use of natural resources. 
+mean increasing use of natural resources. 
 This chapter explores the sustainability implications of resource acquisition and consumption, 
-i.e., this chapter covers $R$.
+which are reflected in the \mft{R} variable.
 
 \begin{equation} 
   \iparx            \tag{\ref{eq:IPARX}}
 \end{equation}
 
 Whether we are aware of it or not, 
-all plant, animal, and human life on Earth depends on natural resources for survival.
+all plant, animal, and human life on Earth depends on natural resources, 
+provisioned by the ecosystem. 
+(See Section~\ref{sec:ecosystem_services}.)
 Where would you be without air and water to breathe and drink?
 Without minerals to make cars?
 Without timber to build homes?
@@ -53,8 +55,9 @@ An intensity is like an efficiency, except the numerator and denominator have
 different units.
 A furnace that burns a quantity of natural gas that releases 100 BTUs of heat might
 only deliver 96 of those BTUs to your house.
-Such a furnace has an \emph{efficiency} of 96\% (BTUs delivered per BTUs input).
-(See Section~\ref{sec:furnaces} for more on furnace efficiency and a related metric,
+Such a furnace has an \emph{efficiency} of 96\% (BTUs delivered per BTUs input);
+see Section~\ref{sec:heating_and_cooling}.
+for more on furnace efficiency and a related metric,
 Annual Fuel Utilization Efficiency (AFUE).)
 A natural gas power plant might burn gas at a rate that releases 300 MW of heat to generate
 100 MW of electricity. 
@@ -66,7 +69,7 @@ for input and output.
 A vehicle's fuel economy, measured in miles per gallon, is an intensity.
 Carbon emissions per ton of freight per mile moved is an intensity.
 It is \emph{intensive} because total carbon emissions depend on the tons
-moved and the total km travelled.
+moved or the total km traveled.
 
 
 %..............................
@@ -91,8 +94,8 @@ a refinery that converts crude oil to refined fuels.
 Likewise, natural uranium is a primary energy carrier that must be converted into 
 fissionable uranium fuel before it can be used in a nuclear power plant to generate electricity.
 The oil refinery or nuclear-fuel enrichment process can be evaluated for their
-energy return on investment (EROI). 
-(See Section~\ref{sec:masterE}.)
+energy return on investment (EROI); 
+see Section~\ref{sec:masterE}.
 
 
 %..............................
@@ -108,41 +111,41 @@ Each resource can be transformed many times \emph{within} the economy.
 Timber might become 2$\times$4s, or plywood, or toothpicks, or mulch.
 Iron ore might become steel, then sheet metal, and then a toaster.
 Water might be ice, a sports drink, or Play-Doh.
-%%%*** clarify definition of agriculture.***
 The process of pulling a resource into the economy is called ``extraction.''
-Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used.
+Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used
+for productive purposes.
 
 
 %..............................
 \paragraph{Resource intensity of the economy}
 %..............................
 
-The $R$ term in Equation \ref{eq:IPARX} is the resource intensity of the economy.
+The \mft{R} term in Equation \ref{eq:IPARX} is the resource intensity of the economy.
 $R$ is defined as
 %
 \begin{equation}\label{eq:R}
   R = \frac{\textrm{total resources extracted}}{\textrm{GDP}} \; .
 \end{equation}
 %
-$R$ measures the total resources used by the economy to create a
+\mft{R} measures the total resources used by the economy to create a
 total amount of economic output (measured by GDP).
 Because the numerator and denominator of $R$ have different units,
-$R$ is an \emph{intensity}.
+\mft{R} is an \emph{intensity}.
 
-Figure~\ref{fig:total_material_use} shows use rates natural resources
+Figure~\ref{fig:total_material_use} shows use rates of some natural resources,
 aggregated into important categories of biomass, ores and industrial minerals, and 
 construction minerals.
 In 2005, the world economy used about 19 Gt of biomass, 6.7 Gt of ores and 
 industrial minerals, and about 22 Gt of construction materials
 to produce about \$81.5 trillion dollars of GDP. 
-One Gt is $10^9$~tons (or $10^{12}$~kg) and a trillion dollars is \${}$10^{12}$.
-Thus, each dollar of GDP produced used about 0.25 kg of biomass, 
-0.086 kg of ores and minerals, and 0.27 kg of construction materials. 
-A full accounting of the resource intensity of the economy ($R$)
+One Gt is 10$^9$~tonnes (or 10$^{12}$~kg) and a trillion dollars is \$10$^{12}$.
+Thus, each dollar of GDP produced used about 0.23 kg of biomass, 
+0.082 kg of ores and minerals, and 0.27 kg of construction materials. 
+A full accounting of the resource intensity of the economy~\Rparen{}
 yields a long list of numbers, like a huge grocery list,
-each giving the amount of a single resource needed to make \$1 of GDP. 
+each number giving the amount of a single resource needed to make \$1 of GDP. 
 This chapter discusses sustainability implications for a few resources,
-with energy providing the prime example of resource intensity. 
+with energy providing the prime example of resource intensity of the economy. 
 
 Resource intensity can be measured and quantified at the whole-economy level,
 as in the examples above.
@@ -175,9 +178,9 @@ A significant sustainability challenge
 is extracting and consuming natural resources\index{resources!natural}
 at a sustainable rate.
 When considering the sustainability of resource extraction and consumption, 
-the categories ``strong'' and ``weak'' sustainability
-(introduced in Section~\ref{sec:what_is_sustainability})
-can be helpful.
+we can use the views on sustainability introduced 
+in Section~\ref{sec:what_is_sustainability}:
+``strong'' and ``weak.''
 
 
 %++++++++++++++++++++++++++++++
@@ -199,7 +202,8 @@ are classified as nonrenewable.
 
 Whether or not a resource is renewable affects the sustainability of its 
 extraction and consumption,
-per definitions of strong and weak sustainability.
+per definitions of strong and weak sustainability 
+given in Section~\ref{sec:what_is_sustainability}.
 A criterion for ``strong sustainability'' is 
 extracting and consuming resources 
 at rates slower than their natural regeneration rates.
@@ -247,11 +251,9 @@ Energy is important for making an economy run but so are material resources.
 
 Another interesting feature of Table~\ref{tab:CRMs} is the \emph{breadth of applications}; 
 most of the critical materials are used throughout the economy.
-A material may be critical to a region, to an economic sector, or to an economy as a whole for any number of reasons:
-breadth of application, 
-lack of internal production capability, 
-etc.
-
+A material may be critical to a region, to an economic sector, or to an economy as a whole 
+because of breadth of application, supply vulnerability or volatility, 
+or supply limits.
 Each region or sector will have its own list of CRMs.
 For example, the transition to renewable energy future 
 (Section~\ref{sec:low_carbon_transition})
