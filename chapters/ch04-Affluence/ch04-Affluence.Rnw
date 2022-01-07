@@ -4,7 +4,7 @@
 %!TEX root = ../../book.Rnw
 
 %#############################################################
-\chapter{Affluence ($A$)}
+\chapter{Affluence \Aparen}
 \label{chap:affluence}
 %#############################################################
 
@@ -45,7 +45,7 @@ but mostly wealth refers to the \emph{amount} of goods, possessions, money,
 property, or ``stuff'' owned by a person.
 In other words, wealth refers to a \emph{level} of material possessions or resources.
 In contrast, affluence ($A$) is the \emph{rate} that the economy
-uses up goods and services, that is, the amount of ``stuff'' bought \emph{per year}.
+uses goods and services, that is, the amount of ``stuff'' bought \emph{per year}.
 
 Economic activity may mean literally consumption, as in the case with food,
 or it could mean using a service, such as education or getting a haircut.
@@ -55,7 +55,7 @@ whether the car is electric or burns gasoline doesn’t matter (to the traveler)
 The energy consumed is just a means to an end, often called the ``service.''
 (In this example, the energy service is travel.)
 
-Average affluence ($A$) for a country or the world
+Average affluence \Aparen{} for a country or the world
 is \emph{measured} by gross domestic product (GDP) per capita.
 There are valid critiques as to why per capita GDP is not the \emph{best possible}
 measure of affluence.
