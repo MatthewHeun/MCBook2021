@@ -76,10 +76,10 @@ Consistent and easily accessible GDP data can allow us to make observations
 about trends, which are \emph{qualitatively} consistent with trends we would observe
 using other indices, bearing in mind the limitations of what GDP measures and what it doesn't.
 In any case, a different measure of affluence~\Aparen{}, would require a corresponding
-adjustment to (the measure of) resource intensity of economic activity~($R$).
+adjustment to (the measure of) resource intensity of economic activity~\Rparen{}.
 Regardless of the measure of affluence, we land in the same difficult spot:
 greater affluence~\Aparen{} creates greater environmental impact~\Iparen{}
-if the resource intensity of the economy~($R$) and the impact intensity of resources~($X$)
+if the resource intensity of the economy~\Rparen{} and the impact intensity of resources~($X$)
 (discussed in the next chapter) is unchanged.
 
 Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
@@ -389,7 +389,7 @@ One way of looking at Equation~\ref{eq:IPARX} is that impacts~\Iparen{}
 are the \emph{result} of economic activity.
 That is, environmental impacts are the result of society's metabolism.
 Total consumption (that is, world GDP) is $P \times A$ in Equation~\ref{eq:IPARX}.
-Resources ($R$) are the feed the economy needs to live and grow.
+Resources~\Rparen{} are the feed the economy needs to live and grow.
 The impact intensity of resources~($X$) 
 represents the wastes that the economy excretes.
 

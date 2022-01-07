@@ -455,11 +455,11 @@ about the relative carbon intensity of goods~\citep{Zhao_2012}.
 %++++++++++++++++++++++++++++++
 
 Equation~\ref{eq:IPARX} shows that
-rising resource intensity of the economy ($R$)
+rising resource intensity of the economy~\Rparen{}
 would drive environmental impacts~\Iparen{} upward.
 However, Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that the 
 world's economy has been reducing its resource (energy) intensity over time.
-Of the four $PARC$ terms, resource intensity of the economy ($R$) 
+Of the four $PARC$ terms, resource intensity of the economy~\Rparen{} 
 is the only term moving in a sustainable direction over the long term.
 (See Equation \ref{eq:IPARX_rate_with_numbers}.)
 To reduce environmental impacts, 
