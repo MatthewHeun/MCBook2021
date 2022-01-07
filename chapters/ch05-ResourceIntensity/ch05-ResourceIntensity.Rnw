@@ -242,11 +242,13 @@ food and the refrigerators that maintain freshness,
 toilets and the sewer systems that remove wastes.
 Furthermore, the operation of all these systems requires energy, the master resource.
 
-Although any raw material can be essential for a given product,
+Although any raw material can be essential 
+(and not economically substitutable) 
+for a given product,
 the European Commission maintains a list of Critical Raw Materials (CRMs)\index{materials!critical!raw}
 with special importance 
-across a wide range of industries.
-(See Table~\ref{tab:CRMs}.)
+across a wide range of industries;
+see Table~\ref{tab:CRMs}.
 Notice the \emph{large number} of resources considered ``critical.''
 Energy is important for making an economy run but so are material resources.
 
@@ -255,8 +257,9 @@ most of the critical materials are used throughout the economy.
 A material may be critical to a region, to an economic sector, or to an economy as a whole 
 because of breadth of application, supply vulnerability or volatility, 
 or supply limits.
+
 Each region or sector will have its own list of CRMs.
-For example, the transition to renewable energy future 
+For example, the transition to a renewable energy future 
 (Section~\ref{sec:low_carbon_transition})
 depends on a large number of critical materials, 
 outlined in a recent International Energy Agency report~\cite{IEA:2021wt}.
@@ -269,7 +272,7 @@ crm_df <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "da
   tibble::column_to_rownames(var = "Materials")
 
 crm_xtab <- xtable::xtable(crm_df, 
-                           caption = "Critical raw materials and the economic sectors in which they are used. ``Aero'' is aerospace and defense. ``Tex'' is textiles. ``Elect'' is electronics. ``Auto'' includes mobility and automotive. ``Energy'' includes all energy-intensive industries. ``Rens'' is the renewable energy sector. ``Agri'' is agriculture and food. ``Const'' is construction. \\emph{Source}: \\citet[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.", 
+                           caption = "Critical raw materials and the economic sectors in which they are used. ``Aero'' is aerospace and defense. ``Tex'' is textiles. ``Elect'' is electronics. ``Auto'' includes mobility and automotive. ``Energy'' includes all energy-intensive industries. ``Rens'' is the renewable energy sector. ``Agri'' is agriculture and food. ``Const'' is construction. ``PGM'' is platinum group metals. ``HREE'' and ``LREE'' are heavy and light rare Earth elements. \\emph{Source}: \\citet[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.", 
                            align = c("r", rep("c", 11)),
                            label = "tab:CRMs")
 
@@ -286,7 +289,7 @@ print(crm_xtab,
 
 The rate at which the world's economy has been extracting resources
 to create products, create infrastructure, and deal with wastes
-has been accelerating in recent decades.
+has been growing in recent decades.
 % In fact, when the economy grows, the demand for goods and services grows.
 % When the demand for goods and services grows, 
 % the demand for natural resources grows, too.
@@ -298,9 +301,9 @@ Figure~\ref{fig:per_capita_material_use}
 shows the same data on a per-capita basis.
 Although a (hypothetically) falling global population might \emph{help} humanity to become 
 sustainable by reducing the number of people who need resources,
-Figure~\ref{fig:per_capita_material_use} indicates that won't be
+Figure~\ref{fig:per_capita_material_use} indicates population decline won't be
 enough. 
-Rising affluence is pushing per-capita material consumption upward over time.
+Rising affluence~\Aparen{} is pushing per-capita material consumption upward over time.
 Thus, a declining population would help humanity to be more sustainable
 only if population declines faster than affluence grows.
 
