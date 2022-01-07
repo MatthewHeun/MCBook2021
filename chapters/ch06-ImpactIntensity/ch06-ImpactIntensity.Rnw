@@ -27,7 +27,7 @@
 % \epigraph{I believe all adults have a moral responsibility to try to protect
 % children from climate disruption}{Chris Fox} % from MIT business quotes page.
 
-As noted in section \ref{sec:econ_metab}
+As noted in section \ref{sec:econ_metab},
 the economy is society's metabolism.\index{economy!as society's metabolism}
 As such, the economy exhibits characteristics of a metabolism:
 it ingests materials and emits wastes.
@@ -42,20 +42,20 @@ the topic of this chapter.
 
 The impact intensity of resources~\Xparen{}
 is a function of \mft{R} (resource extraction and consumption) discussed in 
-Chapter~\ref{chap:resource_intensity} in that the 
-type and intensity of environmental impacts is directly related to 
-the types, quantities, and ways of processing of resources. 
+Chapter~\ref{chap:resource_intensity}, in that the 
+type and intensity of environmental impacts are directly related to 
+the types, quantities, and ways of processing resources. 
 %Environmental impact intensity is discussed in this chapter.
-$R$ represents the inputs to the economy 
+\mft{R} represents the inputs to the economy 
 (``food'' in the metabolic analogy), and 
-$X$ represents the economy's excreted wastes.
+\mft{X} represents the economy's excreted wastes.
 % We say ``represents'' and not ``is'' because both terms are \emph{normalized} to
 % a single dollar of GDP.
 
-$X$ is defined as
+\mft{X} is defined as
 %
 \begin{equation}\label{eq:X}
-  X = \frac{\textrm{total environmental impacts produced}}{\textrm{total resources extracted}} \; .
+  \mft{X} = \frac{\textrm{total environmental impacts produced}}{\textrm{total resources extracted}} \; .
 \end{equation}
 %
 Note that ``impacts'' are plural.
@@ -81,23 +81,23 @@ desertification\index{desertification}
 (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and
 species loss\index{species loss} (due to habitat loss, environmental toxins, and over-exploitation).
 With reference to a few of the critical materials in Table~\ref{tab:CRMs},
-specific examples of environmental impacts caused by resource extraction and consumption include:
+specific examples of environmental impacts caused by resource extraction include:
 %
 \begin{itemize}
 
-  \item Air, water, and soil pollution~\cite{Lee:2017ui} (environmental impact) in the form of
+  \item Air, water, and soil pollution~\cite{Lee:2017ui} in the form of
         bauxite dust,\index{bauxite!dust}
         sulfur dioxide (SO$_2$), and
         nitrous oxides (NO$_\mathrm{x}$) emissions\index{nitrous oxides (NO$_\mathrm{x}$)!emissions of}
-        from bauxite mining (material extraction),
+        from bauxite mining in Australia,
 
-  \item Toxic tailings (environmental impact)
-        from tungsten\index{tungsten (W)} (material extraction)
-        mining operations~\cite{Lee:2021tz}, and
+  \item Toxic tailings
+        from tungsten\index{tungsten (W)}
+        mining operations in Korea~\cite{Lee:2021tz}, and
 
   \item Deforestation\index{deforestation} and
-        reduced forest quality~\cite{Kissinger:2020ut} (environmental impact)
-        to make way for rubber plantations\index{rubber plantations} (material extraction)
+        reduced forest quality~\cite{Kissinger:2020ut}
+        to make way for rubber plantations\index{rubber plantations}
         in southeast Asia.
 
 \end{itemize}
@@ -115,11 +115,10 @@ are a significant source of environmental impact
 coming from energy consumption,
 it follows that the prime example of 
 environmental impact intensity of resource extraction and consumption
-(\Xparen{} in Equation~\ref{eq:IPARX}) is CO$_2$ emissions.
+(\;\!\mft{X} in Equation~\ref{eq:IPARX}) is CO$_2$ emissions
+in tonnes per MJ of energy provided.
 Specifically, the prime example for impact intensity~\Xparen{}
-is the CO$_2$ intensity of energy, $X_{CO_2}$.
-The units for $X_{CO_2}$ are,
-for example, tonnes of CO$_2$ emitted per MJ of energy consumed.
+is the CO$_2$ intensity of energy, $\mft{X}_{\text{CO}_2}$.
 
 Figure~\ref{fig:LLNL_CO2_sankey} is a Sankey\index{Sankey diagram!CO$_2$ emissions} 
 diagram of sources of CO$_2$ emissions from the U.S.\ economy in 2018.
@@ -181,30 +180,31 @@ The ratio of the lines in Figures~\ref{fig:CarbonEmissionsGraph} and
 as shown in Figure~\ref{fig:ImpactIntensityGraph}.
 The line in Figure~\ref{fig:ImpactIntensityGraph}
 demonstrates the long transition
-from traditional biofuels to fossil fuels.
+from traditional biofuels to fossil fuels
+evident in Figure~\ref{fig:PrimaryEnergyGraph}.
 
 The biofuel-to-fossil fuel transition has
 significant sustainability implications.
 Traditional biofuels are carbon neutral,
 because any CO$_2$ released by combustion was
-already sequestered into the biomass as the plants grew to maturity.
+already sequestered into the biomass as the plants grew.
 Fossil fuels are not carbon neutral;
 their combustion releases CO$_2$ that was sequestered millions of years ago.
-When the world transitioned away from traditional biofuels toward fossil fuels,
+As the world transitioned away from traditional biofuels toward fossil fuels,
 the carbon intensity of energy rose.
 
-On the other hand, use of traditional biofuels resulted in deforestation, erosion,
+On the other hand, use of traditional biofuels results in deforestation, erosion,
 and other negative environmental effects (as well as being inefficient from an EROI 
 perspective, as shown in Table~\ref{tab:eroi}).
-The transition away from their use resulted in cleaner urban air (especially after 
+The transition away from biofuel consumption results in cleaner urban air (especially after 
 the transition from coal to natural gas for residential heating) as noted by~\cite{Gordon2016}.
 Because having a healthy environment is what economists call a ``normal'' good,
 \mft{I} should fall as \mft{A} rises, in general.
 In \emph{some} ways, the transition away from traditional biofuels \emph{did} result
-in reduced environmental impact (at least before climate change became a concern).
+in reduced environmental impact, neglecting climate change concerns.
 % Referencing Figure 5.3, the falling biomass PER GDP, doesn't seem appropriate here.
 
-<<ImpactIntensityGraph, fig.cap="Carbon intensity of energy, $X_{CO_2}$. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
+<<ImpactIntensityGraph, fig.cap="Carbon intensity of energy, $X_{\\text{CO}_2}$. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 carbon_intensity <- dplyr::inner_join(
   CO2_emissions,
   primary_energy %>%
@@ -272,15 +272,16 @@ But how?
 
 There are at least five often-discussed options for
 transitioning to a low carbon intensity energy supply:
-(a) carbon capture and storage;
-(b) carbon sequestration;
-(c) carbon takeback obligation;
-(d) carbon tax; *** MKH to add paragraph ***
-(e) biomass; and
+(a) carbon capture and storage,
+(b) carbon sequestration,
+(c) carbon takeback obligation,
+(d) carbon tax,
+(e) nuclear electricity,
+(e) biomass, and
 (f) wind, water, and solar (WWS).
 Each option has its own challenges and 
 none has yet been implemented on a large enough scale to reduce CO$_2$ emissions;
-(see Figure~\ref{fig:CarbonEmissionsGraph}).
+see Figure~\ref{fig:CarbonEmissionsGraph}.
 The subsections below discuss these options and their implementation challenges.
 
 
@@ -400,6 +401,22 @@ commonplace technologies, including
 transport (ground and air), 
 building materials (especially cement), and 
 building heating and cooling.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Carbon tax and carbon trading}
+\label{sec:carbon_tax_trading}
+%++++++++++++++++++++++++++++++
+
+**** MKH to complete. ****
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Nuclear electricity}
+\label{sec:nuclear_electricity}
+%++++++++++++++++++++++++++++++
+
+**** MKH to complete. ****
 
 
 %++++++++++++++++++++++++++++++
