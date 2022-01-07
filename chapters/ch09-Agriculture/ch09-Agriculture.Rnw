@@ -113,8 +113,8 @@ per person per day since 1967~\cite{Gordon2016}.
 The trend has also been toward a more varied diet that includes more fresh foods.
 This trend towards a richer, more varied diet is repeated across the world as
 national economies grow.
-Thus, the global demand for food has two main drivers: population ($P$) is the primary
-driver of demand and affluence ($A$) is the secondary driver.
+Thus, the global demand for food has two main drivers: population~\Pparen{} is the primary
+driver of demand and affluence~\Aparen{} is the secondary driver.
 
 As mentioned in Section~\ref{sec:PCbalance}, consumption and production are balanced,
 particularly for food, in part because humans prefer fresh food.
@@ -139,7 +139,7 @@ corruption and/or oppression.)
 Equation~\ref{eq:IPARX} indicates reductions in agricultural impacts on the 
 environment, in the absence of a falling population or affluence (see 
 Section~\ref{sec:reducing_c}), can only come from reducing one of the two intensities
-of agriculture, the resource intensity ($R$) or the impact intensity ($X$).
+of agriculture, the resource intensity~\Rparen{} or the impact intensity~\Xparen{}.
 The efficiency of agriculture, in terms of what inputs it requires and what 
 impacts it produces are explored more in the following section.
 
@@ -637,7 +637,7 @@ for determining food prices.
 %++++++++++++++++++++++++++++++
 
 Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based efficiency for U.S.
-agriculture, which is one aspect of the resource intensity ($R$) of agriculture.
+agriculture, which is one aspect of the resource intensity~\Rparen{} of agriculture.
 Other metrics by which the agriculture system could be judged are presented below.
 
 We could judge agriculture on the basis of how effectively each input is used.
@@ -735,7 +735,7 @@ However, the relatively higher amounts of human inputs make the food produced
 more expensive.
 Ultimately, reducing environmental impacts requires additional investment, which
 makes food more expensive, which is consistent with Equation~\ref{eq:IPARX}
-(reduced impact ($I$) comes from reduced affluence ($A$)).
+(reduced impact~\Iparen{} comes from reduced affluence~\Aparen{}).
 
 One strategy that might be highly successful for some climate zones and for some
 crops is to use solar panels to provide partial shade for crops prefer lower-light

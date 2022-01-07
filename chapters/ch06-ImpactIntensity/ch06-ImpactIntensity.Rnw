@@ -5,7 +5,7 @@
 
 
 %#############################################################
-\chapter{Impact intensity of resources ($X$)}
+\chapter{Impact intensity of resources~\Xparen{}}
 \label{chap:impact_intensity}
 %#############################################################
 % \epigraph{Normal human activity is worse for nature than the biggest 
@@ -33,14 +33,14 @@ As such, the economy exhibits characteristics of a metabolism:
 it ingests materials and emits wastes.
 These characteristics of the economic metabolism are captured by the
 final term in Equation~\ref{eq:IPARX} (repeated below for convenience),
-the environmental \emph{impact intensity} of resource extraction and consumption ($X$), 
+the environmental \emph{impact intensity} of resource extraction and consumption~\Xparen{}, 
 the topic of this chapter.
 
 \begin{equation} 
   \iparx            \tag{\ref{eq:IPARX}}
 \end{equation}
 
-The impact intensity of resources ($X$)
+The impact intensity of resources~\Xparen{}
 is a function of $R$ (resource extraction and consumption) discussed in 
 Chapter~\ref{chap:resource_intensity} in that the 
 type and intensity of environmental impacts is directly related to 
@@ -70,7 +70,7 @@ impacts in columns and resources in rows.)
 \label{sec:impact_intensity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The impact intensity of resource extraction and consumption ($X$)
+The impact intensity of resource extraction and consumption~\Xparen{}
 represents the amount of environmental impact (emitted wastes)
 per unit of extracted and consumed resources (ingested materials).
 Examples of environmental impacts include
@@ -116,7 +116,7 @@ coming from energy consumption,
 it follows that the prime example of 
 environmental impact intensity of resource extraction and consumption
 ($X$ in Equation~\ref{eq:IPARX}) is CO$_2$ emissions.
-Specifically, the prime example for impact intensity ($X$)
+Specifically, the prime example for impact intensity~\Xparen{}
 is the CO$_2$ intensity of energy, $X_{CO_2}$.
 The units for $X_{CO_2}$ are,
 for example, tonnes of CO$_2$ emitted per MJ of energy consumed.
@@ -225,13 +225,13 @@ carbon_intensity %>%
 
 Equation~\ref{eq:IPARX} shows that reducing any of the right-hand side terms to 0
 will eliminate CO$_2$ emissions.
-That is, if population ($P$), 
-affluence ($A$),
+That is, if population~\Pparen{}, 
+affluence~\Aparen{},
 energy intensity of the economy ($R_{Ep}$, the prime example for $R$)
 \emph{or} carbon intensity of energy $X_{CO_2}$ (the prime example for $X$)
 go to zero,
 CO$_2$ emissions will be eliminated.
-Few people want to reduce population ($P$) or affluence ($A$).
+Few people want to reduce population~\Pparen{} or affluence~\Aparen{}.
 The primary energy intensity of the economy, $R_{Ep}$, is declining
 (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}),
 but not as fast as population (Figure~\ref{fig:PopulationGraph})
@@ -800,14 +800,14 @@ many years in education and government led him to quip frequently
 Energy efficiency is widely seen as a means of reducing CO$_2$ emissions.
 The thinking goes that either the resource intensity ($R$ in the IPARX identity, 
 Equation~\ref{eq:IPARX}) 
-or impact intensity ($X$), or both,
+or impact intensity~\Xparen{}, or both,
 will go down as efficiency rises.
 However, energy efficiency is known to stimulate economic activity 
 by a mechanism called the ``rebound effect''~\cite{Brockway:2021ww},
 wherein monetary savings (from reduced energy consumption at a newly-efficient device)
 are reinvested, leading to economic growth.
 Economic growth raises the GDP of an economy,
-so affluence ($A$) will increase.
+so affluence~\Aparen{} will increase.
 As $A$ increases, energy consumption will increase.
 Whether energy efficiency actually saves energy and actually saves CO$_2$ emissions
 depends on the strength of the rebound effect.
@@ -946,7 +946,7 @@ a renewables-driven decrease in $X$ would lead to an increase in $A$
 in the IPARX equation (Equation~\ref{eq:IPARX}).
 The strength of each effect ($X \downarrow$, $A \uparrow$) 
 will determine whether Green Growth or a Green New Deal will actually decrease 
-environmental impacts ($I$) or CO$_2$ emissions (in the prime example).
+environmental impacts~\Iparen{} or CO$_2$ emissions (in the prime example).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

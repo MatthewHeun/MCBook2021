@@ -4,7 +4,7 @@
 %!TEX root = ../../book.Rnw
 
 %#############################################################
-\chapter{Resource intensity of the economy ($R$)}
+\chapter{Resource intensity of the economy~\Rparen{}}
 \label{chap:resource_intensity}
 %#############################################################
 %\epigraph{The conservation of natural resources is the fundamental problem.
@@ -869,7 +869,7 @@ weak_sust_energy_rho %>%
 
 Continuing the \href{https://en.wiktionary.org/wiki/explication}{explication}
 of the IPARX identity,
-one piece or facet of resource intensity of the economy ($R$)
+one piece or facet of resource intensity of the economy~\Rparen{}
 is the primary energy intensity ($R_{Ep}$) of the world economy.
 $R_{Ep}$ is the amount of primary energy required to create one unit (dollar) of
 world GDP.
@@ -1076,7 +1076,7 @@ for resource production.
 One way to slow down the inevitable march of time
 along logistic curves for finite resources is to transition
 economies to use fewer resources per unit of GDP produced,
-i.e., to reduce the resource intensity of the economy ($R$).
+i.e., to reduce the resource intensity of the economy~\Rparen{}.
 Reduction of resource intensity of the economy is sometimes called \emph{dematerialization}.
 Reducing $R$ will reduce resource consumption but only if
 GDP stays constant or grows more slowly than the
