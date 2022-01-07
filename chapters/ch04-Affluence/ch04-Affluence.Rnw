@@ -23,7 +23,7 @@ of human activities on those boundaries, that is, the left-hand side of Equation
 Chapter~\ref{chap:population} is about the first term on the right-hand side of 
 Equation~\ref{eq:IPARX}, world population and its dynamics. 
 Discussion questions from Chapter~\ref{chap:population} reveal a variety of ways 
-in which it is practically and morally difficult to reduce impacts~($I$) by reducing 
+in which it is practically and morally difficult to reduce impacts~\Iparen{} by reducing 
 population~($P$).
 This chapter examines the second term on the right-hand side of Equation~\ref{eq:IPARX},
 affluence~($A$), and the role of human economic activity in sustainability challenges.
@@ -78,7 +78,7 @@ using other indices, bearing in mind the limitations of what GDP measures and wh
 In any case, a different measure of affluence~($A$), would require a corresponding
 adjustment to (the measure of) resource intensity of economic activity~($R$).
 Regardless of the measure of affluence, we land in the same difficult spot:
-greater affluence~($A$) creates greater environmental impact~($I$)
+greater affluence~($A$) creates greater environmental impact~\Iparen{}
 if the resource intensity of the economy~($R$) and the impact intensity of resources~($X$)
 (discussed in the next chapter) is unchanged.
 
@@ -385,7 +385,7 @@ Thus, the economy is society's metabolism.
 
 \end{mcframe}
 
-One way of looking at Equation~\ref{eq:IPARX} is that impacts ($I$)
+One way of looking at Equation~\ref{eq:IPARX} is that impacts~\Iparen{}
 are the \emph{result} of economic activity.
 That is, environmental impacts are the result of society's metabolism.
 Total consumption (that is, world GDP) is $P \times A$ in Equation~\ref{eq:IPARX}.
@@ -692,7 +692,7 @@ runs counter to what people want (or say they want).
 % ---MKH
 % ****
 
-% Immediately, we can see a challenge with attempting to reduce impacts ($I$) by
+% Immediately, we can see a challenge with attempting to reduce impacts~\Iparen{} by
 % reducing affluence ($A$)---doing so will make people less well off. 
 % ****
 % ``less well-off'' is carrying a lot of weight here.
