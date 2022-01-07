@@ -528,14 +528,14 @@ thereby increasing the resource intensity of another economy.
 %++++++++++++++++++++++++++++++
 
 Equation~\ref{eq:IPARX} shows that reducing 
-the impact intensity of resources ($X$)
+the impact intensity of resources~\Xparen{}
 will cause environmental impacts~\Iparen{} to decline.
 
 %..............................
 \paragraph{Government+Law+Impact intensity}
 %..............................
 
-One way to reduce the impact intensity of resources ($X$)
+One way to reduce the impact intensity of resources~\Xparen{}
 is to strengthen environmental regulations 
 at both extraction and disposal lifecycle stages.
 At the extraction stage,

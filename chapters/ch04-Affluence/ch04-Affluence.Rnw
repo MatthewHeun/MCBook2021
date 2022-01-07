@@ -79,7 +79,7 @@ In any case, a different measure of affluence~\Aparen{}, would require a corresp
 adjustment to (the measure of) resource intensity of economic activity~\Rparen{}.
 Regardless of the measure of affluence, we land in the same difficult spot:
 greater affluence~\Aparen{} creates greater environmental impact~\Iparen{}
-if the resource intensity of the economy~\Rparen{} and the impact intensity of resources~($X$)
+if the resource intensity of the economy~\Rparen{} and the impact intensity of resources~\Xparen{}
 (discussed in the next chapter) is unchanged.
 
 Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
@@ -390,7 +390,7 @@ are the \emph{result} of economic activity.
 That is, environmental impacts are the result of society's metabolism.
 Total consumption (that is, world GDP) is $P \times A$ in Equation~\ref{eq:IPARX}.
 Resources~\Rparen{} are the feed the economy needs to live and grow.
-The impact intensity of resources~($X$) 
+The impact intensity of resources~\Xparen{} 
 represents the wastes that the economy excretes.
 
 
