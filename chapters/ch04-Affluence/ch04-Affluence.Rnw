@@ -61,18 +61,21 @@ There are valid critiques as to why per capita GDP is not the \emph{best possibl
 measure of affluence.
 For instance, GDP doesn't count (or under counts) the value
 of innovation in improving standards of living~\cite{Gordon2016}.
-Many new metrics (see Section~\ref{sec:indices}) have been proposed as replacements
+Many new metrics (Section~\ref{sec:indices}) have been proposed as replacements
 or improvements for GDP.
 Some examples are green GDP, the index of sustainable economic welfare, and the
 genuine progress indicator.
-However, each of these suffers from its own limitations.%, philosophical, methodological, and practical.
+However, each of these suffers from its own limitations. %, philosophical, methodological, and practical.
 The biggest limitation is standardization and availability of data.
 GDP is what we have the most data for and, consequently,
 it is the affluence indicator ``everyone'' uses.
-Effectively, GDP is the standard.
+Effectively, GDP is the standard way to measure economic activity.
+(Because GDP data are collected nationally but aggregated internationally, 
+there is often skepticism of data provided by corrupt and/or authoritarian
+regimes, in addition to the caveats about what GDP measures and what it doesn't.)
 % put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
 
-Consistent and easily accessible GDP data can allow us to make observations
+Consistent and easily accessible GDP data allows us to make observations
 about trends, which are \emph{qualitatively} consistent with trends we would observe
 using other indices, bearing in mind the limitations of what GDP measures and what it doesn't.
 In any case, a different measure of affluence~($A$), would require a corresponding
@@ -80,7 +83,7 @@ adjustment to (the measure of) resource intensity of economic activity~($R$).
 Regardless of the measure of affluence, we land in the same difficult spot:
 greater affluence~($A$) creates greater environmental impact~($I$)
 if the resource intensity of the economy~($R$) and the impact intensity of resources~($X$)
-(discussed in the next chapter) is unchanged.
+(discussed in the next chapter) are unchanged.
 
 Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
 world annual GDP per capita and total GDP, respectively.
@@ -260,9 +263,6 @@ ggplot2::ggplot() +
   MKHthemes::xy_theme()
 @
 
-GDP data are collected nationally and aggregated internationally, 
-so there is often skepticism of data provided by corrupt and/or authoritarian
-regimes, in addition to the caveats about what GDP measures and what it doesn't.
 GDP is denominated in units of money and is the sum of four terms:
 
 \begin{equation}
