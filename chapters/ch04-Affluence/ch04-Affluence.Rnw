@@ -85,17 +85,6 @@ greater affluence~\Aparen{} creates greater environmental impact~\Iparen{}
 if the resource intensity of the economy~\Rparen{} and the impact intensity of resources~\Xparen{}
 (discussed in the next chapter) are unchanged.
 
-Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
-world annual GDP per capita and total GDP, respectively.
-Note that many national and international economic policies are intended to
-continually increase affluence and/or maintain growth in GDP.
-Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
-that these choices have been effective.
-Both world GDP \emph{and} affluence \Aparen{} have been growing exponetially 
-since 1950 at rates of X and Y, respectively. *** MKH to add rates ***
-(Recall that Section~\ref{sec:exp} reminds us that perpetual growth in the 
-consumption of finite resources is ultimately unsustainable.)
-
 % <<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence~\Aparen{} in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
 % world_gdppc_Maddison <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
 %                                            sheet = "GDPpc-Maddison-WB") %>% 
@@ -140,6 +129,13 @@ world_gdppc_Nordhaus <- readxl::read_excel(file.path("chapters", "ch04-Affluence
 
 gdppc_fit <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "Ch4ExpCurveFits.xlsx"),
                                            sheet = "GDPpc fit 1950 onward")
+
+# Need this later
+affluence_growth_rate <- gdppc_fit %>%
+  dplyr::filter(coeffs == "b") %>%
+  magrittr::extract2("values") %>%
+  magrittr::multiply_by(100) %>% # To convert from decimal to percent/year.
+  sprintf(fmt = "%#.2f")
 
   ggplot2::ggplot() + 
     ggplot2::geom_line(data = world_gdppc_Nordhaus %>% 
@@ -242,6 +238,13 @@ world_gdp_Nordhaus <- dplyr::inner_join(
 gdp_fit <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "Ch4ExpCurveFits.xlsx"),
                                            sheet = "GDP fit 1950 onward")
   
+# Need this later
+gdp_growth_rate <- gdp_fit %>%
+  dplyr::filter(coeffs == "b") %>%
+  magrittr::extract2("values") %>%
+  magrittr::multiply_by(100) %>% # To convert from decimal to percent/year.
+  sprintf(fmt = "%#.2f")
+
 # Graph but in trillion dollars.
 ggplot2::ggplot() +
   ggplot2::geom_line(data = world_gdp_Nordhaus %>%
@@ -264,6 +267,20 @@ ggplot2::ggplot() +
   
   MKHthemes::xy_theme()
 @
+
+Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
+world annual GDP per capita and total GDP, respectively.
+Note that many national and international economic policies are intended to
+continually increase affluence and/or maintain growth in GDP.
+Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
+that these choices have been effective.
+Both world GDP \emph{and} affluence \Aparen{} have been growing exponentially 
+since 1950 at rates of 
+\Sexpr{gdp_growth_rate}~\%/year and 
+\Sexpr{affluence_growth_rate}~\%/year, 
+respectively.
+(Recall that Section~\ref{sec:exp} reminds us that perpetual growth in the 
+consumption of finite resources is ultimately unsustainable.)
 
 GDP is denominated in units of money and is the sum of four terms:
 
