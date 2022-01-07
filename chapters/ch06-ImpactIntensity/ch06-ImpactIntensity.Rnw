@@ -193,6 +193,16 @@ their combustion releases CO$_2$ that was sequestered millions of years ago.
 When the world transitioned away from traditional biofuels toward fossil fuels,
 the carbon intensity of energy rose.
 
+On the other hand, use of traditional biofuels resulted in deforestation, erosion,
+and other negative environmental effects (as well as being inefficient from an EROI 
+perspective, as shown in Table~\ref{tab:eroi}).
+The transition away from their use resulted in cleaner urban air (especially after 
+the transition from coal to natural gas for residential heating) as noted by~\cite{Gordon2016}.
+Because having a healthy environment is what economists call a ``normal'' good,
+\mft{I} should fall as \mft{A} rises, in general.
+In \emph{some} ways, the transition away from traditional biofuels \emph{did} result
+in reduced environmental impact (at least before climate change became a concern).
+% Referencing Figure 5.3, the falling biomass PER GDP, doesn't seem appropriate here.
 
 <<ImpactIntensityGraph, fig.cap="Carbon intensity of energy, $X_{CO_2}$. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 carbon_intensity <- dplyr::inner_join(
@@ -265,8 +275,9 @@ transitioning to a low carbon intensity energy supply:
 (a) carbon capture and storage;
 (b) carbon sequestration;
 (c) carbon takeback obligation;
-(d) biomass; and
-(e) wind, water, and solar (WWS).
+(d) carbon tax; *** MKH to add paragraph ***
+(e) biomass; and
+(f) wind, water, and solar (WWS).
 Each option has its own challenges and 
 none has yet been implemented on a large enough scale to reduce CO$_2$ emissions;
 (see Figure~\ref{fig:CarbonEmissionsGraph}).
@@ -519,13 +530,24 @@ the topic of an end-of-chapter project.
 
 \noindent \textbf{What about offsets?}
 
-Carbon offsets are a way to enable carbon emitters to
+Carbon offsets are a way to enable carbon emitters to %% Like a tax here??
+%% Like a tax, carbon offsets change net emissions by ...? His comment doesn't seem to fit to me.
+% If you can make sense of it, great otherwise, skip.
+% Or maybe connect to your new carbon tax section.
 pay someone else to sequester or reduce their own carbon emissions.
 Carbon emissions are traded as a financial instrument.
 A market develops in which emissions and reductions are traded, 
 thereby finding a low price for net emission reductions.
-As such, carbon offsets enable carbon emitters to shift the responsibility for implementing
+As such, carbon offsets 
+enable carbon emitters to shift the responsibility for implementing
 emissions reductions via any of the techniques discussed above.
+
+% 1) It would be easy to revise this sentence to note that 
+% “like a tax, offsets” will nudge behaviors.  
+% The two systems are identical in their effect on behavior of consumers.  
+% 2) Some researchers question whether offsets actually lead to offsetting carbon reductions. 
+% That is, the data suggest that in the counterfactual world you’d have largely the same carbon capture. 
+% (Eg, the amount of forests doesn’t rise; I just get paid for a forest that would have been there either way.) 
 
 \end{mcframe}
 
@@ -680,7 +702,7 @@ years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
 
 print(xtable::xtable(iparx_df %>% 
                        dplyr::filter(Year %in% years_for_rate_table), digits = c(0, 0, 3, 2, 2, 2, 2),
-                     caption = "IPARX terms from selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}.",
+                     caption = "IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\ref{eq:IPARX_rate_with_numbers} these data allow us to see whether the world is becoming more sustainable or less over time and why.",
                      label = "tab:iparx_select_years"),
       include.rownames = FALSE,
       include.colnames = TRUE,
