@@ -848,11 +848,12 @@ United States Department of Commerce, Bureau of Economic Analysis: \\ \url{www.b
       to give up (some) control (that is, choice) of your electricity consumption?
       What does this tell you about your consumer preferences?
       
-\item Some (high-end!) apparel has been made a circular economy in that the manufacturer(s)
+\item A small example of (an attempted) circular economy is that
+      some (high-end!) apparel manufacturer(s)
       will accept the worn-out garment back for recycling. 
       \begin{enumerate}
       \item Discuss the energy impacts of such a scheme, particularly with 
-      respect to transportation. 
+      respect to transportation. Is this actually circular?
       \item Consider the price of such garments. What is the net effect of buying 
       such garments as opposed to more bargain clothing (make reference to Equation \ref{eq:IPARX}
       in your answer). 
@@ -887,15 +888,15 @@ United States Department of Commerce, Bureau of Economic Analysis: \\ \url{www.b
       environmental sustainability and social sustainability?      
       
 \item Sometimes you'll hear (well meaning) people blame corporations for wanting
-      to ``maximize profit.'' One way of evaluating this view is to realize that 
+      to ``maximize profit.'' One way of evaluating this point of view is to realize that 
       \emph{not} maximizing profit when you have the opportunity to do so is 
       wasteful. All of us should be as efficient as possible. 
       To what extent should we be as efficient as possible? In what ways? 
       Are some areas or domains ``off-limits'' to efficiency maximizing and what are they? Why?
       (Other approaches to this question are presented in Chapter \ref{chap:government}.)
       
-\item IPCC6's \emph{most optimistic} scenario (see Chapter~\ref{chap:introduction}
-      Further Reading) is a 0.5m sea-level rise by 2100.
+\item IPCC6's \emph{most optimistic} scenario~\cite{IPCC:2018aa} is a 0.5~m 
+      sea-level rise by 2100.
       Coastal cities and beach-front properties will be most affected and, in 
       many cases, most able to pay for mitigation. 
       Given the expected future costs of fighting sea-level rise, why don't 
@@ -912,9 +913,8 @@ United States Department of Commerce, Bureau of Economic Analysis: \\ \url{www.b
 
 \begin{projects}
 
-
 \item Prepare a report that compares and contrasts several measures of affluence,
-      economic progress, standard of living and/or economic development.
+      economic progress, standard of living, and/or economic development.
 
 \item Prepare a report that compares and contrasts several alternative measures of GDP,
       such as the index of sustainable economic welfare, and the 
@@ -937,7 +937,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\ \url{www.b
 \item Develop metrics for evaluating when and to what extent a circular economy 
       makes environmental and economic sense for some product.
       
-\item What are ways that governments try to control the rate of economic growth?
+\item What are ways that governments try to control the rate of economic growth (in~\%/yr)?
 
 \item Research the standards, processes, and methods for collecting and disseminating 
       global economic statistics.
