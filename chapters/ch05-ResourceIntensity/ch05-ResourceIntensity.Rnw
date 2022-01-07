@@ -751,12 +751,6 @@ ggplot2::ggplot() +
   ggplot2::geom_area(data = primary_energy, 
                      mapping = ggplot2::aes_string(x = "Year", y = "energy_EJ", fill = "primary_energy_type")) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
-  ggplot2::geom_line(data = primary_energy_fit, 
-                     mapping = ggplot2::aes(x = Year, y = Fit), 
-                     size = curve_fit_size, 
-                     colour = curve_fit_colour, 
-                     linetype = curve_fit_linetype) +
-  
   ggplot2::labs(x = NULL,
                 y = "World energy consumption [EJ/year]",
                 fill = NULL) +
