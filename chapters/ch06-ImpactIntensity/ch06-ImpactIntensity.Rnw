@@ -115,7 +115,7 @@ are a significant source of environmental impact
 coming from energy consumption,
 it follows that the prime example of 
 environmental impact intensity of resource extraction and consumption
-($X$ in Equation~\ref{eq:IPARX}) is CO$_2$ emissions.
+(\Xparen{} in Equation~\ref{eq:IPARX}) is CO$_2$ emissions.
 Specifically, the prime example for impact intensity~\Xparen{}
 is the CO$_2$ intensity of energy, $X_{CO_2}$.
 The units for $X_{CO_2}$ are,
@@ -798,7 +798,7 @@ many years in education and government led him to quip frequently
 %++++++++++++++++++++++++++++++
 
 % When energy efficiency is deployed as a means of reducing CO$_2$ emissions,
-% the carbon intensity of energy ($X$ in the IPARX identity) will go down.
+% the carbon intensity of energy (\Xparen{} in the IPARX identity) will go down.
 Energy efficiency is widely seen as a means of reducing CO$_2$ emissions.
 The thinking goes that either the resource intensity (\:\!\mft{R} in the IPARX identity, 
 Equation~\ref{eq:IPARX}) 
