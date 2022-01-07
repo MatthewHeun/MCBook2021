@@ -17,7 +17,7 @@
 %\epigraph{Fortune is of sluggish growth, but ruin is rapid.}{Lucius Annaeus Seneca}
 
 The left-hand side of Equation \ref{eq:IPARX} (repeated below for convenience) 
-is impact $I$ on the environment.
+is impact \mft{I} on the environment.
 While there are natural processes that have (some) negative impacts on the environment,
 such as volcanic eruptions and wild fires, this book is primarily concerned with
 human impacts on the environment.
@@ -747,7 +747,7 @@ fit_sentence <- function(.df) {
 }
 @
 
-<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, $I$ in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
+<<CarbonEmissionsGraph, fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, \\mft{I} in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                                     sheet = "data to plot")
 

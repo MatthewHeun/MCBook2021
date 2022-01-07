@@ -582,7 +582,7 @@ Each rate ($r$) is calculated by
 %
 where
 $r$ is the rate of change in \%/year, 
-$y$ is one of $I$, $P$, $A$, $R$, or $X$, 
+$y$ is one of \mft{I}, $P$, $A$, $R$, or $X$, 
 subscript ``2'' indicates a later year, and 
 subscript ``1'' indicates an earlier year.
 
@@ -898,7 +898,7 @@ can we use improved economic effectiveness
 (decreasing $R$, brought about by rising energy efficiency)
 to reduce environmental impacts ($I$ in Equation~\ref{eq:IPARX}, 
 CO$_2$ emissions being the prime example)?
-It certainly helps, as decreasing $R$ puts downward pressure on $I$ in Equation~\ref{eq:IPARX}.
+It certainly helps, as decreasing $R$ puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}.
 However, recent research indicates that growing energy efficiency
 (and declining $R$) has never reduced energy consumption or environmental impacts, 
 at least at the worldwide level~\cite{Brockway:2021ww}.
