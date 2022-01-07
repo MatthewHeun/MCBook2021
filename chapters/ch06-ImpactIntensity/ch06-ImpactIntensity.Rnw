@@ -632,21 +632,21 @@ iparx_df <- impact %>%
     total_population = total_population / 1e9, # convert total population to billions
     gdppc_2017_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000 # convert $/person to k$/person
   ) %>% 
-  magrittr::set_names(c("Year", "$I$ [Gt/yr]", "$P$ [billions]", "$A$ [k\\$/person]", 
-                        "$R$ [MJ/\\$]", "$X$ [Mt/EJ]"))
+  magrittr::set_names(c("Year", "\\mft{I} [Gt/yr]", "\\mft{P} [billions]", "\\mft{A} [k\\$/person]", 
+                        "\\mft{R} [MJ/\\$]", "\\mft{X} [Mt/EJ]"))
 
 # Extract the data to be used in the equation
-r_I_220 <- iparx_df %>% trim_for_chapter(var = "$I$ [Gt/yr]") %>% rate_func()
-r_P_220 <- iparx_df %>% trim_for_chapter(var = "$P$ [billions]") %>% rate_func()
-r_A_220 <- iparx_df %>% trim_for_chapter(var = "$A$ [k\\$/person]") %>% rate_func()
-r_R_220 <- iparx_df %>% trim_for_chapter(var = "$R$ [MJ/\\$]") %>% rate_func()
-r_X_220 <- iparx_df %>% trim_for_chapter(var = "$X$ [Mt/EJ]") %>% rate_func()
+r_I_220 <- iparx_df %>% trim_for_chapter(var = "\\mft{I} [Gt/yr]") %>% rate_func()
+r_P_220 <- iparx_df %>% trim_for_chapter(var = "\\mft{P} [billions]") %>% rate_func()
+r_A_220 <- iparx_df %>% trim_for_chapter(var = "\\mft{A} [k\\$/person]") %>% rate_func()
+r_R_220 <- iparx_df %>% trim_for_chapter(var = "\\mft{R} [MJ/\\$]") %>% rate_func()
+r_X_220 <- iparx_df %>% trim_for_chapter(var = "\\mft{X} [Mt/EJ]") %>% rate_func()
 
-r_I_20 <- iparx_df %>% trim_for_chapter(var = "$I$ [Gt/yr]", years = c(2000, 2019)) %>% rate_func()
-r_P_20 <- iparx_df %>% trim_for_chapter(var = "$P$ [billions]", years = c(2000, 2019)) %>% rate_func()
-r_A_20 <- iparx_df %>% trim_for_chapter(var = "$A$ [k\\$/person]", years = c(2000, 2019)) %>% rate_func()
-r_R_20 <- iparx_df %>% trim_for_chapter(var = "$R$ [MJ/\\$]", years = c(2000, 2019)) %>% rate_func()
-r_X_20 <- iparx_df %>% trim_for_chapter(var = "$X$ [Mt/EJ]", years = c(2000, 2019)) %>% rate_func()
+r_I_20 <- iparx_df %>% trim_for_chapter(var = "\\mft{I} [Gt/yr]", years = c(2000, 2019)) %>% rate_func()
+r_P_20 <- iparx_df %>% trim_for_chapter(var = "\\mft{P} [billions]", years = c(2000, 2019)) %>% rate_func()
+r_A_20 <- iparx_df %>% trim_for_chapter(var = "\\mft{A} [k\\$/person]", years = c(2000, 2019)) %>% rate_func()
+r_R_20 <- iparx_df %>% trim_for_chapter(var = "\\mft{R} [MJ/\\$]", years = c(2000, 2019)) %>% rate_func()
+r_X_20 <- iparx_df %>% trim_for_chapter(var = "\\mft{X} [Mt/EJ]", years = c(2000, 2019)) %>% rate_func()
 
 # r_I_check should be same as r_I
 r_I_check_220 <- r_P_220 + r_A_220 + r_R_220 + r_X_220
