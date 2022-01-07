@@ -69,7 +69,7 @@ the exploration process.
 %++++++++++++++++++++++++++++++
 
 As discussed in Section~\ref{sec:collective_population},
-rising population ($P$) is a driver for environmental impacts ($I$). 
+rising population ($P$) is a driver for environmental impacts \Iparen{}. 
 To live a more sustainable life, individuals can consider actions
 to reduce or limit population growth. 
 Young adults can carefully consider family size
@@ -96,7 +96,7 @@ advocating for family planning.
 
 Section~\ref{sec:collective_affluence} notes that
 rising affluence ($A$)
-drives larger environmental impacts ($I$).
+drives larger environmental impacts \Iparen{}.
 It is important to note that every
 dollar spent in an economy implies energy and material consumption.
 Every dollar spent requires energy to make, use, and dispose of devices, 
@@ -152,8 +152,8 @@ with less stuff.
 %++++++++++++++++++++++++++++++
 
 Section~\ref{sec:collective_resources} notes that
-declining resource intensity ($R$)
-reduces environmental impacts ($I$).
+declining resource intensity (\:\!\mft{R})
+reduces environmental impacts \Iparen{}.
 There are many ways individuals can reduce their personal resource intensity.
 Few appliances are cost-effective to fix, but 
 individuals can repair them anyway to
@@ -181,8 +181,8 @@ opportunities at home, work, school, or church.
 %++++++++++++++++++++++++++++++
 
 Section~\ref{sec:collective_resources} notes that
-rising impact intensity of resources ($X$)
-leads to increased environmental impacts ($I$).
+rising impact intensity of resources (\Xparen{})
+leads to increased environmental impacts \Iparen{}.
 Thankfully, there are many ways individuals can reduce contamination
 intensity of resources, particularly for the prime example of this book
 (energy and CO$_2$ emissions).

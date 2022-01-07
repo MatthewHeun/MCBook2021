@@ -115,7 +115,7 @@ are a significant source of environmental impact
 coming from energy consumption,
 it follows that the prime example of 
 environmental impact intensity of resource extraction and consumption
-($X$ in Equation~\ref{eq:IPARX}) is CO$_2$ emissions.
+(\Xparen{} in Equation~\ref{eq:IPARX}) is CO$_2$ emissions.
 Specifically, the prime example for impact intensity~\Xparen{}
 is the CO$_2$ intensity of energy, $X_{CO_2}$.
 The units for $X_{CO_2}$ are,
@@ -529,6 +529,7 @@ emissions reductions via any of the techniques discussed above.
 
 \end{mcframe}
 
+
 %++++++++++++++++++++++++++++++
 \subsection{Speed of energy transitions}
 \label{sec:Etransitions}
@@ -561,28 +562,28 @@ show the evolution of all terms in the IPARX identity (Equation~\ref{eq:IPARX})
 over the period 1800--2019
 for the prime example of energy consumption and CO$_2$ emissions.
 It is instructive to quantify the direction and magnitude of changes 
-in the right-side terms ($P$, \mft{A}, \mft{R}, and \mft{X}). 
+in the right-side terms (\:\!\mft{P}, \mft{A}, \mft{R}, and \mft{X}\:). 
 To do so, we introduce a rate version of the IPARX equation.
 
 In the rate version of the IPARX equation, each term is represented 
-by an exponential rate of change ($r$), measured in \%/year.
+by an exponential rate of change (\mft{r}\:\!), measured in \%/year.
 The rate version of the IPARX equation indicates 
-which terms are moving in a sustainable direction ($r < 0$) and
-which terms are moving in an unsustainable direction ($r > 0$).
+which terms are moving in a sustainable direction (\mft{r} < 0) and
+which terms are moving in an unsustainable direction (\mft{r} > 0).
 
 \begin{equation} \label{eq:IPARX_rate}
-  r_I \approx r_P + r_A + r_R + r_X
+  \mft{r}_\mft{I} \approx \mft{r}_\mft{P} + \mft{r}_\mft{A} + \mft{r}_\mft{R} + \mft{r}_\mft{X}
 \end{equation}
 %
-Each rate ($r$) is calculated by
+Each rate (\mft{r}\:\!) is calculated by
 
 \begin{equation} \label{eq:rate_calcs}
-  r_y = \left[ \left( \frac{y_2}{y_1} \right) ^ \frac{1}{t_2 - t_1} - 1 \right] \times 100 \; ,
+  \mft{r}_\mft{y} = \left[ \left( \frac{\mft{y}_2}{\mft{y}_1} \right) ^ \frac{\text{1}}{\mft{t}_2 - \mft{t}_1} - \text{1} \right] \times \text{100} \; ,
 \end{equation}
 %
 where
-$r$ is the rate of change in \%/year, 
-$y$ is one of \mft{I}, \mft{P}, \mft{A}, \mft{R}, or \mft{X}, 
+\mft{r} is the rate of change in \%/year, 
+\mft{y} is one of \mft{I}, \mft{P}, \mft{A}, \mft{R}, or \mft{X}, 
 subscript ``2'' indicates a later year, and 
 subscript ``1'' indicates an earlier year.
 
@@ -666,7 +667,7 @@ are shown in Table~\ref{tab:iparx_select_years}.
 Data from Table~\ref{tab:iparx_select_years}
 can be used with Equation~\ref{eq:rate_calcs}
 to answer the question, 
-``what equivalent annual rate of change ($r$) 
+``what equivalent annual rate of change (\mft{r}\:\!) 
 would give the same start and end points
 in 1800 and 2019 
 or
@@ -695,8 +696,7 @@ print(xtable::xtable(iparx_df %>%
 \label{eq:IPARX_rate_with_numbers}
 \footnotesize
 \begin{tabular}{rccccccccc}
-     & $r_I$                       & $\approx$ & $r_P$                       & $+$ & $r_A$                       & 
-                                    $+$ & $r_R$                       & $+$ & $r_X$                         \\
+     & $\mft{r}_\mft{I}$     & $\approx$ & $\mft{r}_\mft{P}$    & $+$ & $\mft{r}_\mft{A}$   &   $+$ & $\mft{r}_\mft{R}$                       & $+$ & $\mft{r}_\mft{X}$                         \\
 1800--2019 & \Sexpr{rate_to_string(r_I_220)} & $\approx$ & \Sexpr{rate_to_string(r_P_220)} & $+$ & \Sexpr{rate_to_string(r_A_220)} &
                                     $-$ & \Sexpr{rate_to_string(abs(r_R_220))} & $+$ & \Sexpr{rate_to_string(r_X_220)}   \\
 2000--2019 & \Sexpr{rate_to_string(r_I_20)} & $\approx$ & \Sexpr{rate_to_string(r_P_20)} & $+$ & \Sexpr{rate_to_string(r_A_20)} &
@@ -708,31 +708,31 @@ print(xtable::xtable(iparx_df %>%
 Equation~\ref{eq:IPARX_rate_with_numbers} shows that carbon emissions 
 (Figure~\ref{fig:CarbonEmissionsGraph})
 are increasing 
-at an average rate of $r_I =$ \Sexpr{rate_to_string(r_I_220)}
+at an average rate of $\mft{r}_\mft{I} =$ \Sexpr{rate_to_string(r_I_220)}
 since pre-industrial times (1800--2019)
-and $r_I =$ \Sexpr{rate_to_string(r_I_20)}
+and $\mft{r}_\mft{I} =$ \Sexpr{rate_to_string(r_I_20)}
 over the last two decades (2000--2019). 
 (The data in Table~\ref{tab:iparx_select_years} and 
 Equation~\ref{eq:IPARX_rate_with_numbers}
 can be used to discern
 trends over other periods of time. 
 See Project~P6.\ref{item:iparx_calcs}.)
-The declining energy intensity of the economy term ($r_R$ < 0)
+The declining energy intensity of the economy term ($\mft{r}_\mft{R}$ < 0)
 is the only term in the IPARX identity
-putting downward pressure on the CO$_2$ emissions growth rate ($r_I$).
+putting downward pressure on the CO$_2$ emissions growth rate ($\mft{r}_\mft{I}$).
 All other terms on the right side of Equation~\ref{eq:IPARX_rate_with_numbers}
 are greater than zero and are driving CO$_2$ emissions upward.
-Interestingly, the impact intensity of energy ($r_X$)
+Interestingly, the impact intensity of energy ($\mft{r}_\mft{X}$)
 is smaller (\Sexpr{rate_to_string(r_X_20)})
 in the past two decades than over the past two centuries
 (\Sexpr{rate_to_string(r_X_220)}), because 
 the world's transition to a fully carbonized energy system
 was largely complete by 1970.
 (See Figure~\ref{fig:ImpactIntensityGraph}.)
-The beneficial effect of the declining resource intensity of the economy ($r_R < 0$)
+The beneficial effect of the declining resource intensity of the economy ($\mft{r}_\mft{R}$ < 0)
 is growing over time 
-($r_R = -$\Sexpr{rate_to_string(abs(r_R_220))} for 1800--2019 and
-$r_R = -$\Sexpr{rate_to_string(abs(r_R_20))} for 2000--2019).
+($\mft{r}_\mft{R} = -$\Sexpr{rate_to_string(abs(r_R_220))} for 1800--2019 and
+$\mft{r}_\mft{R} = -$\Sexpr{rate_to_string(abs(r_R_20))} for 2000--2019).
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -740,9 +740,9 @@ $r_R = -$\Sexpr{rate_to_string(abs(r_R_20))} for 2000--2019).
 
 The positive terms in Equation~\ref{eq:IPARX_rate_with_numbers}
 represent sources of our sustainability challenges:
-rising population ($r_P$ > 0), 
-rising affluence ($r_A$ > 0), and 
-expanded use of fossil fuels ($r_X$ > 0).
+rising population ($\mft{r}_\mft{P}$ > 0), 
+rising affluence ($\mft{r}_\mft{A}$ > 0), and 
+expanded use of fossil fuels ($\mft{r}_\mft{X}$ > 0).
 
 \end{mcframe}
 
@@ -770,7 +770,7 @@ collectively and personally.
 
 The IPARX identity
 appears to be a straight multiplication of independent terms
-($P$, \mft{A}, \mft{R}, and \mft{X}).
+(\:\!\mft{P}, \mft{A}, \mft{R}, and \mft{X}\:).
 But it is not.
 There are interactions among the terms that deserve attention.
 In this section, we note four such interactions
@@ -798,9 +798,9 @@ many years in education and government led him to quip frequently
 %++++++++++++++++++++++++++++++
 
 % When energy efficiency is deployed as a means of reducing CO$_2$ emissions,
-% the carbon intensity of energy ($X$ in the IPARX identity) will go down.
+% the carbon intensity of energy (\Xparen{} in the IPARX identity) will go down.
 Energy efficiency is widely seen as a means of reducing CO$_2$ emissions.
-The thinking goes that either the resource intensity ($R$ in the IPARX identity, 
+The thinking goes that either the resource intensity (\:\!\mft{R} in the IPARX identity, 
 Equation~\ref{eq:IPARX}) 
 or impact intensity~\Xparen{}, or both,
 will go down as efficiency rises.
@@ -847,7 +847,7 @@ are not independent.
 The relationship between energy consumption and GDP
 exposes another interaction among the IPARX terms
 for the primary example of energy consumption and CO$_2$ emissions.
-Historically, as GDP (equal to $P \times A$ in Equation~\ref{eq:IPARX}) increases, 
+Historically, as GDP (equal to $\mft{P} \times \mft{A}$ in Equation~\ref{eq:IPARX}) increases, 
 primary energy consumption also rises,
 as shown in Figure~\ref{fig:E_vs_GDP_graph}.
 
@@ -876,12 +876,12 @@ However, the concave downward nature of Figure~\ref{fig:E_vs_GDP_graph} indicate
 each additional dollar of GDP requires incrementally less energy consumption
 than the dollar before.
 The line in Figure~\ref{fig:E_vs_GDP_graph} is concave downward because
-the primary energy intensity of the economy ($I_{Ep}$)
+the primary energy intensity of the economy ($\mft{I}_{\!\mft{Ep}}$)
 has been decreasing over time,
 as shown in Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
-Thus, as GPD ($P \times A$) rises, 
+Thus, as GPD ($\mft{P} \times \mft{A}$\:\!) rises, 
 the primary energy intensity of the economy
-($R$ in the IPARX equation for the prime example) 
+(\:\!\mft{R} in the IPARX equation for the prime example) 
 is expected to fall, 
 as it has been for 220 years.
 (Recall from Section~\ref{sec:energy_intensity_of_the_economy}, 
@@ -891,12 +891,12 @@ Ironically, unsustainable per-dollar fossil fuel consumption is more constant
 than sustainable per-dollar biomass consumption over time.
 See Figure~\ref{fig:per_gdp_material_use}.)
 
-$R$ is a type of economic intensity
+\mft{R} is a type of economic intensity
 that represents the effectiveness of using energy to make GDP.
 This fact raises an interesting question:
 can we use improved economic effectiveness 
 (decreasing \mft{R}, brought about by rising energy efficiency)
-to reduce environmental impacts ($I$ in Equation~\ref{eq:IPARX}, 
+to reduce environmental impacts (\:\!\mft{I} in Equation~\ref{eq:IPARX}, 
 CO$_2$ emissions being the prime example)?
 It certainly helps, as decreasing \mft{R} puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}.
 However, recent research indicates that growing energy efficiency

@@ -121,7 +121,7 @@ Questions and problems at the end of the chapter assist the exploration process.
 
 As shown in Equation~\ref{eq:IPARX}
 and in Figure~\ref{fig:PopulationGraph}, 
-rising population ($P$) is a driver for environmental impacts ($I$). 
+rising population ($P$) is a driver for environmental impacts \Iparen{}. 
 Slowing or reversing population growth would reduce environmental impacts,
 all other things being equal.
 Providing general education to citizens, especially girls and women, 
@@ -149,7 +149,7 @@ can affect birth rates, too.
 
 Equation~\ref{eq:IPARX} and Figure~\ref{fig:AffluenceGraph-Nordhaus}
 shows that rising affluence ($A$)
-drives larger environmental impacts ($I$). 
+drives larger environmental impacts \Iparen{}. 
 Ironically, the purpose of many government actions 
 is to produce ever-rising levels of affluence, 
 because citizens who are becoming more affluent 
@@ -196,11 +196,11 @@ about the relative carbon intensity of goods~\citep{Zhao_2012}.
 %++++++++++++++++++++++++++++++
 
 Equation~\ref{eq:IPARX} shows that
-rising resource intensity of the economy ($R$)
+rising resource intensity of the economy (\:\!\mft{R})
 would drive environmental impacts ($I$) upward.
 However, Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that the 
 world's economy has been reducing its resource (energy) intensity over time.
-Of the four $PARC$ terms, resource intensity of the economy ($R$) 
+Of the four $PARC$ terms, resource intensity of the economy (\:\!\mft{R}) 
 is the only term moving in a sustainable direction over the long-term.
 (See Equation \ref{eq:IPARX_rate_with_numbers}.)
 To reduce environmental impacts, 
@@ -264,9 +264,9 @@ thereby increasing the resource intensity of another economy.
 %++++++++++++++++++++++++++++++
 
 Equation~\ref{eq:IPARX} shows that reducing 
-the impact intensity of resources ($X$)
+the impact intensity of resources (\Xparen{})
 will cause environmental impacts ($I$) to decline.
-One way to reduce the impact intensity of resources ($X$)
+One way to reduce the impact intensity of resources (\Xparen{})
 is to strengthen environmental regulations 
 at both extraction and disposal lifecycle stages.
 At the extraction stage,
