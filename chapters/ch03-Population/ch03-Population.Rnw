@@ -403,6 +403,10 @@ demo_transition %>%
                       linetype = guide_linetype) +
   ggplot2::geom_line(colour = data_line_colour, 
                      size = data_line_size) + 
+  ggplot2::geom_text(x = 18, y = 2, label = "Stage 1", colour = guide_line_colour) +
+  ggplot2::geom_text(x = 78, y = 2, label = "Stage 2", colour = guide_line_colour) +
+  ggplot2::geom_text(x = 150, y = 2, label = "Stage 3", colour = guide_line_colour) +
+  ggplot2::geom_text(x = 227, y = 2, label = "Stage 4", colour = guide_line_colour) +
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = ggplot2::element_blank(), 
                 y = "Birth and death rates", 
@@ -425,10 +429,10 @@ demo_transition %>%
                       linetype = guide_linetype) +
   ggplot2::geom_line(colour = data_line_colour, 
                      size = data_line_size) + 
-  ggplot2::geom_text(x = 18, y = 5, label = "Phase 1", colour = guide_line_colour) +
-  ggplot2::geom_text(x = 78, y = 5, label = "Phase 2", colour = guide_line_colour) +
-  ggplot2::geom_text(x = 150, y = 5, label = "Phase 3", colour = guide_line_colour) +
-  ggplot2::geom_text(x = 227, y = 5, label = "Phase 4", colour = guide_line_colour) +
+  # ggplot2::geom_text(x = 18, y = 5, label = "Stage 1", colour = guide_line_colour) +
+  # ggplot2::geom_text(x = 78, y = 5, label = "Stage 2", colour = guide_line_colour) +
+  # ggplot2::geom_text(x = 150, y = 5, label = "Stage 3", colour = guide_line_colour) +
+  # ggplot2::geom_text(x = 227, y = 5, label = "Stage 4", colour = guide_line_colour) +
   ggplot2::scale_y_continuous(limits = c(0, 120), breaks = seq(0, 120, by = 20)) +
   ggplot2::labs(x = "Time [years]",
                 y = "Population [millions]", 
@@ -438,6 +442,55 @@ demo_transition %>%
                  axis.ticks.x = ggplot2::element_blank())
 @
      \end{subfigure}
+     
+     
+     \begin{subfigure}[c]{6.5in}
+         \centering
+<<fig.width=5.5, fig.height=1.2>>=
+pop_pyramids <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "PopulationPyramids.xlsx"),
+                                   sheet = "data to plot") %>% 
+  dplyr::mutate(
+    gender = dplyr::case_when(
+      gender == "male" ~ "Male", 
+      gender == "female" ~ "Fem", 
+      TRUE ~ NA_character_
+    ), 
+    gender = factor(gender, levels = c("Male", "Fem")), 
+    # Put 0 in the middle
+    x = 2*x - 1,
+    # Scale to 85 years at the top
+    y = y * 0.85
+  )
+
+pop_pyramids %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = x, y = y, fill = gender)) + 
+  
+  ggplot2::geom_area() +
+  
+  ggplot2::scale_fill_viridis_d(direction = -1, begin = 0.15, end = 0.8) +
+
+  ggplot2::facet_grid(cols = ggplot2::vars(Stage)) +
+  
+  ggplot2::scale_x_continuous(limits = c(-1, 1), breaks = c(-1, 0, 1)) +
+  ggplot2::scale_y_continuous(limits = c(0, 100), breaks = c(0, 50, 80, 100)) +
+  ggplot2::labs(x = "Relative population proportion", 
+                y = "Age [years]", 
+                fill = ggplot2::element_blank()) +
+  
+  MKHthemes::xy_theme() + 
+  ggplot2::theme(axis.text.x = ggplot2::element_blank(), 
+                 axis.ticks.x = ggplot2::element_blank(),
+                 # axis.title.x = ggplot2::element_blank(), 
+                 # axis.title.y = ggplot2::element_blank(),
+                 # axis.text.y = ggplot2::element_blank(), 
+                 # axis.ticks.y = ggplot2::element_blank(), 
+                 # Move stage labels out of graph slightly, 
+                 strip.text.x = ggplot2::element_blank())
+                 # strip.text.x = ggplot2::element_text(margin = ggplot2::margin(b = 2.0)))
+@
+     \end{subfigure}
+
+     
         \caption{Schematic of demographic transition theory. Crude birth rate (CBR) and
                  crude death rate (CDR) are defined as births or deaths per year per 1000 people
                  in the total population (uncorrected for sex or age cohorts).}
