@@ -43,7 +43,9 @@ which is (ultimately) unsustainable.
 Currently, population growth has slowed (but not ceased).
 Prospects for future human populations are discussed in Section~\ref{sec:population_modeling}
 with an eye toward whether humanity will live sustainably in the future. 
-A key interaction is between the number of people and economic output per person \mft{A}.
+The influence of economic output per person \mft{A} on population growth is discussed in
+Section~\ref{sec:dtt}.
+Section~\ref{sec:pop_density} discusses the sustainability implications of population density. 
 
 There are two schools of thought on population with relevance for economics and sustainability.
 Malthusians think that population growth will cause us to ``run out'' of 
@@ -352,10 +354,10 @@ which accounts for such things as childhood mortality.
 In an undeveloped society (low \mft{A}), birth rates and death rates are high but balanced, 
 resulting in low population growth.
 Demographic transition theory, illustrated schematically in Figure~\ref{fig:dtt},
-is the observed pattern, shown in Figure~\ref{fig:dtta},
+is the observed pattern, shown in the top of Figure~\ref{fig:dtt},
 that economic development leads to decreased mortality 
 followed some time later by a falling birth rate.
-Thus, as shown Figure~\ref{fig:dttb}, 
+Thus, as shown in the middle section of Figure~\ref{fig:dtt}, 
 population is predicted to grow rapidly and then stabilize.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -497,23 +499,23 @@ pop_pyramids %>%
         \label{fig:dtt}
 \end{figure}
 
-The first phase of the demographic transition is characterized by high birth and
+The first stage of the demographic transition is characterized by high birth and
 death rates, with a consequently low rate of population growth. 
-The first phase is typically resource constrained. 
-Until about 1800 AD the world was in phase 1.
-Economic development (increasing \mft{A}) initiates phase 2 via public health measures, 
+The first stage is typically resource constrained. 
+Until about 1800 AD the world was in stage 1.
+Economic development (increasing \mft{A}) initiates stage 2 via public health measures, 
 improved sanitation, medical developments, and increasing agricultural productivity. 
-Phase 2 retains the high birth rate from phase 1 but the death rate falls sharply 
+Stage 2 retains the high birth rate from stage 1 but the death rate falls sharply 
 (particularly for childhood mortality). 
 The result is a rapid increase in population, with many young people (see the 
-population pyramid in Figure \ref{fig:dttc}). 
-In phase 3, changing economic conditions (such as increasing urbanization, a 
+population pyramid in the lower part of Figure~\ref{fig:dtt}). 
+In stage 3, changing economic conditions (such as increasing urbanization, a 
 transition away from an economy dependent on agriculture, and availability of 
 contraception) lead to a declining birth rate. 
-In phase 3, the birth rate is still greater than the death rate, so the population 
+In stage 3, the birth rate is still greater than the death rate, so the population 
 is still growing, but the falling birth rate means slower growth and an age structure 
 that begins to be more uniform. 
-In phase 4, the birth rate and death rate equalize and the population stabilizes. 
+In stage 4, the birth rate and death rate equalize and the population stabilizes. 
 
 \emph{After} the demographic transition, 
 the birth rate might rise again (causing further population growth)
@@ -531,18 +533,20 @@ each sex.
 the total population.) 
 The age structure of a population provides a lot of information about the population's 
 future and its economic outlook. 
-At the beginning of phase 2, more 
-young people are being born and more people are living longer. 
+Stage 1 has many young people and few old people.
+In stage 2, more young people are being born and people are living longer. 
 Both of these groups are not of working age and so tend to contribute little to GDP. 
 (In fact, they are dependents who \emph{consume} rather than generate income.) 
-Later, in phase 3, as these young people mature and join the labor market and the 
+Later, in stage 3, as these young people mature and join the labor market and the 
 birth rate falls, the fraction of the population that is working is much higher, 
 which generates a \emph{demographic dividend}.
 GDP \emph{per capita} is higher because the fraction of the population that 
 is working is higher. 
-Finally, if the population pyramid becomes ``top heavy,'' then there are a higher proportion
-of retirees to workers and GDP per capita is lower than it would be with a different
-age structure. 
+Finally, in stage 4 the age distribution of the population stabilizes.
+If birthrates continue to fall,
+the population pyramid becomes ``top heavy,'' and there are a higher proportion
+of retirees to workers.
+GDP per capita is lower than it would be with a different age structure. 
 (There can still be growth in GDP per capita; it's just that growth faces a 
 demographic ``headwind.'')
 
@@ -559,6 +563,7 @@ The overall death rate will still be greater than the overall birth rate because
 the sizes of the relevant age cohorts.
 
 \subsection{Distribution of population}
+\label{sec:pop_density}
 Where do people live? 
 Given our goal of sustainability, where \emph{should} people live to be more sustainable? 
 \emph{Population density}, which is the number of people per area, is a key 
