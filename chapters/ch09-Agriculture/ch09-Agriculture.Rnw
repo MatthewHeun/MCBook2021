@@ -383,35 +383,60 @@ is the food delivery system.
 Figure~\ref{fig:food_ghg} shows energy use in various stages of food
 distribution and preparation. The amount of CO$_2$ released is proportional to the
 amount of energy used.
-Figure~\ref{fig:FoodEmissionsPerKg} shows equivalent CO$_2$ emissions per kg of food.
-However, by itself Figure~\ref{fig:FoodEmissionsPerKg} is not terribly informative.
-We don't eat by the kg; we need a balanced diet that provides all of our essential
+Figure~\ref{fig:FoodEmissionsPerMcal} shows equivalent CO$_2$ emissions per Mcal of food.
+However, by itself Figure~\ref{fig:FoodEmissionsPerMcal} is not terribly informative.
+We don't eat equal calories of each food.
+We need a balanced diet that provides all of our essential
 nutrients.
 Figure~\ref{fig:GHG_food} shows what individual foods contribute to overall food
 emissions (but not what quantity of each are consumed).
-Taken together, Figures~\ref{fig:food_ghg}, \ref{fig:FoodEmissionsPerKg},
+Taken together, Figures~\ref{fig:food_ghg}, \ref{fig:FoodEmissionsPerMcal},
 and~\ref{fig:GHG_food} paint a suggestive (but incomplete!) picture of agricultural
 CO$_2$ emissions.
 
-<<FoodEmissionsPerKg, fig.height=4, fig.cap="Food CO$_2$ emissions per kg of food. \\emph{Source}: \\citet{Ritchie:2021tl}.">>=
-food_emissions_per_kg <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "food-carbonfootprints.xlsx"), 
-                                            sheet = "data to plot") %>% 
-  dplyr::arrange(dplyr::desc(GHG_emissions_per_kilogram))
-order <- food_emissions_per_kg$Food
-food_emissions_per_kg <- food_emissions_per_kg %>% 
+%
+% <<FoodEmissionsPerKg, fig.height=4, fig.cap="Food CO$_2$ emissions per kg of food. \\emph{Source}: \\citet{Ritchie:2021tl}.">>=
+% food_emissions_per_kg <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "food-carbonfootprints.xlsx"), 
+%                                             sheet = "data to plot") %>% 
+%   dplyr::arrange(dplyr::desc(GHG_emissions_per_kilogram))
+% order <- food_emissions_per_kg$Food
+% food_emissions_per_kg <- food_emissions_per_kg %>% 
+%   dplyr::mutate(
+%     Food = factor(Food, levels = order)
+%   )
+% 
+% food_emissions_per_kg %>% 
+%   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Food", y = "GHG_emissions_per_kilogram")) +
+%   ggplot2::geom_bar(stat = "identity", fill = data_line_colour) +
+%   ggplot2::labs(x = ggplot2::element_blank(),
+%        y = expression("Emissions [kg " * CO[2] * "equiv/kg food]"),
+%        fill = ggplot2::element_blank()) +
+%   MKHthemes::xy_theme() +
+%   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1))
+% @
+% 
+
+<<FoodEmissionsPerMcal, fig.height=4, fig.cap="Food CO$_2$ emissions per Mcal of food. \\emph{Source}: \\citet{Ritchie:2021tl}.">>=
+food_emissions_per_kcal <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "food-footprints-kcal.xlsx"), 
+                                              sheet = "data to plot") %>% 
+  dplyr::arrange(dplyr::desc(GHG_emissions_per_1000kcal))
+order <- food_emissions_per_kcal$Food
+food_emissions_per_kcal <- food_emissions_per_kcal %>% 
   dplyr::mutate(
     Food = factor(Food, levels = order)
   )
 
-food_emissions_per_kg %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Food", y = "GHG_emissions_per_kilogram")) +
+food_emissions_per_kcal %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Food, y = GHG_emissions_per_1000kcal)) +
   ggplot2::geom_bar(stat = "identity", fill = data_line_colour) +
   ggplot2::labs(x = ggplot2::element_blank(),
-       y = expression("Emissions [kg " * CO[2] * "equiv/kg food]"),
+       y = expression("Emissions [kg " * CO[2] * "equiv/Mcal]"),
        fill = ggplot2::element_blank()) +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1))
 @
+
+
 
 
 <<GHG_food, fig.height=5, fig.cap="U.S.\\ food greenhouse gas emissions. \\emph{Source}: \\citet[Figure~3]{Heller_2014}.">>=
