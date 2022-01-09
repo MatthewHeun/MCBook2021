@@ -867,12 +867,13 @@ This chapter discussed the many services the Earth's ecosystem supplies, such as
 materials and energy, waste removal, and recreational opportunities.
 Human activities can degrade or destroy the ability of the ecosystem to supply 
 those services.
-The various ways that the many services can be affected we have chosen to list
-as \mft{I}, the left-hand side of the IPARX equation.
-Maximum permissible levels for \mft{I} are the planetary boundaries.
-Indices are a tool to help us aggregare information and manage impacts.
+\mft{I}, the left-hand side of the IPARX equation (Equation~\ref{eq:IPARX})
+collects the various ways that ecosystem services can be affected.
+Maximum permissible levels for~\mft{I} are called planetary boundaries.
+Indices are a tool to help us aggregate information and manage impacts.
 The next four chapters will look at the terms on the right-hand side of the IPARX
 equation in turn.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
