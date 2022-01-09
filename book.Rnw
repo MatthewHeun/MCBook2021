@@ -101,7 +101,6 @@ knitr::opts_chunk$set(echo=FALSE,
 
 library(dplyr)             # For manipulating data
 library(ggplot2)           # For graphing functions
-library(ggsankey)          # For ggplot-style Sankey diagrams. Install with devtools::install_github("davidsjoberg/ggsankey")
 library(magrittr)          # For pipe operator, (%>%)
 library(MKHthemes)         # For default ggplot2 theme
 library(readxl)            # To read Excel files
@@ -112,7 +111,6 @@ library(networkD3)         # For Sankey diagram
 library(sf)                # Shape files for maps
 library(tidyr)             # For manipulating data
 library(viridis)           # For a great color palette for graphs
-library(webshot)           # Required by networkD3
 library(xtable)            # For awesome tables
 @
 
