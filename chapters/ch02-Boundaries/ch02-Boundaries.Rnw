@@ -358,7 +358,7 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
                       linetype = guide_linetype) +
   ggplot2::geom_hline(yintercept = 350,
                       size = guide_line_size, 
-                      colour = "red",
+                      colour = curve_fit_colour,
                       linetype = guide_linetype) +
   ggplot2::geom_line(size = data_line_size, 
                      colour = data_line_colour, 

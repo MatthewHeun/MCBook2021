@@ -137,7 +137,7 @@ bar_colour <- mc_title_blue
 data_line_colour <- mc_title_blue
 data_linetype <- "solid"
 curve_fit_size <- 0.5
-curve_fit_colour <- "#B44B09"
+curve_fit_colour <- "#B44B09" # Complement to mc_title_blue
 curve_fit_linetype <- "solid"
 guide_line_size <- 0.2
 guide_line_colour <- "gray50"
