@@ -562,19 +562,22 @@ A steady-state economy\index{economy!steady-state} is one that neither grows nor
 Its size (measured in \$/year) stays the same through time.
 With a stable population, a steady-state economy would experience no change 
 in the standard of living \Aparen{} from one generation to the next.
-If population changes (up or down), then affluence changes too, even if the size
-of the economy is fixed.
+If population goes up or down, 
+affluence will go down or up, 
+because the size of the economy is fixed.
+
 One criticism of a steady-state economy is that (some) people could be left
 poor and destitute. 
 The static nature of a steady-state economy might strengthen or rigidify already
 unacceptable inequalities within our economic system.
 (At least, that is the fear.)
 
-Further, a steady-state economy is not even necessarily sustainable.
+Further, a steady-state economy is not necessarily sustainable.
 The sustainability of an economy is not determined by its growth rate
-(usually measured in \%/year). 
+(usually measured in \%/year), 
+the quantity held constant in a steady state economy. 
 Rather, the sustainability of an economy is determined by its \emph{level} or \emph{size}
-(usually measured in \$/year) relatively to planetary boundaries. 
+(usually measured in \$/year) relative to planetary boundaries. 
 If the steady-state level of the economy 
 is above a sustainable threshold
 (if planetary limits have been exceeded), 
@@ -598,6 +601,9 @@ those economies will not grow to become \emph{even more} unsustainable each year
 In contrast to the steady-state economy, 
 degrowth advocates embrace the fact that many economies need to become smaller
 to be sustainable.
+Degrowth advocates focus on sufficiency and human wellbeing
+instead of GDP growth.
+
 There are substantial social and political pressures against degrowth.
 And for good reason!
 Degrowth implies a reduction in the standard of living
@@ -626,10 +632,12 @@ and (b)~emits no waste.
 A circular economy is impossible to achieve completely.
 Materials cannot be 100\% recycled and, for many materials, the recycling process
 degrades material properties. 
+
+It is unclear whether a circular economy is environmentally sustainable.
 The biggest flaw in the idea of a circular economy is that it requires continual energy input,
-in part because recycling of materials requires energy
-(Section~\ref{sec:recycling}).
-Currently, the supply of renewable energy is vastly inadequate to run a circular
+in part because recycling of materials requires energy;
+see Section~\ref{sec:recycling}.
+Currently, the supply of renewable energy is insufficient to run a circular
 economy.
 To make a circular economy work, either renewable energy would have to be scaled
 up dramatically or the entire economy would have to be scaled down to match 
@@ -646,7 +654,7 @@ A circular (or partly circular) economy would bring us closer to sustainability.
 A doughnut economy keeps the size of economic activity
 within planetary boundaries (represented by an outer circle) while simultaneously
 lifting people out of poverty (represented by an inner circle).
-The space between the two circles is the doughnut and is the ``safe operating 
+The space between the two circles is shaped like a doughnut and represents the ``safe operating 
 space'' for humanity. 
 The outer circle is a form of steady-state economy (perhaps changing as technology
 changes).
@@ -655,7 +663,8 @@ the doughnut economy attempts to correct this flaw by imposing both a ``floor''
 and a ``ceiling'' on economic activity and tries to respect planetary boundaries 
 by equalizing income disparity between rich and poor.
 
-While a doughnut economy might sound good in theory, there would be many conceptual and
+Although a doughnut economy sounds good in theory, 
+there would be many conceptual and
 operational difficulties in implementation. 
 To one degree or another these difficulties are shared with the steady-state,
 degrowth, and circular economy models.
@@ -663,13 +672,13 @@ First, tying economic level(s) to particular planetary boundaries might not be
 straightforward, particularly since we don't know with certainty exactly what those 
 boundaries are, in some cases.
 Probably, a better approach is to address, for example, CO$_2$ emissions directly.
-Second, there are no successful templates for degrowth to the outside of the doughnut
-(if necessary) and then managing distribution of affluence within the doughnut.
+Second, there are no successful examples of either degrowth to move within the doughnut
+or redistribution of affluence within the doughnut.
 Relatedly, who sets the ``floor'' and the time period for transition?
 Third, the doughnut model implicitly sets up a ``people-versus-planet'' dichotomy
 and then attempts to maximize the ``people'' side 
 (to the extent permitted by the ``planet'' side).
-Might it be possible to have flourishing people \emph{and} a flourishing planet?
+Might it be possible to have flourishing society \emph{and} a flourishing planet?
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
