@@ -125,7 +125,7 @@ The \mft{R} term in Equation \ref{eq:IPARX} is the resource intensity of the eco
 $R$ is defined as
 %
 \begin{equation}\label{eq:R}
-  R = \frac{\textrm{total resources extracted}}{\textrm{GDP}} \; .
+  \mft{R} \equiv \frac{\text{total resources extracted}}{\text{GDP}} \; .
 \end{equation}
 %
 \mft{R} measures the total resources used by the economy to create a

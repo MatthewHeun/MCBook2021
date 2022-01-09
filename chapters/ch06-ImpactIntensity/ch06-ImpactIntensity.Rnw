@@ -1026,18 +1026,18 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
       Other examples include environmental impacts from hydraulic fracking
       fluids; air quality issues associated with burning fossil fuels such as
       soot, smog, and ozone; and soil contamination from leaking underground 
-      fuel storage tanks.
+      fuel-storage tanks.
       There is a tendency to approach each of these impacts
       as a separate problem and to invent technological fixes specific to each 
       problem, which is often a successful approach. 
-      Indeed, the rate of oil spills has gone down due to better technology. 
+      Indeed, the rate of oil spills is down due to better technology. 
       However, these technological solutions come with their own costs, risks, 
       and inherent tradeoffs.
       Give some examples of the tradeoffs inherent in pollution prevention technologies.
       How do we manage tradeoffs among different types of solutions?
       
 \item Energy historian Roger Fouquet found that it has taken, historically, on average, 50 years
-      to transition from one energy source to another.
+      to transition from one energy source to another~\cite[p.~6595]{Fouquet:2010tq}.
       At this moment in time, it is unlikely that humanity has 50 years
       to effect a transition to renewable sources of energy
       to avoid irreversible effects of climate change.
@@ -1049,8 +1049,8 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
 \item Expanding on the issues raised in the previous questions, 
       nuclear power has had its own environmental issues. 
       Disasters such Fukushima Daiichi, Three-Mile Island, and Chernobyl come to mind. 
-      High-level waste is another. 
-      Coal power plants in the Midwest region have emitted 
+      High-level nuclear waste is another. 
+      On the other hand, coal-fired power plants in the Midwest region have emitted 
       enough mercury that fish in the Great Lakes are not safe for consumption
       by children or women of child-bearing age. 
       How do you make decisions about trading off different types of 
@@ -1082,8 +1082,13 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
 \item Which would you prefer, a biomass energy system or a water-wind-solar (WWS)
       energy system? Why?
 
-\item What would be the consequences of a reduction in $EROI$ that would accompany 
+\item What would be the consequences of a reduction in EROI that would accompany 
       a conversion to a biofuel-based energy system?
+      Make reference to the earlier years of 
+      Figures~\ref{fig:PopulationGraph}, 
+      \ref{fig:AffluenceGraph-Nordhaus}, 
+      \ref{fig:EnergyIntensityGraph-Nordhaus}, 
+      \ref{fig:ImpactIntensityGraph}.
         
 \item One issue with a fully WWS electricity grid is the supposed need for significant
       energy storage. 
@@ -1096,6 +1101,7 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
       of time needed to transition to global carbon-free energy?
       Why did we go from a low-carbon economy (such as in 1800) to the high-carbon
       economy we have today? 
+      Hint: see Table~\ref{tab:eroi}.
 
 \item Should the transition to renewable energy sources be actively managed 
       (for example by government policy) or should we let the ``invisible hand
@@ -1108,8 +1114,8 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
       (or not)?
 
 \item Find the proportion of renewable energy in the world's energy mix today.
-        Does this proportion indicate that we are far into the transition to a 
-        low-carbon energy regime?
+      Does this proportion indicate that we are far into the transition to a 
+      low-carbon energy regime?
 
 \item Argue for and against making Table \ref{tab:corrected_co2_emissions}.
       What does Table \ref{tab:corrected_co2_emissions} show that Figure
@@ -1180,7 +1186,8 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
         including fossil fuels and renewables such as biofuels.
         What does your ranking imply for transitions to a low-carbon energy regime?
         Critique how your sources drew the boundaries
-        around which they're calculating that EROI.
+        around which they calculated EROI.
+        Compare your results to Table~\ref{tab:eroi}.
         
   \item What would have to be true for the world to be able to implement a 100\% WWS energy system?
         
@@ -1199,7 +1206,7 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
         What transmission issues would emerge?
   
   \item What are the other resource implications of a WWS transition? 
-        E.g., do we have enough niobium (Nb)\index{niobium (NB)} for the wind turbines
+        For example, do we have enough neodymium (Nd)\index{neodymium (Nd)} for the wind turbines
         required to implement a WWS energy supply? 
         
   \item Derive Equation~\ref{eq:IPARX_rate} from Equation~\ref{eq:IPARX}.
@@ -1250,7 +1257,7 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
         Write a paper that discusses each term and suggests your favored policy 
         to reduce the magnitude of each term. 
         Next look into the
-        \href{EnROADS climate simulator}{https://www.climateinteractive.org/tools/en-roads/}
+        \href{https://www.climateinteractive.org/tools/en-roads/}{EnROADS climate change solutions simulator}
         and find its policy options for addressing climate change. 
         Which of your favored policies appears in the EnROADS options?
         Now choose a suite of policies in EnROADS that includes as many of your favored policies as possible.
