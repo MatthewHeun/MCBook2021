@@ -824,7 +824,8 @@ Most scientists agree that avoiding irreversible effects of climate change
 requires limiting global average temperature rise to 1.5~\degC{} or less,
 relative to the global average temperature at the dawn of the industrial revolution.
 Our ``carbon budget'' is the amount of future CO$_2$ emissions
-that will eventually bring us 1.5~\degC{} total warming.
+that will eventually bring us 1.5~\degC{} total warming, 
+accounting for the (very small) rate of absorption by the biosphere.
 As of 2021, the remaining carbon budget is 500~GtCO$_2$ 
 for a 50\% likelihood of remaining below 1.5~\degC{}~\cite[Table~SPM.2]{IPCC:2021tk}.%
 \footnote{
