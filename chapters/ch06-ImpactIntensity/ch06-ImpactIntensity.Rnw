@@ -479,10 +479,11 @@ worldwide replacement of today's fossil-fuel-dominated electricity infrastructur
 with a fleet of biomass power plants.
 And conversion to biomass would require build-out of a biomass-to-liquid-fuels conversion 
 infrastructure that does not yet exist.
-Finally, conversion to biomass will be accompanied by a reduction in $EROI$
-(see Section~\ref{sec:masterE}).
-The $EROI$ for fossil fuels is mostly greater than 20 (see Table \ref{tab:eroi}), while
-the $EROI$ for corn ethanol is typically less than 2~\cite{Hammerschlag:2006uf}.
+Finally, conversion to biomass will be accompanied by a reduction in EROI; 
+see Section~\ref{sec:masterE}.
+The EROI for fossil fuels is mostly greater than 20, while
+the EROI for corn ethanol is typically less than 2~\cite{Hammerschlag:2006uf};
+see Table \ref{tab:eroi}.
 
 
 %++++++++++++++++++++++++++++++
