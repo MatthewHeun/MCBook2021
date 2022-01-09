@@ -41,7 +41,7 @@ finite boundaries.
 % In $ln(2)/r$ time units, the system will go from half its ``budget'' to being
 % at the limit, despite many, many previous doublings.
 % Part of the curse of exponential growth is that the end seems sudden.
-This chapter explores those boundaries -- the ``budget,'' or carrying capacity, 
+This chapter explores those boundaries---the ``budget,'' or carrying capacity, 
 of the planet.
 Exceeding Earth's carrying capacity degrades its ability to support life.
 
@@ -63,9 +63,9 @@ Simply having oceans and an atmosphere \emph{provides} a place for pollution to 
 
 The second set of services is \emph{regulating and supporting services}, 
 which sustain and stabilize the ecosystem.
-Regulating and supporting services include processes for breaking down and 
+These services include processes for breaking down and 
 recycling dead organisms; 
-the carbon cycle; %(see Figure~\ref{fig:CCycle}),  
+the carbon, % cycle; %(see Figure~\ref{fig:CCycle}),  
 nitrogen, oxygen, and water cycles; 
 and the fact that plant roots stabilize soil and prevent erosion.
 
@@ -86,8 +86,8 @@ they examined were being degraded or used unsustainably~\cite{MA2005}.
 
 One way to think about ecosystem services is as \emph{natural capital}. 
 ``Capital'' refers to an improvement or building that is economically productive 
-or valuable (see Chapter \ref{chap:affluence}).
-The ecosystem produces value for human society by producing many things we use 
+or valuable. (See Chapter~\ref{chap:affluence}).
+The ecosystem produces value for human society by creating many things we use 
 and disposing of many of our wastes.
 Just as concepts of value and ownership motivate individuals and organizations
 to care for and manage their capital stocks, there have been many attempts to classify
@@ -115,7 +115,7 @@ and its seeming lack of relevance to the exciting task of exploring the universe
 those words have remained with MKH like no others.
 The truth of the accountant's statement has been proved through time.
 Indeed, a very effective way to change behavior is to change the way things 
-are counted (money, inputs, outputs, etc.).
+are counted (like money, inputs, and outputs).
 The accountant was right, because
 we count what we think we value, and 
 we come to value what we count.
@@ -210,13 +210,13 @@ support ecosystem services, which will lead to a tipping point, that is,
 a fundamental change in the way the ecosystem works. 
 An example that is of particular concern right now is global climate change 
 (principally) caused by human CO$_2$ emissions. 
-Extinction rate is another, which is analogous to the rivets in the airplane.
-Because the ecosystem's dynamics are nonlinear and interrelated, 
-tipping points exist, and human actions can cause a series of cascading failures
+Extinction rate, which is like losing rivets in an airplane, is another cause of concern.
+Because of tipping points and the nonlinear and interrelated nature of the
+ecosystem's dynamics human actions can cause a series of cascading failures
 that will ultimately degrade the Earth's ability to support life. 
-Exponential growth, for instance in human population and the economy, is analogous
+Exponential growth, for instance, in human population and the economy, is analogous
 to heeling over a boat. 
-Growth causes greater and great demands on the ecosystem. 
+Growth causes greater and greater demands on the ecosystem. 
 Eventually the boat (that is, the ecosystem) heels over so far that it capsizes.
 
 % "Climate genocide"
@@ -228,32 +228,33 @@ Drastic or catastrophic changes to ecosystems are not new or solely a modern pro
 Rapa Nui (Easter Island), the Levant, and the Sahara Desert have all undergone 
 dramatic ecological shifts, although the degree to which this is attributable to 
 human actions is not agreed upon or well understood \cite{Malhi2018}. 
-Population-driven deforestation was a problem in ancient times and it remains so 
-today. 
-In places as far flung as Scandinavia \cite{Oestlund2015},
-the Mayan empire \cite{Douglas2018}, southern Iran \cite{NFMiller1985}, but 
-especially well documented in Mediterranean in the Greek- and Roman-era \cite{Hughes2011} 
-is the overconsumption of wood for fuel and building and the clearing of forests 
-to feed a growing population. 
-The result was a permanent loss of soil fertility, erosion, and economic decline.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Population-driven deforestation was a problem in ancient times and it remains so 
+today. 
+Clearing forests for fuel, crop land, and building materials
+led to a permanent loss of soil fertility, erosion, and economic decline
+in places as far apart as Scandinavia \cite{Oestlund2015},
+the Mayan empire \cite{Douglas2018}, and southern Iran \cite{NFMiller1985}. 
+Ecological problems were especially well documented in Mediterranean 
+in the Greek- and Roman-era \cite{Hughes2011}. 
+Goats were pastured on cut timberlands, preventing regrowth.
 ``Overgrazing, particularly by goats, was a primary cause of deforestation in
 ancient Greece and Rome''~\cite{Hughes1982}.
 \end{mcframe}
 
 % if we don't understand it, should we mess with it?
 What \emph{is} new is scope or magnitude of humanity's ability to affect the environment,
-both due to high population and our level of technology.
+both due to the current high population and our level of technology.
 Fossil-fuel derived carbon emissions are of particular concern.
 Further examples include nuclear and industrial ``accidents,'' such as the Thule air-base crash,
 the Palomares crash, the Seveso dioxin release, and, more recently, the Chernobyl
 and Fukishima diasters, which have each contaminated many square kilometers.
 Finally, %while the risk is, perhaps, less acute than it once was, 
 a global thermonuclear war would be a humanitarian and environmental disaster on a 
-truly global scale.
+truly global scale (if one were to occur).
 
 Equation~\ref{eq:IPARX} frames sustainability in terms of environmental ``impacts,''
 that is, negative effects resulting from human activity. 
@@ -267,10 +268,7 @@ Whereas the planetary boundaries are limits for single variables, indices are a 
 of variables from both sides of Equation~\ref{eq:IPARX}.
 Neither method describes \emph{how} changes to become more sustainable should be made, 
 but each index implicitly contains a description of the tradeoffs among the different variables. 
-%The boundary method establishes what we don't want to happen. 
 
-% comparison with radiation. humans need some (for vitamin D). more is long-term bad. 
-% Even more is short-term bad. What should the limit be?
 
 \section{Planetary boundaries}
 Climate scientists have proposed indicators, which, if exceeded, 
@@ -340,9 +338,9 @@ Less than 15\% of Earth's land area should be converted to cropland. (Currently,
 The extinction rate should be less than 10 species per million species becoming extinct
 per year. 
 Currently, the rate is more than 100 per million, out of a total of 10 to 14 million
-species (see Chapter \ref{chap:population}) and is accelerating. 
+species (see Chapter~\ref{chap:population}) and is accelerating. 
 Generating new species by natural evolution to replace the ones that have been 
-lost will take several million years \cite{Davis11262}.
+lost will take several million years~\cite{Davis11262}.
 
 %Figure~\ref{fig:CO2Graph} shows atmospheric CO$_2$ concentration over time.
 
@@ -372,14 +370,14 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
   MKHthemes::xy_theme()
 @
 
-Two of the indicators in Table \ref{tab:planetBoundaries}, 
+Two of the indicators in Table~\ref{tab:planetBoundaries}, 
 particulate concentration in the atmosphere and chemical pollution, 
 do not have proposed limits. 
 In the case of chemical pollution, the vast number of such (possible) pollutants, 
 each of which causes different acute and chronic effects, would make a single 
 ``threshold'' meaningless. 
 Instead, national governments set limits on a chemical-by-chemical basis.
-Agencies such as the US Environmental Protection Agency and the European Commission
+Agencies such as the U.S.\ Environmental Protection Agency and the European Commission
 (or member states) enforce the regulations.
 
 Using planetary boundaries for decision making is similar to rules for when to change
@@ -595,23 +593,24 @@ erodable_limit_data %>%
         \label{fig:GAfig21}
 \end{figure}
 
-Figure \ref{fig:GAfig21} is a conceptual representation of four relationships between
+Figure~\ref{fig:GAfig21} is a conceptual representation of four relationships between
 limits or boundaries and human effects on the environment. 
 In part (a), there is no effective limit; human growth can continue unimpeded. 
-However, Section \ref{sec:exp} shows that growth can't continue forever on a finite 
+However, Section~\ref{sec:exp} shows that growth can't continue forever on a finite 
 planet; there is always an eventual limit. 
 In part (b), the boundary is hard and can never be crossed. 
 For instance, the extractable fraction of a mineral in the Earth's crust can't, 
 by definition, exceed 100\%. 
 In part (c), exceeding the boundary is possible, for short times, but the boundary 
-is robust. That is, it recovers. 
-Renewable resources like grazing land, fisheries, timber, and aquifers \emph{may}
-have behavior like this. 
+is robust. 
+That is, it recovers. 
+Renewable resources like grazing land, fisheries, timber, and aquifers \emph{can}
+behavior this way. 
 Lastly, in part (d), exceeding the boundary causes long-term reduction in the 
 capacity of the ecosystem to provide ecosystem services. 
 As above, renewable resources like grazing land, fisheries, timber, and aquifers
-\emph{can} have this behavior if their capacity is exceeded too much or for too long.
-Alternatively, complex systems, like temperature regulation of the planet, may exhibit
+\emph{can} have this behavior, if their capacity is exceeded too much or for too long.
+As another example, complex systems, like temperature regulation of the planet, can exhibit
 tipping points that can radically change limits to an ecosystem service when the 
 limit is exceeded. 
 Carbon dioxide in the atmosphere is thought/feared to be an example
@@ -626,14 +625,18 @@ of this sort of behavior; when CO$_2$ increases too much, Earth will get
 
 There are many, many indices used to express or measure sustainability. 
 All indices are, essentially, (weighted) averages of quantities related to
-one or more of the three areas of sustainability shown in Figure \ref{fig:venn_diagram}.
+one or more of the three areas of sustainability shown in Figure~\ref{fig:venn_diagram}.
 % \subsection{Indices for environmental impact}
 % \subsection{Indices for the economy}
 % \subsection{Indices for social change}
-Example indices include carbon footprint, ecological footprint (in global hectares
-per person), and the human development index (HDI). 
+Example indices include carbon footprint, 
+ecological footprint (in global hectares per person), 
+and the human development index (HDI). 
 Figure~\ref{fig:FootprintHDIGraph} plots ecological footprint and HDI for many 
 different countries. 
+The multidimensional poverty index in another example of a socio-economic index used
+for sustainability.
+
 
 % \begin{figure}
 % \centering
@@ -645,7 +648,7 @@ different countries.
 In contrast to planetary boundaries, which are hard biophysical limits, indices 
 typically represent aggregated behavior. 
 Aggregation allows grouping together of things that are different.
-For example, in the HDI, life expectancy at birth, expected years of schooling, 
+For example, the HDI group life expectancy at birth, expected years of schooling, 
 and gross national income. 
 Another example is CO$_2$ equivalents, which expresses the global warming 
 potential of various gases such as methane, nitrous oxide, and fluorinated gases
@@ -774,7 +777,7 @@ ggplot2::ggplot() +
 @
 
 CO$_2$ emissions are an especially important sustainability issue 
-because of widespread effects. 
+because of their widespread effects. 
 CO$_2$ emissions are also especially important for at least two other reasons. 
 First, CO$_2$ emissions may trigger a tipping point or tipping points in the 
 Earth's ecosystems, related to deforestation, wild fires, ocean acidification, 
@@ -789,8 +792,8 @@ If the radiation received from the sun exceeds the heat radiated from the Earth,
 the Earth's temperature will increase. 
 As the Earth's temperature increases, the amount of heat radiated from the Earth
 increases as well.
-Eventually, a new equilibrium will be achieved. 
-Radiation received from the sun is relatively constant; there are a variety of 
+Eventually, a the Earth will reach a new equilibrium temperature. 
+The amount of radiation received from the sun is relatively constant; there are a variety of 
 satellite-based and Earth-bound measurement systems to confirm this. 
 Because the sun is very hot, the radiation it emits is high energy (short wavelength).
 Greenhouse gases, of which CO$_2$ is of chief concern, do not absorb these
@@ -821,7 +824,7 @@ Most scientists agree that avoiding irreversible effects of climate change
 requires limiting global average temperature rise to 1.5~\degC{} or less,
 relative to the global average temperature at the dawn of the industrial revolution.
 Our ``carbon budget'' is the amount of future CO$_2$ emissions
-that will bring us to 1.5~\degC{} total warming.
+that will eventually bring us 1.5~\degC{} total warming.
 As of 2021, the remaining carbon budget is 500~GtCO$_2$ 
 for a 50\% likelihood of remaining below 1.5~\degC{}~\cite[Table~SPM.2]{IPCC:2021tk}.%
 \footnote{
@@ -840,7 +843,7 @@ we have less than 15 years before we have committed to a long-term  1.5~\degC{}
 temperature increase (assuming we don't find a way to remove CO$_2$ from at 
 atmosphere).
 Given that CO$_2$ emissions are not staying constant but are, in fact, rising,
-we have about a decade before we reach 1.5~\degC{} of eventual warming
+we probably have about a decade before we reach 1.5~\degC{} of eventual warming
 and irreversible effects of climate change.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -852,7 +855,17 @@ energy and CO$_2$ emissions are the prime example of this book.
 
 \end{mcframe}
 
-
+\section{Summary}
+This chapter discussed the many services the Earth's ecosystem supplies, such as
+materials and energy, waste removal, and recreational opportunities.
+Human activities can degrade or destroy the ability of the ecosystem to supply 
+those services.
+The various ways that the many services can be affected we have chosen to list
+as \mft{I}, the left-hand side of the IPARX equation.
+Maximum permissible levels for \mft{I} are the planetary boundaries.
+Indices are a tool to help us aggregare information and manage impacts.
+The next four chapters will look at the terms on the right-hand side of the IPARX
+equation in turn.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
