@@ -282,7 +282,8 @@ respectively.
 (Recall that Section~\ref{sec:exp} reminds us that perpetual growth in the 
 consumption of finite resources is ultimately unsustainable.)
 
-GDP is denominated in units of money and is the sum of four terms:
+GDP is denominated in units of money per time and is usually the sum of four annual terms:
+%GDP is denominated in units of money and is the sum of four terms:
 
 \begin{equation}
 \label{eq:GDP}
