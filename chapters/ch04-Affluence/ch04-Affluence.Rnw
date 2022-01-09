@@ -727,22 +727,29 @@ economic relationship to the rest of humanity.
 There is always ends some participation in the broader economy,
 so there is no way to escape the sustainability implications of economic activity.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary}
-This chapter defines affluence \mft{A} in the IPARX equation and looked at the 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This chapter defines affluence~\Aparen{} in the IPARX equation and looked at 
 historical data of \mft{A} over time. 
 Growth in affluence can be viewed as the source (or \emph{a} major source)
 of our many sustainability challenges.
 This chapter's discussion questions further explore the thorny relationship  
-between affluence and impacts.
+between affluence~\Aparen{} and impacts~\Iparen{}.
 On the other hand, increasing affluence is desirable. 
 Indeed, it is the goal of many aspects of social sustainability.
-However, growth in affluence puts the burden of lowering impacts \mft{I} on the
-other terms on the right-hand side of the IPARX equation:~\mft{P}, \mft{R}, and ~\mft{X}.
+However, growth in affluence puts the burden of lowering impacts~\Iparen{} on the
+other terms on the right-hand side of the IPARX equation:
+population~\Pparen{}, the resource intensity of economic activity~\Rparen, 
+and the impact intensity of resources~\Xparen.
 Chapter~\ref{chap:population} showed that population has been rising and will 
-continue to do so in the near term.
-The next two chapters examine sustainability related to \mft{R}, and ~\mft{X}.
+likely continue to do so in the near term.
+The next two chapters examine sustainability related to \mft{R} and \mft{X} terms.
 Perhaps, as we hope, there is a way to enjoy a high standard of living \emph{and}
 be sustainable.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
