@@ -441,7 +441,8 @@ in the direction of low-carbon energy supply.
 
 Nuclear power (an electricity source only)
 may provide a bridge to a sustainable future.
-Nuclear power emits little CO$_2$ during plant operation. 
+Nuclear power emits little CO$_2$ during plant operation
+and has high EROI; see Table~\ref{tab:eroi}. 
 However, the energy cost to construct a nuclear power plant 
 is higher than other types of
 electricity production plants.
@@ -464,20 +465,27 @@ the topic of P6.\ref{question:nuclear_resources}.
 In lieu of extracting CO$_2$ from the atmosphere,
 we could stop emitting CO$_2$ from fossil fuel combustion in the first place!
 One way is to transition away from fossil fuels 
-to the energy mix used in the first half of the 19$^\mathrm{th}$ century,
-namely exclusive use of traditional biofuels (wood and wood products).\index{biofuels}
-(See Figure~\ref{fig:PrimaryEnergyGraph}.)
+to the energy mix used in the first half of the 19$^\mathrm{\text{th}}$ century,
+namely exclusive use of traditional biofuels (wood and wood products)\index{biofuels}
+for heating and electricity;
+see Figure~\ref{fig:PrimaryEnergyGraph}.
 However, supplying the energy needs of today's economy would be impossible:
 we don't have enough available arable land
 to grow the required amount biomass.
-(Proof of this statement is left for Project P6.\ref{item:biofuel_proof}.)
-Even if there were enough land, growing crops requires unsustainable energy inputs 
-(see Chapter \ref{chap:agriculture}), as well as water and chemical inputs.
-Further, biomass by itself is not electricity or liquid fuel.
+(Proof of this statement is left for P6.\ref{item:biofuel_proof}.)
+Even if there were enough land, growing crops requires unsustainable energy,
+water, and chemical inputs; see Chapter \ref{chap:agriculture}.
+
+Biomass (unmodified wood or wood pellets) 
+works well for home heating and cooking
+via wood stoves, 
+provided that particulate matter is addressed appropriately.
+However, biomass by itself is not electricity or liquid fuel.
 A conversion to biomass for the world's primary energy supply would also require 
-worldwide replacement of today's fossil-fuel-dominated electricity infrastructure
+worldwide replacement of today's fossil fuel electricity generation infrastructure
 with a fleet of biomass power plants.
-And conversion to biomass would require build-out of a biomass-to-liquid-fuels conversion 
+And conversion to biomass would require build-out 
+of a biomass-to-liquid-fuels conversion 
 infrastructure that does not yet exist.
 Finally, conversion to biomass will be accompanied by a reduction in EROI; 
 see Section~\ref{sec:masterE}.
@@ -487,7 +495,7 @@ see Table \ref{tab:eroi}.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Wind, water, and solar}
+\subsection{Wind, water, and solar electricity}
 \label{sec:wws}
 %++++++++++++++++++++++++++++++
 
@@ -497,23 +505,22 @@ to water (hydro), wind, and solar
 energy sources.
 A transition to WWS would also require 
 significant changes to the world's energy infrastructure, 
-with many large challenges.
-First, WWS energy resources produce electricity, not liquid fuels.
-Thus, any economic sector that currently relies upon liquid fuels must be electrified.
-An important example of the need to electrify is the transportation sector.
-Today, transport is almost exclusively powered by liquid fossil fuels (gasoline and diesel).
-Electrifying the world's transportation fleet is a prerequisite to a transition to WWS
-and a zero-carbon economy.
+with at least four large challenges.
 
-There are two options for electrification of the world's transportation fleet: 
-replacing all liquid fuel vehicles with electric vehicles or 
-using electricity to make renewable fuels, such as hydrogen or biofuels, and 
-then replacing all fossil-fuel vehicles with renewable-fuel vehicles. 
-Replacing all liquid fuel vehicles with electric vehicles is slowly occurring today. 
-Electrification of personal vehicles is happening from the top end of markets, 
+First, WWS energy resources produce electricity, not liquid fuels, and 
+large changes will be needed.
+For example, today's transport sector is almost exclusively powered 
+by liquid fossil fuels (gasoline and diesel) and illustrates two options for 
+transitioning from today's energy system to a WWS energy system.
+The first option is to replace
+all fossil-fuel vehicles with electric vehicles, as is slowly occurring today. 
+Electrification of personal vehicles is happening from the top end ofthe market, 
 with expensive offerings from companies such as Tesla.
-Electrification has not yet penetrated meaningfully into the freight system,
-including trucks, ships, and planes.
+(Electrification has not yet penetrated meaningfully into the freight system,
+including trucks, ships, and planes.)
+The second option is to use WWS electricity 
+in plants that convert feedstocks to biofuels.
+
 % This is discussed at length in research circles. Electric planes, biofuel planes,
 % biodiesel or electric trucks. Maersk has committed to carbon-neutrality by 2050
 % and is launching a bio-methanol ship in 2023.
@@ -522,23 +529,31 @@ including trucks, ships, and planes.
 % fuel cell generators for efficient discharge). However, we don't really have 
 % materials yet to do this ``at scale.''
 
-Second, wind and solar (the \emph{WS} in W\emph{WS}) are intermittent sources of electricity,
+Deployment of a WWS energy system provides a second challenge:
+wind and solar (the \emph{WS} in W\emph{WS}) are intermittent sources of electricity,
 while today's electricity sources 
 (coal, natural gas, nuclear, and hydro)
 are not.
-At present, electric grids accommodate only a fraction of intermittent electricity, much less than 100\%.
+At present, electric grids accommodate only a fraction 
+of intermittent electricity, much less than 100\%.
 So a transition to wind and solar primary energy sources will require
-redesign and re-implementation of electricity grids worldwide
+redesign and reimplementation of electricity grids worldwide
 to include electricity storage.
-Battery storage on the required scale will require great quantities of rare earth metals 
-and other exotic materials. 
-Gravitational potential energy could supply storage with <~100\% 
+
+There are several options for grid-scale electricity storage, including
+batteries and potential energy storage.
+Battery storage on the will require great quantities of rare earth metals 
+and other exotic materials, 
+already listed on critical materials lists;
+see Section~\ref{sec:resources_strong_sustainability}. 
+Gravitational potential energy could supply storage with nearly 100\% 
 round-trip efficiency.
 Options for potential energy storage materials include 
 water (with a pumped hydro plant)
 or concrete with a system such as Energy Vault~\cite{Energy-Vault:uz}.
 
-Third, in most areas of the world, 
+A third challenge comes from the water portion of WWS. 
+In most areas of the world, 
 the potential for expanding the production of hydro electricity is limited.
 Most of the Americas, Europe, and Asia are already ``tapped out'' regarding hydropower.
 Today, the potential for hydro is greatest in central Africa.
@@ -548,7 +563,7 @@ Moreover, there are considerable negative environmental and social impacts from
 hydro projects, such as changes to soil salinity, silting, and the destruction
 of communities located in the proposed reservoir.
 
-Fourth, WWS systems are energy intensive to manufacture.
+Finally, WWS systems are energy intensive to manufacture.
 So the transition to a WWS future will require significant energy investment
 in addition to significant financial investment.
 If the energy investment to make WWS systems comes from fossil fuels,
@@ -567,11 +582,9 @@ money and resources, in particular, in terms of energy itself.
 It takes energy to make energy-making machines!
 
 Energy historians find that energy transitions often take decades to complete.
-Roger Fouquet, has studied energy transitions of the UK in many economic sectors and 
+Roger Fouquet has studied energy transitions of the UK in many economic sectors and 
 across many energy technologies.
-In a paper titled 
-\emph{The slow search for solutions: Lessons from historical energy transitions by sector and service}, 
-he finds that
+He found that
 ``since the Industrial Revolution, it took, on average, 
 nearly 50 years for energy transitions 
 (i.e., the diffusion of energy sources and technologies) 
@@ -700,13 +713,12 @@ or
 2000 and 2019?''
 The answers are shown in Equation~\ref{eq:IPARX_rate_with_numbers}.
 
-
 <<IPARX_Table, results="asis">>=
 years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
 
 print(xtable::xtable(iparx_df %>% 
                        dplyr::filter(Year %in% years_for_rate_table), digits = c(0, 0, 3, 2, 2, 2, 2),
-                     caption = "IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers} these data allow us to see whether the world is becoming more sustainable or less over time and why.",
+                     caption = "IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers} these data allow us to see whether the world is becoming more sustainable or less sustainable over time and why; see P6.\\ref{question:iparx_calcs}.",
                      label = "tab:iparx_select_years"),
       include.rownames = FALSE,
       include.colnames = TRUE,
@@ -742,7 +754,7 @@ over the last two decades (2000--2019).
 Equation~\ref{eq:IPARX_rate_with_numbers}
 can be used to discern
 trends over other periods of time. 
-See Project~P6.\ref{item:iparx_calcs}.)
+See P6.\ref{item:iparx_calcs}.)
 The declining energy intensity of the economy term ($\mft{r}_\mft{R}$ < 0)
 is the only term in the IPARX identity
 putting downward pressure on the CO$_2$ emissions growth rate ($\mft{r}_\mft{I}$).
@@ -1199,7 +1211,7 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
         for the last 49 years only (1970--2019), and
         for the last 9 years only (2010--2019).
         How are the results similar to or different from the results 
-        of Equation~\ref{eq:IPARX_rate_with_numbers}? \label{item:iparx_calcs}
+        of Equation~\ref{eq:IPARX_rate_with_numbers}? \label{question:iparx_calcs}
         
   \item After many years of studying energy-economy interactions and the rebound effect, 
         \citet{Sorrell:2010ul} advanced five controversial propositions:
