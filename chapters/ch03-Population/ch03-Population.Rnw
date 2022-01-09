@@ -200,7 +200,7 @@ Although scientists have estimated past population levels, reliable data are lim
 In prehistoric times, the human population grew slowly.
 By 9000~BC, there were 5--10~million humans.
 Around the year 1~AD, there were around 300~million people, 
-representing an average growth rate of about 0.1~\%/year.
+representing an average growth rate of about 0.1\%/year.
 By 1650~AD, the world population was around 500~million. 
 Population growth slowed because trade and urbanization spread infectious 
 diseases that killed large numbers of people.
@@ -210,7 +210,7 @@ Population is affected by births and deaths.
 Estimating the populations of antiquity is difficult because 
 the birth and death rates are uncertain.
 However, estimates of the total number of humans to have ever lived are 100--110~billion.
-Thus, today's population of about 8~billion people represents 8--9~\% 
+Thus, today's population of about 8~billion people represents 8--9\% 
 of all the people who have ever lived.
 
 
@@ -226,11 +226,11 @@ If the number of births per year exceeds the number of deaths, the population wi
 If deaths exceed births, the population will fall.
 Population is stable when births and deaths are equal.
 
-A larger population has the capactiy for more births and more deaths per year.
+A larger population has the capacity for more births and more deaths per year.
 Thus, birth and death rates depend on the size of the population.
 The population growth rate, in~\%/yr, on the other hand, expresses growth in a way that is
 independent of population size.
-If population growth rate is constant over time, population grows exponentially (Section~\ref{sec:exp}).
+If population growth rate is constant over time, population grows exponentially; see Section~\ref{sec:exp}.
 Even if population growth rate changes slightly over time (as it has over the
 last sixty years, dropping from about 2\% to about 1\%), exponential growth is a good
 description of how population changes with time.
