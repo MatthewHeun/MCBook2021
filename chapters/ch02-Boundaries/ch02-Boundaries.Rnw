@@ -358,7 +358,7 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
                       linetype = guide_linetype) +
   ggplot2::geom_hline(yintercept = 350,
                       size = guide_line_size, 
-                      colour = curve_fit_colour,
+                      colour = guide_line_colour,
                       linetype = guide_linetype) +
   ggplot2::geom_line(size = data_line_size, 
                      colour = data_line_colour, 
@@ -825,7 +825,13 @@ requires limiting global average temperature rise to 1.5~\degC{} or less,
 relative to the global average temperature at the dawn of the industrial revolution.
 Our ``carbon budget'' is the amount of future CO$_2$ emissions
 that will eventually bring us 1.5~\degC{} total warming, 
-accounting for the (very small) rate of absorption by the biosphere.
+accounting for the (very small) rate of absorption by the biosphere.%
+\footnote{
+  The small absorption rate of CO$_2$ by the biosphere means that
+  we need a negative CO$_2$ emissions rate (sequestration)
+  to get back to 350~ppm atmospheric CO$_2$ concentration
+  within a few centuries.
+}
 As of 2021, the remaining carbon budget is 500~GtCO$_2$ 
 for a 50\% likelihood of remaining below 1.5~\degC{}~\cite[Table~SPM.2]{IPCC:2021tk}.%
 \footnote{
