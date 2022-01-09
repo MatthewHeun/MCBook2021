@@ -798,7 +798,7 @@ in several sectors of the economy.
 Finally, Part~\ref{part:actions}
 (Chapters~\ref{chap:government} and~\ref{chap:personal_action})
 provides suggestions for \emph{how} to respond, 
-collectively and personally.
+collectively and individually.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -914,7 +914,7 @@ However, the concave downward nature of Figure~\ref{fig:E_vs_GDP_graph} indicate
 each additional dollar of GDP requires incrementally less energy consumption
 than the dollar before.
 The line in Figure~\ref{fig:E_vs_GDP_graph} is concave downward because
-the primary energy intensity of the economy ($\mft{I}_{\!\mft{Ep}}$)
+the primary energy intensity of the economy ($\mft{R}_{\!\mft{Ep}}$)
 has been decreasing over time,
 as shown in Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 Thus, as GPD ($\mft{P} \times \mft{A}$\:\!) rises, 
@@ -923,22 +923,25 @@ the primary energy intensity of the economy
 is expected to fall, 
 as it has been for 220 years.
 (Recall from Section~\ref{sec:energy_intensity_of_the_economy}, 
-however, that \mft{R} is falling over time primarily because
+however, that $\mft{R}_{\!\mft{Ep}}$ is falling over time primarily because
 per-dollar consumption of sustainable biomass is falling over time.
 Ironically, unsustainable per-dollar fossil fuel consumption is more constant 
 than sustainable per-dollar biomass consumption over time.
 See Figure~\ref{fig:per_gdp_material_use}.)
 
-\mft{R} is a type of economic intensity
+$\mft{R}_{\!\mft{Ep}}$ is a type of economic intensity
 that represents the effectiveness of using energy to make GDP.
 This fact raises an interesting question:
 can we use improved economic effectiveness 
-(decreasing \mft{R}, brought about by rising energy efficiency)
+(decreasing $\mft{R}_{\!\mft{Ep}}$)
+brought about by rising energy efficiency)
 to reduce environmental impacts (\:\!\mft{I} in Equation~\ref{eq:IPARX}, 
 CO$_2$ emissions being the prime example)?
-It certainly helps, as decreasing \mft{R} puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}.
+It certainly helps, as decreasing $\mft{R}_{\!\mft{Ep}}$
+puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}.
 However, recent research indicates that growing energy efficiency
-(and declining \mft{R}) has never reduced energy consumption or environmental impacts, 
+(and declining $\mft{R}_{\!\mft{Ep}}$)
+has never reduced energy consumption or environmental impacts, 
 at least at the worldwide level~\cite{Brockway:2021ww}.
 The rebound effect (Section~\ref{sec:rebound_effect}) is thought to be a strong candidate
 for the reason why efficiency has not led to decreases
