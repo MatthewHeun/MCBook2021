@@ -423,16 +423,20 @@ the two are closely linked.
 \label{sec:exp}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Returning to the grain and chessboard problem, for a series of doubling numbers, like the
-number of grains on a chessboard's squares: $1, 2, 4, 8, 16, 32, …$, the sum of all the
+Returning to the grain and chessboard problem, for a series of doubling numbers, 
+like the number of grains on a chessboard's squares: 
+1, 2, 4, 8, 16, 32, \ldots,
+the sum of all the
 numbers in the series is always one less than the next number in the series.
-For example, $1+2+4+8 = 15$, which is one less than $16$ and $1+2+4+8+16 = 31$,
-which is one less than $32$.
+For example, 
+1+2+4+8 = 15, which is one less than 16, and
+1+2+4+8+16 = 31, which is one less than 32.
 Thus, the amount of grain in the next square is always greater than the sum total
 of all the grain on all previous squares.
-The formula for the total grain on $N$ squares is $2^N-1$.
-The amount of grain on the $N^\text{th}$ square is $2^{N-1}$, which is half of $2^N$,
-and so is one more than the sum of all previous $N-1$ squares.
+The formula for the total grain on \mft{N} squares is 2$^{\mft{N} - \text{1}}$.
+The amount of grain on the \mft{N}$^\text{th}$ square is 2$^{\mft{N} - \text{1}}$, 
+which is half of 2$^\mft{N}$
+and one more than the sum of all previous $\mft{N} - \text{1}$ squares.
 
 Doubling on discrete squares (or in discrete time units) can be extended to 
 continuous time. 
@@ -440,14 +444,14 @@ Exponential growth is growth at a \emph{constant rate} (in percent per year),
 which means doubling in a fixed amount of time.
 That is, the time it takes to double does not depend on the amount there is at
 the current moment. 
-If the (constant) rate of growth is $r$, then amount of time to double is $ln(2)/r$, 
+If the (constant) rate of growth is \mft{r}, then amount of time to double is ln(2)/\mft{r}, 
 which is approximately 70 divided by the growth rate, 
 when the growth rate is expressed as a percentage.
 For example, With a fixed 3\%/yr growth rate, GDP doubles every 23 years.
 If your investment portfolio has a 7\%/yr return, your wealth will double
 every 10 years.
-Or, as shown in Figure~\ref{fig:exp}, $y$ doubles from $1$ to $2$ to $4$ to $8$ 
-to $16$ every $6.93$ years.
+Or, as shown in Figure~\ref{fig:exp}, \mft{y} doubles from 1 to 2 to 4 to 8
+to 16 every 6.93 years.
 
 % \begin{figure}
 % \centering
@@ -458,41 +462,41 @@ to $16$ every $6.93$ years.
 % is exactly equal to the area between $N$ and $N+0.693/r$ (B), for any $N$.}
 % \label{fig:exp_old}
 % \end{figure}
+% 
+% <<exp_old, fig.cap="Exponential growth. When \\mft{y} grows exponentially with time (\\mft{t}) at rate \\mft{r} (for example, \\mft{y} = e$^{\\mft{rt}}$), the value of \\mft{y} doubles every 0.693/\\mft{r} years. In this example, \\mft{r} = 0.1~/year (10~\\%/year), and \\mft{y} doubles every 6.93 years.">>=
+% r <- 0.1 # 1/year
+% exp_df <- data.frame(t = seq(0, 29, by = 0.01)) %>%
+%   dplyr::mutate(
+%     y = exp(r * t),
+%     fill = dplyr::case_when(
+%       t < 6.93 ~ "first",
+%       t >= 6.93 & t < 13.86 ~ "second",
+%       t >= 13.86 & t < 20.79 ~ "third",
+%       t >= 20.79 & t < 27.72 ~ "fourth",
+%       TRUE ~ NA_character_
+%     )
+%   )
+% 
+% ggplot2::ggplot(mapping = ggplot2::aes_string(x = "t", y = "y")) +
+%   ggplot2::geom_ribbon(data = exp_df,
+%                        mapping = ggplot2::aes_string(x = "t",
+%                                                      ymin = 1,
+%                                                      ymax = "y",
+%                                                      fill = "fill")) +
+% 
+%   ggplot2::scale_x_continuous(breaks = c(0, 6.93, 13.86, 20.79, 27.72)) +
+%   ggplot2::scale_y_continuous(limits = c(1, NA), breaks = c(1, 2, 4, 8, 16)) +
+%   ggplot2::scale_fill_viridis_d(direction = -1, guide = "none", begin = 0, end = 1) +
+% 
+%   ggplot2::geom_line(data = exp_df, colour = mc_title_blue, size = 1) +
+% 
+%   ggplot2::labs(x = "t [years]", y = "y") +
+%   
+%   MKHthemes::xy_theme()
+% @
+% 
 
-<<exp_old, fig.cap="Exponential growth. When \\mft{y} grows exponentially with time (\\mft{t}) at rate \\mft{r} (for example, \\mft{y} = e$^{\\mft{rt}}$), the value of \\mft{y} doubles every 0.693/\\mft{r} years. In this example, \\mft{r} = 0.1~/year (10~\\%/year), and \\mft{y} doubles every 6.93 years.">>=
-r <- 0.1 # 1/year
-exp_df <- data.frame(t = seq(0, 29, by = 0.01)) %>%
-  dplyr::mutate(
-    y = exp(r * t),
-    fill = dplyr::case_when(
-      t < 6.93 ~ "first",
-      t >= 6.93 & t < 13.86 ~ "second",
-      t >= 13.86 & t < 20.79 ~ "third",
-      t >= 20.79 & t < 27.72 ~ "fourth",
-      TRUE ~ NA_character_
-    )
-  )
-
-ggplot2::ggplot(mapping = ggplot2::aes_string(x = "t", y = "y")) +
-  ggplot2::geom_ribbon(data = exp_df,
-                       mapping = ggplot2::aes_string(x = "t",
-                                                     ymin = 1,
-                                                     ymax = "y",
-                                                     fill = "fill")) +
-
-  ggplot2::scale_x_continuous(breaks = c(0, 6.93, 13.86, 20.79, 27.72)) +
-  ggplot2::scale_y_continuous(limits = c(1, NA), breaks = c(1, 2, 4, 8, 16)) +
-  ggplot2::scale_fill_viridis_d(direction = -1, guide = "none", begin = 0, end = 1) +
-
-  ggplot2::geom_line(data = exp_df, colour = mc_title_blue, size = 1) +
-
-  ggplot2::labs(x = "t [years]", y = "y") +
-  
-  MKHthemes::xy_theme()
-@
-
-
-<<exp, fig.cap="Rice mass on each square of the chessboard in the king's wager. Nearly all the mass is in the last row of the board (squares 57--64). Pg is petagram; 1 Pg = 10$^{\\text{12}}$~kg.">>=
+<<exp, fig.cap="Rice mass on each square of the chessboard in the king's wager. The last row of the chessboard (squares 57--64) contains nearly all of the rice mass. Pg is petagram; 1 Pg = 10$^{\\text{12}}$~kg.">>=
 chessboard_data <- tibble::tibble(x = 1:64) %>% 
   dplyr::mutate(
     y = 2^(x - 1), 
@@ -518,9 +522,9 @@ In the discrete case, like grain on a chessboard, the number of grains on the
 next square is always one more than the sum of all the previous squares.
 In the continuous case, the area under the curve between ``now'' and the next
 doubling is more than the sum of all previous areas.
-Thus, in Figure~\ref{fig:exp}, the yellow area has a value of $10$, the blue
-area has a value of $20$, the purple area has a value of $40$, and the green 
-area has a value of $80$.
+Thus, in Figure~\ref{fig:exp}, the yellow area has a value of 10, the blue
+area has a value of 20, the purple area has a value of 40, and the green 
+area has a value of 80.
 Purple is more than blue plus yellow and green is more than purple plus blue plus yellow.
 
 If the line in Figure~\ref{fig:exp} represents population or GDP, then the area
@@ -596,7 +600,7 @@ for the \emph{use} of energy in any process.
 Energy efficiency ($\eta$) is defined as
 
 \begin{equation} \label{eq:energy_efficiency_def}
-  \eta \equiv \frac{\mathrm{Energy \; out}}{\mathrm{Energy \; in}} \; .
+  \eta \equiv \frac{\text{Energy out}}{\text{Energy in}} \; .
 \end{equation}
 
 A different metric is often calculated for the \emph{production} of energy:
@@ -605,19 +609,19 @@ EROI is defined as the amount of energy delivered to the economy
 per unit of energy it took to deliver that energy.
 
 \begin{equation}\label{eroi}
-   EROI \equiv \frac{\mathrm{Useful \; energy \; delivered \; to \; society}}
-               {\mathrm{Energy \; required \; to \; obtain \; delivered \; energy}}
+   \text{EROI} \equiv \frac{\text{Useful energy delivered to society}}
+               {\text{Energy required to obtain delivered energy}}
 \end{equation}
 %
 Because energy is the master resource, 
 understanding EROI is vitally important.
 An EROI that is less than one indicates the energy production activity is an energy \emph{sink}
 rather than an energy \emph{source}.
-For instance, modern agriculture has an EROI of around 0.15 to 0.1; 
-it takes 7-10 calories of energy to deliver 1 calorie of food energy.
+For instance, modern agriculture has an EROI of around 0.1 to 0.15; 
+it takes 7--10 calories of energy to deliver 1 calorie of food energy.
 On the other hand, an EROI greater than one indicates a source of useful energy.
 Table \ref{tab:eroi} lists energy returns for various sources of energy.
-Some authors have suggested a minimum EROI of 5 for sustainability \cite{Ferruccio2016}
+Some authors have suggested a minimum EROI of 5 for sustainability~\cite{Ferruccio2016}
 with 12--13 necessary for a technological society.
 Although constrained by basic biophysical limits, EROI can be improved with better,
 more efficient technology.
