@@ -284,7 +284,7 @@ Energy and carbon emissions link together many of our sustainability challenges.
 The most oft-quoted \cite{Quental2011} definition of sustainability is that
 ``Sustainable development is development that meets the needs of the present without
 compromising the ability of future generations to meet their own needs'' \cite{Brundtland}.
-Note that ``sustainable development'' is an oxymoron %and is not the same as sustainability.
+Note that ``sustainable development'' is an oxymoron, %and is not the same as sustainability.
 because ``development'' implies constant improvement, which cannot be sustained 
 forever on a planet with finite resources.
 Furthermore, ``needs'' are subjective.
@@ -294,7 +294,7 @@ In the end, without environmental sustainability, there is no sustainability at 
 
 % %++++++++++++++++++++++++++++++
 % \subsection{Definitions of sustainability}
-\label{sec:Sdefns}
+% \label{sec:Sdefns}
 % %++++++++++++++++++++++++++++++
 
 % The most oft-quoted \cite{Quental2011} definition of sustainability is that
@@ -803,7 +803,7 @@ the full restoration is likely to cost more than \euro{8} billion.
       % **** You could ask the same question about GDP. 
       % Should this question (or a version of it) be moved to the affluence chapter? ---MKH ****
       
-\item In Section \ref{sec:Sdefns} it was noted that ``needs are subjective.'' Would you
+\item In Section \ref{sec:what_is_sustainability} it was noted that ``needs are subjective.'' Would you
       like to ``live like a king'' if that meant actually living like kings lived in 1500 AD,
       500 AD, or 1500 BC? What would be your life expectancy, expected level of education,
       and income (and what could you spend that income on)? Now, with respect to this
