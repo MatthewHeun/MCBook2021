@@ -1212,7 +1212,9 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
         required to implement a WWS energy supply? 
         
   \item Derive Equation~\ref{eq:IPARX_rate} from Equation~\ref{eq:IPARX}.
-        You will use $(1 + r_1)(1 + r_2) \approx r_1 + r_2 + 1$ for $r_1, r_2 <\!\!\!< 1$
+        You will use (1 + r$_\text{1}$)(1 + r$_\text{2}$) 
+        $\approx$ r$_\text{1}$ + r$_\text{2}$ + 1 
+        when \mft{r}$_\text{1}$ <\!\!< 1 and \mft{r}$_\text{2}$ <\!\!< 1
         in the derivation.
   
   \item Verify the calculations in Equation~\ref{eq:IPARX_rate_with_numbers}
