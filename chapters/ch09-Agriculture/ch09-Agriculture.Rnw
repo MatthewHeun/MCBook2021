@@ -477,8 +477,8 @@ food_emissions_total %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = `Food type`, y = `kg CO2 eq/capita/year`)) +
   ggplot2::geom_bar(stat = "identity", fill = bar_colour) +
   ggplot2::labs(x = ggplot2::element_blank(),
-       y = expression("Emissions [kg " * CO[2] * "equiv/" * person%.%year * "]"),
-       fill = ggplot2::element_blank()) +
+                y = expression("Emissions [kg " * CO[2] * "equiv/" * person%.%year * "]"),
+                fill = ggplot2::element_blank()) +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
