@@ -727,8 +727,12 @@ and technology.
 % https://usa.streetsblog.org/2018/02/15/seattle-cut-car-commuting-downtown-while-adding-60000-jobs/
 % 
 
-\begin{questions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Questions}\index{questions}
+\markright{Questions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{questions}
 
 \item E-commerce deliveries have been increasingly prominent recently. 
       How do deliveries compare to consumers traveling to stores to make purchases?
@@ -924,14 +928,13 @@ and technology.
       How would you respond to people who are preemptively petitioning for a 
       ``right to drive?''
       Are there circumstances where humans \emph{must} have control?
-      
-
 
 \end{questions}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Projects}\index{projects}
+\markright{Projects}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{projects}
