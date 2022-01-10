@@ -21,8 +21,8 @@ The king accepted the wager but lost the game.
 % according to chess.com a match is a series of games.
 A chessboard has eight rows and eight columns, so the king had to pay $2^{64}-1 \;$
 grains (see Section \ref{sec:exp}).
-Rice is seven thousand grains per pound (\char`~ 65 mg each),
-which means the king owed the scholar $1.195 \times 10^{15}$ kg of rice, 
+Rice is seven thousand grains per pound ($\sim$~65~mg each),
+which means the king owed the scholar 1.199~$\times$~10$^{\text{15}}$ kg of rice, 
 % about 12\% of the weight of everything ever produced by the human species [1]. At
 % US\$6.85/bushel, the grain would be worth about 300 trillion dollars, which is (roughly)
 % ten times more money than exists in the world.
@@ -459,7 +459,7 @@ to $16$ every $6.93$ years.
 % \label{fig:exp_old}
 % \end{figure}
 
-<<exp, fig.cap="Exponential growth. When \\mft{y} grows exponentially with time (\\mft{t}) at rate \\mft{r} (for example, \\mft{y} = e$^{\\mft{rt}}$), the value of \\mft{y} doubles every 0.693/\\mft{r} years. In this example, \\mft{r} = 0.1~/year (10~\\%/year), and \\mft{y} doubles every 6.93 years.">>=
+<<exp_old, fig.cap="Exponential growth. When \\mft{y} grows exponentially with time (\\mft{t}) at rate \\mft{r} (for example, \\mft{y} = e$^{\\mft{rt}}$), the value of \\mft{y} doubles every 0.693/\\mft{r} years. In this example, \\mft{r} = 0.1~/year (10~\\%/year), and \\mft{y} doubles every 6.93 years.">>=
 r <- 0.1 # 1/year
 exp_df <- data.frame(t = seq(0, 29, by = 0.01)) %>%
   dplyr::mutate(
@@ -487,6 +487,28 @@ ggplot2::ggplot(mapping = ggplot2::aes_string(x = "t", y = "y")) +
   ggplot2::geom_line(data = exp_df, colour = mc_title_blue, size = 1) +
 
   ggplot2::labs(x = "t [years]", y = "y") +
+  
+  MKHthemes::xy_theme()
+@
+
+
+<<exp, fig.cap="Rice mass on each square of the chessboard in the king's wager. Nearly all the mass is in the last row of the board (squares 57--64). Pg is petagram; 1 Pg = 10$^{\\text{12}}$~kg.">>=
+chessboard_data <- tibble::tibble(x = 1:64) %>% 
+  dplyr::mutate(
+    y = 2^(x - 1), 
+    m = 0.065 / 1e15 * y   # 65 mg/grain, mass in Pg.
+  )
+  
+chessboard_data %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = x, y = m)) + 
+  ggplot2::geom_hline(yintercept = 0, colour = guide_line_colour, size = guide_line_size, linetype = guide_linetype) +
+  ggplot2::geom_bar(stat = "identity", fill = bar_colour) +
+  
+  ggplot2::scale_x_continuous(limits = c(0, 65),
+                              breaks = c(1, 8, 16, 24, 32, 40, 48, 56, 64)) +
+
+  ggplot2::labs(x = "Chessboard square", 
+                y = "Rice mass [Pg]") +
   
   MKHthemes::xy_theme()
 @
