@@ -496,7 +496,7 @@ to 16 every 6.93 years.
 % @
 % 
 
-<<exp, fig.cap="Rice mass on each square of the chessboard in the king's wager. The last row of the chessboard (squares 57--64) contains nearly all of the rice mass. Pg is petagram; 1 Pg = 10$^{\\text{12}}$~kg.">>=
+<<exp, fig.cap="Rice mass on each square of the chessboard in the king's wager. The last row of the chessboard (squares 57--64) contains nearly all of the rice mass. Pg is petagram; 1~Pg = 10$^{\\text{12}}$~kg.">>=
 chessboard_data <- tibble::tibble(x = 1:64) %>% 
   dplyr::mutate(
     y = 2^(x - 1), 
