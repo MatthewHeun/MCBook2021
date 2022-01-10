@@ -492,9 +492,16 @@ challenges.
 <<PowerDensity, fig.cap="Power densities of several electricity generating technologies. \\emph{Source}: \\citet[Figure~2]{Zalk:2018uy}.">>=
 power_densities <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Power_Densities.xlsx"),
                                        sheet = "data to plot") %>%
-  dplyr::arrange(dplyr::desc(`power_density_W/m2`))
+  dplyr::arrange(dplyr::desc(`power_density_W/m2`)) %>%
+  dplyr::mutate(
+    energy_source = dplyr::case_when(
+      energy_source == "Natural gas" ~ "Nat. gas", 
+      energy_source == "Geothermal" ~ "Geoth.", 
+      TRUE ~ energy_source
+    )
+  )
 order <- power_densities$energy_source
-power_densities <- power_densities %>% 
+power_densities <- power_densities %>%
   dplyr::mutate(
     energy_source = factor(energy_source, levels = order)
   )
