@@ -1089,7 +1089,7 @@ uk_coal_extraction %>%
   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
 
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = "UK coal cumulatie production [Gt]") +
+                y = "UK coal cumulative production [Gt]") +
 
   MKHthemes::xy_theme()
 @
