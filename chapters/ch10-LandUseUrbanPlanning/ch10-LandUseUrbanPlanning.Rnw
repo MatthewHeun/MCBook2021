@@ -10,7 +10,6 @@
 
 \epigraph{The truth about a city's aspirations isn't found in its vision. 
 It's found in its budget.}{Brent Toderian}
-%\epigraph{Show me the incentive and I will show you the outcome.}{Charlie Munger}
 
 The previous three chapters described sustainability challenges related to 
 dwellings, transportation, and food.
@@ -48,17 +47,9 @@ How can we transition to more sustainable arrangements?
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Land and how it is used}
+\section{Land use (demand)}
 \label{sec:land_and_how_it_is_used}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \begin{figure}
-% \centering
-% \includegraphics[width=0.75\linewidth]{chapters/ch10-LandUseUrbanPlanning/figures/Bloomberg2018landuse.jpg}
-% \caption[USA land use.]{Major categories of how US land is used.}% ~\citep[Fig.~1]{USlanduse}.
-% \label{fig:USlanduse_old}
-% \end{figure}
-
 
 <<USlanduse, fig.cap="Land use in the U.S. The biggest changes over time are decreasing Grazed forest area and increasing Rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. (``Grassland'' is not used for crops.) \\emph{Source}: \\citet{USDA:2021uq}.">>=
 us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Land_Uses.xlsx"),
@@ -107,26 +98,7 @@ us_land_use %>%
   MKHthemes::xy_theme()
 @
 
-
-% Of the three (land, labor, capital) means of production, 
-% only land is generally considered to be a fixed quantity.
-% This is approximately true. 
-% There are ways of creating more land. 
-% The Dutch system of building dykes to reclaim land from the ocean is one example. 
-% Planetary colonization could be another. 
-% Structures such as multi-story parking garages, high-rise apartment buildings, 
-% and off-shore oil platforms are also ways to 
-% multiply the {\i effective use} of the land. 
-% % Change in efficiency. but land is constant. 
-% Techniques that increase agricultural productivity \emph{per acre} 
-% are effectively equivalent to creating more farm land. 
-% The using dykes to reclaim land from the sea, like in the Netherlands,
-% or using fill to create land, like the Palm islands in Dubai,
-% results in \emph{relatively} little additional land.
-% For simplicity, this chapter will treat total land area as a fixed quantity.
-
 Figure~\ref{fig:USlanduse} shows how land is used in the United States. 
-%Although proportions may be different in other economies, the categories are the same. 
 There are 1.9 billion acres in the contiguous 48 states and
 2.3 billion acres in all 50 states.
 Of this total, agriculture takes the largest share, with grazing (34\%), 
@@ -136,8 +108,6 @@ soybeans (20\%), and cotton (10\%). That leaves just 8\% for all other crops.
 In contrast, the area where we live and work % (red/pink areas)
 is a relatively small
 69.4 million acres (3.65\%).
-% One key observation from Figure~\ref{fig:USlanduse} is that the U.S. is relatively 
-% sparsely populated.
 The U.S. is relatively sparsely populated.
 
 Land use changes over time and tracking those changes is important for understanding
