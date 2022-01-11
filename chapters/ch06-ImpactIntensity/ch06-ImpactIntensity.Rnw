@@ -55,7 +55,7 @@ the types, quantities, and ways of processing resources.
 \mft{X} is defined as
 %
 \begin{equation}\label{eq:X}
-  \mft{X} = \frac{\textrm{total environmental impacts produced}}{\textrm{total resources extracted}} \; .
+  \mft{X} \equiv \frac{\textrm{total environmental impacts produced}}{\textrm{total resources extracted}} \; .
 \end{equation}
 %
 Note that ``impacts'' are plural.
