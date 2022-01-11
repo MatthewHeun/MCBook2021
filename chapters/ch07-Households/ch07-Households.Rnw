@@ -25,9 +25,8 @@ agriculture (Chapter~\ref{chap:agriculture}), and
 land use and urban planning (Chapter~\ref{chap:land_use_urban_planning})
 are the subjects of the next three chapters.
 The structure of each chapter in Part \ref{part:sustainability_challenges} is similar:
-First, the demand for services or energy services in a particular area is discussed. 
-Next, the drivers for that demand are covered.
-Following, sustainability challenges in that area are examined.
+First, quantity and sources of demand in that particular area are discussed.
+Next, sustainability challenges in that area are examined.
 Finally, routes for a transition to a more-sustainable world are considered.
 
 The topic of this chapter, households,
@@ -57,20 +56,24 @@ In households, sustainability meets everyday life.
 
 \end{mcframe}
 
-This chapter focuses on demand for energy in households, 
-in keeping with the prime example of the book,
-energy consumption and carbon emissions. 
-Thus, the first subsection below covers energy demand in households.
-Drivers of household energy demand are discussed thereafter.
-Next, sustainability challenges associated with CO$_2$ emissions 
-from household activities are described.
-Sustainability transitions related to households round out the chapter.
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Demand for energy in households}
 \label{sec:energy_demand_households}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Many resources are demanded by households, 
+both the people who occupy a dwelling and 
+the systems that operate within the dwelling. 
+Example resources demanded by households include
+water, building materials, chemicals, food,
+electricity, and natural gas.
+Each resource demanded by households is an
+entry in the list of resources in the 
+\mft{R} term of the IPARX equation (Equation~\ref{eq:IPARX}). 
+This chapter focuses on demand for energy in households, 
+in keeping with the prime example of the book,
+energy consumption and carbon emissions. 
 
 Dwellings are important for sustainability, 
 in part because they are sites of energy consumption.
@@ -91,7 +94,7 @@ far beyond the walls of each abode.
 However, per-dwelling energy consumption has been rather flat from the 1970 onward.
 Increasing energy efficiency of appliances and improvements to building envelopes 
 (roof, walls, windows, and base of a dwelling)
-have offset rising home sizes.
+have been offset by rising home sizes.
 That said, \emph{total} residential energy consumption has increased,
 due to an increase in the total number of dwellings.
 Figures~\ref{fig:TotalHouseholdEnergyConsumption}
@@ -192,7 +195,7 @@ for the average U.S.\ residence.
 The end uses in Figure~\ref{fig:average_residential_energy}
 can be aggregated to three factors that affect energy demand by households.
 Space heating and cooling
-comprise 54.4\% of all energy consumption in dwellings.
+make up 54.4\% of all energy consumption in dwellings.
 Hygiene (including water heating and laundry)
 consumes 21.9\% of energy consumption in dwellings.
 Lighting constitutes 4.9\% of total energy use in dwellings.
@@ -247,8 +250,23 @@ lighting.
 Figure~\ref{fig:NewHousingSize} shows the average floor space \index{households!floor space}
 of new single-family homes in the United States between 1971 and 2019.
 The general trend is toward larger homes over time, with recent declines.
+Figure~\ref{fig:EnergyConsAndHomeSize} shows that
+energy consumption increases with home size.\index{households!energy consumption}
+Figure~\ref{fig:PersonsPerHousehold} 
+shows that the number of occupants per dwelling
+is falling over time.
+
 Taken together, Figures~\ref{fig:EnergyConsAndHomeSize} and~\ref{fig:NewHousingSize}
 would suggest that residential energy consumption per dwelling is rising through time.
+However, Figure~\ref{fig:AverageHouseholdEnergyConsumption} shows that
+per-household energy consumption is falling over time.
+Improved insulation and 
+higher system efficiencies (furnaces and other appliances)
+are reducing energy consumption per housing unit, 
+despite increasing size.
+That said, more homes with fewer occupants are driving the total U.S.\
+household energy consumption up slightly from 1970--today; 
+see Figure~\ref{fig:TotalHouseholdEnergyConsumption}.
 
 
 <<NewHousingSize, fig.cap="Average size of newly-constructed U.S.\\ homes. \\emph{Source}: \\citet{United-States-Census-Bureau:2021tq}.">>=
@@ -264,12 +282,6 @@ average_housing_sizes %>%
 
    MKHthemes::xy_theme()
 @
-
-
-Figure~\ref{fig:EnergyConsAndHomeSize} shows the trend of
-energy consumption with respect to home size and
-confirms intuition that dwelling size is positively correlated 
-with energy consumption.\index{households!energy consumption}
 
 
 <<EnergyConsAndHomeSize, fig.cap="Average annual U.S.\\ household energy consumption by home size in 2015. Biomass (wood), coal, district steam, and solar thermal are excluded. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
@@ -302,12 +314,6 @@ household_energy_by_size %>%
    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90), 
                   axis.ticks.x = ggplot2::element_blank())
 @
-
-
-One might think that increasing dwelling sizes are driven by more occupants per dwelling.
-However, Figure~\ref{fig:PersonsPerHousehold} 
-shows that the number of occupants per dwelling
-is falling over time.
 
 
 <<PersonsPerHousehold, fig.cap="Average number of persons per U.S.\\ household. \\emph{Source}: \\citet{United-States-Census-Bureau:2020vd}.">>=
@@ -364,8 +370,8 @@ Homes at high latitudes require heating.
 Homes at low latitudes are often fitted with air conditioning.
 Both heating and air conditioning require energy and, 
 in today's fossil-fuel-powered world,
-cause CO$_2$ to be emitted.
-(See Section~\ref{sec:heating_and_cooling} below.)
+cause CO$_2$ to be emitted;
+see Section~\ref{sec:heating_and_cooling}.
 The climate of mid-latitude locations
 can mean \emph{both} heating and air-conditioning are necessary,
 potentially increasing the energy required to operate homes in those locations.
@@ -398,9 +404,9 @@ to enable work, play, dining, and entertainment.
 Figure~\ref{fig:average_residential_energy} shows that
 on average across the U.S.
 thermal comfort\index{thermal comfort}
+(that is, Space heating and Space cooling)
 is the purpose of 
-by 54.4\% of all residential energy consumption
-(Space heating and space cooling).
+54.4\% of all residential energy consumption.
 
 
 %..............................
@@ -412,8 +418,8 @@ The purpose of a building envelope
 (roof, walls, windows, and base of a dwelling)
 is to shield occupants from outside weather and
 to maintain dry and comfortable conditions indoors.
-Windows\index{windows} are an important part of any building's envelope.
-They provide natural illumination while shielding occupants from weather.
+Windows\index{windows} are an important part of any building's envelope, because
+the provide natural illumination.
 The ideal building envelope would
 eliminate both heat loss in the winter and heat gain in the summer via
 perfect insulation and
