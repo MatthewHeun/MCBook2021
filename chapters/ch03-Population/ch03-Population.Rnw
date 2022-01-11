@@ -165,11 +165,6 @@ ggplot2::ggplot() +
                                             y = total_population_billions, 
                                             fill = Country)) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
-  # ggplot2::geom_line(data = population_fit,
-  #                    mapping = ggplot2::aes(x = Year, y = Fit),
-  #                    size = curve_fit_size, 
-  #                    colour = curve_fit_colour, 
-  #                    linetype = curve_fit_linetype) +
   ggplot2::labs(x = ggplot2::element_blank(),
                 y = "World population (P) [billions]",
                 fill = ggplot2::element_blank()) +
