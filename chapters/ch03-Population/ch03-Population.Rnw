@@ -133,7 +133,7 @@ population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datas
                                  sheet = "data to plot")
 region_pop <- population %>%
   dplyr::filter(
-    Country %in% c("Asia", "Europe", "Latin America", "North America", "Australia", "Africa", "World")
+    Country %in% c("Asia", "Europe", "Latin America", "North America", "Oceania", "Africa", "World")
   ) %>%
   dplyr::mutate(
     total_population_billions = total_population / 1e9,
@@ -154,7 +154,7 @@ ggplot2::ggplot() +
   ggplot2::geom_area(data = region_pop %>%
                        dplyr::filter(Country != "World", Year >= 1800) %>%
                        dplyr::mutate(
-                         Country = factor(Country, levels = c("Australia", 
+                         Country = factor(Country, levels = c("Oceania", 
                                                               "North Am.",
                                                               "Latin Am.",
                                                               "Europe", 
