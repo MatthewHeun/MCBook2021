@@ -336,11 +336,11 @@ could be accomplished with less fuel consumption
 for transportation.
 Transitioning to a sustainable energy system
 built upon renewable energy generation will reduce
-the impact intensity of resources (\Xparen{} in Equation~\ref{eq:IPARX}), 
+the impact intensity of resources (\mft{X} in Equation~\ref{eq:IPARX}), 
 because consumption of renewable energy
-(e.g., electric vehicles run by solar electricity)
+(for instance, an electric vehicles run by solar electricity)
 has less environmental impact than consumption of 
-non-renewable energy (e.g., gasoline).
+non-renewable energy (such as gasoline).
 
 
 %++++++++++++++++++++++++++++++
@@ -898,14 +898,18 @@ and technology.
       Where and how do you wish to travel?
       Will you try to offset your carbon emissions (if any) and how?
       
-\item Consider the infrastructure choice of a vehicle ferry versus a bridge. 
+\item Consider the infrastructure choice of a ferry versus a bridge. 
       What is the objective function? Is it minimum cost per year to deliver a 
       set amount of service? (Given what set of assumptions? If you build it, 
       they will come!) 
-      Is it fastest service? For a ferry service you are acquainted with (you 
+      Is it fastest service? 
+      For a ferry service you are acquainted with (you 
       might have to do a little research) how would you make the decision?
-      What stakeholders are you considering? Do sustainability considerations,
+      What stakeholders are you considering? 
+      Do sustainability considerations,
       such as the IPARX equation, factor into your decision-making process?
+      Did you pick a vehicle ferry or passenger ferry? How might your decision
+      change if you had picked the other one?
       
 \item Driving has long been a competitive sport. One lesser-known form of 
       competition is ``hypermiling,'' which attempts to maximize fuel efficiency
