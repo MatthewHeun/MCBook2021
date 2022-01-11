@@ -225,7 +225,7 @@ Currently, agriculture accounts for approximately 70\% of human fresh water use.
 \paragraph{Fertilizers and agrichemicals} 
 %..............................
 
-The most common fertilizers are contain
+The most common fertilizers contain
 nitrogen, phosphorous, and potassium. 
 Agrichemicals include herbicides, pesticides, and fungicides. 
 To the extent that any of these are derived from nonrenewable feedstocks, such as 
@@ -248,7 +248,7 @@ to harvesting, storage, transportation, cooking, and disposal of food.
 Because food is \emph{humanity's} energy source, we should consider the energy
 return on investment (EROI)\index{EROI} of food (see Section~\ref{sec:masterE}).
 An EROI greater than one indicates that food is an energy source for humans, that is,
-we obtain more energy from the food that it took to get the food.
+we obtain more energy from the food than it took to get the food.
 An EROI less than one indicates we spend more energy getting the food than we get 
 \emph{from} the food. 
 However, since we have to have food, it is worth spending energy on.
@@ -477,8 +477,8 @@ food_emissions_total %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = `Food type`, y = `kg CO2 eq/capita/year`)) +
   ggplot2::geom_bar(stat = "identity", fill = bar_colour) +
   ggplot2::labs(x = ggplot2::element_blank(),
-       y = expression("Emissions [kg " * CO[2] * "equiv/" * person%.%year * "]"),
-       fill = ggplot2::element_blank()) +
+                y = expression("Emissions [kg " * CO[2] * "equiv/" * person%.%year * "]"),
+                fill = ggplot2::element_blank()) +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())

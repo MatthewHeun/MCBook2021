@@ -55,13 +55,13 @@ the types, quantities, and ways of processing resources.
 \mft{X} is defined as
 %
 \begin{equation}\label{eq:X}
-  \mft{X} = \frac{\textrm{total environmental impacts produced}}{\textrm{total resources extracted}} \; .
+  \mft{X} \equiv \frac{\textrm{total environmental impacts produced}}{\textrm{total resources extracted}} \; .
 \end{equation}
 %
 Note that ``impacts'' are plural.
 Extracting and consuming all the resources necessary to make the economy run 
 will have effects on air, water, species diversity, land, and human communities.
-(If you are comfortable with matrix notation, \mft{X} can be though of as a matrix with
+(If you are comfortable with matrix notation, \mft{X} can be thought of as a matrix with
 impacts in columns and resources in rows.)
 
 
@@ -1212,7 +1212,9 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
         required to implement a WWS energy supply? 
         
   \item Derive Equation~\ref{eq:IPARX_rate} from Equation~\ref{eq:IPARX}.
-        You will use $(1 + r_1)(1 + r_2) \approx r_1 + r_2 + 1$ for $r_1, r_2 <\!\!\!< 1$
+        You will use (1 + r$_\text{1}$)(1 + r$_\text{2}$) 
+        $\approx$ r$_\text{1}$ + r$_\text{2}$ + 1 
+        when \mft{r}$_\text{1}$ <\!\!< 1 and \mft{r}$_\text{2}$ <\!\!< 1
         in the derivation.
   
   \item Verify the calculations in Equation~\ref{eq:IPARX_rate_with_numbers}

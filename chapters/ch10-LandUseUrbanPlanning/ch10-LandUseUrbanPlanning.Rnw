@@ -127,7 +127,7 @@ The source of land for urban growth is principally agricultural land.
 However, to feed a growing population, \emph{net} agricultural land has had to 
 increase. 
 The increase comes, primarily, from forests being converted to agriculture.
-Simultaneously, there there is also some (formerly) agricultural land being
+Simultaneously, there is also some (formerly) agricultural land being
 reforested.
 The net gain for agricultural land means that \emph{more} forests are cleared
 than the amount of agricultural land that is being reforested.
@@ -457,6 +457,38 @@ However, when changes are necessary, often the multiple constraints of urban env
 make upgrading infrastructure costly and difficult.
 We hope you agree that the field of urban planning is full of important and exciting
 challenges.
+
+
+<<PowerDensity, fig.cap="Power densities of several electricity generating technologies. \\emph{Source}: \\citet[Figure~2]{Zalk:2018uy}.">>=
+power_densities <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Power_Densities.xlsx"),
+                                       sheet = "data to plot") %>%
+  dplyr::arrange(dplyr::desc(`power_density_W/m2`)) %>%
+  dplyr::mutate(
+    energy_source = dplyr::case_when(
+      energy_source == "Natural gas" ~ "Nat. gas", 
+      energy_source == "Geothermal" ~ "Geoth.", 
+      TRUE ~ energy_source
+    )
+  )
+order <- power_densities$energy_source
+power_densities <- power_densities %>%
+  dplyr::mutate(
+    energy_source = factor(energy_source, levels = order)
+  )
+
+power_densities %>%
+  ggplot2::ggplot(mapping = ggplot2::aes(x = energy_source, y = `power_density_W/m2`)) +
+  ggplot2::geom_hline(yintercept = 0, 
+                      size = guide_line_size, 
+                      colour = guide_line_colour, 
+                      linetype = guide_linetype) + 
+  ggplot2::geom_bar(stat = "identity", fill = bar_colour) + 
+  
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = expression("Power density [" * W/m^2 * "]")) +
+  
+  MKHthemes::xy_theme()
+@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

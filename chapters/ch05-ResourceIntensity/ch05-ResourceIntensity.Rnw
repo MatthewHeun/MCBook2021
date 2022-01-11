@@ -434,7 +434,7 @@ to pose no problems before remediation technologies can be invented and deployed
 at scale to dispose of the wastes.
 A time horizon is needed for evaluating the weak sustainability criterion,
 typically 50 years.
-Thus, extraction of a resource is weakly sustainability so long as
+Thus, extraction of a resource is weakly sustainable so long as
 the remaining stock is sufficient to last 50 years at today's extraction rate
 (and, possibly expected future extraction rates).
 And emission of wastes is weakly sustainable so long as 
@@ -1080,8 +1080,8 @@ uk_coal_extraction %>%
 The cumulative production of a limited resource follows a logistic curve,
 with an inflection point (from concave upward to concave downward)
 at the production peak
-and leveling toward the end.
-(See Figure~\ref{fig:UK_coal_logistic}.)
+and leveling toward the end;
+see Figure~\ref{fig:UK_coal_logistic}.
 
 <<UK_coal_logistic, fig.cap="UK coal logistic curve. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv}, 1829--2009; own calculations, 2010--2020.">>=
 uk_coal_extraction %>%
@@ -1089,7 +1089,7 @@ uk_coal_extraction %>%
   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
 
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = "UK coal cumulatie production [Gt]") +
+                y = "UK coal cumulative production [Gt]") +
 
   MKHthemes::xy_theme()
 @
@@ -1247,10 +1247,10 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
 
   \item Consider a carbon tax on commercial transportation.
         Is such a tax a reduction in affluence (Chapter~\ref{chap:affluence})
-        because the same goods you used to purchase now cost more?
+        because the same goods you previously purchased now cost more?
         Or would you view the tax as a enriching your natural capital by
         incentivizing a shift to carbon-free forms of energy (thereby providing
-        you with all the benefits of a stronger ecosystem; see Question Q2.7)?
+        you with all the benefits of a stronger ecosystem; see Q2.7)?
         What beliefs or values inform your answer?
         How might such an evaluation be extended from the personal to a national
         or global scale?

@@ -68,7 +68,7 @@ Sustainability transitions related to households round out the chapter.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Demand for energy in dwellings}
+\section{Demand for energy in households}
 \label{sec:energy_demand_households}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -186,11 +186,6 @@ average_household_energy_consumption %>%
 @
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Drivers of household energy consumption}
-\label{sec:household_energy_drivers}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 Figure~\ref{fig:average_residential_energy} shows 
 proportions of end-use energy consumption\index{energy consumption!residential}
 for the average U.S.\ residence.
@@ -239,11 +234,10 @@ hygiene, and
 lighting.
 
 
-%++++++++++++++++++++++++++++++
-\subsection{Size and location}
+%------------------------------
+\subsubsection{Size and location}
 \label{sec:size_and_location}
-%++++++++++++++++++++++++++++++
-
+%------------------------------
 
 %..............................
 \paragraph{Size} 
@@ -377,10 +371,10 @@ can mean \emph{both} heating and air-conditioning are necessary,
 potentially increasing the energy required to operate homes in those locations.
 
 
-%++++++++++++++++++++++++++++++
-\subsection{Heating and cooling}
+%------------------------------
+\subsubsection{Heating and cooling}
 \label{sec:heating_and_cooling} \index{households!heating and cooling}
-%++++++++++++++++++++++++++++++
+%------------------------------
 
 In most locations,
 daily and seasonal temperature variations are larger
@@ -456,10 +450,10 @@ Most air conditioners consume electricity to perform their cooling function,
 causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants. 
 
 
-%++++++++++++++++++++++++++++++
-\subsection{Hygiene}
+%------------------------------
+\subsubsection{Hygiene}
 \label{sec:hygiene}\index{hygiene}
-%++++++++++++++++++++++++++++++
+%------------------------------
 
 Dwellings consume significant energy and water
 for showers, dish washers, toilets, and clothes washers and dryers.
@@ -478,10 +472,10 @@ Figure~\ref{fig:average_residential_energy} shows that hygiene
 of U.S.\ final energy consumption in 2015.
 
 
-%++++++++++++++++++++++++++++++
-\subsection{Lighting}
+%------------------------------
+\subsubsection{Lighting}
 \label{sec:lighting}
-%++++++++++++++++++++++++++++++
+%------------------------------
 
 Indoor lighting provides illumination for rooms,
 typically by consuming electricity and emitting CO$_2$ if fossil-fuel sources are used.
@@ -922,7 +916,7 @@ use natural light to reduce the need for artificial indoor lighting.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Summary}
+\section{Summary}
 \label{sec:household_summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -953,6 +947,7 @@ Changing society-wide behavior means manipulating prices---of goods, or energy, 
 
 Chapter~\ref{chap:personal_action} provides additional concrete suggestions
 for making homes and apartments more sustainable.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
