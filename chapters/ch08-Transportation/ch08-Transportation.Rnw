@@ -257,6 +257,7 @@ the first mile problem, and
 particulate matter (PM) and
 CO$_2$ emissions from burning fossil fuels.
 
+\paragraph{The last mile}
 A significant challenge to higher occupancy cars and higher capacity trucks
 is the \emph{last mile problem}~\cite{World-Economic-Forum:2020wf}\index{last mile problem},
 the expensive and time-intensive transport of goods
@@ -294,6 +295,7 @@ last_mile %>%
                  axis.ticks = ggplot2::element_blank())
 @
 
+\paragraph{The first mile}
 Another sustainability challenge for transport is the \emph{first mile problem}\index{first mile problem}
 for mass transit.
 In low-population-density areas, 
@@ -302,6 +304,7 @@ expensive in both monetary and energy terms.
 The first mile problem is reduced in urban areas with high population density, 
 especially if commuters can walk or bike to bus, train, or subway stations.
 
+\paragraph{Particulate matter}
 A third sustainability challenge associated with transport is 
 particular matter (PM\index{particulate matter}). 
 Concerns about the effects of PM
@@ -323,6 +326,7 @@ Global SO$_2$ emissions from transport peaked about 1990, and
 global NO$_x$ emissions peaked around 2018. 
 Global ammonia emissions, a key contributor to PM, continues to grow, however.
 
+\paragraph{Greenhouse gas emissions}
 The fourth sustainability challenge of transport is greenhouse gas emissions.
 Figure~\ref{fig:transport_GHG_emissions} shows trends of CO$_2$ transportation emissions by mode
 over time.
