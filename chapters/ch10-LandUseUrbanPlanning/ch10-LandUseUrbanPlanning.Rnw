@@ -519,6 +519,9 @@ power_densities %>%
   MKHthemes::xy_theme()
 @
 
+Figure~\ref{fig:PowerDensity} shows the land use requirements for different forms of
+energy. 
+
 
 %+++++++++++++++++++++++++++++++
 \subsection{Sparing and sharing}
