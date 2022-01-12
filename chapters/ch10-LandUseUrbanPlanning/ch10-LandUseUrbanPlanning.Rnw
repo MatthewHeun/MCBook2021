@@ -265,6 +265,8 @@ restoration/carbon sequestration.
 
 Therefore, consistent with earlier chapters, the drivers for land use are the 
 terms of the IPARX equation,~\Pparen{},~\Aparen{},~\Rparen{}, and~\Xparen{}.
+**** Have not made the case that \mft{R} and \mft{X} are drivers, have you? ---MKH ****
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Land use sustainability challenges}
@@ -281,6 +283,8 @@ classification:
 agriculture, forest, grass, wetland, settlement, shrubland, sparse, bare, and water.
 Humans altered almost 1\% of total land area per year (22\% in 24 years)
 across all land-use categories.
+
+**** What does ``altered'' mean in previous sentence? ---MKH ****
 
 %++++++++++++++++++++++++++++++
 \subsection{Housing or Urban sustainability}
@@ -316,6 +320,8 @@ out to more marginal land.
 Second, the net effect is deforestation, which results in greenhouse gas emissions.
 Land use and land-use change are an important source of anthropogenic greenhouse gas emissions.
 
+**** End with a sustainability challenge question, similar to Ch7? ---MKH ****
+
 \paragraph{Infrastructure sustainability}
 Urban areas are defined by a relative abundance of public works.
 A rural road might have a drainage ditch beside the road but the road itself
@@ -347,6 +353,9 @@ We will discuss next some of what makes cities valuable and that role that
 transportation plays in making urban areas valuable. *** Basically, the 
 sustainability challenge of the next section is a ``can growth continue forever''-versus-transportation question.
 
+**** How about a sustainability challenge question to end this section on infrastructure? ---MKH ****
+
+
 %++++++++++++++++++++++++++++++
 \subsection{Transportation}
 \label{sec:land_challenges_transportation}
@@ -367,7 +376,7 @@ to visit.
 No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
 afternoon.''
 Rail yards, bus stations, and airports are loud, and often uncomfortable, places to be.
-A desirable, city center is walkable, human scale, and space efficient.
+A desirable city center is pleasant, walkable, human scale, and space efficient.
 Being desirable makes urban areas valuable, which, in turn, creates the tax base 
 to sustain infrastructure. 
 
@@ -480,6 +489,14 @@ we could try to maximize
 biodiversity, wilderness area, air and water quality, or 
 ecosystem services and
 the health of the environment that provides those ecosystem services.
+****
+This doesn't seem like a transition discussion. 
+Maybe move forwad in the chapter. 
+Use the discussion of efficiency to set up the challenges?
+Or use in the introduction to point out the 
+many varied objectives of the use of land? 
+---MKH 
+****
 
 Population density is the other key determiner of urban wealth. 
 It requires both housing and transportation. 
@@ -522,11 +539,28 @@ power_densities %>%
 Figure~\ref{fig:PowerDensity} shows the land use requirements for different forms of
 energy. 
 
+****
+Seems like there are 3 transitoins to be discussed.
+
+Urbanization: changes in land use related to WHERE we live are already happening. See Ch7. How do we manage it?
+
+Agriculture: use fewer chemicals, etc.
+
+Energy:
+If we are going to make an energy transition to renewable sources (WWS, reference Ch5), 
+Figure~\ref{fig:PowerDensity} shows that we will need to devote a lot more land to energy production.
+---MKH
+****
+
+
 
 %+++++++++++++++++++++++++++++++
 \subsection{Sparing and sharing}
 \label{sec:land_efficiency}
 %+++++++++++++++++++++++++++++++
+
+**** Maybe sparing and sharing become a green box? ---MKH ****
+
 
 Many of the ``good'' uses for land are in tension with each other, 
 and the tension between land use for human needs and
