@@ -86,7 +86,7 @@ In contrast, Figure~\ref{fig:tonnekm_by_mode} shows that
 freight transport demand is satisfied by a variety of modes.
 
 
-<<passengerkm_by_mode, fig.cap="U.S.\\ passenger-km of personal transport by mode. ``Intercity'' is rail travel via Amtrak. ``Transit'' is public transit of all types (ferry, subway, bus, etc.). ``Air'' is U.S.\\ domestic air carriers. ``Highway'' is automobile traffic. \\emph{Source}: \\citet{passenger_km}.">>=
+<<passengerkm_by_mode, fig.cap="U.S.\\ passenger-km of personal transport by mode. ``Intercity'' is rail travel via Amtrak. ``Transit'' is public transit of all types (ferry, subway, bus, and others). ``Air'' is U.S.\\ domestic air carriers. ``Highway'' is automobile traffic. \\emph{Source}: \\citet{passenger_km}.">>=
 passenger_km_by_mode <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Passenger_kms.xlsx"), 
                    sheet = "data to plot") %>% 
   tidyr::pivot_longer(cols = -Year, names_to = "mode", values_to = "passkm_millions") %>% 
@@ -137,11 +137,6 @@ tonne_km_by_mode %>%
 
 @
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Drivers of transportation demand}
-\label{sec:drivers_of_transportation_demand}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 At the macro scale, 
 economic activity is a large driver of demand for transport
@@ -203,12 +198,12 @@ daily commuting to work and school and
 travel for business and pleasure.
 For daily work commutes, Figure~\ref{fig:commuter_percentage_by_mode}
 shows the percentage of workers that use each mode of transportation.
-The low share of multi-passenger transportation modes (carpool and mass transit)
+The low share of multipassenger transportation modes (carpool and mass transit)
 indicates that large reductions to energy consumption and CO$_2$ emission could be obtained 
 with a society-wide transition to other commuting modes besides driving alone.
 That said, the fact that commuting behavior has changed little in the years covered by
 Figure~\ref{fig:commuter_percentage_by_mode} indicates that 
-a transition to multi-passenger transportation modes may be difficult to effect.
+a transition to multipassenger transportation modes may be difficult to effect.
 
 
 <<commuter_percentage_by_mode, fig.cap="Percentage of U.S.\\ commutes by mode. Note: ``Taxi'' includes motorcycles and other commuting modes. \\emph{Source}: \\citet{U.S.-DOT-BTS:2019ww}.">>=
@@ -240,8 +235,8 @@ commuter_mode_percentage %>%
 Commercial and industrial demand for transportation services arises from
 delivery of goods (freight) via supply chains
 as shown in Figure~\ref{fig:tonnekm_by_mode}.
-Consumer demand for freight transport services arises from increased online shopping
-in recent years.
+Consumer demand for freight transport services 
+has grown in recent years due to increased online shopping.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
