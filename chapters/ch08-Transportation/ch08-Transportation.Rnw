@@ -80,7 +80,8 @@ and~\ref{fig:tonnekm_by_mode}.
 and freight transport is quantified in tonne-km---different units 
 for different services.)
 Figure~\ref{fig:passengerkm_by_mode} shows that 
-passenger transport demand is fulfilled almost exclusively by ``highway,''
+passenger transport demand is fulfilled almost exclusively by ``highway''
+in the U.S.,
 meaning automobiles travelling on roads.
 In contrast, Figure~\ref{fig:tonnekm_by_mode} shows that 
 freight transport demand is satisfied by a variety of modes.
@@ -138,14 +139,16 @@ tonne_km_by_mode %>%
 @
 
 
+Sources of demand for transportation services can be assessed
+on the macro scale, on the micro scale, and 
+in the commercial and industrial sectors.
+
 At the macro scale, 
-economic activity is a large driver of demand for transport
-(for example, see Figure~\ref{fig:CarbonEmissionsGraph}, which shows
-decreased CO$_2$ emissions during recessions).
+economic activity is a large driver of demand for transport.
 The U.S.\ Bureau of Transportation Statistics (BTS)
 calculates a monthly measure of transportation services 
 output~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}
-called the ``Transportation Services Index'' (TSI),
+called the ``Transportation Services Index'' (TSI),\index{transportation services index}
 which is a weighted and indexed measure of
 freight traffic and passenger transport 
 in the for-hire transportation industries.
@@ -238,6 +241,10 @@ as shown in Figure~\ref{fig:tonnekm_by_mode}.
 Consumer demand for freight transport services 
 has grown in recent years due to increased online shopping.
 
+Having explored demand for transportation services,
+the next section discussed sustainability challenges associated with 
+transport.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Transportation sustainability challenges}
@@ -245,9 +252,59 @@ has grown in recent years due to increased online shopping.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Sustainability challenges arising from transportation include
-both particulate matter (PM) and CO$_2$ emissions
-from burning fossil fuels.
-Concerns about the effects of PM\index{particulate matter}
+the last mile problem, 
+the first mile problem, and
+particulate matter (PM) and
+CO$_2$ emissions from burning fossil fuels.
+
+A significant challenge to higher occupancy cars and higher capacity trucks
+is the \emph{last mile problem}~\cite{World-Economic-Forum:2020wf}\index{last mile problem},
+the expensive and time-intensive transport of goods
+on the last leg of their journey to 
+consumers and businesses.
+Typically, the last leg involves moving goods from a distribution center
+to the purchaser.
+The rise of e-commerce has caused unparalleled growth in last-mile transport
+of freight in recent years. 
+The result is rising energy consumption and
+CO$_2$ emissions from commercial last-mile deliveries.
+Figure~\ref{fig:last_mile} shows percentages of total delivery cost for several parts of a delivery journey, and
+the largest portion is the last mile.
+
+<<last_mile, fig.cap="Percentage of delivery cost by part of journey. \\emph{Source}: Honeywell via \\emph{Business Insider} \\cite{Dolan:2018wj}.">>=
+last_mile <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "LastMile.xlsx"), 
+                   sheet = "data to plot") %>%
+  dplyr::mutate(
+    `Part of journey` = factor(`Part of journey`, levels = c("Last mile delivery", "Line haul", "Sorting", "Collection"))
+  )
+
+last_mile %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = Percentage, fill = `Part of journey`)) + 
+  ggplot2::geom_bar(stat = "identity", width = 1) +
+  ggplot2::coord_polar(theta = "y", start = 0, direction = -1) +
+  ggplot2::geom_text(ggplot2::aes(x = 1.7, label = paste0(Percentage, "%")),
+                     position = ggplot2::position_stack(vjust = 0.5),
+                     colour = "gray50") +
+  viridis::scale_fill_viridis(discrete = TRUE) +
+  ggplot2::labs(x = NULL, y = NULL, fill = NULL) +
+  
+  MKHthemes::xy_theme() +
+  ggplot2::theme(axis.line = ggplot2::element_blank(),
+                 axis.text.x = ggplot2::element_blank(),
+                 axis.ticks = ggplot2::element_blank())
+@
+
+Another sustainability challenge for transport is the \emph{first mile problem}\index{first mile problem}
+for mass transit.
+In low-population-density areas, 
+moving people along the first mile to mass transit stations is 
+expensive in both monetary and energy terms.
+The first mile problem is reduced in urban areas with high population density, 
+especially if commuters can walk or bike to bus, train, or subway stations.
+
+A third sustainability challenge associated with transport is 
+particular matter (PM\index{particulate matter}). 
+Concerns about the effects of PM
 on human health go back millennia, and with good cause.
 PM emissions are ``the main contributor to human health effects 
 [by air pollution] by some margin''~\cite{Fowler2020}.
@@ -262,11 +319,11 @@ Since the mid-twentieth century, air quality in North America, Europe and Japan
 has improved.
 However, emissions in South and East Asia rose in the late twentieth and early 
 twenty-first centuries. 
-Global SO$_2$ emissions peaked about 1990 and global NO$_x$ emissions peaked around
-2018. 
+Global SO$_2$ emissions from transport peaked about 1990, and
+global NO$_x$ emissions peaked around 2018. 
 Global ammonia emissions, a key contributor to PM, continues to grow, however.
 
-
+The fourth sustainability challenge of transport is greenhouse gas emissions.
 Figure~\ref{fig:transport_GHG_emissions} shows trends of CO$_2$ transportation emissions by mode
 over time.
 Passenger cars are the greatest single cause of CO$_2$ emissions from transportation.
@@ -276,7 +333,8 @@ The CO$_2$ emissions peak was likely caused by a combination of factors:
 record-high prices for liquid transportation fuels in the runup to the Great Recession,
 which led drivers to prefer higher-efficiency vehicles, 
 which led to a decline total CO$_2$ emissions, 
-even as delivery of transportation services rose through the 2000s (Figure~\ref{fig:TSI}).
+even as delivery of transportation services rose through the 2000s;
+see Figure~\ref{fig:TSI}.
 
 
 <<transport_GHG_emissions, fig.cap="CO$_2$ emissions from U.S.\\ transportation. ``Maritime'' is ships and boats. ``Small trucks'' are light-duty trucks. ``Large trucks'' are medium- and heavy-duty trucks. \\emph{Source}: \\citet{USEPA:2021uj}.">>=
@@ -320,28 +378,39 @@ to achieve more sustainable passenger and freight transport.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 To improve the sustainability of the modern transportation system,
-two broad options exist: 
+three broad options exist: 
+mode shifting, 
 improving fuel economy and 
 transitioning to sustainable energy sources.
-Improving fuel economy will reduce the 
-energy intensity of economic activity 
-(\:\!\mft{R} in Equation~\ref{eq:IPARX}), 
-because the same economic activity 
-could be accomplished with less fuel consumption
-for transportation.
-Transitioning to a sustainable energy system
-built upon renewable energy generation will reduce
-the impact intensity of resources (\mft{X} in Equation~\ref{eq:IPARX}), 
-because consumption of renewable energy
-(for instance, an electric vehicles run by solar electricity)
-has less environmental impact than consumption of 
-non-renewable energy (such as gasoline).
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Mode shifting}
+\label{sec:mode_shifting}
+%++++++++++++++++++++++++++++++
+
+Mode shifting involves transitioning from personal vehicles to 
+mass transit, biking, or walking.
+Whether mode shifts are possible depends on 
+land use patterns and urban design. 
+Areas with high population density (cities) can be served by economical 
+mass transit systems.
+See Chapter~\ref{chap:land_use_urban_planning} 
+for more details of the sustainability implications 
+of land use and urban planning. 
 
 
 %++++++++++++++++++++++++++++++
 \subsection{Fuel economy}
 \label{sec:transportation_fuel_economy}
 %++++++++++++++++++++++++++++++
+
+Improving fuel economy will reduce the 
+energy intensity of economic activity 
+(\:\!\mft{R} in Equation~\ref{eq:IPARX}), 
+because the same economic activity 
+could be accomplished with less fuel consumption
+for transportation.
 
 Vehicle fuel economy (an example of an efficacy, not an efficiency)
 is usually quantified in distance traveled per volume
@@ -380,7 +449,6 @@ mpg_data %>%
 
   MKHthemes::xy_theme()
 @
-
 
 
 Truck fuel economy has lagged car fuel economy by 20--30\% for decades.
@@ -425,6 +493,11 @@ the occupancy rate of vehicles.
 Similarly for freight transport,
 the simplest way to increase transportation efficiency is to ensure that trucks and trains
 are filled to capacity when delivering freight.
+The benefits of such strategies are evident when using the 
+a transportation service efficacy metric instead of an energy efficiency metric
+to evaluate the effectiveness of transportation services. 
+See page~\pageref{page:efficiency_efficacy} for more details about
+the differences between energy efficiency and energy service efficacy.
 
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -439,49 +512,18 @@ for a fuller discussion of the issues surrounding these concepts.
 \end{mcframe}
 
 
-A significant challenge to higher occupancy cars and higher capacity trucks
-is the \emph{last mile problem}~\cite{World-Economic-Forum:2020wf}\index{last mile problem},
-the expensive and time-intensive transport of goods
-on the last leg of their journey to 
-consumers and businesses.
-Typically, the last leg involves moving goods from a distribution center
-to the purchaser.
-The rise of e-commerce has caused unparalleled growth in last-mile transport
-of freight in recent years. 
-The result is rising energy consumption and
-CO$_2$ emissions from commercial last-mile deliveries.
-Figure~\ref{fig:last_mile} shows percentages of total delivery cost for several parts of a delivery journey, and
-the largest portion is the last mile.
-
-
-<<last_mile, fig.cap="Percentage of delivery cost by part of journey. \\emph{Source}: Honeywell via \\emph{Business Insider} \\cite{Dolan:2018wj}.">>=
-last_mile <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "LastMile.xlsx"), 
-                   sheet = "data to plot") %>%
-  dplyr::mutate(
-    `Part of journey` = factor(`Part of journey`, levels = c("Last mile delivery", "Line haul", "Sorting", "Collection"))
-  )
-
-last_mile %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes(x = "", y = Percentage, fill = `Part of journey`)) + 
-  ggplot2::geom_bar(stat = "identity", width = 1) +
-  ggplot2::coord_polar(theta = "y", start = 0, direction = -1) +
-  ggplot2::geom_text(ggplot2::aes(x = 1.7, label = paste0(Percentage, "%")),
-                     position = ggplot2::position_stack(vjust = 0.5),
-                     colour = "gray50") +
-  viridis::scale_fill_viridis(discrete = TRUE) +
-  ggplot2::labs(x = NULL, y = NULL, fill = NULL) +
-  
-  MKHthemes::xy_theme() +
-  ggplot2::theme(axis.line = ggplot2::element_blank(),
-                 axis.text.x = ggplot2::element_blank(),
-                 axis.ticks = ggplot2::element_blank())
-@
-
-
 %++++++++++++++++++++++++++++++
 \subsection{Transition to sustainable fuels}
 \label{sec:fuel_transition}
 %++++++++++++++++++++++++++++++
+
+Transitioning to a sustainable energy system
+built upon renewable energy generation will reduce
+the impact intensity of resources (\;\!\mft{X} in Equation~\ref{eq:IPARX}), 
+because consumption of renewable energy
+(for instance, an electric vehicles run by solar electricity)
+has less environmental impact than consumption of 
+non-renewable energy (such as gasoline).
 
 Another way to improve the sustainability of modern transportation is to
 transition away from fossil fuels\index{fossil fuels}
@@ -490,7 +532,7 @@ thereby reducing the harmful environmental effects of fossil fuel combustion.
 Two solutions are often discussed:
 widespread use of biofuels\index{biofuels}
 in internal combustion engine (ICE) vehicles and
-widespread adoption of electric vehicle\index{vehicle!electric} technology.
+widespread adoption of electric-vehicle\index{vehicle!electric} technology.
 
 
 %..............................
@@ -680,47 +722,43 @@ including transport efficacy, biofuels, and electric vehicles.
 Edward Humes, \emph{Door to door: The magnificent, maddening, mysterious world of 
 transportation}, New York: Harper, 2016.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Pithy quotes and cartoons about transportation: \\ 
-\url{www.transportation-planning.com/quotes.html} \\
+\emph{Transportation planning: Thoughts on how we move}, a blog by Roy Symons at
+\url{https://www.transportation-planning.com}. 
+For cartoons and pithy quotes about transport, 
+see \url{https://www.transportation-planning.com/quotes.html}. \\
 
-\noindent Interactive electric vehicle explainer: \\
-\url{ig.ft.com/electric-car} \\
+\noindent Interactive electric vehicle explainer.
+\url{https://ig.ft.com/electric-car} \\
 
-\noindent Who Killed the Electric Car: \\
-\url{en.wikipedia.org/wiki/Who_Killed_the_Electric_Car\%3F} \\
+\noindent \emph{Who Killed the Electric Car},
+a fascinating movie about the the first attempt at electric vehicles in the auto industry.
+\url{https://en.wikipedia.org/wiki/Who_Killed_the_Electric_Car} \\
 
-\noindent 
-\href{https://www.youtube.com/c/RoadGuyRob}{Road Guy Rob} YouTube channel. \\
+\noindent YouTube channel \emph{Road Guy Rob}.
+\url{https://www.youtube.com/c/RoadGuyRob} \\
 
-\noindent
-\href{https://www.pbs.org/pov/watch/takenforaride/}{Taken for a Ride}, a documentary
-about ``General Motors’ role in dismantling street car transportation in the 1930’s, 
+\noindent \emph{Taken for a Ride}, 
+a documentary about ``General Motors’ role in dismantling street car transportation in the 1930’s, 
 and in catapulting the automobile to the center of [U.S.] national culture.'' 
+\url{https://www.pbs.org/pov/watch/takenforaride/} \\
 
-For counterpoint/fact check, see City Beautiful's \href{https://www.youtube.com/watch?v=RnFVBfhpprU}
-{Did GM really kill the streetcar in Los Angeles?} and references therein,
-particularly \href{http://www.1134.org/stan/ul/GM-et-al.html}{GM and the red cars},
-and \href{https://www.youtube.com/watch?v=8yZiW1E4aRE}{Huntington's LA: The History of Pacific Electric}.
-The whole story is a fascinating interplay of economics, land use, transportation, petroleum,
-and technology.
+\noindent For counterpoint/fact check, see City Beautiful's 
+\emph{Did GM really kill the streetcar in Los Angeles?}
+(\url{https://www.youtube.com/watch?v=RnFVBfhpprU})
+and references therein, particularly 
+\emph{GM and the Red Cars} 
+(\url{http://www.1134.org/stan/ul/GM-et-al.html})
+and
+\emph{Huntington's LA: The History of Pacific Electric} 
+(\url{https://www.youtube.com/watch?v=8yZiW1E4aRE}).
+The whole story is a fascinating interplay of economics, land use,
+transportation, petroleum, and technology.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Questions}\index{questions}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%% transportation directly correlates with job opportunities.
-% https://usa.streetsblog.org/2019/11/25/five-lessons-from-seattles-crusade-against-driving/
-% 1. spend more on transit.
-% 2. improve existing service(s), especially buses.
-% 3. make it equitable.
-% 4. get corporate buy-in.
-% 5. trust the voters (most of the time)
-% https://usa.streetsblog.org/2018/02/15/seattle-cut-car-commuting-downtown-while-adding-60000-jobs/
-% 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}\index{questions}
@@ -927,6 +965,13 @@ and technology.
       How would you respond to people who are preemptively petitioning for a 
       ``right to drive?''
       Are there circumstances where humans \emph{must} have control?
+      
+\item Who should be responsible for CO$_2$ emissions from international trade
+      and international travel?
+      The manufacturing country of goods and the departure country of trips?
+      Or the consuming country of goods and the destination country of trips?
+      What values and assumptions lead to your answer?
+
 
 \end{questions}
 
@@ -992,7 +1037,7 @@ and technology.
       causes problems of a different sort.
       Can you identify arguments both in favor of and opposed to \emph{intentional} problem shifting?
 
-\item Research a variety of virtual reality systems for their sustainability implications.
+\item Research a variety of virtual-reality systems for their sustainability implications.
       How do they increase or decrease resource consumption?
       How do they increase or decrease energy consumption and CO$_2$ emissions?
       What is the potential for virtual reality to reduce future needs for transportation services?
