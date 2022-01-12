@@ -50,6 +50,14 @@ How can we transition to more sustainable arrangements?
 \section{Land use (demand)}
 \label{sec:land_and_how_it_is_used}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Equation~\ref{eq:IPARX} shows two main drivers for our use of land:
+population~\Pparen (Chapter~\ref{chap:population}) and affluence~\Aparen 
+(Chapter~\ref{chap:affluence}).
+The remaining two terms on the right-hand side of Equation~\ref{eq:IPARX}
+are essentially fixed by our technology. 
+The size of the economy is \mft{P}$\times$\mft{A}.
+The economy can grow either by increasing \mft{P} or \mft{A}.
+The next two sections will examine these sources of demand in greater detail.
 
 <<USlanduse, fig.cap="Land use in the U.S. The biggest changes over time are decreasing Grazed forest area and increasing Rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. (``Grassland'' is not used for crops.) \\emph{Source}: \\citet{USDA:2021uq}.">>=
 us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Land_Uses.xlsx"),
@@ -98,93 +106,79 @@ us_land_use %>%
   MKHthemes::xy_theme()
 @
 
+%++++++++++++++++++++++++++++++
+\subsection{Population \Pparen{}}
+\label{sec:land_demand_population}
+%++++++++++++++++++++++++++++++
+
 Figure~\ref{fig:USlanduse} shows how land is used in the United States. 
 There are 1.9 billion acres in the contiguous 48 states and
 2.3 billion acres in all 50 states.
 Of this total, agriculture takes the largest share, with grazing (34\%), 
 forestry (28\%), and crop production (20.6\%) being the three largest uses. 
+**** Can MKH verify these numbers (from the figure)? ****
 The four largest crops in the U.S. are wheat (32\% of total crops), corn (30\%),
-soybeans (20\%), and cotton (10\%). That leaves just 8\% for all other crops.
+soybeans (20\%), and cotton (10\%). 
+That leaves just 8\% for all other crops.
 In contrast, the area where we live and work % (red/pink areas)
 is a relatively small
 69.4 million acres (3.65\%).
 The U.S. is relatively sparsely populated.
 
-Land use changes over time and tracking those changes is important for understanding
-relationships between land use and climate change.
-The data for surveys such as Figure~\ref{fig:USlanduse} are produced from satellite imagery.
-The European Space Agency recently released a dataset for \emph{global} land use over
-a 24-year period (1992-2015) as part of a climate change initiative (CCI).
-The Inter-governmental Panel on Climate Change (IPCC) uses 9 categories for land-use
-classification: 
-agriculture, forest, grass, wetland, settlement, shrubland, sparse, bare, and water.
-Analysis~\cite{Nowosad2019} of the CCI data reveals some trends related to land use change over time.
-First, urban areas are continually growing and, basically, never shrink.
-From 1992--2015, settlements gained 337,000 square kilometers, which is 0.23\%
-of the Earth's land area, or about 0.01\% per year.
+%-----------------------------
+\paragraph{Agriculture}
+%-----------------------------
 
-The source of land for urban growth is principally agricultural land.
-However, to feed a growing population, \emph{net} agricultural land has had to 
-increase. 
-The increase comes, primarily, from forests being converted to agriculture.
-Simultaneously, there is also some (formerly) agricultural land being
-reforested.
-The net gain for agricultural land means that \emph{more} forests are cleared
-than the amount of agricultural land that is being reforested.
-Altogether, humans altered almost 1\% of total land area per year (22\% in 24 years)
-across all land-use categories.
+As mentioned in Chapter~\ref{chap:agriculture}, population drives agriculture,
+and agriculture is \emph{the} most prevalent way we use land.
+As world population has grown, the additional humans have been fed (in part) by
+converting more land to agriculture (and cities) over time.
+
+%-----------------------------
+\paragraph{Urban areas}
+%-----------------------------
+
+Population growth also leads directly to a need for more housing,
+but not just any housing.
+Another trend shown by land-use statistics is greater urbanization.
+The demand for housing is disproportionately for urban housing
+because of a long-term trend of migration to urban areas. 
+Urban areas have much higher GDP per area.
+Thus, pursuit of wealth, that is, a desire for greater affluence~\Aparen{} drives 
+migration from rural areas to urban ones.
+
+%++++++++++++++++++++++++++++++
+\subsection{Affluence \Aparen{}}
+\label{sec:land_demand_affluence}
+%++++++++++++++++++++++++++++++
+In contrast to the needs for food and housing, which are proportional to the population,
+affluence is not directly tied to population.
+That is, any given population could have any level of affluence.
+The economy, as society's metabolism, ingests resource (particularly energy) and
+excretes wastes.
+
+%-----------------------------
+\paragraph{Resources}
+%-----------------------------
 
 Land is the primary source of energy, be it fossil fuel, biomass, or renewable. 
 Wells or mines for fossil fuels are located in a \emph{place}.
 Biomass has to be grown or harvested from a \emph{place} as well.
+For example, about 30\% of the U.S. corn (maize) crop is converted into ethanol
+to be blended with gasoline as a transportation fuel.
 Renewables, such as hydro, solar photovoltaic, and wind power, are also located in
 \emph{places}.
 In particular, for hydro, solar, and wind, correct siting is a key consideration
 for how productive each power type will be.
 Not all locations are suitable for hydro power. Or wind. Or solar.
 
-Land is also a major carbon sink. 
-Forests store a lot of carbon and reforestation is likely necessary for meeting
-climate change limits, which makes continued \emph{deforestation} particularly 
-alarming.
-Land use affects and is affected by climate change. 
-For instance, hotter, drier weather results in more frequent and severe wildfires.
-Those fires destroy forests, release stored carbon, and contribute to further warming.
-
-
-%++++++++++++++++++++++++++++++
-\subsection{Demand for land}
-\label{sec:demand_for_land}
-%++++++++++++++++++++++++++++++
-
-Demand for land is driven by increasing human population~\Pparen{}. 
-(See Equation~\ref{eq:IPARX}.)
-As mentioned in Chapter~\ref{chap:agriculture}, higher population drives agriculture,
-and agriculture is \emph{the} most prevalent way we use land.
-The land-use statistics presented in the section above show humans taking more
-land for agriculture and for cities over time.
-As farm land is degraded, humans move on and create more farm land, primarily 
-from forests, but also from grass lands, shrub land, and sparsely vegetated land.
-Some of the abandoned farm land regrows to forest.
-
-Population growth leads directly to a need for more housing,
-but not just any housing.
-Another trend shown by land-use statistics is greater urbanization.
-The demand for housing is disproportionately for urban housing
-because of a long-term trend of migration to urban areas. 
-Urban areas have much higher GDP per area.
-Thus pursuit of wealth, that is, a desire for greater affluence~\Aparen{} drives 
-migration from rural areas to urban ones.
-
-The other major factor of land use demand is for resources.
-The resources could be energy. 
-For example, about 30\% of the U.S. corn (maize) crop is converted into ethanol
-to be blended with gasoline as a transportation fuel.
-Or, the resources could be material
+In addition to energy, the economy needs material resources
 (see Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use}).
 A major example is timber, which is a key ingredient in construction and many
 consumer goods.
-One of the major causes of deforestation in the Amazon basin, for instance, is 
+Figure~\ref{fig:USlanduse} shows that growing timber is a major U.S.\ use of land.
+
+A major cause of deforestation in the Amazon basin, for instance, is 
 extraction of mineral wealth.
 Thus, there is a strong demand for resources~\Rparen{} to feed an ever-growing global 
 economy.
@@ -196,91 +190,20 @@ a living by farming or mining.
 Unfortunately, the best lands have already been taken; what is available to the 
 \emph{next} farmer or miner is typically of marginally \emph{lower} productivity.
 
-Therefore, consistent with earlier chapters, the drivers for land use are the 
-terms of the IPARX equation,~\Pparen{},~\Aparen{}, and~\Rparen{}.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Land use efficiency}
-\label{sec:land_efficiency}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Because land is a limited resource, 
-it makes sense to maximize the effective use 
-of that resource, whether that's for food, housing, and/or ecosystem services.
-Various metrics (only some related to sustainability)
-could be used to gauge the effectiveness of land use
-in agricultural settings or in cities.
-For agricultural land uses, we could attempt to maximize
-calories per acre, pounds of food per acre, number of people fed per acre, 
-\emph{or} the EROI of agriculture. 
-For urban land uses, we could attempt to
-maximize population density,
-we could minimize metrics related to environmental impact, or 
-we could try to make cities as self-sufficient as 
-possible, for example with respect to food or energy.
-We might try to minimize the amount of transportation emissions within cities.
-Or we might try to maximize urban GDP.
-From a sustainability point of view, 
-we could try to maximize 
-biodiversity, wilderness area, air and water quality, or 
-ecosystem services and
-the health of the environment that provides those ecosystem services.
-
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-\begin{mcframe}[0.90\textwidth](0.85\textwidth)
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Remember former U.S.\ representative Vernon Ehlers:
-``you can never do only one thing.''
-\end{mcframe}
-
-Many of the ``good'' uses for land are in tension with each other, 
-and the tension between land use for human needs and
-preservation of ecosystem services is particularly acute. 
-One way to describe the tension between human use and preservation
-is sparing versus sharing~\cite{Fraanje2018}.
-Land ``sparing'' seeks to minimize the amount of agricultural land needed for humans
-but maximizing the productivity of that land, even if it means input-intensive farming
-that results in less biodiversity \emph{on the farm}. 
-Other land is ``spared'' and set aside for conservation.
-Land ``sharing'' uses agricultural practices that are more eco-friendly to wildlife
-species on the farm, but, because yields aren't as high, requires more total farm land.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Land as a carbon sink}
-\label{sec:carbon_storage_capacity}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%-----------------------------
+\paragraph{Ecosystem services}
+%-----------------------------
 Because energy use and carbon emissions are the prime example in this book,
 and because land plays a crucial role in regulating carbon in the environment,
 this section examines the capacity of the land to absorb and store carbon.
 
-% \begin{figure}
-% \centering
-% \includegraphics[width=0.75\linewidth]{chapters/ch10-LandUseUrbanPlanning/figures/LandCarbonStorage.jpg}
-% \caption[Biome specific carbon storage capacity.]
-% {Specific carbon storage capacity of different biomes.}%~\citep[Fig.~1]{LandCStorage}.
-% \label{fig:LandCStorage}
-% \end{figure}
-
-% Need a source for this figure.
-% https://link.springer.com/chapter/10.1007/978-94-017-3089-1_2 ??
-% https://www.researchgate.net/publication/255994189_Terrestrial_ecosystem_responses_to_global_change_a_research_strategy
-% https://carbon2018.globalchange.gov/chapter/13/
-% https://www.google.com/search?q=willraap.org%3A+carbon+storage&rlz=1C1GCEA_enUS774US774&oq=willraap.org%3A+carbon+storage&aqs=chrome..69i57.5629j0j4&sourceid=chrome&ie=UTF-8
-% THE SOURCE OF THE IMAGE IS THE PDF IN THIS FOLDER. BUT THE LINK TO WILLRAAP.ORG IS NOTHING.
-
-%Need to modify this figure to reconcile with Duke report (see also other publications by the same authors)
-% https://nicholasinstitute.duke.edu/sites/default/files/publications/blue-carbon-report-paper.pdf
-%
-% https://www.google.com/search?q=Murray+Linwood+Pendleton+Jenkins+Sifleet+2011&rlz=1C1GCEA_enUS774US774&oq=Murray+Linwood+Pendleton+Jenkins+Sifleet+2011&aqs=chrome..69i57.34130j0j7&sourceid=chrome&ie=UTF-8
-%
-% include oceans.
-% Note that this data is a specific intensity. That is, it shows how much carbon is 
-% stored per meter squared but we need to know how many square meters of each terrain is available.
-
-
+Land is a major carbon sink. 
+Forests store a lot of carbon and reforestation is likely necessary for meeting
+climate change limits, which makes continued \emph{deforestation} particularly 
+alarming.
+Land use affects and is affected by climate change. 
+For instance, hotter, drier weather results in more frequent and severe wildfires.
+Those fires destroy forests, release stored carbon, and contribute to further warming.
 
 <<CarbonStorage, fig.height=5.5, fig.cap="World carbon storage in various biomes. The top graph shows amount (area) of each biome in the world. The middle graph is carbon density for each biome. The bottom figure is the product of the top and the middle and is the total storage capacity of each biome world wide. ``Temp. forest'' is temperate forests. ``Vegetation'' indicates carbon storage in plant matter. ``Soil'' indicates carbon storage in the soil. For context, Figure~\\ref{fig:CarbonEmissionsGraph} shows annual carbon emissions are 36.4 GtCO$_2$/year (2019), a small fraction of total carbon stored in the biosphere. \\emph{Source}: \\citet{IPCC:2000wv}.">>=
 carbon_storage_world <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Carbon_Storage_World.xlsx"),
@@ -329,7 +252,6 @@ carbon_storage_world %>%
                  axis.ticks.x = ggplot2::element_blank())
 @
 
-
 Figure~\ref{fig:CarbonStorage} shows how much carbon each type of land (biome) can store.
 The teal bars indicate carbon stored as plant life above ground. 
 The purple bars indicate carbon stored in the soil below the surface.
@@ -341,8 +263,60 @@ In contrast, the opportunities for forest and grasslands are quite extensive.
 Projects 10.1 and 10.2 explore technical aspects of forest and grassland 
 restoration/carbon sequestration.
 
-\section{Urban sustainability}
+Therefore, consistent with earlier chapters, the drivers for land use are the 
+terms of the IPARX equation,~\Pparen{},~\Aparen{},~\Rparen{}, and~\Xparen{}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Land use sustainability challenges}
+\label{sec:land_sustainability_challenges}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Land use changes over time and tracking those changes is important for understanding
+relationships between land use and sustainability challenges (for example, climate change).
+The data for surveys such as Figure~\ref{fig:USlanduse} are produced from satellite imagery.
+The European Space Agency recently released a dataset for \emph{global} land use over
+a 24-year period (1992-2015) as part of a climate change initiative (CCI).
+The Inter-governmental Panel on Climate Change (IPCC) uses 9 categories for land-use
+classification: 
+agriculture, forest, grass, wetland, settlement, shrubland, sparse, bare, and water.
+Humans altered almost 1\% of total land area per year (22\% in 24 years)
+across all land-use categories.
+
+%++++++++++++++++++++++++++++++
+\subsection{Housing or Urban sustainability}
+\label{sec:land_challenges_housing}
+%++++++++++++++++++++++++++++++
+
 This section examines the sustainability challenges and characteristics of urban areas.
+
+\paragraph{Urban sprawl}
+Analysis~\cite{Nowosad2019} of the CCI data reveals some trends related to land use change over time.
+One trend is that urban areas are continually growing and, basically, never shrink.
+From 1992--2015, settlements gained 337,000 square kilometers, which is 0.23\%
+of the Earth's land area, or about 0.01\% per year.
+Fundamentally, urban areas can't continue to grow forever.
+If the Earth's surface were 100\% urban, where would we store carbon, grow food, or obtain material
+and energy resources?
+
+The source of land for urban growth is principally agricultural land that is near 
+urban areas.
+However, to feed a growing population, \emph{net} agricultural land has had to 
+increase. 
+The increase comes, primarily, from forests being converted to agriculture.
+Simultaneously, there is also some (formerly) agricultural land being
+reforested.
+The net gain for agricultural land means that \emph{more} forests are cleared
+than the amount of agricultural land that is being reforested.
+
+The conversion of forest to agricultural land to urban environments has several 
+sustainability implications.
+First, there is a net loss of \emph{high-quality} agricultural land.
+As existing farms near cities become urban areas, agricultural activities are pushed 
+out to more marginal land.
+Second, the net effect is deforestation, which results in greenhouse gas emissions.
+Land use and land-use change are an important source of anthropogenic greenhouse gas emissions.
+
+\paragraph{Infrastructure sustainability}
 Urban areas are defined by a relative abundance of public works.
 A rural road might have a drainage ditch beside the road but the road itself
 might not be paved. 
@@ -357,7 +331,45 @@ To be sustainable, an urban area has to be valuable enough to generate the addit
 revenue to pay for its additional infrastructure.
 \href{https://www.strongtowns.org/}{StrongTowns.org} discusses sustainable 
 infrastructure financing in more detail.
-We will discuss next some of what makes cities valuable.
+
+Cities face additional sustainability challenges related to infrastructure lifespan, 
+economic and population growth, changing technology, and fractured ownership.
+The design lifetime of infrastructure may not match its economic lifetime.
+Population growth might make a bridge with a 100-year lifespan inadequate to 
+satisfy transportation demand after only 30 years.
+Wireless communication technologies have rendered wire-based communication much
+less relevant. 
+However, when changes are necessary, often the multiple constraints of urban environments
+make upgrading infrastructure costly and difficult. 
+That is, transitions are especially difficult for cities.
+
+We will discuss next some of what makes cities valuable and that role that 
+transportation plays in making urban areas valuable. *** Basically, the 
+sustainability challenge of the next section is a ``can growth continue forever''-versus-transportation question.
+
+%++++++++++++++++++++++++++++++
+\subsection{Transportation}
+\label{sec:land_challenges_transportation}
+%++++++++++++++++++++++++++++++
+% sprawl makes transport harder
+
+Another way of thinking about the role of transportation in urban environments is
+that transportation creates places worth going to.
+Consider for example a restaurant downtown that serves very tasty food. 
+If you can't get to it, it doesn't matter how good the food is. 
+The potential customer base is restricted to the number of people that can get 
+to the restaurant.
+Access becomes both an economic enabler and an economic multiplier.
+
+% maintaining infrastructure.
+Perhaps ironically, the transportation itself is \emph{not} something people want 
+to visit. 
+No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
+afternoon.''
+Rail yards, bus stations, and airports are loud, and often uncomfortable, places to be.
+A desirable, city center is walkable, human scale, and space efficient.
+Being desirable makes urban areas valuable, which, in turn, creates the tax base 
+to sustain infrastructure. 
 
 In 2018, just 31 counties produced 32\% of U.S. GDP. % https://www.visualcapitalist.com/america-land-use/
 Most of these were around major U.S. metropolitan areas, such as New York City,
@@ -389,8 +401,7 @@ Higher population densities means transportation is less important.
 Lower population densities means transportation is needed even more.
 Figure~\ref{fig:urban_density} illustrates the point by showing the relationship 
 between urban density and transport-related energy consumption.
-Clearly, there is a bilinear tradeoff between urban density and cost of transportation.
-
+Clearly, there is a tradeoff between urban density and cost of transportation.
 
 <<urban_density, fig.cap="Relation between urban density and transport-related energy consumption. \\emph{Source}: \\citet{US_cities}.">>=
 urban_density_data <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Urban_Density.xlsx"),
@@ -421,23 +432,54 @@ urban_density_data %>%
   ggplot2::theme(legend.position = c(0.8, 0.8))
 @
 
+%++++++++++++++++++++++++++++++
+\subsection{Agriculture}
+\label{sec:land_challenges_agriculture}
+%++++++++++++++++++++++++++++++
+soil degradation, aquifer depletion, run off.
+preserving the ``best'' farmland.
 
-Another way of thinking about the role of transportation in urban environments is
-that transportation creates places worth going to.
-Consider for example a restaurant downtown that serves very tasty food. 
-If you can't get to it, it doesn't matter how good the food is. 
-The potential customer base is restricted to the number of people that can get 
-to the restaurant.
-Access becomes both an economic enabler and an economic multiplier.
+As farm land is degraded, humans move on and create more farm land, primarily 
+from forests, but also from grass lands, shrub land, and sparsely vegetated land.
+Some of the abandoned farm land regrows to forest.
 
-Perhaps ironically, the transportation itself is \emph{not} something people want 
-to visit. 
-No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
-afternoon.''
-Rail yards, bus stations, and airports are loud, and often uncomfortable, places to be.
-A desirable, city center is walkable, human scale, and space efficient.
-Being desirable makes urban areas valuable, which, in turn, creates the tax base 
-to sustain infrastructure. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Land use sustainability transitions}
+\label{sec:land_sustainability_improvements}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This chapter began by asking two important questions about land use: how much of 
+each type of land use should we have (that is, an allocation question)? and
+what is the best layout?
+The answer for the allocation question comes down to land use efficiency. 
+How can we adequately meet our needs \emph{as efficiently as possible}?
+
+%+++++++++++++++++++++++++++++++
+\subsection{Land use efficiency}
+\label{sec:land_efficiency}
+%+++++++++++++++++++++++++++++++
+
+Because land is a limited resource, 
+it makes sense to maximize the effective use 
+of that resource, whether that's for food, housing, and/or ecosystem services.
+Various metrics (only some related to sustainability)
+could be used to gauge the effectiveness of land use
+in agricultural settings or in cities.
+For agricultural land uses, we could attempt to maximize
+calories per acre, pounds of food per acre, number of people fed per acre, 
+\emph{or} the EROI of agriculture. 
+For urban land uses, we could attempt to
+maximize population density,
+we could minimize metrics related to environmental impact, or 
+we could try to make cities as self-sufficient as 
+possible, for example with respect to food or energy.
+We might try to minimize the amount of transportation emissions within cities.
+Or we might try to maximize urban GDP.
+From a sustainability point of view, 
+we could try to maximize 
+biodiversity, wilderness area, air and water quality, or 
+ecosystem services and
+the health of the environment that provides those ecosystem services.
 
 Population density is the other key determiner of urban wealth. 
 It requires both housing and transportation. 
@@ -445,19 +487,6 @@ Some of the end-of-chapter discussion questions consider ways to generate
 \emph{desireable} population density. 
 (A prison might have a high population density, that doesn't mean people will
 want to live there.)
-
-Cities face additional sustainability challenges related to infrastructure lifespan, 
-economic and population growth, changing technology, and fractured ownership.
-The design lifetime of infrastructure may not match its economic lifetime.
-Population growth might make a bridge designed to last 100 years inadequate to 
-satisfy transportation demand after only 30 years.
-Wireless communication technologies have rendered wire-based communication much
-less relevant. 
-However, when changes are necessary, often the multiple constraints of urban environments
-make upgrading infrastructure costly and difficult.
-We hope you agree that the field of urban planning is full of important and exciting
-challenges.
-
 
 <<PowerDensity, fig.cap="Power densities of several electricity generating technologies. \\emph{Source}: \\citet[Figure~2]{Zalk:2018uy}.">>=
 power_densities <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Power_Densities.xlsx"),
@@ -491,6 +520,33 @@ power_densities %>%
 @
 
 
+%+++++++++++++++++++++++++++++++
+\subsection{Sparing and sharing}
+\label{sec:land_efficiency}
+%+++++++++++++++++++++++++++++++
+
+Many of the ``good'' uses for land are in tension with each other, 
+and the tension between land use for human needs and
+preservation of ecosystem services is particularly acute. 
+One way to describe the tension between human use and preservation
+is sparing versus sharing~\cite{Fraanje2018}.
+Land ``sparing'' seeks to minimize the amount of agricultural land needed for humans
+but maximizing the productivity of that land, even if it means input-intensive farming
+that results in less biodiversity \emph{on the farm}. 
+Other land is ``spared'' and set aside for conservation.
+Land ``sharing'' uses agricultural practices that are more eco-friendly to wildlife
+species on the farm, but, because yields aren't as high, requires more total farm land.
+
+Improving sustainability means increasing the ``sparing'' (for instance, to combat
+extinction rate) and increasing the ``sharing.'' 
+How can we do both better?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % bonepile
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -503,12 +559,9 @@ power_densities %>%
 % Houston traffic effiency vs. safety: https://www.houstonchronicle.com/news/investigations/article/Houston-s-roads-drivers-are-nation-s-most-12865072.php
 % https://www.vox.com/2015/2/18/8056039/houston-transit-reimagining
 % Single family zoning makes housing more expensive: https://cityobservatory.org/1he-week-observed-2021_july16/
-% Africa's Great Green Wall (Simon Whistler mgeaprojects): https://www.youtube.com/watch?v=ZABIV7RhY2o
 % Automakers invented jaywalking: https://www.youtube.com/watch?v=H_3c3wqPsJo
-% happiness = short commute https://www.youtube.com/watch?v=5Am-6-jzR68
-% More on that topic: https://uwaterloo.ca/recreation-and-leisure-studies/crunched-time-commuting-linked-lower-life-satisfaction
-% tracking down the original source: https://www.google.com/search?q=World+Leisure+Journal%2C&rlz=1C1GCEA_enUS774US774&oq=World+Leisure+Journal%2C&aqs=chrome..69i57&sourceid=chrome&ie=UTF-8
-%
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
