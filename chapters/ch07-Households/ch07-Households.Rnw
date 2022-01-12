@@ -432,9 +432,10 @@ windows that neither conduct heat nor pass radiation.
 %..............................
 
 Heating systems
-(often furnaces\index{furnace}, but also boilers\index{boiler} and heat pumps\index{heat pump})
+(often furnaces\index{furnace}, but also boilers\index{boiler}, heat pumps\index{heat pump}, 
+and electric radiant in-floor heating\index{radiant heat})
 provide space heating,
-often from an out-of-the-way location in the dwelling, such as the basement.
+usually from an out-of-the-way location in the dwelling, such as the basement.
 Heating systems convert a fuel 
 (typically natural gas\index{natural gas} or heating oil\index{heating oil} for furnaces and boilers, and
 electricity for heat pumps)
@@ -474,7 +475,7 @@ further CO$_2$ emissions occur.
 Hygiene is a significant 
 cause of energy consumption in the U.S. 
 Figure~\ref{fig:average_residential_energy} shows that hygiene
-(Water heating and Laundry) comprised 21.9\%
+(Water heating and Laundry) used 21.9\%
 of U.S.\ final energy consumption in 2015.
 
 
@@ -493,7 +494,7 @@ several hours beyond daylight hours.
 
 Artificial interior lighting is a significant 
 cause of electricity consumption in most parts of the world. 
-Figure~\ref{fig:average_residential_energy} shows that lighting comprised 4.9\%
+Figure~\ref{fig:average_residential_energy} shows that lighting accounted for 4.9\%
 of U.S.\ final energy consumption in 2015.
 
 
@@ -594,7 +595,8 @@ solar energy incident upon the window.
 SHGC values range from 0 to 1,
 and lower SHGC values indicate better insulative properties.
 A sustainability challenge associated with the building envelope
-is ``how do we design livable and enjoyable spaces that are energy efficient?''
+is ``how do we design livable and enjoyable spaces that are 
+energy efficient and affordable?''
 
 An interesting tradeoff exists between energy (and CO$_2$) embodied in structures
 and energy consumed in daily life.
@@ -673,9 +675,11 @@ In other parts of the U.S., a minimum SEER value of 13 BTU/W$\cdot$hr is mandate
 %**** Find a reference for these SEER numbers. ****
 % See email.
 Higher efficiency is normally associated with higher purchase price.
-A sustainability challenge associated with air conditioners is
+Sustainability challenges associated with air conditioners include
 ``how can we encourage home builders and home owners to install 
 high-efficiency units, despite high initial cost?''
+and 
+``how can we manufacture energy-efficient air-conditioners inexpensively?''
 
 
 %++++++++++++++++++++++++++++++
@@ -689,7 +693,7 @@ a measure of energy required to deliver warm water
 (in the first hour for tank-style water heaters and as a rate for tankless water heaters).
 Water heaters are binned by size (very small, low, medium, and high) and
 rated within each bin.
-High-efficiency water heaters are more expensive. 
+High-efficiency water heaters tend to be more expensive. 
 So a sustainability challenge that emerges from water heating is
 ``how can we encourage home builders and home owners to install 
 high-efficiency units, despite high initial cost?''
@@ -700,7 +704,7 @@ high-efficiency units, despite high initial cost?''
 \label{sec:lighting_challenges}
 %++++++++++++++++++++++++++++++
 
-Artificial lighting can be provided by any number of technologies.
+Artificial lighting can be provided by many technologies.
 Today, LED lamps use one-eighth the energy of equivalent incandescent lamps.
 In addition, LED lamps can last up to 10 times longer than incandescent lights.
 So operating costs of LED lamps are significantly less than incandescent lamps.
@@ -709,7 +713,7 @@ of LED lamps by nearly two orders of magnitude
 compared to incandescent bulbs.
 
 That said, the purchase price of 
-a high-efficiency lamp is higher than the purchase price of an incandescent lamp. 
+a high-efficiency lamp can be higher than the purchase price of an incandescent lamp. 
 A sustainability challenge associated with lighting is
 ``how can we encourage home owners to replace incandescent lamps with LED lamps,
 despite higher initial cost?''
@@ -723,8 +727,8 @@ the effectiveness of a device is better described by a service efficacy than an 
 Efficiencies are ratios of energies, typically energy output divided by energy input.
 In contrast, efficacies are ratios of energy service output (not quantified in energy units) to energy input.
 
-Lamps can emit both visible and non-visible radiation.
-But (most) people don't buy lamps for their ability to emit non-visible radiation.
+Lamps can emit both visible and nonvisible radiation.
+But (most) people don't buy lamps for their ability to emit nonvisible radiation.
 They buy lamps for the energy service they provide: light!
 Lighting efficacy is the ratio of visible light output 
 (the energy service, measured in lumens) 
@@ -739,11 +743,11 @@ their energy service, lighting.
 The move from energy efficiency to service efficacy can often reveal sustainability opportunities.
 Incandescent and LED lamps have similar energy efficiency, because they  
 emit nearly as much radiative energy as they consume.
-However, most of the radiative energy emitted by an incandescent lamp is in non-visible wavelengths.
+However, most of the radiative energy emitted by an incandescent lamp is in nonvisible wavelengths.
 In contrast, most of the radiative energy emitted by an LED lamp is in visible wavelengths.
 The lumen counts only visible light output, so 
 the service efficacy (measured in lumens/W) penalizes 
-incandescent lamps for emitting most of their energy in non-visible wavelengths.
+incandescent lamps for emitting most of their energy in nonvisible wavelengths.
 (See \citet{Heun:2020aa} for details.)
 The service efficacy favors LED lamps, because they emit most of their energy in visible wavelengths.
 While an energy efficiency metric would say that incandescent and LED lamps are similarly efficient, 
@@ -793,7 +797,7 @@ the increase in number of new homes
 indicates that energy consumption in the housing stock of the U.S.\ is unlikely 
 to fall in the near future. 
 Every new home adds to the energy consumed by homes in the U.S.
-I.e., efficiency gains will be overtaken by the sheer number of new homes.
+That is, efficiency gains will be overtaken by the sheer number of new homes.
 
 
 %..............................
@@ -802,11 +806,14 @@ I.e., efficiency gains will be overtaken by the sheer number of new homes.
 
 Figure~\ref{fig:urbanization} shows the percentage of world population
 living in urban areas.
-The transition to urban living is proceeding quickly.
-Industrialization brings people to cities in search of employment.
-The location transition is happening.
-The only question is whether that transition 
-will be managed in a sustainable direction.
+The transition to urban living is proceeding quickly for many factors.
+A primary factor is that people move from rural areas to cities 
+in search of employment. 
+That is, urbanization is happening for reasons of social sustainability
+(employment and human well-being)
+rather than reasons of environmental sustainability.
+The only question is whether the location transition 
+will be managed in an environmentally sustainable direction.
 
 <<urbanization, fig.cap="Percentage of people worldwide living in urban areas (through 2015) and projections to 2050. \\emph{Source}: \\citet{UNPop:2018vr}.">>=
 percent_urban <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "WUP2018-F02-Proportion_Urban.xlsx"),
@@ -830,11 +837,28 @@ percent_urban %>%
 \label{sec:heating_cooling_transition}
 %++++++++++++++++++++++++++++++
 
-Greater efficiency can provide the same thermal comfort
+There are several ways to transition to more sustainable heating and cooling in households.
+First, in-floor radiant heating is often considered more comfortable than 
+forced air, allowing thermostats to be set lower,
+thereby consuming less energy for the same level of comfort.
+(This is an example of the benefits 
+of focusing on energy service efficacy (thermal comfort)\index{efficacy!energy service}
+instead of energy efficiency;
+see Section~\ref{sec:transportation_fuel_economy} for details.)
+
+Second, programmable thermostats\index{thermostat!programmable}
+can be used to save energy on heating and cooling 
+for households with regular schedules.
+Remote-control thermostats\index{thermostat!remote-control} are
+beneficial for reducing heating and cooling
+energy consumption when schedules deviate from programmed timetables.
+
+Third, high-efficiency heating and cooling systems
+can provide the same thermal comfort
 with less energy consumed.
 Increased residential heating and cooling 
 efficiency\index{efficiency!heating and cooling!residential}
-(i.e, providing the same comfort with less energy) 
+(that is, providing the same comfort with less energy) 
 can be obtained
 by improving the building envelope or
 by improving the efficiency of heating and air conditioning.
@@ -942,7 +966,7 @@ The first tradeoff is initial cost (also called capital expense) versus operatin
 Models or options that are more energy efficient also tend to cost more for the initial purchase. 
 A larger initial investment pays back by reducing ongoing expenses.
 Often the higher initial cost is the result of higher energy and/or material inputs
-required to make the more-efficient option.
+required to make the more efficient option.
 The second kind of tradeoff is between well-being or affluence and cost. 
 Turning the thermostat down means your home is less comfortable, which
 means that you are not as well off (not as happy). 
@@ -1045,14 +1069,14 @@ United States, 1999: \\
       Leave the water running when you brush your teeth? 
       Wash dishes by hand? 
       Leave computers or entertainment systems in ``standby'' mode when not in use?
-      (See the concepts of ``phantom,'' ``vampire,'' or standby load). 
+      Consume ``phantom,'' ``vampire,'' or standby power? 
       Why do you do these things?
       Does your home have a second (or third) refrigerator or freezer?
       Why?
       What would it take for you to change your behavior?
       
-\item Notice that biomass heating (for example, firewood) does not appear in 
-      Figure~\ref{fig:AverageHouseholdEnergyConsumption}. However, 
+\item Notice that biomass heating (for example, firewood) is not included in 
+      Figure~\ref{fig:EnergyConsAndHomeSize}. However, 
       RECS Table CE 7.2 reports that wood heated 12.5 million housing units in
       2015 (10.6\% of all housing units) and was 5.6\% of all BTUs used for
       heating. 
@@ -1071,9 +1095,10 @@ United States, 1999: \\
       For example, who has access to forest lands? How much does wood cost?
       What labor is required to obtain and use wood for heat?
       
-\item Figure~\ref{fig:AverageHouseholdEnergyConsumption} also excludes ``district
-      steam'' and solar thermal heat sources. Should such sources be promoted
-      for sustainability? What considerations affect their more widespread adoption?
+\item Figure~\ref{fig:EnergyConsAndHomeSize} also excludes ``district
+      steam'' and solar thermal heat sources.
+      Should such sources be promoted for sustainability? 
+      What considerations affect their more widespread adoption?
       
 \item This chapter discussed energy efficiency measures for many of the categories
       featured in Figure \ref{fig:average_residential_energy}, such as AFUE, SEER
@@ -1124,10 +1149,12 @@ United States, 1999: \\
       how much energy would you save annually?
       What is the price of that saved energy?
       What is the annual cost savings from this energy efficiency intervention?
-      Assuming that the 98\% AFUE furnace or COP = 3 heat pump lasts 20 years and 
+      Assuming that the 98\% AFUE furnace or COP = 3.5 heat pump lasts 20 years and 
       that you want to break even financially,
       what is the maximum price you should pay for 
       the upgraded furnace or heat pump?
+      Does your answer change if you apply a discount rate 
+      to the financial considerations of this project?
 
 \item Locate the air conditioner in you dwelling, and find its SEER.
       If you were to replace your existing air conditioner 
@@ -1139,6 +1166,8 @@ United States, 1999: \\
       Assuming that the 40 SEER air conditioner lasts 15 years and 
       that you want to break even financially,
       what is the maximum price you should pay for a 40 SEER air conditioner?
+      Does your answer change if you apply a discount rate 
+      to the financial considerations of this project?
 
 \item Rank the U-Factor and solar heat gain coefficient (SHGC)
       for single-, double-, and triple-paned windows.
