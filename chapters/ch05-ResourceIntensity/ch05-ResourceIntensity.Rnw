@@ -1343,7 +1343,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         What does this statement indicate in terms of the IPARX equation?
         What differences are there, for sustainability, between affluence and wealth?
 
-\item   Section \ref{sec:recycling} introduced the idea that sufficiently similar
+  \item Section \ref{sec:recycling} introduced the idea that sufficiently similar
         materials could substitute for one another in a manufacturing process.
         % For example, wood, steel, and ferro-cement (cement with metallic reinforcement)
         % can all be used to build a boat.
@@ -1371,7 +1371,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Now think of sustainable substitutes for the four items above.
         How are your sustainable and unsustainable alternatives similar?
         How are they different? \label{question:consumption_substitution}
-
+        
 \end{questions}
 
 
@@ -1431,6 +1431,16 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Where do you get data to answer these questions?
         Where do you draw boundaries?
         How do you evaluate tradeoffs?
+        
+  \item In winter, fresh food is transported from warm locations (for example, California and Florida)
+        to cold locations (Michigan, for instance), consuming fossil fuels
+        and causing CO$_2$ emissions.
+        Alternatively, LED lighting could be used at indoor farms to grow food
+        in cold climates in the winter.
+        Assess the benefits and drawbacks of the LED approach relative to the 
+        shipping approach. 
+        When would it make sense from a sustainability point of view to grow locally using LEDs?
+        When is it more sustainable to transport food from warm to cold climates?
 
 \end{projects}
 
