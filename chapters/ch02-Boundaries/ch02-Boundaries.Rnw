@@ -744,7 +744,9 @@ fit_sentence <- function(.df) {
   paste0("The red line shows an exponential curve fit to data after 1950 ", 
          "with exponential growth rate of ", 
          b %>% sprintf(fmt = "%#.2f"), 
-         "~\\%/year and $R^2$~=~", 
+         # The next line italicizes the R, which may not be what we want.
+         # "~\\%/year and \\emph{R}\\:\\!$^2$~=~", 
+         "~\\%/year and R$^2$~=~", 
          r2 %>% sprintf(fmt = "%#.3f"), 
          ".")
 }
