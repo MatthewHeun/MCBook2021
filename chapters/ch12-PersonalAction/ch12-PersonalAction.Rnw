@@ -336,7 +336,7 @@ with onsite or offsite renewable energy production.
 
 There are many things that individuals can do to make their lives more sustainable 
 in homes and apartments, 
-both in deciding which homes or apartments to buy or rent
+both in deciding which homes or apartments to buy or lease
 and how they are operated.
 
 \paragraph{Individual+Choices+Housing}
@@ -417,13 +417,13 @@ There are many things that individuals can do to make their lives more sustainab
 in transport.
 
 \paragraph{Individual+Choices+Transportation}
-Individuals can decide which vehicles to buy or rent.
+Individuals can decide which vehicles to buy or lease.
 Choosing a \emph{used} vehicle
 will prevent additional carbon being embodied in the vehicle itself.
 Choosing a \emph{smaller} car will reduce carbon emissions 
 associated with commuting.
 Individuals should not ``over buy'' cars.
-(If a truck is needed once per year to pull a trailer, rent.)
+(If a truck is needed once per year to pull a trailer, rent it.)
 Choosing an electric vehicle will reduce CO$_2$ emissions
 in those places where grid electricity contains a large proportion of renewables.
 (See Section~\ref{sec:electric_vehicles} and Figure~\ref{fig:tesla}.)
@@ -459,7 +459,7 @@ local purchasing can be pursued.
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/urban_farmers_market.jpeg}
-         \caption{Urban farmers market.}
+         \caption{Urban farmers' market.}
          \label{fig:urban_farmers_market}
      \end{subfigure}
      \hfill
@@ -469,7 +469,13 @@ local purchasing can be pursued.
          \caption{Suburban produce aisle.}
          \label{fig:suburban_produce_aisle}
      \end{subfigure}
-        \caption{Two ways to buy groceries.}
+        \caption{Two ways to buy groceries.
+                 The urban farmers' market offers modest variety of seasonal, locally grown produce. 
+                 The suburban grocery store offers a wide variety of produce provided 
+                 via international supply chains.
+                 \emph{Sources}: 
+                 (a)~\copyright{}2021 Jeremy Van Antwerp; 
+                 (b)~\copyright{}2021 Matthew Kuperus Heun.}
         \label{fig:food_purchasing_options}
 \end{figure}
 
@@ -530,7 +536,11 @@ allow you to optimize your gardening for maximum sustainability impact.
          \caption{Gutter diversion.}
          \label{fig:gutter_diversion}
      \end{subfigure}
-        \caption{Two ways to adorn lawns.}
+        \caption{Two ways to adorn lawns.
+                 The suburban lawn is possible only via application of chemicals.
+                 The gutter cut-out reduces pollution by diverting rainwater
+                 before it enters the sewer system.
+                 \emph{Source}: \copyright{}2021 Jeremy Van Antwerp.}
         \label{fig:adorning_lawns}
 \end{figure}
 
@@ -550,13 +560,14 @@ Figure~\ref{fig:gutter_diversion} shows a curb-cutout that
 diverts surface rainwater
 from a roadside drain to a small roadside garden.
 Such gutter diversions reduce the amount of surface runoff 
-that flows directly into roadside drains and local waterways.
+that flows directly from roadside drains into local waterways.
 
 \paragraph{Individual+Law+Urban Planning}
 Get involved in your local zoning board, drain commission, or other local government entity. 
 Advocate for local \emph{and} regional solutions. 
 Being involved in local politics is one of the best ways to make a difference for 
-sustainability.
+sustainability;
+see P12.\ref{problem:blog_social_media}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -607,8 +618,9 @@ How much will I fly?                                                            
 \markright{Questions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Note: for Questions Q\ref{chap:personal_action}.\ref{question:mcgregror}-
-Q\ref{chap:personal_action}.\ref{question:lstiburek} it would be helpful to 
+Note: for
+Q\ref{chap:personal_action}.\ref{question:mcgregror}--Q\ref{chap:personal_action}.\ref{question:lstiburek} 
+it would be helpful to 
 read more in depth about Edgar McGregor, \emph{Juliana v. United States},
 Wangari Maathai, and Joseph Lstiburek.
 
@@ -691,7 +703,7 @@ Wangari Maathai, and Joseph Lstiburek.
       What are your feelings about the \emph{corporations} that develop
       and manufacture the robots?
       Would you trust your relative to a robot? Yourself to a robot?
-      How is this different than trusting the human employee of a long-term care facility?
+      How is this different than trusting a human employee of a long-term care facility?
       
 \item Compare and contrast ``financial independence, retire early'' with the 
       ``lying flat'' movement. 
@@ -843,13 +855,13 @@ Wangari Maathai, and Joseph Lstiburek.
       % Start of new questions added by MKH on 3 Dec 2021
       In your writing, can you identify places where the framework
       presented in this book has influenced your thinking and writing?
-      E.g., even if you don't explicitly refer to the IPARX identity, 
+      For example, even if you don't explicitly refer to the IPARX identity, 
       does it affect your writing? 
       Even if you don't explicitly refer to the sustainability challenge areas, 
       do they affect your thinking?
       Even if you don't discuss ``sustainability sentences,''
       does the SUBJECT+ACTION+OBJECT framing assist your reporting
-      on local politics?
+      on local politics? \label{problem:blog_social_media}
       
 \item Chapter~\ref{chap:affluence} demonstrated that economic activity leads to environmental impacts.
       The FIRE strategy for sustainability
