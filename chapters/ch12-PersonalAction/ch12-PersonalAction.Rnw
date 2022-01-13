@@ -387,17 +387,24 @@ living due to the economies of scale.
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/Tesla.jpeg}
-         \caption{Tesla.}
+         \caption{A shiny new Tesla.}
          \label{fig:tesla}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/Roger10-4.jpeg}
-         \caption{Commuting bicycle.}
+         \caption{An old bicycle.}
          \label{fig:commuting_bicycle}
      \end{subfigure}
-        \caption{Two low-carbon commuting options.}
+        \caption{Two (potentially) low-carbon commuting options. The Tesla shown
+        in (a) could be a low-carbon commuting option, depending on the source of 
+        its electricity. On the other hand, the Tesla requires substantial more 
+        mineral resource depletion than the bicycle. (See Figure~\ref{fig:auto_gwp} 
+        and associated discussion.) For more details on what characteristics are 
+        desirable in a commuting bicycle, see Not Just Bikes 
+        ``\href{https://www.youtube.com/watch?v=aESqrP3hfi8}{Why Dutch Bikes are Better}'' 
+        (February 8, 2021).}
         \label{fig:commuting_options}
 \end{figure}
 
