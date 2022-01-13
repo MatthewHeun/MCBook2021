@@ -1,0 +1,701 @@
+% The next command tells RStudio to do "Compile PDF" on book.Rnw,
+% instead of this chapter, thereby eliminating the need to switch back to book.Rnw 
+% before making the book.
+%!TEX root = ../../book.Rnw
+
+%#############################################################
+\chapter{Land use and urban planning}
+\label{chap:land_use_urban_planning}
+%#############################################################
+
+\epigraph{The truth about a city's aspirations isn't found in its vision. 
+It's found in its budget.}{Brent Toderian}
+%\epigraph{Show me the incentive and I will show you the outcome.}{Charlie Munger}
+
+The previous three chapters described sustainability challenges related to 
+dwellings, transportation, and food.
+A common element in all these sustainability challenges is how land is used.
+We need \emph{places} for homes, to grow food, and for transportation systems. 
+Moreover, where we choose to put each of these elements influences 
+the overall need for transportation in human society.
+For example, dwellings and businesses that are spread out across a large area will
+require more transportation than if they were located close together.
+
+This chapter examines two different aspects of land use.
+The first aspect is the layout or arrangement of different uses of land.
+Which is more sustainable: to group all the farms, forests, and cities so that 
+each is as large as possible?
+Or is it better to intersperse many small farms, forests, and towns?
+Whereas Chapter~\ref{chap:households} was concerned with the efficiency of individual
+structures, this chapter considers dwellings and businesses collectively. 
+%The objective is to design cities and farms with sustainability in mind.
+We consider the sustainability implications of spacing, density, and how 
+transportation links between locations are affected by layout.
+
+The second aspect is one of allocation, that is, \emph{how much} of each of the 
+different uses for land we will have.
+Land can be used for agriculture, recreation, urban or suburban dwellings, or 
+not allocated for direct human use, that is, left as wilderness.
+Land is the source, directly or indirectly, for all our resources, the sink for
+much of our waste, and where we ourselves live.
+We need land to simultaneously satisfy many different functions, including provide 
+enough resources, accept wastes, and provide ecosystem services.
+
+The next sections deal with three major sustainability questions related to land use: 
+How do we use land?
+How does our use of land effect the sustainability of human society?
+How can we transition to more sustainable arrangements?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Land and how it is used}
+\label{sec:land_and_how_it_is_used}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.75\linewidth]{chapters/ch10-LandUseUrbanPlanning/figures/Bloomberg2018landuse.jpg}
+% \caption[USA land use.]{Major categories of how US land is used.}% ~\citep[Fig.~1]{USlanduse}.
+% \label{fig:USlanduse_old}
+% \end{figure}
+
+
+<<USlanduse, fig.cap="Land use in the U.S. The biggest changes over time are decreasing Grazed forest area and increasing Rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. (``Grassland'' is not used for crops.) \\emph{Source}: \\citet{USDA:2021uq}.">>=
+us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Land_Uses.xlsx"),
+                                  sheet = "data to plot") %>% 
+  dplyr::rename(
+    `Cropland (idle)` = "Cropland idled",
+    `Cropland (crops)` = "Cropland used for crops",
+    `Cropland (pasture)` = "Cropland used for pasture", 
+    Urban = "Land in urban areas",
+    `Rural transport` = "Land in rural transportation facilities", 
+    `Forest (grazed)` = "Forest-use land grazed", 
+    `Forest (not grazed)` = "Forest-use land not grazed", 
+    `Defense & industrial` = "Land in defense and industrial areas",
+    `Grassland` = "Grassland pasture and range (noncropland and nonforest)", 
+    `Farms and roads` = "Farmsteads, roads, and miscellaneous farmland", 
+    `Rural parks & wildlife` = "Land in rural parks and wildlife areas"
+  ) %>% 
+  tidyr::pivot_longer(cols = -Year, names_to = "use_type", values_to = "land_area_kacres") %>% 
+  dplyr::mutate(
+    use_type = factor(use_type, levels = c("Other land",
+                                           "Rural transport",
+                                           "Defense & industrial",
+                                           "Urban",
+                                           "Farms and roads",
+                                           "Rural parks & wildlife",
+                                           "Forest (grazed)",
+                                           "Forest (not grazed)",
+                                           "Cropland (idle)",
+                                           "Cropland (pasture)",
+                                           "Cropland (crops)",
+                                           "Grassland",
+                                           "Pasture")), 
+    land_area_Gacres = land_area_kacres / 1e6
+  )
+
+us_land_use %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = land_area_Gacres, fill = use_type)) + 
+  ggplot2::geom_area() + 
+  
+  ggplot2::scale_fill_viridis_d(direction = -1) +
+  
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = "Land area [billion acres]", 
+                fill = ggplot2::element_blank()) +
+  
+  MKHthemes::xy_theme()
+@
+
+
+% Of the three (land, labor, capital) means of production, 
+% only land is generally considered to be a fixed quantity.
+% This is approximately true. 
+% There are ways of creating more land. 
+% The Dutch system of building dykes to reclaim land from the ocean is one example. 
+% Planetary colonization could be another. 
+% Structures such as multi-story parking garages, high-rise apartment buildings, 
+% and off-shore oil platforms are also ways to 
+% multiply the {\i effective use} of the land. 
+% % Change in efficiency. but land is constant. 
+% Techniques that increase agricultural productivity \emph{per acre} 
+% are effectively equivalent to creating more farm land. 
+% The using dykes to reclaim land from the sea, like in the Netherlands,
+% or using fill to create land, like the Palm islands in Dubai,
+% results in \emph{relatively} little additional land.
+% For simplicity, this chapter will treat total land area as a fixed quantity.
+
+Figure~\ref{fig:USlanduse} shows how land is used in the United States. 
+%Although proportions may be different in other economies, the categories are the same. 
+There are 1.9 billion acres in the contiguous 48 states and
+2.3 billion acres in all 50 states.
+Of this total, agriculture takes the largest share, with grazing (34\%), 
+forestry (28\%), and crop production (20.6\%) being the three largest uses. 
+The four largest crops in the U.S. are wheat (32\% of total crops), corn (30\%),
+soybeans (20\%), and cotton (10\%). That leaves just 8\% for all other crops.
+In contrast, the area where we live and work % (red/pink areas)
+is a relatively small
+69.4 million acres (3.65\%).
+% One key observation from Figure~\ref{fig:USlanduse} is that the U.S. is relatively 
+% sparsely populated.
+The U.S. is relatively sparsely populated.
+
+Land use changes over time and tracking those changes is important for understanding
+relationships between land use and climate change.
+The data for surveys such as Figure~\ref{fig:USlanduse} are produced from satellite imagery.
+The European Space Agency recently released a dataset for \emph{global} land use over
+a 24-year period (1992-2015) as part of a climate change initiative (CCI).
+The Inter-governmental Panel on Climate Change (IPCC) uses 9 categories for land-use
+classification: 
+agriculture, forest, grass, wetland, settlement, shrubland, sparse, bare, and water.
+Analysis~\cite{Nowosad2019} of the CCI data reveals some trends related to land use change over time.
+First, urban areas are continually growing and, basically, never shrink.
+From 1992--2015, settlements gained 337,000 square kilometers, which is 0.23\%
+of the Earth's land area, or about 0.01\% per year.
+
+The source of land for urban growth is principally agricultural land.
+However, to feed a growing population, \emph{net} agricultural land has had to 
+increase. 
+The increase comes, primarily, from forests being converted to agriculture.
+Simultaneously, there there is also some (formerly) agricultural land being
+reforested.
+The net gain for agricultural land means that \emph{more} forests are cleared
+than the amount of agricultural land that is being reforested.
+Altogether, humans altered almost 1\% of total land area per year (22\% in 24 years)
+across all land-use categories.
+
+Land is the primary source of energy, be it fossil fuel, biomass, or renewable. 
+Wells or mines for fossil fuels are located in a \emph{place}.
+Biomass has to be grown or harvested from a \emph{place} as well.
+Renewables, such as hydro, solar photovoltaic, and wind power, are also located in
+\emph{places}.
+In particular, for hydro, solar, and wind, correct siting is a key consideration
+for how productive each power type will be.
+Not all locations are suitable for hydro power. Or wind. Or solar.
+
+Land is also a major carbon sink. 
+Forests store a lot of carbon and reforestation is likely necessary for meeting
+climate change limits, which makes continued \emph{deforestation} particularly 
+alarming.
+Land use affects and is affected by climate change. 
+For instance, hotter, drier weather results in more frequent and severe wildfires.
+Those fires destroy forests, release stored carbon, and contribute to further warming.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Demand for land}
+\label{sec:demand_for_land}
+%++++++++++++++++++++++++++++++
+
+Demand for land is driven by increasing human population~\Pparen{}. 
+(See Equation~\ref{eq:IPARX}.)
+As mentioned in Chapter~\ref{chap:agriculture}, higher population drives agriculture,
+and agriculture is \emph{the} most prevalent way we use land.
+The land-use statistics presented in the section above show humans taking more
+land for agriculture and for cities over time.
+As farm land is degraded, humans move on and create more farm land, primarily 
+from forests, but also from grass lands, shrub land, and sparsely vegetated land.
+Some of the abandoned farm land regrows to forest.
+
+Population growth leads directly to a need for more housing,
+but not just any housing.
+Another trend shown by land-use statistics is greater urbanization.
+The demand for housing is disproportionately for urban housing
+because of a long-term trend of migration to urban areas. 
+Urban areas have much higher GDP per area.
+Thus pursuit of wealth, that is, a desire for greater affluence~\Aparen{} drives 
+migration from rural areas to urban ones.
+
+The other major factor of land use demand is for resources.
+The resources could be energy. 
+For example, about 30\% of the U.S. corn (maize) crop is converted into ethanol
+to be blended with gasoline as a transportation fuel.
+Or, the resources could be material
+(see Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use}).
+A major example is timber, which is a key ingredient in construction and many
+consumer goods.
+One of the major causes of deforestation in the Amazon basin, for instance, is 
+extraction of mineral wealth.
+Thus, there is a strong demand for resources~\Rparen{} to feed an ever-growing global 
+economy.
+Those on the lowest rungs of the socio-economic ladder have few options to 
+improve their lives. 
+They need places to live, food to eat, and income to purchases these and other goods.
+They can move to urban areas to try to get work or they can try to extract (pun intended)
+a living by farming or mining.
+Unfortunately, the best lands have already been taken; what is available to the 
+\emph{next} farmer or miner is typically of marginally \emph{lower} productivity.
+
+Therefore, consistent with earlier chapters, the drivers for land use are the 
+terms of the IPARX equation,~\Pparen{},~\Aparen{}, and~\Rparen{}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Land use efficiency}
+\label{sec:land_efficiency}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Because land is a limited resource, 
+it makes sense to maximize the effective use 
+of that resource, whether that's for food, housing, and/or ecosystem services.
+Various metrics (only some related to sustainability)
+could be used to gauge the effectiveness of land use
+in agricultural settings or in cities.
+For agricultural land uses, we could attempt to maximize
+calories per acre, pounds of food per acre, number of people fed per acre, 
+\emph{or} the EROI of agriculture. 
+For urban land uses, we could attempt to
+maximize population density,
+we could minimize metrics related to environmental impact, or 
+we could try to make cities as self-sufficient as 
+possible, for example with respect to food or energy.
+We might try to minimize the amount of transportation emissions within cities.
+Or we might try to maximize urban GDP.
+From a sustainability point of view, 
+we could try to maximize 
+biodiversity, wilderness area, air and water quality, or 
+ecosystem services and
+the health of the environment that provides those ecosystem services.
+
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Remember former U.S.\ representative Vernon Ehlers:
+``you can never do only one thing.''
+\end{mcframe}
+
+Many of the ``good'' uses for land are in tension with each other, 
+and the tension between land use for human needs and
+preservation of ecosystem services is particularly acute. 
+One way to describe the tension between human use and preservation
+is sparing versus sharing~\cite{Fraanje2018}.
+Land ``sparing'' seeks to minimize the amount of agricultural land needed for humans
+but maximizing the productivity of that land, even if it means input-intensive farming
+that results in less biodiversity \emph{on the farm}. 
+Other land is ``spared'' and set aside for conservation.
+Land ``sharing'' uses agricultural practices that are more eco-friendly to wildlife
+species on the farm, but, because yields aren't as high, requires more total farm land.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Land as a carbon sink}
+\label{sec:carbon_storage_capacity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Because energy use and carbon emissions are the prime example in this book,
+and because land plays a crucial role in regulating carbon in the environment,
+this section examines the capacity of the land to absorb and store carbon.
+
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.75\linewidth]{chapters/ch10-LandUseUrbanPlanning/figures/LandCarbonStorage.jpg}
+% \caption[Biome specific carbon storage capacity.]
+% {Specific carbon storage capacity of different biomes.}%~\citep[Fig.~1]{LandCStorage}.
+% \label{fig:LandCStorage}
+% \end{figure}
+
+% Need a source for this figure.
+% https://link.springer.com/chapter/10.1007/978-94-017-3089-1_2 ??
+% https://www.researchgate.net/publication/255994189_Terrestrial_ecosystem_responses_to_global_change_a_research_strategy
+% https://carbon2018.globalchange.gov/chapter/13/
+% https://www.google.com/search?q=willraap.org%3A+carbon+storage&rlz=1C1GCEA_enUS774US774&oq=willraap.org%3A+carbon+storage&aqs=chrome..69i57.5629j0j4&sourceid=chrome&ie=UTF-8
+% THE SOURCE OF THE IMAGE IS THE PDF IN THIS FOLDER. BUT THE LINK TO WILLRAAP.ORG IS NOTHING.
+
+%Need to modify this figure to reconcile with Duke report (see also other publications by the same authors)
+% https://nicholasinstitute.duke.edu/sites/default/files/publications/blue-carbon-report-paper.pdf
+%
+% https://www.google.com/search?q=Murray+Linwood+Pendleton+Jenkins+Sifleet+2011&rlz=1C1GCEA_enUS774US774&oq=Murray+Linwood+Pendleton+Jenkins+Sifleet+2011&aqs=chrome..69i57.34130j0j7&sourceid=chrome&ie=UTF-8
+%
+% include oceans.
+% Note that this data is a specific intensity. That is, it shows how much carbon is 
+% stored per meter squared but we need to know how many square meters of each terrain is available.
+
+
+
+<<CarbonStorage, fig.height=5.5, fig.cap="World carbon storage in various biomes. The top graph shows amount (area) of each biome in the world. The middle graph is carbon density for each biome. The bottom figure is the product of the top and the middle and is the total storage capacity of each biome world wide. ``Temp. forest'' is temperate forests. ``Vegetation'' indicates carbon storage in plant matter. ``Soil'' indicates carbon storage in the soil. For context, Figure~\\ref{fig:CarbonEmissionsGraph} shows annual carbon emissions are 36.4 GtCO$_2$/year (2019), a small fraction of total carbon stored in the biosphere. \\emph{Source}: \\citet{IPCC:2000wv}.">>=
+carbon_storage_world <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Carbon_Storage_World.xlsx"),
+                                         sheet = "data to plot") %>% 
+  tidyr::pivot_longer(cols = c("Carbon stored in Vegetation (Gt/million km2)", 
+                               "Total Carbon stored in Vegetation (Gt)", 
+                               "Carbon stored in Soils (Gt/million km2)", 
+                               "Total Carbon stored in Soils (Gt)", 
+                               "Area (million km2)"), 
+                      names_to = "metric", 
+                      values_to = "vals") %>% 
+  dplyr::mutate(
+    Biome = factor(Biome, levels = c("Boreal forest", "Rainforest", "Grassland",
+                                     "Chaparral", "Wetlands", "Desert", 
+                                     "Temp. forest", "Croplands", "Tundra")),
+    storage_location = dplyr::case_when(
+      metric == "Carbon stored in Vegetation (Gt/million km2)" | 
+        metric == "Total Carbon stored in Vegetation (Gt)" ~ "Vegetation", 
+      metric == "Carbon stored in Soils (Gt/million km2)" | 
+        metric == "Total Carbon stored in Soils (Gt)" ~ "Soil", 
+      metric == "Area (million km2)" ~ "Area",
+      TRUE ~ NA_character_
+    ), 
+    storage_location = factor(storage_location, levels = c("Area", "Vegetation", "Soil")),
+    panel = dplyr::case_when(
+      metric == "Area (million km2)" ~ 'Area~group("[", Mkm^2, "]")',
+      metric == "Carbon stored in Vegetation (Gt/million km2)" |
+        metric == "Carbon stored in Soils (Gt/million km2)" ~ 'Density~group("[", GtC/Mkm^2, "]")',
+      metric == "Total Carbon stored in Vegetation (Gt)" |
+        metric == "Total Carbon stored in Soils (Gt)" ~ 'Storage~group("[", GtC, "]")',
+      TRUE ~ NA_character_
+    )
+  )
+
+carbon_storage_world %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Biome", y = "vals", fill = "storage_location")) + 
+  ggplot2::geom_bar(stat = "identity") + 
+  ggplot2::facet_grid(rows = "panel", scales = "free_y", labeller = ggplot2::label_parsed) +
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = "Area and carbon characteristics of various biomes", 
+                fill = ggplot2::element_blank()) +
+  viridis::scale_fill_viridis(discrete = TRUE, direction = -1, begin = 0, end = 0.9) + 
+  
+  MKHthemes::xy_theme() + 
+  ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1), 
+                 axis.ticks.x = ggplot2::element_blank())
+@
+
+
+Figure~\ref{fig:CarbonStorage} shows how much carbon each type of land (biome) can store.
+The teal bars indicate carbon stored as plant life above ground. 
+The purple bars indicate carbon stored in the soil below the surface.
+%(You can see why peat is used as a fuel in same parts of the world.)
+Tropical and boreal forests, and grasslands 
+are all promising candidates for carbon sequestration.
+Unfortunately, the \emph{amount} of wetlands is small. 
+In contrast, the opportunities for forest and grasslands are quite extensive.
+Projects 10.1 and 10.2 explore technical aspects of forest and grassland 
+restoration/carbon sequestration.
+
+\section{Urban sustainability}
+This section examines the sustainability challenges and characteristics of urban areas.
+Urban areas are defined by a relative abundance of public works.
+A rural road might have a drainage ditch beside the road but the road itself
+might not be paved. 
+A suburban street will be paved and have gutters, curbs, storm sewers, and a sidewalk.
+A city center will additionally have public buildings such as a courthouse, library,
+post office, parks, and, perhaps, bridges.
+Eventually, all the above infrastructure will reach the end of its functional life
+and have to be repaired or replaced.
+To remain a city, enough taxes have to be collected over the infrastructure's life
+to repair or replace it when it wears out.
+To be sustainable, an urban area has to be valuable enough to generate the additional
+revenue to pay for its additional infrastructure.
+\href{https://www.strongtowns.org/}{StrongTowns.org} discusses sustainable 
+infrastructure financing in more detail.
+We will discuss next some of what makes cities valuable.
+
+In 2018, just 31 counties produced 32\% of U.S. GDP. % https://www.visualcapitalist.com/america-land-use/
+Most of these were around major U.S. metropolitan areas, such as New York City,
+Los Angeles, or Chicago.
+A large part of the value of cities comes from the concentration of people,
+who are both a resource and a market.
+A large pool of labor allows access to specialized skills and a quantity of labor
+to create large and valuable products, like aircraft, microchip foundries, or 
+sophisticated software.
+Conversely, a large population of consumers allows specialized markets to develop
+that would not have enough appeal to be viable in a rural or small-town setting.
+Examples include specialty grocery stores, a school for ballroom dance, or an exotic pet store.
+
+For a fixed population density, a city can only grow its population by expanding.
+(By the way, population density is %strongly influenced)
+determined by local building codes and zoning regulations.)
+As ``rings'' are added to the city and the diameter of the city grows, the time
+it takes to travel across the city grows as well. 
+At some point, the city diameter becomes so big that it becomes infeasible to 
+travel from some parts of the city to other parts.
+At that point, the economic benefits of growing are lost: the markets can't
+reach each other.
+The city has reached its effective limit.
+Therefore, the role and value of transportation is key to the economic success
+of a city.
+Effective transportation and population density are, in some sense, two sides
+of the same coin. 
+Higher population densities means transportation is less important. 
+Lower population densities means transportation is needed even more.
+Figure~\ref{fig:urban_density} illustrates the point by showing the relationship 
+between urban density and transport-related energy consumption.
+Clearly, there is a bilinear tradeoff between urban density and cost of transportation.
+
+
+<<urban_density, fig.cap="Relation between urban density and transport-related energy consumption. \\emph{Source}: \\citet{US_cities}.">>=
+urban_density_data <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Urban_Density.xlsx"),
+                                         sheet = "data to plot") %>% 
+  dplyr::mutate(
+    Continent = factor(Continent, levels = c("N. Am.", "Australia", "Europe", "Asia"))
+  )
+
+urban_density_data %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = `Urban Density (Inhabitants per hectare)`,
+                                         y = `Transport related energy consumption (Gigajoules per capita per year)`,
+                                         colour = `Continent`)) +
+  ggplot2::geom_point() + 
+  ggplot2::geom_text(mapping = ggplot2::aes(label = City),
+                     nudge_x = urban_density_data$nudge_x,
+                     nudge_y = urban_density_data$nudge_y,
+                     size = urban_density_data$size,
+                     check_overlap = FALSE, 
+                     show.legend = FALSE) +
+  
+  viridis::scale_colour_viridis(discrete = TRUE, direction = -1, begin = 0, end = 0.9) +
+  ggplot2::labs(x = "Urban density [people/ha]", 
+                y = expression("Transport energy [GJ/" * person%.%year * "]"), 
+                colour = ggplot2::element_blank()) +
+  ggplot2::guides(colour = "none") + 
+  
+  MKHthemes::xy_theme() + 
+  ggplot2::theme(legend.position = c(0.8, 0.8))
+@
+
+
+Another way of thinking about the role of transportation in urban environments is
+that transportation creates places worth going to.
+Consider for example a restaurant downtown that serves very tasty food. 
+If you can't get to it, it doesn't matter how good the food is. 
+The potential customer base is restricted to the number of people that can get 
+to the restaurant.
+Access becomes both an economic enabler and an economic multiplier.
+
+Perhaps ironically, the transportation itself is \emph{not} something people want 
+to visit. 
+No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
+afternoon.''
+Rail yards, bus stations, and airports are loud, and often uncomfortable, places to be.
+A desirable, city center is walkable, human scale, and space efficient.
+Being desirable makes urban areas valuable, which, in turn, creates the tax base 
+to sustain infrastructure. 
+
+Population density is the other key determiner of urban wealth. 
+It requires both housing and transportation. 
+Some of the end-of-chapter discussion questions consider ways to generate
+\emph{desireable} population density. 
+(A prison might have a high population density, that doesn't mean people will
+want to live there.)
+
+Cities face additional sustainability challenges related to infrastructure lifespan, 
+economic and population growth, changing technology, and fractured ownership.
+The design lifetime of infrastructure may not match its economic lifetime.
+Population growth might make a bridge designed to last 100 years inadequate to 
+satisfy transportation demand after only 30 years.
+Wireless communication technologies have rendered wire-based communication much
+less relevant. 
+However, when changes are necessary, often the multiple constraints of urban environments
+make upgrading infrastructure costly and difficult.
+We hope you agree that the field of urban planning is full of important and exciting
+challenges.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% bonepile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  the mismatch between information and timescales. Old buildings, modern technology, and design
+% for unforseen circumstances.
+% % https://www.ozy.com/fast-forward/the-latest-quick-fix-for-the-housing-crisis-granny-flats
+% Why is there a "housing shortage"? This points to alternative LAWS to circumvent(?) economic and demographic trends.
+% 
+% Strong Towns black Friday parking. https://www.strongtowns.org/blackfridayparking/
+% Houston traffic effiency vs. safety: https://www.houstonchronicle.com/news/investigations/article/Houston-s-roads-drivers-are-nation-s-most-12865072.php
+% https://www.vox.com/2015/2/18/8056039/houston-transit-reimagining
+% Single family zoning makes housing more expensive: https://cityobservatory.org/1he-week-observed-2021_july16/
+% Africa's Great Green Wall (Simon Whistler mgeaprojects): https://www.youtube.com/watch?v=ZABIV7RhY2o
+% Automakers invented jaywalking: https://www.youtube.com/watch?v=H_3c3wqPsJo
+% happiness = short commute https://www.youtube.com/watch?v=5Am-6-jzR68
+% More on that topic: https://uwaterloo.ca/recreation-and-leisure-studies/crunched-time-commuting-linked-lower-life-satisfaction
+% tracking down the original source: https://www.google.com/search?q=World+Leisure+Journal%2C&rlz=1C1GCEA_enUS774US774&oq=World+Leisure+Journal%2C&aqs=chrome..69i57&sourceid=chrome&ie=UTF-8
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Further Reading}\index{further reading}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Charles L. Maron, Jr., 
+\emph{Confessions of a recovering engineer: Transportation for a strong town},
+Hoboken, NJ: Wiley, 2021. \\
+
+\noindent
+Daniel G. Parolek, \emph{Missing middle housing: Thinking big and building small
+to respond to today’s housing crisis}, Washington, DC: Island Press, 2020. \\
+
+\noindent
+James Redbanks, \emph{English pastoral: An inheritance}, London: Penguin, 2020. \\
+
+\noindent
+Jeff Speck, \emph{Walkable city: How downtown can save America, one step at a time},
+New York: North Point Press, 2013. \\
+
+\noindent
+Donald Shoup, \emph{The high cost of free parking}, Oxfordshire, UK: Routledge, 2011.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{See Also}\index{see also}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} and 
+\href{https://www.youtube.com/c/CityBeautiful}{City Beautiful} \\
+
+\noindent Strong Towns: \\
+\url{www.strongtowns.org} \\
+
+\noindent Table Debates: \\
+\url{www.tabledebates.org} \\
+
+\noindent Walk Score: \\
+\url{www.walkscore.com}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Questions}\index{questions}
+\markright{Questions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+
+\item Consider the process of creating more land. 
+      Typically, a coastal area is ``filled in,'' turning ocean or wetland into 
+      dry ground. 
+      A common reason to do so is airport expansion. 
+      More runways are needed to handle greater traffic or larger runways are needed
+      to handle larger aircraft. 
+      What are the environmental, social, and economic tradeoffs?
+      Do you think future generations will be happy to have the land or shaking
+      their heads at what was done to our (their) coastline?
+      
+\item Research indicates that if a farmer's land amount is below a certain threshold
+      it can create a ``poverty trap''~\cite{Coomes2011}.
+      There is just enough land for subsistence farming but alternatives to 
+      farming can't generate enough income to escape poverty.
+      What does the existence of these kind of poverty traps indicate for a
+      sparing/sharing dichotomy? 
+      What could be done to eliminate the poverty 
+      trap(s)? What would be the (unintended) consequences of these solutions?
+      % is this a project instead?
+      
+\item Section \ref{sec:land_and_how_it_is_used} lists the need for resources as
+      one of the drivers for land use. 
+      Of course, many of the minerals that we ``need'' are available from extra-planetary 
+      sources.
+      What would be the sustainability implications of a move to extra-planetary 
+      resources?
+      Are there social consequences associated with moving wealth away from owning 
+      land to owning space rocks, intellectual property, or just plain old money?
+      Are there externalities (negative consequences to other people) from owning
+      land? Are there benefits that accrue to others for free (the reverse of 
+      externalities)?
+
+\item The Great Green Wall is a desert-fighting project in Africa. The aim is to
+      stop the south-ward advance of the Sahara desert. 
+      Initially, the plan was to plant a swath of trees ten miles wide across 
+      the whole continent.
+      What has proven more effective is a change in land management techniques.
+      With reference to Figure~\ref{fig:CarbonStorage}, discuss the importance of
+      this project. \label{question:green_wall}
+
+\item What do you think of as a more sustainable pattern of land use, urban or rural?
+      What is the most impactful thing that could be done to make each more energy efficient?
+      What is the most impactful way to enable each pattern of land use to be more effective?
+      (What does ``effective'' or ``efficient'' mean to you in the context of
+      this question?)
+      
+\item In a land sparing-versus-sharing dichotomy, what are some things a city 
+      could do, with respect to food, specifically, to \emph{spare} more land?
+      What are some things it could do (with respect to food) to \emph{share}?
+      
+\item Some species (generalists) do well with land sharing. Generalists include
+      red-tailed hawks, pigeon, deer, raccoons, and squirrels.
+      Other species do not coexist as well with humans. 
+      Examples of these include wolves, wolverine, and grizzly bears.
+      \begin{enumerate}
+      \item How do we decide and who makes the decisions about how much land we share and
+      how much land we spare?
+      \item What does land sharing versus land sparing say about our conservation priorities?
+      \end{enumerate}
+      As context for discussion, consider the case of the cougar struck and 
+      killed on a Connecticut highway about 70 miles from New York City on June 11, 2011. 
+      The cougar had traveled to Connecticut from South Dakota, a trip of 
+      at least 1500 miles.
+      In March of 2011, the U.S.\ Fish and Wildlife Service had declared the Eastern 
+      cougar extinct. 
+      As of 2018, the species no longer receives protection under the Endangered 
+      Species Act (because it is extinct).
+      The classification of the Eastern cougar as a separate subspecies is based
+      on a 1946 taxonomy that recognizes 15 distinct subspecies of cougar in 
+      North America.
+      However, modern genetic testing indicates that \emph{all} North American cougars
+      are a single species.
+      Ironically, the 1982 U.S.\ Fish and Wildlife Service \emph{Eastern cougar
+      recovery plan} is ``subject to modification as dictated by new findings and 
+      and changes in species status and completion of tasks described in the plan.
+      Goals and objectives will be attained and funds expended contingent upon 
+      appropriations, priorities, and other budgetary constraints.''
+      Ironically, because the U.S.\ Fish and Wildlife Service has chosen not to
+      revisit the 1948 classification.
+      All of this is to say that our decision not to \emph{share} land with the 
+      cougar is a choice, but we could well make a different choice.
+      We have already, in effect, chosen not to \emph{spare} cougar habitat, given
+      the animal's large range.
+      
+\item What is a city's most important infrastructure and why?
+      How much is it worth?
+      
+\item What do you ``go to town'' for? 
+      That is, what unique or special attractions bring you into the densest 
+      urban environments?
+      How much time do you spend in urban versus rural areas? Why?
+      
+\item Think of some ways to increase population density. 
+      What population density would you consider to be too high?  Why?
+
+\item No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
+      afternoon.'' 
+      What are some elements of urban infrastructure that \emph{are} inherently interesting? 
+      Are there any? What makes them special?
+      
+\item In contrast to the previous question, it has been said that ``transportation 
+      creates places worth going to.''
+      Under what circumstances do you think this is true? Can you give examples?
+
+\end{questions}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Projects}\index{projects}
+\markright{Projects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{projects}
+
+\item Research restoring/regrowing/sustainable yield tropical, temperate, or boreal forests/woodlands.
+
+\item Research restoring/regrowing temperate grasslands. Be sure to pay attention
+      to the role of grazing herds.
+
+\item Research the field of urban planning.  How has it changed over time?  
+      What are its current goals?  
+      In what ways sustainability more prominent today than 50 years ago?
+
+\item Urban planning can look very different in a growing economy (e.g., China) 
+      compared to an established economy (e.g., United Kingdom).  
+      Compare and contrast the questions urban planners face and the goals for urban 
+      planning in each type of economy.
+
+\item There is a well-known field called ``urban planning.''  
+      But much less attention is paid to ``rural planning.''
+      Compare and contrast urban and rural planning.  
+      (Hint: Other terms to be aware of include ``landscape architecture,'' 
+      ``ecological science,'' and ``geographical information systems (GIS).''
+      A starting point might be to consider the system in France that restricts
+      building in agricultural areas. 
+      Start by looking at ``Plan Local d’Urbanisme'' (PLU) or the more limited 
+      ``Carte Communale.''
+
+      
+\end{projects}
+
+
+\cleardoublepage
+
