@@ -202,7 +202,7 @@ not to be billionaires~\citep{Wilk:2021vg}!
 On a per-person basis,
 yachts, mansions, and private jets contribute significant CO$_2$ emissions
 both when in use and when on standby.
-Individuals can adopt a de-growth mindset.
+Individuals can adopt a degrowth mindset.
 In short, we can all strive to live
 simpler lives
 in smaller spaces
@@ -218,7 +218,7 @@ To consume in a non-resource-intensive manner,
 individuals can educate themselves on low-carbon-intensity 
 goods and services.
 Tracking personal carbon emissions is easy
-via any number of online carbon calculators~\cite{Padgett:2008ws}.
+via online carbon calculators~\cite{Padgett:2008ws}.
 Resources such as \emph{How bad are bananas?} \cite{Berners-Lee:2011}
 provide helpful guides for purchasing decisions.
 
@@ -325,7 +325,12 @@ with onsite or offsite renewable energy production.
          \caption{Basement exterior.}
          \label{fig:basement_exterior}
      \end{subfigure}
-      \caption{Energy-efficient home with insulated basement.}
+      \caption{Energy-efficient home with insulated basement.
+               The additional insulation will reduce energy consumption 
+               and CO$_2$ emissions related to heating and cooling;
+               see Sections~\ref{sec:heating_cooling_challenges}
+               and~\ref{sec:heating_cooling_transition}.
+               \emph{Source}: \copyright{}XXXX Jeremy Van Antwerp.}
       \label{fig:energy_efficient_home}
 \end{figure}
 
