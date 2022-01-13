@@ -344,7 +344,7 @@ Questions and problems at the end of the chapter assist the exploration process.
 This chapter concludes with some collective action success stories 
 
 %++++++++++++++++++++++++++++++
-\subsection{Population}
+\subsection{Population~\Pparen{}}
 \label{sec:collective_population}
 %++++++++++++++++++++++++++++++
 
@@ -423,7 +423,7 @@ health insurance, and subsidized college tuition
 to affect birth rates. 
 
 %++++++++++++++++++++++++++++++
-\subsection{Affluence}
+\subsection{Affluence~\Aparen{}}
 \label{sec:collective_affluence}
 %++++++++++++++++++++++++++++++
 
@@ -483,7 +483,7 @@ about the relative carbon intensity of goods~\citep{Zhao_2012}.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Resource intensity of the economy}
+\subsection{Resource intensity of the economy~\Rparen{}}
 \label{sec:collective_resources}
 %++++++++++++++++++++++++++++++
 
@@ -556,7 +556,7 @@ thereby increasing the resource intensity of another economy.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Impact intensity of resources}
+\subsection{Impact intensity of resources~\Xparen{}}
 \label{sec:collective_impact_intensity}
 %++++++++++++++++++++++++++++++
 
@@ -638,7 +638,7 @@ Manufacturers become incentivized to
          \label{fig:energuide}
      \end{subfigure}
         \caption{Consumer-oriented labels for home appliances. 
-        In the U.S., Federal Trade Commission (FTC) requires an Energy Guide label on
+        In the U.S., the Federal Trade Commission (FTC) requires an Energy Guide label on
         some categories of consumer products.
         Manufactures are required to test their products in accordance with 
         U.S. Department of Energy standards and report their results to the FTC.
@@ -646,7 +646,7 @@ Manufacturers become incentivized to
         This furnace has the lowest legally allowed AFUE for its climate zone.
         (b) An Energy Guide label for a chest freezer. The label shows a range of
         expected \emph{cost} of yearly operation and estimated yearly electricity 
-        use. The range (\$35 to \$39) is small because there aren't many ``similar
+        use. The range (\$35--\$39) is small because there aren't many ``similar
         models'' to compare to, that is, 12.9 cubic feet is an uncommon size for 
         a chest freezer.
         Because this model is efficient \emph{for its category}, it qualifies for 
@@ -658,12 +658,16 @@ Manufacturers become incentivized to
         is the reverse of the same piece of paper.
         The EnerGuide label is mandatory for appliances sold in Canada, which also
         uses the U.S. EPA's Energy Star certification (yay, international cooperation!).
-        The EnerGuide label shows a range of estimated yearly energy \emph{consumption}.}
-        \label{fig:energy_star_total}
+        The EnerGuide label shows a range of estimated yearly energy consumption.
+        \emph{Sources}: 
+        (a)~\copyright{}2021 Matthew Kuperus Heun; 
+        (b)~\copyright{}2021 Jeremy Van Antwerp; 
+        (c)~\copyright{}2021 Jeremy Van Antwerp.}
+  \label{fig:energy_star_total}
 \end{figure}
 
 There are many potential collective actions to move
-in a more-sustainable direction regarding households and housing.
+in a more sustainable direction regarding households and housing.
 Building codes can be leveraged to mandate better insulation,
 more efficient systems (water heaters, appliances, furnaces), and
 improved windows.
@@ -702,7 +706,7 @@ The future owners would like to have the best insulation and the most efficient
 boiler.
 The developer wants as little investment as possible to be able to resell the property.
 
-\textbf{PACE financing} allows energy-efficiency improvements to be paid for
+PACE financing allows energy-efficiency improvements to be paid for
 by the energy savings themselves. 
 The loan for the deep energy retrofit becomes a lien on the
 property itself and is repaid in the form of additional property taxes.
@@ -784,10 +788,12 @@ for improvement.
                  emit CO$_2$. 
                  Note that efficiency (in passenger-km) 
                  for all vehicles increases with more passengers.
-                 Highway interchange imagery
-                 \textcopyright 2021 Kent County, 
-                 Maxar Technologies, USAD Farm Service Agency, 
-                 Map data \textcopyright 2021.}
+                 \emph{Sources}:  
+                 (a)~\copyright{}2021 Kent County, 
+                 Maxar Technologies, 
+                 USAD Farm Service Agency;
+                 (b)~XXXXX,
+                 \copyright{}2022.}
         \label{fig:collective_transport_photos}
 \end{figure}
 
@@ -832,7 +838,7 @@ renewables mandates for electricity producers.
 
 At an even larger level, governments can incentivize or regulate that
 cities be redesigned to reduce the need for lengthy commutes in the first place.
-An example of thoroughly re-thinking and re-implementing 
+An example of thoroughly rethinking and reimplementing 
 the transport infrastructure of a city 
 is provided by Curitiba, Brazil.
 The Curitiba bus rapid transit system is a award-winning~\cite{Hamilton:2010ti}
@@ -849,7 +855,8 @@ for sustainable outcomes.
 \begin{figure}
 \centering
 \includegraphics[width=\figwidth]{chapters/ch11-Government/photos/E85.jpeg}
-\caption{Ethanol-blended fuel available at the filling station.}
+\caption{Ethanol-blended fuel available at the filling station.
+         \emph{Source}: \copyright{}2021 Matthew Kuperus Heun.}
 \label{fig:E85}
 \end{figure}
 
@@ -885,7 +892,7 @@ Food labels should have standardized and defined terminology.
 For example, terms like ``organic,'' ``natural,'' ``free range,'' and ``grass fed''
 are not currently well defined or standardized in the U.S.
 Lastly, farm subsidies should be eliminated or reformed to stop wasting energy on
-biofuels with a very low EROI (see Table~\ref{tab:eroi}). 
+biofuels with a very low EROI; see Table~\ref{tab:eroi}. 
 Figure~\ref{fig:E85} shows a commercially available biofuel blend with low EROI.
 
 
@@ -910,7 +917,14 @@ Figure~\ref{fig:E85} shows a commercially available biofuel blend with low EROI.
          \caption{Suburban grocery store and parking.}
          \label{fig:suburban_grocery_store}
      \end{subfigure}
-        \caption{Comparison of land use densities. **** Need copyright for Suburban Grocery Store photo.}
+        \caption{Comparison of land use densities. 
+                 The urban shopping district is likely 
+                 to generate more revenue and more tax receipts per acre
+                 than the suburban grocery store and its huge parking lot.
+                 \emph{Sources}: 
+                 (a)~\copyright{}XXXX First Last; 
+                 (b)~\copyright{}XXXXX Craig Newhouse. 
+                 Used with permission.}
         \label{fig:urban_suburban_densities}
 \end{figure}
 
@@ -1006,7 +1020,7 @@ political problems must be solved before sustainability challenges can be addres
 Furthermore, decisions to become more sustainable often disadvantage 
 entrenched business interests, 
 because current world is unsustainable.
-For example, reducing CO$_2$ emissions disadvantages the entrenched fossil fuel industry.
+For example, reducing CO$_2$ emissions disadvantages the entrenched fossil-fuel industry.
 
 That's not to say we shouldn't try to make collective change. 
 Indeed, collective change is the only way to ensure that all people
@@ -1014,12 +1028,13 @@ Indeed, collective change is the only way to ensure that all people
 will live more sustainable lives.
 But the barriers to collective change are high.
 
-That said, governments are comprised of people.
+That said, governments are made up of people.
 In democracies, the people in government are chosen by the populace.
 Thus, collective actions and personal action intertwine at elections
 when representatives of the people are selected.
-Indeed, voting for representatives who favor collective change in the direction of sustainability 
-is one of the most important actions that can be taken by individuals.
+Indeed, voting for representatives who favor collective change
+toward sustainability 
+is an important action that can be taken by individuals.
 However, there are many more individual actions that can be undertaken
 to move the world in a sustainable direction. 
 Those individual actions are the subject of the next and final chapter.
@@ -1085,7 +1100,7 @@ Vlog Brothers \href{https://www.youtube.com/watch?v=wcMLFMsIVis}{``How we fix th
       of current environmental problems, what can low-skilled manual labor 
       accomplish toward solving the climate crisis?
       What were the proposed monetary costs of the Civilian Climate Corps?
-      What non-monetary costs would you expect to arise?
+      What nonmonetary costs would you expect to arise?
 
 \item Of the four types of actions for sustainability in 
       Section~\ref{sec:sust_actions}, which is the most important? 
@@ -1110,16 +1125,25 @@ Vlog Brothers \href{https://www.youtube.com/watch?v=wcMLFMsIVis}{``How we fix th
       government(s), corporations, nonprofits, or individuals?
       What reasons do you have for your answer?
       
-\item Carbon emissions from burning fossil fuels create externalities. 
-      (You burning fossil fuels hurts me. That's a ``cost'' I pay but you don't.)
-      Would it be more \emph{effective} to address fossil fuel externalities with a 
-      supplementary tax on fossil fuels \emph{or} via remediation of externalities
-      by individuals and NGOs? 
-      For instance, NGOs could be formed to work to mitigate the effects of 
-      climate change and individuals could donate to such efforts on a voluntary basis.
+\item Carbon emissions from combustion of fossil fuels are example of negative externalities. 
+      (You burning fossil fuels hurts me. 
+      That's a ``cost'' I pay but you don't.)
+      To address the negative externalities, 
+      taxes can be placed on fossil fuels to create incentives 
+      to move away from fossil fuels toward renewable energy.
+      Or, NGOs could be formed with the purpose of mitigating the effects of 
+      climate change.
+      Individuals could donate to such efforts on a voluntary basis.
+      Would it be more effective to address the negative externalities 
+      of fossil fuel consumption with
+      (a)~a tax on fossil fuels \emph{or} 
+      (b)~remediation by NGOs with support from individuals? 
       What reasons do you have for your answer?
       Does your answer about effectiveness depend on what is done with the tax money?
-      For the sake of answering this question, assume the tax is devoted to research 
+      Does your answer depend on your assumptions about the willingness of individuals
+      to donate to NGOs?
+      For the sake of answering this question, 
+      assume the tax revenue is devoted to research 
       (Section~\ref{sec:actions_research})
       to reduce the effects of climate change or to research on removing 
       greenhouse gases from the atmosphere. \label{question:carbon_tax_11}
@@ -1206,7 +1230,7 @@ Vlog Brothers \href{https://www.youtube.com/watch?v=wcMLFMsIVis}{``How we fix th
       associations who police (and prosecute) real or perceived violations of suburban
       lawn-care norms.
       Should there be a right to ... garden? To line dry clothes?
-      Can homeowners have chickens and goats in my urban or suburban yard?
+      Can homeowners have chickens and goats in any urban or suburban yard?
       Under what circumstances?
       Or, do zoning laws have have value and a rightful place in cities and suburbs? 
       What is the dividing line between a garden and a farm?
@@ -1215,7 +1239,8 @@ Vlog Brothers \href{https://www.youtube.com/watch?v=wcMLFMsIVis}{``How we fix th
 \item In the fall of 2019, the city of Grand Rapids, Michigan sent police officers 
       to the home of Bill Peterson with a warrant to search his property and 
       ``remove all items that were in violation of the city's nuisance, health and 
-      safety codes and items associated with an illegal home business.'' 
+      safety codes and items associated 
+      with an illegal home business''~\cite{McVicar:2019uz, McVicar:2019ur, McVicar:2021wc}.
       Peterson's history of legal difficulties with the city goes back to 2009 
       and includes twenty five citations and two stints in jail. 
       At the root of the issue is his business ``Trailer Trash.''
@@ -1275,7 +1300,7 @@ Vlog Brothers \href{https://www.youtube.com/watch?v=wcMLFMsIVis}{``How we fix th
       Given these, what technical research still needs to be done?
       
 \item Choose an organization of which you are a member
-      (college, university, corporation, church, household, etc.).
+      (for example, college, university, corporation, church, household).
       Create a plan to achieve carbon neutrality by a target date of your choice.
       Be sure to analyze CO$_2$-equivalent emissions and carbon sequestration
       for your organization. 
