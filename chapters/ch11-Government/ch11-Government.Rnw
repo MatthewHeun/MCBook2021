@@ -638,7 +638,7 @@ Manufacturers become incentivized to
          \label{fig:energuide}
      \end{subfigure}
         \caption{Consumer-oriented labels for home appliances. 
-        In the U.S., Federal Trade Commission (FTC) requires an Energy Guide label on
+        In the U.S., the Federal Trade Commission (FTC) requires an Energy Guide label on
         some categories of consumer products.
         Manufactures are required to test their products in accordance with 
         U.S. Department of Energy standards and report their results to the FTC.
@@ -646,7 +646,7 @@ Manufacturers become incentivized to
         This furnace has the lowest legally allowed AFUE for its climate zone.
         (b) An Energy Guide label for a chest freezer. The label shows a range of
         expected \emph{cost} of yearly operation and estimated yearly electricity 
-        use. The range (\$35 to \$39) is small because there aren't many ``similar
+        use. The range (\$35--\$39) is small because there aren't many ``similar
         models'' to compare to, that is, 12.9 cubic feet is an uncommon size for 
         a chest freezer.
         Because this model is efficient \emph{for its category}, it qualifies for 
@@ -658,12 +658,16 @@ Manufacturers become incentivized to
         is the reverse of the same piece of paper.
         The EnerGuide label is mandatory for appliances sold in Canada, which also
         uses the U.S. EPA's Energy Star certification (yay, international cooperation!).
-        The EnerGuide label shows a range of estimated yearly energy \emph{consumption}.}
-        \label{fig:energy_star_total}
+        The EnerGuide label shows a range of estimated yearly energy consumption.
+        \emph{Sources}: 
+        (a)~\copyright{}2021 Matthew Kuperus Heun; 
+        (b)~\copyright{}2021 Jeremy Van Antwerp; 
+        (c)~\copyright{}2021 Jeremy Van Antwerp.}
+  \label{fig:energy_star_total}
 \end{figure}
 
 There are many potential collective actions to move
-in a more-sustainable direction regarding households and housing.
+in a more sustainable direction regarding households and housing.
 Building codes can be leveraged to mandate better insulation,
 more efficient systems (water heaters, appliances, furnaces), and
 improved windows.
@@ -702,7 +706,7 @@ The future owners would like to have the best insulation and the most efficient
 boiler.
 The developer wants as little investment as possible to be able to resell the property.
 
-\textbf{PACE financing} allows energy-efficiency improvements to be paid for
+PACE financing allows energy-efficiency improvements to be paid for
 by the energy savings themselves. 
 The loan for the deep energy retrofit becomes a lien on the
 property itself and is repaid in the form of additional property taxes.
@@ -784,10 +788,12 @@ for improvement.
                  emit CO$_2$. 
                  Note that efficiency (in passenger-km) 
                  for all vehicles increases with more passengers.
-                 Highway interchange imagery
-                 \textcopyright 2021 Kent County, 
-                 Maxar Technologies, USAD Farm Service Agency, 
-                 Map data \textcopyright 2021.}
+                 \emph{Sources}:  
+                 (a)~\copyright{}2021 Kent County, 
+                 Maxar Technologies, 
+                 USAD Farm Service Agency;
+                 (b)~XXXXX,
+                 \copyright{}2022.}
         \label{fig:collective_transport_photos}
 \end{figure}
 
@@ -832,7 +838,7 @@ renewables mandates for electricity producers.
 
 At an even larger level, governments can incentivize or regulate that
 cities be redesigned to reduce the need for lengthy commutes in the first place.
-An example of thoroughly re-thinking and re-implementing 
+An example of thoroughly rethinking and reimplementing 
 the transport infrastructure of a city 
 is provided by Curitiba, Brazil.
 The Curitiba bus rapid transit system is a award-winning~\cite{Hamilton:2010ti}
@@ -885,7 +891,7 @@ Food labels should have standardized and defined terminology.
 For example, terms like ``organic,'' ``natural,'' ``free range,'' and ``grass fed''
 are not currently well defined or standardized in the U.S.
 Lastly, farm subsidies should be eliminated or reformed to stop wasting energy on
-biofuels with a very low EROI (see Table~\ref{tab:eroi}). 
+biofuels with a very low EROI; see Table~\ref{tab:eroi}. 
 Figure~\ref{fig:E85} shows a commercially available biofuel blend with low EROI.
 
 
@@ -910,7 +916,13 @@ Figure~\ref{fig:E85} shows a commercially available biofuel blend with low EROI.
          \caption{Suburban grocery store and parking.}
          \label{fig:suburban_grocery_store}
      \end{subfigure}
-        \caption{Comparison of land use densities. **** Need copyright for Suburban Grocery Store photo.}
+        \caption{Comparison of land use densities. 
+                 The urban shopping district is likely 
+                 to generate more revenue and more tax receipts per acre
+                 than the suburban grocery store and its huge parking lot.
+                 \emph{Source}: (b)~ XXXXX, \copyright 2021. 
+                 Used with permission.
+                 **** Need copyright for Suburban Grocery Store photo.}
         \label{fig:urban_suburban_densities}
 \end{figure}
 
