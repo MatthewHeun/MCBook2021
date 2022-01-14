@@ -319,7 +319,7 @@ per GDP as we ever have.
 And because GDP is growing, total material use grows, too.
 
 
-<<total_material_use, fig.cap="World material use. ``Construction'' includes all construction minerals. ``Ores'' includes all industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
+<<total_material_use, fig.scap="World material use.", fig.cap="World material use. ``Construction'' includes all construction minerals. ``Ores'' includes all industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
 krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
                                 sheet = "data to plot") %>% 
   dplyr::rename(
@@ -351,7 +351,7 @@ ggplot2::ggplot() +
 @
 
 
-<<per_capita_material_use, fig.cap='World per-capita material use. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: \\citet[Figure~1c]{Krausmann:2009wc}.'>>=
+<<per_capita_material_use, fig.scap="World material use per person.", fig.cap='World per-capita material use. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: \\citet[Figure~1c]{Krausmann:2009wc}.'>>=
 material_per_capita <- krausmann %>% 
   dplyr::left_join(historical_pop, by = "Year") %>% 
   dplyr::mutate(
@@ -376,7 +376,7 @@ material_per_capita %>%
 
 
 
-<<per_gdp_material_use, fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of construction materials, ores, and fossil fuels scales quite well with GDP and shows no growth on this graph, as the thickness of those bands varies little over time. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<per_gdp_material_use, fig.scap="World material use per GDP.", fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of construction materials, ores, and fossil fuels scales quite well with GDP and shows no growth on this graph, as the thickness of those bands varies little over time. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 material_per_gdp <- krausmann %>% 
   dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>% 
   dplyr::mutate(
@@ -518,7 +518,7 @@ germanium (now being consumed at twice its sustainable rate,
 $\rho$~=~100\% in Figure~\ref{fig:PercentageOfSustainable})
 is one of the critical raw materials in Table~\ref{tab:CRMs}.
 
-<<PercentageOfSustainable, fig.width=3.25, fig.cap="Percentage above maximum weakly sustainable rates~($\\rho$). For zinc and germanium, the percentage above the average maximum weakly sustainable extraction rates. For CO$_2$, the percentage above maximum weakly sustainable emission rate. \\emph{Source}: \\citet[Tables~2.1--2.3]{Graedel:2010ab}.">>=
+<<PercentageOfSustainable, fig.scap="Percentage above weak sustainability for Zn, Ge, and CO$_2$.", fig.width=3.25, fig.cap="Percentage above maximum weakly sustainable rates~($\\rho$). For zinc and germanium, the percentage above the average maximum weakly sustainable extraction rates. For CO$_2$, the percentage above maximum weakly sustainable emission rate. \\emph{Source}: \\citet[Tables~2.1--2.3]{Graedel:2010ab}.">>=
 weak_sust_data <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"),
                    sheet = "data to plot") %>%
   dplyr::mutate(
@@ -706,13 +706,15 @@ Industry and transportation use more energy than residences and commerce.
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{chapters/ch05-ResourceIntensity/figures/Energy_US_2018.png}
-\caption{U.S.\ energy consumption in 2018.
-\emph{Source}: \citet{Lawrence-Livermore-National-Laboratory:ua}.}\index{Sankey diagram!energy}
+\caption[U.S.\ energy consumption Sankey diagram.]
+        {U.S.\ energy consumption in 2018.
+         \emph{Source}: 
+         \citet{Lawrence-Livermore-National-Laboratory:ua}.}\index{Sankey diagram!energy}
 \label{fig:LLNL_energy_sankey}
 \end{figure}
 
 
-<<PrimaryEnergyGraph, fig.cap=paste0("World annual primary energy consumption. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels. ", fit_sentence(primary_energy_fit), " \\emph{Source}: \\citet{Roser:2021vi}.")>>=
+<<PrimaryEnergyGraph, fig.scap="World primary energy consumption vs.\\ time.", fig.cap="World annual primary energy consumption. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels. \\emph{Source}: \\citet{Roser:2021vi}.">>=
 # Gather data for primary energy vs. time graph
 primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "global-primary-energy.xlsx"),
                                      sheet = "data to plot") %>%
@@ -777,7 +779,7 @@ as shown in Figure~\ref{fig:PercentageOfSustainable}.)
 Neither oil nor natural gas are being consumed at a weakly sustainable rate.
 
 
-<<EnergyPerPersonGraph, fig.cap="World primary energy consumption per person. Note that per-person primary energy consumption is approximately flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth. (See Figure~\\ref{fig:PopulationGraph}.) In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth \\emph{and} increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times R$ in the IPARX equation (Equation \\ref{eq:IPARX}) for the prime example of energy.">>=
+<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person.", fig.cap="World primary energy consumption per person. Note that per-person primary energy consumption is approximately flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth. (See Figure~\\ref{fig:PopulationGraph}.) In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth \\emph{and} increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product $A \\times R$ in the IPARX equation (Equation \\ref{eq:IPARX}) for the prime example of energy.">>=
 
 # Find which years have data from the Europe data set
 which_years <- region_pop %>%
@@ -867,7 +869,7 @@ noticeable rise in per-capita energy consumption starting in 2001.
 %   )
 % @
 
-<<WeakSustEnergyGraph, fig.width=3.25, fig.cap=paste0("Percentage above maximum weakly sustainable extraction rates~($\\rho$) for world fossil fuel consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate and a negative value of $\\rho$), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for Oil (less than 50 years, so above the weakly sustainable extraction rate and a positive value of $\\rho$), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for Natural gas (so positive $\\rho$). \\emph{Sources}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
+<<WeakSustEnergyGraph, fig.width=3.25, fig.scap="Percentage above weak sustainability for fossil fuels.", fig.cap=paste0("Percentage above maximum weakly sustainable extraction rates~($\\rho$) for world fossil fuel consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate and a negative value of $\\rho$), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for Oil (less than 50 years, so above the weakly sustainable extraction rate and a positive value of $\\rho$), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for Natural gas (so positive $\\rho$). \\emph{Sources}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
 
 weak_sust_energy_rho <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
                                             sheet = "data to plot") %>% 
@@ -893,7 +895,7 @@ weak_sust_energy_rho %>%
 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Energy intensity of the economy ($R_{Ep}$)}
+\section{Energy intensity of the economy ($\mft{R}_{\mft{Ep}}$)}
 \label{sec:energy_intensity_of_the_economy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -983,7 +985,7 @@ The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 % @
 
 
-<<EnergyIntensityGraph-Nordhaus, fig.cap="Primary energy intensity of economic activity $R_{Ep}$, the prime example for \\mft{R} in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<EnergyIntensityGraph-Nordhaus, fig.scap="Primary energy intensity of economic activity~($\\mft{R}_{\\mft{Ep}}$) vs.\\ time.", fig.cap="Primary energy intensity of economic activity~($\\mft{R}_{\\mft{Ep}}$), the prime example for \\mft{R} in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
 # Create data for the energy intensity of the economy.
 energy_intensity <- dplyr::inner_join(
   # Get the primary energy data

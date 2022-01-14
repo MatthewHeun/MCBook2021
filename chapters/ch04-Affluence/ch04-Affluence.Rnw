@@ -128,7 +128,7 @@ if the resource intensity of the economy~\Rparen{} and the impact intensity of r
 % @
 
 
-<<AffluenceGraph-Nordhaus, fig.cap = paste0("Annual world GDP per capita, affluence~\\Aparen{} in Equation~\\ref{eq:IPARX}. ",  fit_sentence(gdppc_fit), " \\emph{Sources}: data for 1800--1989 inferred from GDP per capita growth rates from \\citet{Nordhaus:1997vi} via \\citet{DeLong:1997ui}; data for 1990--2020 from the \\citet{World-Bank:2021un}.")>>=
+<<AffluenceGraph-Nordhaus, fig.scap="World GDP per capita~\\Aparen{} vs.\\ time.", fig.cap = paste0("Annual world GDP per capita, affluence~\\Aparen{} in Equation~\\ref{eq:IPARX}. ",  fit_sentence(gdppc_fit), " \\emph{Sources}: data for 1800--1989 inferred from GDP per capita growth rates from \\citet{Nordhaus:1997vi} via \\citet{DeLong:1997ui}; data for 1990--2020 from the \\citet{World-Bank:2021un}.")>>=
 world_gdppc_Nordhaus <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
                                            sheet = "GDPpc-Nordhaus-WB") %>% 
   dplyr::select(-Country, -Source)
@@ -225,7 +225,7 @@ affluence_growth_rate <- gdppc_fit %>%
 %   MKHthemes::xy_theme()
 % @
 
-<<GDPGraph-Nordhaus, fig.cap=paste0("World annual GDP calculated by multiplying world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph-Nordhaus}.", fit_sentence(gdp_fit))>>=
+<<GDPGraph-Nordhaus, fig.scap="World GDP vs.\\ time.", fig.cap=paste0("World annual GDP calculated by multiplying world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph-Nordhaus}.", fit_sentence(gdp_fit))>>=
 # Gather world population data
 world_pop <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "WorldPopulation.xlsx"),
                                 sheet = "world_pop") %>%
@@ -438,7 +438,12 @@ That leaves only efficiency as a means of boosting affluence.
 From a sustainability point of view, we should want everything to be used
 as efficiently as possible; inefficiency of any kind is not desirable.
 
-\paragraph{Labor} The productivity of labor depends on the education and skill 
+
+%..............................
+\paragraph{Labor} 
+%..............................
+
+The productivity of labor depends on the education and skill 
 of workers, technology, the number of workers in the population, the number of hours they 
 work, and the fraction of the population that is working;
 see Section~\ref{sec:dtt}.
@@ -449,7 +454,12 @@ such as with the demographic dividend,
 or workers working longer hours will tend to increase \mft{A} (at least until the 
 population pyramid stabilizes, in the case of the demographic dividend).
 
-\paragraph{Capital} Capital is buildings, equipment, machines, and tools---\emph{things}
+
+%..............................
+\paragraph{Capital} 
+%..............................
+
+Capital is buildings, equipment, machines, and tools---\emph{things}
 that make workers more productive.
 For instance, a builder with a backhoe can excavate a foundation faster than a
 builder with only a shovel.
@@ -467,7 +477,12 @@ to the economy.
 At the effective maximum level of effective capital, labor will have a maximum
 level of output because workers are fully ``tooled up.''
 
-\paragraph{Innovation} Innovation is the major source of economic growth.
+
+%..............................
+\paragraph{Innovation} 
+%..............................
+
+Innovation is the major source of economic growth.
 There are two types of innovation: the invention of new \emph{kinds} of goods and
 services \emph{or} improvements to efficiency.
 The majority of the goods and services we consume today did not exist in 
@@ -507,7 +522,11 @@ is a major sustainability challenge; see Section~\ref{sec:rebound_effect}.
 % Check the new paragraph below --- JVA
 % *****
 
+
+%..............................
 \paragraph{Recession}
+%..............................
+
 Economies can grow (particularly when we try to make them grow) but they can also
 shrink.
 A shrinking economy is said to be in recession.
@@ -532,6 +551,7 @@ generate the negative effects of a recession?
 The next section examines some ideas that have been proposed as alternatives
 to continued economic growth.
 (Note that we \emph{examine} these ideas without necessarily \emph{endorsing} them.)
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zero growth, degrowth, and alternative economic models}
@@ -710,6 +730,7 @@ energy services, energy consumption, and CO$_2$ emissions.
 
 Despite the limitations mentioned above, alternative economic models suggest 
 helpful ways of thinking about affluence from a sustainability perspective.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Individual affluence}
