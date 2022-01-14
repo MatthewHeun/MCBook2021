@@ -375,9 +375,9 @@ population is predicted to grow rapidly and then stabilize.
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Demographic transition theory gives us some hope for sustainability, namely, that 
-the total human population \Pparen{} won't \textit{continue} to grow exponentially. 
+the total human population~\Pparen{} won't \textit{continue} to grow exponentially. 
 On the other hand, slowing of growth is predicated on increasing GDP per capita
-(the \Aparen{} term in Equation~\ref{eq:IPARX}).
+(the \mft{A} term in Equation~\ref{eq:IPARX}).
 \end{mcframe}
 
 
@@ -534,7 +534,7 @@ the birth rate might rise again (causing further population growth)
 Currently, most developed countries have a birth rate that is \emph{below} the
 \emph{replacement rate}, that is, a falling population (offset, in some cases,
 by immigration).
-As stated earlier, low birth rates are correlated to higher affluence \mft{A}.
+As stated earlier, low birth rates are correlated to higher affluence~\mft{A}.
 
 As countries move through the demographic transition, the age structure of the 
 population changes.
@@ -544,26 +544,28 @@ each sex.
 the total population.) 
 The age structure of a population provides a lot of information about the population's 
 future and its economic outlook. 
-Stage 1 has many young people and few old people.
-In stage 2, more young people are being born and people are living longer. 
-Both of these groups are not of working age and so tend to contribute little to GDP. 
+Stage~1 has many young people and few old people.
+In Stage~2, more young people are being born and people are living longer. 
+Both of these groups are not of working age and tend to contribute little to GDP. 
 (In fact, they are dependents who \emph{consume} rather than generate income.) 
-Later, in stage 3, as these young people mature and join the labor market and the 
-birth rate falls, the fraction of the population that is working is much higher, 
+Later, in Stage~3, as young people mature and join the labor market and the 
+birth rate falls, 
+the fraction of the population that is working is much higher, 
 which generates a \emph{demographic dividend}.
 GDP \emph{per capita} is higher because the fraction of the population that 
 is working is higher. 
-Finally, in stage 4 the age distribution of the population stabilizes.
+Finally, in Stage~4 the age distribution of the population stabilizes.
 If birthrates continue to fall,
-the population pyramid becomes ``top heavy,'' and there are a higher proportion
+the population pyramid becomes ``top heavy,'' and there is a higher proportion
 of retirees to workers.
 GDP per capita is lower than it would be with a different age structure. 
-(There can still be growth in GDP per capita; it's just that growth faces a 
+(There can still be growth in GDP per capita, but growth faces a 
 demographic ``headwind.'')
 
 The age structure of the population also shows \emph{demographic momentum}. 
 It takes a lifetime to age a cohort out of the population pyramid. 
-The next generation of parents have already been born; today's children are 
+The next generation of parents have already been born. 
+Today's children are 
 going to become the parents of tomorrow (that is, of the next generation). 
 A falling birth rate doesn't immediately lower the total population; 
 it takes time for the population to stabilize. 
@@ -573,22 +575,26 @@ of the total population.
 The overall death rate will still be greater than the overall birth rate because of
 the sizes of the relevant age cohorts.
 
+
+%++++++++++++++++++++++++++++++
 \subsection{Distribution of population}
 \label{sec:pop_density}
+%++++++++++++++++++++++++++++++
+
 Where do people live? 
-Given our goal of sustainability, where \emph{should} people live to be more sustainable? 
+Where \emph{should} people live to be more sustainable? 
 \emph{Population density}, which is the number of people per area, is a key 
 metric for sustainability.
 High population density, characteristic of urban areas, enables, for example,
 cost-effective mass transit, which reduces carbon emissions from transportation.
 On the other hand, high human population densities will exclude many animal species.
-Chapter~\ref{chap:land_use_urban_planning} discusses in more detail the 
-land-sharing versus land-sparing paradigm.
 Concentrating human population into a few high-density areas allows (in theory)
 other habitat areas to be ``spared,'' or dedicated for animal use. 
 In contrast to less dense, less impactful human use (that is, the ``sharing'' paradigm) 
 %% https://english.stackexchange.com/questions/21104/hyphen-or-no-hyphen-when-modifying-an-adjective-with-an-intensifier-downtoner 
 areas with concentrated human activity tend to exclude most animal species.
+(Chapter~\ref{chap:land_use_urban_planning} discusses in more detail the 
+land-sharing versus land-sparing paradigm.)
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
