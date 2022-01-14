@@ -20,26 +20,30 @@ double what was on the previous square.
 The king accepted the wager but lost the game.
 % according to chess.com a match is a series of games.
 A chessboard has eight rows and eight columns, so the king had to pay $2^{64}-1 \;$
-grains (see Section \ref{sec:exp}).
+grains.
+(See Section \ref{sec:exp} for an explanation of the math behind this formula.)
 Rice is seven thousand grains per pound ($\sim$~65~mg each),
-which means the king owed the scholar 1.199~$\times$~10$^{\text{15}}$ kg of rice, 
+so the king owed the scholar 1.199~$\times$~10$^{\text{15}}$ kg of rice, 
 % about 12\% of the weight of everything ever produced by the human species [1]. At
 % US\$6.85/bushel, the grain would be worth about 300 trillion dollars, which is (roughly)
 % ten times more money than exists in the world.
-which is more than 150 tons of rice for every person on planet Earth
+which is more than 150 tons of rice for every person currently on planet Earth
 (worth about \$40,000 per person).
 For reference, people eat about 35 tons of food in a lifetime, 
-so this is 4.4 lifetimes' supply of food for every person on the planet.
-Clearly, this won't all fit on an ordinary chessboard!
+so this is~4.4 lifetimes' supply of food for every person on the planet.
+Clearly, the scholar's winnings won't all fit on an ordinary chessboard!
 
 This story, which goes back at least to the 1200s AD, illustrates several aspects of the
 sustainability problem that have been evident for centuries:
-Exponential, or constant, growth (see Section \ref{sec:exp}) is
+Exponential growth (Section \ref{sec:exp}) is
 % a) hard to understand and b) is
 inherently not sustainable;
 big numbers are hard to \href{https://en.wiktionary.org/wiki/grok}{grok};
 % Cognitive biases, Decartes’ chiliagon, Numerical cognition, Subitizing, Dunbar number, 50-year time frame.
 and making large wagers on limited understanding is unwise.
+At the moment, human society is making the king's wager writ large. 
+We are pursuing exponential growth without fully understanding the consequences.
+In short, we have sustainability challenges.
 
 You are reading this book because you think sustainability is important.
 And it is.
@@ -52,21 +56,24 @@ of exponential growth and limited knowledge.
 %Sustainability complexity and we'll spend a lot of time looking at the interconnections
 %between different aspects of sustainability challenges.
 
-Furthermore, this story hints at a social element of the sustainability problem.
+Furthermore, the king's wager hints at a social element of the sustainability problem.
 In the story, the king doesn't want to appear ``weak'' before his subject and so
 (rashly) accepts the wager.
 In sustainability, there is tremendous social (and sometimes economic) pressure
 to continue to do things ``the way they've always been done.''
 
-Figure \ref{fig:venn_diagram} shows the three areas of sustainability,
-the interrelated and overlapping domains of environmental sustainability,
-economic sustainability, and social sustainability.
-Sustainability is like a three-legged stool or a table on three legs.
-If one of the supports is removed, the whole thing falls flat.
-The complexity and interconnectivity of sustainability problems is not limited to
-one domain. 
-Pollution is an environmental problem, and a social problem, and an economic problem.
-Likewise renewable energy. And land use. And ... all the other challenges humanity faces.
+Figure~\ref{fig:venn_diagram} shows the three interrelated and overlapping domains 
+of sustainability: environmental sustainability, economic sustainability, and 
+social sustainability.
+The sustainability problems are complex and interconnected.
+Environmental sustainability problems have social and economic aspects (that are 
+generally more difficult to solve).
+Likewise, economic and social sustainability problems are not limited to one domain;
+typically, they include aspects of the other two domains as well.
+% Sustainability is like a three-legged stool or a table on three legs.
+% If one of the supports is removed, the whole thing falls flat.
+Therefore, pollution is an environmental problem, and a social problem, and an economic problem.
+Likewise renewable energy. And land use. And all the other challenges humanity faces.
 
 \begin{figure}
 \centering
@@ -86,7 +93,8 @@ Likewise renewable energy. And land use. And ... all the other challenges humani
            Social sustainability refers to traditions and systems of human society.
            The layering in this figure represents coverage in this book.
            We focus on environmental and economic sustainability.
-           Social sustainability is vitally important but the backdrop for much of the discussion herein.}
+           Social sustainability is vitally important, so it forms the backdrop 
+           for much of the discussion herein.}
 \label{fig:venn_diagram}
 \end{figure}
 
@@ -94,13 +102,13 @@ Likewise renewable energy. And land use. And ... all the other challenges humani
 
 % Let's say more here about the organization of the book in terms of social, economic, and ES?
 
-Sustainability is difficult for two additional reasons. 
+Sustainability is challenging for two additional reasons. 
 First, it may seem that the changes required to achieve sustainability are so 
-massively overwhelming that they shouldn't even be attempted.
+massively overwhelming that they shouldn't even be addressed.
 Second, it may seem like the consequences of not becoming sustainable are so far
 in the future that there is neither urgency nor immediate payback.
-Neither of these views is true.
-A quick survey of current news headlines indicates that we are already 
+However, neither of these views is true.
+Current news headlines indicate that we are already 
 experiencing the effects of not being sustainable, in all areas 
 of the sustainability triangle---environmentally, economically, \emph{and} socially.
 There are many reasonable and simple things that can be done to improve our 
@@ -117,13 +125,13 @@ rewards and the greater those rewards will be.
 
 This book summarizes ways that humans are not living sustainably and suggests % outline?
 characteristics of sustainable societies.
-Each chapter starts with basic data and key concepts.
+%Each chapter starts with basic data and key concepts.
 The text is deliberately short because the book is not intended to be comprehensive.
 The focus is on equipping the reader to discuss moral and ethical issues around sustainability.
 Because the choices and paths to sustainability are filled with value judgements and moral choices,
 the end-of-chapter discussion questions mostly point to tradeoffs and do not have ``right answers.''
 Instead, different answers indicate different preferences.
-This book attempts to provide a coherent framework for discussing sustainability
+This book presents a coherent framework for discussing sustainability
 that is grounded in a sense of scale.
 Therefore, we prioritize presenting information graphically.
 The intent is to equip readers with basic knowledge (informed by scale) so we can
@@ -139,7 +147,7 @@ As you read this book, it should raise many questions for you.
 % and interconnected.
 The focus of this book is the many \emph{challenges} of sustainability.
 While we may, at times, point to directions for improved sustainability
-(see Chapters~\ref{chap:government} and \ref{chap:personal_action}),
+(Chapters~\ref{chap:government} and \ref{chap:personal_action}),
 it is beyond our scope
 (and indeed our ability) to provide \emph{solutions} for all sustainability problems.
 Some (or many) of the questions that are raised about sustainability 
@@ -149,7 +157,8 @@ Our framework for describing sustainability challenges is illustrated by data.
 Thus, readers can expect graphs, tables, and other numerical representations
 of the state of our world as it relates to sustainability.
 Part~\ref{part:IPARX} (Chapters~\ref{chap:introduction}--\ref{chap:impact_intensity})
-shows mostly data from the world in aggregate.
+shows mostly data from the world in aggregate, thereby eliminating issues of 
+imports and exports between countries.
 Part~\ref{part:sustainability_challenges} shows data mostly from the U.S.\footnote{
   Readers are encouraged to remember that the U.S.\ is atypical in many ways.
   Sociologically, the U.S.\ is WIERD (Western, industrialized, educated, rich, and democratic).
