@@ -170,7 +170,7 @@ catastrophic collapse.
          \label{fig:buoyancy_b}
      \end{subfigure}
 
-        \caption[Boat stability.]
+        \caption[Boat stability]
                 {Boat stability. The static forces acting on a boat are the weight
                 of the boat (W) and the buoyancy force (B). When the boat is heeled over a small
                 amount (a), the moment created by these two forces acts to right the boat. 
@@ -319,7 +319,7 @@ The upper limits for these indicators are intended to define a
 % \bottomrule \end{tabular}
 
 \begin{table}\centering
-\caption[Planetary boundaries.]
+\caption[Planetary boundaries]
         {Some planetary boundaries. \emph{Source}: \citet{Rockstrom2009,SteffenRR2015}.}
 \label{tab:planetBoundaries}
 \begin{tabular}{l l}
@@ -355,7 +355,7 @@ Generating new species by natural evolution to replace the ones that have been
 lost will take several million years~\cite{Davis11262}.
 
 
-<<CO2Graph, fig.scap="Atmospheric CO$_2$ concentration vs.\\ time.", fig.cap="Atmospheric CO$_2$ concentration over time. The red line shows the planetary boundary for atmospheric CO$_2$ concentration, 305~ppm. The vertical line shows the year 2022. \\emph{Sources}: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Tans:2022vw}.">>=
+<<CO2Graph, fig.scap="Atmospheric CO$_2$ concentration vs.\\ time", fig.cap="Atmospheric CO$_2$ concentration over time. The red line shows the planetary boundary for atmospheric CO$_2$ concentration, 305~ppm. The vertical line shows the year 2022. \\emph{Sources}: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Tans:2022vw}.">>=
 # Gather data for CO2 vs. time graph
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>%
   dplyr::mutate(
@@ -504,7 +504,7 @@ erodable_limit_data %>%
          \caption{Erodible limits.}
          \label{fig:GA4}
      \end{subfigure}
-        \caption[Biophysical boundaries and human development.]
+        \caption[Biophysical boundaries and human development]
                 {Various relationships between biophysical boundaries and human development.
                  The boundary or carrying capacity of the ecosystem is shown as a dash-dot red line.
                  A variable related to human development, such as population or food production is
@@ -585,7 +585,7 @@ goals or enforcement mechanisms for maintaining desired behavior.
 It remains for scientists, policy makers, and government officials to conduct 
 research, make recommendations, regulate, and enforce laws.
 
-<<FootprintHDIGraph, fig.scap="Ecological footprint vs.\\ HDI.", fig.cap="Ecological footprint vs.\\ HDI for 2017. Population is in millions. HDI between 0.7 and 0.8 is considered ``high'' human development. HDI greater than 0.8 is considered ``very high'' human development. Ecological footprint below 1.9 global hectares per person is considered sustainable. The only countries ``inside the box'' at the lower right of the graph (high human development and sustainable ecological footprint) are the Philippines and Sri Lanka. No country exhibits ``very high'' human development and a sustainable ecological footprint. ``gha'' is global hectares. \\emph{Source}: \\citet{Global-Footprint-Network:ut}.">>=
+<<FootprintHDIGraph, fig.scap="Ecological footprint vs.\\ HDI", fig.cap="Ecological footprint vs.\\ HDI for 2017. Population is in millions. HDI between 0.7 and 0.8 is considered ``high'' human development. HDI greater than 0.8 is considered ``very high'' human development. Ecological footprint below 1.9 global hectares per person is considered sustainable. The only countries ``inside the box'' at the lower right of the graph (high human development and sustainable ecological footprint) are the Philippines and Sri Lanka. No country exhibits ``very high'' human development and a sustainable ecological footprint. ``gha'' is global hectares. \\emph{Source}: \\citet{Global-Footprint-Network:ut}.">>=
 clrs <- viridis::viridis(6, begin = 0, end = 0.99)
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI.xlsx"),
                                   sheet = "data to plot") %>% 
@@ -673,7 +673,7 @@ fit_sentence <- function(.df) {
 }
 @
 
-<<CarbonEmissionsGraph, fig.scap="World CO$_2$ emissions~\\Iparen{} vs.\\ time.", fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, \\mft{I} in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
+<<CarbonEmissionsGraph, fig.scap="World CO$_2$ emissions~\\Iparen{} vs.\\ time", fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, \\mft{I} in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                                     sheet = "data to plot")
 

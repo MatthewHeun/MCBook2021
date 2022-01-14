@@ -134,7 +134,7 @@ because of the valuable role bees play in pollinating human crops.
 \label{sec:human_population}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-<<PopulationGraph, fig.scap="World population~\\Pparen{} vs.\\ time.", fig.cap="World population, \\mft{P} in the IPARX equation. \\emph{Source}: \\citet{Roser:2021uu}.">>=
+<<PopulationGraph, fig.scap="World population~\\Pparen{} vs.\\ time", fig.cap="World population, \\mft{P} in the IPARX equation. \\emph{Source}: \\citet{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
@@ -254,7 +254,7 @@ Indeed, Figure~\ref{fig:UN_population_prospect} contains both the possiblity
 that world population will peak around 2050 \emph{and} the possibility
 that population will keep rising to the end of the century.
 
-<<UN_population_prospect, fig.scap="Projections of world population.", fig.cap="Projections of world population. The light gray region shows a 95\\% prediction interval. The dark gray region shows a 80\\% prediction interval. \\emph{Sources}: Historical data from \\citet{Roser:2021uu}; future projections from \\citet{UNEcSoAf:2021vj}.">>=
+<<UN_population_prospect, fig.scap="Projections of world population", fig.cap="Projections of world population. The light gray region shows a 95\\% prediction interval. The dark gray region shows a 80\\% prediction interval. \\emph{Sources}: Historical data from \\citet{Roser:2021uu}; future projections from \\citet{UNEcSoAf:2021vj}.">>=
 future_pop <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "UN_PPP2019_Output_PopTot.xlsx"),
                                              sheet = "data to plot") %>% 
   tidyr::pivot_longer(-Year, names_to = "band", values_to = "pop_thousands") %>% 
@@ -319,7 +319,7 @@ The point of Figure \ref{fig:World3loops} is to show that many variables
 
   \input{chapters/ch03-Population/population_diagram.tex}
 
-\caption[Population feedback loops.]
+\caption[Population feedback loops]
         {Causal loop diagram of several important feedback loops.
          Exogenous inputs are shown in \emph{italics}. 
          ``$+$'' indicates a parameter at the start of an arrow whose increase will 
@@ -503,7 +503,7 @@ pop_pyramids %>%
                  # strip.text.x = ggplot2::element_text(margin = ggplot2::margin(b = 2.0)))
 @
      \end{subfigure}
-        \caption[Demographic transition theory.]
+        \caption[Demographic transition theory]
                 {Schematic of demographic transition theory. Crude birth rate (CBR) and
                  crude death rate (CDR) are defined as births or deaths per year per 1000 people
                  in the total population (uncorrected for sex or age cohorts).}
@@ -604,7 +604,7 @@ Figure~\ref{fig:half_population}, with a radius of about 3,300km~\cite{Quah2015}
 This area of Southeast Asia has very high population density.
 \end{mcframe}
 
-<<half_population, fig.scap="The Valeriepieris circle.", fig.cap="The Valeriepieris circle. As of 2015, half of the world's population lives in a circle with a radius of 3,300~km centered on Mong Khet, Myanmar~\\cite{Quah2015}.">>=
+<<half_population, fig.scap="The Valeriepieris circle", fig.cap="The Valeriepieris circle. As of 2015, half of the world's population lives in a circle with a radius of 3,300~km centered on Mong Khet, Myanmar~\\cite{Quah2015}.">>=
 
 # Function to determine a projected circle
 geo_circle <- function(lon_deg, lat_deg, radius_meters) {

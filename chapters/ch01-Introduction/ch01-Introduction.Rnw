@@ -80,7 +80,7 @@ Likewise renewable energy. And land use. And all the other challenges humanity f
 
   \input{chapters/ch01-Introduction/venn_diagram.tex}
 
-  \caption[Three aspects of sustainability.]
+  \caption[Three aspects of sustainability]
           {The three aspects of sustainability.
            Sustainability is often visualized as three overlapping ellipses:
            environmental sustainability,
@@ -361,7 +361,7 @@ In the end, without environmental sustainability, there is no sustainability at 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{A framework for environmental sustainaiblity thinking}%Impacts and their sources}
+\section{A framework for environmental sustainaiblity thinking}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Two mathematical identities, IPAT and Kaya, have been used to express sources and impact
@@ -506,7 +506,7 @@ to 16 every 6.93 years.
 % @
 % 
 
-<<exp, fig.scap="Rice mass on the chessboard of the king's wager.", fig.cap="Rice mass on each square of the chessboard in the king's wager. The last row of the chessboard (squares 57--64) contains nearly all of the rice mass. Pg is petagram; 1~Pg = 10$^{\\text{12}}$~kg.">>=
+<<exp, fig.scap="Rice mass on the chessboard of the king's wager", fig.cap="Rice mass on each square of the chessboard in the king's wager. The last row of the chessboard (squares 57--64) contains nearly all of the rice mass. Pg is petagram; 1~Pg = 10$^{\\text{12}}$~kg.">>=
 chessboard_data <- tibble::tibble(x = 1:64) %>% 
   dplyr::mutate(
     y = 2^(x - 1), 
@@ -637,7 +637,7 @@ Although constrained by basic biophysical limits, EROI can be improved with bett
 more efficient technology.
 
 \begin{table}\centering
-\caption[EROI for several energy sources.]
+\caption[EROI for several energy sources]
         {Energy return on investment (EROI) for several energy sources.
 Sources: see~\cite{Wikipedia_EROI,WNA2020,EtOH_in_BR,Gomiero2015} and sources therein.}
 \label{tab:eroi}
@@ -710,7 +710,7 @@ the full restoration is likely to cost more than \euro{8} billion.
          \caption{During (April 2019).}
          \label{fig:ND_during}
      \end{subfigure}
-        \caption[Notre-Dame de Paris cathedral.]
+        \caption[Notre-Dame de Paris cathedral]
                 {Notre-Dame de Paris cathedral, before and
                  during the fire of 2019.
                  \emph{Sources}:

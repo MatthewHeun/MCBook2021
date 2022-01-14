@@ -128,7 +128,7 @@ if the resource intensity of the economy~\Rparen{} and the impact intensity of r
 % @
 
 
-<<AffluenceGraph-Nordhaus, fig.scap="World GDP per capita~\\Aparen{} vs.\\ time.", fig.cap = paste0("Annual world GDP per capita, affluence~\\Aparen{} in Equation~\\ref{eq:IPARX}. ",  fit_sentence(gdppc_fit), " \\emph{Sources}: data for 1800--1989 inferred from GDP per capita growth rates from \\citet{Nordhaus:1997vi} via \\citet{DeLong:1997ui}; data for 1990--2020 from the \\citet{World-Bank:2021un}.")>>=
+<<AffluenceGraph-Nordhaus, fig.scap="World GDP per capita~\\Aparen{} vs.\\ time", fig.cap = paste0("Annual world GDP per capita, affluence~\\Aparen{} in Equation~\\ref{eq:IPARX}. ",  fit_sentence(gdppc_fit), " \\emph{Sources}: data for 1800--1989 inferred from GDP per capita growth rates from \\citet{Nordhaus:1997vi} via \\citet{DeLong:1997ui}; data for 1990--2020 from the \\citet{World-Bank:2021un}.")>>=
 world_gdppc_Nordhaus <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
                                            sheet = "GDPpc-Nordhaus-WB") %>% 
   dplyr::select(-Country, -Source)
@@ -225,7 +225,7 @@ affluence_growth_rate <- gdppc_fit %>%
 %   MKHthemes::xy_theme()
 % @
 
-<<GDPGraph-Nordhaus, fig.scap="World GDP vs.\\ time.", fig.cap=paste0("World annual GDP calculated by multiplying world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph-Nordhaus}.", fit_sentence(gdp_fit))>>=
+<<GDPGraph-Nordhaus, fig.scap="World GDP vs.\\ time", fig.cap=paste0("World annual GDP calculated by multiplying world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph-Nordhaus}.", fit_sentence(gdp_fit))>>=
 # Gather world population data
 world_pop <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "WorldPopulation.xlsx"),
                                 sheet = "world_pop") %>%
