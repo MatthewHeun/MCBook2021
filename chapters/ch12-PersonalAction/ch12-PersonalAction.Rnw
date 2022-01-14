@@ -325,7 +325,8 @@ with onsite or offsite renewable energy production.
          \caption{Basement exterior.}
          \label{fig:basement_exterior}
      \end{subfigure}
-      \caption{Energy-efficient home with insulated basement.
+      \caption[Energy-efficient home with insulated basement]
+              {Energy-efficient home with insulated basement.
                The additional insulation will reduce energy consumption 
                and CO$_2$ emissions related to heating and cooling;
                see Sections~\ref{sec:heating_cooling_challenges}
@@ -379,6 +380,7 @@ households will consume carbon-intensive resources.
 %..............................
 \paragraph{Individual+Education+Housing}
 %..............................
+
 Of course, knowing which of the choices above to make requires educating yourself
 about options and being aware of tradeoffs.
 All consumer purchasing decisions have implications for sustainability through the 
@@ -416,7 +418,8 @@ living due to the economies of scale.
          \caption{An old bicycle.}
          \label{fig:commuting_bicycle}
      \end{subfigure}
-        \caption{Two (potentially) low-carbon commuting options. The Tesla shown
+        \caption[Two low-carbon commuting options]
+        {Two (potentially) low-carbon commuting options. The Tesla shown
         in~(a) could be a low-carbon commuting option, depending on the source of 
         its electricity. On the other hand, the Tesla requires substantial more 
         mineral resource depletion than the bicycle; see Figure~\ref{fig:auto_gwp} 
@@ -487,7 +490,8 @@ local purchasing can be pursued.
          \caption{Suburban produce aisle.}
          \label{fig:suburban_produce_aisle}
      \end{subfigure}
-        \caption{Two ways to buy groceries.
+        \caption[Two ways to buy groceries]
+                {Two ways to buy groceries.
                  The urban farmers' market offers modest variety of seasonal, locally grown produce. 
                  The suburban grocery store offers a wide variety of internationally-sourced produce.
                  \emph{Sources}: 
@@ -553,7 +557,8 @@ allow you to optimize your gardening for maximum sustainability impact.
          \caption{Gutter diversion.}
          \label{fig:gutter_diversion}
      \end{subfigure}
-        \caption{Two ways to adorn lawns.
+        \caption[Two ways to adorn lawns]
+                {Two ways to adorn lawns.
                  The suburban lawn is possible only via application of chemicals.
                  The gutter cut-out reduces pollution by diverting rainwater
                  before it enters the sewer system.
@@ -564,7 +569,11 @@ allow you to optimize your gardening for maximum sustainability impact.
 This section presents two example ``sentences for sustainability'' related to 
 land use and urban planning.
 
+
+%..............................
 \paragraph{Individual+Choices+Land Use}
+%..............................
+
 Where you live is a key land-use decision in the sense that it determines how you
 relate to all the land around you, mainly through your transportation.
 However, how you use your domicile is also important.
@@ -573,13 +582,17 @@ How will you use the space around your dwelling?
 Will you have a lawn (with or without lawn chemicals) like Figure~\ref{fig:kentucky_bluegrass}?
 Will you have a vegetable garden?
 Will you grow native plants?
-Figure~\ref{fig:gutter_diversion} shows a curb-cutout that 
+Figure~\ref{fig:gutter_diversion} shows a curb cutout that 
 diverts surface rainwater
 from a roadside drain to a small roadside garden.
 Such gutter diversions reduce the amount of surface runoff 
 that flows directly from roadside drains into local waterways.
 
+
+%..............................
 \paragraph{Individual+Law+Urban Planning}
+%..............................
+
 Get involved in your local zoning board, drain commission, or other local government entity. 
 Advocate for local \emph{and} regional solutions. 
 Being involved in local politics is one of the best ways to make a difference for 
