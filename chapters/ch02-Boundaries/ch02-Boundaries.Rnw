@@ -346,12 +346,12 @@ Less than 15\% of Earth's land area should be converted to cropland.
 (Currently, 11.7\% is cropland).
 The extinction rate should be less than 10 species per million species becoming extinct
 per year. 
-Currently, the extinction rate is more than 100 per million and is accelerating,
+Currently, the extinction rate is more than 100 extinctions per million species per year
+and is accelerating,
 out of a total of 10--14 million species; see Chapter~\ref{chap:population}. 
 Generating new species by natural evolution to replace the ones that have been 
 lost will take several million years~\cite{Davis11262}.
 
-%Figure~\ref{fig:CO2Graph} shows atmospheric CO$_2$ concentration over time.
 
 <<CO2Graph, fig.cap="Atmospheric CO$_2$ concentration over time. The red line shows the planetary boundary for atmospheric CO$_2$ concentration, 305~ppm. The vertical line shows the year 2022. \\emph{Sources}: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Tans:2022vw}.">>=
 # Gather data for CO2 vs. time graph
@@ -386,7 +386,8 @@ In the case of chemical pollution, the vast number of such (possible) pollutants
 each of which causes different acute and chronic effects, would make a single 
 ``threshold'' meaningless. 
 Instead, national governments set limits on a chemical-by-chemical basis.
-Agencies such as the U.S.\ Environmental Protection Agency and the European Commission
+Agencies such as the U.S.\ Environmental Protection Agency\index{Environmental Protection Agency}
+and the European Commission\index{European Commission}
 (or member states) enforce the regulations.
 
 Using planetary boundaries for decision making is similar to rules for when to change
