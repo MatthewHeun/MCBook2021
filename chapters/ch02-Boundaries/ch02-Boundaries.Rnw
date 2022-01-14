@@ -17,7 +17,7 @@
 %\epigraph{Fortune is of sluggish growth, but ruin is rapid.}{Lucius Annaeus Seneca}
 
 The left-hand side of Equation \ref{eq:IPARX} (repeated below for convenience) 
-is impact \mft{I} on the environment.
+is environmental impact~\Iparen{}.
 While there are natural processes that have (some) negative impacts on the environment,
 such as volcanic eruptions and wild fires, this book is primarily concerned with
 human impacts on the environment.
@@ -34,8 +34,7 @@ contamination, ozone depletion, smog creation, habitat destruction, and many oth
 Chapter \ref{chap:introduction} pointed out the problems of exponential growth.
 Continued exponential growth is impossible on a finite planet with finite 
 resources and finite boundaries.
-Continued and greater environmental impacts eventually run up against the Earth's 
-finite boundaries.
+Continued and greater environmental impacts eventually run up against the Earth's limits.
 % Section \ref{sec:exp} shows that, for exponential growth, the ``eventually'' is
 % one doubling time.
 % In $ln(2)/r$ time units, the system will go from half its ``budget'' to being
@@ -53,7 +52,8 @@ Exceeding Earth's carrying capacity degrades its ability to support life.
 
 The Earth's ecosystems support life on Earth. Collectively, these supports are 
 called \emph{ecosystem services}.
-The first group of services are \emph{provisioning services}, which are material 
+The first group of services are \emph{provisioning services},\index{services!provisioning}
+which are material 
 and energy resources.
 For example, humans plant crops (food, textile, and timber) that ``grow,''
 they're not manufactured. 
@@ -61,15 +61,14 @@ The ecosystem ``provides'' the crops.
 Likewise, the ecosystem provides water, petroleum, and other mineral resources.
 Simply having oceans and an atmosphere \emph{provides} a place for pollution to go.
 
-The second set of services is \emph{regulating and supporting services}, 
+The second set of services is \emph{regulating and supporting services},\index{services!regulating and supporting} 
 which sustain and stabilize the ecosystem.
 These services include processes for breaking down and 
 recycling dead organisms; 
-the carbon, % cycle; %(see Figure~\ref{fig:CCycle}),  
-nitrogen, oxygen, and water cycles; 
+the carbon, nitrogen, oxygen, and water cycles; 
 and the fact that plant roots stabilize soil and prevent erosion.
 
-The third set of services is \emph{cultural services}, 
+The third set of services is \emph{cultural services},\index{services!cultural}
 which include recreation and literary and cultural inspiration.
 Artists can't paint or take photographs of a landscape that isn't there.
 Mountains and snow enable downhill skiing. 
@@ -77,29 +76,39 @@ Ocean waves enable surfing.
 Rivers and lakes enable boating and (recreational) fishing opportunities.
 
 Many international groups have examined the state of Earth's ecosystem services. 
-The Millennium Ecosystem Assessment (MA) is a UN-affiliated group that studied ecosystem
+The Millennium Ecosystem Assessment (MA)\index{Millennium Ecosystem Assessment}
+is a UN-affiliated group that studied ecosystem
 services between 2001 and 2005. 
 1300 authors from 95 countries participated. 
 The MA found that (even back then) 15 out of the 24 ecosystem services 
 they examined were being degraded or used unsustainably~\cite{MA2005}.
 %Most heavily affected are inland waters by decline in water quality and fragmentation of wetlands.
 
-One way to think about ecosystem services is as \emph{natural capital}. 
+Ecosystem services can be considered as \emph{natural capital}. 
 ``Capital'' refers to an improvement or building that is economically productive 
-or valuable. (See Chapter~\ref{chap:affluence}).
+or valuable; see Chapter~\ref{chap:affluence}.
 The ecosystem produces value for human society by creating many things we use 
 and disposing of many of our wastes.
 Just as concepts of value and ownership motivate individuals and organizations
 to care for and manage their capital stocks, there have been many attempts to classify
 and value natural capital. 
 Examples include:
+
 \begin{itemize}
-\item The European Environmental Agency's Common International Classification of
-Ecosystem Services \cite{CICES2018} (which, incidentally, recognizes many more 
-categories of ecosystem services than does the MA). 
-\item The US Environmental Protection Agency's Final Ecosystem Goods and Services scoping tool.
+
+\item The European Environmental Agency's\index{European Environmental Agency}
+      Common International Classification of
+      Ecosystem Services~\cite{CICES2018} 
+      (which, incidentally, recognizes many more 
+      categories of ecosystem services than does the MA). 
+
+\item The U.S.\ Environmental Protection Agency's\index{Environmental Protection Agency}
+      Final Ecosystem Goods and Services scoping tool.
+
 \item The United Nations Statistical Division System of Environmental and Economic Accounting.
+
 \item The Economics of Ecosystems and Biodiversity.
+
 \end{itemize}
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -135,16 +144,10 @@ of species minimizes risk or volatility of return.
 \label{sec:tipping}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Early versions of this text included a chapter on systems theory because the Earth's processes 
-% are complex systems (and systems theory is cool). 
-% While systems theory is interesting and useful, few insights from 
-% systems theory are \emph{required} to understand sustainability issues. One insight 
-% that \emph{is} required is the concept of a tipping point. The name comes from a boat's 
-%stability, see Figure~\ref{fig:buoyancy}. If the boat is tipped a small amount,
 If a boat is tipped a small amount, the weight of the boat and the effect of 
 buoyancy act to right the boat; see Figure~\ref{fig:buoyancy}. 
-However, there is an angle where, if the boat is tipped past that angle, the forces 
-will act in the opposite way---to suddenly and catastrophically flip the boat.
+However, there is an angle where, if the boat is tipped past that point,
+the forces will act in the opposite way---to suddenly and catastrophically flip the boat.
 A \emph{tipping point} is where the behavior of a system fundamentally changes. 
 There is concern that Earth's ecosystem services may have reached or are near a tipping
 point, that is, they have been disturbed to the point of being on the edge of 
@@ -177,19 +180,21 @@ catastrophic collapse.
         \label{fig:buoyancy}
 \end{figure}
 
-There is also a cognitive element to the tipping-point analogy. 
+There is a cognitive element to the tipping-point analogy. 
 Experience conditions us to expect the boat to right itself when heeled
 over---because it has always done so in the past.
 Having the system behave in a completely different manner is outside our direct
-experience, so we have trouble believing that it can or will really happen, 
-despite what math and physics may tell us.
+experience, so we have trouble believing that it can or will flip catastrophically, 
+despite what math and physics tell us.
 It is hard for humanity to come to grips with the idea that something really bad
-could happen because we are living unsustainably. 
+could happen to the planet because we are living unsustainably. 
 
-There are two types of ecological concern with respect to ecosystem services.
+There are two types of concerns with respect to ecosystem services.
 The first is with respect to provisioning services. Humans may ``use up'' a finite
-resource such as helium, petroleum, or neodymium. Or, perhaps, the demand for food
-will exceed the rate at which the ecosystem can supply food. In both of these cases,
+resource such as helium, petroleum, or neodymium. 
+Or, perhaps, the demand for food
+will exceed the rate at which the ecosystem can supply food. 
+In both of these cases,
 the ecosystem does not supply needed resources. 
 % Add that the time this happens may be very short. If we look with a weak sustainability
 % criterion but have exponential growth, we may have used less than half the supply
@@ -206,16 +211,16 @@ the (functional) supply of fossil fuels.
 
 The second type of concern relates to human modifications of the ecosystem.
 Human actions can cause a change or breakdown in the Earth's regulating and 
-support ecosystem services, which will lead to a tipping point, that is, 
+supporting ecosystem services, which will lead to a tipping point, that is, 
 a fundamental change in the way the ecosystem works. 
-An example that is of particular concern right now is global climate change 
+An example that is of particular concern at present is global climate change 
 (principally) caused by human CO$_2$ emissions. 
-Extinction rate, which is like losing rivets in an airplane, is another cause of concern.
+Species extinctions, which is like losing rivets in an airplane, is another cause of concern.
 Because of tipping points and the nonlinear and interrelated nature of the
-ecosystem's dynamics human actions can cause a series of cascading failures
+ecosystem's dynamics, human actions can cause a series of cascading failures
 that will ultimately degrade the Earth's ability to support life. 
-Exponential growth, for instance, in human population and the economy, is analogous
-to heeling over a boat. 
+Exponential growth, whether in human population or the economy, is analogous
+to heeling over a boat.
 Growth causes greater and greater demands on the ecosystem. 
 Eventually the boat (that is, the ecosystem) heels over so far that it capsizes.
 
@@ -227,26 +232,26 @@ Eventually the boat (that is, the ecosystem) heels over so far that it capsizes.
 Drastic or catastrophic changes to ecosystems are not new or solely a modern problem.
 Rapa Nui (Easter Island), the Levant, and the Sahara Desert have all undergone 
 dramatic ecological shifts, although the degree to which this is attributable to 
-human actions is not agreed upon or well understood \cite{Malhi2018}. 
+human actions is not agreed upon or well understood~\cite{Malhi2018}. 
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Population-driven deforestation was a problem in ancient times and it remains so 
-today. 
-Clearing forests for fuel, crop land, and building materials
+Population-driven deforestation was a problem in ancient times, and
+it remains so today. 
+Clearing forests for fuel, crops, and building materials
 led to a permanent loss of soil fertility, erosion, and economic decline
-in places as far apart as Scandinavia \cite{Oestlund2015},
-the Mayan empire \cite{Douglas2018}, and southern Iran \cite{NFMiller1985}. 
-Ecological problems were especially well documented in Mediterranean 
-in the Greek- and Roman-era \cite{Hughes2011}. 
+in places as far apart as Scandinavia~\cite{Oestlund2015},
+the Mayan empire~\cite{Douglas2018}, and southern Iran~\cite{NFMiller1985}. 
+Ecological problems were especially well documented in the Mediterranean 
+during the Greek and Roman eras~\cite{Hughes2011}. 
 Goats were pastured on cut timberlands, preventing regrowth.
 ``Overgrazing, particularly by goats, was a primary cause of deforestation in
 ancient Greece and Rome''~\cite{Hughes1982}.
 \end{mcframe}
 
 % if we don't understand it, should we mess with it?
-What \emph{is} new is scope or magnitude of humanity's ability to affect the environment,
+What \emph{is} new is the scope or magnitude of humanity's ability to affect the environment,
 both due to the current high population and our level of technology.
 Fossil-fuel derived carbon emissions are of particular concern.
 Further examples include nuclear and industrial ``accidents,'' such as the Thule air-base crash,
@@ -257,27 +262,30 @@ a global thermonuclear war would be a humanitarian and environmental disaster on
 truly global scale (if one were to occur).
 
 Equation~\ref{eq:IPARX} frames sustainability in terms of environmental ``impacts,''
-that is, negative effects resulting from human activity. 
-Broadly, there are two approaches for managing or responding to impacts. 
+that is, negative effects on the environment resulting from human activity. 
+Broadly, there are two approaches for managing or responding to those impacts. 
 \emph{Planetary boundaries} describe the maximum (desirable) \emph{level} of effects,
 that is, they establish a limit on the left-hand side of Equation~\ref{eq:IPARX}.
 The second method uses a weighted average, called an \emph{index}, of factors as 
-a proxy management tool. 
-The index describes a collection of behaviors. 
+a tool for managing those impacts.
+Indices describe a collection of behaviors with a single number. 
 Whereas the planetary boundaries are limits for single variables, indices are a mix
 of variables from both sides of Equation~\ref{eq:IPARX}.
 Neither method describes \emph{how} changes to become more sustainable should be made, 
-but each index implicitly contains a description of the tradeoffs among the different variables. 
+but indices implicitly describe the tradeoffs among different impacts. 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Planetary boundaries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Climate scientists have proposed indicators, which, if exceeded, 
 could render Earth uninhabitable by humans, perhaps catastrophically 
 because the resulting changes may be nonlinear and abrupt. 
 Table~\ref{tab:planetBoundaries} lists these indicators and states 
 whether they've already been exceeded---note that exceeding these indicators
 means that humanity is not living sustainably.
-The boundary values set for these indicators are intended to define a 
+The upper limits for these indicators are intended to define a 
 ``safe operating space for humanity.''
 % \begin{enumerate} %present as a table instead?!
 % \item Climate change
@@ -330,21 +338,22 @@ Chemical pollution                                 & unknown \\
 \end{tabular}
 \end{table}
 
-The limit for atmospheric carbon dioxide concentration
-is no more than $350~\mathrm{ppm}$. 
-(The current value is more than $412~\mathrm{ppm}$, 
+The upper limit for atmospheric carbon dioxide concentration is 350~ppm.
+(The current value is more than 412~ppm,
+and the pre-industrial concentration was 280~ppm,
 as shown in Figure~\ref{fig:CO2Graph}).
-Less than 15\% of Earth's land area should be converted to cropland. (Currently, 11.7\% is cropland).
+Less than 15\% of Earth's land area should be converted to cropland. 
+(Currently, 11.7\% is cropland).
 The extinction rate should be less than 10 species per million species becoming extinct
 per year. 
-Currently, the rate is more than 100 per million, out of a total of 10 to 14 million
-species (see Chapter~\ref{chap:population}) and is accelerating. 
+Currently, the extinction rate is more than 100 per million and is accelerating,
+out of a total of 10--14 million species; see Chapter~\ref{chap:population}. 
 Generating new species by natural evolution to replace the ones that have been 
 lost will take several million years~\cite{Davis11262}.
 
 %Figure~\ref{fig:CO2Graph} shows atmospheric CO$_2$ concentration over time.
 
-<<CO2Graph, fig.cap="Atmospheric CO$_2$ concentration over time. Vertical line shows the year 2020. \\emph{Sources}: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Tans:2022vw}.">>=
+<<CO2Graph, fig.cap="Atmospheric CO$_2$ concentration over time. The red line shows the planetary boundary for atmospheric CO$_2$ concentration, 305~ppm. The vertical line shows the year 2022. \\emph{Sources}: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Tans:2022vw}.">>=
 # Gather data for CO2 vs. time graph
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>%
   dplyr::mutate(
@@ -352,7 +361,7 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
   ) %>%
   # Make the graph
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "Atmospheric_CO2_concentration_ppm")) +
-  ggplot2::geom_vline(xintercept = -2020/1000,
+  ggplot2::geom_vline(xintercept = -2022/1000,
                       size = guide_line_size, 
                       colour = guide_line_colour, 
                       linetype = guide_linetype) +
