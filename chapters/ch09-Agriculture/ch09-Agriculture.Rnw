@@ -256,7 +256,7 @@ Whether spending more energy on food than we get from it is sustainable or not
 depends on where our energy comes from. 
 
 
-<<food_and_ag_energy_flow, fig.cap="Amount of energy consumed in different aspects of the food delivery system in the U.S.\\ (2021). \\emph{Source}: \\citet{US_food}.">>=
+<<food_and_ag_energy_flow, fig.scap="Energy consumed in the food delivery system", fig.cap="Amount of energy consumed in different aspects of the food delivery system in the U.S.\\ (2021). \\emph{Source}: \\citet{US_food}.">>=
 food_energy <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Energy Flow in the US Food System.xlsx"),
                                    sheet = "data to plot") %>%
   tidyr::pivot_longer(-Category, names_to = "type", values_to = "value") %>%
@@ -295,7 +295,7 @@ food_energy %>%
 
 
 
-<<food_ghg, fig.cap="U.S.\\ food-related greenhouse gas emissions by life cycle stage. ``LULUC'' is land use and land use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
+<<food_ghg, fig.scap="Food-related greenhouse gas emissions by life cycle stage", fig.cap="U.S.\\ food-related greenhouse gas emissions by life cycle stage. ``LULUC'' is land use and land use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
 food_emissions_US <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Crippa et al 2021.xlsx"), 
                                             sheet = "data to plot") %>% 
   tidyr::pivot_longer(-`System Stage`, names_to = "Year", values_to = "co2_emissions") %>% 
@@ -368,7 +368,7 @@ is about 7\%~\cite{Shepon:2016wt}.
 Different types of food have different feed-to-food efficiencies,
 as shown in Figure~\ref{fig:FoodToFeedEfficiency}.
 
-<<FoodToFeedEfficiency, fig.width=3, fig.height=2.5, fig.cap="Feed-to-food efficiency~($\\eta_{\\mft{ff}}$\\;\\!) of various foods in the U.S.\\ food system. \\emph{Source}: \\citet{Shepon:2016wt}.">>=
+<<FoodToFeedEfficiency, fig.width=3, fig.height=2.5, fig.scap="Feed-to-food efficiency", fig.cap="Feed-to-food efficiency~($\\eta_{\\mft{ff}}$\\;\\!) of various foods in the U.S.\\ food system. \\emph{Source}: \\citet{Shepon:2016wt}.">>=
 feed_to_food_efficiency <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", 
                                                         "FeedToFoodEfficiency.xlsx"), 
                                               sheet = "data to plot")
@@ -441,7 +441,7 @@ paint a suggestive (but incomplete!) picture of agricultural
 CO$_2$ emissions.
 
 
-<<FoodEmissionsPerMcal, fig.height=4, fig.cap="Food CO$_2$ emissions per Mcal of food. \\emph{Source}: \\citet{Ritchie:2021tl}.">>=
+<<FoodEmissionsPerMcal, fig.height=4, fig.scap="Food CO$_2$ emissions per Mcal of food", fig.cap="Food CO$_2$ emissions per Mcal of food. \\emph{Source}: \\citet{Ritchie:2021tl}.">>=
 food_emissions_per_kcal <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "food-footprints-kcal.xlsx"), 
                                               sheet = "data to plot") %>% 
   dplyr::arrange(dplyr::desc(GHG_emissions_per_1000kcal))
@@ -463,7 +463,7 @@ food_emissions_per_kcal %>%
 @
 
 
-<<GHG_food, fig.height=5, fig.cap="U.S.\\ food greenhouse gas emissions. \\emph{Source}: \\citet[Figure~3]{Heller_2014}.">>=
+<<GHG_food, fig.height=5, fig.scap="Food greenhouse gas emissions", fig.cap="U.S.\\ food greenhouse gas emissions. \\emph{Source}: \\citet[Figure~3]{Heller_2014}.">>=
 food_emissions_total <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Food CO2.xlsx"), 
                                            sheet = "data to plot") %>% 
   dplyr::arrange(dplyr::desc(`kg CO2 eq/capita/year`))
@@ -545,7 +545,7 @@ Farming can (and has had) impacts on biodiversity and habitat loss.
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{chapters/ch09-Agriculture/figures/Material_Flow_in_the_US_Food_System(1995_Flows_in_Million_Pounds).pdf}
-\caption[Material flow in the U.S.\ food system (1995, flows in million pounds.)]{Material flow in the U.S.\ food system (1995). Flows in million pounds. \emph{Source}: \citet[Figure~3]{Heller:2000wg}. Used with permission.}
+\caption[Material flow in the U.S.\ food system]{Material flow in the U.S.\ food system (1995). Flows in million pounds. \emph{Source}: \citet[Figure~3]{Heller:2000wg}. Used with permission.}
 \label{fig:food_and_ag_material_flow}
 \end{figure}
 

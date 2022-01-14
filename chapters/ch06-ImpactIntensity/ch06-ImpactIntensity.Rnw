@@ -136,7 +136,8 @@ Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{chapters/ch06-ImpactIntensity/figures/Carbon_2018_United-States.png}
-\caption{U.S.\ CO$_2$ emissions in 2018.
+\caption[U.S.\ CO$_2$ emissions Sankey diagram]
+        {U.S.\ CO$_2$ emissions in 2018.
          CO$_2$ emissions from electricity production are not attributed to end uses.
          See Table~\ref{tab:corrected_co2_emissions}.
          \emph{Source}: \citet{Lawrence-Livermore-National-Laboratory:wp}.}
@@ -157,10 +158,11 @@ US_CO2_by_sector <- readxl::read_excel(file.path("chapters", "ch06-ImpactIntensi
   )
 
 print(xtable::xtable(US_CO2_by_sector, digits = c(0, 0, 0, 1),
-                     caption = "U.S.\ CO$_2$ emissions 2018 by sector with
+                     caption = c("U.S.\ CO$_2$ emissions (2018) by sector with
                      CO$_2$ emissions from electricity generation attributed to
                      end uses by
-                     fraction of electricity demanded.",
+                     fraction of electricity demanded.", 
+                     "U.S.\ CO$_2$ emissions by sector"),
                      label = "tab:corrected_co2_emissions"),
       include.rownames = FALSE,
       include.colnames = TRUE,
@@ -204,7 +206,7 @@ In \emph{some} ways, the transition away from traditional biofuels \emph{did} re
 in reduced environmental impact, neglecting climate change concerns.
 % Referencing Figure 5.3, the falling biomass PER GDP, doesn't seem appropriate here.
 
-<<ImpactIntensityGraph, fig.cap="Carbon intensity of energy, $X_{\\text{CO}_2}$. The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
+<<ImpactIntensityGraph, fig.scap="Carbon intensity of energy~(\\;\\!$\\mft{X}_{\\text{CO}_2}$) vs.\\ time", fig.cap="Carbon intensity of energy~(\\;\\!$\\mft{X}_{\\text{CO}_2}$). The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 carbon_intensity <- dplyr::inner_join(
   CO2_emissions,
   primary_energy %>%
@@ -718,7 +720,7 @@ years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
 
 print(xtable::xtable(iparx_df %>% 
                        dplyr::filter(Year %in% years_for_rate_table), digits = c(0, 0, 3, 2, 2, 2, 2),
-                     caption = "IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers} these data allow us to see whether the world is becoming more sustainable or less sustainable over time and why; see P6.\\ref{question:iparx_calcs}.",
+                     caption = c("Values of IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers} these data allow us to see whether the world is becoming more sustainable or less sustainable over time and why; see P6.\\ref{question:iparx_calcs}.", "Values of IPARX terms for selected years"),
                      label = "tab:iparx_select_years"),
       include.rownames = FALSE,
       include.colnames = TRUE,
@@ -889,7 +891,7 @@ Historically, as GDP (equal to $\mft{P} \times \mft{A}$ in Equation~\ref{eq:IPAR
 primary energy consumption also rises,
 as shown in Figure~\ref{fig:E_vs_GDP_graph}.
 
-<<E_vs_GDP_graph, fig.cap = "World primary energy consumption and world GDP.">>=
+<<E_vs_GDP_graph, fig.scap="World primary energy consumption vs.\\ world GDP", fig.cap = "World primary energy consumption vs.\\ world GDP.">>=
 egdp_df <- primary_energy %>% 
   dplyr::group_by(Year) %>%
   dplyr::summarise(energy_EJ = sum(energy_EJ)) %>%
