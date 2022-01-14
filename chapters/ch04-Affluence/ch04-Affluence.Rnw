@@ -276,10 +276,10 @@ ggplot2::ggplot() +
 
 Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
 world annual GDP per capita and total GDP, respectively.
-Note that many national and international economic policies are intended to
-continually increase affluence and/or maintain growth in GDP.
+Note that the purpose of many national and international economic policies is to
+continually increase affluence and/or GDP.
 Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
-that these choices have been effective.
+that these policies have been effective.
 Both world GDP \emph{and} affluence \Aparen{} have been growing exponentially 
 since 1950 at rates of 
 \Sexpr{gdp_growth_rate}~\%/year and 
