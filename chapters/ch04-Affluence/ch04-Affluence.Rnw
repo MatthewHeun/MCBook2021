@@ -40,7 +40,7 @@ finish the development of our framework for sustainability.
 \label{sec:Global_affluence}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The word wealth can include notions of happiness, prosperity, well being, and welfare,
+The word ``wealth'' can refer to notions of happiness, prosperity, well being, and welfare,
 but mostly wealth refers to the \emph{amount} of goods, possessions, money,
 property, or ``stuff'' owned by a person.
 In other words, wealth refers to a \emph{level} of material possessions or resources.
@@ -50,10 +50,11 @@ uses goods and services, that is, the amount of ``stuff'' bought \emph{per year}
 Economic activity may mean literally consumption, as with food,
 or it could mean using a service, such as education or getting a haircut.
 Sometimes, what is ``consumed'' is ancillary to what the consumer actually desires.
-For example, when a person travels from point A to point B,
-whether the car runs on electricity or gasoline doesn’t matter (to the traveler).
-The energy consumed is just a means to an end, often called a ``service.''
-(In this example, the energy service is travel.)
+When travelling from point A to point B, 
+most travelers don't care whether their car runs on electricity or gasoline.
+The energy consumption is only the means to the end.
+In this example, transport is known as an ``energy service,''
+the purpose of travel.
 
 Average affluence~\Aparen{} for a country or the world
 is \emph{measured} by gross domestic product (GDP) per capita.
@@ -61,13 +62,18 @@ There are valid critiques as to why per capita GDP is not the \emph{best possibl
 measure of affluence.
 For instance, GDP doesn't count (or under counts) the value
 of innovation in improving standards of living~\cite{Gordon2016}.
+GDP doesn't include the value of non-market transactions, 
+such as the work of stay-at-home moms.
+Also, GDP counts all consumption, even when that consumption is socially undesirable.
+
 Many new metrics (Section~\ref{sec:indices}) have been proposed as replacements
 or improvements for GDP.
 Some examples are green GDP, the index of sustainable economic welfare, and the
 genuine progress indicator.
 However, each of these suffers from its own limitations. %, philosophical, methodological, and practical.
-The biggest limitation is standardization and availability of data.
-GDP is what we have the most data for;
+The biggest limitation for any metric
+is standardization and availability of data.
+At the moment, we have the most complete and accurate data for GDP;
 consequently, it is the affluence indicator ``everyone'' uses.
 Effectively, GDP is the standard way to measure economic activity.
 (Because GDP data are collected nationally but aggregated internationally, 
@@ -75,15 +81,15 @@ there is often skepticism of data provided by corrupt and/or authoritarian
 regimes, in addition to the caveats about what GDP measures and what it doesn't.)
 % put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
 
-Consistent and easily accessible GDP data allows us to make observations
-about trends, which are \emph{qualitatively} consistent with trends we would observe
-using other indices, bearing in mind the limitations of what GDP measures and what it doesn't.
+Consistent and easily accessible GDP data allow observations of
+trends through time, which are usually \emph{qualitatively} consistent with trends would be observed
+using other indices, bearing in mind the limitations of GDP.
 In any case, a different measure of affluence~\Aparen{}, would require a corresponding
 adjustment to (the measure of) resource intensity of economic activity~\Rparen{}.
 Regardless of the measure of affluence, we land in the same difficult spot:
 greater affluence~\Aparen{} creates greater environmental impact~\Iparen{}
 if the resource intensity of the economy~\Rparen{} and the impact intensity of resources~\Xparen{}
-(discussed in the next chapter) are unchanged.
+(discussed in the next chapter) remain unchanged.
 
 % <<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence~\Aparen{} in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
 % world_gdppc_Maddison <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
