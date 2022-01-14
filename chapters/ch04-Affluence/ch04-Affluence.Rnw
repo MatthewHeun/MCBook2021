@@ -51,11 +51,11 @@ Economic activity may mean literally consumption, as with food,
 or it could mean using a service, such as education or getting a haircut.
 Sometimes, what is ``consumed'' is ancillary to what the consumer actually desires.
 For example, when a person travels from point A to point B,
-whether the car is electric or burns gasoline doesn’t matter (to the traveler).
-The energy consumed is just a means to an end, often called the ``service.''
+whether the car runs on electricity or gasoline doesn’t matter (to the traveler).
+The energy consumed is just a means to an end, often called a ``service.''
 (In this example, the energy service is travel.)
 
-Average affluence \Aparen{} for a country or the world
+Average affluence~\Aparen{} for a country or the world
 is \emph{measured} by gross domestic product (GDP) per capita.
 There are valid critiques as to why per capita GDP is not the \emph{best possible}
 measure of affluence.
@@ -287,7 +287,7 @@ GDP is denominated in units of money per time and is usually the sum of four ann
 
 \begin{equation}
 \label{eq:GDP}
-  GDP = c + g + i + nx \; .
+  \mft{GDP} = \mft{c} + \mft{g} + \mft{i} + \mft{nx} \; .
 \end{equation}
 
 %..............................
