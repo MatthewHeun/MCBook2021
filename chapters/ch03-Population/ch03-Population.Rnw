@@ -31,20 +31,23 @@ even catastrophically destroy, the ability of the Earth to support life.
 \end{equation}
 
 This chapter examines human population dynamics, that is, \mft{P} in the IPARX equation.
-Section~\ref{sec:animal_pop} discusses the impact \mft{I} of human activities on animal populations.
+Section~\ref{sec:animal_pop} begins with a discussion 
+of the impact~\Iparen{} of human activities on animal populations.
 The size of the impact is a direct result of the size of \mft{P}.
-The recent, massive decline of many animal populations is concerning 
-(in part) because it likely indicates a reduction in ecosystem services.
+For example, the recent, massive decline of many animal populations is concerning 
+(in part) because it likely indicates a reduction in ecosystem services
+brought about by human activities.
 
-Section~\ref{sec:human_population} discusses human population dynamics.
-Throughout history, the long-term trend has always been for the human population \mft{P} to grow
-(Section~\ref{sec:past_human_populations}),
-which is (ultimately) unsustainable.
+Section~\ref{sec:human_population} discusses human population.
+Throughout history, the long-term trend has always been for the human population~\Pparen{} to grow,
+which is (ultimately) unsustainable; 
+see Section~\ref{sec:past_human_populations}.
 Currently, population growth has slowed (but not ceased).
 Prospects for future human populations are discussed in Section~\ref{sec:population_modeling}
 with an eye toward whether humanity will live sustainably in the future. 
-The influence of economic output per person \mft{A} on population growth is discussed in
-Section~\ref{sec:dtt}.
+The influence of economic output per person 
+(\mft{A} in the IPARX equation)
+on population growth is discussed in Section~\ref{sec:dtt}.
 Section~\ref{sec:pop_density} discusses the sustainability implications of population density. 
 
 There are two schools of thought on population with relevance for economics and sustainability.
@@ -53,8 +56,12 @@ scarce resources.
 Techo-optimists think that more people will lead to 
 better technology, more specialization of labor, and, ultimately, to a higher, not lower,
 standard of living.
-This interaction between population \mft{P}, affluence \mft{A}, and resource \mft{R} scarcity
+Interactions among 
+population~\Pparen{}, 
+affluence~\Aparen{}, and
+resource~\Rparen{} scarcity
 is discussed in Section~\ref{sec:malthus_ehrlich_simon}.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Animal populations}
@@ -64,11 +71,11 @@ is discussed in Section~\ref{sec:malthus_ehrlich_simon}.
 %some stories about animal populations: passenger pigeons, bison, whales, aurochs, locusts,
 % North American megafauna, North Atlantic cod shoals....
 Currently, humans (36\%) and domestic livestock (60\%) constitute 96\% of the mass of
-mammals on the planet \cite{BarOn2018}---only 4\% are \emph{wild} animals 
-such as whales, bison, deer, and bears. 
-The number of wild vertebrates has declined by 68\% since 1970 \cite{WWFLPR2020}. 
-Populations of insects are down about 80\% in the last 30 years \cite{Hallmann2017}.
-These numbers are alarming because they could indicate a drastic decline in the 
+mammals on the planet \cite{BarOn2018}---only 4\% of the mass of mammals is 
+\emph{wild} animals such as whales, bison, deer, and bears. 
+The number of wild vertebrates has declined by 68\% since 1970~\cite{WWFLPR2020}. 
+Populations of insects are down about 80\% in the last 30 years~\cite{Hallmann2017}.
+These statistics are alarming because they could indicate a drastic decline in the 
 quality and/or quantity of ecosystem services available to animals 
 (and potentially) humans.
 One of the planetary boundaries identified in Chapter~\ref{chap:planetary_boundaries} 
@@ -91,29 +98,30 @@ the decline in animal populations.
 Population decline is an \emph{impact} (\mft{I}) from the left-hand side of 
 Equation \ref{eq:IPARX}. 
 The \emph{reason(s)} (that is, the ``why'') are given on the right-hand side of
-Equation \ref{eq:IPARX}~(\mft{PARCX}).
+Equation~\ref{eq:IPARX}, namely the \mft{PARX} terms.
 In contrast, the \emph{mechanisms} (that is, the ``how'') behind the decline 
-in animal populations are not provided by Equation \ref{eq:IPARX}.
+in animal populations are not provided by Equation~\ref{eq:IPARX}.
 Four important mechanisms are summarized below.
 First, habitat destruction plays an important role in the decline of animal populations. 
 For example, in 1875 there was a swarm of Rocky Mountain locusts consisting of 
-12.5 trillion individuals, weighing 27.5 million tons, and covering an area larger
+an estimated 12.5 trillion individuals, 
+weighing 27.5 million tons, and covering an area larger
 the state of California. 
 By 1902, the species was extinct, mainly because farming destroyed their 
 breeding grounds. 
-Chapter~\ref{chap:land_use_urban_planning} will discuss human alteration of the land.
-Second, overconsumption by humans is another cause of population decline. 
+(Chapter~\ref{chap:land_use_urban_planning} will discuss human alteration of the land.)
+A second cause of animal population decline is overconsumption by humans.
 Ocean fish stocks are a notable example, partly because of the role they play in human diets.
 Other examples include
 % cite United Nations Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services
 %summary report says 1 million animal and plant species are threatened with extinction.
 %"In 2015, 33\% of marine fish stocks were being harvested at unsustainable levels; 60\% were maximally sustainably 
 %fished, with just 7\% harvested at levels lower than what can be sustainably fished."
-passenger pigeons, whales, bison, and megafauna such as the aurochs and giant ground sloth.
+passenger pigeons, whales, bison, and megafauna such as the aurochs and the giant ground sloth.
 A third cause of the decline in animal populations is human-induced climate change.
 For example, many Arctic species, such as polar bear and walrus, are struggling
 to adapt to a warming planet.
-Lastly, human contamination of the environment, either unintentionally or intentionally,
+Lastly, human contamination of the environment, either intentionally or unintentionally,
 is a cause for the decline of many species.
 For example, widespread use of insecticides in agriculture is thought to be a strong 
 factor for the decline in many insect populations. 
@@ -172,11 +180,11 @@ MKHthemes::xy_theme()
 @
 
 
-As shown in Equation \ref{eq:IPARX}, the number of individual humans is one source 
-of environmental impacts on the planet.
+As shown in Equation \ref{eq:IPARX}, the number of individual humans~\Pparen{} is one source 
+of environmental impacts.
 Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800~AD to present.
-In July 2021, the world's human population is 7.7--7.9 billion with a current
-growth rate of 1.05~\%/year. 
+As of July 2021, the world's human population is 7.7--7.9~billion with a
+growth rate of 1.05~\%/year.
 The average growth rate since 1950
 was \Sexpr{pop_growth_rate}~\%/year, 
 with a peak growth rate of 2.1~\%/year between 1965 and 1970.
@@ -187,7 +195,8 @@ with a peak growth rate of 2.1~\%/year between 1965 and 1970.
 \label{sec:past_human_populations}
 %++++++++++++++++++++++++++++++
 
-There is an aphorism, ``It is difficult to make predictions, especially about the future.''
+There is an aphorism, 
+``[i]t is difficult to make predictions, especially about the future.''
 Indeed, predictions about future human populations vary considerably.
 But it is also difficult to make predictions about the past.
 Although scientists have estimated past population levels, reliable data are limited.
@@ -200,12 +209,12 @@ By 1650~AD, the world population was around 500~million.
 Population growth slowed because trade and urbanization spread infectious 
 diseases that killed large numbers of people.
 For instance, the Black Death killed 75--200~million people in the 1300s.
-World population reached 1~billion (that is, 1,000~million) around 1800~AD.
+World population reached 1~billion (that is, 1000~million) around 1800~AD.
 Population is affected by births and deaths.
 Estimating the populations of antiquity is difficult because 
 the birth and death rates are uncertain.
 However, estimates of the total number of humans to have ever lived are 100--110~billion.
-Thus, today's population of about 8~billion people represents 8--9\% 
+Thus, today's population of about 8~billion represents 8--9\% 
 of all the people who have ever lived.
 
 
@@ -213,21 +222,27 @@ of all the people who have ever lived.
 \subsection{Population modeling}
 \label{sec:population_modeling}
 %++++++++++++++++++++++++++++++
-Whether the human population will continue to grow rapidly is a key 
+
+Whether the human population will continue to grow is a key 
 sustainability question.
-Population only depends on three factors: current population (known more-or-less accurately), 
+Human population in the future depends on only three factors:
+current population (known more-or-less accurately), 
 birth rate, and death rate.
-If the number of births per year exceeds the number of deaths, the population will grow.
+If the number of births per year exceeds the number of deaths per year,
+the population will grow.
 If deaths exceed births, the population will fall.
 Population is stable when births and deaths are equal.
 
 A larger population has the capacity for more births and more deaths per year.
-Thus, birth and death rates depend on the size of the population.
+Thus, births and deaths per year depend on the size of the population.
 The population growth rate, in~\%/yr, on the other hand, expresses growth in a way that is
 independent of population size.
-If population growth rate is constant over time, population grows exponentially; see Section~\ref{sec:exp}.
-Even if population growth rate changes slightly over time (as it has over the
-last sixty years, dropping from about 2\% to about 1\%), exponential growth is a good
+If the population growth rate
+(in \%/year) is constant,
+population grows exponentially; see Section~\ref{sec:exp}.
+Even if the population growth rate changes slightly over time (as it has over the
+last sixty years, dropping from about 2\%/year to about 1\%/year),
+exponential growth is a good
 description of how population changes with time.
 
 Figure~\ref{fig:UN_population_prospect} shows projections made by the United Nations
@@ -236,11 +251,9 @@ Because birth rate and death rate are influenced by many other factors---environ
 social, and economic---there exists a wide range of uncertainty in the population 
 projections caused by uncertainty about future birth and death rates.
 Indeed, Figure~\ref{fig:UN_population_prospect} contains both the possiblity
-that world population will peak around 2050 and then fall \emph{and} the possibility
+that world population will peak around 2050 \emph{and} the possibility
 that population will keep rising to the end of the century.
 
-% Projections are based on probabilistic models of total fertility and 
-% life expectancy at birth from a Bayesian hierarchical model.
 <<UN_population_prospect, fig.cap="Projections of world population. The light gray region shows a 95\\% prediction interval. The dark gray region shows a 80\\% prediction interval. \\emph{Sources}: Historical data from \\citet{Roser:2021uu}; future projections from \\citet{UNEcSoAf:2021vj}.">>=
 future_pop <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "UN_PPP2019_Output_PopTot.xlsx"),
                                              sheet = "data to plot") %>% 
@@ -288,13 +301,12 @@ dplyr::bind_rows(historical_pop, future_pop) %>%
   MKHthemes::xy_theme()
 @
 
-%Birth and death rates depend on many variables.
-World3 is an early (and simple) world population model.
+World3 is an early (yet simple) world population model.
 Figure~\ref{fig:World3loops} shows a schematic of the causal loops used in the model.
-Notice both the large number (24) of variables in the model %that affect population 
+Notice both the large number of variables in the model~(24)  %that affect population 
 and the many ways those variables (are programmed to) interact.
 No model is perfect and, indeed, the World3 model is somewhat controversial for 
-what some critics characterize as its naive assumptions.
+what critics claim are naive assumptions.
 The point of Figure \ref{fig:World3loops} is to show that many variables 
 (are thought to) affect population, and those variables interact in complex ways.
 %Indeed, another population model produced around the same time used 200,000 equations.
@@ -319,12 +331,14 @@ The point of Figure \ref{fig:World3loops} is to show that many variables
 
 The UN projections shown in Figure~\ref{fig:UN_population_prospect} are not based on 
 the World3 model. 
-Instead, the UN used a Bayesian model that accounts for correlations among the 
-many variables thought to affect birth and death rates.
+Instead, the UN used a Bayesian model\index{Bayesian model}
+that accounts for correlations among the 
+many variables assumed to affect birth and death rates.
 The UN model also accounts for different levels of development in 
 different segments of the Earth's human population.
-Accounting for interactions between social, demographic, and economic
-variables is expected to give more realistic estimates of future population.
+Accounting for interactions among social, demographic, and economic
+variables is expected to give more-realistic population projections.
+
 
 %++++++++++++++++++++++++++++++
 \subsection{Demographic transition theory}
@@ -337,18 +351,20 @@ that the rates depend on the size of the population.
 To compare different populations (for instance, in time, or in different countries),
 it is useful to have a way to express birth and death rates that are \emph{independent}
 of the total population.
-The \emph{crude birth rate} is the number of births per year per thousand people.
-The \emph{crude death rate} is the number of deaths per year per thousand people.
+The \emph{crude birth rate} (CBR) is the number of births per year per thousand people.
+The \emph{crude death rate} (CDR) is the number of deaths per year per thousand people.
 ``Crude'' indicates that the rates are uncorrected for 
-age cohorts (different generations could be different sizes) or
+age (different generations could have different populations) or
 sex (possible different number males and females in each age cohort).
 The \emph{replacement rate} refers to the fact that, on average, each female needs to give
 birth to 2.1 children over her lifetime to maintain a stable population, 
-which accounts for such things as childhood mortality.
+to accounts for childhood mortality.
 
-In an undeveloped society (low \mft{A}), birth rates and death rates are high but balanced, 
+In a developing society (low \mft{A}),
+birth rates and death rates (per thousand per year) are high but nearly balanced, 
 resulting in low population growth.
-Demographic transition theory, illustrated schematically in Figure~\ref{fig:dtt},
+Demographic transition theory,\index{demographic transition theory}
+illustrated schematically in Figure~\ref{fig:dtt},
 is the observed pattern, shown in the top of Figure~\ref{fig:dtt},
 that economic development leads to decreased mortality 
 followed some time later by a falling birth rate.
