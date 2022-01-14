@@ -390,117 +390,36 @@ Agencies such as the U.S.\ Environmental Protection Agency\index{Environmental P
 and the European Commission\index{European Commission}
 (or member states) enforce the regulations.
 
-Using planetary boundaries for decision making is similar to rules for when to change
-the engine oil in an automobile (at least in those automobiles that use engine oil).
+Using planetary boundaries for decision making is similar to using guidelines for when to change
+automobile engine oil 
+(at least in those automobiles that use engine oil).
 Companies that provide oil-change services recommend frequent oil changes, perhaps as 
 often as every 3000 miles. 
-Automobile manufactures have increased this limit over decades with better 
-engine and component technology; 
-every 5000--7000 miles might be their recommendation. 
+Automobile manufactures have increased the recommended oil-change boundary
+over decades with better engine and component technology; 
+every 5000--7000 miles might be the manufacturer's recommendation. 
 Newer cars might calculate their own replacement timing based on environmental
 conditions and driving history (essentially using an index, see below). 
 However, \emph{no one} would recommend a 100,000 mile replacement schedule. 
 If the oil is not replaced, significant damage will be done to the engine, 
-likely disabling the car's ability to drive.
+rendering the car inoperative.
 In this analogy, the car's engine represents planet Earth. 
 The number of miles before an oil change is the the planetary boundary. 
-Maybe the boundary has a little bit of slack.
-Replacing the oil at 5000 miles or 5007 miles won't make a functional difference. 
+Perhaps the boundary has a little bit of slack.
+Replacing the oil at 5000 miles or 5007 miles won't make a difference. 
 However, drastically exceeding the limit will result in significant, costly, 
 and potentially irreparable damage to the engine. 
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-There may be different estimates of limits or planetary boundaries due to modeling 
+There may be different estimates of planetary boundaries due to modeling 
 and measurement uncertainty.
 However, dramatic consequences will still result if the actual limits are 
 greatly exceeded.
 \end{mcframe}
 
-% \begin{figure}
-% \begin{subfigure}{.5\textwidth}
-%   \centering
-%   % include first image
-%   \includegraphics[width=.8\linewidth]{chapters/ch02-Boundaries/figures/GA1.pdf}  
-%   \caption{The boundary is increasing due to human activity and growth remains unimpeded.}
-%   \label{fig:GA1}
-% \end{subfigure}
-% \begin{subfigure}{.5\textwidth}
-%   \centering
-%   % include second image
-%   \includegraphics[width=.8\linewidth]{chapters/ch02-Boundaries/figures/GA2.pdf}  
-%   \caption{The boundary is constant and growth is retarded as the boundary is approached.}
-%   \label{fig:GA2}
-% \end{subfigure}
-% \\
-% \begin{subfigure}{.5\textwidth}
-%   \centering
-%   % include third image
-%   \includegraphics[width=.8\linewidth]{chapters/ch02-Boundaries/figures/GA3.pdf}  
-%   \caption{There is a 2-way interaction between growth and the boundary but the
-% boundary is robust.}
-%   \label{fig:GA3}
-% \end{subfigure}
-% \begin{subfigure}{.5\textwidth}
-%   \centering
-%   % include fourth image
-%   \includegraphics[width=.8\linewidth]{chapters/ch02-Boundaries/figures/GA4.pdf}  
-%   \caption{Exceeding the boundary is possible and results in serious, dramatic, and
-% long-lasting reduction of the system's ability to provide ecosystem services.}
-%   \label{fig:GA4}
-% \end{subfigure}
-% \caption{Various relationships between biophysical bounds and human development.
-% The boundary or carrying capacity of the ecosystem is shown as a dash-dot red line.
-% A variable related to human development, such as population or food production is
-% shown in blue.
-% There are five possible patterns for human development relative to the ecosystem
-% boundaries. Human activities might be of a scale so small that the boundaries are
-% ``far away'' and exponential growth can proceed unimpeded, at least for a time.
-% Alternatively, as in (a), the boundary is increasing due to human activity and
-% growth remains unimpeded, as in Figure \ref{fig:exp}.
-% In (b), the boundary is constant and growth is retarded as the boundary is approached.
-% In (c), there is a 2-way interaction between growth and the boundary but the
-% boundary is robust.
-% In (d), exceeding the boundary is possible and results in serious, dramatic, and
-% long-lasting reduction of the system's ability to provide ecosystem services.
-% Adapted from \cite{Graedel:2010ab}.}
-% \label{fig:GAfig21}
-% \end{figure}
 
-%% This version has the advantage of having the labels (a, b, c, and d) centered beneath the subfigures.
-% \begin{figure}
-% \centering
-% %\includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/Limits.jpg}
-% \begin{tabular}{cc}
-% \includegraphics{chapters/ch02-Boundaries/figures/GA1.pdf} & %[0.4\linewidth]
-% \includegraphics{chapters/ch02-Boundaries/figures/GA2.pdf}\\
-% (a) & (b) \\
-% \includegraphics{chapters/ch02-Boundaries/figures/GA3.pdf} &
-% \includegraphics{chapters/ch02-Boundaries/figures/GA4.pdf} \\
-% (c) & (d)
-% \end{tabular}
-% \caption{Various relationships between biophysical bounds and human development.
-% The boundary or carrying capacity of the ecosystem is shown as a dash-dot red line.
-% A variable related to human development, such as population or food production is
-% shown in blue.
-% There are five possible patterns for human development relative to the ecosystem
-% boundaries. Human activities might be of a scale so small that the boundaries are
-% ``far away'' and exponential growth can proceed unimpeded, at least for a time.
-% Alternatively, as in (a), the boundary is increasing due to human activity and
-% growth remains unimpeded, as in Figure \ref{fig:exp}.
-% In (b), the boundary is constant and growth is retarded as the boundary is approached.
-% In (c), there is a 2-way interaction between growth and the boundary but the
-% boundary is robust.
-% In (d), exceeding the boundary is possible and results in serious, dramatic, and
-% long-lasting reduction of the system's ability to provide ecosystem services.
-% Adapted from \cite{Graedel:2010ab}.}
-% \label{fig:GAfig21}
-% \end{figure}
-
-%%%%%%%%%%%
-% Here is another attempt at the figure, this time using ggplot. ---MKH
-%%%%%%%%%%%
 <<BroundaryGraphFunction>>=
 boundary_graph <- function(df) {
   df %>% 
@@ -605,24 +524,24 @@ erodable_limit_data %>%
 
 Figure~\ref{fig:GAfig21} is a conceptual representation of four relationships between
 limits or boundaries and human effects on the environment. 
-In part (a), there is no effective limit; human growth can continue unimpeded. 
+In subfigure~(a), there is no effective limit; human growth can continue unimpeded. 
 However, Section~\ref{sec:exp} shows that growth can't continue forever on a finite 
 planet; there is always an eventual limit. 
-In part (b), the boundary is hard and can never be crossed. 
+In subfigure~(b), the boundary is hard and can never be crossed. 
 For instance, the extractable fraction of a mineral in the Earth's crust can't, 
 by definition, exceed 100\%. 
-In part (c), exceeding the boundary is possible, for short times, but the boundary 
+In subfigure~(c), exceeding the boundary is possible, for short times, but the boundary 
 is robust. 
 That is, it recovers. 
 Renewable resources like grazing land, fisheries, timber, and aquifers \emph{can}
-behavior this way. 
-Lastly, in part (d), exceeding the boundary causes long-term reduction in the 
+behave in this way. 
+Lastly, in subfigure~(d), exceeding the boundary causes long-term reduction in the 
 capacity of the ecosystem to provide ecosystem services. 
 As above, renewable resources like grazing land, fisheries, timber, and aquifers
 \emph{can} have this behavior, if their capacity is exceeded too much or for too long.
 As another example, complex systems, like temperature regulation of the planet, can exhibit
 tipping points that can radically change limits to an ecosystem service when the 
-limit is exceeded. 
+limit is exceeded.
 Carbon dioxide in the atmosphere is thought/feared to be an example
 of this sort of behavior; when CO$_2$ increases too much, Earth will get 
 \emph{dramatically} hotter, fundamentally altering many of its basic systems.
@@ -636,29 +555,17 @@ of this sort of behavior; when CO$_2$ increases too much, Earth will get
 There are many, many indices used to express or measure sustainability. 
 All indices are, essentially, (weighted) averages of quantities related to
 one or more of the three areas of sustainability shown in Figure~\ref{fig:venn_diagram}.
-% \subsection{Indices for environmental impact}
-% \subsection{Indices for the economy}
-% \subsection{Indices for social change}
-Example indices include carbon footprint, 
-ecological footprint (in global hectares per person), 
-and the human development index (HDI). 
-Figure~\ref{fig:FootprintHDIGraph} plots ecological footprint and HDI for many 
-different countries. 
-The multidimensional poverty index in another example of a socio-economic index used
-for sustainability.
-
-
-% \begin{figure}
-% \centering
-% \includegraphics[width=\figwidth]{chapters/ch02-Boundaries/figures/EcoHDI.jpg}
-% \caption{The ecological footprint per person and human development index for many nations.}
-% \label{fig:ecofootprintHDI}
-% \end{figure}
+Example indices include carbon footprint (in CO$_2$ emissions per person), 
+the multidimensional poverty index, 
+ecological footprint (in global hectares per person), and
+the human development index (HDI). 
+Figure~\ref{fig:FootprintHDIGraph} plots ecological footprint vs.\ HDI for 
+the average person in many countries.
 
 In contrast to planetary boundaries, which are hard biophysical limits, indices 
 typically represent aggregated behavior. 
 Aggregation allows grouping together of things that are different.
-For example, the HDI group life expectancy at birth, expected years of schooling, 
+For example, the HDI groups life expectancy at birth, expected years of schooling, 
 and gross national income. 
 Another example is CO$_2$ equivalents, which expresses the global warming 
 potential of various gases such as methane, nitrous oxide, and fluorinated gases
@@ -726,13 +633,14 @@ Figure \ref{fig:CO2Graph} shows average atmospheric CO$_2$ concentrations over t
 Figure~\ref{fig:CarbonEmissionsGraph} shows the yearly rate of world CO$_2$ emitted since 1800.
 The clear trend is upward, with small drops corresponding to years of economic recession.
 Greenhouse gas emissions (primarily CO$_2$ released from burning fossil fuels) 
-are causing the average global temperature to increase. 
+are raising the atmospheric CO$_2$ concentration and 
+causing the average global temperature to increase. 
 The current average atmospheric CO$_2$ concentration is an example of humanity
 exceeding a planetary boundary. 
 Because the carbon cycle is one of Earth's 
 regulating and support ecosystem services and
 because the atmosphere is comprehensively global, 
-the \emph{impacts} of climate on the environment are many. 
+the \emph{impacts} of climate on the environment are many.
 Climate change is the term used to describe the results of the greenhouse effect.
 Climate change is interacting with many other planetary systems and thus contributes
 to, for example, the extinction rate. 
@@ -799,22 +707,21 @@ especially regarding fossil fuels and agriculture.
 
 % see http://clivebest.com/blog/?p=1169 and references therein.
 Here's a brief description of how climate change is happening. 
-%**** In the $\beta$ version of the text, this description will be made more complete. ****
 If the radiation received from the sun exceeds the heat radiated from the Earth,
 the Earth's temperature will increase. 
 As the Earth's temperature increases, the amount of heat radiated from the Earth
 increases as well.
-Eventually, a the Earth will reach a new equilibrium temperature. 
+Eventually, the Earth will reach a new equilibrium temperature. 
 The amount of radiation received from the sun is relatively constant; there are a variety of 
 satellite-based and Earth-bound measurement systems to confirm this. 
 Because the sun is very hot, the radiation it emits is high energy (short wavelength).
-Greenhouse gases, of which CO$_2$ is of chief concern, do not absorb these
-short wavelengths. 
+Greenhouse gases, of which CO$_2$ is of chief concern, do not absorb the
+short wavelengths of the Sun's radiation. 
 Radiation from the Earth is low energy (long wavelength) because the Earth's
 surface temperature is much lower than the Sun's.
-CO$_2$ \emph{does} absorb energy at these shorter wavelengths.
+CO$_2$ \emph{does} absorb energy at these longer wavelengths.
 The lower atmosphere is thus opaque to thermal radiation from the Earth's surface.
-All radiation leaving the Earth's surface is absorbed by CO$_2$ and reradiated
+Much of the radiation leaving the Earth's surface is absorbed by CO$_2$ and reradiated
 to upper levels of the atmosphere. 
 Eventually, in the upper atmosphere, the atmosphere gets thin enough that 
 CO$_2$ can radiate energy directly into space. 
@@ -822,12 +729,13 @@ When CO$_2$ is added to the atmosphere, it traps radiation leaving the Earth
 at higher and higher levels of the atmosphere.
 However, since the atmosphere grows colder at higher elevations, the radiation into
 space is less effective than at lower elevations. 
-By increasing atmospheric CO$_2$ concentration, we are essentially adding radiation 
-shields to the upper atmosphere. 
+By increasing atmospheric CO$_2$ concentration, we are essentially adding 
+long-wavelength radiation shields to the atmosphere. 
 Less radiation leaving the upper atmosphere means that more heat is trapped
 closer to the Earth's surface. 
 Eventually the upper atmosphere will warm enough to radiate as much heat as 
-is incoming from the Sun but that warming process takes a very long time.
+is incoming from the Sun,
+but that warming process takes a very long time.
 
 % The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
 % The clear trend is upward, with small drops corresponding to years of economic recession.
@@ -836,8 +744,8 @@ Most scientists agree that avoiding irreversible effects of climate change
 requires limiting global average temperature rise to 1.5~\degC{} or less,
 relative to the global average temperature at the dawn of the industrial revolution.
 Our ``carbon budget'' is the amount of future CO$_2$ emissions
-that will eventually bring us 1.5~\degC{} total warming, 
-accounting for the (very small) rate of absorption by the biosphere.%
+that will eventually create 1.5~\degC{} total warming, 
+accounting for the (very small) rate of absorption of CO$_2$ by the biosphere.%
 \footnote{
   The small absorption rate of CO$_2$ by the biosphere means that
   we need a negative CO$_2$ emissions rate (sequestration)
@@ -845,22 +753,23 @@ accounting for the (very small) rate of absorption by the biosphere.%
   within a few centuries.
 }
 As of 2021, the remaining carbon budget is 500~GtCO$_2$ 
-for a 50\% likelihood of remaining below 1.5~\degC{}~\cite[Table~SPM.2]{IPCC:2021tk}.%
+for a 50\% likelihood of remaining below 1.5~\degC{} warming~\cite[Table~SPM.2]{IPCC:2021tk}.%
 \footnote{
  For context, the carbon budget was 1500~GtCO$_2$ in 1990.
  If we want better odds of remaining below 1.5~\degC, 
  the carbon budget is smaller. 
- For 83\% odds, the carbon budget is 300~GtCO$_2$.
- If we want to live dangerously, the carbon budget for 17\% odds is 900~GtCO$_2$. 
+ For 83\% odds, the remaining carbon budget is 300~GtCO$_2$.
+ If we want to live dangerously, the carbon budget for 17\% odds
+ of staying below 1.5~\degC{} warming is 900~GtCO$_2$. 
  \label{page:carbon_budget}
 }
 %
 Assuming no change in the CO$_2$ emissions rate and
 given that we are emitting about 35~GtCO$_2$/year
 (Figure~\ref{fig:CarbonEmissionsGraph}), 
-we have less than 15 years before we have committed to a long-term  1.5~\degC{}
-temperature increase (assuming we don't find a way to remove CO$_2$ from at 
-atmosphere).
+we have less than 15 years before we are committed to a 1.5~\degC{}
+temperature increase over the long term 
+(assuming we don't find a way to remove CO$_2$ from the atmosphere at large scale).
 Given that CO$_2$ emissions are not staying constant but are, in fact, rising,
 we probably have about a decade before we reach 1.5~\degC{} of eventual warming
 and irreversible effects of climate change.
@@ -874,17 +783,21 @@ energy and CO$_2$ emissions are the prime example of this book.
 
 \end{mcframe}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary}
-This chapter discussed the many services the Earth's ecosystem supplies, such as
-materials and energy, waste removal, and recreational opportunities.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This chapter discussed the many services provided by the Earth's ecosystem,
+such as materials and energy, waste removal, and recreational opportunities.
 Human activities can degrade or destroy the ability of the ecosystem to supply 
 those services.
 \mft{I}, the left-hand side of the IPARX equation (Equation~\ref{eq:IPARX})
 collects the various ways that ecosystem services can be affected.
-Maximum permissible levels for~\mft{I} are called planetary boundaries.
+Maximum permissible levels for the components of~\mft{I} are called planetary boundaries.
 Indices are a tool to help us aggregate information and manage impacts.
-The next four chapters will look at the terms on the right-hand side of the IPARX
-equation in turn.
+The next four chapters will look at the terms on the right-hand side 
+of the IPARX equation.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
