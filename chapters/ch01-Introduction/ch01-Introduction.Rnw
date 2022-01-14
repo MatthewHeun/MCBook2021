@@ -110,8 +110,8 @@ Second, it may seem like the consequences of not becoming sustainable are so far
 in the future that there is neither urgency nor immediate payback.
 However, neither of these views is true.
 Current news headlines indicate that we are already 
-experiencing the effects of not being sustainable, in all areas 
-of the sustainability triangle---environmentally, economically, \emph{and} socially.
+experiencing the effects of not being sustainable, in all 
+sustainability domains---environmentally, economically, \emph{and} socially.
 There are many reasonable and simple things that can be done to improve our 
 sustainability in the near term.
 The deep changes needed for long-term sustainability are urgently needed precisely because
@@ -268,27 +268,26 @@ Eventually, the aquifers will run dry.
 Economic sustainability involves questions of profit and loss, wealth management, and
 macroeconomic policy.
 A business that continually loses money is not sustainable.
-Eventually it will go out of business.
+Eventually, it will go out of business.
+
 Social sustainability comprises human and civil rights, suffering, and personal freedom.
-A social group that continually loses members, for example the Whig party, will 
+A social group that continually loses members, for example, the Whig party, will 
 cease to be a group.
 Typically, social sustainability includes things that \emph{should not} be 
-sustained but that have persisted a very long time, like poverty, class inequality,
+sustained but that, typically, have persisted a very long time, like poverty, class inequality,
 sexism, slavery, and other civil injustices.
 
-This book will discuss issues associated with each of these three
-areas of sustainability but with a focus on energy and carbon emissions.
+This book discusses issues associated with each of these three
+sustainability domains but with a focus on energy and carbon emissions.
 The end-of-chapter questions typically focus on interactions between the three
-pillars, like a social versus economic tradeoff.
-% \emph{not}
-% because they are the only sustainability problem, but because energy is the master
-% resource and climate change is currently one of the most \emph{urgent} sustainability problems.
+domains, like a social versus economic tradeoff.
+
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This book uses energy and carbon emissions as prime examples \emph{not}
 because they are the \emph{only} sustainability problem, but because
-\textbf{energy is the master resource} and climate change is currently
+energy is the master resource and climate change is currently
 one of the most \emph{urgent} sustainability problems.
 Energy and carbon emissions link together many of our sustainability challenges.
 \end{mcframe}
@@ -304,82 +303,24 @@ This definition emphasizes the social and economic aspects of sustainability ove
 or instead of, environmental sustainability. 
 In the end, without environmental sustainability, there is no sustainability at all.
 
-% %++++++++++++++++++++++++++++++
-% \subsection{Definitions of sustainability}
-% \label{sec:Sdefns}
-% %++++++++++++++++++++++++++++++
-
-% The most oft-quoted \cite{Quental2011} definition of sustainability is that
-% ``Sustainable development is development that meets the needs of the present without
-% compromising the ability of future generations to meet their own needs'' \cite{Brundtland}.
-% Note that ``sustainable development,'' is an oxymoron and is not the same as sustainability.
-% Furthermore, ``needs'' are subjective.
-% This definition emphasizes the social and economic aspects of sustainability over,
-% or instead of, environmental sustainability. % "Now" before "later."
-% %could add two paragraphs of explanation here. Or, maybe make them e-o-c questions.
-% In the end, without environmental sustainability, there is no sustainability at all.
-
-% Herman Daly proposed three prerequisites or criteria for true environmental
-% sustainability \cite{Daly1996}:
-% \begin{enumerate}
-% \item Renewable resources, such as fish, soil, and groundwater, must be used no faster
-% than the rate at which they regenerate.
-% \item Nonrenewable resources, such as minerals and fossil fuels, must be used no faster
-% than renewable substitutes for them can be put into place.
-% \item Pollution and wastes must be emitted no faster than natural systems can absorb them,
-% recycle them, or render them harmless.
-% \end{enumerate}
-% The core idea is that [the rate of] human impact on the ecosystem can be no greater than
-% the ecosystem can absorb, which introduces the idea of the capacity of the ecosystem to
-% provide resources and ``take care of'' wastes.
-% Chapter \ref{chap:planetary_boundaries} examines the concept of ecosystem capacities in
-% greater detail.
-
-% Eliminate the section below. It's on sustainable development, not sustainability
-% per se (at least points 2-4), it's unnecessarily wordy, and it doesn't really contribute.
-% \begin{quote}
-% Previous research by the authors focused on the identification of the main underlying
-% principles that structure the concept of sustainable development \cite{Quental2011}.
-% These principles could be traced back to different scientific approaches that,
-% the authors argued, eventually led to the modern understanding of the concept.
-% Four main sustainability principles were identified:
-%
-% the limits principle: the human economy is embedded within the ecosphere and, as such,
-% sustainability depends on ensuring that the scale of the human economy is low enough
-% to allow the maintenance of healthy life support systems;
-%
-% the means and ends principle: natural resources and economy have an instrumental
-% value in fulfilling the ultimate ends of society. Economic growth should not be
-% understood as an end in itself but as an instrument that can help achieving
-% higher-order ends such as human well-being and freedom;
-%
-% the needs principle: each system, and every human being, has its own minimum
-% needs in order to be viable. These irreducible needs must be satisfied independently
-% and cannot be aggregated;
-%
-% the complexity principle: systems exhibit complex behavior, namely through multiple
-% stable equilibria and non-linear behavior, and may even collapse when thresholds are reached.
-% \end{quote}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{A framework for environmental sustainaiblity thinking}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Two mathematical identities, IPAT and Kaya, have been used to express sources and impact
+Two mathematical identities, IPAT and Kaya, have been used to express the impact
 of human activities on the environment.
 IPAT expresses ``impact''~\Iparen{} on the environment as the product of human
 population~\Pparen{} affluence~\Aparen{}, and technology~\Tparen{}.
-The Kaya identity is a form of the IPAT equation but restricts impact to CO$_2$
-emissions.
+The Kaya identity is a form of the IPAT equation but restricts impact~\Iparen{}
+to CO$_2$ emissions.
 On the other hand, Kaya expands the generic expression for ``technology'' to be
 the product of energy intensity of the economy (units of energy per GDP)
-and the carbon intensity of energy (units of CO$_2$ per unit of energy).
+and the carbon intensity of energy (units of CO$_2$ emissions per unit of energy).
 
 Chapters \ref{chap:planetary_boundaries}--\ref{chap:impact_intensity}
 of this book are organized around a hybrid of the IPAT and Kaya
 approaches.
-We keep the more general ``impact'' of IPAT but also generalize the more insightful
+We keep the more general ``impact'' of IPAT but also generalize the expanded
 ``technology'' expression from Kaya as the product of resource intensity of the economy~\Rparen{}
 and the impact intensity of resources~\Xparen{}.
 
@@ -409,25 +350,25 @@ we are unsustainable.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The IPARX identity is a static relationship.
 Its terms represent steady-state levels,
-but do not necessarily show how changes in any one variable will affect the others.
+but do not necessarily show how changes in any one variable affects the others.
 For instance, using resources more efficiently (improving resource intensity),
 does not, in general, lower impact.
-Instead, it leads to more affluence (see chapter \ref{chap:resource_intensity}).
+Instead, it leads to more affluence. (See chapter~\ref{chap:resource_intensity}.)
 Likewise, it may not be possible to drive the impact(s) per unit of resource to
 zero because of diminishing returns on efficiency 
 and tradeoffs that exist between different types of impacts.
 Thus, while Equation~\ref{eq:IPARX} is useful as a conceptual framework for 
-thinking about sustainability challenges, it does \emph{not} provide a roadmap for
-sustainability solutions.
+thinking about sustainability challenges, it does \emph{not} provide a complete 
+roadmap for sustainability solutions (in part) because of interactions among the terms.
 \end{mcframe}
 
 IPARX is true because it is an identity, and it provides a useful organizing framework
 for the following chapters.
 To illustrate the IPARX framework, energy and CO$_2$ are prime examples
-in the rest of the text because energy is the master resource
+in the rest of the text, because energy is the master resource
 % Need "energy is the master resource section??!
-and climate change is our most urgent sustainability challenge, and, of course,
-the two are closely linked.
+and climate change is our most urgent sustainability challenge.
+Of course, the two are closely linked.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
