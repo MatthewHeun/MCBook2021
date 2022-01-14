@@ -645,28 +645,25 @@ ggplot2::ggplot(data = world) +
                  axis.ticks.y = ggplot2::element_blank())
 @
 
-Since the industrial revolution, humans have been increasingly living in urban environments.
+Since the industrial revolution, humans are increasingly living in urban environments.
 In 1973 there were only 3 cities (Mexico City, Tokyo, and New York City) with populations 
-of more than 10 million people (called ``megacities'').
-Since 2005--2006 more than half of the world's population live in urban areas.
-Now there are 21 cities with populations of 10 million or more.
-%(see Figure \ref{fig:cities_population} for more detail).
+of more than 10~million people (called ``megacities'').
+Since 2005--2006 more than half of the world's population live in urban areas, and
+there are now 21 cities megacities.
 The percentage of people living in urban areas is projected to grow to 68\% by 2050. 
-%%https://ourworldindata.org/urbanization
 Urban living is correlated with wealth and higher GDP. 
 High population density (number of people per area) means mass transit is practical 
 and, in fact, widely used.
 Some thinkers have suggested that the densest urban environments are the most
-ecological places to live.
-%% https://www.newyorker.com/magazine/2004/10/18/green-manhattan
+ecological places to live~\cite{Owen:2004wt}.
 However, urban areas are supported by vast networks, including transportation, 
 that supply resources, such as food.
-Equation \ref{eq:IPARX} indicates that higher affluence (A), not location, is a 
+Equation~\ref{eq:IPARX} indicates that higher affluence~\Aparen{}, not location, is a 
 main source of ecological impact.
 High population density \emph{can} provide efficient transportation, minimize habitat 
 destruction, and allow economies of scale for dealing with waste materials.
 Nevertheless, it is unwise to consider urban areas apart from the rural
-areas that allow them to thrive.
+areas that enable them to thrive.
 True sustainability thinking must consider all of human society and its spatial distribution.
 
 % \begin{figure}
@@ -704,6 +701,7 @@ True sustainability thinking must consider all of human society and its spatial 
 %% Science may clarify priorities “but the whole show is essentially about Love”.
 %% JVA: Technology says, 'can we," economics tells us the tradeoffs, love lets us decide whether we want to.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Malthus, Ehrlich, and Simon}
 \label{sec:malthus_ehrlich_simon}
@@ -719,14 +717,14 @@ growth, which would immediately consume the abundance.
 Increasing affluence, Malthus thought, would lead to population growth, which 
 would thereby decrease GDP \emph{per capita}. 
 (In Equation~\ref{eq:IPARX},
-affluence is measured by GDP per capita, \Aparen.)
+affluence is measured by GDP per capita, \mft{A}\:\!)
 Implicitly, Malthus assumed that population would grow more rapidly than affluence.
 The (hypothetical) inability to achieve long-term increases in affluence is 
 now called the \emph{Malthusian trap}.
 Subsequent to Malthus' work,
 the Industrial Revolution occurred, and GDP per capita rose
-\emph{in spite of}, or alongside of, increasing population.
-(See Figures~\ref{fig:PopulationGraph} and~\ref{fig:AffluenceGraph-Nordhaus}.)
+\emph{in spite of}, or alongside of, increasing population;
+see Figures~\ref{fig:PopulationGraph} and~\ref{fig:AffluenceGraph-Nordhaus}.
 
 Nevertheless, fears of Malthusian catastrophe have not gone away.
 Two influential modern neo-Malthusian works are \emph{The Population Bomb} (1968),
@@ -737,13 +735,13 @@ in both population and industrial capacity'' due to exponential growth in the
 rate of use of nonrenewable resources.
 Likewise, \emph{The Population Bomb} predicted that in ``the 1970s hundreds of 
 millions of people will starve to death.''
-Neither prediction has come to pass. 
+Neither prediction came to pass. 
 Nevertheless, both books have received multiple updates, repeating the same basic claims.
 
 The opposite point of view has been called \emph{techno-optimism}.
-Techno-optimism holds that there are no limits to growth, because
-(a) matter and energy are abundant in the universe and
-(b) human ingenuity can invent technology to enable substitution for all depleting nonrenewable 
+Techno-optimists hold that there are no limits to growth, because
+(a)~matter and energy are abundant in the universe and
+(b)~human ingenuity can invent technology to enable substitution for all depleting nonrenewable 
 resources.
 The economy is the mechanism by which techno-optimists expect human ingenuity 
 to overcome all resource scarcities.
@@ -753,7 +751,8 @@ alternative resources.
 pollution-control technology would not.
 Techno-optimists, on the other had, claim that it is technologically possible to produce, 
 for example, abundant energy with little to no pollution. 
-They point to the growth of wind and solar electricity generation as examples. 
+They point to the growth of wind and solar 
+electricity generation technologies as examples. 
 
 Who is correct, the neo-Malthusians or the techno-optimists?
 Will population growth lead to catastrophe or is growth a source of labor and 
@@ -761,16 +760,18 @@ technology that will yield abundant resources?
 In 1980, business professor Julian Simon challenged biologist Paul Ehrlich to a 
 \$10,000 wager.
 Ehrlich was to select a suite of raw materials and a date more than a year away.
-If inflation-adjusted prices of those raw materials increased, Ehrlich would win. 
+If inflation-adjusted prices of those raw materials increased
+(indicating scarcity), Ehrlich would win. 
 Ehrlich chose copper, chromium, nickel, tin, and tungsten over the time period 
 1980 to 1990.
-In the 1980s, world population increased from about 4.46 billion to around
-5.33 billion.
+In the 1980s, world population increased from about 4.46~billion to around
+5.33~billion.
 Despite the largest single-decade population increase in history, 
-prices for all five materials decreased, and Simon won the bet.
-If you think the price decreases settled the argument, like Ehrlich you lose too.
-Over the years, both sides have countered with a variety of ``what-if'' scenarios. 
-Scholars have examined other timespans and other raw materials. 
+prices for all five materials decreased (indicating abundance), and
+Simon won the bet.
+If you think the price decreases settled the argument, you lose like Ehrlich.
+Over the years, both sides have countered with a variety of ``what-if'' scenarios, and  
+scholars have examined other timespans and other raw materials. 
 One study concluded that Simon would win about 54\% of the time
 if war years were included and
 about 70\% of the time if war years were excluded~\cite{Pooley:2020vx}.
@@ -799,7 +800,7 @@ life is better now than it has ever been.
 Whether you believe that human life can, or will, continue to improve and, if so, for how long,
 likely depends on your prior beliefs about human ingenuity, 
 the role of the economy, and 
-the substitutability of critical resources. 
+the substitutability of critical resources.\index{substitution} 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -807,12 +808,11 @@ the substitutability of critical resources.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 This chapter illustrated some of the reasons why population~(\mft{P} in Equation~\ref{eq:IPARX})
-is a key consideration for
-sustainability.
+is a key consideration for sustainability.
 The scale of human population determines the extent of our impact on the planet
 through our economic activity.
-Conversely, it is also our economic system that incentivizes a reduction in population 
-growth (or seems to).
+Conversely, it is also our economic system that incentivizes 
+a reduction in population growth (or seems to).
 While human population has grown exponentially, there are signs that trend is slowing
 and may even reverse.
 The next chapter will consider ways in which human affluence~\Aparen{} affects sustainability.
