@@ -442,10 +442,10 @@ work, and the fraction of the population that is working;
 see Section~\ref{sec:dtt}.
 More workers can increase economic output (GDP), as mentioned above,
 but will not increase GDP \emph{per person}.
-On the other hand, a greater fraction of the population working, 
-such as with the demographic dividend, 
-or workers working longer hours will tend to increase \mft{A} (at least until the 
-population pyramid stabilizes, in the case of the demographic dividend).
+On the other hand,
+a greater fraction of the population working, or workers working longer hours,
+will tend to increase \mft{A} 
+(at least until the population pyramid stabilizes).
 
 
 %..............................
@@ -462,12 +462,9 @@ Because capital depreciates over time, continual investment
 is needed to maintain a certain level of capital stock. 
 Higher levels of capital require larger yearly investments to maintain.
 At some point, there is a \emph{maximum} level of effective capital.
-Beyond that maximum, additional capital is more expensive to maintain than it contributes 
-to the economy.
-% The maximum effective level depends on technology and the price of borrowing
-% money (that is, interest) for making capital investments.
-% Conceptually, 
-At the effective maximum level of effective capital, labor will have a maximum
+Beyond that maximum,
+expenses to maintain capital exceed the contribution of capital to the economy. 
+At the effective maximum level of capital, labor will have a maximum
 level of output because workers are fully ``tooled up.''
 
 
@@ -476,24 +473,26 @@ level of output because workers are fully ``tooled up.''
 %..............................
 
 Innovation is the major source of economic growth.
-There are two types of innovation: the invention of new \emph{kinds} of goods and
-services \emph{or} improvements to efficiency.
+There are two types of innovation: 
+(a)~the invention of new \emph{kinds} of goods and services
+and
+(b)~ improvements to efficiency.
 The majority of the goods and services we consume today did not exist in 
 1870~\cite{Gordon2016}.
-Today, we consume entirely new categories of goods and services that did not
+We consume entirely new categories of goods and services that did not
 exist for most of human history.
 Much of the improvement in our standard of living comes from these new types of 
 goods and services.
 
 However, examined closely, almost all of these ``new goods'' stories 
 \emph{also} end up being about some form of efficiency.
-The endless quest to meet our needs more efficiently allows us to instead spend
-our budget on \emph{additional} consumption.
+The endless quest to meet our needs more efficiently 
+allows spending on \emph{additional} consumption.
 Efficiency improvements allow us to get more GDP for the same level of resource consumption.
 However, as we will see in Chapter~\ref{chap:resource_intensity}, particularly in 
 Figures~\ref{fig:per_capita_material_use} and~\ref{fig:EnergyPerPersonGraph},
-economic growth results in \emph{more} consumption of resources.
-The greater use of resources is caused by affluence growth, 
+economic growth correlates with \emph{additional} consumption of resources.
+The greater use of resources is caused by growth in affluence~\Aparen{},
 driven, in part, by improvements in material (Figure~\ref{fig:per_gdp_material_use})
 and energy (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) efficiency 
 (that is, ``innovation,'' as defined above).
