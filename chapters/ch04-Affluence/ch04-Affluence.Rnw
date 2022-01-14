@@ -469,50 +469,35 @@ level of output because workers are fully ``tooled up.''
 
 
 %..............................
-\paragraph{Innovation} 
+\paragraph{Innovation}
 %..............................
 
 Innovation is the major source of economic growth.
-There are two types of innovation: 
+There are two types of innovation:
 (a)~the invention of new \emph{kinds} of goods and services
 and
 (b)~ improvements to efficiency.
-The majority of the goods and services we consume today did not exist in 
+The majority of the goods and services we consume today did not exist in
 1870~\cite{Gordon2016}.
 We consume entirely new categories of goods and services that did not
 exist for most of human history.
-Much of the improvement in our standard of living comes from these new types of 
+Much of the improvement in our standard of living comes from these new types of
 goods and services.
 
-However, examined closely, almost all of these ``new goods'' stories 
+However, examined closely, almost all of these ``new goods'' stories
 \emph{also} end up being about some form of efficiency.
-The endless quest to meet our needs more efficiently 
+The endless quest to meet our needs more efficiently
 allows spending on \emph{additional} consumption.
 Efficiency improvements allow us to get more GDP for the same level of resource consumption.
-However, as we will see in Chapter~\ref{chap:resource_intensity}, particularly in 
+However, as we will see in Chapter~\ref{chap:resource_intensity}, particularly in
 Figures~\ref{fig:per_capita_material_use} and~\ref{fig:EnergyPerPersonGraph},
 economic growth correlates with \emph{additional} consumption of resources.
 The greater use of resources is caused by growth in affluence~\Aparen{},
 driven, in part, by improvements in material (Figure~\ref{fig:per_gdp_material_use})
-and energy (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) efficiency 
+and energy (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) efficiency
 (that is, ``innovation,'' as defined above).
-% ****
-% MKH to check, especially for efficiency vs. efficacy (see also the paragraphs above) -- JVA
-% ****
 Managing the ``rebound effect,'' which is a result of efficiency improvements,
 is a major sustainability challenge; see Section~\ref{sec:rebound_effect}.
-% 
-% *****
-% Would it be possible to also talk about economic contraction here? 
-% Would be nice to discuss HOW economies contract and the pain it brings.
-% But can also reference Figure~\ref{fig:CarbonEmissionsGraph}
-% to reinforce the point that recessions reduce environmental impact.
-% Talking about contraction then opens the door to discuss economic level.
-% We have a choice about the economic level at which we operate.
-% ---MKH 
-% 
-% Check the new paragraph below --- JVA
-% *****
 
 
 %..............................
@@ -522,18 +507,20 @@ is a major sustainability challenge; see Section~\ref{sec:rebound_effect}.
 Economies can grow (particularly when we try to make them grow) but they can also
 shrink.
 A shrinking economy is said to be in recession.
-A full discussion of the mechanisms of recession is beyond the scope of this book
+A full discussion of the mechanisms of recession is beyond the scope of this book,
 but the effect of recessions can be seen in Figure~\ref{fig:CarbonEmissionsGraph}.
-If affluence \mft{A} is a cause of impacts \mft{I}, then reducing \mft{A} is one way to reduce
-$I$, as Figure~\ref{fig:CarbonEmissionsGraph} shows for CO$_2$ emissions.
-However, recessions are unwelcome for many very good reasons. 
+If affluence~\Aparen{} is a cause of impacts~\Iparen{},
+then reducing \mft{A} is one way to reduce
+\mft{I}, as Figure~\ref{fig:CarbonEmissionsGraph} shows for CO$_2$ emissions.
+However, recessions are unwelcome for many very good reasons.
 No country has yet intentionally tried to shrink its economy.
 
 Moreover, the environmental effects of recessions are not always positive,
 that is, sometimes reducing \mft{A} \emph{increases} (at least some parts of) \mft{I}.
-For instance, a company going out of business might cause 
-environmental contamination because there no longer exists a responsible steward for 
-potentially hazardous materials or equipment.
+For instance, a company going out of business might cause
+environmental contamination, because
+there no longer exists a responsible steward for
+hazardous materials and equipment.
 The U.S.\ has hundreds of thousands of leaking underground gasoline storage tanks
 from gas stations that have gone out of business~\cite{brownfields}.
 Similar stories can be told for former industrial sites, mines, and oil and gas wells.
@@ -551,64 +538,62 @@ to continued economic growth.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 World economies are managed for continual growth, which,
-% (See P1.\ref{project:alt_exp} for the relationship between continual growth
-% and exponential growth.)
 as mentioned previously, is inherently
 unsustainable on a finite planet.
 When the economy grows continually it will, at some point,
 either demand more resources than the environment can provide or
-exceed the ecosystem's ability to absorb wastes.
+exceed the ecosystem's ability to absorb its wastes.
 Eventually, economic growth will push the ecosystem past a tipping point where the
-ecosystem is no longer able to provide ecosystem services, as 
+ecosystem is no longer able to provide ecosystem services, as
 discussed in Chapter~\ref{chap:planetary_boundaries}.
 
-In response, there are calls for transitioning world economies 
-to new operating regimes, different from growth. 
-There are proposals for 
-zero-growth (or steady-state), 
-degrowth (or shrinking),  
-circular, and 
+In response, there are calls for transitioning world economies
+to new operating regimes, different from growth.
+There are proposals for
+zero-growth (or steady-state),
+degrowth (or shrinking),
+circular, and
 doughnut
-economies. 
+economies.
 
 
 %..............................
-\paragraph{Steady state} 
+\paragraph{Steady state}
 %..............................
 
 A steady-state economy\index{economy!steady-state} is one that neither grows nor shrinks.
 Its size (measured in \$/year) stays the same through time.
-With a stable population, a steady-state economy would experience no change 
-in the standard of living \Aparen{} from one generation to the next.
-If population goes up or down, 
-affluence will go down or up, 
-because the size of the economy is fixed.
+With a stable population, people in a steady-state economy would experience no change
+in their standard of living~\Aparen{} from one generation to the next.
+If population goes up or down,
+affluence will go down or up,
+because the size of the economy (in \$/year)is fixed.
 
 One criticism of a steady-state economy is that (some) people could be left
-poor and destitute. 
+poor and destitute.
 The static nature of a steady-state economy might strengthen or rigidify already
 unacceptable inequalities within our economic system.
 (At least, that is the fear.)
 
 Further, a steady-state economy is not necessarily sustainable.
 The sustainability of an economy is not determined by its growth rate
-(usually measured in \%/year), 
-the quantity held constant in a steady state economy. 
+(usually measured in \%/year),
+the quantity held constant in a steady state economy.
 Rather, the sustainability of an economy is determined by its \emph{level} or \emph{size}
-(usually measured in \$/year) relative to planetary boundaries. 
-If the steady-state level of the economy 
+(usually measured in \$/year) relative to planetary boundaries.
+If the steady-state level of the economy
 is above a sustainable threshold
-(if planetary limits have been exceeded), 
-the economy is unsustainable, regardless of whether it is growing (positive \%/year), 
-shrinking (negative \%/year), or 
-steady state (0~\%/year). 
+(and planetary limits have been exceeded),
+the economy is unsustainable, regardless of whether it is growing (positive \%/year),
+shrinking (negative \%/year), or
+steady state (0~\%/year).
 Indeed, Figure~\ref{fig:FootprintHDIGraph} suggests that
 many economies are \emph{already} too large to be considered sustainable.
 
 Figure~\ref{fig:FootprintHDIGraph} further highlights the fact that 
 many economies are \emph{both} already too large \emph{and} still growing.
-For those economies, a transition to steady state can be a first step 
-toward becoming sustainable. 
+For those economies, a transition to steady state can be a \emph{first step} 
+toward becoming sustainable.
 A transition to steady state means that 
 those economies will not grow to become \emph{even more} unsustainable each year. 
 
