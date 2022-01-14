@@ -206,7 +206,7 @@ In \emph{some} ways, the transition away from traditional biofuels \emph{did} re
 in reduced environmental impact, neglecting climate change concerns.
 % Referencing Figure 5.3, the falling biomass PER GDP, doesn't seem appropriate here.
 
-<<ImpactIntensityGraph, fig.scap="Carbon intensity of energy~(\\;\\!$\\mft{X}_{\\text{CO}_2}$) vs.\\ time.", fig.cap="Carbon intensity of energy~(\\;\\!$\\mft{X}_{\\text{CO}_2}$). The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
+<<ImpactIntensityGraph, fig.scap="Carbon intensity of energy~(\\;\\!$\\mft{X}_{\\text{CO}_2}$) vs.\\ time", fig.cap="Carbon intensity of energy~(\\;\\!$\\mft{X}_{\\text{CO}_2}$). The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 carbon_intensity <- dplyr::inner_join(
   CO2_emissions,
   primary_energy %>%
@@ -720,7 +720,7 @@ years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
 
 print(xtable::xtable(iparx_df %>% 
                        dplyr::filter(Year %in% years_for_rate_table), digits = c(0, 0, 3, 2, 2, 2, 2),
-                     caption = c("Values of IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers} these data allow us to see whether the world is becoming more sustainable or less sustainable over time and why; see P6.\\ref{question:iparx_calcs}.", "Values of IPARX terms for selected years."),
+                     caption = c("Values of IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers} these data allow us to see whether the world is becoming more sustainable or less sustainable over time and why; see P6.\\ref{question:iparx_calcs}.", "Values of IPARX terms for selected years"),
                      label = "tab:iparx_select_years"),
       include.rownames = FALSE,
       include.colnames = TRUE,
@@ -891,7 +891,7 @@ Historically, as GDP (equal to $\mft{P} \times \mft{A}$ in Equation~\ref{eq:IPAR
 primary energy consumption also rises,
 as shown in Figure~\ref{fig:E_vs_GDP_graph}.
 
-<<E_vs_GDP_graph, fig.scap="World primary energy consumption vs.\\ world GDP.", fig.cap = "World primary energy consumption vs.\\ world GDP.">>=
+<<E_vs_GDP_graph, fig.scap="World primary energy consumption vs.\\ world GDP", fig.cap = "World primary energy consumption vs.\\ world GDP.">>=
 egdp_df <- primary_energy %>% 
   dplyr::group_by(Year) %>%
   dplyr::summarise(energy_EJ = sum(energy_EJ)) %>%
