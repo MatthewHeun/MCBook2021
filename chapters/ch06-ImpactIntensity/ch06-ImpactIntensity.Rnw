@@ -158,10 +158,11 @@ US_CO2_by_sector <- readxl::read_excel(file.path("chapters", "ch06-ImpactIntensi
   )
 
 print(xtable::xtable(US_CO2_by_sector, digits = c(0, 0, 0, 1),
-                     caption = "U.S.\ CO$_2$ emissions 2018 by sector with
+                     caption = c("U.S.\ CO$_2$ emissions (2018) by sector with
                      CO$_2$ emissions from electricity generation attributed to
                      end uses by
-                     fraction of electricity demanded.",
+                     fraction of electricity demanded.", 
+                     "U.S.\ CO$_2$ emissions by sector"),
                      label = "tab:corrected_co2_emissions"),
       include.rownames = FALSE,
       include.colnames = TRUE,
@@ -719,7 +720,7 @@ years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
 
 print(xtable::xtable(iparx_df %>% 
                        dplyr::filter(Year %in% years_for_rate_table), digits = c(0, 0, 3, 2, 2, 2, 2),
-                     caption = "IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers} these data allow us to see whether the world is becoming more sustainable or less sustainable over time and why; see P6.\\ref{question:iparx_calcs}.",
+                     caption = c("Values of IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers} these data allow us to see whether the world is becoming more sustainable or less sustainable over time and why; see P6.\\ref{question:iparx_calcs}.", "Values of IPARX terms for selected years."),
                      label = "tab:iparx_select_years"),
       include.rownames = FALSE,
       include.colnames = TRUE,
