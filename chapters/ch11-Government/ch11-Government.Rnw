@@ -622,32 +622,33 @@ Manufacturers become incentivized to
          \caption{freezer EnerGuide.}
          \label{fig:energuide}
      \end{subfigure}
-        \caption{Consumer-oriented labels for home appliances. 
-        In the U.S., the Federal Trade Commission (FTC) requires an Energy Guide label on
-        some categories of consumer products.
-        Manufactures are required to test their products in accordance with 
-        U.S. Department of Energy standards and report their results to the FTC.
-        (a) An Energy Guide label showing the AFUE on a domestic furnace. 
-        This furnace has the lowest legally allowed AFUE for its climate zone.
-        (b) An Energy Guide label for a chest freezer. The label shows a range of
-        expected \emph{cost} of yearly operation and estimated yearly electricity 
-        use. The range (\$35--\$39) is small because there aren't many ``similar
-        models'' to compare to, that is, 12.9 cubic feet is an uncommon size for 
-        a chest freezer.
-        Because this model is efficient \emph{for its category}, it qualifies for 
-        Energy Star certification (indicated at the lower right).
-        The U.S. Environmental Protection Agency runs the Energy Star program.
-        In contrast to the Energy Guide labels, which are self-reported, since 2011, 
-        Energy Star testing is performed by qualified, third-party laboratories.
-        (c) An EnerGuide label for the same chest freezer as in (b), in fact, it 
-        is the reverse of the same piece of paper.
-        The EnerGuide label is mandatory for appliances sold in Canada, which also
-        uses the U.S. EPA's Energy Star certification (yay, international cooperation!).
-        The EnerGuide label shows a range of estimated yearly energy consumption.
-        \emph{Sources}: 
-        (a)~\copyright{}2021 Matthew Kuperus Heun; 
-        (b)~\copyright{}2021 Jeremy Van Antwerp; 
-        (c)~\copyright{}2021 Jeremy Van Antwerp.}
+        \caption[Consumer-oriented labels for home appliances]
+                {Consumer-oriented labels for home appliances. 
+                In the U.S., the Federal Trade Commission (FTC) requires an Energy Guide label on
+                some categories of consumer products.
+                Manufactures are required to test their products in accordance with 
+                U.S. Department of Energy standards and report their results to the FTC.
+                (a)~An Energy Guide label showing the AFUE on a domestic furnace. 
+                This furnace has the lowest legally allowed AFUE for its climate zone.
+                (b)~An Energy Guide label for a chest freezer. The label shows a range of
+                expected \emph{cost} of yearly operation and estimated yearly electricity 
+                use. The range (\$35--\$39) is small because there aren't many ``similar
+                models'' to compare to, that is, 12.9 cubic feet is an uncommon size for 
+                a chest freezer.
+                Because this model is efficient \emph{for its category}, it qualifies for 
+                Energy Star certification (indicated at the lower right).
+                The U.S.\ Environmental Protection Agency runs the Energy Star program.
+                In contrast to the Energy Guide labels, which are self-reported, since 2011, 
+                Energy Star testing is performed by qualified, third-party laboratories.
+                (c)~An EnerGuide label for the same chest freezer as in (b), in fact, it 
+                is the reverse of the same piece of paper.
+                The EnerGuide label is mandatory for appliances sold in Canada, which also
+                uses the U.S. EPA's Energy Star certification (yay, international cooperation!).
+                The EnerGuide label shows a range of estimated yearly energy consumption.
+                \emph{Sources}: 
+                (a)~\copyright{}2021 Matthew Kuperus Heun; 
+                (b)~\copyright{}2021 Jeremy Van Antwerp; 
+                (c)~\copyright{}2021 Jeremy Van Antwerp.}
   \label{fig:energy_star_total}
 \end{figure}
 
@@ -763,7 +764,8 @@ for improvement.
          \caption{Bus depot.}
          \label{fig:bus_depot}
      \end{subfigure}
-        \caption{Differences in roadway densities. 
+        \caption[Differences in roadway densities]
+                {Differences in roadway densities. 
                  The highway interchange 
                  carries few passengers in low-occupancy vehicles, 
                  all with high CO$_2$ emissions. 
@@ -839,7 +841,8 @@ for sustainable outcomes.
 \begin{figure}
 \centering
 \includegraphics[width=\figwidth]{chapters/ch11-Government/photos/E85.jpeg}
-\caption{Ethanol-blended fuel available at the filling station.
+\caption[Ethanol-blended fuel at a filling station]
+        {Ethanol-blended fuel available at the filling station.
          \emph{Source}: \copyright{}2021 Matthew Kuperus Heun.}
 \label{fig:E85}
 \end{figure}
@@ -901,7 +904,8 @@ Figure~\ref{fig:E85} shows a commercially available biofuel blend with low EROI.
          \caption{Suburban store and parking.}
          \label{fig:suburban_grocery_store}
      \end{subfigure}
-        \caption{Comparison of land use densities. 
+        \caption[Comparison of land use densities]
+                {Comparison of land use densities. 
                  The urban shopping district is likely 
                  to generate more revenue and more tax receipts per acre
                  than the suburban store and its huge parking lot.

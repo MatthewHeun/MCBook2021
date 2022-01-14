@@ -63,33 +63,32 @@ measure of affluence.
 For instance, GDP doesn't count (or under counts) the value
 of innovation in improving standards of living~\cite{Gordon2016}.
 GDP doesn't include the value of non-market transactions, 
-such as the work of stay-at-home moms.
-Also, GDP counts all consumption, even when that consumption is socially undesirable.
+such as the work of stay-at-home mothers.
+Also, GDP counts all consumption, even when it is socially undesirable.
 
-Many new metrics (Section~\ref{sec:indices}) have been proposed as replacements
-or improvements for GDP.
-Some examples are green GDP, the index of sustainable economic welfare, and the
+Many new metrics (Section~\ref{sec:indices}) have been proposed as replacements for
+or improvements to GDP, such as
+green GDP, the index of sustainable economic welfare, and the
 genuine progress indicator.
-However, each of these suffers from its own limitations. %, philosophical, methodological, and practical.
+However, each replacement suffers from its own limitations.
 The biggest limitation for any metric
 is standardization and availability of data.
 At the moment, we have the most complete and accurate data for GDP;
-consequently, it is the affluence indicator ``everyone'' uses.
-Effectively, GDP is the standard way to measure economic activity.
+consequently, GDP is the standard way to measure economic activity.
 (Because GDP data are collected nationally but aggregated internationally, 
 there is often skepticism of data provided by corrupt and/or authoritarian
 regimes, in addition to the caveats about what GDP measures and what it doesn't.)
 % put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
 
 Consistent and easily accessible GDP data allow observations of
-trends through time, which are usually \emph{qualitatively} consistent with trends would be observed
-using other indices, bearing in mind the limitations of GDP.
+trends through time, which are usually \emph{qualitatively} 
+consistent with trends would be observed using other indices.
 In any case, a different measure of affluence~\Aparen{}, would require a corresponding
 adjustment to (the measure of) resource intensity of economic activity~\Rparen{}.
 Regardless of the measure of affluence, we land in the same difficult spot:
 greater affluence~\Aparen{} creates greater environmental impact~\Iparen{}
 if the resource intensity of the economy~\Rparen{} and the impact intensity of resources~\Xparen{}
-(discussed in the next chapter) remain unchanged.
+(discussed in the next two chapters) remain unchanged.
 
 % <<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence~\Aparen{} in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
 % world_gdppc_Maddison <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
@@ -320,16 +319,16 @@ until circumstances improve.
 \paragraph{Government spending}
 %..............................
 
-Government spending~(\mft{g}) is government consumption
+Government spending~(\;\!\mft{g}) is government consumption
 (such as equipment and wages paid to government workers) plus 
 government investment spending, for
-example, spending on infrastructure improvements such as roads or dams.
+example spending on infrastructure improvements such as roads or dams.
 
 %..............................
 \paragraph{Investment}
 %..............................
 
-Investment~(\mft{i}) is \emph{not} money put into a bank account.
+Investment~(\mft{i}\;\!) is \emph{not} money put into a bank account.
 Investment is goods that are purchased now for use in the future
 by individuals or firms (not governments).
 There are three subcategories of investment: 
@@ -337,7 +336,8 @@ nonresidential fixed investment, residential fixed investment, and inventory inv
 Nonresidential fixed investment is equipment and plants (factories) purchased by firms.
 In contrast, residential fixed investment is the purchase of housing stock by
 households and landlords.
-Inventory investment is the purchase, by firms, of goods for later sale and could
+Inventory investment is the purchase, by firms, of goods for later sale. 
+Inventory investment can 
 be negative (inventory is falling) or positive (inventory is increasing).
 
 %..............................
@@ -345,10 +345,10 @@ be negative (inventory is falling) or positive (inventory is increasing).
 %..............................
 
 Net exports~(\mft{nx}) are the \emph{net} difference between the value of exports and the value of imports.
-Thus~(\mft{nx}) could be a negative number for a country that imports more than it exports.
+Thus \mft{nx} could negative for a country that imports more than it exports.
 World GDP is the sum of all national GDPs.
-Therefore, for world GDP, $nx = 0$.
-(We don't import from, or export to, space (yet).)
+Therefore, for world GDP, \mft{nx}~=~0.
+(We don't import from, or export to, space \ldots yet.)
 
 
 %++++++++++++++++++++++++++++++
@@ -366,27 +366,16 @@ economy as a whole balances production and (this more generic form of) consumpti
 closely as possible, such that
 
 \begin{equation} \label{eq:PCbalance}
-  \mathrm{Production} = \mathrm{Consumption} \; .
+  \text{Production} = \text{Consumption} \; .
 \end{equation}
 %
-Money that is deposited in a bank is lent out to borrowers so that they can make
+Money that is deposited in a bank is lent to borrowers so that they can make
 purchases.
 Money invested in the stock market is used by companies to purchase equipment, 
-do research, or grow the business in some other way.
+do research, or grow businesses in some other way.
 Goods and services must be produced before they can be used.
 There is no incentive to produce goods that aren't used;
 why would you pay the costs of production if there were no prospects of a sale?
-% Storage and maintenance costs further discourage excess production.
-% Note that temporary ``buffering'' is categorically different from a long-term 
-% imbalance of excess production. 
-% Many agricultural products are harvested in a short period of time and then stored 
-% and sold at uniform rate.
-% Selling apples throughout the year out of cold storage facilities is not the same
-% as growing apples that no one will ever eat.
-% Likewise, inventory investment (mentioned above) is a relatively short-term expense
-% to have goods available when customers want them, not a long-term difference in
-% supply and demand.
-%
 Therefore, we use the terms ``production'' and ``consumption'' interchangeably.
 
 %++++++++++++++++++++++++++++++
@@ -395,7 +384,8 @@ Therefore, we use the terms ``production'' and ``consumption'' interchangeably.
 %++++++++++++++++++++++++++++++
 
 Since the economy only consumes what the economy produces and,
-likewise, only things that will be consumed are produced, we are ready to introduce
+likewise, only things that will be consumed are produced, 
+we are ready to introduce
 the metaphor of the economic metabolism.
 All plant and animal metabolisms consume resources
 (energy and materials) 
@@ -425,10 +415,13 @@ represents the wastes that the economy excretes.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Although production and consumption are in balance, both may change together.
+% JVA: remove the next sentence? ---MKH
 Indeed, growth in GDP per capita~\Aparen{} is the explicit goal of many economic policies.
 There are two ways the economy can increase GDP.
-Either (a)~the economy consumes \emph{more} inputs or
-(b)~it uses existing inputs more \emph{efficiently} (meaning that \mft{R} goes down).
+Either
+(a)~by consuming \emph{more} inputs 
+or
+(b)~by using existing inputs more \emph{efficiently} (meaning that \mft{R} goes down).
 
 Economic inputs include labor, capital, energy, and materials.
 In the long run, growing output by scaling up the inputs does not increase 
@@ -449,10 +442,10 @@ work, and the fraction of the population that is working;
 see Section~\ref{sec:dtt}.
 More workers can increase economic output (GDP), as mentioned above,
 but will not increase GDP \emph{per person}.
-On the other hand, a greater fraction of the population working, 
-such as with the demographic dividend, 
-or workers working longer hours will tend to increase \mft{A} (at least until the 
-population pyramid stabilizes, in the case of the demographic dividend).
+On the other hand,
+a greater fraction of the population working, or workers working longer hours,
+will tend to increase \mft{A} 
+(at least until the population pyramid stabilizes).
 
 
 %..............................
@@ -469,58 +462,42 @@ Because capital depreciates over time, continual investment
 is needed to maintain a certain level of capital stock. 
 Higher levels of capital require larger yearly investments to maintain.
 At some point, there is a \emph{maximum} level of effective capital.
-Beyond that maximum, additional capital is more expensive to maintain than it contributes 
-to the economy.
-% The maximum effective level depends on technology and the price of borrowing
-% money (that is, interest) for making capital investments.
-% Conceptually, 
-At the effective maximum level of effective capital, labor will have a maximum
+Beyond that maximum,
+expenses to maintain capital exceed the contribution of capital to the economy. 
+At the effective maximum level of capital, labor will have a maximum
 level of output because workers are fully ``tooled up.''
 
 
 %..............................
-\paragraph{Innovation} 
+\paragraph{Innovation}
 %..............................
 
 Innovation is the major source of economic growth.
-There are two types of innovation: the invention of new \emph{kinds} of goods and
-services \emph{or} improvements to efficiency.
-The majority of the goods and services we consume today did not exist in 
+There are two types of innovation:
+(a)~the invention of new \emph{kinds} of goods and services
+and
+(b)~ improvements to efficiency.
+The majority of the goods and services we consume today did not exist in
 1870~\cite{Gordon2016}.
-Today, we consume entirely new categories of goods and services that did not
+We consume entirely new categories of goods and services that did not
 exist for most of human history.
-Much of the improvement in our standard of living comes from these new types of 
+Much of the improvement in our standard of living comes from these new types of
 goods and services.
 
-However, examined closely, almost all of these ``new goods'' stories 
+However, examined closely, almost all of these ``new goods'' stories
 \emph{also} end up being about some form of efficiency.
-The endless quest to meet our needs more efficiently allows us to instead spend
-our budget on \emph{additional} consumption.
+The endless quest to meet our needs more efficiently
+allows spending on \emph{additional} consumption.
 Efficiency improvements allow us to get more GDP for the same level of resource consumption.
-However, as we will see in Chapter~\ref{chap:resource_intensity}, particularly in 
+However, as we will see in Chapter~\ref{chap:resource_intensity}, particularly in
 Figures~\ref{fig:per_capita_material_use} and~\ref{fig:EnergyPerPersonGraph},
-economic growth results in \emph{more} consumption of resources.
-The greater use of resources is caused by affluence growth, 
+economic growth correlates with \emph{additional} consumption of resources.
+The greater use of resources is caused by growth in affluence~\Aparen{},
 driven, in part, by improvements in material (Figure~\ref{fig:per_gdp_material_use})
-and energy (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) efficiency 
+and energy (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) efficiency
 (that is, ``innovation,'' as defined above).
-% ****
-% MKH to check, especially for efficiency vs. efficacy (see also the paragraphs above) -- JVA
-% ****
 Managing the ``rebound effect,'' which is a result of efficiency improvements,
 is a major sustainability challenge; see Section~\ref{sec:rebound_effect}.
-% 
-% *****
-% Would it be possible to also talk about economic contraction here? 
-% Would be nice to discuss HOW economies contract and the pain it brings.
-% But can also reference Figure~\ref{fig:CarbonEmissionsGraph}
-% to reinforce the point that recessions reduce environmental impact.
-% Talking about contraction then opens the door to discuss economic level.
-% We have a choice about the economic level at which we operate.
-% ---MKH 
-% 
-% Check the new paragraph below --- JVA
-% *****
 
 
 %..............................
@@ -530,18 +507,20 @@ is a major sustainability challenge; see Section~\ref{sec:rebound_effect}.
 Economies can grow (particularly when we try to make them grow) but they can also
 shrink.
 A shrinking economy is said to be in recession.
-A full discussion of the mechanisms of recession is beyond the scope of this book
+A full discussion of the mechanisms of recession is beyond the scope of this book,
 but the effect of recessions can be seen in Figure~\ref{fig:CarbonEmissionsGraph}.
-If affluence \mft{A} is a cause of impacts \mft{I}, then reducing \mft{A} is one way to reduce
-$I$, as Figure~\ref{fig:CarbonEmissionsGraph} shows for CO$_2$ emissions.
-However, recessions are unwelcome for many very good reasons. 
+If affluence~\Aparen{} is a cause of impacts~\Iparen{},
+then reducing \mft{A} is one way to reduce
+\mft{I}, as Figure~\ref{fig:CarbonEmissionsGraph} shows for CO$_2$ emissions.
+However, recessions are unwelcome for many very good reasons.
 No country has yet intentionally tried to shrink its economy.
 
 Moreover, the environmental effects of recessions are not always positive,
 that is, sometimes reducing \mft{A} \emph{increases} (at least some parts of) \mft{I}.
-For instance, a company going out of business might cause 
-environmental contamination because there no longer exists a responsible steward for 
-potentially hazardous materials or equipment.
+For instance, a company going out of business might cause
+environmental contamination, because
+there no longer exists a responsible steward for
+hazardous materials and equipment.
 The U.S.\ has hundreds of thousands of leaking underground gasoline storage tanks
 from gas stations that have gone out of business~\cite{brownfields}.
 Similar stories can be told for former industrial sites, mines, and oil and gas wells.
@@ -559,64 +538,62 @@ to continued economic growth.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 World economies are managed for continual growth, which,
-% (See P1.\ref{project:alt_exp} for the relationship between continual growth
-% and exponential growth.)
 as mentioned previously, is inherently
 unsustainable on a finite planet.
 When the economy grows continually it will, at some point,
 either demand more resources than the environment can provide or
-exceed the ecosystem's ability to absorb wastes.
+exceed the ecosystem's ability to absorb its wastes.
 Eventually, economic growth will push the ecosystem past a tipping point where the
-ecosystem is no longer able to provide ecosystem services, as 
+ecosystem is no longer able to provide ecosystem services, as
 discussed in Chapter~\ref{chap:planetary_boundaries}.
 
-In response, there are calls for transitioning world economies 
-to new operating regimes, different from growth. 
-There are proposals for 
-zero-growth (or steady-state), 
-degrowth (or shrinking),  
-circular, and 
+In response, there are calls for transitioning world economies
+to new operating regimes, different from growth.
+There are proposals for
+zero-growth (or steady-state),
+degrowth (or shrinking),
+circular, and
 doughnut
-economies. 
+economies.
 
 
 %..............................
-\paragraph{Steady state} 
+\paragraph{Steady state}
 %..............................
 
 A steady-state economy\index{economy!steady-state} is one that neither grows nor shrinks.
 Its size (measured in \$/year) stays the same through time.
-With a stable population, a steady-state economy would experience no change 
-in the standard of living \Aparen{} from one generation to the next.
-If population goes up or down, 
-affluence will go down or up, 
-because the size of the economy is fixed.
+With a stable population, people in a steady-state economy would experience no change
+in their standard of living~\Aparen{} from one generation to the next.
+If population goes up or down,
+affluence will go down or up,
+because the size of the economy (in \$/year)is fixed.
 
 One criticism of a steady-state economy is that (some) people could be left
-poor and destitute. 
+poor and destitute.
 The static nature of a steady-state economy might strengthen or rigidify already
 unacceptable inequalities within our economic system.
 (At least, that is the fear.)
 
 Further, a steady-state economy is not necessarily sustainable.
 The sustainability of an economy is not determined by its growth rate
-(usually measured in \%/year), 
-the quantity held constant in a steady state economy. 
+(usually measured in \%/year),
+the quantity held constant in a steady state economy.
 Rather, the sustainability of an economy is determined by its \emph{level} or \emph{size}
-(usually measured in \$/year) relative to planetary boundaries. 
-If the steady-state level of the economy 
+(usually measured in \$/year) relative to planetary boundaries.
+If the steady-state level of the economy
 is above a sustainable threshold
-(if planetary limits have been exceeded), 
-the economy is unsustainable, regardless of whether it is growing (positive \%/year), 
-shrinking (negative \%/year), or 
-steady state (0~\%/year). 
+(and planetary limits have been exceeded),
+the economy is unsustainable, regardless of whether it is growing (positive \%/year),
+shrinking (negative \%/year), or
+steady state (0~\%/year).
 Indeed, Figure~\ref{fig:FootprintHDIGraph} suggests that
 many economies are \emph{already} too large to be considered sustainable.
 
 Figure~\ref{fig:FootprintHDIGraph} further highlights the fact that 
 many economies are \emph{both} already too large \emph{and} still growing.
-For those economies, a transition to steady state can be a first step 
-toward becoming sustainable. 
+For those economies, a transition to steady state can be a \emph{first step} 
+toward becoming sustainable.
 A transition to steady state means that 
 those economies will not grow to become \emph{even more} unsustainable each year. 
 
