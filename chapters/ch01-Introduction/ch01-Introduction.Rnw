@@ -73,7 +73,8 @@ Likewise renewable energy. And land use. And ... all the other challenges humani
 
   \input{chapters/ch01-Introduction/venn_diagram.tex}
 
-  \caption{The three aspects of sustainability.
+  \caption[Three aspects of sustainability.]
+          {The three aspects of sustainability.
            Sustainability is often visualized as three overlapping ellipses:
            environmental sustainability,
            economic sustainability, and
@@ -496,7 +497,7 @@ to 16 every 6.93 years.
 % @
 % 
 
-<<exp, fig.cap="Rice mass on each square of the chessboard in the king's wager. The last row of the chessboard (squares 57--64) contains nearly all of the rice mass. Pg is petagram; 1~Pg = 10$^{\\text{12}}$~kg.">>=
+<<exp, fig.scap="Rice mass on the chessboard of the king's wager.", fig.cap="Rice mass on each square of the chessboard in the king's wager. The last row of the chessboard (squares 57--64) contains nearly all of the rice mass. Pg is petagram; 1~Pg = 10$^{\\text{12}}$~kg.">>=
 chessboard_data <- tibble::tibble(x = 1:64) %>% 
   dplyr::mutate(
     y = 2^(x - 1), 
@@ -699,7 +700,8 @@ the full restoration is likely to cost more than \euro{8} billion.
          \caption{During (April 2019).}
          \label{fig:ND_during}
      \end{subfigure}
-        \caption{Notre-Dame de Paris cathedral, before and
+        \caption[Notre-Dame de Paris cathedral.]
+                {Notre-Dame de Paris cathedral, before and
                  during the fire of 2019.
                  \emph{Sources}:
       (a) \href{https://commons.wikimedia.org/wiki/File:Cit\%C3\%A9_vue_de_la_Tournelle,_Paris_2014.jpg}{Saturne},
