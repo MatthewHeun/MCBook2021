@@ -637,7 +637,8 @@ Although constrained by basic biophysical limits, EROI can be improved with bett
 more efficient technology.
 
 \begin{table}\centering
-\caption{Energy return on investment (EROI) for several energy sources.
+\caption[EROI for several energy sources.]
+        {Energy return on investment (EROI) for several energy sources.
 Sources: see~\cite{Wikipedia_EROI,WNA2020,EtOH_in_BR,Gomiero2015} and sources therein.}
 \label{tab:eroi}
 \begin{tabular}{ll}\toprule
