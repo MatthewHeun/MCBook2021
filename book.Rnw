@@ -55,6 +55,8 @@
 \newcommand{\Pparen}{(\:\!\mft{P}\;\!)}
 \newcommand{\Aparen}{(\;\!\mft{A}\:\!)}
 \newcommand{\Rparen}{(\:\!\mft{R}\;\!)}
+\newcommand{\REp}{$\mft{R}_{\mft{Ep}}$}
+\newcommand{\REpparen}{($\mft{R}_{\mft{Ep}}$)}
 \newcommand{\Xparen}{(\;\!\mft{X}\:)}
 \newcommand{\Tparen}{(\mft{T}\:)}
 % IPARX equation

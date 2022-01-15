@@ -879,15 +879,15 @@ weak_sust_energy_rho %>%
 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Energy intensity of the economy ($\mft{R}_{\mft{Ep}}$)}
+\section{Energy intensity of the economy \REpparen{}}
 \label{sec:energy_intensity_of_the_economy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Continuing the \href{https://en.wiktionary.org/wiki/explication}{explication}
 of the IPARX identity,
 one piece or facet of resource intensity of the economy~\Rparen{}
-is the primary energy intensity ($\mft{R}_{\mft{Ep}}$) of the world economy.
-$\mft{R}_{\mft{Ep}}$ is the amount of primary energy required to create one unit (dollar) of
+is the primary energy intensity~\REpparen{} of the world economy.
+\REp{} is the amount of primary energy required to create one unit (dollar) of
 world GDP.
 Of course, many other resources are \emph{also} required to create a unit of GDP,
 but we use energy as the prime example of an important resource in the economy.
@@ -969,7 +969,7 @@ The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 % @
 
 
-<<EnergyIntensityGraph-Nordhaus, fig.scap="Primary energy intensity of economic activity~($\\mft{R}_{\\mft{Ep}}$) vs.\\ time", fig.cap="Primary energy intensity of economic activity~($\\mft{R}_{\\mft{Ep}}$), the prime example for \\mft{R} in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<EnergyIntensityGraph-Nordhaus, fig.scap="Primary energy intensity of economic activity~\\REpparen{} vs.\\ time", fig.cap="Primary energy intensity of economic activity~\\REpparen{}, the prime example for \\mft{R} in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
 # Create data for the energy intensity of the economy.
 energy_intensity <- dplyr::inner_join(
   # Get the primary energy data
@@ -996,7 +996,7 @@ energy_intensity %>%
 
  
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that
-the primary energy intensity of the world economy~($\mft{R}_{\mft{Ep}}$) has fallen from
+the primary energy intensity of the world economy~\REpparen{} has fallen from
 15 to 4~MJ/2017 international dollar across the last two centuries.
 The decline is caused by the fact that the world economy's GDP
 (Figure~\ref{fig:GDPGraph-Nordhaus})
@@ -1005,7 +1005,7 @@ has been growing at a faster rate (in \%/year terms) than primary energy consump
 The decline indicates that each additional dollar of GDP
 is created with incrementally less energy consumption.
 
-While the decrease in $\mft{R}_{\mft{Ep}}$
+While the decrease in \REp{}
 (the prime example for \mft{R} in Equation~\ref{eq:IPARX})
 appears to be good news for sustainability
 (declining \mft{R} puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}), 
@@ -1019,9 +1019,9 @@ We can use these data to learn something about the IPARX terms
 (Equation~\ref{eq:IPARX}) and CO$_2$ emissions.
 A narrowed version of Equation~\ref{eq:IPARX},
 considers only CO$_2$ emissions on the left-hand side of the equation
-and the energy intensity of the economy ($\mft{R}_{\mft{Ep}}$)
+and the energy intensity of the economy~\REpparen{}
 instead of \mft{R} on the right-hand side.
-When $\mft{R}_{\mft{Ep}}$ falls, downward pressure is placed on CO$_2$ emissions.
+When \REpparen{} falls, downward pressure is placed on CO$_2$ emissions.
 Whether CO$_2$ emissions \emph{actually} decrease
 depends on the rates of increase or decline of the other terms
 on the right side of Equation~\ref{eq:IPARX}.
@@ -1084,17 +1084,18 @@ uk_coal_extraction %>%
 
 In the case of the UK, substitution away from coal for electricity generation 
 is occurring. 
-Coal production is now dominated by China, India, the U.S., and Australia
-and international trade is possible.
+Coal production is now dominated by China, India, the U.S., and Australia,
+but international trade is possible.
 So the world will not face coal shortages
 until all regions are exhausted of the resource.
 Each region is at different places on its logistic curve
 for resource production.
-Other ways to substitute away from coal for electricity 
+Other ways to substitute away from domestic coal for electricity 
+(besides switching suppliers)
 include deploying natural gas, wind, and solar electricity generation, 
 as the UK is doing now.
 
-One way to slow down the inevitable march of time
+Another way to slow down the inevitable march of time
 along logistic curves for finite resources is to transition
 economies to use fewer resources per unit of GDP produced,
 that is to reduce the resource intensity of the economy~\Rparen{}.
@@ -1104,15 +1105,13 @@ GDP stays constant or grows more slowly than the
 rate at which \mft{R} decreases.
 
 For the prime example of energy and CO$_2$ emissions,
-reducing \mft{R} means reducing the energy intensity of economic activity
-($R_{Ep}$),
+reducing \mft{R} means reducing the energy intensity of economic activity~\REpparen{},
 that is, reducing the amount of energy required to produce
 each unit of GDP.
 (Section~\ref{sec:low_carbon_transition} discusses a distinct but related issue,
 transitioning the energy system to reduce CO$_2$ emissions
 from each unit of energy consumed.)
-
-There are many ways often suggested to reduce the energy intensity of economic activity ($R_{Ep}$).
+There are many ways often suggested to reduce the energy intensity of economic activity~\REpparen{}.
 First, increasing energy efficiency (through efficiency standards or mandates)
 can decrease the energy consumption for end uses.
 Examples include corporate average fuel economy (CAFE) standards for vehicles
@@ -1125,6 +1124,28 @@ the need for resources never goes away, even in a service economy.
 In fact, moving to a service economy often introduces problem-shifting
 (Section~\ref{sec:electric_vehicles}),
 as finished goods are imported and manufacturing moves off shore~\cite{Hardt:2018aa}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This chapter investigated the resource intensity of economic activity~\Rparen{}.
+It is clear that economies use a wide variety of resources
+across all sectors of the economy.
+Many resources are used unsustainably, 
+as measured by both strong and weak sustainability criteria.
+For the prime example of primary energy intensity of economic activity,
+we found that~\REp{} has decreased substantially since 1800, 
+but only because we are using far less biofuels per dollar of GDP
+than in the past.
+Fossil fuel use has remained much flatter on a per-GDP basis.
+Ironically, biofuels are a (potentially) sustainable source of energy, 
+so we are growing economies with unsustainable fossil fuel consumption.
+
+The next chapter looks at the impact intensity 
+of resource extraction~\Xparen{}, 
+the final term in the IPARX equation~(Equation~\ref{eq:IPARX}).
 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
