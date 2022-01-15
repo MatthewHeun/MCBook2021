@@ -301,9 +301,10 @@ dplyr::bind_rows(historical_pop, future_pop) %>%
   MKHthemes::xy_theme()
 @
 
-World3 is an early (yet simple) world population model.
-Figure~\ref{fig:World3loops} shows a schematic of the causal loops used in the model.
-Notice both the large number of variables in the model~(24)  %that affect population 
+
+The World3 model contains an early (yet simple) world population model~\cite{Meadows:1974ut, Hayes:2012us}.
+Figure~\ref{fig:World3loops} shows a schematic of that model's causal loops.
+Notice both the large number of variables in the model~(24)
 and the many ways those variables (are programmed to) interact.
 No model is perfect and, indeed, the World3 model is somewhat controversial for 
 what critics claim are naive assumptions.
@@ -841,7 +842,7 @@ published August 17, 2020. \\
 
 \begin{questions}
 
-\item Some electric train systems supply power to the train by energizing
+\item \label{question:third_rail} Some electric train systems supply power to the train by energizing
       a third rail (the first two being the tracks) with high voltage DC
       current, typically 600--1500~V.
       Because of the high voltages and because the rails are very near to the ground,
@@ -855,12 +856,14 @@ published August 17, 2020. \\
       \item Explain moral or ethical concerns with population control, either the
       ``supply side'' (births) or the ``demand side'' (deaths).
       \end{enumerate}
+      
 
-\item What are some ways population \emph{could} be controlled?
+\item \label{question:population_control} What are some ways population \emph{could} be controlled?
       Figure~\ref{fig:World3loops} suggests some ideas.
       Or, perhaps what Malthus called ``miseries:'' war, famine, and/or epidemics will
       control population.
       Lastly, consider contraception or, as Malthus suggested, late marriage.
+      
 
 \item Riffing on Malthus's suggestion of late marriage, what are families for?
       What role, if any, does family formation play in population growth?
@@ -875,15 +878,17 @@ published August 17, 2020. \\
 \item Notice the population distribution indicated by Figures \ref{fig:PopulationGraph}
       and \ref{fig:half_population}.
       Does distribution of population complicate the issues raised in
-      Q3.1 and Q3.2, and if so, how?
+      Q3.\ref{question:third_rail} and 
+      Q3.\ref{question:population_control}?
+      If so, how?
       What options does the rest of the world have for decreasing population
       growth in Asia (where most of the world's people are) and Africa (where
       the most growth is anticipated)?
       What means are morally acceptable?
-      Which do you think are most likely to be effective?
+      Which means do you think are most likely to be effective?
 
-\item The best XKCD comic is \href{https://xkcd.com/552/}{\#552}, which considers
-      correlation and causation.
+\item The best XKCD comic is \href{https://xkcd.com/552/}{\#552}, 
+      which considers correlation and causation.
       Falling birth rates are correlated with economic development, urbanization,
       increased education, decline in the value of child labor, and access to
       contraception.
