@@ -743,7 +743,7 @@ but that warming process takes a very long time.
 % The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
 % The clear trend is upward, with small drops corresponding to years of economic recession.
 
-Most scientists agree that avoiding irreversible effects of climate change
+Scientists agree that avoiding irreversible effects of climate change
 requires limiting global average temperature rise to 1.5~\degC{} or less,
 relative to the global average temperature at the dawn of the industrial revolution.
 Our ``carbon budget'' is the amount of future CO$_2$ emissions
@@ -756,7 +756,7 @@ accounting for the (very small) rate of absorption of CO$_2$ by the biosphere.%
   within a few centuries.
 }
 As of 2021, the remaining carbon budget is 500~GtCO$_2$ 
-for a 50\% likelihood of remaining below 1.5~\degC{} warming~\cite[Table~SPM.2]{IPCC:2021tk}.%
+for a 50\% likelihood of remaining below 1.5~\degC{} warming~\cite[Table~SPM.2]{IPCC:2021tk}.
 \footnote{
  For context, the carbon budget was 1500~GtCO$_2$ in 1990.
  If we want better odds of remaining below 1.5~\degC, 
@@ -767,6 +767,8 @@ for a 50\% likelihood of remaining below 1.5~\degC{} warming~\cite[Table~SPM.2]{
  \label{page:carbon_budget}
 }
 %
+Figure~\ref{fig:Fig-SPM-10} illustrates the remaining carbon budget.
+
 Assuming no change in the CO$_2$ emissions rate and
 given that we are emitting about 35~GtCO$_2$/year
 (Figure~\ref{fig:CarbonEmissionsGraph}), 
@@ -785,6 +787,65 @@ The urgency of the climate challenge is the reason that
 energy and CO$_2$ emissions are the prime example of this book. 
 
 \end{mcframe}
+
+<<Fig-SPM-10, fig.pos="h!", fig.scap="Impact of cumulative CO$_2$ emissions on global temperature", fig.cap="Impact of cumulative CO$_2$ emissions on global temperature. Temperature rise on the vertical axis is relative to the 1850--1900 global average. The vertical line labeled ``1990'' indicates cumulative emissions to that time, 1411~GtCO2. The vertical line labeled ``Today'' indicates cumulative emissions to date, 2411~GtCO2. The vertical line labeled ``1.5~C'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~C warming by 2100, 2911~GtCO2. The current carbon budget is the distance between the ``Today'' line and the ``1.5~C'' line, or 500~GtCO2. The carbon budget in 1990 was the distance between the ``1990'' line and the ``1.5~C'' line, namely 1500~GtCO2. The red lines represent CO2 emissions under various future scenarios. SSP1-1.9 assumes CO2 emissions cut to net zero around 2050 and yields 1.4~C warming by 2100. SSP1-2.6 assumes CO2 emissions cut to net zero around 2075 and yields 1.8~C warming by 2011. SSP2-4.5 assumes CO2 emissions stay at current levels until 2050, then falling but not reaching net zero by 2100 to yield 2.7~C warming by 2100. SSP3-7.9 assumes CO2 emissions double by 2100 to give 3.6~C warming by 2011. SSP5-8.5 assumes CO2 emissions triple by 2075 to give 4.4~C warming by 2011.~\\cite[Figure~SPM.10]{IPCC:2021tk}. Data available under available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\url{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}.">>=
+scenario_size <- 0.3
+spm_10_data <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "SPM_10.xlsx"),
+                                  sheet = "data to plot")
+
+spm_10_data %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = GtCO2, y = deltaT_degC, 
+                                         colour = dataset, 
+                                         size = dataset,
+                                         linetype = dataset)) +
+  ggplot2::geom_hline(yintercept = 1.5, 
+                      size = guide_line_size, 
+                      colour = guide_line_colour, 
+                      linetype = guide_linetype) +
+  ggplot2::geom_vline(xintercept = c(2411 - 1000, 2411, 2411 + 500),
+                      size = guide_line_size, 
+                      colour = guide_line_colour, 
+                      linetype = guide_linetype) +
+  
+  ggplot2::geom_line() + 
+  
+  ggplot2::annotate("text", x = 1300, y = 2.0, 
+                    label = "1990", colour = guide_line_colour, size = 4, angle = 90) + 
+  ggplot2::annotate("text", x = 2280, y = 2.0, 
+                    label = "Today", colour = guide_line_colour, size = 4, angle = 90) + 
+  ggplot2::annotate("text", x = 2790, y = 2.0,
+                    label = "'1.5 ' * degree*C", colour = guide_line_colour, size = 4, angle = 90, parse = TRUE) + 
+  
+  ggplot2::scale_size_manual(values = c(Historical = data_line_size, 
+                                        `SSP1-1.9` = scenario_size, 
+                                        `SSP1-2.6` = scenario_size, 
+                                        `SSP2-4.5` = scenario_size, 
+                                        `SSP3-7.0` = scenario_size, 
+                                        `SSP5-8.5` = scenario_size)) +
+  
+  ggplot2::scale_colour_manual(values = c(Historical = data_line_colour, 
+                                          `SSP1-1.9` = curve_fit_colour, 
+                                          `SSP1-2.6` = curve_fit_colour, 
+                                          `SSP2-4.5` = curve_fit_colour, 
+                                          `SSP3-7.0` = curve_fit_colour, 
+                                          `SSP5-8.5` = curve_fit_colour)) +
+  
+  ggplot2::scale_linetype_manual(values = c(Historical = 1,
+                                          `SSP1-1.9` = 1,
+                                          `SSP1-2.6` = 2,
+                                          `SSP2-4.5` = 6,
+                                          `SSP3-7.0` = 4,
+                                          `SSP5-8.5` = 3)) +
+  
+  ggplot2::labs(x = expression("Cumulative emissions since 1850 [" * GtCO[2] * "]"), 
+                y = expression("Temperature rise [" * degree*C * "]"), 
+                size = ggplot2::element_blank(),
+                colour = ggplot2::element_blank(),
+                linetype = ggplot2::element_blank()) +
+  
+  
+  MKHthemes::xy_theme()
+@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

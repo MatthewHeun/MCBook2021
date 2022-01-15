@@ -418,10 +418,10 @@ demo_transition %>%
                       linetype = guide_linetype) +
   ggplot2::geom_line(colour = data_line_colour,
                      size = data_line_size) +
-  ggplot2::geom_text(x = 18, y = 2, label = "Stage 1", colour = guide_line_colour) +
-  ggplot2::geom_text(x = 78, y = 2, label = "Stage 2", colour = guide_line_colour) +
-  ggplot2::geom_text(x = 150, y = 2, label = "Stage 3", colour = guide_line_colour) +
-  ggplot2::geom_text(x = 227, y = 2, label = "Stage 4", colour = guide_line_colour) +
+  ggplot2::annotate("text", x = 18, y = 2, label = "Stage 1", colour = guide_line_colour) +
+  ggplot2::annotate("text", x = 78, y = 2, label = "Stage 2", colour = guide_line_colour) +
+  ggplot2::annotate("text", x = 150, y = 2, label = "Stage 3", colour = guide_line_colour) +
+  ggplot2::annotate("text", x = 227, y = 2, label = "Stage 4", colour = guide_line_colour) +
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = ggplot2::element_blank(),
                 y = "Birth and death rates",
@@ -444,10 +444,6 @@ demo_transition %>%
                       linetype = guide_linetype) +
   ggplot2::geom_line(colour = data_line_colour,
                      size = data_line_size) +
-  # ggplot2::geom_text(x = 18, y = 5, label = "Stage 1", colour = guide_line_colour) +
-  # ggplot2::geom_text(x = 78, y = 5, label = "Stage 2", colour = guide_line_colour) +
-  # ggplot2::geom_text(x = 150, y = 5, label = "Stage 3", colour = guide_line_colour) +
-  # ggplot2::geom_text(x = 227, y = 5, label = "Stage 4", colour = guide_line_colour) +
   ggplot2::scale_y_continuous(limits = c(0, 120), breaks = seq(0, 120, by = 20)) +
   ggplot2::labs(x = "Time [years]",
                 y = "Population [millions]",
