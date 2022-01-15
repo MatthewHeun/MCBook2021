@@ -160,7 +160,8 @@ of the state of our world as it relates to sustainability.
 Part~\ref{part:IPARX} (Chapters~\ref{chap:introduction}--\ref{chap:impact_intensity})
 shows mostly data from the world in aggregate, thereby eliminating issues of 
 imports and exports between countries.
-Part~\ref{part:sustainability_challenges} shows data mostly from the U.S.\footnote{
+Part~\ref{part:sustainability_challenges} shows data mostly from the U.S.%
+\footnote{
   Readers are encouraged to remember that the U.S.\ is atypical in many ways.
   Sociologically, the U.S.\ is WIERD (Western, industrialized, educated, rich, and democratic).
   Additionally, the U.S.\ has a low population density and lots of resources.
@@ -208,7 +209,7 @@ time scales significantly longer than the human lifespan,
 Our current sustainability crisis has been thousands of years in the making~\cite{Sanderman2018}
 and will likely require millions of years to recover~\cite{Davis11262}.
 A \emph{weak} sustainability criterion is sustainability over a long (by human standards)
-time frame, perhaps 50 years, which is on the order of one human adulthood%
+time frame, perhaps 50 years, which is on the order of one human adulthood.%
 \footnote{
   Our criteria for strong and weak sustainability are physical and 
   follow \citet{Graedel:2010ab}. 
@@ -221,7 +222,7 @@ time frame, perhaps 50 years, which is on the order of one human adulthood%
   weak sustainability allows produced capital to substitute for natural capital
   across a period of time.
   See \citet{Dietz:2007tu} for details.
-}.
+}
 (Note that corporate time scales for decision making are even shorter, 
 often in the 5--20 year range; see Chapter~\ref{chap:government}.)
 
