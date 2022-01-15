@@ -414,6 +414,34 @@ represents the wastes that the economy excretes.
 \label{sec:EconGrowth}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+Growth in GDP per capita~\Aparen{} is the explicit goal of many economic policies.
+As discussed above, 
+GDP per capita is measured as consumption per capita.
+But because consumption and production are in balance, 
+rising economic growth means that production
+is an outcome of many economic policies.
+Growth in production also means growth in resource extraction and waste emissions.
+So policies that encourage economic growth 
+often have negative implications for environmental sustainability.
+
+There are two ways the economy can increase GDP, 
+either
+(a)~by consuming \emph{more} inputs 
+or
+(b)~by using existing inputs more \emph{efficiently} (meaning that \mft{R} goes down).
+Economic inputs include labor, capital, energy, and materials.
+In the long run, growing output by scaling up the inputs does not increase 
+affluence~\Aparen{} because more workers are needed to gather, process, and use the 
+additional resources.
+That leaves only efficiency as a means of boosting affluence.
+From a sustainability point of view, we should want everything to be used
+as efficiently as possible; inefficiency of any kind is not desirable.
+
+
+
+% Original section:
+
 Although production and consumption are in balance, both may change together.
 % JVA: remove the next sentence? ---MKH
 Indeed, growth in GDP per capita~\Aparen{} is the explicit goal of many economic policies.
@@ -430,6 +458,34 @@ additional resources.
 That leaves only efficiency as a means of boosting affluence.
 From a sustainability point of view, we should want everything to be used
 as efficiently as possible; inefficiency of any kind is not desirable.
+
+
+
+
+% Proposed MKH revision:
+
+Growth in GDP per capita~\Aparen{} is the explicit goal of many economic policies.
+There are two ways the economy can increase GDP, 
+either
+(a)~by consuming \emph{more} inputs 
+or
+(b)~by using existing inputs more \emph{efficiently} (meaning that \mft{R} goes down).
+Economic inputs include labor, capital, energy, and materials.
+In the long run, growing output by scaling up the inputs does not increase 
+affluence~\Aparen{} because more workers are needed to gather, process, and use the 
+additional resources.
+That leaves efficiency as the primary means of boosting affluence.
+From a sustainability point of view, we should want everything to be used
+as efficiently as possible; inefficiency of any kind is not desirable.
+
+However, growth in GDP has implications for sustainability.
+GDP is quantified by consumption.
+But because consumption and production are in balance, 
+rising economic growth means that production
+is an outcome of many economic policies.
+Growth in production also means growth in resource extraction and waste emissions.
+So policies that encourage economic growth 
+often have negative implications for environmental sustainability.
 
 
 %..............................
