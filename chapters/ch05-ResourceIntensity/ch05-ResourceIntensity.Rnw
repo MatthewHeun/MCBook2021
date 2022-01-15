@@ -698,8 +698,8 @@ for consuming goods and services, and
 for disposing of goods.
 Second, energy is fungible.
 Within the limits of the second law of thermodynamics,
-energy in one form can be converted to energy in another form
-using machines.
+energy in one form can be converted to energy in any other form
+using suitable machines.
 An automobile converts chemical potential energy (gasoline)
 to kinetic energy (car motion).
 A hairdryer converts electricity (from the grid)
@@ -710,7 +710,7 @@ to electricity (for use in many devices, including, possibly, hair dryers).
 Because energy is the master resource,\index{energy!as master resource}
 we use energy as the prime example in the IPARX equation (Equation~\ref{eq:IPARX}).
 There are two important questions:
-where are we using energy, and
+where are we using energy and
 are we using energy sustainably?
 Figure~\ref{fig:LLNL_energy_sankey} answers the first question
 for the U.S.
@@ -781,13 +781,14 @@ The increasing consumption of primary energy supports
 population growth (Figure~\ref{fig:PopulationGraph}) and
 economic growth (Figure~\ref{fig:GDPGraph-Nordhaus}).
 However, on a per-capita basis,
-energy consumption has grown substantially over the last two centuries
-(Figure~\ref{fig:EnergyPerPersonGraph}).
+energy consumption has grown substantially over the last two centuries;
+see Figure~\ref{fig:EnergyPerPersonGraph}.
 By the strong sustainability criterion of consuming resources at a rate
 beneath their regeneration rate,
-none of the fossil fuels shown in Figure~\ref{fig:PrimaryEnergyGraph}
-are being consumed at a sustainable rate.
-By the weak sustainability criterion, Figure~\ref{fig:WeakSustEnergyGraph} shows that
+none of the fossil fuel consumption shown in Figure~\ref{fig:PrimaryEnergyGraph}
+is sustainable. 
+By the weak sustainability criterion of preserving resources for 50~years, 
+Figure~\ref{fig:WeakSustEnergyGraph} shows that
 coal consumption is weakly sustainable from a resource extraction point of view.
 (However, coal is not weakly sustainable from a CO$_2$ emission point of view, 
 as shown in Figure~\ref{fig:PercentageOfSustainable}.)
@@ -851,38 +852,6 @@ Economic growth in the developing world, particularly in China, led to a
 noticeable rise in per-capita energy consumption starting in 2001.
 
 \end{mcframe}
-
-% 
-% 
-% <<Weak-Sust-Energy, results="asis">>=
-% weak_sust_energy_data <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
-%                                             sheet = "data for table",
-%                                             .name_repair = "minimal")
-% print(xtable::xtable(weak_sust_energy_data,
-%                      digits = 0,
-%                      align = c("c", "r", "r", "l", "r", "l", "r", "l"),
-%                      caption = "Weak sustainability calculations for world consumption of nonrenewable fossil fuels. Calculations are based on 2018 reserve estimates and consumption rates and do not account for accelerating consumption or future conversion of resources to reserves. ``mst'' is million short tons. ``bb'' is billion barrels. ``tcf'' is trillion cubic feet. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.",
-%                      label = "tab:weak_sustainability_calcs"),
-%       include.rownames = FALSE,
-%       include.colnames = TRUE,
-%       caption.placement = "top",
-%       type = "latex",
-%       booktabs = TRUE,
-%       table.placement = NULL)
-% @
-% 
-
-
-% 
-% <<WeakSustEnergyData>>=
-% # Pulling the data OUT of the chunk that makes the graph so the data are available
-% # to the caption of the graph.
-% weak_sust_energy_rho <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
-%                                             sheet = "data to plot") %>%
-%   dplyr::mutate(
-%     `Fossil fuel` = factor(`Fossil fuel`, levels = c("Coal", "Oil", "Natural gas"))
-%   )
-% @
 
 <<WeakSustEnergyGraph, fig.width=3.25, fig.scap="Percentage above weak sustainability for fossil fuels", fig.cap=paste0("Percentage above maximum weakly sustainable extraction rates~($\\rho$) for world fossil fuel consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate and a negative value of $\\rho$), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for Oil (less than 50 years, so above the weakly sustainable extraction rate and a positive value of $\\rho$), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for Natural gas (so positive $\\rho$). \\emph{Sources}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
 
