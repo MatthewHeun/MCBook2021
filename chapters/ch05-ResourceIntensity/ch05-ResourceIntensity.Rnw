@@ -47,17 +47,19 @@ Nowhere.
 \label{sec:resource_intensity_definitions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+When discussing resource use, knowledge of several key terms is helpful.
+
 
 %..............................
-\paragraph{Intensity}
+\paragraph{Intensity vs.\ efficiency}
 %..............................
 
 An intensity is like an efficiency, except the numerator and denominator have 
 different units.
 A furnace that burns a quantity of natural gas that releases 100 BTUs of heat might
 only deliver 96 of those BTUs to your house.
-Such a furnace has an \emph{efficiency} of 96\% (BTUs delivered per BTUs input);
-see Section~\ref{sec:heating_and_cooling}.
+Such a furnace has an \emph{efficiency} of 96\% (BTUs delivered per BTUs input).
+(See Section~\ref{sec:heating_and_cooling}
 for more on furnace efficiency and a related metric,
 Annual Fuel Utilization Efficiency (AFUE).)
 A natural gas power plant might burn gas at a rate that releases 300 MW of heat to generate
@@ -66,15 +68,15 @@ Such a power plant has an efficiency of 33.3\%.
 In both cases, the input and output have the same units of energy, BTUs for the furnace
 and MW for the power plant.
 In contrast, an \emph{intensity} has \emph{different} units
-for input and output.
+for output and input, for numerator and denominator.
 A vehicle's fuel economy, measured in miles per gallon, is an intensity.
-Carbon emissions per ton of freight per mile moved is an intensity.
+Carbon emissions per ton of freight moved along one mile is an intensity.
 It is \emph{intensive} because total carbon emissions depend on the tons
-moved or the total km traveled.
+moved and the total km traveled.
 
 
 %..............................
-\paragraph{Primary vs. Final}
+\paragraph{Primary vs.\ Final vs.\ useful}
 %..............................
 
 Imagine a coal-fired power plant that generates electricity to charge
@@ -88,7 +90,7 @@ The electricity sold to consumers is considered to be a \emph{final} energy carr
 }
 %
 Hydro, solar, and wind are primary energy sources. 
-So are coal, crude oil, and methane.
+So are crude oil, and methane.
 In contrast, gasoline is a refined fuel. 
 As such, it is the \emph{product} of 
 a refinery that converts crude oil to refined fuels. 
@@ -97,6 +99,12 @@ fissionable uranium fuel before it can be used in a nuclear power plant to gener
 The oil refinery or nuclear-fuel enrichment process can be evaluated for their
 energy return on investment (EROI); 
 see Section~\ref{sec:masterE}.
+
+Useful energy is created from final energy by devices owned by the final energy purchaser. 
+For example, apartment dwellers and homeowners purchase electricity (final energy)
+that flows into an LED lamp (the device) which creates light (the useful energy).
+Or car owners purchase gasoline (final energy) that flows into a car's engine (the device)
+and creates motion along a roadway (kinetic energy, the useful energy product).
 
 
 %..............................
@@ -111,7 +119,7 @@ Timber is a resource. Iron ore is a resource. Water is a resource.
 Each resource can be transformed many times \emph{within} the economy.
 Timber might become 2$\times$4s, or plywood, or toothpicks, or mulch.
 Iron ore might become steel, then sheet metal, and then a toaster.
-Water might be ice, a sports drink, or Play-Doh.
+Water might become ice, a sports drink, or Play-Doh.
 The process of pulling a resource into the economy is called ``extraction.''
 Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used
 for productive purposes.
@@ -122,7 +130,7 @@ for productive purposes.
 %..............................
 
 The \mft{R} term in Equation \ref{eq:IPARX} is the resource intensity of the economy.
-$R$ is defined as
+\mft{R} is defined (for any time period, but usually one year) as
 %
 \begin{equation}\label{eq:R}
   \mft{R} \equiv \frac{\text{total resources extracted}}{\text{GDP}} \; .
@@ -134,10 +142,17 @@ Because the numerator and denominator of \mft{R} have different units,
 \mft{R} is an \emph{intensity}.
 
 Figure~\ref{fig:total_material_use} shows use rates of some natural resources,
-aggregated into important categories of biomass, ores and industrial minerals, and 
-construction minerals.
-In 2005, the world economy used about 19 Gt of biomass, 6.7 Gt of ores and 
-industrial minerals, and about 22 Gt of construction materials
+aggregated into important categories of 
+construction minerals, 
+ores and industrial minerals,
+fossil fuels, and 
+biomass.
+In 2005, the world economy used about
+19~Gt of biomass, 
+about 23~Gt of construction materials, 
+5.7~Gt of ores and industrial minerals, and 
+11.6~Gt of fossil fuels.
+
 to produce about \$81.5 trillion dollars of GDP. 
 One Gt is 10$^9$~tonnes (or 10$^{12}$~kg) and a trillion dollars is \$10$^{12}$.
 Thus, each dollar of GDP produced used about 0.23 kg of biomass, 
@@ -147,6 +162,43 @@ yields a long list of numbers, like a huge grocery list,
 each number giving the amount of a single resource needed to make \$1 of GDP. 
 This chapter discusses sustainability implications for a few resources,
 with energy providing the prime example of resource intensity of the economy. 
+
+
+<<total_material_use, fig.scap="World material use", fig.cap="World material use. ``Construction'' includes all construction minerals. ``Ores'' includes all industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
+krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
+                                sheet = "data to plot") %>% 
+  dplyr::rename(
+    Biomass = `Biomass [Gt]`, 
+    `Fossil fuels` = `Fossil [Gt]`,
+    Construction = `Construction [Gt]`, 
+    Ores = `Ores [Gt]`
+  ) %>% 
+  tidyr::pivot_longer(-Year, names_to = "type", values_to = "Extracted material [Gt]") %>% 
+  # dplyr::mutate(
+  #   type = factor(type, levels = c("Construction", "Ores", "Fossil fuels", "Biomass"))
+  # )
+  dplyr::mutate(
+    type = factor(type, levels = c("Ores", "Fossil fuels", "Construction", "Biomass"))
+  )
+
+
+extracted_material_fit <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "ExtractedMaterialCurveFit.xlsx"), 
+                                             sheet = "ExtractedMaterialCurveFt - 1950")
+
+ggplot2::ggplot() +
+  ggplot2::geom_area(data = krausmann, 
+                     mapping = ggplot2::aes(x = Year, y = `Extracted material [Gt]`, fill = type)) + 
+  ggplot2::scale_fill_viridis_d(direction = -1) +
+
+  ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
+  ggplot2::labs(y = "Extracted material [Gt/year]") +
+  
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                fill = ggplot2::element_blank()) +
+  
+  MKHthemes::xy_theme()
+@
+
 
 Resource intensity can be measured and quantified at the whole-economy level,
 as in the examples above.
@@ -298,38 +350,6 @@ only because we're using less biomass per unit of GDP than ever before.
 We're using nearly the same amount (mass) of construction minerals, ores, and fossil fuels
 per GDP as we ever have.
 And because GDP is growing, total material use grows, too.
-
-
-<<total_material_use, fig.scap="World material use", fig.cap="World material use. ``Construction'' includes all construction minerals. ``Ores'' includes all industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
-krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
-                                sheet = "data to plot") %>% 
-  dplyr::rename(
-    Biomass = `Biomass [Gt]`, 
-    `Fossil fuels` = `Fossil [Gt]`,
-    Construction = `Construction [Gt]`, 
-    Ores = `Ores [Gt]`
-  ) %>% 
-  tidyr::pivot_longer(-Year, names_to = "type", values_to = "Extracted material [Gt]") %>% 
-  dplyr::mutate(
-    type = factor(type, levels = c("Construction", "Ores", "Fossil fuels", "Biomass"))
-  )
-
-extracted_material_fit <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "ExtractedMaterialCurveFit.xlsx"), 
-                                             sheet = "ExtractedMaterialCurveFt - 1950")
-
-ggplot2::ggplot() +
-  ggplot2::geom_area(data = krausmann, 
-                     mapping = ggplot2::aes(x = Year, y = `Extracted material [Gt]`, fill = type)) + 
-  ggplot2::scale_fill_viridis_d(direction = -1) +
-
-  ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
-  ggplot2::labs(y = "Extracted material [Gt/year]") +
-  
-  ggplot2::labs(x = ggplot2::element_blank(), 
-                fill = ggplot2::element_blank()) +
-  
-  MKHthemes::xy_theme()
-@
 
 
 <<per_capita_material_use, fig.scap="World material use per person", fig.cap='World per-capita material use. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: \\citet[Figure~1c]{Krausmann:2009wc}.'>>=
