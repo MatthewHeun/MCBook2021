@@ -149,14 +149,16 @@ fossil fuels, and
 biomass.
 In 2005, the world economy used about
 19~Gt of biomass, 
-about 23~Gt of construction materials, 
-5.7~Gt of ores and industrial minerals, and 
-11.6~Gt of fossil fuels.
-
+23~Gt of construction materials, 
+11.6~Gt of fossil fuels, and
+5.7~Gt of ores and industrial minerals
 to produce about \$81.5 trillion dollars of GDP. 
 One Gt is 10$^9$~tonnes (or 10$^{12}$~kg) and a trillion dollars is \$10$^{12}$.
-Thus, each dollar of GDP produced used about 0.23 kg of biomass, 
-0.082 kg of ores and minerals, and 0.27 kg of construction materials. 
+Thus, each dollar of GDP used about 
+0.23~kg of biomass, 
+0.28~kg of construction materials,
+0.14~kg of fossil fuels, and
+0.07~kg of ores and industrial minerals.
 A full accounting of the resource intensity of the economy~\Rparen{}
 yields a long list of numbers, like a huge grocery list,
 each number giving the amount of a single resource needed to make \$1 of GDP. 
@@ -200,15 +202,15 @@ ggplot2::ggplot() +
 @
 
 
-Resource intensity can be measured and quantified at the whole-economy level,
+Resource intensity can be measured and quantified at the world level,
 as in the examples above.
-Alternatively, resource intensity can be quantified per economic sector.
+Alternatively, resource intensity can be quantified per country or per economic sector.
 Clearly, the manufacturing sector of the economy requires resources to function.
 Raw materials (such as copper and minerals) are required to make
 finished goods (such as sewing machines and mobile phones).
 But all sectors, even the service sector, need resources.
 Consider the simple example of a haircut.
-The stylist arrives at the salon in a vehicle
+The stylist commutes to the salon in a vehicle
 (which requires iron ore, copper, and other natural resources to manufacture; 
 perhaps refined liquid fuel to operate; and 
 an atmosphere that is a source of oxygen and which absorbs CO$_2$ and water, the products of combustion).
@@ -281,14 +283,16 @@ the European Commission maintains a list of Critical Raw Materials (CRMs)\index{
 with special importance 
 across a wide range of industries;
 see Table~\ref{tab:CRMs}.
-Notice the \emph{large number} of resources considered ``critical.''
-Energy is important for making an economy run but so are material resources.
+Notice the \emph{large number} of resources that are considered ``critical.''
+Energy is important for running an economy but so are material resources.
 
 Another interesting feature of Table~\ref{tab:CRMs} is the \emph{breadth of applications}; 
 most of the critical materials are used throughout the economy.
 A material may be critical to a region, to an economic sector, or to an economy as a whole 
-because of breadth of application, supply vulnerability or volatility, 
-or supply limits.
+for many reasons: 
+breadth of application, 
+supply vulnerability or volatility, or
+supply limits.
 
 Each region or sector will have its own list of CRMs.
 For example, the transition to a renewable energy future 
@@ -328,7 +332,7 @@ has been growing in recent decades.
 % the demand for natural resources grows, too.
 Economic growth, by definition, means an increasing demand for goods and services,
 which, in turn, means an increasing demand for natural resources.
-Figure~\ref{fig:total_material_use} shows the accelerating
+Figure~\ref{fig:total_material_use} shows the growing
 rate of extraction of materials from the Earth.
 Figure~\ref{fig:per_capita_material_use}
 shows the same data on a per-capita basis.
@@ -336,15 +340,16 @@ Although a (hypothetically) falling global population might \emph{help} humanity
 sustainable by reducing the number of people who need resources,
 Figure~\ref{fig:per_capita_material_use} indicates population decline won't be
 enough. 
-Rising affluence~\Aparen{} is pushing per-capita material consumption upward over time.
+Per-capita material consumption is climbing upward over time, 
+driven in part by rising affluence~\Aparen{}.
 Thus, a declining population would help humanity to be more sustainable
-only if population declines faster than affluence grows.
+only if population declines faster than affluence rises.
 
-Furthermore, Figure~\ref{fig:per_gdp_material_use} shows that on a per-GDP basis, 
+Furthermore, Figure~\ref{fig:per_gdp_material_use} shows that on a per-GDP basis 
 extraction of construction minerals, ores, and fossil fuels scales 
-quite well with GDP:
+quite well with GDP;
 those bands are not appreciably growing or shrinking over time.
-On the other hand, the per-GDP extraction of biomass extraction is declining rapidly.
+On the other hand, the per-GDP extraction rate of biomass is declining rapidly.
 The world's economies are dematerializing, but 
 only because we're using less biomass per unit of GDP than ever before.
 We're using nearly the same amount (mass) of construction minerals, ores, and fossil fuels
@@ -419,7 +424,7 @@ is not scaling with GDP.
 In fact, GDP growth is supported exclusively by unsustainable material extraction.
 
 By the strong sustainability criterion, 
-we live in an unsustainable world.
+we live in an unsustainable world!
 
 
 %++++++++++++++++++++++++++++++
@@ -429,8 +434,8 @@ we live in an unsustainable world.
 
 A weak sustainability criterion is that resources are extracted slowly enough
 to invent and deploy substitute(s) at scale before the resource is depleted.
-A similar weak sustainability criterion can be established for waste:
-wastes should be emitted slowly enough for their accumulation in the environment
+A similar weak sustainability criterion can be established for wastes.
+Wastes should be emitted slowly enough for their accumulation in the environment
 to pose no problems before remediation technologies can be invented and deployed
 at scale to dispose of the wastes.
 A time horizon is needed for evaluating the weak sustainability criterion,
@@ -450,7 +455,7 @@ the following steps can be performed.
   \item Establish the virgin material stock as of today, 
         often called the ``reserves'' of the resource.
 
-  \item Divide the virgin stock by 50 years to obtain the average maximum weakly
+  \item Divide the virgin stock by 50~years to obtain the average maximum weakly
         sustainable extraction rate~($\mft{r}_{\mft{ws}}$).
 
   \item Find the current rate of extraction and suitably adjust 
@@ -464,7 +469,7 @@ the following steps can be performed.
 
 \end{enumerate}
 %
-A similar approach can be used for wastes, like CO$_2$.
+A similar approach can be used for emission of wastes, like CO$_2$.
 %
 \begin{enumerate}
 
@@ -475,7 +480,7 @@ A similar approach can be used for wastes, like CO$_2$.
   \item Establish the ``budget'' for waste emission by subtracting the 
         amount of waste in the environment from the maximum allowable waste in the environment. 
         
-  \item Divide the budget by 50 years and subtract the rate at which the ecosystem renders the waste inert.
+  \item Divide the budget by 50~years and subtract the rate at which the ecosystem renders the waste inert.
         The result is the maximum allowable waste emission rate
         for weak sustainability~($\mft{r}_{\mft{ws}}$).
 
@@ -500,12 +505,15 @@ the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$).
 \end{equation}
 %
 A positive value for $\rho$ indicates the percentage by which the extraction rate~($\mft{r}_{\mft{cf}}$\;\!)
-is \emph{above} the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$). 
+is \emph{above} the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$)
+and is, therefore, weakly unsustainable. 
 A negative value for $\rho$ indicates the percentage by which the extraction rate~($\mft{r}_{\mft{cf}}$\;\!)
-is \emph{below} the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$). 
+is \emph{below} the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$)
+and is, therefore, weakly sustainable. 
 A value for $\rho$ of 100\% means that the resource is being extracted at \emph{twice} 
 its average maximum weakly sustainable extraction rate.
-(Alternatively, $\rho$ = 100\% means that the resource would be exhausted in 25~years, 
+(Put another way,
+$\rho$ = 100\% means that the resource would be exhausted in 25~years, 
 not 50~years.)
 
 Figure~\ref{fig:PercentageOfSustainable} shows the result of applying
@@ -593,16 +601,16 @@ use of a valuable, scarce, or nonrenewable resource
 with a less valuable, less scarce, or renewable resource%
 \footnote{
   For a related discussion of substitution,
-  see Q\ref{chap:resource_intensity}.\ref{question:consumption_substitution}.
+  see Q5.\ref{question:consumption_substitution}.
 }.
 Replacing use of a scarce resource with use of an abundant resource
-typically extends the time horizon for depleting manufacturing feedstocks and
+usually extends the time horizon for depleting the scarce resource and
 brings us closer to weak sustainability.
 
 Scarce resources tend to be valuable.
 Abundant resources tend to be less valuable.
-Using an abundant resource instead of a scarce resource therefore typically
-makes sense from a cost perspective.
+Using an abundant resource instead of a scarce resource in a manufacturing environment 
+therefore typically makes sense from a cost perspective.
 However, substitution is possible only when the two resources in question
 are identical or nearly identical
 such that they can serve the same purpose in a manufacturing or production environment.
@@ -626,7 +634,7 @@ That said, there are important limits to substitutability.
 At a manufacturing plant, the type of electricity
 (for example, coal electricity\index{electricity!coal} or solar electricity\index{electricity!solar})
 is immaterial,
-so long as both options are (for the U.S.) 120 V at 60 Hz.
+so long as both options are (for the U.S.) 120~V at 60~Hz.
 From the point of view of the manufacturing plant, coal electricity and solar electricity are 
 perfect substitutes.
 However, at the point of electricity generation, 
@@ -639,7 +647,7 @@ to solar photovoltaic\index{solar photovoltaic electricity} farms.
 Sometimes a scarce (and expensive), renewable resource is replaced by a
 less-expensive, nonrenewable alternative.
 Two examples illustrate.
-The first example involves ocean-going vessels.
+The first involves ocean-going vessels.
 In the sailing age, ships were made of timber, with teak and mahogany being
 favored ship-building woods.
 Today, cargo ships are made of steel, and pleasure craft are made almost exclusively
@@ -649,10 +657,16 @@ are now too rare and too expensive for shipbuilding,
 both in terms of material cost and
 labor cost.
 As often happens, the ready availability of less-expensive vessels
-means that many more boats are purchased and used.
+means that many more boats are purchased and used, 
+bringing us further from sustainability.
+
 The second example involves lighting.
 Societies moved away from wax candles and whale oil lanterns to
 ``town gas,'' kerosene, and finally, electric lights.
+Electricity (from fossil fuels) is not renewable, so 
+this is another example of an 
+inexpensive, nonrenewable resource substituting for an
+expensive, renewable resource.
 
 In both cases (ships and lights), none of the options
 (wood ships, steel ships,
@@ -660,9 +674,9 @@ wax candles, whale oil lanterns, kerosene lanterns, or electric lights)
 meets the strong sustainability criterion.
 However, all of wood ships, wax candles, whale oil lanterns, town gas lamps, and
 kerosene lamps proved to be weakly sustainable.
-We found substitutes for the natural resources
+We found substitutes for the expensive natural resources
 in a reasonable time frame and
-before the natural resources were depleted.
+before they were depleted.
 (See Q5.\ref{question:weak_sust_good_enough}
 for discussion of whether weak sustainability is ``good enough.'')
 
