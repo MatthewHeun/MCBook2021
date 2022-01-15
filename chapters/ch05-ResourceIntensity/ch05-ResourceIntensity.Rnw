@@ -886,15 +886,15 @@ weak_sust_energy_rho %>%
 Continuing the \href{https://en.wiktionary.org/wiki/explication}{explication}
 of the IPARX identity,
 one piece or facet of resource intensity of the economy~\Rparen{}
-is the primary energy intensity ($R_{Ep}$) of the world economy.
-$R_{Ep}$ is the amount of primary energy required to create one unit (dollar) of
+is the primary energy intensity ($\mft{R}_{\mft{Ep}}$) of the world economy.
+$\mft{R}_{\mft{Ep}}$ is the amount of primary energy required to create one unit (dollar) of
 world GDP.
 Of course, many other resources are \emph{also} required to create a unit of GDP,
 but we use energy as the prime example of an important resource in the economy.
 The primary energy intensity of the economy is formed
-by dividing primary energy consumption ($E_p$)
+by dividing primary energy consumption ($\mft{E}_\mft{p}$)
 by world GDP,
-that is, dividing the line in Figure~\ref{fig:PrimaryEnergyGraph}
+that is, dividing the regions of Figure~\ref{fig:PrimaryEnergyGraph}
 by the line in Figure~\ref{fig:GDPGraph-Nordhaus}.
 The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 
@@ -996,7 +996,7 @@ energy_intensity %>%
 
  
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that
-the primary energy intensity of the world economy ($R_{Ep}$) has fallen from
+the primary energy intensity of the world economy~($\mft{R}_{\mft{Ep}}$) has fallen from
 15 to 4~MJ/2017 international dollar across the last two centuries.
 The decline is caused by the fact that the world economy's GDP
 (Figure~\ref{fig:GDPGraph-Nordhaus})
@@ -1005,7 +1005,8 @@ has been growing at a faster rate (in \%/year terms) than primary energy consump
 The decline indicates that each additional dollar of GDP
 is created with incrementally less energy consumption.
 
-While the decrease in $R_{Ep}$ (the prime example for \mft{R} in Equation~\ref{eq:IPARX})
+While the decrease in $\mft{R}_{\mft{Ep}}$
+(the prime example for \mft{R} in Equation~\ref{eq:IPARX})
 appears to be good news for sustainability
 (declining \mft{R} puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}), 
 Figure~\ref{fig:per_gdp_material_use} shows that (on a per-mass basis)
@@ -1018,8 +1019,9 @@ We can use these data to learn something about the IPARX terms
 (Equation~\ref{eq:IPARX}) and CO$_2$ emissions.
 A narrowed version of Equation~\ref{eq:IPARX},
 considers only CO$_2$ emissions on the left-hand side of the equation
-and the energy intensity of the economy ($R_{Ep}$) instead of \mft{R} on the right-hand side.
-When $R_{Ep}$ falls, downward pressure is placed on CO$_2$ emissions.
+and the energy intensity of the economy ($\mft{R}_{\mft{Ep}}$)
+instead of \mft{R} on the right-hand side.
+When $\mft{R}_{\mft{Ep}}$ falls, downward pressure is placed on CO$_2$ emissions.
 Whether CO$_2$ emissions \emph{actually} decrease
 depends on the rates of increase or decline of the other terms
 on the right side of Equation~\ref{eq:IPARX}.
