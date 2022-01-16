@@ -31,7 +31,7 @@ contamination, ozone depletion, smog creation, habitat destruction, and many oth
   \iparx            \tag{\ref{eq:IPARX}}
 \end{equation}
 
-Chapter \ref{chap:introduction} pointed out the problems of exponential growth.
+Chapter \ref{chap:introduction} points out the problems of exponential growth.
 Continued exponential growth is impossible on a finite planet with finite 
 resources and finite boundaries.
 Continued and greater environmental impacts eventually run up against the Earth's limits.
@@ -182,7 +182,7 @@ catastrophic collapse.
 \end{figure}
 
 There is a cognitive element to the tipping-point analogy. 
-Experience conditions us to expect the boat to right itself when heeled
+Experience conditions us to expect the boat to right itself whenever it is heeled
 over---because it has always done so in the past.
 Having the system behave in a completely different manner is outside our direct
 experience, so we have trouble believing that it can or will flip catastrophically, 
@@ -230,7 +230,7 @@ Eventually the boat (that is, the ecosystem) heels over so far that it capsizes.
 % is there a question here?
 
 % wikipedia article on "tipping points in the climate system."
-Drastic or catastrophic changes to ecosystems are not new or solely a modern problem.
+Drastic or catastrophic changes to ecosystems are not new or solely modern problems.
 Rapa Nui (Easter Island), the Levant, and the Sahara Desert have all undergone 
 dramatic ecological shifts, although the degree to which this is attributable to 
 human actions is not agreed upon or well understood~\cite{Malhi2018}. 
@@ -244,7 +244,7 @@ Clearing forests for fuel, crops, and building materials
 led to a permanent loss of soil fertility, erosion, and economic decline
 in places as far apart as Scandinavia~\cite{Oestlund2015},
 the Mayan empire~\cite{Douglas2018}, and southern Iran~\cite{NFMiller1985}. 
-Ecological problems were especially well documented in the Mediterranean 
+Ecological problems were especially well documented in the Mediterranean region
 during the Greek and Roman eras~\cite{Hughes2011}. 
 Goats were pastured on cut timberlands, preventing regrowth.
 ``Overgrazing, particularly by goats, was a primary cause of deforestation in
@@ -345,7 +345,7 @@ The upper limit for atmospheric carbon dioxide concentration is 350~ppm.
 and the pre-industrial concentration was 280~ppm,
 as shown in Figure~\ref{fig:CO2Graph}).
 Less than 15\% of Earth's land area should be converted to cropland. 
-(Currently, 11.7\% is cropland).
+(Currently, 11.7\% is cropland.)
 The extinction rate should be less than 10 species per million species becoming extinct
 per year. 
 Currently, the extinction rate is more than 100 extinctions per million species per year
@@ -517,7 +517,7 @@ erodable_limit_data %>%
                  Second, as in (a), the boundary is increasing due to human activity and
                  growth remains unimpeded.
                  Third, as in (b), the boundary is constant and growth is retarded as the boundary is approached.
-                 Fourth, as in (c), there is a 2-way interaction between growth and the boundary but the
+                 Fourth, as in (c), there is a two-way interaction between growth and the boundary but the
                  boundary is robust.
                  Fifth, shown in (d), exceeding the boundary is possible and results in serious, dramatic, and
                  long-lasting reduction of the system's ability to provide ecosystem services.
@@ -538,7 +538,7 @@ is robust.
 That is, it recovers. 
 Renewable resources like grazing land, fisheries, timber, and aquifers \emph{can}
 behave in this way. 
-Lastly, in subfigure~(d), exceeding the boundary causes long-term reduction in the 
+Lastly, in subfigure~(d), exceeding the boundary causes a long-term reduction in the 
 capacity of the ecosystem to provide ecosystem services. 
 As above, renewable resources like grazing land, fisheries, timber, and aquifers
 \emph{can} have this behavior, if their capacity is exceeded too much or for too long.
@@ -546,7 +546,7 @@ As another example, complex systems, like temperature regulation of the planet, 
 tipping points that can radically change limits to an ecosystem service when the 
 limit is exceeded.
 Carbon dioxide in the atmosphere is thought/feared to be an example
-of this sort of behavior; when CO$_2$ increases too much, Earth will get 
+of this sort of behavior; when CO$_2$ increases too much, the Earth will get 
 \emph{dramatically} hotter, fundamentally altering many of its basic systems.
 
 
@@ -709,7 +709,7 @@ Second, most greenhouse gas emissions are within human control,
 especially regarding fossil fuels and agriculture. 
 
 % see http://clivebest.com/blog/?p=1169 and references therein.
-Here's a brief description of how climate change is happening. 
+Here is a brief description of how climate change is happening. 
 If the radiation received from the sun exceeds the heat radiated from the Earth,
 the Earth's temperature will increase. 
 As the Earth's temperature increases, the amount of heat radiated from the Earth
@@ -899,7 +899,7 @@ London: Fouth Estate,
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The age of stupid, a 2009 documentary film. \\
+\emph{The age of stupid}, a 2009 documentary film. \\
 
 \noindent 
 A convenient truth: Urban solutions from Curitiba, Brazil \\
