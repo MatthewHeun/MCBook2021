@@ -746,7 +746,7 @@ but that warming process takes a very long time.
 Scientists agree that avoiding irreversible effects of climate change
 requires limiting global average temperature rise to 1.5~\degC{} or less,
 relative to the global average temperature at the dawn of the industrial revolution.
-Our ``carbon budget'' is the amount of future CO$_2$ emissions
+Our ``carbon budget'' is the amount of future CO$_2$e emissions
 that will eventually create 1.5~\degC{} total warming, 
 accounting for the (very small) rate of absorption of CO$_2$ by the biosphere.%
 \footnote{
@@ -755,20 +755,43 @@ accounting for the (very small) rate of absorption of CO$_2$ by the biosphere.%
   to get back to 350~ppm atmospheric CO$_2$ concentration
   within a few centuries.
 }
-As of 2021, the remaining carbon budget is 500~GtCO$_2$ 
-for a 50\% likelihood of remaining below 1.5~\degC{} warming~\cite[Table~SPM.2]{IPCC:2021tk}.
+As of 2021, the remaining carbon budget is 500~GtCO$_2$e 
+for a 50\% likelihood of remaining below 1.5~\degC{} warming~\cite[Table~SPM.2]{IPCC:2021tk}.%
 \footnote{
- For context, the carbon budget was 1500~GtCO$_2$ in 1990.
+ For context, the carbon budget was 1500~GtCO$_2$e in 1990.
  If we want better odds of remaining below 1.5~\degC, 
  the carbon budget is smaller. 
- For 83\% odds, the remaining carbon budget is 300~GtCO$_2$.
- If we want to live dangerously, the carbon budget for 17\% odds
- of staying below 1.5~\degC{} warming is 900~GtCO$_2$. 
+ For 83\% odds, the remaining carbon budget is 300~GtCO$_2$e.
+ If we want to live dangerously, the carbon budget for 17\% oddse
+ of staying below 1.5~\degC{} warming is 900~GtCO$_2$e.
  \label{page:carbon_budget}
 }
 %
-Figure~\ref{fig:Fig-SPM-10} illustrates the remaining carbon budget.
+The UN's Intergovernmental Panel on Climate Change (IPCC) has developed future scenarios
+for carbon emissions as shown in Table~\ref{tab:ipcc_scenarios}.
 
+\begin{table}
+\caption[IPCC CO$_2$ emissions scenarios]{IPCC CO$_2$ emissions scenarios. 
+                                          Expected warming is for the year 2100 and
+                                          is relative to the 1850--1900 global temperature average.}
+\centering
+\begin{tabular}{r l c}
+\toprule
+Name  & Details  & Expected warming [\degC] \\ 
+\midrule
+SSP1-1.9 & Emissions cut to net zero around 2050 & 1.4 \\
+SSP1-2.6 & Emissions cut to net zero around 2075 & 1.8 \\
+\multirow{2}{*}{SSP2-4.5} & Emissions at current levels until 2050,         & \multirow{2}{*}{2.7} \\
+                          & then falling but not reaching net zero by 2100  &  \\
+SSP3-7.0 & Emissions double by 2100	& 3.6 \\
+SSP5-8.5 & Emissions triple by 2100 & 4.4 \\
+\bottomrule
+\end{tabular}
+\label{tab:ipcc_scenarios}
+\end{table}
+
+Figure~\ref{fig:Fig-SPM-10} illustrates carbon budgets and highlights the challenges 
+to avoiding 1.5~\degC{} total warming.
 Assuming no change in the CO$_2$ emissions rate and
 given that we are emitting about 35~GtCO$_2$/year
 (Figure~\ref{fig:CarbonEmissionsGraph}), 
@@ -788,7 +811,7 @@ energy and CO$_2$ emissions are the prime example of this book.
 
 \end{mcframe}
 
-<<Fig-SPM-10, fig.pos="h!", fig.scap="Impact of cumulative CO$_2$ emissions on global temperature", fig.cap="Impact of cumulative CO$_2$ emissions on global temperature. Temperature rise on the vertical axis is relative to the 1850--1900 global average. The vertical line labeled ``1990'' indicates cumulative emissions to that time, 1411~GtCO2. The vertical line labeled ``Today'' indicates cumulative emissions to date, 2411~GtCO2. The vertical line labeled ``1.5~C'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~C warming by 2100, 2911~GtCO2. The current carbon budget is the distance between the ``Today'' line and the ``1.5~C'' line, or 500~GtCO2. The carbon budget in 1990 was the distance between the ``1990'' line and the ``1.5~C'' line, namely 1500~GtCO2. The red lines represent CO2 emissions under various future scenarios. SSP1-1.9 assumes CO2 emissions cut to net zero around 2050 and yields 1.4~C warming by 2100. SSP1-2.6 assumes CO2 emissions cut to net zero around 2075 and yields 1.8~C warming by 2011. SSP2-4.5 assumes CO2 emissions stay at current levels until 2050, then falling but not reaching net zero by 2100 to yield 2.7~C warming by 2100. SSP3-7.9 assumes CO2 emissions double by 2100 to give 3.6~C warming by 2011. SSP5-8.5 assumes CO2 emissions triple by 2075 to give 4.4~C warming by 2011.~\\cite[Figure~SPM.10]{IPCC:2021tk}. Data available under available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\url{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}.">>=
+<<Fig-SPM-10, fig.pos="h!", fig.scap="Impact of cumulative CO$_2$ emissions on global temperature", fig.cap="Impact of cumulative CO$_2$ emissions on global temperature. Temperature rise on the vertical axis is relative to the 1850--1900 global average. The vertical line labeled ``1850'' indicates the starting point for counting CO$_2$ equivalent emissions. The vertical line labeled ``1990'' indicates cumulative emissions to that date, 1411~GtCO$_2$e. The vertical line labeled ``2019'' indicates cumulative emissions to that date, 2411~GtCO$_2$e. The vertical line labeled ``1.5~\\degC'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~\\degC{} warming by 2100, 2911~GtCO$_2$e. The current carbon budget is the distance between the ``2019'' line and the ``1.5~\\degC'' line, or 500~GtCO$_2$e. The carbon budget in 1990 was the distance between the ``1990'' line and the ``1.5~\\degC'' line, namely 1500~GtCO$_2$e. The red lines represent emissions under various future scenarios; see Table~\\ref{tab:ipcc_scenarios}. The relationship between future warming and cumulative emissions is only weakly dependent upon the emissions scenario. \\emph{Sources}: This figure was inspired by Figure~SPM.10 in the IPCC report \\emph{Climate Change 2021: The Physical Science Basis}~\\cite{IPCC:2021tk}. Data are available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\url{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}.">>=
 scenario_size <- 0.3
 spm_10_data <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "SPM_10.xlsx"),
                                   sheet = "data to plot")
@@ -802,17 +825,19 @@ spm_10_data %>%
                       size = guide_line_size, 
                       colour = guide_line_colour, 
                       linetype = guide_linetype) +
-  ggplot2::geom_vline(xintercept = c(2411 - 1000, 2411, 2411 + 500),
+  ggplot2::geom_vline(xintercept = c(0, 2411 - 1000, 2411, 2411 + 500),
                       size = guide_line_size, 
                       colour = guide_line_colour, 
                       linetype = guide_linetype) +
   
   ggplot2::geom_line() + 
   
+  ggplot2::annotate("text", x = 115, y = 2.0, 
+                    label = "1850", colour = guide_line_colour, size = 4, angle = 90) + 
   ggplot2::annotate("text", x = 1300, y = 2.0, 
                     label = "1990", colour = guide_line_colour, size = 4, angle = 90) + 
   ggplot2::annotate("text", x = 2280, y = 2.0, 
-                    label = "Today", colour = guide_line_colour, size = 4, angle = 90) + 
+                    label = "2019", colour = guide_line_colour, size = 4, angle = 90) + 
   ggplot2::annotate("text", x = 2790, y = 2.0,
                     label = "'1.5 ' * degree*C", colour = guide_line_colour, size = 4, angle = 90, parse = TRUE) + 
   
@@ -838,7 +863,7 @@ spm_10_data %>%
                                           `SSP5-8.5` = 3)) +
   
   ggplot2::labs(x = expression("Cumulative emissions since 1850 [" * GtCO[2] * "]"), 
-                y = expression("Temperature rise [" * degree*C * "]"), 
+                y = expression("Temperature rise since 1850-1900 [" * degree*C * "]"), 
                 size = ggplot2::element_blank(),
                 colour = ggplot2::element_blank(),
                 linetype = ggplot2::element_blank()) +
@@ -846,6 +871,12 @@ spm_10_data %>%
   
   MKHthemes::xy_theme()
 @
+
+
+
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
