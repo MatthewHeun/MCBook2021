@@ -1045,7 +1045,7 @@ Through time, the resource extraction rate peaks then and declines.
 A clear example of a production curve for a finite resource is
 extraction of coal in the UK, shown in Figure~\ref{fig:UK_coal_extraction}.
 
-<<UK_coal_extraction, fig.scap="UK coal production", fig.cap="UK coal production. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv} for 1830--2009; \\citet{UK_dept_BEIS:2021} for 2010--2020.">>=
+<<UK_coal_extraction, fig.scap="UK coal production vs.\\ time", fig.cap="UK coal production vs.\\ time. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv} for 1830--2009; \\citet{UK_dept_BEIS:2021} for 2010--2020.">>=
 uk_coal_extraction <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "CoalGraph.xlsx"),
                                          sheet = "data to plot") %>%
   dplyr::mutate(
