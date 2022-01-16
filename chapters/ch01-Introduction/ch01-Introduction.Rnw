@@ -65,14 +65,14 @@ to continue to do things ``the way they've always been done.''
 Figure~\ref{fig:venn_diagram} shows the three interrelated and overlapping domains 
 of sustainability: environmental sustainability, economic sustainability, and 
 social sustainability.
-The sustainability problems are complex and interconnected.
+Sustainability problems are complex and interconnected.
 Environmental sustainability problems have social and economic aspects (that are 
 generally more difficult to solve).
 Likewise, economic and social sustainability problems are not limited to one domain;
 typically, they include aspects of the other two domains as well.
 % Sustainability is like a three-legged stool or a table on three legs.
 % If one of the supports is removed, the whole thing falls flat.
-Therefore, pollution is an environmental problem, and a social problem, and an economic problem.
+Therefore (for example), pollution is an environmental problem, and a social problem, and an economic problem.
 Likewise renewable energy. And land use. And all the other challenges humanity faces.
 
 \begin{figure}
@@ -172,7 +172,7 @@ because it is our home country and
 because it has better data coverage than most countries 
 regarding energy and carbon emissions.
 Behind the facts and data are important concepts related to human choices, 
-which we explore throughout the book and in questions and projects that follow each chapter. 
+which we explore throughout the book, mostly in questions and projects that follow each chapter. 
 %consumer choices in human economies.
 % Readers can watch for these important categories 
 % throughout the book:
@@ -192,7 +192,7 @@ The remainder of this chapter summarizes key themes of the book.
 ``Sustainability'' is a crucial concept.
 If humanity is not living sustainably, we will either cease to exist as a species
 or (at least) experience drastic reductions in our population and/or standard of living.
-So what is sustainability and how do we tell if we're living sustainably?
+So, what is sustainability and how do we tell if we're living sustainably?
 There are many definitions of sustainability.
 To the novice, many definitions may seem to indicate lack of agreement.
 However, sustainability is almost a self-defining concept.
@@ -206,7 +206,7 @@ Although humans seem to have inherent cognitive difficulties in planning for
 time scales significantly longer than the human lifespan, 
 \emph{strong} sustainability is achieved only if the answer is
 ``indefinitely'' or ``forever.''
-Our current sustainability crisis has been thousands of years in the making~\cite{Sanderman2018}
+Our current sustainability crisis has been thousands of years in the making~\cite{Sanderman2017}
 and will likely require millions of years to recover~\cite{Davis11262}.
 A \emph{weak} sustainability criterion is sustainability over a long (by human standards)
 time frame, perhaps 50 years, which is on the order of one human adulthood.%
@@ -228,13 +228,13 @@ often in the 5--20 year range; see Chapter~\ref{chap:government}.)
 
 The narrowest answer for what needs sustaining is human life and society, which 
 \href{https://www.merriam-webster.com/dictionary/perforce}{perforce}
-entails those ecosystem services necessary for human health and wellbeing.
-(See Chapter \ref{chap:planetary_boundaries}.)
+entails those ecosystem services (Chapter~\ref{chap:planetary_boundaries})
+necessary for human health and wellbeing.
 Beyond these basics, some people view the nonhuman world as having inherent worth or standing and, as
 such, to also be worth preserving, even if it has no (or negative, for example, smallpox)
 impact on human continuity.
 Unfortunately, humans don’t know clearly what pieces of the ecosystem are, in the long run,
-necessary for survival and which aren’t.
+necessary for our survival and which aren’t.
 For instance, would we be able to survive in a world without dandelions?
 Maybe.
 On the other hand, dandelions might be necessary for other organisms we depend on.
@@ -315,8 +315,8 @@ population~\Pparen{} affluence~\Aparen{}, and technology~\Tparen{}.
 The Kaya identity is a form of the IPAT equation but restricts impact~\Iparen{}
 to CO$_2$ emissions.
 On the other hand, Kaya expands the generic expression for ``technology'' to be
-the product of energy intensity of the economy (units of energy per GDP)
-and the carbon intensity of energy (units of CO$_2$ emissions per unit of energy).
+the product of energy intensity of the economy (energy per GDP)
+and the carbon intensity of energy (CO$_2$ emissions per unit of energy).
 
 Chapters \ref{chap:planetary_boundaries}--\ref{chap:impact_intensity}
 of this book are organized around a hybrid of the IPAT and Kaya
@@ -377,35 +377,31 @@ Of course, the two are closely linked.
 \label{sec:exp}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Returning to the grain and chessboard problem, for a series of doubling numbers, 
-like the number of grains on a chessboard's squares: 
+Returning to the king's water, for a series of doubling numbers, 
+like the number of grains on the scholar's chessboard squares: 
 1, 2, 4, 8, 16, 32, \ldots,
 the sum of all the
 numbers in the series is always one less than the next number in the series.
 For example, 
 1+2+4+8 = 15, which is one less than 16, and
 1+2+4+8+16 = 31, which is one less than 32.
-Thus, the amount of grain in the next square is always greater than the sum total
+Thus, the amount of grain on the next square is always greater than the sum total
 of all the grain on all previous squares.
-The formula for the total grain on \mft{N} squares is 2$^{\mft{N} - \text{1}}$.
+The total grain on \mft{N} squares is 2$^{\mft{N}}-$~\text{1}.
 The amount of grain on the \mft{N}$^\text{th}$ square is 2$^{\mft{N} - \text{1}}$, 
 which is half of 2$^\mft{N}$
 and one more than the sum of all previous $\mft{N} - \text{1}$ squares.
 
 Doubling on discrete squares (or in discrete time units) can be extended to 
 continuous time. 
-Exponential growth is growth at a \emph{constant rate} (in percent per year), 
+Exponential growth is growth at a \emph{constant rate} (in percent per time), 
 which means doubling in a fixed amount of time.
-That is, the time it takes to double does not depend on the amount there is at
-the current moment. 
+That is, the time it takes to double does not depend on the current amount. 
 If the (constant) rate of growth is \mft{r}, then amount of time to double is ln(2)/\mft{r}, 
-which is approximately 70 divided by the growth rate, 
-when the growth rate is expressed as a percentage.
-For example, With a fixed 3\%/yr growth rate, GDP doubles every 23 years.
+which is approximately 70 divided by the growth rate.
+For example, with a fixed 3\%/yr growth rate, GDP doubles every 23 years.
 If your investment portfolio has a 7\%/yr return, your wealth will double
 every 10 years.
-Or, as shown in Figure~\ref{fig:exp}, \mft{y} doubles from 1 to 2 to 4 to 8
-to 16 every 6.93 years.
 
 % \begin{figure}
 % \centering
@@ -450,7 +446,7 @@ to 16 every 6.93 years.
 % @
 % 
 
-<<exp, fig.scap="Rice mass on the chessboard of the king's wager", fig.cap="Rice mass on each square of the chessboard in the king's wager. The last row of the chessboard (squares 57--64) contains nearly all of the rice mass. Pg is petagram; 1~Pg = 10$^{\\text{12}}$~kg.">>=
+<<exp, fig.scap="Mass of grain on the chessboard in the king's wager", fig.cap="Mass of grain on each square of the chessboard in the king's wager. The last row of the chessboard (squares 57--64) contains nearly all of the grain. Pg is petagram; 1~Pg = 10$^{\\text{12}}$~kg.">>=
 chessboard_data <- tibble::tibble(x = 1:64) %>% 
   dplyr::mutate(
     y = 2^(x - 1), 
@@ -471,42 +467,58 @@ chessboard_data %>%
   MKHthemes::xy_theme()
 @
 
+% Figure~\ref{fig:exp} shows the mass of grain on each square of the chessboard.
+% In the discrete case, like grain on a chessboard, the number of grains on the
+% next square is always one more than the sum of all the previous squares.
+% In the continuous case, the area under the curve between ``now'' and the next
+% doubling is more than the sum of all previous areas.
+% Thus, in Figure~\ref{fig:exp}, the yellow area has a value of 10, the blue
+% area has a value of 20, the purple area has a value of 40, and the green 
+% area has a value of 80.
+% Purple is more than blue plus yellow and green is more than purple plus blue plus yellow.
+% 
+% If the line in Figure~\ref{fig:exp} represents population or GDP, then the area
+% under the line represents the resources needed to support that activity.
+% For instance, the area could represent the amount of food necessary to feed the 
+% population.
+% (People eat an approximately constant amount of food per time, 
+% see Chapter~\ref{chap:agriculture}.
+% The various resources needed by the economy to produce a unit of GDP may be assumed
+% to be constant over a short period of time but are not constant long term, 
+% see Chapter~\ref{chap:resource_intensity}.)
 
-In the discrete case, like grain on a chessboard, the number of grains on the
-next square is always one more than the sum of all the previous squares.
-In the continuous case, the area under the curve between ``now'' and the next
-doubling is more than the sum of all previous areas.
-Thus, in Figure~\ref{fig:exp}, the yellow area has a value of 10, the blue
-area has a value of 20, the purple area has a value of 40, and the green 
-area has a value of 80.
-Purple is more than blue plus yellow and green is more than purple plus blue plus yellow.
+Figure~\ref{fig:exp} shows the mass of grain on each square of the chessboard.
+The sharp increase at the right side of figure
+is characteristic of exponential growth over \emph{any} time scale. 
+If the chessboard were extended by another row, the new row (squares 65--72) 
+would make current last row (squares 57--64) look as small and insignificant as
+squares 49--56 currently appear.
 
-If the line in Figure~\ref{fig:exp} represents population or GDP, then the area
-under the line represents the resources needed to support that activity.
-For instance, the area could represent the amount of food necessary to feed the 
-population.
-(People eat an approximately constant amount of food per time, 
-see Chapter~\ref{chap:agriculture}.
-The various resources needed by the economy to produce a unit of GDP may be assumed
-to be constant over a short period of time but are not constant long term, 
+Figure~\ref{fig:exp} can represent other quantities that are growing exponentially,
+like GDP.
+The blue area then represents the resources needed to support that activity.
+For instance, the blue area could represent the amount of energy necessary to create 
+that amount of GDP.
+(The various resources needed by the economy to produce a unit of GDP may be assumed
+to be constant over a short period of time but are not constant long term; 
 see Chapter~\ref{chap:resource_intensity}.)
 
 Population (P) and affluence (A) in Equation \ref{eq:IPARX} \emph{have} been growing
 exponentially. 
-Chapter \ref{chap:population} gives us some hope that population won't keep growing 
+Chapter~\ref{chap:population} gives us some hope that population won't keep growing 
 exponentially.
 (In fact, there are some indications world population may \emph{fall} after a peak
 in the mid-twenty-first century.)
 However, world economies are \emph{actively managed} to have continual growth 
-(say a target of 3\% GDP growth per year).
-The implication for sustainability is that the resources – for instance, the energy –
+(perhaps, an average target of 3\%/year).
+The implication for sustainability is that the resources---for instance, the energy---
 needed by the economy in the next 23 years will be more than the total
 resources (energy) used in all of history to date.
-(Improvements in energy efficiency over time will tend to spur further economic growth 
-rather than provide economic growth with zero resource cost;
-efficiency improvements are subject to diminishing returns, 
-see Figure~\ref{fig:E_vs_GDP_graph}.)
-Because of this exponential growth, resource use goes to infinity on a finite planet.
+% (Improvements in energy efficiency over time will tend to spur further economic growth 
+% rather than provide economic growth with zero resource cost;
+% efficiency improvements are subject to diminishing returns, 
+% see Figure~\ref{fig:E_vs_GDP_graph}.)
+Because of this exponential economic growth, resource use grows continually to infinity.
 Humanity is not on a sustainable path.
 
 
@@ -517,22 +529,21 @@ Humanity is not on a sustainable path.
 
 At a very fundamental level, 
 betterment of the human condition occurs when ingenuity is applied
-in economies to the transformation of the size and shape of materials
-into useful products.
+in economies to transform materials into useful products.
 Thus, both mass (for the materials) and energy (for the transformation)
 are crucial for improvement of human life.
 Both mass and energy come from the environment.
 
 Although a wide variety of materials are essential for human existence
-(see Section~\ref{sec:resources_strong_sustainability}), 
-we say that energy is the ultimate or master resource, because 
+(Section~\ref{sec:resources_strong_sustainability}), 
+we say that energy is the master resource, because 
 obtaining and using any other resource
 (including extraction of materials from the environment) 
 requires energy. 
 Collecting firewood to heat houses requires energy. 
 Extracting crude oil requires energy. 
 Harvesting food requires energy. 
-Making solar panels ... you guessed it, requires energy.
+Making solar panels requires energy.
 
 Another reason we say energy is the master resource
 is that energy can be used to convert one resource into another.
@@ -558,13 +569,13 @@ Energy efficiency ($\eta$) is defined as
 \end{equation}
 
 A different metric is often calculated for the \emph{production} of energy:
-energy return on investment (EROI).
-EROI is defined as the amount of energy delivered to the economy 
+energy return on investment (EROI),
+which is defined as the amount of energy delivered to the economy 
 per unit of energy it took to deliver that energy.
 
 \begin{equation}\label{eroi}
    \text{EROI} \equiv \frac{\text{Useful energy delivered to society}}
-               {\text{Energy required to obtain delivered energy}}
+               {\text{Energy required to obtain delivered energy}} \; .
 \end{equation}
 %
 Because energy is the master resource, 
@@ -575,7 +586,7 @@ For instance, modern agriculture has an EROI of around 0.1 to 0.15;
 it takes 7--10 calories of energy to deliver 1 calorie of food energy.
 On the other hand, an EROI greater than one indicates a source of useful energy.
 Table \ref{tab:eroi} lists energy returns for various sources of energy.
-Some authors have suggested a minimum EROI of 5 for sustainability~\cite{Ferruccio2016}
+Some authors have suggested a minimum EROI of 5 is required for sustainability~\cite{Ferruccio2016}
 with 12--13 necessary for a technological society.
 Although constrained by basic biophysical limits, EROI can be improved with better,
 more efficient technology.
@@ -583,7 +594,7 @@ more efficient technology.
 \begin{table}\centering
 \caption[EROI for several energy sources]
         {Energy return on investment (EROI) for several energy sources.
-Sources: see~\cite{Wikipedia_EROI,WNA2020,EtOH_in_BR,Gomiero2015} and sources therein.}
+\emph{Sources}:~\cite{Wikipedia_EROI,WNA2020,EtOH_in_BR,Gomiero2015} and sources therein.}
 \label{tab:eroi}
 \begin{tabular}{ll}\toprule
 \textbf{Energy source} & \textbf{EROI}
@@ -600,11 +611,15 @@ Biofuels (incl. U.S. corn ethanol) & 0.8--1.6 \\ %%  from T. Gomiero 2015
 \end{tabular}
 \end{table}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 This book uses the IPARX equation as a framework for thinking about sustainability.
-We will consider many different resources and many different types of impacts. 
-However, this book has a special focus on energy and CO$_2$ emissions.
-Climate change (see Section \ref{sec:GHGCC}) is one of the most urgent sustainability 
-challenges and it is linked to two others (extinction rate and land use changes) 
+It considers many different resources and many different types of impacts. 
+However, there is a focus on energy and CO$_2$ emissions.
+Climate change (Section \ref{sec:GHGCC}) is one of the most urgent sustainability 
+challenges and it is linked to other urgent challenges (such as extinction rate and land use changes) 
 by CO$_2$ and energy. 
 Thus, carbon emissions and energy lie at the nexus of our sustainability challenges.
 
@@ -614,7 +629,7 @@ Thus, carbon emissions and energy lie at the nexus of our sustainability challen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Jeremy L. Caradonna, \emph{Sustainability: A history}, Oxford: Oxford University Press, 2016.\\
 
-\noindent Kim Stanley Robinson, \emph{The ministry for the future}, London: Orbit, 2020.
+\noindent Kim Stanley Robinson, \emph{The ministry for the future}, London: Orbit, 2020. \\
 
 \noindent Mary Robinson, \emph{Climate justice: Hope, resilience, and the fight for a sustainable future},
 London: Bloomsbury, 2018.
@@ -701,30 +716,37 @@ the full restoration is likely to cost more than \euro{8} billion.
 %       a decade. What value will those workers have to the economy once the
 %       restoration of Notre-Dame is complete?
 
-\item With reference to the three areas of sustainability shown in Figure \ref{fig:venn_diagram},
+\item With reference to the three areas of sustainability shown in Figure~\ref{fig:venn_diagram},
       what are the environmental, social, and economic reasons \emph{for} rebuilding
-      Notre-Dame de Paris and \emph{against} rebuilding? Also, consider the decision
-      to rebuild (or not) in terms of Equation \ref{eq:IPARX}, that is, what effect
-      will rebuilding (or not) have on Impacts, Population, Affluence, Resources, and 
-      the environmental impact of resource use?
+      Notre-Dame de Paris and \emph{against} rebuilding? 
+      Also, consider the decision to rebuild (or not) in terms of Equation \ref{eq:IPARX}.
+      What effect will rebuilding (or not) have on Impacts~\Iparen{}, 
+      Population~\Iparen{}, Affluence~\Aparen{}, Resource intensity~\Rparen{}, and 
+      the environmental impact intensity of resource use~\Xparen{}?
       % Reflect on economic (e.g., tourism) and social (e.g., national prestige) reasons
       % \emph{for} carrying out a restoration of Notre-Dame de Paris.
 
 \item Compare/contrast rebuilding Notre-Dame de Paris with the rebuilding of the 
-      World Trade Center site in New York City. How are the reasons similar? 
-      How are they different? Also, contrast these two to the demolition of the 
-      Orange County, New York Government Center (see Wikipedia ``Orange County
-      Government Center''), a Brutalist building that was expensive to heat and 
-      was plagued by leak and mold problems (especially bad traits in a records
-      building).
+      World Trade Center site in New York City. 
+      How are the reasons similar? 
+      How are they different? 
+      Also, contrast these two to the demolition of the Orange County, New York 
+      Government Center (see Wikipedia 
+      ``\href{https://en.wikipedia.org/wiki/Orange_County_Government_Center}
+      {Orange County Government Center}''),
+      a Brutalist building that was expensive to heat and was plagued by 
+      leak and mold problems (especially bad traits in a records building).
 
-\item Should Notre-Dame de Paris be made as energy efficient as modern buildings?
+\item Should a rebuilt Notre-Dame de Paris be made as energy efficient as modern buildings?
+      If so, how would this alter the historic nature of the structure (and how do
+      know)?
+      If not, why not?
 
-\item More than 1000 old-growth oaks have been cut for timbers to rebuild Notre-Dame.
+\item More than 1000 old-growth oaks have been cut for timbers to rebuild Notre-Dame de Paris.
       Do you think this is a good thing because it means there is a demand
       for these timbers (and thus the forests they come from are a valuable
       resource worth preserving) or a bad thing because forests are valuable 
-      carbon sinks (see also Project P1.\ref{project:old-growth-forest} below)?
+      carbon sinks. (See also Project P1.\ref{project:old-growth-forest} below.)
       \label{question:old-growth-forest}
 
 \item When Notre-Dame de Paris burned, its lead roof released toxic particles
@@ -734,7 +756,7 @@ the full restoration is likely to cost more than \euro{8} billion.
       that aren't authentic? Is it prudent or pessimistic to anticipate a possible
       future fire? What could be done to alleviate safety concerns? What level of
       risk or safety is appropriate/acceptable? Consider how the level of acceptable
-      risk depends on the type of hazard (for instance, compare a fire at Notre-Dame 
+      risk depends on the type of hazard (for instance, compare a fire at Notre-Dame de Paris
       to a fire in a nuclear power plant).
 
 \item Immediately after the fire, a design competition was announced for the
@@ -766,8 +788,8 @@ the full restoration is likely to cost more than \euro{8} billion.
       % It seems to me that it would be good to focus 2 questions on each axis of the sustainability
       % triangle for Chapter 1. ---MKH ****
 
-\item Some companies have become bankrupt and gone out of business, like K-mart and
-      Woolworth's. 
+\item Some companies have declared bankruptcy and gone out of business, like 
+      K-mart and Woolworth's. 
       Others have been bailed out by governments, like General Motors and 
       JP Morgan Chase. 
       Were any of these decisions sustainable?
@@ -782,20 +804,13 @@ the full restoration is likely to cost more than \euro{8} billion.
       How does this statement address the debate for strong environmental
       sustainability versus ``sustainable development?''
 
-\item The human development index\index{Human Development Index}
-      (HDI, see section \ref{sec:indices}) is a measure of
-      life expectancy, expected years of schooling, and gross national income per capita.
-      As such it is a measure of \emph{development}. With reference to Equation 
-      \ref{eq:IPARX}, can HDI continually increase sustainably? Is there a \emph{level}
-      of HDI that is ``enough?''
-      % **** You could ask the same question about GDP. 
-      % Should this question (or a version of it) be moved to the affluence chapter? ---MKH ****
-      
 \item In Section \ref{sec:what_is_sustainability} it was noted that ``needs are subjective.'' Would you
-      like to ``live like a king'' if that meant actually living like kings lived in 1500 AD,
-      500 AD, or 1500 BC? What would be your life expectancy, expected level of education,
-      and income (and what could you spend that income on)? Now, with respect to this
-      historical precedent, do modern humans have a right to a certain level of HDI?
+      like to ``live like a king,'' if that meant actually living like kings lived in 1500 AD,
+      500 AD, or 1500 BC? 
+      What would be your life expectancy, expected level of education,
+      and income (and what could you spend that income on)? 
+      Now, with respect to this historical precedent, do modern humans have a
+      right to a certain level of affluence?
       What about future humans? Does their level change? 
       
 \item What are our (current) responsibilities with respect to the rights of future 
@@ -848,9 +863,9 @@ the full restoration is likely to cost more than \euro{8} billion.
       and \$100,000 would be. Next show where \$2 billion and \$10 billion are.
       Then calculate where \$1 trillion would be.
       
-\item Derive the results in Section \ref{sec:exp}.
+\item Derive the results in Section~\ref{sec:exp}.
       
-\item With reference to Question 1.\ref{question:old-growth-forest} above,
+\item With reference to Q1.\ref{question:old-growth-forest} above,
       research and write a summary report on 
       carbon sequestration of forests. What type(s) of forest store the most carbon?
       Consider old-growth, new-growth, and middle-aged stands of trees. Consider 
@@ -863,7 +878,8 @@ the full restoration is likely to cost more than \euro{8} billion.
       many sources of data use different definitions or metrics.
       \label{project:old-growth-forest}
       
-\item An alternative way to describe constant growth is to use a form such as 
+\item An alternative to the description of exponential growth given in 
+      Section~\ref{sec:exp} is to use the form 
       $y_N = y_0 (1+r)^N$, where $y_0$ is the initial amount, 
       $r$ is the constant growth rate (per compounding period), 
       $N$ is the number of compounding periods, and $y_N$ is the final amount.
