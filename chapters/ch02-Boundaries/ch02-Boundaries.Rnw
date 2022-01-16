@@ -781,8 +781,9 @@ Scenario  & Details  & Expected warming [\degC] \\
 \midrule
 SSP1-1.9 & Emissions cut to net zero around 2050 & 1.4 \\
 SSP1-2.6 & Emissions cut to net zero around 2075 & 1.8 \\
-\multirow{2}{*}{SSP2-4.5} & Emissions at current levels until 2050,         & \multirow{2}{*}{2.7} \\
-                          & then falling but not reaching net zero by 2100  &  \\
+\multirow{3}{*}{SSP2-4.5} & Emissions stay at current levels           & \multirow{3}{*}{2.7} \\
+                          & until 2050 and then fall,  &  \\
+                          & but not reaching net zero by 2100 & \\
 SSP3-7.0 & Emissions double by 2100	& 3.6 \\
 SSP5-8.5 & Emissions triple by 2100 & 4.4 \\
 \bottomrule
