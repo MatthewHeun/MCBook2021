@@ -222,7 +222,7 @@ On the other hand, use of traditional biofuels results in deforestation, erosion
 and other negative environmental effects (as well as being inefficient from an EROI 
 perspective, as shown in Table~\ref{tab:eroi}).
 The transition away from biofuel consumption results in cleaner urban air (especially after 
-the transition from coal to natural gas for residential heating) as noted by~\cite{Gordon2016}.
+the transition from coal to natural gas for residential heating)~\cite{Gordon2016}.
 Because having a healthy environment is what economists call a ``normal'' good,
 \mft{I} should fall as \mft{A} rises, in general.
 In \emph{some} ways (but not in terms of CO$_2$ emissions and climate change),
@@ -633,10 +633,10 @@ Each rate (\mft{r}\:\!) is calculated by
 \end{equation}
 %
 where
-\mft{r} is the rate of change in \%/year, 
+\mft{r} is the rate of change in \%/year;
 \mft{y} is one of \ICOtwo{}, \mft{P}, \mft{A}, \REp{}, or \XCOtwo{}
-for the prime example of energy and CO$_2$ emissions, 
-subscript ``2'' indicates a later year, and 
+for the prime example of energy and CO$_2$ emissions;
+subscript ``2'' indicates a later year; and 
 subscript ``1'' indicates an earlier year.
 
 <<RatesOfChange>>=
@@ -731,7 +731,7 @@ years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
 
 print(xtable::xtable(iparx_df %>% 
                        dplyr::filter(Year %in% years_for_rate_table), digits = c(0, 0, 3, 2, 2, 2, 2),
-                     caption = c("Values of IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers} these data allow us to see whether the world is becoming more sustainable or less sustainable over time and why; see P6.\\ref{question:iparx_calcs}.", "Values of IPARX terms for selected years"),
+                     caption = c("Values of IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers}, these data allow us to see whether the world is becoming more sustainable or less sustainable over time and why; see P6.\\ref{question:iparx_calcs}.", "Values of IPARX terms for selected years"),
                      label = "tab:iparx_select_years"),
       include.rownames = FALSE,
       include.colnames = TRUE,
@@ -764,27 +764,27 @@ at an average rate of \rateICOtwo{}~=~\Sexpr{rate_to_string(r_I_220)}
 since pre-industrial times (1800--2019)
 and \rateICOtwo{}~=~\Sexpr{rate_to_string(r_I_20)}
 over the last two decades (2000--2019). 
-(The data in Table~\ref{tab:iparx_select_years} and 
-Equation~\ref{eq:IPARX_rate_with_numbers}
+(Equation~\ref{eq:IPARX_rate_with_numbers} and 
+the data in Table~\ref{tab:iparx_select_years}
 can be used to discern
 trends over other periods of time. 
-See P6.\ref{item:iparx_calcs}.)
-The declining energy intensity of the economy term ($\mft{r}_\mft{R}$ < 0)
+See P6.\ref{question:iparx_calcs}.)
+The declining energy intensity of economic activity~(\rateREp{} < 0)
 is the only term in the IPARX identity
-putting downward pressure on the CO$_2$ emissions growth rate ($\mft{r}_\mft{I}$).
+putting downward pressure on the CO$_2$ emissions growth rate (\rateICOtwo{}).
 All other terms on the right side of Equation~\ref{eq:IPARX_rate_with_numbers}
 are greater than zero and are driving CO$_2$ emissions upward.
-Interestingly, the impact intensity of energy ($\mft{r}_\mft{X}$)
+Interestingly, the impact intensity of energy (\rateXCOtwo{})
 is smaller (\Sexpr{rate_to_string(r_X_20)})
 in the past two decades than over the past two centuries
 (\Sexpr{rate_to_string(r_X_220)}), because 
 the world's transition to a fully carbonized energy system
-was largely complete by 1970.
-(See Figure~\ref{fig:ImpactIntensityGraph}.)
-The beneficial effect of the declining resource intensity of the economy ($\mft{r}_\mft{R}$ < 0)
+was largely complete by 1970;
+see Figure~\ref{fig:ImpactIntensityGraph}.
+The beneficial effect of the declining resource intensity of the economy (\rateREp{}~<~0)
 is growing over time 
-($\mft{r}_\mft{R} = -$\Sexpr{rate_to_string(abs(r_R_220))} for 1800--2019 and
-$\mft{r}_\mft{R} = -$\Sexpr{rate_to_string(abs(r_R_20))} for 2000--2019).
+(\rateREp{}$~=~-$\Sexpr{rate_to_string(abs(r_R_220))} for 1800--2019 and
+\rateREp{}$~=~-$\Sexpr{rate_to_string(abs(r_R_20))} for 2000--2019).
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -792,27 +792,11 @@ $\mft{r}_\mft{R} = -$\Sexpr{rate_to_string(abs(r_R_20))} for 2000--2019).
 
 The positive terms in Equation~\ref{eq:IPARX_rate_with_numbers}
 represent sources of our sustainability challenges:
-rising population ($\mft{r}_\mft{P}$ > 0), 
-rising affluence ($\mft{r}_\mft{A}$ > 0), and 
-expanded use of fossil fuels ($\mft{r}_\mft{X}$ > 0).
+rising population (\rateP{}~>~0), 
+rising affluence (\rateA{}~>~0), and 
+expanded use of fossil fuels (\rateXCOtwo{}~>~0).
 
 \end{mcframe}
-
-The IPARX identity and 
-the prime example (energy consumption and CO$_2$ emissions)
-show that we are heading in an unsustainable direction,
-because CO$_2$ emissions are growing over time.
-In other words,
-Part~\ref{part:IPARX} (Chapters~\ref{chap:planetary_boundaries}--\ref{chap:impact_intensity})
-has described the \emph{what} of our sustainability challenges.
-Next, Part~\ref{part:sustainability_challenges}
-(Chapters~\ref{chap:households}--\ref{chap:land_use_urban_planning})
-explores reasons \emph{why} we face these challenges
-in several sectors of the economy.
-Finally, Part~\ref{part:actions}
-(Chapters~\ref{chap:government} and~\ref{chap:personal_action})
-provides suggestions for \emph{how} to respond, 
-collectively and individually.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -825,8 +809,7 @@ appears to be a straight multiplication of independent terms
 (\:\!\mft{P}, \mft{A}, \mft{R}, and \mft{X}\:).
 But it is not.
 There are interactions among the terms that deserve attention.
-In this section, we note four such interactions
-for the prime example of energy and CO$_2$ emissions.
+We note four such interactions below.
 The interactions among IPARX equation terms
 are an example of the interconnected character of human society as we know it.
 Indeed, policies directed at improving one term of the IPARX identity
@@ -852,9 +835,9 @@ many years in education and government led him to quip frequently
 % When energy efficiency is deployed as a means of reducing CO$_2$ emissions,
 % the carbon intensity of energy (\Xparen{} in the IPARX identity) will go down.
 Energy efficiency is widely seen as a means of reducing CO$_2$ emissions.
-The thinking goes that either the resource intensity (\:\!\mft{R} in the IPARX identity, 
+The thinking goes that either the resource intensity (\:\!\REp{} in the IPARX identity, 
 Equation~\ref{eq:IPARX}) 
-or impact intensity~\Xparen{}, or both,
+or impact intensity~\XCOtwoparen{}, or both,
 will go down as efficiency rises.
 However, energy efficiency is known to stimulate economic activity 
 by a mechanism called the ``rebound effect''~\cite{Brockway:2021ww},
@@ -863,13 +846,13 @@ are reinvested, leading to economic growth.
 Economic growth raises the GDP of an economy,
 so affluence~\Aparen{} will increase.
 As \mft{A} increases, energy consumption will increase.
-Whether energy efficiency actually saves energy and actually saves CO$_2$ emissions
+Whether energy efficiency actually saves energy and actually reduces CO$_2$ emissions
 depends on the strength of the rebound effect.
 When rebound effect is so large as to wipe out the initial energy savings,
 ``backfire'' is said to occur~\cite{Sorrell:2009cg,Sorrell:2010ul}.
 Backfire is a threat to a low-carbon future~\cite{Brockway:2017a}.
 Thus, we must be careful about crafting policies to address 
-the \mft{R} or \mft{X} terms in the IPARX identity.
+the \REp{} or \XCOtwo terms in the IPARX identity.
 We may inadvertently affect \mft{A} with the consequence of undoing 
 the good we intended.
 
@@ -884,9 +867,8 @@ population depends on many factors.
 (For one example of the dependencies of population, 
 see the causal loop diagram from the World3 model
 shown in Figure~\ref{fig:World3loops}.)
-One clear trend from history is that increasing affluence
-leads to reduced population growth rate.
-I.e., an increase in \mft{A} leads to a decrease in the rate of growth of \mft{P}.
+One clear trend from history is that increasing affluence~(\rateA{}~>~0)
+leads to reduced population growth rate~(\rateP~<~0).
 Thus, the affluence and population terms of the IPARX equation
 are not independent.
 
@@ -932,29 +914,29 @@ the primary energy intensity of the economy ($\mft{R}_{\!\mft{Ep}}$)
 has been decreasing over time,
 as shown in Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 Thus, as GPD ($\mft{P} \times \mft{A}$\:\!) rises, 
-the primary energy intensity of the economy
-(\:\!\mft{R} in the IPARX equation for the prime example) 
+the primary energy intensity of economic activity
+(\:\!\REp{} in the IPARX equation for the prime example) 
 is expected to fall, 
 as it has been for 220 years.
 (Recall from Section~\ref{sec:energy_intensity_of_the_economy}, 
-however, that $\mft{R}_{\!\mft{Ep}}$ is falling over time primarily because
+however, that \REp{} is falling over time primarily because
 per-dollar consumption of sustainable biomass is falling over time.
-Ironically, unsustainable per-dollar fossil fuel consumption is more constant 
-than sustainable per-dollar biomass consumption over time.
-See Figure~\ref{fig:per_gdp_material_use}.)
+Ironically, unsustainable fossil fuel consumption is more constant 
+than sustainable biomass consumption over time, per dollar of GDP;
+see Figure~\ref{fig:per_gdp_material_use}.)
 
-$\mft{R}_{\!\mft{Ep}}$ is a type of economic intensity
+\REp{} is a type of economic intensity
 that represents the effectiveness of using energy to make GDP.
 This fact raises an interesting question:
 can we use improved economic effectiveness 
-(decreasing $\mft{R}_{\!\mft{Ep}}$)
+(decreasing \REp{},
 brought about by rising energy efficiency)
-to reduce environmental impacts (\:\!\mft{I} in Equation~\ref{eq:IPARX}, 
+to reduce environmental impacts (\:\!\mft{I} in Equation~\ref{eq:IPARX}), 
 CO$_2$ emissions being the prime example)?
-It certainly helps, as decreasing $\mft{R}_{\!\mft{Ep}}$
-puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}.
-However, recent research indicates that growing energy efficiency
-(and declining $\mft{R}_{\!\mft{Ep}}$)
+It certainly helps, as decreasing \REp{}
+puts downward pressure on \ICOtwo{} in Equation~\ref{eq:IPARX}.
+However, recent research indicates that rising energy efficiency
+(and declining~\REp{})
 has never reduced energy consumption or environmental impacts, 
 at least at the worldwide level~\cite{Brockway:2021ww}.
 The rebound effect (Section~\ref{sec:rebound_effect}) is thought to be a strong candidate
@@ -966,17 +948,20 @@ increased economic activity leads to more energy consumption.
 Because of interactions between energy and the economy, 
 it is hard to see how energy efficiency alone 
 leads to reduced energy consumption and CO$_2$ emissions.
-We have never decoupled energy consumption from economic activity.
+We have never decoupled energy consumption from economic activity
+at the world level at any point in history.
 So long as energy consumption generates CO$_2$ emissions, 
 energy efficiency alone will be unlikely to decouple environmental impacts
 from economic activity.
 
 Economic growth, per-se, is not problematic.
-However, when economic activity requires energy and energy consumption 
-causes CO$_2$ to be emitted,
+However, when 
+(a)~economic activity requires energy 
+and
+(b)~energy consumption causes CO$_2$ to be emitted,
 economic growth leads to sustainability challenges.
 Reducing the carbon intensity of energy 
-(the prime example for \mft{X} in Equation~\ref{eq:IPARX})
+(\;\!\XCOtwo{}the prime example for \mft{X} in Equation~\ref{eq:IPARX})
 is one way to limit the environmental impacts of economic activity.
 Interactions associated with a transition to low-carbon energy supplies
 are the topic of the next section.
@@ -989,7 +974,7 @@ are the topic of the next section.
 
 The transition to renewable energy sources 
 is expected to reduce the CO$_2$ intensity of energy consumption
-(in the prime example), 
+(\;\!\XCOtwo{} in the prime example), 
 if the CO$_2$ avoided by renewable generation over the lifetime of a renewable device
 (say a photovoltaic solar panel)
 is less than the CO$_2$ embodied
@@ -998,11 +983,45 @@ That said, many advocates of Green Growth, a Green New Deal, and similar public 
 promote the idea that a transition to green infrastructure, including renewable energy,
 will stimulate economic growth and increase affluence.
 If they are right, 
-a renewables-driven decrease in \mft{X} would lead to an increase in \mft{A}
+a renewables-driven decrease in \XCOtwo{} would lead to an increase in \mft{A}
 in the IPARX equation (Equation~\ref{eq:IPARX}).
-The strength of each effect ($X \downarrow$, $A \uparrow$) 
+The strength of each effect (\;\!\XCOtwo{} $\downarrow$, $A \uparrow$) 
 will determine whether Green Growth or a Green New Deal will actually decrease 
-environmental impacts~\Iparen{} or CO$_2$ emissions (in the prime example).
+environmental impacts~\Iparen{} or CO$_2$ emissions (\;\!\XCOtwo{} in the prime example).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The impact intensity of resources~\Xparen{}
+represents the environmental impacts of extracting and consuming natural resources
+in Equation~\ref{eq:IPARX}.
+For the prime example of energy and CO$_2$ emissions, 
+the carbon intensity of energy~\XCOtwoparen{} 
+quantifies the CO$_2$ emissions from consuming energy.
+\XCOtwo{} grew with the transition from biofuels to fossil fuels
+but leveled off in the last few decades.
+Revisiting the IPARX equation, we see that rising population~\Pparen{}, 
+rising affluence~\Aparen{}, and
+expanded use of fossil fuels~\XCOtwoparen{}
+are the sources of our sustainability challenges.
+
+The IPARX identity and 
+the prime example (energy consumption and CO$_2$ emissions)
+show that we are heading in an unsustainable direction,
+because CO$_2$ emissions are growing over time.
+In other words,
+Part~\ref{part:IPARX} (Chapters~\ref{chap:planetary_boundaries}--\ref{chap:impact_intensity})
+has described the \emph{what} of our sustainability challenges.
+Next, Part~\ref{part:sustainability_challenges}
+(Chapters~\ref{chap:households}--\ref{chap:land_use_urban_planning})
+explores reasons \emph{why} we face these challenges
+in several sectors of the economy.
+Finally, Part~\ref{part:actions}
+(Chapters~\ref{chap:government} and~\ref{chap:personal_action})
+provides suggestions for \emph{how} to respond, 
+collectively and individually.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1231,14 +1250,15 @@ Energy Vault simulation:  \\ \url{www.vimeo.com/335818817}
         when \mft{r}$_\text{1}$ <\!\!< 1 and \mft{r}$_\text{2}$ <\!\!< 1
         in the derivation.
   
-  \item Verify the calculations in Equation~\ref{eq:IPARX_rate_with_numbers}
+  \item \label{question:iparx_calcs}
+        Verify the calculations in Equation~\ref{eq:IPARX_rate_with_numbers}
         using data from Table~\ref{tab:iparx_select_years}.
         Then recalculate the terms in Equation~\ref{eq:IPARX_rate_with_numbers} 
         for the last 69 years only (1950--2019), 
         for the last 49 years only (1970--2019), and
         for the last 9 years only (2010--2019).
         How are the results similar to or different from the results 
-        of Equation~\ref{eq:IPARX_rate_with_numbers}? \label{question:iparx_calcs}
+        shown in Equation~\ref{eq:IPARX_rate_with_numbers}? 
         
   \item After many years of studying energy-economy interactions and the rebound effect, 
         \citet{Sorrell:2010ul} advanced five controversial propositions:
