@@ -39,7 +39,7 @@ of human activities on those boundaries, that is, the left-hand side of Equation
 Chapter \ref{chap:population} is about the first term on the right-hand side of 
 Equation \ref{eq:IPARX}, world population and its dynamics. 
 Discussion questions from Chapter \ref{chap:population} reveal a variety of ways 
-in which it is practically and morally difficult to reduce impacts ($I$) by reducing 
+in which it is practically and morally difficult to reduce impacts~($I$) by reducing 
 population \Pparen{}.
 This chapter examines the second term on the right-hand side of Equation \ref{eq:IPARX},
 affluence ($A$), and the role of human economic activity in sustainability challenges.
@@ -119,8 +119,8 @@ The barber's opportunity cost (20 minutes) was worth less (to her) than \$15,
 so she is also better off.
 
 Any reduction in affluence decreases well being.
-Immediately, we can see a challenge with attempting to reduce impacts ($I$) by
-reducing affluence ($A$) -- it will make people less well off. 
+Immediately, we can see a challenge with attempting to reduce impacts~($I$) by
+reducing affluence~($A$) -- it will make people less well off. 
 Many proposals for becoming more sustainable are effectively reductions to
 affluence. 
 % To the degree that the proposal involves something costing more,
@@ -350,7 +350,7 @@ Government spending ($g$) is divided between government consumption
 (such as equipment and wages paid to government workers) and net investment, for 
 example, infrastructure improvements.
 
-Investment ($i$) is \emph{not} money put into a bank account. 
+Investment~($i$) is \emph{not} money put into a bank account. 
 Investment is goods that are purchased now for use in the future. 
 There are three subcategories of investment: nonresidential fixed investment, 
 residential fixed investment, and inventory investment. 
@@ -406,7 +406,7 @@ likewise, only things that will be consumed are produced, we are ready to introd
 the metaphor of economic metabolism.
 The economy takes in resources and produces wastes.
 Thus, the economy is the metabolism of human society.
-One way of looking at Equation~\ref{eq:IPARX} is that impacts ($I$)
+One way of looking at Equation~\ref{eq:IPARX} is that impacts~($I$)
 are the \emph{result} of economic activity.
 Total consumption is $P \times A$.
 Resources (\:\!\mft{R}) are the feed the economy needs to live and grow.
