@@ -457,9 +457,8 @@ it is energy-intensive to mine and refine uranium prior to its use
 in a nuclear power plant. 
 If the energy required to construct nuclear energy plants
 and refine uranium comes from fossil fuels, 
-significant CO$_2$ emissions will result from the transitions to nuclear electricity.
-
-An additional consideration is the availability of unranium resources,
+significant CO$_2$ emissions will result from the transition to nuclear electricity.
+An additional consideration is the availability of uranium resources,
 the topic of P6.\ref{question:nuclear_resources}.
 
 
@@ -477,15 +476,16 @@ for heating and electricity;
 see Figure~\ref{fig:PrimaryEnergyGraph}.
 However, supplying the energy needs of today's economy would be impossible:
 we don't have enough available arable land
-to grow the required amount biomass.
+to grow the required amount of biomass.
 (Proof of this statement is left for P6.\ref{item:biofuel_proof}.)
-Even if there were enough land, growing crops requires unsustainable energy,
-water, and chemical inputs; see Chapter \ref{chap:agriculture}.
+Even if there were enough land, today's methods of growing crops requires
+unsustainable energy, water, and chemical inputs;
+see Chapter \ref{chap:agriculture}.
 
 Biomass (unmodified wood or wood pellets) 
 works well for home heating and cooking
 via wood stoves, 
-provided that particulate matter is addressed appropriately.
+provided that particulate matter emissinos are mitigated appropriately.
 However, biomass by itself is not electricity or liquid fuel.
 A conversion to biomass for the world's primary energy supply would also require 
 worldwide replacement of today's fossil fuel electricity generation infrastructure
@@ -507,8 +507,7 @@ see Table \ref{tab:eroi}.
 
 We could transition the world's energy system
 to water (hydro), wind, and solar 
-(WWS)~\cite{Jacobson:2011gc,Delucchi:2011gb}\index{water, wind, and solar (WWS)}
-energy sources.
+energy sources (WWS)~\cite{Jacobson:2011gc,Delucchi:2011gb}\index{wind, water, and solar (WWS)}.
 A transition to WWS would also require 
 significant changes to the world's energy infrastructure, 
 with at least four large challenges.
@@ -520,12 +519,12 @@ by liquid fossil fuels (gasoline and diesel) and illustrates two options for
 transitioning from today's energy system to a WWS energy system.
 The first option is to replace
 all fossil-fuel vehicles with electric vehicles, as is slowly occurring today. 
-Electrification of personal vehicles is happening from the top end ofthe market, 
+Electrification of personal vehicles is happening from the top end of the market, 
 with expensive offerings from companies such as Tesla.
 (Electrification has not yet penetrated meaningfully into the freight system,
 including trucks, ships, and planes.)
 The second option is to use WWS electricity 
-in plants that convert feedstocks to biofuels.
+in plants that convert biomass feedstocks to biofuels.
 
 % This is discussed at length in research circles. Electric planes, biofuel planes,
 % biodiesel or electric trucks. Maersk has committed to carbon-neutrality by 2050
@@ -536,10 +535,10 @@ in plants that convert feedstocks to biofuels.
 % materials yet to do this ``at scale.''
 
 Deployment of a WWS energy system provides a second challenge:
-wind and solar (the \emph{WS} in W\emph{WS}) are intermittent sources of electricity,
+wind and solar are intermittent sources of electricity,
 while today's electricity sources 
 (coal, natural gas, nuclear, and hydro)
-are not.
+are constant.
 At present, electric grids accommodate only a fraction 
 of intermittent electricity, much less than 100\%.
 So a transition to wind and solar primary energy sources will require
@@ -548,14 +547,14 @@ to include electricity storage.
 
 There are several options for grid-scale electricity storage, including
 batteries and potential energy storage.
-Battery storage on the will require great quantities of rare earth metals 
+Battery storage will require great quantities of rare earth metals 
 and other exotic materials, 
-already listed on critical materials lists;
+already included on lists of critical raw materials;
 see Section~\ref{sec:resources_strong_sustainability}. 
-Gravitational potential energy could supply storage with nearly 100\% 
+Gravitational potential energy could supply energy storage with nearly 100\% 
 round-trip efficiency.
 Options for potential energy storage materials include 
-water (with a pumped hydro plant)
+water (with a pumped hydro plant)\index{pumped hydro}
 or concrete with a system such as Energy Vault~\cite{Energy-Vault:uz}.
 
 A third challenge comes from the water portion of WWS. 
@@ -595,10 +594,16 @@ He found that
 nearly 50 years for energy transitions 
 (i.e., the diffusion of energy sources and technologies) 
 to unfold''~\cite[p.~6595]{Fouquet:2010tq}.
+Given that we have only about a decade before we are committed to 1.5~\degC{} warming
+(Section~\ref{sec:GHGCC}), 
+50~years is too long.
+Large-scale investment to support 
+a full-scale transition to a carbon-free energy system 
+needs to start yesterday!
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Revisiting the IPARX identity}
+\section{Revisiting the IPARX equation}
 \label{sec:revisit_IPARX}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -606,8 +611,9 @@ Chapters~\ref{chap:planetary_boundaries}--\ref{chap:impact_intensity}
 show the evolution of all terms in the IPARX identity (Equation~\ref{eq:IPARX})
 over the period 1800--2019
 for the prime example of energy consumption and CO$_2$ emissions.
-It is instructive to quantify the direction and magnitude of changes 
-in the right-side terms (\:\!\mft{P}, \mft{A}, \mft{R}, and \mft{X}\:). 
+It is instructive to quantify the magnitude and direction of changes 
+in the right-side terms for the prime example of energy and CO$_2$ emissions
+(\:\!\mft{P}, \mft{A}, \REp{}, and \XCOtwo). 
 To do so, we introduce a rate version of the IPARX equation.
 
 In the rate version of the IPARX equation, each term is represented 
@@ -623,12 +629,13 @@ which terms are moving in an unsustainable direction (\mft{r} > 0).
 Each rate (\mft{r}\:\!) is calculated by
 
 \begin{equation} \label{eq:rate_calcs}
-  \mft{r}_\mft{y} = \left[ \left( \frac{\mft{y}_2}{\mft{y}_1} \right) ^ \frac{\text{1}}{\mft{t}_2 - \mft{t}_1} - \text{1} \right] \times \text{100} \; ,
+  \mft{r}_\mft{y} = \left[ \left( \frac{\mft{y}_2}{\mft{y}_1} \right) ^ \frac{\text{1}}{\mft{t}_2 - \mft{t}_1} - \text{1} \right] \times \text{100~\%/year} \; ,
 \end{equation}
 %
 where
 \mft{r} is the rate of change in \%/year, 
-\mft{y} is one of \mft{I}, \mft{P}, \mft{A}, \mft{R}, or \mft{X}, 
+\mft{y} is one of \ICOtwo{}, \mft{P}, \mft{A}, \REp{}, or \XCOtwo{}
+for the prime example of energy and CO$_2$ emissions, 
 subscript ``2'' indicates a later year, and 
 subscript ``1'' indicates an earlier year.
 
@@ -678,21 +685,21 @@ iparx_df <- impact %>%
     total_population = total_population / 1e9, # convert total population to billions
     gdppc_2017_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000 # convert $/person to k$/person
   ) %>% 
-  magrittr::set_names(c("Year", "\\mft{I} [Gt/yr]", "\\mft{P} [billions]", "\\mft{A} [k\\$/person]", 
-                        "\\mft{R} [MJ/\\$]", "\\mft{X} [Mt/EJ]"))
+  magrittr::set_names(c("Year", "\\ICOtwo{} [Gt/yr]", "\\mft{P} [billions]", "\\mft{A} [k\\$/person]", 
+                        "\\REp{} [MJ/\\$]", "\\XCOtwo{} [Mt/EJ]"))
 
 # Extract the data to be used in the equation
-r_I_220 <- iparx_df %>% trim_for_chapter(var = "\\mft{I} [Gt/yr]") %>% rate_func()
+r_I_220 <- iparx_df %>% trim_for_chapter(var = "\\ICOtwo{} [Gt/yr]") %>% rate_func()
 r_P_220 <- iparx_df %>% trim_for_chapter(var = "\\mft{P} [billions]") %>% rate_func()
 r_A_220 <- iparx_df %>% trim_for_chapter(var = "\\mft{A} [k\\$/person]") %>% rate_func()
-r_R_220 <- iparx_df %>% trim_for_chapter(var = "\\mft{R} [MJ/\\$]") %>% rate_func()
-r_X_220 <- iparx_df %>% trim_for_chapter(var = "\\mft{X} [Mt/EJ]") %>% rate_func()
+r_R_220 <- iparx_df %>% trim_for_chapter(var = "\\REp{} [MJ/\\$]") %>% rate_func()
+r_X_220 <- iparx_df %>% trim_for_chapter(var = "\\XCOtwo{} [Mt/EJ]") %>% rate_func()
 
-r_I_20 <- iparx_df %>% trim_for_chapter(var = "\\mft{I} [Gt/yr]", years = c(2000, 2019)) %>% rate_func()
+r_I_20 <- iparx_df %>% trim_for_chapter(var = "\\ICOtwo{} [Gt/yr]", years = c(2000, 2019)) %>% rate_func()
 r_P_20 <- iparx_df %>% trim_for_chapter(var = "\\mft{P} [billions]", years = c(2000, 2019)) %>% rate_func()
 r_A_20 <- iparx_df %>% trim_for_chapter(var = "\\mft{A} [k\\$/person]", years = c(2000, 2019)) %>% rate_func()
-r_R_20 <- iparx_df %>% trim_for_chapter(var = "\\mft{R} [MJ/\\$]", years = c(2000, 2019)) %>% rate_func()
-r_X_20 <- iparx_df %>% trim_for_chapter(var = "\\mft{X} [Mt/EJ]", years = c(2000, 2019)) %>% rate_func()
+r_R_20 <- iparx_df %>% trim_for_chapter(var = "\\REp{} [MJ/\\$]", years = c(2000, 2019)) %>% rate_func()
+r_X_20 <- iparx_df %>% trim_for_chapter(var = "\\XCOtwo{} [Mt/EJ]", years = c(2000, 2019)) %>% rate_func()
 
 # r_I_check should be same as r_I
 r_I_check_220 <- r_P_220 + r_A_220 + r_R_220 + r_X_220
@@ -740,7 +747,7 @@ print(xtable::xtable(iparx_df %>%
 \label{eq:IPARX_rate_with_numbers}
 \footnotesize
 \begin{tabular}{rccccccccc}
-     & $\mft{r}_\mft{I}$     & $\approx$ & $\mft{r}_\mft{P}$    & $+$ & $\mft{r}_\mft{A}$   &   $+$ & $\mft{r}_\mft{R}$                       & $+$ & $\mft{r}_\mft{X}$                         \\
+     & \rateICOtwo{} & $\approx$ & \rateP{}   & $+$ & \rateA{}   &   $+$ & \rateREp{}  & $+$ & \rateXCOtwo{} \\[6pt]
 1800--2019 & \Sexpr{rate_to_string(r_I_220)} & $\approx$ & \Sexpr{rate_to_string(r_P_220)} & $+$ & \Sexpr{rate_to_string(r_A_220)} &
                                     $-$ & \Sexpr{rate_to_string(abs(r_R_220))} & $+$ & \Sexpr{rate_to_string(r_X_220)}   \\
 2000--2019 & \Sexpr{rate_to_string(r_I_20)} & $\approx$ & \Sexpr{rate_to_string(r_P_20)} & $+$ & \Sexpr{rate_to_string(r_A_20)} &
@@ -752,9 +759,10 @@ print(xtable::xtable(iparx_df %>%
 Equation~\ref{eq:IPARX_rate_with_numbers} shows that carbon emissions 
 (Figure~\ref{fig:CarbonEmissionsGraph})
 are increasing 
-at an average rate of $\mft{r}_\mft{I} =$ \Sexpr{rate_to_string(r_I_220)}
+% at an average rate of $\mft{r}_\mft{I} =$ \Sexpr{rate_to_string(r_I_220)}
+at an average rate of \rateICOtwo{}~=~\Sexpr{rate_to_string(r_I_220)}
 since pre-industrial times (1800--2019)
-and $\mft{r}_\mft{I} =$ \Sexpr{rate_to_string(r_I_20)}
+and \rateICOtwo{}~=~\Sexpr{rate_to_string(r_I_20)}
 over the last two decades (2000--2019). 
 (The data in Table~\ref{tab:iparx_select_years} and 
 Equation~\ref{eq:IPARX_rate_with_numbers}

@@ -51,18 +51,29 @@
 \newcommand{\figwidth}{0.85\linewidth}
 % The "math font trick" to get Libre Caslon font in italics inside equations.
 \newcommand{\mft}[1]{\text{\emph{#1}}}
-\newcommand{\ICOtwo}{$\mft{I}_{\text{CO}_2}$}
+\newcommand{\ICOtwonodollar}{\mft{I}_{\text{CO}_2}}
+\newcommand{\ICOtwo}{$\ICOtwonodollar{}$}
 \newcommand{\ICOtwoparen}{(\ICOtwo{})}
 \newcommand{\Iparen}{(\:\!\mft{I}\:\!)}
 \newcommand{\Pparen}{(\:\!\mft{P}\;\!)}
 \newcommand{\Aparen}{(\;\!\mft{A}\:\!)}
 \newcommand{\Rparen}{(\:\!\mft{R}\;\!)}
-\newcommand{\REp}{$\mft{R}_{\mft{Ep}}$}
+\newcommand{\REpnodollar}{\mft{R}_{\mft{Ep}}}
+\newcommand{\REp}{$\REpnodollar$}
 \newcommand{\REpparen}{(\REp)}
 \newcommand{\Xparen}{(\;\!\mft{X}\:)}
-\newcommand{\XCOtwo}{$\mft{X}_{\text{CO}_2}$}
+\newcommand{\XCOtwonodollar}{\mft{X}_{\text{CO}_2}}
+\newcommand{\XCOtwo}{$\XCOtwonodollar$}
 \newcommand{\XCOtwoparen}{(\;\!\XCOtwo)}
 \newcommand{\Tparen}{(\mft{T}\:)}
+
+\newcommand{\rateICOtwo}{$\mft{r}_{\ICOtwonodollar{}}$}
+\newcommand{\rateP}{$\mft{r}_{\mft{P}}$}
+\newcommand{\rateA}{$\mft{r}_{\mft{A}}$}
+\newcommand{\rateREp}{$\mft{r}_{\REpnodollar{}}$}
+\newcommand{\rateXCOtwo}{$\mft{r}_{\XCOtwonodollar{}}$}
+
+
 % IPARX equation
 \newcommand{\iparx}{
 \footnotesize
