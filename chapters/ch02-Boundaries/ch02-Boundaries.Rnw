@@ -673,7 +673,7 @@ fit_sentence <- function(.df) {
 }
 @
 
-<<CarbonEmissionsGraph, fig.scap="World CO$_2$ emissions~\\Iparen{} vs.\\ time", fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, \\mft{I} in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
+<<CarbonEmissionsGraph, fig.scap="World CO$_2$ emissions~($\\mft{I}_{\\text{CO}_2}$) vs.\\ time", fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, $\\mft{I}_{\\text{CO}_2}$ in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                                     sheet = "data to plot")
 
