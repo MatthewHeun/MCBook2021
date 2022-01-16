@@ -575,7 +575,7 @@ per unit of energy it took to deliver that energy.
 
 \begin{equation}\label{eroi}
    \text{EROI} \equiv \frac{\text{Useful energy delivered to society}}
-               {\text{Energy required to obtain delivered energy}}.
+               {\text{Energy required to obtain delivered energy}} \; .
 \end{equation}
 %
 Because energy is the master resource, 
