@@ -772,12 +772,12 @@ for carbon emissions as shown in Table~\ref{tab:ipcc_scenarios}.
 
 \begin{table}
 \caption[IPCC CO$_2$ emissions scenarios]{IPCC CO$_2$ emissions scenarios. 
-                                          Expected warming is for the year 2100 and
-                                          is relative to the 1850--1900 global temperature average.}
+                                          Expected warming means future committed warming as of the year 2100
+                                          relative to the 1850--1900 global temperature average.}
 \centering
 \begin{tabular}{r l c}
 \toprule
-Name  & Details  & Expected warming [\degC] \\ 
+Scenario  & Details  & Expected warming [\degC] \\ 
 \midrule
 SSP1-1.9 & Emissions cut to net zero around 2050 & 1.4 \\
 SSP1-2.6 & Emissions cut to net zero around 2075 & 1.8 \\
@@ -811,7 +811,7 @@ energy and CO$_2$ emissions are the prime example of this book.
 
 \end{mcframe}
 
-<<Fig-SPM-10, fig.pos="h!", fig.scap="Impact of cumulative CO$_2$ emissions on global temperature", fig.cap="Impact of cumulative CO$_2$ emissions on global temperature. Temperature rise on the vertical axis is relative to the 1850--1900 global average. The vertical line labeled ``1850'' indicates the starting point for counting CO$_2$ equivalent emissions. The vertical line labeled ``1990'' indicates cumulative emissions to that date, 1411~GtCO$_2$e. The vertical line labeled ``2019'' indicates cumulative emissions to that date, 2411~GtCO$_2$e. The vertical line labeled ``1.5~\\degC'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~\\degC{} warming by 2100, 2911~GtCO$_2$e. The current carbon budget is the distance between the ``2019'' line and the ``1.5~\\degC'' line, or 500~GtCO$_2$e. The carbon budget in 1990 was the distance between the ``1990'' line and the ``1.5~\\degC'' line, namely 1500~GtCO$_2$e. The red lines represent emissions under various future scenarios; see Table~\\ref{tab:ipcc_scenarios}. The relationship between future warming and cumulative emissions is only weakly dependent upon the emissions scenario. \\emph{Sources}: This figure was inspired by Figure~SPM.10 in the IPCC report \\emph{Climate Change 2021: The Physical Science Basis}~\\cite{IPCC:2021tk}. Data are available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\url{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}.">>=
+<<Fig-SPM-10, fig.pos="h!", fig.scap="Impact of cumulative CO$_2$ emissions on global temperature", fig.cap="Impact of cumulative CO$_2$ emissions on global temperature. Temperature rise is relative to the 1850--1900 global average temperature. The line labeled ``1850'' indicates the starting point for counting CO$_2$ equivalent emissions. The line labeled ``1990'' indicates cumulative emissions to that date, 1411~GtCO$_2$e. The line labeled ``2019'' indicates cumulative emissions to that date, 2411~GtCO$_2$e. The line labeled ``1.5~\\degC'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~\\degC{} warming by 2100, 2911~GtCO$_2$e. The current carbon budget is the distance between the ``2019'' line and the ``1.5~\\degC'' line, or 500~GtCO$_2$e. The carbon budget in 1990 was the distance between the ``1990'' line and the ``1.5~\\degC'' line, namely 1500~GtCO$_2$e. The red lines represent emissions under various future scenarios; see Table~\\ref{tab:ipcc_scenarios}. The relationship between future warming and cumulative emissions is only weakly dependent upon the emissions scenario. \\emph{Sources}: This figure was inspired by Figure~SPM.10 in the IPCC report \\emph{Climate Change 2021: The Physical Science Basis}~\\cite[p.~SPM-37]{IPCC:2021tk}. Data are available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\url{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}.">>=
 scenario_size <- 0.3
 spm_10_data <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "SPM_10.xlsx"),
                                   sheet = "data to plot")
