@@ -312,17 +312,14 @@ Petra Nova, the only CCS plant in the U.S., disposed of the CO$_2$ it captured
 by injecting it into oil fields for enhanced oil recovery.
 In 2020, low oil prices made this disposal infeasible, forcing Petra Nova to shut down.
 This story illustrates the economic interrelation(s) among primary energy sources.
-
 Second, a fossil-fuel power plant fitted with CCS technology 
 must ensure that CO$_2$ emissions remain buried. 
 If the CO$_2$ escapes to the atmosphere, the effort is ineffective.
-
 Third, there are limited locations with the required underground geological formations 
 for CCS.
-
 Finally, CCS is not applicable to CO$_2$ emissions from transportation,
 which is the plurality of CO$_2$ emissions; 
-see Table \ref{tab:corrected_co2_emissions}.
+see Table~\ref{tab:corrected_co2_emissions}.
 It would be impractical to fit every car with a ``CO$_2$ diaper''
 to collect CO$_2$ emissions for later injection underground.
 
@@ -337,31 +334,34 @@ storing it in inert form.
 One form of carbon sequestration is simply planting billions of trees.
 A massive, worldwide afforestation effort would be required to extract
 the additional carbon that has been added to the atmosphere since the industrial revolution.
-In such a scheme, trees consume CO$_2$, and store it in their biomass.
-Unfortunately, if the trees are burned or when they die and decompose, 
+In such a scheme, trees consume CO$_2$ and store it in their biomass.
+Unfortunately, if the trees are burned or die and decompose, 
 the CO$_2$ is returned to the atmosphere.
 
-Alternatively, \emph{direct air capture} extracts CO$_2$ from the atmosphere 
-directly, typically using huge banks of fans and an adsorbent.
+Alternatively, \emph{direct air capture} extracts CO$_2$ from the atmosphere,
+typically using huge banks of fans and an adsorbent.
 Direct air capture is extremely energy intensive because of the heat needed
 to regenerate the adsorbents. 
 Additional energy consumption for sequestration
 lowers the net EROI of fossil energy production; see Section~\ref{sec:masterE}.
 Additionally, because atmospheric CO$_2$ concentrations are low, massive amounts
-of air need to be moved, which makes operating the fans monetarily expensive 
-and energy intensive.
-Thirdly, some carbon sequestration technologies require expensive and/or rare
+of air need to be moved, which makes operating the fans 
+both 
+monetarily expensive 
+and
+energy intensive.
+Some carbon sequestration technologies require expensive and/or rare
 materials.
-Various schemes have been proposed for how to alleviate some or all of these 
-problems but none have been proven to work at scale.
+Various schemes have been proposed for how to alleviate some or all of these problems,
+but none have been proven to work at scale.
 
-One additional problem with carbon sequestration is what form should be used
-ultimately to store the carbon. 
-Geologic storage converts CO$_2$ to liquid form at high pressure and pumps it
-into underground storage.
+One additional problem with carbon sequestration is selecting the form for 
+ultimate storage. 
+Geologic storage converts CO$_2$ to liquid form at high pressure and pumps it underground.
 Biologic storage is when carbon is trapped in plant matter, soil, or aquatic
 environments.
-Perhaps, CO$_2$ could be converted to a stable chemical structure such as graphene.
+Some have suggested storing CO$_2$ in a stable chemical structure such as graphene.
+No consensus has emerged to date.
 
 
 %++++++++++++++++++++++++++++++
@@ -379,17 +379,17 @@ contaminants out of the environment.
 
 The climate change equivalent of a product takeback is the carbon takeback. 
 Under a CTBO, fossil fuel producers and importers would be required 
-to permanently sequester the carbon emitted from the fossil fuels they sell or import.
+to permanently sequester the CO$_2$ emitted from the fossil fuels they sell or import.
 Industries that emit greenhouse gases (cement making, for example)
 would also be required to sequester their emissions.
 A CTBO does not specify \emph{how} the sequestration must occur,
-but it specifies who is obliged to do the sequestration. 
+but it specifies who is obliged to perform the sequestration. 
 Under a CTBO, fossil fuel producers and other emitting industries
 would be free to pass the cost of carbon sequestration
-to fossil fuel users and other product consumers (cement, for example),
+to fossil fuel users and other product purchasers (cement buyers, for example),
 thereby internalizing the cost of CO$_2$ emissions in the economy.
 Consumers would still be free to purchase and use fossil fuels, 
-but under a CTBO the cost of externalities would be evident
+but under a CTBO, the cost of externalities would be evident
 in the price. 
 
 A progressive CTBO could be phased over several years.
@@ -403,7 +403,7 @@ greenhouse gases emitted from the use of their product.
 There are several implementation challenges for CTBOs.
 First, we will need to develop the expertise to 
 sequester carbon on a scale never seen before.
-At present, only 0.1\% of emitted carbon in sequestered~\cite[p.~2777]{Jenkins:2021tg}.
+(At present, only 0.1\% of emitted carbon in sequestered~\cite[p.~2777]{Jenkins:2021tg}.)
 Second, policymakers will need to develop rules and laws for CTBOs, 
 and enforcement mechanisms will need to be implemented.
 Finally, lower-carbon alternatives will need to be developed for many 
@@ -435,7 +435,7 @@ enable carbon emitters to shift the responsibility for implementing
 emissions reductions.
 
 Both carbon taxes and carbon offsets are 
-financial approaches to encourage transitions to a low-carbon energy supply.
+financial approaches that encourage transitions to a low-carbon energy supply.
 Both taxes and offsets nudge consumer and producer behaviors
 in the direction of low-carbon energy supply.
 
