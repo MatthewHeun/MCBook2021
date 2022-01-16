@@ -22,8 +22,8 @@ economic affluence, the \mft{A} term in the IPARX equation (Equation~\ref{eq:IPA
 repeated below for convenience). 
 Because the economy is society's metabolism, economic growth and increasing affluence
 mean increasing use of natural resources and emission of wastes. 
-This chapter explores the sustainability implications of resource acquisition and consumption, 
-which are reflected in the \mft{R} variable.
+This chapter explores the sustainability implications of acquisition and consumption of resources, 
+which, when divided by GDP, becomes the resource intensity of the economy~\Rparen{}.
 
 \begin{equation} 
   \iparx            \tag{\ref{eq:IPARX}}
@@ -51,9 +51,29 @@ When discussing resource use, knowledge of several key terms is helpful.
 
 
 %..............................
+\paragraph{Resources}
+%..............................
+
+We use the term \emph{resource} to mean a primary input to the economy. 
+As such, a resource is something obtained from the natural world.
+It is something provisioned by the ecosystem, to use the language 
+of Section~\ref{sec:ecosystem_services}.
+Timber is a resource. Iron ore is a resource. Water is a resource.
+Each resource can be transformed many times \emph{within} the economy.
+Timber might become 2$\times$4s, or plywood, or toothpicks, or mulch.
+Iron ore might become steel, then sheet metal, and then a toaster.
+Water might become ice, a sports drink, or Play-Doh.
+The process of pulling a resource into the economy is called ``extraction.''
+Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used
+for productive purposes.
+
+
+%..............................
 \paragraph{Intensity vs.\ efficiency}
 %..............................
 
+An efficiency is a ratio of output to input, 
+where both output and input have the same units.
 An intensity is like an efficiency, except the numerator and denominator have 
 different units.
 A furnace that burns a quantity of natural gas that releases 100 BTUs of heat might
@@ -71,69 +91,17 @@ In contrast, an \emph{intensity} has \emph{different} units
 for output and input, for numerator and denominator.
 A vehicle's fuel economy, measured in miles per gallon, is an intensity.
 Carbon emissions per ton of freight moved along one mile is an intensity.
-It is \emph{intensive} because total carbon emissions depend on the tons
-moved and the total km traveled.
 
 
 %..............................
-\paragraph{Primary vs.\ Final vs.\ useful}
+\paragraph{Resource intensity of economic activity}
 %..............................
 
-Imagine a coal-fired power plant that generates electricity to charge
-an electric car. 
-Coal is the \emph{primary} energy source. 
-The electricity sold to consumers is considered to be a \emph{final} energy carrier.%
-\footnote{
-  Note that the term ``final'' comes from economics,
-  where electricity purchases by consumers are 
-  counted in ``final demand.''
-}
-%
-Hydro, solar, and wind are primary energy sources. 
-So are crude oil, and methane.
-In contrast, gasoline is a refined fuel. 
-As such, it is the \emph{product} of 
-a refinery that converts crude oil to refined fuels. 
-Likewise, natural uranium is a primary energy carrier that must be converted into 
-fissionable uranium fuel before it can be used in a nuclear power plant to generate electricity.
-The oil refinery or nuclear-fuel enrichment process can be evaluated for their
-energy return on investment (EROI); 
-see Section~\ref{sec:masterE}.
-
-Useful energy is created from final energy by devices owned by the final energy purchaser. 
-For example, apartment dwellers and homeowners purchase electricity (final energy)
-that flows into an LED lamp (the device) which creates light (the useful energy).
-Or car owners purchase gasoline (final energy) that flows into a car's engine (the device)
-and creates motion along a roadway (kinetic energy, the useful energy product).
-
-
-%..............................
-\paragraph{Resources}
-%..............................
-
-We define a \emph{resource} as a primary input to the economy. 
-As such, a resource is something \emph{extracted} from the natural world.
-It is something provisioned by the ecosystem, to use the language 
-of Section~\ref{sec:ecosystem_services}.
-Timber is a resource. Iron ore is a resource. Water is a resource.
-Each resource can be transformed many times \emph{within} the economy.
-Timber might become 2$\times$4s, or plywood, or toothpicks, or mulch.
-Iron ore might become steel, then sheet metal, and then a toaster.
-Water might become ice, a sports drink, or Play-Doh.
-The process of pulling a resource into the economy is called ``extraction.''
-Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used
-for productive purposes.
-
-
-%..............................
-\paragraph{Resource intensity of the economy}
-%..............................
-
-The \mft{R} term in Equation \ref{eq:IPARX} is the resource intensity of the economy.
-\mft{R} is defined (for any time period, but usually one year) as
+The \mft{R} term in Equation \ref{eq:IPARX} is the resource intensity of economic activity.
+\mft{R} is defined as
 %
 \begin{equation}\label{eq:R}
-  \mft{R} \equiv \frac{\text{total resources extracted}}{\text{GDP}} \; .
+  \mft{R} \equiv \frac{\text{resource extraction rate}}{\text{GDP}} \; .
 \end{equation}
 %
 \mft{R} measures the total resources used by the economy to create a
@@ -166,7 +134,7 @@ This chapter discusses sustainability implications for a few resources,
 with energy providing the prime example of resource intensity of the economy. 
 
 
-<<total_material_use, fig.scap="World material use", fig.cap="World material use. ``Construction'' includes all construction minerals. ``Ores'' includes all industrial minerals. ``Fossil'' includes all fossil energy carriers. ``t'' is tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
+<<total_material_use, fig.scap="World material use", fig.cap="World material use. ``Ores'' includes all industrial minerals. ``Construction'' includes all construction minerals. ``t'' is metric tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
 krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
                                 sheet = "data to plot") %>% 
   dplyr::rename(
@@ -224,8 +192,44 @@ There is no escaping the dependence on resources to run an economy,
 even in the service sector. 
 
 
+%..............................
+\paragraph{Primary vs.\ final vs.\ useful energy}
+%..............................
+
+Imagine a coal-fired power plant that generates electricity to charge
+an electric car. 
+Coal is the \emph{primary} energy source. 
+The electricity sold to consumers is considered to be a \emph{final} energy carrier.%
+\footnote{
+  Note that the term ``final'' comes from economics,
+  where electricity purchases by consumers are 
+  counted in ``final demand.''
+}
+%
+Hydro, solar, and wind are primary energy sources. 
+So are crude oil and methane.
+In contrast, gasoline is a refined fuel. 
+As such, gasoline is the \emph{product} of 
+a refinery that converts crude oil to refined fuels. 
+Likewise, natural uranium is a primary energy carrier that must be converted into 
+fissionable uranium fuel before it can be used in a nuclear power plant to generate electricity.
+The oil refinery or nuclear-fuel enrichment process can be evaluated for their
+energy return on investment (EROI); 
+see Section~\ref{sec:masterE}.
+EROI is a type of energy efficiency that measures energy output
+per energy input from other portions of the economy.
+
+Useful energy is created from final energy by devices owned by the final energy purchaser. 
+For example, car owners purchase gasoline (final energy) that flows into a car's engine (the device)
+and creates motion along a roadway (kinetic energy, the useful energy product).
+Or apartment dwellers purchase
+electricity (final energy) that flows into 
+a mixer (the device)
+to create kinetic energy (useful energy) of ingredients in a recipe.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Strong and weak sustainability for resources}%% extraction and consumption}
+\section{Strong and weak sustainability for resources}
 \label{sec:strong_weak_sust}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -382,7 +386,7 @@ material_per_capita %>%
 
 
 
-<<per_gdp_material_use, fig.scap="World material use per GDP", fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of construction materials, ores, and fossil fuels scales quite well with GDP and shows no growth on this graph, as the thickness of those bands varies little over time. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<per_gdp_material_use, fig.scap="World material use per GDP", fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of ores (industrial minerals), fossil fuels, and construction minerals scales quite well with GDP and shows little change on this graph, as the thickness of those bands varies little over time. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 material_per_gdp <- krausmann %>% 
   dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>% 
   dplyr::mutate(
@@ -625,7 +629,7 @@ to consuming renewable resources
 is an important aspect of sustainability, 
 for both the weak \emph{and} the strong versions.%
 \footnote{
-  In some cases, renewable resources still have environmental impacts.
+  In some cases, renewable resources still have sustainability impacts.
   For example, biomass is a renewable energy source, 
   but burning wood can lead to reduced air quality.
 }
@@ -1012,22 +1016,22 @@ appears to be good news for sustainability
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that 
 the most important cause of decreasing primary energy consumption per unit GDP
 is declining consumption of biomass.
-Ironically, the decreases in \mft{R} are coming from reduction in per-GDP consumption 
+Ironically, the decreases in \REp{} are coming from reduction in per-GDP consumption 
 of a type of energy that is possibly sustainable, biomass!
 
 We can use these data to learn things about the IPARX terms
 (Equation~\ref{eq:IPARX}) and CO$_2$ emissions.
 A narrowed version of Equation~\ref{eq:IPARX},
-considers only CO$_2$ emissions on the left-hand side of the equation
-and the energy intensity of the economy~\REpparen{}
+considers only CO$_2$ emissions on the left-hand side of the equation~($\mft{I}_{\text{CO}_2}$)
+and the energy intensity of economic activity~\REpparen{}
 instead of \mft{R} on the right-hand side.
-When \REpparen{} falls, downward pressure is placed on CO$_2$ emissions.
+When \REp{} falls, downward pressure is placed on CO$_2$ emissions.
 Whether CO$_2$ emissions \emph{actually} decrease
 depends on the rates of increase or decline of the other terms
 on the right side of Equation~\ref{eq:IPARX}.
 Figure~\ref{fig:CarbonEmissionsGraph} shows that CO$_2$ emissions have been growing over time.
 So, other terms on the right side of the IPARX identity
-are growing faster than energy intensity of the economy is declining;
+must be growing collectively faster than energy intensity of the economy is declining;
 see Section~\ref{sec:revisit_IPARX}.
 
 
@@ -1098,8 +1102,8 @@ as the UK is doing now.
 Another way to slow down the inevitable march of time
 along logistic curves for finite resources is to transition
 economies to use fewer resources per unit of GDP produced,
-that is to reduce the resource intensity of the economy~\Rparen{}.
-Reduction of resource intensity of the economy is sometimes called \emph{dematerialization}.
+that is to reduce the resource intensity of economic activity~\Rparen{}.
+Reduction of resource intensity of economic activity is sometimes called \emph{dematerialization}.
 Reducing \mft{R} will reduce resource consumption but only if
 GDP stays constant or grows more slowly than the
 rate at which \mft{R} decreases.
