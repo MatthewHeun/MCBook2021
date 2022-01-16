@@ -176,36 +176,16 @@ print(xtable::xtable(US_CO2_by_sector, digits = c(0, 0, 0, 1),
 The yearly rate of world CO$_2$ emitted since 1800 
 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
 Annual primary energy consumption is shown in Figure~\ref{fig:PrimaryEnergyGraph}.
-The ratio of the lines in Figures~\ref{fig:CarbonEmissionsGraph} and
-\ref{fig:PrimaryEnergyGraph} is the carbon intensity of primary energy,
+The ratio of the line in Figure~\ref{fig:CarbonEmissionsGraph} and
+the top of Figure~\ref{fig:PrimaryEnergyGraph} 
+is the carbon intensity of primary energy~\XCOtwoparen{},
 as shown in Figure~\ref{fig:ImpactIntensityGraph}.
 The line in Figure~\ref{fig:ImpactIntensityGraph}
 demonstrates the long transition
 from traditional biofuels to fossil fuels
 evident in Figure~\ref{fig:PrimaryEnergyGraph}.
 
-The biofuel-to-fossil fuel transition has
-significant sustainability implications.
-Traditional biofuels are carbon neutral,
-because any CO$_2$ released by combustion was
-already sequestered into the biomass as the plants grew.
-Fossil fuels are not carbon neutral;
-their combustion releases CO$_2$ that was sequestered millions of years ago.
-As the world transitioned away from traditional biofuels toward fossil fuels,
-the carbon intensity of energy rose.
-
-On the other hand, use of traditional biofuels results in deforestation, erosion,
-and other negative environmental effects (as well as being inefficient from an EROI 
-perspective, as shown in Table~\ref{tab:eroi}).
-The transition away from biofuel consumption results in cleaner urban air (especially after 
-the transition from coal to natural gas for residential heating) as noted by~\cite{Gordon2016}.
-Because having a healthy environment is what economists call a ``normal'' good,
-\mft{I} should fall as \mft{A} rises, in general.
-In \emph{some} ways, the transition away from traditional biofuels \emph{did} result
-in reduced environmental impact, neglecting climate change concerns.
-% Referencing Figure 5.3, the falling biomass PER GDP, doesn't seem appropriate here.
-
-<<ImpactIntensityGraph, fig.scap="Carbon intensity of energy~(\\;\\!$\\mft{X}_{\\text{CO}_2}$) vs.\\ time", fig.cap="Carbon intensity of energy~(\\;\\!$\\mft{X}_{\\text{CO}_2}$). The line represents the ratio of Figure~\\ref{fig:CarbonEmissionsGraph} and Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
+<<ImpactIntensityGraph, fig.scap="Carbon intensity of primary energy~\\XCOtwoparen{} vs.\\ time", fig.cap="Carbon intensity of primary energy~\\XCOtwoparen{}. The line represents the ratio of the line in Figure~\\ref{fig:CarbonEmissionsGraph} and the top of Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 carbon_intensity <- dplyr::inner_join(
   CO2_emissions,
   primary_energy %>%
@@ -228,6 +208,27 @@ carbon_intensity %>%
   MKHthemes::xy_theme()
 @
 
+The biofuel-to-fossil-fuel transition has
+significant sustainability implications.
+Traditional biofuels are carbon neutral,
+because any CO$_2$ released by combustion was
+already sequestered into the biomass as the plants grew.
+Fossil fuels are not carbon neutral;
+their combustion releases CO$_2$ that was sequestered millions of years ago.
+As the world transitioned away from traditional biofuels toward fossil fuels,
+the carbon intensity of energy rose.
+
+On the other hand, use of traditional biofuels results in deforestation, erosion,
+and other negative environmental effects (as well as being inefficient from an EROI 
+perspective, as shown in Table~\ref{tab:eroi}).
+The transition away from biofuel consumption results in cleaner urban air (especially after 
+the transition from coal to natural gas for residential heating) as noted by~\cite{Gordon2016}.
+Because having a healthy environment is what economists call a ``normal'' good,
+\mft{I} should fall as \mft{A} rises, in general.
+In \emph{some} ways (but not in terms of CO$_2$ emissions and climate change),
+the transition away from traditional biofuels \emph{did} result
+in reduced environmental impact.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Reducing the carbon intensity of energy}
@@ -236,33 +237,37 @@ carbon_intensity %>%
 
 Equation~\ref{eq:IPARX} shows that reducing any of the right-hand side terms to 0
 will eliminate CO$_2$ emissions.
-That is, if population~\Pparen{}, 
+That is, if any of 
+population~\Pparen{}, 
 affluence~\Aparen{},
-energy intensity of the economy ($R_{Ep}$, the prime example for \mft{R})
-\emph{or} carbon intensity of energy $X_{CO_2}$ (the prime example for \mft{X})
-go to zero,
-CO$_2$ emissions will be eliminated.
+energy intensity of economic activity (\REp{}, the prime example for \mft{R}),
+\emph{or} 
+carbon intensity of primary energy (\;\!\XCOtwo{}, the prime example for \mft{X}\:)
+goes to zero,
+CO$_2$ emissions~() will be eliminated.
 Few people want to reduce population~\Pparen{} or affluence~\Aparen{}.
-The primary energy intensity of the economy, $R_{Ep}$, is declining
+The primary energy intensity of the economy~\REpparen{} is declining
 (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}),
-but not as fast as population (Figure~\ref{fig:PopulationGraph})
-and affluence (Figure~\ref{fig:AffluenceGraph-Nordhaus}) are growing.
+but not as fast as population (\mft{P}, Figure~\ref{fig:PopulationGraph}) and
+affluence (\mft{A}, Figure~\ref{fig:AffluenceGraph-Nordhaus})
+are growing. 
 By the process of elimination, 
-reducing the carbon intensity of energy is often considered to be the 
+reducing the carbon intensity of primary energy~\XCOtwoparen{} is often considered to be the 
 only politically and socially viable way to move in a sustainable direction
-with respect to our prime examples, energy and CO$_2$ emissions.
-(Note that other sustainability issues are likely to remain!)
+with respect to the prime example of energy and CO$_2$ emissions.
 
-Figure~\ref{fig:ImpactIntensityGraph} shows that the carbon intensity of energy
+Figure~\ref{fig:ImpactIntensityGraph} shows that 
+the carbon intensity of primary energy~\XCOtwoparen{}
 rose dramatically from 1800--1960, 
-as use of fossil fuels came to dominate the world energy story.
-(See Figure~\ref{fig:PrimaryEnergyGraph}.)
+as use of fossil fuels came to dominate the world energy story;
+see Figure~\ref{fig:PrimaryEnergyGraph}.
 Since 1960, the carbon intensity of energy
-has hovered around 63 Mt CO$_2$/EJ.
-Thus, for the last 60 years, the carbon intensity of energy has been stubbornly constant.
+has hovered around 63~MtCO$_2$/EJ.
+Thus, for the last 60~years, \XCOtwo{} has been stubbornly constant
+and far too high for environmental sustainability (both weak and strong).
 It appears that eliminating CO$_2$ emissions by significantly reducing
-the carbon intensity of energy ($X_{CO_2}$) will require unprecedented changes
-to the world's primary supply.
+\XCOtwo{} will require unprecedented changes
+to the world's primary energy supply.
 But how?
 
 
@@ -272,7 +277,7 @@ But how?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 There are at least five often-discussed options for
-transitioning to a low carbon intensity energy supply:
+transitioning to a low carbon energy supply:
 (a) carbon capture and storage,
 (b) carbon sequestration,
 (c) carbon takeback obligation,
