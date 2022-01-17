@@ -429,6 +429,7 @@ demo_transition %>%
   ggplot2::theme(axis.text.x = ggplot2::element_blank(),
                  axis.ticks.x = ggplot2::element_blank())
 @
+     \caption{Crude birth and death rates.}
      \label{fig:dtt_crude_rates}
      \end{subfigure}
 
@@ -452,6 +453,7 @@ demo_transition %>%
   ggplot2::theme(axis.text.x = ggplot2::element_blank(),
                  axis.ticks.x = ggplot2::element_blank())
 @
+     \caption{Total population.}
      \label{fig:dtt_population}
      \end{subfigure}
 
@@ -499,6 +501,7 @@ pop_pyramids %>%
                  strip.text.x = ggplot2::element_blank())
                  # strip.text.x = ggplot2::element_text(margin = ggplot2::margin(b = 2.0)))
 @
+     \caption{Population pyramids at each stage.}
      \label{fig:dtt_pop_pyramid}
      \end{subfigure}
         \caption[Demographic transition theory]

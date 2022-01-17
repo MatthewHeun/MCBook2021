@@ -527,18 +527,18 @@ erodable_limit_data %>%
 
 Figure~\ref{fig:GAfig21} is a conceptual representation of four relationships between
 limits or boundaries and human effects on the environment. 
-In subfigure~(a), there is no effective limit; human growth can continue unimpeded. 
+In Figure~\ref{fig:GA1}, there is no effective limit; human growth can continue unimpeded. 
 However, Section~\ref{sec:exp} shows that growth can't continue forever on a finite 
 planet; there is always an eventual limit. 
-In subfigure~(b), the boundary is hard and can never be crossed. 
+In Figure~\ref{fig:GA2}, the boundary is hard and can never be crossed. 
 For instance, the extractable fraction of a mineral in the Earth's crust can't, 
 by definition, exceed 100\%. 
-In subfigure~(c), exceeding the boundary is possible, for short times, but the boundary 
+In Figure~\ref{fig:GA3}, exceeding the boundary is possible, for short times, but the boundary 
 is robust. 
 That is, it recovers. 
 Renewable resources like grazing land, fisheries, timber, and aquifers \emph{can}
 behave in this way. 
-Lastly, in subfigure~(d), exceeding the boundary causes a long-term reduction in the 
+Lastly, in Figure~\ref{fig:GA4}, exceeding the boundary causes a long-term reduction in the 
 capacity of the ecosystem to provide ecosystem services. 
 As above, renewable resources like grazing land, fisheries, timber, and aquifers
 \emph{can} have this behavior, if their capacity is exceeded too much or for too long.
