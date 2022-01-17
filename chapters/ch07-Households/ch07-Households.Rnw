@@ -103,15 +103,14 @@ far beyond the site of the demand.
 Thus, decisions made by households have sustainability implications
 far beyond the walls of each abode.
 
-However, per-dwelling energy consumption has been rather flat from the 1970 onward.
+Total U.S.\ energy consumption by households 
+has been climbing slowly since the 1970s; 
+see Figure~\ref{fig:TotalHouseholdEnergyConsumption}.
 Increasing energy efficiency of appliances and improvements to building envelopes 
 (roof, walls, windows, and base of a dwelling)
-have been offset by rising home sizes.
-That said, \emph{total} residential energy consumption has increased,
-due to an increase in the total number of dwellings.
-Figures~\ref{fig:TotalHouseholdEnergyConsumption}
-and~\ref{fig:AverageHouseholdEnergyConsumption}
-show these trends.
+have decreased the energy consumption per housing unit;
+see Figure~\ref{fig:AverageHouseholdEnergyConsumption}.
+But the number of housing units is rising.
 
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -130,7 +129,7 @@ The next results are expected in 2022 for survey year 2020.
 
 <<TotalHouseholdEnergyConsumption, fig.scap="Household energy consumption by energy type", fig.cap="Total U.S.\\ household final energy consumption by energy type. Note: Fuel oil and Propane are aggregated into Petroleum. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:th}.">>=
 total_household_energy_consumption <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "Table_2.2_Residential_Sector_Energy_Consumption.xlsx"),
-                                                  sheet = "data to plot")
+                                                         sheet = "data to plot")
 
 # Create graph
 total_household_energy_consumption %>% 
@@ -275,7 +274,7 @@ Figure~\ref{fig:PersonsPerHousehold}
 shows that the number of occupants per dwelling
 is falling over time.
 
-Taken together, Figures~\ref{fig:EnergyConsAndHomeSize} and~\ref{fig:NewHousingSize}
+Taken together, Figures~\ref{fig:NewHousingSize} and~\ref{fig:EnergyConsAndHomeSize}
 would suggest that residential energy consumption per dwelling is rising through time.
 However, Figure~\ref{fig:AverageHouseholdEnergyConsumption} shows that
 per-household energy consumption is falling over time.
@@ -288,7 +287,7 @@ household energy consumption up slightly from 1970--today;
 see Figure~\ref{fig:TotalHouseholdEnergyConsumption}.
 
 
-<<NewHousingSize, fig.scap="Average size of newly-constructed homes", fig.cap="Average size of newly-constructed U.S.\\ homes. \\emph{Source}: \\citet{United-States-Census-Bureau:2021tq}.">>=
+<<NewHousingSize, fig.scap="Average size of newly constructed homes", fig.cap="Average size of newly constructed U.S.\\ homes. \\emph{Source}: \\citet{United-States-Census-Bureau:2021tq}.">>=
 average_housing_sizes <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "housing_sizes.xlsx"),
                                                            sheet = "data to plot")
 
@@ -379,12 +378,12 @@ When buying a home, some purchasers can choose among
 urban, suburban, and rural locations, 
 with important sustainability implications.
 Living in an urban center can reduce average transport distances. 
-Conversely, living in the suburbs or in rural areas can mean
+Living in the suburbs or in rural areas can mean
 increased fuel use and CO$_2$ emissions for transport. 
 
 Zooming out, the latitude of the home may make a 
 larger impact on household sustainability
-than the urban/suburban/rural decision.
+than urban, suburban, or rural location.
 Homes at high latitudes require heating. 
 Homes at low latitudes are often fitted with air conditioning.
 Both heating and air conditioning require energy and, 
@@ -409,11 +408,11 @@ and seasonal variations can be
 on the order of 30~\degC~\cite{Experience-Grand-Rapids:vs}.%
 \footnote{
    Example temperature variations are for Grand Rapids, Michigan, USA, where
-   the average daily high temperature in July is 28~\degC{} and is 
-   $-$2~\degC{} in January. 
+   the average daily high temperature in July is 28~\degC{} and in January is 
+   $-$2~\degC. 
    Incidentally, the average daily low temperature in January is $-$10~\degC.
 }
-In contrast, the range of human comfort is between 20 and 23~\degC{} (only 3~\degC), 
+In contrast, the range of human comfort is between 20~\degC{} and 23~\degC{} (only 3~\degC), 
 depending on humidity and clothing.
 
 Residential heating and cooling reduces the temperature variation
@@ -421,7 +420,7 @@ inside a dwelling compared to the outdoors,
 providing thermal comfort to the occupants 
 to enable work, play, dining, and entertainment.
 Figure~\ref{fig:average_residential_energy} shows that
-on average across the U.S.
+on average across the U.S.,
 thermal comfort\index{thermal comfort}
 (that is, Space heating and Space cooling)
 is the purpose of 
@@ -494,7 +493,7 @@ further CO$_2$ emissions occur.
 Hygiene is a significant 
 cause of energy consumption in the U.S. 
 Figure~\ref{fig:average_residential_energy} shows that hygiene
-(Water heating and Laundry) used 21.9\%
+(Water heating and Laundry) demanded 21.9\%
 of U.S.\ final energy consumption in 2015.
 
 
@@ -509,7 +508,7 @@ Indoor lighting enables work, play, and entertainment
 before sunrise and after sunset. 
 In many areas of the world, artificial indoor lighting 
 extends the economically active portion of the day
-several hours beyond daylight hours. 
+several hours beyond dusk. 
 
 Artificial interior lighting is a significant 
 cause of electricity consumption in most parts of the world. 
@@ -526,7 +525,7 @@ Energy consumption by households is a significant sustainability challenge.
 If the goal is to provide the same energy services in households
 (space heating and cooling, hygiene, and lighting) 
 with less energy consumption, 
-efficiency plays a big role.
+efficiency plays a big role in becoming more sustainable.
 This section discusses sustainability challenges in each 
 energy service discussed above.
 
@@ -539,8 +538,8 @@ energy service discussed above.
 A sustainability challenge emerges
 from dwelling size.
 Families enjoy the comfort and social status of spacious dwellings, 
-but large dwellings consume more energy.
-(See Figure~\ref{fig:EnergyConsAndHomeSize}.)
+but large dwellings consume more energy;
+see Figure~\ref{fig:EnergyConsAndHomeSize}.
 A sustainability challenge associated with dwelling size is
 ``how can we build small dwellings that are both comfortable and
 confer social status?''
@@ -557,7 +556,7 @@ Furthermore, high population density is often accompanied by
 negative social dynamics.
 (See Chapters~\ref{chap:transportation} and \ref{chap:land_use_urban_planning}
 for more discussion of these tradeoffs.)
-A sustainability challenges associated with home location is 
+A sustainability challenges associated with household location is 
 ``how can we design cities that retain the advantages of urban living
 without the drawbacks?''
 
@@ -596,7 +595,7 @@ Halving the amount of heat that passes means doubling the thickness of the
 insulation.
 Thicker and thicker layers of insulation are needed to obtain ever-smaller 
 fractions of heat transfer reduction. 
-Thus, we see that insulation is subject to diminishing returns in its effectiveness
+Thus, insulation is subject to diminishing returns in its effectiveness,
 and there is a practical and economic optimum level of insulation.
 The Energy Star program recommends levels of roof, wall, and
 floor insulation~\cite{U.S.-Department-of-Energy:aa}.
@@ -636,8 +635,8 @@ with minimal embodied energy?''
 %..............................
 
 Like all energy consumption,
-energy consumption for heating and cooling has sustainability implications.
-(See Chapter~\ref{chap:resource_intensity}.)
+energy consumption for heating and cooling has sustainability implications;
+see Chapter~\ref{chap:resource_intensity}.
 Furnace efficiency\index{efficiency!furnaces} is quantified as
 Annual Fuel Utilization Efficiency~(AFUE)\index{Annual Fuel Utilization Efficiency (AFUE)},
 the percentage of useful heat output
@@ -646,7 +645,7 @@ accounting for transient effects during operation
 across the year.
 Any heat that leaves the home with the exhaust products reduces AFUE.
 In the absence of heat lost via exhaust, 
-the AFUE rating of a furnace is 100\%.
+the AFUE rating of a furnace would be 100\%.
 AFUE is different from (and lower than) steady-state thermal efficiency.
 The American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)
 \index{American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)}
@@ -662,9 +661,6 @@ and some reach AFUE values of 98\% or higher.
 A tradeoff exists between efficiency and initial cost.
 Models with high AFUE are more expensive, initially,
 but save money on fuel costs over time.
-A sustainability challenges associated with furnaces is
-``how can we encourage home builders and home owners to install 
-high-efficiency units, despite high initial cost?''
 
 Heat pumps move heat from the cold outdoors to the inside of a home.
 Heat pump efficiency is quantified by a coefficient of performance (COP), 
@@ -673,6 +669,9 @@ The COP of a heat pump varies with outdoor temperature,
 but typical values is 2--3.
 Heat pumps with higher COP will be more efficient and cost less to operate, 
 even if they have higher purchase price.
+A sustainability challenge associated with heating systems is
+``how can we encourage home builders and home owners to install 
+high-efficiency units, despite high initial cost?''
 
 
 %..............................
@@ -713,7 +712,7 @@ a measure of energy required to deliver warm water
 Water heaters are binned by size (very small, low, medium, and high) and
 rated within each bin.
 High-efficiency water heaters tend to be more expensive. 
-So a sustainability challenge that emerges from water heating is
+Thus, a sustainability challenge that emerges from water heating is
 ``how can we encourage home builders and home owners to install 
 high-efficiency units, despite high initial cost?''
 
@@ -726,7 +725,7 @@ high-efficiency units, despite high initial cost?''
 Artificial lighting can be provided by many technologies.
 Today, LED lamps use one-eighth the energy of equivalent incandescent lamps.
 In addition, LED lamps can last up to 10 times longer than incandescent lights.
-So operating costs of LED lamps are significantly less than incandescent lamps.
+As a result, operating costs of LED lamps are significantly less than incandescent lamps.
 Indeed, higher efficiency and longer life reduce total cost of ownership
 of LED lamps by nearly two orders of magnitude
 compared to incandescent bulbs.
@@ -742,9 +741,11 @@ despite higher initial cost?''
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Lighting is one of many areas where 
-the effectiveness of a device is better described by a service efficacy than an energy efficiency.
+the effectiveness of a device is better described by a service efficacy than by an energy efficiency.
 Efficiencies are ratios of energies, typically energy output divided by energy input.
 In contrast, efficacies are ratios of energy service output (not quantified in energy units) to energy input.
+Like intensities, efficacies have different units in the numerator and the denominator; 
+see Section~\ref{sec:resource_intensity_definitions}.
 
 Lamps can emit both visible and nonvisible radiation.
 But (most) people don't buy lamps for their ability to emit nonvisible radiation.
@@ -772,7 +773,7 @@ The service efficacy favors LED lamps, because they emit most of their energy in
 While an energy efficiency metric would say that incandescent and LED lamps are similarly efficient, 
 the lumen/W service efficacy metric correctly suggests 
 that LED lamps are far superior to incandescent lamps
-for the task of providing light.
+for the task of converting electricity to visible light.
 When available, service efficacies are preferred over energy efficiencies, 
 because they can point toward sustainability benefits.
 
@@ -792,7 +793,7 @@ obtaining the same energy services
 with less resources consumption, especially energy. 
 As such, the household sustainability transitions discussed below
 will have the effect of reducing the resource intensity of the economy
-(\:\!\mft{R} in Equation~\ref{eq:IPARX}).
+(\:\!\REp{} for the prime example of energy and CO$_2$ emissions).
 
 
 %++++++++++++++++++++++++++++++
@@ -860,10 +861,10 @@ There are several ways to transition to more sustainable heating and cooling in 
 First, in-floor radiant heating is often considered more comfortable than 
 forced air, allowing thermostats to be set lower,
 thereby consuming less energy for the same level of comfort.
-(This is an example of the benefits 
-of focusing on energy service efficacy (thermal comfort)\index{efficacy!energy service}
+(This is an example of the benefit 
+of focusing on energy service efficacy, in this case thermal comfort per BTU,\index{efficacy!energy service}
 instead of energy efficiency;
-see page~\pageref{page:efficiency_efficacy}.
+see page~\pageref{page:efficiency_efficacy}.)
 
 Second, programmable thermostats\index{thermostat!programmable}
 can be used to save energy on heating and cooling 
@@ -894,14 +895,14 @@ improves in the stock of housing.
 To minimize environmental impacts of showering and dish washing,
 low-flow showerheads\index{showerheads!low-flow} and faucets\index{faucets}
 can be installed.
-Low-flow showerheads and faucets provide the obvious cost benefit of
+Low-flow showerheads and faucets provide the obvious benefit of
 reducing water bills.
 Furthermore, sewerage costs are reduced, because low-flow showerheads and faucets
 decrease the amount of gray water entering the sewer system (with ``downstream''
 energy and cost savings).
 If less water is consumed for cooking and bathing,
 energy consumption and CO$_2$ emissions are reduced.
-In addition, gray water reuse systems can reuse water for irrigation and toilet flushing,
+In addition, gray water reuse systems can provide water for irrigation and toilet flushing,
 thereby reducing clean water demand.
 
 Saving water and energy in dish washing can be accomplished by purchasing a
@@ -929,7 +930,7 @@ At a larger scale, reduced water consumption means
 less water to treat and distribute and 
 less sewage to process.
 Lower volumes of treatment, distribution, and sewage
-will mean cost savings for municipalities and 
+will mean cost and energy savings for municipalities and 
 could mean smaller plants and public works.
 
 Purchasing washers and dryers with Energy Star\index{Energy Star} ratings can reduce
@@ -969,7 +970,7 @@ use natural light to reduce the need for artificial indoor lighting.
 \label{sec:household_summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This chapter identified many sustainability challenges that pertain to households
+This chapter identified many sustainability challenges that pertain to dwellings
 and decisions made by ordinary people in their homes and apartments.
 Energy and material consumption decisions by household members
 drives sustainability in the home. 
@@ -985,14 +986,14 @@ The first tradeoff is initial cost (also called capital expense) versus operatin
 Models or options that are more energy efficient also tend to cost more for the initial purchase. 
 A larger initial investment pays back by reducing ongoing expenses.
 Often the higher initial cost is the result of higher energy and/or material inputs
-required to make the more efficient option.
+required to manufacture the more efficient option.
 The second kind of tradeoff is between well-being or affluence and cost. 
 Turning the thermostat down means your home is less comfortable, which
 means that you are not as well off (not as happy). 
 On the other hand, turning the thermostat down saves money, energy, and CO$_2$ emissions.
 For both of these kinds of tradeoffs, price is the determiner as to how the tradeoff
 plays out. 
-Changing society-wide behavior means manipulating prices---of goods, or energy, or both.
+Changing society-wide behavior means manipulating prices---of goods, of energy, or both.
 
 Chapter~\ref{chap:personal_action} provides additional concrete suggestions
 for making homes and apartments more sustainable.
