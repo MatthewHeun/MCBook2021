@@ -445,6 +445,10 @@ demo_transition %>%
                       linetype = guide_linetype) +
   ggplot2::geom_line(colour = data_line_colour,
                      size = data_line_size) +
+  ggplot2::annotate("text", x = 18, y = 4, label = "Stage 1", colour = guide_line_colour) +
+  ggplot2::annotate("text", x = 78, y = 4, label = "Stage 2", colour = guide_line_colour) +
+  ggplot2::annotate("text", x = 150, y = 4, label = "Stage 3", colour = guide_line_colour) +
+  ggplot2::annotate("text", x = 227, y = 4, label = "Stage 4", colour = guide_line_colour) +
   ggplot2::scale_y_continuous(limits = c(0, 120), breaks = seq(0, 120, by = 20)) +
   ggplot2::labs(x = "Time [years]",
                 y = "Population [millions]",
@@ -475,10 +479,16 @@ pop_pyramids <- readxl::read_excel(file.path("chapters", "ch03-Population", "dat
     y = y * 0.85
   )
 
-pop_pyramids %>%
-  ggplot2::ggplot(mapping = ggplot2::aes(x = x, y = y, fill = gender)) +
+stages <- tibble::tribble(~Stage, ~x, ~y,
+                          "Stage 1", 0, 96,
+                          "Stage 2", 0, 96, 
+                          "Stage 3", 0, 96,
+                          "Stage 4", 0, 96)
 
-  ggplot2::geom_area() +
+ggplot2::ggplot() + 
+  ggplot2::geom_area(data = pop_pyramids, mapping = ggplot2::aes(x = x, y = y, fill = gender)) +
+  
+  ggplot2::geom_text(data = stages, mapping = ggplot2::aes(x = x, y = y, label = Stage), colour = guide_line_colour, size = 3) +
 
   ggplot2::scale_fill_viridis_d(direction = -1, begin = 0.15, end = 0.8) +
 
