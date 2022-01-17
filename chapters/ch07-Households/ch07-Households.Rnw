@@ -19,7 +19,7 @@ is consumed (Figure \ref{fig:LLNL_energy_sankey}), that is,
 the drivers of carbon emissions (Table \ref{tab:corrected_co2_emissions}).
 This chapter (Chapter~\ref{chap:households}) explores 
 implications and applications of sustainability thinking
-to dwellings.
+to households.
 Transportation (Chapter~\ref{chap:transportation}), 
 agriculture (Chapter~\ref{chap:agriculture}), and
 land use and urban planning (Chapter~\ref{chap:land_use_urban_planning})
@@ -59,7 +59,7 @@ In households, sustainability meets everyday life.
 We use the term ``household'' to indicate both 
 a single housing unit (or dwelling) and
 the people who live in it (occupants).
-A housing unit is the structure its systems, 
+A housing unit is the structure and its systems, 
 either a detached home, an apartment unit, or a townhouse.
 When we say that households are important for sustainability, 
 we mean all of the structure of the housing unit
@@ -81,7 +81,7 @@ Example resources demanded by households include
 water, building materials, chemicals, food,
 electricity, and natural gas.
 Each resource demanded by households is an
-entry in the list of resources in the 
+entry in the list of resources in the numerator of the
 \mft{R} term of the IPARX equation (Equation~\ref{eq:IPARX}). 
 This chapter focuses on demand for energy in households, 
 in keeping with the prime example of the book,
@@ -90,7 +90,7 @@ energy consumption and carbon emissions.
 Dwellings are important for sustainability, 
 in part because they are sites of energy consumption.
 For example, Figure~\ref{fig:LLNL_energy_sankey} shows that 
-11.9~quad of energy were consumed in U.S.\ residences in 2018,
+11.9~quads of final energy were consumed in U.S.\ residences in 2018,
 representing 12\% of final energy consumption.
 Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
 from the U.S.\ residential sector in 2018 total 
@@ -170,18 +170,25 @@ total_household_energy_consumption %>%
 @
 
 
-<<AverageHouseholdEnergyConsumption, fig.scap="Household energy consumption and number of housing units", fig.cap="Average U.S.\\ household energy consumption and number of housing units. Households include all primary occupied housing units in the 50 states and the District of Columbia. Vacant housing units, seasonal units, second homes, military houses, and group quarters are excluded. ``hu'' means housing unit. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:vd}.">>=
+<<AverageHouseholdEnergyConsumption, fig.height = 4, fig.scap="Household energy consumption and number of housing units", fig.cap="Average U.S.\\ household energy consumption and number of housing units. Households include all primary occupied housing units in the 50 states and the District of Columbia. Vacant housing units, seasonal units, second homes, military houses, and group quarters are excluded. ``hu'' means housing unit. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:vd}.">>=
 average_household_energy_consumption <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "Household_energy_use_data.xlsx"),
                                                            sheet = "data to plot") %>% 
-   dplyr::mutate(
-      `Energy cons. [GJ/hu]` = `Energy [10^6 BTU/household]` * 1.05506, # Convert million BTU to GJ
-      `Energy [10^6 BTU/household]` = NULL
-   ) %>% 
-   dplyr::rename(
-       `Housing units [millions]` = "Housing units [10^6]"
-   ) %>% 
-   tidyr::pivot_longer(-Year, names_to = "var", values_to = "val") %>% 
-   dplyr::filter(complete.cases(.))
+  dplyr::mutate(
+    `Energy cons. [GJ/hu]` = `Energy [10^6 BTU/household]` * 1.05506, # Convert million BTU to GJ
+    `Energy [10^6 BTU/household]` = NULL
+  ) %>% 
+  dplyr::rename(
+    `Housing units [millions]` = "Housing units [10^6]"
+  ) %>% 
+  tidyr::pivot_longer(-Year, names_to = "var", values_to = "val") %>% 
+  dplyr::filter(complete.cases(.)) %>% 
+  dplyr::mutate(
+    var = dplyr::case_when(
+      var == "Energy cons. [GJ/hu]" ~ '"Energy cons. [GJ/" * hu%.%year * "]"', 
+      var == "Housing units [millions]" ~ '"Housing units [millions]"',
+      TRUE ~ var
+    )
+  )
 
 # Create graph
 average_household_energy_consumption %>% 
@@ -189,7 +196,7 @@ average_household_energy_consumption %>%
    ggplot2::geom_line(size = data_line_size,
                       colour = data_line_colour, 
                       linetype = data_linetype) +
-   ggplot2::facet_grid(rows = "var") +
+   ggplot2::facet_grid(rows = "var", labeller = "label_parsed") +
    ggplot2::scale_x_continuous(limits = c(1980, 2020), breaks = seq(1980, 2020, by = 10)) +
    ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 120, by = 20)) +
    ggplot2::labs(x = ggplot2::element_blank(),
@@ -317,7 +324,7 @@ household_energy_by_size %>%
    ggplot2::geom_bar(stat = "identity") +
    
    ggplot2::labs(x = expression("Home size ["*ft^2*"]"),
-                 y = "Avg. energy consumption [GJ/yr]", 
+                 y = expression("Avg. energy cons. [GJ/" * hu%.%year * "]"), 
                  fill = ggplot2::element_blank()) +
    ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.03))) +
    viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
