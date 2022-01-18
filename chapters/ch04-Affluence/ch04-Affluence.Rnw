@@ -75,9 +75,10 @@ The biggest limitation for any metric
 is standardization and availability of data.
 At the moment, the most complete and accurate data is for GDP;
 consequently, GDP is the standard way to measure economic activity.
-(Because GDP data are self-reported at the national level but are aggregated 
-internationally, there can be issues of reliability and transparency, 
-in addition to the other caveats about what GDP measures and what it doesn't.)
+(In addition to concerns about what GDP measures and what it doesn't, 
+there can be issues of reliability and transparency, 
+because GDP data are self-reported at the national level and
+aggregated internationally.)
 % put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
 
 Consistent and easily accessible GDP data allow observations of
@@ -347,7 +348,7 @@ be negative (inventory is falling) or positive (inventory is increasing).
 Net exports~(\mft{nx}) are the \emph{net} difference between the value of exports and the value of imports.
 Thus, \mft{nx} could negative for a country that imports more than it exports.
 World GDP is the sum of all national GDPs.
-Therefore, for world GDP, \mft{nx}~=~0.
+Therefore, for world GDP, $\mft{nx}~=~0$.
 (We don't import from, or export to, space---yet.)
 
 
@@ -1026,6 +1027,26 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       coastal dwellers pay now to prevent future warming? 
       They could pay carbon emitters far from the coasts not to emit. 
       What would it take for such a market to develop?
+      
+\item Economist Robert Gordon argues that GDP vastly underestimates 
+      the benefits to humanity of innovation and new technologies~\cite{Gordon2016}.
+      One example could be innovations in clothing over recent decades.
+      Although the design of clothing (shirts, blouses, trousers, pants)
+      remains mostly unchanged since the 1960s, 
+      we now benefit from enhanced comfort due to improved fabrics.
+      And yet, these new fabrics produce plastics pollution in the form of microfibers
+      that enter waterways, lakes, oceans, and soil.
+      So the new fabrics make our lives better with the negative externality
+      of microfiber pollution.
+      What can be done to address these environmental impacts?
+      What resources (monetary and otherwise) 
+      would be required to reduce microfiber pollution?
+      How do you view the tradeoff of having inexpensive, comfortable clothes
+      vs.\ having microplastic pollution?
+      On the balance, has the innovation of synthetic fibers 
+      been a good thing or not good thing?
+      What actions could be taken to shift the balance
+      towards more sustainability?
 
 \end{questions}
 

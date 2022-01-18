@@ -626,10 +626,10 @@ from one example action for each row in Table~\ref{tab:personal_energy_actions}.
 \toprule
 Question                                    & Sustainability-beneficial answer       \\ 
 \midrule
-How close will I live to work,              & \multirow{2}{*}{Close enough to allow walking and cycling} \\
+How close will I live to work,              & \multirow{2}{*}{Close enough to allow walking or cycling} \\
 school, church, and stores?                 &                                        \\
 What kind of house will I buy?              & Small and used                         \\
-How will I eat?                             & Close to the bottom of the food chain  \\   
+How will I eat?                             & Closer to the bottom of the food chain \\   
 What kind of car will I drive?              & Small and used                         \\
 How much will I fly?                        & Little or not at all                   \\
 \bottomrule
@@ -638,42 +638,21 @@ How much will I fly?                        & Little or not at all              
 \end{table}
 
 
-<<CO2-Savings_old, fig.width=3, fig.height=4, fig.scap="CO$_2$ savings from individual actions", fig.cap="CO$_2$ emission savings from example actions for rows in Table~\\ref{tab:personal_energy_actions}. ``No commute'' means living close enough to walk or bike to work instead of commuting 50~miles each-way, 230 times/year with a Honda Accord. ``Smaller home'' means living in a 1250~ft$^2$ home instead of a 2750~ft$^2$ home. ``Chicken, not steak'' means choosing 6~ounces of chicken instead of 6~ounces of steak 25 times per year. ``Accord, not F150'' means driving 12,000~miles/year with a Honda Accord instead of a Ford F150. ``No NYC$\\rightarrow$LHR'' means eliminating one New-York-to-London round trip flight in economy class per year. \\emph{Source}: own calculations.">>=
+<<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example sustainability actions shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/year in a Honda Accord (100~miles round trip) vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~MgCO$_2$/year. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity and natural gas for a ``2750~ft$2$'' home vs.\\ a ``1250~ft$^2$ home. Savings are ", small_house_savings, "~MgCO$_2$/year. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/year. Savings are estimated to be ", chicken_savings, "~MgCO$_2$/year. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/year in a Ford F150 pickup truck or a Honda Accord sedan. Savings will be ", accord_savings, "~MgCO$_2$/year. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's LaGuardia airport~(LGA) and London's Heathrow airport~(LHA) vs.\\ a virtual meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~MgCO$_2$/year. \\emph{Source}: own calculations.")>>=
 co2_savings <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
-                                  sheet = "data to use old") %>% 
-  dplyr::mutate(
-    Action = dplyr::case_when(
-      Action == "No commute" ~ "No~commute", 
-      Action == "Smaller home" ~ "Smaller~home", 
-      Action == "Chicken, not steak" ~ "list(Chicken, not~steak)", 
-      Action == "Accord, not F150" ~ "list(Accord, not~F150)", 
-      Action == "No NYC->LHR" ~ "No~NYC%->%LHR"
-    ),
-    Action = factor(Action, levels = c("No~commute", "Smaller~home", "list(Chicken, not~steak)", 
-                                       "list(Accord, not~F150)", "No~NYC%->%LHR")), 
-    Savings_MgCO2_year = Savings_kgCO2_year / 1000
-  )
+                                  sheet = "savings")
+no_commute_savings <- co2_savings %>% dplyr::filter(Action == "No commute") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
+  sprintf(fmt = "%#.2f")
+small_house_savings <- co2_savings %>% dplyr::filter(Action == "Smaller home") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
+  sprintf(fmt = "%#.2f")
+chicken_savings <- co2_savings %>% dplyr::filter(Action == "Chicken, not steak") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
+  sprintf(fmt = "%#.2f")
+accord_savings <- co2_savings %>% dplyr::filter(Action == "Accord, not F150") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
+  sprintf(fmt = "%#.2f")
+no_flight_savings <- co2_savings %>% dplyr::filter(Action == "No NYC->LHR") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
+  sprintf(fmt = "%#.2f")
 
-x_breaks <- levels(co2_savings$Action)
-x_labels <- parse(text = x_breaks)
-
-co2_savings %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes(x = Action, y = Savings_MgCO2_year)) + 
-  ggplot2::geom_bar(stat = "identity", fill = bar_colour) + 
-  
-  ggplot2::scale_x_discrete(labels = parse(text = levels(co2_savings$Action))) + 
-
-  ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("Emissions savings [Mg" * CO[2] * "/year]")) + 
-  
-  MKHthemes::xy_theme() + 
-  ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1), 
-                 axis.ticks.x = ggplot2::element_blank())
-@
-
-
-<<CO2-Savings, fig.scap="CO$_2$ savings from individual actions", fig.cap="CO$_2$ emission savings from example actions for rows in Table~\\ref{tab:personal_energy_actions}. Choices are arranged left-to-right from most impactful to least impactful. Living ``close enough to walk or cycle to work'' is represented by the choice of a 100-mile-round-trip commute with a Honda Accord or cycling or walking to work 230 times/year. Housing size is represented by ``1250~ft$2$'' home vs.\\ a ``2750~ft$^2$ home. Eating closer to the bottom of the food chain is represented by the choice between 6~ounces of poultry vs.\\ 6~ounces of steak 25~meals/year. Transportation options are represented by the choice between driving a Honda Accord sedan or a Ford F150 truck 12,000 miles/year. Flying little or not at all is represented by choosing a virtual meeting or one round-trip flight between New York and London per year. \\emph{Source}: own calculations.">>=
-co2_savings <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
+co2_amounts <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
                                   sheet = "data to use") %>% 
   dplyr::mutate(
     Choice = dplyr::case_when(
@@ -681,28 +660,31 @@ co2_savings <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "
       Choice == "Cycle or walk" ~ "Cycle~or~walk", 
       Choice == "2750 ft2" ~ "2750~ft^2", 
       Choice == "1250 ft2" ~ "1250~ft^2",
-      Choice == "Fly" ~ "NYC%->%LHR%->%NYC",
+      Choice == "Ford F150" ~ "Ford~F150",
+      Choice == "Honda Accord" ~ "Honda~Accord",
+      Choice == "Fly" ~ "LGA%->%LHR%->%LGA",
       Choice == "Virtual meeting" ~ "Virtual~meeting",
       TRUE ~ Choice
     ),
     Choice = factor(Choice, levels = c("100~miles/day", "Cycle~or~walk", 
                                        "2750~ft^2", "1250~ft^2", 
                                        "Steak", "Chicken", 
-                                       "F150", "Accord", 
-                                       "NYC%->%LHR%->%NYC", "Virtual~meeting")),
+                                       "Ford~F150", "Honda~Accord", 
+                                       "LGA%->%LHR%->%LGA", "Virtual~meeting")),
     `CO2 emissions [Mg/year]` = `CO2 emissions [kg/year]` / 1000
   )
 
-x_breaks <- levels(co2_savings$Choice)
+x_breaks <- levels(co2_amounts$Choice)
 x_labels <- parse(text = x_breaks)
 
-co2_savings %>% 
+co2_amounts %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Choice, y = `CO2 emissions [Mg/year]`, fill = Category)) + 
   ggplot2::geom_bar(stat = "identity", position = "dodge") + 
   
-  ggplot2::scale_x_discrete(labels = parse(text = levels(co2_savings$Choice))) + 
+  ggplot2::scale_x_discrete(labels = parse(text = levels(co2_amounts$Choice))) + 
   ggplot2::scale_fill_manual(values = c(`Less sustainable` = data_line_colour, 
-                                        `More sustainable` = curve_fit_colour)) + 
+                                        `More sustainable` = curve_fit_colour), 
+                             guide = "none") + 
 
   ggplot2::labs(x = ggplot2::element_blank(), 
                 y = expression("Emissions [Mg" * CO[2] * "/year]"), 
