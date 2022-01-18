@@ -533,7 +533,8 @@ power_densities %>%
   ggplot2::labs(x = ggplot2::element_blank(), 
                 y = expression("Power density [" * W/m^2 * "]")) +
   
-  MKHthemes::xy_theme()
+  MKHthemes::xy_theme() + 
+  ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
 
 Figure~\ref{fig:PowerDensity} shows the land use requirements for different forms of
