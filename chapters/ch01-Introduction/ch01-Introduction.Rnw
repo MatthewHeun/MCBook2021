@@ -323,7 +323,7 @@ of this book are organized around a hybrid of the IPAT and Kaya
 approaches.
 We keep the more general ``impact'' of IPAT but also generalize the expanded
 ``technology'' expression from Kaya as the product of resource intensity of the economy~\Rparen{}
-and the impact intensity of resources~\Xparen{}.
+and the impact of resources~\Xparen{}.
 
 \begin{equation} \label{eq:IPARX}
   \iparx
@@ -336,7 +336,7 @@ Population~\Pparen{} is the number of people in the world.
 Affluence~\Aparen{} is GDP per capita per year.
 Resource intensity~\Rparen{} is the list (vector) of all the resources necessary to
 produce one unit of world GDP.
-Lastly, impact intensity of resources~\Xparen{} is a list of the impacts of
+Lastly, impact of resources~\Xparen{} is a list of the impacts of
 each type of resource. (That is, \mft{X} is a matrix quantity.)
 
 In broad strokes, sustainability can be seen in the \mft{I} term (environmental impacts) and 

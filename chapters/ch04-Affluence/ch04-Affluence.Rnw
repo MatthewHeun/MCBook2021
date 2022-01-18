@@ -66,8 +66,8 @@ GDP does not include the value of nonmarket transactions,
 such as the work of stay-at-home parents.
 Also, GDP counts all consumption, even when it is socially undesirable.
 
-Many new metrics (Section~\ref{sec:indices}) have been proposed as replacements for
-or improvements to GDP, such as
+Many new metrics (Section~\ref{sec:indices}) have been proposed 
+to replace or improve GDP, such as
 green GDP, the index of sustainable economic welfare, and the
 genuine progress indicator.
 However, each replacement suffers from its own limitations.
@@ -88,7 +88,7 @@ In any case, a different measure of affluence~\Aparen{}, would require a corresp
 adjustment to (the measure of) resource intensity of economic activity~\Rparen{}.
 Regardless of the measure of affluence, we land in the same difficult spot:
 greater affluence~\Aparen{} creates greater environmental impact~\Iparen{}
-if the resource intensity of the economy~\Rparen{} and the impact intensity of resources~\Xparen{}
+if the resource intensity of the economy~\Rparen{} and the impact of resources~\Xparen{}
 (which are discussed in the next two chapters) remain unchanged.
 
 % <<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence~\Aparen{} in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
@@ -407,7 +407,7 @@ That is, environmental impacts are the result of society's metabolism.
 Total consumption (that is, world GDP) is $\mft{P}\times\mft{A}$ in Equation~\ref{eq:IPARX}.
 Resources (the numerator of \mft{R}) are the food the economy needs to live and grow.
 Resources can be calculated by $\mft{P} \times \mft{A} \times \mft{R}$.
-The numerator of the impact intensity of resources~\Xparen{} 
+The numerator of the impact of resources~\Xparen{} 
 represents the wastes that the economy excretes.
 Of course, impacts can be calculated by $\mft{P} \times \mft{A} \times \mft{R} \times \mft{X}$.
 
@@ -470,21 +470,26 @@ or
 \footnote{
   We use the word ``efficaciously'' deliberately here, 
   because we mean more economic output per economic input,
-  whether that's labor, capital, energy, or materials.
+  whether that's capital, labor, energy, or materials.
   Because the numerator and denominator
   have different units (dollars vs.\ workers, equipment, joules, or kilograms), 
   we have an efficacy, not an efficiency.
 }
-(meaning that \mft{R} goes down).
+(meaning that \mft{R} goes down%
+\footnote{
+  The productivity of resources (economic output/resource input)
+  is the inverse of the resource intensity of economic activity
+  (\:\!\mft{R} $\equiv$ resource input/economic output).
+}).
 Economic inputs include labor, capital, energy, and materials.
 In the long run, growing output by scaling up the inputs does not increase 
 affluence~\Aparen{} directly, 
 because more workers are needed to gather, process, and use the 
 additional resources.
-That leaves efficacy as the primary means of boosting affluence.
-From a sustainability point of view, we should want everything to be used
-as efficaciously as possible; 
-doing otherwise is undesirable.
+That leaves productivity as the primary means of boosting affluence.
+From a sustainability point of view, we should want the economy to be 
+as productive as possible; 
+fewer inputs are needed per dollar of economic output.
 
 However, growth in GDP has implications for sustainability.
 GDP is quantified by consumption.
@@ -505,10 +510,12 @@ of workers, technology, the number of workers in the population, the number of h
 work, and the fraction of the population that is working;
 see Section~\ref{sec:dtt}.
 More workers can increase economic output (GDP), as mentioned above,
-but will not increase GDP \emph{per person}.
+but will not increase GDP \emph{per person}, affluence.
 On the other hand,
-a greater fraction of the population working, or workers working longer hours,
-will tend to increase \mft{A} 
+affluence will tend to increase if 
+a greater fraction of the population is working 
+or
+if workers are working longer hours
 (at least until the population pyramid stabilizes).
 
 
@@ -525,11 +532,11 @@ Because capital depreciates over time, continual investment
 (part of \mft{i} in Equation~\ref{eq:GDP})
 is needed to maintain capital stocks. 
 Higher levels of capital require larger yearly investments to maintain.
-At some point, there is a \emph{maximum} level of effective capital.
+At some point, there is a \emph{maximum} level of capital productivity.
 Beyond that maximum,
 expenses to maintain capital exceed the contribution of capital to the economy. 
-At the effective maximum level of capital, labor will have a maximum
-level of output because workers are fully ``tooled up.''
+At the maximum level of capital productivity,
+labor will have a maximum level of output because workers are fully ``tooled up.''
 
 
 %..............................
@@ -540,27 +547,31 @@ Innovation is the major source of economic growth.
 There are two types of innovation:
 (a)~the invention of new \emph{kinds} of goods and services
 and
-(b)~ improvements to efficiency.
+(b)~ improvements to economic productivity.
 The majority of the goods and services we consume today did not exist in
 1870~\cite{Gordon2016}.
-We consume entirely new categories of goods and services that did not
+And we consume entirely new categories of goods and services that did not
 exist for most of human history.
 Much of the improvement in our standard of living comes from these new types of
 goods and services.
 
 However, examined closely, almost all of these ``new goods'' stories
-\emph{also} end up being about some form of efficiency.
-The endless quest to meet our needs more efficiently
+\emph{also} end up being about some form of productivity.
+The endless quest to meet our needs more productively
 allows spending on \emph{additional} consumption.
-Efficiency improvements allow us to get more GDP for the same level of resource consumption.
+Productivity improvements (and resource intensity declines)
+allow us to get more GDP for the same level of resource consumption.
 As we will see in Chapter~\ref{chap:resource_intensity}, particularly in
 Figures~\ref{fig:per_capita_material_use} and~\ref{fig:EnergyPerPersonGraph},
 economic growth correlates with \emph{additional} consumption of resources.
 The greater use of resources is caused by growth in affluence~\Aparen{},
 driven, in part, by improvements in material (Figure~\ref{fig:per_gdp_material_use})
-and energy (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) efficiency
-(that is, type-b innovation).
-Managing the ``rebound effect,'' which is a result of efficiency improvements,
+and energy (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) productivity
+(that is, innovation of the second type).
+Energy efficiency is a type of economic productivity.
+Greater energy efficiency enables the same or greater economic output
+with lesser energy input.
+Managing the ``rebound effect,'' which is a result of energy efficiency improvements,
 is a major sustainability challenge; see Section~\ref{sec:rebound_effect}.
 
 
@@ -573,7 +584,7 @@ shrink.
 A shrinking economy is said to be in recession.
 A full discussion of the mechanisms of recession is beyond the scope of this book,
 but the effect of recessions can be seen in Figure~\ref{fig:CarbonEmissionsGraph}.
-If affluence~\Aparen{} is a cause of impacts~\Iparen{},
+If affluence~\Aparen{} is a cause of environmental impacts~\Iparen{},
 then reducing \mft{A} is one way to reduce
 \mft{I}, as Figure~\ref{fig:CarbonEmissionsGraph} shows for CO$_2$ emissions.
 However, recessions are unwelcome for many very good reasons.
@@ -842,7 +853,7 @@ puts the burden of lowering impacts~\Iparen{} on the
 other terms on the right-hand side of the IPARX equation:
 population~\Pparen{}, 
 the resource intensity of economic activity~\Rparen, and
-the impact intensity of resources~\Xparen.
+the impact of resources~\Xparen.
 Chapter~\ref{chap:population} showed that population has been rising and will 
 likely continue to do so in the near term.
 The next two chapters examine sustainability related to \mft{R} and \mft{X}.

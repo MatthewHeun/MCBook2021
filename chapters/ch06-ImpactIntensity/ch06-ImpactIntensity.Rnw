@@ -5,7 +5,7 @@
 
 
 %#############################################################
-\chapter{Impact intensity of resources~\Xparen{}}
+\chapter{Impact of resources~\Xparen{}}
 \label{chap:impact_intensity}
 %#############################################################
 % \epigraph{Normal human activity is worse for nature than the biggest 
@@ -40,7 +40,7 @@ the topic of this chapter.
   \iparx            \tag{\ref{eq:IPARX}}
 \end{equation}
 
-The impact intensity of resources~\Xparen{}
+The impact of resources~\Xparen{}
 is a function of \mft{R} (resource extraction and consumption) discussed in 
 Chapter~\ref{chap:resource_intensity}, in that the 
 type and intensity of environmental impacts are directly related to 
@@ -994,7 +994,7 @@ environmental impacts~\Iparen{} or CO$_2$ emissions (\;\!\XCOtwo{} in the prime 
 \section{Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The impact intensity of resources~\Xparen{}
+The impact of resources~\Xparen{}
 represents the environmental impacts of extracting and consuming natural resources
 in Equation~\ref{eq:IPARX}.
 For the prime example of energy and CO$_2$ emissions, 
