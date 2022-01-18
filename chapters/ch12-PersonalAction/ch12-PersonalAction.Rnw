@@ -638,7 +638,7 @@ How much will I fly?                        & Little or not at all              
 \end{table}
 
 
-<<CO2-Savings, fig.width=3, fig.height=4, fig.scap="CO$_2$ savings from individual actions", fig.cap="CO$_2$ emission savings from example actions for rows in Table~\\ref{tab:personal_energy_actions}. ``No commute'' means living close enough to walk or bike to work instead of commuting 50~miles each-way, 230 times/year with a Honda Accord. ``Smaller home'' means living in a 1250~ft$^2$ home instead of a 2750~ft$^2$ home. ``Chicken, not steak'' means choosing 6~ounces of chicken instead of 6~ounces of steak 25 times per year. ``Accord, not F150'' means 12,000~miles of driving with a Honda Accord instead of a Ford F150. ``No NYC$\\rightarrow$LHR'' means eliminating one New-York-to-London round trip flight in economy class per year. \\emph{Source}: own calculations.">>=
+<<CO2-Savings, fig.width=3, fig.height=4, fig.scap="CO$_2$ savings from individual actions", fig.cap="CO$_2$ emission savings from example actions for rows in Table~\\ref{tab:personal_energy_actions}. ``No commute'' means living close enough to walk or bike to work instead of commuting 50~miles each-way, 230 times/year with a Honda Accord. ``Smaller home'' means living in a 1250~ft$^2$ home instead of a 2750~ft$^2$ home. ``Chicken, not steak'' means choosing 6~ounces of chicken instead of 6~ounces of steak 25 times per year. ``Accord, not F150'' means driving 12,000~miles/year with a Honda Accord instead of a Ford F150. ``No NYC$\\rightarrow$LHR'' means eliminating one New-York-to-London round trip flight in economy class per year. \\emph{Source}: own calculations.">>=
 co2_savings <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
                                   sheet = "data to use") %>% 
   dplyr::mutate(
@@ -965,6 +965,18 @@ Wangari Maathai, and Joseph Lstiburek.
       that can be taken to become more sustainable, 
       using the structure of 
       Chapters~\ref{chap:government} and \ref{chap:personal_action}.
+      
+\item Figure~\ref{fig:CO2-Savings} shows an example sustainability-beneficial action
+      for each row of Table~\ref{tab:personal_energy_actions}.
+      Verify the calculation of CO$_2$ emissions savings presented 
+      in Figure~\ref{fig:CO2-Savings}.
+      There are many possible sustainability-related actions 
+      for each row of Table~\ref{tab:personal_energy_actions}.
+      Think of one different sustainability-related action 
+      for each row.
+      Then, calculate the expected CO$_2$ emissions savings for your new actions.
+      Which action is most beneficial for reducing CO$_2$ emissions?
+      Why?
       
 \end{projects}
 
