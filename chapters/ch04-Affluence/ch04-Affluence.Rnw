@@ -22,12 +22,12 @@ Chapter~\ref{chap:planetary_boundaries} discussed planetary boundaries and the i
 of human activities on those boundaries, that is, the left-hand side of Equation~\ref{eq:IPARX}.
 Chapter~\ref{chap:population} is about the first term on the right-hand side of 
 Equation~\ref{eq:IPARX}, world population and its dynamics. 
-Discussion questions from Chapter~\ref{chap:population} reveal a variety of ways 
+Discussion questions in Chapter~\ref{chap:population} reveal a variety of ways 
 in which it is practically and morally difficult to reduce impacts~\Iparen{} by reducing 
 population~\Pparen{}.
 This chapter examines the second term on the right-hand side of Equation~\ref{eq:IPARX},
 affluence~\Aparen{}, and the role of human economic activity in sustainability challenges.
-Chapters~\ref{chap:resource_intensity}--\ref{chap:impact_intensity}, 
+Chapters~\ref{chap:resource_intensity}--\ref{chap:impact_intensity}
 finish the development of our framework for sustainability.
 
 \begin{equation} 
@@ -47,10 +47,10 @@ In other words, wealth refers to a \emph{level} of material possessions or resou
 In contrast, affluence~\Aparen{} is the \emph{rate} that the economy
 uses goods and services, that is, the amount of ``stuff'' bought \emph{per year}.
 
-Economic activity may mean literally consumption, as with food,
+Economic activity may mean literal consumption, as with food,
 or it could mean using a service, such as education or getting a haircut.
 Sometimes, what is ``consumed'' is ancillary to what the consumer actually desires.
-When travelling from point A to point B, 
+For instance, when travelling from point A to point B, 
 most travelers don't care whether their car runs on electricity or gasoline.
 The energy consumption is only the means to the end.
 In this example, transport is known as an ``energy service,''
@@ -60,10 +60,10 @@ Average affluence~\Aparen{} for a country or the world
 is \emph{measured} by gross domestic product (GDP) per capita.
 There are valid critiques as to why per capita GDP is not the \emph{best possible}
 measure of affluence.
-For instance, GDP doesn't count (or under counts) the value
+For instance, GDP does not count (or under counts) the value
 of innovation in improving standards of living~\cite{Gordon2016}.
-GDP doesn't include the value of non-market transactions, 
-such as the work of stay-at-home mothers.
+GDP does not include the value of nonmarket transactions, 
+such as the work of stay-at-home parents.
 Also, GDP counts all consumption, even when it is socially undesirable.
 
 Many new metrics (Section~\ref{sec:indices}) have been proposed as replacements for
@@ -73,22 +73,22 @@ genuine progress indicator.
 However, each replacement suffers from its own limitations.
 The biggest limitation for any metric
 is standardization and availability of data.
-At the moment, we have the most complete and accurate data for GDP;
+At the moment, the most complete and accurate data is for GDP;
 consequently, GDP is the standard way to measure economic activity.
-(Because GDP data are collected nationally but aggregated internationally, 
-there is often skepticism of data provided by corrupt and/or authoritarian
-regimes, in addition to the caveats about what GDP measures and what it doesn't.)
+(Because GDP data are self-reported at the national level but are aggregated 
+internationally, there can be issues of reliability and transparency, 
+in addition to the other caveats about what GDP measures and what it doesn't.)
 % put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
 
 Consistent and easily accessible GDP data allow observations of
 trends through time, which are usually \emph{qualitatively} 
-consistent with trends would be observed using other indices.
+consistent with trends that would be observed using other indices.
 In any case, a different measure of affluence~\Aparen{}, would require a corresponding
 adjustment to (the measure of) resource intensity of economic activity~\Rparen{}.
 Regardless of the measure of affluence, we land in the same difficult spot:
 greater affluence~\Aparen{} creates greater environmental impact~\Iparen{}
 if the resource intensity of the economy~\Rparen{} and the impact intensity of resources~\Xparen{}
-(discussed in the next two chapters) remain unchanged.
+(which are discussed in the next two chapters) remain unchanged.
 
 % <<AffluenceGraph-Maddison, fig.cap = "Annual world GDP per capita, affluence~\Aparen{} in Equation \ref{eq:IPARX}. Data for 1990--2020 from the World Bank~\\cite{World-Bank:2021un}. Data for 1800--1989 inferred from GDP per capita growth rates from the Maddison Project Database 2020 ~\\cite{Bolt:2020tv}.">>=
 % world_gdppc_Maddison <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
@@ -309,10 +309,10 @@ such as appliances and automobiles.
 Nondurable goods are things that are consumed immediately, like food, paper, or fuel.
 Fabrics, like clothes or carpet, are counted as nondurable goods, even if they
 happen to last more than three years.
-Durable goods spending is more sensitive to economic conditions than nondurable
-goods spending,
-because consumers can usually choose to postpone spending on durable goods
-until circumstances improve.
+% Durable goods spending is more sensitive to economic conditions than nondurable
+% goods spending,
+% because consumers can usually choose to postpone spending on durable goods
+% until circumstances improve.
 
 
 %..............................
@@ -345,10 +345,10 @@ be negative (inventory is falling) or positive (inventory is increasing).
 %..............................
 
 Net exports~(\mft{nx}) are the \emph{net} difference between the value of exports and the value of imports.
-Thus \mft{nx} could negative for a country that imports more than it exports.
+Thus, \mft{nx} could negative for a country that imports more than it exports.
 World GDP is the sum of all national GDPs.
 Therefore, for world GDP, \mft{nx}~=~0.
-(We don't import from, or export to, space \ldots yet.)
+(We don't import from, or export to, space---yet.)
 
 
 %++++++++++++++++++++++++++++++
