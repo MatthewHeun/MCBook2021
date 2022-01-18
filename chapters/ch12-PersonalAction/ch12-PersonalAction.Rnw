@@ -672,32 +672,24 @@ co2_savings %>%
 @
 
 
-<<CO2-Savings, fig.scap="CO$_2$ savings from individual actions", fig.cap="CO$_2$ emission savings from example actions for rows in Table~\\ref{tab:personal_energy_actions}. ``No commute'' means living close enough to walk or bike to work instead of commuting 50~miles each-way, 230 times/year with a Honda Accord. ``Smaller home'' means living in a 1250~ft$^2$ home instead of a 2750~ft$^2$ home. ``Chicken, not steak'' means choosing 6~ounces of chicken instead of 6~ounces of steak 25 times per year. ``Accord, not F150'' means driving 12,000~miles/year with a Honda Accord instead of a Ford F150. ``No NYC$\\rightarrow$LHR'' means eliminating one New-York-to-London round trip flight in economy class per year. \\emph{Source}: own calculations.">>=
+<<CO2-Savings, fig.scap="CO$_2$ savings from individual actions", fig.cap="CO$_2$ emission savings from example actions for rows in Table~\\ref{tab:personal_energy_actions}. Choices are arranged left-to-right from most impactful to least impactful. Living ``close enough to walk or cycle to work'' is represented by the choice of a 100-mile-round-trip commute with a Honda Accord or cycling or walking to work 230 times/year. Housing size is represented by ``1250~ft$2$'' home vs.\\ a ``2750~ft$^2$ home. Eating closer to the bottom of the food chain is represented by the choice between 6~ounces of poultry vs.\\ 6~ounces of steak 25~meals/year. Transportation options are represented by the choice between driving a Honda Accord sedan or a Ford F150 truck 12,000 miles/year. Flying little or not at all is represented by choosing a virtual meeting or one round-trip flight between New York and London per year. \\emph{Source}: own calculations.">>=
 co2_savings <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
                                   sheet = "data to use") %>% 
   dplyr::mutate(
-    Action = dplyr::case_when(
-      Action == "No commute" ~ "No~commute", 
-      Action == "Smaller home" ~ "Smaller~home", 
-      Action == "Chicken, not steak" ~ "list(Chicken, not~steak)", 
-      Action == "Small car" ~ "Small~car", 
-      Action == "No NYC->LHR" ~ "No~NYC%->%LHR"
-    ),
     Choice = dplyr::case_when(
       Choice == "100 miles/day" ~ "100~miles/day", 
-      Choice == "Bike or walk" ~ "Bike~or~walk", 
+      Choice == "Cycle or walk" ~ "Cycle~or~walk", 
       Choice == "2750 ft2" ~ "2750~ft^2", 
       Choice == "1250 ft2" ~ "1250~ft^2",
       Choice == "Fly" ~ "NYC%->%LHR%->%NYC",
+      Choice == "Virtual meeting" ~ "Virtual~meeting",
       TRUE ~ Choice
     ),
-    Action = factor(Action, levels = c("No~commute", "Smaller~home", "list(Chicken, not~steak)", 
-                                       "Small~car", "No~NYC%->%LHR")), 
-    Choice = factor(Choice, levels = c("100~miles/day", "Bike~or~walk", 
+    Choice = factor(Choice, levels = c("100~miles/day", "Cycle~or~walk", 
                                        "2750~ft^2", "1250~ft^2", 
                                        "Steak", "Chicken", 
                                        "F150", "Accord", 
-                                       "NYC%->%LHR%->%NYC", "Zoom")),
+                                       "NYC%->%LHR%->%NYC", "Virtual~meeting")),
     `CO2 emissions [Mg/year]` = `CO2 emissions [kg/year]` / 1000
   )
 
