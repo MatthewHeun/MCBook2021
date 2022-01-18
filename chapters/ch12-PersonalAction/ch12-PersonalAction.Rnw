@@ -641,16 +641,16 @@ How much will I fly?                        & Little or not at all              
 <<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example sustainability actions shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/year in a Honda Accord (100~miles round trip) vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~MgCO$_2$/year. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity and natural gas for a ``2750~ft$2$'' home vs.\\ a ``1250~ft$^2$ home. Savings are ", small_house_savings, "~MgCO$_2$/year. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/year. Savings are estimated to be ", chicken_savings, "~MgCO$_2$/year. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/year in a Ford F150 pickup truck or a Honda Accord sedan. Savings will be ", accord_savings, "~MgCO$_2$/year. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's LaGuardia airport~(LGA) and London's Heathrow airport~(LHA) vs.\\ a virtual meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~MgCO$_2$/year. \\emph{Source}: own calculations.")>>=
 co2_savings <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
                                   sheet = "savings")
-no_commute_savings <- co2_savings %>% dplyr::filter(Action == "No commute") %>% magrittr::extract2("Savings_kgCO2_year") %>% 
-  magrittr::divide_by(1000) %>% sprintf(fmt = "%#.2f")
-small_house_savings <- co2_savings %>% dplyr::filter(Action == "Smaller home") %>% magrittr::extract2("Savings_kgCO2_year") %>% 
-  magrittr::divide_by(1000) %>% sprintf(fmt = "%#.2f")
-chicken_savings <- co2_savings %>% dplyr::filter(Action == "Chicken, not steak") %>% magrittr::extract2("Savings_kgCO2_year") %>% 
-  magrittr::divide_by(1000) %>% sprintf(fmt = "%#.2f")
-accord_savings <- co2_savings %>% dplyr::filter(Action == "Accord, not F150") %>% magrittr::extract2("Savings_kgCO2_year") %>% 
-  magrittr::divide_by(1000) %>% sprintf(fmt = "%#.2f")
-no_flight_savings <- co2_savings %>% dplyr::filter(Action == "No NYC->LHR") %>% magrittr::extract2("Savings_kgCO2_year") %>% 
-  magrittr::divide_by(1000) %>% sprintf(fmt = "%#.2f")
+no_commute_savings <- co2_savings %>% dplyr::filter(Action == "No commute") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
+  sprintf(fmt = "%#.2f")
+small_house_savings <- co2_savings %>% dplyr::filter(Action == "Smaller home") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
+  sprintf(fmt = "%#.2f")
+chicken_savings <- co2_savings %>% dplyr::filter(Action == "Chicken, not steak") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
+  sprintf(fmt = "%#.2f")
+accord_savings <- co2_savings %>% dplyr::filter(Action == "Accord, not F150") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
+  sprintf(fmt = "%#.2f")
+no_flight_savings <- co2_savings %>% dplyr::filter(Action == "No NYC->LHR") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
+  sprintf(fmt = "%#.2f")
 
 co2_amounts <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
                                   sheet = "data to use") %>% 
