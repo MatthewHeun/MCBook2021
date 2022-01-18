@@ -353,7 +353,7 @@ Therefore, for world GDP, $\mft{nx}~=~0$.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Production/affluence balance}
+\subsection{Production balance of the economy}
 \label{sec:PCbalance}
 %++++++++++++++++++++++++++++++
 
@@ -384,7 +384,7 @@ Therefore, we use the terms ``production'' and ``consumption'' interchangeably.
 \label{sec:econ_metab}
 %++++++++++++++++++++++++++++++
 
-Since the economy only consumes what the economy produces and,
+Knowing that the economy only consumes what the economy produces and,
 likewise, only things that will be consumed are produced, 
 we are ready to introduce
 the metaphor of the economic metabolism.
@@ -405,9 +405,11 @@ One way of looking at Equation~\ref{eq:IPARX} is that impacts~\Iparen{}
 are the \emph{result} of economic activity.
 That is, environmental impacts are the result of society's metabolism.
 Total consumption (that is, world GDP) is $\mft{P}\times\mft{A}$ in Equation~\ref{eq:IPARX}.
-Resources~\Rparen{} are the food the economy needs to live and grow.
-The impact intensity of resources~\Xparen{} 
+Resources (the numerator of \mft{R}) are the food the economy needs to live and grow.
+Resources can be calculated by $\mft{P} \times \mft{A} \times \mft{R}$.
+The numerator of the impact intensity of resources~\Xparen{} 
 represents the wastes that the economy excretes.
+Of course, impacts can be calculated by $\mft{P} \times \mft{A} \times \mft{R} \times \mft{X}$.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -464,14 +466,25 @@ There are two ways the economy can increase GDP,
 either
 (a)~by consuming \emph{more} inputs 
 or
-(b)~by using existing inputs more \emph{efficiently} (meaning that \mft{R} goes down).
+(b)~by using existing inputs more \emph{efficaciously}%
+\footnote{
+  We use the word ``efficaciously'' deliberately here, 
+  because we mean more economic output per economic input,
+  whether that's labor, capital, energy, or materials.
+  Because the numerator and denominator
+  have different units (dollars vs.\ workers, equipment, joules, or kilograms), 
+  we have an efficacy, not an efficiency.
+}
+(meaning that \mft{R} goes down).
 Economic inputs include labor, capital, energy, and materials.
 In the long run, growing output by scaling up the inputs does not increase 
-affluence~\Aparen{} because more workers are needed to gather, process, and use the 
+affluence~\Aparen{} directly, 
+because more workers are needed to gather, process, and use the 
 additional resources.
-That leaves efficiency as the primary means of boosting affluence.
+That leaves efficacy as the primary means of boosting affluence.
 From a sustainability point of view, we should want everything to be used
-as efficiently as possible; inefficiency of any kind is not desirable.
+as efficaciously as possible; 
+doing otherwise is undesirable.
 
 However, growth in GDP has implications for sustainability.
 GDP is quantified by consumption.
