@@ -20,7 +20,7 @@ the overall need for transportation in human society.
 For example, dwellings and businesses that are spread out across a large area will
 require more transportation than if they were located close together.
 
-This chapter examines two different aspects of land use.
+This chapter examines two aspects of land use.
 The first aspect is the layout or arrangement of different uses of land.
 Which is more sustainable: to group all the farms, forests, and cities so that 
 each is as large as possible?
@@ -50,16 +50,16 @@ How can we transition to more sustainable arrangements?
 \section{Demand for land use}
 \label{sec:land_and_how_it_is_used}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Equation~\ref{eq:IPARX} shows two main drivers for our use of land:
-population~\Pparen (Chapter~\ref{chap:population}) and affluence~\Aparen 
+Equation~\ref{eq:IPARX} shows two main drivers for land use:
+population~\Pparen{} (Chapter~\ref{chap:population}) and affluence~\Aparen{} 
 (Chapter~\ref{chap:affluence}).
 The remaining two terms on the right-hand side of Equation~\ref{eq:IPARX}
-are essentially fixed by our technology. 
+are essentially fixed by technology. 
 The size of the economy is \mft{P}$\times$\mft{A}.
 The economy can grow either by increasing \mft{P} or \mft{A}.
 The next two sections will examine these sources of demand in greater detail.
 
-<<USlanduse, fig.cap="Land use in the U.S. The biggest changes over time are decreasing Grazed forest area and increasing Rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. (``Grassland'' is not used for crops.) \\emph{Source}: \\citet{USDA:2021uq}.">>=
+<<USlanduse, fig.cap="Land use in the U.S. The biggest changes over time are decreasing grazed forest area and increasing rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. (``Grassland'' is not used for crops.) \\emph{Source}: \\citet{USDA:2021uq}.">>=
 us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Land_Uses.xlsx"),
                                   sheet = "data to plot") %>% 
   dplyr::rename(
@@ -112,17 +112,18 @@ us_land_use %>%
 %++++++++++++++++++++++++++++++
 
 Figure~\ref{fig:USlanduse} shows how land is used in the United States. 
-There are 1.9 billion acres in the contiguous 48 states and
-2.3 billion acres in all 50 states.
-Of this total, agriculture takes the largest share, with grazing (34\%), 
-forestry (28\%), and crop production (20.6\%) being the three largest uses. 
-**** Can MKH verify these numbers (from the figure)? ****
+There are nearly 2.3 billion acres in the U.S.
+Of this total, agriculture takes the largest share, with grassland and pasture (29\%), 
+forestry (28\%), and cropland (17\%) being the three largest uses. 
+  \footnote{
+  Grazing includes grassland, cropland used for pasture, and grazed forest land. 
+  Forestry is forest that is not grazed. 
+  Crop production is 87\% of total cropland. The remaining is idle or used for pasture.}
 The four largest crops in the U.S. are wheat (32\% of total crops), corn (30\%),
 soybeans (20\%), and cotton (10\%). 
-That leaves just 8\% for all other crops.
+All other crops are just 8\%.
 In contrast, the area where we live and work % (red/pink areas)
-is a relatively small
-69.4 million acres (3.65\%).
+is a relatively small 70 million acres (3\%).
 The U.S. is relatively sparsely populated.
 
 %-----------------------------
