@@ -621,17 +621,50 @@ and make a difference to the planet
 \centering
 \begin{tabular}{l l}
 \toprule
-Question                                                                                              & Sustainability-beneficial answer       \\ 
+Question                                    & Sustainability-beneficial answer       \\ 
 \midrule
-What kind of house will I buy?                                                                         & Small and used                         \\
-What kind of car will I drive?                                                                        & Small and used                         \\
-\begin{tabular}[c]{@{}l@{}}How close will I live to work, \\ school, church, and stores?\end{tabular} & Close enough to allow walking and cycling \\
-How will I eat?                                                                                       & Close to the bottom of the food chain \\   
-How much will I fly?                                                                                  & Little or not at all                   \\
+How close will I live to work,              & \multirow{2}{*}{Close enough to allow walking and cycling} \\
+school, church, and stores?                 & \\
+What kind of house will I buy?              & Small and used                         \\
+How will I eat?                             & Close to the bottom of the food chain \\   
+What kind of car will I drive?              & Small and used                         \\
+How much will I fly?                        & Little or not at all                   \\
 \bottomrule
 \end{tabular}
 \label{tab:personal_energy_actions}
 \end{table}
+
+<<CO2-Savings>>=
+co2_savings <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
+                                  sheet = "data to use") %>% 
+  dplyr::mutate(
+    Action = dplyr::case_when(
+      Action == "No commute" ~ "No~commute", 
+      Action == "Smaller home" ~ "Smaller~home", 
+      Action == "Chicken, not steak" ~ "list(Chicken, not~steak)", 
+      Action == "Accord, not F150" ~ "list(Accord, not~F150)", 
+      Action == "No NYC->LHR" ~ "No~NYC%->%LHR"
+    ),
+    Action = factor(Action, levels = c("No~commute", "Smaller~home", "list(Chicken, not~steak)", 
+                                       "list(Accord, not~F150)", "No~NYC%->%LHR")), 
+    Savings_MgCO2_year = Savings_kgCO2_year / 1000
+  )
+
+x_breaks <- levels(co2_savings$Action)
+x_labels <- parse(text = x_breaks)
+
+co2_savings %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Action, y = Savings_MgCO2_year)) + 
+  ggplot2::geom_bar(stat = "identity", fill = bar_colour) + 
+  
+  ggplot2::scale_x_discrete(labels = parse(text = levels(co2_savings$Action))) + 
+
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = expression("Emissions savings [Mg" * CO[2] * "/year]")) + 
+  
+  MKHthemes::xy_theme() + 
+  ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1))
+@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -650,8 +683,8 @@ How much will I fly?                                                            
 
 Note: for
 Q12.\ref{question:mcgregror}--Q12.\ref{question:lstiburek} 
-it would be helpful to 
-read more in depth about Edgar McGregor, \emph{Juliana v.\ United States},
+it will help to read about
+Edgar McGregor, \emph{Juliana v.\ United States},
 Wangari Maathai, and Joseph Lstiburek.
 
 \begin{questions}
