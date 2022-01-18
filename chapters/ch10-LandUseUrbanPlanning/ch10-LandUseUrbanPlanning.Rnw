@@ -31,7 +31,7 @@ structures, this chapter considers dwellings and businesses collectively.
 We consider the sustainability implications of spacing, density, and how 
 transportation links between locations are affected by layout.
 
-The second aspect is one of allocation, that is, \emph{how much} of each of the 
+The second aspect is allocation, that is, \emph{how much} of each of the 
 different uses for land we will have.
 Land can be used for agriculture, recreation, urban or suburban dwellings, or 
 not allocated for direct human use, that is, left as wilderness.
@@ -133,7 +133,7 @@ The U.S. is relatively sparsely populated.
 As mentioned in Chapter~\ref{chap:agriculture}, population drives agriculture,
 and agriculture is \emph{the} most prevalent way we use land.
 As world population has grown, the additional humans have been fed (in part) by
-converting more land to agriculture (and cities) over time.
+converting more land to agriculture over time.
 
 %-----------------------------
 \paragraph{Urban areas}
@@ -145,7 +145,7 @@ Another trend shown by land-use statistics is greater urbanization.
 The demand for housing is disproportionately for urban housing
 because of a long-term trend of migration to urban areas. 
 Urban areas have much higher GDP per area.
-Thus, pursuit of wealth, that is, a desire for greater affluence~\Aparen{} drives 
+Thus, pursuit of wealth, that is, a desire for greater affluence~\Aparen{}, drives 
 migration from rural areas to urban ones.
 
 %++++++++++++++++++++++++++++++
@@ -154,8 +154,8 @@ migration from rural areas to urban ones.
 %++++++++++++++++++++++++++++++
 In contrast to the needs for food and housing, which are proportional to the population,
 affluence is not directly tied to population.
-That is, any given population could have any level of affluence.
-The economy, as society's metabolism, ingests resource (particularly energy) and
+Any given population could have any level of affluence.
+The economy, as society's metabolism, ingests resources (particularly energy) and
 excretes wastes.
 
 %-----------------------------
@@ -173,11 +173,11 @@ In particular, for hydro, solar, and wind, correct siting is a key consideration
 for how productive each power type will be.
 Not all locations are suitable for hydro power. Or wind. Or solar.
 
-In addition to energy, the economy needs material resources
-(see Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use}).
+In addition to energy, the economy needs material resources;
+see Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use}.
 A major example is timber, which is a key ingredient in construction and many
 consumer goods.
-Figure~\ref{fig:USlanduse} shows that growing timber is a major U.S.\ use of land.
+Figure~\ref{fig:USlanduse} shows that growing timber is a major use of U.S.\ land.
 
 A major cause of deforestation in the Amazon basin, for instance, is 
 extraction of mineral wealth.
@@ -259,16 +259,17 @@ The purple bars indicate carbon stored in the soil below the surface.
 %(You can see why peat is used as a fuel in same parts of the world.)
 Tropical and boreal forests, and grasslands 
 are all promising candidates for carbon sequestration.
-Unfortunately, the \emph{amount} of wetlands is small. 
+Although the capacity of wetlands to carbon is large,
+unfortunately, the \emph{amount} of wetlands is small. 
 In contrast, the opportunities for forest and grasslands are quite extensive.
 Projects 10.1 and 10.2 explore technical aspects of forest and grassland 
 restoration/carbon sequestration.
 
-Therefore, consistent with earlier chapters, the drivers for land use are the 
-terms of the IPARX equation,~\Pparen{},~\Aparen{},~\Rparen{}, and~\Xparen{}.
-**** Have not made the case that \mft{R} and \mft{X} are drivers, have you? ---MKH ****
-Resources go with R.
-Economic activity drives wastes, which is X.
+Therefore, consistent with earlier chapters, the drivers for land use are 
+the~\Pparen{} and~\Aparen{} terms of the IPARX equation,
+resource use by the economy (\mft{P}$\times$\mft{A}$\times$\mft{R}), and
+the ecosystem services needed to eliminate the wastes produced by economic activity
+(\mft{P}$\times$\mft{A}$\times$\mft{R}$\times$\mft{X}).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -276,18 +277,20 @@ Economic activity drives wastes, which is X.
 \label{sec:land_sustainability_challenges}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Land use changes over time and tracking those changes is important for understanding
-relationships between land use and sustainability challenges (for example, climate change).
+Humans' use of the land has changed over time. 
+Tracking those changes is important for understanding relationships between
+land use and sustainability challenges (for example, climate change).
 The data for surveys such as Figure~\ref{fig:USlanduse} are produced from satellite imagery.
 The European Space Agency recently released a dataset for \emph{global} land use over
 a 24-year period (1992-2015) as part of a climate change initiative (CCI).
 The Inter-governmental Panel on Climate Change (IPCC) uses 9 categories for land-use
 classification: 
 agriculture, forest, grass, wetland, settlement, shrubland, sparse, bare, and water.
-Humans altered almost 1\% of total land area per year (22\% in 24 years)
+Humans altered almost 1\% of total land area per year (22\% in 24 years~\cite{Nowosad2019})
 across all land-use categories.
 
-**** What does ``altered'' mean in previous sentence? ---MKH ****
+This section examines sustainability challenges related to the way humans use land
+for housing, for transportation, and for agriculture.
 
 %++++++++++++++++++++++++++++++
 \subsection{Housing or urban sustainability}
@@ -374,7 +377,7 @@ sustainability challenge of the next section is a ``can growth continue forever'
 
 Another way of thinking about the role of transportation in urban environments is
 that transportation creates places worth going to.
-Consider for example a restaurant downtown that serves very tasty food. 
+Consider, for example, an urban restaurant that serves very tasty food. 
 If you can't get to it, it doesn't matter how good the food is. 
 The potential customer base is restricted to the number of people that can get 
 to the restaurant.
@@ -390,8 +393,9 @@ A desirable city center is pleasant, walkable, human scale, and space efficient.
 Being desirable makes urban areas valuable, which, in turn, creates the tax base 
 to sustain infrastructure. 
 
-In 2018, just 31 counties produced 32\% of U.S. GDP. % https://www.visualcapitalist.com/america-land-use/
-Most of these were around major U.S. metropolitan areas, such as New York City,
+In 2018, just 31 counties (out of 3141, or under 1\%)produced 32\% of U.S. GDP. 
+% https://www.visualcapitalist.com/america-land-use/
+Most of these were around major U.S.\ metropolitan areas, such as New York City,
 Los Angeles, or Chicago.
 A large part of the value of cities comes from the concentration of people,
 who are both a resource and a market.
@@ -403,8 +407,8 @@ that would not have enough appeal to be viable in a rural or small-town setting.
 Examples include specialty grocery stores, a school for ballroom dance, or an exotic pet store.
 
 For a fixed population density, a city can only grow its population by expanding.
-(By the way, population density is %strongly influenced)
-determined by local building codes and zoning regulations.)
+% (By the way, population density is %strongly influenced)
+% determined by local building codes and zoning regulations.)
 As ``rings'' are added to the city and the diameter of the city grows, the time
 it takes to travel across the city grows as well. 
 At some point, the city diameter becomes so big that it becomes infeasible to 
@@ -661,9 +665,8 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
 \item Consider the process of creating more land. 
       Typically, a coastal area is ``filled in,'' turning ocean or wetland into 
       dry ground. 
-      A common reason to do so is airport expansion. 
-      More runways are needed to handle greater traffic or larger runways are needed
-      to handle larger aircraft. 
+      For example, an airport in a coastal city might extend its runways into the 
+      ocean to accommodate more traffic or larger aircraft. 
       What are the environmental, social, and economic tradeoffs?
       Do you think future generations will be happy to have the land or shaking
       their heads at what was done to our (their) coastline?
@@ -685,10 +688,11 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       What would be the sustainability implications of a move to extra-planetary 
       resources?
       Are there social consequences associated with moving wealth away from owning 
-      land to owning space rocks, intellectual property, or just plain old money?
-      Are there externalities (negative consequences to other people) from owning
-      land? Are there benefits that accrue to others for free (the reverse of 
-      externalities)?
+      land to owning space rocks, intellectual property, or just plain-old money?
+      Are there negative externalities (negative consequences to other people) 
+      from owning land? 
+      Are there positive externalities to owning land (benefits that accrue to 
+      others for free)?
 
 \item The Great Green Wall is a desert-fighting project in Africa. The aim is to
       stop the south-ward advance of the Sahara desert. 
@@ -722,7 +726,7 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       Other species do not coexist as well with humans. 
       Examples of these include wolves, wolverine, and grizzly bears.
       \begin{enumerate}
-      \item How do we decide and who makes the decisions about how much land we share and
+      \item How do we decide (and who makes the decisions) about how much land we share and
       how much land we spare?
       \item What does land sharing versus land sparing say about our conservation priorities?
       \end{enumerate}
@@ -788,10 +792,10 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
 
 \item Research the field of urban planning.  How has it changed over time?  
       What are its current goals?  
-      In what ways sustainability more prominent today than 50 years ago?
+      How is sustainability more prominent today than 50 years ago?
 
-\item Urban planning can look very different in a growing economy (e.g., China) 
-      compared to an established economy (e.g., United Kingdom).  
+\item Urban planning can look very different in a growing economy (such as China) 
+      compared to an established economy (such as the United Kingdom).  
       Compare and contrast the questions urban planners face and the goals for urban 
       planning in each type of economy.
 
