@@ -31,18 +31,21 @@
 This chapter covers transportation and
 is the second of four chapters in Part~\ref{part:sustainability_challenges}
 to discuss areas of life where sustainability challenges are relevant and important.
-Today, transportation services are provided by cars, trucks, trains, boats, and planes. 
+Today, transportation services are provided mostly 
+by cars, trucks, trains, boats, and planes. 
 Energy for transportation is 
-supplied almost exclusively by petroleum-derived liquid fuels,
+supplied almost exclusively by liquid fuels,
+derived from petroleum,
 because those fuels have high energy densities,\index{energy density!liquid fuels}
 as measured by both energy-to-mass and energy-to-volume ratios.
-In the U.S.,\ transportation emits more carbon than any other sector ---
+In the U.S.,\ transportation emits more carbon 
+than any other sector, 
 \Sexpr{US_CO2_by_sector %>% 
 dplyr::filter(Sector == "Transportation") %>% 
 magrittr::extract2("Proportion [\\%]") %>% 
 round(1)}\% 
-of all U.S.\ CO$_2$ emissions in 2018
-(see Table~\ref{tab:corrected_co2_emissions}).
+of all U.S.\ CO$_2$ emissions in 2018;
+see Table~\ref{tab:corrected_co2_emissions}.
 Moreover, CO$_2$ emissions from transportation are linked to other sectors.
 For example, household location (Chapter~\ref{chap:households}) 
 determines commuting distances, and therefore CO$_2$ emissions, for
@@ -55,11 +58,10 @@ This chapter, and the two following chapters, consider the many ways in which
 physical location, economic activity, energy, and resource consumption are interrelated.
 \end{mcframe}
 
-This chapter begins by describing
-demand for transportation services and
-discussing drivers for that demand.
+The next section describes 
+demand for transportation services and discusses sources of that demand.
 Thereafter, sustainability challenges for transportation are explained.
-Next, options for a sustainability transition are explored.
+Next, options for a sustainability transition in transportation are explored.
 A summary concludes.
 
 
@@ -87,7 +89,7 @@ In contrast, Figure~\ref{fig:tonnekm_by_mode} shows that
 freight transport demand is satisfied by a variety of modes.
 
 
-<<passengerkm_by_mode, fig.scap="Personal transport by mode", fig.cap="U.S.\\ passenger-km of personal transport by mode. ``Intercity'' is rail travel via Amtrak. ``Transit'' is public transit of all types (ferry, subway, bus, and others). ``Air'' is U.S.\\ domestic air carriers. ``Highway'' is automobile traffic. \\emph{Source}: \\citet{passenger_km}.">>=
+<<passengerkm_by_mode, fig.scap="Personal transport by mode", fig.cap="U.S.\\ passenger-km of personal transport by mode. ``Intercity'' is rail travel via Amtrak. ``Transit'' is public transit of all types (ferry, subway, bus, and others). ``Air'' is U.S.\\ domestic air carriers. ``Highway'' is automobile traffic. ``pass'' means passenger. \\emph{Source}: \\citet{passenger_km}.">>=
 passenger_km_by_mode <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Passenger_kms.xlsx"), 
                    sheet = "data to plot") %>% 
   tidyr::pivot_longer(cols = -Year, names_to = "mode", values_to = "passkm_millions") %>% 
@@ -142,13 +144,12 @@ tonne_km_by_mode %>%
 Sources of demand for transportation services can be assessed
 on the macro scale, on the micro scale, and 
 in the commercial and industrial sectors.
-
 At the macro scale, 
 economic activity is a large driver of demand for transport.
 The U.S.\ Bureau of Transportation Statistics (BTS)
 calculates a monthly measure of transportation services 
-output~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}
-called the ``Transportation Services Index'' (TSI),\index{transportation services index}
+output called the ``Transportation Services Index'' 
+(TSI)~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk},\index{transportation services index}
 which is a weighted and indexed measure of
 freight traffic and passenger transport 
 in the for-hire transportation industries.
@@ -202,7 +203,7 @@ travel for business and pleasure.
 For daily work commutes, Figure~\ref{fig:commuter_percentage_by_mode}
 shows the percentage of workers that use each mode of transportation.
 The low share of multipassenger transportation modes (carpool and mass transit)
-indicates that large reductions to energy consumption and CO$_2$ emission could be obtained 
+indicates that large reductions to energy consumption and CO$_2$ emissions could be obtained 
 with a society-wide transition to other commuting modes besides driving alone.
 That said, the fact that commuting behavior has changed little in the years covered by
 Figure~\ref{fig:commuter_percentage_by_mode} indicates that 
@@ -242,7 +243,7 @@ Consumer demand for freight transport services
 has grown in recent years due to increased online shopping.
 
 Having explored demand for transportation services,
-the next section discussed sustainability challenges associated with 
+the next section discusses sustainability challenges associated with 
 transport.
 
 
@@ -257,7 +258,11 @@ the first mile problem, and
 particulate matter (PM) and
 CO$_2$ emissions from burning fossil fuels.
 
+
+%..............................
 \paragraph{The last mile}
+%..............................
+
 A significant challenge to higher occupancy cars and higher capacity trucks
 is the \emph{last mile problem}~\cite{World-Economic-Forum:2020wf}\index{last mile problem},
 the expensive and time-intensive transport of goods
@@ -269,8 +274,8 @@ The rise of e-commerce has caused unparalleled growth in last-mile transport
 of freight in recent years. 
 The result is rising energy consumption and
 CO$_2$ emissions from commercial last-mile deliveries.
-Figure~\ref{fig:last_mile} shows percentages of total delivery cost for several parts of a delivery journey, and
-the largest portion is the last mile.
+Figure~\ref{fig:last_mile} shows percentages of total delivery cost for several parts of a delivery journey, 
+the largest portion being the last mile.
 
 <<last_mile, fig.scap="Percentage of delivery cost by part of journey", fig.cap="Percentage of delivery cost by part of journey. \\emph{Source}: Honeywell via \\emph{Business Insider} \\cite{Dolan:2018wj}.">>=
 last_mile <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "LastMile.xlsx"), 
@@ -295,7 +300,11 @@ last_mile %>%
                  axis.ticks = ggplot2::element_blank())
 @
 
+
+%..............................
 \paragraph{The first mile}
+%..............................
+
 Another sustainability challenge for transport is the \emph{first mile problem}\index{first mile problem}
 for mass transit.
 In low-population-density areas, 
@@ -304,7 +313,11 @@ expensive in both monetary and energy terms.
 The first mile problem is reduced in urban areas with high population density, 
 especially if commuters can walk or bike to bus, train, or subway stations.
 
+
+%..............................
 \paragraph{Particulate matter}
+%..............................
+
 A third sustainability challenge associated with transport is 
 particular matter (PM\index{particulate matter}). 
 Concerns about the effects of PM
@@ -314,20 +327,25 @@ PM emissions are ``the main contributor to human health effects
 PM ``is also the form in which most of the long-range transport 
 of sulfur and nitrogen-containing pollutants occurs''~\cite{Fowler2020}.
 Hippocrates (circa 400 BC) was concerned about the effects of wood smoke on human health.
-Later, when coal began to be used as a fuel for home heating, power generation, and
-in industrial processes, coal-derived PM and sulfur compounds were additional concerns. 
-The introduction of internal combustion engines, which were quite ``dirty,'' for 
-transportation intensified air-quality issues, particularly in urban areas.
-Since the mid-twentieth century, air quality in North America, Europe and Japan
+Later, when coal emerged as a fuel for home heating, power generation, and
+industrial processes, coal-derived PM and sulfur compounds were additional concerns. 
+The introduction of ``dirty'' internal combustion engines 
+for transport intensified air-quality issues, particularly in urban areas.
+Since the mid-twentieth century, air quality in North America, Europe, and Japan
 has improved.
 However, emissions in South and East Asia rose in the late twentieth and early 
 twenty-first centuries. 
 Global SO$_2$ emissions from transport peaked about 1990, and
-global NO$_x$ emissions peaked around 2018. 
-Global ammonia emissions, a key contributor to PM, continues to grow, however.
+global NO$_\text{x}$ emissions peaked around 2018. 
+Global ammonia emissions, a key contributor to PM, 
+continue to grow, however.
 
-\paragraph{Greenhouse gas emissions}
-The fourth sustainability challenge of transport is greenhouse gas emissions.
+
+%..............................
+\paragraph{CO$_2$ emissions}
+%..............................
+
+The fourth sustainability challenge of transport is CO$_2$ emissions.
 Figure~\ref{fig:transport_GHG_emissions} shows trends of CO$_2$ transportation emissions by mode
 over time.
 Passenger cars are the greatest single cause of CO$_2$ emissions from transportation.
@@ -337,7 +355,7 @@ The CO$_2$ emissions peak was likely caused by a combination of factors:
 record-high prices for liquid transportation fuels in the runup to the Great Recession,
 which led drivers to prefer higher-efficiency vehicles, 
 which led to a decline total CO$_2$ emissions, 
-even as delivery of transportation services rose through the 2000s;
+even as consumption of transportation services rose through the 2000s;
 see Figure~\ref{fig:TSI}.
 
 
@@ -384,7 +402,7 @@ to achieve more sustainable passenger and freight transport.
 To improve the sustainability of the modern transportation system,
 three broad options exist: 
 mode shifting, 
-improving fuel economy and 
+improving fuel economy, and 
 transitioning to sustainable energy sources.
 
 
@@ -399,9 +417,9 @@ Whether mode shifts are possible depends on
 land use patterns and urban design. 
 Areas with high population density (cities) can be served by economical 
 mass transit systems.
-See Chapter~\ref{chap:land_use_urban_planning} 
+(See Chapter~\ref{chap:land_use_urban_planning} 
 for more details of the sustainability implications 
-of land use and urban planning. 
+of land use and urban planning.)
 
 
 %++++++++++++++++++++++++++++++
@@ -411,17 +429,17 @@ of land use and urban planning.
 
 Improving fuel economy will reduce the 
 energy intensity of economic activity 
-(\:\!\mft{R} in Equation~\ref{eq:IPARX}), 
+(\:\!\REp{} in Equation~\ref{eq:IPARX}), 
 because the same economic activity 
 could be accomplished with less fuel consumption
 for transportation.
 
-Vehicle fuel economy (an example of an efficacy, not an efficiency)
+Vehicle fuel economy (an efficacy, not an efficiency)
 is usually quantified in distance traveled per volume
 of fuel consumed\index{efficiency!fuel}\index{efficiency!vehicle}.
 The U.S.\ fleet-average fuel economy of cars and trucks has varied 
-significantly over the past few decades.
-(See Figure~\ref{fig:US_mpg}.)
+significantly over the past few decades;
+see Figure~\ref{fig:US_mpg}.
 
 
 <<US_mpg, fig.scap="Car, truck, and fleet fuel economy", fig.cap="U.S.\\ car, truck, and fleet fuel economy. \\emph{Sources}: \\citet{Hicks:2014tn} and \\citet{NHTSA2019tc}.">>=
@@ -461,7 +479,7 @@ as car fuel economy,
 because most vehicles on the road were cars.
 However, the increasing popularity of light-duty trucks and sport utility vehicles in the U.S.\
 means that the overall fleet fuel economy
-is now about midway between the average car and average truck fuel economies
+is now about midway between the average car and average truck fuel economies.
 If the proportion of cars and trucks were the same today as it was in the early 1970s,
 overall vehicle fleet fuel economy in the U.S.\ would be about 28~miles/gallon,
 or 16\% higher than the current value of 24~miles/gallon.
@@ -490,18 +508,18 @@ is quantified in units of passenger-km/liter or tonne-km/liter
 for passenger transport and freight transport, respectively.
 This simple shift from machine efficacy (miles/gallon) 
 to transport service efficacy (passenger-km/liter)
-exposes the opportunity presented by Figure~\ref{fig:commuter_percentage_by_mode}.
+exposes the sustainability opportunity presented by Figure~\ref{fig:commuter_percentage_by_mode}.
 When more than three-quarters of all commutes are taken in single-occupant vehicles,
 a simple way to improve the effectiveness of passenger transport is to increase
-the occupancy rate of vehicles.
+the occupancy of vehicles.
 Similarly for freight transport,
 the simplest way to increase transportation efficiency is to ensure that trucks and trains
 are filled to capacity when delivering freight.
 The benefits of such strategies are evident when using the 
 a transportation service efficacy metric instead of an energy efficiency metric
 to evaluate the effectiveness of transportation services. 
-See page~\pageref{page:efficiency_efficacy} for more details about
-the differences between energy efficiency and energy service efficacy.
+(See page~\pageref{page:efficiency_efficacy} for more details about
+the differences between energy efficiency and energy service efficacy.)
 
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -523,7 +541,8 @@ for a fuller discussion of the issues surrounding these concepts.
 
 Transitioning to a sustainable energy system
 built upon renewable energy generation will reduce
-the impact intensity of resources (\;\!\mft{X} in Equation~\ref{eq:IPARX}), 
+the impact intensity of resource extraction and consumption
+(\;\!\mft{X} in Equation~\ref{eq:IPARX}), 
 because consumption of renewable energy
 (for instance, an electric vehicles run by solar electricity)
 has less environmental impact than consumption of 
@@ -565,10 +584,12 @@ in biofuel production~\cite{International-Energy-Agency:2019wj}.
 Although biofuel consumption has risen dramatically since 2000, 
 the rise is mostly due to ethanol blending in gasoline.
 Unfortunately, the energy return on investment for ethanol production is
-very poor, barely above 1 --- see Table~\ref{tab:eroi}.
+very poor, barely above 1.0; 
+see Table~\ref{tab:eroi}.
+Furthermore, ethanol production is very land-intensive.
 ``The entire state of Iowa, if planted in corn, 
 would yield approximately five days of gasoline alternative''~\cite{Cleveland:2006ux}.
-In addition, planting additional acres of corn, increases impacts of erosion and chemical runoff.
+In addition, planting additional acres of corn increases impacts of erosion and chemical runoff.
 Thus, corn-derived ethanol, at least, is unlikely to provide a long-term solution
 for sustainable transport, and may not be sustainable in a number of other dimensions.
 
@@ -608,9 +629,9 @@ and mineral resource depletion\index{mineral resource depletion})
 across the full life cycle\index{life cycle!automobiles}
 of automobile use,
 from base vehicle manufacturing to end of life disposal,
-assuming 150,000~km service.
+assuming 150,000~km service life.
 Internal combustion engine (ICE) vehicles\index{vehicle!internal combustion engine}
-are considered to consume regular gasoline (gas).
+are considered to consume regular gasoline.
 Electric vehicles (EVs)\index{vehicle!electric} are modeled as using electricity 
 generated by two different primary fuel mixes:
 a high proportion%
@@ -622,7 +643,7 @@ a high proportion%
   The U.S.\ average electricity mix today (2020) 
   is also about 20\% renewable~\cite{U.S.-Energy-Information-Agency:2021tp}, 
   while the European mix is closer to 30\% renewable.
-  The UK electricity mix is pushing toward 40\% renewable (37.1\%)~\cite{Evans:2020vj}.
+  The UK electricity mix is pushing toward 40\% renewable~(37.1\%)~\cite{Evans:2020vj}.
 }
 %
 of renewables~(20\%)
@@ -636,14 +657,15 @@ However, EVs \emph{can} provide benefits in terms of global warming potential~(G
 relative to ICE vehicles
 \emph{if} the electricity source includes renewables (as in the ``Ren20'' electricity mix), 
 because of lower lifetime fuel/electricity emissions.
-In the case of the European electricity mix,
+In the case of the Ren20 electricity mix,
 the global warming benefits of EVs are achieved
 despite much larger emissions from battery manufacturing.
 However, the global-warming benefits of EVs evaporate
 when the electricity is generated from coal,
 because of higher electricity-related emissions.
 \citet[p.~61]{Hawkins_2012} point out that
-``[e]nvironmental evaluations relying solely on fuel and powertrain efficiencies\index{efficiency!powertrain}
+``[e]nvironmental evaluations relying solely 
+on fuel and powertrain efficiencies\index{efficiency!powertrain}
 miss key differences associated with the production of different vehicle types and
 could lead to misguided comparisons across technologies.''
 
@@ -676,8 +698,11 @@ Hawkins_life_cycle %>%
 
 
 
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+\label{mcframe_EV}
 Automobile technology is one of many arenas in which sustainability tradeoffs are observed.
 Under the right conditions,
 EVs can reduce global warming impact relative to ICE vehicles
@@ -696,8 +721,9 @@ because EVs have much greater GHG emissions during manufacturing
 than ICE vehicles.
 Put another way, an EV that is totaled shortly after manufacture
 will never achieve its potential emissions reductions.
-\label{mcframe_EV}
+
 \end{mcframe}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -714,8 +740,8 @@ were discussed.
 Finally, transitions to a sustainable transport system were discussed
 including transport efficacy, biofuels, and electric vehicles.
 
-The next chapter discusses Agriculture, another area in which 
-sustainability challenges are important ans urgent.
+The next chapter discusses agriculture, 
+another area in which sustainability challenges are important and urgent.
 
 
 
