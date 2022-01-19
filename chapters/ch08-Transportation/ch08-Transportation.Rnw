@@ -525,12 +525,10 @@ the differences between energy efficiency and energy service efficacy.)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 The viability of a ``sustainability through services'' strategy
 for the world economy is the subject of some debate.
 See \citet{Henriques_2010} and \citet{Fix:2019aa} and the references therein
 for a fuller discussion of the issues surrounding these concepts.
-
 \end{mcframe}
 
 
@@ -701,7 +699,6 @@ Hawkins_life_cycle %>%
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 \label{mcframe_EV}
 Automobile technology is one of many arenas in which sustainability tradeoffs are observed.
 Under the right conditions,
@@ -721,7 +718,6 @@ because EVs have much greater GHG emissions during manufacturing
 than ICE vehicles.
 Put another way, an EV that is totaled shortly after manufacture
 will never achieve its potential emissions reductions.
-
 \end{mcframe}
 
 
