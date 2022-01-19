@@ -579,7 +579,6 @@ depends on the strong or weak sustainability of the recycling process.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 Economist Nicholas Georgescu-Roegen proposed a fourth law of thermodynamics,
 stating that complete recycling of matter is impossible~\cite{Georgescu-Roegen:1986aa}
 because material resources are subject to irreversible degradation.
@@ -844,7 +843,6 @@ energy_per_capita %>%
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 History can be seen in time series energy graphs.
 In particular, 
 the effect of the 1970s oil crises can be seen in Figure~\ref{fig:EnergyPerPersonGraph}.
