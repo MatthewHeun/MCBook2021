@@ -280,10 +280,15 @@ intensity of resources, particularly for the prime example of this book
 \label{sec:individuals+choices+comtemination_intensity}
 %..............................
 
-Individuals can install \emph{renewable} energy generation systems
-(typically solar PV, solar heating, or wind) 
+Individuals can choose to install renewable energy generation systems
 to reduce fossil energy consumption
 and limit CO$_2$ emissions. 
+Examples include
+rooftop solar photovoltaic electricity panels, 
+rooftop solar water heaters, 
+small wind turbines, and
+microhydro power systems.
+
 Alternatively, individuals can choose to pay a premium to purchase
 renewable electricity from the grid.
 Finally, pursuit of \emph{net zero} energy status can encourage
@@ -350,7 +355,8 @@ see Figure~\ref{fig:energy_efficient_home}.
 Choosing \emph{efficient} (Energy Star)\index{Energy Star}
 appliances and lights will improve energy efficiency, 
 reduce energy consumption, and 
-reduce CO$_2$ emissions so long as appliance and lighting usage is unchanged.
+reduce CO$_2$ emissions so long as appliance and lighting usage is unchanged
+(to avoid the rebound effect and backfire).
 Even better, choose \emph{not} to use some appliances
 by, for example, 
 line drying clothes.
@@ -358,25 +364,15 @@ Choosing to live in \emph{high-occupancy} housing
 (with extended family or in co-housing arrangements)
 can reduce energy and resource requirements per person.
 
-At the intersection of households and resource consumption, 
-individuals can choose to install renewable energy systems at their dwellings.
-Examples of renewable energy systems available for homes include
-rooftop solar photovoltaic electricity panels, 
-rooftop solar water heaters, 
-small wind turbines, and
-microhydro power systems.
-Installing such a system will reduce the rate at which 
-households will consume carbon-intensive resources.
-
 
 %..............................
 \paragraph{Individual+Education+Housing}
 %..............................
 
-Of course, knowing which of the choices above to make requires educating yourself
-about options and being aware of tradeoffs.
+Of course, knowing which choice to make requires educating yourself
+about options and being aware of tradeoffs for your local situation.
 All consumer purchasing decisions have implications for sustainability through the 
-broader economy and the rebound effect.
+broader economy and via the rebound effect.
 For example, there are diminishing returns to insulation. 
 Buying and installing insulation in your house has positive sustainability 
 implications---to a point.
@@ -417,7 +413,7 @@ living due to the economies of scale.
         mineral resource depletion than the bicycle; see Figure~\ref{fig:auto_gwp} 
         and associated discussion.
         For more details on desirable characteristics of
-        commuting bicycles, see Not Just Bikes 
+        commuting bicycles, see ``Not Just Bikes''
         ``\href{https://www.youtube.com/watch?v=aESqrP3hfi8}{Why Dutch Bikes are Better}'' 
         (February 8, 2021).
         \emph{Sources}: 
@@ -427,19 +423,19 @@ living due to the economies of scale.
 \end{figure}
 
 There are many things that individuals can do to make their lives more sustainable 
-in transport.
+in transportation.
 
 \paragraph{Individual+Choices+Transportation}
 Individuals can decide which vehicles to buy or lease.
 Choosing a \emph{used} vehicle
-will prevent additional carbon being embodied in the vehicle itself.
+will prevent additional carbon being embodied in a new vehicle.
 Choosing a \emph{smaller} car will reduce carbon emissions 
 associated with commuting.
 Individuals should not ``over buy'' cars.
 (If a truck is needed once per year to pull a trailer, rent it.)
 Choosing an electric vehicle will reduce CO$_2$ emissions
-in those places where grid electricity contains a large proportion of renewables.
-(See Section~\ref{sec:electric_vehicles} and Figure~\ref{fig:tesla}.)
+in those places where grid electricity contains a large proportion of renewables;
+see Section~\ref{sec:electric_vehicles} and Figure~\ref{fig:tesla}.
 Don’t fly.
 % Individuals can choose how to operate their vehicles (or not).
 % Walking or using mass transit instead driving a personal vehicle is high-impact 
@@ -456,7 +452,7 @@ further reduces CO$_2$ emissions.
 City dwellers can choose to not buy a car at all, preferring
 on-demand rental vehicles from companies
 such as Uber, Lyft, or Zip Car
-when public transport will not meet their needs.
+when public transportation will not meet their needs.
 To reduce transportation emissions from goods and service consumption, 
 local purchasing can be pursued.
 
@@ -492,40 +488,49 @@ local purchasing can be pursued.
         \label{fig:food_purchasing_options}
 \end{figure}
 
-Individuals have considerable choice of what to eat, where to obtain food, and
+Some individuals have considerable choice of what to eat, where to obtain food, and
 how to prepare food. 
 This section presents two example ``sentences for sustainability'' related to 
 food production and consumption.
 
+
+%..............................
 \paragraph{Individual+Choices+Agriculture}
+%..............................
+
 Probably the most important and high-impact activity an individual can take around
 food is to reduce as much as possible the amount of food waste they generate.
-Any wasted food embodies resources (such as energy) and emissions.
-Individuals can adopt a climate-friendly or climate-friendlier diet, that is, to
-improve the sustainability of \emph{what you eat}.
-Typically these involve reductions to meat consumption, particularly beef.
-There are a variety of ways to improve the sustainability of \emph{food production}.
-Recall that what is least expensive is often the most environmentally friendly.
-Cooking at home minimizes packaging and is usually the cheapest option (compared 
-to say, buying prepared foods or eating at a restaurant).
-Buy \emph{ingredients} (see Figure~\ref{fig:suburban_produce_aisle}), then 
-\emph{make} food.
-One step beyond that would be to raise your own food by gardening or harvest 
-wild food, for instance by hunting, fishing, and/or gathering wild plants. 
-One side benefit to such foraging is an investment in the state of the ecosystem.
-A partial measure is buying direct from local farmers, perhaps at a farmers' 
-market (see Figure~\ref{fig:urban_farmers_market}) or through community-supported 
-agriculture.
+All food embodies resources (such as energy) and emissions.
+Wasting food means that no benefits come from those embodied resources and emissions.
+After minimizing food waste, 
+individuals can adopt a climate-friendly or climate-friendlier diet.
+Typically climate-friendly diets involve reductions to meat consumption, particularly beef.
 
+There are a variety of ways to improve the sustainability of \emph{food production}.
+Cooking at home minimizes packaging and is usually the least expensive option
+(compared to, say, buying prepared foods or eating at a restaurant).
+Buy \emph{ingredients} (Figure~\ref{fig:suburban_produce_aisle}), then 
+\emph{make} food.
+Even better, buy food directly from local farmers, perhaps at a farmers' 
+market (Figure~\ref{fig:urban_farmers_market})\index{farmers' market} or through community-supported 
+agriculture\index{community supported agriculture}.
+A further step is raising your own food by gardening or by harvesting 
+wild food (by hunting, fishing, and/or gathering wild plants). 
+One side benefit to such foraging is an investment in the state of the ecosystem.
+
+
+%..............................
 \paragraph{Individual+Research+Agriculture}
-The examples in the previous paragraph are based on general assumptions about what
-is most likely to be sustainable behavior.
+%..............................
+
+The examples in the previous paragraph are based on general assumptions about 
+activities that are most likely to be sustainable. 
 You could collect personal data to quantify what is most sustainable in your 
 particular context or situation.
-For example, perhaps you could develop a new meatless version of a favorite recipe.
-Another example would be to collect data on what plants do best in your garden and
-to record what inputs (water, fertilizer, your time) are required, which would
-allow you to optimize your gardening for maximum sustainability impact.
+For example, you could develop a new meatless version of a favorite recipe.
+Or you could collect data on what plants do best in your garden and
+record what inputs (water, fertilizer, your time) are needed, 
+allowing you to optimize your gardening for minimum environmental impact.
 
 
 %++++++++++++++++++++++++++++++
@@ -566,10 +571,9 @@ land use and urban planning.
 \paragraph{Individual+Choices+Land Use}
 %..............................
 
-Where you live is a key land-use decision in the sense that it determines how you
-relate to all the land around you, mainly through your transportation.
-However, how you use your domicile is also important.
-How many people in your household? 
+Where you live is a key land-use decision, because it determines how you
+relate to all the land around you, mainly through transportation.
+However, how you use your dwelling is also important.
 How will you use the space around your dwelling?
 Will you have a lawn (with or without lawn chemicals) like Figure~\ref{fig:kentucky_bluegrass}?
 Will you have a vegetable garden?
@@ -586,7 +590,7 @@ that flows directly from roadside drains into local waterways.
 %..............................
 
 Get involved in your local zoning board, drain commission, or other local government entity. 
-Advocate for local \emph{and} regional solutions. 
+Advocate for local \emph{and} regional sustainability actions. 
 Being involved in local politics is one of the best ways to make a difference for 
 sustainability;
 see P12.\ref{problem:blog_social_media}.
@@ -597,11 +601,8 @@ see P12.\ref{problem:blog_social_media}.
 \label{sec:summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-College and university students are at a very important time in their lives.
-Decisions made in the next few years will set the course of
-interactions with the environment for decades to come. 
-As you embark on that process, 
-ask yourself the questions shown in Table~\ref{tab:personal_energy_actions}.
+Decisions made today will affect your environmental impacts for decades to come.
+It may be helpful to ask the questions shown in Table~\ref{tab:personal_energy_actions}.
 The questions crystallize many possible individual actions discussed throughout this book.
 Table~\ref{tab:personal_energy_actions} provides answers 
 that move in the direction of a more-sustainable world 
@@ -609,6 +610,10 @@ and make a difference to the planet
 (without requiring an agrarian, pre-1900s lifestyle).  
 Figure~\ref{fig:CO2-Savings} provides estimates of the CO$_2$ emissions savings 
 from one example action for each row in Table~\ref{tab:personal_energy_actions}.
+
+There are many additional actions for the rows in Table~\ref{tab:personal_energy_actions}.
+P12.\ref{question:question:more_actions} provides an opportunity 
+to explore additional individual sustainability actions.
 
 
 \begin{table}
@@ -686,6 +691,7 @@ co2_amounts %>%
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1), 
                  axis.ticks.x = ggplot2::element_blank())
 @
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
@@ -987,7 +993,7 @@ Wangari Maathai, and Joseph Lstiburek.
       using the structure of 
       Chapters~\ref{chap:government} and \ref{chap:personal_action}.
       
-\item Figure~\ref{fig:CO2-Savings} shows an example sustainability-beneficial action
+\item \label{question:more_actions} Figure~\ref{fig:CO2-Savings} shows an example sustainability-beneficial action
       for each row of Table~\ref{tab:personal_energy_actions}.
       Verify the calculation of CO$_2$ emissions savings presented 
       in Figure~\ref{fig:CO2-Savings}.
