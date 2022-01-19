@@ -25,7 +25,7 @@ The first aspect is the layout or arrangement of different uses of land.
 Which is more sustainable: to group all the farms, forests, and cities so that 
 each is as large as possible?
 Or is it better to intersperse many small farms, forests, and towns?
-Whereas Chapter~\ref{chap:households} was concerned with the efficiency of individual
+Whereas Chapter~\ref{chap:households} was concerned with the sustainability of individual
 structures, this chapter considers dwellings and businesses collectively. 
 %The objective is to design cities and farms with sustainability in mind.
 We consider the sustainability implications of spacing, density, and how 
@@ -113,10 +113,9 @@ us_land_use %>%
 
 Figure~\ref{fig:USlanduse} shows how land is used in the United States. 
 There are nearly 2.3 billion acres in the U.S.
-Of this total, agriculture takes the largest share, with grassland and pasture (29\%), 
-forestry (28\%), and cropland (17\%) being the three largest uses. 
-  \footnote{
-  Grazing includes grassland, cropland used for pasture, and grazed forest land. 
+Of this total, agriculture takes the largest share, with grassland (29\%), 
+forestry (28\%), and cropland (17\%) being the three largest uses.\footnote{
+  Land used for grazing includes grassland, cropland used for pasture, and grazed forest land. 
   Forestry is forest that is not grazed. 
   Crop production is 87\% of total cropland; the remaining 13\% is idle or used for pasture.}
 The four largest crops in the U.S. are wheat (32\% of total crops), corn (30\%),
@@ -180,8 +179,8 @@ consumer goods.
 Figure~\ref{fig:USlanduse} shows that growing timber is a major use of U.S.\ land.
 
 A major cause of deforestation in the Amazon basin, for instance, is 
-extraction of mineral wealth.
-Thus, there is a strong demand for resources~\Rparen{} to feed an ever-growing global 
+extraction of mineral wealth
+because there is a strong demand for resources~\Rparen{} to feed an ever-growing global 
 economy.
 Those on the lowest rungs of the socio-economic ladder have few options to 
 improve their lives. 
@@ -202,7 +201,7 @@ Land is a major carbon sink.
 Forests store a lot of carbon and reforestation is likely necessary for meeting
 climate change limits, which makes continued \emph{deforestation} particularly 
 alarming.
-Land use affects and is affected by climate change. 
+Land use affects, and is affected by, climate change. 
 For instance, hotter, drier weather results in more frequent and severe wildfires.
 Those fires destroy forests, release stored carbon, and contribute to further warming.
 
@@ -259,7 +258,7 @@ The purple bars indicate carbon stored in the soil below the surface.
 %(You can see why peat is used as a fuel in same parts of the world.)
 Tropical and boreal forests, and grasslands 
 are all promising candidates for carbon sequestration.
-Although the capacity of wetlands to carbon is large,
+Although the capacity of wetlands to store carbon is large,
 unfortunately, the \emph{amount} of wetlands is small. 
 In contrast, the opportunities for forest and grasslands are quite extensive.
 Projects 10.1 and 10.2 explore technical aspects of forest and grassland 
@@ -297,7 +296,15 @@ for housing, for transportation, and for agriculture.
 \label{sec:land_challenges_housing}
 %++++++++++++++++++++++++++++++
 
-This section examines the sustainability challenges and characteristics of urban areas.
+Two sustainability challenges related to urban areas are their tendency to grow 
+continually and the need to continually repair depreciating infrastructure.
+(Note that these two challenges are not the only ones cities face; they are just
+the ones we have chosen to highlight as examples in this chapter. 
+Other challenges include, for instance, the ever-increasing need to water to supply
+a growing urban population and the need to mitigate the effects of climate change.
+As an example of the latter, several cities have already appointed ``extreme heat
+officials.'')
+
 
 \paragraph{Urban sprawl}
 Analysis~\cite{Nowosad2019} of the CCI data reveals some trends related to land use change over time.
@@ -327,19 +334,20 @@ Second, the net effect is deforestation, which results in greenhouse gas emissio
 Land use and land-use change are an important source of anthropogenic greenhouse gas emissions.
 
 A sustainability challenge associated with urban growth is
-``how can cities house an increasing and increasingly urban population?''
+``how can cities supply the needs of an increasing and increasingly urban population?''
 There are challenges associated with the city's systems, for example, power, sanitation,
 and water supply. 
-But there are also challenges with respect to continual and continued growth.
+There are also challenges with respect to continual and continued growth.
 Cities have been converting agricultural land to urban environments for centuries.
 In the last century, that trend has only accelerated.
+``How can the best farmland be preserved for future food production?''
 
 
 \paragraph{Infrastructure sustainability}
 Urban areas are defined by a relative abundance of public works.
 A rural road might have a drainage ditch beside the road but the road itself
 might not be paved. 
-A suburban street will be paved and have gutters, curbs, storm sewers, and a sidewalk.
+In contrast, a suburban street will be paved and have gutters, curbs, storm sewers, and a sidewalk.
 A city center will additionally have public buildings such as a courthouse, library,
 post office, parks, and, perhaps, bridges.
 Eventually, all the above infrastructure will reach the end of its functional life
@@ -362,19 +370,16 @@ However, when changes are necessary, often the multiple constraints of urban env
 make upgrading infrastructure costly and difficult. 
 That is, transitions are especially difficult for cities.
 
-We will discuss next some of what makes cities valuable and that role that 
-transportation plays in making urban areas valuable. *** Basically, the 
-sustainability challenge of the next section is a ``can growth continue forever''-versus-transportation question.
-
-**** How about a sustainability challenge question to end this section on infrastructure? ---MKH ****
-
+A sustainability challenge associated with urban infrastructure is
+``how can cities cost effectively modernize infrastructure to accept growth, 
+be resilient to climate change, require less energy, and provide for human needs?"
 
 %++++++++++++++++++++++++++++++
 \subsection{Transportation}
 \label{sec:land_challenges_transportation}
 %++++++++++++++++++++++++++++++
-% sprawl makes transport harder
 
+Transportation is a vital element in making urban areas valuable and functional. 
 Another way of thinking about the role of transportation in urban environments is
 that transportation creates places worth going to.
 Consider, for example, an urban restaurant that serves very tasty food. 
@@ -459,23 +464,32 @@ urban_density_data %>%
 \subsection{Agriculture}
 \label{sec:land_challenges_agriculture}
 %++++++++++++++++++++++++++++++
-soil degradation, aquifer depletion, run off.
-preserving the ``best'' farmland.
 
-As farm land is degraded, humans move on and create more farm land, primarily 
-from forests, but also from grass lands, shrub land, and sparsely vegetated land.
-Some of the abandoned farm land regrows to forest.
+In contrast to the sustainability challenges associated with agriculture that 
+were discussed in Section~\ref{sec:ag_sust_challenges}, the focus of this chapter
+is not on the inputs and outputs of agricultural operations. 
+Instead, the focus is about the sustainability of land-use patterns for agriculture.
+
+As has been mentioned already, conversion of agricultural land to other uses, particularly
+urban areas is a challenge. 
+Humans have been practicing agriculture for millenia. 
+The most fertile, most productive locations have already been identified. 
+The challenge is keeping those most productive locations as agriculture and not
+allocating them other other uses, such as housing.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sustainability transitions in land use and urban planning}
+\section{Sustainability transitions in land use and urban spaces}
 \label{sec:land_sustainability_improvements}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 This chapter began by asking two important questions about land use: how much of 
-each type of land use should we have (that is, an allocation question)? and
+each type of land use should we have and
 what is the best layout?
-The answer for the allocation question comes down to land use efficiency. 
+One obvious answer to the first question is ``as much as we need,''
+The question of allocation therefore becomes a question of land use efficiency. 
 How can we adequately meet our needs \emph{as efficiently as possible}?
+To put it another way, how can we meet our food, housing, and resource needs
+while using as little land as possible?
 
 %+++++++++++++++++++++++++++++++
 \subsection{Land use efficiency}
@@ -488,9 +502,13 @@ of that resource, whether that's for food, housing, and/or ecosystem services.
 Various metrics (only some related to sustainability)
 could be used to gauge the effectiveness of land use
 in agricultural settings or in cities.
-For agricultural land uses, we could attempt to maximize
-calories per acre, pounds of food per acre, number of people fed per acre, 
-\emph{or} the EROI of agriculture. 
+From a environmental sustainability point of view, 
+we could try to maximize 
+biodiversity, wilderness area, air and water quality, or 
+ecosystem services and
+the health of the environment that provides those ecosystem services.
+
+\paragraph{Urban land-use efficiency}
 For urban land uses, we could attempt to
 maximize population density,
 we could minimize metrics related to environmental impact, or 
@@ -498,26 +516,28 @@ we could try to make cities as self-sufficient as
 possible, for example with respect to food or energy.
 We might try to minimize the amount of transportation emissions within cities.
 Or we might try to maximize urban GDP.
-From a sustainability point of view, 
-we could try to maximize 
-biodiversity, wilderness area, air and water quality, or 
-ecosystem services and
-the health of the environment that provides those ecosystem services.
-****
-This doesn't seem like a transition discussion. 
-Maybe move forwad in the chapter. 
-Use the discussion of efficiency to set up the challenges?
-Or use in the introduction to point out the 
-many varied objectives of the use of land? 
----MKH 
-****
 
-Population density is the other key determiner of urban wealth. 
-It requires both housing and transportation. 
-Some of the end-of-chapter discussion questions consider ways to generate
-\emph{desireable} population density. 
-(A prison might have a high population density, that doesn't mean people will
-want to live there.)
+Since a growing urban population is expected to put unprecedented demand on cities 
+and city services, high population density is will help to answer this challenge.
+First, higher densities lessen the need to expand the physical footprint of the urban
+area. 
+Second, higher densities will lessen the cost of infrastructure per area.
+
+\paragraph{Agriculture land-use efficiency}
+For agricultural land uses, we could attempt to maximize
+calories per acre, pounds of food per acre, number of people fed per acre, 
+\emph{or} the EROI of agriculture. 
+Ultimately, agriculture has to feed people, so both minimizing the amount of land
+required to do that and maximizing the EROI will be help humanity to become more
+sustainable.
+
+Because of the climate crisis, it seems clear that significantly more carbon needs to
+be removed from the atmosphere and stored somewhere. 
+Figure~\ref{fig:CarbonStorage} indicates that agriculture can play an important
+role in sequestering carbon from the atmosphere, particularly in grasslands and
+croplands.
+Indeed, agriculture \emph{must} become a carbon sink, instead of a carbon source,
+if we are to be sustainable.
 
 <<PowerDensity, fig.cap="Power densities of several electricity generating technologies. ``Nat. gas'' is natural gas. ``Geoth.'' is geothermal. \\emph{Source}: \\citet[Figure~2]{Zalk:2018uy}.">>=
 power_densities <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Power_Densities.xlsx"),
@@ -551,31 +571,32 @@ power_densities %>%
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
 
+\paragraph{Resource extraction}
 Figure~\ref{fig:PowerDensity} shows the land use requirements for different forms of
 energy. 
+If we are going to make an energy transition to renewable sources 
+(WWS, Section~\ref{sec:low_carbon_transition}), 
+Figure~\ref{fig:PowerDensity} shows that we will need to devote a lot more land
+to energy production.
+Since the amount of land is fixed, either we have to combine energy generation
+with other activities \emph{or} we have to reduce the amount of land dedicated, say,
+agriculture and forestry.
+Since \emph{more} forest and grassland is needed to store carbon, the latter does not
+seem like a viable option.
 
-****
-Seems like there are 3 transitions to be discussed.
+There are two options for the former that are promising. 
+The first of these is rooftop solar. 
+Through a combination of energy efficiency and generation, each building could be
+made energy self-sufficient.
+The second option is a combination of solar electricity generation with agriculture for
+crops that prefer some shade, like coffee and raspberries.
+Still, at least with the current technology, there is an imbalance in the amount of
+generating capacity needed for a fully zero-carbon economy and land available for 
+generating that electricity.
 
-Urbanization: changes in land use related to WHERE we live are already happening. See Ch7. How do we manage it?
-
-Agriculture: use fewer chemicals, etc.
-
-Energy:
-If we are going to make an energy transition to renewable sources (WWS, reference Ch5), 
-Figure~\ref{fig:PowerDensity} shows that we will need to devote a lot more land to energy production.
----MKH
-****
-
-
-
-%+++++++++++++++++++++++++++++++
-\subsection{Sparing and sharing}
-\label{sec:sparing_and_sharing}
-%+++++++++++++++++++++++++++++++
-
-**** Maybe sparing and sharing become a green box? ---MKH ****
-
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Many of the ``good'' uses for land are in tension with each other, 
 and the tension between land use for human needs and
@@ -592,12 +613,26 @@ species on the farm, but, because yields aren't as high, requires more total far
 Improving sustainability means increasing the ``sparing'' (for instance, to combat
 extinction rate) and increasing the ``sharing.'' 
 How can we do both better?
-
+\end{mcframe}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Like energy, land use is also a nexus for many sustainability challenges.
+This chapter explored sustainability issues associated with urban areas,
+agricultural land-use patterns, and the role of land in provisioning resources
+for the economy and removing wastes (notably, carbon) from the ecosystem.
+Population growth and migration to urban areas (in search of greater affluence)
+is driving an increase in the demand for urban and agricultural land. 
+Higher population densities and greater agricultural productivity can help meet
+that demand. 
+In contrast, Figure~\ref{fig:PowerDensity} indicates it may need be possible to
+meet the energy needs of the future solely with renewables because there may not
+be enough land.
+
+The next two chapters discuss some collective and individual actions that can be
+taken to address these, and other, sustainability challenges.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % bonepile
