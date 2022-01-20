@@ -716,31 +716,41 @@ If the radiation received from the sun exceeds the heat radiated from the Earth,
 the Earth's temperature will increase. 
 As the Earth's temperature increases, the amount of heat radiated from the Earth
 increases as well.
-Eventually, the Earth will reach a new equilibrium temperature. 
+Eventually, the Earth will reach a new, higher equilibrium temperature. 
 The amount of radiation received from the sun is relatively constant; there are a variety of 
 satellite-based and Earth-bound measurement systems to confirm this. 
 Because the sun is very hot, the radiation it emits is high energy (short wavelength).
-Greenhouse gases, of which CO$_2$ is of chief concern, do not absorb the
-short wavelengths of the Sun's radiation. 
+Greenhouse gases, such as water vapor, which is an extremely potent greenhouse gas,
+and CO$_2$, do not absorb the short wavelengths of the Sun's radiation. 
 Radiation from the Earth is low energy (long wavelength) because the Earth's
 surface temperature is much lower than the Sun's.
-CO$_2$ \emph{does} absorb energy at these longer wavelengths.
+CO$_2$ and water vapor \emph{do} absorb energy at these longer wavelengths.
 The lower atmosphere is thus opaque to thermal radiation from the Earth's surface.
-Much of the radiation leaving the Earth's surface is absorbed by CO$_2$ and reradiated
-to upper levels of the atmosphere. 
+Much of the radiation leaving the Earth's surface is absorbed by greenhouse gases 
+and reradiated to upper levels of the atmosphere. 
 Eventually, in the upper atmosphere, the atmosphere gets thin enough that 
-CO$_2$ can radiate energy directly into space. 
+heat \emph{can} radiate energy directly into space. 
 When CO$_2$ is added to the atmosphere, it traps radiation leaving the Earth
 at higher and higher levels of the atmosphere.
+The relatively small amounts of CO$_2$ in the atmosphere (measured in parts per million)
+enable enough warming that much-more-potent water vapor is present in greater quanties
+as well.
 However, since the atmosphere grows colder at higher elevations, the radiation into
 space is less effective than at lower elevations. 
-By increasing atmospheric CO$_2$ concentration, we are essentially adding 
-long-wavelength radiation shields to the atmosphere. 
+By increasing atmospheric greenhouse gas concentrations (particularly CO$_2$), 
+we are essentially adding long-wavelength radiation shields to the atmosphere. 
 Less radiation leaving the upper atmosphere means that more heat is trapped
 closer to the Earth's surface. 
-Eventually the upper atmosphere will warm enough to radiate as much heat as 
-is incoming from the Sun,
-but that warming process takes a very long time.
+In a matter of days, the upper atmosphere will warm enough to radiate as much heat as 
+is incoming from the Sun.
+It takes a much longer time for the rest of the Earth to equilibrate to having a 
+warmer atmosphere. 
+Melting ice caps change the amount of incoming solar radiation that is initially absorbed
+the the Earth.
+Melting Arctic permafrost releases methane, another very potent greenhouse gas.
+All these positive feedback loops take decades to reach a new steady state.
+Thus, the greenhouse gases that are already in the atmosphere will cause warming
+far into the future.
 
 % The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
 % The clear trend is upward, with small drops corresponding to years of economic recession.
