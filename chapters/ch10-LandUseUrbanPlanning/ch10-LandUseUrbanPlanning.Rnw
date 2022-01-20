@@ -753,6 +753,14 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       With reference to Figure~\ref{fig:CarbonStorage}, discuss the importance of
       this project. \label{question:green_wall}
 
+\item Loss of farmland (for instance to urbanization) is a negative externality 
+      to future generations. One way to internalize the externality would be pay
+      farmers to keep their land as farms. 
+      What could/would be the unintended consequences of such a plan? 
+      What are some alternative policies that could preserve fertile land for 
+      future generations to use? (Consider, at least, France's PLU, referenced in
+      P\ref{project:GrawePLU} below.)
+
 \item What do you think of as a more sustainable pattern of land use, urban or rural?
       What is the most impactful thing that could be done to make each more energy efficient?
       What is the most impactful way to enable each pattern of land use to be more effective?
@@ -809,16 +817,16 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
 \item What is a city's most important infrastructure and why?
       How much is it worth?
       
-\item Strong Towns claims that parking minimums are set too high; see P10.\ref{project:STBFparking}
-      below.
+\item Strong Towns claims that parking minimums are set too high; 
+      see P10.\ref{project:STBFparking} below.
       What would be an appropriate minimum? 
-      Does it depend on location or some other factor?
+      Does it depend on location, building use, or some other factor?
       If parking failure is defined as a patron arriving at the parking lot only
       to find it already full, how much parking failure should we design for?
-      Contrast this to drainage and flood prevention.
+      Contrast this to stormwater management and flood prevention.
       Infrastructure is built to handle storm events of a defined size with the 
-      knowledge that larger storms do sometimes occur. 
-      Why is it acceptable to design for failure in the storm water case but not
+      knowledge that larger storms will occur. 
+      Why is it acceptable to design for failure in the stormwater case but not
       in the parking case?
       
 \item What do you ``go to town'' for? 
@@ -895,6 +903,7 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       building in agricultural areas. 
       Start by looking at ``Plan Local d’Urbanisme'' (PLU) or the more limited 
       ``Carte Communale.''
+      \label{project:GrawePLU}
 
       
 \end{projects}
