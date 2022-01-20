@@ -55,7 +55,8 @@ How can we transition to more sustainable ways of using land?
 Equation~\ref{eq:IPARX} shows two main drivers for land use:
 population (\mft{P}, Chapter~\ref{chap:population}) and
 affluence (\:\!\mft{A}, Chapter~\ref{chap:affluence}).
-The remaining two terms on the right-hand side of Equation~\ref{eq:IPARX} (\mft{R} and \mft{X})
+The remaining two terms on the right-hand side of Equation~\ref{eq:IPARX} 
+(\:\!\mft{R} and \mft{X}\:)
 are fixed by technology. 
 The size of the economy is \mft{P}$\times$\mft{A}.
 The economy can grow by increasing either \mft{P} or \mft{A}.
@@ -131,6 +132,7 @@ In contrast, the area where we live and work
 is a relatively small 70 million acres (3\%).
 The U.S. is relatively sparsely populated.
 
+
 %-----------------------------
 \paragraph{Agriculture}
 %-----------------------------
@@ -138,7 +140,8 @@ The U.S. is relatively sparsely populated.
 As mentioned in Chapter~\ref{chap:agriculture}, population drives agriculture,
 and agriculture is \emph{the} most prevalent way we use land.
 As world population has grown, the additional humans have been fed (in part) by
-converting more land to agriculture over time.
+converting more land to agricultural uses over time.
+
 
 %-----------------------------
 \paragraph{Urban areas}
@@ -147,21 +150,25 @@ converting more land to agriculture over time.
 Population growth also leads directly to a need for more housing,
 but not just any housing.
 Another trend shown by land-use statistics is greater urbanization.
-The demand for housing is disproportionately for urban housing
-because of a long-term trend of migration to urban areas. 
-Urban areas have much higher GDP per area.
-Thus, pursuit of wealth, that is, a desire for greater affluence~\Aparen{}, drives 
-migration from rural areas to urban ones.
+The growth in demand for housing is disproportionately focused on urban housing
+because of the long-term trend of migration to urban areas; 
+see Figure~\ref{fig:urbanization}.
+Urban areas have much higher GDP per land area.
+Thus, pursuit of wealth, that is, a desire for greater affluence~\Aparen{}, 
+drives migration from rural to urban areas.
+
 
 %++++++++++++++++++++++++++++++
 \subsection{Affluence \Aparen{}}
 \label{sec:land_demand_affluence}
 %++++++++++++++++++++++++++++++
+
 In contrast to the needs for food and housing, which are proportional to the population,
 affluence is not directly tied to population.
 Any given population could have any level of affluence.
 The economy, as society's metabolism, ingests resources (particularly energy) and
 excretes wastes.
+
 
 %-----------------------------
 \paragraph{Resources}
@@ -170,7 +177,7 @@ excretes wastes.
 Land is the primary source of energy, be it fossil fuel, biomass, or renewable. 
 Wells or mines for fossil fuels are located in a \emph{place}.
 Biomass has to be grown or harvested from a \emph{place} as well.
-For example, about 30\% of the U.S. corn (maize) crop is converted into ethanol
+For example, about 30\% of the U.S.\ corn (maize) crop is converted into ethanol
 to be blended with gasoline as a transportation fuel.
 Renewables, such as hydro, solar photovoltaic, and wind power, are also located in
 \emph{places}.
@@ -185,7 +192,7 @@ consumer goods.
 Figure~\ref{fig:USlanduse} shows that growing timber is a major use of U.S.\ land.
 
 A major cause of deforestation in the Amazon basin, for instance, is 
-extraction of mineral wealth
+extraction of mineral wealth,
 because there is a strong demand for resources~\Rparen{} to feed an ever-growing global 
 economy.
 Those on the lowest rungs of the socio-economic ladder have few options to 
@@ -196,17 +203,19 @@ a living by farming or mining.
 Unfortunately, the best lands have already been taken; what is available to the 
 \emph{next} farmer or miner is typically of marginally \emph{lower} productivity.
 
+
 %-----------------------------
 \paragraph{Ecosystem services}
 %-----------------------------
+
 Because energy use and carbon emissions are the prime example in this book,
-and because land plays a crucial role in regulating carbon in the environment,
+and because land plays a crucial role in regulating carbon in the atmosphere,
 this section examines the capacity of the land to absorb and store carbon.
 
 Land is a major carbon sink. 
-Forests store a lot of carbon and reforestation is likely necessary for meeting
-climate change limits, which makes continued \emph{deforestation} particularly 
-alarming.
+Forests store a lot of carbon and reforestation is likely necessary 
+for avoiding global temperature change limits, 
+which makes continued \emph{deforestation} particularly alarming.
 Land use affects, and is affected by, climate change. 
 For instance, hotter, drier weather results in more frequent and severe wildfires.
 Those fires destroy forests, release stored carbon, and contribute to further warming.
@@ -258,22 +267,24 @@ carbon_storage_world %>%
                  axis.ticks.x = ggplot2::element_blank())
 @
 
-Figure~\ref{fig:CarbonStorage} shows how much carbon each type of land (biome) can store.
+Figure~\ref{fig:CarbonStorage} shows the quantity of carbon that each type of land (biome) can store.
 The teal bars indicate carbon stored as plant life above ground. 
 The purple bars indicate carbon stored in the soil below the surface.
 %(You can see why peat is used as a fuel in same parts of the world.)
-Tropical and boreal forests, and grasslands 
+Tropical forests, boreal forests, and grasslands 
 are all promising candidates for carbon sequestration.
 Although the capacity of wetlands to store carbon is large,
-unfortunately, the \emph{amount} of wetlands is small. 
+the \emph{amount} of wetlands is small. 
 In contrast, the opportunities for forest and grasslands are quite extensive.
-Projects 10.1 and 10.2 explore technical aspects of forest and grassland 
-restoration/carbon sequestration.
+P10.\ref{project:forest_woodland_yield} and 
+P10.\ref{project:temperate_grasslands_yield}
+explore technical aspects of forest and grassland 
+restoration and carbon sequestration.
 
 Therefore, consistent with earlier chapters, the drivers for land use are 
-the~\Pparen{} and~\Aparen{} terms of the IPARX equation,
-resource use by the economy (\mft{P}$\times$\mft{A}$\times$\mft{R}), and
-the ecosystem services needed to eliminate the wastes produced by economic activity
+(a)~the~\Pparen{} and~\Aparen{} terms of the IPARX equation,
+(b)~resource use by the economy (\mft{P}$\times$\mft{A}$\times$\mft{R}), and
+(c)~the ecosystem services needed to eliminate the wastes produced by economic activity
 (\mft{P}$\times$\mft{A}$\times$\mft{R}$\times$\mft{X}).
 
 
@@ -838,9 +849,11 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
 
 \begin{projects}
 
-\item Research restoring/regrowing/sustainable yield tropical, temperate, or boreal forests/woodlands.
+\item \label{project:forest_woodland_yield} Research restoring/regrowing/sustainable yield
+      for tropical, temperate, or boreal forests/woodlands.
 
-\item Research restoring/regrowing temperate grasslands. Be sure to pay attention
+\item \label{project:temperate_grasslands_yield} Research restoring/regrowing temperate grasslands. 
+      Be sure to pay attention
       to the role of grazing herds.
 
 \item Research the field of urban planning.  How has it changed over time?  
