@@ -12,8 +12,8 @@
 It's found in its budget.}{Brent Toderian}
 
 The previous three chapters described sustainability challenges related to 
-dwellings, transportation, and food.
-A common element in all these sustainability challenges is how land is used.
+households, transportation, and food.
+A common element in all these sustainability challenges is how we use land.
 We need \emph{places} for homes, to grow food, and for transportation systems. 
 Moreover, where we choose to put each of these elements influences 
 the overall need for transportation in human society.
@@ -25,38 +25,40 @@ The first aspect is the layout or arrangement of different uses of land.
 Which is more sustainable: to group all the farms, forests, and cities so that 
 each is as large as possible?
 Or is it better to intersperse many small farms, forests, and towns?
-Whereas Chapter~\ref{chap:households} was concerned with the sustainability of individual
-structures, this chapter considers dwellings and businesses collectively. 
+Whereas Chapter~\ref{chap:households} was concerned 
+with the sustainability of individual housing units,
+this chapter considers dwellings and businesses collectively. 
 %The objective is to design cities and farms with sustainability in mind.
 We consider the sustainability implications of spacing, density, and how 
 transportation links between locations are affected by layout.
 
 The second aspect is allocation, that is, \emph{how much} of each of the 
-different uses for land we will have.
+different uses for land we have.
 Land can be used for agriculture, recreation, urban or suburban dwellings, or 
 not allocated for direct human use, that is, left as wilderness.
 Land is the source, directly or indirectly, for all our resources, the sink for
 much of our waste, and where we ourselves live.
-We need land to simultaneously satisfy many different functions, including provide 
-enough resources, accept wastes, and provide ecosystem services.
+We need land to simultaneously satisfy many different wants and needs,
+including supplying resources, accepting wastes, and providing ecosystem services.
 
 The next sections deal with three major sustainability questions related to land use: 
 How do we use land?
-How does our use of land effect the sustainability of human society?
-How can we transition to more sustainable arrangements?
+How does our use of land affect sustainability?
+How can we transition to more sustainable ways of using land?
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Demand for land use}
 \label{sec:land_and_how_it_is_used}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Equation~\ref{eq:IPARX} shows two main drivers for land use:
-population~\Pparen{} (Chapter~\ref{chap:population}) and affluence~\Aparen{} 
-(Chapter~\ref{chap:affluence}).
-The remaining two terms on the right-hand side of Equation~\ref{eq:IPARX}
-are essentially fixed by technology. 
+population (\mft{P}, Chapter~\ref{chap:population}) and
+affluence (\:\!\mft{A}, Chapter~\ref{chap:affluence}).
+The remaining two terms on the right-hand side of Equation~\ref{eq:IPARX} (\mft{R} and \mft{X})
+are fixed by technology. 
 The size of the economy is \mft{P}$\times$\mft{A}.
-The economy can grow either by increasing \mft{P} or \mft{A}.
+The economy can grow by increasing either \mft{P} or \mft{A}.
 The next two sections will examine these sources of demand in greater detail.
 
 <<USlanduse, fig.cap="Land use in the U.S. The biggest changes over time are decreasing grazed forest area and increasing rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. (``Grassland'' is not used for crops.) \\emph{Source}: \\citet{USDA:2021uq}.">>=
@@ -106,6 +108,7 @@ us_land_use %>%
   MKHthemes::xy_theme()
 @
 
+
 %++++++++++++++++++++++++++++++
 \subsection{Population \Pparen{}}
 \label{sec:land_demand_population}
@@ -114,14 +117,17 @@ us_land_use %>%
 Figure~\ref{fig:USlanduse} shows how land is used in the United States. 
 There are nearly 2.3 billion acres in the U.S.
 Of this total, agriculture takes the largest share, with grassland (29\%), 
-forestry (28\%), and cropland (17\%) being the three largest uses.\footnote{
+forestry (28\%), and cropland (17\%) being the three largest uses.%
+\footnote{
   Land used for grazing includes grassland, cropland used for pasture, and grazed forest land. 
   Forestry is forest that is not grazed. 
-  Crop production is 87\% of total cropland; the remaining 13\% is idle or used for pasture.}
+  Crop production is 87\% of total cropland; the remaining 13\% is idle or used for pasture.
+}
+%
 The four largest crops in the U.S. are wheat (32\% of total crops), corn (30\%),
 soybeans (20\%), and cotton (10\%). 
-All other crops are just 8\%.
-In contrast, the area where we live and work % (red/pink areas)
+All other crops combined account for only 8\% of total crops.
+In contrast, the area where we live and work
 is a relatively small 70 million acres (3\%).
 The U.S. is relatively sparsely populated.
 
