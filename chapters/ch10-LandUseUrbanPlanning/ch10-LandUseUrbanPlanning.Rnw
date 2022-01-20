@@ -131,6 +131,7 @@ In contrast, the area where we live and work
 is a relatively small 70 million acres (3\%).
 The U.S. is relatively sparsely populated.
 
+
 %-----------------------------
 \paragraph{Agriculture}
 %-----------------------------
@@ -139,6 +140,7 @@ As mentioned in Chapter~\ref{chap:agriculture}, population drives agriculture,
 and agriculture is \emph{the} most prevalent way we use land.
 As world population has grown, the additional humans have been fed (in part) by
 converting more land to agriculture over time.
+
 
 %-----------------------------
 \paragraph{Urban areas}
@@ -153,6 +155,7 @@ Urban areas have much higher GDP per area.
 Thus, pursuit of wealth, that is, a desire for greater affluence~\Aparen{}, drives 
 migration from rural areas to urban ones.
 
+
 %++++++++++++++++++++++++++++++
 \subsection{Affluence \Aparen{}}
 \label{sec:land_demand_affluence}
@@ -162,6 +165,7 @@ affluence is not directly tied to population.
 Any given population could have any level of affluence.
 The economy, as society's metabolism, ingests resources (particularly energy) and
 excretes wastes.
+
 
 %-----------------------------
 \paragraph{Resources}
@@ -195,6 +199,7 @@ They can move to urban areas to try to get work or they can try to extract (pun 
 a living by farming or mining.
 Unfortunately, the best lands have already been taken; what is available to the 
 \emph{next} farmer or miner is typically of marginally \emph{lower} productivity.
+
 
 %-----------------------------
 \paragraph{Ecosystem services}
@@ -297,6 +302,7 @@ across all land-use categories.
 This section examines sustainability challenges related to the way humans use land
 for housing, for transportation, and for agriculture.
 
+
 %++++++++++++++++++++++++++++++
 \subsection{Housing or urban sustainability}
 \label{sec:land_challenges_housing}
@@ -312,7 +318,10 @@ As an example of the latter, several cities have already appointed ``extreme hea
 officials.'')
 
 
+%..............................
 \paragraph{Urban sprawl}
+%..............................
+
 Analysis~\cite{Nowosad2019} of the CCI data reveals some trends related to land use change over time.
 One trend is that urban areas are continually growing and, basically, never shrink.
 From 1992--2015, settlements gained 337,000 square kilometers, which is 0.23\%
@@ -349,7 +358,10 @@ In the last century, that trend has only accelerated.
 ``How can the best farmland be preserved for future food production?''
 
 
+%..............................
 \paragraph{Infrastructure sustainability}
+%..............................
+
 Urban areas are defined by a relative abundance of public works.
 A rural road might have a drainage ditch beside the road but the road itself
 might not be paved. 
@@ -379,6 +391,7 @@ That is, transitions are especially difficult for cities.
 A sustainability challenge associated with urban infrastructure is
 ``how can cities cost effectively modernize infrastructure to accept growth, 
 be resilient to climate change, require less energy, and provide for human needs?"
+
 
 %++++++++++++++++++++++++++++++
 \subsection{Transportation}
@@ -466,6 +479,7 @@ urban_density_data %>%
   ggplot2::theme(legend.position = c(0.8, 0.8))
 @
 
+
 %++++++++++++++++++++++++++++++
 \subsection{Agriculture}
 \label{sec:land_challenges_agriculture}
@@ -497,6 +511,7 @@ The question of allocation therefore becomes a question of land use efficiency.
 How can we adequately meet our needs \emph{as efficiently as possible}?
 To put it another way, how can we meet our food, housing, and resource needs
 while using as little land as possible?
+
 
 %+++++++++++++++++++++++++++++++
 \subsection{Land use efficiency}
