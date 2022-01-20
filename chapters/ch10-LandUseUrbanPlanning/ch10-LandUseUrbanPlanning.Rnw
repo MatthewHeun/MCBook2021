@@ -131,6 +131,7 @@ In contrast, the area where we live and work
 is a relatively small 70 million acres (3\%).
 The U.S. is relatively sparsely populated.
 
+
 %-----------------------------
 \paragraph{Agriculture}
 %-----------------------------
@@ -139,6 +140,7 @@ As mentioned in Chapter~\ref{chap:agriculture}, population drives agriculture,
 and agriculture is \emph{the} most prevalent way we use land.
 As world population has grown, the additional humans have been fed (in part) by
 converting more land to agriculture over time.
+
 
 %-----------------------------
 \paragraph{Urban areas}
@@ -153,6 +155,7 @@ Urban areas have much higher GDP per area.
 Thus, pursuit of wealth, that is, a desire for greater affluence~\Aparen{}, drives 
 migration from rural areas to urban ones.
 
+
 %++++++++++++++++++++++++++++++
 \subsection{Affluence \Aparen{}}
 \label{sec:land_demand_affluence}
@@ -162,6 +165,7 @@ affluence is not directly tied to population.
 Any given population could have any level of affluence.
 The economy, as society's metabolism, ingests resources (particularly energy) and
 excretes wastes.
+
 
 %-----------------------------
 \paragraph{Resources}
@@ -195,6 +199,7 @@ They can move to urban areas to try to get work or they can try to extract (pun 
 a living by farming or mining.
 Unfortunately, the best lands have already been taken; what is available to the 
 \emph{next} farmer or miner is typically of marginally \emph{lower} productivity.
+
 
 %-----------------------------
 \paragraph{Ecosystem services}
@@ -297,6 +302,7 @@ across all land-use categories.
 This section examines sustainability challenges related to the way humans use land
 for housing, for transportation, and for agriculture.
 
+
 %++++++++++++++++++++++++++++++
 \subsection{Housing or urban sustainability}
 \label{sec:land_challenges_housing}
@@ -312,7 +318,10 @@ As an example of the latter, several cities have already appointed ``extreme hea
 officials.'')
 
 
+%..............................
 \paragraph{Urban sprawl}
+%..............................
+
 Analysis~\cite{Nowosad2019} of the CCI data reveals some trends related to land use change over time.
 One trend is that urban areas are continually growing and, basically, never shrink.
 From 1992--2015, settlements gained 337,000 square kilometers, which is 0.23\%
@@ -349,7 +358,10 @@ In the last century, that trend has only accelerated.
 ``How can the best farmland be preserved for future food production?''
 
 
+%..............................
 \paragraph{Infrastructure sustainability}
+%..............................
+
 Urban areas are defined by a relative abundance of public works.
 A rural road might have a drainage ditch beside the road but the road itself
 might not be paved. 
@@ -379,6 +391,7 @@ That is, transitions are especially difficult for cities.
 A sustainability challenge associated with urban infrastructure is
 ``how can cities cost effectively modernize infrastructure to accept growth, 
 be resilient to climate change, require less energy, and provide for human needs?"
+
 
 %++++++++++++++++++++++++++++++
 \subsection{Transportation}
@@ -466,15 +479,16 @@ urban_density_data %>%
   ggplot2::theme(legend.position = c(0.8, 0.8))
 @
 
+
 %++++++++++++++++++++++++++++++
 \subsection{Agriculture}
 \label{sec:land_challenges_agriculture}
 %++++++++++++++++++++++++++++++
 
 In contrast to the sustainability challenges associated with agriculture that 
-were discussed in Section~\ref{sec:ag_sust_challenges}, the focus of this chapter
+were discussed in Section~\ref{sec:ag_sust_challenges}, the focus of this section
 is not on the inputs and outputs of agricultural operations. 
-Instead, the focus is about the sustainability of land-use patterns for agriculture.
+Instead, the focus is about the sustainability challenges of land-use patterns for agriculture.
 
 As has been mentioned already, conversion of agricultural land to other uses, particularly
 urban areas is a challenge. 
@@ -483,19 +497,21 @@ The most fertile, most productive locations have already been identified.
 The challenge is keeping those most productive locations as agriculture and not
 allocating them other other uses, such as housing.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sustainability transitions in land use and urban spaces}
 \label{sec:land_sustainability_improvements}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This chapter began by asking two important questions about land use: how much of 
-each type of land use should we have and
-what is the best layout?
+This chapter began by asking two important questions about land use: 
+(a)~how much of each type of land use should we have and
+(b)~what is the best layout?
 One obvious answer to the first question is ``as much as we need,''
 The question of allocation therefore becomes a question of land use efficiency. 
 How can we adequately meet our needs \emph{as efficiently as possible}?
 To put it another way, how can we meet our food, housing, and resource needs
 while using as little land as possible?
+
 
 %+++++++++++++++++++++++++++++++
 \subsection{Land use efficiency}
@@ -514,7 +530,11 @@ biodiversity, wilderness area, air and water quality, or
 ecosystem services and
 the health of the environment that provides those ecosystem services.
 
+
+%..............................
 \paragraph{Urban land-use efficiency}
+%..............................
+
 For urban land uses, we could attempt to
 maximize population density,
 we could minimize metrics related to environmental impact, or 
@@ -525,16 +545,20 @@ Or we might try to maximize urban GDP.
 
 Since a growing urban population is expected to put unprecedented demand on cities 
 and city services, high population density is will help to answer this challenge.
-First, higher densities lessen the need to expand the physical footprint of the urban
+First, higher densities reduce the need to expand the physical footprint of the urban
 area. 
-Second, higher densities will lessen the cost of infrastructure per area.
+Second, higher densities reduce the cost of infrastructure per area.
 
+
+%..............................
 \paragraph{Agriculture land-use efficiency}
+%..............................
+
 For agricultural land uses, we could attempt to maximize
 calories per acre, pounds of food per acre, number of people fed per acre, 
 \emph{or} the EROI of agriculture. 
 Ultimately, agriculture has to feed people, so both minimizing the amount of land
-required to do that and maximizing the EROI will be help humanity to become more
+needed and maximizing the EROI will be help humanity to become more
 sustainable.
 
 Because of the climate crisis, it seems clear that significantly more carbon needs to
@@ -577,28 +601,33 @@ power_densities %>%
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
 
+
+%..............................
 \paragraph{Resource extraction}
+%..............................
+
 Figure~\ref{fig:PowerDensity} shows the land use requirements for different forms of
 energy. 
 If we are going to make an energy transition to renewable sources 
-(WWS, Section~\ref{sec:low_carbon_transition}), 
+(for example WWS in Section~\ref{sec:low_carbon_transition}), 
 Figure~\ref{fig:PowerDensity} shows that we will need to devote a lot more land
 to energy production.
 Since the amount of land is fixed, either we have to combine energy generation
-with other activities \emph{or} we have to reduce the amount of land dedicated, say,
+with other activities \emph{or} we have to reduce the amount of land dedicated to, say,
 agriculture and forestry.
-Since \emph{more} forest and grassland is needed to store carbon, the latter does not
-seem like a viable option.
+Since \emph{more} forest and grassland is needed to store carbon, 
+the latter does not seem like a viable option.
 
 There are two options for the former that are promising. 
 The first of these is rooftop solar. 
 Through a combination of energy efficiency and generation, each building could be
 made energy self-sufficient.
-The second option is a combination of solar electricity generation with agriculture for
+The second option is combining solar electricity generation and 
 crops that prefer some shade, like coffee and raspberries.
 Still, at least with the current technology, there is an imbalance in the amount of
 generating capacity needed for a fully zero-carbon economy and land available for 
-generating that electricity.
+generating that electricity, 
+not to mention liquid fuels.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -620,11 +649,12 @@ extinction rate) and increasing the ``sharing.''
 How can we do both better?
 \end{mcframe}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Like energy, land use is also a nexus for many sustainability challenges.
+Like energy, land use is a nexus for many sustainability challenges.
 This chapter explored sustainability issues associated with urban areas,
 agricultural land-use patterns, and the role of land in provisioning resources
 for the economy and removing wastes (notably, carbon) from the ecosystem.
