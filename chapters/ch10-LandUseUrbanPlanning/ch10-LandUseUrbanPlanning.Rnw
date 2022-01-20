@@ -366,22 +366,6 @@ In the last century, that trend has only accelerated.
 ``How can the best farmland be preserved for future food production?''
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 %..............................
 \paragraph{Infrastructure sustainability}
 %..............................
@@ -389,14 +373,16 @@ In the last century, that trend has only accelerated.
 Urban areas are defined by a relative abundance of public works.
 A rural road might have a drainage ditch beside the road but the road itself
 might not be paved. 
-In contrast, a suburban street will be paved and have gutters, curbs, storm sewers, and a sidewalk.
+In contrast, suburban streets are almost always paved and 
+have gutters, curbs, storm sewers, and a sidewalk.
 A city center will additionally have public buildings such as a courthouse, library,
 post office, parks, and, perhaps, bridges.
 Eventually, all the above infrastructure will reach the end of its functional life
-and have to be repaired or replaced.
+and require repair or replacement.
 To remain a city, enough taxes have to be collected over the infrastructure's life
 to repair or replace it when it wears out.
-To be sustainable, an urban area has to be valuable enough to generate the additional
+To be sustainable (economically), 
+an urban area has to be valuable enough to generate the additional
 revenue to pay for its additional infrastructure.
 \href{https://www.strongtowns.org/}{StrongTowns.org} discusses sustainable 
 infrastructure financing in more detail.
@@ -405,7 +391,7 @@ Cities face additional sustainability challenges related to infrastructure lifes
 economic and population growth, changing technology, and fractured ownership.
 The design lifetime of infrastructure may not match its economic lifetime.
 Population growth might make a bridge with a 100-year lifespan inadequate to 
-satisfy transportation demand after only 30 years.
+satisfy transportation demand after only 30~years.
 Wireless communication technologies have rendered wire-based communication much
 less relevant. 
 However, when changes are necessary, often the multiple constraints of urban environments
@@ -413,8 +399,16 @@ make upgrading infrastructure costly and difficult.
 That is, transitions are especially difficult for cities.
 
 A sustainability challenge associated with urban infrastructure is
-``how can cities cost effectively modernize infrastructure to accept growth, 
+``how can cities cost effectively modernize infrastructure to accommodate growth, 
 be resilient to climate change, require less energy, and provide for human needs?"
+
+
+
+
+
+
+
+
 
 %++++++++++++++++++++++++++++++
 \subsection{Transportation}
