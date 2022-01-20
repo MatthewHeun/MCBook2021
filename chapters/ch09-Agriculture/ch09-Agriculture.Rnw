@@ -118,7 +118,7 @@ driver of demand and affluence~\Aparen{} is the secondary driver.
 
 As mentioned in Section~\ref{sec:PCbalance}, consumption and production are balanced,
 particularly for food, in part because humans prefer fresh food.
-Sometimes future food supply is cited as being a sustainability concern, usually on
+Sometimes, future food \emph{supply} is cited as being a sustainability concern, usually on
 the basis of past and current food production. 
 However, because of the consumption/production balance, past and current production
 is a poor indicator of future food production capacity.
@@ -140,7 +140,7 @@ Equation~\ref{eq:IPARX} indicates reductions in agricultural impacts on the
 environment, in the absence of a falling population or affluence (see 
 Section~\ref{sec:reducing_c}), can only come from reducing one of the two intensities
 of agriculture, the resource intensity~\Rparen{} or the impact intensity~\Xparen{}.
-The efficiency of agriculture, in terms of what inputs it requires and what 
+The intensity of agriculture, in terms of what inputs it requires and what 
 impacts it produces are explored more in the following section.
 
 
@@ -153,11 +153,10 @@ When considering whether an activity is sustainable, resource depletion and impa
 produced are key questions.
 For example, Section~\ref{sec:electric_vehicles} considered internal combustion
 engine (ICE) vehicles and electric vehicles (EVs).
-An accurate and reliable comparison depends on an accurate accounting of inputs and outputs.
-In Section~\ref{sec:electric_vehicles} we considered just the vehicle's emissions
-while in use, the energy and mineral resources used to create each vehicle, and,
-finally, we also considered the power generation used to power each vehicle 
-(Figure~\ref{fig:auto_gwp}). 
+A reliable sustainability comparison depends on an accurate accounting of inputs and outputs.
+Section~\ref{sec:electric_vehicles} considered the vehicles' emissions
+while in use, the energy and mineral resources used to create each vehicle, and
+the source of the power for each vehicle (Figure~\ref{fig:auto_gwp}). 
 Each of these three accountings -- the vehicle's direct emissions; vehicle emissions
 and the materials used to make the vehicle; or vehicle emissions, minerals in the vehicle, 
 \emph{and} power or fuel generation -- give a different nuance to vehicle
@@ -170,77 +169,89 @@ Section~\ref{sec:strong_weak_sust} and the concept of ecosystem provisioning
 services from Section~\ref{sec:ecosystem_services}.
 Section~\ref{sec:what_is_sustainability} says sustainability requires not using renewable resources
 faster than they can regenerate. 
-Provisioning services are a form of ``natural capital.''
-If agriculture decreases the stock, or amount, of natural capital, it is not sustainable.
+Soil fertility is a provisioning services (Chapter~\ref{chap:planetary_boundaries})
+of the  ecosystem.
+If agriculture decreases soil fertility, it is not sustainable.
 If agriculture depends on a nonrenewable resource, it is not strongly sustainable.
 If agriculture is rapidly depleting a resource, it is not even weakly sustainable.
-
+The sections below examine the sustainability characteristics of several different
+aspects of agriculture.
 
 %++++++++++++++++++++++++++++++
-\subsection{Agricultural resource requirements}
+\subsection{Soil and water} %% Agricultural use of land
 %++++++++++++++++++++++++++++++
 
-Here we list some (not all) of the inputs required for agriculture and consider their
-sustainability implications.
-
-
-%..............................
-\paragraph{Soil}
-%..............................
-
-As mentioned earlier, humans devote a considerable portion of 
-the planet to agriculture. Soil can be lost by erosion. Soil fertility can be 
-degraded by practices that withdraw key nutrients from the soil faster than they
-can be regenerated. Soil can become polluted in a variety of ways. 
-Sustainable agriculture at least maintains, and hopefully builds, the health of the soil.
-
+As mentioned earlier, agriculture is the majority of human use of land.
+Likewise, agriculture accounts for approximately 70\% of human fresh water use.
+The paragraphs below examine a variety of unsustainable practices related to human 
+use of land and water.
 
 %..............................
-\paragraph{Light}
+\paragraph{Loss of soil fertility} 
 %..............................
+Not all soils contain the nutrients needed by plants to grow.
+In particular, top soil contains organic mattered needed by plants.
+However, top soil can be lost by erosion to the action of wind and/or water.
+Most erosion results from wind or water action on tilled soils, that is,
+where the land has been plowed to expose bare soil.
+Some examples include the great Dust Bowl in the U.S. in the 1930s
+and the phenomenon called the ``Yellow Wind'' or ``Asian dust,'' where fine
+soil particles are carried from China, Mongolia, and Kazakhstan to East Asia and 
+sometimes across the Pacific Ocean to the U.S.
+Some places in the Great Plains have lost of several feet of topsoil.
+For example, a survey in Minot, North Dakota taken in 1900 found 40 cm of of black
+topsoil.
+In 2017, the area had no black topsoil; its soil was light gray.
+% https://www.producer.com/news/survey-reveals-amazing-soil-loss-in-great-plains-region/
+Loss of top soil reduces the productivity (in output per acre) of farmland.
+Many arid and semi-arid regions are experiencing \emph{desertification} caused
+by a combination of climate change and poor agricultural practices.
 
-Plants need light to grow.
-Outdoors, plants get light from the sun.
-In this case, the ecosystem (namely, the sun) \emph{provides} light. 
-Growing crops (or not) doesn't ``use up'' the sunlight.
-On the other hand, growing crops indoors typically requires artificial light.
-In this case, we should consider the sustainability implications of the light bulbs
-and the electricity generation required to run them.
-
-
-%..............................
-\paragraph{Water}
-%..............................
- 
-Rain water is an ecosystem service. 
-Growing crops and raising stock only with rainfall is sustainable (from a water 
-point of view); it doesn't ``use up'' the rain.
-On the other hand, groundwater used for irrigation is a resource that may or may not
-be renewable, depending on the local and regional geology.
-If water is extracted from an aquifer faster than the aquifer regenerates, that is
-not sustainable.
-Currently, agriculture accounts for approximately 70\% of human fresh water use.
-
-
-%..............................
-\paragraph{Fertilizers and agrichemicals} 
-%..............................
-
-The most common fertilizers contain
-nitrogen, phosphorous, and potassium. 
+Soil fertility can be degraded by practices that withdraw key nutrients from the 
+soil faster than they can be regenerated.
+For instance, about 8\% of the carbon in soils has been lost over the last 12,000
+years~\cite{Sanderman2017}.
+Sustainable agriculture at least maintains, and hopefully builds, soil fertility.
+Agricultural productivity can be enhanced with fertilizers and/or agrichemicals.
+The most common fertilizers contain nitrogen, phosphorous, and potassium. 
 Agrichemicals include herbicides, pesticides, and fungicides. 
 To the extent that any of these are derived from nonrenewable feedstocks, such as 
 fossil fuels, they are not strongly sustainable.
+Phosphate fertilizers are necessary for high crop yields but they originate from 
+(nonrenewable) mineral deposits.
 On the other hand, about half of the fertilizer used globally is animal manure, 
 which is a renewable resource. 
 Animal manure could be a sustainable fertilizer, if the animals are raised sustainably,
 for instance, if their feed is sustainably raised.
 
+%++++++++++++++++++++++++++++++
+\paragraph{Water---quantity and quality}
+%++++++++++++++++++++++++++++++
+Plants need water to grow.
+Currently, much of agricultural irrigation is not sustainable because water is being
+extracted from aquifers faster than the natural regeneration rate.
+If aquifers are exhausted, then future humans won't have water to drink or bath in.
+Overuse of water is not limited to subsurface water. 
+One particularly notable example is the (formerly) Aral Sea, which has all but disappeared
+due to diversion of its water for irrigation.
+*** MKH, what do you think about a before-and-after picture? ***
+% E.g., https://www.carecinstitute.org/events/international-symposium-on-ecological-restoration-and-management-of-the-aral-sea/
 
-%..............................
-\paragraph{Energy}
+Agricultural activities also result in water pollution of surface water and ground water.
+For example, the city of Toledo, Ohio draws its drinking water from Lake Erie.
+Since the 1990s Lake Erie has been subject to ``blooms'' of toxic cyanobacteria
+fueled by fertilizer run off.
+Six people got sick in 2013.
+In 2014, 110 people got sick and the municipal water supply to 400,000 people was shut down.
+Moreover, Lake Erie and the Maumee River that feeds it were unsafe for human skin contact.
+Blooms occurred again in 2017 and 2019.
+%% https://coastalscience.noaa.gov/news/study-identifies-causes-of-toledos-unprecedented-2017-maumee-river-bloom/
+Animal manure can also contaminate waterways. Ick.
+
+%++++++++++++++++++++++++++++++
+\subsection{Energy}
 \label{sec:food_energy_return_ratios}
-%..............................
+%++++++++++++++++++++++++++++++
  
 The energy input to agriculture ranges from human and animal 
 labor to electricity and hydrocarbon fuels, either fossil fuels or biofuels.
@@ -257,7 +268,7 @@ Whether spending more energy on food than we get from it is sustainable or not
 depends on where our energy comes from. 
 
 
-<<food_and_ag_energy_flow, fig.scap="Energy consumed in the food delivery system", fig.cap="Amount of energy consumed in different aspects of the food delivery system in the U.S.\\ (2021). \\emph{Source}: \\citet{US_food}.">>=
+<<food_and_ag_energy_flow, fig.scap="Energy consumed in the food-delivery system", fig.cap="Amount of energy consumed in different aspects of the food-delivery system in the U.S.\\ (2021). \\emph{Source}: \\citet{US_food}.">>=
 food_energy <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Energy Flow in the US Food System.xlsx"),
                                    sheet = "data to plot") %>%
   tidyr::pivot_longer(-Category, names_to = "type", values_to = "value") %>%
@@ -295,42 +306,14 @@ food_energy %>%
 @
 
 
-
-<<food_ghg, fig.scap="Food-related greenhouse gas emissions by life cycle stage", fig.cap="U.S.\\ food-related greenhouse gas emissions by life cycle stage. ``LULUC'' is land use and land use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
-food_emissions_US <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Crippa et al 2021.xlsx"), 
-                                            sheet = "data to plot") %>% 
-  tidyr::pivot_longer(-`System Stage`, names_to = "Year", values_to = "co2_emissions") %>% 
-  dplyr::mutate(
-    Year = as.numeric(Year), 
-    co2_emissions = co2_emissions / 1e6, # Convert kt/year to Gt/year
-    `System Stage` = factor(`System Stage`, levels = c("End of life", "Consumption",  
-                                                       "Retail", "Transport", 
-                                                       "Packaging", "Processing", "Production", "LULUC"))
-  )
-
-food_emissions_US %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, 
-                                         y = co2_emissions,
-                                         fill = `System Stage`)) + 
-  ggplot2::geom_area() + 
-  
-  ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("Food GHG emissions [Gt "*CO[2]*"eq/year]"), 
-                fill = ggplot2::element_blank()) +
-  
-  ggplot2::scale_fill_viridis_d(direction = -1) +
-  
-  MKHthemes::xy_theme()
-@
-
-Because food is energy, the overall energy efficiency of the food delivery system can be calculated.
+Because food is energy, the overall energy efficiency of the food-delivery system can be calculated.
 Figure~\ref{fig:food_and_ag_energy_flow} shows the energy consumed and supplied
-by various aspects of the food delivery system.
-The energy efficiency of the food delivery system is \Sexpr{format(1.4/10.2 * 100, digits = 3)}\%.
+by various aspects of the food-delivery system.
+The energy efficiency of the food-delivery system is \Sexpr{format(1.4/10.2 * 100, digits = 3)}\%.
 With modern agriculture, it takes roughly 7 calories of energy to provide 1 calorie of food energy.
 Thus, the EROI for the food system is only 1/7.
-The fact that the energy efficiency of the food delivery system is less than 1
-means that the food delivery system is not a \emph{source} of energy for society. 
+The fact that the energy efficiency of the food-delivery system is less than 1
+means that the food-delivery system is not a \emph{source} of energy for society. 
 Rather it is a \emph{sink} of energy for society.
 Thus, today's food system is unsustainable from an energy point of view.
 
@@ -348,7 +331,7 @@ and modern society with it.
 To put it another way, human society today spends more energy
 to \emph{get} food than it \emph{obtains} from food.  
 But modern society remains viable
-because its food delivery system is supported by energy inputs from an external source:
+because its food-delivery system is supported by energy inputs from an external source:
 fossil fuels\index{fossil fuels}. 
 Fossil fuels
 supply the energy for 
@@ -388,7 +371,6 @@ feed_to_food_efficiency %>%
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
 
-
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -397,48 +379,55 @@ by energy return ratios of today's food system is:
 ``We don't eat food; we eat oil.''
 \end{mcframe}
 
-
 %++++++++++++++++++++++++++++++
-\subsection{Agricultural impacts}
+\subsection{Greenhouse gas emissions}
 %++++++++++++++++++++++++++++++
 
-Here we list some (not all) of the emissions, or byproducts, from agriculture and 
-consider their sustainability implications.
+Globally, food and land use account for 23\% of GHG emissions~\cite{IPCC:2018aa}.
+\index{greenhouse gases}
+Tropical rainforest deforestation, particularly in Brazil and Indonesia,
+contributes significantly to global GHG emissions.
+Over application of synthetic nitrogen-based fertilizers releases significant
+amounts of N$_2$O, a very potent GHG.
+The paragraphs below will look at two very important greenhouse gases, carbon
+dioxide (CO$_2$) and methane (CH$_4$).
+
+<<food_ghg, fig.scap="Food-related greenhouse gas emissions by life cycle stage", fig.cap="U.S.\\ food-related greenhouse gas emissions by life cycle stage. ``LULUC'' is land use and land use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
+food_emissions_US <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Crippa et al 2021.xlsx"), 
+                                            sheet = "data to plot") %>% 
+  tidyr::pivot_longer(-`System Stage`, names_to = "Year", values_to = "co2_emissions") %>% 
+  dplyr::mutate(
+    Year = as.numeric(Year), 
+    co2_emissions = co2_emissions / 1e6, # Convert kt/year to Gt/year
+    `System Stage` = factor(`System Stage`, levels = c("End of life", "Consumption",  
+                                                       "Retail", "Transport", 
+                                                       "Packaging", "Processing", "Production", "LULUC"))
+  )
+
+food_emissions_US %>% 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, 
+                                         y = co2_emissions,
+                                         fill = `System Stage`)) + 
+  ggplot2::geom_area() + 
+  
+  ggplot2::labs(x = ggplot2::element_blank(), 
+                y = expression("Food GHG emissions [Gt "*CO[2]*"eq/year]"), 
+                fill = ggplot2::element_blank()) +
+  
+  ggplot2::scale_fill_viridis_d(direction = -1) +
+  
+  MKHthemes::xy_theme()
+@
 
 
-%..............................
-\paragraph{Air}
-%..............................
-
-Sometimes farming practices can lead to air-quality problems 
-in the form of particulate matter.
-Particularly notable examples include the great Dust Bowl in the U.S. in the 1930s
-and the phenomenon called the ``Yellow Wind'' or ``Asian dust,'' where fine
-soil particles are carried from China, Mongolia, and Kazakhstan to East Asia and 
-sometimes across the Pacific Ocean to the U.S.
-Odor from concentrated animal operations can cause objectionable odors for nearby
-neighbors.
-However, the most globally important form of air emissions is greenhouse 
-gases\index{greenhouse gases}.
-
-One source of greenhouse gas emissions in food and agriculture 
-is the food delivery system.
-Figure~\ref{fig:food_ghg} shows energy use in various stages of food
-distribution and preparation. 
-The amount of CO$_2$ released is proportional to the amount of energy used.
-Figure~\ref{fig:FoodEmissionsPerMcal} shows equivalent CO$_2$ emissions per Mcal of food.
-(Foods with low feed-to-food efficiency tend to have higher greenhouse gas emissions;
-see Figure~\ref{fig:FoodToFeedEfficiency}.)
-However, by itself Figure~\ref{fig:FoodEmissionsPerMcal} is not terribly informative.
-We don't eat equal calories of each food.
-We need a balanced diet that provides all of our essential
-nutrients.
-Figure~\ref{fig:GHG_food} shows what individual foods contribute to overall food
-emissions (but not what quantity of each are consumed).
-Taken together, Figures~\ref{fig:food_ghg}--\ref{fig:GHG_food} 
-paint a suggestive (but incomplete!) picture of agricultural
-CO$_2$ emissions.
-
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\begin{mcframe}[0.90\textwidth](0.85\textwidth)
+%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Convenient calculators for greenhouse emissions from food production
+can be found online \cite{CleanMetrics:aa}.
+Factors such as transport distance and wastage percentages are important
+for determining GHG emissions from food.
+\end{mcframe}
 
 <<FoodEmissionsPerMcal, fig.height=4, fig.scap="Food CO$_2$ emissions per Mcal of food", fig.cap="Food CO$_2$ emissions per Mcal of food. \\emph{Source}: \\citet{Ritchie:2021tl}.">>=
 food_emissions_per_kcal <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "food-footprints-kcal.xlsx"), 
@@ -483,63 +472,49 @@ food_emissions_total %>%
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
 
+\paragraph{CO$_2$}
+One source of greenhouse gas emissions in food and agriculture 
+is the food-delivery system.
+Figure~\ref{fig:food_ghg} shows energy use in various stages of food
+distribution and preparation. 
+The amount of CO$_2$ released is proportional to the amount of energy used.
+Figure~\ref{fig:FoodEmissionsPerMcal} shows equivalent CO$_2$ emissions per Mcal of food.
+(Foods with low feed-to-food efficiency tend to have higher greenhouse gas emissions;
+see Figure~\ref{fig:FoodToFeedEfficiency}.)
+However, by itself Figure~\ref{fig:FoodEmissionsPerMcal} is not terribly informative.
+We don't eat equal calories of each food.
+We need a balanced diet that provides all of our essential
+nutrients.
+Figure~\ref{fig:GHG_food} shows what individual foods contribute to overall food
+emissions (but not what quantity of each are consumed).
+Taken together, Figures~\ref{fig:food_ghg}--\ref{fig:GHG_food} 
+paint a suggestive (but incomplete!) picture of agricultural
+CO$_2$ emissions.
 
-Another source of greenhouse gas emissions in agriculture is land use.
-Tropical rainforest deforestation, particularly in Brazil and Indonesia,
-contributes significantly to global GHG emissions.
-Over application of synthetic nitrogen-based fertilizers releases significant
-amounts of N$_2$O, a very potent GHG.
-Globally, food and land use account for 24\% of GHG emissions.
-
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-\begin{mcframe}[0.90\textwidth](0.85\textwidth)
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Convenient calculators for greenhouse emissions from food production
-can be found online \cite{CleanMetrics:aa}.
-Factors such as transport distance and wastage percentages are important
-for determining GHG emissions from food.
-\end{mcframe}
-
-
-%..............................
-\paragraph{Water}
-%..............................
-
-Agriculture can have significant impacts on water quality and quantity.
-Agriculture accounts for 70\%--80\% of water use.
-If aquifers are exhausted, then future humans won't have water to drink or bath in.
-Agrichemicals can pollute surface water as well as ground water.
-For example, the city of Toledo, Ohio draws its drinking water from Lake Erie.
-Since the 1990s Lake Erie has been subject to ``blooms'' of toxic cyanobacteria
-fueled by fertilizer run off.
-Six people got sick in 2013.
-In 2014, it was 110 people and the municipal water supply to 400,000 people was shut down.
-Moreover, Lake Erie and the Maumee River that feeds it were unsafe for human skin contact.
-Blooms occurred again in 2017 and 2019.
-Animal manure can also contaminate waterways. Ick.
-
-
-%..............................
-\paragraph{Land}
-%..............................
-
-The main impact of agriculture on soil is erosion.
-Most erosion results from wind or water action on tilled soils, that is,
-where the land has been plowed to expose bare soil.
-In the Great Plains, these practices have lead to the loss of several feet of
-topsoil.
-For example, a survey in Minot, North Dakota taken in 1900 found 40 cm of of black
-topsoil.
-In 2017, the area had no black topsoil; its soil was light gray.
-% https://www.producer.com/news/survey-reveals-amazing-soil-loss-in-great-plains-region/
-
-Farming can (and has had) impacts on biodiversity and habitat loss.
-
+\paragraph{CH$_4$}
+Add stuff about cattle here.
+Methane is 25x as powerful a GHG as CO2.
+But it's not the cattle, it's the agricultural practices.
+And we need animals for regenerative agriculture.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sustainability transitions in agriculture}
 \label{sec:food_ag_efficiency}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To be more sustainable, agriculture must be more efficient and, to be strongly
+sustainable, it must increase soil fertility without extracting minerals and 
+water from the environment greater than their regeneration rates.
+The sections below examine agricultural efficiency and soil regeneration in more detail.
+
+%++++++++++++++++++++++++++++++
+\subsection{Efficiency }
+\label{sec:ag_metrics}
+%++++++++++++++++++++++++++++++
+
+Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based efficiency for U.S.
+agriculture, which is one aspect of the resource intensity~\Rparen{} of agriculture.
+Other metrics by which the agriculture system could be judged are presented below.
 
 \begin{figure}
 \centering
@@ -548,6 +523,49 @@ Farming can (and has had) impacts on biodiversity and habitat loss.
 \label{fig:food_and_ag_material_flow}
 \end{figure}
 
+We could judge agriculture on the basis of how effectively each input is used.
+For example, land is a major factor in agriculture.
+Relevant metrics for land use include the number of calories produced
+per acre or the (average) number of acres needed to provide complete
+human nutritional requirements.
+One difference between these two metrics is that humans require more than just
+calories.
+In addition, neither of these measures provides guidance for improving efficiency
+while simultaneously preserving the human preference for variety in our diets;
+nobody wants to eat the ``optimal'' diet \emph{exclusively}.
+Another land-based metric is profitability per area, that is, money.
+One of the challenges for sustainability is to align motivation (such as prices
+or pricing structure) with desirable sustainability outcomes.
+Currently, the climate change impacts of food production do not directly impact
+the price of food.
+
+Various energy-based metrics could be applied to agriculture
+for the purpose of assessing sustainability of agriculture.
+For instance, one objective could be to maximize the amount of food produced per
+unit energy consumed.
+Or we could attempt to maximize EROI.
+Another alternative is to minimize the amount of CO$_2$ produced in agriculture.
+Agriculture currently accounts for approximately 70\% of fresh water use.
+Minimizing the amount of water used in agriculture is important for several
+aspects of sustainability, including the fact that pumping water requires energy.
+
+One strategy that might be highly successful for some climate zones and for some
+crops is to use solar panels to provide partial shade for crops prefer lower-light
+conditions. Plants will provide some evaporative cooling for the solar panels,
+which boosts their efficiency. The panels provide shade for crops, which lessens
+the amount of water needed for irrigation.
+Panel spacing is typically less dense than is typical for industrial PV installation,
+so the crops have to make up the difference in profitability per acre.
+
+One drawback to each of the metrics mentioned above is that agriculture operates
+under many constraints (such as the amount of available land,
+satisfying human nutritional requirements and preferences, and being cost effective).
+Each metric is desirable but tradeoffs exist among them and the constraints
+have to be satisfied.
+Price is generally the mechanism humans use to accommodate such tradeoffs, so
+minimizing the price of food could be an indicator of the effectiveness of the
+agricultural system.
+Indeed, the price of food has fallen, adjusted for inflation in the last 100 years.
 
 Figure~\ref{fig:food_and_ag_material_flow} shows a Sankey diagram\index{Sankey diagram!agriculture}
 of material flows
@@ -604,83 +622,10 @@ weather- and climate-related supply-side disruptions are
 more significant than demand-side disruptions
 for determining food prices.
 
-
 %++++++++++++++++++++++++++++++
-\subsection{Efficiency metrics}
-\label{sec:ag_metrics}
+\subsection{Regenerative agriculture}
+\label{sec:ag_regen}
 %++++++++++++++++++++++++++++++
-
-Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based efficiency for U.S.
-agriculture, which is one aspect of the resource intensity~\Rparen{} of agriculture.
-Other metrics by which the agriculture system could be judged are presented below.
-
-We could judge agriculture on the basis of how effectively each input is used.
-For example, land is a major factor in agriculture.
-Relevant metrics for land use include the number of calories produced
-per acre or the (average) number of acres needed to provide complete
-human nutritional requirements.
-One difference between these two metrics is that humans require more than just
-calories.
-In addition, neither of these measures provides guidance for improving efficiency
-while simultaneously preserving the human preference for variety in our diets;
-nobody wants to eat the ``optimal'' diet \emph{exclusively}.
-Another land-based metric is profitability per area, that is, money.
-One of the challenges for sustainability is to align motivation (such as prices
-or pricing structure) with desirable sustainability outcomes.
-Currently, the climate change impacts of food production do not directly impact
-the price of food.
-
-Various energy-based metrics could be applied to agriculture
-for the purpose of assessing sustainability of agriculture.
-For instance, one objective could be to maximize the amount of food produced per
-unit energy consumed.
-Or we could attempt to maximize EROI.
-Another alternative is to minimize the amount of CO$_2$ produced in agriculture.
-Agriculture currently accounts for approximately 70\% of fresh water use.
-Minimizing the amount of water used in agriculture is important for several
-aspects of sustainability, including the fact that pumping water requires energy.
-
-One drawback to each of the metrics mentioned above is that agriculture operates
-under many constraints (such as the amount of available land,
-satisfying human nutritional requirements and preferences, and being cost effective).
-Each metric is desirable but tradeoffs exist among them and the constraints
-have to be satisfied.
-Price is generally the mechanism humans use to accommodate such tradeoffs, so
-minimizing the price of food could be an indicator of the effectiveness of the
-agricultural system.
-Indeed, the price of food has fallen, adjusted for inflation in the last 100 years.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Summary}
-\label{sec:food_transitions}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% To achieve a more-sustainable food system,
-% changes on many levels will be needed,
-% from the personal to the global.
-%
-% On the personal level,
-% eating closer to the base of the food chain and
-% pursuing vegetarian or vegan diets are among the most effective
-% ways to reduce negative environmental impacts of the food supply system.
-% Participating in the slow food movement can promote sustainability,
-% as it seeks to promote traditional, regional cuisine,
-% thereby reducing the distance from farm to plate.
-%
-% At the global level,
-% organic farming seeks to limit the use of synthetic fertilizers and pesticides
-% by promoting the use of compost, manure, and natural practices.
-% Practices such as crop rotation and biological (as opposed to chemical) past control
-% are encouraged.
-%
-% The growing problem of food waste spans the personal and global levels.
-% Actions and policies to minimize food waste provide benefits such as
-% reducing inputs to the food system and
-% strain on the biosphere.
-
-%% Farm subsidies (from the 1930s onwards) distort market prices.
-%% Redirect subsidies to remove marginal land from raising livestock to
-%% reforestation and carbon sequestration.
 
 This section will attempt to describe a food \emph{system} that balances
 the desires to minimize the inputs and outputs of agriculture as described
@@ -711,24 +656,58 @@ Ultimately, reducing environmental impacts requires additional investment, which
 makes food more expensive, which is consistent with Equation~\ref{eq:IPARX}
 (reduced impact~\Iparen{} comes from reduced affluence~\Aparen{}).
 
-One strategy that might be highly successful for some climate zones and for some
-crops is to use solar panels to provide partial shade for crops prefer lower-light
-conditions. Plants will provide some evaporative cooling for the solar panels,
-which boosts their efficiency. The panels provide shade for crops, which lessens
-the amount of water needed for irrigation.
-Panel spacing is typically less dense than is typical for industrial PV installation,
-so the crops have to make up the difference in profitability per acre.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+\label{sec:food_transitions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Agricultural sustainability challenges include unsustainable land use practices
+that degrade soil fertility, require unsustainable mineral inputs, and harm the 
+land's ability to sequester carbon.
+Agriculture is an energy sink rather than an energy source and requires the 
+unsustainable input of fossil fuels.
+Lastly, agricultural practices are the source of a significant amount of greenhouse
+gases.
+However, food is a basic human need; it is one of the few things we absolutely 
+cannot do without. 
+Therefore, it is crucially important to make choices, individually and corporately,
+that result in a sustainable agricultural system. 
+These choices must involve higher efficiencies for the agricultural system and
+practices that preserve and enhance soil fertility.
+
+% On the personal level,
+% eating closer to the base of the food chain and
+% pursuing vegetarian or vegan diets are among the most effective
+% ways to reduce negative environmental impacts of the food supply system.
+% Participating in the slow food movement can promote sustainability,
+% as it seeks to promote traditional, regional cuisine,
+% thereby reducing the distance from farm to plate.
+%
+% At the global level,
+% organic farming seeks to limit the use of synthetic fertilizers and pesticides
+% by promoting the use of compost, manure, and natural practices.
+% Practices such as crop rotation and biological (as opposed to chemical) past control
+% are encouraged.
+%
+% The growing problem of food waste spans the personal and global levels.
+% Actions and policies to minimize food waste provide benefits such as
+% reducing inputs to the food system and
+% strain on the biosphere.
+
+%% Farm subsidies (from the 1930s onwards) distort market prices.
+%% Redirect subsidies to remove marginal land from raising livestock to
+%% reforestation and carbon sequestration.
 
 A ``recipe'' for sustainable agriculture is given by food writer Michael Pollan,
 in seven words: ``Eat food. Not too much. Mostly plants.''
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Gillian Crowther, \emph{Eating Culture: An Anthropological Guide to Food, 
-2nd Edition}, Toronto: University of Toronto Press, 2018.
+2nd Edition}, Toronto: University of Toronto Press, 2018. \\
 
 \noindent Benjamin Lorr, \emph{The Secret Life of Groceries: The Dark Miracle of
 the American Supermarket}, New York: Avery, 2020. \\
