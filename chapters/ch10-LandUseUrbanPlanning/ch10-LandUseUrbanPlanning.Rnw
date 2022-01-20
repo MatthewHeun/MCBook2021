@@ -308,13 +308,15 @@ across all land-use categories.
 This section examines sustainability challenges related to the way humans use land
 for housing, for transportation, and for agriculture.
 
+
 %++++++++++++++++++++++++++++++
-\subsection{Housing or urban sustainability}
+\subsection{Housing and urban sustainability}
 \label{sec:land_challenges_housing}
 %++++++++++++++++++++++++++++++
 
-Two sustainability challenges related to urban areas are their tendency to grow 
-continually and the need to continually repair depreciating infrastructure.
+Two sustainability challenges related to urban areas are 
+(a)~their tendency for continuous growth (sprawl) and 
+(b)~the need to continually repair depreciating infrastructure.
 (Note that these two challenges are not the only ones cities face; they are just
 the ones we have chosen to highlight as examples in this chapter. 
 Other challenges include, for instance, the ever-increasing need to water to supply
@@ -323,44 +325,65 @@ As an example of the latter, several cities have already appointed ``extreme hea
 officials.'')
 
 
+%..............................
 \paragraph{Urban sprawl}
-Analysis~\cite{Nowosad2019} of the CCI data reveals some trends related to land use change over time.
+%..............................
+
+Analysis~\cite{Nowosad2019} of the CCI data reveals some trends related to land use changes over time.
 One trend is that urban areas are continually growing and, basically, never shrink.
 From 1992--2015, settlements gained 337,000 square kilometers, which is 0.23\%
-of the Earth's land area, or about 0.01\% per year.
+of the Earth's land area, or about 0.01\% of the Earth's land area per year.
 Fundamentally, urban areas can't continue to grow forever.
 If the Earth's surface were 100\% urban, where would we store carbon, grow food, or obtain material
 and energy resources?
 
-The source of land for urban growth is principally agricultural land that is near 
+The source of land for urban growth is principally agricultural land near 
 urban areas.
-However, to feed a growing population, \emph{net} agricultural land has had to 
-increase. 
+However, to feed a growing population, \emph{net} agricultural land has increased. 
 The increase comes, primarily, from forests being converted to agriculture.
 Simultaneously, there is also some (formerly) agricultural land being
 reforested.
 The net gain for agricultural land means that \emph{more} forests are cleared
-than the amount of agricultural land that is being reforested.
+than the amount of agricultural land being reforested.
 
 The conversion of forest to agricultural land to urban environments has several 
 sustainability implications.
 First, there is a net loss of \emph{high-quality} agricultural land.
 As existing farms near cities become urban areas, agricultural activities are pushed 
-out to more marginal land.
+further out to more marginal land.
 Second, the net effect is deforestation, which results in greenhouse gas emissions.
 Land use and land-use change are an important source of anthropogenic greenhouse gas emissions.
 
 A sustainability challenge associated with urban growth is
 ``how can cities supply the needs of an increasing and increasingly urban population?''
-There are challenges associated with the city's systems, for example, power, sanitation,
-and water supply. 
-There are also challenges with respect to continual and continued growth.
+There are challenges associated with the urban systems, 
+such as power, sanitation, and water supply. 
+There are also challenges related to continuous growth.
 Cities have been converting agricultural land to urban environments for centuries.
 In the last century, that trend has only accelerated.
 ``How can the best farmland be preserved for future food production?''
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%..............................
 \paragraph{Infrastructure sustainability}
+%..............................
+
 Urban areas are defined by a relative abundance of public works.
 A rural road might have a drainage ditch beside the road but the road itself
 might not be paved. 
