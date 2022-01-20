@@ -60,7 +60,7 @@
 \newcommand{\Rparen}{(\:\!\mft{R}\;\!)}
 \newcommand{\REpnodollar}{\mft{R}_{\mft{Ep}}}
 \newcommand{\REp}{$\REpnodollar$}
-\newcommand{\REpparen}{(\REp)}
+\newcommand{\REpparen}{(\:\!\REp)}
 \newcommand{\Xparen}{(\;\!\mft{X}\:)}
 \newcommand{\XCOtwonodollar}{\mft{X}_{\text{CO}_2}}
 \newcommand{\XCOtwo}{$\XCOtwonodollar$}
