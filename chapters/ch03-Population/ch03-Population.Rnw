@@ -406,7 +406,7 @@ demo_transition <- readxl::read_excel(file.path("chapters", "ch03-Population", "
      \centering
      \begin{subfigure}[b]{6.5in}
          \centering  
-<<fig.width=5.5, fig.height=2>>=
+<<CBR-CDR, fig.width=5.5, fig.height=2>>=
 phase_delimiters <- c(45, 110, 190)
 demo_transition %>%
   dplyr::filter(which_graph == "rate") %>%
@@ -435,7 +435,7 @@ demo_transition %>%
 
      \begin{subfigure}[b]{6.5in}
          \centering 
-<<fig.width=5.5, fig.height=2>>=
+<<Pop-Demo-Trans, fig.width=5.5, fig.height=2>>=
 demo_transition %>%
   dplyr::filter(which_graph == "Pop") %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) +
@@ -463,7 +463,7 @@ demo_transition %>%
 
      \begin{subfigure}[c]{6.5in}
          \centering 
-<<fig.width=5.5, fig.height=1.2>>=
+<<Pop-Pyramids, fig.width=5.5, fig.height=1.2>>=
 pop_pyramids <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "PopulationPyramids.xlsx"),
                                    sheet = "data to plot") %>%
   dplyr::mutate(
