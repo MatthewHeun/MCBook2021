@@ -624,10 +624,14 @@ to explore additional individual sustainability actions.
 Question                                    & Sustainability-beneficial answer       \\ 
 \midrule
 How close will I live to work,              & \multirow{2}{*}{Close enough to allow walking or cycling} \\
-school, church, and stores?                 &                                        \\
-What kind of house will I buy?              & Small and used                         \\
-How will I eat?                             & Closer to the bottom of the food chain \\   
-What kind of car will I drive?              & Small and used                         \\
+school, church, and stores?                 &                                        \vspace{1mm} \\
+%
+What kind of house will I buy?              & Small and used                         \vspace{1mm} \\
+%
+How will I eat?                             & Closer to the bottom of the food chain \vspace{1mm} \\   
+%
+What kind of car will I drive?              & Small and used                         \vspace{1mm} \\
+%
 How much will I fly?                        & Little or not at all                   \\
 \bottomrule
 \end{tabular}
