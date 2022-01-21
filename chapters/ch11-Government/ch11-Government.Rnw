@@ -13,45 +13,62 @@
 \epigraph{Show me the incentive and I will show you the outcome}{Charlie Munger}
 
 The final two chapters of this book discuss actions
-that can be taken by collectives and individuals to live more sustainably.
-This chapter (Chapter~\ref{chap:government}) explores collective actions, and 
-Chapter~\ref{chap:personal_action} explores individual actions.
-
-Actions for sustainability are framed as \emph{sentences} with a subject,
-an action, and an object.
-Subjects can be collectives or individuals who perform the action.
-There are many possible actions but this book considers four examples:
-choices, laws, research, and education.
-We focus on eight objects or areas of application corresponding to 
-the topics of Chapters~\ref{chap:population}--\ref{chap:land_use_urban_planning}. 
-
-The purpose of this chapter and Chapter~\ref{chap:personal_action}
+that can be taken by collectives (this chapter) and
+individuals (Chapter~\ref{chap:personal_action})
+to live more sustainably.
+The purpose of the final two chapters
 is to provide a breadth of possible actions to stimulate creative thinking and
-meaningful action among readers.
+meaningful action among readers, 
+both as members of collectives and as individuals.
 Necessarily, little depth is provided on any single action.
-Readers are encouraged to do their own research, 
-digging deeper into the ideas and concepts mentioned herein
-to find the actions that fit their circumstances and outlook.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Collectives}
-\label{sec:collectives}
+\section{Sentences for sustainability}
+\label{sec:sentences_for_sustainability}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Actions for sustainability can be taken by individuals
-or by groups. 
+The collective and individual actions for sustainability 
+are constructed as \emph{sentences} for sustainability, 
+each with 
+a subject, 
+a verb, and 
+an object.
+The subjects are sustainability actors. 
+The verbs are sustainability actions.
+The objects are arenas in which the sustainability actions can take place.
+Sustainability sentences look like this:
+
+\begin{equation}
+\label{eq:Sent4Sust}
+\small
+\begin{tabular}{ccccc}
+  $\text{ACTOR}$    & + & $\text{ACTION}$        & + & $\text{ARENA .}$
+\end{tabular}
+\normalsize
+\end{equation}
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Actors} 
+\label{sec:actors_def}
+%++++++++++++++++++++++++++++++
+
+In sustainability sentences, 
+the actors are individuals or collectives who perform the action.
+The topic of this chapter is collective actions toward sustainability.
 Collective actions are appropriate for problems that are ``too big'' 
-to be solved by an individual.
+to be solved by a single person.
 Collective actions often require the cooperation of several groups to be successful.
-This chapter considers collective actions that might be taken by
+In this chapter, we consider collective sustainability actions taken by
 governments, corporations, and organizations.
+The next chapter considers sustainability actions taken by individuals.
 
 
-%++++++++++++++++++++++++++++++
-\subsection{Governments} 
+%..............................
+\paragraph{Governments} 
 \label{sec:collective_govt}
-%++++++++++++++++++++++++++++++
+%..............................
 
 The first type of collective group 
 \emph{has the power to make laws, rules, and policies}.
@@ -66,15 +83,15 @@ such as international treaties, the International Monetary Fund, and
 cost-sharing agreements between state and federal agencies for road construction.
 
 
-%++++++++++++++++++++++++++++++
-\subsection{Corporations}
+%..............................
+\paragraph{Corporations}
 \label{sec:collective_corp}
-%++++++++++++++++++++++++++++++
+%..............................
 
-The second type of collective is business corporations. 
+The second type of collective group is business corporations. 
 Examples include Volkswagen, Siemens Gamesa Renewable Energy,
 the Saudi Arabian Oil Company, Maersk, and Best Buy.
-Characteristically, businesses are engaged in commercial activity, 
+Characteristically, corporations are engaged in commercial activity, 
 that is, \emph{making and selling products and services}.
 A business can be ``for profit,'' like Apple, Amazon, or Johnson and Johnson, or
 ``not for profit,'' like the Educational Testing Service, Mayo Clinic, World 
@@ -92,12 +109,13 @@ Because this benefit is part of the corporate charter, it is the fiduciary
 responsibility of company officers to consider these other stakeholders 
 beyond merely maximizing shareholder value.  
 
-%++++++++++++++++++++++++++++++
-\subsection{Organizations} 
-\label{sec:collective_org}
-%++++++++++++++++++++++++++++++
 
-The third type of collective is an organization.
+%..............................
+\paragraph{Organizations} 
+\label{sec:collective_org}
+%..............................
+
+The third type of collective group is called, generically, organizations.
 Example organizations include the American Society of Heating, Refrigerating and 
 Air-Conditioning Engineers (ASHRAE),  the 3$^{\text{rd}}$ Generation Partnership Project (3GPP),
 local churches, the Internet Society, political
@@ -117,7 +135,7 @@ which is a company affiliated with
 nearly five hundred local, independent chapters.
 Lastly, the Internet Society (mentioned above)
 is an organization that sets policy for high-level internet activities; 
-it is an organization that is also quasi-governmental in nature.
+it is quasi-governmental in nature.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -125,55 +143,54 @@ it is an organization that is also quasi-governmental in nature.
 Despite some ``fuzziness'' in the different types of collectives,
 the categories are useful as a framework to help us think about the capabilities
 of collectives. 
-Not all collectives are equally suited for or adept at the same tasks.
+Not all collectives are equally suited for or adept at a given task.
 \end{mcframe}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Actions}
-\label{sec:sust_actions}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%..............................
+\paragraph{Individuals} 
+\label{sec:individuals_def}
+%..............................
 
-In the sections that follow, we consider four archetypal actions for sustainability:
-(a)~choices, (b)~laws, (c)~research, and (d)~education.
-Although these four actions apply to all kinds of policy problems, 
-we focus on applications for sustainability.
-The four items above are not an exhaustive list of actions that individuals
-and collectives can take for sustainability, but they are a \emph{framework}
-to guide our thinking about possible actions. 
-
-% I commented the next sentence, because it is a repeat of two sentences above.
-% A second important caveat is that we are considering only actions 
-% \emph{for sustainability}.
-% 
-% I commented the next sentence, because it doesn't seem to me that there is anything
-% special about the sentences and sustainability.
-% The sentence structure *could* be applied to non-sustainability areas.
-% The ``sentence'' framework is most helpful if you don't try to make it fit actions
-% that are not sustainability related.
+Individuals are persons who are committed to sustainability and
+take actions that match their commitments;
+see Chapter~\ref{chap:personal_action}.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Choices} 
+\subsection{Actions} 
+\label{sec:actions_def}
+%++++++++++++++++++++++++++++++
+
+In both this chapter (collective actions) and the next (individual actions), 
+we consider four types of sustainability actions:
+choices, laws, research, and education.
+The four types of actions are not exhaustive of all possible actions, 
+but they provide a \emph{framework}
+to guide our thinking about possible sustainability actions. 
+
+
+%..............................
+\paragraph{Choices} 
 \label{sec:actions_choices}
-%++++++++++++++++++++++++++++++
+%..............................
 
 Individually and collectively, we have many opportunities to live more sustainably.
 Sometimes we just need to pick the most sustainable option in a given
 situation or context. 
 The decisions might be large (where to live, family planning) 
 or small (paper vs.\ plastic bags).
-It might be a single, simple choice or lifestyle-related (driving vs.\ walking).
+It might be a single, simple choice or a lifestyle-related choice (driving vs.\ walking).
 
 Characteristic of the ``choice'' action is that it has a \emph{direct impact} on sustainability, and
 it involves choosing a sustainable option from a menu of \emph{existing} activities or products.
 Nothing new needs to be invented.
 
 
-%++++++++++++++++++++++++++++++
-\subsection{Laws}
+%..............................
+\paragraph{Laws}
 \label{sec:actions_law}
-%++++++++++++++++++++++++++++++
+%..............................
 
 Laws and regulations \href{https://en.wiktionary.org/wiki/affect}{affect}
 (and sometimes define and sometimes \href{https://en.wiktionary.org/wiki/effect#Verb}{effect})
@@ -198,14 +215,15 @@ Changes in those relationships have sustainability implications.
 Changing laws and regulations (the ``rules of the game'')
 can provide widespread incentives
 to encourage self-interested individuals to become more sustainable.
-To extend the ``menu'' metaphor, if the Choice action involves selecting a product or 
-service from an existing menu, then rules and regulations change the prices
-of menu items. 
+To extend the ``menu'' metaphor, if choice actions involve selecting a product or 
+service from an existing menu, rules and regulations change the prices
+of the menu items. 
+In turn, the prices change the behavior and choices of both collectives and individuals.
+
 Often the purpose of these rules and regulations is to internalize externalities.
 The rules of the game are exceedingly important for the environment, 
 because unintended environmental consequences often emerge from
 financial incentives that accompany laws and regulations.
-In other words, the rules of the game change behavior.
 A classic example of unintended consequences is the 
 tragedy of the commons\index{tragedy of the commons}\index{commons!tragedy of the}.
 The tragedy of the commons describes situations when
@@ -240,10 +258,10 @@ by prudent collaboration within strong societal structures.
 \end{mcframe}
 
 
-%++++++++++++++++++++++++++++++
-\subsection{Research} 
+%..............................
+\paragraph{Research} 
 \label{sec:actions_research}
-%++++++++++++++++++++++++++++++
+%..............................
 
 The ``research'' action means both the creation of new knowledge about sustainability and
 the invention or development of new technology for sustainability.
@@ -284,10 +302,10 @@ We could imagine the government establishing
 a prize for developing cost-effective carbon sequestration technology.
 
 
-%++++++++++++++++++++++++++++++
-\subsection{Education}
+%..............................
+\paragraph{Education}
 \label{sec:actions_education}
-%++++++++++++++++++++++++++++++
+%..............................
 
 Education has the power to change hearts and minds, and thus, the way people behave.
 Disseminating information about sustainability is a crucial step in achieving a
@@ -311,53 +329,229 @@ companies respond by developing alternative products and services (research agai
 consumers respond by buying the new, more sustainable option (choice).
 
 
+%++++++++++++++++++++++++++++++
+\subsection{Arenas} 
+\label{sec:arenas_def}
+%++++++++++++++++++++++++++++++
+
+In this chapter and the next, 
+we consider sustainability actions undertaken in arenas
+corresponding to eight previous chapters:
+population, 
+affluence, 
+resources, 
+impacts, 
+households, 
+transportation, 
+agriculture, and 
+land use and urban planning. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Sentences for sustainability}
+% \label{sec:collective_sentences_for_sustainability}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% In the remainder of this chapter, we provide examples of collective actions to 
+% make societies more sustainable, organized around the idea of 
+% ``sentences for sustainability.''
+% where the \emph{subject} of the sentence is who is doing the action. 
+% In this chapter, the subject is one of the kinds of collectives defined in 
+% . 
+% In the next chapter, the subject is an individual.
+% In the examples presented below,
+% the \emph{action} is either choice, law, research, or education 
+% (following Section~\ref{sec:sust_actions}),
+% but there are other possible actions.
+% Lastly, the \emph{object} is area in which an action is applied.
+% We use Chapters~\ref{chap:population}--\ref{chap:land_use_urban_planning} as examples
+% of objects for sustainability actions.
+% However, as with actions, there could be many others areas where actions for
+% sustainability could be taken.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Collectives}
+% \label{sec:collectives}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Actions for sustainability can be taken by individuals
+% or by groups. 
+% Collective actions are appropriate for problems that are ``too big'' 
+% to be solved by an individual.
+% Collective actions often require the cooperation of several groups to be successful.
+% This chapter considers collective actions that might be taken by
+% governments, corporations, and organizations.
+% 
+% 
+% %++++++++++++++++++++++++++++++
+% \subsection{Governments} 
+% \label{sec:collective_govt}
+% %++++++++++++++++++++++++++++++
+% 
+% The first type of collective group 
+% \emph{has the power to make laws, rules, and policies}.
+% We call this type governments.
+% Governments exist at local, regional, national, and international levels.
+% Governmental organizations can have very narrow and specific responsibilities 
+% (like a local zoning board)
+% or broad and general responsibilities 
+% (like state or national legislatures).
+% Governments can cooperate with each other in many ways, 
+% such as international treaties, the International Monetary Fund, and 
+% cost-sharing agreements between state and federal agencies for road construction.
+% 
+% 
+% %++++++++++++++++++++++++++++++
+% \subsection{Corporations}
+% \label{sec:collective_corp}
+% %++++++++++++++++++++++++++++++
+% 
+% The second type of collective is business corporations. 
+% Examples include Volkswagen, Siemens Gamesa Renewable Energy,
+% the Saudi Arabian Oil Company, Maersk, and Best Buy.
+% Characteristically, businesses are engaged in commercial activity, 
+% that is, \emph{making and selling products and services}.
+% A business can be ``for profit,'' like Apple, Amazon, or Johnson and Johnson, or
+% ``not for profit,'' like the Educational Testing Service, Mayo Clinic, World 
+% Vision International, and most colleges and universities.
+% Often, charitable foundations are structured as business corporations. 
+% For example, the Bill and Melinda Gates Foundation is a charitable foundation
+% with a corporate structure.
+% 
+% Some U.S.\ states allow alternative corporate charters that blend the for-profit
+% and not-for-profit corporate structures.
+% A benefit corporation is an example of this blended structure.
+% It is a for-profit company that also attempts to benefit society, its workers,
+% its community and/or the environment in addition to making a profit. 
+% Because this benefit is part of the corporate charter, it is the fiduciary 
+% responsibility of company officers to consider these other stakeholders 
+% beyond merely maximizing shareholder value.  
+% 
+% %++++++++++++++++++++++++++++++
+% \subsection{Organizations} 
+% \label{sec:collective_org}
+% %++++++++++++++++++++++++++++++
+% 
+% The third type of collective is an organization.
+% Example organizations include the American Society of Heating, Refrigerating and 
+% Air-Conditioning Engineers (ASHRAE),  the 3$^{\text{rd}}$ Generation Partnership Project (3GPP),
+% local churches, the Internet Society, political
+% parties, environmental organizations, and community and civic groups.
+% A distinguishing characteristic of organizations is \emph{voluntary association},
+% meaning that individuals choose to be a member of the organization.
+% 
+% Collectives sometimes straddle the boundaries between categories.
+% For instance, the Federal National Mortgage Association (``Fannie Mae'') is a
+% U.S.\ government sponsored business corporation.
+% Many nonprofits mix a business corporate structure with a voluntary organization(s).
+% For example, the Roman Catholic Church is an association of corporate entities
+% (such as Catholic Relief Services) and
+% organizations (including local parishes).
+% Another example is the National Audubon Society,
+% which is a company affiliated with
+% nearly five hundred local, independent chapters.
+% Lastly, the Internet Society (mentioned above)
+% is an organization that sets policy for high-level internet activities; 
+% it is an organization that is also quasi-governmental in nature.
+% 
+% %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% \begin{mcframe}[0.90\textwidth](0.85\textwidth)
+% %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% Despite some ``fuzziness'' in the different types of collectives,
+% the categories are useful as a framework to help us think about the capabilities
+% of collectives. 
+% Not all collectives are equally suited for or adept at the same tasks.
+% \end{mcframe}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Actions}
+% \label{sec:sust_actions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% In the sections that follow, we consider four archetypal actions for sustainability:
+% (a)~choices, (b)~laws, (c)~research, and (d)~education.
+% Although these four actions apply to all kinds of policy problems, 
+% we focus on applications for sustainability.
+% The four items above are not an exhaustive list of actions that individuals
+% and collectives can take for sustainability, but they are a \emph{framework}
+% to guide our thinking about possible actions. 
+
+% I commented the next sentence, because it is a repeat of two sentences above.
+% A second important caveat is that we are considering only actions 
+% \emph{for sustainability}.
+% 
+% I commented the next sentence, because it doesn't seem to me that there is anything
+% special about the sentences and sustainability.
+% The sentence structure *could* be applied to non-sustainability areas.
+% The ``sentence'' framework is most helpful if you don't try to make it fit actions
+% that are not sustainability related.
+
+
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Collective sentences for sustainability}
+% \label{sec:collective_sentences_for_sustainability}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% In the remainder of this chapter, we provide examples of collective actions to 
+% make societies more sustainable, organized around the idea of 
+% ``sentences for sustainability.''
+% Each ``sentence'' has the form
+% \begin{equation}
+% \label{eq:Sent4Sust}
+% \small
+% \begin{tabular}{ccccc}
+% $\textrm{SUBJECT}$    & + & $\textrm{ACTION}$        & + & $\textrm{OBJECT,}$ %\\
+% \end{tabular}
+% \normalsize
+% % It would be nice to have a label for this equation.
+% % And maybe IPARX too.
+% % https://tex.stackexchange.com/questions/128050/add-equation-name-underneath-equation-number
+% \end{equation}
+% where the \emph{subject} of the sentence is who is doing the action. 
+% In this chapter, the subject is one of the kinds of collectives defined in 
+% Section~\ref{sec:collectives}. 
+% In the next chapter, the subject is an individual.
+% In the examples presented below,
+% the \emph{action} is either choice, law, research, or education 
+% (following Section~\ref{sec:sust_actions}),
+% but there are other possible actions.
+% Lastly, the \emph{object} is area in which an action is applied.
+% We use Chapters~\ref{chap:population}--\ref{chap:land_use_urban_planning} as examples
+% of objects for sustainability actions.
+% However, as with actions, there could be many others areas where actions for
+% sustainability could be taken.
+% 
+% This chapter begins to answer the question,
+% ``how could we reconfigure the systems and structures in our societies
+% to encourage and promote a more sustainable world?''
+% Each section below offers several answers to that questions, 
+% each organized as a sustainability sentence. 
+% These examples are nonexhaustive. 
+% (How could they be otherwise?)
+% The goal is to be generative, 
+% to encourage readers to think of many additional ideas to become more sustainable.
+% You should explore options that fit your local situation, 
+% always keeping in mind the global perspective provided 
+% by Chapters~\ref{chap:introduction}--\ref{chap:impact_intensity}.
+% Questions and problems at the end of the chapter assist the exploration process.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Collective sentences for sustainability}
 \label{sec:collective_sentences_for_sustainability}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In the remainder of this chapter, we provide examples of collective actions to 
-make societies more sustainable, organized around the idea of 
-``sentences for sustainability.''
-Each ``sentence'' has the form
-\begin{equation}
-\label{eq:Sent4Sust}
-\small
-\begin{tabular}{ccccc}
-$\textrm{SUBJECT}$    & + & $\textrm{ACTION}$        & + & $\textrm{OBJECT,}$ %\\
-\end{tabular}
-\normalsize
-% It would be nice to have a label for this equation.
-% And maybe IPARX too.
-% https://tex.stackexchange.com/questions/128050/add-equation-name-underneath-equation-number
-\end{equation}
-where the \emph{subject} of the sentence is who is doing the action. 
-In this chapter, the subject is one of the kinds of collectives defined in 
-Section~\ref{sec:collectives}. 
-In the next chapter, the subject is an individual.
-In the examples presented below,
-the \emph{action} is either choice, law, research, or education 
-(following Section~\ref{sec:sust_actions}),
-but there are other possible actions.
-Lastly, the \emph{object} is area in which an action is applied.
-We use Chapters~\ref{chap:population}--\ref{chap:land_use_urban_planning} as examples
-of objects for sustainability actions.
-However, as with actions, there could be many others areas where actions for
-sustainability could be taken.
-
-This chapter begins to answer the question,
-``how could we reconfigure the systems and structures in our societies
-to encourage and promote a more sustainable world?''
-Each section below offers several answers to that questions, 
-each organized as a sustainability sentence. 
-These examples are nonexhaustive. 
-(How could they be otherwise?)
-The goal is to be generative, 
-to encourage readers to think of many additional ideas to become more sustainable.
-You should explore options that fit your local situation, 
-always keeping in mind the global perspective provided 
-by Chapters~\ref{chap:introduction}--\ref{chap:impact_intensity}.
-Questions and problems at the end of the chapter assist the exploration process.
+In the subsections below, sustainability sentences are 
+presented in the order of the 
+application arenas
+corresponding to Chapters~\ref{chap:population}--\ref{chap:land_use_urban_planning}.
 
 
 %++++++++++++++++++++++++++++++
@@ -1004,11 +1198,25 @@ The one on the left pays more taxes per acre than the one on the right.
 
 This chapter looked at many ways to ``change the system''
 to make the world more sustainable. 
-Astute readers will recognize that governments are often 
+It begins to answer the question,
+``how could we reconfigure the systems and structures in our societies
+to encourage and promote a more sustainable world?''
+
+The examples of collective sustainability actions above 
+are not exhaustive of all possible collective sustainability actions. 
+(How could they be otherwise?)
+The goal of this chapter is not to be exhaustive.
+Rather, the goal is to be generative, 
+to encourage readers to think of many additional ideas to become more sustainable.
+Readers should explore options that fit local circumstances, 
+always keeping in mind the global perspective provided 
+by Chapters~\ref{chap:introduction}--\ref{chap:impact_intensity}.
+Questions and problems at the end of the chapter assist the exploration process.
+
+Astute readers will have noticed that governments are often 
 the route by which collective actions are taken,
 regulations are established, and laws are passed.
-
-When politics and government enter the picture, 
+However, when politics and government enter the picture, 
 winners and losers always emerge.
 One or more groups benefit from political decisions
 and one or more groups are disadvantaged by political decisions.
@@ -1031,6 +1239,8 @@ Furthermore, decisions to become more sustainable often disadvantage
 entrenched business interests, 
 because the current world is unsustainable.
 For example, reducing CO$_2$ emissions disadvantages the entrenched fossil-fuel industry.
+When that happens, entrenched interests can resist changes, 
+hampering sustainability efforts.
 
 That's not to say we shouldn't try to make collective change. 
 Indeed, collective change is the only way to ensure that all people
@@ -1041,7 +1251,7 @@ But the barriers to collective action are high.
 That said, governments consist of people.
 In democracies, the people in government are chosen by the populace.
 Thus, collective actions and personal action intertwine at elections
-when representatives of the people are selected.
+when representatives are selected.
 Indeed, voting for representatives who favor collective change
 toward sustainability 
 is an important action that can be taken by individuals.
