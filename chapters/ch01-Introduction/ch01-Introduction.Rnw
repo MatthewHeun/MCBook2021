@@ -751,12 +751,12 @@ the full restoration is likely to cost more than \euro{8} billion.
       know)?
       If not, why not?
 
-\item More than 1000 old-growth oaks have been cut for timbers to rebuild Notre-Dame de Paris.
+\item \label{question:old-growth-forest}
+      More than 1000 old-growth oaks have been cut for timbers to rebuild Notre-Dame de Paris.
       Do you think this is a good thing because it means there is a demand
       for these timbers (and thus the forests they come from are a valuable
       resource worth preserving) or a bad thing because forests are valuable 
-      carbon sinks. (See also Project P1.\ref{project:old-growth-forest} below.)
-      \label{question:old-growth-forest}
+      carbon sinks. (See also \ref{project:old-growth-forest} below.)
 
 \item When Notre-Dame de Paris burned, its lead roof released toxic particles
       and contaminated the surrounding neighborhood, requiring a lengthy and
@@ -874,7 +874,7 @@ the full restoration is likely to cost more than \euro{8} billion.
       
 \item Derive the results in Section~\ref{sec:exp}.
       
-\item With reference to Q1.\ref{question:old-growth-forest} above,
+\item With reference to \ref{question:old-growth-forest} above,
       research and write a summary report on 
       carbon sequestration of forests. What type(s) of forest store the most carbon?
       Consider old-growth, new-growth, and middle-aged stands of trees. Consider 
@@ -887,14 +887,15 @@ the full restoration is likely to cost more than \euro{8} billion.
       many sources of data use different definitions or metrics.
       \label{project:old-growth-forest}
       
-\item An alternative to the description of exponential growth given in 
+\item \label{project:alt_exp}
+      An alternative to the description of exponential growth given in 
       Section~\ref{sec:exp} is to use the form 
-      $y_N = y_0 (1+r)^N$, where $y_0$ is the initial amount, 
-      $r$ is the constant growth rate (per compounding period), 
-      $N$ is the number of compounding periods, and $y_N$ is the final amount.
+      $\mft{y}_\mft{N} = \mft{y}_\text{0} (\mft{1} + \mft{r})^\mft{N}$, where $\mft{y}_\text{0}$
+      is the initial amount,
+      \mft{r} is the constant growth rate (per compounding period),
+      \mft{N} is the number of compounding periods, and $\mft{y}_\mft{N}$ is the final amount.
       Obtain (or generate) some data and compare the rates obtained using this
-      form of the equation with the rates obtained from $y=y_0 e^{rt}$.
-      \label{project:alt_exp}
+      form of the equation with the rates obtained from $\mft{y} = \mft{y}_\text{0} \text{e}^\mft{rt}$.
       
 \item Create a personalized version of Equation~\ref{eq:IPARX} for yourself.
       It can be for your current circumstances or for your anticipated future 
@@ -904,7 +905,7 @@ the full restoration is likely to cost more than \euro{8} billion.
       total income for those people,
       the resource intensity of your economy, and
       the impact intensity of several resources.
-      These last two terms (\:\!\mft{R} and \mft{X}) will likely require some research on your part.
+      These last two terms (\:\!\mft{R} and \mft{X}\:) will likely require some research on your part.
       For resources, consider at least energy, water, iron ore, and timber.
       For impacts, consider at least global warming potential, desertification, habitat loss
       and extinction rate. 

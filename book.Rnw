@@ -148,7 +148,7 @@ guide_linetype <- "solid"
 @
 
 
-% See https://tex.stackexchange.com/questions/127398/how-to-customize-cross-reference-numbering-of-custom-environments
+% See https://tex.stackexchange.com/questions/432885/include-section-number-when-referencing-enum-item
 % for a possible way to include chapter numbers with question and project references.
 
 %
@@ -158,12 +158,14 @@ guide_linetype <- "solid"
 
 \newenvironment{questions}%
 {\begin{enumerate}
-\renewcommand{\labelenumi}{Q\thechapter.\arabic{enumi}}}
+\renewcommand{\labelenumi}{Q\thechapter.\arabic{enumi}}
+\renewcommand{\theenumi}{Q\thechapter.\arabic{enumi}}}
 {\end{enumerate}}
 
 \newenvironment{projects}%
 {\begin{enumerate}
-\renewcommand{\labelenumi}{P\thechapter.\arabic{enumi}}}
+\renewcommand{\labelenumi}{P\thechapter.\arabic{enumi}}
+\renewcommand{\theenumi}{P\thechapter.\arabic{enumi}}}
 {\end{enumerate}}
 
 

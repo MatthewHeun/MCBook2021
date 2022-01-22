@@ -1057,7 +1057,7 @@ London: Fouth Estate,
       reduce its carbon emissions 45\% by 2030 relative to Shell's 2019 emissions.
 %      Shell planned to be carbon neutral by 2050.
       What would be alternative methods of accomplishing the same result?
-      (See also P2.\ref{project:shell_lawsuit} below about the merits of
+      (See also \ref{project:shell_lawsuit} below about the merits of
       regulation through litigation.)
       \label{question:shell_lawsuit}
       
@@ -1144,7 +1144,7 @@ London: Fouth Estate,
       \end{enumerate}
       
 \item Climate models are somewhat uncertain. 
-      The numbers in Q2.\ref{question:carbon_budget} are expressed as 50\% probabilities.
+      The numbers in \ref{question:carbon_budget} are expressed as 50\% probabilities.
       As the footnote on page~\pageref{page:carbon_budget} indicates, using our 
       carbon budget might produce an average temperature increase of more or less than 1.5~\degC. 
       Emitting less carbon gives us a higher probability of staying below 1.5~\degC{}
@@ -1159,7 +1159,7 @@ London: Fouth Estate,
             situations where there is uncertainty or limited information and the possibility
             for harm exists, for instance, with a new medicine that hasn't been thoroughly tested.
             How does the precautionary principle apply to management of the carbon budget?
-            (See also P2.\ref{project:percautionary_principle}.)
+            (See also \ref{project:percautionary_principle}.)
       \end{enumerate}
       
 
@@ -1192,8 +1192,9 @@ London: Fouth Estate,
       Research life in Cuba. Would you like to live there? 
       Why or why not?
       
-\item What, if any, are the advantages and disadvantages of \emph{regulation through litigation}?
-      (See Question~Q2.\ref{question:shell_lawsuit} above.) \label{project:shell_lawsuit}
+\item \label{project:shell_lawsuit}
+      What, if any, are the advantages and disadvantages of \emph{regulation through litigation}?
+      (See \ref{question:shell_lawsuit} above.) 
       
 \item Prepare a brief report on the difference(s) between the \emph{precautionary principle}
       and the \emph{precautionary approach}, particularly as the terms were used 
