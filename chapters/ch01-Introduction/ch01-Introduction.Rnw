@@ -293,9 +293,9 @@ one of the most \emph{urgent} sustainability problems.
 Energy and carbon emissions link together many of our sustainability challenges.
 \end{mcframe}
 
-The most oft-quoted \cite{Quental2011} definition of sustainability is that
-``Sustainable development is development that meets the needs of the present without
-compromising the ability of future generations to meet their own needs'' \cite{Brundtland}.
+The most oft-quoted~\cite{Quental2011} definition of sustainability is that
+``[s]ustainable development meets the needs of the present without
+compromising the ability of future generations to meet their own needs''~\cite{Brundtland}.
 Note that ``sustainable development'' is an oxymoron, %and is not the same as sustainability.
 because ``development'' implies constant improvement, which cannot be sustained 
 forever on a planet with finite resources.
@@ -303,6 +303,7 @@ Furthermore, ``needs'' are subjective.
 This definition emphasizes the social and economic aspects of sustainability over,
 or instead of, environmental sustainability. 
 In the end, without environmental sustainability, there is no sustainability at all.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{A framework for environmental sustainaiblity thinking}
@@ -355,7 +356,7 @@ but do not necessarily show how changes in any one variable affects the others.
 For instance, using resources more efficiently (improving resource intensity),
 does not, in general, lower impact.
 Instead, it leads to more affluence; 
-see chapter~\ref{chap:resource_intensity}.
+see Chapter~\ref{chap:resource_intensity}.
 Likewise, it may not be possible to drive the impact(s) per unit of resource to
 zero because of diminishing returns on efficiency 
 and tradeoffs that exist between different types of impacts.
@@ -368,7 +369,6 @@ IPARX is true because it is an identity, and it provides a useful organizing fra
 for the following chapters.
 To illustrate the IPARX framework, energy and CO$_2$ are prime examples
 in the rest of the text, because energy is the master resource
-% Need "energy is the master resource section??!
 and climate change is our most urgent sustainability challenge.
 Of course, the two are closely linked.
 
@@ -504,7 +504,8 @@ that amount of GDP.
 to be constant over a short period of time but are not constant long term; 
 see Chapter~\ref{chap:resource_intensity}.)
 
-Population (P) and affluence (A) in Equation \ref{eq:IPARX} \emph{have} been growing
+Population~\Pparen{}(P) and affluence~\Aparen{}
+in Equation~\ref{eq:IPARX} \emph{have} been growing
 exponentially. 
 Chapter~\ref{chap:population} gives us some hope that population won't keep growing 
 exponentially.
@@ -513,7 +514,7 @@ in the mid-twenty-first century.)
 However, world economies are \emph{actively managed} to have continual growth 
 (perhaps, an average target of 3\%/year).
 The implication for sustainability is that the resources---for instance, 
-the energy---needed by the economy in the next 23 years will be more than the total
+energy---needed by the economy in the next 23 years will be more than the total
 resources (energy) used in all of history to date.
 % (Improvements in energy efficiency over time will tend to spur further economic growth 
 % rather than provide economic growth with zero resource cost;
@@ -584,7 +585,7 @@ not including feedstock.%
 
 \begin{equation}\label{eroi}
    \text{EROI} \equiv \frac{\text{Useful energy delivered to society}}
-                           {\text{Energy required to obtain delivered energy}} \; .
+                           {\text{Energy required to obtain delivered energy}}
 \end{equation}
 %
 Because energy is the master resource, 
@@ -594,8 +595,8 @@ rather than an energy \emph{source}.
 For instance, modern agriculture has an EROI of around 0.1 to 0.15; 
 it takes 7--10 calories of energy to deliver 1 calorie of food energy.
 On the other hand, an EROI greater than one indicates a source of useful energy.
-Table \ref{tab:eroi} lists energy returns for various sources of energy.
-Some authors have suggested a minimum EROI of 5 is required for sustainability~\cite{Ferruccio2016}
+Table~\ref{tab:eroi} lists energy returns for various sources of energy.
+Some authors have suggested a minimum EROI of~5 is required for sustainability~\cite{Ferruccio2016}
 with 12--13 necessary for a technological society.
 Although constrained by basic biophysical limits, EROI can be improved with better,
 more efficient technology.
@@ -605,17 +606,18 @@ more efficient technology.
         {Energy return on investment (EROI) for several energy sources.
 \emph{Sources}:~\cite{Wikipedia_EROI,WNA2020,EtOH_in_BR,Gomiero2015} and sources therein.}
 \label{tab:eroi}
-\begin{tabular}{ll}\toprule
-\textbf{Energy source} & \textbf{EROI}
+\begin{tabular}{ll}
+\toprule
+Energy source                        & EROI
 \\ \midrule
-Nuclear power                      & 59--106 \\
-Hydroelectric                      & 45+ \\ 
-Coal and natural gas               & 28--31 \\ 
-Concentrated solar thermal         & 21 \\ 
-Wind energy                        & 15--35+ \\
-Brazilian sugar-cane ethanol       & 8.6--10.2\\  % https://en.wikipedia.org/wiki/Ethanol_fuel_in_Brazil
-Solar photovoltaic                 & 2--8 \\ 
-Biofuels (incl. U.S. corn ethanol) & 0.8--1.6 \\ %%  from T. Gomiero 2015
+Nuclear                              & 59--106 \\
+Hydroelectric                        & 45+ \\ 
+Coal and natural gas                 & 28--31 \\ 
+Concentrated solar thermal           & 21 \\ 
+Wind energy                          & 15--35+ \\
+Brazilian sugar-cane ethanol         & 8.6--10.2\\  % https://en.wikipedia.org/wiki/Ethanol_fuel_in_Brazil
+Solar photovoltaic                   & 2--8 \\ 
+Biofuels (incl.\ U.S.\ corn ethanol) & 0.8--1.6 \\ %%  from T. Gomiero 2015
 \bottomrule 
 \end{tabular}
 \end{table}
@@ -636,24 +638,26 @@ Thus, carbon emissions and energy lie at the nexus of our sustainability challen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}\index{further reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Jeremy L. Caradonna, \emph{Sustainability: A history}, Oxford: Oxford University Press, 2016.\\
 
-\noindent Kim Stanley Robinson, \emph{The ministry for the future}, London: Orbit, 2020. \\
+Kim Stanley Robinson, \emph{The ministry for the future}, London: Orbit, 2020. \\
 
 \noindent Mary Robinson, \emph{Climate justice: Hope, resilience, and the fight for a sustainable future},
 London: Bloomsbury, 2018.
+
+\noindent Jeremy L. Caradonna, \emph{Sustainability: A history}, Oxford: Oxford University Press, 2016.\\
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}\index{see also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Albert A. Bartlett, \emph{Arithmetic, population, and energy: Sustainability 101}: \\
-\url{www.albartlett.org/presentations/bartlett_presentations.html} \\%{albartlett.org $>$ Presentations} \\
+\url{https://www.albartlett.org/presentations/bartlett_presentations.html} \\%{albartlett.org $>$ Presentations} \\
 
 \noindent
 \emph{The Social Dilemma}, a 2020 documentary film about social media. It examines
 the ways that social media is shaping political (and and thereby environmental) discourse. \\
-\url{www.thesocialdilemma.com/the-dilemma}
+\url{https://www.thesocialdilemma.com/the-dilemma/}
 
 
 
@@ -662,11 +666,11 @@ the ways that social media is shaping political (and and thereby environmental) 
 \markright{Questions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In April 2019, a fire did significant damage to Notre-Dame de Paris cathedral; 
+In April 2019, a fire did significant damage to the Notre-Dame de Paris cathedral; 
 see Figure~\ref{fig:notre_dame}.
 Immediately, the French government vowed to rebuild.
-Cleanup from the fire has already cost \euro{165} million;
-the full restoration is likely to cost more than \euro{8} billion.
+Cleanup from the fire has already cost \euro{165}~million;
+the full restoration is likely to cost more than \euro{8}~billion.
 
 \begin{figure}
 \captionsetup[subfigure]{justification=centering}
@@ -785,7 +789,7 @@ the full restoration is likely to cost more than \euro{8} billion.
       to preserve Notre Dame's ``historic, artistic, and architectural interest.'')
       What are the artistic, cultural, and aesthetic pros and cons of each proposed designs?
       Does your answer change if you learn that the modern facade is the result
-      of a 19$^\mathrm{th}$ century restoration and isn't itself strictly ``original?''
+      of a 19$^\text{th}$ century restoration and isn't itself strictly ``original?''
 
       % **** At this point, I'm struggling to see how the previous few questions 
       % relate to environmental sustainability.  
@@ -822,7 +826,8 @@ the full restoration is likely to cost more than \euro{8} billion.
       How does this statement address the debate for strong environmental
       sustainability versus ``sustainable development?''
 
-\item In Section \ref{sec:what_is_sustainability} it was noted that ``needs are subjective.'' Would you
+\item In Section \ref{sec:what_is_sustainability},
+      it was noted that ``needs are subjective.'' Would you
       like to ``live like a king,'' if that meant actually living like kings lived in 1500 AD,
       500 AD, or 1500 BC? 
       What would be your life expectancy, expected level of education,
@@ -899,7 +904,7 @@ the full restoration is likely to cost more than \euro{8} billion.
 \item \label{project:alt_exp}
       An alternative to the description of exponential growth given in 
       Section~\ref{sec:exp} is to use the form 
-      $\mft{y}_\mft{N} = \mft{y}_\text{0} (\mft{1} + \mft{r})^\mft{N}$, where $\mft{y}_\text{0}$
+      $\mft{y}_\mft{N} = \mft{y}_\text{0} (\text{1} + \mft{r})^\mft{N}$, where $\mft{y}_\text{0}$
       is the initial amount,
       \mft{r} is the constant growth rate (per compounding period),
       \mft{N} is the number of compounding periods, and $\mft{y}_\mft{N}$ is the final amount.
