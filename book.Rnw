@@ -131,18 +131,6 @@ library(viridis)           # For a great color palette for graphs
 library(xtable)            # For awesome tables
 @
 
-<<r_functions, echo=FALSE>>=
-add_circ <- function(.plot, r, xc, yc, fill = NA, n_segs = 100){
-  .plot +
-    annotate("polygon",
-             x = xc + r*cos(seq(0, 2*pi, length.out = n_segs)),
-             y = yc + r*sin(seq(0, 2*pi, length.out = n_segs)),
-             fill = fill) +
-    annotate("path",
-             x = xc + r*cos(seq(0, 2*pi, length.out = n_segs)),
-             y = yc + r*sin(seq(0, 2*pi, length.out = n_segs)))
-}
-@
 
 <<r_colours, echo = FALSE>>=
 # This color definition comes from the file morgan2.sty.
