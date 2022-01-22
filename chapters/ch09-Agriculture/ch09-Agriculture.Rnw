@@ -487,7 +487,10 @@ food_emissions_total %>%
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
 
+%++++++++++++++++++++++++++++++
 \paragraph{CO$_2$}
+%++++++++++++++++++++++++++++++
+
 One source of GHG emissions in food and agriculture 
 is the food-delivery system.
 Figure~\ref{fig:food_ghg} shows GHG emissions from the various stages of food
@@ -506,7 +509,10 @@ Taken together, Figures~\ref{fig:food_ghg}--\ref{fig:GHG_food}
 paint a suggestive (but incomplete! ***why incomplete?***) picture of agricultural
 CO$_2$ emissions.
 
+%++++++++++++++++++++++++++++++
 \paragraph{CH$_4$}
+%++++++++++++++++++++++++++++++
+
 One tonne of methane has the same global-warming potential as twenty five tonnes of CO$_2$;
 methane is a very potent GHG.
 Methane is about 10\% of U.S.\ GHG emissions. 
@@ -530,17 +536,18 @@ eliminate GHG emissions from agriculture?''
 \label{sec:food_ag_efficiency}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-To be more sustainable, agriculture must be more efficient and, to be strongly
-sustainable, it must increase soil fertility without extracting minerals and 
+To be more sustainable, agriculture must reduce its intensity (of resource use
+and impacts produced) or, equivalently, it must increase its productivity.
+To be strongly sustainable, agriculture must increase soil fertility without extracting minerals and 
 water from the environment at rates greater than their regeneration rates.
-The sections below examine agricultural efficiency and soil regeneration in more detail.
+The sections below examine agricultural efficacy and soil regeneration in more detail.
 
 %++++++++++++++++++++++++++++++
-\subsection{Efficiency }
+\subsection{Agriculture efficacy metrics }
 \label{sec:ag_metrics}
 %++++++++++++++++++++++++++++++
 
-Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based efficiency for U.S.
+Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based efficacy for U.S.\
 agriculture, which is one aspect of the resource intensity~\Rparen{} of agriculture.
 Other metrics by which the agriculture system could be judged are presented below.
 
@@ -558,17 +565,17 @@ per acre or the (average) number of acres needed to provide complete
 human nutritional requirements.
 One difference between these two metrics is that humans require more than just
 calories.
-In addition, neither of these measures provides guidance for improving efficiency
+In addition, neither of these measures provides guidance for improving productivity
 while simultaneously preserving the human preference for variety in our diets;
 nobody wants to eat the ``optimal'' diet \emph{exclusively}.
 Another land-based metric is profitability per area, that is, money.
 One of the challenges for sustainability is to align motivation (such as prices
 or pricing structure) with desirable sustainability outcomes.
-Currently, the climate change impacts of food production do not directly impact
+Currently, the climate-change impacts of food production do not directly impact
 the price of food.
 
 Various energy-based metrics could be applied to agriculture
-for the purpose of assessing sustainability of agriculture.
+for the purpose of assessing sustainability.
 For instance, one objective could be to maximize the amount of food produced per
 unit energy consumed.
 Or we could attempt to maximize EROI.
@@ -580,9 +587,9 @@ aspects of sustainability, including the fact that pumping water requires energy
 One strategy that might be highly successful for some climate zones and for some
 crops is to use solar panels to provide partial shade for crops prefer lower-light
 conditions. Plants will provide some evaporative cooling for the solar panels,
-which boosts their efficiency. The panels provide shade for crops, which lessens
-the amount of water needed for irrigation.
-Panel spacing is typically less dense than is typical for industrial PV installation,
+which boosts the productivity of the panels.
+The panels provide shade for crops, which lessens the amount of water needed for irrigation.
+Panel spacing is less dense than would be typical for industrial PV installation,
 so the crops have to make up the difference in profitability per acre.
 
 One drawback to each of the metrics mentioned above is that agriculture operates
@@ -595,10 +602,9 @@ minimizing the price of food could be an indicator of the effectiveness of the
 agricultural system.
 Indeed, the price of food has fallen, adjusted for inflation in the last 100 years.
 
-Figure~\ref{fig:food_and_ag_material_flow} shows a Sankey diagram\index{Sankey diagram!agriculture}
-of material flows
-in the U.S.\ agriculture system~\citep[Fig.~1]{Heller:2000wg}.
-Several observations can be made.
+Several observations can be made from Figure~\ref{fig:food_and_ag_material_flow} ,
+% shows a Sankey diagram\index{Sankey diagram!agriculture}
+the material flows in the U.S.\ agriculture system~\citep[Fig.~1]{Heller:2000wg}.
 
 <<ag_sys_calcs, echo = FALSE>>= 
 # All numbers from Heller figure above in million pounds.
@@ -651,6 +657,21 @@ more significant than demand-side disruptions
 for determining food prices.
 
 %++++++++++++++++++++++++++++++
+\paragraph{The bottom line: Increasing sustainability}
+%++++++++++++++++++++++++++++++
+*** While efficiency was supposed to be the solution, I feel like the description 
+of efficiency (above) turned into another challenge. ****
+
+Any measure that will increase the efficacy of the food system is a steps towards
+becoming more sustainable. 
+For example, reducing food waste has the effect of reducing the inputs needed 
+(to grow extra food), reducing the emissions (from producing, consuming, and disposing
+of that food), and increasing the effective EROI of the food system.
+Broadly, the challenges faced by agriculture are to feed the population~\Pparen{}
+using as few resources~\Rparen{} as possible and producing minimal impacts~\Xparen{}
+on the environment. 
+
+%++++++++++++++++++++++++++++++
 \subsection{Regenerative agriculture}
 \label{sec:ag_regen}
 %++++++++++++++++++++++++++++++
@@ -658,17 +679,24 @@ for determining food prices.
 This section will attempt to describe a food \emph{system} that balances
 the desires to minimize the inputs and outputs of agriculture as described
 above.
-Figures~\ref{fig:energy_flow_in_food_system} and~\ref{fig:GHG_food} might
+Figures~\ref{fig:food_and_ag_energy_flow} and~\ref{fig:GHG_food} might
 seem to indicate that ideal agriculture does not involve any animals.
 However, agriculture is a generative (in the sense that it produces food) ecosystem.
 No ecosystem can function properly without animals.
+
+Sustainable agriculture must accomplish two related goals: it must preserve and enhance
+soil fertility and it must sequester, rather than emit, GHG.
+
 Animal manure is critical to building soil productivity, which is critical to
 farming without agrichemicals.
 Moreover, for millennia, humans have raised animals on semi-arid, rocky, or other
 land that is not suitable for planting crops, which generates food for human
 use that would not otherwise be available.
-About two thirds of our ``farmland'' is grazing land or pastures that would not
-otherwise be farmable.
+About two thirds of our ``farmland'' is grazing land or pastures that could not
+otherwise produce edible calories for humans.
+
+There are farming techniques that allow beef farming to be a net sink for carbon,
+rather than emitter~\cite{WOP2019}.
 
 Concepts from permaculture, arcology, dry land farming, and no-till agriculture
 are necessary to farm without chemical inputs and irrigation that depletes
@@ -690,18 +718,17 @@ makes food more expensive, which is consistent with Equation~\ref{eq:IPARX}
 \label{sec:food_transitions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Agricultural sustainability challenges include unsustainable land use practices
+Agricultural sustainability challenges include unsustainable land-use practices
 that degrade soil fertility, require unsustainable mineral inputs, and harm the 
 land's ability to sequester carbon.
 Agriculture is an energy sink rather than an energy source and requires the 
 unsustainable input of fossil fuels.
-Lastly, agricultural practices are the source of a significant amount of greenhouse
-gases.
+Lastly, agricultural practices are the source of a significant GHG emissions.
 However, food is a basic human need; it is one of the few things we absolutely 
 cannot do without. 
 Therefore, it is crucially important to make choices, individually and corporately,
 that result in a sustainable agricultural system. 
-These choices must involve higher efficiencies for the agricultural system and
+These choices must result in higher productivities for the agricultural system and
 practices that preserve and enhance soil fertility.
 
 % On the personal level,
