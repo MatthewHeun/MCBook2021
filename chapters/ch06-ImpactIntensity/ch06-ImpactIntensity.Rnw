@@ -459,7 +459,7 @@ If the energy required to construct nuclear energy plants
 and refine uranium comes from fossil fuels, 
 significant CO$_2$ emissions will result from the transition to nuclear electricity.
 An additional consideration is the availability of uranium resources,
-the topic of P6.\ref{question:nuclear_resources}.
+the topic of \ref{question:nuclear_resources}.
 
 
 %++++++++++++++++++++++++++++++
@@ -477,7 +477,7 @@ see Figure~\ref{fig:PrimaryEnergyGraph}.
 However, supplying the energy needs of today's economy would be impossible:
 we don't have enough available arable land
 to grow the required amount of biomass.
-(Proof of this statement is left for P6.\ref{item:biofuel_proof}.)
+(Proof of this statement is left for \ref{item:biofuel_proof}.)
 Even if there were enough land, today's methods of growing crops requires
 unsustainable energy, water, and chemical inputs;
 see Chapter \ref{chap:agriculture}.
@@ -731,7 +731,7 @@ years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
 
 print(xtable::xtable(iparx_df %>% 
                        dplyr::filter(Year %in% years_for_rate_table), digits = c(0, 0, 3, 2, 2, 2, 2),
-                     caption = c("Values of IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers}, these data allow us to see whether the world is becoming more sustainable or less sustainable over time and why; see P6.\\ref{question:iparx_calcs}.", "Values of IPARX terms for selected years"),
+                     caption = c("Values of IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers}, these data allow us to see whether the world is becoming more sustainable or less sustainable over time and why; see \\ref{question:iparx_calcs}.", "Values of IPARX terms for selected years"),
                      label = "tab:iparx_select_years"),
       include.rownames = FALSE,
       include.colnames = TRUE,
@@ -768,7 +768,7 @@ over the last two decades (2000--2019).
 the data in Table~\ref{tab:iparx_select_years}
 can be used to discern
 trends over other periods of time. 
-See P6.\ref{question:iparx_calcs}.)
+See \ref{question:iparx_calcs}.)
 The declining energy intensity of economic activity~(\rateREp{} < 0)
 is the only term in the IPARX identity
 putting downward pressure on the CO$_2$ emissions growth rate (\rateICOtwo{}).
