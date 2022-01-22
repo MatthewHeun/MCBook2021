@@ -31,8 +31,8 @@
 
 Figures \ref{fig:LLNL_energy_sankey} and \ref{fig:LLNL_CO2_sankey} and 
 Table~\ref{tab:corrected_co2_emissions}
-show that residences use 15.7\% of US energy and are responsible for 19.3\% 
-of US CO$_2$ emissions in 2018. 
+show that residences use 15.7\% of U.S.\ energy and are responsible for 19.3\% 
+of U.S.\ CO$_2$ emissions in 2018. 
 Therefore, Chapter~\ref{chap:households} considers the sustainability 
 challenges of households. 
 Likewise, the energy use (37.3\%) and CO$_2$ emissions (36.3\%) of transportation 
@@ -54,7 +54,7 @@ area (the other two categories in Table~\ref{tab:corrected_co2_emissions}).
 
 %Agriculture is a setting most readers will have (at least) an intuitive understanding of.
 Agriculture, forestry, and other land use account for an estimated 23\% 
-of anthropogenic greenhouse gas emissions~\cite{SRCCL2019}. 
+of anthropogenic greenhouse gas (GHG) emissions~\cite{SRCCL2019}. 
 Agriculture has strong links to land use, which is the focus of 
 Chapter \ref{chap:land_use_urban_planning}.
 It began to be evident in Chapters~\ref{chap:households} and~\ref{chap:transportation}
@@ -67,8 +67,8 @@ It is estimated that 71\% of ice-free land is used for agricultural purposes:
 37\% for pasture, and 
 22\% for timber production in forests~\cite{SRCCL2019}.
 
-In addition to land use and greenhouse gas (GHG) emissions, agriculture has one 
-more major implication for sustainability: humans cannot live without food.
+In addition to land use and GHG emissions, agriculture has another 
+major implication for sustainability: humans cannot live without food.
 Agriculture does provide some nonfood products such as cotton, flax (for linen),
 flowers, and leather.
 However, this chapter will mostly focus on food products, in part because the 
@@ -112,7 +112,7 @@ In the U.S., there has been about a 22\% increase in calories consumed
 per person per day since 1967~\cite{Gordon2016}.
 The trend has also been toward a more varied diet that includes more fresh foods.
 This trend towards a richer, more varied diet is repeated across the world as
-national economies grow.
+affluence rises.
 Thus, the global demand for food has two main drivers: population~\Pparen{} is the primary
 driver of demand and affluence~\Aparen{} is the secondary driver.
 
@@ -128,7 +128,7 @@ of things we could (and would) do without before we would give up food.
 (The share of wealth spent on food goes down as affluence rises, meaning food becomes
 relatively cheaper as economies develop.)
 Furthermore, Section~\ref{sec:malthus_ehrlich_simon} indirectly suggests humanity 
-will continue to have resources for food production.
+will continue to have resources for food production, even if population grows substantially.
 Therefore, total global food production should not be expected to be a major sustainability
 challenge.
 (Despite the fact that hunger continues to be an issue in the world today, current food
@@ -140,9 +140,9 @@ Equation~\ref{eq:IPARX} indicates reductions in agricultural impacts on the
 environment, in the absence of a falling population or affluence (see 
 Section~\ref{sec:reducing_c}), can only come from reducing one of the two intensities
 of agriculture, the resource intensity~\Rparen{} or the impact intensity~\Xparen{}.
-The intensity of agriculture, in terms of what inputs it requires and what 
-impacts it produces are explored more in the following section.
-
+The next section explores the sustainability challenges in agriculture, which arise
+from extracting resources from the ecosystem and/or producing more waste(s) than the 
+ecosystem can absorb.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sustainability challenges in agriculture}
@@ -151,6 +151,8 @@ impacts it produces are explored more in the following section.
 
 When considering whether an activity is sustainable, resource depletion and impacts
 produced are key questions.
+That is, have the ecosystem's provisioning and/or support services been exceeded?
+(See Section~\ref{sec:ecosystem_services}.)
 For example, Section~\ref{sec:electric_vehicles} considered internal combustion
 engine (ICE) vehicles and electric vehicles (EVs).
 A reliable sustainability comparison depends on an accurate accounting of inputs and outputs.
@@ -164,15 +166,15 @@ sustainability.
 
 Likewise, defining appropriate inputs and outputs for agriculture is a key 
 consideration.
-Recall the definitions for \emph{weak} and \emph{strong} sustainability from 
-Section~\ref{sec:strong_weak_sust} and the concept of ecosystem provisioning
-services from Section~\ref{sec:ecosystem_services}.
-Section~\ref{sec:what_is_sustainability} says sustainability requires not using renewable resources
-faster than they can regenerate. 
-Soil fertility is a provisioning services (Chapter~\ref{chap:planetary_boundaries})
+Recall the definitions of \emph{weak} and \emph{strong} sustainability from 
+Section~\ref{sec:strong_weak_sust}.
+% and the concept of ecosystem provisioning services from Section~\ref{sec:ecosystem_services}.
+Sustainability requires not using renewable resources faster than they can regenerate
+(Section~\ref{sec:what_is_sustainability}).
+Soil fertility is a renewable provisioning service (Chapter~\ref{chap:planetary_boundaries})
 of the  ecosystem.
 If agriculture decreases soil fertility, it is not sustainable.
-If agriculture depends on a nonrenewable resource, it is not strongly sustainable.
+If agriculture depends on a nonrenewable resource, such as phosphate fertilizers, it is not strongly sustainable.
 If agriculture is rapidly depleting a resource, it is not even weakly sustainable.
 The sections below examine the sustainability characteristics of several different
 aspects of agriculture.
@@ -180,7 +182,7 @@ aspects of agriculture.
 %++++++++++++++++++++++++++++++
 \subsection{Soil and water} %% Agricultural use of land
 %++++++++++++++++++++++++++++++
-
+Soil and water are the two most important inputs for agriculture.
 As mentioned earlier, agriculture is the majority of human use of land.
 Likewise, agriculture accounts for approximately 70\% of human fresh water use.
 The paragraphs below examine a variety of unsustainable practices related to human 
@@ -189,7 +191,7 @@ use of land and water.
 %..............................
 \paragraph{Loss of soil fertility} 
 %..............................
-Not all soils contain the nutrients needed by plants to grow.
+Not all soils are rich in the nutrients needed by plants to grow.
 In particular, top soil contains organic mattered needed by plants.
 However, top soil can be lost by erosion to the action of wind and/or water.
 Most erosion results from wind or water action on tilled soils, that is,
@@ -199,15 +201,19 @@ and the phenomenon called the ``Yellow Wind'' or ``Asian dust,'' where fine
 soil particles are carried from China, Mongolia, and Kazakhstan to East Asia and 
 sometimes across the Pacific Ocean to the U.S.
 Some places in the Great Plains have lost of several feet of topsoil.
-For example, a survey in Minot, North Dakota taken in 1900 found 40 cm of of black
+For example, a survey in Minot, North Dakota taken in 1900 found 40 cm of black
 topsoil.
 In 2017, the area had no black topsoil; its soil was light gray.
 % https://www.producer.com/news/survey-reveals-amazing-soil-loss-in-great-plains-region/
 Loss of top soil reduces the productivity (in output per acre) of farmland.
 Many arid and semi-arid regions are experiencing \emph{desertification} caused
 by a combination of climate change and poor agricultural practices.
+The rate of erosion and runoff increases exponentially with the loss of vegetation 
+cover~\cite{Geeson2003}. 
+Unprotected soil surfaces are eroded by wind and water to leave an unproductive 
+inorganic subsoils that bake in the sun into a hardpan.
 
-Soil fertility can be degraded by practices that withdraw key nutrients from the 
+Soil fertility can also be degraded by practices that withdraw key nutrients from the 
 soil faster than they can be regenerated.
 For instance, about 8\% of the carbon in soils has been lost over the last 12,000
 years~\cite{Sanderman2017}.
@@ -216,13 +222,15 @@ Agricultural productivity can be enhanced with fertilizers and/or agrichemicals.
 The most common fertilizers contain nitrogen, phosphorous, and potassium. 
 Agrichemicals include herbicides, pesticides, and fungicides. 
 To the extent that any of these are derived from nonrenewable feedstocks, such as 
-fossil fuels, they are not strongly sustainable.
+fossil fuels, their use is not strongly sustainable.
 Phosphate fertilizers are necessary for high crop yields but they originate from 
 (nonrenewable) mineral deposits.
 On the other hand, about half of the fertilizer used globally is animal manure, 
 which is a renewable resource. 
 Animal manure could be a sustainable fertilizer, if the animals are raised sustainably,
 for instance, if their feed is sustainably raised.
+A sustainability challenge associated soil use is “how can we maintain soil fertility
+in the long term without fertilizers based on nonrenewable resources?''
 
 %++++++++++++++++++++++++++++++
 \paragraph{Water---quantity and quality}
@@ -248,6 +256,9 @@ Blooms occurred again in 2017 and 2019.
 %% https://coastalscience.noaa.gov/news/study-identifies-causes-of-toledos-unprecedented-2017-maumee-river-bloom/
 Animal manure can also contaminate waterways. Ick.
 
+A sustainability challenge associated agricultural use of water is “how can we 
+maintain sufficient sources of clean water for agriculture and (direct) human use?''
+
 %++++++++++++++++++++++++++++++
 \subsection{Energy}
 \label{sec:food_energy_return_ratios}
@@ -258,12 +269,12 @@ labor to electricity and hydrocarbon fuels, either fossil fuels or biofuels.
 Energy is used at all stages of agriculture, from preparing the ground to sow crops,
 to harvesting, storage, transportation, cooking, and disposal of food.
 Because food is \emph{humanity's} energy source, we should consider the energy
-return on investment (EROI)\index{EROI} of food (see Section~\ref{sec:masterE}).
+return on investment (EROI, defined in Section~\ref{sec:masterE})\index{EROI} of food.
 An EROI greater than one indicates that food is an energy source for humans, that is,
 we obtain more energy from the food than it took to get the food.
 An EROI less than one indicates we spend more energy getting the food than we get 
 \emph{from} the food. 
-However, since we have to have food, it is worth spending energy on.
+Since we have to have food, it is worth spending energy on.
 Whether spending more energy on food than we get from it is sustainable or not
 depends on where our energy comes from. 
 
@@ -379,6 +390,9 @@ by energy return ratios of today's food system is:
 ``We don't eat food; we eat oil.''
 \end{mcframe}
 
+A sustainability challenge associated energy in agriculture “how can the energy inputs to  
+agriculture be made sustainable?''
+
 %++++++++++++++++++++++++++++++
 \subsection{Greenhouse gas emissions}
 %++++++++++++++++++++++++++++++
@@ -387,6 +401,7 @@ Globally, food and land use account for 23\% of GHG emissions~\cite{IPCC:2018aa}
 \index{greenhouse gases}
 Tropical rainforest deforestation, particularly in Brazil and Indonesia,
 contributes significantly to global GHG emissions.
+In the U.S., soil management accounts for over half of agricultural GHG emissions~\cite{USEPA:2021uj}.
 Over application of synthetic nitrogen-based fertilizers releases significant
 amounts of N$_2$O, a very potent GHG.
 The paragraphs below will look at two very important greenhouse gases, carbon
@@ -473,13 +488,13 @@ food_emissions_total %>%
 @
 
 \paragraph{CO$_2$}
-One source of greenhouse gas emissions in food and agriculture 
+One source of GHG emissions in food and agriculture 
 is the food-delivery system.
-Figure~\ref{fig:food_ghg} shows energy use in various stages of food
+Figure~\ref{fig:food_ghg} shows GHG emissions from the various stages of food
 distribution and preparation. 
 The amount of CO$_2$ released is proportional to the amount of energy used.
 Figure~\ref{fig:FoodEmissionsPerMcal} shows equivalent CO$_2$ emissions per Mcal of food.
-(Foods with low feed-to-food efficiency tend to have higher greenhouse gas emissions;
+(Foods with low feed-to-food efficiency tend to have higher GHG emissions;
 see Figure~\ref{fig:FoodToFeedEfficiency}.)
 However, by itself Figure~\ref{fig:FoodEmissionsPerMcal} is not terribly informative.
 We don't eat equal calories of each food.
@@ -488,14 +503,27 @@ nutrients.
 Figure~\ref{fig:GHG_food} shows what individual foods contribute to overall food
 emissions (but not what quantity of each are consumed).
 Taken together, Figures~\ref{fig:food_ghg}--\ref{fig:GHG_food} 
-paint a suggestive (but incomplete!) picture of agricultural
+paint a suggestive (but incomplete! ***why incomplete?***) picture of agricultural
 CO$_2$ emissions.
 
 \paragraph{CH$_4$}
-Add stuff about cattle here.
-Methane is 25x as powerful a GHG as CO2.
-But it's not the cattle, it's the agricultural practices.
-And we need animals for regenerative agriculture.
+One tonne of methane has the same global-warming potential as twenty five tonnes of CO$_2$;
+methane is a very potent GHG.
+Methane is about 10\% of U.S.\ GHG emissions. 
+Of this 10\%, about 39\% comes from agriculture, 40\% comes from energy and transportation,
+and 21\% comes from landfills and wastewater treatment~\cite{USEPA:2021uj}.
+Agricultural emissions are almost entirely from enteric digestion and manure management,
+with a small amount (6\%) coming from rice cultivation.
+Enteric digestion refers to the production of methane in an animal's digestion.
+The amount of methane produced depends on the quality of the animal's feed.
+Seventy two percent of methane from enteric digestion comes from beef cattle; 24\% is from 
+dairy cattle~\cite{USEPA:2021uj}.
+Methane from manure management tends to come from liquified manure treatment, which
+is often the preferred method for concentrated animal populations.
+Dairy cattle account for 51.3\% of methane from manure and swine account for 37\%~\cite{USEPA:2021uj}.
+
+A sustainability challenge associated agricultural GHG emissions is “how can we 
+eliminate GHG emissions from agriculture?''
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sustainability transitions in agriculture}
@@ -504,7 +532,7 @@ And we need animals for regenerative agriculture.
 
 To be more sustainable, agriculture must be more efficient and, to be strongly
 sustainable, it must increase soil fertility without extracting minerals and 
-water from the environment greater than their regeneration rates.
+water from the environment at rates greater than their regeneration rates.
 The sections below examine agricultural efficiency and soil regeneration in more detail.
 
 %++++++++++++++++++++++++++++++
