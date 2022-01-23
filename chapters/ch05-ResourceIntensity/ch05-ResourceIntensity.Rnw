@@ -361,7 +361,7 @@ per GDP as we ever have.
 And because GDP is growing, total material use grows, too.
 
 
-<<per_capita_material_use, fig.scap="World material use per person", fig.cap='World per-capita material use. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: \\citet[Figure~1c]{Krausmann:2009wc}.'>>=
+<<per_capita_material_use, fig.scap="World material use per person", fig.cap='World per-capita material use. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: \\citet[Figure~1c]{Krausmann:2009wc}.'>>=
 material_per_capita <- krausmann %>% 
   dplyr::left_join(historical_pop, by = "Year") %>% 
   dplyr::mutate(
@@ -386,7 +386,7 @@ material_per_capita %>%
 
 
 
-<<per_gdp_material_use, fig.scap="World material use per GDP", fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of ores (industrial minerals), fossil fuels, and construction minerals scales quite well with GDP and shows little change on this graph, as the thickness of those bands varies little over time. See Fig.~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<per_gdp_material_use, fig.scap="World material use per GDP", fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of ores (industrial minerals), fossil fuels, and construction minerals scales quite well with GDP and shows little change on this graph, as the thickness of those bands varies little over time. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 material_per_gdp <- krausmann %>% 
   dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>% 
   dplyr::mutate(
@@ -793,12 +793,12 @@ is sustainable.
 By the weak sustainability criterion of preserving resources for 50~years, 
 Figure~\ref{fig:WeakSustEnergyGraph} shows that
 coal consumption is weakly sustainable from a resource extraction point of view.
-(However, coal is not weakly sustainable from a CO$_2$ emission point of view, 
+(However, coal is not weakly sustainable from a CO$_2$ emissions point of view, 
 as shown in Figure~\ref{fig:PercentageOfSustainable}.)
 Neither oil nor natural gas are being consumed at a weakly sustainable rate.
 
 
-<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person", fig.cap="World primary energy consumption per person. Note that per-person primary energy consumption is approximately flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth \\emph{and} increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product \\mft{A} $\\times$ \\mft{R} in the IPARX equation (Equation!\\ref{eq:IPARX}) for the prime example of energy.">>=
+<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person", fig.cap="World primary energy consumption per person. Note that per-person primary energy consumption is approximately flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth \\emph{and} increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy.">>=
 
 # Find which years have data from the Europe data set
 which_years <- region_pop %>%
@@ -1156,7 +1156,7 @@ the final term in the IPARX equation~(Equation~\ref{eq:IPARX}).
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Peter M. Schwarz, \emph{Energy economics}, Oxfordshire, UK: Routledge, 2018. \\
+Peter M. Schwarz, \emph{Energy economics}. Oxfordshire, UK: Routledge, 2018. \\
 % https://www.routledge.com/Energy-Economics/Schwarz/p/book/9780415676786
 
 % Kostas Bithas and Panos Kalimeris,
