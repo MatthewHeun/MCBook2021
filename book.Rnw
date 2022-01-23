@@ -253,20 +253,23 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 
 \noindent
 This book is about the many challenging facets of the sustainability problem.
-Sustainability is challenging for many reasons: its technical problems are 
-complex and interrelated. 
+Sustainability is challenging for many reasons: 
+its technical problems are complex and interrelated. 
 It combines problems from the environmental, economic, and social realms.
-Individual subproblems of sustainability will change through time as humans
-develop new technology, use resources, and discover new resources.
-Lastly, to be sustainable conflicts with many aspects of our basic human nature.
+It conflicts with some aspects of basic human nature.
+And aspects of sustainability can be expected to change through time as society
+develops new technologies, 
+transitions to new resources, and
+discovers new ways to use resources.
 
-Because of the dynamic, multifaceted nature of sustainability challenges, a book
-cannot present sustainability ``solutions.'' 
-We apologize to you, dear reader, if you have come through the whole book and are
-disappointed not to have an ``answer'' to the sustainability question.
-In most cases, we do not have an answer to give you.
-Instead, we hope, we have given you something better: a framework for thinking
-about and analyzing sustainability questions.
+Because of the dynamic and multifaceted nature of sustainability challenges, 
+No book can present sustainability ``solutions.'' 
+% I don't think the next sentence helps. It is a minimizing sentence. ---MKH
+% We apologize to you, dear reader, if you have come through the whole book and are
+% disappointed not to have an ``answer'' to the sustainability question.
+In most cases, there is no answer to give.
+Instead, we hope, we have provided something better: 
+a framework for thinking about and analyzing sustainability questions.
 In the long run, such a framework is more useful and more enduring.
 
 \vspace*{2pc}
