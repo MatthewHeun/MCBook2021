@@ -323,7 +323,7 @@ A sustainability challenge for the first mile problem is
 \paragraph{Particulate matter}
 %..............................
 
-A third sustainability challenge associated with transport is 
+A third sustainability challenge associated with transportation is 
 particular matter (PM\index{particulate matter}). 
 Concerns about the effects of PM
 on human health go back millennia, and with good cause.
@@ -344,7 +344,7 @@ Global SO$_2$ emissions from transport peaked about 1990, and
 global NO$_\text{x}$ emissions peaked around 2018. 
 Global ammonia emissions, a key contributor to PM, 
 continue to grow, however.
-The sustainability challenge with PM is 
+The sustainability challenge associated with PM is 
 ``can we eliminate PM emissions while providing heated spaces and transportation 
 at a reasonable cost?''
 
@@ -538,7 +538,7 @@ the differences between energy efficiency and energy service efficacy.)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The viability of a ``sustainability through services'' strategy
 for the world economy is the subject of some debate.
-See \citet{Henriques_2010} and \citet{Fix:2019aa} and the references therein
+See \citet{Henriques_2010} and \citet{Fix:2019aa} and references therein
 for a fuller discussion of the issues surrounding these concepts.
 \end{mcframe}
 
@@ -756,11 +756,10 @@ another area in which sustainability challenges are important and urgent.
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\href{https://national.news21.com/}{Breakdown: Traveling Dangerously in America}, e-book, 2011. \\
+Edward Humes, \emph{Door to door: The magnificent, maddening, mysterious world of transportation}.
+New York: Harper, 2016.
 
-\noindent 
-Edward Humes, \emph{Door to door: The magnificent, maddening, mysterious world of 
-transportation}, New York: Harper, 2016.
+\noindent \href{https://national.news21.com/}{Breakdown: Traveling Dangerously in America}, e-book, 2011. \\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -848,17 +847,17 @@ transportation, petroleum, and technology.
       What boundaries are you using and what assumptions are you making?
       
 \item \label{question:commute_vs_happiness} 
-      As a preview of chapter \ref{chap:land_use_urban_planning}, there are strong
+      As a preview of Chapter~\ref{chap:land_use_urban_planning}, there are strong
       connections between housing costs and the demand for transportation. 
       Housing markets are regional precisely \emph{because} it is 
       possible to commute between home and work, school, shopping, etc.
       ``Affordable'' housing is affordable only as long as the cost of commuting 
       is not too high.
-      Happiness depends strongly on having a short commute \cite{Hilbrecht2014},
+      Happiness depends strongly on having a short commute~\cite{Hilbrecht2014},
       in part because commuting reduces physical activity and reduces time for other 
       activities, which leads to stress. 
       One author reports eliminating two hours of commuting per day is equivalent
-      (from a happiness perspective) to an additional \$40,000 of income \cite{Buettner2011}.
+      (from a happiness perspective) to an additional \$40,000 of income~\cite{Buettner2011}.
       Reflect on your current and future commuting plans, income, and domicile location.
       How do you balance these tradeoffs in your own life?
       Critique the \$40,000 a year number: commuting two hours per day, five days
@@ -882,12 +881,12 @@ transportation, petroleum, and technology.
       (from the automated systems that collect the tolls), who decides and who 
       benefits (residents vs. visitors), and what the extra tax money will be spent on.
       \begin{enumerate}
-      \item Fundamentally, does it make sense --- if roads are a \emph{public} good ---
-      to intentionally restrict their use? Why or why not? 
+      \item Fundamentally, does it make sense---if roads are a \emph{public} good---to
+            intentionally restrict their use? Why or why not? 
       \item Who gets to decide, for example residents or visitors? Who should get to decide?
       \item Should your (nearest) local city implement congestion pricing? Why or why not?
       \item Which congestion pricing objective(s) are most important?
-      Which objection(s) are most important?
+            Which objection(s) are most important?
       \end{enumerate}
 
 \item \href{www.strongtowns.org}{Strong Towns.org} defines a \emph{road} as a high-speed 
@@ -929,7 +928,7 @@ transportation, petroleum, and technology.
       \item Are there things you would like your local traffic planners to change?
       \end{enumerate}
       
-\item In 2015-2016, Houston Metro boosted bus ridership as the result of a two-year long 
+\item In 2015--2016, Houston Metro boosted bus ridership as the result of a two-year long 
       process of community consultation that reallocated resources towards 
       maximizing ridership.
       The tradeoff was a shift away from maintaining access.
