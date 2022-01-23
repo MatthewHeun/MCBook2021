@@ -693,7 +693,7 @@ co2_amounts %>%
                              guide = "none") + 
 
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("Emissions [Mg" * CO[2] * "/year]"), 
+                y = expression("Emissions [t" * CO[2] * "/year]"), 
                 fill = ggplot2::element_blank()) + 
   
   MKHthemes::xy_theme() + 
