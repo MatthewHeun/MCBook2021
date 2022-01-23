@@ -403,7 +403,7 @@ Average daily temperature variations can be in the range of 12~\degC,
 and seasonal variations can be 
 on the order of 30~\degC~\cite{Experience-Grand-Rapids:vs}.%
 \footnote{
-   Example temperature variations are for Grand Rapids, Michigan, USA, where
+   Example temperature variations are for Grand Rapids, Michigan, where
    the average daily high temperature in July is 28~\degC{} and in January is 
    $-$2~\degC. 
    Incidentally, the average daily low temperature in January is $-$10~\degC.
@@ -471,10 +471,10 @@ Most air conditioners consume electricity to perform their cooling function,
 causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants. 
 
 
-%------------------------------
-\subsubsection{Hygiene}
+%..............................
+\paragraph{Hygiene}
 \label{sec:hygiene}\index{hygiene}
-%------------------------------
+%..............................
 
 Dwellings consume significant energy and water
 for showers, dish washers, toilets, and clothes washers and dryers.
@@ -493,10 +493,10 @@ Figure~\ref{fig:average_residential_energy} shows that hygiene
 of U.S.\ final energy consumption in 2015.
 
 
-%------------------------------
-\subsubsection{Lighting}
+%..............................
+\paragraph{Lighting}
 \label{sec:lighting}
-%------------------------------
+%..............................
 
 Indoor lighting provides illumination for rooms,
 typically by consuming electricity and emitting CO$_2$ if fossil-fuel sources are used.
@@ -1186,7 +1186,7 @@ United States, 1999: \\
       how much energy would you save annually?
       What is the price of that saved energy?
       What is the annual cost savings from this energy efficiency intervention?
-      Assuming that the 98\% AFUE furnace or COP = 3.5 heat pump lasts 20 years and 
+      Assuming that the 98\% AFUE furnace or COP~$=$~3.5 heat pump lasts 20 years and 
       that you want to break even financially,
       what is the maximum price you should pay for 
       the upgraded furnace or heat pump?

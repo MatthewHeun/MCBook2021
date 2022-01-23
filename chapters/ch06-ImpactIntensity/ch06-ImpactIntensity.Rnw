@@ -52,11 +52,11 @@ environmental impacts come from the economy's excreted wastes.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Impact intensity of resource extraction}
+\section{Impacts of resources}
 \label{sec:impact_intensity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The impact intensity of resource extraction and consumption~\Xparen{}
+The impacts of resources~\Xparen{}
 is defined as
 %
 \begin{equation}\label{eq:X}
@@ -185,7 +185,7 @@ demonstrates the long transition
 from traditional biofuels to fossil fuels
 evident in Figure~\ref{fig:PrimaryEnergyGraph}.
 
-<<ImpactIntensityGraph, fig.scap="Carbon intensity of primary energy~\\XCOtwoparen{} vs.\\ time", fig.cap="Carbon intensity of primary energy~\\XCOtwoparen{}. The line represents the ratio of the line in Figure~\\ref{fig:CarbonEmissionsGraph} and the top of Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
+<<ImpactIntensityGraph, fig.scap="Carbon intensity of primary energy~\\XCOtwoparen{} vs.\\ time", fig.cap="Carbon intensity of primary energy~\\XCOtwoparen{}. \\emph{Source}: own calculations. The line represents the ratio of the line in Figure~\\ref{fig:CarbonEmissionsGraph} and the top of Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 carbon_intensity <- dplyr::inner_join(
   CO2_emissions,
   primary_energy %>%
@@ -276,7 +276,7 @@ But how?
 \label{sec:low_carbon_transition}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-There are at least five often-discussed options for
+There are at least seven often-discussed options for
 transitioning to a low carbon energy supply:
 (a) carbon capture and storage,
 (b) carbon sequestration,
@@ -308,7 +308,7 @@ Rather, CCS is a way to avoid carbon \emph{emissions} from carbon-based energy p
 
 There are several challenges associated with CCS.
 First, it has not been cost-effective.  
-Petra Nova, the only CCS plant in the U.S., disposed of the CO$_2$ it captured
+Petra Nova\index{Petra Nova}, the only CCS plant in the U.S., disposed of the CO$_2$ it captured
 by injecting it into oil fields for enhanced oil recovery.
 In 2020, low oil prices made this disposal infeasible, forcing Petra Nova to shut down.
 This story illustrates the economic interrelation(s) among primary energy sources.
@@ -329,7 +329,7 @@ to collect CO$_2$ emissions for later injection underground.
 \label{sec:carbon_sequestration}
 %++++++++++++++++++++++++++++++
 
-Carbon sequestration seeks to extract CO$_2$ from the atmosphere,
+Carbon sequestration\index{carbon sequestration} seeks to extract CO$_2$ from the atmosphere,
 storing it in inert form.
 One form of carbon sequestration is simply planting billions of trees.
 A massive, worldwide afforestation effort would be required to extract
@@ -370,7 +370,7 @@ No consensus has emerged to date.
 %++++++++++++++++++++++++++++++
 
 Another way to reduce CO$_2$ emissions over time is the 
-carbon takeback obligation (CTBO)~\cite{Jenkins:2021tg}.
+carbon takeback obligation (CTBO)~\cite{Jenkins:2021tg}.\index{carbon takeback obligation (CTBO)}
 The CTBO is similar to product takeback policies
 which require manufacturers to accept end-of-life product returns from consumers,
 thereby keeping wastes (refrigerators, washers, dryers, computers, electronics, and other products)
@@ -418,14 +418,14 @@ building heating and cooling.
 \label{sec:carbon_tax_offsets}
 %++++++++++++++++++++++++++++++
 
-Carbon taxes impose financial penalties on emitters of greenhouse gases.
+Carbon taxes\index{carbon tax} impose financial penalties on emitters of greenhouse gases.
 Emitters pass costs to consumers who face higher prices for goods and services
 created with carbon-intensive energy.
 Consumers will, over time, prefer lower-cost goods, 
 thereby incentivizing manufacturers and service providers
 to use low-carbon energy.
 
-Carbon offsets enable carbon emitters to
+Carbon offsets\index{carbon offset} enable carbon emitters to
 pay someone else to sequester or reduce carbon emissions.
 Carbon emissions are traded as a financial instrument.
 A market develops in which emissions and reductions are traded, 
@@ -445,7 +445,7 @@ in the direction of low-carbon energy supply.
 \label{sec:nuclear_electricity}
 %++++++++++++++++++++++++++++++
 
-Nuclear power (an electricity source only)
+Nuclear power\index{nuclear energy} (an electricity source only)
 may provide a bridge to a sustainable future.
 Nuclear power emits little CO$_2$ during plant operation
 and has high EROI; see Table~\ref{tab:eroi}. 
@@ -459,7 +459,7 @@ If the energy required to construct nuclear energy plants
 and refine uranium comes from fossil fuels, 
 significant CO$_2$ emissions will result from the transition to nuclear electricity.
 An additional consideration is the availability of uranium resources,
-the topic of \ref{question:nuclear_resources}.
+the topic of \ref{project:nuclear_resources}.
 
 
 %++++++++++++++++++++++++++++++
@@ -470,14 +470,14 @@ the topic of \ref{question:nuclear_resources}.
 In lieu of extracting CO$_2$ from the atmosphere,
 we could stop emitting CO$_2$ from fossil fuel combustion in the first place!
 One way is to transition away from fossil fuels 
-to the energy mix used in the first half of the 19$^\mathrm{\text{th}}$ century,
+to the energy mix used in the first half of the 19$^{\text{th}}$ century,
 namely exclusive use of traditional biofuels (wood and wood products)\index{biofuels}
 for heating and electricity;
 see Figure~\ref{fig:PrimaryEnergyGraph}.
 However, supplying the energy needs of today's economy would be impossible:
 we don't have enough available arable land
 to grow the required amount of biomass.
-(Proof of this statement is left for \ref{item:biofuel_proof}.)
+(Proof of this statement is left for \ref{project:biofuel_proof}.)
 Even if there were enough land, today's methods of growing crops requires
 unsustainable energy, water, and chemical inputs;
 see Chapter \ref{chap:agriculture}.
@@ -507,7 +507,7 @@ see Table \ref{tab:eroi}.
 
 We could transition the world's energy system
 to water (hydro), wind, and solar 
-energy sources (WWS)~\cite{Jacobson:2011gc,Delucchi:2011gb}\index{wind, water, and solar (WWS)}.
+energy sources (WWS)~\cite{Jacobson:2011gc,Delucchi:2011gb}.\index{wind, water, and solar (WWS)}
 A transition to WWS would also require 
 significant changes to the world's energy infrastructure, 
 with at least four large challenges.
@@ -577,7 +577,7 @@ from today's energy regime to a WWS regime.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Speed of energy transitions}
+\subsection{Speed of energy transitions}\index{energy transitions}
 \label{sec:Etransitions}
 %++++++++++++++++++++++++++++++
 
@@ -587,7 +587,7 @@ money and resources, in particular, in terms of energy itself.
 It takes energy to make energy-making machines!
 
 Energy historians find that energy transitions often take decades to complete.
-Roger Fouquet has studied energy transitions of the UK in many economic sectors and 
+Roger Fouquet\index{Fouquet, Roger} has studied energy transitions of the UK in many economic sectors and 
 across many energy technologies.
 He found that
 ``since the Industrial Revolution, it took, on average, 
@@ -731,7 +731,7 @@ years_for_rate_table <- c(1800, 1850, 1900, 1950, 1970, 2000, 2010, 2019)
 
 print(xtable::xtable(iparx_df %>% 
                        dplyr::filter(Year %in% years_for_rate_table), digits = c(0, 0, 3, 2, 2, 2, 2),
-                     caption = c("Values of IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers}, these data allow us to see whether the world is becoming more sustainable or less sustainable over time and why; see \\ref{question:iparx_calcs}.", "Values of IPARX terms for selected years"),
+                     caption = c("Values of IPARX terms for selected years in Figures~\\ref{fig:CarbonEmissionsGraph}, \\ref{fig:PopulationGraph}, \\ref{fig:AffluenceGraph-Nordhaus}, \\ref{fig:EnergyIntensityGraph-Nordhaus}, and~\\ref{fig:ImpactIntensityGraph}. With Equation~\\ref{eq:IPARX_rate_with_numbers}, these data allow us to see whether the world is becoming more sustainable or less sustainable over time and why; see \\ref{project:iparx_calcs}.", "Values of IPARX terms for selected years"),
                      label = "tab:iparx_select_years"),
       include.rownames = FALSE,
       include.colnames = TRUE,
@@ -768,7 +768,7 @@ over the last two decades (2000--2019).
 the data in Table~\ref{tab:iparx_select_years}
 can be used to discern
 trends over other periods of time. 
-See \ref{question:iparx_calcs}.)
+See \ref{project:iparx_calcs}.)
 The declining energy intensity of economic activity~(\rateREp{} < 0)
 is the only term in the IPARX identity
 putting downward pressure on the CO$_2$ emissions growth rate (\rateICOtwo{}).
@@ -818,7 +818,7 @@ on other terms of the IPARX identity.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Former U.S.\ representative Vernon Ehlers'
+Former U.S.\ representative Vernon Ehlers'\index{Ehlers, Vernon}
 many years in education and government led him to quip frequently
 ``you can never do only one thing.''
 
@@ -863,7 +863,7 @@ the good we intended.
 As discussed in Chapter~\ref{chap:population}, 
 population depends on many factors. 
 (For one example of the dependencies of population, 
-see the causal loop diagram from the World3 model
+see the causal loop diagram from the World3 model\index{World3}
 shown in Figure~\ref{fig:World3loops}.)
 One clear trend from history is that increasing affluence~(\rateA{}~>~0)
 leads to reduced population growth rate~(\rateP~<~0).
@@ -974,7 +974,7 @@ The transition to renewable energy sources
 is expected to reduce the CO$_2$ intensity of energy consumption
 (\;\!\XCOtwo{} in the prime example), 
 if the CO$_2$ avoided by renewable generation over the lifetime of a renewable device
-(say a photovoltaic solar panel)
+(say, a photovoltaic solar panel)
 is less than the CO$_2$ embodied
 in the renewable device. 
 That said, many advocates of Green Growth, a Green New Deal, and similar public policies 
@@ -1027,9 +1027,9 @@ collectively and individually.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Daniel Yergin, \emph{The new map: Energy, climate, and the clash of nations}.
-London: Penguin, 2020.
+London: Penguin, 2020. \\
 
-\noindent Edward Humes, \emph{Garbology: Our dirty love affair with trash}. New York: Avery, 2012.\\
+\noindent Edward Humes, \emph{Garbology: Our dirty love affair with trash}. New York: Avery, 2012.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1054,7 +1054,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       One example is oil spills,
       such as the Exxon Valdez and the Deep Water Horizon disasters.
       (The International Tanker Owners Pollution Federation reports ``only'' 18 oil
-      spills larger than 700 tonnes for the period 2010-2019 versus 245 in the 1970s.) 
+      spills larger than 700 tonnes for the period 2010--2019 versus 245 in the 1970s.) 
       Other examples include environmental impacts from hydraulic fracking
       fluids; air quality issues associated with burning fossil fuels such as
       soot, smog, and ozone; and soil contamination from leaking underground 
@@ -1068,7 +1068,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       Give some examples of the tradeoffs inherent in pollution prevention technologies.
       How do we manage tradeoffs among different types of solutions?
       
-\item Energy historian Roger Fouquet found that it has taken, historically, on average, 50 years
+\item Energy historian Roger Fouquet\index{Fouquet, Roger} found that it has taken, historically, on average, 50 years
       to transition from one energy source to another~\cite[p.~6595]{Fouquet:2010tq}.
       At this moment in time, it is unlikely that humanity has 50 years
       to effect a transition to renewable sources of energy
@@ -1080,10 +1080,12 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
        
 \item Expanding on the issues raised in the previous questions, 
       nuclear power has had its own environmental issues. 
-      Disasters such Fukushima Daiichi, Three-Mile Island, and Chernobyl come to mind. 
+      Disasters such Fukushima Daiichi\index{Fukushima Daiichi},
+      Three-Mile Island\index{Three-Mile Island}, and 
+      Chernobyl\index{Chernobyl} come to mind. 
       High-level nuclear waste is another. 
       On the other hand, coal-fired power plants in the Midwest region have emitted 
-      enough mercury that fish in the Great Lakes are not safe for consumption
+      enough mercury that fish in the Great Lakes\index{Great Lakes} are not safe for consumption
       by children or women of child-bearing age. 
       How do you make decisions about trading off different types of 
       environmental impacts?
@@ -1099,7 +1101,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       perspective and why? 
       Are you using a weak or strong sustainability criterion?
       
-\item Some people object to wind turbine because they kill birds. 
+\item Some people object to wind turbines\index{wind turbine} because they kill birds. 
       The truth is, all human structures kill birds. 
       What are the alternatives (to having wind turbines at all)?
       What is the cost/benefit analysis of having wind turbines?
@@ -1149,13 +1151,13 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       Does this proportion indicate that we are far into the transition to a 
       low-carbon energy regime?
 
-\item Argue for and against making Table \ref{tab:corrected_co2_emissions}.
-      What does Table \ref{tab:corrected_co2_emissions} show that Figure
-      \ref{fig:LLNL_CO2_sankey} doesn't (and vice versa)?
+\item Argue for and against making Table~\ref{tab:corrected_co2_emissions}.
+      What does Table~\ref{tab:corrected_co2_emissions} show that
+      Figure~\ref{fig:LLNL_CO2_sankey} does not (and vice versa)?
       Which do you find more helpful? Why?
       What sorts of decisions is each most helpful with?
       
-\item Do you agree with the process of elimination in Section \ref{sec:reducing_c}?
+\item Do you agree with the process of elimination in Section~\ref{sec:reducing_c}?
       Are there other approach(es)? If so, what are they?
       What assumptions lead you to prefer one approach over another? % degrowth vs. techno optimists.
 
@@ -1165,7 +1167,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       Under what circumstances would your answer change?
       
 \item The big issue for carbon capture and storage/sequestration (CCS) is who are the 
-      stakeholders -- who pays and who benefits?
+      stakeholders---who pays and who benefits?
       ``It's too expensive'' is just another way of saying ``we don't value that
       very much.'' Are there legal or financial arrangements that could be made 
       that would sufficiently incentivize CCS such that it would be profitable?
@@ -1181,19 +1183,21 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
 
 \begin{projects}
 
-  \item Investigate the energy available in a hectare of biomass production.
+  \item \label{project:biofuel_proof}
+        Investigate the energy available in a hectare of biomass production.
         How many hectares of biomass would need to be harvested annually
         to supply today's energy needs?
         How much available arable land exists in the world?
         What fraction of available arable land would be required to transition
-        to a biomass-based energy system? \label{item:biofuel_proof}
+        to a biomass-based energy system? 
         
-  \item Research the potential for CO$_2$ storage in graphene. 
+  \item Research the potential for CO$_2$ storage in graphene\index{graphene}. 
         What are the energy requirements for such a scheme?
         How many additional solar panels would be needed to 
         convert a ton of CO$_2$ to graphene?
         
-  \item Research the Petra Nova carbon capture and storage (CCS) plant.
+  \item Research the Petra Nova\index{Petra Nova} 
+        carbon capture and storage (CCS)\index{carbon capture and storage (CCS)} plant.
         What is the feasibility of replicating the Petra Nova scheme
         to all fossil fuel electricity power plants in the U.S.?
         In the World?
@@ -1248,7 +1252,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         when \mft{r}$_\text{1}$ <\!\!< 1 and \mft{r}$_\text{2}$ <\!\!< 1
         in the derivation.
   
-  \item \label{question:iparx_calcs}
+  \item \label{project:iparx_calcs}
         Verify the calculations in Equation~\ref{eq:IPARX_rate_with_numbers}
         using data from Table~\ref{tab:iparx_select_years}.
         Then recalculate the terms in Equation~\ref{eq:IPARX_rate_with_numbers} 
@@ -1259,7 +1263,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         shown in Equation~\ref{eq:IPARX_rate_with_numbers}? 
         
   \item After many years of studying energy-economy interactions and the rebound effect, 
-        \citet{Sorrell:2010ul} advanced five controversial propositions:
+        \citet{Sorrell:2010ul}\index{Sorrell, Steve} advanced five controversial propositions:
         % 
         \begin{enumerate} [label=(\arabic*)]
 
@@ -1293,7 +1297,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         Write a paper that discusses each term and suggests your favored policy 
         to reduce the magnitude of each term. 
         Next look into the
-        \href{https://www.climateinteractive.org/tools/en-roads/}{EnROADS climate change solutions simulator}
+        \href{https://www.climateinteractive.org/tools/en-roads/}{EnROADS climate change solutions simulator}\index{EnROADS}
         and find its policy options for addressing climate change. 
         Which of your favored policies appears in the EnROADS options?
         Now choose a suite of policies in EnROADS that includes as many of your favored policies as possible.
@@ -1301,9 +1305,10 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         In the paper, describe the suite of policies you chose
         and consider their technical and political feasibilities.
         
-  \item Research the availability of uranium resources. 
+  \item \label{project:nuclear_resources}
+        Research the availability of uranium\index{uranium} resources. 
         What are the reserves?
-        Is our current consumption rate weakly sustainable? \label{question:nuclear_resources}
+        Is our current consumption rate weakly sustainable? 
 
 \end{projects}
 
