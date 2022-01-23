@@ -45,7 +45,7 @@ but mostly wealth refers to the \emph{amount} of goods, possessions, money,
 property, or ``stuff'' owned by a person.
 In other words, wealth refers to a \emph{level} of material possessions or resources.
 In contrast, affluence~\Aparen{} is the \emph{rate} that the economy
-uses goods and services, that is, the amount of ``stuff'' bought \emph{per year}.
+uses goods and services, that is, the amount of ``stuff'' purchased \emph{per year}.
 
 Economic activity may mean literal consumption, as with food,
 or it could mean using a service, such as education or getting a haircut.
@@ -225,7 +225,7 @@ affluence_growth_rate <- gdppc_fit %>%
 %   MKHthemes::xy_theme()
 % @
 
-<<GDPGraph-Nordhaus, fig.scap="World GDP vs.\\ time", fig.cap=paste0("World annual GDP calculated by multiplying world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph-Nordhaus}.", fit_sentence(gdp_fit))>>=
+<<GDPGraph-Nordhaus, fig.scap="World GDP vs.\\ time", fig.cap=paste0("World GDP vs.\\ time. ", fit_sentence(gdp_fit), " \\emph{Source}: own calculations. The line is the product of world population in Figure~\\ref{fig:PopulationGraph} and GDP per capita in Figure~\\ref{fig:AffluenceGraph-Nordhaus}.")>>=
 # Gather world population data
 world_pop <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "WorldPopulation.xlsx"),
                                 sheet = "world_pop") %>%
@@ -348,7 +348,7 @@ be negative (inventory is falling) or positive (inventory is increasing).
 Net exports~(\mft{nx}) are the \emph{net} difference between the value of exports and the value of imports.
 Thus, \mft{nx} could negative for a country that imports more than it exports.
 World GDP is the sum of all national GDPs.
-Therefore, for world GDP, $\mft{nx}~=~0$.
+Therefore, for world GDP, $\mft{nx}~=~\text{0}$.
 (We don't import from, or export to, space---yet.)
 
 
@@ -858,7 +858,7 @@ Perhaps, as we hope, there is a way to enjoy a high standard of living~\Aparen{}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Further Reading}\index{further reading}
+\section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Robert J. Gordon, \emph{The rise and fall of American growth: The U.S. standard of
@@ -870,7 +870,7 @@ Oxfordshire, UK: Routledge, 2017.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{See Also}\index{see also}
+\section*{See Also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Youtube channels \href{https://www.youtube.com/c/HowMoneyWorks}{How money works}
@@ -889,7 +889,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Questions}\index{questions}
+\section*{Questions}
 \markright{Questions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1072,7 +1072,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Projects}\index{projects}
+\section*{Projects}
 \markright{Projects}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
