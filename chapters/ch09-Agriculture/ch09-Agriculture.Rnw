@@ -37,7 +37,7 @@ Therefore, Chapter~\ref{chap:households} considers the sustainability
 challenges of households. 
 Likewise, the energy use (37.3\%) and CO$_2$ emissions (36.3\%) of transportation 
 motivated Chapter~\ref{chap:transportation}.
-This chapter covers agriculture as an \emph{example} industrial/commercial
+This chapter considers agriculture as an \emph{example} industrial/commercial
 area (the other two categories in Table~\ref{tab:corrected_co2_emissions}).
 % Aggregating the other two categories in Table~\ref{tab:corrected_co2_emissions},
 % commercial and industrial sources are responsible for 47\% of 
@@ -81,7 +81,7 @@ humans need to grow and maintain our bodies.
 In contrast to some of the examples mentioned in Section~\ref{sec:recycling},
 by definition, ``food'' is \emph{not} a substitutable resource.
 Although humans can exist on a wide variety of diets, we can't directly metabolize 
-wood, cellulose, sunlight, or petroleum, for example.
+things that aren't food, such as wood, cellulose, sunlight, or petroleum, for example.
 
 Food doesn't appear on plates magically, out of nowhere.
 It arrives on our plates through a network of 
@@ -211,8 +211,8 @@ Many arid and semi-arid regions are experiencing \emph{desertification} caused
 by a combination of climate change and poor agricultural practices.
 The rate of erosion and runoff increases exponentially with the loss of vegetation 
 cover~\cite{Geeson2003}. 
-Unprotected soil surfaces are eroded by wind and water to leave an unproductive 
-inorganic subsoils that bake in the sun into a hardpan.
+Unprotected soil surfaces are eroded by wind and water to leave unproductive 
+inorganic subsoils that get baked by the sun into a hardpan.
 
 Soil fertility can also be degraded by practices that withdraw key nutrients from the 
 soil faster than they can be regenerated.
@@ -324,9 +324,10 @@ by various aspects of the food-delivery system.
 The energy efficiency of the food-delivery system is \Sexpr{format(1.4/10.2 * 100, digits = 3)}\%.
 With modern agriculture, it takes roughly 7 calories of energy to provide 1 calorie of food energy.
 Thus, the EROI for the food system is only 1/7.
+*** Pick one set of statistics and stick with it. Clean up presentation.***
 The fact that the energy efficiency of the food-delivery system is less than 1
 means that the food-delivery system is not a \emph{source} of energy for society. 
-Rather it is a \emph{sink} of energy for society.
+Rather, it is a \emph{sink} of energy for society.
 Thus, today's food system is unsustainable from an energy point of view.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -408,7 +409,7 @@ amounts of N$_2$O, a very potent GHG.
 The paragraphs below will look at two very important greenhouse gases, carbon
 dioxide (CO$_2$) and methane (CH$_4$).
 
-<<food_ghg, fig.scap="Food-related greenhouse gas emissions vs.\\ time by life cycle stage", fig.cap="U.S.\\ food-related greenhouse gas emissions vs.\\ time by life cycle stage. ``LULUC'' is land use and land use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
+<<food_ghg, fig.scap="Food-related greenhouse gas emissions vs.\\ time by life-cycle stage", fig.cap="U.S.\\ food-related greenhouse gas emissions vs.\\ time by life-cycle stage. ``LULUC'' is land use and land-use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
 food_emissions_US <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Crippa et al 2021.xlsx"), 
                                             sheet = "data to plot") %>% 
   tidyr::pivot_longer(-`System Stage`, names_to = "Year", values_to = "co2_emissions") %>% 
@@ -578,7 +579,7 @@ the price of food.
 Various energy-based metrics could be applied to agriculture
 for the purpose of assessing sustainability.
 For instance, one objective could be to maximize the amount of food produced per
-unit energy consumed.
+unit energy consumed. ***iput?***
 Or we could attempt to maximize EROI.
 Another alternative is to minimize the amount of CO$_2$ produced in agriculture.
 Agriculture currently accounts for approximately 70\% of fresh water use.
@@ -700,7 +701,7 @@ There are farming techniques that allow beef farming to be a net sink for carbon
 rather than emitter~\cite{WOP2019}.
 
 Concepts from permaculture, arcology, dry land farming, and no-till agriculture
-are necessary to farm without chemical inputs and irrigation that depletes
+are necessary to farm without unsustainable inputs and irrigation that depletes
 aquifers.
 The specifics of such practices vary by region, climate, and crop species.
 These farms tend to produce a large variety of products, in contrast to ``row cropping''
@@ -830,9 +831,10 @@ in this chapter. His recipes are great, too.
       your answer? Why?
 
 \item Retail is an important part of the food supply chain.
-      Where are food deserts most prevalent? % Could be a project.
+      Where are food deserts most prevalent? 
       What are their causes?
       What can be done to alleviate them?
+      *** I'm suggesting that this should be a project. ***
       
 \item Food waste is a major environmental and economic problem. 
       In fact, food waste accounts for 6--8\% of global greenhouse gas emissions.
@@ -847,8 +849,9 @@ in this chapter. His recipes are great, too.
       What is the economic motive or return for food exporting/importing?
       
 \item Where should the environmental impact(s) from almond growing be counted, 
-      where the almonds were grown or where they were consumed? How would this 
-      affect, for instance, urban and rural carbon footprints?
+      where the almonds were grown or where they were consumed? 
+      (See P9.1 ****MKH make link****)
+      How would this affect, for instance, urban and rural carbon footprints?
       
 \item Figure~\ref{fig:food_and_ag_material_flow} indicates that animals are an
       inefficiency in agriculture. However, animals may be necessary or desirable
