@@ -134,7 +134,7 @@ This chapter discusses sustainability implications for a few resources,
 with energy providing the prime example of resource intensity of the economy. 
 
 
-<<total_material_use, fig.scap="World material use", fig.cap="World material use. ``Ores'' includes all industrial minerals. ``Construction'' includes all construction minerals. ``t'' is metric tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
+<<total_material_use, fig.scap="World material use vs.\\ time by material type", fig.cap="World material use vs.\\ time by material type. ``Ores'' includes all industrial minerals. ``Construction'' includes all construction minerals. ``t'' is metric tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
 krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
                                 sheet = "data to plot") %>% 
   dplyr::rename(
@@ -361,7 +361,7 @@ per GDP as we ever have.
 And because GDP is growing, total material use grows, too.
 
 
-<<per_capita_material_use, fig.scap="World material use per person", fig.cap='World per-capita material use. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: \\citet[Figure~1c]{Krausmann:2009wc}.'>>=
+<<per_capita_material_use, fig.scap="World material use per capita vs.\\ time by material type", fig.cap='World material use per capita vs.\\ time by material type. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: \\citet[Figure~1c]{Krausmann:2009wc}.'>>=
 material_per_capita <- krausmann %>% 
   dplyr::left_join(historical_pop, by = "Year") %>% 
   dplyr::mutate(
@@ -386,7 +386,7 @@ material_per_capita %>%
 
 
 
-<<per_gdp_material_use, fig.scap="World material use per GDP", fig.cap="World per-GDP material use. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of ores (industrial minerals), fossil fuels, and construction minerals scales quite well with GDP and shows little change on this graph, as the thickness of those bands varies little over time. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<per_gdp_material_use, fig.scap="World material use per GDP vs.\\ time by material type", fig.cap="World material use per GDP vs.\\ time by material type. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of ores (industrial minerals), fossil fuels, and construction minerals scales quite well with GDP and shows little change on this graph, as the thickness of those bands varies little over time. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 material_per_gdp <- krausmann %>% 
   dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>% 
   dplyr::mutate(
@@ -724,7 +724,7 @@ Industry and transportation use more energy than residences and commerce.
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{chapters/ch05-ResourceIntensity/figures/Energy_US_2018.png}
-\caption[U.S.\ energy consumption Sankey diagram.]
+\caption[U.S.\ energy consumption Sankey diagram]
         {U.S.\ energy consumption in 2018.
          \emph{Source}: 
          \citet{Lawrence-Livermore-National-Laboratory:ua}.}\index{Sankey diagram!energy}
@@ -732,7 +732,7 @@ Industry and transportation use more energy than residences and commerce.
 \end{figure}
 
 
-<<PrimaryEnergyGraph, fig.scap="World primary energy consumption vs.\\ time", fig.cap="World annual primary energy consumption. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels. \\emph{Source}: \\citet{Roser:2021vi}.">>=
+<<PrimaryEnergyGraph, fig.scap="World primary energy consumption vs.\\ time by energy type", fig.cap="World annual primary energy consumption vs.\\ time by energy type. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels. \\emph{Source}: \\citet{Roser:2021vi}.">>=
 # Gather data for primary energy vs. time graph
 primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "global-primary-energy.xlsx"),
                                      sheet = "data to plot") %>%
@@ -798,7 +798,7 @@ as shown in Figure~\ref{fig:PercentageOfSustainable}.)
 Neither oil nor natural gas are being consumed at a weakly sustainable rate.
 
 
-<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person", fig.cap="World primary energy consumption per person. Note that per-person primary energy consumption is approximately flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth \\emph{and} increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy.">>=
+<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person vs.\\ time by energy type", fig.cap="World primary energy consumption per person vs.\\ time by energy type. Note that per-person primary energy consumption is relatively flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth \\emph{and} increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy.">>=
 
 # Find which years have data from the Europe data set
 which_years <- region_pop %>%
@@ -971,7 +971,7 @@ The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 % @
 
 
-<<EnergyIntensityGraph-Nordhaus, fig.scap="Primary energy intensity of economic activity~\\REpparen{} vs.\\ time", fig.cap="Primary energy intensity of economic activity~\\REpparen{}, the prime example for \\mft{R} in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<EnergyIntensityGraph-Nordhaus, fig.scap="Primary energy intensity of economic activity~\\REpparen{} vs.\\ time by energy type", fig.cap="Primary energy intensity of economic activity~\\REpparen{} vs.\\ time by energy type. \REp{} is the prime example for \\mft{R} in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
 # Create data for the energy intensity of the economy.
 energy_intensity <- dplyr::inner_join(
   # Get the primary energy data
@@ -1073,7 +1073,7 @@ at the production peak
 and leveling toward the end;
 see Figure~\ref{fig:UK_coal_logistic}.
 
-<<UK_coal_logistic, fig.scap="UK coal production logistic curve", fig.cap="UK coal production logistic curve. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv}, 1829--2009; own calculations, 2010--2020.">>=
+<<UK_coal_logistic, fig.scap="UK coal production logistic curve vs.\\ time", fig.cap="UK coal production logistic curve vs.\\ time. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv}, 1829--2009; own calculations, 2010--2020.">>=
 uk_coal_extraction %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = q_Gt)) +
   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
