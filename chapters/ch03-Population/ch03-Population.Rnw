@@ -134,7 +134,7 @@ because of the valuable role bees play in pollinating human crops.
 \label{sec:human_population}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-<<PopulationGraph, fig.scap="World population~\\Pparen{} vs.\\ time", fig.cap="World population, \\mft{P} in the IPARX equation. \\emph{Source}: \\citet{Roser:2021uu}.">>=
+<<PopulationGraph, fig.scap="World population~\\Pparen{} vs.\\ time by continent", fig.cap="World population vs.\\ time by continent, \\mft{P} in the IPARX equation. \\emph{Source}: \\citet{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
@@ -254,7 +254,7 @@ Indeed, Figure~\ref{fig:UN_population_prospect} contains both the possibility
 that world population will peak around 2050 \emph{and} the possibility
 that population will keep rising to the end of the century.
 
-<<UN_population_prospect, fig.scap="Projections of world population", fig.cap="Projections of world population. The light gray region shows a 95\\% prediction interval. The dark gray region shows a 80\\% prediction interval. \\emph{Sources}: Historical data from \\citet{Roser:2021uu}; future projections from \\citet{UNEcSoAf:2021vj}.">>=
+<<UN_population_prospect, fig.scap="Projections of world population vs.\\ time", fig.cap="Projections of world population vs.\\ time. The light gray region shows a 95\\% prediction interval. The dark gray region shows a 80\\% prediction interval. \\emph{Sources}: Historical data from \\citet{Roser:2021uu}; future projections from \\citet{UNEcSoAf:2021vj}.">>=
 future_pop <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "UN_PPP2019_Output_PopTot.xlsx"),
                                              sheet = "data to plot") %>% 
   tidyr::pivot_longer(-Year, names_to = "band", values_to = "pop_thousands") %>% 
@@ -612,8 +612,11 @@ are being considered; there is no one ``right'' answer.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In 2015, half of the world's people lived inside a circle, shown in
-Figure~\ref{fig:half_population}, with a radius of about 3,300km~\cite{Quah2015}.
+In 2015, half of the world's people lived inside 
+the Valeriepieris circle\index{Valeriepieris circle}, 
+a region with a radius of about 3,300~km 
+centered on Mong Khet, Myanmar~\cite{Quah2015}; 
+see Figure~\ref{fig:half_population}.
 This area of Southeast Asia has very high population density.
 \end{mcframe}
 
