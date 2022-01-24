@@ -61,7 +61,7 @@ The size of the economy is \mft{P}$\times$\mft{A}.
 The economy can grow by increasing either \mft{P} or \mft{A}.
 The next two sections will examine these sources of demand in greater detail.
 
-<<USlanduse, fig.scap="Land use in the U.S.", fig.cap="Land use in the U.S. The biggest changes over time are decreasing grazed forest area and increasing rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. (``Grassland'' is not used for crops.) \\emph{Source}: \\citet{USDA:2021uq}.">>=
+<<USlanduse, fig.scap="Land use in the U.S.\\ vs.\\ time by land type", fig.cap="Land use in the U.S.\\ vs.\\ time by land type. The biggest changes over time are decreasing grazed forest area and increasing rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. (``Grassland'' is not used for crops.) \\emph{Source}: \\citet{USDA:2021uq}.">>=
 us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Land_Uses.xlsx"),
                                   sheet = "data to plot") %>% 
   dplyr::rename(
@@ -450,7 +450,7 @@ Figure~\ref{fig:urban_density} illustrates the point by showing the relationship
 between urban density and transport-related energy consumption.
 Clearly, there is a tradeoff between urban density and cost of transportation.
 
-<<urban_density, fig.scap="Transportation energy vs.\\ urban density", fig.cap="Relation between urban density and transport-related energy consumption. \\emph{Source}: \\citet{US_cities}.">>=
+<<urban_density, fig.scap="Transportation energy vs.\\ urban density by city", fig.cap="Transportation energy vs.\\ urban density by city. \\emph{Source}: \\citet{US_cities}.">>=
 urban_density_data <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Urban_Density.xlsx"),
                                          sheet = "data to plot") %>% 
   dplyr::mutate(
