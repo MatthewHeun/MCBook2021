@@ -246,10 +246,13 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 
 \cleardoublepage
 
+%#############################################################
 \chapter*{Afterword}
 \addcontentsline{toc}{chapter}{\protect\numberline{}{Afterword}}
 \thispagestyle{plain}
 \markboth{AFTERWORD}{AFTERWORD}
+%#############################################################
+
 
 \noindent
 This book presents many facets of our sustainability challenges.
@@ -276,10 +279,12 @@ In the long run, such a framework is more useful and more enduring.
 \noindent\AUTHORS\\
 \noindent January 2022
 
-\clearpage
+\cleardoublepage
 
-\blankpage
+% \blankpage
  %   \input{biblio}              % bibliography
+
+\markboth{Bibliography}{Bibliography}
 
     \bibliographystyle{unsrtnat}
     \bibliography{MCBook2021}   %chktex 11
@@ -292,6 +297,8 @@ In the long run, such a framework is more useful and more enduring.
 								% please see the bios folder for some pdf examples
     
     \cleardoublepage
+
+\markboth{Index}{Index}
 
     \input{book.ind}            % if you have an Index
 
