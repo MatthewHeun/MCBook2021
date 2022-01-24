@@ -123,7 +123,7 @@ The next results are expected in 2022 for survey year 2020.
 \end{mcframe}
 
 
-<<TotalHouseholdEnergyConsumption, fig.scap="Household energy consumption by energy type", fig.cap="Total U.S.\\ household final energy consumption by energy type. Note: Fuel oil and Propane are aggregated into Petroleum. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:th}.">>=
+<<TotalHouseholdEnergyConsumption, fig.scap="Household energy consumption vs.\\ time by energy type", fig.cap="Total U.S.\\ household final energy consumption vs.\\ time by energy type. Note: Fuel oil and Propane are aggregated into Petroleum. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:th}.">>=
 total_household_energy_consumption <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "Table_2.2_Residential_Sector_Energy_Consumption.xlsx"),
                                                          sheet = "data to plot")
 
@@ -165,7 +165,7 @@ total_household_energy_consumption %>%
 @
 
 
-<<AverageHouseholdEnergyConsumption, fig.height = 4, fig.scap="Household energy consumption and number of housing units", fig.cap="Average U.S.\\ household energy consumption and number of housing units. Households include all primary occupied housing units in the 50 states and the District of Columbia. Vacant housing units, seasonal units, second homes, military houses, and group quarters are excluded. ``hu'' means housing unit. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:vd}.">>=
+<<AverageHouseholdEnergyConsumption, fig.height = 4, fig.scap="Household energy consumption and number of housing units vs.\\ time", fig.cap="Average U.S.\\ household energy consumption and number of housing units vs.\\ time. Households include all primary occupied housing units in the 50 states and the District of Columbia. Vacant housing units, seasonal units, second homes, military houses, and group quarters are excluded. ``hu'' means housing unit. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:vd}.">>=
 average_household_energy_consumption <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "Household_energy_use_data.xlsx"),
                                                            sheet = "data to plot") %>% 
   dplyr::mutate(
@@ -283,7 +283,7 @@ household energy consumption up slightly from 1970--today;
 see Figure~\ref{fig:TotalHouseholdEnergyConsumption}.
 
 
-<<NewHousingSize, fig.scap="Average size of newly constructed homes", fig.cap="Average size of newly constructed U.S.\\ homes. \\emph{Source}: \\citet{United-States-Census-Bureau:2021tq}.">>=
+<<NewHousingSize, fig.scap="Average size of newly constructed homes vs.\\ time", fig.cap="Average size of newly constructed U.S.\\ homes vs.\\ time. \\emph{Source}: \\citet{United-States-Census-Bureau:2021tq}.">>=
 average_housing_sizes <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "housing_sizes.xlsx"),
                                                            sheet = "data to plot")
 
@@ -298,7 +298,7 @@ average_housing_sizes %>%
 @
 
 
-<<EnergyConsAndHomeSize, fig.scap="Average household energy consumption by home size", fig.cap="Average annual U.S.\\ household energy consumption by home size in 2015. Biomass (wood), coal, district steam, and solar thermal are excluded. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
+<<EnergyConsAndHomeSize, fig.scap="Average household energy consumption vs.\\ home size by energy type", fig.cap="Average annual U.S.\\ household energy consumption vs.\\ home size by energy type in 2015. Biomass (wood), coal, district steam, and solar thermal are excluded. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_size <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "ce2.1.xlsx"),
                                                sheet = "data to plot") %>% 
    dplyr::rename(
@@ -330,7 +330,7 @@ household_energy_by_size %>%
 @
 
 
-<<PersonsPerHousehold, fig.scap="Average number of persons per household", fig.cap="Average number of persons per U.S.\\ household. \\emph{Source}: \\citet{United-States-Census-Bureau:2020vd}.">>=
+<<PersonsPerHousehold, fig.scap="Average number of persons per household vs.\\ time", fig.cap="Average number of persons per U.S.\\ household vs.\\ time. \\emph{Source}: \\citet{United-States-Census-Bureau:2020vd}.">>=
 persons_per_household <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "hh4.xls"),
                                                   sheet = "data to plot")
 
@@ -829,7 +829,7 @@ rather than reasons of environmental sustainability.
 The only question is whether the location transition 
 will be managed in an environmentally sustainable direction.
 
-<<urbanization, fig.scap="Percentage of population living in urban areas", fig.cap="Percentage of people worldwide living in urban areas (through 2015) and projections to 2050. \\emph{Source}: \\citet{UNPop:2018vr}.">>=
+<<urbanization, fig.scap="Percentage of population living in urban areas vs.\\ time", fig.cap="Percentage of people worldwide living in urban areas vs.\\ time. Data are projections from 2016 to 2050. \\emph{Source}: \\citet{UNPop:2018vr}.">>=
 percent_urban <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "WUP2018-F02-Proportion_Urban.xlsx"),
                                     sheet = "data to plot")
 

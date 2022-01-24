@@ -280,7 +280,7 @@ Whether spending more energy on food than we get from it is sustainable or not
 depends on where our energy comes from. 
 
 
-<<food_and_ag_energy_flow, fig.scap="Energy consumed in the food-delivery system", fig.cap="Amount of energy consumed in different aspects of the food-delivery system in the U.S.\\ (2021). \\emph{Source}: \\citet{US_food}.">>=
+<<food_and_ag_energy_flow, fig.scap="Energy consumed in the food-delivery system by life-cycle phase", fig.cap="Amount of energy consumed in the U.W.\\ food-delivery system by life-cycle phase (2021). \\emph{Source}: \\citet{US_food}.">>=
 food_energy <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Energy Flow in the US Food System.xlsx"),
                                    sheet = "data to plot") %>%
   tidyr::pivot_longer(-Category, names_to = "type", values_to = "value") %>%
@@ -362,7 +362,7 @@ is about 7\%~\cite{Shepon:2016wt}.
 Different types of food have different feed-to-food efficiencies,
 as shown in Figure~\ref{fig:FoodToFeedEfficiency}.
 
-<<FoodToFeedEfficiency, fig.width=3, fig.height=2.5, fig.scap="Feed-to-food efficiency", fig.cap="Feed-to-food efficiency~($\\eta_{\\mft{ff}}$\\;\\!) of various foods in the U.S.\\ food system. \\emph{Source}: \\citet{Shepon:2016wt}.">>=
+<<FoodToFeedEfficiency, fig.width=3, fig.height=2.5, fig.scap="Feed-to-food efficiency of various foods", fig.cap="Feed-to-food efficiency~($\\eta_{\\mft{ff}}$\\;\\!) of various foods in the U.S.\\ food system. \\emph{Source}: \\citet{Shepon:2016wt}.">>=
 feed_to_food_efficiency <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", 
                                                         "FeedToFoodEfficiency.xlsx"), 
                                               sheet = "data to plot")
@@ -408,7 +408,7 @@ amounts of N$_2$O, a very potent GHG.
 The paragraphs below will look at two very important greenhouse gases, carbon
 dioxide (CO$_2$) and methane (CH$_4$).
 
-<<food_ghg, fig.scap="Food-related greenhouse gas emissions by life cycle stage", fig.cap="U.S.\\ food-related greenhouse gas emissions by life cycle stage. ``LULUC'' is land use and land use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
+<<food_ghg, fig.scap="Food-related greenhouse gas emissions vs.\\ time by life cycle stage", fig.cap="U.S.\\ food-related greenhouse gas emissions vs.\\ time by life cycle stage. ``LULUC'' is land use and land use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
 food_emissions_US <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Crippa et al 2021.xlsx"), 
                                             sheet = "data to plot") %>% 
   tidyr::pivot_longer(-`System Stage`, names_to = "Year", values_to = "co2_emissions") %>% 
@@ -445,7 +445,7 @@ Factors such as transport distance and wastage percentages are important
 for determining GHG emissions from food.
 \end{mcframe}
 
-<<FoodEmissionsPerMcal, fig.height=4, fig.scap="Food CO$_2$ emissions per Mcal of food", fig.cap="Food CO$_2$ emissions per Mcal of food. \\emph{Source}: \\citet{Ritchie:2021tl}.">>=
+<<FoodEmissionsPerMcal, fig.height=4, fig.scap="Food CO$_2$ emissions per Mcal of food for various foods", fig.cap="Food CO$_2$ emissions per Mcal of food for various foods. \\emph{Source}: \\citet{Ritchie:2021tl}.">>=
 food_emissions_per_kcal <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "food-footprints-kcal.xlsx"), 
                                               sheet = "data to plot") %>% 
   dplyr::arrange(dplyr::desc(GHG_emissions_per_1000kcal))
@@ -467,7 +467,7 @@ food_emissions_per_kcal %>%
 @
 
 
-<<GHG_food, fig.height=5, fig.scap="Food greenhouse gas emissions", fig.cap="U.S.\\ food greenhouse gas emissions. \\emph{Source}: \\citet[Figure~3]{Heller_2014}.">>=
+<<GHG_food, fig.height=5, fig.scap="Food greenhouse gas emissions for various foods", fig.cap="U.S.\\ food greenhouse gas emissions for various foods. \\emph{Source}: \\citet[Figure~3]{Heller_2014}.">>=
 food_emissions_total <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Food CO2.xlsx"), 
                                            sheet = "data to plot") %>% 
   dplyr::arrange(dplyr::desc(`kg CO2 eq/capita/year`))
@@ -941,7 +941,7 @@ in this chapter. His recipes are great, too.
       Use Figure~\ref{fig:food_and_ag_material_flow} as the basis for your calculations.
       
 \item Verify the agricultural EROI values in Section~\ref{sec:food_energy_return_ratios}. 
-      You could, for instance, start by considering Figure~\ref{fig:energy_flow_in_food_system}.
+      You could, for instance, start by considering Figure~\ref{fig:food_and_ag_energy_flow}.
       Perform your own research to find the proportions of coal, oil, and natural gas consumed
       by the food and agriculture system.
       Are we eating coal? Are we eating oil? 

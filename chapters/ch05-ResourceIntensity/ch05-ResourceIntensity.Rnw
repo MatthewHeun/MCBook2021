@@ -971,7 +971,7 @@ The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 % @
 
 
-<<EnergyIntensityGraph-Nordhaus, fig.scap="Primary energy intensity of economic activity~\\REpparen{} vs.\\ time by energy type", fig.cap="Primary energy intensity of economic activity~\\REpparen{} vs.\\ time by energy type. \REp{} is the prime example for \\mft{R} in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<EnergyIntensityGraph-Nordhaus, fig.scap="Primary energy intensity of economic activity~\\REpparen{} vs.\\ time by energy type", fig.cap="Primary energy intensity of economic activity~\\REpparen{} vs.\\ time by energy type. \\REp{} is the prime example for \\mft{R} in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
 # Create data for the energy intensity of the economy.
 energy_intensity <- dplyr::inner_join(
   # Get the primary energy data
