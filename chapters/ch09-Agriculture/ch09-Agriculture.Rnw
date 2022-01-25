@@ -267,7 +267,7 @@ Currently, much of agricultural irrigation is not sustainable because water is b
 extracted from aquifers faster than the natural regeneration rate.
 If aquifers are exhausted, future humans won't have water for nourishment or bathing.
 Overuse of water is not limited to subsurface water, like the Ogallala aquifer; 
-see Q5.\ref{question:ogallala}. 
+see \ref{question:ogallala}. 
 Surface water is also being overused for agriculture.
 One particularly notable example is the (formerly) Aral Sea, which has all but disappeared
 due to diversion of its water for irrigation.
@@ -277,8 +277,8 @@ supports 15\% of U.S.\ crop output, and 13\% of U.S.\ livestock production~\cite
 %% https://feedingourselvesthirsty.ceres.org/regional-analysis/colorado-river
 %% https://uwm.edu/centerforwaterpolicy/wp-content/uploads/sites/170/2013/10/Colorado_Agriculture_Final.pdf
 Because of diversions for agriculture (70--80\%) and to supply municipalities with drinking 
-water (15\%), the Colorado River mouth is dry. 
-Water no longer flows into the Sea of Cortez.
+water (15\%), the Colorado River mouth is dry; 
+it no longer flows into the Sea of Cortez.
 
 Agricultural activities also result in water pollution of surface water and ground water.
 For example, the city of Toledo, Ohio draws its drinking water from Lake Erie.
@@ -303,12 +303,12 @@ The energy input to agriculture ranges from human and animal
 labor to electricity and hydrocarbon fuels, either fossil fuels or biofuels.
 Energy is used at all stages of agriculture, from preparing the ground to sow crops,
 to harvesting, storage, transportation, cooking, and disposal of food.
-Because food is \emph{humanity's} energy source, we should consider the energy
-return on investment (EROI, defined in Section~\ref{sec:masterE})\index{EROI} of food.
+Because food is humanity's energy source, we should consider its energy
+return on investment (EROI, defined in Section~\ref{sec:masterE})\index{EROI}.
 When EROI~>~1, food is an energy source for humans, that is,
 we obtain more energy from the food than it took to get the food.
 When EROI~<~1, we spend more energy obtaining the food than we get 
-\emph{from} the food. 
+from the food. 
 Since we have to have food, it is worth spending energy on.
 Whether spending more energy on food than we get from it is sustainable or not
 depends on where the energy for agriculture comes from. 
