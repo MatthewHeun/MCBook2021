@@ -337,15 +337,23 @@ food_energy <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "dat
   )
 
 # Calculate the EROI of the food system for later use.
-numerator <- food_energy %>% 
+food_eroi_numerator <- food_energy %>% 
   dplyr::filter(Category == "Consumed") %>% 
   dplyr::select(value)
-denominator <- food_energy %>% 
+food_eroi_denominator <- food_energy %>% 
   dplyr::filter(type == "Input energy") %>% 
   dplyr::select(value) %>% 
   sum()
-food_eroi <- numerator / denominator
-  
+food_eroi <- food_eroi_numerator / food_eroi_denominator
+
+food_eroi_gross_output <- food_energy %>%
+  dplyr::filter(type == "Food energy available") %>%
+  dplyr::select(value) %>%
+  sum()
+food_eroi_waste <- food_energy %>%
+  dplyr::filter(Category == "Waste") %>%
+  dplyr::select(value)
+
 # Make the graph
 food_energy %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "type",
@@ -367,9 +375,13 @@ Because food is energy, the overall energy efficiency of the food-delivery syste
 Figure~\ref{fig:food_and_ag_energy_flow} shows the energy consumed and supplied
 by various aspects of the food-delivery system.
 The EROI of the food-delivery system is \Sexpr{format(food_eroi * 100, digits = 2)}\%.
-With modern agriculture, it takes roughly 13 calories of energy to provide 1 calorie of consumed food energy.
+% With modern food system, it takes \Sexpr{format(food_eroi_denominator, digits = 3)}
+% calories of energy to provide \Sexpr{format(food_eroi_gross_output, digits = 3)}
+calories of food energy, of which only \Sexpr{format(food_eroi_numerator, digits = 3)}
+calories are consumed.
+% The remaining \Sexpr{format(food_eroi_waste, digits = 3)} are wasted.
 The fact that the EROI energy efficiency of the food-delivery system is less than 1
-means that the food-delivery system is not a \emph{source} of energy for society. 
+means that the food-delivery system is not a \emph{source} of energy for society.
 Rather, it is a \emph{sink} of energy for society.
 Thus, today's food system is unsustainable from an energy point of view.
 
@@ -581,9 +593,20 @@ eliminate GHG emissions from agriculture?''
 \label{sec:food_ag_efficiency}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+The section describes ways in which agriculture should become more sustainable.
+Environmental impacts from agricultural activity could be eliminated if 
+agriculture itself were eliminated. 
+However, this would result in undesirable effects on human population; see the epigraph
+at the top of this chapter.
+Instead, this section investigates ways agriculture can become more sustainable,
+while still meeting human needs (caloric and nutritional) and wants (variety).
+In other words, we prefer to preserve (total) agricultural output with a ``long tail''
+of crops and products, and a robust trade from region-to-region and even internationally.
+Some rearrangement of production is contemplated, for example less meat and more 
+legumes.
+
 To be more sustainable, agriculture must reduce its intensity (of resource use
-and impacts produced) or, inversely,
-it must increase its productivity.
+and impacts produced) or, inversely, it must increase its productivity.
 To be strongly sustainable, agriculture must increase soil fertility without extracting minerals and 
 water from the environment at rates greater than minerals and water naturally 
 regenerate.
@@ -961,8 +984,9 @@ Adam Ragusea has one of the best food-related channels on YouTube.
 His video \href{https://www.youtube.com/watch?v=GgHy8KQ4Ifg}
 {Problems with the Green Revolution} (September 20, 2021) provides
 a succinct introduction to some of the issues covered
-in this chapter. His recipes are great, too.
+in this chapter. His recipes are great, too. \\
 
+\noindent
 Two short films about the Colorado River by Pete McBride: 
 \href{https://vimeo.com/52955892}{Chasing Water}
 and \href{https://vimeo.com/97197932}{Delta Dawn}. 
