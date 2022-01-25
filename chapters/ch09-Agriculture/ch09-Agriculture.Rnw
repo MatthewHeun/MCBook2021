@@ -542,19 +542,14 @@ nutrients.
 Figure~\ref{fig:GHG_food} shows what individual foods contribute to overall food
 emissions (but not what quantity of each are consumed).
 Taken together, Figures~\ref{fig:food_ghg}--\ref{fig:GHG_food} 
-paint a suggestive 
-(but incomplete! ***why incomplete?*** 
-**** I don't think I wrote ``incomplete.''
-OK by me to delete this parenthetical phrase. ---MKH ****) 
-picture of agricultural
-CO$_2$ emissions.
+paint a suggestive picture of agricultural CO$_2$ emissions.
 
 %++++++++++++++++++++++++++++++
 \paragraph{CH$_4$}
 %++++++++++++++++++++++++++++++
 
-One tonne of methane has the same global-warming potential as twenty five tonnes of CO$_2$;
-methane is a very potent GHG.
+One tonne of methane has the same global-warming potential as twenty five tonnes 
+of CO$_2$---methane is a very potent GHG.
 Methane is about 10\% of U.S.\ GHG emissions. 
 Of this 10\%, about 39\% comes from agriculture, 40\% comes from energy and transportation,
 and 21\% comes from landfills and wastewater treatment~\cite{USEPA:2021uj}.
@@ -581,12 +576,8 @@ To be more sustainable, agriculture must reduce its intensity (of resource use
 and impacts produced) or, inversely,
 it must increase its productivity.
 To be strongly sustainable, agriculture must increase soil fertility without extracting minerals and 
-water from the environment at rates greater than their 
-**** what is the antecedent for ``their?'' 
-soil fertility? 
-minerals and water?
----MKH ****
-regeneration rates.
+water from the environment at rates greater than minerals and water naturally 
+regenerate.
 The sections below examine agricultural efficacy and soil regeneration in more detail.
 
 
@@ -595,7 +586,7 @@ The sections below examine agricultural efficacy and soil regeneration in more d
 \label{sec:ag_metrics}
 %++++++++++++++++++++++++++++++
 
-Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based material flow
+Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based, material-flow
 Sankey diagram\index{Sankey diagram!agriculture} for U.S.\
 agriculture. 
 Mass-based efficiencies can be calculated for many aspects of the agricultural system.
@@ -1010,12 +1001,6 @@ in this chapter. His recipes are great, too.
       How many more lives or how much less carbon does it take to change
       your answer? Why?
 
-\item Retail is an important part of the food supply chain.
-      Where are food deserts most prevalent? 
-      What are their causes?
-      What can be done to alleviate them?
-      *** I'm suggesting that this should be a project. ***
-      
 \item Food waste is a major environmental and economic problem. 
       In fact, food waste accounts for 6--8\% of global greenhouse gas emissions.
       One way to reduce food waste is to use \emph{more} packaging.
@@ -1030,7 +1015,7 @@ in this chapter. His recipes are great, too.
       
 \item Where should the environmental impact(s) from almond growing be counted, 
       where the almonds were grown or where they were consumed? 
-      (See P9.1 ****MKH make link****)
+      (See \ref{project:almond_water}.)
       How would this affect, for instance, urban and rural carbon footprints?
       
 \item Figure~\ref{fig:food_and_ag_material_flow} indicates that animals are an
@@ -1119,6 +1104,7 @@ in this chapter. His recipes are great, too.
       it get there? How did the almonds get to you? Are the environmental impacts
       of almond growing allocated to where the almonds are grown or where they are 
       consumed? How does this affect, for instance, urban and rural carbon footprints?
+      \label{project:almond_water}
 
 \item Verify the efficiency values in Section~\ref{sec:food_ag_efficiency}.
       Use Figure~\ref{fig:food_and_ag_material_flow} as the basis for your calculations.
@@ -1139,8 +1125,15 @@ in this chapter. His recipes are great, too.
       develop an alternative diet and estimate its greenhouse gas emissions.
       What amount of GHG emissions reductions can you obtain by changing your diet?
       
+\item Retail is an important part of the food supply chain.
+      Where are food deserts most prevalent? 
+      What are their causes?
+      What can be done to alleviate them?
+      
 \item Compile a report on opportunities and challenges of genetically modified organisms
       in agriculture.
+      
+\item Research the legal and economic issues related to use of water from the Colorado River.
       
 \end{projects}
 
