@@ -339,7 +339,8 @@ food_energy <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "dat
 # Calculate the EROI of the food system for later use.
 food_eroi_numerator <- food_energy %>% 
   dplyr::filter(Category == "Consumed") %>% 
-  dplyr::select(value)
+  dplyr::select(value) %>% 
+  as.double()
 food_eroi_denominator <- food_energy %>% 
   dplyr::filter(type == "Input energy") %>% 
   dplyr::select(value) %>% 
@@ -352,7 +353,8 @@ food_eroi_gross_output <- food_energy %>%
   sum()
 food_eroi_waste <- food_energy %>%
   dplyr::filter(Category == "Waste") %>%
-  dplyr::select(value)
+  dplyr::select(value) %>% 
+  as.double()
 
 # Make the graph
 food_energy %>%
