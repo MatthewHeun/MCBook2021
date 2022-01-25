@@ -377,11 +377,11 @@ Because food is energy, the overall energy efficiency of the food-delivery syste
 Figure~\ref{fig:food_and_ag_energy_flow} shows the energy consumed and supplied
 by various aspects of the food-delivery system.
 The EROI of the food-delivery system is \Sexpr{format(food_eroi * 100, digits = 2)}\%.
-% With modern food system, it takes \Sexpr{format(food_eroi_denominator, digits = 3)}
-% calories of energy to provide \Sexpr{format(food_eroi_gross_output, digits = 3)}
+With modern food system, it takes \Sexpr{format(food_eroi_denominator, digits = 3)}
+calories of energy to provide \Sexpr{format(food_eroi_gross_output, digits = 3)}
 calories of food energy, of which only \Sexpr{format(food_eroi_numerator, digits = 3)}
 calories are consumed.
-% The remaining \Sexpr{format(food_eroi_waste, digits = 3)} are wasted.
+The remaining \Sexpr{format(food_eroi_waste, digits = 3)} are wasted.
 The fact that the EROI energy efficiency of the food-delivery system is less than 1
 means that the food-delivery system is not a \emph{source} of energy for society.
 Rather, it is a \emph{sink} of energy for society.
