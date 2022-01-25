@@ -82,7 +82,7 @@ By definition,
 and in contrast to some of the examples mentioned in Section~\ref{sec:recycling},
 ``food'' is \emph{not} a substitutable resource.
 Although humans can exist on a wide variety of diets, we can't directly metabolize 
-non-food items, such as wood, cellulose, sunlight, or petroleum.
+nonfood items, such as wood, cellulose, sunlight, or petroleum.
 
 Food doesn't appear on plates magically, out of nowhere.
 It arrives on our plates through a network of 
@@ -117,8 +117,8 @@ per person per day since 1967~\cite{Gordon2016}.
 The trend has also been toward a more varied diet that includes more fresh foods.
 This trend towards a richer, more varied diet is repeated across the world as
 affluence rises.
-Thus, the global demand for food has two main drivers.
-Population~\Pparen{} is the primary driver of demand for agriculture, and
+Thus, the global demand for food has two main drivers:
+population~\Pparen{} is the primary driver of demand for agriculture, and
 affluence~\Aparen{} is the secondary driver.
 
 As mentioned in Section~\ref{sec:PCbalance}, consumption and production are balanced,
@@ -205,7 +205,7 @@ aspects of agriculture.
 Soil and water are the two most important inputs for agriculture.
 As mentioned earlier, most of the usable land in the world 
 is put to agricultural uses. 
-Similarly, agriculture accounts for approximately 70\% of human fresh water use.
+Similarly, agriculture accounts for approximately 70\% of human freshwater use.
 The paragraphs below examine a variety of unsustainable practices related to human 
 use of land and water.
 
@@ -266,11 +266,19 @@ Plants need water to grow.
 Currently, much of agricultural irrigation is not sustainable because water is being
 extracted from aquifers faster than the natural regeneration rate.
 If aquifers are exhausted, future humans won't have water for nourishment or bathing.
-Overuse of water is not limited to subsurface water. 
+Overuse of water is not limited to subsurface water, like the Ogallala aquifer; 
+see Q5.\ref{question:ogallala}. 
+Surface water is also being overused for agriculture.
 One particularly notable example is the (formerly) Aral Sea, which has all but disappeared
 due to diversion of its water for irrigation.
-*** MKH, what do you think about a before-and-after picture? ***
-% E.g., https://www.carecinstitute.org/events/international-symposium-on-ecological-restoration-and-management-of-the-aral-sea/
+Another example is the Colorado River, which supplies water to 12\% of the U.S.\ population,
+supports 15\% of U.S.\ crop output, and 13\% of U.S.\ livestock production~\cite{UWMCWP2014}. 
+%% https://www.youtube.com/watch?v=lYvQNon4aLg&t=804s
+%% https://feedingourselvesthirsty.ceres.org/regional-analysis/colorado-river
+%% https://uwm.edu/centerforwaterpolicy/wp-content/uploads/sites/170/2013/10/Colorado_Agriculture_Final.pdf
+Because of diversions for agriculture (70--80\%) and to supply municipalities with drinking 
+water (15\%), the Colorado River mouth is dry. 
+Water no longer flows into the Sea of Cortez.
 
 Agricultural activities also result in water pollution of surface water and ground water.
 For example, the city of Toledo, Ohio draws its drinking water from Lake Erie.
@@ -645,7 +653,7 @@ Usually per-something would be a metric.
 So maybe CO$_2$ produced per calorie of food produced?
 ---MKH
 ****
-Agriculture currently accounts for approximately 70\% of fresh water use.
+Agriculture currently accounts for approximately 70\% of freshwater use.
 Minimizing the amount of water used in agriculture is important for several
 aspects of sustainability, including the fact that pumping water requires energy.
 **** 
