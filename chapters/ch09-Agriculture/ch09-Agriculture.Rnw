@@ -314,7 +314,7 @@ Whether spending more energy on food than we get from it is sustainable or not
 depends on where the energy for agriculture comes from. 
 
 
-<<food_and_ag_energy_flow, fig.scap="Energy consumed in the food-delivery system by life-cycle phase", fig.cap="Amount of energy consumed in the U.W.\\ food-delivery system by life-cycle phase (2021). \\emph{Source}: \\citet{US_food}.">>=
+<<food_and_ag_energy_flow, fig.scap="Energy consumed in the food-delivery system by life-cycle phase", fig.cap="Amount of energy consumed in the U.S.\\ food-delivery system by life-cycle phase (2021). \\emph{Source}: \\citet{US_food}.">>=
 food_energy <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Energy Flow in the US Food System.xlsx"),
                                    sheet = "data to plot") %>%
   tidyr::pivot_longer(-Category, names_to = "type", values_to = "value") %>%
@@ -346,6 +346,7 @@ food_eroi_denominator <- food_energy %>%
   dplyr::select(value) %>% 
   sum()
 food_eroi <- food_eroi_numerator / food_eroi_denominator
+food_eroi_scaled_input = food_eroi_denominator / food_eroi_numerator
 
 food_eroi_gross_output <- food_energy %>%
   dplyr::filter(type == "Food energy available") %>%
@@ -355,6 +356,7 @@ food_eroi_waste <- food_energy %>%
   dplyr::filter(Category == "Waste") %>%
   dplyr::select(value) %>% 
   as.double()
+food_eroi_waste_fraction = food_eroi_waste / food_eroi_gross_output
 
 # Make the graph
 food_energy %>%
@@ -373,16 +375,17 @@ food_energy %>%
 @
 
 
-Because food is energy, the overall energy efficiency of the food-delivery system can be calculated.
+Because food is energy, the overall energy efficiency of the food-delivery 
+system can be calculated.
 Figure~\ref{fig:food_and_ag_energy_flow} shows the energy consumed and supplied
-by various aspects of the food-delivery system.
-The EROI of the food-delivery system is \Sexpr{format(food_eroi * 100, digits = 2)}\%.
-With modern food system, it takes % \Sexpr{format(food_eroi_denominator, digits = 3)}
-\Sexpr{sprintf(food_eroi_denominator, fmt = "%#.2f")}
-calories of energy to provide \Sexpr{format(food_eroi_gross_output, digits = 3)}
-calories of food energy, of which only \Sexpr{format(food_eroi_numerator, digits = 3)}
-calories are consumed.
-The remaining \Sexpr{format(food_eroi_waste, digits = 3)} are wasted.
+by various aspects of the food-delivery system in the U.S.
+Every calorie of food energy consumed requires 
+\Sexpr{sprintf(food_eroi_scaled_input, fmt = "%#.2f")} calories of energy.
+In other words, the EROI of the food-delivery system is 
+\Sexpr{format(food_eroi * 100, digits = 2)}\%.
+Part of the reason the EROI is so low is that a significant fraction 
+(\Sexpr{sprintf(food_eroi_waste_fraction * 100, fmt = "%#.1f")}\%)
+of food that is produced is wasted.
 The fact that the EROI energy efficiency of the food-delivery system is less than 1
 means that the food-delivery system is not a \emph{source} of energy for society.
 Rather, it is a \emph{sink} of energy for society.
