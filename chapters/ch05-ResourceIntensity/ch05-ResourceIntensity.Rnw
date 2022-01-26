@@ -54,12 +54,12 @@ When discussing resource use, knowledge of several key terms is helpful.
 \paragraph{Resources}
 %..............................
 
-We use the term \emph{resource} to mean a primary input to the economy. 
+We use the term ``resource'' to mean a primary input to the economy. 
 As such, a resource is something obtained from the natural world.
 It is something provisioned by the ecosystem, to use the language 
 of Section~\ref{sec:ecosystem_services}.
 Timber is a resource. Iron ore is a resource. Water is a resource.
-Each resource can be transformed many times \emph{within} the economy.
+Each resource can be transformed many times within the economy.
 Timber might become 2$\times$4s, or plywood, or toothpicks, or mulch.
 Iron ore might become steel, then sheet metal, and then a toaster.
 Water might become ice, a sports drink, or Play-Doh.
@@ -78,7 +78,7 @@ An intensity is like an efficiency, except the numerator and denominator have
 different units.
 A furnace that burns a quantity of natural gas that releases 100 BTUs of heat might
 only deliver 96 of those BTUs to your house.
-Such a furnace has an \emph{efficiency} of 96\% (BTUs delivered per BTUs input);
+Such a furnace has an efficiency of 96\% (BTUs delivered per BTUs input);
 see Section~\ref{sec:heating_and_cooling}
 for more on furnace efficiency and a related metric,
 Annual Fuel Utilization Efficiency (AFUE).
@@ -87,7 +87,7 @@ A natural gas power plant might burn gas at a rate that releases 300 MW of heat 
 Such a power plant has an efficiency of 33.3\%.
 In both cases, the input and output have the same units of energy, BTUs for the furnace
 and MW for the power plant.
-In contrast, an \emph{intensity} has \emph{different} units
+In contrast, an intensity has different units
 for output and input, for numerator and denominator.
 A vehicle's fuel economy, measured in miles per gallon, is an intensity.
 Carbon emissions per ton of freight moved along one mile is an intensity.
@@ -107,7 +107,7 @@ The \mft{R} term in Equation \ref{eq:IPARX} is the resource intensity of economi
 \mft{R} measures the total resources used by the economy to create a
 total amount of economic output (measured by GDP).
 Because the numerator and denominator of \mft{R} have different units,
-\mft{R} is an \emph{intensity}.
+\mft{R} is an intensity.
 
 Figure~\ref{fig:total_material_use} shows use rates of some natural resources,
 aggregated into important categories of 
@@ -198,8 +198,8 @@ even in the service sector.
 
 Imagine a coal-fired power plant that generates electricity to charge
 an electric car. 
-Coal is the \emph{primary} energy source. 
-The electricity sold to consumers is considered to be a \emph{final} energy carrier.%
+Coal is a primary energy source. 
+The electricity sold to consumers is considered to be a final energy carrier.%
 \footnote{
   Note that the term ``final'' comes from economics,
   where electricity purchases by consumers are 
@@ -209,7 +209,7 @@ The electricity sold to consumers is considered to be a \emph{final} energy carr
 Hydro, solar, and wind are primary energy sources. 
 So are crude oil and methane.
 In contrast, gasoline is a refined fuel. 
-As such, gasoline is the \emph{product} of 
+As such, gasoline is the product of 
 a refinery that converts crude oil to refined fuels. 
 Likewise, natural uranium is a primary energy carrier that must be converted into 
 fissionable uranium fuel before it can be used in a nuclear power plant to generate electricity.
@@ -266,12 +266,12 @@ given in Section~\ref{sec:what_is_sustainability}.
 A criterion for ``strong sustainability'' is 
 extracting and consuming resources 
 at rates slower than their natural regeneration rates.
-Thus, \emph{any} consumption of a nonrewable resource is not strongly sustainable.
+Thus, any consumption of a nonrewable resource is not strongly sustainable.
 
 The economy, being society's metabolism,\index{economy!as society's metabolism}
 depends on natural resources
 for its survival.
-Indeed, we can say that the economy \emph{runs} on natural resources.\index{resources!natural}
+Indeed, we can say that the economy runs on natural resources.\index{resources!natural}
 All goods and the infrastructure for all services depend on
 manufactured objects of all types:
 cars and the roads on which they travel, 
@@ -287,10 +287,10 @@ the European Commission maintains a list of Critical Raw Materials (CRMs)\index{
 with special importance 
 across a wide range of industries;
 see Table~\ref{tab:CRMs}.
-Notice the \emph{large number} of resources that are considered ``critical.''
+Notice the large number of resources that are considered ``critical.''
 Energy is important for running an economy but so are material resources.
 
-Another interesting feature of Table~\ref{tab:CRMs} is the \emph{breadth of applications}; 
+Another interesting feature of Table~\ref{tab:CRMs} is the breadth of applications; 
 most of the critical materials are used throughout the economy.
 A material may be critical to a region, to an economic sector, or to an economy as a whole 
 for many reasons: 
@@ -340,7 +340,7 @@ Figure~\ref{fig:total_material_use} shows the growing
 rate of extraction of materials from the Earth.
 Figure~\ref{fig:per_capita_material_use}
 shows the same data on a per-capita basis.
-Although a (hypothetically) falling global population might \emph{help} humanity to become 
+Although a (hypothetically) falling global population might help humanity to become 
 sustainable by reducing the number of people who need resources,
 Figure~\ref{fig:per_capita_material_use} indicates population decline won't be
 enough. 
@@ -413,15 +413,15 @@ material_per_gdp %>%
 Figure~\ref{fig:total_material_use} 
 shows that resource consumption is growing through time.
 By the ``strong sustainability'' criterion,
-\emph{any} extraction of
+any extraction of
 construction minerals, ores and industrial minerals, and fossil energy carriers
 is unsustainable, because
 we are extracting these materials at rates that are faster than their regeneration rates.
-The fact that we are \emph{increasing} our rate of material extraction
+The fact that we are increasing our rate of material extraction
 means that we are running well afoul of the strong sustainability criterion
 for these materials.
 On the other hand,
-extraction of biomass \emph{could} be sustainable if
+extraction of biomass could be sustainable if
 the extraction rate is less than the regrowth rate.
 Unfortunately, Figure~\ref{fig:per_gdp_material_use} shows that biomass extraction
 is not scaling with GDP.
@@ -509,12 +509,12 @@ the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$).
 \end{equation}
 %
 A positive value for $\rho$ indicates the percentage by which the extraction rate~($\mft{r}_{\mft{cf}}$\;\!)
-is \emph{above} the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$)
+is above the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$)
 and is, therefore, weakly unsustainable. 
 A negative value for $\rho$ indicates the percentage by which the extraction rate~($\mft{r}_{\mft{cf}}$\;\!)
-is \emph{below} the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$)
+is below the average maximum weakly sustainable extraction rate~($\mft{r}_{\mft{ws}}$)
 and is, therefore, weakly sustainable. 
-A value for $\rho$ of 100\% means that the resource is being extracted at \emph{twice} 
+A value for $\rho$ of 100\% means that the resource is being extracted at twice
 its average maximum weakly sustainable extraction rate.
 (Put another way,
 $\rho$ = 100\% means that the resource would be exhausted in 25~years, 
@@ -626,7 +626,7 @@ use of solar electricity (renewable) instead of coal electricity (nonrenewable).
 Switching from consuming nonrenewable resources
 to consuming renewable resources
 is an important aspect of sustainability, 
-for both the weak \emph{and} the strong versions.%
+for both the weak and the strong versions.%
 \footnote{
   In some cases, renewable resources still have sustainability impacts.
   For example, biomass is a renewable energy source, 
@@ -641,7 +641,7 @@ so long as both options are (for the U.S.) 120~V at 60~Hz.
 From the point of view of the manufacturing plant, coal electricity and solar electricity are 
 perfect substitutes.
 However, at the point of electricity generation, 
-the feedstocks for electricity production are \emph{not} substitutes.
+the feedstocks for electricity production are not substitutes.
 Coal-fired Rankine cycle\index{Rankine cycle} power plants
 cannot use the Sun's energy to make electricity.
 Similarly, a pile of coal is useless
@@ -798,7 +798,7 @@ as shown in Figure~\ref{fig:PercentageOfSustainable}.)
 Neither oil nor natural gas are being consumed at a weakly sustainable rate.
 
 
-<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person vs.\\ time by energy type", fig.cap="World primary energy consumption per person vs.\\ time by energy type. Note that per-person primary energy consumption is relatively flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth \\emph{and} increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy.">>=
+<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person vs.\\ time by energy type", fig.cap="World primary energy consumption per person vs.\\ time by energy type. Note that per-person primary energy consumption is relatively flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth and increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy.">>=
 
 # Find which years have data from the Europe data set
 which_years <- region_pop %>%
@@ -891,7 +891,7 @@ one piece or facet of resource intensity of the economy~\Rparen{}
 is the primary energy intensity~\REpparen{} of the world economy.
 \REp{} is the amount of primary energy required to create one unit (dollar) of
 world GDP.
-Of course, many other resources are \emph{also} required to create a unit of GDP,
+Of course, many other resources are also required to create a unit of GDP,
 but we use energy as the prime example of an important resource in the economy.
 The primary energy intensity of the economy is formed
 by dividing primary energy consumption ($\mft{E}_\mft{p}$)
@@ -1024,7 +1024,7 @@ considers only CO$_2$ emissions on the left-hand side of the equation~($\mft{I}_
 and the energy intensity of economic activity~\REpparen{}
 instead of \mft{R} on the right-hand side.
 When \REp{} falls, downward pressure is placed on CO$_2$ emissions.
-Whether CO$_2$ emissions \emph{actually} decrease
+Whether CO$_2$ emissions actually decrease
 depends on the rates of increase or decline of the other terms
 on the right side of Equation~\ref{eq:IPARX}.
 Figure~\ref{fig:CarbonEmissionsGraph} shows that CO$_2$ emissions have been growing over time.
@@ -1101,7 +1101,7 @@ Another way to slow down the inevitable march of time
 along logistic curves for finite resources is to transition
 economies to use fewer resources per unit of GDP produced,
 that is to reduce the resource intensity of economic activity~\Rparen{}.
-Reduction of resource intensity of economic activity is sometimes called \emph{dematerialization}.
+Reduction of resource intensity of economic activity is sometimes called dematerialization.
 Reducing \mft{R} will reduce resource consumption but only if
 GDP stays constant or grows more slowly than the
 rate at which \mft{R} decreases.
@@ -1192,9 +1192,9 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         because they were filled with glacial melt from the last ice age.
         Is using any such resource sustainable?
         What are the moral and ethical implications of leaving a valuable and
-        usable resource \emph{unused}? \label{question:ogallala}
+        usable resource unused? \label{question:ogallala}
 
-  \item What is the purpose (\emph{telos}) of mineral resources in the environment?
+  \item What is the purpose (telos) of mineral resources in the environment?
         Should they be left in place or used?
         Humans are the only creatures on Earth that make use of most minerals.
         What are some positive impacts on animal populations that arise from
@@ -1296,7 +1296,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
   \item A recent report \cite{Miljostyrelsen2018} found that an organic cotton
         canvas tote bag has an environmental footprint equivalent to 20,000
         plastic shopping bags.
-        In other words, to \emph{break even} you would have to use the organic cotton bag
+        In other words, to break even you would have to use the organic cotton bag
         every day for about 54 years.
         Hank Green \href{https://www.youtube.com/watch?v=2PF5AAEAWTs}{attributed his emotional reaction}
         % "it's resource intensive to grow crops!"
@@ -1308,7 +1308,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         %   gonna have a positive impact?"
         % "is this a little complicated? Yeah. But simplicity is almost always a lie."
         to cognitive dissonance between the life cycle analysis results and his
-        intuition that cotton bags \emph{should} be better for the environment.
+        intuition that cotton bags should be better for the environment.
         How should humans respond when analytical results go against intuition?
         Hank says, ``Simplicity is almost always a lie.''
         ``We have to ask, are we being sold an idea because someone is trying to
@@ -1340,7 +1340,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         would view both of these examples as demonstration of the principle
         that price is the mechanism that spurs innovation and that weak sustainability
         is ``good enough.''
-        Do you find techno-optimism convincing \emph{in these two cases}?
+        Do you find techno-optimism convincing in these two cases?
         Does your answer for these two examples generalize to other products or resources?
         What do you make of the idea that price reductions spur increased consumption?
         Relate your answer to the IPARX equation (Equation~\ref{eq:IPARX}).
