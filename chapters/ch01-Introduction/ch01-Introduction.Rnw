@@ -111,7 +111,7 @@ in the future that there is neither urgency nor immediate payback.
 However, neither of these views is true.
 Current news headlines indicate that we are already 
 experiencing the effects of not being sustainable, in all 
-sustainability domains---environmentally, economically, \emph{and} socially.
+sustainability domains---environmentally, economically, and socially.
 There are many reasonable and simple things that can be done to improve our 
 sustainability in the near term.
 The deep changes needed for long-term sustainability are urgently needed precisely because
@@ -146,11 +146,11 @@ As you read this book, it should raise many questions for you.
 % interrelated problems from different domain areas.
 % The challenges associated with transitioning to a sustainable existence are complex
 % and interconnected.
-The focus of this book is the many \emph{challenges} of sustainability.
+The focus of this book is the many challenges of sustainability.
 While we may, at times, point to directions for improved sustainability
 (Chapters~\ref{chap:government} and \ref{chap:personal_action}),
 it is beyond our scope
-(and indeed our ability) to provide \emph{solutions} for all sustainability problems.
+(and indeed our ability) to provide solutions for all sustainability problems.
 Some (or many) of the questions that are raised about sustainability 
 will remain unanswered.
 
@@ -204,11 +204,11 @@ When considering the meaning of sustainability, the two most important questions
 The second of these questions is perhaps easier to answer.
 Although humans seem to have inherent cognitive difficulties in planning for 
 time scales significantly longer than the human lifespan, 
-\emph{strong} sustainability is achieved only if the answer is
+strong sustainability is achieved only if the answer is
 ``indefinitely'' or ``forever.''
 Our current sustainability crisis has been thousands of years in the making~\cite{Sanderman2017}
 and will likely require millions of years to recover~\cite{Davis11262}.
-A \emph{weak} sustainability criterion is sustainability over a long (by human standards)
+A weak sustainability criterion is sustainability over a long (by human standards)
 time frame, perhaps 50 years, which is on the order of one human adulthood.%
 \footnote{
   Our criteria for strong and weak sustainability are physical and 
@@ -274,7 +274,7 @@ Eventually, it will go out of business.
 Social sustainability comprises human and civil rights, suffering, and personal freedom.
 A social group that continually loses members, for example, the Whig party, will 
 cease to be a group.
-Typically, social sustainability includes things that \emph{should not} be 
+Typically, social sustainability includes things that should not be 
 sustained but that, typically, have persisted a very long time, like poverty, class inequality,
 sexism, slavery, and other civil injustices.
 
@@ -286,10 +286,10 @@ domains, like a social versus economic tradeoff.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-This book uses energy and carbon emissions as prime examples \emph{not}
-because they are the \emph{only} sustainability problem, but because
+This book uses energy and carbon emissions as prime examples not
+because they are the only sustainability problems, but because
 energy is the master resource and climate change is currently
-one of the most \emph{urgent} sustainability problems.
+one of the most urgent sustainability problems.
 Energy and carbon emissions link together many of our sustainability challenges.
 \end{mcframe}
 
@@ -361,7 +361,7 @@ Likewise, it may not be possible to drive the impact(s) per unit of resource to
 zero because of diminishing returns on efficiency 
 and tradeoffs that exist between different types of impacts.
 Thus, while Equation~\ref{eq:IPARX} is useful as a conceptual framework for 
-thinking about sustainability challenges, it does \emph{not} provide a complete 
+thinking about sustainability challenges, it does not provide a complete 
 roadmap for sustainability solutions (in part) because of interactions among the terms.
 \end{mcframe}
 
@@ -395,7 +395,7 @@ and one more than the sum of all previous $\mft{N} - \text{1}$ squares.
 
 Doubling on discrete squares (or in discrete time units) can be extended to 
 continuous time. 
-Exponential growth is growth at a \emph{constant rate} (in percent per time), 
+Exponential growth is growth at a constant rate (in percent per time), 
 which means doubling in a fixed amount of time.
 That is, the time it takes to double does not depend on the current amount. 
 If the (constant) rate of growth is \mft{r}, then amount of time to double is ln(2)/\mft{r}, 
@@ -490,7 +490,7 @@ chessboard_data %>%
 
 Figure~\ref{fig:exp} shows the mass of grain on each square of the chessboard.
 The sharp increase at the right side of figure
-is characteristic of exponential growth over \emph{any} time scale. 
+is characteristic of exponential growth over any time scale. 
 If the chessboard were extended by another row, the new row (squares 65--72) 
 would make current last row (squares 57--64) look as small and insignificant as
 squares 49--56 currently appear.
@@ -505,13 +505,13 @@ to be constant over a short period of time but are not constant long term;
 see Chapter~\ref{chap:resource_intensity}.)
 
 Population~\Pparen{}(P) and affluence~\Aparen{}
-in Equation~\ref{eq:IPARX} \emph{have} been growing
+in Equation~\ref{eq:IPARX} have been growing
 exponentially. 
 Chapter~\ref{chap:population} gives us some hope that population won't keep growing 
 exponentially.
-(In fact, there are some indications world population may \emph{fall} after a peak
+(In fact, there are some indications world population may fall after a peak
 in the mid-twenty-first century.)
-However, world economies are \emph{actively managed} to have continual growth 
+However, world economies are actively managed to have continual growth 
 (perhaps, an average target of 3\%/year).
 The implication for sustainability is that the resources---for instance, 
 energy---needed by the economy in the next 23 years will be more than the total
@@ -563,14 +563,14 @@ Even the decomposition of compost takes sunlight, air, and rain.
 Because energy is vitally important, 
 metrics have been developed to describe its use.
 For example, energy efficiency can be calculated 
-for the \emph{use} of energy in any process.
+for the use of energy in any process.
 Energy efficiency ($\eta$) is defined as
 
 \begin{equation} \label{eq:energy_efficiency_def}
   \eta \equiv \frac{\text{Energy out}}{\text{Energy in}} \; .
 \end{equation}
 
-A different metric is often calculated for the \emph{production} of energy:
+A different metric is often calculated for the production of energy:
 energy return on investment (EROI),
 which is defined as the amount of energy delivered to the economy 
 per unit of energy it took to deliver that energy, 
@@ -590,8 +590,8 @@ not including feedstock.%
 %
 Because energy is the master resource, 
 understanding EROI is vitally important.
-An EROI that is less than one indicates the energy production activity is an energy \emph{sink}
-rather than an energy \emph{source}.
+An EROI that is less than one indicates the energy production activity is an energy sink
+rather than an energy source.
 For instance, modern agriculture has an EROI of around 0.1 to 0.15; 
 it takes 7--10 calories of energy to deliver 1 calorie of food energy.
 On the other hand, an EROI greater than one indicates a source of useful energy.
@@ -639,12 +639,12 @@ Thus, carbon emissions and energy lie at the nexus of our sustainability challen
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Kim Stanley Robinson, \emph{The ministry for the future}, London: Orbit, 2020. \\
+Kim Stanley Robinson, \emph{The ministry for the future}. London: Orbit, 2020. \\
 
-\noindent Mary Robinson, \emph{Climate justice: Hope, resilience, and the fight for a sustainable future},
+\noindent Mary Robinson, \emph{Climate justice: Hope, resilience, and the fight for a sustainable future}.
 London: Bloomsbury, 2018. \\
 
-\noindent Jeremy L. Caradonna, \emph{Sustainability: A history}, Oxford: Oxford University Press, 2016.
+\noindent Jeremy L. Caradonna, \emph{Sustainability: A history}. Oxford: Oxford University Press, 2016.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -736,8 +736,8 @@ the full restoration is likely to cost more than \euro{8}~billion.
 %       restoration of Notre-Dame is complete?
 
 \item With reference to the three areas of sustainability shown in Figure~\ref{fig:venn_diagram},
-      what are the environmental, social, and economic reasons \emph{for} rebuilding
-      Notre-Dame de Paris and \emph{against} rebuilding? 
+      what are the environmental, social, and economic reasons for rebuilding
+      Notre-Dame de Paris and against rebuilding? 
       Also, consider the decision to rebuild (or not) in terms of Equation \ref{eq:IPARX}.
       What effect will rebuilding (or not) have on 
       impacts~\Iparen{}, 
