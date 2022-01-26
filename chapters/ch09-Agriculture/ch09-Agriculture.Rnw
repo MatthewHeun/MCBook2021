@@ -380,12 +380,16 @@ system can be calculated.
 Figure~\ref{fig:food_and_ag_energy_flow} shows the energy consumed and supplied
 by various aspects of the food-delivery system in the U.S.
 Every calorie of food energy consumed requires 
-\Sexpr{sprintf(food_eroi_scaled_input, fmt = "%#.2f")} calories of energy.
+\Sexpr{sprintf(food_eroi_scaled_input, fmt = "%#.2f")} calories of energy to produce
+(\Sexpr{sprintf(food_eroi_numerator, fmt = "%#.2f")} quads consumed, 
+\Sexpr{sprintf(food_eroi_denominator, fmt = "%#.2f")} quads input).
 In other words, the EROI of the food-delivery system is 
 \Sexpr{format(food_eroi * 100, digits = 2)}\%.
 Part of the reason the EROI is so low is that a significant fraction 
 (\Sexpr{sprintf(food_eroi_waste_fraction * 100, fmt = "%#.1f")}\%)
-of food that is produced is wasted.
+of food that is produced is wasted
+(\Sexpr{sprintf(food_eroi_waste, fmt = "%#.2f")} quads wasted out of
+\Sexpr{sprintf(food_eroi_gross_output, fmt = "%#.2f")} quads produced).
 The fact that the EROI energy efficiency of the food-delivery system is less than 1
 means that the food-delivery system is not a \emph{source} of energy for society.
 Rather, it is a \emph{sink} of energy for society.
