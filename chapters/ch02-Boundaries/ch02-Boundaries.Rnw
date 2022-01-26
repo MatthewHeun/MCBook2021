@@ -355,7 +355,7 @@ Generating new species by natural evolution to replace the ones that have been
 lost will take several million years~\cite{Davis11262}.
 
 
-<<CO2Graph, fig.scap="Atmospheric CO$_2$ concentration vs.\\ time", fig.cap="Atmospheric CO$_2$ concentration over time. The red line shows the planetary boundary for atmospheric CO$_2$ concentration, 305~ppm. The vertical line shows the year 2022. \\emph{Sources}: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Tans:2022vw}.">>=
+<<CO2Graph, fig.scap="Atmospheric CO$_2$ concentration vs.\\ time", fig.cap="Atmospheric CO$_2$ concentration over time. The red line shows the planetary boundary for atmospheric CO$_2$ concentration, 350~ppm. The vertical line shows the year 2022. \\emph{Sources}: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Tans:2022vw}.">>=
 # Gather data for CO2 vs. time graph
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>%
   dplyr::mutate(
