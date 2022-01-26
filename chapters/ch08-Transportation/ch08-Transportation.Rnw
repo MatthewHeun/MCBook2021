@@ -264,7 +264,7 @@ CO$_2$ emissions from burning fossil fuels.
 %..............................
 
 A significant challenge to higher occupancy cars and higher capacity trucks
-is the \emph{last mile problem}~\cite{World-Economic-Forum:2020wf}\index{last mile problem},
+is the last mile problem~\cite{World-Economic-Forum:2020wf}\index{last mile problem},
 the expensive and time-intensive transport of goods
 on the last leg of their journey to 
 consumers and businesses.
@@ -308,7 +308,7 @@ last_mile %>%
 \paragraph{The first mile}
 %..............................
 
-Another sustainability challenge for transport is the \emph{first mile problem}\index{first mile problem}
+Another sustainability challenge for transport is the first mile problem\index{first mile problem}
 for mass transit.
 In low-population-density areas, 
 moving people along the first mile to mass transit stations is 
@@ -662,9 +662,9 @@ Figure~\ref{fig:auto_gwp} shows that EVs are clearly worse than ICE vehicles
 in terms of mineral resource depletion~(MRD)\index{resources!mineral!depletion of}.
 The material demands for engine and battery fabrication are much higher for EVs 
 than for ICE vehicles.
-However, EVs \emph{can} provide benefits in terms of global warming potential~(GWP)
+However, EVs can provide benefits in terms of global warming potential~(GWP)
 relative to ICE vehicles
-\emph{if} the electricity source includes renewables (as in the ``Ren20'' electricity mix), 
+if the electricity source includes renewables (as in the ``Ren20'' electricity mix), 
 because of lower lifetime fuel/electricity emissions.
 In the case of the Ren20 electricity mix,
 the global warming benefits of EVs are achieved
@@ -715,7 +715,7 @@ Automobile technology is one of many arenas in which sustainability tradeoffs ar
 Under the right conditions,
 EVs can reduce global warming impact relative to ICE vehicles
 at the expense of depleting the stock of mineral resources,
-a phenomenon known as \emph{problem shifting}\index{problem shifting}.
+a phenomenon known as problem shifting\index{problem shifting}.
 
 The sustainability challenges of transportation transitions
 don't end with the tradeoff between GHG emissions and mineral resource depletion 
@@ -830,7 +830,7 @@ transportation, petroleum, and technology.
 
 \item Could driving be more environmentally friendly than walking? 
       One analysis found~\cite{CohenH2008} that if your calories came
-      primarily from animal sources, particularly beef, that driving \emph{could}
+      primarily from animal sources, particularly beef, that driving could
       have less climate-change impact than walking but that, for the average 
       American diet, walking had less impact.
       The analysis was for a relatively short round trip, 2.5 km (1.5 miles),
@@ -849,7 +849,7 @@ transportation, petroleum, and technology.
 \item \label{question:commute_vs_happiness} 
       As a preview of Chapter~\ref{chap:land_use_urban_planning}, there are strong
       connections between housing costs and the demand for transportation. 
-      Housing markets are regional precisely \emph{because} it is 
+      Housing markets are regional precisely because it is 
       possible to commute between home and work, school, shopping, etc.
       ``Affordable'' housing is affordable only as long as the cost of commuting 
       is not too high.
@@ -871,17 +871,17 @@ transportation, petroleum, and technology.
       on every (nonexempt) vehicle entering the city center.
       The London has had such a scheme since 2003 and congestion pricing 
       is currently being considered for New York City.
-      The \emph{objectives} of congestion pricing are many and various: improved
+      The objectives of congestion pricing are many and various: improved
       urban air quality (electric vehicles can be exempted from the surcharge),
       fuller utilization of existing mass transit, reduced noise, better pedestrian
       safety, preservation of ``historic character,'' and improved transit times 
       for the remaining vehicle traffic (for example, bus traffic).
-      Some common \emph{objections} to congestion pricing relate to (hypothetical) displaced traffic to suburbs,
+      Some common objections to congestion pricing relate to (hypothetical) displaced traffic to suburbs,
       economic inequality (who can afford to pay and who can't), civil liberties
       (from the automated systems that collect the tolls), who decides and who 
       benefits (residents vs. visitors), and what the extra tax money will be spent on.
       \begin{enumerate}
-      \item Fundamentally, does it make sense---if roads are a \emph{public} good---to
+      \item Fundamentally, does it make sense---if roads are a public good---to
             intentionally restrict their use? Why or why not? 
       \item Who gets to decide, for example residents or visitors? Who should get to decide?
       \item Should your (nearest) local city implement congestion pricing? Why or why not?
@@ -889,10 +889,10 @@ transportation, petroleum, and technology.
             Which objection(s) are most important?
       \end{enumerate}
 
-\item \href{www.strongtowns.org}{Strong Towns.org} defines a \emph{road} as a high-speed 
+\item \href{www.strongtowns.org}{Strong Towns.org} defines a road as a high-speed 
       connection (like an expressway) between two places,
-      a \emph{street} as a human-centric place where people interact with homes and businesses,
-      and \emph{stroads} as dangerous and expensive hybrids that are ultimately ineffective
+      a street as a human-centric place where people interact with homes and businesses,
+      and stroads as dangerous and expensive hybrids that are ultimately ineffective
       at doing the job of either a street or a road. 
       (Stroads are often found near shopping malls and big-box stores. They have 
       multiple lanes, high traffic volumes, but also many lights and connections to
@@ -914,10 +914,10 @@ transportation, petroleum, and technology.
       human life. (``Failing to act is consenting to more preventable deaths.'')
       
       Let's examine the tradeoff between traffic flow and safety.
-      There are many \emph{de facto} estimates on the worth of a human life;
+      There are many de facto estimates on the worth of a human life;
       for simplicity, let's use \$10 million~\cite{NPR_4_23_2020} per human life.
       
-      \emph{Finally}, some questions: 
+      Finally, some questions: 
       \begin{enumerate}
       \item Using the cost of a commute at \$80 per hour from 
             \ref{question:commute_vs_happiness} above, 
@@ -994,7 +994,7 @@ transportation, petroleum, and technology.
       (See \cite{Gaffney2007} for an early and fascinating account.)
       Future technology, such as vehicle-to-vehicle and vehicle-to-infrastructure
       communication and greater computer control of driving functions, could both
-      boost fuel efficiency \emph{and} make hypermiling techniques safer to deploy
+      boost fuel efficiency and make hypermiling techniques safer to deploy
       more broadly. 
       (For instance, it might be possible to completely eliminate traffic lights.)
       However, enhanced automation to achieve more fuel efficient and, perhaps,
@@ -1003,7 +1003,7 @@ transportation, petroleum, and technology.
       Do you welcome such automation? Why?
       How would you respond to people who are preemptively petitioning for a 
       ``right to drive?''
-      Are there circumstances where humans \emph{must} have control?
+      Are there circumstances where humans must have control?
       
 \item Who should be responsible for CO$_2$ emissions from international trade
       and international travel?
@@ -1082,11 +1082,11 @@ transportation, petroleum, and technology.
       Also estimate the costs of transitioning each mode.
       Compare the costs to the U.S.\ GDP.
 
-\item Research the term \emph{problem shifting}.
+\item Research the term problem shifting.
       Identify at least three examples of problem shifting in which
       a ``solution'' to one sustainability challenge
       causes problems of a different sort.
-      Can you identify arguments both in favor of and opposed to \emph{intentional} problem shifting?
+      Can you identify arguments both in favor of and opposed to intentional problem shifting?
 
 \item Research a variety of virtual-reality systems for their sustainability implications.
       How do they increase or decrease resource consumption?

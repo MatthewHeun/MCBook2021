@@ -72,7 +72,7 @@ is discussed in Section~\ref{sec:malthus_ehrlich_simon}.
 % North American megafauna, North Atlantic cod shoals....
 Currently, humans (36\%) and domestic livestock (60\%) constitute 96\% of the mass of
 mammals on the planet \cite{BarOn2018}---only 4\% of the mass of mammals is 
-\emph{wild} animals such as whales, bison, deer, and bears. 
+wild animals such as whales, bison, deer, and bears. 
 The number of wild vertebrates has declined by 68\% since 1970~\cite{WWFLPR2020}. 
 Populations of insects are down about 80\% in the last 30 years~\cite{Hallmann2017}.
 These statistics are alarming because they could indicate a drastic decline in the 
@@ -93,13 +93,13 @@ it does in the present crisis.)
 % https://www.vox.com/science-and-health/2018/10/30/18042150/wwf-living-planet-report-vertebrate-loss
 % https://www.pnas.org/content/115/44/11262 -- it will take millions of years to recover the species we've already lost.
 
-We should distinguish between the \emph{reason(s)} and the \emph{mechanism(s)} for 
+We should distinguish between the reason(s) and the mechanism(s) for 
 the decline in animal populations. 
-Population decline is an \emph{impact} (\mft{I}) from the left-hand side of 
+Population decline is an impact (\:\!\mft{I}) from the left-hand side of 
 Equation \ref{eq:IPARX}. 
-The \emph{reason(s)} (that is, the ``why'') are given on the right-hand side of
+The reason(s) (that is, the ``why'') are given on the right-hand side of
 Equation~\ref{eq:IPARX}, namely the \mft{PARX} terms.
-In contrast, the \emph{mechanisms} (that is, the ``how'') behind the decline 
+In contrast, the mechanisms (that is, the ``how'') behind the decline 
 in animal populations are not provided by Equation~\ref{eq:IPARX}.
 Four important mechanisms are summarized below.
 First, habitat destruction plays an important role in the decline of animal populations. 
@@ -251,7 +251,7 @@ Because birth rate and death rate are influenced by many other factors---environ
 social, and economic---there exists a wide range of uncertainty in the population 
 projections caused by uncertainty about future birth and death rates.
 Indeed, Figure~\ref{fig:UN_population_prospect} contains both the possibility
-that world population will peak around 2050 \emph{and} the possibility
+that world population will peak around 2050 and the possibility
 that population will keep rising to the end of the century.
 
 <<UN_population_prospect, fig.scap="Projections of world population vs.\\ time", fig.cap="Projections of world population vs.\\ time. The light gray region shows a 95\\% prediction interval. The dark gray region shows a 80\\% prediction interval. \\emph{Sources}: Historical data from \\citet{Roser:2021uu}; future projections from \\citet{UNEcSoAf:2021vj}.">>=
@@ -333,7 +333,7 @@ The point of Figure~\ref{fig:World3loops} is to show that many variables
 \end{figure}
 
 The UN projections shown in Figure~\ref{fig:UN_population_prospect} are not based on 
-the World3 model. 
+the World3\index{World3} model. 
 Instead, the UN\index{United Nations}
 used a Bayesian model\index{Bayesian model}
 that accounts for correlations among the 
@@ -353,14 +353,14 @@ variables is expected to give more-realistic population projections.
 Thus far, we have used birth rate and death rate to mean number per year, and noted
 that the rates depend on the size of the population.
 To compare different populations (for instance, in time, or in different countries),
-it is useful to have a way to express birth and death rates that are \emph{independent}
+it is useful to have a way to express birth and death rates that are independent
 of the total population.
-The \emph{crude birth rate} (CBR)\index{crude birth rate} is the number of births per year per thousand people.
-The \emph{crude death rate} (CDR)\index{crude death rate} is the number of deaths per year per thousand people.
+The crude birth rate (CBR)\index{crude birth rate} is the number of births per year per thousand people.
+The crude death rate (CDR)\index{crude death rate} is the number of deaths per year per thousand people.
 ``Crude'' indicates that the rates are uncorrected for
 age (different generations could have different populations) or
 sex (possible different number males and females in each age cohort).
-The \emph{replacement rate} refers to the fact that, on average, each female needs to give
+The replacement rate refers to the fact that, on average, each female needs to give
 birth to 2.1 children over her lifetime to maintain a stable population,
 to account for childhood mortality.
 
@@ -541,31 +541,32 @@ is still growing, but the falling birth rate means slower growth and an age stru
 that begins to be more uniform.
 In Stage~4, the birth rate and death rate equalize and the population stabilizes.
 
-\emph{After} the demographic transition,
+After the demographic transition,
 the birth rate might rise again (causing further population growth)
-\emph{or} drop \emph{below} the death rate, which leads to a \emph{decrease} in total population.
-Currently, most developed countries have a birth rate that is \emph{below} the
-\emph{replacement rate}, that is, a falling population (offset, in some cases,
+or drop below the death rate, which leads to a decrease in total population.
+Currently, most developed countries have a birth rate that is below the
+replacement rate, that is, a falling population (offset, in some cases,
 by immigration).
 As stated earlier, low birth rates are correlated to higher affluence~\Aparen{}.
 
 As countries move through the demographic transition, the age structure of the
 population changes; see Figure~\ref{fig:dtt_pop_pyramid}.
-A \emph{population pyramid} shows the percentage of the population in each age cohort, of
+A population pyramid\index{population pyramid}
+shows the percentage of the population in each age cohort, of
 each sex.
-(Important note: a population pyramid is always \emph{relative} to the size of
+(Important note: a population pyramid is always relative to the size of
 the total population.)
 The age structure of a population provides a lot of information about the population's
 future and its economic outlook.
 Stage~1 has many young people and few old people.
 In Stage~2, more young people are being born and people are living longer.
 Both of these groups are not of working age and tend to contribute little to GDP.
-(In fact, they are dependents who \emph{consume} rather than generate income.)
+(In fact, they are dependents who consume rather than generate income.)
 Later, in Stage~3, as young people mature and join the labor market and the
 birth rate falls,
 the fraction of the population that is working is much higher,
-which generates a \emph{demographic dividend}.
-GDP \emph{per capita} is higher because the fraction of the population that
+which generates a demographic dividend.
+GDP per capita is higher because the fraction of the population that
 is working is higher.
 Finally, in Stage~4 the age distribution of the population stabilizes.
 If birthrates continue to fall,
@@ -575,7 +576,7 @@ GDP per capita is lower than it would be with a different age structure.
 (There can still be growth in GDP per capita, but growth faces a
 demographic ``headwind.'')
 
-The age structure of the population also shows \emph{demographic momentum}.
+The age structure of the population also shows demographic momentum.
 It takes a lifetime to age a cohort out of the population pyramid.
 The next generation of parents have already been born.
 The children of today will become the parents of tomorrow (that is, of the next generation).
@@ -593,14 +594,14 @@ the sizes of the relevant age cohorts.
 %++++++++++++++++++++++++++++++
 
 Where do people live?
-Where \emph{should} people live to be more sustainable?
-\emph{Population density}, which is the number of people per area, is a key
+Where should people live to be more sustainable?
+Population density, the number of people per area, is a key
 metric for sustainability.
 For example, high population density, characteristic of urban areas, enables
 cost-effective mass transit, which reduces carbon emissions from transportation.
 Concentrating human population into a few high-density areas excludes most animal
 species from those locations.
-In theory, concentration in a few spots allows \emph{other} areas to be ``spared,''
+In theory, concentration in a few spots allows other areas to be ``spared,''
 or dedicated for animal use.
 In contrast, the ``sharing'' paradigm disperses human impact more broadly.
 Chapter~\ref{chap:land_use_urban_planning} discusses in more detail the
@@ -676,7 +677,7 @@ However, urban areas are supported by vast networks, including transportation,
 that supply resources, such as food.
 Equation~\ref{eq:IPARX} indicates that higher affluence~\Aparen{}, not location, is a
 main source of ecological impact.
-High population density \emph{can} provide efficient transportation, minimize habitat
+High population density can provide efficient transportation, minimize habitat
 destruction, and allow economies of scale for dealing with waste materials.
 Nevertheless, it is unwise to consider urban areas apart from the rural
 areas that enable them to thrive.
@@ -718,21 +719,21 @@ True sustainability thinking must consider all of human society and its spatial 
 
 Various writers, thinkers, and scholars throughout the world, from antiquity to
 the present time, have predicted that population growth
-would \emph{cause} resource scarcity.
+would cause resource scarcity.
 Thomas Malthus\index{Malthus, Thomas} (1766--1834), wrote a book in 1798 suggesting that any increase in
 affluence was only temporary.
 He thought that any abundance of resources (such as food) would cause population
 growth, which would immediately consume the abundance.
 Increasing affluence, Malthus thought, would lead to population growth, which
-would thereby decrease GDP \emph{per capita}.
+would thereby decrease GDP per capita.
 (In Equation~\ref{eq:IPARX},
 affluence is measured by GDP per capita, \mft{A}\:\!)
 Implicitly, Malthus assumed that population would grow more rapidly than affluence.
 The (hypothetical) inability to achieve long-term increases in affluence is
-now called the \emph{Malthusian trap}.
+now called the Malthusian trap.
 Subsequent to Malthus' work,
 the Industrial Revolution occurred, and GDP per capita rose
-\emph{in spite of}, or alongside of, increasing population;
+in spite of, or alongside of, increasing population;
 see Figures~\ref{fig:PopulationGraph} and~\ref{fig:AffluenceGraph-Nordhaus}.
 
 Nevertheless, fears of Malthusian catastrophe have not gone away.
@@ -747,7 +748,7 @@ millions of people will starve to death.''
 Neither prediction came to pass.
 Nevertheless, both books have received multiple updates, repeating the same basic claims.
 
-The opposite point of view has been called \emph{techno-optimism}.
+The opposite point of view has been called techno-optimism.
 Techno-optimists hold that there are no limits to growth, because
 (a)~matter and energy are abundant in the universe and
 (b)~human ingenuity can invent technology to enable substitution for all depleting nonrenewable
@@ -790,11 +791,11 @@ about 70\% of the time if war years were excluded~\cite{Pooley:2020vx}.
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Malthusians\index{Malthusian} think that population growth will lead to scarcity of finite resources.
-Therefore, they expect prices of scarce resources to \emph{increase}.
+Therefore, they expect prices of scarce resources to increase.
 Techno-optimists, on the other hand, expect that human-created technology will
 create new sources of resources.
 Rather than scarcity causing prices to rise, resources should be abundant and
-prices should \emph{fall} with a growing population.
+prices should fall with a growing population.
 \end{mcframe}
 
 The path of wisdom avoids false dichotomies.
@@ -832,7 +833,7 @@ The next chapter will consider ways in which human affluence~\Aparen{} affects s
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-J.B. MacKinnon, \emph{The once and future world: Nature as it was, as it is, as it could be},
+J.B. MacKinnon, \emph{The once and future world: Nature as it was, as it is, as it could be}.
 Toronto: Random House, Canada, 2013.
 
 
@@ -874,7 +875,7 @@ published August 17, 2020. \\
       \end{enumerate}
       
 
-\item \label{question:population_control} What are some ways population \emph{could} be controlled?
+\item \label{question:population_control} What are some ways population could be controlled?
       Figure~\ref{fig:World3loops} suggests some ideas.
       Or, perhaps what Malthus called ``miseries:'' war, famine, and/or epidemics will
       control population.
@@ -908,9 +909,9 @@ published August 17, 2020. \\
       Falling birth rates are correlated with economic development, urbanization,
       increased education, decline in the value of child labor, and access to
       contraception.
-      (Note that birth rates fell in western Europe in the late 1800s \emph{before}
+      (Note that birth rates fell in western Europe in the late 1800s before
       widespread use of contraception.)
-      What are some \emph{morally acceptable} ways to \emph{cause} birth rates to decline?
+      What are some morally acceptable ways to cause birth rates to decline?
 
 \item \emph{The Fable of the Dragon-Tyrant} is about the idea that medical research can,
       and should, be used to greatly extend human life (``health-span'')~\cite{Bostrom2005}.
@@ -920,7 +921,7 @@ published August 17, 2020. \\
       What about the medical research necessary to do so?
       (Note that paper's first suggestion is essentially a life-long hunger diet,
       although it is hoped that technology can be invented to keep humans from
-      \emph{feeling} hungry on such a diet.)
+      feeling hungry on such a diet.)
       In the fable, a ``king'' ultimately makes the decision about whether a
       concerted effort will be made (or not) to end the dragon (that is, old age).
       Who, in the real world, plays the role of the king?

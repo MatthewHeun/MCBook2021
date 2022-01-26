@@ -51,24 +51,24 @@ Exceeding Earth's carrying capacity degrades its ability to support life.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The Earth's ecosystems support life on Earth. Collectively, these supports are 
-called \emph{ecosystem services}.
-The first group of services are \emph{provisioning services},\index{services!provisioning}
+called ecosystem services.
+The first group of services are provisioning services,\index{services!provisioning}
 which are material 
 and energy resources.
 For example, humans plant crops (food, textile, and timber) that ``grow,''
 they're not manufactured. 
 The ecosystem ``provides'' the crops. 
 Likewise, the ecosystem provides water, petroleum, and other mineral resources.
-Simply having oceans and an atmosphere \emph{provides} a place for pollution to go.
+Simply having oceans and an atmosphere provides a place for pollution to go.
 
-The second set of services is \emph{regulating and supporting services},\index{services!regulating and supporting} 
+The second set of services is regulating and supporting services,\index{services!regulating and supporting} 
 which sustain and stabilize the ecosystem.
 These services include processes for breaking down and 
 recycling dead organisms; 
 the carbon, nitrogen, oxygen, and water cycles; 
 and the fact that plant roots stabilize soil and prevent erosion.
 
-The third set of services is \emph{cultural services},\index{services!cultural}
+The third set of services is cultural services,\index{services!cultural}
 which include recreation and literary and cultural inspiration.
 Artists can't paint or take photographs of a landscape that isn't there.
 Mountains and snow enable downhill skiing. 
@@ -84,7 +84,7 @@ The MA found that (even back then) 15 out of the 24 ecosystem services
 they examined were being degraded or used unsustainably~\cite{MA2005}.
 %Most heavily affected are inland waters by decline in water quality and fragmentation of wetlands.
 
-Ecosystem services can be considered as \emph{natural capital}. 
+Ecosystem services can be considered as natural capital. 
 ``Capital'' refers to an improvement or building that is economically productive 
 or valuable; see Chapter~\ref{chap:affluence}.
 The ecosystem produces value for human society by creating many things we use 
@@ -148,7 +148,7 @@ If a boat is tipped a small amount, the weight of the boat and the effect of
 buoyancy act to right the boat; see Figure~\ref{fig:buoyancy}. 
 However, there is an angle where, if the boat is tipped past that point,
 the forces will act in the opposite way---to suddenly and catastrophically flip the boat.
-A \emph{tipping point} is where the behavior of a system fundamentally changes. 
+A tipping point is where the behavior of a system fundamentally changes. 
 There is concern that Earth's ecosystem services may have reached or are near a tipping
 point, that is, they have been disturbed to the point of being on the edge of 
 catastrophic collapse.
@@ -265,14 +265,14 @@ truly global scale (if one were to occur).
 Equation~\ref{eq:IPARX} frames sustainability in terms of environmental ``impacts,''
 that is, negative effects on the environment resulting from human activity. 
 Broadly, there are two approaches for managing or responding to those impacts. 
-\emph{Planetary boundaries} describe the maximum (desirable) \emph{level} of effects,
+Planetary boundaries describe the maximum (desirable) level of effects,
 that is, they establish a limit on the left-hand side of Equation~\ref{eq:IPARX}.
-The second method uses a weighted average, called an \emph{index}, of factors as 
+The second method uses a weighted average, called an \textbf{index}, of factors as 
 a tool for managing those impacts.
 Indices describe a collection of behaviors with a single number. 
 Whereas the planetary boundaries are limits for single variables, indices are a mix
 of variables from both sides of Equation~\ref{eq:IPARX}.
-Neither method describes \emph{how} changes to become more sustainable should be made, 
+Neither method describes how changes to become more sustainable should be made, 
 but indices implicitly describe the tradeoffs among different impacts. 
 
 
@@ -402,7 +402,7 @@ over decades with better engine and component technology;
 every 5000--7000 miles might be the manufacturer's recommendation. 
 Newer cars might calculate their own replacement timing based on environmental
 conditions and driving history (essentially using an index, see below). 
-However, \emph{no one} would recommend a 100,000 mile replacement schedule. 
+However, no one would recommend a 100,000 mile replacement schedule. 
 If the oil is not replaced, significant damage will be done to the engine, 
 rendering the car inoperative.
 In this analogy, the car's engine represents planet Earth. 
@@ -536,18 +536,18 @@ by definition, exceed 100\%.
 In Figure~\ref{fig:GA3}, exceeding the boundary is possible, for short times, but the boundary 
 is robust. 
 That is, it recovers. 
-Renewable resources like grazing land, fisheries, timber, and aquifers \emph{can}
+Renewable resources like grazing land, fisheries, timber, and aquifers can
 behave in this way. 
 Lastly, in Figure~\ref{fig:GA4}, exceeding the boundary causes a long-term reduction in the 
 capacity of the ecosystem to provide ecosystem services. 
 As above, renewable resources like grazing land, fisheries, timber, and aquifers
-\emph{can} have this behavior, if their capacity is exceeded too much or for too long.
+can have this behavior, if their capacity is exceeded too much or for too long.
 As another example, complex systems, like temperature regulation of the planet, can exhibit
 tipping points that can radically change limits to an ecosystem service when the 
 limit is exceeded.
 Carbon dioxide in the atmosphere is thought/feared to be an example
 of this sort of behavior; when CO$_2$ increases too much, the Earth will get 
-\emph{dramatically} hotter, fundamentally altering many of its basic systems.
+dramatically hotter, fundamentally altering many of its basic systems.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -645,7 +645,7 @@ exceeding a planetary boundary.
 Because the carbon cycle is one of Earth's 
 regulating and support ecosystem services and
 because the atmosphere is comprehensively global, 
-the \emph{impacts} of climate on the environment are many.
+the impacts of climate on the environment are many.
 Climate change is the term used to describe the results of the greenhouse effect.
 Climate change is interacting with many other planetary systems and thus contributes
 to, for example, the extinction rate. 
@@ -667,8 +667,6 @@ fit_sentence <- function(.df) {
   paste0("The red line shows an exponential curve fit to data after 1950 ", 
          "with exponential growth rate of ", 
          b %>% sprintf(fmt = "%#.2f"), 
-         # The next line italicizes the R, which may not be what we want.
-         # "~\\%/year and \\emph{R}\\:\\!$^2$~=~", 
          "~\\%/year and R$^2$~=~", 
          r2 %>% sprintf(fmt = "%#.3f"), 
          ".")
@@ -724,12 +722,12 @@ Greenhouse gases, such as water vapor, which is an extremely potent greenhouse g
 and CO$_2$, do not absorb the short wavelengths of the Sun's radiation. 
 Radiation from the Earth is low energy (long wavelength) because the Earth's
 surface temperature is much lower than the Sun's.
-CO$_2$ and water vapor \emph{do} absorb energy at these longer wavelengths.
+CO$_2$ and water vapor absorb energy at these longer wavelengths.
 The lower atmosphere is thus opaque to thermal radiation from the Earth's surface.
 Much of the radiation leaving the Earth's surface is absorbed by greenhouse gases 
 and reradiated to upper levels of the atmosphere. 
 Eventually, in the upper atmosphere, the atmosphere gets thin enough that 
-heat \emph{can} radiate energy directly into space. 
+heat can radiate energy directly into space. 
 When CO$_2$ is added to the atmosphere, it traps radiation leaving the Earth
 at higher and higher levels of the atmosphere.
 The relatively small amounts of CO$_2$ in the atmosphere (measured in parts per million)
@@ -911,7 +909,7 @@ of the IPARX equation.
 
 \noindent 
 Bill Gates, 
-\emph{How to avoid a climate disaster: The solutions we have and the breakthroughs we need},
+\emph{How to avoid a climate disaster: The solutions we have and the breakthroughs we need}.
 New York: Random House, 
 2021. \\
 
@@ -1008,7 +1006,7 @@ New York: Bloomsbury,
 \item Recreation and literary and cultural inspiration are real ecosystem services
       and their financial value is quantifiable (for instance by a contingent valuation survey). 
       How much do you pay for a day at the beach? 
-      How much \emph{would} you pay for a day at the beach? 
+      How much would you pay for a day at the beach? 
       Is there a difference? 
       If Yosemite National Park (for example) were about to be destroyed by a meteor impact 
       but it could be saved (somehow) if enough money were raised, how much
@@ -1052,7 +1050,7 @@ New York: Bloomsbury,
       rights, namely the ``right to life'' and an ``undisturbed family life'' per 
       the European Convention on Human Rights.
       The court held Shell responsible for the carbon emissions of its suppliers 
-      and customers (known as \emph{scope 3 emissions}) and ordered Shell to 
+      and customers (known as \textbf{scope 3 emissions}) and ordered Shell to 
       reduce its carbon emissions 45\% by 2030 relative to Shell's 2019 emissions.
       What would be alternative methods of accomplishing the same result?
       (See also \ref{project:shell_lawsuit} about the merits of
@@ -1090,9 +1088,9 @@ New York: Bloomsbury,
  \item The human development index\index{Human Development Index}
       (HDI, Section~\ref{sec:indices}) is a measure of
       life expectancy, expected years of schooling, and gross national income per capita.
-      As such, it is a measure of \emph{development}. 
+      As such, it is a measure of development. 
       With reference to Equation~\ref{eq:IPARX}, can HDI continually increase sustainably? 
-      Is there a \emph{level} of HDI that is ``enough?''
+      Is there a level of HDI that is ``enough?''
 
 \item Figure~\ref{fig:FootprintHDIGraph} indicates a tradeoff between human well-being (HDI) 
       and the ecological impacts of humans. 
@@ -1115,7 +1113,7 @@ New York: Bloomsbury,
       warnings of impending disaster. 
       It affects about 70\% of people. 
       The brain processes new information through the filter
-      of what the brain \emph{expects} to happen, which is that things will 
+      of what the brain expects to happen, which is that things will 
       continue as they currently are.
       The opposite of normalcy bias is overreaction bias, which causes slight 
       deviations from normal or expected behavior to be seen as signs of 
@@ -1191,11 +1189,11 @@ New York: Bloomsbury,
       Why or why not?
       
 \item \label{project:shell_lawsuit}
-      What, if any, are the advantages and disadvantages of \emph{regulation through litigation}?
+      What, if any, are the advantages and disadvantages of regulation through litigation?
       (See \ref{question:shell_lawsuit} above.) 
       
-\item Prepare a brief report on the difference(s) between the \emph{precautionary principle}
-      and the \emph{precautionary approach}, particularly as the terms were used 
+\item Prepare a brief report on the difference(s) between the precautionary principle
+      and the precautionary approach, particularly as the terms were used 
       in the UN's 1992 Rio Declaration on Environment and Development. 
       \label{project:percautionary_principle}
       
