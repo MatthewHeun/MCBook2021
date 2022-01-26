@@ -41,11 +41,11 @@ finish the development of our framework for sustainability.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The word ``wealth'' can refer to notions of happiness, prosperity, well being, and welfare,
-but mostly wealth refers to the \emph{amount} of goods, possessions, money,
+but mostly wealth refers to the amount of goods, possessions, money,
 property, or ``stuff'' owned by a person.
-In other words, wealth refers to a \emph{level} of material possessions or resources.
-In contrast, affluence~\Aparen{} is the \emph{rate} that the economy
-uses goods and services, that is, the amount of ``stuff'' purchased \emph{per year}.
+In other words, wealth refers to a level of material possessions or resources.
+In contrast, affluence~\Aparen{} is the rate that the economy
+uses goods and services, that is, the amount of ``stuff'' purchased per year.
 
 Economic activity may mean literal consumption, as with food,
 or it could mean using a service, such as education or getting a haircut.
@@ -57,8 +57,8 @@ The energy consumption is only a means to that end.
 Transportation (the purpose) is an example of an ``energy service.''
 
 Average affluence~\Aparen{} for a country or the world
-is \emph{measured} by gross domestic product (GDP) per capita.
-There are valid critiques as to why per capita GDP is not the \emph{best possible}
+is measured by gross domestic product (GDP) per capita.
+There are valid critiques as to why per capita GDP is not the best possible
 measure of affluence.
 For instance, GDP does not count (or under counts) the value
 of innovation in improving standards of living~\cite{Gordon2016}.
@@ -82,7 +82,7 @@ aggregated internationally.)
 % put in the streetlight effect, McNamara's fallacy, and/or Goodhart's law?
 
 Consistent and easily accessible GDP data allow observations of
-trends through time, which are usually \emph{qualitatively} 
+trends through time, which are usually qualitatively
 consistent with trends that would be observed using other indices.
 In any case, a different measure of affluence~\Aparen{}, would require a corresponding
 adjustment to (the measure of) resource intensity of economic activity~\Rparen{}.
@@ -280,7 +280,7 @@ Note that the purpose of many national and international economic policies is to
 continually increase affluence and/or GDP.
 Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
 that these policies have been effective.
-Both world GDP \emph{and} affluence \Aparen{} have been growing exponentially 
+Both world GDP and affluence \Aparen{} have been growing exponentially 
 since 1950 at rates of 
 \Sexpr{gdp_growth_rate}~\%/year and 
 \Sexpr{affluence_growth_rate}~\%/year, 
@@ -329,7 +329,7 @@ example spending on infrastructure improvements such as roads or dams.
 \paragraph{Investment}
 %..............................
 
-Investment~(\mft{i}\;\!) is \emph{not} money put into a bank account.
+Investment~(\mft{i}\;\!) is not money put into a bank account.
 Investment is goods that are purchased now for use in the future
 by individuals or firms (not governments).
 There are three subcategories of investment: 
@@ -345,7 +345,7 @@ be negative (inventory is falling) or positive (inventory is increasing).
 \paragraph{Net exports}
 %..............................
 
-Net exports~(\mft{nx}) are the \emph{net} difference between the value of exports and the value of imports.
+Net exports~(\mft{nx}) are the difference between the value of exports and the value of imports.
 Thus, \mft{nx} could negative for a country that imports more than it exports.
 World GDP is the sum of all national GDPs.
 Therefore, for world GDP, $\mft{nx}~=~\text{0}$.
@@ -400,7 +400,7 @@ Thus, we say the economy is society's metabolism.
 \end{mcframe}
 
 One way of looking at Equation~\ref{eq:IPARX} is that impacts~\Iparen{}
-are the \emph{result} of economic activity.
+are the result of economic activity.
 That is, environmental impacts are the result of society's metabolism.
 Total consumption (that is, world GDP) is $\mft{P}\times\mft{A}$ in Equation~\ref{eq:IPARX}.
 Resources (the numerator of \mft{R}) are the food the economy needs to live and grow.
@@ -462,9 +462,9 @@ Of course, impacts can be calculated by $\mft{P} \times \mft{A} \times \mft{R} \
 Growth in GDP per capita~\Aparen{} is the explicit goal of many economic policies.
 There are two ways the economy can increase GDP, 
 either
-(a)~by consuming \emph{more} inputs 
+(a)~by consuming more inputs 
 or
-(b)~by using existing inputs more \emph{efficaciously}%
+(b)~by using existing inputs more efficaciously%
 \footnote{
   We use the word ``efficaciously'' deliberately here, 
   because we mean more economic output per economic input,
@@ -508,7 +508,7 @@ of workers, technology, the number of workers in the population, the number of h
 work, and the fraction of the population that is working;
 see Section~\ref{sec:dtt}.
 More workers can increase economic output (GDP), as mentioned above,
-but will not increase GDP \emph{per person}, affluence.
+but will not increase GDP per person, affluence.
 On the other hand,
 affluence will tend to increase if 
 a greater fraction of the population is working 
@@ -521,16 +521,16 @@ if workers are working longer hours
 \paragraph{Capital} 
 %..............................
 
-Capital is buildings, equipment, machines, and tools---\emph{things}
+Capital is buildings, equipment, machines, and tools---things
 that make workers more productive.
 For instance, a builder with a backhoe can excavate a foundation faster than a
 builder with only a shovel.
-More capital investment \emph{sometimes} means greater economic output.
+More capital investment sometimes means greater economic output.
 Because capital depreciates over time, continual investment 
 (part of \mft{i} in Equation~\ref{eq:GDP})
 is needed to maintain capital stocks. 
 Higher levels of capital require larger yearly investments to maintain.
-At some point, there is a \emph{maximum} level of capital productivity.
+At some point, there is a maximum level of capital productivity.
 Beyond that maximum,
 expenses to maintain capital exceed the contribution of capital to the economy. 
 At the maximum level of capital productivity,
@@ -543,7 +543,7 @@ labor will have a maximum level of output because workers are fully ``tooled up.
 
 Innovation is the major source of economic growth.
 There are two types of innovation:
-(a)~the invention of new \emph{kinds} of goods and services
+(a)~the invention of new kinds of goods and services
 and
 (b)~ improvements to economic productivity.
 The majority of the goods and services we consume today did not exist in
@@ -554,14 +554,14 @@ Much of the improvement in our standard of living comes from these new types of
 goods and services.
 
 However, examined closely, almost all of these ``new goods'' stories
-\emph{also} end up being about some form of productivity.
+also end up being about some form of productivity.
 The endless quest to meet our needs more productively
-allows spending on \emph{additional} consumption.
+allows spending on additional consumption.
 Productivity improvements (and resource intensity declines)
 allow us to get more GDP for the same level of resource consumption.
 As we will see in Chapter~\ref{chap:resource_intensity}, particularly in
 Figures~\ref{fig:per_capita_material_use} and~\ref{fig:EnergyPerPersonGraph},
-economic growth correlates with \emph{additional} consumption of resources.
+economic growth correlates with additional consumption of resources.
 The greater use of resources is caused by growth in affluence~\Aparen{},
 driven, in part, by improvements in material (Figure~\ref{fig:per_gdp_material_use})
 and energy (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) productivity
@@ -589,7 +589,7 @@ However, recessions are unwelcome for many very good reasons.
 No country has yet intentionally tried to shrink its economy.
 
 Moreover, the environmental effects of recessions are not always positive,
-that is, sometimes reducing \mft{A} \emph{increases} (at least some parts of) \mft{I}.
+that is, sometimes reducing \mft{A} increases (at least some parts of) \mft{I}.
 For instance, a company going out of business might cause
 environmental contamination, because
 there no longer exists a responsible steward for
@@ -602,7 +602,7 @@ What if there were ways to reduce the size of the economy that did not
 generate the negative effects of a recession?
 The next section examines some ideas that have been proposed as alternatives
 to continued economic growth.
-(Note that we \emph{examine} these ideas without necessarily \emph{endorsing} them.)
+(Note that we examine these ideas without necessarily endorsing them.)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -651,7 +651,7 @@ unacceptable inequalities within our economic system.
 Further, a steady-state economy is not necessarily sustainable.
 The sustainability of an economy is not determined by its growth rate
 (usually measured in \%/year).
-Rather, the sustainability of an economy is determined by its \emph{level} or \emph{size}
+Rather, the sustainability of an economy is determined by its level or size
 (usually measured in \$/year) relative to planetary boundaries.
 If the steady-state level of the economy
 is above a sustainable threshold
@@ -662,14 +662,14 @@ growing (positive \%/year),
 shrinking (negative \%/year), or
 steady state (0~\%/year).
 Indeed, Figure~\ref{fig:FootprintHDIGraph} suggests that
-many economies are \emph{already} too large to be considered sustainable.
+many economies are already too large to be considered sustainable.
 
 Figure~\ref{fig:FootprintHDIGraph} further highlights the fact that 
-many economies are \emph{both} already too large \emph{and} still growing.
-For those economies, a transition to steady state can be a \emph{first step} 
+many economies are both already too large and still growing.
+For those economies, a transition to steady state can be a first step
 toward becoming sustainable.
 A transition to steady state means that 
-those economies will not grow to become \emph{even more} unsustainable each year. 
+those economies will not grow to become even more unsustainable each year. 
 
 %..............................
 \paragraph{Degrowth} \index{economy!degrowth}\index{degrowth}
@@ -690,7 +690,7 @@ Degrowth implies a reduction in the standard of living
 Although Figure~\ref{fig:FootprintHDIGraph} implies a lower standard of living
 is necessary for sustainability, accepting a drastically lower standard of 
 living is extremely unpalatable for most people.
-Furthermore, there are costs and difficulties associated with \emph{transitioning}\index{transition!economic}
+Furthermore, there are costs and difficulties associated with transitioning\index{transition!economic}
 from one type of economy to another. 
 The costs are real and, to date,
 there has been no political will or action to make 
@@ -706,7 +706,7 @@ lower environmental impacts.
 %..............................
 
 Another alternative to today's growth economies
-is a \emph{circular} economy, which 
+is a circular economy, which 
 (a)~consumes only recycled (and, perhaps, renewable) materials and energy
 and 
 (b)~emits no waste. 
@@ -765,7 +765,7 @@ Relatedly, who sets the ``floor'' and the time period for transition?
 Third, the doughnut model implicitly sets up a ``people-versus-planet'' dichotomy
 and then attempts to maximize the ``people'' side 
 (to the extent permitted by the ``planet'' side).
-Might it be possible to have flourishing society \emph{and} a flourishing planet?
+Might it be possible to have flourishing society and a flourishing planet?
 
 
 
@@ -803,7 +803,7 @@ helpful ways of thinking about affluence from a sustainability perspective.
 Human wants are seemingly limitless. 
 Regardless of how much we have, we always want more. 
 Note that we aren't necessarily happier when the desire for more is fulfilled. 
-Conversely, although happiness \emph{can} be found in the midst of financial hardship or poverty, 
+Conversely, although happiness can be found in the midst of financial hardship or poverty, 
 most people don't wish to go through financial trouble to achieve happiness.
 Any reduction in affluence
 runs counter to what people want (or say they want).
@@ -818,9 +818,9 @@ no one wants it for themselves.
 (The abstract desire to have lower impacts is not the same as wanting to be poor.)
 Lower levels of affluence are associated with lower HDI, as 
 Figure~\ref{fig:FootprintHDIGraph} shows, because income is a factor in HDI.
-Globally, social sustainability is often predicated on \emph{increasing} affluence.
+Globally, social sustainability is often predicated on increasing affluence.
 
-Some people \emph{have} chosen (relative) poverty by trying to escape the economic
+Some people have chosen (relative) poverty by trying to escape the economic
 system; see \ref{project:off-grid} for a few examples.
 Often, for these people, independence or being ``off grid'' is the main attraction.
 However, even in the most extreme cases, it has proven impossible to completely sever an 
@@ -837,7 +837,7 @@ the sustainability implications of economic activity.
 This chapter defined affluence~\Aparen{} in the IPARX equation and looked at 
 historical data of \mft{A} over time. 
 Affluence is a challenging topic.
-On one hand, growth in affluence can be viewed as the source (or \emph{a} major source)
+On one hand, growth in affluence can be viewed as the source (or a major source)
 of our many environmental sustainability challenges.
 The discussion questions below further explore the thorny relationship  
 between affluence~\Aparen{} and environmental impacts~\Iparen{}.
@@ -855,7 +855,7 @@ Chapter~\ref{chap:population} showed that population has been rising and will
 likely continue to do so in the near term.
 The next two chapters examine sustainability related to \mft{R} and \mft{X}.
 Perhaps, as we hope, there is a way to enjoy a high standard of living~\Aparen{}
-\emph{and} be sustainable.
+and be sustainable.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -938,7 +938,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       such as natural capital, to GDP. 
       (See, for example, the UN System of Environmental-Economic Accounting, 
       \url{https://seea.un.org}.)
-      Consider extensions to GDP that would add \emph{social capital} to GDP. 
+      Consider extensions to GDP that would add social capital to GDP. 
       What such variables would you consider?
       
 \item Why do we have (global/local) poverty beside (global/local) affluence?
@@ -972,7 +972,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
 \item One strategy to make electricity grids more efficient is to employ load shedding.
       A typical example is where, in exchange for a lower electric rate, your 
       power provider can switch off some of your larger loads, typically your 
-      air-conditioning unit. How much of a discount would it take for \emph{you}
+      air-conditioning unit. How much of a discount would it take for you
       to give up (some) control (that is, choice) of your electricity consumption?
       What does this tell you about your consumer preferences?
       
@@ -1035,13 +1035,13 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       
 \item Sometimes you'll hear (well meaning) people blame corporations for wanting
       to ``maximize profit.'' One way of evaluating this point of view is to realize that 
-      \emph{not} maximizing profit when you have the opportunity to do so is 
+      not maximizing profit when you have the opportunity to do so is 
       wasteful. All of us should be as efficient as possible. 
       To what extent should we be as efficient as possible? In what ways? 
       Are some areas or domains ``off-limits'' to efficiency maximizing and what are they? Why?
       (Other approaches to this question are presented in Chapter \ref{chap:government}.)
       
-\item IPCC6's \emph{most optimistic} scenario~\cite{IPCC:2018aa} is a 0.5~m 
+\item IPCC6's most optimistic scenario~\cite{IPCC:2018aa} is a 0.5~m 
       sea-level rise by 2100.
       Coastal cities and beach-front properties will be most affected and, in 
       many cases, most able to pay for mitigation. 
@@ -1095,7 +1095,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       hampered by lack of resources or infrastructure. International aid attempts
       to provide assistance to developing economies to do development ``right.''
       Many times projects are unsuccessful. Local corruption might waste funds.
-      \emph{Or} international aid agencies might attempt to maintain control but,
+      Or international aid agencies might attempt to maintain control but,
       because they lack knowledge of the local context, they end up being ineffective. 
       Research examples of successful development projects.
       What are some management strategies that work for international and cross-cultural
