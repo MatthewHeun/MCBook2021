@@ -19,7 +19,7 @@ square, four grains on the third square, and so on, with each subsequent square 
 double what was on the previous square.
 The king accepted the wager but lost the game.
 % according to chess.com a match is a series of games.
-A chessboard has eight rows and eight columns, so the king had to pay $2^{64}-1 \;$
+A chessboard has eight rows and eight columns, so the king had to pay 2$^\text{64}-$1
 grains.
 (See Section \ref{sec:exp} for an explanation of the math behind this formula.)
 Rice is seven thousand grains per pound ($\sim$~65~mg each),
@@ -335,7 +335,7 @@ that includes such things as global warming potential, aquifer depletion, and
 eutrophication potential.
 Population~\Pparen{} is the number of people in the world.
 Affluence~\Aparen{} is GDP per capita per year.
-Resource intensity~\Rparen{} is the list (vector) of all the resources necessary to
+Resource intensity of economic activity~\Rparen{} is the list (vector) of all the resources necessary to
 produce one unit of world GDP.
 Lastly, impact of resources~\Xparen{} is a list of the impacts of
 each type of resource. (That is, \mft{X} is a matrix quantity.)
