@@ -337,7 +337,7 @@ food_energy <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "dat
   )
 
 # Calculate the EROI of the food system for later use.
-food_eroi_numerator <- food_energy %>% 
+food_eroi_consumed <- food_energy %>% 
   dplyr::filter(Category == "Consumed") %>% 
   dplyr::select(value) %>% 
   as.double()
@@ -345,8 +345,7 @@ food_eroi_denominator <- food_energy %>%
   dplyr::filter(type == "Input energy") %>% 
   dplyr::select(value) %>% 
   sum()
-food_eroi <- food_eroi_numerator / food_eroi_denominator
-food_eroi_scaled_input = food_eroi_denominator / food_eroi_numerator
+food_eroi <- food_eroi_consumed / food_eroi_denominator
 
 food_eroi_gross_output <- food_energy %>%
   dplyr::filter(type == "Food energy available") %>%
@@ -357,6 +356,9 @@ food_eroi_waste <- food_energy %>%
   dplyr::select(value) %>% 
   as.double()
 food_eroi_waste_fraction = food_eroi_waste / food_eroi_gross_output
+food_eroi_gross = food_eroi_gross_output / food_eroi_denominator
+food_eroi_scaled_input = food_eroi_denominator / food_eroi_gross_output
+food_eroi_scaled_input_net = food_eroi_denominator / food_eroi_consumed
 
 # Make the graph
 food_energy %>%
@@ -379,21 +381,28 @@ Because food is energy, the overall energy efficiency of the food-delivery
 system can be calculated.
 Figure~\ref{fig:food_and_ag_energy_flow} shows the energy consumed and supplied
 by various aspects of the food-delivery system in the U.S.
-Every calorie of food energy consumed requires 
-\Sexpr{sprintf(food_eroi_scaled_input, fmt = "%#.2f")} calories of energy to produce
-(\Sexpr{sprintf(food_eroi_numerator, fmt = "%#.2f")} quads consumed, 
-\Sexpr{sprintf(food_eroi_denominator, fmt = "%#.2f")} quads input).
-In other words, the EROI of the food-delivery system is 
-\Sexpr{format(food_eroi * 100, digits = 2)}\%.
-Part of the reason the EROI is so low is that a significant fraction 
+The EROI of food produced is 
+\Sexpr{sprintf(food_eroi_gross * 100, fmt = "%#.1f")}\%
+(\Sexpr{sprintf(food_eroi_gross_output, fmt = "%#.2f")} quads of food energy
+produced per
+\Sexpr{sprintf(food_eroi_denominator, fmt = "%#.2f")} quads of energy input).
+In other words, it takes
+\Sexpr{sprintf(food_eroi_scaled_input, fmt = "%#.2f")} calories of energy input
+to produce one calorie of food energy.
+However, because of significant food waste, the food-energy situation is much worse.
+A significant fraction
 (\Sexpr{sprintf(food_eroi_waste_fraction * 100, fmt = "%#.1f")}\%)
 of food that is produced is wasted
 (\Sexpr{sprintf(food_eroi_waste, fmt = "%#.2f")} quads wasted out of
 \Sexpr{sprintf(food_eroi_gross_output, fmt = "%#.2f")} quads produced).
-The fact that the EROI energy efficiency of the food-delivery system is less than 1
+Taking this waste into account, the true EROI is
+\Sexpr{sprintf(food_eroi * 100, fmt = "%#.1f")}\%
+(\Sexpr{sprintf(food_eroi_consumed, fmt = "%#.2f")} quads consumed, 
+\Sexpr{sprintf(food_eroi_denominator, fmt = "%#.2f")} quads input).
+The fact that the EROI of the food-delivery system is less than 1
 means that the food-delivery system is not a source of energy for society.
 Rather, it is a sink of energy for society.
-Thus, today's food system is unsustainable from an energy point of view.
+%Thus, today's food system is unsustainable from an energy point of view.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -402,7 +411,7 @@ Animals that spend more energy to obtain food than they gain from eating food
 ultimately die from lack of energy.
 Agrarian societies that spend more energy to obtain food 
 than they gain from eating food ultimately cease to exist.
-Without the fossil fuels, the modern food system would collapse
+Without fossil fuels, the modern food system would collapse
 and modern society with it.
 \end{mcframe}
 
@@ -604,6 +613,8 @@ eliminate GHG emissions from agriculture?''
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The section describes ways in which agriculture should become more sustainable.
+The focus of this section is on what changes are needed for sustainability. 
+
 Environmental impacts from agricultural activity could be eliminated if 
 agriculture itself were eliminated. 
 However, this would result in undesirable effects on human population; see the epigraph
