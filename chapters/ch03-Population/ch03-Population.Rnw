@@ -21,7 +21,7 @@ Equation \ref{eq:IPARX} (repeated below for convenience)
 expresses human impact on the Earth as the product
 of population~\Pparen{}, 
 affluence~\Aparen{}, resource intensity of the economy~\Rparen{}, and
-the impact intensity of resources~\Xparen{}. 
+the impact of resources~\Xparen{}. 
 Chapter~\ref{chap:planetary_boundaries} discussed how the Earth's ecosystems 
 provide for human needs and how human activities can degrade,
 even catastrophically destroy, the ability of the Earth to support life. 
@@ -60,7 +60,7 @@ Interactions among
 population~\Pparen{}, 
 affluence~\Aparen{}, and
 resource~\Rparen{} scarcity
-is discussed in Section~\ref{sec:malthus_ehrlich_simon}.
+are discussed in Section~\ref{sec:malthus_ehrlich_simon}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -947,7 +947,7 @@ published August 17, 2020. \\
 \item It is interesting to note that Malthus's book was published (1798) just before before
       Figure~\ref{fig:PopulationGraph} begins (that is, 1800 AD).
       On the one hand, exponential growth always looks dramatic;
-      Figure~\ref{fig:exp} shows exponential growth for any time $t$.
+      Figure~\ref{fig:exp} shows exponential growth for any time \mft{t}.
       On the other hand, Malthus had not yet experienced the very dramatic rise
       in world population that occurred post-1800.
       How would Malthus's viewpoint have been different if he were writing in the
@@ -985,7 +985,7 @@ published August 17, 2020. \\
       conditions are necessary to get alignment? Do you think this
       is reasonable?
 
-\item Make a population pyramid for city, state, county, or school.
+\item Make a population pyramid for your city, state, county, or school.
       Do you notice anything interesting?
 
 \item Research China's ``one-child policy.''
