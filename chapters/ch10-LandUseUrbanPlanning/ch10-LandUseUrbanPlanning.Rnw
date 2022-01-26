@@ -14,7 +14,7 @@ It's found in its budget.}{Brent Toderian}
 The previous three chapters described sustainability challenges related to 
 households, transportation, and food.
 A common element in all these sustainability challenges is how we use land.
-We need \emph{places} for homes, to grow food, and for transportation systems. 
+We need places for homes, to grow food, and for transportation systems. 
 Moreover, where we choose to put each of these elements influences 
 the overall need for transportation in human society.
 For example, dwellings and businesses that are spread out across a large area will
@@ -32,7 +32,7 @@ this chapter considers dwellings and businesses collectively.
 We consider the sustainability implications of spacing, density, and how 
 transportation links between locations are affected by layout.
 
-The second aspect is allocation, that is, \emph{how much} of each of the 
+The second aspect is allocation, that is, how much of each of the 
 different uses for land we have.
 Land can be used for agriculture, recreation, urban or suburban dwellings, or 
 not allocated for direct human use, that is, left as wilderness.
@@ -137,7 +137,7 @@ The U.S. is relatively sparsely populated.
 %-----------------------------
 
 As mentioned in Chapter~\ref{chap:agriculture}, population drives agriculture,
-and agriculture is \emph{the} most prevalent way we use land.
+and agriculture is the most prevalent way we use land.
 As world population has grown, the additional humans have been fed (in part) by
 converting more land to agriculture over time.
 
@@ -172,12 +172,12 @@ excretes wastes.
 %-----------------------------
 
 Land is the primary source of energy, be it fossil fuel, biomass, or renewable. 
-Wells or mines for fossil fuels are located in a \emph{place}.
-Biomass has to be grown or harvested from a \emph{place} as well.
+Wells or mines for fossil fuels are located in a place.
+Biomass has to be grown or harvested from a place as well.
 For example, about 30\% of the U.S. corn (maize) crop is converted into ethanol
 to be blended with gasoline as a transportation fuel.
 Renewables, such as hydro, solar photovoltaic, and wind power, are also located in
-\emph{places}.
+places.
 In particular, for hydro, solar, and wind, correct siting is a key consideration
 for how productive each power type will be.
 Not all locations are suitable for hydro power. Or wind. Or solar.
@@ -198,7 +198,7 @@ They need places to live, food to eat, and income to purchases these and other g
 They can move to urban areas to try to get work or they can try to extract (pun intended)
 a living by farming or mining.
 Unfortunately, the best lands have already been taken; what is available to the 
-\emph{next} farmer or miner is typically of marginally \emph{lower} productivity.
+next farmer or miner is typically of marginally lower productivity.
 
 
 %-----------------------------
@@ -210,7 +210,7 @@ this section examines the capacity of the land to absorb and store carbon.
 
 Land is a major carbon sink. 
 Forests store a lot of carbon and reforestation is likely necessary for meeting
-climate change limits, which makes continued \emph{deforestation} particularly 
+climate change limits, which makes continued deforestation particularly 
 alarming.
 Land use affects, and is affected by, climate change. 
 For instance, hotter, drier weather results in more frequent and severe wildfires.
@@ -270,7 +270,7 @@ The purple bars indicate carbon stored in the soil below the surface.
 Tropical and boreal forests, and grasslands 
 are all promising candidates for carbon sequestration.
 Although the capacity of wetlands to store carbon is large,
-unfortunately, the \emph{amount} of wetlands is small. 
+unfortunately, the amount of wetlands is small. 
 In contrast, the opportunities for forest and grasslands are quite extensive.
 Projects 10.1 and 10.2 explore technical aspects of forest and grassland 
 restoration/carbon sequestration.
@@ -291,7 +291,7 @@ Humanity's use of the land has changed over time.
 Tracking those changes is important for understanding relationships between
 land use and sustainability challenges (for example, climate change).
 The data for surveys such as Figure~\ref{fig:USlanduse} are produced from satellite imagery.
-The European Space Agency recently released a dataset for \emph{global} land use over
+The European Space Agency recently released a dataset for global land use over
 a 24-year period (1992-2015) as part of a climate change initiative (CCI).
 The Inter-governmental Panel on Climate Change (IPCC) uses 9 categories for land-use
 classification: 
@@ -332,17 +332,17 @@ and energy resources?
 
 The source of land for urban growth is principally agricultural land that is near 
 urban areas.
-However, to feed a growing population, \emph{net} agricultural land has had to 
+However, to feed a growing population, net agricultural land has had to 
 increase. 
 The increase comes, primarily, from forests being converted to agriculture.
 Simultaneously, there is also some (formerly) agricultural land being
 reforested.
-The net gain for agricultural land means that \emph{more} forests are cleared
+The net gain for agricultural land means that more forests are cleared
 than the amount of agricultural land that is being reforested.
 
 The conversion of forest to agricultural land to urban environments has several 
 sustainability implications.
-First, there is a net loss of \emph{high-quality} agricultural land.
+First, there is a net loss of high-quality agricultural land.
 As existing farms near cities become urban areas, agricultural activities are pushed 
 out to more marginal land.
 Second, the net effect is deforestation, which results in greenhouse gas emissions.
@@ -408,7 +408,7 @@ to the restaurant.
 Access becomes both an economic enabler and an economic multiplier.
 
 % maintaining infrastructure.
-Perhaps ironically, the transportation itself is \emph{not} something people want 
+Perhaps ironically, the transportation itself is not something people want 
 to visit. 
 No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
 afternoon.''
@@ -508,7 +508,7 @@ This chapter began by asking two important questions about land use:
 (b)~what is the best layout?
 One obvious answer to the first question is ``as much as we need,''
 The question of allocation therefore becomes a question of land use efficiency. 
-How can we adequately meet our needs \emph{as efficiently as possible}?
+How can we adequately meet our needs as efficiently as possible?
 To put it another way, how can we meet our food, housing, and resource needs
 while using as little land as possible?
 
@@ -556,7 +556,7 @@ Second, higher densities reduce the cost of infrastructure per area.
 
 For agricultural land uses, we could attempt to maximize
 calories per acre, pounds of food per acre, number of people fed per acre, 
-\emph{or} the EROI of agriculture. 
+or the EROI of agriculture. 
 Ultimately, agriculture has to feed people, so both minimizing the amount of land
 needed and maximizing the EROI will be help humanity to become more
 sustainable.
@@ -566,7 +566,7 @@ be removed from the atmosphere and stored somewhere.
 Figure~\ref{fig:CarbonStorage} indicates that agriculture can play an important
 role in sequestering carbon from the atmosphere, particularly in grasslands and
 croplands.
-Indeed, agriculture \emph{must} become a carbon sink, instead of a carbon source,
+Indeed, agriculture must become a carbon sink, instead of a carbon source,
 if we are to be sustainable.
 
 <<PowerDensity, fig.scap="Power densities of electricity generating technologies", fig.cap="Power densities of several electricity generating technologies. ``Nat. gas'' is natural gas. ``Geoth.'' is geothermal. \\emph{Source}: \\citet[Figure~2]{Zalk:2018uy}.">>=
@@ -613,9 +613,9 @@ If we are going to make an energy transition to renewable sources
 Figure~\ref{fig:PowerDensity} shows that we will need to devote a lot more land
 to energy production.
 Since the amount of land is fixed, either we have to combine energy generation
-with other activities \emph{or} we have to reduce the amount of land dedicated to, say,
+with other activities or we have to reduce the amount of land dedicated to, say,
 agriculture and forestry.
-Since \emph{more} forest and grassland is needed to store carbon, 
+Since more forest and grassland is needed to store carbon, 
 the latter does not seem like a viable option.
 
 There are two options for the former that are promising. 
@@ -639,7 +639,7 @@ One way to describe the tension between human use and preservation
 is sparing versus sharing~\cite{Fraanje2018}.
 Land ``sparing'' seeks to minimize the amount of agricultural land needed for humans
 but maximizing the productivity of that land, even if it means input-intensive farming
-that results in less biodiversity \emph{on the farm}. 
+that results in less biodiversity on the farm. 
 Other land is ``spared'' and set aside for conservation.
 Land ``sharing'' uses agricultural practices that are more eco-friendly to wildlife
 species on the farm, but, because yields aren't as high, requires more total farm land.
@@ -796,8 +796,8 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       urban, suburban, and rural living.
       
 \item In a land sparing-versus-sharing dichotomy, what are some things a city 
-      could do, with respect to food, specifically, to \emph{spare} more land?
-      What are some things it could do (with respect to food) to \emph{share}?
+      could do, with respect to food, specifically, to spare more land?
+      What are some things it could do (with respect to food) to share?
       
 \item Some species (generalists) do well with land sharing. Generalists include
       red-tailed hawks, pigeon, deer, racoons, and squirrels.
@@ -819,18 +819,18 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       The classification of the Eastern cougar as a separate subspecies is based
       on a 1946 taxonomy that recognizes 15 distinct subspecies of cougar in 
       North America.
-      However, modern genetic testing indicates that \emph{all} North American cougars
+      However, modern genetic testing indicates that all North American cougars
       are a single species.
-      Ironically, the 1982 U.S.\ Fish and Wildlife Service \emph{Eastern cougar
-      recovery plan} is ``subject to modification as dictated by new findings and 
+      Ironically, the 1982 U.S.\ Fish and Wildlife Service Eastern cougar
+      recovery plan is ``subject to modification as dictated by new findings and 
       and changes in species status and completion of tasks described in the plan.
       Goals and objectives will be attained and funds expended contingent upon 
       appropriations, priorities, and other budgetary constraints.''
       Ironically, because the U.S.\ Fish and Wildlife Service has chosen not to
       revisit the 1948 classification.
-      All of this is to say that our decision not to \emph{share} land with the 
+      All of this is to say that our decision not to share land with the 
       cougar is a choice, but we could well make a different choice.
-      We have already, in effect, chosen not to \emph{spare} cougar habitat, given
+      We have already, in effect, chosen not to spare cougar habitat, given
       the animal's large range.
       
 \item What is a city's most important infrastructure and why?
@@ -858,7 +858,7 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
 
 \item No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
       afternoon.'' 
-      What are some elements of urban infrastructure that \emph{are} inherently interesting? 
+      What are some elements of urban infrastructure that are inherently interesting? 
       Are there any? What makes them special?
       
 \item In contrast to the previous question, it has been said that ``transportation 
