@@ -69,34 +69,38 @@ for productive purposes.
 
 
 %..............................
-\paragraph{Intensity vs.\ efficiency}
+\paragraph{Efficiency and efficacy}
 %..............................
 
 An efficiency is a ratio of output to input, 
 where both output and input have the same units.
-An intensity is like an efficiency, except the numerator and denominator have 
-different units.
 A furnace that burns a quantity of natural gas that releases 100 BTUs of heat might
 only deliver 96 of those BTUs to your house.
-Such a furnace has an efficiency of 96\% (BTUs delivered per BTUs input);
-see Section~\ref{sec:heating_and_cooling}
+Such a furnace has an efficiency of 96\% (BTUs delivered per BTUs input).
+(See Section~\ref{sec:heating_and_cooling}
 for more on furnace efficiency and a related metric,
-Annual Fuel Utilization Efficiency (AFUE).
+Annual Fuel Utilization Efficiency (AFUE).)
 A natural gas power plant might burn gas at a rate that releases 300 MW of heat to generate
 100 MW of electricity. 
 Such a power plant has an efficiency of 33.3\%.
 In both cases, the input and output have the same units of energy, BTUs for the furnace
 and MW for the power plant.
-In contrast, an intensity has different units
-for output and input, for numerator and denominator.
-A vehicle's fuel economy, measured in miles per gallon, is an intensity.
-Carbon emissions per ton of freight moved along one mile is an intensity.
+
+In contrast, 
+an efficacy is like an efficiency, except the output (in the numerator)
+and the input (in the denominator) have 
+different units.
+A vehicle's fuel economy, measured in miles per gallon, is an efficacy, 
+because the units in numerator (miles) are different from units in the denominator (gallons).
+Tonnes of freight moved per liter of fuel consumed is another efficacy. 
 
 
 %..............................
 \paragraph{Resource intensity of economic activity}
 %..............................
 
+An intensity is a ratio of inputs to outputs, 
+usually with different units in numerator and denominator. 
 The \mft{R} term in Equation \ref{eq:IPARX} is the resource intensity of economic activity.
 \mft{R} is defined as
 %
@@ -104,9 +108,9 @@ The \mft{R} term in Equation \ref{eq:IPARX} is the resource intensity of economi
   \mft{R} \equiv \frac{\text{resource extraction rate}}{\text{GDP}} \; .
 \end{equation}
 %
-\mft{R} measures the total resources used by the economy to create a
+\mft{R} measures the total resources (the input) used by the economy to create a
 total amount of economic output (measured by GDP).
-Because the numerator and denominator of \mft{R} have different units,
+Because \mft{R} is the ratio of input/output, 
 \mft{R} is an intensity.
 
 Figure~\ref{fig:total_material_use} shows use rates of some natural resources,
