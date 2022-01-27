@@ -41,10 +41,9 @@ the topic of this chapter.
 \end{equation}
 
 The impact of resources~\Xparen{}
-is a function of \mft{R} (resource extraction and consumption) discussed in 
-Chapter~\ref{chap:resource_intensity}, in that the 
-type and intensity of environmental impacts are directly related to 
-the types, quantities, and ways of processing resources. 
+is related to
+the types and quantities of resources consumed and the 
+ways of processing those resources. 
 %Environmental impact intensity is discussed in this chapter.
 Resources are the inputs to the economy 
 (``food'' in the metabolic analogy), and 
@@ -113,11 +112,14 @@ Because CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of}
 are a significant source of environmental impact
 from energy consumption,
 it follows that the prime example of 
-environmental impact intensity of resource extraction and consumption
+environmental impact of resources 
 (\;\!\mft{X} in Equation~\ref{eq:IPARX}) is CO$_2$ emissions
 in tonnes per MJ of energy provided.
-Specifically, the prime example for impact intensity~\Xparen{}
-is the CO$_2$ intensity of energy~($\mft{X}_{\text{CO}_2}$).
+Specifically, the prime example for impact of resources~\Xparen{}
+is the CO$_2$ intensity of energy~(\;\!$\mft{X}_{\text{CO}_2}$).
+$\mft{X}_{\text{CO}_2}$ is an intensity, because
+carbon (numerator) can be considered an input 
+to energy derived from fossil fuels (denominator).
 
 Figure~\ref{fig:LLNL_CO2_sankey} is a Sankey\index{Sankey diagram!CO$_2$ emissions} 
 diagram of sources of CO$_2$ emissions from the U.S.\ economy in 2018.
@@ -244,7 +246,7 @@ energy intensity of economic activity (\REp{}, the prime example for \mft{R}),
 or
 carbon intensity of primary energy (\;\!\XCOtwo{}, the prime example for \mft{X}\:)
 goes to zero,
-CO$_2$ emissions~() will be eliminated.
+CO$_2$ emissions will be eliminated.
 Few people want to reduce population~\Pparen{} or affluence~\Aparen{}.
 The primary energy intensity of the economy~\REpparen{} is declining
 (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}),
@@ -562,7 +564,7 @@ In most areas of the world,
 the potential for expanding the production of hydro electricity is limited.
 Most of the Americas, Europe, and Asia are already ``tapped out'' regarding hydropower.
 Today, the potential for hydro is greatest in central Africa.
-The proposed Grand Inga dam in the Democratic Republic of the Congo
+The proposed Grand Inga Dam in the Democratic Republic of the Congo
 would be the largest dam in the world and could house a 40--70 GW hydro power station.
 Moreover, there are considerable negative environmental and social impacts from 
 hydro projects, such as changes to soil salinity, silting, and the destruction
@@ -774,7 +776,7 @@ is the only term in the IPARX identity
 putting downward pressure on the CO$_2$ emissions growth rate (\rateICOtwo{}).
 All other terms on the right side of Equation~\ref{eq:IPARX_rate_with_numbers}
 are greater than zero and are driving CO$_2$ emissions upward.
-Interestingly, the impact intensity of energy (\rateXCOtwo{})
+Interestingly, the rate of change of the impact intensity of primary energy consumption (\rateXCOtwo{})
 is smaller (\Sexpr{rate_to_string(r_X_20)})
 in the past two decades than over the past two centuries
 (\Sexpr{rate_to_string(r_X_220)}), because 
@@ -790,7 +792,7 @@ is growing over time
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The positive terms in Equation~\ref{eq:IPARX_rate_with_numbers}
-represent sources of our sustainability challenges:
+represent sources of some of our sustainability challenges:
 rising population (\rateP{}~>~0), 
 rising affluence (\rateA{}~>~0), and 
 expanded use of fossil fuels (\rateXCOtwo{}~>~0).
@@ -1234,7 +1236,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         and President Reagan's ``Star Wars'' program~\cite{Heun:2008vu}.
         Find several updated estimates of the costs for these and other large 
         government programs.
-        Compare to estimates to effect a transition to a low-carbon energy regime.
+        Compare to cost estimates to effect a transition to a low-carbon energy regime.
         
   \item Calculate land required to convert all energy production to solar sources
         in the U.S. 
@@ -1242,7 +1244,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         Where would you locate the solar panels?
         What transmission issues would emerge?
   
-  \item What are the other resource implications of a WWS transition? 
+  \item What are the other resource implications of a transition to WWS energy sources? 
         For example, do we have enough neodymium (Nd)\index{neodymium (Nd)} for the wind turbines
         required to implement a WWS energy supply? 
         

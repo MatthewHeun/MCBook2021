@@ -99,7 +99,7 @@ Tonnes of freight moved per liter of fuel consumed is another efficacy.
 \paragraph{Resource intensity of economic activity}
 %..............................
 
-An intensity is a ratio of inputs to outputs, 
+An intensity\index{intensity} is a ratio of inputs to outputs, 
 usually with different units in numerator and denominator. 
 The \mft{R} term in Equation \ref{eq:IPARX} is the resource intensity of economic activity.
 \mft{R} is defined as
@@ -113,7 +113,7 @@ total amount of economic output (measured by GDP).
 Because \mft{R} is the ratio of input/output, 
 \mft{R} is an intensity.
 
-Figure~\ref{fig:total_material_use} shows use rates of some natural resources,
+Figure~\ref{fig:total_material_use} shows consumption rates of some natural resources,
 aggregated into important categories of 
 construction minerals, 
 ores and industrial minerals,
@@ -226,7 +226,7 @@ per energy input from other portions of the economy.
 Useful energy is created from final energy by devices owned by the final energy purchaser. 
 For example, car owners purchase gasoline (final energy) that flows into a car's engine (the device)
 and creates motion along a roadway (kinetic energy, the useful energy product).
-Or apartment dwellers purchase
+Apartment dwellers purchase
 electricity (final energy) that flows into 
 a mixer (the device)
 to create kinetic energy (useful energy) of ingredients in a recipe.
@@ -307,7 +307,7 @@ For example, the transition to a renewable energy future
 (Section~\ref{sec:low_carbon_transition})
 depends on a large number of critical materials, 
 outlined in a recent International Energy Agency report~\cite{IEA:2021wt}.
-The point isn't which materials are critical for any given economy or sector;
+The point isn't which materials are critical for any given economy or sector,
 it's that all sectors of all economies depend upon a large number of raw materials.
 
 <<CRMs, results="asis">>=
@@ -416,7 +416,7 @@ material_per_gdp %>%
 
 Figure~\ref{fig:total_material_use} 
 shows that resource consumption is growing through time.
-By the ``strong sustainability'' criterion,
+By the strong sustainability criterion,
 any extraction of
 construction minerals, ores and industrial minerals, and fossil energy carriers
 is unsustainable, because
@@ -598,7 +598,7 @@ provided that two conditions are met:
 (b)~an exogenous source, such as the sun, supplies energy freely and
     at sufficient rate for reprocessing of discarded material~\cite{Ayres:1999}.
 
-The importance of energy to recycling is evident,
+The importance of energy is evident,
 even in a debate about the viability of recycling!
 
 \end{mcframe}
@@ -655,7 +655,7 @@ Sometimes a scarce (and expensive), renewable resource is replaced by a
 less-expensive, nonrenewable alternative.
 Two examples illustrate.
 The first involves ocean-going vessels.
-In the sailing age, ships were made of timber, with teak and mahogany being
+In the age of sail, ships were made of timber, with teak and mahogany being
 favored ship-building woods.
 Today, cargo ships are made of steel, and pleasure craft are made almost exclusively
 of glass-fiber reinforced polymer composites, both of which are non-renewable materials.
@@ -847,7 +847,7 @@ energy_per_capita %>%
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-History can be seen in time series energy graphs.
+History can be seen in time-series energy graphs.
 In particular, 
 the effect of the 1970s oil crises can be seen in Figure~\ref{fig:EnergyPerPersonGraph}.
 Per-capita primary energy consumption rose substantially from 1800 to 1970
@@ -1104,7 +1104,7 @@ as the UK is doing now.
 Another way to slow down the inevitable march of time
 along logistic curves for finite resources is to transition
 economies to use fewer resources per unit of GDP produced,
-that is to reduce the resource intensity of economic activity~\Rparen{}.
+that is, to reduce the resource intensity of economic activity~\Rparen{}.
 Reduction of resource intensity of economic activity is sometimes called dematerialization.
 Reducing \mft{R} will reduce resource consumption but only if
 GDP stays constant or grows more slowly than the
@@ -1151,7 +1151,7 @@ so we are growing economies with unsustainable fossil fuel consumption
 while at the same time
 relying less on consumption of (potentially) sustainable biomass.
 
-The next chapter looks at the impact intensity 
+The next chapter looks at the impact 
 of resource extraction~\Xparen{}, 
 the final term in the IPARX equation~(Equation~\ref{eq:IPARX}).
 
@@ -1250,7 +1250,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         desalination of seawater a more prominent source of water for
         many populations.
         Carbon emissions from desalination may increase from 76 million
-        tons of CO$_2$ per year in 2015 to 200-500 million tons per year by 2040
+        tonnes of CO$_2$ per year in 2015 to 200--500 million tonnes per year by 2040
         \cite{GCWDA2015}.
         % see also Rothausen, S., Conway, D. Greenhouse-gas emissions from energy use in the water sector.
         % Nature Clim Change 1, 210–219 (2011). https://doi.org/10.1038/nclimate1147
@@ -1382,7 +1382,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         % How are they different? \label{question:consumption_substitution}
         Looking ahead to Chapters~\ref{chap:households}--\ref{chap:land_use_urban_planning},
         think of one unsustainable item in each of the following categories:
-        a mode of travel that you regularly use for transport,
+        a mode of travel that you regularly use for transportation,
         a form of energy that you consume in your dwelling,
         a type of food that you eat, and
         a way that you use or occupy land.
@@ -1437,7 +1437,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Which approaches are ineffective?
         Why?
 
-  \item Evaluate the ecological and economic impacts substitution of an
+  \item Evaluate the ecological and economic impacts of substitution of an
         injection-molded plastic part for a stamped steel part on an automobile.
         What are the raw material and extraction implications?
         How much energy is used to create the part?
