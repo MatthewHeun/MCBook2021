@@ -493,6 +493,78 @@ A sustainability challenge associated energy in agriculture “how can the energ
 agriculture be made sustainable?''
 
 %++++++++++++++++++++++++++++++
+\subsection{Waste in the food system}
+\label{sec:ag_metrics}
+%++++++++++++++++++++++++++++++
+
+Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based, material-flow
+Sankey diagram\index{Sankey diagram!agriculture} for U.S.\
+agriculture. 
+Mass-based efficiencies can be calculated for many aspects of the agricultural system.
+For example, the efficiency with which crops are converted to edible food
+is the ratio 355,880$\times$10$^\text{6}$ pounds of edible food supply 
+to 921,590$\times$10$^\text{6}$ pounds of crop production, 
+or 38.6\%.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{chapters/ch09-Agriculture/figures/Material_Flow_in_the_US_Food_System(1995_Flows_in_Million_Pounds).pdf}
+\caption[Material flow in the U.S.\ food system]{Material flow in the U.S.\ food system (1995). Flows in million pounds. \emph{Source}: \citet[Figure~3]{Heller:2000wg}. Used with permission.}
+\label{fig:food_and_ag_material_flow}
+\end{figure}
+
+<<ag_sys_calcs, echo = FALSE>>= 
+# All numbers from Heller figure above in million pounds.
+consumed_food <- 259610 # million pounds
+total_input <- 153000 + 921590 + 13870 + 19900 + 158000 + 370000 # million pounds
+aggregate_food_efficiency <- consumed_food / total_input
+end_use_food_efficiency <- 259610 / (259610 + 90820 + 5450)
+animal_inputs <- 964000 # million pounds
+animal_products <- 51470 + 76280 + 7920 # million pounds
+animal_efficiency <- animal_products / animal_inputs * end_use_food_efficiency
+@
+
+Several observations can be made from Figure~\ref{fig:food_and_ag_material_flow},
+% shows a Sankey diagram\index{Sankey diagram!agriculture}
+which shows the material flows in the U.S.\ agriculture system~\citep[Fig.~1]{Heller:2000wg}.
+First, the mass efficiency\index{efficiency!mass-based}
+of the agriculture system\index{efficiency!agriculture system}
+is low.
+Consumed food\index{food!consumed}
+(\Sexpr{format(consumed_food, big.mark = ",")} million pounds)
+is a very small fraction of the
+total input to the system
+(\Sexpr{format(total_input, nsmall = 0, big.mark = ",")} million pounds),
+yielding a mass-based efficiency\index{efficiency!mass-based}
+of \Sexpr{format(aggregate_food_efficiency * 100, digits = 3)}\%.
+Second, animal-based food production\index{food!animal-based}
+comprises a large and important
+intermediate processing stage.
+Animal-based food production
+is less efficient than the overall food system with
+% \Sexpr{animal_inputs} million pounds as input and 
+only
+\Sexpr{format(animal_efficiency * 100, digits = 3)}\% efficiency on a mass basis\index{efficiency!mass-based}.
+Third, losses (wastage) at the final stages reduce the efficiency of the entire food system.\index{waste!food}
+In fact, final stage mass-based efficiency\index{efficiency!mass-based}
+is only \Sexpr{format(end_use_food_efficiency * 100, digits = 3)}\%.
+Fourth, imports\index{food!imports}
+are relatively small compared to domestic production and consumption.
+Thus, the U.S.\ is reasonably self-sufficient regarding food supply.
+However, exports\index{food!exports}
+of crops (\Sexpr{format(355560, big.mark = ",")} million pounds)
+are a significant source of demand for the U.S.\ agriculture system.
+Finally, relative to annual worldwide consumption,
+there is little storage of food beyond what is needed to compensate
+for expected seasonal weather variations.
+In other words, the agriculture system produces what is needed now (or at least this year).
+Given that food demand scales with population,
+weather- and climate-related supply-side disruptions are
+more significant than demand-side disruptions
+for determining food prices.
+
+
+%++++++++++++++++++++++++++++++
 \subsection{Greenhouse gas emissions}
 %++++++++++++++++++++++++++++++
 
@@ -653,6 +725,12 @@ We leave to Chapters~\ref{chap:government} and~\ref{chap:personal_action} the
 discussion of how such changes can be made (if possible) and who might take action
 to make such changes.
 
+Any measure that will increase the efficiency or efficacy of the food system is 
+a step towards becoming more sustainable.
+For example, reducing food waste has the effect of reducing the inputs needed 
+(to grow extra food), reducing the emissions (from producing, consuming, and disposing
+of that food), and increasing the effective EROI of the food system.
+
 It is worth noting that enhanced agricultural productivity/efficacy/effiency (depending
 on which metric is under consideration) may not be subject to the rebound effect
 (Section~\ref{sec:rebound_effect}) in quite the same way as energy efficiency.
@@ -671,11 +749,26 @@ the world's energy supply to renewable energy, given the energy-intensive nature
 modern agriculture and its attendant low EROI.
 Of course, a transition to renewable energy would benefit more sectors than just agriculture;
 it would be universally beneficial and, in fact, is necessary for strong sustainability.
-However, since the transition to renewable energy is the topic of 
+
+Renewable energy sources require lots of land (Figure~\ref{fig:PowerDensity}), 
+land that is already mostly used for agriculture.
+One strategy is to combine agriculture and renewable energy generation. 
+For instance, animals can graze among the turbines of a wind farm.
+Another combination is to use solar panels to provide partial shade for crops 
+prefer partial shade, like raspberries. 
+The plants will provide some cooling for the solar panels, thereby boosting the
+efficiency of the panels.
+The panels provide shade for crops, thereby reducing the amount of water needed 
+for irrigation.
+The tradeoff is that panel spacing may be less dense than would be typical for 
+industrial PV installation, so the crops have to make up the difference in 
+profitability per acre.
+
+Since the transition to renewable energy is the topic of 
 Section~\ref{sec:low_carbon_transition}, we won't revisit that here. 
 Instead, the rest of this section focuses on two further transitions necessary
-for agricultural sustainability: reductions in food waste, shifts in agricultural
-practices to be resilient to the effects of climate change, and the need for 
+for agricultural sustainability: shifts in agricultural
+practices to be resilient to the effects of climate change and the need for 
 regenerative agriculture.
 
 %++++++++++++++++++++++++++++++
@@ -748,326 +841,28 @@ carbon sequestration~\cite{WOP2019}.
 See~\ref{project:regenerative_ag} for some tips on investigating regenerative
 agriculture in more detail.
 
-%++++++++++++++++++++++++++++++
-\subsection{Agriculture efficiency, efficacy,and productivity metrics }
-\label{sec:ag_metrics}
-%++++++++++++++++++++++++++++++
-
-Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based, material-flow
-Sankey diagram\index{Sankey diagram!agriculture} for U.S.\
-agriculture. 
-Mass-based efficiencies can be calculated for many aspects of the agricultural system.
-For example, the efficiency with which crops are converted to edible food
-is the ratio 355,880$\times$10$^\text{6}$ pounds of edible food supply 
-to 921,590$\times$10$^\text{6}$ pounds of crop production, 
-or 38.6\%.
-
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth]{chapters/ch09-Agriculture/figures/Material_Flow_in_the_US_Food_System(1995_Flows_in_Million_Pounds).pdf}
-\caption[Material flow in the U.S.\ food system]{Material flow in the U.S.\ food system (1995). Flows in million pounds. \emph{Source}: \citet[Figure~3]{Heller:2000wg}. Used with permission.}
-\label{fig:food_and_ag_material_flow}
-\end{figure}
-
-We could judge agriculture on the basis of how effectively each input is used, 
-leading to many efficacy metrics.
-For example, land is a major factor in agriculture.
-Relevant efficacy metrics for land use include the number of calories produced
-per acre or the (average) number of acres needed to provide complete
-human nutritional requirements.
-One difference between these two metrics is that humans require more than just
-calories.
-In addition, neither of these measures provides guidance for improving agricultural efficacy
-while simultaneously preserving the human preference for variety in our diets;
-nobody wants to eat the ``optimal'' diet exclusively.
-Another land-based metric is profitability per area, agricultural productivity.
-One of the challenges for sustainability is to align motivation (such as prices
-or pricing structure) with desirable sustainability outcomes.
-% Currently, the climate-change impacts of food production do not directly impact
-% the price of food.
-Currently, the climate-change impacts of food production are externalities,
-not reflected in food prices.
-
-Various energy-based metrics could be applied to agriculture
-for the purpose of assessing sustainability.
-****
-Seems like we're not differentiating between metrics and objectives here.
-There are metrics (EROI) and objectives (maximizing EROI).
----MKH
-****
-For instance, one objective could be to maximize the amount of food produced per
-unit energy consumed. ***input?***
-****
-Not clear to me if 
-``maximize the amount of food produced per
-unit energy consumed''
-is different from EROI? ---MKH
-****
-Or we could attempt to maximize EROI.
-Another alternative is to minimize the amount of CO$_2$ produced in agriculture.
-****
-Is total CO$_2$ produced a metric? 
-Usually per-something would be a metric. 
-So maybe CO$_2$ produced per calorie of food produced?
----MKH
-****
-Agriculture currently accounts for approximately 70\% of freshwater use.
-Minimizing the amount of water used in agriculture is important for several
-aspects of sustainability, including the fact that pumping water requires energy.
-**** 
-Might be helpful to clarify the metric (water per acre? water per calorie produced)
-in contrast to the objective (minimize water per acre).
----MKH
-****
-
-One strategy that might be highly successful for some climate zones and for some
-crops is to use solar panels to provide partial shade for crops prefer lower-light
-conditions. Plants will provide some evaporative cooling for the solar panels,
-thereby boosting the efficiency of the panels.
-The panels provide shade for crops, thereby reducing the amount of water needed for irrigation.
-Panel spacing is less dense than would be typical for industrial PV installation,
-so the crops have to make up the difference in profitability per acre.
-**** profitability per acre is a productivity metric (numerator is money).
-I think leading with a list of several agricultural metrics would 
-give structure to this section.
-Then discussthe importance of each metric and ways to improve the metric for sustainability purposes.
----MKH
-**** 
-
-One drawback to each of the metrics mentioned above
-**** 
-Metrics above are not clearly defined, yet.
-So the reader will wonder what metrics we're referring to.
----MKH
-****
-is that agriculture operates
-under many constraints (such as the amount of available land,
-satisfying human nutritional requirements and preferences, and being cost effective).
-Each metric is desirable
-**** 
-Hmmm.  Is CO$_2$ emissions per acre desirable?
----MKH
-****
-but tradeoffs exist among them and the constraints
-have to be satisfied.
-Price is generally the mechanism humans use to accommodate
-****
-decide? 
----MKH
-***
-such tradeoffs, so
-minimizing the price of food
-****
-per acre?
-per kg?
----MKH
-****
-could be an indicator of the effectiveness of the
-agricultural system.
-Indeed, the price of food has fallen, adjusted for inflation in the last 100 years.
-
-
-<<ag_sys_calcs, echo = FALSE>>= 
-# All numbers from Heller figure above in million pounds.
-consumed_food <- 259610 # million pounds
-total_input <- 153000 + 921590 + 13870 + 19900 + 158000 + 370000 # million pounds
-aggregate_food_efficiency <- consumed_food / total_input
-end_use_food_efficiency <- 259610 / (259610 + 90820 + 5450)
-animal_inputs <- 964000 # million pounds
-animal_products <- 51470 + 76280 + 7920 # million pounds
-animal_efficiency <- animal_products / animal_inputs * end_use_food_efficiency
-@
-
-Several observations can be made from Figure~\ref{fig:food_and_ag_material_flow},
-% shows a Sankey diagram\index{Sankey diagram!agriculture}
-the material flows in the U.S.\ agriculture system~\citep[Fig.~1]{Heller:2000wg}.
-First, the mass efficiency\index{efficiency!mass-based}
-of the agriculture system\index{efficiency!agriculture system}
-is low.
-Consumed food\index{food!consumed}
-(\Sexpr{format(consumed_food, big.mark = ",")} million pounds)
-is a very small fraction of the
-total input to the system
-(\Sexpr{format(total_input, nsmall = 0, big.mark = ",")} million pounds),
-yielding a mass-based efficiency\index{efficiency!mass-based}
-of \Sexpr{format(aggregate_food_efficiency * 100, digits = 3)}\%.
-Second, animal-based food production\index{food!animal-based}
-comprises a large and important
-intermediate processing stage.
-Animal-based food production
-is less efficient than the overall food system with
-% \Sexpr{animal_inputs} million pounds as input and 
-only
-\Sexpr{format(animal_efficiency * 100, digits = 3)}\% efficiency on a mass basis\index{efficiency!mass-based}.
-Third, losses (wastage) at the final stages reduce the efficiency of the entire food system.\index{waste!food}
-In fact, final stage mass-based efficiency\index{efficiency!mass-based}
-is only \Sexpr{format(end_use_food_efficiency * 100, digits = 3)}\%.
-Fourth, imports\index{food!imports}
-are relatively small compared to domestic production and consumption.
-Thus, the U.S.\ is reasonably self-sufficient regarding food supply.
-However, exports\index{food!exports}
-of crops (\Sexpr{format(355560, big.mark = ",")} million pounds)
-are a significant source of demand for the U.S.\ agriculture system.
-Finally, relative to annual worldwide consumption,
-there is little storage of food beyond what is needed to compensate
-for expected seasonal weather variations.
-In other words, the agriculture system produces what is needed now (or at least this year).
-Given that food demand scales with population,
-weather- and climate-related supply-side disruptions are
-more significant than demand-side disruptions
-for determining food prices.
-
-
-%++++++++++++++++++++++++++++++
-\paragraph{The bottom line: Increasing sustainability}
-%++++++++++++++++++++++++++++++
-
-*** While efficiency was supposed to be the solution, I feel like the description 
-of efficiency (above) turned into another challenge. ****
-
-****
-Would it help to refocus on the topic of this section, transitions?
-Sustainable agriculture is defined as (lower CO$_2$ emissions, enhanced soil fertility, \ldots)
-Looks like you have two ways to become more sustainable:
-(a)~raise efficiency and efficacy
-and
-(b)~regenerative agriculture.
-There are ways to effect this transition.
-For (a), reduce food waste, 
-ensure soil fertility, 
-For (b), implement regenerative agriculture practices, 
-keep all of our topsoil.
-Maybe more?
----MKH
-****
-
-Any measure that will increase the efficiency or efficacy of the food system is a steps towards
-becoming more sustainable.
-For example, reducing food waste has the effect of reducing the inputs needed 
-(to grow extra food), reducing the emissions (from producing, consuming, and disposing
-of that food), and increasing the effective EROI of the food system.
-Broadly, the challenges faced by agriculture are to feed the population~\Pparen{}
-using as few resources~\Rparen{} as possible and producing minimal impacts~\Xparen{}
-on the environment. 
-
-
-%++++++++++++++++++++++++++++++
-\subsection{Regenerative agriculture}
-\label{sec:ag_regen}
-%++++++++++++++++++++++++++++++
-
-
-****
-Here, you could lead with the framing of the section.
-Something like:
-``The second way to effect a transition to a more sustainable 
-agricultural system is known as regenerative agriculture.
-Regenerative agriculture is \ldots. 
-The advantages of regenerative agriculture are \ldots.
-We can transition from our current agricultural system to a regenerative
-agricultural system by \ldots.
----MKH
-****
-
-This section will attempt to describe 
-****
-``will attempt to describe'' is a minimizing way to lead the section.
-``Do or do not. There is no [attempt].''
----MKH
-****
-a food system that balances
-the desires to minimize the inputs and outputs of agriculture as described
-above.
-****
-The previous sentence doesn't follow from previous. 
-I don't recall where we mentioned the desire to minimize both teh inputs and output of agriculture.
----MKH
-****
-Figures~\ref{fig:food_and_ag_energy_flow} and~\ref{fig:GHG_food} might
-seem to indicate that ideal agriculture does not involve any animals.
-However, agriculture is a generative (in the sense that it produces food) ecosystem.
-No ecosystem can function properly without animals.
-
-Sustainable agriculture must accomplish two related goals: it must preserve and enhance
-soil fertility and it must sequester, rather than emit, GHG.
-****
-These are good sustainability goals. 
-Frame as such, earlier in the section/chapter?
-These goals don't have much to do with regenerative agriculture, do they?
----MKH
-****
-
-Animal manure is critical to building soil productivity, which is critical to
-farming without agrichemicals.
-Moreover, for millennia, humans have raised animals on semi-arid, rocky, or other
-land that is not suitable for planting crops,
-which generates food for human
-use that would not otherwise be available.
-**** 
-What generates food for human use?
-animals?
-or semi-arid, rocky, or other land?
-Clarify previous sentence. 
----MKH
-****
-About two thirds of our ``farmland'' is grazing land or pastures that could not
-otherwise produce edible calories for humans.
-****
-I'm missing the link to regenerative agriculture.
-There probably is a link in your mind, but it is not clear to this reader.
----MKH
-****
-There are farming techniques that allow beef farming to be a net sink for carbon,
-rather than emitter~\cite{WOP2019}.
-
-Concepts from permaculture, arcology, dry land farming, and no-till agriculture
-are necessary to farm without unsustainable inputs and irrigation that depletes
-aquifers.
-The specifics of such practices vary by region, climate, and crop species.
-These farms tend to produce a large variety of products, in contrast to ``row cropping''
-monocultures, which are more amenable to mechanized farming.
-The resulting farm system that 
-**** extra word? ---MKH ****
-tends to be management and labor intensive but
-is more environmentally friendly.
-However, the relatively higher amounts of human inputs make the food produced
-more expensive.
-Ultimately, reducing environmental impacts requires additional investment, which
-makes food more expensive, which is consistent with Equation~\ref{eq:IPARX}
-(reduced impact~\Iparen{} comes from reduced affluence~\Aparen{}).
-**** social sustainability issues surrounding more-expensive food? ---MKH ****
-
-**** Overall, I think this section would be better if it refocused 
-on transitions.
-Lay out the end state then talk about changes to be made to get there. 
----MKH
-****
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary}
 \label{sec:food_transitions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Agricultural sustainability challenges include unsustainable land-use practices
-that degrade soil fertility, require unsustainable mineral inputs, and harm the 
-land's ability to sequester carbon.
-In today's economy, 
-agriculture is an energy sink rather than an energy source, 
+Agriculture exists to feed the world's population~\Pparen.
+It must do so using as few resources~\Rparen{} as possible and producing minimal 
+impacts~\Xparen{} on the environment. 
+Currently, agricultural requires unsustainable mineral inputs, and involves 
+land-use practices that degrade soil fertility and harm the land's ability to 
+sequester carbon.
+In today's economy, agriculture is an energy sink rather than an energy source, 
 requiring the unsustainable input of fossil fuels.
-Lastly, agricultural practices are the source of a significant GHG emissions.
+Agriculture is inefficient on a mass and energy basis.
+Lastly, agricultural is a source of a significant GHG emissions.
+Reducing environmental impacts requires additional investment, which
+makes food more expensive, consistent with Equation~\ref{eq:IPARX}
+(reduced impact~\Iparen{} comes from reduced affluence~\Aparen{}).
 However, food is a basic human need; it is one of the few things we absolutely 
 cannot do without. 
 Therefore, it is crucially important to make choices, individually and corporately,
 that result in a sustainable agricultural system. 
-These choices must result in higher productivities for the agricultural system and
-practices that preserve and enhance soil fertility.
-****
-productivity is \$/input.
-Is that what you meant here?
-Or do you mean efficiency and efficacy?
----MKH
-****
 
 % On the personal level,
 % eating closer to the base of the food chain and
@@ -1094,7 +889,6 @@ Or do you mean efficiency and efficacy?
 
 A ``recipe'' for sustainable agriculture is given by food writer Michael Pollan,
 in seven words: ``Eat food. Not too much. Mostly plants.''
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}
