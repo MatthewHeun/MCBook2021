@@ -330,10 +330,10 @@ to harvesting, storage, transportation, cooking, and disposal of food.
 Because food is humanity's energy source, we should consider its energy
 return on investment (EROI, defined in Section~\ref{sec:masterE})\index{EROI}.
 When EROI~>~1, food is an energy source for humans, that is,
-we obtain more energy from the food than it took to get the food.
+we obtain more energy from the food than it took to obtain the food.
 When EROI~<~1, we spend more energy obtaining the food than we get 
 from the food. 
-Since we have to have food, it is worth spending energy on.
+Since we must have food, it is worth spending energy on.
 Whether spending more energy on food than we get from it is sustainable or not
 depends on where the energy for agriculture comes from. 
 
@@ -401,8 +401,8 @@ food_energy %>%
 @
 
 
-Because food is energy, the overall energy efficiency of the food-delivery 
-system can be calculated.
+Because food is energy, the overall energy return on investment (EROI) 
+and efficiency of the food-delivery system can be calculated.
 Figure~\ref{fig:food_and_ag_energy_flow} shows the energy consumed and supplied
 by various aspects of the food-delivery system in the U.S.
 The EROI of food produced is 
@@ -413,20 +413,19 @@ produced per
 In other words, it takes
 \Sexpr{sprintf(food_eroi_scaled_input, fmt = "%#.2f")} calories of energy input
 to produce one calorie of food energy.
-However, because of significant food waste, the food-energy situation is much worse.
+However, because waste, the situation is actually much worse.
 A significant fraction
 (\Sexpr{sprintf(food_eroi_waste_fraction * 100, fmt = "%#.1f")}\%)
 of food that is produced is wasted
 (\Sexpr{sprintf(food_eroi_waste, fmt = "%#.2f")} quads wasted out of
 \Sexpr{sprintf(food_eroi_gross_output, fmt = "%#.2f")} quads produced).
-Taking this waste into account, the true EROI is
+Taking waste into account, the EROI of food consumed is
 \Sexpr{sprintf(food_eroi * 100, fmt = "%#.1f")}\%
 (\Sexpr{sprintf(food_eroi_consumed, fmt = "%#.2f")} quads consumed, 
 \Sexpr{sprintf(food_eroi_denominator, fmt = "%#.2f")} quads input).
-The fact that the EROI of the food-delivery system is less than 1
+The fact that the EROI of the food-delivery system is less than 100\%
 means that the food-delivery system is not a source of energy for society.
 Rather, it is a sink of energy for society.
-%Thus, today's food system is unsustainable from an energy point of view.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -441,7 +440,7 @@ and modern society with it.
 
 To put it another way, human society today spends more energy
 to get food than it obtains from food.  
-But modern society remains viable
+But modern society remains viable,
 because its food-delivery system is supported by energy inputs from an external source:
 fossil fuels\index{fossil fuels}. 
 Fossil fuels
