@@ -270,7 +270,7 @@ Overuse of water is not limited to subsurface water, like the Ogallala aquifer;
 see \ref{question:ogallala}. 
 Surface water is also being overused for agriculture.
 One particularly notable example is the (formerly) Aral Sea, which has all but disappeared
-due to diversion of its water for irrigation.
+due to diversion of its water for irrigation; see Figure~\ref{fig:aral_sea}.
 Another example is the Colorado River, which supplies water to 12\% of the U.S.\ population,
 supports 15\% of U.S.\ crop output, and 13\% of U.S.\ livestock production~\cite{UWMCWP2014}. 
 %% https://www.youtube.com/watch?v=lYvQNon4aLg&t=804s
@@ -279,6 +279,30 @@ supports 15\% of U.S.\ crop output, and 13\% of U.S.\ livestock production~\cite
 Because of diversions for agriculture (70--80\%) and to supply municipalities with drinking 
 water (15\%), the Colorado River mouth is dry; 
 it no longer flows into the Sea of Cortez.
+
+
+\begin{figure}
+\captionsetup[subfigure]{justification=centering}
+     \centering
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch09-Agriculture/photos/aralsea_tmo_2000238_lrg.jpg}
+         \caption{2000.}
+         \label{fig:aral_sea_2000}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+           \includegraphics[width=\linewidth]{chapters/ch09-Agriculture/photos/aralsea_tmo_2018233_lrg.jpg}
+         \caption{2018.}
+         \label{fig:aral_sea_2018}
+     \end{subfigure}
+      \caption[The Aral Sea in 2000 and 2018]
+              {Satellite photos of the Aral Sea in 2000 and 2018.
+               \emph{Source}: \citet{NASA-Goddard:ug}.}
+      \label{fig:aral_sea}
+\end{figure}
+
 
 Agricultural activities also result in water pollution of surface water and ground water.
 For example, the city of Toledo, Ohio draws its drinking water from Lake Erie.
