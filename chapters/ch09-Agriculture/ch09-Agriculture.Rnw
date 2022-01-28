@@ -117,7 +117,7 @@ there is a fundamental, biological limit to the amount our bellies can hold.
 However, in the U.S., there has been about a 22\% increase in calories consumed 
 per person per day since 1967~\cite{Gordon2016}.
 The trend has also been toward a more varied diet that includes more fresh foods.
-This trend towards a richer, more varied diet is repeated across the world as
+This trend toward a richer, more varied diet repeats across the world as
 affluence rises.
 Thus, the global demand for food has two drivers:
 population~\Pparen{} is the primary driver of demand for agriculture, and
@@ -139,26 +139,28 @@ Furthermore, Section~\ref{sec:malthus_ehrlich_simon} indirectly suggests humanit
 will continue to have resources for food production, even if population grows substantially.
 Therefore, total global food production should not be expected to be a major sustainability
 challenge.
-(Despite the fact that hunger continues to be an issue in the world today, current food
-production is generally acknowledged to be adequate.
+(Despite the fact that hunger remains an issue in the world today, 
+food production is generally acknowledged to be adequate.
 Instead, there are distribution problems due to factors such as poverty, government
 corruption, and oppression.)
 
 Equation~\ref{eq:IPARX} indicates reductions in agricultural impacts on the 
 environment, in the absence of a falling population or affluence 
-(Section~\ref{sec:reducing_c}), can only come from reducing one of the remaining two terms,
+(Section~\ref{sec:reducing_c}), can only come from reducing 
+one or both of the remaining terms,
 the resource intensity of economic activity~\Rparen{} or the impact of resources~\Xparen{}.
 The next section explores sustainability challenges in agriculture, which arise
 from extracting resources from the ecosystem faster than they regenerate and/or 
 producing more waste(s) than the ecosystem can absorb.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sustainability challenges in agriculture}
 \label{sec:ag_sust_challenges}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-When considering whether an activity is sustainable, resource depletion and impacts
-produced are key questions.
+When considering whether an activity is sustainable, 
+resource depletion and environmental impacts are key questions.
 That is, have the ecosystem's provisioning and/or support services (Section~\ref{sec:ecosystem_services})
 been exceeded?
 For example, Section~\ref{sec:electric_vehicles} considered internal combustion
@@ -183,12 +185,13 @@ Recall the definitions of weak and strong sustainability from
 Section~\ref{sec:strong_weak_sust}.
 % and the concept of ecosystem provisioning services from Section~\ref{sec:ecosystem_services}.
 Strong sustainability requires not using renewable resources 
-faster than they can regenerate
-(Section~\ref{sec:what_is_sustainability}).
+faster than they can regenerate; 
+see section~\ref{sec:what_is_sustainability}.
 % Choosing the right inputs and outputs for agriculture is demonstrated
 % by considering soil fertility. 
 Consider soil fertility, which is a renewable provisioning service 
-(Chapter~\ref{chap:planetary_boundaries}) of the ecosystem.
+of the ecosystem; 
+see Chapter~\ref{chap:planetary_boundaries}.
 If agricultural practices decrease soil fertility, 
 agriculture can not be considered strongly sustainable.
 If agriculture depends on a nonrenewable resource, 
@@ -201,7 +204,7 @@ aspects of agriculture.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Soil and water} %% Agricultural use of land
+\subsection{Soil and water} %% Agricultural use of landT
 %++++++++++++++++++++++++++++++
 
 Soil and water are the two most important inputs for agriculture.
@@ -217,11 +220,11 @@ use of land and water.
 %..............................
 
 Not all soils are rich in the nutrients needed by plants to grow.
-Top soils do contain the organic matter needed by plants.
-However, top soil can be lost by erosion due to the action of wind and/or water.
+Topsoils do contain the organic matter needed by plants.
+However, topsoil can be lost by erosion due to the action of wind and/or water.
 Most erosion results from wind or water action on tilled soils, that is,
 where the land has been plowed to expose bare soil.
-Some examples include the great Dust Bowl in the U.S.\ in the 1930s
+Some examples include the 1930s Dust Bowl in the U.S.\
 and the phenomenon called the ``Yellow Wind'' or ``Asian dust,'' where fine
 soil particles are carried from China, Mongolia, and Kazakhstan to East Asia and 
 sometimes across the Pacific Ocean to the U.S.
@@ -229,7 +232,7 @@ Some places in the Great Plains have lost of several feet of topsoil.
 For example, a survey in Minot, North Dakota taken in 1900 found 40 cm of black
 topsoil.
 In 2017, the area had no black topsoil; its soil was light gray~\cite{Arnason:2017ug}.
-Loss of top soil reduces the productivity 
+Loss of topsoil reduces the productivity 
 (in dollars of output per acre) of farmland.
 Many arid and semi-arid regions are experiencing desertification caused
 by a combination of climate change and poor agricultural practices.
@@ -255,10 +258,11 @@ they originate from (nonrenewable) mineral deposits.
 On the other hand, about half of the fertilizer used globally is animal manure, 
 which is a renewable resource. 
 Animal manure could be a sustainable fertilizer, if the animals are raised sustainably,
-for instance, if their feed is sustainably raised.
+for instance, and 
+if their feed is sustainably raised.
 A sustainability challenge associated with soil use is 
-“how can we maintain soil fertility in the long term without fertilizers based 
-on nonrenewable resources?''
+“how can we maintain soil fertility in the long term without fertilizers 
+derived from nonrenewable resources?''
 
 
 %++++++++++++++++++++++++++++++
@@ -274,13 +278,17 @@ see \ref{question:ogallala}.
 Surface water is also being overused for agriculture.
 One particularly notable example is the (former) Aral Sea, which has all but disappeared
 due to diversion of its water for irrigation; see Figure~\ref{fig:aral_sea}.
-Another example is the Colorado River, which supplies water to 12\% of the U.S.\ population,
-supports 15\% of U.S.\ crop output, and 13\% of U.S.\ livestock production~\cite{UWMCWP2014}. 
+Another example is the Colorado River, which 
+supplies water to 12\% of the U.S.\ population
+and 
+supports 15\% of U.S.\ crop output and
+  13\% of U.S.\ livestock production~\cite{UWMCWP2014}. 
 %% https://www.youtube.com/watch?v=lYvQNon4aLg&t=804s
 %% https://feedingourselvesthirsty.ceres.org/regional-analysis/colorado-river
 %% https://uwm.edu/centerforwaterpolicy/wp-content/uploads/sites/170/2013/10/Colorado_Agriculture_Final.pdf
-Because of diversions for agriculture (70--80\%) and to supply municipalities with drinking 
-water (15\%), the Colorado River mouth is dry; 
+Because of diversions for agriculture (70--80\%) and 
+supplying municipalities with drinking water (15\%),
+the Colorado River mouth is dry; 
 it no longer flows into the Sea of Cortez.
 
 
@@ -338,8 +346,6 @@ we obtain more energy from the food than it took to obtain the food.
 When EROI~<~1, we spend more energy obtaining the food than we get 
 from the food. 
 Since we must have food, it is worth spending energy on.
-Whether spending more energy on food than we get from it is sustainable or not
-depends on where the energy for agriculture comes from. 
 
 
 <<food_and_ag_energy_flow, fig.scap="Energy consumed in the food-delivery system by life-cycle phase", fig.cap="Amount of energy consumed in the U.S.\\ food-delivery system by life-cycle phase (2021). \\emph{Source}: \\citet{US_food}.">>=
@@ -443,7 +449,9 @@ and modern society with it.
 \end{mcframe}
 
 To put it another way, human society today spends more energy
-to get food than it obtains from food.  
+to obtain food than it gets from food.  
+Whether spending more energy to obtain food than we get from it is sustainable or not
+depends on where the energy for agriculture comes from. 
 Modern society remains viable only
 because its food-delivery system is supported by energy inputs from an external source:
 fossil fuels\index{fossil fuels}. 
@@ -451,12 +459,16 @@ Fossil fuels
 supply the energy for 
 machines in agriculture, food transportation, food processing, food packaging, 
 retail, food storage, and food preparation.
+Because (a)~agricultural EROI is less than 1 
+and
+(b)~energy for agriculture comes from fossil fuels, 
+today's agricultural system is not sustainable.
 
 One view of the agricultural system is as a huge machine 
 with the purpose of converting feed for animals into food for humans.
 Both feed and food can be quantified in energy terms (in units of kcal).
 Thus, in that view, the entire agricultural system can be characterized by an efficiency, 
-the ratio of kcal of food output divided by kcal of feed input.
+the ratio of kcal of food output to kcal of feed input.
 The feed-to-food efficiency~($\eta_{\mft{ff}}$)\index{efficiency!feed-to-food}
 quantifies the efficiency of these agricultural processes.
 The overall feed-to-food efficiency of the U.S.\ food system 
@@ -495,6 +507,7 @@ by energy return ratios of today's food system is:
 
 A sustainability challenge associated with energy in agriculture is 
 “how can the energy inputs to agriculture be made sustainable?''
+
 
 %++++++++++++++++++++++++++++++
 \subsection{Food waste}
