@@ -37,8 +37,8 @@ Therefore, Chapter~\ref{chap:households} considers the sustainability
 challenges of households. 
 Likewise, the energy use (37.3\%) and CO$_2$ emissions (36.3\%) of transportation 
 motivated Chapter~\ref{chap:transportation}.
-This chapter considers agriculture as an example industrial/commercial
-area (the other two categories in Table~\ref{tab:corrected_co2_emissions}).
+This chapter considers agriculture as an import example of industry and commerce
+(the other two sectors in Table~\ref{tab:corrected_co2_emissions}).
 % Aggregating the other two categories in Table~\ref{tab:corrected_co2_emissions},
 % commercial and industrial sources are responsible for 47\% of 
 % U.S. energy use and 44\% of U.S. CO$_2$ emissions. 
@@ -57,18 +57,19 @@ Agriculture, forestry, and other land use account for an estimated 23\%
 of anthropogenic greenhouse gas (GHG) emissions~\cite{SRCCL2019}. 
 Agriculture has strong links to land use, which is the focus of 
 Chapter \ref{chap:land_use_urban_planning}.
-It began to be evident in Chapters~\ref{chap:households} and~\ref{chap:transportation}
+Chapters~\ref{chap:households} and~\ref{chap:transportation} hint
 that land use has strong sustainability implications. 
-Those hints will become much more concrete and explicit in this chapter and 
+Those hints become much more concrete and explicit in this chapter and 
 in Chapter~\ref{chap:land_use_urban_planning}. 
 Agriculture is the major use to which humans put the land.
 It is estimated that 71\% of ice-free land is used for agricultural purposes:
 12\% for crops, 
 37\% for pasture, and 
 22\% for timber production in forests~\cite{SRCCL2019}.
+So it is no surprise that agricultural has important sustainability implications.
 
 In addition to land use and GHG emissions, agriculture has another 
-major implication for sustainability: humans cannot live without food.
+major impact on sustainability: humans cannot live without food.
 Agriculture does provide some nonfood products such as cotton, flax (for linen),
 flowers, and leather.
 However, this chapter will mostly focus on food products, in part because the 
@@ -110,16 +111,17 @@ scale linearly with population.
 Over a long period of time, at least since 1870, 
 when such things were first measured, 
 the amount people eat, in pounds of food per day, 
-has been relatively constant~\cite{Gordon2016}, which is unsurprising, since
+has been relatively constant~\cite{Gordon2016}.
+That's unsurprising, since
 there is a fundamental, biological limit to the amount our bellies can hold.
 However, in the U.S., there has been about a 22\% increase in calories consumed 
 per person per day since 1967~\cite{Gordon2016}.
 The trend has also been toward a more varied diet that includes more fresh foods.
 This trend towards a richer, more varied diet is repeated across the world as
 affluence rises.
-Thus, the global demand for food has two main drivers:
+Thus, the global demand for food has two drivers:
 population~\Pparen{} is the primary driver of demand for agriculture, and
-affluence~\Aparen{} is the secondary driver.
+affluence~\Aparen{} is a secondary driver.
 
 As mentioned in Section~\ref{sec:PCbalance}, consumption and production are balanced,
 particularly for food, in part because food spoils and humans prefer fresh food.
@@ -139,7 +141,7 @@ Therefore, total global food production should not be expected to be a major sus
 challenge.
 (Despite the fact that hunger continues to be an issue in the world today, current food
 production is generally acknowledged to be adequate.
-Instead, there are distribution problems due to such factors as poverty, government
+Instead, there are distribution problems due to factors such as poverty, government
 corruption, and oppression.)
 
 Equation~\ref{eq:IPARX} indicates reductions in agricultural impacts on the 
