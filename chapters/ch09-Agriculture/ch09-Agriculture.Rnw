@@ -735,10 +735,19 @@ Figure~\ref{fig:Fig-SPM-10} indicates we have roughly 3000 Gt of CO$_2$ to remov
 from the atmosphere. 
 Replacing 116 Gt of carbon in the soil would remove 425.3 Gt of CO$_2$ from the
 atmosphere.
+In other words, sequestering carbon in the soil would be a significant step in
+solving the current climate crisis.
 
-Regenerative agriculture is ....
-
-How do we do it?
+Regenerative agriculture refers to a set of land management practices that build 
+soil health by, among other things, sequestering carbon in the soil. 
+The particulars of what techniques are most effective vary with site history, 
+location, and biome but it is common to use managed grazing by livestock 
+as a key component of the soil management.
+Thus, while beef and dairy cattle are sources of GHG emissions under most current 
+agricultural practices, in regenerative agriculture they can play a role in net
+carbon sequestration~\cite{WOP2019}.
+See~\ref{project:regenerative_ag} for some tips on investigating regenerative
+agriculture in more detail.
 
 %++++++++++++++++++++++++++++++
 \subsection{Agriculture efficiency, efficacy,and productivity metrics }
@@ -1304,6 +1313,15 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       in agriculture.
       
 \item Research the legal and economic issues related to use of water from the Colorado River.
+
+\item Prepare a report on regenerative agriculture. 
+      What are its objectives? 
+      What means does it use to achieve those objectives?
+      Can you find a farm local to your area that is using some (or all) regenerative
+      agriculture techniques? 
+      what is working well for that farm?
+      What challenges do they face?
+      \label{project:regenerative_ag}
       
 \end{projects}
 
