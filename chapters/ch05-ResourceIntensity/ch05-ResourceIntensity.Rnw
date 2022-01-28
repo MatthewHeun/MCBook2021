@@ -729,7 +729,10 @@ Industry and transportation use more energy than residences and commerce.
 \centering
 \includegraphics[width=\linewidth]{chapters/ch05-ResourceIntensity/figures/Energy_US_2018.png}
 \caption[U.S.\ energy consumption Sankey diagram]
-        {U.S.\ energy consumption in 2018.
+        {U.S.\ energy consumption in 2018. 
+         Flows in quads/year.
+         (1~quad\index{quad} is a quadrillion BTUs of energy,
+         equal to 1.055$\times$10$^\text{18}$~J.)
          \emph{Source}: 
          \citet{Lawrence-Livermore-National-Laboratory:ua}.}\index{Sankey diagram!energy}
 \label{fig:LLNL_energy_sankey}

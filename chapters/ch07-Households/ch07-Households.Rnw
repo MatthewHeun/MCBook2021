@@ -88,12 +88,7 @@ energy consumption and carbon emissions.
 Dwellings are important for sustainability, 
 in part because they are sites of energy consumption.
 For example, Figure~\ref{fig:LLNL_energy_sankey} shows that 
-11.9~quads%
-\footnote{
-  1~quad\index{quad} is a quadrillion BTUs of energy, which is equal to 
-  1.055$\times$10$^\text{18}$~J.
-}
-of final energy were consumed in U.S.\ residences in 2018,
+11.9~quads of final energy were consumed in U.S.\ residences in 2018,
 representing 12\% of final energy consumption.
 Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
 from the U.S.\ residential sector in 2018 total 

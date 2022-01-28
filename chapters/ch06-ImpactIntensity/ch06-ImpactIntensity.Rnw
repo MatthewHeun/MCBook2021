@@ -141,6 +141,7 @@ Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
         {U.S.\ CO$_2$ emissions in 2018.
          CO$_2$ emissions from electricity production are not attributed to end uses;
          see Table~\ref{tab:corrected_co2_emissions}.
+         Flows in Mt/year.
          \emph{Source}: \citet{Lawrence-Livermore-National-Laboratory:wp}.}
 \label{fig:LLNL_CO2_sankey}
 \end{figure}
