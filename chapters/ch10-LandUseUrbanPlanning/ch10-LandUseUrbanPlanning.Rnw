@@ -4,7 +4,7 @@
 %!TEX root = ../../book.Rnw
 
 %#############################################################
-\chapter{Land use and urban planning}
+\chapter{Land use} %and urban planning
 \label{chap:land_use_urban_planning}
 %#############################################################
 
@@ -124,9 +124,9 @@ forestry (28\%), and cropland (17\%) being the three largest uses.%
   Crop production is 87\% of total cropland; the remaining 13\% is idle or used for pasture.
 }
 %
-The four largest crops in the U.S. are wheat (32\% of total crops), corn (30\%),
-soybeans (20\%), and cotton (10\%)~\cite{FAOSTAT:2021ve}. 
-All other crops combined account for only 8\% of total crops.
+The four largest crops in the U.S. are wheat (32\% of land used for crop production),
+corn (30\%), soybeans (20\%), and cotton (10\%)~\cite{FAOSTAT:2021ve}. 
+All other crops combined account for only 8\% of land use.
 In contrast, the area where we live and work
 is a relatively small 70 million acres (3\%).
 The U.S. is relatively sparsely populated.
@@ -180,7 +180,7 @@ Renewables, such as hydro, solar photovoltaic, and wind power, are also located 
 places.
 In particular, for hydro, solar, and wind, correct siting is a key consideration
 for how productive each power type will be.
-Not all locations are suitable for hydro power. Or wind. Or solar.
+Not all locations are suitable for hydro power. (Or wind. Or solar.)
 
 In addition to energy, the economy needs material resources;
 see Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use}.
@@ -196,21 +196,21 @@ Those on the lowest rungs of the socio-economic ladder have few options to
 improve their lives. 
 They need places to live, food to eat, and income to purchases these and other goods.
 They can move to urban areas to try to get work or they can try to extract (pun intended)
-a living by farming or mining.
-Unfortunately, the best lands have already been taken; what is available to the 
-next farmer or miner is typically of marginally lower productivity.
-
+a living by farming (see \ref{question:poverty_trap}) or mining.
+% Unfortunately, the best lands have already been taken; what is available to the 
+% next farmer or miner is typically of marginally lower productivity.
 
 %-----------------------------
 \paragraph{Ecosystem services}
 %-----------------------------
 Because energy use and carbon emissions are the prime example in this book,
 and because land plays a crucial role in regulating carbon in the environment,
-this section examines the capacity of the land to absorb and store carbon.
+this section examines the capacity of the land to absorb and store carbon as
+an example ecosystem service.
 
 Land is a major carbon sink. 
 Forests store a lot of carbon and reforestation is likely necessary for meeting
-climate change limits, which makes continued deforestation particularly 
+climate-change limits, which makes continued deforestation particularly 
 alarming.
 Land use affects, and is affected by, climate change. 
 For instance, hotter, drier weather results in more frequent and severe wildfires.
@@ -264,7 +264,7 @@ carbon_storage_world %>%
 @
 
 Figure~\ref{fig:CarbonStorage} shows how much carbon each type of land (biome) can store.
-The teal bars indicate carbon stored as plant life above ground. 
+The teal bars indicate carbon stored as plant mass above ground. 
 The purple bars indicate carbon stored in the soil below the surface.
 %(You can see why peat is used as a fuel in same parts of the world.)
 Tropical and boreal forests, and grasslands 
@@ -283,18 +283,17 @@ the ecosystem services needed to eliminate the wastes produced by economic activ
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sustainability challenges in land use and urban planning}
+\section{Sustainability challenges in land use} %and urban planning
 \label{sec:land_sustainability_challenges}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Humanity's use of the land has changed over time. 
-Tracking those changes is important for understanding relationships between
+Tracking those changes helps us to understand the relationships between
 land use and sustainability challenges (for example, climate change).
-The data for surveys such as Figure~\ref{fig:USlanduse} are produced from satellite imagery.
-The European Space Agency recently released a dataset for global land use over
-a 24-year period (1992-2015) as part of a climate change initiative (CCI).
-The Inter-governmental Panel on Climate Change (IPCC) uses 9 categories for land-use
-classification: 
+%The data for surveys such as Figure~\ref{fig:USlanduse} are produced from satellite imagery.
+The European Space Agency Climate-Change Initiative (CCI) recently released 
+a satellite-image dataset for global land use over a 24-year period (1992-2015).
+There are nine categories for land-use:  
 agriculture, forest, grass, wetland, settlement, shrubland, sparse, bare, and water.
 Humans altered almost 1\% of total land area per year (22\% in 24 years~\cite{Nowosad2019})
 across all land-use categories.
@@ -309,14 +308,14 @@ for housing, for transportation, and for agriculture.
 %++++++++++++++++++++++++++++++
 
 Two sustainability challenges related to urban areas are their tendency to grow 
-continually and the need to continually repair depreciating infrastructure.
+continually and the need to maintain depreciating infrastructure such as 
+power, sanitation, transportation systems.
 Note that these two challenges are not the only ones cities face; they are just
 the ones we have chosen to highlight as examples in this chapter. 
-Other challenges include, for instance, the ever-increasing need to water to supply
+Other challenges include, the ever-increasing need for water to supply
 a growing urban population and the need to mitigate the effects of climate change.
 As an example of the latter, several cities have already appointed ``extreme heat
 officials.''
-
 
 %..............................
 \paragraph{Urban sprawl}
@@ -345,17 +344,18 @@ sustainability implications.
 First, there is a net loss of high-quality agricultural land.
 As existing farms near cities become urban areas, agricultural activities are pushed 
 out to more marginal land.
-Second, the net effect is deforestation, which results in greenhouse gas emissions.
-Land use and land-use change are an important source of anthropogenic greenhouse gas emissions.
+Second, the net effect is deforestation, which results in net greenhouse gas emissions.
+Land use and land-use change are an important source of anthropogenic 
+greenhouse gas emissions~\cite{IPCC:2018aa}.
 
 A sustainability challenge associated with urban growth is
-``how can cities supply the needs of an increasing and increasingly urban population?''
-There are challenges associated with the city's systems, for example, power, sanitation,
-and water supply. 
-There are also challenges with respect to continual and continued growth.
+``how can cities supply the needs of an increasing and increasingly urban population
+without losing ecosystem services?''
+% There are also challenges with respect to continual and continued growth.
 Cities have been converting agricultural land to urban environments for centuries.
 In the last century, that trend has only accelerated.
-``How can the best farmland be preserved for future food production?''
+Another sustainability challenge associated with urban growth is
+``how can the best farmland be preserved for future food production?''
 
 
 %..............................
@@ -382,10 +382,10 @@ economic and population growth, changing technology, and fractured ownership.
 The design lifetime of infrastructure may not match its economic lifetime.
 Population growth might make a bridge with a 100-year lifespan inadequate to 
 satisfy transportation demand after only 30 years.
-Wireless communication technologies have rendered wire-based communication much
-less relevant. 
-However, when changes are necessary, often the multiple constraints of urban environments
-make upgrading infrastructure costly and difficult. 
+Wireless communication technologies have rendered wire-based communication 
+infrastructure much less relevant. 
+However, when changes are necessary, the multiple constraints of urban environments
+often makes upgrading infrastructure costly and difficult. 
 That is, transitions are especially difficult for cities.
 
 A sustainability challenge associated with urban infrastructure is
@@ -403,7 +403,7 @@ Another way of thinking about the role of transportation in urban environments i
 that transportation creates places worth going to.
 Consider, for example, an urban restaurant that serves very tasty food. 
 If you can't get to it, it doesn't matter how good the food is. 
-The potential customer base is restricted to the number of people that can get 
+The potential customer base is restricted to the number of people who can get 
 to the restaurant.
 Access becomes both an economic enabler and an economic multiplier.
 
@@ -479,6 +479,9 @@ urban_density_data %>%
   ggplot2::theme(legend.position = c(0.8, 0.8))
 @
 
+A sustainability challenge associated with land use and transportation is 
+``how do we arrange the different elements of the transportation system to move 
+goods and people quickly with little environmental impact?''
 
 %++++++++++++++++++++++++++++++
 \subsection{Agriculture}
@@ -491,15 +494,16 @@ is not on the inputs and outputs of agricultural operations.
 Instead, the focus is about the sustainability challenges of land-use patterns for agriculture.
 
 As has been mentioned already, conversion of agricultural land to other uses, particularly
-urban areas is a challenge. 
+urban areas is a sustainability challenge. 
 Humans have been practicing agriculture for millenia. 
 The most fertile, most productive locations have already been identified. 
 The challenge is keeping those most productive locations as agriculture and not
 allocating them other other uses, such as housing.
-
+A sustainability challenge associated with land use and agriculture is 
+``how can we retain the most fertile cropland as cropland?''
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sustainability transitions in land use and urban spaces}
+\section{Sustainability transitions in land use}
 \label{sec:land_sustainability_improvements}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -749,6 +753,7 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       sparing/sharing dichotomy? 
       What could be done to eliminate the poverty 
       trap(s)? What would be the (unintended) consequences of these solutions?
+      \label{question:poverty_trap}
       % is this a project instead?
       
 \item Section \ref{sec:land_and_how_it_is_used} lists the need for resources as
@@ -889,10 +894,11 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       (\href{https://www.strongtowns.org/journal/2020/5/14/americas-growth-ponzi-scheme-md2020}{here} and 
       \href{https://www.strongtowns.org/journal/2021/4/6/pueblo-west}{here}, for example) 
       that dense, walkable downtowns maximize property tax revenue, while 
-      suburban sprawl is unsustainable because it doesn't generate enough tax 
+      suburban sprawl is unsustainable because it does not generate enough tax 
       revenue to pay for the maintenance on its own infrastructure.
       Spot check these claims with data from your local area. 
-      In the U.S., property tax rolls are public. 
+      In the U.S., property-tax rolls are public information and are usually available
+      online. 
       Finding maintenance costs may be more difficult. 
       Try talking to your local officials such as the city engineer, assessor, 
       and/or reading your municipality's budget.
