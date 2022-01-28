@@ -131,7 +131,8 @@ Food is one of the few things humans can't do without.
 Rising affluence (Figure~\ref{fig:AffluenceGraph-Nordhaus}) means there are lots
 of things we could (and would) do without before we would give up food.
 (The share of wealth spent on food goes down as affluence rises, meaning food becomes
-relatively cheaper as economies develop.)
+relatively cheaper as economies develop.
+Indeed, the price of food has fallen, adjusted for inflation in the last 100 years.)
 Furthermore, Section~\ref{sec:malthus_ehrlich_simon} indirectly suggests humanity 
 will continue to have resources for food production, even if population grows substantially.
 Therefore, total global food production should not be expected to be a major sustainability
@@ -146,9 +147,8 @@ environment, in the absence of a falling population or affluence
 (Section~\ref{sec:reducing_c}), can only come from reducing one of the remaining two terms,
 the resource intensity of economic activity~\Rparen{} or the impact of resources~\Xparen{}.
 The next section explores sustainability challenges in agriculture, which arise
-from extracting resources from the ecosystem and/or producing more waste(s) than the 
-ecosystem can absorb.
-
+from extracting resources from the ecosystem faster than they regenerate and/or 
+producing more waste(s) than the ecosystem can absorb.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sustainability challenges in agriculture}
@@ -157,8 +157,8 @@ ecosystem can absorb.
 
 When considering whether an activity is sustainable, resource depletion and impacts
 produced are key questions.
-That is, have the ecosystem's provisioning and/or support services been exceeded?
-(See Section~\ref{sec:ecosystem_services}.)
+That is, have the ecosystem's provisioning and/or support services (Section~\ref{sec:ecosystem_services})
+been exceeded?
 For example, Section~\ref{sec:electric_vehicles} considered internal combustion
 engine (ICE) vehicles and electric vehicles (EVs).
 A reliable sustainability comparison depends on an accurate accounting of inputs and outputs.
@@ -183,10 +183,10 @@ Section~\ref{sec:strong_weak_sust}.
 Strong sustainability requires not using renewable resources 
 faster than they can regenerate
 (Section~\ref{sec:what_is_sustainability}).
-Choosing the right inputs and outputs for agriculture is demonstrated
-by considering soil fertility. 
-Soil fertility is a renewable provisioning service (Chapter~\ref{chap:planetary_boundaries})
-of the ecosystem.
+% Choosing the right inputs and outputs for agriculture is demonstrated
+% by considering soil fertility. 
+Consider soil fertility, which is a renewable provisioning service 
+(Chapter~\ref{chap:planetary_boundaries}) of the ecosystem.
 If agricultural practices decrease soil fertility, 
 agriculture can not be considered strongly sustainable.
 If agriculture depends on a nonrenewable resource, 
@@ -214,8 +214,8 @@ use of land and water.
 \paragraph{Loss of soil fertility} 
 %..............................
 
-Not all soils are rich in the nutrients needed by plants to grow, but
-top soil contains the organic matter needed by plants.
+Not all soils are rich in the nutrients needed by plants to grow.
+Top soils do contain the organic matter needed by plants.
 However, top soil can be lost by erosion due to the action of wind and/or water.
 Most erosion results from wind or water action on tilled soils, that is,
 where the land has been plowed to expose bare soil.
@@ -237,7 +237,7 @@ Unprotected soil surfaces are eroded by wind and water to leave unproductive
 inorganic subsoils that get baked by the sun into a hardpan.
 Soil fertility can also be degraded by practices that withdraw key nutrients from the 
 soil faster than they can be regenerated.
-For instance, about 8\% of the carbon in soils has been lost over the last 12,000
+About 8\% of the total carbon in soils has been lost over the last 12,000
 years~\cite{Sanderman2017}.
 
 In contrast, 
@@ -254,8 +254,9 @@ On the other hand, about half of the fertilizer used globally is animal manure,
 which is a renewable resource. 
 Animal manure could be a sustainable fertilizer, if the animals are raised sustainably,
 for instance, if their feed is sustainably raised.
-A sustainability challenge associated soil use is “how can we maintain soil fertility
-in the long term without fertilizers based on nonrenewable resources?''
+A sustainability challenge associated with soil use is 
+“how can we maintain soil fertility in the long term without fertilizers based 
+on nonrenewable resources?''
 
 
 %++++++++++++++++++++++++++++++
@@ -269,7 +270,7 @@ If aquifers are exhausted, future humans won't have water for nourishment or bat
 Overuse of water is not limited to subsurface water, like the Ogallala aquifer; 
 see \ref{question:ogallala}. 
 Surface water is also being overused for agriculture.
-One particularly notable example is the (formerly) Aral Sea, which has all but disappeared
+One particularly notable example is the (former) Aral Sea, which has all but disappeared
 due to diversion of its water for irrigation; see Figure~\ref{fig:aral_sea}.
 Another example is the Colorado River, which supplies water to 12\% of the U.S.\ population,
 supports 15\% of U.S.\ crop output, and 13\% of U.S.\ livestock production~\cite{UWMCWP2014}. 
@@ -314,8 +315,9 @@ Moreover, Lake Erie and the Maumee River that feeds it were unsafe for human ski
 Blooms occurred again in 2017 and 2019~\cite{Rogener:2020wi}.
 Animal manure can also contaminate waterways. Ick.
 
-A sustainability challenge associated agricultural use of water is “how can we 
-maintain sufficient sources of clean water for agriculture and (direct) human use?''
+A sustainability challenge associated with agricultural use of water is 
+“how can we maintain sufficient sources of clean water for agriculture and
+(direct) human use?''
 
 
 %++++++++++++++++++++++++++++++
@@ -413,7 +415,7 @@ produced per
 In other words, it takes
 \Sexpr{sprintf(food_eroi_scaled_input, fmt = "%#.2f")} calories of energy input
 to produce one calorie of food energy.
-However, because waste, the situation is actually much worse.
+However, because of waste, the situation is actually much worse.
 A significant fraction
 (\Sexpr{sprintf(food_eroi_waste_fraction * 100, fmt = "%#.1f")}\%)
 of food that is produced is wasted
@@ -440,7 +442,7 @@ and modern society with it.
 
 To put it another way, human society today spends more energy
 to get food than it obtains from food.  
-But modern society remains viable,
+Modern society remains viable only
 because its food-delivery system is supported by energy inputs from an external source:
 fossil fuels\index{fossil fuels}. 
 Fossil fuels
@@ -489,12 +491,12 @@ by energy return ratios of today's food system is:
 ``We don't eat food; we eat oil.''
 \end{mcframe}
 
-A sustainability challenge associated energy in agriculture “how can the energy inputs to  
-agriculture be made sustainable?''
+A sustainability challenge associated with energy in agriculture is 
+“how can the energy inputs to agriculture be made sustainable?''
 
 %++++++++++++++++++++++++++++++
-\subsection{Waste in the food system}
-\label{sec:ag_metrics}
+\subsection{Food waste}
+\label{sec:ag_mass_Sankey}
 %++++++++++++++++++++++++++++++
 
 Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based, material-flow
@@ -524,9 +526,10 @@ animal_products <- 51470 + 76280 + 7920 # million pounds
 animal_efficiency <- animal_products / animal_inputs * end_use_food_efficiency
 @
 
-Several observations can be made from Figure~\ref{fig:food_and_ag_material_flow},
+Several observations can be made from 
+Figure~\ref{fig:food_and_ag_material_flow}~\citep[Fig.~1]{Heller:2000wg}.
 % shows a Sankey diagram\index{Sankey diagram!agriculture}
-which shows the material flows in the U.S.\ agriculture system~\citep[Fig.~1]{Heller:2000wg}.
+%which shows the material flows in the U.S.\ agriculture system~\citep[Fig.~1]{Heller:2000wg}.
 First, the mass efficiency\index{efficiency!mass-based}
 of the agriculture system\index{efficiency!agriculture system}
 is low.
@@ -563,6 +566,8 @@ weather- and climate-related supply-side disruptions are
 more significant than demand-side disruptions
 for determining food prices.
 
+A sustainability challenge associated the food distribution system is
+“how can food waste be eliminated?''
 
 %++++++++++++++++++++++++++++++
 \subsection{Greenhouse gas emissions}
@@ -570,8 +575,8 @@ for determining food prices.
 
 Globally, food and land use account for 23\% of GHG emissions~\cite{IPCC:2018aa}.
 \index{greenhouse gases}
-Tropical rainforest deforestation, particularly in Brazil and Indonesia,
-contributes significantly to global GHG emissions.
+% Tropical rainforest deforestation, particularly in Brazil and Indonesia,
+% contributes significantly to global GHG emissions.
 In the U.S., soil management accounts for over half of agricultural GHG emissions~\cite{USEPA:2021uj}.
 Over-application of synthetic nitrogen-based fertilizers releases significant
 amounts of N$_2$O, a very potent GHG.
@@ -707,7 +712,7 @@ eliminate GHG emissions from agriculture?''
 \label{sec:food_ag_efficiency}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The section describes changes needed to make agriculture more sustainable.
+This section describes changes needed to make agriculture more sustainable.
 % The focus of this section is on what changes are needed for sustainability. 
 % (Chapters~\ref{chap:government} and~\ref{chap:personal_action} are complementary
 % to this section, in that they focus on who makes changes for sustainability
@@ -717,7 +722,7 @@ of Equation~\ref{eq:IPARX}.
 To have reduced impacts \Iparen{}, agriculture needs to become more productive,
 that is, it should deliver the food society requires using less inputs: less
 land, less water, less energy, and less fertilizer and agrichemicals.
-In other words, if these changes could be made, it would lower the resource intensity
+In other words, these changes would lower the resource intensity
 \Rparen{} of agriculture.
 Another, related, set of changes is to lower the impact intensity \Xparen{} of 
 agriculture, for example, less runoff, less desertification, less groundwater contamination.
@@ -754,10 +759,10 @@ Renewable energy sources require lots of land (Figure~\ref{fig:PowerDensity}),
 land that is already mostly used for agriculture.
 One strategy is to combine agriculture and renewable energy generation. 
 For instance, animals can graze among the turbines of a wind farm.
-Another combination is to use solar panels to provide partial shade for crops 
+Another combination is to use solar panels to provide partial shade for crops that 
 prefer partial shade, like raspberries. 
-The plants will provide some cooling for the solar panels, thereby boosting the
-efficiency of the panels.
+The plants provide some cooling for the solar panels, thereby boosting the
+generation efficiency of the panels.
 The panels provide shade for crops, thereby reducing the amount of water needed 
 for irrigation.
 The tradeoff is that panel spacing may be less dense than would be typical for 
@@ -789,11 +794,11 @@ Warmer average global temperatures increase plants' need for water; they cool th
 by transpiration.
 However, water supplies are threatened by climate change: surface water (rivers, lakes, and
 reservoirs) evaporates more rapidly in warmer air.
-Moreover, climate change is changing weather and climatic patterns. 
-Rainfall patterns are changing. 
-Extreme weather events are changing (generally becoming more frequent and more destructive).
-winter cold that once killed pest species are not as effective.
-Natural pests and/or invasive species may experience expanded range due to a changing climate.
+Moreover, climate change is altering weather and climate patterns, such as distribution
+of precipitation.
+Extreme weather events are generally becoming more frequent and more destructive.
+Natural pests and/or invasive species may expand their range or period of activity
+due to a changing climate.
 
 Another effect of climate change is a shifting of growing regions, generally towards
 higher latitudes. 
@@ -830,11 +835,11 @@ atmosphere.
 In other words, sequestering carbon in the soil would be a significant step in
 solving the current climate crisis.
 
-Regenerative agriculture refers to a set of land management practices that build 
+Regenerative agriculture is a set of land management practices that builds 
 soil health by, among other things, sequestering carbon in the soil. 
-The particulars of what techniques are most effective vary with site history, 
+Which techniques are most effective vary with site history, 
 location, and biome but it is common to use managed grazing by livestock 
-as a key component of the soil management.
+as a key component of soil enhancement.
 Thus, while beef and dairy cattle are sources of GHG emissions under most current 
 agricultural practices, in regenerative agriculture they can play a role in net
 carbon sequestration~\cite{WOP2019}.
@@ -855,7 +860,7 @@ sequester carbon.
 In today's economy, agriculture is an energy sink rather than an energy source, 
 requiring the unsustainable input of fossil fuels.
 Agriculture is inefficient on a mass and energy basis.
-Lastly, agricultural is a source of a significant GHG emissions.
+Lastly, agricultural causes significant GHG emissions.
 Reducing environmental impacts requires additional investment, which
 makes food more expensive, consistent with Equation~\ref{eq:IPARX}
 (reduced impact~\Iparen{} comes from reduced affluence~\Aparen{}).
@@ -1112,7 +1117,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       What means does it use to achieve those objectives?
       Can you find a farm local to your area that is using some (or all) regenerative
       agriculture techniques? 
-      what is working well for that farm?
+      What is working well for that farm?
       What challenges do they face?
       \label{project:regenerative_ag}
       
