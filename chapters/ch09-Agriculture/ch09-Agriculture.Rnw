@@ -584,6 +584,7 @@ for determining food prices.
 A sustainability challenge associated the food distribution system is
 “how can food waste be eliminated?''
 
+
 %++++++++++++++++++++++++++++++
 \subsection{Greenhouse gas emissions}
 %++++++++++++++++++++++++++++++
@@ -678,6 +679,7 @@ food_emissions_total %>%
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
 
+
 %++++++++++++++++++++++++++++++
 \paragraph{CO$_2$}
 %++++++++++++++++++++++++++++++
@@ -697,7 +699,8 @@ nutrients.
 Figure~\ref{fig:GHG_food} shows what individual foods contribute to overall food
 emissions (but not what quantity of each are consumed).
 Taken together, Figures~\ref{fig:food_ghg}--\ref{fig:GHG_food} 
-paint a suggestive picture of agricultural CO$_2$ emissions.
+illustrate agricultural CO$_2$ emissions.
+
 
 %++++++++++++++++++++++++++++++
 \paragraph{CH$_4$}
@@ -712,7 +715,7 @@ Agricultural emissions are almost entirely from enteric digestion and manure man
 with a small amount (6\%) coming from rice cultivation.
 Enteric digestion refers to the production of methane in an animal's digestion.
 The amount of methane produced depends on the quality of the animal's feed.
-Seventy two percent of methane from enteric digestion comes from beef cattle; 24\% is from 
+Seventy-two percent of methane from enteric digestion comes from beef cattle; 24\% is from 
 dairy cattle~\cite{USEPA:2021uj}.
 Methane from manure management tends to come from liquified manure treatment, which
 is often the preferred method for concentrated animal populations.
@@ -734,67 +737,75 @@ This section describes changes needed to make agriculture more sustainable.
 % and how those changes will be made.)
 One obvious category of change appears from viewing agriculture through the lens
 of Equation~\ref{eq:IPARX}.
-To have reduced impacts \Iparen{}, agriculture needs to become more productive,
-that is, it should deliver the food society requires using less inputs: less
-land, less water, less energy, and less fertilizer and agrichemicals.
-In other words, these changes would lower the resource intensity
+To have reduced impacts \Iparen{}, agriculture needs to 
+use fewer inputs to deliver the food society needs: 
+less land, less water, less energy, and less fertilizer and agrichemicals.
+These changes would reduce the resource intensity
 \Rparen{} of agriculture.
-Another, related, set of changes is to lower the impact intensity \Xparen{} of 
-agriculture, for example, less runoff, less desertification, less groundwater contamination.
+Another, related, set of changes would be to lower 
+the impact of resources consumed by agriculture~\Xparen{}, 
+for example, less runoff, less desertification, less groundwater contamination.
 We leave to Chapters~\ref{chap:government} and~\ref{chap:personal_action} the 
-discussion of how such changes can be made (if possible) and who might take action
+discussion of how such changes can be made (when possible) and who might take action
 to make such changes.
 
 Any measure that will increase the efficiency or efficacy of the food system is 
 a step towards becoming more sustainable.
-For example, reducing food waste has the effect of reducing the inputs needed 
-(to grow extra food), reducing the emissions (from producing, consuming, and disposing
-of that food), and increasing the effective EROI of the food system.
+For example, reducing food waste has multiple effects:
+eliminating the inputs needed to grow wasted food,
+reducing the emissions from producing, consuming, and disposing of that food), and
+increasing the effective EROI of the food system.
 
-It is worth noting that enhanced agricultural productivity/efficacy/effiency (depending
-on which metric is under consideration) may not be subject to the rebound effect
-(Section~\ref{sec:rebound_effect}) in quite the same way as energy efficiency.
-Part of the rebound effect is that, when energy becomes cheaper, the energy service
-is used more in the activity that just became cheaper. 
-For instance, when an automobile has a lower intensity (more miles per gallon),
-then driving is cheaper, so more miles are driven, in addition to the savings being
-spent in other areas of the economy.
+It is worth noting that enhanced agricultural productivity, efficacy, or efficiency 
+(depending on the metric under consideration) 
+may be subject to limited rebound
+(Section~\ref{sec:rebound_effect})
+in the agriculture sector itself,
+a difference from rebound effects from energy efficiency.
+One aspect of the rebound effect involves using more of the energy service 
+when it becomes cheaper. 
+For instance, when an automobile has a lower energy intensity (fewer gallons per mile),
+driving becomes cheaper, so more miles are driven.
 However, in agriculture, the ``appetite'' for food is essentially fixed. 
-Cheaper food should not result in an increased demand for food.
+Cheaper food should not result in greatly increased demand for food.
 Certainly savings from agriculture will be spent in other areas of the economy
-but we don't expect to see a strong rebound in agriculture itself.
+(another important aspect of rebound),
+but we don't expect to see a strong rebound within in the agriculture itself.
 
 Another positive change for the sustainability of agriculture would be to transition
-the world's energy supply to renewable energy, given the energy-intensive nature of
-modern agriculture and its attendant low EROI.
+the world's energy supply to renewable energy, 
+given the energy-intensive nature of modern agriculture and its attendant low EROI.
 Of course, a transition to renewable energy would benefit more sectors than just agriculture;
 it would be universally beneficial and, in fact, is necessary for strong sustainability.
 
 Renewable energy sources require lots of land (Figure~\ref{fig:PowerDensity}), 
 land that is already mostly used for agriculture.
-One strategy is to combine agriculture and renewable energy generation. 
+One strategy could be to combine agriculture and renewable energy generation
+on the same land. 
 For instance, animals can graze among the turbines of a wind farm.
-Another combination is to use solar panels to provide partial shade for crops that 
+Another option could be to use solar panels to provide partial shade for crops that 
 prefer partial shade, like raspberries. 
 The plants provide some cooling for the solar panels, thereby boosting the
-generation efficiency of the panels.
+energy generation efficiency of the panels.
 The panels provide shade for crops, thereby reducing the amount of water needed 
 for irrigation.
 The tradeoff is that panel spacing may be less dense than would be typical for 
-industrial PV installation, so the crops have to make up the difference in 
+industrial photovoltaic installation, so the crops have to make up the difference in 
 profitability per acre.
 
 Since the transition to renewable energy is the topic of 
-Section~\ref{sec:low_carbon_transition}, we won't revisit that here. 
+Section~\ref{sec:low_carbon_transition}, we won't revisit it here. 
 Instead, the rest of this section focuses on two further transitions necessary
 for agricultural sustainability: shifts in agricultural
 practices to be resilient to the effects of climate change and the need for 
 regenerative agriculture.
 
+
 %++++++++++++++++++++++++++++++
 \subsection{Climate change resiliency}
 \label{sec:ag_CC_resilience}
 %++++++++++++++++++++++++++++++
+
 %Water. Heat. Changing weather patterns. Growing zones will change. Pests and invasive species.
 Climate change is already presenting challenges for agriculture. 
 Ensuring that humanity has enough food in the future requires that agriculture change 
@@ -828,32 +839,36 @@ to maximize agricultural productivity.
 On the other hand, increasing inputs will accelerate soil depletion, intensity runoff
 and other agricultural emissions, and shorten the weak-sustainability horizon for the 
 use of nonrenewable resources such as petroleum, fossil water, and phosphate deposits.
-The climate-change crisis is an opportunity to rethink ``business as usual'' and to 
+The climate-change crisis provides an opportunity to rethink ``business as usual'' and to 
 develop new practices that will be effective on a warmer planet.
+
 
 %++++++++++++++++++++++++++++++
 \subsection{Agriculture to sequester carbon}
 \label{sec:ag_C_sequest}
 %++++++++++++++++++++++++++++++
+
 As mentioned above, agriculture and land use are a significant source of humanity's 
 GHG emissions. 
 For sustainability, agriculture must become a carbon sink rather than a source 
 for carbon emissions. 
 Human agricultural practices over the last 12,000 years (but mostly since 1800) 
-have released 116 Gt of carbon from the Earth's soil~\cite[Fig.~2]{Sanderman2017}.
+have released 116~Gt of carbon from the Earth's soil~\cite[Fig.~2]{Sanderman2017}.
 Returning carbon to the soil would make the soil more fertile and would have
 positive climate-change implications.
-Figure~\ref{fig:Fig-SPM-10} indicates we have roughly 3000 Gt of CO$_2$ to remove
+Figure~\ref{fig:Fig-SPM-10} indicates we have roughly 3000~Gt of CO$_2$ to remove
 from the atmosphere. 
-Replacing 116 Gt of carbon in the soil would remove 425.3 Gt of CO$_2$ from the
+Replacing 116~Gt of carbon in the soil would remove 425.3~Gt of CO$_2$ from the
 atmosphere.
-In other words, sequestering carbon in the soil would be a significant step in
+In other words, sequestering carbon in the soil would be a significant step toward
 solving the current climate crisis.
 
-Regenerative agriculture is a set of land management practices that builds 
+Regenerative agriculture
+is a set of land management practices that builds 
 soil health by, among other things, sequestering carbon in the soil. 
-Which techniques are most effective vary with site history, 
-location, and biome but it is common to use managed grazing by livestock 
+Which regenerative agriculture techniques are most effective varies with site history, 
+location, and biome, but 
+it is common to use managed grazing by livestock 
 as a key component of soil enhancement.
 Thus, while beef and dairy cattle are sources of GHG emissions under most current 
 agricultural practices, in regenerative agriculture they can play a role in net
@@ -861,28 +876,30 @@ carbon sequestration~\cite{WOP2019}.
 See~\ref{project:regenerative_ag} for some tips on investigating regenerative
 agriculture in more detail.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary}
 \label{sec:food_transitions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Agriculture exists to feed the world's population~\Pparen.
-It must do so using as few resources~\Rparen{} as possible and producing minimal 
-impacts~\Xparen{} on the environment. 
-Currently, agricultural requires unsustainable mineral inputs, and involves 
-land-use practices that degrade soil fertility and harm the land's ability to 
+To be more sustainability, 
+agriculture must use as few resources as possible and produce minimal 
+impacts on the environment. 
+Currently, agricultural uses unsustainable mineral inputs and
+involves land-use practices that degrade soil fertility and harm the land's ability to 
 sequester carbon.
 In today's economy, agriculture is an energy sink rather than an energy source, 
 requiring the unsustainable input of fossil fuels.
-Agriculture is inefficient on a mass and energy basis.
-Lastly, agricultural causes significant GHG emissions.
-Reducing environmental impacts requires additional investment, which
-makes food more expensive, consistent with Equation~\ref{eq:IPARX}
-(reduced impact~\Iparen{} comes from reduced affluence~\Aparen{}).
-However, food is a basic human need; it is one of the few things we absolutely 
-cannot do without. 
+Agriculture is inefficient on both mass and energy bases.
+Unfortunately, today's agriculture system causes significant GHG emissions.
+Reducing environmental impacts from agriculture will require additional investment, which
+may make food more expensive.
+However, food is a basic human need; 
+it is one of the few things we absolutely cannot do without.
 Therefore, it is crucially important to make choices, individually and corporately,
-that result in a sustainable agricultural system. 
+that make the agriculture system more sustainable, 
+while resolving distributional issues and improving food access for all.
 
 % On the personal level,
 % eating closer to the base of the food chain and
@@ -907,8 +924,8 @@ that result in a sustainable agricultural system.
 %% Redirect subsidies to remove marginal land from raising livestock to
 %% reforestation and carbon sequestration.
 
-A ``recipe'' for sustainable agriculture is given by food writer Michael Pollan,
-in seven words: ``Eat food. Not too much. Mostly plants.''
+A seven-word ``recipe'' for sustainable agriculture is given by food writer Michael Pollan:
+``[e]at food. Not too much. Mostly plants.''
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}
