@@ -31,15 +31,10 @@ contamination, ozone depletion, smog creation, habitat destruction, and many oth
   \iparx            \tag{\ref{eq:IPARX}}
 \end{equation}
 
-Chapter \ref{chap:introduction} points out the problems of exponential growth.
-Continued exponential growth is impossible on a finite planet with finite 
+Chapter \ref{chap:introduction} points out the problems of exponential growth\index{exponential growth}.
+Continued exponential growth\index{exponential growth} is impossible on a finite planet with finite 
 resources and finite boundaries.
 Continued and greater environmental impacts eventually run up against the Earth's limits.
-% Section \ref{sec:exp} shows that, for exponential growth, the ``eventually'' is
-% one doubling time.
-% In $ln(2)/r$ time units, the system will go from half its ``budget'' to being
-% at the limit, despite many, many previous doublings.
-% Part of the curse of exponential growth is that the end seems sudden.
 This chapter explores those boundaries---the ``budget,'' or carrying capacity, 
 of the planet.
 Exceeding Earth's carrying capacity degrades its ability to support life.
@@ -197,9 +192,6 @@ Or, perhaps, the demand for food
 will exceed the rate at which the ecosystem can supply food. 
 In both of these cases,
 the ecosystem does not supply needed resources. 
-% Add that the time this happens may be very short. If we look with a weak sustainability
-% criterion but have exponential growth, we may have used less than half the supply
-% but be less than one doubling period from using the rest of the supply.
 The deficit can be addressed in 
 two ways: either by reducing the demand or by modifying the ecosystem to increase 
 supply. 
@@ -220,7 +212,7 @@ Species extinctions, which is like losing rivets in an airplane, is another caus
 Because of tipping points and the nonlinear and interrelated nature of the
 ecosystem's dynamics, human actions can cause a series of cascading failures
 that will ultimately degrade the Earth's ability to support life. 
-Exponential growth, whether in human population or the economy, is analogous
+Exponential growth\index{exponential growth}, whether in human population or the economy, is analogous
 to heeling over a boat.
 Growth causes greater and greater demands on the ecosystem. 
 Eventually the boat (that is, the ecosystem) heels over so far that it capsizes.
@@ -512,7 +504,8 @@ erodable_limit_data %>%
                  There are five possible patterns for human development relative to the ecosystem
                  boundaries.
                  First, human activities might be of a scale so small that the boundaries are
-                 ``far away'' and exponential growth can proceed unimpeded, as in Figure \ref{fig:exp}, 
+                 ``far away'' and exponential growth\index{exponential growth}
+                 can proceed unimpeded, as in Figure \ref{fig:exp}, 
                  at least for a time.
                  Second, as in (a), the boundary is increasing due to human activity and
                  growth remains unimpeded.
@@ -665,7 +658,7 @@ fit_sentence <- function(.df) {
     dplyr::filter(coeffs == "r2") %>%
     magrittr::extract2("values")
   paste0("The red line shows an exponential curve fit to data after 1950 ", 
-         "with exponential growth rate of ", 
+         "with exponential growth\\index{exponential growth} rate of ", 
          b %>% sprintf(fmt = "%#.2f"), 
          "~\\%/year and R$^2$~=~", 
          r2 %>% sprintf(fmt = "%#.3f"), 

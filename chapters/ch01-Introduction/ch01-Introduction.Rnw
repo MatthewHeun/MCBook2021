@@ -9,17 +9,18 @@
 \label{chap:introduction}
 %#############################################################
 
-\epigraph{To infinity, and beyond!}{Buzz Lightyear}
+\epigraph{To infinity, and beyond!}{Buzz Lightyear\index{Lightyear, Buzz}}
 
 Let’s begin with a story.
 Once upon a time, a king was challenged to a game of chess by a poor scholar.
-If he lost, the king would have to pay the scholar a chessboard’s worth of
+If he lost, the king would have to pay the scholar a chessboard\index{chessboard}’s worth of
 grain, defined as one kernel of grain on the first square, two grains on the second
 square, four grains on the third square, and so on, with each subsequent square receiving
 double what was on the previous square.
-The king accepted the wager but lost the game.
+The king accepted the wager\index{king's wager} but lost the game.
 % according to chess.com a match is a series of games.
-A chessboard has eight rows and eight columns, so the king had to pay 2$^\text{64}-$1
+A chessboard\index{chessboard}
+has eight rows and eight columns, so the king had to pay 2$^\text{64}-$1
 grains.
 (See Section \ref{sec:exp} for an explanation of the math behind this formula.)
 Rice is seven thousand grains per pound ($\sim$~65~mg each),
@@ -31,32 +32,32 @@ which is more than 150 tons of rice for every person currently on planet Earth
 (worth about \$40,000 per person).
 For reference, people eat about 35 tons of food in a lifetime, 
 so this is~4.4 lifetimes' supply of food for every person on the planet.
-Clearly, the scholar's winnings won't all fit on an ordinary chessboard!
+Clearly, the scholar's winnings won't all fit on an ordinary chessboard\index{chessboard}!
 
 This story, which goes back at least to the 1200s AD, illustrates several aspects of the
 sustainability problem that have been evident for centuries:
-Exponential growth (Section \ref{sec:exp}) is
+\textbf{Exponential growth}\index{exponential growth} (Section \ref{sec:exp}) is
 % a) hard to understand and b) is
 inherently not sustainable;
 big numbers are hard to \href{https://en.wiktionary.org/wiki/grok}{grok};
 % Cognitive biases, Decartes’ chiliagon, Numerical cognition, Subitizing, Dunbar number, 50-year time frame.
 and making large wagers on limited understanding is unwise.
-At the moment, human society is making the king's wager writ large. 
-We are pursuing exponential growth without fully understanding the consequences.
+At the moment, human society is making the king's wager\index{king's wager} writ large. 
+We are pursuing exponential growth\index{exponential growth} without fully understanding the consequences.
 In short, we have sustainability challenges.
 
 You are reading this book because you think sustainability is important.
 And it is.
 In the long run, sustainability is one of the few things that matter at all.
-Sustainability is a challenging problem, in part due to exponential growth, 
+Sustainability is a challenging problem, in part due to exponential growth\index{exponential growth}, 
 in part due to limited understanding, 
 but also because sustainability problems are complex and interconnected.
 Each of the subproblems or subdomains of sustainability may have its own problems
-of exponential growth and limited knowledge.
+of exponential growth\index{exponential growth} and limited knowledge.
 %Sustainability complexity and we'll spend a lot of time looking at the interconnections
 %between different aspects of sustainability challenges.
 
-Furthermore, the king's wager hints at a social element of the sustainability problem.
+Furthermore, the king's wager\index{king's wager} hints at a social element of the sustainability problem.
 In the story, the king doesn't want to appear ``weak'' before his subject and so
 (rashly) accepts the wager.
 In sustainability, there is tremendous social (and sometimes economic) pressure
@@ -312,7 +313,7 @@ In the end, without environmental sustainability, there is no sustainability at 
 Two mathematical identities, IPAT and Kaya, have been used to express the impact
 of human activities on the environment.
 IPAT expresses ``impact''~\Iparen{} on the environment as the product of human
-population~\Pparen{} affluence~\Aparen{}, and technology~\Tparen{}.
+\textbf{population}~\Pparen{} \textbf{affluence}~\Aparen{}, and technology~\Tparen{}.
 The Kaya identity is a form of the IPAT equation but restricts environmental impacts~\Iparen{}
 to CO$_2$ emissions~(\:\!$\mft{I}_{\text{CO}_2}$).
 On the other hand, Kaya expands the generic expression for ``technology'' to be
@@ -323,8 +324,8 @@ Chapters~\ref{chap:planetary_boundaries}--\ref{chap:impact_intensity}
 of this book are organized around a hybrid of the IPAT and Kaya
 approaches.
 We keep the more general ``impact'' of IPAT but also generalize the expanded
-``technology'' expression from Kaya as the product of resource intensity of the economy~\Rparen{}
-and the impact of resources~\Xparen{}.
+``technology'' expression from Kaya as the product of \textbf{resource intensity of the economy}~\Rparen{}
+and the \textbf{impact of resources}~\Xparen{}.
 
 \begin{equation} \label{eq:IPARX}
   \iparx
@@ -378,8 +379,8 @@ Of course, the two are closely linked.
 \label{sec:exp}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Returning to the king's wager, for a series of doubling numbers, 
-like the number of grains on the scholar's chessboard squares: 
+Returning to the king's wager\index{king's wager}, for a series of doubling numbers, 
+like the number of grains on the scholar's chessboard\index{chessboard} squares: 
 1, 2, 4, 8, 16, 32, \ldots,
 the sum of all the
 numbers in the series is always one less than the next number in the series.
@@ -395,7 +396,7 @@ and one more than the sum of all previous $\mft{N} - \text{1}$ squares.
 
 Doubling on discrete squares (or in discrete time units) can be extended to 
 continuous time. 
-Exponential growth is growth at a constant rate (in percent per time), 
+Exponential growth\index{exponential growth} is growth at a constant rate (in percent per time), 
 which means doubling in a fixed amount of time.
 That is, the time it takes to double does not depend on the current amount. 
 If the (constant) rate of growth is \mft{r}, then amount of time to double is ln(2)/\mft{r}, 
@@ -404,50 +405,8 @@ For example, with a fixed 3\%/yr growth rate, GDP doubles every 23 years.
 If your investment portfolio has a 7\%/yr return, your wealth will double
 every 10 years.
 
-% \begin{figure}
-% \centering
-% \includegraphics[width=\figwidth]{chapters/ch01-Introduction/figures/exponential.pdf}
-% \caption{Exponential growth. When $y$ grows exponentially with time $t$ at
-% rate $r$, that is, $y=e^{rt}$, value of $y$ at time $N$ is exactly half the value
-% of $y$ at time $N+0.693/r$. The area under the curve before time $N$ (A)
-% is exactly equal to the area between $N$ and $N+0.693/r$ (B), for any $N$.}
-% \label{fig:exp_old}
-% \end{figure}
-% 
-% <<exp_old, fig.cap="Exponential growth. When \\mft{y} grows exponentially with time (\\mft{t}) at rate \\mft{r} (for example, \\mft{y} = e$^{\\mft{rt}}$), the value of \\mft{y} doubles every 0.693/\\mft{r} years. In this example, \\mft{r} = 0.1~/year (10~\\%/year), and \\mft{y} doubles every 6.93 years.">>=
-% r <- 0.1 # 1/year
-% exp_df <- data.frame(t = seq(0, 29, by = 0.01)) %>%
-%   dplyr::mutate(
-%     y = exp(r * t),
-%     fill = dplyr::case_when(
-%       t < 6.93 ~ "first",
-%       t >= 6.93 & t < 13.86 ~ "second",
-%       t >= 13.86 & t < 20.79 ~ "third",
-%       t >= 20.79 & t < 27.72 ~ "fourth",
-%       TRUE ~ NA_character_
-%     )
-%   )
-% 
-% ggplot2::ggplot(mapping = ggplot2::aes_string(x = "t", y = "y")) +
-%   ggplot2::geom_ribbon(data = exp_df,
-%                        mapping = ggplot2::aes_string(x = "t",
-%                                                      ymin = 1,
-%                                                      ymax = "y",
-%                                                      fill = "fill")) +
-% 
-%   ggplot2::scale_x_continuous(breaks = c(0, 6.93, 13.86, 20.79, 27.72)) +
-%   ggplot2::scale_y_continuous(limits = c(1, NA), breaks = c(1, 2, 4, 8, 16)) +
-%   ggplot2::scale_fill_viridis_d(direction = -1, guide = "none", begin = 0, end = 1) +
-% 
-%   ggplot2::geom_line(data = exp_df, colour = mc_title_blue, size = 1) +
-% 
-%   ggplot2::labs(x = "t [years]", y = "y") +
-%   
-%   MKHthemes::xy_theme()
-% @
-% 
 
-<<exp, fig.scap="Mass of grain on the chessboard in the king's wager", fig.cap="Mass of grain on each square of the chessboard in the king's wager. The last row of the chessboard (squares 57--64) contains nearly all of the grain. Pg is petagram; 1~Pg $=$ 10$^{\\text{12}}$~kg.">>=
+<<exp, fig.scap="Mass of grain on the chessboard\\index{chessboard} in the king's wager\\index{king's wager}", fig.cap="Mass of grain on each square of the chessboard in the king's wager. The last row of the chessboard (squares 57--64) contains nearly all of the grain. Pg is petagram; 1~Pg $=$ 10$^{\\text{12}}$~kg.">>=
 chessboard_data <- tibble::tibble(x = 1:64) %>% 
   dplyr::mutate(
     y = 2^(x - 1), 
@@ -468,34 +427,14 @@ chessboard_data %>%
   MKHthemes::xy_theme()
 @
 
-% Figure~\ref{fig:exp} shows the mass of grain on each square of the chessboard.
-% In the discrete case, like grain on a chessboard, the number of grains on the
-% next square is always one more than the sum of all the previous squares.
-% In the continuous case, the area under the curve between ``now'' and the next
-% doubling is more than the sum of all previous areas.
-% Thus, in Figure~\ref{fig:exp}, the yellow area has a value of 10, the blue
-% area has a value of 20, the purple area has a value of 40, and the green 
-% area has a value of 80.
-% Purple is more than blue plus yellow and green is more than purple plus blue plus yellow.
-% 
-% If the line in Figure~\ref{fig:exp} represents population or GDP, then the area
-% under the line represents the resources needed to support that activity.
-% For instance, the area could represent the amount of food necessary to feed the 
-% population.
-% (People eat an approximately constant amount of food per time, 
-% see Chapter~\ref{chap:agriculture}.
-% The various resources needed by the economy to produce a unit of GDP may be assumed
-% to be constant over a short period of time but are not constant long term, 
-% see Chapter~\ref{chap:resource_intensity}.)
-
-Figure~\ref{fig:exp} shows the mass of grain on each square of the chessboard.
+Figure~\ref{fig:exp} shows the mass of grain on each square of the chessboard\index{chessboard}.
 The sharp increase at the right side of figure
-is characteristic of exponential growth over any time scale. 
-If the chessboard were extended by another row, the new row (squares 65--72) 
+is characteristic of exponential growth\index{exponential growth} over any time scale. 
+If the chessboard\index{chessboard} were extended by another row, the new row (squares 65--72) 
 would make current last row (squares 57--64) look as small and insignificant as
 squares 49--56 currently appear.
 
-Figure~\ref{fig:exp} can represent other quantities that are growing exponentially,
+Figure~\ref{fig:exp} can represent other quantities that are growing exponentially\index{exponential growth},
 like GDP.
 The blue area then represents the resources needed to support that activity.
 For instance, the blue area could represent the amount of energy necessary to create 
@@ -505,10 +444,9 @@ to be constant over a short period of time but are not constant long term;
 see Chapter~\ref{chap:resource_intensity}.)
 
 Population~\Pparen{} and affluence~\Aparen{}
-in Equation~\ref{eq:IPARX} have been growing
-exponentially. 
-Chapter~\ref{chap:population} gives us some hope that population won't keep growing 
-exponentially.
+in Equation~\ref{eq:IPARX} have been growing exponentially\index{exponential growth}. 
+Chapter~\ref{chap:population} gives us some hope that population won't continue
+growing exponentially\index{exponential growth}.
 (In fact, there are some indications world population may fall after a peak
 in the mid-twenty-first century.)
 However, world economies are actively managed to have continual growth 
@@ -520,7 +458,7 @@ resources (energy) used in all of history to date.
 % rather than provide economic growth with zero resource cost;
 % efficiency improvements are subject to diminishing returns, 
 % see Figure~\ref{fig:E_vs_GDP_graph}.)
-Because of this exponential economic growth, resource use grows continually to infinity.
+Because of this exponential economic growth\index{exponential growth}, resource use grows continually to infinity.
 Humanity is not on a sustainable path.
 
 
@@ -902,7 +840,7 @@ the full restoration is likely to cost more than \euro{8}~billion.
       \label{project:old-growth-forest}
       
 \item \label{project:alt_exp}
-      An alternative to the description of exponential growth given in 
+      An alternative to the description of exponential growth\index{exponential growth} given in 
       Section~\ref{sec:exp} is to use the form 
       $\mft{y}_\mft{N} = \mft{y}_\text{0} (\text{1} + \mft{r})^\mft{N}$, where $\mft{y}_\text{0}$
       is the initial amount,

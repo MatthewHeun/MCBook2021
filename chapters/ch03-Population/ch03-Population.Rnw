@@ -239,10 +239,10 @@ The population growth rate, in~\%/yr, on the other hand, expresses growth in a w
 independent of population size.
 If the population growth rate
 (in \%/year) is constant,
-population grows exponentially; see Section~\ref{sec:exp}.
+population grows exponentially\index{exponential growth}; see Section~\ref{sec:exp}.
 Even if the population growth rate changes slightly over time (as it has over the
 last sixty years, dropping from about 2\%/year to about 1\%/year),
-exponential growth is a good
+exponential growth\index{exponential growth} is a good
 description of how population changes with time.
 
 Figure~\ref{fig:UN_population_prospect} shows projections made by the United Nations\index{United Nations}
@@ -378,7 +378,7 @@ Thus, population is predicted to first grow rapidly and then stabilize.
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Demographic transition theory gives us some hope for sustainability, namely, that
-the total human population~\Pparen{} won't \textit{continue} to grow exponentially.
+the total human population~\Pparen{} won't \textit{continue} to grow exponentially\index{exponential growth}.
 On the other hand, slowing of growth is predicated on increasing GDP per capita
 (the \mft{A} term in Equation~\ref{eq:IPARX}).
 \end{mcframe}
@@ -741,7 +741,7 @@ Two influential modern neo-Malthusian works are \emph{The Population Bomb} (1968
 by Paul Ehrlich\index{Ehrlich, Paul}, and \emph{Limits to Growth} (1972), commissioned by the Club of
 Rome.\index{Club of Rome}
 \emph{Limits to Growth} warned of ``a rather sudden and uncontrollable decline
-in both population and industrial capacity'' due to exponential growth in the
+in both population and industrial capacity'' due to exponential growth\index{exponential growth} in the
 rate of use of nonrenewable resources.
 Likewise, \emph{The Population Bomb} predicted that in ``the 1970s hundreds of
 millions of people will starve to death.''
@@ -757,7 +757,7 @@ The economy is the mechanism by which techno-optimists expect human ingenuity
 to overcome all resource scarcities.
 The price of any scarce resource will rise, thereby incentivizing development and use of
 alternative resources.
-\emph{Limits to Growth} assumed pollution would grow exponentially but
+\emph{Limits to Growth} assumed pollution would grow exponentially\index{exponential growth} but
 pollution-control technology would not.
 Techno-optimists, on the other had, claim that it is technologically possible to produce,
 for example, abundant energy with little to no pollution.
@@ -803,7 +803,8 @@ Likely, there are true elements to both sides of this debate.
 % Which components and which areas are correct and helpful for guiding future policy
 % and which are not remains to be seen.
 It is certainly true that a finite planet does not contain infinite resources.
-Exponential economic growth can't continue forever with finite resources.
+Exponential economic growth\index{exponential growth}
+can't continue forever with finite resources.
 On the other hand, we've done pretty well so far and, by most measures, human
 life is better now than it has ever been.
 % Whether you believe that will continue and, if so, for how long seems to depend
@@ -824,7 +825,8 @@ The scale of human population determines the extent of our impact on the planet
 through our economic activity.
 Conversely, it is also our economic system that incentivizes
 a reduction in population growth (or seems to).
-While human population has grown exponentially, there are signs that trend is slowing
+While human population has grown exponentially\index{exponential growth},
+there are signs that trend is slowing
 and may even reverse.
 The next chapter will consider ways in which human affluence~\Aparen{} affects sustainability.
 
@@ -946,8 +948,9 @@ published August 17, 2020. \\
 
 \item It is interesting to note that Malthus's book was published (1798) just before before
       Figure~\ref{fig:PopulationGraph} begins (that is, 1800 AD).
-      On the one hand, exponential growth always looks dramatic;
-      Figure~\ref{fig:exp} shows exponential growth for any time \mft{t}.
+      On the one hand, exponential growth\index{exponential growth}
+      always looks dramatic;
+      Figure~\ref{fig:exp} shows exponential growth\index{exponential growth} for any time \mft{t}.
       On the other hand, Malthus had not yet experienced the very dramatic rise
       in world population that occurred post-1800.
       How would Malthus's viewpoint have been different if he were writing in the

@@ -280,7 +280,7 @@ Note that the purpose of many national and international economic policies is to
 continually increase affluence and/or GDP.
 Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
 that these policies have been effective.
-Both world GDP and affluence \Aparen{} have been growing exponentially 
+Both world GDP and affluence \Aparen{} have been growing exponentially\index{exponential growth} 
 since 1950 at rates of 
 \Sexpr{gdp_growth_rate}~\%/year and 
 \Sexpr{affluence_growth_rate}~\%/year, 
