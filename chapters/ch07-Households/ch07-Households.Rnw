@@ -634,28 +634,35 @@ Like all energy consumption,
 energy consumption for heating and cooling has sustainability implications;
 see Chapter~\ref{chap:resource_intensity}.
 Furnace efficiency\index{efficiency!furnaces} is quantified as
-Annual Fuel Utilization Efficiency~(AFUE)\index{Annual Fuel Utilization Efficiency (AFUE)},
+\textbf{Annual Fuel Utilization Efficiency}~(AFUE)\index{Annual Fuel Utilization Efficiency (AFUE)},
 the percentage of useful heat output
 to fuel energy input,
 accounting for transient effects during operation
 across the year.
-Any heat that leaves the home with the exhaust products reduces AFUE.
+Any heat that leaves the home with the exhaust products 
+reduces AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}.
 In the absence of heat lost via exhaust, 
-the AFUE rating of a furnace would be 100\%.
-AFUE is different from (and lower than) steady-state thermal efficiency.
+the AFUE\index{Annual Fuel Utilization Efficiency (AFUE)} 
+rating of a furnace would be 100\%.
+AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
+is different from (and lower than) steady-state thermal efficiency.
 The American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)
 \index{American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)}
 publishes Standard 103,
-which specifies how AFUE is to be measured~\cite{ASHRAE:vk}.
+which specifies how AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
+is to be measured~\cite{ASHRAE:vk}.
 
-All furnaces sold in the U.S.\ have an AFUE rating, and
-a minimum AFUE rating of 80\% is required
+All furnaces sold in the U.S.\ have
+an AFUE\index{Annual Fuel Utilization Efficiency (AFUE)} rating, and
+a minimum AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
+rating of 80\% is required
 for gas-fired furnaces.\index{furnaces!gas-fired}
 %**** Find a good-quality reference for minimum AFUE of 80\% in the U.S. ****
 High-efficiency furnaces recover more heat from exhaust gases,
-and some reach AFUE values of 98\% or higher.
+and some reach AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
+values of 98\% or higher.
 A tradeoff exists between efficiency and initial cost.
-Models with high AFUE are more expensive, initially,
+Models with high AFUE\index{Annual Fuel Utilization Efficiency (AFUE)} are more expensive, initially,
 but save money on fuel costs over time.
 
 Heat pumps move heat from the cold outdoors to the inside of a home.
@@ -1115,8 +1122,11 @@ United States, 1999: \\
       What considerations affect their more widespread adoption?
       
 \item This chapter discussed energy efficiency measures for many of the categories
-      featured in Figure \ref{fig:average_residential_energy}, such as AFUE, SEER
-      rating, and Energy Star labels. 
+      featured in Figure \ref{fig:average_residential_energy}, 
+      such as AFUE\index{Annual Fuel Utilization Efficiency (AFUE)},
+      SEER, and
+      Energy Star\index{Energy Star} 
+      labels. 
       However, some categories of appliances do not have an efficiency rating. 
       What are some appliances that could be rated that are not?
       (See, for instance, \url{https://www.energystar.gov/productfinder/}.)
@@ -1179,14 +1189,17 @@ United States, 1999: \\
 
 \begin{projects}
 
-\item Locate the heating system in your dwelling, and find its AFUE rating (furnace)
+\item Locate the heating system in your dwelling, and find its 
+      AFUE\index{Annual Fuel Utilization Efficiency (AFUE)} rating (furnace)
       or COP (heat pump).
-      If you were to replace your existing furnace with a furnace with a 98\% AFUE rating
-      or heat pump with a COP of 3.5,
+      If you were to replace your existing furnace with a furnace with a 
+      98\% AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
+      rating or heat pump with a COP of 3.5,
       how much energy would you save annually?
       What is the price of that saved energy?
       What is the annual cost savings from this energy efficiency intervention?
-      Assuming that the 98\% AFUE furnace or COP~$=$~3.5 heat pump lasts 20 years and 
+      Assuming that the 98\% AFUE\index{Annual Fuel Utilization Efficiency (AFUE)} furnace or
+      COP~$=$~3.5 heat pump\index{heat pump} lasts 20 years and 
       that you want to break even financially,
       what is the maximum price you should pay for 
       the upgraded furnace or heat pump?
