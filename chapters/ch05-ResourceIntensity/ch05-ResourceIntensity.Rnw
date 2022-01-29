@@ -79,7 +79,7 @@ only deliver 96 of those BTUs to your house.
 Such a furnace has an efficiency of 96\% (BTUs delivered per BTUs input).
 (See Section~\ref{sec:heating_and_cooling}
 for more on furnace efficiency and a related metric,
-Annual Fuel Utilization Efficiency (AFUE).)
+Annual Fuel Utilization Efficiency (AFUE)\index{Annual Fuel Utilization Efficiency (AFUE)}.)
 A natural gas power plant might burn gas at a rate that releases 300 MW of heat to generate
 100 MW of electricity. 
 Such a power plant has an efficiency of 33.3\%.
@@ -1195,7 +1195,8 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
 
 \begin{questions}
 
-  \item Some aquifers, such as the Ogallala aquifer, are called ``fossil water''
+  \item Some aquifers, such as the Ogallala aquifer\index{aquifer!Ogallala},
+        are called ``fossil water''
         because they were filled with glacial melt from the last ice age.
         Is using any such resource sustainable?
         What are the moral and ethical implications of leaving a valuable and

@@ -216,7 +216,7 @@ Lighting constitutes 4.9\% of total energy use in dwellings.
 A fourth factor, size and location, is also important.
 
 
-<<average_residential_energy, fig.scap="Proportions of household energy consumption by end use", fig.cap="Proportions of final energy consumption in U.S.\\ households by end use in 2015. ``Space heating'' includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. ``Space cooling'' includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. ``Refrigeration'' includes electricity for refrigerators and standalone freezers. ``Laundry'' includes electricity, natural gas, and propane for clothes washers and dryers. ``Cooking'' includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers. ``Entertainment'' includes electricity and natural gas for TVs, pool pumps, and hot tubs. ``Other'' includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
+<<average_residential_energy, fig.scap="Proportions of household energy consumption by end use", fig.cap="Proportions of final energy consumption in U.S.\\ households by end use in 2015. ``Space heating'' includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. ``Space cooling'' includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. ``Refrigeration'' includes electricity for refrigerators and standalone freezers. ``Laundry'' includes electricity, natural gas, and propane for clothes washers and dryers. ``Cooking'' includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers\\index{dishwasher}. ``Entertainment'' includes electricity and natural gas for TVs, pool pumps, and hot tubs. ``Other'' includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_category <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "End_use_by_demand_category.xlsx"),
                                                sheet = "data to plot") %>% 
   dplyr::select("Category", "Percentage") %>% 
@@ -907,9 +907,9 @@ In addition, gray water reuse systems can provide water for irrigation and toile
 thereby reducing clean water demand.
 
 Saving water and energy in dish washing can be accomplished by purchasing a
-high-efficiency automatic dishwasher.\index{efficiency!dish washers}
+high-efficiency \textbf{automatic dishwasher}\index{dishwasher}.
 The Energy Star program provides 
-information about energy-saving dishwashers~\cite{U.S.-Department-of-Energy:vn}.
+information about energy-saving dishwashers\index{dishwasher}~\cite{U.S.-Department-of-Energy:vn}.
 % "According to a recent study by detergent brand Cascade, it takes the average 
 % person about 15 seconds to hand-wash a dish. During that time, the sink uses 
 % half a gallon of water (a typical faucet spouts four gallons of water every two 
@@ -1044,7 +1044,7 @@ United States, 1999: \\
    \begin{enumerate}
       \item require everyone to live in cities (to reduce commuting distances), 
       \item outlaw clothes washers that use hot water (to save CO$_2$ emissions from water heating),
-      \item outlaw automatic dishwashers (to reduce energy consumption for water heating),
+      \item outlaw automatic dishwashers\index{dishwasher} (to reduce energy consumption for water heating),
       \item require all clothes washing to be done at laundromats (to reduce embodied energy of clothes washers in every home),
       \item require all homes to undergo an energy efficiency retrofit before going on the market to be sold
           (to improve energy efficiency of the housing stock),
@@ -1266,17 +1266,17 @@ United States, 1999: \\
       Is it a long-term financial benefit to do all your laundry at a laundromat? 
       How does the financial calculus change when the financial value of time is considered?
       
-\item Cascade (a Proctor \& Gamble brand and a manufacturer of automatic dishwasher
+\item Cascade (a Proctor \& Gamble brand and a manufacturer of automatic dishwasher\index{dishwasher}
       detergent) did a study that shows it takes an average
       person 15 seconds to wash a dish ``by hand.'' Assuming an average water flow
-      from the faucet of two gallons per minute and an Energy Star automatic dishwasher
+      from the faucet of two gallons per minute and an Energy Star automatic dishwasher\index{dishwasher}
       using 4 gallons of water per cycle, Cascade concluded that it is more
-      efficient to run the dishwasher with only eight dishes than to wash them by hand.
+      efficient to run the dishwasher\index{dishwasher} with only eight dishes than to wash them by hand.
       (Note they were not advocating running near-empty loads, only that the break-even
       point was a very low number of dishes.)
       Measure your sink's flow rate and time yourself washing a variety of types of dishes.
       What is your break-even point?
-      What is your break-even point for buying a new dishwasher?
+      What is your break-even point for buying a new dishwasher\index{dishwasher}?
       
 \item Find all the incandescent and compact fluorescent lamps in your dwelling, and 
       consider changing to LEDs.

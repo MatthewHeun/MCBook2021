@@ -264,7 +264,7 @@ Eventually, deforestation means that timber harvesting must stop because there
 will be no more forest to harvest. 
 Depleting mineral resources is unsustainable.
 Eventually, the minerals will be used up.
-Pumping aquifers faster than they can regenerate is unsustainable. 
+Pumping \textbf{aquifers}\index{aquifer} faster than they can regenerate is unsustainable. 
 Eventually, the aquifers will run dry.
 
 Economic sustainability involves questions of profit and loss, wealth management, and
@@ -332,7 +332,7 @@ and the \textbf{impact of resources}~\Xparen{}.
 \end{equation}
 
 In the IPARX formulation, impact~\Iparen{} is a list of impacts (that is, a vector quantity)
-that includes such things as global warming potential, aquifer depletion, and
+that includes such things as global warming potential, aquifer\index{aquifer} depletion, and
 eutrophication potential.
 Population~\Pparen{} is the number of people in the world.
 Affluence~\Aparen{} is GDP per capita per year.

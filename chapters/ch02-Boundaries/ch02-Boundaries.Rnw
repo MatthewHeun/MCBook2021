@@ -23,7 +23,7 @@ such as volcanic eruptions and wild fires, this book is primarily concerned with
 human impacts on the environment.
 Greenhouse gas emissions, such as CO$_2$, are our prime example.
 Other examples of human impact include deforestation, desertification, 
-aquifer depletion, plant and animal extinctions, ground water and soil 
+aquifer\index{aquifer} depletion, plant and animal extinctions, ground water and soil 
 contamination, ozone depletion, smog creation, habitat destruction, and many other 
 ``tions.''
 
@@ -529,11 +529,11 @@ by definition, exceed 100\%.
 In Figure~\ref{fig:GA3}, exceeding the boundary is possible, for short times, but the boundary 
 is robust. 
 That is, it recovers. 
-Renewable resources like grazing land, fisheries, timber, and aquifers can
+Renewable resources like grazing land, fisheries, timber, and aquifers\index{aquifer} can
 behave in this way. 
 Lastly, in Figure~\ref{fig:GA4}, exceeding the boundary causes a long-term reduction in the 
 capacity of the ecosystem to provide ecosystem services. 
-As above, renewable resources like grazing land, fisheries, timber, and aquifers
+As above, renewable resources like grazing land, fisheries, timber, and aquifers\index{aquifer}
 can have this behavior, if their capacity is exceeded too much or for too long.
 As another example, complex systems, like temperature regulation of the planet, can exhibit
 tipping points that can radically change limits to an ecosystem service when the 
@@ -749,7 +749,7 @@ far into the future.
 Scientists agree that avoiding irreversible effects of climate change
 requires limiting global average temperature rise to 1.5~\degC{} or less,
 relative to the global average temperature at the dawn of the industrial revolution.
-Our ``carbon budget'' is the amount of future CO$_2$e emissions
+Our \textbf{carbon budget}\index{carbon budget} is the amount of future CO$_2$e emissions
 that will eventually create 1.5~\degC{} total warming, 
 accounting for the (very small) rate of absorption of CO$_2$ by the biosphere.%
 \footnote{
@@ -758,14 +758,14 @@ accounting for the (very small) rate of absorption of CO$_2$ by the biosphere.%
   to get back to 350~ppm atmospheric CO$_2$ concentration
   within a few centuries.
 }
-As of 2021, the remaining carbon budget is 500~GtCO$_2$e 
+As of 2021, the remaining carbon budget\index{carbon budget} is 500~GtCO$_2$e 
 for a 50\% likelihood of remaining below 1.5~\degC{} warming~\cite[Table~SPM.2]{IPCC:2021tk}.%
 \footnote{
- For context, the carbon budget was 1500~GtCO$_2$e in 1990.
+ For context, the carbon budget\index{carbon budget} was 1500~GtCO$_2$e in 1990.
  If we want better odds of remaining below 1.5~\degC, 
- the carbon budget is smaller. 
- For 83\% odds, the remaining carbon budget is 300~GtCO$_2$e.
- If we want to live dangerously, the carbon budget for 17\% oddse
+ the carbon budget\index{carbon budget} is smaller. 
+ For 83\% odds, the remaining carbon budget\index{carbon budget} is 300~GtCO$_2$e.
+ If we want to live dangerously, the carbon budget\index{carbon budget} for 17\% odds
  of staying below 1.5~\degC{} warming is 900~GtCO$_2$e.
  \label{page:carbon_budget}
 }
@@ -794,7 +794,7 @@ SSP5-8.5 & Emissions triple by 2100 & 4.4 \\
 \label{tab:ipcc_scenarios}
 \end{table}
 
-Figure~\ref{fig:Fig-SPM-10} illustrates carbon budgets and highlights the challenges 
+Figure~\ref{fig:Fig-SPM-10} illustrates carbon budgets\index{carbon budget} and highlights the challenges 
 to avoiding 1.5~\degC{} total warming.
 Assuming no change in today's CO$_2$ emissions rate of about 35~GtCO$_2$/year
 (Figure~\ref{fig:CarbonEmissionsGraph}), 
@@ -812,7 +812,7 @@ The urgency of the climate challenge is the reason that
 energy and CO$_2$ emissions are the prime example of this book. 
 \end{mcframe}
 
-<<Fig-SPM-10, fig.pos="h!", fig.scap="Global temperature rise vs.\\ CO$_2$ emissions", fig.cap="Global temperature rise vs.\\ CO$_2$ emissions. Temperature rise is relative to the 1850--1900 global average temperature. The line labeled ``1850'' indicates the starting point for counting cumulative CO$_2$ equivalent emissions. The line labeled ``1990'' indicates cumulative emissions to that date, 1411~GtCO$_2$e. The line labeled ``2019'' indicates cumulative emissions to that date, 2411~GtCO$_2$e. The line labeled ``1.5~\\degC'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~\\degC{} warming by 2100, 2911~GtCO$_2$e. The carbon budget in 1990 was the distance between the ``1990'' line and the ``1.5~\\degC'' line, namely 1500~GtCO$_2$e. The current carbon budget is the distance between the ``2019'' line and the ``1.5~\\degC'' line, or about 500~GtCO$_2$e.  The red lines represent emissions under various future scenarios; see Table~\\ref{tab:ipcc_scenarios}. The relationship between future warming and cumulative emissions is only weakly dependent upon the emissions scenario. \\emph{Sources}: This figure was inspired by Figure~SPM.10 in the IPCC report \\emph{Climate Change 2021: The Physical Science Basis}~\\cite[p.~SPM-37]{IPCC:2021tk}. Data are available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\url{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}.">>=
+<<Fig-SPM-10, fig.pos="h!", fig.scap="Global temperature rise vs.\\ CO$_2$ emissions", fig.cap="Global temperature rise vs.\\ CO$_2$ emissions. Temperature rise is relative to the 1850--1900 global average temperature. The line labeled ``1850'' indicates the starting point for counting cumulative CO$_2$ equivalent emissions. The line labeled ``1990'' indicates cumulative emissions to that date, 1411~GtCO$_2$e. The line labeled ``2019'' indicates cumulative emissions to that date, 2411~GtCO$_2$e. The line labeled ``1.5~\\degC'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~\\degC{} warming by 2100, 2911~GtCO$_2$e. The carbon budget\\index{carbon budget} in 1990 was the distance between the ``1990'' line and the ``1.5~\\degC'' line, namely 1500~GtCO$_2$e. The current carbon budget is the distance between the ``2019'' line and the ``1.5~\\degC'' line, or about 500~GtCO$_2$e.  The red lines represent emissions under various future scenarios; see Table~\\ref{tab:ipcc_scenarios}. The relationship between future warming and cumulative emissions is only weakly dependent upon the emissions scenario. \\emph{Sources}: This figure was inspired by Figure~SPM.10 in the IPCC report \\emph{Climate Change 2021: The Physical Science Basis}~\\cite[p.~SPM-37]{IPCC:2021tk}. Data are available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\url{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}.">>=
 scenario_size <- 0.3
 spm_10_data <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "SPM_10.xlsx"),
                                   sheet = "data to plot")
@@ -1115,14 +1115,14 @@ New York: Bloomsbury,
       to climate change?
 
 \item In 1990, the most recent year for which the United Nations 
-      Framework Convention on Climate Change had data, the carbon budget was 1500~GtCO$_2$,
+      Framework Convention on Climate Change had data, the carbon budget\index{carbon budget} was 1500~GtCO$_2$,
       meaning that if 1500~GtCO$_2$ were emitted, the Earth's temperature would 
       eventually rise by 1.5~\degC{} relative to pre-industrial conditions.
       With a then-current global emissions rate of 22.7~GtCO$_2$/year, the carbon
       budget would be ``spent'' by 2056, assuming no increase in emissions rate.
       Since 1990, the global emission rate for carbon has increased, 
       as shown in Figure~\ref{fig:CarbonEmissionsGraph}. 
-      In 2021, the remaining carbon budget is 500~GtCO$_2$ with an emissions 
+      In 2021, the remaining carbon budget\index{carbon budget} is 500~GtCO$_2$ with an emissions 
       rate of 35~GtCO$_2$/year.
       In other words, the budget will be used up in 2035, 
       again assuming no increase in emissions rate. \label{question:carbon_budget}
@@ -1135,7 +1135,8 @@ New York: Bloomsbury,
 \item Climate models are somewhat uncertain. 
       The numbers in \ref{question:carbon_budget} are expressed as 50\% probabilities.
       As the footnote on page~\pageref{page:carbon_budget} indicates, using our 
-      carbon budget might produce an average temperature increase of more or less than 1.5~\degC. 
+      carbon budget\index{carbon budget}
+      might produce an average temperature increase of more or less than 1.5~\degC. 
       Emitting less carbon gives us a higher probability of staying below 1.5~\degC{}
       average global temperature increase relative to the pre-industrial climate.
       Emitting more carbon gives a lower probability of of staying below 1.5~\degC{}
@@ -1143,11 +1144,11 @@ New York: Bloomsbury,
       \begin{enumerate}
       \item What are the pros and cons of having a higher (or lower) probability of staying 
             below 1.5~\degC{} average global temperature increase?
-      \item Who ``makes the decision(s)'' to use more or less of our carbon budget?
+      \item Who ``makes the decision(s)'' to use more or less of our carbon budget\index{carbon budget}?
       \item The precautionary principle says we should exercise caution or restraint in
             situations where there is uncertainty or limited information and the possibility
             for harm exists, for instance, with a new medicine that hasn't been thoroughly tested.
-            How does the precautionary principle apply to management of the carbon budget?
+            How does the precautionary principle apply to management of the carbon budget\index{carbon budget}?
             (See also \ref{project:percautionary_principle}.)
       \end{enumerate}
       
