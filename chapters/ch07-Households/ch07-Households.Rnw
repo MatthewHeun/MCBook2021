@@ -666,11 +666,13 @@ Models with high AFUE\index{Annual Fuel Utilization Efficiency (AFUE)} are more 
 but save money on fuel costs over time.
 
 Heat pumps move heat from the cold outdoors to the inside of a home.
-Heat pump efficiency is quantified by a coefficient of performance (COP), 
+Heat pump efficiency is quantified by a
+\textbf{coefficient of performance (COP)}\index{coefficient of performance (COP)}, 
 the ratio of heat delivered to electric energy consumed.
-The COP of a heat pump varies with outdoor temperature, 
+The COP\index{coefficient of performance (COP)} of a heat pump varies with outdoor temperature, 
 but typical values is 2--3.
-Heat pumps with higher COP will be more efficient and cost less to operate, 
+Heat pumps with higher COP\index{coefficient of performance (COP)}
+will be more efficient and cost less to operate, 
 even if they have higher purchase price.
 A sustainability challenge associated with heating systems is
 ``how can we encourage home builders and home owners to install 
@@ -1038,7 +1040,7 @@ United States, 1999: \\
       from a sustainability point of view?
       
 \item What ways can you imagine to re-use or recycle water in a home
-      to get closer to a circular economy?
+      to get closer to a circular economy\index{circular economy}?
 
 \item \label{question:household_policies} Here are several household-related sustainability policies:
    \begin{enumerate}
@@ -1142,7 +1144,7 @@ United States, 1999: \\
       than a vacuum cleaner that lasts only 5 years? Under what conditions or
       assumptions?
       
-\item Should consumer appliances and household goods be required to contribute to a circular economy?
+\item Should consumer appliances and household goods be required to contribute to a circular economy\index{circular economy}?
       If so, under what conditions or which appliances? 
       Should electronics recycling be mandatory?
       
@@ -1191,15 +1193,16 @@ United States, 1999: \\
 
 \item Locate the heating system in your dwelling, and find its 
       AFUE\index{Annual Fuel Utilization Efficiency (AFUE)} rating (furnace)
-      or COP (heat pump).
+      or COP\index{coefficient of performance (COP)} (heat pump).
       If you were to replace your existing furnace with a furnace with a 
       98\% AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
-      rating or heat pump with a COP of 3.5,
+      rating or heat pump with a COP\index{coefficient of performance (COP)} of 3.5,
       how much energy would you save annually?
       What is the price of that saved energy?
       What is the annual cost savings from this energy efficiency intervention?
       Assuming that the 98\% AFUE\index{Annual Fuel Utilization Efficiency (AFUE)} furnace or
-      COP~$=$~3.5 heat pump\index{heat pump} lasts 20 years and 
+      COP~$=$~3.5\index{coefficient of performance (COP)}
+      heat pump\index{heat pump} lasts 20 years and 
       that you want to break even financially,
       what is the maximum price you should pay for 
       the upgraded furnace or heat pump?
