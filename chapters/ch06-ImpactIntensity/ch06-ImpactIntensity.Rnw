@@ -552,7 +552,7 @@ There are several options for grid-scale electricity storage, including
 batteries and potential energy storage.
 Battery storage will require great quantities of rare earth metals 
 and other exotic materials, 
-already included on lists of critical raw materials;
+already included on lists of critical raw materials\index{critical raw materials (CRMs)};
 see Section~\ref{sec:resources_strong_sustainability}. 
 Gravitational potential energy could supply energy storage with nearly 100\% 
 round-trip efficiency.
@@ -1162,7 +1162,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       
 \item Do you agree with the process of elimination in Section~\ref{sec:reducing_c}?
       Are there other approach(es)? If so, what are they?
-      What assumptions lead you to prefer one approach over another? % degrowth vs. techno optimists.
+      What assumptions lead you to prefer one approach over another?
 
 \item Should carbon capture and storage/sequestration be pursued as a stop-gap
       measure (until we get fully renewable energy)?

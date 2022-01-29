@@ -533,7 +533,8 @@ weak sustainability levels of consumption for these two materials and CO$_2$ emi
 To underscore the importance of sustainably consuming natural resources,
 germanium (now being consumed at twice its sustainable rate, 
 $\rho$~=~100\% in Figure~\ref{fig:PercentageOfSustainable})
-is one of the critical raw materials in Table~\ref{tab:CRMs}.
+is one of the \textbf{critical raw materials}\index{critical raw materials (CRMs)} (CRMs)
+in Table~\ref{tab:CRMs}.
 
 <<PercentageOfSustainable, fig.scap="Percentage above weak sustainability for Zn, Ge, and CO$_2$", fig.width=3.25, fig.cap="Percentage above maximum weakly sustainable rates~($\\rho$). For zinc and germanium, the percentage above the average maximum weakly sustainable extraction rates. For CO$_2$, the percentage above maximum weakly sustainable emission rate. \\emph{Source}: \\citet[Tables~2.1--2.3]{Graedel:2010ab}.">>=
 weak_sust_data <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"),
@@ -1414,12 +1415,14 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         of Figure~\ref{fig:WeakSustEnergyGraph} change?
 
   \item Choose a material (not germanium or zinc)
-        from the European Commission list of critical raw materials in Table~\ref{tab:CRMs}.
+        from the European Commission list of critical raw materials\index{critical raw materials (CRMs)}
+        in Table~\ref{tab:CRMs}.
         Do today's consumption rates of that material meet weak or strong sustainability criteria?
         Provide suggestions for ways to bring consumption rates closer to strong sustainability.
 
   \item Research the source locations for the materials in Table~\ref{tab:CRMs}.
-        How would you characterize the geographic distribution of critical raw material sourcing?
+        How would you characterize the geographic distribution 
+        of critical raw material\index{critical raw materials (CRMs)} sourcing?
         Localized? Global? Other?
         What are the sustainability (environmental, economic, and social) implications
         of the geographical distribution of critical raw material sources?
