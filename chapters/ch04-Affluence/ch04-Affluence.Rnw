@@ -623,10 +623,10 @@ discussed in Chapter~\ref{chap:planetary_boundaries}.
 In response, there are calls for transitioning world economies
 to new operating regimes, different from continual growth.
 There are proposals for
-zero-growth (or steady-state),
-degrowth (or shrinking),
-circular, and
-doughnut
+\textbf{zero-growth}\index{zero-growth economy} (or steady-state),
+\textbf{degrowth}\index{degrowth economy} (or shrinking),
+\textbf{circular}\index{circular economy}, and
+\textbf{doughnut}\index{doughnut economy}
 economies.
 
 
@@ -672,7 +672,7 @@ A transition to steady state means that
 those economies will not grow to become even more unsustainable each year. 
 
 %..............................
-\paragraph{Degrowth} \index{economy!degrowth}\index{degrowth}
+\paragraph{Degrowth} \index{degrowth economy}\index{degrowth}
 %..............................
 
 Advocates of degrowth understand the fact that many economies need to become smaller
@@ -702,30 +702,30 @@ lower environmental impacts.
 
 
 %..............................
-\paragraph{Circular economy} \index{economy!circular}
+\paragraph{Circular economy}\index{circular economy}
 %..............................
 
 Another alternative to today's growth economies
-is a circular economy, which 
+is a circular economy\index{circular economy}, which 
 (a)~consumes only recycled (and, perhaps, renewable) materials and energy
 and 
 (b)~emits no waste. 
-A circular economy is impossible to achieve completely.
+A circular economy\index{circular economy} is impossible to achieve completely.
 Materials cannot be 100\% recycled and, for many materials, the recycling process
 degrades material properties. 
 
-It is unclear whether a circular economy is environmentally sustainable.
-The biggest flaw in the idea of a circular economy is that it requires continual energy input,
+It is unclear whether a circular economy\index{circular economy} is environmentally sustainable.
+The biggest flaw in the idea of a circular economy\index{circular economy} is that it requires continual energy input,
 in part because recycling of materials requires energy;
 see Section~\ref{sec:recycling}.
-Currently, the supply of renewable energy is insufficient to run a circular
-economy.
-To make a circular economy work, either renewable energy would have to be scaled
+Currently, the supply of renewable energy is insufficient to run a circular economy\index{circular economy}.
+To make a circular economy\index{circular economy} work, either renewable energy would have to be scaled
 up dramatically or the entire economy would have to be scaled down to match 
 the current supply of renewable energy.
 
-That said, the circular economy provides a helpful model to strive toward.
-A circular (or partly circular) economy would bring us closer to sustainability.
+That said, the circular economy\index{circular economy} provides a helpful model to strive toward.
+A circular (or partly circular) economy\index{circular economy} 
+would bring us closer to sustainability.
 
 
 %..............................
@@ -976,7 +976,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       to give up (some) control (that is, choice) of your electricity consumption?
       What does this tell you about your consumer preferences?
       
-\item A small example of (an attempted) circular economy is that
+\item A small example of (an attempted) circular economy\index{circular economy} is that
       some (high-end!) apparel manufacturer(s)
       will accept the worn-out garment back for recycling. 
       \begin{enumerate}
@@ -985,7 +985,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       \item Consider the price of such garments. What is the net effect of buying 
       such garments as opposed to more bargain clothing (make reference to Equation \ref{eq:IPARX}
       in your answer). 
-      \item Is clothing a good candidate for a circular economy?
+      \item Is clothing a good candidate for a circular economy\index{circular economy}?
       What more would you wish to know to answer with confidence? 
       \item What is the 
       energy content of clothing in its various life stages (materials, manufacture
@@ -1101,7 +1101,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       What are some management strategies that work for international and cross-cultural
       projects?
 
-\item Develop metrics for evaluating when, and to what extent, a circular economy 
+\item Develop metrics for evaluating when, and to what extent, a circular economy\index{circular economy} 
       makes environmental and economic sense for some product.
       
 \item What are ways that governments try to control the rate of economic growth (in~\%/yr)?
