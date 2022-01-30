@@ -835,21 +835,19 @@ many years in education and government led him to quip frequently
 \label{sec:rebound_effect}
 %++++++++++++++++++++++++++++++
 
-% When energy efficiency is deployed as a means of reducing CO$_2$ emissions,
-% the carbon intensity of energy (\Xparen{} in the IPARX identity) will go down.
-Energy efficiency is widely seen as a means of reducing CO$_2$ emissions.
+Energy efficiency\index{energy efficiency} is widely seen as a means of reducing CO$_2$ emissions.
 The thinking goes that either the resource intensity (\:\!\REp{} in the IPARX identity, 
 Equation~\ref{eq:IPARX}) 
 or impact intensity~\XCOtwoparen{}, or both,
 will go down as efficiency rises.
-However, energy efficiency is known to stimulate economic activity 
+However, energy efficiency\index{energy efficiency} is known to stimulate economic activity 
 by a mechanism called the ``rebound effect''~\cite{Brockway:2021ww},
 wherein monetary savings (from reduced energy consumption at a newly-efficient device)
 are reinvested, leading to economic growth.
 Economic growth raises the GDP of an economy,
 so affluence~\Aparen{} will increase.
 As \mft{A} increases, energy consumption will increase.
-Whether energy efficiency actually saves energy and actually reduces CO$_2$ emissions
+Whether energy efficiency\index{energy efficiency} actually saves energy and actually reduces CO$_2$ emissions
 depends on the strength of the rebound effect.
 When rebound effect is so large as to wipe out the initial energy savings,
 ``backfire'' is said to occur~\cite{Sorrell:2009cg,Sorrell:2010ul}.
@@ -933,12 +931,12 @@ that represents the effectiveness of using energy to make GDP.
 This fact raises an interesting question:
 can we use improved economic effectiveness 
 (decreasing \REp{},
-brought about by rising energy efficiency)
+brought about by rising energy efficiency\index{energy efficiency})
 to reduce environmental impacts (\:\!\mft{I} in Equation~\ref{eq:IPARX}), 
 CO$_2$ emissions being the prime example)?
 It certainly helps, as decreasing \REp{}
 puts downward pressure on \ICOtwo{} in Equation~\ref{eq:IPARX}.
-However, recent research indicates that rising energy efficiency
+However, recent research indicates that rising energy efficiency\index{energy efficiency}
 (and declining~\REp{})
 has never reduced energy consumption or environmental impacts, 
 at least at the worldwide level~\cite{Brockway:2021ww}.
@@ -946,15 +944,16 @@ The rebound effect (Section~\ref{sec:rebound_effect}) is thought to be a strong 
 for the reason why efficiency has not led to decreases
 in energy consumption and CO$_2$ emissions over time.
 Indeed, a circular trap exists.
-Energy efficiency is known to stimulate economic growth, and 
+Energy efficiency\index{energy efficiency} is known to stimulate economic growth, and 
 increased economic activity leads to more energy consumption.
 Because of interactions between energy and the economy, 
-it is hard to see how energy efficiency alone 
+it is hard to see how energy efficiency\index{energy efficiency} alone 
 leads to reduced energy consumption and CO$_2$ emissions.
 We have never decoupled energy consumption from economic activity
 at the world level at any point in history.
 So long as energy consumption generates CO$_2$ emissions, 
-energy efficiency alone will be unlikely to decouple environmental impacts
+energy efficiency\index{energy efficiency}
+alone will be unlikely to decouple environmental impacts
 from economic activity.
 
 Economic growth, per-se, is not problematic.
@@ -1272,7 +1271,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         % 
         \begin{enumerate} [label=(\arabic*)]
 
-          \item the rebound effects from energy efficiency improvements are significant 
+          \item the rebound effects from energy efficiency\index{energy efficiency} improvements are significant 
                 and limit the potential for decoupling energy consumption from economic growth; 
 
           \item the contribution of energy to productivity improvements and economic growth 
@@ -1316,15 +1315,15 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         Is our current consumption rate weakly sustainable? 
         
   \item Section~\ref{sec:rebound_effect} discusses the rebound effect,
-        wherein monetary savings from energy efficiency are spent elsewhere in the economy,
+        wherein monetary savings from energy efficiency\index{energy efficiency} are spent elsewhere in the economy,
         raising energy consumption in other sectors.
         Green revolving funds~(GRFs) are thought to be a way to mitigate the rebound effect.
         A green revolving fund is the repository for 
-        monetary savings from energy efficiency.
-        Green revolving fund assets must be invested in further energy efficiency,
+        monetary savings from energy efficiency\index{energy efficiency}.
+        Green revolving fund assets must be invested in further energy efficiency\index{energy efficiency},
         thereby preventing ``leakage'' of the benefits 
         (reduced energy consumption and CO$_2$ emissions)
-        of energy efficiency.
+        of energy efficiency\index{energy efficiency}.
         Research green revolving funds. 
         Where have they been successful to reduce energy consumption and carbon emissions?
         Where have they failed?

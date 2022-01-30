@@ -316,8 +316,8 @@ of sulfur and nitrogen-containing pollutants occurs''~\cite{Fowler2020}.
 Hippocrates (circa 400 BC) was concerned about the effects of wood smoke on human health.
 Later, when coal emerged as a fuel for home heating, power generation, and
 industrial processes, coal-derived PM and sulfur compounds were additional concerns. 
-The introduction of ``dirty'' internal combustion engines 
-for transport intensified air-quality issues, particularly in urban areas.
+The introduction of ``dirty'' internal combustion engines\index{internal combustion engine (ICE) vehicle} 
+for transportation intensified air-quality issues, particularly in urban areas.
 Since the mid-twentieth century, air quality in North America, Europe, and Japan
 has improved.
 However, emissions in South and East Asia rose in the late twentieth and early 
@@ -509,10 +509,10 @@ Similarly for freight transport,
 the simplest way to increase transportation efficiency is to ensure that trucks and trains
 are filled to capacity when delivering freight.
 The benefits of such strategies are evident when using the 
-a transportation service efficacy metric instead of an energy efficiency metric
+a transportation service efficacy metric instead of an energy efficiency\index{energy efficiency} metric
 to evaluate the effectiveness of transportation services. 
 (See page~\pageref{page:efficiency_efficacy} for more details about
-the differences between energy efficiency and energy service efficacy.)
+the differences between energy efficiency\index{energy efficiency} and energy service efficacy.)
 
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -545,7 +545,7 @@ toward sustainable energy,
 thereby reducing the harmful environmental effects of fossil fuel combustion.
 Two solutions are often discussed:
 widespread use of biofuels\index{biofuels}
-in internal combustion engine (ICE) vehicles and
+in internal combustion engine (ICE) vehicles\index{internal combustion engine (ICE) vehicle} and
 widespread adoption of electric-vehicle\index{electric vehicle (EV)} technology.
 
 
@@ -799,7 +799,8 @@ transportation, petroleum, and technology.
 \item Under the right conditions (an electricity mix that includes renewable sources
       and a 150,000~km service life), \citet{Hawkins_2012} show that
       electric vehicles\index{electric vehicle (EV)} 
-      provide GHG emissions reductions relative to internal combustion engine vehicles
+      provide GHG emissions reductions relative 
+      to internal combustion engine vehicles\index{internal combustion engine (ICE) vehicle}
       at the expense of increased mineral resource depletion.
       The tradeoff between GHG emissions and mineral resource depletion is
       nearly impossible to decide on a quantitative or objective basis.
@@ -1030,7 +1031,7 @@ transportation, petroleum, and technology.
       
 \item The box on page~\pageref{page:efficiency_efficacy} highlights 
       the sustainability benefits of 
-      moving from energy efficiency to service efficacy. 
+      moving from energy efficiency\index{energy efficiency} to service efficacy. 
       In Section~\ref{sec:transportation_fuel_economy},
       the move from fuel economy 
       (actually, a machine efficacy measured in miles/gallon) to
@@ -1039,11 +1040,11 @@ transportation, petroleum, and technology.
       namely that filling empty seats in cars is a simple and effective form 
       of increasing effectiveness.
       Consider a different sustainability challenge besides transportation.
-      Develop or find an energy efficiency or a machine efficacy for your challenge
+      Develop or find an energy efficiency\index{energy efficiency} or a machine efficacy for your challenge
       that is analogous to fuel economy in miles/gallon.
       Develop or find a service efficacy for your challenge
       that is analogous to passenger-km/gallon.
-      What changes when you move from energy efficiency or machine efficacy to service efficacy?
+      What changes when you move from energy efficiency\index{energy efficiency} or machine efficacy to service efficacy?
       How does the move affect the way you think about the sustainability challenge?
       Does the move suggest new solutions to the sustainability challenge?
 

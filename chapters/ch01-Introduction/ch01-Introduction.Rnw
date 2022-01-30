@@ -437,10 +437,6 @@ However, world economies are actively managed to have continual growth
 The implication for sustainability is that the resources---for instance,
 energy---needed by the economy in the next 23 years will be more than the total
 resources (energy) used in all of history to date.
-% (Improvements in energy efficiency over time will tend to spur further economic growth
-% rather than provide economic growth with zero resource cost;
-% efficiency improvements are subject to diminishing returns,
-% see Figure~\ref{fig:E_vs_GDP_graph}.)
 Because of this exponential economic growth\index{exponential growth}, resource use grows continually to infinity.
 Humanity is not on a sustainable path.
 
@@ -483,9 +479,9 @@ Even the decomposition of compost takes sunlight, air, and rain.
 
 Because energy is vitally important,
 metrics have been developed to describe its use.
-For example, energy efficiency can be calculated
+For example, \textbf{energy efficiency}\index{energy efficiency} can be calculated
 for the use of energy in any process.
-Energy efficiency ($\eta$) is defined as
+Energy efficiency\index{energy efficiency}~($\eta$) is defined as
 
 \begin{equation} \label{eq:energy_efficiency_def}
   \eta \equiv \frac{\text{Energy out}}{\text{Energy in}} \; .

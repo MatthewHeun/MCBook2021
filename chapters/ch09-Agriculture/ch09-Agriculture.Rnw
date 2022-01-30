@@ -164,7 +164,7 @@ resource depletion and environmental impacts are key questions.
 That is, have the ecosystem's provisioning and/or support services (Section~\ref{sec:ecosystem_services})
 been exceeded?
 For example, Section~\ref{sec:electric_vehicles} considered 
-internal combustion engine (ICE) vehicles\index{internal combustion engine (ICE) vehicle} 
+\textbf{internal combustion engine (ICE) vehicles}\index{internal combustion engine (ICE) vehicle}
 and electric vehicles (EVs)\index{electric vehicle (EV)}.
 A reliable sustainability comparison depends on an accurate accounting of inputs and outputs.
 Section~\ref{sec:electric_vehicles} considered vehicle emissions
@@ -763,7 +763,7 @@ It is worth noting that enhanced agricultural productivity, efficacy, or efficie
 may be subject to limited rebound
 (Section~\ref{sec:rebound_effect})
 in the agriculture sector itself,
-a difference from rebound effects from energy efficiency.
+a difference from rebound effects from energy efficiency\index{energy efficiency}.
 One aspect of the rebound effect involves using more of the energy service 
 when it becomes cheaper. 
 For instance, when an automobile has a lower energy intensity (fewer gallons per mile),
@@ -773,7 +773,7 @@ Cheaper food should not result in greatly increased demand for food.
 Certainly savings from agriculture will be spent in other areas of the economy
 (another important aspect of rebound),
 but we don't expect to see a strong rebound within the agriculture sector itself.
-(The magnitude of rebound outside the sector in which energy efficiency improves
+(The magnitude of rebound outside the sector in which energy efficiency\index{energy efficiency} improves
 is a matter of debate.)
 
 Another positive change for the sustainability of agriculture would be to transition
@@ -975,7 +975,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
 \item One common metric for agricultural productivity is yield\index{yield!agricultural},
       the amount of a 
       crop produced per area.
-      Such a metric does not account for energy efficiency, input intensity, or EROI.
+      Such a metric does not account for energy efficiency\index{energy efficiency}, input intensity, or EROI.
       Of course, the most basic economic metric for agriculture is 
       profitability, that is, (net) profit per acre.
       How are these metrics different from one another?

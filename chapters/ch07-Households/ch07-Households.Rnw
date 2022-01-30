@@ -104,7 +104,7 @@ far beyond the walls of each abode.
 Total U.S.\ energy consumption by households 
 has been climbing slowly since the 1970s; 
 see Figure~\ref{fig:TotalHouseholdEnergyConsumption}.
-Increasing energy efficiency of appliances and improvements to building envelopes 
+Increasing energy efficiency\index{energy efficiency} of appliances and improvements to building envelopes 
 (roof, walls, windows, and base of a dwelling)
 have decreased the energy consumption per housing unit;
 see Figure~\ref{fig:AverageHouseholdEnergyConsumption}.
@@ -683,7 +683,7 @@ high-efficiency units, despite high initial cost?''
 \paragraph{Air conditioners} 
 %..............................
 
-The energy efficiency of air conditioners\index{efficiency!air conditioners}
+The energy efficiency\index{energy efficiency} of air conditioners\index{efficiency!air conditioners}
 is quantified by the
 Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio (SEER)}
 which is
@@ -745,7 +745,7 @@ despite higher initial cost?''
 \begin{mcframe}[0.90\textwidth](0.85\textwidth) \label{page:efficiency_efficacy}
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Lighting is one of many areas where 
-the effectiveness of a device is better described by a service efficacy than by an energy efficiency.
+the effectiveness of a device is better described by a service efficacy than by an energy efficiency\index{energy efficiency}.
 Efficiencies are ratios of energies, typically energy output divided by energy input.
 In contrast, efficacies are ratios of energy service output (not quantified in energy units) to energy input.
 Like intensities, efficacies have different units in the numerator and the denominator; 
@@ -764,8 +764,8 @@ for a service efficacy of 100~lumens/W.
 LED lamps are 8 times better than incandescent lamps at providing 
 their energy service, lighting.
 
-The move from energy efficiency to service efficacy can often reveal sustainability opportunities.
-Incandescent and LED lamps have similar energy efficiency, because they  
+The move from energy efficiency\index{energy efficiency} to service efficacy can often reveal sustainability opportunities.
+Incandescent and LED lamps have similar energy efficiency\index{energy efficiency}, because they  
 emit nearly as much radiative energy as they consume.
 However, most of the radiative energy emitted by an incandescent lamp is in nonvisible wavelengths.
 In contrast, most of the radiative energy emitted by an LED lamp is in visible wavelengths.
@@ -774,7 +774,7 @@ the service efficacy (measured in lumens/W) penalizes
 incandescent lamps for emitting most of their energy in nonvisible wavelengths.
 (See \citet{Heun:2020aa} for details.)
 The service efficacy favors LED lamps, because they emit most of their energy in visible wavelengths.
-While an energy efficiency metric would say that incandescent and LED lamps are similarly efficient, 
+While an energy efficiency\index{energy efficiency} metric would say that incandescent and LED lamps are similarly efficient, 
 the lumen/W service efficacy metric correctly suggests 
 that LED lamps are far superior to incandescent lamps
 for the task of converting electricity to visible light.
@@ -866,7 +866,7 @@ forced air, allowing thermostats to be set lower,
 thereby consuming less energy for the same level of comfort.
 (This is an example of the benefit 
 of focusing on energy service efficacy, in this case thermal comfort per BTU,\index{efficacy!energy service}
-instead of energy efficiency;
+instead of energy efficiency\index{energy efficiency};
 see page~\pageref{page:efficiency_efficacy}.)
 
 Second, programmable thermostats\index{thermostat!programmable}
@@ -1048,8 +1048,9 @@ United States, 1999: \\
       \item outlaw clothes washers that use hot water (to save CO$_2$ emissions from water heating),
       \item outlaw automatic dishwashers\index{dishwasher} (to reduce energy consumption for water heating),
       \item require all clothes washing to be done at laundromats (to reduce embodied energy of clothes washers in every home),
-      \item require all homes to undergo an energy efficiency retrofit before going on the market to be sold
-          (to improve energy efficiency of the housing stock),
+      \item require all homes to undergo an energy efficiency\index{energy efficiency}
+            retrofit before going on the market to be sold
+            (to improve energy efficiency\index{energy efficiency} of the housing stock),
       \item require all homes to generate solar electricity onsite (to move quickly to a renewable future), and
       \item prohibit clothing made from synthetic fibers (to minimize microplastic pollution).
    \end{enumerate}
@@ -1057,7 +1058,7 @@ United States, 1999: \\
       Which would you reject?
       Why?
       
-\item Where should you invest in energy efficiency in your home or apartment?
+\item Where should you invest in energy efficiency\index{energy efficiency} in your home or apartment?
 
 \item Why is nearly every suburban homeowner in the northern U.S.\
       also a Kentucky bluegrass farmer?
@@ -1078,9 +1079,9 @@ United States, 1999: \\
       an activity. 
       For example, burning natural gas to heat a home releases CO$_2$
       (which harms everyone). 
-      Improving a home's energy efficiency, by reducing these externalized
+      Improving a home's energy efficiency\index{energy efficiency}, by reducing these externalized
       costs, improves the well being of everyone. 
-      Thus, ``all'' of us stand to benefit from energy efficiency. 
+      Thus, ``all'' of us stand to benefit from energy efficiency\index{energy efficiency}. 
       What are some ways to provide resources for deep energy retrofits for those 
       who otherwise couldn't afford to do so?
       What might be the (perhaps unforeseen) consequences or ramifications of 
@@ -1123,7 +1124,7 @@ United States, 1999: \\
       Should such sources be promoted for sustainability? 
       What considerations affect their more widespread adoption?
       
-\item This chapter discussed energy efficiency measures for many of the categories
+\item This chapter discussed energy efficiency\index{energy efficiency} measures for many of the categories
       featured in Figure \ref{fig:average_residential_energy}, 
       such as AFUE\index{Annual Fuel Utilization Efficiency (AFUE)},
       SEER, and
@@ -1138,7 +1139,7 @@ United States, 1999: \\
       (See the Energy Star \emph{Market and Industry Scoping Report
       on Vacuum Cleaners}, November 2011.)
       
-\item Should product longevity be factored into consumer-oriented energy efficiency
+\item Should product longevity be factored into consumer-oriented energy efficiency\index{energy efficiency}
       ratings? If so, how? 
       Do you think a vacuum cleaner that lasts 10 years is better
       than a vacuum cleaner that lasts only 5 years? Under what conditions or
@@ -1199,7 +1200,7 @@ United States, 1999: \\
       rating or heat pump with a COP\index{coefficient of performance (COP)} of 3.5,
       how much energy would you save annually?
       What is the price of that saved energy?
-      What is the annual cost savings from this energy efficiency intervention?
+      What is the annual cost savings from this energy efficiency\index{energy efficiency} intervention?
       Assuming that the 98\% AFUE\index{Annual Fuel Utilization Efficiency (AFUE)} furnace or
       COP~$=$~3.5\index{coefficient of performance (COP)}
       heat pump\index{heat pump} lasts 20 years and 
@@ -1215,7 +1216,7 @@ United States, 1999: \\
       (near the maximum SEER rating as of this writing),
       how much energy would you save annually?
       What is the price of that saved energy?
-      What is the annual cost savings from this energy efficiency intervention?
+      What is the annual cost savings from this energy efficiency\index{energy efficiency} intervention?
       Assuming that the 40 SEER air conditioner lasts 15 years and 
       that you want to break even financially,
       what is the maximum price you should pay for a 40 SEER air conditioner?

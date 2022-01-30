@@ -221,7 +221,7 @@ fissionable uranium fuel before it can be used in a nuclear power plant to gener
 The oil refinery or nuclear-fuel enrichment process can be evaluated for their
 energy return on investment (EROI); 
 see Section~\ref{sec:masterE}.
-EROI is a type of energy efficiency that measures energy output
+EROI is a type of energy efficiency\index{energy efficiency} that measures energy output
 per energy input from other portions of the economy.
 
 Useful energy is created from final energy by devices owned by the final energy purchaser. 
@@ -1123,7 +1123,7 @@ each unit of GDP.
 transitioning the energy system to reduce CO$_2$ emissions
 from each unit of energy consumed.)
 There are many ways often suggested to reduce the energy intensity of economic activity~\REpparen{}.
-First, increasing energy efficiency (through efficiency standards or mandates)
+First, increasing energy efficiency\index{energy efficiency} (through efficiency standards or mandates)
 can decrease the energy consumption for end uses.
 Examples include corporate average fuel economy (CAFE) standards for vehicles
 in the U.S.\
