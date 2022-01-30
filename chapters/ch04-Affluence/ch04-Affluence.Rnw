@@ -54,7 +54,8 @@ For instance, when travelling from point A to point B,
 most travelers don't care whether their car runs on electricity or gasoline.
 The purpose of the energy consumption is transportation.
 The energy consumption is only a means to that end.
-Transportation (the purpose) is an example of an ``energy service.''
+Transportation (the purpose) is an example 
+of an \textbf{energy service}\index{energy service}.
 
 Average affluence~\Aparen{} for a country or the world
 is measured by gross domestic product (GDP) per capita.
@@ -750,7 +751,7 @@ The recent work of Lina Brand-Correa\index{Brand-Correa, Lina},
 Julia Steinberger\index{Steinberger, Julia}, and others
 frames the question of ``what do we want from life'' in energy terms~\cite{Brand-Correa:2017aa}.
 They search for ways to decouple satisfaction of human needs from 
-energy services, energy consumption, and CO$_2$ emissions.
+energy services\index{energy service}, energy consumption, and CO$_2$ emissions.
 \end{mcframe}
 
 Despite the limitations mentioned above, alternative economic models suggest 

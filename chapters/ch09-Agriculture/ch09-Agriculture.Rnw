@@ -341,8 +341,9 @@ The energy input to agriculture ranges from human and animal
 labor to electricity and hydrocarbon fuels, either fossil fuels or biofuels.
 Energy is used at all stages of agriculture, from preparing the ground to sow crops,
 to harvesting, storage, transportation, cooking, and disposal of food.
-Because food is humanity's energy source, we should consider its energy
-return on investment (EROI, defined in Section~\ref{sec:masterE})\index{EROI}.
+Because food is humanity's energy source, we should consider its
+energy return on investment\index{energy return on investment (EROI)}
+(EROI, defined in Section~\ref{sec:masterE}).
 When EROI~>~1, food is an energy source for humans, that is,
 we obtain more energy from the food than it took to obtain the food.
 When EROI~<~1, we spend more energy obtaining the food than we get 
@@ -413,11 +414,11 @@ food_energy %>%
 @
 
 
-Because food is energy, the overall energy return on investment (EROI) 
+Because food is energy, the overall energy return on investment (EROI)\index{energy return on investment (EROI)} 
 and efficiency of the food-delivery system can be calculated.
 Figure~\ref{fig:food_and_ag_energy_flow} shows the energy consumed and supplied
 by various aspects of the food-delivery system in the U.S.
-The EROI of food produced is 
+The EROI\index{energy return on investment (EROI)} of food produced is 
 \Sexpr{sprintf(food_eroi_gross * 100, fmt = "%#.1f")}\%
 (\Sexpr{sprintf(food_eroi_gross_output, fmt = "%#.2f")} quads of food energy
 produced per
@@ -435,7 +436,8 @@ Taking waste into account, the EROI of food consumed is
 \Sexpr{sprintf(food_eroi * 100, fmt = "%#.1f")}\%
 (\Sexpr{sprintf(food_eroi_consumed, fmt = "%#.2f")} quads consumed, 
 \Sexpr{sprintf(food_eroi_denominator, fmt = "%#.2f")} quads input).
-The fact that the EROI of the food-delivery system is less than 100\%
+The fact that the EROI\index{energy return on investment (EROI)}
+of the food-delivery system is less than 100\%
 means that the food-delivery system is not a source of energy for society.
 Rather, it is a sink of energy for society.
 
@@ -461,7 +463,7 @@ Fossil fuels
 supply the energy for 
 machines in agriculture, food transportation, food processing, food packaging, 
 retail, food storage, and food preparation.
-Because (a)~agricultural EROI is less than 1 
+Because (a)~agricultural EROI\index{energy return on investment (EROI)} is less than 1 
 and
 (b)~energy for agriculture comes from fossil fuels, 
 today's agricultural system is not sustainable.
@@ -756,7 +758,7 @@ a step towards becoming more sustainable.
 For example, reducing food waste has multiple effects:
 eliminating the inputs needed to grow wasted food,
 reducing the emissions from producing, consuming, and disposing of that food), and
-increasing the effective EROI of the food system.
+increasing the effective EROI\index{energy return on investment (EROI)} of the food system.
 
 It is worth noting that enhanced agricultural productivity, efficacy, or efficiency 
 (depending on the metric under consideration) 
@@ -764,7 +766,7 @@ may be subject to limited rebound
 (Section~\ref{sec:rebound_effect})
 in the agriculture sector itself,
 a difference from rebound effects from energy efficiency\index{energy efficiency}.
-One aspect of the rebound effect involves using more of the energy service 
+One aspect of the rebound effect involves using more of the energy service\index{energy service} 
 when it becomes cheaper. 
 For instance, when an automobile has a lower energy intensity (fewer gallons per mile),
 driving becomes cheaper, so more miles are driven.
@@ -778,7 +780,8 @@ is a matter of debate.)
 
 Another positive change for the sustainability of agriculture would be to transition
 the world's energy supply to renewable energy, 
-given the energy-intensive nature of modern agriculture and its attendant low EROI.
+given the energy-intensive nature of modern agriculture and 
+its attendant low EROI\index{energy return on investment (EROI)}.
 Of course, a transition to renewable energy would benefit more sectors than just agriculture;
 it would be universally beneficial and, in fact, is necessary for strong sustainability.
 
@@ -975,7 +978,8 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
 \item One common metric for agricultural productivity is yield\index{yield!agricultural},
       the amount of a 
       crop produced per area.
-      Such a metric does not account for energy efficiency\index{energy efficiency}, input intensity, or EROI.
+      Such a metric does not account for energy efficiency\index{energy efficiency}, input intensity, 
+      or EROI\index{energy return on investment (EROI)}.
       Of course, the most basic economic metric for agriculture is 
       profitability, that is, (net) profit per acre.
       How are these metrics different from one another?
@@ -1126,7 +1130,8 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
 \item Verify the efficiency values in Section~\ref{sec:food_ag_efficiency}.
       Use Figure~\ref{fig:food_and_ag_material_flow} as the basis for your calculations.
       
-\item Verify the agricultural EROI values in Section~\ref{sec:food_energy_return_ratios}. 
+\item Verify the agricultural EROI\index{energy return on investment (EROI)}
+      values in Section~\ref{sec:food_energy_return_ratios}. 
       You could, for instance, start by considering Figure~\ref{fig:food_and_ag_energy_flow}.
       Perform your own research to find the proportions of coal, oil, and natural gas consumed
       by the food and agriculture system.

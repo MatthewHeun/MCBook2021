@@ -575,7 +575,8 @@ in biofuel production~\cite{International-Energy-Agency:2019wj}.
 
 Although biofuel consumption has risen dramatically since 2000, 
 the rise is mostly due to ethanol blending in gasoline.
-Unfortunately, the energy return on investment for ethanol production is
+Unfortunately, the energy return on investment\index{energy return on investment (EROI)}
+for ethanol production is
 very poor, barely above 1.0; 
 see Table~\ref{tab:eroi}.
 Furthermore, ethanol production is very land-intensive.
