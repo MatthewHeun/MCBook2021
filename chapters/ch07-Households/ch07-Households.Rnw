@@ -745,7 +745,9 @@ despite higher initial cost?''
 \begin{mcframe}[0.90\textwidth](0.85\textwidth) \label{page:efficiency_efficacy}
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Lighting is one of many areas where 
-the effectiveness of a device is better described by a service efficacy than by an energy efficiency\index{energy efficiency}.
+the effectiveness of a device is better described by a
+\textbf{energy service efficacy}\index{energy service efficacy} than by an
+energy efficiency\index{energy efficiency}.
 Efficiencies are ratios of energies, typically energy output divided by energy input.
 In contrast, efficacies are ratios of energy service output (not quantified in energy units) to energy input.
 Like intensities, efficacies have different units in the numerator and the denominator; 
@@ -758,24 +760,26 @@ Lighting efficacy is the ratio of visible light output
 (the energy service, measured in lumens) 
 to energy input (measured in W).
 A 100-W incandescent lamp supplies about 1230~lumens of light 
-for a service efficacy of 12.3~lumens/W.
+for a service efficacy\index{energy service efficacy} of 12.3~lumens/W.
 A 100-W equivalent LED lamp gives 1200~lumens but consumes only 12~W of electricity,
-for a service efficacy of 100~lumens/W.
+for a service efficacy\index{energy service efficacy} of 100~lumens/W.
 LED lamps are 8 times better than incandescent lamps at providing 
 their energy service, lighting.
 
-The move from energy efficiency\index{energy efficiency} to service efficacy can often reveal sustainability opportunities.
+The move from energy efficiency\index{energy efficiency} to service efficacy\index{energy service efficacy}
+can often reveal sustainability opportunities.
 Incandescent and LED lamps have similar energy efficiency\index{energy efficiency}, because they  
 emit nearly as much radiative energy as they consume.
 However, most of the radiative energy emitted by an incandescent lamp is in nonvisible wavelengths.
 In contrast, most of the radiative energy emitted by an LED lamp is in visible wavelengths.
 The lumen counts only visible light output, so 
-the service efficacy (measured in lumens/W) penalizes 
+the service efficacy\index{energy service efficacy} (measured in lumens/W) penalizes 
 incandescent lamps for emitting most of their energy in nonvisible wavelengths.
 (See \citet{Heun:2020aa} for details.)
-The service efficacy favors LED lamps, because they emit most of their energy in visible wavelengths.
+The service efficacy\index{energy service efficacy}
+favors LED lamps, because they emit most of their energy in visible wavelengths.
 While an energy efficiency\index{energy efficiency} metric would say that incandescent and LED lamps are similarly efficient, 
-the lumen/W service efficacy metric correctly suggests 
+the lumen/W service efficacy\index{energy service efficacy} metric correctly suggests 
 that LED lamps are far superior to incandescent lamps
 for the task of converting electricity to visible light.
 When available, service efficacies are preferred over energy efficiencies, 
@@ -865,7 +869,8 @@ First, in-floor radiant heating is often considered more comfortable than
 forced air, allowing thermostats to be set lower,
 thereby consuming less energy for the same level of comfort.
 (This is an example of the benefit 
-of focusing on energy service efficacy, in this case thermal comfort per BTU,\index{efficacy!energy service}
+of focusing on energy service efficacy\index{energy service efficacy},
+in this case thermal comfort per BTU,\index{efficacy!energy service}
 instead of energy efficiency\index{energy efficiency};
 see page~\pageref{page:efficiency_efficacy}.)
 

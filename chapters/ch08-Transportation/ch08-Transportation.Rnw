@@ -496,7 +496,7 @@ However, drivers don't buy fuel to move vehicles.
 They pay for fuel to move people and freight!
 So another way to measure vehicle effectiveness is the ratio of transport service 
 to fuel volume consumed.
-Transport service efficacy\index{efficacy!transport service}
+Transportation service efficacy\index{transportation service efficacy}
 is quantified in units of passenger-km/liter or tonne-km/liter
 for passenger transport and freight transport, respectively.
 This simple shift from machine efficacy (miles/gallon) 
@@ -512,7 +512,8 @@ The benefits of such strategies are evident when using the
 a transportation service efficacy metric instead of an energy efficiency\index{energy efficiency} metric
 to evaluate the effectiveness of transportation services. 
 (See page~\pageref{page:efficiency_efficacy} for more details about
-the differences between energy efficiency\index{energy efficiency} and energy service efficacy.)
+the differences between energy efficiency\index{energy efficiency} and 
+energy service efficacy\index{energy service efficacy}.)
 
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1031,20 +1032,21 @@ transportation, petroleum, and technology.
       
 \item The box on page~\pageref{page:efficiency_efficacy} highlights 
       the sustainability benefits of 
-      moving from energy efficiency\index{energy efficiency} to service efficacy. 
+      moving from energy efficiency\index{energy efficiency} to service efficacy\index{energy service efficacy}. 
       In Section~\ref{sec:transportation_fuel_economy},
       the move from fuel economy 
       (actually, a machine efficacy measured in miles/gallon) to
-      service efficacy (measured in passenger-km/gallon)
+      service efficacy\index{energy service efficacy} (measured in passenger-km/gallon)
       revealed insights about the transportation sustainability challenge,
       namely that filling empty seats in cars is a simple and effective form 
       of increasing effectiveness.
       Consider a different sustainability challenge besides transportation.
       Develop or find an energy efficiency\index{energy efficiency} or a machine efficacy for your challenge
       that is analogous to fuel economy in miles/gallon.
-      Develop or find a service efficacy for your challenge
+      Develop or find a service efficacy\index{energy service efficacy} for your challenge
       that is analogous to passenger-km/gallon.
-      What changes when you move from energy efficiency\index{energy efficiency} or machine efficacy to service efficacy?
+      What changes when you move from energy efficiency\index{energy efficiency} or machine efficacy 
+      to service efficacy\index{energy service efficacy}?
       How does the move affect the way you think about the sustainability challenge?
       Does the move suggest new solutions to the sustainability challenge?
 
