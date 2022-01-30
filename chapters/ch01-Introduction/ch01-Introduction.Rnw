@@ -18,44 +18,36 @@ grain, defined as one kernel of grain on the first square, two grains on the sec
 square, four grains on the third square, and so on, with each subsequent square receiving
 double what was on the previous square.
 The king accepted the wager\index{king's wager} but lost the game.
-% according to chess.com a match is a series of games.
 A chessboard\index{chessboard}
 has eight rows and eight columns, so the king had to pay 2$^\text{64}-$1
 grains.
 (See Section \ref{sec:exp} for an explanation of the math behind this formula.)
 Rice is seven thousand grains per pound ($\sim$~65~mg each),
-so the king owed the scholar 1.199~$\times$~10$^{\text{15}}$ kg of rice, 
-% about 12\% of the weight of everything ever produced by the human species [1]. At
-% US\$6.85/bushel, the grain would be worth about 300 trillion dollars, which is (roughly)
-% ten times more money than exists in the world.
+so the king owed the scholar 1.199~$\times$~10$^{\text{15}}$ kg of rice,
 which is more than 150 tons of rice for every person currently on planet Earth
 (worth about \$40,000 per person).
-For reference, people eat about 35 tons of food in a lifetime, 
+For reference, people eat about 35 tons of food in a lifetime,
 so this is~4.4 lifetimes' supply of food for every person on the planet.
 Clearly, the scholar's winnings won't all fit on an ordinary chessboard\index{chessboard}!
 
 This story, which goes back at least to the 1200s AD, illustrates several aspects of the
 sustainability problem that have been evident for centuries:
 \textbf{Exponential growth}\index{exponential growth} (Section \ref{sec:exp}) is
-% a) hard to understand and b) is
 inherently not sustainable;
 big numbers are hard to \href{https://en.wiktionary.org/wiki/grok}{grok};
-% Cognitive biases, Decartes’ chiliagon, Numerical cognition, Subitizing, Dunbar number, 50-year time frame.
 and making large wagers on limited understanding is unwise.
-At the moment, human society is making the king's wager\index{king's wager} writ large. 
+At the moment, human society is making the king's wager\index{king's wager} writ large.
 We are pursuing exponential growth\index{exponential growth} without fully understanding the consequences.
 In short, we have sustainability challenges.
 
 You are reading this book because you think sustainability is important.
 And it is.
 In the long run, sustainability is one of the few things that matter at all.
-Sustainability is a challenging problem, in part due to exponential growth\index{exponential growth}, 
-in part due to limited understanding, 
+Sustainability is a challenging problem, in part due to exponential growth\index{exponential growth},
+in part due to limited understanding,
 but also because sustainability problems are complex and interconnected.
 Each of the subproblems or subdomains of sustainability may have its own problems
 of exponential growth\index{exponential growth} and limited knowledge.
-%Sustainability complexity and we'll spend a lot of time looking at the interconnections
-%between different aspects of sustainability challenges.
 
 Furthermore, the king's wager\index{king's wager} hints at a social element of the sustainability problem.
 In the story, the king doesn't want to appear ``weak'' before his subject and so
@@ -63,16 +55,16 @@ In the story, the king doesn't want to appear ``weak'' before his subject and so
 In sustainability, there is tremendous social (and sometimes economic) pressure
 to continue to do things ``the way they've always been done.''
 
-Figure~\ref{fig:venn_diagram} shows the three interrelated and overlapping domains 
-of sustainability: environmental sustainability, economic sustainability, and 
-social sustainability.
+Figure~\ref{fig:venn_diagram} shows the three interrelated and overlapping domains
+of sustainability:
+\textbf{environmental sustainability}\index{environmental sustainability},
+\textbf{economic sustainability}\index{economic sustainability}, and
+\textbf{social sustainability}\index{social sustainability}.
 Sustainability problems are complex and interconnected.
-Environmental sustainability problems have social and economic aspects (that are 
+Environmental sustainability problems have social and economic aspects (that are
 generally more difficult to solve).
 Likewise, economic and social sustainability problems are not limited to one domain;
 typically, they include aspects of the other two domains as well.
-% Sustainability is like a three-legged stool or a table on three legs.
-% If one of the supports is removed, the whole thing falls flat.
 Therefore (for example), pollution is an environmental problem, and a social problem, and an economic problem.
 Likewise renewable energy. And land use. And all the other challenges humanity faces.
 
@@ -84,36 +76,37 @@ Likewise renewable energy. And land use. And all the other challenges humanity f
   \caption[Three aspects of sustainability]
           {The three aspects of sustainability.
            Sustainability is often visualized as three overlapping ellipses:
-           environmental sustainability,
-           economic sustainability, and
-           social sustainability.
-           The intersecting area represents fully sustainable living. 
-           Environmental sustainability refers to the ecosystem and its supporting services;
+           economic sustainability\index{economic sustainability},
+           environmental sustainability\index{environmental sustainability}, and
+           social sustainability\index{social sustainability}.
+           The intersecting area represents fully sustainable living.
+           Environmental sustainability\index{environmental sustainability}
+           refers to the ecosystem and its supporting services;
            see Chapter~\ref{chap:planetary_boundaries}.
-           Economic sustainability refers to human systems for creating and accounting for wealth;
+           Economic sustainability\index{economic sustainability}
+           refers to human systems for creating and accounting for wealth;
            see Chapter~\ref{chap:affluence}.
-           Social sustainability refers to traditions and systems of human society.
+           Social sustainability\index{social sustainability}
+           refers to traditions and systems of human society.
            The layering in this figure represents coverage in this book.
-           We focus on environmental and economic sustainability.
-           Social sustainability is vitally important, so it forms the backdrop 
+           We focus on environmental\index{environmental sustainability} and
+           economic sustainability\index{economic sustainability}.
+           Social sustainability is vitally important, so it forms the backdrop
            for much of the discussion herein.}
 \label{fig:venn_diagram}
 \end{figure}
 
 
-
-% Let's say more here about the organization of the book in terms of social, economic, and ES?
-
-Sustainability is challenging for two additional reasons. 
-First, it may seem that the changes required to achieve sustainability are so 
+Sustainability is challenging for two additional reasons.
+First, it may seem that the changes required to achieve sustainability are so
 massively overwhelming that they shouldn't even be addressed.
 Second, it may seem like the consequences of not becoming sustainable are so far
 in the future that there is neither urgency nor immediate payback.
 However, neither of these views is true.
-Current news headlines indicate that we are already 
-experiencing the effects of not being sustainable, in all 
+Current news headlines indicate that we are already
+experiencing the effects of not being sustainable, in all
 sustainability domains---environmentally, economically, and socially.
-There are many reasonable and simple things that can be done to improve our 
+There are many reasonable and simple things that can be done to improve our
 sustainability in the near term.
 The deep changes needed for long-term sustainability are urgently needed precisely because
 they are long-term investments.
@@ -122,12 +115,11 @@ rewards and the greater those rewards will be.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Purpose and focus}%, and organization}
+\section{Purpose and focus}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This book summarizes ways that humans are not living sustainably and suggests % outline?
+This book summarizes ways that humans are not living sustainably and suggests
 characteristics of sustainable societies.
-%Each chapter starts with basic data and key concepts.
 The text is deliberately short because the book is not intended to be comprehensive.
 The focus is on equipping the reader to discuss moral and ethical issues around sustainability.
 Because the choices and paths to sustainability are filled with value judgements and moral choices,
@@ -141,46 +133,33 @@ grapple with tough moral questions.
 \emph{This book should be easy to read but hard to digest.}
 As you read this book, it should raise many questions for you.
 
-% Sustainability is existentially important but very difficult to achieve, for several reasons.
-% The numbers and timescales involved are difficult for humans to grasp.
-% Sustainability challenges are complex because they involve a variety of
-% interrelated problems from different domain areas.
-% The challenges associated with transitioning to a sustainable existence are complex
-% and interconnected.
 The focus of this book is the many challenges of sustainability.
 While we may, at times, point to directions for improved sustainability
 (Chapters~\ref{chap:government} and \ref{chap:personal_action}),
 it is beyond our scope
 (and indeed our ability) to provide solutions for all sustainability problems.
-Some (or many) of the questions that are raised about sustainability 
+Some (or many) of the questions that are raised about sustainability
 will remain unanswered.
 
 Our framework for describing sustainability challenges is illustrated by data.
 Thus, readers can expect graphs, tables, and other numerical representations
 of the state of our world as it relates to sustainability.
 Part~\ref{part:IPARX} (Chapters~\ref{chap:introduction}--\ref{chap:impact_intensity})
-shows mostly data from the world in aggregate, thereby eliminating issues of 
+shows mostly data from the world in aggregate, thereby eliminating issues of
 imports and exports between countries.
 Part~\ref{part:sustainability_challenges} shows data mostly from the U.S.%
 \footnote{
   Readers are encouraged to remember that the U.S.\ is atypical in many ways.
   Sociologically, the U.S.\ is WIERD (Western, industrialized, educated, rich, and democratic).
   Additionally, the U.S.\ has a low population density and lots of resources.
-  While our framework for sustainability thinking is universal, the data used for 
+  While our framework for sustainability thinking is universal, the data used for
   illustration may not always apply to the rest of the world.
-}, 
-because it is our home country and 
-because it has better data coverage than most countries 
+},
+because it is our home country and
+because it has better data coverage than most countries
 regarding energy and carbon emissions.
-Behind the facts and data are important concepts related to human choices, 
-which we explore throughout the book, mostly in questions and projects that follow each chapter. 
-%consumer choices in human economies.
-% Readers can watch for these important categories 
-% throughout the book:
-% discretionary vs.\ non-discretionary choices, 
-% essential vs.\ non-essential economic activities,
-% goods vs.\ services, and
-% sufficiency vs.\ extravagance.
+Behind the facts and data are important concepts related to human choices,
+which we explore throughout the book, mostly in questions and projects that follow each chapter.
 
 The remainder of this chapter summarizes key themes of the book.
 
@@ -203,8 +182,8 @@ boundaries (that is, what system is being considered).
 When considering the meaning of sustainability, the two most important questions are
 ``sustaining what?'' and ``for how long?''
 The second of these questions is perhaps easier to answer.
-Although humans seem to have inherent cognitive difficulties in planning for 
-time scales significantly longer than the human lifespan, 
+Although humans seem to have inherent cognitive difficulties in planning for
+time scales significantly longer than the human lifespan,
 strong sustainability is achieved only if the answer is
 ``indefinitely'' or ``forever.''
 Our current sustainability crisis has been thousands of years in the making~\cite{Sanderman2017}
@@ -212,24 +191,25 @@ and will likely require millions of years to recover~\cite{Davis11262}.
 A weak sustainability criterion is sustainability over a long (by human standards)
 time frame, perhaps 50 years, which is on the order of one human adulthood.%
 \footnote{
-  Our criteria for strong and weak sustainability are physical and 
-  follow \citet{Graedel:2010ab}. 
+  Our criteria for strong and weak sustainability are physical and
+  follow \citet{Graedel:2010ab}.
   Other definitions for weak and strong sustainability exist.
-  One approach to weak and strong sustainability is economic. 
+  One approach to weak and strong sustainability is economic.
   It defines strong sustainability as protecting natural capital
-  for a certain period of time 
-  (equivalent to our weak sustainability definition if the time horizon is 50 years). 
-  In the economic approach, 
+  for a certain period of time
+  (equivalent to our weak sustainability definition if the time horizon is 50 years).
+  In the economic approach,
   weak sustainability allows produced capital to substitute for natural capital
   across a period of time.
   See \citet{Dietz:2007tu} for details.
 }
-(Note that corporate time scales for decision making are even shorter, 
+(Note that corporate time scales for decision making are even shorter,
 often in the 5--20 year range; see Chapter~\ref{chap:government}.)
 
-The narrowest answer for what needs sustaining is human life and society, which 
+The narrowest answer for what needs sustaining is human life and society, which
 \href{https://www.merriam-webster.com/dictionary/perforce}{perforce}
-entails those ecosystem services (Chapter~\ref{chap:planetary_boundaries})
+entails those \textbf{ecosystem services}\index{ecosystem services}
+(Chapter~\ref{chap:planetary_boundaries})
 necessary for human health and wellbeing.
 Beyond these basics, some people view the nonhuman world as having inherent worth or standing and, as
 such, to also be worth preserving, even if it has no (or negative, for example, smallpox)
@@ -246,36 +226,37 @@ needed'' classifications, but as a whole that exists on a continuum from ``fully
 to ``nonfunctional.''
 The choices and paths to sustainability are bristling with value judgements and
 moral choices about what to value and how much.
-\href{https://en.wiktionary.org/wiki/concomitant}{Concomitant} with such choices 
+\href{https://en.wiktionary.org/wiki/concomitant}{Concomitant} with such choices
 is a weighting of appropriate risks to the ecosystem and human society.
 Different answers to these questions come from different \emph{a priori} assumptions and values.
 
 The broadest definitions of sustainability also include the products of human civilization.
-For example, although they are great cultural and historical artifacts, 
+For example, although they are great cultural and historical artifacts,
 humanity could survive without the great pyramids of Giza.
 On the other hand, we may not survive if we don’t give up coal-fired power plants.
 (And, maybe many people would perish if the coal-fired plants were all suddenly switched off.)
 
-With respect to Figure \ref{fig:venn_diagram}, environmental sustainability
+With respect to Figure \ref{fig:venn_diagram}, environmental sustainability\index{environmental sustainability}
 considers biophysical and thermodynamic constraints and includes issues such as
 pollution, resource depletion, habitat loss, and biodiversity.
-Harvesting timber faster than it can grow is unsustainable. 
-Eventually, deforestation means that timber harvesting must stop because there 
-will be no more forest to harvest. 
+Harvesting timber faster than it can grow is unsustainable.
+Eventually, deforestation means that timber harvesting must stop because there
+will be no more forest to harvest.
 Depleting mineral resources is unsustainable.
 Eventually, the minerals will be used up.
-Pumping \textbf{aquifers}\index{aquifer} faster than they can regenerate is unsustainable. 
+Pumping \textbf{aquifers}\index{aquifer} faster than they can regenerate is unsustainable.
 Eventually, the aquifers will run dry.
 
-Economic sustainability involves questions of profit and loss, wealth management, and
+Economic sustainability\index{economic sustainability}
+involves questions of profit and loss, wealth management, and
 macroeconomic policy.
 A business that continually loses money is not sustainable.
 Eventually, it will go out of business.
 
-Social sustainability comprises human and civil rights, suffering, and personal freedom.
-A social group that continually loses members, for example, the Whig party, will 
+Social sustainability\index{social sustainability} comprises human and civil rights, suffering, and personal freedom.
+A social group that continually loses members, for example, the Whig party, will
 cease to be a group.
-Typically, social sustainability includes things that should not be 
+Typically, social sustainability\index{social sustainability} includes things that should not be
 sustained but that, typically, have persisted a very long time, like poverty, class inequality,
 sexism, slavery, and other civil injustices.
 
@@ -298,16 +279,18 @@ The most oft-quoted~\cite{Quental2011} definition of sustainability is that
 ``[s]ustainable development meets the needs of the present without
 compromising the ability of future generations to meet their own needs''~\cite{Brundtland}.
 Note that ``sustainable development'' is an oxymoron, %and is not the same as sustainability.
-because ``development'' implies constant improvement, which cannot be sustained 
+because ``development'' implies constant improvement, which cannot be sustained
 forever on a planet with finite resources.
 Furthermore, ``needs'' are subjective.
-This definition emphasizes the social and economic aspects of sustainability over,
-or instead of, environmental sustainability. 
-In the end, without environmental sustainability, there is no sustainability at all.
+This definition emphasizes the social\index{social sustainability} and
+economic\index{economic sustainability} aspects of sustainability over,
+or instead of, environmental sustainability\index{environmental sustainability}.
+In the end, without environmental sustainability\index{environmental sustainability},
+there is no sustainability at all.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{A framework for environmental sustainability thinking}
+\section{A framework for environmental sustainability thinking}\index{environmental sustainability}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Two mathematical identities, IPAT and Kaya, have been used to express the impact
@@ -341,11 +324,11 @@ produce one unit of world GDP.
 Lastly, impact of resources~\Xparen{} is a list of the impacts of
 each type of resource. (That is, \mft{X} is a matrix quantity.)
 
-In broad strokes, sustainability can be seen in the \mft{I} term (environmental impacts) and 
+In broad strokes, sustainability can be seen in the \mft{I} term (environmental impacts) and
 in resource extraction (the numerator of \mft{R} and the denominator of \mft{X}\:).
 If we emit wastes at a rate greater than can be assimilated by the environment
 (\:\!\mft{I} too large), we are unsustainable.
-If we withdraw resources from the environment at a rate greater than their regeneration rate, 
+If we withdraw resources from the environment at a rate greater than their regeneration rate,
 we are unsustainable.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -356,13 +339,13 @@ Its terms represent steady-state levels,
 but do not necessarily show how changes in any one variable affects the others.
 For instance, using resources more efficiently (improving resource intensity),
 does not, in general, lower impact.
-Instead, it leads to more affluence; 
+Instead, it leads to more affluence;
 see Chapter~\ref{chap:resource_intensity}.
 Likewise, it may not be possible to drive the impact(s) per unit of resource to
-zero because of diminishing returns on efficiency 
+zero because of diminishing returns on efficiency
 and tradeoffs that exist between different types of impacts.
-Thus, while Equation~\ref{eq:IPARX} is useful as a conceptual framework for 
-thinking about sustainability challenges, it does not provide a complete 
+Thus, while Equation~\ref{eq:IPARX} is useful as a conceptual framework for
+thinking about sustainability challenges, it does not provide a complete
 roadmap for sustainability solutions (in part) because of interactions among the terms.
 \end{mcframe}
 
@@ -379,27 +362,27 @@ Of course, the two are closely linked.
 \label{sec:exp}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Returning to the king's wager\index{king's wager}, for a series of doubling numbers, 
-like the number of grains on the scholar's chessboard\index{chessboard} squares: 
+Returning to the king's wager\index{king's wager}, for a series of doubling numbers,
+like the number of grains on the scholar's chessboard\index{chessboard} squares:
 1, 2, 4, 8, 16, 32, \ldots,
 the sum of all the
 numbers in the series is always one less than the next number in the series.
-For example, 
+For example,
 1+2+4+8 $=$ 15, which is one less than 16, and
 1+2+4+8+16 $=$ 31, which is one less than 32.
 Thus, the amount of grain on the next square is always greater than the sum total
 of all the grain on all previous squares.
 The total grain on \mft{N} squares is 2$^{\mft{N}}-$~\text{1}.
-The amount of grain on the \mft{N}$^\text{th}$ square is 2$^{\mft{N} - \text{1}}$, 
+The amount of grain on the \mft{N}$^\text{th}$ square is 2$^{\mft{N} - \text{1}}$,
 which is half of 2$^\mft{N}$
 and one more than the sum of all previous $\mft{N} - \text{1}$ squares.
 
-Doubling on discrete squares (or in discrete time units) can be extended to 
-continuous time. 
-Exponential growth\index{exponential growth} is growth at a constant rate (in percent per time), 
+Doubling on discrete squares (or in discrete time units) can be extended to
+continuous time.
+Exponential growth\index{exponential growth} is growth at a constant rate (in percent per time),
 which means doubling in a fixed amount of time.
-That is, the time it takes to double does not depend on the current amount. 
-If the (constant) rate of growth is \mft{r}, then amount of time to double is ln(2)/\mft{r}, 
+That is, the time it takes to double does not depend on the current amount.
+If the (constant) rate of growth is \mft{r}, then amount of time to double is ln(2)/\mft{r},
 which is approximately 70 divided by the growth rate.
 For example, with a fixed 3\%/yr growth rate, GDP doubles every 23 years.
 If your investment portfolio has a 7\%/yr return, your wealth will double
@@ -407,56 +390,56 @@ every 10 years.
 
 
 <<exp, fig.scap="Mass of grain on the chessboard\\index{chessboard} in the king's wager\\index{king's wager}", fig.cap="Mass of grain on each square of the chessboard in the king's wager. The last row of the chessboard (squares 57--64) contains nearly all of the grain. Pg is petagram; 1~Pg $=$ 10$^{\\text{12}}$~kg.">>=
-chessboard_data <- tibble::tibble(x = 1:64) %>% 
+chessboard_data <- tibble::tibble(x = 1:64) %>%
   dplyr::mutate(
-    y = 2^(x - 1), 
+    y = 2^(x - 1),
     m = 0.065 / 1e15 * y   # 65 mg/grain, mass in Pg.
   )
-  
-chessboard_data %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes(x = x, y = m)) + 
+
+chessboard_data %>%
+  ggplot2::ggplot(mapping = ggplot2::aes(x = x, y = m)) +
   ggplot2::geom_hline(yintercept = 0, colour = guide_line_colour, size = guide_line_size, linetype = guide_linetype) +
   ggplot2::geom_bar(stat = "identity", fill = bar_colour) +
-  
+
   ggplot2::scale_x_continuous(limits = c(0, 65),
                               breaks = c(1, 8, 16, 24, 32, 40, 48, 56, 64)) +
 
-  ggplot2::labs(x = "Chessboard square", 
+  ggplot2::labs(x = "Chessboard square",
                 y = "Rice mass [Pg]") +
-  
+
   MKHthemes::xy_theme()
 @
 
 Figure~\ref{fig:exp} shows the mass of grain on each square of the chessboard\index{chessboard}.
 The sharp increase at the right side of figure
-is characteristic of exponential growth\index{exponential growth} over any time scale. 
-If the chessboard\index{chessboard} were extended by another row, the new row (squares 65--72) 
+is characteristic of exponential growth\index{exponential growth} over any time scale.
+If the chessboard\index{chessboard} were extended by another row, the new row (squares 65--72)
 would make current last row (squares 57--64) look as small and insignificant as
 squares 49--56 currently appear.
 
 Figure~\ref{fig:exp} can represent other quantities that are growing exponentially\index{exponential growth},
 like GDP.
 The blue area then represents the resources needed to support that activity.
-For instance, the blue area could represent the amount of energy necessary to create 
+For instance, the blue area could represent the amount of energy necessary to create
 that amount of GDP.
 (The various resources needed by the economy to produce a unit of GDP may be assumed
-to be constant over a short period of time but are not constant long term; 
+to be constant over a short period of time but are not constant long term;
 see Chapter~\ref{chap:resource_intensity}.)
 
 Population~\Pparen{} and affluence~\Aparen{}
-in Equation~\ref{eq:IPARX} have been growing exponentially\index{exponential growth}. 
+in Equation~\ref{eq:IPARX} have been growing exponentially\index{exponential growth}.
 Chapter~\ref{chap:population} gives us some hope that population won't continue
 growing exponentially\index{exponential growth}.
 (In fact, there are some indications world population may fall after a peak
 in the mid-twenty-first century.)
-However, world economies are actively managed to have continual growth 
+However, world economies are actively managed to have continual growth
 (perhaps, an average target of 3\%/year).
-The implication for sustainability is that the resources---for instance, 
+The implication for sustainability is that the resources---for instance,
 energy---needed by the economy in the next 23 years will be more than the total
 resources (energy) used in all of history to date.
-% (Improvements in energy efficiency over time will tend to spur further economic growth 
+% (Improvements in energy efficiency over time will tend to spur further economic growth
 % rather than provide economic growth with zero resource cost;
-% efficiency improvements are subject to diminishing returns, 
+% efficiency improvements are subject to diminishing returns,
 % see Figure~\ref{fig:E_vs_GDP_graph}.)
 Because of this exponential economic growth\index{exponential growth}, resource use grows continually to infinity.
 Humanity is not on a sustainable path.
@@ -467,7 +450,7 @@ Humanity is not on a sustainable path.
 \label{sec:masterE}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-At a very fundamental level, 
+At a very fundamental level,
 betterment of the human condition occurs when ingenuity is applied
 in economies to transform materials into useful products.
 Thus, both mass (for the materials) and energy (for the transformation)
@@ -475,32 +458,32 @@ are crucial for improvement of human life.
 Both mass and energy come from the environment.
 
 Although a wide variety of materials are essential for human existence
-(Section~\ref{sec:resources_strong_sustainability}), 
-we say that energy is the master resource, because 
+(Section~\ref{sec:resources_strong_sustainability}),
+we say that energy is the master resource, because
 obtaining and using any other resource
-(including extraction of materials from the environment) 
-requires energy. 
-Collecting firewood to heat houses requires energy. 
-Extracting crude oil requires energy. 
-Harvesting food requires energy. 
+(including extraction of materials from the environment)
+requires energy.
+Collecting firewood to heat houses requires energy.
+Extracting crude oil requires energy.
+Harvesting food requires energy.
 Making solar panels requires energy.
 
 Another reason we say energy is the master resource
 is that energy can be used to convert one resource into another.
 Crude oil can be refined to gasoline.
 Corn can be converted to ethanol.
-Salt water can be converted to fresh water. 
+Salt water can be converted to fresh water.
 Petroleum or natural gas can be converted to pharmaceuticals or plastics.
 
-Finally, energy is the master resource, because 
-it is needed to break down and dispose of wastes. 
+Finally, energy is the master resource, because
+it is needed to break down and dispose of wastes.
 Building a landfill takes energy.
 Hauling garbage to the landfill takes energy.
 Even the decomposition of compost takes sunlight, air, and rain.
 
-Because energy is vitally important, 
+Because energy is vitally important,
 metrics have been developed to describe its use.
-For example, energy efficiency can be calculated 
+For example, energy efficiency can be calculated
 for the use of energy in any process.
 Energy efficiency ($\eta$) is defined as
 
@@ -510,13 +493,13 @@ Energy efficiency ($\eta$) is defined as
 
 A different metric is often calculated for the production of energy:
 energy return on investment (EROI),
-which is defined as the amount of energy delivered to the economy 
-per unit of energy it took to deliver that energy, 
+which is defined as the amount of energy delivered to the economy
+per unit of energy it took to deliver that energy,
 not including feedstock.%
 \footnote{
   ``Not including feedstock'' means that only auxiliary energy inputs should be counted
   in the denominator.
-  For example, when calculating the EROI for an oil rig, 
+  For example, when calculating the EROI for an oil rig,
   only the electricity and diesel to operate the rig is counted in the denominator.
   The crude oil extracted by the rig is not counted in the denominator.
 }
@@ -526,11 +509,11 @@ not including feedstock.%
                            {\text{Energy required to obtain delivered energy}}
 \end{equation}
 %
-Because energy is the master resource, 
+Because energy is the master resource,
 understanding EROI is vitally important.
 An EROI that is less than one indicates the energy production activity is an energy sink
 rather than an energy source.
-For instance, modern agriculture has an EROI of around 0.1 to 0.15; 
+For instance, modern agriculture has an EROI of around 0.1 to 0.15;
 it takes 7--10 calories of energy to deliver 1 calorie of food energy.
 On the other hand, an EROI greater than one indicates a source of useful energy.
 Table~\ref{tab:eroi} lists energy returns for various sources of energy.
@@ -549,14 +532,14 @@ more efficient technology.
 Energy source                        & EROI
 \\ \midrule
 Nuclear                              & 59--106 \\
-Hydroelectric                        & 45+ \\ 
-Coal and natural gas                 & 28--31 \\ 
-Concentrated solar thermal           & 21 \\ 
+Hydroelectric                        & 45+ \\
+Coal and natural gas                 & 28--31 \\
+Concentrated solar thermal           & 21 \\
 Wind energy                          & 15--35+ \\
 Brazilian sugar-cane ethanol         & 8.6--10.2\\  % https://en.wikipedia.org/wiki/Ethanol_fuel_in_Brazil
-Solar photovoltaic                   & 2--8 \\ 
+Solar photovoltaic                   & 2--8 \\
 Biofuels (incl.\ U.S.\ corn ethanol) & 0.8--1.6 \\ %%  from T. Gomiero 2015
-\bottomrule 
+\bottomrule
 \end{tabular}
 \end{table}
 
@@ -565,11 +548,11 @@ Biofuels (incl.\ U.S.\ corn ethanol) & 0.8--1.6 \\ %%  from T. Gomiero 2015
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 This book uses the IPARX equation as a framework for thinking about sustainability.
-It considers many different resources and many different types of impacts. 
+It considers many different resources and many different types of impacts.
 However, there is a focus on energy and CO$_2$ emissions.
-Climate change (Section \ref{sec:GHGCC}) is one of the most urgent sustainability 
-challenges and it is linked to other urgent challenges (such as material extinction rate(s) and land use changes) 
-by CO$_2$ and energy. 
+Climate change (Section \ref{sec:GHGCC}) is one of the most urgent sustainability
+challenges and it is linked to other urgent challenges (such as material extinction rate(s) and land use changes)
+by CO$_2$ and energy.
 Thus, carbon emissions and energy lie at the nexus of our sustainability challenges.
 
 
@@ -604,7 +587,7 @@ the ways that social media is shaping political (and and thereby environmental) 
 \markright{Questions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In April 2019, a fire did significant damage to the Notre-Dame de Paris cathedral; 
+In April 2019, a fire did significant damage to the Notre-Dame de Paris cathedral;
 see Figure~\ref{fig:notre_dame}.
 Immediately, the French government vowed to rebuild.
 Cleanup from the fire has already cost \euro{165}~million;
@@ -644,57 +627,30 @@ the full restoration is likely to cost more than \euro{8}~billion.
 \item Should Notre-Dame de Paris be restored? Why or why not? What are
       alternative uses for the money being raised? For the real estate on
       which the cathedral sits? Who gets to decide the answers to these questions?
-      Are there other stakeholders and who are they? 
-      % **** Besides whom? ---MKH ****)
-      % How was the decision made? 
-      % **** Which decision? 
-      % The decision to rebuild? Or another decision? 
-      % Could be an unfair question to ask? ---MKH ****?
-      % How should decisions be made? **** Maybe be more specific about ``decisions'' here.
-      % There are lots of kinds of decisions.
-      % Menu decisions? 
-      % Big decisions?
-      % Decision about cultural landmarks? 
-      % Decisions about sustainability concerns? ---MKH ****
-      
-
-% \item The fire at Notre-Dame de Paris is an example of French economist
-%       Frederic Bastiat's Broken Window Fallacy writ large.
-%       **** Seems like you don't describe the Broken Window Fallacy in the chapter.
-%       Is if ``fair'' to raise it here? Should the Broken Window Fallacy be the subject
-%       of a project rather than a question? 
-%       Further, I'll need some explaining how the BWF applies to sustainability. 
-%       Is the BWF rather a cautionary tale for how GDP is calculated. 
-%       Replacing the broken window would count positively toward GDP, but
-%       it is actually a drain on the economy. ---MKH ****
-%       In a modern/ancient
-%       twist to Bastiat's parable, more than 400 workers will have to be trained
-%       in 12$^{\mathrm{th}}$ century building techniques, a process that could take more than
-%       a decade. What value will those workers have to the economy once the
-%       restoration of Notre-Dame is complete?
+      Are there other stakeholders and who are they?
 
 \item With reference to the three areas of sustainability shown in Figure~\ref{fig:venn_diagram},
       what are the environmental, social, and economic reasons for rebuilding
-      Notre-Dame de Paris and against rebuilding? 
+      Notre-Dame de Paris and against rebuilding?
       Also, consider the decision to rebuild (or not) in terms of Equation \ref{eq:IPARX}.
-      What effect will rebuilding (or not) have on 
-      impacts~\Iparen{}, 
+      What effect will rebuilding (or not) have on
+      impacts~\Iparen{},
       population~\Pparen{},
-      affluence~\Aparen{}, 
-      the resource intensity of economic activity~\Rparen{}, and 
+      affluence~\Aparen{},
+      the resource intensity of economic activity~\Rparen{}, and
       the environmental impact of resources~\Xparen{}?
       % Reflect on economic (e.g., tourism) and social (e.g., national prestige) reasons
       % \emph{for} carrying out a restoration of Notre-Dame de Paris.
 
-\item Compare/contrast rebuilding Notre-Dame de Paris with the rebuilding of the 
-      World Trade Center site in New York City. 
-      How are the reasons similar? 
-      How are they different? 
-      Also, contrast these two to the demolition of the Orange County, New York 
-      Government Center (see Wikipedia 
+\item Compare/contrast rebuilding Notre-Dame de Paris with the rebuilding of the
+      World Trade Center site in New York City.
+      How are the reasons similar?
+      How are they different?
+      Also, contrast these two to the demolition of the Orange County, New York
+      Government Center (see Wikipedia
       ``\href{https://en.wikipedia.org/wiki/Orange_County_Government_Center}
       {Orange County Government Center}''),
-      a Brutalist building that was expensive to heat and was plagued by 
+      a Brutalist building that was expensive to heat and was plagued by
       leak and mold problems (especially bad traits in a records building).
 
 \item Should a rebuilt Notre-Dame de Paris be made as energy efficient as modern buildings?
@@ -706,7 +662,7 @@ the full restoration is likely to cost more than \euro{8}~billion.
       More than 1000 old-growth oaks have been cut for timbers to rebuild Notre-Dame de Paris.
       Do you think this is a good thing because it means there is a demand
       for these timbers (and thus the forests they come from are a valuable
-      resource worth preserving) or a bad thing because forests are valuable 
+      resource worth preserving) or a bad thing because forests are valuable
       carbon sinks. (See also \ref{project:old-growth-forest} below.)
 
 \item When Notre-Dame de Paris burned, its lead roof released toxic particles
@@ -721,92 +677,80 @@ the full restoration is likely to cost more than \euro{8}~billion.
 
 \item Immediately after the fire, a design competition was announced for the
       replacement of the central spire and the roof. Proposals included a carbon-fiber spire
-      covered in gold leaf, a stained-glass roof, a greenhouse, an open-air garden of 
-      trees, and a column of light. 
+      covered in gold leaf, a stained-glass roof, a greenhouse, an open-air garden of
+      trees, and a column of light.
       (Subsequently, the French National Assembly passed a law requiring any restoration
       to preserve Notre Dame's ``historic, artistic, and architectural interest.'')
       What are the artistic, cultural, and aesthetic pros and cons of each proposed designs?
       Does your answer change if you learn that the modern facade is the result
       of a 19$^\text{th}$ century restoration and isn't itself strictly ``original?''
 
-      % **** At this point, I'm struggling to see how the previous few questions 
-      % relate to environmental sustainability.  
-      % Maybe the connection needs to be made more explicit?  
-      % How about a final sentence after each of these questions
-      % that goes something like this:
-\item Your answers to the preceding questions expose your values on the 
+\item Your answers to the preceding questions expose your values on the
       societal (historical preservation) vs.\ economic (expensive fire suppression systems)
-      vs.\ environmental (energy and resources) areas of the sustainability triangle 
-      (Figure \ref{fig:venn_diagram}). 
-      Is one area dominant for you? What does that tell you about how you 
+      vs.\ environmental (energy and resources) areas of the sustainability triangle
+      (Figure \ref{fig:venn_diagram}).
+      Is one area dominant for you? What does that tell you about how you
       approach the topic of sustainability?
-      % It would be interesting to see if there is one axis 
-      % that is predominant in your draft questions. 
-      % If there isn't an axis of the sustainability triangle addressed by a question,
-      % that might be a sign that the questions, while interesting, 
-      % might not be relevant to the introductory chapter.
-      % It seems to me that it would be good to focus 2 questions on each axis of the sustainability
-      % triangle for Chapter 1. ---MKH ****
 
-\item Some companies have declared bankruptcy and gone out of business, like 
-      K-mart and Woolworth's. 
-      Others have been bailed out by governments, like General Motors and 
-      JP Morgan Chase. 
+\item Some companies have declared bankruptcy and gone out of business, like
+      K-mart and Woolworth's.
+      Others have been bailed out by governments, like General Motors and
+      JP Morgan Chase.
       Were any of these decisions sustainable?
       For how long?
       Is there social value in old companies (as, say, compared to old buildings)?
 
-\item Critique generally but also with reference to Equation \ref{eq:IPARX} the statement 
-      ``poverty is the worst form of pollution'' made by former Indian Prime 
-      Minister Indira Ghandi. 
+\item Critique generally but also with reference to Equation \ref{eq:IPARX} the statement
+      ``poverty is the worst form of pollution'' made by former Indian Prime
+      Minister Indira Ghandi.
       What does this statement mean?
-      In what ways is this statement true? In what ways is it untrue? 
+      In what ways is this statement true? In what ways is it untrue?
       How does this statement address the debate for strong environmental
       sustainability versus ``sustainable development?''
 
 \item In Section \ref{sec:what_is_sustainability},
       it was noted that ``needs are subjective.'' Would you
       like to ``live like a king,'' if that meant actually living like kings lived in 1500 AD,
-      500 AD, or 1500 BC? 
+      500 AD, or 1500 BC?
       What would be your life expectancy, expected level of education,
-      and income (and what could you spend that income on)? 
+      and income (and what could you spend that income on)?
       Now, with respect to this historical precedent, do modern humans have a
       right to a certain level of affluence?
-      What about future humans? Does their level change? 
-      
-\item What are our (current) responsibilities with respect to the rights of future 
+      What about future humans? Does their level change?
+
+\item What are our (current) responsibilities with respect to the rights of future
       humans? How far into the future? Are there, for instance, geographical boundaries
       to our future responsibilities (for example, are we responsible to a world-wide
-      population or only people who will live in our country)? 
+      population or only people who will live in our country)?
       What are or should be the mechanism(s) of enforcement of those responsibilities?
-      To take one example, local building codes dictate (some of) my responsibilities 
-      to future owners of my house. 
-      
-\item Section \ref{sec:masterE} claims that energy is the ultimate or master resource, 
+      To take one example, local building codes dictate (some of) my responsibilities
+      to future owners of my house.
+
+\item Section \ref{sec:masterE} claims that energy is the ultimate or master resource,
       in part, because obtaining and using any resource, including energy itself requires energy.
       How did this cycle begin? What are the initial sources of energy? Is energy
-      return on investment a good metric for sustainability? Why or why not? What 
+      return on investment a good metric for sustainability? Why or why not? What
       additional qualifiers need to be added?
-      
-\item Unless the human organism occupies a mutualistic niche with an ecosystem, 
+
+\item Unless the human organism occupies a mutualistic niche with an ecosystem,
       human activity disturbs the functioning of its enclosing ecosystem and
       entails an opportunity cost with respect to
-      the abundance and diversity of nonhuman organisms. 
+      the abundance and diversity of nonhuman organisms.
       Achieving sustainability includes restricting
       this disturbance and associated biodiversity loss
       to within some unknown safe limits.
       The degree to which we allow human activity beyond these unknown safe limits
       involves a value judgment regarding
-      the subjective value of supporting a given number of humans 
-      and their associated consumption, versus the subjective value 
-      of conserving nonhuman organisms. 
-      How have scientists attempted to formulate these safe limits? 
-      How do you judge the inherent worth of human and nonhuman entities? 
+      the subjective value of supporting a given number of humans
+      and their associated consumption, versus the subjective value
+      of conserving nonhuman organisms.
+      How have scientists attempted to formulate these safe limits?
+      How do you judge the inherent worth of human and nonhuman entities?
       Should humans maximize their population
-      at some level of consumption within these limits? 
+      at some level of consumption within these limits?
       If not, what balance would you argue should be struck, and why?
       (Question contributed by Zeke Marshall.)
-      
+
 \end{questions}
 
 
@@ -823,13 +767,13 @@ the full restoration is likely to cost more than \euro{8}~billion.
       ruler or tape measure and determine precisely on the line where \$1 million,
       and \$100,000 would be. Next show where \$2 billion and \$10 billion are.
       Then calculate where \$1 trillion would be.
-      
+
 \item Derive the results in Section~\ref{sec:exp}.
-      
+
 \item With reference to \ref{question:old-growth-forest} above,
-      research and write a summary report on 
+      research and write a summary report on
       carbon sequestration of forests. What type(s) of forest store the most carbon?
-      Consider old-growth, new-growth, and middle-aged stands of trees. Consider 
+      Consider old-growth, new-growth, and middle-aged stands of trees. Consider
       different climate zones.
       Report on net uptake rate and storage time (that is, for how many years is
       that carbon stored?). Be careful to differentiate between measures of ``per
@@ -838,19 +782,19 @@ the full restoration is likely to cost more than \euro{8}~billion.
       sustainability, namely, that it is hard to make fair comparisons because
       many sources of data use different definitions or metrics.
       \label{project:old-growth-forest}
-      
+
 \item \label{project:alt_exp}
-      An alternative to the description of exponential growth\index{exponential growth} given in 
-      Section~\ref{sec:exp} is to use the form 
+      An alternative to the description of exponential growth\index{exponential growth} given in
+      Section~\ref{sec:exp} is to use the form
       $\mft{y}_\mft{N} = \mft{y}_\text{0} (\text{1} + \mft{r})^\mft{N}$, where $\mft{y}_\text{0}$
       is the initial amount,
       \mft{r} is the constant growth rate (per compounding period),
       \mft{N} is the number of compounding periods, and $\mft{y}_\mft{N}$ is the final amount.
       Obtain (or generate) some data and compare the rates obtained using this
       form of the equation with the rates obtained from $\mft{y} = \mft{y}_\text{0} \text{e}^\mft{rt}$.
-      
+
 \item Create a personalized version of Equation~\ref{eq:IPARX} for yourself.
-      It can be for your current circumstances or for your anticipated future 
+      It can be for your current circumstances or for your anticipated future
       circumstances.
       Compute a few of your personal impacts as the product of:
       people in your family or household,
@@ -860,11 +804,10 @@ the full restoration is likely to cost more than \euro{8}~billion.
       These last two terms (\:\!\mft{R} and \mft{X}\:) will likely require some research on your part.
       For resources, consider at least energy, water, iron ore, and timber.
       For impacts, consider at least global warming potential, desertification, habitat loss,
-      and extinction rate. 
-      Will your computed impact rate over- or under- represent your actual impact rate?
+      and extinction rate.
+      Will your computed impact rate over- or under-represent your actual impact rate?
 
 \end{projects}
-
 
 
 \cleardoublepage

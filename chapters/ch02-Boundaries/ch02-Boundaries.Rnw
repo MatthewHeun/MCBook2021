@@ -9,12 +9,7 @@
 \label{chap:planetary_boundaries}
 %#############################################################
 
-% Graedel and Allenby diagrams of limits ....
-% The biggest drivers of current biodiversity loss are overexploitation and agriculture, 
-% both linked to continually increasing human consumption. -- Source of quote??
-
 \epigraph{Mother Nature doesn't care if you're having fun.}{Larry Niven}
-%\epigraph{Fortune is of sluggish growth, but ruin is rapid.}{Lucius Annaeus Seneca}
 
 The left-hand side of Equation \ref{eq:IPARX} (repeated below for convenience) 
 is environmental impact~\Iparen{}.
@@ -41,12 +36,12 @@ Exceeding Earth's carrying capacity degrades its ability to support life.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Ecosystem services} 
+\section{Ecosystem services}\index{ecosystem services} 
 \label{sec:ecosystem_services}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The Earth's ecosystems support life on Earth. Collectively, these supports are 
-called ecosystem services.
+called ecosystem services\index{ecosystem services}.
 The first group of services are provisioning services,\index{services!provisioning}
 which are material 
 and energy resources.
@@ -70,16 +65,15 @@ Mountains and snow enable downhill skiing.
 Ocean waves enable surfing.
 Rivers and lakes enable boating and (recreational) fishing opportunities.
 
-Many international groups have examined the state of Earth's ecosystem services. 
+Many international groups have examined the state of Earth's ecosystem services\index{ecosystem services}. 
 The Millennium Ecosystem Assessment (MA)\index{Millennium Ecosystem Assessment}
 is a UN-affiliated group that studied ecosystem
 services between 2001 and 2005. 
 1300 authors from 95 countries participated. 
-The MA found that (even back then) 15 out of the 24 ecosystem services 
+The MA found that (even back then) 15 out of the 24 ecosystem services\index{ecosystem services} 
 they examined were being degraded or used unsustainably~\cite{MA2005}.
-%Most heavily affected are inland waters by decline in water quality and fragmentation of wetlands.
 
-Ecosystem services can be considered as natural capital. 
+Ecosystem services\index{ecosystem services} can be considered as natural capital. 
 ``Capital'' refers to an improvement or building that is economically productive 
 or valuable; see Chapter~\ref{chap:affluence}.
 The ecosystem produces value for human society by creating many things we use 
@@ -92,10 +86,10 @@ Examples include:
 \begin{itemize}
 
 \item The European Environmental Agency's\index{European Environmental Agency}
-      Common International Classification of
-      Ecosystem Services~\cite{CICES2018} 
+      Common International Classification of Ecosystem 
+      Services~\cite{CICES2018}\index{Common International Classification of Ecosystem Services}
       (which, incidentally, recognizes many more 
-      categories of ecosystem services than does the MA). 
+      categories of ecosystem services\index{ecosystem services} than does the MA). 
 
 \item The U.S.\ Environmental Protection Agency's\index{Environmental Protection Agency}
       Final Ecosystem Goods and Services scoping tool.
@@ -125,7 +119,7 @@ we count what we think we value, and
 we come to value what we count.
 \end{mcframe}
 
-Various analogies have been used to describe the benefits that ecosystem services provide, 
+Various analogies have been used to describe the benefits that ecosystem services\index{ecosystem services} provide, 
 particularly in terms of the loss of a piece of the ecosystem. 
 For example, the ecosystem is like an airplane.
 When one rivet is lost, the result is not immediately catastrophic but accumulated 
@@ -144,7 +138,8 @@ buoyancy act to right the boat; see Figure~\ref{fig:buoyancy}.
 However, there is an angle where, if the boat is tipped past that point,
 the forces will act in the opposite way---to suddenly and catastrophically flip the boat.
 A tipping point is where the behavior of a system fundamentally changes. 
-There is concern that Earth's ecosystem services may have reached or are near a tipping
+There is concern that Earth's ecosystem services\index{ecosystem services}
+may have reached or are near a tipping
 point, that is, they have been disturbed to the point of being on the edge of 
 catastrophic collapse.
 
@@ -169,7 +164,6 @@ catastrophic collapse.
                 {Boat stability. The static forces acting on a boat are the weight
                 of the boat (W) and the buoyancy force (B). When the boat is heeled over a small
                 amount (a), the moment created by these two forces acts to right the boat. 
-                %Adding weight to the top of the boat raises its center of mass, making it more unstable.
                 However, there is an angle beyond which the moments created by the two forces no longer 
                 act to right the boat but to flip it (b) suddenly and catastrophically. 
                 The angle beyond which the boat flips is called the tipping point.}
@@ -185,7 +179,7 @@ despite what math and physics tell us.
 It is hard for humanity to come to grips with the idea that something really bad
 could happen to the planet because we are living unsustainably. 
 
-There are two types of concerns with respect to ecosystem services.
+There are two types of concerns with respect to ecosystem services\index{ecosystem services}.
 The first is with respect to provisioning services. Humans may ``use up'' a finite
 resource such as helium, petroleum, or neodymium. 
 Or, perhaps, the demand for food
@@ -204,7 +198,8 @@ the (functional) supply of fossil fuels.
 
 The second type of concern relates to human modifications of the ecosystem.
 Human actions can cause a change or breakdown in the Earth's regulating and 
-supporting ecosystem services, which will lead to a tipping point, that is, 
+supporting ecosystem services\index{ecosystem services},
+which will lead to a tipping point, that is, 
 a fundamental change in the way the ecosystem works. 
 An example that is of particular concern at present is global climate change 
 (principally) caused by human CO$_2$ emissions. 
@@ -513,7 +508,7 @@ erodable_limit_data %>%
                  Fourth, as in (c), there is a two-way interaction between growth and the boundary but the
                  boundary is robust.
                  Fifth, shown in (d), exceeding the boundary is possible and results in serious, dramatic, and
-                 long-lasting reduction of the system's ability to provide ecosystem services.
+                 long-lasting reduction of the system's ability to provide ecosystem services\index{ecosystem services}.
                  \emph{Source}: \citet{Graedel:2010ab}.}
         \label{fig:GAfig21}
 \end{figure}
@@ -532,7 +527,7 @@ That is, it recovers.
 Renewable resources like grazing land, fisheries, timber, and aquifers\index{aquifer} can
 behave in this way. 
 Lastly, in Figure~\ref{fig:GA4}, exceeding the boundary causes a long-term reduction in the 
-capacity of the ecosystem to provide ecosystem services. 
+capacity of the ecosystem to provide ecosystem services\index{ecosystem services}. 
 As above, renewable resources like grazing land, fisheries, timber, and aquifers\index{aquifer}
 can have this behavior, if their capacity is exceeded too much or for too long.
 As another example, complex systems, like temperature regulation of the planet, can exhibit
@@ -636,7 +631,7 @@ causing the average global temperature to increase.
 The current average atmospheric CO$_2$ concentration is an example of humanity
 exceeding a planetary boundary. 
 Because the carbon cycle is one of Earth's 
-regulating and support ecosystem services and
+regulating and support ecosystem services\index{ecosystem services} and
 because the atmosphere is comprehensively global, 
 the impacts of climate on the environment are many.
 Climate change is the term used to describe the results of the greenhouse effect.
@@ -889,7 +884,7 @@ such as materials and energy, waste removal, and recreational opportunities.
 Human activities can degrade or destroy the ability of the ecosystem to supply 
 those services.
 \mft{I}, the left-hand side of the IPARX equation (Equation~\ref{eq:IPARX})
-collects the various ways that ecosystem services can be affected.
+collects the various ways that ecosystem services\index{ecosystem services} can be affected.
 Maximum permissible levels for the components of~\mft{I} are called planetary boundaries.
 Indices are a tool to help us aggregate information and manage impacts.
 The next four chapters will look at the terms on the right-hand side 
@@ -985,7 +980,8 @@ New York: Bloomsbury,
       caused a massive alteration of species ranges, overwhelming the changes 
       that occurred after the retreat of the last Ice Age. In some ecosystems, 
       invasions by alien organisms and diseases have resulted in extinction of 
-      native species or a huge loss in ecosystem services. In the United States, 
+      native species or a huge loss in ecosystem services\index{ecosystem services}.
+      In the United States, 
       for example, invasions of nonnative plants, animals, and microbes are thought
       to be responsible for 42\% of the decline of native species now listed as 
       endangered or threatened~\cite[p.~5]{Stein1996}. 
@@ -996,7 +992,7 @@ New York: Bloomsbury,
       how much effort should be put into either containing or eradicating it?
       Name a dozen invasive species local to your area.
 
-\item Recreation and literary and cultural inspiration are real ecosystem services
+\item Recreation and literary and cultural inspiration are real ecosystem services\index{ecosystem services}
       and their financial value is quantifiable (for instance by a contingent valuation survey). 
       How much do you pay for a day at the beach? 
       How much would you pay for a day at the beach? 
@@ -1005,7 +1001,7 @@ New York: Bloomsbury,
       but it could be saved (somehow) if enough money were raised, how much
       would you contribute?
       
-\item Access to cultural ecosystem services, for instance, wilderness experiences,
+\item Access to cultural ecosystem services\index{ecosystem services}, for instance, wilderness experiences,
       are often gated by economic privilege. Do people have a right to such experiences
       and what can be done to distribute them more equitably? 
       
@@ -1064,7 +1060,7 @@ New York: Bloomsbury,
       apply to the modern context?
 
 \item What role did ancient hominids play in the ecosystem?
-      What ecosystem services did they provide?
+      What ecosystem services\index{ecosystem services} did they provide?
       Who is doing that job now?
       
 \item Rapa Nui, also called Easter Island, had 21 species of native trees and 

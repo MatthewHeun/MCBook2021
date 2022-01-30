@@ -35,7 +35,7 @@ Section~\ref{sec:animal_pop} begins with a discussion
 of the impact~\Iparen{} of human activities on animal populations.
 The size of the impact is a direct result of the size of \mft{P}.
 For example, the recent, massive decline of many animal populations is concerning 
-(in part) because it likely indicates a reduction in ecosystem services
+(in part) because it likely indicates a reduction in ecosystem services\index{ecosystem services}
 brought about by human activities.
 
 Section~\ref{sec:human_population} discusses human population.
@@ -76,7 +76,7 @@ wild animals such as whales, bison, deer, and bears.
 The number of wild vertebrates has declined by 68\% since 1970~\cite{WWFLPR2020}. 
 Populations of insects are down about 80\% in the last 30 years~\cite{Hallmann2017}.
 These statistics are alarming because they could indicate a drastic decline in the 
-quality and/or quantity of ecosystem services available to animals 
+quality and/or quantity of ecosystem services\index{ecosystem services} available to animals 
 (and potentially) humans.
 One of the planetary boundaries identified in Chapter~\ref{chap:planetary_boundaries} 
 is an extinction rate of less than 0.001\% of species going extinct per year. 
@@ -364,7 +364,7 @@ The replacement rate refers to the fact that, on average, each female needs to g
 birth to 2.1 children over her lifetime to maintain a stable population,
 to account for childhood mortality.
 
-Demographic transition theory,\index{demographic transition theory}
+\textbf{Demographic transition theory}\index{demographic transition theory},
 is based on an observed pattern of population change thought to be caused by
 economic development.
 Figure~\ref{fig:dtt} illustrates schematically the four stages of the transition.
@@ -517,13 +517,14 @@ ggplot2::ggplot() +
      \label{fig:dtt_pop_pyramid}
      \end{subfigure}
         \caption[Demographic transition theory]
-                {Schematic of demographic transition theory. Crude birth rate (CBR) and
+                {Schematic of demographic transition theory\index{demographic transition theory}.
+                 Crude birth rate (CBR) and
                  crude death rate (CDR) are defined as births or deaths per year per 1000 people
                  in the total population (uncorrected for sex or age cohorts).}
         \label{fig:dtt}
 \end{figure}
 
-The first stage of the demographic transition is characterized by high birth and
+The first stage of the demographic transition\index{demographic transition} is characterized by high birth and
 death rates (Figure~\ref{fig:dtt_crude_rates}), with a consequently low rate of population growth.
 The first stage is typically resource constrained.
 Until about 1800 AD the world was in Stage~1.
@@ -541,7 +542,7 @@ is still growing, but the falling birth rate means slower growth and an age stru
 that begins to be more uniform.
 In Stage~4, the birth rate and death rate equalize and the population stabilizes.
 
-After the demographic transition,
+After the demographic transition\index{demographic transition},
 the birth rate might rise again (causing further population growth)
 or drop below the death rate, which leads to a decrease in total population.
 Currently, most developed countries have a birth rate that is below the
@@ -549,7 +550,8 @@ replacement rate, that is, a falling population (offset, in some cases,
 by immigration).
 As stated earlier, low birth rates are correlated to higher affluence~\Aparen{}.
 
-As countries move through the demographic transition, the age structure of the
+As countries move through the demographic transition\index{demographic transition},
+the age structure of the
 population changes; see Figure~\ref{fig:dtt_pop_pyramid}.
 A population pyramid\index{population pyramid}
 shows the percentage of the population in each age cohort, of
@@ -576,7 +578,7 @@ GDP per capita is lower than it would be with a different age structure.
 (There can still be growth in GDP per capita, but growth faces a
 demographic ``headwind.'')
 
-The age structure of the population also shows demographic momentum.
+The age structure of the population also shows \textbf{demographic momentum}\index{demographic momentum}.
 It takes a lifetime to age a cohort out of the population pyramid.
 The next generation of parents have already been born.
 The children of today will become the parents of tomorrow (that is, of the next generation).

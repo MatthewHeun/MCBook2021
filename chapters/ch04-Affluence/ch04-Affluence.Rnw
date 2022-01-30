@@ -387,8 +387,8 @@ Therefore, we use the terms ``production'' and ``consumption'' interchangeably.
 Knowing that the economy only consumes what the economy produces and,
 likewise, only things that will be consumed are produced, 
 we are ready to introduce
-the metaphor of the economic metabolism.
-All plant and animal metabolisms consume resources
+the metaphor of the \textbf{economic metabolism}\index{economic metabolism}.
+All plant\index{metabolism!plant} and animal metabolisms\index{metabolism!animal} consume resources
 (energy and materials) 
 and produce wastes in the process of doing useful things.
 Similarly, economies take in resources and produce wastes.
@@ -396,12 +396,12 @@ Similarly, economies take in resources and produce wastes.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Thus, we say the economy is society's metabolism.
+Thus, we say the economy is society's metabolism\index{economic metabolism}.
 \end{mcframe}
 
 One way of looking at Equation~\ref{eq:IPARX} is that impacts~\Iparen{}
 are the result of economic activity.
-That is, environmental impacts are the result of society's metabolism.
+That is, environmental impacts are the result of society's metabolism\index{economy~as society's metabolism}.
 Total consumption (that is, world GDP) is $\mft{P}\times\mft{A}$ in Equation~\ref{eq:IPARX}.
 Resources (the numerator of \mft{R}) are the food the economy needs to live and grow.
 Resources can be calculated by $\mft{P} \times \mft{A} \times \mft{R}$.
@@ -414,51 +414,7 @@ Of course, impacts can be calculated by $\mft{P} \times \mft{A} \times \mft{R} \
 \section{Economic growth and recession}
 \label{sec:EconGrowth}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% 
-% Growth in GDP per capita~\Aparen{} is the explicit goal of many economic policies.
-% As discussed above, 
-% GDP per capita is measured as consumption per capita.
-% But because consumption and production are in balance, 
-% rising economic growth means that production
-% is an outcome of many economic policies.
-% Growth in production also means growth in resource extraction and waste emissions.
-% So policies that encourage economic growth 
-% often have negative implications for environmental sustainability.
-%
-% There are two ways the economy can increase GDP, 
-% either
-% (a)~by consuming \emph{more} inputs 
-% or
-% (b)~by using existing inputs more \emph{efficiently} (meaning that \mft{R} goes down).
-% Economic inputs include labor, capital, energy, and materials.
-% In the long run, growing output by scaling up the inputs does not increase 
-% affluence~\Aparen{} because more workers are needed to gather, process, and use the 
-% additional resources.
-% That leaves only efficiency as a means of boosting affluence.
-% From a sustainability point of view, we should want everything to be used
-% as efficiently as possible; inefficiency of any kind is not desirable.
 
-% % Original section:
-% Although production and consumption are in balance, both may change together.
-% % JVA: remove the next sentence? ---MKH
-% Indeed, growth in GDP per capita~\Aparen{} is the explicit goal of many economic policies.
-% There are two ways the economy can increase GDP.
-% Either
-% (a)~by consuming \emph{more} inputs 
-% or
-% (b)~by using existing inputs more \emph{efficiently} (meaning that \mft{R} goes down).
-% 
-% Economic inputs include labor, capital, energy, and materials.
-% In the long run, growing output by scaling up the inputs does not increase 
-% affluence~\Aparen{} because more workers are needed to gather, process, and use the 
-% additional resources.
-% That leaves only efficiency as a means of boosting affluence.
-% From a sustainability point of view, we should want everything to be used
-% as efficiently as possible; inefficiency of any kind is not desirable.
-% 
-
-% Proposed MKH revision:
 Growth in GDP per capita~\Aparen{} is the explicit goal of many economic policies.
 There are two ways the economy can increase GDP, 
 either
@@ -496,7 +452,7 @@ rising economic growth means that production
 is an outcome of many economic policies.
 Growth in production also means growth in resource extraction and waste emissions.
 So policies that encourage economic growth 
-often have negative implications for environmental sustainability.
+often have negative implications for environmental sustainability\index{environmental sustainability}.
 
 
 %..............................
@@ -617,7 +573,7 @@ When the economy grows continually it will, at some point,
 either demand more resources than the environment can provide or
 exceed the ecosystem's ability to absorb its wastes.
 Eventually, economic growth will push the ecosystem past a tipping point where the
-ecosystem is no longer able to provide ecosystem services, as
+ecosystem is no longer able to provide ecosystem services\index{ecosystem services}, as
 discussed in Chapter~\ref{chap:planetary_boundaries}.
 
 In response, there are calls for transitioning world economies
@@ -732,26 +688,26 @@ would bring us closer to sustainability.
 
 
 %..............................
-\paragraph{Doughnut economy} \index{economy!doughnut}
+\paragraph{Doughnut economy} \index{doughnut economy}
 %..............................
 
-A doughnut economy keeps the level of economic activity
+A doughnut economy\index{doughnut economy} keeps the level of economic activity
 within planetary boundaries
 (represented by an outer circle)
 while simultaneously lifting people out of poverty 
 (represented by an inner circle).
 The space between the two circles is shaped like a doughnut and
 represents the ``safe operating space'' for humanity. 
-The doughnut economy imposes both a 
+The doughnut economy\index{doughnut economy} imposes both a 
 ``floor'' and a ``ceiling'' on economic activity,
 reducing income disparity between rich and poor and
 respecting planetary boundaries.
-Thus, the doughnut economy model attempts to correct 
+Thus, the doughnut economy\index{doughnut economy} model attempts to correct 
 both the flaws of a steady-state economy, namely that
 ``steady-state'' may not necessarily have small enough impact to be sustainable
 and some people could remain poor and destitute.
 
-Although a doughnut economy sounds good in theory, 
+Although a doughnut economy\index{doughnut economy} sounds good in theory, 
 there would be many conceptual and
 operational difficulties in its implementation. 
 (To one degree or another, these difficulties are shared with the 
@@ -768,7 +724,7 @@ degrowth\index{degrowth} to fit beneath the ceiling
 or
 redistribution of affluence to lift everyone above the floor.
 Relatedly, who sets the ``floor'' and the time period for transition?
-Third, the doughnut model implicitly sets up a ``people-versus-planet'' dichotomy
+Third, the doughnut\index{doughnut economy} model implicitly sets up a ``people-versus-planet'' dichotomy
 and then attempts to maximize the ``people'' side 
 (to the extent permitted by the ``planet'' side).
 Might it be possible to have flourishing society and a flourishing planet?
@@ -824,7 +780,8 @@ no one wants it for themselves.
 (The abstract desire to have lower impacts is not the same as wanting to be poor.)
 Lower levels of affluence are associated with lower HDI, as 
 Figure~\ref{fig:FootprintHDIGraph} shows, because income is a factor in HDI.
-Globally, social sustainability is often predicated on increasing affluence.
+Globally, social sustainability\index{social sustainability}
+is often predicated on increasing affluence.
 
 Some people have chosen (relative) poverty by trying to escape the economic
 system; see \ref{project:off-grid} for a few examples.
@@ -844,11 +801,11 @@ This chapter defined affluence~\Aparen{} in the IPARX equation and looked at
 historical data of \mft{A} over time. 
 Affluence is a challenging topic.
 On one hand, growth in affluence can be viewed as the source (or a major source)
-of our many environmental sustainability challenges.
+of our many environmental sustainability\index{environmental sustainability} challenges.
 The discussion questions below further explore the thorny relationship  
 between affluence~\Aparen{} and environmental impacts~\Iparen{}.
 On the other hand, increasing affluence is desirable. 
-Indeed, it is the goal of many aspects of social sustainability.
+Indeed, it is the goal of many aspects of social sustainability\index{social sustainability}.
 
 The IPARX equation (Equation~\ref{eq:IPARX}) 
 indicates that growth in affluence~\Aparen{}
@@ -957,7 +914,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       % GDP, because it represents consumption, is only a partial indication of wealth. 
       % For instance, owning an asset, like land or a valuable painting, doesn’t factor into GDP. 
       Thus, GDP may be less useful than measures of wealth for discussions of 
-      social sustainability. 
+      social sustainability\index{social sustainability}. 
       \begin{enumerate}
       \item How are wealth inequality and income inequality different? 
       Which do you think is worse from a social perspective and why? 
@@ -966,7 +923,9 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       large amount of wealth. Also, consider those who might be asset poor and 
       income rich, like a doctor or lawyer paying off medical- or law-school loans.
       How might their patterns of affluence (consumption) be similar or different?
-      How do they each affect environmental, economic, and social sustainability?
+      How do they each affect environmental\index{environmental sustainability}, 
+      economic\index{economic sustainability}, and
+      social sustainability\index{social sustainability}?
       \item How might your notions of wealth and income inequality scale to the 
       macroeconomic level?
       \end{enumerate}
@@ -1019,7 +978,8 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       What are the purely economic effects?
 
 \item ``It's hard to fight economics.'' What does this statement imply for
-      environmental sustainability and social sustainability?   
+      environmental sustainability\index{environmental sustainability} and 
+      social sustainability\index{social sustainability}?   
       
 \item Social, economic, and environmental policies have effects that are 
       both dollar quantifiable and non-dollar quantifiable. 

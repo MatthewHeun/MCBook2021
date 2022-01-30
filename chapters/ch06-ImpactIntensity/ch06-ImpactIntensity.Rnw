@@ -28,10 +28,10 @@
 % children from climate disruption}{Chris Fox} % from MIT business quotes page.
 
 As noted in section \ref{sec:econ_metab},
-the economy is society's metabolism.\index{economy!as society's metabolism}
-As such, the economy exhibits characteristics of a metabolism:
+the economy is society's metabolism.\index{economic metabolism}
+As such, the economy exhibits characteristics of a metabolism\index{economic metabolism}:
 it ingests materials and emits wastes.
-These characteristics of the economic metabolism are captured by the
+These characteristics of the economic metabolism\index{economic metabolism} are captured by the
 final term in Equation~\ref{eq:IPARX} (repeated below for convenience),
 the environmental impacts of resource extraction and consumption~\Xparen{}, 
 the topic of this chapter.
@@ -267,7 +267,8 @@ see Figure~\ref{fig:PrimaryEnergyGraph}.
 Since 1960, the carbon intensity of energy
 has hovered around 63~MtCO$_2$/EJ.
 Thus, for the last 60~years, \XCOtwo{} has been stubbornly constant
-and far too high for environmental sustainability (both weak and strong).
+and far too high for environmental sustainability\index{environmental sustainability}
+(both weak\index{weak sustainability} and strong\index{strong sustainability}).
 It appears that eliminating CO$_2$ emissions by significantly reducing
 \XCOtwo{} will require unprecedented changes
 to the world's primary energy supply.
