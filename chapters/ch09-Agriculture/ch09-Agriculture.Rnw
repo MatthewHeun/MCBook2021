@@ -567,7 +567,8 @@ is less efficient than the overall food system with
 % \Sexpr{animal_inputs} million pounds as input and 
 only
 \Sexpr{format(animal_efficiency * 100, digits = 3)}\% efficiency on a mass basis\index{efficiency!mass-based}.
-Third, losses (wastage) at the final stages reduce the efficiency of the entire food system.\index{waste!food}
+Third, \textbf{food waste}\index{food waste}
+(losses) at the final stages reduce the efficiency of the entire food system.\index{waste!food}
 In fact, final stage mass-based efficiency\index{efficiency!mass-based}
 is only \Sexpr{format(end_use_food_efficiency * 100, digits = 3)}\%.
 Fourth, imports\index{food!imports}
@@ -586,7 +587,7 @@ more significant than demand-side disruptions
 for determining food prices.
 
 A sustainability challenge associated the food distribution system is
-“how can food waste be eliminated?''
+“how can food waste\index{food waste} be eliminated?''
 
 
 %++++++++++++++++++++++++++++++
@@ -755,7 +756,7 @@ to make such changes.
 
 Any measure that will increase the efficiency or efficacy of the food system is 
 a step towards becoming more sustainable.
-For example, reducing food waste has multiple effects:
+For example, reducing food waste\index{food waste} has multiple effects:
 eliminating the inputs needed to grow wasted food,
 reducing the emissions from producing, consuming, and disposing of that food), and
 increasing the effective EROI\index{energy return on investment (EROI)} of the food system.
@@ -908,29 +909,6 @@ Therefore, it is crucially important to make choices, individually and corporate
 that make the agriculture system more sustainable, 
 while resolving distributional issues and improving food access for all.
 
-% On the personal level,
-% eating closer to the base of the food chain and
-% pursuing vegetarian or vegan diets are among the most effective
-% ways to reduce negative environmental impacts of the food supply system.
-% Participating in the slow food movement can promote sustainability,
-% as it seeks to promote traditional, regional cuisine,
-% thereby reducing the distance from farm to plate.
-%
-% At the global level,
-% organic farming seeks to limit the use of synthetic fertilizers and pesticides
-% by promoting the use of compost, manure, and natural practices.
-% Practices such as crop rotation and biological (as opposed to chemical) past control
-% are encouraged.
-%
-% The growing problem of food waste spans the personal and global levels.
-% Actions and policies to minimize food waste provide benefits such as
-% reducing inputs to the food system and
-% strain on the biosphere.
-
-%% Farm subsidies (from the 1930s onwards) distort market prices.
-%% Redirect subsidies to remove marginal land from raising livestock to
-%% reforestation and carbon sequestration.
-
 A seven-word ``recipe'' for sustainable agriculture is given by food writer Michael Pollan:
 ``[e]at food. Not too much. Mostly plants.''
 
@@ -1018,12 +996,12 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       How many more lives or how much less carbon does it take to change
       your answer? Why?
 
-\item Food waste is a major environmental and economic problem. 
-      In fact, food waste accounts for 6--8\% of global greenhouse gas emissions.
-      One way to reduce food waste is to use more packaging.
+\item Food waste\index{food waste} is a major environmental and economic problem. 
+      In fact, food waste\index{food waste} accounts for 6--8\% of global greenhouse gas emissions.
+      One way to reduce food waste\index{food waste} is to use more packaging.
       The purpose of packaging is to keep food fresh until its ready to be eaten.
       What is your reaction to the idea that additional packaging could reduce 
-      food waste? How much additional packaging should be used?
+      food waste\index{food waste}? How much additional packaging should be used?
       
 \item Food exports (or imports) are energy (or water) exports (or imports).
       How does food exporting/importing look from an energy (or water) efficiency 
