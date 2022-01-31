@@ -447,7 +447,7 @@ windows that neither conduct heat nor pass radiation.
 
 Heating systems
 (often furnaces\index{furnace}, but also boilers\index{boiler}, heat pumps\index{heat pump}, 
-and electric radiant in-floor heating\index{radiant heat})
+and electric radiant in-floor heating\index{radiant heating})
 provide space heating,
 usually from an out-of-the-way location in the dwelling, such as the basement.
 Heating systems convert a fuel 
@@ -581,11 +581,11 @@ Therefore, heating systems and air conditioners\index{air conditioners}
 are needed to replace heat lost in winter and remove heat gained in the summer.
 
 The effectiveness of roof and wall insulation\index{insulation}
-is quantified by its R-value\index{R-value},
+is quantified by its \textbf{R-value}\index{R-value},
 a measure of the resistance to heat transfer through the insulation material
 quantified in units of hr$\cdot$ft$^2\cdot$\degF/BTU.
-Higher R-values mean less heat is transferred.
-Large R-values are achieved with
+Higher R-values\index{R-value} mean less heat is transferred.
+Large R-values\index{R-value} are achieved with
 thicker insulation constructed from low-thermal-conductivity materials.
 Halving the amount of heat that passes means doubling the thickness of the 
 insulation.
@@ -595,12 +595,12 @@ Thus, insulation is subject to diminishing returns in its effectiveness,
 and there is a practical and economic optimum level of insulation.
 The \textbf{Energy Star}\index{Energy Star} program recommends levels of roof, wall, and
 floor insulation~\cite{U.S.-Department-of-Energy:aa}.
-In Northern US climates, R-values of 49--60 hr$\cdot$ft$^2\cdot$\degF/BTU are recommended.
+In Northern US climates, R-values\index{R-value} of 49--60 hr$\cdot$ft$^2\cdot$\degF/BTU are recommended.
 
 The insulative properties of windows are quantified by the U-factor\index{U-factor},
-which is the inverse of an R-value.
+which is the inverse of an R-value\index{R-value}.
 Typical U-factors for windows are 0.2--1.2 BTU/hr$\cdot$ft$^2\cdot$\degF.
-(Corresponding window R-values are 5--0.83 hr$\cdot$ft$^2\cdot$\degF/BTU.)
+(Corresponding window R-values\index{R-value} are 5--0.83 hr$\cdot$ft$^2\cdot$\degF/BTU.)
 Lower U values are more insulative.
 Heat gain from solar radiation is quantified by the
 solar heat gain coefficient (SHGC)\index{solar heat gain coefficient},
@@ -685,16 +685,17 @@ high-efficiency units, despite high initial cost?''
 
 The energy efficiency\index{energy efficiency} of air conditioners\index{efficiency!air conditioners}
 is quantified by the
-Seasonal Energy Efficiency Ratio (SEER),\index{Seasonal Energy Efficiency Ratio (SEER)}
+\textbf{Seasonal Energy Efficiency Ratio (SEER)},\index{seasonal energy efficiency ratio (SEER)}
 which is
 the ratio of cooling provided (in BTU)
 to electricity consumed (in W$\cdot$hr) throughout the season.
-Larger SEER values indicate higher efficiency
-and lower operating costs compared to lower-SEER air conditioners.
+Larger SEER\index{seasonal energy efficiency ratio (SEER)} values indicate higher efficiency
+and lower operating costs compared to lower-SEER\index{seasonal energy efficiency ratio (SEER)} air conditioners.
 
 As of 2015, U.S.\ air conditioners must adhere to regionally dependent efficiency standards.
-In the southwest, a minimum SEER value of 14 BTU/W$\cdot$hr is required.
-In other parts of the U.S., a minimum SEER value of 13 BTU/W$\cdot$hr is mandated.
+In the southwest, a minimum SEER\index{seasonal energy efficiency ratio (SEER)} value of 14 BTU/W$\cdot$hr is required.
+In other parts of the U.S., a minimum SEER\index{seasonal energy efficiency ratio (SEER)}
+value of 13 BTU/W$\cdot$hr is mandated.
 %**** Find a reference for these SEER numbers. ****
 % See email.
 Higher efficiency is normally associated with higher purchase price.
@@ -874,7 +875,7 @@ percent_urban %>%
 %++++++++++++++++++++++++++++++
 
 There are several ways to transition to more sustainable heating and cooling in households.
-First, in-floor radiant heating is often considered more comfortable than 
+First, in-floor radiant heating\index{radiant heating} is often considered more comfortable than 
 forced air, allowing thermostats\index{thermostat} to be set lower,
 thereby consuming less energy for the same level of comfort.
 (This is an example of the benefit 
@@ -1141,7 +1142,7 @@ United States, 1999: \\
 \item This chapter discussed energy efficiency\index{energy efficiency} measures for many of the categories
       featured in Figure \ref{fig:average_residential_energy}, 
       such as AFUE\index{Annual Fuel Utilization Efficiency (AFUE)},
-      SEER, and
+      SEER\index{seasonal energy efficiency ratio (SEER)}, and
       Energy Star\index{Energy Star} 
       labels. 
       However, some categories of appliances do not have an efficiency rating. 
@@ -1224,16 +1225,16 @@ United States, 1999: \\
       Does your answer change if you apply a discount rate 
       to the financial considerations of this project?
 
-\item Locate the air conditioner in you dwelling, and find its SEER.
+\item Locate the air conditioner in you dwelling, and find its SEER\index{seasonal energy efficiency ratio (SEER)}.
       If you were to replace your existing air conditioner 
-      with an air conditioner with a SEER of 40
-      (near the maximum SEER rating as of this writing),
+      with an air conditioner with a SEER\index{seasonal energy efficiency ratio (SEER)} of 40
+      (near the maximum SEER\index{seasonal energy efficiency ratio (SEER)} rating as of this writing),
       how much energy would you save annually?
       What is the price of that saved energy?
       What is the annual cost savings from this energy efficiency\index{energy efficiency} intervention?
-      Assuming that the 40 SEER air conditioner lasts 15 years and 
+      Assuming that the 40 SEER\index{seasonal energy efficiency ratio (SEER)} air conditioner lasts 15 years and 
       that you want to break even financially,
-      what is the maximum price you should pay for a 40 SEER air conditioner?
+      what is the maximum price you should pay for a 40 SEER\index{seasonal energy efficiency ratio (SEER)} air conditioner?
       Does your answer change if you apply a discount rate 
       to the financial considerations of this project?
 

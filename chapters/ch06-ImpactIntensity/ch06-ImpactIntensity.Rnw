@@ -838,7 +838,7 @@ many years in education and government led him to quip frequently
 
 
 %++++++++++++++++++++++++++++++
-\subsection{The rebound effect}
+\subsection{The rebound effect}\index{rebound effect}
 \label{sec:rebound_effect}
 %++++++++++++++++++++++++++++++
 
@@ -848,15 +848,15 @@ Equation~\ref{eq:IPARX})
 or impact intensity~\XCOtwoparen{}, or both,
 will go down as efficiency rises.
 However, energy efficiency\index{energy efficiency} is known to stimulate economic activity 
-by a mechanism called the ``rebound effect''~\cite{Brockway:2021ww},
+by a mechanism called the \textbf{rebound effect}\index{rebound effect}~\cite{Brockway:2021ww},
 wherein monetary savings (from reduced energy consumption at a newly-efficient device)
 are reinvested, leading to economic growth.
 Economic growth raises the GDP of an economy,
 so affluence~\Aparen{} will increase.
 As \mft{A} increases, energy consumption will increase.
 Whether energy efficiency\index{energy efficiency} actually saves energy and actually reduces CO$_2$ emissions
-depends on the strength of the rebound effect.
-When rebound effect is so large as to wipe out the initial energy savings,
+depends on the strength of the rebound effect\index{rebound effect}.
+When rebound effects\index{rebound effect} are so large as to wipe out the initial energy savings,
 ``backfire'' is said to occur~\cite{Sorrell:2009cg,Sorrell:2010ul}.
 Backfire is a threat to a low-carbon future~\cite{Brockway:2017a}.
 Thus, we must be careful about crafting policies to address 
@@ -947,9 +947,10 @@ However, recent research indicates that rising energy efficiency\index{energy ef
 (and declining~\REp{})
 has never reduced energy consumption or environmental impacts, 
 at least at the worldwide level~\cite{Brockway:2021ww}.
-The rebound effect (Section~\ref{sec:rebound_effect}) is thought to be a strong candidate
+The rebound effect\index{rebound effect} is thought to be a strong candidate
 for the reason why efficiency has not led to decreases
-in energy consumption and CO$_2$ emissions over time.
+in energy consumption and CO$_2$ emissions over time;
+see Section~\ref{sec:rebound_effect}.
 Indeed, a circular trap exists.
 Energy efficiency\index{energy efficiency} is known to stimulate economic growth, and 
 increased economic activity leads to more energy consumption.
@@ -1275,12 +1276,13 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         How are the results similar to or different from the results 
         shown in Equation~\ref{eq:IPARX_rate_with_numbers}? 
         
-  \item After many years of studying energy-economy interactions and the rebound effect, 
+  \item After many years of studying energy-economy interactions and the rebound effect\index{rebound effect}, 
         \citet{Sorrell:2010ul}\index{Sorrell, Steve} advanced five controversial propositions:
         % 
         \begin{enumerate} [label=(\arabic*)]
 
-          \item the rebound effects from energy efficiency\index{energy efficiency} improvements are significant 
+          \item the rebound effects\index{rebound effect}
+                from energy efficiency\index{energy efficiency} improvements are significant 
                 and limit the potential for decoupling energy consumption from economic growth; 
 
           \item the contribution of energy to productivity improvements and economic growth 
@@ -1323,10 +1325,10 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         What are the reserves?
         Is our current consumption rate weakly sustainable? 
         
-  \item Section~\ref{sec:rebound_effect} discusses the rebound effect,
+  \item Section~\ref{sec:rebound_effect} discusses the rebound effect\index{rebound effect},
         wherein monetary savings from energy efficiency\index{energy efficiency} are spent elsewhere in the economy,
         raising energy consumption in other sectors.
-        Green revolving funds~(GRFs) are thought to be a way to mitigate the rebound effect.
+        Green revolving funds~(GRFs) are thought to be a way to mitigate the rebound effect\index{rebound effect}.
         A green revolving fund is the repository for 
         monetary savings from energy efficiency\index{energy efficiency}.
         Green revolving fund assets must be invested in further energy efficiency\index{energy efficiency},
