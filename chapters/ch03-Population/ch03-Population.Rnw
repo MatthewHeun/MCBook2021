@@ -51,7 +51,8 @@ on population growth is discussed in Section~\ref{sec:dtt}.
 Section~\ref{sec:pop_density} discusses the sustainability implications of population density. 
 
 There are two schools of thought on population with relevance for economics and sustainability.
-Malthusians think that population growth will cause us to ``run out'' of 
+\textbf{Malthusians}\index{Malthusians}
+think that population growth will cause us to ``run out'' of 
 scarce resources.
 Techo-optimists think that more people will lead to 
 better technology, more specialization of labor, and, ultimately, to a higher, not lower,
@@ -715,7 +716,7 @@ True sustainability thinking must consider all of human society and its spatial 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Malthus, Ehrlich, and Simon}
+\section{Malthus, Ehrlich, and Simon}\index{Malthus, Thomas}
 \label{sec:malthus_ehrlich_simon}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -726,20 +727,20 @@ Thomas Malthus\index{Malthus, Thomas} (1766--1834), wrote a book in 1798 suggest
 affluence was only temporary.
 He thought that any abundance of resources (such as food) would cause population
 growth, which would immediately consume the abundance.
-Increasing affluence, Malthus thought, would lead to population growth, which
+Increasing affluence, Malthus\index{Malthus, Thomas} thought, would lead to population growth, which
 would thereby decrease GDP per capita.
 (In Equation~\ref{eq:IPARX},
 affluence is measured by GDP per capita, \mft{A}\:\!)
-Implicitly, Malthus assumed that population would grow more rapidly than affluence.
+Implicitly, Malthus\index{Malthus, Thomas} assumed that population would grow more rapidly than affluence.
 The (hypothetical) inability to achieve long-term increases in affluence is
-now called the Malthusian trap.
-Subsequent to Malthus' work,
+now called the Malthusian\index{Malthusian} trap.
+Subsequent to Malthus'\index{Malthus, Thomas} work,
 the Industrial Revolution occurred, and GDP per capita rose
 in spite of, or alongside of, increasing population;
 see Figures~\ref{fig:PopulationGraph} and~\ref{fig:AffluenceGraph-Nordhaus}.
 
-Nevertheless, fears of Malthusian catastrophe have not gone away.
-Two influential modern neo-Malthusian works are \emph{The Population Bomb} (1968),
+Nevertheless, fears of Malthusian\index{Malthusian} catastrophe have not gone away.
+Two influential modern neo-Malthusian\index{Malthusian} works are \emph{The Population Bomb} (1968),
 by Paul Ehrlich\index{Ehrlich, Paul}, and \emph{Limits to Growth} (1972), commissioned by the Club of
 Rome.\index{Club of Rome}
 \emph{Limits to Growth} warned of ``a rather sudden and uncontrollable decline
@@ -766,7 +767,7 @@ for example, abundant energy with little to no pollution.
 They point to the growth of wind and solar
 electricity generation technologies as examples.
 
-Who is correct, the neo-Malthusians or the techno-optimists?
+Who is correct, the neo-Malthusians\index{Malthusians} or the techno-optimists?
 Will population growth lead to catastrophe or is growth a source of labor and
 technology that will yield abundant resources?
 In 1980, business professor Julian Simon\index{Simon, Julian}
@@ -792,7 +793,7 @@ about 70\% of the time if war years were excluded~\cite{Pooley:2020vx}.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Malthusians\index{Malthusian} think that population growth will lead to scarcity of finite resources.
+Malthusians\index{Malthusians} think that population growth will lead to scarcity of finite resources.
 Therefore, they expect prices of scarce resources to increase.
 Techno-optimists, on the other hand, expect that human-created technology will
 create new sources of resources.
@@ -881,12 +882,12 @@ published August 17, 2020. \\
 
 \item \label{question:population_control} What are some ways population could be controlled?
       Figure~\ref{fig:World3loops} suggests some ideas.
-      Or, perhaps what Malthus called ``miseries:'' war, famine, and/or epidemics will
+      Or, perhaps what Malthus\index{Malthus, Thomas} called ``miseries:'' war, famine, and/or epidemics will
       control population.
-      Lastly, consider contraception or, as Malthus suggested, late marriage.
+      Lastly, consider contraception or, as Malthus\index{Malthus, Thomas} suggested, late marriage.
       
 
-\item Riffing on Malthus's suggestion of late marriage, what are families for?
+\item Riffing on Malthus's\index{Malthus, Thomas} suggestion of late marriage, what are families for?
       What role, if any, does family formation play in population growth?
       Is it easier to find a spouse (or not) in a higher population density area?
       What are the effects of a widely distributed population on family life and
@@ -948,20 +949,20 @@ published August 17, 2020. \\
       Is access to ``nature'' a right?
       What are ways to allow urbanites access to the natural world?
 
-\item It is interesting to note that Malthus's book was published (1798) just before before
+\item It is interesting to note that Malthus's\index{Malthus, Thomas} book was published (1798) just before before
       Figure~\ref{fig:PopulationGraph} begins (that is, 1800 AD).
       On the one hand, exponential growth\index{exponential growth}
       always looks dramatic;
       Figure~\ref{fig:exp} shows exponential growth\index{exponential growth} for any time \mft{t}.
-      On the other hand, Malthus had not yet experienced the very dramatic rise
+      On the other hand, \index{Malthus, Thomas} had not yet experienced the very dramatic rise
       in world population that occurred post-1800.
-      How would Malthus's viewpoint have been different if he were writing in the
+      How would Malthus's\index{Malthus, Thomas} viewpoint have been different if he were writing in the
       twentieth or twenty-first century?
       Given that the tail end of an exponential curve always appears most dramatic,
-      do you think that future thinkers and scholars will agree with Malthus?
+      do you think that future thinkers and scholars will agree with Malthus\index{Malthus, Thomas}?
       Or will conditions in the future lead them to make very different predictions?
 
-\item Is your personal outlook on the future Malthusian or techno-optimistic?
+\item Is your personal outlook on the future Malthusian\index{Malthusian} or techno-optimistic?
       Why, and to what degree?
       Are there qualifying statements for you?
       With respect to the Simon-Ehrlich bet, what bets would you take?
