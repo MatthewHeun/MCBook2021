@@ -759,7 +759,7 @@ see Section~\ref{sec:resource_intensity_definitions}.
 Lamps can emit both visible and nonvisible radiation.
 But (most) people don't buy lamps for their ability to emit nonvisible radiation.
 They buy lamps for the energy service\index{energy service} they provide: light!
-Lighting efficacy is the ratio of visible light output 
+\textbf{Lighting efficacy}\index{lighting efficacy} is the ratio of visible light output 
 (the energy service\index{energy service}, measured in lumens) 
 to energy input (measured in W).
 A 100-W incandescent lamp\index{incandescent lamp} supplies about 1230~lumens of light 
@@ -778,15 +778,17 @@ However, most of the radiative energy emitted by an incandescent lamp\index{inca
 is in nonvisible wavelengths.
 In contrast, most of the radiative energy emitted by an LED lamp\index{LED lamp} is in visible wavelengths.
 The lumen counts only visible light output, so 
-the service efficacy\index{energy service efficacy} (measured in lumens/W) penalizes 
-incandescent lamps\index{incandescent lamp} for emitting most of their energy in nonvisible wavelengths.
+the service efficacy\index{energy service efficacy} 
+(measured in lumens/W, the lighting efficacy\index{lighting efficacy}) 
+penalizes incandescent lamps\index{incandescent lamp} 
+for emitting most of their energy in nonvisible wavelengths.
 (See \citet{Heun:2020aa} for details.)
 The service efficacy\index{energy service efficacy}
 favors LED lamps\index{LED lamp}, because they emit most of their energy in visible wavelengths.
 While an energy efficiency\index{energy efficiency} metric would say that
 incandescent\index{incandescent lamp} and
 LED lamps\index{LED lamp} are similarly efficient, 
-the lumen/W service efficacy\index{energy service efficacy} metric correctly suggests 
+the lumen/W lighting efficacy\index{lighting efficacy} metric correctly suggests 
 that LED lamps\index{LED lamp} are far superior to incandescent lamps\index{incandescent lamp}
 for the task of converting electricity to visible light.
 When available, service efficacies are preferred over energy efficiencies, 
@@ -908,11 +910,12 @@ improves in the stock of housing.
 %++++++++++++++++++++++++++++++
 
 To minimize environmental impacts of showering and dish washing,
-low-flow showerheads\index{showerheads!low-flow} and faucets\index{faucets}
+low-flow showerheads\index{low-flow showerhead} and faucets\index{low-flow faucet}
 can be installed.
-Low-flow showerheads and faucets provide the obvious benefit of
+Low-flow showerheads\index{low-flow showerhead} and faucets\index{low-flow faucet} provide the obvious benefit of
 reducing water bills.
-Furthermore, sewerage costs are reduced, because low-flow showerheads and faucets
+Furthermore, sewerage costs are reduced, because 
+low-flow showerheads\index{low-flow showerhead} and faucets\index{low-flow faucet}
 decrease the amount of gray water entering the sewer system (with ``downstream''
 energy and cost savings).
 If less water is consumed for cooking and bathing,
@@ -975,7 +978,7 @@ by point-of-purchase subsidies for LED lamps\index{LED lamp}
 and by in-home energy-efficiency audits offered by utilities.
 
 Of course, the least expensive lamp is the one you don't need to use.
-Building design techniques such as light harvesting\index{light harvesting}
+Building design techniques such as \textbf{light harvesting}\index{light harvesting}
 use natural light to reduce the need for artificial indoor lighting.
 
 
