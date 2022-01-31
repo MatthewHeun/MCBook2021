@@ -188,16 +188,14 @@ Section~\ref{sec:strong_weak_sust}.
 Strong sustainability requires not using renewable resources 
 faster than they can regenerate; 
 see section~\ref{sec:what_is_sustainability}.
-% Choosing the right inputs and outputs for agriculture is demonstrated
-% by considering soil fertility. 
-Consider soil fertility, which is a renewable provisioning service 
+Consider \textbf{soil fertility}\index{soil fertility}, which is a renewable provisioning service 
 of the ecosystem; 
 see Chapter~\ref{chap:planetary_boundaries}.
-If agricultural practices decrease soil fertility, 
+If agricultural practices decrease soil fertility\index{soil fertility}, 
 agriculture can not be considered strongly sustainable.
 If agriculture depends on a nonrenewable resource, 
 such as phosphate fertilizers, it cannot be considered strongly sustainable.
-If agriculture is rapidly depleting soil fertility
+If agriculture is rapidly depleting soil fertility\index{soil fertility}
 such that the soil will be unusable in less than 50~years,
 agriculture is not weakly sustainable.
 The sections below examine the sustainability characteristics of several different
@@ -217,7 +215,7 @@ use of land and water.
 
 
 %..............................
-\paragraph{Loss of soil fertility} 
+\paragraph{Loss of soil fertility}\index{soil fertility} 
 %..............................
 
 Not all soils are rich in the nutrients needed by plants to grow.
@@ -241,14 +239,14 @@ The rate of erosion and runoff increases exponentially with the loss of vegetati
 cover~\cite{Geeson2003}. 
 Unprotected soil surfaces are eroded by wind and water to leave unproductive 
 inorganic subsoils that get baked by the sun into a hardpan.
-Soil fertility can also be degraded by practices that withdraw key nutrients from the 
+Soil fertility\index{soil fertility} can also be degraded by practices that withdraw key nutrients from the 
 soil faster than they can be regenerated.
 About 8\% of the total carbon in soils has been lost over the last 12,000
 years~\cite{Sanderman2017}.
 
 In contrast, 
-sustainable agriculture at least maintains, and hopefully builds, soil fertility.
-Soil fertility and agricultural productivity 
+sustainable agriculture at least maintains, and hopefully builds, soil fertility\index{soil fertility}.
+Soil fertility\index{soil fertility} and agricultural productivity 
 can be enhanced with fertilizers and/or agrichemicals.
 The most common fertilizers contain nitrogen, phosphorous, and potassium. 
 Agrichemicals include herbicides, pesticides, and fungicides. 
@@ -263,7 +261,8 @@ Animal manure could be a sustainable fertilizer, if the animals are raised susta
 for instance, and 
 if their feed is sustainably raised.
 A sustainability challenge associated with soil use is 
-“how can we maintain soil fertility in the long term without fertilizers 
+``how can we maintain soil fertility\index{soil fertility}
+in the long term without fertilizers 
 derived from nonrenewable resources?''
 
 
@@ -893,7 +892,7 @@ To be more sustainability,
 agriculture must use as few resources as possible and produce minimal 
 impacts on the environment. 
 Currently, agricultural uses unsustainable mineral inputs and
-involves land-use practices that degrade soil fertility and harm the land's ability to 
+involves land-use practices that degrade soil fertility\index{soil fertility} and harm the land's ability to 
 sequester carbon.
 In today's economy, agriculture is an energy sink rather than an energy source, 
 requiring the unsustainable input of fossil fuels.

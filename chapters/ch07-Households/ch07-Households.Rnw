@@ -604,11 +604,12 @@ Typical U-factors for windows are 0.2--1.2 BTU/hr$\cdot$ft$^2\cdot$\degF.
 (Corresponding window R-values\index{R-value} are 5--0.83 hr$\cdot$ft$^2\cdot$\degF/BTU.)
 Lower U values are more insulative.
 Heat gain from solar radiation is quantified by the
-solar heat gain coefficient (SHGC)\index{solar heat gain coefficient},
+\textbf{solar heat gain coefficient (SHGC)}\index{solar heat gain coefficient (SHGC)},
 the ratio of solar energy that enters the room to
 solar energy incident upon the window.
-SHGC values range from 0 to 1,
-and lower SHGC values indicate better insulative properties.
+SHGC\index{solar heat gain coefficient (SHGC)} values range from 0 to 1,
+and lower SHGC\index{solar heat gain coefficient (SHGC)}
+values indicate better insulative properties.
 A sustainability challenge associated with the building envelope
 is ``how do we design livable and enjoyable spaces that are 
 energy efficient and affordable?''
@@ -1240,7 +1241,7 @@ United States, 1999: \\
       Does your answer change if you apply a discount rate 
       to the financial considerations of this project?
 
-\item Rank the U-Factor and solar heat gain coefficient (SHGC)
+\item Rank the U-Factor and solar heat gain coefficient (SHGC)\index{solar heat gain coefficient (SHGC)}
       for single-, double-, and triple-paned windows.
       Does the ranking make sense?
       Rank the costs of the windows.
