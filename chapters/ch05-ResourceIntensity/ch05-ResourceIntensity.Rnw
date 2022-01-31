@@ -288,7 +288,8 @@ cars and the roads on which they travel,
 homes and the utilities that sustain life,
 food and the refrigerators that maintain freshness,
 toilets and the sewer systems that remove wastes.
-Furthermore, the operation of all these systems requires energy, the master resource.
+Furthermore, the operation of all these systems requires energy, 
+the master resource\index{master resource (energy)}.
 
 Although any raw material can be essential 
 (and not economically substitutable) 
@@ -703,7 +704,7 @@ for discussion of whether weak sustainability is ``good enough.''
 It has been argued
 (as we do in Section~\ref{sec:masterE})
 that energy is
-the master resource~\cite{library1971energy}\index{energy!as master resource}
+the master resource~\cite{library1971energy}\index{master resource (energy)}
 for two important reasons.
 First, energy is required
 for extraction of all natural resources (including energy itself),
@@ -721,7 +722,7 @@ to heat (applied to hair).
 A solar panel converts solar energy (from the sun)
 to electricity (for use in many devices, including, possibly, hair dryers).
 
-Because energy is the master resource,\index{energy!as master resource}
+Because energy is the master resource,\index{master resource (energy)}
 we use energy as the prime example in the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX}).
 There are two important questions:
 where are we using energy and
@@ -1209,7 +1210,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         What are the moral and ethical implications of leaving a valuable and
         usable resource unused? \label{question:ogallala}
 
-  \item What is the purpose (telos) of mineral resources in the environment?
+  \item What is the purpose (telos) of mineral resources\index{mineral resources} in the environment?
         Should they be left in place or used?
         Humans are the only creatures on Earth that make use of most minerals.
         What are some positive impacts on animal populations that arise from
@@ -1244,7 +1245,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
 
   \item Where does your water come from?
         How does it get to you? Where is your waste water treated?
-        How is energy, the master resource, involved in each of these steps?
+        How is energy, the master resource\index{master resource (energy)}, involved in each of these steps?
         How has water provision changed over time where you live?
 
   \item Evaluate the notion of a closed-loop water system (so called ``toilet-to-tap'').

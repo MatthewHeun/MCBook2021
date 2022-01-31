@@ -598,9 +598,9 @@ the sizes of the relevant age cohorts.
 
 Where do people live?
 Where should people live to be more sustainable?
-Population density, the number of people per area, is a key
+\textbf{Population density}\index{population density}, the number of people per area, is a key
 metric for sustainability.
-For example, high population density, characteristic of urban areas, enables
+For example, high population density\index{population density}, characteristic of urban areas, enables
 cost-effective mass transit, which reduces carbon emissions from transportation.
 Concentrating human population into a few high-density areas excludes most animal
 species from those locations.
@@ -609,8 +609,8 @@ or dedicated for animal use.
 In contrast, the ``sharing'' paradigm disperses human impact more broadly.
 Chapter~\ref{chap:land_use_urban_planning} discusses in more detail the
 land-sharing versus land-sparing paradigm. 
-There is a strong connection between population density and land use.
-What density is ``best'' for sustainability depends on which factors
+There is a strong connection between population density\index{population density} and land use.
+What density\index{population density} is ``best'' for sustainability depends on which factors
 are being considered; there is no one ``right'' answer.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -621,7 +621,7 @@ the Valeriepieris circle\index{Valeriepieris circle},
 a region with a radius of about 3,300~km 
 centered on Mong Khet, Myanmar~\cite{Quah2015}; 
 see Figure~\ref{fig:half_population}.
-This area of Southeast Asia has very high population density.
+This area of Southeast Asia has very high population density\index{population density}.
 \end{mcframe}
 
 <<half_population, fig.scap="The Valeriepieris circle", fig.cap="The Valeriepieris circle. As of 2015, half of the world's population lives in a circle with a radius of 3,300~km centered on Mong Khet, Myanmar~\\cite{Quah2015}.">>=
@@ -672,7 +672,7 @@ Since 2005--2006 more than half of the world's population live in urban areas, a
 there are now 21 cities megacities.
 The percentage of people living in urban areas is projected to grow to 68\% by 2050.
 Urban living is correlated with wealth and higher GDP.
-High population density (number of people per area) means mass transit is practical
+High population density\index{population density} (number of people per area) means mass transit is practical
 and, in fact, widely used.
 Some thinkers have suggested that the densest urban environments are the most
 ecological places to live~\cite{Owen:2004wt}.
@@ -680,7 +680,7 @@ However, urban areas are supported by vast networks, including transportation,
 that supply resources, such as food.
 Equation~\ref{eq:IPARX} indicates that higher affluence~\Aparen{}, not location, is a
 main source of ecological impact.
-High population density can provide efficient transportation, minimize habitat
+High population density\index{population density} can provide efficient transportation, minimize habitat
 destruction, and allow economies of scale for dealing with waste materials.
 Nevertheless, it is unwise to consider urban areas apart from the rural
 areas that enable them to thrive.
@@ -889,7 +889,7 @@ published August 17, 2020. \\
 
 \item Riffing on Malthus's\index{Malthus, Thomas} suggestion of late marriage, what are families for?
       What role, if any, does family formation play in population growth?
-      Is it easier to find a spouse (or not) in a higher population density area?
+      Is it easier to find a spouse (or not) in a higher population density\index{population density} area?
       What are the effects of a widely distributed population on family life and
       social connectedness?
 
@@ -934,11 +934,11 @@ published August 17, 2020. \\
 \item What things have a \textit{higher} environmental impact as populations urbanize?
       What things have lower impact?
 
-\item Describe where you live in terms of population density.
+\item Describe where you live in terms of population density\index{population density}.
       Would you like your current environment to be more dense in population?
       What about less dense?
       Reflect on how these options are different from moving to a location
-      that already has a higher (or lower) population density.
+      that already has a higher (or lower) population density\index{population density}.
       
 \item Migration of people from rural to urban environments and especially across
       national borders is an emotionally charged political issue.

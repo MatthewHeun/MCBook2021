@@ -237,7 +237,7 @@ transport.
 Sustainability challenges arising from transportation include
 the last mile problem\index{last mile problem}, 
 the first mile problem\index{first mile problem}, and
-particulate matter (PM) and
+particulate matter (PM)\index{particulate matter (PM)} and
 CO$_2$ emissions from burning fossil fuels.
 
 
@@ -293,10 +293,11 @@ last_mile %>%
 Another sustainability challenge for transport is 
 the \textbf{first mile problem}\index{first mile problem}
 for mass transit.
-In low-population-density areas, 
+In low-population-density\index{population density} areas, 
 moving people along the first mile to mass transit stations is 
 expensive in both monetary and energy terms.
-The first mile problem\index{first mile problem} is reduced in urban areas with high population density, 
+The first mile problem\index{first mile problem} is reduced in urban areas
+with high population density\index{population density}, 
 especially if commuters can walk or bike to bus, train, or subway stations.
 A sustainability challenge for the first mile problem\index{first mile problem} is
 ``how can we solve the first mile problem\index{first mile problem}
@@ -308,7 +309,7 @@ and maintain livable spaces?''
 %..............................
 
 A third sustainability challenge associated with transportation is 
-particular matter (PM\index{particulate matter}). 
+particular matter (PM)\index{particulate matter (PM)}. 
 Concerns about the effects of PM
 on human health go back millennia, and with good cause.
 PM emissions are ``the main contributor to human health effects 
@@ -396,21 +397,21 @@ to achieve more sustainable passenger and freight transport.
 
 To improve the sustainability of the modern transportation system,
 three broad options exist: 
-mode shifting, 
+mode shifting\index{mode shifting}, 
 improving fuel economy\index{fuel economy}, and 
 transitioning to sustainable energy sources.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Mode shifting}
+\subsection{Mode shifting}\index{mode shifting}
 \label{sec:mode_shifting}
 %++++++++++++++++++++++++++++++
 
-Mode shifting involves transitioning from personal vehicles to 
+Mode shifting\index{mode shifting} involves transitioning from personal vehicles to 
 mass transit, biking, or walking.
-Whether mode shifts are possible depends on 
+Whether mode shifts\index{mode shifting} are possible depends on 
 land use patterns and urban design. 
-Areas with high population density (cities) can be served by economical 
+Areas with high population density\index{population density} (cities) can be served by economical 
 mass transit systems.
 (See Chapter~\ref{chap:land_use_urban_planning} 
 for more details of the sustainability implications 
@@ -620,7 +621,7 @@ biofuels %>%
 
 Figure~\ref{fig:auto_gwp} shows two types of environmental impact
 (global warming potential~(GWP)\index{global warming potential (GWP)}
-and mineral resource depletion\index{mineral resource depletion})
+and mineral resource depletion\index{mineral resource depletion (MRD)})
 across the full life cycle\index{life cycle!automobiles}
 of automobile use,
 from base vehicle manufacturing to end of life disposal,
@@ -665,7 +666,7 @@ miss key differences associated with the production of different vehicle types a
 could lead to misguided comparisons across technologies.''
 
 
-<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline-powered vehicles. ``Ren20'' indicates an electricity mix with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union electricity mix in 2010. ``Coal'' indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
+<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion\\index{mineral resource depletion (MRD)}. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline-powered vehicles. ``Ren20'' indicates an electricity mix with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union electricity mix in 2010. ``Coal'' indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
 Hawkins_life_cycle <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "EV data from Hawkins.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(c("Base vehicle", "Engine", "Other powertrain", "Battery", "Use phase", "Fuel/electricity", "End of life"), names_to = "Life.cycle.component", values_to = "normalized_impact") %>% 
@@ -700,11 +701,11 @@ Hawkins_life_cycle %>%
 Automobile technology is one of many arenas in which sustainability tradeoffs are observed.
 Under the right conditions,
 EVs can reduce global warming impact relative to ICE vehicles
-at the expense of depleting the stock of mineral resources,
+at the expense of depleting the stock of mineral resources\index{mineral resources},
 a phenomenon known as problem shifting\index{problem shifting}.
 
 The sustainability challenges of transportation transitions
-don't end with the tradeoff between GHG emissions and mineral resource depletion 
+don't end with the tradeoff between GHG emissions and mineral resource depletion\index{mineral resource depletion (MRD)} 
 discussed above.
 In fact, there is a temporal component that must be examined
 when comparing EVs against ICE vehicles.
@@ -805,13 +806,13 @@ transportation, petroleum, and technology.
       electric vehicles\index{electric vehicle (EV)} 
       provide GHG emissions reductions relative 
       to internal combustion engine vehicles\index{internal combustion engine (ICE) vehicle}
-      at the expense of increased mineral resource depletion.
-      The tradeoff between GHG emissions and mineral resource depletion is
+      at the expense of increased mineral resource depletion\index{mineral resource depletion (MRD)}.
+      The tradeoff between GHG emissions and mineral resource depletion\index{mineral resource depletion (MRD)} is
       nearly impossible to decide on a quantitative or objective basis.
       Indeed, deciding this and similar tradeoffs cannot be divorced
       from human values and value judgments.
       Is it wise to trade reduced GHG emissions
-      for increased mineral resource depletion?
+      for increased mineral resource depletion\index{mineral resource depletion (MRD)}?
       Why or why not?
       What values are guiding your answer?
       Under what circumstances does your answer change?

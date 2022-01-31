@@ -48,7 +48,7 @@ and energy resources.
 For example, humans plant crops (food, textile, and timber) that ``grow,''
 they're not manufactured. 
 The ecosystem ``provides'' the crops. 
-Likewise, the ecosystem provides water, petroleum, and other mineral resources.
+Likewise, the ecosystem provides water, petroleum, and other mineral resources\index{mineral resources}.
 Simply having oceans and an atmosphere provides a place for pollution to go.
 
 The second set of services is regulating and supporting services,\index{services!regulating and supporting} 
@@ -369,7 +369,8 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
 @
 
 Two of the indicators in Table~\ref{tab:planetBoundaries}, 
-particulate concentration in the atmosphere and chemical pollution, 
+particulate\index{particulate matter (PM)} concentration 
+in the atmosphere and chemical pollution, 
 do not have proposed limits. 
 In the case of chemical pollution, the vast number of such (possible) pollutants, 
 each of which causes different acute and chronic effects, would make a single 
@@ -1099,13 +1100,14 @@ New York: Bloomsbury,
 \item What things are important to you that aren't, for instance, in 
       the HDI? Perhaps personal freedom and/or economic mobility? 
       
-\item Normalcy bias is a cognitive bias that minimizes or ignores threats or
+\item \textbf{Normalcy bias}\index{normalcy bias} is a cognitive bias that minimizes or ignores threats or
       warnings of impending disaster. 
       It affects about 70\% of people. 
       The brain processes new information through the filter
       of what the brain expects to happen, which is that things will 
       continue as they currently are.
-      The opposite of normalcy bias is overreaction bias, which causes slight 
+      The opposite of normalcy bias\index{normalcy bias} is \textbf{overreaction bias}\index{overreaction bias},
+      which causes slight 
       deviations from normal or expected behavior to be seen as signs of 
       extreme danger.
       What role do you think cognitive biases play in our current response

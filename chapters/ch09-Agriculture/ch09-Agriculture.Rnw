@@ -88,8 +88,8 @@ nonfood items, such as wood, cellulose, sunlight, or petroleum.
 Food doesn't appear on plates magically, out of nowhere.
 It arrives on our plates through a network of 
 natural and human-created transformation processes\index{transformation processes!food}
-that convert solar energy\index{energy!solar}
-into available, ingestible energy\index{energy!ingestible}.
+that convert solar energy\index{solar energy}
+into available, ingestible energy\index{ingestible energy}.
 This network is often called ``agriculture.''\index{agriculture}
 The combined economic value
 of the agriculture, forestry, and fishing industries is 
@@ -168,7 +168,7 @@ For example, Section~\ref{sec:electric_vehicles} considered
 and electric vehicles (EVs)\index{electric vehicle (EV)}.
 A reliable sustainability comparison depends on an accurate accounting of inputs and outputs.
 Section~\ref{sec:electric_vehicles} considered vehicle emissions
-while in use, the energy and mineral resources used to create each vehicle, and
+while in use, the energy and mineral resources\index{mineral resources} used to create each vehicle, and
 the source of the power for each vehicle; 
 see Figure~\ref{fig:auto_gwp}. 
 Each of these three accountings

@@ -28,8 +28,7 @@ Or, is it better to intersperse many small farms, forests, and towns?
 Whereas Chapter~\ref{chap:households} was concerned 
 with the sustainability of individual housing units,
 this chapter considers dwellings and businesses collectively. 
-%The objective is to design cities and farms with sustainability in mind.
-We consider the sustainability implications of spacing, density, and how 
+We consider the sustainability implications of spacing, density\index{population density}, and how 
 transportation links between locations are affected by layout.
 
 The second aspect is allocation, that is, how much land is used for each 
@@ -435,9 +434,7 @@ Conversely, a large population of consumers allows specialized markets to develo
 that would not have enough appeal to be viable in a rural or small-town setting.
 Examples include specialty grocery stores, a school for ballroom dance, or an exotic pet store.
 
-For a fixed population density, a city can only grow its population by expanding.
-% (By the way, population density is %strongly influenced)
-% determined by local building codes and zoning regulations.)
+For a fixed population density\index{population density}, a city can only grow its population by expanding.
 As ``rings'' are added to the city and the diameter of the city grows, the time
 it takes to travel across the city grows as well. 
 At some point, the city diameter becomes so big that it becomes infeasible to 
@@ -447,13 +444,13 @@ reach each other.
 The city has reached its effective limit.
 Therefore, the role and value of transportation is key to the economic success
 of a city.
-Effective transportation and population density are, in some sense, two sides
+Effective transportation and population density\index{population density} are, in some sense, two sides
 of the same coin. 
 Higher population densities means transportation is less important. 
 Lower population densities means transportation is needed even more.
 Figure~\ref{fig:urban_density} illustrates the point by showing the relationship 
-between urban density and transport-related energy consumption.
-Clearly, there is a tradeoff between urban density and cost of transportation.
+between urban density\index{population density} and transport-related energy consumption.
+Clearly, there is a tradeoff between urban density\index{population density} and cost of transportation.
 
 <<urban_density, fig.scap="Transportation energy vs.\\ urban density by city", fig.cap="Transportation energy vs.\\ urban density by city. \\emph{Source}: \\citet{US_cities}.">>=
 urban_density_data <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Urban_Density.xlsx"),
@@ -546,7 +543,7 @@ the health of the environment that provides those ecosystem services\index{ecosy
 %..............................
 
 For urban land uses, we could attempt to
-maximize population density,
+maximize population density\index{population density},
 we could minimize metrics related to environmental impact, or 
 we could try to make cities as self-sufficient as 
 possible, for example with respect to food or energy.
@@ -554,7 +551,7 @@ We might try to minimize the amount of transportation emissions within cities.
 Or we might try to maximize urban GDP.
 
 Since a growing urban population is expected to put unprecedented demand on cities 
-and city services, high population density is will help to answer this challenge.
+and city services, high population density\index{population density} is will help to answer this challenge.
 First, higher densities reduce the need to expand the physical footprint of the urban
 area. 
 Second, higher densities reduce the cost of infrastructure per area.
@@ -866,8 +863,8 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       urban environments?
       How much time do you spend in urban versus rural areas? Why?
       
-\item Think of some ways to increase population density. 
-      What population density would you consider to be too high?  Why?
+\item Think of some ways to increase population density\index{population density}. 
+      What population density\index{population density} would you consider to be too high?  Why?
 
 \item No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
       afternoon.'' 

@@ -151,7 +151,7 @@ Part~\ref{part:sustainability_challenges} shows data mostly from the U.S.%
 \footnote{
   Readers are encouraged to remember that the U.S.\ is atypical in many ways.
   Sociologically, the U.S.\ is WIERD (Western, industrialized, educated, rich, and democratic).
-  Additionally, the U.S.\ has a low population density and lots of resources.
+  Additionally, the U.S.\ has a low population density\index{population density} and lots of resources.
   While our framework for sustainability thinking is universal, the data used for
   illustration may not always apply to the rest of the world.
 },
@@ -242,7 +242,7 @@ pollution, resource depletion, habitat loss, and biodiversity.
 Harvesting timber faster than it can grow is unsustainable.
 Eventually, deforestation means that timber harvesting must stop because there
 will be no more forest to harvest.
-Depleting mineral resources is unsustainable.
+Depleting \textbf{mineral resources}\index{mineral resources} is unsustainable.
 Eventually, the minerals will be used up.
 Pumping \textbf{aquifers}\index{aquifer} faster than they can regenerate is unsustainable.
 Eventually, the aquifers will run dry.
@@ -270,7 +270,7 @@ domains, like a social versus economic tradeoff.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This book uses energy and carbon emissions as prime examples not
 because they are the only sustainability problems, but because
-energy is the master resource and \textbf{climate change} is currently
+energy is the \textbf{master resource}\index{master resource (energy)} and \textbf{climate change} is currently
 one of the most urgent sustainability problems.
 Energy and carbon emissions link together many of our sustainability challenges.
 \end{mcframe}
@@ -359,7 +359,7 @@ roadmap for sustainability solutions (in part) because of interactions among the
 IPARX\index{IPARX identity} is true because it is an identity, and it provides a useful organizing framework
 for the following chapters.
 To illustrate the IPARX\index{IPARX identity} framework, energy and CO$_2$ are prime examples
-in the rest of the text, because energy is the master resource
+in the rest of the text, because energy is the master resource\index{master resource (energy)}
 and climate change is our most urgent sustainability challenge.
 Of course, the two are closely linked.
 
@@ -449,7 +449,7 @@ Humanity is not on a sustainable path.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Energy is the master resource}
+\section{Energy is the master resource}\index{master resource (energy)}
 \label{sec:masterE}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -462,7 +462,7 @@ Both mass and energy come from the environment.
 
 Although a wide variety of materials are essential for human existence
 (Section~\ref{sec:resources_strong_sustainability}),
-we say that energy is the master resource, because
+we say that energy is the master resource\index{master resource (energy)}, because
 obtaining and using any other resource
 (including extraction of materials from the environment)
 requires energy.
@@ -471,14 +471,14 @@ Extracting crude oil requires energy.
 Harvesting food requires energy.
 Making solar panels requires energy.
 
-Another reason we say energy is the master resource
+Another reason we say energy is the master resource\index{master resource (energy)}
 is that energy can be used to convert one resource into another.
 Crude oil can be refined to gasoline.
 Corn can be converted to ethanol.
 Salt water can be converted to fresh water.
 Petroleum or natural gas can be converted to pharmaceuticals or plastics.
 
-Finally, energy is the master resource, because
+Finally, energy is the master resource\index{master resource (energy)}, because
 it is needed to break down and dispose of wastes.
 Building a landfill takes energy.
 Hauling garbage to the landfill takes energy.
@@ -512,7 +512,7 @@ not including feedstock.%
                            {\text{Energy required to obtain delivered energy}}
 \end{equation}
 %
-Because energy is the master resource,
+Because energy is the master resource\index{master resource (energy)},
 understanding EROI\index{energy return on investment (EROI)} is vitally important.
 An EROI\index{energy return on investment (EROI)}
 that is less than one indicates the energy production activity is an energy sink
@@ -735,7 +735,7 @@ the full restoration is likely to cost more than \euro{8}~billion.
       To take one example, local building codes dictate (some of) my responsibilities
       to future owners of my house.
 
-\item Section \ref{sec:masterE} claims that energy is the ultimate or master resource,
+\item Section \ref{sec:masterE} claims that energy is the master resource\index{master resource (energy)},
       in part, because obtaining and using any resource, including energy itself requires energy.
       How did this cycle begin? What are the initial sources of energy? Is energy
       return on investment a good metric for sustainability? Why or why not? What
