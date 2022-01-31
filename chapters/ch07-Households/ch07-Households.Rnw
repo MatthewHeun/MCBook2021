@@ -875,7 +875,7 @@ percent_urban %>%
 
 There are several ways to transition to more sustainable heating and cooling in households.
 First, in-floor radiant heating is often considered more comfortable than 
-forced air, allowing thermostats to be set lower,
+forced air, allowing thermostats\index{thermostat} to be set lower,
 thereby consuming less energy for the same level of comfort.
 (This is an example of the benefit 
 of focusing on energy service efficacy\index{energy service efficacy},
@@ -883,10 +883,10 @@ in this case thermal comfort per BTU,
 instead of energy efficiency\index{energy efficiency};
 see page~\pageref{page:efficiency_efficacy}.)
 
-Second, programmable thermostats\index{thermostat!programmable}
+Second, \textbf{programmable thermostats}\index{thermostat!programmable}
 can be used to save energy on heating and cooling 
 for households with regular schedules.
-Remote-control thermostats\index{thermostat!remote-control} are
+\textbf{Remote-control thermostats}\index{thermostat!remote-control} are
 beneficial for reducing heating and cooling
 energy consumption when schedules deviate from programmed timetables.
 
@@ -1005,9 +1005,9 @@ A larger initial investment pays back by reducing ongoing expenses.
 Often the higher initial cost is the result of higher energy and/or material inputs
 required to manufacture the more efficient option.
 The second kind of tradeoff is between well-being or affluence and cost. 
-Turning the thermostat down means your home is less comfortable, which
+Turning the thermostat\index{thermostat} down means your home is less comfortable, which
 means that you are not as well off (not as happy). 
-On the other hand, turning the thermostat down saves money, energy, and CO$_2$ emissions.
+On the other hand, turning the thermostat\index{thermostat} down saves money, energy, and CO$_2$ emissions.
 For both of these kinds of tradeoffs, price is the determiner as to how the tradeoff
 plays out. 
 Changing society-wide behavior means manipulating prices---of goods, of energy, or both.
