@@ -473,14 +473,14 @@ with the purpose of converting feed for animals into food for humans.
 Both feed and food can be quantified in energy terms (in units of kcal).
 Thus, in that view, the entire agricultural system can be characterized by an efficiency, 
 the ratio of kcal of food output to kcal of feed input.
-The feed-to-food efficiency~($\eta_{\mft{ff}}$)\index{efficiency!feed-to-food}
+The \textbf{feed-to-food efficiency}\index{feed-to-food efficiency}~($\eta_{\mft{ff}}$)
 quantifies the efficiency of these agricultural processes.
-The overall feed-to-food efficiency of the U.S.\ food system 
+The overall feed-to-food efficiency\index{feed-to-food efficiency} of the U.S.\ food system 
 is about 7\%~\cite{Shepon:2016wt}.
-Different types of food have different feed-to-food efficiencies,
+Different types of food have different feed-to-food efficiencies\index{feed-to-food efficiency},
 as shown in Figure~\ref{fig:FoodToFeedEfficiency}.
 
-<<FoodToFeedEfficiency, fig.width=3, fig.height=2.5, fig.scap="Feed-to-food efficiency of various foods", fig.cap="Feed-to-food efficiency~($\\eta_{\\mft{ff}}$\\;\\!) of various foods in the U.S.\\ food system. \\emph{Source}: \\citet{Shepon:2016wt}.">>=
+<<FoodToFeedEfficiency, fig.width=3, fig.height=2.5, fig.scap="Feed-to-food efficiency of various foods", fig.cap="Feed-to-food efficiency\\index{feed-to-food efficiency}~($\\eta_{\\mft{ff}}$\\;\\!) of various foods in the U.S.\\ food system. \\emph{Source}: \\citet{Shepon:2016wt}.">>=
 feed_to_food_efficiency <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", 
                                                         "FeedToFoodEfficiency.xlsx"), 
                                               sheet = "data to plot")
@@ -505,7 +505,7 @@ feed_to_food_efficiency %>%
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 A pithy way to summarize the sustainability challenge posed 
-by energy return ratios of today's food system is:
+by the EROI and efficiency of today's food system is:
 ``We don't eat food; we eat oil.''
 \end{mcframe}
 
@@ -694,7 +694,7 @@ Figure~\ref{fig:food_ghg} shows GHG emissions from the various stages of food
 distribution and preparation. 
 The amount of CO$_2$ released is proportional to the amount of energy used.
 Figure~\ref{fig:FoodEmissionsPerMcal} shows equivalent CO$_2$ emissions per Mcal of food.
-(Foods with low feed-to-food efficiency tend to have higher GHG emissions;
+(Foods with low feed-to-food efficiency\index{feed-to-food efficiency} tend to have higher GHG emissions;
 see Figure~\ref{fig:FoodToFeedEfficiency}.)
 However, by itself Figure~\ref{fig:FoodEmissionsPerMcal} is not terribly informative.
 We don't eat equal calories of each food.
