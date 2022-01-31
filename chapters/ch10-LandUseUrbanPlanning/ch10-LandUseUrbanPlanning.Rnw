@@ -563,22 +563,19 @@ Second, higher densities reduce the cost of infrastructure per area.
 
 
 %..............................
-\paragraph{Agriculture land-use efficiency}
+\paragraph{Aforestation}
 %..............................
-
-For agricultural land uses, we could attempt to maximize
-calories per acre, pounds of food per acre, number of people fed per acre, 
-or the EROI\index{energy return on investment (EROI)} of agriculture. 
-Ultimately, agriculture has to feed people, so both minimizing the amount of land
-needed and maximizing the EROI\index{energy return on investment (EROI)} will be help humanity to become more
-sustainable.
 
 Because of the climate crisis, it seems clear that significantly more carbon needs to
 be removed from the atmosphere and stored somewhere. 
-Figure~\ref{fig:CarbonStorage} indicates that agriculture can play an important
-role in sequestering carbon from the atmosphere, particularly in grasslands and
-croplands.
-Indeed, agriculture must become a carbon sink, instead of a carbon source,
+Figure~\ref{fig:CarbonStorage} indicates that forests play an important
+role in sequestering carbon from the atmosphere, particularly in tropical and
+boreal forests.
+Currently, the world is experiencing significant deforestation. 
+Instead, we need \textbf{aforestation}\index{aforestation}, 
+that is an increase in the amount of land devoted to
+forests.
+Indeed, land use must become a carbon sink, instead of a carbon source,
 if we are to be sustainable.
 
 <<PowerDensity, fig.scap="Power densities of electricity generating technologies", fig.cap="Power densities of several electricity generating technologies. ``Nat. gas'' is natural gas. ``Geoth.'' is geothermal. \\emph{Source}: \\citet[Figure~2]{Zalk:2018uy}.">>=
@@ -613,16 +610,15 @@ power_densities %>%
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
 
-
 %..............................
-\paragraph{Resource extraction (energy)}
+\paragraph{Renewable energy and land use}
 %..............................
 
-Figure~\ref{fig:PowerDensity} shows the land use requirements for different forms of
+Figure~\ref{fig:PowerDensity} shows the land-use requirements for different forms of
 energy. 
 If we are going to make an energy transition to renewable sources 
 (for example WWS in Section~\ref{sec:low_carbon_transition}), 
-Figure~\ref{fig:PowerDensity} shows that we will need to devote a lot more land
+Figure~\ref{fig:PowerDensity} shows that we will need to devote significantly more land
 to energy production.
 Since the amount of land is fixed, either we have to combine energy generation
 with other activities or we have to reduce the amount of land dedicated to, say,
@@ -632,10 +628,13 @@ the latter does not seem like a viable option.
 
 There are two options for the former that are promising. 
 The first of these is rooftop solar. 
-Through a combination of energy efficiency\index{energy efficiency} and generation, each building could be
-made energy self-sufficient.
-The second option is combining solar electricity generation and 
-crops that prefer some shade, like coffee and raspberries.
+Through a combination of energy efficiency\index{energy efficiency} and generation, 
+each building could be made energy self-sufficient.
+The second option is combining solar electricity generation with agriculture, as 
+mentioned in Section~\ref{sec:food_ag_efficiency}. 
+Some crops, such as coffee and raspberries, prefer partial shade.
+These crops can be grown under a solar PV installation with a reduced water demand
+for the plants and more efficiency for the solar panels.
 Still, at least with the current technology, there is an imbalance in the amount of
 generating capacity needed for a fully zero-carbon economy and land available for 
 generating that electricity, 
