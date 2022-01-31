@@ -316,7 +316,9 @@ and the \textbf{impact of resources}~\Xparen{}.
 \end{equation}
 
 In the IPARX formulation, impact~\Iparen{} is a list of impacts (that is, a vector quantity)
-that includes such things as global warming potential, aquifer\index{aquifer} depletion, and
+that includes such things as
+\textbf{global warming potential (GWP)}\index{global warming potential (GWP)},
+aquifer\index{aquifer} depletion, and
 eutrophication potential.
 Population~\Pparen{} is the number of people in the world.
 Affluence~\Aparen{} is GDP per capita per year.
@@ -806,7 +808,8 @@ the full restoration is likely to cost more than \euro{8}~billion.
       the impact of several resources.
       These last two terms (\:\!\mft{R} and \mft{X}\:) will likely require some research on your part.
       For resources, consider at least energy, water, iron ore, and timber.
-      For impacts, consider at least global warming potential, desertification, habitat loss,
+      For impacts, consider at least global warming potential\index{global warming potential (GWP)},
+      desertification, habitat loss,
       and extinction rate.
       Will your computed impact rate over- or under-represent your actual impact rate?
 

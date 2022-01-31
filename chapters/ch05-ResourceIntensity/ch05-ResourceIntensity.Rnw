@@ -91,7 +91,7 @@ In contrast,
 an efficacy is like an efficiency, except the output (in the numerator)
 and the input (in the denominator) have 
 different units.
-A vehicle's fuel economy, measured in miles per gallon, is an efficacy, 
+A vehicle's \textbf{fuel economy}\index{fuel economy}, measured in miles per gallon, is an efficacy, 
 because the units in numerator (miles) are different from units in the denominator (gallons).
 Tonnes of freight moved per liter of fuel consumed is another efficacy. 
 
@@ -1130,8 +1130,8 @@ from each unit of energy consumed.)
 There are many ways often suggested to reduce the energy intensity of economic activity~\REpparen{}.
 First, increasing energy efficiency\index{energy efficiency} (through efficiency standards or mandates)
 can decrease the energy consumption for end uses.
-Examples include corporate average fuel economy (CAFE) standards for vehicles
-in the U.S.\
+Examples include \textbf{corporate average fuel economy (CAFE)}\index{corporate average fuel economy (CAFE)}
+standards for vehicles in the U.S.\
 and mandates for LED lighting in many countries.
 Another way to reduce the energy intensity of an economy is to move
 away from a manufacturing economy toward a service economy.
@@ -1443,9 +1443,11 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Where is are the recycling processes consuming energy or other materials?
         Is the energy fossil-based or renewable?
 
-  \item Research the CAFE automobile efficiency standards in the U.S.\ and
-        other automobile efficiency standards worldwide.
-        Evaluate the strategies, tactics, and approaches to improving fuel economy in automobiles and trucks.
+  \item Research the CAFE\index{corporate average fuel economy (CAFE)}
+        standards in the U.S.\ and
+        other automobile efficacy standards worldwide.
+        Evaluate the strategies, tactics, and approaches to improving fuel economy\index{fuel economy}
+        in automobiles and trucks.
         Which approach works best?
         Which approaches are ineffective?
         Why?

@@ -397,7 +397,7 @@ to achieve more sustainable passenger and freight transport.
 To improve the sustainability of the modern transportation system,
 three broad options exist: 
 mode shifting, 
-improving fuel economy, and 
+improving fuel economy\index{fuel economy}, and 
 transitioning to sustainable energy sources.
 
 
@@ -418,26 +418,26 @@ of land use and urban planning.)
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Fuel economy}
+\subsection{Fuel economy}\index{fuel economy}
 \label{sec:transportation_fuel_economy}
 %++++++++++++++++++++++++++++++
 
-Improving fuel economy will reduce the 
+Improving fuel economy\index{fuel economy} will reduce the 
 energy intensity of economic activity 
 (\:\!\REp{} in Equation~\ref{eq:IPARX}), 
 because the same economic activity 
 could be accomplished with less fuel consumption
 for transportation.
 
-Vehicle fuel economy (an efficacy, not an efficiency)
+Vehicle fuel economy\index{fuel economy} (an efficacy, not an efficiency)
 is usually quantified in distance traveled per volume
 of fuel consumed\index{efficiency!fuel}\index{efficiency!vehicle}.
-The U.S.\ fleet-average fuel economy of cars and trucks has varied 
+The U.S.\ fleet-average fuel economy\index{fuel economy} of cars and trucks has varied 
 significantly over the past few decades;
 see Figure~\ref{fig:US_mpg}.
 
 
-<<US_mpg, fig.scap="Car, truck, and fleet fuel economy vs.\\ time", fig.cap="U.S.\\ car, truck, and fleet fuel economy vs.\\ time. \\emph{Sources}: \\citet{Hicks:2014tn} and \\citet{NHTSA2019tc}.">>=
+<<US_mpg, fig.scap="Car, truck, and fleet fuel economy vs.\\ time", fig.cap="U.S.\\ car, truck, and fleet fuel economy\\index{fuel economy} vs.\\ time. \\emph{Sources}: \\citet{Hicks:2014tn} and \\citet{NHTSA2019tc}.">>=
 mpg_data <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Fleet FE Performance.xlsx"),
                                sheet = "data to plot") %>% 
   dplyr::rename(
@@ -468,31 +468,31 @@ mpg_data %>%
 @
 
 
-Truck fuel economy has lagged car fuel economy by 20--30\% for decades.
-In the 1970s, overall vehicle fleet fuel economy was nearly the same 
-as car fuel economy,
+Truck fuel economy\index{fuel economy} has lagged car fuel economy\index{fuel economy} by 20--30\% for decades.
+In the 1970s, overall vehicle fleet fuel economy\index{fuel economy} was nearly the same 
+as car fuel economy\index{fuel economy},
 because most vehicles on the road were cars.
 However, the increasing popularity of light-duty trucks and sport utility vehicles in the U.S.\
-means that the overall fleet fuel economy
+means that the overall fleet fuel economy\index{fuel economy}
 is now about midway between the average car and average truck fuel economies.
 If the proportion of cars and trucks were the same today as it was in the early 1970s,
-overall vehicle fleet fuel economy in the U.S.\ would be about 28~miles/gallon,
+overall vehicle fleet fuel economy\index{fuel economy} in the U.S.\ would be about 28~miles/gallon,
 or 16\% higher than the current value of 24~miles/gallon.
 
 The most effective way for manufacturers
-to increase vehicle fuel economy is to reduce vehicle mass.
+to increase vehicle fuel economy\index{fuel economy} is to reduce vehicle mass.
 Lighter vehicles can be achieved by
 replacing steel components with aluminum or carbon-fiber alternatives.
 Other design considerations that affect fuel efficiency include aerodynamics 
 and fuel type (diesel or regular).
 
-In addition to vehicle design, driving habits also influence fuel economy.
+In addition to vehicle design, driving habits also influence fuel economy\index{fuel economy}.
 Gentler driving (less acceleration, minimal dramatic braking) and
 constant speeds (using cruise control\index{cruise control}
 where appropriate)
-lead to improved vehicle fuel economy.
+lead to improved vehicle fuel economy\index{fuel economy}.
 
-Fuel economy, by definition,
+Fuel economy\index{fuel economy}, by definition,
 focuses on the efficacy of the machine itself (the car).
 However, drivers don't buy fuel to move vehicles.
 They pay for fuel to move people and freight!
@@ -619,7 +619,7 @@ biofuels %>%
 %..............................
 
 Figure~\ref{fig:auto_gwp} shows two types of environmental impact
-(global warming potential\index{global warming potential}
+(global warming potential~(GWP)\index{global warming potential (GWP)}
 and mineral resource depletion\index{mineral resource depletion})
 across the full life cycle\index{life cycle!automobiles}
 of automobile use,
@@ -648,7 +648,7 @@ Figure~\ref{fig:auto_gwp} shows that EVs are clearly worse than ICE vehicles
 in terms of mineral resource depletion~(MRD)\index{resources!mineral!depletion of}.
 The material demands for engine and battery fabrication are much higher for EVs 
 than for ICE vehicles.
-However, EVs can provide benefits in terms of global warming potential~(GWP)
+However, EVs can provide benefits in terms of global warming potential~(GWP)\index{global warming potential (GWP)}
 relative to ICE vehicles
 if the electricity source includes renewables (as in the ``Ren20'' electricity mix), 
 because of lower lifetime fuel/electricity emissions.
@@ -665,7 +665,7 @@ miss key differences associated with the production of different vehicle types a
 could lead to misguided comparisons across technologies.''
 
 
-<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential. ``MRD'' is mineral resource depletion. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline-powered vehicles. ``Ren20'' indicates an electricity mix with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union electricity mix in 2010. ``Coal'' indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
+<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline-powered vehicles. ``Ren20'' indicates an electricity mix with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union electricity mix in 2010. ``Coal'' indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
 Hawkins_life_cycle <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "EV data from Hawkins.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(c("Base vehicle", "Engine", "Other powertrain", "Battery", "Use phase", "Fuel/electricity", "End of life"), names_to = "Life.cycle.component", values_to = "normalized_impact") %>% 
@@ -727,7 +727,7 @@ will never achieve its potential emissions reductions.
 This chapter introduced the demand for passenger and freight transport
 and sources of that demand.
 Sustainability aspects of transport,
-especially energy consumption, fuel economy,
+especially energy consumption, fuel economy\index{fuel economy},
 and climate change (the prime example of Part~\ref{part:IPARX})
 were discussed.
 Finally, transitions to a sustainable transport system were discussed
@@ -1037,7 +1037,7 @@ transportation, petroleum, and technology.
       the sustainability benefits of 
       moving from energy efficiency\index{energy efficiency} to service efficacy\index{energy service efficacy}. 
       In Section~\ref{sec:transportation_fuel_economy},
-      the move from fuel economy 
+      the move from fuel economy\index{fuel economy} 
       (actually, a machine efficacy measured in miles/gallon) to
       service efficacy\index{energy service efficacy} (measured in passenger-km/gallon)
       revealed insights about the transportation sustainability challenge,
@@ -1045,7 +1045,7 @@ transportation, petroleum, and technology.
       of increasing effectiveness.
       Consider a different sustainability challenge besides transportation.
       Develop or find an energy efficiency\index{energy efficiency} or a machine efficacy for your challenge
-      that is analogous to fuel economy in miles/gallon.
+      that is analogous to fuel economy\index{fuel economy} in miles/gallon.
       Develop or find a service efficacy\index{energy service efficacy} for your challenge
       that is analogous to passenger-km/gallon.
       What changes when you move from energy efficiency\index{energy efficiency} or machine efficacy 
