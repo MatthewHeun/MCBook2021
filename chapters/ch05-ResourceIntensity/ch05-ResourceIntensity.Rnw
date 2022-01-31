@@ -18,7 +18,7 @@ Without abundant resources, prosperity is out of reach.}
 {Gifford Pinchot}
 
 The previous chapter addressed the sustainability implications of 
-economic affluence, the \mft{A} term in the IPARX equation (Equation~\ref{eq:IPARX}, 
+economic affluence, the \mft{A} term in the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX}, 
 repeated below for convenience). 
 Because the economy is society's metabolism\index{economic metabolism},
 economic growth and increasing affluence
@@ -722,7 +722,7 @@ A solar panel converts solar energy (from the sun)
 to electricity (for use in many devices, including, possibly, hair dryers).
 
 Because energy is the master resource,\index{energy!as master resource}
-we use energy as the prime example in the IPARX equation (Equation~\ref{eq:IPARX}).
+we use energy as the prime example in the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX}).
 There are two important questions:
 where are we using energy and
 are we using energy sustainably?
@@ -900,7 +900,7 @@ weak_sust_energy_rho %>%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Continuing the \href{https://en.wiktionary.org/wiki/explication}{explication}
-of the IPARX identity,
+of the IPARX identity\index{IPARX identity},
 one piece or facet of resource intensity of the economy~\Rparen{}
 is the primary energy intensity\index{primary energy intensity}~\REpparen{} of the world economy.
 \REp{} is the amount of primary energy\index{primary energy} required to create one unit (dollar) of
@@ -1031,7 +1031,7 @@ is declining consumption of biomass.
 Ironically, the decreases in \REp{} are coming from reduction in per-GDP consumption 
 of a type of energy that is possibly sustainable, biomass!
 
-We can use these data to learn things about the IPARX terms
+We can use these data to learn things about the IPARX\index{IPARX identity} terms
 (Equation~\ref{eq:IPARX}) and CO$_2$ emissions.
 A narrowed version of Equation~\ref{eq:IPARX},
 considers only CO$_2$ emissions on the left-hand side of the equation~($\mft{I}_{\text{CO}_2}$)
@@ -1042,7 +1042,7 @@ Whether CO$_2$ emissions actually decrease
 depends on the rates of increase or decline of the other terms
 on the right side of Equation~\ref{eq:IPARX}.
 Figure~\ref{fig:CarbonEmissionsGraph} shows that CO$_2$ emissions have been growing over time.
-So, other terms on the right side of the IPARX identity
+So, other terms on the right side of the IPARX identity\index{IPARX identity}
 must be growing collectively faster than energy intensity of the economy is declining;
 see Section~\ref{sec:revisit_IPARX}.
 
@@ -1132,7 +1132,7 @@ First, increasing energy efficiency\index{energy efficiency} (through efficiency
 can decrease the energy consumption for end uses.
 Examples include \textbf{corporate average fuel economy (CAFE)}\index{corporate average fuel economy (CAFE)}
 standards for vehicles in the U.S.\
-and mandates for LED lighting in many countries.
+and mandates for \textbf{LED lighting}\index{LED lamp} in many countries.
 Another way to reduce the energy intensity of an economy is to move
 away from a manufacturing economy toward a service economy.
 However, as shown in the haircut example at the beginning of this chapter,
@@ -1163,7 +1163,7 @@ relying less on consumption of (potentially) sustainable biomass.
 
 The next chapter looks at the impact 
 of resource extraction~\Xparen{}, 
-the final term in the IPARX equation~(Equation~\ref{eq:IPARX}).
+the final term in the IPARX identity\index{IPARX identity}~(Equation~\ref{eq:IPARX}).
 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1240,7 +1240,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         economically productive activities? Why?
         What are the sustainability impacts of how you spend your time?
         Can you quantify the sustainability impacts of how you spend your time
-        in terms of the IPARX equation?
+        in terms of the IPARX identity\index{IPARX identity}?
 
   \item Where does your water come from?
         How does it get to you? Where is your waste water treated?
@@ -1358,28 +1358,15 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Do you find techno-optimism convincing in these two cases?
         Does your answer for these two examples generalize to other products or resources?
         What do you make of the idea that price reductions spur increased consumption?
-        Relate your answer to the IPARX equation (Equation~\ref{eq:IPARX}).
-
-  % \item Maximum sustainable yield. If we harvest less than this we're ``leaving
-  %       money on the table'' and our efficiency metrics are less good. How
-  %       do we decide how much to take? Fish, e.g.
-  %       Add an issue on GitHub to include the Gradel and Alllenby figure.
-  %       The figure will allow us to discuss differences among
-  %       weak, strong, and economic levels of extraction.
+        Relate your answer to the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX}).
 
   \item Critique/reflect on the statement ``money is a lien on energy and resources.''
-        What does this statement indicate in terms of the IPARX equation?
+        What does this statement indicate in terms of the IPARX identity\index{IPARX identity}?
         What differences are there, for sustainability, between affluence and wealth?
 
   \item \label{question:consumption_substitution}
         Section~\ref{sec:recycling} introduced the idea that sufficiently similar
         materials could substitute for one another in a manufacturing process.
-        % For example, wood, steel, and ferro-cement (cement with metallic reinforcement)
-        % can all be used to build a boat.
-        % Wood is a renewable (but perhaps more expensive choice, depending on the
-        % size of the boat) resource.
-        % Steel is recyclable but cement is more abundant than steel.
-        % (Therefore it's debatable whether steel or ferro-cement is more weakly sustainable.)
         There can also be substitutability in consumption.
         For example, margarine, butter, and peanut butter are alternative spreads for toast.
         Or you could have oatmeal for breakfast.
@@ -1387,10 +1374,6 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         function or purpose---to provide for your caloric needs.
         Likewise, going to a concert or going for a walk on the beach aren't similar activities, but
         they serve the same function (recreation).
-        % What unsustainable recreational activity, household utility, food, and land use that \emph{you} do or use?
-        % Think of a more sustainable alternative that you could substitute.
-        % How are your sustainable and unsustainable choices similar?
-        % How are they different? \label{question:consumption_substitution}
         Looking ahead to Chapters~\ref{chap:households}--\ref{chap:land_use_urban_planning},
         think of one unsustainable item in each of the following categories:
         a mode of travel that you regularly use for transportation,
@@ -1468,11 +1451,11 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
   \item In winter, fresh food is transported from warm locations (for example, California and Florida)
         to cold locations (Michigan, for instance), consuming fossil fuels
         and causing CO$_2$ emissions.
-        Alternatively, LED lighting could be used at indoor farms to grow food
+        Alternatively, LED lighting\index{LED lamp} could be used at indoor farms to grow food
         in cold climates in the winter.
-        Assess the benefits and drawbacks of the LED approach relative to the 
+        Assess the benefits and drawbacks of the LED\index{LED lamp} approach relative to the 
         shipping approach. 
-        When would it make sense from a sustainability point of view to grow locally using LEDs?
+        When would it make sense from a sustainability point of view to grow locally using LEDs\index{LED lamp}?
         When is it more sustainable to transport food from warm to cold climates?
         
   \item Research the efficiency of electricity generation and distribution.

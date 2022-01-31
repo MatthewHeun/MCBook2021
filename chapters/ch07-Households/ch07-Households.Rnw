@@ -80,7 +80,7 @@ water, building materials, chemicals, food,
 electricity, and natural gas.
 Each resource demanded by households is an
 entry in the list of resources in the numerator of the
-\mft{R} term of the IPARX equation (Equation~\ref{eq:IPARX}). 
+\mft{R} term of the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX}). 
 This chapter focuses on demand for energy in households, 
 in keeping with the prime example of the book,
 energy consumption and carbon emissions. 
@@ -728,17 +728,19 @@ high-efficiency units, despite high initial cost?''
 %++++++++++++++++++++++++++++++
 
 Artificial lighting can be provided by many technologies.
-Today, LED lamps use one-eighth the energy of equivalent incandescent lamps.
-In addition, LED lamps can last up to 10 times longer than incandescent lights.
-As a result, operating costs of LED lamps are significantly less than incandescent lamps.
+Today, LED lamps\index{LED lamp} 
+use one-eighth the energy 
+of equivalent \textbf{incandescent lamps}\index{incandescent lamp}.
+In addition, LED lamps\index{LED lamp} can last up to 10 times longer than LED lamps\index{LED lamp}.
+As a result, operating costs of LED lamps\index{LED lamp} are significantly less than incandescent lamps\index{incandescent lamp}.
 Indeed, higher efficiency and longer life reduce total cost of ownership
-of LED lamps by nearly two orders of magnitude
-compared to incandescent bulbs.
+of LED lamps\index{LED lamp} by nearly two orders of magnitude
+compared to incandescent lamps\index{incandescent lamp}.
 
 That said, the purchase price of 
-a high-efficiency lamp can be higher than the purchase price of an incandescent lamp. 
+a high-efficiency lamp can be higher than the purchase price of an incandescent lamp\index{incandescent lamp}. 
 A sustainability challenge associated with lighting is
-``how can we encourage home owners to replace incandescent lamps with LED lamps,
+``how can we encourage home owners to replace incandescent lamps\index{incandescent lamp} with LED lamps\index{LED lamp},
 despite higher initial cost?''
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -760,28 +762,32 @@ They buy lamps for the energy service\index{energy service} they provide: light!
 Lighting efficacy is the ratio of visible light output 
 (the energy service\index{energy service}, measured in lumens) 
 to energy input (measured in W).
-A 100-W incandescent lamp supplies about 1230~lumens of light 
+A 100-W incandescent lamp\index{incandescent lamp} supplies about 1230~lumens of light 
 for a service efficacy\index{energy service efficacy} of 12.3~lumens/W.
-A 100-W equivalent LED lamp gives 1200~lumens but consumes only 12~W of electricity,
+A 100-W equivalent LED lamp\index{LED lamp} gives 1200~lumens but consumes only 12~W of electricity,
 for a service efficacy\index{energy service efficacy} of 100~lumens/W.
-LED lamps are 8 times better than incandescent lamps at providing 
+LED lamps\index{LED lamp} are 8 times better than incandescent lamps\index{incandescent lamp} at providing 
 their energy service\index{energy service}, lighting.
 
 The move from energy efficiency\index{energy efficiency} to service efficacy\index{energy service efficacy}
 can often reveal sustainability opportunities.
-Incandescent and LED lamps have similar energy efficiency\index{energy efficiency}, because they  
+Incandescent and LED lamps\index{LED lamp}
+have similar energy efficiency\index{energy efficiency}, because they  
 emit nearly as much radiative energy as they consume.
-However, most of the radiative energy emitted by an incandescent lamp is in nonvisible wavelengths.
-In contrast, most of the radiative energy emitted by an LED lamp is in visible wavelengths.
+However, most of the radiative energy emitted by an incandescent lamp\index{incandescent lamp}
+is in nonvisible wavelengths.
+In contrast, most of the radiative energy emitted by an LED lamp\index{LED lamp} is in visible wavelengths.
 The lumen counts only visible light output, so 
 the service efficacy\index{energy service efficacy} (measured in lumens/W) penalizes 
-incandescent lamps for emitting most of their energy in nonvisible wavelengths.
+incandescent lamps\index{incandescent lamp} for emitting most of their energy in nonvisible wavelengths.
 (See \citet{Heun:2020aa} for details.)
 The service efficacy\index{energy service efficacy}
-favors LED lamps, because they emit most of their energy in visible wavelengths.
-While an energy efficiency\index{energy efficiency} metric would say that incandescent and LED lamps are similarly efficient, 
+favors LED lamps\index{LED lamp}, because they emit most of their energy in visible wavelengths.
+While an energy efficiency\index{energy efficiency} metric would say that
+incandescent\index{incandescent lamp} and
+LED lamps\index{LED lamp} are similarly efficient, 
 the lumen/W service efficacy\index{energy service efficacy} metric correctly suggests 
-that LED lamps are far superior to incandescent lamps
+that LED lamps\index{LED lamp} are far superior to incandescent lamps\index{incandescent lamp}
 for the task of converting electricity to visible light.
 When available, service efficacies are preferred over energy efficiencies, 
 because they can point toward sustainability benefits.
@@ -955,18 +961,17 @@ using a cold-water cycle, and line drying clothes.
 %++++++++++++++++++++++++++++++
 
 After Edison's invention of the electric light,
-filament-based incandescent lighting technology\index{lamps!electric!incandescent}
+filament-based incandescent lighting technology\index{incandescent lamp}
 dominated household lighting.
 However, in recent years,
-Compact Fluorescent Lights (CFLs)\index{lamps!electric!compact fluorescent (CFL)} and
-Light-Emitting Diode (LED)\index{lamps!electric!light emitting diode (LED)}
-lamps have revolutionized
+Compact Fluorescent Lights (CFLs)\index{CFL lamp} and
+Light-Emitting Diode (LED) lamps\index{LED lamp} have revolutionized
 the lighting industry and improved lighting efficiency significantly.
 
-In the U.S., a transition to LED lamps is well underway,
-with incandescent and CFL lamps usually not available in stores.
+In the U.S., a transition to LED lamps\index{LED lamp} is well underway,
+with incandescent\index{incandescent lamp} and CFL lamps\index{CFL lamp} usually not available in stores.
 The lighting transition in the U.S.\ has been hastened
-by point-of-purchase subsidies for LED lamps
+by point-of-purchase subsidies for LED lamps\index{LED lamp}
 and by in-home energy-efficiency audits offered by utilities.
 
 Of course, the least expensive lamp is the one you don't need to use.
@@ -1288,9 +1293,10 @@ United States, 1999: \\
       What is your break-even point?
       What is your break-even point for buying a new dishwasher\index{dishwasher}?
       
-\item Find all the incandescent and compact fluorescent lamps in your dwelling, and 
-      consider changing to LEDs.
-      Be sure to choose LEDs with similar lumen output so there will be minimal change
+\item Find all the incandescent\index{incandescent lamp} and
+      compact fluorescent lamps\index{CFL lamp} in your dwelling, and 
+      consider changing to LEDs\index{LED lamp}.
+      Be sure to choose LEDs\index{LED lamp} with similar lumen output so there will be minimal change
       in lighting service provided.
       What is the cost to purchase and install the new lamps.
       How much energy will be saved annually?

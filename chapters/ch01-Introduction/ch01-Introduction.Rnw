@@ -293,11 +293,13 @@ there is no sustainability at all.
 \section{A framework for environmental sustainability thinking}\index{environmental sustainability}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Two mathematical identities, IPAT and Kaya, have been used to express the impact
+Two mathematical identities, \textbf{IPAT}\index{IPAT identity}
+and \textbf{Kaya}\index{Kaya identity}, have been used to express the impact
 of human activities on the environment.
-IPAT expresses ``impact''~\Iparen{} on the environment as the product of human
+IPAT\index{IPAT identity} expresses ``impact''~\Iparen{} on the environment as the product of human
 \textbf{population}~\Pparen{} \textbf{affluence}~\Aparen{}, and technology~\Tparen{}.
-The Kaya identity is a form of the IPAT equation but restricts environmental impacts~\Iparen{}
+The Kaya identity is a form of the IPAT identity\index{IPAT identity}
+but restricts environmental impacts~\Iparen{}
 to CO$_2$ emissions~(\:\!$\mft{I}_{\text{CO}_2}$).
 On the other hand, Kaya expands the generic expression for ``technology'' to be
 the product of \textbf{primary energy intensity}\index{primary energy intensity}
@@ -307,9 +309,9 @@ and the \textbf{carbon intensity of energy}\index{carbon intensity of primary en
 (CO$_2$ emissions per unit of energy).
 
 Chapters~\ref{chap:planetary_boundaries}--\ref{chap:impact_intensity}
-of this book are organized around a hybrid of the IPAT and Kaya
+of this book are organized around a hybrid of the IPAT\index{IPAT identity} and Kaya
 approaches.
-We keep the more general ``impact'' of IPAT but also generalize the expanded
+We keep the more general ``impact'' of IPAT\index{IPAT identity} but also generalize the expanded
 ``technology'' expression from Kaya as the product of \textbf{resource intensity of the economy}~\Rparen{}
 and the \textbf{impact of resources}~\Xparen{}.
 
@@ -317,7 +319,7 @@ and the \textbf{impact of resources}~\Xparen{}.
   \iparx
 \end{equation}
 
-In the IPARX formulation, impact~\Iparen{} is a list of impacts (that is, a vector quantity)
+In the \textbf{IPARX}\index{IPARX identity} formulation, impact~\Iparen{} is a list of impacts (that is, a vector quantity)
 that includes such things as
 \textbf{global warming potential (GWP)}\index{global warming potential (GWP)},
 aquifer\index{aquifer} depletion, and
@@ -339,7 +341,7 @@ we are unsustainable.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The IPARX identity is a static relationship.
+The IPARX identity\index{IPARX identity} is a static relationship.
 Its terms represent steady-state levels,
 but do not necessarily show how changes in any one variable affects the others.
 For instance, using resources more efficiently (improving resource intensity),
@@ -354,9 +356,9 @@ thinking about sustainability challenges, it does not provide a complete
 roadmap for sustainability solutions (in part) because of interactions among the terms.
 \end{mcframe}
 
-IPARX is true because it is an identity, and it provides a useful organizing framework
+IPARX\index{IPARX identity} is true because it is an identity, and it provides a useful organizing framework
 for the following chapters.
-To illustrate the IPARX framework, energy and CO$_2$ are prime examples
+To illustrate the IPARX\index{IPARX identity} framework, energy and CO$_2$ are prime examples
 in the rest of the text, because energy is the master resource
 and climate change is our most urgent sustainability challenge.
 Of course, the two are closely linked.
@@ -554,7 +556,7 @@ Biofuels (incl.\ U.S.\ corn ethanol) & 0.8--1.6 \\ %%  from T. Gomiero 2015
 \section{Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This book uses the IPARX equation as a framework for thinking about sustainability.
+This book uses the IPARX identity\index{IPARX identity} as a framework for thinking about sustainability.
 It considers many different resources and many different types of impacts.
 However, there is a focus on energy and CO$_2$ emissions.
 Climate change (Section \ref{sec:GHGCC}) is one of the most urgent sustainability
