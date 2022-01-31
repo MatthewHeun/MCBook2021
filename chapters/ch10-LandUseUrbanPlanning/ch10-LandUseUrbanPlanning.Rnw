@@ -12,7 +12,7 @@
 It's found in its budget.}{Brent Toderian}
 
 The previous three chapters described sustainability challenges related to 
-households, transportation, and food.
+households, transportation, and agriculture.
 A common element in all these sustainability challenges is how we use land.
 We need places for homes, to grow food, and for transportation systems. 
 Moreover, where we choose to put each of these elements influences 
@@ -127,9 +127,10 @@ forestry (28\%), and cropland (17\%) being the three largest uses.%
 The four largest crops in the U.S. are wheat (32\% of land used for crop production),
 corn (30\%), soybeans (20\%), and cotton (10\%)~\cite{FAOSTAT:2021ve}. 
 All other crops combined account for only 8\% of land use.
-In contrast, the area where we live and work
-is a relatively small 70 million acres (3\%).
-The U.S. is relatively sparsely populated.
+In contrast, the urban areas where we live and work
+are a relatively small 70 million acres (3\%).
+The U.S.\ is sparsely populated compared to many other parts of the world; see
+Section~\ref{sec:pop_density}.
 
 
 %-----------------------------
@@ -139,7 +140,7 @@ The U.S. is relatively sparsely populated.
 As mentioned in Chapter~\ref{chap:agriculture}, population drives agriculture,
 and agriculture is the most prevalent way we use land.
 As world population has grown, the additional humans have been fed (in part) by
-converting more land to agriculture over time.
+converting more land to agricultural use over time.
 
 
 %-----------------------------
@@ -273,8 +274,9 @@ are all promising candidates for carbon sequestration.
 Although the capacity of wetlands to store carbon is large,
 unfortunately, the amount of wetlands is small. 
 In contrast, the opportunities for forest and grasslands are quite extensive.
-Projects 10.1 and 10.2 explore technical aspects of forest and grassland 
-restoration/carbon sequestration.
+Projects~\label{project:restoring_boreal_forest} 
+and~\label{project:restoring_temperate_grasslands} explore technical aspects of 
+forest and grassland restoration/carbon sequestration.
 
 Therefore, consistent with earlier chapters, the drivers for land use are 
 the~\Pparen{} and~\Aparen{} terms of the IPARX identity\index{IPARX identity},
@@ -297,15 +299,14 @@ The European Space Agency Climate-Change Initiative (CCI) recently released
 a satellite-image dataset for global land use over a 24-year period (1992-2015).
 There are nine categories for land-use:  
 agriculture, forest, grass, wetland, settlement, shrubland, sparse, bare, and water.
-Humans altered almost 1\% of total land area per year (22\% in 24 years~\cite{Nowosad2019})
-across all land-use categories.
+Humans altered almost 1\% of total land area per year (22\% in 24 years~\cite{Nowosad2019}).
 
 This section examines sustainability challenges related to the way humans use land
 for housing, for transportation, and for agriculture.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Housing or urban sustainability}
+\subsection{Urban sustainability (housing and infrastructure)}
 \label{sec:land_challenges_housing}
 %++++++++++++++++++++++++++++++
 
@@ -327,7 +328,7 @@ Analysis~\cite{Nowosad2019} of the CCI data reveals some trends related to land 
 One trend is that urban areas are continually growing and, basically, never shrink.
 From 1992--2015, settlements gained 337,000 square kilometers, which is 0.23\%
 of the Earth's land area, or about 0.01\% per year.
-Fundamentally, urban areas can't continue to grow forever.
+Fundamentally, although this rate is low, urban areas can't continue to grow forever.
 If the Earth's surface were 100\% urban, where would we store carbon, grow food, or obtain material
 and energy resources?
 
@@ -346,9 +347,9 @@ sustainability implications.
 First, there is a net loss of high-quality agricultural land.
 As existing farms near cities become urban areas, agricultural activities are pushed 
 out to more marginal land.
-Second, the net effect is deforestation, which results in net greenhouse gas emissions.
+Second, the net effect is deforestation, which increases net greenhouse gas emissions.
 Land use and land-use change are an important source of anthropogenic 
-greenhouse gas emissions~\cite{IPCC:2018aa}.
+greenhouse gas emissions~\cite{IPCC:2018aa}. (See Figure~\ref{fig:food_ghg}.)
 
 A sustainability challenge associated with urban growth is
 ``how can cities supply the needs of an increasing and increasingly urban population
@@ -368,8 +369,10 @@ Urban areas are defined by a relative abundance of public works.
 A rural road might have a drainage ditch beside the road but the road itself
 might not be paved. 
 In contrast, a suburban street will be paved and have gutters, curbs, storm sewers, and a sidewalk.
-A city center will additionally have public buildings such as a courthouse, library,
-post office, parks, and, perhaps, bridges.
+A city will have traffic infrastructure, such as traffic lights and perhaps bridges,
+and electricity, natural gas, water, and sanitation networks.
+A city center will additionally have public buildings such as a courthouse, library, and/or 
+post office.
 Eventually, all the above infrastructure will reach the end of its functional life
 and have to be repaired or replaced.
 To remain a city, enough taxes have to be collected over the infrastructure's life
@@ -888,9 +891,11 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
 
 \item Research restoring/regrowing/sustainable yield tropical, temperate, or
       boreal forests/woodlands\index{yield!agricultural}.
+      \label{project:restoring_boreal_forest} 
 
 \item Research restoring/regrowing temperate grasslands. Be sure to pay attention
       to the role of grazing herds.
+      \label{project:restoring_temperate_grasslands}
 
 \item Research the field of urban planning.  How has it changed over time?  
       What are its current goals?  
