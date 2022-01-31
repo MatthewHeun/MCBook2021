@@ -727,7 +727,13 @@ we use energy as the prime example in the IPARX identity\index{IPARX identity} (
 There are two important questions:
 where are we using energy and
 are we using energy sustainably?
-Figure~\ref{fig:LLNL_energy_sankey} answers the first question
+Figure~\ref{fig:LLNL_energy_sankey}
+is an energy \textbf{Sankey diagram}\index{Sankey diagram!energy}%
+\footnote{
+  Figure~\ref{fig:LLNL_energy_sankey} is a Sankey diagram\index{Sankey diagram},
+  a diagram in which the width of the lines is proportional to the magnitude of the flows.
+}
+that answers the first question
 for the U.S.
 Energy is used in four broad sectors of the economy:
 residences, commerce, industry, and transportation.
@@ -737,7 +743,7 @@ Industry and transportation use more energy than residences and commerce.
 \centering
 \includegraphics[width=\linewidth]{chapters/ch05-ResourceIntensity/figures/Energy_US_2018.png}
 \caption[U.S.\ energy consumption Sankey diagram]
-        {U.S.\ energy consumption in 2018. 
+        {U.S.\ energy consumption Sankey diagram\index{Sankey diagram} for 2018. 
          Flows in quads/year.
          (1~quad\index{quad} is a quadrillion BTUs of energy,
          equal to 1.055$\times$10$^\text{18}$~J.)

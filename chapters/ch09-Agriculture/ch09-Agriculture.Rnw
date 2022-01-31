@@ -519,8 +519,7 @@ A sustainability challenge associated with energy in agriculture is
 %++++++++++++++++++++++++++++++
 
 Figure~\ref{fig:food_and_ag_material_flow} shows a mass-based, material-flow
-Sankey diagram\index{Sankey diagram!agriculture} for U.S.\
-agriculture. 
+Sankey diagram for U.S.\ agriculture. 
 Mass-based efficiencies can be calculated for many aspects of the agricultural system.
 For example, the efficiency with which crops are converted to edible food
 is the ratio 355,880$\times$10$^\text{6}$ pounds of edible food supply 
@@ -530,7 +529,7 @@ or 38.6\%.
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{chapters/ch09-Agriculture/figures/Material_Flow_in_the_US_Food_System(1995_Flows_in_Million_Pounds).pdf}
-\caption[Material flow in the U.S.\ food system]{Material flow in the U.S.\ food system (1995). Flows in million pounds. \emph{Source}: \citet[Figure~3]{Heller:2000wg}. Used with permission.}
+\caption[Material flow in the U.S.\ food system]{Sankey diagram\index{Sankey diagram!agriculture} of material flow in the U.S.\ food system (1995). Flows in million pounds. \emph{Source}: \citet[Figure~3]{Heller:2000wg}. Used with permission.}
 \label{fig:food_and_ag_material_flow}
 \end{figure}
 
@@ -547,8 +546,6 @@ animal_efficiency <- animal_products / animal_inputs * end_use_food_efficiency
 
 Several observations can be made from 
 Figure~\ref{fig:food_and_ag_material_flow}~\citep[Fig.~1]{Heller:2000wg}.
-% shows a Sankey diagram\index{Sankey diagram!agriculture}
-%which shows the material flows in the U.S.\ agriculture system~\citep[Fig.~1]{Heller:2000wg}.
 First, the mass efficiency\index{efficiency!mass-based}
 of the agriculture system\index{efficiency!agriculture system}
 is low.

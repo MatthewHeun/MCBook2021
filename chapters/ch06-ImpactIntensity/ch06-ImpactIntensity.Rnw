@@ -121,8 +121,8 @@ $\mft{X}_{\text{CO}_2}$ is an intensity, because
 carbon (numerator) can be considered an input 
 to energy derived from fossil fuels (denominator).
 
-Figure~\ref{fig:LLNL_CO2_sankey} is a Sankey\index{Sankey diagram!CO$_2$ emissions} 
-diagram of sources of CO$_2$ emissions from the U.S.\ economy in 2018.
+Figure~\ref{fig:LLNL_CO2_sankey} is a Sankey diagram
+of sources of CO$_2$ emissions from the U.S.\ economy in 2018.
 However, in Figure~\ref{fig:LLNL_CO2_sankey}, CO$_2$ emissions
 from electricity generation stop at generation and are not attributed to 
 electricity purchasers, residential, commercial, and industrial customers.
@@ -138,14 +138,13 @@ Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
 \centering
 \includegraphics[width=\linewidth]{chapters/ch06-ImpactIntensity/figures/Carbon_2018_United-States.png}
 \caption[U.S.\ CO$_2$ emissions Sankey diagram]
-        {U.S.\ CO$_2$ emissions in 2018.
+        {U.S.\ CO$_2$ emissions Sankey diagram\index{Sankey diagram!CO$_2$ emissions} for 2018.
          CO$_2$ emissions from electricity production are not attributed to end uses;
          see Table~\ref{tab:corrected_co2_emissions}.
          Flows in Mt/year.
          \emph{Source}: \citet{Lawrence-Livermore-National-Laboratory:wp}.}
 \label{fig:LLNL_CO2_sankey}
 \end{figure}
-
 
 
 <<US-Carbon-Table, results="asis">>=
