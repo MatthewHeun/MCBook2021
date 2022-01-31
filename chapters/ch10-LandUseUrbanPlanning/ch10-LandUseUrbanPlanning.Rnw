@@ -512,35 +512,40 @@ A sustainability challenge associated with land use and agriculture is
 This chapter began by asking two important questions about land use: 
 (a)~how much of each type of land use should we have and
 (b)~what is the best layout?
-One obvious answer to the first question is ``as much as we need,''
-The question of allocation therefore becomes a question of land use efficiency. 
-How can we adequately meet our needs as efficiently as possible?
-To put it another way, how can we meet our food, housing, and resource needs
-while using as little land as possible?
+An obvious answer to the first question is ``as much as it takes to meet human
+needs/wants.''
+The question of allocation therefore becomes a question of land use efficacy. 
+That is, how can we meet our food, housing, and resource needs while using as 
+little land as possible?
+Therefore, parallel to the discussion in Section~\ref{sec:food_ag_efficiency},
+changes that use less land (reduce \mft{R}) to meet human needs or lower 
+the impact of using land~\Xparen{} are positive changes towards becoming more sustainable.
 
-
-%+++++++++++++++++++++++++++++++
-\subsection{Land use efficiency}
-\label{sec:land_efficiency}
-%+++++++++++++++++++++++++++++++
-
-Because land is a limited resource, 
-it makes sense to maximize the effective use 
-of that resource, whether that's for food, housing, and/or ecosystem services\index{ecosystem services}.
-Various metrics (only some related to sustainability)
-could be used to gauge the effectiveness of land use
-in agricultural settings or in cities.
-From an environmental sustainability\index{environmental sustainability}
-point of view, 
-we could try to maximize 
-biodiversity, wilderness area, air and water quality, or 
-ecosystem services\index{ecosystem services} and
-the health of the environment that provides those ecosystem services\index{ecosystem services}.
-
+The remainder of this section examines three further changes that are necessary for
+becoming sustainable.
+First, increasing population density is an example of increasing land-use efficacy
+(housing people per area).
+Having more people per area means that less land is needed for housing. 
+However, increased population density also has positive sustainability implications
+for transportation and it could ``spare'' more land for ecosystem services.
+Second, it seems clear that afforestation (devoting more land to forests) is 
+necessary to reduce net greenhouse gas (GHG) emissions and, in fact, to reduce 
+atmospheric GHG concentrations.
+Third, a transition to renewable energy sources is likely to greatly increase
+the amount of land needed to generate the energy we use.
+Producing renewable energy without destroying ecosystem services\index{ecosystem services}
+is a major hurdle to becoming sustainable.
+As in Chapter~\ref{chap:agriculture}, we leave to Chapters~\ref{chap:government} 
+and~\ref{chap:personal_action} the discussion of how such changes can be made 
+(when possible) and who might take action to make such changes.
 
 %..............................
-\paragraph{Urban land-use efficiency}
+\paragraph{Population density}
+\label{sec:land_transition_pop_density}
 %..............................
+
+% maximize  biodiversity, wilderness area, air and water quality, or 
+
 
 For urban land uses, we could attempt to
 maximize population density\index{population density},
@@ -610,7 +615,7 @@ power_densities %>%
 
 
 %..............................
-\paragraph{Resource extraction}
+\paragraph{Resource extraction (energy)}
 %..............................
 
 Figure~\ref{fig:PowerDensity} shows the land use requirements for different forms of
@@ -654,7 +659,7 @@ because yields\index{yield!agricultural}
 aren't as high, requires more total farm land.
 
 Improving sustainability means increasing the ``sparing'' (for instance, to combat
-extinction rate) and increasing the ``sharing.'' 
+extinction rate) \emph{and} increasing the ``sharing.'' 
 How can we do both better?
 \end{mcframe}
 
