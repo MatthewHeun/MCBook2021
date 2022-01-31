@@ -514,20 +514,21 @@ This chapter began by asking two important questions about land use:
 (b)~what is the best layout?
 An obvious answer to the first question is ``as much as it takes to meet human
 needs/wants.''
-The question of allocation therefore becomes a question of land use efficacy. 
+Therefore, the allocation question becomes a question about land-use efficacy. 
 That is, how can we meet our food, housing, and resource needs while using as 
 little land as possible?
 Therefore, parallel to the discussion in Section~\ref{sec:food_ag_efficiency},
-changes that use less land (reduce \mft{R}) to meet human needs or lower 
-the impact of using land~\Xparen{} are positive changes towards becoming more sustainable.
+changes that use less land (reduce \mft{R}) to meet human needs, or lower 
+the impact of using land~\Xparen{}, are positive changes towards becoming more sustainable.
 
 The remainder of this section examines three further changes that are necessary for
 becoming sustainable.
 First, increasing population density is an example of increasing land-use efficacy
 (housing people per area).
-Having more people per area means that less land is needed for housing. 
+More people per area means less land is needed for housing. 
 However, increased population density also has positive sustainability implications
-for transportation and it could ``spare'' more land for ecosystem services.
+for transportation.
+Furthermore, more land could be spared for ecosystem services.
 Second, it seems clear that afforestation (devoting more land to forests) is 
 necessary to reduce net greenhouse gas (GHG) emissions and, in fact, to reduce 
 atmospheric GHG concentrations.
@@ -544,37 +545,36 @@ and~\ref{chap:personal_action} the discussion of how such changes can be made
 \label{sec:land_transition_pop_density}
 %..............................
 
-% maximize  biodiversity, wilderness area, air and water quality, or 
-
-
-For urban land uses, we could attempt to
-maximize population density\index{population density},
-we could minimize metrics related to environmental impact, or 
-we could try to make cities as self-sufficient as 
-possible, for example with respect to food or energy.
-We might try to minimize the amount of transportation emissions within cities.
-Or we might try to maximize urban GDP.
-
+For urban areas, increasing population density\index{population density}
+has positive implications for sustainability.
 Since a growing urban population is expected to put unprecedented demand on cities 
-and city services, high population density\index{population density} is will help to answer this challenge.
+and city services, high population density\index{population density} is will help 
+to answer this challenge.
 First, higher densities reduce the need to expand the physical footprint of the urban
 area. 
 Second, higher densities reduce the cost of infrastructure per area.
 
+Zoning regulations, particularly minimum lot sizes, generous setbacks, and zoning
+for single-family housing, restrict urban and suburban density. 
+Therefore, changing regulations is one way to permit/incentivize increased population density.
+Today, many urban areas lack affordable housing. 
+Regulations that create artificial scarcity, for example, by not allowing 
+development of multifamily housing, or that make housing artificially expensive,
+such as requiring large setbacks or large minimum lot sizes, are particularly targets for change.
+Thus, affordable housing and higher population density is an example where changes
+would improve the three areas of sustainability\index{social sustainability} simultaneously. 
 
 %..............................
-\paragraph{Aforestation}
+\paragraph{Afforestation}
 %..............................
 
-Because of the climate crisis, it seems clear that significantly more carbon needs to
+Because of the climate crisis, significant amounts of carbon need to
 be removed from the atmosphere and stored somewhere. 
 Figure~\ref{fig:CarbonStorage} indicates that forests play an important
-role in sequestering carbon from the atmosphere, particularly in tropical and
-boreal forests.
+role in sequestering carbon, particularly in tropical and boreal forests.
 Currently, the world is experiencing significant deforestation. 
-Instead, we need \textbf{aforestation}\index{aforestation}, 
-that is an increase in the amount of land devoted to
-forests.
+Instead, we need \textbf{afforestation}\index{afforestation}, 
+that is, an increase in the amount of land devoted to forests.
 Indeed, land use must become a carbon sink, instead of a carbon source,
 if we are to be sustainable.
 
@@ -617,7 +617,7 @@ power_densities %>%
 Figure~\ref{fig:PowerDensity} shows the land-use requirements for different forms of
 energy. 
 If we are going to make an energy transition to renewable sources 
-(for example WWS in Section~\ref{sec:low_carbon_transition}), 
+(for example, WWS in Section~\ref{sec:low_carbon_transition}), 
 Figure~\ref{fig:PowerDensity} shows that we will need to devote significantly more land
 to energy production.
 Since the amount of land is fixed, either we have to combine energy generation
