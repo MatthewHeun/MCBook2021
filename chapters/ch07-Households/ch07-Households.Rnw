@@ -116,8 +116,9 @@ But the number of housing units is rising.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Much of what we know about residential energy consumption in the U.S.\
 comes from the U.S.\ Energy Information Agency's occasional
-Residential Energy Consumption Surveys (RECS)~\cite{U.S.-Energy-Information-Agency:vd}.
-RECS provides snapshots of residential energy consumption for survey years
+\textbf{Residential Energy Consumption Survey (RECS)}\index{Residential Energy Consumption Survey (RECS)}~\cite{U.S.-Energy-Information-Agency:vd}.
+RECS\index{Residential Energy Consumption Survey (RECS)}
+provides snapshots of residential energy consumption for survey years
 1979, 1980, 1981, 1982, 1984, 1987, 1990, 1993, 1997, 2001, 2005, 2009, and 2015.
 The next results are expected in 2022 for survey year 2020.
 \end{mcframe}
@@ -1116,7 +1117,8 @@ United States, 1999: \\
       
 \item Notice that biomass heating (for example, firewood) is not included in 
       Figure~\ref{fig:EnergyConsAndHomeSize}. However, 
-      RECS Table CE 7.2 reports that wood heated 12.5 million housing units in
+      RECS\index{Residential Energy Consumption Survey (RECS)}
+      Table CE 7.2 reports that wood heated 12.5 million housing units in
       2015 (10.6\% of all housing units) and was 5.6\% of all BTUs used for
       heating. 
       (For around 60\% of housing units wood is the main source of heat;
