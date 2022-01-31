@@ -882,12 +882,12 @@ transportation, petroleum, and technology.
 \item \href{www.strongtowns.org}{Strong Towns.org} defines a road as a high-speed 
       connection (like an expressway) between two places,
       a street as a human-centric place where people interact with homes and businesses,
-      and stroads as dangerous and expensive hybrids that are ultimately ineffective
+      and \textbf{stroads}\index{stroad} as dangerous and expensive hybrids that are ultimately ineffective
       at doing the job of either a street or a road. 
-      (Stroads are often found near shopping malls and big-box stores. They have 
+      (Stroads\index{stroad} are often found near shopping malls and big-box stores. They have 
       multiple lanes, high traffic volumes, but also many lights and connections to
       business parking lots. 
-      Despite connecting to many businesses, stroads often have no sidewalks.)
+      Despite connecting to many businesses, stroads\index{stroad} often have no sidewalks.)
       In the U.S., pedestrian fatalities increased from 4,302 in 2010 to 6,301 in 2019,
       an increase of 46\% over the decade and representing 17\% of all traffic fatalities.
 % https://arstechnica.com/cars/2021/03/us-pedestrian-deaths-rose-sharply-in-the-first-half-of-2020
@@ -899,7 +899,7 @@ transportation, petroleum, and technology.
       on the poor and elderly. % I suspect this is largely correlation.
       Second, there is a fundamental tradeoff between traffic volume (speed)
       and pedestrian safety.
-      Third, the physical design of the road, street, or stroad makes concrete 
+      Third, the physical design of the road, street, or stroad\index{stroad} makes concrete 
       (if you'll pardon the pun) the extent to which we value transportation versus
       human life. (``Failing to act is consenting to more preventable deaths.'')
       
@@ -912,7 +912,7 @@ transportation, petroleum, and technology.
       \item Using the cost of a commute at \$80 per hour from 
             \ref{question:commute_vs_happiness} above, 
             what are 2019 pedestrian deaths worth in terms of hours of 
-            additional commute? Is this sort of tradeoff how we should do street, road, and stroad design?
+            additional commute? Is this sort of tradeoff how we should do street, road, and stroad\index{stroad} design?
       \item Speculate on reasons why pedestrian deaths have increased in recent years.
       \item Where do you feel safe walking? Where do you not feel safe walking? Why?
       \item Are there things you would like your local traffic planners to change?
