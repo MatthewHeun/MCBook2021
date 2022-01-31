@@ -102,7 +102,7 @@ other examples of environmental impacts caused by resource extraction and consum
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Example: carbon intensity of energy}
+\section{Example: carbon intensity of energy}\index{carbon intensity of primary energy}
 \label{sec:carbon_intensity_of_energy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -219,7 +219,7 @@ already sequestered into the biomass as the plants grew.
 Fossil fuels are not carbon neutral;
 their combustion releases CO$_2$ that was sequestered millions of years ago.
 As the world transitioned away from traditional biofuels toward fossil fuels,
-the carbon intensity of energy rose.
+the carbon intensity of primary energy\index{carbon intensity of primary energy} rose.
 
 On the other hand, use of traditional biofuels results in deforestation, erosion,
 and other negative environmental effects (as well as being inefficient from an
@@ -235,7 +235,7 @@ in reduced environmental impact.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Reducing the carbon intensity of energy}
+\section{Reducing the carbon intensity of energy}\index{carbon intensity of primary energy}
 \label{sec:reducing_c}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -268,7 +268,7 @@ the carbon intensity of primary energy\index{carbon intensity of primary energy}
 rose dramatically from 1800--1960, 
 as use of fossil fuels came to dominate the world energy story;
 see Figure~\ref{fig:PrimaryEnergyGraph}.
-Since 1960, the carbon intensity of energy
+Since 1960, the carbon intensity of primary energy\index{carbon intensity of primary energy}
 has hovered around 63~MtCO$_2$/EJ.
 Thus, for the last 60~years, \XCOtwo{} has been stubbornly constant
 and far too high for environmental sustainability\index{environmental sustainability}
@@ -969,7 +969,7 @@ However, when
 and
 (b)~energy consumption causes CO$_2$ to be emitted,
 economic growth leads to sustainability challenges.
-Reducing the carbon intensity of energy 
+Reducing the carbon intensity of primary energy\index{carbon intensity of primary energy} 
 (\;\!\XCOtwo{}the prime example for \mft{X} in Equation~\ref{eq:IPARX})
 is one way to limit the environmental impacts of economic activity.
 Interactions associated with a transition to low-carbon energy supplies
@@ -1007,7 +1007,7 @@ The impact of resources~\Xparen{}
 represents the environmental impacts of extracting and consuming natural resources
 in Equation~\ref{eq:IPARX}.
 For the prime example of energy and CO$_2$ emissions, 
-the carbon intensity of energy~\XCOtwoparen{} 
+the carbon intensity of primary energy\index{carbon intensity of primary energy}~\XCOtwoparen{} 
 quantifies the CO$_2$ emissions from consuming energy.
 \XCOtwo{} grew with the transition from biofuels to fossil fuels
 but leveled off in the last few decades.

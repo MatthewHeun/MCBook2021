@@ -301,7 +301,8 @@ The Kaya identity is a form of the IPAT equation but restricts environmental imp
 to CO$_2$ emissions~(\:\!$\mft{I}_{\text{CO}_2}$).
 On the other hand, Kaya expands the generic expression for ``technology'' to be
 the product of energy intensity of the economy (energy per GDP)
-and the carbon intensity of energy (CO$_2$ emissions per unit of energy).
+and the carbon intensity of energy\index{carbon intensity of primary energy}
+(CO$_2$ emissions per unit of energy).
 
 Chapters~\ref{chap:planetary_boundaries}--\ref{chap:impact_intensity}
 of this book are organized around a hybrid of the IPAT and Kaya
