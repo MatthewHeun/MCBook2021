@@ -198,25 +198,25 @@ even in the service sector.
 
 
 %..............................
-\paragraph{Primary vs.\ final vs.\ useful energy}
+\paragraph{Primary vs.\ final vs.\ useful energy}\index{primary energy}\index{final energy}\index{useful energy}
 %..............................
 
 Imagine a coal-fired power plant that generates electricity to charge
 an electric car. 
-Coal is a primary energy source. 
-The electricity sold to consumers is considered to be a final energy carrier.%
+Coal is a \textbf{primary energy}\index{primary energy} source. 
+The electricity sold to consumers is considered to be a \textbf{final energy}\index{final energy} carrier.%
 \footnote{
   Note that the term ``final'' comes from economics,
   where electricity purchases by consumers are 
   counted in ``final demand.''
 }
 %
-Hydro, solar, and wind are primary energy sources. 
+Hydro, solar, and wind are primary energy\index{primary energy} sources. 
 So are crude oil and methane.
 In contrast, gasoline is a refined fuel. 
 As such, gasoline is the product of 
 a refinery that converts crude oil to refined fuels. 
-Likewise, natural uranium is a primary energy carrier that must be converted into 
+Likewise, natural uranium is a primary energy\index{primary energy} carrier that must be converted into 
 fissionable uranium fuel before it can be used in a nuclear power plant to generate electricity.
 The oil refinery or nuclear-fuel enrichment process can be evaluated for their
 energy return on investment (EROI)\index{energy return on investment (EROI)}; 
@@ -224,13 +224,18 @@ see Section~\ref{sec:masterE}.
 EROI is a type of energy efficiency\index{energy efficiency} that measures energy output
 per energy input from other portions of the economy.
 
-Useful energy is created from final energy by devices owned by the final energy purchaser. 
-For example, car owners purchase gasoline (final energy) that flows into a car's engine (the device)
-and creates motion along a roadway (kinetic energy, the useful energy product).
+\textbf{Useful energy}\index{useful energy} 
+is created from final energy\index{final energy}
+by devices owned by the final energy purchaser. 
+For example, car owners purchase gasoline (final energy\index{final energy})
+that flows into a car's engine (the device)
+and creates motion along a roadway (kinetic energy, 
+the useful energy\index{useful energy} product).
 Apartment dwellers purchase
-electricity (final energy) that flows into 
+electricity (final energy\index{final energy}) that flows into 
 a mixer (the device)
-to create kinetic energy (useful energy) of ingredients in a recipe.
+to create kinetic energy (useful energy\index{useful energy})
+of ingredients in a recipe.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -741,7 +746,7 @@ Industry and transportation use more energy than residences and commerce.
 \end{figure}
 
 
-<<PrimaryEnergyGraph, fig.scap="World primary energy consumption vs.\\ time by energy type", fig.cap="World annual primary energy consumption vs.\\ time by energy type. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels. \\emph{Source}: \\citet{Roser:2021vi}.">>=
+<<PrimaryEnergyGraph, fig.scap="World primary energy consumption vs.\\ time by energy type", fig.cap="World annual primary energy\\index{primary energy} consumption vs.\\ time by energy type. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels. \\emph{Source}: \\citet{Roser:2021vi}.">>=
 # Gather data for primary energy vs. time graph
 primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "global-primary-energy.xlsx"),
                                      sheet = "data to plot") %>%
@@ -788,8 +793,8 @@ ggplot2::ggplot() +
 
 To assess the second question (are we using energy at a sustainable rate?),
 see Figure~\ref{fig:PrimaryEnergyGraph},
-which shows global primary energy consumption through time.
-The increasing consumption of primary energy supports
+which shows global primary energy\index{primary energy} consumption through time.
+The increasing consumption of primary energy\index{primary energy} supports
 population growth (Figure~\ref{fig:PopulationGraph}) and
 economic growth (Figure~\ref{fig:GDPGraph-Nordhaus}).
 However, on a per-capita basis,
@@ -807,7 +812,7 @@ as shown in Figure~\ref{fig:PercentageOfSustainable}.)
 Neither oil nor natural gas are being consumed at a weakly sustainable rate.
 
 
-<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person vs.\\ time by energy type", fig.cap="World primary energy consumption per person vs.\\ time by energy type. Note that per-person primary energy consumption is relatively flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth and increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy.">>=
+<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person vs.\\ time by energy type", fig.cap="World primary energy\\index{primary energy} consumption per person vs.\\ time by energy type. Note that per-person primary energy consumption is relatively flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth and increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy.">>=
 
 # Find which years have data from the Europe data set
 which_years <- region_pop %>%
@@ -855,7 +860,7 @@ energy_per_capita %>%
 History can be seen in time-series energy graphs.
 In particular, 
 the effect of the 1970s oil crises can be seen in Figure~\ref{fig:EnergyPerPersonGraph}.
-Per-capita primary energy consumption rose substantially from 1800 to 1970
+Per-capita primary energy\index{primary energy} consumption rose substantially from 1800 to 1970
 with the adoption of fossil fuels worldwide.
 Since the oil crises, efficiency and substitution
 have slowed the growth of per-capita energy primary consumption.
@@ -897,13 +902,13 @@ weak_sust_energy_rho %>%
 Continuing the \href{https://en.wiktionary.org/wiki/explication}{explication}
 of the IPARX identity,
 one piece or facet of resource intensity of the economy~\Rparen{}
-is the primary energy intensity~\REpparen{} of the world economy.
-\REp{} is the amount of primary energy required to create one unit (dollar) of
+is the primary energy\index{primary energy} intensity~\REpparen{} of the world economy.
+\REp{} is the amount of primary energy\index{primary energy} required to create one unit (dollar) of
 world GDP.
 Of course, many other resources are also required to create a unit of GDP,
 but we use energy as the prime example of an important resource in the economy.
-The primary energy intensity of the economy is formed
-by dividing primary energy consumption ($\mft{E}_\mft{p}$)
+The primary energy intensity\index{primary energy intensity} of the economy is formed
+by dividing primary energy\index{primary energy} consumption ($\mft{E}_\mft{p}$)
 by world GDP,
 that is, dividing the regions of Figure~\ref{fig:PrimaryEnergyGraph}
 by the line in Figure~\ref{fig:GDPGraph-Nordhaus}.
@@ -980,7 +985,7 @@ The result is Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 % @
 
 
-<<EnergyIntensityGraph-Nordhaus, fig.scap="Primary energy intensity of economic activity~\\REpparen{} vs.\\ time by energy type", fig.cap="Primary energy intensity of economic activity~\\REpparen{} vs.\\ time by energy type. \\REp{} is the prime example for \\mft{R} in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<EnergyIntensityGraph-Nordhaus, fig.scap="Primary energy intensity of economic activity~\\REpparen{} vs.\\ time by energy type", fig.cap="Primary energy intensity\\index{primary energy intensity} of economic activity~\\REpparen{} vs.\\ time by energy type. \\REp{} is the prime example for \\mft{R} in the IPARX identity, Equation~\\ref{eq:IPARX}. The line represents the ratio of the lines in Figures~\\ref{fig:PrimaryEnergyGraph} and~\\ref{fig:GDPGraph-Nordhaus}.">>=
 # Create data for the energy intensity of the economy.
 energy_intensity <- dplyr::inner_join(
   # Get the primary energy data
@@ -1007,21 +1012,21 @@ energy_intensity %>%
 
  
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that
-the primary energy intensity of the world economy~\REpparen{} has fallen from
+the primary energy intensity\index{primary energy intensity} of the world economy~\REpparen{} has fallen from
 15 to 4~MJ/2017 international dollar across the last two centuries.
 The decline is caused by the fact that the world economy's GDP
 (Figure~\ref{fig:GDPGraph-Nordhaus})
-has been growing at a faster rate (in \%/year terms) than primary energy consumption
+has been growing at a faster rate (in \%/year terms) than primary energy consumption\index{primary energy consumption}
 (Figure~\ref{fig:PrimaryEnergyGraph}).
 The decline indicates that each additional dollar of GDP
-is created with incrementally less primary energy consumption.
+is created with incrementally less primary energy consumption\index{primary energy consumption}.
 
 While the decrease in \REp{}
 (the prime example for \mft{R} in Equation~\ref{eq:IPARX})
 appears to be good news for sustainability
 (declining \mft{R} puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}), 
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that 
-the most important cause of decreasing primary energy consumption per unit GDP
+the most important cause of decreasing primary energy consumption\index{primary energy consumption} per unit GDP
 is declining consumption of biomass.
 Ironically, the decreases in \REp{} are coming from reduction in per-GDP consumption 
 of a type of energy that is possibly sustainable, biomass!

@@ -88,8 +88,8 @@ energy consumption and carbon emissions.
 Dwellings are important for sustainability, 
 in part because they are sites of energy consumption.
 For example, Figure~\ref{fig:LLNL_energy_sankey} shows that 
-11.9~quads of final energy were consumed in U.S.\ residences in 2018,
-representing 12\% of final energy consumption.
+11.9~quads of final energy\index{final energy} were consumed in U.S.\ residences in 2018,
+representing 12\% of final energy\index{final energy} consumption.
 Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
 from the U.S.\ residential sector in 2018 total 
 \Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Mt/year,
@@ -123,7 +123,7 @@ The next results are expected in 2022 for survey year 2020.
 \end{mcframe}
 
 
-<<TotalHouseholdEnergyConsumption, fig.scap="Household energy consumption vs.\\ time by energy type", fig.cap="Total U.S.\\ household final energy consumption vs.\\ time by energy type. Note: Fuel oil and Propane are aggregated into Petroleum. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:th}.">>=
+<<TotalHouseholdEnergyConsumption, fig.scap="Household energy consumption vs.\\ time by energy type", fig.cap="Total U.S.\\ household final energy\\index{final energy} consumption vs.\\ time by energy type. Note: Fuel oil and Propane are aggregated into Petroleum. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:th}.">>=
 total_household_energy_consumption <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "Table_2.2_Residential_Sector_Energy_Consumption.xlsx"),
                                                          sheet = "data to plot")
 
@@ -216,7 +216,7 @@ Lighting constitutes 4.9\% of total energy use in dwellings.
 A fourth factor, size and location, is also important.
 
 
-<<average_residential_energy, fig.scap="Proportions of household energy consumption by end use", fig.cap="Proportions of final energy consumption in U.S.\\ households by end use in 2015. ``Space heating'' includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. ``Space cooling'' includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. ``Refrigeration'' includes electricity for refrigerators and standalone freezers. ``Laundry'' includes electricity, natural gas, and propane for clothes washers and dryers. ``Cooking'' includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers\\index{dishwasher}. ``Entertainment'' includes electricity and natural gas for TVs, pool pumps, and hot tubs. ``Other'' includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
+<<average_residential_energy, fig.scap="Proportions of household energy consumption by end use", fig.cap="Proportions of final energy\\index{final energy} consumption in U.S.\\ households by end use in 2015. ``Space heating'' includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. ``Space cooling'' includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. ``Refrigeration'' includes electricity for refrigerators and standalone freezers. ``Laundry'' includes electricity, natural gas, and propane for clothes washers and dryers. ``Cooking'' includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers\\index{dishwasher}. ``Entertainment'' includes electricity and natural gas for TVs, pool pumps, and hot tubs. ``Other'' includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_category <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "End_use_by_demand_category.xlsx"),
                                                sheet = "data to plot") %>% 
   dplyr::select("Category", "Percentage") %>% 
@@ -490,7 +490,7 @@ Hygiene is a significant
 cause of energy consumption in the U.S. 
 Figure~\ref{fig:average_residential_energy} shows that hygiene
 (Water heating and Laundry) demanded 21.9\%
-of U.S.\ final energy consumption in 2015.
+of U.S.\ final energy\index{final energy} consumption in 2015.
 
 
 %..............................
@@ -509,7 +509,7 @@ several hours beyond dusk.
 Artificial interior lighting is a significant 
 cause of electricity consumption in most parts of the world. 
 Figure~\ref{fig:average_residential_energy} shows that lighting accounted for 4.9\%
-of U.S.\ final energy consumption in 2015.
+of U.S.\ final energy\index{final energy} consumption in 2015.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

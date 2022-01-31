@@ -178,17 +178,17 @@ print(xtable::xtable(US_CO2_by_sector, digits = c(0, 0, 0, 1),
 
 The yearly rate of world CO$_2$ emitted since 1800 
 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
-Annual primary energy consumption is shown in Figure~\ref{fig:PrimaryEnergyGraph}.
+Annual primary energy consumption\index{primary energy consumption} is shown in Figure~\ref{fig:PrimaryEnergyGraph}.
 The ratio of the line in Figure~\ref{fig:CarbonEmissionsGraph} and
 the top of Figure~\ref{fig:PrimaryEnergyGraph} 
-is the carbon intensity of primary energy~\XCOtwoparen{},
+is the \textbf{carbon intensity of primary energy}\index{carbon intensity of primary energy}~\XCOtwoparen{},
 as shown in Figure~\ref{fig:ImpactIntensityGraph}.
 The line in Figure~\ref{fig:ImpactIntensityGraph}
 demonstrates the long transition
 from traditional biofuels to fossil fuels
 evident in Figure~\ref{fig:PrimaryEnergyGraph}.
 
-<<ImpactIntensityGraph, fig.scap="Carbon intensity of primary energy~\\XCOtwoparen{} vs.\\ time", fig.cap="Carbon intensity of primary energy~\\XCOtwoparen{}. \\emph{Source}: own calculations. The line represents the ratio of the line in Figure~\\ref{fig:CarbonEmissionsGraph} and the top of Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
+<<ImpactIntensityGraph, fig.scap="Carbon intensity of primary energy~\\XCOtwoparen{} vs.\\ time", fig.cap="Carbon intensity of primary energy\\index{carbon intensity of primary energy}~\\XCOtwoparen{}. \\emph{Source}: own calculations. The line represents the ratio of the line in Figure~\\ref{fig:CarbonEmissionsGraph} and the top of Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
 carbon_intensity <- dplyr::inner_join(
   CO2_emissions,
   primary_energy %>%
@@ -246,22 +246,25 @@ population~\Pparen{},
 affluence~\Aparen{},
 energy intensity of economic activity (\REp{}, the prime example for \mft{R}),
 or
-carbon intensity of primary energy (\;\!\XCOtwo{}, the prime example for \mft{X}\:)
+carbon intensity of primary energy\index{carbon intensity of primary energy}
+(\;\!\XCOtwo{}, the prime example for \mft{X}\:)
 goes to zero,
 CO$_2$ emissions will be eliminated.
 Few people want to reduce population~\Pparen{} or affluence~\Aparen{}.
-The primary energy intensity of the economy~\REpparen{} is declining
+The primary energy intensity\index{primary energy intensity}
+of the economy~\REpparen{} is declining
 (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}),
 but not as fast as population (\mft{P}, Figure~\ref{fig:PopulationGraph}) and
 affluence (\mft{A}, Figure~\ref{fig:AffluenceGraph-Nordhaus})
 are growing. 
 By the process of elimination, 
-reducing the carbon intensity of primary energy~\XCOtwoparen{} is often considered to be the 
+reducing the carbon intensity of primary energy\index{carbon intensity of primary energy}~\XCOtwoparen{} 
+is often considered to be the 
 only politically and socially viable way to move in a sustainable direction
 with respect to the prime example of energy and CO$_2$ emissions.
 
 Figure~\ref{fig:ImpactIntensityGraph} shows that 
-the carbon intensity of primary energy~\XCOtwoparen{}
+the carbon intensity of primary energy\index{carbon intensity of primary energy}~\XCOtwoparen{}
 rose dramatically from 1800--1960, 
 as use of fossil fuels came to dominate the world energy story;
 see Figure~\ref{fig:PrimaryEnergyGraph}.
@@ -272,7 +275,7 @@ and far too high for environmental sustainability\index{environmental sustainabi
 (both weak\index{weak sustainability} and strong\index{strong sustainability}).
 It appears that eliminating CO$_2$ emissions by significantly reducing
 \XCOtwo{} will require unprecedented changes
-to the world's primary energy supply.
+to the world's primary energy\index{primary energy} supply.
 But how?
 
 
@@ -316,7 +319,7 @@ First, it has not been cost-effective.
 Petra Nova\index{Petra Nova}, the only CCS plant in the U.S., disposed of the CO$_2$ it captured
 by injecting it into oil fields for enhanced oil recovery.
 In 2020, low oil prices made this disposal infeasible, forcing Petra Nova to shut down.
-This story illustrates the economic interrelation(s) among primary energy sources.
+This story illustrates the economic interrelation(s) among primary energy\index{primary energy} sources.
 Second, a fossil-fuel power plant fitted with CCS technology 
 must ensure that CO$_2$ emissions remain buried. 
 If the CO$_2$ escapes to the atmosphere, the effort is ineffective.
@@ -493,7 +496,7 @@ works well for home heating and cooking
 via wood stoves, 
 provided that particulate matter emissinos are mitigated appropriately.
 However, biomass by itself is not electricity or liquid fuel.
-A conversion to biomass for the world's primary energy supply would also require 
+A conversion to biomass for the world's primary energy\index{primary energy} supply would also require 
 worldwide replacement of today's fossil fuel electricity generation infrastructure
 with a fleet of biomass power plants.
 And conversion to biomass would require build-out 
@@ -782,7 +785,8 @@ is the only term in the IPARX identity
 putting downward pressure on the CO$_2$ emissions growth rate (\rateICOtwo{}).
 All other terms on the right side of Equation~\ref{eq:IPARX_rate_with_numbers}
 are greater than zero and are driving CO$_2$ emissions upward.
-Interestingly, the rate of change of the impact intensity of primary energy consumption (\rateXCOtwo{})
+Interestingly, the rate of change of the impact intensity 
+of primary energy consumption\index{primary energy consumption} (\rateXCOtwo{})
 is smaller (\Sexpr{rate_to_string(r_X_20)})
 in the past two decades than over the past two centuries
 (\Sexpr{rate_to_string(r_X_220)}), because 
@@ -886,10 +890,10 @@ The relationship between energy consumption and GDP
 exposes another interaction among the IPARX terms
 for the primary example of energy consumption and CO$_2$ emissions.
 Historically, as GDP (equal to $\mft{P} \times \mft{A}$ in Equation~\ref{eq:IPARX}) increases, 
-primary energy consumption also rises,
+primary energy consumption\index{primary energy consumption} also rises,
 as shown in Figure~\ref{fig:E_vs_GDP_graph}.
 
-<<E_vs_GDP_graph, fig.scap="World primary energy consumption vs.\\ world GDP", fig.cap = "World primary energy consumption vs.\\ world GDP.">>=
+<<E_vs_GDP_graph, fig.scap="World primary energy consumption vs.\\ world GDP", fig.cap = "World primary energy consumption\\index{primary energy consumption} vs.\\ world GDP.">>=
 egdp_df <- primary_energy %>% 
   dplyr::group_by(Year) %>%
   dplyr::summarise(energy_EJ = sum(energy_EJ)) %>%
@@ -914,11 +918,11 @@ However, the concave downward nature of Figure~\ref{fig:E_vs_GDP_graph} indicate
 each additional dollar of GDP requires incrementally less energy consumption
 than the dollar before.
 The line in Figure~\ref{fig:E_vs_GDP_graph} is concave downward because
-the primary energy intensity of the economy ($\mft{R}_{\!\mft{Ep}}$)
+the primary energy intensity\index{primary energy intensity} of the economy ($\mft{R}_{\!\mft{Ep}}$)
 has been decreasing over time,
 as shown in Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}.
 Thus, as GPD ($\mft{P} \times \mft{A}$\:\!) rises, 
-the primary energy intensity of economic activity
+the primary energy intensity\index{primary energy intensity} of economic activity
 (\:\!\REp{} in the IPARX equation for the prime example) 
 is expected to fall, 
 as it has been for 220 years.
@@ -1227,7 +1231,8 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         What would happen to the electricity grid in those countries 
         if the fraction of intermittent generation went to 100\%?
         
-  \item Research and rank the EROI\index{energy return on investment (EROI)} of many primary energy sources, 
+  \item Research and rank the EROI\index{energy return on investment (EROI)} 
+        of many primary energy\index{primary energy} sources, 
         including fossil fuels and renewables such as biofuels.
         What does your ranking imply for transitions to a low-carbon energy regime?
         Critique how your sources drew the boundaries

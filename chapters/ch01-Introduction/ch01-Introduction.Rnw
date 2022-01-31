@@ -512,7 +512,8 @@ that is less than one indicates the energy production activity is an energy sink
 rather than an energy source.
 For instance, modern agriculture has an EROI\index{energy return on investment (EROI)} of around 0.1 to 0.15;
 it takes 7--10 calories of energy to deliver 1 calorie of food energy.
-On the other hand, an EROI\index{energy return on investment (EROI)} greater than one indicates a source of useful energy.
+On the other hand, an EROI\index{energy return on investment (EROI)} greater than one indicates 
+a source of useful energy\index{useful energy}.
 Table~\ref{tab:eroi} lists energy returns\index{energy return on investment (EROI)}
 for various sources of energy.
 Some authors have suggested a minimum EROI\index{energy return on investment (EROI)}
