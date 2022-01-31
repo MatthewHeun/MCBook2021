@@ -452,7 +452,7 @@ provide space heating,
 usually from an out-of-the-way location in the dwelling, such as the basement.
 Heating systems convert a fuel 
 (typically natural gas\index{natural gas} or heating oil\index{heating oil} for furnaces and boilers, and
-electricity for heat pumps)
+electricity for heat pumps\index{heat pump})
 into heat, 
 thereby emitting CO$_2$ into the atmosphere.
 The heat is delivered to the dwelling via water or air
@@ -669,7 +669,7 @@ Heat pumps move heat from the cold outdoors to the inside of a home.
 Heat pump efficiency is quantified by a
 \textbf{coefficient of performance (COP)}\index{coefficient of performance (COP)}, 
 the ratio of heat delivered to electric energy consumed.
-The COP\index{coefficient of performance (COP)} of a heat pump varies with outdoor temperature, 
+The COP\index{coefficient of performance (COP)} of a heat pump\index{heat pump} varies with outdoor temperature, 
 but typical values is 2--3.
 Heat pumps with higher COP\index{coefficient of performance (COP)}
 will be more efficient and cost less to operate, 
@@ -1200,10 +1200,10 @@ United States, 1999: \\
 
 \item Locate the heating system in your dwelling, and find its 
       AFUE\index{Annual Fuel Utilization Efficiency (AFUE)} rating (furnace)
-      or COP\index{coefficient of performance (COP)} (heat pump).
+      or COP\index{coefficient of performance (COP)} (heat pump\index{heat pump}).
       If you were to replace your existing furnace with a furnace with a 
       98\% AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
-      rating or heat pump with a COP\index{coefficient of performance (COP)} of 3.5,
+      rating or heat pump\index{heat pump} with a COP\index{coefficient of performance (COP)} of 3.5,
       how much energy would you save annually?
       What is the price of that saved energy?
       What is the annual cost savings from this energy efficiency\index{energy efficiency} intervention?
@@ -1212,7 +1212,7 @@ United States, 1999: \\
       heat pump\index{heat pump} lasts 20 years and 
       that you want to break even financially,
       what is the maximum price you should pay for 
-      the upgraded furnace or heat pump?
+      the upgraded furnace or heat pump\index{heat pump}?
       Does your answer change if you apply a discount rate 
       to the financial considerations of this project?
 
