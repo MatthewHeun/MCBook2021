@@ -514,7 +514,7 @@ ggplot2::ggplot() +
                  strip.text.x = ggplot2::element_blank())
                  # strip.text.x = ggplot2::element_text(margin = ggplot2::margin(b = 2.0)))
 @
-     \caption{Population pyramids at each stage.}
+     \caption{Population pyramids\index{population pyramid} at each stage.}
      \label{fig:dtt_pop_pyramid}
      \end{subfigure}
         \caption[Demographic transition theory]
@@ -554,7 +554,7 @@ As stated earlier, low birth rates are correlated to higher affluence~\Aparen{}.
 As countries move through the demographic transition\index{demographic transition},
 the age structure of the
 population changes; see Figure~\ref{fig:dtt_pop_pyramid}.
-A population pyramid\index{population pyramid}
+A \textbf{population pyramid}\index{population pyramid}
 shows the percentage of the population in each age cohort, of
 each sex.
 (Important note: a population pyramid is always relative to the size of
