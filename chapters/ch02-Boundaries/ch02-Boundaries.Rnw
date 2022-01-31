@@ -625,7 +625,7 @@ Figure \ref{fig:CO2Graph} shows average atmospheric CO$_2$ concentrations over t
 Figure~\ref{fig:CarbonEmissionsGraph} shows 
 the rate of world CO$_2$ emission since 1800~\ICOtwoparen{}.
 The clear trend is upward, with small drops corresponding to years of economic recession.
-Greenhouse gas emissions (primarily CO$_2$ released from burning fossil fuels) 
+\textbf{Greenhouse gas} emissions (primarily CO$_2$ released from burning fossil fuels) 
 are raising the atmospheric CO$_2$ concentration and 
 causing the average global temperature to increase. 
 The current average atmospheric CO$_2$ concentration is an example of humanity
@@ -687,7 +687,8 @@ ggplot2::ggplot() +
   MKHthemes::xy_theme()
 @
 
-CO$_2$ emissions are an especially important sustainability issue 
+Greenhouse gas emissions
+are an especially important sustainability issue 
 because of their widespread effects. 
 CO$_2$ emissions are also especially important for at least two other reasons. 
 First, CO$_2$ emissions may trigger a tipping point or tipping points in the 
