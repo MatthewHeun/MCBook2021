@@ -23,7 +23,8 @@
 \usepackage{caption}     % Necessary for the subcaption package?
 \usepackage{epigraph}    % For epigraphs below chapter titles.
 \usepackage{eurosym}     % For the EU currency symbol.
-\usepackage{gensymb}     % For the \degree command
+\usepackage{gensymb}     % For the \degree command.
+\usepackage{makeidx}     % Per Tondo's suggestion on 1 Feb 2022.
 \usepackage{microtype}   % For (more) beautiful typesetting.
 \usepackage{rotating}    % For rotating figures.
 \usepackage[normalem]{ulem} % For strikethrough text.
