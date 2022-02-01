@@ -339,7 +339,7 @@ Lastly, impact of resources~\Xparen{} is a list of the impacts of
 each type of resource. (That is, \mft{X} is a matrix quantity.)
 
 In broad strokes, sustainability can be seen in the \mft{I} term (environmental impacts) and
-in resource extraction (the numerator of \mft{R} and the denominator of \mft{X}\:).
+in resource extraction\index{resource extraction} (the numerator of \mft{R} and the denominator of \mft{X}\:).
 If we emit wastes at a rate greater than can be assimilated by the environment
 (\:\!\mft{I} too large), we are unsustainable.
 If we withdraw resources from the environment at a rate greater than their regeneration rate,
@@ -471,7 +471,7 @@ Although a wide variety of materials are essential for human existence
 (Section~\ref{sec:resources_strong_sustainability}),
 we say that energy is the master resource\index{master resource (energy)}, because
 obtaining and using any other resource
-(including extraction of materials from the environment)
+(including extraction\index{resource extraction} of materials from the environment)
 requires energy.
 Collecting firewood to heat houses requires energy.
 Extracting crude oil requires energy.
