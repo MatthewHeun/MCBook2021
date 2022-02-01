@@ -473,14 +473,14 @@ we say that energy is the master resource\index{master resource (energy)}, becau
 obtaining and using any other resource
 (including extraction\index{resource extraction} of materials from the environment)
 requires energy.
-Collecting firewood to heat houses requires energy.
+Collecting firewood\index{firewood} to heat houses requires energy.
 Extracting crude oil requires energy.
 Harvesting food requires energy.
 Making solar panels requires energy.
 
 Another reason we say energy is the master resource\index{master resource (energy)}
 is that energy can be used to convert one resource into another.
-Crude oil can be refined to gasoline.
+Crude oil\index{crude oil} can be refined to gasoline.
 Corn can be converted to ethanol.
 Salt water can be converted to fresh water.
 Petroleum or natural gas can be converted to pharmaceuticals or plastics.
@@ -511,7 +511,7 @@ not including feedstock.%
   in the denominator.
   For example, when calculating the EROI\index{energy return on investment (EROI)} for an oil rig,
   only the electricity and diesel to operate the rig is counted in the denominator.
-  The crude oil extracted by the rig is not counted in the denominator.
+  The crude oil\index{crude oil} extracted by the rig is not counted in the denominator.
 }
 
 \begin{equation}\label{eroi}
