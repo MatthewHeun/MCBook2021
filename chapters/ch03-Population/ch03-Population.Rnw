@@ -617,14 +617,14 @@ are being considered; there is no one ``right'' answer.
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In 2015, half of the world's people lived inside 
-the Valeriepieris circle\index{Valeriepieris circle}, 
+the \textbf{Valeriepieris circle}\index{Valeriepieris circle}, 
 a region with a radius of about 3,300~km 
 centered on Mong Khet, Myanmar~\cite{Quah2015}; 
 see Figure~\ref{fig:half_population}.
 This area of Southeast Asia has very high population density\index{population density}.
 \end{mcframe}
 
-<<half_population, fig.scap="The Valeriepieris circle", fig.cap="The Valeriepieris circle. As of 2015, half of the world's population lives in a circle with a radius of 3,300~km centered on Mong Khet, Myanmar~\\cite{Quah2015}.">>=
+<<half_population, fig.scap="The Valeriepieris circle", fig.cap="The Valeriepieris circle\\index{Valeriepieris circle}. As of 2015, half of the world's population lives in a circle with a radius of 3,300~km centered on Mong Khet, Myanmar~\\cite{Quah2015}.">>=
 
 # Function to determine a projected circle
 geo_circle <- function(lon_deg, lat_deg, radius_meters) {
