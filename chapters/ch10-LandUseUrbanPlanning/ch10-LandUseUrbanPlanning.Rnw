@@ -94,8 +94,8 @@ us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanni
   dplyr::mutate(
     use_type = factor(use_type, levels = c("Urban",
                                            "Defense & industrial",
-                                           "Cropland",
                                            "Farms & rural transport",
+                                           "Cropland",
                                            "Other land",
                                            "Rural parks & wildlife",
                                            "Grassland",
