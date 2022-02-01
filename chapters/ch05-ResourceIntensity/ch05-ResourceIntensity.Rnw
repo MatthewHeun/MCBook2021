@@ -32,7 +32,7 @@ which, when divided by GDP, becomes the resource intensity of the economy~\Rpare
 
 Whether we are aware of it or not, 
 all plant, animal, and human life on Earth depends on natural resources, 
-provisioned by the ecosystem; 
+provisioned by the ecosystem\index{ecosystem}; 
 see Section~\ref{sec:ecosystem_services}.
 Where would you be without air and water to breathe and drink?
 Without minerals to make cars?
@@ -57,7 +57,7 @@ When discussing resource use, knowledge of several key terms is helpful.
 
 We use the term ``resource'' to mean a primary input to the economy. 
 As such, a resource is something obtained from the natural world.
-It is something provisioned by the ecosystem, to use the language 
+It is something provisioned by the ecosystem\index{ecosystem}, to use the language 
 of Section~\ref{sec:ecosystem_services}.
 Timber is a resource. Iron ore is a resource. Water is a resource.
 Each resource can be transformed many times within the economy.
@@ -490,12 +490,12 @@ A similar approach can be used for emission of wastes, like CO$_2$.
 
   \item Establish the amount of waste in the environment, the maximum allowable
         amount of waste in the environment as of today, and the 
-        rate at which the ecosystem renders the waste inert.
+        rate at which the ecosystem\index{ecosystem} renders the waste inert.
   
   \item Establish the ``budget'' for waste emission by subtracting the 
         amount of waste in the environment from the maximum allowable waste in the environment. 
         
-  \item Divide the budget by 50~years and subtract the rate at which the ecosystem renders the waste inert.
+  \item Divide the budget by 50~years and subtract the rate at which the ecosystem\index{ecosystem} renders the waste inert.
         The result is the maximum allowable waste emission rate
         for weak sustainability\index{weak sustainability}~($\mft{r}_{\mft{ws}}$).
 
@@ -1287,7 +1287,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         because the same goods you previously purchased now cost more?
         Or would you view the tax as a enriching your natural capital by
         incentivizing a shift to carbon-free forms of energy (thereby providing
-        you with all the benefits of a stronger ecosystem; see \ref{question:shell_lawsuit})?
+        you with all the benefits of a stronger ecosystem\index{ecosystem}; see \ref{question:shell_lawsuit})?
         What beliefs or values inform your answer?
         How might such an evaluation be extended from the personal to a national
         or global scale?

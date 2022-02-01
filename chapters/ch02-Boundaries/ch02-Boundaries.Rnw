@@ -40,19 +40,19 @@ Exceeding Earth's carrying capacity degrades its ability to support life.
 \label{sec:ecosystem_services}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The Earth's ecosystems support life on Earth. Collectively, these supports are 
+The Earth's ecosystems\index{ecosystem} support life on Earth. Collectively, these supports are 
 called ecosystem services\index{ecosystem services}.
 The first group of services are provisioning services,\index{services!provisioning}
 which are material 
 and energy resources.
 For example, humans plant crops (food, textile, and timber) that ``grow,''
 they're not manufactured. 
-The ecosystem ``provides'' the crops. 
-Likewise, the ecosystem provides water, petroleum, and other mineral resources\index{mineral resources}.
+The ecosystem\index{ecosystem} ``provides'' the crops. 
+Likewise, the ecosystem\index{ecosystem} provides water, petroleum, and other mineral resources\index{mineral resources}.
 Simply having oceans and an atmosphere provides a place for pollution to go.
 
 The second set of services is regulating and supporting services,\index{services!regulating and supporting} 
-which sustain and stabilize the ecosystem.
+which sustain and stabilize the ecosystem\index{ecosystem}.
 These services include processes for breaking down and 
 recycling dead organisms; 
 the carbon, nitrogen, oxygen, and water cycles; 
@@ -67,8 +67,7 @@ Rivers and lakes enable boating and (recreational) fishing opportunities.
 
 Many international groups have examined the state of Earth's ecosystem services\index{ecosystem services}. 
 The Millennium Ecosystem Assessment (MA)\index{Millennium Ecosystem Assessment}
-is a UN-affiliated group that studied ecosystem
-services between 2001 and 2005. 
+is a UN-affiliated group that studied ecosystem services\index{ecosystem services} between 2001 and 2005. 
 1300 authors from 95 countries participated. 
 The MA found that (even back then) 15 out of the 24 ecosystem services\index{ecosystem services} 
 they examined were being degraded or used unsustainably~\cite{MA2005}.
@@ -76,7 +75,7 @@ they examined were being degraded or used unsustainably~\cite{MA2005}.
 Ecosystem services\index{ecosystem services} can be considered as natural capital. 
 ``Capital'' refers to an improvement or building that is economically productive 
 or valuable; see Chapter~\ref{chap:affluence}.
-The ecosystem produces value for human society by creating many things we use 
+The ecosystem\index{ecosystem} produces value for human society by creating many things we use 
 and disposing of many of our wastes.
 Just as concepts of value and ownership motivate individuals and organizations
 to care for and manage their capital stocks, there have been many attempts to classify
@@ -120,8 +119,8 @@ we come to value what we count.
 \end{mcframe}
 
 Various analogies have been used to describe the benefits that ecosystem services\index{ecosystem services} provide, 
-particularly in terms of the loss of a piece of the ecosystem. 
-For example, the ecosystem is like an airplane.
+particularly in terms of the loss of a piece of the ecosystem\index{ecosystem}. 
+For example, the ecosystem\index{ecosystem} is like an airplane.
 When one rivet is lost, the result is not immediately catastrophic but accumulated 
 losses can result in catastrophic failure. 
 Alternatively, species are like individual stocks in a portfolio, where a wide diversity 
@@ -184,11 +183,11 @@ There are two types of concerns with respect to ecosystem services\index{ecosyst
 The first is with respect to provisioning services. Humans may ``use up'' a finite
 resource such as helium, petroleum, or neodymium. 
 Or, perhaps, the demand for food
-will exceed the rate at which the ecosystem can supply food. 
+will exceed the rate at which the ecosystem\index{ecosystem} can supply food. 
 In both of these cases,
-the ecosystem does not supply needed resources. 
+the ecosystem\index{ecosystem} does not supply needed resources. 
 The deficit can be addressed in 
-two ways: either by reducing the demand or by modifying the ecosystem to increase 
+two ways: either by reducing the demand or by modifying the ecosystem\index{ecosystem} to increase 
 supply. 
 For example, reducing the human population reduces the demand for food or
 converting land to cropland increases the supply. 
@@ -197,28 +196,28 @@ On the other hand, technologies
 such as directional drilling, hydraulic fracking, and enhanced oil recovery increase
 the (functional) supply of fossil fuels.
 
-The second type of concern relates to human modifications of the ecosystem.
+The second type of concern relates to human modifications of the ecosystem\index{ecosystem}.
 Human actions can cause a change or breakdown in the Earth's regulating and 
 supporting ecosystem services\index{ecosystem services},
 which will lead to a tipping point\index{tipping point}, that is, 
-a fundamental change in the way the ecosystem works. 
+a fundamental change in the way the ecosystem\index{ecosystem} works. 
 An example that is of particular concern at present is global climate change 
 (principally) caused by human CO$_2$ emissions. 
 Species extinctions, which is like losing rivets in an airplane, is another cause of concern.
 Because of tipping points\index{tipping point} and the nonlinear and interrelated nature of the
-ecosystem's dynamics, human actions can cause a series of cascading failures
+ecosystem's dynamics\index{ecosystem dynamics}, human actions can cause a series of cascading failures
 that will ultimately degrade the Earth's ability to support life. 
 Exponential growth\index{exponential growth}, whether in human population or the economy, is analogous
 to heeling over a boat.
-Growth causes greater and greater demands on the ecosystem. 
-Eventually the boat (that is, the ecosystem) heels over so far that it capsizes.
+Growth causes greater and greater demands on the ecosystem\index{ecosystem}. 
+Eventually the boat (that is, the ecosystem\index{ecosystem}) heels over so far that it capsizes.
 
 % "Climate genocide"
 % https://nymag.com/intelligencer/amp/2018/10/un-says-climate-genocide-coming-but-its-worse-than-that.html
 % is there a question here?
 
 % wikipedia article on "tipping points in the climate system."
-Drastic or catastrophic changes to ecosystems are not new or solely modern problems.
+Drastic or catastrophic changes to ecosystems\index{ecosystem} are not new or solely modern problems.
 Rapa Nui (Easter Island), the Levant, and the Sahara Desert have all undergone 
 dramatic ecological shifts, although the degree to which this is attributable to 
 human actions is not agreed upon or well understood~\cite{Malhi2018}. 
@@ -495,10 +494,10 @@ erodable_limit_data %>%
      \end{subfigure}
         \caption[Biophysical boundaries and human development]
                 {Various relationships between biophysical boundaries and human development.
-                 The boundary or carrying capacity of the ecosystem is shown as a dash-dot red line.
+                 The boundary or carrying capacity of the ecosystem\index{ecosystem} is shown as a dash-dot red line.
                  A variable related to human development, such as population or food production is
                  shown in blue.
-                 There are five possible patterns for human development relative to the ecosystem
+                 There are five possible patterns for human development relative to the ecosystem\index{ecosystem}
                  boundaries.
                  First, human activities might be of a scale so small that the boundaries are
                  ``far away'' and exponential growth\index{exponential growth}
@@ -529,11 +528,11 @@ That is, it recovers.
 Renewable resources like grazing land, fisheries, timber, and aquifers\index{aquifer} can
 behave in this way. 
 Lastly, in Figure~\ref{fig:GA4}, exceeding the boundary causes a long-term reduction in the 
-capacity of the ecosystem to provide ecosystem services\index{ecosystem services}. 
+capacity of the ecosystem\index{ecosystem} to provide ecosystem services\index{ecosystem services}. 
 As above, renewable resources like grazing land, fisheries, timber, and aquifers\index{aquifer}
 can have this behavior, if their capacity is exceeded too much or for too long.
 As another example, complex systems, like temperature regulation of the planet, can exhibit
-tipping points\index{tipping point} that can radically change limits to an ecosystem service when the 
+tipping points\index{tipping point} that can radically change limits to an ecosystem service\index{ecosystem services} when the 
 limit is exceeded.
 Carbon dioxide in the atmosphere is thought/feared to be an example
 of this sort of behavior; when CO$_2$ increases too much, the Earth will get 
@@ -694,7 +693,7 @@ are an especially important sustainability issue
 because of their widespread effects. 
 CO$_2$ emissions are also especially important for at least two other reasons. 
 First, CO$_2$ emissions may trigger a tipping point\index{tipping point} or tipping points in the 
-Earth's ecosystems, related to deforestation, wild fires, ocean acidification, 
+Earth's ecosystems\index{ecosystem}, related to deforestation, wild fires, ocean acidification, 
 methane release from permafrost, and species loss. 
 Second, most greenhouse gas emissions are within human control, 
 especially regarding fossil fuels and agriculture. 
@@ -882,9 +881,9 @@ spm_10_data %>%
 \section{Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This chapter discussed the many services provided by the Earth's ecosystem,
+This chapter discussed the many services provided by the Earth's ecosystem\index{ecosystem},
 such as materials and energy, waste removal, and recreational opportunities.
-Human activities can degrade or destroy the ability of the ecosystem to supply 
+Human activities can degrade or destroy the ability of the ecosystem\index{ecosystem} to supply 
 those services.
 \mft{I}, the left-hand side of the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX})
 collects the various ways that ecosystem services\index{ecosystem services} can be affected.
@@ -956,7 +955,7 @@ New York: Bloomsbury,
 \item One extreme form of habitat restoration is known as 
       ``Pleistoscene rewilding''~\cite{Donlan2005}. %%https://www.nature.com/articles/436913a
       Extinct species are either recreated through gene editing or are replaced
-      by a closest living analog in an attempt to recreate an ecosystem that is 
+      by a closest living analog in an attempt to recreate an ecosystem\index{ecosystem} that is 
       as similar as possible to that which existed 1.8 million to 11,700 years ago. 
       Several controversies are associated with this proposal. Is setting aside
       land for this activity (or any conservation) incompatible with human economic
@@ -978,10 +977,10 @@ New York: Bloomsbury,
 %       conservative estimates of land degradation (10-20\% degraded), the area 
 %       and the number of people involved is still large. 
 
-\item Biological invasions are a global phenomenon, affecting ecosystems in most 
+\item Biological invasions are a global phenomenon, affecting ecosystems\index{ecosystem} in most 
       biomes. Human-driven movement of organisms, deliberate or accidental, has 
       caused a massive alteration of species ranges, overwhelming the changes 
-      that occurred after the retreat of the last Ice Age. In some ecosystems, 
+      that occurred after the retreat of the last Ice Age. In some ecosystems\index{ecosystem}, 
       invasions by alien organisms and diseases have resulted in extinction of 
       native species or a huge loss in ecosystem services\index{ecosystem services}.
       In the United States, 
@@ -1049,7 +1048,7 @@ New York: Bloomsbury,
       regulation through litigation.)
       \label{question:shell_lawsuit}
       
-\item What is a cultural ecosystem service that you value that is threatened by 
+\item What is a cultural ecosystem service\index{ecosystem services} that you value that is threatened by 
       global climate change? 
       What are you doing to replace or substitute for that service?
       What could be done to mitigate the impact(s)?
@@ -1062,7 +1061,7 @@ New York: Bloomsbury,
       How does the fact that humans have always been environmentally destructive 
       apply to the modern context?
 
-\item What role did ancient hominids play in the ecosystem?
+\item What role did ancient hominids play in the ecosystem\index{ecosystem}?
       What ecosystem services\index{ecosystem services} did they provide?
       Who is doing that job now?
       
