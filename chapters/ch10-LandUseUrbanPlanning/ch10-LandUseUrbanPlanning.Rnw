@@ -61,7 +61,7 @@ The size of the economy is \mft{P}$\times$\mft{A}.
 The economy can grow by increasing either \mft{P} or \mft{A}.
 The next two sections will examine these sources of demand in greater detail.
 
-<<USlanduse, fig.scap="Land use in the U.S.\\ vs.\\ time by land type", fig.cap="Land use in the U.S.\\ vs.\\ time by land type. The biggest changes over time are decreasing grazed forest area and increasing rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. ``Forest'' aggregates grazed and not-grazed land. ``Farms \\& rural transport'' aggregates farmsteads, miscellaneous farmland, roads, and rural transportation facilities. ``Cropland'' aggregates tilled crops, pasture, and idle fields. \\emph{Source}: \\citet{USDA:2021uq}.">>=
+<<USlanduse, fig.scap="Land use in the U.S.\\ vs.\\ time by land type", fig.cap="Land use in the U.S.\\ vs.\\ time by land type. The biggest changes over time are decreasing grazed forest area and increasing rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. ``Forest'' aggregates grazed and not-grazed forest land. ``Farms \\& rural transport'' aggregates farmsteads, miscellaneous farmland, roads, and rural transportation facilities. ``Cropland'' aggregates tilled crops, pasture, and idle fields. \\emph{Source}: \\citet{USDA:2021uq}.">>=
 us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Land_Uses.xlsx"),
                                   sheet = "data to plot") %>% 
   dplyr::rename(
@@ -134,7 +134,7 @@ forestry (28\%), and cropland (17\%) being the three largest uses.%
 %
 The four largest crops in the U.S. are wheat (32\% of land used for crop production),
 corn\index{corn} (30\%), soybeans\index{soybeans} (20\%), and cotton\index{cotton} (10\%)~\cite{FAOSTAT:2021ve}. 
-All other crops combined account for only 8\% of land use.
+All other crops combined account for only 8\% of cropland use.
 In contrast, the urban areas where we live and work
 are a relatively small 70 million acres (3\%).
 The U.S.\ is sparsely populated compared to many other parts of the world; see
