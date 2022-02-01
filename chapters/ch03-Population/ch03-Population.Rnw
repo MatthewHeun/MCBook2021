@@ -866,13 +866,13 @@ published August 17, 2020. \\
 \begin{questions}
 
 \item \label{question:third_rail} Some electric train systems supply power to the train by energizing
-      a third rail (the first two being the tracks) with high voltage DC
+      a third rail\index{third rail} (the first two being the tracks) with high voltage DC
       current, typically 600--1500~V.
       Because of the high voltages and because the rails are very near to the ground,
-      touching the third rail carries a high risk of lethality.
-      In politics, a ``third rail'' is an issue, so contentious, that touching it
+      touching the third rail\index{third rail} carries a high risk of lethality.
+      In politics, a \textbf{third rail}\index{third rail} is an issue, so contentious, that touching it
       will be political suicide.
-      Population control has been called the third rail of politics.
+      Population control has been called the third rail\index{third rail} of politics.
       \begin{enumerate}
       \item Reflect on why this is so.
       \item What groups or individuals would be especially sensitive to attempts to control population?
