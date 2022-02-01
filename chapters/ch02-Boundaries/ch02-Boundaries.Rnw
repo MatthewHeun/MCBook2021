@@ -14,7 +14,7 @@
 The left-hand side of Equation \ref{eq:IPARX} (repeated below for convenience) 
 is environmental impact~\Iparen{}.
 While there are natural processes that have (some) negative impacts on the environment,
-such as volcanic eruptions and wild fires, this book is primarily concerned with
+such as volcanic eruptions and wildfires\index{wildfire}, this book is primarily concerned with
 human impacts on the environment.
 Greenhouse gas emissions, such as CO$_2$, are our prime example.
 Other examples of human impact include deforestation\index{deforestation}, desertification\index{desertification}, 
@@ -286,35 +286,6 @@ whether they've already been exceeded---note that exceeding these indicators
 means that humanity is not living sustainably.
 The upper limits for these indicators are intended to define a 
 ``safe operating space for humanity.''
-% \begin{enumerate} %present as a table instead?!
-% \item Climate change
-% \item Biodiversity loss
-% \item Biogeochemical (nitrogen and phosphorus)
-% \item Ocean acidification
-% \item Land use
-% \item Fresh water
-% \item Ozone depletion
-% \item Atmospheric aerosols
-% \item Chemical pollution
-% \end{enumerate}
-% Newer (and improved?) lists have been proposed.
-% 
-% 
-% % how do we know what the levels are?
-% % precision and safety factors in the levels
-% 
-% % %Logistic curve(s)
-% \begin{tabular}{@{}llcccc@{}}\toprule
-% Earth system & Variable & Preindustrial level & Current value & Boundary value & Exceeded \\ \midrule
-% Climate change & Amospheric CO$_2$ concentration [ppm] & 280 & 412 & 350 & yes \\ \midrule
-% Biodiversity loss & Extinction rate [\%] & 0.1 to 1 & $>$100 & 10 & yes \\ \midrule
-% Biogeochemical & anthropogenic nitrogen removed from the atmosphere & 0 & 121 & 35 & yes\\ \midrule
-% Biogeochemical & anthropogenic phosphorous added to the ocean & -1 & 9 & 11 & no \\ \midrule
-% Ocean acidification & Calcium carbonate in ocean surface seawater & 3.44 & 2.9 & 2.75 & no \\ \midrule
-% Land use & Land surface converted to crop land [\%] & low & 11.7 & 15 & no \\ \midrule
-% Freshwater & Global consumption of water [km$^4$/yr] & 415 & 2600 & 4000 & no \\ \midrule
-% Ozone depletion & Statospheric ozone completion [Dobson] & 290 & 283 & 276 & no \\
-% \bottomrule \end{tabular}
 
 \begin{table}\centering
 \caption[Planetary boundaries]
@@ -657,8 +628,9 @@ the impacts of climate on the environment are many.
 Climate change\index{climate change} is the term used to describe the results of the greenhouse effect.
 Climate change\index{climate change} is interacting with many other planetary systems and thus contributes
 to, for example, the extinction rate. 
-Climate change\index{climate change} is causing ocean acidification, sea level rise, and increased 
-frequency of extreme natural disasters, such as wild fires and destructive tropical storms. 
+Climate change\index{climate change} is causing ocean acidification\index{ocean acidification},
+sea level rise, and increased 
+frequency of extreme natural disasters, such as wildfires\index{wildfire} and destructive tropical storms. 
 
 <<extract_fit_coeffs>>=
 fit_sentence <- function(.df) {
@@ -712,8 +684,9 @@ are an especially important sustainability issue
 because of their widespread effects. 
 CO$_2$ emissions are also especially important for at least two other reasons. 
 First, CO$_2$ emissions may trigger a tipping point\index{tipping point} or tipping points in the 
-Earth's ecosystems\index{ecosystem}, related to deforestation\index{deforestation}, wild fires, ocean acidification, 
-methane release from permafrost, and species loss. 
+Earth's ecosystems\index{ecosystem}, related to deforestation\index{deforestation}, 
+wildfires\index{wildfire}, ocean acidification\index{ocean acidification}, 
+methane\index{methane} release from permafrost, and species loss. 
 Second, most greenhouse gas emissions are within human control, 
 especially regarding fossil fuels and agriculture. 
 
@@ -727,11 +700,11 @@ Eventually, the Earth will reach a new, higher equilibrium temperature.
 The amount of radiation received from the sun is relatively constant; there are a variety of 
 satellite-based and Earth-bound measurement systems to confirm this. 
 Because the sun is very hot, the radiation it emits is high energy (short wavelength).
-Greenhouse gases, such as water vapor, which is an extremely potent greenhouse gas,
+Greenhouse gases, such as water vapor\index{water vapor}, which is an extremely potent greenhouse gas,
 and CO$_2$, do not absorb the short wavelengths of the Sun's radiation. 
 Radiation from the Earth is low energy (long wavelength) because the Earth's
 surface temperature is much lower than the Sun's.
-CO$_2$ and water vapor absorb energy at these longer wavelengths.
+CO$_2$ and water vapor\index{water vapor} absorb energy at these longer wavelengths.
 The lower atmosphere is thus opaque to thermal radiation from the Earth's surface.
 Much of the radiation leaving the Earth's surface is absorbed by greenhouse gases 
 and reradiated to upper levels of the atmosphere. 
@@ -740,7 +713,7 @@ heat can radiate energy directly into space.
 When CO$_2$ is added to the atmosphere\index{atmospheric CO$_2$ concentration}, it traps radiation leaving the Earth
 at higher and higher levels of the atmosphere.
 The relatively small amounts of CO$_2$ in the atmosphere (measured in parts per million)
-enable enough warming that much-more-potent water vapor is present in greater quanties
+enable enough warming that much-more-potent water vapor\index{water vapor} is present in greater quanties
 as well.
 However, since the atmosphere grows colder at higher elevations, the radiation into
 space is less effective than at lower elevations. 
@@ -755,7 +728,7 @@ It takes a much longer time for the rest of the Earth to equilibrate to having a
 warmer atmosphere. 
 Melting ice caps change the amount of incoming solar radiation that is initially absorbed
 the the Earth.
-Melting Arctic permafrost releases methane, another very potent greenhouse gas.
+Melting Arctic permafrost releases methane\index{methane}, another very potent greenhouse gas.
 All these positive feedback loops take decades to reach a new steady state.
 Thus, the greenhouse gases that are already in the atmosphere\index{atmospheric CO$_2$ concentration}
 will cause warming far into the future.
