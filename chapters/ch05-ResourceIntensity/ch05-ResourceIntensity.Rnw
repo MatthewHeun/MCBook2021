@@ -569,11 +569,11 @@ weak_sust_data %>%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Recycling and substitution}
+\section{Recycling and substitution}\index{recycling}\index{substitution}
 \label{sec:recycling}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Two ways to become more sustainable are recycling and substitution.
+Two ways to become more sustainable are recycling\index{recycling} and substitution\index{substitution}.
 Recycling\index{recycling} is a way to extend the usable life
 of natural resources and
 reduce rates of resource extraction.
@@ -613,11 +613,11 @@ even in a debate about the viability of recycling!
 
 \end{mcframe}
 
-Substitution in manufacturing or production is the process of replacing
+Substitution\index{substitution} in manufacturing or production is the process of replacing
 use of a valuable, scarce, or nonrenewable resource
 with a less valuable, less scarce, or renewable resource.%
 \footnote{
-  For a related discussion of substitution,
+  For a related discussion of substitution\index{substitution},
   see \ref{question:consumption_substitution}.
 }
 Replacing use of a scarce resource with use of an abundant resource
@@ -628,10 +628,10 @@ Scarce resources tend to be valuable.
 Abundant resources tend to be less valuable.
 Using an abundant resource instead of a scarce resource in a manufacturing environment 
 therefore typically makes sense from a cost perspective.
-However, substitution is possible only when the two resources in question
+However, substitution\index{substitution} is possible only when the two resources in question
 are identical or nearly identical
 such that they can serve the same purpose in a manufacturing or production environment.
-Examples of substitution include:
+Examples of substitution\index{substitution} include:
 replacing coated steel (expensive) automobile interior parts with
 injection-molded plastics (inexpensive),
 replacing Styrofoam hamburger containers (nonrenewable)
@@ -648,7 +648,7 @@ the strong\index{strong sustainability} versions.%
   but burning wood can lead to reduced air quality.
 }
 
-That said, there are important limits to substitutability.
+That said, there are important limits to substitutability\index{substitution}.
 At a manufacturing plant, the type of electricity
 (for example, coal electricity\index{electricity!coal} or solar electricity\index{electricity!solar})
 is immaterial,
@@ -872,7 +872,7 @@ In particular,
 the effect of the 1970s oil crises can be seen in Figure~\ref{fig:EnergyPerPersonGraph}.
 Per-capita primary energy consumption\index{primary energy consumption} rose substantially from 1800 to 1970
 with the adoption of fossil fuels worldwide.
-Since the oil crises, efficiency and substitution
+Since the oil crises, efficiency and substitution\index{substitution}
 have slowed the growth of per-capita primary energy consumption\index{primary energy consumption}.
 Economic growth in the developing world, particularly in China, led to a
 noticeable rise in per-capita energy consumption starting in 2001.
@@ -1107,7 +1107,7 @@ uk_coal_extraction %>%
   MKHthemes::xy_theme()
 @
 
-In the case of the UK, substitution away from coal for electricity generation 
+In the case of the UK, substitution\index{substitution} away from coal for electricity generation 
 is occurring. 
 Coal production is now dominated by China, India, the U.S., and Australia,
 but international trade is possible.
@@ -1376,7 +1376,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
   \item \label{question:consumption_substitution}
         Section~\ref{sec:recycling} introduced the idea that sufficiently similar
         materials could substitute for one another in a manufacturing process.
-        There can also be substitutability in consumption.
+        There can also be substitutability\index{substitution} in consumption.
         For example, margarine, butter, and peanut butter are alternative spreads for toast.
         Or you could have oatmeal for breakfast.
         Oatmeal and butter aren't very similar, but they serve the same
@@ -1449,7 +1449,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Which approaches are ineffective?
         Why?
 
-  \item Evaluate the ecological and economic impacts of substitution of an
+  \item Evaluate the ecological and economic impacts of substitution\index{substitution} of an
         injection-molded plastic part for a stamped steel part on an automobile.
         What are the raw material and extraction implications?
         How much energy is used to create the part?
