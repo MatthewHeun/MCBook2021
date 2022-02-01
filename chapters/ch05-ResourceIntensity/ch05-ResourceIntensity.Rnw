@@ -59,10 +59,10 @@ We use the term ``resource'' to mean a primary input to the economy.
 As such, a resource is something obtained from the natural world.
 It is something provisioned by the ecosystem\index{ecosystem}, to use the language 
 of Section~\ref{sec:ecosystem_services}.
-Timber is a resource. Iron ore is a resource. Water is a resource.
+Timber is a resource. Iron ore\index{iron ore} is a resource. Water is a resource.
 Each resource can be transformed many times within the economy.
 Timber might become 2$\times$4s, or plywood, or toothpicks, or mulch.
-Iron ore might become steel, then sheet metal, and then a toaster.
+Iron ore\index{iron ore} might become steel, then sheet metal, and then a toaster.
 Water might become ice, a sports drink, or Play-Doh.
 The process of pulling a resource into the economy is called ``extraction.''\index{resource extraction}
 Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used
@@ -184,7 +184,7 @@ finished goods (such as sewing machines and mobile phones).
 But all sectors, even the service sector, need resources.
 Consider the simple example of a haircut.
 The stylist commutes to the salon in a vehicle
-(which requires iron ore, copper, and other natural resources to manufacture; 
+(which requires iron ore\index{iron ore}, copper\index{copper}, and other natural resources to manufacture; 
 perhaps refined liquid fuel to operate; and 
 an atmosphere that is a source of oxygen and which absorbs CO$_2$ and water, the products of combustion).
 The stylist uses electric clippers and a hairdryer during each appointment
