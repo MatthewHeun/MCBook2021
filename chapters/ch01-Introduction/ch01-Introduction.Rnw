@@ -329,7 +329,7 @@ and the \textbf{impact of resources}~\Xparen{}.
 In the \textbf{IPARX}\index{IPARX identity} formulation, impact~\Iparen{} is a list of impacts (that is, a vector quantity)
 that includes such things as
 \textbf{global warming potential (GWP)}\index{global warming potential (GWP)},
-aquifer\index{aquifer} depletion, and
+aquifer depletion\index{aquifer depletion} , and
 eutrophication potential.
 Population~\Pparen{} is the number of people in the world.
 Affluence~\Aparen{} is GDP per capita per year.
