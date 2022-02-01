@@ -225,7 +225,8 @@ Eventually the boat (that is, the ecosystem\index{ecosystem}) heels over so far 
 
 % wikipedia article on "tipping points in the climate system."
 Drastic or catastrophic changes to ecosystems\index{ecosystem} are not new or solely modern problems.
-Rapa Nui (Easter Island), the Levant, and the Sahara Desert have all undergone 
+Rapa Nui (Easter Island)\index{Rapa Nui (Easter Island)}, the Levant\index{Levant},
+and the Sahara Desert\index{Sahara Desert} have all undergone 
 dramatic ecological shifts, although the degree to which this is attributable to 
 human actions is not agreed upon or well understood~\cite{Malhi2018}. 
 
@@ -236,23 +237,26 @@ Population-driven deforestation\index{deforestation} was a problem in ancient ti
 it remains so today. 
 Clearing forests for fuel, crops, and building materials
 led to a permanent loss of soil fertility\index{soil fertility}, erosion, and economic decline
-in places as far apart as Scandinavia~\cite{Oestlund2015},
-the Mayan empire~\cite{Douglas2018}, and southern Iran~\cite{NFMiller1985}. 
+in places as far apart as Scandinavia\index{Scandinavia}~\cite{Oestlund2015},
+the Mayan empire\index{Mayan empire}~\cite{Douglas2018}, and southern Iran\index{Iran}~\cite{NFMiller1985}. 
 Ecological problems were especially well documented in the Mediterranean region
 during the Greek and Roman eras~\cite{Hughes2011}. 
-Goats were pastured on cut timberlands, preventing regrowth.
-``Overgrazing, particularly by goats, was a primary cause of deforestation\index{deforestation} in
-ancient Greece and Rome''~\cite{Hughes1982}.
+Goats\index{Goat} were pastured on cut timberlands, preventing regrowth.
+``Overgrazing, particularly by goats\index{goat}, was a primary cause of deforestation\index{deforestation} in
+ancient Greece\index{Greece} and Rome\index{Rome}''~\cite{Hughes1982}.
 \end{mcframe}
 
 % if we don't understand it, should we mess with it?
 What \emph{is} new is the scope or magnitude of humanity's ability to affect the environment,
 both due to the current high population and our level of technology.
 Fossil-fuel derived carbon emissions are of particular concern.
-Further examples include nuclear and industrial ``accidents,'' such as the Thule air-base crash,
-the Palomares crash, the Seveso dioxin release, and, more recently, the Chernobyl
-and Fukishima diasters, which have each contaminated many square kilometers.
-Finally, %while the risk is, perhaps, less acute than it once was, 
+Further examples include nuclear and industrial ``accidents,'' such as the 
+Thule air-base crash\index{Thule air-base crash},
+the Palomares crash\index{Palomares crash},
+the Seveso dioxin release\index{Seveso dioxin release}, and, more recently,
+the Chernobyl\index{Chernobyl disaster} and
+Fukishima diasters\index{Fukishima diaster}, which have each contaminated many square kilometers.
+Finally, 
 a global thermonuclear war would be a humanitarian and environmental disaster on a 
 truly global scale (if one were to occur).
 
@@ -320,7 +324,7 @@ The upper limits for these indicators are intended to define a
 \toprule
 \textbf{Planetary Boundary} & \textbf{Exceeded?} \\ 
 \midrule
-Atmospheric CO$_2$ concentration                   & yes \\
+Atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration}                   & yes \\
 Extinction rate                                    & yes \\ 
 Anthropogenic nitrogen removed from the atmosphere & yes\\
 Anthropogenic phosphorous added to the ocean       & not yet \\ 
@@ -334,9 +338,9 @@ Chemical pollution\index{pollution!chemical}            & unknown \\
 \end{tabular}
 \end{table}
 
-The upper limit for atmospheric carbon dioxide concentration is 350~ppm.
+The upper limit for atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration} is 350~ppm.
 (The current value is more than 412~ppm,
-and the pre-industrial concentration was 280~ppm,
+and the pre-industrial concentration\index{atmospheric CO$_2$ concentration} was 280~ppm,
 as shown in Figure~\ref{fig:CO2Graph}).
 Less than 15\% of Earth's land area should be converted to cropland. 
 (Currently, 11.7\% is cropland.)
@@ -349,7 +353,7 @@ Generating new species by natural evolution to replace the ones that have been
 lost will take several million years~\cite{Davis11262}.
 
 
-<<CO2Graph, fig.scap="Atmospheric CO$_2$ concentration vs.\\ time", fig.cap="Atmospheric CO$_2$ concentration over time. The red line shows the planetary boundary for atmospheric CO$_2$ concentration, 350~ppm. The vertical line shows the year 2022. \\emph{Sources}: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Tans:2022vw}.">>=
+<<CO2Graph, fig.scap="Atmospheric CO$_2$ concentration\\index{atmospheric CO$_2$ concentration} vs.\\ time", fig.cap="Atmospheric CO$_2$ concentration over time. The red line shows the planetary boundary for atmospheric CO$_2$ concentration, 350~ppm. The vertical line shows the year 2022. \\emph{Sources}: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Tans:2022vw}.">>=
 # Gather data for CO2 vs. time graph
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>%
   dplyr::mutate(
@@ -629,15 +633,16 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
 \label{sec:GHGCC}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Figure \ref{fig:CO2Graph} shows average atmospheric CO$_2$ concentrations over the last 
+Figure \ref{fig:CO2Graph} shows average atmospheric CO$_2$ concentrations\index{atmospheric CO$_2$ concentration}
+over the last 
 800 thousand years (0.8 million years). 
 Figure~\ref{fig:CarbonEmissionsGraph} shows 
 the rate of world CO$_2$ emission since 1800~\ICOtwoparen{}.
 The clear trend is upward, with small drops corresponding to years of economic recession\index{recession}.
 \textbf{Greenhouse gas} emissions (primarily CO$_2$ released from burning fossil fuels) 
-are raising the atmospheric CO$_2$ concentration and 
+are raising the atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration} and 
 causing the average global temperature to increase. 
-The current average atmospheric CO$_2$ concentration is an example of humanity
+The current average atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration} is an example of humanity
 exceeding a planetary boundary. 
 Because the carbon cycle\index{carbon cycle} is one of Earth's 
 regulating and support ecosystem services\index{regulating and supporting services} and
@@ -733,7 +738,8 @@ enable enough warming that much-more-potent water vapor is present in greater qu
 as well.
 However, since the atmosphere grows colder at higher elevations, the radiation into
 space is less effective than at lower elevations. 
-By increasing atmospheric greenhouse gas concentrations (particularly CO$_2$), 
+By increasing atmospheric greenhouse gas concentrations\index{atmospheric CO$_2$ concentration}
+(particularly CO$_2$), 
 we are essentially adding long-wavelength radiation shields to the atmosphere. 
 Less radiation leaving the upper atmosphere means that more heat is trapped
 closer to the Earth's surface. 
@@ -757,7 +763,7 @@ accounting for the (very small) rate of absorption of CO$_2$ by the biosphere.%
 \footnote{
   The small absorption rate of CO$_2$ by the biosphere means that
   we need a negative CO$_2$ emissions rate (sequestration)
-  to get back to 350~ppm atmospheric CO$_2$ concentration
+  to get back to 350~ppm atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration}
   within a few centuries.
 }
 As of 2021, the remaining carbon budget\index{carbon budget} is 500~GtCO$_2$e 
@@ -1075,7 +1081,8 @@ New York: Bloomsbury,
       What ecosystem services\index{ecosystem services} did they provide?
       Who is doing that job now?
       
-\item Rapa Nui, also called Easter Island, had 21 species of native trees and 
+\item Rapa Nui, also called Easter Island\index{Rapa Nui (Easter Island)},
+      had 21 species of native trees and 
       at least 6 species of native birds, all of which were extinct before European 
       contact. 
       Clearing the land, via slash-and-burn agriculture, allowed a larger
@@ -1084,7 +1091,8 @@ New York: Bloomsbury,
       terraforming that allowed human civilization to flourish \cite{Hunt2009}. 
       How do we judge, from a modern perspective, the success or failure 
       (or pros and cons) of an ancient ecological catastrophe (but colonization success)? 
-      How could Rapa Nui be a model for the environmental ethics of a Lunar or Martian colony?
+      How could Rapa Nui\index{Rapa Nui (Easter Island)} be a model
+      for the environmental ethics of a Lunar or Martian colony?
  
  \item The human development index\index{Human Development Index (HDI)}
       (HDI, Section~\ref{sec:indices}) is a measure of
@@ -1185,7 +1193,7 @@ New York: Bloomsbury,
 \item Research several measures of human well-being. Which is best and why? 
 
 \item Prepare an essay on how the narrative(s) surrounding human colonization
-      of Rapa Nui affect, are effected by, and relate to, modern debates on 
+      of Rapa Nui\index{Rapa Nui (Easter Island)} affect, are effected by, and relate to, modern debates on 
       sustainability.
 
 \item Cuba\index{Cuba} is a country in the lower-right corner of Figure~\ref{fig:FootprintHDIGraph}. 
