@@ -796,8 +796,8 @@ the full restoration is likely to cost more than \euro{8}~billion.
       \label{project:old-growth-forest}
 
 \item \label{project:alt_exp}
-      An alternative to the description of exponential growth\index{exponential growth} given in
-      Section~\ref{sec:exp} is to use the form
+      An alternative description of exponential growth\index{exponential growth} 
+      is the form
       $\mft{y}_\mft{N} = \mft{y}_\text{0} (\text{1} + \mft{r})^\mft{N}$, where $\mft{y}_\text{0}$
       is the initial amount,
       \mft{r} is the constant growth rate (per compounding period),
