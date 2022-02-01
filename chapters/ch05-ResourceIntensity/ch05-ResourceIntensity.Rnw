@@ -76,13 +76,13 @@ for productive purposes.
 
 An efficiency is a ratio of output to input, 
 where both output and input have the same units.
-A furnace that burns a quantity of natural gas that releases 100 BTUs of heat might
+A furnace that burns a quantity of natural gas\index{natural gas} that releases 100 BTUs of heat might
 only deliver 96 of those BTUs to your house.
 Such a furnace has an efficiency of 96\% (BTUs delivered per BTUs input).
 (See Section~\ref{sec:heating_and_cooling}
 for more on furnace efficiency and a related metric,
 Annual Fuel Utilization Efficiency (AFUE)\index{Annual Fuel Utilization Efficiency (AFUE)}.)
-A natural gas power plant might burn gas at a rate that releases 300 MW of heat to generate
+A natural gas power plant\index{natural gas power plant} might burn gas at a rate that releases 300 MW of heat to generate
 100 MW of electricity. 
 Such a power plant has an efficiency of 33.3\%.
 In both cases, the input and output have the same units of energy, BTUs for the furnace
@@ -825,7 +825,8 @@ coal\index{coal} consumption is weakly sustainable\index{weak sustainability} fr
 point of view.
 (However, coal\index{coal} is not weakly sustainable\index{weak sustainability} from a CO$_2$ emissions point of view, 
 as shown in Figure~\ref{fig:PercentageOfSustainable}.)
-Neither oil nor natural gas are being consumed at a weakly sustainable\index{weak sustainability} rate.
+Neither oil\index{crude oil} nor natural gas\index{natural gas}
+are being consumed at a weakly sustainable\index{weak sustainability} rate.
 
 
 <<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person vs.\\ time by energy type", fig.cap="World primary energy consumption\\index{primary energy consumption} per person vs.\\ time by energy type. Note that per-person primary energy consumption is relatively flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth and increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy.">>=
@@ -1124,7 +1125,8 @@ Each region is at different places on its logistic curve
 for resource production.
 Other ways to substitute away from domestic coal\index{coal} for electricity 
 (besides switching suppliers)
-include deploying natural gas, wind, and solar electricity generation, 
+include deploying natural gas\index{natural gas electricity}, wind\index{wind electricity}, and
+solar electricity\index{solar electricity} generation, 
 as the UK is doing now.
 
 Another way to slow down the inevitable march of time
@@ -1169,10 +1171,10 @@ Many resources are used unsustainably,
 as measured by both strong\index{strong sustainability} and weak sustainability\index{weak sustainability} criteria.
 For the prime example of primary energy intensity\index{primary energy intensity} of economic activity,
 we found that~\REp{} has decreased substantially since 1800, 
-but only because we are using far less biofuels per dollar of GDP
+but only because we are using far less biofuels\index{biofuel} per dollar of GDP
 today than in the past.
 Fossil fuel use has remained much more constant on a per-GDP basis.
-Ironically, biofuels are a (potentially) sustainable source of energy, 
+Ironically, biofuels\index{biofuel} are a (potentially) sustainable source of energy, 
 so we are growing economies with unsustainable fossil fuel consumption 
 while at the same time
 relying less on consumption of (potentially) sustainable biomass.

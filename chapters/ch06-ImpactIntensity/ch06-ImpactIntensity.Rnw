@@ -186,7 +186,7 @@ is the \textbf{carbon intensity of primary energy}\index{carbon intensity of pri
 as shown in Figure~\ref{fig:ImpactIntensityGraph}.
 The line in Figure~\ref{fig:ImpactIntensityGraph}
 demonstrates the long transition
-from traditional biofuels to fossil fuels
+from traditional biofuels\index{traditional biofuel} to fossil fuels
 evident in Figure~\ref{fig:PrimaryEnergyGraph}.
 
 <<ImpactIntensityGraph, fig.scap="Carbon intensity of primary energy~\\XCOtwoparen{} vs.\\ time", fig.cap="Carbon intensity of primary energy\\index{carbon intensity of primary energy}~\\XCOtwoparen{}. \\emph{Source}: own calculations. The line represents the ratio of the line in Figure~\\ref{fig:CarbonEmissionsGraph} and the top of Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
@@ -212,26 +212,26 @@ carbon_intensity %>%
   MKHthemes::xy_theme()
 @
 
-The biofuel-to-fossil-fuel transition has
+The biofuel\index{traditional biofuel}-to-fossil-fuel transition has
 significant sustainability implications.
-Traditional biofuels are carbon neutral\index{carbon neutral},
+Traditional biofuels\index{traditional biofuel} are carbon neutral\index{carbon neutral},
 because any CO$_2$ released by combustion was
 already sequestered into the biomass as the plants grew.
 Fossil fuels are not carbon neutral\index{carbon neutral};
 their combustion releases CO$_2$ that was sequestered millions of years ago.
-As the world transitioned away from traditional biofuels toward fossil fuels,
+As the world transitioned away from traditional biofuels\index{traditional biofuel} toward fossil fuels,
 the carbon intensity of primary energy\index{carbon intensity of primary energy} rose.
 
-On the other hand, use of traditional biofuels results in deforestation\index{deforestation}, erosion,
+On the other hand, use of traditional biofuels\index{traditional biofuel} results in deforestation\index{deforestation}, erosion,
 and other negative environmental effects (as well as being inefficient from an
 EROI\index{energy return on investment (EROI)}
 perspective, as shown in Table~\ref{tab:eroi}).
-The transition away from biofuel consumption results in cleaner urban air (especially after 
+The transition away from biofuel\index{biofuel} consumption results in cleaner urban air (especially after 
 the transition from coal\index{coal} to natural gas\index{natural gas} for residential heating)~\cite{Gordon2016}.
 Because having a healthy environment is what economists call a ``normal'' good,
 \mft{I} should fall as \mft{A} rises, in general.
 In some ways (but not in terms of CO$_2$ emissions and climate change\index{climate change}),
-the transition away from traditional biofuels did result
+the transition away from traditional biofuels\index{traditional biofuel} did result
 in reduced environmental impact.
 
 
@@ -481,7 +481,7 @@ In lieu of extracting CO$_2$ from the atmosphere,
 we could stop emitting CO$_2$ from fossil fuel combustion in the first place!
 One way is to transition away from fossil fuels 
 to the energy mix used in the first half of the 19$^{\text{th}}$ century,
-namely exclusive use of traditional biofuels (wood and wood products)\index{biofuels}
+namely exclusive use of traditional biofuels\index{traditional biofuel} (wood and wood products)
 for heating and electricity;
 see Figure~\ref{fig:PrimaryEnergyGraph}.
 However, supplying the energy needs of today's economy would be impossible:
@@ -537,15 +537,7 @@ with expensive offerings from companies such as Tesla\index{Tesla}.
 (Electrification has not yet penetrated meaningfully into the freight system,
 including trucks, ships, and planes.)
 The second option is to use WWS electricity 
-in plants that convert biomass feedstocks\index{feedstock} to biofuels.
-
-% This is discussed at length in research circles. Electric planes, biofuel planes,
-% biodiesel or electric trucks. Maersk has committed to carbon-neutrality by 2050
-% and is launching a bio-methanol ship in 2023.
-% Hydrogen is not energy dense enough to be a transportation fuel but could 
-% serve as efficient grid-scale energy storage (electrolysis by WWS, base-generation
-% fuel cell generators for efficient discharge). However, we don't really have 
-% materials yet to do this ``at scale.''
+in plants that convert biomass feedstocks\index{feedstock} to biofuels\index{biofuel}.
 
 Deployment of a WWS energy system provides a second challenge:
 wind and solar are intermittent sources of electricity,
@@ -1071,7 +1063,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       (The International Tanker Owners Pollution Federation\index{International Tanker Owners Pollution Federation}
       reports ``only'' 18 oil
       spills larger than 700 tonnes for the period 2010--2019 versus 245 in the 1970s.) 
-      Other examples include environmental impacts from hydraulic fracking
+      Other examples include environmental impacts from hydraulic fracking\index{hydraulic fracking}
       fluids; air quality issues associated with burning fossil fuels such as
       soot, smog\index{smog}, and ozone\index{ozone}; and soil contamination from leaking underground 
       fuel-storage tanks.

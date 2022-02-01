@@ -553,20 +553,20 @@ transition away from fossil fuels\index{fossil fuels}
 toward sustainable energy,
 thereby reducing the harmful environmental effects of fossil fuel combustion.
 Two solutions are often discussed:
-widespread use of biofuels\index{biofuels}
+widespread use of biofuels\index{biofuel}
 in internal combustion engine (ICE) vehicles\index{internal combustion engine (ICE) vehicle} and
 widespread adoption of electric-vehicle\index{electric vehicle (EV)} technology.
 
 
 %..............................
-\paragraph{Biofuels}
+\paragraph{Biofuels}\index{biofuel}
 \label{sec:biofuels}
 %..............................
 
-Biofuels are liquid or gaseous hydrocarbon fuels produced from biomass material
+Biofuels\index{biofuel} are liquid or gaseous hydrocarbon fuels produced from biomass material
 and used for transportation.
 Taking carbon neutrality\index{carbon neutral} as the indicator of sustainability,
-biofuels can be sustainable if they sequester more carbon than
+biofuels\index{biofuel} can be sustainable if they sequester more carbon than
 they emit across the full life cycle\index{life cycle!biofuel}
 of a project, including
 land preparation, planting, harvesting, refining and processing, 
@@ -576,12 +576,12 @@ Perennial crops planted in low-carbon soils\index{low-carbon soil}
 can be carbon negative, because
 GHG emissions\index{emissions!greenhouse gases}
 from energy consumed for land preparation and planting can be allocated
-across several harvest years of the biofuel crop~\citep{Whitaker_2017}.
-Biofuel consumption in the U.S.\ is shown in Figure~\ref{fig:Biofuel_cons}.
-Brazil is another global leader 
-in biofuel production~\cite{International-Energy-Agency:2019wj}.
+across several harvest years of the biofuel\index{biofuel} crop~\citep{Whitaker_2017}.
+Biofuel\index{biofuel} consumption in the U.S.\ is shown in Figure~\ref{fig:Biofuel_cons}.
+Brazil\index{Brazil} is another global leader 
+in biofuel\index{biofuel} production~\cite{International-Energy-Agency:2019wj}.
 
-Although biofuel consumption has risen dramatically since 2000, 
+Although biofuel\index{biofuel} consumption has risen dramatically since 2000, 
 the rise is mostly due to ethanol\index{ethanol} blending in gasoline\index{gasoline}.
 Unfortunately, the energy return on investment\index{energy return on investment (EROI)}
 for ethanol\index{ethanol} production is
@@ -739,7 +739,8 @@ especially energy consumption, fuel economy\index{fuel economy},
 and climate\index{climate} change (the prime example of Part~\ref{part:IPARX})
 were discussed.
 Finally, transitions to a sustainable transport system were discussed
-including transportation efficacy, biofuels, and electric vehicles\index{electric vehicle (EV)}.
+including transportation efficacy\index{transportation efficacy},
+biofuels\index{biofuel}, and electric vehicles\index{electric vehicle (EV)}.
 
 The next chapter discusses agriculture, 
 another area in which sustainability challenges are important and urgent.

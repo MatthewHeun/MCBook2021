@@ -78,7 +78,7 @@ both the people who occupy a dwelling and
 the systems that operate within the dwelling. 
 Example resources demanded by households include
 water, building materials, chemicals, food,
-electricity, and natural gas.
+electricity\index{electricity}, and natural gas\index{natural gas}.
 Each resource demanded by households is an
 entry in the list of resources in the numerator of the
 \mft{R} term of the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX}). 
@@ -94,7 +94,7 @@ representing 12\% of final energy\index{final energy} consumption.
 Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
 from the U.S.\ residential sector in 2018 total 
 \Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Mt/year,
-predominantly from electricity and natural gas.\index{electricity!consumption!households}
+predominantly from electricity\index{electricity} and natural gas\index{natural gas}.
 Energy consumption in dwellings is a source of sustainability impacts
 (CO$_2$ emissions and 
 natural resource extraction\index{resource extraction})
@@ -483,9 +483,9 @@ for showers, dish washers, toilets, and clothes washers and dryers.
 Collectively, these activities may be categorized as ``hygiene.''
 
 Clothes washers and dryers\index{clothes washer}\index{clothes dryer}
-consume both water and energy, typically electricity and natural gas.
-Burning natural gas emits CO$_2$.
-When the electricity for washers and dryers comes from fossil fuel sources, 
+consume both water and energy, typically electricity\index{electricity} and natural gas\index{natural gas}.
+Burning natural gas\index{natural gas} emits CO$_2$.
+When the electricity\index{electricity} for washers and dryers comes from fossil fuel sources, 
 further CO$_2$ emissions occur.
 
 Hygiene is a significant 
@@ -1095,7 +1095,7 @@ United States, 1999: \\
       
 \item Negative externalities are costs borne by those who do not receive the benefits of
       an activity. 
-      For example, burning natural gas to heat a home releases CO$_2$
+      For example, burning natural gas\index{natural gas} to heat a home releases CO$_2$
       (which harms everyone). 
       Improving a home's energy efficiency\index{energy efficiency}, by reducing these externalized
       costs, improves the well being of everyone. 

@@ -383,7 +383,7 @@ A rural road might have a drainage ditch beside the road but the road itself
 might not be paved. 
 In contrast, a suburban street will be paved and have gutters, curbs, storm sewers, and a sidewalk.
 A city will have traffic infrastructure, such as traffic lights and perhaps bridges,
-and electricity, natural gas, water, and sanitation networks.
+and electricity\index{electricity}, natural gas\index{natural gas}, water, and sanitation networks.
 A city center will additionally have public buildings such as a courthouse, library, and/or 
 post office.
 Eventually, all the above infrastructure will reach the end of its functional life
@@ -597,7 +597,7 @@ that is, an increase in the amount of land devoted to forests.
 Indeed, land use must become a carbon sink, instead of a carbon source,
 if we are to be sustainable.
 
-<<PowerDensity, fig.scap="Power densities of electricity generating technologies", fig.cap="Power densities of several electricity generating technologies. ``Nat. gas'' is natural gas. ``Geoth.'' is geothermal. \\emph{Source}: \\citet[Figure~2]{Zalk:2018uy}.">>=
+<<PowerDensity, fig.scap="Power densities of electricity generating technologies", fig.cap="Power densities of several electricity generating technologies. ``Nat. gas'' is natural gas\\index{natural gas}. ``Geoth.'' is geothermal. \\emph{Source}: \\citet[Figure~2]{Zalk:2018uy}.">>=
 power_densities <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Power_Densities.xlsx"),
                                        sheet = "data to plot") %>%
   dplyr::arrange(dplyr::desc(`power_density_W/m2`)) %>%
