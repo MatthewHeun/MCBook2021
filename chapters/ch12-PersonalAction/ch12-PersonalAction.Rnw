@@ -214,7 +214,7 @@ individuals can educate themselves on low-carbon-intensity
 goods and services.
 Tracking personal carbon emissions is easy
 via online carbon calculators~\cite{Padgett:2008ws}\index{carbon calculator}.
-Resources such as \emph{How bad are bananas?}~\cite{Berners-Lee:2011}
+Resources such as \emph{How bad are bananas\index{banana}?}~\cite{Berners-Lee:2011}
 provide helpful guides for purchasing decisions.
 
 
@@ -706,7 +706,7 @@ co2_amounts %>%
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Mike Berners-Lee, \emph{How Bad Are Bananas? The carbon footprint of everything}.
+Mike Berners-Lee, \emph{How Bad Are Bananas\index{banana}? The carbon footprint of everything}.
 Vancouver: Greystone Books, 2011.
 
 
