@@ -202,7 +202,7 @@ Human actions can cause a change or breakdown in the Earth's regulating and
 supporting ecosystem services\index{ecosystem services},
 which will lead to a tipping point\index{tipping point}, that is, 
 a fundamental change in the way the ecosystem\index{ecosystem} works. 
-An example that is of particular concern at present is global climate change 
+An example that is of particular concern at present is global climate change\index{climate change} 
 (principally) caused by human CO$_2$ emissions. 
 Species extinctions, which is like losing rivets in an airplane, is another cause of concern.
 Because of tipping points\index{tipping point} and the nonlinear and interrelated nature of the
@@ -619,7 +619,7 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Example: climate change}
+\section{Example: climate change}\index{climate change}
 \label{sec:GHGCC}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -637,10 +637,10 @@ Because the carbon cycle is one of Earth's
 regulating and support ecosystem services\index{ecosystem services} and
 because the atmosphere is comprehensively global, 
 the impacts of climate on the environment are many.
-Climate change is the term used to describe the results of the greenhouse effect.
-Climate change is interacting with many other planetary systems and thus contributes
+Climate change\index{climate change} is the term used to describe the results of the greenhouse effect.
+Climate change\index{climate change} is interacting with many other planetary systems and thus contributes
 to, for example, the extinction rate. 
-Climate change is causing ocean acidification, sea level rise, and increased 
+Climate change\index{climate change} is causing ocean acidification, sea level rise, and increased 
 frequency of extreme natural disasters, such as wild fires and destructive tropical storms. 
 
 <<extract_fit_coeffs>>=
@@ -701,7 +701,7 @@ Second, most greenhouse gas emissions are within human control,
 especially regarding fossil fuels and agriculture. 
 
 % see http://clivebest.com/blog/?p=1169 and references therein.
-Here is a brief description of how climate change is happening. 
+Here is a brief description of how climate change\index{climate change} is happening. 
 If the radiation received from the sun exceeds the heat radiated from the Earth,
 the Earth's temperature will increase. 
 As the Earth's temperature increases, the amount of heat radiated from the Earth
@@ -745,7 +745,7 @@ far into the future.
 % The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
 % The clear trend is upward, with small drops corresponding to years of economic recession.
 
-Scientists agree that avoiding irreversible effects of climate change
+Scientists agree that avoiding irreversible effects of climate change\index{climate change}
 requires limiting global average temperature rise to 1.5~\degC{} or less,
 relative to the global average temperature at the dawn of the industrial revolution.
 Our \textbf{carbon budget}\index{carbon budget} is the amount of future CO$_2$e emissions
@@ -802,7 +802,7 @@ temperature increase over the long term
 (if we don't find a way to remove CO$_2$ from the atmosphere at large scale).
 Given that CO$_2$ emissions are not staying constant but are, in fact, rising,
 we probably have \emph{about a decade} before we reach 1.5~\degC{} of eventual warming
-and irreversible effects of climate change.
+and irreversible effects of climate change\index{climate change}.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -1028,7 +1028,7 @@ New York: Bloomsbury,
       The Marshallese right to emigrate has been long standing. 
       Any Marshallese who has not already emigrated has chosen not to do so because
       it wasn't ``worth it'' to them in some way. 
-      If they are forced to relocate by climate change, should they receive 
+      If they are forced to relocate by climate change\index{climate change}, should they receive 
       some form of compensation? 
       If so, who pays and what amount? If not, why not?
       With respect to Figure~\ref{fig:venn_diagram}, this question is in the 
@@ -1051,7 +1051,7 @@ New York: Bloomsbury,
       \label{question:shell_lawsuit}
       
 \item What is a cultural ecosystem service\index{ecosystem services} that you value that is threatened by 
-      global climate change? 
+      global climate change\index{climate change}? 
       What are you doing to replace or substitute for that service?
       What could be done to mitigate the impact(s)?
       
@@ -1113,7 +1113,7 @@ New York: Bloomsbury,
       deviations from normal or expected behavior to be seen as signs of 
       extreme danger.
       What role do you think cognitive biases play in our current response
-      to climate change?
+      to climate change\index{climate change}?
 
 \item In 1990, the most recent year for which the United Nations 
       Framework Convention on Climate Change had data, the carbon budget\index{carbon budget} was 1500~GtCO$_2$,

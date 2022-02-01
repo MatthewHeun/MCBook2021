@@ -277,8 +277,8 @@ domains, like a social versus economic tradeoff.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This book uses energy and carbon emissions as prime examples not
 because they are the only sustainability problems, but because
-energy is the \textbf{master resource}\index{master resource (energy)} and \textbf{climate change} is currently
-one of the most urgent sustainability problems.
+energy is the \textbf{master resource}\index{master resource (energy)} and \textbf{climate change}\index{climate change}
+is currently one of the most urgent sustainability problems.
 Energy and carbon emissions link together many of our sustainability challenges\index{sustainability challenges}.
 \end{mcframe}
 
@@ -523,11 +523,11 @@ not including feedstock\index{feedstock}.%
 Because energy is the master resource\index{master resource (energy)},
 understanding EROI\index{energy return on investment (EROI)} is vitally important.
 An EROI\index{energy return on investment (EROI)}
-that is less than one indicates the energy production activity is an energy sink for society.
+that is less than one indicates the energy production activity is an energy sink\index{energy sink} for society.
 For instance, modern agriculture has an EROI\index{energy return on investment (EROI)} of around 0.1 to 0.15;
 it takes 7--10 calories of energy to deliver 1 calorie of food energy.
 On the other hand, an EROI\index{energy return on investment (EROI)} greater than one indicates 
-an energy source for society.
+an energy source\index{energy source} for society.
 Table~\ref{tab:eroi} lists energy returns\index{energy return on investment (EROI)}
 for various sources of energy.
 Some authors have suggested a minimum EROI\index{energy return on investment (EROI)}
@@ -566,7 +566,7 @@ Biofuels (incl.\ U.S.\ corn ethanol\index{corn ethanol})  & 0.8--1.6 \\ %%  from
 This book uses the IPARX identity\index{IPARX identity} as a framework for thinking about sustainability.
 It considers many different resources and many different types of impacts.
 However, there is a focus on energy and CO$_2$ emissions.
-Climate change (Section \ref{sec:GHGCC}) is one of the most urgent sustainability
+Climate change\index{climate change} (Section \ref{sec:GHGCC}) is one of the most urgent sustainability
 challenges and it is linked to other urgent challenges (such as material extinction rate(s) and land use changes)
 by CO$_2$ and energy.
 Thus, carbon emissions and energy lie at the nexus of our sustainability challenges\index{sustainability challenges}.
