@@ -1012,7 +1012,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
 \item Where should the environmental impact(s) from almond growing be counted, 
       where the almonds were grown or where they were consumed? 
       (See \ref{project:almond_water}.)
-      How would this affect, for instance, urban and rural carbon footprints?
+      How would this affect, for instance, urban and rural carbon footprints\index{carbon footprint}?
       
 \item Figure~\ref{fig:food_and_ag_material_flow} indicates that animals are an
       inefficiency in agriculture. However, animals may be necessary or desirable
@@ -1034,7 +1034,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       restrictions). 
       Labels such as ``organic,'' ``grass fed,'' or ``free-range'' are at the
       discretion of the producer.
-      There are no standards for carbon footprint, regenerative agriculture, 
+      There are no standards for carbon footprint\index{carbon footprint}, regenerative agriculture, 
       or how the item has been transported.
       
 \item A vegan diet is only possible with supplementation of key critical nutrients,
@@ -1105,7 +1105,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       of that water in the environment where the almonds were grown? How did 
       it get there? How did the almonds get to you? Are the environmental impacts
       of almond growing allocated to where the almonds are grown or where they are 
-      consumed? How does this affect, for instance, urban and rural carbon footprints?
+      consumed? How does this affect, for instance, urban and rural carbon footprints\index{carbon footprint}?
       \label{project:almond_water}
 
 \item Verify the efficiency values in Section~\ref{sec:food_ag_efficiency}.

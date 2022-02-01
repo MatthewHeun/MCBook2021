@@ -546,7 +546,8 @@ can have this behavior, if their capacity is exceeded too much or for too long.
 As another example, complex systems, like temperature regulation of the planet, can exhibit
 tipping points\index{tipping point} that can radically change limits to an ecosystem service\index{ecosystem services} when the 
 limit is exceeded.
-Carbon dioxide in the atmosphere is thought/feared to be an example
+Carbon dioxide in the atmosphere\index{atmospheric CO$_2$ concentration}
+is thought/feared to be an example
 of this sort of behavior; when CO$_2$ increases too much, the Earth will get 
 dramatically hotter, fundamentally altering many of its basic systems.
 
@@ -559,22 +560,27 @@ dramatically hotter, fundamentally altering many of its basic systems.
 There are many, many indices used to express or measure sustainability. 
 All indices are, essentially, (weighted) averages of quantities related to
 one or more of the three areas of sustainability shown in Figure~\ref{fig:venn_diagram}.
-Example indices include carbon footprint (in CO$_2$ emissions per person), 
-the floristic quality index~\cite{Freyman2015},
-the multidimensional poverty index, 
-ecological footprint (in global hectares per person), and
+Example indices include carbon footprint\index{carbon footprint} (in CO$_2$ emissions per person), 
+the floristic quality index\index{floristic quality index}~\cite{Freyman2015},
+the multidimensional poverty index\index{multidimensional poverty index}, 
+ecological footprint\index{ecological footprint} (in global hectares per person), and
 the Human Development Index (HDI)\index{Human Development Index (HDI)}. 
-Figure~\ref{fig:FootprintHDIGraph} shows ecological footprint vs.\ HDI for 
+Figure~\ref{fig:FootprintHDIGraph} shows ecological footprint\index{ecological footprint} vs.\ 
+HDI\index{Human Development Index (HDI)} for 
 the average person in many countries.
 
 In contrast to planetary boundaries, which are hard biophysical limits, indices 
 typically represent aggregated behavior. 
 Aggregation allows grouping together of things that are different.
-For example, the HDI groups life expectancy at birth, expected years of schooling, 
+For example, the HDI\index{Human Development Index (HDI)}
+groups life expectancy at birth, expected years of schooling, 
 and gross national income. 
 Another example is CO$_2$ equivalents, which expresses the global warming 
-potential of various gases such as methane, nitrous oxide, and fluorinated gases
-in terms of the amount of carbon dioxide that would give the same amount of warming,
+potential of various gases such as methane\index{methane},
+nitrous oxides\index{nitrous oxides (NO$_\mathrm{x}$)}, and
+fluorinated gases in terms of the
+amount of carbon dioxide
+that would give the same amount of warming,
 disregarding any other environmental effects.
 
 Indices and biophysical limits, such as planetary boundaries, exist to guide 
@@ -587,7 +593,7 @@ goals or enforcement mechanisms for maintaining desired behavior.
 It remains for scientists, policy makers, and government officials to conduct 
 research, make recommendations, regulate, and enforce laws.
 
-<<FootprintHDIGraph, fig.scap="Ecological footprint vs.\\ HDI", fig.cap="Ecological footprint vs.\\ HDI for 2017. Population is in millions. HDI between 0.7 and 0.8 is considered ``high'' human development. HDI greater than 0.8 is considered ``very high'' human development. Ecological footprint below 1.9 global hectares per person is considered sustainable. The only countries ``inside the box'' at the lower right of the graph (high human development and sustainable ecological footprint) are the Philippines and Sri Lanka. No country exhibits ``very high'' human development and a sustainable ecological footprint. ``gha'' is global hectares. \\emph{Source}: \\citet{Global-Footprint-Network:ut}.">>=
+<<FootprintHDIGraph, fig.scap="Ecological footprint vs.\\ HDI", fig.cap="Ecological footprint vs.\\ HDI\\index{Human Development Index (HDI)} for 2017. Population is in millions. HDI between 0.7 and 0.8 is considered ``high'' human development. HDI greater than 0.8 is considered ``very high'' human development. Ecological footprint below 1.9 global hectares per person is considered sustainable. The only countries ``inside the box'' at the lower right of the graph (high human development and sustainable ecological footprint) are the Philippines and Sri Lanka. No country exhibits ``very high'' human development and a sustainable ecological footprint. ``gha'' is global hectares. \\emph{Source}: \\citet{Global-Footprint-Network:ut}.">>=
 clrs <- viridis::viridis(6, begin = 0, end = 0.99)
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI.xlsx"),
                                   sheet = "data to plot") %>% 
@@ -731,7 +737,7 @@ Much of the radiation leaving the Earth's surface is absorbed by greenhouse gase
 and reradiated to upper levels of the atmosphere. 
 Eventually, in the upper atmosphere, the atmosphere gets thin enough that 
 heat can radiate energy directly into space. 
-When CO$_2$ is added to the atmosphere, it traps radiation leaving the Earth
+When CO$_2$ is added to the atmosphere\index{atmospheric CO$_2$ concentration}, it traps radiation leaving the Earth
 at higher and higher levels of the atmosphere.
 The relatively small amounts of CO$_2$ in the atmosphere (measured in parts per million)
 enable enough warming that much-more-potent water vapor is present in greater quanties
@@ -751,8 +757,8 @@ Melting ice caps change the amount of incoming solar radiation that is initially
 the the Earth.
 Melting Arctic permafrost releases methane, another very potent greenhouse gas.
 All these positive feedback loops take decades to reach a new steady state.
-Thus, the greenhouse gases that are already in the atmosphere will cause warming
-far into the future.
+Thus, the greenhouse gases that are already in the atmosphere\index{atmospheric CO$_2$ concentration}
+will cause warming far into the future.
 
 Scientists agree that avoiding irreversible effects of climate change\index{climate change}
 requires limiting global average temperature rise to 1.5~\degC{} or less,
@@ -1095,28 +1101,26 @@ New York: Bloomsbury,
       for the environmental ethics of a Lunar or Martian colony?
  
  \item The human development index\index{Human Development Index (HDI)}
-      (HDI, Section~\ref{sec:indices}) is a measure of
+      (HDI\index{Human Development Index (HDI)}, Section~\ref{sec:indices}) is a measure of
       life expectancy, expected years of schooling, and gross national income per capita.
       As such, it is a measure of development. 
-      With reference to Equation~\ref{eq:IPARX}, can HDI continually increase sustainably? 
-      Is there a level of HDI that is ``enough?''
+      With reference to Equation~\ref{eq:IPARX}, can HDI\index{Human Development Index (HDI)} continually increase sustainably? 
+      Is there a level of HDI\index{Human Development Index (HDI)} that is ``enough?''
 
-\item Figure~\ref{fig:FootprintHDIGraph} indicates a tradeoff between human well-being (HDI) 
+\item Figure~\ref{fig:FootprintHDIGraph} indicates a tradeoff between 
+      human well-being (HDI)\index{Human Development Index (HDI)} 
       and the ecological impacts of humans. 
       There are no countries that have high human well-being and low ecological impact.
       Why do you think this is?
-      Is it more important to raise HDI or to lower ecological impact? Why?
+      Is it more important to raise HDI\index{Human Development Index (HDI)} or to lower ecological impact? Why?
       Who has responsibility for bringing about your desired change?
-      %What can be done to push all countries to the lower-right corner of this graph?
-      
-\item The calculation of HDI weights life expectancy, education, and national
+
+\item The calculation of HDI\index{Human Development Index (HDI)} weights life expectancy, education, and national
       income equally. Consider ways these outcomes may be correlated. Would you
       weight one of them higher than the others?
-% HDI: would you rather spend money on education or healthcare? education spending
-% will get you *some* life expectancy... 
 
 \item What things are important to you that aren't, for instance, in 
-      the HDI? Perhaps personal freedom and/or economic mobility? 
+      the HDI\index{Human Development Index (HDI)}? Perhaps personal freedom and/or economic mobility? 
       
 \item \textbf{Normalcy bias}\index{normalcy bias} is a cognitive bias that minimizes or ignores threats or
       warnings of impending disaster. 
@@ -1184,7 +1188,7 @@ New York: Bloomsbury,
 \item Calculate your own (or your family's) ecological footprint
       by comparing and contrasting the results of several online calculators.
 
-\item Calculate your carbon footprint by comparing and contrasting the results
+\item Calculate your carbon footprint\index{carbon footprint} by comparing and contrasting the results
       of several online calculators. 
       Are there other measures of impact that you should consider as well? 
       Are there easily accessible (for example, online) tools for those other measures?
