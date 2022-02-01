@@ -9,7 +9,7 @@
 \label{chap:planetary_boundaries}
 %#############################################################
 
-\epigraph{Mother Nature doesn't care if you're having fun.}{Larry Niven}
+\epigraph{Mother Nature doesn't care if you're having fun.}{Larry Niven\index{Niven, Larry}}
 
 The left-hand side of Equation \ref{eq:IPARX} (repeated below for convenience) 
 is environmental impact~\Iparen{}.
@@ -226,7 +226,7 @@ human actions is not agreed upon or well understood~\cite{Malhi2018}.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Population-driven deforestation was a problem in ancient times, and
+Population-driven deforestation\index{deforestation} was a problem in ancient times, and
 it remains so today. 
 Clearing forests for fuel, crops, and building materials
 led to a permanent loss of soil fertility\index{soil fertility}, erosion, and economic decline
@@ -235,7 +235,7 @@ the Mayan empire~\cite{Douglas2018}, and southern Iran~\cite{NFMiller1985}.
 Ecological problems were especially well documented in the Mediterranean region
 during the Greek and Roman eras~\cite{Hughes2011}. 
 Goats were pastured on cut timberlands, preventing regrowth.
-``Overgrazing, particularly by goats, was a primary cause of deforestation in
+``Overgrazing, particularly by goats, was a primary cause of deforestation\index{deforestation} in
 ancient Greece and Rome''~\cite{Hughes1982}.
 \end{mcframe}
 
@@ -695,7 +695,7 @@ are an especially important sustainability issue
 because of their widespread effects. 
 CO$_2$ emissions are also especially important for at least two other reasons. 
 First, CO$_2$ emissions may trigger a tipping point\index{tipping point} or tipping points in the 
-Earth's ecosystems\index{ecosystem}, related to deforestation, wild fires, ocean acidification, 
+Earth's ecosystems\index{ecosystem}, related to deforestation\index{deforestation}, wild fires, ocean acidification, 
 methane release from permafrost, and species loss. 
 Second, most greenhouse gas emissions are within human control, 
 especially regarding fossil fuels and agriculture. 
