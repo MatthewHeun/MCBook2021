@@ -396,7 +396,7 @@ living due to the economies of scale.
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/Tesla.jpeg}
-         \caption{A shiny new Tesla.}
+         \caption{A shiny new Tesla\index{Tesla}.}
          \label{fig:tesla}
      \end{subfigure}
      \hfill
@@ -407,9 +407,9 @@ living due to the economies of scale.
          \label{fig:commuting_bicycle}
      \end{subfigure}
         \caption[Two low-carbon commuting options]
-        {Two (potentially) low-carbon commuting options. The Tesla shown
+        {Two (potentially) low-carbon commuting options. The Tesla\index{Tesla} shown
         in~(a) could be a low-carbon commuting option, depending on the source of 
-        its electricity. On the other hand, the Tesla requires substantially more 
+        its electricity. On the other hand, the Tesla\index{Tesla} requires substantially more 
         mineral resource depletion\index{mineral resource depletion (MRD)} than the bicycle; see Figure~\ref{fig:auto_gwp} 
         and associated discussion.
         For more details on desirable characteristics of

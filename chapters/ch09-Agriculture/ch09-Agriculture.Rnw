@@ -280,7 +280,7 @@ If aquifers\index{aquifer} are exhausted, future humans won't have water for nou
 Overuse of water is not limited to subsurface water, like the Ogallala aquifer\index{aquifer!Ogallala}; 
 see \ref{question:ogallala}. 
 Surface water is also being overused for agriculture.
-One particularly notable example is the (former) Aral Sea, which has all but disappeared
+One particularly notable example is the (former) Aral Sea\index{Aral Sea}, which has all but disappeared
 due to diversion of its water for irrigation; see Figure~\ref{fig:aral_sea}.
 Another example is the Colorado River, which 
 supplies water to 12\% of the U.S.\ population
@@ -313,7 +313,7 @@ it no longer flows into the Sea of Cortez.
          \label{fig:aral_sea_2018}
      \end{subfigure}
       \caption[The Aral Sea in 2000 and 2018]
-              {Satellite photos of the Aral Sea in 2000 and 2018.
+              {Satellite photos of the Aral Sea\index{Aral Sea} in 2000 and 2018.
                \emph{Source}: \citet{NASA-Goddard:ug}.}
       \label{fig:aral_sea}
 \end{figure}

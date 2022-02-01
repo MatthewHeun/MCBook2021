@@ -382,7 +382,7 @@ why would you pay the costs of production if there were no prospects of a sale?
 Therefore, we use the terms ``production'' and ``consumption'' interchangeably.
 
 %++++++++++++++++++++++++++++++
-\subsection{Economic metabolism}
+\subsection{Economic metabolism}\index{economic metabolism}
 \label{sec:econ_metab}
 %++++++++++++++++++++++++++++++
 
@@ -534,21 +534,21 @@ see Section~\ref{sec:rebound_effect}.
 
 
 %..............................
-\paragraph{Recession}
+\paragraph{Recession}\index{recession}
 %..............................
 
 Economies can grow (particularly when we try to make them grow) but they can also
 shrink.
-A shrinking economy is said to be in recession.
-A full discussion of the mechanisms of recession is beyond the scope of this book,
-but the effect of recessions can be seen in Figure~\ref{fig:CarbonEmissionsGraph}.
+A shrinking economy is said to be in recession\index{recession}.
+A full discussion of the mechanisms of recession\index{recession} is beyond the scope of this book,
+but the effect of recessions\index{recession} can be seen in Figure~\ref{fig:CarbonEmissionsGraph}.
 If affluence~\Aparen{} is a cause of environmental impacts~\Iparen{},
 then reducing \mft{A} is one way to reduce
 \mft{I}, as Figure~\ref{fig:CarbonEmissionsGraph} shows for CO$_2$ emissions.
-However, recessions are unwelcome for many very good reasons.
+However, recessions\index{recession} are unwelcome for many very good reasons.
 No country has yet intentionally tried to shrink its economy.
 
-Moreover, the environmental effects of recessions are not always positive.
+Moreover, the environmental effects of recessions\index{recession} are not always positive.
 Sometimes reducing \mft{A} increases (at least some parts of) \mft{I}.
 For instance, a company going out of business might cause
 environmental contamination, because
@@ -559,7 +559,7 @@ from gas stations that have gone out of business~\cite{brownfields}.
 Similar stories can be told for former industrial sites, mines, and oil and gas wells.
 
 What if there were ways to reduce the size of the economy that did not
-generate the negative effects of a recession?
+generate the negative effects of a recession\index{recession}?
 The next section examines some ideas that have been proposed as alternatives
 to continued economic growth.
 (Note that we examine these ideas without necessarily endorsing them.)

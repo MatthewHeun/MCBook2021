@@ -557,7 +557,7 @@ Example indices include carbon footprint (in CO$_2$ emissions per person),
 the floristic quality index~\cite{Freyman2015},
 the multidimensional poverty index, 
 ecological footprint (in global hectares per person), and
-the human development index (HDI). 
+the Human Development Index (HDI)\index{Human Development Index (HDI)}. 
 Figure~\ref{fig:FootprintHDIGraph} shows ecological footprint vs.\ HDI for 
 the average person in many countries.
 
@@ -631,7 +631,7 @@ Figure \ref{fig:CO2Graph} shows average atmospheric CO$_2$ concentrations over t
 800 thousand years (0.8 million years). 
 Figure~\ref{fig:CarbonEmissionsGraph} shows 
 the rate of world CO$_2$ emission since 1800~\ICOtwoparen{}.
-The clear trend is upward, with small drops corresponding to years of economic recession.
+The clear trend is upward, with small drops corresponding to years of economic recession\index{recession}.
 \textbf{Greenhouse gas} emissions (primarily CO$_2$ released from burning fossil fuels) 
 are raising the atmospheric CO$_2$ concentration and 
 causing the average global temperature to increase. 
@@ -668,7 +668,7 @@ fit_sentence <- function(.df) {
 }
 @
 
-<<CarbonEmissionsGraph, fig.scap="World CO$_2$ emissions~\\ICOtwoparen{} vs.\\ time", fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, \\ICOtwo{} in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
+<<CarbonEmissionsGraph, fig.scap="World CO$_2$ emissions~\\ICOtwoparen{} vs.\\ time", fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, \\ICOtwo{} in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions\\index{recession} temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                                     sheet = "data to plot")
 
@@ -745,9 +745,6 @@ Melting Arctic permafrost releases methane, another very potent greenhouse gas.
 All these positive feedback loops take decades to reach a new steady state.
 Thus, the greenhouse gases that are already in the atmosphere will cause warming
 far into the future.
-
-% The yearly rate of world CO$_2$ emitted since 1800 is shown in Figure~\ref{fig:CarbonEmissionsGraph}.
-% The clear trend is upward, with small drops corresponding to years of economic recession.
 
 Scientists agree that avoiding irreversible effects of climate change\index{climate change}
 requires limiting global average temperature rise to 1.5~\degC{} or less,
@@ -1085,7 +1082,7 @@ New York: Bloomsbury,
       (or pros and cons) of an ancient ecological catastrophe (but colonization success)? 
       How could Rapa Nui be a model for the environmental ethics of a Lunar or Martian colony?
  
- \item The human development index\index{Human Development Index}
+ \item The human development index\index{Human Development Index (HDI)}
       (HDI, Section~\ref{sec:indices}) is a measure of
       life expectancy, expected years of schooling, and gross national income per capita.
       As such, it is a measure of development. 
