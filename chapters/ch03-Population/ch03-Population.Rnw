@@ -69,8 +69,6 @@ are discussed in Section~\ref{sec:malthus_ehrlich_simon}.
 \label{sec:animal_pop}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%some stories about animal populations: passenger pigeons, bison, whales, aurochs, locusts,
-% North American megafauna, North Atlantic cod shoals....
 Currently, humans (36\%) and domestic livestock (60\%) constitute 96\% of the mass of
 mammals on the planet \cite{BarOn2018}---only 4\% of the mass of mammals is 
 wild animals such as whales, bison, deer, and bears. 
@@ -84,7 +82,8 @@ is an extinction rate of less than 0.001\% of species going extinct per year.
 Estimates vary, but all agree that current extinction rates are more than ten 
 times above this limit (0.01\% or greater).
 It fact, the current crisis has been labeled a ``sixth mass extinction event.''
-It is called the Holocene (or Anthropocene) extinction, because it began with 
+It is called the Holocene\index{Holocene} (or Anthropocene\index{Anthropocene})
+extinction, because it began with 
 megafauna extinctions thought to be the result of contact with early modern 
 humans.
 Thus, human-caused extinctions are not unique to the current century.
@@ -104,7 +103,7 @@ In contrast, the mechanisms (that is, the ``how'') behind the decline
 in animal populations are not provided by Equation~\ref{eq:IPARX}.
 Four important mechanisms are summarized below.
 First, habitat destruction\index{habitat loss} plays an important role in the decline of animal populations. 
-For example, in 1875 there was a swarm of Rocky Mountain locusts consisting of 
+For example, in 1875 there was a swarm of Rocky Mountain locusts\index{Rocky Mountain locust} consisting of 
 an estimated 12.5 trillion individuals, 
 weighing 27.5 million tons, and covering an area larger
 the state of California. 
@@ -205,7 +204,7 @@ representing an average growth rate of about 0.1\%/year.
 By 1650~AD, the world population was around 500~million. 
 Population growth slowed because trade and urbanization spread infectious 
 diseases that killed large numbers of people.
-For instance, the Black Death killed 75--200~million people in the 1300s.
+For instance, the Black Death\index{Black Death} killed 75--200~million people in the 1300s.
 World population reached 1~billion (that is, 1000~million) around 1800~AD.
 Population is affected by births and deaths.
 Estimating the populations of antiquity is difficult because 
