@@ -239,7 +239,7 @@ of ingredients in a recipe.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Strong and weak sustainability for resources}
+\section{Strong and weak sustainability for resources}\index{strong sustainability}\index{weak sustainability}
 \label{sec:strong_weak_sust}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -271,12 +271,12 @@ are classified as nonrenewable.
 
 Whether or not a resource is renewable affects the sustainability of its 
 extraction and consumption,
-per definitions of strong and weak sustainability 
+per definitions of strong\index{strong sustainability} and weak sustainability\index{weak sustainability} 
 given in Section~\ref{sec:what_is_sustainability}.
-A criterion for ``strong sustainability'' is 
+A criterion for strong sustainability\index{strong sustainability} is 
 extracting and consuming resources 
 at rates slower than their natural regeneration rates.
-Thus, any consumption of a nonrewable resource is not strongly sustainable.
+Thus, any consumption of a nonrewable resource is not strongly sustainable\index{strong sustainability}.
 
 The economy, being society's metabolism,\index{economic metabolism}
 depends on natural resources
@@ -423,13 +423,13 @@ material_per_gdp %>%
 
 Figure~\ref{fig:total_material_use} 
 shows that resource consumption is growing through time.
-By the strong sustainability criterion,
+By the strong sustainability\index{strong sustainability} criterion,
 any extraction of
 construction minerals, ores and industrial minerals, and fossil energy carriers
 is unsustainable, because
 we are extracting these materials at rates that are faster than their regeneration rates.
 The fact that we are increasing our rate of material extraction
-means that we are running well afoul of the strong sustainability criterion
+means that we are running well afoul of the strong sustainability\index{strong sustainability} criterion
 for these materials.
 On the other hand,
 extraction of biomass could be sustainable if
@@ -438,7 +438,7 @@ Unfortunately, Figure~\ref{fig:per_gdp_material_use} shows that biomass extracti
 is not scaling with GDP.
 In fact, GDP growth is supported exclusively by unsustainable material extraction.
 
-By the strong sustainability criterion, 
+By the strong sustainability\index{strong sustainability} criterion, 
 we live in an unsustainable world!
 
 
@@ -586,7 +586,8 @@ processing used material into recycled products.
 For example, paper recycling uses water for cleaning and de-inking processes.
 Glass recycling requires high-temperature heat for melting processes.
 Whether recycling is, itself, a sustainable means of producing usable products
-depends on the strong or weak sustainability of the recycling process.
+depends on the strong\index{strong sustainability} or
+weak sustainability\index{weak sustainability} of the recycling process.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -637,8 +638,9 @@ with paper or cardboard wrappings (renewable), and
 use of solar electricity (renewable) instead of coal electricity (nonrenewable).
 Switching from consuming nonrenewable resources
 to consuming renewable resources
-is an important aspect of sustainability, 
-for both the weak and the strong versions.%
+is an important aspect of sustainability, for both
+the weak\index{weak sustainability} and 
+the strong\index{strong sustainability} versions.%
 \footnote{
   In some cases, renewable resources still have sustainability impacts.
   For example, biomass is a renewable energy source, 
@@ -686,7 +688,7 @@ expensive, renewable resource.
 In both cases (ships and lights), none of the options
 (wood ships, steel ships,
 wax candles, whale oil lanterns, kerosene lanterns, or electric lights)
-meets the strong sustainability criterion.
+meets the strong sustainability\index{strong sustainability} criterion.
 However, all of wood ships, wax candles, whale oil lanterns, town gas lamps, and
 kerosene lamps proved to be weakly sustainable.
 We found substitutes for the expensive natural resources
@@ -807,7 +809,7 @@ economic growth (Figure~\ref{fig:GDPGraph-Nordhaus}).
 However, on a per-capita basis,
 energy consumption has grown substantially over the last two centuries;
 see Figure~\ref{fig:EnergyPerPersonGraph}.
-By the strong sustainability criterion of consuming resources at a rate
+By the strong sustainability\index{strong sustainability} criterion of consuming resources at a rate
 beneath their regeneration rate,
 none of the fossil fuel consumption shown in Figure~\ref{fig:PrimaryEnergyGraph}
 is sustainable. 
@@ -1157,7 +1159,7 @@ This chapter investigated the resource intensity of economic activity~\Rparen{}.
 It is clear that economies use a wide variety of resources
 across all sectors of the economy.
 Many resources are used unsustainably, 
-as measured by both strong and weak sustainability criteria.
+as measured by both strong\index{strong sustainability} and weak sustainability\index{weak sustainability} criteria.
 For the prime example of primary energy intensity\index{primary energy intensity} of economic activity,
 we found that~\REp{} has decreased substantially since 1800, 
 but only because we are using far less biofuels per dollar of GDP
@@ -1223,22 +1225,22 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         humans' use of materials that are not available to any other animal?
         Are there any?
 
-  \item What are the positive features of the strong sustainability criterion?
-        What are the weaknesses of the strong sustainability criterion?
-        Is the strong sustainability criterion too severe for modern life today?
+  \item What are the positive features of the strong sustainability\index{strong sustainability} criterion?
+        What are the weaknesses of the strong sustainability\index{strong sustainability} criterion?
+        Is the strong sustainability\index{strong sustainability} criterion too severe for modern life today?
         Justify your answer.
-        Can strong sustainability be applied selectively to some resources but
+        Can strong sustainability\index{strong sustainability} be applied selectively to some resources but
         not others or should all resources be judged equally?
-        What are the implications of not applying the strong sustainability
+        What are the implications of not applying the strong sustainability\index{strong sustainability}
         criterion universally to all resources?
 
-  \item Why is the weak sustainability criterion a good criterion?
-        What are the drawbacks to weak sustainability criteria?
+  \item Why is the weak sustainability\index{weak sustainability} criterion a good criterion?
+        What are the drawbacks to weak sustainability\index{weak sustainability} criteria?
         What is the basis for your judgement?
 
-  \item In which circumstances is a weak sustainability criterion appropriate?
-        In which circumstances is the strong sustainability criterion appropriate?
-        Is weak sustainability good enough?
+  \item In which circumstances is a weak sustainability\index{weak sustainability} criterion appropriate?
+        In which circumstances is the strong sustainability\index{strong sustainability} criterion appropriate?
+        Is weak sustainability\index{weak sustainability} good enough?
         Give examples.\label{question:weak_sust_good_enough}
 
   \item Time is our most constrained resource. The human lifespan is about 4000 weeks.
@@ -1413,8 +1415,10 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
   \item Choose a material (not germanium or zinc)
         from the European Commission list of critical raw materials\index{critical raw materials (CRMs)}
         in Table~\ref{tab:CRMs}.
-        Do today's consumption rates of that material meet weak or strong sustainability criteria?
-        Provide suggestions for ways to bring consumption rates closer to strong sustainability.
+        Do today's consumption rates of that material meet weak\index{weak sustainability}
+        or strong sustainability\index{strong sustainability} criteria?
+        Provide suggestions for ways to bring consumption rates closer
+        to strong sustainability\index{strong sustainability}.
 
   \item Research the source locations for the materials in Table~\ref{tab:CRMs}.
         How would you characterize the geographic distribution 
@@ -1429,7 +1433,10 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Why?
 
   \item Visit a recycling center and assess its sustainability.
-        Is the center an example of strong sustainability, weak sustainability, or neither?
+        Is the center an example 
+        of strong sustainability\index{strong sustainability}, 
+        weak sustainability\index{weak sustainability}, or 
+        neither?
         Where is are the recycling processes consuming energy or other materials?
         Is the energy fossil-based or renewable?
 

@@ -184,22 +184,23 @@ When considering the meaning of sustainability, the two most important questions
 The second of these questions is perhaps easier to answer.
 Although humans seem to have inherent cognitive difficulties in planning for
 time scales significantly longer than the human lifespan,
-strong sustainability is achieved only if the answer is
+\textbf{strong sustainability}\index{strong sustainability} is achieved only if the answer is
 ``indefinitely'' or ``forever.''
 Our current sustainability crisis has been thousands of years in the making~\cite{Sanderman2017}
 and will likely require millions of years to recover~\cite{Davis11262}.
-A weak sustainability criterion is sustainability over a long (by human standards)
+A \textbf{weak sustainability}\index{weak sustainability} criterion is sustainability over a long (by human standards)
 time frame, perhaps 50 years, which is on the order of one human adulthood.%
 \footnote{
-  Our criteria for strong and weak sustainability are physical and
+  Our criteria for strong\index{strong sustainability} and weak sustainability\index{weak sustainability} are physical and
   follow \citet{Graedel:2010ab}.
-  Other definitions for weak and strong sustainability exist.
-  One approach to weak and strong sustainability is economic.
-  It defines strong sustainability as protecting natural capital
+  Other definitions for weak\index{weak sustainability} and strong sustainability\index{strong sustainability} exist.
+  One approach to weak\index{weak sustainability} and strong\index{strong sustainability} sustainability is economic.
+  It defines strong sustainability\index{strong sustainability} as protecting natural capital
   for a certain period of time
-  (equivalent to our weak sustainability definition if the time horizon is 50 years).
+  (equivalent to our weak sustainability\index{weak sustainability} definition 
+  if the time horizon for protecting natural capital is 50 years).
   In the economic approach,
-  weak sustainability allows produced capital to substitute for natural capital
+  weak sustainability\index{weak sustainability} allows produced capital to substitute for natural capital
   across a period of time.
   See \citet{Dietz:2007tu} for details.
 }
@@ -714,8 +715,9 @@ the full restoration is likely to cost more than \euro{8}~billion.
       Minister Indira Ghandi.
       What does this statement mean?
       In what ways is this statement true? In what ways is it untrue?
-      How does this statement address the debate for strong environmental
-      sustainability versus ``sustainable development?''
+      How does this statement address the debate 
+      for strong environmental sustainability\index{strong sustainability} 
+      versus ``sustainable development?''
 
 \item In Section \ref{sec:what_is_sustainability},
       it was noted that ``needs are subjective.'' Would you

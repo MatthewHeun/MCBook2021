@@ -58,7 +58,7 @@ of anthropogenic greenhouse gas (GHG) emissions~\cite{SRCCL2019}.
 Agriculture has strong links to land use, which is the focus of 
 Chapter \ref{chap:land_use_urban_planning}.
 Chapters~\ref{chap:households} and~\ref{chap:transportation} hint
-that land use has strong sustainability implications. 
+that land use has strong sustainability\index{strong sustainability} implications. 
 Those hints become much more concrete and explicit in this chapter and 
 in Chapter~\ref{chap:land_use_urban_planning}. 
 Agriculture is the major use to which humans put the land.
@@ -182,19 +182,19 @@ of vehicle manufacturing, use, and disposal.
 In a similar manner,
 defining appropriate inputs and outputs for agricultural sustainability 
 is a key consideration.
-Recall the definitions of weak and strong sustainability from 
+Recall the definitions of weak\index{weak sustainability} and strong sustainability\index{strong sustainability} from 
 Section~\ref{sec:strong_weak_sust}.
 % and the concept of ecosystem provisioning services from Section~\ref{sec:ecosystem_services}.
-Strong sustainability requires not using renewable resources 
+Strong sustainability\index{strong sustainability} requires not using renewable resources 
 faster than they can regenerate; 
 see section~\ref{sec:what_is_sustainability}.
 Consider \textbf{soil fertility}\index{soil fertility}, which is a renewable provisioning service 
 of the ecosystem; 
 see Chapter~\ref{chap:planetary_boundaries}.
 If agricultural practices decrease soil fertility\index{soil fertility}, 
-agriculture can not be considered strongly sustainable.
+agriculture can not be considered strongly sustainable\index{strong sustainability}.
 If agriculture depends on a nonrenewable resource, 
-such as phosphate fertilizers, it cannot be considered strongly sustainable.
+such as phosphate fertilizers, it cannot be considered strongly sustainable\index{strong sustainability}.
 If agriculture is rapidly depleting soil fertility\index{soil fertility}
 such that the soil will be unusable in less than 50~years,
 agriculture is not weakly sustainable.
@@ -251,7 +251,7 @@ can be enhanced with fertilizers and/or agrichemicals.
 The most common fertilizers contain nitrogen, phosphorous, and potassium. 
 Agrichemicals include herbicides, pesticides, and fungicides. 
 To the extent that any of these are derived from nonrenewable feedstocks, such as 
-fossil fuels, their use is not strongly sustainable.
+fossil fuels, their use is not strongly sustainable\index{strong sustainability}.
 Phosphate fertilizers are necessary for high 
 \textbf{agricultural yields}\index{yield!agricultural}, but
 they originate from (nonrenewable) mineral deposits.
@@ -781,7 +781,8 @@ the world's energy supply to renewable energy,
 given the energy-intensive nature of modern agriculture and 
 its attendant low EROI\index{energy return on investment (EROI)}.
 Of course, a transition to renewable energy would benefit more sectors than just agriculture;
-it would be universally beneficial and, in fact, is necessary for strong sustainability.
+it would be universally beneficial and, in fact, is necessary 
+for strong sustainability\index{strong sustainability}.
 
 Renewable energy sources require lots of land (Figure~\ref{fig:PowerDensity}), 
 land that is already mostly used for agriculture.
