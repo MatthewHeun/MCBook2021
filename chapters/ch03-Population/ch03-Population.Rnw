@@ -17,7 +17,7 @@
 \epigraph{Literature is mostly about having sex and not much about having children. 
 Life is the other way round.}{David Lodge}
 
-Equation \ref{eq:IPARX} (repeated below for convenience) 
+Equation~\ref{eq:IPARX} (repeated below for convenience) 
 expresses human impact on the Earth as the product
 of population~\Pparen{}, 
 affluence~\Aparen{}, resource intensity of the economy~\Rparen{}, and
@@ -97,7 +97,7 @@ it does in the present crisis.)
 We should distinguish between the reason(s) and the mechanism(s) for 
 the decline in animal populations. 
 Population decline is an impact (\:\!\mft{I}) from the left-hand side of 
-Equation \ref{eq:IPARX}. 
+Equation~\ref{eq:IPARX}. 
 The reason(s) (that is, the ``why'') are given on the right-hand side of
 Equation~\ref{eq:IPARX}, namely the \mft{PARX} terms.
 In contrast, the mechanisms (that is, the ``how'') behind the decline 
@@ -181,7 +181,7 @@ MKHthemes::xy_theme()
 @
 
 
-As shown in Equation \ref{eq:IPARX}, the number of individual humans~\Pparen{} is one source 
+As shown in Equation~\ref{eq:IPARX}, the number of individual humans~\Pparen{} is one source 
 of environmental impacts.
 Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800~AD to present.
 As of July 2021, the world's human population is 7.7--7.9~billion with a
@@ -379,7 +379,7 @@ Thus, population is predicted to first grow rapidly and then stabilize.
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Demographic transition theory gives us some hope for sustainability, namely, that
-the total human population~\Pparen{} won't \textit{continue} to grow exponentially\index{exponential growth}.
+the total human population~\Pparen{} won't continue to grow exponentially\index{exponential growth}.
 On the other hand, slowing of growth is predicated on increasing GDP per capita
 (the \mft{A} term in Equation~\ref{eq:IPARX}).
 \end{mcframe}
@@ -898,11 +898,10 @@ published August 17, 2020. \\
       growth, if any?
       What are its pros and cons in forming a family?
 
-\item Notice the population distribution indicated by Figures \ref{fig:PopulationGraph}
-      and \ref{fig:half_population}.
-      Does distribution of population complicate the issues raised in
-      \ref{question:third_rail} and 
-      \ref{question:population_control}?
+\item Notice the population distribution indicated by Figures~\ref{fig:PopulationGraph}
+      and~\ref{fig:half_population}.
+      Does distribution of population complicate the issues raised in~\ref{question:third_rail} 
+      and~\ref{question:population_control}?
       If so, how?
       What options does the rest of the world have for decreasing population
       growth in Asia (where most of the world's people are) and Africa (where
@@ -932,7 +931,7 @@ published August 17, 2020. \\
       concerted effort will be made (or not) to end the dragon (that is, old age).
       Who, in the real world, plays the role of the king?
 
-\item What things have a \textit{higher} environmental impact as populations urbanize?
+\item What things have a higher environmental impact as populations urbanize?
       What things have lower impact?
 
 \item Describe where you live in terms of population density\index{population density}.
@@ -987,7 +986,7 @@ published August 17, 2020. \\
 \begin{projects}
 
 \item Run several population simulations using different models.
-      Do the UN projections shown in Figure \ref{fig:UN_population_prospect}
+      Do the UN projections shown in Figure~\ref{fig:UN_population_prospect}
       align with your projections? What assumptions or starting
       conditions are necessary to get alignment? Do you think this
       is reasonable?
