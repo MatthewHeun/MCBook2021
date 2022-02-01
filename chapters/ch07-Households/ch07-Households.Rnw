@@ -13,7 +13,8 @@
 Equation \ref{eq:IPARX} and Chapters~\ref{chap:introduction}--\ref{chap:impact_intensity}
 developed a framework for sustainability thinking. 
 This chapter is the first of four chapters to apply that framework to some
-areas of life where sustainability challenges are relevant and important. 
+areas of life where sustainability challenges\index{sustainability challenges}
+are relevant and important. 
 The areas are selected based, in part, on where energy
 is consumed (Figure \ref{fig:LLNL_energy_sankey}), that is, 
 the drivers of carbon emissions (Table \ref{tab:corrected_co2_emissions}).
@@ -514,7 +515,7 @@ of U.S.\ final energy\index{final energy} consumption in 2015.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sustainability challenges in households}
+\section{Sustainability challenges in households}\index{sustainability challenges!households}
 \label{sec:sustainability_challenges_households}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -553,8 +554,8 @@ Furthermore, high population density\index{population density} is often accompan
 negative social dynamics.
 (See Chapters~\ref{chap:transportation} and \ref{chap:land_use_urban_planning}
 for more discussion of these tradeoffs.)
-A sustainability challenge associated with household location is 
-``how can we design cities that retain the advantages of urban living
+A sustainability challenge associated with household location\index{sustainability challenges!household location} 
+is ``how can we design cities that retain the advantages of urban living
 without the drawbacks?''
 
 
@@ -610,7 +611,7 @@ solar energy incident upon the window.
 SHGC\index{solar heat gain coefficient (SHGC)} values range from 0 to 1,
 and lower SHGC\index{solar heat gain coefficient (SHGC)}
 values indicate better insulative properties.
-A sustainability challenge associated with the building envelope
+A sustainability challenge associated with the building envelope\index{sustainability challenges!building envelope}
 is ``how do we design livable and enjoyable spaces that are 
 energy efficient and affordable?''
 
@@ -623,8 +624,8 @@ while the home is in use.
 However, the home will embody more energy and carbon,
 because many insulation types
 are energy-intensive to manufacture (especially foam). 
-A sustainability challenge associated with embodied energy is
-``how do we ensure highly-insulative building envelopes
+A sustainability challenge associated with embodied energy\index{sustainability challenges!embodied energy} 
+is ``how do we ensure highly-insulative building envelopes
 with minimal embodied energy?''
 
 
@@ -676,8 +677,8 @@ but typical values is 2--3.
 Heat pumps with higher COP\index{coefficient of performance (COP)}
 will be more efficient and cost less to operate, 
 even if they have higher purchase price.
-A sustainability challenge associated with heating systems is
-``how can we encourage home builders and home owners to install 
+A sustainability challenge associated with heating systems\index{sustainability challenges!heating systems}
+is ``how can we encourage home builders and home owners to install 
 high-efficiency units, despite high initial cost?''
 
 
@@ -701,8 +702,8 @@ value of 13 BTU/W$\cdot$hr is mandated.
 %**** Find a reference for these SEER numbers. ****
 % See email.
 Higher efficiency is normally associated with higher purchase price.
-Sustainability challenges associated with air conditioners include
-``how can we encourage home builders and home owners to install 
+Sustainability challenges associated with air conditioners\index{sustainability challenges!air conditioners}
+include ``how can we encourage home builders and home owners to install 
 high-efficiency units, despite high initial cost?''
 and 
 ``how can we manufacture energy-efficient air-conditioners inexpensively?''
@@ -720,8 +721,8 @@ a measure of energy required to deliver warm water
 Water heaters are binned by size (very small, low, medium, and high) and
 rated within each bin.
 High-efficiency water heaters tend to be more expensive. 
-Thus, a sustainability challenge that emerges from water heating is
-``how can we encourage home builders and home owners to install 
+Thus, a sustainability challenge that emerges from water heating\index{sustainability challenges!water heating} 
+is ``how can we encourage home builders and home owners to install 
 high-efficiency units, despite high initial cost?''
 
 
@@ -742,8 +743,8 @@ compared to incandescent lamps\index{incandescent lamp}.
 
 That said, the purchase price of 
 a high-efficiency lamp can be higher than the purchase price of an incandescent lamp\index{incandescent lamp}. 
-A sustainability challenge associated with lighting is
-``how can we encourage home owners to replace incandescent lamps\index{incandescent lamp} with LED lamps\index{LED lamp},
+A sustainability challenge associated with lighting\index{sustainability challenges!lighting}
+is ``how can we encourage home owners to replace incandescent lamps\index{incandescent lamp} with LED lamps\index{LED lamp},
 despite higher initial cost?''
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
