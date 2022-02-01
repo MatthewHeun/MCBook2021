@@ -776,7 +776,7 @@ Any reduction in affluence
 runs counter to what people want (or say they want).
 
 When we look at sustainability through the economic lens,
-Figure \ref{fig:FootprintHDIGraph}
+Figure~\ref{fig:FootprintHDIGraph}
 suggests the only way to live sustainably is with lower human development. 
 Indeed, many proposals for becoming more sustainable imply an
 effective reduction of affluence.
@@ -789,7 +789,7 @@ Globally, social sustainability\index{social sustainability}
 is often predicated on increasing affluence.
 
 Some people have chosen (relative) poverty by trying to escape the economic
-system; see \ref{project:off-grid} for a few examples.
+system; see~\ref{project:off-grid} for a few examples.
 Often, for these people, independence or being ``off grid'' is the main attraction.
 However, even in the most extreme cases, it has proven impossible to completely sever an 
 economic relationship with the rest of humanity.
@@ -950,7 +950,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       \item Discuss the energy impacts of such a scheme, particularly with 
       respect to transportation. Is this actually circular?
       \item Consider the price of such garments. What is the net effect of buying 
-      such garments as opposed to more bargain clothing (make reference to Equation \ref{eq:IPARX}
+      such garments as opposed to more bargain clothing (make reference to Equation~\ref{eq:IPARX}
       in your answer). 
       \item Is clothing a good candidate for a circular economy\index{circular economy}?
       What more would you wish to know to answer with confidence? 
@@ -1007,7 +1007,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       wasteful. All of us should be as efficient as possible. 
       To what extent should we be as efficient as possible? In what ways? 
       Are some areas or domains ``off-limits'' to efficiency maximizing and what are they? Why?
-      (Other approaches to this question are presented in Chapter \ref{chap:government}.)
+      (Other approaches to this question are presented in Chapter~\ref{chap:government}.)
       
 \item IPCC6's most optimistic scenario~\cite{IPCC:2018aa} is a 0.5~m 
       sea-level rise by 2100.

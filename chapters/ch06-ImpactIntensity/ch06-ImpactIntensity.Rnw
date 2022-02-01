@@ -1340,6 +1340,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
   \item Research the source(s) of ocean plastic pollution.  
         What are the effects of ocean plastics on human health and communities?
         Is plastic in the oceans a single problem or several?
+        \label{project:ocean_plastic}
         
   \item Section~\ref{sec:rebound_effect} discusses the rebound effect\index{rebound effect},
         wherein monetary savings from energy efficiency\index{energy efficiency} are spent elsewhere in the economy,
