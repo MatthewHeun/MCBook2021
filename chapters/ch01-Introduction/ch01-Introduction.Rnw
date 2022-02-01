@@ -278,9 +278,9 @@ Energy and carbon emissions link together many of our sustainability challenges\
 \end{mcframe}
 
 The most oft-quoted~\cite{Quental2011} definition of sustainability is that
-``[s]ustainable development meets the needs of the present without
+\textbf{sustainable development}\index{sustainable development} meets the needs of the present without
 compromising the ability of future generations to meet their own needs''~\cite{Brundtland}.
-Note that ``sustainable development'' is an oxymoron, %and is not the same as sustainability.
+Note that sustainable development\index{sustainable development} is an oxymoron, %and is not the same as sustainability.
 because ``development'' implies constant improvement, which cannot be sustained
 forever on a planet with finite resources.
 Furthermore, ``needs'' are subjective.
@@ -718,7 +718,7 @@ the full restoration is likely to cost more than \euro{8}~billion.
       In what ways is this statement true? In what ways is it untrue?
       How does this statement address the debate 
       for strong environmental sustainability\index{strong sustainability} 
-      versus ``sustainable development?''
+      versus sustainable development\index{sustainable development}?
 
 \item In Section \ref{sec:what_is_sustainability},
       it was noted that ``needs are subjective.'' Would you
