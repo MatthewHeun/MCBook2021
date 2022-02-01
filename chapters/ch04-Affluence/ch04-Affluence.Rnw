@@ -18,7 +18,7 @@ it takes a serious look at its lifestyle.}{Pope John Paul II}
 
 Equation~\ref{eq:IPARX} (repeated below for convenience)
 is our conceptual framework for considering sustainability.
-Chapter~\ref{chap:planetary_boundaries} discussed planetary boundaries and the impact
+Chapter~\ref{chap:planetary_boundaries} discussed planetary boundaries\index{planetary boundaries} and the impact
 of human activities on those boundaries, that is, the left-hand side of Equation~\ref{eq:IPARX}.
 Chapter~\ref{chap:population} is about the first term on the right-hand side of 
 Equation~\ref{eq:IPARX}, world population and its dynamics. 
@@ -613,7 +613,7 @@ Further, a steady-state economy\index{steady-state economy} is not necessarily s
 The sustainability of an economy is not determined by its growth rate
 (usually measured in \%/year).
 Rather, the sustainability of an economy is determined by its level or size
-(usually measured in \$/year) relative to planetary boundaries.
+(usually measured in \$/year) relative to planetary boundaries\index{planetary boundaries}.
 If the steady-state level of the economy
 is above a sustainable threshold
 (and planetary limits have been exceeded),
@@ -697,7 +697,7 @@ would bring us closer to sustainability.
 %..............................
 
 A doughnut economy\index{doughnut economy} keeps the level of economic activity
-within planetary boundaries
+within planetary boundaries\index{planetary boundaries}
 (represented by an outer circle)
 while simultaneously lifting people out of poverty 
 (represented by an inner circle).
@@ -706,7 +706,7 @@ represents the ``safe operating space'' for humanity.
 The doughnut economy\index{doughnut economy} imposes both a 
 ``floor'' and a ``ceiling'' on economic activity,
 reducing income disparity between rich and poor and
-respecting planetary boundaries.
+respecting planetary boundaries\index{planetary boundaries}.
 Thus, the doughnut economy\index{doughnut economy} model attempts to correct 
 both the flaws of a steady-state economy\index{steady-state economy}, namely that
 ``steady-state'' may not necessarily have small enough impact to be sustainable
@@ -720,7 +720,7 @@ steady-state\index{steady-state economy},
 degrowth\index{degrowth economy}, and
 circular economy\index{circular economy}
 models.)
-First, tying economic level(s) to particular planetary boundaries might not be
+First, tying economic level(s) to particular planetary boundaries\index{planetary boundaries} might not be
 straightforward, particularly because we don't know location of the boundaries
 with certainty, in some cases.
 A better approach is to address, for example, CO$_2$ emissions directly.

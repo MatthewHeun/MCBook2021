@@ -263,12 +263,12 @@ truly global scale (if one were to occur).
 Equation~\ref{eq:IPARX} frames sustainability in terms of environmental ``impacts,''
 that is, negative effects on the environment resulting from human activity. 
 Broadly, there are two approaches for managing or responding to those impacts. 
-Planetary boundaries describe the maximum (desirable) level of effects,
+Planetary boundaries\index{planetary boundaries} describe the maximum (desirable) level of effects,
 that is, they establish a limit on the left-hand side of Equation~\ref{eq:IPARX}.
 The second method uses a weighted average, called an \textbf{index}, of factors as 
 a tool for managing those impacts.
 Indices describe a collection of behaviors with a single number. 
-Whereas the planetary boundaries are limits for single variables, indices are a mix
+Whereas the planetary boundaries\index{planetary boundaries} are limits for single variables, indices are a mix
 of variables from both sides of Equation~\ref{eq:IPARX}.
 Neither method describes how changes to become more sustainable should be made, 
 but indices implicitly describe the tradeoffs among different impacts. 
@@ -318,7 +318,7 @@ The upper limits for these indicators are intended to define a
 
 \begin{table}\centering
 \caption[Planetary boundaries]
-        {Some planetary boundaries. \emph{Source}: \citet{Rockstrom2009,SteffenRR2015}.}
+        {Some planetary boundaries\index{planetary boundaries}. \emph{Source}: \citet{Rockstrom2009,SteffenRR2015}.}
 \label{tab:planetBoundaries}
 \begin{tabular}{l l}
 \toprule
@@ -353,7 +353,7 @@ Generating new species by natural evolution to replace the ones that have been
 lost will take several million years~\cite{Davis11262}.
 
 
-<<CO2Graph, fig.scap="Atmospheric CO$_2$ concentration\\index{atmospheric CO$_2$ concentration} vs.\\ time", fig.cap="Atmospheric CO$_2$ concentration over time. The red line shows the planetary boundary for atmospheric CO$_2$ concentration, 350~ppm. The vertical line shows the year 2022. \\emph{Sources}: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Tans:2022vw}.">>=
+<<CO2Graph, fig.scap="Atmospheric CO$_2$ concentration\\index{atmospheric CO$_2$ concentration} vs.\\ time", fig.cap="Atmospheric CO$_2$ concentration over time. The red line shows the planetary boundary\\index{planetary boundaries} for atmospheric CO$_2$ concentration, 350~ppm. The vertical line shows the year 2022. \\emph{Sources}: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Tans:2022vw}.">>=
 # Gather data for CO2 vs. time graph
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>%
   dplyr::mutate(
@@ -392,7 +392,7 @@ Agencies such as the U.S.\ Environmental Protection Agency\index{Environmental P
 and the European Commission\index{European Commission}
 (or member states) enforce the regulations.
 
-Using planetary boundaries for decision making is similar to using guidelines for when to change
+Using planetary boundaries\index{planetary boundaries} for decision making is similar to using guidelines for when to change
 automobile engine oil 
 (at least in those automobiles that use engine oil).
 Companies that provide oil-change services recommend frequent oil changes, perhaps as 
@@ -406,7 +406,7 @@ However, no one would recommend a 100,000 mile replacement schedule.
 If the oil is not replaced, significant damage will be done to the engine, 
 rendering the car inoperative.
 In this analogy, the car's engine represents planet Earth. 
-The number of miles before an oil change is the the planetary boundary. 
+The number of miles before an oil change is the the planetary boundary\index{planetary boundaries}. 
 Perhaps the boundary has a little bit of slack.
 Replacing the oil at 5000 miles or 5007 miles won't make a difference. 
 However, drastically exceeding the limit will result in significant, costly, 
@@ -415,7 +415,7 @@ and potentially irreparable damage to the engine.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-There may be different estimates of planetary boundaries due to modeling 
+There may be different estimates of planetary boundaries\index{planetary boundaries} due to modeling 
 and measurement uncertainty.
 However, dramatic consequences will still result if the actual limits are 
 greatly exceeded.
@@ -569,7 +569,7 @@ Figure~\ref{fig:FootprintHDIGraph} shows ecological footprint\index{ecological f
 HDI\index{Human Development Index (HDI)} for 
 the average person in many countries.
 
-In contrast to planetary boundaries, which are hard biophysical limits, indices 
+In contrast to planetary boundaries\index{planetary boundaries}, which are hard biophysical limits, indices 
 typically represent aggregated behavior. 
 Aggregation allows grouping together of things that are different.
 For example, the HDI\index{Human Development Index (HDI)}
@@ -578,12 +578,12 @@ and gross national income.
 Another example is CO$_2$ equivalents, which expresses the global warming 
 potential of various gases such as methane\index{methane},
 nitrous oxides\index{nitrous oxides (NO$_\mathrm{x}$)}, and
-fluorinated gases in terms of the
+fluorinated gases\index{fluorinated gases} in terms of the
 amount of carbon dioxide
 that would give the same amount of warming,
 disregarding any other environmental effects.
 
-Indices and biophysical limits, such as planetary boundaries, exist to guide 
+Indices and biophysical limits, such as planetary boundaries\index{planetary boundaries}, exist to guide 
 decision making. 
 The weightings inherent in indices express preferences for tradeoffs among the 
 different variables in the index. 
@@ -649,7 +649,7 @@ The clear trend is upward, with small drops corresponding to years of economic r
 are raising the atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration} and 
 causing the average global temperature to increase. 
 The current average atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration} is an example of humanity
-exceeding a planetary boundary. 
+exceeding a planetary boundary\index{planetary boundaries}. 
 Because the carbon cycle\index{carbon cycle} is one of Earth's 
 regulating and support ecosystem services\index{regulating and supporting services} and
 because the atmosphere is comprehensively global, 
@@ -905,7 +905,7 @@ Human activities can degrade or destroy the ability of the ecosystem\index{ecosy
 those services.
 \mft{I}, the left-hand side of the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX})
 collects the various ways that ecosystem services\index{ecosystem services} can be affected.
-Maximum permissible levels for the components of~\mft{I} are called planetary boundaries.
+Maximum permissible levels for the components of~\mft{I} are called planetary boundaries\index{planetary boundaries}.
 Indices are a tool to help us aggregate information and manage impacts.
 The next four chapters will look at the terms on the right-hand side 
 of the IPARX identity\index{IPARX identity}.
