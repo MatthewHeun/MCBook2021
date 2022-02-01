@@ -340,7 +340,7 @@ each type of resource. (That is, \mft{X} is a matrix quantity.)
 
 In broad strokes, sustainability can be seen in the \mft{I} term (environmental impacts) and
 in resource extraction\index{resource extraction} (the numerator of \mft{R} and the denominator of \mft{X}\:).
-If we emit wastes at a rate greater than can be assimilated by the environment
+If we emit wastes\index{waste} at a rate greater than can be assimilated by the environment
 (\:\!\mft{I} too large), we are unsustainable.
 If we withdraw resources from the environment at a rate greater than their regeneration rate,
 we are unsustainable.
@@ -486,7 +486,7 @@ Salt water can be converted to fresh water.
 Petroleum or natural gas can be converted to pharmaceuticals or plastics.
 
 Finally, energy is the master resource\index{master resource (energy)}, because
-it is needed to break down and dispose of wastes.
+it is needed to break down and dispose of wastes\index{waste}.
 Building a landfill takes energy.
 Hauling garbage to the landfill takes energy.
 Even the decomposition of compost takes sunlight, air, and rain.

@@ -76,7 +76,7 @@ Ecosystem services\index{ecosystem services} can be considered as natural capita
 ``Capital'' refers to an improvement or building that is economically productive 
 or valuable; see Chapter~\ref{chap:affluence}.
 The ecosystem\index{ecosystem} produces value for human society by creating many things we use 
-and disposing of many of our wastes.
+and disposing of many of our wastes\index{waste}.
 Just as concepts of value and ownership motivate individuals and organizations
 to care for and manage their capital stocks, there have been many attempts to classify
 and value natural capital. 
@@ -883,7 +883,7 @@ spm_10_data %>%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 This chapter discussed the many services provided by the Earth's ecosystem\index{ecosystem},
-such as materials and energy, waste removal, and recreational opportunities.
+such as materials and energy, waste\index{waste} removal, and recreational opportunities.
 Human activities can degrade or destroy the ability of the ecosystem\index{ecosystem} to supply 
 those services.
 \mft{I}, the left-hand side of the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX})

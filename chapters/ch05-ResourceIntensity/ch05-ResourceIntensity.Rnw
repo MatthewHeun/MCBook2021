@@ -22,7 +22,7 @@ economic affluence, the \mft{A} term in the IPARX identity\index{IPARX identity}
 repeated below for convenience). 
 Because the economy is society's metabolism\index{economic metabolism},
 economic growth and increasing affluence
-mean increasing use of natural resources and emission of wastes. 
+mean increasing use of natural resources and emission of wastes\index{waste}. 
 This chapter explores the sustainability implications of acquisition and consumption of resources, 
 which, when divided by GDP, becomes the resource intensity of the economy~\Rparen{}.
 
@@ -38,7 +38,7 @@ Where would you be without air and water to breathe and drink?
 Without minerals to make cars?
 Without timber to build homes?
 Without healthy soil to grow food?
-Without oceans and atmosphere to accept wastes?
+Without oceans and atmosphere to accept wastes\index{waste}?
 Without coal, oil, and methane to make electricity, gasoline, and natural gas?
 Nowhere.
 
@@ -288,7 +288,7 @@ manufactured objects of all types:
 cars and the roads on which they travel, 
 homes and the utilities that sustain life,
 food and the refrigerators that maintain freshness,
-toilets and the sewer systems that remove wastes.
+toilets and the sewer systems that remove wastes\index{waste}.
 Furthermore, the operation of all these systems requires energy, 
 the master resource\index{master resource (energy)}.
 
@@ -341,7 +341,7 @@ print(crm_xtab,
 
 
 The rate at which the world's economy has been extracting resources
-to create products, create infrastructure, and deal with wastes
+to create products, create infrastructure, and deal with wastes\index{waste}
 has been growing in recent decades.
 % In fact, when the economy grows, the demand for goods and services grows.
 % When the demand for goods and services grows, 
@@ -450,18 +450,18 @@ we live in an unsustainable world!
 
 A weak sustainability\index{weak sustainability} criterion is that resources are extracted slowly enough
 to invent and deploy substitute(s) at scale before the resource is depleted.
-A similar weak sustainability\index{weak sustainability} criterion can be established for wastes.
-Wastes should be emitted slowly enough for their accumulation in the environment
+A similar weak sustainability\index{weak sustainability} criterion can be established for wastes\index{waste}.
+Wastes\index{waste} should be emitted slowly enough for their accumulation in the environment
 to pose no problems before remediation technologies can be invented and deployed
-at scale to dispose of the wastes.
+at scale to dispose of the wastes\index{waste}.
 A time horizon is needed for evaluating the weak sustainability\index{weak sustainability} criterion,
 typically 50 years.
 Thus, extraction of a resource is weakly sustainable\index{weak sustainability} so long as
 the remaining stock is sufficient to last 50 years at today's extraction rate
 (and, possibly expected future extraction rates).
-And emission of wastes is weakly sustainable\index{weak sustainability} so long as 
+And emission of wastes\index{waste} is weakly sustainable\index{weak sustainability} so long as 
 remediation technologies will be deployed 
-to ameliorate the wastes within 50 years.
+to ameliorate the wastes\index{waste} within 50 years.
 
 To evaluate whether extraction of a resource meets the weak sustainability\index{weak sustainability} criterion,
 the following steps can be performed.
@@ -485,29 +485,30 @@ the following steps can be performed.
 
 \end{enumerate}
 %
-A similar approach can be used for emission of wastes, like CO$_2$.
+A similar approach can be used for emission of wastes\index{waste}, like CO$_2$.
 %
 \begin{enumerate}
 
-  \item Establish the amount of waste in the environment, the maximum allowable
-        amount of waste in the environment as of today, and the 
-        rate at which the ecosystem\index{ecosystem} renders the waste inert.
+  \item Establish the amount of waste\index{waste} in the environment, the maximum allowable
+        amount of waste\index{waste} in the environment as of today, and the 
+        rate at which the ecosystem\index{ecosystem} renders the waste\index{waste} inert.
   
-  \item Establish the ``budget'' for waste emission by subtracting the 
-        amount of waste in the environment from the maximum allowable waste in the environment. 
+  \item Establish the ``budget'' for waste\index{waste} emission by subtracting the 
+        amount of waste\index{waste} in the environment from the maximum allowable waste\index{waste} in the environment. 
         
-  \item Divide the budget by 50~years and subtract the rate at which the ecosystem\index{ecosystem} renders the waste inert.
-        The result is the maximum allowable waste emission rate
+  \item Divide the budget by 50~years and subtract the rate at which the ecosystem\index{ecosystem} 
+        renders the waste\index{waste} inert.
+        The result is the maximum allowable waste\index{waste} emission rate
         for weak sustainability\index{weak sustainability}~($\mft{r}_{\mft{ws}}$).
 
-  \item Find the current rate of waste emission and suitably adjust 
+  \item Find the current rate of waste\index{waste} emission and suitably adjust 
         for any future increases or decreases~($\mft{r}_{\mft{cf}}$\;\!).
 
   \item Compare the weakly sustainable\index{weak sustainability} emission rate~($\mft{r}_{\mft{ws}}$)
         and the current or future emission rate~($\mft{r}_{\mft{cf}}$\;\!).
         If the current or future emission rate~($\mft{r}_{\mft{cf}}$\;\!) is greater than
         the average maximum weakly sustainable\index{weak sustainability} emission rate~($\mft{r}_{\mft{ws}}$),
-        emissions of the waste do not meet the weak sustainability\index{weak sustainability} criterion.
+        emissions of the waste\index{waste} do not meet the weak sustainability\index{weak sustainability} criterion.
 
 \end{enumerate}
 
@@ -604,8 +605,8 @@ argued that the second law of thermodynamics applies only to energy
 (not to materials) and that
 a stable, steady-state recycling system could exist
 provided that two conditions are met:
-(a)~a large stockpile of waste material exists 
-    (so energy to obtain the waste material is small) and
+(a)~a large stockpile of waste\index{waste} material exists 
+    (so energy to obtain the waste\index{waste} material is small) and
 (b)~an exogenous source, such as the sun, supplies energy freely and
     at sufficient rate for reprocessing of discarded material~\cite{Ayres:1999}.
 
@@ -1254,7 +1255,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         in terms of the IPARX identity\index{IPARX identity}?
 
   \item Where does your water come from?
-        How does it get to you? Where is your waste water treated?
+        How does it get to you? Where is your waste water\index{waste water} treated?
         How is energy, the master resource\index{master resource (energy)}, involved in each of these steps?
         How has water provision changed over time where you live?
 
@@ -1264,7 +1265,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         of many pharmaceutical substances and organic pollutants in drinking water?
         A closed-loop water system would probably lower exposure to some pollutants
         and increase concentrations of pharmaceutical substances (or else require
-        more advanced waste-water treatment technology).
+        more advanced waste-water\index{waste water} treatment technology).
         How does a closed-loop system affect sustainability for communities that
         use it? Other communities?
 

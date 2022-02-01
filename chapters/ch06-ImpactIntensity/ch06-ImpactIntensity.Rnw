@@ -30,7 +30,7 @@
 As noted in section \ref{sec:econ_metab},
 the economy is society's metabolism.\index{economic metabolism}
 As such, the economy exhibits characteristics of a metabolism\index{economic metabolism}:
-it ingests materials and emits wastes.
+it ingests materials and emits wastes\index{waste}.
 These characteristics of the economic metabolism\index{economic metabolism} are captured by the
 final term in Equation~\ref{eq:IPARX} (repeated below for convenience),
 the environmental impacts of resource extraction\index{resource extraction} and consumption~\Xparen{}, 
@@ -47,7 +47,7 @@ ways of processing those resources.
 %Environmental impact intensity is discussed in this chapter.
 Resources are the inputs to the economy 
 (``food'' in the metabolic analogy), and 
-environmental impacts come from the economy's excreted wastes.
+environmental impacts come from the economy's excreted wastes\index{waste}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -383,7 +383,7 @@ Another way to reduce CO$_2$ emissions over time is the
 carbon takeback obligation (CTBO)~\cite{Jenkins:2021tg}.\index{carbon takeback obligation (CTBO)}
 The CTBO is similar to product takeback policies
 which require manufacturers to accept end-of-life product returns from consumers,
-thereby keeping wastes (refrigerators, washers, dryers, computers, electronics, and other products)
+thereby keeping wastes\index{waste} (refrigerators, washers, dryers, computers, electronics, and other products)
 out of landfills and 
 contaminants out of the environment.
 
@@ -1099,7 +1099,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       Disasters such Fukushima Daiichi\index{Fukushima Daiichi},
       Three-Mile Island\index{Three-Mile Island}, and 
       Chernobyl\index{Chernobyl} come to mind. 
-      High-level nuclear waste is another. 
+      High-level nuclear waste\index{waste!nuclear} is another. 
       On the other hand, coal-fired power plants\index{coal-fired power plant}
       in the Midwest region have emitted 
       enough mercury that fish in the Great Lakes\index{Great Lakes} are not safe for consumption

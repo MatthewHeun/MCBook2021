@@ -392,8 +392,8 @@ we are ready to introduce
 the metaphor of the \textbf{economic metabolism}\index{economic metabolism}.
 All plant\index{metabolism!plant} and animal metabolisms\index{metabolism!animal} consume resources
 (energy and materials) 
-and produce wastes in the process of doing useful things.
-Similarly, economies take in resources and produce wastes.
+and produce wastes\index{waste} in the process of doing useful things.
+Similarly, economies take in resources and produce wastes\index{waste}.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -408,7 +408,7 @@ Total consumption (that is, world GDP) is $\mft{P}\times\mft{A}$ in Equation~\re
 Resources (the numerator of \mft{R}) are the food the economy needs to live and grow.
 Resources can be calculated by $\mft{P} \times \mft{A} \times \mft{R}$.
 The numerator of the impact of resources~\Xparen{} 
-represents the wastes that the economy excretes.
+represents the wastes\index{waste} that the economy excretes.
 Of course, impacts can be calculated by $\mft{P} \times \mft{A} \times \mft{R} \times \mft{X}$.
 
 
@@ -452,7 +452,7 @@ GDP is quantified by consumption.
 But because consumption and production are in balance, 
 rising economic growth means that production
 is an outcome of many economic policies.
-Growth in production also means growth in resource extraction\index{resource extraction} and waste emissions.
+Growth in production also means growth in resource extraction\index{resource extraction} and waste\index{waste} emissions.
 So policies that encourage economic growth 
 often have negative implications for environmental sustainability\index{environmental sustainability}.
 
@@ -575,7 +575,7 @@ as mentioned previously, is inherently
 unsustainable on a finite planet.
 When the economy grows continually it will, at some point,
 either demand more resources than the environment can provide or
-exceed the ecosystem's\index{ecosystem} ability to absorb its wastes.
+exceed the ecosystem's\index{ecosystem} ability to absorb its wastes\index{waste}.
 Eventually, economic growth will push the ecosystem\index{ecosystem} past a tipping point\index{tipping point} where the
 ecosystem\index{ecosystem} is no longer able to provide ecosystem services\index{ecosystem services}, as
 discussed in Chapter~\ref{chap:planetary_boundaries}.
@@ -673,7 +673,7 @@ Another alternative to today's growth economies
 is a circular economy\index{circular economy}, which 
 (a)~consumes only recycled (and, perhaps, renewable) materials and energy
 and 
-(b)~emits no waste. 
+(b)~emits no waste\index{waste}. 
 A circular economy\index{circular economy} is impossible to achieve completely.
 Materials cannot be 100\% recycled and, for many materials, the recycling process
 degrades material properties. 

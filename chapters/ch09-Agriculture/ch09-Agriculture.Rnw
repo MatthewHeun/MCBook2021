@@ -153,7 +153,7 @@ The next section explores
 sustainability challenges in agriculture\index{sustainability challenges!agriculture}, 
 which arise from extracting resources 
 from the ecosystem\index{ecosystem} faster than they regenerate and/or 
-producing more waste(s) than the ecosystem\index{ecosystem} can absorb.
+producing more waste\index{waste}(s) than the ecosystem\index{ecosystem} can absorb.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -431,10 +431,10 @@ to produce one calorie of food energy.
 However, because of waste, the situation is actually much worse.
 A significant fraction
 (\Sexpr{sprintf(food_eroi_waste_fraction * 100, fmt = "%#.1f")}\%)
-of food that is produced is wasted
-(\Sexpr{sprintf(food_eroi_waste, fmt = "%#.2f")} quads wasted out of
+of food that is produced is wasted\index{food waste}
+(\Sexpr{sprintf(food_eroi_waste, fmt = "%#.2f")} quads wasted\index{waste!energy} out of
 \Sexpr{sprintf(food_eroi_gross_output, fmt = "%#.2f")} quads produced).
-Taking waste into account, the EROI of food consumed is
+Taking waste\index{waste} into account, the EROI of food consumed is
 \Sexpr{sprintf(food_eroi * 100, fmt = "%#.1f")}\%
 (\Sexpr{sprintf(food_eroi_consumed, fmt = "%#.2f")} quads consumed, 
 \Sexpr{sprintf(food_eroi_denominator, fmt = "%#.2f")} quads input).
@@ -516,7 +516,7 @@ is ``how can the energy inputs to agriculture be made sustainable?''
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Food waste}
+\subsection{Food waste}\index{food waste}
 \label{sec:ag_mass_Sankey}
 %++++++++++++++++++++++++++++++
 
@@ -567,7 +567,7 @@ is less efficient than the overall food system with
 only
 \Sexpr{format(animal_efficiency * 100, digits = 3)}\% efficiency on a mass basis\index{efficiency!mass-based}.
 Third, \textbf{food waste}\index{food waste}
-(losses) at the final stages reduce the efficiency of the entire food system.\index{waste!food}
+(losses) at the final stages reduce the efficiency of the entire food system.\index{food waste}
 In fact, final stage mass-based efficiency\index{efficiency!mass-based}
 is only \Sexpr{format(end_use_food_efficiency * 100, digits = 3)}\%.
 Fourth, imports\index{food!imports}
