@@ -49,7 +49,7 @@ For example, humans plant crops (food, textile, and timber) that ``grow,''
 they're not manufactured. 
 The ecosystem\index{ecosystem} ``provides'' the crops. 
 Likewise, the ecosystem\index{ecosystem} provides water, petroleum, and other mineral resources\index{mineral resources}.
-Simply having oceans and an atmosphere provides a place for pollution to go.
+Simply having oceans and an atmosphere provides a place for pollution\index{pollution} to go.
 
 The second set of services is regulating and supporting services,\index{services!regulating and supporting} 
 which sustain and stabilize the ecosystem\index{ecosystem}.
@@ -321,8 +321,8 @@ Calcium carbonate in ocean surface seawater        & not yet \\
 Land surface converted to crop land [\%]           & not yet \\ 
 Global consumption rate of fresh water             & not yet \\ 
 Stratospheric ozone completion                     & not yet \\
-Atmospheric particulates                           & unknown \\ 
-Chemical pollution                                 & unknown \\
+Atmospheric particulates\index{particulate matter (PM)} & unknown \\ 
+Chemical pollution\index{pollution!chemical}       & unknown \\
 \bottomrule 
 \end{tabular}
 \end{table}
@@ -370,9 +370,10 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
 
 Two of the indicators in Table~\ref{tab:planetBoundaries}, 
 particulate\index{particulate matter (PM)} concentration 
-in the atmosphere and chemical pollution, 
+in the atmosphere and chemical pollution\index{pollution!chemical}, 
 do not have proposed limits. 
-In the case of chemical pollution, the vast number of such (possible) pollutants, 
+In the case of chemical pollution\index{pollution!chemical},
+the vast number of such (possible) pollutants, 
 each of which causes different acute and chronic effects, would make a single 
 ``threshold'' meaningless. 
 Instead, national governments set limits on a chemical-by-chemical basis.
