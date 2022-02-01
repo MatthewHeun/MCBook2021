@@ -1322,7 +1322,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
   \item \label{project:nuclear_resources}
         Research the availability of uranium\index{uranium} resources. 
         What are the reserves?
-        Is our current consumption rate weakly sustainable? 
+        Is our current consumption rate weakly sustainable\index{weak sustainability}?
         
   \item Section~\ref{sec:rebound_effect} discusses the rebound effect\index{rebound effect},
         wherein monetary savings from energy efficiency\index{energy efficiency} are spent elsewhere in the economy,
