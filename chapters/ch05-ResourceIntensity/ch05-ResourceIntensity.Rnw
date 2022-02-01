@@ -39,7 +39,8 @@ Without minerals to make cars?
 Without timber\index{timber} to build homes?
 Without healthy soil to grow food?
 Without oceans and atmosphere to accept wastes\index{waste}?
-Without coal, oil, and methane to make electricity, gasoline\index{gasoline}, and natural gas?
+Without coal\index{coal}, oil\index{crude oil}, and methane\index{methane}
+to make electricity, gasoline\index{gasoline}, and natural gas\index{natural gas}?
 Nowhere.
 
 
@@ -204,7 +205,7 @@ even in the service sector.
 Imagine a coal-fired power plant\index{coal-fired power plant}
 that generates electricity to charge
 an electric car. 
-Coal is a \textbf{primary energy}\index{primary energy} source. 
+Coal\index{coal} is a \textbf{primary energy}\index{primary energy} source. 
 The electricity sold to consumers is considered to be a \textbf{final energy}\index{final energy} carrier.%
 \footnote{
   Note that the term ``final'' comes from economics,
@@ -638,7 +639,8 @@ replacing coated steel (expensive) automobile interior parts with
 injection-molded plastics (inexpensive),
 replacing Styrofoam hamburger containers (nonrenewable)
 with paper or cardboard wrappings (renewable), and
-use of solar electricity (renewable) instead of coal electricity (nonrenewable).
+use of solar electricity\index{solar electricity} (renewable)
+instead of coal electricity\index{coal electricity} (nonrenewable).
 Switching from consuming nonrenewable resources
 to consuming renewable resources
 is an important aspect of sustainability, for both
@@ -652,16 +654,17 @@ the strong\index{strong sustainability} versions.%
 
 That said, there are important limits to substitutability\index{substitution}.
 At a manufacturing plant, the type of electricity
-(for example, coal electricity\index{electricity!coal} or solar electricity\index{electricity!solar})
+(for example, coal electricity\index{coal electricity} or solar electricity\index{solar electricity})
 is immaterial,
 so long as both options are (for the U.S.) 120~V at 60~Hz.
-From the point of view of the manufacturing plant, coal electricity and solar electricity are 
+From the point of view of the manufacturing plant,
+coal electricity\index{coal electricity} and solar electricity\index{solar electricity} are 
 perfect substitutes.
 However, at the point of electricity generation, 
 the feedstocks\index{feedstock} for electricity production are not substitutes\index{substitute}.
 Coal-fired Rankine cycle\index{Rankine cycle} power plants\index{coal-fired power plant}
 cannot use the Sun's energy to make electricity.
-Similarly, a pile of coal is useless
+Similarly, a pile of coal\index{coal} is useless
 to solar photovoltaic\index{solar photovoltaic electricity} farms.
 
 Sometimes a scarce (and expensive), renewable resource is replaced by a
@@ -818,9 +821,9 @@ none of the fossil fuel consumption shown in Figure~\ref{fig:PrimaryEnergyGraph}
 is sustainable. 
 By the weak sustainability\index{weak sustainability} criterion of preserving resources for 50~years, 
 Figure~\ref{fig:WeakSustEnergyGraph} shows that
-coal consumption is weakly sustainable\index{weak sustainability} from a resource extraction\index{resource extraction}
+coal\index{coal} consumption is weakly sustainable\index{weak sustainability} from a resource extraction\index{resource extraction}
 point of view.
-(However, coal is not weakly sustainable\index{weak sustainability} from a CO$_2$ emissions point of view, 
+(However, coal\index{coal} is not weakly sustainable\index{weak sustainability} from a CO$_2$ emissions point of view, 
 as shown in Figure~\ref{fig:PercentageOfSustainable}.)
 Neither oil nor natural gas are being consumed at a weakly sustainable\index{weak sustainability} rate.
 
@@ -1065,13 +1068,14 @@ see Section~\ref{sec:revisit_IPARX}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Extraction of finite resources\index{resource extraction}
-(such as coal, oil, natural gas, lithium, neodymium, phosphorous, or helium)
+(such as coal\index{coal}, oil\index{crude oil}, natural gas\index{natural gas},
+lithium\index{lithium}, neodymium\index{neodymium}, phosphorous\index{phosphorous}, or helium\index{helium})
 follows a pattern through time~\cite{Brandt:2007vt}.
 In the beginning, extraction of a useful but finite resource\index{resource extraction} accelerates
 as demand climbs and technologies are developed to reduce the cost of extraction.
 Through time, the resource extraction\index{resource extraction} rate peaks then and declines.
 A clear example of a production curve for a finite resource is
-extraction of coal in the UK, shown in Figure~\ref{fig:UK_coal_extraction}.
+extraction of coal\index{coal} in the UK, shown in Figure~\ref{fig:UK_coal_extraction}.
 
 <<UK_coal_extraction, fig.scap="UK coal production vs.\\ time", fig.cap="UK coal production vs.\\ time. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv} for 1830--2009; \\citet{UK_dept_BEIS:2021} for 2010--2020.">>=
 uk_coal_extraction <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "CoalGraph.xlsx"),
@@ -1110,15 +1114,15 @@ uk_coal_extraction %>%
   MKHthemes::xy_theme()
 @
 
-In the case of the UK, substitution\index{substitution} away from coal for electricity generation 
+In the case of the UK, substitution\index{substitution} away from coal\index{coal} for electricity generation 
 is occurring. 
-Coal production is now dominated by China, India, the U.S., and Australia,
+Coal\index{coal} production is now dominated by China, India, the U.S., and Australia,
 but international trade is possible.
-So the world will not face coal shortages
+So the world will not face coal\index{coal} shortages
 until all regions are exhausted of the resource.
 Each region is at different places on its logistic curve
 for resource production.
-Other ways to substitute away from domestic coal for electricity 
+Other ways to substitute away from domestic coal\index{coal} for electricity 
 (besides switching suppliers)
 include deploying natural gas, wind, and solar electricity generation, 
 as the UK is doing now.
@@ -1477,8 +1481,8 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         
   \item Research the efficiency of electricity generation and distribution.
         How are line losses as well as the efficiency of power generation
-        (from coal or natural gas) quantified?
-        What is the efficiency of natural gas extraction\index{extraction!natural gas} and distribution?
+        (from coal\index{coal} or natural gas\index{natural gas}) quantified?
+        What is the efficiency of natural gas  extraction\index{natural gas extraction} and distribution?
         Be sure to account for the amount of gas leaking from pipes and storage facilities.
         Which method of delivering energy to the consumer 
         (electric lines or gas pipelines)

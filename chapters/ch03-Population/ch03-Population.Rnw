@@ -356,7 +356,7 @@ The crude death rate (CDR)\index{crude death rate} is the number of deaths per y
 ``Crude'' indicates that the rates are uncorrected for
 age (different generations could have different populations) or
 sex (possible different number males and females in each age cohort).
-The replacement rate refers to the fact that, on average, each female needs to give
+The \textbf{replacement rate}\index{replacement rate} refers to the fact that, on average, each female needs to give
 birth to 2.1 children over her lifetime to maintain a stable population,
 to account for childhood mortality.
 
@@ -542,7 +542,7 @@ After the demographic transition\index{demographic transition},
 the birth rate might rise again (causing further population growth)
 or drop below the death rate, which leads to a decrease in total population.
 Currently, most developed countries have a birth rate that is below the
-replacement rate, that is, a falling population (offset, in some cases,
+replacement rate\index{replacement rate}, that is, a falling population (offset, in some cases,
 by immigration).
 As stated earlier, low birth rates are correlated to higher affluence~\Aparen{}.
 

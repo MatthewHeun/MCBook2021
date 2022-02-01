@@ -187,7 +187,6 @@ defining appropriate inputs and outputs for agricultural sustainability
 is a key consideration.
 Recall the definitions of weak\index{weak sustainability} and strong sustainability\index{strong sustainability} from 
 Section~\ref{sec:strong_weak_sust}.
-% and the concept of ecosystem provisioning services from Section~\ref{sec:ecosystem_services}.
 Strong sustainability\index{strong sustainability} requires not using renewable resources 
 faster than they can regenerate; 
 see section~\ref{sec:what_is_sustainability}.
@@ -1115,9 +1114,10 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
 \item Verify the agricultural EROI\index{energy return on investment (EROI)}
       values in Section~\ref{sec:food_energy_return_ratios}. 
       You could, for instance, start by considering Figure~\ref{fig:food_and_ag_energy_flow}.
-      Perform your own research to find the proportions of coal, oil, and natural gas consumed
+      Perform your own research to find the proportions of coal\index{coal}, 
+      oil\index{crude oil}, and natural gas\index{natural gas} consumed
       by the food and agriculture system.
-      Are we eating coal? Are we eating oil? 
+      Are we eating coal\index{coal}? Are we eating oil\index{crude oil}? 
       Are we eating electricity (and whence comes the electricity)? 
       Or are we eating natural gas?
       

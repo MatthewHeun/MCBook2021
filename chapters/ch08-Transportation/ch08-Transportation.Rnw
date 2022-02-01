@@ -319,8 +319,9 @@ PM emissions are ``the main contributor to human health effects
 PM ``is also the form in which most of the long-range transport 
 of sulfur and nitrogen-containing pollutants occurs''~\cite{Fowler2020}.
 Hippocrates (circa 400 BC) was concerned about the effects of wood smoke on human health.
-Later, when coal emerged as a fuel for home heating, power generation, and
-industrial processes, coal-derived PM and sulfur compounds were additional concerns. 
+Later, when coal\index{coal} emerged as a fuel for home heating, power generation, and
+industrial processes, coal\index{coal}-derived PM\index{particulate matter (PM)}
+and sulfur compounds were additional concerns. 
 The introduction of ``dirty'' internal combustion engines\index{internal combustion engine (ICE) vehicle} 
 for transportation intensified air-quality issues, particularly in urban areas.
 Since the mid-twentieth century, air quality in North America, Europe, and Japan
@@ -647,21 +648,23 @@ a high proportion%
 }
 %
 of renewables~(20\%)
-or pure coal\index{coal}\index{electricity!from coal}.
+or pure coal\index{coal electricity}.
 
-Figure~\ref{fig:auto_gwp} shows that EVs are clearly worse than ICE vehicles
+Figure~\ref{fig:auto_gwp} shows that EVs\index{electric vehicle (EV)} are clearly worse
+than ICE vehicles\index{internal combustion engine (ICE) vehicle}
 in terms of mineral resource depletion~(MRD)\index{resources!mineral!depletion of}.
 The material demands for engine and battery fabrication are much higher for EVs 
-than for ICE vehicles.
-However, EVs can provide benefits in terms of global warming potential~(GWP)\index{global warming potential (GWP)}
-relative to ICE vehicles
+than for ICE vehicles\index{internal combustion engine (ICE) vehicle}.
+However, EVs\index{electric vehicle (EV)}
+can provide benefits in terms of global warming potential~(GWP)\index{global warming potential (GWP)}
+relative to ICE vehicles\index{internal combustion engine (ICE) vehicle}
 if the electricity source includes renewables (as in the ``Ren20'' electricity mix), 
 because of lower lifetime fuel/electricity emissions.
 In the case of the Ren20 electricity mix,
-the global warming benefits of EVs are achieved
+the global warming benefits of EVs\index{electric vehicle (EV)} are achieved
 despite much larger emissions from battery manufacturing.
-However, the global-warming benefits of EVs evaporate
-when the electricity is generated from coal,
+However, the global-warming benefits of EVs\index{electric vehicle (EV)} evaporate
+when the electricity is generated from coal\index{coal electricity},
 because of higher electricity-related emissions.
 \citet[p.~61]{Hawkins_2012} point out that
 ``[e]nvironmental evaluations relying solely 
@@ -670,7 +673,7 @@ miss key differences associated with the production of different vehicle types a
 could lead to misguided comparisons across technologies.''
 
 
-<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion\\index{mineral resource depletion (MRD)}. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline\\index{gasoline}-powered vehicles. ``Ren20'' indicates an electricity mix with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union electricity mix in 2010. ``Coal'' indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
+<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion\\index{mineral resource depletion (MRD)}. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline\\index{gasoline}-powered vehicles. ``Ren20'' indicates an electricity mix with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union electricity mix in 2010. ``Coal''\\index{coal} indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
 Hawkins_life_cycle <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "EV data from Hawkins.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(c("Base vehicle", "Engine", "Other powertrain", "Battery", "Use phase", "Fuel/electricity", "End of life"), names_to = "Life.cycle.component", values_to = "normalized_impact") %>% 

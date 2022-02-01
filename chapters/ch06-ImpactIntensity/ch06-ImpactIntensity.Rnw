@@ -73,7 +73,7 @@ will have effects on air, water, species diversity, land, and human communities.
 %
 Examples of environmental impacts include
 water eutrophication\index{eutrophication} (from fertilizer runoff),
-SO$_2$\index{sulfur dioxide (SO$_2$)!emissions of} emissions (from burning sulfurous coal),
+SO$_2$\index{sulfur dioxide (SO$_2$)!emissions of} emissions (from burning sulfurous coal\index{coal}),
 CO$_2$ emissions (from burning fossil fuels),
 desertification\index{desertification}
 (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and
@@ -227,7 +227,7 @@ and other negative environmental effects (as well as being inefficient from an
 EROI\index{energy return on investment (EROI)}
 perspective, as shown in Table~\ref{tab:eroi}).
 The transition away from biofuel consumption results in cleaner urban air (especially after 
-the transition from coal to natural gas for residential heating)~\cite{Gordon2016}.
+the transition from coal\index{coal} to natural gas\index{natural gas} for residential heating)~\cite{Gordon2016}.
 Because having a healthy environment is what economists call a ``normal'' good,
 \mft{I} should fall as \mft{A} rises, in general.
 In some ways (but not in terms of CO$_2$ emissions and climate change\index{climate change}),
@@ -550,7 +550,7 @@ in plants that convert biomass feedstocks\index{feedstock} to biofuels.
 Deployment of a WWS energy system provides a second challenge:
 wind and solar are intermittent sources of electricity,
 while today's electricity sources 
-(coal, natural gas, nuclear, and hydro)
+(coal\index{coal}, natural gas\index{natural gas}, nuclear, and hydro)
 are constant.
 At present, electric grids accommodate only a fraction 
 of intermittent electricity, much less than 100\%.
