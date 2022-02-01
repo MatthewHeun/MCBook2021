@@ -61,7 +61,7 @@ The size of the economy is \mft{P}$\times$\mft{A}.
 The economy can grow by increasing either \mft{P} or \mft{A}.
 The next two sections will examine these sources of demand in greater detail.
 
-<<USlanduse, fig.scap="Land use in the U.S.\\ vs.\\ time by land type", fig.cap="Land use in the U.S.\\ vs.\\ time by land type. The biggest changes over time are decreasing grazed forest area and increasing rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. (``Grassland'' is not used for crops.) \\emph{Source}: \\citet{USDA:2021uq}.">>=
+<<USlanduse, fig.scap="Land use in the U.S.\\ vs.\\ time by land type", fig.cap="Land use in the U.S.\\ vs.\\ time by land type. The biggest changes over time are decreasing grazed forest area and increasing rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. ``Forest'' aggregates grazed and not-grazed land. ``Farms \\& rural transport'' aggregates farmsteads, miscellaneous farmland, roads, and rural transportation facilities. ``Cropland'' aggregates tilled crops, pasture, and idle fields. \\emph{Source}: \\citet{USDA:2021uq}.">>=
 us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Land_Uses.xlsx"),
                                   sheet = "data to plot") %>% 
   dplyr::rename(
@@ -76,24 +76,32 @@ us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanni
     `Grassland` = "Grassland pasture and range (noncropland and nonforest)", 
     `Farms and roads` = "Farmsteads, roads, and miscellaneous farmland", 
     `Rural parks & wildlife` = "Land in rural parks and wildlife areas"
+  ) %>%
+  # Decided on a different aggregation
+  dplyr::mutate(
+    `Farms & rural transport` = `Rural transport` + `Farms and roads`, 
+    Forest = `Forest (grazed)` + `Forest (not grazed)`, 
+    Cropland = `Cropland (idle)` + `Cropland (pasture)` + `Cropland (crops)`, 
+    `Rural transport` = NULL, 
+    `Farms and roads` = NULL, 
+    `Forest (grazed)` = NULL, 
+    `Forest (not grazed)` = NULL,
+    `Cropland (idle)` = NULL, 
+    `Cropland (pasture)` = NULL, 
+    `Cropland (crops)` = NULL
   ) %>% 
   tidyr::pivot_longer(cols = -Year, names_to = "use_type", values_to = "land_area_kacres") %>% 
   dplyr::mutate(
-    use_type = factor(use_type, levels = c("Other land",
-                                           "Rural transport",
+    use_type = factor(use_type, levels = c("Urban",
                                            "Defense & industrial",
-                                           "Urban",
-                                           "Farms and roads",
+                                           "Cropland",
+                                           "Farms & rural transport",
+                                           "Other land",
                                            "Rural parks & wildlife",
-                                           "Forest (grazed)",
-                                           "Forest (not grazed)",
-                                           "Cropland (idle)",
-                                           "Cropland (pasture)",
-                                           "Cropland (crops)",
                                            "Grassland",
-                                           "Pasture")), 
+                                           "Forest")),
     land_area_Gacres = land_area_kacres / 1e6
-  )
+  ) 
 
 us_land_use %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = land_area_Gacres, fill = use_type)) + 
