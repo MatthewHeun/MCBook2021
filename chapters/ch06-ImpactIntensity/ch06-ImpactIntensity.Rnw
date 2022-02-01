@@ -77,13 +77,15 @@ SO$_2$\index{sulfur dioxide (SO$_2$)!emissions of} emissions (from burning sulfu
 CO$_2$ emissions\index{carbon dioxide (CO$_2$)!emissions of} (from burning fossil fuels),
 desertification\index{desertification}
 (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and
-species loss\index{species loss} (due to habitat loss, environmental toxins, and over-exploitation).
+species loss\index{species loss} (due to habitat loss\index{habitat loss},
+environmental toxins, and over-exploitation).
 With reference to a few of the critical materials in Table~\ref{tab:CRMs},
 other examples of environmental impacts caused by resource extraction and consumption include:
 %
 \begin{itemize}
 
-  \item air, water, and soil pollution~\cite{Lee:2017ui} in the form of
+  \item air, water, and soil pollution\index{pollution!air}\index{pollution!water}\index{pollution!soil}~\cite{Lee:2017ui} 
+        in the form of
         bauxite dust,\index{bauxite!dust}
         sulfur dioxide (SO$_2$), and
         nitrous oxides (NO$_\mathrm{x}$) emissions\index{nitrous oxides (NO$_\mathrm{x}$)!emissions of}
@@ -1064,8 +1066,9 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
 
 \item Fossil fuels have environmental impacts other than CO$_2$. 
       One example is oil spills,
-      such as the Exxon Valdez and the Deep Water Horizon disasters.
-      (The International Tanker Owners Pollution Federation reports ``only'' 18 oil
+      such as the Exxon Valdez\index{Exxon Valdez} and the Deep Water Horizon\index{Deep Water Horizon} disasters.
+      (The International Tanker Owners Pollution Federation\index{International Tanker Owners Pollution Federation}
+      reports ``only'' 18 oil
       spills larger than 700 tonnes for the period 2010--2019 versus 245 in the 1970s.) 
       Other examples include environmental impacts from hydraulic fracking
       fluids; air quality issues associated with burning fossil fuels such as
@@ -1077,7 +1080,8 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       Indeed, the rate of oil spills is down due to better technology. 
       However, these technological solutions come with their own costs, risks, 
       and inherent tradeoffs.
-      Give some examples of the tradeoffs inherent in pollution prevention technologies.
+      Give some examples of the tradeoffs inherent in pollution prevention\index{pollution!prevention} 
+      technologies.
       How do we manage tradeoffs among different types of solutions?
       
 \item Energy historian Roger Fouquet\index{Fouquet, Roger} found that it has taken, historically, on average, 50 years
@@ -1096,7 +1100,8 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       Three-Mile Island\index{Three-Mile Island}, and 
       Chernobyl\index{Chernobyl} come to mind. 
       High-level nuclear waste is another. 
-      On the other hand, coal-fired power plants in the Midwest region have emitted 
+      On the other hand, coal-fired power plants\index{coal-fired power plant}
+      in the Midwest region have emitted 
       enough mercury that fish in the Great Lakes\index{Great Lakes} are not safe for consumption
       by children or women of child-bearing age. 
       How do you make decisions about trading off different types of 

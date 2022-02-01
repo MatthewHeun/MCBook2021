@@ -65,7 +65,7 @@ Environmental sustainability problems have social and economic aspects (that are
 generally more difficult to solve).
 Likewise, economic and social sustainability problems are not limited to one domain;
 typically, they include aspects of the other two domains as well.
-Therefore (for example), pollution is an environmental problem, and a social problem, and an economic problem.
+Therefore (for example), pollution\index{pollution} is an environmental problem, and a social problem, and an economic problem.
 Likewise renewable energy. And land use. And all the other challenges humanity faces.
 
 \begin{figure}
@@ -175,7 +175,7 @@ The remainder of this chapter summarizes key themes of the book.
 If humanity is not living sustainably, we will either cease to exist as a species
 or (at least) experience drastic reductions in our population and/or standard of living.
 So, what is sustainability and how do we tell if we're living sustainably?
-There are many definitions of sustainability\index{sustainability!definitions}.
+There are many definitions of sustainability\index{sustainability!definition}.
 To the novice, many definitions may seem to indicate lack of agreement.
 However, sustainability is almost a self-defining concept.
 Different answers indicate different assumptions, different priorities, and different
@@ -233,15 +233,17 @@ moral choices about what to value and how much.
 is a weighting of appropriate risks to the ecosystem\index{ecosystem} and human society.
 Different answers to these questions come from different \emph{a priori} assumptions and values.
 
-The broadest definitions of sustainability also include the products of human civilization.
+The broadest definitions of sustainability\index{sustainability!definition}
+also include the products of human civilization.
 For example, although they are great cultural and historical artifacts,
 humanity could survive without the great pyramids of Giza\index{Giza}.
-On the other hand, we may not survive if we don’t give up coal-fired power plants.
-(And, maybe many people would perish if the coal-fired plants were all suddenly switched off.)
+On the other hand, we may not survive if we don’t give up coal-fired power plants\index{coal-fired power plant}.
+(And, maybe many people would perish if the coal-fired power plants\index{coal-fired power plant}
+were all suddenly switched off.)
 
 With respect to Figure \ref{fig:venn_diagram}, environmental sustainability\index{environmental sustainability}
 considers biophysical and thermodynamic constraints and includes issues such as
-pollution, resource depletion, habitat loss, and biodiversity.
+pollution\index{pollution}, resource depletion, habitat loss\index{habitat loss}, and biodiversity\index{biodiversity}.
 Harvesting timber faster than it can grow is unsustainable.
 Eventually, deforestation means that timber harvesting must stop because there
 will be no more forest to harvest.
@@ -256,7 +258,9 @@ macroeconomic policy.
 A business that continually loses money is not sustainable.
 Eventually, it will go out of business.
 
-Social sustainability\index{social sustainability} comprises human and civil rights, suffering, and personal freedom.
+Social sustainability\index{social sustainability} comprises human\index{human rights} and 
+civil rights\index{civil rights},
+suffering, and personal freedom.
 A social group that continually loses members, for example, the Whig party, will
 cease to be a group.
 Typically, social sustainability\index{social sustainability} includes things that should not be
@@ -265,7 +269,7 @@ sexism, slavery, and other civil injustices.
 
 This book discusses issues associated with each of these three
 sustainability domains but with a focus on energy and carbon emissions.
-The end-of-chapter questions typically focus on interactions between the three
+The end-of-chapter questions typically focus on interactions among the three
 domains, like a social versus economic tradeoff.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -278,14 +282,14 @@ one of the most urgent sustainability problems.
 Energy and carbon emissions link together many of our sustainability challenges\index{sustainability challenges}.
 \end{mcframe}
 
-The most oft-quoted~\cite{Quental2011} definition of sustainability is that
+The most oft-quoted~\cite{Quental2011} definition of sustainability\index{sustainability!definition} is that
 \textbf{sustainable development}\index{sustainable development} meets the needs of the present without
 compromising the ability of future generations to meet their own needs''~\cite{Brundtland}.
 Note that sustainable development\index{sustainable development} is an oxymoron, %and is not the same as sustainability.
 because ``development'' implies constant improvement, which cannot be sustained
 forever on a planet with finite resources.
 Furthermore, ``needs'' are subjective.
-This definition emphasizes the social\index{social sustainability} and
+This definition\index{sustainability!definition} emphasizes the social\index{social sustainability} and
 economic\index{economic sustainability} aspects of sustainability over,
 or instead of, environmental sustainability\index{environmental sustainability}.
 In the end, without environmental sustainability\index{environmental sustainability},
@@ -712,8 +716,9 @@ the full restoration is likely to cost more than \euro{8}~billion.
       Is there social value in old companies (as, say, compared to old buildings)?
 
 \item Critique generally but also with reference to Equation \ref{eq:IPARX} the statement
-      ``poverty is the worst form of pollution'' made by former Indian Prime
-      Minister Indira Ghandi.
+      ``poverty\index{poverty!as pollution}
+      is the worst form of pollution\index{pollution}'' made by former Indian Prime
+      Minister Indira Ghandi\index{Ghandi, Indira}.
       What does this statement mean?
       In what ways is this statement true? In what ways is it untrue?
       How does this statement address the debate 
@@ -749,7 +754,7 @@ the full restoration is likely to cost more than \euro{8}~billion.
       entails an opportunity cost with respect to
       the abundance and diversity of nonhuman organisms.
       Achieving sustainability includes restricting
-      this disturbance and associated biodiversity loss
+      this disturbance and associated biodiversity loss\index{biodiversity!loss}
       to within some unknown safe limits.
       The degree to which we allow human activity beyond these unknown safe limits
       involves a value judgment regarding
@@ -816,7 +821,7 @@ the full restoration is likely to cost more than \euro{8}~billion.
       These last two terms (\:\!\mft{R} and \mft{X}\:) will likely require some research on your part.
       For resources, consider at least energy, water, iron ore, and timber.
       For impacts, consider at least global warming potential\index{global warming potential (GWP)},
-      desertification, habitat loss,
+      desertification, habitat loss\index{habitat loss},
       and extinction rate.
       Will your computed impact rate over- or under-represent your actual impact rate?
 
