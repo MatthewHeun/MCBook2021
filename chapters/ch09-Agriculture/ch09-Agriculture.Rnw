@@ -221,19 +221,19 @@ use of land and water.
 %..............................
 
 Not all soils are rich in the nutrients needed by plants to grow.
-Topsoils do contain the organic matter needed by plants.
-However, topsoil can be lost by erosion due to the action of wind and/or water.
+\textbf{Topsoils}\index{topsoil} do contain the organic matter needed by plants.
+However, topsoil\index{topsoil} can be lost by erosion due to the action of wind and/or water.
 Most erosion results from wind or water action on tilled soils, that is,
 where the land has been plowed to expose bare soil.
 Some examples include the 1930s Dust Bowl in the U.S.\
 and the phenomenon called the ``Yellow Wind'' or ``Asian dust,'' where fine
 soil particles are carried from China, Mongolia, and Kazakhstan to East Asia and 
 sometimes across the Pacific Ocean to the U.S.
-Some places in the Great Plains have lost of several feet of topsoil.
+Some places in the Great Plains have lost of several feet of topsoil\index{topsoil}.
 For example, a survey in Minot, North Dakota taken in 1900 found 40 cm of black
-topsoil.
-In 2017, the area had no black topsoil; its soil was light gray~\cite{Arnason:2017ug}.
-Loss of topsoil reduces the productivity 
+topsoil\index{topsoil}.
+In 2017, the area had no black topsoil\index{topsoil}; its soil was light gray~\cite{Arnason:2017ug}.
+Loss of topsoil\index{topsoil} reduces the productivity 
 (in dollars of output per acre) of farmland.
 Many arid and semi-arid regions are experiencing desertification caused
 by a combination of climate change and poor agricultural practices.
@@ -828,7 +828,7 @@ and in the natural world, agriculture is the perfect example for discussing the 
 climate-change resiliency.
 
 Warmer average global temperatures increase plants' need for water; they cool themselves
-by transpiration.
+by \textbf{transpiration}\index{transpiration}.
 However, water supplies are threatened by climate change: surface water (rivers, lakes, and
 reservoirs) evaporates more rapidly in warmer air.
 Moreover, climate change is altering weather and climate patterns, such as distribution

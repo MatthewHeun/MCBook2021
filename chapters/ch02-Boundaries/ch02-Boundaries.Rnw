@@ -137,10 +137,11 @@ If a boat is tipped a small amount, the weight of the boat and the effect of
 buoyancy act to right the boat; see Figure~\ref{fig:buoyancy}. 
 However, there is an angle where, if the boat is tipped past that point,
 the forces will act in the opposite way---to suddenly and catastrophically flip the boat.
-A tipping point is where the behavior of a system fundamentally changes. 
+A \textbf{tipping point}\index{tipping point}
+is where the behavior of a system fundamentally changes. 
 There is concern that Earth's ecosystem services\index{ecosystem services}
-may have reached or are near a tipping
-point, that is, they have been disturbed to the point of being on the edge of 
+may have reached or are near a tipping point\index{tipping point},
+that is, they have been disturbed to the point of being on the edge of 
 catastrophic collapse.
 
 \begin{figure}
@@ -166,11 +167,11 @@ catastrophic collapse.
                 amount (a), the moment created by these two forces acts to right the boat. 
                 However, there is an angle beyond which the moments created by the two forces no longer 
                 act to right the boat but to flip it (b) suddenly and catastrophically. 
-                The angle beyond which the boat flips is called the tipping point.}
+                The angle beyond which the boat flips is called the tipping point\index{tipping point}.}
         \label{fig:buoyancy}
 \end{figure}
 
-There is a cognitive element to the tipping-point analogy. 
+There is a cognitive element to the tipping-point\index{tipping point} analogy. 
 Experience conditions us to expect the boat to right itself whenever it is heeled
 over---because it has always done so in the past.
 Having the system behave in a completely different manner is outside our direct
@@ -199,12 +200,12 @@ the (functional) supply of fossil fuels.
 The second type of concern relates to human modifications of the ecosystem.
 Human actions can cause a change or breakdown in the Earth's regulating and 
 supporting ecosystem services\index{ecosystem services},
-which will lead to a tipping point, that is, 
+which will lead to a tipping point\index{tipping point}, that is, 
 a fundamental change in the way the ecosystem works. 
 An example that is of particular concern at present is global climate change 
 (principally) caused by human CO$_2$ emissions. 
 Species extinctions, which is like losing rivets in an airplane, is another cause of concern.
-Because of tipping points and the nonlinear and interrelated nature of the
+Because of tipping points\index{tipping point} and the nonlinear and interrelated nature of the
 ecosystem's dynamics, human actions can cause a series of cascading failures
 that will ultimately degrade the Earth's ability to support life. 
 Exponential growth\index{exponential growth}, whether in human population or the economy, is analogous
@@ -532,7 +533,7 @@ capacity of the ecosystem to provide ecosystem services\index{ecosystem services
 As above, renewable resources like grazing land, fisheries, timber, and aquifers\index{aquifer}
 can have this behavior, if their capacity is exceeded too much or for too long.
 As another example, complex systems, like temperature regulation of the planet, can exhibit
-tipping points that can radically change limits to an ecosystem service when the 
+tipping points\index{tipping point} that can radically change limits to an ecosystem service when the 
 limit is exceeded.
 Carbon dioxide in the atmosphere is thought/feared to be an example
 of this sort of behavior; when CO$_2$ increases too much, the Earth will get 
@@ -692,7 +693,7 @@ Greenhouse gas emissions
 are an especially important sustainability issue 
 because of their widespread effects. 
 CO$_2$ emissions are also especially important for at least two other reasons. 
-First, CO$_2$ emissions may trigger a tipping point or tipping points in the 
+First, CO$_2$ emissions may trigger a tipping point\index{tipping point} or tipping points in the 
 Earth's ecosystems, related to deforestation, wild fires, ocean acidification, 
 methane release from permafrost, and species loss. 
 Second, most greenhouse gas emissions are within human control, 

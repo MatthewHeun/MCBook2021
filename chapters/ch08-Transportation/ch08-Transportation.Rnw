@@ -13,7 +13,7 @@
 This chapter covers transportation and
 is the second of four chapters in Part~\ref{part:sustainability_challenges}
 to discuss areas of life where sustainability challenges are relevant and important.
-Today, transportation services are provided mostly 
+Today, \textbf{transportation services}\index{transportation service} are provided mostly 
 by cars, trucks, trains, boats, and planes. 
 Energy for transportation is 
 supplied almost exclusively by liquid fuels,
@@ -41,7 +41,7 @@ physical location, economic activity, energy, and resource consumption are inter
 \end{mcframe}
 
 The next section describes 
-demand for transportation services and discusses sources of that demand.
+demand for transportation services\index{transportation service} and discusses sources of that demand.
 Thereafter, sustainability challenges\index{sustainability challenges!transportation}
 for transportation are explained.
 Next, options for a sustainability transition in transportation are explored.
@@ -49,16 +49,16 @@ A summary concludes.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Demand for transportation services}
+\section{Demand for transportation services}\index{transportation service}
 \label{sec:transportation_demand}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Modern life requires transportation services\index{services!transportation}:
+Modern life requires transportation services\index{transportation service}:
 people need to move long and short distances for work and pleasure, and
 goods must be shipped from far and near to satisfy human wants and needs.
-Demand for transport services is usually quantified in
-passenger-km and tonne-km for personal and freight transport, respectively.
-Provision of U.S.\ transportation services by various modes of travel
+Demand for transportation services\index{transportation service} is usually quantified in
+passenger-km and tonne-km for personal and freight transportation, respectively.
+Provision of U.S.\ transportation services\index{transportation service} by various modes of travel
 is shown in Figures~\ref{fig:passengerkm_by_mode}
 and~\ref{fig:tonnekm_by_mode}.
 (Note that passenger transport is quantified in passenger-km
@@ -124,15 +124,15 @@ tonne_km_by_mode %>%
 @
 
 
-Sources of demand for transportation services can be assessed
+Sources of demand for transportation services\index{transportation service} can be assessed
 on the macro scale, on the micro scale, and 
 in the commercial and industrial sectors.
 At the macro scale, 
 economic activity is a large driver of demand for transport.
 The U.S.\ Bureau of Transportation Statistics (BTS)
-calculates a monthly measure of transportation services 
-output called the ``Transportation Services Index'' 
-(TSI)~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk},\index{transportation services index}
+calculates a monthly measure of transportation services\index{transportation service} 
+output called thee \textbf{Transportation Services Index
+(TSI)}\index{Transportation Services Index (TSI)}~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk},
 which is a weighted and indexed measure of
 freight traffic and passenger transport 
 in the for-hire transportation industries.
@@ -140,16 +140,17 @@ Figure~\ref{fig:TSI} shows the variation of the TSI over time.
 (See \citet{Young:2014uh} for information about the index
 and how it is calculated.)
 Two patterns are evident:
-(a) the general growth of the economy over time drives ever-growing demand for transportation services and
+(a) the general growth of the economy over time drives ever-growing demand
+for transportation services\index{transportation service} and
 (b) recessions (2009) and pandemics (2020)
-reduce demand for transportation services.
+reduce demand for transportation services\index{transportation service}.
 In fact, the correlation between economic growth and freight transportation growth
 is so strong that the BTS claims transport is a good indicator for economic activity
 at the macro level~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021tn}.
 The tight links between transportation and economic growth
 are one reason that economic growth and energy consumption are correlated.
 
-<<TSI, fig.scap="Transportation services index vs.\\ time", fig.cap="Seasonally-adjusted transportation index vs.\\ time for freight, passenger, and overall transportation services (2000~$=$~100). \\emph{Source}: \\citet{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.">>=
+<<TSI, fig.scap="Transportation services index vs.\\ time", fig.cap="Seasonally-adjusted Transportation Services Index (TSI)\\index{Transportation Services Index (TSI)} vs.\\ time for freight, passenger, and overall transportation services (2000~$=$~100). \\emph{Source}: \\citet{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.">>=
 TSI <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Transportation_Services_Index_and_Seasonally-Adjusted_Transportation_Data.xlsx"),
                                        sheet = "data to plot") %>% 
   dplyr::rename(
@@ -180,7 +181,7 @@ TSI %>%
 
 
 On the micro scale, 
-personal activities that cause demand for transportation services include
+personal activities that cause demand for transportation services\index{transportation service} include
 daily commuting to work and school and
 travel for business and pleasure.
 For daily work commutes, Figure~\ref{fig:commuter_percentage_by_mode}
@@ -219,13 +220,13 @@ commuter_mode_percentage %>%
 
 @
 
-Commercial and industrial demand for transportation services arises from
+Commercial and industrial demand for transportation services\index{transportation service} arises from
 delivery of goods (freight) via supply chains
 as shown in Figure~\ref{fig:tonnekm_by_mode}.
-Consumer demand for freight transport services 
+Consumer demand for freight transportation services\index{transportation service} 
 has grown in recent years due to increased online shopping.
 
-Having explored demand for transportation services,
+Having explored demand for transportation services\index{transportation service},
 the next section discusses sustainability challenges\index{sustainability challenges!transportation}
 associated with transportation.
 
@@ -349,7 +350,7 @@ The CO$_2$ emissions peak was likely caused by a combination of factors:
 record-high prices for liquid transportation fuels in the runup to the Great Recession,
 which led drivers to prefer higher-efficiency vehicles, 
 which led to a decline total CO$_2$ emissions, 
-even as consumption of transportation services rose through the 2000s;
+even as consumption of transportation services\index{transportation service} rose through the 2000s;
 see Figure~\ref{fig:TSI}.
 A sustainability challenge for CO$_2$ emissions is
 ``how can we quickly disseminate CO$_2$-free transportation options
@@ -498,13 +499,13 @@ Fuel economy\index{fuel economy}, by definition,
 focuses on the efficacy of the machine itself (the car).
 However, drivers don't buy fuel to move vehicles.
 They pay for fuel to move people and freight!
-So another way to measure vehicle effectiveness is the ratio of transport service 
+So another way to measure vehicle effectiveness is the ratio of transportation service\index{transportation service} 
 to fuel volume consumed.
 Transportation service efficacy\index{transportation service efficacy}
 is quantified in units of passenger-km/liter or tonne-km/liter
 for passenger transport and freight transport, respectively.
 This simple shift from machine efficacy (miles/gallon) 
-to transport service efficacy (passenger-km/liter)
+to transportation service efficacy\index{transportation service efficacy} (passenger-km/liter)
 exposes the sustainability opportunity presented by Figure~\ref{fig:commuter_percentage_by_mode}.
 When more than three-quarters of all commutes are taken in single-occupant vehicles,
 a simple way to improve the effectiveness of passenger transport is to increase
@@ -513,8 +514,10 @@ Similarly for freight transport,
 the simplest way to increase transportation efficiency is to ensure that trucks and trains
 are filled to capacity when delivering freight.
 The benefits of such strategies are evident when using the 
-a transportation service efficacy metric instead of an energy efficiency\index{energy efficiency} metric
-to evaluate the effectiveness of transportation services. 
+a transportation service efficacy\index{transportation service efficacy} metric 
+instead of
+an energy efficiency\index{energy efficiency} metric
+to evaluate the effectiveness of transportation services\index{transportation service}. 
 (See page~\pageref{page:efficiency_efficacy} for more details about
 the differences between energy efficiency\index{energy efficiency} and 
 energy service efficacy\index{energy service efficacy}.)
@@ -1086,7 +1089,8 @@ transportation, petroleum, and technology.
 \item Research a variety of virtual-reality systems for their sustainability implications.
       How do they increase or decrease resource consumption?
       How do they increase or decrease energy consumption and CO$_2$ emissions?
-      What is the potential for virtual reality to reduce future needs for transportation services?
+      What is the potential for virtual reality to reduce future needs
+      for transportation services\index{transportation service}?
       
 \end{projects}
 

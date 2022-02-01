@@ -599,9 +599,9 @@ The \textbf{Energy Star}\index{Energy Star} program recommends levels of roof, w
 floor insulation~\cite{U.S.-Department-of-Energy:aa}.
 In Northern US climates, R-values\index{R-value} of 49--60 hr$\cdot$ft$^2\cdot$\degF/BTU are recommended.
 
-The insulative properties of windows are quantified by the U-factor\index{U-factor},
+The insulative properties of windows are quantified by the \textbf{U-factor}\index{U-factor},
 which is the inverse of an R-value\index{R-value}.
-Typical U-factors for windows are 0.2--1.2 BTU/hr$\cdot$ft$^2\cdot$\degF.
+Typical U-factors\index{U-factor} for windows are 0.2--1.2 BTU/hr$\cdot$ft$^2\cdot$\degF.
 (Corresponding window R-values\index{R-value} are 5--0.83 hr$\cdot$ft$^2\cdot$\degF/BTU.)
 Lower U values are more insulative.
 Heat gain from solar radiation is quantified by the
@@ -715,7 +715,7 @@ and
 %++++++++++++++++++++++++++++++
 
 Water heating is the primary source of energy demand for hygiene in households.
-The efficiency of water heaters is quantified by a Uniform Energy Factor, 
+The efficiency of water heaters is quantified by a \textbf{Uniform Energy Factor (UEF)}\index{Uniform Energy Factor (UEF)}, 
 a measure of energy required to deliver warm water 
 (in the first hour for tank-style water heaters and as a rate for tankless water heaters).
 Water heaters are binned by size (very small, low, medium, and high) and
@@ -1242,7 +1242,7 @@ United States, 1999: \\
       Does your answer change if you apply a discount rate 
       to the financial considerations of this project?
 
-\item Rank the U-Factor and solar heat gain coefficient (SHGC)\index{solar heat gain coefficient (SHGC)}
+\item Rank the U-factor\index{U-factor} and solar heat gain coefficient (SHGC)\index{solar heat gain coefficient (SHGC)}
       for single-, double-, and triple-paned windows.
       Does the ranking make sense?
       Rank the costs of the windows.
