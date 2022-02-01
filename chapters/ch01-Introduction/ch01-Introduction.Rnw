@@ -480,8 +480,8 @@ Making solar panels\index{solar panel} requires energy.
 
 Another reason we say energy is the master resource\index{master resource (energy)}
 is that energy can be used to convert one resource into another.
-Crude oil\index{crude oil} can be refined to gasoline.
-Corn can be converted to ethanol.
+Crude oil\index{crude oil} can be refined to gasoline\index{gasoline}.
+Corn\index{corn} can be converted to ethanol\index{corn ethanol}.
 Salt water can be converted to fresh water.
 Petroleum or natural gas can be converted to pharmaceuticals or plastics.
 
@@ -551,9 +551,9 @@ Hydroelectric                        & 45+ \\
 Coal and natural gas                 & 28--31 \\
 Concentrated solar thermal           & 21 \\
 Wind energy                          & 15--35+ \\
-Brazilian sugar-cane ethanol         & 8.6--10.2\\  % https://en.wikipedia.org/wiki/Ethanol_fuel_in_Brazil
+Brazilian sugar-cane ethanol\index{sugar-cane ethanol}         & 8.6--10.2\\  % https://en.wikipedia.org/wiki/Ethanol_fuel_in_Brazil
 Solar photovoltaic\index{Solar panel} & 2--8 \\
-Biofuels (incl.\ U.S.\ corn ethanol)  & 0.8--1.6 \\ %%  from T. Gomiero 2015
+Biofuels (incl.\ U.S.\ corn ethanol\index{corn ethanol})  & 0.8--1.6 \\ %%  from T. Gomiero 2015
 \bottomrule
 \end{tabular}
 \end{table}
