@@ -179,7 +179,7 @@ Wells or mines for fossil fuels are located in a place.
 Biomass has to be grown or harvested from a place as well.
 For example, about 30\% of the U.S. corn (maize) crop is converted into ethanol
 to be blended with gasoline as a transportation fuel.
-Renewables, such as hydro, solar photovoltaic, and wind power, are also located in
+Renewables, such as hydro, solar photovoltaic\index{solar panel}, and wind power, are also located in
 places.
 In particular, for hydro, solar, and wind, correct siting is a key consideration
 for how productive each power type will be.
@@ -637,15 +637,15 @@ Since more forest and grassland is needed to store carbon,
 the latter does not seem like a viable option.
 
 There are two options for the former that are promising. 
-The first of these is rooftop solar. 
+The first of these is rooftop solar\index{solar panel}. 
 Through a combination of energy efficiency\index{energy efficiency} and generation, 
 each building could be made energy self-sufficient.
 The second option is combining wind and solar electricity generation with agriculture, as 
 mentioned in Section~\ref{sec:food_ag_efficiency}. 
 Grazing can occur among wind turbines and 
 some crops, such as coffee and raspberries, prefer partial shade.
-Such crops could be grown under a solar PV installation with a reduced water demand
-for the plants and more efficiency for the solar panels.
+Such crops could be grown under a solar PV installation\index{solar panel} with a reduced water demand
+for the plants and more efficiency for the solar panels\index{solar panel}.
 Still, at least with the current technology, there is an imbalance in the amount of
 generating capacity needed for a fully zero-carbon economy and land available for 
 generating that electricity, 
