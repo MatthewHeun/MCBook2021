@@ -255,7 +255,7 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 
 
 \noindent
-This book presents many facets of our sustainability challenges.
+This book presents many facets of our sustainability challenges\index{sustainability challenges}.
 Sustainability is challenging for many reasons.
 Its technical problems are complex and interrelated. 
 It combines problems from the environmental, economic, and social realms.
@@ -265,7 +265,7 @@ develops new technologies,
 transitions to new resources, and
 discovers new ways to use resources.
 
-Because of the dynamic and multifaceted nature of sustainability challenges, 
+Because of the dynamic and multifaceted nature of sustainability challenges\index{sustainability challenges}, 
 no book can present comprehensive sustainability ``solutions.'' 
 % I don't think the next sentence helps. It is a minimizing sentence. ---MKH
 % We apologize to you, dear reader, if you have come through the whole book and are

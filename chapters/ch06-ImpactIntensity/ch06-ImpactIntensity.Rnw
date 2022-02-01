@@ -801,7 +801,7 @@ is growing over time
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The positive terms in Equation~\ref{eq:IPARX_rate_with_numbers}
-represent sources of some of our sustainability challenges:
+represent sources of some of our sustainability challenges\index{sustainability challenges}:
 rising population (\rateP{}~>~0), 
 rising affluence (\rateA{}~>~0), and 
 expanded use of fossil fuels (\rateXCOtwo{}~>~0).
@@ -968,7 +968,7 @@ However, when
 (a)~economic activity requires energy 
 and
 (b)~energy consumption causes CO$_2$ to be emitted,
-economic growth leads to sustainability challenges.
+economic growth leads to sustainability challenges\index{sustainability challenges!economic growth}.
 Reducing the carbon intensity of primary energy\index{carbon intensity of primary energy} 
 (\;\!\XCOtwo{}the prime example for \mft{X} in Equation~\ref{eq:IPARX})
 is one way to limit the environmental impacts of economic activity.
@@ -1011,9 +1011,10 @@ the carbon intensity of primary energy\index{carbon intensity of primary energy}
 quantifies the CO$_2$ emissions from consuming energy.
 \XCOtwo{} grew with the transition from biofuels to fossil fuels
 but leveled off in the last few decades.
-Revisiting the IPARX identity\index{IPARX identity}, we see that rising population~\Pparen{}, 
-rising affluence~\Aparen{}, and
-expanded use of fossil fuels~\XCOtwoparen{}
+Revisiting the IPARX identity\index{IPARX identity},
+we see that rising population~\Pparen{}\index{sustainability challenges!population}, 
+rising affluence~\Aparen{}\index{sustainability challenges!affluence}, and
+expanded use of fossil fuels\index{sustainability challenges!fossil fuels}~\XCOtwoparen{}
 are the sources of our sustainability challenges.
 
 The IPARX identity and 
@@ -1242,7 +1243,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
   \item What would have to be true for the world to be able to implement a 100\% WWS energy system?
         
   \item It has been argued that the transition to a low-carbon energy regime
-        is a ``grand challenge'' that will require funding levels 
+        is a \textbf{grand challenge}\index{grand challenge} that will require funding levels 
         that rival the Apollo program, President Johnson's ``Great Society'' initiatives,
         and President Reagan's ``Star Wars'' program~\cite{Heun:2008vu}.
         Find several updated estimates of the costs for these and other large 
@@ -1299,7 +1300,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         interactions between energy and the economy are so pervasive that
         a deep rethinking of the structure of society is warranted
         if we are to address, in a meaningful way, 
-        the sustainability challenges that we face.
+        the sustainability challenges\index{sustainability challenges} that we face.
         Read Sorrell's paper and write a report that evaluates 
         the five propositions.
         Compare and contrast the five propositions with prevailing cultural norms in your society.

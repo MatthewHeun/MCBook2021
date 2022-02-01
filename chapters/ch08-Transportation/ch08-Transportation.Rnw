@@ -42,7 +42,8 @@ physical location, economic activity, energy, and resource consumption are inter
 
 The next section describes 
 demand for transportation services and discusses sources of that demand.
-Thereafter, sustainability challenges for transportation are explained.
+Thereafter, sustainability challenges\index{sustainability challenges!transportation}
+for transportation are explained.
 Next, options for a sustainability transition in transportation are explored.
 A summary concludes.
 
@@ -225,16 +226,16 @@ Consumer demand for freight transport services
 has grown in recent years due to increased online shopping.
 
 Having explored demand for transportation services,
-the next section discusses sustainability challenges associated with 
-transport.
+the next section discusses sustainability challenges\index{sustainability challenges!transportation}
+associated with transportation.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sustainability challenges in transportation}
+\section{Sustainability challenges in transportation}\index{sustainability challenges!transportation}
 \label{sec:transportation_challenges}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Sustainability challenges arising from transportation include
+Sustainability challenges arising from transportation\index{sustainability challenges!transportation} include
 the last mile problem\index{last mile problem}, 
 the first mile problem\index{first mile problem}, and
 particulate matter (PM)\index{particulate matter (PM)} and
@@ -1044,10 +1045,10 @@ transportation, petroleum, and technology.
       the move from fuel economy\index{fuel economy} 
       (actually, a machine efficacy measured in miles/gallon) to
       service efficacy\index{energy service efficacy} (measured in passenger-km/gallon)
-      revealed insights about the transportation sustainability challenge,
+      revealed insights about the transportation sustainability challenges\index{sustainability challenges!transportation},
       namely that filling empty seats in cars is a simple and effective form 
       of increasing effectiveness.
-      Consider a different sustainability challenge besides transportation.
+      Consider a different sustainability challenge\index{sustainability challenges} besides transportation.
       Develop or find an energy efficiency\index{energy efficiency} or a machine efficacy for your challenge
       that is analogous to fuel economy\index{fuel economy} in miles/gallon.
       Develop or find a service efficacy\index{energy service efficacy} for your challenge
@@ -1078,7 +1079,7 @@ transportation, petroleum, and technology.
 
 \item Research the term problem shifting\index{problem shifting}.
       Identify at least three examples of problem shifting\index{problem shifting} in which
-      a ``solution'' to one sustainability challenge
+      a ``solution'' to one sustainability challenge\index{sustainability challenges}
       causes problems of a different sort.
       Can you identify arguments both in favor of and opposed to intentional problem shifting\index{problem shifting}?
 

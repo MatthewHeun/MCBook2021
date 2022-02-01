@@ -13,7 +13,7 @@ It's found in its budget.}{Brent Toderian}
 
 The previous three chapters described sustainability challenges related to 
 households, transportation, and agriculture.
-A common element in all these sustainability challenges is how we use land.
+A common element in all these sustainability challenges is how we use land\index{sustainability challenges!land use}.
 We need places for homes, to grow food, and for transportation systems. 
 Moreover, where we choose to put each of these elements influences 
 the overall need for transportation in human society.
@@ -286,13 +286,14 @@ needed to eliminate the wastes produced by economic activity
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sustainability challenges in land use} %and urban planning
+\section{Sustainability challenges in land use}\index{sustainability challenges!land use}
 \label{sec:land_sustainability_challenges}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Humanity's use of the land has changed over time. 
 Tracking those changes helps us to understand the relationships between
-land use and sustainability challenges (for example, climate change).
+land use and sustainability challenges\index{sustainability challenges!land use}
+(for example, climate change).
 %The data for surveys such as Figure~\ref{fig:USlanduse} are produced from satellite imagery.
 The European Space Agency Climate-Change Initiative (CCI) recently released 
 a satellite-image dataset for global land use over a 24-year period (1992-2015).
@@ -300,7 +301,8 @@ There are nine categories for land-use:
 agriculture, forest, grass, wetland, settlement, shrubland, sparse, bare, and water.
 Humans altered almost 1\% of total land area per year (22\% in 24 years~\cite{Nowosad2019}).
 
-This section examines sustainability challenges related to the way humans use land
+This section examines sustainability challenges 
+related to the way humans use land\index{sustainability challenges!land use}
 for housing, for transportation, and for agriculture.
 
 
@@ -309,13 +311,15 @@ for housing, for transportation, and for agriculture.
 \label{sec:land_challenges_housing}
 %++++++++++++++++++++++++++++++
 
-Two sustainability challenges related to urban areas are their tendency to grow 
+Two sustainability challenges related to urban areas\index{sustainability challenges!urban areas}
+are their tendency to grow 
 continually and the need to maintain depreciating infrastructure such as 
 power, sanitation, transportation systems.
 Note that these two challenges are not the only ones cities face; they are just
 the ones we have chosen to highlight as examples in this chapter. 
-Other challenges include, the ever-increasing need for water to supply
-a growing urban population and the need to mitigate the effects of climate change.
+Other challenges include
+the ever-increasing need for water\index{sustainability challenges!water}
+to supply a growing urban population and the need to mitigate the effects of climate change.
 As an example of the latter, several cities have already appointed ``extreme heat
 officials.''
 
@@ -350,14 +354,13 @@ Second, the net effect is deforestation, which increases net greenhouse gas emis
 Land use and land-use change are an important source of anthropogenic 
 greenhouse gas emissions~\cite{IPCC:2018aa}. (See Figure~\ref{fig:food_ghg}.)
 
-A sustainability challenge associated with urban growth is
-``how can cities supply the needs of an increasing and increasingly urban population
+A sustainability challenge associated with urban growth\index{sustainability challenges!land use}
+is ``how can cities supply the needs of an increasing and increasingly urban population
 without losing ecosystem services\index{ecosystem services}?''
-% There are also challenges with respect to continual and continued growth.
 Cities have been converting agricultural land to urban environments for centuries.
 In the last century, that trend has only accelerated.
-Another sustainability challenge associated with urban growth is
-``how can the best farmland be preserved for future food production?''
+Another sustainability challenge associated with urban growth\index{sustainability challenges!land use} 
+is ``how can the best farmland be preserved for future food production?''
 
 
 %..............................
@@ -381,7 +384,8 @@ revenue to pay for its additional infrastructure.
 \href{https://www.strongtowns.org/}{StrongTowns.org} discusses sustainable 
 infrastructure financing in more detail.
 
-Cities face additional sustainability challenges related to infrastructure lifespan, 
+Cities face additional sustainability challenges 
+related to infrastructure lifespan\index{sustainability challenges!infrastructure}, 
 economic and population growth, changing technology, and fractured ownership.
 The design lifetime of infrastructure may not match its economic lifetime.
 Population growth might make a bridge with a 100-year lifespan inadequate to 
@@ -392,8 +396,8 @@ However, when changes are necessary, the multiple constraints of urban environme
 often makes upgrading infrastructure costly and difficult. 
 That is, transitions are especially difficult for cities.
 
-A sustainability challenge associated with urban infrastructure is
-``how can cities cost effectively modernize infrastructure to accept growth, 
+A sustainability challenge associated with urban infrastructure\index{sustainability challenges!infrastructure}
+is ``how can cities cost effectively modernize infrastructure to accept growth, 
 be resilient to climate change, require less energy, and provide for human needs?"
 
 
@@ -481,8 +485,9 @@ urban_density_data %>%
   ggplot2::theme(legend.position = c(0.8, 0.8))
 @
 
-A sustainability challenge associated with land use and transportation is 
-``how do we arrange the different elements of the transportation system to move 
+A sustainability challenge associated with land use 
+and transportation\index{sustainability challenges!transportation} 
+is ``how do we arrange the different elements of the transportation system to move 
 goods and people quickly with little environmental impact?''
 
 %++++++++++++++++++++++++++++++
@@ -493,15 +498,16 @@ goods and people quickly with little environmental impact?''
 In contrast to the sustainability challenges associated with agriculture that 
 were discussed in Section~\ref{sec:ag_sust_challenges}, the focus of this section
 is not on the inputs and outputs of agricultural operations. 
-Instead, the focus is about the sustainability challenges of land-use patterns for agriculture.
+Instead, the focus is about the sustainability challenges 
+of land-use patterns for agriculture\index{sustainability challenges!land use}.
 
 As has been mentioned already, conversion of agricultural land to other uses, particularly
-urban areas is a sustainability challenge. 
+urban areas is a sustainability challenge\index{sustainability challenges!land use}. 
 Humans have been practicing agriculture for millenia. 
 The most fertile, most productive locations have already been identified. 
 The challenge is keeping those most productive locations as agriculture and not
 allocating them other other uses, such as housing.
-A sustainability challenge associated with land use and agriculture is 
+A sustainability challenge associated with land use and agriculture\index{sustainability challenges!cropland} is 
 ``how can we retain the most fertile cropland as cropland?''
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -667,7 +673,7 @@ How can we do both better?
 \section{Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Like energy, land use is a nexus for many sustainability challenges.
+Like energy, land use is a nexus for many sustainability challenges\index{sustainability challenges!land use}.
 This chapter explored sustainability issues associated with urban areas,
 agricultural land-use patterns, and the role of land in provisioning resources
 for the economy and removing wastes (notably, carbon) from the ecosystem.

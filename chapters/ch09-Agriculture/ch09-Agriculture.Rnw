@@ -98,7 +98,7 @@ and about 3.5\% of GDP worldwide~\cite{World-Bank-agriculture:aa}.
 However, the importance of agriculture goes far beyond its economic value.
 Without agriculture, none of us would be here today!
 This chapter presents key information about the food system and explores its 
-sustainability challenges.
+sustainability challenges\index{sustainability challenges!agriculture}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -137,8 +137,8 @@ relatively cheaper as economies develop.
 Indeed, the price of food has fallen, adjusted for inflation in the last 100 years.)
 Furthermore, Section~\ref{sec:malthus_ehrlich_simon} indirectly suggests humanity 
 will continue to have resources for food production, even if population grows substantially.
-Therefore, total global food production should not be expected to be a major sustainability
-challenge.
+Therefore, total global food production should not be expected 
+to be a major sustainability challenge\index{sustainability challenges!in food production}.
 (Despite the fact that hunger remains an issue in the world today, 
 food production is generally acknowledged to be adequate.
 Instead, there are distribution problems due to factors such as poverty, government
@@ -149,13 +149,15 @@ environment, in the absence of a falling population or affluence
 (Section~\ref{sec:reducing_c}), can only come from reducing 
 one or both of the remaining terms,
 the resource intensity of economic activity~\Rparen{} or the impact of resources~\Xparen{}.
-The next section explores sustainability challenges in agriculture, which arise
-from extracting resources from the ecosystem faster than they regenerate and/or 
+The next section explores
+sustainability challenges in agriculture\index{sustainability challenges!agriculture}, 
+which arise from extracting resources 
+from the ecosystem faster than they regenerate and/or 
 producing more waste(s) than the ecosystem can absorb.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sustainability challenges in agriculture}
+\section{Sustainability challenges in agriculture}\index{sustainability challenges!agriculture}
 \label{sec:ag_sust_challenges}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -260,7 +262,7 @@ which is a renewable resource.
 Animal manure could be a sustainable fertilizer, if the animals are raised sustainably,
 for instance, and 
 if their feed is sustainably raised.
-A sustainability challenge associated with soil use is 
+A sustainability challenge associated with soil use\index{sustainability challenge!soil use} is 
 ``how can we maintain soil fertility\index{soil fertility}
 in the long term without fertilizers 
 derived from nonrenewable resources?''
@@ -326,7 +328,8 @@ Moreover, Lake Erie and the Maumee River that feeds it were unsafe for human ski
 Blooms occurred again in 2017 and 2019~\cite{Rogener:2020wi}.
 Animal manure can also contaminate waterways. Ick.
 
-A sustainability challenge associated with agricultural use of water is 
+A sustainability challenge associated with agricultural use
+of water\index{sustainability challenge!water} is 
 “how can we maintain sufficient sources of clean water for agriculture and
 (direct) human use?''
 
@@ -503,13 +506,13 @@ feed_to_food_efficiency %>%
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-A pithy way to summarize the sustainability challenge posed 
-by the EROI and efficiency of today's food system is:
+A pithy way to summarize the sustainability challenge\index{sustainability challenges!agriculture}
+posed by the EROI and efficiency of today's food system is:
 ``We don't eat food; we eat oil.''
 \end{mcframe}
 
-A sustainability challenge associated with energy in agriculture is 
-“how can the energy inputs to agriculture be made sustainable?''
+A sustainability challenge associated with energy in agriculture\index{sustainability challenges!energy}
+is ``how can the energy inputs to agriculture be made sustainable?''
 
 
 %++++++++++++++++++++++++++++++
@@ -582,8 +585,9 @@ weather- and climate-related supply-side disruptions are
 more significant than demand-side disruptions
 for determining food prices.
 
-A sustainability challenge associated the food distribution system is
-“how can food waste\index{food waste} be eliminated?''
+A sustainability challenge associated 
+with the food distribution system\index{sustainability challenges!food distribution system}
+is ``how can food waste\index{food waste} be eliminated?''
 
 
 %++++++++++++++++++++++++++++++
@@ -722,8 +726,9 @@ Methane from manure management tends to come from liquified manure treatment, wh
 is often the preferred method for concentrated animal populations.
 Dairy cattle account for 51.3\% of methane from manure and swine account for 37\%~\cite{USEPA:2021uj}.
 
-A sustainability challenge associated agricultural GHG emissions is “how can we 
-eliminate GHG emissions from agriculture?''
+A sustainability challenge associated agricultural
+GHG emissions\index{sustainability challenges!GHG emissions}
+is ``how can we eliminate GHG emissions from agriculture?''
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -813,7 +818,7 @@ regenerative agriculture.
 %++++++++++++++++++++++++++++++
 
 %Water. Heat. Changing weather patterns. Growing zones will change. Pests and invasive species.
-Climate change is already presenting challenges for agriculture. 
+Climate change is already presenting challenges for agriculture\index{sustainability challenges!agriculture}. 
 Ensuring that humanity has enough food in the future requires that agriculture change 
 to become resilient to the effects of climate change. 
 The need for climate-change resilience is present in many areas of society and the
