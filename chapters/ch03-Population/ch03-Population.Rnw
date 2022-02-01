@@ -114,10 +114,6 @@ breeding grounds.
 A second cause of animal population decline is overconsumption by humans.
 Ocean fish stocks are a notable example, partly because of the role they play in human diets.
 Other examples include
-% cite United Nations Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services
-%summary report says 1 million animal and plant species are threatened with extinction.
-%"In 2015, 33\% of marine fish stocks were being harvested at unsustainable levels; 60\% were maximally sustainably 
-%fished, with just 7\% harvested at levels lower than what can be sustainably fished."
 passenger pigeons, whales, bison, and megafauna such as the aurochs and the giant ground sloth.
 A third cause of the decline in animal populations is human-induced climate change\index{climate change}.
 For example, many Arctic species, such as polar bear and walrus, are struggling
@@ -333,13 +329,13 @@ The point of Figure~\ref{fig:World3loops} is to show that many variables
 \label{fig:World3loops}
 \end{figure}
 
-The UN projections shown in Figure~\ref{fig:UN_population_prospect} are not based on 
+The UN\index{United Nations} projections shown in Figure~\ref{fig:UN_population_prospect} are not based on 
 the World3\index{World3} model. 
 Instead, the UN\index{United Nations}
 used a Bayesian model\index{Bayesian model}
 that accounts for correlations among the 
 many variables assumed to affect birth and death rates.
-The UN model also accounts for different levels of development in 
+The UN\index{United Nations} model also accounts for different levels of development in 
 different segments of the Earth's human population.
 Accounting for interactions among social, demographic, and economic
 variables is expected to give more-realistic population projections.
@@ -986,7 +982,7 @@ published August 17, 2020. \\
 \begin{projects}
 
 \item Run several population simulations using different models.
-      Do the UN projections shown in Figure~\ref{fig:UN_population_prospect}
+      Do the UN\index{United Nations} projections shown in Figure~\ref{fig:UN_population_prospect}
       align with your projections? What assumptions or starting
       conditions are necessary to get alignment? Do you think this
       is reasonable?

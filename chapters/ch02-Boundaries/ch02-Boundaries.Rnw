@@ -56,10 +56,11 @@ The second set of services is regulating and supporting services,\index{regulati
 which sustain and stabilize the ecosystem\index{ecosystem}.
 These services include processes for breaking down and 
 recycling dead organisms; 
-the carbon, nitrogen, oxygen, and water cycles; 
+the carbon\index{carbon cycle}, nitrogen\index{nitrogen cycle}, oxygen\index{oxygen cycle},
+and water cycles\index{water cycle}; 
 and the fact that plant roots stabilize soil and prevent erosion.
 
-The third set of services is cultural services,\index{services!cultural}
+The third set of services is cultural services,\index{cultural ecosystem services}
 which include recreation and literary and cultural inspiration.
 Artists can't paint or take photographs of a landscape that isn't there.
 Mountains and snow enable downhill skiing. 
@@ -68,7 +69,8 @@ Rivers and lakes enable boating and (recreational) fishing opportunities.
 
 Many international groups have examined the state of Earth's ecosystem services\index{ecosystem services}. 
 The Millennium Ecosystem Assessment (MA)\index{Millennium Ecosystem Assessment}
-is a UN-affiliated group that studied ecosystem services\index{ecosystem services} between 2001 and 2005. 
+is a UN\index{United Nations}-affiliated group
+that studied ecosystem services\index{ecosystem services} between 2001 and 2005. 
 1300 authors from 95 countries participated. 
 The MA found that (even back then) 15 out of the 24 ecosystem services\index{ecosystem services} 
 they examined were being degraded or used unsustainably~\cite{MA2005}.
@@ -633,7 +635,7 @@ are raising the atmospheric CO$_2$ concentration and
 causing the average global temperature to increase. 
 The current average atmospheric CO$_2$ concentration is an example of humanity
 exceeding a planetary boundary. 
-Because the carbon cycle is one of Earth's 
+Because the carbon cycle\index{carbon cycle} is one of Earth's 
 regulating and support ecosystem services\index{regulating and supporting services} and
 because the atmosphere is comprehensively global, 
 the impacts of climate on the environment are many.
@@ -769,7 +771,8 @@ for a 50\% likelihood of remaining below 1.5~\degC{} warming~\cite[Table~SPM.2]{
  \label{page:carbon_budget}
 }
 %
-The UN's Intergovernmental Panel on Climate Change (IPCC) has developed future scenarios
+The UN's\index{UN} Intergovernmental Panel on Climate Change (IPCC)\index{Intergovernmental Panel on Climate Change (IPCC)}
+has developed future scenarios
 for carbon emissions as shown in Table~\ref{tab:ipcc_scenarios}.
 
 \begin{table}
@@ -1005,7 +1008,8 @@ New York: Bloomsbury,
       but it could be saved (somehow) if enough money were raised, how much
       would you contribute?
       
-\item Access to cultural ecosystem services\index{ecosystem services}, for instance, wilderness experiences,
+\item Access to cultural ecosystem services\index{cultural ecosystem services}, 
+      for instance, wilderness experiences,
       are often gated by economic privilege. Do people have a right to such experiences
       and what can be done to distribute them more equitably? 
       
@@ -1050,7 +1054,8 @@ New York: Bloomsbury,
       regulation through litigation.)
       \label{question:shell_lawsuit}
       
-\item What is a cultural ecosystem service\index{ecosystem services} that you value that is threatened by 
+\item What is a cultural ecosystem service\index{cultural ecosystem services} 
+      that you value that is threatened by 
       global climate change\index{climate change}? 
       What are you doing to replace or substitute for that service?
       What could be done to mitigate the impact(s)?
@@ -1115,7 +1120,7 @@ New York: Bloomsbury,
       What role do you think cognitive biases play in our current response
       to climate change\index{climate change}?
 
-\item In 1990, the most recent year for which the United Nations 
+\item In 1990, the most recent year for which the United Nations\index{United Nations} 
       Framework Convention on Climate Change had data, the carbon budget\index{carbon budget} was 1500~GtCO$_2$,
       meaning that if 1500~GtCO$_2$ were emitted, the Earth's temperature would 
       eventually rise by 1.5~\degC{} relative to pre-industrial conditions.
@@ -1190,7 +1195,7 @@ New York: Bloomsbury,
       
 \item Prepare a brief report on the difference(s) between the precautionary principle\index{precautionary principle}
       and the precautionary approach\index{precautionary approach}, particularly as the terms were used 
-      in the UN's 1992 Rio Declaration on Environment and Development. 
+      in the UN's\index{United Nations} 1992 Rio Declaration on Environment and Development. 
       \label{project:percautionary_principle}
       
 \end{projects}
