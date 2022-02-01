@@ -64,7 +64,7 @@ Each resource can be transformed many times within the economy.
 Timber might become 2$\times$4s, or plywood, or toothpicks, or mulch.
 Iron ore might become steel, then sheet metal, and then a toaster.
 Water might become ice, a sports drink, or Play-Doh.
-The process of pulling a resource into the economy is called ``extraction.''
+The process of pulling a resource into the economy is called ``extraction.''\index{resource extraction}
 Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used
 for productive purposes.
 
@@ -247,7 +247,7 @@ of ingredients in a recipe.
 A significant sustainability challenge\index{sustainability challenges!natural resources} 
 is extracting and consuming natural resources\index{resources!natural}
 at a sustainable rate.
-When considering the sustainability of resource extraction and consumption, 
+When considering the sustainability of resource extraction\index{resource extraction} and consumption, 
 we can use the views on sustainability introduced 
 in Section~\ref{sec:what_is_sustainability}:
 ``strong'' and ``weak.''
@@ -271,7 +271,7 @@ Resources that regenerate slowly or not at all, such as fossil fuels,
 are classified as nonrenewable.
 
 Whether or not a resource is renewable affects the sustainability of its 
-extraction and consumption,
+extraction\index{resource extraction} and consumption,
 per definitions of strong\index{strong sustainability} and weak sustainability\index{weak sustainability} 
 given in Section~\ref{sec:what_is_sustainability}.
 A criterion for strong sustainability\index{strong sustainability} is 
@@ -349,7 +349,7 @@ has been growing in recent decades.
 Economic growth, by definition, means an increasing demand for goods and services,
 which, in turn, means an increasing demand for natural resources.
 Figure~\ref{fig:total_material_use} shows the growing
-rate of extraction of materials from the Earth.
+rate of extraction\index{resource extraction} of materials from the Earth.
 Figure~\ref{fig:per_capita_material_use}
 shows the same data on a per-capita basis.
 Although a (hypothetically) falling global population might help humanity to become 
@@ -362,10 +362,10 @@ Thus, a declining population would help humanity to be more sustainable
 only if population declines faster than affluence rises.
 
 Furthermore, Figure~\ref{fig:per_gdp_material_use} shows that on a per-GDP basis 
-extraction of construction minerals, ores, and fossil fuels scales 
+extraction\index{resource extraction} of construction minerals, ores, and fossil fuels scales 
 quite well with GDP;
 those bands are not appreciably growing or shrinking over time.
-On the other hand, the per-GDP extraction rate of biomass is declining rapidly.
+On the other hand, the per-GDP extraction rate of biomass\index{biomass extraction} is declining rapidly.
 The world's economies are dematerializing, but 
 only because we're using less biomass per unit of GDP than ever before.
 We're using nearly the same amount (mass) of construction minerals, ores, and fossil fuels
@@ -398,7 +398,7 @@ material_per_capita %>%
 
 
 
-<<per_gdp_material_use, fig.scap="World material use per GDP vs.\\ time by material type", fig.cap="World material use per GDP vs.\\ time by material type. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction of ores (industrial minerals), fossil fuels, and construction minerals scales quite well with GDP and shows little change on this graph, as the thickness of those bands varies little over time. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<per_gdp_material_use, fig.scap="World material use per GDP vs.\\ time by material type", fig.cap="World material use per GDP vs.\\ time by material type. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction\\index{resource extraction} of ores (industrial minerals), fossil fuels, and construction minerals scales quite well with GDP and shows little change on this graph, as the thickness of those bands varies little over time. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 material_per_gdp <- krausmann %>% 
   dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>% 
   dplyr::mutate(
@@ -425,19 +425,19 @@ material_per_gdp %>%
 Figure~\ref{fig:total_material_use} 
 shows that resource consumption is growing through time.
 By the strong sustainability\index{strong sustainability} criterion,
-any extraction of
+any extraction\index{resource extraction} of
 construction minerals, ores and industrial minerals, and fossil energy carriers
 is unsustainable, because
 we are extracting these materials at rates that are faster than their regeneration rates.
-The fact that we are increasing our rate of material extraction
+The fact that we are increasing our rate of material extraction\index{resource extraction}
 means that we are running well afoul of the strong sustainability\index{strong sustainability} criterion
 for these materials.
 On the other hand,
-extraction of biomass could be sustainable if
+extraction of biomass\index{biomass extraction} could be sustainable if
 the extraction rate is less than the regrowth rate.
-Unfortunately, Figure~\ref{fig:per_gdp_material_use} shows that biomass extraction
+Unfortunately, Figure~\ref{fig:per_gdp_material_use} shows that biomass extraction\index{biomass extraction}
 is not scaling with GDP.
-In fact, GDP growth is supported exclusively by unsustainable material extraction.
+In fact, GDP growth is supported exclusively by unsustainable material extraction\index{resource extraction}.
 
 By the strong sustainability\index{strong sustainability} criterion, 
 we live in an unsustainable world!
@@ -577,7 +577,7 @@ weak_sust_data %>%
 Two ways to become more sustainable are recycling\index{recycling} and substitution\index{substitution}.
 Recycling\index{recycling} is a way to extend the usable life
 of natural resources and
-reduce rates of resource extraction.
+reduce rates of resource extraction\index{resource extraction}.
 Recycling uses discarded products as feedstock
 to regenerate usable products.
 Examples include paper recycling to pulp and glass recycling to new containers.
@@ -711,7 +711,7 @@ that energy is
 the master resource~\cite{library1971energy}\index{master resource (energy)}
 for two important reasons.
 First, energy is required
-for extraction of all natural resources (including energy itself),
+for extraction\index{resource extraction} of all natural resources (including energy itself),
 for any material transformation,
 for consuming goods and services, and
 for disposing of goods.
@@ -817,7 +817,8 @@ none of the fossil fuel consumption shown in Figure~\ref{fig:PrimaryEnergyGraph}
 is sustainable. 
 By the weak sustainability\index{weak sustainability} criterion of preserving resources for 50~years, 
 Figure~\ref{fig:WeakSustEnergyGraph} shows that
-coal consumption is weakly sustainable\index{weak sustainability} from a resource extraction point of view.
+coal consumption is weakly sustainable\index{weak sustainability} from a resource extraction\index{resource extraction}
+point of view.
 (However, coal is not weakly sustainable\index{weak sustainability} from a CO$_2$ emissions point of view, 
 as shown in Figure~\ref{fig:PercentageOfSustainable}.)
 Neither oil nor natural gas are being consumed at a weakly sustainable\index{weak sustainability} rate.
@@ -1058,16 +1059,16 @@ see Section~\ref{sec:revisit_IPARX}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Patterns of resource extraction and resource transitions}
+\section{Patterns of resource extraction and resource transitions}\index{resource extraction}
 \label{sec:resource_transitions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Extraction of finite resources
+Extraction of finite resources\index{resource extraction}
 (such as coal, oil, natural gas, lithium, neodymium, phosphorous, or helium)
 follows a pattern through time~\cite{Brandt:2007vt}.
-In the beginning, extraction of a useful but finite resource accelerates
+In the beginning, extraction of a useful but finite resource\index{resource extraction} accelerates
 as demand climbs and technologies are developed to reduce the cost of extraction.
-Through time, the resource extraction rate peaks then and declines.
+Through time, the resource extraction\index{resource extraction} rate peaks then and declines.
 A clear example of a production curve for a finite resource is
 extraction of coal in the UK, shown in Figure~\ref{fig:UK_coal_extraction}.
 
@@ -1452,7 +1453,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
 
   \item Evaluate the ecological and economic impacts of substitution\index{substitution} of an
         injection-molded plastic part for a stamped steel part on an automobile.
-        What are the raw material and extraction implications?
+        What are the raw material and extraction\index{resource extraction} implications?
         How much energy is used to create the part?
         Does using a lighter part have energy implications over the life of the
         vehicle?
@@ -1476,7 +1477,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
   \item Research the efficiency of electricity generation and distribution.
         How are line losses as well as the efficiency of power generation
         (from coal or natural gas) quantified?
-        What is the efficiency of natural gas extraction and distribution?
+        What is the efficiency of natural gas extraction\index{extraction!natural gas} and distribution?
         Be sure to account for the amount of gas leaking from pipes and storage facilities.
         Which method of delivering energy to the consumer 
         (electric lines or gas pipelines)
