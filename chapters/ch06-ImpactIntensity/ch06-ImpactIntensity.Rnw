@@ -330,7 +330,7 @@ forcing Petra Nova\index{Petra Nova} to shut down.
 This story illustrates the economic interrelation(s) among primary energy\index{primary energy} sources.
 Second, a fossil-fuel power plant fitted with CCS\index{carbon capture and storage (CCS)} technology 
 must ensure that CO$_2$ emissions\index{CO$_2$ emissions} remain buried. 
-If the CO$_2$ escapes to the atmosphere, the effort is ineffective.
+If the CO$_2$ escapes to the atmosphere\index{atmosphere}, the effort is ineffective.
 Third, there are limited locations with the required underground geological formations 
 for CCS\index{carbon capture and storage (CCS)}.
 Finally, CCS\index{carbon capture and storage (CCS)}
@@ -347,16 +347,16 @@ for later injection underground.
 \label{sec:carbon_sequestration}
 %++++++++++++++++++++++++++++++
 
-Carbon sequestration\index{carbon sequestration} seeks to extract CO$_2$ from the atmosphere,
+Carbon sequestration\index{carbon sequestration} seeks to extract CO$_2$ from the atmosphere\index{atmosphere},
 storing it in inert form.
 One form of carbon sequestration\index{carbon sequestration} is simply planting billions of trees.
 A massive, worldwide afforestation effort would be required to extract
-the additional carbon that has been added to the atmosphere since the industrial revolution.
+the additional carbon that has been added to the atmosphere\index{atmosphere} since the industrial revolution.
 In such a scheme, trees consume CO$_2$ and store it in their biomass.
 Unfortunately, if the trees are burned or die and decompose, 
-the CO$_2$ is returned to the atmosphere.
+the CO$_2$ is returned to the atmosphere\index{atmosphere}.
 
-Alternatively, direct air capture extracts CO$_2$ from the atmosphere,
+Alternatively, direct air capture extracts CO$_2$ from the atmosphere\index{atmosphere},
 typically using huge banks of fans and an adsorbent.
 Direct air capture is extremely energy intensive because of the heat needed
 to regenerate the adsorbents. 
@@ -487,7 +487,7 @@ the topic of \ref{project:nuclear_resources}.
 \label{sec:biomass}
 %++++++++++++++++++++++++++++++
 
-In lieu of extracting CO$_2$ from the atmosphere,
+In lieu of extracting CO$_2$ from the atmosphere\index{atmosphere},
 we could stop emitting CO$_2$\index{CO$_2$ emissions} from
 fossil fuel combustion\index{fossil fuels!combustion} in the first place!
 One way is to transition away from fossil fuels\index{fossil fuels} 
@@ -1346,10 +1346,10 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         a nuclear fuel. 
         Repeat the uranium analysis above for thorium.
         
-  \item Research the source(s) of ocean plastic pollution.  
-        What are the effects of ocean plastics on human health and communities?
-        Is plastic in the oceans a single problem or several?
-        \label{project:ocean_plastic}
+  \item \label{project:ocean_plastic}
+        Research the source(s) of ocean\index{ocean} plastic pollution\index{pollution!plastic}.  
+        What are the effects of ocean plastics\index{pollution!plastic} on human health and communities?
+        Is plastic in the oceans\index{pollution!plastic} a single problem or several?
         
   \item Section~\ref{sec:rebound_effect} discusses the rebound effect\index{rebound effect},
         wherein monetary savings from energy efficiency\index{energy efficiency} are spent elsewhere in the economy,

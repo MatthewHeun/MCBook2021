@@ -50,7 +50,7 @@ they're not manufactured.
 The ecosystem\index{ecosystem} ``provides'' the crops. 
 Likewise, the ecosystem\index{ecosystem} provides water, petroleum\index{petroleum}, and
 other mineral resources\index{mineral resources}.
-Simply having oceans and an atmosphere provides a place for pollution\index{pollution} to go.
+Simply having oceans\index{ocean} and an atmosphere\index{atmosphere} provides a place for pollution\index{pollution} to go.
 
 The second set of services is regulating and supporting services,\index{regulating and supporting services} 
 which sustain and stabilize the ecosystem\index{ecosystem}.
@@ -64,7 +64,7 @@ The third set of services is cultural services,\index{cultural ecosystem service
 which include recreation and literary and cultural inspiration.
 Artists can't paint or take photographs of a landscape that isn't there.
 Mountains and snow enable downhill skiing. 
-Ocean waves enable surfing.
+Ocean\index{ocean} waves enable surfing.
 Rivers and lakes enable boating and (recreational) fishing opportunities.
 
 Many international groups have examined the state of Earth's ecosystem services\index{ecosystem services}. 
@@ -299,9 +299,9 @@ The upper limits for these indicators are intended to define a
 \midrule
 Atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration}                   & yes \\
 Extinction rate                                    & yes \\ 
-Anthropogenic nitrogen removed from the atmosphere & yes\\
-Anthropogenic phosphorous added to the ocean       & not yet \\ 
-Calcium carbonate in ocean surface seawater        & not yet \\ 
+Anthropogenic nitrogen removed from the atmosphere\index{atmosphere} & yes\\
+Anthropogenic phosphorous added to the ocean\index{ocean}       & not yet \\ 
+Calcium carbonate in ocean\index{ocean} surface seawater        & not yet \\ 
 Land surface converted to crop land [\%]           & not yet \\ 
 Global consumption rate of fresh water             & not yet \\ 
 Stratospheric ozone depletion\index{ozone depletion}    & not yet \\
@@ -354,7 +354,7 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
 
 Two of the indicators in Table~\ref{tab:planetBoundaries}, 
 particulate\index{particulate matter (PM)} concentration 
-in the atmosphere and chemical pollution\index{pollution!chemical}, 
+in the atmosphere\index{atmosphere} and chemical pollution\index{pollution!chemical}, 
 do not have proposed limits. 
 In the case of chemical pollution\index{pollution!chemical},
 the vast number of such (possible) pollutants, 
@@ -625,7 +625,7 @@ The current average atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ co
 exceeding a planetary boundary\index{planetary boundaries}. 
 Because the carbon cycle\index{carbon cycle} is one of Earth's 
 regulating and support ecosystem services\index{regulating and supporting services} and
-because the atmosphere is comprehensively global, 
+because the atmosphere\index{atmosphere} is comprehensively global, 
 the impacts of climate on the environment are many.
 Climate change\index{climate change} is the term used to describe the results of the greenhouse effect.
 Climate change\index{climate change} is interacting with many other planetary systems and thus contributes
@@ -707,27 +707,28 @@ and CO$_2$, do not absorb the short wavelengths of the Sun's radiation.
 Radiation from the Earth is low energy (long wavelength) because the Earth's
 surface temperature is much lower than the Sun's.
 CO$_2$ and water vapor\index{water vapor} absorb energy at these longer wavelengths.
-The lower atmosphere is thus opaque to thermal radiation from the Earth's surface.
+The lower atmosphere\index{atmosphere} is thus opaque to thermal radiation from the Earth's surface.
 Much of the radiation leaving the Earth's surface is absorbed by greenhouse gases 
-and reradiated to upper levels of the atmosphere. 
-Eventually, in the upper atmosphere, the atmosphere gets thin enough that 
+and reradiated to upper levels of the atmosphere\index{atmosphere}. 
+Eventually, in the upper atmosphere\index{atmosphere}, the atmosphere gets thin enough that 
 heat can radiate energy directly into space. 
 When CO$_2$ is added to the atmosphere\index{atmospheric CO$_2$ concentration}, it traps radiation leaving the Earth
-at higher and higher levels of the atmosphere.
-The relatively small amounts of CO$_2$ in the atmosphere (measured in parts per million)
+at higher and higher levels of the atmosphere\index{atmosphere}.
+The relatively small amounts of CO$_2$ in the atmosphere\index{atmospheric CO$_2$ concentration}
+(measured in parts per million)
 enable enough warming that much-more-potent water vapor\index{water vapor} is present in greater quanties
 as well.
-However, since the atmosphere grows colder at higher elevations, the radiation into
+However, since the atmosphere\index{atmosphere} grows colder at higher elevations, the radiation into
 space is less effective than at lower elevations. 
 By increasing atmospheric greenhouse gas concentrations\index{atmospheric CO$_2$ concentration}
 (particularly CO$_2$), 
-we are essentially adding long-wavelength radiation shields to the atmosphere. 
+we are essentially adding long-wavelength radiation shields to the atmosphere\index{atmosphere}. 
 Less radiation leaving the upper atmosphere means that more heat is trapped
 closer to the Earth's surface. 
-In a matter of days, the upper atmosphere will warm enough to radiate as much heat as 
+In a matter of days, the upper atmosphere\index{atmosphere} will warm enough to radiate as much heat as 
 is incoming from the Sun.
 It takes a much longer time for the rest of the Earth to equilibrate to having a 
-warmer atmosphere. 
+warmer atmosphere\index{atmosphere}. 
 Melting ice caps change the amount of incoming solar radiation that is initially absorbed
 the the Earth.
 Melting Arctic permafrost\index{permafrost} releases methane\index{methane}, another very potent greenhouse gas.
@@ -791,7 +792,7 @@ Assuming no change in today's CO$_2$ emissions\index{CO$_2$ emissions} rate of a
 (Figure~\ref{fig:CarbonEmissionsGraph}), 
 we have less than 15 years before we are committed to a 1.5~\degC{}
 temperature increase over the long term 
-(if we don't find a way to remove CO$_2$ from the atmosphere at large scale).
+(if we don't find a way to remove CO$_2$ from the atmosphere\index{atmosphere} at large scale).
 Given that CO$_2$ emissions\index{CO$_2$ emissions} are not staying constant but are, in fact, rising,
 we probably have \emph{about a decade} before we reach 1.5~\degC{} of eventual warming
 and irreversible effects of climate change\index{climate change}.
@@ -1005,7 +1006,7 @@ New York: Bloomsbury,
 \item Small island nations such as the 
       Republic of the Marshall Islands (RMI)\index{Republic of the Marshall Islands (RMI)}
       have contributed relatively little to global CO$_2$ emissions\index{CO$_2$ emissions} (because their 
-      economy is small) but will be severely affected by rising ocean levels 
+      economy is small) but will be severely affected by rising ocean levels\index{ocean levels!rising} 
       (because they're an island nation with an average elevation of 2~m).
       What rights and redress should nations like RMI\index{Republic of the Marshall Islands (RMI)}
       have with respect to being
