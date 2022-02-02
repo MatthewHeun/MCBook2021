@@ -197,11 +197,12 @@ two ways: either by reducing the demand or by modifying the ecosystem\index{ecos
 supply. 
 For example, reducing the human population reduces the demand for food or
 converting land to cropland increases the supply. 
-Biofuels\index{biofuel} reduce the demand for fossil fuels (but require additional crop land). 
+Biofuels\index{biofuel} reduce the demand for fossil fuels\index{fossil fuels}
+(but require additional crop land). 
 On the other hand, technologies 
 such as directional drilling\index{directional drilling},
 hydraulic fracking\index{hydraulic fracking}, and enhanced oil recovery increase
-the (functional) supply of fossil fuels.
+the (functional) supply of fossil fuels\index{fossil fuels}.
 
 The second type of concern relates to human modifications of the ecosystem\index{ecosystem}.
 Human actions can cause a change or breakdown in the Earth's regulating and 
@@ -255,7 +256,7 @@ Thule air-base crash\index{Thule air-base crash},
 the Palomares crash\index{Palomares crash},
 the Seveso dioxin release\index{Seveso dioxin release}, and, more recently,
 the Chernobyl\index{Chernobyl disaster} and
-Fukishima diasters\index{Fukishima diaster}, which have each contaminated many square kilometers.
+Fukushima disasters\index{Fukushima Daiichi}, which have each contaminated many square kilometers.
 Finally, 
 a global thermonuclear war would be a humanitarian and environmental disaster on a 
 truly global scale (if one were to occur).
@@ -616,7 +617,7 @@ over the last
 Figure~\ref{fig:CarbonEmissionsGraph} shows 
 the rate of world CO$_2$ emission since 1800~\ICOtwoparen{}.
 The clear trend is upward, with small drops corresponding to years of economic recession\index{recession}.
-\textbf{Greenhouse gas} emissions (primarily CO$_2$ released from burning fossil fuels) 
+\textbf{Greenhouse gas} emissions (primarily CO$_2$ released from burning \index{fossil fuels!combustion}) 
 are raising the atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration} and 
 causing the average global temperature to increase. 
 The current average atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration} is an example of humanity
@@ -653,7 +654,7 @@ fit_sentence <- function(.df) {
 }
 @
 
-<<CarbonEmissionsGraph, fig.scap="World CO$_2$ emissions~\\ICOtwoparen{} vs.\\ time", fig.cap="World CO$_2$ emissions\\index{CO$_2$ emissions} from fossil fuel consumption and cement production, \\ICOtwo{} in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions\\index{recession} temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
+<<CarbonEmissionsGraph, fig.scap="World CO$_2$ emissions~\\ICOtwoparen{} vs.\\ time", fig.cap="World CO$_2$ emissions\\index{CO$_2$ emissions} from fossil fuel consumption\\index{fossil fuels!combustion} and cement production, \\ICOtwo{} in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions\\index{recession} temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                                     sheet = "data to plot")
 
@@ -688,7 +689,7 @@ Earth's ecosystems\index{ecosystem}, related to deforestation\index{deforestatio
 wildfires\index{wildfire}, ocean acidification\index{ocean acidification}, 
 methane\index{methane} release from permafrost, and species loss. 
 Second, most greenhouse gas emissions\index{CO$_2$ emissions} are within human control, 
-especially regarding fossil fuels and agriculture. 
+especially regarding fossil fuels\index{fossil fuels} and agriculture. 
 
 % see http://clivebest.com/blog/?p=1169 and references therein.
 Here is a brief description of how climate change\index{climate change} is happening. 

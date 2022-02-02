@@ -121,7 +121,7 @@ Specifically, the prime example for impact of resources~\Xparen{}
 is the CO$_2$ intensity of energy~(\;\!$\mft{X}_{\text{CO}_2}$).
 $\mft{X}_{\text{CO}_2}$ is an intensity, because
 carbon (numerator) can be considered an input 
-to energy derived from fossil fuels (denominator).
+to energy derived from fossil fuels\index{fossil fuels} (denominator).
 
 Figure~\ref{fig:LLNL_CO2_sankey} is a Sankey diagram
 of sources of CO$_2$ emissions\index{CO$_2$ emissions} from the U.S.\ economy in 2018.
@@ -189,7 +189,7 @@ is the \textbf{carbon intensity of primary energy}\index{carbon intensity of pri
 as shown in Figure~\ref{fig:ImpactIntensityGraph}.
 The line in Figure~\ref{fig:ImpactIntensityGraph}
 demonstrates the long transition
-from traditional biofuels\index{traditional biofuel} to fossil fuels
+from traditional biofuels\index{traditional biofuel} to fossil fuels\index{fossil fuels}
 evident in Figure~\ref{fig:PrimaryEnergyGraph}.
 
 <<ImpactIntensityGraph, fig.scap="Carbon intensity of primary energy~\\XCOtwoparen{} vs.\\ time", fig.cap="Carbon intensity of primary energy\\index{carbon intensity of primary energy}~\\XCOtwoparen{}. \\emph{Source}: own calculations. The line represents the ratio of the line in Figure~\\ref{fig:CarbonEmissionsGraph} and the top of Figure~\\ref{fig:PrimaryEnergyGraph} in each year.">>=
@@ -220,9 +220,9 @@ significant sustainability implications.
 Traditional biofuels\index{traditional biofuel} are carbon neutral\index{carbon neutral},
 because any CO$_2$ released by combustion was
 already sequestered into the biomass as the plants grew.
-Fossil fuels are not carbon neutral\index{carbon neutral};
+Fossil fuels\index{fossil fuels} are not carbon neutral\index{carbon neutral};
 their combustion releases CO$_2$ that was sequestered millions of years ago.
-As the world transitioned away from traditional biofuels\index{traditional biofuel} toward fossil fuels,
+As the world transitioned away from traditional biofuels\index{traditional biofuel} toward fossil fuels\index{fossil fuels},
 the carbon intensity of primary energy\index{carbon intensity of primary energy} rose.
 
 On the other hand, use of traditional biofuels\index{traditional biofuel} results in deforestation\index{deforestation}, erosion,
@@ -271,7 +271,7 @@ with respect to the prime example of energy and CO$_2$ emissions\index{CO$_2$ em
 Figure~\ref{fig:ImpactIntensityGraph} shows that 
 the carbon intensity of primary energy\index{carbon intensity of primary energy}~\XCOtwoparen{}
 rose dramatically from 1800--1960, 
-as use of fossil fuels came to dominate the world energy story;
+as use of fossil fuels\index{fossil fuels} came to dominate the world energy story;
 see Figure~\ref{fig:PrimaryEnergyGraph}.
 Since 1960, the carbon intensity of primary energy\index{carbon intensity of primary energy}
 has hovered around 63~MtCO$_2$/EJ.
@@ -310,7 +310,7 @@ The subsections below discuss these options and their implementation challenges.
 %++++++++++++++++++++++++++++++
 
 Carbon capture and storage (CCS)\index{carbon capture and storage (CCS)}
-is a way to continue using fossil fuels
+is a way to continue using fossil fuels\index{fossil fuels}
 during a transition to a low-carbon energy regime. 
 In a CCS\index{carbon capture and storage (CCS)} electricity plant, 
 CO$_2$ emissions\index{CO$_2$ emissions} are captured at the smokestack
@@ -397,17 +397,17 @@ out of landfills and
 contaminants out of the environment.
 
 The climate change\index{climate change} equivalent of a product takeback is the carbon takeback. 
-Under a CTBO, fossil fuel producers and importers would be required 
+Under a CTBO, fossil fuel\index{fossil fuels} producers and importers would be required 
 to permanently sequester the CO$_2$ emitted from the fossil fuels they sell or import.
 Industries that emit greenhouse gases (cement making, for example)
 would also be required to sequester their emissions.
 A CTBO does not specify how the sequestration must occur,
 but it specifies who is obliged to perform the sequestration. 
-Under a CTBO, fossil fuel producers and other emitting industries
+Under a CTBO, fossil fuel\index{fossil fuels} producers and other emitting industries
 would be free to pass the cost of carbon sequestration\index{carbon sequestration}
-to fossil fuel users and other product purchasers (cement buyers, for example),
+to fossil fuel\index{fossil fuels} users and other product purchasers (cement buyers, for example),
 thereby internalizing the cost of CO$_2$ emissions\index{CO$_2$ emissions} in the economy.
-Consumers would still be free to purchase and use fossil fuels, 
+Consumers would still be free to purchase and use fossil fuels\index{fossil fuels}, 
 but under a CTBO, the cost of externalities would be evident
 in the price. 
 
@@ -415,7 +415,7 @@ A progressive CTBO could be phased over several years.
 In the first years, only, say, 10\% of emitted CO$_2$ would need to be sequestered.
 A few years later, 20\%.
 Then 30\%.
-Eventually, fossil fuel producers and other emitting industries
+Eventually, fossil fuel\index{fossil fuels} producers and other emitting industries
 would need to be sequester 100\% of the
 greenhouse gases emitted from the use of their product.
 
@@ -475,7 +475,7 @@ In addition,
 it is energy-intensive to mine and refine uranium prior to its use
 in a nuclear power plant. 
 If the energy required to construct nuclear energy plants
-and refine uranium\index{uranium} comes from fossil fuels, 
+and refine uranium\index{uranium} comes from fossil fuels\index{fossil fuels}, 
 significant CO$_2$ emissions\index{CO$_2$ emissions}
 will result from the transition to nuclear electricity.
 An additional consideration is the availability of uranium resources,
@@ -488,8 +488,9 @@ the topic of \ref{project:nuclear_resources}.
 %++++++++++++++++++++++++++++++
 
 In lieu of extracting CO$_2$ from the atmosphere,
-we could stop emitting CO$_2$ from fossil fuel combustion in the first place!
-One way is to transition away from fossil fuels 
+we could stop emitting CO$_2$\index{CO$_2$ emissions} from
+fossil fuel combustion\index{fossil fuels!combustion} in the first place!
+One way is to transition away from fossil fuels\index{fossil fuels} 
 to the energy mix used in the first half of the 19$^{\text{th}}$ century,
 namely exclusive use of traditional biofuels\index{traditional biofuel} (wood and wood products)
 for heating and electricity;
@@ -508,7 +509,7 @@ via wood stoves,
 provided that particulate matter\index{particulate matter (PM)} emissions are mitigated appropriately.
 However, biomass by itself is not electricity or liquid fuel.
 A conversion to biomass for the world's primary energy\index{primary energy} supply would also require 
-worldwide replacement of today's fossil fuel electricity generation infrastructure
+worldwide replacement of today's fossil fuel electricity\index{fossil fuel electricity} generation infrastructure
 with a fleet of biomass power plants.
 And conversion to biomass would require build-out 
 of a biomass-to-liquid-fuels conversion 
@@ -516,7 +517,8 @@ infrastructure that does not yet exist.
 Finally, conversion to biomass will be accompanied by a reduction 
 in EROI\index{energy return on investment (EROI)}; 
 see Section~\ref{sec:masterE}.
-The EROI\index{energy return on investment (EROI)} for fossil fuels is mostly greater than 20, while
+The EROI\index{energy return on investment (EROI)} for fossil fuelsfossil fuel electricity\index{fossil fuel electricity}
+is mostly greater than 20, while
 the EROI\index{energy return on investment (EROI)} for corn ethanol\index{corn ethanol}
 is typically less than 2~\cite{Hammerschlag:2006uf};
 see Table \ref{tab:eroi}.
@@ -537,7 +539,8 @@ with at least four large challenges.
 First, WWS energy resources produce electricity, not liquid fuels, and 
 large changes will be needed.
 For example, today's transport sector is almost exclusively powered 
-by liquid fossil fuels (gasoline\index{gasoline} and diesel) and illustrates two options for 
+by liquid fossil fuel electricity\index{fossil fuels!liquid}
+(gasoline\index{gasoline} and diesel) and illustrates two options for 
 transitioning from today's energy system to a WWS energy system.
 The first option is to replace
 all fossil-fuel vehicles with \textbf{electric vehicles}\index{electric vehicle (EV)},
@@ -586,7 +589,7 @@ of communities located in the proposed reservoir.
 Finally, WWS systems are energy intensive to manufacture.
 So the transition to a WWS future will require significant energy investment
 in addition to significant financial investment.
-If the energy investment to make WWS systems comes from fossil fuels,
+If the energy investment to make WWS systems comes from fossil fuels\index{fossil fuels},
 significant CO$_2$ will be emitted during the transition
 from today's energy regime to a WWS regime.
 
@@ -809,7 +812,7 @@ The positive terms in Equation~\ref{eq:IPARX_rate_with_numbers}
 represent sources of some of our sustainability challenges\index{sustainability challenges}:
 rising population (\rateP{}~>~0), 
 rising affluence (\rateA{}~>~0), and 
-expanded use of fossil fuels (\rateXCOtwo{}~>~0).
+expanded use of fossil fuels\index{fossil fuels} (\rateXCOtwo{}~>~0).
 
 \end{mcframe}
 
@@ -934,7 +937,7 @@ as it has been for 220 years.
 (Recall from Section~\ref{sec:energy_intensity_of_the_economy}, 
 however, that \REp{} is falling over time primarily because
 per-dollar consumption of sustainable biomass is falling over time.
-Ironically, unsustainable fossil fuel consumption is more constant 
+Ironically, unsustainable fossil fuel\index{fossil fuels} consumption is more constant 
 than sustainable biomass consumption over time, per dollar of GDP;
 see Figure~\ref{fig:per_gdp_material_use}.)
 
@@ -1015,7 +1018,7 @@ in Equation~\ref{eq:IPARX}.
 For the prime example of energy and CO$_2$ emissions\index{CO$_2$ emissions}, 
 the carbon intensity of primary energy\index{carbon intensity of primary energy}~\XCOtwoparen{} 
 quantifies the CO$_2$ emissions\index{CO$_2$ emissions} from consuming energy.
-\XCOtwo{} grew with the transition from biofuels to fossil fuels
+\XCOtwo{} grew with the transition from biofuels to fossil fuels\index{fossil fuels}
 but leveled off in the last few decades.
 Revisiting the IPARX identity\index{IPARX identity},
 we see that rising population~\Pparen{}\index{sustainability challenges!population}, 
@@ -1068,14 +1071,14 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         Make reference to Equation~\ref{eq:IPARX}. At a minimum, discuss
         solar photovoltaic\index{solar panel}, wind turbines, hydro power, and renewable biofuels.
 
-\item Fossil fuels have environmental impacts other than CO$_2$. 
+\item Fossil fuels\index{fossil fuels} have environmental impacts other than CO$_2$. 
       One example is oil spills,
       such as the Exxon Valdez\index{Exxon Valdez} and the Deep Water Horizon\index{Deep Water Horizon} disasters.
       (The International Tanker Owners Pollution Federation\index{International Tanker Owners Pollution Federation}
       reports ``only'' 18 oil
       spills larger than 700 tonnes for the period 2010--2019 versus 245 in the 1970s.) 
       Other examples include environmental impacts from hydraulic fracking\index{hydraulic fracking}
-      fluids; air quality issues associated with burning fossil fuels such as
+      fluids; air quality issues associated with burning fossil fuels such\index{fossil fuels} as
       soot, smog\index{smog}, and ozone\index{ozone}; and soil contamination from leaking underground 
       fuel-storage tanks.
       There is a tendency to approach each of these impacts
@@ -1221,7 +1224,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
   \item Research the Petra Nova\index{Petra Nova} 
         carbon capture and storage (CCS)\index{carbon capture and storage (CCS)} plant.
         What is the feasibility of replicating the Petra Nova scheme
-        to all fossil fuel electricity power plants in the U.S.?
+        to all fossil fuel electricity\index{fossil fuel electricity} power plants in the U.S.?
         In the World?
         What has been the cost to implement the Petra Nova plant?
         Who paid that cost?
@@ -1243,7 +1246,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         
   \item Research and rank the EROI\index{energy return on investment (EROI)} 
         of many primary energy\index{primary energy} sources, 
-        including fossil fuels and renewables such as biofuels.
+        including fossil fuelsfossil fuel electricity and renewables such as biofuels.
         What does your ranking imply for transitions to a low-carbon energy regime?
         Critique how your sources drew the boundaries
         around which they calculated EROI\index{energy return on investment (EROI)}.

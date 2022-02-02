@@ -119,19 +119,19 @@ Figure~\ref{fig:total_material_use} shows consumption rates of some natural reso
 aggregated into important categories of 
 construction minerals, 
 ores and industrial minerals,
-fossil fuels, and 
+fossil fuels\index{fossil fuels}, and 
 biomass.
 In 2005, the world economy used about
 19~Gt of biomass, 
 23~Gt of construction materials, 
-11.6~Gt of fossil fuels, and
+11.6~Gt of fossil fuels\index{fossil fuels}, and
 5.7~Gt of ores and industrial minerals
 to produce about \$81.5 trillion dollars of GDP. 
 One Gt is 10$^\text{9}$~tonnes (or 10$^{\text{12}}$~kg) and a trillion dollars is \$10$^{\text{12}}$.
 Thus, each dollar of GDP used about 
 0.23~kg of biomass, 
 0.28~kg of construction materials,
-0.14~kg of fossil fuels, and
+0.14~kg of fossil fuels\index{fossil fuels}, and
 0.07~kg of ores and industrial minerals.
 A full accounting of the resource intensity of the economy~\Rparen{}
 yields a long list of numbers, like a huge grocery list,
@@ -268,7 +268,7 @@ are classified as renewable.
 Resources that regenerate quickly (on the order of decades), 
 such as forests and other biomass,
 are also classified as renewable.
-Resources that regenerate slowly or not at all, such as fossil fuels,
+Resources that regenerate slowly or not at all, such as fossil fuels\index{fossil fuels},
 are classified as nonrenewable.
 
 Whether or not a resource is renewable affects the sustainability of its 
@@ -364,13 +364,13 @@ Thus, a declining population would help humanity to be more sustainable
 only if population declines faster than affluence rises.
 
 Furthermore, Figure~\ref{fig:per_gdp_material_use} shows that on a per-GDP basis 
-extraction\index{resource extraction} of construction minerals, ores, and fossil fuels scales 
+extraction\index{resource extraction} of construction minerals, ores, and fossil fuels\index{fossil fuels} scales 
 quite well with GDP;
 those bands are not appreciably growing or shrinking over time.
 On the other hand, the per-GDP extraction rate of biomass\index{biomass extraction} is declining rapidly.
 The world's economies are dematerializing, but 
 only because we're using less biomass per unit of GDP than ever before.
-We're using nearly the same amount (mass) of construction minerals, ores, and fossil fuels
+We're using nearly the same amount (mass) of construction minerals, ores, and fossil fuels\index{fossil fuels}
 per GDP as we ever have.
 And because GDP is growing, total material use grows, too.
 
@@ -400,7 +400,7 @@ material_per_capita %>%
 
 
 
-<<per_gdp_material_use, fig.scap="World material use per GDP vs.\\ time by material type", fig.cap="World material use per GDP vs.\\ time by material type. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction\\index{resource extraction} of ores (industrial minerals), fossil fuels, and construction minerals scales quite well with GDP and shows little change on this graph, as the thickness of those bands varies little over time. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<per_gdp_material_use, fig.scap="World material use per GDP vs.\\ time by material type", fig.cap="World material use per GDP vs.\\ time by material type. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction\\index{resource extraction} of ores (industrial minerals), fossil fuels\\index{fossil fuels}, and construction minerals scales quite well with GDP and shows little change on this graph, as the thickness of those bands varies little over time. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 material_per_gdp <- krausmann %>% 
   dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>% 
   dplyr::mutate(
@@ -688,7 +688,7 @@ bringing us further from sustainability.
 The second example involves lighting.
 Societies moved away from wax candles and whale oil lanterns to
 ``town gas,'' kerosene, and finally, electric lights.
-Electricity (from fossil fuels) is not renewable, so 
+Electricity (from fossil fuels)\index{fossil fuel electricity} is not renewable, so 
 this is another example of an 
 inexpensive, nonrenewable resource substituting for an
 expensive, renewable resource.
@@ -819,7 +819,7 @@ energy consumption has grown substantially over the last two centuries;
 see Figure~\ref{fig:EnergyPerPersonGraph}.
 By the strong sustainability\index{strong sustainability} criterion of consuming resources at a rate
 beneath their regeneration rate,
-none of the fossil fuel consumption shown in Figure~\ref{fig:PrimaryEnergyGraph}
+none of the fossil fuel\index{fossil fuels} consumption shown in Figure~\ref{fig:PrimaryEnergyGraph}
 is sustainable. 
 By the weak sustainability\index{weak sustainability} criterion of preserving resources for 50~years, 
 Figure~\ref{fig:WeakSustEnergyGraph} shows that
@@ -881,14 +881,14 @@ History can be seen in time-series energy graphs.
 In particular, 
 the effect of the 1970s oil crises can be seen in Figure~\ref{fig:EnergyPerPersonGraph}.
 Per-capita primary energy consumption\index{primary energy consumption} rose substantially from 1800 to 1970
-with the adoption of fossil fuels worldwide.
+with the adoption of fossil fuels\index{fossil fuels} worldwide.
 Since the oil crises, efficiency and substitution\index{substitution}
 have slowed the growth of per-capita primary energy consumption\index{primary energy consumption}.
 Economic growth in the developing world, particularly in China, led to a
 noticeable rise in per-capita energy consumption starting in 2001.
 \end{mcframe}
 
-<<WeakSustEnergyGraph, fig.width=3.25, fig.scap="Percentage above weak sustainability for fossil fuels", fig.cap=paste0("Percentage above maximum weakly sustainable\\index{weak sustainability} extraction rates~($\\rho$) for world fossil fuel consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate and a negative value of $\\rho$), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for Oil (less than 50 years, so above the weakly sustainable extraction rate and a positive value of $\\rho$), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for Natural gas (so positive $\\rho$). \\emph{Sources}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
+<<WeakSustEnergyGraph, fig.width=3.25, fig.scap="Percentage above weak sustainability for fossil fuels", fig.cap=paste0("Percentage above maximum weakly sustainable\\index{weak sustainability} extraction rates~($\\rho$) for world fossil fuel\\index{fossil fuels} consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate and a negative value of $\\rho$), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for Oil (less than 50 years, so above the weakly sustainable extraction rate and a positive value of $\\rho$), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for Natural gas (so positive $\\rho$). \\emph{Sources}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
 
 weak_sust_energy_rho <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
                                             sheet = "data to plot") %>% 
@@ -1178,9 +1178,9 @@ For the prime example of primary energy intensity\index{primary energy intensity
 we found that~\REp{} has decreased substantially since 1800, 
 but only because we are using far less biofuels\index{biofuel} per dollar of GDP
 today than in the past.
-Fossil fuel use has remained much more constant on a per-GDP basis.
+Fossil fuel\index{fossil fuels} use has remained much more constant on a per-GDP basis.
 Ironically, biofuels\index{biofuel} are a (potentially) sustainable source of energy, 
-so we are growing economies with unsustainable fossil fuel consumption 
+so we are growing economies with unsustainable fossil fuel consumption\index{fossil fuels!combustion} 
 while at the same time
 relying less on consumption of (potentially) sustainable biomass.
 
@@ -1477,7 +1477,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         How do you evaluate tradeoffs?
         
   \item In winter, fresh food is transported from warm locations (for example, California and Florida)
-        to cold locations (Michigan, for instance), consuming fossil fuels
+        to cold locations (Michigan, for instance), consuming fossil fuels\index{fossil fuels}
         and causing CO$_2$ emissions\index{CO$_2$ emissions!food}.
         Alternatively, LED lighting\index{LED lamp} could be used at indoor farms to grow food
         in cold climates in the winter.
