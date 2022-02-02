@@ -663,7 +663,8 @@ ggplot2::ggplot(data = world) +
 @
 
 Since the industrial revolution, humans are increasingly living in urban environments.
-In 1973 there were only 3 cities (Mexico City, Tokyo, and New York City) with populations
+In 1973 there were only 3 cities (Mexico City\index{Mexico City}, Tokyo\index{Tokyo}, and
+New York\index{New York} City) with populations
 of more than 10~million people (called ``megacities'').
 Since 2005--2006 more than half of the world's population live in urban areas, and
 there are now 21 cities megacities.
@@ -683,37 +684,9 @@ Nevertheless, it is unwise to consider urban areas apart from the rural
 areas that enable them to thrive.
 True sustainability thinking must consider all of human society and its spatial distribution.
 
-% \textbf{Link to land use and urban planning chapter.}
-% \begin{quote}
-% Cities are one of the big issues facing the planet. Hundreds of new cities are
-% expected to be created across Africa and Asia in the course of the next century.
-% Researchers believe that, if current population trends continue, Lagos, the largest
-% city in Nigeria, could develop into a vast, sprawling metropolis of over
-% eighty-five million people. Niger has the highest birth rate in Africa; Niamey,
-% its capital, is expected to explode in size, from less than one million people
-% to forty-six million by 2100. Unfortunately, the urban expansion that has already
-% taken place across the developing world has been ramshackle. Much of it has taken
-% the form of shanty towns, where groups of shacks are crowded together with little
-% sanitation or governance. This is brewing an obvious problem. The example of the
-% West is, alas, little more encouraging. Much new development takes the form of
-% suburban sprawl, which is wasteful of precious land, and has little character of
-% its own. Young people are frustrated because they cannot break out of parental
-% nests; the elderly feel isolated. And yet the pressure to build more housing—for
-% reasons of immigration, increased life expectancy, and the creation of more
-% households due to divorce—will increase, not abate. The need for master-planning
-% has never been greater.
-% \end{quote} %%https://www.newcriterion.com/issues/2018/6/the-future-of-classicism-9861
-% ***** Stick to summarizing what is.  Describe tradeoffs. Put interesting questions in the questions. 
-% In particular, pull interesting questions from the block quote. ****
-
-
-%% https://www.theguardian.com/books/2015/jul/16/rainbow-dust-the-moth-snowstorm-in-pursuit-of-butterflies-review
-%% Science may clarify priorities “but the whole show is essentially about Love”.
-%% JVA: Technology says, 'can we," economics tells us the tradeoffs, love lets us decide whether we want to.
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Malthus, Ehrlich, and Simon}\index{Malthus, Thomas}
+\section{Malthus, Ehrlich, and Simon}\index{Malthus, Thomas}\index{Ehrlich, Paul}
 \label{sec:malthus_ehrlich_simon}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -771,20 +744,21 @@ technology that will yield abundant resources?
 In 1980, business professor Julian Simon\index{Simon, Julian}
 challenged biologist Paul Ehrlich\index{Ehrlich, Paul} to a
 \$10,000 wager.
-Ehrlich was to select a suite of raw materials and a date more than a year away.
+Ehrlich\index{Ehrlich, Paul} was to select a suite of raw materials and a date more than a year away.
 If inflation-adjusted prices of those raw materials increased
-(indicating scarcity), Ehrlich would win.
-Ehrlich chose copper, chromium, nickel, tin, and tungsten over the time period
-1980 to 1990.
+(indicating scarcity), Ehrlich\index{Ehrlich, Paul} would win.
+Ehrlich\index{Ehrlich, Paul} chose
+copper\index{copper}, chromium\index{chromium}, nickel\index{nickel}, tin\index{tin}, and tungsten\index{tungsten} 
+over the time period 1980 to 1990.
 In the 1980s, world population increased from about 4.46~billion to around
 5.33~billion.
 Despite the largest single-decade population increase in history,
 prices for all five materials decreased (indicating abundance), and
-Simon won the bet.
-If you think the price decreases settled the argument, you lose, like Ehrlich.
+Simon\index{Simon, Julian} won the bet.
+If you think the price decreases settled the argument, you lose, like Ehrlich\index{Ehrlich, Paul}.
 Over the years, both sides have countered with a variety of ``what-if'' scenarios, and
 scholars have examined other timespans and other raw materials.
-One study concluded that Simon would win about 54\% of the time
+One study concluded that Simon\index{Simon, Julian} would win about 54\% of the time
 if war years were included and
 about 70\% of the time if war years were excluded~\cite{Pooley:2020vx}.
 
@@ -882,16 +856,18 @@ published August 17, 2020. \\
       Figure~\ref{fig:World3loops} suggests some ideas.
       Or, perhaps what Malthus\index{Malthus, Thomas} called ``miseries:'' war, famine, and/or epidemics will
       control population.
-      Lastly, consider contraception or, as Malthus\index{Malthus, Thomas} suggested, late marriage.
+      Lastly, consider contraception or, as Malthus\index{Malthus, Thomas} suggested, 
+      late marriage\index{marriage}.
       
 
-\item Riffing on Malthus's\index{Malthus, Thomas} suggestion of late marriage, what are families for?
+\item Riffing on Malthus's\index{Malthus, Thomas} suggestion of late marriage\index{marriage},
+      what are families for?
       What role, if any, does family formation play in population growth?
       Is it easier to find a spouse (or not) in a higher population density\index{population density} area?
       What are the effects of a widely distributed population on family life and
       social connectedness?
 
-\item What degree, do you think, should the topic of adoption play in population
+\item What degree, do you think, should the topic of adoption\index{adoption} play in population
       growth, if any?
       What are its pros and cons in forming a family?
 
@@ -901,12 +877,12 @@ published August 17, 2020. \\
       and~\ref{question:population_control}?
       If so, how?
       What options does the rest of the world have for decreasing population
-      growth in Asia (where most of the world's people are) and Africa (where
+      growth in Asia\index{Asia} (where most of the world's people are) and Africa\index{Africa} (where
       the most growth is anticipated)?
       What means are morally acceptable?
       Which means do you think are most likely to be effective?
 
-\item The best XKCD comic is \href{https://xkcd.com/552/}{\#552}, 
+\item The best XKCD\index{XKCD} comic is \href{https://xkcd.com/552/}{\#552}, 
       which considers correlation and causation.
       Falling birth rates are correlated with economic development, urbanization,
       increased education, decline in the value of child labor, and access to
@@ -962,12 +938,12 @@ published August 17, 2020. \\
 \item Is your personal outlook on the future Malthusian\index{Malthusian} or techno-optimistic\index{techno-optimistic}?
       Why, and to what degree?
       Are there qualifying statements for you?
-      With respect to the Simon-Ehrlich bet, what bets would you take?
+      With respect to the Simon-Ehrlich bet\index{Simon-Ehrlich bet}, what bets would you take?
       What bets would you propose?
 
 \item Is a wager a good way verify truth? Why or why not?
       Explain how a wager produces truth (or fails to do so).
-      Did the Simon-Ehrlich bet ``prove'' anything?
+      Did the Simon-Ehrlich bet\index{Simon-Ehrlich bet} ``prove'' anything?
       Is it evidence that should be given weight?
       If so, what is it evidence of and how much weight?
       If no, why not?
@@ -992,7 +968,7 @@ published August 17, 2020. \\
       for your city, state, county, or school.
       Do you notice anything interesting?
 
-\item Research China's ``one-child policy.''
+\item Research China's ``one-child policy\index{one child policy}.''
       What were the details?
       Was it effective?
       What was its return on investment, that is, was it cost effective?
@@ -1006,11 +982,12 @@ published August 17, 2020. \\
       What is the end towards which we progress? Is there an end?
       What is the driving force for progress?
 
-\item Investigate the Simon-Ehrlich wager.
-      For what materials (besides copper, chromium, nickel, tin, and tungsten)
-      would Ehrlich have won?
-      Would Simon have won?
-      For what time periods would Ehrlich or Simon have won?
+\item Investigate the Simon-Ehrlich wager\index{Simon-Ehrlich bet}.
+      For what materials (besides copper\index{copper}, chromium\index{chromium},
+      nickel\index{nickel}, tin\index{tin}, and tungsten\index{tungsten})
+      would Ehrlich\index{Ehrlich, Paul} have won?
+      Would Simon\index{Simon, Julian} have won?
+      For what time periods would Ehrlich\index{Ehrlich, Paul} or Simon\index{Simon, Julian} have won?
       How did each man react to his victory or defeat?
       Was there grace or bitterness? Why?
       How did each man's supporters react to the outcome?
