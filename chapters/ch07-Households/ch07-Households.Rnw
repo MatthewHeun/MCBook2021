@@ -91,12 +91,12 @@ in part because they are sites of energy consumption.
 For example, Figure~\ref{fig:LLNL_energy_sankey} shows that 
 11.9~quads of final energy\index{final energy} were consumed in U.S.\ residences in 2018,
 representing 12\% of final energy\index{final energy} consumption.
-Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions
+Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions\index{CO$_2$ emissions!household}
 from the U.S.\ residential sector in 2018 total 
 \Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Mt/year,
 predominantly from electricity\index{electricity} and natural gas\index{natural gas}.
 Energy consumption in dwellings is a source of sustainability impacts
-(CO$_2$ emissions and 
+(CO$_2$ emissions\index{CO$_2$ emissions!households} and 
 natural resource extraction\index{resource extraction})
 far beyond the site of the demand.
 Thus, decisions made by households have sustainability implications
@@ -246,7 +246,7 @@ household_energy_by_category %>%
 
 Guided by the aggregation above,
 this section focuses attention on four important drivers for 
-household energy consumption and CO$_2$ emissions:
+household energy consumption and CO$_2$ emissions\index{CO$_2$ emissions!household}:
 size and location,
 heating and cooling,
 hygiene, and
@@ -377,7 +377,7 @@ urban, suburban, and rural locations,
 with important sustainability implications.
 Living in an urban center can reduce average transport distances. 
 Living in the suburbs or in rural areas can mean
-increased fuel use and CO$_2$ emissions for transport. 
+increased fuel use and CO$_2$ emissions for transportation\index{CO$_2$ emissions!transportation}. 
 
 Zooming out, the latitude of the home may make a 
 larger impact on household sustainability
@@ -486,7 +486,7 @@ Clothes washers and dryers\index{clothes washer}\index{clothes dryer}
 consume both water and energy, typically electricity\index{electricity} and natural gas\index{natural gas}.
 Burning natural gas\index{natural gas} emits CO$_2$.
 When the electricity\index{electricity} for washers and dryers comes from fossil fuel sources, 
-further CO$_2$ emissions occur.
+further CO$_2$ emissions\index{CO$_2$ emissions!household} occur.
 
 Hygiene is a significant 
 cause of energy consumption in the U.S. 
@@ -619,7 +619,7 @@ An interesting tradeoff exists between energy (and CO$_2$) embodied in structure
 and energy consumed in daily life.
 A home builder could install extra insulation,
 more than local building codes require.
-Doing so decreases energy consumption and CO$_2$ emissions 
+Doing so decreases energy consumption and CO$_2$ emissions \index{CO$_2$ emissions!household}
 while the home is in use.
 However, the home will embody more energy and carbon,
 because many insulation types
@@ -813,7 +813,7 @@ obtaining the same energy services\index{energy service}
 with less resources consumption, especially energy. 
 As such, the household sustainability transitions discussed below
 will have the effect of reducing the resource intensity of the economy
-(\:\!\REp{} for the prime example of energy and CO$_2$ emissions).
+(\:\!\REp{} for the prime example of energy and CO$_2$ emissions\index{CO$_2$ emissions}).
 
 
 %++++++++++++++++++++++++++++++
@@ -923,7 +923,7 @@ low-flow showerheads\index{low-flow showerhead} and faucets\index{low-flow fauce
 decrease the amount of gray water entering the sewer system (with ``downstream''
 energy and cost savings).
 If less water is consumed for cooking and bathing,
-energy consumption and CO$_2$ emissions are reduced.
+energy consumption and CO$_2$ emissions\index{CO$_2$ emissions!household} are reduced.
 In addition, gray water reuse systems can provide water for irrigation and toilet flushing,
 thereby reducing clean water demand.
 
@@ -1011,7 +1011,8 @@ required to manufacture the more efficient option.
 The second kind of tradeoff is between well-being or affluence and cost. 
 Turning the thermostat\index{thermostat} down means your home is less comfortable, which
 means that you are not as well off (not as happy). 
-On the other hand, turning the thermostat\index{thermostat} down saves money, energy, and CO$_2$ emissions.
+On the other hand, turning the thermostat\index{thermostat} down 
+saves money, energy, and CO$_2$ emissions\index{CO$_2$ emissions!household}.
 For both of these kinds of tradeoffs, price is the determiner as to how the tradeoff
 plays out. 
 Changing society-wide behavior means manipulating prices---of goods, of energy, or both.
@@ -1063,7 +1064,8 @@ United States, 1999: \\
 \item \label{question:household_policies} Here are several household-related sustainability policies:
    \begin{enumerate}
       \item require everyone to live in cities (to reduce commuting distances), 
-      \item outlaw clothes washers that use hot water (to save CO$_2$ emissions from water heating),
+      \item outlaw clothes washers that use hot water (to save CO$_2$ emissions 
+            from water heating\index{CO$_2$ emissions!water heating}),
       \item outlaw automatic dishwashers\index{dishwasher} (to reduce energy consumption for water heating),
       \item require all clothes washing to be done at laundromats (to reduce embodied energy of clothes washers in every home),
       \item require all homes to undergo an energy efficiency\index{energy efficiency}
@@ -1282,7 +1284,7 @@ United States, 1999: \\
       But laundromats will likely have larger commercial washers and dryers. 
       Would they be less energy efficient than smaller domestic washers and dryers?
       Many people will need to drive to laundromats to do laundry, increasing transport-related
-      CO$_2$ emissions.
+      CO$_2$ emissions\index{CO$_2$ emissions!transportation}.
       Finally, washers and dryers would no longer be purchased, thereby saving money. 
       But the marginal cost of a load of laundry may be higher at a laundromat compared 
       to home-based laundry. 
@@ -1308,7 +1310,7 @@ United States, 1999: \\
       in lighting service provided.
       What is the cost to purchase and install the new lamps.
       How much energy will be saved annually?
-      How much CO$_2$ emissions will be saved annually?
+      How much CO$_2$ emissions\index{CO$_2$ emissions!lighting} will be saved annually?
       How much energy cost will be saved annually?
       What is the expected economic payback time?
       Should you replace your lamps?

@@ -195,7 +195,7 @@ Individuals can (usually easily) choose
 not to be billionaires~\citep{Wilk:2021vg}!
 On a per-person basis,
 yachts\index{yacht}, mansions\index{mansion}, and private jets\index{jet!private}
-contribute significant CO$_2$ emissions
+contribute significant CO$_2$ emissions\index{CO$_2$ emissions!travel}
 both when in use and when on standby.
 Individuals can adopt a degrowth\index{degrowth} mindset.
 In short, we can all strive to live
@@ -272,7 +272,7 @@ rising impact of resources~\Xparen{}
 leads to increased environmental impacts~\Iparen{}.
 Thankfully, there are many ways individuals can reduce the impact
 intensity of resources, particularly for the prime example of this book
-(energy and CO$_2$ emissions).
+(energy and CO$_2$ emissions\index{CO$_2$ emissions}).
 
 
 %..............................
@@ -282,7 +282,7 @@ intensity of resources, particularly for the prime example of this book
 
 Individuals can choose to install renewable energy generation systems
 to reduce fossil energy consumption
-and limit CO$_2$ emissions. 
+and limit CO$_2$ emissions\index{CO$_2$ emissions}. 
 Examples include
 rooftop solar photovoltaic electricity panels\index{solar panel}, 
 rooftop solar water heaters, 
@@ -325,7 +325,7 @@ with onsite or offsite renewable energy production.
       \caption[Energy-efficient home with insulated basement]
               {Energy-efficient home with insulated basement.
                The additional insulation will reduce energy consumption 
-               and CO$_2$ emissions related to heating and cooling;
+               and CO$_2$ emissions related to heating and cooling\index{CO$_2$ emissions!heating and cooling};
                see Sections~\ref{sec:heating_cooling_challenges}
                and~\ref{sec:heating_cooling_transition}.
                \emph{Source}: \copyright{}2018 Jeremy Van Antwerp.}
@@ -355,7 +355,8 @@ see Figure~\ref{fig:energy_efficient_home}.
 Choosing efficient (Energy Star)\index{Energy Star}
 appliances and lights will improve energy efficiency\index{energy efficiency}, 
 reduce energy consumption, and 
-reduce CO$_2$ emissions so long as appliance and lighting usage is unchanged
+reduce CO$_2$ emissions\index{CO$_2$ emissions!reduction}
+so long as appliance and lighting usage is unchanged
 (to avoid the rebound effect\index{rebound effect} and backfire\index{backfire}).
 Even better, choose not to use some appliances
 by, for example, 
@@ -433,7 +434,7 @@ Choosing a smaller car will reduce carbon emissions
 associated with commuting.
 Individuals should not ``over buy'' cars.
 (If a truck is needed once per year to pull a trailer, rent it.)
-Choosing an electric vehicle\index{electric vehicle (EV)} will reduce CO$_2$ emissions
+Choosing an electric vehicle\index{electric vehicle (EV)} will reduce CO$_2$ emissions\index{CO$_2$ emissions!reduction}
 in those places where grid electricity contains a large proportion of renewables;
 see Section~\ref{sec:electric_vehicles} and Figure~\ref{fig:tesla}.
 Don’t fly.
@@ -448,7 +449,7 @@ where vehicle occupancy is high and everyone shares the carbon embodied in the
 buses, trains, trolleys, or subways. 
 Choosing to walk or bike (Figure~\ref{fig:commuting_bicycle}), 
 usually only possible in cities,
-further reduces CO$_2$ emissions. 
+further reduces CO$_2$ emissions\index{CO$_2$ emissions!reduction}. 
 City dwellers can choose to not buy a car at all, preferring
 on-demand rental vehicles from companies
 such as Uber, Lyft, or Zip Car
@@ -613,7 +614,7 @@ Table~\ref{tab:personal_energy_actions} provides answers
 that move in the direction of a more-sustainable world 
 and make a difference to the planet,
 without requiring an agrarian, pre-1900s lifestyle.
-Figure~\ref{fig:CO2-Savings} provides estimates of the CO$_2$ emissions savings 
+Figure~\ref{fig:CO2-Savings} provides estimates of the CO$_2$ emissions savings\index{CO$_2$ emissions!reduction}
 from one example action for each row in Table~\ref{tab:personal_energy_actions}.
 
 There are many additional actions for the rows in Table~\ref{tab:personal_energy_actions}.
@@ -644,7 +645,7 @@ How much will I fly?                        & Little or not at all              
 \end{table}
 
 
-<<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example sustainability actions shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/year in a Honda Accord\\index{Honda Accord} vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~MgCO$_2$/year. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity and natural gas\\index{natural gas} for a ``2750~ft$2$'' home vs.\\ a ``1250~ft$^2$ home in the U.S. Savings are ", small_house_savings, "~MgCO$_2$/year. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/year. Savings are estimated to be ", chicken_savings, "~MgCO$_2$/year. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/year in a Ford F150\\index{Ford F150} pickup truck or a Honda Accord\\index{Honda Accord} sedan. Savings will be ", accord_savings, "~MgCO$_2$/year. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's LaGuardia airport~(LGA) and London's Heathrow airport~(LHA) vs.\\ a virtual meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~MgCO$_2$/year. \\emph{Source}: own calculations.")>>=
+<<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example sustainability actions shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings\\index{CO$_2$ emissions!reduction}. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/year in a Honda Accord\\index{Honda Accord} vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~MgCO$_2$/year. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity and natural gas\\index{natural gas} for a ``2750~ft$2$'' home vs.\\ a ``1250~ft$^2$ home in the U.S. Savings are ", small_house_savings, "~MgCO$_2$/year. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/year. Savings are estimated to be ", chicken_savings, "~MgCO$_2$/year. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/year in a Ford F150\\index{Ford F150} pickup truck or a Honda Accord\\index{Honda Accord} sedan. Savings will be ", accord_savings, "~MgCO$_2$/year. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's LaGuardia airport~(LGA) and London's Heathrow airport~(LHA) vs.\\ a virtual meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~MgCO$_2$/year. \\emph{Source}: own calculations.")>>=
 co2_savings <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
                                   sheet = "savings")
 no_commute_savings <- co2_savings %>% dplyr::filter(Action == "No commute") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
@@ -1013,12 +1014,12 @@ Wangari Maathai, and Joseph Lstiburek.
 \item \label{problem:more_actions} 
       Figure~\ref{fig:CO2-Savings} shows an example sustainability-beneficial action
       for each row of Table~\ref{tab:personal_energy_actions}.
-      Verify the calculation of CO$_2$ emissions savings presented 
+      Verify the calculation of CO$_2$ emissions savings\index{CO$_2$ emissions!reduction} presented 
       in Figure~\ref{fig:CO2-Savings}.
       Then, think of one additional sustainability-related action 
       for each row.
-      Then, calculate the expected CO$_2$ emissions savings for your new actions.
-      Which action is most beneficial for reducing CO$_2$ emissions?
+      Then, calculate the expected CO$_2$ emissions savings\index{CO$_2$ emissions!reduction} for your new actions.
+      Which action is most beneficial for reducing CO$_2$ emissions\index{CO$_2$ emissions!reduction}?
       Why?
       
 \end{projects}

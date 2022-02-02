@@ -209,7 +209,7 @@ supporting ecosystem services\index{regulating and supporting services},
 which will lead to a tipping point\index{tipping point}, that is, 
 a fundamental change in the way the ecosystem\index{ecosystem} works. 
 An example that is of particular concern at present is global climate change\index{climate change} 
-(principally) caused by human CO$_2$ emissions. 
+(principally) caused by human CO$_2$ emissions\index{CO$_2$ emissions}. 
 Species extinctions, which is like losing rivets in an airplane, is another cause of concern.
 Because of tipping points\index{tipping point} and the nonlinear and interrelated nature of the
 ecosystem's dynamics\index{ecosystem dynamics}, human actions can cause a series of cascading failures
@@ -531,7 +531,7 @@ dramatically hotter, fundamentally altering many of its basic systems.
 There are many, many indices used to express or measure sustainability. 
 All indices are, essentially, (weighted) averages of quantities related to
 one or more of the three areas of sustainability shown in Figure~\ref{fig:venn_diagram}.
-Example indices include carbon footprint\index{carbon footprint} (in CO$_2$ emissions per person), 
+Example indices include carbon footprint\index{carbon footprint} (in CO$_2$ emissions\index{CO$_2$ emissions} per person), 
 the floristic quality index\index{floristic quality index}~\cite{Freyman2015},
 the multidimensional poverty index\index{multidimensional poverty index}, 
 ecological footprint\index{ecological footprint} (in global hectares per person), and
@@ -653,7 +653,7 @@ fit_sentence <- function(.df) {
 }
 @
 
-<<CarbonEmissionsGraph, fig.scap="World CO$_2$ emissions~\\ICOtwoparen{} vs.\\ time", fig.cap="World CO$_2$ emissions from fossil fuel consumption and cement production, \\ICOtwo{} in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions\\index{recession} temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
+<<CarbonEmissionsGraph, fig.scap="World CO$_2$ emissions~\\ICOtwoparen{} vs.\\ time", fig.cap="World CO$_2$ emissions\\index{CO$_2$ emissions} from fossil fuel consumption and cement production, \\ICOtwo{} in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions\\index{recession} temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                                     sheet = "data to plot")
 

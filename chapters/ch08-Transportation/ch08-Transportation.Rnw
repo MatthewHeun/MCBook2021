@@ -26,11 +26,11 @@ than any other sector,
 dplyr::filter(Sector == "Transportation") %>% 
 magrittr::extract2("Proportion [\\%]") %>% 
 round(1)}\% 
-of all U.S.\ CO$_2$ emissions in 2018;
+of all U.S.\ CO$_2$ emissions\index{CO$_2$ emissions!transportation} in 2018;
 see Table~\ref{tab:corrected_co2_emissions}.
-Moreover, CO$_2$ emissions from transportation are linked to other sectors.
+Moreover, CO$_2$ emissions\index{CO$_2$ emissions!transportation} from transportation are linked to other sectors.
 For example, household location (Chapter~\ref{chap:households}) 
-determines commuting distances, and therefore CO$_2$ emissions, for
+determines commuting distances, and therefore CO$_2$ emissions\index{CO$_2$ emissions!transportation}, for
 trips to work, school, church, and shops.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -187,7 +187,8 @@ travel for business and pleasure.
 For daily work commutes, Figure~\ref{fig:commuter_percentage_by_mode}
 shows the percentage of workers that use each mode of transportation.
 The low share of multipassenger transportation modes (carpool and mass transit)
-indicates that large reductions to energy consumption and CO$_2$ emissions could be obtained 
+indicates that large reductions to energy consumption and
+CO$_2$ emissions\index{CO$_2$ emissions!transportation} could be obtained 
 with a society-wide transition to other commuting modes besides driving alone.
 That said, the fact that commuting behavior has changed little in the years covered by
 Figure~\ref{fig:commuter_percentage_by_mode} indicates that 
@@ -240,7 +241,7 @@ Sustainability challenges arising from transportation\index{sustainability chall
 the last mile problem\index{last mile problem}, 
 the first mile problem\index{first mile problem}, and
 particulate matter (PM)\index{particulate matter (PM)} and
-CO$_2$ emissions from burning fossil fuels.
+CO$_2$ emissions\index{CO$_2$ emissions!transportation} from burning fossil fuels.
 
 
 %..............................
@@ -257,11 +258,11 @@ to the purchaser.
 The rise of e-commerce has caused unparalleled growth in last-mile transport
 of freight in recent years. 
 The result is rising energy consumption and
-CO$_2$ emissions from commercial last-mile deliveries.
+CO$_2$ emissions\index{CO$_2$ emissions!last mile} from commercial last-mile deliveries.
 Figure~\ref{fig:last_mile} shows percentages of total delivery cost for several parts of a delivery journey, 
 the largest portion being the last mile.
 A sustainability challenge for the last mile problem\index{last mile problem} is 
-``how can we minimize CO$_2$ emissions from last mile deliveries
+``how can we minimize CO$_2$ emissions\index{CO$_2$ emissions!last mile} from last mile deliveries
 while maintaining reasonable costs?''
 
 <<last_mile, fig.scap="Percentage of delivery cost by part of journey", fig.cap="Percentage of delivery cost by part of journey. \\emph{Source}: Honeywell via \\emph{Business Insider} \\cite{Dolan:2018wj}.">>=
@@ -341,24 +342,26 @@ at a reasonable cost?''
 \paragraph{CO$_2$ emissions}
 %..............................
 
-The fourth sustainability challenge of transportation is CO$_2$ emissions.
-Figure~\ref{fig:transport_GHG_emissions} shows trends of CO$_2$ transportation emissions by mode
+The fourth sustainability challenge of transportation is CO$_2$ emissions\index{CO$_2$ emissions!transportation}.
+Figure~\ref{fig:transport_GHG_emissions} shows trends 
+of CO$_2$ transportation emissions\index{CO$_2$ emissions!transportation} by mode
 over time.
-Passenger cars are the greatest single cause of CO$_2$ emissions from transportation.
+Passenger cars are the greatest single cause of CO$_2$ emissions from transportation\index{CO$_2$ emissions!transportation}.
 One interesting feature of Figure~\ref{fig:transport_GHG_emissions}
-is that CO$_2$ emissions peaked in 2000, about a decade before the Great Recession (2007--2009).
-The CO$_2$ emissions peak was likely caused by a combination of factors:
+is that CO$_2$ emissions\index{CO$_2$ emissions!transportation} peaked in 2000, 
+about a decade before the Great Recession (2007--2009).
+The CO$_2$ emissions\index{CO$_2$ emissions!transportation} peak was likely caused by a combination of factors:
 record-high prices for liquid transportation fuels in the runup to the Great Recession,
 which led drivers to prefer higher-efficiency vehicles, 
-which led to a decline total CO$_2$ emissions, 
+which led to a decline total CO$_2$ emissions\index{CO$_2$ emissions!transportation}, 
 even as consumption of transportation services\index{transportation service} rose through the 2000s;
 see Figure~\ref{fig:TSI}.
-A sustainability challenge for CO$_2$ emissions is
+A sustainability challenge for CO$_2$ emissions\index{CO$_2$ emissions!transportation} is
 ``how can we quickly disseminate CO$_2$-free transportation options
 across all income levels of society?''
 
 
-<<transport_GHG_emissions, fig.scap="CO$_2$ emissions from transportation vs.\\ time by mode", fig.cap="U.S.\\ CO$_2$ emissions from transportation vs.\\ time by mode. ``Maritime'' is ships and boats. ``Small trucks'' are light-duty trucks. ``Large trucks'' are medium- and heavy-duty trucks. \\emph{Source}: \\citet{USEPA:2021uj}.">>=
+<<transport_GHG_emissions, fig.scap="CO$_2$ emissions from transportation vs.\\ time by mode", fig.cap="U.S.\\ CO$_2$ emissions from transportation\\index{CO$_2$ emissions!transportation} vs.\\ time by mode. ``Maritime'' is ships and boats. ``Small trucks'' are light-duty trucks. ``Large trucks'' are medium- and heavy-duty trucks. \\emph{Source}: \\citet{USEPA:2021uj}.">>=
 transport_GHG <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "CO2_emissions_transport.xlsx"),
                                     sheet = "data to plot") %>% 
   dplyr::rename(
@@ -1009,7 +1012,7 @@ transportation, petroleum\index{petroleum}, and technology.
       ``right to drive?''
       Are there circumstances where humans must have control?
       
-\item Who should be responsible for CO$_2$ emissions from international trade
+\item Who should be responsible for CO$_2$ emissions from international trade\index{CO$_2$ emissions!trade}
       and international travel?
       The manufacturing country of goods and the departure country of trips?
       Or the consuming country of goods and the destination country of trips?
@@ -1046,7 +1049,7 @@ transportation, petroleum\index{petroleum}, and technology.
       implications of that growth.
       Now compare to alternatives. 
       What if every e-commerce delivery recipient drive to a store to buy the same goods.
-      What would be the sustainability and CO$_2$ emissions
+      What would be the sustainability and CO$_2$ emissions\index{CO$_2$ emissions!transportation}
       implications of the alternative?
       Compare and contrast.
       
@@ -1097,7 +1100,7 @@ transportation, petroleum\index{petroleum}, and technology.
 
 \item Research a variety of virtual-reality systems for their sustainability implications.
       How do they increase or decrease resource consumption?
-      How do they increase or decrease energy consumption and CO$_2$ emissions?
+      How do they increase or decrease energy consumption and CO$_2$ emissions\index{CO$_2$ emissions!virtual reality}?
       What is the potential for virtual reality to reduce future needs
       for transportation services\index{transportation service}?
       

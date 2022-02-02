@@ -141,7 +141,7 @@ Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
 \centering
 \includegraphics[width=\linewidth]{chapters/ch06-ImpactIntensity/figures/Carbon_2018_United-States.png}
 \caption[U.S.\ CO$_2$ emissions Sankey diagram]
-        {U.S.\ CO$_2$ emissions\index{CO$_2$ emissions!residential}
+        {U.S.\ CO$_2$ emissions\index{CO$_2$ emissions}
          Sankey diagram\index{Sankey diagram!CO$_2$ emissions} for 2018.
          CO$_2$ emissions from electricity production are not attributed to end uses;
          see Table~\ref{tab:corrected_co2_emissions}.
@@ -163,10 +163,11 @@ US_CO2_by_sector <- readxl::read_excel(file.path("chapters", "ch06-ImpactIntensi
   )
 
 print(xtable::xtable(US_CO2_by_sector, digits = c(0, 0, 0, 1),
-                     caption = c("U.S.\ CO$_2$ emissions by sector (2018) with
+                     caption = c("U.S.\ CO$_2$ emissions\\index{CO$_2$ emissions} by sector (2018) with
                      CO$_2$ emissions from electricity generation attributed to
                      end uses by
                      fraction of electricity demanded in Figure~\\ref{fig:LLNL_energy_sankey}.", 
+                     # Short caption
                      "U.S.\ CO$_2$ emissions by sector"),
                      label = "tab:corrected_co2_emissions"),
       include.rownames = FALSE,
@@ -232,7 +233,8 @@ The transition away from biofuel\index{biofuel} consumption results in cleaner u
 the transition from coal\index{coal} to natural gas\index{natural gas} for residential heating)~\cite{Gordon2016}.
 Because having a healthy environment is what economists call a ``normal'' good,
 \mft{I} should fall as \mft{A} rises, in general.
-In some ways (but not in terms of CO$_2$ emissions and climate change\index{climate change}),
+In some ways (but not in terms of CO$_2$ emissions\index{CO$_2$ emissions} and
+climate change\index{climate change}),
 the transition away from traditional biofuels\index{traditional biofuel} did result
 in reduced environmental impact.
 
@@ -243,7 +245,7 @@ in reduced environmental impact.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Equation~\ref{eq:IPARX} shows that reducing any of the right-hand side terms to 0
-will eliminate CO$_2$ emissions.
+will eliminate CO$_2$ emissions\index{CO$_2$ emissions}.
 That is, if any of 
 population~\Pparen{}, 
 affluence~\Aparen{},
@@ -252,7 +254,7 @@ or
 carbon intensity of primary energy\index{carbon intensity of primary energy}
 (\;\!\XCOtwo{}, the prime example for \mft{X}\:)
 goes to zero,
-CO$_2$ emissions will be eliminated.
+CO$_2$ emissions\index{CO$_2$ emissions} will be eliminated.
 Few people want to reduce population~\Pparen{} or affluence~\Aparen{}.
 The primary energy intensity\index{primary energy intensity}
 of the economy~\REpparen{} is declining
@@ -264,7 +266,7 @@ By the process of elimination,
 reducing the carbon intensity of primary energy\index{carbon intensity of primary energy}~\XCOtwoparen{} 
 is often considered to be the 
 only politically and socially viable way to move in a sustainable direction
-with respect to the prime example of energy and CO$_2$ emissions.
+with respect to the prime example of energy and CO$_2$ emissions\index{CO$_2$ emissions}.
 
 Figure~\ref{fig:ImpactIntensityGraph} shows that 
 the carbon intensity of primary energy\index{carbon intensity of primary energy}~\XCOtwoparen{}
@@ -276,7 +278,7 @@ has hovered around 63~MtCO$_2$/EJ.
 Thus, for the last 60~years, \XCOtwo{} has been stubbornly constant
 and far too high for environmental sustainability\index{environmental sustainability}
 (both weak\index{weak sustainability} and strong\index{strong sustainability}).
-It appears that eliminating CO$_2$ emissions by significantly reducing
+It appears that eliminating CO$_2$ emissions\index{CO$_2$ emissions} by significantly reducing
 \XCOtwo{} will require unprecedented changes
 to the world's primary energy\index{primary energy} supply.
 But how?
@@ -297,7 +299,7 @@ transitioning to a low carbon energy supply:
 (e) biomass, and
 (f) wind, water, and solar (WWS).
 Each option has its own challenges and 
-none has yet been implemented on a large enough scale to reduce CO$_2$ emissions;
+none has yet been implemented on a large enough scale to reduce CO$_2$ emissions\index{CO$_2$ emissions};
 see Figure~\ref{fig:CarbonEmissionsGraph}.
 The subsections below discuss these options and their implementation challenges.
 
@@ -310,29 +312,34 @@ The subsections below discuss these options and their implementation challenges.
 Carbon capture and storage (CCS)\index{carbon capture and storage (CCS)}
 is a way to continue using fossil fuels
 during a transition to a low-carbon energy regime. 
-In a CCS electricity plant, 
-CO$_2$ emissions are captured at the smokestack
+In a CCS\index{carbon capture and storage (CCS)} electricity plant, 
+CO$_2$ emissions\index{CO$_2$ emissions} are captured at the smokestack
 and routed underground.
 The CO$_2$ is stored, presumably in perpetuity, in caverns or other underground formations.
-CCS is not a low-carbon form of energy.
-Rather, CCS is a way to avoid carbon emissions from carbon-based energy production.
+CCS\index{carbon capture and storage (CCS)} is not a low-carbon form of energy.
+Rather, CCS\index{carbon capture and storage (CCS)} is a way
+to avoid carbon emissions\index{CO$_2$ emissions} from carbon-based energy production.
 
-There are several challenges associated with CCS.
+There are several challenges associated with CCS\index{carbon capture and storage (CCS)}.
 First, it has not been cost-effective.  
-Petra Nova\index{Petra Nova}, the only CCS plant in the U.S., disposed of the CO$_2$ it captured
+Petra Nova\index{Petra Nova}, the only CCS\index{carbon capture and storage (CCS)}
+plant in the U.S., disposed of the CO$_2$ it captured
 by injecting it into oil fields for enhanced oil recovery.
-In 2020, low oil prices made this disposal infeasible, forcing Petra Nova to shut down.
+In 2020, low oil prices made this disposal infeasible, 
+forcing Petra Nova\index{Petra Nova} to shut down.
 This story illustrates the economic interrelation(s) among primary energy\index{primary energy} sources.
-Second, a fossil-fuel power plant fitted with CCS technology 
-must ensure that CO$_2$ emissions remain buried. 
+Second, a fossil-fuel power plant fitted with CCS\index{carbon capture and storage (CCS)} technology 
+must ensure that CO$_2$ emissions\index{CO$_2$ emissions} remain buried. 
 If the CO$_2$ escapes to the atmosphere, the effort is ineffective.
 Third, there are limited locations with the required underground geological formations 
-for CCS.
-Finally, CCS is not applicable to CO$_2$ emissions from transportation,
-which is the plurality of CO$_2$ emissions; 
+for CCS\index{carbon capture and storage (CCS)}.
+Finally, CCS\index{carbon capture and storage (CCS)}
+is not applicable to CO$_2$ emissions\index{CO$_2$ emissions!transportation} from transportation,
+which is the plurality of CO$_2$ emissions\index{CO$_2$ emissions}; 
 see Table~\ref{tab:corrected_co2_emissions}.
 It would be impractical to fit every car with a ``CO$_2$ diaper''
-to collect CO$_2$ emissions for later injection underground.
+to collect CO$_2$ emissions\index{CO$_2$ emissions!transportation}
+for later injection underground.
 
 
 %++++++++++++++++++++++++++++++
@@ -381,7 +388,7 @@ No consensus has emerged to date.
 \label{sec:ctbo}
 %++++++++++++++++++++++++++++++
 
-Another way to reduce CO$_2$ emissions over time is the 
+Another way to reduce CO$_2$ emissions\index{CO$_2$ emissions} over time is the 
 carbon takeback obligation (CTBO)~\cite{Jenkins:2021tg}.\index{carbon takeback obligation (CTBO)}
 The CTBO is similar to product takeback policies
 which require manufacturers to accept end-of-life product returns from consumers,
@@ -399,7 +406,7 @@ but it specifies who is obliged to perform the sequestration.
 Under a CTBO, fossil fuel producers and other emitting industries
 would be free to pass the cost of carbon sequestration\index{carbon sequestration}
 to fossil fuel users and other product purchasers (cement buyers, for example),
-thereby internalizing the cost of CO$_2$ emissions in the economy.
+thereby internalizing the cost of CO$_2$ emissions\index{CO$_2$ emissions} in the economy.
 Consumers would still be free to purchase and use fossil fuels, 
 but under a CTBO, the cost of externalities would be evident
 in the price. 
@@ -468,8 +475,9 @@ In addition,
 it is energy-intensive to mine and refine uranium prior to its use
 in a nuclear power plant. 
 If the energy required to construct nuclear energy plants
-and refine uranium comes from fossil fuels, 
-significant CO$_2$ emissions will result from the transition to nuclear electricity.
+and refine uranium\index{uranium} comes from fossil fuels, 
+significant CO$_2$ emissions\index{CO$_2$ emissions}
+will result from the transition to nuclear electricity.
 An additional consideration is the availability of uranium resources,
 the topic of \ref{project:nuclear_resources}.
 
@@ -617,9 +625,9 @@ needs to start yesterday!
 Chapters~\ref{chap:planetary_boundaries}--\ref{chap:impact_intensity}
 show the evolution of all terms in the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX})
 over the period 1800--2019
-for the prime example of energy consumption and CO$_2$ emissions.
+for the prime example of energy consumption and CO$_2$ emissions\index{CO$_2$ emissions}.
 It is instructive to quantify the magnitude and direction of changes 
-in the right-side terms for the prime example of energy and CO$_2$ emissions
+in the right-side terms for the prime example of energy and CO$_2$ emissions\index{CO$_2$ emissions}
 (\:\!\mft{P}, \mft{A}, \REp{}, and \XCOtwo). 
 To do so, we introduce a rate version of the IPARX identity\index{IPARX identity}.
 
@@ -642,7 +650,7 @@ Each rate (\mft{r}\:\!) is calculated by
 where
 \mft{r} is the rate of change in \%/year;
 \mft{y} is one of \ICOtwo{}, \mft{P}, \mft{A}, \REp{}, or \XCOtwo{}
-for the prime example of energy and CO$_2$ emissions;
+for the prime example of energy and CO$_2$ emissions\index{CO$_2$ emissions};
 subscript ``2'' indicates a later year; and 
 subscript ``1'' indicates an earlier year.
 
@@ -778,9 +786,9 @@ trends over other periods of time.
 See \ref{project:iparx_calcs}.)
 The declining energy intensity of economic activity~(\rateREp{} < 0)
 is the only term in the IPARX identity\index{IPARX identity}
-putting downward pressure on the CO$_2$ emissions growth rate (\rateICOtwo{}).
+putting downward pressure on the CO$_2$ emissions growth rate\index{CO$_2$ emissions!growth} (\rateICOtwo{}).
 All other terms on the right side of Equation~\ref{eq:IPARX_rate_with_numbers}
-are greater than zero and are driving CO$_2$ emissions upward.
+are greater than zero and are driving CO$_2$ emissions\index{CO$_2$ emissions} upward.
 Interestingly, the rate of change of the impact intensity 
 of primary energy consumption\index{primary energy consumption} (\rateXCOtwo{})
 is smaller (\Sexpr{rate_to_string(r_X_20)})
@@ -838,7 +846,7 @@ many years in education and government led him to quip frequently
 \label{sec:rebound_effect}
 %++++++++++++++++++++++++++++++
 
-Energy efficiency\index{energy efficiency} is widely seen as a means of reducing CO$_2$ emissions.
+Energy efficiency\index{energy efficiency} is widely seen as a means of reducing CO$_2$ emissions\index{CO$_2$ emissions}.
 The thinking goes that either the resource intensity (\:\!\REp{} in the IPARX identity\index{IPARX identity}, 
 Equation~\ref{eq:IPARX}) 
 or impact intensity~\XCOtwoparen{}, or both,
@@ -850,7 +858,8 @@ are reinvested, leading to economic growth.
 Economic growth raises the GDP of an economy,
 so affluence~\Aparen{} will increase.
 As \mft{A} increases, energy consumption will increase.
-Whether energy efficiency\index{energy efficiency} actually saves energy and actually reduces CO$_2$ emissions
+Whether energy efficiency\index{energy efficiency} actually saves energy and
+actually reduces CO$_2$ emissions\index{CO$_2$ emissions}
 depends on the strength of the rebound effect\index{rebound effect}.
 When rebound effects\index{rebound effect} are so large as to wipe out the initial energy savings,
 \textbf{backfire}\index{backfire} is said to occur~\cite{Sorrell:2009cg,Sorrell:2010ul}.
@@ -884,7 +893,7 @@ are not independent.
 
 The relationship between energy consumption and GDP
 exposes another interaction among the IPARX identity\index{IPARX identity} terms
-for the primary example of energy consumption and CO$_2$ emissions.
+for the primary example of energy consumption and CO$_2$ emissions\index{CO$_2$ emissions}.
 Historically, as GDP (equal to $\mft{P} \times \mft{A}$ in Equation~\ref{eq:IPARX}) increases, 
 primary energy consumption\index{primary energy consumption} also rises,
 as shown in Figure~\ref{fig:E_vs_GDP_graph}.
@@ -936,7 +945,7 @@ can we use improved economic effectiveness
 (decreasing \REp{},
 brought about by rising energy efficiency\index{energy efficiency})
 to reduce environmental impacts (\:\!\mft{I} in Equation~\ref{eq:IPARX}), 
-CO$_2$ emissions being the prime example)?
+CO$_2$ emissions\index{CO$_2$ emissions} being the prime example)?
 It certainly helps, as decreasing \REp{}
 puts downward pressure on \ICOtwo{} in Equation~\ref{eq:IPARX}.
 However, recent research indicates that rising energy efficiency\index{energy efficiency}
@@ -945,17 +954,17 @@ has never reduced energy consumption or environmental impacts,
 at least at the worldwide level~\cite{Brockway:2021ww}.
 The rebound effect\index{rebound effect} is thought to be a strong candidate
 for the reason why efficiency has not led to decreases
-in energy consumption and CO$_2$ emissions over time;
+in energy consumption and CO$_2$ emissions\index{CO$_2$ emissions} over time;
 see Section~\ref{sec:rebound_effect}.
 Indeed, a circular trap exists.
 Energy efficiency\index{energy efficiency} is known to stimulate economic growth, and 
 increased economic activity leads to more energy consumption.
 Because of interactions between energy and the economy, 
 it is hard to see how energy efficiency\index{energy efficiency} alone 
-leads to reduced energy consumption and CO$_2$ emissions.
+leads to reduced energy consumption and CO$_2$ emissions\index{CO$_2$ emissions}.
 We have never decoupled energy consumption from economic activity
 at the world level at any point in history.
-So long as energy consumption generates CO$_2$ emissions, 
+So long as energy consumption generates CO$_2$ emissions\index{CO$_2$ emissions}, 
 energy efficiency\index{energy efficiency}
 alone will be unlikely to decouple environmental impacts
 from economic activity.
@@ -993,7 +1002,7 @@ a renewables-driven decrease in \XCOtwo{} would lead to an increase in \mft{A}
 in the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX}).
 The strength of each effect (\;\!\XCOtwo{} $\downarrow$, $A \uparrow$) 
 will determine whether Green Growth or a Green New Deal will actually decrease 
-environmental impacts~\Iparen{} or CO$_2$ emissions (\;\!\XCOtwo{} in the prime example).
+environmental impacts~\Iparen{} or CO$_2$ emissions\index{CO$_2$ emissions} (\;\!\XCOtwo{} in the prime example).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1003,9 +1012,9 @@ environmental impacts~\Iparen{} or CO$_2$ emissions (\;\!\XCOtwo{} in the prime 
 The impact of resources~\Xparen{}
 represents the environmental impacts of extracting and consuming natural resources
 in Equation~\ref{eq:IPARX}.
-For the prime example of energy and CO$_2$ emissions, 
+For the prime example of energy and CO$_2$ emissions\index{CO$_2$ emissions}, 
 the carbon intensity of primary energy\index{carbon intensity of primary energy}~\XCOtwoparen{} 
-quantifies the CO$_2$ emissions from consuming energy.
+quantifies the CO$_2$ emissions\index{CO$_2$ emissions} from consuming energy.
 \XCOtwo{} grew with the transition from biofuels to fossil fuels
 but leveled off in the last few decades.
 Revisiting the IPARX identity\index{IPARX identity},
@@ -1015,9 +1024,9 @@ expanded use of fossil fuels\index{sustainability challenges!fossil fuels}~\XCOt
 are the sources of our sustainability challenges.
 
 The IPARX identity and 
-the prime example (energy consumption and CO$_2$ emissions)
+the prime example (energy consumption and CO$_2$ emissions\index{CO$_2$ emissions})
 show that we are heading in an unsustainable direction,
-because CO$_2$ emissions are growing over time.
+because CO$_2$ emissions\index{CO$_2$ emissions} are growing over time.
 In other words,
 Part~\ref{part:IPARX} (Chapters~\ref{chap:planetary_boundaries}--\ref{chap:impact_intensity})
 has described the \emph{what} of our sustainability challenges.
@@ -1345,7 +1354,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         monetary savings from energy efficiency\index{energy efficiency}.
         Green revolving fund assets must be invested in further energy efficiency\index{energy efficiency},
         thereby preventing ``leakage'' of the benefits 
-        (reduced energy consumption and CO$_2$ emissions)
+        (reduced energy consumption and CO$_2$ emissions\index{CO$_2$ emissions})
         of energy efficiency\index{energy efficiency}.
         Research green revolving funds. 
         Where have they been successful to reduce energy consumption and carbon emissions?
