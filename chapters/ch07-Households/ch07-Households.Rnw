@@ -383,13 +383,13 @@ Zooming out, the latitude of the home may make a
 larger impact on household sustainability
 than urban, suburban, or rural location.
 Homes at high latitudes require heating. 
-Homes at low latitudes are often fitted with air conditioning.
-Both heating and air conditioning require energy and, 
+Homes at low latitudes are often fitted with air-conditioning\index{air-conditioning}.
+Both heating and air-conditioning\index{air-conditioning} require energy and, 
 in today's fossil-fuel-powered world,
 cause CO$_2$ to be emitted;
 see Section~\ref{sec:heating_and_cooling}.
 The climate of mid-latitude locations
-can mean both heating and air-conditioning are necessary,
+can mean both heating and air-conditioning\index{air-conditioning} are necessary,
 potentially increasing the energy required to operate homes in those locations.
 
 
@@ -411,7 +411,7 @@ on the order of 30~\degC~\cite{Experience-Grand-Rapids:vs}.%
    Incidentally, the average daily low temperature in January is $-$10~\degC.
 }
 In contrast, the range of human comfort is between 20~\degC{} and 23~\degC{} (only 3~\degC), 
-depending on humidity and clothing.
+depending on humidity and clothing\index{clothing}.
 
 Residential heating and cooling reduces the temperature variation
 inside a dwelling compared to the outdoors,
@@ -479,7 +479,7 @@ causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants.
 %..............................
 
 Dwellings consume significant energy and water
-for showers, dish washers, toilets, and clothes washers and dryers.
+for showers, dish washers, toilets, and clothes washers\index{clothes washer} and dryers\index{clothes dryer}.
 Collectively, these activities may be categorized as ``hygiene.''
 
 Clothes washers and dryers\index{clothes washer}\index{clothes dryer}
@@ -649,8 +649,8 @@ the AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
 rating of a furnace would be 100\%.
 AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
 is different from (and lower than) steady-state thermal efficiency.
-The American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)
-\index{American Society of Heating, Refrigerating, and Air conditioning Engineers (ASHRAE)}
+The American Society of Heating, Refrigerating, and Air-conditioning Engineers (ASHRAE)
+\index{American Society of Heating, Refrigerating, and Air-conditioning Engineers (ASHRAE)}
 publishes Standard 103,
 which specifies how AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
 is to be measured~\cite{ASHRAE:vk}.
@@ -902,7 +902,7 @@ efficiency\index{efficiency!heating and cooling!residential}
 (that is, providing the same comfort with less energy) 
 can be obtained
 by improving the building envelope or
-by improving the efficiency of heating and air conditioning.
+by improving the efficiency of heating and air-conditioning\index{air-conditioning}.
 Standards that mandate high efficiency
 are one way to ensure that efficiency of heating and cooling systems
 improves in the stock of housing. 
@@ -958,8 +958,8 @@ could mean smaller plants and public works.
 Purchasing washers and dryers with Energy Star\index{Energy Star} ratings can reduce
 energy and water consumption by 25\% and 33\%,
 respectively~\cite{U.S.-Department-of-Energy:tc, U.S.-Department-of-Energy:vd}.
-Energy can be saved by washing clothes less frequently,
-using a cold-water cycle, and line drying clothes.
+Energy can be saved by washing clothes\index{clothing} less frequently,
+using a cold-water cycle, and line drying clothes\index{clothing}.
 
 
 %++++++++++++++++++++++++++++++
@@ -1064,15 +1064,17 @@ United States, 1999: \\
 \item \label{question:household_policies} Here are several household-related sustainability policies:
    \begin{enumerate}
       \item require everyone to live in cities (to reduce commuting distances), 
-      \item outlaw clothes washers that use hot water (to save CO$_2$ emissions 
+      \item outlaw clothes washers\index{clothes washer} that use hot water (to save CO$_2$ emissions 
             from water heating\index{CO$_2$ emissions!water heating}),
       \item outlaw automatic dishwashers\index{dishwasher} (to reduce energy consumption for water heating),
-      \item require all clothes washing to be done at laundromats (to reduce embodied energy of clothes washers in every home),
+      \item require all clothes washing\index{clothes washer}
+            to be done at laundromats (to reduce embodied energy of clothes washers in every home),
       \item require all homes to undergo an energy efficiency\index{energy efficiency}
             retrofit before going on the market to be sold
             (to improve energy efficiency\index{energy efficiency} of the housing stock),
       \item require all homes to generate solar electricity onsite (to move quickly to a renewable future), and
-      \item prohibit clothing made from synthetic fibers (to minimize microplastic pollution\index{pollution!microplastic}).
+      \item prohibit clothing\index{clothing} made from synthetic fibers
+            (to minimize microplastic pollution\index{pollution!microplastic}).
    \end{enumerate}
       Which of these policies would you welcome? 
       Which would you reject?
@@ -1274,11 +1276,11 @@ United States, 1999: \\
       Which would you resist?
       Why?
       
-      For example, if all clothes washing were to be done at laundromats, 
+      For example, if all clothes washing\index{clothes washer} were to be done at laundromats\index{laundromat}, 
       there could be social benefits where laundromats would become a sort of ``town square''
       where neighbors meet to discuss municipal affairs as they do their laundry.
       On the other hand, time lost to commuting to the laundromat might mean that other relationships suffer.
-      If all clothes were laundered at laundromats, 
+      If all clothes\index{clothing} were laundered at laundromats\index{laundromat}, 
       fewer washers and dryers would be needed, resulting in less energy and CO$_2$ embodied 
       in the stock of laundry equipment.
       But laundromats will likely have larger commercial washers and dryers. 
