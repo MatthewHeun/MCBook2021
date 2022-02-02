@@ -208,8 +208,6 @@ improve their lives.
 They need places to live, food to eat, and income to purchases these and other goods.
 They can move to urban areas to try to get work or they can try to extract (pun intended)
 a living by farming (see \ref{question:poverty_trap}) or mining.
-% Unfortunately, the best lands have already been taken; what is available to the 
-% next farmer or miner is typically of marginally lower productivity.
 
 %-----------------------------
 \paragraph{Ecosystem services\index{ecosystem services}}
@@ -443,7 +441,7 @@ Most of these were around major U.S.\ metropolitan areas, such as New York City,
 Los Angeles, or Chicago.
 A large part of the value of cities comes from the concentration of people,
 who are both a resource and a market.
-A large pool of labor allows access to specialized skills and a quantity of labor
+A large pool of labor\index{labor} allows access to specialized skills and a quantity of labor\index{labor}
 to create large and valuable products, like aircraft, microchip foundries, or 
 sophisticated software.
 Conversely, a large population of consumers allows specialized markets to develop
@@ -670,7 +668,7 @@ preservation of ecosystem services\index{ecosystem services} is particularly acu
 One way to describe the tension between human use and preservation
 is sparing versus sharing~\cite{Fraanje2018}.
 Land ``sparing'' seeks to minimize the amount of agricultural land needed for humans
-but maximizing the productivity of that land, even if it means input-intensive farming
+but maximizing the productivity of that land\index{productivity!of land}, even if it means input-intensive farming
 that results in less biodiversity\index{biodiversity} on the farm. 
 Other land is ``spared'' and set aside for conservation.
 Land ``sharing'' uses agricultural practices that are more eco-friendly to wildlife
@@ -694,7 +692,7 @@ agricultural land-use patterns, and the role of land in provisioning resources\i
 for the economy and removing wastes\index{waste} (notably, carbon) from the ecosystem\index{ecosystem}.
 Population growth and migration to urban areas (in search of greater affluence)
 is driving an increase in the demand for urban and agricultural land. 
-Higher population densities and greater agricultural productivity can help meet
+Higher population densities and greater agricultural productivity\index{productivity!agricultural} can help meet
 that demand. 
 In contrast, Figure~\ref{fig:PowerDensity} indicates it may not be possible to
 meet the energy needs of the future solely with renewables because there may not

@@ -55,7 +55,7 @@ There are two schools of thought on population with relevance for economics and 
 think that population growth will cause us to ``run out'' of 
 scarce resources.
 Techo-optimists think that more people will lead to 
-better technology, more specialization of labor, and, ultimately, to a higher, not lower,
+better technology, more specialization of labor\index{labor!specialization}, and, ultimately, to a higher, not lower,
 standard of living.
 Interactions among 
 population~\Pparen{}, 
@@ -527,7 +527,7 @@ death rates (Figure~\ref{fig:dtt_crude_rates}), with a consequently low rate of 
 The first stage is typically resource constrained.
 Until about 1800 AD the world was in Stage~1.
 Economic development (increasing \mft{A}) initiates Stage~2 via public health measures,
-improved sanitation, medical developments, and increasing agricultural productivity.
+improved sanitation, medical developments, and increasing agricultural productivity\index{productivity!agricultural}.
 Stage~2 retains the high birth rate from Stage~1 but the death rate falls sharply
 (particularly for childhood mortality).
 The result is a rapid increase in population (Figure~\ref{fig:dtt_population}), 
@@ -562,7 +562,7 @@ Stage~1 has many young people and few old people.
 In Stage~2, more young people are being born and people are living longer.
 Both of these groups are not of working age and tend to contribute little to GDP.
 (In fact, they are dependents who consume rather than generate income.)
-Later, in Stage~3, as young people mature and join the labor market and the
+Later, in Stage~3, as young people mature and join the labor market\index{labor market} and the
 birth rate falls,
 the fraction of the population that is working is much higher,
 which generates a \textbf{demographic dividend}\index{demographic dividend}.
@@ -739,7 +739,7 @@ They point to the growth of wind and solar
 electricity generation technologies as examples.
 
 Who is correct, the neo-Malthusians\index{Malthusians} or the techno-optimists\index{techno-optimists}?
-Will population growth lead to catastrophe or is growth a source of labor and
+Will population growth lead to catastrophe or is growth a source of labor\index{labor} and
 technology that will yield abundant resources?
 In 1980, business professor Julian Simon\index{Simon, Julian}
 challenged biologist Paul Ehrlich\index{Ehrlich, Paul} to a
@@ -885,7 +885,7 @@ published August 17, 2020. \\
 \item The best XKCD\index{XKCD} comic is \href{https://xkcd.com/552/}{\#552}, 
       which considers correlation and causation.
       Falling birth rates are correlated with economic development, urbanization,
-      increased education, decline in the value of child labor, and access to
+      increased education, decline in the value of child labor\index{labor!child}, and access to
       contraception.
       (Note that birth rates fell in western Europe in the late 1800s before
       widespread use of contraception.)

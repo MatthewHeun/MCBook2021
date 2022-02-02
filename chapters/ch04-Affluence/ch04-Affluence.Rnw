@@ -70,8 +70,8 @@ Also, GDP counts all consumption, even when it is socially undesirable.
 
 Many new metrics (Section~\ref{sec:indices}) have been proposed 
 to replace or improve GDP, such as
-green GDP, the index of sustainable economic welfare, and the
-genuine progress indicator.
+green GDP\index{green GDP}, the index of sustainable economic welfare\index{index of sustainable economic welfare}, and the
+genuine progress indicator\index{genuine progress indicator}.
 However, each replacement suffers from its own limitations.
 The biggest limitation for any metric
 is standardization and availability of data.
@@ -302,7 +302,7 @@ GDP is denominated in units of money per time and is usually the sum of four ann
 \paragraph{Consumption}
 %..............................
 
-Consumption~(\mft{c}) is purchases made by individuals.
+Consumption\index{consumption}~(\mft{c}) is purchases made by individuals.
 Typically, consumption is about two thirds of GDP for developed economies and is
 usually divided into three subcategories: services, durable goods, and nondurable goods.
 Services represent nontangible things, such as haircuts, legal advice, education,
@@ -322,7 +322,7 @@ happen to last more than three years.
 \paragraph{Government spending}
 %..............................
 
-Government spending~(\;\!\mft{g}) is government consumption
+Government spending\index{government spending}~(\;\!\mft{g}) is government consumption
 (such as equipment and wages paid to government workers) plus 
 government investment spending, for
 example spending on infrastructure improvements such as roads or dams.
@@ -331,7 +331,7 @@ example spending on infrastructure improvements such as roads or dams.
 \paragraph{Investment}
 %..............................
 
-Investment~(\mft{i}\;\!) is not money put into a bank account.
+Investment\index{investment}~(\mft{i}\;\!) is not money put into a bank account.
 Investment is goods that are purchased now for use in the future
 by individuals or firms (not governments).
 There are three subcategories of investment: 
@@ -347,7 +347,7 @@ be negative (inventory is falling) or positive (inventory is increasing).
 \paragraph{Net exports}
 %..............................
 
-Net exports~(\mft{nx}) are the difference between the value of exports and the value of imports.
+Net exports\index{net exports}~(\mft{nx}) are the difference between the value of exports and the value of imports.
 Thus, \mft{nx} could negative for a country that imports more than it exports.
 World GDP is the sum of all national GDPs.
 Therefore, for world GDP, $\mft{nx}~=~\text{0}$.
@@ -359,13 +359,13 @@ Therefore, for world GDP, $\mft{nx}~=~\text{0}$.
 \label{sec:PCbalance}
 %++++++++++++++++++++++++++++++
 
-Although economists use consumption~(\mft{c}) narrowly as described above,
-we use the word ``consumption'' colloquially to mean the sum of personal consumption, 
+Although economists use consumption\index{consumption}~(\mft{c}) narrowly as described above,
+we use the word ``consumption\index{consumption}'' colloquially to mean the sum of personal consumption, 
 government spending, and investment.
-That is, we use ``consumption'' to mean GDP, in part to remind ourselves
+That is, we use ``consumption\index{consumption}'' to mean GDP, in part to remind ourselves
 that economic activity is based on the use of resources.
 Individuals and corporations may ``save'' money for purchases in the future, but the
-economy as a whole balances production and (this more generic form of) consumption as 
+economy as a whole balances production\index{production} and (this more generic form of) consumption as 
 closely as possible, such that
 
 \begin{equation} \label{eq:PCbalance}
@@ -374,12 +374,12 @@ closely as possible, such that
 %
 Money that is deposited in a bank is lent to borrowers so that they can make
 purchases.
-Money invested in the stock market is used by companies to purchase equipment, 
+Money invested in the stock market\index{stock market} is used by companies to purchase equipment, 
 do research, or grow businesses in some other way.
 Goods and services must be produced before they can be used.
 There is no incentive to produce goods that aren't used;
-why would you pay the costs of production if there were no prospects of a sale?
-Therefore, we use the terms ``production'' and ``consumption'' interchangeably.
+why would you pay the costs of production\index{production} if there were no prospects of a sale?
+Therefore, we use the terms ``production\index{production}'' and ``consumption\index{consumption}'' interchangeably.
 
 %++++++++++++++++++++++++++++++
 \subsection{Economic metabolism}\index{economic metabolism}
@@ -426,23 +426,23 @@ or
 \footnote{
   We use the word ``efficaciously'' deliberately here, 
   because we mean more economic output per economic input,
-  whether that's capital, labor, energy, or materials.
+  whether that's capital\index{capital}, labor\index{labor}, energy\index{energy}, or materials\index{materials}.
   Because the numerator and denominator
   have different units (dollars vs.\ workers, equipment, joules, or kilograms), 
   we have an efficacy, not an efficiency.
 }
 (meaning that \mft{R} goes down%
 \footnote{
-  The productivity of resources (economic output/resource input)
+  The productivity of resources\index{productivity!of resources} (economic output/resource input)
   is the inverse of the resource intensity of economic activity
   (\:\!\mft{R} $\equiv$ resource input/economic output).
 }).
-Economic inputs include labor, capital, energy, and materials.
+Economic inputs include capital\index{capital}, labor\index{labor}, energy\index{energy}, and materials\index{materials}.
 In the long run, growing output by scaling up the inputs does not increase 
 affluence~\Aparen{} directly, 
 because more workers are needed to gather, process, and use the 
 additional resources.
-That leaves productivity as the primary means of boosting affluence.
+That leaves productivity\index{productivity} as the primary means of boosting affluence.
 From a sustainability point of view, we should want the economy to be 
 as productive as possible; 
 fewer inputs are needed per dollar of economic output.
@@ -461,7 +461,7 @@ often have negative implications for environmental sustainability\index{environm
 \paragraph{Labor} 
 %..............................
 
-The productivity of labor depends on the education and skill 
+The productivity of labor\index{productivity!of labor} depends on the education and skill 
 of workers, technology, the number of workers in the population, the number of hours they 
 work, and the fraction of the population that is working;
 see Section~\ref{sec:dtt}.
@@ -488,11 +488,11 @@ Because capital depreciates over time, continual investment
 (part of \mft{i} in Equation~\ref{eq:GDP})
 is needed to maintain capital stocks. 
 Higher levels of capital require larger yearly investments to maintain.
-At some point, there is a maximum level of capital productivity.
+At some point, there is a maximum level of capital productivity\index{productivity!of capital}.
 Beyond that maximum,
 expenses to maintain capital exceed the contribution of capital to the economy. 
-At the maximum level of capital productivity,
-labor will have a maximum level of output because workers are fully ``tooled up.''
+At the maximum level of capital productivity\index{productivity!of capital},
+labor\index{labor} will have a maximum level of output because workers are fully ``tooled up.''
 
 
 %..............................
@@ -503,7 +503,7 @@ Innovation is the major source of economic growth.
 There are two types of innovation:
 (a)~the invention of new kinds of goods and services
 and
-(b)~ improvements to economic productivity.
+(b)~ improvements to economic productivity\index{productivity!economic}.
 The majority of the goods and services we consume today did not exist in
 1870~\cite{Gordon2016}.
 Today, we consume entirely new categories of goods and services that did not
@@ -512,19 +512,20 @@ Much of the improvement in our standard of living comes from these new types of
 goods and services.
 
 However, examined closely, almost all of these ``new goods'' stories
-also end up being about some form of productivity.
+also end up being about some form of productivity\index{productivity}.
 The endless quest to meet our needs more productively
 allows spending on additional consumption.
-Productivity improvements (and resource intensity declines)
+Productivity\index{productivity} improvements (and resource intensity declines)
 allow us to get more GDP for the same level of resource consumption.
 As we will see in Chapter~\ref{chap:resource_intensity}, particularly in
 Figures~\ref{fig:per_capita_material_use} and~\ref{fig:EnergyPerPersonGraph},
 economic growth correlates with additional consumption of resources.
 The greater use of resources is caused by growth in affluence~\Aparen{},
-driven, in part, by improvements in material (Figure~\ref{fig:per_gdp_material_use})
-and energy (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) productivity
+driven, in part, by improvements in material\index{productivity!of material}
+(Figure~\ref{fig:per_gdp_material_use})
+and energy\index{productivity!of energy} (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) productivity
 (that is, innovation of the second type).
-Energy efficiency\index{energy efficiency} is a type of economic productivity.
+Energy efficiency\index{energy efficiency} is a type of economic productivity\index{productivity!economic}.
 Greater energy efficiency\index{energy efficiency} enables the same or greater economic output
 with lesser energy input.
 Managing the rebound effect\index{rebound effect},

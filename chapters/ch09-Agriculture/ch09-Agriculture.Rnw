@@ -119,7 +119,7 @@ is a poor indicator of future food production capacity.
 Food is one of the few things humans can't do without.
 Rising affluence (Figure~\ref{fig:AffluenceGraph-Nordhaus}) means there are lots
 of things we could (and would) do without before we would give up food.
-(The share of wealth spent on food goes down as affluence rises, meaning food becomes
+(The share of wealth\index{wealth} spent on food goes down as affluence rises, meaning food becomes
 relatively cheaper as economies develop.
 Indeed, the price of food has fallen, adjusted for inflation in the last 100 years.)
 Furthermore, Section~\ref{sec:malthus_ehrlich_simon} indirectly suggests humanity 
@@ -222,7 +222,7 @@ For example, a survey in Minot, North Dakota\index{Minot, North Dakota} taken in
 topsoil\index{topsoil}.
 In 2017, the area had no black topsoil\index{topsoil}; its soil was light gray~\cite{Arnason:2017ug}.
 Loss of topsoil\index{topsoil} reduces the productivity 
-(in dollars of output per acre) of farmland.
+(in dollars of output per acre) of farmland\index{productivity!of farmland}.
 Many arid and semi-arid regions are experiencing desertification\index{desertification} caused
 by a combination of climate change\index{climate change} and poor agricultural practices.
 The rate of erosion and runoff increases exponentially with the loss of vegetation 
@@ -236,7 +236,7 @@ years~\cite{Sanderman2017}.
 
 In contrast, 
 sustainable agriculture at least maintains, and hopefully builds, soil fertility\index{soil fertility}.
-Soil fertility\index{soil fertility} and agricultural productivity 
+Soil fertility\index{soil fertility} and agricultural productivity\index{productivity!agricultural} 
 can be enhanced with fertilizers and/or agrichemicals.
 The most common fertilizers contain nitrogen, phosphorous, and potassium. 
 Agrichemicals include herbicides, pesticides, and fungicides. 
@@ -328,7 +328,7 @@ of water\index{sustainability challenges!water} is
 %++++++++++++++++++++++++++++++
  
 The energy input to agriculture ranges from human and animal 
-labor to electricity and hydrocarbon fuels, either fossil fuels\index{fossil fuels}
+labor\index{labor} to electricity and hydrocarbon fuels, either fossil fuels\index{fossil fuels}
 or biofuels\index{biofuel}.
 Energy is used at all stages of agriculture, from preparing the ground to sow crops,
 to harvesting, storage, transportation, cooking, and disposal of food.
@@ -750,7 +750,7 @@ eliminating the inputs needed to grow wasted food,
 reducing the emissions from producing, consuming, and disposing of that food), and
 increasing the effective EROI\index{energy return on investment (EROI)} of the food system.
 
-It is worth noting that enhanced agricultural productivity, efficacy, or efficiency 
+It is worth noting that enhanced agricultural productivity\index{productivity!agricultural}, efficacy, or efficiency 
 (depending on the metric under consideration) 
 may be subject to limited rebound\index{rebound effect}
 (Section~\ref{sec:rebound_effect})
@@ -834,7 +834,7 @@ Hotter, drier climates also bring the increased risk of desertification\index{de
 On the one hand, there may be a temptation to ``double down'' on all the agricultural
 practices that have fed us through the population boom of the last century, namely,
 the use of large amounts of inputs, such as fossil energy, synthetic fertilizers, and agrichemicals
-to maximize agricultural productivity.
+to maximize agricultural productivity\index{productivity!agricultural}.
 On the other hand, increasing inputs will accelerate soil depletion, intensity runoff
 and other agricultural emissions, and shorten the weak sustainability\index{weak sustainability} horizon for the 
 use of nonrenewable resources such as petroleum\index{petroleum}, fossil water, and phosphate deposits.
@@ -944,7 +944,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
 
 \begin{questions}
 
-\item One common metric for agricultural productivity is yield\index{yield!agricultural},
+\item One common metric for productivity\index{productivity!agricultural} is yield\index{yield!agricultural},
       the amount of a 
       crop produced per area.
       Such a metric does not account for energy efficiency\index{energy efficiency}, input intensity, 
@@ -962,7 +962,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       versus the amount of landed needed to feed people
       is a clear example of a tradeoff. 
       Higher yields means less land is needed but is generally achieved by application
-      of agrichemicals and fossil-fueled mechanization of labor. 
+      of agrichemicals and fossil-fueled mechanization of labor\index{labor}. 
       Lower yields means more land is needed (thereby increasing land-based emissions 
       and impacts).
       Since land use is a significant contributor to global greenhouse gas emissions\index{CO$_2$ emissions!land use},
@@ -1075,7 +1075,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       purchase?
       How about growing every item of food you consume yourself? 
       Being ``self-sufficient'' comes at a very steep price: there is no benefit
-      from the specialization of labor.
+      from the specialization of labor\index{labor}.
       Are there alternatives in the middle? Where do you fall?
       What are the sustainability implications of, for instance, canning your own
       applesauce? Why do you do it and what are the tradeoffs?
