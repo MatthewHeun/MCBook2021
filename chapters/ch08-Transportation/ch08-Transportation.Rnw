@@ -358,7 +358,7 @@ even as consumption of transportation services\index{transportation service} ros
 see Figure~\ref{fig:TSI}.
 A sustainability challenge for CO$_2$ emissions\index{CO$_2$ emissions!transportation} is
 ``how can we quickly disseminate CO$_2$-free transportation options
-across all income levels of society?''
+across all income\index{income} levels of society?''
 
 
 <<transport_GHG_emissions, fig.scap="CO$_2$ emissions from transportation vs.\\ time by mode", fig.cap="U.S.\\ CO$_2$ emissions from transportation\\index{CO$_2$ emissions!transportation} vs.\\ time by mode. ``Maritime'' is ships and boats. ``Small trucks'' are light-duty trucks. ``Large trucks'' are medium- and heavy-duty trucks. \\emph{Source}: \\citet{USEPA:2021uj}.">>=
@@ -857,8 +857,8 @@ transportation, petroleum\index{petroleum}, and technology.
       in part because commuting reduces physical activity and reduces time for other 
       activities, which leads to stress. 
       One author reports eliminating two hours of commuting per day is equivalent
-      (from a happiness perspective) to an additional \$40,000 of income~\cite{Buettner2011}.
-      Reflect on your current and future commuting plans, income, and domicile location.
+      (from a happiness perspective) to an additional \$40,000 of income\index{income}~\cite{Buettner2011}.
+      Reflect on your current and future commuting plans, income\index{income}, and domicile location.
       How do you balance these tradeoffs in your own life?
       Critique the \$40,000 a year number: commuting two hours per day, five days
       a week for 50 weeks per year, is 500 hours of commuting. 

@@ -63,7 +63,7 @@ is measured by gross domestic product (GDP) per capita.
 There are valid critiques as to why per capita GDP is not the best possible
 measure of affluence.
 For instance, GDP does not count (or under counts) the value
-of innovation in improving standards of living~\cite{Gordon2016}.
+of innovation\index{innovation} in improving standards of living~\cite{Gordon2016}.
 GDP does not include the value of nonmarket transactions, 
 such as the work of stay-at-home parents.
 Also, GDP counts all consumption, even when it is socially undesirable.
@@ -479,18 +479,18 @@ if workers are working longer hours
 \paragraph{Capital} 
 %..............................
 
-Capital is buildings, equipment, machines, and tools---things
+Capital\index{capital} is buildings, equipment, machines, and tools---things
 that make workers more productive.
 For instance, a builder with a backhoe can excavate a foundation faster than a
 builder with only a shovel.
-More capital investment sometimes means greater economic output.
-Because capital depreciates over time, continual investment 
+More capital investment\index{capital investment} sometimes means greater economic output.
+Because capital depreciates\index{capital depreciation} over time, continual investment 
 (part of \mft{i} in Equation~\ref{eq:GDP})
-is needed to maintain capital stocks. 
-Higher levels of capital require larger yearly investments to maintain.
+is needed to maintain capital stocks\index{capital stock}. 
+Higher levels of capital\index{capital investment} require larger yearly investments to maintain.
 At some point, there is a maximum level of capital productivity\index{productivity!of capital}.
 Beyond that maximum,
-expenses to maintain capital exceed the contribution of capital to the economy. 
+expenses to maintain capital\index{capital maintenance} exceed the contribution of capital to the economy. 
 At the maximum level of capital productivity\index{productivity!of capital},
 labor\index{labor} will have a maximum level of output because workers are fully ``tooled up.''
 
@@ -499,8 +499,8 @@ labor\index{labor} will have a maximum level of output because workers are fully
 \paragraph{Innovation}
 %..............................
 
-Innovation is the major source of economic growth.
-There are two types of innovation:
+Innovation\index{innovation} is the major source of economic growth.
+There are two types of innovation\index{innovation}:
 (a)~the invention of new kinds of goods and services
 and
 (b)~ improvements to economic productivity\index{productivity!economic}.
@@ -524,7 +524,7 @@ The greater use of resources is caused by growth in affluence~\Aparen{},
 driven, in part, by improvements in material\index{productivity!of material}
 (Figure~\ref{fig:per_gdp_material_use})
 and energy\index{productivity!of energy} (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) productivity
-(that is, innovation of the second type).
+(that is, innovation\index{innovation} of the second type).
 Energy efficiency\index{energy efficiency} is a type of economic productivity\index{productivity!economic}.
 Greater energy efficiency\index{energy efficiency} enables the same or greater economic output
 with lesser energy input.
@@ -556,7 +556,7 @@ environmental contamination, because
 there no longer exists a responsible steward for
 hazardous materials and equipment.
 The U.S.\ has hundreds of thousands of leaking underground gasoline storage tanks\index{gasoline!storage tanks}
-from gas stations that have gone out of business~\cite{brownfields}.
+from gas stations\index{gas stations} that have gone out of business~\cite{brownfields}.
 Similar stories can be told for former industrial sites, mines, and oil and gas wells.
 
 What if there were ways to reduce the size of the economy that did not
@@ -706,7 +706,7 @@ The space between the two circles is shaped like a doughnut and
 represents the ``safe operating space'' for humanity. 
 The doughnut economy\index{doughnut economy} imposes both a 
 ``floor'' and a ``ceiling'' on economic activity,
-reducing income disparity between rich and poor and
+reducing income\index{income} disparity between rich and poor and
 respecting planetary boundaries\index{planetary boundaries}.
 Thus, the doughnut economy\index{doughnut economy} model attempts to correct 
 both the flaws of a steady-state economy\index{steady-state economy}, namely that
@@ -785,13 +785,13 @@ However, poverty is a hard sell on an individual level;
 no one wants it for themselves.
 (The abstract desire to have lower impacts is not the same as wanting to be poor.)
 Lower levels of affluence are associated with lower HDI\index{Human Development Index (HDI)}, as 
-Figure~\ref{fig:FootprintHDIGraph} shows, because income is a factor in HDI\index{Human Development Index (HDI)}.
+Figure~\ref{fig:FootprintHDIGraph} shows, because income\index{income} is a factor in HDI\index{Human Development Index (HDI)}.
 Globally, social sustainability\index{social sustainability}
 is often predicated on increasing affluence.
 
 Some people have chosen (relative) poverty by trying to escape the economic
 system; see~\ref{project:off-grid} for a few examples.
-Often, for these people, independence or being ``off grid'' is the main attraction.
+Often, for these people, independence or being ``off grid\index{off grid}'' is the main attraction.
 However, even in the most extreme cases, it has proven impossible to completely sever an 
 economic relationship with the rest of humanity.
 There is always some participation in the broader economy,
@@ -865,9 +865,9 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
 
 \begin{questions}
 
-\item What is your ideal income? Why? How do you plan to pursue this?
+\item What is your ideal income\index{income!ideal}? Why? How do you plan to pursue this?
       What are the implications for your lifestyle/level of consumption?
-      How do you plan to allocate your income between consumption and residential 
+      How do you plan to allocate your income\index{income} between consumption and residential 
       fixed investment?
       
 \item Is there a level of affluence that is ``enough?''
@@ -907,7 +907,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       (See, for example, the UN\index{United Nations}
       System of Environmental Economic Accounting\index{System of Environmental Economic Accounting}, 
       \url{https://seea.un.org}.)
-      Consider extensions to GDP that would add social capital to GDP. 
+      Consider extensions to GDP that would add social capital\index{social capital} to GDP. 
       What such variables would you consider?
       
 \item Why do we have (global/local) poverty beside (global/local) affluence?
@@ -915,22 +915,22 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       about the sources of affluence? 
       Does one interpretation or another make a difference in how you answer?
 
-\item GDP measures income, that is, what we produce in a year.  
-      But social standing doesn’t just depend on our income this year; wealth\index{wealth} also matters.
+\item GDP measures income\index{income}, that is, what we produce in a year.  
+      But social standing doesn’t just depend on our income\index{income} this year; wealth\index{wealth} also matters.
       Thus, GDP may be less useful than measures of wealth\index{wealth} for discussions of 
       social sustainability\index{social sustainability}. 
       \begin{enumerate}
-      \item How are wealth inequality\index{wealth!inequality} and income inequality different? 
+      \item How are wealth inequality\index{wealth inequality} and income inequality\index{income inequality} different? 
             Which do you think is worse from a social perspective and why? 
-      \item Consider those who might be asset rich and income poor, like farmers,
+      \item Consider those who might be asset rich and income poor\index{poor}, like farmers,
             small business owners, or someone without a job but who has inherited a 
             large amount of wealth\index{wealth}. Also, consider those who might be asset poor and 
-            income rich, like a doctor or lawyer paying off medical- or law-school loans.
+            income\index{income} rich, like a doctor or lawyer paying off medical- or law-school loans.
             How might their patterns of affluence (consumption) be similar or different?
             How do they each affect environmental\index{environmental sustainability}, 
             economic\index{economic sustainability}, and
             social sustainability\index{social sustainability}?
-      \item How might your notions of wealth\index{wealth!inequality} and income inequality scale to the 
+      \item How might your notions of wealth\index{wealth inequality} and income inequality\index{income inequality} scale to the 
             macroeconomic level?
       \end{enumerate}
 
@@ -1022,8 +1022,8 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       What would it take for such a market to develop?
       
 \item Economist Robert Gordon argues that GDP vastly underestimates 
-      the benefits to humanity of innovation and new technologies~\cite{Gordon2016}.
-      One example could be innovations in clothing over recent decades.
+      the benefits to humanity of innovation\index{innovation} and new technologies~\cite{Gordon2016}.
+      One example could be innovations\index{innovation} in clothing over recent decades.
       Although the design of clothing (shirts, blouses, trousers, pants)
       remains mostly unchanged since the 1960s, 
       we now benefit from enhanced comfort due to improved fabrics.
@@ -1036,7 +1036,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       would be required to reduce microfiber pollution\index{pollution!microfiber}?
       How do you view the tradeoff of having inexpensive, comfortable clothes
       vs.\ having microplastic pollution\index{pollution!microplastic}?
-      On the balance, has the innovation of synthetic fibers 
+      On the balance, has the innovation\index{innovation} of synthetic fibers 
       been a good thing or not good thing?
       What actions could be taken to shift the balance
       towards more sustainability?
@@ -1058,9 +1058,11 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       such as the index of sustainable economic welfare and the 
       genuine progress indicator.
       
-\item Prepare a report on income inequality and/or wealth inequality\index{wealth!inequality}. What are its
-      causes? How is it measured? What are its consequences? Should it be remedied, 
-      and if so, how?
+\item Prepare a report on income inequality\index{income inequality} and/or wealth inequality\index{wealth inequality}. 
+      What are its causes? 
+      How is it measured? 
+      What are its consequences? 
+      Should it be remedied, and if so, how?
 
 \item Efforts to develop in ways that are more environmentally friendly are often
       hampered by lack of resources or infrastructure. International aid attempts
@@ -1088,7 +1090,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
       literature, and tools/machines, all of which are difficult to be completely 
       self-sufficient with respect to.
       Furthermore, what starting ``wealth\index{wealth}'' (in whatever form) did these people 
-      have, versus what ``income'' did they/do they generate to add to or subtract
+      have, versus what ``income\index{income}'' did they/do they generate to add to or subtract
       from that initial amount?
       \label{project:off-grid}
 

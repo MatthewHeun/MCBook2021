@@ -76,12 +76,13 @@ The MA found that (even back then) 15 out of the 24 ecosystem services\index{eco
 they examined were being degraded or used unsustainably~\cite{MA2005}.
 
 Ecosystem services\index{ecosystem services} can be considered as \textbf{natural capital}\index{natural capital}. 
-``Capital'' refers to an improvement or building that is economically productive 
+``Capital''\index{capital} refers to an improvement or building that is economically productive 
 or valuable; see Chapter~\ref{chap:affluence}.
 The ecosystem\index{ecosystem} produces value for human society by creating many things we use 
 and disposing of many of our wastes\index{waste}.
 Just as concepts of value and ownership motivate individuals and organizations
-to care for and manage their capital stocks, there have been many attempts to classify
+to care for and manage their capital stocks\index{capital stock},
+there have been many attempts to classify
 and value natural capital\index{natural capital}. 
 Examples include:
 
@@ -546,7 +547,7 @@ typically represent aggregated behavior.
 Aggregation allows grouping together of things that are different.
 For example, the HDI\index{Human Development Index (HDI)}
 groups life expectancy at birth, expected years of schooling, 
-and gross national income. 
+and gross national income\index{gross national income}. 
 Another example is CO$_2$ equivalents, which expresses the global warming 
 potential of various gases such as methane\index{methane},
 nitrous oxides\index{nitrous oxides (NO$_\mathrm{x}$)}, and
@@ -1015,12 +1016,12 @@ New York: Bloomsbury,
       the Marshallese,\index{Republic of the Marshall Islands (RMI)}
       specifically, have the right to emigrate to the United States. 
       RMI\index{Republic of the Marshall Islands (RMI)}
-      is a relatively low-income country (average GDP per capita is \$3800 per year). 
-      The U.S.\ is a high-income country (average GDP per capita is \$68,300 per year). 
+      is a relatively low-income\index{income!low} country (average GDP per capita is \$3800 per year). 
+      The U.S.\ is a high-income\index{income!high} country (average GDP per capita is \$68,300 per year). 
       (Dollar amounts are 2020 dollars adjusted for purchasing power parity.)
       Should the Marshallese\index{Republic of the Marshall Islands (RMI)}
       consider emigration to the U.S.\ to be an economic
-      boon (because their incomes are likely to be higher)?
+      boon (because their incomes\index{income} are likely to be higher)?
       The Marshallese\index{Republic of the Marshall Islands (RMI)}
       right to emigrate has been long standing. 
       Any Marshallese\index{Republic of the Marshall Islands (RMI)}
@@ -1085,7 +1086,7 @@ New York: Bloomsbury,
  
  \item The human development index\index{Human Development Index (HDI)}
       (HDI\index{Human Development Index (HDI)}, Section~\ref{sec:indices}) is a measure of
-      life expectancy, expected years of schooling, and gross national income per capita.
+      life expectancy, expected years of schooling, and gross national income\index{gross national income} per capita.
       As such, it is a measure of development. 
       With reference to Equation~\ref{eq:IPARX}, can HDI\index{Human Development Index (HDI)} continually increase sustainably? 
       Is there a level of HDI\index{Human Development Index (HDI)} that is ``enough?''
@@ -1098,8 +1099,8 @@ New York: Bloomsbury,
       Is it more important to raise HDI\index{Human Development Index (HDI)} or to lower ecological impact? Why?
       Who has responsibility for bringing about your desired change?
 
-\item The calculation of HDI\index{Human Development Index (HDI)} weights life expectancy, education, and national
-      income equally. Consider ways these outcomes may be correlated. Would you
+\item The calculation of HDI\index{Human Development Index (HDI)} weights life expectancy, education, and 
+      national income\index{income} equally. Consider ways these outcomes may be correlated. Would you
       weight one of them higher than the others?
 
 \item What things are important to you that aren't, for instance, in 
