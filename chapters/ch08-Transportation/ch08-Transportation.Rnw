@@ -547,7 +547,7 @@ built upon renewable energy generation will reduce
 the impact intensity of resource extraction\index{resource extraction} and consumption
 (\;\!\mft{X} in Equation~\ref{eq:IPARX}), 
 because consumption of renewable energy
-(for instance, electric vehicles\index{electric vehicle (EV)} run by solar electricity)
+(for instance, electric vehicles\index{electric vehicle (EV)} run by solar electricity\index{solar electricity})
 has less environmental impact than consumption of 
 non-renewable energy (such as gasoline\index{gasoline}).
 
@@ -644,7 +644,7 @@ a high proportion%
   electricity mix\index{electricity!European mix} 
   when the \citet[Fig.~1]{Hawkins_2012} paper was written (c.~2010)~\cite{European-Environment-Agency:2021vb}
   and upon which the environmental impacts for the ``Ren20'' electricity mix are based.
-  The U.S.\ average electricity mix today (2020) 
+  The U.S.\ average electricity mix\index{electricity!U.S.\ mix} today (2020) 
   is also about 20\% renewable~\cite{U.S.-Energy-Information-Agency:2021tp}, 
   while the European mix is closer to 30\% renewable.
   The UK electricity mix is pushing toward 40\% renewable~(37.1\%)~\cite{Evans:2020vj}.
@@ -661,9 +661,9 @@ than for ICE vehicles\index{internal combustion engine (ICE) vehicle}.
 However, EVs\index{electric vehicle (EV)}
 can provide benefits in terms of global warming potential~(GWP)\index{global warming potential (GWP)}
 relative to ICE vehicles\index{internal combustion engine (ICE) vehicle}
-if the electricity source includes renewables (as in the ``Ren20'' electricity mix), 
-because of lower lifetime fuel/electricity emissions.
-In the case of the Ren20 electricity mix,
+if the electricity\index{electricity} source includes renewables (as in the ``Ren20'' electricity mix), 
+because of lower lifetime fuel/electricity\index{electricity} emissions.
+In the case of the Ren20 electricity\index{renewable electricity} mix,
 the global warming benefits of EVs\index{electric vehicle (EV)} are achieved
 despite much larger emissions from battery manufacturing.
 However, the global-warming benefits of EVs\index{electric vehicle (EV)} evaporate
@@ -676,7 +676,7 @@ miss key differences associated with the production of different vehicle types a
 could lead to misguided comparisons across technologies.''
 
 
-<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion\\index{mineral resource depletion (MRD)}. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline\\index{gasoline}-powered vehicles. ``Ren20'' indicates an electricity mix with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union electricity mix in 2010. ``Coal''\\index{coal} indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
+<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion\\index{mineral resource depletion (MRD)}. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline\\index{gasoline}-powered vehicles. ``Ren20'' indicates an electricity mix\\index{electricity mix} with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union electricity mix in 2010. ``Coal''\\index{coal} indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
 Hawkins_life_cycle <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "EV data from Hawkins.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(c("Base vehicle", "Engine", "Other powertrain", "Battery", "Use phase", "Fuel/electricity", "End of life"), names_to = "Life.cycle.component", values_to = "normalized_impact") %>% 
@@ -812,7 +812,7 @@ transportation, petroleum\index{petroleum}, and technology.
       What would be the effects on energy consumption, the built environment,
       time, convenience (that is, affluence), and accessibility?
       
-\item Under the right conditions (an electricity mix that includes renewable sources
+\item Under the right conditions (an electricity mix\index{electricity mix} that includes renewable sources
       and a 150,000~km service life), \citet{Hawkins_2012} show that
       electric vehicles\index{electric vehicle (EV)} 
       provide GHG emissions reductions relative 

@@ -596,7 +596,7 @@ that is, an increase in the amount of land devoted to forests.
 Indeed, land use must become a carbon sink, instead of a carbon source,
 if we are to be sustainable.
 
-<<PowerDensity, fig.scap="Power densities of electricity generating technologies", fig.cap="Power densities of several electricity generating technologies. ``Nat. gas'' is natural gas\\index{natural gas}. ``Geoth.'' is geothermal. \\emph{Source}: \\citet[Figure~2]{Zalk:2018uy}.">>=
+<<PowerDensity, fig.scap="Power densities of electricity generating technologies", fig.cap="Power densities of several electricity generating\\index{electricity generation} technologies. ``Nat. gas'' is natural gas\\index{natural gas}. ``Geoth.'' is geothermal. \\emph{Source}: \\citet[Figure~2]{Zalk:2018uy}.">>=
 power_densities <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Power_Densities.xlsx"),
                                        sheet = "data to plot") %>%
   dplyr::arrange(dplyr::desc(`power_density_W/m2`)) %>%
@@ -648,7 +648,8 @@ There are two options for the former that are promising.
 The first of these is rooftop solar\index{solar panel}. 
 Through a combination of energy efficiency\index{energy efficiency} and generation, 
 each building could be made energy self-sufficient.
-The second option is combining wind and solar electricity generation with agriculture, as 
+The second option is combining wind\index{wind electricity} and
+solar electricity\index{solar electricity} generation with agriculture, as 
 mentioned in Section~\ref{sec:food_ag_efficiency}. 
 Grazing can occur among wind turbines and 
 some crops, such as coffee\index{coffee} and raspberries\index{raspberry}, prefer partial shade.
@@ -656,7 +657,7 @@ Such crops could be grown under a solar PV installation\index{solar panel} with 
 for the plants and more efficiency for the solar panels\index{solar panel}.
 Still, at least with the current technology, there is an imbalance in the amount of
 generating capacity needed for a fully zero-carbon economy and land available for 
-generating that electricity, 
+generating that electricity\index{electricity generation}, 
 not to mention liquid fuels.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

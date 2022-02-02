@@ -290,7 +290,7 @@ small wind turbines, and
 microhydro power systems.
 
 Alternatively, individuals can choose to pay a premium to purchase
-renewable electricity from the grid.
+renewable electricity from the grid\index{grid electricity}.
 Finally, pursuit of net zero energy status can encourage
 homeowners to balance energy consumption 
 with onsite or offsite renewable energy production.
@@ -411,7 +411,8 @@ living due to the economies of scale.
         \caption[Two low-carbon commuting options]
         {Two (potentially) low-carbon commuting options. The Tesla\index{Tesla} shown
         in~(a) could be a low-carbon commuting option, depending on the source of 
-        its electricity. On the other hand, the Tesla\index{Tesla} requires substantially more 
+        its electricity\index{electricity}.
+        On the other hand, the Tesla\index{Tesla} requires substantially more 
         mineral resource depletion\index{mineral resource depletion (MRD)} than the bicycle; see Figure~\ref{fig:auto_gwp} 
         and associated discussion.
         For more details on desirable characteristics of
@@ -436,7 +437,7 @@ associated with commuting.
 Individuals should not ``over buy'' cars.
 (If a truck is needed once per year to pull a trailer, rent it.)
 Choosing an electric vehicle\index{electric vehicle (EV)} will reduce CO$_2$ emissions\index{CO$_2$ emissions!reduction}
-in those places where grid electricity contains a large proportion of renewables;
+in those places where grid electricity\index{electricity grid} contains a large proportion of renewables;
 see Section~\ref{sec:electric_vehicles} and Figure~\ref{fig:tesla}.
 Don’t fly.
 % Individuals can choose how to operate their vehicles (or not).
@@ -646,7 +647,7 @@ How much will I fly?                        & Little or not at all              
 \end{table}
 
 
-<<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example sustainability actions shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings\\index{CO$_2$ emissions!reduction}. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/year in a Honda Accord\\index{Honda Accord} vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~MgCO$_2$/year. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity and natural gas\\index{natural gas} for a ``2750~ft$2$'' home vs.\\ a ``1250~ft$^2$ home in the U.S. Savings are ", small_house_savings, "~MgCO$_2$/year. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/year. Savings are estimated to be ", chicken_savings, "~MgCO$_2$/year. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/year in a Ford F150\\index{Ford F150} pickup truck or a Honda Accord\\index{Honda Accord} sedan. Savings will be ", accord_savings, "~MgCO$_2$/year. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's LaGuardia airport~(LGA) and London's Heathrow airport~(LHA) vs.\\ a virtual meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~MgCO$_2$/year. \\emph{Source}: own calculations.")>>=
+<<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example sustainability actions shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings\\index{CO$_2$ emissions!reduction}. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/year in a Honda Accord\\index{Honda Accord} vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~MgCO$_2$/year. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity\\index{electricity} and natural gas\\index{natural gas} for a ``2750~ft$2$'' home vs.\\ a ``1250~ft$^2$ home in the U.S. Savings are ", small_house_savings, "~MgCO$_2$/year. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/year. Savings are estimated to be ", chicken_savings, "~MgCO$_2$/year. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/year in a Ford F150\\index{Ford F150} pickup truck or a Honda Accord\\index{Honda Accord} sedan. Savings will be ", accord_savings, "~MgCO$_2$/year. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's LaGuardia airport~(LGA) and London's Heathrow airport~(LHA) vs.\\ a virtual meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~MgCO$_2$/year. \\emph{Source}: own calculations.")>>=
 co2_savings <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
                                   sheet = "savings")
 no_commute_savings <- co2_savings %>% dplyr::filter(Action == "No commute") %>% magrittr::extract2("Savings_MgCO2_year") %>% 

@@ -126,8 +126,8 @@ to energy derived from fossil fuels\index{fossil fuels} (denominator).
 Figure~\ref{fig:LLNL_CO2_sankey} is a Sankey diagram
 of sources of CO$_2$ emissions\index{CO$_2$ emissions} from the U.S.\ economy in 2018.
 However, in Figure~\ref{fig:LLNL_CO2_sankey}, CO$_2$ emissions\index{CO$_2$ emissions!electricity}
-from electricity generation stop at generation and are not attributed to 
-electricity purchasers, residential, commercial, and industrial customers.
+from electricity generation\index{electricity generation} stop at generation and are not attributed to 
+electricity\index{electricity} purchasers, residential, commercial, and industrial customers.
 Table~\ref{tab:corrected_co2_emissions} shows the result of attributing 
 CO$_2$ emissions\index{CO$_2$ emissions!electricity} to end uses,
 thereby completing the picture of U.S.\ carbon emissions\index{CO$_2$ emissions}.
@@ -143,7 +143,7 @@ Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
 \caption[U.S.\ CO$_2$ emissions Sankey diagram]
         {U.S.\ CO$_2$ emissions\index{CO$_2$ emissions}
          Sankey diagram\index{Sankey diagram!CO$_2$ emissions} for 2018.
-         CO$_2$ emissions from electricity production are not attributed to end uses;
+         CO$_2$ emissions from electricity production\index{electricity generation} are not attributed to end uses;
          see Table~\ref{tab:corrected_co2_emissions}.
          Flows in Mt/year.
          \emph{Source}: \citet{Lawrence-Livermore-National-Laboratory:wp}.}
@@ -164,7 +164,7 @@ US_CO2_by_sector <- readxl::read_excel(file.path("chapters", "ch06-ImpactIntensi
 
 print(xtable::xtable(US_CO2_by_sector, digits = c(0, 0, 0, 1),
                      caption = c("U.S.\ CO$_2$ emissions\\index{CO$_2$ emissions} by sector (2018) with
-                     CO$_2$ emissions from electricity generation attributed to
+                     CO$_2$ emissions from electricity generation\\index{electricity generation} attributed to
                      end uses by
                      fraction of electricity demanded in Figure~\\ref{fig:LLNL_energy_sankey}.", 
                      # Short caption
@@ -295,9 +295,9 @@ transitioning to a low carbon energy supply:
 (b) carbon sequestration\index{carbon sequestration},
 (c) carbon takeback obligation,
 (d) carbon tax,
-(e) nuclear electricity,
-(e) biomass, and
-(f) wind, water, and solar (WWS).
+(e) nuclear electricity\index{nuclear electricity},
+(e) biomass\index{biomass}, and
+(f) wind, water, and solar (WWS)\index{wind, water, and solar (WWS)}.
 Each option has its own challenges and 
 none has yet been implemented on a large enough scale to reduce CO$_2$ emissions\index{CO$_2$ emissions};
 see Figure~\ref{fig:CarbonEmissionsGraph}.
@@ -464,20 +464,20 @@ in the direction of low-carbon energy supply.
 \label{sec:nuclear_electricity}
 %++++++++++++++++++++++++++++++
 
-Nuclear power\index{nuclear energy} (an electricity source only)
+Nuclear power\index{nuclear energy} (an electricity\index{nuclear electricity} source only)
 may provide a bridge to a sustainable future.
 Nuclear power emits little CO$_2$ during plant operation
 and has high EROI; see Table~\ref{tab:eroi}. 
 However, the energy cost to construct a nuclear power plant 
 is higher than other types of
-electricity production plants.
+electricity production\index{electricity production} plants.
 In addition, 
 it is energy-intensive to mine and refine uranium prior to its use
 in a nuclear power plant. 
 If the energy required to construct nuclear energy plants
 and refine uranium\index{uranium} comes from fossil fuels\index{fossil fuels}, 
 significant CO$_2$ emissions\index{CO$_2$ emissions}
-will result from the transition to nuclear electricity.
+will result from the transition to nuclear electricity\index{nuclear electricity}.
 An additional consideration is the availability of uranium resources,
 the topic of \ref{project:nuclear_resources}.
 
@@ -493,7 +493,7 @@ fossil fuel combustion\index{fossil fuels!combustion} in the first place!
 One way is to transition away from fossil fuels\index{fossil fuels} 
 to the energy mix used in the first half of the 19$^{\text{th}}$ century,
 namely exclusive use of traditional biofuels\index{traditional biofuel} (wood and wood products)
-for heating and electricity;
+for heating and electricity\index{electricity};
 see Figure~\ref{fig:PrimaryEnergyGraph}.
 However, supplying the energy needs of today's economy would be impossible:
 we don't have enough available arable land
@@ -507,7 +507,7 @@ Biomass (unmodified wood or wood pellets)
 works well for home heating and cooking
 via wood stoves, 
 provided that particulate matter\index{particulate matter (PM)} emissions are mitigated appropriately.
-However, biomass by itself is not electricity or liquid fuel.
+However, biomass by itself is not electricity\index{electricity} or liquid fuel.
 A conversion to biomass for the world's primary energy\index{primary energy} supply would also require 
 worldwide replacement of today's fossil fuel electricity\index{fossil fuel electricity} generation infrastructure
 with a fleet of biomass power plants.
@@ -536,7 +536,7 @@ A transition to WWS would also require
 significant changes to the world's energy infrastructure, 
 with at least four large challenges.
 
-First, WWS energy resources produce electricity, not liquid fuels, and 
+First, WWS\index{wind, water, and solar (WWS)} energy resources produce electricity, not liquid fuels, and 
 large changes will be needed.
 For example, today's transport sector is almost exclusively powered 
 by liquid fossil fuel electricity\index{fossil fuels!liquid}
@@ -549,21 +549,23 @@ Electrification of personal vehicles is happening from the top end of the market
 with expensive offerings from companies such as Tesla\index{Tesla}.
 (Electrification has not yet penetrated meaningfully into the freight system,
 including trucks, ships, and planes.)
-The second option is to use WWS electricity 
+The second option is to use WWS electricity\index{WWS electricity} 
 in plants that convert biomass feedstocks\index{feedstock} to biofuels\index{biofuel}.
 
 Deployment of a WWS energy system provides a second challenge:
-wind and solar are intermittent sources of electricity,
+wind\index{wind electricity} and solar\index{solar electricity}
+are intermittent sources of electricity,
 while today's electricity sources 
-(coal\index{coal}, natural gas\index{natural gas}, nuclear, and hydro)
+(coal\index{coal electricity}, natural gas\index{natural gas electricity}, 
+nuclear\index{nuclear electricity}, and hydro\index{hydro electricity})
 are constant.
 At present, electric grids accommodate only a fraction 
-of intermittent electricity, much less than 100\%.
+of intermittent electricity\index{electricity}, much less than 100\%.
 So a transition to wind and solar primary energy\index{primary energy} sources will require
-redesign and reimplementation of electricity grids worldwide
-to include electricity storage.
+redesign and reimplementation of electricity grids\index{electricity grid} worldwide
+to include electricity storage\index{electricity storage}.
 
-There are several options for grid-scale electricity storage, including
+There are several options for grid-scale electricity storage\index{electricity storage}, including
 batteries and potential energy storage.
 Battery storage will require great quantities of rare earth metals 
 and other exotic materials, 
@@ -577,7 +579,7 @@ or concrete with a system such as Energy Vault~\cite{Energy-Vault:uz}.
 
 A third challenge comes from the water portion of WWS. 
 In most areas of the world, 
-the potential for expanding the production of hydro electricity is limited.
+the potential for expanding the production of hydro electricity\index{hydro electricity} is limited.
 Most of the Americas, Europe, and Asia are already ``tapped out'' regarding hydropower.
 Today, the potential for hydro is greatest in central Africa\index{Africa}.
 The proposed Grand Inga Dam in the Democratic Republic of the Congo
@@ -1149,7 +1151,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       \ref{fig:EnergyIntensityGraph-Nordhaus}, 
       \ref{fig:ImpactIntensityGraph}.
         
-\item One issue with a fully WWS electricity grid is the supposed need for significant
+\item One issue with a fully WWS electricity\index{WWS electricity} grid is the supposed need for significant
       energy storage. 
       Is grid-scale storage really required or is it just something we would like 
       to have? 
@@ -1238,15 +1240,15 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         What fraction of world GDP does this cost represent?
       
   \item Research the countries with the largest fractions of intermittent 
-        electricity generation (wind and solar).
+        electricity generation (wind\index{wind electricity} and solar\index{solar electricity}).
         What features of those countries allow large fractions of 
         intermittent generation? 
-        What would happen to the electricity grid in those countries 
+        What would happen to the electricity grid\index{electricity grid} in those countries 
         if the fraction of intermittent generation went to 100\%?
         
   \item Research and rank the EROI\index{energy return on investment (EROI)} 
         of many primary energy\index{primary energy} sources, 
-        including fossil fuelsfossil fuel electricity and renewables such as biofuels.
+        including fossil fuels and renewables such as biofuels.
         What does your ranking imply for transitions to a low-carbon energy regime?
         Critique how your sources drew the boundaries
         around which they calculated EROI\index{energy return on investment (EROI)}.
@@ -1336,9 +1338,9 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         Research the availability of uranium\index{uranium} resources. 
         What are the reserves?
         Is our current consumption rate weakly sustainable\index{weak sustainability}?
-        What is the maximum fraction of world electricity usage that could be powered
+        What is the maximum fraction of world electricity\index{electricity} usage that could be powered
         by nuclear and still be weakly sustainable?
-        What if ``energy usage'' replaced ``electricity usage?''
+        What if ``energy usage'' replaced ``electricity\index{electricity} usage?''
         
         Research the availability of thorium resources and the use of thorium as
         a nuclear fuel. 

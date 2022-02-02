@@ -514,7 +514,7 @@ not including feedstock\index{feedstock}.%
   ``Not including feedstock\index{feedstock}'' means that only auxiliary energy inputs should be counted
   in the denominator.
   For example, when calculating the EROI\index{energy return on investment (EROI)} for an oil rig,
-  only the electricity and diesel to operate the rig is counted in the denominator.
+  only the electricity\index{electricity} and diesel\index{diesel} to operate the rig is counted in the denominator.
   The crude oil\index{crude oil} extracted by the rig is not counted in the denominator.
 }
 

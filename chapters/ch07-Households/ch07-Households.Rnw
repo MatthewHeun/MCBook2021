@@ -454,7 +454,7 @@ provide space heating,
 usually from an out-of-the-way location in the dwelling, such as the basement.
 Heating systems convert a fuel 
 (typically natural gas\index{natural gas} or heating oil\index{heating oil} for furnaces and boilers, and
-electricity for heat pumps\index{heat pump})
+electricity\index{electricity} for heat pumps\index{heat pump})
 into heat, 
 thereby emitting CO$_2$ into the atmosphere.
 The heat is delivered to the dwelling via water or air
@@ -469,7 +469,7 @@ circulated by a pump or fan.
 Air conditioners cool and dehumidify indoor air
 to provide thermal comfort\index{thermal comfort}
 to building occupants in summer.
-Most air conditioners consume electricity to perform their cooling function, 
+Most air conditioners consume electricity\index{electricity} to perform their cooling function, 
 causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants. 
 
 
@@ -501,7 +501,7 @@ of U.S.\ final energy\index{final energy} consumption in 2015.
 %..............................
 
 Indoor lighting provides illumination for rooms,
-typically by consuming electricity and emitting CO$_2$ if fossil-fuel sources are used.
+typically by consuming electricity\index{fossil fuel electricity} and emitting CO$_2$ if fossil-fuel sources are used.
 Indoor lighting enables work, play, and entertainment
 before sunrise and after sunset. 
 In many areas of the world, artificial indoor lighting 
@@ -509,7 +509,7 @@ extends the economically active portion of the day
 several hours beyond dusk. 
 
 Artificial interior lighting is a significant 
-cause of electricity consumption in most parts of the world. 
+cause of electricity\index{electricity} consumption in most parts of the world. 
 Figure~\ref{fig:average_residential_energy} shows that lighting accounted for 4.9\%
 of U.S.\ final energy\index{final energy} consumption in 2015.
 
@@ -691,7 +691,7 @@ is quantified by the
 \textbf{Seasonal Energy Efficiency Ratio (SEER)},\index{seasonal energy efficiency ratio (SEER)}
 which is
 the ratio of cooling provided (in BTU)
-to electricity consumed (in W$\cdot$hr) throughout the season.
+to electricity\index{electricity} consumed (in W$\cdot$hr) throughout the season.
 Larger SEER\index{seasonal energy efficiency ratio (SEER)} values indicate higher efficiency
 and lower operating costs compared to lower-SEER\index{seasonal energy efficiency ratio (SEER)} air conditioners.
 
@@ -768,7 +768,7 @@ They buy lamps for the energy service\index{energy service} they provide: light!
 to energy input (measured in W).
 A 100-W incandescent lamp\index{incandescent lamp} supplies about 1230~lumens of light 
 for a service efficacy\index{energy service efficacy} of 12.3~lumens/W.
-A 100-W equivalent LED lamp\index{LED lamp} gives 1200~lumens but consumes only 12~W of electricity,
+A 100-W equivalent LED lamp\index{LED lamp} gives 1200~lumens but consumes only 12~W of electricity\index{electricity},
 for a service efficacy\index{energy service efficacy} of 100~lumens/W.
 LED lamps\index{LED lamp} are 8 times better than incandescent lamps\index{incandescent lamp} at providing 
 their energy service\index{energy service}, lighting.
@@ -794,7 +794,7 @@ incandescent\index{incandescent lamp} and
 LED lamps\index{LED lamp} are similarly efficient, 
 the lumen/W lighting efficacy\index{lighting efficacy} metric correctly suggests 
 that LED lamps\index{LED lamp} are far superior to incandescent lamps\index{incandescent lamp}
-for the task of converting electricity to visible light.
+for the task of converting electricity\index{electricity} to visible light.
 When available, service efficacies are preferred over energy efficiencies, 
 because they can point toward sustainability benefits.
 \end{mcframe}
@@ -1034,7 +1034,7 @@ Sarah Susanka and Kira Obolensky,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Alan K. Meier and Benoit LeBot,  
-\emph{One watt initiative: A global effort to reduce leaking electricity},
+\emph{One watt initiative: A global effort to reduce leaking electricity\index{electricity}},
 United States, 1999: \\
 \url{https://www.osti.gov/biblio/795944} \\
 
@@ -1072,7 +1072,7 @@ United States, 1999: \\
       \item require all homes to undergo an energy efficiency\index{energy efficiency}
             retrofit before going on the market to be sold
             (to improve energy efficiency\index{energy efficiency} of the housing stock),
-      \item require all homes to generate solar electricity onsite (to move quickly to a renewable future), and
+      \item require all homes to generate solar electricity\index{solar electricity} onsite (to move quickly to a renewable future), and
       \item prohibit clothing\index{clothing} made from synthetic fibers
             (to minimize microplastic pollution\index{pollution!microplastic}).
    \end{enumerate}
