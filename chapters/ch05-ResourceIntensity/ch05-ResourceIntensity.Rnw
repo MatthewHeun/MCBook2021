@@ -833,7 +833,7 @@ Neither oil\index{crude oil} nor natural gas\index{natural gas}
 are being consumed at a weakly sustainable\index{weak sustainability} rate.
 
 
-<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person vs.\\ time by energy type", fig.cap="World primary energy consumption\\index{primary energy consumption} per person vs.\\ time by energy type. Note that per-person primary energy consumption is relatively flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth and increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The line represents the ratio of Figure~\\ref{fig:PrimaryEnergyGraph} and Figure~\\ref{fig:PopulationGraph}. The line also represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy.">>=
+<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person vs.\\ time by energy type", fig.cap="World primary energy consumption\\index{primary energy consumption} per person vs.\\ time by energy type. Note that per-person primary energy consumption is relatively flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth and increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The height of each area represents the ratio of the height of an area in Figure~\\ref{fig:PrimaryEnergyGraph} and the top of Figure~\\ref{fig:PopulationGraph}. The top of this graph represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy and CO$_2$ emissions.">>=
 
 # Find which years have data from the Europe data set
 which_years <- region_pop %>%
@@ -852,21 +852,22 @@ energy_per_capita <- region_pop %>%
     total_population_billions = sum(total_population_billions)
   ) %>%
   dplyr::full_join(primary_energy %>%
-                     dplyr::mutate(energy_TWh = NULL) %>%
-                     dplyr::group_by(Year) %>%
-                     dplyr::summarize(
-                       energy_EJ = sum(energy_EJ),
-                     ), by = "Year") %>%
+                     dplyr::mutate(energy_TWh = NULL), 
+                   by = "Year") %>%
   dplyr::filter(complete.cases(.)) %>%
   dplyr::mutate(
     energy_per_person_GJpercap = energy_EJ / total_population_billions
   )
 
 energy_per_capita %>%
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "energy_per_person_GJpercap")) +
-  ggplot2::geom_line(size = data_line_size,
-                     colour = data_line_colour, 
-                     linetype = data_linetype) +
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year,
+                                         y = energy_per_person_GJpercap, 
+                                         fill = primary_energy_type)) + 
+  ggplot2::geom_area() +
+  viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
+  ggplot2::labs(x = NULL,
+                y = "World energy consumption [EJ/year]",
+                fill = NULL) +
   
   ggplot2::scale_y_continuous(limits = c(0, 80)) +
   ggplot2::labs(x = NULL,
