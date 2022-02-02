@@ -35,7 +35,7 @@ all plant, animal, and human life on Earth depends on natural resources,
 provisioned by the ecosystem\index{ecosystem}; 
 see Section~\ref{sec:ecosystem_services}.
 Where would you be without air and water to breathe and drink?
-Without minerals to make cars?
+Without minerals\index{minerals} to make cars?
 Without timber\index{timber} to build homes?
 Without healthy soil to grow food?
 Without oceans\index{ocean} and an atmosphere\index{atmosphere} to accept wastes\index{waste}?
@@ -62,9 +62,10 @@ It is something provisioned by the ecosystem\index{ecosystem}, to use the langua
 of Section~\ref{sec:ecosystem_services}.
 Timber\index{timber} is a resource. Iron ore\index{iron ore} is a resource. Water is a resource.
 Each resource can be transformed many times within the economy.
-Timber\index{timber} might become 2$\times$4s, or plywood, or toothpicks, or mulch.
-Iron ore\index{iron ore} might become steel, then sheet metal, and then a toaster.
-Water might become ice, a sports drink, or Play-Doh.
+Timber\index{timber} might become 2$\times$4s, plywood\index{plywood}, toothpicks\index{toothpick}, or mulch\index{mulch}.
+Iron ore\index{iron ore} might become steel\index{steel}, then sheet metal\index{sheet metal}, and
+then a toaster\index{toaster}.
+Water might become ice, a sports drink, or Play-Doh\index{Play-Doh}.
 The process of pulling a resource into the economy is called ``extraction.''\index{resource extraction}
 Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used
 for productive purposes.
@@ -117,22 +118,22 @@ Because \mft{R} is the ratio of input/output,
 
 Figure~\ref{fig:total_material_use} shows consumption rates of some natural resources,
 aggregated into important categories of 
-construction minerals, 
-ores and industrial minerals,
+construction minerals\index{construction minerals}, 
+ores and industrial minerals\index{industrial minerals},
 fossil fuels\index{fossil fuels}, and 
-biomass.
+biomass\index{biomass}.
 In 2005, the world economy used about
-19~Gt of biomass, 
-23~Gt of construction materials, 
+19~Gt of biomass\index{biomass}, 
+23~Gt of construction minerals\index{construction minerals}, 
 11.6~Gt of fossil fuels\index{fossil fuels}, and
-5.7~Gt of ores and industrial minerals
+5.7~Gt of ores\index{ores} and industrial minerals\index{industrial minerals}
 to produce about \$81.5 trillion dollars of GDP. 
 One Gt is 10$^\text{9}$~tonnes (or 10$^{\text{12}}$~kg) and a trillion dollars is \$10$^{\text{12}}$.
 Thus, each dollar of GDP used about 
-0.23~kg of biomass, 
-0.28~kg of construction materials,
+0.23~kg of biomass\index{biomass}, 
+0.28~kg of construction minerals\index{construction minerals},
 0.14~kg of fossil fuels\index{fossil fuels}, and
-0.07~kg of ores and industrial minerals.
+0.07~kg of ores\index{ores} and industrial minerals\index{industrial minerals}.
 A full accounting of the resource intensity of the economy~\Rparen{}
 yields a long list of numbers, like a huge grocery list,
 each number giving the amount of a single resource needed to make \$1 of GDP. 
@@ -140,7 +141,7 @@ This chapter discusses sustainability implications for a few resources,
 with energy providing the prime example of resource intensity of the economy. 
 
 
-<<total_material_use, fig.scap="World material use vs.\\ time by material type", fig.cap="World material use vs.\\ time by material type. ``Ores'' includes all industrial minerals. ``Construction'' includes all construction minerals. ``t'' is metric tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
+<<total_material_use, fig.scap="World material use vs.\\ time by material type", fig.cap="World material use vs.\\ time by material type. ``Ores''\\index{ores} includes all industrial minerals\\index{industrial minerals}. ``Construction'' includes all construction minerals\\index{construction minerals}. ``t'' is metric tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
 krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
                                 sheet = "data to plot") %>% 
   dplyr::rename(
@@ -180,10 +181,10 @@ Resource intensity can be measured and quantified at the world level,
 as in the examples above.
 Alternatively, resource intensity can be quantified per country or per economic sector.
 Clearly, the manufacturing sector of the economy requires resources to function.
-Raw materials (such as copper\index{copper} and minerals) are required to make
-finished goods (such as sewing machines and mobile phones).
+Raw materials (such as copper\index{copper} and minerals\index{minerals}) are required to make
+finished goods (such as sewing machines\index{sewing machine} and mobile phones\index{mobile phone}).
 But all sectors, even the service sector, need resources.
-Consider the simple example of a haircut.
+Consider the simple example of a haircut\index{haircut}.
 The stylist commutes to the salon in a vehicle
 (which requires iron ore\index{iron ore}, copper\index{copper}, and other natural resources to manufacture; 
 perhaps refined liquid fuel to operate; and 
@@ -266,7 +267,7 @@ Resources, such as the Sun,
 that are expected to exist for millennia 
 are classified as renewable.
 Resources that regenerate quickly (on the order of decades), 
-such as forests and other biomass,
+such as forests and other biomass\index{biomass},
 are also classified as renewable.
 Resources that regenerate slowly or not at all, such as fossil fuels\index{fossil fuels},
 are classified as nonrenewable.
@@ -364,13 +365,15 @@ Thus, a declining population would help humanity to be more sustainable
 only if population declines faster than affluence rises.
 
 Furthermore, Figure~\ref{fig:per_gdp_material_use} shows that on a per-GDP basis 
-extraction\index{resource extraction} of construction minerals, ores, and fossil fuels\index{fossil fuels} scales 
+extraction\index{resource extraction} of construction minerals\index{construction minerals},
+ores, and fossil fuels\index{fossil fuels} scales 
 quite well with GDP;
 those bands are not appreciably growing or shrinking over time.
 On the other hand, the per-GDP extraction rate of biomass\index{biomass extraction} is declining rapidly.
 The world's economies are dematerializing, but 
-only because we're using less biomass per unit of GDP than ever before.
-We're using nearly the same amount (mass) of construction minerals, ores, and fossil fuels\index{fossil fuels}
+only because we're using less biomass\index{biomass} per unit of GDP than ever before.
+We're using nearly the same amount (mass) of construction minerals\index{construction minerals},
+ores, and fossil fuels\index{fossil fuels}
 per GDP as we ever have.
 And because GDP is growing, total material use grows, too.
 
@@ -400,7 +403,7 @@ material_per_capita %>%
 
 
 
-<<per_gdp_material_use, fig.scap="World material use per GDP vs.\\ time by material type", fig.cap="World material use per GDP vs.\\ time by material type. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass while GDP is growing. Extraction\\index{resource extraction} of ores (industrial minerals), fossil fuels\\index{fossil fuels}, and construction minerals scales quite well with GDP and shows little change on this graph, as the thickness of those bands varies little over time. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<per_gdp_material_use, fig.scap="World material use per GDP vs.\\ time by material type", fig.cap="World material use per GDP vs.\\ time by material type. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass\\index{biomass} while GDP is growing. Extraction\\index{resource extraction} of ores\\index{ores} (and industrial minerals\\index{industrial minerals}), fossil fuels\\index{fossil fuels}, and construction minerals\\index{construction minerals} scales quite well with GDP and shows little change on this graph, as the thickness of those bands varies little over time. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 material_per_gdp <- krausmann %>% 
   dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>% 
   dplyr::mutate(
@@ -428,7 +431,9 @@ Figure~\ref{fig:total_material_use}
 shows that resource consumption is growing through time.
 By the strong sustainability\index{strong sustainability} criterion,
 any extraction\index{resource extraction} of
-construction minerals, ores and industrial minerals, and fossil energy carriers
+construction minerals\index{construction minerals}, 
+ores\index{ores} and industrial minerals\index{industrial minerals}, and
+fossil energy carriers\index{fossil fuels}
 is unsustainable, because
 we are extracting these materials at rates that are faster than their regeneration rates.
 The fact that we are increasing our rate of material extraction\index{resource extraction}
@@ -650,7 +655,7 @@ the weak\index{weak sustainability} and
 the strong\index{strong sustainability} versions.%
 \footnote{
   In some cases, renewable resources still have sustainability impacts.
-  For example, biomass is a renewable energy source, 
+  For example, biomass\index{biomass} is a renewable energy source, 
   but burning wood can lead to reduced air quality.
 }
 
@@ -1048,9 +1053,9 @@ appears to be good news for sustainability
 (declining \mft{R} puts downward pressure on \mft{I} in Equation~\ref{eq:IPARX}), 
 Figure~\ref{fig:EnergyIntensityGraph-Nordhaus} shows that 
 the most important cause of decreasing primary energy consumption\index{primary energy consumption} per unit GDP
-is declining consumption of biomass.
+is declining consumption of biomass\index{biomass}.
 Ironically, the decreases in \REp{} are coming from reduction in per-GDP consumption 
-of a type of energy that is possibly sustainable, biomass!
+of a type of energy that is possibly sustainable, biomass\index{biomass}!
 
 We can use these data to learn things about the IPARX\index{IPARX identity} terms
 (Equation~\ref{eq:IPARX}) and CO$_2$ emissions\index{CO$_2$ emissions}.
@@ -1161,7 +1166,7 @@ standards for vehicles in the U.S.\
 and mandates for \textbf{LED lighting}\index{LED lamp} in many countries.
 Another way to reduce the energy intensity of an economy is to move
 away from a manufacturing economy toward a service economy.
-However, as shown in the haircut example at the beginning of this chapter,
+However, as shown in the haircut\index{haircut} example at the beginning of this chapter,
 the need for resources never goes away, even in a service economy.
 In fact, moving to a service economy often introduces problem shifting\index{problem shifting}
 (Section~\ref{sec:electric_vehicles}),
@@ -1185,7 +1190,7 @@ Fossil fuel\index{fossil fuels} use has remained much more constant on a per-GDP
 Ironically, biofuels\index{biofuel} are a (potentially) sustainable source of energy, 
 so we are growing economies with unsustainable fossil fuel consumption\index{fossil fuels!combustion} 
 while at the same time
-relying less on consumption of (potentially) sustainable biomass.
+relying less on consumption of (potentially) sustainable biomass\index{biomass}.
 
 The next chapter looks at the impact 
 of resource extraction~\Xparen{}, 
@@ -1237,7 +1242,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
 
   \item What is the purpose (telos) of mineral resources\index{mineral resources} in the environment?
         Should they be left in place or used?
-        Humans are the only creatures on Earth that make use of most minerals.
+        Humans are the only creatures on Earth that make use of most minerals\index{minerals}.
         What are some positive impacts on animal populations that arise from
         humans' use of materials that are not available to any other animal?
         Are there any?
@@ -1329,7 +1334,8 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         are high-volume, low-value materials.
         Which do you think has better prospects for finding renewable replacements
         low-volume, high-value materials (CRMs) or
-        high-volume, low-value materials (such as construction minerals and industrial materials)?
+        high-volume, low-value materials (such as construction minerals\index{construction minerals} 
+        and industrial materials)?
         Why?
         What would an economist say?
         What would an engineer say?

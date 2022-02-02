@@ -219,7 +219,7 @@ The biofuel\index{traditional biofuel}-to-fossil-fuel transition has
 significant sustainability implications.
 Traditional biofuels\index{traditional biofuel} are carbon neutral\index{carbon neutral},
 because any CO$_2$ released by combustion was
-already sequestered into the biomass as the plants grew.
+already sequestered into the biomass\index{biomass} as the plants grew.
 Fossil fuels\index{fossil fuels} are not carbon neutral\index{carbon neutral};
 their combustion releases CO$_2$ that was sequestered millions of years ago.
 As the world transitioned away from traditional biofuels\index{traditional biofuel} toward fossil fuels\index{fossil fuels},
@@ -352,7 +352,7 @@ storing it in inert form.
 One form of carbon sequestration\index{carbon sequestration} is simply planting billions of trees.
 A massive, worldwide afforestation effort would be required to extract
 the additional carbon that has been added to the atmosphere\index{atmosphere} since the industrial revolution.
-In such a scheme, trees consume CO$_2$ and store it in their biomass.
+In such a scheme, trees consume CO$_2$ and store it in their biomass\index{biomass}.
 Unfortunately, if the trees are burned or die and decompose, 
 the CO$_2$ is returned to the atmosphere\index{atmosphere}.
 
@@ -497,24 +497,25 @@ for heating and electricity\index{electricity};
 see Figure~\ref{fig:PrimaryEnergyGraph}.
 However, supplying the energy needs of today's economy would be impossible:
 we don't have enough available arable land
-to grow the required amount of biomass.
+to grow the required amount of biomass\index{biomass}.
 (Proof of this statement is left for \ref{project:biofuel_proof}.)
 Even if there were enough land, today's methods of growing crops requires
 unsustainable energy, water, and chemical inputs;
 see Chapter \ref{chap:agriculture}.
 
-Biomass (unmodified wood or wood pellets) 
+Biomass\index{biomass} (unmodified wood or wood pellets) 
 works well for home heating and cooking
 via wood stoves, 
 provided that particulate matter\index{particulate matter (PM)} emissions are mitigated appropriately.
-However, biomass by itself is not electricity\index{electricity} or liquid fuel.
-A conversion to biomass for the world's primary energy\index{primary energy} supply would also require 
+However, biomass\index{biomass} by itself
+is not electricity\index{electricity} or liquid fuel.
+A conversion to biomass\index{biomass} for the world's primary energy\index{primary energy} supply would also require 
 worldwide replacement of today's fossil fuel electricity\index{fossil fuel electricity} generation infrastructure
-with a fleet of biomass power plants.
-And conversion to biomass would require build-out 
-of a biomass-to-liquid-fuels conversion 
+with a fleet of biomass power plants\index{biomass power plant}.
+And conversion to biomass\index{biomass} would require build-out 
+of a biomass\index{biomass}-to-liquid-fuels conversion 
 infrastructure that does not yet exist.
-Finally, conversion to biomass will be accompanied by a reduction 
+Finally, conversion to biomass\index{biomass} will be accompanied by a reduction 
 in EROI\index{energy return on investment (EROI)}; 
 see Section~\ref{sec:masterE}.
 The EROI\index{energy return on investment (EROI)} for fossil fuelsfossil fuel electricity\index{fossil fuel electricity}
@@ -550,7 +551,7 @@ with expensive offerings from companies such as Tesla\index{Tesla}.
 (Electrification has not yet penetrated meaningfully into the freight system,
 including trucks, ships, and planes.)
 The second option is to use WWS electricity\index{WWS electricity} 
-in plants that convert biomass feedstocks\index{feedstock} to biofuels\index{biofuel}.
+in plants that convert biomass\index{biomass} feedstocks\index{feedstock} to biofuels\index{biofuel}.
 
 Deployment of a WWS energy system provides a second challenge:
 wind\index{wind electricity} and solar\index{solar electricity}
@@ -938,9 +939,9 @@ is expected to fall,
 as it has been for 220 years.
 (Recall from Section~\ref{sec:energy_intensity_of_the_economy}, 
 however, that \REp{} is falling over time primarily because
-per-dollar consumption of sustainable biomass is falling over time.
+per-dollar consumption of sustainable biomass\index{biomass} is falling over time.
 Ironically, unsustainable fossil fuel\index{fossil fuels} consumption is more constant 
-than sustainable biomass consumption over time, per dollar of GDP;
+than sustainable biomass\index{biomass} consumption over time, per dollar of GDP;
 see Figure~\ref{fig:per_gdp_material_use}.)
 
 \REp{} is a type of economic intensity
@@ -957,8 +958,8 @@ However, recent research indicates that rising energy efficiency\index{energy ef
 (and declining~\REp{})
 has never reduced energy consumption or environmental impacts, 
 at least at the worldwide level~\cite{Brockway:2021ww}.
-The rebound effect\index{rebound effect} is thought to be a strong candidate
-for the reason why efficiency has not led to decreases
+The rebound effect\index{rebound effect} and backfire\index{backfire} are thought to be a strong candidate
+for the reason why energy efficiency\index{energy efficiency} has not led to decreases
 in energy consumption and CO$_2$ emissions\index{CO$_2$ emissions} over time;
 see Section~\ref{sec:rebound_effect}.
 Indeed, a circular trap exists.
@@ -1139,7 +1140,8 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       What about trees or the wind itself?
       What would your assumptions have to be to answer yes to any of these questions?
 
-\item Which would you prefer, a biomass energy system or a water-wind-solar (WWS)
+\item Which would you prefer, a biomass\index{biomass} energy system or 
+      a water-wind-solar (WWS)\index{wind, water, and solar (WWS)}
       energy system? Why?
 
 \item What would be the consequences of a reduction in EROI\index{energy return on investment (EROI)}
@@ -1211,12 +1213,12 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
 \begin{projects}
 
   \item \label{project:biofuel_proof}
-        Investigate the energy available in a hectare of biomass production.
-        How many hectares of biomass would need to be harvested annually
+        Investigate the energy available in a hectare of biomass\index{biomass} production.
+        How many hectares of biomass\index{biomass} would need to be harvested annually
         to supply today's energy needs?
         How much available arable land exists in the world?
         What fraction of available arable land would be required to transition
-        to a biomass-based energy system? 
+        to a biomass\index{biomass}-based energy system? 
         
   \item Research the potential for CO$_2$ storage in graphene\index{graphene}. 
         What are the energy requirements for such a scheme?
