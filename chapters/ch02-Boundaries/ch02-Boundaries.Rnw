@@ -687,7 +687,7 @@ CO$_2$ emissions\index{CO$_2$ emissions} are also especially important for at le
 First, CO$_2$ emissions\index{CO$_2$ emissions} may trigger a tipping point\index{tipping point} or tipping points in the 
 Earth's ecosystems\index{ecosystem}, related to deforestation\index{deforestation}, 
 wildfires\index{wildfire}, ocean acidification\index{ocean acidification}, 
-methane\index{methane} release from permafrost, and species loss. 
+methane\index{methane} release from permafrost\index{permafrost}, and species loss\index{species loss}. 
 Second, most greenhouse gas emissions\index{CO$_2$ emissions} are within human control, 
 especially regarding fossil fuels\index{fossil fuels} and agriculture. 
 
@@ -729,8 +729,8 @@ It takes a much longer time for the rest of the Earth to equilibrate to having a
 warmer atmosphere. 
 Melting ice caps change the amount of incoming solar radiation that is initially absorbed
 the the Earth.
-Melting Arctic permafrost releases methane\index{methane}, another very potent greenhouse gas.
-All these positive feedback loops take decades to reach a new steady state.
+Melting Arctic permafrost\index{permafrost} releases methane\index{methane}, another very potent greenhouse gas.
+All these positive feedback loops\index{feedback loops} take decades to reach a new steady state.
 Thus, the greenhouse gases that are already in the atmosphere\index{atmospheric CO$_2$ concentration}
 will cause warming far into the future.
 
@@ -802,7 +802,7 @@ The urgency of the climate\index{climate change} challenge is the reason that
 energy and CO$_2$ emissions\index{CO$_2$ emissions} are the prime example of this book. 
 \end{mcframe}
 
-<<Fig-SPM-10, fig.pos="h!", fig.scap="Global temperature rise vs.\\ CO$_2$ emissions", fig.cap="Global temperature rise vs.\\ CO$_2$ emissions\\index{CO$_2$ emissions}. Temperature rise is relative to the 1850--1900 global average temperature. The line labeled ``1850'' indicates the starting point for counting cumulative CO$_2$ equivalent emissions. The line labeled ``1990'' indicates cumulative emissions to that date, 1411~GtCO$_2$e. The line labeled ``2019'' indicates cumulative emissions to that date, 2411~GtCO$_2$e. The line labeled ``1.5~\\degC'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~\\degC{} warming by 2100, 2911~GtCO$_2$e. The carbon budget\\index{carbon budget} in 1990 was the distance between the ``1990'' line and the ``1.5~\\degC'' line, namely 1500~GtCO$_2$e. The current carbon budget is the distance between the ``2019'' line and the ``1.5~\\degC'' line, or about 500~GtCO$_2$e.  The red lines represent emissions under various future scenarios; see Table~\\ref{tab:ipcc_scenarios}. The relationship between future warming and cumulative emissions is only weakly dependent upon the emissions scenario. \\emph{Sources}: This figure was inspired by Figure~SPM.10 in the IPCC report \\emph{Climate Change 2021: The Physical Science Basis}~\\cite[p.~SPM-37]{IPCC:2021tk}. Data are available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\url{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}.">>=
+<<Fig-SPM-10, fig.pos="h!", fig.scap="Global temperature rise vs.\\ CO$_2$ emissions", fig.cap="Global temperature rise vs.\\ CO$_2$ emissions\\index{CO$_2$ emissions}. Temperature rise is relative to the 1850--1900 global average temperature. The line labeled ``1850'' indicates the starting point for counting cumulative CO$_2$ equivalent emissions. The line labeled ``1990'' indicates cumulative emissions to that date, 1411~GtCO$_2$e. The line labeled ``2019'' indicates cumulative emissions to that date, 2411~GtCO$_2$e. The line labeled ``1.5~\\degC'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~\\degC{} warming by 2100, 2911~GtCO$_2$e. The carbon budget\\index{carbon budget} in 1990 was the distance between the ``1990'' line and the ``1.5~\\degC'' line, namely 1500~GtCO$_2$e. The current carbon budget is the distance between the ``2019'' line and the ``1.5~\\degC'' line, or about 500~GtCO$_2$e.  The red lines represent emissions under various future scenarios; see Table~\\ref{tab:ipcc_scenarios}. The relationship between future warming and cumulative emissions is only weakly dependent upon the emissions scenario. \\emph{Sources}: This figure was inspired by Figure~SPM.10 in the IPCC\\index{Intergovernmental Panel on Climate Change (IPCC)} report \\emph{Climate Change 2021: The Physical Science Basis}~\\cite[p.~SPM-37]{IPCC:2021tk}. Data are available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\url{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}.">>=
 scenario_size <- 0.3
 spm_10_data <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "SPM_10.xlsx"),
                                   sheet = "data to plot")
@@ -900,7 +900,7 @@ New York: Random House,
 IPCC,
 \emph{Climate change 2021: The physical science basis. 
 Contribution of working group I to the sixth assessment report
-of the Intergovernmental Panel on Climate Change}.
+of the Intergovernmental Panel on Climate Change}\index{Intergovernmental Panel on Climate Change (IPCC)}.
 Cambridge, UK: Cambridge University Press, 
 2021. \\
 
@@ -992,7 +992,7 @@ New York: Bloomsbury,
       How much do you pay for a day at the beach? 
       How much would you pay for a day at the beach? 
       Is there a difference? 
-      If Yosemite National Park (for example) were about to be destroyed by a meteor impact 
+      If Yosemite National Park\index{Yosemite National Park} (for example) were about to be destroyed by a meteor impact 
       but it could be saved (somehow) if enough money were raised, how much
       would you contribute?
       
@@ -1001,24 +1001,30 @@ New York: Bloomsbury,
       are often gated by economic privilege. Do people have a right to such experiences
       and what can be done to distribute them more equitably? 
       
-\item Small island nations such as the Republic of the Marshall Islands (RMI) have 
-      contributed relatively little to global CO$_2$ emissions\index{CO$_2$ emissions} (because their 
+\item Small island nations such as the 
+      Republic of the Marshall Islands (RMI)\index{Republic of the Marshall Islands (RMI)}
+      have contributed relatively little to global CO$_2$ emissions\index{CO$_2$ emissions} (because their 
       economy is small) but will be severely affected by rising ocean levels 
       (because they're an island nation with an average elevation of 2~m).
-      What rights and redress should nations like RMI have with respect to being
+      What rights and redress should nations like RMI\index{Republic of the Marshall Islands (RMI)}
+      have with respect to being
       impacted by a problem they didn't ``cause?'' 
       Is this question about international geopolitics or individual rights?
       
 \item Following up on the previous question, 
-      the Marshallese, specifically, have the right to emigrate to the 
-      United States. 
-      RMI is a relatively low-income country (average GDP per capita is \$3800 per year). 
+      the Marshallese,\index{Republic of the Marshall Islands (RMI)}
+      specifically, have the right to emigrate to the United States. 
+      RMI\index{Republic of the Marshall Islands (RMI)}
+      is a relatively low-income country (average GDP per capita is \$3800 per year). 
       The U.S.\ is a high-income country (average GDP per capita is \$68,300 per year). 
       (Dollar amounts are 2020 dollars adjusted for purchasing power parity.)
-      Should the Marshallese consider emigration to the U.S. to be an economic
+      Should the Marshallese\index{Republic of the Marshall Islands (RMI)}
+      consider emigration to the U.S.\ to be an economic
       boon (because their incomes are likely to be higher)?
-      The Marshallese right to emigrate has been long standing. 
-      Any Marshallese who has not already emigrated has chosen not to do so because
+      The Marshallese\index{Republic of the Marshall Islands (RMI)}
+      right to emigrate has been long standing. 
+      Any Marshallese\index{Republic of the Marshall Islands (RMI)}
+      who has not already emigrated has chosen not to do so because
       it wasn't ``worth it'' to them in some way. 
       If they are forced to relocate by climate change\index{climate change}, should they receive 
       some form of compensation? 
@@ -1113,7 +1119,8 @@ New York: Bloomsbury,
       to climate change\index{climate change}?
 
 \item In 1990, the most recent year for which the United Nations\index{United Nations} 
-      Framework Convention on Climate Change had data, the carbon budget\index{carbon budget} was 1500~GtCO$_2$,
+      Framework Convention on Climate Change\index{United Nations Framework Convention on Climate Change} 
+      had data, the carbon budget\index{carbon budget} was 1500~GtCO$_2$,
       meaning that if 1500~GtCO$_2$ were emitted, the Earth's temperature would 
       eventually rise by 1.5~\degC{} relative to pre-industrial conditions.
       With a then-current global emissions rate of 22.7~GtCO$_2$/year, the carbon

@@ -318,7 +318,7 @@ The point of Figure~\ref{fig:World3loops} is to show that many variables
   \input{chapters/ch03-Population/population_diagram.tex}
 
 \caption[Population feedback loops]
-        {Causal loop diagram of several important feedback loops.
+        {Causal loop diagram of several important feedback loops\index{feedback loops}.
          Exogenous inputs are shown in \emph{italics}. 
          ``$+$'' indicates a parameter at the start of an arrow whose increase will 
          cause the parameter at the end of an arrow to rise.
