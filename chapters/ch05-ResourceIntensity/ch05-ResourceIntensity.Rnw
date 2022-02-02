@@ -219,8 +219,9 @@ So are crude oil\index{crude oil} and methane\index{methane}.
 In contrast, gasoline\index{gasoline} is a refined fuel. 
 As such, gasoline\index{gasoline} is the product of 
 a refinery that converts crude oil\index{crude oil} to refined fuels. 
-Likewise, natural uranium is a primary energy\index{primary energy} carrier that must be converted into 
-fissionable uranium fuel before it can be used in a nuclear power plant to generate electricity\index{nuclear electricity}.
+Likewise, natural uranium\index{uranium} is a primary energy\index{primary energy} carrier that must be converted into 
+fissionable uranium\index{uranium} fuel before it can be used
+in a nuclear power plant\index{nuclear power plant} to generate electricity\index{nuclear electricity}.
 The oil refinery or nuclear-fuel enrichment process can be evaluated for their
 energy return on investment (EROI)\index{energy return on investment (EROI)}; 
 see Section~\ref{sec:masterE}.
@@ -232,12 +233,12 @@ is created from final energy\index{final energy}
 by devices owned by the final energy purchaser. 
 For example, car owners purchase gasoline\index{gasoline} (final energy\index{final energy})
 that flows into a car's engine (the device)
-and creates motion along a roadway (kinetic energy, 
+and creates motion along a roadway (kinetic energy\index{kinetic energy}, 
 the useful energy\index{useful energy} product).
 Apartment dwellers purchase
 electricity\index{electricity} (final energy\index{final energy}) that flows into 
 a mixer (the device)
-to create kinetic energy (useful energy\index{useful energy})
+to create kinetic energy\index{kinetic energy} (useful energy\index{useful energy})
 of ingredients in a recipe.
 
 
@@ -263,7 +264,7 @@ in Section~\ref{sec:what_is_sustainability}:
 Resources can be classified as ``renewable''\index{resources!renewable} or
 ``nonrenewable,''\index{resources!nonrenewable}
 based on their regeneration rates.\index{regeneration rate!of resources}
-Resources, such as the Sun,
+Resources, such as The Sun\index{Sun},
 that are expected to exist for millennia 
 are classified as renewable.
 Resources that regenerate quickly (on the order of decades), 
@@ -615,7 +616,7 @@ a stable, steady-state recycling system could exist
 provided that two conditions are met:
 (a)~a large stockpile of waste\index{waste} material exists 
     (so energy to obtain the waste\index{waste} material is small) and
-(b)~an exogenous source, such as the sun, supplies energy freely and
+(b)~an exogenous source, such as The Sun\index{Sun}, supplies energy freely and
     at sufficient rate for reprocessing of discarded material~\cite{Ayres:1999}.
 
 The importance of energy is evident,
@@ -670,7 +671,7 @@ perfect substitutes.
 However, at the point of electricity generation\index{electricity generation}, 
 the feedstocks\index{feedstock} for electricity\index{electricity} production are not substitutes\index{substitute}.
 Coal-fired Rankine cycle\index{Rankine cycle} power plants\index{coal-fired power plant}
-cannot use the Sun's energy to make electricity\index{electricity}.
+cannot use the Sun's energy to make electricity\index{solar electricity}.
 Similarly, a pile of coal\index{coal} is useless
 to solar photovoltaic\index{solar photovoltaic electricity} farms.
 
@@ -732,10 +733,10 @@ Within the limits of the second law of thermodynamics,
 energy in one form can be converted to energy in any other form
 using suitable machines.
 An automobile converts chemical potential energy (gasoline\index{gasoline})
-to kinetic energy (car motion).
+to kinetic energy\index{kinetic energy} (car motion).
 A hairdryer converts electricity\index{grid electricity} (from the grid)
 to heat (applied to hair).
-A solar panel\index{solar panel} converts solar energy (from the sun)
+A solar panel\index{solar panel} converts solar energy (from The Sun\index{Sun})
 to electricity\index{electricity} (for use in many devices, including, possibly, hair dryers).
 
 Because energy is the master resource,\index{master resource (energy)}
