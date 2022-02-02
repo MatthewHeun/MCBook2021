@@ -15,7 +15,7 @@
 % a burden and she scarcely can provide for our needs.}{Tertullian, (160-220AD)}
 %%%% \epigraph{Human beings are a disease, a cancer of this planet.}{Agent Smith, The Matrix}
 \epigraph{Literature is mostly about having sex and not much about having children. 
-Life is the other way round.}{David Lodge}
+Life is the other way round.}{David Lodge\index{Lodge, David}}
 
 Equation~\ref{eq:IPARX} (repeated below for convenience) 
 expresses human impact on the Earth as the product
@@ -71,7 +71,7 @@ are discussed in Section~\ref{sec:malthus_ehrlich_simon}.
 
 Currently, humans (36\%) and domestic livestock (60\%) constitute 96\% of the mass of
 mammals on the planet \cite{BarOn2018}---only 4\% of the mass of mammals is 
-wild animals such as whales, bison, deer, and bears. 
+wild animals such as whales\index{whale}, bison\index{bison}, deer\index{deer}, and bears\index{bear}. 
 The number of wild vertebrates has declined by 68\% since 1970~\cite{WWFLPR2020}. 
 Populations of insects are down about 80\% in the last 30 years~\cite{Hallmann2017}.
 These statistics are alarming because they could indicate a drastic decline in the 
@@ -106,23 +106,24 @@ First, habitat destruction\index{habitat loss} plays an important role in the de
 For example, in 1875 there was a swarm of Rocky Mountain locusts\index{Rocky Mountain locust} consisting of 
 an estimated 12.5 trillion individuals, 
 weighing 27.5 million tons, and covering an area larger
-the state of California. 
+the state of California\index{California}. 
 By 1902, the species was extinct, mainly because farming destroyed their 
 breeding grounds. 
 (Chapter~\ref{chap:land_use_urban_planning} will discuss human alteration of the land.)
 A second cause of animal population decline is overconsumption by humans.
 Ocean fish stocks are a notable example, partly because of the role they play in human diets.
 Other examples include
-passenger pigeons, whales, bison, and megafauna such as the aurochs and the giant ground sloth.
+passenger pigeons\index{pigeons}, whales\index{whale}, 
+bison\index{bison}, and megafauna such as the aurochs\index{auroch} and the giant ground sloth\index{sloth}.
 A third cause of the decline in animal populations is human-induced climate change\index{climate change}.
-For example, many Arctic species, such as polar bear and walrus, are struggling
+For example, many Arctic species, such as polar bear\index{bear!polar} and walrus\index{walrus}, are struggling
 to adapt to a warming planet.
 Lastly, human contamination of the environment, either intentionally or unintentionally,
 is a cause for the decline of many species.
-For example, widespread use of insecticides in agriculture is thought to be a strong 
+For example, widespread use of insecticides\index{insecticide} in agriculture is thought to be a strong 
 factor for the decline in many insect populations. 
-Bees are a particularly alarming example of insecticide-driven species decline  
-because of the valuable role bees play in pollinating human crops.
+Bees\index{bee} are a particularly alarming example of insecticide\index{insecticide}-driven species decline  
+because of the valuable role bees\index{bee} play in pollinating human crops.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -215,7 +216,7 @@ of all the people who have ever lived.
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Population modeling}
+\subsection{Population modeling}\index{population modeling}
 \label{sec:population_modeling}
 %++++++++++++++++++++++++++++++
 
@@ -303,7 +304,7 @@ world population model~\cite{Meadows:1974ut, Hayes:2012us}.
 Figure~\ref{fig:World3loops} shows a schematic of that model's causal loops.
 Notice both the large number of variables in the model~(24)
 and the many ways those variables (are programmed to) interact.
-No model is perfect and, indeed, the World3 model is somewhat controversial for 
+No model is perfect and, indeed, the World3\index{World3} model is somewhat controversial for 
 what critics claim are its naive assumptions.
 The point of Figure~\ref{fig:World3loops} is to show that many variables 
 (are thought to) affect population, and those variables interact in complex ways.
@@ -351,8 +352,8 @@ that the rates depend on the size of the population.
 To compare different populations (for instance, in time, or in different countries),
 it is useful to have a way to express birth and death rates that are independent
 of the total population.
-The crude birth rate (CBR)\index{crude birth rate} is the number of births per year per thousand people.
-The crude death rate (CDR)\index{crude death rate} is the number of deaths per year per thousand people.
+The crude birth rate (CBR)\index{crude birth rate (CBR)} is the number of births per year per thousand people.
+The crude death rate (CDR)\index{crude death rate (CDR)} is the number of deaths per year per thousand people.
 ``Crude'' indicates that the rates are uncorrected for
 age (different generations could have different populations) or
 sex (possible different number males and females in each age cohort).
@@ -373,7 +374,8 @@ Thus, population is predicted to first grow rapidly and then stabilize.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Demographic transition theory gives us some hope for sustainability, namely, that
+Demographic transition theory\index{demographic transition theory}
+gives us some hope for sustainability, namely, that
 the total human population~\Pparen{} won't continue to grow exponentially\index{exponential growth}.
 On the other hand, slowing of growth is predicated on increasing GDP per capita
 (the \mft{A} term in Equation~\ref{eq:IPARX}).
@@ -427,7 +429,7 @@ demo_transition %>%
   ggplot2::theme(axis.text.x = ggplot2::element_blank(),
                  axis.ticks.x = ggplot2::element_blank())
 @
-     \caption{Crude birth and death rates.}
+     \caption{Crude birth\index{crude birth rate (CBR)} and death rates\index{crude death rate (CDR)}.}
      \label{fig:dtt_crude_rates}
      \end{subfigure}
 
@@ -614,12 +616,12 @@ are being considered; there is no one ``right'' answer.
 In 2015, half of the world's people lived inside 
 the \textbf{Valeriepieris circle}\index{Valeriepieris circle}, 
 a region with a radius of about 3,300~km 
-centered on Mong Khet, Myanmar~\cite{Quah2015}; 
+centered on Mong Khet, Myanmar\index{Mong Khet, Myanmar}~\cite{Quah2015}; 
 see Figure~\ref{fig:half_population}.
 This area of Southeast Asia has very high population density\index{population density}.
 \end{mcframe}
 
-<<half_population, fig.scap="The Valeriepieris circle", fig.cap="The Valeriepieris circle\\index{Valeriepieris circle}. As of 2015, half of the world's population lives in a circle with a radius of 3,300~km centered on Mong Khet, Myanmar~\\cite{Quah2015}.">>=
+<<half_population, fig.scap="The Valeriepieris circle", fig.cap="The Valeriepieris circle\\index{Valeriepieris circle}. As of 2015, half of the world's population lives in a circle with a radius of 3,300~km centered on Mong Khet, Myanmar\\index{Mong Khet, Myanmar}~\\cite{Quah2015}.">>=
 
 # Function to determine a projected circle
 geo_circle <- function(lon_deg, lat_deg, radius_meters) {
@@ -846,10 +848,10 @@ The History Guy (YouTube) ``\href{https://www.youtube.com/watch?v=FxqgBWxLZa0}
 {The great Kansas grasshopper plague of 1874},''
 published August 17, 2020. \\
 
-\noindent Discussion of implementing the World3 model:
+\noindent Discussion of implementing the World3\index{World3} model:
 \url{https://www.americanscientist.org/article/computation-and-the-human-predicament} \\
 
-\noindent World3 model online:
+\noindent World3\index{World3} model online:
 \url{http://bit-player.org/2012/world3-the-public-beta}
 
 

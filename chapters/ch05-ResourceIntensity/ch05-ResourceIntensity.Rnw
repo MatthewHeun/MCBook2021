@@ -686,8 +686,8 @@ means that many more boats are purchased and used,
 bringing us further from sustainability.
 
 The second example involves lighting.
-Societies moved away from wax candles and whale oil lanterns to
-``town gas,'' kerosene, and finally, electric lights.
+Societies moved away from wax candles and whale oil lanterns\index{lantern!whale oil} to
+``town gas\index{lantern!town gas},'' kerosene\index{lantern!kerosene}, and finally, electric lights.
 Electricity (from fossil fuels)\index{fossil fuel electricity} is not renewable, so 
 this is another example of an 
 inexpensive, nonrenewable resource substituting for an
@@ -695,10 +695,11 @@ expensive, renewable resource.
 
 In both cases (ships and lights), none of the options
 (wood ships, steel ships,
-wax candles, whale oil lanterns, kerosene lanterns, or electric lights)
+wax candles, whale oil lanterns\index{lantern!whale oil}, kerosene lanterns\index{lantern!kerosene}, or electric lights)
 meets the strong sustainability\index{strong sustainability} criterion.
-However, all of wood ships, wax candles, whale oil lanterns, town gas lamps, and
-kerosene lamps proved to be weakly sustainable\index{weak sustainability}.
+However, all of wood ships, wax candles, whale oil lanterns\index{lantern!whale oil}, 
+town gas lamps\index{lamp!town gas}, and
+kerosene lamps\index{lantern!kerosene} proved to be weakly sustainable\index{weak sustainability}.
 We found substitutes for the expensive natural resources
 in a reasonable time frame and
 before they were depleted;
@@ -1476,7 +1477,8 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Where do you draw boundaries?
         How do you evaluate tradeoffs?
         
-  \item In winter, fresh food is transported from warm locations (for example, California and Florida)
+  \item In winter, fresh food is transported from warm locations 
+  (for example, California\index{California} and Florida\index{Florida})
         to cold locations (Michigan, for instance), consuming fossil fuels\index{fossil fuels}
         and causing CO$_2$ emissions\index{CO$_2$ emissions!food}.
         Alternatively, LED lighting\index{LED lamp} could be used at indoor farms to grow food
