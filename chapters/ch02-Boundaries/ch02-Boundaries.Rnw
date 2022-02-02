@@ -682,8 +682,8 @@ ggplot2::ggplot() +
 Greenhouse gas emissions\index{CO$_2$ emissions}
 are an especially important sustainability issue 
 because of their widespread effects. 
-CO$_2$ emissions are also especially important for at least two other reasons. 
-First, CO$_2$ emissions may trigger a tipping point\index{tipping point} or tipping points in the 
+CO$_2$ emissions\index{CO$_2$ emissions} are also especially important for at least two other reasons. 
+First, CO$_2$ emissions\index{CO$_2$ emissions} may trigger a tipping point\index{tipping point} or tipping points in the 
 Earth's ecosystems\index{ecosystem}, related to deforestation\index{deforestation}, 
 wildfires\index{wildfire}, ocean acidification\index{ocean acidification}, 
 methane\index{methane} release from permafrost, and species loss. 
@@ -741,7 +741,7 @@ that will eventually create 1.5~\degC{} total warming,
 accounting for the (very small) rate of absorption of CO$_2$ by the biosphere.%
 \footnote{
   The small absorption rate of CO$_2$ by the biosphere means that
-  we need a negative CO$_2$ emissions rate (sequestration)
+  we need a negative CO$_2$ emissions\index{CO$_2$ emissions} rate (sequestration)
   to get back to 350~ppm atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration}
   within a few centuries.
 }
@@ -762,7 +762,8 @@ has developed future scenarios
 for carbon emissions as shown in Table~\ref{tab:ipcc_scenarios}.
 
 \begin{table}
-\caption[IPCC CO$_2$ emissions scenarios]{IPCC CO$_2$ emissions scenarios. 
+\caption[IPCC CO$_2$ emissions scenarios]{IPCC\index{Intergovernmental Panel on Climate Change (IPCC)}
+                                          CO$_2$ emissions\index{CO$_2$ emissions} scenarios. 
                                           Expected warming means future committed warming as of the year 2100
                                           relative to the 1850--1900 global temperature average.}
 \centering
@@ -784,23 +785,23 @@ SSP5-8.5 & Emissions triple by 2100 & 4.4 \\
 
 Figure~\ref{fig:Fig-SPM-10} illustrates carbon budgets\index{carbon budget} and highlights the challenges 
 to avoiding 1.5~\degC{} total warming.
-Assuming no change in today's CO$_2$ emissions rate of about 35~GtCO$_2$/year
+Assuming no change in today's CO$_2$ emissions\index{CO$_2$ emissions} rate of about 35~GtCO$_2$/year
 (Figure~\ref{fig:CarbonEmissionsGraph}), 
 we have less than 15 years before we are committed to a 1.5~\degC{}
 temperature increase over the long term 
 (if we don't find a way to remove CO$_2$ from the atmosphere at large scale).
-Given that CO$_2$ emissions are not staying constant but are, in fact, rising,
+Given that CO$_2$ emissions\index{CO$_2$ emissions} are not staying constant but are, in fact, rising,
 we probably have \emph{about a decade} before we reach 1.5~\degC{} of eventual warming
 and irreversible effects of climate change\index{climate change}.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The urgency of the climate challenge is the reason that 
-energy and CO$_2$ emissions are the prime example of this book. 
+The urgency of the climate\index{climate change} challenge is the reason that 
+energy and CO$_2$ emissions\index{CO$_2$ emissions} are the prime example of this book. 
 \end{mcframe}
 
-<<Fig-SPM-10, fig.pos="h!", fig.scap="Global temperature rise vs.\\ CO$_2$ emissions", fig.cap="Global temperature rise vs.\\ CO$_2$ emissions. Temperature rise is relative to the 1850--1900 global average temperature. The line labeled ``1850'' indicates the starting point for counting cumulative CO$_2$ equivalent emissions. The line labeled ``1990'' indicates cumulative emissions to that date, 1411~GtCO$_2$e. The line labeled ``2019'' indicates cumulative emissions to that date, 2411~GtCO$_2$e. The line labeled ``1.5~\\degC'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~\\degC{} warming by 2100, 2911~GtCO$_2$e. The carbon budget\\index{carbon budget} in 1990 was the distance between the ``1990'' line and the ``1.5~\\degC'' line, namely 1500~GtCO$_2$e. The current carbon budget is the distance between the ``2019'' line and the ``1.5~\\degC'' line, or about 500~GtCO$_2$e.  The red lines represent emissions under various future scenarios; see Table~\\ref{tab:ipcc_scenarios}. The relationship between future warming and cumulative emissions is only weakly dependent upon the emissions scenario. \\emph{Sources}: This figure was inspired by Figure~SPM.10 in the IPCC report \\emph{Climate Change 2021: The Physical Science Basis}~\\cite[p.~SPM-37]{IPCC:2021tk}. Data are available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\url{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}.">>=
+<<Fig-SPM-10, fig.pos="h!", fig.scap="Global temperature rise vs.\\ CO$_2$ emissions", fig.cap="Global temperature rise vs.\\ CO$_2$ emissions\\index{CO$_2$ emissions}. Temperature rise is relative to the 1850--1900 global average temperature. The line labeled ``1850'' indicates the starting point for counting cumulative CO$_2$ equivalent emissions. The line labeled ``1990'' indicates cumulative emissions to that date, 1411~GtCO$_2$e. The line labeled ``2019'' indicates cumulative emissions to that date, 2411~GtCO$_2$e. The line labeled ``1.5~\\degC'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~\\degC{} warming by 2100, 2911~GtCO$_2$e. The carbon budget\\index{carbon budget} in 1990 was the distance between the ``1990'' line and the ``1.5~\\degC'' line, namely 1500~GtCO$_2$e. The current carbon budget is the distance between the ``2019'' line and the ``1.5~\\degC'' line, or about 500~GtCO$_2$e.  The red lines represent emissions under various future scenarios; see Table~\\ref{tab:ipcc_scenarios}. The relationship between future warming and cumulative emissions is only weakly dependent upon the emissions scenario. \\emph{Sources}: This figure was inspired by Figure~SPM.10 in the IPCC report \\emph{Climate Change 2021: The Physical Science Basis}~\\cite[p.~SPM-37]{IPCC:2021tk}. Data are available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\url{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}.">>=
 scenario_size <- 0.3
 spm_10_data <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "SPM_10.xlsx"),
                                   sheet = "data to plot")
@@ -1000,7 +1001,7 @@ New York: Bloomsbury,
       and what can be done to distribute them more equitably? 
       
 \item Small island nations such as the Republic of the Marshall Islands (RMI) have 
-      contributed relatively little to global CO$_2$ emissions (because their 
+      contributed relatively little to global CO$_2$ emissions\index{CO$_2$ emissions} (because their 
       economy is small) but will be severely affected by rising ocean levels 
       (because they're an island nation with an average elevation of 2~m).
       What rights and redress should nations like RMI have with respect to being

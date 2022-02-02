@@ -307,13 +307,13 @@ IPAT\index{IPAT identity} expresses ``impact''~\Iparen{} on the environment as t
 \textbf{population}~\Pparen{} \textbf{affluence}~\Aparen{}, and technology~\Tparen{}.
 The Kaya identity is a form of the IPAT identity\index{IPAT identity}
 but restricts environmental impacts~\Iparen{}
-to CO$_2$ emissions~(\:\!$\mft{I}_{\text{CO}_2}$).
+to CO$_2$ emissions\index{CO$_2$ emissions}~(\:\!$\mft{I}_{\text{CO}_2}$).
 On the other hand, Kaya expands the generic expression for ``technology'' to be
 the product of \textbf{primary energy intensity}\index{primary energy intensity}
 of the economy
 (\REp{}, energy per unit of gross domestic product, GDP)
 and the \textbf{carbon intensity of energy}\index{carbon intensity of primary energy}
-(\;\!\XCOtwo{}, CO$_2$ emissions per unit of energy).
+(\;\!\XCOtwo{}, CO$_2$ emissions\index{CO$_2$ emissions} per unit of energy).
 
 Chapters~\ref{chap:planetary_boundaries}--\ref{chap:impact_intensity}
 of this book are organized around a hybrid of the IPAT\index{IPAT identity} and Kaya
@@ -565,7 +565,7 @@ Biofuels\index{biofuel} (incl.\ U.S.\ corn ethanol\index{corn ethanol})  & 0.8--
 
 This book uses the IPARX identity\index{IPARX identity} as a framework for thinking about sustainability.
 It considers many different resources and many different types of impacts.
-However, there is a focus on energy and CO$_2$ emissions.
+However, there is a focus on energy and CO$_2$ emissions\index{CO$_2$ emissions}.
 Climate change\index{climate change} (Section \ref{sec:GHGCC}) is one of the most urgent sustainability
 challenges and it is linked to other urgent challenges (such as material extinction rate(s) and land use changes)
 by CO$_2$ and energy.
