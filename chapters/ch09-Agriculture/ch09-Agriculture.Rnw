@@ -32,7 +32,7 @@
 Figures \ref{fig:LLNL_energy_sankey} and \ref{fig:LLNL_CO2_sankey} and 
 Table~\ref{tab:corrected_co2_emissions}
 show that households use 15.7\% of U.S.\ energy and are responsible for 19.3\% 
-of U.S.\ CO$_2$ emissions\index{CO$_2$ emissions!households} in 2018. 
+of U.S.\ CO$_2$ emissions\index{CO$_2$ emissions!household} in 2018. 
 Therefore, Chapter~\ref{chap:households} considers the sustainability 
 challenges of households. 
 Likewise, the energy use (37.3\%) and CO$_2$ emissions\index{CO$_2$ emissions!transportation} (36.3\%) of transportation 
@@ -848,7 +848,7 @@ develop new practices that will be effective on a warmer planet.
 As mentioned above, agriculture and land use are a significant source of humanity's 
 GHG emissions. 
 For sustainability, agriculture must become a carbon sink rather than a source 
-for carbon emissions. 
+for carbon emissions\index{CO$_2$ emissions}. 
 Human agricultural practices over the last 12,000 years (but mostly since 1800) 
 have released 116~Gt of carbon from the Earth's soil~\cite[Fig.~2]{Sanderman2017}.
 Returning carbon to the soil would make the soil more fertile and would have

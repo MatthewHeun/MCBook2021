@@ -212,7 +212,7 @@ with less stuff.
 To consume in a non-resource-intensive manner, 
 individuals can educate themselves on low-carbon-intensity 
 goods and services.
-Tracking personal carbon emissions is easy
+Tracking personal carbon emissions\index{CO$_2$ emissions} is easy
 via online carbon calculators~\cite{Padgett:2008ws}\index{carbon calculator}.
 Resources such as \emph{How bad are bananas\index{banana}?}~\cite{Berners-Lee:2011}
 provide helpful guides for purchasing decisions.
@@ -344,10 +344,11 @@ and how they are operated.
 
 Choosing a used home or apartment
 will prevent additional carbon being embodied in the housing stock.
-Choosing a smaller home will reduce carbon emissions 
+Choosing a smaller home will reduce carbon emissions\index{CO$_2$ emissions!reduction} 
 associated with heating and cooling.
 Choosing a home or apartment closer to work, school, grocery stores, and church
-will reduce carbon emissions associated with daily and weekly commuting.
+will reduce carbon emissions\index{CO$_2$ emissions!transportation}
+associated with daily and weekly commuting.
 Choosing to work from home will eliminate commuting emissions altogether!
 In terms of home operation, 
 installing additional insulation can reduce energy for heating and cooling;
@@ -430,7 +431,7 @@ in transportation.
 Individuals can decide which vehicles to buy or lease.
 Choosing a used vehicle
 will prevent additional carbon being embodied in a new vehicle.
-Choosing a smaller car will reduce carbon emissions 
+Choosing a smaller car will reduce carbon emissions\index{CO$_2$ emissions!transportation} 
 associated with commuting.
 Individuals should not ``over buy'' cars.
 (If a truck is needed once per year to pull a trailer, rent it.)
@@ -933,7 +934,7 @@ Wangari Maathai, and Joseph Lstiburek.
       \ref{project:personal_energy_audit}
       in three ways: from a cost/benefit standpoint (that is, monetary), 
       in terms of embodied energy versus energy savings, 
-      and in terms of embodied carbon emissions versus carbon emissions reductions 
+      and in terms of embodied carbon emissions versus carbon emissions\index{CO$_2$ emissions!reduction} reductions 
       (resulting from the energy you would save).
       Are the changes you are considering warranted under any of the three
       analyses?

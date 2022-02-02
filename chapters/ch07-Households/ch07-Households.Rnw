@@ -17,7 +17,7 @@ areas of life where sustainability challenges\index{sustainability challenges}
 are relevant and important. 
 The areas are selected based, in part, on where energy
 is consumed (Figure \ref{fig:LLNL_energy_sankey}), that is, 
-the drivers of carbon emissions (Table \ref{tab:corrected_co2_emissions}).
+the drivers of carbon emissions\index{CO$_2$ emissions!household} (Table \ref{tab:corrected_co2_emissions}).
 This chapter (Chapter~\ref{chap:households}) explores 
 implications and applications of sustainability thinking
 to households.
@@ -84,7 +84,7 @@ entry in the list of resources in the numerator of the
 \mft{R} term of the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX}). 
 This chapter focuses on demand for energy in households, 
 in keeping with the prime example of the book,
-energy consumption and carbon emissions. 
+energy consumption and carbon emissions\index{CO$_2$ emissions}. 
 
 Dwellings are important for sustainability, 
 in part because they are sites of energy consumption.
@@ -96,7 +96,7 @@ from the U.S.\ residential sector in 2018 total
 \Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Mt/year,
 predominantly from electricity\index{electricity} and natural gas\index{natural gas}.
 Energy consumption in dwellings is a source of sustainability impacts
-(CO$_2$ emissions\index{CO$_2$ emissions!households} and 
+(CO$_2$ emissions\index{CO$_2$ emissions!household} and 
 natural resource extraction\index{resource extraction})
 far beyond the site of the demand.
 Thus, decisions made by households have sustainability implications
@@ -515,7 +515,7 @@ of U.S.\ final energy\index{final energy} consumption in 2015.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sustainability challenges in households}\index{sustainability challenges!households}
+\section{Sustainability challenges in households}\index{sustainability challenges!household}
 \label{sec:sustainability_challenges_households}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

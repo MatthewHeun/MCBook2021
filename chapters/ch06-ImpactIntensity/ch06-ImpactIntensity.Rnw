@@ -130,7 +130,7 @@ from electricity generation stop at generation and are not attributed to
 electricity purchasers, residential, commercial, and industrial customers.
 Table~\ref{tab:corrected_co2_emissions} shows the result of attributing 
 CO$_2$ emissions\index{CO$_2$ emissions!electricity} to end uses,
-thereby completing the picture of U.S.\ carbon emissions.
+thereby completing the picture of U.S.\ carbon emissions\index{CO$_2$ emissions}.
 Attributing CO$_2$ emissions\index{CO$_2$ emissions!electricity} in this way 
 makes it clear that the residential and commercial sectors
 are responsible for a larger share 
@@ -445,8 +445,8 @@ thereby incentivizing manufacturers and service providers
 to use low-carbon energy.
 
 Carbon offsets\index{carbon offset} enable carbon emitters to
-pay someone else to sequester or reduce carbon emissions.
-Carbon emissions are traded as a financial instrument.
+pay someone else to sequester or reduce carbon emissions\index{CO$_2$ emissions!reduction}.
+Carbon emissions\index{CO$_2$ emissions!reduction} are traded as a financial instrument.
 A market develops in which emissions and reductions are traded, 
 with competition leading to low prices for net emission reductions.
 As such, carbon offsets 
@@ -771,7 +771,7 @@ print(xtable::xtable(iparx_df %>%
 \normalsize
 \end{equation}
 
-Equation~\ref{eq:IPARX_rate_with_numbers} shows that carbon emissions 
+Equation~\ref{eq:IPARX_rate_with_numbers} shows that carbon emissions\index{CO$_2$ emissions!growth} 
 (Figure~\ref{fig:CarbonEmissionsGraph})
 are increasing 
 % at an average rate of $\mft{r}_\mft{I} =$ \Sexpr{rate_to_string(r_I_220)}
@@ -1357,7 +1357,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         (reduced energy consumption and CO$_2$ emissions\index{CO$_2$ emissions})
         of energy efficiency\index{energy efficiency}.
         Research green revolving funds. 
-        Where have they been successful to reduce energy consumption and carbon emissions?
+        Where have they been successful to reduce energy consumption and carbon emissions\index{CO$_2$ emissions!reduction}?
         Where have they failed?
         What are the factors that make GRFs successful?
         Conversely, what factors lead to failure?

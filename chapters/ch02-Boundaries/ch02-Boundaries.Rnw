@@ -249,7 +249,7 @@ ancient Greece\index{Greece} and Rome\index{Rome}''~\cite{Hughes1982}.
 % if we don't understand it, should we mess with it?
 What \emph{is} new is the scope or magnitude of humanity's ability to affect the environment,
 both due to the current high population and our level of technology.
-Fossil-fuel derived carbon emissions are of particular concern.
+Fossil-fuel derived carbon emissions\index{CO$_2$ emissions!fossil fuel} are of particular concern.
 Further examples include nuclear and industrial ``accidents,'' such as the 
 Thule air-base crash\index{Thule air-base crash},
 the Palomares crash\index{Palomares crash},
@@ -759,7 +759,7 @@ for a 50\% likelihood of remaining below 1.5~\degC{} warming~\cite[Table~SPM.2]{
 %
 The UN's\index{UN} Intergovernmental Panel on Climate Change (IPCC)\index{Intergovernmental Panel on Climate Change (IPCC)}
 has developed future scenarios
-for carbon emissions as shown in Table~\ref{tab:ipcc_scenarios}.
+for carbon emissions\index{CO$_2$ emissions!future scenarios} as shown in Table~\ref{tab:ipcc_scenarios}.
 
 \begin{table}
 \caption[IPCC CO$_2$ emissions scenarios]{IPCC\index{Intergovernmental Panel on Climate Change (IPCC)}
@@ -1031,13 +1031,15 @@ New York: Bloomsbury,
       Royal Dutch Shell\index{Royal Dutch Shell} (subject to appeal). 
       Approximately 17,000 Dutch citizens were co-plaintiffs in the case on the
       basis that Shell's\index{Royal Dutch Shell}
-      carbon emissions were a threat to the plaintiff's human 
+      carbon emissions\index{CO$_2$ emissions} were a threat to the plaintiff's human 
       rights, namely the ``right to life'' and an ``undisturbed family life'' per 
       the European Convention on Human Rights\index{European Convention on Human Rights}.
-      The court held Shell\index{Royal Dutch Shell} responsible for the carbon emissions of its suppliers 
+      The court held Shell\index{Royal Dutch Shell} responsible for the carbon emissions\index{CO$_2$ emissions}
+      of its suppliers 
       and customers (known as \textbf{Scope 3 emissions})\index{Scope 3 emissions}
       and ordered Shell\index{Royal Dutch Shell} to 
-      reduce its carbon emissions 45\% by 2030 relative to Shell's\index{Royal Dutch Shell} 2019 emissions.
+      reduce its carbon emissions\index{CO$_2$ emissions!reduction} 45\%
+      by 2030 relative to Shell's\index{Royal Dutch Shell} 2019 emissions.
       What would be alternative methods of accomplishing the same result?
       (See also \ref{project:shell_lawsuit} about the merits of
       regulation through litigation.)
@@ -1124,7 +1126,7 @@ New York: Bloomsbury,
       \begin{enumerate}
       \item In the 1990s, who wanted to cut emissions and who wanted to accelerate emissions?
       \item Who stands to benefit from reductions to emissions now? Who currently would be harmed by a
-            reduction in global carbon emissions?
+            reduction in global carbon emissions\index{CO$_2$ emissions!reduction}?
       \end{enumerate}
       
 \item Climate models are somewhat uncertain. 
