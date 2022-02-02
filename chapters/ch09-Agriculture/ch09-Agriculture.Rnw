@@ -32,27 +32,14 @@
 Figures \ref{fig:LLNL_energy_sankey} and \ref{fig:LLNL_CO2_sankey} and 
 Table~\ref{tab:corrected_co2_emissions}
 show that households use 15.7\% of U.S.\ energy and are responsible for 19.3\% 
-of U.S.\ CO$_2$ emissions in 2018. 
+of U.S.\ CO$_2$ emissions\index{CO$_2$ emissions!households} in 2018. 
 Therefore, Chapter~\ref{chap:households} considers the sustainability 
 challenges of households. 
-Likewise, the energy use (37.3\%) and CO$_2$ emissions (36.3\%) of transportation 
+Likewise, the energy use (37.3\%) and CO$_2$ emissions\index{CO$_2$ emissions!transportation} (36.3\%) of transportation 
 motivated Chapter~\ref{chap:transportation}.
 This chapter considers agriculture as an import example of industry and commerce
 (the other two sectors in Table~\ref{tab:corrected_co2_emissions}).
-% Aggregating the other two categories in Table~\ref{tab:corrected_co2_emissions},
-% commercial and industrial sources are responsible for 47\% of 
-% U.S. energy use and 44\% of U.S. CO$_2$ emissions. 
-% However, this book does not dedicate individual chapters to commerce and industry. 
-% For households and transportation, it is possible to provide technical details 
-% about sustainability that apply to the entire category.
-% However, each industry and business has its own particular set of technical 
-% details and sustainability concerns; there is little commonality within the 
-% categories. 
-% Moreover, even if we were to present details for, say, automobile manufacturing 
-% or the film industry, those details would be somewhat boring to read and would 
-% not contribute (as much) to an overall framework for sustainability thinking.
 
-%Agriculture is a setting most readers will have (at least) an intuitive understanding of.
 Agriculture, forestry, and other land use account for an estimated 23\% 
 of anthropogenic greenhouse gas (GHG) emissions~\cite{SRCCL2019}. 
 Agriculture has strong links to land use, which is the focus of 
@@ -591,7 +578,7 @@ is ``how can food waste\index{food waste} be eliminated?''
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Greenhouse gas emissions}
+\subsection{Greenhouse gas emissions}\index{CO$_2$ emissions}
 %++++++++++++++++++++++++++++++
 
 Globally, food and land use account for 23\% of GHG emissions~\cite{IPCC:2018aa}.
@@ -602,7 +589,7 @@ amounts of N$_2$O, a very potent GHG.
 The paragraphs below look at two very important greenhouse gases, carbon
 dioxide~(CO$_2$) and methane~(CH$_4$).
 
-<<food_ghg, fig.scap="Food-related greenhouse gas emissions vs.\\ time by life-cycle stage", fig.cap="U.S.\\ food-related greenhouse gas emissions vs.\\ time by life-cycle stage. ``LULUC'' is land use and land-use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
+<<food_ghg, fig.scap="Food-related greenhouse gas emissions vs.\\ time by life-cycle stage", fig.cap="U.S.\\ food-related greenhouse gas emissions\\index{CO$_2$ emissions!food} vs.\\ time by life-cycle stage. ``LULUC'' is land use and land-use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
 food_emissions_US <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Crippa et al 2021.xlsx"), 
                                             sheet = "data to plot") %>% 
   tidyr::pivot_longer(-`System Stage`, names_to = "Year", values_to = "co2_emissions") %>% 
@@ -639,7 +626,7 @@ Factors such as transport distance and wastage percentages are important
 for determining GHG emissions from food.
 \end{mcframe}
 
-<<FoodEmissionsPerMcal, fig.height=4, fig.scap="Food CO$_2$ emissions per Mcal of food for various foods", fig.cap="Food CO$_2$ emissions per Mcal of food for various foods. \\emph{Source}: \\citet{Ritchie:2021tl}.">>=
+<<FoodEmissionsPerMcal, fig.height=4, fig.scap="Food CO$_2$ emissions per Mcal of food for various foods", fig.cap="Food CO$_2$ emissions\\index{CO$_2$ emissions!food} per Mcal of food for various foods. \\emph{Source}: \\citet{Ritchie:2021tl}.">>=
 food_emissions_per_kcal <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "food-footprints-kcal.xlsx"), 
                                               sheet = "data to plot") %>% 
   dplyr::arrange(dplyr::desc(GHG_emissions_per_1000kcal))
@@ -661,7 +648,7 @@ food_emissions_per_kcal %>%
 @
 
 
-<<GHG_food, fig.height=5, fig.scap="Food greenhouse gas emissions for various foods", fig.cap="U.S.\\ food greenhouse gas emissions for various foods. \\emph{Source}: \\citet[Figure~3]{Heller_2014}.">>=
+<<GHG_food, fig.height=5, fig.scap="Food greenhouse gas emissions for various foods", fig.cap="U.S.\\ food greenhouse gas emissions\\index{CO$_2$ emissions!food} for various foods. \\emph{Source}: \\citet[Figure~3]{Heller_2014}.">>=
 food_emissions_total <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Food CO2.xlsx"), 
                                            sheet = "data to plot") %>% 
   dplyr::arrange(dplyr::desc(`kg CO2 eq/capita/year`))
@@ -692,7 +679,7 @@ is the food-delivery system.
 Figure~\ref{fig:food_ghg} shows GHG emissions from the various stages of food
 distribution and preparation. 
 The amount of CO$_2$ released is proportional to the amount of energy used.
-Figure~\ref{fig:FoodEmissionsPerMcal} shows equivalent CO$_2$ emissions per Mcal of food.
+Figure~\ref{fig:FoodEmissionsPerMcal} shows equivalent CO$_2$ emissions\index{CO$_2$ emissions!food} per Mcal of food.
 (Foods with low feed-to-food efficiency\index{feed-to-food efficiency} tend to have higher GHG emissions;
 see Figure~\ref{fig:FoodToFeedEfficiency}.)
 However, by itself Figure~\ref{fig:FoodEmissionsPerMcal} is not terribly informative.
@@ -702,7 +689,7 @@ nutrients.
 Figure~\ref{fig:GHG_food} shows what individual foods contribute to overall food
 emissions (but not what quantity of each are consumed).
 Taken together, Figures~\ref{fig:food_ghg}--\ref{fig:GHG_food} 
-illustrate agricultural CO$_2$ emissions.
+illustrate agricultural CO$_2$ emissions\index{CO$_2$ emissions!agriculture}.
 
 
 %++++++++++++++++++++++++++++++
@@ -976,7 +963,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       of agrichemicals and fossil-fueled mechanization of labor. 
       Lower yields means more land is needed (thereby increasing land-based emissions 
       and impacts).
-      Since land use is a significant contributor to global greenhouse gas emissions,
+      Since land use is a significant contributor to global greenhouse gas emissions\index{CO$_2$ emissions!land use},
       how should we think about minimizing total impact? That is, how should we
       ``price'' different kinds of emissions/impacts?
       What does use of the word ``price'' suggest about our approach to solving the
@@ -999,7 +986,8 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       your answer? Why?
 
 \item Food waste\index{food waste} is a major environmental and economic problem. 
-      In fact, food waste\index{food waste} accounts for 6--8\% of global greenhouse gas emissions.
+      In fact, food waste\index{food waste} accounts for 6--8\% 
+      of global greenhouse gas emissions\index{CO$_2$ emissions!food waste}.
       One way to reduce food waste\index{food waste} is to use more packaging.
       The purpose of packaging is to keep food fresh until its ready to be eaten.
       What is your reaction to the idea that additional packaging could reduce 
@@ -1127,7 +1115,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       Compare to your peers.
       How do your food-related emissions compare to your emissions from transportation-related activities?
       Guided by the figures and advice in this chapter, 
-      develop an alternative diet and estimate its greenhouse gas emissions.
+      develop an alternative diet and estimate its greenhouse gas emissions\index{CO$_2$ emissions!food}.
       What amount of GHG emissions reductions can you obtain by changing your diet?
       
 \item Retail is an important part of the food supply chain.

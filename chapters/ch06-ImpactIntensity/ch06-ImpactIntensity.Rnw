@@ -74,7 +74,7 @@ will have effects on air, water, species diversity, land, and human communities.
 Examples of environmental impacts include
 water eutrophication\index{eutrophication} (from fertilizer runoff),
 SO$_2$\index{sulfur dioxide (SO$_2$)!emissions of} emissions (from burning sulfurous coal\index{coal}),
-CO$_2$ emissions (from burning fossil fuels),
+CO$_2$ emissions (from burning fossil fuels)\index{CO$_2$ emissions!fossil fuel},
 desertification\index{desertification}
 (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and
 species loss\index{species loss} (due to habitat loss\index{habitat loss},
@@ -110,12 +110,12 @@ other examples of environmental impacts caused by resource extraction\index{reso
 
 As discussed in Chapter~\ref{chap:resource_intensity},
 our prime example for resource extraction\index{resource extraction} and consumption is energy.
-Because CO$_2$ emissions
+Because CO$_2$ emissions\index{CO$_2$ emissions!fossil fuel}
 are a significant source of environmental impact
 from energy consumption,
 it follows that the prime example of 
 environmental impact of resources 
-(\;\!\mft{X} in Equation~\ref{eq:IPARX}) is CO$_2$ emissions
+(\;\!\mft{X} in Equation~\ref{eq:IPARX}) is CO$_2$ emissions\index{CO$_2$ emissions}
 in tonnes per MJ of energy provided.
 Specifically, the prime example for impact of resources~\Xparen{}
 is the CO$_2$ intensity of energy~(\;\!$\mft{X}_{\text{CO}_2}$).
@@ -124,23 +124,25 @@ carbon (numerator) can be considered an input
 to energy derived from fossil fuels (denominator).
 
 Figure~\ref{fig:LLNL_CO2_sankey} is a Sankey diagram
-of sources of CO$_2$ emissions from the U.S.\ economy in 2018.
-However, in Figure~\ref{fig:LLNL_CO2_sankey}, CO$_2$ emissions
+of sources of CO$_2$ emissions\index{CO$_2$ emissions} from the U.S.\ economy in 2018.
+However, in Figure~\ref{fig:LLNL_CO2_sankey}, CO$_2$ emissions\index{CO$_2$ emissions!electricity}
 from electricity generation stop at generation and are not attributed to 
 electricity purchasers, residential, commercial, and industrial customers.
 Table~\ref{tab:corrected_co2_emissions} shows the result of attributing 
-CO$_2$ emissions to end uses,
+CO$_2$ emissions\index{CO$_2$ emissions!electricity} to end uses,
 thereby completing the picture of U.S.\ carbon emissions.
-Attributing CO$_2$ emissions in this way 
+Attributing CO$_2$ emissions\index{CO$_2$ emissions!electricity} in this way 
 makes it clear that the residential and commercial sectors
-are responsible for a larger share of CO$_2$ emissions than 
+are responsible for a larger share 
+of CO$_2$ emissions\index{CO$_2$ emissions!residential}\index{CO$_2$ emissions!commercial} than 
 Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
 
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{chapters/ch06-ImpactIntensity/figures/Carbon_2018_United-States.png}
 \caption[U.S.\ CO$_2$ emissions Sankey diagram]
-        {U.S.\ CO$_2$ emissions Sankey diagram\index{Sankey diagram!CO$_2$ emissions} for 2018.
+        {U.S.\ CO$_2$ emissions\index{CO$_2$ emissions!residential}
+         Sankey diagram\index{Sankey diagram!CO$_2$ emissions} for 2018.
          CO$_2$ emissions from electricity production are not attributed to end uses;
          see Table~\ref{tab:corrected_co2_emissions}.
          Flows in Mt/year.

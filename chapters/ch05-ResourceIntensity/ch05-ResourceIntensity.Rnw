@@ -541,7 +541,8 @@ the weak sustainability\index{weak sustainability} analysis approach
 to two chemical elements (zinc\index{zinc (Zn)} and germanium\index{germanium (Ge)}) and
 to worldwide emission of CO$_2$.
 The world is far above
-weak sustainability\index{weak sustainability} levels of consumption for these two materials and CO$_2$ emissions.
+weak sustainability\index{weak sustainability} levels of consumption for these two materials 
+and CO$_2$ emissions\index{CO$_2$ emissions}.
 To underscore the importance of sustainably consuming natural resources,
 germanium (now being consumed at twice its sustainable rate, 
 $\rho$~=~100\% in Figure~\ref{fig:PercentageOfSustainable})
@@ -824,7 +825,8 @@ By the weak sustainability\index{weak sustainability} criterion of preserving re
 Figure~\ref{fig:WeakSustEnergyGraph} shows that
 coal\index{coal} consumption is weakly sustainable\index{weak sustainability} from a resource extraction\index{resource extraction}
 point of view.
-(However, coal\index{coal} is not weakly sustainable\index{weak sustainability} from a CO$_2$ emissions point of view, 
+(However, coal\index{coal} is not weakly sustainable\index{weak sustainability} 
+from a CO$_2$ emissions\index{CO$_2$ emissions} point of view, 
 as shown in Figure~\ref{fig:PercentageOfSustainable}.)
 Neither oil\index{crude oil} nor natural gas\index{natural gas}
 are being consumed at a weakly sustainable\index{weak sustainability} rate.
@@ -1049,16 +1051,18 @@ Ironically, the decreases in \REp{} are coming from reduction in per-GDP consump
 of a type of energy that is possibly sustainable, biomass!
 
 We can use these data to learn things about the IPARX\index{IPARX identity} terms
-(Equation~\ref{eq:IPARX}) and CO$_2$ emissions.
+(Equation~\ref{eq:IPARX}) and CO$_2$ emissions\index{CO$_2$ emissions}.
 A narrowed version of Equation~\ref{eq:IPARX},
-considers only CO$_2$ emissions on the left-hand side of the equation~($\mft{I}_{\text{CO}_2}$)
+considers only CO$_2$ emissions\index{CO$_2$ emissions}
+on the left-hand side of the equation~($\mft{I}_{\text{CO}_2}$)
 and the energy intensity of economic activity~\REpparen{}
 instead of \mft{R} on the right-hand side.
-When \REp{} falls, downward pressure is placed on CO$_2$ emissions.
-Whether CO$_2$ emissions actually decrease
+When \REp{} falls, downward pressure is placed on CO$_2$ emissions\index{CO$_2$ emissions}.
+Whether CO$_2$ emissions\index{CO$_2$ emissions} actually decrease
 depends on the rates of increase or decline of the other terms
 on the right side of Equation~\ref{eq:IPARX}.
-Figure~\ref{fig:CarbonEmissionsGraph} shows that CO$_2$ emissions have been growing over time.
+Figure~\ref{fig:CarbonEmissionsGraph} shows that CO$_2$ emissions\index{CO$_2$ emissions!growth}
+have been growing over time.
 So, other terms on the right side of the IPARX identity\index{IPARX identity}
 must be growing collectively faster than energy intensity of the economy is declining;
 see Section~\ref{sec:revisit_IPARX}.
@@ -1139,12 +1143,12 @@ Reducing \mft{R} will reduce resource consumption but only if
 GDP stays constant or grows more slowly than the
 rate at which \mft{R} decreases.
 
-For the prime example of energy and CO$_2$ emissions,
+For the prime example of energy and CO$_2$ emissions\index{CO$_2$ emissions},
 reducing \mft{R} means reducing the energy intensity of economic activity~\REpparen{},
 that is, reducing the amount of energy required to produce
 each unit of GDP.
 (Section~\ref{sec:low_carbon_transition} discusses a distinct but related issue,
-transitioning the energy system to reduce CO$_2$ emissions
+transitioning the energy system to reduce CO$_2$ emissions\index{CO$_2$ emissions}
 from each unit of energy consumed.)
 There are many ways often suggested to reduce the energy intensity of economic activity~\REpparen{}.
 First, increasing energy efficiency\index{energy efficiency} (through efficiency standards or mandates)
@@ -1474,7 +1478,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         
   \item In winter, fresh food is transported from warm locations (for example, California and Florida)
         to cold locations (Michigan, for instance), consuming fossil fuels
-        and causing CO$_2$ emissions.
+        and causing CO$_2$ emissions\index{CO$_2$ emissions!food}.
         Alternatively, LED lighting\index{LED lamp} could be used at indoor farms to grow food
         in cold climates in the winter.
         Assess the benefits and drawbacks of the LED\index{LED lamp} approach relative to the 
