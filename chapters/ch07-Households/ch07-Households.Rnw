@@ -218,7 +218,7 @@ Lighting constitutes 4.9\% of total energy use in dwellings.
 A fourth factor, size and location, is also important.
 
 
-<<average_residential_energy, fig.scap="Proportions of household energy consumption by end use", fig.cap="Proportions of final energy\\index{final energy} consumption in U.S.\\ households by end use in 2015. ``Space heating'' includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. ``Space cooling'' includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. ``Refrigeration'' includes electricity for refrigerators and standalone freezers. ``Laundry'' includes electricity, natural gas, and propane for clothes washers and dryers. ``Cooking'' includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers\\index{dishwasher}. ``Entertainment'' includes electricity and natural gas for TVs, pool pumps, and hot tubs. ``Other'' includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
+<<average_residential_energy, fig.scap="Proportions of household energy consumption by end use", fig.cap="Proportions of final energy\\index{final energy} consumption in U.S.\\ households by end use in 2015. ``Space heating'' includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. ``Space cooling'' includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. ``Refrigeration'' includes electricity for refrigerators\\index{refrigerator} and standalone freezers. ``Laundry'' includes electricity, natural gas, and propane for clothes washers and dryers. ``Cooking'' includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers\\index{dishwasher}. ``Entertainment'' includes electricity and natural gas for TVs, pool pumps, and hot tubs. ``Other'' includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_category <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "End_use_by_demand_category.xlsx"),
                                                sheet = "data to plot") %>% 
   dplyr::select("Category", "Percentage") %>% 
@@ -1117,7 +1117,7 @@ United States, 1999: \\
       Leave computers or entertainment systems in ``standby'' mode when not in use?
       Consume ``phantom,'' ``vampire,'' or standby power? 
       Why do you do these things?
-      Does your home have a second (or third) refrigerator or freezer?
+      Does your home have a second (or third) refrigerator\index{refrigerator} or freezer\index{freezer}?
       Why?
       What would it take for you to change your behavior?
       
@@ -1129,7 +1129,6 @@ United States, 1999: \\
       heating. 
       (For around 60\% of housing units wood is the main source of heat;
       for the other 40\% it's secondary.)
-      % Pre-1950s houses are most likely to use wood heat.
       Wood heating can be carbon neutral\index{carbon neutral}. 
       However, wood heating isn't exactly sustainable. 
       It is sustainable only if not everyone does it. 
@@ -1170,7 +1169,7 @@ United States, 1999: \\
       
 \item Should consumer appliances and household goods be required to contribute to a circular economy\index{circular economy}?
       If so, under what conditions or which appliances? 
-      Should electronics recycling be mandatory?
+      Should electronics recycling\index{recycling} be mandatory?
       
 \item One thing that you can do to make your housing unit more energy efficient
       is to eat every meal at a restaurant. Think of all energy you will save!

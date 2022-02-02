@@ -290,7 +290,7 @@ All goods and the infrastructure for all services depend on
 manufactured objects of all types:
 cars and the roads on which they travel, 
 homes and the utilities that sustain life,
-food and the refrigerators that maintain freshness,
+food and the refrigerators\index{refrigerator} that maintain freshness,
 toilets and the sewer systems that remove wastes\index{waste}.
 Furthermore, the operation of all these systems requires energy, 
 the master resource\index{master resource (energy)}.
@@ -318,7 +318,7 @@ Each region or sector will have its own list of CRMs.
 For example, the transition to a renewable energy future 
 (Section~\ref{sec:low_carbon_transition})
 depends on a large number of critical materials, 
-outlined in a recent International Energy Agency report~\cite{IEA:2021wt}.
+outlined in a recent International Energy Agency (IEA)\index{International Energy Agency (IEA)} report~\cite{IEA:2021wt}.
 The point isn't which materials are critical for any given economy or sector,
 it's that all sectors of all economies depend upon a large number of raw materials.
 
@@ -371,7 +371,7 @@ ores, and fossil fuels\index{fossil fuels} scales
 quite well with GDP;
 those bands are not appreciably growing or shrinking over time.
 On the other hand, the per-GDP extraction rate of biomass\index{biomass extraction} is declining rapidly.
-The world's economies are dematerializing, but 
+The world's economies are dematerializing\index{dematerialization}, but 
 only because we're using less biomass\index{biomass} per unit of GDP than ever before.
 We're using nearly the same amount (mass) of construction minerals\index{construction minerals},
 ores, and fossil fuels\index{fossil fuels}
@@ -555,7 +555,7 @@ $\rho$~=~100\% in Figure~\ref{fig:PercentageOfSustainable})
 is one of the \textbf{critical raw materials}\index{critical raw materials (CRMs)} (CRMs)
 in Table~\ref{tab:CRMs}.
 
-<<PercentageOfSustainable, fig.scap="Percentage above weak sustainability for Zn, Ge, and CO$_2$", fig.width=3.25, fig.cap="Percentage above maximum weakly sustainable\\index{weak sustainability} rates~($\\rho$). For zinc and germanium, the percentage above the average maximum weakly sustainable extraction rates. For CO$_2$, the percentage above maximum weakly sustainable emission rate. \\emph{Source}: \\citet[Tables~2.1--2.3]{Graedel:2010ab}.">>=
+<<PercentageOfSustainable, fig.scap="Percentage above weak sustainability for Zn, Ge, and CO$_2$", fig.width=3.25, fig.cap="Percentage above maximum weakly sustainable\\index{weak sustainability} rates~($\\rho$). For zinc\\index{zinc (Zn)} and germanium\\index{germanium (Ge)}, the percentage above the average maximum weakly sustainable extraction rates. For CO$_2$, the percentage above maximum weakly sustainable emission rate. \\emph{Source}: \\citet[Tables~2.1--2.3]{Graedel:2010ab}.">>=
 weak_sust_data <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Graedel_Allenby_Sustainable_Resource_Use_Tables.xlsx"),
                    sheet = "data to plot") %>%
   dplyr::mutate(
@@ -588,31 +588,31 @@ Two ways to become more sustainable are recycling\index{recycling} and substitut
 Recycling\index{recycling} is a way to extend the usable life
 of natural resources and
 reduce rates of resource extraction\index{resource extraction}.
-Recycling uses discarded products as feedstock\index{feedstock}
+Recycling\index{recycling} uses discarded products as feedstock\index{feedstock}
 to regenerate usable products.
-Examples include paper recycling to pulp and glass recycling to new containers.
-However, recycling requires energy
+Examples include paper recycling\index{paper recycling} to pulp and glass recycling\index{glass recycling} to new containers.
+However, recycling\index{recycling} requires energy
 and other natural resources
-for transporting used material to recycling centers and 
+for transporting used material to recycling centers\index{recycling center} and 
 processing used material into recycled products.
-For example, paper recycling uses water for cleaning and de-inking processes.
-Glass recycling requires high-temperature heat for melting processes.
-Whether recycling is, itself, a sustainable means of producing usable products
+For example, paper recycling\index{paper recycling} uses water for cleaning and de-inking processes.
+Glass recycling\index{glass recycling} requires high-temperature heat for melting processes.
+Whether recycling\index{recycling} is, itself, a sustainable means of producing usable products
 depends on the strong\index{strong sustainability} or
-weak sustainability\index{weak sustainability} of the recycling process.
+weak sustainability\index{weak sustainability} of the recycling\index{recycling} process.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Economist Nicholas Georgescu-Roegen proposed a fourth law of thermodynamics,
-stating that complete recycling of matter is impossible~\cite{Georgescu-Roegen:1986aa}
+stating that complete recycling\index{recycling} of matter is impossible~\cite{Georgescu-Roegen:1986aa}
 because material resources are subject to irreversible degradation.
 (Georgescu-Roegen was arguing by analogy from the second law of thermodynamics,
 which states that all forms of energy are subject to irreversible degradation.)
 Later, physicist and economist Robert Ayres correctly
 argued that the second law of thermodynamics applies only to energy
 (not to materials) and that
-a stable, steady-state recycling system could exist
+a stable, steady-state recycling\index{recycling} system could exist
 provided that two conditions are met:
 (a)~a large stockpile of waste\index{waste} material exists 
     (so energy to obtain the waste\index{waste} material is small) and
@@ -620,8 +620,7 @@ provided that two conditions are met:
     at sufficient rate for reprocessing of discarded material~\cite{Ayres:1999}.
 
 The importance of energy is evident,
-even in a debate about the viability of recycling!
-
+even in a debate about the viability of recycling\index{recycling}!
 \end{mcframe}
 
 Substitution\index{substitution} in manufacturing or production is the process of replacing
@@ -1147,7 +1146,7 @@ Another way to slow down the inevitable march of time
 along logistic curves for finite resources is to transition
 economies to use fewer resources per unit of GDP produced,
 that is, to reduce the resource intensity of economic activity~\Rparen{}.
-Reduction of resource intensity of economic activity is sometimes called dematerialization.
+Reduction of resource intensity of economic activity is sometimes called dematerialization\index{dematerialization}.
 Reducing \mft{R} will reduce resource consumption but only if
 GDP stays constant or grows more slowly than the
 rate at which \mft{R} decreases.
@@ -1437,7 +1436,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Do the weak sustainability\index{weak sustainability} estimates
         of Figure~\ref{fig:WeakSustEnergyGraph} change?
 
-  \item Choose a material (not germanium or zinc)
+  \item Choose a material (not germanium or zinc\index{zinc (ZN)})
         from the European Commission\index{European Commission} list of critical raw materials\index{critical raw materials (CRMs)}
         in Table~\ref{tab:CRMs}.
         Do today's consumption rates of that material meet weak\index{weak sustainability}
@@ -1457,12 +1456,12 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Which produces better estimates of the time to exhaust nonrenewable resources?
         Why?
 
-  \item Visit a recycling center and assess its sustainability.
+  \item Visit a recycling center\index{recycling center} and assess its sustainability.
         Is the center an example 
         of strong sustainability\index{strong sustainability}, 
         weak sustainability\index{weak sustainability}, or 
         neither?
-        Where is are the recycling processes consuming energy or other materials?
+        Where is are the recycling\index{recycling} processes consuming energy or other materials?
         Is the energy fossil-based or renewable?
 
   \item Research the CAFE\index{corporate average fuel economy (CAFE)}
@@ -1481,7 +1480,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Does using a lighter part have energy implications over the life of the
         vehicle?
         Are there issues with corrosion or UV exposure?
-        Are there disposal or recycling issues?
+        Are there disposal or recycling\index{recycling} issues?
         In your view, which material is more environmentally friendly?
         Where do you get data to answer these questions?
         Where do you draw boundaries?
