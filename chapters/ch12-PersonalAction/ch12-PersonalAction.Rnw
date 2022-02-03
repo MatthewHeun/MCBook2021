@@ -547,7 +547,7 @@ allowing you to optimize your gardening for minimum environmental impact.
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/kentucky_bluegrass.jpeg}
-         \caption{Kentucky bluegrass farming.}
+         \caption{Kentucky bluegrass\index{Kentucky bluegrass} farming.}
          \label{fig:kentucky_bluegrass}
      \end{subfigure}
      \hfill
