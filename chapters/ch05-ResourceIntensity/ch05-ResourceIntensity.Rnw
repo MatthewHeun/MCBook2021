@@ -319,8 +319,8 @@ For example, the transition to a renewable energy future
 (Section~\ref{sec:low_carbon_transition})
 depends on a large number of critical materials, 
 outlined in a recent International Energy Agency (IEA)\index{International Energy Agency (IEA)} report~\cite{IEA:2021wt}.
-The point isn't which materials are critical for any given economy or sector,
-it's that all sectors of all economies depend upon a large number of raw materials.
+The point isn't which materials are critical for any given economy or sector;
+the point is that all sectors of all economies depend upon a large number of raw materials.
 
 <<CRMs, results="asis">>=
 crm_df <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Critical Raw Materials.xlsx"), 
@@ -373,7 +373,7 @@ those bands are not appreciably growing or shrinking over time.
 On the other hand, the per-GDP extraction rate of biomass\index{biomass extraction} is declining rapidly.
 The world's economies are dematerializing\index{dematerialization}, but 
 only because we're using less biomass\index{biomass} per unit of GDP than ever before.
-We're using nearly the same amount (mass) of construction minerals\index{construction minerals},
+We are using nearly the same amount (mass) of construction minerals\index{construction minerals},
 ores, and fossil fuels\index{fossil fuels}
 per GDP as we ever have.
 And because GDP is growing, total material use grows, too.
