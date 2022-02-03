@@ -857,7 +857,7 @@ United States Department of Commerce, Bureau of Economic Analysis: \\
 \emph{Energy, Economic, and Environmental Scenarios}:
 a short, open, online course at IST-Lisbon
 about the relationships
-among economic growth, energy efficiency, and greenhouse gas emissions \\
+among economic growth, energy efficiency, and greenhouse gas emissions\index{CO$_2$ emissions} \\
 \href{https://courses.elearning.tecnico.ulisboa.pt/courses/course-v1:MOOCs+exergyX+2022/about}{courses.elearning.tecnico.ulisboa.pt/courses/course-v1:MOOCs+exergyX+2022/about}
 
 
@@ -992,14 +992,15 @@ among economic growth, energy efficiency, and greenhouse gas emissions \\
 \item Social, economic, and environmental policies have effects that are 
       both dollar quantifiable and non-dollar quantifiable. 
       For example, air travel\index{air travel} results in substantial greenhouse gas emissions\index{CO$_2$ emissions!air travel}.
-      Therefore, banning air travel\index{air travel} might substantially reduce greenhouse
-      gas emissions. 
+      Therefore, banning air travel\index{air travel} might substantially reduce
+      greenhouse gas emissions.\index{CO$_2$ emissions} 
       Furthermore, an air-travel ban is likely to decrease GDP because movement 
       of people and goods would be more difficult.
       Lastly, not being able to travel by air would make visiting friends and family
       in far-away places difficult or impossible.
       A reduction in GDP is dollar quantifiable. 
-      A reduction in greenhouse gases is not given in dollars but could (arguably)
+      A reduction in greenhouse gas emissions\index{CO$_2$ emissions}
+      is not given in dollars but could (arguably)
       be given an equivalent dollar value.
       What about being able to visit friends and family? Is that quantifiable in dollars?
       How should we evaluate choices and policy prescriptions whose effects are 

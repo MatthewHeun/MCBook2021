@@ -439,7 +439,7 @@ the provide natural illumination.
 The ideal building envelope\index{building envelope} would
 eliminate both heat loss in the winter and heat gain in the summer via
 perfect insulation\index{insulation} and
-windows\index{window} that neither conduct heat nor pass radiation.
+windows\index{window} that neither conduct heat nor pass thermal radiation\index{thermal radiation}.
 
 
 %..............................
@@ -578,7 +578,7 @@ heat loss in the winter and heat gain the summer.
 The perfect window\index{window} would provide illumination and
 neither conduct heat nor pass thermal radiation.
 But perfect insulation\index{insulation} is not possible, and all windows\index{window} conduct heat and
-pass thermal radiation.
+pass thermal radiation\index{thermal radiation}.
 In fact, windows\index{window} are typically worse insulators than walls and roofs,
 owing to thin glazing.
 Therefore, heating systems and air conditioners\index{air conditioners}
@@ -606,7 +606,7 @@ which is the inverse of an R-value\index{R-value}.
 Typical U-factors\index{U-factor} for windows\index{window} are 0.2--1.2 BTU/hr$\cdot$ft$^2\cdot$\degF.
 (Corresponding window\index{window} R-values\index{R-value} are 5--0.83 hr$\cdot$ft$^2\cdot$\degF/BTU.)
 Lower U values are more insulative.
-Heat gain from solar radiation is quantified by the
+Heat gain from solar radiation\index{solar radiation} is quantified by the
 \textbf{solar heat gain coefficient (SHGC)}\index{solar heat gain coefficient (SHGC)},
 the ratio of solar energy that enters the room to
 solar energy incident upon the window\index{window}.
@@ -718,12 +718,14 @@ and
 %++++++++++++++++++++++++++++++
 
 Water heating is the primary source of energy demand for hygiene\index{hygiene} in households.
-The efficiency of water heaters is quantified by a \textbf{Uniform Energy Factor (UEF)}\index{Uniform Energy Factor (UEF)}, 
+The efficiency of water heaters\index{water heater} is
+quantified by a \textbf{Uniform Energy Factor (UEF)}\index{Uniform Energy Factor (UEF)}, 
 a measure of energy required to deliver warm water 
-(in the first hour for tank-style water heaters and as a rate for tankless water heaters).
-Water heaters are binned by size (very small, low, medium, and high) and
+(in the first hour for tank-style water heaters\index{water heater!taks-style} and
+as a rate for tankless water heaters\index{water heater!tankless}).
+Water heaters\index{Water heater} are binned by size (very small, low, medium, and high) and
 rated within each bin.
-High-efficiency water heaters tend to be more expensive. 
+High-efficiency water heaters\index{water heater} tend to be more expensive. 
 Thus, a sustainability challenge that emerges from water heating\index{sustainability challenges!water heating} 
 is ``how can we encourage home builders and home owners to install 
 high-efficiency units, despite high initial cost?''
@@ -763,8 +765,8 @@ In contrast, efficacies are ratios of energy service\index{energy service} outpu
 Like intensities, efficacies have different units in the numerator and the denominator; 
 see Section~\ref{sec:resource_intensity_definitions}.
 
-Lamps can emit both visible and nonvisible radiation.
-But (most) people don't buy lamps for their ability to emit nonvisible radiation.
+Lamps can emit both visible\index{visible radiation} and nonvisible radiation\index{nonvisible radiation}.
+But (most) people don't buy lamps for their ability to emit nonvisible radiation\index{nonvisible radiation}.
 They buy lamps for the energy service\index{energy service} they provide: light!
 \textbf{Lighting efficacy}\index{lighting efficacy} is the ratio of visible light output 
 (the energy service\index{energy service}, measured in lumens) 
