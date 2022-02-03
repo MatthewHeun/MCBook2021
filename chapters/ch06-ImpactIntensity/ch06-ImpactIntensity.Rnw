@@ -77,7 +77,7 @@ CO$_2$ emissions (from burning fossil fuels)\index{CO$_2$ emissions!fossil fuel}
 desertification\index{desertification}
 (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and
 species loss\index{species loss} (due to habitat loss\index{habitat loss},
-environmental toxins, and over-exploitation).
+environmental toxins, and overexploitation).
 With reference to a few of the critical materials in Table~\ref{tab:CRMs},
 other examples of environmental impacts caused by resource extraction\index{resource extraction} and consumption include:
 %
@@ -289,7 +289,7 @@ But how?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 There are at least seven often-discussed options for
-transitioning to a low carbon energy supply:
+transitioning to a low-carbon energy supply:
 (a) carbon capture and storage,
 (b) carbon sequestration\index{carbon sequestration},
 (c) carbon takeback obligation (CTBO)\index{carbon takeback obligation (CTBO)},
@@ -397,16 +397,16 @@ computers, electronics, and other products)
 out of landfills and 
 contaminants out of the environment.
 
-The climate change\index{climate change} equivalent of a product takeback is the carbon takeback. 
-Under a CTBO, fossil fuel\index{fossil fuels} producers and importers would be required 
+The climate-change\index{climate change} equivalent of a product takeback is the carbon takeback. 
+Under a CTBO, fossil-fuel\index{fossil fuels} producers and importers would be required 
 to permanently sequester the CO$_2$ emitted from the fossil fuels they sell or import.
 Industries that emit greenhouse gases\index{CO$_2$ emissions!industrial} (cement making, for example)
 would also be required to sequester their emissions.
 A CTBO does not specify how the sequestration must occur,
 but it specifies who is obliged to perform the sequestration\index{carbon sequestration}. 
-Under a CTBO, fossil fuel\index{fossil fuels} producers and other emitting industries
+Under a CTBO, fossil-fuel\index{fossil fuels} producers and other emitting industries
 would be free to pass the cost of carbon sequestration\index{carbon sequestration}
-to fossil fuel\index{fossil fuels} users and other product purchasers (cement buyers, for example),
+to fossil-fuel\index{fossil fuels} users and other product purchasers (cement buyers, for example),
 thereby internalizing the cost of CO$_2$ emissions\index{CO$_2$ emissions} in the economy.
 Consumers would still be free to purchase and use fossil fuels\index{fossil fuels}, 
 but under a CTBO, the cost of externalities\index{negative externality} would be evident
@@ -416,7 +416,7 @@ A progressive CTBO could be phased over several years.
 In the first years, only, say, 10\% of emitted CO$_2$ would need to be sequestered.
 A few years later, 20\%.
 Then 30\%.
-Eventually, fossil fuel\index{fossil fuels} producers and other emitting industries
+Eventually, fossil-fuel\index{fossil fuels} producers and other emitting industries
 would need to be sequester 100\% of the
 greenhouse gases\index{CO$_2$ emissions!fossil fuel} emitted from the use of their product.
 
@@ -479,7 +479,7 @@ If the energy required to construct nuclear energy\index{nuclear energy} plants
 and refine uranium\index{uranium} comes from fossil fuels\index{fossil fuels}, 
 significant CO$_2$ emissions\index{CO$_2$ emissions}
 will result from the transition to nuclear electricity\index{nuclear electricity}.
-An additional consideration is the availability of uranium\index{uranium} resources,
+An additional consideration is the availability of nuclear-fuel resources,
 the topic of \ref{project:nuclear_resources}.
 
 
@@ -490,7 +490,7 @@ the topic of \ref{project:nuclear_resources}.
 
 In lieu of extracting CO$_2$ from the atmosphere\index{atmosphere},
 we could stop emitting CO$_2$\index{CO$_2$ emissions} from
-fossil fuel combustion\index{fossil fuels!combustion} in the first place!
+fossil-fuel combustion\index{fossil fuels!combustion} in the first place!
 One way is to transition away from fossil fuels\index{fossil fuels} 
 to the energy mix used in the first half of the 19$^{\text{th}}$ century,
 namely exclusive use of traditional biofuels\index{traditional biofuel} (wood and wood products)
@@ -511,7 +511,7 @@ provided that particulate matter\index{particulate matter (PM)} emissions are mi
 However, biomass\index{biomass} by itself
 is not electricity\index{electricity} or liquid fuel.
 A conversion to biomass\index{biomass} for the world's primary energy\index{primary energy} supply would also require 
-worldwide replacement of today's fossil fuel electricity\index{fossil fuel electricity} generation infrastructure
+worldwide replacement of today's fossil-fuel electricity\index{fossil fuel electricity} generation infrastructure
 with a fleet of biomass power plants\index{biomass power plant}.
 And conversion to biomass\index{biomass} would require build-out 
 of a biomass\index{biomass}-to-liquid-fuels conversion 
@@ -519,7 +519,7 @@ infrastructure that does not yet exist.
 Finally, conversion to biomass\index{biomass} will be accompanied by a reduction 
 in EROI\index{energy return on investment (EROI)}; 
 see Section~\ref{sec:masterE}.
-The EROI\index{energy return on investment (EROI)} for fossil fuelsfossil fuel electricity\index{fossil fuel electricity}
+The EROI\index{energy return on investment (EROI)} for fossil-fuel electricity\index{fossil fuel electricity}
 is mostly greater than 20, while
 the EROI\index{energy return on investment (EROI)} for corn ethanol\index{corn ethanol}
 is typically less than 2~\cite{Hammerschlag:2006uf};
@@ -543,7 +543,7 @@ with at least four large challenges.
 First, WWS\index{wind, water, and solar (WWS)} energy resources produce electricity, not liquid fuels, and 
 large changes will be needed.
 For example, today's transportation sector is almost exclusively powered 
-by liquid fossil fuel electricity\index{fossil fuels!liquid}
+by liquid fossil-fuel electricity\index{fossil fuels!liquid}
 (gasoline\index{gasoline} and diesel) and illustrates two options for 
 transitioning from today's energy system to a WWS\index{wind, water, and solar (WWS)} energy system.
 The first option is to replace
@@ -577,7 +577,7 @@ already included on lists of critical raw materials\index{critical raw materials
 see Section~\ref{sec:resources_strong_sustainability}. 
 Gravitational potential energy could supply energy storage with nearly 100\% 
 round-trip efficiency.
-Options for potential energy storage materials include 
+Options for potential energy-storage materials include 
 water (with a pumped hydro plant)\index{pumped hydro}
 or concrete with a system such as Energy Vault~\cite{Energy-Vault:uz}.
 
@@ -831,7 +831,7 @@ expanded use of fossil fuels\index{fossil fuels} (\rateXCOtwo{}~>~0).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The IPARX identity\index{IPARX identity}
-appears to be a straight multiplication of independent terms
+appears to be a straightforward multiplication of independent terms
 (\:\!\mft{P}, \mft{A}, \mft{R}, and \mft{X}\:).
 But it is not.
 There are interactions among the terms that deserve attention.
@@ -945,7 +945,7 @@ as it has been for 220 years.
 (Recall from Section~\ref{sec:energy_intensity_of_the_economy}, 
 however, that \REp{} is falling over time primarily because
 per-dollar consumption of sustainable biomass\index{biomass} is falling over time.
-Ironically, unsustainable fossil fuel\index{fossil fuels} consumption is more constant 
+Ironically, unsustainable fossil-fuel\index{fossil fuels} consumption is more constant 
 than sustainable biomass\index{biomass} consumption over time, per dollar of GDP;
 see Figure~\ref{fig:per_gdp_material_use}.)
 
@@ -957,7 +957,7 @@ can we use improved economic effectiveness
 brought about by rising energy efficiency\index{energy efficiency})
 to reduce environmental impacts (\:\!\mft{I} in Equation~\ref{eq:IPARX}), 
 CO$_2$ emissions\index{CO$_2$ emissions} being the prime example)?
-It certainly helps, as decreasing \REp{}
+It certainly helps, because decreasing \REp{}
 puts downward pressure on \ICOtwo{} in Equation~\ref{eq:IPARX}.
 However, recent research indicates that rising energy efficiency\index{energy efficiency}
 (and declining~\REp{})
@@ -1057,17 +1057,18 @@ collectively and individually.
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Edward Humes, \emph{Garbology: Our dirty love affair with trash}. New York: Avery, 2012. \\
+
+\noindent 
 Daniel Yergin, \emph{The new map: Energy, climate, and the clash of nations}.
 London: Penguin, 2020. \\
-
-\noindent Edward Humes, \emph{Garbology: Our dirty love affair with trash}. New York: Avery, 2012.
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
+Energy Vault simulation  \\ 
+\href{https://www.vimeo.com/335818817}{www.vimeo.com/335818817}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1088,7 +1089,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       reports ``only'' 18 oil
       spills larger than 700 tonnes for the period 2010--2019 versus 245 in the 1970s.) 
       Other examples include environmental impacts from hydraulic fracking\index{hydraulic fracking}
-      fluids; air quality issues associated with burning fossil fuels such\index{fossil fuels} as
+      fluids; air-quality issues associated with burning fossil fuels such\index{fossil fuels} as
       soot, smog\index{smog}, and ozone\index{ozone}; and soil contamination from leaking underground 
       fuel-storage tanks.
       There is a tendency to approach each of these impacts
@@ -1101,16 +1102,6 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       technologies.
       How do we manage tradeoffs among different types of solutions?
       
-\item Energy historian Roger Fouquet\index{Fouquet, Roger} found that it has taken, historically, on average, 50 years
-      to transition from one energy source to another~\cite[p.~6595]{Fouquet:2010tq}.
-      At this moment in time, it is unlikely that humanity has 50 years
-      to effect a transition to renewable sources of energy
-      to avoid irreversible effects of climate change\index{climate change}.
-      What should we do?
-      Give up on mitigation and focus on adaptation?
-      Find a way to do better than the 50-year average duration for an energy transition?
-      If so, what are those ways? 
-       
 \item Expanding on the issues raised in the previous questions, 
       nuclear power\index{nuclear energy} has had its own environmental issues. 
       Disasters such Fukushima Daiichi\index{Fukushima Daiichi disaster},
@@ -1133,7 +1124,8 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       (``is this form of energy sustainable and, if so, for how long?'').
       Do you lean more to the  cost/benefit perspective or the sustainability 
       perspective and why? 
-      Are you using a weak\index{weak sustainability} or strong sustainability\index{strong sustainability} criterion?
+      Are you using a weak\index{weak sustainability} or strong 
+      sustainability\index{strong sustainability} criterion?
       
 \item Some people object to wind turbines\index{wind turbine} because they kill birds\index{bird}. 
       The truth is, all human structures kill birds\index{bird}. 
@@ -1147,6 +1139,17 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       What about trees or the wind itself?
       What would your assumptions have to be to answer yes to any of these questions?
 
+\item Energy historian Roger Fouquet\index{Fouquet, Roger} found that it has taken, 
+      historically, on average, 50 years
+      to transition from one energy source to another~\cite[p.~6595]{Fouquet:2010tq}.
+      At this moment in time, it is unlikely that humanity has 50 years
+      to effect a transition to renewable sources of energy
+      to avoid irreversible effects of climate change\index{climate change}.
+      What should we do?
+      Give up on mitigation and focus on adaptation?
+      Find a way to do better than the 50-year average duration for an energy transition?
+      If so, what are those ways? 
+       
 \item Which would you prefer, a biomass\index{biomass} energy system or 
       a water-wind-solar (WWS)\index{wind, water, and solar (WWS)}
       energy system? Why?
@@ -1237,7 +1240,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
   \item Research the Petra Nova\index{Petra Nova} 
         carbon capture and storage (CCS)\index{carbon capture and storage (CCS)} plant.
         What is the feasibility of replicating the Petra Nova scheme
-        to all fossil fuel electricity\index{fossil fuel electricity} power plants in the U.S.?
+        to all fossil-fuel electricity\index{fossil fuel electricity} power plants in the U.S.?
         In the World?
         What has been the cost to implement the Petra Nova plant?
         Who paid that cost?
@@ -1310,7 +1313,7 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         \begin{enumerate} [label=(\arabic*)]
 
           \item the rebound effects\index{rebound effect}
-                from energy efficiency\index{energy efficiency} improvements are significant 
+                from energy-efficiency\index{energy efficiency} improvements are significant 
                 and limit the potential for decoupling energy consumption from economic growth; 
 
           \item the contribution of energy to productivity\index{productivity} improvements and economic growth 
@@ -1320,7 +1323,8 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
   
           \item sustainability is incompatible with continued economic growth in rich countries; and 
   
-          \item a zero-growth economy\index{steady-state economy} is incompatible with a fractional reserve banking system.
+          \item a zero-growth economy\index{steady-state economy} is incompatible with a 
+                fractional-reserve banking system.
 
         \end{enumerate}
 
@@ -1340,10 +1344,12 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         Write a paper that discusses each term and suggests your favored policy 
         to reduce the magnitude of each term. 
         Next look into the
-        \href{https://www.climateinteractive.org/tools/en-roads/}{EnROADS climate change solutions simulator}\index{EnROADS}
+        \href{https://www.climateinteractive.org/tools/en-roads/}
+        {EnROADS climate-change solutions simulator}\index{EnROADS}
         and find its policy options for addressing climate change\index{climate change}. 
         Which of your favored policies appears in the EnROADS\index{EnROADS} options?
-        Now choose a suite of policies in EnROADS\index{EnROADS} that includes as many of your favored policies as possible.
+        Now choose a suite of policies in EnROADS\index{EnROADS} that includes as
+        many of your favored policies as possible.
         Can you achieve less than 1.5~\degC{} of warming?
         In the paper, describe the suite of policies you chose
         and consider their technical and political feasibilities.
@@ -1376,7 +1382,8 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         (reduced energy consumption and CO$_2$ emissions\index{CO$_2$ emissions})
         of energy efficiency\index{energy efficiency}.
         Research green revolving funds. 
-        Where have they been successful to reduce energy consumption and carbon emissions\index{CO$_2$ emissions!reduction}?
+        Where have they been successful to reduce energy consumption and
+        carbon emissions\index{CO$_2$ emissions!reduction}?
         Where have they failed?
         What are the factors that make GRFs successful?
         Conversely, what factors lead to failure?
