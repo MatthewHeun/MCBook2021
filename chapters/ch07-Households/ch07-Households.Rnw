@@ -375,7 +375,7 @@ makes a significant difference to transportation energy demand.
 When buying a home, some purchasers can choose among 
 urban, suburban, and rural locations, 
 with important sustainability implications.
-Living in an urban center can reduce average transport distances. 
+Living in an urban center can reduce average transportation distances. 
 Living in the suburbs or in rural areas can mean
 increased fuel use and CO$_2$ emissions for transportation\index{CO$_2$ emissions!transportation}. 
 
@@ -415,12 +415,12 @@ depending on humidity and clothing\index{clothing}.
 
 Residential heating and cooling reduces the temperature variation
 inside a dwelling compared to the outdoors,
-providing thermal comfort to the occupants 
+providing thermal comfort\index{thermal comfort} to the occupants 
 to enable work, play, dining, and entertainment.
 Figure~\ref{fig:average_residential_energy} shows that
 on average across the U.S.,
 thermal comfort\index{thermal comfort}
-(that is, Space heating\index{space heating} and Space cooling\index{space cooling})
+(that is, space heating\index{space heating} and space cooling\index{space cooling})
 is the purpose of 
 54.4\% of all residential energy consumption.
 
@@ -430,13 +430,13 @@ is the purpose of
 \label{sec:building_envelope} \index{building envelope}
 %..............................
 
-The purpose of a building envelope
+The purpose of a building envelope\index{building envelope}
 (roof, walls, windows, and base of a dwelling)
 is to shield occupants from outside weather and
 to maintain dry and comfortable conditions indoors.
-Windows\index{windows} are an important part of any building's envelope, because
+Windows\index{windows} are an important part of any building's envelope\index{building envelope}, because
 the provide natural illumination.
-The ideal building envelope would
+The ideal building envelope\index{building envelope} would
 eliminate both heat loss in the winter and heat gain in the summer via
 perfect insulation\index{insulation} and
 windows that neither conduct heat nor pass radiation.
@@ -473,10 +473,10 @@ Most air conditioners consume electricity\index{electricity} to perform their co
 causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants. 
 
 
-%..............................
-\paragraph{Hygiene}
+%------------------------------
+\subsubsection{Hygiene}
 \label{sec:hygiene}\index{hygiene}
-%..............................
+%------------------------------
 
 Dwellings consume significant energy and water
 for showers, dish washers, toilets, and clothes washers\index{clothes washer} and dryers\index{clothes dryer}.
@@ -495,10 +495,10 @@ Figure~\ref{fig:average_residential_energy} shows that hygiene\index{hygiene}
 of U.S.\ final energy\index{final energy} consumption in 2015.
 
 
-%..............................
-\paragraph{Lighting}
+%------------------------------
+\subsubsection{Lighting}
 \label{sec:lighting}
-%..............................
+%------------------------------
 
 Indoor lighting\index{indoor lighting} provides illumination for rooms,
 typically by consuming electricity\index{fossil fuel electricity} and emitting CO$_2$ if fossil-fuel sources are used.
@@ -568,7 +568,7 @@ without the drawbacks?''
 \paragraph{Building envelope} 
 %..............................
 
-The ideal building envelope would
+The ideal building envelope\index{building envelope} would
 eliminate both heat loss in the winter and heat gain in the summer via
 perfect insulation\index{insulation}.
 Like walls and roofs, it would be desirable for windows to eliminate
@@ -625,7 +625,7 @@ However, the home will embody more energy and carbon,
 because many insulation\index{insulation} types
 are energy-intensive to manufacture (especially foam). 
 A sustainability challenge associated with embodied energy\index{sustainability challenges!embodied energy} 
-is ``how do we ensure highly-insulative building envelopes
+is ``how do we ensure highly-insulative building envelopes\index{building envelope}
 with minimal embodied energy?''
 
 
@@ -883,7 +883,7 @@ forced air, allowing thermostats\index{thermostat} to be set lower,
 thereby consuming less energy for the same level of comfort.
 (This is an example of the benefit 
 of focusing on energy service efficacy\index{energy service efficacy},
-in this case thermal comfort per BTU,
+in this case thermal comfort\index{thermal comfort} per BTU,
 instead of energy efficiency\index{energy efficiency};
 see page~\pageref{page:efficiency_efficacy}.)
 
@@ -895,13 +895,13 @@ beneficial for reducing heating and cooling
 energy consumption when schedules deviate from programmed timetables.
 
 Third, high-efficiency heating and cooling systems
-can provide the same thermal comfort
+can provide the same thermal comfort\index{thermal comfort}
 with less energy consumed.
 Increased residential heating and cooling 
 efficiency\index{efficiency!heating and cooling!residential}
 (that is, providing the same comfort with less energy) 
 can be obtained
-by improving the building envelope or
+by improving the building envelope\index{building envelope} or
 by improving the efficiency of heating and air-conditioning\index{air-conditioning}.
 Standards that mandate high efficiency
 are one way to ensure that efficiency of heating and cooling systems
