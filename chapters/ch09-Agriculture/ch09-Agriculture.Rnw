@@ -591,7 +591,7 @@ amounts of N$_2$O, a very potent GHG.
 The paragraphs below look at two very important greenhouse gases, carbon
 dioxide~(CO$_2$) and methane~(CH$_4$).
 
-<<food_ghg, fig.scap="Food-related greenhouse gas emissions vs.\\ time by life-cycle stage", fig.cap="U.S.\\ food-related greenhouse gas emissions\\index{CO$_2$ emissions!food} vs.\\ time by life-cycle stage. ``LULUC'' is land use and land-use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
+<<food_ghg, fig.scap="Food-related greenhouse-gas emissions vs.\\ time by life-cycle stage", fig.cap="U.S.\\ food-related greenhouse-gas emissions\\index{CO$_2$ emissions!food} vs.\\ time by life-cycle stage. ``LULUC'' is land use and land-use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
 food_emissions_US <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Crippa et al 2021.xlsx"), 
                                             sheet = "data to plot") %>% 
   tidyr::pivot_longer(-`System Stage`, names_to = "Year", values_to = "co2_emissions") %>% 
@@ -650,7 +650,7 @@ food_emissions_per_kcal %>%
 @
 
 
-<<GHG_food, fig.height=5, fig.scap="Food greenhouse gas emissions for various foods", fig.cap="U.S.\\ food greenhouse gas emissions\\index{CO$_2$ emissions!food} for various foods. \\emph{Source}: \\citet[Figure~3]{Heller_2014}.">>=
+<<GHG_food, fig.height=5, fig.scap="Food greenhouse-gas emissions for various foods", fig.cap="U.S.\\ food greenhouse-gas emissions\\index{CO$_2$ emissions!food} for various foods. \\emph{Source}: \\citet[Figure~3]{Heller_2014}.">>=
 food_emissions_total <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Food CO2.xlsx"), 
                                            sheet = "data to plot") %>% 
   dplyr::arrange(dplyr::desc(`kg CO2 eq/capita/year`))
