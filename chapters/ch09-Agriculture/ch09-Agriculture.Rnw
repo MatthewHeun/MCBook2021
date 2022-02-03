@@ -583,13 +583,12 @@ is ``how can food waste\index{food waste} be eliminated?''
 \subsection{Greenhouse gas emissions}\index{CO$_2$ emissions}
 %++++++++++++++++++++++++++++++
 
-Globally, food and land use account for 23\% of GHG emissions~\cite{IPCC:2018aa}.
-\index{greenhouse gases}
+Globally, food and land use account for 23\% of GHG emissions~\cite{IPCC:2018aa}.\index{greenhouse gas}
 In the U.S., soil management accounts for over half of agricultural GHG emissions~\cite{USEPA:2021uj}.
 Over-application of synthetic nitrogen-based fertilizers releases significant
 amounts of N$_2$O, a very potent GHG.
-The paragraphs below look at two very important greenhouse gases, carbon
-dioxide~(CO$_2$) and methane~(CH$_4$).
+The paragraphs below look at two very important greenhouse gases\index{greenhouse gas}, 
+carbon dioxide~(CO$_2$)\index{carbon dioxide~(CO$_2$)} and methane~(CH$_4$)\index{methane~(CH$_4$)}.
 
 <<food_ghg, fig.scap="Food-related greenhouse-gas emissions vs.\\ time by life-cycle stage", fig.cap="U.S.\\ food-related greenhouse-gas emissions\\index{CO$_2$ emissions!food} vs.\\ time by life-cycle stage. ``LULUC'' is land use and land-use change. \\emph{Source}: \\citet{Crippa:2021tp}.">>=
 food_emissions_US <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", "Crippa et al 2021.xlsx"), 
@@ -622,7 +621,7 @@ food_emissions_US %>%
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Convenient calculators for greenhouse emissions from food production
+Convenient calculators for greenhouse gas emissions\index{CO$_2$ emissions} from food production
 can be found online \cite{CleanMetrics:aa}.
 Factors such as transport distance and wastage percentages are important
 for determining GHG emissions from food.
@@ -1115,7 +1114,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       Or are we eating natural gas\index{natural gas}?
       
 \item Use a food emissions calculator (such as the one suggested in this chapter~\cite{CleanMetrics:aa})
-      to estimate the greenhouse emissions from your food choices over the course of a week.
+      to estimate the greenhouse gas\index{CO$_2$ emissions!food} emissions from your food choices over the course of a week.
       Compare to your peers.
       How do your food-related emissions compare to your emissions from transportation-related activities?
       Guided by the figures and advice in this chapter, 

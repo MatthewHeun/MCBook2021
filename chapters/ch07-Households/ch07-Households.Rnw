@@ -439,7 +439,7 @@ the provide natural illumination.
 The ideal building envelope\index{building envelope} would
 eliminate both heat loss in the winter and heat gain in the summer via
 perfect insulation\index{insulation} and
-windows\index{window} that neither conduct heat nor pass radiation.
+windows\index{window} that neither conduct heat nor pass thermal radiation\index{thermal radiation}.
 
 
 %..............................
@@ -576,9 +576,9 @@ perfect insulation\index{insulation}.
 Like walls and roofs, it would be desirable for windows\index{windows} to eliminate
 heat loss in the winter and heat gain the summer.
 The perfect window\index{window} would provide illumination and
-neither conduct heat nor pass thermal radiation.
+neither conduct heat nor pass thermal radiation\index{thermal radiation}.
 But perfect insulation\index{insulation} is not possible, and all windows\index{window} conduct heat and
-pass thermal radiation.
+pass thermal radiation\index{thermal radiation}.
 In fact, windows\index{window} are typically worse insulators than walls and roofs,
 owing to thin glazing.
 Therefore, heating systems and air conditioners\index{air conditioners}
@@ -606,7 +606,7 @@ which is the inverse of an R-value\index{R-value}.
 Typical U-factors\index{U-factor} for windows\index{window} are 0.2--1.2 BTU/hr$\cdot$ft$^2\cdot$\degF.
 (Corresponding window\index{window} R-values\index{R-value} are 5--0.83 hr$\cdot$ft$^2\cdot$\degF/BTU.)
 Lower U values are more insulative.
-Heat gain from solar radiation is quantified by the
+Heat gain from solar radiation\index{solar radiation} is quantified by the
 \textbf{solar heat gain coefficient (SHGC)}\index{solar heat gain coefficient (SHGC)},
 the ratio of solar energy that enters the room to
 solar energy incident upon the window\index{window}.
@@ -718,12 +718,14 @@ and
 %++++++++++++++++++++++++++++++
 
 Water heating is the primary source of energy demand for hygiene\index{hygiene} in households.
-The efficiency of water heaters is quantified by a \textbf{Uniform Energy Factor (UEF)}\index{Uniform Energy Factor (UEF)}, 
+The efficiency of water heaters\index{water heater} is
+quantified by a \textbf{Uniform Energy Factor (UEF)}\index{Uniform Energy Factor (UEF)}, 
 a measure of energy required to deliver warm water 
-(in the first hour for tank-style water heaters and as a rate for tankless water heaters).
-Water heaters are binned by size (very small, low, medium, and high) and
+(in the first hour for tank-style water heaters\index{water heater!taks-style} and
+as a rate for tankless water heaters\index{water heater!tankless}).
+Water heaters\index{Water heater} are binned by size (very small, low, medium, and high) and
 rated within each bin.
-High-efficiency water heaters tend to be more expensive. 
+High-efficiency water heaters\index{water heater} tend to be more expensive. 
 Thus, a sustainability challenge that emerges from water heating\index{sustainability challenges!water heating} 
 is ``how can we encourage home builders and home owners to install 
 high-efficiency units, despite high initial cost?''
@@ -763,8 +765,8 @@ In contrast, efficacies are ratios of energy service\index{energy service} outpu
 Like intensities, efficacies have different units in the numerator and the denominator; 
 see Section~\ref{sec:resource_intensity_definitions}.
 
-Lamps can emit both visible and nonvisible radiation.
-But (most) people don't buy lamps for their ability to emit nonvisible radiation.
+Lamps can emit both visible\index{visible radiation} and nonvisible radiation\index{nonvisible radiation}.
+But (most) people don't buy lamps for their ability to emit nonvisible radiation\index{nonvisible radiation}.
 They buy lamps for the energy service\index{energy service} they provide: light!
 \textbf{Lighting efficacy}\index{lighting efficacy} is the ratio of visible light output 
 (the energy service\index{energy service}, measured in lumens) 
@@ -971,7 +973,7 @@ using a cold-water cycle, and line drying clothes\index{clothing}.
 \label{sec:lighting_transition}
 %++++++++++++++++++++++++++++++
 
-After Edison's invention of the electric light\index{electric lamp},
+After Edison's\index{Edison, Thomas} invention of the electric light\index{electric lamp},
 filament-based incandescent lighting technology\index{incandescent lamp}
 dominated household lighting\index{lighting}.
 However, in recent years,
@@ -980,7 +982,7 @@ Light-Emitting Diode (LED) lamps\index{LED lamp} have revolutionized
 the lighting\index{lighting} industry and improved lighting efficacy\index{lighting efficacy} significantly.
 
 In the U.S., a transition to LED lamps\index{LED lamp} is well underway,
-with incandescent\index{incandescent lamp} and CFL lamps\index{CFL lamp} usually not available in stores.
+with incandescent\index{incandescent lamp} and CFL lamps\index{CFL lamp} usually unavailable in stores.
 The lighting\index{lighting} transition in the U.S.\ has been hastened
 by point-of-purchase subsidies for LED lamps\index{LED lamp}
 and by in-home energy-efficiency audits offered by utilities.
@@ -1073,7 +1075,7 @@ United States, 1999: \\
             from water heating\index{CO$_2$ emissions!water heating}),
       \item outlaw automatic dishwashers\index{dishwasher} (to reduce energy consumption for water heating),
       \item require all clothes washing\index{clothes washer}
-            to be done at laundromats (to reduce embodied energy\index{embodied energy}
+            to be done at laundromats\index{laundromat} (to reduce embodied energy\index{embodied energy}
             of clothes washers\index{clothes washer} in every home),
       \item require all homes to undergo an energy efficiency\index{energy efficiency}
             retrofit before going on the market to be sold
@@ -1089,7 +1091,7 @@ United States, 1999: \\
 \item Where should you invest in energy efficiency\index{energy efficiency} in your home or apartment?
 
 \item Why is nearly every suburban homeowner in the northern U.S.\
-      also a Kentucky bluegrass farmer?
+      also a Kentucky bluegrass\index{Kentucky bluegrass} farmer?
       What are the benefits and drawbacks of this arrangement? 
       What are the sustainability implications of this arrangement?
       
@@ -1103,12 +1105,13 @@ United States, 1999: \\
       Do you think that dwellings that increase either of these metrics should 
       be incentivized? Why or why not? What are your reasons?
       
-\item Negative externalities are costs borne by those who do not receive the benefits of
+\item Negative externalities\index{negative externality} are costs borne by those who do not receive the benefits of
       an activity. 
       For example, burning natural gas\index{natural gas} to heat a home releases CO$_2$
       (which harms everyone). 
-      Improving a home's energy efficiency\index{energy efficiency}, by reducing these externalized
-      costs, improves the well being of everyone. 
+      Improving a home's energy efficiency\index{energy efficiency}
+      improves the well being of everyone
+      by reducing the costs of these negative externalities\index{negative externality}. 
       Thus, ``all'' of us stand to benefit from energy efficiency\index{energy efficiency}. 
       What are some ways to provide resources for deep energy retrofits for those 
       who otherwise couldn't afford to do so?
@@ -1130,25 +1133,26 @@ United States, 1999: \\
 \item Notice that biomass\index{biomass} heating (for example, firewood\index{firewood}) is not included in 
       Figure~\ref{fig:EnergyConsAndHomeSize}. However, 
       RECS\index{Residential Energy Consumption Survey (RECS)}
-      Table CE 7.2 reports that wood heated 12.5 million housing units in
+      Table CE 7.2 reports that wood heated\index{wood heating} 12.5 million housing units in
       2015 (10.6\% of all housing units) and was 5.6\% of all BTUs used for
       heating. 
-      (For around 60\% of housing units wood is the main source of heat;
+      (For around 60\% of housing units wood\index{wood heating} is the main source of heat;
       for the other 40\% it's secondary.)
-      Wood heating can be carbon neutral\index{carbon neutral}. 
-      However, wood heating isn't exactly sustainable. 
+      Wood heating\index{wood heating} can be carbon neutral\index{carbon neutral}. 
+      However, wood heating\index{wood heating} isn't exactly sustainable. 
       It is sustainable only if not everyone does it. 
-      If everyone heated with wood, one result would be massive deforestation\index{deforestation}.
+      If everyone heated with wood\index{wood heating},
+      one result would be massive deforestation\index{deforestation}.
       Another might be greatly increased air pollution\index{pollution!air} (in the form of soot).
-      Should the use of wood heating be expanded or contracted? 
-      Who gets to (or has to) heat with wood and what emissions should be permitted?
+      Should the use of wood heating\index{wood heating} be expanded or contracted? 
+      Who gets to (or has to) heat with wood\index{wood heating} and what emissions should be permitted?
       How should such questions be decided?
-      What other considerations go into wood heating? 
+      What other considerations go into wood heating\index{wood heating}? 
       For example, who has access to forest lands? How much does wood cost?
-      What labor\index{labor} is required to obtain and use wood for heat?
+      What labor\index{labor} is required to obtain and use wood for heat?\index{wood heating}
       
-\item Figure~\ref{fig:EnergyConsAndHomeSize} also excludes ``district
-      steam'' and solar thermal heat sources.
+\item Figure~\ref{fig:EnergyConsAndHomeSize} also excludes ``district steam''\index{district steam heating}
+      and solar thermal heat\index{solar thermal heating} sources.
       Should such sources be promoted for sustainability? 
       What considerations affect their more widespread adoption?
       
@@ -1161,16 +1165,16 @@ United States, 1999: \\
       However, some categories of appliances do not have an efficiency rating. 
       What are some appliances that could be rated that are not?
       (See, for instance, \url{https://www.energystar.gov/productfinder/}.)
-      Vacuum cleaners, for example, are difficult to rate, in part, because defining 
+      Vacuum cleaners\index{vacuum cleaner}, for example, are difficult to rate, in part, because defining 
       how well they do their job (that is, the ``numerator'' of an efficacy
       metric) is difficult.
       (See the Energy Star\index{Energy Star} \emph{Market and Industry Scoping Report
-      on Vacuum Cleaners}, November 2011.)
+      on Vacuum Cleaners\index{vacuum cleaners}}, November 2011.)
       
 \item Should product longevity be factored into consumer-oriented energy efficiency\index{energy efficiency}
       ratings? If so, how? 
-      Do you think a vacuum cleaner that lasts 10 years is better
-      than a vacuum cleaner that lasts only 5 years? Under what conditions or
+      Do you think a vacuum cleaner\index{vacuum cleaner} that lasts 10 years is better
+      than a vacuum cleaner\index{vacuum cleaner} that lasts only 5 years? Under what conditions or
       assumptions?
       
 \item Should consumer appliances and household goods be required to contribute to a circular economy\index{circular economy}?
@@ -1205,7 +1209,7 @@ United States, 1999: \\
       higher system efficiencies and enhanced insulation\index{insulation}?
       You might want to investigate the passive house movement, 
       the living building challenge, net zero homes and 
-      Joe Lstiburek (Section~\ref{sec:stories_individual_actions}).
+      Joe Lstiburek\index{Lstiburek, Joeseph} (Section~\ref{sec:stories_individual_actions}).
       Given a fixed amount of money, 
       do you suppose there is more sustainability impact 
       in improving old homes or investing in new construction?
@@ -1257,8 +1261,8 @@ United States, 1999: \\
       Rank the costs of the windows\index{window}.
 
 \item If you are a college or university student,
-      write a letter to yourself that describes
-      the future household in which you want to live.
+      write a letter to your future self that describes
+      the household in which you want to live.
       What is the size of the dwelling?
       How many people will live in it?
       What are its sustainability features?
@@ -1273,8 +1277,10 @@ United States, 1999: \\
       make a sustainability-related benefits/drawbacks ledger for each policy, 
       being sure to identify areas where sustainability would be enhanced and 
       places where sustainability would be diminished.
-      Be sure to address all three corners of the sustainability triangle, 
-      social, environmental, and monetary.
+      Be sure to address all three areas of sustainability, 
+      social\index{social sustainability},
+      environmental\index{environmental sustainability}, and 
+      economic\index{economic sustainability}.
       After creating the ledger, 
       rethink your initial reactions to the policies.
       Now which policies would you welcome?
@@ -1282,29 +1288,30 @@ United States, 1999: \\
       Why?
       
       For example, if all clothes washing\index{clothes washer} were to be done at laundromats\index{laundromat}, 
-      there could be social benefits where laundromats would become a sort of ``town square''
+      there could be social benefits where laundromats\index{laundromat} would become a sort of ``town square''
       where neighbors meet to discuss municipal affairs as they do their laundry.
-      On the other hand, time lost to commuting to the laundromat might mean that other relationships suffer.
+      On the other hand, time lost to commuting to the laundromat\index{laundromat} might mean that other relationships suffer.
       If all clothes\index{clothing} were laundered at laundromats\index{laundromat}, 
       fewer washers\index{clothes washer} and dryers\index{clothes dryer}
       would be needed, resulting in less energy\index{embodied energy} and CO$_2$ embodied\index{embodied carbon} 
       in the stock of laundry equipment.
-      But laundromats will likely have larger commercial washers\index{clothes washer} and dryers\index{clothes dryer}. 
+      But laundromats\index{laundromat} will likely have larger
+      commercial washers\index{clothes washer} and dryers\index{clothes dryer}. 
       Would they be less energy efficient than smaller domestic washers\index{clothes washer} and dryers\index{clothes dryer}?
-      Many people will need to drive to laundromats to do laundry, increasing transport-related
+      Many people will need to drive to laundromats\index{laundromat} to do laundry, increasing transport-related
       CO$_2$ emissions\index{CO$_2$ emissions!transportation}.
       Finally, washers\index{clothes washer} and dryers\index{clothes dryer}
       would no longer be purchased, thereby saving money. 
-      But the marginal cost of a load of laundry may be higher at a laundromat compared 
+      But the marginal cost of a load of laundry may be higher at a laundromat\index{laundromat} compared 
       to home-based laundry. 
-      Is it a long-term financial benefit to do all your laundry at a laundromat? 
+      Is it a long-term financial benefit to do all your laundry at a laundromat\index{laundromat}? 
       How does the financial calculus change when the financial value of time is considered?
       
-\item Cascade (a Proctor \& Gamble brand and a manufacturer of automatic dishwasher\index{dishwasher}
+\item Cascade\index{Cascade} (a Proctor \& Gamble brand and a manufacturer of automatic dishwasher\index{dishwasher}
       detergent) did a study that shows it takes an average
       person 15 seconds to wash a dish ``by hand.'' Assuming an average water flow
       from the faucet of two gallons per minute and an Energy Star\index{Energy Star} automatic dishwasher\index{dishwasher}
-      using 4 gallons of water per cycle, Cascade concluded that it is more
+      using 4 gallons of water per cycle, Cascade\index{Cascade} concluded that it is more
       efficient to run the dishwasher\index{dishwasher} with only eight dishes than to wash them by hand.
       (Note they were not advocating running near-empty loads, only that the break-even
       point was a very low number of dishes.)
