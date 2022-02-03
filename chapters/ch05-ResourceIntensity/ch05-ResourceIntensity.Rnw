@@ -328,7 +328,7 @@ crm_df <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "da
   tibble::column_to_rownames(var = "Materials")
 
 crm_xtab <- xtable::xtable(crm_df, 
-                           caption = c("Critical raw materials and the economic sectors in which they are used. ``Aero'' is aerospace and defense. ``Tex'' is textiles. ``Elect'' is electronics. ``Auto'' includes mobility and automotive. ``Energy'' includes all energy-intensive industries. ``Rens'' is the renewable energy sector. ``Agri'' is agriculture and food. ``Const'' is construction. ``PGM'' is platinum group metals. ``HREE'' and ``LREE'' are heavy and light rare Earth elements. \\emph{Source}: \\citet[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.", 
+                           caption = c("Critical raw materials and the economic sectors in which they are used. ``Aero'' is aerospace and defense. ``Tex'' is textiles. ``Elect'' is electronics. ``Auto'' includes mobility and automotive. ``Energy'' includes all energy-intensive industries. ``Rens'' is the renewable energy sector. ``Agri'' is agriculture and food. ``Const'' is construction. ``PGM'' is platinum-group metals. ``HREE'' and ``LREE'' are heavy and light rare Earth elements. \\emph{Source}: \\citet[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.", 
                                        "Critical raw materials and economic sectors"), 
                            align = c("r", rep("c", 11)),
                            label = "tab:CRMs")
@@ -404,7 +404,7 @@ material_per_capita %>%
 
 
 
-<<per_gdp_material_use, fig.scap="World material use per GDP vs.\\ time by material type", fig.cap="World material use per GDP vs.\\ time by material type. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass\\index{biomass} while GDP is growing. Extraction\\index{resource extraction} of ores\\index{ores} (and industrial minerals\\index{industrial minerals}), fossil fuels\\index{fossil fuels}, and construction minerals\\index{construction minerals} scales quite well with GDP and shows little change on this graph, as the thickness of those bands varies little over time. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
+<<per_gdp_material_use, fig.scap="World material use per GDP vs.\\ time by material type", fig.cap="World material use per GDP vs.\\ time by material type. The overall trend of material use per unit of GDP is downward, but only because the world's economies are using approximately constant amounts of biomass\\index{biomass} while GDP is growing. Extraction\\index{resource extraction} of ores\\index{ores} (and industrial minerals\\index{industrial minerals}), fossil fuels\\index{fossil fuels}, and construction minerals\\index{construction minerals} scales quite well with GDP and shows little change on this graph, since the thickness of those bands varies little over time. See Figure~\\ref{fig:total_material_use} caption for legend explanation. \\emph{Source}: own calculations. The height of the regions in this figure are calculated by dividing the height of the regions of Figure~\\ref{fig:total_material_use} by the line in Figure~\\ref{fig:GDPGraph-Nordhaus}.">>=
 material_per_gdp <- krausmann %>% 
   dplyr::left_join(world_gdp_Nordhaus, by = "Year") %>% 
   dplyr::mutate(
@@ -467,7 +467,7 @@ typically 50 years.
 Thus, extraction of a resource is weakly sustainable\index{weak sustainability} so long as
 the remaining stock is sufficient to last 50 years at today's extraction rate
 (and, possibly expected future extraction rates).
-And emission of wastes\index{waste} is weakly sustainable\index{weak sustainability} so long as 
+Likewise, emission of wastes\index{waste} is weakly sustainable\index{weak sustainability} so long as 
 remediation technologies will be deployed 
 to ameliorate the wastes\index{waste} within 50 years.
 
@@ -538,9 +538,8 @@ is below the average maximum weakly sustainable\index{weak sustainability} extra
 and is, therefore, weakly sustainable\index{weak sustainability}. 
 A value for $\rho$ of 100\% means that the resource is being extracted at twice
 its average maximum weakly sustainable\index{weak sustainability} extraction rate.
-(Put another way,
-$\rho$ = 100\% means that the resource would be exhausted in 25~years, 
-not 50~years.)
+Put another way, $\rho$ = 100\% means that the resource would be exhausted in 25~years, 
+not 50~years.
 
 Figure~\ref{fig:PercentageOfSustainable} shows the result of applying
 the weak sustainability\index{weak sustainability} analysis approach
@@ -589,8 +588,9 @@ Recycling\index{recycling} is a way to extend the usable life
 of natural resources and
 reduce rates of resource extraction\index{resource extraction}.
 Recycling\index{recycling} uses discarded products as feedstock\index{feedstock}
-to regenerate usable products.
-Examples include paper recycling\index{paper recycling} to pulp and glass recycling\index{glass recycling} to new containers.
+to generate usable products.
+Examples include paper recycling\index{paper recycling} to pulp 
+and glass recycling\index{glass recycling} to new containers.
 However, recycling\index{recycling} requires energy
 and other natural resources
 for transporting used material to recycling centers\index{recycling center} and 
@@ -670,7 +670,7 @@ coal electricity\index{coal electricity} and solar electricity\index{solar elect
 perfect substitutes.
 However, at the point of electricity generation\index{electricity generation}, 
 the feedstocks\index{feedstock} for electricity\index{electricity} production are not substitutes\index{substitute}.
-Coal-fired Rankine cycle\index{Rankine cycle} power plants\index{coal-fired power plant}
+Coal-fired Rankine-cycle\index{Rankine cycle} power plants\index{coal-fired power plant}
 cannot use the Sun's energy to make electricity\index{solar electricity}.
 Similarly, a pile of coal\index{coal} is useless
 to solar photovoltaic\index{solar photovoltaic electricity} farms.
@@ -720,7 +720,7 @@ for discussion of whether weak sustainability\index{weak sustainability} is ``go
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 It has been argued
-(as we do in Section~\ref{sec:masterE})
+(as in Section~\ref{sec:masterE})
 that energy is
 the master resource~\cite{library1971energy}\index{master resource (energy)}
 for two important reasons.
@@ -827,7 +827,7 @@ energy consumption has grown substantially over the last two centuries;
 see Figure~\ref{fig:EnergyPerPersonGraph}.
 By the strong sustainability\index{strong sustainability} criterion of consuming resources at a rate
 beneath their regeneration rate,
-none of the fossil fuel\index{fossil fuels} consumption shown in Figure~\ref{fig:PrimaryEnergyGraph}
+none of the fossil-fuel\index{fossil fuels} consumption shown in Figure~\ref{fig:PrimaryEnergyGraph}
 is sustainable. 
 By the weak sustainability\index{weak sustainability} criterion of preserving resources for 50~years, 
 Figure~\ref{fig:WeakSustEnergyGraph} shows that
@@ -1189,9 +1189,9 @@ For the prime example of primary energy intensity\index{primary energy intensity
 we found that~\REp{} has decreased substantially since 1800, 
 but only because we are using far less biofuels\index{biofuel} per dollar of GDP
 today than in the past.
-Fossil fuel\index{fossil fuels} use has remained much more constant on a per-GDP basis.
+Fossil-fuel\index{fossil fuels} use has remained much more constant on a per-GDP basis.
 Ironically, biofuels\index{biofuel} are a (potentially) sustainable source of energy, 
-so we are growing economies with unsustainable fossil fuel consumption\index{fossil fuels!combustion} 
+so we are growing economies with unsustainable fossil-fuel consumption\index{fossil fuels!combustion} 
 while at the same time
 relying less on consumption of (potentially) sustainable biomass\index{biomass}.
 
@@ -1227,7 +1227,8 @@ combustion-based lighting\index{lighting} technology, dated
 \href{https://www.youtube.com/watch?v=D_qFWoa_HR4}{August 2, 2021}. \\
 
 \noindent 
-US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov/centers/nmic}
+US Geological Survey, National Minerals Information Center \\ 
+\href{www.usgs.gov/centers/nmic}{www.usgs.gov/centers/nmic}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}
@@ -1458,7 +1459,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         weak sustainability\index{weak sustainability}, or 
         neither?
         Where is are the recycling\index{recycling} processes consuming energy or other materials?
-        Is the energy fossil-based or renewable?
+        Is the energy fossil based or renewable?
 
   \item Research the CAFE\index{corporate average fuel economy (CAFE)}
         standards in the U.S.\ and
