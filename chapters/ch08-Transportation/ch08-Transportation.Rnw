@@ -67,12 +67,12 @@ for different services.)
 Figure~\ref{fig:passengerkm_by_mode} shows that 
 passenger transport demand is fulfilled almost exclusively by ``highway''
 in the U.S.,
-meaning automobiles travelling on roads.
+meaning automobiles\index{automobile} travelling on roads.
 In contrast, Figure~\ref{fig:tonnekm_by_mode} shows that 
 freight transport demand is satisfied by a variety of modes.
 
 
-<<passengerkm_by_mode, fig.scap="Personal transportation vs.\\ time by mode", fig.cap="U.S.\\ passenger-km of personal transportation vs.\\ time by mode. ``Intercity'' is rail travel via Amtrak. ``Transit'' is public transit of all types (ferry, subway, bus, and others). ``Air'' is U.S.\\ domestic air carriers. ``Highway'' is automobile traffic. ``pass'' means passenger. \\emph{Source}: \\citet{passenger_km}.">>=
+<<passengerkm_by_mode, fig.scap="Personal transportation vs.\\ time by mode", fig.cap="U.S.\\ passenger-km of personal transportation vs.\\ time by mode. ``Intercity'' is rail travel via Amtrak. ``Transit'' is public transit of all types (ferry, subway, bus, and others). ``Air'' is U.S.\\ domestic air carriers. ``Highway'' is automobile\\index{automobile} traffic. ``pass'' means passenger. \\emph{Source}: \\citet{passenger_km}.">>=
 passenger_km_by_mode <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Passenger_kms.xlsx"), 
                    sheet = "data to plot") %>% 
   tidyr::pivot_longer(cols = -Year, names_to = "mode", values_to = "passkm_millions") %>% 
@@ -631,7 +631,7 @@ Figure~\ref{fig:auto_gwp} shows two types of environmental impact
 (global warming potential~(GWP)\index{global warming potential (GWP)}
 and mineral resource depletion\index{mineral resource depletion (MRD)})
 across the full life cycle\index{life cycle!automobiles}
-of automobile use,
+of automobile\index{automobile} use,
 from base vehicle manufacturing to end of life disposal,
 assuming 150,000~km service life.
 Internal combustion engine (ICE) vehicles\index{internal combustion engine (ICE) vehicle}
@@ -676,7 +676,7 @@ miss key differences associated with the production of different vehicle types a
 could lead to misguided comparisons across technologies.''
 
 
-<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion\\index{mineral resource depletion (MRD)}. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline\\index{gasoline}-powered vehicles. ``Ren20'' indicates an electricity mix\\index{electricity mix} with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union electricity mix in 2010. ``Coal''\\index{coal} indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
+<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile\\index{automobile} environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion\\index{mineral resource depletion (MRD)}. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline\\index{gasoline}-powered vehicles. ``Ren20'' indicates an electricity mix\\index{electricity mix} with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union electricity mix in 2010. ``Coal''\\index{coal} indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
 Hawkins_life_cycle <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "EV data from Hawkins.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(c("Base vehicle", "Engine", "Other powertrain", "Battery", "Use phase", "Fuel/electricity", "End of life"), names_to = "Life.cycle.component", values_to = "normalized_impact") %>% 
@@ -708,7 +708,7 @@ Hawkins_life_cycle %>%
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \label{mcframe_EV}
-Automobile technology is one of many arenas in which sustainability tradeoffs are observed.
+Automobile\index{utomobile} technology is one of many arenas in which sustainability tradeoffs are observed.
 Under the right conditions,
 EVs can reduce global warming impact relative to ICE vehicles
 at the expense of depleting the stock of mineral resources\index{mineral resources},
@@ -781,7 +781,7 @@ a fascinating movie about the the first attempt at electric vehicles\index{elect
 
 \noindent \emph{Taken for a Ride}, 
 a documentary about ``General Motors'\index{General Motors} role in dismantling street car transportation in the 1930’s, 
-and in catapulting the automobile to the center of [U.S.] national culture.'' 
+and in catapulting the automobile\index{automobile} to the center of [U.S.] national culture.'' 
 \url{https://www.pbs.org/pov/watch/takenforaride/} \\
 
 \noindent For counterpoint/fact check, see City Beautiful's 

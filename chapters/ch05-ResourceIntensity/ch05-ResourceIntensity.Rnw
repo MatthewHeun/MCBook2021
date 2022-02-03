@@ -14,7 +14,7 @@
 death, natural resources, transformed for human use, feed, clothe, shelter, and
 transport us. \ldots
 % Upon them we depend for every material necessity, comfort, convenience, and protection in our lives.
-Without abundant resources, prosperity is out of reach.}
+Without abundant resources\index{resources, abundant}, prosperity is out of reach.}
 {Gifford Pinchot\index{Pinchot, Gifford}}
 
 The previous chapter addressed the sustainability implications of 
@@ -189,7 +189,7 @@ The stylist commutes to the salon in a vehicle
 (which requires iron ore\index{iron ore}, copper\index{copper}, and other natural resources to manufacture; 
 perhaps refined liquid fuel to operate; and 
 an atmosphere\index{atmosphere} that is a source of oxygen and which absorbs CO$_2$ and water, the products of combustion).
-The stylist uses electric clippers and a hairdryer during each appointment
+The stylist uses electric clippers and a hairdryer\index{hairdryer} during each appointment
 (which require both natural resources to manufacture and electricity\index{electricity} to operate).
 You sit in a fancy chair 
 (which contains metals and plastics) and
@@ -604,13 +604,14 @@ weak sustainability\index{weak sustainability} of the recycling\index{recycling}
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Economist Nicholas Georgescu-Roegen proposed a fourth law of thermodynamics,
+Economist Nicholas Georgescu-Roegen\index{Georgescu-Roegen, Nicholas} proposed a fourth law of thermodynamics,
 stating that complete recycling\index{recycling} of matter is impossible~\cite{Georgescu-Roegen:1986aa}
 because material resources are subject to irreversible degradation.
-(Georgescu-Roegen was arguing by analogy from the second law of thermodynamics,
+(Georgescu-Roegen\index{Georgescu-Roegen, Nicholas}
+was arguing by analogy from the second law of thermodynamics\index{second law of thermodynamics},
 which states that all forms of energy are subject to irreversible degradation.)
 Later, physicist and economist Robert Ayres correctly
-argued that the second law of thermodynamics applies only to energy
+argued that the second law of thermodynamics\index{second law of thermodynamics} applies only to energy
 (not to materials) and that
 a stable, steady-state recycling\index{recycling} system could exist
 provided that two conditions are met:
@@ -634,15 +635,15 @@ Replacing use of a scarce resource with use of an abundant resource
 usually extends the time horizon for depleting the scarce resource and
 brings us closer to weak sustainability\index{weak sustainability}.
 
-Scarce resources tend to be valuable.
-Abundant resources tend to be less valuable.
+Scarce resources\index{resources, scarce} tend to be valuable.
+Abundant resources\index{resources, abundant} tend to be less valuable.
 Using an abundant resource instead of a scarce resource in a manufacturing environment 
 therefore typically makes sense from a cost perspective.
 However, substitution\index{substitution} is possible only when the two resources in question
 are identical or nearly identical
 such that they can serve the same purpose in a manufacturing or production environment.
 Examples of substitution\index{substitution} include:
-replacing coated steel (expensive) automobile interior parts with
+replacing coated steel (expensive) automobile\index{automobile} interior parts with
 injection-molded plastics (inexpensive),
 replacing Styrofoam hamburger containers (nonrenewable)
 with paper or cardboard wrappings (renewable), and
@@ -678,11 +679,11 @@ Sometimes a scarce (and expensive), renewable resource is replaced by a
 less-expensive, nonrenewable alternative.
 Two examples illustrate.
 The first involves ocean-going vessels.
-In the age of sail, ships were made of timber\index{timber}, with teak and mahogany being
+In the age of sail, ships were made of timber\index{timber}, with teak\index{teak} and mahogany\index{mahogany} being
 favored ship-building woods.
 Today, cargo ships are made of steel, and pleasure craft are made almost exclusively
 of glass-fiber reinforced polymer composites, both of which are non-renewable materials.
-Teak and mahogany, despite being renewable,
+Teak\index{teak} and mahogany\index{mahogany}, despite being renewable,
 are now too rare and too expensive for shipbuilding,
 both in terms of material cost and
 labor cost\index{labor!cost}.
@@ -691,8 +692,8 @@ means that many more boats are purchased and used,
 bringing us further from sustainability.
 
 The second example involves lighting.
-Societies moved away from wax candles and whale oil lanterns\index{lantern!whale oil} to
-``town gas\index{lantern!town gas},'' kerosene\index{lantern!kerosene}, and finally, electric lights.
+Societies moved away from wax candles\index{wax candles} and whale oil lanterns\index{lantern!whale oil} to
+``town gas\index{lantern!town gas},'' kerosene\index{lantern!kerosene}, and finally, electric lights\index{electric lamp}.
 Electricity\index{fossil fuel electricity} (from fossil fuels)\index{fossil fuel electricity} is not renewable, so 
 this is another example of an 
 inexpensive, nonrenewable resource substituting for an
@@ -700,9 +701,10 @@ expensive, renewable resource.
 
 In both cases (ships and lights), none of the options
 (wood ships, steel ships,
-wax candles, whale oil lanterns\index{lantern!whale oil}, kerosene lanterns\index{lantern!kerosene}, or electric lights)
+wax candles\index{wax candles}, whale oil lanterns\index{lantern!whale oil},
+kerosene lanterns\index{lantern!kerosene}, or electric lights\index{electric lamp})
 meets the strong sustainability\index{strong sustainability} criterion.
-However, all of wood ships, wax candles, whale oil lanterns\index{lantern!whale oil}, 
+However, all of wood ships, wax candles\index{wax candles}, whale oil lanterns\index{lantern!whale oil}, 
 town gas lamps\index{lamp!town gas}, and
 kerosene lamps\index{lantern!kerosene} proved to be weakly sustainable\index{weak sustainability}.
 We found substitutes for the expensive natural resources
@@ -728,12 +730,12 @@ for any material transformation,
 for consuming goods and services, and
 for disposing of goods.
 Second, energy is fungible.
-Within the limits of the second law of thermodynamics,
+Within the limits of the second law of thermodynamics\index{second law of thermodynamics},
 energy in one form can be converted to energy in any other form
 using suitable machines.
-An automobile converts chemical potential energy (gasoline\index{gasoline})
+An automobile\index{automobile} converts chemical potential energy (gasoline\index{gasoline})
 to kinetic energy\index{kinetic energy} (car motion).
-A hairdryer converts electricity\index{grid electricity} (from the grid)
+A hairdryer\index{hairdryer} converts electricity\index{grid electricity} (from the grid)
 to heat (applied to hair).
 A solar panel\index{solar panel} converts solar energy (from The Sun\index{Sun})
 to electricity\index{electricity} (for use in many devices, including, possibly, hair dryers).
@@ -891,7 +893,7 @@ Per-capita primary energy consumption\index{primary energy consumption} rose sub
 with the adoption of fossil fuels\index{fossil fuels} worldwide.
 Since the oil crises, efficiency and substitution\index{substitution}
 have slowed the growth of per-capita primary energy consumption\index{primary energy consumption}.
-Economic growth in the developing world, particularly in China, led to a
+Economic growth in the developing world, particularly in China\index{China}, led to a
 noticeable rise in per-capita energy consumption starting in 2001.
 \end{mcframe}
 
@@ -1088,9 +1090,9 @@ In the beginning, extraction of a useful but finite resource\index{resource extr
 as demand climbs and technologies are developed to reduce the cost of extraction.
 Through time, the resource extraction\index{resource extraction} rate peaks then and declines.
 A clear example of a production curve for a finite resource is
-extraction of coal\index{coal} in the UK, shown in Figure~\ref{fig:UK_coal_extraction}.
+extraction of coal\index{coal} in the UK\index{United Kingdom (UK)}, shown in Figure~\ref{fig:UK_coal_extraction}.
 
-<<UK_coal_extraction, fig.scap="UK coal production vs.\\ time", fig.cap="UK coal production vs.\\ time. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv} for 1830--2009; \\citet{UK_dept_BEIS:2021} for 2010--2020.">>=
+<<UK_coal_extraction, fig.scap="UK coal production vs.\\ time", fig.cap="UK\\index{United Kingdom (UK)} coal\\index{coal} production vs.\\ time. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv} for 1830--2009; \\citet{UK_dept_BEIS:2021} for 2010--2020.">>=
 uk_coal_extraction <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "CoalGraph.xlsx"),
                                          sheet = "data to plot") %>%
   dplyr::mutate(
@@ -1127,10 +1129,11 @@ uk_coal_extraction %>%
   MKHthemes::xy_theme()
 @
 
-In the case of the UK, substitution\index{substitution} away from coal\index{coal} 
+In the case of the UK\index{United Kingdom (UK)}, substitution\index{substitution} away from coal\index{coal} 
 for electricity generation\index{electricity generation} 
 is occurring. 
-Coal\index{coal} production is now dominated by China, India, the U.S., and Australia,
+Coal\index{coal} production is now dominated 
+by China\index{China}, India\index{India}, the U.S., and Australia\index{Australia},
 but international trade is possible.
 So the world will not face coal\index{coal} shortages
 until all regions are exhausted of the resource.
@@ -1140,7 +1143,7 @@ Other ways to substitute away from domestic coal\index{coal} for electricity\ind
 (besides switching suppliers)
 include deploying natural gas\index{natural gas electricity}, wind\index{wind electricity}, and
 solar electricity\index{solar electricity} generation, 
-as the UK is doing now.
+as the UK\index{United Kingdom (UK)} is doing now.
 
 Another way to slow down the inevitable march of time
 along logistic curves for finite resources is to transition
@@ -1233,14 +1236,14 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
 
 \begin{questions}
 
-  \item Some aquifers, such as the Ogallala aquifer\index{aquifer!Ogallala},
+  \item Some aquifers, such as the Ogallala aquifer\index{Ogallala aquifer},
         are called ``fossil water''
         because they were filled with glacial melt from the last ice age.
         Is using any such resource sustainable?
         What are the moral and ethical implications of leaving a valuable and
         usable resource unused? \label{question:ogallala}
 
-  \item What is the purpose (telos) of mineral resources\index{mineral resources} in the environment?
+  \item What is the purpose (telos\index{telos}) of mineral resources\index{mineral resources} in the environment?
         Should they be left in place or used?
         Humans are the only creatures on Earth that make use of most minerals\index{minerals}.
         What are some positive impacts on animal populations that arise from
@@ -1278,8 +1281,8 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         How is energy, the master resource\index{master resource (energy)}, involved in each of these steps?
         How has water provision changed over time where you live?
 
-  \item Evaluate the notion of a closed-loop water system (so called ``toilet-to-tap'').
-        Would you drink water from a toilet-to-tap system?
+  \item Evaluate the notion of a closed-loop water system (so called ``toilet-to-tap''\index{toilet-to-tap}).
+        Would you drink water from a toilet-to-tap\index{toilet-to-tap} system?
         Does your answer change if you learn that, already, there are low levels
         of many pharmaceutical substances and organic pollutants in drinking water?
         A closed-loop water system would probably lower exposure to some pollutants
@@ -1299,7 +1302,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         \begin{enumerate}
         \item Is there an individual right to water?
         \item Do nation states have a right to water?
-        \item Does it matter if you're oil-rich Saudi Arabia or the (relatively) poor
+        \item Does it matter if you're oil-rich Saudi Arabia\index{Saudi Arabia} or the (relatively) poor
               and low-lying Republic of the Marshall Islands\index{Republic of the Marshall Islands (RMI)}?
         \item Discuss how these rights impact global efforts to limit climate change\index{climate change}.
         \end{enumerate}
@@ -1341,23 +1344,15 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         What would an engineer say?
 
   \item A recent report \cite{Miljostyrelsen2018} found that an organic cotton
-        canvas tote bag has an environmental footprint equivalent to 20,000
+        canvas tote bag\index{tote bag} has an environmental footprint equivalent to 20,000
         plastic shopping bags.
         In other words, to break even you would have to use the organic cotton bag
         every day for about 54 years.
-        Hank Green \href{https://www.youtube.com/watch?v=2PF5AAEAWTs}{attributed his emotional reaction}
-        % "it's resource intensive to grow crops!"
-        % "if we start thinking cotton is always good ... we start using cotton like it's disposable"
-        % "where do I draw the line between the stuff that I care about and the stuff that I don't."
-        % "we should change our mind when presented with evidence to the contrary."
-        % "if we're going to care we have to orient our caring based on reality."
-        % "are we being sold an idea because someone is trying to sell us something or is this actually
-        %   gonna have a positive impact?"
-        % "is this a little complicated? Yeah. But simplicity is almost always a lie."
+        Hank Green\index{Green, Hank} \href{https://www.youtube.com/watch?v=2PF5AAEAWTs}{attributed his emotional reaction}
         to cognitive dissonance between the life cycle analysis results and his
         intuition that cotton bags should be better for the environment.
         How should humans respond when analytical results go against intuition?
-        Hank says, ``Simplicity is almost always a lie.''
+        Hank\index{Green, Hank} says, ``Simplicity is almost always a lie.''
         ``We have to ask, are we being sold an idea because someone is trying to
         sell us something or is this actually gonna have a positive impact?''
         ``We have to orient our caring based on reality.''
@@ -1378,7 +1373,7 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
         Perhaps they meant that making the plastic from oil or the bottle from the
         plastic used energy, which creates greenhouse gases.
         But then all economic activity generates greenhouse gases.
-        And, similar to the cotton totes, a lightweight plastic water bottle is
+        And, similar to the cotton totes\index{tote bag}, a lightweight plastic water bottle is
         better than glass, if we're going to have water bottles at all.
         Write a nuanced response to the GreenBooks.org ``soundbite'' quoted above.
 
@@ -1466,15 +1461,15 @@ US Geological Survey, National Minerals Information Center: \\ \url{www.usgs.gov
 
   \item Research the CAFE\index{corporate average fuel economy (CAFE)}
         standards in the U.S.\ and
-        other automobile efficacy standards worldwide.
+        other automobile\index{automobile} efficacy standards worldwide.
         Evaluate the strategies, tactics, and approaches to improving fuel economy\index{fuel economy}
-        in automobiles and trucks.
+        in automobiles\index{automobile} and trucks.
         Which approach works best?
         Which approaches are ineffective?
         Why?
 
   \item Evaluate the ecological and economic impacts of substitution\index{substitution} of an
-        injection-molded plastic part for a stamped steel part on an automobile.
+        injection-molded plastic part for a stamped steel part on an automobile\index{automobile}.
         What are the raw material and extraction\index{resource extraction} implications?
         How much energy is used to create the part?
         Does using a lighter part have energy implications over the life of the
