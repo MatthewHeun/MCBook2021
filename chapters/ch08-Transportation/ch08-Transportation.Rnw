@@ -836,7 +836,7 @@ transportation, petroleum\index{petroleum}, and technology.
       The analysis was for a relatively short round trip, 2.5 km (1.5 miles),
       like walking to a store and back. The analysis included the 
       difference between the metabolic rate for driving and walking but 
-      explicitly excluded the effects of embodied emissions in the 
+      explicitly excluded the effects of embodied emissions\index{embodied carbon} in the 
       vehicle and the road.
       What the analysis didn't include was the effect of time. 
       Consider, as completely as possible, all the different ways it would 
@@ -1074,9 +1074,10 @@ transportation, petroleum\index{petroleum}, and technology.
       How does the move affect the way you think about the sustainability challenge?
       Does the move suggest new solutions to the sustainability challenge?
 
-\item The embodied energy (and embodied CO$_2$) of transportation systems 
+\item The embodied energy\index{embodied energy} (and embodied CO$_2$\index{embodied carbon}) 
+      of transportation systems 
       is an important aspect of their implementation and use.
-      Find or estimate the embodied energy and embodied CO$_2$
+      Find or estimate the embodied energy\index{embodied energy} and embodied CO$_2$\index{embodied carbon}
       of each mile of road construction and rail construction.
       Would a transition from road travel to rail travel improve or reduce
       the sustainability of transport?  
