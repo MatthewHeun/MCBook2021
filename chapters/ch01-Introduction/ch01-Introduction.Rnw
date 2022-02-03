@@ -492,7 +492,7 @@ Salt water can be converted to fresh water.
 Petroleum\index{Petroleum} or natural gas\index{natural gas} can be converted to pharmaceuticals\index{pharmaceuticals}
 or plastics.
 
-Finally, energy is the master resource\index{master resource (energy)}, because
+Finally, energy is the master resource\index{master resource (energy)} because
 it is needed to break down and dispose of wastes\index{waste}.
 Building a landfill takes energy.
 Hauling garbage to the landfill takes energy.
@@ -569,39 +569,44 @@ Biofuels\index{biofuel} (incl.\ U.S.\ corn ethanol\index{corn ethanol})  & 0.8--
 \section{Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This book uses the IPARX identity\index{IPARX identity} as a framework for thinking about sustainability.
+This book uses the IPARX identity\index{IPARX identity} as a framework for 
+thinking about sustainability.
 It considers many different resources and many different types of impacts.
 However, there is a focus on energy and CO$_2$ emissions\index{CO$_2$ emissions}.
-Climate change\index{climate change} (Section \ref{sec:GHGCC}) is one of the most urgent sustainability
-challenges and it is linked to other urgent challenges (such as material extinction rate(s) and land use changes)
-by CO$_2$ and energy.
-Thus, carbon emissions\index{CO$_2$ emissions} and energy 
-lie at the nexus of our sustainability challenges\index{sustainability challenges}.
+Climate change\index{climate change} (Section \ref{sec:GHGCC}) is one of the most
+urgent sustainability challenges, and it is linked to other urgent challenges 
+(such as material extraction rates and land-use changes) by CO$_2$ and energy.
+Thus, carbon emissions\index{CO$_2$ emissions} and energy lie at the nexus of 
+our sustainability challenges\index{sustainability challenges}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Jeremy L. Caradonna, 
+\emph{Sustainability: A history}. Oxford: Oxford University Press, 2016. \\
+
+\noindent 
 Kim Stanley Robinson, \emph{The ministry for the future}. London: Orbit, 2020. \\
 
-\noindent Mary Robinson, \emph{Climate justice: Hope, resilience, and the fight for a sustainable future}.
-London: Bloomsbury, 2018. \\
-
-\noindent Jeremy L. Caradonna, \emph{Sustainability: A history}. Oxford: Oxford University Press, 2016.
-
+\noindent 
+Mary Robinson, 
+\emph{Climate justice: Hope, resilience, and the fight for a sustainable future}.
+London: Bloomsbury, 2018.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Albert A. Bartlett, \emph{Arithmetic, population, and energy: Sustainability 101}: \\
-\url{https://www.albartlett.org/presentations/bartlett_presentations.html} \\%{albartlett.org $>$ Presentations} \\
+Albert A. Bartlett, \emph{Arithmetic, population, and energy: Sustainability 101} \\
+\href{https://www.albartlett.org/presentations/bartlett_presentations.html} 
+{www.albartlett.org/presentations/bartlett{\textunderscore}presentations.html} \\
 
 \noindent
 \emph{The Social Dilemma}, a 2020 documentary film about social media. It examines
 the ways that social media is shaping political (and and thereby environmental) discourse. \\
-\url{https://www.thesocialdilemma.com/the-dilemma/}
+\href{https://www.thesocialdilemma.com/the-dilemma/}{www.thesocialdilemma.com/the-dilemma}
 
 
 
@@ -723,7 +728,7 @@ the full restoration is likely to cost more than \euro{8}~billion.
       For how long?
       Is there social value in old companies (as, say, compared to old buildings)?
 
-\item Critique generally but also with reference to Equation \ref{eq:IPARX} the statement
+\item Critique generally, but also with reference to Equation \ref{eq:IPARX}, the statement
       ``poverty\index{poverty!as pollution}
       is the worst form of pollution\index{pollution}'' made by former Indian Prime
       Minister Indira Ghandi\index{Ghandi, Indira}.
@@ -744,11 +749,13 @@ the full restoration is likely to cost more than \euro{8}~billion.
       What about future humans? Does their level change?
 
 \item What are our (current) responsibilities with respect to the rights of future
-      humans? How far into the future? Are there, for instance, geographical boundaries
-      to our future responsibilities (for example, are we responsible to a world-wide
-      population or only people who will live in our country)?
-      What are or should be the mechanism(s) of enforcement of those responsibilities?
-      To take one example, local building codes dictate (some of) my responsibilities
+      humans? 
+      How far into the future? 
+      Are there geographical boundaries to our future responsibilities?
+      For example, are we responsible to a world-wide population or only people 
+      who will live in our country?
+      What are, or should be, the mechanism(s) of enforcement of those responsibilities?
+      To take one example, local building code dictates (some of) my responsibilities
       to future owners of my house.
 
 \item Section \ref{sec:masterE} claims that energy is the master resource\index{master resource (energy)},
