@@ -116,7 +116,7 @@ But the number of housing units is rising.
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Much of what we know about residential energy consumption in the U.S.\
-comes from the U.S.\ Energy Information Agency's occasional
+comes from the U.S.\ Energy Information Agency's\index{Energy Information Agency (EIA)} occasional
 \textbf{Residential Energy Consumption Survey (RECS)}\index{Residential Energy Consumption Survey (RECS)}~\cite{U.S.-Energy-Information-Agency:vd}.
 RECS\index{Residential Energy Consumption Survey (RECS)}
 provides snapshots of residential energy consumption for survey years
@@ -405,7 +405,7 @@ Average daily temperature variations can be in the range of 12~\degC,
 and seasonal variations can be 
 on the order of 30~\degC~\cite{Experience-Grand-Rapids:vs}.%
 \footnote{
-   Example temperature variations are for Grand Rapids, Michigan, where
+   Example temperature variations are for Grand Rapids, Michigan\index{Grand Rapids, Michigan}, where
    the average daily high temperature in July is 28~\degC{} and in January is 
    $-$2~\degC. 
    Incidentally, the average daily low temperature in January is $-$10~\degC.
