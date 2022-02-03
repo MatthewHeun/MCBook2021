@@ -1133,25 +1133,26 @@ United States, 1999: \\
 \item Notice that biomass\index{biomass} heating (for example, firewood\index{firewood}) is not included in 
       Figure~\ref{fig:EnergyConsAndHomeSize}. However, 
       RECS\index{Residential Energy Consumption Survey (RECS)}
-      Table CE 7.2 reports that wood heated 12.5 million housing units in
+      Table CE 7.2 reports that wood heated\index{wood heating} 12.5 million housing units in
       2015 (10.6\% of all housing units) and was 5.6\% of all BTUs used for
       heating. 
-      (For around 60\% of housing units wood is the main source of heat;
+      (For around 60\% of housing units wood\index{wood heating} is the main source of heat;
       for the other 40\% it's secondary.)
-      Wood heating can be carbon neutral\index{carbon neutral}. 
-      However, wood heating isn't exactly sustainable. 
+      Wood heating\index{wood heating} can be carbon neutral\index{carbon neutral}. 
+      However, wood heating\index{wood heating} isn't exactly sustainable. 
       It is sustainable only if not everyone does it. 
-      If everyone heated with wood, one result would be massive deforestation\index{deforestation}.
+      If everyone heated with wood\index{wood heating},
+      one result would be massive deforestation\index{deforestation}.
       Another might be greatly increased air pollution\index{pollution!air} (in the form of soot).
-      Should the use of wood heating be expanded or contracted? 
-      Who gets to (or has to) heat with wood and what emissions should be permitted?
+      Should the use of wood heating\index{wood heating} be expanded or contracted? 
+      Who gets to (or has to) heat with wood\index{wood heating} and what emissions should be permitted?
       How should such questions be decided?
-      What other considerations go into wood heating? 
+      What other considerations go into wood heating\index{wood heating}? 
       For example, who has access to forest lands? How much does wood cost?
-      What labor\index{labor} is required to obtain and use wood for heat?
+      What labor\index{labor} is required to obtain and use wood for heat?\index{wood heating}
       
-\item Figure~\ref{fig:EnergyConsAndHomeSize} also excludes ``district
-      steam'' and solar thermal heat sources.
+\item Figure~\ref{fig:EnergyConsAndHomeSize} also excludes ``district steam''\index{district steam heating}
+      and solar thermal heat\index{solar thermal heating} sources.
       Should such sources be promoted for sustainability? 
       What considerations affect their more widespread adoption?
       
@@ -1164,16 +1165,16 @@ United States, 1999: \\
       However, some categories of appliances do not have an efficiency rating. 
       What are some appliances that could be rated that are not?
       (See, for instance, \url{https://www.energystar.gov/productfinder/}.)
-      Vacuum cleaners, for example, are difficult to rate, in part, because defining 
+      Vacuum cleaners\index{vacuum cleaner}, for example, are difficult to rate, in part, because defining 
       how well they do their job (that is, the ``numerator'' of an efficacy
       metric) is difficult.
       (See the Energy Star\index{Energy Star} \emph{Market and Industry Scoping Report
-      on Vacuum Cleaners}, November 2011.)
+      on Vacuum Cleaners\index{vacuum cleaners}}, November 2011.)
       
 \item Should product longevity be factored into consumer-oriented energy efficiency\index{energy efficiency}
       ratings? If so, how? 
-      Do you think a vacuum cleaner that lasts 10 years is better
-      than a vacuum cleaner that lasts only 5 years? Under what conditions or
+      Do you think a vacuum cleaner\index{vacuum cleaner} that lasts 10 years is better
+      than a vacuum cleaner\index{vacuum cleaner} that lasts only 5 years? Under what conditions or
       assumptions?
       
 \item Should consumer appliances and household goods be required to contribute to a circular economy\index{circular economy}?
@@ -1208,7 +1209,7 @@ United States, 1999: \\
       higher system efficiencies and enhanced insulation\index{insulation}?
       You might want to investigate the passive house movement, 
       the living building challenge, net zero homes and 
-      Joe Lstiburek (Section~\ref{sec:stories_individual_actions}).
+      Joe Lstiburek\index{Lstiburek, Joeseph} (Section~\ref{sec:stories_individual_actions}).
       Given a fixed amount of money, 
       do you suppose there is more sustainability impact 
       in improving old homes or investing in new construction?
