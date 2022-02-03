@@ -15,7 +15,7 @@
 %% \epigraph{We have forgotten how to be good guests, how to walk lightly on the
 %% Earth as its other creatures do}{Barbara Ward}
 %%% \epigraph{Nuclear power is one hell of way to boil water}{Albert Einstein}
-\epigraph{It is the worst of times but it is the best of times because we still have a chance}{Sylvia Earle}
+\epigraph{It is the worst of times but it is the best of times because we still have a chance}{Sylvia Earle\index{Earle, Sylvia}}
 % \epigraph{Generations have trod, have trod, have trod; \\
 %     And all is seared with trade; bleared, smeared with toil; \\
 %     And wears man's smudge and shares man's smell: the soil \\
@@ -44,9 +44,8 @@ The impact of resources~\Xparen{}
 is related to
 the types and quantities of resources consumed and the 
 ways of processing those resources. 
-%Environmental impact intensity is discussed in this chapter.
 Resources are the inputs to the economy 
-(``food'' in the metabolic analogy), and 
+(``food'' in the metabolic analogy\index{economic metabolism}), and 
 environmental impacts come from the economy's excreted wastes\index{waste}.
 
 
@@ -73,7 +72,7 @@ will have effects on air, water, species diversity, land, and human communities.
 %
 Examples of environmental impacts include
 water eutrophication\index{eutrophication} (from fertilizer runoff),
-SO$_2$\index{sulfur dioxide (SO$_2$)!emissions of} emissions (from burning sulfurous coal\index{coal}),
+SO$_2$ emissions\index{sulfur dioxide (SO$_2$)!emissions of} (from burning sulfurous coal\index{coal}),
 CO$_2$ emissions (from burning fossil fuels)\index{CO$_2$ emissions!fossil fuel},
 desertification\index{desertification}
 (due to overcultivation of crops, overgrazing of livestock, and alien species invasion), and
@@ -87,7 +86,7 @@ other examples of environmental impacts caused by resource extraction\index{reso
   \item air, water, and soil pollution\index{pollution!air}\index{pollution!water}\index{pollution!soil}~\cite{Lee:2017ui} 
         in the form of
         bauxite dust,\index{bauxite!dust}
-        sulfur dioxide (SO$_2$), and
+        sulfur dioxide (SO$_2$)\index{sulfur dioxide (SO$_2$)}, and
         nitrous oxides (NO$_\mathrm{x}$)\index{nitrous oxides (NO$_\mathrm{x}$)} emissions
         from bauxite\index{bauxite} mining in Australia\index{Australia};
 
