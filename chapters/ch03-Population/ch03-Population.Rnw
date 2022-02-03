@@ -30,11 +30,12 @@ even catastrophically destroy, the ability of the Earth to support life.
   \iparx            \tag{\ref{eq:IPARX}}
 \end{equation}
 
-This chapter examines human population dynamics, that is, \mft{P} in the IPARX identity\index{IPARX identity}.
-Section~\ref{sec:animal_pop} begins with a discussion 
-of the impact~\Iparen{} of human activities on animal populations.
+This chapter examines human population dynamics, that is, \mft{P} in the IPARX 
+identity\index{IPARX identity}.
+Section~\ref{sec:animal_pop} begins with a discussion of the impact~\Iparen{}
+of human activities on animal populations.
 The size of the impact is a direct result of the size of \mft{P}.
-For example, the recent, massive decline of many animal populations is concerning 
+The recent, massive decline of many animal populations is concerning 
 (in part) because it likely indicates a reduction in ecosystem services\index{ecosystem services}
 brought about by human activities.
 
@@ -79,7 +80,7 @@ quality and/or quantity of ecosystem services\index{ecosystem services} availabl
 (and potentially) humans.
 One of the planetary boundaries\index{planetary boundaries} identified in Chapter~\ref{chap:planetary_boundaries} 
 is an extinction rate of less than 0.001\% of species going extinct per year. 
-Estimates vary, but all agree that current extinction rates are more than ten 
+Estimates vary, but all agree that the current extinction rate is more than ten 
 times above this limit (0.01\% or greater).
 It fact, the current crisis has been labeled a ``sixth mass extinction event.''
 It is called the Holocene\index{Holocene} (or Anthropocene\index{Anthropocene})
@@ -355,7 +356,7 @@ of the total population.
 The crude birth rate (CBR)\index{crude birth rate (CBR)} is the number of births per year per thousand people.
 The crude death rate (CDR)\index{crude death rate (CDR)} is the number of deaths per year per thousand people.
 ``Crude'' indicates that the rates are uncorrected for
-age (different generations could have different populations) or
+age (different generations could have different birth or death rates) or
 sex (possible different number males and females in each age cohort).
 The \textbf{replacement rate}\index{replacement rate} refers to the fact that, on average, each female needs to give
 birth to 2.1 children over her lifetime to maintain a stable population,
@@ -667,7 +668,7 @@ In 1973 there were only 3 cities (Mexico City\index{Mexico City}, Tokyo\index{To
 New York\index{New York} City) with populations
 of more than 10~million people (called ``megacities'').
 Since 2005--2006 more than half of the world's population live in urban areas, and
-there are now 21 cities megacities.
+there are now 21 megacities.
 The percentage of people living in urban areas is projected to grow to 68\% by 2050.
 Urban living is correlated with wealth\index{wealth} and higher GDP.
 High population density\index{population density} (number of people per area) means mass transit is practical
@@ -823,11 +824,12 @@ The History Guy (YouTube) ``\href{https://www.youtube.com/watch?v=FxqgBWxLZa0}
 {The great Kansas grasshopper plague of 1874},''
 published August 17, 2020. \\
 
-\noindent Discussion of implementing the World3\index{World3} model:
-\url{https://www.americanscientist.org/article/computation-and-the-human-predicament} \\
+\noindent Discussion of implementing the World3\index{World3} model \\
+\href{https://www.americanscientist.org/article/computation-and-the-human-predicament}
+{www.americanscientist.org/article/computation-and-the-human-predicament} \\
 
-\noindent World3\index{World3} model online:
-\url{http://bit-player.org/2012/world3-the-public-beta}
+\noindent World3\index{World3} model online \\
+\href{http://bit-player.org/2012/world3-the-public-beta}{bit-player.org/2012/world3-the-public-beta}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -838,7 +840,7 @@ published August 17, 2020. \\
 \begin{questions}
 
 \item \label{question:third_rail} Some electric train systems supply power to the train by energizing
-      a third rail\index{third rail} (the first two being the tracks) with high voltage DC
+      a third rail\index{third rail} (the first two being the tracks) with high-voltage DC
       current, typically 600--1500~V.
       Because of the high voltages and because the rails are very near to the ground,
       touching the third rail\index{third rail} carries a high risk of lethality.
@@ -923,20 +925,22 @@ published August 17, 2020. \\
       Is access to ``nature'' a right?
       What are ways to allow urbanites access to the natural world?
 
-\item It is interesting to note that Malthus's\index{Malthus, Thomas} book was published (1798) just before before
-      Figure~\ref{fig:PopulationGraph} begins (that is, 1800 AD).
-      On the one hand, exponential growth\index{exponential growth}
-      always looks dramatic;
-      Figure~\ref{fig:exp} shows exponential growth\index{exponential growth} for any time \mft{t}.
-      On the other hand, \index{Malthus, Thomas} had not yet experienced the very dramatic rise
-      in world population that occurred post-1800.
-      How would Malthus's\index{Malthus, Thomas} viewpoint have been different if he were writing in the
-      twentieth or twenty-first century?
+\item It is interesting to note that Malthus's\index{Malthus, Thomas} book was 
+      published (1798) just before before Figure~\ref{fig:PopulationGraph} begins 
+      (that is, 1800 AD).
+      On the one hand, exponential growth\index{exponential growth} always looks dramatic;
+      %Figure~\ref{fig:exp} shows exponential growth\index{exponential growth} for any time \mft{t}.
+      On the other hand, Malthus\index{Malthus, Thomas} had not yet experienced 
+      the very dramatic rise in world population that occurred post-1800.
+      How would Malthus's\index{Malthus, Thomas} viewpoint have been different 
+      if he were writing in the twentieth or twenty-first century?
       Given that the tail end of an exponential curve always appears most dramatic,
-      do you think that future thinkers and scholars will agree with Malthus\index{Malthus, Thomas}?
+      do you think that future thinkers and scholars will agree with 
+      Malthus\index{Malthus, Thomas}?
       Or will conditions in the future lead them to make very different predictions?
 
-\item Is your personal outlook on the future Malthusian\index{Malthusian} or techno-optimistic\index{techno-optimistic}?
+\item Is your personal outlook on the future Malthusian\index{Malthusian} or 
+      techno-optimistic\index{techno-optimistic}?
       Why, and to what degree?
       Are there qualifying statements for you?
       With respect to the Simon-Ehrlich bet\index{Simon-Ehrlich bet}, what bets would you take?
