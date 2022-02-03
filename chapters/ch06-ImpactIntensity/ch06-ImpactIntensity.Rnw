@@ -536,7 +536,7 @@ to water (hydro)\index{hydro electricity},
 wind\index{wind electricity},
 and solar\index{solar electricity} 
 energy sources (WWS)~\cite{Jacobson:2011gc,Delucchi:2011gb}.\index{wind, water, and solar (WWS)}
-A transition to WWS would also require 
+A transition to WWS\index{wind, water, and solar (WWS)} would also require 
 significant changes to the world's energy infrastructure, 
 with at least four large challenges.
 
@@ -545,7 +545,7 @@ large changes will be needed.
 For example, today's transport sector is almost exclusively powered 
 by liquid fossil fuel electricity\index{fossil fuels!liquid}
 (gasoline\index{gasoline} and diesel) and illustrates two options for 
-transitioning from today's energy system to a WWS energy system.
+transitioning from today's energy system to a WWS\index{wind, water, and solar (WWS)} energy system.
 The first option is to replace
 all fossil-fuel vehicles with \textbf{electric vehicles}\index{electric vehicle (EV)},
 as is slowly occurring today. 
@@ -556,7 +556,7 @@ including trucks, ships, and planes.)
 The second option is to use WWS electricity\index{WWS electricity} 
 in plants that convert biomass\index{biomass} feedstocks\index{feedstock} to biofuels\index{biofuel}.
 
-Deployment of a WWS energy system provides a second challenge:
+Deployment of a WWS\index{wind, water, and solar (WWS)} energy system provides a second challenge:
 wind\index{wind electricity} and solar\index{solar electricity}
 are intermittent sources of electricity,
 while today's electricity sources 
@@ -570,8 +570,8 @@ redesign and reimplementation of electricity grids\index{electricity grid} world
 to include electricity storage\index{electricity storage}.
 
 There are several options for grid-scale electricity storage\index{electricity storage}, including
-batteries and potential energy storage.
-Battery storage will require great quantities of rare earth metals 
+batteries\index{battery} and potential energy storage.
+Battery\index{battery} storage will require great quantities of rare earth metals 
 and other exotic materials, 
 already included on lists of critical raw materials\index{critical raw materials (CRMs)};
 see Section~\ref{sec:resources_strong_sustainability}. 
@@ -581,23 +581,24 @@ Options for potential energy storage materials include
 water (with a pumped hydro plant)\index{pumped hydro}
 or concrete with a system such as Energy Vault~\cite{Energy-Vault:uz}.
 
-A third challenge comes from the water portion of WWS. 
+A third challenge comes from the water portion of WWS\index{wind, water, and solar (WWS)}. 
 In most areas of the world, 
 the potential for expanding the production of hydro electricity\index{hydro electricity} is limited.
 Most of the Americas, Europe, and Asia are already ``tapped out'' regarding hydropower.
 Today, the potential for hydro is greatest in central Africa\index{Africa}.
-The proposed Grand Inga Dam in the Democratic Republic of the Congo
+The proposed Grand Inga Dam\index{Grand Inga Dam} in the 
+Democratic Republic of the Congo (DRC)\index{Democratic Republic of the Congo (DRC)}
 would be the largest dam in the world and could house a 40--70 GW hydro power station.
 Moreover, there are considerable negative environmental and social impacts from 
 hydro projects, such as changes to soil salinity, silting, and the destruction
 of communities located in the proposed reservoir.
 
-Finally, WWS systems are energy intensive to manufacture.
-So the transition to a WWS future will require significant energy investment
+Finally, WWS\index{wind, water, and solar (WWS)} systems are energy intensive to manufacture.
+So the transition to a WWS\index{wind, water, and solar (WWS)} future will require significant energy investment
 in addition to significant financial investment.
-If the energy investment to make WWS systems comes from fossil fuels\index{fossil fuels},
+If the energy investment to make WWS\index{wind, water, and solar (WWS)} systems comes from fossil fuels\index{fossil fuels},
 significant CO$_2$ will be emitted during the transition
-from today's energy regime to a WWS regime.
+from today's energy regime to a WWS\index{wind, water, and solar (WWS)} regime.
 
 
 %++++++++++++++++++++++++++++++
@@ -1004,14 +1005,16 @@ if the CO$_2$ avoided by renewable generation over the lifetime of a renewable d
 (say, a photovoltaic solar panel\index{solar panel})
 is less than the CO$_2$ embodied
 in the renewable device. 
-That said, many advocates of Green Growth, a Green New Deal, and similar public policies 
+That said, many advocates of Green Growth\index{Green Growth}, 
+a Green New Deal\index{Green New Deal}, and
+similar public policies 
 promote the idea that a transition to green infrastructure, including renewable energy,
 will stimulate economic growth and increase affluence.
 If they are right, 
 a renewables-driven decrease in \XCOtwo{} would lead to an increase in \mft{A}
 in the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX}).
 The strength of each effect (\;\!\XCOtwo{} $\downarrow$, $A \uparrow$) 
-will determine whether Green Growth or a Green New Deal will actually decrease 
+will determine whether Green Growth\index{Green Growth} or a Green New Deal\index{Green New Deal} will actually decrease 
 environmental impacts~\Iparen{} or CO$_2$ emissions\index{CO$_2$ emissions} (\;\!\XCOtwo{} in the prime example).
 
 
@@ -1110,9 +1113,9 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
        
 \item Expanding on the issues raised in the previous questions, 
       nuclear power\index{nuclear energy} has had its own environmental issues. 
-      Disasters such Fukushima Daiichi\index{Fukushima Daiichi},
-      Three-Mile Island\index{Three-Mile Island}, and 
-      Chernobyl\index{Chernobyl} come to mind. 
+      Disasters such Fukushima Daiichi\index{Fukushima Daiichi disaster},
+      Three-Mile Island\index{Three-Mile Island disaster}, and 
+      Chernobyl\index{Chernobyl disaster} come to mind. 
       High-level nuclear waste\index{waste!nuclear} is another. 
       On the other hand, coal-fired power plants\index{coal-fired power plant}
       in the Midwest region have emitted 
@@ -1132,14 +1135,14 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       perspective and why? 
       Are you using a weak\index{weak sustainability} or strong sustainability\index{strong sustainability} criterion?
       
-\item Some people object to wind turbines\index{wind turbine} because they kill birds. 
-      The truth is, all human structures kill birds. 
+\item Some people object to wind turbines\index{wind turbine} because they kill birds\index{bird}. 
+      The truth is, all human structures kill birds\index{bird}. 
       What are the alternatives (to having wind turbines\index{wind turbine} at all)?
       What is the cost/benefit analysis of having wind turbines\index{wind turbines}?
       Who does the analysis and makes the decisions about whether to have wind
       turbines and where to site them?
-      Do birds get a voice in the decision? Should they?
-      If so, who speaks for the birds?
+      Do birds\index{bird} get a voice in the decision? Should they?
+      If so, who speaks for the birds\index{bird}?
       What about other animals, say clams or ants? 
       What about trees or the wind itself?
       What would your assumptions have to be to answer yes to any of these questions?
@@ -1262,12 +1265,14 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         around which they calculated EROI\index{energy return on investment (EROI)}.
         Compare your results to Table~\ref{tab:eroi}.
         
-  \item What would have to be true for the world to be able to implement a 100\% WWS energy system?
+  \item What would have to be true for the world to be able to implement a 100\% WWS\index{wind, water, and solar (WWS)}
+        energy system?
         
   \item It has been argued that the transition to a low-carbon energy regime
         is a \textbf{grand challenge}\index{grand challenge} that will require funding levels 
-        that rival the Apollo program, President Johnson's ``Great Society'' initiatives,
-        and President Reagan's ``Star Wars'' program~\cite{Heun:2008vu}.
+        that rival the Apollo\index{Apollo space program} program, 
+        President Johnson's\index{Johnson, Lyndon B.} ``Great Society''\index{Great Society} initiatives,
+        and President Reagan's\index{Reagan, Ronald} ``Star Wars'' program\index{Star Wars program}~\cite{Heun:2008vu}.
         Find several updated estimates of the costs for these and other large 
         government programs.
         Compare to cost estimates to effect a transition to a low-carbon energy regime.
@@ -1278,9 +1283,10 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
         Where would you locate the solar panels\index{solar panel}?
         What transmission issues would emerge?
   
-  \item What are the other resource implications of a transition to WWS energy sources? 
+  \item What are the other resource implications of a transition to WWS\index{wind, water, and solar (WWS)}
+        energy sources? 
         For example, do we have enough neodymium (Nd)\index{neodymium (Nd)} for the wind turbines\index{wind turbine}
-        required to implement a WWS energy supply? 
+        required to implement a WWS\index{wind, water, and solar (WWS)} energy supply? 
         
   \item Derive Equation~\ref{eq:IPARX_rate} from Equation~\ref{eq:IPARX}.
         You will use (1 + r$_\text{1}$)(1 + r$_\text{2}$) 
@@ -1318,12 +1324,12 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
 
         \end{enumerate}
 
-        Sorrell's propositions suggest that 
+        Sorrell's\index{Sorrell, Steve} propositions suggest that 
         interactions between energy and the economy are so pervasive that
         a deep rethinking of the structure of society is warranted
         if we are to address, in a meaningful way, 
         the sustainability challenges\index{sustainability challenges} that we face.
-        Read Sorrell's paper and write a report that evaluates 
+        Read Sorrell's\index{Sorrell, Steve} paper and write a report that evaluates 
         the five propositions.
         Compare and contrast the five propositions with prevailing cultural norms in your society.
         Assess the necessity, desirability, and feasibility of reconfiguring society 

@@ -656,7 +656,7 @@ or pure coal\index{coal electricity}.
 Figure~\ref{fig:auto_gwp} shows that EVs\index{electric vehicle (EV)} are clearly worse
 than ICE vehicles\index{internal combustion engine (ICE) vehicle}
 in terms of mineral resource depletion~(MRD)\index{resources!mineral!depletion of}.
-The material demands for engine and battery fabrication are much higher for EVs 
+The material demands for engine and battery\index{battery} fabrication are much higher for EVs 
 than for ICE vehicles\index{internal combustion engine (ICE) vehicle}.
 However, EVs\index{electric vehicle (EV)}
 can provide benefits in terms of global warming potential~(GWP)\index{global warming potential (GWP)}
@@ -665,7 +665,7 @@ if the electricity\index{electricity} source includes renewables (as in the ``Re
 because of lower lifetime fuel/electricity\index{electricity} emissions.
 In the case of the Ren20 electricity\index{renewable electricity} mix,
 the global warming benefits of EVs\index{electric vehicle (EV)} are achieved
-despite much larger emissions from battery manufacturing.
+despite much larger emissions from battery\index{battery} manufacturing.
 However, the global-warming benefits of EVs\index{electric vehicle (EV)} evaporate
 when the electricity is generated from coal\index{coal electricity},
 because of higher electricity-related emissions.

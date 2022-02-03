@@ -635,7 +635,7 @@ power_densities %>%
 Figure~\ref{fig:PowerDensity} shows the land-use requirements for different forms of
 energy production. 
 If we are going to make an energy transition to renewable sources 
-(for example, WWS in Section~\ref{sec:low_carbon_transition}), 
+(for example, WWS\index{wind, water, and solar (WWS)} in Section~\ref{sec:low_carbon_transition}), 
 Figure~\ref{fig:PowerDensity} shows that we will need to devote significantly more land
 to energy production.
 Since the amount of land is fixed, either we have to combine energy generation
@@ -651,7 +651,7 @@ each building could be made energy self-sufficient.
 The second option is combining wind\index{wind electricity} and
 solar electricity\index{solar electricity} generation with agriculture, as 
 mentioned in Section~\ref{sec:food_ag_efficiency}. 
-Grazing can occur among wind turbines\index{wind turbines} and 
+Grazing can occur among wind turbines\index{wind turbine} and 
 some crops, such as coffee\index{coffee} and raspberries\index{raspberry}, prefer partial shade.
 Such crops could be grown under a solar PV installation\index{solar panel} with a reduced water demand
 for the plants and more efficiency for the solar panels\index{solar panel}.
