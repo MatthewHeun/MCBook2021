@@ -92,7 +92,7 @@ other examples of environmental impacts caused by resource extraction\index{reso
 
   \item toxic tailings
         from tungsten\index{tungsten (W)}
-        mining operations in Korea~\cite{Lee:2021tz}; and
+        mining operations in Korea\index{Korea}~\cite{Lee:2021tz}; and
 
   \item deforestation\index{deforestation} and
         reduced forest quality~\cite{Kissinger:2020ut}
@@ -292,7 +292,7 @@ There are at least seven often-discussed options for
 transitioning to a low carbon energy supply:
 (a) carbon capture and storage,
 (b) carbon sequestration\index{carbon sequestration},
-(c) carbon takeback obligation,
+(c) carbon takeback obligation (CTBO)\index{carbon takeback obligation (CTBO)},
 (d) carbon tax,
 (e) nuclear electricity\index{nuclear electricity},
 (e) biomass\index{biomass}, and
@@ -359,7 +359,7 @@ Alternatively, direct air capture extracts CO$_2$ from the atmosphere\index{atmo
 typically using huge banks of fans and an adsorbent.
 Direct air capture is extremely energy intensive because of the heat needed
 to regenerate the adsorbents. 
-Additional energy consumption for sequestration
+Additional energy consumption for sequestration\index{carbon sequestration}
 lowers the net EROI\index{energy return on investment (EROI)}
 of fossil energy production; see Section~\ref{sec:masterE}.
 Additionally, because atmospheric CO$_2$ concentrations\index{atmospheric CO$_2$ concentration} are low, massive amounts
@@ -373,7 +373,7 @@ materials.
 Various schemes have been proposed for how to alleviate some or all of these problems,
 but none have been proven to work at scale.
 
-One additional problem with carbon sequestration is selecting the form for 
+One additional problem with carbon sequestration\index{carbon sequestration} is selecting the form for 
 ultimate storage. 
 Geologic storage converts CO$_2$ to liquid form at high pressure and pumps it underground.
 Biologic storage is when carbon is trapped in plant matter, soil, or aquatic
@@ -403,7 +403,7 @@ to permanently sequester the CO$_2$ emitted from the fossil fuels they sell or i
 Industries that emit greenhouse gases (cement making, for example)
 would also be required to sequester their emissions.
 A CTBO does not specify how the sequestration must occur,
-but it specifies who is obliged to perform the sequestration. 
+but it specifies who is obliged to perform the sequestration\index{carbon sequestration}. 
 Under a CTBO, fossil fuel\index{fossil fuels} producers and other emitting industries
 would be free to pass the cost of carbon sequestration\index{carbon sequestration}
 to fossil fuel\index{fossil fuels} users and other product purchasers (cement buyers, for example),
@@ -450,13 +450,13 @@ pay someone else to sequester or reduce carbon emissions\index{CO$_2$ emissions!
 Carbon emissions\index{CO$_2$ emissions!reduction} are traded as a financial instrument.
 A market develops in which emissions and reductions are traded, 
 with competition leading to low prices for net emission reductions.
-As such, carbon offsets 
+As such, carbon offsets\index{carbon offset} 
 enable carbon emitters to shift the responsibility for implementing
 emissions reductions.
 
-Both carbon taxes and carbon offsets are 
+Both carbon taxes\index{carbon tax} and carbon offsets\index{carbon offset} are 
 financial approaches that encourage transitions to a low-carbon energy supply.
-Both taxes and offsets nudge consumer and producer behaviors
+Both taxes\index{carbon tax} and offsets\index{carbon offset} nudge consumer and producer behaviors
 in the direction of low-carbon energy supply.
 
 
@@ -1192,16 +1192,18 @@ Energy Vault simulation:  \\ \url{https://www.vimeo.com/335818817}
       Are there other approach(es)? If so, what are they?
       What assumptions lead you to prefer one approach over another?
 
-\item Should carbon capture and storage/sequestration be pursued as a stop-gap
+\item Should carbon capture and storage/\index{carbon sequestration} be pursued as a stop-gap
       measure (until we get fully renewable energy)?
       What is your criteria for making that decision?
       Under what circumstances would your answer change?
       
-\item The big issue for carbon capture and storage/sequestration (CCS) is who are the 
+\item The big issue for carbon capture and storage (CCS)\index{carbon capture and storage (CCS)} or
+      carbon sequestration\index{sequestration} is who are the 
       stakeholders---who pays and who benefits?
       ``It's too expensive'' is just another way of saying ``we don't value that
       very much.'' Are there legal or financial arrangements that could be made 
-      that would sufficiently incentivize CCS such that it would be profitable?
+      that would sufficiently incentivize CCS\index{carbon capture and storage (CCS)}
+      such that it would be profitable?
       If so, why hasn't this been done already?
 
 \end{questions}
