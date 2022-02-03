@@ -8,7 +8,7 @@
 \chapter{Households}
 \label{chap:households} \index{households}
 %#############################################################
-\epigraph{There is nothing like staying at home for real comfort.}{Jane Austen} 
+\epigraph{There is nothing like staying at home for real comfort.}{Austen, Jane} 
 
 Equation \ref{eq:IPARX} and Chapters~\ref{chap:introduction}--\ref{chap:impact_intensity}
 developed a framework for sustainability thinking. 
@@ -23,7 +23,7 @@ implications and applications of sustainability thinking
 to households.
 Transportation (Chapter~\ref{chap:transportation}), 
 agriculture (Chapter~\ref{chap:agriculture}), and
-land use and urban planning (Chapter~\ref{chap:land_use_urban_planning})
+land use and urban planning\index{urban planning} (Chapter~\ref{chap:land_use_urban_planning})
 are the subjects of the next three chapters.
 The structure of each chapter in Part \ref{part:sustainability_challenges} is similar:
 First, quantity and sources of demand in that particular area are discussed.
@@ -61,10 +61,10 @@ the people who live in it (occupants).
 A housing unit is the structure and its systems, 
 either a detached home, an apartment unit, or a townhouse.
 When we say that households are important for sustainability, 
-we mean all of the structure of the housing unit
+we are referring to the structure of the housing unit
 (roof, walls, and floors), 
 the systems in it the housing unit
-(heating, cooling, and water, for example), and 
+(heating\index{heating system}, cooling\index{cooling system}, and water, for example), and 
 the decisions made by the occupants.
 
 
@@ -210,15 +210,15 @@ proportions of end-use energy consumption\index{energy consumption!residential}
 for the average U.S.\ residence.
 The end uses in Figure~\ref{fig:average_residential_energy}
 can be aggregated to three factors that affect energy demand by households.
-Space heating and cooling
+Space heating\index{space heating} and cooling\index{space cooling}
 make up 54.4\% of all energy consumption in dwellings.
 Hygiene (including water heating and laundry)
 consumes 21.9\% of energy consumption in dwellings.
-Lighting constitutes 4.9\% of total energy use in dwellings.
+Lighting\index{lighting} constitutes 4.9\% of total energy use in dwellings.
 A fourth factor, size and location, is also important.
 
 
-<<average_residential_energy, fig.scap="Proportions of household energy consumption by end use", fig.cap="Proportions of final energy\\index{final energy} consumption in U.S.\\ households by end use in 2015. ``Space heating'' includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. ``Space cooling'' includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. ``Refrigeration'' includes electricity for refrigerators\\index{refrigerator} and standalone freezers. ``Laundry'' includes electricity, natural gas, and propane for clothes washers and dryers. ``Cooking'' includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers\\index{dishwasher}. ``Entertainment'' includes electricity and natural gas for TVs, pool pumps, and hot tubs. ``Other'' includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
+<<average_residential_energy, fig.scap="Proportions of household energy consumption by end use", fig.cap="Proportions of final energy\\index{final energy} consumption in U.S.\\ households by end use in 2015. ``Space heating''\\index{space heating} includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. ``Space cooling''\\index{space cooling} includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. ``Refrigeration'' includes electricity for refrigerators\\index{refrigerator} and standalone freezers. ``Laundry'' includes electricity, natural gas, and propane for clothes washers and dryers. ``Cooking'' includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers\\index{dishwasher}. ``Entertainment'' includes electricity and natural gas for TVs, pool pumps, and hot tubs. ``Other'' includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_category <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "End_use_by_demand_category.xlsx"),
                                                sheet = "data to plot") %>% 
   dplyr::select("Category", "Percentage") %>% 
@@ -247,10 +247,10 @@ household_energy_by_category %>%
 Guided by the aggregation above,
 this section focuses attention on four important drivers for 
 household energy consumption and CO$_2$ emissions\index{CO$_2$ emissions!household}:
-size and location,
-heating and cooling,
-hygiene, and
-lighting.
+(a)~size and location,
+(b)~heating\index{space heating} and cooling\index{space cooling},
+(c)~hygiene\index{hygiene}, and
+(d)~lighting\index{lighting}.
 
 
 %------------------------------
@@ -276,7 +276,7 @@ Taken together, Figures~\ref{fig:NewHousingSize} and~\ref{fig:EnergyConsAndHomeS
 would suggest that residential energy consumption per dwelling is rising through time.
 However, Figure~\ref{fig:AverageHouseholdEnergyConsumption} shows that
 per-household energy consumption is falling over time.
-Improved insulation and 
+Improved insulation\index{insulation} and 
 higher system efficiencies (furnaces and other appliances)
 are reducing energy consumption per housing unit, 
 despite increasing size.
@@ -420,7 +420,7 @@ to enable work, play, dining, and entertainment.
 Figure~\ref{fig:average_residential_energy} shows that
 on average across the U.S.,
 thermal comfort\index{thermal comfort}
-(that is, Space heating and Space cooling)
+(that is, Space heating\index{space heating} and Space cooling\index{space cooling})
 is the purpose of 
 54.4\% of all residential energy consumption.
 
@@ -438,7 +438,7 @@ Windows\index{windows} are an important part of any building's envelope, because
 the provide natural illumination.
 The ideal building envelope would
 eliminate both heat loss in the winter and heat gain in the summer via
-perfect insulation and
+perfect insulation\index{insulation} and
 windows that neither conduct heat nor pass radiation.
 
 
@@ -450,7 +450,7 @@ windows that neither conduct heat nor pass radiation.
 Heating systems
 (often furnaces\index{furnace}, but also boilers\index{boiler}, heat pumps\index{heat pump}, 
 and electric radiant in-floor heating\index{radiant heating})
-provide space heating,
+provide space heating\index{space heating},
 usually from an out-of-the-way location in the dwelling, such as the basement.
 Heating systems convert a fuel 
 (typically natural gas\index{natural gas} or heating oil\index{heating oil} for furnaces and boilers, and
@@ -480,7 +480,7 @@ causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants.
 
 Dwellings consume significant energy and water
 for showers, dish washers, toilets, and clothes washers\index{clothes washer} and dryers\index{clothes dryer}.
-Collectively, these activities may be categorized as ``hygiene.''
+Collectively, these activities may be categorized as ``hygiene.''\index{hygiene}
 
 Clothes washers and dryers\index{clothes washer}\index{clothes dryer}
 consume both water and energy, typically electricity\index{electricity} and natural gas\index{natural gas}.
@@ -488,9 +488,9 @@ Burning natural gas\index{natural gas} emits CO$_2$.
 When the electricity\index{electricity} for washers and dryers comes from fossil fuel\index{fossil fuels} sources, 
 further CO$_2$ emissions\index{CO$_2$ emissions!household} occur.
 
-Hygiene is a significant 
+Hygiene\index{hygiene} is a significant 
 cause of energy consumption in the U.S. 
-Figure~\ref{fig:average_residential_energy} shows that hygiene
+Figure~\ref{fig:average_residential_energy} shows that hygiene\index{hygiene}
 (Water heating and Laundry) demanded 21.9\%
 of U.S.\ final energy\index{final energy} consumption in 2015.
 
@@ -500,17 +500,17 @@ of U.S.\ final energy\index{final energy} consumption in 2015.
 \label{sec:lighting}
 %..............................
 
-Indoor lighting provides illumination for rooms,
+Indoor lighting\index{indoor lighting} provides illumination for rooms,
 typically by consuming electricity\index{fossil fuel electricity} and emitting CO$_2$ if fossil-fuel sources are used.
-Indoor lighting enables work, play, and entertainment
+Indoor lighting\index{indoor lighting} enables work, play, and entertainment
 before sunrise and after sunset. 
-In many areas of the world, artificial indoor lighting 
+In many areas of the world, artificial indoor lighting\index{indoor lighting} 
 extends the economically active portion of the day
 several hours beyond dusk. 
 
-Artificial interior lighting is a significant 
+Artificial interior lighting\index{indoor lighting} is a significant 
 cause of electricity\index{electricity} consumption in most parts of the world. 
-Figure~\ref{fig:average_residential_energy} shows that lighting accounted for 4.9\%
+Figure~\ref{fig:average_residential_energy} shows that lighting\index{lighting} accounted for 4.9\%
 of U.S.\ final energy\index{final energy} consumption in 2015.
 
 
@@ -521,7 +521,7 @@ of U.S.\ final energy\index{final energy} consumption in 2015.
 
 Energy consumption by households is a significant sustainability challenge.
 If the goal is to provide the same energy services\index{energy service} in households
-(space heating and cooling, hygiene, and lighting) 
+(space heating\index{space heating} and cooling\index{space cooling}, hygiene\index{hygiene}, and lighting\index{lighting}) 
 with less energy consumption, 
 efficiency plays a big role in becoming more sustainable.
 This section discusses sustainability challenges in each 
@@ -570,12 +570,12 @@ without the drawbacks?''
 
 The ideal building envelope would
 eliminate both heat loss in the winter and heat gain in the summer via
-perfect insulation.
+perfect insulation\index{insulation}.
 Like walls and roofs, it would be desirable for windows to eliminate
 heat loss in the winter and heat gain the summer.
 The perfect window would provide illumination and
 neither conduct heat nor pass thermal radiation.
-But perfect insulation is not possible, and all windows conduct heat and
+But perfect insulation\index{insulation} is not possible, and all windows conduct heat and
 pass thermal radiation.
 In fact, windows are typically worse insulators than walls and roofs,
 owing to thin glazing.
@@ -584,19 +584,19 @@ are needed to replace heat lost in winter and remove heat gained in the summer.
 
 The effectiveness of roof and wall insulation\index{insulation}
 is quantified by its \textbf{R-value}\index{R-value},
-a measure of the resistance to heat transfer through the insulation material
+a measure of the resistance to heat transfer through the insulation\index{insulation} material
 quantified in units of hr$\cdot$ft$^2\cdot$\degF/BTU.
 Higher R-values\index{R-value} mean less heat is transferred.
 Large R-values\index{R-value} are achieved with
-thicker insulation constructed from low-thermal-conductivity materials.
+thicker insulation\index{insulation} constructed from low-thermal-conductivity materials.
 Halving the amount of heat that passes means doubling the thickness of the 
-insulation.
-Thicker and thicker layers of insulation are needed to obtain ever-smaller 
+insulation\index{insulation}.
+Thicker and thicker layers of insulation\index{insulation} are needed to obtain ever-smaller 
 fractions of heat transfer reduction. 
-Thus, insulation is subject to diminishing returns in its effectiveness,
-and there is a practical and economic optimum level of insulation.
+Thus, insulation\index{insulation} is subject to diminishing returns in its effectiveness,
+and there is a practical and economic optimum level of insulation\index{insulation}.
 The \textbf{Energy Star}\index{Energy Star} program recommends levels of roof, wall, and
-floor insulation~\cite{U.S.-Department-of-Energy:aa}.
+floor insulation\index{insulation}~\cite{U.S.-Department-of-Energy:aa}.
 In Northern US climates, R-values\index{R-value} of 49--60 hr$\cdot$ft$^2\cdot$\degF/BTU are recommended.
 
 The insulative properties of windows are quantified by the \textbf{U-factor}\index{U-factor},
@@ -617,12 +617,12 @@ energy efficient and affordable?''
 
 An interesting tradeoff exists between energy (and CO$_2$) embodied in structures
 and energy consumed in daily life.
-A home builder could install extra insulation,
+A home builder could install extra insulation\index{insulation},
 more than local building codes require.
 Doing so decreases energy consumption and CO$_2$ emissions \index{CO$_2$ emissions!household}
 while the home is in use.
 However, the home will embody more energy and carbon,
-because many insulation types
+because many insulation\index{insulation} types
 are energy-intensive to manufacture (especially foam). 
 A sustainability challenge associated with embodied energy\index{sustainability challenges!embodied energy} 
 is ``how do we ensure highly-insulative building envelopes
@@ -714,7 +714,7 @@ and
 \label{sec:hygiene_challenges}
 %++++++++++++++++++++++++++++++
 
-Water heating is the primary source of energy demand for hygiene in households.
+Water heating is the primary source of energy demand for hygiene\index{hygiene} in households.
 The efficiency of water heaters is quantified by a \textbf{Uniform Energy Factor (UEF)}\index{Uniform Energy Factor (UEF)}, 
 a measure of energy required to deliver warm water 
 (in the first hour for tank-style water heaters and as a rate for tankless water heaters).
@@ -731,7 +731,7 @@ high-efficiency units, despite high initial cost?''
 \label{sec:lighting_challenges}
 %++++++++++++++++++++++++++++++
 
-Artificial lighting can be provided by many technologies.
+Artificial lighting\index{lighting} can be provided by many technologies.
 Today, LED lamps\index{LED lamp} 
 use one-eighth the energy 
 of equivalent \textbf{incandescent lamps}\index{incandescent lamp}.
@@ -750,7 +750,7 @@ despite higher initial cost?''
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth) \label{page:efficiency_efficacy}
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Lighting is one of many areas where 
+Lighting\index{lighting} is one of many areas where 
 the effectiveness of a device is better described by a
 \textbf{energy service efficacy}\index{energy service efficacy} than by an
 energy efficiency\index{energy efficiency}.
@@ -771,7 +771,7 @@ for a service efficacy\index{energy service efficacy} of 12.3~lumens/W.
 A 100-W equivalent LED lamp\index{LED lamp} gives 1200~lumens but consumes only 12~W of electricity\index{electricity},
 for a service efficacy\index{energy service efficacy} of 100~lumens/W.
 LED lamps\index{LED lamp} are 8 times better than incandescent lamps\index{incandescent lamp} at providing 
-their energy service\index{energy service}, lighting.
+their energy service\index{energy service}, lighting\index{lighting}.
 
 The move from energy efficiency\index{energy efficiency} to service efficacy\index{energy service efficacy}
 can often reveal sustainability opportunities.
@@ -806,8 +806,8 @@ because they can point toward sustainability benefits.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 In the areas discussed above
-(size and location, heating and cooling, 
-hygiene, and lighting), 
+(size and location, heating\index{space heating} and cooling\index{space cooling}, 
+hygiene\index{hygiene}, and lighting), 
 sustainability transitions take the form of 
 obtaining the same energy services\index{energy service}
 with less resources consumption, especially energy. 
@@ -969,21 +969,21 @@ using a cold-water cycle, and line drying clothes\index{clothing}.
 
 After Edison's invention of the electric light\index{electric lamp},
 filament-based incandescent lighting technology\index{incandescent lamp}
-dominated household lighting.
+dominated household lighting\index{lighting}.
 However, in recent years,
 Compact Fluorescent Lights (CFLs)\index{CFL lamp} and
 Light-Emitting Diode (LED) lamps\index{LED lamp} have revolutionized
-the lighting industry and improved lighting efficiency significantly.
+the lighting\index{lighting} industry and improved lighting efficacy\index{lighting efficacy} significantly.
 
 In the U.S., a transition to LED lamps\index{LED lamp} is well underway,
 with incandescent\index{incandescent lamp} and CFL lamps\index{CFL lamp} usually not available in stores.
-The lighting transition in the U.S.\ has been hastened
+The lighting\index{lighting} transition in the U.S.\ has been hastened
 by point-of-purchase subsidies for LED lamps\index{LED lamp}
 and by in-home energy-efficiency audits offered by utilities.
 
 Of course, the least expensive lamp is the one you don't need to use.
 Building design techniques such as \textbf{light harvesting}\index{light harvesting}
-use natural light to reduce the need for artificial indoor lighting.
+use natural light to reduce the need for artificial indoor lighting\index{lighting}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -997,9 +997,9 @@ Energy and material consumption decisions by household members
 drives sustainability in the home. 
 Key areas of decision making include
 size and location, 
-heating and cooling,
-hygiene, and
-lighting, 
+heating\index{space heating} and cooling\index{space cooling},
+hygiene\index{hygiene}, and
+lighting\index{lighting}, 
 because many homeowners have agency in these areas of everyday life.
 
 This chapter illustrates two fundamental tradeoffs for sustainability.
@@ -1053,7 +1053,8 @@ United States, 1999: \\
 \begin{questions}
 
 \item This chapter covered five important aspects of household sustainability
-      (size, location, heating and cooling, hygiene, and lighting).
+      (size, location, heating\index{space heating} and cooling\index{space cooling}, 
+      hygiene\index{hygiene}, and lighting\index{lighting}).
       Which is most important and why?
       What additional areas of household living are important
       from a sustainability point of view?
@@ -1196,7 +1197,7 @@ United States, 1999: \\
       Be sure to think about historic preservation value and technology 
       appropriate for old structures.
       For new homes, what does it take to implement standards for 
-      higher system efficiencies and enhanced insulation?
+      higher system efficiencies and enhanced insulation\index{insulation}?
       You might want to investigate the passive house movement, 
       the living building challenge, net zero homes and 
       Joe Lstiburek (Section~\ref{sec:stories_individual_actions}).
@@ -1261,7 +1262,7 @@ United States, 1999: \\
       What is the purpose of these activities?
       How do they contribute to sustainability?
       What would be the effect on household emissions if every home in the U.S.\
-      were retrofitted with higher-efficiency appliances and more insulation?
+      were retrofitted with higher-efficiency appliances and more insulation\index{insulation}?
       
 \item With reference to \ref{question:household_policies},
       make a sustainability-related benefits/drawbacks ledger for each policy, 
@@ -1308,7 +1309,7 @@ United States, 1999: \\
       compact fluorescent lamps\index{CFL lamp} in your dwelling, and 
       consider changing to LEDs\index{LED lamp}.
       Be sure to choose LEDs\index{LED lamp} with similar lumen output so there will be minimal change
-      in lighting service provided.
+      in lighting service\index{lighting service} provided.
       What is the cost to purchase and install the new lamps.
       How much energy will be saved annually?
       How much CO$_2$ emissions\index{CO$_2$ emissions!lighting} will be saved annually?
