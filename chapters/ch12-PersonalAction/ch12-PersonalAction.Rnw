@@ -343,7 +343,7 @@ and how they are operated.
 %..............................
 
 Choosing a used home or apartment
-will prevent additional carbon being embodied in the housing stock.
+will prevent additional carbon\index{embodied carbon} being embodied in the housing stock.
 Choosing a smaller home will reduce carbon emissions\index{CO$_2$ emissions!reduction} 
 associated with heating and cooling.
 Choosing a home or apartment closer to work, school, grocery stores, and church
@@ -431,7 +431,7 @@ in transportation.
 \paragraph{Individual+Choices+Transportation}
 Individuals can decide which vehicles to buy or lease.
 Choosing a used vehicle
-will prevent additional carbon being embodied in a new vehicle.
+will prevent additional carbon being embodied\index{embodied carbon} in a new vehicle.
 Choosing a smaller car will reduce carbon emissions\index{CO$_2$ emissions!transportation} 
 associated with commuting.
 Individuals should not ``over buy'' cars.
@@ -447,7 +447,7 @@ Don’t fly.
 Individuals can choose to live in a cities, which, on a per-person basis
 emit less CO$_2$ than suburban areas~\cite{Jones:2014tf}.
 Indeed, the most sustainable transportation is often public transportation
-where vehicle occupancy is high and everyone shares the carbon embodied in the
+where vehicle occupancy is high and everyone shares the carbon embodied\index{embodied carbon} in the
 buses, trains, trolleys, or subways. 
 Choosing to walk or bike (Figure~\ref{fig:commuting_bicycle}), 
 usually only possible in cities,
@@ -503,8 +503,8 @@ food production and consumption.
 
 Probably the most important and high-impact activity an individual can take around
 food is to reduce as much as possible the amount of food waste\index{food waste} they generate.
-All food embodies resources (such as energy) and emissions.
-Wasting food means that no benefits come from those embodied resources and emissions.
+All food embodies resources (such as energy\index{embodied energy}) and emissions\index{embodied carbon}.
+Wasting food means that no benefits come from those embodied resources and emissions\index{embodied carbon}.
 After minimizing food waste\index{food waste}, 
 individuals can adopt a climate-friendly or climate-friendlier diet.
 Typically climate-friendly diets involve reductions to meat consumption, particularly beef.
@@ -934,8 +934,9 @@ Wangari Maathai, and Joseph Lstiburek.
 \item Analyze any changes suggested by the results of project 
       \ref{project:personal_energy_audit}
       in three ways: from a cost/benefit standpoint (that is, monetary), 
-      in terms of embodied energy versus energy savings, 
-      and in terms of embodied carbon emissions versus carbon emissions\index{CO$_2$ emissions!reduction} reductions 
+      in terms of embodied energy\index{embodied energy} versus energy savings, 
+      and in terms of embodied carbon emissions\index{embodied carbon} versus
+      carbon emissions\index{CO$_2$ emissions!reduction} reductions 
       (resulting from the energy you would save).
       Are the changes you are considering warranted under any of the three
       analyses?

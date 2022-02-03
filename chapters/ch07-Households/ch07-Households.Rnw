@@ -106,7 +106,7 @@ Total U.S.\ energy consumption by households
 has been climbing slowly since the 1970s; 
 see Figure~\ref{fig:TotalHouseholdEnergyConsumption}.
 Increasing energy efficiency\index{energy efficiency} of appliances and improvements to building envelopes 
-(roof, walls, windows, and base of a dwelling)
+(roof, walls, windows\index{window}, and base of a dwelling)
 have decreased the energy consumption per housing unit;
 see Figure~\ref{fig:AverageHouseholdEnergyConsumption}.
 But the number of housing units is rising.
@@ -218,7 +218,7 @@ Lighting\index{lighting} constitutes 4.9\% of total energy use in dwellings.
 A fourth factor, size and location, is also important.
 
 
-<<average_residential_energy, fig.scap="Proportions of household energy consumption by end use", fig.cap="Proportions of final energy\\index{final energy} consumption in U.S.\\ households by end use in 2015. ``Space heating''\\index{space heating} includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. ``Space cooling''\\index{space cooling} includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. ``Refrigeration'' includes electricity for refrigerators\\index{refrigerator} and standalone freezers. ``Laundry'' includes electricity, natural gas, and propane for clothes washers and dryers. ``Cooking'' includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers\\index{dishwasher}. ``Entertainment'' includes electricity and natural gas for TVs, pool pumps, and hot tubs. ``Other'' includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
+<<average_residential_energy, fig.scap="Proportions of household energy consumption by end use", fig.cap="Proportions of final energy\\index{final energy} consumption in U.S.\\ households by end use in 2015. ``Space heating''\\index{space heating} includes electricity, natural gas, propane, and fuel oil for direct heating, humidifiers, and air handlers. ``Space cooling''\\index{space cooling} includes electricity for air conditioners, evaporative coolers, ceiling fans, dehumidifiers, and air handlers. ``Refrigeration'' includes electricity for refrigerators\\index{refrigerator} and standalone freezers. ``Laundry'' includes electricity, natural gas, and propane for clothes washers\\index{clothes washer} and dryers\\index{clothes dryer}. ``Cooking'' includes electricity, natural gas, and propane for stoves, microwaves, and dishwashers\\index{dishwasher}. ``Entertainment'' includes electricity and natural gas for TVs, pool pumps, and hot tubs. ``Other'' includes outdoor cooking, gas lighting, and energy sold to consumers but not accounted in household energy consumption surveys. \\emph{Source}: \\citet{U.S.-Department-of-Energy:2018uz}.">>=
 household_energy_by_category <- readxl::read_excel(file.path("chapters", "ch07-Households", "datasets", "End_use_by_demand_category.xlsx"),
                                                sheet = "data to plot") %>% 
   dplyr::select("Category", "Percentage") %>% 
@@ -431,15 +431,15 @@ is the purpose of
 %..............................
 
 The purpose of a building envelope\index{building envelope}
-(roof, walls, windows, and base of a dwelling)
+(roof, walls, windows\index{window}, and base of a dwelling)
 is to shield occupants from outside weather and
 to maintain dry and comfortable conditions indoors.
-Windows\index{windows} are an important part of any building's envelope\index{building envelope}, because
+Windows\index{window} are an important part of any building's envelope\index{building envelope}, because
 the provide natural illumination.
 The ideal building envelope\index{building envelope} would
 eliminate both heat loss in the winter and heat gain in the summer via
 perfect insulation\index{insulation} and
-windows that neither conduct heat nor pass radiation.
+windows\index{window} that neither conduct heat nor pass radiation.
 
 
 %..............................
@@ -479,13 +479,15 @@ causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants.
 %------------------------------
 
 Dwellings consume significant energy and water
-for showers, dish washers, toilets, and clothes washers\index{clothes washer} and dryers\index{clothes dryer}.
+for showers\index{shower}, dish washers\index{dish washer},
+toilets\index{toilet}, and clothes washers\index{clothes washer} and dryers\index{clothes dryer}.
 Collectively, these activities may be categorized as ``hygiene.''\index{hygiene}
 
 Clothes washers and dryers\index{clothes washer}\index{clothes dryer}
 consume both water and energy, typically electricity\index{electricity} and natural gas\index{natural gas}.
 Burning natural gas\index{natural gas} emits CO$_2$.
-When the electricity\index{electricity} for washers and dryers comes from fossil fuel\index{fossil fuels} sources, 
+When the electricity\index{electricity} for washers\index{clothes washer} and
+dryers\index{clothes dryer} comes from fossil fuel\index{fossil fuels} sources, 
 further CO$_2$ emissions\index{CO$_2$ emissions!household} occur.
 
 Hygiene\index{hygiene} is a significant 
@@ -522,8 +524,8 @@ of U.S.\ final energy\index{final energy} consumption in 2015.
 Energy consumption by households is a significant sustainability challenge.
 If the goal is to provide the same energy services\index{energy service} in households
 (space heating\index{space heating} and cooling\index{space cooling}, hygiene\index{hygiene}, and lighting\index{lighting}) 
-with less energy consumption, 
-efficiency plays a big role in becoming more sustainable.
+with less energy consumption and fewer environmental impacts, 
+efficacy\index{efficacy} plays a big role in becoming more sustainable.
 This section discusses sustainability challenges in each 
 energy service\index{energy service} discussed above.
 
@@ -571,13 +573,13 @@ without the drawbacks?''
 The ideal building envelope\index{building envelope} would
 eliminate both heat loss in the winter and heat gain in the summer via
 perfect insulation\index{insulation}.
-Like walls and roofs, it would be desirable for windows to eliminate
+Like walls and roofs, it would be desirable for windows\index{windows} to eliminate
 heat loss in the winter and heat gain the summer.
-The perfect window would provide illumination and
+The perfect window\index{window} would provide illumination and
 neither conduct heat nor pass thermal radiation.
-But perfect insulation\index{insulation} is not possible, and all windows conduct heat and
+But perfect insulation\index{insulation} is not possible, and all windows\index{window} conduct heat and
 pass thermal radiation.
-In fact, windows are typically worse insulators than walls and roofs,
+In fact, windows\index{window} are typically worse insulators than walls and roofs,
 owing to thin glazing.
 Therefore, heating systems and air conditioners\index{air conditioners}
 are needed to replace heat lost in winter and remove heat gained in the summer.
@@ -599,15 +601,15 @@ The \textbf{Energy Star}\index{Energy Star} program recommends levels of roof, w
 floor insulation\index{insulation}~\cite{U.S.-Department-of-Energy:aa}.
 In Northern US climates, R-values\index{R-value} of 49--60 hr$\cdot$ft$^2\cdot$\degF/BTU are recommended.
 
-The insulative properties of windows are quantified by the \textbf{U-factor}\index{U-factor},
+The insulative properties of windows\index{window} are quantified by the \textbf{U-factor}\index{U-factor},
 which is the inverse of an R-value\index{R-value}.
-Typical U-factors\index{U-factor} for windows are 0.2--1.2 BTU/hr$\cdot$ft$^2\cdot$\degF.
-(Corresponding window R-values\index{R-value} are 5--0.83 hr$\cdot$ft$^2\cdot$\degF/BTU.)
+Typical U-factors\index{U-factor} for windows\index{window} are 0.2--1.2 BTU/hr$\cdot$ft$^2\cdot$\degF.
+(Corresponding window\index{window} R-values\index{R-value} are 5--0.83 hr$\cdot$ft$^2\cdot$\degF/BTU.)
 Lower U values are more insulative.
 Heat gain from solar radiation is quantified by the
 \textbf{solar heat gain coefficient (SHGC)}\index{solar heat gain coefficient (SHGC)},
 the ratio of solar energy that enters the room to
-solar energy incident upon the window.
+solar energy incident upon the window\index{window}.
 SHGC\index{solar heat gain coefficient (SHGC)} values range from 0 to 1,
 and lower SHGC\index{solar heat gain coefficient (SHGC)}
 values indicate better insulative properties.
@@ -615,18 +617,19 @@ A sustainability challenge associated with the building envelope\index{sustainab
 is ``how do we design livable and enjoyable spaces that are 
 energy efficient and affordable?''
 
-An interesting tradeoff exists between energy (and CO$_2$) embodied in structures
+An interesting tradeoff exists between energy\index{embodied energy} (and CO$_2$\index{embodied carbon})
+embodied in structures
 and energy consumed in daily life.
 A home builder could install extra insulation\index{insulation},
 more than local building codes require.
 Doing so decreases energy consumption and CO$_2$ emissions \index{CO$_2$ emissions!household}
 while the home is in use.
-However, the home will embody more energy and carbon,
+However, the home will embody more energy\index{embodied energy} and carbon\index{embodied carbon},
 because many insulation\index{insulation} types
 are energy-intensive to manufacture (especially foam). 
 A sustainability challenge associated with embodied energy\index{sustainability challenges!embodied energy} 
 is ``how do we ensure highly-insulative building envelopes\index{building envelope}
-with minimal embodied energy?''
+with minimal embodied energy?''\index{embodied energy}
 
 
 %..............................
@@ -913,7 +916,7 @@ improves in the stock of housing.
 \label{sec:hygiene_transition}
 %++++++++++++++++++++++++++++++
 
-To minimize environmental impacts of showering and dish washing,
+To minimize environmental impacts of showering\index{shower} and dish washing\index{dish washer},
 low-flow showerheads\index{low-flow showerhead} and faucets\index{low-flow faucet}
 can be installed.
 Low-flow showerheads\index{low-flow showerhead} and faucets\index{low-flow faucet} provide the obvious benefit of
@@ -924,10 +927,10 @@ decrease the amount of gray water entering the sewer system (with ``downstream''
 energy and cost savings).
 If less water is consumed for cooking and bathing,
 energy consumption and CO$_2$ emissions\index{CO$_2$ emissions!household} are reduced.
-In addition, gray water reuse systems can provide water for irrigation and toilet flushing,
+In addition, gray water reuse systems can provide water for irrigation and toilet\index{toilet} flushing,
 thereby reducing clean water demand.
 
-Saving water and energy in dish washing can be accomplished by purchasing a
+Saving water and energy in dish washing\index{dish washer} can be accomplished by purchasing a
 high-efficiency \textbf{automatic dishwasher}\index{dishwasher}.
 The Energy Star\index{Energy Star} program provides 
 information about energy-saving dishwashers\index{dishwasher}~\cite{U.S.-Department-of-Energy:vn}.
@@ -955,7 +958,8 @@ Lower volumes of treatment, distribution, and sewage
 will mean cost and energy savings for municipalities and 
 could mean smaller plants and public works.
 
-Purchasing washers and dryers with Energy Star\index{Energy Star} ratings can reduce
+Purchasing washers\index{clothes washer} and dryers\index{clothes dryer} 
+with Energy Star\index{Energy Star} ratings can reduce
 energy and water consumption by 25\% and 33\%,
 respectively~\cite{U.S.-Department-of-Energy:tc, U.S.-Department-of-Energy:vd}.
 Energy can be saved by washing clothes\index{clothing} less frequently,
@@ -1069,7 +1073,8 @@ United States, 1999: \\
             from water heating\index{CO$_2$ emissions!water heating}),
       \item outlaw automatic dishwashers\index{dishwasher} (to reduce energy consumption for water heating),
       \item require all clothes washing\index{clothes washer}
-            to be done at laundromats (to reduce embodied energy of clothes washers in every home),
+            to be done at laundromats (to reduce embodied energy\index{embodied energy}
+            of clothes washers\index{clothes washer} in every home),
       \item require all homes to undergo an energy efficiency\index{energy efficiency}
             retrofit before going on the market to be sold
             (to improve energy efficiency\index{energy efficiency} of the housing stock),
@@ -1174,7 +1179,7 @@ United States, 1999: \\
       
 \item One thing that you can do to make your housing unit more energy efficient
       is to eat every meal at a restaurant. Think of all energy you will save!
-      No need for freezers, refrigeration, cooking, or dish washing. 
+      No need for freezers, refrigeration, cooking, or dish washing\index{dish washer}. 
       Figure~\ref{fig:average_residential_energy} shows these categories
       are 10.4\% of the energy use by an average household.
       What is wrong with this analysis?
@@ -1247,9 +1252,9 @@ United States, 1999: \\
       to the financial considerations of this project?
 
 \item Rank the U-factor\index{U-factor} and solar heat gain coefficient (SHGC)\index{solar heat gain coefficient (SHGC)}
-      for single-, double-, and triple-paned windows.
+      for single-, double-, and triple-paned windows\index{windows}.
       Does the ranking make sense?
-      Rank the costs of the windows.
+      Rank the costs of the windows\index{window}.
 
 \item If you are a college or university student,
       write a letter to yourself that describes
@@ -1281,13 +1286,15 @@ United States, 1999: \\
       where neighbors meet to discuss municipal affairs as they do their laundry.
       On the other hand, time lost to commuting to the laundromat might mean that other relationships suffer.
       If all clothes\index{clothing} were laundered at laundromats\index{laundromat}, 
-      fewer washers and dryers would be needed, resulting in less energy and CO$_2$ embodied 
+      fewer washers\index{clothes washer} and dryers\index{clothes dryer}
+      would be needed, resulting in less energy\index{embodied energy} and CO$_2$ embodied\index{embodied carbon} 
       in the stock of laundry equipment.
-      But laundromats will likely have larger commercial washers and dryers. 
-      Would they be less energy efficient than smaller domestic washers and dryers?
+      But laundromats will likely have larger commercial washers\index{clothes washer} and dryers\index{clothes dryer}. 
+      Would they be less energy efficient than smaller domestic washers\index{clothes washer} and dryers\index{clothes dryer}?
       Many people will need to drive to laundromats to do laundry, increasing transport-related
       CO$_2$ emissions\index{CO$_2$ emissions!transportation}.
-      Finally, washers and dryers would no longer be purchased, thereby saving money. 
+      Finally, washers\index{clothes washer} and dryers\index{clothes dryer}
+      would no longer be purchased, thereby saving money. 
       But the marginal cost of a load of laundry may be higher at a laundromat compared 
       to home-based laundry. 
       Is it a long-term financial benefit to do all your laundry at a laundromat? 
