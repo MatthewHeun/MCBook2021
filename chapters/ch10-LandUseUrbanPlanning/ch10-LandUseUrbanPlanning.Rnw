@@ -4,7 +4,7 @@
 %!TEX root = ../../book.Rnw
 
 %#############################################################
-\chapter{Land use} %and urban planning
+\chapter{Land use}
 \label{chap:land_use_urban_planning}
 %#############################################################
 
@@ -921,7 +921,7 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       to the role of grazing herds.
       \label{project:restoring_temperate_grasslands}
 
-\item Research the field of urban planning.  How has it changed over time?  
+\item Research the field of urban planning\index{urban planning}.  How has it changed over time?  
       What are its current goals?  
       How is sustainability more prominent today than 50 years ago?
       
@@ -947,12 +947,12 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       capacity on Black Friday, the busiest shopping day of the year.
       \label{project:STBFparking}
 
-\item Urban planning can look very different in a growing economy (such as China\index{China}) 
+\item Urban planning\index{Urban planning} can look very different in a growing economy (such as China\index{China}) 
       compared to an established economy (such as the United Kingdom).  
       Compare and contrast the questions urban planners face and the goals for urban 
       planning in each type of economy.
 
-\item There is a well-known field called ``urban planning.''  
+\item There is a well-known field called ``urban planning.''\index{urban planning}  
       But much less attention is paid to ``rural planning.''
       Compare and contrast urban and rural planning.  
       (Hint: Other terms to be aware of include ``landscape architecture,'' 

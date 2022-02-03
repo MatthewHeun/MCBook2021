@@ -61,15 +61,15 @@ passenger-km and tonne-km for personal and freight transportation, respectively.
 Provision of U.S.\ transportation services\index{transportation service} by various modes of travel
 is shown in Figures~\ref{fig:passengerkm_by_mode}
 and~\ref{fig:tonnekm_by_mode}.
-(Note that passenger transport is quantified in passenger-km
-and freight transport is quantified in tonne-km---different units 
+(Note that passenger transportation is quantified in passenger-km
+and freight transportation is quantified in tonne-km---different units 
 for different services.)
 Figure~\ref{fig:passengerkm_by_mode} shows that 
-passenger transport demand is fulfilled almost exclusively by ``highway''
+passenger transportation demand is fulfilled almost exclusively by ``highway''
 in the U.S.,
 meaning automobiles\index{automobile} travelling on roads.
 In contrast, Figure~\ref{fig:tonnekm_by_mode} shows that 
-freight transport demand is satisfied by a variety of modes.
+freight transportation demand is satisfied by a variety of modes.
 
 
 <<passengerkm_by_mode, fig.scap="Personal transportation vs.\\ time by mode", fig.cap="U.S.\\ passenger-km of personal transportation vs.\\ time by mode. ``Intercity'' is rail travel via Amtrak. ``Transit'' is public transit of all types (ferry, subway, bus, and others). ``Air'' is U.S.\\ domestic air carriers. ``Highway'' is automobile\\index{automobile} traffic. ``pass'' means passenger. \\emph{Source}: \\citet{passenger_km}.">>=
@@ -134,7 +134,7 @@ calculates a monthly measure of transportation services\index{transportation ser
 output called thee \textbf{Transportation Services Index
 (TSI)}\index{Transportation Services Index (TSI)}~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk},
 which is a weighted and indexed measure of
-freight traffic and passenger transport 
+freight traffic and passenger transportation 
 in the for-hire transportation industries.
 Figure~\ref{fig:TSI} shows the variation of the TSI over time.
 (See \citet{Young:2014uh} for information about the index
@@ -145,7 +145,7 @@ for transportation services\index{transportation service} and
 (b) recessions (2009) and pandemics (2020)
 reduce demand for transportation services\index{transportation service}.
 In fact, the correlation between economic growth and freight transportation growth
-is so strong that the BTS claims transport is a good indicator for economic activity
+is so strong that the BTS claims transportation is a good indicator for economic activity
 at the macro level~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021tn}.
 The tight links between transportation and economic growth
 are one reason that economic growth and energy consumption are correlated.
@@ -250,7 +250,7 @@ CO$_2$ emissions\index{CO$_2$ emissions!transportation} from burning fossil fuel
 
 A significant challenge to higher occupancy cars and higher capacity trucks
 is the \textbf{last mile problem}\index{last mile problem}~\cite{World-Economic-Forum:2020wf},
-the expensive and time-intensive transport of goods
+the expensive and time-intensive transportation of goods
 on the last leg of their journey to 
 consumers and businesses.
 Typically, the last leg involves moving goods from a distribution center
@@ -293,7 +293,7 @@ last_mile %>%
 \paragraph{The first mile}\index{first mile problem}
 %..............................
 
-Another sustainability challenge for transport is 
+Another sustainability challenge for transportation is 
 the \textbf{first mile problem}\index{first mile problem}
 for mass transit.
 In low-population-density\index{population density} areas, 
@@ -317,7 +317,7 @@ Concerns about the effects of PM
 on human health go back millennia, and with good cause.
 PM emissions are ``the main contributor to human health effects 
 [by air pollution\index{pollution!air}] by some margin''~\cite{Fowler2020}.
-PM ``is also the form in which most of the long-range transport 
+PM ``is also the form in which most of the long-range transportation 
 of sulfur and nitrogen-containing pollutants occurs''~\cite{Fowler2020}.
 Hippocrates (circa 400 BC) was concerned about the effects of wood smoke on human health.
 Later, when coal\index{coal} emerged as a fuel for home heating, power generation, and
@@ -329,7 +329,7 @@ Since the mid-twentieth century, air quality in North America, Europe, and Japan
 has improved.
 However, emissions in South and East Asia rose in the late twentieth and early 
 twenty-first centuries. 
-Global SO$_2$ emissions from transport peaked about 1990, and
+Global SO$_2$ emissions from transportation peaked about 1990, and
 global NO$_\text{x}$ emissions peaked around 2018. 
 Global ammonia emissions, a key contributor to PM, 
 continue to grow, however.
@@ -390,7 +390,7 @@ transport_GHG %>%
 @
 
 
-It is clear that the transport sector needs to change
+It is clear that the transportation sector needs to change
 if we are to become more sustainable. 
 The next section discusses possible transitions
 to achieve more sustainable passenger and freight transport.
@@ -421,7 +421,7 @@ Areas with high population density\index{population density} (cities) can be ser
 mass transit systems.
 (See Chapter~\ref{chap:land_use_urban_planning} 
 for more details of the sustainability implications 
-of land use and urban planning.)
+of land use and urban planning\index{urban planning}.)
 
 
 %++++++++++++++++++++++++++++++
@@ -507,12 +507,12 @@ So another way to measure vehicle effectiveness is the ratio of transportation s
 to fuel volume consumed.
 Transportation service efficacy\index{transportation service efficacy}
 is quantified in units of passenger-km/liter or tonne-km/liter
-for passenger transport and freight transport, respectively.
+for passenger transportation and freight transportation, respectively.
 This simple shift from machine efficacy (miles/gallon) 
 to transportation service efficacy\index{transportation service efficacy} (passenger-km/liter)
 exposes the sustainability opportunity presented by Figure~\ref{fig:commuter_percentage_by_mode}.
 When more than three-quarters of all commutes are taken in single-occupant vehicles,
-a simple way to improve the effectiveness of passenger transport is to increase
+a simple way to improve the effectiveness of passenger transportation is to increase
 the occupancy of vehicles.
 Similarly for freight transport,
 the simplest way to increase transportation efficiency is to ensure that trucks and trains
@@ -741,7 +741,7 @@ Sustainability aspects of transport,
 especially energy consumption, fuel economy\index{fuel economy},
 and climate\index{climate} change (the prime example of Part~\ref{part:IPARX})
 were discussed.
-Finally, transitions to a sustainable transport system were discussed
+Finally, transitions to a sustainable transportation system were discussed
 including transportation efficacy\index{transportation efficacy},
 biofuels\index{biofuel}, and electric vehicles\index{electric vehicle (EV)}.
 
@@ -842,7 +842,7 @@ transportation, petroleum\index{petroleum}, and technology.
       Consider, as completely as possible, all the different ways it would 
       be possible to travel from Chicago to Seattle, a distance of just over 2000
       miles (3200 km). 
-      Which transport mode will have the least emissions?
+      Which transportation mode will have the least emissions?
       Which would be the most expensive?
       What boundaries are you using and what assumptions are you making?
       
@@ -1080,16 +1080,16 @@ transportation, petroleum\index{petroleum}, and technology.
       of each mile of road construction and rail construction.
       Would a transition from road travel to rail travel improve or reduce
       the sustainability of transport?  
-      Does the answer to the previous question change if people or freight transport is considered?
+      Does the answer to the previous question change if people or freight transportation is considered?
       
 \item Research the key natural resources required to make batteries for EVs. 
       What are the sources for those resources?
       Under what social and political conditions are the key resources extracted from the environment and
       processed for inclusion in batteries?
-      What would be the sustainability implications of transitioning all road transport to EVs?
+      What would be the sustainability implications of transitioning all road transportation to EVs?
       
 \item On a mode-by-mode basis, assess the opportunities and barriers for making each 
-      transport mode more sustainable.  
+      transportation mode more sustainable.  
       Also estimate the costs of transitioning each mode.
       Compare the costs to the U.S.\ GDP.
 
