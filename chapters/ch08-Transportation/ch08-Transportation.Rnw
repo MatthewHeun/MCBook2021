@@ -546,10 +546,10 @@ for a fuller discussion of the issues surrounding these concepts.
 %++++++++++++++++++++++++++++++
 
 Transitioning to a sustainable energy system
-built upon renewable energy generation will reduce
+built upon renewable energy\index{renewable energy} generation will reduce
 the impact intensity of resource extraction\index{resource extraction} and consumption
 (\;\!\mft{X} in Equation~\ref{eq:IPARX}), 
-because consumption of renewable energy
+because consumption of renewable energy\index{renewable energy}
 (for instance, electric vehicles\index{electric vehicle (EV)} run by solar electricity\index{solar electricity})
 has less environmental impact than consumption of 
 non-renewable energy (such as gasoline\index{gasoline}).
@@ -664,7 +664,8 @@ than for ICE vehicles\index{internal combustion engine (ICE) vehicle}.
 However, EVs\index{electric vehicle (EV)}
 can provide benefits in terms of global warming potential~(GWP)\index{global warming potential (GWP)}
 relative to ICE vehicles\index{internal combustion engine (ICE) vehicle}
-if the electricity\index{electricity} source includes renewables (as in the ``Ren20'' electricity mix), 
+if the electricity\index{electricity} source includes renewables\index{renewable energy}
+(as in the ``Ren20'' electricity mix\index{renewable electricity}), 
 because of lower lifetime fuel/electricity\index{electricity} emissions.
 In the case of the Ren20 electricity\index{renewable electricity} mix,
 the global warming benefits of EVs\index{electric vehicle (EV)} are achieved

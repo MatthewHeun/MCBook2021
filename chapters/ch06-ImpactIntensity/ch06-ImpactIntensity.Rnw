@@ -999,7 +999,7 @@ are the topic of the next section.
 \label{sec:renewables_interaction}
 %++++++++++++++++++++++++++++++
 
-The transition to renewable energy sources 
+The transition to renewable energy\index{renewable energy} sources 
 is expected to reduce the CO$_2$ intensity of energy consumption
 (\;\!\XCOtwo{} in the prime example), 
 if the CO$_2$ avoided by renewable generation over the lifetime of a renewable device
@@ -1009,7 +1009,7 @@ in the renewable device.
 That said, many advocates of Green Growth\index{Green Growth}, 
 a Green New Deal\index{Green New Deal}, and
 similar public policies 
-promote the idea that a transition to green infrastructure, including renewable energy,
+promote the idea that a transition to green infrastructure, including renewable energy\index{renewable energy},
 will stimulate economic growth and increase affluence.
 If they are right, 
 a renewables-driven decrease in \XCOtwo{} would lead to an increase in \mft{A}
@@ -1079,10 +1079,10 @@ Energy Vault simulation  \\
 
 \begin{questions}
 
-\item Do renewable energy sources have ``emissions?'' If so, what are they?
-        Make reference to Equation~\ref{eq:IPARX}. At a minimum, discuss
-        solar photovoltaic\index{solar panel}, wind turbines\index{wind turbine}, 
-        hydro\index{hydro electricity} power, and renewable biofuels.
+\item Do renewable energy\index{renewable energy} sources have ``emissions?'' If so, what are they?
+      Make reference to Equation~\ref{eq:IPARX}. At a minimum, discuss
+      solar photovoltaic\index{solar panel}, wind turbines\index{wind turbine}, 
+      hydro\index{hydro electricity} power, and renewable biofuels.
 
 \item Fossil fuels\index{fossil fuels} have environmental impacts other than CO$_2$. 
       One example is oil spills,
@@ -1145,7 +1145,7 @@ Energy Vault simulation  \\
       historically, on average, 50 years
       to transition from one energy source to another~\cite[p.~6595]{Fouquet:2010tq}.
       At this moment in time, it is unlikely that humanity has 50 years
-      to effect a transition to renewable sources of energy
+      to effect a transition to renewable\index{renewable energy} sources of energy
       to avoid irreversible effects of climate change\index{climate change}.
       What should we do?
       Give up on mitigation and focus on adaptation?
@@ -1178,17 +1178,17 @@ Energy Vault simulation  \\
       economy we have today? 
       Hint: see Table~\ref{tab:eroi}.
 
-\item Should the transition to renewable energy sources be actively managed 
+\item Should the transition to renewable energy\index{renewable energy} sources be actively managed 
       (for example by government policy) or should we let the ``invisible hand
       of the market'' manage the transition for us? Why?
       Are your reasons strictly because of the outcome(s) you imagine? 
       What assumptions are you making that lead to those outcomes?
       Or do you have philosophical reasons to prefer active versus passive 
       management?
-      Who is actually making the decisions about transitions to renewable energy
+      Who is actually making the decisions about transitions to renewable energy\index{renewable energy}
       (or not)?
 
-\item Find the proportion of renewable energy in the world's energy mix today.
+\item Find the proportion of renewable energy\index{renewable energy} in the world's energy mix today.
       Does this proportion indicate that we are far into the transition to a 
       low-carbon energy regime?
 
@@ -1203,7 +1203,7 @@ Energy Vault simulation  \\
       What assumptions lead you to prefer one approach over another?
 
 \item Should carbon capture and storage/\index{carbon sequestration} be pursued as a stop-gap
-      measure (until we get fully renewable energy)?
+      measure (until we get fully renewable energy\index{renewable energy})?
       What is your criteria for making that decision?
       Under what circumstances would your answer change?
       
@@ -1264,7 +1264,7 @@ Energy Vault simulation  \\
         
   \item Research and rank the EROI\index{energy return on investment (EROI)} 
         of many primary energy\index{primary energy} sources, 
-        including fossil fuels and renewables such as biofuels.
+        including fossil fuels and renewables\index{renewable energy} such as biofuels.
         What does your ranking imply for transitions to a low-carbon energy regime?
         Critique how your sources drew the boundaries
         around which they calculated EROI\index{energy return on investment (EROI)}.

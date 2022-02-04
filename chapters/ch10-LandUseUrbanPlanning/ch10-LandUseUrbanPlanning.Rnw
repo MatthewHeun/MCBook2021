@@ -182,12 +182,13 @@ excretes wastes\index{waste}.
 \paragraph{Resources}
 %-----------------------------
 
-Land is the primary source of energy, be it fossil fuel\index{fossil fuels}, biomass\index{biomass}, or renewable. 
+Land is the primary source of energy, be it fossil fuel\index{fossil fuels},
+biomass\index{biomass}, or renewable\index{renewable energy}. 
 Wells or mines for fossil fuels\index{fossil fuels} are located in a place.
 Biomass\index{biomass} has to be grown or harvested from a place as well.
 For example, about 30\% of the U.S.\ corn\index{corn} (maize) crop is converted into ethanol\index{corn ethanol}
 to be blended with gasoline\index{gasoline} as a transportation fuel.
-Renewables, such as hydro\index{hydro electricity}, 
+Renewables\index{renewable energy}, such as hydro\index{hydro electricity}, 
 solar\index{solar electricity} photovoltaic\index{solar panel}, and 
 wind\index{wind electricity} power, are also located in
 places.
@@ -552,9 +553,9 @@ Furthermore, more land could be spared for ecosystem services\index{ecosystem se
 Second, it seems clear that afforestation (devoting more land to forests) is 
 necessary to reduce net greenhouse gas (GHG) emissions\index{CO$_2$ emissions} and, in fact, to reduce 
 atmospheric GHG concentrations.
-Third, a transition to renewable energy sources is likely to greatly increase
+Third, a transition to renewable energy\index{renewable energy} sources is likely to greatly increase
 the amount of land needed to generate the energy we use.
-Producing renewable energy without destroying ecosystem services\index{ecosystem services}
+Producing renewable energy\index{renewable energy} without destroying ecosystem services\index{ecosystem services}
 is a major hurdle to becoming sustainable.
 As in Chapter~\ref{chap:agriculture}, we leave to Chapters~\ref{chap:government} 
 and~\ref{chap:personal_action} the discussion of how such changes can be made 
@@ -638,7 +639,7 @@ power_densities %>%
 
 Figure~\ref{fig:PowerDensity} shows the land-use requirements for different forms of
 energy production. 
-If we are going to make an energy transition to renewable sources 
+If we are going to make an energy transition to renewable\index{renewable energy} sources 
 (for example, WWS\index{wind, water, and solar (WWS)} in Section~\ref{sec:low_carbon_transition}), 
 Figure~\ref{fig:PowerDensity} shows that we will need to devote significantly more land
 to energy production.
@@ -700,7 +701,7 @@ is driving an increase in the demand for urban and agricultural land.
 Higher population densities and greater agricultural productivity\index{productivity!agricultural} can help meet
 that demand. 
 In contrast, Figure~\ref{fig:PowerDensity} indicates it may not be possible to
-meet the energy needs of the future solely with renewables because there may not
+meet the energy needs of the future solely with renewables\index{renewable energy} because there may not
 be enough land.
 
 The next two chapters discuss some collective and individual actions that can be
