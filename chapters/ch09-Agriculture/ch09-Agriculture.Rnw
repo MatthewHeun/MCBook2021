@@ -265,15 +265,15 @@ derived from nonrenewable resources?''
 %++++++++++++++++++++++++++++++
 
 Plants need water to grow.
-Currently, much of agricultural irrigation is not sustainable because water is being
+Currently, much of agricultural irrigation\index{irrigation} is not sustainable because water is being
 extracted from aquifers\index{aquifer} faster than the natural regeneration rate.
 If aquifers\index{aquifer} are exhausted, future humans won't have water for nourishment or bathing.
 Overuse of water is not limited to subsurface water, like the Ogallala aquifer\index{Ogallala aquifer}; 
 see \ref{question:ogallala}. 
 Surface water is also being overused for agriculture.
 One particularly notable example is the (former) Aral Sea\index{Aral Sea}, which has all but disappeared
-due to diversion of its water for irrigation; see Figure~\ref{fig:aral_sea}.
-Another example is the Colorado River, which 
+due to diversion of its water for irrigation\index{irrigation}; see Figure~\ref{fig:aral_sea}.
+Another example is the Colorado River\index{Colorado River}, which 
 supplies water to 12\% of the U.S.\ population
 and 
 supports 15\% of U.S.\ crop output and
@@ -283,8 +283,8 @@ supports 15\% of U.S.\ crop output and
 %% https://uwm.edu/centerforwaterpolicy/wp-content/uploads/sites/170/2013/10/Colorado_Agriculture_Final.pdf
 Because of diversions for agriculture (70--80\%) and 
 supplying municipalities with drinking water (15\%),
-the Colorado River mouth is dry; 
-it no longer flows into the Sea of Cortez.
+the Colorado River\index{Colorado River} mouth is dry; 
+it no longer flows into the Sea of Cortez\index{Sea of Cortez}.
 
 
 \begin{figure}
@@ -311,12 +311,12 @@ it no longer flows into the Sea of Cortez.
 
 
 Agricultural activities also result in water pollution\index{pollution!water} of surface water and ground water.
-For example, the city of Toledo, Ohio draws its drinking water from Lake Erie.
-Since the 1990s, Lake Erie has been subject to ``blooms'' of toxic cyanobacteria
+For example, the city of Toledo, Ohio\index{Toledo, Ohio} draws its drinking water from Lake Erie\index{Lake Erie}.
+Since the 1990s, Lake Erie\index{Lake Erie} has been subject to ``blooms'' of toxic cyanobacteria\index{cyanobacteria}
 fueled by fertilizer\index{fertilizer} run off.
 Six people got sick in 2013.
 In 2014, 110 people got sick and the municipal water supply to 400,000 people was shut down.
-Moreover, Lake Erie and the Maumee River that feeds it were unsafe for human skin contact.
+Moreover, Lake Erie\index{Lake Erie} and the Maumee River\index{Maumee River} that feeds it were unsafe for human skin contact.
 Blooms occurred again in 2017 and 2019~\cite{Rogener:2020wi}.
 Animal manure\index{manure} can also contaminate waterways. Ick.
 
@@ -468,14 +468,14 @@ with the purpose of converting feed for animals into food for humans.
 Both feed and food can be quantified in energy terms (in units of kcal).
 Thus, in that view, the entire agricultural system can be characterized by an efficiency, 
 the ratio of kcal of food output to kcal of feed input.
-The \textbf{feed-to-food efficiency}\index{feed-to-food efficiency}~($\eta_{\mft{ff}}$)
+The \textbf{feed-to-food efficiency~($\eta_{\mft{ff}}$)}\index{feed-to-food efficiency ($\eta_{\mft{ff}}$)}
 quantifies the efficiency of these agricultural processes.
-The overall feed-to-food efficiency\index{feed-to-food efficiency} of the U.S.\ food system 
+The overall feed-to-food efficiency\index{feed-to-food efficiency ($\eta_{\mft{ff}}$)} of the U.S.\ food system 
 is about 7\%~\cite{Shepon:2016wt}.
-Different types of food have different feed-to-food efficiencies\index{feed-to-food efficiency},
+Different types of food have different feed-to-food efficiencies\index{feed-to-food efficiency ($\eta_{\mft{ff}}$)},
 as shown in Figure~\ref{fig:FoodToFeedEfficiency}.
 
-<<FoodToFeedEfficiency, fig.width=3, fig.height=2.5, fig.scap="Feed-to-food efficiency of various foods", fig.cap="Feed-to-food efficiency\\index{feed-to-food efficiency}~($\\eta_{\\mft{ff}}$\\;\\!) of various foods in the U.S.\\ food system. \\emph{Source}: \\citet{Shepon:2016wt}.">>=
+<<FoodToFeedEfficiency, fig.width=3, fig.height=2.5, fig.scap="Feed-to-food efficiency of various foods", fig.cap="Feed-to-food efficiency~($\\eta_{\\mft{ff}}$\\;\\!) of various foods in the U.S.\\ food system. \\emph{Source}: \\citet{Shepon:2016wt}.">>=
 feed_to_food_efficiency <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", 
                                                         "FeedToFoodEfficiency.xlsx"), 
                                               sheet = "data to plot")
@@ -685,7 +685,7 @@ Figure~\ref{fig:food_ghg} shows GHG emissions\index{CO$_2$ emissions!food} from 
 distribution and preparation. 
 The amount of CO$_2$ released is proportional to the amount of energy used.
 Figure~\ref{fig:FoodEmissionsPerMcal} shows equivalent CO$_2$ emissions\index{CO$_2$ emissions!food} per Mcal of food.
-(Foods with low feed-to-food efficiency\index{feed-to-food efficiency} 
+(Foods with low feed-to-food efficiency\index{feed-to-food efficiency ($\eta_{\mft{ff}}$)}
 tend to have higher GHG emissions\index{CO$_2$ emissions!food};
 see Figure~\ref{fig:FoodToFeedEfficiency}.)
 However, by itself Figure~\ref{fig:FoodEmissionsPerMcal} is not terribly informative.
@@ -792,7 +792,7 @@ prefer partial shade, like coffee\index{coffee} or raspberries\index{raspberry}.
 The plants provide some cooling for the solar panels\index{solar panel}, thereby boosting the
 energy generation efficiency of the panels.
 The panels provide shade for crops, thereby reducing the amount of water needed 
-for irrigation.
+for irrigation\index{irrigation}.
 The tradeoff is that panel spacing may be less dense than would be typical for 
 industrial photovoltaic installation, so the crops have to make up the difference in 
 profitability per acre.
@@ -938,11 +938,11 @@ a succinct introduction to some of the issues covered
 in this chapter. His recipes are great, too. \\
 
 \noindent
-Two short films about the Colorado River by Pete McBride: 
+Two short films about the Colorado River\index{Colorado River} by Pete McBride\index{McBride, Pete}: 
 \href{https://vimeo.com/52955892}{Chasing Water}
 and \href{https://vimeo.com/97197932}{Delta Dawn}. 
 At 47 minutes, \href{https://community.nrs.com/nrs-films/remains-of-a-river/}
-{Remains of River} is a somewhat longer story that traces the Colorado River
+{Remains of River} is a somewhat longer story that traces the Colorado River\index{Colorado River}
 from its headwaters to Los Angeles, Tucson, and ... lettuce.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1138,7 +1138,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
 \item Compile a report on opportunities and challenges of genetically modified organisms
       in agriculture.
       
-\item Research the legal and economic issues related to use of water from the Colorado River.
+\item Research the legal and economic issues related to use of water from the Colorado River\index{Colorado River}.
 
 \item Prepare a report on regenerative agriculture. 
       What are its objectives? 
