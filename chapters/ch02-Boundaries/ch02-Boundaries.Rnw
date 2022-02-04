@@ -299,7 +299,7 @@ The upper limits for these indicators are intended to define a
 \midrule
 Atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration}                   & yes \\
 Extinction rate                                    & yes \\ 
-Anthropogenic nitrogen removed from the atmosphere\index{atmosphere} & yes\\
+Anthropogenic nitrogen\index{nitrogen (N)} removed from the atmosphere\index{atmosphere} & yes\\
 Anthropogenic phosphorous added to the ocean\index{ocean}       & not yet \\ 
 Calcium carbonate in ocean\index{ocean} surface seawater        & not yet \\ 
 Land surface converted to crop land [\%]           & not yet \\ 
