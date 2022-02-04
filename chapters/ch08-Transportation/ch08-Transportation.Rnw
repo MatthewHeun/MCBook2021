@@ -255,10 +255,10 @@ on the last leg of their journey to
 consumers and businesses.
 Typically, the last leg involves moving goods from a distribution center
 to the purchaser.
-The rise of e-commerce\index{e-commerce} has caused unparalleled growth in last-mile transport
-of freight in recent years. 
+The rise of e-commerce\index{e-commerce} has caused unparalleled growth in last-mile\index{last mile problem}
+transportation of freight in recent years. 
 The result is rising energy consumption and
-CO$_2$ emissions\index{CO$_2$ emissions!last mile} from commercial last-mile deliveries.
+CO$_2$ emissions\index{CO$_2$ emissions!last mile} from commercial last-mile\index{last mile problem} deliveries.
 Figure~\ref{fig:last_mile} shows percentages of total delivery cost for several parts of a delivery journey, 
 the largest portion being the last mile.
 A sustainability challenge for the last mile problem\index{last mile problem} is 
@@ -879,7 +879,7 @@ transportation, petroleum\index{petroleum}, and technology.
       increasingly common. 
       One way to implement congestion pricing\index{congestion pricing} is to automatically charge a toll 
       on every (nonexempt) vehicle entering the city center.
-      The London has had such a scheme since 2003 and congestion pricing\index{congestion pricing} 
+      London\index{London} has had such a scheme since 2003 and congestion pricing\index{congestion pricing} 
       is currently being considered for New York City.
       The objectives of congestion pricing\index{congestion pricing} are many and various: improved
       urban air quality (electric vehicles\index{electric vehicle (EV)}
@@ -901,7 +901,7 @@ transportation, petroleum\index{petroleum}, and technology.
       \end{enumerate}
 
 \item \href{www.strongtowns.org}{Strong Towns.org} defines a road as a high-speed 
-      connection (like an expressway) between two places,
+      connection (like an expressway\index{expressway}) between two places,
       a street as a human-centric place where people interact with homes and businesses,
       and \textbf{stroads}\index{stroad} as dangerous and expensive hybrids that are ultimately ineffective
       at doing the job of either a street or a road. 
@@ -939,14 +939,14 @@ transportation, petroleum\index{petroleum}, and technology.
       \item Are there things you would like your local traffic planners to change?
       \end{enumerate}
       
-\item In 2015--2016, Houston Metro boosted bus ridership as the result of a two-year long 
+\item In 2015--2016, Houston\index{Houston, Texas} Metro boosted bus ridership as the result of a two-year long 
       process of community consultation that reallocated resources towards 
       maximizing ridership.
       The tradeoff was a shift away from maintaining access.
       To put it another way, they went from many infrequent buses on low-ridership routes
       to frequent buses on a few routes with high ridership.  
       What is the purpose of public transit? 
-      Was Houston Metro's change appropriate or was it an example of rent seeking
+      Was Houston\index{Houston, Texas} Metro's change appropriate or was it an example of rent seeking
       by the ``tyranny of the majority?''
 
 \item In the early days of air travel\index{air travel}, it was luxurious, in all senses of the word,
@@ -985,22 +985,23 @@ transportation, petroleum\index{petroleum}, and technology.
       Will you try to offset\index{carbon offset} 
       your carbon emissions\index{CO$_2$ emissions!reduction} (if any) and how?
       
-\item Consider the infrastructure choice of a ferry versus a bridge. 
+\item Consider the infrastructure choice of a ferry\index{ferry} versus a bridge\index{bridge}. 
       What is the objective function? Is it minimum cost per year to deliver a 
       set amount of service? (Given what set of assumptions? If you build it, 
       they will come!) 
       Is it fastest service? 
-      For a ferry service you are acquainted with (you 
+      For a ferry\index{ferry} service you are acquainted with (you 
       might have to do a little research) how would you make the decision?
       What stakeholders are you considering? 
       Do sustainability considerations,
       such as the IPARX identity\index{IPARX identity}, factor into your decision-making process?
-      Did you pick a vehicle ferry or passenger ferry? How might your decision
+      Did you pick a vehicle ferry\index{ferry!vehicle} or passenger ferry\index{ferry!passenger}?
+      How might your decision
       change if you had picked the other one?
       
 \item Driving has long been a competitive sport. One lesser-known form of 
       competition is ``hypermiling\index{hypermiling},'' 
-      which attempts to maximize fuel efficiency
+      which attempts to maximize fuel economy\index{fuel economy}
       of a stock vehicle, that is, not a purpose-built vehicle.
       Hypermiling\index{hypermiling} (see \cite{Gaffney2007} for an early and 
       fascinating account)
@@ -1008,11 +1009,12 @@ transportation, petroleum\index{petroleum}, and technology.
       long coasting decelerations to red lights and high-speed turns, both to 
       avoid using the brakes.
       The results can lead to fuel efficiencies two to four times greater than
-      the EPA ratings! (But, of course, somewhat dangerous behavior on the road.)
+      the EPA\index{Environmental Protection Agency (EPA)} ratings!
+      (But, of course, somewhat dangerous behavior on the road.)
       
       Future technology, such as vehicle-to-vehicle and vehicle-to-infrastructure
       communication and greater computer control of driving functions, could both
-      boost fuel efficiency and make hypermiling techniques safer to deploy
+      boost fuel efficiency and make hypermiling\index{hypermiling} techniques safer to deploy
       more broadly. 
       (For instance, it might be possible to completely eliminate traffic lights.)
       However, enhanced automation to achieve more fuel efficient and, perhaps,
@@ -1054,7 +1056,7 @@ transportation, petroleum\index{petroleum}, and technology.
 
 \begin{projects}
 
-\item Energy consumption for last-mile deliveries has been increasing exponentially
+\item Energy consumption for last-mile\index{last mile problem} deliveries has been increasing exponentially
       in recent years. 
       Research the rates of growth for e-commerce\index{e-commerce} deliveries and the energy and CO$_2$
       implications of that growth.
@@ -1111,10 +1113,10 @@ transportation, petroleum\index{petroleum}, and technology.
       causes problems of a different sort.
       Can you identify arguments both in favor of and opposed to intentional problem shifting\index{problem shifting}?
 
-\item Research a variety of virtual-reality systems for their sustainability implications.
+\item Research a variety of virtual-reality\index{virtual reality (VR)} systems for their sustainability implications.
       How do they increase or decrease resource consumption?
       How do they increase or decrease energy consumption and CO$_2$ emissions\index{CO$_2$ emissions!virtual reality}?
-      What is the potential for virtual reality to reduce future needs
+      What is the potential for virtual reality\index{virtual reality (VR)} to reduce future needs
       for transportation services\index{transportation service}?
       
 \end{projects}
