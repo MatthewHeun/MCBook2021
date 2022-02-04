@@ -808,7 +808,7 @@ The urgency of the climate\index{climate change} challenge is the reason that
 energy and CO$_2$ emissions\index{CO$_2$ emissions} are the prime example of this book. 
 \end{mcframe}
 
-<<Fig-SPM-10, fig.pos="h!", fig.scap="Global temperature rise vs.\\ CO$_2$ emissions", fig.cap="Global temperature rise vs.\\ CO$_2$ emissions\\index{CO$_2$ emissions}. Temperature rise is relative to the 1850--1900 global average temperature. The line labeled ``1850'' indicates the starting point for counting cumulative CO$_2$ equivalent emissions. The line labeled ``1990'' indicates cumulative emissions to that date, 1411~GtCO$_2$e. The line labeled ``2019'' indicates cumulative emissions to that date, 2411~GtCO$_2$e. The line labeled ``1.5~\\degC'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~\\degC{} warming by 2100, 2911~GtCO$_2$e. The carbon budget\\index{carbon budget} in 1990 was the distance between the ``1990'' line and the ``1.5~\\degC'' line, namely 1500~GtCO$_2$e. The current carbon budget is the distance between the ``2019'' line and the ``1.5~\\degC'' line, or about 500~GtCO$_2$e.  The red lines represent emissions under various future scenarios; see Table~\\ref{tab:ipcc_scenarios}. The relationship between future warming and cumulative emissions is only weakly dependent upon the emissions scenario. \\emph{Sources}: This figure was inspired by Figure~SPM.10 in the IPCC\\index{Intergovernmental Panel on Climate Change (IPCC)} report \\emph{Climate Change 2021: The Physical Science Basis}~\\cite[p.~SPM-37]{IPCC:2021tk}. Data are available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\href{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}{https://data.ceda.ac.uk/badc/ar6{\\textunderscore}wg1/data/spm/spm{\\textunderscore}10/v20210809}.">>=
+<<Fig-SPM-10, fig.pos="h!", fig.scap="Global temperature rise vs.\\ CO$_2$ emissions", fig.cap="Global temperature rise vs.\\ CO$_2$ emissions\\index{CO$_2$ emissions}. Temperature rise is relative to the 1850--1900 global average temperature. The line labeled ``1850'' indicates the starting point for counting cumulative CO$_2$ equivalent emissions. The line labeled ``1990'' indicates cumulative emissions to that date, 1411~GtCO$_2$e. The line labeled ``2019'' indicates cumulative emissions to that date, 2411~GtCO$_2$e. The line labeled ``1.5~\\degC'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~\\degC{} warming by 2100, 2911~GtCO$_2$e. The carbon budget\\index{carbon budget} in 1990 was the distance between the ``1990'' line and the ``1.5~\\degC'' line, namely 1500~GtCO$_2$e. The current carbon budget is the distance between the ``2019'' line and the ``1.5~\\degC'' line, or about 500~GtCO$_2$e.  The red lines represent emissions under various future scenarios; see Table~\\ref{tab:ipcc_scenarios}. The relationship between future warming and cumulative emissions is only weakly dependent upon the emissions scenario. \\emph{Sources}: This figure was inspired by Figure~SPM.10 in the IPCC\\index{Intergovernmental Panel on Climate Change (IPCC)} report \\emph{Climate Change 2021: The Physical Science Basis}~\\cite[p.~SPM-37]{IPCC:2021tk}. Data are available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\href{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}{data.ceda.ac.uk/badc/ar6{\\textunderscore}wg1/data/spm/spm{\\textunderscore}10/v20210809}.">>=
 scenario_size <- 0.3
 spm_10_data <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "SPM_10.xlsx"),
                                   sheet = "data to plot")
@@ -910,24 +910,24 @@ of the Intergovernmental Panel on Climate Change}\index{Intergovernmental Panel 
 Cambridge, UK: Cambridge University Press, 
 2021. \\
 
-\noindent
-Mark Lynas, 
-\emph{Our final warning: Six degrees of climate emergency}.
-London: Fouth Estate,
-2020. \\
-
 \noindent 
 Elizabeth Kolbert, 
 \emph{Field notes from a catastrophe: 
 Man, nature, and climate change}.
 New York: Bloomsbury, 
-2015.
+2015. \\
+
+\noindent
+Mark Lynas, 
+\emph{Our final warning: Six degrees of climate emergency}.
+London: Fouth Estate,
+2020. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\emph{The age of stupid}, a 2009 documentary film. \\
+\emph{The age of stupid}, a 2009 documentary film \\
 
 \noindent 
 \emph{A convenient truth: Urban solutions from Curitiba, Brazil\index{Curitiba, Brazil}} \\

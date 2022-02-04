@@ -237,39 +237,40 @@ associated with transportation.
 \label{sec:transportation_challenges}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Sustainability challenges arising from transportation\index{sustainability challenges!transportation} include
-the last mile problem\index{last mile problem}, 
-the first mile problem\index{first mile problem}, and
+Sustainability challenges arising from transportation\index{sustainability 
+challenges!transportation} include the last-mile problem\index{last-mile problem}, 
+the first-mile problem\index{first-mile problem}, and
 particulate matter (PM)\index{particulate matter (PM)} and
-CO$_2$ emissions\index{CO$_2$ emissions!transportation} from burning fossil fuels\index{fossil fuels}.
+CO$_2$ emissions\index{CO$_2$ emissions!transportation} from burning fossil 
+fuels\index{fossil fuels}.
 
 
 %..............................
-\paragraph{The last mile}\index{last mile problem} 
+\paragraph{The last mile}\index{last-mile problem} 
 %..............................
 
 A significant challenge to higher occupancy cars and higher capacity trucks
-is the \textbf{last mile problem}\index{last mile problem}~\cite{World-Economic-Forum:2020wf},
+is the \textbf{last-mile problem}\index{last-mile problem}~\cite{World-Economic-Forum:2020wf},
 the expensive and time-intensive transportation of goods
 on the last leg of their journey to 
 consumers and businesses.
 Typically, the last leg involves moving goods from a distribution center
 to the purchaser.
-The rise of e-commerce\index{e-commerce} has caused unparalleled growth in last-mile\index{last mile problem}
+The rise of e-commerce\index{e-commerce} has caused unparalleled growth in last-mile\index{last-mile problem}
 transportation of freight in recent years. 
 The result is rising energy consumption and
-CO$_2$ emissions\index{CO$_2$ emissions!last mile} from commercial last-mile\index{last mile problem} deliveries.
+CO$_2$ emissions\index{CO$_2$ emissions!last mile} from commercial last-mile\index{last-mile problem} deliveries.
 Figure~\ref{fig:last_mile} shows percentages of total delivery cost for several parts of a delivery journey, 
 the largest portion being the last mile.
-A sustainability challenge for the last mile problem\index{last mile problem} is 
-``how can we minimize CO$_2$ emissions\index{CO$_2$ emissions!last mile} from last mile deliveries
+A sustainability challenge for the last-mile problem\index{last-mile problem} is 
+``how can we minimize CO$_2$ emissions\index{CO$_2$ emissions!last mile} from last-mile deliveries
 while maintaining reasonable costs?''
 
 <<last_mile, fig.scap="Percentage of delivery cost by part of journey", fig.cap="Percentage of delivery cost by part of journey. \\emph{Source}: Honeywell via \\emph{Business Insider} \\cite{Dolan:2018wj}.">>=
 last_mile <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "LastMile.xlsx"), 
                    sheet = "data to plot") %>%
   dplyr::mutate(
-    `Part of journey` = factor(`Part of journey`, levels = c("Last mile delivery", "Line haul", "Sorting", "Collection"))
+    `Part of journey` = factor(`Part of journey`, levels = c("Last-mile delivery", "Line haul", "Sorting", "Collection"))
   )
 
 last_mile %>% 
@@ -290,20 +291,20 @@ last_mile %>%
 
 
 %..............................
-\paragraph{The first mile}\index{first mile problem}
+\paragraph{The first mile}\index{first-mile problem}
 %..............................
 
 Another sustainability challenge for transportation is 
-the \textbf{first mile problem}\index{first mile problem}
+the \textbf{first-mile problem}\index{first-mile problem}
 for mass transit.
 In low-population-density\index{population density} areas, 
 moving people along the first mile to mass transit stations is 
 expensive in both monetary and energy terms.
-The first mile problem\index{first mile problem} is reduced in urban areas
+The first-mile problem\index{first-mile problem} is reduced in urban areas
 with high population density\index{population density}, 
 especially if commuters can walk or bike to bus, train, or subway stations.
-A sustainability challenge for the first mile problem\index{first mile problem} is
-``how can we solve the first mile problem\index{first mile problem}
+A sustainability challenge for the first-mile problem\index{first-mile problem} is
+``how can we solve the first-mile problem\index{first-mile problem}
 and maintain livable spaces?''
 
 
@@ -419,7 +420,7 @@ transitioning to sustainable energy sources.
 Mode shifting\index{mode shifting} involves transitioning from personal vehicles to 
 mass transit, biking, or walking.
 Whether mode shifts\index{mode shifting} are possible depends on 
-land use patterns and urban design. 
+land-use patterns and urban design. 
 Areas with high population density\index{population density} (cities) can be served by economical 
 mass transit systems.
 (See Chapter~\ref{chap:land_use_urban_planning} 
@@ -500,7 +501,8 @@ In addition to vehicle design, driving habits also influence fuel economy\index{
 Gentler driving (less acceleration, minimal dramatic braking) and
 constant speeds (using cruise control\index{cruise control}
 where appropriate)
-lead to improved vehicle fuel economy\index{fuel economy}.
+lead to improved vehicle fuel economy\index{fuel economy};
+see~\ref{question:hypermiling}.
 
 Fuel economy\index{fuel economy}, quantified in miles per gallon,
 focuses on the efficacy of the machine itself (the car).
@@ -546,18 +548,18 @@ for a fuller discussion of the issues surrounding these concepts.
 %++++++++++++++++++++++++++++++
 
 Transitioning to a sustainable energy system
-built upon renewable energy\index{renewable energy} generation will reduce
+built upon renewable-energy\index{renewable energy} generation will reduce
 the impact intensity of resource extraction\index{resource extraction} and consumption
 (\;\!\mft{X} in Equation~\ref{eq:IPARX}), 
 because consumption of renewable energy\index{renewable energy}
 (for instance, electric vehicles\index{electric vehicle (EV)} run by solar electricity\index{solar electricity})
 has less environmental impact than consumption of 
-non-renewable energy (such as gasoline\index{gasoline}).
+nonrenewable energy (such as gasoline\index{gasoline}).
 
 Another way to improve the sustainability of modern transportation is to
 transition away from fossil fuels\index{fossil fuels}
 toward sustainable energy,
-thereby reducing the harmful environmental effects of fossil fuel combustion\index{fossil fuels!combustion}.
+thereby reducing the harmful environmental effects of fossil-fuel combustion\index{fossil fuels!combustion}.
 Two solutions are often discussed:
 widespread use of biofuels\index{biofuel}
 in internal combustion engine (ICE) vehicles\index{internal combustion engine (ICE) vehicle} and
@@ -598,7 +600,7 @@ Furthermore, ethanol\index{ethanol} production is very land-intensive.
 would yield approximately five days of gasoline\index{gasoline} alternative''~\cite{Cleveland:2006ux}.
 In addition, planting additional acres of corn\index{corn} increases impacts of erosion and chemical runoff.
 Thus, corn-derived ethanol\index{corn ethanol}, at least, is unlikely to provide a long-term solution
-for sustainable transport, and may not be sustainable in a number of other dimensions.
+for sustainable transport, and may not be sustainable in other ways as well.
 
 <<Biofuel_cons, fig.scap="Biofuel consumption vs.\\ time", fig.cap = "U.S.\ biofuel consumption vs.\\ time. \\emph{Source}: \\citet{U.S.-Energy-Information-Agency:2021to}.">>=
 biofuels <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Biofuels.xlsx"),
@@ -635,8 +637,8 @@ Figure~\ref{fig:auto_gwp} shows two types of environmental impact
 and mineral resource depletion\index{mineral resource depletion (MRD)})
 across the full life cycle\index{life cycle!automobiles}
 of automobile\index{automobile} use,
-from base vehicle manufacturing to end of life disposal,
-assuming 150,000~km service life.
+from base vehicle manufacturing to end-of-life disposal,
+assuming a 150,000~km service life.
 Internal combustion engine (ICE) vehicles\index{internal combustion engine (ICE) vehicle}
 are considered to consume regular gasoline\index{gasoline}.
 Electric vehicles (EVs)\index{electric vehicle (EV)} are modeled as using electricity 
@@ -680,7 +682,7 @@ miss key differences associated with the production of different vehicle types a
 could lead to misguided comparisons across technologies.''
 
 
-<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile\\index{automobile} environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion\\index{mineral resource depletion (MRD)}. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline\\index{gasoline}-powered vehicles. ``Ren20'' indicates an electricity mix\\index{electricity mix} with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union\\index{European Union (EU)} electricity mix in 2010. ``Coal''\\index{coal} indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
+<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile\\index{automobile} environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming a 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion\\index{mineral resource depletion (MRD)}. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline\\index{gasoline}-powered vehicles. ``Ren20'' indicates an electricity mix\\index{electricity mix} with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union\\index{European Union (EU)} electricity mix in 2010. ``Coal''\\index{coal} indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
 Hawkins_life_cycle <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "EV data from Hawkins.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(c("Base vehicle", "Engine", "Other powertrain", "Battery", "Use phase", "Fuel/electricity", "End of life"), names_to = "Life.cycle.component", values_to = "normalized_impact") %>% 
@@ -764,45 +766,48 @@ another area in which sustainability challenges are important and urgent.
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\href{https://national.news21.com/}{Breakdown: Traveling Dangerously in America}, e-book, 2011. \\
+
+\noindent 
 Edward Humes, \emph{Door to door: The magnificent, maddening, mysterious world of transportation}.
 New York: Harper, 2016.
-
-\noindent \href{https://national.news21.com/}{Breakdown: Traveling Dangerously in America}, e-book, 2011. \\
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\emph{Transportation planning: Thoughts on how we move}, a blog by Roy Symons at
-\url{https://www.transportation-planning.com}. 
-For cartoons and pithy quotes about transport, 
-see \url{https://www.transportation-planning.com/quotes.html}. \\
+Roy Symons's blog \emph{Transportation planning: Thoughts on how we move} \\
+\href{https://www.transportation-planning.com}{www.transportation-planning.com},  \\ 
+which includes cartoons and pithy quotes about transportation \\
+\href{https://www.transportation-planning.com/quotes.html}
+{www.transportation-planning.com/quotes.html} \\
 
-\noindent Interactive electric vehicle\index{electric vehicle (EV)} explainer.
-\url{https://ig.ft.com/electric-car} \\
+\noindent Interactive electric vehicle\index{electric vehicle (EV)} explainer \\
+\href{https://ig.ft.com/electric-car}{ig.ft.com/electric-car} \\
 
 \noindent \emph{Who Killed the Electric Car},
-a fascinating movie about the the first attempt at electric vehicles\index{electric vehicle (EV)} in the auto industry.
-\url{https://en.wikipedia.org/wiki/Who_Killed_the_Electric_Car} \\
+a fascinating movie about the the first attempt at electric 
+vehicles\index{electric vehicle (EV)} in the auto industry \\
+\href{https://en.wikipedia.org/wiki/Who_Killed_the_Electric_Car}
+{en.wikipedia.org/wiki/Who{\textunderscore}Killed{\textunderscore}the{\textunderscore}Electric{\textunderscore}Car} \\
 
-\noindent YouTube channel \emph{Road Guy Rob}.
-\url{https://www.youtube.com/c/RoadGuyRob} \\
+\noindent YouTube channel
+\href{https://www.youtube.com/c/RoadGuyRob}{Road Guy Rob}\\
 
 \noindent \emph{Taken for a Ride}, 
-a documentary about ``General Motors'\index{General Motors} role in dismantling street car transportation in the 1930’s, 
-and in catapulting the automobile\index{automobile} to the center of [U.S.] national culture.'' 
-\url{https://www.pbs.org/pov/watch/takenforaride/} \\
+a documentary about ``General Motors'\index{General Motors} role in 
+dismantling street car transportation in the 1930’s, 
+and in catapulting the automobile\index{automobile} to the center of [U.S.] national culture.'' \\
+\href{https://www.pbs.org/pov/watch/takenforaride/}{www.pbs.org/pov/watch/takenforaride} \\
 
 \noindent For counterpoint/fact check, see City Beautiful's 
-\emph{Did GM really kill the streetcar in Los Angeles?}
-(\url{https://www.youtube.com/watch?v=RnFVBfhpprU})
+\href{https://www.youtube.com/watch?v=RnFVBfhpprU}
+{Did GM really kill the streetcar in Los Angeles?} (YouTube, September 7, 2018)
 and references therein, particularly 
-\emph{GM and the Red Cars} 
-(\url{http://www.1134.org/stan/ul/GM-et-al.html})
+\href{http://www.1134.org/stan/ul/GM-et-al.html}{GM and the Red Cars}
 and
-\emph{Huntington's LA: The History of Pacific Electric} 
-(\url{https://www.youtube.com/watch?v=8yZiW1E4aRE}).
+\href{https://www.youtube.com/watch?v=8yZiW1E4aRE}
+{Huntington's LA: The History of Pacific Electric} (YouTube, August 16, 2021).
 The whole story is a fascinating interplay of economics, land use,
 transportation, petroleum\index{petroleum}, and technology.
 
@@ -875,7 +880,8 @@ transportation, petroleum\index{petroleum}, and technology.
       a week for 50 weeks per year, is 500 hours of commuting. 
       Equating 500 hours of travel to \$40,000 is a wage of \$80/hour.
       
-\item Congestion pricing\index{congestion pricing} attempts to attenuate demand for a public good by manipulating its price.
+\item Congestion pricing\index{congestion pricing} attempts to attenuate demand 
+      for a public good by manipulating its price.
       Application of congestion pricing\index{congestion pricing} to vehicular traffic in urban areas is becoming 
       increasingly common. 
       One way to implement congestion pricing\index{congestion pricing} is to automatically charge a toll 
@@ -888,7 +894,8 @@ transportation, petroleum\index{petroleum}, and technology.
       fuller utilization of existing mass transit, reduced noise, better pedestrian
       safety, preservation of ``historic character,'' and improved transit times 
       for the remaining vehicle traffic (for example, bus traffic).
-      Some common objections to congestion pricing\index{congestion pricing} relate to (hypothetical) displaced traffic to suburbs,
+      Some common objections to congestion pricing\index{congestion pricing} 
+      relate to (hypothetical) displaced traffic to suburbs,
       economic inequality (who can afford to pay and who can't), civil liberties
       (from the automated systems that collect the tolls), who decides and who 
       benefits (residents vs. visitors), and what the extra tax money will be spent on.
@@ -962,16 +969,17 @@ transportation, petroleum\index{petroleum}, and technology.
       \item How would you change modern air travel\index{air travel} if you could?
       \end{enumerate}
 
-\item Bicycling is one way to solve the last mile problem\index{last mile problem} for personal travel.
+\item Bicycling is one way to solve the first-mile problem\index{first-mile problem} 
+      and/or the last-mile problem\index{last-mile problem} for personal travel.
       Typically, this means that you bike to and/or from another form of transit.
       For example, you might bike to the train station, airport, or bus stop, ride or fly 
-      (with your bike onboard), and then bike to your final destination. 
+      (possibly, with your bike onboard), and then bike to your final destination. 
       Maybe you bike to and from a carpool lot.
-      There are a lot of reasons people give as to why this won't work out:
+      There are a lot of reasons people give as to why this won't work:
       they'll get sweaty. They would need a change of clothes\index{clothing}, etc.
       Make a list of situations where bicycling could be feasibly combined with
       another form of travel. 
-      Include plain-vanilla bicycle commuting.
+      Include 100\% bicycle commuting.
       Next, brainstorm reasons people might give for why they wouldn't do each 
       of those. 
       Then, brainstorm solutions to each objection.
@@ -1018,13 +1026,14 @@ transportation, petroleum\index{petroleum}, and technology.
       boost fuel efficiency and make hypermiling\index{hypermiling} techniques safer to deploy
       more broadly. 
       (For instance, it might be possible to completely eliminate traffic lights.)
-      However, enhanced automation to achieve more fuel efficient and, perhaps,
+      However, enhanced automation to achieve more fuel-efficient travel and, perhaps,
       greater traffic throughput, means a reduction in the amount of direct control
       humans have over their vehicles. 
       Do you welcome such automation? Why?
       How would you respond to people who are preemptively petitioning for a 
-      ``right to drive?''
+      right to drive?
       Are there circumstances where humans must have control?
+      \label{question:hypermiling}
       
 \item Who should be responsible for CO$_2$ emissions from international trade\index{CO$_2$ emissions!trade}
       and international travel?
@@ -1033,14 +1042,14 @@ transportation, petroleum\index{petroleum}, and technology.
       What values and assumptions lead to your answer?
       
 \item Two ways to reduce highway congestion are 
-      high occupancy vehicle~(HOV) lanes\index{high occupancy vehicle (HOV) lane} and 
+      high-occupancy vehicle~(HOV) lanes\index{high-occupancy vehicle (HOV) lane} and 
       fines or tolls for single-occupant vehicles. 
-      HOV lanes\index{high occupancy vehicle (HOV) lane}
+      HOV lanes\index{high-occupancy vehicle (HOV) lane}
       require extension of infrastructure or converting an existing lane 
-      to an HOV lane\index{high occupancy vehicle (HOV) lane}, 
+      to an HOV lane\index{high-occupancy vehicle (HOV) lane}, 
       each with different up-front investment and ongoing maintenance costs. 
       Fines likely involve enhanced law-enforcement presence, and
-      tolls likely involve constructing toll booths and labor costs\index{labor!cost} for staffing, 
+      tolls likely involve constructing toll infrastructure and labor costs\index{labor!cost} for staffing, 
       again with different up-front and ongoing costs.
       Which do you prefer?  
       Why? 
@@ -1057,7 +1066,7 @@ transportation, petroleum\index{petroleum}, and technology.
 
 \begin{projects}
 
-\item Energy consumption for last-mile\index{last mile problem} deliveries has been increasing exponentially
+\item Energy consumption for last-mile\index{last-mile problem} deliveries has been increasing exponentially
       in recent years. 
       Research the rates of growth for e-commerce\index{e-commerce} deliveries and the energy and CO$_2$
       implications of that growth.
