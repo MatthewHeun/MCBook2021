@@ -713,20 +713,26 @@ Hawkins_life_cycle %>%
 \label{mcframe_EV}
 Automobile\index{utomobile} technology is one of many arenas in which sustainability tradeoffs are observed.
 Under the right conditions,
-EVs can reduce global warming impact relative to ICE vehicles
+EVs\index{electric vehicle (EV)} can reduce global warming impact relative to 
+ICE vehicles\index{internal combustion engine (ICE) vehicle}
 at the expense of depleting the stock of mineral resources\index{mineral resources},
 a phenomenon known as \textbf{problem shifting}\index{problem shifting}.
 
 The sustainability challenges of transportation transitions
-don't end with the tradeoff between GHG emissions and mineral resource depletion\index{mineral resource depletion (MRD)} 
+don't end with the tradeoff between GHG emissions\index{CO$_2$ emissions!transportation} and
+mineral resource depletion\index{mineral resource depletion (MRD)} 
 discussed above.
 In fact, there is a temporal component that must be examined
-when comparing EVs against ICE vehicles.
-Whether or not GHG emissions are lower for an EV compared to an ICE vehicle depends upon
+when comparing EVs\index{electric vehicle (EV)} against ICE vehicles\index{internal combustion engine (ICE) vehicle}.
+Whether or not GHG emissions\index{CO$_2$ emissions!transportation} are lower for an EV compared 
+to an ICE vehicle\index{internal combustion engine (ICE) vehicle} depends upon
 the service lifetime of the vehicle.
-The benefits of EVs relative to ICE vehicles appear only after tens of thousands of kilometers of service,
-because EVs have much greater GHG emissions during manufacturing
-than ICE vehicles.
+The benefits of EVs\index{electric vehicle (EV)}
+relative to ICE vehicles\index{internal combustion engine (ICE) vehicle}
+appear only after tens of thousands of kilometers of service,
+because EVs\index{electric vehicle (EV)} have much greater GHG emissions\index{CO$_2$ emissions!transportation}
+during manufacturing
+than ICE vehicles\index{internal combustion engine (ICE) vehicle}.
 Put another way, an EV that is totaled shortly after manufacture
 will never achieve its potential emissions reductions.
 \end{mcframe}
@@ -818,14 +824,15 @@ transportation, petroleum\index{petroleum}, and technology.
 \item Under the right conditions (an electricity mix\index{electricity mix} that includes renewable sources
       and a 150,000~km service life), \citet{Hawkins_2012} show that
       electric vehicles\index{electric vehicle (EV)} 
-      provide GHG emissions reductions relative 
+      provide GHG emissions\index{CO$_2$ emissions!transportation} reductions relative 
       to internal combustion engine vehicles\index{internal combustion engine (ICE) vehicle}
       at the expense of increased mineral resource depletion\index{mineral resource depletion (MRD)}.
-      The tradeoff between GHG emissions and mineral resource depletion\index{mineral resource depletion (MRD)} is
+      The tradeoff between GHG emissions\index{CO$_2$ emissions!tranportation}
+      and mineral resource depletion\index{mineral resource depletion (MRD)} is
       nearly impossible to decide on a quantitative or objective basis.
       Indeed, deciding this and similar tradeoffs cannot be divorced
       from human values and value judgments.
-      Is it wise to trade reduced GHG emissions
+      Is it wise to trade reduced GHG emissions\index{CO$_2$ emissions!transportation}
       for increased mineral resource depletion\index{mineral resource depletion (MRD)}?
       Why or why not?
       What values are guiding your answer?
@@ -1086,11 +1093,12 @@ transportation, petroleum\index{petroleum}, and technology.
       the sustainability of transport?  
       Does the answer to the previous question change if people or freight transportation is considered?
       
-\item Research the key natural resources required to make batteries for EVs. 
+\item Research the key natural resources required to make batteries for EVs\index{electric vehicle (EV)}. 
       What are the sources for those resources?
       Under what social and political conditions are the key resources extracted from the environment and
       processed for inclusion in batteries?
-      What would be the sustainability implications of transitioning all road transportation to EVs?
+      What would be the sustainability implications of transitioning all road transportation 
+      to EVs\index{electric vehicle (EV)}?
       
 \item On a mode-by-mode basis, assess the opportunities and barriers for making each 
       transportation mode more sustainable.  

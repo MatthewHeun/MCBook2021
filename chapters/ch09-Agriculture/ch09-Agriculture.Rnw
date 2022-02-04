@@ -55,7 +55,7 @@ It is estimated that 71\% of ice-free land is used for agricultural purposes:
 22\% for timber production\index{timber production} in forests~\cite{SRCCL2019}.
 So it is no surprise that agricultural has important sustainability implications.
 
-In addition to land use and GHG emissions, agriculture has another 
+In addition to land use and GHG emissions\index{CO$_2$ emissions}, agriculture has another 
 major impact on sustainability: humans cannot live without food.
 Agriculture does provide some nonfood products such as cotton, flax (for linen),
 flowers, and leather.
@@ -583,8 +583,8 @@ is ``how can food waste\index{food waste} be eliminated?''
 \subsection{Greenhouse gas emissions}\index{CO$_2$ emissions}
 %++++++++++++++++++++++++++++++
 
-Globally, food and land use account for 23\% of GHG emissions~\cite{IPCC:2018aa}.\index{greenhouse gas}
-In the U.S., soil management accounts for over half of agricultural GHG emissions~\cite{USEPA:2021uj}.
+Globally, food and land use account for 23\% of GHG emissions\index{CO$_2$ emissions}~\cite{IPCC:2018aa}.
+In the U.S., soil management accounts for over half of agricultural \index{CO$_2$ emissions!agriculture}~\cite{USEPA:2021uj}.
 Over-application of synthetic nitrogen-based fertilizers releases significant
 amounts of N$_2$O, a very potent GHG.
 The paragraphs below look at two very important greenhouse gases\index{greenhouse gas}, 
@@ -624,7 +624,7 @@ food_emissions_US %>%
 Convenient calculators for greenhouse gas emissions\index{CO$_2$ emissions} from food production
 can be found online \cite{CleanMetrics:aa}.
 Factors such as transport distance and wastage percentages are important
-for determining GHG emissions from food.
+for determining GHG emissions\index{CO$_2$ emissions!food} from food.
 \end{mcframe}
 
 <<FoodEmissionsPerMcal, fig.height=4, fig.scap="Food CO$_2$ emissions per Mcal of food for various foods", fig.cap="Food CO$_2$ emissions\\index{CO$_2$ emissions!food} per Mcal of food for various foods. \\emph{Source}: \\citet{Ritchie:2021tl}.">>=
@@ -675,13 +675,14 @@ food_emissions_total %>%
 \paragraph{CO$_2$}
 %++++++++++++++++++++++++++++++
 
-One source of GHG emissions in food and agriculture 
+One source of GHG emissions\index{GHG emissions!food} in food and agriculture 
 is the food-delivery system.
-Figure~\ref{fig:food_ghg} shows GHG emissions from the various stages of food
+Figure~\ref{fig:food_ghg} shows GHG emissions\index{CO$_2$ emissions!food} from the various stages of food
 distribution and preparation. 
 The amount of CO$_2$ released is proportional to the amount of energy used.
 Figure~\ref{fig:FoodEmissionsPerMcal} shows equivalent CO$_2$ emissions\index{CO$_2$ emissions!food} per Mcal of food.
-(Foods with low feed-to-food efficiency\index{feed-to-food efficiency} tend to have higher GHG emissions;
+(Foods with low feed-to-food efficiency\index{feed-to-food efficiency} 
+tend to have higher GHG emissions\index{CO$_2$ emissions!food};
 see Figure~\ref{fig:FoodToFeedEfficiency}.)
 However, by itself Figure~\ref{fig:FoodEmissionsPerMcal} is not terribly informative.
 We don't eat equal calories of each food.
@@ -700,7 +701,7 @@ illustrate agricultural CO$_2$ emissions\index{CO$_2$ emissions!agriculture}.
 One tonne of methane\index{methane}
 has the same global warming potential\index{global warming potential (GWP)} as twenty five tonnes 
 of CO$_2$---methane\index{methane} is a very potent GHG.
-Methane\index{methane} is about 10\% of U.S.\ GHG emissions. 
+Methane\index{methane} is about 10\% of U.S.\ GHG emissions\index{CO$_2$ emissions}. 
 Of this 10\%, about 39\% comes from agriculture, 40\% comes from energy and transportation,
 and 21\% comes from landfills and wastewater treatment~\cite{USEPA:2021uj}.
 Agricultural emissions are almost entirely from enteric digestion and manure management,
@@ -847,7 +848,7 @@ develop new practices that will be effective on a warmer planet.
 %++++++++++++++++++++++++++++++
 
 As mentioned above, agriculture and land use are a significant source of humanity's 
-GHG emissions. 
+GHG emissions\index{CO$_2$ emissions}. 
 For sustainability, agriculture must become a carbon sink rather than a source 
 for carbon emissions\index{CO$_2$ emissions}. 
 Human agricultural practices over the last 12,000 years (but mostly since 1800) 
@@ -868,7 +869,7 @@ Which regenerative agriculture techniques are most effective varies with site hi
 location, and biome, but 
 it is common to use managed grazing by livestock 
 as a key component of soil enhancement.
-Thus, while beef and dairy cattle are sources of GHG emissions under most current 
+Thus, while beef and dairy cattle are sources of GHG emissions\index{CO$_2$ emissions} under most current 
 agricultural practices, in regenerative agriculture they can play a role in net
 carbon sequestration\index{carbon sequestration}~\cite{WOP2019}.
 See~\ref{project:regenerative_ag} for some tips on investigating regenerative
@@ -890,7 +891,7 @@ sequester carbon.
 In today's economy, agriculture is an energy sink\index{energy sink} rather than an energy source\index{energy source}, 
 requiring the unsustainable input of fossil fuels\index{fossil fuels}.
 Agriculture is inefficient on both mass and energy bases.
-Unfortunately, today's agriculture system causes significant GHG emissions.
+Unfortunately, today's agriculture system causes significant GHG emissions\index{CO$_2$ emissions}.
 Reducing environmental impacts from agriculture will require additional investment, which
 may make food more expensive.
 However, food is a basic human need; 
@@ -1119,7 +1120,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       How do your food-related emissions compare to your emissions from transportation-related activities?
       Guided by the figures and advice in this chapter, 
       develop an alternative diet and estimate its greenhouse gas emissions\index{CO$_2$ emissions!food}.
-      What amount of GHG emissions reductions can you obtain by changing your diet?
+      What amount of GHG emissions\index{CO$_2$ emissions} reductions can you obtain by changing your diet?
       
 \item Retail is an important part of the food supply chain.
       Where are food deserts most prevalent? 
