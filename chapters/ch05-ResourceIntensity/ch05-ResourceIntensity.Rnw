@@ -66,7 +66,7 @@ Timber\index{timber} might become 2$\times$4s, plywood\index{plywood}, toothpick
 Iron ore\index{iron ore} might become steel\index{steel}, then sheet metal\index{sheet metal}, and
 then a toaster\index{toaster}.
 Water might become ice, a sports drink, or Play-Doh\index{Play-Doh}.
-The process of pulling a resource into the economy is called ``extraction.''\index{resource extraction}
+The process of pulling a resource into the economy is called \textbf{extraction}\index{extraction}.
 Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used
 for productive purposes.
 
