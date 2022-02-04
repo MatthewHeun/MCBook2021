@@ -8,7 +8,7 @@
 \label{chap:agriculture}
 %#############################################################
 
-\epigraph{There are only nine meals between mankind and anarchy.}{Alfred Henry Lewis (1906)}
+\epigraph{There are only nine meals between mankind and anarchy.}{Alfred Henry Lewis\index{Lewis, Alfred Henry} (1906)}
 % https://www.barrypopik.com/index.php/new_york_city/entry/every_nation_is_about_nine_meals_away_from_a_revolution
 
 % https://thecounter.org/climate-change-eat-less-meat-plant-based-impossible-burger-regenerative-ranching
@@ -51,7 +51,7 @@ in Chapter~\ref{chap:land_use_urban_planning}.
 Agriculture is the major use to which humans put the land.
 It is estimated that 71\% of ice-free land is used for agricultural purposes:
 12\% for crops, 
-37\% for pasture, and 
+37\% for pasture\index{pasture}, and 
 22\% for timber production\index{timber production} in forests~\cite{SRCCL2019}.
 So it is no surprise that agricultural has important sustainability implications.
 
@@ -70,7 +70,7 @@ By definition,
 and in contrast to some of the examples mentioned in Section~\ref{sec:recycling},
 ``food'' is not a substitutable resource.
 Although humans can exist on a wide variety of diets, we can't directly metabolize 
-nonfood items, such as wood, cellulose, sunlight, or petroleum\index{petroleum}.
+nonfood items, such as wood, cellulose\index{cellulose}, sunlight, or petroleum\index{petroleum}.
 
 Food doesn't appear on plates magically, out of nowhere.
 It arrives on our plates through a network of 
