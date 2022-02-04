@@ -254,10 +254,10 @@ household energy consumption and CO$_2$ emissions\index{CO$_2$ emissions!househo
 (d)~lighting\index{lighting}.
 
 
-%------------------------------
-\subsubsection{Size and location}
+%++++++++++++++++++++++++++++++
+\subsection{Size and location}
 \label{sec:size_and_location}
-%------------------------------
+%++++++++++++++++++++++++++++++
 
 %..............................
 \paragraph{Size} 
@@ -394,10 +394,10 @@ can mean both heating and air-conditioning\index{air-conditioning} are necessary
 potentially increasing the energy required to operate homes in those locations.
 
 
-%------------------------------
-\subsubsection{Heating and cooling}
+%++++++++++++++++++++++++++++++
+\subsection{Heating and cooling}
 \label{sec:heating_and_cooling} \index{households!heating and cooling}
-%------------------------------
+%++++++++++++++++++++++++++++++
 
 In most locations,
 daily and seasonal temperature variations are larger
@@ -474,10 +474,10 @@ Most air conditioners consume electricity\index{electricity} to perform their co
 causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants. 
 
 
-%------------------------------
-\subsubsection{Hygiene}
+%++++++++++++++++++++++++++++++
+\subsection{Hygiene}
 \label{sec:hygiene}\index{hygiene}
-%------------------------------
+%++++++++++++++++++++++++++++++
 
 Dwellings consume significant energy and water
 for showers\index{shower}, dish washers\index{dish washer},
@@ -498,10 +498,10 @@ Figure~\ref{fig:average_residential_energy} shows that hygiene\index{hygiene}
 of U.S.\ final energy\index{final energy} consumption in 2015.
 
 
-%------------------------------
-\subsubsection{Lighting}
+%++++++++++++++++++++++++++++++
+\subsection{Lighting}
 \label{sec:lighting}
-%------------------------------
+%++++++++++++++++++++++++++++++
 
 Indoor lighting\index{indoor lighting} provides illumination for rooms,
 typically by consuming electricity\index{fossil fuel electricity} and emitting CO$_2$ if fossil-fuel sources are used.
