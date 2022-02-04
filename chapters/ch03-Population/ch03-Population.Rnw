@@ -619,7 +619,7 @@ the \textbf{Valeriepieris circle}\index{Valeriepieris circle},
 a region with a radius of about 3,300~km 
 centered on Mong Khet, Myanmar\index{Mong Khet, Myanmar}~\cite{Quah2015}; 
 see Figure~\ref{fig:half_population}.
-This area of Southeast Asia has very high population density\index{population density}.
+This area of Southeast Asia\index{Asia} has very high population density\index{population density}.
 \end{mcframe}
 
 <<half_population, fig.scap="The Valeriepieris circle", fig.cap="The Valeriepieris circle\\index{Valeriepieris circle}. As of 2015, half of the world's population lives in a circle with a radius of 3,300~km centered on Mong Khet, Myanmar\\index{Mong Khet, Myanmar}~\\cite{Quah2015}.">>=
@@ -890,7 +890,7 @@ published August 17, 2020. \\
       Falling birth rates are correlated with economic development, urbanization,
       increased education, decline in the value of child labor\index{labor!child}, and access to
       contraception.
-      (Note that birth rates fell in western Europe in the late 1800s before
+      (Note that birth rates fell in western Europe\index{Europe} in the late 1800s before
       widespread use of contraception.)
       What are some morally acceptable ways to cause birth rates to decline?
 
