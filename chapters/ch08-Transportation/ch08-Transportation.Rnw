@@ -313,11 +313,11 @@ and maintain livable spaces?''
 
 A third sustainability challenge associated with transportation is 
 particular matter (PM)\index{particulate matter (PM)}. 
-Concerns about the effects of PM
+Concerns about the effects of PM\index{particulate matter (PM)}
 on human health go back millennia, and with good cause.
-PM emissions are ``the main contributor to human health effects 
+PM emissions\index{particulate matter (PM) emissions} are ``the main contributor to human health effects 
 [by air pollution\index{pollution!air}] by some margin''~\cite{Fowler2020}.
-PM ``is also the form in which most of the long-range transportation 
+PM\index{particulate matter (PM)} ``is also the form in which most of the long-range transportation 
 of sulfur and nitrogen-containing pollutants occurs''~\cite{Fowler2020}.
 Hippocrates\index{Hippocrates} (circa 400 BC) was concerned about the effects of wood smoke on human health.
 Later, when coal\index{coal} emerged as a fuel for home heating, power generation, and
@@ -329,13 +329,15 @@ Since the mid-twentieth century, air quality in
 North America\index{North America}, Europe\index{Europe}, and Japan\index{Japan}
 has improved.
 However, emissions in South and East Asia\index{Asia} rose in the late twentieth and early 
+However, emissions in South and East Asia\index{Asia} rose in the late twentieth and early 
 twenty-first centuries. 
 Global SO$_2$ emissions from transportation peaked about 1990, and
 global NO$_\text{x}$ emissions peaked around 2018. 
-Global ammonia emissions, a key contributor to PM, 
+Global ammonia\index{ammonia} emissions, a key contributor to PM\index{particulate matter (PM)}, 
 continue to grow, however.
-The sustainability challenge associated with PM is 
-``can we eliminate PM emissions while providing heated spaces and transportation 
+The sustainability challenge associated with PM\index{particulate matter (PM)} is 
+``can we eliminate PM emissions\index{particulate matter (PM) emissions}
+while providing heated spaces and transportation 
 at a reasonable cost?''
 
 
@@ -350,9 +352,9 @@ over time.
 Passenger cars are the greatest single cause of CO$_2$ emissions from transportation\index{CO$_2$ emissions!transportation}.
 One interesting feature of Figure~\ref{fig:transport_GHG_emissions}
 is that CO$_2$ emissions\index{CO$_2$ emissions!transportation} peaked in 2000, 
-about a decade before the Great Recession (2007--2009).
+about a decade before the Great Recession\index{Great Recession} (2007--2009).
 The CO$_2$ emissions\index{CO$_2$ emissions!transportation} peak was likely caused by a combination of factors:
-record-high prices for liquid transportation fuels in the runup to the Great Recession,
+record-high prices for liquid transportation fuels in the runup to the Great Recession\index{Great Recession},
 which led drivers to prefer higher-efficiency vehicles, 
 which led to a decline total CO$_2$ emissions\index{CO$_2$ emissions!transportation}, 
 even as consumption of transportation services\index{transportation service} rose through the 2000s;
@@ -491,7 +493,7 @@ The most effective way for manufacturers
 to increase vehicle fuel economy\index{fuel economy} is to reduce vehicle mass.
 Lighter vehicles can be achieved by
 replacing steel components with aluminum or carbon-fiber alternatives.
-Other design considerations that affect fuel efficiency include aerodynamics 
+Other design considerations that affect fuel efficiency include aerodynamics\index{aerodynamics} 
 and fuel type (diesel or regular).
 
 In addition to vehicle design, driving habits also influence fuel economy\index{fuel economy}.
@@ -500,7 +502,7 @@ constant speeds (using cruise control\index{cruise control}
 where appropriate)
 lead to improved vehicle fuel economy\index{fuel economy}.
 
-Fuel economy\index{fuel economy}, by definition,
+Fuel economy\index{fuel economy}, quantified in miles per gallon,
 focuses on the efficacy of the machine itself (the car).
 However, drivers don't buy fuel to move vehicles.
 They pay for fuel to move people and freight!
