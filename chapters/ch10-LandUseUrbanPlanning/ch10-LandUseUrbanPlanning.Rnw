@@ -11,9 +11,10 @@
 \epigraph{The truth about a city's aspirations isn't found in its vision. 
 It's found in its budget.}{Brent Toderian}
 
-The previous three chapters described sustainability challenges related to 
+The three previous chapters described sustainability challenges related to 
 households, transportation, and agriculture.
-A common element in all these sustainability challenges is how we use land\index{sustainability challenges!land use}.
+A common element in all three sustainability challenges 
+is how we use land\index{sustainability challenges!land use}.
 We need places for homes, to grow food, and for transportation systems. 
 Moreover, where we choose to put each of these elements influences 
 the overall need for transportation in human society.
@@ -31,7 +32,7 @@ this chapter considers dwellings and businesses collectively.
 We consider the sustainability implications of spacing, density\index{population density}, and how 
 transportation links between locations are affected by layout.
 
-The second aspect is allocation, that is, how much land is used for each 
+The second aspect of alnd use is allocation, that is, how much land is used for each 
 purpose?
 Land can be used for agriculture, recreation, urban or suburban dwellings, or 
 not allocated for direct human use, that is, left as wilderness.
@@ -55,7 +56,7 @@ How can we transition to more sustainable ways of using land?
 Equation~\ref{eq:IPARX} shows two main drivers for land use:
 population (\mft{P}, Chapter~\ref{chap:population}) and
 affluence (\:\!\mft{A}, Chapter~\ref{chap:affluence}).
-The remaining two terms on the right-hand side of Equation~\ref{eq:IPARX} (\mft{R} and \mft{X})
+The remaining two terms on the right-hand side of Equation~\ref{eq:IPARX} (\:\!\mft{R} and \mft{X}\:)
 are fixed by technology. 
 The size of the economy is \mft{P}$\times$\mft{A}.
 The economy can grow by increasing either \mft{P} or \mft{A}.
@@ -157,9 +158,10 @@ converting more land to agricultural use over time.
 
 Population growth also leads directly to a need for more housing,
 but not just any housing.
-Another trend shown by land-use statistics is greater urbanization.
-The demand for housing is disproportionately for urban housing
-because of a long-term trend of migration to urban areas. 
+Another trend shown by land-use statistics is greater urbanization;
+see Figure~\ref{fig:urbanization}.
+The demand for housing is disproportionately in urban areas
+because of a long-term trend of migration to cities. 
 Urban areas have much higher GDP per area.
 Thus, pursuit of wealth\index{wealth}, that is, a desire for greater affluence~\Aparen{}, drives 
 migration from rural areas to urban ones.
@@ -204,7 +206,7 @@ A major example is timber\index{timber}, which is a key ingredient in constructi
 consumer goods.
 Figure~\ref{fig:USlanduse} shows that growing timber\index{timber} is a major use of U.S.\ land.
 
-A major cause of deforestation\index{deforestation} in the Amazon basin, for instance, is 
+A major cause of deforestation\index{deforestation} in the Amazon\index{Amazon (the river)} basin, for instance, is 
 extraction\index{mineral extraction} of mineral wealth\index{mineral wealth}
 because there is a strong demand for resources~\Rparen{} to feed an ever-growing global 
 economy.
@@ -383,16 +385,16 @@ is ``how can the best farmland be preserved for future food production?''
 %..............................
 
 Urban areas are defined by a relative abundance of public works.
-A rural road might have a drainage ditch beside the road but the road itself
-might not be paved. 
-In contrast, a suburban street will be paved and have gutters, curbs, storm sewers, and a sidewalk.
 A city will have traffic infrastructure, such as traffic lights and perhaps bridges\index{bridge},
 and electricity\index{electricity}, natural gas\index{natural gas}, water, and sanitation networks.
 A city center will additionally have public buildings such as a courthouse, library, and/or 
 post office.
-Eventually, all the above infrastructure will reach the end of its functional life
+A suburban street will be paved and have gutters, curbs, storm sewers, and a sidewalk.
+In contrast, a rural road might have a drainage ditch beside the road but the road itself
+might not be paved. 
+Eventually, all infrastructure (urban, suburban, and rural) will reach the end of its functional life
 and have to be repaired or replaced.
-To remain a city, enough taxes have to be collected over the infrastructure's life
+To remain viable, a city needs to collect enough taxes over the infrastructure's life
 to repair or replace it when it wears out.
 To be sustainable, an urban area has to be valuable enough to generate the additional
 revenue to pay for its additional infrastructure.
@@ -402,13 +404,13 @@ infrastructure financing in more detail.
 Cities face additional sustainability challenges 
 related to infrastructure lifespan\index{sustainability challenges!infrastructure}, 
 economic and population growth, changing technology, and fractured ownership.
-The design lifetime of infrastructure may not match its economic lifetime.
-Population growth might make a bridge\index{bridge} with a 100-year lifespan inadequate to 
+Furthermore, the design lifetime of infrastructure may not match its economic lifetime.
+For example, population growth might make a bridge\index{bridge} with a 100-year lifespan inadequate to 
 satisfy transportation demand after only 30 years.
-Wireless communication technologies have rendered wire-based communication 
+And wireless communication technologies have rendered wired communication 
 infrastructure much less relevant. 
 However, when changes are necessary, the multiple constraints of urban environments
-often makes upgrading infrastructure costly and difficult. 
+often make upgrading infrastructure costly and difficult. 
 That is, transitions are especially difficult for cities.
 
 A sustainability challenge associated with urban infrastructure\index{sustainability challenges!infrastructure}
@@ -426,7 +428,7 @@ Another way of thinking about the role of transportation in urban environments i
 that transportation creates places worth going to.
 Consider, for example, an urban restaurant that serves very tasty food. 
 If you can't get to it, it doesn't matter how good the food is. 
-The potential customer base is restricted to the number of people who can get 
+The potential customer base is restricted to the number of people who can travel 
 to the restaurant.
 Access becomes both an economic enabler and an economic multiplier.
 
@@ -435,27 +437,27 @@ Perhaps ironically, the transportation itself is not something people want
 to visit. 
 No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
 afternoon.''
-Rail yards, bus stations, and airports are loud, and often uncomfortable, places to be.
-A desirable city center is pleasant, walkable, human scale, and space efficient.
+Rail yards, bus stations, and airports are loud, often uncomfortable, places to be.
+A desirable city center is pleasant, walkable, human scale, and space-efficient.
 Being desirable makes urban areas valuable, which, in turn, creates the tax base 
 to sustain infrastructure. 
 
 In 2018, just 31 counties (out of 3141, or under 1\%) produced 32\% of U.S. GDP. 
 % https://www.visualcapitalist.com/america-land-use/
-Most of these were around major U.S.\ metropolitan areas, such as New York City,
-Los Angeles, or Chicago.
+Most of these were around major U.S.\ metropolitan areas, such as New York\index{New York} City,
+Los Angeles\index{Los Angeles}, or Chicago\index{Chicago}.
 A large part of the value of cities comes from the concentration of people,
 who are both a resource and a market.
 A large pool of labor\index{labor} allows access to specialized skills and a quantity of labor\index{labor}
-to create large and valuable products, like aircraft, microchip foundries, or 
-sophisticated software.
+to create large and valuable products, like aircraft\index{aircraft}, microchip foundries, or 
+sophisticated software\index{software}.
 Conversely, a large population of consumers allows specialized markets to develop
 that would not have enough appeal to be viable in a rural or small-town setting.
 Examples include specialty grocery stores, a school for ballroom dance, or an exotic pet store.
 
-For a fixed population density\index{population density}, a city can only grow its population by expanding.
+For a fixed population density\index{population density}, a city can grow its population only by expanding.
 As ``rings'' are added to the city and the diameter of the city grows, the time
-it takes to travel across the city grows as well. 
+required to travel across the city grows as well.
 At some point, the city diameter becomes so big that it becomes infeasible to 
 travel from some parts of the city to other parts.
 At that point, the economic benefits of growing are lost: the markets can't
@@ -469,7 +471,8 @@ Higher population densities means transportation is less important.
 Lower population densities means transportation is needed even more.
 Figure~\ref{fig:urban_density} illustrates the point by showing the relationship 
 between urban density\index{population density} and transport-related energy consumption.
-Clearly, there is a tradeoff between urban density\index{population density} and cost of transportation.
+Clearly, there is a tradeoff between urban density\index{population density} and 
+energy consumption for transportation.
 
 <<urban_density, fig.scap="Transportation energy vs.\\ urban density by city", fig.cap="Transportation energy vs.\\ urban density by city. \\emph{Source}: \\citet{US_cities}.">>=
 urban_density_data <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Urban_Density.xlsx"),
@@ -491,7 +494,7 @@ urban_density_data %>%
                      show.legend = FALSE) +
   
   viridis::scale_colour_viridis(discrete = TRUE, direction = -1, begin = 0, end = 0.9) +
-  ggplot2::labs(x = "Urban density [people/ha]", 
+  ggplot2::labs(x = "Population density [people/ha]", 
                 y = expression("Transportation energy [GJ/" * person%.%year * "]"), 
                 colour = ggplot2::element_blank()) +
   ggplot2::guides(colour = "none") + 
@@ -504,6 +507,7 @@ A sustainability challenge associated with land use
 and transportation\index{sustainability challenges!transportation} 
 is ``how do we arrange the different elements of the transportation system to move 
 goods and people quickly with little environmental impact?''
+
 
 %++++++++++++++++++++++++++++++
 \subsection{Agriculture}
@@ -524,6 +528,7 @@ The challenge is keeping those most productive locations as agriculture and not
 allocating them other other uses, such as housing.
 A sustainability challenge associated with land use and agriculture\index{sustainability challenges!cropland} is 
 ``how can we retain the most fertile cropland as cropland?''
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sustainability transitions in land use}
@@ -561,6 +566,7 @@ As in Chapter~\ref{chap:agriculture}, we leave to Chapters~\ref{chap:government}
 and~\ref{chap:personal_action} the discussion of how such changes can be made 
 (when possible) and who might take action to make such changes.
 
+
 %..............................
 \paragraph{Population density}
 \label{sec:land_transition_pop_density}
@@ -587,12 +593,13 @@ Thus, affordable housing and higher population density is an example where chang
 would improve all of the three areas of sustainability\index{social sustainability} 
 simultaneously---social, economic, and environmental. 
 
+
 %..............................
 \paragraph{Afforestation}
 %..............................
 
-Because of the climate crisis, significant amounts of GHG need to
-be removed from the atmosphere\index{atmosphere} and stored somewhere. 
+Because of the climate crisis, significant amounts of greenhouse gases\index{greenhouse gas}
+need to be removed from the atmosphere\index{atmosphere} and stored somewhere. 
 Figure~\ref{fig:CarbonStorage} indicates that forests play an important
 role in sequestering carbon, particularly in tropical and boreal forests.
 Currently, the world is experiencing significant deforestation\index{deforestation}. 
