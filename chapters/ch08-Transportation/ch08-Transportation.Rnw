@@ -129,9 +129,9 @@ on the macro scale, on the micro scale, and
 in the commercial and industrial sectors.
 At the macro scale, 
 economic activity is a large driver of demand for transport.
-The U.S.\ Bureau of Transportation Statistics (BTS)
+The U.S.\ Bureau of Transportation Statistics (BTS)\index{Bureau of Transportation Statistics (BTS)}
 calculates a monthly measure of transportation services\index{transportation service} 
-output called thee \textbf{Transportation Services Index
+output called the \textbf{Transportation Services Index
 (TSI)}\index{Transportation Services Index (TSI)}~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk},
 which is a weighted and indexed measure of
 freight traffic and passenger transportation 
@@ -255,10 +255,10 @@ on the last leg of their journey to
 consumers and businesses.
 Typically, the last leg involves moving goods from a distribution center
 to the purchaser.
-The rise of e-commerce has caused unparalleled growth in last-mile transport
-of freight in recent years. 
+The rise of e-commerce\index{e-commerce} has caused unparalleled growth in last-mile\index{last mile problem}
+transportation of freight in recent years. 
 The result is rising energy consumption and
-CO$_2$ emissions\index{CO$_2$ emissions!last mile} from commercial last-mile deliveries.
+CO$_2$ emissions\index{CO$_2$ emissions!last mile} from commercial last-mile\index{last mile problem} deliveries.
 Figure~\ref{fig:last_mile} shows percentages of total delivery cost for several parts of a delivery journey, 
 the largest portion being the last mile.
 A sustainability challenge for the last mile problem\index{last mile problem} is 
@@ -313,28 +313,31 @@ and maintain livable spaces?''
 
 A third sustainability challenge associated with transportation is 
 particular matter (PM)\index{particulate matter (PM)}. 
-Concerns about the effects of PM
+Concerns about the effects of PM\index{particulate matter (PM)}
 on human health go back millennia, and with good cause.
-PM emissions are ``the main contributor to human health effects 
+PM emissions\index{particulate matter (PM) emissions} are ``the main contributor to human health effects 
 [by air pollution\index{pollution!air}] by some margin''~\cite{Fowler2020}.
-PM ``is also the form in which most of the long-range transportation 
-of sulfur and nitrogen-containing pollutants occurs''~\cite{Fowler2020}.
-Hippocrates (circa 400 BC) was concerned about the effects of wood smoke on human health.
+PM\index{particulate matter (PM)} ``is also the form in which most of the long-range transportation 
+of sulfur and nitrogen\index{nitrogen (N)}-containing pollutants occurs''~\cite{Fowler2020}.
+Hippocrates\index{Hippocrates} (circa 400 BC) was concerned about the effects of wood smoke on human health.
 Later, when coal\index{coal} emerged as a fuel for home heating, power generation, and
 industrial processes, coal\index{coal}-derived PM\index{particulate matter (PM)}
 and sulfur compounds were additional concerns. 
 The introduction of ``dirty'' internal combustion engines\index{internal combustion engine (ICE) vehicle} 
 for transportation intensified air-quality issues, particularly in urban areas.
-Since the mid-twentieth century, air quality in North America, Europe, and Japan
+Since the mid-twentieth century, air quality in
+North America\index{North America}, Europe\index{Europe}, and Japan\index{Japan}
 has improved.
-However, emissions in South and East Asia rose in the late twentieth and early 
+However, emissions in South and East Asia\index{Asia} rose in the late twentieth and early 
+However, emissions in South and East Asia\index{Asia} rose in the late twentieth and early 
 twenty-first centuries. 
 Global SO$_2$ emissions from transportation peaked about 1990, and
 global NO$_\text{x}$ emissions peaked around 2018. 
-Global ammonia emissions, a key contributor to PM, 
+Global ammonia\index{ammonia} emissions, a key contributor to PM\index{particulate matter (PM)}, 
 continue to grow, however.
-The sustainability challenge associated with PM is 
-``can we eliminate PM emissions while providing heated spaces and transportation 
+The sustainability challenge associated with PM\index{particulate matter (PM)} is 
+``can we eliminate PM emissions\index{particulate matter (PM) emissions}
+while providing heated spaces and transportation 
 at a reasonable cost?''
 
 
@@ -349,9 +352,9 @@ over time.
 Passenger cars are the greatest single cause of CO$_2$ emissions from transportation\index{CO$_2$ emissions!transportation}.
 One interesting feature of Figure~\ref{fig:transport_GHG_emissions}
 is that CO$_2$ emissions\index{CO$_2$ emissions!transportation} peaked in 2000, 
-about a decade before the Great Recession (2007--2009).
+about a decade before the Great Recession\index{Great Recession} (2007--2009).
 The CO$_2$ emissions\index{CO$_2$ emissions!transportation} peak was likely caused by a combination of factors:
-record-high prices for liquid transportation fuels in the runup to the Great Recession,
+record-high prices for liquid transportation fuels in the runup to the Great Recession\index{Great Recession},
 which led drivers to prefer higher-efficiency vehicles, 
 which led to a decline total CO$_2$ emissions\index{CO$_2$ emissions!transportation}, 
 even as consumption of transportation services\index{transportation service} rose through the 2000s;
@@ -490,7 +493,7 @@ The most effective way for manufacturers
 to increase vehicle fuel economy\index{fuel economy} is to reduce vehicle mass.
 Lighter vehicles can be achieved by
 replacing steel components with aluminum or carbon-fiber alternatives.
-Other design considerations that affect fuel efficiency include aerodynamics 
+Other design considerations that affect fuel efficiency include aerodynamics\index{aerodynamics} 
 and fuel type (diesel or regular).
 
 In addition to vehicle design, driving habits also influence fuel economy\index{fuel economy}.
@@ -499,7 +502,7 @@ constant speeds (using cruise control\index{cruise control}
 where appropriate)
 lead to improved vehicle fuel economy\index{fuel economy}.
 
-Fuel economy\index{fuel economy}, by definition,
+Fuel economy\index{fuel economy}, quantified in miles per gallon,
 focuses on the efficacy of the machine itself (the car).
 However, drivers don't buy fuel to move vehicles.
 They pay for fuel to move people and freight!
@@ -543,10 +546,10 @@ for a fuller discussion of the issues surrounding these concepts.
 %++++++++++++++++++++++++++++++
 
 Transitioning to a sustainable energy system
-built upon renewable energy generation will reduce
+built upon renewable energy\index{renewable energy} generation will reduce
 the impact intensity of resource extraction\index{resource extraction} and consumption
 (\;\!\mft{X} in Equation~\ref{eq:IPARX}), 
-because consumption of renewable energy
+because consumption of renewable energy\index{renewable energy}
 (for instance, electric vehicles\index{electric vehicle (EV)} run by solar electricity\index{solar electricity})
 has less environmental impact than consumption of 
 non-renewable energy (such as gasoline\index{gasoline}).
@@ -554,7 +557,7 @@ non-renewable energy (such as gasoline\index{gasoline}).
 Another way to improve the sustainability of modern transportation is to
 transition away from fossil fuels\index{fossil fuels}
 toward sustainable energy,
-thereby reducing the harmful environmental effects of fossil fuel combustion\index{fossil fuel!combustion}.
+thereby reducing the harmful environmental effects of fossil fuel combustion\index{fossil fuels!combustion}.
 Two solutions are often discussed:
 widespread use of biofuels\index{biofuel}
 in internal combustion engine (ICE) vehicles\index{internal combustion engine (ICE) vehicle} and
@@ -640,13 +643,13 @@ Electric vehicles (EVs)\index{electric vehicle (EV)} are modeled as using electr
 generated by two different primary fuel\index{primary energy} mixes:
 a high proportion%
 \footnote{
-  20\% renewables was also the European Union average
+  20\% renewables was also the European Union\index{European Union (EU)} average
   electricity mix\index{electricity!European mix} 
   when the \citet[Fig.~1]{Hawkins_2012} paper was written (c.~2010)~\cite{European-Environment-Agency:2021vb}
   and upon which the environmental impacts for the ``Ren20'' electricity mix are based.
   The U.S.\ average electricity mix\index{electricity!U.S.\ mix} today (2020) 
   is also about 20\% renewable~\cite{U.S.-Energy-Information-Agency:2021tp}, 
-  while the European mix is closer to 30\% renewable.
+  while the European\index{Europe} mix is closer to 30\% renewable.
   The UK electricity mix is pushing toward 40\% renewable~(37.1\%)~\cite{Evans:2020vj}.
 }
 %
@@ -661,7 +664,8 @@ than for ICE vehicles\index{internal combustion engine (ICE) vehicle}.
 However, EVs\index{electric vehicle (EV)}
 can provide benefits in terms of global warming potential~(GWP)\index{global warming potential (GWP)}
 relative to ICE vehicles\index{internal combustion engine (ICE) vehicle}
-if the electricity\index{electricity} source includes renewables (as in the ``Ren20'' electricity mix), 
+if the electricity\index{electricity} source includes renewables\index{renewable energy}
+(as in the ``Ren20'' electricity mix\index{renewable electricity}), 
 because of lower lifetime fuel/electricity\index{electricity} emissions.
 In the case of the Ren20 electricity\index{renewable electricity} mix,
 the global warming benefits of EVs\index{electric vehicle (EV)} are achieved
@@ -676,7 +680,7 @@ miss key differences associated with the production of different vehicle types a
 could lead to misguided comparisons across technologies.''
 
 
-<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile\\index{automobile} environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion\\index{mineral resource depletion (MRD)}. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline\\index{gasoline}-powered vehicles. ``Ren20'' indicates an electricity mix\\index{electricity mix} with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union electricity mix in 2010. ``Coal''\\index{coal} indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
+<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile\\index{automobile} environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion\\index{mineral resource depletion (MRD)}. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline\\index{gasoline}-powered vehicles. ``Ren20'' indicates an electricity mix\\index{electricity mix} with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union\\index{European Union (EU)} electricity mix in 2010. ``Coal''\\index{coal} indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
 Hawkins_life_cycle <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "EV data from Hawkins.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(c("Base vehicle", "Engine", "Other powertrain", "Battery", "Use phase", "Fuel/electricity", "End of life"), names_to = "Life.cycle.component", values_to = "normalized_impact") %>% 
@@ -710,20 +714,26 @@ Hawkins_life_cycle %>%
 \label{mcframe_EV}
 Automobile\index{utomobile} technology is one of many arenas in which sustainability tradeoffs are observed.
 Under the right conditions,
-EVs can reduce global warming impact relative to ICE vehicles
+EVs\index{electric vehicle (EV)} can reduce global warming impact relative to 
+ICE vehicles\index{internal combustion engine (ICE) vehicle}
 at the expense of depleting the stock of mineral resources\index{mineral resources},
 a phenomenon known as \textbf{problem shifting}\index{problem shifting}.
 
 The sustainability challenges of transportation transitions
-don't end with the tradeoff between GHG emissions and mineral resource depletion\index{mineral resource depletion (MRD)} 
+don't end with the tradeoff between GHG emissions\index{CO$_2$ emissions!transportation} and
+mineral resource depletion\index{mineral resource depletion (MRD)} 
 discussed above.
 In fact, there is a temporal component that must be examined
-when comparing EVs against ICE vehicles.
-Whether or not GHG emissions are lower for an EV compared to an ICE vehicle depends upon
+when comparing EVs\index{electric vehicle (EV)} against ICE vehicles\index{internal combustion engine (ICE) vehicle}.
+Whether or not GHG emissions\index{CO$_2$ emissions!transportation} are lower for an EV compared 
+to an ICE vehicle\index{internal combustion engine (ICE) vehicle} depends upon
 the service lifetime of the vehicle.
-The benefits of EVs relative to ICE vehicles appear only after tens of thousands of kilometers of service,
-because EVs have much greater GHG emissions during manufacturing
-than ICE vehicles.
+The benefits of EVs\index{electric vehicle (EV)}
+relative to ICE vehicles\index{internal combustion engine (ICE) vehicle}
+appear only after tens of thousands of kilometers of service,
+because EVs\index{electric vehicle (EV)} have much greater GHG emissions\index{CO$_2$ emissions!transportation}
+during manufacturing
+than ICE vehicles\index{internal combustion engine (ICE) vehicle}.
 Put another way, an EV that is totaled shortly after manufacture
 will never achieve its potential emissions reductions.
 \end{mcframe}
@@ -804,9 +814,9 @@ transportation, petroleum\index{petroleum}, and technology.
 
 \begin{questions}
 
-\item E-commerce deliveries have been increasingly prominent recently. 
+\item E-commerce\index{e-commerce} deliveries have been increasingly prominent recently. 
       How do deliveries compare to consumers traveling to stores to make purchases?
-      What if e-commerce delivery meant that purchases were delivered to a 
+      What if e-commerce\index{e-commerce} delivery meant that purchases were delivered to a 
       neighborhood location from which customers had to pick up packages?
       Consider the implications of these three alternatives.
       What would be the effects on energy consumption, the built environment,
@@ -815,14 +825,15 @@ transportation, petroleum\index{petroleum}, and technology.
 \item Under the right conditions (an electricity mix\index{electricity mix} that includes renewable sources
       and a 150,000~km service life), \citet{Hawkins_2012} show that
       electric vehicles\index{electric vehicle (EV)} 
-      provide GHG emissions reductions relative 
+      provide GHG emissions\index{CO$_2$ emissions!transportation} reductions relative 
       to internal combustion engine vehicles\index{internal combustion engine (ICE) vehicle}
       at the expense of increased mineral resource depletion\index{mineral resource depletion (MRD)}.
-      The tradeoff between GHG emissions and mineral resource depletion\index{mineral resource depletion (MRD)} is
+      The tradeoff between GHG emissions\index{CO$_2$ emissions!tranportation}
+      and mineral resource depletion\index{mineral resource depletion (MRD)} is
       nearly impossible to decide on a quantitative or objective basis.
       Indeed, deciding this and similar tradeoffs cannot be divorced
       from human values and value judgments.
-      Is it wise to trade reduced GHG emissions
+      Is it wise to trade reduced GHG emissions\index{CO$_2$ emissions!transportation}
       for increased mineral resource depletion\index{mineral resource depletion (MRD)}?
       Why or why not?
       What values are guiding your answer?
@@ -830,7 +841,7 @@ transportation, petroleum\index{petroleum}, and technology.
 
 \item Could driving be more environmentally friendly than walking? 
       One analysis found~\cite{CohenH2008} that if your calories came
-      primarily from animal sources, particularly beef, that driving could
+      primarily from animal sources, particularly beef\index{beef}, that driving could
       have less climate-change impact than walking but that, for the average 
       American diet, walking had less impact.
       The analysis was for a relatively short round trip, 2.5 km (1.5 miles),
@@ -864,20 +875,20 @@ transportation, petroleum\index{petroleum}, and technology.
       a week for 50 weeks per year, is 500 hours of commuting. 
       Equating 500 hours of travel to \$40,000 is a wage of \$80/hour.
       
-\item Congestion pricing attempts to attenuate demand for a public good by manipulating its price.
-      Application of congestion pricing to vehicular traffic in urban areas is becoming 
+\item Congestion pricing\index{congestion pricing} attempts to attenuate demand for a public good by manipulating its price.
+      Application of congestion pricing\index{congestion pricing} to vehicular traffic in urban areas is becoming 
       increasingly common. 
-      One way to implement congestion pricing is to automatically charge a toll 
+      One way to implement congestion pricing\index{congestion pricing} is to automatically charge a toll 
       on every (nonexempt) vehicle entering the city center.
-      The London has had such a scheme since 2003 and congestion pricing 
+      London\index{London} has had such a scheme since 2003 and congestion pricing\index{congestion pricing} 
       is currently being considered for New York City.
-      The objectives of congestion pricing are many and various: improved
+      The objectives of congestion pricing\index{congestion pricing} are many and various: improved
       urban air quality (electric vehicles\index{electric vehicle (EV)}
       can be exempted from the surcharge),
       fuller utilization of existing mass transit, reduced noise, better pedestrian
       safety, preservation of ``historic character,'' and improved transit times 
       for the remaining vehicle traffic (for example, bus traffic).
-      Some common objections to congestion pricing relate to (hypothetical) displaced traffic to suburbs,
+      Some common objections to congestion pricing\index{congestion pricing} relate to (hypothetical) displaced traffic to suburbs,
       economic inequality (who can afford to pay and who can't), civil liberties
       (from the automated systems that collect the tolls), who decides and who 
       benefits (residents vs. visitors), and what the extra tax money will be spent on.
@@ -885,13 +896,13 @@ transportation, petroleum\index{petroleum}, and technology.
       \item Fundamentally, does it make sense---if roads are a public good---to
             intentionally restrict their use? Why or why not? 
       \item Who gets to decide, for example residents or visitors? Who should get to decide?
-      \item Should your (nearest) local city implement congestion pricing? Why or why not?
-      \item Which congestion pricing objective(s) are most important?
+      \item Should your (nearest) local city implement congestion pricing\index{congestion pricing}? Why or why not?
+      \item Which congestion pricing\index{congestion pricing} objective(s) are most important?
             Which objection(s) are most important?
       \end{enumerate}
 
 \item \href{www.strongtowns.org}{Strong Towns.org} defines a road as a high-speed 
-      connection (like an expressway) between two places,
+      connection (like an expressway\index{expressway}) between two places,
       a street as a human-centric place where people interact with homes and businesses,
       and \textbf{stroads}\index{stroad} as dangerous and expensive hybrids that are ultimately ineffective
       at doing the job of either a street or a road. 
@@ -929,14 +940,14 @@ transportation, petroleum\index{petroleum}, and technology.
       \item Are there things you would like your local traffic planners to change?
       \end{enumerate}
       
-\item In 2015--2016, Houston Metro boosted bus ridership as the result of a two-year long 
+\item In 2015--2016, Houston\index{Houston, Texas} Metro boosted bus ridership as the result of a two-year long 
       process of community consultation that reallocated resources towards 
       maximizing ridership.
       The tradeoff was a shift away from maintaining access.
       To put it another way, they went from many infrequent buses on low-ridership routes
       to frequent buses on a few routes with high ridership.  
       What is the purpose of public transit? 
-      Was Houston Metro's change appropriate or was it an example of rent seeking
+      Was Houston\index{Houston, Texas} Metro's change appropriate or was it an example of rent seeking
       by the ``tyranny of the majority?''
 
 \item In the early days of air travel\index{air travel}, it was luxurious, in all senses of the word,
@@ -975,22 +986,23 @@ transportation, petroleum\index{petroleum}, and technology.
       Will you try to offset\index{carbon offset} 
       your carbon emissions\index{CO$_2$ emissions!reduction} (if any) and how?
       
-\item Consider the infrastructure choice of a ferry versus a bridge. 
+\item Consider the infrastructure choice of a ferry\index{ferry} versus a bridge\index{bridge}. 
       What is the objective function? Is it minimum cost per year to deliver a 
       set amount of service? (Given what set of assumptions? If you build it, 
       they will come!) 
       Is it fastest service? 
-      For a ferry service you are acquainted with (you 
+      For a ferry\index{ferry} service you are acquainted with (you 
       might have to do a little research) how would you make the decision?
       What stakeholders are you considering? 
       Do sustainability considerations,
       such as the IPARX identity\index{IPARX identity}, factor into your decision-making process?
-      Did you pick a vehicle ferry or passenger ferry? How might your decision
+      Did you pick a vehicle ferry\index{ferry!vehicle} or passenger ferry\index{ferry!passenger}?
+      How might your decision
       change if you had picked the other one?
       
 \item Driving has long been a competitive sport. One lesser-known form of 
       competition is ``hypermiling\index{hypermiling},'' 
-      which attempts to maximize fuel efficiency
+      which attempts to maximize fuel economy\index{fuel economy}
       of a stock vehicle, that is, not a purpose-built vehicle.
       Hypermiling\index{hypermiling} (see \cite{Gaffney2007} for an early and 
       fascinating account)
@@ -998,11 +1010,12 @@ transportation, petroleum\index{petroleum}, and technology.
       long coasting decelerations to red lights and high-speed turns, both to 
       avoid using the brakes.
       The results can lead to fuel efficiencies two to four times greater than
-      the EPA ratings! (But, of course, somewhat dangerous behavior on the road.)
+      the EPA\index{Environmental Protection Agency (EPA)} ratings!
+      (But, of course, somewhat dangerous behavior on the road.)
       
       Future technology, such as vehicle-to-vehicle and vehicle-to-infrastructure
       communication and greater computer control of driving functions, could both
-      boost fuel efficiency and make hypermiling techniques safer to deploy
+      boost fuel efficiency and make hypermiling\index{hypermiling} techniques safer to deploy
       more broadly. 
       (For instance, it might be possible to completely eliminate traffic lights.)
       However, enhanced automation to achieve more fuel efficient and, perhaps,
@@ -1044,12 +1057,12 @@ transportation, petroleum\index{petroleum}, and technology.
 
 \begin{projects}
 
-\item Energy consumption for last-mile deliveries has been increasing exponentially
+\item Energy consumption for last-mile\index{last mile problem} deliveries has been increasing exponentially
       in recent years. 
-      Research the rates of growth for e-commerce deliveries and the energy and CO$_2$
+      Research the rates of growth for e-commerce\index{e-commerce} deliveries and the energy and CO$_2$
       implications of that growth.
       Now compare to alternatives. 
-      What if every e-commerce delivery recipient drive to a store to buy the same goods.
+      What if every e-commerce\index{e-commerce} delivery recipient drive to a store to buy the same goods.
       What would be the sustainability and CO$_2$ emissions\index{CO$_2$ emissions!transportation}
       implications of the alternative?
       Compare and contrast.
@@ -1083,11 +1096,12 @@ transportation, petroleum\index{petroleum}, and technology.
       the sustainability of transport?  
       Does the answer to the previous question change if people or freight transportation is considered?
       
-\item Research the key natural resources required to make batteries for EVs. 
+\item Research the key natural resources required to make batteries for EVs\index{electric vehicle (EV)}. 
       What are the sources for those resources?
       Under what social and political conditions are the key resources extracted from the environment and
       processed for inclusion in batteries?
-      What would be the sustainability implications of transitioning all road transportation to EVs?
+      What would be the sustainability implications of transitioning all road transportation 
+      to EVs\index{electric vehicle (EV)}?
       
 \item On a mode-by-mode basis, assess the opportunities and barriers for making each 
       transportation mode more sustainable.  
@@ -1100,10 +1114,10 @@ transportation, petroleum\index{petroleum}, and technology.
       causes problems of a different sort.
       Can you identify arguments both in favor of and opposed to intentional problem shifting\index{problem shifting}?
 
-\item Research a variety of virtual-reality systems for their sustainability implications.
+\item Research a variety of virtual-reality\index{virtual reality (VR)} systems for their sustainability implications.
       How do they increase or decrease resource consumption?
       How do they increase or decrease energy consumption and CO$_2$ emissions\index{CO$_2$ emissions!virtual reality}?
-      What is the potential for virtual reality to reduce future needs
+      What is the potential for virtual reality\index{virtual reality (VR)} to reduce future needs
       for transportation services\index{transportation service}?
       
 \end{projects}

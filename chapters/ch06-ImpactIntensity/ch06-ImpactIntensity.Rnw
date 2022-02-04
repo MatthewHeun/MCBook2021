@@ -71,7 +71,7 @@ will have effects on air, water, species diversity, land, and human communities.
 }
 %
 Examples of environmental impacts include
-water eutrophication\index{eutrophication} (from fertilizer runoff),
+water eutrophication\index{eutrophication} (from fertilizer\index{fertilizer} runoff),
 SO$_2$ emissions\index{sulfur dioxide (SO$_2$)!emissions of} (from burning sulfurous coal\index{coal}),
 CO$_2$ emissions (from burning fossil fuels)\index{CO$_2$ emissions!fossil fuel},
 desertification\index{desertification}
@@ -97,7 +97,7 @@ other examples of environmental impacts caused by resource extraction\index{reso
   \item deforestation\index{deforestation} and
         reduced forest quality~\cite{Kissinger:2020ut}
         to make way for rubber plantations\index{rubber plantations}
-        in southeast Asia.
+        in southeast Asia\index{Asia}.
 
 \end{itemize}
 
@@ -466,8 +466,8 @@ in the direction of low-carbon energy supply.
 %++++++++++++++++++++++++++++++
 
 Nuclear power\index{nuclear energy} (an electricity\index{nuclear electricity} source only)
-may provide a bridge to a sustainable future.
-Nuclear power emits little CO$_2$ during plant operation
+may provide a bridge\index{bridge} to a sustainable future.
+Nuclear power\index{nuclear energy} emits little CO$_2$\index{CO$_2$ emissions} during plant operation
 and has high EROI; see Table~\ref{tab:eroi}. 
 However, the energy cost to construct a nuclear power plant\index{nuclear power plant} 
 is higher than other types of
@@ -584,13 +584,14 @@ or concrete with a system such as Energy Vault~\cite{Energy-Vault:uz}.
 A third challenge comes from the water portion of WWS\index{wind, water, and solar (WWS)}. 
 In most areas of the world, 
 the potential for expanding the production of hydro electricity\index{hydro electricity} is limited.
-Most of the Americas, Europe, and Asia are already ``tapped out'' regarding hydropower.
-Today, the potential for hydro is greatest in central Africa\index{Africa}.
+Most of the Americas, Europe\index{Europe}, and Asia\index{Asia} are already ``tapped out'' 
+regarding hydropower\index{hydro electricity}.
+Today, the potential for hydro\index{hydro electricity} is greatest in central Africa\index{Africa}.
 The proposed Grand Inga Dam\index{Grand Inga Dam} in the 
 Democratic Republic of the Congo (DRC)\index{Democratic Republic of the Congo (DRC)}
-would be the largest dam in the world and could house a 40--70 GW hydro power station.
+would be the largest dam in the world and could house a 40--70 GW hydro\index{hydro electricity} power station.
 Moreover, there are considerable negative environmental and social impacts from 
-hydro projects, such as changes to soil salinity, silting, and the destruction
+hydro\index{hydro electricity} projects, such as changes to soil salinity, silting, and the destruction
 of communities located in the proposed reservoir.
 
 Finally, WWS\index{wind, water, and solar (WWS)} systems are energy intensive to manufacture.
@@ -998,7 +999,7 @@ are the topic of the next section.
 \label{sec:renewables_interaction}
 %++++++++++++++++++++++++++++++
 
-The transition to renewable energy sources 
+The transition to renewable energy\index{renewable energy} sources 
 is expected to reduce the CO$_2$ intensity of energy consumption
 (\;\!\XCOtwo{} in the prime example), 
 if the CO$_2$ avoided by renewable generation over the lifetime of a renewable device
@@ -1008,7 +1009,7 @@ in the renewable device.
 That said, many advocates of Green Growth\index{Green Growth}, 
 a Green New Deal\index{Green New Deal}, and
 similar public policies 
-promote the idea that a transition to green infrastructure, including renewable energy,
+promote the idea that a transition to green infrastructure, including renewable energy\index{renewable energy},
 will stimulate economic growth and increase affluence.
 If they are right, 
 a renewables-driven decrease in \XCOtwo{} would lead to an increase in \mft{A}
@@ -1078,9 +1079,10 @@ Energy Vault simulation  \\
 
 \begin{questions}
 
-\item Do renewable energy sources have ``emissions?'' If so, what are they?
-        Make reference to Equation~\ref{eq:IPARX}. At a minimum, discuss
-        solar photovoltaic\index{solar panel}, wind turbines\index{wind turbine}, hydro power, and renewable biofuels.
+\item Do renewable energy\index{renewable energy} sources have ``emissions?'' If so, what are they?
+      Make reference to Equation~\ref{eq:IPARX}. At a minimum, discuss
+      solar photovoltaic\index{solar panel}, wind turbines\index{wind turbine}, 
+      hydro\index{hydro electricity} power, and renewable biofuels.
 
 \item Fossil fuels\index{fossil fuels} have environmental impacts other than CO$_2$. 
       One example is oil spills,
@@ -1131,8 +1133,8 @@ Energy Vault simulation  \\
       The truth is, all human structures kill birds\index{bird}. 
       What are the alternatives (to having wind turbines\index{wind turbine} at all)?
       What is the cost/benefit analysis of having wind turbines\index{wind turbines}?
-      Who does the analysis and makes the decisions about whether to have wind
-      turbines and where to site them?
+      Who does the analysis and makes the decisions about whether to have 
+      wind turbines\index{wind turbine} and where to site them?
       Do birds\index{bird} get a voice in the decision? Should they?
       If so, who speaks for the birds\index{bird}?
       What about other animals, say clams or ants? 
@@ -1143,7 +1145,7 @@ Energy Vault simulation  \\
       historically, on average, 50 years
       to transition from one energy source to another~\cite[p.~6595]{Fouquet:2010tq}.
       At this moment in time, it is unlikely that humanity has 50 years
-      to effect a transition to renewable sources of energy
+      to effect a transition to renewable\index{renewable energy} sources of energy
       to avoid irreversible effects of climate change\index{climate change}.
       What should we do?
       Give up on mitigation and focus on adaptation?
@@ -1176,17 +1178,17 @@ Energy Vault simulation  \\
       economy we have today? 
       Hint: see Table~\ref{tab:eroi}.
 
-\item Should the transition to renewable energy sources be actively managed 
+\item Should the transition to renewable energy\index{renewable energy} sources be actively managed 
       (for example by government policy) or should we let the ``invisible hand
       of the market'' manage the transition for us? Why?
       Are your reasons strictly because of the outcome(s) you imagine? 
       What assumptions are you making that lead to those outcomes?
       Or do you have philosophical reasons to prefer active versus passive 
       management?
-      Who is actually making the decisions about transitions to renewable energy
+      Who is actually making the decisions about transitions to renewable energy\index{renewable energy}
       (or not)?
 
-\item Find the proportion of renewable energy in the world's energy mix today.
+\item Find the proportion of renewable energy\index{renewable energy} in the world's energy mix today.
       Does this proportion indicate that we are far into the transition to a 
       low-carbon energy regime?
 
@@ -1201,7 +1203,7 @@ Energy Vault simulation  \\
       What assumptions lead you to prefer one approach over another?
 
 \item Should carbon capture and storage/\index{carbon sequestration} be pursued as a stop-gap
-      measure (until we get fully renewable energy)?
+      measure (until we get fully renewable energy\index{renewable energy})?
       What is your criteria for making that decision?
       Under what circumstances would your answer change?
       
@@ -1262,7 +1264,7 @@ Energy Vault simulation  \\
         
   \item Research and rank the EROI\index{energy return on investment (EROI)} 
         of many primary energy\index{primary energy} sources, 
-        including fossil fuels and renewables such as biofuels.
+        including fossil fuels and renewables\index{renewable energy} such as biofuels.
         What does your ranking imply for transitions to a low-carbon energy regime?
         Critique how your sources drew the boundaries
         around which they calculated EROI\index{energy return on investment (EROI)}.

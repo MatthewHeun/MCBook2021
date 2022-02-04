@@ -8,7 +8,7 @@
 \label{chap:agriculture}
 %#############################################################
 
-\epigraph{There are only nine meals between mankind and anarchy.}{Alfred Henry Lewis (1906)}
+\epigraph{There are only nine meals between mankind and anarchy.}{Alfred Henry Lewis\index{Lewis, Alfred Henry} (1906)}
 % https://www.barrypopik.com/index.php/new_york_city/entry/every_nation_is_about_nine_meals_away_from_a_revolution
 
 % https://thecounter.org/climate-change-eat-less-meat-plant-based-impossible-burger-regenerative-ranching
@@ -51,11 +51,11 @@ in Chapter~\ref{chap:land_use_urban_planning}.
 Agriculture is the major use to which humans put the land.
 It is estimated that 71\% of ice-free land is used for agricultural purposes:
 12\% for crops, 
-37\% for pasture, and 
+37\% for pasture\index{pasture}, and 
 22\% for timber production\index{timber production} in forests~\cite{SRCCL2019}.
 So it is no surprise that agricultural has important sustainability implications.
 
-In addition to land use and GHG emissions, agriculture has another 
+In addition to land use and GHG emissions\index{CO$_2$ emissions}, agriculture has another 
 major impact on sustainability: humans cannot live without food.
 Agriculture does provide some nonfood products such as cotton, flax (for linen),
 flowers, and leather.
@@ -70,7 +70,7 @@ By definition,
 and in contrast to some of the examples mentioned in Section~\ref{sec:recycling},
 ``food'' is not a substitutable resource.
 Although humans can exist on a wide variety of diets, we can't directly metabolize 
-nonfood items, such as wood, cellulose, sunlight, or petroleum\index{petroleum}.
+nonfood items, such as wood, cellulose\index{cellulose}, sunlight, or petroleum\index{petroleum}.
 
 Food doesn't appear on plates magically, out of nowhere.
 It arrives on our plates through a network of 
@@ -183,7 +183,8 @@ see Chapter~\ref{chap:planetary_boundaries}.
 If agricultural practices decrease soil fertility\index{soil fertility}, 
 agriculture can not be considered strongly sustainable\index{strong sustainability}.
 If agriculture depends on a nonrenewable resource, 
-such as phosphate fertilizers, it cannot be considered strongly sustainable\index{strong sustainability}.
+such as phosphate\index{phosphate} fertilizers\index{fertilizer},
+it cannot be considered strongly sustainable\index{strong sustainability}.
 If agriculture is rapidly depleting soil fertility\index{soil fertility}
 such that the soil will be unusable in less than 50~years,
 agriculture is not weakly sustainable\index{weak sustainability}.
@@ -212,7 +213,7 @@ Not all soils are rich in the nutrients needed by plants to grow.
 However, topsoil\index{topsoil} can be lost by erosion due to the action of wind and/or water.
 Most erosion results from wind or water action on tilled soils, that is,
 where the land has been plowed to expose bare soil.
-Some examples include the 1930s Dust Bowl in the U.S.\
+Some examples include the 1930s Dust Bowl\index{Dust Bowl} in the U.S.\
 and the phenomenon called the ``Yellow Wind\index{Yellow Wind}'' or ``Asian dust\index{Asian dust},'' where fine
 soil particles are carried from
 China\index{China}, Mongolia\index{Mongolia}, and Kazakhstan\index{Kazakhstan} to East Asia\index{Asia} and 
@@ -235,24 +236,27 @@ About 8\% of the total carbon in soils has been lost over the last 12,000
 years~\cite{Sanderman2017}.
 
 In contrast, 
-sustainable agriculture at least maintains, and hopefully builds, soil fertility\index{soil fertility}.
+sustainable agriculture\index{sustainable agriculture}
+at least maintains, and hopefully builds, soil fertility\index{soil fertility}.
 Soil fertility\index{soil fertility} and agricultural productivity\index{productivity!agricultural} 
-can be enhanced with fertilizers and/or agrichemicals.
-The most common fertilizers contain nitrogen, phosphorous, and potassium. 
-Agrichemicals include herbicides, pesticides, and fungicides. 
+can be enhanced with fertilizers\index{fertilizer} and/or agrichemicals\index{agrichemicals}.
+The most common fertilizers\index{fertilizer} contain nitrogen\index{nitrogen (N)},
+phosphorous\index{phosphorous (P)}, and potassium\index{potassium (K)}. 
+Agrichemicals\index{agrichemicals} include herbicides\index{herbicide},
+pesticides\index{pesticide}, and fungicides\index{fungicide}. 
 To the extent that any of these are derived from nonrenewable feedstocks, such as 
 fossil fuels\index{fossil fuels}, their use is not strongly sustainable\index{strong sustainability}.
-Phosphate fertilizers are necessary for high 
+Phosphate\index{phosphate (P)} fertilizers\index{fertilizers} are necessary for high 
 \textbf{agricultural yields}\index{yield!agricultural}, but
 they originate from (nonrenewable) mineral deposits.
-On the other hand, about half of the fertilizer used globally is animal manure, 
+On the other hand, about half of the fertilizer\index{fertilizer} used globally is manure\index{manure}, 
 which is a renewable resource. 
-Animal manure could be a sustainable fertilizer, if the animals are raised sustainably,
+Animal manure\index{manure} could be a sustainable fertilizer\index{fertilizer}, if the animals are raised sustainably,
 for instance, and 
 if their feed is sustainably raised.
 A sustainability challenge associated with soil use\index{sustainability challenges!soil use} is 
 ``how can we maintain soil fertility\index{soil fertility}
-in the long term without fertilizers 
+in the long term without fertilizers\index{fertilizers} 
 derived from nonrenewable resources?''
 
 
@@ -261,15 +265,15 @@ derived from nonrenewable resources?''
 %++++++++++++++++++++++++++++++
 
 Plants need water to grow.
-Currently, much of agricultural irrigation is not sustainable because water is being
+Currently, much of agricultural irrigation\index{irrigation} is not sustainable because water is being
 extracted from aquifers\index{aquifer} faster than the natural regeneration rate.
 If aquifers\index{aquifer} are exhausted, future humans won't have water for nourishment or bathing.
 Overuse of water is not limited to subsurface water, like the Ogallala aquifer\index{Ogallala aquifer}; 
 see \ref{question:ogallala}. 
 Surface water is also being overused for agriculture.
 One particularly notable example is the (former) Aral Sea\index{Aral Sea}, which has all but disappeared
-due to diversion of its water for irrigation; see Figure~\ref{fig:aral_sea}.
-Another example is the Colorado River, which 
+due to diversion of its water for irrigation\index{irrigation}; see Figure~\ref{fig:aral_sea}.
+Another example is the Colorado River\index{Colorado River}, which 
 supplies water to 12\% of the U.S.\ population
 and 
 supports 15\% of U.S.\ crop output and
@@ -279,8 +283,8 @@ supports 15\% of U.S.\ crop output and
 %% https://uwm.edu/centerforwaterpolicy/wp-content/uploads/sites/170/2013/10/Colorado_Agriculture_Final.pdf
 Because of diversions for agriculture (70--80\%) and 
 supplying municipalities with drinking water (15\%),
-the Colorado River mouth is dry; 
-it no longer flows into the Sea of Cortez.
+the Colorado River\index{Colorado River} mouth is dry; 
+it no longer flows into the Sea of Cortez\index{Sea of Cortez}.
 
 
 \begin{figure}
@@ -307,14 +311,14 @@ it no longer flows into the Sea of Cortez.
 
 
 Agricultural activities also result in water pollution\index{pollution!water} of surface water and ground water.
-For example, the city of Toledo, Ohio draws its drinking water from Lake Erie.
-Since the 1990s, Lake Erie has been subject to ``blooms'' of toxic cyanobacteria
-fueled by fertilizer run off.
+For example, the city of Toledo, Ohio\index{Toledo, Ohio} draws its drinking water from Lake Erie\index{Lake Erie}.
+Since the 1990s, Lake Erie\index{Lake Erie} has been subject to ``blooms'' of toxic cyanobacteria\index{cyanobacteria}
+fueled by fertilizer\index{fertilizer} run off.
 Six people got sick in 2013.
 In 2014, 110 people got sick and the municipal water supply to 400,000 people was shut down.
-Moreover, Lake Erie and the Maumee River that feeds it were unsafe for human skin contact.
+Moreover, Lake Erie\index{Lake Erie} and the Maumee River\index{Maumee River} that feeds it were unsafe for human skin contact.
 Blooms occurred again in 2017 and 2019~\cite{Rogener:2020wi}.
-Animal manure can also contaminate waterways. Ick.
+Animal manure\index{manure} can also contaminate waterways. Ick.
 
 A sustainability challenge associated with agricultural use
 of water\index{sustainability challenges!water} is 
@@ -406,9 +410,9 @@ food_energy %>%
 
 
 Because food is energy, the overall energy return on investment (EROI)\index{energy return on investment (EROI)} 
-and efficiency of the food-delivery system can be calculated.
+and efficiency of the food-delivery system\index{food-delivery system} can be calculated.
 Figure~\ref{fig:food_and_ag_energy_flow} shows the energy consumed and supplied
-by various aspects of the food-delivery system in the U.S.
+by various aspects of the food-delivery system\index{food-delivery system} in the U.S.
 The EROI\index{energy return on investment (EROI)} of food produced is 
 \Sexpr{sprintf(food_eroi_gross * 100, fmt = "%#.1f")}\%
 (\Sexpr{sprintf(food_eroi_gross_output, fmt = "%#.2f")} quads of food energy
@@ -428,8 +432,8 @@ Taking waste\index{waste} into account, the EROI of food consumed is
 (\Sexpr{sprintf(food_eroi_consumed, fmt = "%#.2f")} quads consumed, 
 \Sexpr{sprintf(food_eroi_denominator, fmt = "%#.2f")} quads input).
 The fact that the EROI\index{energy return on investment (EROI)}
-of the food-delivery system is less than 100\%
-means that the food-delivery system is not a source of energy for society.
+of the food-delivery system\index{food-delivery system} is less than 100\%
+means that the food-delivery system\index{food-delivery system} is not a source of energy for society.
 Rather, it is a sink of energy for society.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -448,7 +452,7 @@ to obtain food than it gets from food.
 Whether spending more energy to obtain food than we get from it is sustainable or not
 depends on where the energy for agriculture comes from. 
 Modern society remains viable only
-because its food-delivery system is supported by energy inputs from an external source:
+because its food-delivery system\index{food-delivery system} is supported by energy inputs from an external source:
 fossil fuels\index{fossil fuels}. 
 Fossil fuels\index{fossil fuels}
 supply the energy for 
@@ -464,14 +468,14 @@ with the purpose of converting feed for animals into food for humans.
 Both feed and food can be quantified in energy terms (in units of kcal).
 Thus, in that view, the entire agricultural system can be characterized by an efficiency, 
 the ratio of kcal of food output to kcal of feed input.
-The \textbf{feed-to-food efficiency}\index{feed-to-food efficiency}~($\eta_{\mft{ff}}$)
+The \textbf{feed-to-food efficiency~($\eta_{\mft{ff}}$)}\index{feed-to-food efficiency ($\eta_{\mft{ff}}$)}
 quantifies the efficiency of these agricultural processes.
-The overall feed-to-food efficiency\index{feed-to-food efficiency} of the U.S.\ food system 
+The overall feed-to-food efficiency\index{feed-to-food efficiency ($\eta_{\mft{ff}}$)} of the U.S.\ food system 
 is about 7\%~\cite{Shepon:2016wt}.
-Different types of food have different feed-to-food efficiencies\index{feed-to-food efficiency},
+Different types of food have different feed-to-food efficiencies\index{feed-to-food efficiency ($\eta_{\mft{ff}}$)},
 as shown in Figure~\ref{fig:FoodToFeedEfficiency}.
 
-<<FoodToFeedEfficiency, fig.width=3, fig.height=2.5, fig.scap="Feed-to-food efficiency of various foods", fig.cap="Feed-to-food efficiency\\index{feed-to-food efficiency}~($\\eta_{\\mft{ff}}$\\;\\!) of various foods in the U.S.\\ food system. \\emph{Source}: \\citet{Shepon:2016wt}.">>=
+<<FoodToFeedEfficiency, fig.width=3, fig.height=2.5, fig.scap="Feed-to-food efficiency of various foods", fig.cap="Feed-to-food efficiency~($\\eta_{\\mft{ff}}$\\;\\!) of various foods in the U.S.\\ food system. \\emph{Source}: \\citet{Shepon:2016wt}.">>=
 feed_to_food_efficiency <- readxl::read_excel(file.path("chapters", "ch09-Agriculture", "datasets", 
                                                         "FeedToFoodEfficiency.xlsx"), 
                                               sheet = "data to plot")
@@ -583,9 +587,9 @@ is ``how can food waste\index{food waste} be eliminated?''
 \subsection{Greenhouse gas emissions}\index{CO$_2$ emissions}
 %++++++++++++++++++++++++++++++
 
-Globally, food and land use account for 23\% of GHG emissions~\cite{IPCC:2018aa}.\index{greenhouse gas}
-In the U.S., soil management accounts for over half of agricultural GHG emissions~\cite{USEPA:2021uj}.
-Over-application of synthetic nitrogen-based fertilizers releases significant
+Globally, food and land use account for 23\% of GHG emissions\index{CO$_2$ emissions}~\cite{IPCC:2018aa}.
+In the U.S., soil management accounts for over half of agricultural \index{CO$_2$ emissions!agriculture}~\cite{USEPA:2021uj}.
+Over-application of synthetic nitrogen\index{nitrogen (N)}-based fertilizers\index{fertilizer} releases significant
 amounts of N$_2$O, a very potent GHG.
 The paragraphs below look at two very important greenhouse gases\index{greenhouse gas}, 
 carbon dioxide~(CO$_2$)\index{carbon dioxide~(CO$_2$)} and methane~(CH$_4$)\index{methane~(CH$_4$)}.
@@ -624,7 +628,7 @@ food_emissions_US %>%
 Convenient calculators for greenhouse gas emissions\index{CO$_2$ emissions} from food production
 can be found online \cite{CleanMetrics:aa}.
 Factors such as transport distance and wastage percentages are important
-for determining GHG emissions from food.
+for determining GHG emissions\index{CO$_2$ emissions!food} from food.
 \end{mcframe}
 
 <<FoodEmissionsPerMcal, fig.height=4, fig.scap="Food CO$_2$ emissions per Mcal of food for various foods", fig.cap="Food CO$_2$ emissions\\index{CO$_2$ emissions!food} per Mcal of food for various foods. \\emph{Source}: \\citet{Ritchie:2021tl}.">>=
@@ -675,13 +679,14 @@ food_emissions_total %>%
 \paragraph{CO$_2$}
 %++++++++++++++++++++++++++++++
 
-One source of GHG emissions in food and agriculture 
-is the food-delivery system.
-Figure~\ref{fig:food_ghg} shows GHG emissions from the various stages of food
+One source of GHG emissions\index{GHG emissions!food} in food and agriculture 
+is the food-delivery system\index{food-delivery system}.
+Figure~\ref{fig:food_ghg} shows GHG emissions\index{CO$_2$ emissions!food} from the various stages of food
 distribution and preparation. 
 The amount of CO$_2$ released is proportional to the amount of energy used.
 Figure~\ref{fig:FoodEmissionsPerMcal} shows equivalent CO$_2$ emissions\index{CO$_2$ emissions!food} per Mcal of food.
-(Foods with low feed-to-food efficiency\index{feed-to-food efficiency} tend to have higher GHG emissions;
+(Foods with low feed-to-food efficiency\index{feed-to-food efficiency ($\eta_{\mft{ff}}$)}
+tend to have higher GHG emissions\index{CO$_2$ emissions!food};
 see Figure~\ref{fig:FoodToFeedEfficiency}.)
 However, by itself Figure~\ref{fig:FoodEmissionsPerMcal} is not terribly informative.
 We don't eat equal calories of each food.
@@ -700,18 +705,19 @@ illustrate agricultural CO$_2$ emissions\index{CO$_2$ emissions!agriculture}.
 One tonne of methane\index{methane}
 has the same global warming potential\index{global warming potential (GWP)} as twenty five tonnes 
 of CO$_2$---methane\index{methane} is a very potent GHG.
-Methane\index{methane} is about 10\% of U.S.\ GHG emissions. 
+Methane\index{methane} is about 10\% of U.S.\ GHG emissions\index{CO$_2$ emissions}. 
 Of this 10\%, about 39\% comes from agriculture, 40\% comes from energy and transportation,
 and 21\% comes from landfills and wastewater treatment~\cite{USEPA:2021uj}.
-Agricultural emissions are almost entirely from enteric digestion and manure management,
+Agricultural emissions are almost entirely from enteric digestion and manure\index{manure} management,
 with a small amount (6\%) coming from rice cultivation.
 Enteric digestion refers to the production of methane in an animal's digestion.
 The amount of methane\index{methane} produced depends on the quality of the animal's feed.
-Seventy-two percent of methane\index{methane} from enteric digestion comes from beef cattle; 24\% is from 
-dairy cattle~\cite{USEPA:2021uj}.
-Methane\index{methane} from manure management tends to come from liquified manure treatment, which
+Seventy-two percent of methane\index{methane} from enteric digestion comes from beef cattle\index{cattle!beef};
+24\% is from dairy cattle\index{cattle!dairy}~\cite{USEPA:2021uj}.
+Methane\index{methane} from manure management tends to come from liquified manure\index{manure} treatment, which
 is often the preferred method for concentrated animal populations.
-Dairy cattle account for 51.3\% of methane\index{methane} from manure and swine account for 37\%~\cite{USEPA:2021uj}.
+Dairy cattle\index{cattle!dairy} account for 51.3\% of methane\index{methane} from manure\index{manure}
+and swine\index{pig} account for 37\%~\cite{USEPA:2021uj}.
 
 A sustainability challenge associated agricultural
 GHG emissions\index{sustainability challenges!GHG emissions}
@@ -732,7 +738,7 @@ One obvious category of change appears from viewing agriculture through the lens
 of Equation~\ref{eq:IPARX}.
 To have reduced impacts \Iparen{}, agriculture needs to 
 use fewer inputs to deliver the food society needs: 
-less land, less water, less energy, and less fertilizer and agrichemicals.
+less land, less water, less energy, and less fertilizer\index{fertilizer} and agrichemicals\index{agrichemicals}.
 These changes would reduce the resource intensity
 \Rparen{} of agriculture.
 Another, related, set of changes would be to lower 
@@ -761,42 +767,42 @@ For instance, when an automobile\index{automobile} has a lower energy intensity 
 driving becomes cheaper, so more miles are driven.
 However, in agriculture, the ``appetite'' for food is essentially fixed. 
 Cheaper food should not result in greatly increased demand for food.
-Certainly savings from agriculture will be spent in other areas of the economy
+Certainly, savings from agriculture will be spent in other areas of the economy
 (another important aspect of rebound\index{rebound effect}),
 but we don't expect to see a strong rebound\index{rebound effect} within the agriculture sector itself.
 (The magnitude of rebound\index{rebound effect}
-outside the sector in which energy efficiency\index{energy efficiency} improves
+outside the sector in which efficiency improves
 is a matter of debate.)
 
 Another positive change for the sustainability of agriculture would be to transition
-the world's energy supply to renewable energy, 
+the world's energy supply to renewable energy\index{renewable energy}, 
 given the energy-intensive nature of modern agriculture and 
 its attendant low EROI\index{energy return on investment (EROI)}.
-Of course, a transition to renewable energy would benefit more sectors than just agriculture;
+Of course, a transition to renewable energy\index{renewable energy} would benefit more sectors than just agriculture;
 it would be universally beneficial and, in fact, is necessary 
 for strong sustainability\index{strong sustainability}.
 
-Renewable energy sources require lots of land (Figure~\ref{fig:PowerDensity}), 
+Renewable energy\index{renewable energy} sources require lots of land (Figure~\ref{fig:PowerDensity}), 
 land that is already mostly used for agriculture.
-One strategy could be to combine agriculture and renewable energy generation
+One strategy could be to combine agriculture and renewable energy\index{renewable energy} generation
 on the same land. 
-For instance, animals can graze among the turbines of a wind farm\index{wind farm}.
+For instance, animals can graze among the turbines\index{wind turbine} of a wind farm\index{wind farm}.
 Another option could be to use solar panels\index{solar panel} to provide partial shade for crops that 
 prefer partial shade, like coffee\index{coffee} or raspberries\index{raspberry}. 
 The plants provide some cooling for the solar panels\index{solar panel}, thereby boosting the
 energy generation efficiency of the panels.
 The panels provide shade for crops, thereby reducing the amount of water needed 
-for irrigation.
+for irrigation\index{irrigation}.
 The tradeoff is that panel spacing may be less dense than would be typical for 
 industrial photovoltaic installation, so the crops have to make up the difference in 
 profitability per acre.
 
-Since the transition to renewable energy is the topic of 
+Since the transition to renewable energy\index{renewable energy} is the topic of 
 Section~\ref{sec:low_carbon_transition}, we won't revisit it here. 
 Instead, the rest of this section focuses on two further transitions necessary
 for agricultural sustainability: shifts in agricultural
 practices to be resilient to the effects of climate change\index{climate change} and the need for 
-regenerative agriculture.
+regenerative agriculture\index{regenerative agriculture}.
 
 
 %++++++++++++++++++++++++++++++
@@ -832,11 +838,13 @@ Hotter, drier climates also bring the increased risk of desertification\index{de
 
 On the one hand, there may be a temptation to ``double down'' on all the agricultural
 practices that have fed us through the population boom of the last century, namely,
-the use of large amounts of inputs, such as fossil energy, synthetic fertilizers, and agrichemicals
+the use of large amounts of inputs, such as fossil energy\index{fossil fuels},
+synthetic fertilizers\index{fertilizer}, and agrichemicals\index{agrichemicals}
 to maximize agricultural productivity\index{productivity!agricultural}.
 On the other hand, increasing inputs will accelerate soil depletion, intensity runoff
 and other agricultural emissions, and shorten the weak sustainability\index{weak sustainability} horizon for the 
-use of nonrenewable resources such as petroleum\index{petroleum}, fossil water, and phosphate deposits.
+use of nonrenewable resources such as petroleum\index{petroleum}, fossil water\index{fossil water}, and
+phosphate\index{phosphate (P)} deposits.
 The climate-change crisis provides an opportunity to rethink ``business as usual'' and to 
 develop new practices that will be effective on a warmer planet.
 
@@ -847,7 +855,7 @@ develop new practices that will be effective on a warmer planet.
 %++++++++++++++++++++++++++++++
 
 As mentioned above, agriculture and land use are a significant source of humanity's 
-GHG emissions. 
+GHG emissions\index{CO$_2$ emissions}. 
 For sustainability, agriculture must become a carbon sink rather than a source 
 for carbon emissions\index{CO$_2$ emissions}. 
 Human agricultural practices over the last 12,000 years (but mostly since 1800) 
@@ -864,15 +872,16 @@ solving the current climate crisis.
 \textbf{Regenerative agriculture}\index{Regenerative agriculture}
 is a set of land management practices that builds 
 soil health by, among other things, sequestering carbon in the soil. 
-Which regenerative agriculture techniques are most effective varies with site history, 
+Which regenerative agriculture\index{regenerative agriculture} techniques are most effective varies with site history, 
 location, and biome, but 
 it is common to use managed grazing by livestock 
 as a key component of soil enhancement.
-Thus, while beef and dairy cattle are sources of GHG emissions under most current 
-agricultural practices, in regenerative agriculture they can play a role in net
+Thus, while beef\index{cattle!beef} and dairy cattle\index{cattle!dairy} are
+sources of GHG emissions\index{CO$_2$ emissions} under most current 
+agricultural practices, in regenerative agriculture\index{regenerative agriculture} they can play a role in net
 carbon sequestration\index{carbon sequestration}~\cite{WOP2019}.
-See~\ref{project:regenerative_ag} for some tips on investigating regenerative
-agriculture in more detail.
+See~\ref{project:regenerative_ag} for some tips on investigating
+regenerative agriculture\index{regenerative agriculture} in more detail.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -882,15 +891,15 @@ agriculture in more detail.
 
 Agriculture exists to feed the world's population~\Pparen.
 To be more sustainability, 
-agriculture must use as few resources as possible and produce minimal 
-impacts on the environment. 
+agriculture must use as few resources as possible and cause minimal 
+impact on the environment. 
 Currently, agricultural uses unsustainable mineral inputs and
 involves land-use practices that degrade soil fertility\index{soil fertility} and harm the land's ability to 
 sequester carbon.
 In today's economy, agriculture is an energy sink\index{energy sink} rather than an energy source\index{energy source}, 
 requiring the unsustainable input of fossil fuels\index{fossil fuels}.
 Agriculture is inefficient on both mass and energy bases.
-Unfortunately, today's agriculture system causes significant GHG emissions.
+Unfortunately, today's agriculture system causes significant GHG emissions\index{CO$_2$ emissions}.
 Reducing environmental impacts from agriculture will require additional investment, which
 may make food more expensive.
 However, food is a basic human need; 
@@ -899,7 +908,8 @@ Therefore, it is crucially important to make choices, individually and corporate
 that make the agriculture system more sustainable, 
 while resolving distributional issues and improving food access for all.
 
-A seven-word ``recipe'' for sustainable agriculture is given by food writer Michael Pollan:
+A seven-word ``recipe'' for sustainable agriculture\index{sustainable agriculture} is
+given by food writer Michael Pollan\index{Pollan, Michael}:
 ``[e]at food. Not too much. Mostly plants.''
 
 
@@ -907,7 +917,7 @@ A seven-word ``recipe'' for sustainable agriculture is given by food writer Mich
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Benjamin Lorr, \emph{The Secret Life of Groceries: The Dark Miracle of
+Benjamin Lorr\index{Lorr, Benjamin}, \emph{The Secret Life of Groceries: The Dark Miracle of
 the American Supermarket}. New York: Avery, 2020. \\
 
 \noindent Gillian Crowther, \emph{Eating Culture: An Anthropological Guide to Food, 
@@ -929,11 +939,11 @@ a succinct introduction to some of the issues covered
 in this chapter. His recipes are great, too. \\
 
 \noindent
-Two short films about the Colorado River by Pete McBride: 
+Two short films about the Colorado River\index{Colorado River} by Pete McBride\index{McBride, Pete}: 
 \href{https://vimeo.com/52955892}{Chasing Water}
 and \href{https://vimeo.com/97197932}{Delta Dawn}. 
 At 47 minutes, \href{https://community.nrs.com/nrs-films/remains-of-a-river/}
-{Remains of River} is a somewhat longer story that traces the Colorado River
+{Remains of River} is a somewhat longer story that traces the Colorado River\index{Colorado River}
 from its headwaters to Los Angeles, Tucson, and ... lettuce.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -961,7 +971,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       versus the amount of landed needed to feed people
       is a clear example of a tradeoff. 
       Higher yields means less land is needed but is generally achieved by application
-      of agrichemicals and fossil-fueled mechanization of labor\index{labor}. 
+      of agrichemicals\index{agrichemicals} and fossil-fueled mechanization of labor\index{labor}. 
       Lower yields means more land is needed (thereby increasing land-based emissions 
       and impacts).
       Since land use is a significant contributor to global greenhouse gas emissions\index{CO$_2$ emissions!land use},
@@ -970,7 +980,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       What does use of the word ``price'' suggest about our approach to solving the
       problem?
       
-\item The traditional Inuit diet consisted of mostly hunted meat, such as seal\index{seal},
+\item The traditional Inuit diet\index{Inuit diet} consisted of mostly hunted meat, such as seal\index{seal},
       walrus\index{walrus}, and whale\index{whale}. 
       Is it permissible (or desirable) to retain these traditional diets, given
       the threatened status of many of the target species? 
@@ -982,7 +992,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       impact. Suppose that you could save 100 lives by emitting an additional
       100,000 tons of CO$_2$ equivalent per year. 
       Would you do it or not? 
-      (For reference, U.S. annual emissions are about 20 tons per capita.)
+      (For reference, U.S.\ annual emissions are about 20 tonnes per capita.)
       How many more lives or how much less carbon does it take to change
       your answer? Why?
 
@@ -999,8 +1009,8 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       standpoint?
       What is the economic motive or return for food exporting/importing?
       
-\item Where should the environmental impact(s) from almond growing be counted, 
-      where the almonds were grown or where they were consumed? 
+\item Where should the environmental impact(s) from almond\index{almond} growing be counted, 
+      where the almonds\index{almond} were grown or where they were consumed? 
       (See \ref{project:almond_water}.)
       How would this affect, for instance, urban and rural carbon footprints\index{carbon footprint}?
       
@@ -1022,23 +1032,23 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       In the U.S.\ at least, food labels use contain (some) nutritional 
       information (like calories) and a list of ingredients (subject to some 
       restrictions). 
-      Labels such as ``organic,'' ``grass fed,'' or ``free-range'' are at the
+      Labels such as ``organic,''\index{organic} ``grass fed,''\index{grass fed}
+      or ``free-range''\index{free range} are at the
       discretion of the producer.
-      There are no standards for carbon footprint\index{carbon footprint}, regenerative agriculture, 
+      There are no standards for carbon footprint\index{carbon footprint}, 
+      regenerative agriculture\index{regenerative agriculture}, 
       or how the item has been transported.
       
-\item A vegan diet is only possible with supplementation of key critical nutrients,
+\item A vegan\index{vegan} diet is only possible with supplementation of key critical nutrients,
       especially and most particularly vitamin B$_{12}$. 
       (B$_{12}$ deficiency can cause permanent neurological damage, even death.)
-      %Although a vegan diet is possible for everyone it is not recommended for 
-      %infants, adolescents, and breastfeeding mothers.
       B$_{12}$ supplements are produced through industrial fermentation.
       What role should such industrial food play in our food system?
       Is there a meaningful difference between industrial food products and
       ``natural'' food, such as what is farmed or harvested wild? 
       What are your reasons for answering as you did?
       
-\item Compare and contrast the environmental impacts of farmed meat, such as beef,
+\item Compare and contrast the environmental impacts of farmed meat, such as beef\index{beef},
       with hunted meat, such as elk\index{elk}, venison\index{venison}, or 
       bison\index{bison}.
       How do these animals differ in their CO$_2$ production? 
@@ -1058,7 +1068,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       you would save if you eliminated the highest-priced food item from your 
       shopping cart. What is that item?)
       
-\item A significant theme of Benjamin Lorr's book \emph{The secret life of groceries} 
+\item A significant theme of Benjamin Lorr's\index{Lorr, Benjamin} book \emph{The secret life of groceries} 
       (see above) is the role that retailers have in determining what is even 
       available for consumers to purchase.
       In some sense, consumers have an illusion of choice because they
@@ -1093,10 +1103,10 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
 
 \begin{projects}
 
-\item Research the amount of water used to produce almonds. What is the value
-      of that water in the environment where the almonds were grown? How did 
-      it get there? How did the almonds get to you? Are the environmental impacts
-      of almond growing allocated to where the almonds are grown or where they are 
+\item Research the amount of water used to produce almonds\index{almond}. What is the value
+      of that water in the environment where the almonds\index{almond} were grown? How did 
+      it get there? How did the almonds\index{almond} get to you? Are the environmental impacts
+      of almond\index{almond} growing allocated to where the almonds\index{almond} are grown or where they are 
       consumed? How does this affect, for instance, urban and rural carbon footprints\index{carbon footprint}?
       \label{project:almond_water}
 
@@ -1119,7 +1129,7 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       How do your food-related emissions compare to your emissions from transportation-related activities?
       Guided by the figures and advice in this chapter, 
       develop an alternative diet and estimate its greenhouse gas emissions\index{CO$_2$ emissions!food}.
-      What amount of GHG emissions reductions can you obtain by changing your diet?
+      What amount of GHG emissions\index{CO$_2$ emissions} reductions can you obtain by changing your diet?
       
 \item Retail is an important part of the food supply chain.
       Where are food deserts most prevalent? 
@@ -1129,13 +1139,13 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
 \item Compile a report on opportunities and challenges of genetically modified organisms
       in agriculture.
       
-\item Research the legal and economic issues related to use of water from the Colorado River.
+\item Research the legal and economic issues related to use of water from the Colorado River\index{Colorado River}.
 
-\item Prepare a report on regenerative agriculture. 
+\item Prepare a report on regenerative agriculture\index{regenerative agriculture}. 
       What are its objectives? 
       What means does it use to achieve those objectives?
-      Can you find a farm local to your area that is using some (or all) regenerative
-      agriculture techniques? 
+      Can you find a farm local to your area that is using some (or all) 
+      regenerative agriculture\index{regenerative agriculture} techniques? 
       What is working well for that farm?
       What challenges do they face?
       \label{project:regenerative_ag}

@@ -66,7 +66,7 @@ Timber\index{timber} might become 2$\times$4s, plywood\index{plywood}, toothpick
 Iron ore\index{iron ore} might become steel\index{steel}, then sheet metal\index{sheet metal}, and
 then a toaster\index{toaster}.
 Water might become ice, a sports drink, or Play-Doh\index{Play-Doh}.
-The process of pulling a resource into the economy is called ``extraction.''\index{resource extraction}
+The process of pulling a resource into the economy is called \textbf{extraction}\index{extraction}.
 Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used
 for productive purposes.
 
@@ -214,7 +214,8 @@ The electricity\index{electricity} sold to consumers is considered to be a \text
   counted in ``final demand.''
 }
 %
-Hydro, solar, and wind are primary energy\index{primary energy} sources. 
+Hydro\index{hydro electricity}, solar\index{solar electricity}, and
+wind\index{wind electricity} are primary energy\index{primary energy} sources. 
 So are crude oil\index{crude oil} and methane\index{methane}.
 In contrast, gasoline\index{gasoline} is a refined fuel. 
 As such, gasoline\index{gasoline} is the product of 
@@ -299,7 +300,7 @@ Although any raw material can be essential
 (and not economically substitutable) 
 for a given product,
 the European Commission\index{European Commission} 
-maintains a list of Critical Raw Materials (CRMs)\index{materials!critical!raw}
+maintains a list of \textbf{critical raw materials (CRMs)}\index{critical raw materials (CRMs)}
 with special importance 
 across a wide range of industries;
 see Table~\ref{tab:CRMs}.
@@ -315,7 +316,7 @@ supply vulnerability or volatility, or
 supply limits.
 
 Each region or sector will have its own list of CRMs.
-For example, the transition to a renewable energy future 
+For example, the transition to a renewable energy\index{renewable energy} future 
 (Section~\ref{sec:low_carbon_transition})
 depends on a large number of critical materials, 
 outlined in a recent International Energy Agency (IEA)\index{International Energy Agency (IEA)} report~\cite{IEA:2021wt}.
@@ -328,7 +329,7 @@ crm_df <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "da
   tibble::column_to_rownames(var = "Materials")
 
 crm_xtab <- xtable::xtable(crm_df, 
-                           caption = c("Critical raw materials and the economic sectors in which they are used. ``Aero'' is aerospace and defense. ``Tex'' is textiles. ``Elect'' is electronics. ``Auto'' includes mobility and automotive. ``Energy'' includes all energy-intensive industries. ``Rens'' is the renewable energy sector. ``Agri'' is agriculture and food. ``Const'' is construction. ``PGM'' is platinum-group metals. ``HREE'' and ``LREE'' are heavy and light rare Earth elements. \\emph{Source}: \\citet[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.", 
+                           caption = c("Critical raw materials and the economic sectors in which they are used. ``Aero'' is aerospace and defense. ``Tex'' is textiles. ``Elect'' is electronics. ``Auto'' includes mobility and automotive. ``Energy'' includes all energy-intensive industries. ``Rens'' is the renewable energy\\index{renewable energy} sector. ``Agri'' is agriculture and food. ``Const'' is construction. ``PGM'' is platinum-group metals. ``HREE'' and ``LREE'' are heavy and light rare Earth elements. \\emph{Source}: \\citet[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.", 
                                        "Critical raw materials and economic sectors"), 
                            align = c("r", rep("c", 11)),
                            label = "tab:CRMs")
@@ -656,7 +657,7 @@ the weak\index{weak sustainability} and
 the strong\index{strong sustainability} versions.%
 \footnote{
   In some cases, renewable resources still have sustainability impacts.
-  For example, biomass\index{biomass} is a renewable energy source, 
+  For example, biomass\index{biomass} is a renewable energy\index{renewable energy} source, 
   but burning wood can lead to reduced air quality.
 }
 
@@ -771,7 +772,7 @@ Industry and transportation use more energy than residences and commerce.
 \end{figure}
 
 
-<<PrimaryEnergyGraph, fig.scap="World primary energy consumption vs.\\ time by energy type", fig.cap="World annual primary energy\\index{primary energy} consumption vs.\\ time by energy type. ``Other ren.'' is other renewables. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels. \\emph{Source}: \\citet{Roser:2021vi}.">>=
+<<PrimaryEnergyGraph, fig.scap="World primary energy consumption vs.\\ time by energy type", fig.cap="World annual primary energy\\index{primary energy} consumption vs.\\ time by energy type. ``Other ren.'' is other renewables\\index{renewable energy}. ``Nat. gas'' is natural gas. ``Trad. bio.'' is traditional biofuels. \\emph{Source}: \\citet{Roser:2021vi}.">>=
 # Gather data for primary energy vs. time graph
 primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "global-primary-energy.xlsx"),
                                      sheet = "data to plot") %>%
@@ -1084,7 +1085,7 @@ see Section~\ref{sec:revisit_IPARX}.
 
 Extraction of finite resources\index{resource extraction}
 (such as coal\index{coal}, oil\index{crude oil}, natural gas\index{natural gas},
-lithium\index{lithium}, neodymium\index{neodymium}, phosphorous\index{phosphorous}, or helium\index{helium})
+lithium\index{lithium}, neodymium\index{neodymium}, phosphorous\index{phosphorous (P)}, or helium\index{helium})
 follows a pattern through time~\cite{Brandt:2007vt}.
 In the beginning, extraction of a useful but finite resource\index{resource extraction} accelerates
 as demand climbs and technologies are developed to reduce the cost of extraction.
@@ -1238,7 +1239,7 @@ US Geological Survey, National Minerals Information Center \\
 \begin{questions}
 
   \item Some aquifers, such as the Ogallala aquifer\index{Ogallala aquifer},
-        are called ``fossil water''
+        are called ``fossil water''\index{fossil water}
         because they were filled with glacial melt from the last ice age.
         Is using any such resource sustainable?
         What are the moral and ethical implications of leaving a valuable and
@@ -1344,10 +1345,10 @@ US Geological Survey, National Minerals Information Center \\
         What would an economist say?
         What would an engineer say?
 
-  \item A recent report \cite{Miljostyrelsen2018} found that an organic cotton
+  \item A recent report \cite{Miljostyrelsen2018} found that an organic\index{organic} cotton
         canvas tote bag\index{tote bag} has an environmental footprint equivalent to 20,000
         plastic shopping bags.
-        In other words, to break even you would have to use the organic cotton bag
+        In other words, to break even you would have to use the organic\index{organic} cotton bag
         every day for about 54 years.
         Hank Green\index{Green, Hank} \href{https://www.youtube.com/watch?v=2PF5AAEAWTs}{attributed his emotional reaction}
         to cognitive dissonance between the life cycle analysis results and his
@@ -1459,7 +1460,7 @@ US Geological Survey, National Minerals Information Center \\
         weak sustainability\index{weak sustainability}, or 
         neither?
         Where is are the recycling\index{recycling} processes consuming energy or other materials?
-        Is the energy fossil based or renewable?
+        Is the energy fossil\index{fossil fuels} based or renewable\index{renewable energy}?
 
   \item Research the CAFE\index{corporate average fuel economy (CAFE)}
         standards in the U.S.\ and

@@ -127,9 +127,9 @@ There are nearly 2.3 billion acres in the U.S.
 Of this total, agriculture takes the largest share, with grassland (29\%), 
 forestry (28\%), and cropland (17\%) being the three largest uses.%
 \footnote{
-  Land used for grazing includes grassland, cropland used for pasture, and grazed forest land. 
+  Land used for grazing includes grassland, cropland used for pasture\index{pasture}, and grazed forest land. 
   Forestry is forest that is not grazed. 
-  Crop production is 87\% of total cropland; the remaining 13\% is idle or used for pasture.
+  Crop production is 87\% of total cropland; the remaining 13\% is idle or used for pasture\index{pasture}.
 }
 %
 The four largest crops in the U.S. are wheat (32\% of land used for crop production),
@@ -182,16 +182,21 @@ excretes wastes\index{waste}.
 \paragraph{Resources}
 %-----------------------------
 
-Land is the primary source of energy, be it fossil fuel\index{fossil fuels}, biomass\index{biomass}, or renewable. 
+Land is the primary source of energy, be it fossil fuel\index{fossil fuels},
+biomass\index{biomass}, or renewable\index{renewable energy}. 
 Wells or mines for fossil fuels\index{fossil fuels} are located in a place.
 Biomass\index{biomass} has to be grown or harvested from a place as well.
 For example, about 30\% of the U.S.\ corn\index{corn} (maize) crop is converted into ethanol\index{corn ethanol}
 to be blended with gasoline\index{gasoline} as a transportation fuel.
-Renewables, such as hydro, solar photovoltaic\index{solar panel}, and wind power, are also located in
+Renewables\index{renewable energy}, such as hydro\index{hydro electricity}, 
+solar\index{solar electricity} photovoltaic\index{solar panel}, and 
+wind\index{wind electricity} power, are also located in
 places.
-In particular, for hydro, solar, and wind, correct siting is a key consideration
+In particular, for hydro\index{hydro electricity}, solar\index{solar electricity}, and
+wind\index{wind electricity}, correct siting is a key consideration
 for how productive each power type will be.
-Not all locations are suitable for hydro power. (Or wind. Or solar.)
+Not all locations are suitable for hydro\index{hydro electricity} power.
+(Or wind\index{wind electrcity}. Or solar\index{solar electricity}.)
 
 In addition to energy, the economy needs material resources;
 see Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use}.
@@ -381,7 +386,7 @@ Urban areas are defined by a relative abundance of public works.
 A rural road might have a drainage ditch beside the road but the road itself
 might not be paved. 
 In contrast, a suburban street will be paved and have gutters, curbs, storm sewers, and a sidewalk.
-A city will have traffic infrastructure, such as traffic lights and perhaps bridges,
+A city will have traffic infrastructure, such as traffic lights and perhaps bridges\index{bridge},
 and electricity\index{electricity}, natural gas\index{natural gas}, water, and sanitation networks.
 A city center will additionally have public buildings such as a courthouse, library, and/or 
 post office.
@@ -398,7 +403,7 @@ Cities face additional sustainability challenges
 related to infrastructure lifespan\index{sustainability challenges!infrastructure}, 
 economic and population growth, changing technology, and fractured ownership.
 The design lifetime of infrastructure may not match its economic lifetime.
-Population growth might make a bridge with a 100-year lifespan inadequate to 
+Population growth might make a bridge\index{bridge} with a 100-year lifespan inadequate to 
 satisfy transportation demand after only 30 years.
 Wireless communication technologies have rendered wire-based communication 
 infrastructure much less relevant. 
@@ -548,9 +553,9 @@ Furthermore, more land could be spared for ecosystem services\index{ecosystem se
 Second, it seems clear that afforestation (devoting more land to forests) is 
 necessary to reduce net greenhouse gas (GHG) emissions\index{CO$_2$ emissions} and, in fact, to reduce 
 atmospheric GHG concentrations.
-Third, a transition to renewable energy sources is likely to greatly increase
+Third, a transition to renewable energy\index{renewable energy} sources is likely to greatly increase
 the amount of land needed to generate the energy we use.
-Producing renewable energy without destroying ecosystem services\index{ecosystem services}
+Producing renewable energy\index{renewable energy} without destroying ecosystem services\index{ecosystem services}
 is a major hurdle to becoming sustainable.
 As in Chapter~\ref{chap:agriculture}, we leave to Chapters~\ref{chap:government} 
 and~\ref{chap:personal_action} the discussion of how such changes can be made 
@@ -634,7 +639,7 @@ power_densities %>%
 
 Figure~\ref{fig:PowerDensity} shows the land-use requirements for different forms of
 energy production. 
-If we are going to make an energy transition to renewable sources 
+If we are going to make an energy transition to renewable\index{renewable energy} sources 
 (for example, WWS\index{wind, water, and solar (WWS)} in Section~\ref{sec:low_carbon_transition}), 
 Figure~\ref{fig:PowerDensity} shows that we will need to devote significantly more land
 to energy production.
@@ -696,7 +701,7 @@ is driving an increase in the demand for urban and agricultural land.
 Higher population densities and greater agricultural productivity\index{productivity!agricultural} can help meet
 that demand. 
 In contrast, Figure~\ref{fig:PowerDensity} indicates it may not be possible to
-meet the energy needs of the future solely with renewables because there may not
+meet the energy needs of the future solely with renewables\index{renewable energy} because there may not
 be enough land.
 
 The next two chapters discuss some collective and individual actions that can be

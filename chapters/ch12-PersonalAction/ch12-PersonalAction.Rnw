@@ -280,20 +280,20 @@ intensity of resources, particularly for the prime example of this book
 \label{sec:individuals+choices+comtemination_intensity}
 %..............................
 
-Individuals can choose to install renewable energy generation systems
+Individuals can choose to install renewable energy\index{renewable energy} generation systems
 to reduce fossil energy consumption
 and limit CO$_2$ emissions\index{CO$_2$ emissions}. 
 Examples include
 rooftop solar photovoltaic electricity panels\index{solar panel}, 
 rooftop solar water heaters, 
 small wind turbines\index{wind turbine}, and
-microhydro power systems.
+microhydro\index{microhydro electricity} power systems.
 
 Alternatively, individuals can choose to pay a premium to purchase
-renewable electricity from the grid\index{grid electricity}.
+renewable electricity\index{renewable electricity} from the grid\index{grid electricity}.
 Finally, pursuit of net zero energy status can encourage
 homeowners to balance energy consumption 
-with onsite or offsite renewable energy production.
+with onsite or offsite renewable energy\index{renewable energy} production.
 
 
 % Single photos should be 16:9.
@@ -507,7 +507,7 @@ All food embodies resources (such as energy\index{embodied energy}) and emission
 Wasting food means that no benefits come from those embodied resources and emissions\index{embodied carbon}.
 After minimizing food waste\index{food waste}, 
 individuals can adopt a climate-friendly or climate-friendlier diet.
-Typically climate-friendly diets involve reductions to meat consumption, particularly beef.
+Typically climate-friendly diets involve reductions to meat consumption, particularly beef\index{beef}.
 
 There are a variety of ways to improve the sustainability of food production.
 Cooking at home minimizes packaging and is usually the least expensive option
@@ -532,7 +532,7 @@ You could collect personal data to quantify what is most sustainable in your
 particular context or situation.
 For example, you could develop a new meatless version of a favorite recipe.
 Or you could collect data on what plants do best in your garden and
-record what inputs (water, fertilizer, your time) are needed, 
+record what inputs (water, fertilizer\index{fertilizer}, your time) are needed, 
 allowing you to optimize your gardening for minimum environmental impact.
 
 
@@ -647,7 +647,7 @@ How much will I fly?                        & Little or not at all              
 \end{table}
 
 
-<<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example sustainability actions shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings\\index{CO$_2$ emissions!reduction}. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/year in a Honda Accord\\index{Honda Accord} vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~MgCO$_2$/year. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity\\index{electricity} and natural gas\\index{natural gas} for a ``2750~ft$2$'' home vs.\\ a ``1250~ft$^2$ home in the U.S. Savings are ", small_house_savings, "~MgCO$_2$/year. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/year. Savings are estimated to be ", chicken_savings, "~MgCO$_2$/year. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/year in a Ford F150\\index{Ford F150} pickup truck or a Honda Accord\\index{Honda Accord} sedan. Savings will be ", accord_savings, "~MgCO$_2$/year. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's LaGuardia airport~(LGA) and London's Heathrow airport~(LHA) vs.\\ a virtual meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~MgCO$_2$/year. \\emph{Source}: own calculations.")>>=
+<<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example sustainability actions shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings\\index{CO$_2$ emissions!reduction}. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/year in a Honda Accord\\index{Honda Accord} vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~MgCO$_2$/year. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity\\index{electricity} and natural gas\\index{natural gas} for a ``2750~ft$2$'' home vs.\\ a ``1250~ft$^2$ home in the U.S. Savings are ", small_house_savings, "~MgCO$_2$/year. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/year. Savings are estimated to be ", chicken_savings, "~MgCO$_2$/year. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/year in a Ford F150\\index{Ford F150} pickup truck or a Honda Accord\\index{Honda Accord} sedan. Savings will be ", accord_savings, "~MgCO$_2$/year. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's LaGuardia airport~(LGA) and London's Heathrow airport~(LHA) vs.\\ a virtual\\index{virtual reality (VR)} meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~MgCO$_2$/year. \\emph{Source}: own calculations.")>>=
 co2_savings <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
                                   sheet = "savings")
 no_commute_savings <- co2_savings %>% dplyr::filter(Action == "No commute") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
@@ -797,7 +797,7 @@ Wangari Maathai, and Joseph Lstiburek\index{Lstiburek, Joeseph}.
       the rest of this book?)
       
 \item One example of the sustainability sentence Corporation + Research + Population 
-      is the use of robots for elder care in Japan.
+      is the use of robots for elder care in Japan\index{Japan}.
       ``Rapid population aging and the shortage of caregivers have spurred the 
       government to promote the use of robots in nursing homes. 
       As part of its robot strategy, the government began to provide robot 
@@ -805,7 +805,7 @@ Wangari Maathai, and Joseph Lstiburek\index{Lstiburek, Joeseph}.
       country’s nursing homes had adopted robots''~\cite{aparc_fsi}.
       What are the humanitarian implications of substituting robots for human 
       caregivers for a vulnerable segment of the population?
-      Given Japan's aging population and shrinking workforce, what are the concerns
+      Given Japan's\index{Japan} aging population and shrinking workforce, what are the concerns
       about not using robot caregivers?
       Fundamentally, do you believe that robots ever could substitute for human 
       caregivers?
@@ -998,11 +998,11 @@ Wangari Maathai, and Joseph Lstiburek\index{Lstiburek, Joeseph}.
       What about an individual who lives the \$1M/year lifestyle 
       for 10 years and \$0M/year for 30 years thereafter.
       
-\item Investigate renewable energy systems for your dwelling, 
+\item Investigate renewable energy\index{renewable energy} systems for your dwelling, 
       including rooftop solar photovoltaic panels\index{solar panel}, 
       solar water heating, 
       a small wind turbine\index{wind turbine}, 
-      microhydro power.
+      microhydro\index{microhydro electricity} power.
       Which is most feasible for your home?
       Why?
       
