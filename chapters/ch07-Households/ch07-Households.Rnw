@@ -259,6 +259,8 @@ household energy consumption and CO$_2$ emissions\index{CO$_2$ emissions!househo
 \label{sec:size_and_location}
 %++++++++++++++++++++++++++++++
 
+Both size and location are important drivers for household energy use.
+
 %..............................
 \paragraph{Size} 
 \label{sec:dwelling_size} \index{households!size}
@@ -504,7 +506,8 @@ of U.S.\ final energy\index{final energy} consumption in 2015.
 %++++++++++++++++++++++++++++++
 
 Indoor lighting\index{indoor lighting} provides illumination for rooms,
-typically by consuming electricity\index{fossil fuel electricity} and emitting CO$_2$ if fossil-fuel sources are used.
+typically by consuming electricity\index{fossil fuel electricity} and emitting 
+CO$_2$, if fossil-fuel sources are used.
 Indoor lighting\index{indoor lighting} enables work, play, and entertainment
 before sunrise and after sunset. 
 In many areas of the world, artificial indoor lighting\index{indoor lighting} 
@@ -629,7 +632,7 @@ However, the home will embody more energy\index{embodied energy} and carbon\inde
 because many insulation\index{insulation} types
 are energy-intensive to manufacture (especially foam). 
 A sustainability challenge associated with embodied energy\index{sustainability challenges!embodied energy} 
-is ``how do we ensure highly-insulative building envelopes\index{building envelope}
+is ``how do we ensure highly insulative building envelopes\index{building envelope}
 with minimal embodied energy?''\index{embodied energy}
 
 
@@ -700,7 +703,8 @@ Larger SEER\index{seasonal energy efficiency ratio (SEER)} values indicate highe
 and lower operating costs compared to lower-SEER\index{seasonal energy efficiency ratio (SEER)} air conditioners.
 
 As of 2015, U.S.\ air conditioners must adhere to regionally dependent efficiency standards.
-In the southwest, a minimum SEER\index{seasonal energy efficiency ratio (SEER)} value of 14 BTU/W$\cdot$hr is required.
+In the Southwest, a minimum SEER\index{seasonal energy efficiency ratio (SEER)} 
+value of 14 BTU/W$\cdot$hr is required.
 In other parts of the U.S., a minimum SEER\index{seasonal energy efficiency ratio (SEER)}
 value of 13 BTU/W$\cdot$hr is mandated.
 %**** Find a reference for these SEER numbers. ****
@@ -852,7 +856,7 @@ That is, efficiency gains will be overtaken by the sheer number of new homes.
 
 Figure~\ref{fig:urbanization} shows the percentage of world population
 living in urban areas.
-The transition to urban living is proceeding quickly for many factors.
+The transition to urban living is proceeding quickly for many reasons.
 A primary factor is that people move from rural areas to cities 
 in search of employment. 
 That is, urbanization is happening for reasons of social sustainability\index{social sustainability}
@@ -922,7 +926,8 @@ improves in the stock of housing.
 To minimize environmental impacts of showering\index{shower} and dish washing\index{dish washer},
 low-flow showerheads\index{low-flow showerhead} and faucets\index{low-flow faucet}
 can be installed.
-Low-flow showerheads\index{low-flow showerhead} and faucets\index{low-flow faucet} provide the obvious benefit of
+Low-flow showerheads\index{low-flow showerhead} and faucets\index{low-flow faucet}
+provide the obvious benefit of
 reducing water bills.
 Furthermore, sewerage costs are reduced, because 
 low-flow showerheads\index{low-flow showerhead} and faucets\index{low-flow faucet}
@@ -930,7 +935,8 @@ decrease the amount of gray water entering the sewer system (with ``downstream''
 energy and cost savings).
 If less water is consumed for cooking and bathing,
 energy consumption and CO$_2$ emissions\index{CO$_2$ emissions!household} are reduced.
-In addition, gray water reuse systems can provide water for irrigation\index{irrigation} and toilet\index{toilet} flushing,
+Furthermore, some systems can reuse gray water for irrigation\index{irrigation} 
+and toilet\index{toilet} flushing,
 thereby reducing clean water demand.
 
 Saving water and energy in dish washing\index{dish washer} can be accomplished by purchasing a
@@ -1042,14 +1048,14 @@ Sarah Susanka and Kira Obolensky,
 
 Alan K. Meier and Benoit LeBot,  
 \emph{One watt initiative: A global effort to reduce leaking electricity\index{electricity}},
-United States, 1999: \\
-\url{https://www.osti.gov/biblio/795944} \\
+United States, 1999 \\
+\href{https://www.osti.gov/biblio/795944}{www.osti.gov/biblio/795944} \\
 
-\noindent Passive House Institute: \\
-\url{https://passivehouse.com} \\
+\noindent Passive House Institute \\
+\href{https://passivehouse.com}{passivehouse.com} \\
 
-\noindent Living Building Challenge: \\
-\url{https://living-future.org/lbc/} \\
+\noindent Living Building Challenge \\
+\href{https://living-future.org/lbc/}{living-future.org/lbc} \\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
