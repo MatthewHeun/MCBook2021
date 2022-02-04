@@ -183,7 +183,8 @@ see Chapter~\ref{chap:planetary_boundaries}.
 If agricultural practices decrease soil fertility\index{soil fertility}, 
 agriculture can not be considered strongly sustainable\index{strong sustainability}.
 If agriculture depends on a nonrenewable resource, 
-such as phosphate\index{phosphate} fertilizers, it cannot be considered strongly sustainable\index{strong sustainability}.
+such as phosphate\index{phosphate} fertilizers\index{fertilizer},
+it cannot be considered strongly sustainable\index{strong sustainability}.
 If agriculture is rapidly depleting soil fertility\index{soil fertility}
 such that the soil will be unusable in less than 50~years,
 agriculture is not weakly sustainable\index{weak sustainability}.
@@ -238,22 +239,23 @@ In contrast,
 sustainable agriculture\index{sustainable agriculture}
 at least maintains, and hopefully builds, soil fertility\index{soil fertility}.
 Soil fertility\index{soil fertility} and agricultural productivity\index{productivity!agricultural} 
-can be enhanced with fertilizers and/or agrichemicals\index{agrichemicals}.
-The most common fertilizers contain nitrogen\index{nitrogen (N)}, phosphorous, and potassium\index{potassium (K)}. 
+can be enhanced with fertilizers\index{fertilizer} and/or agrichemicals\index{agrichemicals}.
+The most common fertilizers\index{fertilizer} contain nitrogen\index{nitrogen (N)},
+phosphorous\index{phosphorous (P)}, and potassium\index{potassium (K)}. 
 Agrichemicals\index{agrichemicals} include herbicides, pesticides, and fungicides. 
 To the extent that any of these are derived from nonrenewable feedstocks, such as 
 fossil fuels\index{fossil fuels}, their use is not strongly sustainable\index{strong sustainability}.
-Phosphate fertilizers are necessary for high 
+Phosphate\index{phosphate (P)} fertilizers\index{fertilizers} are necessary for high 
 \textbf{agricultural yields}\index{yield!agricultural}, but
 they originate from (nonrenewable) mineral deposits.
-On the other hand, about half of the fertilizer used globally is animal manure, 
+On the other hand, about half of the fertilizer\index{fertilizer} used globally is manure\index{manure}, 
 which is a renewable resource. 
-Animal manure could be a sustainable fertilizer, if the animals are raised sustainably,
+Animal manure could be a sustainable fertilizer\index{fertilizer}, if the animals are raised sustainably,
 for instance, and 
 if their feed is sustainably raised.
 A sustainability challenge associated with soil use\index{sustainability challenges!soil use} is 
 ``how can we maintain soil fertility\index{soil fertility}
-in the long term without fertilizers 
+in the long term without fertilizers\index{fertilizers} 
 derived from nonrenewable resources?''
 
 
@@ -310,7 +312,7 @@ it no longer flows into the Sea of Cortez.
 Agricultural activities also result in water pollution\index{pollution!water} of surface water and ground water.
 For example, the city of Toledo, Ohio draws its drinking water from Lake Erie.
 Since the 1990s, Lake Erie has been subject to ``blooms'' of toxic cyanobacteria
-fueled by fertilizer run off.
+fueled by fertilizer\index{fertilizer} run off.
 Six people got sick in 2013.
 In 2014, 110 people got sick and the municipal water supply to 400,000 people was shut down.
 Moreover, Lake Erie and the Maumee River that feeds it were unsafe for human skin contact.
@@ -586,7 +588,7 @@ is ``how can food waste\index{food waste} be eliminated?''
 
 Globally, food and land use account for 23\% of GHG emissions\index{CO$_2$ emissions}~\cite{IPCC:2018aa}.
 In the U.S., soil management accounts for over half of agricultural \index{CO$_2$ emissions!agriculture}~\cite{USEPA:2021uj}.
-Over-application of synthetic nitrogen\index{nitrogen (N)}-based fertilizers releases significant
+Over-application of synthetic nitrogen\index{nitrogen (N)}-based fertilizers\index{fertilizer} releases significant
 amounts of N$_2$O, a very potent GHG.
 The paragraphs below look at two very important greenhouse gases\index{greenhouse gas}, 
 carbon dioxide~(CO$_2$)\index{carbon dioxide~(CO$_2$)} and methane~(CH$_4$)\index{methane~(CH$_4$)}.
@@ -734,7 +736,7 @@ One obvious category of change appears from viewing agriculture through the lens
 of Equation~\ref{eq:IPARX}.
 To have reduced impacts \Iparen{}, agriculture needs to 
 use fewer inputs to deliver the food society needs: 
-less land, less water, less energy, and less fertilizer and agrichemicals\index{agrichemicals}.
+less land, less water, less energy, and less fertilizer\index{fertilizer} and agrichemicals\index{agrichemicals}.
 These changes would reduce the resource intensity
 \Rparen{} of agriculture.
 Another, related, set of changes would be to lower 
@@ -834,7 +836,8 @@ Hotter, drier climates also bring the increased risk of desertification\index{de
 
 On the one hand, there may be a temptation to ``double down'' on all the agricultural
 practices that have fed us through the population boom of the last century, namely,
-the use of large amounts of inputs, such as fossil energy, synthetic fertilizers, and agrichemicals\index{agrichemicals}
+the use of large amounts of inputs, such as fossil energy\index{fossil fuels},
+synthetic fertilizers\index{fertilizer}, and agrichemicals\index{agrichemicals}
 to maximize agricultural productivity\index{productivity!agricultural}.
 On the other hand, increasing inputs will accelerate soil depletion, intensity runoff
 and other agricultural emissions, and shorten the weak sustainability\index{weak sustainability} horizon for the 
