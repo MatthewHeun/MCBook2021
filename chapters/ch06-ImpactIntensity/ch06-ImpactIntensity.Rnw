@@ -584,13 +584,14 @@ or concrete with a system such as Energy Vault~\cite{Energy-Vault:uz}.
 A third challenge comes from the water portion of WWS\index{wind, water, and solar (WWS)}. 
 In most areas of the world, 
 the potential for expanding the production of hydro electricity\index{hydro electricity} is limited.
-Most of the Americas, Europe, and Asia are already ``tapped out'' regarding hydropower.
-Today, the potential for hydro is greatest in central Africa\index{Africa}.
+Most of the Americas, Europe\index{Europe}, and Asia\index{Asia} are already ``tapped out'' 
+regarding hydropower\index{hydro electricity}.
+Today, the potential for hydro\index{hydro electricity} is greatest in central Africa\index{Africa}.
 The proposed Grand Inga Dam\index{Grand Inga Dam} in the 
 Democratic Republic of the Congo (DRC)\index{Democratic Republic of the Congo (DRC)}
-would be the largest dam in the world and could house a 40--70 GW hydro power station.
+would be the largest dam in the world and could house a 40--70 GW hydro\index{hydro electricity} power station.
 Moreover, there are considerable negative environmental and social impacts from 
-hydro projects, such as changes to soil salinity, silting, and the destruction
+hydro\index{hydro electricity} projects, such as changes to soil salinity, silting, and the destruction
 of communities located in the proposed reservoir.
 
 Finally, WWS\index{wind, water, and solar (WWS)} systems are energy intensive to manufacture.
@@ -1080,7 +1081,8 @@ Energy Vault simulation  \\
 
 \item Do renewable energy sources have ``emissions?'' If so, what are they?
         Make reference to Equation~\ref{eq:IPARX}. At a minimum, discuss
-        solar photovoltaic\index{solar panel}, wind turbines\index{wind turbine}, hydro power, and renewable biofuels.
+        solar photovoltaic\index{solar panel}, wind turbines\index{wind turbine}, 
+        hydro\index{hydro electricity} power, and renewable biofuels.
 
 \item Fossil fuels\index{fossil fuels} have environmental impacts other than CO$_2$. 
       One example is oil spills,
