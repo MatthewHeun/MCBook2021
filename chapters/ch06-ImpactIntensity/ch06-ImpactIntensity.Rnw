@@ -893,7 +893,7 @@ population depends on many factors.
 see the causal loop diagram from the World3 model\index{World3}
 shown in Figure~\ref{fig:World3loops}.)
 One clear trend from history is that increasing affluence~(\rateA{}~>~0)
-leads to reduced population growth rate~(\rateP~<~0).
+leads to reduced population growth rate\index{population growth rate}~(\rateP~<~0).
 Thus, the affluence and population terms of the IPARX identity\index{IPARX identity}
 are not independent.
 

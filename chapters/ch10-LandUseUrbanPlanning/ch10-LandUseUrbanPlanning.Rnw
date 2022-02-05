@@ -9,7 +9,7 @@
 %#############################################################
 
 \epigraph{The truth about a city's aspirations isn't found in its vision. 
-It's found in its budget.}{Brent Toderian}
+It's found in its budget.}{Brent Toderian\index{Toderian, Brent}}
 
 The three previous chapters described sustainability challenges related to 
 households, transportation, and agriculture.
@@ -21,7 +21,7 @@ the overall need for transportation in human society.
 For example, dwellings and businesses that are spread out across a large area will
 require more transportation than if they were located close together.
 
-This chapter examines two aspects of land use.
+This chapter examines two aspects of land use\index{sustainability challenges!land use}.
 The first aspect is the layout or arrangement of different uses of land.
 Which is more sustainable: to group all the farms, forests, and cities so that 
 each is as large as possible?
@@ -32,10 +32,10 @@ this chapter considers dwellings and businesses collectively.
 We consider the sustainability implications of spacing, density\index{population density}, and how 
 transportation links between locations are affected by layout.
 
-The second aspect of alnd use is allocation, that is, how much land is used for each 
+The second aspect of land use is allocation, that is, how much land is used for each 
 purpose?
 Land can be used for agriculture, recreation, urban or suburban dwellings, or 
-not allocated for direct human use, that is, left as wilderness.
+not allocated for direct human use, that is, left as wilderness\index{wilderness}.
 Land is the source, directly or indirectly, for all our resources, the sink for
 much of our waste\index{waste}, and where we ourselves live.
 We need land to simultaneously satisfy many different wants and needs,
@@ -133,7 +133,7 @@ forestry (28\%), and cropland (17\%) being the three largest uses.%
   Crop production is 87\% of total cropland; the remaining 13\% is idle or used for pasture\index{pasture}.
 }
 %
-The four largest crops in the U.S. are wheat (32\% of land used for crop production),
+The four largest crops in the U.S.\ are wheat\index{wheat} (32\% of land used for crop production),
 corn\index{corn} (30\%), soybeans\index{soybeans} (20\%), and cotton\index{cotton} (10\%)~\cite{FAOSTAT:2021ve}. 
 All other crops combined account for only 8\% of cropland use.
 In contrast, the urban areas where we live and work
@@ -156,15 +156,15 @@ converting more land to agricultural use over time.
 \paragraph{Urban areas}
 %-----------------------------
 
-Population growth also leads directly to a need for more housing,
+Population growth\index{population growth} also leads directly to a need for more housing,
 but not just any housing.
-Another trend shown by land-use statistics is greater urbanization;
+Another trend shown by land-use statistics is greater urbanization\index{urbanization};
 see Figure~\ref{fig:urbanization}.
 The demand for housing is disproportionately in urban areas
-because of a long-term trend of migration to cities. 
+because of a long-term trend of migration\index{migration} to cities. 
 Urban areas have much higher GDP per area.
 Thus, pursuit of wealth\index{wealth}, that is, a desire for greater affluence~\Aparen{}, drives 
-migration from rural areas to urban ones.
+migration\index{migration} from rural areas to urban ones.
 
 
 %++++++++++++++++++++++++++++++
@@ -200,7 +200,7 @@ for how productive each power type will be.
 Not all locations are suitable for hydro\index{hydro electricity} power.
 (Or wind\index{wind electrcity}. Or solar\index{solar electricity}.)
 
-In addition to energy, the economy needs material resources;
+In addition to energy, the economy needs material resources\index{material resources};
 see Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use}.
 A major example is timber\index{timber}, which is a key ingredient in construction and many
 consumer goods.
@@ -216,9 +216,11 @@ They need places to live, food to eat, and income\index{income} to purchase thes
 They can move to urban areas to try to get work or they can try to extract (pun intended)
 a living by farming (see \ref{question:poverty_trap}) or mining.
 
+
 %-----------------------------
 \paragraph{Ecosystem services\index{ecosystem services}}
 %-----------------------------
+
 Because energy use and carbon emissions\index{CO$_2$ emissions} are the prime example in this book,
 and because land plays a crucial role in regulating\index{regulating and supporting services}
 carbon in the environment,
@@ -404,9 +406,9 @@ infrastructure financing in more detail.
 
 Cities face additional sustainability challenges 
 related to infrastructure lifespan\index{sustainability challenges!infrastructure}, 
-economic and population growth, changing technology, and fractured ownership.
+economic and population growth\index{population growth}, changing technology, and fractured ownership.
 Furthermore, the design lifetime of infrastructure may not match its economic lifetime.
-For example, population growth might make a bridge\index{bridge} with a 100-year lifespan inadequate to 
+For example, population growth\index{population growth} might make a bridge\index{bridge} with a 100-year lifespan inadequate to 
 satisfy transportation demand after only 30 years.
 And wireless communication technologies have rendered wired communication 
 infrastructure much less relevant. 
@@ -704,7 +706,7 @@ Like energy, land use is a nexus for many sustainability challenges\index{sustai
 This chapter explored sustainability issues associated with urban areas,
 agricultural land-use patterns, and the role of land in provisioning resources\index{provisioning services}
 for the economy and removing wastes\index{waste} (notably, carbon) from the ecosystem\index{ecosystem}.
-Population growth and migration to urban areas (in search of greater affluence)
+Population growth\index{population growth} and migration\index{migration} to urban areas (in search of greater affluence)
 is driving an increase in the demand for urban and agricultural land. 
 Higher population densities and greater agricultural productivity\index{productivity!agricultural} can help meet
 that demand. 
@@ -820,7 +822,8 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       With reference to Figure~\ref{fig:CarbonStorage}, discuss the importance of
       this project. \label{question:green_wall}
 
-\item Loss of farmland (for instance to urbanization) is a negative externality\index{negative externality} 
+\item Loss of farmland (for instance to urbanization\index{urbanization})
+      is a negative externality\index{negative externality} 
       to future generations. One way to internalize the externality\index{negative externality} would be pay
       farmers to keep their land as farms. 
       What could/would be the unintended consequences of such a plan? 

@@ -305,7 +305,7 @@ with special importance
 across a wide range of industries;
 see Table~\ref{tab:CRMs}.
 Notice the large number of resources that are considered ``critical.''
-Energy is important for running an economy but so are material resources.
+Energy is important for running an economy but so are material resources\index{material resources}.
 
 Another interesting feature of Table~\ref{tab:CRMs} is the breadth of applications; 
 most of the critical materials are used throughout the economy.
@@ -607,7 +607,7 @@ weak sustainability\index{weak sustainability} of the recycling\index{recycling}
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Economist Nicholas Georgescu-Roegen\index{Georgescu-Roegen, Nicholas} proposed a fourth law of thermodynamics,
 stating that complete recycling\index{recycling} of matter is impossible~\cite{Georgescu-Roegen:1986aa}
-because material resources are subject to irreversible degradation.
+because material resources\index{material resources} are subject to irreversible degradation.
 (Georgescu-Roegen\index{Georgescu-Roegen, Nicholas}
 was arguing by analogy from the second law of thermodynamics\index{second law of thermodynamics},
 which states that all forms of energy are subject to irreversible degradation.)
@@ -821,7 +821,7 @@ To assess the second question (are we using energy at a sustainable rate?),
 see Figure~\ref{fig:PrimaryEnergyGraph},
 which shows global primary energy consumption\index{primary energy consumption} through time.
 The increasing consumption of primary energy\index{primary energy} supports
-population growth (Figure~\ref{fig:PopulationGraph}) and
+population growth\index{population growth} (Figure~\ref{fig:PopulationGraph}) and
 economic growth (Figure~\ref{fig:GDPGraph-Nordhaus}).
 However, on a per-capita basis,
 energy consumption has grown substantially over the last two centuries;
@@ -841,7 +841,7 @@ Neither oil\index{crude oil} nor natural gas\index{natural gas}
 are being consumed at a weakly sustainable\index{weak sustainability} rate.
 
 
-<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person vs.\\ time by energy type", fig.cap="World primary energy consumption\\index{primary energy consumption} per person vs.\\ time by energy type. Note that per-person primary energy consumption is relatively flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth and increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The height of each area represents the ratio of the height of an area in Figure~\\ref{fig:PrimaryEnergyGraph} and the top of Figure~\\ref{fig:PopulationGraph}. The top of this graph represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy and CO$_2$ emissions.">>=
+<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person vs.\\ time by energy type", fig.cap="World primary energy consumption\\index{primary energy consumption} per person vs.\\ time by energy type. Note that per-person primary energy consumption is relatively flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth\\index{population growth}; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth and increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The height of each area represents the ratio of the height of an area in Figure~\\ref{fig:PrimaryEnergyGraph} and the top of Figure~\\ref{fig:PopulationGraph}. The top of this graph represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy and CO$_2$ emissions.">>=
 
 # Find which years have data from the Europe data set
 which_years <- region_pop %>%
@@ -1293,7 +1293,7 @@ US Geological Survey, National Minerals Information Center \\
         How does a closed-loop system affect sustainability for communities that
         use it? Other communities?
 
-  \item Carbon-driven global climate change\index{climate change} and population growth are making
+  \item Carbon-driven global climate change\index{climate change} and population growth\index{population growth} are making
         desalination of seawater a more prominent source of water for
         many populations.
         Carbon emissions\index{CO$_2$ emissions!desalination} from desalination may increase from 76 million
