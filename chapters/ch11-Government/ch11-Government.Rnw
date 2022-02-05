@@ -590,7 +590,7 @@ doing so could help to address the issue of ocean plastics\index{pollution!plast
 In lieu of mandating that manufacturers take back products, 
 standards for ease of disassembly could be implemented.
 In terms of the prime example (energy and CO$_2$ emissions\index{CO$_2$ emissions}),
-governments\index{government} can establish greenhouse gas\index{greenhouse gas} trading markets
+governments\index{government} can establish greenhouse gas\index{greenhouse gas} trading markets\index{carbon market}
 to reduce emissions and encourage renewable energy\index{renewable energy} adoption
 with small economic impact.
 
@@ -599,7 +599,7 @@ governments\index{government} can implement mandates for renewable energy genera
 Renewable mandates are 
 usually expressed as a percentage of total energy generated and 
 mostly applied to electricity\index{electricity}, not liquid fuels.
-Renewable mandates are often called Renewable Portfolio Standards\index{renewable portfolio standards}, 
+Renewable mandates are often called Renewable Portfolio Standards\index{renewable energy portfolio standards}, 
 mandating that electricity\index{electricity} producers have a certain fraction of 
 electricity sales from renewable sources\index{renewable electricityg}.
 
@@ -647,10 +647,12 @@ Manufacturers become incentivized to
      \end{subfigure}
         \caption[Consumer-oriented labels for home appliances]
                 {Consumer-oriented labels for home appliances. 
-                In the U.S., the Federal Trade Commission (FTC) requires an Energy Guide label on
+                In the U.S., the Federal Trade Commission (FTC)\index{Federal Trade Commission (FTC)}
+                requires an Energy Guide\index{Energy Guide} label on
                 some categories of consumer products.
                 Manufactures are required to test their products in accordance with 
-                U.S.\ Department of Energy standards and report their results to the FTC.
+                U.S.\ Department of Energy~(DoE)\index{Department of Energy (DoE)} standards and report their results
+                to the FTC\index{Federal Trade Commission (FTC)}.
                 (a)~An Energy Guide label showing the AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
                 on a domestic furnace. 
                 This furnace has the lowest legally allowed AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
@@ -666,12 +668,12 @@ Manufacturers become incentivized to
                 runs the Energy Star\index{Energy Star} program.
                 In contrast to the Energy Guide labels, which are self-reported, since 2011, 
                 Energy Star\index{Energy Star} testing is performed by qualified, third-party laboratories.
-                (c)~An EnerGuide label for the same chest freezer as in (b), in fact, it 
+                (c)~An EnerGuide\index{EnerGuide} label for the same chest freezer as in (b), in fact, it 
                 is the reverse of the same piece of paper.
-                The EnerGuide label is mandatory for appliances sold in Canada, which also
+                The EnerGuide\index{EnerGuide} label is mandatory for appliances sold in Canada\index{Canada}, which also
                 uses the U.S.\ EPA's\index{Environmental Protection Agency (EPA)}
                 Energy Star\index{Energy Star} certification (yay, international cooperation!).
-                The EnerGuide label shows a range of estimated yearly energy consumption.
+                The EnerGuide\index{EnerGuide} label shows a range of estimated yearly energy consumption.
                 \emph{Sources}: 
                 (a)~\copyright{}2021 Matthew Kuperus Heun; 
                 (b)~\copyright{}2021 Jeremy Van Antwerp; 
@@ -693,7 +695,8 @@ improved windows.
 Municipalities can require installation of solar systems\index{solar panel} 
 on all new construction for homes and businesses or
 participation in solar collectives if installation is unfeasible.
-PACE (property-assessed clean energy) financing can be utilized
+PACE (property-assessed clean energy) financing\index{property-assessed clean energy (PACE) financing}
+can be utilized
 to encourage investment in renewable energy\index{renewable energy} or energy efficiency\index{energy efficiency} 
 in homes, offices, and industrial settings.
 
@@ -721,7 +724,8 @@ The future owners would like to have the best insulation\index{insulation} and t
 boiler.
 The developer wants as little investment as possible to be able to resell the property quickly.
 
-PACE financing allows energy-efficiency improvements to be paid for
+PACE financing\index{property-assessed clean energy (PACE) financing}
+allows energy-efficiency improvements to be paid for
 by the energy savings themselves. 
 The loan for the deep energy retrofit becomes a lien on the
 property itself, to be repaid in the form of additional property taxes\index{property tax}.
@@ -729,8 +733,9 @@ For future owners, higher property taxes\index{property tax} or higher energy bi
 they are content to pay higher taxes\index{tax} as they enjoy a less drafty,
 more energy-efficient building.
 
-Be warned: lots of shady things have happened with PACE financing in residential
-settings. 
+Be warned: lots of shady things have happened with 
+PACE financing\index{property-assessed clean energy (PACE) financing}
+in residential settings. 
 Know and understand the terms. 
 Do your title searches carefully. 
 Know what you're signing up for. 
@@ -999,7 +1004,7 @@ Government\index{government} and private organizations should conduct more resea
 landowners and policy makers through the sparing\index{land sparing}/sharing\index{land sharing} dichotomy with respect
 to many different types of wildlife.
 Landowners can be paid to use land in a way that stores carbon, such as afforestation\index{afforestation}, 
-perhaps through a carbon-trading market or direct subsidies.
+perhaps through a carbon-trading market\index{carbon market} or direct subsidies.
 
 
 %..............................
@@ -1121,15 +1126,16 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
 \href{http://my.solarroadmap.com/userfiles/CA-Code-Reqs-for-PV-General.pdf}
 {my.solarroadmap.com/userfiles/CA-Code-Reqs-for-PV-General.pdf}\\
 
-\noindent PACE financing \\
+\noindent PACE financing\index{property-assessed clean energy (PACE) financing} \\
 \href{https://www.pacenation.org}
 {www.pacenation.org} \\
 
-\noindent LEED \\
+\noindent LEED\index{Leadership in Energy and Environmental Design (LEED)} \\
 \href{https://www.usgbc.org/leed}
 {www.usgbc.org/leed}\\
 
-\noindent AASHE STARS \\
+\noindent AASHE\index{Association for the Advancement of Sustainability in Higher Education (AASHE)} 
+STARS\index{Sustainability Tracking, Assessment, and Reporting System (STARS)} \\
 \href{https://stars.aashe.org}
 {stars.aashe.org}\\
 
@@ -1137,7 +1143,7 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
 \href{https://www.energystar.gov}
 {www.energystar.gov}  \\
 
-\noindent Living Building Challenge \\
+\noindent Living Building Challenge\index{Living Building Challenge} \\
 \href{https://living-future.org/lbc/}
 {living-future.org/lbc}
 
@@ -1290,13 +1296,16 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       Should the program be expanded to other beverage containers (for instance, bottled water)?
       Should other states (or municipalities!) adopt ``bottle bills?''
       
-\item The expansion of PACE financing into the residential market has created
+\item The expansion of PACE financing\index{property-assessed clean energy (PACE) financing}
+      into the residential market has created
       opportunities for abuse and misuse. 
       One category of abuse is predatory lending-like practices such as signing up old or infirm 
-      people for PACE loans they don't need and/or can't understand.
+      people for PACE loans\index{property-assessed clean energy (PACE) financing} they don't need and/or can't understand.
       Another kind of misuse is not getting a ``before'' energy audit or performing work under 
-      PACE financing that won't provide an energy payback, like a kitchen renovation.
-      Should there be attempts to fix these problems with PACE financing?
+      PACE financing\index{property-assessed clean energy (PACE) financing}
+      that won't provide an energy payback, like a kitchen renovation.
+      Should there be attempts to fix these problems 
+      with PACE financing\index{property-assessed clean energy (PACE) financing}?
       If so, who leads the reforms and what is the remedy?
       
 \item Businesses are an important part of an alternative transportation infrastructure\index{infrastructure}.
