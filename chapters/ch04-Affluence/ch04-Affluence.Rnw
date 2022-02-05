@@ -319,8 +319,8 @@ even if they happen to last more than three years.
 %..............................
 
 Government spending\index{government spending}~(\;\!\mft{g}) is government consumption
-(such as equipment and wages paid to government workers) plus 
-government investment spending, for
+(such as equipment and wages paid to government workers\index{government workers}) plus 
+government investment spending\index{government spending}, for
 example spending on infrastructure\index{infrastructure} improvements such as roads or dams.
 
 %..............................
@@ -329,7 +329,7 @@ example spending on infrastructure\index{infrastructure} improvements such as ro
 
 Investment\index{investment}~(\mft{i}\;\!) is not money put into a bank account.
 Investment is goods that are purchased now for use in the future
-by individuals or firms (not governments).
+by individuals or firms (not governments\index{government}).
 There are three subcategories of investment: 
 nonresidential fixed investment, residential fixed investment, and inventory investment.
 Nonresidential fixed investment is equipment and plants (factories) purchased by firms.
@@ -357,7 +357,7 @@ Therefore, for world GDP, $\mft{nx}~=~\text{0}$.
 
 Although economists use consumption\index{consumption}~(\mft{c}) narrowly as described above,
 we use the word ``consumption\index{consumption}'' colloquially to mean the sum of personal consumption, 
-government spending, and investment.
+government spending\index{government spending}, and investment.
 That is, we use ``consumption\index{consumption}'' to mean GDP, in part to remind ourselves
 that economic activity is based on the use of resources.
 Individuals and corporations may save money for purchases in the future, but the
@@ -1089,7 +1089,7 @@ among economic growth, energy efficiency, and greenhouse gas emissions\index{CO$
 \item Develop metrics for evaluating when, and to what extent, a circular economy\index{circular economy} 
       makes environmental and economic sense for some product.
       
-\item What are ways that governments try to control the rate of economic growth (in~\%/yr)?
+\item What are ways that governments\index{government} try to control the rate of economic growth (in~\%/yr)?
 
 \item Research the standards, processes, and methods for collecting and disseminating 
       global economic statistics.

@@ -35,7 +35,7 @@ each with
 a subject, 
 a verb, and 
 an object.
-The subjects are sustainability actors. 
+The subjects are sustainability actors\index{actor}. 
 The verbs are sustainability actions.
 The objects are arenas in which the sustainability actions can take place.
 Sustainability sentences look like this:
@@ -56,7 +56,7 @@ Sustainability sentences look like this:
 %++++++++++++++++++++++++++++++
 
 In sustainability sentences, 
-the actors are individuals\index{individuals} or collectives\index{collectives} who perform the action.
+the actors\index{actor} are individuals\index{individuals} or collectives\index{collectives} who perform the action.
 The topic of this chapter is collective actions\index{collective action} toward sustainability.
 Collective actions\index{collective action} are appropriate for problems that are ``too big'' 
 to be solved by a single person.
@@ -73,14 +73,14 @@ The next chapter considers sustainability actions taken by individuals.
 
 The first type of collective\index{collectives} group 
 {has the power to make laws, rules, and policies.
-We call this type governments.
+We call this type \textbf{governments}\index{government!as sustainability actor}.
 Governments exist at local, regional, national, and international levels.
-Governmental organizations can have very narrow and specific responsibilities 
+Governmental organizations\index{governmental organizations} can have very narrow and specific responsibilities 
 (like a local zoning board)
 or broad and general responsibilities 
 (like state or national legislatures).
-Governments can cooperate with each other in many ways, 
-such as international treaties, the International Monetary Fund, and 
+Governments\index{government} can cooperate with each other in many ways, 
+such as international treaties, the International Monetary Fund (IMF)\index{International Monetary Fund (IMF)}, and 
 cost-sharing agreements between state and federal agencies for road construction.
 
 
@@ -208,7 +208,7 @@ In other cases, laws and regulations define what must be done.
 For example, renewable energy portfolio standards\index{renewable energy portfolio standard}
 mandate that a certain percentage 
 of electricity must come from renewables\index{renewable electricity}.
-In still other cases, governments pass laws and regulations 
+In still other cases, governments\index{government} pass laws and regulations 
 to define how things must be done.
 For example, regulations can establish markets for carbon trading.
 Laws and regulations are not neutral; 
@@ -292,20 +292,20 @@ and the gathering of demographic and macroeconomic data.
 % Not all R\&D activities meet the definition of the research action; 
 % for the purposes of this book, research has to be sustainability related. 
 
-Laws and regulations intersect with research when governments support research 
+Laws and regulations intersect with research when governments\index{government} support research 
 in a number of ways.
 Through patents,
 those who develop sustainable tools can recoup their investment
 by means of limited-time monopoly rights 
 to sell that invention to others looking to become more sustainable. 
-Governments also fund research. 
+Governments\index{government} also fund research. 
 Some of this funding is direct,
-as when governments employ scientists to develop models of the atmosphere\index{atmosphere}. 
-Government grants support research by private entities, such as
+as when governments\index{government} employ scientists to develop models of the atmosphere\index{atmosphere}. 
+Government grants\index{government grants} support research by private entities, such as
 sustainability-related research funded by the 
 National Science Foundation\index{National Science Foundation (NSF)}. 
-Occasionally, governments post a major prize for solving a hard problem. 
-We could imagine the government establishing 
+Occasionally, governments\index{government} post a major prize for solving a hard problem. 
+We could imagine the government\index{government!as sustainability actor} establishing 
 a prize for developing cost-effective carbon sequestration\index{carbon sequestration} technology.
 
 
@@ -331,7 +331,7 @@ You might point out special deals or combos.
 A typical sequence of actions might look something like this: 
 a scientist discovers new aspects of climate change\index{climate change} (research), 
 the news media reports the problem (education),
-the government creates incentives to change behavior (law), 
+the government\index{government} creates incentives to change behavior (law), 
 companies respond by developing alternative products and services (research again), and 
 consumers respond by buying the new, more sustainable option (choice).
 
@@ -380,17 +380,17 @@ all other things being equal.
 \paragraph{Government+Choice+Population}
 %..............................
 
-State and local governments are the entities in the U.S.\
+State and local governments\index{government!state}\index{government!local} are the entities in the U.S.\
 and around the world that provide much or most of the education offered to citizens.
 Providing general education to citizens, especially girls and women, 
 is a seemingly effective way to reduce birthrates, slow population growth\index{population growth}, and
 reduce family size.
-(Education is a ``choice'' for government because it is on the menu of things that 
+(Education is a ``choice'' for government\index{government} because it is on the menu of things that 
 they already do.
-Governments can choose to expand access to education or enhance educational
+Governments\index{government} can choose to expand access to education or enhance educational
 opportunities, for instance, by building new schools, providing more scholarships,
 or expanding to a year-round academic calendar.)
-Another choice governments can make is to supply birth control technology
+Another choice governments\index{government} can make is to supply birth control technology
 (oral contraceptives, symptom-thermal training, and condoms, for example)
 to citizens to reduce population growth rates\index{population growth rate}.
 
@@ -399,8 +399,8 @@ to citizens to reduce population growth rates\index{population growth rate}.
 \paragraph{Government+Education+Population}
 %..............................
 
-In addition, education for family planning can be done by governments.
-Governments can disseminate information around family planning and birth control
+In addition, education for family planning can be done by governments\index{government}.
+Governments\index{government} can disseminate information around family planning and birth control
 to citizens, especially girls and women, to reduce population growth\index{population growth}. 
 (In contrast to the general education mentioned in the previous paragraph,
 here specific training on birth control is counted as the education action 
@@ -412,7 +412,7 @@ case, on population.)
 \paragraph{Government+Law+Population}
 %..............................
 
-Government policies can have an effect on population.
+Government policies\index{government policy} can have an effect on population.
 For example, legislatures can pass laws
 on number of children, incentives for having children, 
 tax breaks\index{tax break} for raising children, or direct payments to children
@@ -434,7 +434,7 @@ to affect birth rates.
 Equation~\ref{eq:IPARX} and Figure~\ref{fig:AffluenceGraph-Nordhaus}
 shows that rising affluence~\Aparen{}
 drives larger environmental impacts~\Iparen{}. 
-Ironically, the purpose of many government actions 
+Ironically, the purpose of many government actions\index{government action} 
 is to produce ever-rising levels of affluence, 
 because citizens who are becoming more affluent 
 are likely to retain their current political leaders and their current political system.
@@ -449,9 +449,9 @@ of human well-being among citizens; see Section~\ref{sec:circular_economy}.
 \paragraph{Government+Law+Affluence}
 %..............................
 
-National governments, 
+National governments\index{government}, 
 international organizations, and
-nongovernmental organizations
+nongovernmental organizations\index{nongovernmental organizations (NGOs)}
 can tax\index{tax} environmental externalities\index{negative externality}
 proportionally,
 ensuring that those who cause the most environmental damage pay the most for remediation.
@@ -515,7 +515,7 @@ for additional energy efficiency\index{energy efficiency}.
 By cutting off rebound\index{rebound effect}, 
 green revolving funds can render energy efficiency\index{energy efficiency} more effective
 rather than ineffective.
-At a larger scale, governments can develop green revolving funds
+At a larger scale, governments\index{government} can develop green revolving funds
 to provide resources for businesses and individuals to perform energy efficiency\index{energy efficiency} upgrades
 and to which proceeds of those upgrades are paid.  
 
@@ -580,12 +580,12 @@ doing so could help to address the issue of ocean plastics\index{pollution!plast
 In lieu of mandating that manufacturers take back products, 
 standards for ease of disassembly could be implemented.
 In terms of the prime example (energy and CO$_2$ emissions\index{CO$_2$ emissions}),
-governments can establish greenhouse gas\index{greenhouse gas} trading markets
+governments\index{government} can establish greenhouse gas\index{greenhouse gas} trading markets
 to reduce emissions and encourage renewable energy\index{renewable energy} adoption
 with small economic impact.
 
 To reduce CO$_2$ emissions\index{CO$_2$ emissions!reduction}, 
-governments can implement mandates for renewable energy generation~\cite{USEIA:2021tt}. 
+governments\index{government} can implement mandates for renewable energy generation~\cite{USEIA:2021tt}. 
 Renewable mandates are 
 usually expressed as a percentage of total energy generated and 
 mostly applied to electricity\index{electricity}, not liquid fuels.
@@ -838,7 +838,7 @@ Another not-so-radical approach to achieving sustainable transportation
 is implementation of vehicle efficacy standards 
 such as the corporate average fuel economy (CAFE)\index{corporate average fuel economy (CAFE)}} 
 standard in the U.S.
-In short, governments can develop policies and allocate infrastructure\index{infrastructure} spending
+In short, governments\index{government} can develop policies and allocate infrastructure\index{infrastructure} spending
 to encourage bikes rather than cars or trucks, 
 high-efficiency autos instead of gas-guzzling vehicles,
 public transportation instead of automobiles\index{automobile}, and 
@@ -854,7 +854,7 @@ rebates for purchasing electric vehicles\index{electric vehicle (EV)},
 funding for electric grid expansion and inclusion of storage, and
 renewable mandates for electricity\index{electricity} producers.
 
-At an even larger level, governments can incentivize or regulate that
+At an even larger level, governments\index{government} can incentivize or regulate that
 cities be redesigned to reduce the need for lengthy commutes in the first place.
 An example of thoroughly rethinking and reimplementing 
 the transportation infrastructure\index{infrastructure} of a city 
@@ -960,7 +960,8 @@ with low EROI\index{energy return on investment (EROI)}.
 \label{sec:government_organizations+choice+land_use}
 %..............................
 
-Governments setting aside land as parks and nature preserves helps to maintain
+Governments\index{government!as sustainability actor}
+setting aside land as parks and nature preserves helps to maintain
 ecosystem services\index{ecosystem services}.
 Private organizations, like the Audubon Society\index{Audobon Society}, 
 Trout Unlimited\index{Trout Unlimited}, and
@@ -984,7 +985,7 @@ at storing carbon, but we have relatively little of them left.
 \label{sec:government_organizations+research+land_use}
 %..............................
 
-Government and private organizations should conduct more research to guide
+Government\index{government} and private organizations should conduct more research to guide
 landowners and policy makers through the sparing\index{land sparing}/sharing\index{land sharing} dichotomy with respect
 to many different types of wildlife.
 Landowners can be paid to use land in a way that stores carbon, such as afforestation\index{afforestation}, 
@@ -1007,7 +1008,7 @@ How the rent from such structures is taxed\index{tax} and what construction stan
 enforced does a lot to influence ADU\index{Accessory Dwelling Unit (ADU)} feasibility. 
 
 Creating a walkable, bike-friendly city like Amsterdam is a decades-long project.
-Governments and nonprofits must sustain priorities for transportation change for a long time, 
+Governments\index{government} and nonprofits must sustain priorities for transportation change for a long time, 
 much longer than typical election cycles.
 More regional planning is needed to integrate infrastructure\index{infrastructure} plans among local 
 municipalities.
@@ -1040,10 +1041,10 @@ always keeping in mind the global perspective provided
 by Chapters~\ref{chap:introduction}--\ref{chap:impact_intensity}.
 Questions and problems at the end of the chapter assist the exploration process.
 
-Astute readers will have noticed that governments are often 
+Astute readers will have noticed that governments\index{government} are often 
 the route by which collective actions\index{collective action} are taken,
 regulations are established, and laws are passed.
-However, when politics and government enter the picture, 
+However, when politics and government\index{government} enter the picture, 
 winners and losers always emerge.
 One or more groups benefit from political decisions
 and one or more groups are disadvantaged by political decisions.
@@ -1052,14 +1053,14 @@ self-interests and societal divisions impact political decisions,
 often making it difficult to respond effectively 
 to intensifying sustainability challenges\index{sustainability challenges}. 
 For example, the complete lack of any effective response to climate change\index{climate change}
-by governments the world over 
+by governments\index{government} the world over 
 shows the difficulties of mounting political responses to
 sustainability challenges\index{sustainability challenges}.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Where governments are involved,
+Where governments\index{government} are involved,
 political problems must be solved before sustainability challenges\index{sustainability challenges}
 can be addressed.
 \end{mcframe}
@@ -1078,8 +1079,8 @@ Indeed, collective\index{collective action} change is the only way to ensure tha
 will live more sustainable lives.
 But the barriers to collective action\index{collective action} are high.
 
-That said, governments consist of people.
-In democracies, the people in government are chosen by the populace.
+That said, governments\index{government} consist of people.
+In democracies, the people in government\index{government} are chosen by the populace.
 Thus, collective actions\index{collective action} and personal action intertwine at elections
 when representatives are selected.
 Indeed, voting for representatives who favor collective\index{collective action} change
@@ -1138,10 +1139,10 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
 
 \begin{questions}
 
-\item Who, in your view, is the government? 
-      Answers can range from ``we are all the government''
-      to ``the government is a mechanism for collective action\index{collective action}''
-      to ``the government is an `other' entity with self-interested goals and 
+\item Who, in your view, is the government\index{government}? 
+      Answers can range from ``we are all the government\index{government}''
+      to ``the government\index{government} is a mechanism for collective action\index{collective action}''
+      to ``the government\index{government} is an `other' entity with self-interested goals and 
       policies.''
       Do you know anyone who falls elsewhere on the spectrum?
       How do you talk to them about policies and laws that enhance sustainability?
@@ -1169,14 +1170,18 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
 \item Of the four types of actions for sustainability in 
       Section~\ref{sec:actions_def}, which is the most important? 
       Which is the most urgent?
-      Of the four principle actors (governments, organizations, corporations, and individuals),
+      Of the four principle actors\index{actor}
+      (governments\index{government!as sustainability actor}, 
+      organizations, 
+      corporations, and
+      individuals),
       who should have primary responsibility for each mode?
   
 \item Money denominates the value of goods and services in economic transactions. 
       What might be an analogous denomination for environmental and social value,
       the other two aspects of sustainability?
       Can all environmental and social value be converted to monetary equivalents?
-      What role can/should the government have in regulating or brokering conversions
+      What role can/should the government\index{government} have in regulating or brokering conversions
       between environmental and social value to monetary value?
       What effect or implication does your answer have on/for agriculture?
       
@@ -1186,7 +1191,7 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       Arguably, Equation~\ref{eq:IPARX} indicates that reducing future human population
       is the most effective thing we can do for sustainability.
       Who should have responsibility for developing next-generation birth-control technology:
-      government(s), corporations, nonprofits, or individuals?
+      government(s)\index{government}, corporations, nonprofits, or individuals?
       What reasons do you have for your answer?
       
 \item \label{question:carbon_tax_11}
@@ -1215,17 +1220,17 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       to reduce the effects of climate change\index{climate change} or to research on removing 
       greenhouse gases\index{greenhouse gas} from the atmosphere\index{atmosphere}.
       
-\item Some people lament that we can't seem to get effective government action
+\item Some people lament that we can't seem to get effective government action\index{government action}
       to combat sustainability challenges\index{sustainability challenges}
       (although this question could be about
       any legislative or regulatory matter, really).
       There are at least three possible responses to the problem of (perceived)
-      government inaction. 
-      (1) Seek ways to solve the problem that don't involve or require government 
+      government\index{government} inaction. 
+      (1) Seek ways to solve the problem that don't involve or require government\index{government} 
       participation, maybe by establishing an NGO.
-      (2) Work within the government to change its approach, perhaps by lobbying or
+      (2) Work within the government\index{government} to change its approach, perhaps by lobbying or
       campaigning for different elected officials or by running for office yourself.
-      (3) Work to change the conditions that cause government inaction. 
+      (3) Work to change the conditions that cause government\index{government} inaction. 
       For example, if ``entrenched interests'' are blocking climate-change\index{climate change} legislation,
       we might attempt to change campaign-finance laws to reduce the influence of entrenched interests.
       For sustainability challenges\index{sustainability challenges},
