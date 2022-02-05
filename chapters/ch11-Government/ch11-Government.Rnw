@@ -413,7 +413,7 @@ case, on population.)
 Government policies can have an effect on population.
 For example, legislatures can pass laws
 on number of children, incentives for having children, 
-tax breaks for raising children, or direct payments to children
+tax breaks\index{tax break} for raising children, or direct payments to children
 to affect the number of children per person
 (often with unintended consequences). 
 Lawmakers can also 
@@ -450,7 +450,7 @@ of human well-being among citizens; see Section~\ref{sec:circular_economy}.
 National governments, 
 international organizations, and
 nongovernmental organizations
-can tax environmental externalities\index{negative externality}
+can tax\index{tax} environmental externalities\index{negative externality}
 proportionally,
 ensuring that those who cause the most environmental damage pay the most for remediation.
 For the prime example of this book (energy and climate change\index{climate change}),
@@ -712,9 +712,9 @@ The developer wants as little investment as possible to be able to resell the pr
 PACE financing allows energy-efficiency improvements to be paid for
 by the energy savings themselves. 
 The loan for the deep energy retrofit becomes a lien on the
-property itself, to be repaid in the form of additional property taxes.
-For future owners, higher property taxes or higher energy bills are equivalent,
-they are content to pay higher taxes as they enjoy a less drafty,
+property itself, to be repaid in the form of additional property taxes\index{property tax}.
+For future owners, higher property taxes\index{property tax} or higher energy bills are equivalent,
+they are content to pay higher taxes\index{tax} as they enjoy a less drafty,
 more energy-efficient building.
 
 Be warned: lots of shady things have happened with PACE financing in residential
@@ -823,7 +823,7 @@ transportation in that direction.
 %..............................
 
 Programs to fund and incentivize public transportation seek to reduce CO$_2$ emissions\index{CO$_2$ emissions!reduction}
-without wholesale changes to transportation infrastructure.
+without wholesale changes to transportation infrastructure\index{infrastructure}.
 Both carrots (make public transportation less expensive) and
 sticks (levy fees on personal transport) can be used.
 An example of the carrot approach is universities that offer 
@@ -836,7 +836,7 @@ Another not-so-radical approach to achieving sustainable transportation
 is implementation of vehicle efficacy standards 
 such as the corporate average fuel economy (CAFE)\index{corporate average fuel economy (CAFE)}} 
 standard in the U.S.
-In short, governments can develop policies and allocate infrastructure spending
+In short, governments can develop policies and allocate infrastructure\index{infrastructure} spending
 to encourage bikes rather than cars or trucks, 
 high-efficiency autos instead of gas-guzzling vehicles,
 public transportation instead of automobiles\index{automobile}, and 
@@ -855,7 +855,7 @@ renewable mandates for electricity\index{electricity} producers.
 At an even larger level, governments can incentivize or regulate that
 cities be redesigned to reduce the need for lengthy commutes in the first place.
 An example of thoroughly rethinking and reimplementing 
-the transportation infrastructure of a city 
+the transportation infrastructure\index{infrastructure} of a city 
 is provided by Curitiba, Brazil\index{Curitiba, Brazil}.
 The Curitiba\index{Curitiba, Brazil} bus rapid transit\index{bus rapid transit}
 system is a award-winning~\cite{Hamilton:2010ti}
@@ -943,7 +943,7 @@ with low EROI\index{energy return on investment (EROI)}.
         \caption[Comparison of land use densities]
                 {Comparison of land use densities. 
                  The urban shopping district is likely 
-                 to generate more revenue and more tax receipts per acre
+                 to generate more revenue and more tax\index{tax} receipts per acre
                  than the suburban store and its huge parking lot.
                  \emph{Sources}: 
                  (a)~\copyright{}2022 Matthew Kuperus Heun; 
@@ -973,7 +973,7 @@ also contribute to conservation.
 
 Zoning laws and environmental impact assessments before construction can help 
 preserve valuable biomes.
-For instance, Figure~\ref{fig:CarbonStorage} shows that wetlands are very efficient
+For instance, Figure~\ref{fig:CarbonStorage} shows that wetlands\index{wetland} are very efficient
 at storing carbon, but we have relatively little of them left.
 
 
@@ -983,7 +983,7 @@ at storing carbon, but we have relatively little of them left.
 %..............................
 
 Government and private organizations should conduct more research to guide
-landowners and policy makers through the sparing/sharing dichotomy with respect
+landowners and policy makers through the sparing\index{land sparing}/sharing\index{land sharing} dichotomy with respect
 to many different types of wildlife.
 Landowners can be paid to use land in a way that stores carbon, such as afforestation\index{afforestation}, 
 perhaps through a carbon-trading market or direct subsidies.
@@ -999,20 +999,21 @@ For an efficient city, high population density\index{population density} is desi
 The first impediment to high population density\index{population density} 
 in most North American\index{North America} cities
 is extensive single-family zoning. 
-Accessory Dwelling Units (ADUs)\index{Accessory Dwelling Units (ADUs)} 
+Accessory Dwelling Units (ADUs)\index{Accessory Dwelling Unit (ADU)} 
 are typically a first step toward relaxed zoning standards.
-How the rent from such structures is taxed and what construction standards are 
-enforced does a lot to influence ADU feasibility. 
+How the rent from such structures is taxed\index{tax} and what construction standards are 
+enforced does a lot to influence ADU\index{Accessory Dwelling Unit (ADU)} feasibility. 
 
 Creating a walkable, bike-friendly city like Amsterdam is a decades-long project.
 Governments and nonprofits must sustain priorities for transportation change for a long time, 
 much longer than typical election cycles.
-More regional planning is needed to integrate infrastructure plans among local 
+More regional planning is needed to integrate infrastructure\index{infrastructure} plans among local 
 municipalities.
 
-Lastly, housing developments have to pay enough taxes to maintain their own infrastructure.
+Lastly, housing developments have to pay enough taxes\index{property tax} 
+to maintain their own infrastructure\index{infrastructure}.
 Figure~\ref{fig:urban_suburban_densities} shows two example urban retail spaces.
-The one on the left likely pays more taxes per acre than the one on the right.
+The one on the left likely pays more taxes\index{tax} per acre than the one on the right.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1192,22 +1193,22 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       (You burning fossil fuels\index{fossil fuels!combustion} hurts me. 
       That's a ``cost'' I pay but you don't.)
       To address the negative externalities\index{negative externality}, 
-      taxes can be placed on fossil fuels\index{fossil fuels} to create incentives 
+      taxes\index{carbon tax} can be placed on fossil fuels\index{fossil fuels} to create incentives 
       to move away from fossil fuels\index{fossil fuels} toward renewable energy\index{renewable energy}.
       Or, NGOs could be formed with the purpose of mitigating the effects of 
       climate change\index{climate change}.
       Individuals could donate to such efforts on a voluntary basis.
       Would it be more effective to address the negative externalities\index{negative externality} 
       of fossil fuel consumption\index{fossil fuels!combustion} with
-      (a)~a tax on fossil fuels\index{fossil fuels!tax} 
+      (a)~a tax\index{carbon tax} on fossil fuels
       or
       (b)~remediation by NGOs with support from individuals? 
       What reasons do you have for your answer?
-      Does your answer about effectiveness depend on what is done with the tax money?
+      Does your answer about effectiveness depend on what is done with the tax\index{tax} money?
       Does your answer depend on your assumptions about the willingness of individuals
       to donate to NGOs?
       For the sake of answering this question, 
-      assume the tax revenue is devoted to research 
+      assume the tax\index{tax} revenue is devoted to research 
       (Section~\ref{sec:actions_research})
       to reduce the effects of climate change\index{climate change} or to research on removing 
       greenhouse gases\index{greenhouse gas} from the atmosphere\index{atmosphere}.
@@ -1281,12 +1282,12 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       Should there be attempts to fix these problems with PACE financing?
       If so, who leads the reforms and what is the remedy?
       
-\item Businesses are an important part of an alternative transportation infrastructure.
+\item Businesses are an important part of an alternative transportation infrastructure\index{infrastructure}.
       It's difficult to commute by bicycle, for instance, if you can't buy a bike
       or biking accessories or get your bike repaired anywhere.
-      Laws, as a form of social capital\index{social capital}, are also part of infrastructure.
+      Laws, as a form of social capital\index{social capital}, are also part of infrastructure\index{infrastructure}.
       Driving would be much riskier without any traffic laws, for instance.
-      Discuss some of the nonphysical infrastructure missing from today's transportation
+      Discuss some of the nonphysical infrastructure\index{infrastructure} missing from today's transportation
       landscape. 
       In your answer, consider laws governing autonomous vehicles, whether stiffer penalties
       for drivers would make cyclists safer on roads, and the rise of e-bikes.
@@ -1355,14 +1356,14 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       Highlight how Charlie Munger's\index{Munger, Charlie} quip about incentives
       applies to your tragedies and solutions.
 
-\item Craft a research proposal to scope the magnitude of a tax on fossil fuels\index{fossil fuels!tax} to
+\item Craft a research proposal to scope the magnitude of a tax\index{carbon tax} on fossil fuels to
       counterbalance the negative externalities\index{negative externality} they create
       (as discussed in \ref{question:carbon_tax_11}.
-      What fossil fuel taxes\index{fossil fuels!tax} have been tried already?
-      What has been the outcome of those taxes?
+      What fossil fuel taxes\index{carbon tax} have been tried already?
+      What has been the outcome of those taxes\index{carbon tax}?
       What are the gaps in knowledge?
       What things should be considered?
-      What criteria will you apply to decide how large should the tax should be?
+      What criteria will you apply to decide how large should the tax\index{carbon tax} should be?
 
 \item Make a business plan to increase bike commuting or other alternative
       (to automobile\index{automobile}) transportation modes in your community.

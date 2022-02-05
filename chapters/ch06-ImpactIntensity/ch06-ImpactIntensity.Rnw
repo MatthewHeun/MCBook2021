@@ -290,10 +290,10 @@ But how?
 
 There are at least seven often-discussed options for
 transitioning to a low-carbon energy supply:
-(a) carbon capture and storage,
+(a) carbon capture and storage\index{carbon capture and storage (CCS)},
 (b) carbon sequestration\index{carbon sequestration},
 (c) carbon takeback obligation (CTBO)\index{carbon takeback obligation (CTBO)},
-(d) carbon tax,
+(d) carbon tax\index{carbon tax},
 (e) nuclear electricity\index{nuclear electricity},
 (e) biomass\index{biomass}, and
 (f) wind, water, and solar (WWS)\index{wind, water, and solar (WWS)}.
@@ -349,7 +349,7 @@ for later injection underground.
 Carbon sequestration\index{carbon sequestration} seeks to extract CO$_2$ from the atmosphere\index{atmosphere},
 storing it in inert form.
 One form of carbon sequestration\index{carbon sequestration} is simply planting billions of trees.
-A massive, worldwide afforestation effort would be required to extract
+A massive, worldwide afforestation\index{afforestation} effort would be required to extract
 the additional carbon that has been added to the atmosphere\index{atmosphere} since the industrial revolution.
 In such a scheme, trees consume CO$_2$ and store it in their biomass\index{biomass}.
 Unfortunately, if the trees are burned or die and decompose, 
@@ -511,11 +511,12 @@ provided that particulate matter\index{particulate matter (PM)} emissions are mi
 However, biomass\index{biomass} by itself
 is not electricity\index{electricity} or liquid fuel.
 A conversion to biomass\index{biomass} for the world's primary energy\index{primary energy} supply would also require 
-worldwide replacement of today's fossil-fuel electricity\index{fossil fuel electricity} generation infrastructure
+worldwide replacement of today's fossil-fuel electricity\index{fossil fuel electricity}
+generation infrastructure\index{infrastructure}
 with a fleet of biomass power plants\index{biomass power plant}.
 And conversion to biomass\index{biomass} would require build-out 
 of a biomass\index{biomass}-to-liquid-fuels conversion 
-infrastructure that does not yet exist.
+infrastructure\index{infrastructure} that does not yet exist.
 Finally, conversion to biomass\index{biomass} will be accompanied by a reduction 
 in EROI\index{energy return on investment (EROI)}; 
 see Section~\ref{sec:masterE}.
@@ -537,7 +538,7 @@ wind\index{wind electricity},
 and solar\index{solar electricity} 
 energy sources (WWS)~\cite{Jacobson:2011gc,Delucchi:2011gb}.\index{wind, water, and solar (WWS)}
 A transition to WWS\index{wind, water, and solar (WWS)} would also require 
-significant changes to the world's energy infrastructure, 
+significant changes to the world's energy infrastructure\index{infrastructure}, 
 with at least four large challenges.
 
 First, WWS\index{wind, water, and solar (WWS)} energy resources produce electricity, not liquid fuels, and 
@@ -1009,7 +1010,8 @@ in the renewable device.
 That said, many advocates of Green Growth\index{Green Growth}, 
 a Green New Deal\index{Green New Deal}, and
 similar public policies 
-promote the idea that a transition to green infrastructure, including renewable energy\index{renewable energy},
+promote the idea that a transition to green infrastructure\index{infrastructure},
+including renewable energy\index{renewable energy},
 will stimulate economic growth and increase affluence.
 If they are right, 
 a renewables-driven decrease in \XCOtwo{} would lead to an increase in \mft{A}
@@ -1284,7 +1286,7 @@ Energy Vault simulation  \\
         
   \item Calculate land required to convert all energy production to solar sources
         in the U.S. 
-        What effect would a fully-solar energy infrastructure have on natural landscape?
+        What effect would a fully-solar energy infrastructure\index{infrastructure} have on natural landscape?
         Where would you locate the solar panels\index{solar panel}?
         What transmission issues would emerge?
   

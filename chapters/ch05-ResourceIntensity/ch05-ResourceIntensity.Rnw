@@ -287,7 +287,7 @@ The economy, being society's metabolism,\index{economic metabolism}
 depends on natural resources
 for its survival.
 Indeed, we can say that the economy runs on natural resources.\index{resources!natural}
-All goods and the infrastructure for all services depend on
+All goods and the infrastructure\index{infrastructure} for all services depend on
 manufactured objects of all types:
 cars and the roads on which they travel, 
 homes and the utilities that sustain life,
@@ -346,7 +346,7 @@ print(crm_xtab,
 
 
 The rate at which the world's economy has been extracting resources
-to create products, create infrastructure, and deal with wastes\index{waste}
+to create products, create infrastructure\index{infrastructure}, and deal with wastes\index{waste}
 has been growing in recent decades.
 % In fact, when the economy grows, the demand for goods and services grows.
 % When the demand for goods and services grows, 
@@ -1309,31 +1309,19 @@ US Geological Survey, National Minerals Information Center \\
         \item Discuss how these rights impact global efforts to limit climate change\index{climate change}.
         \end{enumerate}
 
-  \item Consider a carbon tax on commercial transportation.
-        Is such a tax a reduction in affluence (Chapter~\ref{chap:affluence})
+  \item Consider a carbon tax\index{carbon tax} on commercial transportation.
+        Is such a tax\index{carbon tax} a reduction in affluence (Chapter~\ref{chap:affluence})
         because the same goods you previously purchased now cost more?
-        Or would you view the tax as a enriching your natural capital\index{natural capital} by
+        Or would you view the tax\index{carbon tax} as a enriching your natural capital\index{natural capital} by
         incentivizing a shift to carbon-free forms of energy (thereby providing
         you with all the benefits of a stronger ecosystem\index{ecosystem}; see \ref{question:shell_lawsuit})?
         What beliefs or values inform your answer?
         How might such an evaluation be extended from the personal to a national
         or global scale?
 
-  % \item **** Maybe not a good question. Consider deleting. ****
-  %       Consider the effects of a carbon tax on transportation. Supply chain
-  %       issues related to Covid-19 and a container ship stuck in the Suez canal
-  %       created a ``shipping apocalypse.'' Raising the \emph{cost} of shipping
-  %       would disproportionately affect low profit-margin goods and very heavy
-  %       goods. How would you approach weighing the pros and cons of such a tax?
-
   \item The weak sustainability\index{weak sustainability} criterion
         in Section~\ref{sec:resources_weak_sustainability} is predicated on
         renewable substitutes being found for nonrenewable resources.
-        % Discuss the rates of adoption of renewable replacements for the materials
-        % in Table~\ref{tab:CRMs}.
-        % How does the rate of adoption of renewable substitutes for the CRMs in Table~\ref{tab:CRMs}
-        % compare to the rate of replacements for materials in
-        % Figures~\ref{fig:total_material_use}--\ref{fig:PercentageOfSustainable}?
         The CRMs (Table~\ref{tab:CRMs}) are mostly low-volume, high-value materials.
         The items in Figures~\ref{fig:total_material_use}--\ref{fig:per_capita_material_use}
         are high-volume, low-value materials.
