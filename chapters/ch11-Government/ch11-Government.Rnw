@@ -104,7 +104,7 @@ Some U.S.\ states allow alternative corporate charters that blend the for-profit
 and not-for-profit corporate structures.
 A benefit corporation is an example of this blended structure.
 It is a for-profit company that also attempts to benefit society, its workers,
-its community and/or the environment in addition to making a profit. 
+its community, and/or the environment in addition to making a profit. 
 Because this benefit is part of the corporate charter, it is the fiduciary 
 responsibility of company officers to consider these other stakeholders 
 beyond merely maximizing shareholder value.  
@@ -127,7 +127,7 @@ meaning that individuals choose to be a member of the organization.
 
 Collectives sometimes straddle the boundaries between categories.
 For instance, the Federal National Mortgage Association (``Fannie Mae'') is a
-U.S.\ government sponsored business corporation.
+U.S.-government-sponsored business corporation.
 Many nonprofits mix a business corporate structure with a voluntary organization(s).
 For example, the Roman Catholic Church is an association of corporate entities
 (such as Catholic Relief Services) and
@@ -279,8 +279,8 @@ To extend the ``menu'' metaphor further, technological development adds new
 (hopefully more sustainable) options to the menu. 
 On the other hand, sustainability research gives more information about menu items,
 like finding and reporting the number of calories in a hamburger.
-New knowledge doesn't change the price on the menu (in dollars) but it might influence
-your decision to purchase, anyway.
+New knowledge doesn't change the price on the menu (in dollars) but it might still influence
+your decision to purchase anyway.
 New knowledge created by sustainability research includes (for example) the ongoing 
 scientific investigation of the mechanisms of climate change\index{climate change}, 
 life-cycle analysis to determine the sustainability implications of paper versus
@@ -755,15 +755,15 @@ communicate sustainability information to consumers.)
 Figure~\ref{fig:energy_star_total} shows three different energy labels for two home 
 appliances, a furnace and a chest freezer.
 Each label reports energy use in a different way:
-in~(a) it is efficiency,
-in~(b) it's cost, and
-in~(c) it's the amount of energy used.
+in~(a) the label reports efficiency,
+in~(b) it is cost, and
+in~(c) it is the amount of energy used.
 In~(a) to the left is bad (inefficient).
 In~(b) and~(c) to the left is good (efficient).
-(b) and~(c) are applied to the same freezer but, most likely because Canada and the U.S.\
+(b) and~(c) are applied to the same freezer but, most likely, because Canada and the U.S.\
 define different categories,
-the freezer in~(b)is best-in-class, but in (c)~it is middle-of-the-road.
-The point of the labels is to be clear and easy to understand so that 
+the freezer in~(b) is best-in-class, but in (c)~it is middle-of-the-road.
+The labels should be clear and easy to understand so that 
 consumers can make wise choices about energy efficiency\index{energy efficiency}.
 There is, clearly, room for improvement.
 
@@ -829,7 +829,8 @@ sticks (levy fees on personal transport) can be used.
 An example of the carrot approach is universities that offer 
 free or reduced public transportation fares for all students. 
 An example of the stick approach is cities with fees to enter the city center.
-London's\index{London} congestion pricing\index{congestion pricing} scheme~(2000) had immediate beneficial impacts on 
+London's\index{London} congestion pricing\index{congestion pricing} 
+scheme~(see~\ref{question:London_congestion}) had immediate beneficial impacts on 
 congestion~\cite{Santos:2004vn} and the environment~\cite{Tonne:2008uy}. 
 Another not-so-radical approach to achieving sustainable transportation
 is implementation of vehicle efficacy standards 
@@ -881,11 +882,11 @@ to improve the sustainability of food and agriculture.
 
 
 %..............................
-\paragraph{Government+Research+Agriculture}
+\paragraph{Corporation+Research+Agriculture}
 %..............................
 
-Measures taken grid-wide to provide carbon-free energy will benefit agriculture
-along with all other sectors of the economy.
+Measures taken grid-wide by utility companies to provide carbon-free energy 
+will benefit agriculture along with all other sectors of the economy.
 
 
 %..............................
@@ -973,7 +974,7 @@ also contribute to conservation.
 Zoning laws and environmental impact assessments before construction can help 
 preserve valuable biomes.
 For instance, Figure~\ref{fig:CarbonStorage} shows that wetlands are very efficient
-at storing carbon, but we have relatively little of it left.
+at storing carbon, but we have relatively little of them left.
 
 
 %..............................
@@ -989,7 +990,7 @@ perhaps through a carbon-trading market or direct subsidies.
 
 
 %..............................
-\paragraph{Governemnt+Law+Urban planning} 
+\paragraph{Governemnt+Law+Land use} 
 \label{sec:government+law+urban_planning}
 %..............................
 
@@ -1098,26 +1099,33 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
 \section*{See Also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent Green building codes: \\
-\url{https://www.epa.gov/smartgrowth/green-building-standards} \\
+\noindent Green building codes \\
+\href{https://www.epa.gov/smartgrowth/green-building-standards}
+{www.epa.gov/smartgrowth/green-building-standards} \\
 
 \noindent Rooftop solar PV code toolkit: \\
-\url{http://my.solarroadmap.com/userfiles/CA-Code-Reqs-for-PV-General.pdf} \\
+\href{http://my.solarroadmap.com/userfiles/CA-Code-Reqs-for-PV-General.pdf}
+{my.solarroadmap.com/userfiles/CA-Code-Reqs-for-PV-General.pdf}\\
 
-\noindent PACE financing: \\
-\url{https://www.pacenation.org} \\
+\noindent PACE financing \\
+\href{https://www.pacenation.org}
+{www.pacenation.org} \\
 
-\noindent LEED: \\
-\url{https://www.usgbc.org/leed} \\
+\noindent LEED \\
+\href{https://www.usgbc.org/leed}
+{www.usgbc.org/leed}\\
 
-\noindent AASHE STARS: \\
-\url{https://stars.aashe.org} \\
+\noindent AASHE STARS \\
+\href{https://stars.aashe.org}
+{stars.aashe.org}\\
 
-\noindent Energy Star\index{Energy Star}: \\
-\url{https://www.energystar.gov} \\
+\noindent Energy Star\index{Energy Star} \\
+\href{https://www.energystar.gov}
+{www.energystar.gov}  \\
 
-\noindent Living Building Challenge: \\
-\url{https://living-future.org/lbc/}
+\noindent Living Building Challenge \\
+\href{https://living-future.org/lbc/}
+{living-future.org/lbc}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1174,7 +1182,7 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       A better birth control would be cheaper, more effective, and easier to use.
       Arguably, Equation~\ref{eq:IPARX} indicates that reducing future human population
       is the most effective thing we can do for sustainability.
-      Who should have responsibility for developing next generation birth-control technology:
+      Who should have responsibility for developing next-generation birth-control technology:
       government(s), corporations, nonprofits, or individuals?
       What reasons do you have for your answer?
       
@@ -1215,7 +1223,7 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       (2) Work within the government to change its approach, perhaps by lobbying or
       campaigning for different elected officials or by running for office yourself.
       (3) Work to change the conditions that cause government inaction. 
-      For example, if ``entrenched interests'' are blocking climate change\index{climate change} legislation,
+      For example, if ``entrenched interests'' are blocking climate-change\index{climate change} legislation,
       we might attempt to change campaign-finance laws to reduce the influence of entrenched interests.
       For sustainability challenges\index{sustainability challenges},
       which of these three approaches do you favor and why?
@@ -1233,7 +1241,8 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       for your flight. 
       So, you can donate additional money, to ``offset''\index{carbon offset} your ``fair share'' of 
       the carbon emitted from your flight.
-      OK, (finally) here's the question: what will it take, in terms of education, advertising,
+      
+      What will it take, in terms of education, advertising,
       and/or propaganda, for carbon offset\index{carbon offset} donations to be as 
       commonplace and widely expected/accepted 
       % de rigueur is not typically italicized, because it has been in use in English for 200 years.
@@ -1241,7 +1250,8 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       (\href{https://en.wiktionary.org/wiki/de_rigueur}{de rigueur}) 
       as tipping in a restaurant?
       Do you currently feel any \href{https://en.wiktionary.org/wiki/compunction}
-      {compunction} to offset\index{carbon offset} your carbon emissions\index{CO$_2$ emissions!transportation} when you fly? 
+      {compunction} to offset\index{carbon offset} your carbon 
+      emissions\index{CO$_2$ emissions!transportation} when you fly? 
       Why or why not? Is flying different from eating in a restaurant? Explain your answer(s).
      
 \item In a 1976 referendum, voters in Michigan\index{Michigan} approved the U.S.'s best 
@@ -1279,7 +1289,7 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       Discuss some of the nonphysical infrastructure missing from today's transportation
       landscape. 
       In your answer, consider laws governing autonomous vehicles, whether stiffer penalties
-      to drivers would make cyclists safer on roads, and the rise of e-bikes.
+      for drivers would make cyclists safer on roads, and the rise of e-bikes.
       What else should be considered?
       
 \item Some states adopt ``right to farm'' laws in response to urban development 
@@ -1360,8 +1370,9 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       What permits will be needed?
       What resources exist to assist your business?
 
-\item Prepare a summary report about a circular economy\index{circular economy}.
-      (See Section~\ref{sec:circular_economy}) for electronics and electronics waste\index{waste!electronics}.)
+\item Prepare a summary report about a circular economy\index{circular economy}
+      (see Section~\ref{sec:circular_economy}) for electronics and electronics 
+      waste\index{waste!electronics}.
       What standards and laws would be required to make a circular electronics
       economy\index{circular economy} technically feasible?
       Given these, what technical research still needs to be done?
