@@ -154,19 +154,20 @@ That is, have the ecosystem's\index{ecosystem}
 provisioning\index{provisioning services} and/or support services (Section~\ref{sec:ecosystem_services})
 been exceeded?
 For example, Section~\ref{sec:electric_vehicles} considered 
-\textbf{internal combustion engine (ICE) vehicles}\index{internal combustion engine (ICE) vehicle}
+internal combustion engine (ICE) vehicles\index{internal combustion engine (ICE) vehicle}
 and electric vehicles (EVs)\index{electric vehicle (EV)}.
 A reliable sustainability comparison depends on an accurate accounting of inputs and outputs.
 Section~\ref{sec:electric_vehicles} considered vehicle emissions
 while in use, the energy and mineral resources\index{mineral resources} used to create each vehicle, and
 the source of the power for each vehicle; 
 see Figure~\ref{fig:auto_gwp}. 
-Each of these three accountings
-(direct emissions;
-vehicle emissions and the materials used to make the vehicle; or
-vehicle emissions, minerals\index{minerals} in the vehicle, 
-and power or fuel generation)
-give a different nuance to the sustainability impacts
+% Each of these three accountings
+% (direct emissions;
+% vehicle emissions and the materials used to make the vehicle; or
+% vehicle emissions, minerals\index{minerals} in the vehicle, 
+% and power or fuel generation)
+Each of way off accounting for inputs and outputs
+gives a different nuance to the sustainability impacts
 of vehicle manufacturing, use, and disposal.
 
 In a similar manner,
@@ -224,7 +225,7 @@ topsoil\index{topsoil}.
 In 2017, the area had no black topsoil\index{topsoil}; its soil was light gray~\cite{Arnason:2017ug}.
 Loss of topsoil\index{topsoil} reduces the productivity 
 (in dollars of output per acre) of farmland\index{productivity!of farmland}.
-Many arid and semi-arid regions are experiencing desertification\index{desertification} caused
+Many arid and semi-arid regions are experiencing \textbf{desertification}\index{desertification} caused
 by a combination of climate change\index{climate change} and poor agricultural practices.
 The rate of erosion and runoff increases exponentially with the loss of vegetation 
 cover~\cite{Geeson2003}. 
@@ -917,11 +918,13 @@ given by food writer Michael Pollan\index{Pollan, Michael}:
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Benjamin Lorr\index{Lorr, Benjamin}, \emph{The Secret Life of Groceries: The Dark Miracle of
+Gillian Crowther, \emph{Eating Culture: An Anthropological Guide to Food, 
+2nd Edition}. Toronto: University of Toronto Press, 2018. \\
+
+\noindent Benjamin Lorr\index{Lorr, Benjamin}, 
+\emph{The Secret Life of Groceries: The Dark Miracle of
 the American Supermarket}. New York: Avery, 2020. \\
 
-\noindent Gillian Crowther, \emph{Eating Culture: An Anthropological Guide to Food, 
-2nd Edition}. Toronto: University of Toronto Press, 2018. \\
 
 \noindent
 Michael Pollan, \emph{The omnivore's dilemma: A natural history of four meals}.
@@ -943,7 +946,7 @@ Two short films about the Colorado River\index{Colorado River} by Pete McBride\i
 \href{https://vimeo.com/52955892}{Chasing Water}
 and \href{https://vimeo.com/97197932}{Delta Dawn}. 
 At 47 minutes, \href{https://community.nrs.com/nrs-films/remains-of-a-river/}
-{Remains of River} is a somewhat longer story that traces the Colorado River\index{Colorado River}
+{Remains of a River} is a somewhat longer story that traces the Colorado River\index{Colorado River}
 from its headwaters to Los Angeles, Tucson, and ... lettuce.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1048,6 +1051,11 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       ``natural'' food, such as what is farmed or harvested wild? 
       What are your reasons for answering as you did?
       
+\item It has been suggested that humans should eat more insects as a way to provide
+      low-impact, abundant protein. 
+      What are your reactions to this suggestion?
+      In what forms would you eat insects or insect-derived protein?
+      
 \item Compare and contrast the environmental impacts of farmed meat, such as beef\index{beef},
       with hunted meat, such as elk\index{elk}, venison\index{venison}, or 
       bison\index{bison}.
@@ -1123,8 +1131,9 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
       Are we eating electricity\index{electricity} (and whence comes the electricity)? 
       Or are we eating natural gas\index{natural gas}?
       
-\item Use a food emissions calculator (such as the one suggested in this chapter~\cite{CleanMetrics:aa})
-      to estimate the greenhouse gas\index{CO$_2$ emissions!food} emissions from your food choices over the course of a week.
+\item Use a food-emissions calculator (such as the one suggested in this 
+      chapter~\cite{CleanMetrics:aa}) to estimate the greenhouse 
+      gas\index{CO$_2$ emissions!food} emissions from your food choices over the course of a week.
       Compare to your peers.
       How do your food-related emissions compare to your emissions from transportation-related activities?
       Guided by the figures and advice in this chapter, 
@@ -1139,7 +1148,8 @@ from its headwaters to Los Angeles, Tucson, and ... lettuce.
 \item Compile a report on opportunities and challenges of genetically modified organisms
       in agriculture.
       
-\item Research the legal and economic issues related to use of water from the Colorado River\index{Colorado River}.
+\item Research the history of legal and economic issues related to use of water 
+      from the Colorado River\index{Colorado River}.
 
 \item Prepare a report on regenerative agriculture\index{regenerative agriculture}. 
       What are its objectives? 
