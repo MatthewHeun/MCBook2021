@@ -57,7 +57,7 @@ Equation~\ref{eq:IPARX} shows two main drivers for land use:
 population (\mft{P}, Chapter~\ref{chap:population}) and
 affluence (\:\!\mft{A}, Chapter~\ref{chap:affluence}).
 The remaining two terms on the right-hand side of Equation~\ref{eq:IPARX} (\:\!\mft{R} and \mft{X}\:)
-are fixed by technology. 
+are fixed by our technology. 
 The size of the economy is \mft{P}$\times$\mft{A}.
 The economy can grow by increasing either \mft{P} or \mft{A}.
 The next two sections will examine these sources of demand in greater detail.
@@ -289,8 +289,8 @@ are all promising candidates for carbon sequestration\index{carbon sequestration
 Although the capacity of wetlands to store carbon is large,
 unfortunately, the amount of wetlands is small. 
 In contrast, the opportunities for forest and grasslands are quite extensive.
-Projects~\label{project:restoring_boreal_forest} 
-and~\label{project:restoring_temperate_grasslands} explore technical aspects of 
+Projects~\ref{project:restoring_boreal_forest} 
+and~\ref{project:restoring_temperate_grasslands} explore technical aspects of 
 forest and grassland restoration/carbon sequestration\index{carbon sequestration}.
 
 Therefore, consistent with earlier chapters, the drivers for land use are 
@@ -385,7 +385,7 @@ is ``how can the best farmland be preserved for future food production?''
 \paragraph{Infrastructure sustainability}
 %..............................
 
-Urban areas are defined by a relative abundance of public works.
+Urban areas are defined by a relative abundance of infrastructure.
 A city will have traffic infrastructure, such as traffic lights and perhaps bridges\index{bridge},
 and electricity\index{electricity}, natural gas\index{natural gas}, water, and sanitation networks.
 A city center will additionally have public buildings such as a courthouse, library, and/or 
@@ -445,7 +445,7 @@ to sustain infrastructure.
 
 In 2018, just 31 counties (out of 3141, or under 1\%) produced 32\% of U.S. GDP. 
 % https://www.visualcapitalist.com/america-land-use/
-Most of these were around major U.S.\ metropolitan areas, such as New York\index{New York} City,
+Most of these were around major U.S.\ metropolitan areas, such as New York\index{New York},
 Los Angeles\index{Los Angeles}, or Chicago\index{Chicago}.
 A large part of the value of cities comes from the concentration of people,
 who are both a resource and a market.
@@ -761,14 +761,14 @@ Donald Shoup, \emph{The high cost of free parking}. Oxfordshire, UK: Routledge, 
 YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} and 
 \href{https://www.youtube.com/c/CityBeautiful}{City Beautiful} \\
 
-\noindent Strong Towns: \\
-\url{www.strongtowns.org} \\
+\noindent Strong Towns \\
+\href{https://www.strongtowns.org/}{www.strongtowns.org} \\
 
-\noindent Table Debates: \\
-\url{www.tabledebates.org} \\
+\noindent Table Debates \\
+\href{https://www.tabledebates.org/}{www.tabledebates.org} \\
 
-\noindent Walk Score: \\
-\url{www.walkscore.com}
+\noindent Walk Score \\
+\href{https://www.walkscore.com/}{www.walkscore.com}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
