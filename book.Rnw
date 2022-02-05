@@ -256,12 +256,12 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 
 
 \noindent
-This book presents many facets of our sustainability challenges\index{sustainability challenges}.
-Sustainability is challenging for many reasons.
+Sustainability is multifaceted and challenging\index{sustainability challenges} 
+for many reasons.
 Its technical problems are complex and interrelated. 
 It combines problems from the environmental, economic, and social realms.
-It conflicts with some aspects of basic human nature.
-And aspects of sustainability can be expected to change through time as society
+%It conflicts with some aspects of basic human nature.
+Sustainability challenges will evolve through time as society
 develops new technologies, 
 transitions to new resources, and
 discovers new ways to use resources.
