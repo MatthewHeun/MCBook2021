@@ -406,7 +406,7 @@ living due to the economies of scale.
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/Roger10-4.jpeg}
-         \caption{An old bicycle.}
+         \caption{An old bicycle\index{bicycle}.}
          \label{fig:commuting_bicycle}
      \end{subfigure}
         \caption[Two low-carbon commuting options]
@@ -414,10 +414,11 @@ living due to the economies of scale.
         in~(a) could be a low-carbon commuting option, depending on the source of 
         its electricity\index{electricity}.
         On the other hand, the Tesla\index{Tesla} requires substantially more 
-        mineral resource depletion\index{mineral resource depletion (MRD)} than the bicycle; see Figure~\ref{fig:auto_gwp} 
+        mineral resource depletion\index{mineral resource depletion (MRD)} than the bicycle\index{bicycle};
+        see Figure~\ref{fig:auto_gwp} 
         and associated discussion.
         For more details on desirable characteristics of
-        commuting bicycles, see ``Not Just Bikes''
+        commuting bicycles\index{bicycle}, see ``Not Just Bikes''
         ``\href{https://www.youtube.com/watch?v=aESqrP3hfi8}{Why Dutch Bikes are Better}'' 
         (February 8, 2021).
         \emph{Sources}: 
@@ -450,7 +451,7 @@ emit less CO$_2$ than suburban areas~\cite{Jones:2014tf}.
 Indeed, the most sustainable transportation is often public transportation
 where vehicle occupancy is high and everyone shares the carbon embodied\index{embodied carbon} in the
 buses, trains, trolleys, or subways. 
-Choosing to walk or bike (Figure~\ref{fig:commuting_bicycle}), 
+Choosing to walk or bike\index{bicycle} (Figure~\ref{fig:commuting_bicycle}), 
 usually only possible in cities,
 further reduces CO$_2$ emissions\index{CO$_2$ emissions!reduction}. 
 City dwellers can choose to not buy a car at all, preferring
