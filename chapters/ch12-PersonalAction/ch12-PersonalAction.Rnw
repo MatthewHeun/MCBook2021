@@ -16,21 +16,21 @@ This is the second of two chapters on actions that move toward
 sustainable living for individuals and society.
 This chapter is a companion to 
 Chapter~\ref{chap:government},
-which focused on collective ways 
+which focused on collective\index{collective action} ways 
 to achieve a sustainable society, 
 often by changing the ``rules of the game.''
 In contrast, 
-this chapter (Chapter~\ref{chap:personal_action}) focuses on individual actions
+this chapter (Chapter~\ref{chap:personal_action}) focuses on individual actions\index{individual action}
 that can be taken 
 within existing systems, structures, and political environments.
-Individual actions are steps that can be taken %by individuals and families
+Individual actions\index{Individual action} are steps that can be taken
 to become more sustainable in spite of
 trends or incentives in broader society
 that foster unsustainable practices or consumption.
 
 This chapter answers the question 
 ``what can I do today to live a more sustainable life?''
-Just as there are many ways that collectives 
+Just as there are many ways that collectives\index{collective action}
 can contribute to a more sustainable society
 (Chapter~\ref{chap:government}),
 there are many ways that individuals can take action
@@ -51,7 +51,7 @@ and second by
 areas of life in which sustainability issues and choices emerge:
 households, transportation, agriculture, and land use/urban planning\index{urban planning} 
 (Chapters~\ref{chap:households}--\ref{chap:agriculture}).
-The lists of individual actions are provided mostly without comment.  
+The lists of individual actions\index{individual action} are provided mostly without comment.  
 Readers are encouraged to explore the suggested actions that fit their
 local situation, 
 always keeping in mind the global perspective provided 
@@ -611,7 +611,7 @@ technical geniuses like Joseph Lstiburek\index{Lstiburek, Joeseph}.
 However, we can make decisions today that will minimize our environmental impacts for decades to come.
 It may be helpful to consider the questions shown in Table~\ref{tab:personal_energy_actions}
 as we move into the future.
-The questions crystallize many possible individual actions discussed throughout this book.
+The questions crystallize many possible individual actions\index{individual action} discussed throughout this book.
 Table~\ref{tab:personal_energy_actions} provides answers 
 that move in the direction of a more-sustainable world 
 and make a difference to the planet,
@@ -647,7 +647,7 @@ How much will I fly?                        & Little or not at all              
 \end{table}
 
 
-<<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example sustainability actions shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings\\index{CO$_2$ emissions!reduction}. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/year in a Honda Accord\\index{Honda Accord} vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~MgCO$_2$/year. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity\\index{electricity} and natural gas\\index{natural gas} for a ``2750~ft$2$'' home vs.\\ a ``1250~ft$^2$ home in the U.S. Savings are ", small_house_savings, "~MgCO$_2$/year. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/year. Savings are estimated to be ", chicken_savings, "~MgCO$_2$/year. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/year in a Ford F150\\index{Ford F150} pickup truck or a Honda Accord\\index{Honda Accord} sedan. Savings will be ", accord_savings, "~MgCO$_2$/year. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's LaGuardia airport~(LGA) and London's Heathrow airport~(LHA) vs.\\ a virtual\\index{virtual reality (VR)} meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~MgCO$_2$/year. \\emph{Source}: own calculations.")>>=
+<<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example individual sustainability actions\\index{individual action} shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings\\index{CO$_2$ emissions!reduction}. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/year in a Honda Accord\\index{Honda Accord} vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~MgCO$_2$/year. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity\\index{electricity} and natural gas\\index{natural gas} for a ``2750~ft$2$'' home vs.\\ a ``1250~ft$^2$ home in the U.S. Savings are ", small_house_savings, "~MgCO$_2$/year. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/year. Savings are estimated to be ", chicken_savings, "~MgCO$_2$/year. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/year in a Ford F150\\index{Ford F150} pickup truck or a Honda Accord\\index{Honda Accord} sedan. Savings will be ", accord_savings, "~MgCO$_2$/year. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's LaGuardia airport~(LGA) and London's Heathrow airport~(LHA) vs.\\ a virtual\\index{virtual reality (VR)} meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~MgCO$_2$/year. \\emph{Source}: own calculations.")>>=
 co2_savings <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
                                   sheet = "savings")
 no_commute_savings <- co2_savings %>% dplyr::filter(Action == "No commute") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
@@ -870,19 +870,23 @@ Wangari Maathai, and Joseph Lstiburek\index{Lstiburek, Joeseph}.
       Do health considerations affect your choices? 
       What role do social pressures play in your dietary choices?
 
-\item The line between individual and collective action can be blurry.
+\item The line between individual\index{individuals} and collective action\index{collective action}
+      can be blurry.
       Because humans live in societies, 
-      every collective action is composed of many individual actions.
+      every collective action\index{collective action} is composed of many individual actions\index{individual action}.
       \ref{project:off-grid} illustrates the impossibility 
-      of trying to divorce the individual from the collective. 
-      Do you consider voting an individual action or a collective action? 
+      of trying to divorce the individual from the collective\index{collectives}. 
+      Do you consider voting an individual action\index{individual action} or a collective action\index{collective action}? 
       How about going to a climate-change rally? 
       Are oprganizing and attending the rally on different sides of the line?
-      Wangari Maathai (Section~\ref{sec:stories_individual_actions})
-      was an originator of the Green Belt Movement. 
-      Was organizing the Green Belt Movement an individual or collective action? 
-      Do you consider individual or collective actions to be more valuable for sustainability? 
-      Is individual vs.\ collective a helpful framework
+      Wangari Maathai\index{Maathai, Wangari} (Section~\ref{sec:stories_individual_actions})
+      was an originator of the Green Belt Movement\index{Green Belt Movement}. 
+      Was organizing the Green Belt Movement\index{Green Belt Movement} 
+      an individual\index{individual action} or
+      a collective action\index{collective action}? 
+      Do you consider individual\index{individual action} or 
+      collective actions\index{collective action} to be more valuable for sustainability? 
+      Is individual\index{individuals} vs.\ collective\index{collectives} a helpful framework
       for thinking about sustainability?
       Or is individual vs.\ collective action on sustainability
       a false dichotomy?
@@ -1011,7 +1015,7 @@ Wangari Maathai, and Joseph Lstiburek\index{Lstiburek, Joeseph}.
       households, transport, agriculture, or land use.
       Write a paper using the structure of Chapters~\ref{chap:households}--\ref{chap:land_use_urban_planning}:
       demand, challenges, and transitions.
-      Finally, consider the collective and individual actions 
+      Finally, consider the collective\index{collective action} and individual actions\index{individual action} 
       that can be taken to become more sustainable, 
       using the structure of 
       Chapters~\ref{chap:government} and \ref{chap:personal_action}.
