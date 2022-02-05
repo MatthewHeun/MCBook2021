@@ -329,7 +329,7 @@ crm_df <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "da
   tibble::column_to_rownames(var = "Materials")
 
 crm_xtab <- xtable::xtable(crm_df, 
-                           caption = c("Critical raw materials and the economic sectors in which they are used. ``Aero'' is aerospace and defense. ``Tex'' is textiles. ``Elect'' is electronics. ``Auto'' includes mobility and automotive. ``Energy'' includes all energy-intensive industries. ``Rens'' is the renewable energy\\index{renewable energy} sector. ``Agri'' is agriculture and food. ``Const'' is construction. ``PGM'' is platinum-group metals. ``HREE'' and ``LREE'' are heavy and light rare Earth elements. \\emph{Source}: \\citet[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.", 
+                           caption = c("Critical raw materials and the economic sectors in which they are used. ``Aero'' is aerospace and defense. ``Tex'' is textiles. ``Elect'' is electronics. ``Auto'' includes mobility and automotive. ``Energy'' includes all energy-intensive industries. ``Rens'' is the renewable energy\\index{renewable energy} sector. ``Agri'' is agriculture and food. ``Const'' is construction. ``PGM'' is platinum-group metals. ``HREE'' and ``LREE'' are heavy and light rare-earth elements\index{rare-earth metals}. \\emph{Source}: \\citet[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.", 
                                        "Critical raw materials and economic sectors"), 
                            align = c("r", rep("c", 11)),
                            label = "tab:CRMs")
