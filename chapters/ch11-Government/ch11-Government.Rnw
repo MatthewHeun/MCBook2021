@@ -12,15 +12,16 @@
 % It's found in its budget.}{Brent Toderian}
 \epigraph{Show me the incentive and I will show you the outcome}{Charlie Munger\index{Munger, Charlie}}
 
-The final two chapters of this book discuss actions
+The final two chapters of this book discuss actions\index{sustainability action}
 that can be taken by \textbf{collectives}\index{collectives} (this chapter) and
 \textbf{individuals}\index{individuals} (Chapter~\ref{chap:personal_action})
 to live more sustainably.
 The purpose of the final two chapters
-is to provide a breadth of possible actions to stimulate creative thinking and
-meaningful action among readers, 
+is to provide a breadth of possible actions\index{sustainability action}
+to stimulate creative thinking and
+meaningful action\index{sustainability action} among readers, 
 both as members of collectives\index{collectives} and as individuals\index{individuals}.
-Necessarily, little depth is provided on any single action.
+Necessarily, little depth is provided on any single action\index{sustainability action}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -35,10 +36,12 @@ each with
 a subject, 
 a verb, and 
 an object.
-The subjects are sustainability actors\index{actor}. 
-The verbs are sustainability actions.
-The objects are arenas in which the sustainability actions can take place.
+The subjects are sustainability actors\index{sustainability actor}. 
+The verbs are sustainability actions\index{sustainability action}.
+The objects are arenas\index{sustainability arena}
+in which the sustainability actions\index{sustainability action} can take place.
 Sustainability sentences look like this:
+\index{sustainability arena}
 
 \begin{equation}
 \label{eq:Sent4Sust}
@@ -56,12 +59,13 @@ Sustainability sentences look like this:
 %++++++++++++++++++++++++++++++
 
 In sustainability sentences, 
-the actors\index{actor} are individuals\index{individuals} or collectives\index{collectives} who perform the action.
+the actors\index{sustainability actor} are individuals\index{individuals} or collectives\index{collectives} who perform 
+the action\index{sustainability action}.
 The topic of this chapter is collective actions\index{collective action} toward sustainability.
 Collective actions\index{collective action} are appropriate for problems that are ``too big'' 
 to be solved by a single person.
 Collective actions\index{collective action} often require the cooperation of several groups to be successful.
-In this chapter, we consider collective sustainability actions\index{collective action} taken by
+In this chapter, we consider collective sustainability actions\index{sustainability action} taken by
 \textbf{governments}, \textbf{corporations}, and \textbf{organizations}.
 The next chapter considers sustainability actions taken by individuals.
 
@@ -89,17 +93,19 @@ cost-sharing agreements between state and federal agencies for road construction
 \label{sec:collective_corp}
 %..............................
 
-The second type of collective\index{collectives} group is business corporations. 
-Examples include Volkswagen, Siemens Gamesa Renewable Energy,
+The second type of collective\index{collectives} group is business \textbf{corporations}\index{corporations}. 
+Examples include Volkswagen\index{Volkswagen}, Siemens Gamesa\index{Siemens Gamesa} Renewable Energy,
 the Saudi Arabian Oil Company\index{Saudi Arabian Oil Company}, Maersk\index{Maersk}, and Best Buy\index{Best Buy}.
 Characteristically, corporations are engaged in commercial activity, 
 that is, {making and selling products and services.
-A business can be ``for profit,'' like Apple, Amazon\index{Amazon (the company)}, or Johnson and Johnson, or
-``not for profit,'' like the Educational Testing Service, the Mayo Clinic, World 
-Vision International, and most colleges and universities.
+A business can be ``for profit,'' like Apple\index{Apple, Inc.}, Amazon\index{Amazon (the company)}, or
+Johnson and Johnson\index{Johnson and Johnson}, or
+``not for profit,'' like the Educational Testing Service\index{Educational Testing Service}, 
+the Mayo Clinic\index{the Mayo Clinic}, 
+World Vision International\index{World Vision International}, and most colleges and universities.
 Often, charitable foundations are structured as business corporations. 
-For example, the Bill and Melinda Gates Foundation is a charitable foundation
-with a corporate structure.
+For example, the Bill and Melinda Gates Foundation\index{Bill and Melinda Gates Foundation}
+is a charitable foundation with a corporate structure.
 
 Some U.S.\ states allow alternative corporate charters that blend the for-profit
 and not-for-profit corporate structures.
@@ -116,27 +122,29 @@ beyond merely maximizing shareholder value.
 \label{sec:collective_org}
 %..............................
 
-The third type of collective\index{collectives} group is called, generically, organizations.
+The third type of collective\index{collectives} group is called, generically, 
+\textbf{organizations}\index{organizations}.
 Example organizations include the 
 American Society of Heating, Refrigerating, and Air-conditioning Engineers 
 (ASHRAE)\index{American Society of Heating, Refrigerating, and Air-conditioning Engineers (ASHRAE)},
-the 3$^{\text{rd}}$ Generation Partnership Project (3GPP),
-local churches, the Internet Society, political
+the 3$^{\text{rd}}$ Generation Partnership Project (3GPP)\index{3$^{\text{rd}}$ Generation Partnership Project (3GPP)},
+local churches, the Internet Society\index{Internet Society}, political
 parties, environmental organizations, and community and civic groups.
 A distinguishing characteristic of organizations is voluntary association,
 meaning that individuals choose to be a member of the organization.
 
 Collectives\index{collectives} sometimes straddle the boundaries between categories.
-For instance, the Federal National Mortgage Association (``Fannie Mae'') is a
+For instance, the Federal National Mortgage Association 
+(``Fannie Mae'')\index{Federal National Mortgage Association (Fannie Mae)} is a
 U.S.-government-sponsored business corporation.
 Many nonprofits mix a business corporate structure with a voluntary organization(s).
-For example, the Roman Catholic Church is an association of corporate entities
-(such as Catholic Relief Services) and
+For example, the Roman Catholic Church\index{Roman Catholic Church} is an association of corporate entities
+(such as Catholic Relief Services\index{Catholic Relief Services}) and
 organizations (including local parishes).
-Another example is the National Audubon Society,
+Another example is the National Audubon Society\index{National Audubon Society},
 which is a company affiliated with
 nearly five hundred local, independent chapters.
-Lastly, the Internet Society (mentioned above)
+Lastly, the Internet Society\index{Internet Society} (mentioned above)
 is an organization that sets policy for high-level internet activities; 
 it is quasi-governmental in nature.
 
@@ -145,7 +153,7 @@ it is quasi-governmental in nature.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Despite some ``fuzziness'' in the different types of collectives\index{collectives},
 the categories are useful as a framework to help us think about the capabilities
-of collectives\index{collectives}. 
+of collectives\index{collectives} to promote sustainability. 
 Not all collectives\index{collectives} are equally suited for or adept at a given task.
 \end{mcframe}
 
@@ -155,8 +163,8 @@ Not all collectives\index{collectives} are equally suited for or adept at a give
 \label{sec:individuals_def}
 %..............................
 
-Individuals are persons who are committed to sustainability and
-take actions that match their commitments;
+Individuals\index{individuals} are persons who are committed to sustainability and
+take actions\index{sustainability action} that match their commitments;
 see Chapter~\ref{chap:personal_action}.
 
 
@@ -166,11 +174,11 @@ see Chapter~\ref{chap:personal_action}.
 %++++++++++++++++++++++++++++++
 
 In both this chapter (collective actions\index{collective action}) and the next (individual actions\index{individual action}), 
-we consider four types of sustainability actions:
+we consider four types of sustainability actions\index{sustainability action}:
 choices, laws, research, and education.
 The four types of actions are not exhaustive of all possible actions, 
 but they provide a framework
-to guide our thinking about possible sustainability actions. 
+to guide our thinking about possible sustainability actions\index{sustainability action}. 
 
 
 %..............................
@@ -185,7 +193,8 @@ The decisions might be large (where to live, family planning)
 or small (paper vs.\ plastic bags).
 It might be a single, simple choice or a lifestyle-related choice (driving vs.\ walking).
 
-Characteristic of the ``choice'' action is that it has a direct impact on sustainability, and
+Characteristic of the ``choice'' action\index{sustainability action}
+is that it has a direct impact on sustainability, and
 it involves choosing a sustainable option from a menu of existing activities or products.
 Nothing new needs to be invented.
 
@@ -219,7 +228,7 @@ Changes in those relationships have sustainability implications.
 Changing laws and regulations (the ``rules of the game'')
 can provide widespread incentives
 to encourage self-interested individuals to become more sustainable.
-To extend the ``menu'' metaphor, if choice actions involve selecting a product or 
+To extend the ``menu'' metaphor, if choice actions\index{sustainability action} involve selecting a product or 
 service from an existing menu, rules and regulations change the prices
 of the menu items. 
 In turn, the prices change the behavior and choices 
@@ -270,7 +279,7 @@ by prudent collaboration within strong societal structures.
 \label{sec:actions_research}
 %..............................
 
-The ``research'' action means both the creation of new knowledge about sustainability and
+The ``research'' action\index{sustainability action} means both the creation of new knowledge about sustainability and
 the invention or development of new technology for sustainability.
 For instance, forest and wildlife managers may wish to know how climate change\index{climate change} is
 altering the range of the mountain pine beetle, which affects whitebark pine and 
@@ -319,16 +328,16 @@ Disseminating information about sustainability is a crucial step in achieving a
 sustainable society.
 Education includes advertising, public service announcements, reading books for a term paper,
 creating a website, and making or watching a documentary film.
-Characteristics of the education action include the acquisition or dissemination
+Characteristics of the education action\index{sustainability action} include the acquisition or dissemination
 of existing knowledge about sustainability.
-Simply going to school or getting a degree does not count as the education action
+Simply going to school or getting a degree does not count as the education action\index{sustainability action}
 in the context of this book, 
 unless that education is sustainability-related.
 In our menu metaphor, education is like advertising. 
 You want consumers to know about what's on the menu. 
 You might point out special deals or combos.
 
-A typical sequence of actions might look something like this: 
+A typical sequence of actions\index{sustainability action} might look something like this: 
 a scientist discovers new aspects of climate change\index{climate change} (research), 
 the news media reports the problem (education),
 the government\index{government} creates incentives to change behavior (law), 
@@ -342,7 +351,7 @@ consumers respond by buying the new, more sustainable option (choice).
 %++++++++++++++++++++++++++++++
 
 In this chapter and the next, 
-we consider sustainability actions undertaken in arenas
+we consider sustainability actions\index{sustainability action} undertaken in arenas
 corresponding to eight previous chapters:
 population, 
 affluence, 
@@ -403,8 +412,8 @@ In addition, education for family planning can be done by governments\index{gove
 Governments\index{government} can disseminate information around family planning and birth control
 to citizens, especially girls and women, to reduce population growth\index{population growth}. 
 (In contrast to the general education mentioned in the previous paragraph,
-here specific training on birth control is counted as the education action 
-because it has a direct sustainability effect on the target of the action, in this
+here specific training on birth control is counted as the education action\index{sustainability action} 
+because it has a direct sustainability effect on the target of the action\index{sustainability action}, in this
 case, on population.)
 
 
@@ -751,7 +760,7 @@ materials, place, water, energy, health and happiness, equity, and beauty.
 The Energy Star\index{Energy Star} program 
 encourages manufacturers to design and manufacture
 higher-efficiency appliances for homes and offices.
-(The above examples are characterized as the education action because they 
+(The above examples are characterized as the education action\index{sustainability action} because they 
 communicate sustainability information to consumers.)
 
 Figure~\ref{fig:energy_star_total} shows three different energy labels for two home 
@@ -1085,7 +1094,7 @@ Thus, collective actions\index{collective action} and personal action intertwine
 when representatives are selected.
 Indeed, voting for representatives who favor collective\index{collective action} change
 toward sustainability 
-is an important action that can be taken by individuals.
+is an important action\index{individual action} that can be taken by individuals.
 However, there are many more individual actions\index{individual action} that can be undertaken
 to move the world in a sustainable direction. 
 Those individual actions\index{individual action} are the subject of the next and final chapter.
@@ -1156,7 +1165,7 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       individual rights either in scope or extent?
       
 \item How will corporate structure (for profit, not-for-profit, or a blend of
-      the two) affect a company's actions for sustainability?
+      the two) affect a company's actions\index{sustainability action} for sustainability?
       Brainstorm some positives and negatives for each structure.
 
 \item In 2021, U.S.\ president Joe Biden proposed a Civilian Climate Corps modeled 
@@ -1167,10 +1176,10 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       What were the proposed monetary costs of the Civilian Climate Corps?
       What nonmonetary costs would you expect to arise?
 
-\item Of the four types of actions for sustainability in 
+\item Of the four types of actions\index{sustainability action} for sustainability in 
       Section~\ref{sec:actions_def}, which is the most important? 
       Which is the most urgent?
-      Of the four principle actors\index{actor}
+      Of the four principle actors\index{sustainability actor}
       (governments\index{government!as sustainability actor}, 
       organizations, 
       corporations, and
