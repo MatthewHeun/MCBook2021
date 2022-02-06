@@ -90,10 +90,10 @@ In both cases, the input and output have the same units of energy, BTUs for the 
 and MW for the power plant.
 
 In contrast, 
-an efficacy is like an efficiency, except the output (in the numerator)
+an efficacy\index{efficacy} is like an efficiency, except the output (in the numerator)
 and the input (in the denominator) have 
 different units.
-A vehicle's \textbf{fuel economy}\index{fuel economy}, measured in miles per gallon, is an efficacy, 
+A vehicle's \textbf{fuel economy}\index{fuel economy}, measured in miles per gallon, is an efficacy\index{efficacy}, 
 because the units in numerator (miles) are different from units in the denominator (gallons).
 Tonnes of freight moved per liter of fuel consumed is another efficacy. 
 
@@ -1452,7 +1452,7 @@ US Geological Survey, National Minerals Information Center \\
 
   \item Research the CAFE\index{corporate average fuel economy (CAFE)}
         standards in the U.S.\ and
-        other automobile\index{automobile} efficacy standards worldwide.
+        other automobile efficacy\index{automobile efficacy} standards worldwide.
         Evaluate the strategies, tactics, and approaches to improving fuel economy\index{fuel economy}
         in automobiles\index{automobile} and trucks.
         Which approach works best?
