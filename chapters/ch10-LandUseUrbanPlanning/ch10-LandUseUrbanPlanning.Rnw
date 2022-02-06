@@ -312,7 +312,9 @@ Tracking those changes helps us to understand the relationships between
 land use and sustainability challenges\index{sustainability challenges!land use}
 (for example, climate change\index{climate change}).
 The European Space Agency (ESA)\index{European Space Agency (ESA)} 
-Climate-Change Initiative (CCI)\index{Climate Change Initiative (CCI)} recently released 
+Climate Change Initiative (CCI)\index{Climate Change Initiative (CCI)} recently released 
+% note that i'm intentionally not hyphenating it because the ESA doesn't hyphenate it.
+% https://climate.esa.int/en/
 a satellite-image dataset for global land use over a 24-year period (1992--2015).
 There are nine categories for land-use:  
 agriculture, forest, grass, wetland\index{wetland}, settlement, shrubland, sparse, bare, and water.
