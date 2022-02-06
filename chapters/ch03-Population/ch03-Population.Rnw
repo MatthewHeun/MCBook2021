@@ -55,7 +55,7 @@ There are two schools of thought on population with relevance for economics and 
 \textbf{Malthusians}\index{Malthusians}
 think that population growth\index{population growth} will cause us to ``run out'' of 
 scarce resources\index{resources, scarce}.
-Techo-optimists\index{techo-optimists} think that more people will lead to 
+Techno-optimists\index{techno-optimists} think that more people will lead to 
 better technology, more specialization of labor\index{labor specialization}, and, ultimately, to a higher, not lower,
 standard of living.
 Interactions among 
@@ -243,7 +243,7 @@ last sixty years, dropping from about 2\%/year to about 1\%/year),
 exponential growth\index{exponential growth} is a good
 description of how population changes with time.
 
-Figure~\ref{fig:UN_population_prospect} shows projections made by the United Nations\index{United Nations}
+Figure~\ref{fig:UN_population_prospect} shows projections made by the United Nations\index{United Nations (UN)}
 about the future human population. 
 Because birth rate and death rate are influenced by many other factors---environmental, 
 social, and economic---there exists a wide range of uncertainty in the population 
@@ -330,13 +330,13 @@ The point of Figure~\ref{fig:World3loops} is to show that many variables
 \label{fig:World3loops}
 \end{figure}
 
-The UN\index{United Nations} projections shown in Figure~\ref{fig:UN_population_prospect} are not based on 
+The UN\index{United Nations (UN)} projections shown in Figure~\ref{fig:UN_population_prospect} are not based on 
 the World3\index{World3} model. 
-Instead, the UN\index{United Nations}
+Instead, the UN\index{United Nations (UN)}
 used a Bayesian model\index{Bayesian model}
 that accounts for correlations among the 
 many variables assumed to affect birth and death rates.
-The UN\index{United Nations} model also accounts for different levels of development in 
+The UN\index{United Nations (UN)} model also accounts for different levels of development in 
 different segments of the Earth's human population.
 Accounting for interactions among social, demographic, and economic
 variables is expected to give more-realistic population projections.
@@ -965,7 +965,7 @@ The History Guy \href{https://www.youtube.com/watch?v=FxqgBWxLZa0}
 \begin{projects}
 
 \item Run several population simulations using different models.
-      Do the UN\index{United Nations} projections shown in Figure~\ref{fig:UN_population_prospect}
+      Do the UN\index{United Nations (UN)} projections shown in Figure~\ref{fig:UN_population_prospect}
       align with your projections? What assumptions or starting
       conditions are necessary to get alignment? Do you think this
       is reasonable?
