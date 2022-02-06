@@ -792,12 +792,12 @@ However, most of the radiative energy emitted by an incandescent lamp\index{inca
 is in nonvisible wavelengths.
 In contrast, most of the radiative energy emitted by an LED lamp\index{LED lamp} is in visible wavelengths.
 The lumen counts only visible light output, so 
-the service efficacy\index{energy service efficacy} 
+the service efficacy\index{energy-service efficacy} 
 (measured in lumens/W, the lighting efficacy\index{lighting efficacy}) 
 penalizes incandescent lamps\index{incandescent lamp} 
 for emitting most of their energy in nonvisible wavelengths.
 (See \citet{Heun:2020aa} for details.)
-The service efficacy\index{energy service efficacy}
+The service efficacy\index{energy-service efficacy}
 favors LED lamps\index{LED lamp}, because they emit most of their energy in visible wavelengths.
 While an energy efficiency\index{energy efficiency} metric would say that
 incandescent\index{incandescent lamp} and
@@ -892,7 +892,7 @@ First, in-floor radiant heating\index{radiant heating} is often considered more 
 forced air, allowing thermostats\index{thermostat} to be set lower,
 thereby consuming less energy for the same level of comfort.
 (This is an example of the benefit 
-of focusing on energy service efficacy\index{energy service efficacy},
+of focusing on energy-service efficacy\index{energy-service efficacy},
 in this case thermal comfort\index{thermal comfort} per BTU,
 instead of energy efficiency\index{energy efficiency};
 see page~\pageref{page:efficiency_efficacy}.)
