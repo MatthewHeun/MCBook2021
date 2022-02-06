@@ -41,7 +41,7 @@ This chapter considers agriculture as an import example of industry and commerce
 (the other two sectors in Table~\ref{tab:corrected_co2_emissions}).
 
 Agriculture, forestry, and other land use account for an estimated 23\% 
-of anthropogenic greenhouse gas (GHG) emissions~\cite{SRCCL2019}. 
+of anthropogenic greenhouse-gas (GHG) emissions~\cite{SRCCL2019}. 
 Agriculture has strong links to land use, which is the focus of 
 Chapter~\ref{chap:land_use_urban_planning}.
 Chapters~\ref{chap:households} and~\ref{chap:transportation} hint
@@ -586,7 +586,7 @@ is ``how can food waste\index{food waste} be eliminated?''
 
 
 %++++++++++++++++++++++++++++++
-\subsection{Greenhouse gas emissions}\index{CO$_2$ emissions}
+\subsection{Greenhouse-gas emissions}\index{CO$_2$ emissions}
 %++++++++++++++++++++++++++++++
 
 Globally, food and land use account for 23\% of GHG emissions\index{CO$_2$ emissions}~\cite{IPCC:2018aa}.
@@ -627,7 +627,7 @@ food_emissions_US %>%
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Convenient calculators for greenhouse gas emissions\index{CO$_2$ emissions} from food production
+Convenient calculators for greenhouse-gas emissions\index{CO$_2$ emissions} from food production
 can be found online \cite{CleanMetrics:aa}.
 Factors such as transport distance and wastage percentages are important
 for determining GHG emissions\index{CO$_2$ emissions!food} from food.
@@ -979,7 +979,8 @@ from its headwaters to Los Angeles\index{Los Angeles}, Tucson\index{Tucson}, and
       of agrichemicals\index{agrichemicals} and fossil-fueled mechanization of labor\index{labor}. 
       Lower yields means more land is needed (thereby increasing land-based emissions 
       and impacts).
-      Since land use is a significant contributor to global greenhouse gas emissions\index{CO$_2$ emissions!land use},
+      Since land use is a significant contributor to global greenhouse-gas 
+      emissions\index{CO$_2$ emissions!land use},
       how should we think about minimizing total impact? That is, how should we
       ``price'' different kinds of emissions/impacts?
       What does use of the word ``price'' suggest about our approach to solving the
@@ -1003,7 +1004,7 @@ from its headwaters to Los Angeles\index{Los Angeles}, Tucson\index{Tucson}, and
 
 \item Food waste\index{food waste} is a major environmental and economic problem. 
       In fact, food waste\index{food waste} accounts for 6--8\% 
-      of global greenhouse gas emissions\index{CO$_2$ emissions!food waste}.
+      of global greenhouse-gas emissions\index{CO$_2$ emissions!food waste}.
       One way to reduce food waste\index{food waste} is to use more packaging.
       The purpose of packaging is to keep food fresh until its ready to be eaten.
       What is your reaction to the idea that additional packaging could reduce 
@@ -1134,12 +1135,12 @@ from its headwaters to Los Angeles\index{Los Angeles}, Tucson\index{Tucson}, and
       Or are we eating natural gas\index{natural gas}?
       
 \item Use a food-emissions calculator (such as the one suggested in this 
-      chapter~\cite{CleanMetrics:aa}) to estimate the greenhouse 
-      gas\index{CO$_2$ emissions!food} emissions from your food choices over the course of a week.
+      chapter~\cite{CleanMetrics:aa}) to estimate the greenhouse-gas\index{CO$_2$ emissions!food} 
+      emissions from your food choices over the course of a week.
       Compare to your peers.
       How do your food-related emissions compare to your emissions from transportation-related activities?
       Guided by the figures and advice in this chapter, 
-      develop an alternative diet and estimate its greenhouse gas emissions\index{CO$_2$ emissions!food}.
+      develop an alternative diet and estimate its greenhouse-gas emissions\index{CO$_2$ emissions!food}.
       What amount of GHG emissions\index{CO$_2$ emissions} reductions can you obtain by changing your diet?
       
 \item Retail is an important part of the food supply chain.
