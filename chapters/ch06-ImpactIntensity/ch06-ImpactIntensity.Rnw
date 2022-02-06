@@ -85,7 +85,7 @@ other examples of environmental impacts caused by resource extraction\index{reso
 
   \item air, water, and soil pollution\index{pollution!air}\index{pollution!water}\index{pollution!soil}~\cite{Lee:2017ui} 
         in the form of
-        bauxite dust,\index{bauxite!dust}
+        bauxite dust,\index{bauxite dust}
         sulfur dioxide (SO$_2$)\index{sulfur dioxide (SO$_2$)}, and
         nitrous oxides (NO$_\mathrm{x}$)\index{nitrous oxides (NO$_\mathrm{x}$)} emissions
         from bauxite\index{bauxite} mining in Australia\index{Australia};
@@ -290,10 +290,10 @@ But how?
 
 There are at least seven often-discussed options for
 transitioning to a low-carbon energy supply:
-(a) carbon capture and storage,
+(a) carbon capture and storage\index{carbon capture and storage (CCS)},
 (b) carbon sequestration\index{carbon sequestration},
 (c) carbon takeback obligation (CTBO)\index{carbon takeback obligation (CTBO)},
-(d) carbon tax,
+(d) carbon tax\index{carbon tax},
 (e) nuclear electricity\index{nuclear electricity},
 (e) biomass\index{biomass}, and
 (f) wind, water, and solar (WWS)\index{wind, water, and solar (WWS)}.
@@ -349,7 +349,7 @@ for later injection underground.
 Carbon sequestration\index{carbon sequestration} seeks to extract CO$_2$ from the atmosphere\index{atmosphere},
 storing it in inert form.
 One form of carbon sequestration\index{carbon sequestration} is simply planting billions of trees.
-A massive, worldwide afforestation effort would be required to extract
+A massive, worldwide afforestation\index{afforestation} effort would be required to extract
 the additional carbon that has been added to the atmosphere\index{atmosphere} since the industrial revolution.
 In such a scheme, trees consume CO$_2$ and store it in their biomass\index{biomass}.
 Unfortunately, if the trees are burned or die and decompose, 
@@ -510,12 +510,15 @@ via wood stoves,
 provided that particulate matter\index{particulate matter (PM)} emissions are mitigated appropriately.
 However, biomass\index{biomass} by itself
 is not electricity\index{electricity} or liquid fuel.
-A conversion to biomass\index{biomass} for the world's primary energy\index{primary energy} supply would also require 
-worldwide replacement of today's fossil-fuel electricity\index{fossil-fuel electricity} generation infrastructure
+A conversion to biomass\index{biomass} for the world's primary energy\index{primary energy} 
+supply would also require 
+
+worldwide replacement of today's fossil-fuel electricity\index{fossil-fuel electricity}
+generation infrastructure\index{infrastructure}
 with a fleet of biomass power plants\index{biomass power plant}.
 And conversion to biomass\index{biomass} would require build-out 
 of a biomass\index{biomass}-to-liquid-fuels conversion 
-infrastructure that does not yet exist.
+infrastructure\index{infrastructure} that does not yet exist.
 Finally, conversion to biomass\index{biomass} will be accompanied by a reduction 
 in EROI\index{energy return on investment (EROI)}; 
 see Section~\ref{sec:masterE}.
@@ -537,7 +540,7 @@ wind\index{wind electricity},
 and solar\index{solar electricity} 
 energy sources (WWS)~\cite{Jacobson:2011gc,Delucchi:2011gb}.\index{wind, water, and solar (WWS)}
 A transition to WWS\index{wind, water, and solar (WWS)} would also require 
-significant changes to the world's energy infrastructure, 
+significant changes to the world's energy infrastructure\index{infrastructure}, 
 with at least four large challenges.
 
 First, WWS\index{wind, water, and solar (WWS)} energy resources produce electricity, not liquid fuels, and 
@@ -571,7 +574,7 @@ to include electricity storage\index{electricity storage}.
 
 There are several options for grid-scale electricity storage\index{electricity storage}, including
 batteries\index{battery} and potential energy storage.
-Battery\index{battery} storage will require great quantities of rare earth metals 
+Battery\index{battery} storage will require great quantities of rare-earth metals\index{rare-earth metals} 
 and other exotic materials, 
 already included on lists of critical raw materials\index{critical raw materials (CRMs)};
 see Section~\ref{sec:resources_strong_sustainability}. 
@@ -847,7 +850,7 @@ on other terms of the IPARX identity\index{IPARX identity}.
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Former U.S.\ representative Vernon Ehlers'\index{Ehlers, Vernon}
-many years in education and government led him to quip frequently
+many years in education and government\index{government} led him to quip frequently
 ``you can never do only one thing.''
 
 \end{mcframe}
@@ -893,7 +896,7 @@ population depends on many factors.
 see the causal loop diagram from the World3 model\index{World3}
 shown in Figure~\ref{fig:World3loops}.)
 One clear trend from history is that increasing affluence~(\rateA{}~>~0)
-leads to reduced population growth rate~(\rateP~<~0).
+leads to reduced population growth rate\index{population growth rate}~(\rateP~<~0).
 Thus, the affluence and population terms of the IPARX identity\index{IPARX identity}
 are not independent.
 
@@ -1009,7 +1012,8 @@ in the renewable device.
 That said, many advocates of Green Growth\index{Green Growth}, 
 a Green New Deal\index{Green New Deal}, and
 similar public policies 
-promote the idea that a transition to green infrastructure, including renewable energy\index{renewable energy},
+promote the idea that a transition to green infrastructure\index{infrastructure},
+including renewable energy\index{renewable energy},
 will stimulate economic growth and increase affluence.
 If they are right, 
 a renewables-driven decrease in \XCOtwo{} would lead to an increase in \mft{A}
@@ -1179,7 +1183,7 @@ Energy Vault simulation  \\
       Hint: see Table~\ref{tab:eroi}.
 
 \item Should the transition to renewable energy\index{renewable energy} sources be actively managed 
-      (for example by government policy) or should we let the ``invisible hand
+      (for example by government policy\index{government policy}) or should we let the ``invisible hand
       of the market'' manage the transition for us? Why?
       Are your reasons strictly because of the outcome(s) you imagine? 
       What assumptions are you making that lead to those outcomes?
@@ -1279,12 +1283,12 @@ Energy Vault simulation  \\
         President Johnson's\index{Johnson, Lyndon B.} ``Great Society''\index{Great Society} initiatives,
         and President Reagan's\index{Reagan, Ronald} ``Star Wars'' program\index{Star Wars program}~\cite{Heun:2008vu}.
         Find several updated estimates of the costs for these and other large 
-        government programs.
+        government\index{government} programs.
         Compare to cost estimates to effect a transition to a low-carbon energy regime.
         
   \item Calculate land required to convert all energy production to solar sources
         in the U.S. 
-        What effect would a fully-solar energy infrastructure have on natural landscape?
+        What effect would a fully-solar energy infrastructure\index{infrastructure} have on natural landscape?
         Where would you locate the solar panels\index{solar panel}?
         What transmission issues would emerge?
   
@@ -1370,27 +1374,29 @@ Energy Vault simulation  \\
         
   \item \label{project:ocean_plastic}
         Research the source(s) of ocean\index{ocean} plastic pollution\index{pollution!plastic}.  
-        What are the effects of ocean plastics\index{pollution!plastic} on human health and communities?
+        What are the effects of ocean plastics\index{ocean plastic} on human health and communities?
         Is plastic in the oceans\index{pollution!plastic} a single problem or several?
         
   \item Section~\ref{sec:rebound_effect} discusses the rebound effect\index{rebound effect},
         wherein monetary savings from energy efficiency\index{energy efficiency} are spent elsewhere in the economy,
         raising energy consumption in other sectors.
-        Green revolving funds~(GRFs) are thought to be a way to mitigate the rebound effect\index{rebound effect}.
-        A green revolving fund is the repository for 
+        Green revolving funds~(GRFs)\index{green revolving fund (GRF)}
+        are thought to be a way to mitigate the rebound effect\index{rebound effect}.
+        A green revolving fund\index{green revolving fund (GRF)} is the repository for 
         monetary savings from energy efficiency\index{energy efficiency}.
-        Green revolving fund assets must be invested in further energy efficiency\index{energy efficiency},
+        Green revolving fund\index{green revolving fund (GRF)} assets
+        must be invested in further energy efficiency\index{energy efficiency},
         thereby preventing ``leakage'' of the benefits 
         (reduced energy consumption and CO$_2$ emissions\index{CO$_2$ emissions})
         of energy efficiency\index{energy efficiency}.
-        Research green revolving funds. 
+        Research green revolving funds\index{green revolving fund (GRF)}. 
         Where have they been successful to reduce energy consumption and
         carbon emissions\index{CO$_2$ emissions!reduction}?
         Where have they failed?
         What are the factors that make GRFs successful?
         Conversely, what factors lead to failure?
-        Investigate implementing a green revolving fund at your 
-        school, place of employment, or local government.
+        Investigate implementing a green revolving fund\index{green revolving fund (GRF)} at your 
+        school, place of employment, or local government\index{government!local}.
         What would it take to establish a GRF?
         What are the roadblocks?
         Who would benefit from a GRF and why?

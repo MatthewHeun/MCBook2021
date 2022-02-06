@@ -302,7 +302,7 @@ moving people along the first mile to mass transit stations is
 expensive in both monetary and energy terms.
 The first-mile problem\index{first-mile problem} is reduced in urban areas
 with high population density\index{population density}, 
-especially if commuters can walk or bike to bus, train, or subway stations.
+especially if commuters can walk or bike\index{bicycle} to bus, train, or subway stations.
 A sustainability challenge for the first-mile problem\index{first-mile problem} is
 ``how can we solve the first-mile problem\index{first-mile problem}
 and maintain livable spaces?''
@@ -440,9 +440,9 @@ because the same economic activity
 could be accomplished with less fuel consumption
 for transportation.
 
-Vehicle fuel economy\index{fuel economy} (an efficacy, not an efficiency)
+Vehicle fuel economy\index{fuel economy} (an efficacy\index{automobile efficacy}, not an efficiency)
 is usually quantified in distance traveled per volume
-of fuel consumed\index{efficiency!fuel}\index{efficiency!vehicle}.
+of fuel consumed.
 The U.S.\ fleet-average fuel economy\index{fuel economy} of cars and trucks has varied 
 significantly over the past few decades;
 see Figure~\ref{fig:US_mpg}.
@@ -505,7 +505,7 @@ lead to improved vehicle fuel economy\index{fuel economy};
 see~\ref{question:hypermiling}.
 
 Fuel economy\index{fuel economy}, quantified in miles per gallon,
-focuses on the efficacy of the machine itself (the car).
+focuses on the efficacy\index{automobile efficacy} of the machine itself (the car).
 However, drivers don't buy fuel to move vehicles.
 They pay for fuel to move people and freight!
 So another way to measure vehicle effectiveness is the ratio of transportation service\index{transportation service} 
@@ -513,7 +513,7 @@ to fuel volume consumed.
 Transportation service efficacy\index{transportation service efficacy}
 is quantified in units of passenger-km/liter or tonne-km/liter
 for passenger transportation and freight transportation, respectively.
-This simple shift from machine efficacy (miles/gallon) 
+This simple shift from machine efficacy\index{automobile efficacy} (miles/gallon) 
 to transportation service efficacy\index{transportation service efficacy} (passenger-km/liter)
 exposes the sustainability opportunity presented by Figure~\ref{fig:commuter_percentage_by_mode}.
 When more than three-quarters of all commutes are taken in single-occupant vehicles,
@@ -751,7 +751,7 @@ This chapter introduced the demand for passenger and freight transport
 and sources of that demand.
 Sustainability aspects of transport,
 especially energy consumption, fuel economy\index{fuel economy},
-and climate\index{climate} change (the prime example of Part~\ref{part:IPARX})
+and climate change\index{climate change} (the prime example of Part~\ref{part:IPARX})
 were discussed.
 Finally, transitions to a sustainable transportation system were discussed
 including transportation efficacy\index{transportation efficacy},
@@ -776,7 +776,7 @@ New York: Harper, 2016.
 \section*{See Also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Roy Symons's blog \emph{Transportation planning: Thoughts on how we move} \\
+Roy Symons's\index{Symons, Roy} blog\index{blog} \emph{Transportation planning: Thoughts on how we move} \\
 \href{https://www.transportation-planning.com}{www.transportation-planning.com},  \\ 
 which includes cartoons and pithy quotes about transportation \\
 \href{https://www.transportation-planning.com/quotes.html}
@@ -800,9 +800,9 @@ dismantling street car transportation in the 1930’s,
 and in catapulting the automobile\index{automobile} to the center of [U.S.] national culture.'' \\
 \href{https://www.pbs.org/pov/watch/takenforaride/}{www.pbs.org/pov/watch/takenforaride} \\
 
-\noindent For counterpoint/fact check, see City Beautiful's 
+\noindent For counterpoint/fact check, see City Beautiful's\index{City Beautiful} 
 \href{https://www.youtube.com/watch?v=RnFVBfhpprU}
-{Did GM really kill the streetcar in Los Angeles?} (YouTube, September 7, 2018)
+{Did GM really kill the streetcar in Los Angeles\index{Los Angeles}?} (YouTube, September 7, 2018)
 and references therein, particularly 
 \href{http://www.1134.org/stan/ul/GM-et-al.html}{GM and the Red Cars}
 and
@@ -833,7 +833,7 @@ transportation, petroleum\index{petroleum}, and technology.
       provide GHG emissions\index{CO$_2$ emissions!transportation} reductions relative 
       to internal combustion engine vehicles\index{internal combustion engine (ICE) vehicle}
       at the expense of increased mineral resource depletion\index{mineral resource depletion (MRD)}.
-      The tradeoff between GHG emissions\index{CO$_2$ emissions!tranportation}
+      The tradeoff between GHG emissions\index{CO$_2$ emissions!transportation}
       and mineral resource depletion\index{mineral resource depletion (MRD)} is
       nearly impossible to decide on a quantitative or objective basis.
       Indeed, deciding this and similar tradeoffs cannot be divorced
@@ -869,11 +869,11 @@ transportation, petroleum\index{petroleum}, and technology.
       possible to commute between home and work, school, shopping, etc.
       ``Affordable'' housing is affordable only as long as the cost of commuting 
       is not too high.
-      Happiness depends strongly on having a short commute~\cite{Hilbrecht2014},
+      Happiness\index{happiness} depends strongly on having a short commute~\cite{Hilbrecht2014},
       in part because commuting reduces physical activity and reduces time for other 
       activities, which leads to stress. 
       One author reports eliminating two hours of commuting per day is equivalent
-      (from a happiness perspective) to an additional \$40,000 of income\index{income}~\cite{Buettner2011}.
+      (from a happiness\index{happiness} perspective) to an additional \$40,000 of income\index{income}~\cite{Buettner2011}.
       Reflect on your current and future commuting plans, income\index{income}, and domicile location.
       How do you balance these tradeoffs in your own life?
       Critique the \$40,000 a year number: commuting two hours per day, five days
@@ -887,7 +887,7 @@ transportation, petroleum\index{petroleum}, and technology.
       One way to implement congestion pricing\index{congestion pricing} is to automatically charge a toll 
       on every (nonexempt) vehicle entering the city center.
       London\index{London} has had such a scheme since 2003 and congestion pricing\index{congestion pricing} 
-      is currently being considered for New York City.
+      is currently being considered for New York City\index{New York}.
       The objectives of congestion pricing\index{congestion pricing} are many and various: improved
       urban air quality (electric vehicles\index{electric vehicle (EV)}
       can be exempted from the surcharge),
@@ -898,7 +898,7 @@ transportation, petroleum\index{petroleum}, and technology.
       relate to (hypothetical) displaced traffic to suburbs,
       economic inequality (who can afford to pay and who can't), civil liberties
       (from the automated systems that collect the tolls), who decides and who 
-      benefits (residents vs. visitors), and what the extra tax money will be spent on.
+      benefits (residents vs. visitors), and what the extra tax\index{tax} money will be spent on.
       \label{question:London_congestion}
       \begin{enumerate}
       \item Fundamentally, does it make sense---if roads are a public good---to
@@ -909,7 +909,7 @@ transportation, petroleum\index{petroleum}, and technology.
             Which objection(s) are most important?
       \end{enumerate}
 
-\item \href{www.strongtowns.org}{Strong Towns.org} defines a road as a high-speed 
+\item \href{www.strongtowns.org}{Strong Towns.org}\index{Strong Towns} defines a road as a high-speed 
       connection (like an expressway\index{expressway}) between two places,
       a street as a human-centric place where people interact with homes and businesses,
       and \textbf{stroads}\index{stroad} as dangerous and expensive hybrids that are ultimately ineffective
@@ -918,9 +918,9 @@ transportation, petroleum\index{petroleum}, and technology.
       multiple lanes, high traffic volumes, but also many lights and connections to
       business parking lots. 
       Despite connecting to many businesses, stroads\index{stroad} often have no sidewalks.)
-      In the U.S., pedestrian fatalities increased from 4,302 in 2010 to 6,301 in 2019,
-      an increase of 46\% over the decade and representing 17\% of all traffic fatalities.
-% https://arstechnica.com/cars/2021/03/us-pedestrian-deaths-rose-sharply-in-the-first-half-of-2020
+      In the U.S., pedestrian fatalities\index{pedestrian fatalities} increased from 4,302 in 2010 to 6,301 in 2019,
+      an increase of 46\% over the decade and representing 
+      17\% of all traffic fatalities\index{traffic fatalities}\cite{Gitlin:2021ug}.
       Preliminary data for 2020~\cite{ghsa2021} projects a further 4.8\% increase in pedestrian 
       deaths over 2019.
       
@@ -972,20 +972,21 @@ transportation, petroleum\index{petroleum}, and technology.
 
 \item Bicycling is one way to solve the first-mile problem\index{first-mile problem} 
       and/or the last-mile problem\index{last-mile problem} for personal travel.
-      Typically, this means that you bike to and/or from another form of transit.
-      For example, you might bike to the train station, airport, or bus stop, ride or fly 
-      (possibly, with your bike onboard), and then bike to your final destination. 
-      Maybe you bike to and from a carpool lot.
+      Typically, this means that you bike\index{bicycle} to and/or from another form of transit.
+      For example, you might bike\index{bicycle} to the train station, airport, or bus stop, ride or fly 
+      (possibly, with your bike\index{bicycle} onboard), and
+      then bike\index{bicycle} to your final destination. 
+      Maybe you bike\index{bicycle} to and from a carpool lot.
       There are a lot of reasons people give as to why this won't work:
       they'll get sweaty. They would need a change of clothes\index{clothing}, etc.
       Make a list of situations where bicycling could be feasibly combined with
       another form of travel. 
-      Include 100\% bicycle commuting.
+      Include 100\% bicycle\index{bicycle} commuting.
       Next, brainstorm reasons people might give for why they wouldn't do each 
       of those. 
       Then, brainstorm solutions to each objection.
       (See the link in the caption of Figure~\ref{fig:commuting_options} for 
-      a description of desirable characteristics of a commuting bicycle.)
+      a description of desirable characteristics of a commuting bicycle\index{bicycle}.)
       
 \item Recreational travel is a strong form of affluence. This association is both
       anecdotal (``what would you do if you won the lottery?'') and in 
@@ -995,7 +996,7 @@ transportation, petroleum\index{petroleum}, and technology.
       Will you try to offset\index{carbon offset} 
       your carbon emissions\index{CO$_2$ emissions!reduction} (if any) and how?
       
-\item Consider the infrastructure choice of a ferry\index{ferry} versus a bridge\index{bridge}. 
+\item Consider the infrastructure\index{infrastructure} choice of a ferry\index{ferry} versus a bridge\index{bridge}. 
       What is the objective function? Is it minimum cost per year to deliver a 
       set amount of service? (Given what set of assumptions? If you build it, 
       they will come!) 
@@ -1022,7 +1023,7 @@ transportation, petroleum\index{petroleum}, and technology.
       the EPA\index{Environmental Protection Agency (EPA)} ratings!
       (But, of course, somewhat dangerous behavior on the road.)
       
-      Future technology, such as vehicle-to-vehicle and vehicle-to-infrastructure
+      Future technology, such as vehicle-to-vehicle and vehicle-to-infrastructure\index{infrastructure}
       communication and greater computer control of driving functions, could both
       boost fuel efficiency and make hypermiling\index{hypermiling} techniques safer to deploy
       more broadly. 
@@ -1046,11 +1047,11 @@ transportation, petroleum\index{petroleum}, and technology.
       high-occupancy vehicle~(HOV) lanes\index{high-occupancy vehicle (HOV) lane} and 
       fines or tolls for single-occupant vehicles. 
       HOV lanes\index{high-occupancy vehicle (HOV) lane}
-      require extension of infrastructure or converting an existing lane 
+      require extension of infrastructure\index{infrastructure} or converting an existing lane 
       to an HOV lane\index{high-occupancy vehicle (HOV) lane}, 
       each with different up-front investment and ongoing maintenance costs. 
       Fines likely involve enhanced law-enforcement presence, and
-      tolls likely involve constructing toll infrastructure and labor costs\index{labor!cost} for staffing, 
+      tolls likely involve constructing toll infrastructure\index{infrastructure} and labor costs\index{labor cost} for staffing, 
       again with different up-front and ongoing costs.
       Which do you prefer?  
       Why? 
@@ -1082,17 +1083,17 @@ transportation, petroleum\index{petroleum}, and technology.
       moving from energy efficiency\index{energy efficiency} to service efficacy\index{energy service efficacy}. 
       In Section~\ref{sec:transportation_fuel_economy},
       the move from fuel economy\index{fuel economy} 
-      (actually, a machine efficacy measured in miles/gallon) to
+      (actually, an automobile efficacy\index{automobile efficacy} measured in miles/gallon) to
       service efficacy\index{energy service efficacy} (measured in passenger-km/gallon)
       revealed insights about the transportation sustainability challenges\index{sustainability challenges!transportation},
       namely that filling empty seats in cars is a simple and effective form 
       of increasing effectiveness.
       Consider a different sustainability challenge\index{sustainability challenges} besides transportation.
-      Develop or find an energy efficiency\index{energy efficiency} or a machine efficacy for your challenge
+      Develop or find an energy efficiency\index{energy efficiency} or a machine efficacy\index{efficacy} for your challenge
       that is analogous to fuel economy\index{fuel economy} in miles/gallon.
       Develop or find a service efficacy\index{energy service efficacy} for your challenge
       that is analogous to passenger-km/gallon.
-      What changes when you move from energy efficiency\index{energy efficiency} or machine efficacy 
+      What changes when you move from energy efficiency\index{energy efficiency} or machine efficacy\index{efficacy} 
       to service efficacy\index{energy service efficacy}?
       How does the move affect the way you think about the sustainability challenge?
       Does the move suggest new solutions to the sustainability challenge?

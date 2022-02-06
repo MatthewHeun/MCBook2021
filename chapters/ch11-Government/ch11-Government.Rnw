@@ -10,17 +10,18 @@
 %#############################################################
 % \epigraph{The truth about a city's aspirations isn't found in its vision. 
 % It's found in its budget.}{Brent Toderian}
-\epigraph{Show me the incentive and I will show you the outcome}{Charlie Munger}
+\epigraph{Show me the incentive and I will show you the outcome}{Charlie Munger\index{Munger, Charlie}}
 
-The final two chapters of this book discuss actions
-that can be taken by \textbf{collectives} (this chapter) and
-\textbf{individuals} (Chapter~\ref{chap:personal_action})
+The final two chapters of this book discuss actions\index{sustainability action}
+that can be taken by \textbf{collectives}\index{collectives} (this chapter) and
+\textbf{individuals}\index{individuals} (Chapter~\ref{chap:personal_action})
 to live more sustainably.
 The purpose of the final two chapters
-is to provide a breadth of possible actions to stimulate creative thinking and
-meaningful action among readers, 
-both as members of collectives and as individuals.
-Necessarily, little depth is provided on any single action.
+is to provide a breadth of possible actions\index{sustainability action}
+to stimulate creative thinking and
+meaningful action\index{sustainability action} among readers, 
+both as members of collectives\index{collectives} and as individuals\index{individuals}.
+Necessarily, little depth is provided on any single action\index{sustainability action}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -28,16 +29,19 @@ Necessarily, little depth is provided on any single action.
 \label{sec:sentences_for_sustainability}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The collective and individual actions for sustainability 
+The collective\index{collective action} and individual actions\index{individual action} 
+for sustainability 
 are constructed as \emph{sentences} for sustainability, 
 each with 
 a subject, 
 a verb, and 
 an object.
-The subjects are sustainability actors. 
-The verbs are sustainability actions.
-The objects are arenas in which the sustainability actions can take place.
+The subjects are sustainability actors\index{sustainability actor}. 
+The verbs are sustainability actions\index{sustainability action}.
+The objects are arenas\index{sustainability arena}
+in which the sustainability actions\index{sustainability action} can take place.
 Sustainability sentences look like this:
+\index{sustainability arena}
 
 \begin{equation}
 \label{eq:Sent4Sust}
@@ -55,12 +59,13 @@ Sustainability sentences look like this:
 %++++++++++++++++++++++++++++++
 
 In sustainability sentences, 
-the actors are individuals or collectives who perform the action.
-The topic of this chapter is collective actions toward sustainability.
-Collective actions are appropriate for problems that are ``too big'' 
+the actors\index{sustainability actor} are individuals\index{individuals} or collectives\index{collectives} who perform 
+the action\index{sustainability action}.
+The topic of this chapter is collective actions\index{collective action} toward sustainability.
+Collective actions\index{collective action} are appropriate for problems that are ``too big'' 
 to be solved by a single person.
-Collective actions often require the cooperation of several groups to be successful.
-In this chapter, we consider collective sustainability actions taken by
+Collective actions\index{collective action} often require the cooperation of several groups to be successful.
+In this chapter, we consider collective sustainability actions\index{sustainability action} taken by
 \textbf{governments}, \textbf{corporations}, and \textbf{organizations}.
 The next chapter considers sustainability actions taken by individuals.
 
@@ -70,16 +75,16 @@ The next chapter considers sustainability actions taken by individuals.
 \label{sec:collective_govt}
 %..............................
 
-The first type of collective group 
+The first type of collective\index{collectives} group 
 {has the power to make laws, rules, and policies.
-We call this type governments.
+We call this type \textbf{governments}\index{government!as sustainability actor}.
 Governments exist at local, regional, national, and international levels.
-Governmental organizations can have very narrow and specific responsibilities 
-(like a local zoning board)
+Governmental organizations\index{governmental organizations} can have very narrow and specific responsibilities 
+(like a local zoning board\index{zoning board})
 or broad and general responsibilities 
 (like state or national legislatures).
-Governments can cooperate with each other in many ways, 
-such as international treaties, the International Monetary Fund, and 
+Governments\index{government} can cooperate with each other in many ways, 
+such as international treaties, the International Monetary Fund (IMF)\index{International Monetary Fund (IMF)}, and 
 cost-sharing agreements between state and federal agencies for road construction.
 
 
@@ -88,21 +93,23 @@ cost-sharing agreements between state and federal agencies for road construction
 \label{sec:collective_corp}
 %..............................
 
-The second type of collective group is business corporations. 
-Examples include Volkswagen, Siemens Gamesa Renewable Energy,
+The second type of collective\index{collectives} group is business \textbf{corporations}\index{corporations}. 
+Examples include Volkswagen\index{Volkswagen}, Siemens Gamesa\index{Siemens Gamesa} Renewable Energy,
 the Saudi Arabian Oil Company\index{Saudi Arabian Oil Company}, Maersk\index{Maersk}, and Best Buy\index{Best Buy}.
 Characteristically, corporations are engaged in commercial activity, 
 that is, {making and selling products and services.
-A business can be ``for profit,'' like Apple, Amazon\index{Amazon (the company)}, or Johnson and Johnson, or
-``not for profit,'' like the Educational Testing Service, the Mayo Clinic, World 
-Vision International, and most colleges and universities.
+A business can be ``for profit,'' like Apple\index{Apple (the company)}, Amazon\index{Amazon (the company)}, or
+Johnson and Johnson\index{Johnson and Johnson}, or
+``not for profit,'' like the Educational Testing Service\index{Educational Testing Service}, 
+the Mayo Clinic\index{the Mayo Clinic}, 
+World Vision International\index{World Vision International}, and most colleges and universities.
 Often, charitable foundations are structured as business corporations. 
-For example, the Bill and Melinda Gates Foundation is a charitable foundation
-with a corporate structure.
+For example, the Bill and Melinda Gates Foundation\index{Bill and Melinda Gates Foundation}
+is a charitable foundation with a corporate structure.
 
 Some U.S.\ states allow alternative corporate charters that blend the for-profit
 and not-for-profit corporate structures.
-A benefit corporation is an example of this blended structure.
+A benefit corporation\index{benefit corporation} is an example of this blended structure.
 It is a for-profit company that also attempts to benefit society, its workers,
 its community, and/or the environment in addition to making a profit. 
 Because this benefit is part of the corporate charter, it is the fiduciary 
@@ -115,37 +122,39 @@ beyond merely maximizing shareholder value.
 \label{sec:collective_org}
 %..............................
 
-The third type of collective group is called, generically, organizations.
+The third type of collective\index{collectives} group is called, generically, 
+\textbf{organizations}\index{organizations}.
 Example organizations include the 
 American Society of Heating, Refrigerating, and Air-conditioning Engineers 
 (ASHRAE)\index{American Society of Heating, Refrigerating, and Air-conditioning Engineers (ASHRAE)},
-the 3$^{\text{rd}}$ Generation Partnership Project (3GPP),
-local churches, the Internet Society, political
+the 3$^{\text{rd}}$ Generation Partnership Project (3GPP)\index{3$^{\text{rd}}$ Generation Partnership Project (3GPP)},
+local churches, the Internet Society\index{Internet Society}, political
 parties, environmental organizations, and community and civic groups.
 A distinguishing characteristic of organizations is voluntary association,
 meaning that individuals choose to be a member of the organization.
 
-Collectives sometimes straddle the boundaries between categories.
-For instance, the Federal National Mortgage Association (``Fannie Mae'') is a
+Collectives\index{collectives} sometimes straddle the boundaries between categories.
+For instance, the Federal National Mortgage Association 
+(``Fannie Mae'')\index{Federal National Mortgage Association (Fannie Mae)} is a
 U.S.-government-sponsored business corporation.
 Many nonprofits mix a business corporate structure with a voluntary organization(s).
-For example, the Roman Catholic Church is an association of corporate entities
-(such as Catholic Relief Services) and
+For example, the Roman Catholic Church\index{Roman Catholic Church} is an association of corporate entities
+(such as Catholic Relief Services\index{Catholic Relief Services}) and
 organizations (including local parishes).
-Another example is the National Audubon Society,
+Another example is the National Audubon Society\index{National Audubon Society},
 which is a company affiliated with
 nearly five hundred local, independent chapters.
-Lastly, the Internet Society (mentioned above)
+Lastly, the Internet Society\index{Internet Society} (mentioned above)
 is an organization that sets policy for high-level internet activities; 
 it is quasi-governmental in nature.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Despite some ``fuzziness'' in the different types of collectives,
+Despite some ``fuzziness'' in the different types of collectives\index{collectives},
 the categories are useful as a framework to help us think about the capabilities
-of collectives. 
-Not all collectives are equally suited for or adept at a given task.
+of collectives\index{collectives} to promote sustainability. 
+Not all collectives\index{collectives} are equally suited for or adept at a given task.
 \end{mcframe}
 
 
@@ -154,8 +163,8 @@ Not all collectives are equally suited for or adept at a given task.
 \label{sec:individuals_def}
 %..............................
 
-Individuals are persons who are committed to sustainability and
-take actions that match their commitments;
+Individuals\index{individuals} are persons who are committed to sustainability and
+take actions\index{sustainability action} that match their commitments;
 see Chapter~\ref{chap:personal_action}.
 
 
@@ -164,12 +173,12 @@ see Chapter~\ref{chap:personal_action}.
 \label{sec:actions_def}
 %++++++++++++++++++++++++++++++
 
-In both this chapter (collective actions) and the next (individual actions), 
-we consider four types of sustainability actions:
+In both this chapter (collective actions\index{collective action}) and the next (individual actions\index{individual action}), 
+we consider four types of sustainability actions\index{sustainability action}:
 choices, laws, research, and education.
 The four types of actions are not exhaustive of all possible actions, 
 but they provide a framework
-to guide our thinking about possible sustainability actions. 
+to guide our thinking about possible sustainability actions\index{sustainability action}. 
 
 
 %..............................
@@ -184,7 +193,8 @@ The decisions might be large (where to live, family planning)
 or small (paper vs.\ plastic bags).
 It might be a single, simple choice or a lifestyle-related choice (driving vs.\ walking).
 
-Characteristic of the ``choice'' action is that it has a direct impact on sustainability, and
+Characteristic of the ``choice'' action\index{sustainability action}
+is that it has a direct impact on sustainability, and
 it involves choosing a sustainable option from a menu of existing activities or products.
 Nothing new needs to be invented.
 
@@ -197,7 +207,7 @@ Nothing new needs to be invented.
 Laws and regulations \href{https://en.wiktionary.org/wiki/affect}{affect}
 (and sometimes define and sometimes \href{https://en.wiktionary.org/wiki/effect#Verb}{effect})
 relationships among individuals, 
-collectives (such as unions and religious organizations), 
+collectives\index{collectives} (such as unions and religious organizations), 
 corporations, 
 markets, and
 the natural world (for example, plants, animals, inanimate things, and energy resources).
@@ -207,7 +217,7 @@ In other cases, laws and regulations define what must be done.
 For example, renewable energy portfolio standards\index{renewable energy portfolio standard}
 mandate that a certain percentage 
 of electricity must come from renewables\index{renewable electricity}.
-In still other cases, governments pass laws and regulations 
+In still other cases, governments\index{government} pass laws and regulations 
 to define how things must be done.
 For example, regulations can establish markets for carbon trading.
 Laws and regulations are not neutral; 
@@ -215,21 +225,22 @@ they affect relationships on many levels.
 As such, laws and regulations can be seen as interventions in societal systems.
 Changes in those relationships have sustainability implications.
 
-Changing laws and regulations (the ``rules of the game'')
+Changing laws and regulations (the \textbf{rules of the game})\index{rules of the game}
 can provide widespread incentives
 to encourage self-interested individuals to become more sustainable.
-To extend the ``menu'' metaphor, if choice actions involve selecting a product or 
+To extend the ``menu'' metaphor, if choice actions\index{sustainability action} involve selecting a product or 
 service from an existing menu, rules and regulations change the prices
 of the menu items. 
-In turn, the prices change the behavior and choices of both collectives and individuals.
+In turn, the prices change the behavior and choices 
+of both collectives\index{collectives} and individuals\index{individuals}.
 
 Often the purpose of these rules and regulations is to internalize externalities\index{negative externality}.
-The rules of the game are exceedingly important for the environment, 
+The rules of the game\index{rules of the game} are exceedingly important for the environment, 
 because unintended environmental consequences often emerge from
 financial incentives that accompany laws and regulations.
 A classic example of unintended consequences is the 
-tragedy of the commons\index{tragedy of the commons}\index{commons!tragedy of the}.
-The tragedy of the commons describes situations when
+tragedy of the commons\index{tragedy of the commons}.
+The tragedy of the commons\index{tragedy of the commons} describes situations when
 a resource is owned by no one---or by everyone. 
 Because no one individually owns the benefits of conserving the resource, 
 self-interested behavior results in little concern for sustainability.
@@ -256,7 +267,7 @@ create a commons that can be (over) exploited for short-term financial gain.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Elinor Ostrum\index{Ostrum, Elinor} won the 2009 Nobel prize in economics 
+Elinor Ostrum\index{Ostrum, Elinor} won the 2009 Nobel Prize\index{Nobel Prize} in economics 
 for showing that tragedies of the commons 
 can be avoided without top-down regulation or privatization of the resource
 by prudent collaboration within strong societal structures. 
@@ -268,7 +279,7 @@ by prudent collaboration within strong societal structures.
 \label{sec:actions_research}
 %..............................
 
-The ``research'' action means both the creation of new knowledge about sustainability and
+The ``research'' action\index{sustainability action} means both the creation of new knowledge about sustainability and
 the invention or development of new technology for sustainability.
 For instance, forest and wildlife managers may wish to know how climate change\index{climate change} is
 altering the range of the mountain pine beetle, which affects whitebark pine and 
@@ -290,20 +301,20 @@ and the gathering of demographic and macroeconomic data.
 % Not all R\&D activities meet the definition of the research action; 
 % for the purposes of this book, research has to be sustainability related. 
 
-Laws and regulations intersect with research when governments support research 
+Laws and regulations intersect with research when governments\index{government} support research 
 in a number of ways.
 Through patents,
 those who develop sustainable tools can recoup their investment
 by means of limited-time monopoly rights 
 to sell that invention to others looking to become more sustainable. 
-Governments also fund research. 
+Governments\index{government} also fund research. 
 Some of this funding is direct,
-as when governments employ scientists to develop models of the atmosphere\index{atmosphere}. 
-Government grants support research by private entities, such as
+as when governments\index{government} employ scientists to develop models of the atmosphere\index{atmosphere}. 
+Government grants\index{government grants} support research by private entities, such as
 sustainability-related research funded by the 
 National Science Foundation\index{National Science Foundation (NSF)}. 
-Occasionally, governments post a major prize for solving a hard problem. 
-We could imagine the government establishing 
+Occasionally, governments\index{government} post a major prize for solving a hard problem. 
+We could imagine the government\index{government!as sustainability actor} establishing 
 a prize for developing cost-effective carbon sequestration\index{carbon sequestration} technology.
 
 
@@ -317,19 +328,19 @@ Disseminating information about sustainability is a crucial step in achieving a
 sustainable society.
 Education includes advertising, public service announcements, reading books for a term paper,
 creating a website, and making or watching a documentary film.
-Characteristics of the education action include the acquisition or dissemination
+Characteristics of the education action\index{sustainability action} include the acquisition or dissemination
 of existing knowledge about sustainability.
-Simply going to school or getting a degree does not count as the education action
+Simply going to school or getting a degree does not count as the education action\index{sustainability action}
 in the context of this book, 
 unless that education is sustainability-related.
 In our menu metaphor, education is like advertising. 
 You want consumers to know about what's on the menu. 
 You might point out special deals or combos.
 
-A typical sequence of actions might look something like this: 
+A typical sequence of actions\index{sustainability action} might look something like this: 
 a scientist discovers new aspects of climate change\index{climate change} (research), 
 the news media reports the problem (education),
-the government creates incentives to change behavior (law), 
+the government\index{government} creates incentives to change behavior (law), 
 companies respond by developing alternative products and services (research again), and 
 consumers respond by buying the new, more sustainable option (choice).
 
@@ -340,7 +351,7 @@ consumers respond by buying the new, more sustainable option (choice).
 %++++++++++++++++++++++++++++++
 
 In this chapter and the next, 
-we consider sustainability actions undertaken in arenas
+we consider sustainability actions\index{sustainability action} undertaken in arenas\index{sustainability arena}
 corresponding to eight previous chapters:
 population, 
 affluence, 
@@ -358,7 +369,7 @@ land use.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 In this section, sustainability sentences are 
-presented in the order of sustainability arenas
+presented in the order of sustainability arenas\index{sustainability arena}
 corresponding to Chapters~\ref{chap:population}--\ref{chap:land_use_urban_planning}.
 
 
@@ -370,7 +381,7 @@ corresponding to Chapters~\ref{chap:population}--\ref{chap:land_use_urban_planni
 As shown in Equation~\ref{eq:IPARX}
 and in Figure~\ref{fig:PopulationGraph}, 
 rising population~\Pparen{} is a driver for environmental impacts~\Iparen{}. 
-Slowing or reversing population growth would reduce environmental impacts,
+Reversing population growth\index{population growth} would reduce environmental impacts,
 all other things being equal.
 
 
@@ -378,31 +389,31 @@ all other things being equal.
 \paragraph{Government+Choice+Population}
 %..............................
 
-State and local governments are the entities in the U.S.\
+State and local governments\index{government!state}\index{government!local} are the entities in the U.S.\
 and around the world that provide much or most of the education offered to citizens.
 Providing general education to citizens, especially girls and women, 
-is a seemingly effective way to reduce birthrates, slow population growth, and
+is a seemingly effective way to reduce birthrates, slow population growth\index{population growth}, and
 reduce family size.
-(Education is a ``choice'' for government because it is on the menu of things that 
+(Education is a ``choice'' for government\index{government} because it is on the menu of things that 
 they already do.
-Governments can choose to expand access to education or enhance educational
+Governments\index{government} can choose to expand access to education or enhance educational
 opportunities, for instance, by building new schools, providing more scholarships,
 or expanding to a year-round academic calendar.)
-Another choice governments can make is to supply birth control technology
-(oral contraceptives, symptom-thermal training, and condoms, for example)
-to citizens to reduce population growth rates.
+Another choice governments\index{government} can make is to supply birth control\index{birth control} technology
+(oral contraceptives, symptom-thermal training, and condoms\index{condom}, for example)
+to citizens to reduce population growth rates\index{population growth rate}.
 
 
 %..............................
 \paragraph{Government+Education+Population}
 %..............................
 
-In addition, education for family planning can be done by governments.
-Governments can disseminate information around family planning and birth control
-to citizens, especially girls and women, to reduce population growth. 
+In addition, education for family planning can be done by governments\index{government}.
+Governments\index{government} can disseminate information around family planning and birth control\index{birth control}
+to citizens, especially girls and women, to reduce population growth\index{population growth}. 
 (In contrast to the general education mentioned in the previous paragraph,
-here specific training on birth control is counted as the education action 
-because it has a direct sustainability effect on the target of the action, in this
+here specific training on birth control\index{birth control} is counted as the education action\index{sustainability action} 
+because it has a direct sustainability effect on the target of the action\index{sustainability action}, in this
 case, on population.)
 
 
@@ -410,17 +421,17 @@ case, on population.)
 \paragraph{Government+Law+Population}
 %..............................
 
-Government policies can have an effect on population.
+Government policies\index{government policy} can have an effect on population.
 For example, legislatures can pass laws
 on number of children, incentives for having children, 
-tax breaks for raising children, or direct payments to children
+tax breaks\index{tax break} for raising children, or direct payments to children
 to affect the number of children per person
 (often with unintended consequences). 
 Lawmakers can also 
 write family-friendly policies and 
 establish programs such as 
-generous maternity leave, early childhood education and daycare, 
-health insurance, and subsidized college tuition
+generous maternity leave, early childhood education and daycare\index{daycare}, 
+health insurance\index{health insurance}, and subsidized college tuition\index{college tuition}
 to affect birth rates. 
 
 
@@ -432,7 +443,7 @@ to affect birth rates.
 Equation~\ref{eq:IPARX} and Figure~\ref{fig:AffluenceGraph-Nordhaus}
 shows that rising affluence~\Aparen{}
 drives larger environmental impacts~\Iparen{}. 
-Ironically, the purpose of many government actions 
+Ironically, the purpose of many government actions\index{government action} 
 is to produce ever-rising levels of affluence, 
 because citizens who are becoming more affluent 
 are likely to retain their current political leaders and their current political system.
@@ -447,10 +458,10 @@ of human well-being among citizens; see Section~\ref{sec:circular_economy}.
 \paragraph{Government+Law+Affluence}
 %..............................
 
-National governments, 
+National governments\index{government}, 
 international organizations, and
-nongovernmental organizations
-can tax environmental externalities\index{negative externality}
+nongovernmental organizations\index{nongovernmental organizations (NGOs)}
+can tax\index{tax} environmental externalities\index{negative externality}
 proportionally,
 ensuring that those who cause the most environmental damage pay the most for remediation.
 For the prime example of this book (energy and climate change\index{climate change}),
@@ -463,7 +474,7 @@ encourage carbon-free energy.
 \paragraph{Government+Education+Affluence}
 %..............................
 
-A mandatory carbon labeling scheme
+A mandatory carbon labeling\index{carbon labeling} scheme
 (like nutrition labels)
 could be implemented
 to provide point-of-purchase information to consumers
@@ -507,13 +518,14 @@ The net result is reduced total energy savings across the economy and, in the ca
 increased total energy consumption.
 
 To reduce rebound\index{rebound effect} or backfire\index{backfire}, 
-schools and businesses can implement green revolving funds\index{green revolving fund},
+schools and businesses can implement green revolving funds\index{green revolving fund (GRF)},
 wherein cost savings from energy efficiency\index{energy efficiency} are used exclusively 
 for additional energy efficiency\index{energy efficiency}.
 By cutting off rebound\index{rebound effect}, 
-green revolving funds can render energy efficiency\index{energy efficiency} more effective
+green revolving funds\index{green revolving fund (GRF)}
+can render energy efficiency\index{energy efficiency} more effective
 rather than ineffective.
-At a larger scale, governments can develop green revolving funds
+At a larger scale, governments\index{government} can develop green revolving funds\index{green revolving fund (GRF)}
 to provide resources for businesses and individuals to perform energy efficiency\index{energy efficiency} upgrades
 and to which proceeds of those upgrades are paid.  
 
@@ -531,7 +543,7 @@ thereby further helping toward environmental sustainability\index{environmental 
 To reduce the extraction rate of natural resources, 
 manufacturer takeback of all goods and 
 widespread recycling\index{recycling} can be mandated. 
-Recycling\index{recycling} metals, especially rare-earth metals is essential
+Recycling\index{recycling} metals, especially rare-earth metals\index{rare-earth metals} is essential
 to achieve weak sustainability\index{weak sustainability} (at least).
 
 A structural approach to reducing the resource intensity of economic activity~\Rparen{}
@@ -564,30 +576,30 @@ at both extraction\index{resource extraction} and disposal lifecycle stages.
 At the extraction stage,
 stricter regulations on tailings, emissions, and aqueous contamination
 can be effective for reducing environmental degradation
-in the mining, fishing, and forestry sectors.
+in the mining, fishing\index{fishing}, and forestry sectors.
 At the disposal stage,
 aggressive takeback policies can compel manufacturers 
 to take responsibility (either financially or in practice)
 for safe disposal of their products at end of life.
-For example, one major source of ocean plastic pollution\index{pollution!plastic}
-is discarded fishing nets. 
+For example, one major source of ocean plastic\index{ocean plastic} pollution
+is discarded fishing\index{fishing} nets. 
 (See \ref{project:ocean_plastic}.)
 An international treaty that banned discarding nets and added penalties for 
-doing so could help to address the issue of ocean plastics\index{pollution!plastic}.
+doing so could help to address the issue of ocean plastics\index{ocean plastic}.
 
 In lieu of mandating that manufacturers take back products, 
 standards for ease of disassembly could be implemented.
 In terms of the prime example (energy and CO$_2$ emissions\index{CO$_2$ emissions}),
-governments can establish greenhouse gas\index{greenhouse gas} trading markets
+governments\index{government} can establish greenhouse gas\index{greenhouse gas} trading markets\index{carbon market}
 to reduce emissions and encourage renewable energy\index{renewable energy} adoption
 with small economic impact.
 
 To reduce CO$_2$ emissions\index{CO$_2$ emissions!reduction}, 
-governments can implement mandates for renewable energy generation~\cite{USEIA:2021tt}. 
+governments\index{government} can implement mandates for renewable energy generation~\cite{USEIA:2021tt}. 
 Renewable mandates are 
 usually expressed as a percentage of total energy generated and 
 mostly applied to electricity\index{electricity}, not liquid fuels.
-Renewable mandates are often called Renewable Portfolio Standards\index{renewable portfolio standards}, 
+Renewable mandates are often called Renewable Portfolio Standards\index{renewable energy portfolio standards}, 
 mandating that electricity\index{electricity} producers have a certain fraction of 
 electricity sales from renewable sources\index{renewable electricityg}.
 
@@ -635,10 +647,12 @@ Manufacturers become incentivized to
      \end{subfigure}
         \caption[Consumer-oriented labels for home appliances]
                 {Consumer-oriented labels for home appliances. 
-                In the U.S., the Federal Trade Commission (FTC) requires an Energy Guide label on
+                In the U.S., the Federal Trade Commission (FTC)\index{Federal Trade Commission (FTC)}
+                requires an Energy Guide\index{Energy Guide} label on
                 some categories of consumer products.
                 Manufactures are required to test their products in accordance with 
-                U.S. Department of Energy standards and report their results to the FTC.
+                U.S.\ Department of Energy~(DoE)\index{Department of Energy (DoE)} standards and report their results
+                to the FTC\index{Federal Trade Commission (FTC)}.
                 (a)~An Energy Guide label showing the AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
                 on a domestic furnace. 
                 This furnace has the lowest legally allowed AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
@@ -654,12 +668,12 @@ Manufacturers become incentivized to
                 runs the Energy Star\index{Energy Star} program.
                 In contrast to the Energy Guide labels, which are self-reported, since 2011, 
                 Energy Star\index{Energy Star} testing is performed by qualified, third-party laboratories.
-                (c)~An EnerGuide label for the same chest freezer as in (b), in fact, it 
+                (c)~An EnerGuide\index{EnerGuide} label for the same chest freezer as in (b), in fact, it 
                 is the reverse of the same piece of paper.
-                The EnerGuide label is mandatory for appliances sold in Canada, which also
-                uses the U.S. EPA's\index{Environmental Protection Agency (EPA)}
+                The EnerGuide\index{EnerGuide} label is mandatory for appliances sold in Canada\index{Canada}, which also
+                uses the U.S.\ EPA's\index{Environmental Protection Agency (EPA)}
                 Energy Star\index{Energy Star} certification (yay, international cooperation!).
-                The EnerGuide label shows a range of estimated yearly energy consumption.
+                The EnerGuide\index{EnerGuide} label shows a range of estimated yearly energy consumption.
                 \emph{Sources}: 
                 (a)~\copyright{}2021 Matthew Kuperus Heun; 
                 (b)~\copyright{}2021 Jeremy Van Antwerp; 
@@ -667,9 +681,9 @@ Manufacturers become incentivized to
   \label{fig:energy_star_total}
 \end{figure}
 
-There are many potential collective actions to move
+There are many potential collective actions\index{collective action} to move
 in a more sustainable direction regarding households.
-Building codes can be leveraged to mandate better insulation\index{insulation},
+Building codes\index{building code} can be leveraged to mandate better insulation\index{insulation},
 more efficient systems (water heaters, appliances, furnaces), and
 improved windows.
 
@@ -681,7 +695,8 @@ improved windows.
 Municipalities can require installation of solar systems\index{solar panel} 
 on all new construction for homes and businesses or
 participation in solar collectives if installation is unfeasible.
-PACE (property-assessed clean energy) financing can be utilized
+PACE (property-assessed clean energy) financing\index{property-assessed clean energy (PACE) financing}
+can be utilized
 to encourage investment in renewable energy\index{renewable energy} or energy efficiency\index{energy efficiency} 
 in homes, offices, and industrial settings.
 
@@ -709,16 +724,18 @@ The future owners would like to have the best insulation\index{insulation} and t
 boiler.
 The developer wants as little investment as possible to be able to resell the property quickly.
 
-PACE financing allows energy-efficiency improvements to be paid for
+PACE financing\index{property-assessed clean energy (PACE) financing}
+allows energy-efficiency improvements to be paid for
 by the energy savings themselves. 
 The loan for the deep energy retrofit becomes a lien on the
-property itself, to be repaid in the form of additional property taxes.
-For future owners, higher property taxes or higher energy bills are equivalent,
-they are content to pay higher taxes as they enjoy a less drafty,
+property itself, to be repaid in the form of additional property taxes\index{property tax}.
+For future owners, higher property taxes\index{property tax} or higher energy bills are equivalent,
+they are content to pay higher taxes\index{tax} as they enjoy a less drafty,
 more energy-efficient building.
 
-Be warned: lots of shady things have happened with PACE financing in residential
-settings. 
+Be warned: lots of shady things have happened with 
+PACE financing\index{property-assessed clean energy (PACE) financing}
+in residential settings. 
 Know and understand the terms. 
 Do your title searches carefully. 
 Know what you're signing up for. 
@@ -732,7 +749,7 @@ you still could lose your house.
 \paragraph{Organizations+Education+Housing}
 %..............................
 
-Collective actions can be encouraged by certifications bestowed by
+Collective actions\index{collective action} can be encouraged by certifications bestowed by
 organizations and rating agencies.
 LEED (Leadership in Energy and Environmental Design)\index{Leadership in Energy and Environmental Design (LEED)}
 certification encourages sustainable design for buildings. 
@@ -745,11 +762,11 @@ and to operate more sustainably.
 The Living Building Challenge\index{Living Building Challenge} 
 motivates builders and designers to use buildings 
 to make positive contributions to the environment, focusing on several key areas:
-materials, place, water, energy, health and happiness, equity, and beauty.
+materials, place, water, energy, health and happiness\index{happiness}, equity, and beauty.
 The Energy Star\index{Energy Star} program 
 encourages manufacturers to design and manufacture
 higher-efficiency appliances for homes and offices.
-(The above examples are characterized as the education action because they 
+(The above examples are characterized as the education action\index{sustainability action} because they 
 communicate sustainability information to consumers.)
 
 Figure~\ref{fig:energy_star_total} shows three different energy labels for two home 
@@ -760,7 +777,7 @@ in~(b) it is cost, and
 in~(c) it is the amount of energy used.
 In~(a) to the left is bad (inefficient).
 In~(b) and~(c) to the left is good (efficient).
-(b) and~(c) are applied to the same freezer but, most likely, because Canada and the U.S.\
+(b) and~(c) are applied to the same freezer but, most likely, because Canada\index{Canada} and the U.S.\
 define different categories,
 the freezer in~(b) is best-in-class, but in (c)~it is middle-of-the-road.
 The labels should be clear and easy to understand so that 
@@ -798,7 +815,7 @@ There is, clearly, room for improvement.
                  in high-occupancy vehicles, 
                  a service efficacy\index{energy service efficacy} gain, even if the buses 
                  emit CO$_2$. 
-                 Note that transportation efficacy
+                 Note that transportation efficacy\index{transportation service efficacy}
                  (in passenger-km/gallon) 
                  increases with more passengers
                  for all vehicles.
@@ -814,7 +831,7 @@ To make transportation more sustainable,
 the transportation system must move
 more passengers in fewer, high-occupancy vehicles that emit less CO$_2$;
 see Figure~\ref{fig:collective_transport_photos}.
-There are many potential collective actions that would move 
+There are many potential collective actions\index{collective action} that would move 
 transportation in that direction.
 
 
@@ -823,7 +840,7 @@ transportation in that direction.
 %..............................
 
 Programs to fund and incentivize public transportation seek to reduce CO$_2$ emissions\index{CO$_2$ emissions!reduction}
-without wholesale changes to transportation infrastructure.
+without wholesale changes to transportation infrastructure\index{infrastructure}.
 Both carrots (make public transportation less expensive) and
 sticks (levy fees on personal transport) can be used.
 An example of the carrot approach is universities that offer 
@@ -833,11 +850,11 @@ London's\index{London} congestion pricing\index{congestion pricing}
 scheme~(see~\ref{question:London_congestion}) had immediate beneficial impacts on 
 congestion~\cite{Santos:2004vn} and the environment~\cite{Tonne:2008uy}. 
 Another not-so-radical approach to achieving sustainable transportation
-is implementation of vehicle efficacy standards 
+is implementation of vehicle efficacy\index{automobile efficacy} standards 
 such as the corporate average fuel economy (CAFE)\index{corporate average fuel economy (CAFE)}} 
 standard in the U.S.
-In short, governments can develop policies and allocate infrastructure spending
-to encourage bikes rather than cars or trucks, 
+In short, governments\index{government} can develop policies and allocate infrastructure\index{infrastructure} spending
+to encourage bikes\index{bicycle} rather than cars or trucks, 
 high-efficiency autos instead of gas-guzzling vehicles,
 public transportation instead of automobiles\index{automobile}, and 
 pedestrian-friendly crossings rather than superhighway bridges\index{bridge}.
@@ -852,10 +869,10 @@ rebates for purchasing electric vehicles\index{electric vehicle (EV)},
 funding for electric grid expansion and inclusion of storage, and
 renewable mandates for electricity\index{electricity} producers.
 
-At an even larger level, governments can incentivize or regulate that
+At an even larger level, governments\index{government} can incentivize or regulate that
 cities be redesigned to reduce the need for lengthy commutes in the first place.
 An example of thoroughly rethinking and reimplementing 
-the transportation infrastructure of a city 
+the transportation infrastructure\index{infrastructure} of a city 
 is provided by Curitiba, Brazil\index{Curitiba, Brazil}.
 The Curitiba\index{Curitiba, Brazil} bus rapid transit\index{bus rapid transit}
 system is a award-winning~\cite{Hamilton:2010ti}
@@ -877,7 +894,7 @@ for sustainable outcomes.
 \label{fig:E85}
 \end{figure}
 
-This section discusses collective actions that can be taken 
+This section discusses collective actions\index{collective action} that can be taken 
 to improve the sustainability of food and agriculture.
 
 
@@ -943,7 +960,7 @@ with low EROI\index{energy return on investment (EROI)}.
         \caption[Comparison of land use densities]
                 {Comparison of land use densities. 
                  The urban shopping district is likely 
-                 to generate more revenue and more tax receipts per acre
+                 to generate more revenue and more tax\index{tax} receipts per acre
                  than the suburban store and its huge parking lot.
                  \emph{Sources}: 
                  (a)~\copyright{}2022 Matthew Kuperus Heun; 
@@ -958,7 +975,8 @@ with low EROI\index{energy return on investment (EROI)}.
 \label{sec:government_organizations+choice+land_use}
 %..............................
 
-Governments setting aside land as parks and nature preserves helps to maintain
+Governments\index{government!as sustainability actor}
+setting aside land as parks and nature preserves helps to maintain
 ecosystem services\index{ecosystem services}.
 Private organizations, like the Audubon Society\index{Audobon Society}, 
 Trout Unlimited\index{Trout Unlimited}, and
@@ -973,7 +991,7 @@ also contribute to conservation.
 
 Zoning laws and environmental impact assessments before construction can help 
 preserve valuable biomes.
-For instance, Figure~\ref{fig:CarbonStorage} shows that wetlands are very efficient
+For instance, Figure~\ref{fig:CarbonStorage} shows that wetlands\index{wetland} are very efficient
 at storing carbon, but we have relatively little of them left.
 
 
@@ -982,11 +1000,11 @@ at storing carbon, but we have relatively little of them left.
 \label{sec:government_organizations+research+land_use}
 %..............................
 
-Government and private organizations should conduct more research to guide
-landowners and policy makers through the sparing/sharing dichotomy with respect
+Government\index{government} and private organizations should conduct more research to guide
+landowners and policy makers through the sparing\index{land sparing}/sharing\index{land sharing} dichotomy with respect
 to many different types of wildlife.
 Landowners can be paid to use land in a way that stores carbon, such as afforestation\index{afforestation}, 
-perhaps through a carbon-trading market or direct subsidies.
+perhaps through a carbon-trading market\index{carbon market} or direct subsidies.
 
 
 %..............................
@@ -999,20 +1017,21 @@ For an efficient city, high population density\index{population density} is desi
 The first impediment to high population density\index{population density} 
 in most North American\index{North America} cities
 is extensive single-family zoning. 
-Accessory Dwelling Units (ADUs)\index{Accessory Dwelling Units (ADUs)} 
+Accessory dwelling units (ADUs)\index{accessory dwelling unit (ADU)} 
 are typically a first step toward relaxed zoning standards.
-How the rent from such structures is taxed and what construction standards are 
-enforced does a lot to influence ADU feasibility. 
+How the rent from such structures is taxed\index{tax} and what construction standards are 
+enforced does a lot to influence ADU\index{accessory dwelling unit (ADU)} feasibility. 
 
-Creating a walkable, bike-friendly city like Amsterdam is a decades-long project.
-Governments and nonprofits must sustain priorities for transportation change for a long time, 
+Creating a walkable, bike\index{bicycle}-friendly city like Amsterdam\index{Amsterdam} is a decades-long project.
+Governments\index{government} and nonprofits must sustain priorities for transportation change for a long time, 
 much longer than typical election cycles.
-More regional planning is needed to integrate infrastructure plans among local 
+More regional planning is needed to integrate infrastructure\index{infrastructure} plans among local 
 municipalities.
 
-Lastly, housing developments have to pay enough taxes to maintain their own infrastructure.
+Lastly, housing developments have to pay enough taxes\index{property tax} 
+to maintain their own infrastructure\index{infrastructure}.
 Figure~\ref{fig:urban_suburban_densities} shows two example urban retail spaces.
-The one on the left likely pays more taxes per acre than the one on the right.
+The one on the left likely pays more taxes\index{tax} per acre than the one on the right.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1026,8 +1045,8 @@ It begins to answer the question,
 ``how could we reconfigure the systems and structures in our societies
 to encourage and promote a more sustainable world?''
 
-The examples of collective sustainability actions above 
-are not exhaustive of all possible collective sustainability actions. 
+The examples of collective sustainability actions\index{collective action} above 
+are not exhaustive of all possible collective sustainability actions\index{collective action}. 
 (How could they be otherwise?)
 The goal of this chapter is not to be exhaustive.
 Rather, the goal is to be generative, 
@@ -1037,10 +1056,10 @@ always keeping in mind the global perspective provided
 by Chapters~\ref{chap:introduction}--\ref{chap:impact_intensity}.
 Questions and problems at the end of the chapter assist the exploration process.
 
-Astute readers will have noticed that governments are often 
-the route by which collective actions are taken,
+Astute readers will have noticed that governments\index{government} are often 
+the route by which collective actions\index{collective action} are taken,
 regulations are established, and laws are passed.
-However, when politics and government enter the picture, 
+However, when politics and government\index{government} enter the picture, 
 winners and losers always emerge.
 One or more groups benefit from political decisions
 and one or more groups are disadvantaged by political decisions.
@@ -1049,14 +1068,14 @@ self-interests and societal divisions impact political decisions,
 often making it difficult to respond effectively 
 to intensifying sustainability challenges\index{sustainability challenges}. 
 For example, the complete lack of any effective response to climate change\index{climate change}
-by governments the world over 
+by governments\index{government} the world over 
 shows the difficulties of mounting political responses to
 sustainability challenges\index{sustainability challenges}.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Where governments are involved,
+Where governments\index{government} are involved,
 political problems must be solved before sustainability challenges\index{sustainability challenges}
 can be addressed.
 \end{mcframe}
@@ -1069,22 +1088,22 @@ disadvantages the entrenched fossil-fuel industry.
 When that happens, entrenched interests can resist changes, 
 hampering sustainability efforts.
 
-That's not to say we shouldn't try to make collective change. 
-Indeed, collective change is the only way to ensure that all people
+That's not to say we shouldn't try to make collective\index{collective action} change. 
+Indeed, collective\index{collective action} change is the only way to ensure that all people
 (even those unaware of our sustainability challenges\index{sustainability challenges})
 will live more sustainable lives.
-But the barriers to collective action are high.
+But the barriers to collective action\index{collective action} are high.
 
-That said, governments consist of people.
-In democracies, the people in government are chosen by the populace.
-Thus, collective actions and personal action intertwine at elections
+That said, governments\index{government} consist of people.
+In democracies, the people in government\index{government} are chosen by the populace.
+Thus, collective actions\index{collective action} and personal action intertwine at elections
 when representatives are selected.
-Indeed, voting for representatives who favor collective change
+Indeed, voting for representatives who favor collective\index{collective action} change
 toward sustainability 
-is an important action that can be taken by individuals.
-However, there are many more individual actions that can be undertaken
+is an important action\index{individual action} that can be taken by individuals.
+However, there are many more individual actions\index{individual action} that can be undertaken
 to move the world in a sustainable direction. 
-Those individual actions are the subject of the next and final chapter.
+Those individual actions\index{individual action} are the subject of the next and final chapter.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1099,23 +1118,24 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
 \section*{See Also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent Green building codes \\
+\noindent Green building codes\index{building code} \\
 \href{https://www.epa.gov/smartgrowth/green-building-standards}
 {www.epa.gov/smartgrowth/green-building-standards} \\
 
-\noindent Rooftop solar PV code toolkit: \\
+\noindent Rooftop solar PV\index{solar panel} code toolkit: \\
 \href{http://my.solarroadmap.com/userfiles/CA-Code-Reqs-for-PV-General.pdf}
 {my.solarroadmap.com/userfiles/CA-Code-Reqs-for-PV-General.pdf}\\
 
-\noindent PACE financing \\
+\noindent PACE financing\index{property-assessed clean energy (PACE) financing} \\
 \href{https://www.pacenation.org}
 {www.pacenation.org} \\
 
-\noindent LEED \\
+\noindent LEED\index{Leadership in Energy and Environmental Design (LEED)} \\
 \href{https://www.usgbc.org/leed}
 {www.usgbc.org/leed}\\
 
-\noindent AASHE STARS \\
+\noindent AASHE\index{Association for the Advancement of Sustainability in Higher Education (AASHE)} 
+STARS\index{Sustainability Tracking, Assessment, and Reporting System (STARS)} \\
 \href{https://stars.aashe.org}
 {stars.aashe.org}\\
 
@@ -1123,7 +1143,7 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
 \href{https://www.energystar.gov}
 {www.energystar.gov}  \\
 
-\noindent Living Building Challenge \\
+\noindent Living Building Challenge\index{Living Building Challenge} \\
 \href{https://living-future.org/lbc/}
 {living-future.org/lbc}
 
@@ -1135,10 +1155,10 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
 
 \begin{questions}
 
-\item Who, in your view, is the government? 
-      Answers can range from ``we are all the government''
-      to ``the government is a mechanism for collective action''
-      to ``the government is an `other' entity with self-interested goals and 
+\item Who, in your view, is the government\index{government}? 
+      Answers can range from ``we are all the government\index{government}''
+      to ``the government\index{government} is a mechanism for collective action\index{collective action}''
+      to ``the government\index{government} is an `other' entity with self-interested goals and 
       policies.''
       Do you know anyone who falls elsewhere on the spectrum?
       How do you talk to them about policies and laws that enhance sustainability?
@@ -1147,43 +1167,47 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
 \item Do there exist rights to food? Clean air? Transportation? 
       How far does the right to travel extend? 
       Is there a right to reproduce? 
-      How do these individual rights interact with the actions of collectives?
-      Relatedly, do collectives have rights and, if so, are they different from
+      How do these individual rights interact with the actions of collectives\index{collectives}?
+      Relatedly, do collectives\index{collectives} have rights and, if so, are they different from
       individual rights either in scope or extent?
       
 \item How will corporate structure (for profit, not-for-profit, or a blend of
-      the two) affect a company's actions for sustainability?
+      the two) affect a company's actions\index{sustainability action} for sustainability?
       Brainstorm some positives and negatives for each structure.
 
-\item In 2021, U.S.\ president Joe Biden proposed a Civilian Climate Corps modeled 
-      after the 1930s Civilian Conservation Corps.
+\item In 2021, U.S.\ president Joe Biden proposed a Civilian Climate Corps\index{Civilian Climate Corps} modeled 
+      after the 1930s Civilian Conservation Corps\index{Civilian Conservation Corps}.
       Given what you've learned in this book about the nature, causes, and scope 
       of current environmental problems, what can low-skilled manual labor\index{labor!manual} 
       accomplish toward solving the climate crisis?
-      What were the proposed monetary costs of the Civilian Climate Corps?
+      What were the proposed monetary costs of the Civilian Climate Corps\index{Civilian Climate Corps}?
       What nonmonetary costs would you expect to arise?
 
-\item Of the four types of actions for sustainability in 
+\item Of the four types of actions\index{sustainability action} for sustainability in 
       Section~\ref{sec:actions_def}, which is the most important? 
       Which is the most urgent?
-      Of the four principle actors (governments, organizations, corporations, and individuals),
+      Of the four principle actors\index{sustainability actor}
+      (governments\index{government!as sustainability actor}, 
+      organizations, 
+      corporations, and
+      individuals),
       who should have primary responsibility for each mode?
   
 \item Money denominates the value of goods and services in economic transactions. 
       What might be an analogous denomination for environmental and social value,
       the other two aspects of sustainability?
       Can all environmental and social value be converted to monetary equivalents?
-      What role can/should the government have in regulating or brokering conversions
+      What role can/should the government\index{government} have in regulating or brokering conversions
       between environmental and social value to monetary value?
       What effect or implication does your answer have on/for agriculture?
       
-\item Few would claim that today's birth-control technologies are the best
-      of all possible birth-control technologies.
-      A better birth control would be cheaper, more effective, and easier to use.
+\item Few would claim that today's birth-control\index{birth control} technologies are the best
+      of all possible birth-control\index{birth control} technologies.
+      A better birth control\index{birth control} would be cheaper, more effective, and easier to use.
       Arguably, Equation~\ref{eq:IPARX} indicates that reducing future human population
       is the most effective thing we can do for sustainability.
-      Who should have responsibility for developing next-generation birth-control technology:
-      government(s), corporations, nonprofits, or individuals?
+      Who should have responsibility for developing next-generation birth-control\index{birth control} technology:
+      government(s)\index{government}, corporations, nonprofits, or individuals?
       What reasons do you have for your answer?
       
 \item \label{question:carbon_tax_11}
@@ -1192,52 +1216,54 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       (You burning fossil fuels\index{fossil fuels!combustion} hurts me. 
       That's a ``cost'' I pay but you don't.)
       To address the negative externalities\index{negative externality}, 
-      taxes can be placed on fossil fuels\index{fossil fuels} to create incentives 
+      taxes\index{carbon tax} can be placed on fossil fuels\index{fossil fuels} to create incentives 
       to move away from fossil fuels\index{fossil fuels} toward renewable energy\index{renewable energy}.
-      Or, NGOs could be formed with the purpose of mitigating the effects of 
+      Or, NGOs\index{nongovernmental organizations (NGOs)} could be formed with 
+      the purpose of mitigating the effects of 
       climate change\index{climate change}.
       Individuals could donate to such efforts on a voluntary basis.
       Would it be more effective to address the negative externalities\index{negative externality} 
       of fossil-fuel consumption\index{fossil fuels!combustion} with
       (a)~a tax on fossil fuels\index{fossil fuels!tax} 
       or
-      (b)~remediation by NGOs with support from individuals? 
+      (b)~remediation by NGOs\index{nongovernmental organizations (NGOs)} with support from individuals? 
       What reasons do you have for your answer?
-      Does your answer about effectiveness depend on what is done with the tax money?
+      Does your answer about effectiveness depend on what is done with the tax\index{tax} money?
       Does your answer depend on your assumptions about the willingness of individuals
-      to donate to NGOs?
+      to donate to NGOs\index{nongovernmental organizations (NGOs)}?
       For the sake of answering this question, 
-      assume the tax revenue is devoted to research 
+      assume the tax\index{tax} revenue is devoted to research 
       (Section~\ref{sec:actions_research})
       to reduce the effects of climate change\index{climate change} or to research on removing 
       greenhouse gases\index{greenhouse gas} from the atmosphere\index{atmosphere}.
       
-\item Some people lament that we can't seem to get effective government action
+\item Some people lament that we can't seem to get effective government action\index{government action}
       to combat sustainability challenges\index{sustainability challenges}
       (although this question could be about
       any legislative or regulatory matter, really).
       There are at least three possible responses to the problem of (perceived)
-      government inaction. 
-      (1) Seek ways to solve the problem that don't involve or require government 
-      participation, maybe by establishing an NGO.
-      (2) Work within the government to change its approach, perhaps by lobbying or
+      government\index{government} inaction. 
+      (1) Seek ways to solve the problem that don't involve or require government\index{government} 
+      participation, maybe by establishing an NGO\index{nongovernmental organizations (NGOs)}.
+      (2) Work within the government\index{government} to change its approach, perhaps by lobbying or
       campaigning for different elected officials or by running for office yourself.
-      (3) Work to change the conditions that cause government inaction. 
+      (3) Work to change the conditions that cause government\index{government} inaction. 
       For example, if ``entrenched interests'' are blocking climate-change\index{climate change} legislation,
       we might attempt to change campaign-finance laws to reduce the influence of entrenched interests.
       For sustainability challenges\index{sustainability challenges},
       which of these three approaches do you favor and why?
       Or do you favor another approach altogether?
       
-\item In the U.S., in many locations, restaurant wait staff are paid below minimum wage on the
+\item In the U.S., in many locations, restaurant wait staff are paid below minimum wage\index{minimum wage} on the
       presumption that they will get tips that (at least) make up the difference.
       The social expectation that restaurant-goers will tip is strong, to the point
       where if you don't tip it's \href{https://en.wiktionary.org/wiki/tantamount}
       {tantamount} to theft (from your server).
       Traveling by airplane is a very carbon-intensive activity. 
-      There are lots of online carbon calculators to show just how carbon intensive it is.
-      In fact, most commercial airline carriers have carbon calculators on their 
-      web sites and many have links to NGOs (charities) that provide carbon offsets\index{carbon offset}
+      There are lots of online carbon calculators\index{carbon calculator} to show just how carbon intensive it is.
+      In fact, most commercial airline carriers have carbon calculators\index{carbon calculator} on their 
+      web sites and many have links to NGOs\index{nongovernmental organizations (NGOs)}
+      (charities) that provide carbon offsets\index{carbon offset}
       for your flight. 
       So, you can donate additional money, to ``offset''\index{carbon offset} your ``fair share'' of 
       the carbon emitted from your flight.
@@ -1259,8 +1285,8 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       {beverage container deposit law}.
       Consumers pay a 10-cent deposit on all beer and soft-drink containers of
       less than one gallon in volume.
-      (Of U.S. states with container deposit laws, only Oregon\index{Oregon} matches Michigan's\index{Michigan}
-      10-cent deposit; Oregon's rate increased to 10 cents from 5 cents in 2017.)
+      (Of U.S.\ states with container deposit laws, only Oregon\index{Oregon} matches Michigan's\index{Michigan}
+      10-cent deposit; Oregon's\index{Oregon} rate increased to 10 cents from 5 cents in 2017.)
       In part because of the high deposit, Michigan's\index{Michigan} bottles and cans have a very
       high redemption rate (about 90\%, % https://www.bottlebill.org/index.php/current-and-proposed-laws/usa/michigan
       which is well in excess of many other states). 
@@ -1270,29 +1296,32 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       in current dollars. 
       Should the deposit be increased to 50 cents? Why or why not? 
       Should the program be expanded to other beverage containers (for instance, bottled water)?
-      Should other states (or municipalities!) adopt ``bottle bills?''
+      Should other states (or municipalities!) adopt ``bottle bills?''\index{bottle bill}
       
-\item The expansion of PACE financing into the residential market has created
+\item The expansion of PACE financing\index{property-assessed clean energy (PACE) financing}
+      into the residential market has created
       opportunities for abuse and misuse. 
       One category of abuse is predatory lending-like practices such as signing up old or infirm 
-      people for PACE loans they don't need and/or can't understand.
-      Another kind of misuse is not getting a ``before'' energy audit or performing work under 
-      PACE financing that won't provide an energy payback, like a kitchen renovation.
-      Should there be attempts to fix these problems with PACE financing?
+      people for PACE loans\index{property-assessed clean energy (PACE) financing} they don't need and/or can't understand.
+      Another kind of misuse is not getting a ``before'' energy audit\index{energy audit} or performing work under 
+      PACE financing\index{property-assessed clean energy (PACE) financing}
+      that won't provide an energy payback, like a kitchen renovation.
+      Should there be attempts to fix these problems 
+      with PACE financing\index{property-assessed clean energy (PACE) financing}?
       If so, who leads the reforms and what is the remedy?
       
-\item Businesses are an important part of an alternative transportation infrastructure.
-      It's difficult to commute by bicycle, for instance, if you can't buy a bike
-      or biking accessories or get your bike repaired anywhere.
-      Laws, as a form of social capital\index{social capital}, are also part of infrastructure.
+\item Businesses are an important part of an alternative transportation infrastructure\index{infrastructure}.
+      It's difficult to commute by bicycle\index{bicycle}, for instance, if you can't buy a bike
+      or biking accessories or get your bike\index{bicycle} repaired anywhere.
+      Laws, as a form of social capital\index{social capital}, are also part of infrastructure\index{infrastructure}.
       Driving would be much riskier without any traffic laws, for instance.
-      Discuss some of the nonphysical infrastructure missing from today's transportation
+      Discuss some of the nonphysical infrastructure\index{infrastructure} missing from today's transportation
       landscape. 
       In your answer, consider laws governing autonomous vehicles, whether stiffer penalties
-      for drivers would make cyclists safer on roads, and the rise of e-bikes.
+      for drivers would make cyclists safer on roads, and the rise of e-bikes\index{bicycle}.
       What else should be considered?
       
-\item Some states adopt ``right to farm'' laws in response to urban development 
+\item Some states adopt ``right to farm''\index{right to farm} laws in response to urban development 
       encroaching on existing farmland. 
       Such laws protect farmers from lawsuits from encroaching homeowners who might sue
       for excessive odors from goats\index{goat} or pigs\index{pig}. 
@@ -1312,19 +1341,19 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       ``remove all items that were in violation of the city's nuisance, health and 
       safety codes and items associated 
       with an illegal home business''~\cite{McVicar:2019uz, Francis:2019vg, McVicar:2019ur, LaFurgey:2019vg, McVicar:2021wc}.
-      Peterson's history of legal difficulties with the city goes back to 2009 
+      Peterson's\index{Peterson, Bill} history of legal difficulties with the city goes back to 2009 
       and includes twenty five citations and two stints in jail. 
       At the root of the issue is his business ``Trailer Trash.''
       He ran a trash hauling and recycling\index{recycling} operation, using his backyard 
       to sort material and ``find things that can either be 
       reused, repurposed or recycled.''
-      As officers hauled his things to waiting dump trucks, Peterson said 
+      As officers hauled his things to waiting dump trucks, Peterson\index{Peterson, Bill} said 
       ``97 percent of everything they've hauled off is reusable. It should be recycled.''
       ``Instead of trying to educate the rest of the world about how bad all this 
       waste\index{waste} is, I'm trying to do something about it.''
       Was it wise of the city to shut down an illegal recycling\index{recycling} operation? 
       Why or why not?
-      Peterson contrasts education and action. 
+      Peterson\index{Peterson, Bill} contrasts education and action. 
       What mix of the two would be most effective at maximizing the amount of
       recycling\index{recycling}?
       Is maximizing the amount of recycling\index{recycling} 
@@ -1347,7 +1376,7 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
 
 \begin{projects}
 
-\item Find examples of the tragedy of the commons.
+\item Find examples of the tragedy of the commons\index{tragedy of the commons}.
       Then, research Elinor Ostrum\index{Ostrum, Elinor} and her eight design principles
       for avoiding such tragedies.
       Apply the design principles to your tragedies of the commons
@@ -1355,16 +1384,16 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       Highlight how Charlie Munger's\index{Munger, Charlie} quip about incentives
       applies to your tragedies and solutions.
 
-\item Craft a research proposal to scope the magnitude of a tax on fossil fuels\index{fossil fuels!tax} to
+\item Craft a research proposal to scope the magnitude of a tax\index{carbon tax} on fossil fuels to
       counterbalance the negative externalities\index{negative externality} they create
       (as discussed in \ref{question:carbon_tax_11}.
-      What fossil-fuel taxes\index{fossil fuels!tax} have been tried already?
-      What has been the outcome of those taxes?
+      What fossil-fuel taxes\index{carbon tax} have been tried already?
+      What has been the outcome of those taxes\index{carbon tax}?
       What are the gaps in knowledge?
       What things should be considered?
-      What criteria will you apply to decide how large should the tax should be?
+      What criteria will you apply to decide how large should the tax\index{carbon tax} should be?
 
-\item Make a business plan to increase bike commuting or other alternative
+\item Make a business plan to increase bike\index{bicycle} commuting or other alternative
       (to automobile\index{automobile}) transportation modes in your community.
       What service is most needed?
       What permits will be needed?
@@ -1396,7 +1425,7 @@ Rachel Carson, \emph{Silent Spring}. Boston: Houghton Mifflin, 1962.
       What is the expected monetary cost of your plan?
       
 \item Prepare a brief on different forms of corporate structure, for example,
-      for profit, not-for-profit, and alternatives such as the benefit corporation.
+      for profit, not-for-profit, and alternatives such as the benefit corporation\index{benefit corporation}.
       What are the advantages and disadvantages of each structure?
       Under what circumstances would you pick one or the other?
       Pick five diverse local (to you) companies. should any of them change their

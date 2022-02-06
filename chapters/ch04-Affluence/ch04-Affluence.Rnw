@@ -41,7 +41,7 @@ finish the development of our framework for sustainability.
 \label{sec:Global_affluence}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The word \textbf{wealth}\index{wealth} can refer to notions of happiness, prosperity, well being, and welfare,
+The word \textbf{wealth}\index{wealth} can refer to notions of happiness\index{happiness}, prosperity, well being, and welfare,
 but mostly wealth\index{wealth} refers to the amount of goods, possessions, money,
 property, or ``stuff'' owned by a person.
 In other words, wealth\index{wealth} refers to a level of material possessions or resources.
@@ -71,7 +71,7 @@ Also, GDP counts all consumption, even when it is socially undesirable.
 Many new metrics (Section~\ref{sec:indices}) have been proposed 
 to replace or improve GDP, such as
 green GDP\index{green GDP}, the index of sustainable economic welfare\index{index of sustainable economic welfare}, and the
-genuine progress indicator\index{genuine progress indicator}.
+genuine progress indicator\index{genuine progress indicator (GPI)}.
 However, each replacement suffers from its own limitations.
 The biggest limitation for any metric
 is standardization and availability of data.
@@ -308,7 +308,7 @@ usually divided into three subcategories: services, durable goods\index{durable 
 Services represent nontangible things, such as haircuts\index{haircut}, legal advice, education\index{education},
 and concert tickets\index{concert ticket}.
 Durable goods\index{durable goods} are defined as things that last longer than 3 years,
-such as appliances and automobiles\index{automobiles}.
+such as appliances and automobiles\index{automobile}.
 Nondurable goods\index{nondurable goods} are things that are consumed immediately, like food, paper, or fuel.
 Fabrics, like clothes\index{clothing} or carpet\index{carpet}, are counted as nondurable goods\index{nondurable goods},
 even if they happen to last more than three years.
@@ -319,9 +319,9 @@ even if they happen to last more than three years.
 %..............................
 
 Government spending\index{government spending}~(\;\!\mft{g}) is government consumption
-(such as equipment and wages paid to government workers) plus 
-government investment spending, for
-example spending on infrastructure improvements such as roads or dams.
+(such as equipment and wages paid to government workers\index{government workers}) plus 
+government investment spending\index{government spending}, for
+example spending on infrastructure\index{infrastructure} improvements such as roads or dams.
 
 %..............................
 \paragraph{Investment}
@@ -329,7 +329,7 @@ example spending on infrastructure improvements such as roads or dams.
 
 Investment\index{investment}~(\mft{i}\;\!) is not money put into a bank account.
 Investment is goods that are purchased now for use in the future
-by individuals or firms (not governments).
+by individuals or firms (not governments\index{government}).
 There are three subcategories of investment: 
 nonresidential fixed investment, residential fixed investment, and inventory investment.
 Nonresidential fixed investment is equipment and plants (factories) purchased by firms.
@@ -357,7 +357,7 @@ Therefore, for world GDP, $\mft{nx}~=~\text{0}$.
 
 Although economists use consumption\index{consumption}~(\mft{c}) narrowly as described above,
 we use the word ``consumption\index{consumption}'' colloquially to mean the sum of personal consumption, 
-government spending, and investment.
+government spending\index{government spending}, and investment.
 That is, we use ``consumption\index{consumption}'' to mean GDP, in part to remind ourselves
 that economic activity is based on the use of resources.
 Individuals and corporations may save money for purchases in the future, but the
@@ -425,7 +425,7 @@ or
   whether that is capital\index{capital}, labor\index{labor}, energy\index{energy}, or materials\index{materials}.
   Because the numerator and denominator
   have different units (dollars vs.\ workers, equipment, joules, or kilograms), 
-  we have an efficacy, not an efficiency.
+  we have an efficacy\index{efficacy}, not an efficiency.
 }
 (meaning that \mft{R} goes down%
 \footnote{
@@ -499,7 +499,7 @@ Innovation\index{innovation} is the major source of economic growth.
 There are two types of innovation\index{innovation}:
 (a)~the invention of new kinds of goods and services
 and
-(b)~ improvements to economic productivity\index{productivity!economic}.
+(b)~ improvements to economic productivity\index{economic productivity}.
 The majority of the goods and services we consume today did not exist in
 1870~\cite{Gordon2016}.
 Today, we consume entirely new categories of goods and services that did not
@@ -521,7 +521,7 @@ driven, in part, by improvements in material\index{productivity!of material}
 (Figure~\ref{fig:per_gdp_material_use})
 and energy\index{productivity!of energy} (Figure~\ref{fig:EnergyIntensityGraph-Nordhaus}) productivity
 (that is, innovation\index{innovation} of the second type).
-Energy efficiency\index{energy efficiency} is a type of economic productivity\index{productivity!economic}.
+Energy efficiency\index{energy efficiency} is a type of economic productivity\index{economic productivity}.
 Greater energy efficiency\index{energy efficiency} enables the same or greater economic output
 with lesser energy input.
 Managing the rebound effect\index{rebound effect},
@@ -744,7 +744,7 @@ Is it really economic growth that we desire?
 Or do we desire 
 (1)~enough food shelter to survive?
 (2)~Safety?
-(3)~Love and belonging?
+(3)~Love and belonging?\index{happiness}
 (4)~The esteem of family, friends, and others?
 (5)~Some form of self-actualization?
 The above hierarchy of needs\index{hierarchy of needs}~\cite{Maslow1954}, 
@@ -769,8 +769,8 @@ helpful ways of thinking about affluence from a sustainability perspective.
 Human wants are seemingly limitless. 
 Regardless of how much we have, we always want more. 
 Note that we aren't necessarily happier when the desire for more is fulfilled. 
-Conversely, although happiness can be found in the midst of financial hardship or poverty, 
-most people don't wish to go through financial trouble to achieve happiness.
+Conversely, although happiness\index{happiness} can be found in the midst of financial hardship or poverty, 
+most people don't wish to go through financial trouble to achieve happiness\index{happiness}.
 Any reduction in affluence
 runs counter to what people want (or say they want).
 
@@ -903,7 +903,7 @@ among economic growth, energy efficiency, and greenhouse gas emissions\index{CO$
       \item Consider the sustainability impacts of having more choices. 
       Does having more kinds of products available affect sustainability? 
       How about different ways of doing things? (For instance,
-      self-service grocery stores were much more efficient than having customers
+      self-service grocery stores\index{grocery store} were much more efficient than having customers
       wait for clerks to pick out goods. ``Technology,'' that is, the way we do
       things, has real economic consequences.)
       \end{enumerate}
@@ -948,7 +948,7 @@ among economic growth, energy efficiency, and greenhouse gas emissions\index{CO$
       more efficient is to employ load shedding\index{load shedding}.
       A typical example is where, in exchange for a lower electric rate, your 
       power provider can switch off some of your larger loads, typically your 
-      air-conditioning\index{air-conditioning} unit. How much of a discount would it take for you
+      air-conditioning\index{air conditioning} unit. How much of a discount would it take for you
       to give up (some) control (that is, choice) of your electricity\index{electricity} consumption?
       What does this tell you about your consumer preferences?
       
@@ -1067,7 +1067,7 @@ among economic growth, energy efficiency, and greenhouse gas emissions\index{CO$
 
 \item Prepare a report that compares and contrasts several alternative measures of GDP,
       such as the index of sustainable economic welfare\index{index of sustainable economic welfare} and the 
-      genuine progress indicator\index{genuine progress indicator}.
+      genuine progress indicator\index{genuine progress indicator (GPI)}.
       
 \item Prepare a report on income inequality\index{income inequality} and/or wealth inequality\index{wealth inequality}. 
       What are its causes? 
@@ -1076,7 +1076,8 @@ among economic growth, energy efficiency, and greenhouse gas emissions\index{CO$
       Should it be remedied, and if so, how?
 
 \item Efforts to develop in ways that are more environmentally friendly are often
-      hampered by lack of resources or infrastructure. International aid attempts
+      hampered by lack of resources or infrastructure\index{infrastructure}.
+      International aid attempts
       to provide assistance to developing economies to do development ``right.''
       Many times projects are unsuccessful. Local corruption might waste funds.
       Or international aid agencies might attempt to maintain control but,
@@ -1088,7 +1089,7 @@ among economic growth, energy efficiency, and greenhouse gas emissions\index{CO$
 \item Develop metrics for evaluating when, and to what extent, a circular economy\index{circular economy} 
       makes environmental and economic sense for some product.
       
-\item What are ways that governments try to control the rate of economic growth (in~\%/yr)?
+\item What are ways that governments\index{government} try to control the rate of economic growth (in~\%/yr)?
 
 \item Research the standards, processes, and methods for collecting and disseminating 
       global economic statistics.

@@ -43,20 +43,20 @@ Section~\ref{sec:human_population} discusses human population.
 Throughout history, the long-term trend has always been for the human population~\Pparen{} to grow,
 which is (ultimately) unsustainable; 
 see Section~\ref{sec:past_human_populations}.
-Currently, population growth has slowed (but not ceased).
+Currently, population growth\index{population growth} has slowed (but not ceased).
 Prospects for future human populations are discussed in Section~\ref{sec:population_modeling}
 with an eye toward whether humanity will live sustainably in the future. 
 The influence of economic output per person 
 (\;\!\mft{A} in the IPARX equation)
-on population growth is discussed in Section~\ref{sec:dtt}.
+on population growth\index{population growth} is discussed in Section~\ref{sec:dtt}.
 Section~\ref{sec:pop_density} discusses the sustainability implications of population density. 
 
 There are two schools of thought on population with relevance for economics and sustainability.
 \textbf{Malthusians}\index{Malthusians}
-think that population growth will cause us to ``run out'' of 
+think that population growth\index{population growth} will cause us to ``run out'' of 
 scarce resources\index{resources, scarce}.
-Techo-optimists think that more people will lead to 
-better technology, more specialization of labor\index{labor!specialization}, and, ultimately, to a higher, not lower,
+Techo-optimists\index{techo-optimists} think that more people will lead to 
+better technology, more specialization of labor\index{labor specialization}, and, ultimately, to a higher, not lower,
 standard of living.
 Interactions among 
 population~\Pparen{}, 
@@ -204,7 +204,7 @@ By 9000~BC, there were 5--10~million human beings.
 Around the year 1~AD, there were around 300~million people, 
 representing an average growth rate of about 0.1\%/year.
 By 1650~AD, the world population was around 500~million. 
-Population growth slowed because trade and urbanization spread infectious 
+Population growth\index{population growth} slowed because trade and urbanization\index{urbanization} spread infectious 
 diseases that killed large numbers of people.
 For instance, the Black Death\index{Black Death} killed 75--200~million people in the 1300s.
 World population reached 1~billion (that is, 1000~million) around 1800~AD.
@@ -233,12 +233,12 @@ Population is stable when births and deaths are equal.
 
 A larger population has the capacity for more births and more deaths per year.
 Thus, births and deaths per year depend on the size of the population.
-The population growth rate, in~\%/yr, on the other hand, expresses growth in a way that is
+The population growth rate\index{population growth rate}, in~\%/yr, on the other hand, expresses growth in a way that is
 independent of population size.
-If the population growth rate
+If the population growth rate\index{population growth rate}
 (in \%/year) is constant,
 population grows exponentially\index{exponential growth}; see Section~\ref{sec:exp}.
-Even if the population growth rate changes slightly over time (as it has over the
+Even if the population growth rate\index{population growth rate} changes slightly over time (as it has over the
 last sixty years, dropping from about 2\%/year to about 1\%/year),
 exponential growth\index{exponential growth} is a good
 description of how population changes with time.
@@ -368,7 +368,7 @@ economic development.
 Figure~\ref{fig:dtt} illustrates schematically the four stages of the transition.
 In a developing society (low \mft{A}),
 birth rates and death rates (per thousand per year) are high but nearly balanced,
-resulting in low population growth.
+resulting in low population growth\index{population growth}.
 Later, the birth rate falls.
 Thus, population is predicted to first grow rapidly and then stabilize.
 
@@ -524,16 +524,16 @@ ggplot2::ggplot() +
 \end{figure}
 
 The first stage of the demographic transition\index{demographic transition} is characterized by high birth and
-death rates (Figure~\ref{fig:dtt_crude_rates}), with a consequently low rate of population growth.
+death rates (Figure~\ref{fig:dtt_crude_rates}), with a consequently low rate of population growth\index{population growth rate}.
 The first stage is typically resource constrained.
 Until about 1800 AD the world was in Stage~1.
 Economic development (increasing \mft{A}) initiates Stage~2 via public health measures,
-improved sanitation, medical developments, and increasing agricultural productivity\index{productivity!agricultural}.
+improved sanitation, medical developments, and increasing agricultural productivity\index{agricultural productivity}.
 Stage~2 retains the high birth rate from Stage~1 but the death rate falls sharply
 (particularly for childhood mortality).
 The result is a rapid increase in population (Figure~\ref{fig:dtt_population}), 
 with many young people; see Figure~\ref{fig:dtt_pop_pyramid}.
-In Stage~3, changing economic conditions (such as increasing urbanization, a
+In Stage~3, changing economic conditions (such as increasing urbanization\index{urbanization}, a
 transition away from an economy dependent on agriculture, and availability of
 contraception) lead to a declining birth rate.
 In Stage~3, the birth rate is still greater than the death rate, so the population
@@ -542,11 +542,11 @@ that begins to be more uniform.
 In Stage~4, the birth rate and death rate equalize and the population stabilizes.
 
 After the demographic transition\index{demographic transition},
-the birth rate might rise again (causing further population growth)
+the birth rate might rise again (causing further population growth\index{population growth})
 or drop below the death rate, which leads to a decrease in total population.
 Currently, most developed countries have a birth rate that is below the
 replacement rate\index{replacement rate}, that is, a falling population (offset, in some cases,
-by immigration).
+by immigration\index{migration}).
 As stated earlier, low birth rates are correlated to higher affluence~\Aparen{}.
 
 As countries move through the demographic transition\index{demographic transition},
@@ -604,9 +604,9 @@ Concentrating human population into a few high-density areas excludes most anima
 species from those locations.
 In theory, concentration in a few spots allows other areas to be ``spared,''
 or dedicated for animal use.
-In contrast, the ``sharing'' paradigm disperses human impact more broadly.
+In contrast, the ``sharing''\index{land sharing} paradigm disperses human impact more broadly.
 Chapter~\ref{chap:land_use_urban_planning} discusses in more detail the
-land-sharing versus land-sparing paradigm. 
+land-sharing\index{land sharing} versus land-sparing\index{land sparing} paradigm. 
 There is a strong connection between population density\index{population density} and land use.
 What density\index{population density} is ``best'' for sustainability depends on which factors
 are being considered; there is no one ``right'' answer.
@@ -692,13 +692,13 @@ True sustainability thinking must consider all of human society and its spatial 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Various writers, thinkers, and scholars throughout the world, from antiquity to
-the present time, have predicted that population growth
+the present time, have predicted that population growth\index{population growth}
 would cause resource scarcity.
 Thomas Malthus\index{Malthus, Thomas} (1766--1834), wrote a book in 1798 suggesting that any increase in
 affluence was only temporary.
 He thought that any abundance of resources (such as food) would cause population
 growth, which would immediately consume the abundance.
-Increasing affluence, Malthus\index{Malthus, Thomas} thought, would lead to population growth, which
+Increasing affluence, Malthus\index{Malthus, Thomas} thought, would lead to population growth\index{population growth}, which
 would thereby decrease GDP per capita.
 (In Equation~\ref{eq:IPARX},
 affluence is measured by GDP per capita, \mft{A}\:\!)
@@ -740,7 +740,7 @@ They point to the growth of wind and solar
 electricity generation\index{electricity generation} technologies as examples.
 
 Who is correct, the neo-Malthusians\index{Malthusians} or the techno-optimists\index{techno-optimists}?
-Will population growth lead to catastrophe or is growth a source of labor\index{labor} and
+Will population growth\index{population growth} lead to catastrophe or is growth a source of labor\index{labor} and
 technology that will yield abundant resources\index{resources, abundant}?
 In 1980, business professor Julian Simon\index{Simon, Julian}
 challenged biologist Paul Ehrlich\index{Ehrlich, Paul} to a
@@ -767,7 +767,8 @@ about 70\% of the time if war years were excluded~\cite{Pooley:2020vx}.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Malthusians\index{Malthusians} think that population growth will lead to scarcity of finite resources.
+Malthusians\index{Malthusians} think that population growth\index{population growth}
+will lead to scarcity of finite resources.
 Therefore, they expect prices of scarce resources\index{resources, scarce} to increase.
 Techno-optimists\index{techno-optimists}, on the other hand, expect that human-created technology will
 create new sources of resources.
@@ -801,7 +802,7 @@ is a key consideration for sustainability.
 The scale of human population determines the extent of our impact on the planet
 through our economic activity.
 Conversely, it is also our economic system that incentivizes
-a reduction in population growth (or seems to).
+a reduction in population growth\index{population growth} (or seems to).
 While human population has grown exponentially\index{exponential growth},
 there are signs that trend is slowing
 and may even reverse.
@@ -865,7 +866,7 @@ The History Guy \href{https://www.youtube.com/watch?v=FxqgBWxLZa0}
 
 \item Riffing on Malthus's\index{Malthus, Thomas} suggestion of late marriage\index{marriage},
       what are families for?
-      What role, if any, does family formation play in population growth?
+      What role, if any, does family formation play in population growth\index{population growth}?
       Is it easier to find a spouse (or not) in a higher population density\index{population density} area?
       What are the effects of a widely distributed population on family life and
       social connectedness?
@@ -887,7 +888,7 @@ The History Guy \href{https://www.youtube.com/watch?v=FxqgBWxLZa0}
 
 \item The best XKCD\index{XKCD} comic is \href{https://xkcd.com/552/}{\#552}, 
       which considers correlation and causation.
-      Falling birth rates are correlated with economic development, urbanization,
+      Falling birth rates are correlated with economic development, urbanization\index{urbanization},
       increased education, decline in the value of child labor\index{labor!child}, and access to
       contraception.
       (Note that birth rates fell in western Europe\index{Europe} in the late 1800s before
@@ -916,12 +917,12 @@ The History Guy \href{https://www.youtube.com/watch?v=FxqgBWxLZa0}
       Reflect on how these options are different from moving to a location
       that already has a higher (or lower) population density\index{population density}.
       
-\item Migration of people from rural to urban environments and especially across
+\item Migration\index{migration} of people from rural to urban environments and especially across
       national borders is an emotionally charged political issue.
       How does the movement of people affect sustainability?
 
-\item What is a socially equitable way to allocate access to wilderness areas and experiences?
-      Does access to wilderness make it non-wilderness?
+\item What is a socially equitable way to allocate access to wilderness\index{wilderness} areas and experiences?
+      Does access to wilderness\index{wilderness} make it non-wilderness?
       Is access to ``nature'' a right?
       What are ways to allow urbanites access to the natural world?
 

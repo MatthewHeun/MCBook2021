@@ -39,7 +39,7 @@ Without minerals\index{minerals} to make cars?
 Without timber\index{timber} to build homes?
 Without healthy soil to grow food?
 Without oceans\index{ocean} and an atmosphere\index{atmosphere} to accept wastes\index{waste}?
-Without coal\index{coal}, oil\index{crude oil}, and methane\index{methane}
+Without coal\index{coal}, oil\index{crude oil}, and methane\index{methane (CH$_4$)}
 to make electricity\index{electricity}, gasoline\index{gasoline}, and natural gas\index{natural gas}?
 Nowhere.
 
@@ -90,10 +90,10 @@ In both cases, the input and output have the same units of energy, BTUs for the 
 and MW for the power plant.
 
 In contrast, 
-an efficacy is like an efficiency, except the output (in the numerator)
+an efficacy\index{efficacy} is like an efficiency, except the output (in the numerator)
 and the input (in the denominator) have 
 different units.
-A vehicle's \textbf{fuel economy}\index{fuel economy}, measured in miles per gallon, is an efficacy, 
+A vehicle's \textbf{fuel economy}\index{fuel economy}, measured in miles per gallon, is an efficacy\index{efficacy}, 
 because the units in numerator (miles) are different from units in the denominator (gallons).
 Tonnes of freight moved per liter of fuel consumed is another efficacy. 
 
@@ -216,7 +216,7 @@ The electricity\index{electricity} sold to consumers is considered to be a \text
 %
 Hydro\index{hydro electricity}, solar\index{solar electricity}, and
 wind\index{wind electricity} are primary energy\index{primary energy} sources. 
-So are crude oil\index{crude oil} and methane\index{methane}.
+So are crude oil\index{crude oil} and methane\index{methane (CH$_4$)}.
 In contrast, gasoline\index{gasoline} is a refined fuel. 
 As such, gasoline\index{gasoline} is the product of 
 a refinery that converts crude oil\index{crude oil} to refined fuels. 
@@ -287,7 +287,7 @@ The economy, being society's metabolism,\index{economic metabolism}
 depends on natural resources
 for its survival.
 Indeed, we can say that the economy runs on natural resources.\index{resources!natural}
-All goods and the infrastructure for all services depend on
+All goods and the infrastructure\index{infrastructure} for all services depend on
 manufactured objects of all types:
 cars and the roads on which they travel, 
 homes and the utilities that sustain life,
@@ -305,7 +305,7 @@ with special importance
 across a wide range of industries;
 see Table~\ref{tab:CRMs}.
 Notice the large number of resources that are considered ``critical.''
-Energy is important for running an economy but so are material resources.
+Energy is important for running an economy but so are material resources\index{material resources}.
 
 Another interesting feature of Table~\ref{tab:CRMs} is the breadth of applications; 
 most of the critical materials are used throughout the economy.
@@ -329,7 +329,7 @@ crm_df <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "da
   tibble::column_to_rownames(var = "Materials")
 
 crm_xtab <- xtable::xtable(crm_df, 
-                           caption = c("Critical raw materials and the economic sectors in which they are used. ``Aero'' is aerospace and defense. ``Tex'' is textiles. ``Elect'' is electronics. ``Auto'' includes mobility and automotive. ``Energy'' includes all energy-intensive industries. ``Rens'' is the renewable energy\\index{renewable energy} sector. ``Agri'' is agriculture and food. ``Const'' is construction. ``PGM'' is platinum-group metals. ``HREE'' and ``LREE'' are heavy and light rare Earth elements. \\emph{Source}: \\citet[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.", 
+                           caption = c("Critical raw materials and the economic sectors in which they are used. ``Aero'' is aerospace and defense. ``Tex'' is textiles. ``Elect'' is electronics. ``Auto'' includes mobility and automotive. ``Energy'' includes all energy-intensive industries. ``Rens'' is the renewable energy\\index{renewable energy} sector. ``Agri'' is agriculture and food. ``Const'' is construction. ``PGM'' is platinum-group metals. ``HREE'' and ``LREE'' are heavy and light rare-earth elements\index{rare-earth metals}. \\emph{Source}: \\citet[p.~23]{Director-General-Internal-Market-Industry-Entrepreneurship-and-SMEs:2020ui}.", 
                                        "Critical raw materials and economic sectors"), 
                            align = c("r", rep("c", 11)),
                            label = "tab:CRMs")
@@ -346,7 +346,7 @@ print(crm_xtab,
 
 
 The rate at which the world's economy has been extracting resources
-to create products, create infrastructure, and deal with wastes\index{waste}
+to create products, create infrastructure\index{infrastructure}, and deal with wastes\index{waste}
 has been growing in recent decades.
 % In fact, when the economy grows, the demand for goods and services grows.
 % When the demand for goods and services grows, 
@@ -607,7 +607,7 @@ weak sustainability\index{weak sustainability} of the recycling\index{recycling}
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Economist Nicholas Georgescu-Roegen\index{Georgescu-Roegen, Nicholas} proposed a fourth law of thermodynamics,
 stating that complete recycling\index{recycling} of matter is impossible~\cite{Georgescu-Roegen:1986aa}
-because material resources are subject to irreversible degradation.
+because material resources\index{material resources} are subject to irreversible degradation.
 (Georgescu-Roegen\index{Georgescu-Roegen, Nicholas}
 was arguing by analogy from the second law of thermodynamics\index{second law of thermodynamics},
 which states that all forms of energy are subject to irreversible degradation.)
@@ -687,7 +687,7 @@ of glass-fiber reinforced polymer composites, both of which are non-renewable ma
 Teak\index{teak} and mahogany\index{mahogany}, despite being renewable,
 are now too rare and too expensive for shipbuilding,
 both in terms of material cost and
-labor cost\index{labor!cost}.
+labor cost\index{labor cost}.
 As often happens, the ready availability of less-expensive vessels
 means that many more boats are purchased and used, 
 bringing us further from sustainability.
@@ -763,7 +763,7 @@ Industry and transportation use more energy than residences and commerce.
 \includegraphics[width=\linewidth]{chapters/ch05-ResourceIntensity/figures/Energy_US_2018.png}
 \caption[U.S.\ energy consumption Sankey diagram]
         {U.S.\ energy consumption Sankey diagram\index{Sankey diagram} for 2018. 
-         Flows in quads/year.
+         Flows in quads\index{quad}/year.
          (1~quad\index{quad} is a quadrillion BTUs of energy,
          equal to 1.055$\times$10$^\text{18}$~J.)
          \emph{Source}: 
@@ -821,7 +821,7 @@ To assess the second question (are we using energy at a sustainable rate?),
 see Figure~\ref{fig:PrimaryEnergyGraph},
 which shows global primary energy consumption\index{primary energy consumption} through time.
 The increasing consumption of primary energy\index{primary energy} supports
-population growth (Figure~\ref{fig:PopulationGraph}) and
+population growth\index{population growth} (Figure~\ref{fig:PopulationGraph}) and
 economic growth (Figure~\ref{fig:GDPGraph-Nordhaus}).
 However, on a per-capita basis,
 energy consumption has grown substantially over the last two centuries;
@@ -841,7 +841,7 @@ Neither oil\index{crude oil} nor natural gas\index{natural gas}
 are being consumed at a weakly sustainable\index{weak sustainability} rate.
 
 
-<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person vs.\\ time by energy type", fig.cap="World primary energy consumption\\index{primary energy consumption} per person vs.\\ time by energy type. Note that per-person primary energy consumption is relatively flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth and increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The height of each area represents the ratio of the height of an area in Figure~\\ref{fig:PrimaryEnergyGraph} and the top of Figure~\\ref{fig:PopulationGraph}. The top of this graph represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy and CO$_2$ emissions.">>=
+<<EnergyPerPersonGraph, fig.scap="World primary energy consumption per person vs.\\ time by energy type", fig.cap="World primary energy consumption\\index{primary energy consumption} per person vs.\\ time by energy type. Note that per-person primary energy consumption is relatively flat from 1970--2000, so increases in total primary energy consumption in that period (Figure~\\ref{fig:PrimaryEnergyGraph}) are driven by population growth\\index{population growth}; see Figure~\\ref{fig:PopulationGraph}. In the years prior to 1970 and after 2000, growth in per-capita primary energy consumption is caused by population growth and increasing affluence. Decadal data are available prior to 1965, annual data thereafter. \\emph{Source}: own calculations. The height of each area represents the ratio of the height of an area in Figure~\\ref{fig:PrimaryEnergyGraph} and the top of Figure~\\ref{fig:PopulationGraph}. The top of this graph represents the product \\mft{A}$\\times$\\mft{R} in the IPARX identity (Equation~\\ref{eq:IPARX}) for the prime example of energy and CO$_2$ emissions.">>=
 
 # Find which years have data from the Europe data set
 which_years <- region_pop %>%
@@ -1085,7 +1085,7 @@ see Section~\ref{sec:revisit_IPARX}.
 
 Extraction of finite resources\index{resource extraction}
 (such as coal\index{coal}, oil\index{crude oil}, natural gas\index{natural gas},
-lithium\index{lithium}, neodymium\index{neodymium}, phosphorous\index{phosphorous (P)}, or helium\index{helium})
+lithium\index{lithium}, neodymium\index{neodymium (Nd)}, phosphorous\index{phosphorous (P)}, or helium\index{helium (He)})
 follows a pattern through time~\cite{Brandt:2007vt}.
 In the beginning, extraction of a useful but finite resource\index{resource extraction} accelerates
 as demand climbs and technologies are developed to reduce the cost of extraction.
@@ -1293,7 +1293,7 @@ US Geological Survey, National Minerals Information Center \\
         How does a closed-loop system affect sustainability for communities that
         use it? Other communities?
 
-  \item Carbon-driven global climate change\index{climate change} and population growth are making
+  \item Carbon-driven global climate change\index{climate change} and population growth\index{population growth} are making
         desalination of seawater a more prominent source of water for
         many populations.
         Carbon emissions\index{CO$_2$ emissions!desalination} from desalination may increase from 76 million
@@ -1309,31 +1309,19 @@ US Geological Survey, National Minerals Information Center \\
         \item Discuss how these rights impact global efforts to limit climate change\index{climate change}.
         \end{enumerate}
 
-  \item Consider a carbon tax on commercial transportation.
-        Is such a tax a reduction in affluence (Chapter~\ref{chap:affluence})
+  \item Consider a carbon tax\index{carbon tax} on commercial transportation.
+        Is such a tax\index{carbon tax} a reduction in affluence (Chapter~\ref{chap:affluence})
         because the same goods you previously purchased now cost more?
-        Or would you view the tax as a enriching your natural capital\index{natural capital} by
+        Or would you view the tax\index{carbon tax} as a enriching your natural capital\index{natural capital} by
         incentivizing a shift to carbon-free forms of energy (thereby providing
         you with all the benefits of a stronger ecosystem\index{ecosystem}; see \ref{question:shell_lawsuit})?
         What beliefs or values inform your answer?
         How might such an evaluation be extended from the personal to a national
         or global scale?
 
-  % \item **** Maybe not a good question. Consider deleting. ****
-  %       Consider the effects of a carbon tax on transportation. Supply chain
-  %       issues related to Covid-19 and a container ship stuck in the Suez canal
-  %       created a ``shipping apocalypse.'' Raising the \emph{cost} of shipping
-  %       would disproportionately affect low profit-margin goods and very heavy
-  %       goods. How would you approach weighing the pros and cons of such a tax?
-
   \item The weak sustainability\index{weak sustainability} criterion
         in Section~\ref{sec:resources_weak_sustainability} is predicated on
         renewable substitutes being found for nonrenewable resources.
-        % Discuss the rates of adoption of renewable replacements for the materials
-        % in Table~\ref{tab:CRMs}.
-        % How does the rate of adoption of renewable substitutes for the CRMs in Table~\ref{tab:CRMs}
-        % compare to the rate of replacements for materials in
-        % Figures~\ref{fig:total_material_use}--\ref{fig:PercentageOfSustainable}?
         The CRMs (Table~\ref{tab:CRMs}) are mostly low-volume, high-value materials.
         The items in Figures~\ref{fig:total_material_use}--\ref{fig:per_capita_material_use}
         are high-volume, low-value materials.
@@ -1400,7 +1388,7 @@ US Geological Survey, National Minerals Information Center \\
         There can also be substitutability\index{substitution} in consumption.
         For example, margarine\index{margarine}, butter\index{butter}, and peanut butter\index{peanut butter}
         are alternative spreads for toast.
-        Or you could have oatmeal\index{oatmeal} for breakfast.
+        Or you could have oatmeal\index{oatmeal} for breakfast\index{breakfast}.
         Oatmeal\index{oatmeal} and butter\index{butter} aren't very similar, but they serve the same
         function or purpose---to provide for your caloric needs.
         Likewise, going to a concert or going for a walk on the beach aren't similar activities, but
@@ -1464,7 +1452,7 @@ US Geological Survey, National Minerals Information Center \\
 
   \item Research the CAFE\index{corporate average fuel economy (CAFE)}
         standards in the U.S.\ and
-        other automobile\index{automobile} efficacy standards worldwide.
+        other automobile efficacy\index{automobile efficacy} standards worldwide.
         Evaluate the strategies, tactics, and approaches to improving fuel economy\index{fuel economy}
         in automobiles\index{automobile} and trucks.
         Which approach works best?

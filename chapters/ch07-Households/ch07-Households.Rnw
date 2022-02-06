@@ -38,7 +38,7 @@ With the exception of
 physical plant employees, building managers, and custodial staff, 
 few workers 
 make decisions about buildings and machines
-that affect energy and material resource consumption in offices and factories.
+that affect energy and material resource\index{material resource} consumption in offices and factories.
 
 Although ordinary people often have little power to make decisions
 with sustainability implications
@@ -90,7 +90,7 @@ energy consumption and carbon emissions\index{CO$_2$ emissions}.
 Dwellings are important for sustainability, 
 in part because they are sites of energy consumption.
 For example, Figure~\ref{fig:LLNL_energy_sankey} shows that 
-11.9~quads of final energy\index{final energy} were consumed in U.S.\ residences in 2018,
+11.9~quads\index{quad} of final energy\index{final energy} were consumed in U.S.\ residences in 2018,
 representing 12\% of final energy\index{final energy} consumption.
 Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions\index{CO$_2$ emissions!household}
 from the U.S.\ residential sector in 2018 total 
@@ -386,13 +386,13 @@ Zooming out, the latitude of the home may make a
 larger impact on household sustainability
 than urban, suburban, or rural location.
 Homes at high latitudes require heating. 
-Homes at low latitudes are often fitted with air-conditioning\index{air-conditioning}.
-Both heating and air-conditioning\index{air-conditioning} require energy and, 
+Homes at low latitudes are often fitted with air-conditioning\index{air conditioning}.
+Both heating and air-conditioning\index{air conditioning} require energy and, 
 in today's fossil-fuel-powered world,
 cause CO$_2$ to be emitted;
 see Section~\ref{sec:heating_and_cooling}.
 The climate of mid-latitude locations
-can mean both heating and air-conditioning\index{air-conditioning} are necessary,
+can mean both heating and air-conditioning\index{air conditioning} are necessary,
 potentially increasing the energy required to operate homes in those locations.
 
 
@@ -466,7 +466,7 @@ circulated by a pump or fan.
 
 %..............................
 \paragraph{Air conditioners}
-\label{sec:air_conditioners}\index{air conditioners}
+\label{sec:air_conditioners}\index{air conditioning}
 %..............................
 
 Air conditioners cool and dehumidify indoor air
@@ -482,7 +482,7 @@ causing CO$_2$ to be emitted from grid-connected fossil-fuel power plants.
 %++++++++++++++++++++++++++++++
 
 Dwellings consume significant energy and water
-for showers\index{shower}, dish washers\index{dish washer},
+for showers\index{shower}, dishwashers\index{dishwasher},
 toilets\index{toilet}, and clothes washers\index{clothes washer} and dryers\index{clothes dryer}.
 Collectively, these activities may be categorized as ``hygiene.''\index{hygiene}
 
@@ -585,7 +585,7 @@ But perfect insulation\index{insulation} is not possible, and all windows\index{
 pass thermal radiation\index{thermal radiation}.
 In fact, windows\index{window} are typically worse insulators than walls and roofs,
 owing to thin glazing.
-Therefore, heating systems and air conditioners\index{air conditioners}
+Therefore, heating systems and air conditioners\index{air conditioning}
 are needed to replace heat lost in winter and remove heat gained in the summer.
 
 The effectiveness of roof and wall insulation\index{insulation}
@@ -625,7 +625,7 @@ An interesting tradeoff exists between energy\index{embodied energy} (and CO$_2$
 embodied in structures
 and energy consumed in daily life.
 A home builder could install extra insulation\index{insulation},
-more than local building codes require.
+more than local building codes\index{building code} require.
 Doing so decreases energy consumption and CO$_2$ emissions \index{CO$_2$ emissions!household}
 while the home is in use.
 However, the home will embody more energy\index{embodied energy} and carbon\index{embodied carbon},
@@ -666,7 +666,7 @@ All furnaces sold in the U.S.\ have
 an AFUE\index{Annual Fuel Utilization Efficiency (AFUE)} rating, and
 a minimum AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
 rating of 80\% is required
-for gas-fired furnaces.\index{furnaces!gas-fired}
+for gas-fired furnaces.\index{furnace!gas-fired}
 %**** Find a good-quality reference for minimum AFUE of 80\% in the U.S. ****
 High-efficiency furnaces recover more heat from exhaust gases,
 and some reach AFUE\index{Annual Fuel Utilization Efficiency (AFUE)}
@@ -859,7 +859,7 @@ living in urban areas.
 The transition to urban living is proceeding quickly for many reasons.
 A primary factor is that people move from rural areas to cities 
 in search of employment. 
-That is, urbanization is happening for reasons of social sustainability\index{social sustainability}
+That is, urbanization\index{urbanization} is happening for reasons of social sustainability\index{social sustainability}
 (employment and human well-being)
 rather than reasons of environmental sustainability\index{environmental sustainability}.
 The only question is whether the location transition 
@@ -908,11 +908,11 @@ Third, high-efficiency heating and cooling systems
 can provide the same thermal comfort\index{thermal comfort}
 with less energy consumed.
 Increased residential heating and cooling 
-efficiency\index{efficiency!heating and cooling!residential}
+efficacy\index{heating and cooling efficacy}
 (that is, providing the same comfort with less energy) 
 can be obtained
 by improving the building envelope\index{building envelope} or
-by improving the efficiency of heating and air-conditioning\index{air-conditioning}.
+by improving the efficiency of heating and air-conditioning\index{air conditioning}.
 Standards that mandate high efficiency
 are one way to ensure that efficiency of heating and cooling systems
 improves in the stock of housing. 
@@ -923,7 +923,7 @@ improves in the stock of housing.
 \label{sec:hygiene_transition}
 %++++++++++++++++++++++++++++++
 
-To minimize environmental impacts of showering\index{shower} and dish washing\index{dish washer},
+To minimize environmental impacts of showering\index{shower} and dish washing\index{dishwasher},
 low-flow showerheads\index{low-flow showerhead} and faucets\index{low-flow faucet}
 can be installed.
 Low-flow showerheads\index{low-flow showerhead} and faucets\index{low-flow faucet}
@@ -939,7 +939,7 @@ Furthermore, some systems can reuse gray water for irrigation\index{irrigation}
 and toilet\index{toilet} flushing,
 thereby reducing clean water demand.
 
-Saving water and energy in dish washing\index{dish washer} can be accomplished by purchasing a
+Saving water and energy in dish washing\index{dishwasher} can be accomplished by purchasing a
 high-efficiency \textbf{automatic dishwasher}\index{dishwasher}.
 The Energy Star\index{Energy Star} program provides 
 information about energy-saving dishwashers\index{dishwasher}~\cite{U.S.-Department-of-Energy:vn}.
@@ -1054,7 +1054,7 @@ United States, 1999 \\
 \noindent Passive House Institute \\
 \href{https://passivehouse.com}{passivehouse.com} \\
 
-\noindent Living Building Challenge \\
+\noindent Living Building Challenge\index{Living Building Challenge} \\
 \href{https://living-future.org/lbc/}{living-future.org/lbc} \\
 
 
@@ -1176,7 +1176,7 @@ United States, 1999 \\
       {www.energystar.gov/productfinder}.)
       Vacuum cleaners\index{vacuum cleaner}, for example, are difficult to rate, 
       in part, because defining how well they do their job (that is, the  
-      ``numerator'' of a service efficacy metric) is difficult to define.
+      ``numerator'' of a service efficacy\index{efficacy} metric) is difficult to define.
       (See the Energy Star\index{Energy Star} \emph{Market and Industry Scoping Report
       on Vacuum Cleaners\index{vacuum cleaners}}, November 2011.)
       
@@ -1195,7 +1195,7 @@ United States, 1999 \\
       
 \item One thing that you can do to make your housing unit more energy efficient
       is to eat every meal at a restaurant. Think of all energy you will save!
-      No need for freezers, refrigeration, cooking, or dish washing\index{dish washer}. 
+      No need for freezers, refrigeration, cooking, or dish washing\index{dishwasher}. 
       Figure~\ref{fig:average_residential_energy} shows these categories
       are 10.4\% of the energy use by an average household.
       What is wrong with this analysis?
@@ -1220,7 +1220,7 @@ United States, 1999 \\
       For new homes, what does it take to implement standards for 
       higher system efficiencies and enhanced insulation\index{insulation}?
       You might want to investigate the passive house movement, 
-      the living building challenge, net zero homes, and 
+      the Living Building Challenge\index{Living Building Challenge}, net zero homes, and 
       Joe Lstiburek\index{Lstiburek, Joeseph} (Section~\ref{sec:stories_individual_actions}).
       Given a fixed amount of money, 
       do you suppose there is more sustainability impact 

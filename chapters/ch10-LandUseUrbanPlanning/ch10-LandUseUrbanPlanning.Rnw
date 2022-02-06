@@ -9,7 +9,7 @@
 %#############################################################
 
 \epigraph{The truth about a city's aspirations isn't found in its vision. 
-It's found in its budget.}{Brent Toderian}
+It's found in its budget.}{Brent Toderian\index{Toderian, Brent}}
 
 The three previous chapters described sustainability challenges related to 
 households, transportation, and agriculture.
@@ -21,7 +21,7 @@ the overall need for transportation in human society.
 For example, dwellings and businesses that are spread out across a large area will
 require more transportation than if they were located close together.
 
-This chapter examines two aspects of land use.
+This chapter examines two aspects of land use\index{sustainability challenges!land use}.
 The first aspect is the layout or arrangement of different uses of land.
 Which is more sustainable: to group all the farms, forests, and cities so that 
 each is as large as possible?
@@ -32,10 +32,10 @@ this chapter considers dwellings and businesses collectively.
 We consider the sustainability implications of spacing, density\index{population density}, and how 
 transportation links between locations are affected by layout.
 
-The second aspect of alnd use is allocation, that is, how much land is used for each 
+The second aspect of land use is allocation, that is, how much land is used for each 
 purpose?
 Land can be used for agriculture, recreation, urban or suburban dwellings, or 
-not allocated for direct human use, that is, left as wilderness.
+not allocated for direct human use, that is, left as wilderness\index{wilderness}.
 Land is the source, directly or indirectly, for all our resources, the sink for
 much of our waste\index{waste}, and where we ourselves live.
 We need land to simultaneously satisfy many different wants and needs,
@@ -133,7 +133,7 @@ forestry (28\%), and cropland (17\%) being the three largest uses.%
   Crop production is 87\% of total cropland; the remaining 13\% is idle or used for pasture\index{pasture}.
 }
 %
-The four largest crops in the U.S. are wheat (32\% of land used for crop production),
+The four largest crops in the U.S.\ are wheat\index{wheat} (32\% of land used for crop production),
 corn\index{corn} (30\%), soybeans\index{soybeans} (20\%), and cotton\index{cotton} (10\%)~\cite{FAOSTAT:2021ve}. 
 All other crops combined account for only 8\% of cropland use.
 In contrast, the urban areas where we live and work
@@ -156,15 +156,15 @@ converting more land to agricultural use over time.
 \paragraph{Urban areas}
 %-----------------------------
 
-Population growth also leads directly to a need for more housing,
+Population growth\index{population growth} also leads directly to a need for more housing,
 but not just any housing.
-Another trend shown by land-use statistics is greater urbanization;
+Another trend shown by land-use statistics is greater urbanization\index{urbanization};
 see Figure~\ref{fig:urbanization}.
 The demand for housing is disproportionately in urban areas
-because of a long-term trend of migration to cities. 
+because of a long-term trend of migration\index{migration} to cities. 
 Urban areas have much higher GDP per area.
 Thus, pursuit of wealth\index{wealth}, that is, a desire for greater affluence~\Aparen{}, drives 
-migration from rural areas to urban ones.
+migration\index{migration} from rural areas to urban ones.
 
 
 %++++++++++++++++++++++++++++++
@@ -200,7 +200,7 @@ for how productive each power type will be.
 Not all locations are suitable for hydro\index{hydro electricity} power.
 (Or wind\index{wind electrcity}. Or solar\index{solar electricity}.)
 
-In addition to energy, the economy needs material resources;
+In addition to energy, the economy needs material resources\index{material resources};
 see Figures~\ref{fig:total_material_use} and~\ref{fig:per_capita_material_use}.
 A major example is timber\index{timber}, which is a key ingredient in construction and many
 consumer goods.
@@ -216,9 +216,11 @@ They need places to live, food to eat, and income\index{income} to purchase thes
 They can move to urban areas to try to get work or they can try to extract (pun intended)
 a living by farming (see \ref{question:poverty_trap}) or mining.
 
+
 %-----------------------------
 \paragraph{Ecosystem services\index{ecosystem services}}
 %-----------------------------
+
 Because energy use and carbon emissions\index{CO$_2$ emissions} are the prime example in this book,
 and because land plays a crucial role in regulating\index{regulating and supporting services}
 carbon in the environment,
@@ -283,11 +285,10 @@ carbon_storage_world %>%
 Figure~\ref{fig:CarbonStorage} shows how much carbon each type of land (biome) can store.
 The teal bars indicate carbon stored as plant mass above ground. 
 The purple bars indicate carbon stored in the soil below the surface.
-%(You can see why peat is used as a fuel in same parts of the world.)
-Tropical and boreal forests, and grasslands 
+Tropical forests, boreal forests, and grasslands 
 are all promising candidates for carbon sequestration\index{carbon sequestration}.
-Although the capacity of wetlands to store carbon is large,
-unfortunately, the amount of wetlands is small. 
+Although the capacity of wetlands\index{wetland} to store carbon is large,
+the amount of wetlands\index{wetland} is unfortunately quite small. 
 In contrast, the opportunities for forest and grasslands are quite extensive.
 Projects~\ref{project:restoring_boreal_forest} 
 and~\ref{project:restoring_temperate_grasslands} explore technical aspects of 
@@ -310,16 +311,17 @@ Humanity's use of the land has changed over time.
 Tracking those changes helps us to understand the relationships between
 land use and sustainability challenges\index{sustainability challenges!land use}
 (for example, climate change\index{climate change}).
-%The data for surveys such as Figure~\ref{fig:USlanduse} are produced from satellite imagery.
-The European Space Agency Climate-Change Initiative (CCI) recently released 
-a satellite-image dataset for global land use over a 24-year period (1992-2015).
+The European Space Agency (ESA)\index{European Space Agency (ESA)} 
+Climate-Change Initiative (CCI)\index{Climate Change Initiative (CCI)} recently released 
+a satellite-image dataset for global land use over a 24-year period (1992--2015).
 There are nine categories for land-use:  
-agriculture, forest, grass, wetland, settlement, shrubland, sparse, bare, and water.
-Humans altered almost 1\% of total land area per year (22\% in 24 years~\cite{Nowosad2019}).
+agriculture, forest, grass, wetland\index{wetland}, settlement, shrubland, sparse, bare, and water.
+The CCI\index{Climate Change Initiative (CCI)} dataset shows that 
+humans altered almost 1\% of total land area per year (22\% in 24 years~\cite{Nowosad2019}).
 
 This section examines sustainability challenges 
 related to the way humans use land\index{sustainability challenges!land use}
-for housing, for transportation, and for agriculture.
+for housing, transportation, and agriculture.
 
 
 %++++++++++++++++++++++++++++++
@@ -329,13 +331,14 @@ for housing, for transportation, and for agriculture.
 
 Two sustainability challenges related to urban areas\index{sustainability challenges!urban areas}
 are their tendency to grow 
-continually and the need to maintain depreciating infrastructure such as 
+continually and the need to maintain depreciating infrastructure\index{infrastructure} such as 
 power, sanitation, transportation systems.
 Note that these two challenges are not the only ones cities face; they are just
 the ones we have chosen to highlight as examples in this chapter. 
 Other challenges include
 the ever-increasing need for water\index{sustainability challenges!water}
-to supply a growing urban population and the need to mitigate the effects of climate change\index{climate change}.
+to supply a growing urban population\index{urbanization} and
+the need to mitigate the effects of climate change\index{climate change}.
 As an example of the latter, several cities have already appointed ``extreme heat
 officials.''
 
@@ -343,13 +346,16 @@ officials.''
 \paragraph{Urban sprawl}
 %..............................
 
-Analysis~\cite{Nowosad2019} of the CCI data reveals some trends related to land use change over time.
-One trend is that urban areas are continually growing and, basically, never shrink.
+Analysis~\cite{Nowosad2019} of the CCI\index{Climate Change Initiative (CCI)} data
+reveal some trends related to land use change over time.
+One trend is that urban areas are continuously growing.
 From 1992--2015, settlements gained 337,000 square kilometers, which is 0.23\%
 of the Earth's land area, or about 0.01\% per year.
 Fundamentally, although this rate is low, urban areas can't continue to grow forever.
-If the Earth's surface were 100\% urban, where would we store carbon, grow food, or obtain material
-and energy resources?
+If the Earth's surface were 100\% urban, where would we 
+store carbon, 
+grow food, or
+obtain material\index{material resources} and energy resources?
 
 The source of land for urban growth is principally agricultural land that is near 
 urban areas.
@@ -366,7 +372,7 @@ sustainability implications.
 First, there is a net loss of high-quality agricultural land.
 As existing farms near cities become urban areas, agricultural activities are pushed 
 out to more marginal land.
-Second, the net effect is deforestation, which increases 
+Second, the net effect is deforestation\index{deforestation}, which increases 
 net greenhouse gas emissions\index{CO$_2$ emissions!deforestation}.
 Land use and land-use change are an important source of anthropogenic 
 greenhouse gas emissions\index{CO$_2$ emissions!land use}~\cite{IPCC:2018aa}; 
@@ -385,38 +391,39 @@ is ``how can the best farmland be preserved for future food production?''
 \paragraph{Infrastructure sustainability}
 %..............................
 
-Urban areas are defined by a relative abundance of infrastructure.
-A city will have traffic infrastructure, such as traffic lights and perhaps bridges\index{bridge},
+Urban areas are defined by a relative abundance of infrastructure\index{infrastructure}.
+A city will have transportation infrastructure\index{infrastructure}, 
+such as traffic lights and perhaps bridges\index{bridge},
 and electricity\index{electricity}, natural gas\index{natural gas}, water, and sanitation networks.
 A city center will additionally have public buildings such as a courthouse, library, and/or 
 post office.
 A suburban street will be paved and have gutters, curbs, storm sewers, and a sidewalk.
 In contrast, a rural road might have a drainage ditch beside the road but the road itself
 might not be paved. 
-Eventually, all infrastructure (urban, suburban, and rural) will reach the end of its functional life
+Eventually, all infrastructure\index{infrastructure} (urban, suburban, and rural) will reach the end of its functional life
 and have to be repaired or replaced.
-To remain viable, a city needs to collect enough taxes over the infrastructure's life
+To remain viable, a city needs to collect enough taxes\index{tax} over the infrastructure's\index{infrastructure} life
 to repair or replace it when it wears out.
 To be sustainable, an urban area has to be valuable enough to generate the additional
-revenue to pay for its additional infrastructure.
+revenue to pay for its additional infrastructure\index{infrastructure}.
 \href{https://www.strongtowns.org/}{StrongTowns.org} discusses sustainable 
-infrastructure financing in more detail.
+infrastructure\index{infrastructure} financing in more detail.
 
 Cities face additional sustainability challenges 
 related to infrastructure lifespan\index{sustainability challenges!infrastructure}, 
-economic and population growth, changing technology, and fractured ownership.
-Furthermore, the design lifetime of infrastructure may not match its economic lifetime.
-For example, population growth might make a bridge\index{bridge} with a 100-year lifespan inadequate to 
+economic and population growth\index{population growth}, changing technology, and fractured ownership.
+Furthermore, the design lifetime of infrastructure\index{infrastructure} may not match its economic lifetime.
+For example, population growth\index{population growth} might make a bridge\index{bridge} with a 100-year lifespan inadequate to 
 satisfy transportation demand after only 30 years.
 And wireless communication technologies have rendered wired communication 
-infrastructure much less relevant. 
+infrastructure\index{infrastructure} much less relevant. 
 However, when changes are necessary, the multiple constraints of urban environments
-often make upgrading infrastructure costly and difficult. 
+often make upgrading infrastructure\index{infrastructure} costly and difficult. 
 That is, transitions are especially difficult for cities.
 
 A sustainability challenge associated with urban infrastructure\index{sustainability challenges!infrastructure}
-is ``how can cities cost effectively modernize infrastructure to accept growth, 
-be resilient to climate change\index{climate change}, require less energy, and provide for human needs?"
+is ``how can cities cost effectively modernize infrastructure\index{infrastructure} to accept growth, 
+be resilient\index{resilience} to climate change\index{climate change}, require less energy, and provide for human needs?"
 
 
 %++++++++++++++++++++++++++++++
@@ -433,18 +440,16 @@ The potential customer base is restricted to the number of people who can travel
 to the restaurant.
 Access becomes both an economic enabler and an economic multiplier.
 
-% maintaining infrastructure.
 Perhaps ironically, the transportation itself is not something people want 
 to visit. 
 No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
 afternoon.''
-Rail yards, bus stations, and airports are loud, often uncomfortable, places to be.
+Rail yards, bus stations, and airports are often loud, uncomfortable places to be.
 A desirable city center is pleasant, walkable, human scale, and space-efficient.
-Being desirable makes urban areas valuable, which, in turn, creates the tax base 
-to sustain infrastructure. 
+Being desirable makes urban areas valuable, which, in turn, creates the tax base\index{tax base} 
+to sustain infrastructure\index{infrastructure}. 
 
-In 2018, just 31 counties (out of 3141, or under 1\%) produced 32\% of U.S. GDP. 
-% https://www.visualcapitalist.com/america-land-use/
+In 2018, just 31 counties (out of 3141, or under 1\%) produced 32\% of U.S.\ GDP~\cite{Ghosh:2020uv}. 
 Most of these were around major U.S.\ metropolitan areas, such as New York\index{New York},
 Los Angeles\index{Los Angeles}, or Chicago\index{Chicago}.
 A large part of the value of cities comes from the concentration of people,
@@ -454,10 +459,10 @@ to create large and valuable products, like aircraft\index{aircraft}, microchip 
 sophisticated software\index{software}.
 Conversely, a large population of consumers allows specialized markets to develop
 that would not have enough appeal to be viable in a rural or small-town setting.
-Examples include specialty grocery stores, a school for ballroom dance, or an exotic pet store.
+Examples include specialty grocery stores\index{grocery store}, a school for ballroom dance, or an exotic pet store.
 
 For a fixed population density\index{population density}, a city can grow its population only by expanding.
-As ``rings'' are added to the city and the diameter of the city grows, the time
+As ``rings'' are added around the city and the diameter of the city grows, the time
 required to travel across the city grows as well.
 At some point, the city diameter becomes so big that it becomes infeasible to 
 travel from some parts of the city to other parts.
@@ -468,8 +473,8 @@ Therefore, the role and value of transportation is key to the economic success
 of a city.
 Effective transportation and population density\index{population density} are, in some sense, two sides
 of the same coin. 
-Higher population densities means transportation is less important. 
-Lower population densities means transportation is needed even more.
+Higher population densities\index{population density} means transportation is less important. 
+Lower population densities\index{population density} means transportation is needed even more.
 Figure~\ref{fig:urban_density} illustrates the point by showing the relationship 
 between urban density\index{population density} and transport-related energy consumption.
 Clearly, there is a tradeoff between urban density\index{population density} and 
@@ -541,7 +546,7 @@ This chapter began by asking two important questions about land use:
 (b)~what is the best layout?
 An obvious answer to the first question is ``as much as it takes to meet human
 needs and wants.''
-Therefore, the allocation question becomes a question about land-use efficacy. 
+Therefore, the allocation question becomes a question about land-use efficacy\index{land-use efficacy}. 
 That is, how can we meet our food, housing, and resource needs while using as 
 little land as possible?
 Therefore, parallel to the discussion in Section~\ref{sec:food_ag_efficiency},
@@ -550,13 +555,13 @@ the impact of using land~\Xparen{}, are positive changes towards becoming more s
 
 The remainder of this section examines three changes to land use that improve
 sustainability.
-First, increasing population density is an especially important example of increasing 
-land-use efficacy (measured in housing people per area).
+First, increasing population density\index{population density} is an especially important example of increasing 
+land-use efficacy\index{land-use efficacy} (measured in housing people per area).
 More people per area means less land is needed for housing. 
-However, increased population density also has positive sustainability implications
+However, increased population density\index{population density} also has positive sustainability implications
 for transportation.
 Furthermore, more land could be spared for ecosystem services\index{ecosystem services}.
-Second, it seems clear that afforestation (devoting more land to forests) is 
+Second, it seems clear that afforestation\index{afforestation} (devoting more land to forests) is 
 necessary to reduce net greenhouse gas (GHG) emissions\index{CO$_2$ emissions} and, in fact, to reduce 
 atmospheric GHG concentrations.
 Third, a transition to renewable energy\index{renewable energy} sources is likely to greatly increase
@@ -580,7 +585,7 @@ and city services, high population density\index{population density} is will hel
 to answer this challenge.
 First, higher densities reduce the need to expand the physical footprint of the urban
 area. 
-Second, higher densities reduce the cost of infrastructure per area.
+Second, higher densities reduce the cost of infrastructure\index{infrastructure} per area.
 
 Zoning regulations, particularly minimum lot sizes, generous setbacks, and zoning
 exclusively for single-family housing, restrict urban and suburban density. 
@@ -591,8 +596,10 @@ Regulations that create artificial scarcity, for example, by not allowing
 development of multifamily housing, or that make housing artificially expensive,
 such as requiring large setbacks or large minimum lot sizes, are particularly targets for change.
 Thus, affordable housing and higher population density is an example where changes
-would improve all of the three areas of sustainability\index{social sustainability} 
-simultaneously---social, economic, and environmental. 
+would improve all of the three areas of sustainability
+simultaneously---social\index{social sustainability} ,
+economic\index{economic sustainability}, and
+environmental\index{environmental sustainability}. 
 
 
 %..............................
@@ -680,18 +687,18 @@ Many of the ``good'' uses for land are in tension with each other,
 and the tension between land use for human needs and
 preservation of ecosystem services\index{ecosystem services} is particularly acute. 
 One way to describe the tension between human use and preservation
-is sparing versus sharing~\cite{Fraanje2018}.
-Land ``sparing'' seeks to minimize the amount of agricultural land needed for humans
+is sparing\index{land sparing} versus sharing\index{land sharing}~\cite{Fraanje2018}.
+Land ``sparing''\index{land sparing} seeks to minimize the amount of agricultural land needed for humans
 but maximizing the productivity of that land\index{productivity!of land}, even if it means input-intensive farming
 that results in less biodiversity\index{biodiversity} on the farm. 
-Other land is ``spared'' and set aside for conservation.
-Land ``sharing'' uses agricultural practices that are more eco-friendly to wildlife
+Other land is ``spared''\index{land sparing} and set aside for conservation.
+Land ``sharing''\index{land sharing} uses agricultural practices that are more eco-friendly to wildlife
 species on the farm, but, 
 because yields\index{yield!agricultural}
 aren't as high, requires more total farm land.
 
-Improving sustainability means increasing the ``sparing'' (for instance, to combat
-extinction rate) \emph{and} increasing the ``sharing.'' 
+Improving sustainability means increasing the ``sparing''\index{land sparing} (for instance, to combat
+extinction rate) \emph{and} increasing the ``sharing.''\index{land sharing} 
 How can we do both better?
 \end{mcframe}
 
@@ -704,9 +711,10 @@ Like energy, land use is a nexus for many sustainability challenges\index{sustai
 This chapter explored sustainability issues associated with urban areas,
 agricultural land-use patterns, and the role of land in provisioning resources\index{provisioning services}
 for the economy and removing wastes\index{waste} (notably, carbon) from the ecosystem\index{ecosystem}.
-Population growth and migration to urban areas (in search of greater affluence)
+Population growth\index{population growth} and migration\index{migration} to urban areas (in search of greater affluence)
 is driving an increase in the demand for urban and agricultural land. 
-Higher population densities and greater agricultural productivity\index{productivity!agricultural} can help meet
+Higher population densities\index{population density} and
+greater agricultural productivity\index{agricultural productivity} can help meet
 that demand. 
 In contrast, Figure~\ref{fig:PowerDensity} indicates it may not be possible to
 meet the energy needs of the future solely with renewables\index{renewable energy} because there may not
@@ -758,10 +766,10 @@ Donald Shoup, \emph{The high cost of free parking}. Oxfordshire, UK: Routledge, 
 \section*{See Also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} and 
-\href{https://www.youtube.com/c/CityBeautiful}{City Beautiful} \\
+YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes}\index{Not Just Bikes} and 
+\href{https://www.youtube.com/c/CityBeautiful}{City Beautiful}\index{City Beautiful} \\
 
-\noindent Strong Towns \\
+\noindent Strong Towns\index{Strong Towns} \\
 \href{https://www.strongtowns.org/}{www.strongtowns.org} \\
 
 \noindent Table Debates \\
@@ -779,7 +787,7 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
 \begin{questions}
 
 \item Consider the process of creating more land. 
-      Typically, a coastal area is ``filled in,'' turning ocean\index{ocean} or wetland into 
+      Typically, a coastal area is ``filled in,'' turning ocean\index{ocean} or wetland\index{wetland} into 
       dry ground. 
       For example, an airport in a coastal city might extend its runways into the 
       ocean\index{ocean} to accommodate more traffic or larger aircraft. 
@@ -792,7 +800,7 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       There is just enough land for subsistence farming but alternatives to 
       farming can't generate enough income\index{income} to escape poverty.
       What does the existence of these kind of poverty traps indicate for a
-      sparing/sharing dichotomy? 
+      sparing\index{land sparing}/sharing\index{land sharing} dichotomy? 
       What could be done to eliminate the poverty 
       trap(s)? What would be the (unintended) consequences of these solutions?
       \label{question:poverty_trap}
@@ -820,7 +828,8 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       With reference to Figure~\ref{fig:CarbonStorage}, discuss the importance of
       this project. \label{question:green_wall}
 
-\item Loss of farmland (for instance to urbanization) is a negative externality\index{negative externality} 
+\item Loss of farmland (for instance to urbanization\index{urbanization})
+      is a negative externality\index{negative externality} 
       to future generations. One way to internalize the externality\index{negative externality} would be pay
       farmers to keep their land as farms. 
       What could/would be the unintended consequences of such a plan? 
@@ -838,28 +847,29 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       Is it urban, suburban, rural, or would you describe it in some other way?
       What do you like about the environment in which you live?
       How would you make it different if you could?
-      How do you notice the land-sharing versus land-sparing in your environment?
+      How do you notice the land-sharing\index{land sharing} versus land-sparing\index{land sparing} in your environment?
 
 \item Reflect on the statement ``our investments reflect our values'' as applied to
       urban, suburban, and rural living.
       
-\item In a land sparing-versus-sharing dichotomy, what are some things a city 
+\item In a land sparing\index{land sparing}-versus-sharing\index{land sharing} dichotomy, what are some things a city 
       could do, with respect to food, specifically, to spare more land?
       What are some things it could do (with respect to food) to share?
       
-\item Some species (generalists) do well with land sharing.
+\item Some species (generalists) do well with land sharing\index{land sharing}.
       Generalists include
       red-tailed hawks\index{hawk}, pigeon\index{pigeon}, deer\index{deer},
       raccoon\index{raccoon}, and squirrels\index{squirrel}.
       Other species do not coexist as well with humans. 
       Examples of these include wolves\index{wolf}, wolverine\index{wolverine}, and grizzly bears\index{bear!grizzly}.
       \begin{enumerate}
-      \item How do we decide (and who makes the decisions) about how much land we share and
-      how much land we spare?
-      \item What does land sharing versus land sparing say about our conservation priorities?
+      \item How do we decide (and who makes the decisions) about how much land we share\index{land sharing} and
+            how much land we spare\index{land sparing}?
+      \item What does land sharing\index{land sharing} versus land sparing\index{land sparing} 
+            say about our conservation priorities?
       \end{enumerate}
       As context for discussion, consider the case of the cougar\index{cougar} struck and 
-      killed on a Connecticut highway about 70 miles from New York City on June 11, 2011. 
+      killed on a Connecticut highway about 70 miles from New York City\index{New York} on June 11, 2011. 
       The cougar\index{cougar} had traveled to Connecticut from South Dakota, a trip of 
       at least 1500 miles.
       In March of 2011, the U.S.\ Fish and Wildlife Service had declared the Eastern 
@@ -871,31 +881,31 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       North America.
       However, modern genetic testing indicates that all North American cougars\index{cougar}
       are a single species.
-      Ironically, the 1982 U.S.\ Fish and Wildlife Service Eastern cougar\index{cougar}
+      Ironically, the 1982 U.S.\ Fish and Wildlife Service\index{Fish and Wildlife Service} Eastern cougar\index{cougar}
       recovery plan is ``subject to modification as dictated by new findings and 
       and changes in species status and completion of tasks described in the plan.
       Goals and objectives will be attained and funds expended contingent upon 
       appropriations, priorities, and other budgetary constraints.''
-      Ironically, because the U.S.\ Fish and Wildlife Service has chosen not to
+      Ironically, because the U.S.\ Fish and Wildlife Service\index{Fish and Wildlife Service} has chosen not to
       revisit the 1948 classification.
       All of this is to say that our decision not to share land with the 
       cougar\index{cougar} is a choice, but we could well make a different choice.
       We have already, in effect, chosen not to spare cougar\index{cougar} habitat, given
       the animal's large range.
       
-\item What is a city's most important infrastructure and why?
+\item What is a city's most important infrastructure\index{infrastructure} and why?
       How much is it worth?
       
-\item Strong Towns claims that parking minimums are set too high; 
+\item Strong Towns\index{Strong Towns} claims that parking minimums are set too high; 
       see~\ref{project:STBFparking} below.
       What would be an appropriate minimum? 
       Does it depend on location, building use, or some other factor?
       If parking failure is defined as a patron arriving at the parking lot only
       to find it already full, how much parking failure should we design for?
-      Contrast this to stormwater management and flood prevention.
-      Infrastructure is built to handle storm events of a defined size with the 
+      Contrast this to stormwater\index{stormwater} management and flood prevention.
+      Infrastructure\index{infrastructure} is built to handle storm events of a defined size with the 
       knowledge that larger storms will occur. 
-      Why is it acceptable to design for failure in the stormwater case but not
+      Why is it acceptable to design for failure in the stormwater\index{stormwater} case but not
       in the parking case?
       
 \item What do you ``go to town'' for? 
@@ -908,7 +918,7 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
 
 \item No one ever said, ``Hey, let's go sit next to the freeway and watch it for the 
       afternoon.'' 
-      What are some elements of urban infrastructure that are inherently interesting? 
+      What are some elements of urban infrastructure\index{infrastructure} that are inherently interesting? 
       Are there any? What makes them special?
       
 \item In contrast to the previous question, it has been said that ``transportation 
@@ -938,26 +948,27 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       What are its current goals?  
       How is sustainability more prominent today than 50 years ago?
       
-\item Strong Towns claims 
+\item Strong Towns\index{Strong Towns} claims 
       (\href{https://www.strongtowns.org/journal/2020/5/14/americas-growth-ponzi-scheme-md2020}{here} and 
       \href{https://www.strongtowns.org/journal/2021/4/6/pueblo-west}{here}, for example) 
-      that dense, walkable downtowns maximize property tax revenue, while 
-      suburban sprawl is unsustainable because it does not generate enough tax 
-      revenue to pay for the maintenance on its own infrastructure.
+      that dense, walkable downtowns maximize property tax\index{property tax} revenue, while 
+      suburban sprawl is unsustainable because it does not generate enough 
+      tax revenue\index{tax revenue} to pay for the maintenance on its own infrastructure\index{infrastructure}.
       Spot check these claims with data from your local area. 
-      In the U.S., property-tax rolls are public information and are usually available
+      In the U.S., property-tax\index{property tax} rolls are public information and are usually available
       online. 
       Finding maintenance costs may be more difficult. 
       Try talking to your local officials such as the city engineer, assessor, 
       and/or reading your municipality's budget.
       
-\item Participate in Strong Towns's \href{https://www.strongtowns.org/blackfridayparking}{Black Friday parking event}
+\item Participate in Strong Towns'\index{Strong Towns}
+      \href{https://www.strongtowns.org/blackfridayparking}{Black Friday parking event}\index{Black Friday}
       on social media. 
       Basically, the idea is that most parking lots are drastically 
       oversized and, therefore, a waste of land that could otherwise be used for 
       economically productive activities.
       The social media campaign is to photo document the extent of unused parking
-      capacity on Black Friday, the busiest shopping day of the year.
+      capacity on Black Friday\index{Black Friday}, the busiest shopping day of the year.
       \label{project:STBFparking}
 
 \item Urban planning\index{Urban planning} can look very different in a growing economy (such as China\index{China}) 
@@ -965,16 +976,16 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes} a
       Compare and contrast the questions urban planners face and the goals for urban 
       planning in each type of economy.
 
-\item There is a well-known field called ``urban planning.''\index{urban planning}  
-      But much less attention is paid to ``rural planning.''
-      Compare and contrast urban and rural planning.  
+\item \label{project:GrawePLU}
+      There is a well-known field called ``urban planning.''\index{urban planning}  
+      But much less attention is paid to ``rural planning.''\index{rural planning}
+      Compare and contrast urban\index{urban planning} and rural planning\index{rural planning}.  
       (Hint: Other terms to be aware of include ``landscape architecture,'' 
       ``ecological science,'' and ``geographical information systems (GIS).''
-      A starting point might be to consider the system in France that restricts
+      A starting point might be to consider the system in France\index{France} that restricts
       building in agricultural areas. 
       Start by looking at ``Plan Local d’Urbanisme'' (PLU) or the more limited 
       ``Carte Communale.''
-      \label{project:GrawePLU}
 
       
 \end{projects}
