@@ -349,7 +349,7 @@ Choosing a used home or apartment
 will prevent additional carbon\index{embodied carbon} being embodied in the housing stock.
 Choosing a smaller home will reduce carbon emissions\index{CO$_2$ emissions!reduction} 
 associated with heating and cooling.
-Choosing a home or apartment closer to work, school, grocery stores, and church
+Choosing a home or apartment closer to work, school, grocery stores\index{grocery store}, and church
 will reduce carbon emissions\index{CO$_2$ emissions!transportation}
 associated with daily and weekly commuting.
 Choosing to work from home will eliminate commuting emissions altogether!
@@ -458,7 +458,7 @@ usually only possible in cities,
 further reduces CO$_2$ emissions\index{CO$_2$ emissions!reduction}. 
 City dwellers can choose to not buy a car at all, preferring
 on-demand rental vehicles from companies
-such as Uber, Lyft, or Zip Car
+such as Uber\index{Uber}, Lyft\index{Lyft}, or Zip Car\index{Zip Car}
 when public transportation will not meet their needs.
 To reduce transportation emissions from goods and service consumption, 
 local purchasing can be pursued.
@@ -475,7 +475,7 @@ local purchasing can be pursued.
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
            \includegraphics[width=\linewidth]{chapters/ch12-PersonalAction/photos/urban_farmers_market.jpeg}
-         \caption{Urban farmers' market.}
+         \caption{Urban farmers' market\index{farmers' market}.}
          \label{fig:urban_farmers_market}
      \end{subfigure}
      \hfill
@@ -487,8 +487,8 @@ local purchasing can be pursued.
      \end{subfigure}
         \caption[Two ways to buy groceries]
                 {Two ways to buy groceries.
-                 The urban farmers' market offers modest variety of seasonal, locally grown produce. 
-                 The suburban grocery store offers a wide variety of internationally-sourced produce.
+                 The urban farmers' market\index{farmers' market} offers modest variety of seasonal, locally grown produce. 
+                 The suburban grocery store\index{grocery store} offers a wide variety of internationally-sourced produce.
                  \emph{Sources}: 
                  (a)~\copyright{}2021 Jeremy Van Antwerp; 
                  (b)~\copyright{}2021 Matthew Kuperus Heun.}
@@ -518,11 +518,11 @@ Cooking at home minimizes packaging and is usually the least expensive option
 (compared to, say, buying prepared foods or eating at a restaurant).
 Buy ingredients (Figure~\ref{fig:suburban_produce_aisle}), then 
 make food.
-Even better, buy food directly from local farmers, perhaps at a farmers' 
-market (Figure~\ref{fig:urban_farmers_market})\index{farmers' market} or through community-supported 
+Even better, buy food directly from local farmers, perhaps at a farmers' market\index{farmers' market} 
+(Figure~\ref{fig:urban_farmers_market})\index{farmers' market} or through community-supported 
 agriculture\index{community supported agriculture}.
 A further step is raising your own food by gardening or by harvesting 
-wild food (by hunting, fishing, and/or gathering wild plants). 
+wild food (by hunting\index{hunting}, fishing\index{fishing}, and/or gathering wild plants). 
 One side benefit to such foraging is an investment in the state of the ecosystem\index{ecosystem}.
 
 
@@ -596,7 +596,8 @@ that flows directly from roadside drains into local waterways.
 \paragraph{Individual+Law+Urban Planning}
 %..............................
 
-Get involved in your local zoning board, drain commission, or other local government\index{government!local} entity. 
+Get involved in your local zoning board\index{zoning board}, drain commission\index{drain commission}, or
+other local government\index{government!local} entity. 
 Advocate for local and regional sustainability actions\index{sustainability action}. 
 Being involved in local politics is one of the best ways to make a difference for 
 sustainability;
@@ -651,7 +652,7 @@ How much will I fly?                        & Little or not at all              
 \end{table}
 
 
-<<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example individual sustainability actions\\index{individual action} shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings\\index{CO$_2$ emissions!reduction}. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/year in a Honda Accord\\index{Honda Accord} vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~MgCO$_2$/year. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity\\index{electricity} and natural gas\\index{natural gas} for a ``2750~ft$2$'' home vs.\\ a ``1250~ft$^2$ home in the U.S. Savings are ", small_house_savings, "~MgCO$_2$/year. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/year. Savings are estimated to be ", chicken_savings, "~MgCO$_2$/year. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/year in a Ford F150\\index{Ford F150} pickup truck or a Honda Accord\\index{Honda Accord} sedan. Savings will be ", accord_savings, "~MgCO$_2$/year. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's LaGuardia airport~(LGA) and London's Heathrow airport~(LHA) vs.\\ a virtual\\index{virtual reality (VR)} meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~MgCO$_2$/year. \\emph{Source}: own calculations.")>>=
+<<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example individual sustainability actions\\index{individual action} shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings\\index{CO$_2$ emissions!reduction}. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/year in a Honda Accord\\index{Honda Accord} vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~tCO$_2$/year. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity\\index{electricity} and natural gas\\index{natural gas} for a 2750~ft$^2$ home vs.\\ a 1250~ft$^2$ home in the U.S. Savings are ", small_house_savings, "~tCO$_2$/year. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/year. Savings are estimated to be ", chicken_savings, "~tCO$_2$/year. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/year in a Ford F150\\index{Ford F150} pickup truck or a Honda Accord\\index{Honda Accord} sedan. Savings will be ", accord_savings, "~tCO$_2$/year. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's\\index{New York} LaGuardia airport~(LGA)\\index{LaGuardia airport (LGA)} and London's\\index{London} Heathrow airport~(LHA)\\index{Heathrow airport (LHA)} vs.\\ a virtual\\index{virtual reality (VR)} meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~tCO$_2$/year. \\emph{Source}: own calculations.")>>=
 co2_savings <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
                                   sheet = "savings")
 no_commute_savings <- co2_savings %>% dplyr::filter(Action == "No commute") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
@@ -850,7 +851,7 @@ Wangari Maathai\index{Maathai, Wangari}, and Joseph Lstiburek\index{Lstiburek, J
       
 \item What choices do you have for reducing food waste\index{food waste}?
 
-\item What are your reactions to the suggestion that hunting, fishing, or foraging
+\item What are your reactions to the suggestion that hunting\index{hunting}, fishing\index{fishing}, or foraging
       for wild food can enhance sustainability?
       What food would you like to obtain?
       How feasible is that for you?
@@ -864,7 +865,7 @@ Wangari Maathai\index{Maathai, Wangari}, and Joseph Lstiburek\index{Lstiburek, J
       Given information in Figure~\ref{fig:CarbonStorage}, what sort of land
       would you seek to purchase?
       How will you manage it?
-      Does desirability of the land for any other purpose (say, hunting, farming, 
+      Does desirability of the land for any other purpose (say, hunting\index{hunting}, farming, 
       or recreation) affect your answer?
       Comment on the relative desirability and availability of the different types
       of land represented in Figure~\ref{fig:CarbonStorage}.
@@ -975,8 +976,8 @@ Wangari Maathai\index{Maathai, Wangari}, and Joseph Lstiburek\index{Lstiburek, J
       
 \item \label{problem:blog_social_media}
       Start a blog or social media account dedicated to local politics. 
-      Pick a local political office or body, like the city council, county drain
-      commission, zoning board of appeals, or school board.
+      Pick a local political office or body, like the city council, 
+      county drain commission\index{drain commission}, zoning board\index{zoning board} of appeals, or school board.
       Go to all their meetings for at least a year. 
       Peruse all meeting documents.
       Imagine that you are a reporter documenting sustainability issues 
