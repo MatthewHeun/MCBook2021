@@ -83,7 +83,7 @@ Such a furnace has an efficiency of 96\% (BTUs delivered per BTUs input).
 (See Section~\ref{sec:heating_and_cooling}
 for more on furnace efficiency and a related metric,
 Annual Fuel Utilization Efficiency (AFUE)\index{Annual Fuel Utilization Efficiency (AFUE)}.)
-A natural gas power plant\index{natural gas power plant} might burn gas at a rate that releases 300 MW of heat to generate
+A natural-gas power plant\index{natural-gas power plant} might burn gas at a rate that releases 300 MW of heat to generate
 100 MW of electricity\index{electricity}. 
 Such a power plant has an efficiency of 33.3\%.
 In both cases, the input and output have the same units of energy, BTUs for the furnace
@@ -1142,7 +1142,7 @@ Each region is at different places on its logistic curve
 for resource production.
 Other ways to substitute away from domestic coal\index{coal} for electricity\index{electricity} 
 (besides switching suppliers)
-include deploying natural gas\index{natural gas electricity}, wind\index{wind electricity}, and
+include deploying natural gas\index{natural-gas electricity}, wind\index{wind electricity}, and
 solar electricity\index{solar electricity} generation, 
 as the UK\index{United Kingdom (UK)} is doing now.
 
@@ -1486,7 +1486,7 @@ US Geological Survey, National Minerals Information Center \\
   \item Research the efficiency of electricity generation\index{electricity generation} and distribution.
         How are line losses as well as the efficiency of power generation
         (from coal\index{coal} or natural gas\index{natural gas}) quantified?
-        What is the efficiency of natural gas  extraction\index{natural gas extraction} and distribution?
+        What is the efficiency of natural gas  extraction\index{natural-gas extraction} and distribution?
         Be sure to account for the amount of gas leaking from pipes and storage facilities.
         Which method of delivering energy to the consumer 
         (electric lines or gas pipelines)
