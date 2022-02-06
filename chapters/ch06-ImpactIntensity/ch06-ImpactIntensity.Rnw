@@ -1002,7 +1002,7 @@ are the topic of the next section.
 \label{sec:renewables_interaction}
 %++++++++++++++++++++++++++++++
 
-The transition to renewable energy\index{renewable energy} sources 
+The transition to renewable-energy\index{renewable energy} sources 
 is expected to reduce the CO$_2$ intensity of energy consumption
 (\;\!\XCOtwo{} in the prime example), 
 if the CO$_2$ avoided by renewable generation over the lifetime of a renewable device
@@ -1083,7 +1083,8 @@ Energy Vault simulation  \\
 
 \begin{questions}
 
-\item Do renewable energy\index{renewable energy} sources have ``emissions?'' If so, what are they?
+\item Do renewable-energy\index{renewable energy} sources have ``emissions?'' 
+      If so, what are they?
       Make reference to Equation~\ref{eq:IPARX}. At a minimum, discuss
       solar photovoltaic\index{solar panel}, wind turbines\index{wind turbine}, 
       hydro\index{hydro electricity} power, and renewable biofuels.
@@ -1182,7 +1183,7 @@ Energy Vault simulation  \\
       economy we have today? 
       Hint: see Table~\ref{tab:eroi}.
 
-\item Should the transition to renewable energy\index{renewable energy} sources be actively managed 
+\item Should the transition to renewable-energy\index{renewable energy} sources be actively managed 
       (for example by government policy\index{government policy}) or should we let the ``invisible hand
       of the market'' manage the transition for us? Why?
       Are your reasons strictly because of the outcome(s) you imagine? 
