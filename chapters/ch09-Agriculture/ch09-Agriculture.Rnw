@@ -240,7 +240,7 @@ years~\cite{Sanderman2017}.
 In contrast, 
 sustainable agriculture\index{sustainable agriculture}
 at least maintains, and hopefully builds, soil fertility\index{soil fertility}.
-Soil fertility\index{soil fertility} and agricultural productivity\index{productivity!agricultural} 
+Soil fertility\index{soil fertility} and agricultural productivity\index{\index{agricultural productivity}} 
 can be enhanced with fertilizers\index{fertilizer} and/or agrichemicals\index{agrichemicals}.
 The most common fertilizers\index{fertilizer} contain nitrogen\index{nitrogen (N)},
 phosphorous\index{phosphorous (P)}, and potassium\index{potassium (K)}. 
@@ -757,7 +757,7 @@ eliminating the inputs needed to grow wasted food,
 reducing the emissions from producing, consuming, and disposing of that food), and
 increasing the effective EROI\index{energy return on investment (EROI)} of the food system.
 
-It is worth noting that enhanced agricultural productivity\index{productivity!agricultural}, 
+It is worth noting that enhanced agricultural productivity\index{\index{agricultural productivity}}, 
 efficacy\index{agricultural efficacy}, or efficiency 
 (depending on the metric under consideration) 
 may be subject to limited rebound\index{rebound effect}
@@ -843,7 +843,7 @@ On the one hand, there may be a temptation to ``double down'' on all the agricul
 practices that have fed us through the population boom of the last century, namely,
 the use of large amounts of inputs, such as fossil energy\index{fossil fuels},
 synthetic fertilizers\index{fertilizer}, and agrichemicals\index{agrichemicals}
-to maximize agricultural productivity\index{productivity!agricultural}.
+to maximize agricultural productivity\index{\index{agricultural productivity}}.
 On the other hand, increasing inputs will accelerate soil depletion, intensity runoff
 and other agricultural emissions, and shorten the weak sustainability\index{weak sustainability} horizon for the 
 use of nonrenewable resources such as petroleum\index{petroleum}, fossil water\index{fossil water}, and
@@ -958,7 +958,7 @@ from its headwaters to Los Angeles\index{Los Angeles}, Tucson\index{Tucson}, and
 
 \begin{questions}
 
-\item One common metric for productivity\index{productivity!agricultural} is yield\index{yield!agricultural},
+\item One common metric for productivity\index{\index{agricultural productivity}} is yield\index{yield!agricultural},
       the amount of a 
       crop produced per area.
       Such a metric does not account for energy efficiency\index{energy efficiency}, input intensity, 
