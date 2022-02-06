@@ -633,8 +633,8 @@ biofuels %>%
 %..............................
 
 Figure~\ref{fig:auto_gwp} shows two types of environmental impact
-(global warming potential~(GWP)\index{global warming potential (GWP)}
-and mineral resource depletion\index{mineral resource depletion (MRD)})
+(global warming potential~(GWP)\index{global-warming potential (GWP)}
+and mineral-resource depletion\index{mineral-resource depletion (MRD)})
 across the full life cycle\index{life cycle!automobile}
 of automobile\index{automobile} use,
 from base vehicle manufacturing to end-of-life disposal,
@@ -660,7 +660,7 @@ or pure coal\index{coal electricity}.
 
 Figure~\ref{fig:auto_gwp} shows that EVs\index{electric vehicle (EV)} are clearly worse
 than ICE vehicles\index{internal combustion engine (ICE) vehicle}
-in terms of mineral resource depletion~(MRD)\index{mineral resource depletion (MRD)}.
+in terms of mineral-resource depletion~(MRD)\index{mineral-resource depletion (MRD)}.
 The material demands for engine and battery\index{battery} fabrication are much higher for EVs 
 than for ICE vehicles\index{internal combustion engine (ICE) vehicle}.
 However, EVs\index{electric vehicle (EV)}
@@ -682,7 +682,7 @@ miss key differences associated with the production of different vehicle types a
 could lead to misguided comparisons across technologies.''
 
 
-<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile\\index{automobile} environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming a 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral resource depletion\\index{mineral resource depletion (MRD)}. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline\\index{gasoline}-powered vehicles. ``Ren20'' indicates an electricity mix\\index{electricity mix} with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union\\index{European Union (EU)} electricity mix in 2010. ``Coal''\\index{coal} indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
+<<auto_gwp, fig.scap="Normalized automobile environmental impacts vs.\\ car type by life-cycle phase", fig.cap = "Normalized automobile\\index{automobile} environmental impacts vs.\\ car type by life-cycle phase for three different automobiles assuming a 150,000~km service life. ``GWP'' is global warming potential\\index{global warming potential (GWP)}. ``MRD'' is mineral-resource depletion\\index{mineral-resource depletion (MRD)}. ``ICE'' means internal combustion engine vehicles\\index{internal combustion engine (ICE) vehicle}. ``EV'' means electric vehicles\\index{electric vehicle (EV)}. ``Gas'' indicates a gasoline\\index{gasoline}-powered vehicles. ``Ren20'' indicates an electricity mix\\index{electricity mix} with 20\\% renewables, equivalent to the average U.S.\ electricity mix today and the average European Union\\index{European Union (EU)} electricity mix in 2010. ``Coal''\\index{coal} indicates electricity generated exclusively by coal. ``Use phase'' excludes fuels. \\emph{Source}: \\citet[Fig.~1]{Hawkins_2012}.">>=
 Hawkins_life_cycle <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "EV data from Hawkins.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(c("Base vehicle", "Engine", "Other powertrain", "Battery", "Use phase", "Fuel/electricity", "End of life"), names_to = "Life.cycle.component", values_to = "normalized_impact") %>% 
@@ -723,7 +723,7 @@ a phenomenon known as \textbf{problem shifting}\index{problem shifting}.
 
 The sustainability challenges of transportation transitions
 don't end with the tradeoff between GHG emissions\index{CO$_2$ emissions!transportation} and
-mineral resource depletion\index{mineral resource depletion (MRD)} 
+mineral-resource depletion\index{mineral-resource depletion (MRD)} 
 discussed above.
 In fact, there is a temporal component that must be examined
 when comparing EVs\index{electric vehicle (EV)} against ICE vehicles\index{internal combustion engine (ICE) vehicle}.
@@ -832,14 +832,14 @@ transportation, petroleum\index{petroleum}, and technology.
       electric vehicles\index{electric vehicle (EV)} 
       provide GHG emissions\index{CO$_2$ emissions!transportation} reductions relative 
       to internal combustion engine vehicles\index{internal combustion engine (ICE) vehicle}
-      at the expense of increased mineral resource depletion\index{mineral resource depletion (MRD)}.
+      at the expense of increased mineral-resource depletion\index{mineral-resource depletion (MRD)}.
       The tradeoff between GHG emissions\index{CO$_2$ emissions!transportation}
-      and mineral resource depletion\index{mineral resource depletion (MRD)} is
+      and mineral-resource depletion\index{mineral-resource depletion (MRD)} is
       nearly impossible to decide on a quantitative or objective basis.
       Indeed, deciding this and similar tradeoffs cannot be divorced
       from human values and value judgments.
       Is it wise to trade reduced GHG emissions\index{CO$_2$ emissions!transportation}
-      for increased mineral resource depletion\index{mineral resource depletion (MRD)}?
+      for increased mineral-resource depletion\index{mineral-resource depletion (MRD)}?
       Why or why not?
       What values are guiding your answer?
       Under what circumstances does your answer change?

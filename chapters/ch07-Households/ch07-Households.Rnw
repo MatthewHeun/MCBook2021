@@ -762,10 +762,10 @@ despite higher initial cost?''
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Lighting\index{lighting} is one of many areas where 
 the effectiveness of a device is better described by a
-\textbf{energy service efficacy}\index{energy service efficacy} than by an
+\textbf{energy-service efficacy}\index{energy-service efficacy} than by an
 energy efficiency\index{energy efficiency}.
 Efficiencies are ratios of energies, typically energy output divided by energy input.
-In contrast, efficacies are ratios of energy service\index{energy service} output
+In contrast, efficacies are ratios of energy-service\index{energy service} output
 (not quantified in energy units) to energy input.
 Like intensities, efficacies have different units in the numerator and the denominator; 
 see Section~\ref{sec:resource_intensity_definitions}.
@@ -777,13 +777,13 @@ They buy lamps for the energy service\index{energy service} they provide: light!
 (the energy service\index{energy service}, measured in lumens) 
 to energy input (measured in W).
 A 100-W incandescent lamp\index{incandescent lamp} supplies about 1230~lumens of light 
-for a service efficacy\index{energy service efficacy} of 12.3~lumens/W.
+for a service efficacy\index{energy-service efficacy} of 12.3~lumens/W.
 A 100-W equivalent LED lamp\index{LED lamp} gives 1200~lumens but consumes only 12~W of electricity\index{electricity},
-for a service efficacy\index{energy service efficacy} of 100~lumens/W.
+for a service efficacy\index{energy-service efficacy} of 100~lumens/W.
 LED lamps\index{LED lamp} are 8 times better than incandescent lamps\index{incandescent lamp} at providing 
 their energy service\index{energy service}, lighting\index{lighting}.
 
-The move from energy efficiency\index{energy efficiency} to service efficacy\index{energy service efficacy}
+The move from energy efficiency\index{energy efficiency} to service efficacy\index{energy-service efficacy}
 can often reveal sustainability opportunities.
 Incandescent and LED lamps\index{LED lamp}
 have similar energy efficiency\index{energy efficiency}, because they  
