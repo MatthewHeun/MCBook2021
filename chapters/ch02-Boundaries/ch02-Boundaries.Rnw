@@ -16,7 +16,7 @@ is environmental impact~\Iparen{}.
 While there are natural processes that have (some) negative impacts on the environment,
 such as volcanic eruptions and wildfires\index{wildfire}, this book is primarily concerned with
 human impacts on the environment.
-Greenhouse gas emissions\index{CO$_2$ emissions}, such as CO$_2$, are our prime example.
+greenhouse-gas emissions\index{CO$_2$ emissions}, such as CO$_2$, are our prime example.
 Other examples of human impact include deforestation\index{deforestation}, desertification\index{desertification}, 
 aquifer depletion\index{aquifer depletion}, plant and animal extinctions, ground water and soil 
 contamination, ozone depletion\index{ozone depletion}, smog\index{smog} creation, 
@@ -618,7 +618,7 @@ over the last
 Figure~\ref{fig:CarbonEmissionsGraph} shows 
 the rate of world CO$_2$ emission since 1800~\ICOtwoparen{}.
 The clear trend is upward, with small drops corresponding to years of economic recession\index{recession}.
-\textbf{Greenhouse gas} emissions (primarily CO$_2$ released from burning \index{fossil fuels!combustion}) 
+\textbf{Greenhouse-gas} emissions (primarily CO$_2$ released from burning \index{fossil fuels!combustion}) 
 are raising the atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration} and 
 causing the average global temperature to increase. 
 The current average atmospheric CO$_2$ concentration\index{atmospheric CO$_2$ concentration} is an example of humanity
@@ -655,7 +655,7 @@ fit_sentence <- function(.df) {
 }
 @
 
-<<CarbonEmissionsGraph, fig.scap="World CO$_2$ emissions~\\ICOtwoparen{} vs.\\ time", fig.cap="World CO$_2$ emissions\\index{CO$_2$ emissions} from fossil fuel consumption\\index{fossil fuels!combustion} and cement production, \\ICOtwo{} in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions\\index{recession} temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
+<<CarbonEmissionsGraph, fig.scap="World CO$_2$ emissions~\\ICOtwoparen{} vs.\\ time", fig.cap="World CO$_2$ emissions\\index{CO$_2$ emissions} from fossil-fuel consumption\\index{fossil fuels!combustion} and cement production, \\ICOtwo{} in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions\\index{recession} temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                                     sheet = "data to plot")
 
@@ -681,7 +681,7 @@ ggplot2::ggplot() +
   MKHthemes::xy_theme()
 @
 
-Greenhouse gas emissions\index{CO$_2$ emissions}
+Greenhouse-gas emissions\index{CO$_2$ emissions}
 are an especially important sustainability issue 
 because of their widespread effects. 
 CO$_2$ emissions\index{CO$_2$ emissions} are also especially important for at least two other reasons. 
@@ -689,7 +689,7 @@ First, CO$_2$ emissions\index{CO$_2$ emissions} may trigger a tipping point\inde
 Earth's ecosystems\index{ecosystem}, related to deforestation\index{deforestation}, 
 wildfires\index{wildfire}, ocean acidification\index{ocean acidification}, 
 methane\index{methane} release from permafrost\index{permafrost}, and species loss\index{species loss}. 
-Second, most greenhouse gas emissions\index{CO$_2$ emissions} are within human control, 
+Second, most greenhouse-gas emissions\index{CO$_2$ emissions} are within human control, 
 especially regarding fossil fuels\index{fossil fuels} and agriculture. 
 
 % see http://clivebest.com/blog/?p=1169 and references therein.
@@ -722,7 +722,7 @@ as well.
 However, since the atmosphere\index{atmosphere} grows colder at higher elevations, 
 the radiation\index{thermal radiation} into
 space is less effective than at lower elevations. 
-By increasing atmospheric greenhouse gas concentrations\index{atmospheric CO$_2$ concentration}
+By increasing atmospheric greenhouse-gas concentrations\index{atmospheric CO$_2$ concentration}
 (particularly CO$_2$), 
 we are essentially adding long-wavelength thermal radiation\index{thermal radiation} shields 
 to the atmosphere\index{atmosphere}. 
