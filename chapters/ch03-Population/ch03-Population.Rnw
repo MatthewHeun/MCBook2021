@@ -665,7 +665,7 @@ ggplot2::ggplot(data = world) +
 
 Since the industrial revolution, humans are increasingly living in urban environments.
 In 1973 there were only 3 cities (Mexico City\index{Mexico City}, Tokyo\index{Tokyo}, and
-New York\index{New York} City) with populations
+New York\index{New York}) with populations
 of more than 10~million people (called ``megacities'').
 Since 2005--2006 more than half of the world's population live in urban areas, and
 there are now 21 megacities.
