@@ -53,14 +53,20 @@ How can we transition to more sustainable ways of using land?
 \label{sec:land_and_how_it_is_used}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Equation~\ref{eq:IPARX} shows two main drivers for land use:
+Equation~\ref{eq:IPARX}\index{IPARX identity} shows two main drivers for land use:
 population (\mft{P}, Chapter~\ref{chap:population}) and
 affluence (\:\!\mft{A}, Chapter~\ref{chap:affluence}).
-The remaining two terms on the right-hand side of Equation~\ref{eq:IPARX} (\:\!\mft{R} and \mft{X}\:)
-are fixed by our technology. 
+The remaining two terms on the right-hand side of Equation~\ref{eq:IPARX} 
+(\:\!\mft{R} and \mft{X}\:) are fixed by our technology. 
 The size of the economy is \mft{P}$\times$\mft{A}.
 The economy can grow by increasing either \mft{P} or \mft{A}.
-The next two sections will examine these sources of demand in greater detail.
+Economic growth increases demand for land in two ways: the resources used by 
+the economy (\:\!\mft{P}$\times$\mft{A}$\times$\mft{R}\;\!), and
+the ecosystem services\index{ecosystem services}
+needed to eliminate the wastes\index{waste} produced by economic activity
+(\:\!\mft{P}$\times$\mft{A}$\times$\mft{R}$\times$\mft{X}\:).
+The next two subsections will examine in greater detail the demand for land use
+caused by population and affluence.
 
 <<USlanduse, fig.scap="Land use in the U.S.\\ vs.\\ time by land type", fig.cap="Land use in the U.S.\\ vs.\\ time by land type. The biggest changes over time are decreasing grazed forest area and increasing rural parks and wildlife areas. Urban areas, although a small fraction of total area, are growing. ``Forest'' aggregates grazed and not-grazed forest land. ``Farms \\& rural transport'' aggregates farmsteads, miscellaneous farmland, roads, and rural transportation facilities. ``Cropland'' aggregates tilled crops, pasture, and idle fields. \\emph{Source}: \\citet{USDA:2021uq}.">>=
 us_land_use <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Land_Uses.xlsx"),
@@ -293,14 +299,6 @@ In contrast, the opportunities for forest and grasslands are quite extensive.
 Projects~\ref{project:restoring_boreal_forest} 
 and~\ref{project:restoring_temperate_grasslands} explore technical aspects of 
 forest and grassland restoration/carbon sequestration\index{carbon sequestration}.
-
-Therefore, consistent with earlier chapters, the drivers for land use are 
-the~\Pparen{} and~\Aparen{} terms of the IPARX identity\index{IPARX identity},
-resource use by the economy (\:\!\mft{P}$\times$\mft{A}$\times$\mft{R}\;\!), and
-the ecosystem services\index{ecosystem services}
-needed to eliminate the wastes\index{waste} produced by economic activity
-(\:\!\mft{P}$\times$\mft{A}$\times$\mft{R}$\times$\mft{X}\:).
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sustainability challenges in land use}\index{sustainability challenges!land use}
