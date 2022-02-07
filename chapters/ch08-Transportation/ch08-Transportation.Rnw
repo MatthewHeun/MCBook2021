@@ -633,7 +633,7 @@ biofuels %>%
 %..............................
 
 Figure~\ref{fig:auto_gwp} shows two types of environmental impact
-(global-warming potential~(GWP)\index{global-warming potential (GWP)}
+(global warming potential~(GWP)\index{global warming potential (GWP)}
 and mineral-resource depletion\index{mineral resource depletion (MRD)@mineral-resource depletion (MRD)})
 across the full life cycle\index{life cycle!automobile}
 of automobile\index{automobile} use,
@@ -664,7 +664,7 @@ in terms of mineral-resource depletion~(MRD)\index{mineral resource depletion (M
 The material demands for engine and battery\index{battery} fabrication are much higher for EVs 
 than for ICE vehicles\index{internal combustion engine (ICE) vehicle}.
 However, EVs\index{electric vehicle (EV)}
-can provide benefits in terms of global-warming potential~(GWP)\index{global-warming potential (GWP)}
+can provide benefits in terms of global warming potential~(GWP)\index{global warming potential (GWP)}
 relative to ICE vehicles\index{internal combustion engine (ICE) vehicle}
 if the electricity\index{electricity} source includes renewables\index{renewable energy}
 (as in the ``Ren20'' electricity mix\index{renewable electricity}), 
@@ -672,7 +672,7 @@ because of lower lifetime fuel/electricity\index{electricity} emissions.
 In the case of the Ren20 electricity\index{renewable electricity} mix,
 the global warming benefits of EVs\index{electric vehicle (EV)} are achieved
 despite much larger emissions from battery\index{battery} manufacturing.
-However, the global-warming benefits of EVs\index{electric vehicle (EV)} evaporate
+However, the global warming benefits of EVs\index{electric vehicle (EV)} evaporate
 when the electricity is generated from coal\index{coal electricity},
 because of higher electricity-related emissions.
 \citet[p.~61]{Hawkins_2012} point out that
