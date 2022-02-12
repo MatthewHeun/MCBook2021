@@ -366,6 +366,8 @@ As you read, we encourage you to keep the table of key terms in Table~\ref{tab:k
 % and its reference only.
 % It strips out the chapter number, 
 % thereby avoiding "Table 0.1".
+% Note, this works for this table only, because 
+% the command is sandwiched between two curly braces.
 \renewcommand{\thetable}{\arabic{table}}
 
 \begin{table}[h!]
