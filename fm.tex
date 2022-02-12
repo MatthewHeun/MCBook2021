@@ -359,6 +359,15 @@ What other ideas can you suggest to become more sustainable?
 
 As you read, we encourage you to keep the table of key terms in Table~\ref{tab:key_terms} at hand.
 
+
+{
+
+% This next command adjusts table numbering for this table 
+% and its reference only.
+% It strips out the chapter number, 
+% thereby avoiding "Table 0.1".
+\renewcommand{\thetable}{\arabic{table}}
+
 \begin{table}[h!]
 % This appears as "Table 0.1. Key terms.", which is silly.
 \caption{Key terms.}
@@ -408,6 +417,7 @@ Weak sustainability         & Using resources so they last 50~years. \\
 \label{tab:key_terms}
 \end{table}
 
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
