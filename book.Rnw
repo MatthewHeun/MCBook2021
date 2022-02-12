@@ -299,6 +299,8 @@ In the long run, such a framework is more useful and more enduring.
     
     \cleardoublepage
 
+
+\addcontentsline{toc}{chapter}{\protect\numberline{}{Index}}
 \markboth{Index}{Index}
 
     \input{book.ind}            % if you have an Index
