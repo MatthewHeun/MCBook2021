@@ -288,10 +288,10 @@ In the long run, such a framework is more useful and more enduring.
 % \blankpage
  %   \input{biblio}              % bibliography
 
-\markboth{Bibliography}{Bibliography}
-
-    \bibliographystyle{unsrtnat}
-    \bibliography{MCBook2021}   %chktex 11
+% \markboth{Bibliography}{Bibliography}
+% 
+%     \bibliographystyle{unsrtnat}
+%     \bibliography{MCBook2021}   %chktex 11
     
     
     \cleardoublepage
