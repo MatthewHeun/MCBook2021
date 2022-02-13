@@ -12,3 +12,5 @@ rm -f *.log
 rm -f *.lot
 rm -f *.out
 rm book.pdf
+rm book.tex
+rm book.toc
