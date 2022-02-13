@@ -1214,3 +1214,8 @@ London: Fourth Estate,
 
 \cleardoublepage
 
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
+
+\cleardoublepage
+

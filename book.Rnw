@@ -214,12 +214,15 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 
 \cleardoublepage
 
-    \Sexpr{knit_child("chapters/ch01-Introduction/ch01-Introduction.Rnw")}            % \ref{chap:introduction}
-    \Sexpr{knit_child("chapters/ch02-Boundaries/ch02-Boundaries.Rnw")}                % \ref{chap:planetary_boundaries}
-    \Sexpr{knit_child("chapters/ch03-Population/ch03-Population.Rnw")}                % \ref{chap:population}
-    \Sexpr{knit_child("chapters/ch04-Affluence/ch04-Affluence.Rnw")}                  % \ref{chap:affluence}
-    \Sexpr{knit_child("chapters/ch05-ResourceIntensity/ch05-ResourceIntensity.Rnw")}  % \ref{chap:resource_intensity}
-    \Sexpr{knit_child("chapters/ch06-ImpactIntensity/ch06-ImpactIntensity.Rnw")}      % \ref{chap:impact_intensity}
+\include{ch01-Introduction.tex}
+\include{ch02-Boundaries.tex}
+
+    % \Sexpr{knit_child("chapters/ch01-Introduction/ch01-Introduction.Rnw")}            % \ref{chap:introduction}
+    % \Sexpr{knit_child("chapters/ch02-Boundaries/ch02-Boundaries.Rnw")}                % \ref{chap:planetary_boundaries}
+    % \Sexpr{knit_child("chapters/ch03-Population/ch03-Population.Rnw")}                % \ref{chap:population}
+    % \Sexpr{knit_child("chapters/ch04-Affluence/ch04-Affluence.Rnw")}                  % \ref{chap:affluence}
+    % \Sexpr{knit_child("chapters/ch05-ResourceIntensity/ch05-ResourceIntensity.Rnw")}  % \ref{chap:resource_intensity}
+    % \Sexpr{knit_child("chapters/ch06-ImpactIntensity/ch06-ImpactIntensity.Rnw")}      % \ref{chap:impact_intensity}
 
     
 %#############################################################
@@ -229,10 +232,10 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 
 \cleardoublepage
 
-    \Sexpr{knit_child("chapters/ch07-Households/ch07-Households.Rnw")}                     % \ref{chap:households}
-    \Sexpr{knit_child("chapters/ch08-Transportation/ch08-Transportation.Rnw")}             % \ref{chap:transportation}
-    \Sexpr{knit_child("chapters/ch09-Agriculture/ch09-Agriculture.Rnw")}                   % \ref{chap:agriculture}
-    \Sexpr{knit_child("chapters/ch10-LandUseUrbanPlanning/ch10-LandUseUrbanPlanning.Rnw")} % \ref{chap:land_use_urban_planning}
+    % \Sexpr{knit_child("chapters/ch07-Households/ch07-Households.Rnw")}                     % \ref{chap:households}
+    % \Sexpr{knit_child("chapters/ch08-Transportation/ch08-Transportation.Rnw")}             % \ref{chap:transportation}
+    % \Sexpr{knit_child("chapters/ch09-Agriculture/ch09-Agriculture.Rnw")}                   % \ref{chap:agriculture}
+    % \Sexpr{knit_child("chapters/ch10-LandUseUrbanPlanning/ch10-LandUseUrbanPlanning.Rnw")} % \ref{chap:land_use_urban_planning}
 
     
 %#############################################################
@@ -242,8 +245,8 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 
 \cleardoublepage
 
-    \Sexpr{knit_child("chapters/ch11-Government/ch11-Government.Rnw")}                     % \ref{chap:government}
-    \Sexpr{knit_child("chapters/ch12-PersonalAction/ch12-PersonalAction.Rnw")}             % \ref{chap:personal_action}
+    % \Sexpr{knit_child("chapters/ch11-Government/ch11-Government.Rnw")}                     % \ref{chap:government}
+    % \Sexpr{knit_child("chapters/ch12-PersonalAction/ch12-PersonalAction.Rnw")}             % \ref{chap:personal_action}
 
 \cleardoublepage
 
@@ -303,7 +306,8 @@ In the long run, such a framework is more useful and more enduring.
 \addcontentsline{toc}{chapter}{\protect\numberline{}{Index}}
 \markboth{Index}{Index}
 
-    \input{book.ind}            % if you have an Index
+\printindex
+% \input{book.ind}            % if you have an Index
 
 \end{document}
 
