@@ -5,7 +5,7 @@
 \documentclass{book}
 
 %the main style; default LibreCaslon font
-\usepackage[raggedsec]{morgan2}
+\usepackage[raggedsec,sectionbib]{morgan2}
 \usepackage{morgan-defs}
 
 %to use Times New Roman, instead of LibreCaslon, please uncomment the next line
@@ -222,6 +222,7 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 
 \include{ch01-Introduction}
 \include{ch02-Boundaries}
+% \include{ch03-Population}
 
     % \Sexpr{knit_child("chapters/ch01-Introduction/ch01-Introduction.Rnw")}            % \ref{chap:introduction}
     % \Sexpr{knit_child("chapters/ch02-Boundaries/ch02-Boundaries.Rnw")}                % \ref{chap:planetary_boundaries}

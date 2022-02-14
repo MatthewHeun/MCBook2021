@@ -11,6 +11,8 @@ rm -f *.lof
 rm -f *.log
 rm -f *.lot
 rm -f *.out
-rm book.pdf
-rm book.tex
-rm book.toc
+rm -f book.pdf
+rm -f book.tex
+rm -f book.toc
+rm -f -R figure
+
