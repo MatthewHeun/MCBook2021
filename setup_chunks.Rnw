@@ -5,7 +5,7 @@ knitr::opts_knit$set(root.dir = getwd())
 
 # Set default sizes for figures throughout the book.
 # We can always override with options on each individual chunk.
-knitr::opts_chunk$set(echo=FALSE, 
+knitr::opts_chunk$set(echo = FALSE, 
                       fig.width = 6,    # inches
                       fig.height = 3.5, # inches
                       fig.align = "center", 
