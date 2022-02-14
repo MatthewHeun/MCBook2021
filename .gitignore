@@ -20,9 +20,10 @@ book.idx
 book.ind
 fm.log
 MCBook2021.bib.sav
-book.lof
-book.lot
-ch01-Introduction.aux
+*.lof
+*.lot
+*.aux
+*.bbl
+*.blg
 ch01-Introduction.tex
-ch02-Boundaries.aux
 ch02-Boundaries.tex

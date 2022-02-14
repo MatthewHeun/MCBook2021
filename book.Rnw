@@ -218,8 +218,8 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 
 \cleardoublepage
 
-\include{ch01-Introduction.tex}
-\include{ch02-Boundaries.tex}
+\include{ch01-Introduction}
+\include{ch02-Boundaries}
 
     % \Sexpr{knit_child("chapters/ch01-Introduction/ch01-Introduction.Rnw")}            % \ref{chap:introduction}
     % \Sexpr{knit_child("chapters/ch02-Boundaries/ch02-Boundaries.Rnw")}                % \ref{chap:planetary_boundaries}
