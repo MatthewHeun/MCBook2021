@@ -14,6 +14,8 @@
 % bibliography
 % \usepackage[comma,sort,authoryear]{natbib}         % author-year
 \usepackage[square,comma,sort&compress,numbers]{natbib} % numbered
+\usepackage{chapterbib}
+\usepackage{makeidx}
 
 % 
 % Begin LaTeX packages imported by the authors.
