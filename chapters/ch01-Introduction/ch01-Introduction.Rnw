@@ -4,6 +4,10 @@
 %!TEX root = ../../book.Rnw
 
 
+<<include, child="../../setup_chunks.Rnw">>=
+@
+
+
 %#############################################################
 \chapter{Introduction}
 \label{chap:introduction}

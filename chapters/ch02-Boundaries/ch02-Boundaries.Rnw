@@ -3,6 +3,8 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+<<include, child="../../setup_chunks.Rnw">>=
+@
 
 %#############################################################
 \chapter{Planetary Boundaries~\Iparen{}}
