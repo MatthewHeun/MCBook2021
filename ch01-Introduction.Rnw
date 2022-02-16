@@ -4,7 +4,7 @@
 %!TEX root = ../../book.Rnw
 
 
-<<include, child="../../setup_chunks.Rnw">>=
+<<include, child="setup_chunks.Rnw">>=
 @
 
 
@@ -847,6 +847,7 @@ the full restoration is likely to cost more than \euro{8}~billion.
 \end{projects}
 
 
+\markright{References}
 \bibliographystyle{unsrtnat}
 \bibliography{MCBook2021}
 

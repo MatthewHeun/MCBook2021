@@ -3,6 +3,9 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+<<include, child="setup_chunks.Rnw">>=
+@
+
 %#############################################################
 \chapter{Affluence \Aparen}
 \label{chap:affluence}
@@ -1108,6 +1111,13 @@ among economic growth, energy efficiency, and greenhouse-gas emissions\index{CO$
       \label{project:off-grid}
 
 \end{projects}
+
+
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
+
 
 \cleardoublepage
 

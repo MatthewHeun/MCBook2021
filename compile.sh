@@ -3,7 +3,7 @@
 /usr/local/bin/Rscript knit_script.R
 
 pdflatex book.tex
-for auxfile in ch*.aux
+for auxfile in *.aux
 do
     bibtex `basename $auxfile .aux`
 done

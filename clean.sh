@@ -13,6 +13,7 @@ rm -f *.lot
 rm -f *.out
 rm -f book.pdf
 rm -f book.tex
+rm -f book-concordance.tex
 rm -f book.toc
 rm -f -R figure
 

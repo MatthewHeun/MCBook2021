@@ -25,5 +25,4 @@ MCBook2021.bib.sav
 *.aux
 *.bbl
 *.blg
-ch01-Introduction.tex
-ch02-Boundaries.tex
+ch*.tex

@@ -3,7 +3,7 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
-<<include, child="../../setup_chunks.Rnw">>=
+<<include, child="setup_chunks.Rnw">>=
 @
 
 %#############################################################
@@ -330,7 +330,7 @@ lost will take several million years~\cite{Davis11262}.
 
 <<CO2Graph, fig.scap="Atmospheric CO$_2$ concentration\\index{atmospheric CO$_2$ concentration} vs.\\ time", fig.cap="Atmospheric CO$_2$ concentration over time. The red line shows the planetary boundary\\index{planetary boundaries} for atmospheric CO$_2$ concentration, 350~ppm. The vertical line shows the year 2022. \\emph{Sources}: Bereiter et al.~\\cite{Bereiter:2015ws} and NOAA~\\cite{Tans:2022vw}.">>=
 # Gather data for CO2 vs. time graph
-readxl::read_excel(file.path("datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>%
+readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "AtmosphericCO2vsTime.xlsx"), sheet = "data to plot") %>%
   dplyr::mutate(
     Year = - Year / 1000
   ) %>%
@@ -471,7 +471,7 @@ data.frame(t = seq(0.8, 1.1*pi, by = 0.005*pi)) %>%
      \begin{subfigure}[b]{0.48\textwidth}
          \centering
 <<ErodableBounds, fig.width=2.5, fig.height=2, fig.align="center">>=
-erodable_limit_data <- readxl::read_excel(file.path("datasets", "F2point3D.xlsx"),
+erodable_limit_data <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "F2point3D.xlsx"),
                                           sheet = "data to plot")
 erodable_limit_data %>% 
   boundary_graph()
@@ -570,7 +570,7 @@ research, make recommendations, regulate, and enforce laws.
 
 <<FootprintHDIGraph, fig.scap="Ecological footprint vs.\\ HDI", fig.cap="Ecological footprint vs.\\ HDI\\index{Human Development Index (HDI)} for 2017. Population is in millions. HDI between 0.7 and 0.8 is considered ``high'' human development. HDI greater than 0.8 is considered ``very high'' human development. Ecological footprint below 1.9 global hectares per person is considered sustainable. The only countries ``inside the box'' at the lower right of the graph (high human development and sustainable ecological footprint) are the Philippines and Sri Lanka. No country exhibits ``very high'' human development and a sustainable ecological footprint. ``gha'' is global hectares. \\emph{Source}: \\citet{Global-Footprint-Network:ut}.">>=
 clrs <- viridis::viridis(6, begin = 0, end = 0.99)
-readxl::read_excel(file.path("datasets", "EFvsHDI.xlsx"),
+readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI.xlsx"),
                                   sheet = "data to plot") %>% 
   dplyr::filter(`Country Name` != "World") %>% 
   dplyr::mutate(
@@ -658,10 +658,10 @@ fit_sentence <- function(.df) {
 @
 
 <<CarbonEmissionsGraph, fig.scap="World CO$_2$ emissions~\\ICOtwoparen{} vs.\\ time", fig.cap="World CO$_2$ emissions\\index{CO$_2$ emissions} from fossil-fuel consumption\\index{fossil fuels!combustion} and cement production, \\ICOtwo{} in Equation~\\ref{eq:IPARX}. The years 1932, 1945, 1974, 1982, 1992, 2009, and 2020 are identified by vertical lines to demonstrate that economic recessions\\index{recession} temporarily reduce energy consumption and CO$_2$ emissions. \\emph{Source}: \\citet{Ritchie:2021vw}.">>=
-CO2_emissions <- readxl::read_excel(file.path("datasets", "annual-co2-emissions-per-country.xlsx"),
+CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                                     sheet = "data to plot")
 
-CO2_fit <- readxl::read_excel(file.path("datasets", "CO2EmissionsCurveFit.xlsx"), 
+CO2_fit <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "CO2EmissionsCurveFit.xlsx"), 
                           sheet = "CO2EmissionsCurveFit from 1950")
 
 max_y <- 40 # Gt/year
@@ -813,7 +813,7 @@ energy and CO$_2$ emissions\index{CO$_2$ emissions} are the prime example of thi
 
 <<Fig-SPM-10, fig.pos="h!", fig.scap="Global temperature rise vs.\\ CO$_2$ emissions", fig.cap="Global temperature rise vs.\\ CO$_2$ emissions\\index{CO$_2$ emissions}. Temperature rise is relative to the 1850--1900 global average temperature. The line labeled ``1850'' indicates the starting point for counting cumulative CO$_2$ equivalent emissions. The line labeled ``1990'' indicates cumulative emissions to that date, 1411~GtCO$_2$e. The line labeled ``2019'' indicates cumulative emissions to that date, 2411~GtCO$_2$e. The line labeled ``1.5~\\degC'' indicates the cumulative emissions that give 50\\% odds of reaching 1.5~\\degC{} warming by 2100, 2911~GtCO$_2$e. The carbon budget\\index{carbon budget} in 1990 was the distance between the ``1990'' line and the ``1.5~\\degC'' line, namely 1500~GtCO$_2$e. The current carbon budget is the distance between the ``2019'' line and the ``1.5~\\degC'' line, or about 500~GtCO$_2$e.  The red lines represent emissions under various future scenarios; see Table~\\ref{tab:ipcc_scenarios}. The relationship between future warming and cumulative emissions is only weakly dependent upon the emissions scenario. \\emph{Sources}: This figure was inspired by Figure~SPM.10 in the IPCC\\index{Intergovernmental Panel on Climate Change (IPCC)} report \\emph{Climate Change 2021: The Physical Science Basis}~\\cite[p.~SPM-37]{IPCC:2021tk}. Data are available under \\href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CC BY-SA 4.0} at \\href{https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_10/v20210809}{data.ceda.ac.uk/badc/ar6{\\textunderscore}wg1/data/spm/spm{\\textunderscore}10/v20210809}.">>=
 scenario_size <- 0.3
-spm_10_data <- readxl::read_excel(file.path("datasets", "SPM_10.xlsx"),
+spm_10_data <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "SPM_10.xlsx"),
                                   sheet = "data to plot")
 
 spm_10_data %>% 
@@ -1214,6 +1214,7 @@ London: Fourth Estate,
 \end{projects}
 
 
+\markright{References}
 \bibliographystyle{unsrtnat}
 \bibliography{MCBook2021}
 

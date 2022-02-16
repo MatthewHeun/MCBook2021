@@ -3,7 +3,7 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
-<<include, child="../../setup_chunks.Rnw">>=
+<<include, child="setup_chunks.Rnw">>=
 @
 
 
@@ -138,7 +138,7 @@ because of the valuable role bees\index{bee} play in pollinating human crops.
 <<PopulationGraph, fig.scap="World population~\\Pparen{} vs.\\ time by continent", fig.cap="World population vs.\\ time by continent, \\mft{P} in the IPARX equation. \\emph{Source}: \\citet{Roser:2021uu}.">>=
 # Gather data for Population vs. time graph.
 # But store in a data frame that we can use later.
-population <- readxl::read_excel(file.path("datasets", "population.xlsx"),
+population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
                                  sheet = "data to plot")
 region_pop <- population %>%
   dplyr::filter(
@@ -149,7 +149,7 @@ region_pop <- population %>%
     Country = dplyr::recode(Country, `Latin America` = "Latin Am.", `North America` = "North Am."),
   )
 
-population_fit <- readxl::read_excel(file.path("datasets", "PopulationCurveFit.xlsx"),
+population_fit <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "PopulationCurveFit.xlsx"),
                           sheet = "PopulationCurveFit - 1950")
 
 # Need this later
@@ -1002,6 +1002,11 @@ The History Guy \href{https://www.youtube.com/watch?v=FxqgBWxLZa0}
       How did each man's supporters react to the outcome?
 
 \end{projects}
+
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
 
 
 \cleardoublepage

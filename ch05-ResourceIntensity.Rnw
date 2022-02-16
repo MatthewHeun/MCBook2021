@@ -3,6 +3,9 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+<<include, child="setup_chunks.Rnw">>=
+@
+
 %#############################################################
 \chapter{Resource intensity of economic activity~\Rparen{}}
 \label{chap:resource_intensity}
@@ -1498,6 +1501,12 @@ US Geological Survey, National Minerals Information Center \\
         such as reliability, energy storage, or suitability for a particular application?
 
 \end{projects}
+
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
+
 
 \cleardoublepage
 
