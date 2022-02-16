@@ -206,9 +206,6 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 \include{ch11-Government}
 \include{ch12-PersonalAction}
 
-    % \Sexpr{knit_child("chapters/ch11-Government/ch11-Government.Rnw")}                     % \ref{chap:government}
-    % \Sexpr{knit_child("chapters/ch12-PersonalAction/ch12-PersonalAction.Rnw")}             % \ref{chap:personal_action}
-
 \cleardoublepage
 
 %#############################################################
