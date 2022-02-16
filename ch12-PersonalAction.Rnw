@@ -4,6 +4,10 @@
 %!TEX root = ../../book.Rnw
 
 
+<<include, child="setup_chunks.Rnw">>=
+@
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Individual Action}
 \label{chap:personal_action}
@@ -1044,6 +1048,12 @@ Wangari Maathai\index{Maathai, Wangari}, and Joseph Lstiburek\index{Lstiburek, J
       Why?
       
 \end{projects}
+
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
+
 
 \cleardoublepage
 

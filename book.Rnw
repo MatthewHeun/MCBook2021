@@ -195,12 +195,6 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 \include{ch09-Agriculture}
 \include{ch10-LandUseUrbanPlanning}
 
-
-    % \Sexpr{knit_child("chapters/ch07-Households/ch07-Households.Rnw")}                     % \ref{chap:households}
-    % \Sexpr{knit_child("chapters/ch08-Transportation/ch08-Transportation.Rnw")}             % \ref{chap:transportation}
-    % \Sexpr{knit_child("chapters/ch09-Agriculture/ch09-Agriculture.Rnw")}                   % \ref{chap:agriculture}
-    % \Sexpr{knit_child("chapters/ch10-LandUseUrbanPlanning/ch10-LandUseUrbanPlanning.Rnw")} % \ref{chap:land_use_urban_planning}
-
     
 %#############################################################
 \part{Towards Sustainability: Collective and Individual Actions}
@@ -208,6 +202,9 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 %#############################################################
 
 \cleardoublepage
+
+\include{ch11-Government}
+\include{ch12-PersonalAction}
 
     % \Sexpr{knit_child("chapters/ch11-Government/ch11-Government.Rnw")}                     % \ref{chap:government}
     % \Sexpr{knit_child("chapters/ch12-PersonalAction/ch12-PersonalAction.Rnw")}             % \ref{chap:personal_action}

@@ -4,6 +4,10 @@
 %!TEX root = ../../book.Rnw
 
 
+<<include, child="setup_chunks.Rnw">>=
+@
+
+
 %#############################################################
 \chapter{Collective Action}
 \label{chap:government}
@@ -1433,6 +1437,11 @@ STARS\index{Sustainability Tracking, Assessment, and Reporting System (STARS)} \
       corporate structure?
 
 \end{projects}
+
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
 
 
 \cleardoublepage
