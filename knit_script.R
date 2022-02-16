@@ -1,6 +1,6 @@
 # knit_script.R
 
-
+# Load packages
 library(dplyr)             # For manipulating data
 library(ggplot2)           # For graphing functions
 library(magrittr)          # For pipe operator, (%>%)
@@ -15,6 +15,7 @@ library(tidyr)             # For manipulating data
 library(viridis)           # For a great color palette for graphs
 library(xtable)            # For awesome tables
 
+
 # Set default sizes for figures throughout the book.
 # We can always override with options on each individual chunk.
 knitr::opts_chunk$set(echo = FALSE, 
@@ -26,7 +27,7 @@ knitr::opts_chunk$set(echo = FALSE,
                       verbose = TRUE)
 
 
-
+# Establish colors and graphic parameters.
 mc_title_blue <- "#0d5e92"
 data_line_size <- 1
 bar_colour <- mc_title_blue
@@ -40,21 +41,8 @@ guide_line_colour <- "gray50"
 guide_linetype <- "solid"
 
 
-
-
-
-
-
-knitr::knit(input = "book.Rnw")
-knitr::knit(input = "ch01-Introduction.Rnw")
-knitr::knit(input = "ch02-Boundaries.Rnw")
-knitr::knit(input = "ch03-Population.Rnw")
-knitr::knit(input = "ch04-Affluence.Rnw")
-knitr::knit(input = "ch05-ResourceIntensity.Rnw")
-knitr::knit(input = "ch06-ImpactIntensity.Rnw")
-knitr::knit(input = "ch07-Households.Rnw")
-knitr::knit(input = "ch08-Transportation.Rnw")
-knitr::knit(input = "ch09-Agriculture.Rnw")
-knitr::knit(input = "ch10-LandUseUrbanPlanning.Rnw")
-knitr::knit(input = "ch11-Government.Rnw")
-knitr::knit(input = "ch12-PersonalAction.Rnw")
+# Knit all parts of the book.
+rnw_files <- list.files(pattern = "*.Rnw")    
+for (i in 1:length(rnw_files)) {
+  knitr::knit(rnw_files[[i]])
+}

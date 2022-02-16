@@ -99,12 +99,6 @@ $\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right
 % \definecolor{fgcolor}{rgb}{255,0,0}
 % \definecolor{errorcolor}{rgb}{255,0,0}
 
-% 
-% Begin R and knitr setup
-% 
-
-<<include, child="setup_chunks.Rnw">>=
-@
 
 %
 % Create environments for questions and projects, 
