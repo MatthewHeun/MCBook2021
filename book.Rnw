@@ -249,7 +249,7 @@ In the long run, such a framework is more useful and more enduring.
     \cleardoublepage
 
  \backmatter                    % back matter
-    \input{bio}                 % author(s)'s short bio(s)
+    \include{bio}                 % author(s)'s short bio(s)
 								% please see the bios folder for some pdf examples
     
     \cleardoublepage
