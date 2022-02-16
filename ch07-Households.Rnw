@@ -3,6 +3,8 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+<<include, child="setup_chunks.Rnw">>=
+@
 
 %#############################################################
 \chapter{Households}
@@ -1352,6 +1354,10 @@ United States, 1999 \\
       
 \end{projects}
 
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
 
 
 \cleardoublepage

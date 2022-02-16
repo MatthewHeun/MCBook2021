@@ -3,6 +3,11 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+
+<<include, child="setup_chunks.Rnw">>=
+@
+
+
 %#############################################################
 \chapter{Transportation}
 \label{chap:transportation}
@@ -1133,6 +1138,11 @@ transportation, petroleum\index{petroleum}, and technology.
       for transportation services\index{transportation service}?
       
 \end{projects}
+
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
 
 
 \cleardoublepage

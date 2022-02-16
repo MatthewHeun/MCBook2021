@@ -4,6 +4,10 @@
 %!TEX root = ../../book.Rnw
 
 
+<<include, child="setup_chunks.Rnw">>=
+@
+
+
 %#############################################################
 \chapter{Impact of resources~\Xparen{}}
 \label{chap:impact_intensity}
@@ -1405,6 +1409,10 @@ Energy Vault simulation  \\
 
 \end{projects}
 
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
 
 
 \cleardoublepage
