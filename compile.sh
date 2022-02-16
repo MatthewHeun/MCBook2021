@@ -10,6 +10,8 @@ done
 makeindex book.idx
 pdflatex book.tex
 pdflatex book.tex
+makeindex book.idx # added
+pdflatex book.tex # added
 open book.pdf
 
 # Comment the following line if it helps to see the auxiliary files.
