@@ -192,7 +192,7 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 
 \include{ch07-Households}
 \include{ch08-Transportation}
-
+\include{ch09-Agriculture}
 
 
     % \Sexpr{knit_child("chapters/ch07-Households/ch07-Households.Rnw")}                     % \ref{chap:households}

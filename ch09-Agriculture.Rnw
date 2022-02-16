@@ -3,6 +3,11 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+
+<<include, child="setup_chunks.Rnw">>=
+@
+
+
 %#############################################################
 \chapter{Agriculture}
 \label{chap:agriculture}
@@ -1164,6 +1169,12 @@ from its headwaters to Los Angeles\index{Los Angeles}, Tucson\index{Tucson}, and
       \label{project:regenerative_ag}
       
 \end{projects}
+
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
+
 
 \cleardoublepage 
 
