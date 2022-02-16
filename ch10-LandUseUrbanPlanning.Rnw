@@ -3,6 +3,11 @@
 % before making the book.
 %!TEX root = ../../book.Rnw
 
+
+<<include, child="setup_chunks.Rnw">>=
+@
+
+
 %#############################################################
 \chapter{Land use}
 \label{chap:land_use_urban_planning}
@@ -987,8 +992,12 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes}\i
       Start by looking at ``Plan Local d’Urbanisme'' (PLU) or the more limited 
       ``Carte Communale.''
 
-      
 \end{projects}
+
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
 
 
 \cleardoublepage
