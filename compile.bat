@@ -15,6 +15,6 @@ pdflatex book.tex
 pdflatex book.tex
 makeindex book.idx 
 pdflatex book.tex 
-open book.pdf
+start book.pdf
 
 REM ./clean.sh
