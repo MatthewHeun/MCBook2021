@@ -1,18 +1,18 @@
 
-rm -f ch*.tex
-rm -f *.aux
-rm -f *.blg
-rm -f *.bbl
-rm -f *.idx
-rm -f *.ilg
-rm -f *.ind
-rm -f *.lof
-rm -f *.log
-rm -f *.lot
-rm -f *.out
-rm -f book.pdf
-rm -f book.tex
-rm -f book-concordance.tex
-rm -f book.toc
-rm -f -R figure
+del /Q ch*.tex
+del /Q *.aux
+del /Q *.blg
+del /Q *.bbl
+del /Q *.idx
+del /Q *.ilg
+del /Q *.ind
+del /Q *.lof
+del /Q *.log
+del /Q *.lot
+del /Q *.out
+del /Q book.pdf
+del /Q book.tex
+del /Q book-concordance.tex
+del /Q book.toc
+del /Q /S figure
 
