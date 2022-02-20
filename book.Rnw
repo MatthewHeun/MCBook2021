@@ -14,8 +14,8 @@
 % bibliography
 % \usepackage[comma,sort,authoryear]{natbib}         % author-year
 \usepackage[square,comma,sort&compress,numbers]{natbib} % numbered
+\usepackage{makeidx}     % Per Tondo's suggestion on 1 Feb 2022.
 \usepackage{chapterbib}
-\usepackage{makeidx}
 
 % 
 % Begin LaTeX packages imported by the authors.
@@ -26,7 +26,6 @@
 \usepackage{epigraph}    % For epigraphs below chapter titles.
 \usepackage{eurosym}     % For the EU currency symbol.
 \usepackage{gensymb}     % For the \degree command.
-\usepackage{makeidx}     % Per Tondo's suggestion on 1 Feb 2022.
 \usepackage{microtype}   % For (more) beautiful typesetting.
 \usepackage{rotating}    % For rotating figures.
 \usepackage[normalem]{ulem} % For strikethrough text.
