@@ -150,16 +150,16 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 \begin{document}
 
  \frontmatter                   % we'll produce the fm for you; 
-    % \input{fm}                  % we'll need an Abstract and Keywords
-								% please see the abs-pref folder for some pdf examples
-    \include{fm}
-
-    % Splitting the front matter and the acknowledgements
-    % to get the bibliography for the preface in the right place.
-    \input{ack}
-    
+ 
+ % \input{fm}                  % we'll need an Abstract and Keywords
+ % please see the abs-pref folder for some pdf examples
+ \include{fm}
+ 
+ % Splitting the front matter and the acknowledgements
+ % to get the bibliography for the preface in the right place.
+ \include{ack}
+ 
  \mainmatter
-    
     
 %#############################################################
 \part{A Sustainability Framework: The IPARX Identity}
