@@ -1,7 +1,3 @@
-% The next command tells RStudio to do "Compile PDF" on book.Rnw,
-% instead of this chapter, thereby eliminating the need to switch back to book.Rnw 
-% before making the book.
-%!TEX root = ../../book.Rnw
 
 %#############################################################
 \chapter{Land use}
@@ -987,8 +983,12 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes}\i
       Start by looking at ``Plan Local d’Urbanisme'' (PLU) or the more limited 
       ``Carte Communale.''
 
-      
 \end{projects}
+
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
 
 
 \cleardoublepage

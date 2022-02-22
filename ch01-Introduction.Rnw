@@ -1,8 +1,3 @@
-% The next command tells RStudio to do "Compile PDF" on book.Rnw,
-% instead of this chapter, thereby eliminating the need to switch back to book.Rnw 
-% before making the book.
-%!TEX root = ../../book.Rnw
-
 
 %#############################################################
 \chapter{Introduction}
@@ -151,7 +146,7 @@ imports and exports between countries.
 Part~\ref{part:sustainability_challenges} shows data mostly from the U.S.%
 \footnote{
   Readers are encouraged to remember that the U.S.\ is atypical in many ways.
-  Sociologically, the U.S.\ is WIERD\index{western, industrialized, educated, rich, and democratic (WIERD)}
+  Sociologically, the U.S.\ is WIERD\index{Western, industrialized, educated, rich, and democratic (WIERD)}
   (Western, industrialized, educated, rich, and democratic).
   Additionally, the U.S.\ has a low population density\index{population density} and lots of resources.
   While our framework for sustainability thinking is universal, the data used for
@@ -843,5 +838,9 @@ the full restoration is likely to cost more than \euro{8}~billion.
 \end{projects}
 
 
-\cleardoublepage
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
 
+
+\cleardoublepage

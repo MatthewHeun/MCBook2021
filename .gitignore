@@ -20,5 +20,10 @@ book.idx
 book.ind
 fm.log
 MCBook2021.bib.sav
-book.lof
-book.lot
+*.lof
+*.lot
+*.aux
+*.bbl
+*.blg
+ch*.tex
+.log

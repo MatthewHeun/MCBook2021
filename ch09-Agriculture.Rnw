@@ -1,7 +1,3 @@
-% The next command tells RStudio to do "Compile PDF" on book.Rnw,
-% instead of this chapter, thereby eliminating the need to switch back to book.Rnw 
-% before making the book.
-%!TEX root = ../../book.Rnw
 
 %#############################################################
 \chapter{Agriculture}
@@ -1164,6 +1160,12 @@ from its headwaters to Los Angeles\index{Los Angeles}, Tucson\index{Tucson}, and
       \label{project:regenerative_ag}
       
 \end{projects}
+
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
+
 
 \cleardoublepage 
 

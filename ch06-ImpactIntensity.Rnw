@@ -1,8 +1,3 @@
-% The next command tells RStudio to do "Compile PDF" on book.Rnw,
-% instead of this chapter, thereby eliminating the need to switch back to book.Rnw 
-% before making the book.
-%!TEX root = ../../book.Rnw
-
 
 %#############################################################
 \chapter{Impact of resources~\Xparen{}}
@@ -1207,7 +1202,7 @@ Energy Vault simulation  \\
       Are there other approach(es)? If so, what are they?
       What assumptions lead you to prefer one approach over another?
 
-\item Should carbon capture and storage/\index{carbon sequestration} be pursued as a stop-gap
+\item Should carbon capture and storage/carbon sequestration\index{carbon sequestration} be pursued as a stop-gap
       measure (until we get fully renewable energy\index{renewable energy})?
       What is your criteria for making that decision?
       Under what circumstances would your answer change?
@@ -1405,6 +1400,10 @@ Energy Vault simulation  \\
 
 \end{projects}
 
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
 
 
 \cleardoublepage

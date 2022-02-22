@@ -1,8 +1,3 @@
-% The next command tells RStudio to do "Compile PDF" on book.Rnw,
-% instead of this chapter, thereby eliminating the need to switch back to book.Rnw 
-% before making the book.
-%!TEX root = ../../book.Rnw
-
 
 %#############################################################
 \chapter{Households}
@@ -781,7 +776,7 @@ A 100-W incandescent lamp\index{incandescent lamp} supplies about 1230~lumens of
 for a service efficacy\index{energy-service efficacy} of 12.3~lumens/W.
 A 100-W equivalent LED lamp\index{LED lamp} gives 1200~lumens but consumes only 12~W of electricity\index{electricity},
 for a service efficacy\index{energy-service efficacy} of 100~lumens/W.
-LED lamps\index{LED lamp} are 8 times better than incandescent lamps\index{incandescent lamp} at providing 
+LED lamps\index{LED lamp} are 8~times better than incandescent lamps\index{incandescent lamp} at providing 
 their energy service\index{energy service}, lighting\index{lighting}.
 
 The move from energy efficiency\index{energy efficiency} to service efficacy\index{energy-service efficacy}
@@ -1352,6 +1347,10 @@ United States, 1999 \\
       
 \end{projects}
 
+
+\markright{References}
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
 
 
 \cleardoublepage
