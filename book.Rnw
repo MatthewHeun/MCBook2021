@@ -88,16 +88,6 @@ $\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right
 \normalsize
 }
 
-% A bug was introduced in LaTeX packages around 13 Nov 2021.
-% That bug results in many errors of the form "fgcolor not defined".
-% The next line works around the bug.
-% See https://stackoverflow.com/questions/69967014/possible-knitr-bug-interaction-with-mc-style
-% for more details.
-% ---MKH, 16 Nov 2021. 
-% This bug appears to have been fixed by 2 Jan 2022.
-% \definecolor{fgcolor}{rgb}{255,0,0}
-% \definecolor{errorcolor}{rgb}{255,0,0}
-
 
 %
 % Create environments for questions and projects, 
@@ -149,17 +139,54 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 
 \begin{document}
 
- \frontmatter                   % we'll produce the fm for you; 
+\frontmatter                   % we'll produce the fm for you; 
  
- % \input{fm}                  % we'll need an Abstract and Keywords
+\input{fm}                  % we'll need an Abstract and Keywords
  % please see the abs-pref folder for some pdf examples
- \include{fm}
+ % \include does not work in the preamble!
+ % \include{fm}
  
+ 
+ 
+% Warning!!!!!!!!!
+% Big hack here.
+% I'm starting the main matter here SO THAT
+% we can have references in the preface.
+% To get references in the preface, we use the same mechanism 
+% that is used for every other chapter, namely \include{}.
+% However, \include{} cannot be used in the \frontmatter, 
+% only \input.
+% But \input does not allow chapter bibliographies 
+% without even worse hacks!
+% So the solution is to start the mainmatter BEFORE the 
+% preface.
+% 
+% The downside to this approach is that page numbering restarts at \mainmatter,
+% and changes from lower-case roman to arabic.
+% We want to continue lower-case roman and NOT restart page numbering.
+% To achieve the desired effect, there are lines at the top of the preface file and 
+% at the top of the acknowledgements file (ack)
+% that both reset the page numbering to lower-case roman AND
+% set the page number manually.
+% **************** WARNING ******************
+% Always check that the page numbering is right for the
+% preface and acknowledgements.
+
+
+\mainmatter
+ 
+ 
+\include{preface}
+
  % Splitting the front matter and the acknowledgements
- % to get the bibliography for the preface in the right place.
- \include{ack}
- 
- \mainmatter
+ % to get the bibliography for the preface in the right place,
+ % at the end of the fm.tex file.
+\include{ack}
+
+\cleardoublepage
+
+\pagenumbering{arabic}
+
     
 %#############################################################
 \part{A Sustainability Framework: The IPARX Identity}
@@ -257,8 +284,9 @@ In the long run, such a framework is more useful and more enduring.
 \addcontentsline{toc}{chapter}{\protect\numberline{}{Index}}
 \markboth{Index}{Index}
 
-\printindex
 % \input{book.ind}            % if you have an Index
+\printindex
+
 
 \end{document}
 
