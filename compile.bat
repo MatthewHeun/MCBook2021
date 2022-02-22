@@ -18,4 +18,4 @@ pdflatex book.tex
 start book.pdf
 
 REM ./clean.sh
-./clean.bat
+./cleanJVA.bat
