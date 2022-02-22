@@ -119,6 +119,7 @@ $\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right
 \PassOptionsToPackage{hyphens}{url}
 \usepackage[colorlinks=true,linkcolor=MyDarkBlue,
 citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
+\usepackage{doi}
 
 \renewcommand{\UrlBreaks}{\do\.\do\@\do\\\do\/\do\!\do\_\do\|\do\;\do\>\do\]%
 \do\)\do\,\do\?\do\&\do\'\do+\do\=\do\#%
