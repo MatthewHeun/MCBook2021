@@ -1,7 +1,9 @@
 #!/bin/bash
 
 rm -f ch*.tex
-rm -f *.aux
+rm -f ch*.aux
+rm -f bio.aux
+rm -f book.aux
 rm -f *.blg
 rm -f *.bbl
 rm -f *.idx
