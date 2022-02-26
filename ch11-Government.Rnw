@@ -814,11 +814,12 @@ There is, clearly, room for improvement.
                  Note that transportation efficacy\index{transportation-service efficacy}
                  (in passenger-km/gallon) 
                  increases with more passengers
-                 for all vehicles.
+                 for any vehicle.
                  \emph{Sources}:  
-                 (a)~\copyright{}2021 Kent County, 
-                 Maxar Technologies, 
-                 USAD Farm Service Agency;
+                 % (a)~\copyright{}2021 Kent County, 
+                 % Maxar Technologies, 
+                 % USAD Farm Service Agency;
+                 (a)~\copyright{} \href{https://openstreetmap.org}{OpenStreetMap} contributors.
                  (b)~\copyright{}2022 Matthew Kuperus Heun.}
         \label{fig:collective_transport_photos}
 \end{figure}
