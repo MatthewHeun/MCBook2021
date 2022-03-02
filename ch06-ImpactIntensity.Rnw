@@ -908,7 +908,7 @@ Historically, as GDP (equal to $\mft{P} \times \mft{A}$ in Equation~\ref{eq:IPAR
 primary energy consumption\index{primary energy consumption} also rises,
 as shown in Figure~\ref{fig:E_vs_GDP_graph}.
 
-<<E_vs_GDP_graph, fig.scap="World primary energy consumption vs.\\ world GDP", fig.cap = "World primary energy consumption\\index{primary energy consumption} vs.\\ world GDP.">>=
+<<E_vs_GDP_graph, fig.scap="World primary energy consumption vs.\\ world GDP", fig.cap = "World primary energy consumption\\index{primary energy consumption} vs.\\ world GDP, 1800--2019.">>=
 egdp_df <- primary_energy %>% 
   dplyr::group_by(Year) %>%
   dplyr::summarise(energy_EJ = sum(energy_EJ)) %>%
