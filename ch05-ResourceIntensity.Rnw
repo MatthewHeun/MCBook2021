@@ -185,7 +185,7 @@ The stylist commutes to the salon in a vehicle
 (which requires iron ore\index{iron ore}, copper\index{copper (Cu)}, and other natural resources to manufacture; 
 perhaps refined liquid fuel to operate; and 
 an atmosphere\index{atmosphere} that is a source of oxygen and which absorbs CO$_2$ and water, the products of combustion).
-The stylist uses electric clippers and a hairdryer\index{hairdryer} during each appointment
+The stylist uses electric clippers and a hair dryer\index{hair dryer} during each appointment
 (which require both natural resources to manufacture and electricity\index{electricity} to operate).
 You sit in a fancy chair 
 (which contains metals and plastics) and
@@ -285,7 +285,7 @@ for its survival.
 Indeed, we can say that the economy runs on natural resources.\index{resources!natural}
 All goods and the infrastructure\index{infrastructure} for all services depend on
 manufactured objects of all types:
-cars and the roads on which they travel, 
+cars and the roads on which they travel,
 homes and the utilities that sustain life,
 food and the refrigerators\index{refrigerator} that maintain freshness,
 toilets and the sewer systems that remove wastes\index{waste}.
@@ -418,7 +418,7 @@ material_per_gdp %>%
   ggplot2::scale_fill_viridis_d(direction = -1) +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("Material extraction [kg/" * {"2017 Intl. $"} %.% year * "]"),
+                y = expression("Material extraction [kg/" * {"2017 Intl. $"}%.%yr * "]"),
                 fill = ggplot2::element_blank()) +
   
   MKHthemes::xy_theme()
@@ -732,10 +732,10 @@ energy in one form can be converted to energy in any other form
 using suitable machines.
 An automobile\index{automobile} converts chemical potential energy (gasoline\index{gasoline})
 to kinetic energy\index{kinetic energy} (car motion).
-A hairdryer\index{hairdryer} converts electricity\index{grid electricity} (from the grid)
+A hair dryer\index{hair dryer} converts electricity\index{grid electricity} (from the grid)
 to heat (applied to hair).
 A solar panel\index{solar panel} converts solar energy (from the Sun\index{Sun})
-to electricity\index{electricity} (for use in many devices, including, possibly, hair dryers\index{hairdryer}).
+to electricity\index{electricity} (for use in many devices, including, possibly, hair dryers\index{hair dryer}).
 
 Because energy is the master resource,\index{master resource (energy)}
 we use energy as the prime example in the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX}).
@@ -894,7 +894,7 @@ Economic growth in the developing world, particularly in China\index{China}, led
 noticeable rise in per-capita energy consumption starting in 2001.
 \end{mcframe}
 
-<<WeakSustEnergyGraph, fig.width=3.25, fig.scap="Percentage above weak sustainability for fossil fuels", fig.cap=paste0("Percentage above maximum weakly sustainable\\index{weak sustainability} extraction rates~($\\rho$) for world fossil fuel\\index{fossil fuels} consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate and a negative value of $\\rho$), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for Oil (less than 50 years, so above the weakly sustainable extraction rate and a positive value of $\\rho$), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for Natural gas (so positive $\\rho$). \\emph{Sources}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
+<<WeakSustEnergyGraph, fig.width=3.25, fig.scap="Percentage above weak sustainability for fossil fuels", fig.cap=paste0("Percentage above maximum weakly sustainable\\index{weak sustainability} extraction rates~($\\rho$) for world fossil fuel\\index{fossil fuels} consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate and a negative value of $\\rho$), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for oil (less than 50 years, so above the weakly sustainable extraction rate and a positive value of $\\rho$), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for natural gas (so positive $\\rho$). \\emph{Sources}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
 
 weak_sust_energy_rho <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
                                             sheet = "data to plot") %>% 
@@ -1201,7 +1201,7 @@ the final term in the IPARX identity\index{IPARX identity}~(Equation~\ref{eq:IPA
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Peter M. Schwarz, \emph{Energy economics}. Oxfordshire, UK: Routledge, 2018. \\
+Peter M. Schwarz, \emph{Energy Economics}. Oxfordshire, UK: Routledge, 2018. \\
 % https://www.routledge.com/Energy-Economics/Schwarz/p/book/9780415676786
 
 % Kostas Bithas and Panos Kalimeris,
@@ -1219,12 +1219,12 @@ Peter M. Schwarz, \emph{Energy economics}. Oxfordshire, UK: Routledge, 2018. \\
 
 The Technology Connections YouTube channel has three videos on the history of
 combustion-based lighting\index{lighting} technology, dated
-\href{https://www.youtube.com/watch?v=tURHTuKHBZs}{16 June 2021},
-\href{https://www.youtube.com/watch?v=F3rncxf4Or8}{1 July 2021}, and
-\href{https://www.youtube.com/watch?v=D_qFWoa_HR4}{2 August 2021}. \\
+\href{https://www.youtube.com/watch?v=tURHTuKHBZs}{June 16, 2021},
+\href{https://www.youtube.com/watch?v=F3rncxf4Or8}{July 1, 2021}, and
+\href{https://www.youtube.com/watch?v=D_qFWoa_HR4}{August 2, 2021}. \\
 
 \noindent 
-US Geological Survey, National Minerals Information Center \\ 
+US Geological Survey, National Minerals Information Center, \\ 
 \href{www.usgs.gov/centers/nmic}{www.usgs.gov/centers/nmic}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1279,7 +1279,7 @@ US Geological Survey, National Minerals Information Center \\
         How is energy, the master resource\index{master resource (energy)}, involved in each of these steps?
         How has water provision changed over time where you live?
 
-  \item Evaluate the notion of a closed-loop water system (so called ``toilet-to-tap''\index{toilet-to-tap}).
+  \item Evaluate the notion of a closed-loop water system (so-called ``toilet-to-tap''\index{toilet-to-tap}).
         Would you drink water from a toilet-to-tap\index{toilet-to-tap} system?
         Does your answer change if you learn that, already, there are low levels
         of many pharmaceutical substances and organic pollutants in drinking water?
@@ -1335,7 +1335,7 @@ US Geological Survey, National Minerals Information Center \\
         In other words, to break even you would have to use the organic\index{organic} cotton bag
         every day for about 54 years.
         Hank Green\index{Green, Hank} \href{https://www.youtube.com/watch?v=2PF5AAEAWTs}{attributed his emotional reaction}
-        to cognitive dissonance between the life cycle analysis results and his
+        to cognitive dissonance between the life-cycle analysis results and his
         intuition that cotton bags should be better for the environment.
         How should humans respond when analytical results go against intuition?
         Hank\index{Green, Hank} says, ``Simplicity is almost always a lie.''
