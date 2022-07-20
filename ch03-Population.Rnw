@@ -515,7 +515,7 @@ ggplot2::ggplot() +
                  Crude birth rate (CBR) and
                  crude death rate (CDR) are defined as births or deaths per year per 1000 people
                  in the total population (uncorrected for age or sex cohorts). 
-                 \emph{Source}: Our World in Data/Max Roser.}
+                 \emph{Source}: \citet{Roser:2013uk}.}
         \label{fig:dtt}
 \end{figure}
 

@@ -542,7 +542,7 @@ more efficient technology.
 \caption[EROI for several energy sources]
         {Energy return on investment (EROI)\index{energy return on investment (EROI)}
         for several energy sources.
-\emph{Sources}:~\cite{Wikipedia_EROI,WNA2020,EtOH_in_BR,Gomiero2015} and sources therein.}
+\emph{Sources}:~\citet{Wikipedia_EROI}, \citet{WNA2020}, \citet{EtOH_in_BR}, \citet{Gomiero2015}, and sources therein.}
 \label{tab:eroi}
 \begin{tabular}{ll}
 \toprule
