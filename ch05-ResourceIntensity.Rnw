@@ -393,7 +393,7 @@ material_per_capita %>%
   ggplot2::scale_fill_viridis_d(direction = -1) +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("Material extraction [t/" * person%.%year * "]"),
+                y = expression("Material extraction [t/" * person%.%yr * "]"),
                 fill = ggplot2::element_blank()) +
   
   MKHthemes::xy_theme()
@@ -875,7 +875,7 @@ energy_per_capita %>%
   
   ggplot2::scale_y_continuous(limits = c(0, 80)) +
   ggplot2::labs(x = NULL,
-                y = expression("Primary energy per capita [GJ/" * person%.%year * "]")) +
+                y = expression("Primary energy per capita [GJ/" * person%.%yr * "]")) +
   
   MKHthemes::xy_theme()
  @

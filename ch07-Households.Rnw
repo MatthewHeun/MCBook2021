@@ -178,7 +178,7 @@ average_household_energy_consumption <- readxl::read_excel(file.path("chapters",
   dplyr::filter(complete.cases(.)) %>% 
   dplyr::mutate(
     var = dplyr::case_when(
-      var == "Energy cons. [GJ/hu]" ~ '"Energy cons. [GJ/" * hu%.%year * "]"', 
+      var == "Energy cons. [GJ/hu]" ~ '"Energy cons. [GJ/" * hu%.%yr * "]"', 
       var == "Housing units [millions]" ~ '"Housing units [millions]"',
       TRUE ~ var
     )
@@ -320,7 +320,7 @@ household_energy_by_size %>%
    ggplot2::geom_bar(stat = "identity") +
    
    ggplot2::labs(x = expression("Home size ["*ft^2*"]"),
-                 y = expression("Avg. energy cons. [GJ/" * hu%.%year * "]"), 
+                 y = expression("Avg. energy cons. [GJ/" * hu%.%yr * "]"), 
                  fill = ggplot2::element_blank()) +
    ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.03))) +
    viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
