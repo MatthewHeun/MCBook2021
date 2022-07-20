@@ -19,7 +19,7 @@ this chapter (Chapter~\ref{chap:personal_action}) focuses on individual actions\
 that can be taken 
 within existing systems, structures, and political environments.
 Individual actions\index{individual action} are steps that can be taken
-to become more sustainable in spite of
+to become more sustainable despite
 trends or incentives in broader society
 that foster unsustainable practices or consumption.
 
@@ -431,7 +431,7 @@ in transportation.
 \paragraph{Individual+Choices+Transportation}
 Individuals can decide which vehicles to buy or lease.
 Choosing a used vehicle
-will prevent additional carbon being embodied\index{embodied carbon} in a new vehicle.
+will prevent additional carbon from being embodied\index{embodied carbon} in a new vehicle.
 Choosing a smaller car will reduce carbon emissions\index{CO$_2$ emissions!transportation} 
 associated with commuting.
 Individuals should not ``over buy'' cars.
@@ -444,7 +444,7 @@ Don’t fly.
 % Walking or using mass transit instead driving a personal vehicle is high-impact 
 % practice for sustainability (see Table~\ref{tab:US-Carbon-Table}).
 
-Individuals can choose to live in a cities, which, on a per-person basis
+Individuals can choose to live in cities, which, on a per-person basis
 emit less CO$_2$ than suburban areas~\cite{Jones:2014tf}.
 Indeed, the most sustainable transportation is often public transportation
 where vehicle occupancy is high and everyone shares the carbon embodied\index{embodied carbon} in the
@@ -507,7 +507,7 @@ All food embodies resources (such as energy\index{embodied energy}) and emission
 Wasting food means that no benefits come from those embodied resources and emissions\index{embodied carbon}.
 After minimizing food waste\index{food waste}, 
 individuals can adopt a climate-friendly or climate-friendlier diet.
-Typically climate-friendly diets involve reductions to meat consumption, particularly beef\index{beef}.
+Typically, climate-friendly diets involve reductions of meat consumption, particularly beef\index{beef}.
 
 There are a variety of ways to improve the sustainability of food production.
 Cooking at home minimizes packaging and is usually the least expensive option
@@ -574,7 +574,7 @@ land use and urban planning\index{urban planning}.
 \paragraph{Individual+Choices+Land Use}
 %..............................
 
-Where you live is a key land-use decision, because it determines how you
+Where you live is a key land-use decision because it determines how you
 relate to all the land around you, mainly through transportation.
 However, how you use your dwelling is also important.
 How will you use the space around your dwelling?
@@ -614,7 +614,7 @@ It may be helpful to consider the questions shown in Table~\ref{tab:personal_ene
 as we move into the future.
 The questions crystallize many possible individual actions\index{individual action} discussed throughout this book.
 Table~\ref{tab:personal_energy_actions} provides answers 
-that move in the direction of a more-sustainable world 
+that move in the direction of a more sustainable world 
 and make a difference to the planet,
 without requiring an agrarian, pre-1900s lifestyle.
 Figure~\ref{fig:CO2-Savings} provides estimates of the CO$_2$ emissions savings\index{CO$_2$ emissions!reduction}
@@ -710,7 +710,7 @@ co2_amounts %>%
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Mike Berners-Lee, \emph{How bad are bananas\index{banana}? The carbon footprint\index{carbon footprint} of everything}.
+Mike Berners-Lee, \emph{How Bad are Bananas\index{banana}? The Carbon Footprint\index{carbon footprint} of Everything}.
 Vancouver: Greystone Books, 2011.
 
 
@@ -720,7 +720,7 @@ Vancouver: Greystone Books, 2011.
 
 Vlog Brothers\index{Vlog Brothers} 
 \href{https://www.youtube.com/watch?v=wcMLFMsIVis}{How do we fix the climate?} 
-(Youtube, August 13, 2021)\\
+(YouTube, August 13, 2021)\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}
@@ -781,7 +781,7 @@ Wangari Maathai\index{Maathai, Wangari}, and Joseph Lstiburek\index{Lstiburek, J
 \item \label{question:lstiburek}
       In contrast to Wangari Maathai\index{Maathai, Wangari},
       Joseph Lstiburek\index{Lstiburek, Joeseph} is a much less controversial
-      (and less well known) figure.
+      (and less well-known) figure.
       Which of these two people do you think has made the greater contribution 
       to sustainability?
       What factors influence your answer?
@@ -881,7 +881,7 @@ Wangari Maathai\index{Maathai, Wangari}, and Joseph Lstiburek\index{Lstiburek, J
       of trying to divorce the individual from the collective\index{collectives}. 
       Do you consider voting an individual action\index{individual action} or a collective action\index{collective action}? 
       How about going to a climate-change rally? 
-      Are oprganizing and attending the rally on different sides of the line?
+      Are organizing and attending the rally on different sides of the line?
       Wangari Maathai\index{Maathai, Wangari} (Section~\ref{sec:stories_individual_actions})
       was an originator of the Green Belt movement\index{Green Belt movement}. 
       Was organizing the Green Belt movement\index{Green Belt movement} 
@@ -965,10 +965,10 @@ Wangari Maathai\index{Maathai, Wangari}, and Joseph Lstiburek\index{Lstiburek, J
       Weigh all the food that comes into your house.
       Weigh all the packaging waste\index{packaging waste} (receptacle \#1).
       Weigh all the food waste\index{food waste} (receptacle \#2).
-      What patterns to you notice?
+      What patterns do you notice?
       Where are opportunities for enhanced sustainability?
       Research the carbon coefficients\index{carbon coefficient} for different kinds of food and food packaging.
-      What is having a greater impact, your food waste\index{food waste} or food packaging?
+      What is having a greater impact: your food waste\index{food waste} or food packaging?
       
 \item \label{problem:blog_social_media}
       Start a blog\index{blog} or social media account dedicated to local politics. 
@@ -998,7 +998,7 @@ Wangari Maathai\index{Maathai, Wangari}, and Joseph Lstiburek\index{Lstiburek, J
       FIRE (financial independence, retire early)\index{financial independence, retire early (FIRE)} strategy
       actually lead to a more sustainable life?
       Does it matter for sustainability when money is earned by an individual? 
-      Early, mid, or late career?
+      Early, mid-, or late career?
       Be sure to define the FIRE\index{financial independence, retire early (FIRE)} career and 
       carefully consider the point of comparison for determining the sustainability of 
       a FIRE\index{financial independence, retire early (FIRE)} life.
@@ -1026,7 +1026,7 @@ Wangari Maathai\index{Maathai, Wangari}, and Joseph Lstiburek\index{Lstiburek, J
       Chapters~\ref{chap:government} and \ref{chap:personal_action}.
       
 \item \label{problem:more_actions} 
-      Figure~\ref{fig:CO2-Savings} shows an example sustainability-beneficial action\index{sustainability action}
+      Figure~\ref{fig:CO2-Savings} shows an example of a sustainability-beneficial action\index{sustainability action}
       for each row of Table~\ref{tab:personal_energy_actions}.
       Verify the calculation of CO$_2$ emissions savings\index{CO$_2$ emissions!reduction} presented 
       in Figure~\ref{fig:CO2-Savings}.
