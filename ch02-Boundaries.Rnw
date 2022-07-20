@@ -286,7 +286,7 @@ The upper limits for these indicators are intended to define a
 
 \begin{table}\centering
 \caption[Planetary boundaries]
-        {Some planetary boundaries\index{planetary boundaries}. \emph{Source}: \citet{Rockstrom2009,SteffenRR2015}.}
+        {Some planetary boundaries\index{planetary boundaries}. \emph{Sources}: \citet{Rockstrom2009} and \citet{SteffenRR2015}.}
 \label{tab:planetBoundaries}
 \begin{tabular}{l l}
 \toprule
@@ -475,7 +475,7 @@ erodable_limit_data %>%
         \caption[Biophysical boundaries and human development]
                 {Various relationships between biophysical boundaries and human development.
                  The boundary or carrying capacity of the ecosystem\index{ecosystem} is shown as a dash-dot red line.
-                 A variable related to human development, such as population or food production is
+                 A variable related to human development, such as population or food production, is
                  shown in blue.
                  There are five possible patterns for human development relative to the ecosystem\index{ecosystem}
                  boundaries.
@@ -609,7 +609,7 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI
 
 Figure \ref{fig:CO2Graph} shows average atmospheric CO$_2$ concentrations\index{atmospheric CO$_2$ concentration}
 over the last 
-800 thousand years (0.8 million years). 
+800,000~years (0.8 million years). 
 Figure~\ref{fig:CarbonEmissionsGraph} shows 
 the rate of world CO$_2$ emission since 1800~\ICOtwoparen{}.
 The clear trend is upward, with small drops corresponding to years of economic recession\index{recession}.
@@ -671,7 +671,7 @@ ggplot2::ggplot() +
 
   ggplot2::scale_y_continuous(limits = c(0, max_y)) +
   ggplot2::labs(x = NULL,
-                y = expression("World "*CO[2]*" emissions [Gt/year]")) +
+                y = expression("World "*CO[2]*" emissions [Gt/yr]")) +
 
   MKHthemes::xy_theme()
 @
@@ -689,18 +689,18 @@ especially regarding fossil fuels\index{fossil fuels} and agriculture.
 
 % see http://clivebest.com/blog/?p=1169 and references therein.
 Here is a brief description of how climate change\index{climate change} is happening. 
-If the radiation\index{solar radiation} received from The Sun\index{Sun} exceeds the heat radiated from the Earth,
+If the radiation\index{solar radiation} received from the Sun\index{Sun} exceeds the heat radiated from the Earth,
 the Earth's temperature will increase. 
 As the Earth's temperature increases, the amount of heat radiated from the Earth
 increases as well.
 Eventually, the Earth will reach a new, higher equilibrium temperature. 
-The amount of radiation\index{solar radiation} received from The Sun\index{Sun} is relatively constant; there are a variety of 
+The amount of radiation\index{solar radiation} received from the Sun\index{Sun} is relatively constant; there are a variety of 
 satellite-based and Earth-bound measurement systems to confirm this. 
-Because The Sun\index{Sun} is very hot, the radiation\index{solar radiation} it emits is high energy (short wavelength).
+Because the Sun\index{Sun} is very hot, the radiation\index{solar radiation} it emits is high energy (short wavelength).
 Greenhouse gases, such as water vapor\index{water vapor}, which is an extremely potent greenhouse gas\index{greenhouse gas},
-and CO$_2$, do not absorb the short wavelengths of The Sun's\index{Sun} radiation\index{solar radiation}. 
+and CO$_2$, do not absorb the short wavelengths of the Sun's\index{Sun} radiation\index{solar radiation}. 
 Radiation\index{thermal radiation} from the Earth is low energy (long wavelength) because the Earth's
-surface temperature is much lower than The Sun's\index{Sun}.
+surface temperature is much lower than the Sun's\index{Sun}.
 CO$_2$ and water vapor\index{water vapor} absorb energy at these longer wavelengths.
 The lower atmosphere\index{atmosphere} is thus opaque to thermal radiation\index{thermal radiation} from the Earth's surface.
 Much of the radiation\index{thermal radiation} leaving the Earth's surface is absorbed by greenhouse gases\index{greenhouse gas} 
@@ -724,11 +724,11 @@ to the atmosphere\index{atmosphere}.
 Less radiation\index{thermal radiation} leaving the upper atmosphere means that more heat is trapped
 closer to the Earth's surface. 
 In a matter of days, the upper atmosphere\index{atmosphere} will warm enough to radiate as much heat as 
-is incoming from The Sun\index{Sun}.
+is incoming from the Sun\index{Sun}.
 It takes a much longer time for the rest of the Earth to equilibrate to having a 
 warmer atmosphere\index{atmosphere}. 
 Melting ice caps change the amount of incoming solar radiation\index{solar radiation} that is initially absorbed
-the the Earth.
+by the Earth.
 Melting Arctic permafrost\index{permafrost} releases methane\index{methane (CH$_4$)}, 
 another very potent greenhouse gas\index{greenhouse gas}.
 All these positive feedback loops\index{feedback loops} take decades to reach a new steady state.
@@ -894,14 +894,14 @@ of the IPARX identity\index{IPARX identity}.
 
 \noindent 
 Bill Gates\index{Gates, Bill}, 
-\emph{How to avoid a climate disaster: The solutions we have and the breakthroughs we need}.
+\emph{How to Avoid a Climate Disaster: The solutions We Have and the Breakthroughs We Need}.
 New York: Random House, 
 2021. \\
 
 \noindent 
 IPCC,
-\emph{Climate change 2021: The physical science basis. 
-Contribution of working group I to the sixth assessment report
+\emph{Climate change 2021: The Physical Science Basis. 
+Contribution of Working Group I to the Sixth Assessment Report
 of the Intergovernmental Panel on Climate Change}\index{Intergovernmental Panel on Climate Change (IPCC)}.
 Cambridge, UK: Cambridge University Press, 
 2021. \\
@@ -927,12 +927,12 @@ London: Fourth Estate,
 \emph{The age of stupid}, a 2009 documentary film \\
 
 \noindent 
-\emph{A convenient truth: Urban solutions from Curitiba, Brazil\index{Curitiba, Brazil}} \\
+\emph{A convenient truth: Urban solutions from Curitiba, Brazil\index{Curitiba, Brazil}}, \\
 \href{https://www.filmsforaction.org/watch/a-convenient-truth/}
 {www.filmsforaction.org/watch/a-convenient-truth} \\
 
 \noindent 
-\emph{The power of community: How Cuba\index{Cuba} survived peak oil} \\
+\emph{The power of community: How Cuba\index{Cuba} survived peak oil}, \\
 \href{https://www.filmsforaction.org/watch/the-power-of-community-how-cuba-survived-peak-oil-2006/}
 {www.filmsforaction.org/watch/the-power-of-community-how-cuba-survived-peak-oil-2006}
 
@@ -947,8 +947,8 @@ London: Fourth Estate,
 \item Assessments (Section~\ref{sec:ecosystem_services}) 
       play a useful role in clarifying where scientific uncertainties remain. 
       While uncertainties can be used to argue for a ``wait and see'' approach, they 
-      can equally well be used to argue for a \textbf{precautionary approach}\index{precautionary approach}. What are 
-      pros and cons of ``wait and see'' versus ``let's be careful?''
+      can equally well be used to argue for a \textbf{precautionary approach}\index{precautionary approach}. What are the
+      pros and cons of ``wait and see'' vs.\ ``let's be careful?''
       
 \item One extreme form of habitat restoration is known as 
       ``Pleistocene\index{Pleistocene} rewilding''~\cite{Donlan2005}. %%https://www.nature.com/articles/436913a
@@ -1039,7 +1039,7 @@ London: Fourth Estate,
       Discuss the approach of using monetary payments as a remedy or redress for
       injustice.
 
-\item Seven Dutch environmental groups won a ruling in May, 2021 against 
+\item Seven Dutch environmental groups won a ruling in May 2021 against 
       Royal Dutch Shell\index{Royal Dutch Shell} (subject to appeal). 
       Approximately 17,000 Dutch citizens were co-plaintiffs in the case on the
       basis that Shell's\index{Royal Dutch Shell}
