@@ -710,7 +710,8 @@ iparx_df <- impact %>%
     total_population = total_population / 1e9, # convert total population to billions
     gdppc_2017_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000 # convert $/person to k$/person
   ) %>% 
-  magrittr::set_names(c("Year", "\\ICOtwo{} [Gt/yr]", "\\mft{P} [billions]", "\\mft{A} [k\\$/person]", 
+  # Need k$/person.yr in next line.
+  magrittr::set_names(c("Year", "\\ICOtwo{} [Gt/yr]", "\\mft{P} [billions]", "\\mft{A} [k\\$/person-yr]", 
                         "\\REp{} [MJ/\\$]", "\\XCOtwo{} [Mt/EJ]"))
 
 # Extract the data to be used in the equation
