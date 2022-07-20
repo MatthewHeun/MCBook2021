@@ -515,7 +515,8 @@ ggplot2::ggplot() +
                 {Schematic of demographic transition theory\index{demographic transition theory}.
                  Crude birth rate (CBR) and
                  crude death rate (CDR) are defined as births or deaths per year per 1000 people
-                 in the total population (uncorrected for sex or age cohorts).}
+                 in the total population (uncorrected for age or sex cohorts). 
+                 \emph{Source}: Our World in Data/Max Roser.}
         \label{fig:dtt}
 \end{figure}
 
