@@ -289,9 +289,8 @@ dplyr::bind_rows(historical_pop, future_pop) %>%
   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 12, by = 2)) +
 
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = "World population (P) [billions]") +
-                # y = expression(paste("World population (", italic(P), ") [billions]")) +
-  
+                y = expression(paste("World population (", italic(P), ") [billions]"))) +
+
   MKHthemes::xy_theme()
 @
 
