@@ -410,8 +410,7 @@ Of course, impacts can be calculated by $\mft{P} \times \mft{A} \times \mft{R} \
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Growth in GDP per capita~\Aparen{} is the explicit goal of many economic policies.
-There are two ways the economy can increase GDP, 
-either
+There are two ways the economy can increase GDP:
 (a)~by consuming more inputs 
 or
 (b)~by using existing inputs more efficaciously%
@@ -825,13 +824,14 @@ and be sustainable.
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Robert J. Gordon\index{Gordon, Robert J.}, \emph{The rise and fall of American growth: The U.S.\ standard of
-living since the Civil War}.
+Robert J. Gordon\index{Gordon, Robert J.}, \emph{The Rise and Fall of American Growth: The U.S.\ Standard of
+Living Since the Civil War}.
 Princeton, NJ: Princeton University Press, 2016. \\
 
 \noindent 
 Tim Jackson, \emph{Prosperity Without Growth: Foundations for the Economy of Tomorrow}.
 Oxfordshire, UK: Routledge, 2017.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}
@@ -845,18 +845,18 @@ Oxfordshire, UK: Routledge, 2017.
 % \href{https://gregmankiw.blogspot.com}{gregmankiw.blogspot.com} \\
 
 \noindent
-United Nations\index{United Nations (UN)} Department of Economic and Social Affairs, Statistics Division \\ 
+United Nations\index{United Nations (UN)} Department of Economic and Social Affairs, Statistics Division, \\ 
 \href{https://unstats.un.org}{unstats.un.org} \\
 
 \noindent
-United States Department of Commerce, Bureau of Economic Analysis (BEA)\index{Bureau of Economic Analysis (BEA)} \\ 
+United States Department of Commerce, Bureau of Economic Analysis (BEA)\index{Bureau of Economic Analysis (BEA)}, \\ 
 \href{https://www.bea.gov}{www.bea.gov}\\
 
 \noindent
 \emph{Energy, Economic, and Environmental Scenarios}:
 a short, open, online course at IST-Lisbon
 about the relationships
-among economic growth, energy efficiency, and greenhouse-gas emissions\index{CO$_2$ emissions} \\
+among economic growth, energy efficiency, and greenhouse-gas emissions\index{CO$_2$ emissions}, \\
 \href{https://courses.elearning.tecnico.ulisboa.pt/courses/course-v1:MOOCs+exergyX+2022/about}{courses.elearning.tecnico.ulisboa.pt/courses/course-v1:MOOCs+exergyX+2022/about}
 
 
@@ -1099,7 +1099,7 @@ among economic growth, energy efficiency, and greenhouse-gas emissions\index{CO$
       literature, and tools/machines, all of which are difficult to be completely 
       self-sufficient with respect to.
       Furthermore, what starting ``wealth\index{wealth}'' (in whatever form) did these people 
-      have, versus what ``income\index{income}'' did they/do they generate to add to or subtract
+      have, vs.\ what ``income\index{income}'' did they/do they generate to add to or subtract
       from that initial amount?
       \label{project:off-grid}
 
