@@ -146,7 +146,7 @@ at the macro level~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportat
 The tight links between transportation and economic growth
 are one reason that economic growth and energy consumption are correlated.
 
-<<TSI, fig.scap="Transportation services index vs.\\ time", fig.cap="Seasonally-adjusted Transportation Services Index (TSI)\\index{Transportation Services Index (TSI)} vs.\\ time for freight, passenger, and overall transportation services (2000~$=$~100). \\emph{Source}: \\citet{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.">>=
+<<TSI, fig.scap="Transportation services index vs.\\ time", fig.cap="Seasonally adjusted Transportation Services Index (TSI)\\index{Transportation Services Index (TSI)} vs.\\ time for freight, passenger, and overall transportation services (2000~$=$~100). \\emph{Source}: \\citet{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.">>=
 TSI <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Transportation_Services_Index_and_Seasonally-Adjusted_Transportation_Data.xlsx"),
                                        sheet = "data to plot") %>% 
   dplyr::rename(
@@ -322,12 +322,11 @@ industrial processes, coal\index{coal}-derived PM\index{particulate matter (PM)}
 and sulfur compounds were additional concerns. 
 The introduction of ``dirty'' internal combustion engines\index{internal combustion engine (ICE) vehicle} 
 for transportation intensified air-quality issues, particularly in urban areas.
-Since the mid-twentieth century, air quality in
+Since the mid-20$^{\mathrm{th}}$ century, air quality in
 North America\index{North America}, Europe\index{Europe}, and Japan\index{Japan}
 has improved.
-However, emissions in South and East Asia\index{Asia} rose in the late twentieth and early 
-However, emissions in South and East Asia\index{Asia} rose in the late twentieth and early 
-twenty-first centuries. 
+However, emissions in South and East Asia\index{Asia} rose in the late 20$^{\mathrm{th}}$ and early 
+21$^{\mathrm{st}}$ centuries. 
 Global SO$_2$ emissions from transportation peaked about 1990, and
 global NO$_\text{x}$ emissions peaked around 2018. 
 Global ammonia\index{ammonia} emissions, a key contributor to PM\index{particulate matter (PM)}, 
