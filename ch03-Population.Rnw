@@ -167,7 +167,7 @@ ggplot2::ggplot() +
                                             fill = Country)) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = "World population (P) [billions]",
+                y = expression(paste("World population (", italic(P), ") [billions]")),
                 fill = ggplot2::element_blank()) +
 MKHthemes::xy_theme()
 @
@@ -290,6 +290,7 @@ dplyr::bind_rows(historical_pop, future_pop) %>%
 
   ggplot2::labs(x = ggplot2::element_blank(),
                 y = "World population (P) [billions]") +
+                # y = expression(paste("World population (", italic(P), ") [billions]")) +
   
   MKHthemes::xy_theme()
 @

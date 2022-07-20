@@ -157,8 +157,9 @@ affluence_growth_rate <- gdppc_fit %>%
                        linetype = curve_fit_linetype) +
   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 20, by = 2))) +
   ggplot2::labs(x = NULL, 
-                y = expression("Affluence (A) [2017 Intl. k$/" * person%.%yr * "]")) +
-  
+                # y = expression("Affluence (A) [2017 Intl. k$/" * person%.%yr * "]")) +
+                  y = expression(paste("Affluence (", italic(A), ") [2017 Intl. k$/" * person%.%yr * "]"))) +
+
   MKHthemes::xy_theme()
 @
 
