@@ -648,7 +648,7 @@ How much will I fly?                        & Little or not at all              
 \end{table}
 
 
-<<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example individual sustainability actions\\index{individual action} shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings\\index{CO$_2$ emissions!reduction}. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/year in a Honda Accord\\index{Honda Accord} vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~tCO$_2$/year. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity\\index{electricity} and natural gas\\index{natural gas} for a 2750~ft$^2$ home vs.\\ a 1250~ft$^2$ home in the U.S. Savings are ", small_house_savings, "~tCO$_2$/year. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/year. Savings are estimated to be ", chicken_savings, "~tCO$_2$/year. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/year in a Ford F150\\index{Ford F150} pickup truck or a Honda Accord\\index{Honda Accord} sedan. Savings will be ", accord_savings, "~tCO$_2$/year. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's\\index{New York} LaGuardia airport~(LGA)\\index{LaGuardia airport (LGA)} and London's\\index{London} Heathrow airport~(LHA)\\index{Heathrow airport (LHA)} vs.\\ a virtual\\index{virtual reality (VR)} meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~tCO$_2$/year. \\emph{Source}: own calculations.")>>=
+<<CO2-Savings, fig.pos="h!", fig.width=4.5, fig.scap="CO$_2$ savings from individual actions", fig.cap=paste0("CO$_2$ emission savings from example individual sustainability actions\\index{individual action} shown in Table~\\ref{tab:personal_energy_actions}. Choices are arranged in left-to-right order according to annual CO$_2$ emissions savings\\index{CO$_2$ emissions!reduction}. Living ``close enough to allow walking or cycling'' is represented by the choice of commuting 100~miles round trip, 230 times/yr in a Honda Accord\\index{Honda Accord} vs.\\ walking or cycling a short distance to work (with negligible CO$_2$ emissions). Emissions savings are ", no_commute_savings, "~tCO$_2$/yr. Choosing a ``small and used'' home is represented by the typical CO$_2$ emissions from electricity\\index{electricity} and natural gas\\index{natural gas} for a 2750~ft$^2$ home vs.\\ a 1250~ft$^2$ home in the U.S. Savings are ", small_house_savings, "~tCO$_2$/yr. Eating ``closer to the bottom of the food chain'' is represented by choosing to eat 6~ounces of steak vs.\\ 6~ounces of poultry for 25~meals/yr. Savings are estimated to be ", chicken_savings, "~tCO$_2$/yr. Choosing a ``small and used'' car is represented by the choice between driving 12,000~miles/yr in a Ford F150\\index{Ford F150} pickup truck or a Honda Accord\\index{Honda Accord} sedan. Savings will be ", accord_savings, "~tCO$_2$/yr. Flying ``little or not at all'' is represented by choosing between one round-trip flight per year between New York's\\index{New York} LaGuardia airport~(LGA)\\index{LaGuardia airport (LGA)} and London's\\index{London} Heathrow airport~(LHA)\\index{Heathrow airport (LHA)} vs.\\ a virtual\\index{virtual reality (VR)} meeting (with negligible CO$_2$ emissions). Savings are estimated at ", no_flight_savings, "~tCO$_2$/yr. \\emph{Source}: own calculations.")>>=
 co2_savings <- readxl::read_excel(file.path("chapters", "ch12-PersonalAction", "datasets", "CO2Savings.xlsx"),
                                   sheet = "savings")
 no_commute_savings <- co2_savings %>% dplyr::filter(Action == "No commute") %>% magrittr::extract2("Savings_MgCO2_year") %>% 
@@ -697,7 +697,7 @@ co2_amounts %>%
                              guide = "none") + 
 
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("Emissions [t" * CO[2] * "/year]"), 
+                y = expression("Emissions [t" * CO[2] * "/yr]"), 
                 fill = ggplot2::element_blank()) + 
   
   MKHthemes::xy_theme() + 
@@ -1003,10 +1003,10 @@ Wangari Maathai\index{Maathai, Wangari}, and Joseph Lstiburek\index{Lstiburek, J
       carefully consider the point of comparison for determining the sustainability of 
       a FIRE\index{financial independence, retire early (FIRE)} life.
       How would you rate the sustainability of 
-      an individual who lives a \$1M/year lifestyle for 40 years of a career vs.\
-      an individual who lives a \$4M/year lifestyle for 10 years and \$0M/year for 30 years thereafter.
-      What about an individual who lives the \$1M/year lifestyle 
-      for 10 years and \$0M/year for 30 years thereafter.
+      an individual who lives a \$1M/yr lifestyle for 40 years of a career vs.\
+      an individual who lives a \$4M/yr lifestyle for 10 years and \$0M/yr for 30 years thereafter.
+      What about an individual who lives the \$1M/yr lifestyle 
+      for 10 years and \$0M/yr for 30 years thereafter.
       
 \item Investigate renewable-energy\index{renewable energy} systems for your dwelling, 
       including rooftop solar photovoltaic panels\index{solar panel}, 

@@ -90,7 +90,7 @@ For example, Figure~\ref{fig:LLNL_energy_sankey} shows that
 representing 12\% of final energy\index{final energy} consumption.
 Table~\ref{tab:corrected_co2_emissions} shows that CO$_2$ emissions\index{CO$_2$ emissions!household}
 from the U.S.\ residential sector in 2018 total 
-\Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Mt/year,
+\Sexpr{US_CO2_by_sector$`CO$_2$ emissions [Mt]`[[1]] %>% round(0)}~Mt/yr,
 predominantly from electricity\index{electricity} and natural gas\index{natural gas}.
 Energy consumption in dwellings is a source of sustainability impacts
 (CO$_2$ emissions\index{CO$_2$ emissions!household} and 
@@ -158,7 +158,7 @@ total_household_energy_consumption %>%
    ggplot2::scale_y_continuous(breaks = seq(0, 12, by = 2)) +
    viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
    ggplot2::labs(x = ggplot2::element_blank(),
-                 y = "U.S. household energy use [EJ/year]", 
+                 y = "U.S. household energy use [EJ/yr]", 
                  fill = ggplot2::element_blank()) +
    MKHthemes::xy_theme()
 @

@@ -148,7 +148,7 @@ population_fit <- readxl::read_excel(file.path("chapters", "ch03-Population", "d
 pop_growth_rate <- population_fit %>%
   dplyr::filter(coeffs == "b") %>%
   magrittr::extract2("values") %>%
-  magrittr::multiply_by(100) %>% # To convert from decimal to percent/year.
+  magrittr::multiply_by(100) %>% # To convert from decimal to percent/yr.
   sprintf(fmt = "%#.2f")
 
 ggplot2::ggplot() +

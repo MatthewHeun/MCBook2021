@@ -637,14 +637,14 @@ fit_sentence <- function(.df) {
   b <- .df %>%
     dplyr::filter(coeffs == "b") %>%
     magrittr::extract2("values") %>%
-    magrittr::multiply_by(100) # To convert from decimal to percent/year.
+    magrittr::multiply_by(100) # To convert from decimal to percent/yr.
   r2 <- .df %>%
     dplyr::filter(coeffs == "r2") %>%
     magrittr::extract2("values")
   paste0("The red line shows an exponential curve fit to data after 1950 ", 
          "with exponential growth\\index{exponential growth} rate of ", 
          b %>% sprintf(fmt = "%#.2f"), 
-         "~\\%/year and R$^2$~=~", 
+         "~\\%/yr and R$^2$~=~", 
          r2 %>% sprintf(fmt = "%#.3f"), 
          ".")
 }
@@ -657,7 +657,7 @@ CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "da
 CO2_fit <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "CO2EmissionsCurveFit.xlsx"), 
                           sheet = "CO2EmissionsCurveFit from 1950")
 
-max_y <- 40 # Gt/year
+max_y <- 40 # Gt/yr
 
 ggplot2::ggplot() +
   ggplot2::geom_vline(xintercept = c(1932, 1945, 1974, 1982, 1992, 2009, 2020), colour = "gray50", size = 0.2) +
@@ -788,7 +788,7 @@ SSP5-8.5 & Emissions triple by 2100 & 4.4 \\
 
 Figure~\ref{fig:Fig-SPM-10} illustrates carbon budgets\index{carbon budget} and highlights the challenges 
 to avoiding 1.5~\degC{} total warming.
-Assuming no change in today's CO$_2$ emissions\index{CO$_2$ emissions} rate of about 35~GtCO$_2$/year
+Assuming no change in today's CO$_2$ emissions\index{CO$_2$ emissions} rate of about 35~GtCO$_2$/yr
 (Figure~\ref{fig:CarbonEmissionsGraph}), 
 we have less than 15 years before we are committed to a 1.5~\degC{}
 temperature increase over the long term 
@@ -1129,12 +1129,12 @@ London: Fourth Estate,
       had data, the carbon budget\index{carbon budget} was 1500~GtCO$_2$,
       meaning that if 1500~GtCO$_2$ were emitted, the Earth's temperature would 
       eventually rise by 1.5~\degC{} relative to pre-industrial conditions.
-      With a then-current global emissions rate of 22.7~GtCO$_2$/year, the carbon
+      With a then-current global emissions rate of 22.7~GtCO$_2$/yr, the carbon
       budget would be ``spent'' by 2056, assuming no increase in emissions rate.
       Since 1990, the global emission rate for carbon has increased, 
       as shown in Figure~\ref{fig:CarbonEmissionsGraph}. 
       In 2021, the remaining carbon budget\index{carbon budget} is 500~GtCO$_2$ with an emissions 
-      rate of 35~GtCO$_2$/year.
+      rate of 35~GtCO$_2$/yr.
       In other words, the budget will be used up in 2035, 
       again assuming no increase in emissions rate. \label{question:carbon_budget}
       \begin{enumerate}

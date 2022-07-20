@@ -139,7 +139,7 @@ Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
          Sankey diagram\index{Sankey diagram!CO$_2$ emissions} for 2018.
          CO$_2$ emissions from electricity production\index{electricity generation} are not attributed to end uses;
          see Table~\ref{tab:corrected_co2_emissions}.
-         Flows in Mt/year.
+         Flows in Mt/yr.
          \emph{Source}: \citet{Lawrence-Livermore-National-Laboratory:wp}.}
 \label{fig:LLNL_CO2_sankey}
 \end{figure}
@@ -642,7 +642,7 @@ in the right-side terms for the prime example of energy and CO$_2$ emissions\ind
 To do so, we introduce a rate version of the IPARX identity\index{IPARX identity}.
 
 In the rate version of the IPARX identity\index{IPARX identity}, each term is represented 
-by an exponential rate of change (\mft{r}\:\!), measured in \%/year.
+by an exponential rate of change (\mft{r}\:\!), measured in \%/yr.
 The rate version of the IPARX identity\index{IPARX identity} indicates 
 which terms are moving in a sustainable direction (\mft{r} < 0) and
 which terms are moving in an unsustainable direction (\mft{r} > 0).
@@ -654,11 +654,11 @@ which terms are moving in an unsustainable direction (\mft{r} > 0).
 Each rate (\mft{r}\:\!) is calculated by
 
 \begin{equation} \label{eq:rate_calcs}
-  \mft{r}_\mft{y} = \left[ \left( \frac{\mft{y}_2}{\mft{y}_1} \right) ^ \frac{\text{1}}{\mft{t}_2 - \mft{t}_1} - \text{1} \right] \times \text{100~\%/year} \; ,
+  \mft{r}_\mft{y} = \left[ \left( \frac{\mft{y}_2}{\mft{y}_1} \right) ^ \frac{\text{1}}{\mft{t}_2 - \mft{t}_1} - \text{1} \right] \times \text{100~\%/yr} \; ,
 \end{equation}
 %
 where
-\mft{r} is the rate of change in \%/year;
+\mft{r} is the rate of change in \%/yr;
 \mft{y} is one of \ICOtwo{}, \mft{P}, \mft{A}, \REp{}, or \XCOtwo{}
 for the prime example of energy and CO$_2$ emissions\index{CO$_2$ emissions};
 subscript ``2'' indicates a later year; and 

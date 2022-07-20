@@ -164,7 +164,7 @@ ggplot2::ggplot() +
   ggplot2::scale_fill_viridis_d(direction = -1) +
 
   ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
-  ggplot2::labs(y = "Extracted material [Gt/year]") +
+  ggplot2::labs(y = "Extracted material [Gt/yr]") +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
                 fill = ggplot2::element_blank()) +
@@ -759,7 +759,7 @@ Industry and transportation use more energy than residences and commerce.
 \includegraphics[width=\linewidth]{chapters/ch05-ResourceIntensity/figures/Energy_US_2018.png}
 \caption[U.S.\ energy consumption Sankey diagram]
         {U.S.\ energy consumption Sankey diagram\index{Sankey diagram} for 2018. 
-         Flows in quads\index{quad}/year.
+         Flows in quads\index{quad}/yr.
          (1~quad\index{quad} is a quadrillion BTUs of energy,
          equal to 1.055$\times$10$^\text{18}$~J.)
          \emph{Source}: 
@@ -808,7 +808,7 @@ ggplot2::ggplot() +
                      mapping = ggplot2::aes_string(x = "Year", y = "energy_EJ", fill = "primary_energy_type")) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::labs(x = NULL,
-                y = "World energy consumption [EJ/year]",
+                y = "World energy consumption [EJ/yr]",
                 fill = NULL) +
   MKHthemes::xy_theme()
 @
@@ -870,7 +870,7 @@ energy_per_capita %>%
   ggplot2::geom_area() +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::labs(x = NULL,
-                y = "World energy consumption [EJ/year]",
+                y = "World energy consumption [EJ/yr]",
                 fill = NULL) +
   
   ggplot2::scale_y_continuous(limits = c(0, 80)) +
@@ -1041,7 +1041,7 @@ the primary energy intensity\index{primary energy intensity} of the world econom
 15 to 4~MJ/2017 international dollar across the last two centuries.
 The decline is caused by the fact that the world economy's GDP
 (Figure~\ref{fig:GDPGraph-Nordhaus})
-has been growing at a faster rate (in \%/year terms) than primary energy consumption\index{primary energy consumption}
+has been growing at a faster rate (in \%/yr terms) than primary energy consumption\index{primary energy consumption}
 (Figure~\ref{fig:PrimaryEnergyGraph}).
 The decline indicates that each additional dollar of GDP
 is created with incrementally less primary energy consumption\index{primary energy consumption}.
@@ -1104,7 +1104,7 @@ uk_coal_extraction %>%
   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
 
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = "UK coal production [Mt/year]") +
+                y = "UK coal production [Mt/yr]") +
 
   MKHthemes::xy_theme()
 @

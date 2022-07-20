@@ -598,7 +598,7 @@ food_emissions_US <- readxl::read_excel(file.path("chapters", "ch09-Agriculture"
   tidyr::pivot_longer(-`System Stage`, names_to = "Year", values_to = "co2_emissions") %>% 
   dplyr::mutate(
     Year = as.numeric(Year), 
-    co2_emissions = co2_emissions / 1e6, # Convert kt/year to Gt/year
+    co2_emissions = co2_emissions / 1e6, # Convert kt/yr to Gt/yr
     `System Stage` = factor(`System Stage`, levels = c("End of life", "Consumption",  
                                                        "Retail", "Transport", 
                                                        "Packaging", "Processing", "Production", "LULUC"))
@@ -611,7 +611,7 @@ food_emissions_US %>%
   ggplot2::geom_area() + 
   
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("Food GHG emissions [Gt "*CO[2]*"eq/year]"), 
+                y = expression("Food GHG emissions [Gt "*CO[2]*"eq/yr]"), 
                 fill = ggplot2::element_blank()) +
   
   ggplot2::scale_fill_viridis_d(direction = -1) +
