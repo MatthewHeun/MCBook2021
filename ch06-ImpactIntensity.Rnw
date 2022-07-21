@@ -923,8 +923,8 @@ egdp_df %>%
   ggplot2::geom_line(size = data_line_size, 
                      colour = data_line_colour,
                      linetype = data_linetype) + 
-  ggplot2::labs(x = "GDP [trillion 2017 Intl. $]", 
-                y = "Primary energy consumption [EJ]") +
+  ggplot2::labs(x = "GDP [trillion 2017 Intl. $/yr]", 
+                y = "Primary energy consumption [EJ/yr]") +
   
   MKHthemes::xy_theme()
 @
