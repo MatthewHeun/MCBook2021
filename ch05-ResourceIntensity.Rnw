@@ -164,7 +164,7 @@ ggplot2::ggplot() +
   ggplot2::scale_fill_viridis_d(direction = -1) +
 
   ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
-  ggplot2::labs(y = "Extracted material [Gt/year]") +
+  ggplot2::labs(y = "Extracted material [Gt/yr]") +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
                 fill = ggplot2::element_blank()) +
@@ -185,7 +185,7 @@ The stylist commutes to the salon in a vehicle
 (which requires iron ore\index{iron ore}, copper\index{copper (Cu)}, and other natural resources to manufacture; 
 perhaps refined liquid fuel to operate; and 
 an atmosphere\index{atmosphere} that is a source of oxygen and which absorbs CO$_2$ and water, the products of combustion).
-The stylist uses electric clippers and a hairdryer\index{hairdryer} during each appointment
+The stylist uses electric clippers and a hair dryer\index{hair dryer} during each appointment
 (which require both natural resources to manufacture and electricity\index{electricity} to operate).
 You sit in a fancy chair 
 (which contains metals and plastics) and
@@ -261,7 +261,7 @@ in Section~\ref{sec:what_is_sustainability}:
 Resources can be classified as ``renewable''\index{resources!renewable} or
 ``nonrenewable,''\index{resources!nonrenewable}
 based on their regeneration rates.\index{regeneration rate!of resources}
-Resources, such as The Sun\index{Sun},
+Resources, such as the Sun\index{Sun},
 that are expected to exist for millennia 
 are classified as renewable.
 Resources that regenerate quickly (on the order of decades), 
@@ -285,7 +285,7 @@ for its survival.
 Indeed, we can say that the economy runs on natural resources.\index{resources!natural}
 All goods and the infrastructure\index{infrastructure} for all services depend on
 manufactured objects of all types:
-cars and the roads on which they travel, 
+cars and the roads on which they travel,
 homes and the utilities that sustain life,
 food and the refrigerators\index{refrigerator} that maintain freshness,
 toilets and the sewer systems that remove wastes\index{waste}.
@@ -393,7 +393,7 @@ material_per_capita %>%
   ggplot2::scale_fill_viridis_d(direction = -1) +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("Material extraction [t/" * person%.%year * "]"),
+                y = expression("Material extraction [t/" * person%.%yr * "]"),
                 fill = ggplot2::element_blank()) +
   
   MKHthemes::xy_theme()
@@ -418,7 +418,7 @@ material_per_gdp %>%
   ggplot2::scale_fill_viridis_d(direction = -1) +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("Material extraction [kg/" * {"2017 Intl. $"} %.% year * "]"),
+                y = expression("Material extraction [kg/" * {"2017 Intl. $"}%.%yr * "]"),
                 fill = ggplot2::element_blank()) +
   
   MKHthemes::xy_theme()
@@ -614,7 +614,7 @@ a stable, steady-state recycling\index{recycling} system could exist
 provided that two conditions are met:
 (a)~a large stockpile of waste\index{waste} material exists 
     (so energy to obtain the waste\index{waste} material is small) and
-(b)~an exogenous source, such as The Sun\index{Sun}, supplies energy freely and
+(b)~an exogenous source, such as the Sun\index{Sun}, supplies energy freely and
     at sufficient rate for reprocessing of discarded material~\cite{Ayres:1999}.
 
 The importance of energy is evident,
@@ -732,10 +732,10 @@ energy in one form can be converted to energy in any other form
 using suitable machines.
 An automobile\index{automobile} converts chemical potential energy (gasoline\index{gasoline})
 to kinetic energy\index{kinetic energy} (car motion).
-A hairdryer\index{hairdryer} converts electricity\index{grid electricity} (from the grid)
+A hair dryer\index{hair dryer} converts electricity\index{grid electricity} (from the grid)
 to heat (applied to hair).
-A solar panel\index{solar panel} converts solar energy (from The Sun\index{Sun})
-to electricity\index{electricity} (for use in many devices, including, possibly, hair dryers\index{hairdryer}).
+A solar panel\index{solar panel} converts solar energy (from the Sun\index{Sun})
+to electricity\index{electricity} (for use in many devices, including, possibly, hair dryers\index{hair dryer}).
 
 Because energy is the master resource,\index{master resource (energy)}
 we use energy as the prime example in the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX}).
@@ -759,7 +759,7 @@ Industry and transportation use more energy than residences and commerce.
 \includegraphics[width=\linewidth]{chapters/ch05-ResourceIntensity/figures/Energy_US_2018.png}
 \caption[U.S.\ energy consumption Sankey diagram]
         {U.S.\ energy consumption Sankey diagram\index{Sankey diagram} for 2018. 
-         Flows in quads\index{quad}/year.
+         Flows in quads\index{quad}/yr.
          (1~quad\index{quad} is a quadrillion BTUs of energy,
          equal to 1.055$\times$10$^\text{18}$~J.)
          \emph{Source}: 
@@ -808,7 +808,7 @@ ggplot2::ggplot() +
                      mapping = ggplot2::aes_string(x = "Year", y = "energy_EJ", fill = "primary_energy_type")) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::labs(x = NULL,
-                y = "World energy consumption [EJ/year]",
+                y = "World energy consumption [EJ/yr]",
                 fill = NULL) +
   MKHthemes::xy_theme()
 @
@@ -870,12 +870,12 @@ energy_per_capita %>%
   ggplot2::geom_area() +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::labs(x = NULL,
-                y = "World energy consumption [EJ/year]",
+                y = "World energy consumption [EJ/yr]",
                 fill = NULL) +
   
   ggplot2::scale_y_continuous(limits = c(0, 80)) +
   ggplot2::labs(x = NULL,
-                y = expression("Primary energy per capita [GJ/" * person%.%year * "]")) +
+                y = expression("Primary energy per capita [GJ/" * person%.%yr * "]")) +
   
   MKHthemes::xy_theme()
  @
@@ -894,7 +894,7 @@ Economic growth in the developing world, particularly in China\index{China}, led
 noticeable rise in per-capita energy consumption starting in 2001.
 \end{mcframe}
 
-<<WeakSustEnergyGraph, fig.width=3.25, fig.scap="Percentage above weak sustainability for fossil fuels", fig.cap=paste0("Percentage above maximum weakly sustainable\\index{weak sustainability} extraction rates~($\\rho$) for world fossil fuel\\index{fossil fuels} consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate and a negative value of $\\rho$), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for Oil (less than 50 years, so above the weakly sustainable extraction rate and a positive value of $\\rho$), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for Natural gas (so positive $\\rho$). \\emph{Sources}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
+<<WeakSustEnergyGraph, fig.width=3.25, fig.scap="Percentage above weak sustainability for fossil fuels", fig.cap=paste0("Percentage above maximum weakly sustainable\\index{weak sustainability} extraction rates~($\\rho$) for world fossil fuel\\index{fossil fuels} consumption. Current and future extraction rates ($r_{cf}$) include extrapolated growth of extraction rates for all fuels. Estimated remaining years are ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Coal") %>% magrittr::extract2("Years remaining"), "~years for coal (greater than 50 years, so lower than the weakly sustainable extraction rate and a negative value of $\\rho$), ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Oil") %>% magrittr::extract2("Years remaining"), "~years for oil (less than 50 years, so above the weakly sustainable extraction rate and a positive value of $\\rho$), and ", weak_sust_energy_rho %>% dplyr::filter(`Fossil fuel` == "Natural gas") %>% magrittr::extract2("Years remaining"), "~years for natural gas (so positive $\\rho$). \\emph{Sources}: \\citet{U.S.-Energy-Information-Agency:tr} and own calculations.")>>=
 
 weak_sust_energy_rho <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "WeakSustainabilityCalcs.xlsx"),
                                             sheet = "data to plot") %>% 
@@ -1041,7 +1041,7 @@ the primary energy intensity\index{primary energy intensity} of the world econom
 15 to 4~MJ/2017 international dollar across the last two centuries.
 The decline is caused by the fact that the world economy's GDP
 (Figure~\ref{fig:GDPGraph-Nordhaus})
-has been growing at a faster rate (in \%/year terms) than primary energy consumption\index{primary energy consumption}
+has been growing at a faster rate (in \%/yr terms) than primary energy consumption\index{primary energy consumption}
 (Figure~\ref{fig:PrimaryEnergyGraph}).
 The decline indicates that each additional dollar of GDP
 is created with incrementally less primary energy consumption\index{primary energy consumption}.
@@ -1104,7 +1104,7 @@ uk_coal_extraction %>%
   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
 
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = "UK coal production [Mt/year]") +
+                y = "UK coal production [Mt/yr]") +
 
   MKHthemes::xy_theme()
 @
@@ -1192,7 +1192,7 @@ so we are growing economies with unsustainable fossil-fuel consumption\index{fos
 while at the same time
 relying less on consumption of (potentially) sustainable biomass\index{biomass}.
 
-The next chapter looks at the impact 
+The next chapter looks at the impacts 
 of resource extraction~\Xparen{}, 
 the final term in the IPARX identity\index{IPARX identity}~(Equation~\ref{eq:IPARX}).
 
@@ -1201,7 +1201,7 @@ the final term in the IPARX identity\index{IPARX identity}~(Equation~\ref{eq:IPA
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Peter M. Schwarz, \emph{Energy economics}. Oxfordshire, UK: Routledge, 2018. \\
+Peter M. Schwarz, \emph{Energy Economics}. Oxfordshire, UK: Routledge, 2018. \\
 % https://www.routledge.com/Energy-Economics/Schwarz/p/book/9780415676786
 
 % Kostas Bithas and Panos Kalimeris,
@@ -1219,12 +1219,12 @@ Peter M. Schwarz, \emph{Energy economics}. Oxfordshire, UK: Routledge, 2018. \\
 
 The Technology Connections YouTube channel has three videos on the history of
 combustion-based lighting\index{lighting} technology, dated
-\href{https://www.youtube.com/watch?v=tURHTuKHBZs}{16 June 2021},
-\href{https://www.youtube.com/watch?v=F3rncxf4Or8}{1 July 2021}, and
-\href{https://www.youtube.com/watch?v=D_qFWoa_HR4}{2 August 2021}. \\
+\href{https://www.youtube.com/watch?v=tURHTuKHBZs}{June 16, 2021},
+\href{https://www.youtube.com/watch?v=F3rncxf4Or8}{July 1, 2021}, and
+\href{https://www.youtube.com/watch?v=D_qFWoa_HR4}{August 2, 2021}. \\
 
 \noindent 
-US Geological Survey, National Minerals Information Center \\ 
+US Geological Survey, National Minerals Information Center, \\ 
 \href{www.usgs.gov/centers/nmic}{www.usgs.gov/centers/nmic}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1259,7 +1259,7 @@ US Geological Survey, National Minerals Information Center \\
 
   \item Why is the weak sustainability\index{weak sustainability} criterion a good criterion?
         What are the drawbacks to weak sustainability\index{weak sustainability} criteria?
-        What is the basis for your judgement?
+        What is the basis for your judgment?
 
   \item In which circumstances is a weak sustainability\index{weak sustainability} criterion appropriate?
         In which circumstances is the strong sustainability\index{strong sustainability} criterion appropriate?
@@ -1279,7 +1279,7 @@ US Geological Survey, National Minerals Information Center \\
         How is energy, the master resource\index{master resource (energy)}, involved in each of these steps?
         How has water provision changed over time where you live?
 
-  \item Evaluate the notion of a closed-loop water system (so called ``toilet-to-tap''\index{toilet-to-tap}).
+  \item Evaluate the notion of a closed-loop water system (so-called ``toilet-to-tap''\index{toilet-to-tap}).
         Would you drink water from a toilet-to-tap\index{toilet-to-tap} system?
         Does your answer change if you learn that, already, there are low levels
         of many pharmaceutical substances and organic pollutants in drinking water?
@@ -1335,7 +1335,7 @@ US Geological Survey, National Minerals Information Center \\
         In other words, to break even you would have to use the organic\index{organic} cotton bag
         every day for about 54 years.
         Hank Green\index{Green, Hank} \href{https://www.youtube.com/watch?v=2PF5AAEAWTs}{attributed his emotional reaction}
-        to cognitive dissonance between the life cycle analysis results and his
+        to cognitive dissonance between the life-cycle analysis results and his
         intuition that cotton bags should be better for the environment.
         How should humans respond when analytical results go against intuition?
         Hank\index{Green, Hank} says, ``Simplicity is almost always a lie.''

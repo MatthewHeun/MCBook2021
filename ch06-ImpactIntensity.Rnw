@@ -139,7 +139,7 @@ Figure~\ref{fig:LLNL_CO2_sankey} would otherwise indicate.
          Sankey diagram\index{Sankey diagram!CO$_2$ emissions} for 2018.
          CO$_2$ emissions from electricity production\index{electricity generation} are not attributed to end uses;
          see Table~\ref{tab:corrected_co2_emissions}.
-         Flows in Mt/year.
+         Flows in Mt/yr.
          \emph{Source}: \citet{Lawrence-Livermore-National-Laboratory:wp}.}
 \label{fig:LLNL_CO2_sankey}
 \end{figure}
@@ -587,7 +587,7 @@ regarding hydropower\index{hydro electricity}.
 Today, the potential for hydro\index{hydro electricity} is greatest in central Africa\index{Africa}.
 The proposed Grand Inga Dam\index{Grand Inga Dam} in the 
 Democratic Republic of the Congo (DRC)\index{Democratic Republic of the Congo (DRC)}
-would be the largest dam in the world and could house a 40--70 GW hydro\index{hydro electricity} power station.
+would be the largest dam in the world and could house a 40--70 GW hydropower\index{hydro electricity} station.
 Moreover, there are considerable negative environmental and social impacts from 
 hydro\index{hydro electricity} projects, such as changes to soil salinity, silting, and the destruction
 of communities located in the proposed reservoir.
@@ -642,7 +642,7 @@ in the right-side terms for the prime example of energy and CO$_2$ emissions\ind
 To do so, we introduce a rate version of the IPARX identity\index{IPARX identity}.
 
 In the rate version of the IPARX identity\index{IPARX identity}, each term is represented 
-by an exponential rate of change (\mft{r}\:\!), measured in \%/year.
+by an exponential rate of change (\mft{r}\:\!), measured in \%/yr.
 The rate version of the IPARX identity\index{IPARX identity} indicates 
 which terms are moving in a sustainable direction (\mft{r} < 0) and
 which terms are moving in an unsustainable direction (\mft{r} > 0).
@@ -654,11 +654,11 @@ which terms are moving in an unsustainable direction (\mft{r} > 0).
 Each rate (\mft{r}\:\!) is calculated by
 
 \begin{equation} \label{eq:rate_calcs}
-  \mft{r}_\mft{y} = \left[ \left( \frac{\mft{y}_2}{\mft{y}_1} \right) ^ \frac{\text{1}}{\mft{t}_2 - \mft{t}_1} - \text{1} \right] \times \text{100~\%/year} \; ,
+  \mft{r}_\mft{y} = \left[ \left( \frac{\mft{y}_2}{\mft{y}_1} \right) ^ \frac{\text{1}}{\mft{t}_2 - \mft{t}_1} - \text{1} \right] \times \text{100~\%/yr} \; ,
 \end{equation}
 %
 where
-\mft{r} is the rate of change in \%/year;
+\mft{r} is the rate of change in \%/yr;
 \mft{y} is one of \ICOtwo{}, \mft{P}, \mft{A}, \REp{}, or \XCOtwo{}
 for the prime example of energy and CO$_2$ emissions\index{CO$_2$ emissions};
 subscript ``2'' indicates a later year; and 
@@ -710,19 +710,20 @@ iparx_df <- impact %>%
     total_population = total_population / 1e9, # convert total population to billions
     gdppc_2017_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000 # convert $/person to k$/person
   ) %>% 
-  magrittr::set_names(c("Year", "\\ICOtwo{} [Gt/yr]", "\\mft{P} [billions]", "\\mft{A} [k\\$/person]", 
+  # Need k$/person.yr in next line.
+  magrittr::set_names(c("Year", "\\ICOtwo{} [Gt/yr]", "\\mft{P} [billions]", "\\mft{A} [k\\$/person$\\cdot$yr]", 
                         "\\REp{} [MJ/\\$]", "\\XCOtwo{} [Mt/EJ]"))
 
 # Extract the data to be used in the equation
 r_I_220 <- iparx_df %>% trim_for_chapter(var = "\\ICOtwo{} [Gt/yr]") %>% rate_func()
 r_P_220 <- iparx_df %>% trim_for_chapter(var = "\\mft{P} [billions]") %>% rate_func()
-r_A_220 <- iparx_df %>% trim_for_chapter(var = "\\mft{A} [k\\$/person]") %>% rate_func()
+r_A_220 <- iparx_df %>% trim_for_chapter(var = "\\mft{A} [k\\$/person$\\cdot$yr]") %>% rate_func()
 r_R_220 <- iparx_df %>% trim_for_chapter(var = "\\REp{} [MJ/\\$]") %>% rate_func()
 r_X_220 <- iparx_df %>% trim_for_chapter(var = "\\XCOtwo{} [Mt/EJ]") %>% rate_func()
 
 r_I_20 <- iparx_df %>% trim_for_chapter(var = "\\ICOtwo{} [Gt/yr]", years = c(2000, 2019)) %>% rate_func()
 r_P_20 <- iparx_df %>% trim_for_chapter(var = "\\mft{P} [billions]", years = c(2000, 2019)) %>% rate_func()
-r_A_20 <- iparx_df %>% trim_for_chapter(var = "\\mft{A} [k\\$/person]", years = c(2000, 2019)) %>% rate_func()
+r_A_20 <- iparx_df %>% trim_for_chapter(var = "\\mft{A} [k\\$/person$\\cdot$yr]", years = c(2000, 2019)) %>% rate_func()
 r_R_20 <- iparx_df %>% trim_for_chapter(var = "\\REp{} [MJ/\\$]", years = c(2000, 2019)) %>% rate_func()
 r_X_20 <- iparx_df %>% trim_for_chapter(var = "\\XCOtwo{} [Mt/EJ]", years = c(2000, 2019)) %>% rate_func()
 
@@ -863,7 +864,7 @@ or impact intensity~\XCOtwoparen{}, or both,
 will go down as efficiency rises.
 However, energy efficiency\index{energy efficiency} is known to stimulate economic activity 
 by a mechanism called the \textbf{rebound effect}\index{rebound effect}~\cite{Brockway:2021ww},
-wherein monetary savings (from reduced energy consumption at a newly-efficient device)
+wherein monetary savings (from reduced energy consumption at a newly efficient device)
 are reinvested, leading to economic growth.
 Economic growth raises the GDP of an economy,
 so affluence~\Aparen{} will increase.
@@ -922,8 +923,8 @@ egdp_df %>%
   ggplot2::geom_line(size = data_line_size, 
                      colour = data_line_colour,
                      linetype = data_linetype) + 
-  ggplot2::labs(x = "GDP [trillion 2017 Intl. $]", 
-                y = "Primary energy consumption [EJ]") +
+  ggplot2::labs(x = "GDP [trillion 2017 Intl. $/yr]", 
+                y = "Primary energy consumption [EJ/yr]") +
   
   MKHthemes::xy_theme()
 @
@@ -1057,17 +1058,17 @@ collectively and individually.
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Edward Humes, \emph{Garbology: Our dirty love affair with trash}. New York: Avery, 2012. \\
+Edward Humes, \emph{Garbology: Our Dirty Love Affair with Trash}. New York: Avery, 2012. \\
 
 \noindent 
-Daniel Yergin, \emph{The new map: Energy, climate, and the clash of nations}.
+Daniel Yergin, \emph{The New Map: Energy, Climate, and the Clash of Nations}.
 London: Penguin, 2020. \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Energy Vault simulation  \\ 
+Energy Vault simulation,  \\ 
 \href{https://www.vimeo.com/335818817}{www.vimeo.com/335818817}
 
 
@@ -1345,7 +1346,7 @@ Energy Vault simulation  \\
         right-side terms of the IPARX identity\index{IPARX identity} (Equation~\ref{eq:IPARX}).
         Write a paper that discusses each term and suggests your favored policy 
         to reduce the magnitude of each term. 
-        Next look into the
+        Next, look into the
         \href{https://www.climateinteractive.org/tools/en-roads/}
         {EnROADS climate-change solutions simulator}\index{EnROADS}
         and find its policy options for addressing climate change\index{climate change}. 

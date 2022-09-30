@@ -114,7 +114,7 @@ bison\index{bison}, and megafauna such as the aurochs\index{auroch} and the gian
 A third cause of the decline in animal populations is human-induced climate change\index{climate change}.
 For example, many Arctic species, such as polar bear\index{bear!polar} and walrus\index{walrus}, are struggling
 to adapt to a warming planet.
-Lastly, human contamination of the environment, either intentionally or unintentionally,
+Last, human contamination of the environment, either intentionally or unintentionally,
 is a cause for the decline of many species.
 For example, widespread use of insecticides\index{insecticide} in agriculture is thought to be a strong 
 factor for the decline in many insect populations. 
@@ -148,7 +148,7 @@ population_fit <- readxl::read_excel(file.path("chapters", "ch03-Population", "d
 pop_growth_rate <- population_fit %>%
   dplyr::filter(coeffs == "b") %>%
   magrittr::extract2("values") %>%
-  magrittr::multiply_by(100) %>% # To convert from decimal to percent/year.
+  magrittr::multiply_by(100) %>% # To convert from decimal to percent/yr.
   sprintf(fmt = "%#.2f")
 
 ggplot2::ggplot() +
@@ -167,7 +167,7 @@ ggplot2::ggplot() +
                                             fill = Country)) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = "World population (P) [billions]",
+                y = expression(paste("World population (", italic(P), ") [billions]")),
                 fill = ggplot2::element_blank()) +
 MKHthemes::xy_theme()
 @
@@ -175,12 +175,12 @@ MKHthemes::xy_theme()
 
 As shown in Equation~\ref{eq:IPARX}, the number of individual humans~\Pparen{} is one source 
 of environmental impacts.
-Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800~AD to present.
+Figure~\ref{fig:PopulationGraph} shows the Earth's human population from 1800~AD to the present.
 As of July 2021, the world's human population is 7.7--7.9~billion with a
-growth rate of 1.05~\%/year.
+growth rate of 1.05~\%/yr.
 The average growth rate since 1950
-was \Sexpr{pop_growth_rate}~\%/year, 
-with a peak growth rate of 2.1~\%/year between 1965 and 1970.
+was \Sexpr{pop_growth_rate}~\%/yr, 
+with a peak growth rate of 2.1~\%/yr between 1965 and 1970.
 
 
 %++++++++++++++++++++++++++++++
@@ -197,7 +197,7 @@ Although scientists have estimated past population levels, reliable data are lim
 In prehistoric times, the human population grew slowly.
 By 9000~BC, there were 5--10~million human beings.
 Around the year 1~AD, there were around 300~million people, 
-representing an average growth rate of about 0.1\%/year.
+representing an average growth rate of about 0.1~\%/yr.
 By 1650~AD, the world population was around 500~million. 
 Population growth\index{population growth} slowed because trade and urbanization\index{urbanization} spread infectious 
 diseases that killed large numbers of people.
@@ -231,10 +231,10 @@ Thus, births and deaths per year depend on the size of the population.
 The population growth rate\index{population growth rate}, in~\%/yr, on the other hand, expresses growth in a way that is
 independent of population size.
 If the population growth rate\index{population growth rate}
-(in \%/year) is constant,
+(in \%/yr) is constant,
 population grows exponentially\index{exponential growth}; see Section~\ref{sec:exp}.
 Even if the population growth rate\index{population growth rate} changes slightly over time (as it has over the
-last sixty years, dropping from about 2\%/year to about 1\%/year),
+last sixty years, dropping from about 2~\%/yr to about 1~\%/yr),
 exponential growth\index{exponential growth} is a good
 description of how population changes with time.
 
@@ -289,8 +289,8 @@ dplyr::bind_rows(historical_pop, future_pop) %>%
   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 12, by = 2)) +
 
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = "World population (P) [billions]") +
-  
+                y = expression(paste("World population (", italic(P), ") [billions]"))) +
+
   MKHthemes::xy_theme()
 @
 
@@ -334,7 +334,7 @@ many variables assumed to affect birth and death rates.
 The UN\index{United Nations (UN)} model also accounts for different levels of development in 
 different segments of the Earth's human population.
 Accounting for interactions among social, demographic, and economic
-variables is expected to give more-realistic population projections.
+variables is expected to give more realistic population projections.
 
 
 %++++++++++++++++++++++++++++++
@@ -493,7 +493,7 @@ ggplot2::ggplot() +
   ggplot2::scale_x_continuous(limits = c(-1, 1), breaks = c(-1, 0, 1)) +
   ggplot2::scale_y_continuous(limits = c(0, 100), breaks = c(0, 50, 80, 100)) +
   ggplot2::labs(x = "Relative population proportion",
-                y = "Age [years]",
+                y = "Age [yr]",
                 fill = ggplot2::element_blank()) +
 
   MKHthemes::xy_theme() +
@@ -514,7 +514,8 @@ ggplot2::ggplot() +
                 {Schematic of demographic transition theory\index{demographic transition theory}.
                  Crude birth rate (CBR) and
                  crude death rate (CDR) are defined as births or deaths per year per 1000 people
-                 in the total population (uncorrected for sex or age cohorts).}
+                 in the total population (uncorrected for age or sex cohorts). 
+                 \emph{Source}: \citet{Roser:2013uk}.}
         \label{fig:dtt}
 \end{figure}
 
@@ -565,7 +566,7 @@ which generates a \textbf{demographic dividend}\index{demographic dividend}.
 GDP per capita is higher because the fraction of the population that
 is working is higher.
 Finally, in Stage~4 the age distribution of the population stabilizes.
-If birthrates continue to fall,
+If birth rates continue to fall,
 the population pyramid\index{population pyramid} becomes ``top heavy,'' and there is a higher proportion
 of retirees to workers.
 GDP per capita is lower than it would be with a different age structure.
@@ -808,7 +809,7 @@ The next chapter will consider ways in which human affluence~\Aparen{} affects s
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-J.B. MacKinnon, \emph{The once and future world: Nature as it was, as it is, as it could be}.
+J.B. MacKinnon, \emph{The Once and Future World: Nature as It Was, as It Is, as It Could Be}.
 Toronto: Random House, Canada, 2013.
 
 
@@ -816,15 +817,15 @@ Toronto: Random House, Canada, 2013.
 \section*{See Also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The History Guy \href{https://www.youtube.com/watch?v=FxqgBWxLZa0}
-{The great Kansas grasshopper plague of 1874},
-(YouTube, August 17, 2020) \\
+The History Guy, \href{https://www.youtube.com/watch?v=FxqgBWxLZa0}
+{The great Kansas grasshopper plague of 1874}
+(YouTube, August 17, 2020). \\
 
-\noindent Discussion of implementing the World3\index{World3} model \\
+\noindent Discussion of implementing the World3\index{World3} model, \\
 \href{https://www.americanscientist.org/article/computation-and-the-human-predicament}
 {www.americanscientist.org/article/computation-and-the-human-predicament} \\
 
-\noindent World3\index{World3} model online \\
+\noindent World3\index{World3} model online, \\
 \href{http://bit-player.org/2012/world3-the-public-beta}{bit-player.org/2012/world3-the-public-beta}
 
 
@@ -926,10 +927,10 @@ The History Guy \href{https://www.youtube.com/watch?v=FxqgBWxLZa0}
       (that is, 1800 AD).
       On the one hand, exponential growth\index{exponential growth} always looks dramatic;
       %Figure~\ref{fig:exp} shows exponential growth\index{exponential growth} for any time \mft{t}.
-      On the other hand, Malthus\index{Malthus, Thomas} had not yet experienced 
+      on the other hand, Malthus\index{Malthus, Thomas} had not yet experienced 
       the very dramatic rise in world population that occurred post-1800.
       How would Malthus's\index{Malthus, Thomas} viewpoint have been different 
-      if he were writing in the twentieth or twenty-first century?
+      if he were writing in the 20$^{\mathrm{th}}$ or 21$^{\mathrm{st}}$ century?
       Given that the tail end of an exponential curve always appears most dramatic,
       do you think that future thinkers and scholars will agree with 
       Malthus\index{Malthus, Thomas}?
@@ -937,7 +938,7 @@ The History Guy \href{https://www.youtube.com/watch?v=FxqgBWxLZa0}
 
 \item Is your personal outlook on the future Malthusian\index{Malthusian} or 
       techno-optimistic\index{techno-optimistic}?
-      Why, and to what degree?
+      Why, and, to what degree?
       Are there qualifying statements for you?
       With respect to the Simon-Ehrlich bet\index{Simon-Ehrlich bet}, what bets would you take?
       What bets would you propose?

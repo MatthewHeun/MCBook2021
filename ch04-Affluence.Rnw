@@ -37,7 +37,7 @@ finish the development of our framework for sustainability.
 \label{sec:Global_affluence}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The word \textbf{wealth}\index{wealth} can refer to notions of happiness\index{happiness}, prosperity, well being, and welfare,
+The word \textbf{wealth}\index{wealth} can refer to notions of happiness\index{happiness}, prosperity, well-being, and welfare,
 but mostly wealth\index{wealth} refers to the amount of goods, possessions, money,
 property, or ``stuff'' owned by a person.
 In other words, wealth\index{wealth} refers to a level of material possessions or resources.
@@ -47,7 +47,7 @@ uses goods and services, that is, the amount of ``stuff'' purchased per year.
 Economic activity may mean literal consumption, as with food,
 or it could mean using a service, such as education or getting a haircut\index{haircut}.
 Sometimes, what is ``consumed'' is ancillary to what the consumer actually desires.
-For instance, when travelling from point A to point B, 
+For instance, when traveling from point A to point B, 
 most travelers don't care whether their car runs on electricity\index{electricity} or gasoline\index{gasoline}.
 The purpose of the energy consumption is transportation.
 The energy consumption is only a means to that end.
@@ -101,7 +101,7 @@ if the resource intensity of the economy~\Rparen{} and the impact of resources~\
 %   ggplot2::geom_line(size = 1) + 
 %   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 20, by = 2))) +
 %   ggplot2::labs(x = NULL, 
-%                 y = expression("Affluence (A) [2017 Intl. k$/" * person%.%year * "]")) +
+%                 y = expression("Affluence (A) [2017 Intl. k$/" * person%.%yr * "]")) +
 %   
 %   MKHthemes::xy_theme()
 % @
@@ -120,7 +120,7 @@ if the resource intensity of the economy~\Rparen{} and the impact of resources~\
 %   ggplot2::geom_line(size = 1) + 
 %   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 20, by = 2))) +
 %   ggplot2::labs(x = NULL, 
-%                 y = expression("Affluence (A) [2017 Intl. k$/" * person%.%year * "]")) +
+%                 y = expression("Affluence (A) [2017 Intl. k$/" * person%.%yr * "]")) +
 %   
 %   MKHthemes::xy_theme()
 % @
@@ -138,7 +138,7 @@ gdppc_fit <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "dataset
 affluence_growth_rate <- gdppc_fit %>%
   dplyr::filter(coeffs == "b") %>%
   magrittr::extract2("values") %>%
-  magrittr::multiply_by(100) %>% # To convert from decimal to percent/year.
+  magrittr::multiply_by(100) %>% # To convert from decimal to percent/yr.
   sprintf(fmt = "%#.2f")
 
   ggplot2::ggplot() + 
@@ -157,8 +157,9 @@ affluence_growth_rate <- gdppc_fit %>%
                        linetype = curve_fit_linetype) +
   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 20, by = 2))) +
   ggplot2::labs(x = NULL, 
-                y = expression("Affluence (A) [2017 Intl. k$/" * person%.%year * "]")) +
-  
+                # y = expression("Affluence (A) [2017 Intl. k$/" * person%.%yr * "]")) +
+                  y = expression(paste("Affluence (", italic(A), ") [2017 Intl. k$/" * person%.%yr * "]"))) +
+
   MKHthemes::xy_theme()
 @
 
@@ -189,7 +190,7 @@ affluence_growth_rate <- gdppc_fit %>%
 % 
 %   ggplot2::scale_y_continuous(limits = c(0, NA)) +
 %   ggplot2::labs(x = NULL,
-%                 y = "World GDP [2017 Intl. T$/year]") +
+%                 y = "World GDP [2017 Intl. T$/yr]") +
 % 
 %   MKHthemes::xy_theme()
 % @
@@ -218,7 +219,7 @@ affluence_growth_rate <- gdppc_fit %>%
 % 
 %   ggplot2::scale_y_continuous(limits = c(0, NA)) +
 %   ggplot2::labs(x = NULL,
-%                 y = "World GDP [2017 Intl. T$/year]") +
+%                 y = "World GDP [2017 Intl. T$/yr]") +
 % 
 %   MKHthemes::xy_theme()
 % @
@@ -246,7 +247,7 @@ gdp_fit <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets"
 gdp_growth_rate <- gdp_fit %>%
   dplyr::filter(coeffs == "b") %>%
   magrittr::extract2("values") %>%
-  magrittr::multiply_by(100) %>% # To convert from decimal to percent/year.
+  magrittr::multiply_by(100) %>% # To convert from decimal to percent/yr.
   sprintf(fmt = "%#.2f")
 
 # Graph but in trillion dollars.
@@ -267,7 +268,7 @@ ggplot2::ggplot() +
   
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
   ggplot2::labs(x = NULL,
-                y = "World GDP [2017 Intl. T$/year]") +
+                y = "World GDP [2017 Intl. T$/yr]") +
   
   MKHthemes::xy_theme()
 @
@@ -280,8 +281,8 @@ Figures~\ref{fig:AffluenceGraph-Nordhaus} and~\ref{fig:GDPGraph-Nordhaus} show
 that these policies have been effective.
 Both world GDP and affluence \Aparen{} have been growing exponentially\index{exponential growth} 
 since 1950 at rates of 
-\Sexpr{gdp_growth_rate}~\%/year and 
-\Sexpr{affluence_growth_rate}~\%/year, 
+\Sexpr{gdp_growth_rate}~\%/yr and 
+\Sexpr{affluence_growth_rate}~\%/yr, 
 respectively.
 (Recall that Section~\ref{sec:exp} reminds us that perpetual growth in the 
 consumption of finite resources is ultimately unsustainable.)
@@ -410,8 +411,7 @@ Of course, impacts can be calculated by $\mft{P} \times \mft{A} \times \mft{R} \
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Growth in GDP per capita~\Aparen{} is the explicit goal of many economic policies.
-There are two ways the economy can increase GDP, 
-either
+There are two ways the economy can increase GDP:
 (a)~by consuming more inputs 
 or
 (b)~by using existing inputs more efficaciously%
@@ -589,12 +589,12 @@ economies.
 %..............................
 
 A steady-state economy\index{steady-state economy} neither grows nor shrinks.
-Its size (measured in \$/year) is constant through time.
+Its size (measured in \$/yr) is constant through time.
 With a stable population, people in a steady-state economy\index{steady-state economy} would experience no change
 in their standard of living~\Aparen{} from one generation to the next.
 If population goes up or down,
 affluence will go down or up,
-because the size of the economy (in \$/year) is fixed.
+because the size of the economy (in \$/yr) is fixed.
 
 One criticism of a steady-state economy\index{steady-state economy} is that (some) people could be left
 poor and destitute.
@@ -604,17 +604,17 @@ unacceptable inequalities within our economic system.
 
 Further, a steady-state economy\index{steady-state economy} is not necessarily sustainable.
 The sustainability of an economy is not determined by its growth rate
-(usually measured in \%/year).
+(usually measured in \%/yr).
 Rather, the sustainability of an economy is determined by its level or size
-(usually measured in \$/year) relative to planetary boundaries\index{planetary boundaries}.
+(usually measured in \$/yr) relative to planetary boundaries\index{planetary boundaries}.
 If the steady-state level of the economy
 is above a sustainable threshold
 (and planetary limits have been exceeded),
 the economy is unsustainable, 
 regardless of whether it is
-growing (positive \%/year),
-shrinking (negative \%/year), or
-steady state (0~\%/year).
+growing (positive \%/yr),
+shrinking (negative \%/yr), or
+steady state (0~\%/yr).
 Indeed, Figure~\ref{fig:FootprintHDIGraph} suggests that
 many economies are already too large to be considered sustainable.
 
@@ -633,9 +633,9 @@ Advocates of degrowth\index{degrowth economy}
 understand the fact that many economies need to become smaller
 to be sustainable.
 The degrowth movement\index{degrowth!as a movement} promotes
-(a)~negative growth in \%/year terms
+(a)~negative growth in \%/yr terms
 and 
-(b)~smaller economies in \$/year terms.
+(b)~smaller economies in \$/yr terms.
 Degrowth advocates focus on sufficiency and human wellbeing
 instead of GDP growth.
 
@@ -825,13 +825,14 @@ and be sustainable.
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Robert J. Gordon\index{Gordon, Robert J.}, \emph{The rise and fall of American growth: The U.S.\ standard of
-living since the Civil War}.
+Robert J. Gordon\index{Gordon, Robert J.}, \emph{The Rise and Fall of American Growth: The U.S.\ Standard of
+Living Since the Civil War}.
 Princeton, NJ: Princeton University Press, 2016. \\
 
 \noindent 
 Tim Jackson, \emph{Prosperity Without Growth: Foundations for the Economy of Tomorrow}.
 Oxfordshire, UK: Routledge, 2017.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}
@@ -845,18 +846,18 @@ Oxfordshire, UK: Routledge, 2017.
 % \href{https://gregmankiw.blogspot.com}{gregmankiw.blogspot.com} \\
 
 \noindent
-United Nations\index{United Nations (UN)} Department of Economic and Social Affairs, Statistics Division \\ 
+United Nations\index{United Nations (UN)} Department of Economic and Social Affairs, Statistics Division, \\ 
 \href{https://unstats.un.org}{unstats.un.org} \\
 
 \noindent
-United States Department of Commerce, Bureau of Economic Analysis (BEA)\index{Bureau of Economic Analysis (BEA)} \\ 
+United States Department of Commerce, Bureau of Economic Analysis (BEA)\index{Bureau of Economic Analysis (BEA)}, \\ 
 \href{https://www.bea.gov}{www.bea.gov}\\
 
 \noindent
 \emph{Energy, Economic, and Environmental Scenarios}:
 a short, open, online course at IST-Lisbon
 about the relationships
-among economic growth, energy efficiency, and greenhouse-gas emissions\index{CO$_2$ emissions} \\
+among economic growth, energy efficiency, and greenhouse-gas emissions\index{CO$_2$ emissions}, \\
 \href{https://courses.elearning.tecnico.ulisboa.pt/courses/course-v1:MOOCs+exergyX+2022/about}{courses.elearning.tecnico.ulisboa.pt/courses/course-v1:MOOCs+exergyX+2022/about}
 
 
@@ -1099,7 +1100,7 @@ among economic growth, energy efficiency, and greenhouse-gas emissions\index{CO$
       literature, and tools/machines, all of which are difficult to be completely 
       self-sufficient with respect to.
       Furthermore, what starting ``wealth\index{wealth}'' (in whatever form) did these people 
-      have, versus what ``income\index{income}'' did they/do they generate to add to or subtract
+      have, vs.\ what ``income\index{income}'' did they/do they generate to add to or subtract
       from that initial amount?
       \label{project:off-grid}
 

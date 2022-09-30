@@ -237,7 +237,7 @@ Land use affects, and is affected by, climate change\index{climate change}.
 For instance, hotter, drier weather results in more frequent and severe wildfires\index{wildfire}.
 Those fires destroy forests, release stored carbon, and contribute to further warming.
 
-<<CarbonStorage, fig.height=5.5, fig.pos="h!", fig.scap="World carbon storage in various biomes", fig.cap="World carbon storage in various biomes. The top graph shows amount (area) of each biome in the world. The middle graph is carbon density for each biome. The bottom graph is the product of the top and middle graphs and is the total storage capacity of each biome world wide. ``Temp. forest'' is temperate forests. ``Vegetation'' indicates carbon storage in plant matter. ``Soil'' indicates carbon storage in the soil. For context, Figure~\\ref{fig:CarbonEmissionsGraph} shows annual carbon emissions\\index{CO$_2$ emissions} are 36.4 GtCO$_2$/year (2019), a small fraction of total carbon stored in the biosphere. \\emph{Source}: \\citet{IPCC:2000wv}.">>=
+<<CarbonStorage, fig.height=5.5, fig.pos="h!", fig.scap="World carbon storage in various biomes", fig.cap="World carbon storage in various biomes. The top graph shows amount (area) of each biome in the world. The middle graph is carbon density for each biome. The bottom graph is the product of the top and middle graphs and is the total storage capacity of each biome worldwide. ``Temp. forest'' is temperate forests. ``Vegetation'' indicates carbon storage in plant matter. ``Soil'' indicates carbon storage in the soil. For context, Figure~\\ref{fig:CarbonEmissionsGraph} shows annual carbon emissions\\index{CO$_2$ emissions} are 36.4 GtCO$_2$/yr (2019), a small fraction of total carbon stored in the biosphere. \\emph{Source}: \\citet{IPCC:2000wv}.">>=
 carbon_storage_world <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Carbon_Storage_World.xlsx"),
                                          sheet = "data to plot") %>% 
   tidyr::pivot_longer(cols = c("Carbon stored in Vegetation (Gt/million km2)", 
@@ -497,7 +497,7 @@ urban_density_data %>%
   
   viridis::scale_colour_viridis(discrete = TRUE, direction = -1, begin = 0, end = 0.9) +
   ggplot2::labs(x = "Population density [people/ha]", 
-                y = expression("Transportation energy [GJ/" * person%.%year * "]"), 
+                y = expression("Transportation energy [GJ/" * person%.%yr * "]"), 
                 colour = ggplot2::element_blank()) +
   ggplot2::guides(colour = "none") + 
   
@@ -612,7 +612,7 @@ that is, an increase in the amount of land devoted to forests.
 Indeed, land use must become a carbon sink, instead of a carbon source,
 if we are to be sustainable.
 
-<<PowerDensity, fig.scap="Power densities of electricity generating technologies", fig.cap="Power densities of several electricity generating\\index{electricity generation} technologies. ``Nat. gas'' is natural gas\\index{natural gas}. ``Geoth.'' is geothermal. \\emph{Source}: \\citet[Figure~2]{Zalk:2018uy}.">>=
+<<PowerDensity, fig.scap="Power densities of electricity-generating technologies", fig.cap="Power densities of several electricity generating\\index{electricity generation} technologies. ``Nat. gas'' is natural gas\\index{natural gas}. ``Geoth.'' is geothermal. \\emph{Source}: \\citet[Figure~2]{Zalk:2018uy}.">>=
 power_densities <- readxl::read_excel(file.path("chapters", "ch10-LandUseUrbanPlanning", "datasets", "Power_Densities.xlsx"),
                                        sheet = "data to plot") %>%
   dplyr::arrange(dplyr::desc(`power_density_W/m2`)) %>%
@@ -657,7 +657,7 @@ to energy production.
 Since the amount of land is fixed, either we have to combine energy generation
 with other activities or we have to reduce the amount of land dedicated to, say,
 agriculture and forestry.
-Since more forest and grassland is needed to store carbon, 
+Since more forest and grassland are needed to store carbon, 
 the latter does not seem like a viable option.
 
 There are two options for the former that are promising. 
@@ -708,7 +708,7 @@ This chapter explored sustainability issues associated with urban areas,
 agricultural land-use patterns, and the role of land in provisioning resources\index{provisioning services}
 for the economy and removing wastes\index{waste} (notably, carbon) from the ecosystem\index{ecosystem}.
 Population growth\index{population growth} and migration\index{migration} to urban areas (in search of greater affluence)
-is driving an increase in the demand for urban and agricultural land. 
+are driving an increase in the demand for urban and agricultural land. 
 Higher population densities\index{population density} and
 greater agricultural productivity\index{agricultural productivity} can help meet
 that demand. 
@@ -740,22 +740,22 @@ taken to address these, and other, sustainability challenges.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Charles L. Maron, Jr., 
-\emph{Confessions of a recovering engineer: Transportation for a strong town}.
+\emph{Confessions of a Recovering Engineer: Transportation for a Strong Town}.
 Hoboken, NJ: Wiley, 2021. \\
 
 \noindent
-Daniel G. Parolek, \emph{Missing middle housing: Thinking big and building small
-to respond to today’s housing crisis}. Washington, DC: Island Press, 2020. \\
+Daniel G. Parolek, \emph{Missing Middle Housing: Thinking Big and Building Small
+to Respond to Today’s Housing Crisis}. Washington, DC: Island Press, 2020. \\
 
 \noindent
-James Redbanks, \emph{English pastoral: An inheritance}. London: Penguin, 2020. \\
+James Redbanks, \emph{English Pastoral: An Inheritance}. London: Penguin, 2020. \\
 
 \noindent
-Jeff Speck, \emph{Walkable city: How downtown can save America, one step at a time}.
+Jeff Speck, \emph{Walkable City: How Downtown Can Save America, One Step at a Time}.
 New York: North Point Press, 2013. \\
 
 \noindent
-Donald Shoup, \emph{The high cost of free parking}. Oxfordshire, UK: Routledge, 2011.
+Donald Shoup, \emph{The High Cost of Free Parking}. Oxfordshire, UK: Routledge, 2011.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -765,13 +765,13 @@ Donald Shoup, \emph{The high cost of free parking}. Oxfordshire, UK: Routledge, 
 YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes}\index{Not Just Bikes} and 
 \href{https://www.youtube.com/c/CityBeautiful}{City Beautiful}\index{City Beautiful} \\
 
-\noindent Strong Towns\index{Strong Towns} \\
+\noindent Strong Towns\index{Strong Towns}, \\
 \href{https://www.strongtowns.org/}{www.strongtowns.org} \\
 
-\noindent Table Debates \\
+\noindent Table Debates, \\
 \href{https://www.tabledebates.org/}{www.tabledebates.org} \\
 
-\noindent Walk Score \\
+\noindent Walk Score, \\
 \href{https://www.walkscore.com/}{www.walkscore.com}
 
 
@@ -795,7 +795,7 @@ YouTube channels \href{https://www.youtube.com/c/NotJustBikes}{Not Just Bikes}\i
       it can create a ``poverty trap''~\cite{Coomes2011}.
       There is just enough land for subsistence farming but alternatives to 
       farming can't generate enough income\index{income} to escape poverty.
-      What does the existence of these kind of poverty traps indicate for a
+      What does the existence of these kinds of poverty traps indicate for a
       sparing\index{land sparing}/sharing\index{land sharing} dichotomy? 
       What could be done to eliminate the poverty 
       trap(s)? What would be the (unintended) consequences of these solutions?

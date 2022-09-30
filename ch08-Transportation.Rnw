@@ -63,7 +63,7 @@ for different services.)
 Figure~\ref{fig:passengerkm_by_mode} shows that 
 passenger transportation demand is fulfilled almost exclusively by ``highway''
 in the U.S.,
-meaning automobiles\index{automobile} travelling on roads.
+meaning automobiles\index{automobile} traveling on roads.
 In contrast, Figure~\ref{fig:tonnekm_by_mode} shows that 
 freight transportation demand is satisfied by a variety of modes.
 
@@ -84,7 +84,7 @@ passenger_km_by_mode %>%
   ggplot2::geom_area() +
   ggplot2::scale_fill_viridis_d(direction = -1) +
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = expression("U.S. passenger transport [" * Tpass%.%km * "]"),
+                y = expression("U.S. passenger transport [" * Tpass%.%km * "/yr]"),
                 fill = ggplot2::element_blank()) +
   ggplot2::scale_y_continuous(breaks = c(0, 2,4, 6, 8, 10)) +
   
@@ -112,7 +112,7 @@ tonne_km_by_mode %>%
                               breaks = c(1980, 1990, 2000, 2010, 2020)) +
   ggplot2::scale_fill_viridis_d(direction = -1) +
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = expression("U.S. freight transport [" * Mt%.%km * "]"),
+                y = expression("U.S. freight transport [" * Mt%.%km * "/yr]"),
                 fill = ggplot2::element_blank()) +
   
   MKHthemes::xy_theme()
@@ -146,7 +146,7 @@ at the macro level~\cite{U.S.-Department-of-Transportation-Bureau-of-Transportat
 The tight links between transportation and economic growth
 are one reason that economic growth and energy consumption are correlated.
 
-<<TSI, fig.scap="Transportation services index vs.\\ time", fig.cap="Seasonally-adjusted Transportation Services Index (TSI)\\index{Transportation Services Index (TSI)} vs.\\ time for freight, passenger, and overall transportation services (2000~$=$~100). \\emph{Source}: \\citet{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.">>=
+<<TSI, fig.scap="Transportation services index vs.\\ time", fig.cap="Seasonally adjusted Transportation Services Index (TSI)\\index{Transportation Services Index (TSI)} vs.\\ time for freight, passenger, and overall transportation services (2000~$=$~100). \\emph{Source}: \\citet{U.S.-Department-of-Transportation-Bureau-of-Transportation-Statistics:2021uk}.">>=
 TSI <- readxl::read_excel(file.path("chapters", "ch08-Transportation", "datasets", "Transportation_Services_Index_and_Seasonally-Adjusted_Transportation_Data.xlsx"),
                                        sheet = "data to plot") %>% 
   dplyr::rename(
@@ -322,12 +322,11 @@ industrial processes, coal\index{coal}-derived PM\index{particulate matter (PM)}
 and sulfur compounds were additional concerns. 
 The introduction of ``dirty'' internal combustion engines\index{internal combustion engine (ICE) vehicle} 
 for transportation intensified air-quality issues, particularly in urban areas.
-Since the mid-twentieth century, air quality in
+Since the mid-20$^{\mathrm{th}}$ century, air quality in
 North America\index{North America}, Europe\index{Europe}, and Japan\index{Japan}
 has improved.
-However, emissions in South and East Asia\index{Asia} rose in the late twentieth and early 
-However, emissions in South and East Asia\index{Asia} rose in the late twentieth and early 
-twenty-first centuries. 
+However, emissions in South and East Asia\index{Asia} rose in the late 20$^{\mathrm{th}}$ and early 
+21$^{\mathrm{st}}$ centuries. 
 Global SO$_2$ emissions from transportation peaked about 1990, and
 global NO$_\text{x}$ emissions peaked around 2018. 
 Global ammonia\index{ammonia} emissions, a key contributor to PM\index{particulate matter (PM)}, 
@@ -381,7 +380,7 @@ transport_GHG %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "M_tonnes_CO2_eq", fill = "mode")) +
   ggplot2::geom_area() + 
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("U.S. transport emissions [Mt " * CO[2] * "e]"),
+                y = expression("U.S. transport emissions [Mt " * CO[2] * "e/yr]"),
                 fill = ggplot2::element_blank()) +
   
   ggplot2::scale_fill_viridis_d(direction = -1) +
@@ -615,7 +614,7 @@ biofuels %>%
   ggplot2::geom_area() +
   
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("U.S. biofuel consumption [" * 10^9 * " gal]"), 
+                y = expression("U.S. biofuel consumption [" * 10^9 * " gal/yr]"), 
                 fill = ggplot2::element_blank()) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
 
@@ -765,32 +764,32 @@ another area in which sustainability challenges are important and urgent.
 \href{https://national.news21.com/}{Breakdown: Traveling Dangerously in America}, e-book, 2011. \\
 
 \noindent 
-Edward Humes, \emph{Door to door: The magnificent, maddening, mysterious world of transportation}.
+Edward Humes, \emph{Door to Door: The Magnificent, Maddening, Mysterious World of Transportation}.
 New York: Harper, 2016.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{See Also}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Roy Symons's\index{Symons, Roy} blog\index{blog} \emph{Transportation planning: Thoughts on how we move} \\
+Roy Symons's\index{Symons, Roy} blog\index{blog} \emph{Transportation planning: Thoughts on how we move}, \\
 \href{https://www.transportation-planning.com}{www.transportation-planning.com},  
-which includes cartoons and pithy quotes about transportation \\
+which includes cartoons and pithy quotes about transportation, \\
 \href{https://www.transportation-planning.com/quotes.html}
 {www.transportation-planning.com/quotes.html} \\
 
-\noindent Interactive electric vehicle\index{electric vehicle (EV)} explainer \\
+\noindent Interactive electric vehicle\index{electric vehicle (EV)} explainer, \\
 \href{https://ig.ft.com/electric-car}{ig.ft.com/electric-car} \\
 
 \noindent \emph{Who Killed the Electric Car},
 a fascinating movie about the the first attempt at electric 
-vehicles\index{electric vehicle (EV)} in the auto industry \\
+vehicles\index{electric vehicle (EV)} in the auto industry, \\
 \href{https://en.wikipedia.org/wiki/Who_Killed_the_Electric_Car}
 {en.wikipedia.org/wiki/Who{\textunderscore}Killed{\textunderscore}the{\textunderscore}Electric{\textunderscore}Car} \\
 
 \noindent YouTube channel
 \href{https://www.youtube.com/c/RoadGuyRob}{Road Guy Rob}\\
 
-\noindent U.S.\ Department of Energy \\
+\noindent U.S.\ Department of Energy, \\
 \href{https://afdc.energy.gov/calc/}{Vehicle Cost Calculator}\\
 
 \noindent \emph{Taken for a Ride}, 
@@ -876,7 +875,7 @@ transportation, petroleum\index{petroleum}, and technology.
       (from a happiness\index{happiness} perspective) to an additional \$40,000 of income\index{income}~\cite{Buettner2011}.
       Reflect on your current and future commuting plans, income\index{income}, and domicile location.
       How do you balance these tradeoffs in your own life?
-      Critique the \$40,000 a year number: commuting two hours per day, five days
+      Critique the \$40,000 a year number: commuting 2 hours per day, 5 days
       a week for 50 weeks per year, is 500 hours of commuting. 
       Equating 500 hours of travel to \$40,000 is a wage of \$80/hour.
       
@@ -920,12 +919,12 @@ transportation, petroleum\index{petroleum}, and technology.
       Despite connecting to many businesses, stroads\index{stroad} often have no sidewalks.)
       In the U.S., pedestrian fatalities\index{pedestrian fatalities} increased from 4,302 in 2010 to 6,301 in 2019,
       an increase of 46\% over the decade and representing 
-      17\% of all traffic fatalities\index{traffic fatalities}\cite{Gitlin:2021ug}.
+      17\% of all traffic fatalities\index{traffic fatalities}~\cite{Gitlin:2021ug}.
       Preliminary data for 2020~\cite{ghsa2021} projects a further 4.8\% increase in pedestrian 
       deaths over 2019.
       
-      An analysis of the data linked above makes three important points~\cite{DbyD2021}: 
-      first, the risk of being struck and killed by a vehicle falls disproportionately
+      An analysis of the data linked above makes three important points~\cite{DbyD2021}. 
+      First, the risk of being struck and killed by a vehicle falls disproportionately
       on the poor and elderly. % I suspect this is largely correlation.
       Second, there is a fundamental tradeoff between traffic volume (speed)
       and pedestrian safety.

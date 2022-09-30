@@ -17,7 +17,7 @@ A chessboard\index{chessboard}
 has eight rows and eight columns, so the king had to pay 2$^\text{64}-$1
 grains.
 (See Section \ref{sec:exp} for an explanation of the math behind this formula.)
-Rice is seven thousand grains per pound ($\sim$~65~mg each),
+Rice is 7,000 grains per pound ($\sim$~65~mg each),
 so the king owed the scholar 1.199~$\times$~10$^{\text{15}}$ kg of rice,
 which is more than 150 tons of rice for every person currently on planet Earth
 (worth about \$40,000 per person).
@@ -117,7 +117,7 @@ This book summarizes ways that humans are not living sustainably and suggests
 characteristics of sustainable societies.
 The text is deliberately short because the book is not intended to be comprehensive.
 The focus is on equipping the reader to discuss moral and ethical issues around sustainability.
-Because the choices and paths to sustainability are filled with value judgements and moral choices,
+Because the choices and paths to sustainability are filled with value judgments and moral choices,
 the end-of-chapter discussion questions mostly point to tradeoffs and do not have ``right answers.''
 Instead, different answers indicate different preferences.
 This book presents a coherent framework for discussing sustainability
@@ -227,7 +227,7 @@ depending on all other parts.
 The ecosystem\index{ecosystem} is not a collection of individual components with binary ``needed''/``not
 needed'' classifications, but as a whole that exists on a continuum from ``fully functional''
 to ``nonfunctional.''
-The choices and paths to sustainability are bristling with value judgements and
+The choices and paths to sustainability are bristling with value judgments and
 moral choices about what to value and how much.
 \href{https://en.wiktionary.org/wiki/concomitant}{Concomitant} with such choices
 is a weighting of appropriate risks to the ecosystem\index{ecosystem} and human society.
@@ -270,7 +270,7 @@ a very long time, like poverty, class inequality, sexism, slavery, and other civ
 This book discusses issues associated with each of these three
 sustainability domains but with a focus on energy and carbon emissions\index{CO$_2$ emissions}.
 The end-of-chapter questions typically focus on interactions among the three
-domains, like a social-versus-economic tradeoff.
+domains, like a social-vs.-economic tradeoff.
 
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \begin{mcframe}[0.90\textwidth](0.85\textwidth)
@@ -284,7 +284,7 @@ link together many of our sustainability challenges\index{sustainability challen
 \end{mcframe}
 
 The most oft-quoted~\cite{Quental2011} definition of sustainability\index{sustainability!definition} is that
-\textbf{sustainable development}\index{sustainable development} meets the needs of the present without
+\textbf{sustainable development}\index{sustainable development} ``meets the needs of the present without
 compromising the ability of future generations to meet their own needs''~\cite{Brundtland}.
 Note that sustainable development\index{sustainable development} is an oxymoron, %and is not the same as sustainability.
 because ``development'' implies constant improvement, which cannot be sustained
@@ -336,7 +336,7 @@ Population~\Pparen{} is the number of people in the world.
 Affluence~\Aparen{} is GDP per capita per year.
 Resource intensity of economic activity~\Rparen{} is the list (vector) of all the resources necessary to
 produce one unit of world GDP.
-Lastly, impact of resources~\Xparen{} is a list of the impacts of
+Last, impact of resources~\Xparen{} is a list of the impacts of
 each type of resource. (That is, \mft{X} is a matrix quantity.)
 
 In broad strokes, sustainability can be seen in the \mft{I} term (environmental impacts) and
@@ -426,7 +426,7 @@ chessboard_data %>%
 @
 
 Figure~\ref{fig:exp} shows the mass of grain on each square of the chessboard\index{chessboard}.
-The sharp increase at the right side of figure
+The sharp increase at the right side of the figure
 is characteristic of exponential growth\index{exponential growth} over any time scale.
 If the chessboard\index{chessboard} were extended by another row, the new row (squares 65--72)
 would make current last row (squares 57--64) look as small and insignificant as
@@ -446,9 +446,9 @@ in Equation~\ref{eq:IPARX} have been growing exponentially\index{exponential gro
 Chapter~\ref{chap:population} gives us some hope that population won't continue
 growing exponentially\index{exponential growth}.
 (In fact, there are some indications world population may fall after a peak
-in the mid-twenty-first century.)
+in the mid-21$^{\mathrm{st}}$ century.)
 However, world economies are actively managed to have continual growth
-(perhaps, an average target of 3\%/year).
+(perhaps, an average target of 3\%/yr).
 The implication for sustainability is that the resources---for instance,
 energy---needed by the economy in the next 23 years will be more than the total
 resources (energy) used in all of history to date.
@@ -507,18 +507,18 @@ A different metric is often calculated for the production of energy:
 \textbf{energy return on investment (EROI)}\index{energy return on investment (EROI)},
 which is defined as the amount of energy delivered to the economy
 per unit of energy it took to deliver that energy,
-not including feedstock\index{feedstock}.%
+not including feedstock\index{feedstock}%
 \footnote{
   ``Not including feedstock\index{feedstock}'' means that only auxiliary energy inputs should be counted
   in the denominator.
   For example, when calculating the EROI\index{energy return on investment (EROI)} for an oil rig,
   only the electricity\index{electricity} and diesel\index{diesel} to operate the rig is counted in the denominator.
   The crude oil\index{crude oil} extracted by the rig is not counted in the denominator.
-}
+}:
 
 \begin{equation}\label{eroi}
    \text{EROI} \equiv \frac{\text{Useful energy delivered to society}}
-                           {\text{Energy required to obtain delivered energy}}
+                           {\text{Energy required to obtain delivered energy}} \; .
 \end{equation}
 %
 Because energy is the master resource\index{master resource (energy)},
@@ -542,7 +542,7 @@ more efficient technology.
 \caption[EROI for several energy sources]
         {Energy return on investment (EROI)\index{energy return on investment (EROI)}
         for several energy sources.
-\emph{Sources}:~\cite{Wikipedia_EROI,WNA2020,EtOH_in_BR,Gomiero2015} and sources therein.}
+\emph{Sources}:~\citet{Wikipedia_EROI}, \citet{WNA2020}, \citet{EtOH_in_BR}, \citet{Gomiero2015}, and sources therein.}
 \label{tab:eroi}
 \begin{tabular}{ll}
 \toprule
@@ -580,14 +580,14 @@ our sustainability challenges\index{sustainability challenges}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Jeremy L. Caradonna, 
-\emph{Sustainability: A history}. Oxford: Oxford University Press, 2016. \\
+\emph{Sustainability: A History}. Oxford: Oxford University Press, 2016. \\
 
 \noindent 
-Kim Stanley Robinson, \emph{The ministry for the future}. London: Orbit, 2020. \\
+Kim Stanley Robinson, \emph{The Ninistry for the Future}. London: Orbit, 2020. \\
 
 \noindent 
 Mary Robinson, 
-\emph{Climate justice: Hope, resilience\index{resilience}, and the fight for a sustainable future}.
+\emph{Climate Justice: Hope, Resilience\index{resilience}, and the Fight for a Sustainable Future}.
 London: Bloomsbury, 2018.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -706,7 +706,7 @@ the full restoration is likely to cost more than \euro{8}~billion.
       to preserve Notre Dame's\index{Notre-Dame de Paris} ``historic, artistic, and architectural interest.'')
       What are the artistic, cultural, and aesthetic pros and cons of each proposed designs?
       Does your answer change if you learn that the modern facade is the result
-      of a 19$^\text{th}$ century restoration and isn't itself strictly ``original?''
+      of a 19$^\text{th}$-century restoration and isn't itself strictly ``original?''
 
 \item Your answers to the preceding questions expose your values on the
       societal (historical preservation) vs.\ economic (expensive fire suppression systems)
@@ -769,7 +769,7 @@ the full restoration is likely to cost more than \euro{8}~billion.
       The degree to which we allow human activity beyond these unknown safe limits
       involves a value judgment regarding
       the subjective value of supporting a given number of humans
-      and their associated consumption, versus the subjective value
+      and their associated consumption, vs.\ the subjective value
       of conserving nonhuman organisms.
       How have scientists attempted to formulate these safe limits?
       How do you judge the inherent worth of human and nonhuman entities?
@@ -792,7 +792,7 @@ the full restoration is likely to cost more than \euro{8}~billion.
       represents \$1 billion, that is, the left end of the line is zero and the right
       end is \$1 billion. Now mark, by eye, \$1 million on the line. Next, get a
       ruler or tape measure and determine precisely on the line where \$1 million,
-      and \$100,000 would be. Next show where \$2 billion and \$10 billion are.
+      and \$100,000 would be. Next, show where \$2 billion and \$10 billion are.
       Then calculate where \$1 trillion would be.
 
 \item Derive the results in Section~\ref{sec:exp}.

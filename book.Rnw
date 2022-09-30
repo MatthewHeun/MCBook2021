@@ -35,7 +35,7 @@
 \usetikzlibrary{positioning}
 \usetikzlibrary{shapes.geometric}
 \usepackage{wrapfig}     % To wrap text around figures.
-\usepackage{xcolor}      % makes colored text.
+\usepackage[table]{xcolor}      % makes colored text.
 
 % The morgan-defs.sty file already loads the enumitem package.
 % Add the inline option here
@@ -218,7 +218,7 @@ citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 
     
 %#############################################################
-\part{Towards Sustainability: Collective and Individual Actions}
+\part{Toward Sustainability: Collective and Individual Actions}
 \label{part:actions}
 %#############################################################
 

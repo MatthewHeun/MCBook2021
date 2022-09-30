@@ -196,7 +196,7 @@ aspects of agriculture.
 
 Soil and water are the two most important inputs for agriculture.
 As mentioned earlier, most of the usable land in the world 
-is put to agricultural uses. 
+is put to agricultural use. 
 Similarly, agriculture accounts for approximately 70\% of human freshwater use.
 The paragraphs below examine a variety of unsustainable practices related to human 
 use of land and water.
@@ -311,7 +311,7 @@ it no longer flows into the Sea of Cortez\index{Sea of Cortez}.
 Agricultural activities also result in water pollution\index{pollution!water} of surface water and ground water.
 For example, the city of Toledo, Ohio\index{Toledo, Ohio} draws its drinking water from Lake Erie\index{Lake Erie}.
 Since the 1990s, Lake Erie\index{Lake Erie} has been subject to ``blooms'' of toxic cyanobacteria\index{cyanobacteria}
-fueled by fertilizer\index{fertilizer} run off.
+fueled by fertilizer\index{fertilizer} runoff.
 Six people got sick in 2013.
 In 2014, 110 people got sick and the municipal water supply to 400,000 people was shut down.
 Moreover, Lake Erie\index{Lake Erie} and the Maumee River\index{Maumee River} that feeds it were unsafe for human skin contact.
@@ -598,7 +598,7 @@ food_emissions_US <- readxl::read_excel(file.path("chapters", "ch09-Agriculture"
   tidyr::pivot_longer(-`System Stage`, names_to = "Year", values_to = "co2_emissions") %>% 
   dplyr::mutate(
     Year = as.numeric(Year), 
-    co2_emissions = co2_emissions / 1e6, # Convert kt/year to Gt/year
+    co2_emissions = co2_emissions / 1e6, # Convert kt/yr to Gt/yr
     `System Stage` = factor(`System Stage`, levels = c("End of life", "Consumption",  
                                                        "Retail", "Transport", 
                                                        "Packaging", "Processing", "Production", "LULUC"))
@@ -611,7 +611,7 @@ food_emissions_US %>%
   ggplot2::geom_area() + 
   
   ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("Food GHG emissions [Gt "*CO[2]*"eq/year]"), 
+                y = expression("Food GHG emissions [Gt "*CO[2]*"eq/yr]"), 
                 fill = ggplot2::element_blank()) +
   
   ggplot2::scale_fill_viridis_d(direction = -1) +
@@ -665,7 +665,7 @@ food_emissions_total %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = `Food type`, y = `kg CO2 eq/capita/year`)) +
   ggplot2::geom_bar(stat = "identity", fill = bar_colour) +
   ggplot2::labs(x = ggplot2::element_blank(),
-                y = expression("Emissions [kg " * CO[2] * "equiv/" * person%.%year * "]"),
+                y = expression("Emissions [kg " * CO[2] * "equiv/" * person%.%yr * "]"),
                 fill = ggplot2::element_blank()) +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
@@ -691,7 +691,7 @@ We don't eat equal calories of each food.
 We need a balanced diet that provides all of our essential
 nutrients.
 Figure~\ref{fig:GHG_food} shows what individual foods contribute to overall food
-emissions (but not what quantity of each are consumed).
+emissions (but not what quantity of each is consumed).
 Taken together, Figures~\ref{fig:food_ghg}--\ref{fig:GHG_food} 
 illustrate agricultural CO$_2$ emissions\index{CO$_2$ emissions!agriculture}.
 
@@ -701,7 +701,7 @@ illustrate agricultural CO$_2$ emissions\index{CO$_2$ emissions!agriculture}.
 %++++++++++++++++++++++++++++++
 
 One tonne of methane\index{methane (CH$_4$)}
-has the same global warming potential\index{global warming potential (GWP)} as twenty five tonnes 
+has the same global warming potential\index{global warming potential (GWP)} as 25 tonnes 
 of CO$_2$---methane\index{methane (CH$_4$)} is a very potent GHG.
 Methane\index{methane (CH$_4$)} is about 10\% of U.S.\ GHG emissions\index{CO$_2$ emissions}. 
 Of this 10\%, about 39\% comes from agriculture, 40\% comes from energy and transportation,
@@ -741,7 +741,7 @@ These changes would reduce the resource intensity
 \Rparen{} of agriculture.
 Another, related, set of changes would be to lower 
 the impact of resources consumed by agriculture~\Xparen{}, 
-for example, less runoff, less desertification\index{desertification}, less groundwater contamination.
+for example, less runoff, less desertification\index{desertification}, less ground water contamination.
 We leave to Chapters~\ref{chap:government} and~\ref{chap:personal_action} the 
 discussion of how such changes can be made (when possible) and who might take action
 to make such changes.
@@ -840,8 +840,10 @@ practices that have fed us through the population boom of the last century, name
 the use of large amounts of inputs, such as fossil energy\index{fossil fuels},
 synthetic fertilizers\index{fertilizer}, and agrichemicals\index{agrichemicals}
 to maximize agricultural productivity\index{agricultural productivity}.
-On the other hand, increasing inputs will accelerate soil depletion, intensity runoff
-and other agricultural emissions, and shorten the weak sustainability\index{weak sustainability} horizon for the 
+On the other hand, 
+increasing inputs will accelerate soil depletion,
+intensify runoff and other agricultural emissions, and 
+shorten the weak sustainability\index{weak sustainability} horizon for the 
 use of nonrenewable resources such as petroleum\index{petroleum}, fossil water\index{fossil water}, and
 phosphate\index{phosphate} deposits.
 The climate-change crisis provides an opportunity to rethink ``business as usual\index{business as usual}'' and to 
@@ -856,7 +858,7 @@ develop new practices that will be effective on a warmer planet.
 As mentioned above, agriculture and land use are a significant source of humanity's 
 GHG emissions\index{CO$_2$ emissions}. 
 For sustainability, agriculture must become a carbon sink rather than a source 
-for carbon emissions\index{CO$_2$ emissions}. 
+of carbon emissions\index{CO$_2$ emissions}. 
 Human agricultural practices over the last 12,000 years (but mostly since 1800) 
 have released 116~Gt of carbon from the Earth's soil~\cite[Fig.~2]{Sanderman2017}.
 Returning carbon to the soil would make the soil more fertile and would have
@@ -889,7 +891,7 @@ regenerative agriculture\index{regenerative agriculture} in more detail.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Agriculture exists to feed the world's population~\Pparen.
-To be more sustainability, 
+To be more sustainable, 
 agriculture must use as few resources as possible and cause minimal 
 impact on the environment. 
 Currently, agricultural uses unsustainable mineral inputs and
@@ -916,8 +918,8 @@ given by food writer Michael Pollan\index{Pollan, Michael}:
 \section*{Further Reading}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Gillian Crowther, \emph{Eating Culture: An Anthropological Guide to Food, 
-2nd Edition}. Toronto: University of Toronto Press, 2018. \\
+Gillian Crowther, \emph{Eating Culture: An Anthropological Guide to Food}, 
+2$^{\mathrm{nd}}$ Edition. Toronto: University of Toronto Press, 2018. \\
 
 \noindent Benjamin Lorr\index{Lorr, Benjamin}, 
 \emph{The Secret Life of Groceries: The Dark Miracle of
@@ -925,7 +927,7 @@ the American Supermarket}. New York: Avery, 2020. \\
 
 
 \noindent
-Michael Pollan\index{Pollan, Michael}, \emph{The omnivore's dilemma: A natural history of four meals}.
+Michael Pollan\index{Pollan, Michael}, \emph{The Omnivore's Dilemma: A Natural History of Four Meals}.
 London: Penguin, 2007. \\
 
 
@@ -937,7 +939,8 @@ Adam Ragusea has one of the best food-related channels on YouTube.
 His video \href{https://www.youtube.com/watch?v=GgHy8KQ4Ifg}
 {Problems with the Green Revolution} (September 20, 2021) provides
 a succinct introduction to some of the issues covered
-in this chapter. His recipes are great, too. \\
+in this chapter. 
+His recipes are great, too. \\
 
 \noindent
 Two short films about the Colorado River\index{Colorado River} by Pete McBride\index{McBride, Pete}: 
@@ -945,7 +948,7 @@ Two short films about the Colorado River\index{Colorado River} by Pete McBride\i
 and \href{https://vimeo.com/97197932}{Delta Dawn}. 
 At 47 minutes, \href{https://community.nrs.com/nrs-films/remains-of-a-river/}
 {Remains of a River} is a somewhat longer story that traces the Colorado River\index{Colorado River}
-from its headwaters to Los Angeles\index{Los Angeles}, Tucson\index{Tucson}, and ... lettuce\index{lettuce}.
+from its headwaters to Los Angeles\index{Los Angeles}, Tucson\index{Tucson}, and \ldots lettuce\index{lettuce}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Questions}
@@ -971,7 +974,7 @@ from its headwaters to Los Angeles\index{Los Angeles}, Tucson\index{Tucson}, and
       (amount of food per area)
       versus the amount of landed needed to feed people
       is a clear example of a tradeoff. 
-      Higher yields means less land is needed but is generally achieved by application
+      Higher yields means less land is needed but is generally achieved by the application
       of agrichemicals\index{agrichemicals} and fossil-fueled mechanization of labor\index{labor}. 
       Lower yields means more land is needed (thereby increasing land-based emissions 
       and impacts).
@@ -1035,7 +1038,7 @@ from its headwaters to Los Angeles\index{Los Angeles}, Tucson\index{Tucson}, and
       information (like calories) and a list of ingredients (subject to some 
       restrictions). 
       Labels such as ``organic,''\index{organic} ``grass fed,''\index{grass fed}
-      or ``free-range''\index{free range} are at the
+      or ``free range''\index{free range} are at the
       discretion of the producer.
       There are no standards for carbon footprint\index{carbon footprint}, 
       regenerative agriculture\index{regenerative agriculture}, 
@@ -1065,8 +1068,8 @@ from its headwaters to Los Angeles\index{Los Angeles}, Tucson\index{Tucson}, and
 \item The UN\index{United Nations (UN)}
       Food and Agriculture Organization\index{Food and Agriculture Organization}
       reports that out of 50,000 edible
-      plant species, 15 crops provide 90\% of human calories, two thirds
-      of which is provided by just three crops: 
+      plant species, 15 crops provide 90\% of human calories, two-thirds
+      of which are provided by just three crops: 
       rice\index{rice}, wheat\index{wheat}, and maize\index{corn}. %https://www.fao.org/3/u8480e/u8480e07.htm
       These facts have been called the ``long tail'' of food.
       What role does variety play in your diet? 
@@ -1075,7 +1078,7 @@ from its headwaters to Los Angeles\index{Los Angeles}, Tucson\index{Tucson}, and
       you would save if you eliminated the highest-priced food item from your 
       shopping cart. What is that item?)
       
-\item A significant theme of Benjamin Lorr's\index{Lorr, Benjamin} book \emph{The secret life of groceries} 
+\item A significant theme of Benjamin Lorr's\index{Lorr, Benjamin} book \emph{The Secret Life of Groceries} 
       (see above) is the role that retailers have in determining what is even 
       available for consumers to purchase.
       In some sense, consumers have an illusion of choice because they
