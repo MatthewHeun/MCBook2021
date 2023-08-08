@@ -1,16 +1,14 @@
 % The next command tells RStudio to do "Compile PDF" on book.Rnw,
 % instead of this chapter, thereby eliminating the need to switch back to book.Rnw 
 % before making the book.
-%!TEX root = ../../book.Rnw
+%!TEX root = ../../Core100Summary.Rnw
 
 \begin{tikzpicture}
     \definecolor{my_purple}{HTML}{440154}
     \definecolor{my_yellow}{HTML}{FDE725}
     \definecolor{my_green}{HTML}{21908C}
-    \tikzstyle{every node}=[ultra thick, ellipse, 
-                            minimum width = 150pt,
-                            minimum height = 130pt]
-    \node[ellipse, draw, fill = my_purple, opacity = 0.8, align = left, text = white] (social) at (-2,0) {Social};
-    \node[ellipse, draw, fill = my_yellow, opacity = 0.8, align = center] (economic) at (0,3) {Economic};
-    \node[ellipse, draw, fill = my_green, opacity = 0.8, align = right] (environmental) at (2,0) {Environmental};
+    \tikzstyle{every node}=[ultra thick, ellipse]
+    \node[ellipse, draw, fill = my_green, opacity = 0.8, align = right, minimum width = 150pt, minimum height = 130pt] (environment) at (0,0) {Environment};
+    \node[ellipse, draw, fill = my_yellow, opacity = 0.8, align = center, minimum width = 80pt, minimum height = 58pt] (economy) at (0.4,1.15) {Economy};
+    \node[ellipse, draw, fill = my_purple, opacity = 0.8, align = left, text = white, minimum width = 12, minimum height = 12] (society) at (0.55,0.6) {Society};
 \end{tikzpicture}
