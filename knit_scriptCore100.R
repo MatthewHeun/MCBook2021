@@ -39,3 +39,6 @@ curve_fit_linetype <- "solid"
 guide_line_size <- 0.2
 guide_line_colour <- "gray50"
 guide_linetype <- "solid"
+
+
+knitr::knit("Core100Summary.Rnw")
