@@ -8,7 +8,8 @@ REM from https://stackoverflow.com/questions/8385454/batch-files-list-all-files-
 
 REM See also https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/forfiles
 
-forfiles /M *.aux /c "cmd /c bibtex @relpath"
+REM forfiles /M *.aux /c "cmd /c bibtex @relpath"
+bibtex Core100Summary.aux
 
 makeindex Core100Summary.idx
 pdflatex Core100Summary.tex
@@ -18,4 +19,4 @@ pdflatex Core100Summary.tex
 start Core100Summary.pdf
 
 REM ./clean.sh
-.\cleanJVA.bat
+REM .\cleanJVA.bat
