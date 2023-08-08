@@ -1,11 +1,12 @@
 \documentclass{article}
 
 \usepackage{caption}      % For subfigures
-\usepackage{subcaption}   % For subfigures
+  \usepackage{subcaption}   % For subfigures
+\usepackage[square,comma,sort&compress,numbers]{natbib} % numbered
 \usepackage{tikz}
-\usetikzlibrary{arrows}
-\usetikzlibrary{positioning}
-\usetikzlibrary{shapes.geometric}
+  \usetikzlibrary{arrows}
+  \usetikzlibrary{positioning}
+  \usetikzlibrary{shapes.geometric}
 %\usepackage{wrapfig}     % To wrap text around figures.
 \PassOptionsToPackage{hyphens}{url}
 % \usepackage[colorlinks=true,linkcolor=MyDarkBlue,
@@ -33,49 +34,49 @@ domains of sustainability:
 \textbf{economic sustainability}, and
 \textbf{social sustainability}.
 Sustainability problems are complex and interconnected.
-Environmental sustainability problems have social and economic aspects 
+Environmental sustainability problems have social and economic aspects
 (that are generally more difficult to solve).
 Likewise, economic and social sustainability problems are not limited to one domain;
 typically, they include aspects of the other two domains as well.
 Therefore (for example), pollution is an environmental problem, and a social problem, and an economic problem.
-Likewise renewable energy. And land use. 
+Likewise renewable energy. And land use.
 And all the other challenges humanity faces.
 
-\begin{figure}
-\centering
+% \begin{figure}
+% \centering
+% 
+%   \input{chapters/ch01-Introduction/venn_diagram.tex}
+% 
+%   \caption[Three aspects of sustainability]
+%           {The three aspects of sustainability.
+%            Sustainability is often visualized as three overlapping ellipses:
+%            economic sustainability,
+%            environmental sustainability, and
+%            social sustainability.
+%            The intersecting area represents fully sustainable living.
+%            Environmental sustainability
+%            refers to the \textbf{ecosystem} and its supporting services.
+%            Economic sustainability refers to human systems for creating 
+%            and accounting for wealth.
+%            Social sustainability refers to traditions and systems of human society.
+%            The layering in this figure represents coverage in this book.
+%            We focus on environmental and
+%            economic sustainability.
+%            Social sustainability is vitally important, so it forms the backdrop
+%            for much of the discussion herein.}
+% \label{fig:venn_diagram}
+% \end{figure}
 
-  \input{chapters/ch01-Introduction/venn_diagram.tex}
 
-  \caption[Three aspects of sustainability]
-          {The three aspects of sustainability.
-           Sustainability is often visualized as three overlapping ellipses:
-           economic sustainability,
-           environmental sustainability, and
-           social sustainability.
-           The intersecting area represents fully sustainable living.
-           Environmental sustainability
-           refers to the \textbf{ecosystem} and its supporting services.
-           Economic sustainability refers to human systems for creating 
-           and accounting for wealth.
-           Social sustainability refers to traditions and systems of human society.
-           The layering in this figure represents coverage in this book.
-           We focus on environmental and
-           economic sustainability.
-           Social sustainability is vitally important, so it forms the backdrop
-           for much of the discussion herein.}
-\label{fig:venn_diagram}
-\end{figure}
-
-
-\begin{figure}
-\centering
-
-  \input{chapters/ch01-Introduction/venn_diagram_enclosing.tex}
-
-  \caption[new-short-caption]
-          {**** Enclosing venn diagram. ****}
-\label{fig:venn_diagram_enclosing}
-\end{figure}
+% \begin{figure}
+% \centering
+% 
+%   \input{chapters/ch01-Introduction/venn_diagram_enclosing.tex}
+% 
+%   \caption[new-short-caption]
+%           {**** Enclosing venn diagram. ****}
+% \label{fig:venn_diagram_enclosing}
+% \end{figure}
 
 
 
@@ -116,24 +117,24 @@ they are long-term investments.
 The sooner we begin making those investments, the sooner we'll begin reaping the
 rewards and the greater those rewards will be.
 
-Because the choices and paths to sustainability are filled with 
-value judgments and moral choices, 
+Because the choices and paths to sustainability are filled with
+value judgments and moral choices,
 navigating tradeoffs is a key to sustainability.
 
 
 
 ``Sustainability'' is a crucial concept.
-If humanity is not living sustainably, 
-we will either cease to exist as a species or (at least) 
+If humanity is not living sustainably,
+we will either cease to exist as a species or (at least)
 experience drastic reductions in our population and/or standard of living.
 So, what is sustainability and how do we tell if we're living sustainably?
 There are many definitions of sustainability.
 To the novice, many definitions may seem to indicate lack of agreement.
 However, sustainability is almost a self-defining concept.
-Different answers indicate different assumptions, different priorities, 
+Different answers indicate different assumptions, different priorities,
 and different boundaries (that is, what system is being considered).
 
-When considering the meaning of sustainability, 
+When considering the meaning of sustainability,
 the two most important questions are
 ``sustaining what?'' and ``for how long?''
 The second of these questions is perhaps easier to answer.
@@ -144,7 +145,7 @@ time scales significantly longer than the human lifespan,
 Our current sustainability crisis has been thousands of years in the making~\cite{Sanderman2017}
 and will likely require millions of years to recover~\cite{Davis11262}.
 A \textbf{weak sustainability} criterion is sustainability over a long
-(by human standards) time frame, perhaps 50 years, 
+(by human standards) time frame, perhaps 50 years,
 which is on the order of one human adulthood.%
 % \footnote{
 %   Our criteria for strong\index{strong sustainability} and weak sustainability\index{weak sustainability} are physical and
@@ -153,10 +154,10 @@ which is on the order of one human adulthood.%
 %   One approach to weak\index{weak sustainability} and strong\index{strong sustainability} sustainability is economic.
 %   It defines strong sustainability\index{strong sustainability} as protecting natural capital\index{natural capital}
 %   for a certain period of time
-%   (equivalent to our weak sustainability\index{weak sustainability} definition 
+%   (equivalent to our weak sustainability\index{weak sustainability} definition
 %   if the time horizon for protecting natural capital\index{natural capital} is 50 years).
 %   In the economic approach,
-%   weak sustainability\index{weak sustainability} allows 
+%   weak sustainability\index{weak sustainability} allows
 %   produced capital\index{produced capital}
 %   to substitute for natural capital\index{natural capital}
 %   across a period of time.
@@ -169,7 +170,7 @@ The narrowest answer for what needs sustaining is human life and society, which
 \href{https://www.merriam-webster.com/dictionary/perforce}{perforce}
 entails those \textbf{ecosystem services}
 necessary for human health and wellbeing.
-Beyond these basics, some people view the nonhuman world as having inherent 
+Beyond these basics, some people view the nonhuman world as having inherent
 worth or standing and, therefore, to be worth preserving.
 For some people, the inclination for preservation is limited to those parts
 of the nonhuman world that humans find appealing, like flowers and songbirds.
@@ -216,16 +217,19 @@ macroeconomic policy.
 A business that continually loses money is not sustainable.
 Eventually, it will go out of business.
 
-Social sustainability comprises human and 
+Social sustainability comprises human and
 civil rights,
 suffering, and personal freedom.
 A social group that continually loses members, for example, the Whig party, will
 cease to be a group.
-Often, a discussion about social sustainability 
+Often, a discussion about social sustainability
 includes things that should not be sustained but that, typically,
 have persisted for a very long time, like poverty, class inequality, sexism,
 slavery, and other civil injustices.
 
+
+\bibliographystyle{unsrtnat}
+\bibliography{MCBook2021}
 
 
 \end{document}
