@@ -65,6 +65,17 @@ And all the other challenges humanity faces.
 \end{figure}
 
 
+\begin{figure}
+\centering
+
+  \input{chapters/ch01-Introduction/venn_diagram_enclosing.tex}
+
+  \caption[new-short-caption]
+          {**** Enclosing venn diagram. ****}
+\label{fig:venn_diagram_enclosing}
+\end{figure}
+
+
 Sustainability is challenging for two additional reasons.
 First, it may seem that the changes required to achieve sustainability are so
 massively overwhelming that they shouldn't even be addressed.
