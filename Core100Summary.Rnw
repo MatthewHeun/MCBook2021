@@ -27,6 +27,19 @@
 \usepackage{subcaption}  % For labeling subfigures.
 % \usepackage[table]{xcolor}      % makes colored text.
 
+
+<<setup>>=
+library(magrittr)
+
+knitr::opts_chunk$set(echo = FALSE, 
+                      fig.width = 6,    # inches
+                      fig.height = 3.5, # inches
+                      fig.align = "center", 
+                      fig.pos = "t", 
+                      eval.after = "fig.cap", 
+                      verbose = TRUE)
+@
+
 \begin{document}  
 
 \title{A Calvin Core 100 Introduction to Sustainability}
