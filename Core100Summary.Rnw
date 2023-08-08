@@ -1,5 +1,6 @@
 \documentclass{article}
 
+\usepackage{amsmath}
 \usepackage{caption}      % For subfigures
   \usepackage{subcaption}   % For subfigures
 \usepackage[square,comma,sort&compress,numbers]{natbib} % numbered
@@ -13,6 +14,18 @@
 % citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
 \usepackage{hyperref}
 \usepackage{doi}
+
+\usepackage[square,comma,sort&compress,numbers]{natbib} % numbered
+\usepackage{booktabs}    % For awesome table formatting
+\usepackage{caption}     % Necessary for the subcaption package?
+% \usepackage{epigraph}    % For epigraphs below chapter titles.
+% \usepackage{eurosym}     % For the EU currency symbol.
+\usepackage{gensymb}     % For the \degree command.
+\usepackage{microtype}   % For (more) beautiful typesetting.
+% \usepackage{rotating}    % For rotating figures.
+% \usepackage[normalem]{ulem} % For strikethrough text.
+\usepackage{subcaption}  % For labeling subfigures.
+% \usepackage[table]{xcolor}      % makes colored text.
 
 \begin{document}  
 
@@ -260,41 +273,41 @@ The process of pulling a resource into the economy is called
 % for productive purposes.
 
 
-Figure~\ref{fig:total_material_use} shows consumption rates of some natural resources,
-aggregated into important categories of 
-construction minerals\index{construction minerals}, 
-ores and industrial minerals\index{industrial minerals},
-fossil fuels\index{fossil fuels}, and 
-biomass\index{biomass}.
-In 2005, the world economy used about
-19~Gt of biomass\index{biomass}, 
-23~Gt of construction minerals\index{construction minerals}, 
-11.6~Gt of fossil fuels\index{fossil fuels}, and
-5.7~Gt of ores\index{ores} and industrial minerals\index{industrial minerals}
-to produce about \$81.5 trillion dollars of GDP. 
-One Gt is 10$^\text{9}$~tonnes (or 10$^{\text{12}}$~kg) and a trillion dollars is \$10$^{\text{12}}$.
-Thus, each dollar of GDP used about 
-0.23~kg of biomass\index{biomass}, 
-0.28~kg of construction minerals\index{construction minerals},
-0.14~kg of fossil fuels\index{fossil fuels}, and
-0.07~kg of ores\index{ores} and industrial minerals\index{industrial minerals}.
-A full accounting of the resource intensity of the economy~\Rparen{}
-yields a long list of numbers, like a huge grocery list,
-each number giving the amount of a single resource needed to make \$1 of GDP. 
-This chapter discusses sustainability implications for a few resources,
-with energy providing the prime example of resource intensity of the economy. 
+% Figure~\ref{fig:total_material_use} shows consumption rates of some natural resources,
+% aggregated into important categories of 
+% construction minerals\index{construction minerals}, 
+% ores and industrial minerals\index{industrial minerals},
+% fossil fuels\index{fossil fuels}, and 
+% biomass\index{biomass}.
+% In 2005, the world economy used about
+% 19~Gt of biomass\index{biomass}, 
+% 23~Gt of construction minerals\index{construction minerals}, 
+% 11.6~Gt of fossil fuels\index{fossil fuels}, and
+% 5.7~Gt of ores\index{ores} and industrial minerals\index{industrial minerals}
+% to produce about \$81.5 trillion dollars of GDP. 
+% One Gt is 10$^\text{9}$~tonnes (or 10$^{\text{12}}$~kg) and a trillion dollars is \$10$^{\text{12}}$.
+% Thus, each dollar of GDP used about 
+% 0.23~kg of biomass\index{biomass}, 
+% 0.28~kg of construction minerals\index{construction minerals},
+% 0.14~kg of fossil fuels\index{fossil fuels}, and
+% 0.07~kg of ores\index{ores} and industrial minerals\index{industrial minerals}.
+% A full accounting of the resource intensity of the economy%~\Rparen{}
+% yields a long list of numbers, like a huge grocery list,
+% each number giving the amount of a single resource needed to make \$1 of GDP. 
+% This chapter discusses sustainability implications for a few resources,
+% with energy providing the prime example of resource intensity of the economy. 
 
 
 <<total_material_use, fig.scap="World material use vs.\\ time by material type", fig.cap="World material use vs.\\ time by material type. ``Ores''\\index{ores} includes all industrial minerals\\index{industrial minerals}. ``Construction'' includes all construction minerals\\index{construction minerals}. ``t'' is metric tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
-krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"), 
-                                sheet = "data to plot") %>% 
+krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"),
+                                sheet = "data to plot") %>%
   dplyr::rename(
-    Biomass = `Biomass [Gt]`, 
+    Biomass = `Biomass [Gt]`,
     `Fossil fuels` = `Fossil [Gt]`,
-    Construction = `Construction [Gt]`, 
+    Construction = `Construction [Gt]`,
     Ores = `Ores [Gt]`
-  ) %>% 
-  tidyr::pivot_longer(-Year, names_to = "type", values_to = "Extracted material [Gt]") %>% 
+  ) %>%
+  tidyr::pivot_longer(-Year, names_to = "type", values_to = "Extracted material [Gt]") %>%
   # dplyr::mutate(
   #   type = factor(type, levels = c("Construction", "Ores", "Fossil fuels", "Biomass"))
   # )
@@ -303,44 +316,44 @@ krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", 
   )
 
 
-extracted_material_fit <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "ExtractedMaterialCurveFit.xlsx"), 
+extracted_material_fit <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "ExtractedMaterialCurveFit.xlsx"),
                                              sheet = "ExtractedMaterialCurveFt - 1950")
 
 ggplot2::ggplot() +
-  ggplot2::geom_area(data = krausmann, 
-                     mapping = ggplot2::aes(x = Year, y = `Extracted material [Gt]`, fill = type)) + 
+  ggplot2::geom_area(data = krausmann,
+                     mapping = ggplot2::aes(x = Year, y = `Extracted material [Gt]`, fill = type)) +
   ggplot2::scale_fill_viridis_d(direction = -1) +
 
   ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
   ggplot2::labs(y = "Extracted material [Gt/yr]") +
-  
-  ggplot2::labs(x = ggplot2::element_blank(), 
+
+  ggplot2::labs(x = ggplot2::element_blank(),
                 fill = ggplot2::element_blank()) +
-  
+
   MKHthemes::xy_theme()
 @
 
 
-Resource intensity can be measured and quantified at the world level,
-as in the examples above.
-Alternatively, resource intensity can be quantified per country or per economic sector.
-Clearly, the manufacturing sector of the economy requires resources to function.
-Raw materials (such as copper\index{copper (Cu)} and minerals\index{minerals}) are required to make
-finished goods (such as sewing machines\index{sewing machine} and mobile phones\index{mobile phone}).
-But all sectors, even the service sector, need resources.
-Consider the simple example of a haircut\index{haircut}.
-The stylist commutes to the salon in a vehicle
-(which requires iron ore\index{iron ore}, copper\index{copper (Cu)}, and other natural resources to manufacture; 
-perhaps refined liquid fuel to operate; and 
-an atmosphere\index{atmosphere} that is a source of oxygen and which absorbs CO$_2$ and water, the products of combustion).
-The stylist uses electric clippers and a hair dryer\index{hair dryer} during each appointment
-(which require both natural resources to manufacture and electricity\index{electricity} to operate).
-You sit in a fancy chair 
-(which contains metals and plastics) and
-drive to and from the appointment
-(on roads made of tar or cement).
-There is no escaping the dependence on resources to run an economy, 
-even in the service sector. 
+% Resource intensity can be measured and quantified at the world level,
+% as in the examples above.
+% Alternatively, resource intensity can be quantified per country or per economic sector.
+% Clearly, the manufacturing sector of the economy requires resources to function.
+% Raw materials (such as copper\index{copper (Cu)} and minerals\index{minerals}) are required to make
+% finished goods (such as sewing machines\index{sewing machine} and mobile phones\index{mobile phone}).
+% But all sectors, even the service sector, need resources.
+% Consider the simple example of a haircut\index{haircut}.
+% The stylist commutes to the salon in a vehicle
+% (which requires iron ore\index{iron ore}, copper\index{copper (Cu)}, and other natural resources to manufacture; 
+% perhaps refined liquid fuel to operate; and 
+% an atmosphere\index{atmosphere} that is a source of oxygen and which absorbs CO$_2$ and water, the products of combustion).
+% The stylist uses electric clippers and a hair dryer\index{hair dryer} during each appointment
+% (which require both natural resources to manufacture and electricity\index{electricity} to operate).
+% You sit in a fancy chair 
+% (which contains metals and plastics) and
+% drive to and from the appointment
+% (on roads made of tar or cement).
+% There is no escaping the dependence on resources to run an economy, 
+% even in the service sector. 
 
 
 \bibliographystyle{unsrtnat}
