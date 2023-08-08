@@ -1,5 +1,11 @@
 \documentclass{article}
 
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes.geometric}
+%\usepackage{wrapfig}     % To wrap text around figures.
+
 
 \begin{document}  
 
@@ -8,9 +14,68 @@
 
 \maketitle
 
+In the long run, sustainability is one of the few things that matter at all.
+Sustainability is a challenging problem, in part
+because sustainability problems are complex and interconnected,
+and because we operate with limited knowledge.
+In sustainability, there is tremendous social (and sometimes economic) pressure
+to continue to do things ``the way they've always been done.''
 
-Hello World!  
+Figure~\ref{fig:venn_diagram} shows the three interrelated and overlapping
+domains of sustainability:
+\textbf{environmental sustainability},
+\textbf{economic sustainability}, and
+\textbf{social sustainability}.
+Sustainability problems are complex and interconnected.
+Environmental sustainability problems have social and economic aspects 
+(that are generally more difficult to solve).
+Likewise, economic and social sustainability problems are not limited to one domain;
+typically, they include aspects of the other two domains as well.
+Therefore (for example), pollution is an environmental problem, and a social problem, and an economic problem.
+Likewise renewable energy. And land use. 
+And all the other challenges humanity faces.
 
+\begin{figure}
+\centering
+
+  \input{chapters/ch01-Introduction/venn_diagram.tex}
+
+  \caption[Three aspects of sustainability]
+          {The three aspects of sustainability.
+           Sustainability is often visualized as three overlapping ellipses:
+           economic sustainability,
+           environmental sustainability, and
+           social sustainability.
+           The intersecting area represents fully sustainable living.
+           Environmental sustainability
+           refers to the \textbf{ecosystem} and its supporting services.
+           Economic sustainability refers to human systems for creating 
+           and accounting for wealth.
+           Social sustainability refers to traditions and systems of human society.
+           The layering in this figure represents coverage in this book.
+           We focus on environmental and
+           economic sustainability.
+           Social sustainability is vitally important, so it forms the backdrop
+           for much of the discussion herein.}
+\label{fig:venn_diagram}
+\end{figure}
+
+
+Sustainability is challenging for two additional reasons.
+First, it may seem that the changes required to achieve sustainability are so
+massively overwhelming that they shouldn't even be addressed.
+Second, it may seem like the consequences of not becoming sustainable are so far
+in the future that there is neither urgency nor immediate payback.
+However, neither of these views is true.
+Current news headlines indicate that we are already
+experiencing the effects of not being sustainable, in all
+sustainability domains---environmentally, economically, and socially.
+There are many reasonable and simple things that can be done to improve our
+sustainability in the near term.
+The deep changes needed for long-term sustainability are urgently needed precisely because
+they are long-term investments.
+The sooner we begin making those investments, the sooner we'll begin reaping the
+rewards and the greater those rewards will be.
 
 
 \end{document}
