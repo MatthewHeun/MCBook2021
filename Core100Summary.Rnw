@@ -89,7 +89,6 @@ guide_linetype <- "solid"
 \newcommand{\iparx}{
 \footnotesize
 \begin{tabular}{ccccccccc}
-% \mft{I}  & = & \mft{P}        & $\times$ & \mft{A}       & $\times$ & \mft{R}      & $\times$ & \mft{X} \\
 $I$  & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $X$ \\
 \multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource intensity &  & Impact \\
  &  &  &  &  &  & of the economy &  & of resources \\
