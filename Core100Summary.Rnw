@@ -53,6 +53,18 @@ guide_line_colour <- "gray50"
 guide_linetype <- "solid"
 @
 
+% IPARX equation
+\newcommand{\iparx}{
+\footnotesize
+\begin{tabular}{ccccccccc}
+\mft{I}  & = & \mft{P}        & $\times$ & \mft{A}       & $\times$ & \mft{R}      & $\times$ & \mft{X} \\
+\multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource intensity &  & Impact \\
+ &  &  &  &  &  & of the economy &  & of resources \\
+$\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right]$ &  & $\left[\frac{\text{\$ GDP}}{\text{person$\cdot$year}}\right]$ &  & $\left[\frac{\text{resources}}{\text{\$ GDP}}\right]$ &  & $\left[\frac{\text{impact}}{\text{resources}}\right]$
+\end{tabular}
+\normalsize
+}
+
 \begin{document}  
 
 \title{A Calvin Core 100 Introduction to Sustainability}
@@ -60,26 +72,44 @@ guide_linetype <- "solid"
 
 \maketitle
 
-In the long run, sustainability is one of the few things that matter at all.
-Sustainability is a challenging problem, in part
-because sustainability problems are complex and interconnected,
-and because we operate with limited knowledge.
-In sustainability, there is tremendous social (and sometimes economic) pressure
-to continue to do things ``the way they've always been done.''
+\begin{abstract}
+This article is a condensed version of our book, 
+\emph{A Framework for Sustainability Thinking}, 
+which is available in ebook form from the Calvin library.
+This article defines sustainability and describes why sustainability
+is a complex and challenging problem. 
+It introduces, in an abbreviated form, our framework for sustainability
+thinking. 
+At the end of the article are discussion questions that probe the 
+nuances and tradeoffs involved in humanity's sustainability challenges.
+If you would like to know more, we encourage you to consider taking
+IDIS 184, Introduction to Sustainability Challenges, which is the 
+gateway to Calvin University's sustainability designation.
+\end{abstract}
 
-Figure~\ref{fig:venn_diagram} shows the three interrelated and overlapping
-domains of sustainability:
-\textbf{environmental sustainability},
-\textbf{economic sustainability}, and
-\textbf{social sustainability}.
-Sustainability problems are complex and interconnected.
-Environmental sustainability problems have social and economic aspects
-(that are generally more difficult to solve).
-Likewise, economic and social sustainability problems are not limited to one domain;
-typically, they include aspects of the other two domains as well.
-Therefore (for example), pollution is an environmental problem, and a social problem, and an economic problem.
-Likewise renewable energy. And land use.
-And all the other challenges humanity faces.
+\section*{Problems with the Brundtland definition}
+The most often-used~\cite{Quental2011} definition of sustainability 
+comes from the Brundtland report, which says that
+\textbf{sustainable development}
+``meets the needs of the present 
+without compromising the ability of future generations 
+to meet their own needs''~\cite{Brundtland}.
+This definition fails, in part, because sustainable development is an oxymoron. 
+%and is not the same as sustainability.
+``Development'' implies constant improvement, 
+which cannot be sustained forever on a planet with finite resources.
+Furthermore, this definition is not useful for policy decisions because
+``needs'' are subjective.
+The Brundtland commission, working in the 1980s, arrived at this definition
+as a compromise between developed economies, 
+who recognized the need to protect environmental resources
+(but were not willing to reduce their environmental impacts), 
+and developing economies,
+who (understandably) wanted to enjoy the better standards of living the 
+developed economies already had.
+The failure to arrive at a meaningful definition of sustainability continues
+to contribute to a ``business as usual'' approach that plagues us nearly 
+four decades later.
 
 % \begin{figure}
 % \centering
@@ -117,7 +147,7 @@ And all the other challenges humanity faces.
 % \label{fig:venn_diagram_enclosing}
 % \end{figure}
 
-
+\section*{The three pillars}
 
 \begin{figure}
   \centering
@@ -138,30 +168,69 @@ And all the other challenges humanity faces.
   \label{fig:venn_diagrams}
 \end{figure}
 
+The Brundtland definition emphasizes the social and economic  
+aspects of sustainability as co-equal to environmental sustainability.
+Figure~\ref{fig:venn_diagrams} shows these three domains of sustainability:
+\textbf{environmental sustainability},
+\textbf{economic sustainability}, and
+\textbf{social sustainability}.
+Figure~\ref{fig:venn_diagram} shows the three domains of sustainability
+relating to one another as conceived of by the Brundtland definition:
+three independent domains and ``sustainability'' lies at the intersection.
+In contrast, Figure~\ref{fig:venn_diagram_enclosing} represents the view 
+that the economy lies within the natural world.
+Without environmental sustainability, there can be no economic sustainability.
+Likewise, economic sustainability is necessary (but not sufficient) for
+social sustainability. 
+An alternative arrangement would be to put the economic sphere within the 
+social sphere, since the economy is a subset of human social activity.
+(JVA: insert quote from Bakshi here.)
 
+To summarize the main point so far: 
+the \textbf{\emph{a priori} assumptions that
+we make about how the world works and the different value judgement 
+that we make have a huge impact on our approach to sustainability.}
+\section*{Christian stewardship}
+\begin{quote}
+\textbf{What does the Bible say about sustainability?} 
+Genesis 1:26-28 describes humans as made in God's image and with the 
+responsibility to ``rule over'' or ``have dominion'' over the Earth.
+Genesis 2:15 further clarifies that humans were placed in the Garden of Eden
+to ``take care of it.''
 
-Sustainability is challenging for two additional reasons.
-First, it may seem that the changes required to achieve sustainability are so
-massively overwhelming that they shouldn't even be addressed.
-Second, it may seem like the consequences of not becoming sustainable are so far
-in the future that there is neither urgency nor immediate payback.
-However, neither of these views is true.
-Current news headlines indicate that we are already
-experiencing the effects of not being sustainable, in all
-sustainability domains---environmentally, economically, and socially.
-There are many reasonable and simple things that can be done to improve our
-sustainability in the near term.
-The deep changes needed for long-term sustainability are urgently needed precisely because
-they are long-term investments.
-The sooner we begin making those investments, the sooner we'll begin reaping the
-rewards and the greater those rewards will be.
+In the New Testament, the parable of the talents 
+(Matthew 25:14-30 and Luke 19:12-27) tells us that we, as servants,
+have been entrusted with resources.
+The master (that is, God) 
+expects that we will \emph{increase} the value of those
+resources while they are in our care.
+Finally, we will be called to give an accounting of our management.
 
-Because the choices and paths to sustainability are filled with
-value judgments and moral choices,
-navigating tradeoffs is a key to sustainability.
+In combination, these passages form the basis for the idea of Christian
+\textbf{stewardship}. 
+Historically, Christian stewardship has been understood to
+include the natural resources of the Earth; 
+economic resources at our disposal; 
+our personal talents, gifts, and abilities; 
+and the gospel truths of the kingdom.
+\end{quote}
 
+% In the long run, sustainability is one of the few things that matter at all.
+% Sustainability is a challenging problem, in part
+% because sustainability problems are complex and interconnected,
+% and because we operate with limited knowledge.
+% In sustainability, there is tremendous social (and sometimes economic) pressure
+% to continue to do things ``the way they've always been done.''
+% Sustainability problems are complex and interconnected.
+% Environmental sustainability problems have social and economic aspects
+% (that are generally more difficult to solve).
+% Likewise, economic and social sustainability problems are not limited to one domain;
+% typically, they include aspects of the other two domains as well.
+% Therefore (for example), pollution is an environmental problem, and a social problem, and an economic problem.
+% Likewise renewable energy. And land use.
+% And all the other challenges humanity faces.
 
-
+(*** consider eliminating this paragraph***)
 ``Sustainability'' is a crucial concept.
 If humanity is not living sustainably,
 we will either cease to exist as a species or (at least)
@@ -173,6 +242,7 @@ However, sustainability is almost a self-defining concept.
 Different answers indicate different assumptions, different priorities,
 and different boundaries (that is, what system is being considered).
 
+\section*{Finally, a definition of sustainability}
 When considering the meaning of sustainability,
 the two most important questions are
 ``sustaining what?'' and ``for how long?''
@@ -202,9 +272,12 @@ which is on the order of one human adulthood.%
 %   across a period of time.
 %   See \citet{Dietz:2007tu} for details.
 % }
-(Note that corporate time scales for decision making are even shorter,
-often in the 5--20 year range.)
+% (Note that corporate time scales for decision making are even shorter,
+% often in the 5--20 year range.)
 
+\section*{Weak and strong sustainability}
+(***Trim down this section***)
+(***Mention the Ehrlich-Simon bet?***)
 The narrowest answer for what needs sustaining is human life and society, which
 \href{https://www.merriam-webster.com/dictionary/perforce}{perforce}
 entails those \textbf{ecosystem services}
@@ -213,22 +286,25 @@ Beyond these basics, some people view the nonhuman world as having inherent
 worth or standing and, therefore, to be worth preserving.
 For some people, the inclination for preservation is limited to those parts
 of the nonhuman world that humans find appealing, like flowers and songbirds.
-Other people would include even those parts of the nonhuman world that negatively
-affect humanity, like smallpox.
+Other people would include even those parts of the nonhuman world that
+negatively affect humanity, like smallpox.
 Unfortunately, humans don’t know clearly what pieces of the ecosystem
 are, in the long run, necessary for our survival and which aren’t.
 For instance, could we survive in a world without dandelions?
 Maybe.
-On the other hand, dandelions might be necessary for other organisms we depend on.
-Environmental science views the ecosystem in its entirety as a web, with all parts
-depending on all other parts.
-The ecosystem is not a collection of individual components with binary ``needed''/``not
-needed'' classifications, but as a whole that exists on a continuum from ``fully functional''
+On the other hand, dandelions might be necessary for
+other organisms we depend on.
+Environmental science views the ecosystem in its entirety as a web,
+with all parts depending on all other parts.
+The ecosystem is not a collection of individual components with 
+binary ``needed''/``not needed'' classifications, 
+but as a whole that exists on a continuum from ``fully functional''
 to ``nonfunctional.''
-The choices and paths to sustainability are bristling with value judgments and
-moral choices about what to value and how much.
-\href{https://en.wiktionary.org/wiki/concomitant}{Concomitant} with such choices
-is a weighting of appropriate risks to the ecosystem and human society.
+The choices and paths to sustainability are bristling with 
+value judgments and moral choices about what to value and how much.
+\href{https://en.wiktionary.org/wiki/concomitant}{Concomitant} 
+with such choices is a weighting of appropriate risks to the ecosystem 
+and human society.
 Different answers to these questions come from different \emph{a priori} assumptions and values.
 
 The broadest definitions of sustainability
@@ -295,6 +371,37 @@ then a toaster.
 Water might become ice, a sports drink, or Play-Doh.
 The process of pulling a resource into the economy is called 
 \textbf{extraction}.
+
+Sustainability is challenging for two additional reasons.
+First, it may seem that the changes required to achieve sustainability are so
+massively overwhelming that they shouldn't even be addressed.
+Second, it may seem like the consequences of not becoming sustainable are so far
+in the future that there is neither urgency nor immediate payback.
+However, neither of these views is true.
+Current news headlines indicate that we are already
+experiencing the effects of not being sustainable, in all
+sustainability domains---environmentally, economically, and socially.
+There are many reasonable and simple things that can be done to improve our
+sustainability in the near term.
+The deep changes needed for long-term sustainability are urgently needed precisely because
+they are long-term investments.
+The sooner we begin making those investments, the sooner we'll begin reaping the
+rewards and the greater those rewards will be.
+
+Because the choices and paths to sustainability are filled with
+value judgments and moral choices,
+navigating tradeoffs is a key to sustainability.
+
+\section*{IPARX}
+(***introduce this with planetary boundaries?***)
+\begin{equation} 
+  \iparx            \tag{\ref{eq:IPARX}}
+\end{equation}
+
+
+\section*{Energy and carbon emissions, the prime example}
+
+
 % Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used
 % for productive purposes.
 
