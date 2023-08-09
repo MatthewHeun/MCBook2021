@@ -1,10 +1,15 @@
 \documentclass{article}
 
 \usepackage{amsmath}
-\usepackage{caption}      % For subfigures
+\usepackage{booktabs}       % For awesome table formatting
+\usepackage{caption}        % For subfigures
   \usepackage{subcaption}   % For subfigures
-\usepackage[square,comma,sort&compress,numbers]{natbib} % numbered
-\usepackage{tikz}
+\usepackage{doi}
+\usepackage{gensymb}        % For the \degree command.
+\usepackage{microtype}      % For (more) beautiful typesetting.
+\usepackage{multirow}       % For nice tables.
+\usepackage[square,comma,sort&compress,numbers]{natbib} % numbered references
+\usepackage{tikz}           % For drawings
   \usetikzlibrary{arrows}
   \usetikzlibrary{positioning}
   \usetikzlibrary{shapes.geometric}
@@ -12,20 +17,16 @@
 \PassOptionsToPackage{hyphens}{url}
 % \usepackage[colorlinks=true,linkcolor=MyDarkBlue,
 % citecolor=MyDarkBlue,filecolor=MyDarkBlue,urlcolor=MyDarkBlue]{hyperref}
-\usepackage{hyperref}
-\usepackage{doi}
 
-\usepackage[square,comma,sort&compress,numbers]{natbib} % numbered
-\usepackage{booktabs}    % For awesome table formatting
-\usepackage{caption}     % Necessary for the subcaption package?
 % \usepackage{epigraph}    % For epigraphs below chapter titles.
 % \usepackage{eurosym}     % For the EU currency symbol.
-\usepackage{gensymb}     % For the \degree command.
-\usepackage{microtype}   % For (more) beautiful typesetting.
 % \usepackage{rotating}    % For rotating figures.
 % \usepackage[normalem]{ulem} % For strikethrough text.
-\usepackage{subcaption}  % For labeling subfigures.
 % \usepackage[table]{xcolor}      % makes colored text.
+
+
+
+\usepackage{hyperref}
 
 
 <<setup, echo=FALSE>>=
@@ -57,7 +58,8 @@ guide_linetype <- "solid"
 \newcommand{\iparx}{
 \footnotesize
 \begin{tabular}{ccccccccc}
-\mft{I}  & = & \mft{P}        & $\times$ & \mft{A}       & $\times$ & \mft{R}      & $\times$ & \mft{X} \\
+% \mft{I}  & = & \mft{P}        & $\times$ & \mft{A}       & $\times$ & \mft{R}      & $\times$ & \mft{X} \\
+$I$  & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $X$ \\
 \multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource intensity &  & Impact \\
  &  &  &  &  &  & of the economy &  & of resources \\
 $\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right]$ &  & $\left[\frac{\text{\$ GDP}}{\text{person$\cdot$year}}\right]$ &  & $\left[\frac{\text{resources}}{\text{\$ GDP}}\right]$ &  & $\left[\frac{\text{impact}}{\text{resources}}\right]$
@@ -395,7 +397,7 @@ navigating tradeoffs is a key to sustainability.
 \section*{IPARX}
 (***introduce this with planetary boundaries?***)
 \begin{equation} 
-  \iparx            \tag{\ref{eq:IPARX}}
+  \iparx            
 \end{equation}
 
 
