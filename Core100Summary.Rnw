@@ -26,6 +26,37 @@
 % \usepackage[normalem]{ulem} % For strikethrough text.
 \usepackage{subcaption}  % For labeling subfigures.
 % \usepackage[table]{xcolor}      % makes colored text.
+\usepackage{multirow}
+
+% Temperatures
+\newcommand{\degC}{\degree C}
+\newcommand{\degF}{\degree F}
+% Figure widths
+\newcommand{\figwidth}{0.85\linewidth}
+% The "math font trick" to get Libre Caslon font in italics inside equations.
+\newcommand{\mft}[1]{\text{\emph{#1}}}
+\newcommand{\ICOtwonodollar}{\mft{I}_{\text{CO}_2}}
+\newcommand{\ICOtwo}{$\ICOtwonodollar{}$}
+\newcommand{\ICOtwoparen}{(\ICOtwo{})}
+\newcommand{\Iparen}{(\:\!\mft{I}\:\!)}
+\newcommand{\Pparen}{(\:\!\mft{P}\;\!)}
+\newcommand{\Aparen}{(\;\!\mft{A}\:\!)}
+\newcommand{\Rparen}{(\:\!\mft{R}\;\!)}
+\newcommand{\REpnodollar}{\mft{R}_{\mft{Ep}}}
+\newcommand{\REp}{$\REpnodollar$}
+\newcommand{\REpparen}{(\:\!\REp)}
+\newcommand{\Xparen}{(\;\!\mft{X}\:)}
+\newcommand{\XCOtwonodollar}{\mft{X}_{\text{CO}_2}}
+\newcommand{\XCOtwo}{$\XCOtwonodollar$}
+\newcommand{\XCOtwoparen}{(\;\!\XCOtwo)}
+\newcommand{\Tparen}{(\mft{T}\:)}
+
+\newcommand{\rateICOtwo}{$\mft{r}_{\ICOtwonodollar{}}$}
+\newcommand{\rateP}{$\mft{r}_{\mft{P}}$}
+\newcommand{\rateA}{$\mft{r}_{\mft{A}}$}
+\newcommand{\rateREp}{$\mft{r}_{\REpnodollar{}}$}
+\newcommand{\rateXCOtwo}{$\mft{r}_{\XCOtwonodollar{}}$}
+
 
 
 <<setup, echo=FALSE>>=
@@ -53,17 +84,6 @@ guide_line_colour <- "gray50"
 guide_linetype <- "solid"
 @
 
-% IPARX equation
-\newcommand{\iparx}{
-\footnotesize
-\begin{tabular}{ccccccccc}
-\mft{I}  & = & \mft{P}        & $\times$ & \mft{A}       & $\times$ & \mft{R}      & $\times$ & \mft{X} \\
-\multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource intensity &  & Impact \\
- &  &  &  &  &  & of the economy &  & of resources \\
-$\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right]$ &  & $\left[\frac{\text{\$ GDP}}{\text{person$\cdot$year}}\right]$ &  & $\left[\frac{\text{resources}}{\text{\$ GDP}}\right]$ &  & $\left[\frac{\text{impact}}{\text{resources}}\right]$
-\end{tabular}
-\normalsize
-}
 
 \begin{document}  
 
@@ -394,13 +414,61 @@ navigating tradeoffs is a key to sustainability.
 
 \section*{IPARX}
 (***introduce this with planetary boundaries?***)
-\begin{equation} 
-  \iparx            \tag{\ref{eq:IPARX}}
+\begin{equation}
+ % IPARX equation
+%\footnotesize
+\begin{tabular}{ccccccccc}
+\mft{I}  & = & \mft{P}        & $\times$ & \mft{A}       & $\times$ & \mft{R}      & $\times$ & \mft{X} \\
+\multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource intensity &  & Impact \\
+ &  &  &  &  &  & of the economy &  & of resources \\
+$\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right]$ &  & $\left[\frac{\text{\$ GDP}}{\text{person$\cdot$year}}\right]$ &  & $\left[\frac{\text{resources}}{\text{\$ GDP}}\right]$ &  & $\left[\frac{\text{impact}}{\text{resources}}\right]$
+\end{tabular}
+%\normalsize
 \end{equation}
 
+In the \textbf{IPARX} formulation, impact~\Iparen{} is a list of impacts (that is, a vector quantity) of human activity, including such things as
+\textbf{global warming potential (GWP)},
+aquifer depletion, and
+eutrophication potential.
+Population~\Pparen{} is the number of people in the world.
+Affluence~\Aparen{} is GDP per capita per year.
+Resource intensity of economic activity~\Rparen{} is the list (vector)
+of all the resources necessary to produce one unit of world GDP.
+Last, the impact intensity of of resource extraction consumption~\Xparen{}
+is the list of the impacts of each type of resource. 
+(That is, \mft{X} is a matrix quantity.)
+
+In broad strokes, sustainability can be seen in the 
+\mft{I} term (environmental impacts) and in resource extraction
+(the numerator of \mft{R} and the denominator of \mft{X}\:).
+If we emit wastes at a rate greater than can be assimilated by the environment
+(\:\!\mft{I} too large), we are unsustainable.
+If we withdraw resources from the environment at a rate greater than 
+their regeneration rate, we are unsustainable.
+
+The IPARX identity is a static relationship.
+Its terms represent steady-state levels,
+but do not necessarily show how changes in any one variable affects the others.
+For instance, using resources more efficiently (improving resource intensity),
+does not, in general, lower impact.
+Instead, it leads to more affluence!
+Likewise, it may not be possible to drive the impact(s) 
+per unit of resource to zero because of diminishing returns on efficiency
+and tradeoffs that exist between different types of impacts.
+Thus, while Equation~\ref{eq:IPARX} is useful as a conceptual framework for
+thinking about sustainability challenges, it does not provide a complete
+roadmap for sustainability solutions (in part) because of interactions 
+among the terms.
+
+IPARX is true because it is an identity, 
+and it provides a useful organizing framework
+for thinking about sustainability and sustainability challenges.
+To illustrate the IPARX framework, energy and CO$_2$ are used as the
+prime example in the next section, because energy is the master resource
+and climate change is our most urgent sustainability challenge.
+Of course, the two are closely linked.
 
 \section*{Energy and carbon emissions, the prime example}
-
 
 % Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used
 % for productive purposes.
@@ -488,9 +556,65 @@ ggplot2::ggplot() +
 % There is no escaping the dependence on resources to run an economy, 
 % even in the service sector. 
 
+\section*{Discussion Questions}
+\begin{enumerate}
+\item Some companies have declared bankruptcy and gone out of business, 
+      like K-mart and Woolworth's.
+      Others have been bailed out by governments, 
+      like General Motors and JP Morgan Chase.
+      Were any of these decisions sustainable?
+      For how long?
+      Is there social value in old companies
+      (as, say, compared to old buildings)?
+
+\item Some aquifers, such as the Ogallala aquifer,
+        are called ``fossil water''
+        because they were filled with glacial melt from the last ice age.
+        Is using any such resource sustainable?
+        What are the moral and ethical implications of leaving a valuable and
+        usable resource unused? 
+
+\item What is the purpose (telos) of mineral resources in the environment?
+        Should they be left in place or used?
+        Humans are the only creatures on Earth that make use of most minerals.
+        What are some positive impacts on animal populations that arise from
+        humans' use of materials that are not available to any other animal?
+        Are there any?
+
+\item What are the positive features of the strong sustainability criterion?
+        What are the weaknesses of the strong sustainability criterion?
+        Is the strong sustainability criterion too severe for modern life today?
+        Justify your answer.
+        Can strong sustainability be applied selectively to some resources 
+        but not others or should all resources be judged equally?
+        What are the implications of not applying the strong sustainability
+        criterion universally to all resources?
+
+\item Why is the weak sustainability criterion a good criterion?
+        What are the drawbacks to weak sustainability criteria?
+        What is the basis for your judgment?
+
+\item In which circumstances is a weak sustainability criterion appropriate?
+        In which circumstances is the strong sustainability criterion appropriate?
+        Is weak sustainability good enough?
+        Give examples.
+
+\item Nuclear power has had some environmental issues, for example, 
+      disasters such Fukushima Daiichi,
+      Three-Mile Island, and Chernobyl. 
+      High-level nuclear waste is another. 
+      On the other hand, coal-fired power plants
+      in the Midwest region have emitted 
+      enough mercury that fish in the Great Lakes are not safe for consumption
+      by children or women of child-bearing age. 
+      How do you make decisions about trading off different types of 
+      environmental impacts?
+      Which impacts are more acceptable? Which are less acceptable?
+           
+      
+\end{enumerate}
 
 \bibliographystyle{unsrtnat}
 \bibliography{MCBook2021}
-
 
 \end{document}
