@@ -5,6 +5,7 @@
 \usepackage{caption}        % For subfigures
   \usepackage{subcaption}   % For subfigures
 \usepackage{doi}
+\usepackage[margin=1in]{geometry} % To adjust margins.
 \usepackage{gensymb}        % For the \degree command.
 \usepackage{microtype}      % For (more) beautiful typesetting.
 \usepackage{multirow}       % For nice tables.
@@ -87,14 +88,14 @@ guide_linetype <- "solid"
 
 % IPARX equation
 \newcommand{\iparx}{
-\footnotesize
+% \scriptsize
 \begin{tabular}{ccccccccc}
 $I$  & = & $P$        & $\times$ & $A$       & $\times$ & $R$      & $\times$ & $X$ \\
 \multirow{2}{*}{Impact} &  & \multirow{2}{*}{Population} &  & \multirow{2}{*}{Affluence} &  & Resource intensity &  & Impact \\
  &  &  &  &  &  & of the economy &  & of resources \\
 $\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right]$ &  & $\left[\frac{\text{\$ GDP}}{\text{person$\cdot$year}}\right]$ &  & $\left[\frac{\text{resources}}{\text{\$ GDP}}\right]$ &  & $\left[\frac{\text{impact}}{\text{resources}}\right]$
 \end{tabular}
-\normalsize
+% \normalsize
 }
 
 \begin{document}  
