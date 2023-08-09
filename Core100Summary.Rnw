@@ -28,7 +28,7 @@
 % \usepackage[table]{xcolor}      % makes colored text.
 
 
-<<setup>>=
+<<setup, echo=FALSE>>=
 library(magrittr)
 
 knitr::opts_chunk$set(echo = FALSE, 
