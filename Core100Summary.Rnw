@@ -63,7 +63,10 @@
 
 
 <<setup, echo=FALSE>>=
+library(dplyr)
+library(ggplot2)
 library(magrittr)
+library(tidyr)
 
 knitr::opts_chunk$set(echo = FALSE, 
                       fig.width = 6,    # inches
