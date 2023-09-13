@@ -481,13 +481,150 @@ Because the choices and paths to sustainability are filled with
 value judgments and moral choices,
 navigating tradeoffs is a key to sustainability.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{IPARX}
+\label{sec:IPARX}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 (***introduce this with planetary boundaries?***)
 
 \begin{equation} \label{eq:IPARX}
   \iparx            
 \end{equation}
 %
+
+
+<<IPARXGraph>>=
+# CO2 emissions
+CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
+                                    sheet = "data to plot") |> 
+  tidyr::pivot_longer(cols = "CO2_emissions_tonnes", 
+                      names_to = "var", values_to = "value")
+
+# Population
+population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
+                                 sheet = "data to plot") |> 
+  dplyr::filter(Country == "World") |> 
+  dplyr::mutate(
+    Code = NULL
+  ) |> 
+  tidyr::pivot_longer(cols = "total_population", 
+                      names_to = "var", values_to = "value")
+
+# Affluence
+world_gdppc_Nordhaus <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
+                                           sheet = "GDPpc-Nordhaus-WB") |> 
+  dplyr::mutate(
+    Source = NULL
+  ) |> 
+  tidyr::pivot_longer(cols = "gdppc_2017_intl_dollars_per_capita", 
+                      names_to = "var", values_to = "value")
+
+# Energy intensity of the economy
+primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "global-primary-energy.xlsx"),
+                                     sheet = "data to plot") |> 
+  dplyr::rename(
+    `Other ren.` = Other_renewables_TWh,
+    Biofuels = Biofuels_TWh,
+    Wind = Wind_TWh,
+    Solar = Solar_TWh,
+    Nuclear = Nuclear_TWh,
+    Hydro = Hydropower_TWh,
+    `Nat. gas` = Gas_TWh,
+    Oil = Oil_TWh,
+    Coal = Coal_TWh,
+    `Trad. bio.` = Traditional_biomass_TWh
+  ) |> 
+  tidyr::pivot_longer(cols = -Year, names_to = "primary_energy_type", values_to = "energy_TWh") |> 
+  dplyr::mutate(
+    primary_energy_type = factor(primary_energy_type, levels = c("Other ren.",
+                                                                 "Biofuels",
+                                                                 "Wind",
+                                                                 "Solar",
+                                                                 "Nuclear",
+                                                                 "Hydro",
+                                                                 "Nat. gas",
+                                                                 "Oil",
+                                                                 "Coal",
+                                                                 "Trad. bio.")),
+    energy_EJ = energy_TWh * 0.0036
+  )
+
+world_pop <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "WorldPopulation.xlsx"),
+                                sheet = "world_pop") |> 
+  dplyr::select(-Source)
+
+world_gdp_Nordhaus <- dplyr::inner_join(
+  # Gather GDP per capita data
+  world_gdppc_Nordhaus |> 
+    tidyr::pivot_wider(names_from = "var", values_from = "value"),
+  world_pop, 
+  by = "Year"
+) |> 
+  dplyr::mutate(
+    # Multiply GDP per capita and population
+    world_gdp_2017_intl_dollars = gdppc_2017_intl_dollars_per_capita * population
+  )
+
+energy_intensity <- dplyr::inner_join(
+  # Get the primary energy data
+  primary_energy |>  
+    dplyr::select(-energy_TWh),
+  # Get the GDP data
+  world_gdp_Nordhaus |> 
+    dplyr::select(Year, world_gdp_2017_intl_dollars),
+  by = "Year"
+) |> 
+  dplyr::mutate(
+    energy_per_GDP_MJ_per_dollar = energy_EJ * 1e12 / world_gdp_2017_intl_dollars, 
+    Country = "World", 
+    energy_EJ = NULL, 
+    world_gdp_2017_intl_dollars = NULL
+  ) |> 
+  dplyr::group_by(Year) |> 
+  dplyr::summarise(energy_per_GDP_MJ_per_dollar = sum(energy_per_GDP_MJ_per_dollar)) |> 
+  dplyr::mutate(
+    Country = "World"
+  ) |> 
+  tidyr::pivot_longer(cols = "energy_per_GDP_MJ_per_dollar", 
+                      names_to = "var", 
+                      values_to = "value")
+
+# Carbon intensity of energy
+carbon_intensity <- dplyr::inner_join(
+  CO2_emissions |> 
+    tidyr::pivot_wider(names_from = "var", values_from = "value"),
+  primary_energy |> 
+    dplyr::group_by(Year) |> 
+    dplyr::summarise(energy_EJ = sum(energy_EJ)),
+  by = "Year"
+) |> 
+  dplyr::mutate(
+    CO2_intensity_Mt_per_EJ = CO2_emissions_tonnes / 1e6 / energy_EJ,
+    CO2_emissions_tonnes = NULL, 
+    energy_EJ = NULL
+  ) |> 
+  tidyr::pivot_longer(cols = "CO2_intensity_Mt_per_EJ", 
+                      names_to = "var", 
+                      values_to = "value")
+
+# Put everything together in a single data frame
+all_iparx_data <- dplyr::bind_rows(CO2_emissions,        # I
+                                   population,           # P
+                                   world_gdppc_Nordhaus, # A
+                                   energy_intensity,     # R
+                                   carbon_intensity) |>  # X
+  dplyr::filter(Year >= 1800)
+
+all_iparx_data |> 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = value)) +
+  ggplot2::geom_line() + 
+  
+  ggplot2::facet_wrap(nrow = 1, facets = vars(var))
+
+
+@
 
 
 In the \textbf{IPARX} formulation, impact~\Iparen{} is a list of impacts (that is, a vector quantity) of human activity, including such things as
