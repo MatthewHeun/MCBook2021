@@ -104,7 +104,7 @@ $\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right
 \definecolor{my_green}{HTML}{21908C}
 % Set the colors we want to use for tcboxes
 % \tcbset{colback=red!5!white, colframe=red!75!black} % Set the colors for tcboxes
-\tcbset{colback=my_green, colframe=my_purple} % Set the colors for tcboxes
+\tcbset{colback=my_yellow, colframe=my_purple} % Set the colors for tcboxes
 
 
 \begin{document}  
