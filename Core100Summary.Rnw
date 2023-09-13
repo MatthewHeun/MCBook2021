@@ -10,6 +10,7 @@
 \usepackage{microtype}      % For (more) beautiful typesetting.
 \usepackage{multirow}       % For nice tables.
 \usepackage[square,comma,sort&compress,numbers]{natbib} % numbered references
+\usepackage{tcolorbox}      % For nice text boxes
 \usepackage{tikz}           % For drawings
   \usetikzlibrary{arrows}
   \usetikzlibrary{positioning}
@@ -96,6 +97,16 @@ $\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right
 \end{tabular}
 }
 
+
+% Define colors
+\definecolor{my_purple}{HTML}{440154}
+\definecolor{my_yellow}{HTML}{FDE725}
+\definecolor{my_green}{HTML}{21908C}
+% Set the colors we want to use for tcboxes
+% \tcbset{colback=red!5!white, colframe=red!75!black} % Set the colors for tcboxes
+\tcbset{colback=my_green, colframe=my_purple} % Set the colors for tcboxes
+
+
 \begin{document}  
 
 \title{A Calvin Core 100 Introduction to Sustainability}
@@ -104,6 +115,7 @@ $\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right
 \maketitle
 
 \begin{abstract}
+\begin{tcolorbox}
 This article is a condensed version of our book, 
 \emph{A Framework for Sustainability Thinking}, 
 which is available in ebook form from the Calvin library.
@@ -116,6 +128,7 @@ nuances and tradeoffs involved in humanity's sustainability challenges.
 If you would like to know more, we encourage you to consider taking
 IDIS 184, Introduction to Sustainability Challenges, which is the 
 gateway to Calvin University's sustainability designation.
+\end{tcolorbox}
 \end{abstract}
 
 
@@ -258,9 +271,15 @@ To summarize the main point so far:
 the \textbf{\emph{a priori} assumptions that
 we make about how the world works and the different value judgement 
 that we make have a huge impact on our approach to sustainability.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Christian stewardship}
-\begin{quote}
-\textbf{What does the Bible say about sustainability?} 
+\label{sec:christian_steweardship}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------
+\begin{tcolorbox}[title=What does the Bible say about sustainability?]
 Genesis 1:26-28 describes humans as made in God's image and with the 
 responsibility to ``rule over'' or ``have dominion'' over the Earth.
 Genesis 2:15 further clarifies that humans were placed in the Garden of Eden
@@ -281,7 +300,9 @@ include the natural resources of the Earth;
 economic resources at our disposal; 
 our personal talents, gifts, and abilities; 
 and the gospel truths of the kingdom.
-\end{quote}
+\end{tcolorbox}
+%----------------------------------
+
 
 % In the long run, sustainability is one of the few things that matter at all.
 % Sustainability is a challenging problem, in part
