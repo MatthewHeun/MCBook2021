@@ -462,9 +462,12 @@ navigating tradeoffs is a key to sustainability.
 
 \section*{IPARX}
 (***introduce this with planetary boundaries?***)
-\begin{equation} 
+
+\begin{equation} \label{eq:IPARX}
   \iparx            
 \end{equation}
+%
+
 
 In the \textbf{IPARX} formulation, impact~\Iparen{} is a list of impacts (that is, a vector quantity) of human activity, including such things as
 \textbf{global warming potential (GWP)},
