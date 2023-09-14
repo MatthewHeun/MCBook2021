@@ -499,7 +499,7 @@ navigating tradeoffs is a key to sustainability.
 %
 
 
-<<IPARXGraph, fig.height=1.5, fig.width=6, fig.cap="Evolution of world IPARX terms 1800--2020. $I$ (impact) in Gt of CO$_2$ emitted/year; $P$ (population) in billions; $A$ (affluence) in thousands of 2017 international \\$/person$\\cdot$year; $R$ (resource intensity of the economy) in MJ of primary energy/2017 international \\$; $X$ (impact of resources) in Mt CO$_2$/EJ of primary energy.">>=
+<<IPARXTermsGraph, fig.height=1.5, fig.width=6, fig.cap="Evolution of world IPARX terms 1800--2020. $I$ (impact) in Gt of CO$_2$ emitted/year; $P$ (population) in billions; $A$ (affluence) in thousands of 2017 international \\$/person$\\cdot$year; $R$ (resource intensity of the economy) in MJ of primary energy/2017 international \\$; $X$ (impact of resources) in Mt CO$_2$/EJ of primary energy. ``t'' is metric tonnes (1000 kg).">>=
 
 # CO2 emissions
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
@@ -656,7 +656,8 @@ all_iparx_data |>
 @
 
 
-In the \textbf{IPARX} formulation, impact~\Iparen{} is a list of impacts (that is, a vector quantity) of human activity, including such things as
+In the \textbf{IPARX} formulation, 
+impact~\Iparen{} is a list of impacts (that is, a vector quantity) of human activity, including such things as
 \textbf{global warming potential (GWP)},
 aquifer depletion, and
 eutrophication potential.
@@ -667,6 +668,8 @@ of all the resources necessary to produce one unit of world GDP.
 Last, the impact intensity of of resource extraction consumption~\Xparen{}
 is the list of the impacts of each type of resource. 
 (That is, \mft{X} is a matrix quantity.)
+Figure~\ref{fig:IPARXTermsGraph} shows the evolution of IPARX equation terms
+from 1800--2020.
 
 In broad strokes, sustainability can be seen in the 
 \mft{I} term (environmental impacts) and in resource extraction
