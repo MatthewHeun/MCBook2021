@@ -119,6 +119,8 @@ $\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right
 
 \maketitle
 
+% Eliminate the name of the abstract.  
+% We will put it in the title of the box.
 \renewcommand{\abstractname}{}
 
 \begin{abstract}
