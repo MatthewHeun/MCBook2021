@@ -66,6 +66,7 @@
 library(dplyr)
 library(ggplot2)
 library(magrittr)
+library(MKHthemes)
 library(tidyr)
 
 knitr::opts_chunk$set(echo = FALSE, 
@@ -498,11 +499,16 @@ navigating tradeoffs is a key to sustainability.
 %
 
 
-<<IPARXGraph>>=
+<<IPARXGraph, fig.height=1.5, fig.width=6, fig.cap="Evolution of world IPARX terms 1800--2020. $I$ (impact) in Gt of CO$_2$ emitted; $P$ (population) in billions; $A$ (affluence) in thousands of 2017 international \\$/person; $R$ (resource intensity of the economy) in MJ of primary energy/2017 international \\$; $X$ (impact of resources) in Mt CO$_2$/EJ.">>=
+
 # CO2 emissions
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                                     sheet = "data to plot") |> 
-  tidyr::pivot_longer(cols = "CO2_emissions_tonnes", 
+  dplyr::mutate(
+    CO2_emissions_Gt = CO2_emissions_tonnes / 1e9, 
+    CO2_emissions_tonnes = NULL
+  ) |> 
+  tidyr::pivot_longer(cols = "CO2_emissions_Gt", 
                       names_to = "var", values_to = "value")
 
 # Population
@@ -510,18 +516,22 @@ population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datas
                                  sheet = "data to plot") |> 
   dplyr::filter(Country == "World") |> 
   dplyr::mutate(
-    Code = NULL
+    Code = NULL, 
+    total_population_billion = total_population / 1e9, 
+    total_population = NULL
   ) |> 
-  tidyr::pivot_longer(cols = "total_population", 
+  tidyr::pivot_longer(cols = "total_population_billion", 
                       names_to = "var", values_to = "value")
 
 # Affluence
 world_gdppc_Nordhaus <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
                                            sheet = "GDPpc-Nordhaus-WB") |> 
   dplyr::mutate(
-    Source = NULL
+    Source = NULL, 
+    gdppc_thousand_2017_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000, 
+    gdppc_2017_intl_dollars_per_capita = NULL
   ) |> 
-  tidyr::pivot_longer(cols = "gdppc_2017_intl_dollars_per_capita", 
+  tidyr::pivot_longer(cols = "gdppc_thousand_2017_intl_dollars_per_capita", 
                       names_to = "var", values_to = "value")
 
 # Energy intensity of the economy
@@ -567,7 +577,7 @@ world_gdp_Nordhaus <- dplyr::inner_join(
 ) |> 
   dplyr::mutate(
     # Multiply GDP per capita and population
-    world_gdp_2017_intl_dollars = gdppc_2017_intl_dollars_per_capita * population
+    world_gdp_thousand_2017_intl_dollars = gdppc_thousand_2017_intl_dollars_per_capita * population
   )
 
 energy_intensity <- dplyr::inner_join(
@@ -576,11 +586,11 @@ energy_intensity <- dplyr::inner_join(
     dplyr::select(-energy_TWh),
   # Get the GDP data
   world_gdp_Nordhaus |> 
-    dplyr::select(Year, world_gdp_2017_intl_dollars),
+    dplyr::select(Year, world_gdp_thousand_2017_intl_dollars),
   by = "Year"
 ) |> 
   dplyr::mutate(
-    energy_per_GDP_MJ_per_dollar = energy_EJ * 1e12 / world_gdp_2017_intl_dollars, 
+    energy_per_GDP_MJ_per_dollar = energy_EJ * 1e12 / (world_gdp_thousand_2017_intl_dollars * 1000), 
     Country = "World", 
     energy_EJ = NULL, 
     world_gdp_2017_intl_dollars = NULL
@@ -604,7 +614,7 @@ carbon_intensity <- dplyr::inner_join(
   by = "Year"
 ) |> 
   dplyr::mutate(
-    CO2_intensity_Mt_per_EJ = CO2_emissions_tonnes / 1e6 / energy_EJ,
+    CO2_intensity_Mt_per_EJ = CO2_emissions_Gt*1e9 / 1e6 / energy_EJ,
     CO2_emissions_tonnes = NULL, 
     energy_EJ = NULL
   ) |> 
@@ -618,13 +628,29 @@ all_iparx_data <- dplyr::bind_rows(CO2_emissions,        # I
                                    world_gdppc_Nordhaus, # A
                                    energy_intensity,     # R
                                    carbon_intensity) |>  # X
-  dplyr::filter(Year >= 1800)
+  dplyr::filter(Year >= 1800) |> 
+  dplyr::mutate(
+    var = dplyr::case_match(
+      var, 
+      "CO2_emissions_Gt" ~ "I", 
+      "total_population_billion" ~ "P",
+      "gdppc_thousand_2017_intl_dollars_per_capita" ~ "A", 
+      "energy_per_GDP_MJ_per_dollar" ~ "R", 
+      "CO2_intensity_Mt_per_EJ" ~ "X"
+    ), 
+    var = factor(var, levels = c("I", "P", "A", "R", "X"))
+  )
 
 all_iparx_data |> 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = value)) +
   ggplot2::geom_line() + 
+  ggplot2::labs(x = NULL, y = NULL) +
+  ggplot2::scale_x_continuous(breaks = c(1800, 2000)) +
+  ggplot2::scale_y_continuous(limits = c(0, NA)) +
   
-  ggplot2::facet_wrap(nrow = 1, facets = ggplot2::vars(var))
+  ggplot2::facet_wrap(nrow = 1, facets = ggplot2::vars(var), scales = "free_y") + 
+  
+  MKHthemes::xy_theme()
 
 
 @
