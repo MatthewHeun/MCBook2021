@@ -119,8 +119,10 @@ $\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right
 
 \maketitle
 
+\renewcommand{\abstractname}{}
+
 \begin{abstract}
-\begin{tcolorbox}
+\begin{tcolorbox}[title=Abstract]
 The purpose of this article is to define sustainability and
 describes why sustainability is a complex and challenging problem. 
 It introduces, in an abbreviated form, our framework for sustainability
@@ -128,9 +130,10 @@ thinking.
 Discussion questions are provided at the end of the article 
 to probe the nuances and tradeoffs involved in humanity's sustainability challenges.
 
-If you would like to know more, we encourage you to enroll in
-IDIS 184, Introduction to Sustainability Challenges, which is the 
-gateway course to Calvin University's sustainability designation.
+\phantom{2em}If you would like to know more about environmental sustainability,
+we encourage you to enroll in IDIS 184, 
+Introduction to Sustainability Challenges, 
+the gateway course to Calvin University's sustainability designation.
 This article is a condensed version of the book, 
 \emph{A Framework for Sustainability Thinking: 
 A Student's Introduction to Global Sustainability Challenges}, 
