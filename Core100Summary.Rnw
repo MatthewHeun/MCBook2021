@@ -650,7 +650,10 @@ all_iparx_data |>
   
   ggplot2::facet_wrap(nrow = 1, facets = ggplot2::vars(var), scales = "free_y") + 
   
-  MKHthemes::xy_theme()
+  MKHthemes::xy_theme() + 
+  
+  ggplot2::theme(axis.text.x = ggplot2::element_text(margin = ggplot2::margin(t = 3, r = 0, b = 0, l = 0)), 
+                 axis.text.y = ggplot2::element_text(margin = ggplot2::margin(t = 0, r = 3, b = 0, l = 0)))
 
 
 @
