@@ -920,7 +920,7 @@ egdp_df <- primary_energy %>%
 
 egdp_df %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = gdp_trillions, y = energy_EJ)) +
-  ggplot2::geom_line(size = data_line_size, 
+  ggplot2::geom_line(linewidth = data_line_size, 
                      colour = data_line_colour,
                      linetype = data_linetype) + 
   ggplot2::labs(x = "GDP [trillion 2017 Intl. $/yr]", 
