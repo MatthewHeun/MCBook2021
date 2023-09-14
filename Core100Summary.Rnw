@@ -499,7 +499,7 @@ navigating tradeoffs is a key to sustainability.
 %
 
 
-<<IPARXGraph, fig.height=1.5, fig.width=6, fig.cap="Evolution of world IPARX terms 1800--2020. $I$ (impact) in Gt of CO$_2$ emitted; $P$ (population) in billions; $A$ (affluence) in thousands of 2017 international \\$/person; $R$ (resource intensity of the economy) in MJ of primary energy/2017 international \\$; $X$ (impact of resources) in Mt CO$_2$/EJ.">>=
+<<IPARXGraph, fig.height=1.5, fig.width=6, fig.cap="Evolution of world IPARX terms 1800--2020. $I$ (impact) in Gt of CO$_2$ emitted/year; $P$ (population) in billions; $A$ (affluence) in thousands of 2017 international \\$/person$\\cdot$year; $R$ (resource intensity of the economy) in MJ of primary energy/2017 international \\$; $X$ (impact of resources) in Mt CO$_2$/EJ.">>=
 
 # CO2 emissions
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
