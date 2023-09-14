@@ -646,7 +646,9 @@ all_iparx_data <- dplyr::bind_rows(CO2_emissions,        # I
 
 all_iparx_data |> 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = value)) +
-  ggplot2::geom_line() + 
+  ggplot2::geom_line(linewidth = data_line_size, 
+                     colour = data_line_colour,
+                     linetype = data_linetype) + 
   ggplot2::labs(x = NULL, y = NULL) +
   ggplot2::scale_x_continuous(breaks = c(1800, 1900, 2000)) +
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
