@@ -504,6 +504,16 @@ navigating tradeoffs is a key to sustainability.
 
 <<IPARXTermsGraph, fig.height=1.5, fig.width=6, fig.cap="Evolution of world IPARX terms 1800--2020. $I$ (impact) in Gt of CO$_2$ emitted/year; $P$ (population) in billions; $A$ (affluence) in thousands of 2017 international \\$/person$\\cdot$year; $R$ (resource intensity of the economy) in MJ of primary energy/2017 international \\$; $X$ (impact of resources) in Mt CO$_2$/EJ of primary energy. ``t'' is metric tonnes (1000 kg).">>=
 
+# A note about the graphs in this figure.
+# We can use the values in 2020 to calculate the right side of this equaiton.
+# The we can double-check against the value if I in 2020.
+# I = P*A*R*X
+# I = (8e9 people)(15 k$/person-yr)(5 MJ/$)(60 MtCO2/EJ)(1000 $/k$)(1 EJ/10e12 MJ)(1 Gt/1000 Mt)
+# I = 36 GtCO2yr
+# The value of I in 2020 on the left-most graph is about 36 GtCO2/yr, 
+# thereby validating the graphs.
+# We are doing the unit conversions correctly.
+
 # CO2 emissions
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
                                     sheet = "data to plot") |> 
@@ -655,8 +665,8 @@ all_iparx_data |>
   
   ggplot2::facet_wrap(nrow = 1, facets = ggplot2::vars(var), scales = "free_y") + 
   
-  MKHthemes::xy_theme(tick_length = -2, # A bit smaller
-                      x_axis_labels_spacing = 2, # Bring closer to the axis itself.
+  MKHthemes::xy_theme(tick_length = -2,          # A bit shorter
+                      x_axis_labels_spacing = 2, # Bring labels closer to the axes
                       y_axis_labels_spacing = 2)
 @
 
