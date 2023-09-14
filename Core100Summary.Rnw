@@ -9,6 +9,7 @@
 \usepackage{gensymb}        % For the \degree command.
 \usepackage{microtype}      % For (more) beautiful typesetting.
 \usepackage{multirow}       % For nice tables.
+\usepackage{soul}           % For strikethrough text.
 \usepackage[square,comma,sort&compress,numbers]{natbib} % numbered references
 \usepackage{tcolorbox}      % For nice text boxes
 \usepackage{tikz}           % For drawings
@@ -155,9 +156,9 @@ Action items for MKH:
 %
 \begin{enumerate}
 
-  \item Find a colorful box environment and use it for the abstract and stewardship sections. 
+  \item \st{Find a colorful box environment and use it for the abstract and stewardship sections.}
 
-  \item Develop a single-figure version of the 5 IPARX graphs
+  \item \st{Develop a single-figure version of the 5 IPARX graphs.}
 
 \end{enumerate}
 %
