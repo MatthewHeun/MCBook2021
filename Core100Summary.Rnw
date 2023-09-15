@@ -8,6 +8,7 @@
 \usepackage[margin=1in]{geometry} % To adjust margins.
 \usepackage{gensymb}        % For the \degree command.
 \usepackage{microtype}      % For (more) beautiful typesetting.
+\microtypesetup{expansion=false} % Per suggestion at https://tex.stackexchange.com/questions/384554/acm-conference-template-auto-expansion-is-only-possible-with-scalable-fonts to fix a problem Paul and Zeke are having.
 \usepackage{multirow}       % For nice tables.
 \usepackage{soul}           % For strikethrough text.
 \usepackage[square,comma,sort&compress,numbers]{natbib} % numbered references
@@ -218,7 +219,7 @@ four decades later.
 %            The intersecting area represents fully sustainable living.
 %            Environmental sustainability
 %            refers to the \textbf{ecosystem} and its supporting services.
-%            Economic sustainability refers to human systems for creating 
+%            Economic sustainability refers to human systems for creating
 %            and accounting for wealth.
 %            Social sustainability refers to traditions and systems of human society.
 %            The layering in this figure represents coverage in this book.
@@ -228,8 +229,8 @@ four decades later.
 %            for much of the discussion herein.}
 % \label{fig:venn_diagram}
 % \end{figure}
-
-
+% 
+% 
 % \begin{figure}
 % \centering
 % 
@@ -261,7 +262,7 @@ four decades later.
   \label{fig:venn_diagrams}
 \end{figure}
 
-The Brundtland definition emphasizes the social and economic  
+The Brundtland definition emphasizes the social and economic
 aspects of sustainability as co-equal to environmental sustainability.
 Figure~\ref{fig:venn_diagrams} shows these three domains of sustainability:
 \textbf{environmental sustainability},
@@ -270,18 +271,18 @@ Figure~\ref{fig:venn_diagrams} shows these three domains of sustainability:
 Figure~\ref{fig:venn_diagram} shows the three domains of sustainability
 relating to one another as conceived of by the Brundtland definition:
 three independent domains and ``sustainability'' lies at the intersection.
-In contrast, Figure~\ref{fig:venn_diagram_enclosing} represents the view 
+In contrast, Figure~\ref{fig:venn_diagram_enclosing} represents the view
 that the economy lies within the natural world.
 Without environmental sustainability, there can be no economic sustainability.
 Likewise, economic sustainability is necessary (but not sufficient) for
-social sustainability. 
-An alternative arrangement would be to put the economic sphere within the 
+social sustainability.
+An alternative arrangement would be to put the economic sphere within the
 social sphere, since the economy is a subset of human social activity.
 (JVA: insert quote from Bakshi here.)
 
-To summarize the main point so far: 
+To summarize the main point so far:
 the \textbf{\emph{a priori} assumptions that
-we make about how the world works and the different value judgement 
+we make about how the world works and the different value judgement
 that we make have a huge impact on our approach to sustainability.}
 
 
@@ -292,44 +293,44 @@ that we make have a huge impact on our approach to sustainability.}
 
 %----------------------------------
 \begin{tcolorbox}[title=What does the Bible say about sustainability?]
-Genesis 1:26-28 describes humans as made in God's image and with the 
+Genesis 1:26-28 describes humans as made in God's image and with the
 responsibility to ``rule over'' or ``have dominion'' over the Earth.
 Genesis 2:15 further clarifies that humans were placed in the Garden of Eden
 to ``take care of it.''
 
-In the New Testament, the parable of the talents 
+In the New Testament, the parable of the talents
 (Matthew 25:14-30 and Luke 19:12-27) tells us that we, as servants,
 have been entrusted with resources.
-The master (that is, God) 
+The master (that is, God)
 expects that we will \emph{increase} the value of those
 resources while they are in our care.
 Finally, we will be called to give an accounting of our management.
 
 In combination, these passages form the basis for the idea of Christian
-\textbf{stewardship}. 
+\textbf{stewardship}.
 Historically, Christian stewardship has been understood to
-include the natural resources of the Earth; 
-economic resources at our disposal; 
-our personal talents, gifts, and abilities; 
+include the natural resources of the Earth;
+economic resources at our disposal;
+our personal talents, gifts, and abilities;
 and the gospel truths of the kingdom.
 \end{tcolorbox}
 %----------------------------------
 
 
-% In the long run, sustainability is one of the few things that matter at all.
-% Sustainability is a challenging problem, in part
-% because sustainability problems are complex and interconnected,
-% and because we operate with limited knowledge.
-% In sustainability, there is tremendous social (and sometimes economic) pressure
-% to continue to do things ``the way they've always been done.''
-% Sustainability problems are complex and interconnected.
-% Environmental sustainability problems have social and economic aspects
-% (that are generally more difficult to solve).
-% Likewise, economic and social sustainability problems are not limited to one domain;
-% typically, they include aspects of the other two domains as well.
-% Therefore (for example), pollution is an environmental problem, and a social problem, and an economic problem.
-% Likewise renewable energy. And land use.
-% And all the other challenges humanity faces.
+In the long run, sustainability is one of the few things that matter at all.
+Sustainability is a challenging problem, in part
+because sustainability problems are complex and interconnected,
+and because we operate with limited knowledge.
+In sustainability, there is tremendous social (and sometimes economic) pressure
+to continue to do things ``the way they've always been done.''
+Sustainability problems are complex and interconnected.
+Environmental sustainability problems have social and economic aspects
+(that are generally more difficult to solve).
+Likewise, economic and social sustainability problems are not limited to one domain;
+typically, they include aspects of the other two domains as well.
+Therefore (for example), pollution is an environmental problem, and a social problem, and an economic problem.
+Likewise renewable energy. And land use.
+And all the other challenges humanity faces.
 
 (*** consider eliminating this paragraph***)
 ``Sustainability'' is a crucial concept.
@@ -397,14 +398,14 @@ On the other hand, dandelions might be necessary for
 other organisms we depend on.
 Environmental science views the ecosystem in its entirety as a web,
 with all parts depending on all other parts.
-The ecosystem is not a collection of individual components with 
-binary ``needed''/``not needed'' classifications, 
+The ecosystem is not a collection of individual components with
+binary ``needed''/``not needed'' classifications,
 but as a whole that exists on a continuum from ``fully functional''
 to ``nonfunctional.''
-The choices and paths to sustainability are bristling with 
+The choices and paths to sustainability are bristling with
 value judgments and moral choices about what to value and how much.
-\href{https://en.wiktionary.org/wiki/concomitant}{Concomitant} 
-with such choices is a weighting of appropriate risks to the ecosystem 
+\href{https://en.wiktionary.org/wiki/concomitant}{Concomitant}
+with such choices is a weighting of appropriate risks to the ecosystem
 and human society.
 Different answers to these questions come from different \emph{a priori} assumptions and values.
 
@@ -446,10 +447,10 @@ slavery, and other civil injustices.
 % start  chapter 5 material.
 Because the economy is society's metabolism,
 economic growth and increasing affluence
-mean increasing use of natural resources and emission of wastes. 
+mean increasing use of natural resources and emission of wastes.
 
-Whether we are aware of it or not, 
-all plant, animal, and human life on Earth depends on natural resources, 
+Whether we are aware of it or not,
+all plant, animal, and human life on Earth depends on natural resources,
 provisioned by the ecosystem.
 Where would you be without air and water to breathe and drink?
 Without minerals to make cars?
@@ -461,7 +462,7 @@ to make electricity, gasoline, and natural gas?
 Nowhere.
 
 When discussing resource use, knowledge of several key terms is helpful.
-The term ``resource'' means a primary input to the economy. 
+The term ``resource'' means a primary input to the economy.
 As such, a resource is something obtained from the natural world.
 It is something provisioned by the ecosystem.
 Timber is a resource. Iron ore is a resource. Water is a resource.
@@ -470,7 +471,7 @@ Timber might become 2$\times$4s, plywood, toothpicks, or mulch.
 Iron ore might become steel, then sheet metal, and
 then a toaster.
 Water might become ice, a sports drink, or Play-Doh.
-The process of pulling a resource into the economy is called 
+The process of pulling a resource into the economy is called
 \textbf{extraction}.
 
 Sustainability is challenging for two additional reasons.
@@ -502,7 +503,7 @@ navigating tradeoffs is a key to sustainability.
 (***introduce this with planetary boundaries?***)
 
 \begin{equation} \label{eq:IPARX}
-  \iparx            
+  \iparx
 \end{equation}
 %
 
@@ -515,46 +516,46 @@ navigating tradeoffs is a key to sustainability.
 # I = P*A*R*X
 # I = (8e9 people)(15 k$/person-yr)(5 MJ/$)(60 MtCO2/EJ)(1000 $/k$)(1 EJ/10e12 MJ)(1 Gt/1000 Mt)
 # I = 36 GtCO2yr
-# The value of I in 2020 on the left-most graph is about 36 GtCO2/yr, 
+# The value of I in 2020 on the left-most graph is about 36 GtCO2/yr,
 # thereby validating the graphs.
 # We are doing the unit conversions correctly.
 
 # CO2 emissions
 CO2_emissions <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "annual-co2-emissions-per-country.xlsx"),
-                                    sheet = "data to plot") |> 
+                                    sheet = "data to plot") |>
   dplyr::mutate(
-    CO2_emissions_Gt = CO2_emissions_tonnes / 1e9, 
+    CO2_emissions_Gt = CO2_emissions_tonnes / 1e9,
     CO2_emissions_tonnes = NULL
-  ) |> 
-  tidyr::pivot_longer(cols = "CO2_emissions_Gt", 
+  ) |>
+  tidyr::pivot_longer(cols = "CO2_emissions_Gt",
                       names_to = "var", values_to = "value")
 
 # Population
 population <- readxl::read_excel(file.path("chapters", "ch03-Population", "datasets", "population.xlsx"),
-                                 sheet = "data to plot") |> 
-  dplyr::filter(Country == "World") |> 
+                                 sheet = "data to plot") |>
+  dplyr::filter(Country == "World") |>
   dplyr::mutate(
-    Code = NULL, 
-    total_population_billion = total_population / 1e9, 
+    Code = NULL,
+    total_population_billion = total_population / 1e9,
     total_population = NULL
-  ) |> 
-  tidyr::pivot_longer(cols = "total_population_billion", 
+  ) |>
+  tidyr::pivot_longer(cols = "total_population_billion",
                       names_to = "var", values_to = "value")
 
 # Affluence
 world_gdppc_Nordhaus <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "GDPpc_time_series.xlsx"),
-                                           sheet = "GDPpc-Nordhaus-WB") |> 
+                                           sheet = "GDPpc-Nordhaus-WB") |>
   dplyr::mutate(
-    Source = NULL, 
-    gdppc_thousand_2017_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000, 
+    Source = NULL,
+    gdppc_thousand_2017_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000,
     gdppc_2017_intl_dollars_per_capita = NULL
-  ) |> 
-  tidyr::pivot_longer(cols = "gdppc_thousand_2017_intl_dollars_per_capita", 
+  ) |>
+  tidyr::pivot_longer(cols = "gdppc_thousand_2017_intl_dollars_per_capita",
                       names_to = "var", values_to = "value")
 
 # Energy intensity of the economy
 primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "global-primary-energy.xlsx"),
-                                     sheet = "data to plot") |> 
+                                     sheet = "data to plot") |>
   dplyr::rename(
     `Other ren.` = Other_renewables_TWh,
     Biofuels = Biofuels_TWh,
@@ -566,8 +567,8 @@ primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensi
     Oil = Oil_TWh,
     Coal = Coal_TWh,
     `Trad. bio.` = Traditional_biomass_TWh
-  ) |> 
-  tidyr::pivot_longer(cols = -Year, names_to = "primary_energy_type", values_to = "energy_TWh") |> 
+  ) |>
+  tidyr::pivot_longer(cols = -Year, names_to = "primary_energy_type", values_to = "energy_TWh") |>
   dplyr::mutate(
     primary_energy_type = factor(primary_energy_type, levels = c("Other ren.",
                                                                  "Biofuels",
@@ -583,16 +584,16 @@ primary_energy <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensi
   )
 
 world_pop <- readxl::read_excel(file.path("chapters", "ch04-Affluence", "datasets", "WorldPopulation.xlsx"),
-                                sheet = "world_pop") |> 
+                                sheet = "world_pop") |>
   dplyr::select(-Source)
 
 world_gdp_Nordhaus <- dplyr::inner_join(
   # Gather GDP per capita data
-  world_gdppc_Nordhaus |> 
+  world_gdppc_Nordhaus |>
     tidyr::pivot_wider(names_from = "var", values_from = "value"),
-  world_pop, 
+  world_pop,
   by = "Year"
-) |> 
+) |>
   dplyr::mutate(
     # Multiply GDP per capita and population
     world_gdp_thousand_2017_intl_dollars = gdppc_thousand_2017_intl_dollars_per_capita * population
@@ -600,44 +601,44 @@ world_gdp_Nordhaus <- dplyr::inner_join(
 
 energy_intensity <- dplyr::inner_join(
   # Get the primary energy data
-  primary_energy |>  
+  primary_energy |>
     dplyr::select(-energy_TWh),
   # Get the GDP data
-  world_gdp_Nordhaus |> 
+  world_gdp_Nordhaus |>
     dplyr::select(Year, world_gdp_thousand_2017_intl_dollars),
   by = "Year"
-) |> 
+) |>
   dplyr::mutate(
-    energy_per_GDP_MJ_per_dollar = energy_EJ * 1e12 / (world_gdp_thousand_2017_intl_dollars * 1000), 
-    Country = "World", 
-    energy_EJ = NULL, 
+    energy_per_GDP_MJ_per_dollar = energy_EJ * 1e12 / (world_gdp_thousand_2017_intl_dollars * 1000),
+    Country = "World",
+    energy_EJ = NULL,
     world_gdp_2017_intl_dollars = NULL
-  ) |> 
-  dplyr::group_by(Year) |> 
-  dplyr::summarise(energy_per_GDP_MJ_per_dollar = sum(energy_per_GDP_MJ_per_dollar)) |> 
+  ) |>
+  dplyr::group_by(Year) |>
+  dplyr::summarise(energy_per_GDP_MJ_per_dollar = sum(energy_per_GDP_MJ_per_dollar)) |>
   dplyr::mutate(
     Country = "World"
-  ) |> 
-  tidyr::pivot_longer(cols = "energy_per_GDP_MJ_per_dollar", 
-                      names_to = "var", 
+  ) |>
+  tidyr::pivot_longer(cols = "energy_per_GDP_MJ_per_dollar",
+                      names_to = "var",
                       values_to = "value")
 
 # Carbon intensity of energy
 carbon_intensity <- dplyr::inner_join(
-  CO2_emissions |> 
+  CO2_emissions |>
     tidyr::pivot_wider(names_from = "var", values_from = "value"),
-  primary_energy |> 
-    dplyr::group_by(Year) |> 
+  primary_energy |>
+    dplyr::group_by(Year) |>
     dplyr::summarise(energy_EJ = sum(energy_EJ)),
   by = "Year"
-) |> 
+) |>
   dplyr::mutate(
     CO2_intensity_Mt_per_EJ = CO2_emissions_Gt*1e9 / 1e6 / energy_EJ,
-    CO2_emissions_tonnes = NULL, 
+    CO2_emissions_tonnes = NULL,
     energy_EJ = NULL
-  ) |> 
-  tidyr::pivot_longer(cols = "CO2_intensity_Mt_per_EJ", 
-                      names_to = "var", 
+  ) |>
+  tidyr::pivot_longer(cols = "CO2_intensity_Mt_per_EJ",
+                      names_to = "var",
                       values_to = "value")
 
 # Put everything together in a single data frame
@@ -646,111 +647,111 @@ all_iparx_data <- dplyr::bind_rows(CO2_emissions,        # I
                                    world_gdppc_Nordhaus, # A
                                    energy_intensity,     # R
                                    carbon_intensity) |>  # X
-  dplyr::filter(Year >= 1800) |> 
+  dplyr::filter(Year >= 1800) |>
   dplyr::mutate(
     var = dplyr::case_match(
-      var, 
-      "CO2_emissions_Gt" ~ "I", 
+      var,
+      "CO2_emissions_Gt" ~ "I",
       "total_population_billion" ~ "P",
-      "gdppc_thousand_2017_intl_dollars_per_capita" ~ "A", 
-      "energy_per_GDP_MJ_per_dollar" ~ "R", 
+      "gdppc_thousand_2017_intl_dollars_per_capita" ~ "A",
+      "energy_per_GDP_MJ_per_dollar" ~ "R",
       "CO2_intensity_Mt_per_EJ" ~ "X"
-    ), 
+    ),
     var = factor(var, levels = c("I", "P", "A", "R", "X"))
   )
 
-all_iparx_data |> 
+all_iparx_data |>
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = value)) +
-  ggplot2::geom_line(linewidth = data_line_size, 
+  ggplot2::geom_line(linewidth = data_line_size,
                      colour = data_line_colour,
-                     linetype = data_linetype) + 
+                     linetype = data_linetype) +
   ggplot2::labs(x = NULL, y = NULL) +
   ggplot2::scale_x_continuous(breaks = c(1800, 1900, 2000)) +
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
-  
-  ggplot2::facet_wrap(nrow = 1, facets = ggplot2::vars(var), scales = "free_y") + 
-  
+
+  ggplot2::facet_wrap(nrow = 1, facets = ggplot2::vars(var), scales = "free_y") +
+
   MKHthemes::xy_theme(tick_length = -2,          # A bit shorter
                       x_axis_labels_spacing = 2, # Bring labels closer to the axes
                       y_axis_labels_spacing = 2)
 @
 
 
-In the \textbf{IPARX} formulation, 
-impact~\Iparen{} is a list of impacts (that is, a vector quantity) of human activity, including such things as
-\textbf{global warming potential (GWP)},
-aquifer depletion, and
-eutrophication potential.
-Population~\Pparen{} is the number of people in the world.
-Affluence~\Aparen{} is GDP per capita per year.
-Resource intensity of economic activity~\Rparen{} is the list (vector)
-of all the resources necessary to produce one unit of world GDP.
-Last, the impact intensity of of resource extraction consumption~\Xparen{}
-is the list of the impacts of each type of resource. 
-(That is, \mft{X} is a matrix quantity.)
-Figure~\ref{fig:IPARXTermsGraph} shows the evolution of IPARX equation terms
-from 1800--2020.
-
-In broad strokes, sustainability can be seen in the 
-\mft{I} term (environmental impacts) and in resource extraction
-(the numerator of \mft{R} and the denominator of \mft{X}\:).
-If we emit wastes at a rate greater than can be assimilated by the environment
-(\:\!\mft{I} too large), we are unsustainable.
-If we withdraw resources from the environment at a rate greater than 
-their regeneration rate, we are unsustainable.
-
-The IPARX identity is a static relationship.
-Its terms represent steady-state levels,
-but do not necessarily show how changes in any one variable affects the others.
-For instance, using resources more efficiently (improving resource intensity),
-does not, in general, lower impact.
-Instead, it leads to more affluence!
-Likewise, it may not be possible to drive the impact(s) 
-per unit of resource to zero because of diminishing returns on efficiency
-and tradeoffs that exist between different types of impacts.
-Thus, while Equation~\ref{eq:IPARX} is useful as a conceptual framework for
-thinking about sustainability challenges, it does not provide a complete
-roadmap for sustainability solutions (in part) because of interactions 
-among the terms.
-
-IPARX is true because it is an identity, 
-and it provides a useful organizing framework
-for thinking about sustainability and sustainability challenges.
-To illustrate the IPARX framework, energy and CO$_2$ are used as the
-prime example in the next section, because energy is the master resource
-and climate change is our most urgent sustainability challenge.
-Of course, the two are closely linked.
-
-\section*{Energy and carbon emissions, the prime example}
-
-% Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used
-% for productive purposes.
-
-
-% Figure~\ref{fig:total_material_use} shows consumption rates of some natural resources,
-% aggregated into important categories of 
-% construction minerals\index{construction minerals}, 
-% ores and industrial minerals\index{industrial minerals},
-% fossil fuels\index{fossil fuels}, and 
-% biomass\index{biomass}.
-% In 2005, the world economy used about
-% 19~Gt of biomass\index{biomass}, 
-% 23~Gt of construction minerals\index{construction minerals}, 
-% 11.6~Gt of fossil fuels\index{fossil fuels}, and
-% 5.7~Gt of ores\index{ores} and industrial minerals\index{industrial minerals}
-% to produce about \$81.5 trillion dollars of GDP. 
-% One Gt is 10$^\text{9}$~tonnes (or 10$^{\text{12}}$~kg) and a trillion dollars is \$10$^{\text{12}}$.
-% Thus, each dollar of GDP used about 
-% 0.23~kg of biomass\index{biomass}, 
-% 0.28~kg of construction minerals\index{construction minerals},
-% 0.14~kg of fossil fuels\index{fossil fuels}, and
-% 0.07~kg of ores\index{ores} and industrial minerals\index{industrial minerals}.
-% A full accounting of the resource intensity of the economy%~\Rparen{}
-% yields a long list of numbers, like a huge grocery list,
-% each number giving the amount of a single resource needed to make \$1 of GDP. 
-% This chapter discusses sustainability implications for a few resources,
-% with energy providing the prime example of resource intensity of the economy. 
-
+% In the \textbf{IPARX} formulation, 
+% impact~\Iparen{} is a list of impacts (that is, a vector quantity) of human activity, including such things as
+% \textbf{global warming potential (GWP)},
+% aquifer depletion, and
+% eutrophication potential.
+% Population~\Pparen{} is the number of people in the world.
+% Affluence~\Aparen{} is GDP per capita per year.
+% Resource intensity of economic activity~\Rparen{} is the list (vector)
+% of all the resources necessary to produce one unit of world GDP.
+% Last, the impact intensity of of resource extraction consumption~\Xparen{}
+% is the list of the impacts of each type of resource. 
+% (That is, \mft{X} is a matrix quantity.)
+% Figure~\ref{fig:IPARXTermsGraph} shows the evolution of IPARX equation terms
+% from 1800--2020.
+% 
+% In broad strokes, sustainability can be seen in the 
+% \mft{I} term (environmental impacts) and in resource extraction
+% (the numerator of \mft{R} and the denominator of \mft{X}\:).
+% If we emit wastes at a rate greater than can be assimilated by the environment
+% (\:\!\mft{I} too large), we are unsustainable.
+% If we withdraw resources from the environment at a rate greater than 
+% their regeneration rate, we are unsustainable.
+% 
+% The IPARX identity is a static relationship.
+% Its terms represent steady-state levels,
+% but do not necessarily show how changes in any one variable affects the others.
+% For instance, using resources more efficiently (improving resource intensity),
+% does not, in general, lower impact.
+% Instead, it leads to more affluence!
+% Likewise, it may not be possible to drive the impact(s) 
+% per unit of resource to zero because of diminishing returns on efficiency
+% and tradeoffs that exist between different types of impacts.
+% Thus, while Equation~\ref{eq:IPARX} is useful as a conceptual framework for
+% thinking about sustainability challenges, it does not provide a complete
+% roadmap for sustainability solutions (in part) because of interactions 
+% among the terms.
+% 
+% IPARX is true because it is an identity, 
+% and it provides a useful organizing framework
+% for thinking about sustainability and sustainability challenges.
+% To illustrate the IPARX framework, energy and CO$_2$ are used as the
+% prime example in the next section, because energy is the master resource
+% and climate change is our most urgent sustainability challenge.
+% Of course, the two are closely linked.
+% 
+% \section*{Energy and carbon emissions, the prime example}
+% 
+% % Equation~\ref{eq:PCbalance} indicates that everything that is extracted is used
+% % for productive purposes.
+% 
+% 
+% % Figure~\ref{fig:total_material_use} shows consumption rates of some natural resources,
+% % aggregated into important categories of 
+% % construction minerals\index{construction minerals}, 
+% % ores and industrial minerals\index{industrial minerals},
+% % fossil fuels\index{fossil fuels}, and 
+% % biomass\index{biomass}.
+% % In 2005, the world economy used about
+% % 19~Gt of biomass\index{biomass}, 
+% % 23~Gt of construction minerals\index{construction minerals}, 
+% % 11.6~Gt of fossil fuels\index{fossil fuels}, and
+% % 5.7~Gt of ores\index{ores} and industrial minerals\index{industrial minerals}
+% % to produce about \$81.5 trillion dollars of GDP. 
+% % One Gt is 10$^\text{9}$~tonnes (or 10$^{\text{12}}$~kg) and a trillion dollars is \$10$^{\text{12}}$.
+% % Thus, each dollar of GDP used about 
+% % 0.23~kg of biomass\index{biomass}, 
+% % 0.28~kg of construction minerals\index{construction minerals},
+% % 0.14~kg of fossil fuels\index{fossil fuels}, and
+% % 0.07~kg of ores\index{ores} and industrial minerals\index{industrial minerals}.
+% % A full accounting of the resource intensity of the economy%~\Rparen{}
+% % yields a long list of numbers, like a huge grocery list,
+% % each number giving the amount of a single resource needed to make \$1 of GDP. 
+% % This chapter discusses sustainability implications for a few resources,
+% % with energy providing the prime example of resource intensity of the economy. 
+% 
 
 <<total_material_use, fig.scap="World material use vs.\\ time by material type", fig.cap="World material use vs.\\ time by material type. ``Ores''\\index{ores} includes all industrial minerals\\index{industrial minerals}. ``Construction'' includes all construction minerals\\index{construction minerals}. ``t'' is metric tonnes (1000 kg). \\emph{Source}: \\citet[Figure~1a]{Krausmann:2009wc}.">>=
 krausmann <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensity", "datasets", "Krausmann.xlsx"),
@@ -787,85 +788,85 @@ ggplot2::ggplot() +
   MKHthemes::xy_theme()
 @
 
-
-% Resource intensity can be measured and quantified at the world level,
-% as in the examples above.
-% Alternatively, resource intensity can be quantified per country or per economic sector.
-% Clearly, the manufacturing sector of the economy requires resources to function.
-% Raw materials (such as copper\index{copper (Cu)} and minerals\index{minerals}) are required to make
-% finished goods (such as sewing machines\index{sewing machine} and mobile phones\index{mobile phone}).
-% But all sectors, even the service sector, need resources.
-% Consider the simple example of a haircut\index{haircut}.
-% The stylist commutes to the salon in a vehicle
-% (which requires iron ore\index{iron ore}, copper\index{copper (Cu)}, and other natural resources to manufacture; 
-% perhaps refined liquid fuel to operate; and 
-% an atmosphere\index{atmosphere} that is a source of oxygen and which absorbs CO$_2$ and water, the products of combustion).
-% The stylist uses electric clippers and a hair dryer\index{hair dryer} during each appointment
-% (which require both natural resources to manufacture and electricity\index{electricity} to operate).
-% You sit in a fancy chair 
-% (which contains metals and plastics) and
-% drive to and from the appointment
-% (on roads made of tar or cement).
-% There is no escaping the dependence on resources to run an economy, 
-% even in the service sector. 
-
-\section*{Discussion Questions}
-\begin{enumerate}
-\item Some companies have declared bankruptcy and gone out of business, 
-      like K-mart and Woolworth's.
-      Others have been bailed out by governments, 
-      like General Motors and JP Morgan Chase.
-      Were any of these decisions sustainable?
-      For how long?
-      Is there social value in old companies
-      (as, say, compared to old buildings)?
-
-\item Some aquifers, such as the Ogallala aquifer,
-        are called ``fossil water''
-        because they were filled with glacial melt from the last ice age.
-        Is using any such resource sustainable?
-        What are the moral and ethical implications of leaving a valuable and
-        usable resource unused? 
-
-\item What is the purpose (telos) of mineral resources in the environment?
-        Should they be left in place or used?
-        Humans are the only creatures on Earth that make use of most minerals.
-        What are some positive impacts on animal populations that arise from
-        humans' use of materials that are not available to any other animal?
-        Are there any?
-
-\item What are the positive features of the strong sustainability criterion?
-        What are the weaknesses of the strong sustainability criterion?
-        Is the strong sustainability criterion too severe for modern life today?
-        Justify your answer.
-        Can strong sustainability be applied selectively to some resources 
-        but not others or should all resources be judged equally?
-        What are the implications of not applying the strong sustainability
-        criterion universally to all resources?
-
-\item Why is the weak sustainability criterion a good criterion?
-        What are the drawbacks to weak sustainability criteria?
-        What is the basis for your judgment?
-
-\item In which circumstances is a weak sustainability criterion appropriate?
-        In which circumstances is the strong sustainability criterion appropriate?
-        Is weak sustainability good enough?
-        Give examples.
-
-\item Nuclear power has had some environmental issues, for example, 
-      disasters such Fukushima Daiichi,
-      Three-Mile Island, and Chernobyl. 
-      High-level nuclear waste is another. 
-      On the other hand, coal-fired power plants
-      in the Midwest region have emitted 
-      enough mercury that fish in the Great Lakes are not safe for consumption
-      by children or women of child-bearing age. 
-      How do you make decisions about trading off different types of 
-      environmental impacts?
-      Which impacts are more acceptable? Which are less acceptable?
-           
-      
-\end{enumerate}
+% 
+% % Resource intensity can be measured and quantified at the world level,
+% % as in the examples above.
+% % Alternatively, resource intensity can be quantified per country or per economic sector.
+% % Clearly, the manufacturing sector of the economy requires resources to function.
+% % Raw materials (such as copper\index{copper (Cu)} and minerals\index{minerals}) are required to make
+% % finished goods (such as sewing machines\index{sewing machine} and mobile phones\index{mobile phone}).
+% % But all sectors, even the service sector, need resources.
+% % Consider the simple example of a haircut\index{haircut}.
+% % The stylist commutes to the salon in a vehicle
+% % (which requires iron ore\index{iron ore}, copper\index{copper (Cu)}, and other natural resources to manufacture; 
+% % perhaps refined liquid fuel to operate; and 
+% % an atmosphere\index{atmosphere} that is a source of oxygen and which absorbs CO$_2$ and water, the products of combustion).
+% % The stylist uses electric clippers and a hair dryer\index{hair dryer} during each appointment
+% % (which require both natural resources to manufacture and electricity\index{electricity} to operate).
+% % You sit in a fancy chair 
+% % (which contains metals and plastics) and
+% % drive to and from the appointment
+% % (on roads made of tar or cement).
+% % There is no escaping the dependence on resources to run an economy, 
+% % even in the service sector. 
+% 
+% \section*{Discussion Questions}
+% \begin{enumerate}
+% \item Some companies have declared bankruptcy and gone out of business, 
+%       like K-mart and Woolworth's.
+%       Others have been bailed out by governments, 
+%       like General Motors and JP Morgan Chase.
+%       Were any of these decisions sustainable?
+%       For how long?
+%       Is there social value in old companies
+%       (as, say, compared to old buildings)?
+% 
+% \item Some aquifers, such as the Ogallala aquifer,
+%         are called ``fossil water''
+%         because they were filled with glacial melt from the last ice age.
+%         Is using any such resource sustainable?
+%         What are the moral and ethical implications of leaving a valuable and
+%         usable resource unused? 
+% 
+% \item What is the purpose (telos) of mineral resources in the environment?
+%         Should they be left in place or used?
+%         Humans are the only creatures on Earth that make use of most minerals.
+%         What are some positive impacts on animal populations that arise from
+%         humans' use of materials that are not available to any other animal?
+%         Are there any?
+% 
+% \item What are the positive features of the strong sustainability criterion?
+%         What are the weaknesses of the strong sustainability criterion?
+%         Is the strong sustainability criterion too severe for modern life today?
+%         Justify your answer.
+%         Can strong sustainability be applied selectively to some resources 
+%         but not others or should all resources be judged equally?
+%         What are the implications of not applying the strong sustainability
+%         criterion universally to all resources?
+% 
+% \item Why is the weak sustainability criterion a good criterion?
+%         What are the drawbacks to weak sustainability criteria?
+%         What is the basis for your judgment?
+% 
+% \item In which circumstances is a weak sustainability criterion appropriate?
+%         In which circumstances is the strong sustainability criterion appropriate?
+%         Is weak sustainability good enough?
+%         Give examples.
+% 
+% \item Nuclear power has had some environmental issues, for example, 
+%       disasters such Fukushima Daiichi,
+%       Three-Mile Island, and Chernobyl. 
+%       High-level nuclear waste is another. 
+%       On the other hand, coal-fired power plants
+%       in the Midwest region have emitted 
+%       enough mercury that fish in the Great Lakes are not safe for consumption
+%       by children or women of child-bearing age. 
+%       How do you make decisions about trading off different types of 
+%       environmental impacts?
+%       Which impacts are more acceptable? Which are less acceptable?
+%            
+%       
+% \end{enumerate}
 
 \bibliographystyle{unsrtnat}
 \bibliography{MCBook2021}
