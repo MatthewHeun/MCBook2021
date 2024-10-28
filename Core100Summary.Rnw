@@ -115,7 +115,7 @@ $\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right
 
 \begin{document}  
 
-\title{A Calvin Core 100 Introduction to Sustainability}
+\title{A Definition of Sustainability}
 \author{Jeremy Van~Antwerp, Matthew Kuperus Heun}
 
 \maketitle
@@ -125,8 +125,8 @@ $\left[\frac{\text{impact}}{\text{year}}\right]$ & & $\left[\text{persons}\right
 \renewcommand{\abstractname}{}
 
 \begin{abstract}
-\begin{tcolorbox}[title=Abstract]
-The purpose of this article is to define sustainability and
+\begin{tcolorbox}[title=Introduction]
+This article provides a definition of sustainability and
 describes why sustainability is a complex and challenging problem. 
 It introduces, in an abbreviated form, our framework for sustainability
 thinking. 
@@ -144,42 +144,20 @@ which is available as an ebook from Hekman library.
 \end{tcolorbox}
 \end{abstract}
 
+Would you like to have a million dollars? Why? What would you do with it?
 
+Paper currency doesn't taste good; you can't eat it. 
+As clothing, money would perform poorly. 
+While you \textit{could} literally sit on a pile of cash,
+like a dragon or Scrooge Mc Duck, it would not be particularly comfortable.
+And, as a form of transportation, it would not take you anywhere.
 
+Money is the medium of exchange that we use to trade goods and services in 
+our economy. It is not valuable in and of itself; money is valuable because
+you can use it to buy things like gasoline, a cinnamon roll,
+a haircut, or a house.
 
-%
-\begin{enumerate}
-
-  \item Target audience: Core 100 students
-
-  \item Dissemination: CEEC 2024
-
-\end{enumerate}
-%
-
-
-Action items for MKH:
-%
-\begin{enumerate}
-
-  \item \st{Find a colorful box environment and use it for the abstract and stewardship sections.}
-
-  \item \st{Develop a single-figure version of the 5 IPARX graphs.}
-
-\end{enumerate}
-%
-
-
-Action items for JVA:
-%
-\begin{enumerate}
-
-  \item Work on structure and content of paper
-
-\end{enumerate}
-%
-
-
+Everything you buy
 
 \section*{Problems with the Brundtland definition}
 The most often-used~\cite{Quental2011} definition of sustainability 
@@ -189,7 +167,6 @@ comes from the Brundtland report, which says that
 without compromising the ability of future generations 
 to meet their own needs''~\cite{Brundtland}.
 This definition fails, in part, because sustainable development is an oxymoron. 
-%and is not the same as sustainability.
 ``Development'' implies constant improvement, 
 which cannot be sustained forever on a planet with finite resources.
 Furthermore, this definition is not useful for policy decisions because
@@ -204,6 +181,133 @@ developed economies already had.
 The failure to arrive at a meaningful definition of sustainability continues
 to contribute to a ``business as usual'' approach that plagues us nearly 
 four decades later.
+
+\section*{Problems with the Calvin University sustainability statement}
+At Calvin, ``we understand sustainability emerges from choices that, on balance, 
+promote economic vitality, social equity, and a flourishing natural environment 
+both now and for generations to come.''
+While this statement tells us where sustainability comes from (``choices'') and 
+what it looks like 
+(``economic vitality, social equity, and a flourishing natural environment''),
+it does not tell us what sustainability \textit{is} or \textit{how} we get it.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section*{Christian stewardship}
+%\label{sec:christian_steweardship}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------
+\begin{tcolorbox}[title=What does the Bible say about sustainability?]
+Genesis 1:26-28 describes humans as made in God's image and with the
+responsibility to ``rule over'' or ``have dominion'' over the Earth.
+Genesis 2:15 further clarifies that humans were placed in the Garden of Eden
+to ``take care of it.''
+
+In the New Testament, the parable of the talents
+(Matthew 25:14-30 and Luke 19:12-27) tells us that we, as servants,
+have been entrusted with resources.
+The master (that is, God)
+expects that we will \textit{increase} the value of those
+resources while they are in our care.
+Finally, we will be called to give an accounting of our management.
+
+In combination, these passages form the basis for the idea of Christian
+\textbf{stewardship}.
+Historically, Christian stewardship has been understood to
+include the natural resources of the Earth;
+economic resources at our disposal;
+our personal talents, gifts, and abilities;
+and the gospel truths of the kingdom.
+\end{tcolorbox}
+%----------------------------------
+
+\section*{A definition of sustainability}
+The word ``sustain'' comes from Latin roots meaning ``to hold up'' in the 
+sense of to continue, endure, or preserve.
+Thus, when considering the meaning of sustainability,
+the two most important questions are
+``sustaining what?'' and ``for how long?''
+The second of these questions is perhaps easier to answer.
+\textbf{Strong sustainability} is achieved only if the answer is
+``indefinitely'' or ``forever.''
+In contrast, \textbf{weak sustainability} is sustainability over a long
+(by human standards) time frame, perhaps 50 years.
+
+Use of a renewable resource at a rate less than its regeneration rate is 
+strongly sustainable. Examples include harvesting fish from fisheries,
+timber from forests, and crops from farmland, assuming the farming practices
+do not degrade the capability of the farmland to continue (forever) to produce
+crops. Water withdrawn from an aquifer through a well at a rate less than the
+aquifer's natural regeneration rate is strongly sustainable.
+
+On the other hand, any extraction of a mineral resources (mining) is not strongly
+sustainable. The earth contains finite amounts of coal, petroleum, copper, and
+palladium. If we continue to extract, at some point, all of what the earth has 
+available will be extracted; there will be none left in the ground to mine.
+
+A key qualifier is ``continue to.'' We can extract mineral resources for a 
+period of time and then choose to stop. If we don't run out of mineral(s) in 
+that period of time, then that's weakly sustainable. For example, global coal 
+extraction, at current rates, will use up coal deposits in 80 years.
+With a 50-year criteria, this is weakly sustainable.
+
+The idea is that rising commodity prices (caused by shrinking reserves) will
+lead us find or invent substitutes. For example, although humans once lit their
+homes with fire, candles, kerosene lamps, and whale oil, none of these are 
+currently used. Thomas Edison remarked in 1880, ``After the electric light 
+goes into general use, none but the extravagant will burn tallow candles.''
+And, in last decade or so, LEDs have largely displaced incandescent and 
+fluorescent lights.
+
+\subsection*{What are we sustaining?}
+As discussed above, sustainability can refer to resource use. Some resources are
+renewable, meaning that they regenerate over time, like timber and fish stocks, or
+that they are not ``used up,'' like solar or wind energy.
+Other resources are nonrenewable, like palladium, meaning that there is
+fixed amount on the Earth. Coal is nonrenewable on human time scales.
+
+Emission of waste at a rate greater than the biosphere's ability to remediate it
+is also unsustainable. Our ecosystem has processes for breaking down and removing
+waste from the environment. 
+
+*** ecosystem services and planetary boundaries***
+
+The narrowest answer for what needs sustaining is human life and society, which
+\href{https://www.merriam-webster.com/dictionary/perforce}{perforce}
+entails those \textbf{ecosystem services}
+necessary for human health and wellbeing.
+Beyond these basics, some people view the nonhuman world as having inherent
+worth or standing and, therefore, to be worth preserving.
+For some people, the inclination for preservation is limited to those parts
+of the nonhuman world that humans find appealing, like flowers and songbirds.
+Other people would include even those parts of the nonhuman world that
+negatively affect humanity, like smallpox.
+Unfortunately, humans don’t know clearly what pieces of the ecosystem
+are, in the long run, necessary for our survival and which aren’t.
+For instance, could we survive in a world without dandelions?
+Maybe.
+On the other hand, dandelions might be necessary for
+other organisms we depend on.
+Environmental science views the ecosystem in its entirety as a web,
+with all parts depending on all other parts.
+The ecosystem is not a collection of individual components with
+binary ``needed''/``not needed'' classifications,
+but as a whole that exists on a continuum from ``fully functional''
+to ``nonfunctional.''
+The choices and paths to sustainability are bristling with
+value judgments and moral choices about what to value and how much.
+\href{https://en.wiktionary.org/wiki/concomitant}{Concomitant}
+with such choices is a weighting of appropriate risks to the ecosystem
+and human society.
+Different answers to these questions come from different \emph{a priori} assumptions and values.
+
+The broadest definitions of sustainability
+also include the products of human civilization.
+For example, although they are great cultural and historical artifacts,
+humanity could survive without the great pyramids of Giza.
+On the other hand, we may not survive if we don’t give up coal-fired power plants.
+(And, maybe many people would perish if the coal-fired power plants
+were all suddenly switched off.)
 
 % \begin{figure}
 % \centering
@@ -286,35 +390,6 @@ we make about how the world works and the different value judgement
 that we make have a huge impact on our approach to sustainability.}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Christian stewardship}
-\label{sec:christian_steweardship}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------
-\begin{tcolorbox}[title=What does the Bible say about sustainability?]
-Genesis 1:26-28 describes humans as made in God's image and with the
-responsibility to ``rule over'' or ``have dominion'' over the Earth.
-Genesis 2:15 further clarifies that humans were placed in the Garden of Eden
-to ``take care of it.''
-
-In the New Testament, the parable of the talents
-(Matthew 25:14-30 and Luke 19:12-27) tells us that we, as servants,
-have been entrusted with resources.
-The master (that is, God)
-expects that we will \emph{increase} the value of those
-resources while they are in our care.
-Finally, we will be called to give an accounting of our management.
-
-In combination, these passages form the basis for the idea of Christian
-\textbf{stewardship}.
-Historically, Christian stewardship has been understood to
-include the natural resources of the Earth;
-economic resources at our disposal;
-our personal talents, gifts, and abilities;
-and the gospel truths of the kingdom.
-\end{tcolorbox}
-%----------------------------------
 
 
 In the long run, sustainability is one of the few things that matter at all.
@@ -332,90 +407,9 @@ Therefore (for example), pollution is an environmental problem, and a social pro
 Likewise renewable energy. And land use.
 And all the other challenges humanity faces.
 
-(*** consider eliminating this paragraph***)
-``Sustainability'' is a crucial concept.
-If humanity is not living sustainably,
-we will either cease to exist as a species or (at least)
-experience drastic reductions in our population and/or standard of living.
-So, what is sustainability and how do we tell if we're living sustainably?
-There are many definitions of sustainability.
-To the novice, many definitions may seem to indicate lack of agreement.
-However, sustainability is almost a self-defining concept.
-Different answers indicate different assumptions, different priorities,
-and different boundaries (that is, what system is being considered).
 
-\section*{Finally, a definition of sustainability}
-When considering the meaning of sustainability,
-the two most important questions are
-``sustaining what?'' and ``for how long?''
-The second of these questions is perhaps easier to answer.
-Although humans seem to have inherent cognitive difficulties in planning for
-time scales significantly longer than the human lifespan,
-\textbf{strong sustainability} is achieved only if the answer is
-``indefinitely'' or ``forever.''
-Our current sustainability crisis has been thousands of years in the making~\cite{Sanderman2017}
-and will likely require millions of years to recover~\cite{Davis11262}.
-A \textbf{weak sustainability} criterion is sustainability over a long
-(by human standards) time frame, perhaps 50 years,
-which is on the order of one human adulthood.%
-% \footnote{
-%   Our criteria for strong\index{strong sustainability} and weak sustainability\index{weak sustainability} are physical and
-%   follow \citet{Graedel:2010ab}.
-%   Other definitions for weak\index{weak sustainability} and strong sustainability\index{strong sustainability} exist.
-%   One approach to weak\index{weak sustainability} and strong\index{strong sustainability} sustainability is economic.
-%   It defines strong sustainability\index{strong sustainability} as protecting natural capital\index{natural capital}
-%   for a certain period of time
-%   (equivalent to our weak sustainability\index{weak sustainability} definition
-%   if the time horizon for protecting natural capital\index{natural capital} is 50 years).
-%   In the economic approach,
-%   weak sustainability\index{weak sustainability} allows
-%   produced capital\index{produced capital}
-%   to substitute for natural capital\index{natural capital}
-%   across a period of time.
-%   See \citet{Dietz:2007tu} for details.
-% }
-% (Note that corporate time scales for decision making are even shorter,
-% often in the 5--20 year range.)
 
-\section*{Weak and strong sustainability}
-(***Trim down this section***)
-(***Mention the Ehrlich-Simon bet?***)
-The narrowest answer for what needs sustaining is human life and society, which
-\href{https://www.merriam-webster.com/dictionary/perforce}{perforce}
-entails those \textbf{ecosystem services}
-necessary for human health and wellbeing.
-Beyond these basics, some people view the nonhuman world as having inherent
-worth or standing and, therefore, to be worth preserving.
-For some people, the inclination for preservation is limited to those parts
-of the nonhuman world that humans find appealing, like flowers and songbirds.
-Other people would include even those parts of the nonhuman world that
-negatively affect humanity, like smallpox.
-Unfortunately, humans don’t know clearly what pieces of the ecosystem
-are, in the long run, necessary for our survival and which aren’t.
-For instance, could we survive in a world without dandelions?
-Maybe.
-On the other hand, dandelions might be necessary for
-other organisms we depend on.
-Environmental science views the ecosystem in its entirety as a web,
-with all parts depending on all other parts.
-The ecosystem is not a collection of individual components with
-binary ``needed''/``not needed'' classifications,
-but as a whole that exists on a continuum from ``fully functional''
-to ``nonfunctional.''
-The choices and paths to sustainability are bristling with
-value judgments and moral choices about what to value and how much.
-\href{https://en.wiktionary.org/wiki/concomitant}{Concomitant}
-with such choices is a weighting of appropriate risks to the ecosystem
-and human society.
-Different answers to these questions come from different \emph{a priori} assumptions and values.
 
-The broadest definitions of sustainability
-also include the products of human civilization.
-For example, although they are great cultural and historical artifacts,
-humanity could survive without the great pyramids of Giza.
-On the other hand, we may not survive if we don’t give up coal-fired power plants.
-(And, maybe many people would perish if the coal-fired power plants
-were all suddenly switched off.)
 
 With respect to Figure \ref{fig:venn_diagram}, environmental sustainability
 considers biophysical and thermodynamic constraints and includes issues such as
