@@ -328,16 +328,17 @@ readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "Atmosph
     Year = - Year / 1000
   ) %>%
   # Make the graph
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "Atmospheric_CO2_concentration_ppm")) +
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, 
+                                         y = Atmospheric_CO2_concentration_ppm)) +
   ggplot2::geom_vline(xintercept = -2022/1000,
-                      size = guide_line_size, 
+                      linewidth = guide_line_size, 
                       colour = guide_line_colour, 
                       linetype = guide_linetype) +
   ggplot2::geom_hline(yintercept = 350,
-                      size = guide_line_size, 
+                      linewidth = guide_line_size, 
                       colour = curve_fit_colour,
                       linetype = guide_linetype) +
-  ggplot2::geom_line(size = data_line_size, 
+  ggplot2::geom_line(linewidth = data_line_size, 
                      colour = data_line_colour, 
                      linetype = data_linetype) +
   # Because we're plotting years BCE
@@ -393,14 +394,14 @@ greatly exceeded.
 <<BroundaryGraphFunction>>=
 boundary_graph <- function(df) {
   df %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "t")) +
-  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "development"), 
-                     size = data_line_size, 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = t)) +
+  ggplot2::geom_line(mapping = ggplot2::aes(y = development), 
+                     linewidth = data_line_size, 
                      colour = data_line_colour, 
                      linetype = data_linetype) + 
-  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "bound"), 
+  ggplot2::geom_line(mapping = ggplot2::aes(y = bound), 
                      colour = curve_fit_colour,
-                     size = data_line_size, 
+                     linewidth = data_line_size, 
                      linetype = 6) + 
   ggplot2::labs(x = "time") +
   MKHthemes::xy_theme() +
