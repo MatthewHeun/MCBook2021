@@ -26,10 +26,11 @@ MCBook2021.bib.sav
 *.bbl
 *.blg
 ch*.tex
-.log
+*.log
 Core100Summary.log
 Core100Summary.out
 Core100Summary.pdf
 Core100Summary-concordance.tex
 Core100Summary.synctex.gz
 Core100Summary.tex
+Core100Summary - old.tex

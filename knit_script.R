@@ -2,11 +2,11 @@
 
 # Load packages
 library(dplyr)             # For manipulating data
+library(geosphere)         # For maps
 library(ggplot2)           # For graphing functions
 library(magrittr)          # For pipe operator, (%>%)
 library(MKHthemes)         # For default ggplot2 theme
 library(readxl)            # To read Excel files
-library(rgeos)             # For map stuff
 library(rnaturalearth)     # For maps
 library(rnaturalearthdata) # For maps
 library(networkD3)         # For Sankey diagram

@@ -413,7 +413,10 @@ chessboard_data <- tibble::tibble(x = 1:64) %>%
 
 chessboard_data %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = x, y = m)) +
-  ggplot2::geom_hline(yintercept = 0, colour = guide_line_colour, size = guide_line_size, linetype = guide_linetype) +
+  ggplot2::geom_hline(yintercept = 0, 
+                      colour = guide_line_colour, 
+                      linewidth = guide_line_size, 
+                      linetype = guide_linetype) +
   ggplot2::geom_bar(stat = "identity", fill = bar_colour) +
 
   ggplot2::scale_x_continuous(limits = c(0, 65),
