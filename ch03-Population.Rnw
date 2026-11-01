@@ -508,9 +508,11 @@ stages <- tibble::tribble(~Stage, ~x, ~y,
                           "Stage 4", 0, 96)
 
 ggplot2::ggplot() + 
-  ggplot2::geom_area(data = pop_pyramids, 
-                     mapping = ggplot2::aes(x = x, y = y, fill = gender)) +
-  
+  ggplot2::geom_area(data = pop_pyramids,
+                     mapping = ggplot2::aes(x = x, y = y, fill = gender, group = gender),
+                     stat = "identity",
+                     position = "identity") +
+
   ggplot2::geom_text(data = stages,
                      mapping = ggplot2::aes(x = x, y = y, label = Stage),
                      colour = guide_line_colour, size = 3) +
