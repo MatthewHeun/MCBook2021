@@ -433,19 +433,19 @@ demo_transition %>%
   dplyr::filter(which_graph == "rate") %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) +
   ggplot2::geom_vline(xintercept = phase_delimiters,
-                      size = guide_line_size,
+                      linewidth = guide_line_size,
                       colour = guide_line_colour,
                       linetype = guide_linetype) +
   ggplot2::geom_line(colour = data_line_colour,
-                     size = data_line_size) +
+                     linewidth = data_line_size) +
   ggplot2::annotate("text", x = 18, y = 2, label = "Stage 1", colour = guide_line_colour) +
   ggplot2::annotate("text", x = 78, y = 2, label = "Stage 2", colour = guide_line_colour) +
   ggplot2::annotate("text", x = 150, y = 2, label = "Stage 3", colour = guide_line_colour) +
   ggplot2::annotate("text", x = 227, y = 2, label = "Stage 4", colour = guide_line_colour) +
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
-  ggplot2::labs(x = ggplot2::element_blank(),
+  ggplot2::labs(x = NULL,
                 y = "Birth and death rates",
-                linetype = ggplot2::element_blank()) +
+                linetype = NULL) +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_blank(),
                  axis.ticks.x = ggplot2::element_blank())
@@ -461,11 +461,11 @@ demo_transition %>%
   dplyr::filter(which_graph == "Pop") %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) +
   ggplot2::geom_vline(xintercept = phase_delimiters,
-                      size = guide_line_size,
+                      linewidth = guide_line_size,
                       colour = guide_line_colour,
                       linetype = guide_linetype) +
   ggplot2::geom_line(colour = data_line_colour,
-                     size = data_line_size) +
+                     linewidth = data_line_size) +
   ggplot2::annotate("text", x = 18, y = 4, label = "Stage 1", colour = guide_line_colour) +
   ggplot2::annotate("text", x = 78, y = 4, label = "Stage 2", colour = guide_line_colour) +
   ggplot2::annotate("text", x = 150, y = 4, label = "Stage 3", colour = guide_line_colour) +
@@ -473,7 +473,7 @@ demo_transition %>%
   ggplot2::scale_y_continuous(limits = c(0, 120), breaks = seq(0, 120, by = 20)) +
   ggplot2::labs(x = "Time [years]",
                 y = "Population [millions]",
-                linetype = ggplot2::element_blank()) +
+                linetype = NULL) +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_blank(),
                  axis.ticks.x = ggplot2::element_blank())
@@ -498,7 +498,8 @@ pop_pyramids <- readxl::read_excel(file.path("chapters", "ch03-Population", "dat
     x = 2*x - 1,
     # Scale to 85 years at the top
     y = y * 0.85
-  )
+  ) |> 
+  dplyr::arrange(Stage, gender, x)
 
 stages <- tibble::tribble(~Stage, ~x, ~y,
                           "Stage 1", 0, 96,
@@ -507,9 +508,12 @@ stages <- tibble::tribble(~Stage, ~x, ~y,
                           "Stage 4", 0, 96)
 
 ggplot2::ggplot() + 
-  ggplot2::geom_area(data = pop_pyramids, mapping = ggplot2::aes(x = x, y = y, fill = gender)) +
+  ggplot2::geom_area(data = pop_pyramids, 
+                     mapping = ggplot2::aes(x = x, y = y, fill = gender)) +
   
-  ggplot2::geom_text(data = stages, mapping = ggplot2::aes(x = x, y = y, label = Stage), colour = guide_line_colour, size = 3) +
+  ggplot2::geom_text(data = stages,
+                     mapping = ggplot2::aes(x = x, y = y, label = Stage),
+                     colour = guide_line_colour, size = 3) +
 
   ggplot2::scale_fill_viridis_d(direction = -1, begin = 0.15, end = 0.8) +
 
@@ -519,7 +523,7 @@ ggplot2::ggplot() +
   ggplot2::scale_y_continuous(limits = c(0, 100), breaks = c(0, 50, 80, 100)) +
   ggplot2::labs(x = "Relative population proportion",
                 y = "Age [yr]",
-                fill = ggplot2::element_blank()) +
+                fill = NULL) +
 
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_blank(),
