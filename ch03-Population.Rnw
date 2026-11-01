@@ -166,10 +166,10 @@ ggplot2::ggplot() +
                                             y = total_population_billions, 
                                             fill = Country)) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
-  ggplot2::labs(x = ggplot2::element_blank(),
+  ggplot2::labs(x = NULL,
                 y = expression(paste("World population (", italic(P), ") [billions]")),
-                fill = ggplot2::element_blank()) +
-MKHthemes::xy_theme()
+                fill = NULL) +
+  MKHthemes::xy_theme()
 @
 
 
@@ -276,19 +276,44 @@ historical_pop <- region_pop %>%
     median = total_population_billions
   )
 
-dplyr::bind_rows(historical_pop, future_pop) %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year")) +
-  ggplot2::geom_ribbon(mapping = ggplot2::aes_string(ymin = "lower95", ymax = "upper95"), fill = "grey80") +
-  ggplot2::geom_ribbon(mapping = ggplot2::aes_string(ymin = "lower80", ymax = "upper80"), fill = "grey60") +
-  ggplot2::geom_line(mapping = ggplot2::aes_string(y = "median"), 
-                     size = data_line_size, 
-                     colour = data_line_colour, 
-                     linetype = data_linetype) + 
+dplyr::bind_rows(historical_pop, future_pop) |> 
+  # Avoid NA values in uncertainty columns
+  dplyr::mutate(
+    lower95 = dplyr::case_when(
+      is.na(lower95) ~ median, 
+      TRUE ~ lower95
+    ), 
+    lower80 = dplyr::case_when(
+      is.na(lower80) ~ median, 
+      TRUE ~ lower80
+    ), 
+    upper80 = dplyr::case_when(
+      is.na(upper80) ~ median, 
+      TRUE ~ upper80
+    ), 
+    upper95 = dplyr::case_when(
+      is.na(upper95) ~ median, 
+      TRUE ~ upper95
+    )
+  ) |> 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year)) +
+  ggplot2::geom_ribbon(mapping = ggplot2::aes(ymin = lower95,
+                                              ymax = upper95),
+                       fill = "grey80") +
+  ggplot2::geom_ribbon(mapping = ggplot2::aes(ymin = lower80,
+                                              ymax = upper80),
+                       fill = "grey60") +
+  ggplot2::geom_line(mapping = ggplot2::aes(y = median),
+                     linewidth = data_line_size,
+                     colour = data_line_colour,
+                     linetype = data_linetype) +
+
+
   
   ggplot2::scale_x_continuous(breaks = seq(1800, 2100, by = 50)) +
   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 12, by = 2)) +
 
-  ggplot2::labs(x = ggplot2::element_blank(),
+  ggplot2::labs(x = NULL,
                 y = expression(paste("World population (", italic(P), ") [billions]"))) +
 
   MKHthemes::xy_theme()
