@@ -83,13 +83,11 @@ passenger_km_by_mode %>%
                                                 fill = "mode")) +
   ggplot2::geom_area() +
   ggplot2::scale_fill_viridis_d(direction = -1) +
-  ggplot2::labs(x = ggplot2::element_blank(),
+  ggplot2::labs(x = NULL,
                 y = expression("U.S. passenger transport [" * Tpass%.%km * "/yr]"),
-                fill = ggplot2::element_blank()) +
+                fill = NULL) +
   ggplot2::scale_y_continuous(breaks = c(0, 2,4, 6, 8, 10)) +
-  
   MKHthemes::xy_theme()
-
 @
 
 
@@ -111,12 +109,10 @@ tonne_km_by_mode %>%
   ggplot2::scale_x_continuous(limits = c(1980, 2020), 
                               breaks = c(1980, 1990, 2000, 2010, 2020)) +
   ggplot2::scale_fill_viridis_d(direction = -1) +
-  ggplot2::labs(x = ggplot2::element_blank(),
+  ggplot2::labs(x = NULL,
                 y = expression("U.S. freight transport [" * Mt%.%km * "/yr]"),
-                fill = ggplot2::element_blank()) +
-  
+                fill = NULL) +
   MKHthemes::xy_theme()
-
 @
 
 
@@ -167,11 +163,10 @@ TSI %>%
   ggplot2::scale_y_continuous(limits = c(0, 150)) +
   ggplot2::scale_linetype_manual(values = c(Freight = 3, Overall = 1, Passenger = 2)) +
   ggplot2::scale_size_manual(values = c(Freight = 0.5, Overall = 1, Passenger = 0.5)) +
-  ggplot2::labs(x = ggplot2::element_blank(), 
+  ggplot2::labs(x = NULL, 
                 y = "Transportation services index [-]", 
-                linetype = ggplot2::element_blank(), 
-                size = ggplot2::element_blank()) +
-  
+                linetype = NULL, 
+                size = NULL) +
   MKHthemes::xy_theme()
 @
 
@@ -207,9 +202,9 @@ commuter_mode_percentage %>%
   
   ggplot2::scale_x_continuous(limits = c(2000, 2020)) +
   
-  ggplot2::labs(x = ggplot2::element_blank(), 
+  ggplot2::labs(x = NULL, 
                 y = expression("Commuting modes [%]"),
-                fill = ggplot2::element_blank()) +
+                fill = NULL) +
 
   ggplot2::scale_fill_viridis_d(direction = -1) +
   
@@ -379,9 +374,9 @@ transport_GHG <- readxl::read_excel(file.path("chapters", "ch08-Transportation",
 transport_GHG %>% 
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "M_tonnes_CO2_eq", fill = "mode")) +
   ggplot2::geom_area() + 
-  ggplot2::labs(x = ggplot2::element_blank(), 
+  ggplot2::labs(x = NULL, 
                 y = expression("U.S. transport emissions [Mt " * CO[2] * "e/yr]"),
-                fill = ggplot2::element_blank()) +
+                fill = NULL) +
   
   ggplot2::scale_fill_viridis_d(direction = -1) +
   
@@ -465,10 +460,10 @@ mpg_data %>%
   ggplot2::scale_linetype_manual(values = c(Car = 3, Fleet = 1, Truck = 2)) +
   ggplot2::scale_x_continuous(limits = c(1978, 2020)) +
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
-  ggplot2::labs(x = ggplot2::element_blank(), 
+  ggplot2::labs(x = NULL, 
                 y = "Fuel economy [mpg]", 
-                linetype = ggplot2::element_blank(), 
-                size = ggplot2::element_blank()) +
+                linetype = NULL, 
+                size = NULL) +
 
   MKHthemes::xy_theme()
 @
@@ -613,9 +608,9 @@ biofuels %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "trillion_gallons", fill = "Fuel")) +
   ggplot2::geom_area() +
   
-  ggplot2::labs(x = ggplot2::element_blank(), 
+  ggplot2::labs(x = NULL, 
                 y = expression("U.S. biofuel consumption [" * 10^9 * " gal/yr]"), 
-                fill = ggplot2::element_blank()) +
+                fill = NULL) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
 
   MKHthemes::xy_theme()
@@ -696,8 +691,8 @@ Hawkins_life_cycle %>%
   ggplot2::geom_bar(mapping = ggplot2::aes(y = normalized_impact, fill = Life.cycle.component), width = 0.6, stat = "identity") +
   MKHthemes::xy_theme() +
   ggplot2::facet_wrap(~ Impact) +
-  ggplot2::labs(x = ggplot2::element_blank(), y = "Normalized impact") +
-  viridis::scale_fill_viridis(discrete = TRUE, direction = -1, name = ggplot2::element_blank()) +
+  ggplot2::labs(x = NULL, y = "Normalized impact") +
+  viridis::scale_fill_viridis(discrete = TRUE, direction = -1, name = NULL) +
   ggplot2::scale_y_continuous(breaks = c(0, 0.5, 1)) +
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())

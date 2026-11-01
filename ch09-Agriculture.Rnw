@@ -398,9 +398,9 @@ food_energy %>%
   ggplot2::scale_y_continuous(limits = c(0, 15)) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::geom_bar(stat = "identity") +
-  ggplot2::labs(x = ggplot2::element_blank(),
+  ggplot2::labs(x = NULL,
                 y = "Energy [quad]",
-                fill = ggplot2::element_blank()) +
+                fill = NULL) +
 
   MKHthemes::xy_theme() + 
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
@@ -486,9 +486,9 @@ feed_to_food_efficiency <- feed_to_food_efficiency %>%
 feed_to_food_efficiency %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Food, y = feed_to_food_calorie_efficiency)) +
   ggplot2::geom_bar(stat = "identity", fill = bar_colour) +
-  ggplot2::labs(x = ggplot2::element_blank(),
-       y = expression(eta[ff] * " [%]"),
-       fill = ggplot2::element_blank()) +
+  ggplot2::labs(x = NULL,
+                y = expression(eta[ff] * " [%]"),
+                fill = NULL) +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
@@ -610,11 +610,11 @@ food_emissions_US %>%
                                          fill = `System Stage`)) + 
   ggplot2::geom_area() + 
   
-  ggplot2::labs(x = ggplot2::element_blank(), 
-                y = expression("Food GHG emissions [Gt "*CO[2]*"eq/yr]"), 
-                fill = ggplot2::element_blank()) +
-  
   ggplot2::scale_fill_viridis_d(direction = -1) +
+  
+  ggplot2::labs(x = NULL, 
+                y = expression("Food GHG emissions [Gt "*CO[2]*"eq/yr]"), 
+                fill = NULL) +
   
   MKHthemes::xy_theme()
 @
@@ -642,9 +642,9 @@ food_emissions_per_kcal <- food_emissions_per_kcal %>%
 food_emissions_per_kcal %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = Food, y = GHG_emissions_per_1000kcal)) +
   ggplot2::geom_bar(stat = "identity", fill = bar_colour) +
-  ggplot2::labs(x = ggplot2::element_blank(),
-       y = expression("Emissions [kg " * CO[2] * "equiv/Mcal]"),
-       fill = ggplot2::element_blank()) +
+  ggplot2::labs(x = NULL,
+                y = expression("Emissions [kg " * CO[2] * "equiv/Mcal]"),
+                fill = NULL) +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
@@ -664,9 +664,9 @@ food_emissions_total <- food_emissions_total %>%
 food_emissions_total %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = `Food type`, y = `kg CO2 eq/capita/year`)) +
   ggplot2::geom_bar(stat = "identity", fill = bar_colour) +
-  ggplot2::labs(x = ggplot2::element_blank(),
+  ggplot2::labs(x = NULL,
                 y = expression("Emissions [kg " * CO[2] * "equiv/" * person%.%yr * "]"),
-                fill = ggplot2::element_blank()) +
+                fill = NULL) +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
