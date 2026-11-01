@@ -199,13 +199,12 @@ carbon_intensity <- dplyr::inner_join(
   ) 
 
 carbon_intensity %>%
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "CO2_intensity_Mt_per_EJ")) +
-  ggplot2::geom_line(size = data_line_size,
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = CO2_intensity_Mt_per_EJ)) +
+  ggplot2::geom_line(linewidth = data_line_size,
                      colour = data_line_colour, 
                      linetype = data_linetype) +
   ggplot2::labs(x = NULL,
                 y = expression("Carbon intensity of energy [Mt "*CO[2]/EJ*"]")) +
-
   MKHthemes::xy_theme()
 @
 
@@ -684,7 +683,7 @@ rate_to_string <- function(rate, include_units = TRUE) {
 trim_for_chapter <- function(.df, var, years = c(1800, 2019)) {
   .df %>%
     dplyr::filter(Year %in% years) %>% 
-    dplyr::select(Year, .data[[var]])
+    dplyr::select(Year, dplyr::all_of(var))
 }
 
 impact <- CO2_emissions %>%

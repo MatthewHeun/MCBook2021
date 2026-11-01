@@ -150,17 +150,17 @@ total_household_energy_consumption %>%
       total.energy_quads = total.energy_trillion_BTU / 1000, # Convert from trillions to quadrillion
       total.energy_EJ = total.energy_quads * 1.0550559
    ) %>% 
-   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", 
-                                                 y = "total.energy_EJ", 
-                                                 fill = "energy.type")) + 
-   ggplot2::geom_area() +
-   ggplot2::scale_x_continuous(breaks = seq(1950, 2020, by = 10)) +
-   ggplot2::scale_y_continuous(breaks = seq(0, 12, by = 2)) +
-   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
-   ggplot2::labs(x = ggplot2::element_blank(),
-                 y = "U.S. household energy use [EJ/yr]", 
-                 fill = ggplot2::element_blank()) +
-   MKHthemes::xy_theme()
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, 
+                                         y = total.energy_EJ, 
+                                         fill = energy.type)) + 
+  ggplot2::geom_area() +
+  ggplot2::scale_x_continuous(breaks = seq(1950, 2020, by = 10)) +
+  ggplot2::scale_y_continuous(breaks = seq(0, 12, by = 2)) +
+  viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
+  ggplot2::labs(x = NULL,
+                y = "U.S. household energy use [EJ/yr]", 
+                fill = NULL) +
+  MKHthemes::xy_theme()
 @
 
 
@@ -186,14 +186,14 @@ average_household_energy_consumption <- readxl::read_excel(file.path("chapters",
 
 # Create graph
 average_household_energy_consumption %>% 
-   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "val")) + 
+   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = val)) + 
    ggplot2::geom_line(size = data_line_size,
                       colour = data_line_colour, 
                       linetype = data_linetype) +
    ggplot2::facet_grid(rows = "var", labeller = "label_parsed") +
    ggplot2::scale_x_continuous(limits = c(1980, 2020), breaks = seq(1980, 2020, by = 10)) +
    ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 120, by = 20)) +
-   ggplot2::labs(x = ggplot2::element_blank(),
+   ggplot2::labs(x = NULL,
                  y = "Average household energy consumption\nand number of housing units in the U.S.") +
    MKHthemes::xy_theme() + 
    # Move the facet labels out of the graphs slightly.
@@ -292,7 +292,7 @@ average_housing_sizes %>%
    ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "average_home_size_ft2")) +
    ggplot2::geom_line(size = 1, colour = mc_title_blue) +
    ggplot2::scale_y_continuous(limits = c(0, 3000)) +
-   ggplot2::labs(x = ggplot2::element_blank(),
+   ggplot2::labs(x = NULL,
                  y = expression("Size of new U.S. homes ["*ft^2*"]")) +
 
    MKHthemes::xy_theme()
@@ -321,7 +321,7 @@ household_energy_by_size %>%
    
    ggplot2::labs(x = expression("Home size ["*ft^2*"]"),
                  y = expression("Avg. energy cons. [GJ/" * hu%.%yr * "]"), 
-                 fill = ggplot2::element_blank()) +
+                 fill = NULL) +
    ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.03))) +
    viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
    
@@ -343,7 +343,7 @@ persons_per_household %>%
    ggplot2::geom_line(size = data_line_size, 
                       colour = data_line_colour, 
                       linetype = data_linetype) +
-   ggplot2::labs(x = ggplot2::element_blank(),
+   ggplot2::labs(x = NULL,
                  y = "Occupancy [persons/dwelling]") +
 
    MKHthemes::xy_theme()
@@ -872,7 +872,7 @@ percent_urban %>%
                      linetype = data_linetype) +
   ggplot2::scale_x_continuous(breaks = seq(1950, 2050, by = 20)) +
   ggplot2::scale_y_continuous(limits = c(0, 100)) +
-  ggplot2::labs(x = ggplot2::element_blank(),
+  ggplot2::labs(x = NULL,
                 y = "Urban population worldwide [%]") +
   MKHthemes::xy_theme()
 @
