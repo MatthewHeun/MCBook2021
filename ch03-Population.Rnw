@@ -670,17 +670,17 @@ world <- rnaturalearth::ne_countries(scale = "small", returnclass = "sf")
 # Now make the map
 ggplot2::ggplot(data = world) +
   ggplot2::geom_sf(color = "black", fill = "white", size = 0.1) +
-  ggplot2::geom_point(data = mong_khet, mapping = ggplot2::aes_string(x = "lon", y = "lat"),
-                      size = 2, shape = 21, color = mc_title_blue, fill = mc_title_blue) +
+  ggplot2::geom_point(data = mong_khet, mapping = ggplot2::aes(x = lon, y = lat),
+                      size = 2, shape = 21, color = data_line_colour, fill = data_line_colour) +
   # Non-sf objects (like the circle) are assumed to be in lat/lon data.
   ggplot2::coord_sf(default_crs = sf::st_crs(4326), expand = FALSE) +
   # Add a circle for the boundary
   ggplot2::geom_path(data = v_circle,
-                     mapping = ggplot2::aes_string(x = "lon", y = "lat"),
+                     mapping = ggplot2::aes(x = lon, y = lat),
                      colour = data_line_colour,
-                     size = data_line_size,
+                     linewidth = data_line_size,
                      linetype = data_linetype) +
-  ggplot2::labs(x = ggplot2::element_blank(), y = ggplot2::element_blank()) +
+  ggplot2::labs(x = NULL, y = NULL) +
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.text.x = ggplot2::element_blank(),
                  axis.text.y = ggplot2::element_blank(),
@@ -1018,7 +1018,8 @@ The History Guy, \href{https://www.youtube.com/watch?v=FxqgBWxLZa0}
       nickel\index{nickel (Ni)}, tin\index{tin (Sn)}, and tungsten\index{tungsten (W)})
       would Ehrlich\index{Ehrlich, Paul} have won?
       Would Simon\index{Simon, Julian} have won?
-      For what time periods would Ehrlich\index{Ehrlich, Paul} or Simon\index{Simon, Julian} have won?
+      For what time periods would Ehrlich\index{Ehrlich, Paul} or
+      Simon\index{Simon, Julian} have won?
       How did each man react to his victory or defeat?
       Was there grace or bitterness? Why?
       How did each man's supporters react to the outcome?

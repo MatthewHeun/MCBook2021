@@ -146,20 +146,19 @@ affluence_growth_rate <- gdppc_fit %>%
                          dplyr::mutate(
                            gdppc_2017_thousand_intl_dollars_per_capita = gdppc_2017_intl_dollars_per_capita / 1000
                          ), 
-                       mapping = ggplot2::aes_string(x = "Year", y = "gdppc_2017_thousand_intl_dollars_per_capita"), 
-                       size = data_line_size, 
+                       mapping = ggplot2::aes(x = Year, 
+                                              y = gdppc_2017_thousand_intl_dollars_per_capita), 
+                       linewidth = data_line_size, 
                        colour = data_line_colour, 
                        linetype = data_linetype) + 
     ggplot2::geom_line(data = gdppc_fit, 
                        mapping = ggplot2::aes(x = Year, y = gdppc_2017_thousand_intl_dollars_per_capita_fit), 
-                       size = curve_fit_size, 
+                       linewidth = curve_fit_size, 
                        colour = curve_fit_colour, 
                        linetype = curve_fit_linetype) +
-  ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 20, by = 2))) +
-  ggplot2::labs(x = NULL, 
-                # y = expression("Affluence (A) [2017 Intl. k$/" * person%.%yr * "]")) +
+    ggplot2::scale_y_continuous(limits = c(0, NA), breaks = c(seq(0, 20, by = 2))) +
+    ggplot2::labs(x = NULL, 
                   y = expression(paste("Affluence (", italic(A), ") [2017 Intl. k$/" * person%.%yr * "]"))) +
-
   MKHthemes::xy_theme()
 @
 
@@ -257,12 +256,12 @@ ggplot2::ggplot() +
                          GDP_trillion_2017_intl_dollars = world_gdp_2017_intl_dollars / 1e12
                        ), 
                      mapping = ggplot2::aes(x = Year, y = GDP_trillion_2017_intl_dollars), 
-                     size = data_line_size, 
+                     linewidth = data_line_size, 
                      colour = data_line_colour, 
                      linetype = data_linetype) +
   ggplot2::geom_line(data = gdp_fit, 
                      mapping = ggplot2::aes(x = Year, y = world_gdp_trillion_2017_intl_dollars_fit), 
-                     size = curve_fit_size, 
+                     linewidth = curve_fit_size, 
                      colour = curve_fit_colour, 
                      linetype = curve_fit_linetype) +
   

@@ -166,9 +166,8 @@ ggplot2::ggplot() +
   ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
   ggplot2::labs(y = "Extracted material [Gt/yr]") +
   
-  ggplot2::labs(x = ggplot2::element_blank(), 
-                fill = ggplot2::element_blank()) +
-  
+  ggplot2::labs(x = NULL, 
+                fill = NULL) +
   MKHthemes::xy_theme()
 @
 
@@ -386,15 +385,15 @@ material_per_capita <- krausmann %>%
   )
 
 material_per_capita %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "mat_per_capita_t_person", fill = "type")) + 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = mat_per_capita_t_person, fill = type)) + 
   ggplot2::geom_area() +
   ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
   ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 10, by = 2)) +
   ggplot2::scale_fill_viridis_d(direction = -1) +
   
-  ggplot2::labs(x = ggplot2::element_blank(), 
+  ggplot2::labs(x = NULL, 
                 y = expression("Material extraction [t/" * person%.%yr * "]"),
-                fill = ggplot2::element_blank()) +
+                fill = NULL) +
   
   MKHthemes::xy_theme()
 @
@@ -411,16 +410,13 @@ material_per_gdp <- krausmann %>%
   )
 
 material_per_gdp %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "mat_per_gdp", fill = "type")) + 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = mat_per_gdp, fill = type)) + 
   ggplot2::geom_area() +
   ggplot2::scale_x_continuous(limits = c(1900, 2005), breaks = seq(1900, 2005, by = 50)) +
-  # ggplot2::scale_y_continuous(limits = c(0, NA), breaks = seq(0, 10, by = 2)) +
   ggplot2::scale_fill_viridis_d(direction = -1) +
-  
-  ggplot2::labs(x = ggplot2::element_blank(), 
+  ggplot2::labs(x = NULL, 
                 y = expression("Material extraction [kg/" * {"2017 Intl. $"}%.%yr * "]"),
-                fill = ggplot2::element_blank()) +
-  
+                fill = NULL) +
   MKHthemes::xy_theme()
 @
 
@@ -560,16 +556,14 @@ weak_sust_data <- readxl::read_excel(file.path("chapters", "ch05-ResourceIntensi
 
 weak_sust_data %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = Resource, y = rho, fill = Resource)) +
-  ggplot2::geom_hline(yintercept = 0, colour = "gray50", size = 0.2) +
+  ggplot2::geom_hline(yintercept = 0, colour = "gray50", linewidth = 0.2) +
   ggplot2::geom_bar(stat = "identity") +
   ggplot2::guides(fill = "none") +
   ggplot2::scale_x_discrete(labels = c(zinc = "Zn", germanium = "Ge", CO2 = expression(CO[2]))) +
-  # ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.05))) +
   ggplot2::scale_y_continuous(lim = c(-100, 600), breaks = c(-100, 0, 200, 400, 600)) +
   viridis::scale_fill_viridis(discrete = TRUE) +
   ggplot2::labs(x = NULL,
                 y = expression(rho * " [%]")) +
-
   MKHthemes::xy_theme() +
   ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
 @
@@ -805,7 +799,7 @@ primary_energy_fit <- readxl::read_excel(file.path("chapters", "ch05-ResourceInt
 # Make the graph
 ggplot2::ggplot() +
   ggplot2::geom_area(data = primary_energy, 
-                     mapping = ggplot2::aes_string(x = "Year", y = "energy_EJ", fill = "primary_energy_type")) +
+                     mapping = ggplot2::aes(x = Year, y = energy_EJ, fill = primary_energy_type)) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::labs(x = NULL,
                 y = "World energy consumption [EJ/yr]",
@@ -904,7 +898,7 @@ weak_sust_energy_rho <- readxl::read_excel(file.path("chapters", "ch05-ResourceI
 
 weak_sust_energy_rho %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = `Fossil fuel`, y = `rho [%]`, fill = `Fossil fuel`)) +
-  ggplot2::geom_hline(yintercept = 0, colour = "gray50", size = 0.2) +
+  ggplot2::geom_hline(yintercept = 0, colour = "gray50", linewidth = 0.2) +
   ggplot2::geom_bar(stat = "identity") +
   ggplot2::guides(fill = "none") +
   ggplot2::scale_y_continuous(breaks = c(seq(-60, 60, by = 20)), 
@@ -1029,9 +1023,9 @@ energy_intensity %>%
   ggplot2::geom_area() + 
   ggplot2::scale_fill_viridis_d(direction = -1) +
   ggplot2::scale_y_continuous(limits = c(0, NA)) +
-  ggplot2::labs(x = ggplot2::element_blank(),
+  ggplot2::labs(x = NULL,
                 y = expression(atop("Primary energy intensity [MJ/2017 Intl. $]")), 
-                fill = ggplot2::element_blank()) +
+                fill = NULL) +
   MKHthemes::xy_theme()
 @
 
@@ -1101,11 +1095,9 @@ uk_coal_extraction <- readxl::read_excel(file.path("chapters", "ch05-ResourceInt
 
 uk_coal_extraction %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = UK_coal_production_Mt)) +
-  ggplot2::geom_line(size = 1, colour = mc_title_blue) +
-
-  ggplot2::labs(x = ggplot2::element_blank(),
+  ggplot2::geom_line(linewidth = 1, colour = data_line_colour) +
+  ggplot2::labs(x = NULL,
                 y = "UK coal production [Mt/yr]") +
-
   MKHthemes::xy_theme()
 @
 
@@ -1120,7 +1112,7 @@ uk_coal_extraction %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = q_Gt)) +
   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
 
-  ggplot2::labs(x = ggplot2::element_blank(),
+  ggplot2::labs(x = NULL,
                 y = "UK coal cumulative production [Gt]") +
 
   MKHthemes::xy_theme()
