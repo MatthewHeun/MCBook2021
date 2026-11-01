@@ -696,9 +696,9 @@ co2_amounts %>%
                                         `More sustainable` = curve_fit_colour), 
                              guide = "none") + 
 
-  ggplot2::labs(x = ggplot2::element_blank(), 
+  ggplot2::labs(x = NULL, 
                 y = expression("Emissions [t" * CO[2] * "/yr]"), 
-                fill = ggplot2::element_blank()) + 
+                fill = NULL) + 
   
   MKHthemes::xy_theme() + 
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1), 

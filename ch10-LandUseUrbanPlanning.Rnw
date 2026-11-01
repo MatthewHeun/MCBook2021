@@ -112,9 +112,9 @@ us_land_use %>%
   
   ggplot2::scale_fill_viridis_d(direction = -1) +
   
-  ggplot2::labs(x = ggplot2::element_blank(), 
+  ggplot2::labs(x = NULL, 
                 y = "Land area [billion acres]", 
-                fill = ggplot2::element_blank()) +
+                fill = NULL) +
   
   MKHthemes::xy_theme()
 @
@@ -274,9 +274,9 @@ carbon_storage_world %>%
   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Biome", y = "vals", fill = "storage_location")) + 
   ggplot2::geom_bar(stat = "identity") + 
   ggplot2::facet_grid(rows = "panel", scales = "free_y", labeller = ggplot2::label_parsed) +
-  ggplot2::labs(x = ggplot2::element_blank(), 
+  ggplot2::labs(x = NULL, 
                 y = "Area and carbon characteristics of various biomes", 
-                fill = ggplot2::element_blank()) +
+                fill = NULL) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1, begin = 0, end = 0.9) + 
   
   MKHthemes::xy_theme() + 
@@ -637,7 +637,7 @@ power_densities %>%
                       linetype = guide_linetype) + 
   ggplot2::geom_bar(stat = "identity", fill = bar_colour) + 
   
-  ggplot2::labs(x = ggplot2::element_blank(), 
+  ggplot2::labs(x = NULL, 
                 y = expression("Power density [" * W/m^2 * "]")) +
   
   MKHthemes::xy_theme() + 

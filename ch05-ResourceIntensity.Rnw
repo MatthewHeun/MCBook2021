@@ -1110,7 +1110,7 @@ see Figure~\ref{fig:UK_coal_logistic}.
 <<UK_coal_logistic, fig.scap="UK coal production logistic curve vs.\\ time", fig.cap="UK coal production logistic curve vs.\\ time. \\emph{Sources}: \\citet{Rutledge:2011, Rutledge:tv}\\index{Rutledge, David} for 1829--2009; own calculations for 2010--2020.">>=
 uk_coal_extraction %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = q_Gt)) +
-  ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+  ggplot2::geom_line(linewidth = data_line_size, colour = data_line_colour) +
 
   ggplot2::labs(x = NULL,
                 y = "UK coal cumulative production [Gt]") +

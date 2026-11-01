@@ -289,7 +289,7 @@ average_housing_sizes <- readxl::read_excel(file.path("chapters", "ch07-Househol
                                                            sheet = "data to plot")
 
 average_housing_sizes %>% 
-   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "average_home_size_ft2")) +
+   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = average_home_size_ft2)) +
    ggplot2::geom_line(size = 1, colour = mc_title_blue) +
    ggplot2::scale_y_continuous(limits = c(0, 3000)) +
    ggplot2::labs(x = NULL,
@@ -316,7 +316,7 @@ household_energy_by_size <- readxl::read_excel(file.path("chapters", "ch07-House
    )
 
 household_energy_by_size %>% 
-   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Size_ft2", y = "vals", fill = "energy.type")) +
+   ggplot2::ggplot(mapping = ggplot2::aes(x = Size_ft2, y = vals, fill = energy.type)) +
    ggplot2::geom_bar(stat = "identity") +
    
    ggplot2::labs(x = expression("Home size ["*ft^2*"]"),
@@ -336,7 +336,7 @@ persons_per_household <- readxl::read_excel(file.path("chapters", "ch07-Househol
                                                   sheet = "data to plot")
 
 persons_per_household %>% 
-   ggplot2::ggplot(mapping = ggplot2::aes_string(x = "Year", y = "PeoplePerHousehold")) + 
+   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = PeoplePerHousehold)) + 
    ggplot2::geom_line() +
    ggplot2::scale_x_continuous(breaks = seq(1960, 2020, by = 10)) +
    ggplot2::scale_y_continuous(limits = c(0, 4), breaks = seq(0, 4, by = 1)) +
