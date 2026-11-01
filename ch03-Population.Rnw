@@ -304,7 +304,7 @@ dplyr::bind_rows(historical_pop, future_pop) |>
                                               ymax = upper80),
                        fill = "grey60") +
   ggplot2::geom_line(mapping = ggplot2::aes(y = median),
-                     linewidth = data_line_size,
+                     linewidth = data_line_width,
                      colour = data_line_colour,
                      linetype = data_linetype) +
 
@@ -433,11 +433,11 @@ demo_transition %>%
   dplyr::filter(which_graph == "rate") %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) +
   ggplot2::geom_vline(xintercept = phase_delimiters,
-                      linewidth = guide_line_size,
+                      linewidth = guide_line_width,
                       colour = guide_line_colour,
                       linetype = guide_linetype) +
   ggplot2::geom_line(colour = data_line_colour,
-                     linewidth = data_line_size) +
+                     linewidth = data_line_width) +
   ggplot2::annotate("text", x = 18, y = 2, label = "Stage 1", colour = guide_line_colour) +
   ggplot2::annotate("text", x = 78, y = 2, label = "Stage 2", colour = guide_line_colour) +
   ggplot2::annotate("text", x = 150, y = 2, label = "Stage 3", colour = guide_line_colour) +
@@ -461,11 +461,11 @@ demo_transition %>%
   dplyr::filter(which_graph == "Pop") %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = vals, linetype = which_line)) +
   ggplot2::geom_vline(xintercept = phase_delimiters,
-                      linewidth = guide_line_size,
+                      linewidth = guide_line_width,
                       colour = guide_line_colour,
                       linetype = guide_linetype) +
   ggplot2::geom_line(colour = data_line_colour,
-                     linewidth = data_line_size) +
+                     linewidth = data_line_width) +
   ggplot2::annotate("text", x = 18, y = 4, label = "Stage 1", colour = guide_line_colour) +
   ggplot2::annotate("text", x = 78, y = 4, label = "Stage 2", colour = guide_line_colour) +
   ggplot2::annotate("text", x = 150, y = 4, label = "Stage 3", colour = guide_line_colour) +
@@ -680,7 +680,7 @@ ggplot2::ggplot(data = world) +
   ggplot2::geom_path(data = v_circle,
                      mapping = ggplot2::aes(x = lon, y = lat),
                      colour = data_line_colour,
-                     linewidth = data_line_size,
+                     linewidth = data_line_width,
                      linetype = data_linetype) +
   ggplot2::labs(x = NULL, y = NULL) +
   MKHthemes::xy_theme() +

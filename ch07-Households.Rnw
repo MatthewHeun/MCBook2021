@@ -187,7 +187,7 @@ average_household_energy_consumption <- readxl::read_excel(file.path("chapters",
 # Create graph
 average_household_energy_consumption %>% 
    ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = val)) + 
-   ggplot2::geom_line(size = data_line_size,
+   ggplot2::geom_line(size = data_line_width,
                       colour = data_line_colour, 
                       linetype = data_linetype) +
    ggplot2::facet_grid(rows = "var", labeller = "label_parsed") +
@@ -230,7 +230,7 @@ household_energy_by_category %>%
   ggplot2::coord_polar(theta = "y", start = 0, direction = -1) +
   ggplot2::geom_text(ggplot2::aes(x = 1.7, label = paste0(Percentage, "%")),
                      position = ggplot2::position_stack(vjust = 0.5),
-                     colour = "gray50") +
+                     colour = guide_line_colour) +
   viridis::scale_fill_viridis(discrete = TRUE, direction = -1) +
   ggplot2::labs(x = NULL, y = NULL, fill = NULL) +
   
@@ -290,7 +290,7 @@ average_housing_sizes <- readxl::read_excel(file.path("chapters", "ch07-Househol
 
 average_housing_sizes %>% 
    ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = average_home_size_ft2)) +
-   ggplot2::geom_line(size = 1, colour = mc_title_blue) +
+   ggplot2::geom_line(size = 1, colour = data_line_colour) +
    ggplot2::scale_y_continuous(limits = c(0, 3000)) +
    ggplot2::labs(x = NULL,
                  y = expression("Size of new U.S. homes ["*ft^2*"]")) +
@@ -339,7 +339,7 @@ persons_per_household %>%
    ggplot2::geom_line() +
    ggplot2::scale_x_continuous(breaks = seq(1960, 2020, by = 10)) +
    ggplot2::scale_y_continuous(limits = c(0, 4), breaks = seq(0, 4, by = 1)) +
-   ggplot2::geom_line(size = data_line_size, 
+   ggplot2::geom_line(size = data_line_width, 
                       colour = data_line_colour, 
                       linetype = data_linetype) +
    ggplot2::labs(x = NULL,
@@ -865,7 +865,7 @@ percent_urban <- readxl::read_excel(file.path("chapters", "ch07-Households", "da
 percent_urban %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = Year, y = `percent urban`)) +
   ggplot2::geom_line(colour = data_line_colour,
-                     size = data_line_size, 
+                     size = data_line_width, 
                      linetype = data_linetype) +
   ggplot2::scale_x_continuous(breaks = seq(1950, 2050, by = 20)) +
   ggplot2::scale_y_continuous(limits = c(0, 100)) +

@@ -415,7 +415,7 @@ chessboard_data %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = x, y = m)) +
   ggplot2::geom_hline(yintercept = 0, 
                       colour = guide_line_colour, 
-                      linewidth = guide_line_size, 
+                      linewidth = guide_line_width, 
                       linetype = guide_linetype) +
   ggplot2::geom_bar(stat = "identity", fill = bar_colour) +
 

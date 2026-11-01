@@ -632,7 +632,7 @@ power_densities <- power_densities %>%
 power_densities %>%
   ggplot2::ggplot(mapping = ggplot2::aes(x = energy_source, y = `power_density_W/m2`)) +
   ggplot2::geom_hline(yintercept = 0, 
-                      size = guide_line_size, 
+                      size = guide_line_width, 
                       colour = guide_line_colour, 
                       linetype = guide_linetype) + 
   ggplot2::geom_bar(stat = "identity", fill = bar_colour) + 
