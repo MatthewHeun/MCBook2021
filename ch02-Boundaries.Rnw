@@ -565,21 +565,25 @@ research, make recommendations, regulate, and enforce laws.
 <<FootprintHDIGraph, fig.scap="Ecological footprint vs.\\ HDI", fig.cap="Ecological footprint vs.\\ HDI\\index{Human Development Index (HDI)} for 2017. Population is in millions. HDI between 0.7 and 0.8 is considered ``high'' human development. HDI greater than 0.8 is considered ``very high'' human development. Ecological footprint below 1.9 global hectares per person is considered sustainable. The only countries ``inside the box'' at the lower right of the graph (high human development and sustainable ecological footprint) are the Philippines and Sri Lanka. No country exhibits ``very high'' human development and a sustainable ecological footprint. ``gha'' is global hectares. \\emph{Source}: \\citet{Global-Footprint-Network:ut}.">>=
 clrs <- viridis::viridis(6, begin = 0, end = 0.99)
 readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets", "EFvsHDI.xlsx"),
-                                  sheet = "data to plot") %>% 
+                   sheet = "data to plot") %>% 
   dplyr::filter(`Country Name` != "World") %>% 
   dplyr::mutate(
     Population = Population / 1e6, # Population now in millions
-    Continent = factor(Continent, levels = c("North Am.", "Europe", "Asia", "Oceania", "Latin Am.", "Africa"))
+    Continent = factor(Continent, 
+                       levels = c("North Am.", "Europe", "Asia", "Oceania", "Latin Am.", "Africa"))
   ) %>% 
-  ggplot2::ggplot(mapping = ggplot2::aes_string(x = "HDI", y = "Ecological_Footprint_gha_per_person", 
-                                                colour = "Continent", alpha = "Continent", shape = "Continent",
-                                                size = "Population")) + 
+  ggplot2::ggplot(mapping = ggplot2::aes(x = HDI,
+                                         y = Ecological_Footprint_gha_per_person, 
+                                         colour = Continent,
+                                         alpha = Continent,
+                                         shape = Continent,
+                                         size = Population)) + 
   ggplot2::geom_vline(xintercept = c(0.7, 0.8),
-                      size = guide_line_size, 
+                      linewidth = guide_line_size, 
                       colour = guide_line_colour, 
                       linetype = guide_linetype) +
   ggplot2::geom_hline(yintercept = 1.6,  
-                      size = guide_line_size, 
+                      linewidth = guide_line_size, 
                       colour = guide_line_colour, 
                       linetype = guide_linetype) +
   ggplot2::geom_point() + 
@@ -661,12 +665,14 @@ CO2_fit <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "datasets
 max_y <- 40 # Gt/yr
 
 ggplot2::ggplot() +
-  ggplot2::geom_vline(xintercept = c(1932, 1945, 1974, 1982, 1992, 2009, 2020), colour = "gray50", size = 0.2) +
+  ggplot2::geom_vline(xintercept = c(1932, 1945, 1974, 1982, 1992, 2009, 2020), 
+                      colour = guide_line_colour, 
+                      linewidth = guide_line_size) +
   ggplot2::geom_line(data = CO2_emissions %>%
                        dplyr::filter(Year >= 1800) %>%
                        dplyr::mutate(CO2_emissions_Gt = CO2_emissions_tonnes / 1e9),
                      mapping = ggplot2::aes(x = Year, y = CO2_emissions_Gt),
-                     size = data_line_size,
+                     linewidth = data_line_size,
                      colour = data_line_colour, 
                      linetype = data_linetype) +
 
@@ -813,14 +819,14 @@ spm_10_data <- readxl::read_excel(file.path("chapters", "ch02-Boundaries", "data
 spm_10_data %>% 
   ggplot2::ggplot(mapping = ggplot2::aes(x = GtCO2, y = deltaT_degC, 
                                          colour = dataset, 
-                                         size = dataset,
+                                         linewidth = dataset,
                                          linetype = dataset)) +
   ggplot2::geom_hline(yintercept = 1.5, 
-                      size = guide_line_size, 
+                      linewidth = guide_line_size, 
                       colour = guide_line_colour, 
                       linetype = guide_linetype) +
   ggplot2::geom_vline(xintercept = c(0, 2411 - 1000, 2411, 2411 + 500),
-                      size = guide_line_size, 
+                      linewidth = guide_line_size, 
                       colour = guide_line_colour, 
                       linetype = guide_linetype) +
   
@@ -835,12 +841,12 @@ spm_10_data %>%
   ggplot2::annotate("text", x = 2790, y = 2.0,
                     label = "'1.5 ' * degree*C", colour = guide_line_colour, size = 4, angle = 90, parse = TRUE) + 
   
-  ggplot2::scale_size_manual(values = c(Historical = data_line_size, 
-                                        `SSP1-1.9` = scenario_size, 
-                                        `SSP1-2.6` = scenario_size, 
-                                        `SSP2-4.5` = scenario_size, 
-                                        `SSP3-7.0` = scenario_size, 
-                                        `SSP5-8.5` = scenario_size)) +
+  ggplot2::scale_linewidth_manual(values = c(Historical = data_line_size, 
+                                             `SSP1-1.9` = scenario_size, 
+                                             `SSP1-2.6` = scenario_size, 
+                                             `SSP2-4.5` = scenario_size, 
+                                             `SSP3-7.0` = scenario_size, 
+                                             `SSP5-8.5` = scenario_size)) +
   
   ggplot2::scale_colour_manual(values = c(Historical = data_line_colour, 
                                           `SSP1-1.9` = curve_fit_colour, 
@@ -858,10 +864,9 @@ spm_10_data %>%
   
   ggplot2::labs(x = expression("Cumulative emissions since 1850 [" * GtCO[2] * "e]"), 
                 y = expression("Temperature rise since 1850-1900 [" * degree*C * "]"), 
-                size = ggplot2::element_blank(),
-                colour = ggplot2::element_blank(),
-                linetype = ggplot2::element_blank()) +
-  
+                linewidth = NULL,
+                colour = NULL,
+                linetype = NULL) +
   
   MKHthemes::xy_theme()
 @
